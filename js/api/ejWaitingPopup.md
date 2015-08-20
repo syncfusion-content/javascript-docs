@@ -33,14 +33,15 @@ $(element).ejWaitingPopup<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 // Simple waiting popup creation.
 $("#target").ejWaitingPopup({ showOnInit: true });
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -51,8 +52,8 @@ $("#target").ejWaitingPopup({ showOnInit: true });
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 
@@ -123,14 +124,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 //To Initialize the WaitingPopup with the cssClass  value specified. 
         $("#target").ejWaitingPopup({showOnInit: true, cssClass : 'gradient-lime '});
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -141,8 +143,8 @@ Example
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 
@@ -184,14 +186,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 //To set showImage API value during initialization  
         $("#target").ejWaitingPopup({ showOnInit: true, showImage: false});
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -202,8 +205,8 @@ Example
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 
@@ -245,14 +248,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 //To set showOnInit API value during initialization  
         $("#target").ejWaitingPopup({ showOnInit: true});
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -263,8 +267,8 @@ Example
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 
@@ -306,24 +310,25 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="content"&gt;
-  &lt;div class="block"&gt;
-  &lt;div class="logo"&gt;
-&lt;/div&gt;
-   &lt;div class="text"&gt;
-    &lt;p&gt; Content is loading ... &lt;/p&gt;
-     &lt;/div&gt;
-            &lt;/div&gt;
-&lt;div class="loader"&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="content">
+  <div class="block">
+  <div class="logo">
+</div>
+   <div class="text">
+    <p> Content is loading ... </p>
+     </div>
+            </div>
+<div class="loader">
+</div>
+</div>
+<script>
 //To Initialize the WaitingPopup control with the template value specified.
         $("#target").ejWaitingPopup({ showOnInit: true,template: $('#content') });
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
          
           .block {
             height: 76px;
@@ -363,8 +368,8 @@ Example
             height: 112px;
             width: 275px;
         }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 
@@ -406,14 +411,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 //To Initialize the WaitingPopup with the text value specified
         $("#target").ejWaitingPopup({showOnInit: true, text: 'waiting&hellip;' });
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -424,8 +430,8 @@ Example
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 
@@ -458,17 +464,18 @@ To hide the waiting popup
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 $("#target").ejWaitingPopup({showOnInit: true});
 // Initialize the WaitingPopup object.
   var popupObj = $("#target").data("ejWaitingPopup");
 // Calls the hide method of WaitingPopup not to display.
 popupObj.hide();
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -479,17 +486,18 @@ popupObj.hide();
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+</style>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 $("#target").ejWaitingPopup({showOnInit: true});
 // hide WaitingPopup using the hide method.
 $("#target").ejWaitingPopup('hide');
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -500,8 +508,8 @@ $("#target").ejWaitingPopup('hide');
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 
@@ -527,16 +535,17 @@ Refreshes the WaitingPopup control by resetting the pop-up panel position and co
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 $("#target").ejWaitingPopup({showOnInit: true});
 // Initialize the WaitingPopup object.
   var popupObj = $("#target").data("ejWaitingPopup");
 popupObj.refresh();
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -547,17 +556,18 @@ popupObj.refresh();
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+</style>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 $("#target").ejWaitingPopup({showOnInit: true});
 // Refresh the WaitingPopup using refresh method.
 $("#target").ejWaitingPopup('refresh');
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -568,8 +578,8 @@ $("#target").ejWaitingPopup('refresh');
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 
@@ -595,17 +605,18 @@ To show the waiting popup
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 $("#target").ejWaitingPopup({showOnInit: true});
 // Initialize the WaitingPopup object.
   var popupObj = $("#target").data("ejWaitingPopup");
 // Calls the show method of WaitingPopup to display.
 popupObj.show();
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -616,17 +627,18 @@ popupObj.show();
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+</style>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 $("#target").ejWaitingPopup({showOnInit: true});
 // Display WaitingPopup using the show method.
 $("#target").ejWaitingPopup("show");
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -637,8 +649,8 @@ $("#target").ejWaitingPopup("show");
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 
@@ -674,17 +686,20 @@ Fires after Create waitingpopup successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the waitingpopup model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -697,14 +712,15 @@ Fires after Create waitingpopup successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 //To Initialize the WaitingPopup with the text value specified with create event
         $("#target").ejWaitingPopup({showOnInit: true, text: 'waiting&hellip;',create: function (args) {} });
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
               #target {
             height: 200px;
             width: 600px;
@@ -715,8 +731,8 @@ Example
             display: block;
             height: 70px;
         }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 
@@ -745,17 +761,20 @@ Fires after Destroy waitingpopup successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the waitingpopup model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -768,14 +787,15 @@ Fires after Destroy waitingpopup successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;div id="target"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+ <div id="target"></div>
+<script>
 //To Initialize the WaitingPopup with the text value specified with destroy event
         $("#target").ejWaitingPopup({showOnInit: true, text: 'waiting&hellip;',destroy: function (args) {} });
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
             #target {
           height: 200px;
           width: 600px;
@@ -786,8 +806,8 @@ Example
           display: block;
           height: 70px;
       }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 

@@ -33,12 +33,13 @@ $(element).ejProgressBar<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 $("#progress").ejProgressBar({value: 50});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -109,14 +110,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="progress"></div>
+<script>
 //Initialize the ProgressBar with the cssClass value specified
 $("#progress").ejProgressBar({ cssClass: 'gradient-lime ',value: 50  });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -158,13 +160,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 //Initialize the ProgressBar with the enabled value specified
 $("#progress").ejProgressBar({ enabled: true,value: 50 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -206,14 +209,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="progress"></div>
+<script>
 //Initialize the Progress bar with the persist value specified
 $("#progress").ejProgressBar({ enablePersistence: true,value: 50 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -255,13 +259,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 //Initialize the Progress bar with the rtl value specified
 $("#progress").ejProgressBar({ enableRTL: true,value: 50 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -303,14 +308,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="progress"></div>
+<script>
 //Initialize the ProgressBar with the height value specified
 $("#progress").ejProgressBar({ height: 20,value: 50 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -352,14 +358,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="progress"></div>
+<script>
 //Initialize the ProgressBar with the max value specified
 $("#progress").ejProgressBar({ maxValue: 200 ,value: 200 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -401,13 +408,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 //Initialize the ProgressBar with the min value specified
 $("#progress").ejProgressBar({ minValue: 50,value: 50});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -449,13 +457,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 //Initialize the ProgressBar with the progress value specified in percent
 $("#progress").ejProgressBar({ percentage : 35 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -497,14 +506,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<div id="progress"></div>
+<script> 
 //To set the text API value during initialization  
 $("#progress").ejProgressBar({ text: 'loading...',value: 50 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -546,13 +556,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 //Initialize the ProgressBar with the progress value specified
 $("#progress").ejProgressBar({ value: 70 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -594,14 +605,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="progress"></div>
+<script>
 //Initialize the ProgressBar with the width value specified
 $("#progress").ejProgressBar({ width: 200,value: 50});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -634,24 +646,26 @@ Destroy the progressbar widget
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 $("#progress").ejProgressBar({value: 50});
 // Create Progressbar instance
 var proObj = $("#progress").data("ejProgressBar");
 proObj.destroy(); //destroy the Progressbar control
-&lt;/script&gt;
-        </code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+</script>
+        {% endhighlight %}
+
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 $("#progress").ejProgressBar({value: 50});
         // To destroy the Progressbar control
 $("#progress").ejProgressBar("destroy");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -677,24 +691,26 @@ Disables the progressbar control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 $("#progress").ejProgressBar({value: 50});
 // Create Progressbar instance
 var proObj = $("#progress").data("ejProgressBar");
 proObj.disable(); //disables the Progressbar control
-&lt;/script&gt;
-        </code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+</script>
+        {% endhighlight %}
+
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 $("#progress").ejProgressBar({value: 50});
         //To disables the Progressbar control
 $("#progress").ejProgressBar("disable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -720,24 +736,26 @@ Enables the progressbar control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 $("#progress").ejProgressBar({value: 50});
 // Create Progressbar instance
 var proObj = $("#progress").data("ejProgressBar");
 proObj.enable(); // enables the Progressbar control
-&lt;/script&gt;
-        </code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+</script>
+        {% endhighlight %}
+
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 $("#progress").ejProgressBar({value: 50});
         // To enables the Progressbar control
 $("#progress").ejProgressBar("enable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -763,24 +781,26 @@ Returns the current progress value in percent.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 $("#progress").ejProgressBar({value: 50});
 // Create Progressbar instance
 var proObj = $("#progress").data("ejProgressBar");
 proObj.getPercentage(); // get the percent of Progressbar control
-&lt;/script&gt;
-        </code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+</script>
+        {% endhighlight %}
+
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 $("#progress").ejProgressBar({value: 50});
         // To get the percent of Progressbar control
 $("#progress").ejProgressBar("getPercentage");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -806,24 +826,26 @@ Returns the current progress value
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 $("#progress").ejProgressBar({value: 50});
 // Create Progressbar instance
 var proObj = $("#progress").data("ejProgressBar");
 proObj.getValue(); // get the value of Progressbar control
-&lt;/script&gt;
-        </code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+</script>
+        {% endhighlight %}
+
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 $("#progress").ejProgressBar({value: 50});
         // To get the value of Progressbar control 
 $("#progress").ejProgressBar("getValue");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -859,7 +881,8 @@ Event triggers when the progress value changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from progressbar
 <table class="params">
@@ -872,22 +895,26 @@ Event triggers when the progress value changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ProgressBar model</td>
 </tr>
 <tr>
-<td class="name"><code>percentage</code></td>
+<td class="name">{% highlight html %}
+percentage{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current progress percentage</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -896,7 +923,8 @@ Event triggers when the progress value changed
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current progress value</td>
 </tr>
@@ -909,16 +937,17 @@ Event triggers when the progress value changed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 //initial complete event
 $("#progress").ejProgressBar({
         value: 50,
         change: function(args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -947,7 +976,8 @@ Event triggers when the process completes (at 100%)
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from progressbar
 <table class="params">
@@ -960,22 +990,26 @@ Event triggers when the process completes (at 100%)
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ProgressBar model</td>
 </tr>
 <tr>
-<td class="name"><code>percentage</code></td>
+<td class="name">{% highlight html %}
+percentage{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current progress percentage</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -984,7 +1018,8 @@ Event triggers when the process completes (at 100%)
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current progress value</td>
 </tr>
@@ -997,16 +1032,17 @@ Event triggers when the process completes (at 100%)
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 //initial complete event
 $("#progress").ejProgressBar({
         value: 50,
         complete: function(args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1035,7 +1071,8 @@ Event triggers when the progressbar are created
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from progressbar
 <table class="params">
@@ -1048,17 +1085,20 @@ Event triggers when the progressbar are created
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the progressbar model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1075,18 +1115,19 @@ Event triggers when the progressbar are created
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="progress"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="progress"></div> 
+ 
+<script>
 //create event for progressbar
 $("#progress").ejProgressBar({
         value: 50,
         create: function(args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1115,7 +1156,8 @@ Event triggers when the progressbar are destroyed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from progressbar
 <table class="params">
@@ -1128,17 +1170,20 @@ Event triggers when the progressbar are destroyed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the progressbar model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1155,18 +1200,19 @@ Event triggers when the progressbar are destroyed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="progress"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="progress"></div> 
+ 
+<script>
 //destroy event for progressbar
 $("#progress").ejProgressBar({
         value: 50,
         destroy: function(args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1195,7 +1241,8 @@ Event triggers when the process starts (from 0%)
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from progressbar
 <table class="params">
@@ -1208,22 +1255,26 @@ Event triggers when the process starts (from 0%)
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ProgressBar model</td>
 </tr>
 <tr>
-<td class="name"><code>percentage</code></td>
+<td class="name">{% highlight html %}
+percentage{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current progress percentage</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1232,7 +1283,8 @@ Event triggers when the process starts (from 0%)
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current progress value</td>
 </tr>
@@ -1245,16 +1297,17 @@ Event triggers when the process starts (from 0%)
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="progress"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="progress"></div>
+<script>
 //initial start event
 $("#progress").ejProgressBar({
 value: 50,
         start: function(args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

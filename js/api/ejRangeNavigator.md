@@ -36,12 +36,14 @@ $(element).ejRangeNavigator<span class="signature">(options, options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for rangenavigator</td>
 </tr>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for rangenavigator</td>
 </tr>
@@ -54,15 +56,16 @@ $(element).ejRangeNavigator<span class="signature">(options, options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="container"></div> 
+ 
+<script>
 // Create RangeNavigator
 $('#container').RangeNavigator();       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -139,15 +142,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    allowSnapping: true;
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -173,13 +177,14 @@ Specifies the data source for range navigator.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>     $("#container").ejRangeNavigator({
+
+{% highlight html %}
+     $("#container").ejRangeNavigator({
    dataSource:"data1", 
     xName: "X", 
     yName: "Y"
-   });</code>
-</pre>
+   });{% endhighlight %}
+
 
 
 
@@ -221,15 +226,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    enableAutoResizing: true;
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -271,15 +277,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    enableDeferredUpdate:false,
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -321,15 +328,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
   enableRTL: true,
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -437,15 +445,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
   labelSettings:{higherLevel:{ border :{color:"#ff0000"}}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -487,15 +496,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ border :{width:1}}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -537,15 +547,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ fill:"days"}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -609,14 +620,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ gridLineStyle :{color:"#ff0000"}}},
-   });</code>
-</pre>
+   });{% endhighlight %}
+
 
 
 
@@ -658,15 +670,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ gridLineStyle :{dashArray:"20 10 5"}}},
    });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -708,15 +721,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ gridLineStyle :{width:1}}},
    });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -758,15 +772,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ intervalType:"days"}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -808,15 +823,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ labelPlacement:"inside"}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -858,15 +874,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ position:"bottom"}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -952,15 +969,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ style:{font:{color: "red"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1002,15 +1020,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ style:{font:{fontFamily: "Algerian"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1052,15 +1071,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ style:{font:{fontStyle: "Italic"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1102,15 +1122,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ style:{font:{fontWeight: "regular"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1152,15 +1173,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ style:{font:{opacity: "14px"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1202,15 +1224,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ style:{font:{size: "14px"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1252,15 +1275,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ style:{horizontalAlignment: "left"}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1302,15 +1326,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{higherLevel:{ visible:false}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1396,15 +1421,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ border :{color:"#ff0000"}}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1446,15 +1472,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ border :{width:1}}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1496,15 +1523,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
   labelSettings:{lowerLevel:{ fill:"days"}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1568,15 +1596,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ gridLineStyle :{color:"#ff0000"}}},
    });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1618,15 +1647,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    lowerLevel:{ gridLineStyle :{dashArray:"20 10 5"}}},
    });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1668,15 +1698,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ gridLineStyle :{width:1}}},
    });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1718,15 +1749,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ intervalType:"days"}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1768,15 +1800,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ labelPlacement:"inside"}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1818,15 +1851,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ position:"bottom"}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1912,15 +1946,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ style:{font:{color: "red"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1962,15 +1997,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ style:{font:{fontFamily: "Algerian"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2012,15 +2048,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ style:{font:{fontStyle: "Italic"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2062,15 +2099,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ style:{font:{fontWeight: "regular"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2112,15 +2150,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ style:{font:{opacity: "14px"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2162,15 +2201,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ style:{font:{size: "14px"}}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2212,15 +2252,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ style:{horizontalAlignment: "left"}}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2262,15 +2303,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ visible:false}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2356,15 +2398,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{style:{ font:{color:"#ff0000"}}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2406,15 +2449,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{style:{ font:{family:"Arial"}}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2456,15 +2500,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{style:{ font:{opacity:0.5}}}
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2506,15 +2551,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{style:{ font:{size:"12px"}}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2556,15 +2602,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{style:{ font:{style:"Noraml"}}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2606,15 +2653,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    labelSettings:{style:{ font:{weight:"Regular"}}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2656,15 +2704,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
   labelSettings:{style:{ horizontalAlignment:"middle"}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2706,15 +2755,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    locale: "en-US",
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2778,15 +2828,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ background:"#ff0000"},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2850,15 +2901,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ border:{color:"#ff0000"}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2900,15 +2952,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ border:{dashArray:"2,3"}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2950,15 +3003,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ border:{width:1}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3000,15 +3054,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ leftThumbTemplate:"item"},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3072,15 +3127,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ majorGridLineStyle:{color:"#ff0000"}},
    });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3122,15 +3178,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ majorGridLineStyle:{visible:false}},
    });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3194,14 +3251,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Gets or sets color of majorGridLines in RangeNavigator, after initialization:
         //Gets the color of majorGridLines in RangeNavigator
         $("#container").ejRangeNavigator("option", "navigatorStyleSettings.majorGridLineStyle.color");
                       
-        //Sets the color of majorGridLines in RangeNavigator</code>
-</pre>
+        //Sets the color of majorGridLines in RangeNavigator{% endhighlight %}
+
 
 
 
@@ -3243,15 +3301,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ majorGridLineStyle:{visible:false}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3293,15 +3352,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ opacity:0.5},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3343,15 +3403,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ rightThumbTemplate:"item"},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3393,15 +3454,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ selectedRegionColor:"#ff0000"}},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3443,15 +3505,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ selectedRegionOpacity:0.5},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3493,15 +3556,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ thumbColor:"#ff0000"},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3543,15 +3607,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ thumbRadius:15},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3593,15 +3658,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ thumbStroke:"#ff0000"},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3643,15 +3709,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ unselectedRegionColor:"#ff0000"},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3693,15 +3760,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    navigatorStyleSettings:{ unselectedRegionOpacity:0.5},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3743,15 +3811,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    padding: "15";
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3793,15 +3862,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
   rangePadding: "normal",
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3865,15 +3935,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    rangeSettings:{end:"01/05/1993"}
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3915,14 +3986,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    rangeSettings:{start:"01/05/1993"},
-   });</code>
-</pre>
+   });{% endhighlight %}
+
 
 
 
@@ -4008,15 +4080,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    selectedRangeSettings:{end:"01/05/1993"},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4058,15 +4131,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
   selectedRangeSettings:{start:"01/05/1992"},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4130,15 +4204,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>                             
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+                             
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    sizeSettings: { height : "130" },
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4180,15 +4255,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    sizeSettings: { width : "900" },
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4230,15 +4306,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    theme: "flatdark";
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4264,11 +4341,12 @@ Options for customizing the tooltip in range navigator.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>     $("#container").ejRangeNavigator({
+
+{% highlight html %}
+     $("#container").ejRangeNavigator({
    tooltipSettings: { visible: true, labelFormat: "MMM/dd/yyyy", tooltipDisplayMode: "always", tooltipDisplayMode: "always" },
-   });</code>
-</pre>
+   });{% endhighlight %}
+
 
 
 
@@ -4310,15 +4388,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    tooltipSettings:{backgroundColor: "#303030"},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4382,15 +4461,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    tooltipSettings:{font:{color : "FFFFFF"}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4432,15 +4512,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
                 tooltipSettings:{font:{family:"Arial"}}
                 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4482,15 +4563,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    tooltipSettings:{font:{fontStyle:"Normal"}}
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4532,15 +4614,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
   tooltipSettings:{ font:{opacity:0.5}}
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4582,15 +4665,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    tooltipSettings:{font:{size:"12px"}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4632,15 +4716,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    tooltipSettings:{ font:{weight:"regular"}},
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4682,15 +4767,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    tooltipSettings: { labelFormat: "MM/dd/yyyy"}
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4732,15 +4818,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    tooltipSettings:{tooltipDisplayMode: "always"},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4782,15 +4869,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    tooltipSettings:{visible: true}
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4876,15 +4964,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    valueAxisSettings:{axisLine: {visible: true}}
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4948,15 +5037,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    valueAxisSettings:{font: {size: '12px'}}
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5020,15 +5110,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    valueAxisSettings:{majorGridLines: {visible: true}}
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5092,15 +5183,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    valueAxisSettings:{majorTickLines: {size: 3}}
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5142,15 +5234,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    valueAxisSettings:{majorTickLines: {visible: false}}
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5192,15 +5285,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    valueAxisSettings:{majorTickLines: {width: 3}}
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5242,15 +5336,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    valueAxisSettings:{rangePadding: "normal"},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5292,15 +5387,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    valueAxisSettings:{visble: true}
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5342,15 +5438,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    valueType: "numeric",
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5376,15 +5473,16 @@ Specifies the xName for dataSource. This is used to take the x values from dataS
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    dataSource:"data1", 
    xName: "X"
    });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5410,15 +5508,16 @@ Specifies the yName for dataSource. This is used to take the y values from dataS
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    dataSource:"data1", 
    yName: "Y"
    });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5460,15 +5559,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
                          zoomFactor:"1"
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5510,15 +5610,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="RangeNavigator"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
         $("#container").ejRangeNavigator({
    zoomPosition:"0",
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5551,24 +5652,26 @@ destroy the RangeNavigator widget
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="container"></div> 
+ 
+<script>
 // Destroy RangeNavigator
 var obj = $("#container").data("ejRangeNavigator");
 obj.destroy(); // destroy the RangeNavigator
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="container"></div> 
+ 
+<script>
 $("#container").ejRangeNavigator("destroy");    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5604,22 +5707,26 @@ Fires on load of range navigator.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from RangeNavigator</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -5632,13 +5739,14 @@ Fires on load of range navigator.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //load event for chart
 $("#container").ejRangeNavigator({
    load: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -5667,22 +5775,26 @@ Fires after range navigator is loaded.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from RangeNavigator</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -5695,13 +5807,14 @@ Fires after range navigator is loaded.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //loaded event for chart
 $("#container").ejRangeNavigator({
    loaded: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -5730,22 +5843,26 @@ Fires on changing the range of range navigator.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from RangeNavigator</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RangeNavigator model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -5758,13 +5875,14 @@ Fires on changing the range of range navigator.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //rangeChanged event for chart
 $("#container").ejRangeNavigator({
    rangeChanged: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 

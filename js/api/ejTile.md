@@ -33,14 +33,15 @@ $(element).ejTile<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "people.png" }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -139,24 +140,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set enabled on initialization. 
 // To set enabled API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled: true } }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enabled, after initialization:
 // Get the enabled API value.
  $("#tile").ejTile("option", "badge.enabled");                  
 // Set the enabled API
-$("#tile").ejTile("option", "badge.enabled", true);            </code>
-</pre>
+$("#tile").ejTile("option", "badge.enabled", true);            {% endhighlight %}
+
 
 
 
@@ -198,24 +201,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set maxValue on initialization. 
 // To set maxValue API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled: true, value:5, maxValue:3 } }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the maxValue, after initialization:
 // Get the maxValue API value.
  $("#tile").ejTile("option", "badge.maxValue");                 
 // Set the maxValue API
-$("#tile").ejTile("option", "badge.maxValue", 3);            </code>
-</pre>
+$("#tile").ejTile("option", "badge.maxValue", 3);            {% endhighlight %}
+
 
 
 
@@ -257,24 +262,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set minValue on initialization. 
 // To set minValue API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled: true, value:3, minValue:5 }}); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the minValue, after initialization:
 // Get the minValue API value.
  $("#tile").ejTile("option", "badge.minValue");                 
 // Set the minValue API
-$("#tile").ejTile("option", "badge.minValue", 5);            </code>
-</pre>
+$("#tile").ejTile("option", "badge.minValue", 5);            {% endhighlight %}
+
 
 
 
@@ -316,24 +323,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set text on initialization. 
 // To set text API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({imageUrl: "themes/sample/tile/people.png", badge: { enabled: true, text:"ten" } }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the badge text, after initialization:
 // Get the badge text API value.
  $("#tile").ejTile("option", "badge.text");                     
 // Set the badge text API
-$("#tile").ejTile("option", "badge.text", "ten");            </code>
-</pre>
+$("#tile").ejTile("option", "badge.text", "ten");            {% endhighlight %}
+
 
 
 
@@ -375,24 +384,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set value on initialization. 
 // To set value API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled: true, value:5 }}); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the value, after initialization:
 // Get the value API value.
  $("#tile").ejTile("option", "badge.value");                    
 // Set the value API
-$("#tile").ejTile("option", "badge.value", 5);            </code>
-</pre>
+$("#tile").ejTile("option", "badge.value", 5);            {% endhighlight %}
+
 
 
 
@@ -434,26 +445,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set captionTemplateId on initialization. 
 // To set captionTemplateId API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;div id="sample" &gt; Settings
-&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<div id="sample" > Settings
+</div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", captionTemplateId: "sample"}); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the captionTemplateId, after initialization:
 // Get the captionTemplateId API value.
  $("#tile").ejTile("option", "captionTemplateId");                      
 // Set the captionTemplateId API
-$("#tile").ejTile("option", "captionTemplateId", "sample");            </code>
-</pre>
+$("#tile").ejTile("option", "captionTemplateId", "sample");            {% endhighlight %}
+
 
 
 
@@ -495,24 +508,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set cssClass on initialization. 
 // To set cssClass API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", cssClass:"customclass"}); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the cssClass, after initialization:
 // Get the cssClass API value.
  $("#tile").ejTile("option", "cssClass");                       
 // Set the cssClass API
-$("#tile").ejTile("option", "cssClass", "customclass");            </code>
-</pre>
+$("#tile").ejTile("option", "cssClass", "customclass");            {% endhighlight %}
+
 
 
 
@@ -554,24 +569,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set enablePersistence on initialization. 
 // To set enablePersistence API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", enablePersistence:true}); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enablePersistence, after initialization:
 // Get the enablePersistence API value.
  $("#tile").ejTile("option", "enablePersistence");                      
 // Set the enablePersistence API
-$("#tile").ejTile("option", "enablePersistence", true);            </code>
-</pre>
+$("#tile").ejTile("option", "enablePersistence", true);            {% endhighlight %}
+
 
 
 
@@ -613,24 +630,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set height on initialization. 
 // To set height API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", width:300, height:300 }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the height, after initialization:
 // Get the height API value.
  $("#tile").ejTile("option", "height");                 
 // Set the width API
-$("#tile").ejTile("option", "height", 300);            </code>
-</pre>
+$("#tile").ejTile("option", "height", 300);            {% endhighlight %}
+
 
 
 
@@ -672,30 +691,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set imageClass on initialization. 
 // To set imageClass API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageClass: "sample"}); 
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
 .sample
 {
 background-image:url("themes/sample/tile/people.png");
 }
-&lt;/style&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</style>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the imageClass, after initialization:
 // Get the imageClass API value.
  $("#tile").ejTile("option", "imageClass");                     
 // Set the imageClass API
-$("#tile").ejTile("option", "imageClass", "sample");            </code>
-</pre>
+$("#tile").ejTile("option", "imageClass", "sample");            {% endhighlight %}
+
 
 
 
@@ -737,24 +758,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set imagePosition on initialization. 
 // To set imagePosition API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", imagePosition: "right"}); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the imagePosition, after initialization:
 // Get the imagePosition API value.
  $("#tile").ejTile("option", "imagePosition");                  
 // Set the imagePosition API
-$("#tile").ejTile("option", "imagePosition", "right");            </code>
-</pre>
+$("#tile").ejTile("option", "imagePosition", "right");            {% endhighlight %}
+
 
 
 
@@ -796,26 +819,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set imageTemplateId on initialization. 
 // To set imageTemplateId API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;div id="sample" style="background-image: url('themes/sample/tile/people.png');height:100%;width:100%;"&gt;
-&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<div id="sample" style="background-image: url('themes/sample/tile/people.png');height:100%;width:100%;">
+</div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageTemplateId: "sample" }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the imageTemplateId, after initialization:
 // Get the imageTemplateId API value.
  $("#tile").ejTile("option", "imageTemplateId");                        
 // Set the imageTemplateId API
-$("#tile").ejTile("option", "imageTemplateId", "sample");            </code>
-</pre>
+$("#tile").ejTile("option", "imageTemplateId", "sample");            {% endhighlight %}
+
 
 
 
@@ -857,24 +882,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set imageUrl on initialization. 
 // To set imageUrl API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png"}); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the imageUrl, after initialization:
 // Get the imageUrl API value.
  $("#tile").ejTile("option", "imageUrl");                       
 // Set the imageUrl API
-$("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png");            </code>
-</pre>
+$("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png");            {% endhighlight %}
+
 
 
 
@@ -938,24 +965,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set liveTile enabled on initialization. 
 // To set liveTile enabled API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ renderMode:"windows", liveTile: { enabled: true, imageUrl:['themes/sample/tile/people.png','themes/sample/tile/sports.png'] } }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the liveTile enabled, after initialization:
 // Get the liveTile enabled API value.
  $("#tile").ejTile("option", "liveTile.enabled");                       
 // Set the liveTile enabled API
-$("#tile").ejTile("option", "liveTile.enabled", true);            </code>
-</pre>
+$("#tile").ejTile("option", "liveTile.enabled", true);            {% endhighlight %}
+
 
 
 
@@ -997,16 +1026,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set liveTile imageClass on initialization. 
 // To set liveTile imageClass API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ renderMode:"windows", liveTile: { enabled: true, imageClass: ['img1','img2','img3'] } }); 
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
 .img1
 {
 background-image:url("themes/sample/tile/people.png");
@@ -1019,16 +1049,17 @@ background-image:url("themes/sample/tile/sports.png");
 {
 background-image:url("themes/sample/tile/people_1.png");
 }
-&lt;/style&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</style>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the liveTile imageClass, after initialization:
 // Get the liveTile imageClass API value.
  $("#tile").ejTile("option", "liveTile.imageClass");                    
 // Set the liveTile imageClass API
-$("#tile").ejTile("option", "liveTile.imageClass", ['img1','img2','img3']);            </code>
-</pre>
+$("#tile").ejTile("option", "liveTile.imageClass", ['img1','img2','img3']);            {% endhighlight %}
+
 
 
 
@@ -1070,30 +1101,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set liveTile imageTemplateId on initialization. 
 // To set liveTile imageTemplateId API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;div id="img1" style="background-image: url('themes/sample/tile/people.png');height:100%;width:100%;"&gt;
-&lt;/div&gt;
-&lt;div id="img2" style="background-image: url('themes/sample/tile/sports.png');height:100%;width:100%;"&gt;
-&lt;/div&gt;
-&lt;div id="img3" style="background-image: url('themes/sample/tile/settings.png');height:100%;width:100%;"&gt;
-&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<div id="img1" style="background-image: url('themes/sample/tile/people.png');height:100%;width:100%;">
+</div>
+<div id="img2" style="background-image: url('themes/sample/tile/sports.png');height:100%;width:100%;">
+</div>
+<div id="img3" style="background-image: url('themes/sample/tile/settings.png');height:100%;width:100%;">
+</div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ renderMode:"windows", liveTile: { enabled: true, imageTemplateId: ['img1','img2','img3'] } }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the liveTile imageTemplateId, after initialization:
 // Get the liveTile imageTemplateId API value.
  $("#tile").ejTile("option", "liveTile.imageTemplateId");                       
 // Set the liveTile imageTemplateId API
-$("#tile").ejTile("option", "liveTile.imageTemplateId", ['img1','img2','img3']);            </code>
-</pre>
+$("#tile").ejTile("option", "liveTile.imageTemplateId", ['img1','img2','img3']);            {% endhighlight %}
+
 
 
 
@@ -1135,24 +1168,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set liveTile imageUrl on initialization. 
 // To set liveTile imageUrl API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ renderMode: "windows", livetile: { enabled: true, imageUrl: ['themes/sample/tile/people.png','themes/sample/tile/sports.png','themes/sample/tile/settings.png'] } }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the liveTile imageUrl, after initialization:
 // Get the liveTile imageUrl API value.
  $("#tile").ejTile("option", "liveTile.imageUrl");                      
 // Set the liveTile imageUrl API
-$("#tile").ejTile("option", "liveTile.imageUrl", ['themes/sample/tile/people.png','themes/sample/tile/sports.png','themes/sample/tile/settings.png']);            </code>
-</pre>
+$("#tile").ejTile("option", "liveTile.imageUrl", ['themes/sample/tile/people.png','themes/sample/tile/sports.png','themes/sample/tile/settings.png']);            {% endhighlight %}
+
 
 
 
@@ -1194,24 +1229,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set liveTile type on initialization. 
 // To set liveTile type API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ renderMode: "windows", liveTile: { enabled: true, imageUrl: ['themes/sample/tile/people.png','themes/sample/tile/sports.png','themes/sample/tile/settings.png'], type:"carousel" } }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the liveTile type, after initialization:
 // Get the liveTile type API value.
  $("#tile").ejTile("option", "liveTile.type");                  
 // Set the liveTile type API
-$("#tile").ejTile("option", "liveTile.type", "carousel");            </code>
-</pre>
+$("#tile").ejTile("option", "liveTile.type", "carousel");            {% endhighlight %}
+
 
 
 
@@ -1253,24 +1290,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set liveTile updateInterval on initialization. 
 // To set liveTile updateInterval API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({renderMode: "windows", liveTile: { enabled: true, imageUrl: ['themes/sample/tile/people.png','themes/sample/tile/sports.png','themes/sample/tile/settings.png'], updateInterval:1000 } }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the liveTile updateInterval, after initialization:
 // Get the liveTile updateInterval API value.
  $("#tile").ejTile("option", "liveTile.updateInterval");                        
 // Set the liveTile updateInterval API
-$("#tile").ejTile("option", "liveTile.updateInterval", 1000);            </code>
-</pre>
+$("#tile").ejTile("option", "liveTile.updateInterval", 1000);            {% endhighlight %}
+
 
 
 
@@ -1312,24 +1351,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set showText on initialization. 
 // To set showText API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", showText:false }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the showText, after initialization:
 // Get the showText API value.
  $("#tile").ejTile("option", "showText");                       
 // Set the showText API
-$("#tile").ejTile("option", "showText", false);            </code>
-</pre>
+$("#tile").ejTile("option", "showText", false);            {% endhighlight %}
+
 
 
 
@@ -1371,24 +1412,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set text on initialization. 
 // To set text API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", text:"Settings"}); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the text, after initialization:
 // Get the text API value.
  $("#tile").ejTile("option", "text");                   
 // Set the text API
-$("#tile").ejTile("option", "text", "Settings");            </code>
-</pre>
+$("#tile").ejTile("option", "text", "Settings");            {% endhighlight %}
+
 
 
 
@@ -1430,24 +1473,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set textAlignment on initialization. 
 // To set textAlignment API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", textAlignment:"left" }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the textAlignment, after initialization:
 // Get the textAlignment API value.
  $("#tile").ejTile("option", "textAlignment");                  
 // Set the textAlignment API
-$("#tile").ejTile("option", "textAlignment", "left");            </code>
-</pre>
+$("#tile").ejTile("option", "textAlignment", "left");            {% endhighlight %}
+
 
 
 
@@ -1489,24 +1534,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set tileSize on initialization. 
 // To set tileSize API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", tileSize:"medium" }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the tileSize, after initialization:
 // Get the tileSize API value.
  $("#tile").ejTile("option", "tileSize");                       
 // Set the tileSize API
-$("#tile").ejTile("option", "tileSize", "medium");            </code>
-</pre>
+$("#tile").ejTile("option", "tileSize", "medium");            {% endhighlight %}
+
 
 
 
@@ -1548,24 +1595,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set width on initialization. 
 // To set width API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", width:300,height:300 }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the width, after initialization:
 // Get the width API value.
  $("#tile").ejTile("option", "width");                  
 // Set the width API
-$("#tile").ejTile("option", "width", 300);            </code>
-</pre>
+$("#tile").ejTile("option", "width", 300);            {% endhighlight %}
+
 
 
 
@@ -1598,22 +1647,23 @@ Update the image template to another one.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tile" &gt;
-&lt;/div&gt; 
-&lt;div id="sample1" style="background-image: url('themes/sample/tile/people.png');height:100%;width:100%;"&gt;
-&lt;/div&gt;
-&lt;div id="sample2" style="background-image: url('themes/sample/tile/sports.png');height:100%;width:100%;"&gt;
-&lt;/div&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<div id="tile" >
+</div> 
+<div id="sample1" style="background-image: url('themes/sample/tile/people.png');height:100%;width:100%;">
+</div>
+<div id="sample2" style="background-image: url('themes/sample/tile/sports.png');height:100%;width:100%;">
+</div>
+<script> 
 $(function () {
 $("#tile").ejTile({ imageTemplateId: "sample1" }); 
 var value = $("#tile").data("ejTile");
 value.updateTemplate("sample2");
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1649,7 +1699,8 @@ Event triggers when the mousedown happens in the tile
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from tile
 <table class="params">
@@ -1662,22 +1713,26 @@ Event triggers when the mousedown happens in the tile
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the tile model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>text</code></td>
+<td class="name">{% highlight html %}
+text{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the current tile text</td>
 </tr>
@@ -1694,20 +1749,21 @@ Event triggers when the mousedown happens in the tile
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Define mouseDown event on initialization. 
 // To set mouseDown event API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "people.png", 
 mouseDown: function (args) { 
 //handle the event 
 }
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1736,7 +1792,8 @@ Event triggers when the mouseup happens in the tile
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from tile
 <table class="params">
@@ -1749,22 +1806,26 @@ Event triggers when the mouseup happens in the tile
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the tile model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>text</code></td>
+<td class="name">{% highlight html %}
+text{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the current tile text</td>
 </tr>
@@ -1781,20 +1842,21 @@ Event triggers when the mouseup happens in the tile
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Define mouseUp event on initialization. 
 // To set mouseUp event API value 
-&lt;div id="tile" &gt;&lt;/div&gt;
-&lt;script&gt; 
+<div id="tile" ></div>
+<script> 
 // Create Tile control 
 $("#tile").ejTile({ imageUrl: "people.png", 
 mouseUp: function (args) { 
 //handle the event 
 }
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

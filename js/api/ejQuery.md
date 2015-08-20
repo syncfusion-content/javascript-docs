@@ -33,18 +33,19 @@ $(element).ejQuery<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid; padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().take(5));
 var tbody = ""; 
-for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;td&gt;{3}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity,="" dm[i].freight);="" $(".table="" tbody").html(tbody);};=""&gt;&lt;/3;i++){&gt;</code>
-</pre>
+for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity,="" dm[i].freight);="" $(".table="" tbody").html(tbody);};=""></3;i++){>{% endhighlight %}
+
 
 
 
@@ -82,12 +83,14 @@ Passes custom parameters to our API URL.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>key</code></td>
+<td class="name">{% highlight html %}
+key{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last"></td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last"></td>
 </tr>
@@ -100,11 +103,12 @@ Passes custom parameters to our API URL.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;script&gt;
+
+{% highlight html %}
+<script>
 var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"}).executeQuery(new ej.Query().addParams("test","value"));
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -130,20 +134,21 @@ clone is used to dublicate the data.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().where("OrderID","equal","10250").clone());
 var tbody="";
-tbody += String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;", dm[0].OrderID, dm[0].CustomerID, dm[0].ShipCity);
+tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", dm[0].OrderID, dm[0].CustomerID, dm[0].ShipCity);
 $(".table tbody").html(tbody);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -172,7 +177,8 @@ It is used to excute the query on URL Binding
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>dataManager</code></td>
+<td class="name">{% highlight html %}
+dataManager{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">json data or OData</td>
 </tr>
@@ -191,13 +197,14 @@ method executes all operations immediately and does not wait for each individual
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;script&gt;
+
+{% highlight html %}
+<script>
 var dataManager = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"});
 var promise =  ej.Query().select(["OrderID", "CustomerID", "ShipName", "ShipCity", "Freight"]).execute(dataManager,done).take(3);
 promise.done(function(e){}) 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -226,7 +233,8 @@ It is used to excute the query on Local Binding
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>dataManager</code></td>
+<td class="name">{% highlight html %}
+dataManager{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">json data</td>
 </tr>
@@ -239,12 +247,13 @@ It is used to excute the query on Local Binding
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;script&gt;
+
+{% highlight html %}
+<script>
 var dm = ej.DataManager(window.gridData);
 var promise =  ej.Query().select(["OrderID", "CustomerID", "ShipName", "ShipCity", "Freight"]).executeLocal(dm).take(3);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -273,7 +282,8 @@ expand is used to performs complex binding.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>tables</code></td>
+<td class="name">{% highlight html %}
+tables{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">name of the tables</td>
 </tr>
@@ -286,12 +296,13 @@ expand is used to performs complex binding.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;script&gt;
+
+{% highlight html %}
+<script>
 var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
 .executeQuery(ej.Query().from("Orders").select("OrderID", "CustomerID", "ShipCity", "Employee.FirstName").expand("Employee"));
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -320,7 +331,8 @@ Relates two tables. A foreign key is a column or combination of columns which is
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>key</code></td>
+<td class="name">{% highlight html %}
+key{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">primary key field name</td>
 </tr>
@@ -333,14 +345,15 @@ Relates two tables. A foreign key is a column or combination of columns which is
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;script&gt;
+
+{% highlight html %}
+<script>
 var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
 .executeQuery(ej.Query().from("Orders")
 .hierarchy(ej.Query().from("Order_Details").foreignKey("OrderID").sortBy("Quantity"),function () {
  return [10250, 10251, 10252, 10253] }));
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -369,7 +382,8 @@ Specifies the name of table(s) to retrieve data.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>tableName</code></td>
+<td class="name">{% highlight html %}
+tableName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">name of the table</td>
 </tr>
@@ -382,18 +396,19 @@ Specifies the name of table(s) to retrieve data.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().from("Orders"));
 var tbody="";
-for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
-</pre>
+for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+
 
 
 
@@ -422,7 +437,8 @@ Groups records based on the given field name.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">name of the column</td>
 </tr>
@@ -435,18 +451,19 @@ Groups records based on the given field name.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().group("CustomerID"));
 var tbody="";
-for(var i=0;i&lt;3;i++){ row="dm[0].items[i];" tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," row.orderid,="" row.customerid,="" row.shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
-</pre>
+for(var i=0;i<3;i++){ row="dm[0].items[i];" tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," row.orderid,="" row.customerid,="" row.shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+
 
 
 
@@ -475,7 +492,8 @@ Displays the records in hierarchical relationships. The foreign key is used to r
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>query</code></td>
+<td class="name">{% highlight html %}
+query{% endhighlight %}</td>
 <td class="type"><span class="param-type">ej.Query</span></td>
 <td class="description last">query the json data</td>
 </tr>
@@ -488,14 +506,15 @@ Displays the records in hierarchical relationships. The foreign key is used to r
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;script&gt;
+
+{% highlight html %}
+<script>
 var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
 .executeQuery(ej.Query().from("Orders")
 .hierarchy(ej.Query().foreignKey("OrderID").from("Order_Details"),function () {
  return [10248] }));
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -524,12 +543,14 @@ Retrieves records based on the given page index and size.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>pageIndex</code></td>
+<td class="name">{% highlight html %}
+pageIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">page number</td>
 </tr>
 <tr>
-<td class="name"><code>pageSize</code></td>
+<td class="name">{% highlight html %}
+pageSize{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Number of rows in the page</td>
 </tr>
@@ -542,19 +563,20 @@ Retrieves records based on the given page index and size.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 //page(pageIndex,pageSize)
 var dm = ej.DataManager(window.employeeData).executeLocal(ej.Query().page(2,3));
 var tbody="";
-for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].employeeid,="" dm[i].lastname,="" dm[i].firstname);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
-</pre>
+for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].employeeid,="" dm[i].lastname,="" dm[i].firstname);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+
 
 
 
@@ -583,12 +605,14 @@ The range property is used to retrieve the records based on the given start and 
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>start</code></td>
+<td class="name">{% highlight html %}
+start{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">start index of json data</td>
 </tr>
 <tr>
-<td class="name"><code>end</code></td>
+<td class="name">{% highlight html %}
+end{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">end index of json data</td>
 </tr>
@@ -601,19 +625,20 @@ The range property is used to retrieve the records based on the given start and 
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 //range(startIndex,endIndex)
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().take(20).range(2,5));
 var tbody="";
-for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
-</pre>
+for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+
 
 
 
@@ -639,12 +664,13 @@ It is used to count records.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;script&gt;
+
+{% highlight html %}
+<script>
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().Requires
 {:.require}Count()));
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -673,22 +699,26 @@ It is used to search the given search key value in JSON data
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">name of the column</td>
 </tr>
 <tr>
-<td class="name"><code>operator</code></td>
+<td class="name">{% highlight html %}
+operator{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">conditional Operators</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">value to filter the field name</td>
 </tr>
 <tr>
-<td class="name"><code>ignoreCase</code></td>
+<td class="name">{% highlight html %}
+ignoreCase{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">on/off case sensitive.</td>
 </tr>
@@ -701,20 +731,21 @@ It is used to search the given search key value in JSON data
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().select(["OrderID","ShipCity","CustomerID"]).search("10251","OrderID","equal"));
 var tbody="";
-tbody += String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;", dm[0].OrderID, dm[0].CustomerID, dm[0].ShipCity);
+tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", dm[0].OrderID, dm[0].CustomerID, dm[0].ShipCity);
 $(".table tbody").html(tbody);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -743,7 +774,8 @@ Selects specified columns from the data source.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">name of the columns</td>
 </tr>
@@ -756,18 +788,19 @@ Selects specified columns from the data source.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().select(["OrderID","CustomerID","ShipCity"]));
 var tbody="";
-for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
-</pre>
+for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+
 
 
 
@@ -796,7 +829,8 @@ Skips the given count of records from the data source.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>nos</code></td>
+<td class="name">{% highlight html %}
+nos{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">number of records</td>
 </tr>
@@ -809,18 +843,19 @@ Skips the given count of records from the data source.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.employeeData).executeLocal(ej.Query().skip(5));
 var tbody="";
-for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].employeeid,="" dm[i].lastname,="" dm[i].firstname);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
-</pre>
+for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].employeeid,="" dm[i].lastname,="" dm[i].firstname);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+
 
 
 
@@ -849,7 +884,8 @@ Sort items or records in an ordered sequence.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">name of the column</td>
 </tr>
@@ -862,18 +898,19 @@ Sort items or records in an ordered sequence.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().sortBy("CustomerID desc"));
 var tbody="";
-for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
-</pre>
+for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+
 
 
 
@@ -902,7 +939,8 @@ Sort items or records in descending order.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">name of the column</td>
 </tr>
@@ -915,18 +953,19 @@ Sort items or records in descending order.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().sortByDesc("CustomerID"));
 var tbody="";
-for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
-</pre>
+for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+
 
 
 
@@ -955,7 +994,8 @@ Picks the given count of records from the top of the datasource.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>nos</code></td>
+<td class="name">{% highlight html %}
+nos{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">number of records</td>
 </tr>
@@ -968,18 +1008,19 @@ Picks the given count of records from the top of the datasource.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().take(5));
 var tbody="";
-for(var i=0;i&lt;5;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/5;i++){&gt;</code>
-</pre>
+for(var i=0;i<5;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></5;i++){>{% endhighlight %}
+
 
 
 
@@ -1008,7 +1049,8 @@ using is a method used to query the data manager.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>dataManager</code></td>
+<td class="name">{% highlight html %}
+dataManager{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Pass new data source</td>
 </tr>
@@ -1021,21 +1063,22 @@ using is a method used to query the data manager.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.gridData);
 var local = dm.executeLocal(ej.Query().using(dm).take(1));
 var tbody = ""; 
- tbody += String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;/tr&gt;", local[0].OrderID, local[0].CustomerID);
+ tbody += String.format("<tr><td>{0}</td><td>{1}</td></tr>", local[0].OrderID, local[0].CustomerID);
  $(".table tbody").html(tbody); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1064,22 +1107,26 @@ It is used to filter records based on the filter condition.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">name of the column</td>
 </tr>
 <tr>
-<td class="name"><code>operator</code></td>
+<td class="name">{% highlight html %}
+operator{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">conditional Operators</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">value to filter the field name</td>
 </tr>
 <tr>
-<td class="name"><code>ignoreCase</code></td>
+<td class="name">{% highlight html %}
+ignoreCase{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">on/off case sensitive.</td>
 </tr>
@@ -1092,18 +1139,19 @@ It is used to filter records based on the filter condition.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;style&gt;
+
+{% highlight html %}
+<style>
 .table,tr,td{ border:1px solid;padding:3px;}
-&lt;/style&gt;
-&lt;table class="table" style="border-collapse:collapse"&gt;
-&lt;tbody&gt;&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;script&gt;
+</style>
+<table class="table" style="border-collapse:collapse">
+<tbody></tbody>
+</table>
+<script>
 var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().where("OrderID","lessthan","10253"));
 var tbody="";
-for(var i=0;i&lt;3;i++){ tbody="" +="String.format("&lt;tr&gt;&lt;td&gt;{0}&lt;/td&gt;&lt;td&gt;{1}&lt;/td&gt;&lt;td&gt;{2}&lt;/td&gt;&lt;/tr&gt;"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""&gt;&lt;/3;i++){&gt;</code>
-</pre>
+for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+
 
 
 

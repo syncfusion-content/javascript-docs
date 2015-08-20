@@ -23,15 +23,16 @@ $(element).ejChart<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="container"></div> 
+ 
+<script>
 // Create Chart
 $('#container').ejChart();      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -90,15 +91,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ angle : 45}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -124,15 +126,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ content :"Template"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -158,15 +161,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ coordinateUnit :"pixels"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -192,15 +196,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ horizontalAlignment :"left"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -239,15 +244,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ margin :{ bottom:10}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -273,15 +279,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ margin :{ left:10}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -307,15 +314,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ margin :{ right:10}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -341,15 +349,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ margin :{ top:10}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -375,15 +384,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ opacity : 0.5}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -409,15 +419,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ region :"series"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -443,15 +454,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ verticalAlignment :"top"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -477,15 +489,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ visible :true}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -511,15 +524,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ x : 100}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -545,15 +559,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ xAxisName : "xAxis1"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -579,15 +594,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ y : 100}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -613,15 +629,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 annotations :[{ yAxisName : "yAxis1"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -647,15 +664,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
    backGroundImageUrl: "../images/chart/wheat.png"                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -694,15 +712,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>                             
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+                             
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
    border: { color: "green" }                      
 });
-&lt;/script&gt;                </code>
-</pre>
+</script>                {% endhighlight %}
+
 
 
 
@@ -728,15 +747,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
    border: { opacity: 0.5 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -762,15 +782,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
    border: { width: 2 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -796,15 +817,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 canResize : true             
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -843,15 +865,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
     chartArea: { background : "white" }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -890,15 +913,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
    chartArea: { border: { color :"green"} }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -924,15 +948,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
     chartArea: { border: { opacity : 0.5} }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -958,15 +983,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
     chartArea: { border: { width : 0.2} }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -983,15 +1009,16 @@ You can split chart into multiple plotting areas vertically. In order to split t
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
  columnDefinitions :[{unit : "percentage"}]                       
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1043,15 +1070,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{border :{ color : "green" } }                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1077,15 +1105,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{border :{ width : 2 } }                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1111,15 +1140,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{dashArray : "2,3"}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1145,15 +1175,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions : {dataSource: data.open }                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1179,15 +1210,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ doughnutCoefficient : 0.5}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1213,15 +1245,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ doughnutSize : 0.9}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1247,15 +1280,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ drawType : "area"}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1281,15 +1315,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ enableAnimation : false}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1315,15 +1350,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ enableSmartLabels : false}                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1349,15 +1385,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ endAngle : 270}                  
 });
-&lt;/script&gt; ; </code>
-</pre>
+</script> ; {% endhighlight %}
+
 
 
 
@@ -1383,15 +1420,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ explode : true}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1417,15 +1455,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ explodeAll : true}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1451,15 +1490,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ explodeIndex : 2}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1485,15 +1525,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ explodeOffset : 20}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1519,15 +1560,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{fill : "green"}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1566,15 +1608,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{font :{color : "green"}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1600,15 +1643,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ font : { fontFamily : "Algerian"}}                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1634,15 +1678,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions : {font :{fontStyle : "italic"}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1668,15 +1713,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{font :{fontWeight : "lighter"}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1702,15 +1748,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{font :{opacity : 0.5}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1736,15 +1783,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{font :{size : "14px"}}                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1770,15 +1818,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{funnelHeight : '40%' }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1804,15 +1853,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{funnelWidth : '40%' }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1838,15 +1888,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ gapRatio : 0.5}                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1872,15 +1923,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ isClosed : false}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1906,15 +1958,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ isStacking : "true"}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1940,15 +1993,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ labelPosition : "outside"}                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1974,15 +2028,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{lineCap : "butt"}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2008,15 +2063,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{lineCap : "round"}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2068,15 +2124,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{color : "green"}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2102,15 +2159,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{border :{width : 2}}}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2149,15 +2207,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{angle : 90}}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2196,15 +2255,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{border : {color : "green"}}}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2230,15 +2290,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{border :{ width :2 }}}}                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2277,15 +2338,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ type : "spline" }}}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2311,15 +2373,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ width : 2 }}}}                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2345,15 +2408,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{fill : "green"}}}                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2392,15 +2456,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2426,15 +2491,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{font :{ fontStyle : "italic" }}}}                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2460,15 +2526,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{font : { fontWeight : "lighter" }}}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2494,15 +2561,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{font :{ opacity : 0.5 }}}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2528,15 +2596,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{font : { size : "14px" }}}}                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2562,15 +2631,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{horizontalTextAlignment : "far"}}}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2609,15 +2679,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{margin :{ bottom :10 }}}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2643,15 +2714,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{margin :{ left : 10}}}}                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2677,15 +2749,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{margin :{ right :10 }}}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2711,15 +2784,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{margin :{ top :10 } }}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2745,15 +2819,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{opacity : 0.5}}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2779,15 +2854,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{shape : "circle"}}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2813,15 +2889,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{textPosition : "bottom"}}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2847,15 +2924,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{verticalTextAlignment : "far"}}}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2881,15 +2959,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{dataLabel :{visible : true}}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2915,15 +2994,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker : { fill : "green" } }                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2949,15 +3029,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{ imageUrl: "../images/sample.png"}}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2983,15 +3064,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{ opacity : 0.5 }}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3017,15 +3099,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{ shape: "rectangle"}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3064,15 +3147,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{size :{height : 5}}}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3098,15 +3182,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{ size :{ width : 2 } } }                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3132,15 +3217,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{marker :{ visible : true}}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3166,15 +3252,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{opacity : 0.5}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3200,15 +3287,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ pieCoefficient : 1}                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3234,15 +3322,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ pyramidMode : "linear"}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3268,15 +3357,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ startAngle : 150}                  
 });
-&lt;/script&gt; ; </code>
-</pre>
+</script> ; {% endhighlight %}
+
 
 
 
@@ -3328,15 +3418,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{tooltip :{border:{ color : "green" }}}                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3362,15 +3453,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{tooltip :{border :{ width : 2}}}                  
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -3396,15 +3488,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{tooltip :{duration : "300ms"}}                  
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -3430,15 +3523,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{tooltip :{enableAnimation : false}}                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3464,15 +3558,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{tooltip :{fill : "green"}}                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3498,15 +3593,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ tooltip : { format : "#point.x# : #point.y#%" } }                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3532,15 +3628,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{tooltip :{opacity : 0.5}}                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3566,15 +3663,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ tooltip: { template : "item" }}                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3600,15 +3698,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ tooltip :{visible : true} }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3634,15 +3733,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ type : "spline"}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3668,15 +3768,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ xAxisName : "xAxis"}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3702,15 +3803,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions : {xName: "XValue" }                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3736,15 +3838,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{ yAxisName : "yAxis"}                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3770,15 +3873,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 commonSeriesOptions :{yName: "XValue" }               
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3843,15 +3947,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 crosshair :{marker :{border :{ width :2 }}}              
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3877,15 +3982,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 crosshair :{marker :{opacity :2}}              
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3924,15 +4030,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 crosshair :{marker :{size :{ height :15 }}}              
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3958,15 +4065,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 crosshair :{marker :{size : {width :15}}}              
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3992,15 +4100,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 crosshair :{marker :{visible :false}}              
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4026,15 +4135,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 crosshair :{type : "trackball"}              
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4060,15 +4170,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 crosshair :{visible :true}              
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4094,15 +4205,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 depth : 100            
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4128,15 +4240,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 enable3D : true             
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4162,15 +4275,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 enableCanvasRendering : true             
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4196,15 +4310,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 enableRotation : true             
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4243,15 +4358,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ dPeriod : 4}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4277,15 +4393,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ enableAnimation :  true}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4311,15 +4428,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ fill : "#ff0000"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4358,15 +4476,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ font :{ color: "#ff00ff" }}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4392,15 +4511,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ font :{ fontFamily: "Algerian" }}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4426,15 +4546,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ font :{ fontStyle: "Italic" }}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4460,15 +4581,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ font :{ fontWeight: "Regular" }}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4494,15 +4616,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ font :{ opacity: 1 }}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4528,15 +4651,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ font :{ size: "14px" }}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4588,15 +4712,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ histogram : {border: {color: "#ff0000"}}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4622,15 +4747,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ histogram : {border: {width: 2}}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4656,15 +4782,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ histogram : {fill: "#ff0000"}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4690,15 +4817,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ histogram : {opacity: 0.5}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4724,15 +4852,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ kPeriod : 4}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4758,15 +4887,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ longPeriod :  14"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4805,15 +4935,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ lowerLine : {fill: "#ff0000"}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4839,15 +4970,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ lowerLine : {width: 3}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4886,15 +5018,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ macdLine : {fill: "#ff0000"}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4920,15 +5053,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ macdLine : {width: 3}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4954,15 +5088,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ macdType :  "both"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4988,15 +5123,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ period : 20}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5035,15 +5171,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ periodLine : {fill: "#ff0000"}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5069,15 +5206,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ periodLine : {width: 3}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5103,15 +5241,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ seriesName : "rsi"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5137,15 +5276,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ shortPeriod :  14"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5171,15 +5311,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ standardDeviations : 3}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5231,15 +5372,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ tooltip :{border : { color :"#0000ff"}} }]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5265,15 +5407,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ tooltip :{border : { width :2}} }]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5299,15 +5442,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ tooltip :{duration : "300ms"}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5333,15 +5477,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ tooltip :{enableAnimation : false}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5367,15 +5512,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ tooltip :{format : "#point.x#"}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5401,15 +5547,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ tooltip :{format : "#point.x#"}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5435,15 +5582,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ tooltip :{opacity : 0.5}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5469,15 +5617,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ tooltip :{visible : true}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5503,15 +5652,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ trigger :  14}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5537,15 +5687,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ visibility :  "visible"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5571,15 +5722,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ type : "momentum"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5618,15 +5770,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ upperLine : {fill: "#ff0000"}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5652,15 +5805,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ upperLine : {width: 3}}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5686,15 +5840,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ width :  3}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5720,15 +5875,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ xAxisName :  "xAxis"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5754,15 +5910,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 indicators :[{ yAxisName :  "yAxis"}]                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5801,15 +5958,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{alignment : "far"}                    
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -5848,15 +6006,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend : {border :{ color :"green"}}                     
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -5882,15 +6041,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ border :{width :2}}                     
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5916,15 +6076,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ columnCount : 2}                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5950,15 +6111,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ fill : "green"}                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5997,15 +6159,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ font :{fontFamily : "algerian"}}                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6031,15 +6194,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ font :{fontStyle : "italic"}}                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6065,15 +6229,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ font :{fontWeight : "lighter"}}                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6099,15 +6264,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ font :{size : "14px"}}                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6133,15 +6299,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{itemPadding : 5}                     
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6193,15 +6360,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ itemStyle :{border : { color : "green' }}}                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6227,15 +6395,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ itemStyle :{border :{ width : 2 }}}                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6261,15 +6430,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ itemStyle :{height : 20}}                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6295,15 +6465,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ itemStyle :{width : 15}}                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6342,15 +6513,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{location :{x :20}}                    
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -6376,15 +6548,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{location : {y : 100}}                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6410,15 +6583,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ opacity : 0.5}                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6444,15 +6618,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ position : "top"}                    
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -6478,15 +6653,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ rowCount :2}                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6512,15 +6688,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ shape : "circle" }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6559,15 +6736,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ size :{height : 20%}}                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6593,15 +6771,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{ size :{width : 20%}}                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6653,15 +6832,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend: { title: { font :{fontFamily: "Algerian" } } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6687,15 +6867,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend: { title: { font :{fontStyle: "normal" } } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6721,15 +6902,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend: { title: { font :{fontWeight: "normal" } } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6755,15 +6937,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend: { title: { font :{size: "14px" } } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6789,15 +6972,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend: { title: { text : "Countries" } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6823,15 +7007,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend: { title: { textAlignment : "near" } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6857,15 +7042,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 legend :{visible : false}                     
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -6891,15 +7077,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 locale : "en-US"            
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6925,15 +7112,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 perspectiveAngle : 60             
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6998,15 +7186,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { alternateGridBand: { even :{ fill : "green" } } }                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7032,15 +7221,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { alternateGridBand: { even :{ opacity : 0.5 } } }                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7079,15 +7269,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { alternateGridBand: { odd :{ fill : "red" } } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7113,15 +7304,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { alternateGridBand: { odd :{ opacity : 0.5 } } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7160,15 +7352,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { axisLine : { dashArray : "2,3" } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7194,15 +7387,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { axisLine : { offset : 5 } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7228,15 +7422,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { axisLine : { visible : false } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7262,15 +7457,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { axisLine : { width : 2 } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7296,15 +7492,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { columnIndex: 2 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7330,15 +7527,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { columnSpan: 2 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7377,15 +7575,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { crosshairLabel : { visible : true} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7411,15 +7610,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { desiredIntervals: 5 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7445,15 +7645,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { edgeLabelPlacement : "shift" }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7479,15 +7680,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { enableTrim : true }                      
 });
-&lt;/script&gt;    </code>
-</pre>
+</script>    {% endhighlight %}
+
 
 
 
@@ -7526,15 +7728,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { font : { fontFamily : "Algerian"} }                      
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -7560,15 +7763,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { font : { fontStyle : "Italic"} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7594,15 +7798,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { font : { fontWeight : "lighter"} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7628,15 +7833,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { font : { opacity : 0.5} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7662,15 +7868,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { font : { size : "12px"} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7696,15 +7903,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { intervalType: "days" }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7730,15 +7938,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { isInversed : true}                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7764,15 +7973,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { labelFormat: "{value}%" }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7798,15 +8008,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>              
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+              
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { labelIntersectAction : "multipleRows" }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7832,15 +8043,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { labelPosition : "inside" }                       
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7866,15 +8078,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { labelRotation: 90 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7900,15 +8113,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { logBase: 5 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7947,15 +8161,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
     primaryXAxis: { majorGridLines: { dashArray : "2,3"} }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7981,15 +8196,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { majorGridLines: { opacity: 0.5 } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8015,15 +8231,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { majorGridLines: { visible: false } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8049,15 +8266,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
     primaryXAxis: { majorGridLines: { width : 0.5} }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8096,15 +8314,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { majorTickLines: { size: 2 } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8130,15 +8349,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { majorTickLines: { visible: false } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8164,15 +8384,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { majorTickLines: { width: 2 } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8198,15 +8419,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { maximumLabels : 5 }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8232,15 +8454,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { maximumLabelWidth :34.5 }                      
 });
-&lt;/script&gt;    </code>
-</pre>
+</script>    {% endhighlight %}
+
 
 
 
@@ -8279,15 +8502,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { minorGridLines: { dashArray: "2,3" } }                      
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8313,15 +8537,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { minorGridLines: { visible: true } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8347,15 +8572,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { minorGridLines: { width: 2 } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8394,15 +8620,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { minorTickLines: { size: 2 } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8428,15 +8655,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { minorTickLines: { visible: true } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8462,15 +8690,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { minorTickLines: { width: 2 } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8496,15 +8725,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { minorTicksPerInterval: 5 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8530,15 +8760,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { name: "xAxis" }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8564,15 +8795,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { opposedPosition : true }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8598,15 +8830,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { plotOffset: 0 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8632,15 +8865,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { rangePadding : "normal" }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8666,15 +8900,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { roundingPlaces: 3 }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8722,15 +8957,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ borderColor: "green" }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8756,15 +8992,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ color: "green" }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8790,15 +9027,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ end: 5 }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8837,15 +9075,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ font : { color: "green"} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8871,15 +9110,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ font : { fontFamily : "Algerian"} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8905,15 +9145,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ font : { fontStyle: "Bold"} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8939,15 +9180,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ font : { fontWeight: "lighter"} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8973,15 +9215,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ font : { opacity: 0.5} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9007,15 +9250,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ font : { size: "15px"} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9041,15 +9285,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ start: 2 }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9075,15 +9320,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ startFromAxis : true }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9109,15 +9355,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ text : "Empty Point" }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9143,15 +9390,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ textAlignment : "middletop" }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9177,15 +9425,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ visible : true }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9211,15 +9460,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ width : 0 }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9245,15 +9495,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { stripLine:[{ zIndex: "behind" }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9279,15 +9530,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { tickLinesPosition : "inside" }                       
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9326,14 +9578,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { title:{enableTrim:true} }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9372,15 +9625,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { title: { font : { fontFamily : "Algerain"} } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9406,15 +9660,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { title: { font : { fontStyle : "Italic"} } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9440,15 +9695,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { title: { font : { fontWeight : "lighter"} } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9474,15 +9730,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { title: { font : { opacity : 0.8} } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9508,15 +9765,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { title: { font : { size : "14px"} } }                      
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -9542,14 +9800,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { title:{maximumTitleWidth: null} }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9575,15 +9834,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { title: { text: "Year" } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9609,15 +9869,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { valueType: "double" }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9643,15 +9904,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { visible: false }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9677,15 +9939,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { zoomFactor : 0.5 }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9711,15 +9974,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { zoomPosition :0.5 }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9784,15 +10048,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { alternateGridBand: { even : {fill : "red" } } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9818,15 +10083,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { alternateGridBand: { even : {opacity : 0.5 } } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9865,15 +10131,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { alternateGridBand: { odd : { fill :"red" }  } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9899,15 +10166,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { alternateGridBand: { odd : { opacity :0.5 }  } }                       
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9946,15 +10214,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { crosshairLabel: { axisLine :{ dashArray : "2,3" } } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9980,15 +10249,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { axisLine: { offset : 5 } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10014,15 +10284,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { axisLine: { visible : false } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10048,15 +10319,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { axisLine: { width : 2 } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10095,15 +10367,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { crosshairLabel: { visible : true } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10129,15 +10402,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { desiredIntervals: 5 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10163,15 +10437,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { edgeLabelPlacement: "shift" }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10197,15 +10472,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { enableTrim : true }                      
 });
-&lt;/script&gt;    </code>
-</pre>
+</script>    {% endhighlight %}
+
 
 
 
@@ -10244,15 +10520,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { font: { fontFamily : "Algerian" } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10278,15 +10555,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { font: { fontStyle : "italic" } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10312,15 +10590,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { font: { fontWeight : "normal" } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -10346,15 +10625,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { font: { opacity : 0.5 } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10380,15 +10660,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { font: { size : "12px" } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10414,15 +10695,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { intervalType: "days" }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -10448,15 +10730,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { isInversed : true}                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -10482,15 +10765,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { labelFormat: "{value}F" }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -10516,15 +10800,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { labelIntersectAction: "multipleRows" }                      
 });
-&lt;/script&gt;    </code>
-</pre>
+</script>    {% endhighlight %}
+
 
 
 
@@ -10550,15 +10835,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { labelPosition : "inside" }                       
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10584,15 +10870,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { logBase: 5 }                      
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -10631,15 +10918,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { majorGridLines : {dashArray : "2,3"} }                      
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -10665,15 +10953,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { majorGridLines : {opacity : 0.5} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -10699,15 +10988,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { majorGridLines : {visible : false} }                      
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -10733,15 +11023,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { majorGridLines : {width : 2} }                      
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -10780,15 +11071,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { majorTickLines : {size : 2} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -10814,15 +11106,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { majorTickLines : {visible : false} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -10848,15 +11141,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { majorTickLines : {width : 2} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -10882,15 +11176,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { maximumLabels: 5 }                      
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -10916,15 +11211,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { maximumLabelWidth :34.5 }                      
 });
-&lt;/script&gt;    </code>
-</pre>
+</script>    {% endhighlight %}
+
 
 
 
@@ -10963,15 +11259,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { minorGridLines : {dashArray : "2,3"} }                      
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -10997,15 +11294,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { minorGridLines : {visible : true} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -11031,15 +11329,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { minorGridLines : {width : 2} }                      
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -11078,15 +11377,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { minorTickLines : {size : 2} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -11112,15 +11412,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { minorTickLines : {visible : true} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -11146,15 +11447,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { minorTickLines : {width : 2} }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -11180,15 +11482,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { minorTicksPerInterval: 3 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11214,15 +11517,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { name: "yAxis" }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11248,15 +11552,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { opposedPosition : true }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11282,15 +11587,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { plotOffset: 5 }                      
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -11316,15 +11622,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { rangePadding : "none" }                      
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -11350,15 +11657,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { roundingPlaces: 2 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11384,15 +11692,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { rowIndex: 1 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11418,15 +11727,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { rowSpan: 2 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11474,15 +11784,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ borderColor: "green" }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11508,15 +11819,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ color: "green" }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11542,15 +11854,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ end: 5 }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11589,15 +11902,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ font : { color: "green"} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11623,15 +11937,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ font : { fontFamily : "Algerian"} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11657,15 +11972,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ font : { fontStyle: "Bold"} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11691,15 +12007,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ font : { fontWeight: "lighter"} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11725,15 +12042,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ font : { opacity: 0.5} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11759,15 +12077,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ font : { size: "15px"} }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11793,15 +12112,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ start: 2 }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11827,15 +12147,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ startFromAxis : true }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11861,15 +12182,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ text : "Empty Point" }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11895,15 +12217,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ textAlignment : "middletop" }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11929,15 +12252,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ visible : true }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11963,15 +12287,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ width : 0 }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -11997,15 +12322,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { stripLine:[{ zIndex: "behind" }]}                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12031,15 +12357,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { tickLinesPosition : "inside" }                       
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12078,14 +12405,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryXAxis: { title:{enableTrim:true} }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12124,15 +12452,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { title :{ font :{ fontFamily: "Algerian" } } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12158,15 +12487,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { title :{ font :{ fontStyle : "Italic" } } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -12192,15 +12522,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { title :{ font :{ fontWeight: "normal" } } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -12226,15 +12557,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { title :{ font :{ opacity: 0.5 } } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -12260,15 +12592,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { title :{ font :{ size: "12px" } } }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -12294,14 +12627,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { title:{maximumTitleWidth: null} }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12327,15 +12661,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { title :{ text: "yAxis" } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12361,15 +12696,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { valueType: "double" }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -12395,15 +12731,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { visible : false }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -12429,15 +12766,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { zoomFactor : 0.5 }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12463,15 +12801,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 primaryYAxis: { zoomPosition : 0.5 }                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -12497,15 +12836,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 rotation : 45             
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12522,15 +12862,16 @@ You can split chart into multiple plotting areas horizontally. In order to split
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 rowDefinitions :[{unit : "percentage"}]                      
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -12569,15 +12910,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{bearFillColor: "blue" }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12616,15 +12958,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{border :{ color : "green" } }]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12650,15 +12993,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{border :{ width : 2 } }]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12684,15 +13028,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{bullFillColor: "green" }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12718,15 +13063,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{dashArray : "2,3"}]                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12752,15 +13098,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{dataSource: data.open }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12786,15 +13133,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{doughnutCoefficient : 0.5 }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12820,15 +13168,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{doughnutSize : 0.6 }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12854,15 +13203,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{drawType : false }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12888,15 +13238,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{enableAnimation : false }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12922,15 +13273,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{enableSmartLabels : false }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12956,15 +13308,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{endAngle: 270 }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12990,15 +13343,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{explode: true }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13024,15 +13378,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{explodeAll: true }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13058,15 +13413,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{explodeIndex : 2 }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13092,15 +13448,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{explodeOffset : 20 }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13126,15 +13483,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{fill : "green"}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13173,15 +13531,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{font :{color : "green"}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13207,15 +13566,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{ font : { fontFamily : "Algerian"}}]                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13241,15 +13601,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{font :{fontStyle : "italic"}} ]                
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13275,15 +13636,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{font :{fontWeight : "lighter"}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13309,15 +13671,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{font :{opacity : 0.5}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13343,15 +13706,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{font :{size : "14px"}}]                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13377,15 +13741,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{funnelHeight : '40%' }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13411,15 +13776,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{funnelWidth : '40%' }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13445,15 +13811,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{gapRatio : 0.2 }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13479,15 +13846,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{isClosed : false }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13513,15 +13881,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{isStacking : false }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13547,15 +13916,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{labelPosition : "outside" }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13581,15 +13951,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{lineCap : "butt"}]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13615,15 +13986,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{lineJoin : "round"}]                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13675,15 +14047,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{color : "green"}]                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13709,15 +14082,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{border :{width : 2}}}]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13756,15 +14130,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{angle : 90}}]                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13803,15 +14178,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{border : {color : "green"}}}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13837,15 +14213,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{border :{ width :2 }}}}]                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13884,15 +14261,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{connectorLine :{ type : "spline" }}}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13918,15 +14296,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{connectorLine :{ width : 2 }}}}]                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13952,15 +14331,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{fill : "green"}}}]                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13999,15 +14379,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}]                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -14033,15 +14414,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{font :{ fontStyle : "italic" }}}}]                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -14067,15 +14449,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{font : { fontWeight : "lighter" }}}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14101,15 +14484,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{font :{ opacity : 0.5 }}}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14135,15 +14519,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{font : { size : "14px" }}}}]                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -14169,15 +14554,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{horizontalTextAlignment : "far"}}}]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14216,15 +14602,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{margin :{ bottom :10 }}}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14250,15 +14637,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{margin :{ left : 10}}}}]                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -14284,15 +14672,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{margin :{ right :10 }}}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14318,15 +14707,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{margin :{ top :10 } }}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14352,15 +14742,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{opacity : 0.5}}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14386,15 +14777,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{shape : "circle"}}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14420,15 +14812,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{textPosition : "bottom"}}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14454,15 +14847,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{verticalTextAlignment : "far"}}}]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14488,15 +14882,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{dataLabel :{visible : true}}]                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -14522,15 +14917,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker : { fill : "green" } }]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14556,15 +14952,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{ imageUrl: "../images/sample.png"}}]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14590,15 +14987,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{ opacity : 0.5 }}]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14624,15 +15022,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{ shape: "rectangle"}]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14671,15 +15070,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{size :{height : 5}}}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14705,15 +15105,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{ size :{ width : 2 } } }]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14739,15 +15140,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{marker :{ visible : true}}]                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -14773,15 +15175,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series :[{opacity : 0.5}]                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -14807,15 +15210,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{pieCoefficient : 0.6 }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -14841,15 +15245,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{points : [{x : 2000, y : 15}] }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -14875,15 +15280,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{pyramidMode : "linear" }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -14909,16 +15315,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 var query =  ej.Query().from("Orders").take(10);
 $("#container").ejChart({
 series : [{query: query }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -14944,15 +15351,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{startAngle: 140 }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15004,15 +15412,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{tooltip : {border : { color :"green"} }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15038,15 +15447,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{tooltip : {border : { width :2} }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15072,15 +15482,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{tooltip : { duration: "300ms" }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15106,15 +15517,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{tooltip : { enableAnimation: false }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15140,15 +15552,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{tooltip : {fill : "green"} }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15174,15 +15587,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{tooltip : {format : "#point.x# : #point.y#"} }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15208,15 +15622,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{tooltip : { opacity: 0.5 }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15242,15 +15657,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{ tooltip: { template : "item" }}]                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -15276,15 +15692,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{tooltip : {visible : true} }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15310,15 +15727,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{type : "column" }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15344,15 +15762,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{visibility: "hidden" }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15378,15 +15797,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{xAxisName: "xAxis" }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15412,15 +15832,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{xName: "XValue" }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15446,15 +15867,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{yAxisName: "yAxis" }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15480,15 +15902,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 series : [{yName: "YValue" }]                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15514,15 +15937,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 sideBySideSeriesPlacement : true             
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15548,15 +15972,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 theme : "flatdark"            
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15582,15 +16007,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 tilt : 5             
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15642,15 +16068,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title : { font : { fontFamily : "Algerian" } }                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15676,15 +16103,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title : { font : { fontStyle : "italic" } }                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15710,15 +16138,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title : { font : { fontWeight : "lighter" } }                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15744,15 +16173,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title : { font : { opacity : 0.8 } }                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15778,15 +16208,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title : { font : { size : "22px" } }                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15838,15 +16269,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title: {subTitle : {font :{ fontFamily : "Algerian" } } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15872,15 +16304,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title: { subTitle : {font :{ fontStyle : "Normal" } } }                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15906,15 +16339,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title: { subTitle : {font :{ fontWeight : "regular" } } }                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15940,15 +16374,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title: { subTitle : {font :{ opacity : 0.5 } } }                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -15974,15 +16409,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title: { subTitle : {font :{ size : "14px" } } }                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -16008,15 +16444,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title: { subTitle: { text : "Performace chart" } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -16042,15 +16479,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title: { subTitle: { textAlignment : "near" } }                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -16076,15 +16514,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title : { text : "Power Production"}                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -16110,15 +16549,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 title : { textAlignment : "near"}                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -16144,15 +16584,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 wallSize : 5             
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16191,15 +16632,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 zooming :{enable :true}          
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16225,15 +16667,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 zooming:{enableDeferredZoom : true}            
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -16259,15 +16702,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 zooming:{enableMouseWheel : true}            
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -16293,15 +16737,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
 $("#container").ejChart({
 zooming :{type : "y"}            
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 ## Methods
@@ -16322,17 +16767,18 @@ export the chart widget
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="container"></div> 
+ 
+<script>
 // Export Chart
 var canvas = $("#container").ejChart("exportChart"); 
 var dt = canvas.toDataURL();
 this.href = dt;
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16349,24 +16795,26 @@ redraw the chart widget
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="container"></div> 
+ 
+<script>
 // Redraw Chart
 var chartObj = $("#container").data("ejChart");
 chartObj.redraw(); // redraw the chart
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="container"></div> 
+ 
+<script>
 $("#container").ejChart("redraw");      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -16392,22 +16840,26 @@ Fires on completion of animation.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -16418,13 +16870,14 @@ Fires on completion of animation.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //animationComplete event for chart
 $("#container").ejChart({
    animationComplete: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -16446,27 +16899,32 @@ Fires on rendering the axis labels.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Axis</code></td>
+<td class="name">{% highlight html %}
+argument.Axis{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.Label</code></td>
+<td class="name">{% highlight html %}
+argument.Label{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart for processing of labels</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -16477,13 +16935,14 @@ Fires on rendering the axis labels.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //axesLabelRendering event for chart
 $("#container").ejChart({
    axesLabelRendering: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -16505,22 +16964,26 @@ Fires on initializing the axis labels.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -16531,13 +16994,14 @@ Fires on initializing the axis labels.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //axesLabelsInitialize event for chart
 $("#container").ejChart({
    axesLabelsInitialize: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -16559,22 +17023,26 @@ Fires on axes range calculation.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -16585,13 +17053,14 @@ Fires on axes range calculation.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //axesRangeCalculate event for chart
 $("#container").ejChart({
    axesRangeCalculate: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -16613,22 +17082,26 @@ Fires on rendering the axes title.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -16639,13 +17112,14 @@ Fires on rendering the axes title.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //axesTitleRendering event for chart
 $("#container").ejChart({
    axesTitleRendering: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -16667,22 +17141,26 @@ Fires on chart area bounds calculation.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -16693,13 +17171,14 @@ Fires on chart area bounds calculation.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //chartAreaBoundsCalculate event for chart
 $("#container").ejChart({
    chartAreaBoundsCalculate: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -16716,11 +17195,12 @@ Fires after chart is created.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //create event for chart
-$("#container").ejChart("create");</code>
-</pre>
+$("#container").ejChart("create");{% endhighlight %}
+
 
 
 
@@ -16737,11 +17217,12 @@ Fires when chart is destroyed completely.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //animationComplete event for chart
-$("#container").ejChart("destroy");</code>
-</pre>
+$("#container").ejChart("destroy");{% endhighlight %}
+
 
 
 
@@ -16763,22 +17244,26 @@ Fires on rendering the display text.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -16789,13 +17274,14 @@ Fires on rendering the display text.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //displayTextRendering event for chart
 $("#container").ejChart({
    displayTextRendering: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -16817,22 +17303,26 @@ Fires on calculating the legend bounds
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -16843,13 +17333,14 @@ Fires on calculating the legend bounds
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //legendBoundsCalculate event for chart
 $("#container").ejChart({
    legendBoundsCalculate: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -16871,22 +17362,26 @@ Fires on click of legend item
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -16897,13 +17392,14 @@ Fires on click of legend item
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //legendItemClick event for chart
 $("#container").ejChart({
    legendItemClick: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -16925,22 +17421,26 @@ Fires on mouse move over legend item.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -16951,13 +17451,14 @@ Fires on mouse move over legend item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //legendItemMouseMove event for chart
 $("#container").ejChart({
    legendItemMouseMove: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -16979,22 +17480,26 @@ Fires on rendering of legend item.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -17005,13 +17510,14 @@ Fires on rendering of legend item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //legendItemRendering event for chart
 $("#container").ejChart({
    legendItemRendering: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -17033,22 +17539,26 @@ Fires on load of chart.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -17059,13 +17569,14 @@ Fires on load of chart.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //load event for chart
 $("#container").ejChart({
    load: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -17087,22 +17598,26 @@ Fires on click of point region.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -17113,13 +17628,14 @@ Fires on click of point region.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //pointRegionClick event for chart
 $("#container").ejChart({
    pointRegionClick: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -17141,22 +17657,26 @@ Fires on mousemove over the point region.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -17167,13 +17687,14 @@ Fires on mousemove over the point region.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //pointRegionMouseMove event for chart
 $("#container").ejChart({
    pointRegionMouseMove: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -17195,22 +17716,26 @@ Fires on pre render.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -17221,13 +17746,14 @@ Fires on pre render.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //preRender event for chart
 $("#container").ejChart({
    preRender: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -17249,22 +17775,26 @@ Fires on rendering the series.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -17275,13 +17805,14 @@ Fires on rendering the series.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //seriesRendering event for chart
 $("#container").ejChart({
    seriesRendering: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -17303,22 +17834,26 @@ Fires on rendering the symbols.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -17329,13 +17864,14 @@ Fires on rendering the symbols.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //symbolRendering event for chart
 $("#container").ejChart({
    symbolRendering: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -17357,22 +17893,26 @@ Fires on rendering the title.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -17383,13 +17923,14 @@ Fires on rendering the title.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //titleRendering event for chart
 $("#container").ejChart({
    titleRendering: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -17411,22 +17952,26 @@ Fires on initialize the tooltip.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -17437,13 +17982,14 @@ Fires on initialize the tooltip.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //toolTipInitialize event for chart
 $("#container").ejChart({
    toolTipInitialize: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -17465,22 +18011,26 @@ Fires on track the axis tooltip.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -17491,13 +18041,14 @@ Fires on track the axis tooltip.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //trackAxisToolTip event for chart
 $("#container").ejChart({
    trackAxisToolTip: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -17519,22 +18070,26 @@ Fires on tracking the tooltip.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Data</code></td>
+<td class="name">{% highlight html %}
+argument.Data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameters from chart</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the chart model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -17545,12 +18100,13 @@ Fires on tracking the tooltip.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //trackToolTip event for chart
 $("#container").ejChart({
    trackToolTip: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 

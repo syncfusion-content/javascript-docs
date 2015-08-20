@@ -33,15 +33,16 @@ $(element).ejDraggable<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div  id="dragable" &gt;&lt;/ div &gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div  id="dragable" ></ div > 
+ 
+<script>
 // Create Dragable
 $('#dragable').ejDraggable();   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -106,18 +107,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set clone API value during initialization  
-        $("#dragable").ejDraggable({ clone: true });                            * </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#dragable").ejDraggable({ clone: true });                            * {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the clone API, after initialization:
         //Gets the clone value  
         $("#dragable").ejDraggable('option', 'clone');
-                      </code>
-</pre>
+                      {% endhighlight %}
+
 
 
 
@@ -159,18 +162,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set cursorAt API value during initialization  
-        $("#dragable").ejDraggable({ cursorAt:  { top: 1, left: -2 } });                                * </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#dragable").ejDraggable({ cursorAt:  { top: 1, left: -2 } });                                * {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the cursorAt API, after initialization:
         //Gets the cursorAt value  
         $("#dragable").ejDraggable('option', 'cursorAt');
-                   </code>
-</pre>
+                   {% endhighlight %}
+
 
 
 
@@ -212,18 +217,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set distance API value during initialization  
-        $("#dragable").ejDraggable({ distance: 1 });                            * </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#dragable").ejDraggable({ distance: 1 });                            * {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the distance API, after initialization:
         //Gets the distance value  
         $("#dragable").ejDraggable('option', 'distance');
-                   </code>
-</pre>
+                   {% endhighlight %}
+
 
 
 
@@ -265,18 +272,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set dragArea API value during initialization  
-        $("#dragable").ejDraggable({ dragArea: true });                         * </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#dragable").ejDraggable({ dragArea: true });                         * {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the dragArea API, after initialization:
         //Gets the dragArea value  
         $("#dragable").ejDraggable('option', 'dragArea');
-                   </code>
-</pre>
+                   {% endhighlight %}
+
 
 
 
@@ -318,18 +327,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set handle API value during initialization  
-        $("#dragable").ejDraggable({ handle: null });                           * </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#dragable").ejDraggable({ handle: null });                           * {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the handle API, after initialization:
         //Gets the handle value  
         $("#dragable").ejDraggable('option', 'handle');
-                     </code>
-</pre>
+                     {% endhighlight %}
+
 
 
 
@@ -371,18 +382,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set scope API value during initialization  
-        $("#dragable").ejDraggable({ scope: 'default' });                               * </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#dragable").ejDraggable({ scope: 'default' });                               * {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the scope API, after initialization:
         //Gets the scope value  
         $("#dragable").ejDraggable('option', 'scope');
-                      </code>
-</pre>
+                      {% endhighlight %}
+
 
 
 
@@ -415,16 +428,17 @@ destroy in the dragable.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt; div  id="dragable" &gt; &lt;/div &gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+< div  id="dragable" > </div > 
+ 
+<script>
 // Create dragableObj
 var dragableObj  = $("#dragable").data("ejDraggable");
 dragableObj.destroy(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -460,17 +474,20 @@ This event is triggered when dragging events are destroyed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -483,13 +500,14 @@ This event is triggered when dragging events are destroyed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //destroy event for Draggable
 $("#dragable").ejDraggable({ 
         destroy: function(args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 
 
@@ -518,17 +536,20 @@ This event is triggered when the mouse is moved during the dragging.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -541,13 +562,14 @@ This event is triggered when the mouse is moved during the dragging.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drag event for Draggable
 $("#dragable").ejDraggable({ 
         drag: function(args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 
 
@@ -576,17 +598,20 @@ Supply a callback function to handle the drag start event as an init option.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -599,13 +624,14 @@ Supply a callback function to handle the drag start event as an init option.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //dragStart event for Draggable
 $("#dragable").ejDraggable({ 
         dragStart: function(args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 
 
@@ -634,17 +660,20 @@ This event is triggered when the mouse is moved during the dragging.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -657,13 +686,14 @@ This event is triggered when the mouse is moved during the dragging.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //dragStop event for Draggable
 $("#dragable").ejDraggable({ 
         dragStop: function(args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 
 
@@ -692,17 +722,20 @@ This event is triggered when dragged.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -715,20 +748,20 @@ This event is triggered when dragged.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //helper event for Draggable
 $("#dragable").ejDraggable({ 
         helper: function () {
-                return $('</code>
-</pre>
+                return $('{% endhighlight %}
+
 
 
 
 <pre>
 ').html("draggable").appendTo(document.body);}
 });      
-</pre>
 
 
 
@@ -736,7 +769,9 @@ $("#dragable").ejDraggable({
 
 
 
-<code><a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a></code>
+
+{% highlight html %}
+<a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>{% endhighlight %}
 
 
 

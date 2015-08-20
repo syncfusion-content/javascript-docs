@@ -33,16 +33,17 @@ $(element).ejSlider<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="slider"> </div> 
+ 
+<script> 
 // Create Slider 
 $('#slider').ejSlider(); 
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -113,14 +114,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 //To set animationSpeed API value during initialization  
 $("#slider").ejSlider({ animationSpeed: 500});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -162,14 +164,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 //To set cssClass API value during initialization  
         $("#slider").ejSlider({ cssClass: "gradient-lime"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -211,14 +214,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 //To set enableAnimation API value during initialization  
         $("#slider").ejSlider({ enableAnimation: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -260,13 +264,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="slider"> </div> 
+<script>
 //To set enabled API value during initialization  
         $("#slider").ejSlider({ enabled: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -308,13 +313,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="slider"> </div> 
+<script>
 //To set enablePersistence API value during initialization  
         $("#slider").ejSlider({ enablePersistence: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -356,16 +362,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+</br>
+</br>
+<div id="slider"> </div> 
+<script>
 //To set enableRTL API value during initialization  
         $("#slider").ejSlider({ enableRTL: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -407,13 +414,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="slider"> </div> 
+<script>
 //To set height API value during initialization  
         $("#slider").ejSlider({ height: 14});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -455,15 +463,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;/br&gt;
-&lt;/br&gt;
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+</br>
+</br>
+<div id="slider"> </div> 
+<script>
 //To set incrementStep API value during initialization  
         $("#slider").ejSlider({ incrementStep: 2});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -505,15 +514,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;/br&gt;
-&lt;/br&gt;
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+</br>
+</br>
+<div id="slider"> </div> 
+<script>
 //To set largeStep API value during initialization  
         $("#slider").ejSlider({ largeStep: 2});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -555,15 +565,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;/br&gt;
-&lt;/br&gt;
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+</br>
+</br>
+<div id="slider"> </div> 
+<script>
 //To set maxValue API value during initialization  
         $("#slider").ejSlider({ maxValue: 60});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -605,16 +616,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+</br>
+</br>
+<div id="slider"> </div> 
+<script>
 //To set minValue API value during initialization  
         $("#slider").ejSlider({ minValue: 0});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -656,13 +668,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="slider"> </div> 
+<script>
 //To set orientation API value during initialization
 $("#slider").ejSlider({ orientation: ej.Orientation.Vertical});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -704,13 +717,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="slider"> </div> 
+<script>
 //To set readOnly API value during initialization  
         $("#slider").ejSlider({ readOnly: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -752,13 +766,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="slider"> </div> 
+<script>
 //To set showRoundedCorner API value during initialization  
         $("#slider").ejSlider({ showRoundedCorner: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -800,15 +815,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;/br&gt;
-&lt;/br&gt;
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+</br>
+</br>
+<div id="slider"> </div> 
+<script>
 //To set enabled API value during initialization
         $("#slider").ejSlider({ showScale: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -850,15 +866,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;/br&gt;
-&lt;/br&gt;
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+</br>
+</br>
+<div id="slider"> </div> 
+<script>
 //To set showSmallTicks API value during initialization  
         $("#slider").ejSlider({ showSmallTicks: false});
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -900,16 +917,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+</br>
+</br>
+<div id="slider"> </div> 
+<script>
 //To set showTooltip API value during initialization  
         $("#slider").ejSlider({ showTooltip: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -951,14 +969,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 //To set sliderType API value during initialization
 $("#slider").ejSlider({ sliderType: ej.SliderType.Default});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1000,15 +1019,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;/br&gt;
-&lt;/br&gt;
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+</br>
+</br>
+<div id="slider"> </div> 
+<script>
 //To set smallStep API value during initialization  
         $("#slider").ejSlider({ smallStep: 2});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1050,15 +1070,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;/br&gt;
-&lt;/br&gt;
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+</br>
+</br>
+<div id="slider"> </div> 
+<script>
 //To set value API  during initialization
         $("#slider").ejSlider({ value: 60});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1100,15 +1121,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;/br&gt;
-&lt;/br&gt;
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+</br>
+</br>
+<div id="slider"> </div> 
+<script>
 //To set values API during initialization
         $("#slider").ejSlider({ values: [30,60]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1150,14 +1172,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 //To set width API value during initialization
         $("#slider").ejSlider({ width: "300px"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1190,27 +1213,29 @@ To disable the slider
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="slider"> </div> 
+ 
+<script>
 $("#slider").ejSlider();
 // Create slider control
 var sliderObj = $("#slider").data("ejSlider");
 sliderObj.disable(); // disable the slider control
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="slider"> </div> 
+ 
+<script>
 $("#slider").ejSlider();
 // disable the slider control
 $("#slider").ejSlider("disable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1236,27 +1261,29 @@ To enable the slider
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="slider"> </div> 
+ 
+<script>
 $("#slider").ejSlider();
 // Create slider control
 var sliderObj = $("#slider").data("ejSlider");
 sliderObj.enable(); // enable the slider control
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="slider"> </div> 
+ 
+<script>
 $("#slider").ejSlider();
 // enable the slider control
 $("#slider").ejSlider("enable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1282,27 +1309,29 @@ To get value from slider handle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 $("#slider").ejSlider();
 // Create Editors
 var sliderObj = $("#slider").data("ejSlider");
 sliderObj.getValue(); // getValue the slider handle
-&lt;/script&gt;
-                 </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
+</script>
+                 {% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="slider"> </div> 
+ 
+<script>
 $("#slider").ejSlider();
 // get value from slider handle
 $("#slider").ejSlider("getValue");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1338,7 +1367,8 @@ Fires when Slider control value is changed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from slider control
 <table class="params">
@@ -1351,32 +1381,38 @@ Fires when Slider control value is changed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>sliderIndex</code></td>
+<td class="name">{% highlight html %}
+sliderIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current handle number or index</td>
 </tr>
 <tr>
-<td class="name"><code>id</code></td>
+<td class="name">{% highlight html %}
+id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns slider id</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the slider model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the slider value</td>
 </tr>
@@ -1393,16 +1429,17 @@ Fires when Slider control value is changed successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 //change event for slider control
 $("#slider").ejSlider({
    change: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1431,7 +1468,8 @@ Fires when Slider control has been created successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from slider control
 <table class="params">
@@ -1444,17 +1482,20 @@ Fires when Slider control has been created successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the slider model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1471,16 +1512,17 @@ Fires when Slider control has been created successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 //create event for slider control
 $("#slider").ejSlider({
    create: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1509,7 +1551,8 @@ Fires when Slider control has been destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from slider control
 <table class="params">
@@ -1522,17 +1565,20 @@ Fires when Slider control has been destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the slider model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1549,16 +1595,17 @@ Fires when Slider control has been destroyed successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 //destroy event for slider control
 $("#slider").ejSlider({
    destroy: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1587,7 +1634,8 @@ Fires when Slider control is sliding successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from slider control
 <table class="params">
@@ -1600,32 +1648,38 @@ Fires when Slider control is sliding successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>sliderIndex</code></td>
+<td class="name">{% highlight html %}
+sliderIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current handle number or index</td>
 </tr>
 <tr>
-<td class="name"><code>id</code></td>
+<td class="name">{% highlight html %}
+id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns slider id</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the slider model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the slider value</td>
 </tr>
@@ -1642,16 +1696,17 @@ Fires when Slider control is sliding successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 //slide event for slider control
 $("#slider").ejSlider({
    slide: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1680,7 +1735,8 @@ Fires when Slider control is started successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from slider control
 <table class="params">
@@ -1693,32 +1749,38 @@ Fires when Slider control is started successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>sliderIndex</code></td>
+<td class="name">{% highlight html %}
+sliderIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current handle number or index</td>
 </tr>
 <tr>
-<td class="name"><code>id</code></td>
+<td class="name">{% highlight html %}
+id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns slider id</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the slider model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the slider value</td>
 </tr>
@@ -1735,16 +1797,17 @@ Fires when Slider control is started successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 //start event for slider control
 $("#slider").ejSlider({
    start: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1773,7 +1836,8 @@ Fires when Slider control is stopped successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from slider control
 <table class="params">
@@ -1786,32 +1850,38 @@ Fires when Slider control is stopped successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>sliderIndex</code></td>
+<td class="name">{% highlight html %}
+sliderIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current handle number or index</td>
 </tr>
 <tr>
-<td class="name"><code>id</code></td>
+<td class="name">{% highlight html %}
+id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns slider id</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the slider model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the slider value</td>
 </tr>
@@ -1828,16 +1898,17 @@ Fires when Slider control is stopped successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="slider"&gt; &lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
 //stop event for slider control
 $("#slider").ejSlider({
    stop: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

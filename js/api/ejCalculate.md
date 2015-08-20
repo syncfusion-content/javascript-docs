@@ -33,13 +33,14 @@ $(element).ejCalculate<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create calcEngine with grid data
 var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -94,12 +95,14 @@ Add the custom formuls with function in CalcEngine library
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>FormulaName</code></td>
+<td class="name">{% highlight html %}
+FormulaName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">pass the formula name</td>
 </tr>
 <tr>
-<td class="name"><code>FunctionName</code></td>
+<td class="name">{% highlight html %}
+FunctionName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">pass the custom function name to call</td>
 </tr>
@@ -112,10 +115,11 @@ Add the custom formuls with function in CalcEngine library
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Create Grid
 $('#Grid').ejGrid({
     dataSource: window.gridData
@@ -133,8 +137,8 @@ calcObj.addCustomFunction("ADD", "customAdd");
       }
       return result;
    }
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -163,12 +167,14 @@ Adds a named range to the NamedRanges collection
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>Name</code></td>
+<td class="name">{% highlight html %}
+Name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">pass the namedRange's name</td>
 </tr>
 <tr>
-<td class="name"><code>cellRange</code></td>
+<td class="name">{% highlight html %}
+cellRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">pass the cell range of NamedRange</td>
 </tr>
@@ -181,9 +187,10 @@ Adds a named range to the NamedRanges collection
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 // Create Grid
 $('#Grid').ejGrid({
     dataSource: window.gridData
@@ -192,8 +199,8 @@ var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
 var sheetID = calcObj.createSheetFamilyID();
 calcObj.registerGridAsSheet("sheet1", $("#Grid").data("ejGrid"), sheetID);
 calcObj.addNamedRange("FIRSTCELL","A1");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -222,7 +229,8 @@ Accepts a possible parsed formula and returns the calculated value without quote
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>Name</code></td>
+<td class="name">{% highlight html %}
+Name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">pass the cell range to adjust its range</td>
 </tr>
@@ -241,13 +249,14 @@ range
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
+
+{% highlight html %}
+var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
 var sheetID = calcObj.createSheetFamilyID();
 calcObj.registerGridAsSheet("sheet1", $("#Grid").data("ejGrid"), sheetID);
 calcObj.addNamedRange("FIRSTCELL","A1");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -276,7 +285,8 @@ When a formula cell changes, call this method to clear it from its dependent cel
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>Cell</code></td>
+<td class="name">{% highlight html %}
+Cell{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">pass the changed cell address</td>
 </tr>
@@ -289,11 +299,12 @@ When a formula cell changes, call this method to clear it from its dependent cel
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
+
+{% highlight html %}
+var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
 calcObj.clearFormulaDependentCells("A1");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -319,11 +330,12 @@ Call this method to clear whether an exception was raised during the computation
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
+
+{% highlight html %}
+var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
 calcObj.clearLibraryComputationException();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -352,7 +364,8 @@ Get the column index from a cell reference passed in.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>Cell</code></td>
+<td class="name">{% highlight html %}
+Cell{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">pass the cell address</td>
 </tr>
@@ -365,11 +378,12 @@ Get the column index from a cell reference passed in.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
+
+{% highlight html %}
+var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
 calcObj.colIndex("A1");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -398,7 +412,8 @@ Evaluates a parsed formula.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>Formula</code></td>
+<td class="name">{% highlight html %}
+Formula{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">pass the parsed formula</td>
 </tr>
@@ -417,11 +432,12 @@ value of formula
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
+
+{% highlight html %}
+var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
 calcObj.computedValue("&rsquo;n10n2a&rsquo;");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -450,7 +466,8 @@ Evaluates a parsed formula.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>Formula</code></td>
+<td class="name">{% highlight html %}
+Formula{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">pass the parsed formula</td>
 </tr>
@@ -469,11 +486,12 @@ value of formula
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
+
+{% highlight html %}
+var calcObj = new CalcEngine($("#Grid").data("ejGrid"));
 calcObj.computedValue("&rsquo;n10n2a&rsquo;");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

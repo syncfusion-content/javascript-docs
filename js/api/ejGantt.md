@@ -33,15 +33,16 @@ $(element).ejGantt<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;gantt id="gantt"&gt;Gantt&lt;/gantt&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<gantt id="gantt">Gantt</gantt> 
+ 
+<script>
 // Create Gantt
 $('#gantt').ejGantt();  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -115,16 +116,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt(
  {
     addDialogFields: [{ field: "taskId", editType: "stringedit" }]
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -166,13 +168,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                   
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                   
         $("#gantt").ejGantt({ allowColumnResize:  true });                      * 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -214,16 +217,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt(
  {
     allowGanttChartEditing:true
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -265,13 +269,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({ allowKeyboardNavigation : true});                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -313,13 +318,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({ allowMultiSorting : true});                       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -361,13 +367,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;   
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>   
         $("#gantt").ejGantt({ allowSelection:  true });                 * 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -409,13 +416,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>        
         $("#gantt").ejGantt({ allowSorting:  true });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -457,16 +465,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
         $("#gantt").ejGantt(
  {
     baselineColor: "blue"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -508,13 +517,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  baselineEndDateMapping : "BaselineEndDate" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -556,13 +566,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  baselineStartDateMapping : "BaselineStartDate" });               
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -604,13 +615,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  childMapping : "Children" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -652,14 +664,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  
                         connectorLineBackground : "#F2F2F2"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -701,14 +714,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  
                         connectorlineWidth : 1 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -750,13 +764,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt({  cssClass : "gradient-lime" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -798,16 +813,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt(
  {
     dataSource:[{Id:2,TaskName:"Testing",startDate:"12/1/2000",Duration:5 }]    
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -849,16 +865,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt(
  {
     dateFormat: "dd/MM/yyyy"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -900,13 +917,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt({  durationMapping : "Duration" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -948,14 +966,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  
                         durationUnit : day });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -997,16 +1016,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt(
  {
     editDialogFields: [{ field: "taskId", editType: "stringedit" }]
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1070,13 +1090,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  editSettings:{allowAdding : true} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1118,13 +1139,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  editSettings:{allowDeleting : true} });  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1166,13 +1188,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  editSettings:{allowEditing : true} });   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1214,13 +1237,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  editSettings:{editMode : "normal"} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1262,13 +1286,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({ enableAltRow : true});                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1310,16 +1335,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt(
  {
     enableCollapseAll: false
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1361,16 +1387,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt(
  {
     enableContextMenu: false
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1412,13 +1439,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
         $("#gantt").ejGantt({ enableProgressBarResizing:  true });                      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1460,16 +1488,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt(
  {
     enableResize: false
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1511,14 +1540,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  
                         enableTaskbarDragTooltip : true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1560,13 +1590,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  enableTaskbarTooltip : true });  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1608,13 +1639,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({ enableVirtualization : true});                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1656,13 +1688,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  endDateMapping : "EndDate" });   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1704,13 +1737,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
         $("#gantt").ejGantt({ highlightWeekends:  true });                      * 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1752,16 +1786,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt(
  {
    holidays:[{day:"12/2/2000",background:"cyan",label:"local holiday" }]        
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1803,13 +1838,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
         $("#gantt").ejGantt({ includeWeekend:  true });                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1851,13 +1887,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt({  locale : "it-IT" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1899,13 +1936,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  milestoneMapping : "milestone" });       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1947,14 +1985,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  
                         parentProgressbarBackground : "#F2F2F2"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1996,14 +2035,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  
                         parentTaskbarBackground : "#F2F2F2"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2045,13 +2085,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  parentTaskIdMapping : "ID" });               
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2093,13 +2134,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  predecessorMapping : "predecessor" });           
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2141,14 +2183,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
         $("#gantt").ejGantt({  
                         progressbarBackground : "#F2F2F2"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2190,14 +2233,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt({  
                         progressbarHeight : 100 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2239,16 +2283,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt(
  {
     progressbarTooltipTemplate: ""
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2290,16 +2335,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
         $("#gantt").ejGantt(
  {
     progressbarTooltipTemplateId: "tooltiptemplateID"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2341,13 +2387,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  progressMapping : "progress" });                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2389,15 +2436,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt(
  {
     query:ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);      
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2439,16 +2487,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt(
  {
     renderBaseline: false
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2490,16 +2539,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
         $("#gantt").ejGantt(
  {
     resourceIdMapping: "peopleID"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2541,13 +2591,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  resourceInfoMapping : "resources" });    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2589,16 +2640,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt(
  {
     resourceNameMapping: "EmployeeName"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2640,16 +2692,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt(
  {
    resources:[{id:1; name:"jack" }]     
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2691,14 +2744,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  
                         roundOffDayworkingTime : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2740,15 +2794,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  
                         rowHeight : 30,
                         });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2790,16 +2845,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt(
  {
     scheduleEndDate:"12/2/2000"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2863,15 +2919,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  
                         scheduleHeaderSettings:{dayHeaderFormat : "ddd" }
                 });
-&lt;/script&gt;              </code>
-</pre>
+</script>              {% endhighlight %}
+
 
 
 
@@ -2913,15 +2970,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  
                         scheduleHeaderSettings:{hourHeaderFormat : 'HH'}
                 });
-&lt;/script&gt;               </code>
-</pre>
+</script>               {% endhighlight %}
+
 
 
 
@@ -2963,14 +3021,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  
                         scheduleHeaderSettings:{minutesPerInterval : "oneMinute"}});              
-&lt;/script&gt;              </code>
-</pre>
+</script>              {% endhighlight %}
+
 
 
 
@@ -3012,15 +3071,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  
                         scheduleHeaderSettings:{monthHeaderFormat : "MMM" }
                });
-&lt;/script&gt;              </code>
-</pre>
+</script>              {% endhighlight %}
+
 
 
 
@@ -3062,15 +3122,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  
                         scheduleHeaderSettings:{scheduleHeaderType : "week"}
                });
-&lt;/script&gt;              </code>
-</pre>
+</script>              {% endhighlight %}
+
 
 
 
@@ -3112,14 +3173,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  
                         scheduleHeaderSettings:{weekendBackground : "#F2F2F2"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3161,15 +3223,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  
                         scheduleHeaderSettings:{weekHeaderFormat : "MMM dd , yyyy" }
                });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3211,15 +3274,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  
                         scheduleHeaderSettings:{yearHeaderFormat : "yyyy" }
                });
-&lt;/script&gt;               </code>
-</pre>
+</script>               {% endhighlight %}
+
 
 
 
@@ -3261,16 +3325,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt(
  {
     scheduleStartDate:"12/2/2000"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3312,16 +3377,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
         $("#gantt").ejGantt(
  {
     selectedItem: 2
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3363,16 +3429,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt(
  {
     selectedRowIndex:2
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3414,13 +3481,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;   
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>   
         $("#gantt").ejGantt({ showColumnChooser:  true });                      * 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3462,14 +3530,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  
                         showGridCellTooltip : true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3511,14 +3580,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  
                         showGridExpandCellTooltip : true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3560,14 +3630,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  
                         showProgressStatus : true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3609,14 +3680,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  
                         showResourceNames : true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3658,14 +3730,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt({  
                         showTaskNames : true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3729,16 +3802,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt(
  {
     sizeSettings:{height: "700px"}
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3780,16 +3854,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt(
  {
     sizeSettings:{width: "700px"}
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3853,13 +3928,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt({ sortSettings{sortedColumns : []}});                  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3901,13 +3977,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                                  
         $("#gantt").ejGantt({  splitterPosition : "50%" });     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3949,13 +4026,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                                  
         $("#gantt").ejGantt({  startDateMapping : "startdate" });                
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3997,10 +4075,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt(stripLines: [
    {
     day: "12/2/2000,
@@ -4010,8 +4089,8 @@ Example
     lineWidth: 2
   }
 ]); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4053,14 +4132,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
         $("#gantt").ejGantt({  
                         taskbarBackground : "#F2F2F2"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4102,16 +4182,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt(
  {
     taskbarEditingTooltipTemplate: "tooltiptemplate"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4153,16 +4234,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt(
  {
     taskbarEditingTooltipTemplateId: "TooltipTemplateId"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4204,16 +4286,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
         $("#gantt").ejGantt(
  {
     taskbarTooltipTemplate: ""
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4255,16 +4338,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt(
  {
     taskbarTooltipTemplateId: ""
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4306,13 +4390,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                                  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                                  
         $("#gantt").ejGantt({  taskIdMapping : "ID" }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4354,13 +4439,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt({  taskNameMapping : "Name" });     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4424,13 +4510,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
         $("#gantt").ejGantt({ showToolBar:  true });                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4472,13 +4559,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
         $("#gantt").ejGantt({ toolbarItems: [ej.Gantt.ToolbarItems.Add,ej.Gantt.ToolbarItems.Edit] });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4520,16 +4608,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt(
  {
     treeColumnIndex: 1
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4571,16 +4660,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
         $("#gantt").ejGantt(
  {
     weekendBackground: "blue"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4622,15 +4712,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
         $("#gantt").ejGantt({  
                         workingTimeScale : "TimeScale24Hours" 
             });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4663,27 +4754,29 @@ To add item in gantt
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 var data = {taskId:"40",taskName:"New Task 40",startDate:"2/20/2014",startDate:"2/25/2014"};
 gantObj.ejGantt("addRecord",data); // To add a task
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // To add an item
 var data = {taskId:"40",taskName:"New Task 40",startDate:"2/20/2014",startDate:"2/25/2014"};
 $("#gantt").ejGantt("addRecord",data);  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4709,25 +4802,27 @@ To cancel the edited state of an item in gantt
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("cancelEdit"); // To cancel edited
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // To outdent a selected item in gantt
 $("#gantt").ejGantt("cancelEdit");      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4753,25 +4848,27 @@ To collapse all the parent items in gantt
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("collapseAllItems"); // To collapse all parent items in gantt
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // To expand all items
 $("#gantt").ejGantt("collapseAllItems");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4797,25 +4894,27 @@ To delete a selected item in gantt
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("deleteItem"); // To delete a task
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // To delete an item
 $("#gantt").ejGantt("deleteItem");      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4841,25 +4940,27 @@ destroy the gantt widget all events bound using this._on will be unbind automati
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create gantt
 var gantt = $("#gantt").data("ejGantt");
 gantt.destroy(); // destroy the gantt
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // enable the gantt
 $("#gantt").ejGantt("destroy"); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4885,25 +4986,27 @@ To Expand all the parent items in gantt
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("expandAllItems"); // To expand all parent items in gantt
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // To expand all items
 $("#gantt").ejGantt("expandAllItems");  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4929,25 +5032,27 @@ To expand and collapse an item in gantt using item's ID
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("expandCollapseRecord" , "23"); // To expand collapse an item
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // To expand collapse an item
 $("#gantt").ejGantt("expandCollapseRecord" , "23");     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4976,7 +5081,8 @@ To hide the column by using header text
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>width</code></td>
+<td class="name">{% highlight html %}
+width{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">you can pass a header text of a column to hide</td>
 </tr>
@@ -4989,16 +5095,17 @@ To hide the column by using header text
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;gantt id="gantt"&gt;Gantt&lt;/gantt&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<gantt id="gantt">Gantt</gantt> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("hideColumn","Task Name");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5024,25 +5131,27 @@ To indent a selected item in gantt
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("indentItem"); // To indent a selected item in gantt
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // To indent a selected item in gantt
 $("#gantt").ejGantt("indentItem");      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5068,25 +5177,27 @@ To Open the dialog to add new task to the gantt
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("openAddDialog"); // To open the add dialog
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // open Add dialog
 $("#gantt").ejGantt("openAddDialog");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5112,25 +5223,27 @@ To Open the dialog to edit existing task to the gantt
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("openEditDialog"); // To open the add dialog
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // open Add dialog
 $("#gantt").ejGantt("openEditDialog");  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5156,25 +5269,27 @@ To outdent a selected item in gantt
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("outdentItem"); // To outdent a selected item in gantt
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // To outdent a selected item in gantt
 $("#gantt").ejGantt("outdentItem");     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5200,25 +5315,27 @@ To save the edited state of an item in gantt
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("saveEdit"); // To save edited state of an item
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // To expand collapse an item
 $("#gantt").ejGantt("saveEdit");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5244,25 +5361,27 @@ To search an item with search string provided at the run time
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("searchItem",$("#text").val()); // To search a task
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="gantt"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="gantt"></div> 
+ 
+<script>
 // To search a task
 $("#gantt").ejGantt("searchItem",$("#text").val());     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5291,7 +5410,8 @@ To set the grid width in gantt
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>width</code></td>
+<td class="name">{% highlight html %}
+width{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">you can give either percentage or pixels value</td>
 </tr>
@@ -5304,16 +5424,17 @@ To set the grid width in gantt
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="gantt"></div> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("setSplitterPosition","40%");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5342,7 +5463,8 @@ To show the column by using header text
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>width</code></td>
+<td class="name">{% highlight html %}
+width{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">you can pass a header text of a column to show</td>
 </tr>
@@ -5355,16 +5477,17 @@ To show the column by using header text
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;gantt id="gantt"&gt;Gantt&lt;/gantt&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<gantt id="gantt">Gantt</gantt> 
+ 
+<script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.ejGantt("showColumn","Task Name");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5400,7 +5523,8 @@ Triggered for every gantt action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when gantt is initialized:
 <table class="params">
@@ -5413,17 +5537,20 @@ Triggered for every gantt action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5432,7 +5559,8 @@ Triggered for every gantt action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters while perform sorting in grid tree action starts:
 <table class="params">
@@ -5445,32 +5573,38 @@ Triggered for every gantt action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the gantt model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>columnSortDirection</code></td>
+<td class="name">{% highlight html %}
+columnSortDirection{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the direction of sorting ascending or descending</td>
 </tr>
@@ -5479,7 +5613,8 @@ Triggered for every gantt action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters while searching action starts:
 <table class="params">
@@ -5492,27 +5627,32 @@ Triggered for every gantt action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>keyValue</code></td>
+<td class="name">{% highlight html %}
+keyValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the value of searching element.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the gantt model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5521,7 +5661,8 @@ Triggered for every gantt action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameterswhile performing the delete operation starts:
 <table class="params">
@@ -5534,27 +5675,32 @@ Triggered for every gantt action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the data od deleting element.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the gantt model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5563,7 +5709,8 @@ Triggered for every gantt action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters while performing the add operation starts:
 <table class="params">
@@ -5576,22 +5723,26 @@ Triggered for every gantt action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the data adding element.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns selected record index</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
@@ -5600,7 +5751,8 @@ Triggered for every gantt action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters while performing the edit operation starts:
 <table class="params">
@@ -5613,22 +5765,26 @@ Triggered for every gantt action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the data edting element</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns selected record index</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
@@ -5645,15 +5801,16 @@ Triggered for every gantt action before its starts.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    actionBegin: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5682,7 +5839,8 @@ Triggered for every gantt action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when gantt is initialized:
 <table class="params">
@@ -5695,17 +5853,20 @@ Triggered for every gantt action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5714,7 +5875,8 @@ Triggered for every gantt action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters after perform the sorting in grid tree is completed:
 <table class="params">
@@ -5727,32 +5889,38 @@ Triggered for every gantt action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the gantt model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>columnSortDirection</code></td>
+<td class="name">{% highlight html %}
+columnSortDirection{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the direction of sorting ascending or descending</td>
 </tr>
@@ -5761,7 +5929,8 @@ Triggered for every gantt action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters after searching completed:
 <table class="params">
@@ -5774,27 +5943,32 @@ Triggered for every gantt action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>keyValue</code></td>
+<td class="name">{% highlight html %}
+keyValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the value of searched element.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the gantt model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5803,7 +5977,8 @@ Triggered for every gantt action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameterswhile performing after completing the delete operation is completed:
 <table class="params">
@@ -5816,27 +5991,32 @@ Triggered for every gantt action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the data od deleted element.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the gantt model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5845,7 +6025,8 @@ Triggered for every gantt action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters after the add operation completed:
 <table class="params">
@@ -5858,22 +6039,26 @@ Triggered for every gantt action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the data added element.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns selected record index</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
@@ -5882,7 +6067,8 @@ Triggered for every gantt action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters after the edit operation completed:
 <table class="params">
@@ -5895,22 +6081,26 @@ Triggered for every gantt action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the data added element.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns selected record index</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
@@ -5927,15 +6117,16 @@ Triggered for every gantt action success event.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    actionComplete: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5964,7 +6155,8 @@ Triggered while enter the edit mode in the tree grid cell
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beginEdit event is triggered.
 <table class="params">
@@ -5977,27 +6169,32 @@ Triggered while enter the edit mode in the tree grid cell
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row element of editing cell.</td>
 </tr>
 <tr>
-<td class="name"><code>cellElement</code></td>
+<td class="name">{% highlight html %}
+cellElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the Element of editing cell.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of current cell record.</td>
 </tr>
 <tr>
-<td class="name"><code>columnIndex</code></td>
+<td class="name">{% highlight html %}
+columnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the column Index of cell belongs.</td>
 </tr>
@@ -6014,15 +6211,16 @@ Triggered while enter the edit mode in the tree grid cell
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    beginEdit: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6051,7 +6249,8 @@ Triggered after collapsed the gantt record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when collapsed event is triggered.
 <table class="params">
@@ -6064,17 +6263,20 @@ Triggered after collapsed the gantt record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row index of collapsed record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record..</td>
 </tr>
@@ -6091,15 +6293,16 @@ Triggered after collapsed the gantt record
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    collapsed: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6128,7 +6331,8 @@ Triggered while collapsing the gantt record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when collapsing event is triggered.
 <table class="params">
@@ -6141,17 +6345,20 @@ Triggered while collapsing the gantt record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row index of collapsing record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record..</td>
 </tr>
@@ -6168,15 +6375,16 @@ Triggered while collapsing the gantt record
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    collapsing: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6205,7 +6413,8 @@ Triggered while Context Menu is rendered in Gantt control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when context menu is rendered.
 <table class="params">
@@ -6218,27 +6427,32 @@ Triggered while Context Menu is rendered in Gantt control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>contextMenuItems</code></td>
+<td class="name">{% highlight html %}
+contextMenuItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the default context menu items to which we add custom items.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the gantt model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6255,15 +6469,16 @@ Triggered while Context Menu is rendered in Gantt control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    contextMenuOpen: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6292,7 +6507,8 @@ Triggered after save the modified cellValue in gantt.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when endEdit event is triggered.
 <table class="params">
@@ -6305,32 +6521,38 @@ Triggered after save the modified cellValue in gantt.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row element of editing cell.</td>
 </tr>
 <tr>
-<td class="name"><code>cellElement</code></td>
+<td class="name">{% highlight html %}
+cellElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the Element of editing cell.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column name of edited cell belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>columnObject</code></td>
+<td class="name">{% highlight html %}
+columnObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object of edited cell belongs.</td>
 </tr>
@@ -6347,15 +6569,16 @@ Triggered after save the modified cellValue in gantt.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    endEdit: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6384,7 +6607,8 @@ Triggered after expand the record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when expanded event is triggered.
 <table class="params">
@@ -6397,17 +6621,20 @@ Triggered after expand the record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row index of record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record..</td>
 </tr>
@@ -6424,15 +6651,16 @@ Triggered after expand the record
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    expanded: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6461,7 +6689,8 @@ Triggered while expanding the gantt record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when expanding event is triggered.
 <table class="params">
@@ -6474,17 +6703,20 @@ Triggered while expanding the gantt record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row index of record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record..</td>
 </tr>
@@ -6501,15 +6733,16 @@ Triggered while expanding the gantt record
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    expanding: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6538,7 +6771,8 @@ Triggered while gantt is loaded
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when load event is triggered.
 <table class="params">
@@ -6551,17 +6785,20 @@ Triggered while gantt is loaded
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the gantt model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6578,15 +6815,16 @@ Triggered while gantt is loaded
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    load: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6615,7 +6853,8 @@ Triggered while rendering each cell in the tree grid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when queryCellInfo event is triggered.
 <table class="params">
@@ -6628,27 +6867,32 @@ Triggered while rendering each cell in the tree grid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selecting row element.</td>
 </tr>
 <tr>
-<td class="name"><code>cellValue</code></td>
+<td class="name">{% highlight html %}
+cellValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the value of cell.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of current cell record.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column of cell belongs.</td>
 </tr>
@@ -6665,15 +6909,16 @@ Triggered while rendering each cell in the tree grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    queryCellInfo: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6702,7 +6947,8 @@ Triggered while rendering each taskbar in the gantt chart
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when queryTaskbarInfo event is triggered.
 <table class="params">
@@ -6715,22 +6961,26 @@ Triggered while rendering each taskbar in the gantt chart
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>TaskbarBackground</code></td>
+<td class="name">{% highlight html %}
+TaskbarBackground{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the taskbar background of current item.</td>
 </tr>
 <tr>
-<td class="name"><code>ProgressbarBackground</code></td>
+<td class="name">{% highlight html %}
+ProgressbarBackground{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the progressbar background of current item.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of the record.</td>
 </tr>
@@ -6747,15 +6997,16 @@ Triggered while rendering each taskbar in the gantt chart
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    queryTaskbarInfo: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6784,7 +7035,8 @@ Triggered while rendering each row
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowDataBound event is triggered.
 <table class="params">
@@ -6797,17 +7049,20 @@ Triggered while rendering each row
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row element of editing cell.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record..</td>
 </tr>
@@ -6824,15 +7079,16 @@ Triggered while rendering each row
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    rowDataBound: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6861,7 +7117,8 @@ Triggered after the row is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowSelected event is triggered.
 <table class="params">
@@ -6874,22 +7131,26 @@ Triggered after the row is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selecting row element.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the index of selecting row record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of selected record.</td>
 </tr>
@@ -6906,15 +7167,16 @@ Triggered after the row is selected.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    rowSelected: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6943,7 +7205,8 @@ Triggered before the row is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowSelecting event is triggered.
 <table class="params">
@@ -6956,22 +7219,26 @@ Triggered before the row is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selecting row element.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the index of selecting row record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data selecting record.</td>
 </tr>
@@ -6988,15 +7255,16 @@ Triggered before the row is going to be selected.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    rowSelecting: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7025,7 +7293,8 @@ Triggered after completing the editing operation in taskbar
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when taskbarEdited event is triggered.
 <table class="params">
@@ -7038,47 +7307,56 @@ Triggered after completing the editing operation in taskbar
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited record.</td>
 </tr>
 <tr>
-<td class="name"><code>previousData</code></td>
+<td class="name">{% highlight html %}
+previousData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous data value of edited record.</td>
 </tr>
 <tr>
-<td class="name"><code>dragging</code></td>
+<td class="name">{% highlight html %}
+dragging{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns 'true' if taskbar is dragged.</td>
 </tr>
 <tr>
-<td class="name"><code>leftResizing</code></td>
+<td class="name">{% highlight html %}
+leftResizing{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns 'true' if taskbar is left resized.</td>
 </tr>
 <tr>
-<td class="name"><code>rightResizing</code></td>
+<td class="name">{% highlight html %}
+rightResizing{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns 'true' if taskbar is right resized.</td>
 </tr>
 <tr>
-<td class="name"><code>progressResizing</code></td>
+<td class="name">{% highlight html %}
+progressResizing{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns 'true' if taskbar is progress resized.</td>
 </tr>
 <tr>
-<td class="name"><code>editingFields</code></td>
+<td class="name">{% highlight html %}
+editingFields{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the field values of record being edited.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the gantt model.</td>
 </tr>
@@ -7095,15 +7373,16 @@ Triggered after completing the editing operation in taskbar
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    taskbarEdited: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7132,7 +7411,8 @@ Triggered while editing the gantt chart (dragging, resizing the taskbar )
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when taskbarEditing event is triggered.
 <table class="params">
@@ -7145,27 +7425,32 @@ Triggered while editing the gantt chart (dragging, resizing the taskbar )
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the gantt model.</td>
 </tr>
 <tr>
-<td class="name"><code>rowData</code></td>
+<td class="name">{% highlight html %}
+rowData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row object being edited.</td>
 </tr>
 <tr>
-<td class="name"><code>editingFields</code></td>
+<td class="name">{% highlight html %}
+editingFields{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the field values of record being edited.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7182,15 +7467,16 @@ Triggered while editing the gantt chart (dragging, resizing the taskbar )
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#gantt").ejGantt({
    taskbarEditing: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

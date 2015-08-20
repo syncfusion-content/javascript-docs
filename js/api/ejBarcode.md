@@ -15,18 +15,19 @@ $(element).ejBarcode<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+ 
+<script>
 //Create the barcode by setting the symbologyType and providing input URL to the text property. QR code is rendered by default.
       $("#barcode").ejBarcode({
          text: "http://www.syncfusion.com"
       });         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -84,21 +85,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set barcodeToTextGapHeight during initialization  
  $("#barcode").ejBarcode({
      text: "SYNCFUSION",
      symbologyType: "code39",
      barcodeToTextGapHeight: 50
  });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -140,21 +142,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set barHeight during initialization  
  $("#barcode").ejBarcode({
      text: "SYNCFUSION",
      symbologyType: "code39",
      barHeight: 50
  });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -196,21 +199,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set darkBarColor during initialization  
  $("#barcode").ejBarcode({
      text: "SYNCFUSION",
      symbologyType: "code39",
      darkBarColor: "blue"
  });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -254,21 +258,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to hide displayText during initialization  
  $("#barcode").ejBarcode({
      text: "SYNCFUSION",
      symbologyType: "code39",
      displayText: false
  });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -351,21 +356,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to remove encodeStartStopSymbol during initialization  
  $("#barcode").ejBarcode({
     text: "SYNCFUSION",
     symbologyType: "code39",
     encodeStartStopSymbol: false
  });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -407,21 +413,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set lightBarColor during initialization  
  $("#barcode").ejBarcode({
      text: "SYNCFUSION",
      symbologyType: "code39",
      lightBarColor: "blue"
  });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -464,21 +471,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set narrowBarWidth during initialization  
  $("#barcode").ejBarcode({
     text: "SYNCFUSION",
     symbologyType: "code39",
     narrowBarWidth: 5
  });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -541,12 +549,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set quiet zone during initialization  
 $("#barcode").ejBarcode({
     text: "SYNCFUSION",
@@ -555,9 +564,9 @@ $("#barcode").ejBarcode({
         all: 10
     }
 });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -599,12 +608,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set quiet zone during initialization  
 $("#barcode").ejBarcode({
     text: "SYNCFUSION",
@@ -613,9 +623,9 @@ $("#barcode").ejBarcode({
         bottom: 10
     }
 });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -657,12 +667,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set quiet zone during initialization  
 $("#barcode").ejBarcode({
     text: "SYNCFUSION",
@@ -671,9 +682,9 @@ $("#barcode").ejBarcode({
         left: 10
     }
 });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -715,12 +726,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set quiet zone during initialization  
 $("#barcode").ejBarcode({
     text: "SYNCFUSION",
@@ -729,9 +741,9 @@ $("#barcode").ejBarcode({
         right: 10
     }
 });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -773,12 +785,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set quiet zone during initialization  
 $("#barcode").ejBarcode({
     text: "SYNCFUSION",
@@ -787,9 +800,9 @@ $("#barcode").ejBarcode({
         top: 10
     }
 });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -816,20 +829,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set the SymbologyType during initialization  
 $("#barcode").ejBarcode({
     text: "SYNCFUSION",
     symbologyType: "code39"
     }
 });
-&lt;/script&gt;
-</pre>
+</script>
+
 
 
 
@@ -871,19 +885,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+ 
+<script>
 // All the below script to set the text to be encoded while initialization.
       $("#barcode").ejBarcode({
          text: "http://www.syncfusion.com"
       });         
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -927,21 +942,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+ 
+<script>
 // All the below script to set the textColor while initialization.
 $("#barcode").ejBarcode({
     text: "SYNCFUSION",
     symbologyType: "code39",
     textColor: "blue"
 });       
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -983,21 +999,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set wideBarWidth during initialization  
  $("#barcode").ejBarcode({
     text: "SYNCFUSION",
     symbologyType: "code39",
     wideBarWidth: 5
  });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -1039,20 +1056,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-//Add div container for barcode rendering.
-&lt;div id="barcode"&gt;Barcode&lt;/div&gt; 
 
-&lt;script&gt;
+{% highlight html %}
+ 
+//Add div container for barcode rendering.
+<div id="barcode">Barcode</div> 
+
+<script>
 // Add the script below to set xDimension during initialization  
 $("#barcode").ejBarcode({
     text: "http://www.syncfusion.com",
     xDimension: 10
 });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -1085,27 +1103,29 @@ To disable the barcode
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>
+
+{% highlight html %}
+
 //Add div container for barcode rendering.
-&lt;div id="barcode"&gt; &lt;/div&gt; 
+<div id="barcode"> </div> 
  
-&lt;script&gt;
+<script>
 // Create Barcode
 var btnObj = $("#barcode").data("ejBarcode");
 btnObj.disable(); // disable the barcode
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code>
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+
 //Add div container for barcode rendering.
-&lt;div id="barcode"&gt; &lt;/div&gt; 
+<div id="barcode"> </div> 
  
-&lt;script&gt;
+<script>
 // disable the barcode
 $("#barcode").ejBarcode("disable");    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1131,27 +1151,29 @@ To enable the barcode
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>
+
+{% highlight html %}
+
 //Add div container for barcode rendering.
-&lt;div id="barcode"&gt; &lt;/div&gt; 
+<div id="barcode"> </div> 
  
-&lt;script&gt;
+<script>
 // Create Barcode
 var btnObj = $("#barcode").data("ejBarcode");
 btnObj.enable(); // enable the barcode
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code>
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+
 //Add div container for barcode rendering.
-&lt;div id="barcode"&gt; &lt;/div&gt; 
+<div id="barcode"> </div> 
  
-&lt;script&gt;
+<script>
 // enable the barcode
 $("#barcode").ejBarcode("enable");     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1187,7 +1209,8 @@ Fires after Barcode control is loaded.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from barcode
 <table class="params">
@@ -1200,22 +1223,26 @@ Fires after Barcode control is loaded.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the barcode model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>status</code></td>
+<td class="name">{% highlight html %}
+status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">return the barcode state</td>
 </tr>
@@ -1232,18 +1259,21 @@ Fires after Barcode control is loaded.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>
+
+{% highlight html %}
+
 //Add div container for barcode rendering.
-&lt;div id="barcode"&gt; &lt;/div&gt; 
-<code> 
+<div id="barcode"> </div> 
+{% highlight html %}
+ 
 //create event for barcode
 $("#barcode").ejBarcode({
    load: function (args) {}
-});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Bind create event using jquery "on"
-$("#barcode").on("ejBarcodeload", function(e) {} );</code>
-</pre>
+$("#barcode").on("ejBarcodeload", function(e) {} );{% endhighlight %}
+

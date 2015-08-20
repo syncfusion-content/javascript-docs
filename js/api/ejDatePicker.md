@@ -36,7 +36,8 @@ $(element).ejDatePicker<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for Date Picker.</td>
 </tr>
@@ -49,14 +50,15 @@ $(element).ejDatePicker<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 // Create DatePicker
 $("#datepicker").ejDatePicker();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -133,14 +135,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set buttonText API during initialization  
         $("#datepicker").ejDatePicker({  buttonText : "Now" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -182,14 +185,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set cssClass API during initialization  
         $("#datepicker").ejDatePicker({  cssClass: "gradient-lime" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -231,14 +235,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set dateFormat API during initialization  
         $("#datepicker").ejDatePicker({  dateFormat: "dd/MM/yyyy" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -280,14 +285,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set dayHeaderFormat API value during initialization  
         $("#datepicker").ejDatePicker({  dayHeaderFormat: ej.DatePicker.Header.ShowHeaderShort });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -329,14 +335,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set depthLevel API during initialization  
         $("#datepicker").ejDatePicker({  depthLevel: ej.DatePicker.Level.Year });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -378,14 +385,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set displayDefaultDate API during initialization  
         $("#datepicker").ejDatePicker({  displayDefaultDate: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -427,14 +435,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set displayInline API during initialization  
         $("#datepicker").ejDatePicker({  displayInline: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -476,15 +485,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 // Set the enableAnimation value during initialization.                         
         $("#datepicker").ejDatePicker({  enableAnimation : false });
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -526,14 +536,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set enabled API during initialization  
         $("#datepicker").ejDatePicker({  enabled: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -575,14 +586,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set enablePersistence API during initialization  
         $("#datepicker").ejDatePicker({  enablePersistence: true });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -624,14 +636,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set enableRTL API during initialization  
         $("#datepicker").ejDatePicker({  enableRTL : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -673,14 +686,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set enableStrictMode API during initialization  
         $("#datepicker").ejDatePicker({  enableStrictMode: true });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -722,16 +736,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set fields API value during initialization         
 // declaration
 $("#datepicker").ejDatePicker({ 
 specialDates: window.spldays, fields: {date:"date",tooltip:"tooltip",icon:"icon"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -839,14 +854,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set headerFormat API during initialization  
         $("#datepicker").ejDatePicker({  headerFormat : "MMMM yy" });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -888,14 +904,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set height API during initialization  
         $("#datepicker").ejDatePicker({  height: 35 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -937,14 +954,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set highlightSection API during initialization  
         $("#datepicker").ejDatePicker({  highlightSection: "week" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -986,14 +1004,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set highlightWeekend API during initialization  
         $("#datepicker").ejDatePicker({  highlightWeekend : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1035,14 +1054,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //Set HtmlAttributes API during initialization  
         $("#datepicker").ejDatePicker({  htmlAttributes : {required:"required"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1084,14 +1104,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set locale API during initialization  
         $("#datepicker").ejDatePicker({  locale: "en-US" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1133,14 +1154,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set maxDate value during initialization  
         $("#datepicker").ejDatePicker({  maxDate : new Date("5/30/2015") });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1182,14 +1204,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set minDate value during initialization  
         $("#datepicker").ejDatePicker({  minDate: new Date("5/1/2013") });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1231,14 +1254,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set readOnly API during initialization  
         $("#datepicker").ejDatePicker({  readOnly : true });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1280,14 +1304,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set showFooter API during initialization  
         $("#datepicker").ejDatePicker({  showFooter: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1329,14 +1354,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set showOtherMonths API during initialization  
         $("#datepicker").ejDatePicker({  showOtherMonths: false });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1378,14 +1404,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set showPopupButton API during initialization  
         $("#datepicker").ejDatePicker({  showPopupButton: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1427,14 +1454,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set showRoundedCorner API during initialization  
         $("#datepicker").ejDatePicker({  showRoundedCorner : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1476,14 +1504,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set tooltip API during initialization  
         $("#datepicker").ejDatePicker({  showTooltip : false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1525,15 +1554,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set specialDates API value during initialization             
 // declaration
 $("#datepicker").ejDatePicker({specialDates:window.spldays});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1575,14 +1605,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set startDay API during initialization  
         $("#datepicker").ejDatePicker({  startDay: 2 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1624,14 +1655,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set startLevel API during initialization  
         $("#datepicker").ejDatePicker({  startLevel: ej.DatePicker.Level.Year });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1673,14 +1705,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set stepMonths API during initialization  
         $("#datepicker").ejDatePicker({  stepMonths: 2 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1722,10 +1755,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" name="datepick" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" name="datepick" />
+<script>
 //To set validationMessage API during initialization  
         $("#datepicker").ejDatePicker({
   validationRules:{                     
@@ -1735,8 +1769,8 @@ Example
                 required: "Required Date value"
         }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1778,18 +1812,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" name="datepick" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" name="datepick" />
+<script>
 //To set validationRules API during initialization  
         $("#datepicker").ejDatePicker({  
   validationRules:{                     
           required:true
         }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1831,14 +1866,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set the datepicker value during initialization  
         $("#datepicker").ejDatePicker({  value: new Date("5/5/2014") });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1880,14 +1916,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set watermarkText during initialization  
         $("#datepicker").ejDatePicker({  watermarkText: "Enter date" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1929,14 +1966,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //To set width API during initialization  
         $("#datepicker").ejDatePicker({  width: 200 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1969,25 +2007,27 @@ Disables the datepicker control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 $("#datepicker").ejDatePicker();
 // Create DatePicker instance
 var dateObj = $("#datepicker").data("ejDatePicker");
 dateObj.disable(); // disables the datepicker
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 $("#datepicker").ejDatePicker();
 // disables the datepicker
 $("#datepicker").ejDatePicker("disable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2013,25 +2053,27 @@ Enables the datepicker control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 $("#datepicker").ejDatePicker();
 // Create DatePicker instance
 var dateObj = $("#datepicker").data("ejDatePicker");
 dateObj.enable(); // enables the datepicker
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 $("#datepicker").ejDatePicker();
 // enables the datepicker
 $("#datepicker").ejDatePicker("enable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2063,25 +2105,27 @@ value
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 $("#datepicker").ejDatePicker();
 // Create DatePicker instance
 var dateObj = $("#datepicker").data("ejDatePicker");
 dateObj.getValue(); // returns the date value
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 // returns the date value
 $("#datepicker").ejDatePicker();
 $("#datepicker").ejDatePicker("getValue");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2107,25 +2151,27 @@ Hides the datepicker popup, if in opended state.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 $("#datepicker").ejDatePicker();
 // Create DatePicker instance
 var dateObj = $("#datepicker").data("ejDatePicker");
 dateObj.hide(); // hides the datepicker popup
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 $("#datepicker").ejDatePicker();
 // hides the datepicker popup
 $("#datepicker").ejDatePicker("hide");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2151,25 +2197,27 @@ Opens the datepicker popup
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 $("#datepicker").ejDatePicker();
 // Create DatePicker instance
 var dateObj = $("#datepicker").data("ejDatePicker");
 dateObj.show(); // shows the datepicker popup
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 $("#datepicker").ejDatePicker();
 // shows the datepicker popup
 $("#datepicker").ejDatePicker("show");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2205,27 +2253,32 @@ Fires when each date is created in the DatePicker popup.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the datepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.date</code></td>
+<td class="name">{% highlight html %}
+argument.date{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current created date object</td>
 </tr>
 <tr>
-<td class="name"><code>argument.element</code></td>
+<td class="name">{% highlight html %}
+argument.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current DOM object of the date from the Calendar</td>
 </tr>
@@ -2238,16 +2291,17 @@ Fires when each date is created in the DatePicker popup.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //beforeDateCreate event for datepicker
 $("#datepicker").ejDatePicker({
    beforeDateCreate: function (args) {}
 });  
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2276,27 +2330,32 @@ Fires when the datepicker input value is changed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the datepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the datepicker input value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.prevDate</code></td>
+<td class="name">{% highlight html %}
+argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the previously selected value</td>
 </tr>
@@ -2309,16 +2368,17 @@ Fires when the datepicker input value is changed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //change event for datepicker
 $("#datepicker").ejDatePicker({
    change: function (args) {}
 });  
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2347,27 +2407,32 @@ Fires when DatePicker popup closed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the datepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current date value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.prevDate</code></td>
+<td class="name">{% highlight html %}
+argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the previously selected value</td>
 </tr>
@@ -2380,16 +2445,17 @@ Fires when DatePicker popup closed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //close event for datepicker
 $("#datepicker").ejDatePicker({
    close: function (args) {}
 });   
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2418,17 +2484,20 @@ Fires when create DatePicker successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DatePicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2441,16 +2510,17 @@ Fires when create DatePicker successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //create event for datepicker
 $("#datepicker").ejDatePicker({
    create: function (args) {}
 });
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2479,17 +2549,20 @@ Fires when the DatePicker is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DatePicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2502,16 +2575,17 @@ Fires when the DatePicker is destroyed successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //destroy event for datepicker
 $("#datepicker").ejDatePicker({
    destroy: function (args) {}
 }); 
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2540,17 +2614,20 @@ Fires when datePicker input gets focus.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the datepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2563,16 +2640,17 @@ Fires when datePicker input gets focus.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //focusIn event for datepicker
 $("#datepicker").ejDatePicker({
    focusIn: function (args) {}
 }); 
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2601,17 +2679,20 @@ Fires when datePicker input losses the focus.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the datepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2624,16 +2705,17 @@ Fires when datePicker input losses the focus.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //focusOut event for datepicker
 $("#datepicker").ejDatePicker({
    focusOut: function (args) {}
 });
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2662,27 +2744,32 @@ Fires when DatePicker popup opened.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the datepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the eventclose"</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current date value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.prevDate</code></td>
+<td class="name">{% highlight html %}
+argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the previously selected value</td>
 </tr>
@@ -2695,16 +2782,17 @@ Fires when DatePicker popup opened.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //open event for datepicker
 $("#datepicker").ejDatePicker({
    open: function (args) {}
 });  
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2733,27 +2821,32 @@ Fires when a date is selected from the datepicker popup.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the datepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current date value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.prevDate</code></td>
+<td class="name">{% highlight html %}
+argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the previously selected value</td>
 </tr>
@@ -2766,16 +2859,17 @@ Fires when a date is selected from the datepicker popup.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datepicker" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
 //select event for datepicker
 $("#datepicker").ejDatePicker({
    select: function (args) {}
 }); 
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 

@@ -23,48 +23,50 @@ $(element).ejListBox<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
+{% highlight html %}
+ 
 
-&lt;script&gt;
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>// Another way to render ListBox control, using its targetID.
-        &lt;ul id="listboxsample"&gt;
-   &lt;/ul&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+// Another way to render ListBox control, using its targetID.
+        <ul id="listboxsample">
+   </ul>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#listboxsample').ejListBox({targetID: "carlist"});   
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -114,26 +116,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // Initialize the with the allowDragAndDrop value specified.
 $('#carsList').ejListBox({allowDragAndDrop: true});     
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -159,11 +162,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="select1"&gt;    &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="select1">    </ul>
+
+<script>
             var skillset = [
           { skill: "Bahrain", category: "B" }, { skill: "Brazil", category: "B" }, { skill: "Argentina", category: "A" },
        { skill: "Bangladesh", category: "B" }, { skill: "Burma", category: "B" }, { skill: "Afghanistan", category: "A" }, { skill: "Antigua and Barbuda", category: "A" },
@@ -175,8 +179,8 @@ Example
        dataSource: skillset,
          fields: { text: "skill", category: "category" },allowGrouping:true
              });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -202,26 +206,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // Initialize the allowMultiSelection with the value specified.
 $('#carsList').ejListBox({allowMultiSelection: true});  
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -247,18 +252,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div style="float: left;"&gt;
-      &lt;span class="txt"&gt;Select Group&lt;/span&gt;
-  &lt;ul id="groupsList" /&gt; &lt;/ul&gt;
-&lt;/div&gt;
 
-&lt;div style="float: right;"&gt;
-       &lt;span class="txt"&gt;Select Country&lt;/span&gt;
-       &lt;ul id="countryList" /&gt; &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+{% highlight html %}
+ 
+<div style="float: left;">
+      <span class="txt">Select Group</span>
+  <ul id="groupsList" /> </ul>
+</div>
+
+<div style="float: right;">
+       <span class="txt">Select Country</span>
+       <ul id="countryList" /> </ul>
+</div>
+<script>
  var groups = [
          { parentId: 'a', text: "Group A" },
          { parentId: 'b', text: "Group B" },
@@ -292,8 +298,8 @@ Example
                dataSource: countries,
                enabled:false
            });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -319,26 +325,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // Initialize the ListBox with the checkAll value specified.
 $('#carsList').ejListBox({showCheckbox: true, checkAll: true  });       
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -364,26 +371,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // To sets the checked item  API value during initialization  .         
 $('#carsList').ejListBox({ showCheckbox:true,checkedItemlist  : [1,2] });       
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -409,27 +417,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // To set checkItemsByIndex API value during initialization  .
 $('#carsList').ejListBox("disable");    
 $('#carsList').ejListBox({checkItemsByIndex  : "2,3"});         
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -455,23 +464,24 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
 
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
-&lt;script&gt;
+{% highlight html %}
+ 
+
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+<script>
 //Initialize the ListBox with the cssClass value specified
         $("#carsList").ejListBox({ targetID: "carsList",cssClass: 'gradient-lime'});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -497,14 +507,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;ul id="countrylist"&gt;  &lt;/ul&gt;
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+ <ul id="countrylist">  </ul>
+<script>          
 //To set dataSource API value during initialization  
         $("#countrylist").ejListBox({ dataSource: window.countries });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -530,26 +541,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // To set disableItemsByIndex API value during initialization  .
 $('#carsList').ejListBox({disableItemsByIndex  : "2,3"});
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -575,27 +587,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
+{% highlight html %}
+ 
 
-&lt;script&gt;
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // Initialize the ListBox with the enabled  value specified.
 $('#carsList').ejListBox({enabled : false  });  
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -621,27 +634,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // To set enableItemsByIndex API value during initialization  .
 $('#carsList').ejListBox("disable");    
 $('#carsList').ejListBox({enableItemsByIndex  : "2,3"});        
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -667,14 +681,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;ul id="countrylist"&gt;  &lt;/ul&gt;
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+ <ul id="countrylist">  </ul>
+<script>          
 //To set fields API value during initialization  
         $("#countrylist").ejListBox({ dataSource: window.countriesField, enableLoadOnDemand:true,  fields: { text: "name", value: "key" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -700,26 +715,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // Initialize the ListBox with the enablePersistence  value specified.
 $('#carsList').ejListBox({enablePersistence : false});  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -745,26 +761,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // Initialize the ListBox with the enableRTL  value specified.
 $('#carsList').ejListBox({enableRTL : true  });         
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -790,26 +807,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // Initialize the ListBox with the enableRTL  value specified.
 $('#carsList').ejListBox({enableTooltip : true  });     
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -835,14 +853,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;ul id="countrylist"&gt;  &lt;/ul&gt;
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+ <ul id="countrylist">  </ul>
+<script>          
 //To set fields API value during initialization  
         $("#countrylist").ejListBox({ dataSource: window.countriesField, enableLoadOnDemand:true,enableVirtualScrolling:true,  fields: { text: "name", value: "key" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -868,14 +887,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;ul id="countrylist"&gt;  &lt;/ul&gt;
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+ <ul id="countrylist">  </ul>
+<script>          
 //To set fields API value during initialization  
         $("#countrylist").ejListBox({ dataSource: window.countriesField,   fields: { text: "name", value: "key" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1031,26 +1051,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //Initialize the ListBox height property with the  value specified
 $('#carsList').ejListBox({ height: "300"});     
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1076,16 +1097,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
- &lt;ul id="customerlist"&gt;  &lt;/ul&gt;
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+ <ul id="customerlist">  </ul>
+<script>          
 //To set query API value during initialization  
 var dataManger = ej.DataManager({       url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"});
 var queryString = ej.Query().from("Suppliers").select("Customers");
         $("#customerlist").ejListBox({ dataSource: dataManger, query: queryString, fields: { text: "CustomerID" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1111,26 +1133,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // To set selectedItemIndex   API value during initialization  .        
 $('#carsList').ejListBox({selectedItemIndex  : 2});     
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1156,26 +1179,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // To set selectedItemlist   API value during initialization  .         
 $('#carsList').ejListBox({ allowMultiSelection:true,selectedItemlist  : [1,2] });       
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1201,26 +1225,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // To set selectedItems API value during initialization  .
 $('#carsList').ejListBox({showCheckbox: true, selectedItems : [1,2]});
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1246,26 +1271,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // Initialize the ListBox with the showCheckbox value specified.
 $('#carsList').ejListBox({showCheckbox: true });        
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1291,26 +1317,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // Initialize the ListBox with the showRoundedCorner value specified.
 $('#carsList').ejListBox({ showRoundedCorner: true });  
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1336,17 +1363,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
  
-&lt;ul id="carsList" /&gt; &lt;/ul&gt; 
  
-&lt;script&gt;          
+<ul id="carsList" /> </ul> 
+ 
+<script>          
 // To set template API value during initialization  .   
-$("#carsList").ejListBox({ dataSource: window.carsListempList, template: '&lt;img class="eimg" src="styles/images/Employee/${eimg}.png" alt="employee" height="50px" width="50px"/&gt;' +
-  '&lt;div class="ename"&gt; ${text} &lt;/div&gt;&lt;div class="desig"&gt; ${desig} &lt;/div&gt;&lt;div class="cont"&gt; ${country} &lt;/div&gt;'});
-&lt;/script&gt;</code>
-</pre>
+$("#carsList").ejListBox({ dataSource: window.carsListempList, template: '<img class="eimg" src="styles/images/Employee/${eimg}.png" alt="employee" height="50px" width="50px"/>' +
+  '<div class="ename"> ${text} </div><div class="desig"> ${desig} </div><div class="cont"> ${country} </div>'});
+</script>{% endhighlight %}
+
 
 
 
@@ -1372,26 +1400,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // Initialize the ListBox with the uncheckAll value specified.
 $('#carsList').ejListBox({showCheckbox: true,  uncheckAll: true  });    
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1417,26 +1446,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 // To set uncheckItemsByIndex API value during initialization  .
 $('#carsList').ejListBox({uncheckItemsByIndex  : "2,3"});
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1462,26 +1492,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //Initialize the ListBox width property with the  value specified
 $('#carsList').ejListBox({ width: "220"});      
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 ## Methods
@@ -1502,47 +1533,49 @@ To add an list item in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.addItem("Java"); // add an new item in the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("addItem","Java");     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1559,47 +1592,49 @@ To check all the list items in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox({showCheckbox:true});  
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.checkAll(); // checks all the list items in the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox({showCheckbox:true});  
 $('#carsList').ejListBox("checkAll");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1616,46 +1651,48 @@ To check a list items through index in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.checkItemsByIndex(2,3); // checks the specified items the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox       
 $('#carsList').ejListBox("checkItemByIndex","2,3");     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1672,47 +1709,49 @@ To check items in the checkitemslist in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox({showCheckbox:true});  
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.checkitems(); // checks all the list items in the checkedItemlist
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox({showCheckbox:true});  
 $('#carsList').ejListBox("checkitems");         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1729,47 +1768,49 @@ To disable the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.disable(); // disable the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();
 $('#carsList').ejListBox("disable");    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1786,47 +1827,49 @@ To disable an list item in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.disableItem(); // disable selected item in the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("disableItem");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1843,47 +1886,49 @@ To disable an Item or set of Items in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.disableItemByIndex("3,5,7");
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("disableItemsByIndex" ,"3,5,7");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1900,47 +1945,49 @@ To enable the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.enable(); // enable the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();
 $('#carsList').ejListBox("enable");     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1957,47 +2004,49 @@ To enable a single Item or set of Items in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.enableItemByIndex("3,5");
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("enableItemsByIndex" ,"3,5");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2014,47 +2063,49 @@ To get the list of checked list items in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.getCheckedItems(); // get the list of checked items the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("getCheckedItems");    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2071,47 +2122,49 @@ To get the selected list item in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.getSelectedItem(); // gets the selected item from the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("getSelectedItem");    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2128,47 +2181,49 @@ To get the list of selected list items in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.getSelectedItems(); // gets the list of selected list items from the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("getSelectedItems");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2185,47 +2240,49 @@ To move the selected list item one step Down in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.moveDown(); //moves down the selected item in the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("moveDown");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2242,47 +2299,49 @@ To move the selected list item one step Up in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.moveUp(); // moves up selected item in the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("moveUp");     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2299,47 +2358,49 @@ To remove an list item in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.removeItem(); // removes the selected item from the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("removeItem");         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2356,47 +2417,49 @@ To select all the list items in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.selectAll(); // selects all the list items in the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("selectAll");  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2413,47 +2476,49 @@ To select an Item using its index in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.selectItemByIndex(2); //selects the item in the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("selectItemByIndex" ,"2");     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2470,47 +2535,49 @@ To select a list items through index in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.selectItemsByIndex(2,3); // selects the specified items the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("selectItemsByIndex","2,3");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2527,47 +2594,49 @@ To uncheck all the list items in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox({showCheckbox:true});  
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.unCheckAll(); // Unchecks all the list items in the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox({showCheckbox:true});  
 $('#carsList').ejListBox("unCheckAll");         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2584,46 +2653,48 @@ To uncheck set of list items in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.uncheckItemsByIndex(2,3); // uncheckItems specified the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox("uncheckItemByIndex","2,3");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2640,47 +2711,49 @@ To unselect all the list items in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.unSelectAll(); // unselect all the items in the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("unSelectAll");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2697,47 +2770,49 @@ To unselect a list item in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.unselectItemByIndex(2); // unselects the list item specified in the index  in the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("unselectItemByIndex","2");    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2754,47 +2829,49 @@ To unselect set of list items in the ListBox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 var ListBoxObj  = $("#carsList").data("ejListBox");
 ListBoxObj.unselectItemsByIndex(2,3); // unselectItems specified the ListBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create ListBox
 $('#carsList').ejListBox();     
 $('#carsList').ejListBox("unselectItemsByIndex","2,3");         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -2820,12 +2897,14 @@ Fires when check state of an list item changed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ListBox model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2836,26 +2915,27 @@ Fires when check state of an list item changed successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //checkChange event for ListBox
 $('#carsList').ejListBox({      showCheckbox:true,checkChange: function(args) {}});     
-&lt;/script&gt;            </code>
-</pre>
+</script>            {% endhighlight %}
+
 
 
 
@@ -2877,17 +2957,20 @@ Fires when create successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ListBox model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2898,26 +2981,27 @@ Fires when create successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //create event for ListBox
 $('#carsList').ejListBox({      create: function(args) {}});    
-&lt;/script&gt;            </code>
-</pre>
+</script>            {% endhighlight %}
+
 
 
 
@@ -2934,26 +3018,27 @@ Fires when destroy successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //destroy event for ListBox
 $('#carsList').ejListBox({      destroy: function(args) {}});   
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2970,26 +3055,27 @@ Fires when the listbox data items loaded successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //actionComplete event for ListBox
 $('#carsList').ejListBox({      destroy: function(args) {}});   
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -3011,12 +3097,14 @@ Fires when list item is being dragged successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ListBox model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3027,26 +3115,27 @@ Fires when list item is being dragged successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //itemDrag event for ListBox
 $('#carsList').ejListBox({      itemDrag: function(args) {}});  
-&lt;/script&gt;            </code>
-</pre>
+</script>            {% endhighlight %}
+
 
 
 
@@ -3068,12 +3157,14 @@ Fires when list item started to drag successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ListBox model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3084,26 +3175,27 @@ Fires when list item started to drag successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //itemDragStart event for ListBox
 $('#carsList').ejListBox({      itemDragStart: function(args) {}});     
-&lt;/script&gt;            </code>
-</pre>
+</script>            {% endhighlight %}
+
 
 
 
@@ -3125,12 +3217,14 @@ Fires when list item stopped dragging successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ListBox model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3141,26 +3235,27 @@ Fires when list item stopped dragging successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //itemDragStop event for ListBox
 $('#carsList').ejListBox({      itemDragStop: function(args) {}});      
-&lt;/script&gt;            </code>
-</pre>
+</script>            {% endhighlight %}
+
 
 
 
@@ -3182,12 +3277,14 @@ Fires when list item stopped dropping successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ListBox model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3198,26 +3295,27 @@ Fires when list item stopped dropping successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //itemDropped event for ListBox
 $('#carsList').ejListBox({      itemDropped: function(args) {}});       
-&lt;/script&gt;            </code>
-</pre>
+</script>            {% endhighlight %}
+
 
 
 
@@ -3239,12 +3337,14 @@ Fires when list item gets selected successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ListBox model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3255,26 +3355,27 @@ Fires when list item gets selected successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //selected event for ListBox
 $('#carsList').ejListBox({      selected: function(args) {}});  
-&lt;/script&gt;            </code>
-</pre>
+</script>            {% endhighlight %}
+
 
 
 
@@ -3296,12 +3397,14 @@ Fires when selected list item Index Changed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ListBox model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3312,25 +3415,26 @@ Fires when selected list item Index Changed successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
 
-&lt;script&gt;
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+
+<script>
 //selectIndexChanged event for ListBox
 $('#carsList').ejListBox({      selectIndexChanged: function(args) {}});        
-&lt;/script&gt;            </code>
-</pre>
+</script>            {% endhighlight %}
+
 
 

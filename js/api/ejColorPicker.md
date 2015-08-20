@@ -36,7 +36,8 @@ $(element).ejColorPicker<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for color picker</td>
 </tr>
@@ -49,15 +50,16 @@ $(element).ejColorPicker<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -140,15 +142,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set buttonText API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {apply: "Set", cancel: "Close" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -190,15 +193,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set columns API during initialization  
 $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", columns: 5});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -240,15 +244,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set cssClass API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787",  cssClass : "gradient-lime"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -290,15 +295,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set custom API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", palette: "custompalette", custom: ["ffffff", "ffccff", "ff99ff", "ff66ff", "ff33ff", "ff00ff", "ccffff", "ccccff"]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -340,15 +346,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set displayInline API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787",  displayInline: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -390,15 +397,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set enabled API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787",  enabled: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -440,15 +448,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set enableOpacity API during initialization  
 $('#colorPick').ejColorPicker({ value: "#278787", enableOpacity: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -490,15 +499,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set modelType API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -540,15 +550,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set opacityValue API during initialization  
 $('#colorPick').ejColorPicker({ value: "#278787", opacityValue: 20 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -590,15 +601,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set palette API during initialization 
 $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", palette: "basicpalette"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -640,15 +652,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set presetType API during initialization 
 $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", presetType: "vintage"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -690,15 +703,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set showPreview API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787", showPreview: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -740,15 +754,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set showRecentColors API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787",   showRecentColors: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -790,15 +805,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set showTooltip API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787", showTooltip: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -840,15 +856,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set toolIcon API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787",  toolIcon: "e-fontcolor-icon"});
-&lt;/script&gt;
-&lt;style&gt;
+</script>
+<style>
 .e-colorwidget .e-tool .e-fontcolor-icon:before
 {
 content: "\e632";
@@ -856,8 +873,8 @@ margin-top: 9px;
 font-size: 10px;
 margin-left: 5px;
 }
-&lt;/style&gt;</code>
-</pre>
+</style>{% endhighlight %}
+
 
 
 
@@ -899,15 +916,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set tooltipText API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787",   tooltipText: { switcher: "Switch",  currentcolor: "New Color", selectedcolor: "Old Color" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -949,15 +967,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //To set value API during initialization
 $('#colorPick').ejColorPicker({ value: "#278787"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -990,29 +1009,31 @@ Disables the color picker control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Create ColorPicker instance
 var colorObj = $("#colorPick").data("ejColorPicker");
 colorObj.disable(); // disables the colorPicker
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // disables the colorPicker
 $("#colorPick").ejColorPicker("disable");
-&lt;/script&gt;       </code>
-</pre>
+</script>       {% endhighlight %}
+
 
 
 
@@ -1038,29 +1059,31 @@ Enable the color picker control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Create ColorPicker instance
 var colorObj = $("#colorPick").data("ejColorPicker");
 colorObj.enable(); // enables the colorPicker
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // enable the colorPicker
 $("#colorPick").ejColorPicker("enable");
-&lt;/script&gt;       </code>
-</pre>
+</script>       {% endhighlight %}
+
 
 
 
@@ -1086,31 +1109,33 @@ Gets the selected color in RGB format
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Create ColorPicker instance
 var colorObj = $("#colorPick").data("ejColorPicker");
 var color=colorObj.getColor(); // gets the selected color in RGB format
 alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // gets the selected color in RGB format
 var color=$("#colorPick").ejColorPicker("getColor");
 alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
-&lt;/script&gt;       </code>
-</pre>
+</script>       {% endhighlight %}
+
 
 
 
@@ -1136,29 +1161,31 @@ Gets the selected color value as string
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Create ColorPicker instance
 var colorObj = $("#colorPick").data("ejColorPicker");
 alert(colorObj.getValue()); // gets the selected color value as string
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // gets the selected color value as string
 alert($("#colorPick").ejColorPicker("getValue"));
-&lt;/script&gt;       </code>
-</pre>
+</script>       {% endhighlight %}
+
 
 
 
@@ -1184,31 +1211,33 @@ To Convert color value from hexCode to RGB
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Create ColorPicker instance
 var colorObj = $("#colorPick").data("ejColorPicker");
 var color=colorObj.hexCodeToRGB("#278787"); // Convert color value from hexCode to RGB
 alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Convert color value from hexCode to RGB
 var color=$("#colorPick").ejColorPicker("hexCodeToRGB","#278787");
 alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
-&lt;/script&gt;       </code>
-</pre>
+</script>       {% endhighlight %}
+
 
 
 
@@ -1234,29 +1263,31 @@ Hides the colorpicker popup, if in opended state.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Create ColorPicker instance
 var colorObj = $("#colorPick").data("ejColorPicker");
 colorObj.hide(); // hide the colorpicker popup
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // hide the colorpicker popup
 $("#colorPick").ejColorPicker("hide");
-&lt;/script&gt;       </code>
-</pre>
+</script>       {% endhighlight %}
+
 
 
 
@@ -1282,31 +1313,33 @@ Convert color value from HSV to RGB
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Create ColorPicker instance
 var colorObj = $("#colorPick").data("ejColorPicker");
 var color=colorObj.HSVToRGB({h:230,s:98,v:98}); // Convert color value from HSV to RGB
 alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Convert color value from HSV to RGB        
 var color=$("#colorPick").ejColorPicker("HSVToRGB","{h:230,s:98,v:98}");
 alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
-&lt;/script&gt;       </code>
-</pre>
+</script>       {% endhighlight %}
+
 
 
 
@@ -1332,31 +1365,33 @@ Convert color value from RGB to HEX
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Create ColorPicker instance
 var colorObj = $("#colorPick").data("ejColorPicker");
 alert(colorObj.RGBToHEX(colorObj.getColor())); // Convert color value from RGB to HEX
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Create ColorPicker instance
 var colorObj = $("#colorPick").data("ejColorPicker");
 // Convert color value from RGB to HEX
 alert($("#colorPick").ejColorPicker("RGBToHEX",colorObj.getColor()));
-&lt;/script&gt;       </code>
-</pre>
+</script>       {% endhighlight %}
+
 
 
 
@@ -1382,31 +1417,33 @@ Convert color value from RGB to HSV
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Create ColorPicker instance
 var colorObj = $("#colorPick").data("ejColorPicker");
 var color=colorObj.RGBToHSV({r:39,g:135,b:135}); // Convert color value from RGB to HSV
 alert("H="+color.r+", S="+color.g+", V="+color.b);
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Convert color value from RGB to HSV        
 var color=$("#colorPick").ejColorPicker("RGBToHSV","{r:39,g:135,b:125}");
 alert("H="+color.r+", S="+color.g+", V="+color.b);
-&lt;/script&gt;       </code>
-</pre>
+</script>       {% endhighlight %}
+
 
 
 
@@ -1432,29 +1469,31 @@ Open the colorpicker popup.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // Create ColorPicker instance
 var colorObj = $("#colorPick").data("ejColorPicker");
 colorObj.show(); // open the colorpicker popup
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 // Create Color picker
 $('#colorPick').ejColorPicker({ value: "#278787" });
 // open the colorpicker popup
 $("#colorPick").ejColorPicker("show");
-&lt;/script&gt;       </code>
-</pre>
+</script>       {% endhighlight %}
+
 
 
 
@@ -1490,7 +1529,8 @@ Fires after Color value has been changed sucessfully.If the user want to perform
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from color picker
 <table class="params">
@@ -1503,22 +1543,26 @@ Fires after Color value has been changed sucessfully.If the user want to perform
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the changed color value</td>
 </tr>
@@ -1535,11 +1579,12 @@ Fires after Color value has been changed sucessfully.If the user want to perform
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //change event for color picker
 $('#colorPick').ejColorPicker({              
 value: "#278787", 
@@ -1547,8 +1592,8 @@ change: function (args) {
 // Write a code block to perform operation after changing the color.
 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1577,7 +1622,8 @@ Fires after closing the color picker popup.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from color picker
 <table class="params">
@@ -1590,17 +1636,20 @@ Fires after closing the color picker popup.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1617,11 +1666,12 @@ Fires after closing the color picker popup.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //close event for color picker
 $('#colorPick').ejColorPicker({              
 value: "#278787", 
@@ -1629,8 +1679,8 @@ close: function (args) {
 // Write a code block to perform operation after closing the color picker popup.
 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1659,7 +1709,8 @@ Fires after Color picker control is created. If the user want to perform any ope
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from color picker
 <table class="params">
@@ -1672,17 +1723,20 @@ Fires after Color picker control is created. If the user want to perform any ope
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1699,11 +1753,12 @@ Fires after Color picker control is created. If the user want to perform any ope
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //create event for color picker
 $('#colorPick').ejColorPicker({              
 value: "#278787", 
@@ -1711,8 +1766,8 @@ create: function (args) {
 // Write a code block to perform operation after creating the color picker.
 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1741,7 +1796,8 @@ Fires after Color picker control is destroyed. If the user want to perform any o
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from color picker
 <table class="params">
@@ -1754,17 +1810,20 @@ Fires after Color picker control is destroyed. If the user want to perform any o
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1781,11 +1840,12 @@ Fires after Color picker control is destroyed. If the user want to perform any o
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //create event for color picker
 $('#colorPick').ejColorPicker({              
 value: "#278787", 
@@ -1793,8 +1853,8 @@ destroy: function (args) {
 // Write a code block to perform operation after creating the color picker.
 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1823,7 +1883,8 @@ Fires after opening the color picker popup
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from color picker
 <table class="params">
@@ -1836,17 +1897,20 @@ Fires after opening the color picker popup
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1863,11 +1927,12 @@ Fires after opening the color picker popup
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //open event for color picker
 $('#colorPick').ejColorPicker({              
 value: "#278787", 
@@ -1875,8 +1940,8 @@ open: function (args) {
 // Write a code block to perform operation after opening the color picker popup.
 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1905,7 +1970,8 @@ Fires after Color value has been selected sucessfully. If the user want to perfo
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from color picker
 <table class="params">
@@ -1918,22 +1984,26 @@ Fires after Color value has been selected sucessfully. If the user want to perfo
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the color picker model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the selected color value</td>
 </tr>
@@ -1950,11 +2020,12 @@ Fires after Color value has been selected sucessfully. If the user want to perfo
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>   
-&lt;input type="text" id="colorPick"/&gt; 
+
+{% highlight html %}
+   
+<input type="text" id="colorPick"/> 
  
-&lt;script&gt;
+<script>
 //select event for color picker
 $('#colorPick').ejColorPicker({              
 value: "#278787", 
@@ -1962,8 +2033,8 @@ select: function (args) {
 // Write a code block to perform operation after selecting the color.
 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

@@ -33,14 +33,15 @@ $(element).ejSchedule<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $('#Schedule').ejSchedule();         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -156,11 +157,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ 
     allowDragDrop: true,
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
@@ -174,8 +176,8 @@ Example
               allDay: "AllDay"
             }   
        });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -217,14 +219,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ allowKeyboardNavigation: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -266,11 +269,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -283,8 +287,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -326,11 +330,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -343,8 +348,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -386,11 +391,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -404,8 +410,8 @@ $("#Schedule").ejSchedule({
               categorize: "Categorize"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -447,11 +453,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -464,8 +471,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -507,11 +514,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { description: "Description",
               dataSource: window.Default, //collection of object from dataSource.
@@ -524,8 +532,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -567,11 +575,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { endTime: "EndTime",
               dataSource: window.Default, //collection of object from dataSource.
@@ -584,8 +593,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -627,11 +636,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { endTimeZone: "EndTimeZone",
               dataSource: window.Default, //collection of object from dataSource.
@@ -644,8 +654,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -687,11 +697,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { id: "Id",
               dataSource: window.Default, //collection of object from dataSource.                *               
@@ -704,8 +715,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -747,11 +758,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -766,8 +778,8 @@ $("#Schedule").ejSchedule({
               location:"Location",
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -809,11 +821,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -829,8 +842,8 @@ $("#Schedule").ejSchedule({
               priority:"Priority"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -872,11 +885,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -889,8 +903,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -932,11 +946,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { recurrence: "Recurrence",
               dataSource: window.Default, //collection of object from dataSource.
@@ -949,8 +964,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -992,11 +1007,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { recurrenceRule: "RecurrenceRule",
               dataSource: window.Default, //collection of object from dataSource.
@@ -1009,8 +1025,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1052,11 +1068,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ 
      resources: [
      {
@@ -1080,8 +1097,8 @@ Example
               resourceFields: "ownerId"
             } 
      });  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1123,11 +1140,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { startTime: "StartTime",
               dataSource: window.Default, //collection of object from dataSource.
@@ -1140,8 +1158,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1184,11 +1202,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { startTimeZone: "StartTimeZone",
               dataSource: window.Default, //collection of object from dataSource.
@@ -1201,8 +1220,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1244,11 +1263,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { subject: "Subject",
               dataSource: window.Default, //collection of object from dataSource.
@@ -1261,8 +1281,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1304,11 +1324,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { tableName:"tablename",
               dataSource: window.Default, //collection of object from dataSource.
@@ -1322,8 +1343,8 @@ $("#Schedule").ejSchedule({
               allDay: "AllDay"
             }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1365,14 +1386,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ appointmentTemplateId: "#templatename"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1414,14 +1436,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ highlightBusinessHours : true, businessEndHour: 16});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1463,14 +1486,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ highlightBusinessHours : true, businessStartHour: 7});
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1512,18 +1536,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
   categorizeSettings: {
       enable: true,
       }
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1565,14 +1590,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ categorizeSettings:{allowMultiple: false}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1614,11 +1640,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
   categorizeSettings:{
    enable:true,
@@ -1638,8 +1665,8 @@ $("#Schedule").ejSchedule({
       }
      }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1681,11 +1708,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ categorizeSettings:{enable: true,allowMultiple:false,
  dataSource:[
  { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "green" },
@@ -1696,8 +1724,8 @@ Example
  { text: "Yellow Category", id: 6, color: "#f8f264", fontColor: "green" }                
  ],
   });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1739,14 +1767,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ categorizeSettings:{enable: false}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1788,11 +1817,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
   categorizeSettings:{
    enable:true,
@@ -1812,8 +1842,8 @@ $("#Schedule").ejSchedule({
       }
      }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1855,11 +1885,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
   categorizeSettings:{
    enable:true,
@@ -1879,8 +1910,8 @@ $("#Schedule").ejSchedule({
       }
      }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1922,11 +1953,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
   categorizeSettings:{
    enable:true,
@@ -1946,8 +1978,8 @@ $("#Schedule").ejSchedule({
       }
      }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1989,14 +2021,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ cellHeight: "100px"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2038,14 +2071,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ cellWidth: "100px"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2087,18 +2121,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
   contextMenuSettings: {
       enable: true,
       }
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2140,14 +2175,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ contextMenuSettings:{enable: true}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2189,11 +2225,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ contextMenuSettings:{enable: true,
       menuItems:{appointment: [
        { id: "open", text: "Open Appointment" },
@@ -2217,8 +2254,8 @@ Example
    ]}
   }
   });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2260,14 +2297,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ cssClass: "gradient-lime"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2309,14 +2347,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ currentDate: new Date()});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2358,13 +2397,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+<script>
         $("#Schedule").ejSchedule({ currentView: ej.Schedule.CurrentView.Day});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2406,13 +2446,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+<script>
         $("#Schedule").ejSchedule({  dateFormat: "dd/MM/yyyy" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2454,11 +2495,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ 
       enableAppointmentNavigation: true,
       currentDate:new Date(2014,1,1),
@@ -2473,8 +2515,8 @@ Example
               allDay: "AllDay"
             }
       });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2516,11 +2558,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ 
     enableAppointmentResize: true,
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
@@ -2534,8 +2577,8 @@ Example
               allDay: "AllDay"
             }   
       });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2577,14 +2620,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ enableLoadOnDemand: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2626,14 +2670,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ enablePersistence: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2675,14 +2720,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ enableResize: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2724,14 +2770,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ enableRTL: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2773,14 +2820,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ endHour: 18});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2822,11 +2870,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ 
       group: {
           resources: ["Rooms","Owners"]
@@ -2861,8 +2910,8 @@ Example
           resourceFields: "roomId,ownerId"
       } 
    });  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2904,14 +2953,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ height: "700px"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2953,14 +3003,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ highlightBusinessHours: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3002,14 +3053,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ isDST: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3051,14 +3103,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ isResponsive: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3100,14 +3153,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ locale: "en-US"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3149,14 +3203,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ maxDate: new Date("20/11/2014")});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3198,14 +3253,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ minDate: new Date("10/11/2014")});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3247,13 +3303,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+<script>
         $("#Schedule").ejSchedule({ orientation: ej.Schedule.Orientation.Horizontal});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3295,14 +3352,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ prioritySettings:{enable: true}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3344,11 +3402,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ prioritySettings:{enable: true,dataSource:[
  { text: "None", id: 1, value: "none" },
  { text: "High", id: 2, value: "high" },
@@ -3360,8 +3419,8 @@ Example
      value:"value"
      }
      });
-        </code>
-</pre>
+        {% endhighlight %}
+
 
 
 
@@ -3407,14 +3466,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
         $("#Schedule").ejSchedule({ prioritySettings:{enable: false}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3456,11 +3516,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
    prioritySettings:{
    enable:true,
@@ -3476,9 +3537,9 @@ $("#Schedule").ejSchedule({
      value:"value"
       }                                       
    });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -3521,16 +3582,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
-        $("#Schedule").ejSchedule({ prioritySettings:{template: "&lt;div class='${value}'&gt;&lt;/div&gt;",  // To display the Priority option in the appointment window while passing custom datasource we need to mention the template like this
+<div id="Schedule"></div> 
+ 
+<script>
+        $("#Schedule").ejSchedule({ prioritySettings:{template: "<div class='${value}'></div>",  // To display the Priority option in the appointment window while passing custom datasource we need to mention the template like this
         }
         });
-        </code>
-</pre>
+        {% endhighlight %}
+
 
 
 
@@ -3576,11 +3638,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
    prioritySettings:{
    enable:true,
@@ -3596,9 +3659,9 @@ $("#Schedule").ejSchedule({
      value:"value"
       }                                           
    });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -3641,10 +3704,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>      
-&lt;div id="Schedule"&gt;&lt;/div&gt;  
-&lt;script&gt;
+
+{% highlight html %}
+      
+<div id="Schedule"></div>  
+<script>
 $("#Schedule").ejSchedule({
    prioritySettings:{
    enable:true,
@@ -3660,9 +3724,9 @@ $("#Schedule").ejSchedule({
      value:"value"
       }                                           
    });
-&lt;/script&gt;
-</code>
-</pre>
+</script>
+{% endhighlight %}
+
 
 
 
@@ -3705,14 +3769,15 @@ Example
 {:.example}
 
 
-<pre class="prettyprint">
-<code>
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
         $("#Schedule").ejSchedule({ readOnly: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3754,18 +3819,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
   reminderSettings: {
       enable: true,
       }
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3807,14 +3873,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ reminderSettings:{enable: true, alertBefore:6}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3856,14 +3923,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ reminderSettings:{enable: true}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3905,10 +3973,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+<script>
         $("#Schedule").ejSchedule({ 
           views: ["Day", "Week", "WorkWeek", "Month", "CustomView"], 
           currentView: ej.Schedule.CurrentView.CustomView,
@@ -3917,8 +3986,8 @@ Example
               end: new Date(2014, 12, 10)
           }
   });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3960,14 +4029,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ resourceHeaderTemplateId: "#resTemplate"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4009,11 +4079,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ 
      resources: [
      {
@@ -4037,8 +4108,8 @@ Example
               resourceFields: "ownerId"
             } 
      });  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4080,14 +4151,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ showAllDayRow: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4129,14 +4201,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ showCurrentTimeIndicator: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4179,14 +4252,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ showHeaderBar: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4229,13 +4303,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
         $("#Schedule").ejSchedule({ showLocationField: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4277,13 +4352,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
         $("#Schedule").ejSchedule({ showQuickWindow: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4327,13 +4403,14 @@ Example
 {:.example}
 
 
-<pre class="prettyprint">
-<code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
         $("#Schedule").ejSchedule({ showTimeScale: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4375,14 +4452,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ startHour: 9});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4424,13 +4502,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+<script>
         $("#Schedule").ejSchedule({ timeMode: ej.Schedule.TimeMode.Hour24});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4472,14 +4551,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ timeZone: "UTC +2:00"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4521,17 +4601,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
   timezoneCollection: {
       }
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4573,11 +4654,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ timezoneCollection:{
         dataSource: [
        { text: "UTC -12:00", id:"1", value: "UTC -12:00" },
@@ -4589,8 +4671,8 @@ Example
           ]
           }
   });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4632,11 +4714,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
   timezoneCollection:{
         dataSource: [
@@ -4652,8 +4735,8 @@ $("#Schedule").ejSchedule({
      value:"value"
       }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4695,11 +4778,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
   timezoneCollection:{
         dataSource: [
@@ -4715,8 +4799,8 @@ $("#Schedule").ejSchedule({
      value:"value"
       }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4758,11 +4842,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
   timezoneCollection:{
         dataSource: [
@@ -4778,8 +4863,8 @@ $("#Schedule").ejSchedule({
      value:"value"
       }                                      
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4821,13 +4906,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+<script>
         $("#Schedule").ejSchedule({ views: ["Day","Month"], currentView:"day"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4869,14 +4955,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
         $("#Schedule").ejSchedule({ width: "700px"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4912,7 +4999,8 @@ It is used to delete the appointment. The id is based on the argument passed alo
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.id</code></td>
+<td class="name">{% highlight html %}
+argument.id{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">id value of the appointment</td>
 </tr>
@@ -4925,11 +5013,12 @@ It is used to delete the appointment. The id is based on the argument passed alo
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $('#Schedule').ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -4944,8 +5033,8 @@ $('#Schedule').ejSchedule({
   });
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.deleteAppointment(105); //Appointments id number.
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4971,16 +5060,17 @@ destroy the schedule widget all events bound using this._on will be unbind autom
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $('#Schedule').ejSchedule();
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.destroy(); // destroy the schedule
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5009,17 +5099,20 @@ It used to Export the appointments from the schedule control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.action</code></td>
+<td class="name">{% highlight html %}
+argument.action{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">to refer the controller action name to redirect. (For MVC)</td>
 </tr>
 <tr>
-<td class="name"><code>argument.serverEvent</code></td>
+<td class="name">{% highlight html %}
+argument.serverEvent{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">to refer the server event name.(For ASP)</td>
 </tr>
 <tr>
-<td class="name"><code>argument.id</code></td>
+<td class="name">{% highlight html %}
+argument.id{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">to pass the id of an appointment, in case if a single appointment needs to be exported. Otherwise, it takes the null value.</td>
 </tr>
@@ -5032,11 +5125,12 @@ It used to Export the appointments from the schedule control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $('#Schedule').ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -5052,8 +5146,8 @@ $('#Schedule').ejSchedule({
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.exportSchedule("ActionName","ExportToICS", null); // To Export all the Appointments
 schObj.exportSchedule("ActionName","ExportToICS", 101); // To Export a single appointment with an id "101"
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5082,7 +5176,8 @@ It used search the appointments from appointment list of schedule control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.filterConditions</code></td>
+<td class="name">{% highlight html %}
+argument.filterConditions{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">filterConditions value of the filter collections for appointments.</td>
 </tr>
@@ -5095,11 +5190,12 @@ It used search the appointments from appointment list of schedule control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $('#Schedule').ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -5120,8 +5216,8 @@ var filter=[{
    predicate: "or"
 }];
 var appointments=schObj.filterAppointments(filter); // Gets the appointments list of schedule control
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5147,11 +5243,12 @@ It is used to get the appointment list of schedule control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $('#Schedule').ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -5166,8 +5263,8 @@ $('#Schedule').ejSchedule({
   });
 var schObj = $("#Schedule").data("ejSchedule");
 var appointments=schObj.getAppointments(); // Gets the appointments list of schedule control
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5193,10 +5290,11 @@ It is used to print the schedule.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+<script>
 $('#Schedule').ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -5211,8 +5309,8 @@ $('#Schedule').ejSchedule({
   });
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.print();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5238,16 +5336,17 @@ It used to Refresh Scroller while using schedule control in some other controls.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $('#Schedule').ejSchedule();
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.refreshScroller(); // To refresh scroller while using schedule control in some other control
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5276,7 +5375,8 @@ It is used to save the appointment. The appointment obj is based on the argument
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.obj</code></td>
+<td class="name">{% highlight html %}
+argument.obj{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">obj of the appointment</td>
 </tr>
@@ -5289,10 +5389,11 @@ It is used to save the appointment. The appointment obj is based on the argument
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+<script>
 $('#Schedule').ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -5307,8 +5408,8 @@ $('#Schedule').ejSchedule({
   });
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.saveAppointment(obj); //obj contains collection of appointment. 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5337,22 +5438,26 @@ It used search the appointments from appointment list of schedule control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.searchString</code></td>
+<td class="name">{% highlight html %}
+argument.searchString{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">searchString value of the search word in the appointments.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.fields</code></td>
+<td class="name">{% highlight html %}
+argument.fields{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">fields value of which feilds need search.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.filterOperator</code></td>
+<td class="name">{% highlight html %}
+argument.filterOperator{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">filterOperator value of the search operation need to done.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.ignoreCase</code></td>
+<td class="name">{% highlight html %}
+argument.ignoreCase{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">ignoreCase value of the case.</td>
 </tr>
@@ -5365,11 +5470,12 @@ It used search the appointments from appointment list of schedule control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $('#Schedule').ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -5384,8 +5490,8 @@ $('#Schedule').ejSchedule({
   });
 var schObj = $("#Schedule").data("ejSchedule");
 var appointments=schObj.searchAppointments("gold"); // Gets the appointments list of schedule control
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5421,7 +5527,8 @@ Triggers before the action begin of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when view change action starts:
 <table class="params">
@@ -5434,37 +5541,44 @@ Triggers before the action begin of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>Date</code></td>
+<td class="name">{% highlight html %}
+Date{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current date value.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentView</code></td>
+<td class="name">{% highlight html %}
+currentView{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current view value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action begin request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the click.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5473,7 +5587,8 @@ Triggers before the action begin of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when date navigate action starts:
 <table class="params">
@@ -5486,32 +5601,38 @@ Triggers before the action begin of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentDate</code></td>
+<td class="name">{% highlight html %}
+currentDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current date value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action begin request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the click.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5520,7 +5641,8 @@ Triggers before the action begin of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when date change by calendar action starts:
 <table class="params">
@@ -5533,32 +5655,38 @@ Triggers before the action begin of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentDate</code></td>
+<td class="name">{% highlight html %}
+currentDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current date value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action begin request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the click.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5567,7 +5695,8 @@ Triggers before the action begin of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when appointment save action starts:
 <table class="params">
@@ -5580,27 +5709,32 @@ Triggers before the action begin of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the save appointment value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action begin request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5609,7 +5743,8 @@ Triggers before the action begin of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when appointment edit action starts:
 <table class="params">
@@ -5622,27 +5757,32 @@ Triggers before the action begin of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the edit appointment value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action begin request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5651,7 +5791,8 @@ Triggers before the action begin of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when appointment delete action starts:
 <table class="params">
@@ -5664,27 +5805,32 @@ Triggers before the action begin of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>id</code></td>
+<td class="name">{% highlight html %}
+id{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the id of delete appointment.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action begin request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5693,7 +5839,8 @@ Triggers before the action begin of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when appointment drag action starts:
 <table class="params">
@@ -5706,27 +5853,32 @@ Triggers before the action begin of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the appointment we drag.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action begin request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5735,7 +5887,8 @@ Triggers before the action begin of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when appointment resize action starts:
 <table class="params">
@@ -5748,27 +5901,32 @@ Triggers before the action begin of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the appointment we resize.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action begin request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5785,15 +5943,16 @@ Triggers before the action begin of the schedule.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
    actionBegin: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5822,7 +5981,8 @@ Triggers after the action completion of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when view change action completed:
 <table class="params">
@@ -5835,27 +5995,32 @@ Triggers after the action completion of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data about viewchange action.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action complete request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5864,7 +6029,8 @@ Triggers after the action completion of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when date navigate action completed:
 <table class="params">
@@ -5877,27 +6043,32 @@ Triggers after the action completion of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data about the date navigate action.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action complete request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5906,7 +6077,8 @@ Triggers after the action completion of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when date change by calendar action completed:
 <table class="params">
@@ -5919,27 +6091,32 @@ Triggers after the action completion of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data about calendar navigation action.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action complete request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5948,7 +6125,8 @@ Triggers after the action completion of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when appointment save action completed:
 <table class="params">
@@ -5961,27 +6139,32 @@ Triggers after the action completion of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data about appointment saved value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action complete request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -5990,7 +6173,8 @@ Triggers after the action completion of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when appointment edit action completed:
 <table class="params">
@@ -6003,27 +6187,32 @@ Triggers after the action completion of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data about appointment edited value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action complete request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6032,7 +6221,8 @@ Triggers after the action completion of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when appointment delete action completed:
 <table class="params">
@@ -6045,27 +6235,32 @@ Triggers after the action completion of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data about appointment deleted action.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action complete request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6074,7 +6269,8 @@ Triggers after the action completion of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when appointment dragging action completed:
 <table class="params">
@@ -6087,27 +6283,32 @@ Triggers after the action completion of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>appointment</code></td>
+<td class="name">{% highlight html %}
+appointment{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the appointment data we dropped.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action complete request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6116,7 +6317,8 @@ Triggers after the action completion of the schedule.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when appointment resizing action completed:
 <table class="params">
@@ -6129,27 +6331,32 @@ Triggers after the action completion of the schedule.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the element we resized.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action complete request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6166,15 +6373,16 @@ Triggers after the action completion of the schedule.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
    actionComplete: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6203,27 +6411,32 @@ Triggers after the appointment is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of appointmentClick event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.appointment</code></td>
+<td class="name">{% highlight html %}
+argument.appointment{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the clicked appointment object.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6236,11 +6449,12 @@ Triggers after the appointment is clicked.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -6254,8 +6468,8 @@ $("#Schedule").ejSchedule({
             },   
    appointmentClick: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6284,27 +6498,32 @@ Triggers after the appointment is deleted.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of appointmentDeleted event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.appointment</code></td>
+<td class="name">{% highlight html %}
+argument.appointment{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the deleted appintment object.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6317,11 +6536,12 @@ Triggers after the appointment is deleted.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -6335,8 +6555,8 @@ $("#Schedule").ejSchedule({
             },
    appointmentDeleted: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6365,27 +6585,32 @@ Triggers after the appointment is edited.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of appointmentEdited event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.appointment</code></td>
+<td class="name">{% highlight html %}
+argument.appointment{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the edited appintment object.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6398,11 +6623,12 @@ Triggers after the appointment is edited.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -6416,8 +6642,8 @@ $("#Schedule").ejSchedule({
             },
    appointmentEdited: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6447,27 +6673,32 @@ Triggers after the appointment is hovered.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of appointmentHover event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.appointment</code></td>
+<td class="name">{% highlight html %}
+argument.appointment{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the hovered appointment object.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6480,11 +6711,12 @@ Triggers after the appointment is hovered.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -6498,8 +6730,8 @@ $("#Schedule").ejSchedule({
             },   
    appointmentHover: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6528,52 +6760,62 @@ Triggers after the appointment is saved.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of appointmentSaved event using appointment window.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.appointment</code></td>
+<td class="name">{% highlight html %}
+argument.appointment{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the saved appintment object.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of appointmentSaved event using quick window.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.appointment</code></td>
+<td class="name">{% highlight html %}
+argument.appointment{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the saved appintment object.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6586,16 +6828,17 @@ Triggers after the appointment is saved.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
    appointmentSaved: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6624,72 +6867,86 @@ Triggers before the appointment window is opened.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of appointmentWindowOpen event while select detail option from quick window.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.endTime</code></td>
+<td class="name">{% highlight html %}
+argument.endTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the end time of the double clicked cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.originalEventType</code></td>
+<td class="name">{% highlight html %}
+argument.originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the action name which triggers window open.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.startTime</code></td>
+<td class="name">{% highlight html %}
+argument.startTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the start time of the double clicked cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the double clicked cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of edit appointmentWindowOpen event while select edit appointment/edit series option.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.appointment</code></td>
+<td class="name">{% highlight html %}
+argument.appointment{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the edit appointment object.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.edit</code></td>
+<td class="name">{% highlight html %}
+argument.edit{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the edit occurrence option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6702,16 +6959,17 @@ Triggers before the appointment window is opened.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
    appointmentWindowOpen: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6740,27 +6998,32 @@ Triggers before the context menu open up.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of beforeContextMenuOpen event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.events</code></td>
+<td class="name">{% highlight html %}
+argument.events{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the object of before open menu target.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6773,15 +7036,16 @@ Triggers before the context menu open up.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
    beforeContextMenuOpen: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6810,37 +7074,44 @@ Triggers after the cell is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of cellClick event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.endTime</code></td>
+<td class="name">{% highlight html %}
+argument.endTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the end time of the clicked cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.startTime</code></td>
+<td class="name">{% highlight html %}
+argument.startTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the start time of the clicked cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the clicked cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6853,15 +7124,16 @@ Triggers after the cell is clicked.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
    cellClick: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6890,37 +7162,44 @@ Triggers after the cell is clicked twice.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of cellDoubleClick event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.endTime</code></td>
+<td class="name">{% highlight html %}
+argument.endTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the end time of the double clicked cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.startTime</code></td>
+<td class="name">{% highlight html %}
+argument.startTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the start time of the double clicked cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the double clicked cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -6933,16 +7212,17 @@ Triggers after the cell is clicked twice.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
    cellDoubleClick: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6971,37 +7251,44 @@ Triggers after the cell is hovered.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of cellHover event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cellIndex</code></td>
+<td class="name">{% highlight html %}
+argument.cellIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the index of the hovered cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.currentDate</code></td>
+<td class="name">{% highlight html %}
+argument.currentDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current date of the hovered cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the clicked cell.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7014,15 +7301,16 @@ Triggers after the cell is hovered.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
    cellHover: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7051,27 +7339,32 @@ Triggers while the appointment is being dragged over the workcells.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of dragOver event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the drag over appointment.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7084,11 +7377,12 @@ Triggers while the appointment is being dragged over the workcells.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -7102,8 +7396,8 @@ $("#Schedule").ejSchedule({
             },
    drag: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7132,27 +7426,32 @@ Triggers when the appointment dragging begins.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of dargStart event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the dragging appointment.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7165,11 +7464,12 @@ Triggers when the appointment dragging begins.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -7183,8 +7483,8 @@ $("#Schedule").ejSchedule({
             },
    dragStart: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7213,27 +7513,32 @@ Triggers when the appointment is dropped.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of dragDrop event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.appointment</code></td>
+<td class="name">{% highlight html %}
+argument.appointment{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the dropped appointment object.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7246,11 +7551,12 @@ Triggers when the appointment is dropped.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -7264,8 +7570,8 @@ $("#Schedule").ejSchedule({
             },
    dragStop: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7294,27 +7600,32 @@ Triggers after the context menu is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of menuItemClick event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.events</code></td>
+<td class="name">{% highlight html %}
+argument.events{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the object of menu item event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7327,15 +7638,16 @@ Triggers after the context menu is clicked.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
    menuItemClick: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7364,112 +7676,134 @@ Triggers after the Schedule view or date is navigated.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of schedule view navigation event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.Date</code></td>
+<td class="name">{% highlight html %}
+argument.Date{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current date object.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.currentView</code></td>
+<td class="name">{% highlight html %}
+argument.currentView{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current view value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.prevView</code></td>
+<td class="name">{% highlight html %}
+argument.prevView{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the previous view value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the action.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of previous/next date navigation event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.currentDate</code></td>
+<td class="name">{% highlight html %}
+argument.currentDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the new date of the schedule.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.prevDate</code></td>
+<td class="name">{% highlight html %}
+argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous date of the schedule.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the action.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the navigation event while change the date using calendar in schedule.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.currentDate</code></td>
+<td class="name">{% highlight html %}
+argument.currentDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the new date of the schedule.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.prevDate</code></td>
+<td class="name">{% highlight html %}
+argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous date of the schedule.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the action.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7482,16 +7816,17 @@ Triggers after the Schedule view or date is navigated.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
    navigation: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7520,22 +7855,26 @@ Triggers when the reminder is raised for an appointment.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.reminderAppointment</code></td>
+<td class="name">{% highlight html %}
+argument.reminderAppointment{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the appointment object for which the reminder is raised.</td>
 </tr>
@@ -7548,15 +7887,16 @@ Triggers when the reminder is raised for an appointment.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="Schedule"></div> 
  
-&lt;script&gt;
+<script>
 $("#Schedule").ejSchedule({
    reminder: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7585,27 +7925,32 @@ Triggers while resizing the appointment.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of resizing event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.element</code></td>
+<td class="name">{% highlight html %}
+argument.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the resize element value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7618,11 +7963,12 @@ Triggers while resizing the appointment.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -7636,8 +7982,8 @@ $("#Schedule").ejSchedule({
             },
    resize: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7666,27 +8012,32 @@ Triggers when the appointment resizing begins.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of resizeStart event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.element</code></td>
+<td class="name">{% highlight html %}
+argument.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the resize element value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7699,11 +8050,12 @@ Triggers when the appointment resizing begins.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="Schedule"></div> 
+ 
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -7717,8 +8069,8 @@ $("#Schedule").ejSchedule({
             },
    resizeStart: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7747,32 +8099,38 @@ Triggers when appointment resizing is stopped.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.object</code></td>
+<td class="name">{% highlight html %}
+argument.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Returns the object of resizeStop event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.appointment</code></td>
+<td class="name">{% highlight html %}
+argument.appointment{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the resized appointment value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the schedule model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target of the resized appointment.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -7785,10 +8143,11 @@ Triggers when appointment resizing is stopped.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Schedule"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+<script>
 $("#Schedule").ejSchedule({
     appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
               id: "Id",
@@ -7802,8 +8161,8 @@ $("#Schedule").ejSchedule({
             },
    resizeStop: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

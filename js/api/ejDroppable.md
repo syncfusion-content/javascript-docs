@@ -33,15 +33,16 @@ $(element).ejDroppable<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div  id="dropable" &gt;&lt;/ div &gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div  id="dropable" ></ div > 
+ 
+<script>
 // Create Dragable
 $('#dropable').ejDroppable();   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -106,18 +107,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set scope API value during initialization  
-        $("#droppable").ejDroppable({ accept: null });                          * </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#droppable").ejDroppable({ accept: null });                          * {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the accept API, after initialization:
         //Gets the accept value  
         $("#droppable").ejDroppable('option', 'accept');
-                    </code>
-</pre>
+                    {% endhighlight %}
+
 
 
 
@@ -159,18 +162,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set scope API value during initialization  
-        $("#droppable").ejDroppable({ scope: 'default' });                              * </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#droppable").ejDroppable({ scope: 'default' });                              * {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the scope API, after initialization:
         //Gets the scope value  
         $("#droppable").ejDroppable('option', 'scope');
-                     </code>
-</pre>
+                     {% endhighlight %}
+
 
 
 
@@ -203,16 +208,17 @@ destroy in the Droppable.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt; div  id="droppable" &gt; &lt;/div &gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+< div  id="droppable" > </div > 
+ 
+<script>
 // Create droppabaleObj
 var droppabaleObj  = $("#droppable").data("ejDroppable");
 droppabaleObj.destroy(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -248,17 +254,20 @@ This event is triggered when the mouse up is moved during the dragging.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -271,13 +280,14 @@ This event is triggered when the mouse up is moved during the dragging.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drop event for Droppable
 $("#droppable").ejDroppable({ 
         drop: function(args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 
 
@@ -306,17 +316,20 @@ This event is triggered when the mouse is moved out.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -329,13 +342,14 @@ This event is triggered when the mouse is moved out.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drop event for Droppable
 $("#droppable").ejDroppable({ 
         out: function(args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 
 
@@ -364,17 +378,20 @@ This event is triggered when the mouse is moved over.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -387,13 +404,14 @@ This event is triggered when the mouse is moved over.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drop event for Droppable
 $("#droppable").ejDroppable({ 
         over: function(args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 
 

@@ -36,7 +36,8 @@ $(element).ejDateTimePicker<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for Date Picker.</td>
 </tr>
@@ -49,14 +50,15 @@ $(element).ejDateTimePicker<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 // Create DateTimePicker
 $("#datetime").ejDateTimePicker();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -142,14 +144,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set buttonText API during initialization  
         $("#datetime").ejDateTimePicker({  buttonText: { done: "&#20570;&#36807;" } });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -175,14 +178,15 @@ Sets the text for the Done button inside the datetime popup.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set buttonText API during initialization  
         $("#datetime").ejDateTimePicker({ buttonText: { done: "Done" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -208,14 +212,15 @@ Sets the text for the Now button inside the datetime popup.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set buttonText API during initialization  
         $("#datetime").ejDateTimePicker({ buttonText: { now: "Now" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -241,14 +246,15 @@ Sets the header text for the Time dropdown.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set buttonText API during initialization  
         $("#datetime").ejDateTimePicker({ buttonText: { timeTitle: "Time" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -274,14 +280,15 @@ Sets the text for the Today button inside the datetime popup.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set buttonText API during initialization  
         $("#datetime").ejDateTimePicker({ buttonText: { today: "Today" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -323,13 +330,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;                  
+
+{% highlight html %}
+<input type="text" id="datetime" />
+<script>                  
 //To set cssClass API during initialization  
         $("#datetime").ejDateTimePicker({  cssClass: "gradient-lime" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -371,14 +379,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set dateTimeFormat API during initialization  
         $("#datetime").ejDateTimePicker({  dateTimeFormat: "d/M/yyyy tt h:mm" });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -420,14 +429,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set dayHeaderFormat API during initialization  
         $("#datetime").ejDateTimePicker({  dayHeaderFormat: "showheadershort" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -469,14 +479,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set depthLevel API during initialization  
         $("#datetime").ejDateTimePicker({  depthLevel: "decade" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -518,15 +529,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 // Set the enableAnimation value during initialization.                         
         $("#datetime").ejDateTimePicker({  enableAnimation : false });
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -568,14 +580,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set enabled API during initialization  
         $("#datetime").ejDateTimePicker({  enabled: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -617,14 +630,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set enablePersistence API during initialization  
         $("#datetime").ejDateTimePicker({  enablePersistence: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -666,14 +680,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set enableRTL API during initialization  
         $("#datetime").ejDateTimePicker({  enableRTL: true });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -715,14 +730,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set enableStrictMode API during initialization  
         $("#datetime").ejDateTimePicker({  enableStrictMode: true });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -764,14 +780,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set headerFormat API during initialization  
         $("#datetime").ejDateTimePicker({  headerFormat: "MM - yyyy" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -813,14 +830,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set height API during initialization  
         $("#datetime").ejDateTimePicker({  height: 40 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -862,14 +880,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To Set HtmlAttributes API during initialization  
         $("#datetime").ejDateTimePicker({ htmlAttributes : {required:"required"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -911,14 +930,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set interval API during initialization  
         $("#datetime").ejDateTimePicker({  interval: 60 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -960,14 +980,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set locale API during initialization  
         $("#datetime").ejDateTimePicker({  locale: "en-US" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1009,14 +1030,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set maxDateTime API during initialization  
         $("#datetime").ejDateTimePicker({  maxDateTime: new Date("12/10/2050 8:00:00 PM") });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1058,14 +1080,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set minDateTime API during initialization  
         $("#datetime").ejDateTimePicker({  minDateTime: new Date("5/5/2010 12:00:00 AM") });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1107,14 +1130,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set readOnly API during initialization  
         $("#datetime").ejDateTimePicker({  readOnly: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1156,14 +1180,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set showOtherMonths API during initialization  
         $("#datetime").ejDateTimePicker({  showOtherMonths: false });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1205,14 +1230,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set showPopupButton API during initialization  
         $("#datetime").ejDateTimePicker({  showPopupButton: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1254,14 +1280,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set showRoundedCorner API during initialization  
         $("#datetime").ejDateTimePicker({  showRoundedCorner: true });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1303,14 +1330,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set startDay API during initialization  
         $("#datetime").ejDateTimePicker({  startDay: 2 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1352,14 +1380,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set startLevel API during initialization  
         $("#datetime").ejDateTimePicker({  startLevel:ej.DatePicker.Level.Year });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1401,14 +1430,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set stepMonths API during initialization  
         $("#datetime").ejDateTimePicker({  stepMonths: 2 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1450,14 +1480,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set timeDisplayFormat API during initialization  
         $("#datetime").ejDateTimePicker({  timeDisplayFormat: "HH:mm" });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1499,14 +1530,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set timePopupWidth API during initialization  
         $("#datetime").ejDateTimePicker({  timePopupWidth: 150 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1548,10 +1580,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" name="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" name="datetime" />
+<script>
 //To set validationMessage API during initialization  
  $("#datetime").ejDateTimePicker({  
   validationRules:{                     
@@ -1561,8 +1594,8 @@ Example
            required: "Required DateTime value"
         }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1604,18 +1637,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" name="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" name="datetime" />
+<script>
 //To set validationRules API during initialization  
  $("#datetime").ejDateTimePicker({  
   validationRules:{                     
           required:true
         }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1657,14 +1691,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set value API during initialization  
         $("#datetime").ejDateTimePicker({  value:"6/2/2014 6:00 AM" });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1706,14 +1741,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //To set width API during initialization  
         $("#datetime").ejDateTimePicker({  width: 210 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1746,25 +1782,27 @@ Disables the DateTimePicker control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
 datetimeObj.disable(); // disables the datetimepicker
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // disables the datetimepicker
 $("#datetime").ejDateTimePicker("disable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1790,25 +1828,27 @@ Enables the DateTimePicker control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
 datetimeObj.enable(); // enables the datetimepicker
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // enables the datetimepicker
 $("#datetime").ejDateTimePicker("enable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1840,25 +1880,27 @@ value
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
 datetimeObj.getValue(); // returns the datetime value
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // returns the datetime value
 $("#datetime").ejDateTimePicker("getValue");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1884,25 +1926,27 @@ Hides or closes the DateTimePicker popup.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
 datetimeObj.hide(); // hides the datetime popup
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // hides the datetime popup
 $("#datetime").ejDateTimePicker("hide");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1928,25 +1972,27 @@ Updates the current system date value and time value to the DateTimePicker.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
 datetimeObj.setCurrentDateTime(); // updates the current datetime value
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // updates the current datetime value
 $("#datetime").ejDateTimePicker("setCurrentDateTime");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1972,25 +2018,27 @@ Shows or opens the DateTimePicker popup.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
 datetimeObj.show(); // opens the datetime popup
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 $("#datetime").ejDateTimePicker();
 // opens the datetime popup
 $("#datetime").ejDateTimePicker("show");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2026,32 +2074,38 @@ Fires when the datetime value changed in the DateTimePicker textbox.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.isValidState</code></td>
+<td class="name">{% highlight html %}
+argument.isValidState{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the current value is valid or not</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the modified datetime value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.prevDateTime</code></td>
+<td class="name">{% highlight html %}
+argument.prevDateTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the previously selected date time value</td>
 </tr>
@@ -2064,16 +2118,17 @@ Fires when the datetime value changed in the DateTimePicker textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //change event for datetimepicker
 $("#datetime").ejDateTimePicker({
    change: function (args) {}
 }); 
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2102,27 +2157,32 @@ Fires when DateTimePicker popup closes.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the modified datetime value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.prevDateTime</code></td>
+<td class="name">{% highlight html %}
+argument.prevDateTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the previously selected date time value</td>
 </tr>
@@ -2135,16 +2195,17 @@ Fires when DateTimePicker popup closes.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //close event for datetimepicker
 $("#datetime").ejDateTimePicker({
    close: function (args) {}
 }); 
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2173,17 +2234,20 @@ Fires after DateTimePicker control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DateTimePicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2196,16 +2260,17 @@ Fires after DateTimePicker control is created.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //create event for datetimepicker
 $("#datetime").ejDateTimePicker({
    create: function (args) {}
 }); 
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2234,17 +2299,20 @@ Fires when the DateTimePicker is destroyed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DateTimePicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2257,16 +2325,17 @@ Fires when the DateTimePicker is destroyed successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //destroy event for datetimepicker
 $("#datetime").ejDateTimePicker({
    destroy: function (args) {}
 }); 
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2295,22 +2364,26 @@ Fires when the focus-in happens in the DateTimePicker textbox.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the datetime value, which is in text box</td>
 </tr>
@@ -2323,16 +2396,17 @@ Fires when the focus-in happens in the DateTimePicker textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //focusIn event for datetimepicker
 $("#datetime").ejDateTimePicker({
    focusIn: function (args) {}
 }); 
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2361,22 +2435,26 @@ Fires when the focus-out happens in the DateTimePicker textbox.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the datetime value, which is in text box</td>
 </tr>
@@ -2389,16 +2467,17 @@ Fires when the focus-out happens in the DateTimePicker textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //focusOut event for datetimepicker
 $("#datetime").ejDateTimePicker({
    focusOut: function (args) {}
 }); 
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2427,27 +2506,32 @@ Fires when DateTimePicker popup opens.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the timepicker model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the modified datetime value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.prevDateTime</code></td>
+<td class="name">{% highlight html %}
+argument.prevDateTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the previously selected date time value</td>
 </tr>
@@ -2460,16 +2544,17 @@ Fires when DateTimePicker popup opens.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="datetime" /&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="text" id="datetime" />
+<script>
 //open event for datetimepicker
 $("#datetime").ejDateTimePicker({
    open: function (args) {}
 });      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

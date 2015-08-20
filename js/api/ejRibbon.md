@@ -36,7 +36,8 @@ $(element).ejRibbon<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for ribbon</td>
 </tr>
@@ -49,13 +50,14 @@ $(element).ejRibbon<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Ribbon"></div> 
+<script>
 // Create Ribbon
 $('#Ribbon').ejRibbon();         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -156,19 +158,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="ribbonmenu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="ribbonmenu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
      width: "100%",
@@ -241,8 +244,8 @@ $(function () {
        }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -284,20 +287,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -310,8 +314,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -353,31 +357,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="content1"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
-&lt;li&gt;Protect Workbook&lt;/li&gt;
-&lt;li&gt;Inspect Workbook&lt;/li&gt;
-&lt;li&gt;Versions&lt;/li&gt;
-&lt;li&gt;Browser View Options&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content2"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
-&lt;li&gt;Recent Workbooks&lt;/li&gt;
-&lt;li&gt;Computer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content3"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
-&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
-&lt;li&gt;Change File Type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt;
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
@@ -418,8 +423,8 @@ $(function() {
         }]
     });
 });	        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -461,31 +466,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="content1"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
-&lt;li&gt;Protect Workbook&lt;/li&gt;
-&lt;li&gt;Inspect Workbook&lt;/li&gt;
-&lt;li&gt;Versions&lt;/li&gt;
-&lt;li&gt;Browser View Options&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content2"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
-&lt;li&gt;Recent Workbooks&lt;/li&gt;
-&lt;li&gt;Computer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content3"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
-&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
-&lt;li&gt;Change File Type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt;
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
@@ -526,8 +532,8 @@ $(function() {
         }]
     });
 });	        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -568,31 +574,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="content1"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
-&lt;li&gt;Protect Workbook&lt;/li&gt;
-&lt;li&gt;Inspect Workbook&lt;/li&gt;
-&lt;li&gt;Versions&lt;/li&gt;
-&lt;li&gt;Browser View Options&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content2"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
-&lt;li&gt;Recent Workbooks&lt;/li&gt;
-&lt;li&gt;Computer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content3"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
-&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
-&lt;li&gt;Change File Type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt;
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
@@ -633,8 +640,8 @@ $(function() {
         }]
     });
 });	        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -676,31 +683,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="content1"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
-&lt;li&gt;Protect Workbook&lt;/li&gt;
-&lt;li&gt;Inspect Workbook&lt;/li&gt;
-&lt;li&gt;Versions&lt;/li&gt;
-&lt;li&gt;Browser View Options&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content2"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
-&lt;li&gt;Recent Workbooks&lt;/li&gt;
-&lt;li&gt;Computer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content3"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
-&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
-&lt;li&gt;Change File Type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt;
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
@@ -741,8 +749,8 @@ $(function() {
         }]
     });
 });	        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -784,31 +792,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="content1"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
-&lt;li&gt;Protect Workbook&lt;/li&gt;
-&lt;li&gt;Inspect Workbook&lt;/li&gt;
-&lt;li&gt;Versions&lt;/li&gt;
-&lt;li&gt;Browser View Options&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content2"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
-&lt;li&gt;Recent Workbooks&lt;/li&gt;
-&lt;li&gt;Computer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content3"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
-&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
-&lt;li&gt;Change File Type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt;
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
@@ -849,8 +858,8 @@ $(function() {
         }]
     });
 });	        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -892,31 +901,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="content1"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
-&lt;li&gt;Protect Workbook&lt;/li&gt;
-&lt;li&gt;Inspect Workbook&lt;/li&gt;
-&lt;li&gt;Versions&lt;/li&gt;
-&lt;li&gt;Browser View Options&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content2"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
-&lt;li&gt;Recent Workbooks&lt;/li&gt;
-&lt;li&gt;Computer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content3"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
-&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
-&lt;li&gt;Change File Type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt;
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
@@ -957,8 +967,8 @@ $(function() {
         }]
     });
 });	        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1000,31 +1010,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="content1"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
-&lt;li&gt;Protect Workbook&lt;/li&gt;
-&lt;li&gt;Inspect Workbook&lt;/li&gt;
-&lt;li&gt;Versions&lt;/li&gt;
-&lt;li&gt;Browser View Options&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content2"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
-&lt;li&gt;Recent Workbooks&lt;/li&gt;
-&lt;li&gt;Computer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content3"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
-&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
-&lt;li&gt;Change File Type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt;
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
@@ -1065,8 +1076,8 @@ $(function() {
         }]
     });
 });	        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1108,31 +1119,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="content1"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
-&lt;li&gt;Protect Workbook&lt;/li&gt;
-&lt;li&gt;Inspect Workbook&lt;/li&gt;
-&lt;li&gt;Versions&lt;/li&gt;
-&lt;li&gt;Browser View Options&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content2"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
-&lt;li&gt;Recent Workbooks&lt;/li&gt;
-&lt;li&gt;Computer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content3"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
-&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
-&lt;li&gt;Change File Type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt;
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
@@ -1173,8 +1185,8 @@ $(function() {
         }]
     });
 });	        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1216,31 +1228,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="content1"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
-&lt;li&gt;Protect Workbook&lt;/li&gt;
-&lt;li&gt;Inspect Workbook&lt;/li&gt;
-&lt;li&gt;Versions&lt;/li&gt;
-&lt;li&gt;Browser View Options&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content2"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
-&lt;li&gt;Recent Workbooks&lt;/li&gt;
-&lt;li&gt;Computer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content3"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
-&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
-&lt;li&gt;Change File Type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt;
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
@@ -1281,8 +1294,8 @@ $(function() {
         }]
     });
 });	        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1324,20 +1337,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button &lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button </button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -1350,8 +1364,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1393,20 +1407,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -1419,8 +1434,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1462,20 +1477,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -1488,8 +1504,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1531,23 +1547,24 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;button id="design"&gt;Design button&lt;/button&gt;
-&lt;button id="div1"&gt;First button&lt;/button&gt;
-&lt;button id="div2"&gt;Second button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<button id="design">Design button</button>
+<button id="div1">First button</button>
+<button id="div2">Second button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -1586,8 +1603,8 @@ $(function () {
 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1629,23 +1646,24 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;button id="design"&gt;Design button&lt;/button&gt;
-&lt;button id="div1"&gt;First button&lt;/button&gt;
-&lt;button id="div2"&gt;Second button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<button id="design">Design button</button>
+<button id="div1">First button</button>
+<button id="div2">Second button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -1684,8 +1702,8 @@ $(function () {
 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1727,23 +1745,24 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;button id="design"&gt;Design button&lt;/button&gt;
-&lt;button id="div1"&gt;First button&lt;/button&gt;
-&lt;button id="div2"&gt;Second button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<button id="design">Design button</button>
+<button id="div1">First button</button>
+<button id="div2">Second button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -1782,8 +1801,8 @@ $(function () {
 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1825,23 +1844,24 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;button id="design"&gt;Design button&lt;/button&gt;
-&lt;button id="div1"&gt;First button&lt;/button&gt;
-&lt;button id="div2"&gt;Second button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<button id="design">Design button</button>
+<button id="div1">First button</button>
+<button id="div2">Second button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -1880,8 +1900,8 @@ $(function () {
 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1923,21 +1943,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;button&gt;
-&lt;button id="insert"&gt;Insert button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button<button>
+<button id="insert">Insert button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
      width: "100%",
@@ -1957,8 +1978,8 @@ $(function () {
 ]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2000,21 +2021,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;button&gt;
-&lt;button id="insert"&gt;Insert button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button<button>
+<button id="insert">Insert button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
      width: "100%",
@@ -2037,8 +2059,8 @@ $(function () {
    ribbonObj.option({ disabledItemIndex: [1, 2] });
         // Enable the required ribbon tab from the ribbon control.
         ribbonObj.option({ enabledItemIndex: [1] });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2080,20 +2102,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button<button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
      width: "100%",
@@ -2113,8 +2136,8 @@ $(function () {
       ]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2156,21 +2179,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;button id="insert"&gt;Insert button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<button id="insert">Insert button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -2189,8 +2213,8 @@ $(function () {
            ]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2232,20 +2256,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -2258,8 +2283,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2301,20 +2326,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -2327,8 +2353,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2370,19 +2396,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -2406,8 +2433,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2449,19 +2476,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -2495,8 +2523,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2538,19 +2566,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -2574,8 +2603,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2617,19 +2646,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -2653,8 +2683,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2696,34 +2726,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -2781,8 +2812,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2824,20 +2855,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;input id="fontcolor"/&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<input id="fontcolor"/> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -2873,8 +2905,8 @@ $(function () {
    $("#fontcolor").ejColorPicker({ value: "#FFFF00", modelType: "palette", cssClass: "e-ribbon", 
      toolIcon: "e-icon e-fontcoloricon"});
    }
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2916,24 +2948,25 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<style>
 .e-cssclass {
      margin-left: 20px;
 }
-&lt;/style&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -2958,8 +2991,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3001,34 +3034,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -3086,8 +3120,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3129,34 +3163,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -3205,8 +3240,8 @@ $(function () {
                                                 {
                             text:"Save Selection as new quick style",
                                                      customToolTip:{
-                                                         title: "&lt;u&gt;Save&lt;/u&gt;",
-                            content: "&lt;i&gt;Save Selection as new quick style&lt;/i&gt;",
+                                                         title: "<u>Save</u>",
+                            content: "<i>Save Selection as new quick style</i>",
                                                          prefixIcon:"e-expander",
                                                         },
                                                         customItemType:ej.Ribbon.customItemType.button,
@@ -3218,8 +3253,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3261,34 +3296,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -3337,8 +3373,8 @@ $(function () {
                                                 {
                             text:"Save Selection as new quick style",
                                                      customToolTip:{
-                                                         title: "&lt;u&gt;Save&lt;/u&gt;",
-                            content: "&lt;i&gt;Save Selection as new quick style&lt;/i&gt;",
+                                                         title: "<u>Save</u>",
+                            content: "<i>Save Selection as new quick style</i>",
                                                          prefixIcon:"e-expander",
                                                         },
                                                         customItemType:ej.Ribbon.customItemType.button,
@@ -3350,8 +3386,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3368,7 +3404,7 @@ $(function () {
 
 
 
-Specify the custom tooltip for gallery extra item's button.Please refer ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
+Specify the custom tooltip for gallery extra item's button.Please refer ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
 
 
@@ -3393,34 +3429,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -3469,8 +3506,8 @@ $(function () {
                                                 {
                             text:"Save Selection as new quick style",
                                                      customToolTip:{
-                                                         title: "&lt;u&gt;Save&lt;/u&gt;",
-                            content: "&lt;i&gt;Save Selection as new quick style&lt;/i&gt;",
+                                                         title: "<u>Save</u>",
+                            content: "<i>Save Selection as new quick style</i>",
                                                          prefixIcon:"e-expander",
                                                         },
                                                         customItemType:ej.Ribbon.customItemType.button,
@@ -3482,8 +3519,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3525,34 +3562,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -3601,8 +3639,8 @@ $(function () {
                                                 {
                             text:"Save Selection as new quick style",
                                                      customToolTip:{
-                                                         title: "&lt;u&gt;Save&lt;/u&gt;",
-                            content: "&lt;i&gt;Save Selection as new quick style&lt;/i&gt;",
+                                                         title: "<u>Save</u>",
+                            content: "<i>Save Selection as new quick style</i>",
                                                          prefixIcon:"e-expander",
                                                         },
                                                         customItemType:ej.Ribbon.customItemType.button,
@@ -3614,8 +3652,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3657,34 +3695,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -3733,8 +3772,8 @@ $(function () {
                                                 {
                             text:"Save Selection as new quick style",
                                                      customToolTip:{
-                                                         title: "&lt;u&gt;Save&lt;/u&gt;",
-                            content: "&lt;i&gt;Save Selection as new quick style&lt;/i&gt;",
+                                                         title: "<u>Save</u>",
+                            content: "<i>Save Selection as new quick style</i>",
                                                          prefixIcon:"e-expander",
                                                         },
                                                         customItemType:ej.Ribbon.customItemType.button,
@@ -3746,8 +3785,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3789,34 +3828,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -3874,8 +3914,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3917,34 +3957,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -4002,8 +4043,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4045,19 +4086,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -4071,8 +4113,8 @@ $(function () {
                         id: "expand",
                         text: "Expand Button",
                                                 customToolTip:{
-                                                        title: "&lt;i&amp;gtExpand&lt;/i&gt;",
-                           content: "&lt;h5&amp;gtExpand content&lt;/h5&gt;",
+                                                        title: "<i&amp;gtExpand</i>",
+                           content: "<h5&amp;gtExpand content</h5>",
                                                         prefixIcon:"e-expander",
                                                                 }
                     },
@@ -4089,8 +4131,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4132,19 +4174,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -4158,8 +4201,8 @@ $(function () {
                         id: "expand",
                         text: "Expand Button",
                                                 customToolTip:{
-                                                        title: "&lt;i&gt;Expand&lt;/i&gt;",
-                           content: "&lt;h5&gt;Expand content&lt;/h5&gt;",
+                                                        title: "<i>Expand</i>",
+                           content: "<h5>Expand content</h5>",
                                                         prefixIcon:"e-expander",
                                                                 }
                     },
@@ -4176,8 +4219,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4219,19 +4262,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -4245,8 +4289,8 @@ $(function () {
                         id: "expand",
                         text: "Expand Button",
                                                 customToolTip:{
-                                                        title: "&lt;i&gt;Expand&lt;/i&gt;",
-                           content: "&lt;h5&gt;Expand content&lt;/h5&gt;",
+                                                        title: "<i>Expand</i>",
+                           content: "<h5>Expand content</h5>",
                                                         prefixIcon:"e-expander",
                                                                 }
                     },
@@ -4263,8 +4307,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4306,19 +4350,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -4332,8 +4377,8 @@ $(function () {
                         id: "expand",
                         text: "Expand Button",
                                                 customToolTip:{
-                                                        title: "&lt;i&gt;Expand&lt;/i&gt;",
-                           content: "&lt;h5&gt;Expand content&lt;/h5&gt;",
+                                                        title: "<i>Expand</i>",
+                           content: "<h5>Expand content</h5>",
                                                         prefixIcon:"e-expander",
                                                                 }
                     },
@@ -4350,8 +4395,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4393,24 +4438,25 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<style>
 .e-cssclass {
      margin-left: 20px;
 }
-&lt;/style&gt;
-&lt;script type="text/javascript"&gt;  
+</style>
+<script type="text/javascript">  
 var fontfamily = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"];          
 $(function () {
     $("#Ribbon").ejRibbon({
@@ -4435,8 +4481,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4478,19 +4524,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -4525,8 +4572,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4568,34 +4615,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -4653,8 +4701,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4696,34 +4744,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -4781,8 +4830,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4824,9 +4873,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
@@ -4834,27 +4884,27 @@ Example
 .e-gallerycontent1{
   font-style: italic;
 }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -4913,8 +4963,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4931,7 +4981,7 @@ $(function () {
 
 
 
-It is used to specify the custom tooltip for gallery content.Please refer ejRibbon#tabs-&gt;groups-&gt;content-&gt;groups-&gt;customToolTip for its inner properties.
+It is used to specify the custom tooltip for gallery content.Please refer ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
 
 
@@ -4956,34 +5006,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -5002,8 +5053,8 @@ $(function () {
                        galleryItems: [{
                            text:"Content1",
                                                     customToolTip:{
-                                                         title: "&lt;u&gt;GalleryContent&lt;/u&gt;",
-                            content: "&lt;b&gt;GalleryContent 1&lt;/b&gt;",
+                                                         title: "<u>GalleryContent</u>",
+                            content: "<b>GalleryContent 1</b>",
                                                          prefixIcon:"e-expander",
                                                         }
                          },
@@ -5045,8 +5096,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5088,34 +5139,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -5173,8 +5225,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5216,34 +5268,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -5301,8 +5354,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5344,19 +5397,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -5380,8 +5434,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5423,19 +5477,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -5459,8 +5514,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5502,34 +5557,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -5587,8 +5643,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5630,34 +5686,35 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;style&gt;
+
+{% highlight html %}
+ 
+<style>
 .e-extracontent .e-extrabtnstyle{
  padding-left: 28px;
  text-align: left;
  }
-&lt;/style&gt;
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="custommenu"&gt;
-                        &lt;li&gt;&lt;a&gt;New Quick Step&lt;/a&gt;
-            &lt;ul&gt;
-            &lt;li&gt;&lt;a&gt;Move to new folder&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Categorize &amp; Move&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a&gt;Flag &amp; Move&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-       &lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+</style>
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="custommenu">
+                        <li><a>New Quick Step</a>
+            <ul>
+            <li><a>Move to new folder</a></li>
+            <li><a>Categorize &amp; Move</a></li>
+            <li><a>Flag &amp; Move</a></li>
+                </ul>
+            </li>
+       </ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -5715,8 +5772,8 @@ $(function () {
                 }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5758,22 +5815,23 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;ul id="split"&gt;
-&lt;li&gt;&lt;span&gt;Paste&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<ul id="split">
+<li><span>Paste</span></li>
+</ul>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -5799,8 +5857,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5842,19 +5900,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -5878,8 +5937,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -5921,19 +5980,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -5957,8 +6017,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6000,19 +6060,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6036,8 +6097,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6079,19 +6140,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6115,8 +6177,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6158,20 +6220,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6184,8 +6247,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6227,32 +6290,33 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
      width: "100%",
        applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
-                text: "New", type: "custom", customContent: "&lt;button id='customContent'&gt;Custom Content&lt;/button&gt;"
+                text: "New", type: "custom", customContent: "<button id='customContent'>Custom Content</button>"
            }]
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6294,20 +6358,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6320,8 +6385,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6363,20 +6428,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6389,8 +6455,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6432,20 +6498,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6458,8 +6525,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6501,20 +6568,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6527,8 +6595,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6570,20 +6638,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6596,8 +6665,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6639,20 +6708,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6665,8 +6735,8 @@ $(function () {
         }]
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6702,12 +6772,14 @@ It is used to add contextual tab or contextual tab set dynamically in the ribbon
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>contextualTabSet</code></td>
+<td class="name">{% highlight html %}
+contextualTabSet{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">contextual tab or contextual tab set object.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">index of the contextual tab or contextual tab set,this is optional.</td>
 </tr>
@@ -6720,21 +6792,22 @@ It is used to add contextual tab or contextual tab set dynamically in the ribbon
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;div id="design"&gt;ContextualTab&lt;/div&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<div id="design">ContextualTab</div>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6761,23 +6834,24 @@ $(function () {
         var ribbonObj = $("#Ribbon").data("ejRibbon"); 
         // Add new contextual tab or contextual tab set with given list
          ribbonObj.addContextualTabs(cTab,2);
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;div id="design"&gt;ContextualTab&lt;/div&gt;
-&lt;script type="text/javascript"&gt;   
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<div id="design">ContextualTab</div>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6801,8 +6875,8 @@ $(function () {
                            }]
                        }   
 $("#Ribbon").ejRibbon("addContextualTabs",cTab,2); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6831,17 +6905,20 @@ It is used to add tab dynamically in the ribbon control with given name,tab grou
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>tabText</code></td>
+<td class="name">{% highlight html %}
+tabText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">ribbon tab display text.</td>
 </tr>
 <tr>
-<td class="name"><code>ribbonGroups</code></td>
+<td class="name">{% highlight html %}
+ribbonGroups{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">groups to be displayed in ribbon tab .</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">index of the ribbon tab,this is optional.</td>
 </tr>
@@ -6854,20 +6931,21 @@ It is used to add tab dynamically in the ribbon control with given name,tab grou
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6899,22 +6977,23 @@ $(function () {
         var ribbonObj = $("#Ribbon").data("ejRibbon"); 
         // Add new ribbon tab with given list
          ribbonObj.addTab("Tab2",tabGroup,2);
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -6943,8 +7022,8 @@ $(function () {
                }]
            }];          
 $("#Ribbon").ejRibbon("addTab","Tab2",tabGroup,2); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6973,17 +7052,20 @@ It is used to add tab group dynamically in the ribbon control with given tab ind
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>tabIndex</code></td>
+<td class="name">{% highlight html %}
+tabIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">ribbon tab index.</td>
 </tr>
 <tr>
-<td class="name"><code>tabGroup</code></td>
+<td class="name">{% highlight html %}
+tabGroup{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">group to be displayed in ribbon tab .</td>
 </tr>
 <tr>
-<td class="name"><code>grpIndex</code></td>
+<td class="name">{% highlight html %}
+grpIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">index of the ribbon group,this is optional.</td>
 </tr>
@@ -6996,19 +7078,20 @@ It is used to add tab group dynamically in the ribbon control with given tab ind
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
@@ -7050,21 +7133,22 @@ $(function () {$("#Ribbon").ejRibbon({
         var ribbonObj = $("#Ribbon").data("ejRibbon"); 
         // Add new ribbon group with given list
         ribbonObj.addTabGroup(1,ribbonGrp,0);
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
@@ -7106,8 +7190,8 @@ $(function () {$("#Ribbon").ejRibbon({
         var ribbonObj = $("#Ribbon").data("ejRibbon"); 
         $("#Ribbon").ejRibbon("addTabGroup",1,ribbonGrp,0); 
 $("#Ribbon").ejRibbon("addTab","Tab2",tabGroup,2); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7136,27 +7220,32 @@ It is used to add group content dynamically in the ribbon control with given tab
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>tabIndex</code></td>
+<td class="name">{% highlight html %}
+tabIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">ribbon tab index.</td>
 </tr>
 <tr>
-<td class="name"><code>grpIndex</code></td>
+<td class="name">{% highlight html %}
+grpIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">ribbon group index.</td>
 </tr>
 <tr>
-<td class="name"><code>subGrpIndex</code></td>
+<td class="name">{% highlight html %}
+subGrpIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">sub group index in the ribbon group,</td>
 </tr>
 <tr>
-<td class="name"><code>content</code></td>
+<td class="name">{% highlight html %}
+content{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">content to be displayed in the ribbon group.</td>
 </tr>
 <tr>
-<td class="name"><code>contentIndex</code></td>
+<td class="name">{% highlight html %}
+contentIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">ribbon content index .this is optional.</td>
 </tr>
@@ -7169,19 +7258,20 @@ It is used to add group content dynamically in the ribbon control with given tab
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
@@ -7214,21 +7304,22 @@ $(function () {$("#Ribbon").ejRibbon({
         var ribbonObj = $("#Ribbon").data("ejRibbon"); 
         // Add new ribbon content with given list
          ribbonObj.addTabGroupContent(1,0,0,content,2);
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;   
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<script type="text/javascript">   
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
@@ -7260,8 +7351,8 @@ $(function () {$("#Ribbon").ejRibbon({
 //initialize the Ribbon object
         $("#Ribbon").ejRibbon("addTabGroupContent",1,0,0,content,2); 
 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7287,20 +7378,21 @@ It is used to collapse the ribbon tab content.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7317,22 +7409,23 @@ $(function () {
         var ribbonObj = $("#Ribbon").data("ejRibbon");
         // collapse the ribbon control.
         ribbonObj.collapse();
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7346,8 +7439,8 @@ $(function () {
   });
 });                    
 $("#Ribbon").ejRibbon("collapse"); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7373,20 +7466,22 @@ destroy the ribbon widget all events bound using this._on will be unbind automat
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 var ribbonObj = $("#Ribbon").data("ejRibbon");
 ribbonObj.destroy(); // destroy the ribbon
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // destroy the ribbon
 $("#Ribbon").ejRibbon("destroy");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7412,20 +7507,21 @@ It is used to expand the ribbon tab content.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7443,22 +7539,23 @@ $(function () {
         // expand the ribbon control.
         ribbonObj.collapse();
         ribbonObj.expand();
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7473,8 +7570,8 @@ $(function () {
 });                    
 $("#Ribbon").ejRibbon("collapse"); 
 $("#Ribbon").ejRibbon("expand"); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7503,7 +7600,8 @@ It is used to get text of the given index tab in the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">index of the tab item.</td>
 </tr>
@@ -7522,20 +7620,21 @@ of the given index tab in the ribbon control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7552,22 +7651,23 @@ $(function () {
         var ribbonObj = $("#Ribbon").data("ejRibbon");
         // To get text of the given index tab in the ribbon control.
         ribbonObj.getTabText(1);
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7581,8 +7681,8 @@ $(function () {
   });
 });                 
 $("#Ribbon").ejRibbon("getTabText",1); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7611,7 +7711,8 @@ It is used to hide the given text tab in the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>string</code></td>
+<td class="name">{% highlight html %}
+string{% endhighlight %}</td>
 <td class="type"><span class="param-type">srting</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
@@ -7624,20 +7725,21 @@ It is used to hide the given text tab in the ribbon control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7654,22 +7756,23 @@ $(function () {
         var ribbonObj = $("#Ribbon").data("ejRibbon");
         // hide the given text tab item in the ribbon control.
         ribbonObj.hideTab("HOME");
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7683,8 +7786,8 @@ $(function () {
   });
 });                    
 $("#Ribbon").ejRibbon("hideTab","HOME"); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7713,7 +7816,8 @@ It is used to check given text tab in the ribbon control is enabled or not.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>string</code></td>
+<td class="name">{% highlight html %}
+string{% endhighlight %}</td>
 <td class="type"><span class="param-type">srting</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
@@ -7732,20 +7836,21 @@ if it is in enabled state,false if it is in disabled state.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7762,22 +7867,23 @@ $(function () {
         var ribbonObj = $("#Ribbon").data("ejRibbon");
         //  To check given text tab in the ribbon control is enabled or not.
         ribbonObj.isEnable("HOME");
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7791,8 +7897,8 @@ $(function () {
   });
 });                
 $("#Ribbon").ejRibbon("isEnable","HOME"); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7821,7 +7927,8 @@ It is used to check given text tab in the ribbon control is visible or not.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>string</code></td>
+<td class="name">{% highlight html %}
+string{% endhighlight %}</td>
 <td class="type"><span class="param-type">srting</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
@@ -7840,20 +7947,21 @@ if it is visible,false if it is invisible
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7870,22 +7978,23 @@ $(function () {
         var ribbonObj = $("#Ribbon").data("ejRibbon");
         //  To check given text tab in the ribbon control is visible or not.
         ribbonObj.isVisible("HOME");
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;  
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">  
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7899,8 +8008,8 @@ $(function () {
   });
 });                   
 $("#Ribbon").ejRibbon("isVisible","HOME"); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7929,7 +8038,8 @@ It is used to remove the given index tab item from the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">index of tab item.</td>
 </tr>
@@ -7942,20 +8052,21 @@ It is used to remove the given index tab item from the ribbon control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -7972,22 +8083,23 @@ $(function () {
         var ribbonObj = $("#Ribbon").data("ejRibbon");
         // Remove the given index tab item from the ribbon control.
         ribbonObj.removeTab(1);
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -8001,8 +8113,8 @@ $(function () {
   });
 });                    
 $("#Ribbon").ejRibbon("removeTab",1); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8031,12 +8143,14 @@ It is used to set new text to the given text tab in the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>string</code></td>
+<td class="name">{% highlight html %}
+string{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">current text of the tab item.</td>
 </tr>
 <tr>
-<td class="name"><code>string</code></td>
+<td class="name">{% highlight html %}
+string{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">new text of the tab item.</td>
 </tr>
@@ -8049,20 +8163,21 @@ It is used to set new text to the given text tab in the ribbon control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -8079,22 +8194,23 @@ $(function () {
         var ribbonObj = $("#Ribbon").data("ejRibbon");
         // Set new text to the given text tab in the ribbon control.
         ribbonObj.setTabText("HOME","NEW");
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -8108,8 +8224,8 @@ $(function () {
   });
 });                    
 $("#Ribbon").ejRibbon("setTabText","HOME","NEW"); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8138,7 +8254,8 @@ It is used to show the given text tab in the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>string</code></td>
+<td class="name">{% highlight html %}
+string{% endhighlight %}</td>
 <td class="type"><span class="param-type">srting</span></td>
 <td class="description last">text of the tab item.</td>
 </tr>
@@ -8151,20 +8268,21 @@ It is used to show the given text tab in the ribbon control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+        
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -8181,22 +8299,23 @@ $(function () {
         var ribbonObj = $("#Ribbon").data("ejRibbon");
         // hide the given text tab item in the ribbon control.
         ribbonObj.showTab("HOME");
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -8210,8 +8329,8 @@ $(function () {
   });
 });                    
 $("#Ribbon").ejRibbon("showTab","HOME"); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8247,7 +8366,8 @@ Triggered before the ribbon tab item remove.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button.
 <table class="params">
@@ -8260,22 +8380,26 @@ Triggered before the ribbon tab item remove.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current tab item index in the ribbon control.</td>
 </tr>
@@ -8292,20 +8416,21 @@ Triggered before the ribbon tab item remove.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -8319,8 +8444,8 @@ $(function () {
       beforeTabRemove: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8349,7 +8474,8 @@ Triggered before the ribbon control create.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from Ribbon.
 <table class="params">
@@ -8362,17 +8488,20 @@ Triggered before the ribbon control create.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -8389,20 +8518,21 @@ Triggered before the ribbon control create.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -8416,8 +8546,8 @@ $(function () {
       create: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8446,7 +8576,8 @@ Triggered before the ribbon control destroy.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button.
 <table class="params">
@@ -8459,22 +8590,26 @@ Triggered before the ribbon control destroy.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>deleteIndex</code></td>
+<td class="name">{% highlight html %}
+deleteIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current ribbon tab item index</td>
 </tr>
@@ -8491,20 +8626,21 @@ Triggered before the ribbon control destroy.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -8518,8 +8654,8 @@ $(function () {
        destroy: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8548,22 +8684,26 @@ Triggered when the control in the group is clicked successfully .
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the control clicked in the group.</td>
 </tr>
@@ -8576,20 +8716,21 @@ Triggered when the control in the group is clicked successfully .
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -8603,8 +8744,8 @@ $(function () {
       groupClick: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8633,22 +8774,26 @@ Triggered when the groupexpander in the group is clicked successfully .
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the clicked groupexpander.</td>
 </tr>
@@ -8661,20 +8806,21 @@ Triggered when the groupexpander in the group is clicked successfully .
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -8688,8 +8834,8 @@ $(function () {
       groupExpand: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8718,27 +8864,32 @@ Triggered when an item in the Gallery control is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.galleryModel</code></td>
+<td class="name">{% highlight html %}
+argument.galleryModel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gallery model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the item clicked in the gallery.</td>
 </tr>
@@ -8751,20 +8902,21 @@ Triggered when an item in the Gallery control is clicked successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -8824,8 +8976,8 @@ $(function () {
       onGalleryItemClick: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -8853,22 +9005,26 @@ Triggered when a tab or button in the backstage page is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the item clicked in the gallery.</td>
 </tr>
@@ -8881,31 +9037,32 @@ Triggered when a tab or button in the backstage page is clicked successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="content1"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Info&lt;/div&gt;
-&lt;li&gt;Protect Workbook&lt;/li&gt;
-&lt;li&gt;Inspect Workbook&lt;/li&gt;
-&lt;li&gt;Versions&lt;/li&gt;
-&lt;li&gt;Browser View Options&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content2"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Open&lt;/div&gt;
-&lt;li&gt;Recent Workbooks&lt;/li&gt;
-&lt;li&gt;Computer&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="content3"&gt;
-&lt;ul style="list-style:none"&gt;&lt;div style="margin-left:30px;font-size:20px"&gt;Export&lt;/div&gt;
-&lt;li&gt;Create PDF/XPS Document&lt;/li&gt;
-&lt;li&gt;Change File Type&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt;
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
@@ -8947,8 +9104,8 @@ $(function() {
       onBackStageItemClick: function (args) {}
     });
 });	        
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8977,7 +9134,8 @@ Triggered after the new ribbon tab item add.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -8990,27 +9148,32 @@ Triggered after the new ribbon tab item add.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>tabHeader</code></td>
+<td class="name">{% highlight html %}
+tabHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns new added tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>tabContent</code></td>
+<td class="name">{% highlight html %}
+tabContent{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns new added tab content panel.</td>
 </tr>
@@ -9027,20 +9190,21 @@ Triggered after the new ribbon tab item add.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -9054,8 +9218,8 @@ $(function () {
       onTabAdd: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9084,7 +9248,8 @@ Triggered when tab is clicked successfully in the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -9097,37 +9262,44 @@ Triggered when tab is clicked successfully in the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveHeader</code></td>
+<td class="name">{% highlight html %}
+prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns previous active tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveIndex</code></td>
+<td class="name">{% highlight html %}
+prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns previous active index.</td>
 </tr>
 <tr>
-<td class="name"><code>activeHeader</code></td>
+<td class="name">{% highlight html %}
+activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns current active tab header .</td>
 </tr>
 <tr>
-<td class="name"><code>activeIndex</code></td>
+<td class="name">{% highlight html %}
+activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current active index.</td>
 </tr>
@@ -9144,20 +9316,21 @@ Triggered when tab is clicked successfully in the ribbon control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -9171,8 +9344,8 @@ $(function () {
      onTabClick: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9201,7 +9374,8 @@ Triggered before the ribbon tab create.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button.
 <table class="params">
@@ -9214,22 +9388,26 @@ Triggered before the ribbon tab create.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>deleteIndex</code></td>
+<td class="name">{% highlight html %}
+deleteIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current ribbon tab item index</td>
 </tr>
@@ -9246,20 +9424,21 @@ Triggered before the ribbon tab create.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -9273,8 +9452,8 @@ $(function () {
       onTabCreate: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9303,7 +9482,8 @@ Triggered after the tab item removed from the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -9316,27 +9496,32 @@ Triggered after the tab item removed from the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>removedTab</code></td>
+<td class="name">{% highlight html %}
+removedTab{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns removed tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>removedPanel</code></td>
+<td class="name">{% highlight html %}
+removedPanel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns removed tab content panel.</td>
 </tr>
@@ -9353,20 +9538,21 @@ Triggered after the tab item removed from the ribbon control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -9380,8 +9566,8 @@ $(function () {
       onTabRemove: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9410,7 +9596,8 @@ Triggered after the ribbon tab item selected in the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -9423,37 +9610,44 @@ Triggered after the ribbon tab item selected in the ribbon control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveHeader</code></td>
+<td class="name">{% highlight html %}
+prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns previous active tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveIndex</code></td>
+<td class="name">{% highlight html %}
+prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns previous active index.</td>
 </tr>
 <tr>
-<td class="name"><code>activeHeader</code></td>
+<td class="name">{% highlight html %}
+activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns current active tab header .</td>
 </tr>
 <tr>
-<td class="name"><code>activeIndex</code></td>
+<td class="name">{% highlight html %}
+activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current active index.</td>
 </tr>
@@ -9470,20 +9664,21 @@ Triggered after the ribbon tab item selected in the ribbon control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -9497,8 +9692,8 @@ $(function () {
     onTabSelect: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -9527,22 +9722,26 @@ Triggered when the expand/collapse button is clicked successfully .
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the ribbon model.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.target</code></td>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the expand/collapse button.</td>
 </tr>
@@ -9555,20 +9754,21 @@ Triggered when the expand/collapse button is clicked successfully .
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="menu"&gt;
-&lt;li&gt;&lt;a&gt;FILE &lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a&gt;New&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Open&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Save as&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a&gt;Print&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;div id="Ribbon"&gt;&lt;/div&gt; 
-&lt;button id="btn"&gt;Home button&lt;/button&gt;
-&lt;script type="text/javascript"&gt;   
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
 $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
@@ -9582,8 +9782,8 @@ $(function () {
       onToggleButtonClick: function (args) {}
   });
 });             
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 

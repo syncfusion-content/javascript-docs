@@ -40,17 +40,18 @@ $(element).ejMap<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="container"&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="container"> 
+ 
+<script>
 // Create Map
 $('#container').ejMap();        
-&lt;/script&gt; 
+</script> 
   
-&lt;/div&gt;</code>
-</pre>
+</div>{% endhighlight %}
+
 
 
 
@@ -121,19 +122,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set background API value during initialization 
-  $("#container").ejMap({background:'white'});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({background:'white'});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the background API, after initialization:
         //Gets the background value 
   var property = $("#container").data("ejMap").model.background;
         //Sets the background value 
-        $("#container").data("ejMap").model.background="transparent";</code>
-</pre>
+        $("#container").data("ejMap").model.background="transparent";{% endhighlight %}
+
 
 
 
@@ -175,19 +178,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set baseMapIndex API value during initialization 
-  $("#container").ejMap({baseMapIndex:0});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({baseMapIndex:0});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the baseMapIndex API, after initialization:
         //Gets the baseMapIndex value 
         var property = $("#container").data("ejMap").model.baseMapIndex;
         //Sets the baseMapIndex value 
-        $("#container").data("ejMap").model.baseMapIndex= 0;</code>
-</pre>
+        $("#container").data("ejMap").model.baseMapIndex= 0;{% endhighlight %}
+
 
 
 
@@ -229,19 +234,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the centerPosition during initialization.                        
-         $("#container").ejMap({centerPosition: [38.5000, -98]});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+         $("#container").ejMap({centerPosition: [38.5000, -98]});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the centerPosition after initialization:
   //Gets the centerPosition from map.
   var property =$("#container").data("ejMap").model.centerPosition;
   //Sets the centerPosition to map.
-  $("#container").data("ejMap").model.centerPosition = [38.5000, -98];</code>
-</pre>
+  $("#container").data("ejMap").model.centerPosition = [38.5000, -98];{% endhighlight %}
+
 
 
 
@@ -283,20 +290,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set enableAnimation API value during initialization 
-        $("#container").ejMap({enableAnimation:true});  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({enableAnimation:true});  {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enableAnimation API, after initialization:
         //Gets the enableAnimation value 
         var property = $("#container").data("ejMap").model.enableAnimation;
          
         //Sets the enableAnimation value 
-        $("#container").data("ejMap").model.enableAnimation=true }); </code>
-</pre>
+        $("#container").data("ejMap").model.enableAnimation=true }); {% endhighlight %}
+
 
 
 
@@ -338,20 +347,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set enableLayerChangeAnimation API value during initialization 
-        $("#container").ejMap({enableLayerChangeAnimation:true});       </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({enableLayerChangeAnimation:true});       {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enableLayerChangeAnimation API, after initialization:
         //Gets the enableLayerChangeAnimation value 
         var property = $("#container").data("ejMap").model.enableLayerChangeAnimation;
               
         //Sets the enableLayerChangeAnimation value 
-        $("#container").data("ejMap").model.enableLayerChangeAnimation=false }); </code>
-</pre>
+        $("#container").data("ejMap").model.enableLayerChangeAnimation=false }); {% endhighlight %}
+
 
 
 
@@ -393,20 +404,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set enablePan API value during initialization 
-        $("#container").ejMap({enablePan:true});        </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({enablePan:true});        {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enablePan API, after initialization:
         //Gets the enablePan value 
         var property = $("#container").data("ejMap").model.enablePan;
                
         //Sets the enablePan value 
-        $("#container").data("ejMap").model.enablePan=true }); </code>
-</pre>
+        $("#container").data("ejMap").model.enablePan=true }); {% endhighlight %}
+
 
 
 
@@ -448,20 +461,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set enableResize API value during initialization 
-        $("#container").ejMap({enableResize:true});     </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({enableResize:true});     {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enableResize API, after initialization:
         //Gets the enableResize value 
         var property = $("#container").data("ejMap").model.enableResize;
             
         //Sets the enableResize value 
-        $("#container").data("ejMap").model.enableResize= true }); </code>
-</pre>
+        $("#container").data("ejMap").model.enableResize= true }); {% endhighlight %}
+
 
 
 
@@ -503,20 +518,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set enableZoom API value during initialization 
-        $("#container").ejMap({zoomSettings:{enableZoom:true}});            </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({zoomSettings:{enableZoom:true}});            {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enableZoom API, after initialization:
         //Gets the enableZoom value 
         var property = $("#container").data("ejMap").model.zoomSettings.enableZoom;
          
         //Sets the enableZoom value 
-        $("#container").data("ejMap").model.zoomSettings.enableZoom=true }); </code>
-</pre>
+        $("#container").data("ejMap").model.zoomSettings.enableZoom=true }); {% endhighlight %}
+
 
 
 
@@ -558,20 +575,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set enableZoomOnSelection API value during initialization 
-        $("#container").ejMap({zoomSettings:{enableZoomOnSelection:true}});     </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({zoomSettings:{enableZoomOnSelection:true}});     {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enableZoomOnSelection API, after initialization:
         //Gets the enableZoomOnSelection value 
         var property = $("#container").data("ejMap").model.zoomSettings.enableZoomOnSelection;
               
         //Sets the enableZoomOnSelection value 
-        $("#container").data("ejMap").model.zoomSettings.enableZoomOnSelection=true }); </code>
-</pre>
+        $("#container").data("ejMap").model.zoomSettings.enableZoomOnSelection=true }); {% endhighlight %}
+
 
 
 
@@ -613,19 +632,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set zoomFactor API value during initialization 
-  $("#container").ejMap({zoomSettings:{factor:1}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({zoomSettings:{factor:1}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the zoomFactor API, after initialization:
         //Gets the zoomFactor value 
         var property = $("#container").data("ejMap").model.zoomSettings.factor;
         //Sets the zoomFactor value 
-        $("#container").data("ejMap").model.zoomSettings.factor= 1;</code>
-</pre>
+        $("#container").data("ejMap").model.zoomSettings.factor= 1;{% endhighlight %}
+
 
 
 
@@ -667,19 +688,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the layers during initialization.                        
-        $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the layer after initialization:
   //Gets the layer from map.
   var layer =$("#container").data("ejMap").model.layers[layerIndex];
   //Sets the layer to map.
-  $("#container").data("ejMap").model.layers[layerIndex]  = { layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa };</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex]  = { layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa };{% endhighlight %}
+
 
 
 
@@ -721,19 +744,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set zoomLevel API value during initialization 
-  $("#container").ejMap({zoomSettings:{level:1}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({zoomSettings:{level:1}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the zoomLevel API, after initialization:
         //Gets the zoomLevel value 
         var property = $("#container").data("ejMap").model.zoomSettings.level;
         //Sets the zoomLevel value 
-        $("#container").data("ejMap").model.zoomSettings.level= 1;</code>
-</pre>
+        $("#container").data("ejMap").model.zoomSettings.level= 1;{% endhighlight %}
+
 
 
 
@@ -775,19 +800,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set maxValue API value during initialization 
-  $("#container").ejMap({zoomSettings:{maxValue:100}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({zoomSettings:{maxValue:100}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the maxValue API, after initialization:
         //Gets the maxValue value 
         var property = $("#container").data("ejMap").model.zoomSettings.maxValue;
         //Sets the maxValue value 
-        $("#container").data("ejMap").model.zoomSettings.maxValue= 100;</code>
-</pre>
+        $("#container").data("ejMap").model.zoomSettings.maxValue= 100;{% endhighlight %}
+
 
 
 
@@ -829,19 +856,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set minValue API value during initialization 
-  $("#container").ejMap({zoomSettings:{minValue:1}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({zoomSettings:{minValue:1}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the minValue API, after initialization:
         //Gets the minValue value 
         var property = $("#container").data("ejMap").model.zoomSettings.minValue;
         //Sets the minValue value 
-        $("#container").data("ejMap").model.zoomSettings.minValue= 1;</code>
-</pre>
+        $("#container").data("ejMap").model.zoomSettings.minValue= 1;{% endhighlight %}
+
 
 
 
@@ -883,19 +912,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set absolutePosition API value during initialization 
-$("#container").ejMap(navigationControl:{absolutePosition:{x:5,y:20}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#container").ejMap(navigationControl:{absolutePosition:{x:5,y:20}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the absolutePosition, after initialization:
         //Gets the absolutePosition value
         var property = $("#container").data("ejMap").model.navigationControl.absolutePosition;
         //Sets the absolutePosition value
-        $("#container").data("ejMap").model.navigationControl.absolutePosition={x:5,y:20}});</code>
-</pre>
+        $("#container").data("ejMap").model.navigationControl.absolutePosition={x:5,y:20}});{% endhighlight %}
+
 
 
 
@@ -937,18 +968,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set navigation control template for map during initialization 
-$("#container").ejMap(navigationControl:{content:null});</code>
-</pre>
-<pre class="prettyprint">
-<code>//Get or set the navigation control template for map, after initialization:
+$("#container").ejMap(navigationControl:{content:null});{% endhighlight %}
+
+
+{% highlight html %}
+//Get or set the navigation control template for map, after initialization:
         //Gets the navigation control template
         var property = $("#container").data("ejMap").model.navigationControl.content;
         //Sets the navigation control template
-        $("#container").data("ejMap").model.navigationControl.content=null });</code>
-</pre>
+        $("#container").data("ejMap").model.navigationControl.content=null });{% endhighlight %}
+
 
 
 
@@ -990,19 +1023,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set dockPosition value during initialization 
-$("#container").ejMap(navigationControl:{dockPosition:'centerleft'});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#container").ejMap(navigationControl:{dockPosition:'centerleft'});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the dockPosition value, after initialization:
         //Gets the dockPosition value
         var property = $("#container").data("ejMap").model.navigationControl.dockPosition;
         //Sets the dockPosition value
-        $("#container").data("ejMap").model.navigationControl.dockPosition='centerleft' });</code>
-</pre>
+        $("#container").data("ejMap").model.navigationControl.dockPosition='centerleft' });{% endhighlight %}
+
 
 
 
@@ -1044,19 +1079,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set enableNavigation API value during initialization 
-$("#container").ejMap(navigationControl:{enableNavigation:false});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#container").ejMap(navigationControl:{enableNavigation:false});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enableNavigation, after initialization:
         //Gets the enableNavigation value
         var property = $("#container").data("ejMap").model.navigationControl.enableNavigation;
         //Sets the enableNavigation value
-        $("#container").data("ejMap").model.navigationControl.enableNavigation=false });</code>
-</pre>
+        $("#container").data("ejMap").model.navigationControl.enableNavigation=false });{% endhighlight %}
+
 
 
 
@@ -1098,19 +1135,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set orientation value during initialization 
-$("#container").ejMap(navigationControl:{orientation:'vertical'});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#container").ejMap(navigationControl:{orientation:'vertical'});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the orientation value, after initialization:
         //Gets the orientation value
         var property = $("#container").data("ejMap").model.navigationControl.orientation;
         //Sets the orientation value
-        $("#container").data("ejMap").model.navigationControl.orientation='vertical' });</code>
-</pre>
+        $("#container").data("ejMap").model.navigationControl.orientation='vertical' });{% endhighlight %}
+
 
 
 
@@ -1196,19 +1235,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the type of bing map during initialization.                      
-        $("#container").ejMap({layers: [{ bingMapType:'aerial' }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ bingMapType:'aerial' }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the type of bing map after initialization:
   //Gets the type of bing map.
   var property =$("#container").data("ejMap").model.layers[layerIndex].bingMapType;
   //Sets the type of bing map.
-  $("#container").data("ejMap").model.layers[layerIndex].bingMapType  = 'aerial';</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].bingMapType  = 'aerial';{% endhighlight %}
+
 
 
 
@@ -1234,19 +1275,21 @@ Specifies the bubble settings for map
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set the bubbleSettings of layer during initialization.                       
-        $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" },bubbleSettings:{ valuePath: "valuePath", minValue: 20, maxValue: 30, color: "#379F64",}, shapeData: mapShapeData }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" },bubbleSettings:{ valuePath: "valuePath", minValue: 20, maxValue: 30, color: "#379F64",}, shapeData: mapShapeData }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the bubbleSettings after initialization:
   //Gets the bubbleSettings from map.
   var bubbleSettings =$("#container").data("ejMap").model.layers[layerIndex].bubbleSettings;
   //Sets the bubbleSettings to map.
-  $("#container").data("ejMap").model.layers[layerIndex].bubbleSettings  = { valuePath: "valuePath", minValue: 20, maxValue: 30, color: "#379F64"};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].bubbleSettings  = { valuePath: "valuePath", minValue: 20, maxValue: 30, color: "#379F64"};{% endhighlight %}
+
 
 
 
@@ -1288,20 +1331,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set bubbleOpacity API value during initialization 
-  $("#container").ejMap({layers: {bubbleSettings: {bubbleOpacity:'0.9'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {bubbleSettings: {bubbleOpacity:'0.9'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the bubbleOpacity API, after initialization:
         //Gets the bubble Opacity value 
   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].bubbleSettings.bubbleOpacity;
   
         //Sets the bubble Opacity value 
-        $("#container").data("ejMap").model.layers[0].bubbleSettings.bubbleOpacity='0.9'; </code>
-</pre>
+        $("#container").data("ejMap").model.layers[0].bubbleSettings.bubbleOpacity='0.9'; {% endhighlight %}
+
 
 
 
@@ -1343,20 +1388,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set color API value during initialization 
-  $("#container").ejMap({layers:{bubbleSettings: {color:'gray'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers:{bubbleSettings: {color:'gray'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the color API, after initialization:
         //Gets the color value 
   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].bubbleSettings.color;
   
         //Sets the color value 
-        $("#container").data("ejMap").model.layers[0].bubbleSettings.color='gray'; </code>
-</pre>
+        $("#container").data("ejMap").model.layers[0].bubbleSettings.color='gray'; {% endhighlight %}
+
 
 
 
@@ -1398,20 +1445,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set colorMappings API value during initialization 
-  $("#container").ejMap({layers:{ bubbleSettings: {colorMappings:{rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}}}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers:{ bubbleSettings: {colorMappings:{rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}}}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the colorMappings API, after initialization:
         //Gets the colorMappings value 
   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].bubbleSettings.colorMappings;
   
         //Sets the colorMappings value 
-        $("#container").data("ejMap").model.layers[0].bubbleSettings.colorMappings={rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}}; </code>
-</pre>
+        $("#container").data("ejMap").model.layers[0].bubbleSettings.colorMappings={rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}}; {% endhighlight %}
+
 
 
 
@@ -1453,20 +1502,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set colorValuePath  API value during initialization 
-  $("#container").ejMap({layers: {bubbleSettings: {colorValuePath :'sales'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {bubbleSettings: {colorValuePath :'sales'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the colorValuePath  API, after initialization:
         //Gets the colorValuePath  value 
   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].bubbleSettings.colorValuePath ;
         
         //Sets the colorValuePath  value 
-        $("#container").data("ejMap").model.layers[0].bubbleSettings.colorValuePath ='sales'; </code>
-</pre>
+        $("#container").data("ejMap").model.layers[0].bubbleSettings.colorValuePath ='sales'; {% endhighlight %}
+
 
 
 
@@ -1508,20 +1559,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set maxValue API value during initialization 
-  $("#container").ejMap({layers: {bubbleSettings: {maxValue:'20'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {bubbleSettings: {maxValue:'20'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the maxValue API, after initialization:
         //Gets the maxValue value 
   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].bubbleSettings.maxValue;
        
         //Sets the maxValue value 
-        $("#container").data("ejMap").model.layers[0].bubbleSettings.maxValue='20'; </code>
-</pre>
+        $("#container").data("ejMap").model.layers[0].bubbleSettings.maxValue='20'; {% endhighlight %}
+
 
 
 
@@ -1563,20 +1616,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set minValue API value during initialization 
-  $("#container").ejMap({layers: {bubbleSettings: {minValue:'10'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {bubbleSettings: {minValue:'10'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the minValue API, after initialization:
         //Gets the minValue value 
   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].bubbleSettings.minValue;
        
         //Sets the minValue value 
-        $("#container").data("ejMap").model.layers[0].bubbleSettings.minValue='10'; </code>
-</pre>
+        $("#container").data("ejMap").model.layers[0].bubbleSettings.minValue='10'; {% endhighlight %}
+
 
 
 
@@ -1618,20 +1673,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set showBubble API value during initialization 
-  $("#container").ejMap({layers: {bubbleSettings: {showBubble:true}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {bubbleSettings: {showBubble:true}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the showBubble API, after initialization:
         //Gets the showBubble value 
   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].bubbleSettings.showBubble;
      
         //Sets the showBubble value 
-        $("#container").data("ejMap").model.layers[0].bubbleSettings.showBubble=true; </code>
-</pre>
+        $("#container").data("ejMap").model.layers[0].bubbleSettings.showBubble=true; {% endhighlight %}
+
 
 
 
@@ -1673,20 +1730,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set showTooltip API value during initialization 
-  $("#container").ejMap({layers: {bubbleSettings: {showTooltip:false}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {bubbleSettings: {showTooltip:false}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the showTooltip API, after initialization:
         //Gets the showTooltip value 
   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].bubbleSettings.showTooltip;
     
         //Sets the showTooltip value 
-        $("#container").data("ejMap").model.layers[0].bubbleSettings.showTooltip=false; </code>
-</pre>
+        $("#container").data("ejMap").model.layers[0].bubbleSettings.showTooltip=false; {% endhighlight %}
+
 
 
 
@@ -1728,20 +1787,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set tooltipTemplate API value during initialization 
-  $("#container").ejMap({layers: {bubbleSettings: {tooltipTemplate:'template'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {bubbleSettings: {tooltipTemplate:'template'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the tooltipTemplate API, after initialization:
         //Gets the tooltipTemplate value 
   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].bubbleSettings.tooltipTemplate;
         
         //Sets the tooltipTemplate value 
-        $("#container").data("ejMap").model.layers[0].bubbleSettings.tooltipTemplate='template'; </code>
-</pre>
+        $("#container").data("ejMap").model.layers[0].bubbleSettings.tooltipTemplate='template'; {% endhighlight %}
+
 
 
 
@@ -1783,20 +1844,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set valuePath API value during initialization 
-  $("#container").ejMap({layers: {bubbleSettings: {valuePath:'name'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {bubbleSettings: {valuePath:'name'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the valuePath API, after initialization:
         //Gets the valuePath value 
   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].bubbleSettings.valuePath;
       
         //Sets the valuePath value 
-        $("#container").data("ejMap").model.layers[0].bubbleSettings.valuePath='name'; </code>
-</pre>
+        $("#container").data("ejMap").model.layers[0].bubbleSettings.valuePath='name'; {% endhighlight %}
+
 
 
 
@@ -1822,18 +1885,20 @@ Specifies the datasource for the shape layer
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// Set the dataSource of layer during initialization.                        
-        $("#container").ejMap({layers: [{ layerType: "geometry", dataSource: source,  shapeData: mapShapeData }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+// Set the dataSource of layer during initialization.                        
+        $("#container").ejMap({layers: [{ layerType: "geometry", dataSource: source,  shapeData: mapShapeData }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the dataSource after initialization:
   //Gets the dataSource from map layer.
   var dataSource =$("#container").data("ejMap").model.layers[layerIndex].dataSource;
   //Sets the dataSource to map layer.
-  $("#container").data("ejMap").model.layers[layerIndex].dataSource  = source;</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].dataSource  = source;{% endhighlight %}
+
 
 
 
@@ -1875,19 +1940,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the enableAnimation during initialization.                       
-        $("#container").ejMap({layers: [{ enableAnimation:false }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ enableAnimation:false }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enableAnimation after initialization:
   //Gets the enableAnimation from map.
   var property =$("#container").data("ejMap").model.layers[layerIndex].enableAnimation;
   //Sets the enableAnimation to map.
-  $("#container").data("ejMap").model.layers[layerIndex].enableAnimation  = false;</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].enableAnimation  = false;{% endhighlight %}
+
 
 
 
@@ -1929,19 +1996,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the enableMouseHover during initialization.                      
-        $("#container").ejMap({layers: [{ enableMouseHover:false }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ enableMouseHover:false }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enableMouseHover after initialization:
   //Gets the enableMouseHover from map.
   var property =$("#container").data("ejMap").model.layers[layerIndex].enableMouseHover;
   //Sets the enableMouseHover to map.
-  $("#container").data("ejMap").model.layers[layerIndex].enableMouseHover  = false;</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].enableMouseHover  = false;{% endhighlight %}
+
 
 
 
@@ -1983,19 +2052,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the enableSelection during initialization.                       
-        $("#container").ejMap({layers: [{ enableSelection:true }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ enableSelection:true }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enableSelection after initialization:
   //Gets the enableSelection from map.
   var property =$("#container").data("ejMap").model.layers[layerIndex].enableSelection;
   //Sets the enableSelection to map.
-  $("#container").data("ejMap").model.layers[layerIndex].enableSelection  = true;</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].enableSelection  = true;{% endhighlight %}
+
 
 
 
@@ -2037,19 +2108,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //to get the key of bing map during initialization 
-        $("#container").ejMap({layers: [{  layerType: 'bing', key: "" }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{  layerType: 'bing', key: "" }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the key of bing map after initialization:
         //Gets the key of bing map value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].key;     
         //Sets the bing map key value 
-  $("#container").data("ejMap").model.layers[layerIndex].key = "";</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].key = "";{% endhighlight %}
+
 
 
 
@@ -2113,18 +2186,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// Set the enableSmartLabel value of layer during initialization.                    
-        $("#container").ejMap({layers:[{labelSettings: { enableSmartLabel: false}}]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+// Set the enableSmartLabel value of layer during initialization.                    
+        $("#container").ejMap({layers:[{labelSettings: { enableSmartLabel: false}}]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enableSmartLabel value after initialization:
   //Gets the enableSmartLabel value 
   var labelSettings =$("#container").data("ejMap").model.layers[layerIndex].labelSettings.enableSmartLabel;
   //Sets the enableSmartLabel value
-  $("#container").data("ejMap").model.layers[layerIndex].labelSettings = { enableSmartLabel: false};                    </code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].labelSettings = { enableSmartLabel: false};                    {% endhighlight %}
+
 
 
 
@@ -2166,18 +2241,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// Set the labelLength value of layer during initialization.                         
-        $("#container").ejMap({layers:[{labelSettings: { labelLength: 2}}]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+// Set the labelLength value of layer during initialization.                         
+        $("#container").ejMap({layers:[{labelSettings: { labelLength: 2}}]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the labelLength value after initialization:
   //Gets the labelLength value 
   var labelSettings =$("#container").data("ejMap").model.layers[layerIndex].labelSettings.labelLength;
   //Sets the labelLength value
-  $("#container").data("ejMap").model.layers[layerIndex].labelSettings = { labelLength: 2};                     </code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].labelSettings = { labelLength: 2};                     {% endhighlight %}
+
 
 
 
@@ -2219,18 +2296,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// Set the labelPath value of layer during initialization.                   
-        $("#container").ejMap({layers:[{labelSettings: { labelPath: ""}}]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+// Set the labelPath value of layer during initialization.                   
+        $("#container").ejMap({layers:[{labelSettings: { labelPath: ""}}]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the labelPath value after initialization:
   //Gets the labelPath value 
   var labelSettings =$("#container").data("ejMap").model.layers[layerIndex].labelSettings.labelPath;
   //Sets the labelPath value
-  $("#container").data("ejMap").model.layers[layerIndex].labelSettings = { labelPath: ""};                      </code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].labelSettings = { labelPath: ""};                      {% endhighlight %}
+
 
 
 
@@ -2272,18 +2351,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// Set the showLabel value of layer during initialization.                   
-        $("#container").ejMap({layers:[{labelSettings: { showLabels: false}}]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+// Set the showLabel value of layer during initialization.                   
+        $("#container").ejMap({layers:[{labelSettings: { showLabels: false}}]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the showLabel value after initialization:
   //Gets the showLabel value 
   var labelSettings =$("#container").data("ejMap").model.layers[layerIndex].labelSettings.showLabels;
   //Sets the showLabel value
-  $("#container").data("ejMap").model.layers[layerIndex].labelSettings = { showLabels: false};                  </code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].labelSettings = { showLabels: false};                  {% endhighlight %}
+
 
 
 
@@ -2325,18 +2406,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// Set the smartLabelSize value of layer during initialization.                      
-        $("#container").ejMap({layers:[{labelSettings: { smartLabelSize: 'fixed'}}]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+// Set the smartLabelSize value of layer during initialization.                      
+        $("#container").ejMap({layers:[{labelSettings: { smartLabelSize: 'fixed'}}]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the smartLabelSize value after initialization:
   //Gets the smartLabelSize value 
   var labelSettings =$("#container").data("ejMap").model.layers[layerIndex].labelSettings.smartLabelSize;
   //Sets the smartLabelSize value
-  $("#container").data("ejMap").model.layers[layerIndex].labelSettings = { smartLabelSize: 'fixed'};                    </code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].labelSettings = { smartLabelSize: 'fixed'};                    {% endhighlight %}
+
 
 
 
@@ -2378,19 +2461,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the layerType during initialization.                     
-        $("#container").ejMap({layers: [{ layerType:'geometry' }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ layerType:'geometry' }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the layerType after initialization:
   //Gets the layerType from map.
   var property =$("#container").data("ejMap").model.layers[layerIndex].layerType;
   //Sets the layerType to map.
-  $("#container").data("ejMap").model.layers[layerIndex].layerType  = 'geometry';</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].layerType  = 'geometry';{% endhighlight %}
+
 
 
 
@@ -2454,19 +2539,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set dockOnMap API value during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {dockOnMap:false} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {dockOnMap:false} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the dockOnMap API, after initialization:
         //Gets the dockOnMap value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.dockOnMap;        
         //Sets the dockOnMap value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {dockOnMap:false};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {dockOnMap:false};{% endhighlight %}
+
 
 
 
@@ -2508,19 +2595,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set dockPosition value during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {dockPosition:"top"} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {dockPosition:"top"} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set dockPosition value after initialization:
         //Gets the dockPosition value
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.dockPosition;     
         //Sets the dockPosition value value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {dockPosition:"top"};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {dockPosition:"top"};{% endhighlight %}
+
 
 
 
@@ -2562,19 +2651,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set height value for legend during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {height:20} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {height:20} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the height value for legend, after initialization:
         //Gets the height value for legend value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.height;   
         //Sets the height value for legend value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {height:20};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {height:20};{% endhighlight %}
+
 
 
 
@@ -2616,19 +2707,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set icon value during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {icon:"rectangle"} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {icon:"rectangle"} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set icon value after initialization:
         //Gets the icon value value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.icon;     
         //Sets the icon value value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {icon:"rectangle"};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {icon:"rectangle"};{% endhighlight %}
+
 
 
 
@@ -2670,19 +2763,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set iconHeight value for legend during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {iconHeight:20} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {iconHeight:20} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the iconHeight value for legend, after initialization:
         //Gets the iconHeight value for legend value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.iconHeight;       
         //Sets the iconHeight value for legend value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {iconHeight:20};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {iconHeight:20};{% endhighlight %}
+
 
 
 
@@ -2724,19 +2819,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set iconWidth value for legend during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {iconWidth:20} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {iconWidth:20} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the iconWidth value for legend, after initialization:
         //Gets the iconWidth value for legend value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.iconWidth;        
         //Sets the iconWidth value for legend value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {iconWidth:20};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {iconWidth:20};{% endhighlight %}
+
 
 
 
@@ -2778,19 +2875,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set label orientaion API value for legend setting during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {labelOrientation: "vertical"} }]})                      </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {labelOrientation: "vertical"} }]})                      {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the label orientation API, after initialization:
         //Gets the label orientation value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.labelOrientation; 
         //Sets the label orientation value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {labelOrientation: "vertical"};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {labelOrientation: "vertical"};{% endhighlight %}
+
 
 
 
@@ -2832,19 +2931,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set leftLabel value during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {leftLabel:""} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {leftLabel:""} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set leftLabel value after initialization:
         //Gets the leftLabel value value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.leftLabel;        
         //Sets the leftLabel value value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {leftLabel:""};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {leftLabel:""};{% endhighlight %}
+
 
 
 
@@ -2886,19 +2987,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set legend mode during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {mode:"default"} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {mode:"default"} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the legend mode after initialization:
         //Gets the legend mode value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.mode;     
         //Sets the legend mode value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {mode:"default"};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {mode:"default"};{% endhighlight %}
+
 
 
 
@@ -2940,19 +3043,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set legend position API value for legend setting during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {position: "topleft"} }]})                      </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {position: "topleft"} }]})                      {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the legend position API, after initialization:
         //Gets the legend position value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.position; 
         //Sets the legend position value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {position: "topleft"};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {position: "topleft"};{% endhighlight %}
+
 
 
 
@@ -2994,19 +3099,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set x position value during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {positionX: 0} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {positionX: 0} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the x position, after initialization:
         //Gets the x position value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.positionX;        
         //Sets the x position value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {positionX: 0};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {positionX: 0};{% endhighlight %}
+
 
 
 
@@ -3048,19 +3155,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set y position value during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {positionY: 0} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {positionY: 0} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the y position, after initialization:
         //Gets the y position value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.positionY;        
         //Sets the y position value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {positionY: 0};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {positionY: 0};{% endhighlight %}
+
 
 
 
@@ -3102,19 +3211,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set rightLabel value during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {rightLabel:""} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {rightLabel:""} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set rightLabel value after initialization:
         //Gets the rightLabel value value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.rightLabel;       
         //Sets the rightLabel value value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {rightLabel:""};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {rightLabel:""};{% endhighlight %}
+
 
 
 
@@ -3156,19 +3267,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set showLabels API value during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {showLabels:false} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {showLabels:false} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the showLabels API, after initialization:
         //Gets the showLabels value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.showLabels;       
         //Sets the showLabels value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {showLabels:false};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {showLabels:false};{% endhighlight %}
+
 
 
 
@@ -3210,19 +3323,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set showLegend API value during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {showLegend:false} }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {showLegend:false} }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the showLegend API, after initialization:
         //Gets the showLegend value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.showLegend;       
         //Sets the showLegend value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {showLegend:false};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {showLegend:false};{% endhighlight %}
+
 
 
 
@@ -3264,19 +3379,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set legend title during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {title: ""} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {title: ""} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the legend title after initialization:
         //Gets the legend title value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.title;    
         //Sets the legend title value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {title: ""};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {title: ""};{% endhighlight %}
+
 
 
 
@@ -3318,19 +3435,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set legend type value during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {type:"layers"} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {type:"layers"} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the legend type value after initialization:
         //Gets the legend type value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.type;     
         //Sets the legend type value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {type:"layers"};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {type:"layers"};{% endhighlight %}
+
 
 
 
@@ -3372,19 +3491,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set width value for legend during initialization 
-        $("#container").ejMap({layers: [{legendSettings: {width:20} }]})           </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{legendSettings: {width:20} }]})           {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the width value for legend, after initialization:
         //Gets the width value for legend value 
         var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.width;    
         //Sets the width value for legend value 
-  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {width:20};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {width:20};{% endhighlight %}
+
 
 
 
@@ -3410,18 +3531,20 @@ Specifies the map items template for shapes.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// Set the mapItemsTemplate of layer during initialization.                  
-        $("#container").ejMap({layers: [{ layerType: "geometry", mapItemsTemplate: "Template",  shapeData: mapShapeData }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+// Set the mapItemsTemplate of layer during initialization.                  
+        $("#container").ejMap({layers: [{ layerType: "geometry", mapItemsTemplate: "Template",  shapeData: mapShapeData }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the mapItemsTemplate after initialization:
   //Gets the mapItemsTemplate from map.
   var mapItemsTemplate =$("#container").data("ejMap").model.layers[layerIndex].mapItemsTemplate;
   //Sets the mapItemsTemplate to map.
-  $("#container").data("ejMap").model.layers[layerIndex].mapItemsTemplate  = "Template";</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].mapItemsTemplate  = "Template";{% endhighlight %}
+
 
 
 
@@ -3463,19 +3586,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the markers during initialization.                       
-        $("#container").ejMap({layers: [{markers:[{label : "chennai",latitude : 13.08 ,longitude : 80.27}]}]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{markers:[{label : "chennai",latitude : 13.08 ,longitude : 80.27}]}]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the markers after initialization:
   //Gets the markers from map.
   var marker =$("#container").data("ejMap").model.layers[layerIndex].markers[markerIndex];
   //Sets the marker to map.
-  $("#container").data("ejMap").model.layers[layerIndex].markers[markerIndex]  = {label : "chennai",latitude : 13.08 ,longitude : 80.27};</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].markers[markerIndex]  = {label : "chennai",latitude : 13.08 ,longitude : 80.27};{% endhighlight %}
+
 
 
 
@@ -3517,18 +3642,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// Set the markerTemplate of layer during initialization.                    
-        $("#container").ejMap({layers: [{ layerType: "geometry", markerTemplate: "Template",  shapeData: mapShapeData }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+// Set the markerTemplate of layer during initialization.                    
+        $("#container").ejMap({layers: [{ layerType: "geometry", markerTemplate: "Template",  shapeData: mapShapeData }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the markerTemplate after initialization:
   //Gets the markerTemplate from map.
   var markerTemplate =$("#container").data("ejMap").model.layers[layerIndex].markerTemplate;
   //Sets the markerTemplate to map.
-  $("#container").data("ejMap").model.layers[layerIndex].markerTemplate  = "Template";</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].markerTemplate  = "Template";{% endhighlight %}
+
 
 
 
@@ -3570,11 +3697,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Gets the selectedMapShapes from map 
-        var selectedShapes =$("#container").data("ejMap").model.layers[layerIndex].selectedMapShapes;         </code>
-</pre>
+        var selectedShapes =$("#container").data("ejMap").model.layers[layerIndex].selectedMapShapes;         {% endhighlight %}
+
 
 
 
@@ -3616,19 +3744,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the selection mode during initialization.                        
-        $("#container").ejMap({layers: [{ selectionMode:'default' }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ selectionMode:'default' }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the selection mode after initialization:
   //Gets the selection mode from map.
   var property =$("#container").data("ejMap").model.layers[layerIndex].selectionMode;
   //Sets the selection mode to map.
-  $("#container").data("ejMap").model.layers[layerIndex].selectionMode  = 'default';</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].selectionMode  = 'default';{% endhighlight %}
+
 
 
 
@@ -3654,18 +3784,20 @@ Specifies the shape data for the shape layer
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// Set the shapeData of layer during initialization.                         
-        $("#container").ejMap({layers: [{ layerType: "geometry", shapeData: mapShapeData }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+// Set the shapeData of layer during initialization.                         
+        $("#container").ejMap({layers: [{ layerType: "geometry", shapeData: mapShapeData }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the data after initialization:
   //Gets the data from map layer.
   var data =$("#container").data("ejMap").model.layers[layerIndex].shapeData;
   //Sets the data to map layer.
-  $("#container").data("ejMap").model.layers[layerIndex].shapeData  = mapShapeData;</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].shapeData  = mapShapeData;{% endhighlight %}
+
 
 
 
@@ -3691,18 +3823,20 @@ Specifies the shape settings of map layer
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// Set the shapeSettings of layer during initialization.                     
-        $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+// Set the shapeSettings of layer during initialization.                     
+        $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the shapeSettings after initialization:
   //Gets the shapeSettings from map.
   var shapeSettings =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings;
   //Sets the shapeSettings to map.
-  $("#container").data("ejMap").model.layers[layerIndex]  = { layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa };</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex]  = { layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa };{% endhighlight %}
+
 
 
 
@@ -3744,20 +3878,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set autoFill API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {autoFill:false}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {autoFill:false}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the autoFill API, after initialization:
         //Gets the autoFill value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.autoFill;
          
         //Sets the autoFill value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.autoFill=false; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.autoFill=false; {% endhighlight %}
+
 
 
 
@@ -3799,20 +3935,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set colorMappings API value during initialization 
-  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}}}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}}}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the colorMappings API, after initialization:
         //Gets the colorMappings value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.colorMappings;
     
         //Sets the colorMappings value 
-        $("#container").data("ejMap").model.layers[0].shapeSettings.colorMappings={rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}}; </code>
-</pre>
+        $("#container").data("ejMap").model.layers[0].shapeSettings.colorMappings={rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}}; {% endhighlight %}
+
 
 
 
@@ -3854,20 +3992,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set colorPalette API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {colorPalette:'palette1'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {colorPalette:'palette1'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the colorPalette API, after initialization:
         //Gets the colorPalette value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.colorPalette;
      
         //Sets the colorPalette value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.colorPalette='palette1'; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.colorPalette='palette1'; {% endhighlight %}
+
 
 
 
@@ -3909,20 +4049,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set colorValuePath  API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {colorValuePath :'sales'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {colorValuePath :'sales'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the colorValuePath  API, after initialization:
         //Gets the colorValuePath  value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.colorValuePath ;
   
         //Sets the colorValuePath  value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.colorValuePath ='sales'; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.colorValuePath ='sales'; {% endhighlight %}
+
 
 
 
@@ -3964,20 +4106,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set enableGradient API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {enableGradient:false}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {enableGradient:false}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the enableGradient API, after initialization:
         //Gets the enableGradient value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.enableGradient;
    
         //Sets the enableGradient value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.enableGradient=false; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.enableGradient=false; {% endhighlight %}
+
 
 
 
@@ -4019,20 +4163,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set fill API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {fill:'#E5E5E5'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {fill:'#E5E5E5'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the fill API, after initialization:
         //Gets the fill value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.fill;
      
         //Sets the fill value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.fill='#E5E5E5'; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.fill='#E5E5E5'; {% endhighlight %}
+
 
 
 
@@ -4074,20 +4220,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set highlightBorderWidth API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {highlightBorderWidth:1}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {highlightBorderWidth:1}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the highlightBorderWidth API, after initialization:
         //Gets the highlightBorderWidth value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.highlightBorderWidth;
      
         //Sets the highlightBorderWidth value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.highlightBorderWidth=1; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.highlightBorderWidth=1; {% endhighlight %}
+
 
 
 
@@ -4129,20 +4277,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set highlightColor API value during initialization 
-  $("#container").ejMap({layers:{shapeSettings: {highlightColor:'gray'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers:{shapeSettings: {highlightColor:'gray'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the highlightColor API, after initialization:
         //Gets the highlightColor value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.highlightColor;
    
         //Sets the highlightColor value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.highlightColor='gray'; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.highlightColor='gray'; {% endhighlight %}
+
 
 
 
@@ -4184,20 +4334,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set highlightStroke API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {highlightStroke:'#C1C1C1'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {highlightStroke:'#C1C1C1'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the highlightStroke API, after initialization:
         //Gets the highlightStroke value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.highlightStroke;
   
         //Sets the highlightStroke value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.highlightStroke='#C1C1C1'; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.highlightStroke='#C1C1C1'; {% endhighlight %}
+
 
 
 
@@ -4239,20 +4391,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set selectionColor API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {selectionColor:'gray'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {selectionColor:'gray'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the selectionColor API, after initialization:
         //Gets the selectionColor value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.selectionColor;
    
         //Sets the selectionColor value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.selectionColor='gray'; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.selectionColor='gray'; {% endhighlight %}
+
 
 
 
@@ -4294,20 +4448,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set selectionStroke API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {selectionStroke:'#C1C1C1'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {selectionStroke:'#C1C1C1'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the selectionStroke API, after initialization:
         //Gets the selectionStroke value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.selectionStroke;
   
         //Sets the selectionStroke value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.selectionStroke='#C1C1C1'; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.selectionStroke='#C1C1C1'; {% endhighlight %}
+
 
 
 
@@ -4349,20 +4505,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set selectionStrokeWidth API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {selectionStrokeWidth:1}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {selectionStrokeWidth:1}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the selectionStrokeWidth API, after initialization:
         //Gets the selectionStrokeWidth value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.selectionStrokeWidth;
      
         //Sets the selectionStrokeWidth value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.selectionStrokeWidth=1; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.selectionStrokeWidth=1; {% endhighlight %}
+
 
 
 
@@ -4404,20 +4562,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set stroke API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {stroke:'#C1C1C1'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {stroke:'#C1C1C1'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the stroke API, after initialization:
         //Gets the stroke value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.stroke;
    
         //Sets the stroke value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.stroke='#C1C1C1'; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.stroke='#C1C1C1'; {% endhighlight %}
+
 
 
 
@@ -4459,20 +4619,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set strokeThickness API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {strokeThickness:'0.2'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {strokeThickness:'0.2'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the strokeThickness API, after initialization:
         //Gets the strokeThickness value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.strokeThickness;
   
         //Sets the strokeThickness value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.strokeThickness='0.2'; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.strokeThickness='0.2'; {% endhighlight %}
+
 
 
 
@@ -4514,20 +4676,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set valuePath API value during initialization 
-  $("#container").ejMap({layers: {shapeSettings: {valuePath:'name'}}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+  $("#container").ejMap({layers: {shapeSettings: {valuePath:'name'}}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the valuePath API, after initialization:
         //Gets the valuePath value 
   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.valuePath;
         
         //Sets the valuePath value 
-         $("#container").data("ejMap").model.layers[0].shapeSettings.valuePath='name'; </code>
-</pre>
+         $("#container").data("ejMap").model.layers[0].shapeSettings.valuePath='name'; {% endhighlight %}
+
 
 
 
@@ -4569,19 +4733,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the showMapItems during initialization.                  
-        $("#container").ejMap({layers: [{ showMapItems:false }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ showMapItems:false }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the showMapItems after initialization:
   //Gets the showMapItems from map.
   var property =$("#container").data("ejMap").model.layers[layerIndex].showMapItems;
   //Sets the showMapItems to map.
-  $("#container").data("ejMap").model.layers[layerIndex].showMapItems  = false;</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].showMapItems  = false;{% endhighlight %}
+
 
 
 
@@ -4623,19 +4789,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the showTooltip during initialization.                   
-        $("#container").ejMap({layers: [{ showTooltip:false }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ showTooltip:false }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the showTooltip after initialization:
   //Gets the showTooltip from map.
   var property =$("#container").data("ejMap").model.layers[layerIndex].showTooltip;
   //Sets the showTooltip to map.
-  $("#container").data("ejMap").model.layers[layerIndex].showTooltip  = false;</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].showTooltip  = false;{% endhighlight %}
+
 
 
 
@@ -4677,19 +4845,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the subLayers during initialization.                     
-        $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" },subLayers: [{shapeDataPath: "pathName", shapePropertyPath: "tableFieldName", mapItemsTemplate: 'Template', showMapItems: true, enableMouseHover: true, dataSource: mapDataSource, shapeSettings: { fill: "#9FD0D3", strokeThickness: "0.2", stroke: "white", highlightColor: "#63B7B7", },  shapeData: mapShapeData }, shapeData: mapShapeData }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" },subLayers: [{shapeDataPath: "pathName", shapePropertyPath: "tableFieldName", mapItemsTemplate: 'Template', showMapItems: true, enableMouseHover: true, dataSource: mapDataSource, shapeSettings: { fill: "#9FD0D3", strokeThickness: "0.2", stroke: "white", highlightColor: "#63B7B7", },  shapeData: mapShapeData }, shapeData: mapShapeData }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the layer after initialization:
   //Gets the layer from map.
   var layer =$("#container").data("ejMap").model.layers[layerIndex];
   //Sets the layer to map.
-  $("#container").data("ejMap").model.layers[layerIndex]  = { layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" },subLayers: [{shapeDataPath: "pathName", shapePropertyPath: "tableFieldName", mapItemsTemplate: 'Template', showMapItems: true, enableMouseHover: true, dataSource: mapDataSource, shapeSettings: { fill: "#9FD0D3", strokeThickness: "0.2", stroke: "white", highlightColor: "#63B7B7", },  shapeData: mapSubShapeData }, shapeData: mapShapeData };</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex]  = { layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" },subLayers: [{shapeDataPath: "pathName", shapePropertyPath: "tableFieldName", mapItemsTemplate: 'Template', showMapItems: true, enableMouseHover: true, dataSource: mapDataSource, shapeSettings: { fill: "#9FD0D3", strokeThickness: "0.2", stroke: "white", highlightColor: "#63B7B7", },  shapeData: mapSubShapeData }, shapeData: mapShapeData };{% endhighlight %}
+
 
 
 
@@ -4715,18 +4885,20 @@ Specifies the tooltip template for shapes.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// Set the tooltipTemplate of layer during initialization.                   
-        $("#container").ejMap({layers: [{ layerType: "geometry", tooltipTemplate: "Template",  shapeData: mapShapeData }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+// Set the tooltipTemplate of layer during initialization.                   
+        $("#container").ejMap({layers: [{ layerType: "geometry", tooltipTemplate: "Template",  shapeData: mapShapeData }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the tooltipTemplate after initialization:
   //Gets the tooltipTemplate from map.
   var tooltipTemplate =$("#container").data("ejMap").model.layers[layerIndex].tooltipTemplate;
   //Sets the tooltipTemplate to map.
-  $("#container").data("ejMap").model.layers[layerIndex].tooltipTemplate  ="Template";</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].tooltipTemplate  ="Template";{% endhighlight %}
+
 
 
 
@@ -4768,19 +4940,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 // Set the urlTemplate during initialization.                   
-        $("#container").ejMap({layers: [{ urlTemplate:'http://a.tile.openstreetmap.org/level/tileX/tileY.png' }]})</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+        $("#container").ejMap({layers: [{ urlTemplate:'http://a.tile.openstreetmap.org/level/tileX/tileY.png' }]}){% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the urlTemplate after initialization:
   //Gets the urlTemplate from map.
   var property =$("#container").data("ejMap").model.layers[layerIndex].urlTemplate;
   //Sets the urlTemplate to map.
-  $("#container").data("ejMap").model.layers[layerIndex].urlTemplate  = 'http://a.tile.openstreetmap.org/level/tileX/tileY.png';</code>
-</pre>
+  $("#container").data("ejMap").model.layers[layerIndex].urlTemplate  = 'http://a.tile.openstreetmap.org/level/tileX/tileY.png';{% endhighlight %}
+
 
 
 
@@ -4838,17 +5012,20 @@ Method for navigating to specific shape based on latitude, longitude and zoomlev
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>latitude</code></td>
+<td class="name">{% highlight html %}
+latitude{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the latitude value for map</td>
 </tr>
 <tr>
-<td class="name"><code>longitude</code></td>
+<td class="name">{% highlight html %}
+longitude{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the longitude value for map</td>
 </tr>
 <tr>
-<td class="name"><code>level</code></td>
+<td class="name">{% highlight html %}
+level{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the zoom level for map</td>
 </tr>
@@ -4861,11 +5038,12 @@ Method for navigating to specific shape based on latitude, longitude and zoomlev
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //navigateTo method for map
-$("#container").ejMap("navigateTo", lat, lon, level);</code>
-</pre>
+$("#container").ejMap("navigateTo", lat, lon, level);{% endhighlight %}
+
 
 
 
@@ -4894,7 +5072,8 @@ Method to perform map panning
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>direction</code></td>
+<td class="name">{% highlight html %}
+direction{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the direction in which map should be panned</td>
 </tr>
@@ -4907,11 +5086,12 @@ Method to perform map panning
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //pan method for map
-$("#container").ejMap("pan", direction);</code>
-</pre>
+$("#container").ejMap("pan", direction);{% endhighlight %}
+
 
 
 
@@ -4937,11 +5117,12 @@ Method to reload the map.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //refresh method for map
-$("#container").ejMap("refresh");</code>
-</pre>
+$("#container").ejMap("refresh");{% endhighlight %}
+
 
 
 
@@ -4967,11 +5148,12 @@ Method to reload the shapeLayers with updated values
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //refresh layers method for map
-$("#container").ejMap("refreshLayers");</code>
-</pre>
+$("#container").ejMap("refreshLayers");{% endhighlight %}
+
 
 
 
@@ -5000,7 +5182,8 @@ Method to reload the navigation control with updated values.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>navigation</code></td>
+<td class="name">{% highlight html %}
+navigation{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass the navigation control instance</td>
 </tr>
@@ -5013,11 +5196,12 @@ Method to reload the navigation control with updated values.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Refresh navigation control method for map
-$("#container").ejMap("refreshNavigationControl",navigation);</code>
-</pre>
+$("#container").ejMap("refreshNavigationControl",navigation);{% endhighlight %}
+
 
 
 
@@ -5046,12 +5230,14 @@ Method to perform map zooming.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>level</code></td>
+<td class="name">{% highlight html %}
+level{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the zoom level for map to be zoomed</td>
 </tr>
 <tr>
-<td class="name"><code>isAnimate</code></td>
+<td class="name">{% highlight html %}
+isAnimate{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Pass the boolean value to enable or disable animation while zooming</td>
 </tr>
@@ -5064,11 +5250,12 @@ Method to perform map zooming.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //zoom method for map
-$("#container").ejMap("zoom",level,isAnimate);</code>
-</pre>
+$("#container").ejMap("zoom",level,isAnimate);{% endhighlight %}
+
 
 
 
@@ -5104,7 +5291,8 @@ Triggered on selecting the map markers.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>originalEvent.data</code></td>
+<td class="name">{% highlight html %}
+originalEvent.data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns marker object.</td>
 </tr>
@@ -5117,13 +5305,14 @@ Triggered on selecting the map markers.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //markerSelected event for map
 $("#container").ejMap({
    markerSelected: function (event) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -5152,7 +5341,8 @@ Triggers while leaving the hovered map shape
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>originalEvent.data</code></td>
+<td class="name">{% highlight html %}
+originalEvent.data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns hovered map shape object.</td>
 </tr>
@@ -5165,13 +5355,14 @@ Triggers while leaving the hovered map shape
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //mouseleave  event for map
 $("#container").ejMap({
    mouseleave : function (event) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -5200,7 +5391,8 @@ Triggers while hovering the map shape.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>originalEvent.data</code></td>
+<td class="name">{% highlight html %}
+originalEvent.data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns hovered map shape object.</td>
 </tr>
@@ -5213,13 +5405,14 @@ Triggers while hovering the map shape.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //mouseover  event for map
 $("#container").ejMap({
    mouseover : function (event) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -5248,7 +5441,8 @@ Triggers once map render completed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>originalEvent</code></td>
+<td class="name">{% highlight html %}
+originalEvent{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from map</td>
 </tr>
@@ -5261,13 +5455,14 @@ Triggers once map render completed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //onRenderComplete event for map
 $("#container").ejMap({
    onRenderComplete: function () {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -5296,7 +5491,8 @@ Triggers when map panning ends.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>originalEvent</code></td>
+<td class="name">{% highlight html %}
+originalEvent{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from map</td>
 </tr>
@@ -5309,13 +5505,14 @@ Triggers when map panning ends.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //panned event for map
 $("#container").ejMap({
    panned: function (event) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -5344,7 +5541,8 @@ Triggered on selecting the map shapes.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>originalEvent.data</code></td>
+<td class="name">{% highlight html %}
+originalEvent.data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns selected shape object.</td>
 </tr>
@@ -5357,13 +5555,14 @@ Triggered on selecting the map shapes.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //shapeSelected event for map
 $("#container").ejMap({
    shapeSelected: function (event) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -5392,12 +5591,14 @@ Triggered when map is zoomed-in.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>originalEvent</code></td>
+<td class="name">{% highlight html %}
+originalEvent{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from map</td>
 </tr>
 <tr>
-<td class="name"><code>zoomLevel</code></td>
+<td class="name">{% highlight html %}
+zoomLevel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns zoom level value for which the map is zoomed.</td>
 </tr>
@@ -5410,13 +5611,14 @@ Triggered when map is zoomed-in.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //zoomedIn event for map
 $("#container").ejMap({
    zoomedIn: function (event) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -5445,12 +5647,14 @@ Triggers when map is zoomed out.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>originalEvent</code></td>
+<td class="name">{% highlight html %}
+originalEvent{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from map</td>
 </tr>
 <tr>
-<td class="name"><code>zoomLevel</code></td>
+<td class="name">{% highlight html %}
+zoomLevel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns zoom level value for which the map is zoomed.</td>
 </tr>
@@ -5463,13 +5667,14 @@ Triggers when map is zoomed out.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //zoomedOut event for map
 $("#container").ejMap({
    zoomedOut: function () {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 

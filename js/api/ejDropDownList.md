@@ -23,45 +23,47 @@ $(element).ejDropDownList<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
-&lt;script&gt;
+<input type="text" id="drpdwn" /> 
+ 
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList"});    
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code>// Another way to render DropDownList control.
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;ComputerIT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+// Another way to render DropDownList control.
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">ComputerIT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList();  
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -111,15 +113,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="drpdwn" /> 
+ 
+<script>
 // Initialize the DropDownList with the grouping value specified.
 $("#drpdwn").ejDropDownList({ dataSource: window.countriesField, fields: { text: "name", value: "key" }, allowGrouping: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -145,24 +148,25 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
-&lt;script&gt;
+<input type="text" id="drpdwn" /> 
+ 
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+<script>
 // Initialize the allowMultiSelection with the value specified.
 $("#drpdwn").ejDropDownList({targetID: "carsList",showCheckbox: true,allowMultiSelection: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -188,18 +192,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div style="float: left;"&gt;
-      &lt;span class="txt"&gt;Select Group&lt;/span&gt;
-      &lt;input id="groupsList" type="text" /&gt;
-&lt;/div&gt;
 
-&lt;div style="float: right;"&gt;
-       &lt;span class="txt"&gt;Select Country&lt;/span&gt;
-       &lt;input id="countryList" type="text"/&gt;
-&lt;/div&gt;
-&lt;script&gt;
+{% highlight html %}
+ 
+<div style="float: left;">
+      <span class="txt">Select Group</span>
+      <input id="groupsList" type="text" />
+</div>
+
+<div style="float: right;">
+       <span class="txt">Select Country</span>
+       <input id="countryList" type="text"/>
+</div>
+<script>
  var groups = [
          { parentId: 'a', text: "Group A" },
          { parentId: 'b', text: "Group B" },
@@ -233,8 +238,8 @@ Example
                dataSource: countries,
                enabled:false
            });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -260,25 +265,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // Initialize the DropDownList with the caseSensitiveSearch value specified.
 $("#drpdwn").ejDropDownList({ targetID: "carsList",caseSensitiveSearch: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -304,25 +310,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // Initialize the DropDownList with the checkAll value specified.
 $("#drpdwn").ejDropDownList({ targetID: "carsList",showCheckbox: true, checkAll: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -348,24 +355,25 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
-&lt;script&gt;
+<input type="text" id="drpdwn" /> 
+ 
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+<script>
 //Initialize the DropDownList with the cssClass value specified
         $("#drpdwn").ejDropDownList({ targetID: "carsList",cssClass: 'flat-azure'});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -391,15 +399,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<input type="text" id="drpdwn" /> 
+ 
+<script>          
 //To set dataSource API value during initialization  
         $("#drpdwn").ejDropDownList({ dataSource: window.countries });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -425,15 +434,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<input type="text" id="drpdwn" /> 
+ 
+<script>          
 //To set dataSource API value during initialization  
         $("#drpdwn").ejDropDownList({ delimiterChar:";" });                      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -459,25 +469,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // To set disableItemsByIndex   API value during initialization  .      
         $("#drpdwn").ejDropDownList({  targetID: "carsList",disableItemsByIndex  : "2,4" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -503,24 +514,25 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
-&lt;script&gt;
+<input type="text" id="drpdwn" /> 
+ 
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+<script>
 // Initialize the enableAnimation with the value specified.
 $("#drpdwn").ejDropDownList({targetID: "carsList", enableAnimation: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -546,25 +558,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // Initialize the DropDownList with the enabled  value specified.
 $("#drpdwn").ejDropDownList({ targetID: "carsList",enabled : false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -590,25 +603,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // Initialize the enableIncrementalSearch with the value specified.
 $("#drpdwn").ejDropDownList({targetID: "carsList",enableIncrementalSearch: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -634,25 +648,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // To set enableItemsByIndex   API value during initialization  .       
         $("#drpdwn").ejDropDownList({  targetID: "carsList",enableItemsByIndex  : "2,4" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -678,25 +693,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // Initialize the DropDownList with the enablePersistence  value specified.
 $("#drpdwn").ejDropDownList({ targetID: "carsList",enablePersistence : false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -722,25 +738,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // Initialize the DropDownList with the enableRTL  value specified.
 $("#drpdwn").ejDropDownList({ targetID: "carsList",enableRTL : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -766,15 +783,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<input type="text" id="drpdwn" /> 
+ 
+<script>          
 //To set fields API value during initialization  
         $("#drpdwn").ejDropDownList({ dataSource: window.countriesField,   fields: { text: "name", value: "key" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -930,25 +948,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //Initialize the DropDownList height property with the  value specified
         $("#drpdwn").ejDropDownList({ targetID: "carsList",height: 30 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -974,25 +993,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // To set itemsCount   API value during initialization  .       
         $("#drpdwn").ejDropDownList({  targetID: "carsList",itemsCount  : 2 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1018,25 +1038,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //Initialize the DropDownList popupHeight property with the  value specified
         $("#drpdwn").ejDropDownList({ targetID: "carsList",popupHeight: '152px' });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1062,25 +1083,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //Initialize the DropDownList popupWidth property with the  value specified
         $("#drpdwn").ejDropDownList({ targetID: "carsList",popupWidth: '152px' });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1106,17 +1128,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<input type="text" id="drpdwn" /> 
+ 
+<script>          
 //To set query API value during initialization  
 var dataManger = ej.DataManager({       url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"});
 var queryString = ej.Query().from("Suppliers").select("ContactName");
         $("#drpdwn").ejDropDownList({ dataSource: dataManger, query: queryString, fields: { text: "ContactName" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1142,25 +1165,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // Initialize the DropDownList with the readOnly value specified.
 $("#drpdwn").ejDropDownList({targetID: "carsList",readOnly: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1186,25 +1210,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // To set selectedItemIndex   API value during initialization  .        
         $("#drpdwn").ejDropDownList({  targetID: "carsList",selectedItemIndex  : 2 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1230,25 +1255,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // To set selectedItems   API value during initialization  .    
         $("#drpdwn").ejDropDownList({  targetID: "carsList",showCheckbox: true, selectedItems  : [1,2] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1274,25 +1300,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // Initialize the DropDownList with the showCheckbox value specified.
 $("#drpdwn").ejDropDownList({ targetID: "carsList",showCheckbox: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1318,23 +1345,24 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;                      
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>                      
+   </ul>
+ </div>
+ 
+<script>          
 // Initialize the DropDownList with the showPopupOnLoad value specified.
 $("#drpdwn").ejDropDownList({targetID: "carsList",showPopupOnLoad: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1360,25 +1388,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // Initialize the DropDownList with the showRoundedCorner value specified.
 $("#drpdwn").ejDropDownList({targetID: "carsList",showRoundedCorner: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1404,25 +1433,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // To set targetID API value during initialization  .   
         $("#drpdwn").ejDropDownList({ targetID: "carsList" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1448,17 +1478,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
  
-&lt;input type="text" id="drpdwn" /&gt; 
  
-&lt;script&gt;          
+<input type="text" id="drpdwn" /> 
+ 
+<script>          
 // To set template API value during initialization  .   
-$("#drpdwn").ejDropDownList({ dataSource: window.drpdwnempList, template: '&lt;img class="eimg" src="styles/images/Employee/${eimg}.png" alt="employee" height="50px" width="50px"/&gt;' +
-  '&lt;div class="ename"&gt; ${text} &lt;/div&gt;&lt;div class="desig"&gt; ${desig} &lt;/div&gt;&lt;div class="cont"&gt; ${country} &lt;/div&gt;',width: "200px"});
-&lt;/script&gt;</code>
-</pre>
+$("#drpdwn").ejDropDownList({ dataSource: window.drpdwnempList, template: '<img class="eimg" src="styles/images/Employee/${eimg}.png" alt="employee" height="50px" width="50px"/>' +
+  '<div class="ename"> ${text} </div><div class="desig"> ${desig} </div><div class="cont"> ${country} </div>',width: "200px"});
+</script>{% endhighlight %}
+
 
 
 
@@ -1484,25 +1515,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 //Initialize the DropDownList text property with the  value specified
   $("#drpdwn").ejDropDownList({ targetID: "carsList",text:"Audi A7" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1528,25 +1560,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 // Initialize the DropDownList with the uncheckAll value specified.
 $("#drpdwn").ejDropDownList({ targetID: "carsList",showCheckbox: true, uncheckAll: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1572,11 +1605,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" name="drpdwn" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="drpdwn" name="drpdwn" /> 
+ 
+<script>
 //To set validationMessage API during initialization            
  $("#drpdwn").ejDropDownList({
   dataSource: window.countriesField, fields: { text: "name", value: "key" }, allowGrouping: true,                       
@@ -1587,8 +1621,8 @@ Example
           required: "Required Dropdown value"
         }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1614,11 +1648,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" name="drpdwn" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="drpdwn" name="drpdwn" /> 
+ 
+<script>
 //To set validationRules API during initialization              
  $("#drpdwn").ejDropDownList({
   dataSource: window.countriesField, fields: { text: "name", value: "key" }, allowGrouping: true,                       
@@ -1626,8 +1661,8 @@ Example
           required:true
         }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1653,25 +1688,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 //Initialize the DropDownList value property with the  value specified
         $("#drpdwn").ejDropDownList({ targetID: "carsList",value:"Audi A7" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1697,25 +1733,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //Initialize the DropDownList with the watermarkText value specified
         $("#drpdwn").ejDropDownList({ targetID: "carsList",watermarkText: 'Enter text' });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1741,25 +1778,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //Initialize the DropDownList width property with the width value specified
         $("#drpdwn").ejDropDownList({ targetID: "carsList",width: 250 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Methods
@@ -1780,26 +1818,27 @@ Add the item into the DropDownList.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 $('#drpdwn').ejDropDownList("addItem",{value:"value",image:{src:"Pictures/xhtml.png",alt:"images",width:"200px",height:"500px"},htmlAttributes:"style=color:red"});     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1816,47 +1855,49 @@ This method is used to set all the items to checked.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5",showCheckbox:true});
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.checkAll(); // checkAll values the DropDownList
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5",showCheckbox:true});
 $('#drpdwn').ejDropDownList("checkAll");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1873,47 +1914,49 @@ Clears the text in the DropDownList textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.clearText(); // clear the DropDownList text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 $('#drpdwn').ejDropDownList("clearText");       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1930,47 +1973,49 @@ destroys the DropDownList widget.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.destroy(); // hide the DropDownList text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 $('#drpdwn').ejDropDownList("destroy");         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1987,47 +2032,49 @@ To disable the DropDownList
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.disable(); // disable the DropDownList
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 $('#drpdwn').ejDropDownList("disable");         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2044,47 +2091,49 @@ To disable an Item or set of Items in the DropDownList
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create DropDownList
 $('#carsList').ejDropDownList();        
 var DropDownListObj  = $("#carsList").data("ejDropDownList");
 DropDownListObj.disableItemByIndex("3,5,7");
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create DropDownList
 $('#carsList').ejDropDownList();        
 $('#carsList').ejDropDownList("disableItemsByIndex" ,"3,5,7");  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2101,47 +2150,49 @@ To enable the DropDownList
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.enable(); // enable the DropDownList
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 $('#drpdwn').ejDropDownList("enable");  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2158,47 +2209,49 @@ To enable an Item or set of Items which are in disable in the DropDownList
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create DropDownList
 $('#carsList').ejDropDownList();        
 var DropDownListObj  = $("#carsList").data("ejDropDownList");
 DropDownListObj.enableItemByIndex("3,5,7");
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-   &lt;ul id="carsList"&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-           &lt;li&gt;BMW 501&lt;/li&gt;
-      &lt;li&gt;BMW 502&lt;/li&gt;
-      &lt;li&gt;BMW 503&lt;/li&gt;
-      &lt;li&gt;BMW 507&lt;/li&gt;
-      &lt;li&gt;BMW 3200&lt;/li&gt;
-   &lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+   <ul id="carsList">
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+           <li>BMW 501</li>
+      <li>BMW 502</li>
+      <li>BMW 503</li>
+      <li>BMW 507</li>
+      <li>BMW 3200</li>
+   </ul>
+<script>
 // Create DropDownList
 $('#carsList').ejDropDownList();        
 $('#carsList').ejDropDownList("enableItemsByIndex" ,"3,5,7");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2215,47 +2268,49 @@ This method is used to get the selected items in DropDownList.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A8"});
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.getSelectedItem(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A8"});
 $('#drpdwn').ejDropDownList("getSelectedItem");         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2272,51 +2327,53 @@ This method is used to get the selected items value in DropDownList.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({value:"Computer IT"});
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.getSelectedValue(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt; 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select> 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({value:"Computer IT"});
 $('#drpdwn').ejDropDownList("getSelectedValue");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2333,47 +2390,49 @@ Returns the current value selected in the DropDownList textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.getValue(); // getValue of the DropDownList text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 $('#drpdwn').ejDropDownList("getValue");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2390,47 +2449,49 @@ popup list hide in the DropDownList textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.hidePopup(); // hidePopup of the DropDownList 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 $('#drpdwn').ejDropDownList("hidePopup");       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2447,51 +2508,53 @@ This method is used to select a list item in DropDownList using given text field
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList();
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.setSelectedText("Computer IT"); // setSelectedText for the DropDownList text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList();
 $('#drpdwn').ejDropDownList("setSelectedText","Computer IT");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2508,51 +2571,53 @@ This method is used to select a list item in DropDownList using given value fiel
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList();
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.setSelectedValue("ComputerIT"); // setSelectedValue for the DropDownList text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList();
 $('#drpdwn').ejDropDownList("setSelectedValue","ComputerIT");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2569,47 +2634,49 @@ popup list show in the DropDownList textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.showPopup(); // 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5"});
 $('#drpdwn').ejDropDownList("showPopup");       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2626,47 +2693,49 @@ This method is used to set all the items to uncheck.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5",showCheckbox:true});
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.unCheckAll(); // UncheckAll values the DropDownList
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A5",showCheckbox:true});
 $('#drpdwn').ejDropDownList("unCheckAll");      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2683,53 +2752,55 @@ This method is used to unselect a list item in DropDownList using given index fi
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList();
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.setSelectedValue("Art"); // setSelectedValue for the DropDownList text
 DropDownListObj.unselectItemByIndex(0); // unselectItemByIndex for the DropDownList text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList();
 $('#drpdwn').ejDropDownList("setSelectedValue","Art");  // setSelectedValue for the DropDownList text   
 $('#drpdwn').ejDropDownList("unselectItemByIndex",0); // unselectItemByIndex for the DropDownList text      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2746,53 +2817,55 @@ This method is used to unselect a list item in DropDownList using given text fie
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList();
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.setSelectedValue("ComputerIT"); // setSelectedValue for the DropDownList text
 DropDownListObj.unselectItemByText("Computer IT"); // unselectItemByText for the DropDownList text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
 // Create DropDownList
 $('#drpdwn').ejDropDownList();
 $('#drpdwn').ejDropDownList("setSelectedValue","ComputerIT");  // setSelectedValue for the DropDownList text    
 $('#drpdwn').ejDropDownList("unselectItemByText","Computer IT");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2809,55 +2882,57 @@ This method is used to unselect a list item in DropDownList using given value fi
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
  
 // Create DropDownList
 $('#drpdwn').ejDropDownList();
 var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
 DropDownListObj.setSelectedValue("ComputerIT"); // setSelectedValue for the DropDownList text
 DropDownListObj.unselectItemByValue("ComputerIT"); // unselectItemByValue for the DropDownList text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-  &lt;select name="selectIndex" id="drpdwn"&gt;
-       &lt;option value="Art"&gt;Art&lt;/option&gt;
-       &lt;option value="Architecture"&gt;Architecture&lt;/option&gt;
-       &lt;option value="Biographies"&gt;Biographies&lt;/option&gt;
-       &lt;option value="Business"&gt;Business&lt;/option&gt;
-       &lt;option value="ComputerIT"&gt;Computer IT&lt;/option&gt;
-       &lt;option value="Comics"&gt;Comics&lt;/option&gt;
-       &lt;option value="Cookery"&gt;Cookery&lt;/option&gt;
-       &lt;option value="Environment"&gt;Environment&lt;/option&gt;
-       &lt;option value="Fiction"&gt;Fiction&lt;/option&gt;
-       &lt;option value="Health"&gt;Health&lt;/option&gt;
-       &lt;option value="Humanities"&gt;Humanities&lt;/option&gt;
-       &lt;option value="Language"&gt;Language&lt;/option&gt;
-   &lt;/select&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+  <select name="selectIndex" id="drpdwn">
+       <option value="Art">Art</option>
+       <option value="Architecture">Architecture</option>
+       <option value="Biographies">Biographies</option>
+       <option value="Business">Business</option>
+       <option value="ComputerIT">Computer IT</option>
+       <option value="Comics">Comics</option>
+       <option value="Cookery">Cookery</option>
+       <option value="Environment">Environment</option>
+       <option value="Fiction">Fiction</option>
+       <option value="Health">Health</option>
+       <option value="Humanities">Humanities</option>
+       <option value="Language">Language</option>
+   </select>
+<script>
  
 // Create DropDownList
 $('#drpdwn').ejDropDownList();
 $('#drpdwn').ejDropDownList("setSelectedValue","ComputerIT");  // setSelectedValue for the DropDownList text    
 $('#drpdwn').ejDropDownList("unselectItemByValue","ComputerIT");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -2883,27 +2958,32 @@ Fires beore the popup going to hide.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DropDownList model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.text</code></td>
+<td class="name">{% highlight html %}
+argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the selected text</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the selected value</td>
 </tr>
@@ -2914,28 +2994,29 @@ Fires beore the popup going to hide.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //beforePopupHide event for DropDownList
 $("#drpdwn").ejDropDownList({ 
                 targetID: "carsList",
         beforePopupHide: function(args) {}
 });
-&lt;/script&gt;          </code>
-</pre>
+</script>          {% endhighlight %}
+
 
 
 
@@ -2957,27 +3038,32 @@ Fires beore the popup going to display.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DropDownList model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.text</code></td>
+<td class="name">{% highlight html %}
+argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the selected text</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the selected value</td>
 </tr>
@@ -2988,28 +3074,29 @@ Fires beore the popup going to display.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //beforePopupShown event for DropDownList
 $("#drpdwn").ejDropDownList({ 
                 targetID: "carsList",
         beforePopupShown: function(args) {}
 });
-&lt;/script&gt;          </code>
-</pre>
+</script>          {% endhighlight %}
+
 
 
 
@@ -3031,17 +3118,20 @@ Fires when change successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DropDownList model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3052,28 +3142,29 @@ Fires when change successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //change event for DropDownList
 $("#drpdwn").ejDropDownList({ 
                 targetID: "carsList",
         change: function(args) {}
 }); 
-&lt;/script&gt;            </code>
-</pre>
+</script>            {% endhighlight %}
+
 
 
 
@@ -3095,17 +3186,20 @@ Fires when checkChange successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DropDownList model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3116,28 +3210,29 @@ Fires when checkChange successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //checkChange event for DropDownList
 $("#drpdwn").ejDropDownList({ 
                 targetID: "carsList",
         checkChange: function(args) {}
 }); 
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -3159,17 +3254,20 @@ Fires when create successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DropDownList model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3180,28 +3278,29 @@ Fires when create successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //change event for DropDownList
 $("#drpdwn").ejDropDownList({ 
    targetID: "carsList",
         create: function(args) {}
 });
-&lt;/script&gt;            </code>
-</pre>
+</script>            {% endhighlight %}
+
 
 
 
@@ -3223,17 +3322,20 @@ Fires when destroy successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">its value is set as true,if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DropDownList model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3244,28 +3346,29 @@ Fires when destroy successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //destroy event for DropDownList
 $("#drpdwn").ejDropDownList({ 
                 targetID: "carsList",
         destroy: function(args) {}
 });
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -3287,27 +3390,32 @@ Fires when popupHide successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DropDownList model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.text</code></td>
+<td class="name">{% highlight html %}
+argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the selected text</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the selected value</td>
 </tr>
@@ -3318,22 +3426,23 @@ Fires when popupHide successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+ </div>
+ 
+<script>          
 //popupHide event for DropDownList
 $("#drpdwn").ejDropDownList({ 
                 targetID: "carsList",
         popupHide: function(args) {}
 });
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -3355,27 +3464,32 @@ Fires when popupShown successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DropDownList model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.text</code></td>
+<td class="name">{% highlight html %}
+argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the selected text</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the selected value</td>
 </tr>
@@ -3386,28 +3500,29 @@ Fires when popupShown successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //popupShown event for DropDownList
 $("#drpdwn").ejDropDownList({ 
                 targetID: "carsList",
         popupShown: function(args) {}
 });
-&lt;/script&gt;          </code>
-</pre>
+</script>          {% endhighlight %}
+
 
 
 
@@ -3429,17 +3544,20 @@ Fires when select successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the DropDownList model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3450,27 +3568,28 @@ Fires when select successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="drpdwn" /&gt; 
+
+{% highlight html %}
  
- &lt;div id="carsList"&gt;
-   &lt;ul&gt;
-      &lt;li&gt;Audi A4&lt;/li&gt;
-      &lt;li&gt;Audi A5&lt;/li&gt;
-      &lt;li&gt;Audi A6&lt;/li&gt;
-      &lt;li&gt;Audi A7&lt;/li&gt;
-      &lt;li&gt;Audi A8&lt;/li&gt;
-   &lt;/ul&gt;
- &lt;/div&gt;
+<input type="text" id="drpdwn" /> 
  
-&lt;script&gt;          
+ <div id="carsList">
+   <ul>
+      <li>Audi A4</li>
+      <li>Audi A5</li>
+      <li>Audi A6</li>
+      <li>Audi A7</li>
+      <li>Audi A8</li>
+   </ul>
+ </div>
+ 
+<script>          
 //select event for DropDownList
 $("#drpdwn").ejDropDownList({ 
                 targetID: "carsList",
         select: function(args) {}
 });      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 

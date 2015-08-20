@@ -28,7 +28,8 @@ $(element).ejRTE<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for RTE.</td>
 </tr>
@@ -39,20 +40,21 @@ $(element).ejRTE<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;       
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-            &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">       
+<p><b>Description:</b></p>
+            <p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+            area. </p></textarea >     
+<script>
 // Create RTE
 $("#rteSample").ejRTE();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -157,20 +159,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;  
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">  
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the allowEditing value specified.
 $("#rteSample").ejRTE({ allowEditing: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -197,20 +200,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the allowKeyboardNavigation value specified.
 $("#rteSample").ejRTE({allowKeyboardNavigation: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -237,24 +241,25 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the colorCode value specified.
 $("#rteSample").ejRTE({ colorCode: [
                                     "000000", "FFFFFF", "C4C4C4", "ADADAD", "595959", "262626", "4f81bd", "dbe5f1", "b8cce4", "95b3d7", "366092", "244061", "c0504d", "f2dcdb", "e5b9b7", "d99694", "953734",
                                     "632423", "9bbb59", "ebf1dd", "d7e3bc", "c3d69b", "76923c", "4f6128", "8064a2", "e5e0ec", "ccc1d9", "b2a2c7", "5f497a", "3f3151", "f79646", "fdeada", "fbd5b5", "fac08f",
                                     "e36c09", "974806"
             ]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -281,20 +286,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the 'colorPaletteColumns' value specified.
 $("#rteSample").ejRTE({colorPaletteColumns: 70 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -321,20 +327,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the 'colorPaletteRows' value specified.
 $("#rteSample").ejRTE({colorPaletteRows: 70 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -361,20 +368,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 //Initialize the RTE with the cssClass value specified
         $("#rteSample").ejRTE({ cssClass: 'gradient-lime'});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -401,20 +409,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the enabled value specified.
 $("#rteSample").ejRTE({enabled: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -441,20 +450,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the enablePersistence value specified.
 $("#rteSample").ejRTE({enablePersistence: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -481,20 +491,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the enableResize value specified.
 $("#rteSample").ejRTE({enableResize: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -521,20 +532,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the enableRTL value specified.
 $("#rteSample").ejRTE({enableRTL: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -561,20 +573,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the enableXHTML value specified.
 $("#rteSample").ejRTE({enableXHTML: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -601,24 +614,25 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 // Initialize the RTE with the fileBrowser value specified.
 $("#rteSample").ejRTE({  fileBrowser: {
   filePath: "../FileExplorerContent/",
  extensionAllow: "*.png, *.doc, *.pdf, *.txt, *.docx",
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -636,22 +650,23 @@ This API is used to receive the server side handler for file related operations.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 // Initialize the RTE with the fileBrowser value specified.
 $("#rteSample").ejRTE({  fileBrowser: {
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction"
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -669,22 +684,23 @@ To specify the file type extension to be shown in image browser window.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 // Initialize the RTE with the fileBrowser value specified.
 $("#rteSample").ejRTE({  fileBrowser: {
 extensionAllow: "*.doc,*.docx,*.pdf,*.txt"
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -702,22 +718,23 @@ Specify the directory to perform the operation like create, delete and rename fo
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 // Initialize the RTE with the fileBrowser value specified.r
 $("#rteSample").ejRTE({  fileBrowser: {
  filePath: "../FileExplorerContent/"
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -744,16 +761,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the fontName value specified.
 $("#rteSample").ejRTE({ fontName: [
                 { text: "Segoe UI", value: "Segoe UI"},
@@ -766,10 +784,10 @@ $("#rteSample").ejRTE({ fontName: [
                 { text: "Times New Roman", value: "Times New Roman"},
                 { text: "Trebuchet MS", value: "Trebuchet MS,Helvetica,sans-serif"},
                 { text: "Verdana", value: "Verdana,Geneva,sans-serif"}]}); 
-&lt;/script&gt;
+</script>
                 
-</code>
-</pre>
+{% endhighlight %}
+
 
 
 
@@ -796,16 +814,18 @@ Default Value:
 Example
 {:#example:}
 
-<pre class="prettyprint">
-<code><code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the fontSize value specified.
 $("#rteSample").ejRTE({ fontSize: [
                 {
@@ -837,8 +857,8 @@ $("#rteSample").ejRTE({ fontSize: [
                     value: "7"
                 }
 ]});
-&lt;/script&gt; </code></code>
-</pre>
+</script> {% endhighlight %}{% endhighlight %}
+
 
 
 
@@ -865,31 +885,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the format value specified.
 $("#rteSample").ejRTE({format: [
-                { text: "Paragraph", value: "&lt;p&gt;", spriteCssClass: "e-paragraph" },
-                { text: "Quotation", value: "&lt;blockquote&gt;", spriteCssClass: "e-quotation" }, 
-                { text: "Heading 1", value: "&lt;h1&gt;", spriteCssClass: "e-h1" }, 
-                { text: "Heading 2", value: "&lt;h2&gt;", spriteCssClass: "e-h2" }, 
-                { text: "Heading 3", value: "&lt;h3&gt;", spriteCssClass: "e-h3" }, 
-                { text: "Heading 4", value: "&lt;h4&gt;", spriteCssClass: "e-h4" }, 
-                { text: "Heading 5", value: "&lt;h5&gt;", spriteCssClass: "e-h5" }, 
-                { text: "Heading 6", value: "&lt;h6&gt;", spriteCssClass: "e-h6" } ]}); 
-                &lt;/script&gt;
-                </code>
+                { text: "Paragraph", value: "<p>", spriteCssClass: "e-paragraph" },
+                { text: "Quotation", value: "<blockquote>", spriteCssClass: "e-quotation" }, 
+                { text: "Heading 1", value: "<h1>", spriteCssClass: "e-h1" }, 
+                { text: "Heading 2", value: "<h2>", spriteCssClass: "e-h2" }, 
+                { text: "Heading 3", value: "<h3>", spriteCssClass: "e-h3" }, 
+                { text: "Heading 4", value: "<h4>", spriteCssClass: "e-h4" }, 
+                { text: "Heading 5", value: "<h5>", spriteCssClass: "e-h5" }, 
+                { text: "Heading 6", value: "<h6>", spriteCssClass: "e-h6" } ]}); 
+                </script>
+                {% endhighlight %}
 {:#members:}
 
-</pre>
+
 
 
 ### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
@@ -915,20 +936,21 @@ Default Value:
 Example
 {:#example:}
 
-<pre class="prettyprint">
-<code>
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 //Initialize the RTE height property with the  value specified
         $("#rteSample").ejRTE({ height: 250 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -955,20 +977,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the HtmlAttributes  specified.
 $("#rteSample").ejRTE({htmlAttributes: {readOnly : "readOnly" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -995,20 +1018,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the iframeAttribute value specified.
 $("#rteSample").ejRTE({iframeAttribute: "color:#000" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1035,24 +1059,25 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 // Initialize the RTE with the imageBrowser value specified.
 $("#rteSample").ejRTE({  imageBrowser: {
   filePath: "../FileExplorerContent/",
  extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1070,22 +1095,23 @@ This API is used to receive the server side handler for file related operations.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 // Initialize the RTE with the imageBrowser value specified.
 $("#rteSample").ejRTE({  imageBrowser: {
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction"
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1103,22 +1129,23 @@ To specify the file type extension to be shown in image browser window.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 // Initialize the RTE with the imageBrowser value specified.
 $("#rteSample").ejRTE({  imageBrowser: {
 extensionAllow: "*.doc,*.docx,*.tiff,*.jpeg"
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1136,22 +1163,23 @@ Specify the directory to perform the operation like create, delete and rename fo
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 // Initialize the RTE with the imageBrowser value specified.
 $("#rteSample").ejRTE({  imageBrowser: {
  filePath: "../FileExplorerContent/"
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1169,22 +1197,23 @@ Specifies the action which has to be performed after the file is pushed for uplo
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 // Initialize the RTE with the imageBrowser value specified.
 $("#rteSample").ejRTE({  imageBrowser: {
 uploadAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1202,22 +1231,23 @@ Specifies the action which has to be performed after the file is pushed for uplo
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 // Initialize the RTE with the imageBrowser value specified.
 $("#rteSample").ejRTE({  imageBrowser: {
 uploadAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1244,20 +1274,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;  
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">  
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the isResponsive value specified.
 $("#rteSample").ejRTE({ isResponsive: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1284,20 +1315,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the culture value specified.
 $("#rteSample").ejRTE({locale: "en-US" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1324,20 +1356,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the maxHeight value specified.
 $("#rteSample").ejRTE({ maxHeight: 900});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1364,20 +1397,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the maxLength value specified.
 $("#rteSample").ejRTE({ maxLength: 900});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1404,20 +1438,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;  
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">  
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the maxWidth value specified.
 $("#rteSample").ejRTE({ maxWidth: 900});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1444,20 +1479,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the maxWidth value specified.
 $("#rteSample").ejRTE({ minHeight: 900});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1484,20 +1520,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the minWidth value specified.
 $("#rteSample").ejRTE({ minWidth: 900});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1524,20 +1561,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the name value specified.
 $("#rteSample").ejRTE({name: "ecommentblog" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1555,20 +1593,21 @@ Shows ClearAll in RTE.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the showClearAll value specified.
 $("#rteSample").ejRTE({showClearAll: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1595,20 +1634,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the iframeAttribute value specified.
 $("#rteSample").ejRTE({showClearFormat:true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1635,20 +1675,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the showCustomTable value specified.
 $("#rteSample").ejRTE({showCustomTable: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1675,20 +1716,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the showDimensions value specified.
 $("#rteSample").ejRTE({showDimensions: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1715,20 +1757,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the showFontOption value specified.
 $("#rteSample").ejRTE({showFontOption: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1755,20 +1798,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the showFooter value specified.
 $("#rteSample").ejRTE({showFooter: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1795,20 +1839,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the showHtmlSource value specified.
 $("#rteSample").ejRTE({showHtmlSource: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1835,20 +1880,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the showHtmlTagInfo value specified.
 $("#rteSample").ejRTE({showHtmlTagInfo: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1875,20 +1921,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the showToolbar value specified.
 $("#rteSample").ejRTE({showToolbar: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1915,20 +1962,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the showWordCount value specified.
 $("#rteSample").ejRTE({showWordCount: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1955,20 +2003,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the 'tableColumns' value specified.
 $("#rteSample").ejRTE({tableColumns: 70 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1995,20 +2044,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the 'tableRows' value specified.
 $("#rteSample").ejRTE({tableRows: 70 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2035,16 +2085,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the tools value specified.
 $("#rteSample").ejRTE({  tools: {
   //font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
@@ -2058,8 +2109,8 @@ links: ["createLink"],
 images: ["image", "video"],
 tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"]
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2077,22 +2128,23 @@ Include font alignment options in RTE toolbar.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the tools value specified.
 $("#rteSample").ejRTE({  tools: {
 alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"]
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2110,22 +2162,23 @@ Include action options in RTE toolbar.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the tools value specified.
 $("#rteSample").ejRTE({  tools: {
 doAction: ["undo", "redo"]
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2143,22 +2196,23 @@ Include Format styles in RTE toolbar.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the tools value specified.
 $("#rteSample").ejRTE({  tools: {
  formatStyle: ["format"]
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2176,22 +2230,23 @@ Include image and video options in RTE toolbar.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the tools value specified.
 $("#rteSample").ejRTE({  tools: {
 images: ["image", "video"]
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2209,22 +2264,23 @@ Include text indenting options in RTE toolbar.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the tools value specified.
 $("#rteSample").ejRTE({  tools: {
 indenting: ["outdent", "indent"]
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2242,22 +2298,23 @@ Include links options in RTE toolbar.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the tools value specified.
 $("#rteSample").ejRTE({  tools: {
 links: ["createLink"]
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2275,22 +2332,23 @@ Include list type options in RTE toolbar.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the tools value specified.
 $("#rteSample").ejRTE({  tools: {
 lists: ["unorderedList", "orderedList"]
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2308,22 +2366,23 @@ Include font styles in RTE toolbar.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the tools value specified.
 $("#rteSample").ejRTE({  tools: {
 style: ["bold", "italic", "underline", "strikethrough"]
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2341,22 +2400,23 @@ Include tables options in RTE toolbar.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the tools value specified.
 $("#rteSample").ejRTE({  tools: {
 tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"]
 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2383,20 +2443,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the toolsList value specified.
 $("#rteSample").ejRTE({ toolsList: ["formatStyle", "font", "style", "scripts", "alignment", "lists", "indenting", "copyPaste", "doAction", "clear", "links", "images", "tables", "casing", "customTool"]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2423,20 +2484,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the 'undoStackLimit' value specified.
 $("#rteSample").ejRTE({undoStackLimit: 70 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2463,20 +2525,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 // Initialize the RTE with the 'value' value specified.
 $("#rteSample").ejRTE({value: "The Rich Text Editor (RTE) control is an easy to render in client side. Customer easy to edit the contents, insert table, images and get the HTML content for the displayed content." });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2503,20 +2566,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 //Initialize the RTE width property with the  value specified
         $("#rteSample").ejRTE({ width: 500 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Methods
@@ -2538,36 +2602,38 @@ disable the RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.disable(); // disable RTE
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("disable");// disable RTE
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2585,37 +2651,39 @@ disable the RTE toolbar item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.disableToolbarItem("rteSamplecreateTable"); // disable toolbar item
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("disableToolbarItem","rteSamplecreateTable");// disable toolbar item        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2633,37 +2701,39 @@ enable the RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-     &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+     <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.enable(); // enable RTE
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("enable");// enable RTE
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2681,37 +2751,39 @@ enable the RTE toolbar item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                   
-     &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                   
+     <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.enableToolbarItem("rteSamplecreateTable"); // enable toolbar item
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("enableToolbarItem","rteSamplecreateTable");// enable toolbar item        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2729,22 +2801,23 @@ gets the content as string from the RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                    
-    &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                    
+    <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.executeCommand("bold", true); // gets the content as string from rte
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2762,37 +2835,39 @@ focus the RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                      
-  &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                      
+  <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.focus(); // gets the content as string from rte
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("focus");// enable toolbar item        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2810,22 +2885,23 @@ gets the command status of the given RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                   
- &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                   
+ <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.getCommandStatus(arguments); // gets the content as string from rte
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2843,37 +2919,39 @@ gets the HTML string from the RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                       
- &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                       
+ <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.getHtml(); // gets the html string from rte
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("getHtml");// getHtml from rte        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2891,37 +2969,39 @@ gets the command status of the given RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.getSelectedHtml(); // gets the content as string from rte
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("getSelectedHtml");// getSelectedHtml from rte        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2939,37 +3019,39 @@ gets the content as string from the RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                      
-  &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                      
+  <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.getText(); // gets the content as string from rte
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("getText");// getText from rte        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2987,37 +3069,39 @@ Hides the RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                        
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                        
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.hide(); // hides rte
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("hide");// hides rte       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3035,37 +3119,39 @@ refresh the RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                    
-    &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                    
+    <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.refresh(); // refresh rte
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("refresh");// refresh rte       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3083,37 +3169,39 @@ removes the RTE toolbar item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                 
-       &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                 
+       <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.removeToolbarItem("rteSamplecreateTable"); // remove toolbar item
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("removeToolbarItem","rteSamplecreateTable");// remove toolbar item        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3131,37 +3219,39 @@ Set the colorpicker model type to be rendered initially in the RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                       
- &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                       
+ <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.setColorPickerType("picker"); // set the picker mode
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("setColorPickerType","picker");// set the picker mode        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3179,32 +3269,34 @@ sets the HTML string from the RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                     
-  &lt;/textarea &gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                     
+  </textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.setHtml("The Rich Text Editor (RTE) control is an easy to render in client side."); // sets the html string to rte
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("setHtml","The Rich Text Editor (RTE) control is an easy to render in client side.");// sets the html string to rte    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3222,37 +3314,39 @@ Displays the RTE control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;                    
-    &lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">                    
+    <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+        area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 var rteeObj  = $("#rteSample").data("ejRTE");
 rteeObj.show(); // shows rte
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;          
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">          
+<p><b>Description:</b></p>
+<p>The Rich Text Editor (RTE) control is an easy to render in
             client side. Customer easy to edit the contents and get the HTML content for
             the displayed content. A rich text editor control provides users with a toolbar
             that helps them to apply rich text formats to the text entered in the text
-            area. &lt;/p&gt;&lt;/textarea &gt;
-&lt;script&gt;
+            area. </p></textarea >
+<script>
 $("#rteSample").ejRTE();
 // Create RTE
 $("#rteSample").ejRTE("show");// shows rte       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -3279,17 +3373,20 @@ Fires when change successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RTE model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3300,23 +3397,24 @@ Fires when change successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 $("#rteSample").ejRTE();
 //change event for RTE
 $("#rteSample").ejRTE({ 
         change: function(args) {}
 });      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3339,17 +3437,20 @@ Fires when execute successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RTE model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3360,23 +3461,24 @@ Fires when execute successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 $("#rteSample").ejRTE();
 //execute event for RTE
 $("#rteSample").ejRTE({ 
         execute: function(args) {}
 });   
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -3399,17 +3501,20 @@ Fires when keydown successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RTE model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3420,23 +3525,24 @@ Fires when keydown successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 $("#rteSample").ejRTE();
 //keydown event for RTE
 $("#rteSample").ejRTE({ 
         keydown: function(args) {}
 });  
-&lt;/script&gt;    </code>
-</pre>
+</script>    {% endhighlight %}
+
 
 
 
@@ -3459,17 +3565,20 @@ Fires when keyup successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the RTE model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -3480,21 +3589,22 @@ Fires when keyup successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;textarea   id="rteSample"&gt;     
-&lt;p&gt;&lt;b&gt;Description:&lt;/b&gt;&lt;/p&gt;
-        &lt;p&gt;The Rich Text Editor (RTE) control is an easy to render in
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is an easy to render in
         client side. Customer easy to edit the contents and get the HTML content for
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
-        area. &lt;/p&gt;&lt;/textarea &gt;     
-&lt;script&gt;
+        area. </p></textarea >     
+<script>
 $("#rteSample").ejRTE();
 //keyup event for RTE
 $("#rteSample").ejRTE({ 
         keyup: function(args) {}
 });  
-&lt;/script&gt;    </code>
-</pre>
+</script>    {% endhighlight %}
+
 

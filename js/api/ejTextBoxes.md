@@ -23,22 +23,23 @@ $(element).ejTextBoxes<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 // Create Textbox Editors 
 $('#numeric').ejNumericTextbox({value:10}); 
         
 $('#currency').ejCurrencyTextbox({value:1000}); 
 $('#percentage').ejPercentageTextbox({value:100}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -84,21 +85,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set cssClass API value during initialization  
         $("#numeric").ejNumericTextbox({ cssClass: "gradient-lime" , value:5 });        
         $("#currency").ejCurrencyTextbox({ cssClass: "gradient-lime", value:100  });
         $("#percentage").ejPercentageTextbox({ cssClass: "gradient-lime", value:505  });                         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -124,21 +126,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set decimalPlaces API value during initialization  
         $("#numeric").ejNumericTextbox({ decimalPlaces: 2, value:5  }); 
         $("#currency").ejCurrencyTextbox({ decimalPlaces: 2 , value:5 });
         $("#percentage").ejPercentageTextbox({ decimalPlaces: 2, value:5  });                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -164,21 +167,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set enabled API value during initialization  
         $("#numeric").ejNumericTextbox({ enabled: true, value:1200  }); 
         $("#currency").ejCurrencyTextbox({ enabled: true , value:50 });
         $("#percentage").ejPercentageTextbox({ enabled: true, value:100  });                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -204,21 +208,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set enablePersistence API value during initialization  
         $("#numeric").ejNumericTextbox({ enablePersistence: true, value:5  });  
         $("#currency").ejCurrencyTextbox({ enablePersistence: true, value:5  });
         $("#percentage").ejPercentageTextbox({ enablePersistence: true, value:5  });                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -244,21 +249,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set enableRTL API value during initialization  
         $("#numeric").ejNumericTextbox({ enableRTL: true, value:5  });  
         $("#currency").ejCurrencyTextbox({ enableRTL: true , value:45 });
         $("#percentage").ejPercentageTextbox({ enableRTL: true, value:567  });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -284,21 +290,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set enableStrictMode API value during initialization  
         $("#numeric").ejNumericTextbox({ enableStrictMode: true, value:5  });   
         $("#currency").ejCurrencyTextbox({ enableStrictMode: true, value:55  });
         $("#percentage").ejPercentageTextbox({ enableStrictMode: true, value:555  });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -324,21 +331,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set height API value during initialization  
         $("#numeric").ejNumericTextbox({ height: "30px", value:5  });   
         $("#currency").ejCurrencyTextbox({ height: "30px", value:55  });
         $("#percentage").ejPercentageTextbox({ height: "30px", value:555  });                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -364,21 +372,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To Set HtmlAttributes API value during initialization  
         $("#numeric").ejNumericTextbox({ htmlAttributes : {required:"required"} });     
         $("#currency").ejCurrencyTextbox({ htmlAttributes : {required:"required"}});
         $("#percentage").ejPercentageTextbox({ htmlAttributes : {required:"required"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -404,21 +413,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set incrementStep API value during initialization  
         $("#numeric").ejNumericTextbox({ incrementStep: 2, value:5  }); 
         $("#currency").ejCurrencyTextbox({ incrementStep: 2 , value:55 });
         $("#percentage").ejPercentageTextbox({ incrementStep: 2, value:50  });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -444,21 +454,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set locale API value during initialization  
         $("#numeric").ejNumericTextbox({ locale: "en-US", value:5  });  
         $("#currency").ejCurrencyTextbox({ locale: "en-US", value:5000  });
         $("#percentage").ejPercentageTextbox({ locale: "en-US", value:455  });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -484,21 +495,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set maxValue API value during initialization  
         $("#numeric").ejNumericTextbox({ maxValue: 100, value:500  });  
         $("#currency").ejCurrencyTextbox({ maxValue: 100, value:550  });
         $("#percentage").ejPercentageTextbox({ maxValue: 100, value:50  });                      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -524,21 +536,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set minValue API value during initialization  
         $("#numeric").ejNumericTextbox({ minValue: 50, value:55  });    
         $("#currency").ejCurrencyTextbox({ minValue: 50, value:5  });
         $("#percentage").ejPercentageTextbox({ minValue: 50, value:555  });                      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -564,21 +577,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set name API value during initialization  
         $("#numeric").ejNumericTextbox({ name: "numeric", value:5  });  
         $("#currency").ejCurrencyTextbox({ name: "currency", value:55  });
         $("#percentage").ejPercentageTextbox({ name: "percentage", value:500  });                        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -604,21 +618,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set readOnly API value during initialization  
         $("#numeric").ejNumericTextbox({ readOnly: true , value:5 });   
         $("#currency").ejCurrencyTextbox({ readOnly: true , value:5 });
         $("#percentage").ejPercentageTextbox({ readOnly: true , value:5 });                      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -644,21 +659,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set showRoundedCorner API value during initialization  
         $("#numeric").ejNumericTextbox({ showRoundedCorner: true, value:5  });  
         $("#currency").ejCurrencyTextbox({ showRoundedCorner: true , value:5 });
         $("#percentage").ejPercentageTextbox({ showRoundedCorner: true, value:5 });                      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -684,21 +700,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set showSpinButton API value during initialization  
         $("#numeric").ejNumericTextbox({ showSpinButton: false, value:5  });    
         $("#currency").ejCurrencyTextbox({ showSpinButton: false, value:55  });
         $("#percentage").ejPercentageTextbox({ showSpinButton: false, value:580  });                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -724,21 +741,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set decimalPlaces API value during initialization  
         $("#numeric").ejNumericTextbox({ validateOnType: true, value:5  });     
         $("#currency").ejCurrencyTextbox({ validateOnType: true , value:5 });
         $("#percentage").ejPercentageTextbox({ validateOnType: true, value:5  });                        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -764,21 +782,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set validationMessage API value during initialization  
         $("#numeric").ejNumericTextbox({ validationRules:{required:true},validationMessage: { required: "Required Numeric value"} });   
         $("#currency").ejCurrencyTextbox({ validationRules:{required:true},validationMessage: { required: "Required Currency value"} });
         $("#percentage").ejPercentageTextbox({ validationRules:{required:true},validationMessage: { required: "Required Percentage value"} });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -804,21 +823,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set validationRules API value during initialization  
         $("#numeric").ejNumericTextbox({ validationRules:{required:true} });    
         $("#currency").ejCurrencyTextbox({ validationRules:{required:true} });
         $("#percentage").ejPercentageTextbox({ validationRules:{required:true} });                       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -844,21 +864,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set value API value during initialization  
         $("#numeric").ejNumericTextbox({ value: 10 });  
         $("#currency").ejCurrencyTextbox({ value: 10 });
         $("#percentage").ejPercentageTextbox({ value: 10 });                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -884,21 +905,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set watermarkText API value during initialization  
         $("#numeric").ejNumericTextbox({ watermarkText: "Enter the value" });   
         $("#currency").ejCurrencyTextbox({ watermarkText: "Enter the currency value" });
         $("#percentage").ejPercentageTextbox({ watermarkText: "Enter the percentage" });                         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -924,21 +946,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //To set width API value during initialization  
         $("#numeric").ejNumericTextbox({ width: "143px", value:5 });    
         $("#currency").ejCurrencyTextbox({ width: "143px", value:55 });
         $("#percentage").ejPercentageTextbox({ width: "143px", value:555 });                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Methods
@@ -959,15 +982,16 @@ destroy the editor widgets all events are unbind automatically and bring the con
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 $("#numeric").ejNumericTextbox({value:5});
 $("#currency").ejCurrencyTextbox({value:55});
 $("#percentage").ejPercentageTextbox({value:555});
@@ -978,17 +1002,18 @@ var perObj = $("#percentage").data("ejPercentageTextbox");
 numObj.destroy(); // destroy the numericTextbox
 curObj.destroy(); // destroy the currencyTextbox
 perObj.destroy(); // destroy the percentagTextbox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 $("#numeric").ejNumericTextbox({value:5});
 $("#currency").ejCurrencyTextbox({value:55});
 $("#percentage").ejPercentageTextbox({value:555});
@@ -996,8 +1021,8 @@ $("#percentage").ejPercentageTextbox({value:555});
 $("#numeric").ejNumericTextbox("destroy");
 $("#currency").ejCurrencyTextbox("destroy");
 $("#percentage").ejPercentageTextbox("destroy");                
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1014,15 +1039,16 @@ To disable the corresponding editors
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 $("#numeric").ejNumericTextbox({value:20});
 $("#currency").ejCurrencyTextbox({value:400});
 $("#percentage").ejPercentageTextbox({value:2000});
@@ -1033,18 +1059,19 @@ var perObj = $("#percentage").data("ejPercentageTextbox");
 numObj.disable(); // disable the numericTextbox
 curObj.disable(); // disable the currencyTextbox
 perObj.disable(); // disable the percentagTextbox
-&lt;/script&gt;
-                 </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+</script>
+                 {% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 $("#numeric").ejNumericTextbox({value:20});
 $("#currency").ejCurrencyTextbox({value:400});
 $("#percentage").ejPercentageTextbox({value:2000});
@@ -1052,8 +1079,8 @@ $("#percentage").ejPercentageTextbox({value:2000});
 $("#numeric").ejNumericTextbox("disable");
 $("#currency").ejCurrencyTextbox("disable");
 $("#percentage").ejPercentageTextbox("disable");                
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1070,15 +1097,16 @@ To enable the corresponding editors
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 $("#numeric").ejNumericTextbox({value:10});
 $("#currency").ejCurrencyTextbox({value:100});
 $("#percentage").ejPercentageTextbox({value:1000});
@@ -1089,18 +1117,19 @@ var perObj = $("#percentage").data("ejPercentageTextbox");
 numObj.enable(); // enable the numericTextbox
 curObj.enable(); // enable the currencyTextbox
 perObj.enable(); // enable the percentagTextbox
-&lt;/script&gt;
-                 </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+</script>
+                 {% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 $("#numeric").ejNumericTextbox({value:10});
 $("#currency").ejCurrencyTextbox({value:100});
 $("#percentage").ejPercentageTextbox({value:1000});
@@ -1108,8 +1137,8 @@ $("#percentage").ejPercentageTextbox({value:1000});
 $("#numeric").ejNumericTextbox("enable");
 $("#currency").ejCurrencyTextbox("enable");
 $("#percentage").ejPercentageTextbox("enable");         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1126,15 +1155,16 @@ To get value from corresponding editors
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 $("#numeric").ejNumericTextbox({value:20});
 $("#currency").ejCurrencyTextbox({value:500});
 $("#percentage").ejPercentageTextbox({value:1000});
@@ -1145,18 +1175,19 @@ var perObj = $("#percentage").data("ejPercentageTextbox");
 numObj.getValue(); // get value from numericTextbox
 curObj.getValue(); // get value from currencyTextbox
 perObj.getValue(); // get value from percentagTextbox
-&lt;/script&gt;
-                 </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+</script>
+                 {% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 $("#numeric").ejNumericTextbox({value:20});
 $("#currency").ejCurrencyTextbox({value:500});
 $("#percentage").ejPercentageTextbox({value:1000});
@@ -1164,8 +1195,8 @@ $("#percentage").ejPercentageTextbox({value:1000});
 $("#numeric").ejNumericTextbox("getValue");
 $("#currency").ejCurrencyTextbox("getValue");
 $("#percentage").ejPercentageTextbox("getValue");               
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -1191,7 +1222,8 @@ Fires after editor control value is changed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from editors.
 <table class="params">
@@ -1204,22 +1236,26 @@ Fires after editor control value is changed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the corresponding editor model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the corresponding editor control value.</td>
 </tr>
@@ -1234,15 +1270,16 @@ Fires after editor control value is changed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //change event for editors
 $("#numeric").ejNumericTextbox({
           value:10,     
@@ -1256,8 +1293,8 @@ $("#percentage").ejPercentageTextbox({
           value:1000,   
    change: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1279,17 +1316,20 @@ Fires after editor control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the editor model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1300,15 +1340,16 @@ Fires after editor control is created.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //create event for editors
 $("#numeric").ejNumericTextbox({
           value:50,     
@@ -1322,8 +1363,8 @@ $("#percentage").ejPercentageTextbox({
           value:1500,   
    create: function (args) {}
 });
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -1345,17 +1386,20 @@ Fires when the editor is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the editor model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1366,15 +1410,16 @@ Fires when the editor is destroyed successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //destroy event for editors
 $("#numeric").ejNumericTextbox({
           value:50,     
@@ -1388,8 +1433,8 @@ $("#percentage").ejPercentageTextbox({
           value:1500,   
    destroy: function (args) {}
 });
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -1411,7 +1456,8 @@ Fires after editor control is focused.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from editors.
 <table class="params">
@@ -1424,22 +1470,26 @@ Fires after editor control is focused.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the corresponding editor model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the corresponding editor control value.</td>
 </tr>
@@ -1454,15 +1504,16 @@ Fires after editor control is focused.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //focusIn event for editors
 $("#numeric").ejNumericTextbox({
           value:20,     
@@ -1476,8 +1527,8 @@ $("#percentage").ejPercentageTextbox({
           value:2000,   
    focusIn: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1499,7 +1550,8 @@ Fires after editor control is loss the focus.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from editors.
 <table class="params">
@@ -1512,22 +1564,26 @@ Fires after editor control is loss the focus.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the corresponding editor model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the corresponding editor control value.</td>
 </tr>
@@ -1542,15 +1598,16 @@ Fires after editor control is loss the focus.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="numeric" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;input id="currency" type="text" /&gt; 
+<input id="numeric" type="text" /> 
  
-&lt;input id="percentage" type="text" /&gt; 
+<input id="currency" type="text" /> 
  
-&lt;script&gt;
+<input id="percentage" type="text" /> 
+ 
+<script>
 //focusOut event for editors
 $("#numeric").ejNumericTextbox({
           value:50,     
@@ -1564,7 +1621,7 @@ $("#percentage").ejPercentageTextbox({
           value:1500,   
    focusOut: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 

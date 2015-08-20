@@ -23,28 +23,29 @@ $(element).ejTab<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $(function () {             
 // document ready            
 // Initialize Tab control creation             
 $("#tab").ejTab({width:"300px"});         
-}); &lt;/script&gt;     </code>
-</pre>
+}); </script>     {% endhighlight %}
+
 
 
 
@@ -88,23 +89,24 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="http://en.wikipedia.org/wiki/Visual_Basic_.NET"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C Sharp (C#)</a></li>                      
+<li><a href="http://en.wikipedia.org/wiki/Visual_Basic_.NET">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+</div>
+<script type="text/javascript">         
 //To set enableAnimation API value during initialization  
   $("#tab").ejTab({ ajaxSettings: { type: 'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true } });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -208,27 +210,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the allowKeyboardNavigation during initialization.                       
         $("#tab").ejTab({width:"300px",allowKeyboardNavigation: false }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -254,27 +257,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the collapsible during initialization.                   
         $("#tab").ejTab({width:"300px",collapsible: true }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -300,27 +304,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the CSS class during initialization.                     
         $("#tab").ejTab({width:"300px",cssClass: "gradient-lime" }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -346,27 +351,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;   
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>   
+<script type="text/javascript">         
 // Set the disabledItemIndex during initialization.                     
         $("#tab").ejTab({width:"300px",disabledItemIndex: [1,2] }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -392,27 +398,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 //To set enableAnimation API value during initialization  
         $("#tab").ejTab({ enableAnimation: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -438,27 +445,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the enabled during initialization.                       
         $("#tab").ejTab({width:"300px",enabled: false }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -484,28 +492,29 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;   
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>   
+<script type="text/javascript">         
 // Set the enabledItemIndex during initialization. 
         $("#tab").ejTab({width:"300px",disabledItemIndex: [0,1,2] });
  $("#tab").ejTab({width:"300px",enabledItemIndex: [0,1] }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -531,27 +540,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div> 
+<script type="text/javascript">         
 // Set the enablePersistence during initialization.                     
         $("#tab").ejTab({width:"300px",enablePersistence: false }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -577,27 +587,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the rtl during initialization.                   
         $("#tab").ejTab({width:"300px",enableRTL: true }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -623,27 +634,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the enableTabScroll during initialization.                       
         $("#tab").ejTab({width:"300px",enableTabScroll: true }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -669,27 +681,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;     
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>     
+<script type="text/javascript">         
 // Set the events during initialization.                        
         $("#tab").ejTab({width:"300px",events: "click" }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -715,27 +728,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the headerPosition during initialization.                        
         $("#tab").ejTab({width:"500px",headerPosition: "left" }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -761,27 +775,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the height during initialization.                        
         $("#tab").ejTab({headerSize: "100px" }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -807,27 +822,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the height during initialization.                        
         $("#tab").ejTab({width:"300px",height: "320px" }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -853,27 +869,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt; 
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div> 
+<script type="text/javascript">         
 // Set the heightAdjustMode  during initialization.                     
         $("#tab").ejTab({width:"300px",heightAdjustMode : ej.Tab.HeightAdjustMode.Content }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -899,27 +916,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the idPrefix during initialization.                      
         $("#tab").ejTab({width:"300px",idPrefix: "ej-tab-" }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -945,27 +963,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the selectedItemIndex  during initialization.                    
         $("#tab").ejTab({width:"300px",selectedItemIndex : 1 }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -991,27 +1010,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;   
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>   
+<script type="text/javascript">         
 // Set the showCloseButton during initialization.                       
         $("#tab").ejTab({width:"500px",showCloseButton: true }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1037,27 +1057,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the showReloadIcon during initialization.                        
         $("#tab").ejTab({width:"500px",showReloadIcon: true }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1083,27 +1104,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the roundedCorner during initialization.                         
         $("#tab").ejTab({width:"300px",showRoundedCorner: false }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1129,27 +1151,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 // Set the width during initialization.                         
         $("#tab").ejTab({width: "600px" }); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 ## Methods
@@ -1175,17 +1198,20 @@ Add new tab items with given name, url and given index position, if index null i
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>url</code></td>
+<td class="name">{% highlight html %}
+url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">URL name / tab id.</td>
 </tr>
 <tr>
-<td class="name"><code>displayLabel</code></td>
+<td class="name">{% highlight html %}
+displayLabel{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Tab Display name.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Index position to placed , this is optional.</td>
 </tr>
@@ -1196,55 +1222,57 @@ Add new tab items with given name, url and given index position, if index null i
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;  
-&lt;div id="new"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;             
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>  
+<div id="new"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>             
+</div>
+<script type="text/javascript">         
 //initialize the tab object
 $("#tab").ejTab({width:"400px"});
         var tabObj = $("#tab").data("ejTab");
         // Add new tab items with given list
         tabObj.addItem("#new","New Item",3);
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt; 
-&lt;div id="new"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;  
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div> 
+<div id="new"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">  
 $("#tab").ejTab({width:"400px"});       
 $("#tab").ejTab("addItem","#new","New Item",3); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1261,51 +1289,53 @@ To disable the tab control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;  
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">  
 $("#tab").ejTab({width:"300px"});      
 //initialize the tab object
 var tabObj = $("#tab").data("ejTab");
         // disable the tab control
         tabObj.disable();
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;  
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">  
 $("#tab").ejTab({width:"300px"});       
 $("#tab").ejTab("disable");
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1322,51 +1352,53 @@ To enable the tab control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;   
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">   
 $("#tab").ejTab({width:"300px"});      
 //initialize the tab object
         var tabObj = $("#tab").data("ejTab");
         // enable the tab control
         tabObj.enable();
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;     
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">     
 $("#tab").ejTab({width:"300px"});    
 $("#tab").ejTab("enable");
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1383,51 +1415,53 @@ This function get the number of tab rendered
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;    
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">    
 $("#tab").ejTab({width:"300px"});     
 //initialize the tab object
         var tabObj = $("#tab").data("ejTab");
         // get the number of tab rendered
         tabObj.getItemsCount();
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;    
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">    
 $("#tab").ejTab({width:"300px"});     
 $("#tab").ejTab("getItemsCount");
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1444,51 +1478,53 @@ This function hides the tab control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;   
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">   
 $("#tab").ejTab({width:"300px"});      
 //initialize the tab object
         var tabObj = $("#tab").data("ejTab");
         // To hide the tab control..
         tabObj.hide();
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;   
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">   
 $("#tab").ejTab({width:"300px"});      
 $("#tab").ejTab("hide"); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1510,7 +1546,8 @@ Remove the given index tab item.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">index of tab item.</td>
 </tr>
@@ -1521,51 +1558,53 @@ Remove the given index tab item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;    
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">    
 $("#tab").ejTab({width:"300px"});     
 //initialize the tab object
         var tabObj = $("#tab").data("ejTab");
         // Remove the given index tab item.
         tabObj.removeItem(1);
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt; 
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript"> 
 $("#tab").ejTab({width:"300px"});        
 $("#tab").ejTab("removeItem",1); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1582,51 +1621,53 @@ This function is to show the tab control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt; 
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript"> 
 $("#tab").ejTab({width:"300px"});        
 //initialize the tab object
         var tabObj = $("#tab").data("ejTab");
         // To show the tab control.
         tabObj.show();
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;    
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">    
 $("#tab").ejTab({width:"300px"});     
 $("#tab").ejTab("show"); 
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 ## Events
@@ -1652,7 +1693,8 @@ Triggered after a tab item activated.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -1665,37 +1707,44 @@ Triggered after a tab item activated.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tab model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveHeader</code></td>
+<td class="name">{% highlight html %}
+prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns previous active tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveIndex</code></td>
+<td class="name">{% highlight html %}
+prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns previous active index.</td>
 </tr>
 <tr>
-<td class="name"><code>activeHeader</code></td>
+<td class="name">{% highlight html %}
+activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns current active tab header .</td>
 </tr>
 <tr>
-<td class="name"><code>activeIndex</code></td>
+<td class="name">{% highlight html %}
+activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current active index.</td>
 </tr>
@@ -1710,29 +1759,30 @@ Triggered after a tab item activated.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $("#tab").ejTab({
 width: "300px",
    itemActive: function (args) {}
 });      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1754,7 +1804,8 @@ Triggered before ajax content load action.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -1767,37 +1818,44 @@ Triggered before ajax content load action.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tab model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveHeader</code></td>
+<td class="name">{% highlight html %}
+prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns previous active tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveIndex</code></td>
+<td class="name">{% highlight html %}
+prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns previous active index.</td>
 </tr>
 <tr>
-<td class="name"><code>activeHeader</code></td>
+<td class="name">{% highlight html %}
+activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns current active tab header .</td>
 </tr>
 <tr>
-<td class="name"><code>activeIndex</code></td>
+<td class="name">{% highlight html %}
+activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current active index.</td>
 </tr>
@@ -1812,29 +1870,30 @@ Triggered before ajax content load action.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $("#tab").ejTab({
 width:"300px",
    ajaxBeforeLoad: function (args) {}
 });      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1856,7 +1915,8 @@ Triggered after a tab item activated.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -1869,37 +1929,44 @@ Triggered after a tab item activated.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tab model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveHeader</code></td>
+<td class="name">{% highlight html %}
+prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns previous active tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveIndex</code></td>
+<td class="name">{% highlight html %}
+prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns previous active index.</td>
 </tr>
 <tr>
-<td class="name"><code>activeHeader</code></td>
+<td class="name">{% highlight html %}
+activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns current active tab header .</td>
 </tr>
 <tr>
-<td class="name"><code>activeIndex</code></td>
+<td class="name">{% highlight html %}
+activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current active index.</td>
 </tr>
@@ -1914,29 +1981,30 @@ Triggered after a tab item activated.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $("#tab").ejTab({
 width: "300px",
    ajaxError: function (args) {}
 });      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1958,7 +2026,8 @@ Triggered after ajax content load action.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -1971,42 +2040,50 @@ Triggered after ajax content load action.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>url</code></td>
+<td class="name">{% highlight html %}
+url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the url</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tab model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveHeader</code></td>
+<td class="name">{% highlight html %}
+prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns previous active tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveIndex</code></td>
+<td class="name">{% highlight html %}
+prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns previous active index.</td>
 </tr>
 <tr>
-<td class="name"><code>activeHeader</code></td>
+<td class="name">{% highlight html %}
+activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns current active tab header .</td>
 </tr>
 <tr>
-<td class="name"><code>activeIndex</code></td>
+<td class="name">{% highlight html %}
+activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current active index.</td>
 </tr>
@@ -2021,29 +2098,30 @@ Triggered after ajax content load action.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $("#tab").ejTab({
 width:"300px",
    ajaxLoad: function (args) {}
 });      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2065,7 +2143,8 @@ Triggered after a tab item activated.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -2078,37 +2157,44 @@ Triggered after a tab item activated.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tab model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveHeader</code></td>
+<td class="name">{% highlight html %}
+prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns previous active tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveIndex</code></td>
+<td class="name">{% highlight html %}
+prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns previous active index.</td>
 </tr>
 <tr>
-<td class="name"><code>activeHeader</code></td>
+<td class="name">{% highlight html %}
+activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns current active tab header .</td>
 </tr>
 <tr>
-<td class="name"><code>activeIndex</code></td>
+<td class="name">{% highlight html %}
+activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current active index.</td>
 </tr>
@@ -2123,29 +2209,30 @@ Triggered after a tab item activated.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $("#tab").ejTab({
 width: "300px",
    ajaxSuccess: function (args) {}
 });      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2167,7 +2254,8 @@ Triggered before a tab item activated.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -2180,37 +2268,44 @@ Triggered before a tab item activated.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tab model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveHeader</code></td>
+<td class="name">{% highlight html %}
+prevActiveHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns previous active tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>prevActiveIndex</code></td>
+<td class="name">{% highlight html %}
+prevActiveIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns previous active index.</td>
 </tr>
 <tr>
-<td class="name"><code>activeHeader</code></td>
+<td class="name">{% highlight html %}
+activeHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns current active tab header .</td>
 </tr>
 <tr>
-<td class="name"><code>activeIndex</code></td>
+<td class="name">{% highlight html %}
+activeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current active index.</td>
 </tr>
@@ -2225,29 +2320,30 @@ Triggered before a tab item activated.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $("#tab").ejTab({
 width: "300px",
    beforeActive: function (args) {}
 });      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2269,7 +2365,8 @@ Triggered before a tab item remove.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button.
 <table class="params">
@@ -2282,22 +2379,26 @@ Triggered before a tab item remove.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tab model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current tab item index</td>
 </tr>
@@ -2312,29 +2413,30 @@ Triggered before a tab item remove.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $("#tab").ejTab({
 width: "300px",
    beforeItemRemove: function (args) {}
 });      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2356,7 +2458,8 @@ Triggered before a tab item Create.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button.
 <table class="params">
@@ -2369,22 +2472,26 @@ Triggered before a tab item Create.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tab model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>deleteIndex</code></td>
+<td class="name">{% highlight html %}
+deleteIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current tab item index</td>
 </tr>
@@ -2399,29 +2506,30 @@ Triggered before a tab item Create.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $("#tab").ejTab({
 width: "300px",
    create: function (args) {}
 });      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2443,7 +2551,8 @@ Triggered before a tab item destroy.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button.
 <table class="params">
@@ -2456,22 +2565,26 @@ Triggered before a tab item destroy.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tab model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>deleteIndex</code></td>
+<td class="name">{% highlight html %}
+deleteIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns current tab item index</td>
 </tr>
@@ -2486,29 +2599,30 @@ Triggered before a tab item destroy.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $("#tab").ejTab({
 width: "300px",
    destroy: function (args) {}
 });      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2530,7 +2644,8 @@ Triggered after new tab item add
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -2543,27 +2658,32 @@ Triggered after new tab item add
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tab model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>tabHeader</code></td>
+<td class="name">{% highlight html %}
+tabHeader{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns new added tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>tabContent</code></td>
+<td class="name">{% highlight html %}
+tabContent{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns new added tab content panel.</td>
 </tr>
@@ -2578,29 +2698,30 @@ Triggered after new tab item add
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $("#tab").ejTab({
 width: "300px",
    itemAdd: function (args) {}
 });      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2622,7 +2743,8 @@ Triggered after tab item removed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -2635,27 +2757,32 @@ Triggered after tab item removed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the tab model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>removedTab</code></td>
+<td class="name">{% highlight html %}
+removedTab{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns removed tab header.</td>
 </tr>
 <tr>
-<td class="name"><code>removedPanel</code></td>
+<td class="name">{% highlight html %}
+removedPanel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns removed tab content panel.</td>
 </tr>
@@ -2670,28 +2797,29 @@ Triggered after tab item removed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="tab"&gt;                  
-&lt;ul&gt;                      
-&lt;li&gt;&lt;a href="#javaScript"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#cSharp"&gt;C Sharp (C#)&lt;/a&gt;&lt;/li&gt;                      
-&lt;li&gt;&lt;a href="#vb"&gt;VB.Net&lt;/a&gt;&lt;/li&gt;                  
-&lt;/ul&gt;                  
-&lt;div id="javaScript"&gt; JavaScript (JS) is an interpreted computer programming language. 
+
+{% highlight html %}
+ 
+<div id="tab">                  
+<ul>                      
+<li><a href="#javaScript">JavaScript</a></li>                      
+<li><a href="#cSharp">C Sharp (C#)</a></li>                      
+<li><a href="#vb">VB.Net</a></li>                  
+</ul>                  
+<div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
 It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
-&lt;/div&gt;                  
-&lt;div id="cSharp"&gt; C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
-&lt;/div&gt;                  
-&lt;div id="vb"&gt; The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
-&lt;/div&gt;              
-&lt;/div&gt;
-&lt;script type="text/javascript"&gt;         
+</div>                  
+<div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
+</div>                  
+<div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+</div>              
+</div>
+<script type="text/javascript">         
 $("#tab").ejTab({
 width: "300px",
    itemRemove: function (args) {}
 });      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 

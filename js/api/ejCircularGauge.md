@@ -28,7 +28,8 @@ $(element).ejCircularGauge<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">For seting the Circular gauge</td>
 </tr>
@@ -39,18 +40,19 @@ $(element).ejCircularGauge<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $(function () {
         $("#CoreCircularGauge").ejCircularGauge({
         });
     });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -92,15 +94,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
         $("#CoreCircularGauge").ejCircularGauge({ animationSpeed: 500,scales: [{ pointers: [{ value: 50 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -126,15 +129,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>                     
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+                     
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({  backgroundColor : "#F234F4" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -160,15 +164,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({  gaugePosition:"center", distanceFromCorner :25});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -194,15 +199,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                   
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                   
 $("#CoreCircularGauge").ejCircularGauge({ enableAnimation: true,scales: [{ pointers: [{ value: 50 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -228,15 +234,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({  enableResize : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -262,15 +269,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
 $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType:ej.datavisualization.CircularGauge.Frame.FullCircle, backgroundImageUrl:"", halfCircleFrameStartAngle:180, halfCircleFrameEndAngle:360} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -296,15 +304,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({  frame:{backgroundImageUrl : "Sun.jpg" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -330,15 +339,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({  frame:{frameType : "halfcircle"} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -364,15 +374,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType : "halfCircle",halfCircleFrameEndAngle: 270}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -398,15 +409,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType : "halfcircle",halfCircleFrameStartAngle: 0} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -432,15 +444,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({  gaugePosition:"center" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -466,15 +479,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ height: 400 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -500,15 +514,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>                     
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+                     
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ interiorGradient: { colorInfo:[{colorStop : 0, color:"#FFFFFF"},{colorStop : 1, color:"#AAAAAA"}] } }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -534,15 +549,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({  isRadialGradient : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -568,15 +584,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ maximum: 120 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -602,15 +619,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ minimum: 10 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -636,15 +654,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({  outerCustomLabelPosition:"top" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -670,15 +689,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ radius: 100 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -704,15 +724,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>                     
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+                     
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({  readOnly : false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -738,15 +759,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{showScaleBar: true, size: 6, border:{width: 1.5} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -772,15 +794,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showScaleBar: true, backgroundColor: "#1BA1E2" }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -806,15 +829,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;                  
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ border:{color:null, width:1.5 }}] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -840,15 +864,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showScaleBar: true,  border:[{color: "#1BA1E2" }]}] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -874,15 +899,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showScaleBar: true, border:{width: 1.5} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -908,15 +934,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ direction: "counterclockwise" }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -942,18 +969,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   height: 30,width: 10,type: "circle",value: 0,position: { x: 185, y: 300 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243", borderColor: "#5DF243", text: "", textColor: "#870505" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608", borderColor: "#145608", text: "", textColor: "#870505" }]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -979,18 +1007,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   height: 30,type: "circle",value: 0,position: { x: 185, y: 300 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1016,18 +1045,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   width: 30,type: "image",value: 0,imageUrl:"Sun.jpeg",position: { x: 185, y: 300 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1053,18 +1083,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   width: 30,type: "circle",value: 0,position: { x: 185, y: 150 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1090,18 +1121,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   width: 30,type: "circle",value: 0,position: { x: 185,y:0 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1127,18 +1159,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   width: 30,type: "circle",value: 0,position: { x:0,y: 185 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1164,18 +1197,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   width: 30,type: "circle",value: 0,position: { x: 185, y:300 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1201,18 +1235,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   width: 30,type: "circle",value: 0,position: { x: 185, y:300 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "Red" },
   { endValue: 200, startValue: 70, backgroundColor: "Yellow"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1238,18 +1273,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   width: 30,type: "circle",value: 0,position: { x: 185, y:300 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243",borderColor:"Red" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608", borderColor:"yellow"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1275,18 +1311,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   width: 30,type: "circle",value: 0,position: { x: 185, y:300 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1312,19 +1349,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
 $("#CoreCircularGauge").ejCircularGauge({
 scales: [{showIndicators: true, indicators: [{
 width: 30, type: "text", value: 0, position: { x: 185, y: 300 },
 stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1" },
 { endValue: 200, startValue: 70, text: "staterange1", font: { size: "11px", fontFamily: "Arial", fontStyle: "Bold" } }]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1350,18 +1388,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   width: 30,type: "circle",value: 0,position: { x: 185, y:300 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1387,19 +1426,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>  
 $("#CoreCircularGauge").ejCircularGauge({
 scales: [{showIndicators: true, indicators: [{
 width: 30, type: "text", value: 0, position: { x: 185, y: 300 },
 stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1" },
 { endValue: 200, startValue: 70, text: "staterange1" }]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1425,19 +1465,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({
 scales: [{showIndicators: true, indicators: [{
 width: 30, type: "text", value: 0, position: { x: 185, y: 300 },
 stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1", textColor: "Yellow" },
 { endValue: 200, startValue: 70, text: "staterange1", textColor: "Yellow" }]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1463,18 +1504,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   width: 30,type: "circle",value: 0,position: { x: 185, y: 300 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1500,18 +1542,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showIndicators:true,indicators: [{
   width: 30,type: "circle",value: 0,position: { x: 185, y: 300 },
   stateRanges: [{ endValue: 70, startValue: 0, backgroundColor: "#5DF243" },
   { endValue: 200, startValue: 70, backgroundColor: "#145608"}]}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1537,15 +1580,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ angle: 10, opacity: 0.4 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1571,15 +1615,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ angle: 10 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1605,15 +1650,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels:[{autoAngle: true}] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1639,15 +1685,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ color: "Red" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1673,15 +1720,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ distanceFromScales: 10 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1707,15 +1755,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;                  
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { size: "12px", fontFamily: "Segou", fontStyle: "Bold" } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1741,15 +1790,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { fontFamily: "Arial" } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1775,15 +1825,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { fontStyle: "Bold" } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1809,15 +1860,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { size: "12px" } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1843,15 +1895,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ includeFirstValue: false }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1877,15 +1930,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ opacity: 0.4 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1911,15 +1965,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ placement: "near" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1945,15 +2000,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ type: "major" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1979,15 +2035,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ unitText: "kmph" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2013,15 +2070,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ unitText: "kmph",unitTextPosition: "front" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2047,15 +2105,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ majorIntervalValue: 5 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2081,15 +2140,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ maximum: 200 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2115,15 +2175,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ minimum: 20 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2149,15 +2210,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ minorIntervalValue: 1 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2183,15 +2245,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>     
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+     
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;
+<script>
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showScaleBar: true, opacity:0.5 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2217,15 +2280,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;                  
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointerCap:{radius: 7, borderWidth:3, interiorGradient:null, borderColor:null } }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2251,15 +2315,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointerCap: {backgroundColor: "Green"} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2285,15 +2350,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointerCap: {borderColor: "Brown" }}] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2319,15 +2385,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>     
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+     
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;          
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointerCap:{borderWidth: 8 } }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2353,15 +2420,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>             
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+             
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;  
+<script>  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointerCap:{interiorGradient: {colorInfo:[{colorStop : 0, color:"#FFFFFF"},{colorStop : 1, color:"#AAAAAA"}] }}}] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2387,15 +2455,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointerCap:{radius: 10} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2421,15 +2490,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>     
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+     
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;  
+<script>  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ distanceFromScale: 0, showBackNeedle: false }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2455,15 +2525,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ backgroundColor: "#1A1A1A" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2489,15 +2560,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle: true, backNeedleLength: 10 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2523,15 +2595,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;                  
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers:[{border:{color:null, width:1.5 }}]}] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2557,15 +2630,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ border:{color: "#1A1A1A"} }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2591,15 +2665,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ border:{width: 1.5 }}] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2625,15 +2700,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ distanceFromScale: 10 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2659,15 +2735,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ gradients: {colorInfo:[{colorStop : 0, color:"#FFFFFF"},{colorStop : 1, color:"#AAAAAA"}] }}] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2693,15 +2770,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "image", imageUrl: "football.png" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2727,15 +2805,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ length: 50 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2761,15 +2840,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2795,15 +2875,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ needleType: "triangle" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2829,15 +2910,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ opacity: 0.3 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2863,15 +2945,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ placement: "far" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2897,15 +2980,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle", pointerValueText:{ showValue: false, distance: 20, font: { size: "11px", fontFamily: "Arial", fontStyle: "Bold" }, color: "#8c8c8c", opacity: 1, autoAngle: false, angle: 0, } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2931,15 +3015,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle", pointerValueText:{ showValue: true, distance: 20, font: { size: "11px", fontFamily: "Arial", fontStyle: "Bold" }, color: "Red", opacity: 0.5, autoAngle: false, angle: 30, } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2965,15 +3050,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle", pointerValueText:{ showValue: true, distance: 20, font: { size: "11px", fontFamily: "Arial", fontStyle: "Bold" }, color: "Red", opacity: 0.5, autoAngle: true, angle: 0, } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2999,15 +3085,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle", pointerValueText:{ showValue: true, distance: 20, font: { size: "11px", fontFamily: "Arial", fontStyle: "Bold" }, color: "Red", opacity: 1, autoAngle: false, angle: 0, } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3033,15 +3120,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle", pointerValueText:{ showValue: true, distance: 30, font: { size: "11px", fontFamily: "Arial", fontStyle: "Bold" }, color: "#8c8c8c", opacity: 1, autoAngle: false, angle: 0, } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3067,15 +3155,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle", pointerValueText:{ showValue: true, distance: 30, font: { size: "11px", fontFamily: "Arial", fontStyle: "Bold" }, color: "#8c8c8c", opacity: 1, autoAngle: false, angle: 0, } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3101,15 +3190,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle", pointerValueText:{ showValue: true, distance: 30, font: { size: "12px", fontFamily: "Seogo UI", fontStyle: "Bold" }, color: "#8c8c8c", opacity: 1, autoAngle: false, angle: 0, } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3135,15 +3225,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle", pointerValueText:{ showValue: true, distance: 30, font: { size: "12px", fontFamily: "Seogo UI", fontStyle: "Normal" }, color: "#8c8c8c", opacity: 1, autoAngle: false, angle: 0, } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3169,15 +3260,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle", pointerValueText:{ showValue: true, distance: 30, font: { size: "12px", fontFamily: "Arial", fontStyle: "Bold" }, color: "#8c8c8c", opacity: 1, autoAngle: false, angle: 0, } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3203,15 +3295,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle", pointerValueText:{ showValue: true, distance: 20, font: { size: "11px", fontFamily: "Arial", fontStyle: "Bold" }, color: "Red", opacity: 0.5, autoAngle: false, angle: 0, } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3237,15 +3330,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker", markerType: "rectangle", pointerValueText:{ showValue: true, distance: 20, font: { size: "11px", fontFamily: "Arial", fontStyle: "Bold" }, color: "#8c8c8c", opacity: 1, autoAngle: false, angle: 0, } }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3271,15 +3365,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle: true, backNeedleLength: 10 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3305,15 +3400,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ type: "marker" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3339,15 +3435,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ value: 50 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3373,15 +3470,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ width: 7 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3407,15 +3505,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showScaleBar: true, radius: 100 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3441,15 +3540,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true [{ ranges: [{ distanceFromScale: 25, size: 5}] }] }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3475,15 +3575,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{ startValue: 10, endValue: 100,startWidth: 10,endWidth: 10,backgroundColor: "Red" }]  }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3509,15 +3610,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;                  
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ranges:[{border:{color:null, width:1.5 }}]}] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3543,15 +3645,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{ startValue: 10, endValue: 100,startWidth: 10,endWidth: 10,border:{color: "#32b3c6"} }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3577,15 +3680,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{ startValue: 10, endValue: 100,startWidth: 10,endWidth: 10,distanceFromScale: -25,border:{width: 1.5} }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3611,15 +3715,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                          
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3645,15 +3750,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true, ranges: [{ startValue: 10, endValue: 100,distanceFromScale: -25 }] }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3679,15 +3785,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3713,15 +3820,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{startValue: 10, endValue: 100, gradients: { colorInfo:[{ colorStop : 0, color:"#FFFFFF"},{colorStop : 1, color:"#AAAAAA"}] }}] }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3747,15 +3855,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{ startValue: 10, endValue: 100,startWidth: 10,endWidth: 10,distanceFromScale: -25,opacity: 0.5 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3781,15 +3890,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>  
         $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70,placement: "center"}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3815,15 +3925,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70,size:5}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3849,15 +3960,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3883,15 +3995,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{ startValue: 10, endValue: 100,startWidth: 10,distanceFromScale: -25 }] }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3917,15 +4030,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;                  
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ shadowOffset: 1}] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3951,15 +4065,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showIndicators: false }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3985,15 +4100,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showLabels: true }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4019,15 +4135,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showPointers: true }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4053,15 +4170,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showRanges: false }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4087,15 +4205,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showScaleBar: true }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4121,15 +4240,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showTicks: true }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4155,15 +4275,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showScaleBar: true, size: 6 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4189,15 +4310,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ startAngle: 90 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4223,19 +4345,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;div id="subGauge1"&gt;
-&lt;/div&gt; 
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;  
+<div id="subGauge1">
+</div> 
+ 
+<script>  
 $("#subGauge1").ejCircularGauge({backgroundColor: "#f5b43f",scales: [{radius: 150}]});
 $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius: 250,subGauges: [{controlID: "subGauge1",height: 200,width: 200,position: { x: 200, y: 150 }}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4261,19 +4384,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;div id="subGauge1"&gt;
-&lt;/div&gt; 
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;  
+<div id="subGauge1">
+</div> 
+ 
+<script>  
 $("#subGauge1").ejCircularGauge({backgroundColor: "#f5b43f",scales: [{radius: 150}]});
 $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius: 250,subGauges: [{controlID: "subGauge1",height: 400,width: 200,position: { x: 200, y: 100 }}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4299,19 +4423,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;div id="subGauge1"&gt;
-&lt;/div&gt; 
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;  
+<div id="subGauge1">
+</div> 
+ 
+<script>  
 $("#subGauge1").ejCircularGauge({backgroundColor: "#f5b43f",scales: [{radius: 150}]});
 $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius: 250,subGauges: [{controlID: "subGauge1",height: 200,width: 200,position: { x: 200, y: 150 }}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4337,19 +4462,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;div id="subGauge1"&gt;
-&lt;/div&gt; 
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;  
+<div id="subGauge1">
+</div> 
+ 
+<script>  
 $("#subGauge1").ejCircularGauge({backgroundColor: "#f5b43f",scales: [{radius: 150}]});
 $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius: 250,subGauges: [{controlID: "subGauge1",height: 200,width: 200,position: { x: 200, y: 0 }}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4375,19 +4501,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;div id="subGauge1"&gt;
-&lt;/div&gt; 
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;  
+<div id="subGauge1">
+</div> 
+ 
+<script>  
 $("#subGauge1").ejCircularGauge({backgroundColor: "#f5b43f",scales: [{radius: 150}]});
 $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius: 250,subGauges: [{controlID: "subGauge1",height: 200,width: 200,position: { x: 0, y: 150 }}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4413,19 +4540,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;div id="subGauge1"&gt;
-&lt;/div&gt; 
+<div id="CoreCircularGauge">
+</div> 
  
-&lt;script&gt;  
+<div id="subGauge1">
+</div> 
+ 
+<script>  
 $("#subGauge1").ejCircularGauge({backgroundColor: "#f5b43f",scales: [{radius: 150}]});
 $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius: 250,subGauges: [{controlID: "subGauge1",height: 200,width: 300,position: { x: 200, y: 150 }}]}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4451,15 +4579,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ sweepAngle: 200 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4485,15 +4614,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ angle: 10, distanceFromScale: 10 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4519,15 +4649,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ angle: 10 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4553,15 +4684,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ color: "#777777" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4587,15 +4719,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ distanceFromScale: 10 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4621,15 +4754,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ height: 16 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4655,15 +4789,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>  
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ placement: "near" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4689,15 +4824,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ type: "major" }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4723,15 +4859,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;          
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>          
         $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ width: 3 }] }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4757,15 +4894,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
         $("#CoreCircularGauge").ejCircularGauge({  theme : "flatlight" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4791,15 +4929,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true,showCustomLabelTooltip: true,templateID: null} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4825,15 +4964,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showCustomLabelTooltip: true} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4859,15 +4999,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4893,15 +5034,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
 $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true, templateID: "template1"} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4927,15 +5069,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ value: 30 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4961,15 +5104,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ width: 400 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Methods
@@ -4990,16 +5134,17 @@ destroy the circular gauge widget. all events bound using this._on will be unbin
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge"></div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.destroy();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5021,12 +5166,14 @@ To export Image
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.fileName</code></td>
+<td class="name">{% highlight html %}
+argument.fileName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">fileName for the Image</td>
 </tr>
 <tr>
-<td class="name"><code>argument.fileType</code></td>
+<td class="name">{% highlight html %}
+argument.fileType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">fileType for the Image</td>
 </tr>
@@ -5037,16 +5184,17 @@ To export Image
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge"></div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.exportImage("myImage","jpeg");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5068,12 +5216,14 @@ To get BackNeedleLength
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -5084,16 +5234,17 @@ To get BackNeedleLength
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle: true }] }] });
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getBackNeedleLength(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5115,12 +5266,14 @@ To get CustomLabelAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.customLabelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
@@ -5131,16 +5284,17 @@ To get CustomLabelAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge"></div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{customLabels:[{textAngle:30,value:"MyLabel",position:{x:250,y:300},color:"#fc0606",font:{size: "20px", fontFamily: "Arial", fontStyle: "Bold" }}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getCustomLabelAngle(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5162,12 +5316,14 @@ To get CustomLabelValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.customLabelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
@@ -5178,16 +5334,17 @@ To get CustomLabelValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{customLabels:[{textAngle:30,value:"MyLabel",position:{x:250,y:300},color:"#fc0606",font:{size: "20px", fontFamily: "Arial", fontStyle: "Bold" }}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getCustomLabelValue(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5209,12 +5366,14 @@ To get LabelAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -5225,16 +5384,17 @@ To get LabelAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getLabelAngle(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5256,12 +5416,14 @@ To get LabelDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -5272,16 +5434,17 @@ To get LabelDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getLabelDistanceFromScale(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5303,12 +5466,14 @@ To get LabelPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -5319,16 +5484,17 @@ To get LabelPlacement
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getLabelPlacement(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5350,12 +5516,14 @@ To get LabelStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -5366,16 +5534,17 @@ To get LabelStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getLabelStyle(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5397,7 +5566,8 @@ To get MajorIntervalValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -5408,16 +5578,17 @@ To get MajorIntervalValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getMajorIntervalValue(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5439,12 +5610,14 @@ To get MarkerDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -5455,16 +5628,17 @@ To get MarkerDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getMarkerDistanceFromScale(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5486,12 +5660,14 @@ To get MarkerStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -5502,16 +5678,17 @@ To get MarkerStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getMarkerStyle(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5533,7 +5710,8 @@ To get MaximumValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -5544,16 +5722,17 @@ To get MaximumValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getMaximumValue(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5575,7 +5754,8 @@ To get MinimumValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -5586,16 +5766,17 @@ To get MinimumValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getMinimumValue(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5617,7 +5798,8 @@ To get MinorIntervalValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -5628,16 +5810,17 @@ To get MinorIntervalValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getMinorIntervalValue(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5659,12 +5842,14 @@ To get NeedleStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -5675,16 +5860,17 @@ To get NeedleStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getNeedleStyle(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5706,7 +5892,8 @@ To get PointerCapBorderWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -5717,16 +5904,17 @@ To get PointerCapBorderWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getPointerCapBorderWidth(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5748,7 +5936,8 @@ To get PointerCapRadius
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -5759,16 +5948,17 @@ To get PointerCapRadius
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getPointerCapRadius(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5790,12 +5980,14 @@ To get PointerLength
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -5806,16 +5998,17 @@ To get PointerLength
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getPointerLength(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5837,12 +6030,14 @@ To get PointerNeedleType
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -5853,16 +6048,17 @@ To get PointerNeedleType
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getPointerNeedleType(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5884,12 +6080,14 @@ To get PointerPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -5900,16 +6098,17 @@ To get PointerPlacement
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getPointerPlacement(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5931,12 +6130,14 @@ To get PointerValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -5947,16 +6148,17 @@ To get PointerValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getPointerValue(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5978,12 +6180,14 @@ To get PointerWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -5994,16 +6198,17 @@ To get PointerWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getPointerWidth(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6025,12 +6230,14 @@ To get RangeBorderWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -6041,16 +6248,17 @@ To get RangeBorderWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getRangeBorderWidth(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6072,12 +6280,14 @@ To get RangeDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -6088,16 +6298,17 @@ To get RangeDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getRangeDistanceFromScale(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6119,12 +6330,14 @@ To get RangeEndValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -6135,16 +6348,17 @@ To get RangeEndValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getRangeEndValue(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6166,12 +6380,14 @@ To get RangePosition
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -6182,16 +6398,17 @@ To get RangePosition
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getRangePosition(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6213,12 +6430,14 @@ To get RangeSize
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -6229,16 +6448,17 @@ To get RangeSize
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getRangeSize(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6260,12 +6480,14 @@ To get RangeStartValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -6276,16 +6498,17 @@ To get RangeStartValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getRangeStartValue(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6307,7 +6530,8 @@ To get ScaleBarSize
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6318,16 +6542,17 @@ To get ScaleBarSize
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getScaleBarSize(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6349,7 +6574,8 @@ To get ScaleBorderWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6360,16 +6586,17 @@ To get ScaleBorderWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{showScaleBar: true, size: 6, border:{Width: 1.5} }] });
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getScaleBorderWidth(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6391,7 +6618,8 @@ To get ScaleDirection
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6402,16 +6630,17 @@ To get ScaleDirection
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getScaleDirection(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6433,7 +6662,8 @@ To get ScaleRadius
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6444,16 +6674,17 @@ To get ScaleRadius
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getScaleRadius(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6475,7 +6706,8 @@ To get StartAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6486,16 +6718,17 @@ To get StartAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getStartAngle(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6517,12 +6750,14 @@ To get SubGaugeLocation
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.GaugeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.GaugeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">GaugeIndex value for the Gauge</td>
 </tr>
@@ -6533,19 +6768,20 @@ To get SubGaugeLocation
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
-  
-&lt;div id="subGauge1"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge"></div> 
+  
+<div id="subGauge1">
+</div> 
+ 
+<script>
 $("#subGauge1").ejCircularGauge({backgroundColor: "#f5b43f",scales: [{radius: 150}]});
 $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius: 250,subGauges: [{controlID: "subGauge1",height: 400,width: 200,position: { x: 200, y: 150 }}]}]});
 circulargaugeObj.getSubGaugeLocation(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6567,7 +6803,8 @@ To get SweepAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -6578,16 +6815,17 @@ To get SweepAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getSweepAngle(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6609,12 +6847,14 @@ To get TickAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.tickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -6625,16 +6865,17 @@ To get TickAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getTickAngle(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6656,12 +6897,14 @@ To get TickDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.tickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -6672,16 +6915,17 @@ To get TickDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getTickDistanceFromScale(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6703,12 +6947,14 @@ To get TickHeight
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -6719,16 +6965,17 @@ To get TickHeight
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getTickHeight(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6750,12 +6997,14 @@ To get TickPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.tickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -6766,16 +7015,17 @@ To get TickPlacement
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getTickPlacement(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6797,12 +7047,14 @@ To get TickStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.tickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -6813,16 +7065,17 @@ To get TickStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getTickStyle(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6844,12 +7097,14 @@ To get TickWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.tickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -6860,16 +7115,17 @@ To get TickWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.getTickWidth(0, 0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6891,17 +7147,20 @@ To set includeFirstValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -6912,16 +7171,17 @@ To set includeFirstValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.includeFirstValue(0, 0, false);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6943,7 +7203,8 @@ Switching the redraw option for the gauge
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">redraw value for the gauge</td>
 </tr>
@@ -6954,16 +7215,17 @@ Switching the redraw option for the gauge
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.redraw("scale");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6985,17 +7247,20 @@ To set BackNeedleLength
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7006,16 +7271,17 @@ To set BackNeedleLength
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle: true }] }] });
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setBackNeedleLength(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7037,17 +7303,20 @@ To set CustomLabelAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.customLabelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7058,16 +7327,17 @@ To set CustomLabelAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{customLabels:[{value:"MyLabel",position:{x:250,y:300},color:"#fc0606",font: { size: "20px", fontFamily: "Arial", fontStyle: "Bold" }}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setCustomLabelAngle(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7089,17 +7359,20 @@ To set CustomLabelValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.customLabelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7110,16 +7383,17 @@ To set CustomLabelValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{customLabels:[{value:"MyLabel",position:{x:180,y:300},color:"#fc0606",font:{size: "20px", fontFamily: "Arial", fontStyle: "Bold" }}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setCustomLabelValue(0, 0, "CircularGauge");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7141,17 +7415,20 @@ To set LabelAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.angle</code></td>
+<td class="name">{% highlight html %}
+argument.angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">angle value for the gauge</td>
 </tr>
@@ -7162,16 +7439,17 @@ To set LabelAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setLabelAngle(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7193,17 +7471,20 @@ To set LabelDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7214,16 +7495,17 @@ To set LabelDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setLabelDistanceFromScale(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7245,17 +7527,20 @@ To set LabelPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7266,16 +7551,17 @@ To set LabelPlacement
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setLabelPlacement(0, 0, "far");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7297,17 +7583,20 @@ To set LabelStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7318,16 +7607,17 @@ To set LabelStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setLabelStyle(0, 0, "major");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7349,12 +7639,14 @@ To set MajorIntervalValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7365,16 +7657,17 @@ To set MajorIntervalValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setMajorIntervalValue(0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7396,17 +7689,20 @@ To set MarkerDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7417,16 +7713,17 @@ To set MarkerDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setMarkerDistanceFromScale(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7448,17 +7745,20 @@ To set MarkerStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7469,16 +7769,17 @@ To set MarkerStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setMarkerStyle(0, 0, "rectangle");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7500,12 +7801,14 @@ To set MaximumValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7516,16 +7819,17 @@ To set MaximumValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setMaximumValue(0, 130);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7547,12 +7851,14 @@ To set MinimumValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7563,16 +7869,17 @@ To set MinimumValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setMinimumValue(0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7594,12 +7901,14 @@ To set MinorIntervalValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7610,16 +7919,17 @@ To set MinorIntervalValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setMinorIntervalValue(0, 2);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7641,17 +7951,20 @@ To set NeedleStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7662,16 +7975,17 @@ To set NeedleStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setNeedleStyle(0, 0, "arrow");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7693,12 +8007,14 @@ To set PointerCapBorderWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7709,16 +8025,17 @@ To set PointerCapBorderWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setPointerCapBorderWidth(0, 5);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7740,12 +8057,14 @@ To set PointerCapRadius
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7756,16 +8075,17 @@ To set PointerCapRadius
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setPointerCapRadius(0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7787,17 +8107,20 @@ To set PointerLength
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7808,16 +8131,17 @@ To set PointerLength
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setPointerLength(0, 0, 90);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7839,17 +8163,20 @@ To set PointerNeedleType
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7860,16 +8187,17 @@ To set PointerNeedleType
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setPointerNeedleType(0, 0, "triangle");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7891,17 +8219,20 @@ To set PointerPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7912,16 +8243,17 @@ To set PointerPlacement
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setPointerPlacement(0, 0,"near");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7943,17 +8275,20 @@ To set PointerValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -7964,16 +8299,17 @@ To set PointerValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setPointerValue(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7995,17 +8331,20 @@ To set PointerWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8016,16 +8355,17 @@ To set PointerWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setPointerWidth(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8047,17 +8387,20 @@ To set RangeBorderWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8068,16 +8411,17 @@ To set RangeBorderWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setRangeBorderWidth(0, 0, 5);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8099,17 +8443,20 @@ To set RangeDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8120,16 +8467,17 @@ To set RangeDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setRangeDistanceFromScale(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8151,17 +8499,20 @@ To set RangeEndValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8172,16 +8523,17 @@ To set RangeEndValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setRangeEndValue(0, 0, 70);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8203,17 +8555,20 @@ To set RangePosition
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8224,16 +8579,17 @@ To set RangePosition
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setRangePosition(0, 0, "far");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8255,17 +8611,20 @@ To set RangeSize
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8276,16 +8635,17 @@ To set RangeSize
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setRangeSize(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8307,17 +8667,20 @@ To set RangeStartValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8328,16 +8691,17 @@ To set RangeStartValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{distanceFromScale: -30,startValue: 0,endValue: 70}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setRangeStartValue(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8359,12 +8723,14 @@ To set ScaleBarSize
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8375,16 +8741,17 @@ To set ScaleBarSize
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setScaleBarSize(0, 160);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8406,12 +8773,14 @@ To set ScaleBorderWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8422,16 +8791,17 @@ To set ScaleBorderWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge({ scales: [{showScaleBar: true, size: 6, border:{width: 1.5} }] });
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setScaleBorderWidth(0, 3);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8453,12 +8823,14 @@ To set ScaleDirection
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8469,16 +8841,17 @@ To set ScaleDirection
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setScaleDirection(0, "clockwise");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8500,12 +8873,14 @@ To set ScaleRadius
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8516,16 +8891,17 @@ To set ScaleRadius
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setScaleRadius(0, 140);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8547,12 +8923,14 @@ To set StartAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8563,16 +8941,17 @@ To set StartAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setStartAngle(0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8594,17 +8973,20 @@ To set SubGaugeLocation
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.GaugeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.GaugeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">GaugeIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8615,19 +8997,20 @@ To set SubGaugeLocation
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;div id="subGauge1"&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+<div id="CoreCircularGauge"></div> 
+ 
+<div id="subGauge1">
+</div> 
+<script>
 $("#subGauge1").ejCircularGauge({backgroundColor: "#f5b43f",scales: [{radius: 150}]});
 $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius: 250,subGauges: [{controlID: "subGauge1",height: 400,width: 200,position: { x: 200, y: 150 }}]}]});
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setSubGaugeLocation(0, 0, {x:50,y:100});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8649,12 +9032,14 @@ To set SweepAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8665,16 +9050,17 @@ To set SweepAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setSweepAngle(0, 220);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8696,17 +9082,20 @@ To set TickAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.tickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8717,16 +9106,17 @@ To set TickAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setTickAngle(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8748,17 +9138,20 @@ To set TickDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.tickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8769,16 +9162,17 @@ To set TickDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setTickDistanceFromScale(0, 0, 15);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8800,17 +9194,20 @@ To set TickHeight
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.tickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8821,16 +9218,17 @@ To set TickHeight
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setTickHeight(0, 0, 10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8852,17 +9250,20 @@ To set TickPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.tickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8873,16 +9274,17 @@ To set TickPlacement
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt; 
+<script> 
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setTickPlacement(0, 0, "near");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8904,17 +9306,20 @@ To set TickStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.tickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8925,16 +9330,17 @@ To set TickStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setTickStyle(0, 0, "minor");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8956,17 +9362,20 @@ To set TickWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.tickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -8977,16 +9386,17 @@ To set TickWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge"></div> 
   
-&lt;script&gt;
+<script>
 $("#CoreCircularGauge").ejCircularGauge();
 var circulargaugeObj = $("#CoreCircularGauge").data("ejCircularGauge");
 circulargaugeObj.setTickWidth(0, 0, 5);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -9012,57 +9422,68 @@ Triggers while the custom labels are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the custom label</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the custom label belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the custom label style</td>
 </tr>
 <tr>
-<td class="name"><code>args.customLabelElement</code></td>
+<td class="name">{% highlight html %}
+args.customLabelElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current custom label element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.customLabelIndex</code></td>
+<td class="name">{% highlight html %}
+args.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the custom label.</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -9073,17 +9494,18 @@ Triggers while the custom labels are being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({
    drawCustomLabel: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9105,57 +9527,68 @@ Triggers while the indicators are being started to drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the indicator</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the indicator belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the indicator style</td>
 </tr>
 <tr>
-<td class="name"><code>args.indicatorElement</code></td>
+<td class="name">{% highlight html %}
+args.indicatorElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current indicator element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.indicatorIndex</code></td>
+<td class="name">{% highlight html %}
+args.indicatorIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the indicator.</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -9166,17 +9599,18 @@ Triggers while the indicators are being started to drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({
    drawIndicators: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9198,47 +9632,56 @@ Triggers while the labels are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the labels</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the label belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the label style</td>
 </tr>
 <tr>
-<td class="name"><code>args.label</code></td>
+<td class="name">{% highlight html %}
+args.label{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the label object of the gauge.
 <table class="params">
@@ -9251,17 +9694,20 @@ Triggers while the labels are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>angle</code></td>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the labels.</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current label element.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the label.</td>
 </tr>
@@ -9270,12 +9716,14 @@ Triggers while the labels are being drawn on the gauge.
 </td>
 </tr>
 <tr>
-<td class="name"><code>args.pointerValue</code></td>
+<td class="name">{% highlight html %}
+args.pointerValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the label.</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -9286,17 +9734,18 @@ Triggers while the labels are being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({
    drawLabels: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9318,42 +9767,50 @@ Triggers while the pointer cap is being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer cap.</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer cap style</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -9364,17 +9821,18 @@ Triggers while the pointer cap is being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({
    drawPointerCap: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9396,47 +9854,56 @@ Triggers while the pointers are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
-<td class="name"><code>args.pointer</code></td>
+<td class="name">{% highlight html %}
+args.pointer{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer object of the gauge.
 <table class="params">
@@ -9449,22 +9916,26 @@ Triggers while the pointers are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>angle</code></td>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current pointer element.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
@@ -9473,7 +9944,8 @@ Triggers while the pointers are being drawn on the gauge.
 </td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -9484,17 +9956,18 @@ Triggers while the pointers are being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({
    drawPointers: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9516,57 +9989,68 @@ Triggers when the ranges begin to be getting drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the range</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the range belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the range style</td>
 </tr>
 <tr>
-<td class="name"><code>args.rangeElement</code></td>
+<td class="name">{% highlight html %}
+args.rangeElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current range element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+args.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the range.</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -9577,17 +10061,18 @@ Triggers when the ranges begin to be getting drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({
    drawRange: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9609,47 +10094,56 @@ Triggers while the ticks are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the ticks</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the tick belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the ticks style</td>
 </tr>
 <tr>
-<td class="name"><code>args.tick</code></td>
+<td class="name">{% highlight html %}
+args.tick{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the tick object of the gauge.
 <table class="params">
@@ -9662,17 +10156,20 @@ Triggers while the ticks are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>angle</code></td>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the tick.</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the current tick element.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the tick.</td>
 </tr>
@@ -9681,12 +10178,14 @@ Triggers while the ticks are being drawn on the gauge.
 </td>
 </tr>
 <tr>
-<td class="name"><code>args.pointerValue</code></td>
+<td class="name">{% highlight html %}
+args.pointerValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the label value of the tick.</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -9697,17 +10196,18 @@ Triggers while the ticks are being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({
    drawTicks: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9729,32 +10229,38 @@ Triggers while the gauge start to Load.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">cancel</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.Model</code></td>
+<td class="name">{% highlight html %}
+args.Model{% endhighlight %}</td>
 <td class="type"><span class="param-type"><a href="Model.html">Model</a></span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">scaleElement</span></td>
 <td class="description last">returns the entire scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">context</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -9765,16 +10271,17 @@ Triggers while the gauge start to Load.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CircularGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CircularGauge1"></div> 
+ 
+<script>
 $("#CircularGauge1").ejCircularGauge({
    load: function (args) {}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -9796,42 +10303,50 @@ Triggers when the left mouse button is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.pointer</code></td>
+<td class="name">{% highlight html %}
+args.pointer{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer object
 <table class="params">
@@ -9844,22 +10359,26 @@ Triggers when the left mouse button is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the pointer Index</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer element.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>angle</code></td>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the pointer.</td>
 </tr>
@@ -9868,12 +10387,14 @@ Triggers when the left mouse button is clicked.
 </td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer.</td>
 </tr>
@@ -9884,17 +10405,18 @@ Triggers when the left mouse button is clicked.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({
    mouseClick: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9916,42 +10438,50 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.pointer</code></td>
+<td class="name">{% highlight html %}
+args.pointer{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer object
 <table class="params">
@@ -9964,22 +10494,26 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the pointer Index</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer element.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>angle</code></td>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the pointer.</td>
 </tr>
@@ -9988,12 +10522,14 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 </td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer.</td>
 </tr>
@@ -10004,17 +10540,18 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({
    mouseClickMove: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10036,42 +10573,50 @@ Triggers when the mouse click is released.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.pointer</code></td>
+<td class="name">{% highlight html %}
+args.pointer{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer object
 <table class="params">
@@ -10084,22 +10629,26 @@ Triggers when the mouse click is released.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the pointer Index</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer element.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>angle</code></td>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the pointer.</td>
 </tr>
@@ -10108,12 +10657,14 @@ Triggers when the mouse click is released.
 </td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer.</td>
 </tr>
@@ -10124,17 +10675,18 @@ Triggers when the mouse click is released.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({
    mouseClickUp: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10156,32 +10708,38 @@ Triggers when the rendering of the gauge is completed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the entire scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -10192,16 +10750,17 @@ Triggers when the rendering of the gauge is completed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreCircularGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>
 $("#CoreCircularGauge").ejCircularGauge({
    renderComplete: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 

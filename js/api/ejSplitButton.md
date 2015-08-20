@@ -33,19 +33,20 @@ $(element).ejSplitButton<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 // simple control creation
  $("#sbutton").ejSplitButton({targetID:"target",width:100});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -125,20 +126,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set arrowPosition API value during initialization  
 $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.ContentType.TextAndImage,
   buttonMode: ej.ButtonMode.Dropdown, arrowPosition: ej.ArrowPosition.Left, prefixIcon:"e-uiLight e-icon e-handup"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -180,20 +182,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set buttonMode API value during initialization  
 $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.ContentType.TextAndImage,
   buttonMode: ej.ButtonMode.Dropdown, prefixIcon:"e-uiLight e-icon e-handup"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -235,18 +238,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script> 
 //To set contentType API value during initialization  
 $("#sbutton").ejSplitButton({ targetID: "target",width:100, contentType:  ej.ContentType.TextOnly}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -288,19 +292,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set cssClass API value during initialization  
 $("#sbutton").ejSplitButton({targetID: "target",width:100,cssClass: "gradient-lime"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -342,19 +347,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set enabled API value during initialization  
 $("#sbutton").ejSplitButton({  targetID: "target",width:100,enabled:  true });          
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -396,19 +402,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set enableRTL API value during initialization  
 $("#sbutton").ejSplitButton({targetID: "target",width:100,enableRTL : true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -450,18 +457,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script> 
 //To set height API value during initialization  
 $("#sbutton").ejSplitButton({  targetID: "target",width:100,height: 28 });                       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -503,20 +511,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set imagePositions API value during initialization  
 $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.ContentType.TextAndImage,
   imagePosition: ej.ImagePosition.ImageRight,prefixIcon:"e-uiLight e-icon e-handup"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -558,19 +567,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set prefixIcon API value during initialization  
 $("#sbutton").ejSplitButton({targetID: "target",width:100,contentType: "imageonly",prefixIcon:"e-uiLight e-icon e-handup" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -612,19 +622,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set showRoundedCorner API value during initialization  
 $("#sbutton").ejSplitButton({ targetID:"target",width:100,showRoundedCorner: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -666,19 +677,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set size API value during initialization  
         $("#sbutton").ejSplitButton({ targetID:"target",width:100, size: ej.ButtonSize.Mini});                  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -720,19 +732,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set suffixIcon API value during initialization  
 $("#sbutton").ejSplitButton({targetID:"target",width:100,contentType:"imageboth",prefixIcon:"e-uiLight e-icon-handup",suffixIcon:"e-uiLight e-icon-padlockclosed"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -774,19 +787,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set targetID API value during initialization  
 $("#sbutton").ejSplitButton({targetID:"target",width:100 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -828,19 +842,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set text API value during initialization  
 $("#sbutton").ejSplitButton({  targetID: "target",width:100, text: "New" });             
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -882,19 +897,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To set width API value during initialization  
 $("#sbutton").ejSplitButton({  targetID: "target",width:100 });                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -927,35 +943,37 @@ destroy the split button widget all events bound using this._on will be unbind a
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To Destroy the Split Button control.          
 $("#sbutton").ejSplitButton({targetID: "target",width:100});
 var SptObj=$("#sbutton").data("ejSplitButton");
 SptObj.destroy();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 // to destroy the button                
 $("#sbutton").ejSplitButton({targetID: "target",width:100});    
 $("#sbutton").ejSplitButton("destroy");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -981,35 +999,37 @@ To disable the split button
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To Disable the Split Button control.          
 $("#sbutton").ejSplitButton({targetID: "target",width:100});
 var SptObj=$("#sbutton").data("ejSplitButton");
 SptObj.disable();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To Disable the Split Button control.          
 $("#sbutton").ejSplitButton({targetID: "target",width:100});
 $("#sbutton").ejSplitButton("disable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1035,35 +1055,37 @@ To Enable the split button
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To Enable the Split Button control.           
 $("#sbutton").ejSplitButton({targetID: "target",width:100});
 var SptObj=$("#sbutton").data("ejSplitButton");
 SptObj.enable();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //To Enable the Split Button control.           
 $("#sbutton").ejSplitButton({targetID: "target",width:100});
 $("#sbutton").ejSplitButton("enable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1099,17 +1121,20 @@ Fires before menu of the split button control is opened.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the split button model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1122,20 +1147,21 @@ Fires before menu of the split button control is opened.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 // beforeOpen event for menu of split button control
  $("#sbutton").ejSplitButton({targetID: "target",width:100,
   beforeOpen: function (args) {}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1164,7 +1190,8 @@ Fires when Button control is clicked successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from split button
 <table class="params">
@@ -1177,27 +1204,32 @@ Fires when Button control is clicked successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the split button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the target of the current object.</td>
 </tr>
 <tr>
-<td class="name"><code>status</code></td>
+<td class="name">{% highlight html %}
+status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">return the button state</td>
 </tr>
@@ -1214,22 +1246,23 @@ Fires when Button control is clicked successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //click event for split button
 $("#sbutton"). ejSplitButton ({
                 targetID: "target",width:100,
      click: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1258,7 +1291,8 @@ Fires after Split Button control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -1271,17 +1305,20 @@ Fires after Split Button control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the splite button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1298,22 +1335,23 @@ Fires after Split Button control is created.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //create event for split button
 $("#sbutton"). ejSplitButton ({
                 targetID: "target",width:100,
      create: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1342,7 +1380,8 @@ Fires when the Split Button is destroyed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from split button
 <table class="params">
@@ -1355,17 +1394,20 @@ Fires when the Split Button is destroyed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the split button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1382,22 +1424,23 @@ Fires when the Split Button is destroyed successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //destroy event for split button
 $("#sbutton"). ejSplitButton ({
                targetID: "target",width:100,
      destroy: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1426,7 +1469,8 @@ Fires when a menu item is Hovered out successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from split button
 <table class="params">
@@ -1439,27 +1483,32 @@ Fires when a menu item is Hovered out successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the split button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>event.element</code></td>
+<td class="name">{% highlight html %}
+event.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the clicked menu item element</td>
 </tr>
 <tr>
-<td class="name"><code>event</code></td>
+<td class="name">{% highlight html %}
+event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the event
 <table class="params">
@@ -1472,12 +1521,14 @@ Fires when a menu item is Hovered out successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>ID</code></td>
+<td class="name">{% highlight html %}
+ID{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">return the menu item id</td>
 </tr>
 <tr>
-<td class="name"><code>Text</code></td>
+<td class="name">{% highlight html %}
+Text{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">return the clicked menu item text</td>
 </tr>
@@ -1498,22 +1549,23 @@ Fires when a menu item is Hovered out successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //itemMouseOut event for split button
 $("#sbutton"). ejSplitButton ({
                 targetID: "target",width:100,
      itemMouseOut: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1542,7 +1594,8 @@ Fires when a menu item is Hovered in successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from split button
 <table class="params">
@@ -1555,27 +1608,32 @@ Fires when a menu item is Hovered in successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the split button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>event.element</code></td>
+<td class="name">{% highlight html %}
+event.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the clicked menu item element</td>
 </tr>
 <tr>
-<td class="name"><code>event</code></td>
+<td class="name">{% highlight html %}
+event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the event
 <table class="params">
@@ -1588,12 +1646,14 @@ Fires when a menu item is Hovered in successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>ID</code></td>
+<td class="name">{% highlight html %}
+ID{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">return the menu item id</td>
 </tr>
 <tr>
-<td class="name"><code>Text</code></td>
+<td class="name">{% highlight html %}
+Text{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">return the clicked menu item text</td>
 </tr>
@@ -1614,22 +1674,23 @@ Fires when a menu item is Hovered in successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //itemMouseOver event for split button
 $("#sbutton"). ejSplitButton ({
                 targetID: "target",width:100,
      itemMouseOver: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1658,7 +1719,8 @@ Fires when a menu item is clicked successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from split button
 <table class="params">
@@ -1671,37 +1733,44 @@ Fires when a menu item is clicked successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the split button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>event.element</code></td>
+<td class="name">{% highlight html %}
+event.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the clicked menu item element</td>
 </tr>
 <tr>
-<td class="name"><code>selectedItem</code></td>
+<td class="name">{% highlight html %}
+selectedItem{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the selected item</td>
 </tr>
 <tr>
-<td class="name"><code>event.menuId</code></td>
+<td class="name">{% highlight html %}
+event.menuId{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">return the menu id</td>
 </tr>
 <tr>
-<td class="name"><code>event.menuText</code></td>
+<td class="name">{% highlight html %}
+event.menuText{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">return the clicked menu item text</td>
 </tr>
@@ -1718,22 +1787,23 @@ Fires when a menu item is clicked successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="sbutton"&gt;File&lt;/button&gt;
-&lt;ul id="target"&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Open..&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Save&lt;/a&gt;&lt;/li&gt;
-   &lt;li&gt;&lt;a href="#"&gt;Delete&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
 //itemSelected event for split button
 $("#sbutton"). ejSplitButton ({
                targetID: "target",width:100,
      itemSelected: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

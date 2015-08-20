@@ -23,28 +23,29 @@ $(element).ejListView<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set listview in obtrusive way.
-&lt;div id="lb"&gt;
-         &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt; 
+<div id="lb">
+         <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script> 
 // Create ListView
 $("#lb").ejListView(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -94,39 +95,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the cssClass property in obtrusive way.
-&lt;div id="lb" &gt;
-         &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" >
+         <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set cssClass on initialization. 
 //To set cssClass API value 
 $("#lb").ejListView ({ cssClass: "customclass" });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set  cssClass, after initialization:
 // Get the cssClass API value.          
  $("#lb").ejListView ("option", "cssClass");                    
 // Set the cssClass API
 $("#lb").ejListView ("option", "cssClass", "customclass");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -152,12 +155,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the dataSource property in obtrusive way.
-&lt;div id="lb" &gt;
-&lt;/div&gt;           
-&lt;script&gt;
+<div id="lb" >
+</div>           
+<script>
 $(function(){
 $("#lb").ejListView({dataSource:window.dbitem});
 });
@@ -169,18 +173,19 @@ window.dbitem =
     { "text": "100 Albums - $5 Each"},
     { "text": "Hip-Hop and R&amp;B Sale"},
     { "text": "CD Deals"}];
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code>       
-&lt;script&gt;
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+       
+<script>
 //Get or set  dataSource, after initialization:
 // Get the dataSource API value.                
 $("#lb").ejListView ("option", "dataSource");                   
 // Set the dataSource API
 $("#lb").ejListView ("option", "dataSource", true);   
-&lt;/script&gt;                     </code>
-</pre>
+</script>                     {% endhighlight %}
+
 
 
 
@@ -206,32 +211,34 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
+
+{% highlight html %}
+  
 //Set the enableAjax property in obtrusive way.
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Man of Steel" data-ej-href="load1.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="World War Z" data-ej-href="load2.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="Monsters University" data-ej-href="load3.html" &gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+        <ul>
+                <li data-ej-text="Man of Steel" data-ej-href="load1.html" ></li>
+                <li data-ej-text="World War Z" data-ej-href="load2.html" ></li>
+                <li data-ej-text="Monsters University" data-ej-href="load3.html" ></li>
+        </ul>
+</div>
+<script>
 // Set enableAjax on initialization. 
 //To set enableAjax API value
 $("#lb").ejListView ({ enableAjax: true });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set  enableAjax, after initialization:
 // Get the enableAjax API value.                
 $("#lb").ejListView ("option", "enableAjax");                   
 // Set the enableAjax API
 $("#lb").ejListView ("option", "enableAjax", true);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -257,32 +264,34 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the enableCache property in obtrusive way.
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Man of Steel" data-ej-href="load1.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="World War Z" data-ej-href="load2.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="Monsters University" data-ej-href="load3.html" &gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Man of Steel" data-ej-href="load1.html" ></li>
+                <li data-ej-text="World War Z" data-ej-href="load2.html" ></li>
+                <li data-ej-text="Monsters University" data-ej-href="load3.html" ></li>
+        </ul>
+</div>
+<script>
 // Set enableCache on initialization. 
 //To set enableCache API value             
 $("#lb").ejListView ({ enableAjax: true,enableCache: true });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set  enableCache, after initialization:
 // Get the enableCache API value.               
 $("#lb").ejListView ("option", "enableCache");                  
 // Set the enableCache API
 $("#lb").ejListView ("option", "enableCache", true);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -308,39 +317,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the enableCheckMark property in obtrusive way.
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set enableCheckMark on initialization. 
 //To set enableCheckMark API value 
 $("#lb").ejListView ({ enableCheckMark: true });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set the ListView enableCheckMark, after initialization:
 // Get the enableCheckMark API value.           
 $("#lb").ejListView ("option", "enableCheckMark");                      
 // Set the enableCheckMark API
 $("#lb").ejListView ("option", "enableCheckMark", true);    
-&lt;/script&gt;        </code>
-</pre>
+</script>        {% endhighlight %}
+
 
 
 
@@ -366,39 +377,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the enableFiltering property in obtrusive way.
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set enableFiltering on initialization. 
 //To set enableFiltering API value 
 $("#lb").ejListView ({ enableFiltering: true });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set the ListView enableFiltering, after initialization:
 // Get the enableFiltering API value.           
 $("#lb").ejListView ("option", "enableFiltering");                      
 // Set the enableFiltering API
 $("#lb").ejListView ("option", "enableFiltering", true);    
-&lt;/script&gt;        </code>
-</pre>
+</script>        {% endhighlight %}
+
 
 
 
@@ -424,43 +437,45 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the enableGroupList property in obtrusive way.
-&lt;div id="lb"&gt;
-        &lt;ul data-ej-grouplisttitle="Network"&gt;
-                &lt;li data-ej-text="Airplane Mode"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Wi-Fi"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Notifications"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Location Services"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;ul data-ej-grouplisttitle="Apps"&gt;
-                &lt;li data-ej-text="Sound"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Brightness"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Wallpaper"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;ul data-ej-grouplisttitle="Settings"&gt;
-                &lt;li data-ej-text="General"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Brightness"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Wallpaper"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+        <ul data-ej-grouplisttitle="Network">
+                <li data-ej-text="Airplane Mode"></li>
+                <li data-ej-text="Wi-Fi"></li>
+                <li data-ej-text="Notifications"></li>
+                <li data-ej-text="Location Services"></li>
+        </ul>
+        <ul data-ej-grouplisttitle="Apps">
+                <li data-ej-text="Sound"></li>
+                <li data-ej-text="Brightness"></li>
+                <li data-ej-text="Wallpaper"></li>
+        </ul>
+        <ul data-ej-grouplisttitle="Settings">
+                <li data-ej-text="General"></li>
+                <li data-ej-text="Brightness"></li>
+                <li data-ej-text="Wallpaper"></li>
+        </ul>
+</div>
+<script>
 // Set enableGroupList on initialization. 
 //To set enableGroupList API value 
 $("#lb").ejListView ({ enableGroupList: true });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set  enableGroupList, after initialization:
 // Get the enableGroupList API value.           
  $("#lb").ejListView ("option", "enableGroupList");                     
 // Set the enableGroupList API
 $("#lb").ejListView ("option", "enableGroupList", true);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -486,39 +501,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the enablePersistence property in obtrusive way.
-&lt;div id="lb"&gt;
-         &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+         <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set enablePersistence on initialization. 
 //To set enablePersistence API value 
 $("#lb").ejListView ({ enablePersistence: true });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set  enablePersistence, after initialization:
 // Get the enablePersistence API value.         
  $("#lb").ejListView ("option", "enablePersistence");                   
 // Set the enablePersistence API
 $("#lb").ejListView ("option", "enablePersistence", true);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -535,12 +552,13 @@ Specifies the field settings to map the datasource.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the fieldSettings property in obtrusive way.
-&lt;div id="lb" &gt;
-&lt;/div&gt;           
-&lt;script&gt;
+<div id="lb" >
+</div>           
+<script>
 window.dbitem =
 [{ "Texts": "Discover Music", "PrimaryKeys": "1" },
     { "Texts": "Hot Singles", "ParentPrimaryKeyss": "1" },
@@ -560,18 +578,19 @@ window.musicFields = {
 $(function(){
 $("#lb").ejListView({fieldSettings:"window.musicFields",dataSource:"window.dbitem"});
 });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code>         
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+         
+<script>
 //Get or set  fieldSettings, after initialization:
 // Get the fieldSettings API value.             
 $("#lb").ejListView ("option", "fieldSettings");                        
 // Set the fieldSettings API
 $("#lb").ejListView ("option", "fieldSettings", true); 
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -597,39 +616,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the headerBackButtonText property in obtrusive way.
-&lt;div id="lb" &gt;
-         &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" >
+         <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set headerBackButtonText on initialization. 
 //To set headerBackButtonText API value 
 $("#lb").ejListView ({showHeader: true,showHeaderBackButton:true, headerBackButtonText: "Back" });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set  headerBackButtonText, after initialization:
 // Get the headerBackButtonText API value.              
  $("#lb").ejListView ("option", "headerBackButtonText");                        
 // Set the headerBackButtonText API
 $("#lb").ejListView ("option", "headerBackButtonText", "Back");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -655,39 +676,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the headerTitle property in obtrusive way.
-&lt;div id="lb" &gt;
-         &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" >
+         <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set headerTitle on initialization. 
 //To set headerTitle API value 
 $("#lb").ejListView ({ headerTitle: "Title" });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set  headerTitle, after initialization:
 // Get the headerTitle API value.               
  $("#lb").ejListView ("option", "headerTitle");                 
 // Set the headerTitle API
 $("#lb").ejListView ("option", "headerTitle", "Title");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -713,39 +736,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the height property in obtrusive way.
-&lt;div id="lb" data-ej-allowScrolling=true &gt;
-         &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" data-ej-allowScrolling=true >
+         <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set height on initialization. 
 //To set height API value 
 $("#lb").ejListView ({ height: 300 });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set  height, after initialization:
 // Get the height API value.            
  $("#lb").ejListView ("option", "height");                      
 // Set the height API
 $("#lb").ejListView ("option", "height", 300);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -771,39 +796,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the persistSelection property in obtrusive way.
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set persistSelection on initialization. 
 //To set persistSelection API value 
 $("#lb").ejListView ({ persistSelection: true });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set the ListView persistSelection, after initialization:
 // Get the persistSelection API value.          
 $("#lb").ejListView ("option", "persistSelection");                     
 // Set the persistSelection API
 $("#lb").ejListView ("option", "persistSelection", true);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -829,39 +856,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the preventSelection property in obtrusive way.
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set preventSelection on initialization. 
 //To set preventSelection API value 
 $("#lb").ejListView ({ preventSelection: true });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set the ListView preventSelection, after initialization:
 // Get the preventSelection API value.          
 $("#lb").ejListView ("option", "preventSelection");                     
 // Set the preventSelection API
 $("#lb").ejListView ("option", "preventSelection", true);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -887,12 +916,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the query property in obtrusive way.
-&lt;div id="lb" &gt;
-&lt;/div&gt;            
-&lt;script&gt;            
+<div id="lb" >
+</div>            
+<script>            
                 // DataManager creation
                 window.datasource = ej.DataManager({
         url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
@@ -901,18 +931,19 @@ Example
 $(function(){
 $("#lb").ejListView({fieldSettings:"window.dbitem",dataSource:"window.datasource",query:"ej.Query().from('Orders').select('ShipCity').take(5)"});
 });         
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code>        
-&lt;script&gt;  
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+        
+<script>  
 //Get or set  query, after initialization:
 // Get the query API value.             
 $("#lb").ejListView ("option", "query");                        
 // Set the query API
 $("#lb").ejListView ("option", "query", true);  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -938,31 +969,32 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the renderTemplate property in obtrusive way.
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-templateid="target1"&gt;&lt;/li&gt;
-                &lt;li data-ej-templateid="target2"&gt;&lt;/li&gt;
-                &lt;li data-ej-templateid="target3"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="target1"&gt;
-        &lt;div&gt; Template1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="target2"&gt;
-        &lt;div&gt; Template2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="target3"&gt;
-        &lt;div&gt; Template3 &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+        <ul>
+                <li data-ej-templateid="target1"></li>
+                <li data-ej-templateid="target2"></li>
+                <li data-ej-templateid="target3"></li>
+        </ul>
+</div>
+<div id="target1">
+        <div> Template1 </div>
+</div>
+<div id="target2">
+        <div> Template2 </div>
+</div>
+<div id="target3">
+        <div> Template3 </div>
+</div>
+<script>
 // Set renderTemplate on initialization. 
 //To set renderTemplate API value 
 $("#lb").ejListView ({ renderTemplate: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -988,39 +1020,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the selectedItemIndex property in obtrusive way.
-&lt;div id="lb"&gt;
-         &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+         <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set selectedItemIndex on initialization. 
 //To set selectedItemIndex API value 
 $("#lb").ejListView ({ selectedItemIndex: 2 });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set  selectedItemIndex, after initialization:
 // Get the selectedItemIndex API value.         
  $("#lb").ejListView ("option", "selectedItemIndex");                   
 // Set the selectedItemIndex API
 $("#lb").ejListView ("option", "selectedItemIndex", 2);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1046,39 +1080,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the showHeader property in obtrusive way.
-&lt;div id="lb"&gt;
-         &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+         <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set showHeader on initialization. 
 //To set showHeader API value 
 $("#lb").ejListView ({ showHeader: true });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set  showHeader, after initialization:
 // Get the showHeader API value.                
  $("#lb").ejListView ("option", "showHeader");                  
 // Set the showHeader API
 $("#lb").ejListView ("option", "showHeader", true);  
-&lt;/script&gt;          </code>
-</pre>
+</script>          {% endhighlight %}
+
 
 
 
@@ -1104,26 +1140,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the templateId property in unobtrusive way.
-&lt;div id="lb" data-role="ejlistview"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-rendertemplate=true data-ej-templateid="target1"&gt;&lt;/li&gt;
-                &lt;li data-ej-rendertemplate=true data-ej-templateid="target2"&gt;&lt;/li&gt;
-                &lt;li data-ej-rendertemplate=true data-ej-templateid="target3"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;div id="target1"&gt;
-        &lt;div&gt; Template1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="target2"&gt;
-        &lt;div&gt; Template2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div id="target3"&gt;
-        &lt;div&gt; Template3 &lt;/div&gt;
-&lt;/div&gt;</code>
-</pre>
+<div id="lb" data-role="ejlistview">
+        <ul>
+                <li data-ej-rendertemplate=true data-ej-templateid="target1"></li>
+                <li data-ej-rendertemplate=true data-ej-templateid="target2"></li>
+                <li data-ej-rendertemplate=true data-ej-templateid="target3"></li>
+        </ul>
+</div>
+<div id="target1">
+        <div> Template1 </div>
+</div>
+<div id="target2">
+        <div> Template2 </div>
+</div>
+<div id="target3">
+        <div> Template3 </div>
+</div>{% endhighlight %}
+
 
 
 
@@ -1149,39 +1186,41 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set the width property in obtrusive way.
-&lt;div id="lb"&gt;
-         &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+         <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Set width on initialization. 
 //To set width API value 
 $("#lb").ejListView ({ width: 200 });
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 //Get or set  width, after initialization:
 // Get the width API value.             
  $("#lb").ejListView ("option", "width");                       
 // Set the width API
 $("#lb").ejListView ("option", "width", 200);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Methods
@@ -1202,30 +1241,31 @@ To add item in the given index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call addItem method.
 $(document).ready(function(){
 $("#lb").ejListView();
-$("#lb").ejListView("addItem",$("&amp;ltli data-ej-text='Comic / Cartoon'&gt;&lt;/li&gt;"),2);
+$("#lb").ejListView("addItem",$("&amp;ltli data-ej-text='Comic / Cartoon'></li>"),2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1242,30 +1282,31 @@ To check all the items.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call checkAllItem method.
 $(document).ready(function(){
 $("#lb").ejListView({enableCheckMark:true});
 $("#lb").ejListView("checkAllItem");
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1282,30 +1323,31 @@ To check item in the given index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call checkItem method.
 $(document).ready(function(){
 $("#lb").ejListView({enableCheckMark:true});
 $("#lb").ejListView("checkItem",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1322,13 +1364,14 @@ To clear all the list item in the control before updating with new datasource.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-&lt;/div&gt;  
-&lt;input id="button" /&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+</div>  
+<input id="button" />
          
-&lt;script&gt;
+<script>
 $(document).ready(function(){
 $("#button").ejButton();
 $("#button").ejButton({ text: "Clear" });
@@ -1355,8 +1398,8 @@ window.dbitem2 =
     { "text": "Games" },
     { "text": "Chat"},
     { "text": "Others"}];      
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1373,30 +1416,31 @@ To make the item in the given index to be default state.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call deActive method.
 $(document).ready(function(){
 $("#lb").ejListView({persistSelection:true});
 $("#lb").ejListView("deActive",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1413,30 +1457,31 @@ To disable item in the given index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call disableItem method.
 $(document).ready(function(){
 $("#lb").ejListView();
 $("#lb").ejListView("disableItem",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1453,30 +1498,31 @@ To enable item in the given index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call enableItem method.
 $(document).ready(function(){
 $("#lb").ejListView();
 $("#lb").ejListView("enableItem",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1493,30 +1539,31 @@ To get the active item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call getActiveItem method.
 $(document).ready(function(){
 $("#lb").ejListView({persistSelection:true});
 $("#lb").ejListView("getActiveItem");
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1533,30 +1580,31 @@ To get the text of the active item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call getActiveItemText method.
 $(document).ready(function(){
 $("#lb").ejListView({persistSelection:true});
 $("#lb").ejListView("getActiveItemText");
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1573,30 +1621,31 @@ To get all the checked items.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call getCheckedItems method.
 $(document).ready(function(){
 $("#lb").ejListView({enableCheckMark:true})
 $("#lb").ejListView("getCheckedItems");
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1613,30 +1662,31 @@ To get the text of all the checked items.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call getCheckedItemsText method.
 $(document).ready(function(){
 $("#lb").ejListView({enableCheckMark:true})
 $("#lb").ejListView("getCheckedItemsText");
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1653,30 +1703,31 @@ To get the total item count.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call getItemsCount method.
 $(document).ready(function(){
 $("#lb").ejListView();
 $("#lb").ejListView("getItemsCount");
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1693,30 +1744,31 @@ To get the text of the item in the given index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call getItemText method.
 $(document).ready(function(){
 $("#lb").ejListView();
 $("#lb").ejListView("getItemText",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1733,30 +1785,31 @@ To check whether the item in the given index has child item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call hasChild method.
 $(document).ready(function(){
 $("#lb").ejListView();
 $("#lb").ejListView("hasChild",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1773,30 +1826,31 @@ To hide the list.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call hide method.
 $(document).ready(function(){
 $("#lb").ejListView();
 $("#lb").ejListView("hide");
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1813,30 +1867,31 @@ To hide item in the given index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call hideItem method.
 $(document).ready(function(){
 $("#lb").ejListView();
 $("#lb").ejListView("hideItem",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1853,30 +1908,31 @@ To check whether item in the given index is checked.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call isChecked method.
 $(document).ready(function(){
 $("#lb").ejListView({enableCheckMark:true});
 $("#lb").ejListView("isChecked",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1893,23 +1949,24 @@ To load the ajax content while selecting the item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Man of Steel" data-ej-href="load1.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="World War Z" data-ej-href="load2.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="Monsters University" data-ej-href="load3.html" &gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Man of Steel" data-ej-href="load1.html" ></li>
+                <li data-ej-text="World War Z" data-ej-href="load2.html" ></li>
+                <li data-ej-text="Monsters University" data-ej-href="load3.html" ></li>
+        </ul>
+</div>
+<script>
 // Call enableAjax method.
 $(document).ready(function(){
 $("#lb").ejListView ({ enableAjax: true });
 $("#lb").ejListView("loadAjaxContent","load1.html");
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1926,30 +1983,31 @@ To remove the check mark either for specific item in the given index or for all 
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call removeCheckMark method.
 $(document).ready(function(){
 $("#lb").ejListView({enableCheckMark:true});
 $("#lb").ejListView("removeCheckMark",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1966,30 +2024,31 @@ To remove item in the given index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call removeItem method.
 $(document).ready(function(){
 $("#lb").ejListView();
 $("#lb").ejListView("removeItem",3);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2006,30 +2065,31 @@ To select item in the given index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call selectItem method.
 $(document).ready(function(){
 $("#lb").ejListView();
 $("#lb").ejListView("selectItem",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2046,30 +2106,31 @@ To make the item in the given index to be active state.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call setActive method.
 $(document).ready(function(){
 $("#lb").ejListView({persistSelection:true});
 $("#lb").ejListView("setActive",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2086,30 +2147,31 @@ To show the list.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call show method.
 $(document).ready(function(){
 $("#lb").ejListView();
 $("#lb").ejListView("show");
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2126,30 +2188,31 @@ To show item in the given index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call showItem method.
 $(document).ready(function(){
 $("#lb").ejListView();
 $("#lb").ejListView("showItem",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2166,30 +2229,31 @@ To uncheck all the items.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call unCheckAllItem method.
 $(document).ready(function(){
 $("#lb").ejListView({enableCheckMark:true});
 $("#lb").ejListView("unCheckAllItem");
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2206,30 +2270,31 @@ To uncheck item in the given index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 // Call unCheckItem method.
 $(document).ready(function(){
 $("#lb").ejListView({enableCheckMark:true});
 $("#lb").ejListView("unCheckItem",2);
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -2255,7 +2320,8 @@ Event triggers before the ajax request happens.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from listview.
 <table class="params">
@@ -2268,22 +2334,26 @@ Event triggers before the ajax request happens.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the model value of the control.</td>
 </tr>
 <tr>
-<td class="name"><code>ajaxData</code></td>
+<td class="name">{% highlight html %}
+ajaxData{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the ajax settings.</td>
 </tr>
@@ -2298,25 +2368,26 @@ Event triggers before the ajax request happens.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //ajaxBeforeLoad event for ListView
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Man of Steel" data-ej-href="load1.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="World War Z" data-ej-href="load2.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="Monsters University" data-ej-href="load3.html" &gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Man of Steel" data-ej-href="load1.html" ></li>
+                <li data-ej-text="World War Z" data-ej-href="load2.html" ></li>
+                <li data-ej-text="Monsters University" data-ej-href="load3.html" ></li>
+        </ul>
+</div>
+<script>
 $(document).ready(function(){            
 $("#lb").ejListView({enableAjax: true,
         ajaxBeforeLoad: function (args) { //handle the event 
 }
         });           
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2338,7 +2409,8 @@ Event triggers after the ajax content loaded completely.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from listview.
 <table class="params">
@@ -2351,17 +2423,20 @@ Event triggers after the ajax content loaded completely.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the model value of the control.</td>
 </tr>
@@ -2376,25 +2451,26 @@ Event triggers after the ajax content loaded completely.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //ajaxComplete event for ListView
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Man of Steel" data-ej-href="load1.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="World War Z" data-ej-href="load2.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="Monsters University" data-ej-href="load3.html" &gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Man of Steel" data-ej-href="load1.html" ></li>
+                <li data-ej-text="World War Z" data-ej-href="load2.html" ></li>
+                <li data-ej-text="Monsters University" data-ej-href="load3.html" ></li>
+        </ul>
+</div>
+<script>
 $(document).ready(function(){            
 $("#lb").ejListView({enableAjax: true,
         ajaxComplete: function (args) { //handle the event 
 }
         });         
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2416,7 +2492,8 @@ Event triggers when the ajax request failed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from listview.
 <table class="params">
@@ -2429,42 +2506,50 @@ Event triggers when the ajax request failed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the model value of the control.</td>
 </tr>
 <tr>
-<td class="name"><code>errorThrown</code></td>
+<td class="name">{% highlight html %}
+errorThrown{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the error thrown in the ajax post.</td>
 </tr>
 <tr>
-<td class="name"><code>textStatus</code></td>
+<td class="name">{% highlight html %}
+textStatus{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the status.</td>
 </tr>
 <tr>
-<td class="name"><code>item</code></td>
+<td class="name">{% highlight html %}
+item{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the curent list item.</td>
 </tr>
 <tr>
-<td class="name"><code>text</code></td>
+<td class="name">{% highlight html %}
+text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current item text.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current item index.</td>
 </tr>
@@ -2479,25 +2564,26 @@ Event triggers when the ajax request failed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //ajaxError event for ListView
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Man of Steel" data-ej-href="load1.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="World War Z" data-ej-href="load2.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="Monsters University" data-ej-href="load3.html" &gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Man of Steel" data-ej-href="load1.html" ></li>
+                <li data-ej-text="World War Z" data-ej-href="load2.html" ></li>
+                <li data-ej-text="Monsters University" data-ej-href="load3.html" ></li>
+        </ul>
+</div>
+<script>
 $(document).ready(function(){            
 $("#lb").ejListView({enableAjax: true,
         ajaxError: function (args) { //handle the event 
 }
         });         
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2519,7 +2605,8 @@ Event triggers after the ajax content loaded successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from listview.
 <table class="params">
@@ -2532,42 +2619,50 @@ Event triggers after the ajax content loaded successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the model value of the control.</td>
 </tr>
 <tr>
-<td class="name"><code>content</code></td>
+<td class="name">{% highlight html %}
+content{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the ajax current content.</td>
 </tr>
 <tr>
-<td class="name"><code>item</code></td>
+<td class="name">{% highlight html %}
+item{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the curent list item.</td>
 </tr>
 <tr>
-<td class="name"><code>text</code></td>
+<td class="name">{% highlight html %}
+text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current item text.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current item index.</td>
 </tr>
 <tr>
-<td class="name"><code>url</code></td>
+<td class="name">{% highlight html %}
+url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current url of the ajax post.</td>
 </tr>
@@ -2582,25 +2677,26 @@ Event triggers after the ajax content loaded successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //ajaxSuccess event for ListView
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Man of Steel" data-ej-href="load1.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="World War Z" data-ej-href="load2.html" &gt;&lt;/li&gt;
-                &lt;li data-ej-text="Monsters University" data-ej-href="load3.html" &gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Man of Steel" data-ej-href="load1.html" ></li>
+                <li data-ej-text="World War Z" data-ej-href="load2.html" ></li>
+                <li data-ej-text="Monsters University" data-ej-href="load3.html" ></li>
+        </ul>
+</div>
+<script>
 $(document).ready(function(){            
 $("#lb").ejListView({enableAjax: true,
         ajaxSuccess: function (args) { //handle the event 
 }
         });         
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2622,7 +2718,8 @@ Event triggers before the items loaded.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from listview.
 <table class="params">
@@ -2635,17 +2732,20 @@ Event triggers before the items loaded.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the model value of the control.</td>
 </tr>
@@ -2660,32 +2760,33 @@ Event triggers before the items loaded.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //load event for ListView
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 $(document).ready(function(){
 $("#lb").ejListView({
         load: function (args) { //handle the event 
 }
         });         
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2707,7 +2808,8 @@ Event triggers after the items loaded.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from listview.
 <table class="params">
@@ -2720,17 +2822,20 @@ Event triggers after the items loaded.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the model value of the control.</td>
 </tr>
@@ -2745,32 +2850,33 @@ Event triggers after the items loaded.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //loadComplete event for ListView
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 $(document).ready(function(){
 $("#lb").ejListView({
         loadComplete: function (args) { //handle the event 
 }
         });         
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2792,7 +2898,8 @@ Event triggers when mouse down happens on the item.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from listview.
 <table class="params">
@@ -2805,52 +2912,62 @@ Event triggers when mouse down happens on the item.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the model value of the control.</td>
 </tr>
 <tr>
-<td class="name"><code>hasChild</code></td>
+<td class="name">{% highlight html %}
+hasChild{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">If the child element exist return true; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>item</code></td>
+<td class="name">{% highlight html %}
+item{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current list item.</td>
 </tr>
 <tr>
-<td class="name"><code>text</code></td>
+<td class="name">{% highlight html %}
+text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current text of item.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current Index of the item.</td>
 </tr>
 <tr>
-<td class="name"><code>isChecked</code></td>
+<td class="name">{% highlight html %}
+isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">If checked return true; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>checkedItems</code></td>
+<td class="name">{% highlight html %}
+checkedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the list of checked items.</td>
 </tr>
 <tr>
-<td class="name"><code>checkedItemsText</code></td>
+<td class="name">{% highlight html %}
+checkedItemsText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current checked item text.</td>
 </tr>
@@ -2865,32 +2982,33 @@ Event triggers when mouse down happens on the item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //mouseDown event for ListView
-&lt;div id="lb"&gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb">
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 $(document).ready(function(){
 $("#lb").ejListView({
         mouseDown: function (args) { //handle the event 
 }
         });         
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2912,7 +3030,8 @@ Event triggers when mouse up happens on the item.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from listview.
 <table class="params">
@@ -2925,52 +3044,62 @@ Event triggers when mouse up happens on the item.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns true if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the model value of the control.</td>
 </tr>
 <tr>
-<td class="name"><code>hasChild</code></td>
+<td class="name">{% highlight html %}
+hasChild{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">If the child element exist return true; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>item</code></td>
+<td class="name">{% highlight html %}
+item{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current list item.</td>
 </tr>
 <tr>
-<td class="name"><code>text</code></td>
+<td class="name">{% highlight html %}
+text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current text of item.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current Index of the item.</td>
 </tr>
 <tr>
-<td class="name"><code>isChecked</code></td>
+<td class="name">{% highlight html %}
+isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">If checked return true; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>checkedItems</code></td>
+<td class="name">{% highlight html %}
+checkedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the list of checked items.</td>
 </tr>
 <tr>
-<td class="name"><code>checkedItemsText</code></td>
+<td class="name">{% highlight html %}
+checkedItemsText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current checked item text.</td>
 </tr>
@@ -2985,31 +3114,32 @@ Event triggers when mouse up happens on the item.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //mouseUP event for ListView
-&lt;div id="lb" &gt;
-        &lt;ul&gt;
-                &lt;li data-ej-text="Artwork"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Abstract"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="2 Acrylic Mediums"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Creative Acrylic"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Modern Painting"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Canvas Art"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Black white"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Children"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="Preschool Crafts"&gt;&lt;/li&gt;
-                &lt;li data-ej-text="School-age Crafts"&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-&lt;/div&gt;
-&lt;script&gt;
+<div id="lb" >
+        <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
 $(document).ready(function(){
 $("#lb").ejListView({
         mouseUP: function (args) { //handle the event 
 }
         });    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 

@@ -36,7 +36,8 @@ $(element).ejDigitalGauge<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">For seting the Digital gauge</td>
 </tr>
@@ -49,14 +50,15 @@ $(element).ejDigitalGauge<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $('#DigitalCore').ejDigitalGauge();         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -127,14 +129,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({ enableResize: true }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -176,14 +179,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="DigitalCore"></div> 
  
-&lt;script&gt;
+<script>
 $("#DigitalCore").ejDigitalGauge({ frame:{backgroundImageUrl: null, innerWidth:6, outerWidth:10}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -225,14 +229,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="DigitalCore"></div> 
  
-&lt;script&gt;
+<script>
 $("#DigitalCore").ejDigitalGauge({frame:{ backgroundImageUrl: "styles\images\Car.png" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -274,14 +279,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({frame:{ innerWidth: 30 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -323,14 +329,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({frame: { outerWidth: 30 } });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -372,14 +379,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({ height: 60 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -421,14 +429,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({width: 500});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -470,14 +479,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {count: 4} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -519,14 +529,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {count: 4} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -568,14 +579,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {opacity: 1} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -617,14 +629,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {spacing: 3} }] });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -666,14 +679,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{characterSettings:{ type: "eightcrosseightdotmatrix" }}] });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -716,14 +730,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ enableCustomFont: true }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -766,14 +781,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { size: "12px",fontFamily: "Segou",fontStyle: "bold"}}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -816,14 +832,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontFamily: "Segou"}}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -866,14 +883,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontStyle: "bold" }}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -916,14 +934,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true,font: { size: "18px"}}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -966,14 +985,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{position: { x: 10, y: 20 } }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1016,14 +1036,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{position : { x: 10,y:0} }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1066,14 +1087,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{position: { x:0,y: 20 } }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1116,14 +1138,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {length: 2} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1166,14 +1189,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {color: "#FF1F2F"} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1216,14 +1240,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {gradient: { colorInfo: [{ colorStop: 0, color: "Green" }, { colorStop: 1, color: "Yellow" }] } } }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1266,14 +1291,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {length: 2} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1316,14 +1342,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {opacity: 2} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1366,14 +1393,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {spacing: 1} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1416,14 +1444,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {width: 1} }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1466,14 +1495,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ shadowBlur:  1 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1515,14 +1545,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({ items: [{shadowColor: "#FF1F2F" }]});
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1565,14 +1596,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ shadowOffsetX:  2 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1615,14 +1647,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ shadowOffsetY:  2 }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1664,14 +1697,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ textAlign:  "right" }] });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1713,14 +1747,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="DigitalCore"></div> 
  
-&lt;script&gt;
+<script>
 $("#DigitalCore").ejDigitalGauge({ items: [{textColor: "#FF1F2F" }]});
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1762,14 +1797,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="DigitalCore"></div> 
  
-&lt;script&gt;
+<script>
 $("#DigitalCore").ejDigitalGauge({ items: [{value: "Welcome" }]});
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1855,14 +1891,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({ themes: "flatlight" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1904,14 +1941,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({items: [{ value: "Welcome" }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1953,14 +1991,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({ width: 300 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1993,16 +2032,17 @@ To destroy the digital gauge
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalGauge1"&gt;Digital Gauge&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalGauge1">Digital Gauge</div> 
+ 
+<script>
 $("#DigitalGauge1").ejDigitalGauge();
 var gphObj = $("#DigitalGauge1").data("ejDigitalGauge");
 gphObj.destroy();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2031,12 +2071,14 @@ To export Digital Gauge as Image
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fileName</code></td>
+<td class="name">{% highlight html %}
+fileName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">fileName for the Image</td>
 </tr>
 <tr>
-<td class="name"><code>fileType</code></td>
+<td class="name">{% highlight html %}
+fileType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">fileType for the Image</td>
 </tr>
@@ -2049,16 +2091,17 @@ To export Digital Gauge as Image
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalGauge"&gt;DigitalGauge1&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalGauge">DigitalGauge1</div> 
+ 
+<script>
 $("#DigitalGauge").ejDigitalGauge();
 var DigitalGaugeObj = $("#DigitalGauge").data("ejDigitalGauge");
 DigitalGaugeObj.exportImage("myImage","jpeg");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2087,7 +2130,8 @@ Gets the location of an item that is displayed on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>itemIndex</code></td>
+<td class="name">{% highlight html %}
+itemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">int</span></td>
 <td class="description last">Position value of an item that is displayed on the gauge.</td>
 </tr>
@@ -2100,16 +2144,17 @@ Gets the location of an item that is displayed on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalGauge1"></div> 
+ 
+<script>
 $("#DigitalGauge1").ejDigitalGauge();
 var DigitalGaugeObj = $("#DigitalGauge1").data("ejDigitalGauge");
 DigitalGaugeObj.getPosition(0); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2138,7 +2183,8 @@ ClientSideMethod getValue Gets the value of an item that is displayed on the gau
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>itemIndex</code></td>
+<td class="name">{% highlight html %}
+itemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">int</span></td>
 <td class="description last">Index value of an item that displayed on the gauge</td>
 </tr>
@@ -2151,16 +2197,17 @@ ClientSideMethod getValue Gets the value of an item that is displayed on the gau
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalGauge1"></div> 
+ 
+<script>
 $("#DigitalGauge1").ejDigitalGauge();
 var DigitalGaugeObj = $("#DigitalGauge1").data("ejDigitalGauge");
 DigitalGaugeObj.getValue(0);    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2186,16 +2233,17 @@ Refresh the digital gauge widget
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalGauge1"></div> 
+ 
+<script>
 $("#DigitalGauge1").ejDigitalGauge();
 var GaugeObj = $("#DigitalGauge1").data("ejDigitalGauge");
 GaugeObj.refresh();
-&lt;/script&gt;     </code>
-</pre>
+</script>     {% endhighlight %}
+
 
 
 
@@ -2224,12 +2272,14 @@ ClientSideMethod Set Position Sets the location of an item to be displayed in th
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>itemIndex</code></td>
+<td class="name">{% highlight html %}
+itemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">int</span></td>
 <td class="description last">Index value of the digital gauge item</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Location value of the digital gauge</td>
 </tr>
@@ -2242,16 +2292,17 @@ ClientSideMethod Set Position Sets the location of an item to be displayed in th
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalGauge1"></div> 
+ 
+<script>
 $("#DigitalGauge1").ejDigitalGauge();
 var DigitalGaugeObj = $("#DigitalGauge1").data("ejDigitalGauge");
 DigitalGaugeObj.setPosition(0,{ x:50, y:40 });  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2280,12 +2331,14 @@ ClientSideMethod SetValue Sets the value of an item to be displayed in the gauge
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>itemIndex</code></td>
+<td class="name">{% highlight html %}
+itemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">int</span></td>
 <td class="description last">Index value of the digital gauge item</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Text value to be displayed in the gaugeS</td>
 </tr>
@@ -2298,16 +2351,17 @@ ClientSideMethod SetValue Sets the value of an item to be displayed in the gauge
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalGauge1"></div> 
+ 
+<script>
 $("#DigitalGauge1").ejDigitalGauge();
 var DigitalGaugeObj = $("#DigitalGauge1").data("ejDigitalGauge");
 DigitalGaugeObj.setValue(0,"Welcome");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2343,32 +2397,38 @@ Triggers when the gauge is initialized.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.items</code></td>
+<td class="name">{% highlight html %}
+args.items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2386,16 +2446,17 @@ Triggers when the gauge is initialized.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({
    init: function (args) {}
 });      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2424,32 +2485,38 @@ Triggers when the gauge item rendering.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.items</code></td>
+<td class="name">{% highlight html %}
+args.items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2462,16 +2529,17 @@ Triggers when the gauge item rendering.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({
    itemRendering: function (args) {}
 });      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2500,32 +2568,38 @@ Triggers when the gauge is start to load.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.items</code></td>
+<td class="name">{% highlight html %}
+args.items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2538,16 +2612,17 @@ Triggers when the gauge is start to load.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({
    load: function (args) {}
 });      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2576,32 +2651,38 @@ Triggers when the gauge render is completed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.items</code></td>
+<td class="name">{% highlight html %}
+args.items{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the all the options of the items.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2614,16 +2695,17 @@ Triggers when the gauge render is completed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="DigitalCore"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="DigitalCore"></div> 
+ 
+<script>
 $("#DigitalCore").ejDigitalGauge({
    renderComplete: function (args) {}
 });       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

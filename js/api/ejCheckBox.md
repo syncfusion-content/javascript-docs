@@ -33,15 +33,16 @@ $(element).ejCheckBox<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 // Create Checkbox  
 $("#chkbox").ejCheckBox(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -109,15 +110,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //To set check API value during initialization  
 $("#chkbox").ejCheckBox({ checked:  true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -159,15 +161,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //To set CheckState API value during initialization
 $("#chkbox").ejCheckBox({ enableTriState: true , checkState:"indeterminate"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -209,14 +212,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt;  
+
+{% highlight html %}
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script>  
 // Set the root class for Checkbox control theme. This cssClass API helps to use custom skinning option for Checkbox control. By defining the root class using this API, we need to include this root class in CSS.                     
 $("#chkbox").ejCheckBox({cssClass: "gradient-lime"}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -258,16 +262,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //To Enable checkbox on initialization. 
 //To set width API value 
 $("#chkbox").ejCheckBox ({ enabled: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -309,15 +314,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //To set persist API value 
 $("#chkbox").ejCheckBox({ enablePersistence : false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -359,15 +365,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 // Set the RTL during initialization.
 $("#chkbox").ejCheckBox({  enableRTL : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -409,16 +416,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 // Specifies to enable or disable Tri-State option checkbox while initialization. 
 //To set enableTriState API value 
 $("#chkbox").ejCheckBox({  enableTriState: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -460,15 +468,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //Set HtmlAttributes to Checkbox element during initialization  
 $("#chkbox").ejCheckBox({ htmlAttributes : {required:"required"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -510,15 +519,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To Set HtmlAttributes API value during initialization  
         $("#mask").ejMaskEdit({ htmlAttributes : {readOnly:"readOnly"}});                                        
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -560,15 +570,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //To set id API value during initialization  
 $("#chkbox").ejCheckBox({  id: "sync" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -610,15 +621,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 // To set  idPrefix  API value
 $("#chkbox").ejCheckBox ({  idPrefix : "ej" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -660,15 +672,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //To set name API value during initialization  
 $("#chkbox").ejCheckBox({  name: "sync" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -710,15 +723,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //To Set the rounded corner during initialization.
 $("#chkbox").ejCheckBox({ showRoundedCorner: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -760,15 +774,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //To set size API value during initialization
 $("#chkbox").ejCheckBox({  size: "medium"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -810,14 +825,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<script> 
 // To set text API value 
 $("#chkbox").ejCheckBox({ text: "Hello World"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -859,11 +875,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script>
 //To set validationMessage API during initialization  
         $("#chkbox").ejCheckBox({ 
   validationRules:{                     
@@ -873,8 +890,8 @@ Example
            required: "Required Checkbox value"
         }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -916,19 +933,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script>
 //To set validationRules API during initialization  
         $("#chkbox").ejCheckBox({ 
   validationRules:{                     
           required:true
           }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -970,15 +988,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //To set value API value during initialization  
 $("#chkbox").ejCheckBox({ value: "Hello World"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1011,27 +1030,29 @@ destroy the CheckBox widget all events bound using this._on will be unbind autom
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 $("#chkbox").ejCheckBox();
 // Create Checkbox instance
 var chkObj = $("#chkbox").data("ejCheckBox");
 chkObj.destroy();// Destroy the CheckBox control
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 $("#chkbox").ejCheckBox();
 //To destroy the CheckBox control
 $("#chkbox").ejCheckBox("destroy");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1057,27 +1078,29 @@ To disable the checkbox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 $("#chkbox").ejCheckBox();
 // Create Checkbox instance 
 var chkObj = $("#chkbox").data("ejCheckBox");
 chkObj.disable(); //disables the CheckBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 $("#chkbox").ejCheckBox();
 //To disable the CheckBox
 $("#chkbox").ejCheckBox("disable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1103,27 +1126,29 @@ To enable the checkbox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 $("#chkbox").ejCheckBox();
 // Create Checkbox instance 
 var chkObj = $("#chkbox").data("ejCheckBox");
 chkObj.enable(); // enables the CheckBox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 $("#chkbox").ejCheckBox();
 //To enable the CheckBox
 $("#chkbox").ejCheckBox("enable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1149,27 +1174,29 @@ To Check the status of checkbox
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 $("#chkbox").ejCheckBox();
 // Create Checkbox  instance
 var chkObj = $("#chkbox").data("ejCheckBox");
 chkObj.isChecked(); // check the status of checkbox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 $("#chkbox").ejCheckBox();
 //To check the status of checkbox
 $("#chkbox").ejCheckBox("isChecked");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1205,7 +1232,8 @@ Fires before the Checkbox is going to changed its state successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from CheckBox
 <table class="params">
@@ -1218,27 +1246,32 @@ Fires before the Checkbox is going to changed its state successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the Checkbox model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>data.element</code></td>
+<td class="name">{% highlight html %}
+data.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the current element</td>
 </tr>
 <tr>
-<td class="name"><code>data.isChecked</code></td>
+<td class="name">{% highlight html %}
+data.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the status of the element</td>
 </tr>
@@ -1255,17 +1288,18 @@ Fires before the Checkbox is going to changed its state successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script>  
 //To create beforeChange event for checkbox
 $("#chkbox").ejCheckBox({
 beforeChange: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1294,7 +1328,8 @@ Fires when the Checkbox state is changed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from CheckBox
 <table class="params">
@@ -1307,27 +1342,32 @@ Fires when the Checkbox state is changed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the Checkbox model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>data.element</code></td>
+<td class="name">{% highlight html %}
+data.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the current element</td>
 </tr>
 <tr>
-<td class="name"><code>data.isChecked</code></td>
+<td class="name">{% highlight html %}
+data.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the status of the element</td>
 </tr>
@@ -1344,16 +1384,17 @@ Fires when the Checkbox state is changed successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 // change event for checkbox
 $("#chkbox").ejCheckBox({
 change: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1382,7 +1423,8 @@ Fires when the Checkbox state is created successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from CheckBox
 <table class="params">
@@ -1395,17 +1437,20 @@ Fires when the Checkbox state is created successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the Checkbox model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1422,17 +1467,18 @@ Fires when the Checkbox state is created successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //To create event for checkbox
 $("#chkbox").ejCheckBox({
   create: function (args) {}
 });    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1461,7 +1507,8 @@ Fires when the Checkbox state is destroyed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from CheckBox
 <table class="params">
@@ -1474,17 +1521,20 @@ Fires when the Checkbox state is destroyed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the Checkbox model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1501,17 +1551,18 @@ Fires when the Checkbox state is destroyed successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="checkbox" id="chkbox"/&gt;
-&lt;label for="chkbox"&gt;Experienced&lt;/label&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+ 
+<input type="checkbox" id="chkbox"/>
+<label for="chkbox">Experienced</label>
+<script> 
 //To create destroy event for checkbox
 $("#chkbox").ejCheckBox({
 destroy: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

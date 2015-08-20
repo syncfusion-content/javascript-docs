@@ -33,23 +33,24 @@ $(element).ejRotator<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 //Initialize the Rotator control in the script as follows.
 $(function (){
 // document ready
 // simple Rotator creation
 $("#sliderContent").ejRotator();
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -123,20 +124,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the allowKeyboardNavigation during initialization.                       
         $("#sliderContent").ejRotator({ allowKeyboardNavigation : false});              
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -178,20 +180,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the animationSpeed during initialization.                        
         $("#sliderContent").ejRotator({ animationSpeed : 600});                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -233,20 +236,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the animationType during initialization.                         
         $("#sliderContent").ejRotator({ animationType : "slide" });                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -288,20 +292,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the circularMode during initialization.                  
         $("#sliderContent").ejRotator({ circularMode : false});         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -343,20 +348,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the CSS class during initialization.                     
         $("#sliderContent").ejRotator({  cssClass : "gradient-lime" });                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -398,15 +404,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+</ul>
+<script>
 // Set the dataSource during initialization.                    
         $("#sliderContent").ejRotator({ dataSource:window.items });                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -448,20 +455,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the animationSpeed during initialization.      
   $("#sliderContent").ejRotator({ delay : 600});     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -503,20 +511,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the displayItemsCount  during initialization.                    
         $("#sliderContent").ejRotator({ displayItemsCount  : "1"});                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -558,20 +567,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the enableAutoPlay during initialization.                        
         $("#sliderContent").ejRotator({ enableAutoPlay:true});           
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -613,20 +623,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the enabled during initialization.                       
         $("#sliderContent").ejRotator({  enabled : true});               
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -668,20 +679,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the enableRTL during initialization.                     
         $("#sliderContent").ejRotator({ enableRTL : false});                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -723,15 +735,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+</ul>
+<script>
 // Set the fields during initialization.                        
         $("#sliderContent").ejRotator({ dataSource:window.items, fields: {text:"text",url:"url",linkAttribute:"http://www.google.com",targetAttribute:"blank"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -905,20 +918,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the frameSpace during initialization.                    
         $("#sliderContent").ejRotator({ slideWidth:"600px",slideHeight:"400px",displayItemsCount:2, frameSpace:"10px"});                        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -960,20 +974,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the isResponsive during initialization.                  
         $("#sliderContent").ejRotator({ isResponsive : false});                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1015,20 +1030,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the navigateSteps during initialization.                         
         $("#sliderContent").ejRotator({ navigateSteps : "1"});           
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1070,20 +1086,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the orientation during initialization.                   
         $("#sliderContent").ejRotator({ orientation : ej.Orientation.Horizontal });                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1125,20 +1142,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the pagerPosition during initialization.                         
         $("#sliderContent").ejRotator({ pagerPosition :"outside" });                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1218,20 +1236,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" title="Nature" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg" title="Bird" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg" title="Sculpture" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" title="Seaview"  /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg" title="Snowfall" /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" title="Nature" /></li>
+<li><img src="../images/rotator/bird.jpg" title="Bird" /></li>
+<li><img src="../images/rotator/sculpture.jpg" title="Sculpture" /></li>
+<li><img src="../images/rotator/seaview.jpg" title="Seaview"  /></li>
+<li><img src="../images/rotator/snowfall.jpg" title="Snowfall" /></li>
+</ul>
+<script>
 // Set the caption during initialization.                       
         $("#sliderContent").ejRotator({showCaption:true});                      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1273,20 +1292,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the showNavigateButton during initialization.                    
         $("#sliderContent").ejRotator({ showNavigateButton : false});                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1328,20 +1348,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the pager during initialization.                         
         $("#sliderContent").ejRotator({ showPager : false});                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1383,20 +1404,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the showPlayButton during initialization.                        
         $("#sliderContent").ejRotator({ showPlayButton:true});                  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1438,28 +1460,29 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
 <!-- Thumbnail Source -->
-&lt;ul id="thumbElement"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+<ul id="thumbElement">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the showThumbnail during initialization.                         
         $("#sliderContent").ejRotator({ showThumbnail:true, thumbnailSourceID :"thumbElement"});                        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1501,20 +1524,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the slideHeight during initialization.                   
         $("#sliderContent").ejRotator({ slideHeight : "600px"});                        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1556,20 +1580,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the slideWidth during initialization.                    
         $("#sliderContent").ejRotator({ slideWidth : "600px"});                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1611,20 +1636,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the startIndex during initialization.                    
         $("#sliderContent").ejRotator({ startIndex : "1"});                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1666,20 +1692,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the stopOnHover during initialization.                   
         $("#sliderContent").ejRotator({ enableAutoPlay:true, stopOnHover:true});                        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1721,27 +1748,28 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul id="thumbElement"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<ul id="thumbElement">
+<li><img src="../images/rotator/nature.jpg"/></li>
+<li><img src="../images/rotator/bird.jpg" /></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg"/></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 // Set the thumbnailSourceID during initialization.                     
         $("#sliderContent").ejRotator({ showThumbnail:true, thumbnailSourceID :"thumbElement"});                         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1774,38 +1802,40 @@ Disables the Rotator control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 //initialize the Rotator object
 $("#sliderContent").ejRotator();
         var slideObj = $("#sliderContent").data("ejRotator");
         //To Disables the Rotator control.
         slideObj.disable();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator();
 //To Disables the Rotator control.
  $("#sliderContent").ejRotator("disable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1831,37 +1861,39 @@ Enables the Rotator control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 //initialize the Rotator object
 $("#sliderContent").ejRotator();
         var slideObj = $("#sliderContent").data("ejRotator");
         //To Enables the Rotator control.
         slideObj.enable();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator();
 $("#sliderContent").ejRotator("enable");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1887,38 +1919,40 @@ This method is used to get the current slide index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 //initialize the Rotator object
 $("#sliderContent").ejRotator();
         var slideObj = $("#sliderContent").data("ejRotator");
         // Gets the index value of the current slide.
         slideObj.getIndex();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator();
         // Gets the index value of the current slide.
  $("#sliderContent").ejRotator("getIndex");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1947,7 +1981,8 @@ This method is used to move a slide to the specified index.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">index of an slide</td>
 </tr>
@@ -1960,39 +1995,41 @@ This method is used to move a slide to the specified index.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 //initialize the Rotator object
 $("#sliderContent").ejRotator();
         var slideObj = $("#sliderContent").data("ejRotator");
         // Moves the slide to the specified index.
         slideObj.gotoIndex(3);
- &lt;/script&gt;
- </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+ </script>
+ {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator();
         // Moves the slide to the specified index.
  $("#sliderContent").ejRotator("gotoIndex",3);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2018,38 +2055,40 @@ This method is used to pause autoplay.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 //initialize the Rotator object
 $("#sliderContent").ejRotator();
         var slideObj = $("#sliderContent").data("ejRotator");
         //To Pauses auto play.
         slideObj.pause();       
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator();
         //To Pause auto play.
  $("#sliderContent").ejRotator("pause");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2075,38 +2114,40 @@ This method is used to move slides continuously (or start autoplay) in the speci
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 //initialize the Rotator object
 $("#sliderContent").ejRotator();
         var slideObj = $("#sliderContent").data("ejRotator");
         //To Starts auto play.
         slideObj.play();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator();
         //To Starts auto play.
  $("#sliderContent").ejRotator("play");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2132,38 +2173,40 @@ This method is used to move to the next slide from the current slide. If the cur
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 //initialize the Rotator object
 $("#sliderContent").ejRotator();
         var slideObj = $("#sliderContent").data("ejRotator");
         //Moves to the next slide.
         slideObj.slideNext();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator();
 //Moves to the next slide.
  $("#sliderContent").ejRotator("slideNext");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2189,38 +2232,40 @@ This method is used to move to the previous slide from the current slide. If the
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 //initialize the Rotator object
 $("#sliderContent").ejRotator();
         var slideObj = $("#sliderContent").data("ejRotator");
         //Moves to the previous slide.
         slideObj.slidePrevious();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator();
 //Moves to the previous slide.
  $("#sliderContent").ejRotator("slidePrevious");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2256,7 +2301,8 @@ This event is fired when the Rotator slides are changed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -2269,27 +2315,32 @@ This event is fired when the Rotator slides are changed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>itemId</code></td>
+<td class="name">{% highlight html %}
+itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">the current rotator id.</td>
 </tr>
 <tr>
-<td class="name"><code>activeItemIndex</code></td>
+<td class="name">{% highlight html %}
+activeItemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current slide index.</td>
 </tr>
@@ -2306,21 +2357,22 @@ This event is fired when the Rotator slides are changed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator({
    change: function (args) {}
 }); 
-&lt;/script&gt;     </code>
-</pre>
+</script>     {% endhighlight %}
+
 
 
 
@@ -2349,7 +2401,8 @@ This event is fired when the Rotator control is initialized.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -2362,17 +2415,20 @@ This event is fired when the Rotator control is initialized.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2389,21 +2445,22 @@ This event is fired when the Rotator control is initialized.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator({
    create: function (args) {}
 });   
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -2432,7 +2489,8 @@ This event is fired when the Rotator control is destroyed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -2445,17 +2503,20 @@ This event is fired when the Rotator control is destroyed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2472,21 +2533,22 @@ This event is fired when the Rotator control is destroyed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator({
    destroy: function (args) {}
 });   
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -2515,7 +2577,8 @@ This event is fired when a pager is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -2528,27 +2591,32 @@ This event is fired when a pager is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>itemId</code></td>
+<td class="name">{% highlight html %}
+itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">the current rotator id.</td>
 </tr>
 <tr>
-<td class="name"><code>activeItemIndex</code></td>
+<td class="name">{% highlight html %}
+activeItemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current slide index.</td>
 </tr>
@@ -2565,21 +2633,22 @@ This event is fired when a pager is clicked.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator({
    pagerClick: function (args) {}
 }); 
-&lt;/script&gt;    </code>
-</pre>
+</script>    {% endhighlight %}
+
 
 
 
@@ -2608,7 +2677,8 @@ This event is fired when enableAutoPlay is started.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -2621,27 +2691,32 @@ This event is fired when enableAutoPlay is started.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>itemId</code></td>
+<td class="name">{% highlight html %}
+itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">the current rotator id.</td>
 </tr>
 <tr>
-<td class="name"><code>activeItemIndex</code></td>
+<td class="name">{% highlight html %}
+activeItemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current slide index.</td>
 </tr>
@@ -2658,21 +2733,22 @@ This event is fired when enableAutoPlay is started.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator({
    start: function (args) {}
 });
-&lt;/script&gt;      </code>
-</pre>
+</script>      {% endhighlight %}
+
 
 
 
@@ -2701,7 +2777,8 @@ This event is fired when autoplay is stopped or paused.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -2714,27 +2791,32 @@ This event is fired when autoplay is stopped or paused.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>itemId</code></td>
+<td class="name">{% highlight html %}
+itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">the current rotator id.</td>
 </tr>
 <tr>
-<td class="name"><code>activeItemIndex</code></td>
+<td class="name">{% highlight html %}
+activeItemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current slide index.</td>
 </tr>
@@ -2751,21 +2833,22 @@ This event is fired when autoplay is stopped or paused.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator({
    stop: function (args) {}
 });    
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2794,7 +2877,8 @@ This event is fired when a thumbnail pager is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -2807,27 +2891,32 @@ This event is fired when a thumbnail pager is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rotator model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>itemId</code></td>
+<td class="name">{% highlight html %}
+itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">the current rotator id.</td>
 </tr>
 <tr>
-<td class="name"><code>activeItemIndex</code></td>
+<td class="name">{% highlight html %}
+activeItemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current slide index.</td>
 </tr>
@@ -2844,30 +2933,31 @@ This event is fired when a thumbnail pager is clicked.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;ul id="sliderContent"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul id="thumbElement"&gt;
-&lt;li&gt;&lt;img src="../images/rotator/nature.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/bird.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/sculpture.jpg"/&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/seaview.jpg" /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;img src="../images/rotator/snowfall.jpg"/&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<ul id="sliderContent">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<ul id="thumbElement">
+<li><img src="../images/rotator/nature.jpg" /></li>
+<li><img src="../images/rotator/bird.jpg"/></li>
+<li><img src="../images/rotator/sculpture.jpg"/></li>
+<li><img src="../images/rotator/seaview.jpg" /></li>
+<li><img src="../images/rotator/snowfall.jpg"/></li>
+</ul>
+<script>
 $("#sliderContent").ejRotator({
    showThumbnail:true,
    thumbnailSourceID:"thumbElement",
    thumbItemClick: function (args) {}
 });   
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 

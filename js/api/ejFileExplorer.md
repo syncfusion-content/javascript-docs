@@ -36,7 +36,8 @@ $(element).ejFileExplorer<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for FileExplorer.</td>
 </tr>
@@ -49,11 +50,12 @@ $(element).ejFileExplorer<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Create File Explorer
 $('#fileExplorer').ejFileExplorer({ 
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -67,8 +69,8 @@ ajaxSettings: {
        }
    }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -199,11 +201,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with ajaxAction value specified.
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -217,8 +220,8 @@ ajaxSettings: {
        }
    }                       
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -260,11 +263,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with ajaxSettings value specified.
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -278,8 +282,8 @@ ajaxSettings: {
        }
    }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -321,11 +325,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with cssClass value specified.
 $('#fileExplorer').ejFileExplorer({ 
 cssClass: 'gradient-lime',
@@ -340,8 +345,8 @@ ajaxSettings: {
        }
    },
    });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -383,11 +388,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with enableResize value specified.
 $('#fileExplorer').ejFileExplorer({ 
  enableResize: true,
@@ -402,8 +408,8 @@ ajaxSettings: {
        }
    },                          
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -445,11 +451,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with enableRTL value specified.
 $('#fileExplorer').ejFileExplorer({ 
  enableRTL: true,
@@ -464,8 +471,8 @@ ajaxSettings: {
        }
    },                      
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -507,11 +514,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Specifies the file types, which one need to allow in file explorer control
 $('#fileExplorer').ejFileExplorer({ 
 fileTypes: "*.png,*.gif,*.jpg,*.jpeg,*.docx",
@@ -526,8 +534,8 @@ ajaxSettings: {
        }
    }                       
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -591,11 +599,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Specifies the case sensitive for searching operation
 $('#fileExplorer').ejFileExplorer({ 
 caseSensitiveSearch: true,
@@ -610,8 +619,8 @@ ajaxSettings: {
        }
    }              
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -653,11 +662,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Specifies the filter types, which is used to filter the grid or list elements
 $('#fileExplorer').ejFileExplorer({ 
 filterType: "startswith",
@@ -672,8 +682,8 @@ ajaxSettings: {
        }
    }           
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -737,11 +747,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the allowSearching value specified for grid.
 $('#fileExplorer').ejFileExplorer({ 
  gridSettings:{allowSearching:false},
@@ -756,8 +767,8 @@ ajaxSettings: {
        }
    }                     
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -799,11 +810,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the allowSorting value specified for grid.
 $('#fileExplorer').ejFileExplorer({ 
  gridSettings:{allowSorting:false},
@@ -818,8 +830,8 @@ ajaxSettings: {
        }
    }                     
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -861,11 +873,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the columns value specified for grid.
 $('#fileExplorer').ejFileExplorer({ 
  gridSettings:{columns:[{ field: "name", headerText: "Name", width: 90 }, { field: "type", headerText: "Type", width: 95 }, { field: "size", headerText: "Size", width: 90 }]},
@@ -880,8 +893,8 @@ ajaxSettings: {
        }
    }                     
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -923,11 +936,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the height value specified.
 $('#fileExplorer').ejFileExplorer({   
 height: 450,
@@ -942,8 +956,8 @@ ajaxSettings: {
        }
    }                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -985,11 +999,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with isResponsive value specified.
 $('#fileExplorer').ejFileExplorer({ 
  isResponsive: true,
@@ -1004,8 +1019,8 @@ ajaxSettings: {
        }
    }                      
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1047,11 +1062,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the layout value specified.
 $('#fileExplorer').ejFileExplorer({ 
 layout: "grid",
@@ -1066,8 +1082,8 @@ ajaxSettings: {
        }
    }                      
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1109,11 +1125,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the culture value specified.
 $('#fileExplorer').ejFileExplorer({ 
 locale: "en-US",
@@ -1128,8 +1145,8 @@ ajaxSettings: {
        }
    }                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1171,11 +1188,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Specifies the root folder path, which is need to specified in file explorer control
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1190,8 +1208,8 @@ ajaxSettings: {
    }
 ajaxAction: "@Url.Content("~/ImageBrowser/FileAction")"                           
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1233,11 +1251,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the showContextMenu value specified.
 $('#fileExplorer').ejFileExplorer({ 
  showContextMenu: true,
@@ -1252,8 +1271,8 @@ ajaxSettings: {
        }
    }                          
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1295,11 +1314,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the showFooter value specified.
 $('#fileExplorer').ejFileExplorer({ 
 showFooter: true,
@@ -1314,8 +1334,8 @@ ajaxSettings: {
        }
    }                        
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1357,11 +1377,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the showLayout value specified.
 $('#fileExplorer').ejFileExplorer({ 
 showLayout: true,
@@ -1376,8 +1397,8 @@ ajaxSettings: {
        }
    }                       
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1419,11 +1440,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the showToolbar value specified.
 $('#fileExplorer').ejFileExplorer({ 
  showToolbar: true,
@@ -1438,8 +1460,8 @@ ajaxSettings: {
        }
    }                     
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1481,11 +1503,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the showTreeview value specified.
 $('#fileExplorer').ejFileExplorer({ 
 showTreeview: true,
@@ -1500,8 +1523,8 @@ ajaxSettings: {
        }
    }                      
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1543,11 +1566,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with toolbar tools value specified.
 $('#fileExplorer').ejFileExplorer({ 
 tools: {
@@ -1570,8 +1594,8 @@ ajaxSettings: {
        }
    }             
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1613,11 +1637,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with toolsList value specified.
 $('#fileExplorer').ejFileExplorer({ 
 toolsList: ["creation","navigation", "addressBar", "editing", "copyPaste", "getProperties", "searchBar"],
@@ -1632,8 +1657,8 @@ ajaxSettings: {
        }
    }                      
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1697,11 +1722,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the fileSize value specified for uploadbox.
 $('#fileExplorer').ejFileExplorer({ 
  uploadBoxSettings:{fileSize:10000},
@@ -1716,8 +1742,8 @@ ajaxSettings: {
        }
    }                     
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1759,11 +1785,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the multipleFilesSelection value specified for uploadbox.
 $('#fileExplorer').ejFileExplorer({ 
  uploadBoxSettings:{multipleFilesSelection:false},
@@ -1778,8 +1805,8 @@ ajaxSettings: {
        }
    }                     
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1821,11 +1848,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // Initialize the File explorer with the width value specified.
 $('#fileExplorer').ejFileExplorer({   
 width: 810,
@@ -1840,8 +1868,8 @@ ajaxSettings: {
        }
    }                          
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1874,11 +1902,12 @@ Disable the particular toolbar item
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // diable the toolbar tool 
 $('#fileExplorer').ejFileExplorer({      
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1895,8 +1924,8 @@ ajaxSettings: {
 // Create FileExplorer instance
 var feObj = $("#fileExplorer").data("ejFileExplorer");
 feObj.disableToolbarItem("fileExplorerSearchbar"); // disable search bar                           
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1922,11 +1951,12 @@ Enable the particular toolbar item
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // enable the toolbar tool 
 $('#fileExplorer').ejFileExplorer({      
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1943,8 +1973,8 @@ ajaxSettings: {
 // Create FileExplorer instance
 var feObj = $("#fileExplorer").data("ejFileExplorer");
 feObj.enableToolbarItem("fileExplorerSearchbar"); // enable search bar                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1980,7 +2010,8 @@ Fires while file or folder has been copied from one place to another place suces
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from FileExplorer
 <table class="params">
@@ -1993,27 +2024,32 @@ Fires while file or folder has been copied from one place to another place suces
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the FileExplorer model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>name</code></td>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of copied file/folder</td>
 </tr>
 <tr>
-<td class="name"><code>targetPath</code></td>
+<td class="name">{% highlight html %}
+targetPath{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the target path</td>
 </tr>
@@ -2030,11 +2066,12 @@ Fires while file or folder has been copied from one place to another place suces
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // copy event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -2049,8 +2086,8 @@ ajaxSettings: {
    },
 copy: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2079,7 +2116,8 @@ Fires when new folder has been created sucessfully in file system
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from FileExplorer
 <table class="params">
@@ -2092,17 +2130,20 @@ Fires when new folder has been created sucessfully in file system
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the FileExplorer model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -2119,11 +2160,12 @@ Fires when new folder has been created sucessfully in file system
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // createFolder event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -2138,8 +2180,8 @@ ajaxSettings: {
    },
 createFolder: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2168,7 +2210,8 @@ Fires when the file view type has been changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from FileExplorer
 <table class="params">
@@ -2181,22 +2224,26 @@ Fires when the file view type has been changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the FileExplorer model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>layoutType</code></td>
+<td class="name">{% highlight html %}
+layoutType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current view type.</td>
 </tr>
@@ -2213,11 +2260,12 @@ Fires when the file view type has been changed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // layoutChange event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -2232,8 +2280,8 @@ ajaxSettings: {
    },
 layoutChange: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2262,7 +2310,8 @@ Fires while file or folder has been moved from one place to another place sucesf
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from FileExplorer
 <table class="params">
@@ -2275,27 +2324,32 @@ Fires while file or folder has been moved from one place to another place sucesf
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the FileExplorer model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>name</code></td>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of moved file/folder</td>
 </tr>
 <tr>
-<td class="name"><code>targetPath</code></td>
+<td class="name">{% highlight html %}
+targetPath{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the target path</td>
 </tr>
@@ -2312,11 +2366,12 @@ Fires while file or folder has been moved from one place to another place sucesf
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // move event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -2331,8 +2386,8 @@ ajaxSettings: {
    },
 move: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2361,7 +2416,8 @@ Fires while files has been opened successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from FileExplorer
 <table class="params">
@@ -2374,27 +2430,32 @@ Fires while files has been opened successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the FileExplorer model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>path</code></td>
+<td class="name">{% highlight html %}
+path{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the path of currently opened item.</td>
 </tr>
 <tr>
-<td class="name"><code>itemType</code></td>
+<td class="name">{% highlight html %}
+itemType{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the opened item type</td>
 </tr>
@@ -2411,11 +2472,12 @@ Fires while files has been opened successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // open event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 * path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
@@ -2430,8 +2492,8 @@ ajaxSettings: {
    },
 open: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2460,7 +2522,8 @@ Fires when file or folder ahs been deleted sucessfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from FileExplorer
 <table class="params">
@@ -2473,27 +2536,32 @@ Fires when file or folder ahs been deleted sucessfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the FileExplorer model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>path</code></td>
+<td class="name">{% highlight html %}
+path{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the path of deleted item</td>
 </tr>
 <tr>
-<td class="name"><code>itemType</code></td>
+<td class="name">{% highlight html %}
+itemType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the deleted item type.</td>
 </tr>
@@ -2510,11 +2578,12 @@ Fires when file or folder ahs been deleted sucessfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // remove event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -2529,8 +2598,8 @@ ajaxSettings: {
    },
 remove: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2559,7 +2628,8 @@ Fires when the items from grid view or tile view of fileexplorer control has bee
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from FileExplorer
 <table class="params">
@@ -2572,32 +2642,38 @@ Fires when the items from grid view or tile view of fileexplorer control has bee
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the FileExplorer model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>name</code></td>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of clicked item</td>
 </tr>
 <tr>
-<td class="name"><code>itemType</code></td>
+<td class="name">{% highlight html %}
+itemType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the type of clicked item.</td>
 </tr>
 <tr>
-<td class="name"><code>path</code></td>
+<td class="name">{% highlight html %}
+path{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the path of clicked item.</td>
 </tr>
@@ -2614,11 +2690,12 @@ Fires when the items from grid view or tile view of fileexplorer control has bee
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="fileExplorer" &gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="fileExplorer" ></div> 
+ 
+<script>
 // select event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -2633,8 +2710,8 @@ ajaxSettings: {
    },
 select: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

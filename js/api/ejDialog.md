@@ -28,7 +28,8 @@ $(element).ejDialog<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for Dialog.</td>
 </tr>
@@ -39,15 +40,16 @@ $(element).ejDialog<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }});  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -95,16 +97,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //iconAction on initialization.  
          $("#dialog").ejDialog({ position: { X: 300, Y: 10 },actionButtons: ["close","collapsible","pin"]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -130,15 +133,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;     
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">     
+</div>
+<script>
 //loadUrl on initialization.  
            $("#dialog").ejDialog({ position: { X: 300, Y: 10 },contentType: "ajax",contentUrl: "http://js.syncfusion.com/demos/web/dialog/ajaxcontent.html", ajaxSettings: { type: 'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true }  });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -242,16 +246,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Enable draggable during initialization  
         $("#dialog").ejDialog({position: { X: 300, Y: 10 }, allowDraggable: false});                                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -277,16 +282,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Enable  allowKeyboardNavigation on initialization.  
          $("#dialog").ejDialog({ position: { X: 300, Y: 10 },allowKeyboardNavigation: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -312,16 +318,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //To set closeText API value during initialization  
         $("#dialog").ejDialog({position: { X: 300, Y: 10 },closeIconTooltip: "hide" });                         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -347,16 +354,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Enable closeOnEscape during initialization  
          $("#dialog").ejDialog({position: { X: 300, Y: 10 }, closeOnEscape: false});                             
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -382,17 +390,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 // Enable contentContainer on initialization.  
         $("#dialog").ejDialog({ position: { X: 300, Y: 10 },content: "#samplearea" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -418,16 +427,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt; 
+</div>
+<script> 
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //Enable content on initialization.  
            $("#dialog").ejDialog({ position: { X: 300, Y: 10 },contentType: "ajax" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -453,15 +463,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;     
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">     
+</div>
+<script>
 //loadUrl on initialization.  
            $("#dialog").ejDialog({ position: { X: 300, Y: 10 },contentType: "ajax",contentUrl: "http://js.syncfusion.com/demos/web/dialog/ajaxcontent.html" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -487,16 +498,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //cssClass on initialization.  
         $("#dialog").ejDialog({position: { X: 300, Y: 10 }, cssClass: "gradient-lime" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -522,16 +534,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //To set enableAnimation API value during initialization  
         $("#dialog").ejDialog({ enableAnimation: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -557,16 +570,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Set enabled on initialization.  
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }, enabled: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -592,16 +606,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Enable modal during initialization  
             $("#dialog").ejDialog({position: { X: 300, Y: 10 }, enableModal: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -627,16 +642,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Enable persist on initialization.  
 $("#dialog").ejDialog({position: { X: 300, Y: 10 }, enablePersistence: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -662,16 +678,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Allows the dialog to be resized during initialization  
             $("#dialog").ejDialog({ position: { X: 300, Y: 10 },enableResize: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -697,16 +714,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Enable rtl on initialization.  
          $("#dialog").ejDialog({position: { X: 300, Y: 10 }, enableRTL: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -732,17 +750,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //customIconCss on initialization.  
          ("#dialog").ejDialog({ position: { X: 300, Y: 10 }, faviconCSS  : "custom-icon" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -768,16 +787,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Set Height during initialization  
         $("#dialog").ejDialog({position: { X: 300, Y: 10 }, height: 400 });                             
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -803,16 +823,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Enable windowResizing on initialization.  
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }, isResponsive: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -838,16 +859,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Set maximum height during initialization  
           $("#dialog").ejDialog({position: { X: 300, Y: 10 }, maxHeight: 600 });                
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -873,16 +895,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Set maximum width during initialization  
            $("#dialog").ejDialog({ position: { X: 300, Y: 10 },maxWidth: 600 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -908,16 +931,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Set minimum Height during initialization  
         $("#dialog").ejDialog({position: { X: 300, Y: 10 }, minHeight: 400 });                          
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -943,16 +967,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Set minimum Width during initialization  
          $("#dialog").ejDialog({position: { X: 300, Y: 10 }, minWidth: 400 });                  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -978,16 +1003,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Enable position during initialization  
             $("#dialog").ejDialog({position: { X: 300, Y: 10 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1013,16 +1039,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Enable showHeader on initialization.  
            $("#dialog").ejDialog({ position: { X: 300, Y: 10 },showHeader: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1048,16 +1075,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Enables the Dialog window to open automatically during initialization  
          $("#dialog").ejDialog({  position: { X: 500, Y: 26 },showOnInit:true});                                
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1083,16 +1111,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Enable roundedCorner on initialization.  
          $("#dialog").ejDialog({position: { X: 300, Y: 10 }, showRoundedCorner: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1118,16 +1147,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Title on initialization.  
             $("#dialog").ejDialog({position: { X: 300, Y: 10 }, title: "Custom title" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1153,16 +1183,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //Width on initialization.  
          $("#dialog").ejDialog({ position: { X: 300, Y: 10 },width: 500 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1188,16 +1219,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //zIndex on initialization.  
          $("#dialog").ejDialog({position: { X: 300, Y: 10 }, zIndex: 500 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Methods
@@ -1218,30 +1250,32 @@ To close the dialog
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt; 
+</div>
+<script> 
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }});
 //initialize the dialog object
         var dialogObj = $("#dialog").data("ejDialog");
         //To close the dialog 
         dialogObj.close();
-&lt;/script&gt; </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+</script> {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt; 
+</div>
+<script> 
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //To close the dialog 
 $("#dialog").ejDialog("close");
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1258,32 +1292,34 @@ To Collapse the dialog
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //initialize the dialog object
         var dialogObj = $("#dialog").data("ejDialog");
         //To open the dialog 
         dialogObj.collapse();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-         &lt;div id="dialog" title="WPF"&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+         <div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //To open the dialog 
 $("#dialog").ejDialog("collapse");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1300,28 +1336,30 @@ destroy the dialog widget all events bound using this._on will be unbind automat
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
  $("#dialog").ejDialog(); 
 // Create Dialog control
  var dialogObj = $("#dialog").data("ejDialog"); //Initialize the Dialog object.
  dialogObj.destroy(); //Calls the destroy method of Dialog to destroy
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
  //call destroy method
  $("#dialog").ejDialog("destroy"); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1338,32 +1376,34 @@ To Expand the dialog
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //initialize the dialog object
         var dialogObj = $("#dialog").data("ejDialog");
         //To open the dialog 
         dialogObj.expand();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-         &lt;div id="dialog" title="WPF"&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+         <div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //To open the dialog 
 $("#dialog").ejDialog("expand");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1380,30 +1420,32 @@ To get dialog control is opened or not
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //initialize the dialog object
         var dialogObj = $("#dialog").data("ejDialog");
 //To get the dialog status
         dialogObj.isOpened();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //To get the dialog status
 $("#dialog").ejDialog("isOpened");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1420,32 +1462,34 @@ To Maximize the dialog
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //initialize the dialog object
         var dialogObj = $("#dialog").data("ejDialog");
         //To open the dialog 
         dialogObj.maximize();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-         &lt;div id="dialog" title="WPF"&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+         <div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //To open the dialog 
 $("#dialog").ejDialog("maximize");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1462,32 +1506,34 @@ To Minimize the dialog
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //initialize the dialog object
         var dialogObj = $("#dialog").data("ejDialog");
         //To open the dialog 
         dialogObj.minimize();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-         &lt;div id="dialog" title="WPF"&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+         <div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //To open the dialog 
 $("#dialog").ejDialog("minimize");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1504,32 +1550,34 @@ To open the dialog
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //initialize the dialog object
         var dialogObj = $("#dialog").data("ejDialog");
         //To open the dialog 
         dialogObj.open();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-         &lt;div id="dialog" title="WPF"&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+         <div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //To open the dialog 
 $("#dialog").ejDialog("open");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1546,32 +1594,34 @@ To pin the dialog
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //initialize the dialog object
         var dialogObj = $("#dialog").data("ejDialog");
         //To open the dialog 
         dialogObj.pin();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-         &lt;div id="dialog" title="WPF"&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+         <div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //To open the dialog 
 $("#dialog").ejDialog("pin");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1588,32 +1638,34 @@ To Restore the dialog
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //initialize the dialog object
         var dialogObj = $("#dialog").data("ejDialog");
         //To open the dialog 
         dialogObj.restore();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-         &lt;div id="dialog" title="WPF"&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+         <div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //To open the dialog 
 $("#dialog").ejDialog("restore");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1630,32 +1682,34 @@ To Unpin the dialog
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //initialize the dialog object
         var dialogObj = $("#dialog").data("ejDialog");
         //To open the dialog 
         dialogObj.unpin();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-         &lt;div id="dialog" title="WPF"&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+         <div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // Create Dialog control
  $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 //To open the dialog 
 $("#dialog").ejDialog("unpin");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -1681,17 +1735,20 @@ Fires before dialog control is opened.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1702,19 +1759,20 @@ Fires before dialog control is opened.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 // beforeOpen event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
   beforeOpen: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1736,27 +1794,32 @@ Fires after an AJAX content loading error
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.url</code></td>
+<td class="name">{% highlight html %}
+argument.url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the content location</td>
 </tr>
 <tr>
-<td class="name"><code>argument.data</code></td>
+<td class="name">{% highlight html %}
+argument.data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the content text</td>
 </tr>
@@ -1767,19 +1830,20 @@ Fires after an AJAX content loading error
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //           ajaxError event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
             ajaxError: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1801,27 +1865,32 @@ Fires when AJAX content is loaded successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.url</code></td>
+<td class="name">{% highlight html %}
+argument.url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the content location</td>
 </tr>
 <tr>
-<td class="name"><code>argument.data</code></td>
+<td class="name">{% highlight html %}
+argument.data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the content text</td>
 </tr>
@@ -1832,19 +1901,20 @@ Fires when AJAX content is loaded successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //          ajaxSuccess event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
            ajaxSuccess: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1866,22 +1936,26 @@ Fires before dialog control is closed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.event</code></td>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the close icon click event args</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1892,19 +1966,20 @@ Fires before dialog control is closed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //beforeClose event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
  beforeClose: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1926,22 +2001,26 @@ Fires after dialog control is closed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.event</code></td>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the close icon click event args</td>
 </tr>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1952,19 +2031,20 @@ Fires after dialog control is closed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //beforeClose event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
  Close: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1986,27 +2066,32 @@ Fires on AJAX content, iframe, or image load actions
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.url</code></td>
+<td class="name">{% highlight html %}
+argument.url{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the content location</td>
 </tr>
 <tr>
-<td class="name"><code>argument.contentType</code></td>
+<td class="name">{% highlight html %}
+argument.contentType{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the content type</td>
 </tr>
@@ -2017,19 +2102,20 @@ Fires on AJAX content, iframe, or image load actions
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //         load event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
           contentLoad: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2051,17 +2137,20 @@ Fires after Create dialog successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2072,19 +2161,20 @@ Fires after Create dialog successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //           Create event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
             create: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2106,17 +2196,20 @@ Fires after Destroy event successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2127,18 +2220,19 @@ Fires after Destroy event successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //           destroy event for dialog
  $("#dialog").ejDialog({
             destroy: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2160,22 +2254,26 @@ Fires when dialog control is dragged.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.event</code></td>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the mouse move event args</td>
 </tr>
@@ -2186,19 +2284,20 @@ Fires when dialog control is dragged.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //   drag event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
     drag: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2220,22 +2319,26 @@ Fires when the dialog is starting to be dragged
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.event</code></td>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the mouse down event args</td>
 </tr>
@@ -2246,19 +2349,20 @@ Fires when the dialog is starting to be dragged
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //    dragStart event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
      dragStart: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2280,22 +2384,26 @@ Fires after the dialog dragging stops
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.event</code></td>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the mouse down event args</td>
 </tr>
@@ -2306,19 +2414,20 @@ Fires after the dialog dragging stops
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //     dragStop event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
       dragStop: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2340,17 +2449,20 @@ Fires after dialog control is opened.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2361,19 +2473,20 @@ Fires after dialog control is opened.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //  open event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
    open: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2395,22 +2508,26 @@ Fires on dialog resize action
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.event</code></td>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the mouse move event args</td>
 </tr>
@@ -2421,19 +2538,20 @@ Fires on dialog resize action
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //      resize event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
        resize: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2455,22 +2573,26 @@ Fires on dialog resize start action
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.event</code></td>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the mouse down event args</td>
 </tr>
@@ -2481,19 +2603,20 @@ Fires on dialog resize start action
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //       resizeStart event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
         resizeStart: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2515,22 +2638,26 @@ Fires on dialog resize stop action
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the dialog model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.event</code></td>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the mouse leave event args</td>
 </tr>
@@ -2541,18 +2668,19 @@ Fires on dialog resize stop action
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="dialog" title="WPF"&gt;
+
+{% highlight html %}
+ 
+<div id="dialog" title="WPF">
 Developed by Microsoft, the Windows Presentation Foundation (or WPF) is a computer-software graphical subsystem for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0. Rather than relying on the older GDI subsystem, WPF uses DirectX. WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 //        resizeStop event for dialog
  $("#dialog").ejDialog({
         position: { X: 300, Y: 10 },
          resizeStop: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 

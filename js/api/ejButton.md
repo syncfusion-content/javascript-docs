@@ -28,7 +28,8 @@ $(element).ejButton<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for button</td>
 </tr>
@@ -39,15 +40,16 @@ $(element).ejButton<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Create Button
 $('#button1').ejButton();       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -89,15 +91,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Set the button contentType on initialization.                        
         $("#button1").ejButton({  contentType : ej.ContentType.ImageOnly,prefixIcon: "e-uiLight e-icon e-handup" });                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -123,15 +126,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Set the cssClass during initialization.                      
         $("#button1").ejButton({  cssClass : "gradient-lime" });                        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -157,15 +161,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Enable Button on initialization. 
         $("#button1").ejButton({ enabled:true });       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -191,17 +196,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Set the enableRTL during initialization.                     
         $("#button1").ejButton({ contentType: ej.ContentType.TextAndImage,
    imagePosition: ej.ImagePosition.ImageLeft,
    prefixIcon: "e-uiLight e-login", enableRTL : true });        
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -227,15 +233,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 //To set height API value during initialization  
         $("#button1").ejButton({ height:"30px" });      
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -261,15 +268,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Set HtmlAttributes to Button on initialization. 
         $("#button1").ejButton({htmlAttributes : {disabled:"disabled"}});       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -295,11 +303,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Set the image position for button during initialization.                     
         $("#button1").ejButton(
 {
@@ -307,8 +316,8 @@ Example
    imagePosition: ej.ImagePosition.ImageRight,
         prefixIcon: "e-uiLight e-icon e-handup" //Specifies the primary icon for Button
 });     
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -334,19 +343,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Set the primary icon during initialization.                  
         $("#button1").ejButton(
  {
     contentType: "imageonly",
     prefixIcon: "e-uiLight e-icon e-handup"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -372,15 +382,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Create repeat button during initialization.                  
         $("#button1").ejButton({  repeatButton : true });
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -406,15 +417,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Set the showRoundedCorner during initialization.                     
         $("#button1").ejButton({  showRoundedCorner : true });                  
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -440,15 +452,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 //To set size API value during initialization  
         $("#button1").ejButton({  size: ej.ButtonSize.Mini});   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -474,11 +487,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Set the secondary icon during initialization.                        
         $("#button1").ejButton(
  {
@@ -486,8 +500,8 @@ Example
                 prefixIcon: "e-uiLight e-icon e-handup",
             suffixIcon: "e-uiLight e-icon e-padlockclosed"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -513,15 +527,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Set the button text on initialization.                       
         $("#button1").ejButton({  text: "Hello Word" });
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -547,17 +562,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Set interval during initialization.                  
         $("#button1").ejButton({  
                         repeatButton : true,
                         timeInterval : "100" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -583,15 +599,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 //To set type API value during initialization  
         $("#button1").ejButton({type: ej.ButtonType.Submit});   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -617,15 +634,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 //To set width API value during initialization  
         $("#button1").ejButton({width: "150px"});       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Methods
@@ -646,27 +664,29 @@ destroy the button widget all events bound using this._on will be unbind automat
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Create Button
 $("#button1").ejButton();
 var btnObj = $("#button1").data("ejButton");
 btnObj.destroy(); // destroy the button
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // enable the button
 $("#button1").ejButton();
 $("#button1").ejButton("destroy");      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -683,27 +703,29 @@ To disable the button
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Create Button
 $("#button1").ejButton();
 var btnObj = $("#button1").data("ejButton");
 btnObj.disable(); // disable the button
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // disable the button
 $("#button1").ejButton();
 $("#button1").ejButton("disable");      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -720,27 +742,29 @@ To enable the button
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // Create Button
 $("#button1").ejButton();
 var btnObj = $("#button1").data("ejButton");
 btnObj.enable(); // enable the button
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 // enable the button
 $("#button1").ejButton();
 $("#button1").ejButton("enable");       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -766,7 +790,8 @@ Fires when Button control is clicked successfully.Consider the scenario to perfo
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -779,22 +804,26 @@ Fires when Button control is clicked successfully.Consider the scenario to perfo
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>status</code></td>
+<td class="name">{% highlight html %}
+status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">return the button state</td>
 </tr>
@@ -809,19 +838,20 @@ Fires when Button control is clicked successfully.Consider the scenario to perfo
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 //click event for button
 $("#button1").ejButton({
    click: function (args) {
 // Write a code block to perform operation while click on button.
 }
 });
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -843,7 +873,8 @@ Fires after Button control is created.If the user want to perform any operation 
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -856,17 +887,20 @@ Fires after Button control is created.If the user want to perform any operation 
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -881,19 +915,20 @@ Fires after Button control is created.If the user want to perform any operation 
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 //create event for button
 $("#button1").ejButton({
    create: function (args) {
 // Write a code block to perform operation after creating the button.
 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -915,7 +950,8 @@ Fires when the button is destroyed successfully.If the user want to perform any 
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from button
 <table class="params">
@@ -928,17 +964,20 @@ Fires when the button is destroyed successfully.If the user want to perform any 
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -953,19 +992,20 @@ Fires when the button is destroyed successfully.If the user want to perform any 
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;button id="button1"&gt;Button&lt;/button&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<button id="button1">Button</button> 
+ 
+<script>
 //destroy event for button
 $("#button1").ejButton({
    destroy: function (args) {
 // Write a code block to perform operation after destroy the button.
 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

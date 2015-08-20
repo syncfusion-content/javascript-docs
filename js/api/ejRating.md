@@ -26,15 +26,16 @@ $(element).ejRating<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 // Create Rating
 $('#rating').ejRating(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -78,15 +79,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //To set allowReset API value during initialization  
         $("#rating").ejRating({allowReset: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -112,15 +114,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 // Set the cssClass during initialization.
         $("#rating").ejRating({  cssClass : "gradient-lime" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -146,15 +149,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //To set enabled API value during initialization  
         $("#rating").ejRating({enabled: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -180,15 +184,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //To set persist API value during initialization  
         $("#rating").ejRating({enablePersistence: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -214,14 +219,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
+<input id="rating"></input> 
  
-&lt;script&gt;
+<script>
 //To set height API value during initialization  
         $("#rating").ejRating({height: "50" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -247,16 +253,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;/br&gt;
-&lt;/br&gt;
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
+</br>
+</br>
+<input id="rating"></input> 
  
-&lt;script&gt;
+<script>
 //To set incrementStep API value during initialization  
         $("#rating").ejRating({incrementStep: 2 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -282,16 +289,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;/br&gt;
-&lt;/br&gt;
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
+</br>
+</br>
+<input id="rating"></input> 
  
-&lt;script&gt;
+<script>
 //To set maxValue API value during initialization  
         $("#rating").ejRating({maxValue: 10 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -317,17 +325,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+</br>
+</br>
+<input id="rating"></input> 
+ 
+<script>
 //To set minValue API value during initialization  
         $("#rating").ejRating({minValue: 3 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -353,15 +362,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //To set orientation API value during initialization  
         $("#rating").ejRating({orientation: ej.Rating.Orientation.Horizontal });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -387,16 +397,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;/br&gt;
-&lt;/br&gt;
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
+</br>
+</br>
+<input id="rating"></input> 
  
-&lt;script&gt;
+<script>
 //To set precision API value during initialization  
         $("#rating").ejRating({precision: ej.Rating.Precision.Half});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -422,15 +433,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //To set readOnly API value during initialization  
         $("#rating").ejRating({readOnly: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -456,15 +468,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //To set shapeHeight API value during initialization  
         $("#rating").ejRating({shapeHeight: 25 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -490,15 +503,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //To set shapeWidth API value during initialization  
         $("#rating").ejRating({shapeWidth: 25 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -524,17 +538,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+</br>
+</br>
+<input id="rating"></input> 
+ 
+<script>
 //To set showTooltip API value during initialization  
         $("#rating").ejRating({showTooltip: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -560,17 +575,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;/br&gt;
-&lt;/br&gt;
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+</br>
+</br>
+<input id="rating"></input> 
+ 
+<script>
 //To set value API value during initialization  
         $("#rating").ejRating({value: 3 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -596,14 +612,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
+<input id="rating"></input> 
  
-&lt;script&gt;
+<script>
 //To set width API value during initialization  
         $("#rating").ejRating({width: "200" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Methods
@@ -624,27 +641,29 @@ destroy the Rating widget all events bound using this._on will be unbind automat
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;rating id="rating"&gt;Rating&lt;/rating&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<rating id="rating">Rating</rating> 
+ 
+<script>
 $("#rating").ejRating();
 // Create Rating
 var ratingObj = $("#rating").data("ejRating");
 ratingObj.destroy(); // destroy the button
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;rating id="rating"&gt;Rating&lt;/rating&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<rating id="rating">Rating</rating> 
+ 
+<script>
 $("#rating").ejRating();
 // destroy the rating
 $("#rating").ejRating("destroy");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -666,27 +685,29 @@ Rating value
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // Get current value of rating
 var ratingObj = $("#rating").data("ejRating");
 ratingObj.getValue(); // get the current value of rting
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // To get the current value of rating
 $("#rating").ejRating("getValue");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -703,27 +724,29 @@ To hide the rating control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // Hide Rating
 var ratingObj = $("#rating").data("ejRating");
 ratingObj.hide(); // hides the rating control
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // hide the rating control
 $("#rating").ejRating("hide");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -740,27 +763,29 @@ user can refresh the rating control to identify changes
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // Refresh the rating control
 var ratingObj = $("#rating").data("ejRating");
 ratingObj.refresh(); // refreshes the rating control
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // To refresh the rating values
 $("#rating").ejRating("refresh");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -777,27 +802,29 @@ To reset the rating value
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // Reset Rating
 var ratingObj = $("#rating").data("ejRating");
 ratingObj.reset(); // reset the rating values
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // reset the rating values
 $("#rating").ejRating("reset");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -814,27 +841,29 @@ To set the current value of rating control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // Set current value of rating
 var ratingObj = $("#rating").data("ejRating");
 ratingObj.setValue(); // set the current value of rating
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // To set the current value of rating
 $("#rating").ejRating("setValue");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -851,27 +880,29 @@ To show the rating control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // Show Rating
 var ratingObj = $("#rating").data("ejRating");
 ratingObj.show(); // shows the rating control
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 $("#rating").ejRating();
 // show the rating control
 $("#rating").ejRating("show");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -897,7 +928,8 @@ Fires when Rating value changes.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from rating
 <table class="params">
@@ -910,27 +942,32 @@ Fires when Rating value changes.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current value.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rating model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>event</code></td>
+<td class="name">{% highlight html %}
+event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the mouse click event args values.</td>
 </tr>
@@ -945,17 +982,18 @@ Fires when Rating value changes.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //mouseover event for button
 $("#rating").ejRating({
    change: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -977,7 +1015,8 @@ Fires when Rating control is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from rating
 <table class="params">
@@ -990,27 +1029,32 @@ Fires when Rating control is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current value.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rating model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>event</code></td>
+<td class="name">{% highlight html %}
+event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the mouse click event args values.</td>
 </tr>
@@ -1025,17 +1069,18 @@ Fires when Rating control is clicked successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //click event for button
 $("#rating").ejRating({
    click: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1057,7 +1102,8 @@ Fires when Rating control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from rating
 <table class="params">
@@ -1070,17 +1116,20 @@ Fires when Rating control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rating model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -1095,17 +1144,18 @@ Fires when Rating control is created.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //create event for rating
 $("#rating").ejRating({
    create: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1127,7 +1177,8 @@ Fires when Rating control is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from rating
 <table class="params">
@@ -1140,17 +1191,20 @@ Fires when Rating control is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rating model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1165,17 +1219,18 @@ Fires when Rating control is destroyed successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //destroy event for rating
 $("#rating").ejRating({
    destroy: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1197,7 +1252,8 @@ Fires when mouse hover is removed from Rating control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from rating
 <table class="params">
@@ -1210,27 +1266,32 @@ Fires when mouse hover is removed from Rating control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current value.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rating model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>event</code></td>
+<td class="name">{% highlight html %}
+event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the mouse click event args values.</td>
 </tr>
@@ -1245,17 +1306,18 @@ Fires when mouse hover is removed from Rating control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //mouseover event for button
 $("#rating").ejRating({
    mouseout: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1277,7 +1339,8 @@ Fires when mouse hovered over the Rating control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from rating
 <table class="params">
@@ -1290,32 +1353,38 @@ Fires when mouse hovered over the Rating control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the current value.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the rating model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>event</code></td>
+<td class="name">{% highlight html %}
+event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the mouse click event args values.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current index value.</td>
 </tr>
@@ -1330,17 +1399,18 @@ Fires when mouse hovered over the Rating control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="rating"&gt;&lt;/input&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="rating"></input> 
+ 
+<script>
 //mouseover event for button
 $("#rating").ejRating({
    mouseover: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

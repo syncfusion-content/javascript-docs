@@ -36,7 +36,8 @@ $(element).ejLinearGauge<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">For seting the Linear gauge</td>
 </tr>
@@ -49,14 +50,15 @@ $(element).ejLinearGauge<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $('#LinearGauge1').ejLinearGauge();     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -124,14 +126,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ animationSpeed: 1000, value:50});
-&lt;/script&gt;    </code>
-</pre>
+</script>    {% endhighlight %}
+
 
 
 
@@ -173,14 +176,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ backgroundColor: "Red" });   
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -222,14 +226,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ borderColor: "Red" });   
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -271,14 +276,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ enableAnimation: true, value:50});  
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -320,14 +326,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ enableMarkerPointerAnimation: true, value:50});  
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -369,14 +376,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ enableResize: true });   
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -418,15 +426,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="LinearGauge1"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
+  
+<div id="LinearGauge1">
+</div> 
  
-&lt;script&gt;                  
+<script>                  
 $("#LinearGauge1").ejLinearGauge({ frame: { backgroundImageUrl:null, outerWidth:12, innerWidth:8 } });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -468,14 +477,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="LinearGauge1"></div> 
+ 
+<script>  
         $("#LinearGauge1").ejLinearGauge({ frame:{backgroundImageUrl: "bg.png"} });  
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -517,14 +527,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ frame:{innerWidth: 9}});   
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -566,14 +577,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ frame:{outerWidth: 13 }});   
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -615,14 +627,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({ height: 360 }); 
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -664,14 +677,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ labelColor: "Red" });   
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -713,14 +727,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ maximum: 110 }); 
-&lt;/script&gt;    </code>
-</pre>
+</script>    {% endhighlight %}
+
 
 
 
@@ -762,14 +777,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({ minimum: 10 });  
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -811,14 +827,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ orientation: "Vertical" });   
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -860,15 +877,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreLinearGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreLinearGauge">
+</div> 
+ 
+<script>                  
 $("#CoreLinearGauge").ejLinearGauge({  outerCustomLabelPosition:"top" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -910,14 +928,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({ pointerGradient1: { colorInfo:[{ colorStop : 0, color:"#FFFFFF"},{colorStop : 1, color:"#AAAAAA"}] } });  
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -959,14 +978,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ pointerGradient2: { colorInfo:[{ colorStop : 0, color:"#FFFFFF"},{colorStop : 1, color:"#AAAAAA"}] } });  
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1008,14 +1028,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ readOnly: false });   
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1057,14 +1078,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ scales: [{}]});   
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1106,14 +1128,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{backgroundColor:"red"}]}); 
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -1155,14 +1178,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{barPointers:[{}]}]});                              
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -1204,14 +1228,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{barPointers:[{value:50, backgroundColor: "red"}]}]});              
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -1253,14 +1278,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{barPointers:[{value:50, border:{color: "red", width:1.5}}]}]});    
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -1302,14 +1328,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{barPointers:[{value:50, border:{color: "red"}}]}]});       
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -1351,14 +1378,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{barPointers:[{value:50, border:{width: 2}}]}]});           
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -1400,14 +1428,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{barPointers:[{value:50, distanceFromScale: 20}]}]});               
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -1449,14 +1478,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{barPointers:[{value:50, gradients: { colorInfo:[{ colorStop : 0, color:"#FFFFFF"},{colorStop : 1, color:"#AAAAAA"}] }}]}]});               
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1498,14 +1528,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{barPointers:[{value:50, opacity: 0.5}]}]});        
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1547,14 +1578,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{barPointers:[{value: 100}]}]});            
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -1596,14 +1628,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{barPointers:[{value:50, width: 25}]}]});           
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -1645,14 +1678,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{border:{color:"red", width:1.5}}]});       
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -1694,14 +1728,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{border:{color:"red"}}]});  
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -1743,14 +1778,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{border:{width:2.5}}]});    
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -1792,14 +1828,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"MyLabel", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -1841,14 +1878,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"MyLabel", position:{x:49,y:100}, color:"yellow", font: { size: "20px",fontFamily: "Arial", fontStyle: "Bold" }}]}]});
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -1890,14 +1928,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"MyLabel", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -1939,14 +1978,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"MyLabel", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -1988,14 +2028,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"MyLabel", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2037,14 +2078,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"MyLabel", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2086,14 +2128,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"MyLabel", position:{x:49,y:100}, color:"#fc0606",opacity:0.5, font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -2135,14 +2178,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"LinearGauge", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});           
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -2184,14 +2228,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ textAngle: 20,value:"LinearGauge", position:{x:10,y:50}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});              
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2233,14 +2278,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ textAngle: 20,value:"LinearGauge", position:{x:49,y:10}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});              
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2282,14 +2328,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ positionType:"outer",value:"LinearGauge", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});              
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -2331,14 +2378,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ textAngle: 20,value:"LinearGauge", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});             
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2380,14 +2428,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"LinearGauge", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2429,14 +2478,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{direction:ej.datavisualization.LinearGauge.Directions.Clockwise}]});       
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -2478,18 +2528,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({scales: [{showBarPointers: false, showIndicators: true, length: 310, indicators: [{
    font: {size: "11px",fontFamily: "Arial",fontStyle: "bold"},height: 30,
    type: "rectangle",width: 30,position: {x: 60,y: 70},textLocation: {x: 0,y: 0},
    stateRanges: [{endValue: 60,startValue: 50,backgroundColor: "Red",borderColor: "Green",textColor: null}],
    value: 0, backgroundColor: "Red", border:{color: "Red", width: 1.5}, opacity: NaN}]}]});             
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2531,19 +2582,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    height: 30,type: "rectangle",width: 30,
    position: { x: 0,y: 0},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Green",borderColor: "Red"}],
    backgroundColor:"green"}]}]});       
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -2585,19 +2637,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    height: 30,type: "rectangle",width: 30,
    position: { x: 0,y: 0},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Green",borderColor: "Red"}],
    border:{color:"red", width: 5}}]}]});                
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2639,19 +2692,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    height: 30,type: "rectangle",width: 30,
    position: { x: 0,y: 0},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Green",borderColor: "Red"}],
    border:{color: "Red"}}]}]}); 
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -2693,19 +2747,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    height: 30,type: "rectangle",width: 30,
    position: { x: 0,y: 0},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Green",borderColor: "Red"}],
    border:{width: 5}}]}]});             
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2747,18 +2802,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "11px", fontFamily: "Arial", fontStyle: "bold" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 50, y: 100 },
   stateRanges: [{ endValue: 60, startValue: 50, textColor: "Green", text: "Linear" }],opacity: 0.5}]}]});
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2800,18 +2856,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="LinearGauge1"></div> 
+ 
+<script>  
 $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "11px", fontFamily: "Segoe UI", fontStyle: "bold" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 50, y: 100 },
   stateRanges: [{ endValue: 60, startValue: 50, textColor: "Green", text: "Linear" }],opacity: 0.5}]}]});                       
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2853,18 +2910,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "11px", fontFamily: "Arial", fontStyle: "Normal" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 50, y: 100 },
   stateRanges: [{ endValue: 60, startValue: 50, textColor: "Green", text: "Linear" }],opacity: 0.5}]}]});       
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2906,18 +2964,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "20px", fontFamily: "Arial", fontStyle: "bold" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 50, y: 100 },
   stateRanges: [{ endValue: 60, startValue: 50, textColor: "Green", text: "Linear" }],opacity: 0.5}]}]});       
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -2959,19 +3018,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    type: "rectangle",height: 50,
    position: { x: 0,y: 0},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Green",borderColor: "Red",}],
    border:{width: 1.5}}]}]});   
-&lt;/script&gt;                                  </code>
-</pre>
+</script>                                  {% endhighlight %}
+
 
 
 
@@ -3013,17 +3073,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({ readonly:false, scales: [{showBarPointers: false, showIndicators: true, indicators: [{height: 30,
 type: "rectangle",position: {x: 80,y: 110},
 stateRanges: [{endValue: 80,startValue: 50,backgroundColor: "Red",borderColor: "Green",textColor: null}],
 value: 0, backgroundColor: "Red", border:{color: "Green"}, opacity:0.5}]}]});
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -3065,19 +3126,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    height: 30,type: "rectangle",width: 30,
    position: { x: 0,y: 0},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Green",borderColor: "Red",}],
    border:{width: 1.5}}]}]});           
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -3119,19 +3181,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    height: 30,type: "rectangle",width: 30,
    position: { x: 20,y: 0},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Green",borderColor: "Red",}],
    border:{width: 1.5}}]}]});           
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -3173,19 +3236,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    height: 30,type: "rectangle",width: 30,
    position: { x: 0,y: 100},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Green",borderColor: "Red",}],
    border:{width: 1.5}}]}]});
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -3227,18 +3291,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
 $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "11px", fontFamily: "Arial", fontStyle: "Normal" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 0, y: 100 },
   stateRanges: [{ endValue: 60, startValue: 50, textColor: "Green", text: "Linear" }],opacity: 0.5}]}]});       
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -3280,19 +3345,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    height: 30,type: "rectangle",width: 30,
    position: { x: 0,y: 0},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Red",borderColor: "Green"}],
    border:{width: 1.5}}]}]});
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3334,19 +3400,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    height: 30,type: "rectangle",width: 30,
    position: { x: 0,y: 0},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Green",borderColor: "Red"}],
    border:{width: 1.5}}]}]});
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3388,18 +3455,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
 $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "11px", fontFamily: "Arial", fontStyle: "Normal" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 0, y: 100 },
   stateRanges: [{ endValue: 90, startValue: 40, textColor: "Green", text: "Linear" }],opacity: 0.5}]}]});
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -3441,18 +3509,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
 $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "11px", fontFamily: "Arial", fontStyle: "Normal" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 0, y: 100 },
   stateRanges: [{ endValue: 90, startValue: 40, textColor: "Green", text: "Linear" }],opacity: 0.5}]}]});
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -3494,18 +3563,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "11px", fontFamily: "Arial", fontStyle: "Normal" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 20, y: 100 },
   stateRanges: [{ endValue: 90, startValue: 40, textColor: "Green", text: "Linear Gauge" }],opacity: 0.5}]}]}); 
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -3547,18 +3617,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="LinearGauge1"></div> 
+ 
+<script>  
 $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "11px", fontFamily: "Arial", fontStyle: "Normal" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 0, y: 100 },
   stateRanges: [{ endValue: 90, startValue: 40, textColor: "Red", text: "Linear" }],opacity: 0.5}]}]}); 
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -3600,18 +3671,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
 $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "11px", fontFamily: "Arial", fontStyle: "Normal" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 50, y: 100 },
   stateRanges: [{ endValue: 60, startValue: 50, textColor: "Green", text: "Linear" }],opacity: 0.5}]}]});       
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -3653,18 +3725,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "11px", fontFamily: "Arial", fontStyle: "Normal" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 50, y: 0 },
   stateRanges: [{ endValue: 60, startValue: 50, textColor: "Green", text: "Linear" }],opacity: 0.5}]}]});
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -3706,18 +3779,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
   value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
   font: { size: "11px", fontFamily: "Arial", fontStyle: "Normal" }, height: 30,
   type: "text", width: 30, position: { x: 60, y: 100 }, textLocation: { x: 0, y: 100 },
   stateRanges: [{ endValue: 60, startValue: 50, textColor: "Green", text: "Linear" }],opacity: 0.5}]}]});
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -3759,19 +3833,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    height: 30,type: "rectangle",width: 30,
    position: { x: 0,y: 0},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Green",borderColor: "Red",}],
    border:{width: 1.5}}]}]});
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3813,19 +3888,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    value: 50, scales: [{showBarPointers: true, showIndicators: true, length: 310, indicators: [{
    type: "rectangle",width: 50,
    position: { x: 0,y: 0},
    stateRanges: [{endValue: 60,startValue: 40,backgroundColor: "Green",borderColor: "Red",}],
    border:{width: 1.5}}]}]});
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -3867,14 +3943,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{distanceFromScale:{y:1}}]}]});                    
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3916,14 +3993,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{angle:30}]}]});                           
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3965,14 +4043,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{distanceFromScale:{x:10, y:10}}]}]});             
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -4014,14 +4093,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{distanceFromScale:{x:10}}]}]});           
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -4063,14 +4143,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="LinearGauge1"></div> 
+ 
+<script>  
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{distanceFromScale:{y:20}}]}]});           
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4112,14 +4193,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{font:{size: "11px"}}]}]});                
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -4161,14 +4243,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{font:{fontFamily: "Segoe UI"}}]}]});              
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -4210,14 +4293,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{font:{fontStyle: ej.datavisualization.LinearGauge.FontStyle.Normal}}]}]});                
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -4259,14 +4343,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{font:{size: "18px"}}]}]});                
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -4308,14 +4393,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="LinearGauge1"></div> 
+ 
+<script>  
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{includeFirstValue: false}]}]});           
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -4357,14 +4443,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{opacity: 0.5}]}]});               
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -4406,14 +4493,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{placement: ej.datavisualization.LinearGauge.LabelPlacement.Far}]}]});     
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -4455,14 +4543,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
 $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{textColor: "green"}]}]});         
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4504,14 +4593,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{type: ej.datavisualization.LinearGauge.LabelType.Major}]}]});     
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -4553,14 +4643,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{unitText: "F"}]}]});      
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -4602,14 +4693,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{unitText: "F",unitTextPlacement: "front"}]}]});                           
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -4651,14 +4743,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{length:300}]});
-&lt;/script&gt;                                         </code>
-</pre>
+</script>                                         {% endhighlight %}
+
 
 
 
@@ -4700,14 +4793,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{majorIntervalValue:10}]});
-&lt;/script&gt;                                         </code>
-</pre>
+</script>                                         {% endhighlight %}
+
 
 
 
@@ -4749,14 +4843,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{type: "triangle"}]}]});   
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -4798,14 +4893,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{backgroundColor: "blue"}]}]});            
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4847,14 +4943,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{border:{color: "blue", width: 1.5}}]}]});         
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -4896,14 +4993,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{border:{color: "blue", width: 1.5}}]}]});         
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -4945,14 +5043,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{border:{color: "blue", width: 1.5}}]}]});         
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -4994,14 +5093,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{distanceFromScale: 2}]}]});               
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -5043,14 +5143,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{gradients: { colorInfo:[{ colorStop : 0, color:"#FFFFFF"},{colorStop : 1, color:"#AAAAAA"}] }}]}]});              
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -5092,14 +5193,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{length: 25}]}]});         
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -5141,14 +5243,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{opacity: 0.5}]}]});               
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -5190,14 +5293,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{placement: ej.datavisualization.LinearGauge.PointerPlacement.Near}]}]});          
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -5239,14 +5343,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{type: ej.datavisualization.LinearGauge.MarkerType.Rectangle}]}]});                
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -5288,14 +5393,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{value: 25}]}]});          
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -5337,14 +5443,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{markerPointers:[{width: 25}]}]});          
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -5386,14 +5493,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{maximum:110}]});   
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -5435,14 +5543,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{minimum:10}]});    
-&lt;/script&gt;                                         </code>
-</pre>
+</script>                                         {% endhighlight %}
+
 
 
 
@@ -5484,14 +5593,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{minorIntervalValue:1}]});  
-&lt;/script&gt;                                         </code>
-</pre>
+</script>                                         {% endhighlight %}
+
 
 
 
@@ -5533,14 +5643,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{opacity:0.2}]});   
-&lt;/script&gt;                                         </code>
-</pre>
+</script>                                         {% endhighlight %}
+
 
 
 
@@ -5582,14 +5693,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{position:{x:30, y:30}}]});         
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -5631,14 +5743,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{position:{x:30}}]});               
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -5680,14 +5793,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{position:{y:30}}]});               
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -5729,14 +5843,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{ranges:[{endWidth:4}]}]});         
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -5778,14 +5893,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 10, endValue: 60, startValue: 0, backgroundColor: "Green" }] }] });                  
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -5827,14 +5943,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 10, endValue: 60, startValue: 0, backgroundColor: "#E94649", border:{color: "Green", width:1.5} }] }] });            
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -5876,14 +5993,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 10, endValue: 60, startValue: 0, backgroundColor: "#E94649", border:{color: "Green"} }] }] });               
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -5925,14 +6043,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 10, endValue: 60, startValue: 0, backgroundColor: "#E94649", border:{width:1.5} }] }] });            
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -5974,14 +6093,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 10, endValue: 60, startValue: 0, backgroundColor: "#E94649",distanceFromScale: 10 }] }] });  
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -6023,14 +6143,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 10, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });                                        
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -6072,14 +6193,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });        
-&lt;/script&gt;                                  </code>
-</pre>
+</script>                                  {% endhighlight %}
+
 
 
 
@@ -6121,14 +6243,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 10, endValue: 60, startValue: 0, backgroundColor: "#E94649",gradients:{ colorInfo:[{colorStop : 0, color:"#FFFFFF"},{colorStop : 1, color:"#AAAAAA"}] } }] }] });    
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -6170,14 +6293,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 10, endValue: 60, startValue: 0, backgroundColor: "#E94649",opacity: 0.3 }] }] });                           
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -6219,14 +6343,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 10, endValue: 60, startValue: 0, backgroundColor: "#E94649",placement: "center" }] }] });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6268,14 +6393,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 10, endValue: 60, startValue: 10, backgroundColor: "#E94649" }] }] });                       
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -6317,14 +6443,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 20, endWidth: 10, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });                
-&lt;/script&gt;                                  </code>
-</pre>
+</script>                                  {% endhighlight %}
+
 
 
 
@@ -6366,14 +6493,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{shadowOffset:1}]});                
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -6415,14 +6543,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{showBarPointers:false}]});         
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -6464,14 +6593,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true}]}); 
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -6513,14 +6643,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showIndicators:true}]});   
-&lt;/script&gt;                                         </code>
-</pre>
+</script>                                         {% endhighlight %}
+
 
 
 
@@ -6562,14 +6693,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showLabels:false}]});              
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -6611,14 +6743,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{showMarkerPointers:false}]});      
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -6660,14 +6793,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showRanges:false}]});      
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -6709,14 +6843,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{showTicks:false}]});                       
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -6758,14 +6893,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{ticks:[{angle:30}]}]});            
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -6807,14 +6943,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{ticks:[{angle:20}]}]});                            
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -6856,14 +6993,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{ticks:[{color:"Blue"}]}]});        
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -6905,14 +7043,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{ticks:[{distanceFromScale:{x:10, y:10}}]}]});      
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -6954,14 +7093,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{ticks:[{distanceFromScale:{x:10}}]}]});    
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -7003,14 +7143,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<div id="LinearGauge1"></div> 
+ 
+<script>  
         $("#LinearGauge1").ejLinearGauge({  scales:[{ticks:[{distanceFromScale:{y:10}}]}]});            
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -7052,14 +7193,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{ticks:[{height:8}]}]});            
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7101,14 +7243,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{ticks:[{opacity:0.5}]}]});                                         
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7150,14 +7293,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<div id="LinearGauge1"></div> 
+ 
+<script> 
         $("#LinearGauge1").ejLinearGauge({  scales:[{ticks:[{placement:ej.datavisualization.LinearGauge.TickPlacement.Far}]}]});                
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -7199,14 +7343,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{ticks:[{type:ej.datavisualization.LinearGauge.TickType.MajorInterval}]}]});                
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -7248,14 +7393,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{ticks:[{width:4}]}]});                     
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -7297,14 +7443,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{type:ej.datavisualization.LinearGauge.ScaleType.Rectangle}]});     
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -7346,14 +7493,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{width:25}]});              
-&lt;/script&gt;                                 </code>
-</pre>
+</script>                                 {% endhighlight %}
+
 
 
 
@@ -7395,14 +7543,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ theme: ej.datavisualization.LinearGauge.flatdark });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -7444,14 +7593,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ tickColor: "Red" });   
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7493,15 +7643,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreLinearGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreLinearGauge">
+</div> 
+ 
+<script>                  
 $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true,showCustomLabelTooltip: true,templateID: null} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7543,15 +7694,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreLinearGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreLinearGauge">
+</div> 
+ 
+<script>                  
 $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showCustomLabelTooltip: true} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7593,15 +7745,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreLinearGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreLinearGauge">
+</div> 
+ 
+<script>                  
 $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7643,15 +7796,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="CoreLinearGauge"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;                  
+<div id="CoreLinearGauge">
+</div> 
+ 
+<script>                  
 $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true, templateID: true} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7693,14 +7847,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({  size: 5.5});        
-&lt;/script&gt;                          </code>
-</pre>
+</script>                          {% endhighlight %}
+
 
 
 
@@ -7742,14 +7897,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({ width: 360 });  
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -7782,16 +7938,17 @@ destroy the linear gauge all events bound using this._on will be unbind automati
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var linearGaugeobj = $("#LinearGauge1").data("ejLinearGauge");
 linearGaugeobj.destroy();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7820,12 +7977,14 @@ To export Image
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.fileName</code></td>
+<td class="name">{% highlight html %}
+argument.fileName{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">for the Image</td>
 </tr>
 <tr>
-<td class="name"><code>argument.fileType</code></td>
+<td class="name">{% highlight html %}
+argument.fileType{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">for the Image</td>
 </tr>
@@ -7838,16 +7997,17 @@ To export Image
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.exportImage("myImage","jpeg");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7876,12 +8036,14 @@ To get Bar Distance From Scale in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -7894,16 +8056,17 @@ To get Bar Distance From Scale in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({value:50});
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getBarDistanceFromScale(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7932,12 +8095,14 @@ To get Bar Pointer Value in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -7950,16 +8115,17 @@ To get Bar Pointer Value in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({value:50});
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getBarPointerValue(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7988,12 +8154,14 @@ To get Bar Width in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8006,17 +8174,18 @@ To get Bar Width in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({value:50});
 // get Bar Width in number
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getBarWidth(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8045,12 +8214,14 @@ To get CustomLabel Angle in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.customLabelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
@@ -8063,16 +8234,17 @@ To get CustomLabel Angle in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"MyLabel", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getCustomLabelAngle(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8101,12 +8273,14 @@ To get CustomLabel Value in string
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.customLabelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
@@ -8119,16 +8293,17 @@ To get CustomLabel Value in string
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"MyLabel", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getCustomLabelValue(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8157,12 +8332,14 @@ To get Label Angle in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -8175,16 +8352,17 @@ To get Label Angle in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getLabelAngle(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8213,12 +8391,14 @@ To get LabelPlacement in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -8231,16 +8411,17 @@ To get LabelPlacement in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getLabelPlacement(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8269,12 +8450,14 @@ To get LabelStyle in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -8287,16 +8470,17 @@ To get LabelStyle in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getLabelStyle(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8325,12 +8509,14 @@ To get Label XDistance From Scale in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -8343,16 +8529,17 @@ To get Label XDistance From Scale in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getLabelXDistanceFromScale(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8381,12 +8568,14 @@ To get PointerValue in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -8399,16 +8588,17 @@ To get PointerValue in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getLabelYDistanceFromScale(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8437,7 +8627,8 @@ To get Major Interval Value in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8450,16 +8641,17 @@ To get Major Interval Value in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getMajorIntervalValue(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8488,12 +8680,14 @@ To get MarkerStyle in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">vscaleIndex alue for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8506,16 +8700,17 @@ To get MarkerStyle in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getMarkerStyle(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8544,7 +8739,8 @@ To get Maximum Value in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8557,16 +8753,17 @@ To get Maximum Value in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getMaximumValue(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8595,12 +8792,14 @@ To get PointerValue in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -8613,16 +8812,17 @@ To get PointerValue in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getMinimumValue(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8651,7 +8851,8 @@ To get Minor Interval Value in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8664,16 +8865,17 @@ To get Minor Interval Value in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getMinorIntervalValue(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8702,12 +8904,14 @@ To get Pointer Distance From Scale in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8720,16 +8924,17 @@ To get Pointer Distance From Scale in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getPointerDistanceFromScale(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8758,12 +8963,14 @@ To get PointerHeight in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8776,16 +8983,17 @@ To get PointerHeight in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getPointerHeight(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8814,12 +9022,14 @@ To get Pointer Placement in String
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8832,16 +9042,17 @@ To get Pointer Placement in String
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getPointerPlacement(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8870,12 +9081,14 @@ To get PointerValue in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8888,16 +9101,17 @@ To get PointerValue in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getPointerValue(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8926,12 +9140,14 @@ To get PointerWidth in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8944,16 +9160,17 @@ To get PointerWidth in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getPointerWidth(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8982,12 +9199,14 @@ To get Range Border Width in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9000,16 +9219,17 @@ To get Range Border Width in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getRangeBorderWidth(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9038,12 +9258,14 @@ To get Range Distance From Scale in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9056,16 +9278,17 @@ To get Range Distance From Scale in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getRangeDistanceFromScale(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9094,12 +9317,14 @@ To get Range End Value in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9112,16 +9337,17 @@ To get Range End Value in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getRangeEndValue(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9150,12 +9376,14 @@ To get Range End Width in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9168,16 +9396,17 @@ To get Range End Width in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getRangeEndWidth(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9206,12 +9435,14 @@ To get Range Position in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9224,16 +9455,17 @@ To get Range Position in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getRangePosition(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9262,12 +9494,14 @@ To get Range Start Value in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9280,16 +9514,17 @@ To get Range Start Value in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getRangeStartValue(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9318,12 +9553,14 @@ To get Range Start Width in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9336,16 +9573,17 @@ To get Range Start Width in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getRangeStartWidth(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9374,7 +9612,8 @@ To get ScaleBarLength in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -9387,16 +9626,17 @@ To get ScaleBarLength in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getScaleBarLength(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9425,12 +9665,14 @@ To get Scale Bar Size in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -9443,16 +9685,17 @@ To get Scale Bar Size in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getScaleBarSize(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9481,7 +9724,8 @@ To get Scale Border Width in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -9494,16 +9738,17 @@ To get Scale Border Width in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getScaleBorderWidth(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9532,7 +9777,8 @@ To get Scale Direction in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -9545,16 +9791,17 @@ To get Scale Direction in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getScaleDirection(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9583,7 +9830,8 @@ To get Scale Location in object
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -9596,16 +9844,17 @@ To get Scale Location in object
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getScaleLocation(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9634,7 +9883,8 @@ To get Scale Style in string
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -9647,16 +9897,17 @@ To get Scale Style in string
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getScaleStyle(0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9685,12 +9936,14 @@ To get Tick Angle in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -9703,16 +9956,17 @@ To get Tick Angle in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getTickAngle(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9741,12 +9995,14 @@ To get Tick Height in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -9759,16 +10015,17 @@ To get Tick Height in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getTickHeight(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9797,12 +10054,14 @@ To get getTickPlacement in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -9815,16 +10074,17 @@ To get getTickPlacement in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getTickPlacement(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9853,12 +10113,14 @@ To get Tick Style in string
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -9871,16 +10133,17 @@ To get Tick Style in string
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getTickStyle(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9909,12 +10172,14 @@ To get Tick Width in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -9927,16 +10192,17 @@ To get Tick Width in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getTickWidth(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9965,12 +10231,14 @@ To get get Tick XDistance From Scale in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -9983,16 +10251,17 @@ To get get Tick XDistance From Scale in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getTickXDistanceFromScale(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10021,12 +10290,14 @@ To get Tick YDistance From Scale in number
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -10039,16 +10310,17 @@ To get Tick YDistance From Scale in number
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.getTickYDistanceFromScale(0,0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10090,14 +10362,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
         $("#LinearGauge1").ejLinearGauge({  scales:[{minimum:5}]});
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -10126,17 +10399,20 @@ To set setBarDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex,value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Bar DistanceFromScale value for Gauge</td>
 </tr>
@@ -10149,16 +10425,17 @@ To set setBarDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setBarDistanceFromScale(0,0,30);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10187,17 +10464,20 @@ To set setBarPointerValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Bar Pointer Value for Gauge</td>
 </tr>
@@ -10210,16 +10490,17 @@ To set setBarPointerValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setBarPointerValue(0,0,30);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10248,17 +10529,20 @@ To set setBarWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndexvalue for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Bar Width for Gauge</td>
 </tr>
@@ -10271,16 +10555,17 @@ To set setBarWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setBarWidth(0,0,30);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10309,17 +10594,20 @@ To set setCustomLabelAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.customLabelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Custom Label Angle for Gauge</td>
 </tr>
@@ -10332,16 +10620,17 @@ To set setCustomLabelAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"MyLabel", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setCustomLabelAngle(0,0,30);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10370,17 +10659,20 @@ To set setCustomLabelValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.customLabelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">CustomLabel value for Gauge</td>
 </tr>
@@ -10393,16 +10685,17 @@ To set setCustomLabelValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({  scales:[{showCustomLabels:true,customLabels: [{ value:"MyLabel", position:{x:49,y:100}, color:"#fc0606", font: { size: "20px",fontFamily: "Arial", fontStyle: "bold" }}]}]});
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setCustomLabelValue(0,0,"text");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10431,17 +10724,20 @@ To set setLabelAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.angle</code></td>
+<td class="name">{% highlight html %}
+arguemnt.angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Label Angle for Gauge</td>
 </tr>
@@ -10454,16 +10750,17 @@ To set setLabelAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setLabelAngle(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10492,17 +10789,20 @@ To set setLabelPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Label Placement for Gauge</td>
 </tr>
@@ -10515,16 +10815,17 @@ To set setLabelPlacement
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setLabelPlacement(0,0,"far");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10553,17 +10854,20 @@ To set setLabelStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Label Style for Gauge</td>
 </tr>
@@ -10576,16 +10880,17 @@ To set setLabelStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setLabelStyle(0,0,"major");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10614,17 +10919,20 @@ To set setLabelXDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Label XDistance From Scale for Gauge</td>
 </tr>
@@ -10637,16 +10945,17 @@ To set setLabelXDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setLabelXDistanceFromScale(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10675,17 +10984,20 @@ To set setLabelYDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.labelIndex</code></td>
+<td class="name">{% highlight html %}
+argument.labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Label YDistance From Scale for Gauge</td>
 </tr>
@@ -10698,16 +11010,17 @@ To set setLabelYDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setLabelYDistanceFromScale(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10736,12 +11049,14 @@ To set setMajorIntervalValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Major Interval Value for Gauge</td>
 </tr>
@@ -10754,16 +11069,17 @@ To set setMajorIntervalValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setMajorIntervalValue(0,5);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10792,17 +11108,20 @@ To set setMarkerStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndexvalue for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">marker Style for Gauge</td>
 </tr>
@@ -10815,16 +11134,17 @@ To set setMarkerStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setMarkerStyle(0,0,"triangle");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10853,12 +11173,14 @@ To set setMaximumValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">MaximumValue for Gauge</td>
 </tr>
@@ -10871,16 +11193,17 @@ To set setMaximumValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setMaximumValue(0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10909,12 +11232,14 @@ To set setMinimumValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">MinimumValue for Gauge</td>
 </tr>
@@ -10927,16 +11252,17 @@ To set setMinimumValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setMinimumValue(0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10965,12 +11291,14 @@ To set setMinorIntervalValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Minor Interval Value for Gauge</td>
 </tr>
@@ -10983,16 +11311,17 @@ To set setMinorIntervalValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setMinorIntervalValue(0,2);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11021,17 +11350,20 @@ To set setPointerDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">for Gauge</td>
 </tr>
@@ -11044,16 +11376,17 @@ To set setPointerDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setPointerDistanceFromScale(0,0,30);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11082,17 +11415,20 @@ To set PointerHeight
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.height</code></td>
+<td class="name">{% highlight html %}
+arguemnt.height{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">for Gauge</td>
 </tr>
@@ -11105,16 +11441,17 @@ To set PointerHeight
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setPointerHeight(0,0,30);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11143,17 +11480,20 @@ To set setPointerPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointer placement for Gauge</td>
 </tr>
@@ -11166,16 +11506,17 @@ To set setPointerPlacement
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setPointerPlacement(0,0,"far");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11204,17 +11545,20 @@ To set PointerValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pointer value for Gauge</td>
 </tr>
@@ -11227,16 +11571,17 @@ To set PointerValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setPointerValue(0,0,30);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11265,17 +11610,20 @@ To set PointerWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.pointerIndex</code></td>
+<td class="name">{% highlight html %}
+argument.pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.width</code></td>
+<td class="name">{% highlight html %}
+arguemnt.width{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pointer width for Gauge</td>
 </tr>
@@ -11288,16 +11636,17 @@ To set PointerWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setPointerWidth(0,0,30);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11326,17 +11675,20 @@ To set setRangeBorderWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range Border Width for Gauge</td>
 </tr>
@@ -11349,16 +11701,17 @@ To set setRangeBorderWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setRangeBorderWidth(0,0,2);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11387,17 +11740,20 @@ To set setRangeDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range Distance FromScale for Gauge</td>
 </tr>
@@ -11410,16 +11766,17 @@ To set setRangeDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setRangeDistanceFromScale(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11448,17 +11805,20 @@ To set setRangeEndValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range end value for Gauge</td>
 </tr>
@@ -11471,16 +11831,17 @@ To set setRangeEndValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setRangeEndValue(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11509,17 +11870,20 @@ To set setRangeEndWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range End Width for Gauge</td>
 </tr>
@@ -11532,16 +11896,17 @@ To set setRangeEndWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setRangeEndWidth(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11570,17 +11935,20 @@ To set setRangePosition
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range Position for Gauge</td>
 </tr>
@@ -11593,16 +11961,17 @@ To set setRangePosition
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setRangePosition(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11631,17 +12000,20 @@ To set setRangeStartValue
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">range start value for Gauge</td>
 </tr>
@@ -11654,16 +12026,17 @@ To set setRangeStartValue
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setRangeStartValue(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11692,17 +12065,20 @@ To set setRangeStartWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+argument.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range Start Width for Gauge</td>
 </tr>
@@ -11715,16 +12091,17 @@ To set setRangeStartWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, length: 310, showRanges: true,ranges: [{ startWidth: 10, endWidth: 20, endValue: 60, startValue: 0, backgroundColor: "#E94649" }] }] });
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setRangeStartWidth(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11753,12 +12130,14 @@ To set setScaleBarLength
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Scale Bar Length for Gauge</td>
 </tr>
@@ -11771,16 +12150,17 @@ To set setScaleBarLength
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setScaleBarLength(0,150);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11809,12 +12189,14 @@ To set setScaleBarSize
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">ScaleBarSize for Gauge</td>
 </tr>
@@ -11827,16 +12209,17 @@ To set setScaleBarSize
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setScaleBarSize(0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11865,12 +12248,14 @@ To set setScaleBorderWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Scale Border Width for Gauge</td>
 </tr>
@@ -11883,16 +12268,17 @@ To set setScaleBorderWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setScaleBorderWidth(0,10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11921,12 +12307,14 @@ To set setScaleDirection
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Scale Direction for Gauge</td>
 </tr>
@@ -11939,16 +12327,17 @@ To set setScaleDirection
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setScaleDirection(0,"counterclockwise");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11977,12 +12366,14 @@ To set setScaleLocation
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Scale position for Gauge</td>
 </tr>
@@ -11995,16 +12386,17 @@ To set setScaleLocation
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setScaleLocation(0,{x:20,y:20});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12033,12 +12425,14 @@ To set setScaleStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">for Gauge</td>
 </tr>
@@ -12051,16 +12445,17 @@ To set setScaleStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setScaleStyle(0,"thermometer");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12089,17 +12484,20 @@ To set setTickAngle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.angle</code></td>
+<td class="name">{% highlight html %}
+arguemnt.angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick Angle for Gauge</td>
 </tr>
@@ -12112,16 +12510,17 @@ To set setTickAngle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setTickAngle(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12150,17 +12549,20 @@ To set setTickHeight
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick Height for Gauge</td>
 </tr>
@@ -12173,16 +12575,17 @@ To set setTickHeight
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setTickHeight(0,0,10);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12211,17 +12614,20 @@ To set setTickPlacement
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick Placement for Gauge</td>
 </tr>
@@ -12234,16 +12640,17 @@ To set setTickPlacement
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setTickPlacement(0,0,"far");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12272,17 +12679,20 @@ To set setTickStyle
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Tick Stylefor Gauge</td>
 </tr>
@@ -12295,16 +12705,17 @@ To set setTickStyle
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setTickStyle(0,0,"major");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12333,17 +12744,20 @@ To set setTickWidth
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick Width for Gauge</td>
 </tr>
@@ -12356,16 +12770,17 @@ To set setTickWidth
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setTickWidth(0,0,5);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12394,17 +12809,20 @@ To set setTickXDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick XDistance From Scale for Gauge</td>
 </tr>
@@ -12417,16 +12835,17 @@ To set setTickXDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setTickXDistanceFromScale(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12455,17 +12874,20 @@ To set setTickYDistanceFromScale
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+argument.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>argument.TickIndex</code></td>
+<td class="name">{% highlight html %}
+argument.TickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
-<td class="name"><code>arguemnt.value</code></td>
+<td class="name">{% highlight html %}
+arguemnt.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick YDistance From Scalefor Gauge</td>
 </tr>
@@ -12478,16 +12900,17 @@ To set setTickYDistanceFromScale
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
   
-&lt;script&gt;
+<script>
 $("#LinearGauge1").ejLinearGauge();
 var LinearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
 LinearGaugeObj.setTickYDistanceFromScale(0,0,20);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12523,62 +12946,74 @@ Triggers while the bar pointer are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the startX and startY of the pointer</td>
 </tr>
 <tr>
-<td class="name"><code>args.Model</code></td>
+<td class="name">{% highlight html %}
+args.Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
-<td class="name"><code>args.barElement</code></td>
+<td class="name">{% highlight html %}
+args.barElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current Bar pointer element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.barPointerIndex</code></td>
+<td class="name">{% highlight html %}
+args.barPointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the bar pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>args.PointerValue</code></td>
+<td class="name">{% highlight html %}
+args.PointerValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the bar pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -12591,16 +13026,17 @@ Triggers while the bar pointer are being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    drawBarPointers: function (args) {}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12629,57 +13065,68 @@ Triggers while the customLabel are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the startX and startY of the customLabel</td>
 </tr>
 <tr>
-<td class="name"><code>args.Model</code></td>
+<td class="name">{% highlight html %}
+args.Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the customLabel style</td>
 </tr>
 <tr>
-<td class="name"><code>args.customLabelElement</code></td>
+<td class="name">{% highlight html %}
+args.customLabelElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current customLabel element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.customLabelIndex</code></td>
+<td class="name">{% highlight html %}
+args.customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the customLabel.</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -12692,16 +13139,17 @@ Triggers while the customLabel are being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    drawCustomLabel: function (args) {}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12730,57 +13178,68 @@ Triggers while the Indicator are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the startX and startY of the Indicator</td>
 </tr>
 <tr>
-<td class="name"><code>args.Model</code></td>
+<td class="name">{% highlight html %}
+args.Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">numer</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the Indicator style</td>
 </tr>
 <tr>
-<td class="name"><code>args.IndicatorElement</code></td>
+<td class="name">{% highlight html %}
+args.IndicatorElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current Indicator element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.IndicatorIndex</code></td>
+<td class="name">{% highlight html %}
+args.IndicatorIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the Indicator.</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -12793,16 +13252,17 @@ Triggers while the Indicator are being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    drawIndicators: function (args) {}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12831,47 +13291,56 @@ Triggers while the label are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the startX and startY of the label</td>
 </tr>
 <tr>
-<td class="name"><code>args.Model</code></td>
+<td class="name">{% highlight html %}
+args.Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the label belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the label style</td>
 </tr>
 <tr>
-<td class="name"><code>args.label</code></td>
+<td class="name">{% highlight html %}
+args.label{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the label style
 <table class="params">
@@ -12884,22 +13353,26 @@ Triggers while the label are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>angle</code></td>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the label.</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">oject</span></td>
 <td class="description last">returns the current label element.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the label.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the label value of the label.</td>
 </tr>
@@ -12908,7 +13381,8 @@ Triggers while the label are being drawn on the gauge.
 </td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -12921,16 +13395,17 @@ Triggers while the label are being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    drawLabels: function (args) {}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -12959,67 +13434,80 @@ Triggers while the marker are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the startX and startY of the pointer</td>
 </tr>
 <tr>
-<td class="name"><code>args.Model</code></td>
+<td class="name">{% highlight html %}
+args.Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the ticks style</td>
 </tr>
 <tr>
-<td class="name"><code>args.markerElement</code></td>
+<td class="name">{% highlight html %}
+args.markerElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current marker pointer element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.markerPointerIndex</code></td>
+<td class="name">{% highlight html %}
+args.markerPointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the marker pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>args.pointerValue</code></td>
+<td class="name">{% highlight html %}
+args.pointerValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the marker pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>args.pointerAngle</code></td>
+<td class="name">{% highlight html %}
+args.pointerAngle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the marker pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -13032,16 +13520,17 @@ Triggers while the marker are being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    drawMarkerPointers: function (args) {}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13070,57 +13559,68 @@ Triggers while the range are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">bolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the startX and startY of the range</td>
 </tr>
 <tr>
-<td class="name"><code>args.Model</code></td>
+<td class="name">{% highlight html %}
+args.Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the range style</td>
 </tr>
 <tr>
-<td class="name"><code>args.rangeElement</code></td>
+<td class="name">{% highlight html %}
+args.rangeElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current range element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+args.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the range.</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -13133,16 +13633,17 @@ Triggers while the range are being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    drawRange: function (args) {}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13171,47 +13672,56 @@ Triggers while the ticks are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">oject</span></td>
 <td class="description last">returns the startX and startY of the ticks</td>
 </tr>
 <tr>
-<td class="name"><code>args.Model</code></td>
+<td class="name">{% highlight html %}
+args.Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">oject</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the tick belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the ticks style</td>
 </tr>
 <tr>
-<td class="name"><code>args.tick</code></td>
+<td class="name">{% highlight html %}
+args.tick{% endhighlight %}</td>
 <td class="type"><span class="param-type">oject</span></td>
 <td class="description last">returns the ticks style
 <table class="params">
@@ -13224,22 +13734,26 @@ Triggers while the ticks are being drawn on the gauge.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>angle</code></td>
+<td class="name">{% highlight html %}
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the angle of the tick.</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current tick element.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the index of the tick.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the tick value of the tick.</td>
 </tr>
@@ -13248,7 +13762,8 @@ Triggers while the ticks are being drawn on the gauge.
 </td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -13261,16 +13776,17 @@ Triggers while the ticks are being drawn on the gauge.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    drawTicks: function (args) {}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13299,32 +13815,38 @@ Triggers when the gauge is initialized.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.Model</code></td>
+<td class="name">{% highlight html %}
+args.Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the entire scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">eturns the name of the event</td>
 </tr>
@@ -13337,16 +13859,17 @@ Triggers when the gauge is initialized.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    init: function (args) {}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13375,32 +13898,38 @@ Triggers while the gauge start to Load.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.Model</code></td>
+<td class="name">{% highlight html %}
+args.Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the entire scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -13413,16 +13942,17 @@ Triggers while the gauge start to Load.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    load: function (args) {}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -13451,62 +13981,74 @@ Triggers when the left mouse button is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element* @param {Object} args.markerpointer returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.markerpointer.index</code></td>
+<td class="name">{% highlight html %}
+args.markerpointer.index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the pointer Index</td>
 </tr>
 <tr>
-<td class="name"><code>args.markerpointer.element</code></td>
+<td class="name">{% highlight html %}
+args.markerpointer.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.markerpointer.value</code></td>
+<td class="name">{% highlight html %}
+args.markerpointer.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer.</td>
 </tr>
@@ -13519,17 +14061,18 @@ Triggers when the left mouse button is clicked.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1">
+</div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    mouseClick: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13558,42 +14101,50 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.markerpointer</code></td>
+<td class="name">{% highlight html %}
+args.markerpointer{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element
 <table class="params">
@@ -13606,17 +14157,20 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the pointer Index</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer element.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
@@ -13625,12 +14179,14 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 </td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer.</td>
 </tr>
@@ -13643,17 +14199,18 @@ Triggers when clicking and dragging the mouse pointer over the gauge pointer.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1">
+</div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    mouseClickMove: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13682,62 +14239,74 @@ Triggers when the mouse click is released.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleIndex</code></td>
+<td class="name">{% highlight html %}
+args.scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the scaleIndex to which the pointer belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element* @param {Object} args.markerpointer returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.markerpointer.index</code></td>
+<td class="name">{% highlight html %}
+args.markerpointer.index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the pointer Index</td>
 </tr>
 <tr>
-<td class="name"><code>args.markerpointer.element</code></td>
+<td class="name">{% highlight html %}
+args.markerpointer.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the pointer element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.markerpointer.value</code></td>
+<td class="name">{% highlight html %}
+args.markerpointer.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
 <tr>
-<td class="name"><code>args.style</code></td>
+<td class="name">{% highlight html %}
+args.style{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the pointer style</td>
 </tr>
 <tr>
-<td class="name"><code>args.position</code></td>
+<td class="name">{% highlight html %}
+args.position{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the startX and startY of the pointer.</td>
 </tr>
@@ -13750,17 +14319,18 @@ Triggers when the mouse click is released.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;
-&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1">
+</div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    mouseClickUp: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13789,32 +14359,38 @@ Triggers while the rendering of the gauge completed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.object</code></td>
+<td class="name">{% highlight html %}
+args.object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the gauge.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">returns the cancel option value</td>
 </tr>
 <tr>
-<td class="name"><code>args.Model</code></td>
+<td class="name">{% highlight html %}
+args.Model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the gauge model</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the entire scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.context</code></td>
+<td class="name">{% highlight html %}
+args.context{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the context element</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -13827,16 +14403,17 @@ Triggers while the rendering of the gauge completed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="LinearGauge1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="LinearGauge1"></div> 
+ 
+<script>
 $("#LinearGauge1").ejLinearGauge({
    renderComplete: function (args) {}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 

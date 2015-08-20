@@ -23,15 +23,16 @@ $(element).ejOlapChart<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="OlapChart"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="OlapChart"></div> 
+ 
+<script>
 // Create OLAP Chart
 $("#OlapChart").ejOlapChart(...);       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -89,19 +90,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // Set the CSS class during initialization.                     
-$("#OlapChart").ejOlapChart({  cssClass : "gradient-lime" });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#OlapChart").ejOlapChart({  cssClass : "gradient-lime" });{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the CSS class after initialization:
 // Gets the CSS class value.            
 $("#OlapChart").ejOlapChart("option", "cssClass");                      
 // Sets the CSS class to OLAP Chart
-$("#OlapChart").ejOlapChart("option", "cssClass",  "gradient-lime" );</code>
-</pre>
+$("#OlapChart").ejOlapChart("option", "cssClass",  "gradient-lime" );{% endhighlight %}
+
 
 
 
@@ -149,20 +152,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set customObject API value during initialization  
-$("#OlapChart").ejOlapChart({  customObject: {"key":"Hello World"}});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#OlapChart").ejOlapChart({  customObject: {"key":"Hello World"}});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the customObject API, after initialization:
 //Gets the customObject value  
 $("#OlapChart").ejOlapChart("option", "customObject");
                       
 //Sets the customObject value 
-$("#OlapChart").ejOlapChart("option", "customObject",  {"key":"Hi Syncfusion!"} ); </code>
-</pre>
+$("#OlapChart").ejOlapChart("option", "customObject",  {"key":"Hi Syncfusion!"} ); {% endhighlight %}
+
 
 
 
@@ -188,20 +193,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set the isResponsive option during initialization  
-$("#OlapChart").ejOlapChart({isResponsive: true});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#OlapChart").ejOlapChart({isResponsive: true});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the isResponsive, after initialization:
 //Gets the isResponsive values state
 $("#OlapChart").ejOlapChart("option", "isResponsive");
                       
 //Sets the reponsive layout
-$("#OlapChart").ejOlapChart("option", "isResponsive","true"); </code>
-</pre>
+$("#OlapChart").ejOlapChart("option", "isResponsive","true"); {% endhighlight %}
+
 
 
 
@@ -227,20 +234,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set localization API value during initialization  
-$("#OlapChart").ejOlapChart({  locale: "fr-FR"}); </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#OlapChart").ejOlapChart({  locale: "fr-FR"}); {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the localization API, after initialization:
 //Gets the localization value  
 $("#OlapChart").ejOlapChart("option", "locale");
                     
 //Sets the localization value 
-$("#OlapChart").ejOlapChart("option", "locale",  "fr-FR" ); </code>
-</pre>
+$("#OlapChart").ejOlapChart("option", "locale",  "fr-FR" ); {% endhighlight %}
+
 
 
 
@@ -266,20 +275,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set serviceMethodSettings API value, to invoke the appropriate service method on UI operation.
-$("#OlapChart").ejOlapChart({  serviceMethodSettings: {initialize: "MyMethod", drillDown: "DrillChart"});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#OlapChart").ejOlapChart({  serviceMethodSettings: {initialize: "MyMethod", drillDown: "DrillChart"});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Gets or sets the serviceMethodSettings API, to invoke the appropriate service method on UI operation:
 //Gets the serviceMethodSettings value  
 $("#OlapChart").ejOlapChart("option", "serviceMethodSettings");
                      
 //Sets the serviceMethodSettings value 
-$("#OlapChart").ejOlapChart("option", "serviceMethodSettings",  {initialize: "MyMethod", drillDown: "DrillChart"} ); </code>
-</pre>
+$("#OlapChart").ejOlapChart("option", "serviceMethodSettings",  {initialize: "MyMethod", drillDown: "DrillChart"} ); {% endhighlight %}
+
 
 
 
@@ -305,20 +316,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set drillDown API value, to invoke the corresponding service method for performing server-side operation while drilling up/down in OLAP Chart. 
-$("#OlapChart").ejOlapChart({  serviceMethodSettings: {drillDown: "DrillChartMyMethod"});                                       </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#OlapChart").ejOlapChart({  serviceMethodSettings: {drillDown: "DrillChartMyMethod"});                                       {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the drillDown API, to invoke the corresponding service method for performing server-side operation while drilling up/down in OLAP Chart:
 //Gets the drillDown value  
 $("#OlapChart").ejOlapChart("option", "serviceMethodSettings");
                      
 //Sets the drillDown value 
-$("#OlapChart").ejOlapChart("option", "serviceMethodSettings.drillDown", "DrillChartMyMethod"} ); </code>
-</pre>
+$("#OlapChart").ejOlapChart("option", "serviceMethodSettings.drillDown", "DrillChartMyMethod"} ); {% endhighlight %}
+
 
 
 
@@ -344,20 +357,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set initialize API value, to invoke the corresponding service method for OLAP Chart initialization. 
-$("#OlapChart").ejOlapChart({  serviceMethodSettings: {initialize: "IninlizeChartMyMethod"}); </code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#OlapChart").ejOlapChart({  serviceMethodSettings: {initialize: "IninlizeChartMyMethod"}); {% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Gets or sets the initialize API, to invoke the corresponding service method for OLAP Chart initialization:
 //Gets the initialize value  
 $("#OlapChart").ejOlapChart("option", "serviceMethodSettings");
                      
 //Sets the initialize value 
-$("#OlapChart").ejOlapChart("option", "serviceMethodSettings.initialize", "IninlizeChartMyMethod"} ); </code>
-</pre>
+$("#OlapChart").ejOlapChart("option", "serviceMethodSettings.initialize", "IninlizeChartMyMethod"} ); {% endhighlight %}
+
 
 
 
@@ -383,20 +398,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set url API value during initialization  
-$("#OlapChart").ejOlapChart({  url: "/OlapChartService.svc"});</code>
-</pre>
-<pre class="prettyprint">
-<code> 
+$("#OlapChart").ejOlapChart({  url: "/OlapChartService.svc"});{% endhighlight %}
+
+
+{% highlight html %}
+ 
 //Get or set the url API, after initialization:
 //Gets the url value  
 $("#OlapChart").ejOlapChart("option", "url");
                        
 //Sets the url value 
-$("#OlapChart").ejOlapChart("option", "url",  "/OlapChartService.svc" ); </code>
-</pre>
+$("#OlapChart").ejOlapChart("option", "url",  "/OlapChartService.svc" ); {% endhighlight %}
+
 
 
 ## Methods
@@ -417,25 +434,27 @@ Destroy the OLAP Chart widget all events bound using this._on will be unbind aut
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="OlapChart"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="OlapChart"></div> 
+ 
+<script>
 // Create OLAP Chart
 var chartObj = $("#OlapChart").data("ejOlapChart");
 chartObj.destroy(); // destroy the OLAP Chart
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="OlapChart"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="OlapChart"></div> 
+ 
+<script>
 // enable the OLAP Chart
 $("#OlapChart").ejOlapChart("destroy"); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -452,11 +471,12 @@ Perform an asynchronous HTTP (Ajax) request.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="OlapChart"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="OlapChart"></div> 
+ 
+<script>
 // Create OLAP Chart
 $('#OlapChart').ejOlapChart({
       url: "OlapChartService.svc",
@@ -469,8 +489,8 @@ $('#OlapChart').ejOlapChart({
 var chartObj = $("#OlapChart").data("ejOlapChart");
 chartObj.doAjaxPost("POST", "/OlapChartService.svc/Initialize", {"key", "Hello World"}, "renderControlSuccess", null);
 // initiate an Ajax request
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -487,11 +507,12 @@ This function receives the JSON formatted datasource to render the OLAP Chart co
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="OlapChart"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="OlapChart"></div> 
+ 
+<script>
 // Create OLAP Chart
 $('#OlapChart').ejOlapChart({
       url: "OlapChartService.svc",
@@ -504,8 +525,8 @@ $('#OlapChart').ejOlapChart({
 var chartObj = $("#OlapChart").data("ejOlapChart");
 chartObj.renderControlFromJSON(this.getJSONRecords());
 // render the OLAP Chart from JSON formatted data.
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -522,11 +543,12 @@ This function receives the controls update from service-end which would be utili
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="OlapChart"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="OlapChart"></div> 
+ 
+<script>
 // Create OLAP Chart
 $('#OlapChart').ejOlapChart({
       url: "OlapChartService.svc",
@@ -539,8 +561,8 @@ $('#OlapChart').ejOlapChart({
 var chartObj = $("#OlapChart").data("ejOlapChart");
 chartObj.renderControlSuccess({"OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords()});
 // creating OLAP Chart after Ajax request
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -566,7 +588,8 @@ Fires when it reaches client script after any Ajax request.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from OLAP Chart
 <table class="params">
@@ -579,32 +602,38 @@ Fires when it reaches client script after any Ajax request.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>action</code></td>
+<td class="name">{% highlight html %}
+action{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the current action of OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>customObject</code></td>
+<td class="name">{% highlight html %}
+customObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">return the custom object bounds with OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the outer HTML of OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the OLAP Chart model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -619,13 +648,14 @@ Fires when it reaches client script after any Ajax request.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //afterServiceInvoke event for OLAP Chart
 $("#OlapChart").ejOlapChart({
    afterServiceInvoke: function (args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 
 
@@ -647,7 +677,8 @@ Fires before any Ajax request passed from OLAP Chart to service methods.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from OLAP Chart
 <table class="params">
@@ -660,32 +691,38 @@ Fires before any Ajax request passed from OLAP Chart to service methods.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>action</code></td>
+<td class="name">{% highlight html %}
+action{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the current action of OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>customObject</code></td>
+<td class="name">{% highlight html %}
+customObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">return the custom object bounds with OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the outer HTML of OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the OLAP Chart model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -700,13 +737,14 @@ Fires before any Ajax request passed from OLAP Chart to service methods.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //beforeServiceInvoke event for OLAP Chart
 $("#OlapChart").ejOlapChart({
    beforeServiceInvoke: function (args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 
 
@@ -728,7 +766,8 @@ Fires when drilldown happens in OLAP Chart control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from OLAP Chart
 <table class="params">
@@ -741,17 +780,20 @@ Fires when drilldown happens in OLAP Chart control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the OLAP Chart model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -766,13 +808,14 @@ Fires when drilldown happens in OLAP Chart control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drillSuccess event for OLAP Chart
 $("#OlapChart").ejOlapChart({
    drillSuccess: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -794,7 +837,8 @@ Fires when OLAP Chart completely finishes its rendering.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from OLAP Chart
 <table class="params">
@@ -807,32 +851,38 @@ Fires when OLAP Chart completely finishes its rendering.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>action</code></td>
+<td class="name">{% highlight html %}
+action{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the current action of OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>customObject</code></td>
+<td class="name">{% highlight html %}
+customObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">return the custom object bounds with OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the outer HTML of OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the OLAP Chart model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -847,13 +897,14 @@ Fires when OLAP Chart completely finishes its rendering.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //renderComplete event for OLAP Chart
 $("#OlapChart").ejOlapChart({
    renderComplete: function (args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 
 
@@ -875,7 +926,8 @@ Fires while any discrepancies occurs during the rendering time.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from OLAP Chart
 <table class="params">
@@ -888,37 +940,44 @@ Fires while any discrepancies occurs during the rendering time.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>action</code></td>
+<td class="name">{% highlight html %}
+action{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the current action of OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>customObject</code></td>
+<td class="name">{% highlight html %}
+customObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">return the custom object bounds with OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>message</code></td>
+<td class="name">{% highlight html %}
+message{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">return the error stacke tace of the original exception.</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the outer HTML of OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the OLAP Chart model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -933,13 +992,14 @@ Fires while any discrepancies occurs during the rendering time.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //renderFailure event for OLAP Chart
 $("#OlapChart").ejOlapChart({
    renderFailure: function (args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 
 
@@ -961,7 +1021,8 @@ Fires when OLAP Chart successfully finished its rendering.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from OLAP Chart
 <table class="params">
@@ -974,32 +1035,38 @@ Fires when OLAP Chart successfully finished its rendering.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>action</code></td>
+<td class="name">{% highlight html %}
+action{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the current action of OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>customObject</code></td>
+<td class="name">{% highlight html %}
+customObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">return the custom object bounds with OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">return the outer HTML of OLAP Chart control.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the OLAP Chart model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -1014,12 +1081,13 @@ Fires when OLAP Chart successfully finished its rendering.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //renderSuccess event for OLAP Chart
 $("#OlapChart").ejOlapChart({
    renderSuccess: function (args) {}
-});      </code>
-</pre>
+});      {% endhighlight %}
+
 
 

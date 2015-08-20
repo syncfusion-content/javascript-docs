@@ -33,14 +33,15 @@ $(element).ejSymbolPalette<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="symbolpalette"></div>
+<script>
 //Create symbolpalette
 $("#symbolpalette").ejSymbolPalette();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -123,12 +124,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({allowDrag: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -170,12 +172,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({cssClass: "e-symbolpalette"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -217,12 +220,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({diagramId: "diagram"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -264,12 +268,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({headerHeight: 30});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -311,12 +316,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({height:500});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -358,12 +364,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({paletteItemHeight: 50});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -405,12 +412,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({paletteItemWidth: 50});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -452,12 +460,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({palettes: palette});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -499,12 +508,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({previewHeight: 100});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -546,12 +556,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({previewOffset: {x: 102, y: 102 }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -593,12 +604,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({previewWidth: 100});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -640,12 +652,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({selectedPaletteName: "paletteName"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -687,12 +700,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({showPaletteItemText: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -734,12 +748,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="symbolpalette"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="symbolpalette"></div>
+<script>
 $("#symbolpalette").ejSymbolPalette({width:300});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -775,7 +790,8 @@ Triggers When selection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -788,12 +804,14 @@ Triggers When selection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>changetype</code></td>
+<td class="name">{% highlight html %}
+changetype{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">return should be inserted or removed</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns node or connector which to be added or deleted</td>
 </tr>
@@ -810,12 +828,13 @@ Triggers When selection is changed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>//  selectionChange event for diagram
+
+{% highlight html %}
+//  selectionChange event for diagram
 $("#symbolpalette").ejSymbolPalette({
 selectionChange:function (args)  {}
-       });</code>
-</pre>
+       });{% endhighlight %}
+
 
 
 

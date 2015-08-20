@@ -33,17 +33,18 @@ $(element).ejMaskEdit<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>     
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
+     
+<input id="mask" type="text" /> 
  
-&lt;script&gt; 
+<script> 
 // Create Slider 
 $('#mask').ejMaskEdit(); 
    
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -117,15 +118,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To set cssClass API value during initialization  
         $("#mask").ejMaskEdit({maskFormat: "99-9999",cssClass: "gradient-lime"});                                        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -167,15 +169,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<input id="mask" type="text" /> 
+ 
+<script> 
 //To set customCharacter API value during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "99-9999",customCharacter: "gradient-lime"});                                       
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -217,15 +220,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To set enabled API value during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "99-9999",enabled: true });                                  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -267,15 +271,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To set enablePersistence API value during initialization  
         $("#mask").ejMaskEdit({ enablePersistence: "left" });                                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -317,15 +322,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<input id="mask" type="text" /> 
+ 
+<script> 
 //To set height API value during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "99-9999",height: "28px"});                                  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -367,15 +373,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To set hidePromptOnLeave API value during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "99-9999",hidePromptOnLeave: true });                                        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -417,15 +424,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To set inputMode API value during initialization  
         $("#mask").ejMaskEdit({maskFormat: "99-9999",inputMode: ej.InputMode.Password });                                        
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -467,15 +475,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<input id="mask" type="text" /> 
+ 
+<script> 
 //To set maskFormat API value during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "99-9999"});                                         
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -517,15 +526,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<input id="mask" type="text" /> 
+ 
+<script> 
 //To set readOnly API value during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "99-9999",value:"456789",readOnly: true });                                  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -567,15 +577,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To set showError API value during initialization  
         $("#mask").ejMaskEdit({maskFormat: "99-9999", showError: true});                                         
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -617,15 +628,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To set showRoundedCorner API value during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "99-9999",showRoundedCorner:true});                                  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -667,15 +679,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To set textAlign API value during initialization  
         $("#mask").ejMaskEdit({maskFormat: "99-9999",textAlign: "left" });                                       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -717,15 +730,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To set validationMessage value during initialization  
         $("#mask").ejMaskEdit({ validationRules:{required:true},validationMessage: { required: "Required MaskEdit value"} });                                    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -767,15 +781,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To set validationRules value during initialization  
         $("#mask").ejMaskEdit({ validationRules:{required:true} });                                      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -817,14 +832,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
+<input id="mask" type="text" /> 
  
-&lt;script&gt;                  
+<script>                  
 //To set value API  during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "99-9999",value: "459978"});                                         
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -866,15 +882,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<input id="mask" type="text" /> 
+ 
+<script> 
 //To set watermarkText API value during initialization  
         $("#mask").ejMaskEdit({ watermarkText: "Enter value"});                                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -916,15 +933,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //To set width API value during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "99-9999",width: 143});                                      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -957,28 +975,30 @@ To clear the text in maskedit textbox control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
+ 
+<input id="mask" type="text" /> 
               
-&lt;script&gt;
+<script>
 $("#mask").ejMaskEdit({maskFormat: "99-9999",value:"345678"});
 // Create MaskEdit control
 var maskObj = $("#mask").data("ejMaskEdit");            
 maskObj.clear(); // clear the maskedit control          
-&lt;/script&gt;
-                 </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+</script>
+                 {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input id="mask" type="text" /> 
                       
-&lt;script&gt;
+<script>
 $("#mask").ejMaskEdit({maskFormat: "99-9999",value:"345678"});
 // clear the maskedit control
 $("#mask").ejMaskEdit("clear");         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1004,28 +1024,30 @@ To disable the maskedit textbox control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
+ 
+<input id="mask" type="text" /> 
               
-&lt;script&gt;
+<script>
 $("#mask").ejMaskEdit({maskFormat: "99-99-9999",value:"45340078"});
 // Create MaskEdit control
 var maskObj = $("#mask").data("ejMaskEdit");            
 maskObj.disable(); // disable the maskedit control              
-&lt;/script&gt;
-                 </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+</script>
+                 {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input id="mask" type="text" /> 
                       
-&lt;script&gt;
+<script>
 $("#mask").ejMaskEdit({maskFormat: "99-99-9999",value:"45340078"});
 // disable the maskedit control
 $("#mask").ejMaskEdit("disable");               
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1051,28 +1073,30 @@ To enable the maskedit textbox control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
+ 
+<input id="mask" type="text" /> 
               
-&lt;script&gt;
+<script>
 $("#mask").ejMaskEdit({maskFormat: "99-99-9999",value:"12345678"});
 // Create MaskEdit control
 var maskObj = $("#mask").data("ejMaskEdit");            
 maskObj.enable(); // enable the maskedit control                
-&lt;/script&gt;
-                 </code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+</script>
+                 {% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input id="mask" type="text" /> 
                       
-&lt;script&gt;
+<script>
 $("#mask").ejMaskEdit({maskFormat: "99-99-9999",value:"12345678"});
 // enable the maskedit control
 $("#mask").ejMaskEdit("enable");                
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1098,27 +1122,29 @@ To obtained the pure value of the textvalue, removes all the symbols in maskedit
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
+ 
+<input id="mask" type="text" /> 
               
-&lt;script&gt;
+<script>
 $("#mask").ejMaskEdit({maskFormat: "99-99-9999",value:"12345678"});
 // Create MaskEdit control
 var maskObj = $("#mask").data("ejMaskEdit");            
 alert(maskObj.get_StrippedValue()); // Return the pure value of the textvalue, removes all the symbols          
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input id="mask" type="text" /> 
                       
-&lt;script&gt;
+<script>
 $("#mask").ejMaskEdit({maskFormat: "99-99-9999",value:"12345678"});
 // Return the pure value of the textvalue, removes all the symbols
 alert( $("#mask").ejMaskEdit("get_StrippedValue"));             
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1144,27 +1170,29 @@ To obtained the textbox value as such that, Just replace all '_' to ' '(space) i
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
+ 
+<input id="mask" type="text" /> 
               
-&lt;script&gt;
+<script>
 $("#mask").ejMaskEdit({maskFormat: "99-99-9999",value:"12345678"});
 // Create MaskEdit control
 var maskObj = $("#mask").data("ejMaskEdit");            
 alert(maskObj.get_UnstrippedValue()); // Return the textbox value as such that, Just replace all '_' to ' '(space)      
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<input id="mask" type="text" /> 
                       
-&lt;script&gt;
+<script>
 $("#mask").ejMaskEdit({maskFormat: "99-99-9999",value:"12345678"});
 // Return the textbox value as such that, Just replace all '_' to ' '(space)
 alert($("#mask").ejMaskEdit("get_UnstrippedValue"));            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1200,7 +1228,8 @@ Fires when value changed in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from maskedit textbox control
 <table class="params">
@@ -1213,27 +1242,32 @@ Fires when value changed in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the maskedit model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the maskedit value</td>
 </tr>
 <tr>
-<td class="name"><code>unmaskedValue</code></td>
+<td class="name">{% highlight html %}
+unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns unstripped value in maskedit textbox control.</td>
 </tr>
@@ -1250,18 +1284,19 @@ Fires when value changed in mask edit textbox control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //change event for mask edit textbox control
 $("#mask").ejMaskEdit({
    maskFormat: "99999 - 9999",
    change: function (args) {}
 });    
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -1290,17 +1325,20 @@ Fires after MaskEdit control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the MaskEdit model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1313,18 +1351,19 @@ Fires after MaskEdit control is created.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //create event for mask edit textbox control
 $("#mask").ejMaskEdit({
    maskFormat: "(999)999-9999",
    create: function (args) {}
 }); 
-&lt;/script&gt;          </code>
-</pre>
+</script>          {% endhighlight %}
+
 
 
 
@@ -1353,17 +1392,20 @@ Fires when the MaskEdit is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the MaskEdit model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1376,18 +1418,19 @@ Fires when the MaskEdit is destroyed successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //destroy event for mask edit textbox control
 $("#mask").ejMaskEdit({
    maskFormat: "(999)999-9999",
    destroy: function (args) {}
 }); 
-&lt;/script&gt;          </code>
-</pre>
+</script>          {% endhighlight %}
+
 
 
 
@@ -1416,7 +1459,8 @@ Fires when focused in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from maskedit textbox control
 <table class="params">
@@ -1429,27 +1473,32 @@ Fires when focused in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the maskedit model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the maskedit value</td>
 </tr>
 <tr>
-<td class="name"><code>unmaskedValue</code></td>
+<td class="name">{% highlight html %}
+unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns unstripped value in maskedit textbox control.</td>
 </tr>
@@ -1466,18 +1515,19 @@ Fires when focused in mask edit textbox control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //focusIn event for mask edit textbox control
 $("#mask").ejMaskEdit({
    maskFormat: "aa-99-99-a",
    focusIn: function (args) {}
 });
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -1506,7 +1556,8 @@ Fires when focused out in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from maskedit textbox control
 <table class="params">
@@ -1519,27 +1570,32 @@ Fires when focused out in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the maskedit model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the maskedit value</td>
 </tr>
 <tr>
-<td class="name"><code>unmaskedValue</code></td>
+<td class="name">{% highlight html %}
+unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns unstripped value in maskedit textbox control.</td>
 </tr>
@@ -1556,18 +1612,19 @@ Fires when focused out in mask edit textbox control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //focusOut event for mask edit textbox control
 $("#mask").ejMaskEdit({
    maskFormat: "(999)999-9999",
    focusOut: function (args) {}
 }); 
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -1596,7 +1653,8 @@ Fires when keydown in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from maskedit textbox control
 <table class="params">
@@ -1609,27 +1667,32 @@ Fires when keydown in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the maskedit model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the maskedit value</td>
 </tr>
 <tr>
-<td class="name"><code>unmaskedValue</code></td>
+<td class="name">{% highlight html %}
+unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns unstripped value in maskedit textbox control.</td>
 </tr>
@@ -1646,18 +1709,19 @@ Fires when keydown in mask edit textbox control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //keydown event for mask edit textbox control
 $("#mask").ejMaskEdit({
    maskFormat: "99-9999",
    keydown: function (args) {}
 }); 
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -1686,7 +1750,8 @@ Fires when keypress in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from maskedit textbox control
 <table class="params">
@@ -1699,27 +1764,32 @@ Fires when keypress in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the maskedit model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the maskedit value</td>
 </tr>
 <tr>
-<td class="name"><code>unmaskedValue</code></td>
+<td class="name">{% highlight html %}
+unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns unstripped value in maskedit textbox control.</td>
 </tr>
@@ -1736,18 +1806,19 @@ Fires when keypress in mask edit textbox control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="mask" type="text" /> 
+ 
+<script>
 //keyPress event for mask edit textbox control
 $("#mask").ejMaskEdit({
    maskFormat: "99-99-9999",
    keyPress: function (args) {}
 });      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1776,7 +1847,8 @@ Fires when keyup in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from maskedit textbox control
 <table class="params">
@@ -1789,27 +1861,32 @@ Fires when keyup in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the maskedit model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the maskedit value</td>
 </tr>
 <tr>
-<td class="name"><code>unmaskedValue</code></td>
+<td class="name">{% highlight html %}
+unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns unstripped value in maskedit textbox control.</td>
 </tr>
@@ -1826,17 +1903,18 @@ Fires when keyup in mask edit textbox control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
+<input id="mask" type="text" /> 
  
-&lt;script&gt;           
+<script>           
 //keyup event for mask edit textbox control
 $("#mask").ejMaskEdit({
    maskFormat: "99-99-9999",
    keyup: function (args) {}
 });      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1865,7 +1943,8 @@ Fires when mouse out in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from maskedit textbox control
 <table class="params">
@@ -1878,27 +1957,32 @@ Fires when mouse out in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the maskedit model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the maskedit value</td>
 </tr>
 <tr>
-<td class="name"><code>unmaskedValue</code></td>
+<td class="name">{% highlight html %}
+unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns unstripped value in maskedit textbox control.</td>
 </tr>
@@ -1915,18 +1999,19 @@ Fires when mouse out in mask edit textbox control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<input id="mask" type="text" /> 
+ 
+<script> 
 //mouseout event for toggle button
 $("#mask").ejMaskEdit({
    maskFormat: "***-**-****",
    mouseout: function (args) {}
 });    
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -1955,7 +2040,8 @@ Fires when mouse over in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from maskedit textbox control
 <table class="params">
@@ -1968,27 +2054,32 @@ Fires when mouse over in mask edit textbox control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the maskedit model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the maskedit value</td>
 </tr>
 <tr>
-<td class="name"><code>unmaskedValue</code></td>
+<td class="name">{% highlight html %}
+unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns unstripped value in maskedit textbox control.</td>
 </tr>
@@ -2005,18 +2096,19 @@ Fires when mouse over in mask edit textbox control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="mask" type="text" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt; 
+<input id="mask" type="text" /> 
+ 
+<script> 
 //mouseover event for toggle button
 $("#mask").ejMaskEdit({
    maskFormat: "$99999",
    mouseover: function (args) {}
 });   
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 

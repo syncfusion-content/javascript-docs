@@ -23,17 +23,18 @@ $(element).ejToggleButton<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // Create ToggleButton 
 $('#toggle').ejToggleButton({defaultText:"Play",activeText:"Pause"});   
     
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -77,12 +78,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
 
-&lt;input id="toggle" type="checkbox" /&gt; 
+{% highlight html %}
+ 
+
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // Set the activePrefixIcon during initialization.                      
         $("#toggle").ejToggleButton({ 
    defaultText:"Play",activeText:"Pause",
@@ -90,8 +92,8 @@ Example
    defaultPrefixIcon: "e-mediaplay e-uiLight",
    activePrefixIcon: "e-mediapause e-uiLight",
  });                    
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -117,20 +119,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // Set the activeSuffixIcon during initialization.                      
         $("#toggle").ejToggleButton({ 
    contentType: "imageboth",
    defaultSuffixIcon: "e-mediaplay e-uiLight",
    activeSuffixIcon: "e-mediapause e-uiLight",
  });                    
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -156,16 +159,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //To set activeText API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});                                                   
-&lt;/script&gt; 
-    </code>
-</pre>
+</script> 
+    {% endhighlight %}
+
 
 
 
@@ -191,16 +195,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // Set the button contentType on initialization.                        
         $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",contentType : ej.ContentType.TextOnly });                    
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -226,16 +231,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // Set the CSS class during initialization.                     
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",cssClass : "gradient-lime" });                        
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -261,11 +267,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // Set the defaultPrefixIcon during initialization.                     
         $("#toggle").ejToggleButton({ 
    defaultText:"Play",activeText:"Pause",
@@ -273,9 +280,9 @@ Example
    defaultPrefixIcon: "e-mediaplay e-uiLight",
    activePrefixIcon: "e-mediapause e-uiLight",
  });                    
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -301,11 +308,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // Set the defaultSuffixIcon during initialization.                     
  $("#toggle").ejToggleButton({ 
    defaultText:"Play",activeText:"Pause",
@@ -313,9 +321,9 @@ Example
    defaultSuffixIcon: "e-mediaplay e-uiLight",
    activeSuffixIcon: "e-mediapause e-uiLight",
  });                    
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -341,16 +349,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //To set defaultText API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});                                           
-&lt;/script&gt; 
-            </code>
-</pre>
+</script> 
+            {% endhighlight %}
+
 
 
 
@@ -376,16 +385,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //To set enabled API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",enabled: true });                                            
-&lt;/script&gt; 
-            </code>
-</pre>
+</script> 
+            {% endhighlight %}
+
 
 
 
@@ -411,16 +421,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // Set the rounded corner during initialization.                        
         $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",enablePersistence : true });                         
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -446,16 +457,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // Set the enableRTL during initialization.                     
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",enableRTL : true });                  
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -481,15 +493,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //To set height API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",height: "28px" });                                           
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -515,16 +528,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // To Set HtmlAttributes on initialization.                     
         $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",htmlAttributes: {disabled:"disabled"} });                    
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -550,11 +564,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // Set the image position for toggle button during initialization.                      
         $("#toggle").ejToggleButton(
 {
@@ -564,9 +579,9 @@ Example
    defaultPrefixIcon: "e-mediaplay e-uiLight",
    activePrefixIcon: "e-mediapause e-uiLight"
 });                     
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -592,16 +607,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //To set preventToggle API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",preventToggle: false});                                              
-&lt;/script&gt; 
-            </code>
-</pre>
+</script> 
+            {% endhighlight %}
+
 
 
 
@@ -627,16 +643,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 // Set the rounded corner during initialization.                        
         $("#toggle").ejToggleButton({ defaultText:"Play",activeText:"Pause",showRoundedCorner : true });                         
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -662,16 +679,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //To set size API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",size: ej.ButtonSize.Mini});                                                                  
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -697,16 +715,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //To set toggleState API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",toggleState: false });       
-&lt;/script&gt; 
-    </code>
-</pre>
+</script> 
+    {% endhighlight %}
+
 
 
 
@@ -732,16 +751,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //To set type API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",type:ej.ButtonType.Submit});                                                                 
-&lt;/script&gt; 
-</code>
-</pre>
+</script> 
+{% endhighlight %}
+
 
 
 
@@ -767,16 +787,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //To set width API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",width: "100px" });                                           
-&lt;/script&gt; 
-                    </code>
-</pre>
+</script> 
+                    {% endhighlight %}
+
 
 
 ## Methods
@@ -797,27 +818,29 @@ To destroy the toggle button
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" / &gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="toggle" type="checkbox" / > 
+ 
+<script>
 // Create toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 var toggleObj = $("#toggle").data("ejToggleButton");
 toggleObj.destroy(); // destroy the toggle button
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" / &gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="toggle" type="checkbox" / > 
+ 
+<script>
 // destroy the toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 $("#toggle").ejToggleButton("destroy"); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -834,27 +857,29 @@ To disable the toggle button
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" / &gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="toggle" type="checkbox" / > 
+ 
+<script>
 // Create toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 var toggleObj = $("#toggle").data("ejToggleButton");
 toggleObj.disable(); // disable the toggle button
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" / &gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="toggle" type="checkbox" / > 
+ 
+<script>
 // disable the toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 $("#toggle").ejToggleButton("disable"); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -871,27 +896,29 @@ To enable the toggle button
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" / &gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="toggle" type="checkbox" / > 
+ 
+<script>
 // Create toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 var toggleObj = $("#toggle").data("ejToggleButton");
 toggleObj.enable(); // enable the toggle button
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" / &gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input id="toggle" type="checkbox" / > 
+ 
+<script>
 // enable the toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 $("#toggle").ejToggleButton("enable");  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -917,7 +944,8 @@ Fires when ToggleButton control state is changed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from toggle button
 <table class="params">
@@ -930,22 +958,26 @@ Fires when ToggleButton control state is changed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>isChecked</code></td>
+<td class="name">{% highlight html %}
+isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">return the toggle button checked state</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the toggle button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -960,19 +992,20 @@ Fires when ToggleButton control state is changed successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //change event for toggle button
 $("#toggle").ejToggleButton({
    defaultText:"Play",activeText:"Pause",
    change: function (args) {}
 });  
-&lt;/script&gt; 
-    </code>
-</pre>
+</script> 
+    {% endhighlight %}
+
 
 
 
@@ -994,7 +1027,8 @@ Fires when ToggleButton control is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from toggle button
 <table class="params">
@@ -1007,27 +1041,32 @@ Fires when ToggleButton control is clicked successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>isChecked</code></td>
+<td class="name">{% highlight html %}
+isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">return the toggle button checked state</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the toggle button model</td>
 </tr>
 <tr>
-<td class="name"><code>status</code></td>
+<td class="name">{% highlight html %}
+status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">return the toggle button state</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1042,19 +1081,20 @@ Fires when ToggleButton control is clicked successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //click event for toggle button
 $("#toggle").ejToggleButton({
 defaultText:"Play",activeText:"Pause",
    click: function (args) {}
 }); 
-&lt;/script&gt; 
-     </code>
-</pre>
+</script> 
+     {% endhighlight %}
+
 
 
 
@@ -1076,7 +1116,8 @@ Fires when ToggleButton control is created successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from toggle button
 <table class="params">
@@ -1089,17 +1130,20 @@ Fires when ToggleButton control is created successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the toggle button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1114,19 +1158,20 @@ Fires when ToggleButton control is created successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //create event for toggle button
 $("#toggle").ejToggleButton({
    defaultText:"Play",activeText:"Pause",
    create: function (args) {}
 });   
-&lt;/script&gt; 
-   </code>
-</pre>
+</script> 
+   {% endhighlight %}
+
 
 
 
@@ -1148,7 +1193,8 @@ Fires when ToggleButton control is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from toggle button
 <table class="params">
@@ -1161,17 +1207,20 @@ Fires when ToggleButton control is destroyed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the toggle button model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1186,18 +1235,19 @@ Fires when ToggleButton control is destroyed successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input id="toggle" type="checkbox" /&gt; 
+
+{% highlight html %}
+ 
+<input id="toggle" type="checkbox" /> 
         
-&lt;script&gt; 
+<script> 
 //destroy event for toggle button
 $("#toggle").ejToggleButton({
    defaultText:"Play",activeText:"Pause",
    destroy: function (args) {}
 });  
-&lt;/script&gt; 
-    </code>
-</pre>
+</script> 
+    {% endhighlight %}
+
 
 

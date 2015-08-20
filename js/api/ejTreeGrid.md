@@ -33,15 +33,16 @@ $(element).ejTreeGrid<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;treegrid id="treegrid"&gt;treegrid&lt;/treegrid&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<treegrid id="treegrid">treegrid</treegrid> 
+ 
+<script>
 // Create TreeGrid
 $('#treegrid').ejTreeGrid();    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -115,13 +116,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                   
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                   
         $("#treegrid").ejTreeGrid({ allowColumnResize:  true });                        * 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -163,14 +165,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;treegrid id="treegrid"&gt;treegrid&lt;/treegrid&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<treegrid id="treegrid">treegrid</treegrid> 
+ 
+<script>
         $("#treegrid").ejTreeGrid({  allowDragAndDrop : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -212,14 +215,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;treegrid id="treegrid"&gt;treegrid&lt;/treegrid&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<treegrid id="treegrid">treegrid</treegrid> 
+ 
+<script>
         $("#treegrid").ejTreeGrid({  allowFiltering : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -261,13 +265,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({ allowKeyboardNavigation : true});                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -309,13 +314,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({ allowMultiSorting : true});                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -357,13 +363,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;   
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>   
         $("#treegrid").ejTreeGrid({ allowSelection:  true });                   * 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -405,14 +412,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;treegrid id="treegrid"&gt;treegrid&lt;/treegrid&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<treegrid id="treegrid">treegrid</treegrid> 
+ 
+<script>
         $("#treegrid").ejTreeGrid({ allowSorting : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -454,16 +462,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid(
  {
     altRowTemplateID: "altRowCustomTemplate"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -489,9 +498,10 @@ It is to specify data values to the field.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+<div id="treegrid"></div> 
+<script>                          
         $("#treegrid").ejTreeGrid(
  {
     columns: [{ field: "Name", headerText: "Name", isTemplateColumn: true, templateID: "customColumnTemplate" },
@@ -499,8 +509,8 @@ Example
                           { field: "DateCreated", headerText: "Date Created" },
                           { field: "DateModified", headerText: "Date Modified" }]       
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -542,14 +552,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
         $("#treegrid").ejTreeGrid({ columns: [{ allowFiltering: true },{allowFiltering: false }] });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -591,14 +602,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
         $("#treegrid").ejTreeGrid({ columns: [{ allowSorting: true },{allowSorting: false }]  });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -640,13 +652,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>  
  $("#treegrid").ejTreeGrid({columns: [{ editType: "stringedit"},{editType: "booleanedit"}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -688,13 +701,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid({columns: [{ field: "Name"},{field: "Type"}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -736,13 +750,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid({columns: [{ filterEditType: "stringedit"},{filterEditType: "booleanedit"}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -784,13 +799,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid({columns: [{ headerText: "Name"},{headerText: "Type"}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -832,13 +848,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid({columns: [{ field: "name",visible: true},{field: "Type",visible: false}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -902,13 +919,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>  
         $("#treegrid").ejTreeGrid({ contextMenuItems: [ej.TreeGrid.ContextMenuItems.Add,ej.TreeGrid.ContextMenuItems.Edit] });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -950,13 +968,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>  
         $("#treegrid").ejTreeGrid(contextMenuSettings :{ showContextMenu:  true });                      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -998,13 +1017,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid({  cssClass : "gradient-lime" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1046,16 +1066,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid(
  {
     dataSource:[{Id:2,TaskName:"Testing",startDate:"12/1/2000",Duration:5 }]    
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1119,13 +1140,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid(dragTooltip :{ showTooltip:  true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1167,13 +1189,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>  
         $("#treegrid").ejTreeGrid(dragTooltip :{ tooltipItems: "TaskName","TaskID","StartDate" });                       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1215,13 +1238,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid(dragTooltip :{ tooltipTemplate: "" });        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1285,13 +1309,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({  editSettings:{allowAdding : true} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1333,13 +1358,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({  editSettings:{allowDeleting : true} });    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1381,13 +1407,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({  editSettings:{allowEditing : true} });     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1429,13 +1456,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({  editSettings:{editMode : "cellEditing"} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1477,13 +1505,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;   
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>   
  $("#treegrid").ejTreeGrid({  editSettings:{rowPosition : "aboveSelectedRow"} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1525,13 +1554,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({ enableAltRow : false});                     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1573,16 +1603,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid(
  {
     enableCollapseAll: false
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1624,13 +1655,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid({enableResize:true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1672,13 +1704,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({ enableVirtualization : true});                      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1720,14 +1753,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
         $("#treegrid").ejTreeGrid({  filterBarMode : "onEnter" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1769,13 +1803,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({  IdMapping : "ID" });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1817,13 +1852,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({  parentIdMapping : "ID" });             
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1865,15 +1901,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+<div id="treegrid"></div> 
+<script>                          
         $("#treegrid").ejTreeGrid(
  {
     query:ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);      
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1915,15 +1952,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                          
         $("#treegrid").ejTreeGrid({  
                         rowHeight : 30,
                         });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1965,16 +2003,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid(
  {
     rowTemplateID: "customTemplate"
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2016,13 +2055,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({ selectedItem : 2});                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2064,16 +2104,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid(
  {
     selectedRowIndex:2
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2115,13 +2156,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid({ selectionType:"multiple" });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2163,13 +2205,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;   
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>   
         $("#treegrid").ejTreeGrid({ showColumnChooser:  true });                        * 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2211,14 +2254,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({  
                         showGridCellTooltip : true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2260,14 +2304,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;                  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
         $("#treegrid").ejTreeGrid({  
                         showGridExpandCellTooltip : true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2331,13 +2376,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid({sizeSettings{height:'450px'}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2379,13 +2425,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid({sizeSettings{width:'500px'}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2449,13 +2496,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid({ sortSettings{sortedColumns : []}});            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2519,13 +2567,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>  
         $("#treegrid").ejTreeGrid({ showToolBar:  true });                       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2567,13 +2616,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>  
         $("#treegrid").ejTreeGrid({ toolbarItems: [ej.TreeGrid.ToolbarItems.Add,ej.TreeGrid.ToolbarItems.Edit] });                       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2615,16 +2665,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>          
         $("#treegrid").ejTreeGrid(
  {
     treeColumnIndex: 1
  });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2660,7 +2711,8 @@ To clear all the selection in treegrid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">you can pass a row index to clear the row selection</td>
 </tr>
@@ -2673,25 +2725,27 @@ To clear all the selection in treegrid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.clearSelection(2);
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="treegrid"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="treegrid"></div> 
+ 
+<script>
 // To clear the selection
 $("#treegrid").ejTreeGrid("clearSelection",2);  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2717,25 +2771,27 @@ To collapse all the parent items in tree grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.collapseAll(); // To collapse all parent items in tree grid
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
 // To expand all items
 $("#treegrid").ejTreeGrid("collapseAll");       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2764,7 +2820,8 @@ To hide the column by using header text
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>headerText</code></td>
+<td class="name">{% highlight html %}
+headerText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">you can pass a header text of a column to hide</td>
 </tr>
@@ -2777,17 +2834,18 @@ To hide the column by using header text
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.hideColumn("Task Name");
-&lt;/script&gt; 
-&lt;/script&gt;</code>
-</pre>
+</script> 
+</script>{% endhighlight %}
+
 
 
 
@@ -2816,12 +2874,14 @@ To refresh the changes in tree grid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>dataSource</code></td>
+<td class="name">{% highlight html %}
+dataSource{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass which data source you want to show in tree grid</td>
 </tr>
 <tr>
-<td class="name"><code>query</code></td>
+<td class="name">{% highlight html %}
+query{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass which data you want to show in tree grid</td>
 </tr>
@@ -2834,18 +2894,19 @@ To refresh the changes in tree grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
 // Create treegrid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 var dataManager = ej.DataManager(projectData);
 var query = ej.Query().select(["taskID", "taskName", "startDate", "endDate", "subtasks", "progress", "duration"]);
 treegridObj.refresh(dataManager, query) // To refresh the tree grid content
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2871,25 +2932,27 @@ To save the edited cell in treegrid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.saveCell(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="treegrid"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="treegrid"></div> 
+ 
+<script>
 // Save the edited cell
 $("#treegrid").ejTreeGrid("saveCell");  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2918,7 +2981,8 @@ To search an item with search string provided at the run time
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>searchString</code></td>
+<td class="name">{% highlight html %}
+searchString{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">you can pass a searchString to search the tree grid</td>
 </tr>
@@ -2931,25 +2995,27 @@ To search an item with search string provided at the run time
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.search("Plan"); // To search a Plan string in tree grid data
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
 // To search a task
 $("#treegrid").ejTreeGrid("search","Plan");     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2978,7 +3044,8 @@ To show the column by using header text
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>headerText</code></td>
+<td class="name">{% highlight html %}
+headerText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">you can pass a header text of a column to show</td>
 </tr>
@@ -2991,16 +3058,17 @@ To show the column by using header text
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.showColumn("Task Name");
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3029,12 +3097,14 @@ To sorting the data based on the particular fields
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">you can pass a name of column to sort</td>
 </tr>
 <tr>
-<td class="name"><code>columnSortDirection</code></td>
+<td class="name">{% highlight html %}
+columnSortDirection{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">you can pass a sort direction to sort the column</td>
 </tr>
@@ -3047,25 +3117,27 @@ To sorting the data based on the particular fields
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="treegrid"></div> 
+ 
+<script>
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.sortColumn("Start Date", ej.sortOrder.Descending); // To sort the data
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
- &lt;div id="treegrid"&gt;&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+ <div id="treegrid"></div> 
+ 
+<script>
 // Sort the particular field.
 $("#treegrid").ejTreeGrid("sortColumn","Start Date", ej.sortOrder.Descending);  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3101,7 +3173,8 @@ Triggered before every success event of Treegrid action.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters before completing the sorting operation in TreeGrid:
 <table class="params">
@@ -3114,32 +3187,38 @@ Triggered before every success event of Treegrid action.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>columnSortDirection</code></td>
+<td class="name">{% highlight html %}
+columnSortDirection{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the direction of sorting ascending or descending</td>
 </tr>
@@ -3148,7 +3227,8 @@ Triggered before every success event of Treegrid action.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters while performing expand operation:
 <table class="params">
@@ -3161,27 +3241,32 @@ Triggered before every success event of Treegrid action.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>keyValue</code></td>
+<td class="name">{% highlight html %}
+keyValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the value of expanding parent element.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -3190,7 +3275,8 @@ Triggered before every success event of Treegrid action.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters while performing collapse operation:
 <table class="params">
@@ -3203,27 +3289,32 @@ Triggered before every success event of Treegrid action.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>keyValue</code></td>
+<td class="name">{% highlight html %}
+keyValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the value of collapsing parent element.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -3232,7 +3323,8 @@ Triggered before every success event of Treegrid action.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters before completing the delete operation:
 <table class="params">
@@ -3245,27 +3337,32 @@ Triggered before every success event of Treegrid action.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the data or deleting element.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -3282,15 +3379,16 @@ Triggered before every success event of Treegrid action.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    actionBegin: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3319,7 +3417,8 @@ Triggered for every Treegrid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when treegrid is initialized:
 <table class="params">
@@ -3332,17 +3431,20 @@ Triggered for every Treegrid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -3351,7 +3453,8 @@ Triggered for every Treegrid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters after perform the sorting in grid tree is completed:
 <table class="params">
@@ -3364,32 +3467,38 @@ Triggered for every Treegrid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>columnSortDirection</code></td>
+<td class="name">{% highlight html %}
+columnSortDirection{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the direction of sorting ascending or descending</td>
 </tr>
@@ -3398,7 +3507,8 @@ Triggered for every Treegrid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters after searching completed:
 <table class="params">
@@ -3411,27 +3521,32 @@ Triggered for every Treegrid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>keyValue</code></td>
+<td class="name">{% highlight html %}
+keyValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the value of searched element.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -3440,7 +3555,8 @@ Triggered for every Treegrid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters while performing after completing the delete operation is completed:
 <table class="params">
@@ -3453,27 +3569,32 @@ Triggered for every Treegrid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the data od deleted element.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -3482,7 +3603,8 @@ Triggered for every Treegrid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters after the add operation completed:
 <table class="params">
@@ -3495,22 +3617,26 @@ Triggered for every Treegrid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the data added element.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns selected record index</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
@@ -3519,7 +3645,8 @@ Triggered for every Treegrid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters after the edit operation completed:
 <table class="params">
@@ -3532,22 +3659,26 @@ Triggered for every Treegrid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the data added element.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns selected record index</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
@@ -3564,15 +3695,16 @@ Triggered for every Treegrid action success event.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="gantt"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    actionComplete: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3601,7 +3733,8 @@ Triggered while enter the edit mode in the treegrid cell
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beginEdit event is triggered.
 <table class="params">
@@ -3614,27 +3747,32 @@ Triggered while enter the edit mode in the treegrid cell
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row element of editing cell.</td>
 </tr>
 <tr>
-<td class="name"><code>cellElement</code></td>
+<td class="name">{% highlight html %}
+cellElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the Element of editing cell.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of current cell record.</td>
 </tr>
 <tr>
-<td class="name"><code>columnIndex</code></td>
+<td class="name">{% highlight html %}
+columnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the column Index of cell belongs.</td>
 </tr>
@@ -3651,15 +3789,16 @@ Triggered while enter the edit mode in the treegrid cell
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    beginEdit: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3688,7 +3827,8 @@ Triggered after collapsed the TreeGrid record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when collapsed event is triggered.
 <table class="params">
@@ -3701,17 +3841,20 @@ Triggered after collapsed the TreeGrid record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row index of collapsed record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record..</td>
 </tr>
@@ -3728,15 +3871,16 @@ Triggered after collapsed the TreeGrid record
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    collapsed: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3765,7 +3909,8 @@ Triggered while collapsing the TreeGrid record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when collapsing event is triggered.
 <table class="params">
@@ -3778,17 +3923,20 @@ Triggered while collapsing the TreeGrid record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row index of collapsing record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record..</td>
 </tr>
@@ -3805,15 +3953,16 @@ Triggered while collapsing the TreeGrid record
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#TreeGrid").ejTreeGrid({
    collapsing: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3842,7 +3991,8 @@ Triggered while Context Menu is rendered in TreeGrid control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when context menu is rendered.
 <table class="params">
@@ -3855,27 +4005,32 @@ Triggered while Context Menu is rendered in TreeGrid control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>contextMenuItems</code></td>
+<td class="name">{% highlight html %}
+contextMenuItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the default context menu items to which we add custom items.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -3892,15 +4047,16 @@ Triggered while Context Menu is rendered in TreeGrid control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    contextMenuOpen: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3929,7 +4085,8 @@ Triggered after saved the modified cellValue in treegrid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when endEdit event is triggered.
 <table class="params">
@@ -3942,32 +4099,38 @@ Triggered after saved the modified cellValue in treegrid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row element of editing cell.</td>
 </tr>
 <tr>
-<td class="name"><code>cellElement</code></td>
+<td class="name">{% highlight html %}
+cellElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the Element of editing cell.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column name of edited cell belongs.</td>
 </tr>
 <tr>
-<td class="name"><code>columnObject</code></td>
+<td class="name">{% highlight html %}
+columnObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object of edited cell belongs.</td>
 </tr>
@@ -3984,15 +4147,16 @@ Triggered after saved the modified cellValue in treegrid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    endEdit: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4021,7 +4185,8 @@ Triggered after expand the record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when expanded event is triggered.
 <table class="params">
@@ -4034,17 +4199,20 @@ Triggered after expand the record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row index of record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record..</td>
 </tr>
@@ -4061,15 +4229,16 @@ Triggered after expand the record
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    expanded: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4098,7 +4267,8 @@ Triggered while expanding the TreeGrid record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when expanding event is triggered.
 <table class="params">
@@ -4111,17 +4281,20 @@ Triggered while expanding the TreeGrid record
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row index of record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record..</td>
 </tr>
@@ -4138,15 +4311,16 @@ Triggered while expanding the TreeGrid record
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    expanding: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4175,7 +4349,8 @@ Triggered while Treegrid is loaded
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when load event is triggered.
 <table class="params">
@@ -4188,17 +4363,20 @@ Triggered while Treegrid is loaded
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -4215,15 +4393,16 @@ Triggered while Treegrid is loaded
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    load: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4252,7 +4431,8 @@ Triggered while rendering each cell in the treegrid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when queryCellInfo event is triggered.
 <table class="params">
@@ -4265,27 +4445,32 @@ Triggered while rendering each cell in the treegrid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selecting row element.</td>
 </tr>
 <tr>
-<td class="name"><code>cellValue</code></td>
+<td class="name">{% highlight html %}
+cellValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the value of cell.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of current cell record.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column of cell belongs.</td>
 </tr>
@@ -4302,15 +4487,16 @@ Triggered while rendering each cell in the treegrid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    queryCellInfo: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4339,7 +4525,8 @@ Triggered while rendering each row
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowDataBound event is triggered.
 <table class="params">
@@ -4352,17 +4539,20 @@ Triggered while rendering each row
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row element of editing cell.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of edited cell record.</td>
 </tr>
@@ -4379,15 +4569,16 @@ Triggered while rendering each row
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    rowDataBound: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4416,7 +4607,8 @@ Triggered while dragging a row in TreeGrid control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when dragging a row.
 <table class="params">
@@ -4429,47 +4621,56 @@ Triggered while dragging a row in TreeGrid control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>draggedRow</code></td>
+<td class="name">{% highlight html %}
+draggedRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the row which we start to drag.</td>
 </tr>
 <tr>
-<td class="name"><code>draggedRowIndex</code></td>
+<td class="name">{% highlight html %}
+draggedRowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the row index which we start to drag.</td>
 </tr>
 <tr>
-<td class="name"><code>targetRow</code></td>
+<td class="name">{% highlight html %}
+targetRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the row on which we are dragging.</td>
 </tr>
 <tr>
-<td class="name"><code>targetRowIndex</code></td>
+<td class="name">{% highlight html %}
+targetRowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the row index on which we are dragging.</td>
 </tr>
 <tr>
-<td class="name"><code>canDrop</code></td>
+<td class="name">{% highlight html %}
+canDrop{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns that we can drop over that record or not.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -4486,15 +4687,16 @@ Triggered while dragging a row in TreeGrid control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    rowDrag: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4523,7 +4725,8 @@ Triggered while start to drag row in TreeGrid control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when drag starts.
 <table class="params">
@@ -4536,32 +4739,38 @@ Triggered while start to drag row in TreeGrid control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>draggedRow</code></td>
+<td class="name">{% highlight html %}
+draggedRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the row which we start to drag.</td>
 </tr>
 <tr>
-<td class="name"><code>draggedRowIndex</code></td>
+<td class="name">{% highlight html %}
+draggedRowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the row index which we start to drag.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -4578,15 +4787,16 @@ Triggered while start to drag row in TreeGrid control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    rowDragStart: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4615,7 +4825,8 @@ Triggered while drop a row in TreeGrid control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when dragging a row.
 <table class="params">
@@ -4628,42 +4839,50 @@ Triggered while drop a row in TreeGrid control
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>draggedRow</code></td>
+<td class="name">{% highlight html %}
+draggedRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the row which we start to drag.</td>
 </tr>
 <tr>
-<td class="name"><code>draggedRowIndex</code></td>
+<td class="name">{% highlight html %}
+draggedRowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the row index which we start to drag.</td>
 </tr>
 <tr>
-<td class="name"><code>targetRow</code></td>
+<td class="name">{% highlight html %}
+targetRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the row which we are dropped to row.</td>
 </tr>
 <tr>
-<td class="name"><code>targetRowIndex</code></td>
+<td class="name">{% highlight html %}
+targetRowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the row index which we are dropped to row.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the treegrid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -4680,15 +4899,16 @@ Triggered while drop a row in TreeGrid control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    rowDragStop: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4717,7 +4937,8 @@ Triggered after the row is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowSelected event is triggered.
 <table class="params">
@@ -4730,22 +4951,26 @@ Triggered after the row is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selecting row element.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the index of selecting row record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data of selected record.</td>
 </tr>
@@ -4762,15 +4987,16 @@ Triggered after the row is selected.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    rowSelected: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4799,7 +5025,8 @@ Triggered before the row is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowSelecting event is triggered.
 <table class="params">
@@ -4812,22 +5039,26 @@ Triggered before the row is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowElement</code></td>
+<td class="name">{% highlight html %}
+rowElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selecting row element.</td>
 </tr>
 <tr>
-<td class="name"><code>recordIndex</code></td>
+<td class="name">{% highlight html %}
+recordIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the index of selecting row record.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the data selecting record.</td>
 </tr>
@@ -4844,15 +5075,16 @@ Triggered before the row is going to be selected.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="treegrid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
 $("#treegrid").ejTreeGrid({
    rowSelecting: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

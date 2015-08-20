@@ -33,15 +33,16 @@ $(element).ejBulletGraph<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="bulletGraph1"></div> 
+ 
+<script>
 // Create BulletGraph
 $('#bulletGraph1').ejBulletGraph();     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -112,15 +113,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 applyRangeStrokeToLabels : true                
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -162,15 +164,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 applyRangeStrokeToTicks : true               
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -234,15 +237,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ enableTrim : true }                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -306,15 +310,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{font :{color : "green"}}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -356,15 +361,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{font :{fontFamily : "algerian"}}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -406,15 +412,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{font :{fontStyle : "italic"}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -456,15 +463,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{font :{fontWeight : "lighter"}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -506,15 +514,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{font :{opacity : 0.5}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -556,15 +565,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{font :{size : "14px"}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -650,15 +660,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{font : { color :"green" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -700,15 +711,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{font : { fontFamily :"Algerian" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -750,15 +762,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{font : { fontStyle :"italic" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -800,15 +813,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{font : { fontWeight :"lighter" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -850,15 +864,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{font : { opacity : 0.5 }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -900,15 +915,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{font : { size :"14px" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -972,15 +988,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{location : { x :12 }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1022,15 +1039,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{location : { y :60 }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1072,15 +1090,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ indicator: {padding: 5}}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1166,15 +1185,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{symbol : { border: { color :"green" } }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1216,15 +1236,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{symbol : { border: { width : 2 } }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1266,15 +1287,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{symbol : { color :"green" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1316,15 +1338,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{symbol : { imageURL :"../BulletIndicator.png" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1366,15 +1389,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{symbol : { opacity :0.5 }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1416,15 +1440,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{symbol : { shape :"triangle" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1488,15 +1513,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{symbol : { size : { height: 10 } }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1538,15 +1564,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{indicator :{symbol : { size : { width: 10 }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1588,15 +1615,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ indicator :{text : "Power Production"} }
 });
-&lt;/script&gt;e</code>
-</pre>
+</script>e{% endhighlight %}
+
 
 
 
@@ -1638,15 +1666,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ indicator:{textAlignment: 'Far'}}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1688,15 +1717,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ indicator: {textAnchor: 'end'}}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1738,15 +1768,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ indicator :{textAngle :10} }                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1788,15 +1819,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ indicator: {textPosition: 'Top'}}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1838,15 +1870,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ indicator :{textSpacing :10} }                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1888,15 +1921,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ indicator :{visible : true} }                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1960,15 +1994,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{location :{x :15}}            
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2010,15 +2045,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{location :{y :15}}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2060,15 +2096,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{padding: 2}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2154,15 +2191,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{subTitle :{font : { color :"green" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2204,15 +2242,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{subTitle :{font : { fontFamily :"Algerian" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2254,15 +2293,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{subTitle :{font : { fontStyle :"italic" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2304,15 +2344,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{subTitle :{font : { fontWeight :"lighter" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2354,15 +2395,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{subTitle :{font : { opacity :0.5 }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2404,15 +2446,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{subTitle :{font : { size :"14px" }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2476,15 +2519,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{subTitle :{location : { x :12 }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2526,15 +2570,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{subTitle :{location : { y :50 }}}                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2576,15 +2621,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{subTitle:{padding: 8}}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2626,15 +2672,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ subTitle :{text : "Power Production"} }
 });
-&lt;/script&gt;e</code>
-</pre>
+</script>e{% endhighlight %}
+
 
 
 
@@ -2676,15 +2723,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{subTitle:{textAlignment: 'Far'}}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2726,15 +2774,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ subTitle: {textAnchor: 'end'}}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2776,15 +2825,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ subTitle :{textAngle :10} }                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2826,15 +2876,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{ subTitle:{textPosition: 'Right'}}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2876,15 +2927,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{text : "Production"}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2926,15 +2978,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{textAlignment: 'Center'}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2976,15 +3029,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{textAnchor: 'middle'}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3026,15 +3080,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{textAngle : 5}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3076,15 +3131,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 captionSettings :{textPosition: 'Top'}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3126,15 +3182,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 comparativeMeasureValue : 1                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3176,15 +3233,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 enableAnimation : false                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3226,15 +3284,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 enableResizing : false                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3276,15 +3335,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 flowDirection : "backward"                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3326,15 +3386,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 height : 600                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -3376,15 +3437,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 orientation : "vertical"                   
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3448,15 +3510,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 qualitativeRanges :[{rangeEnd : 4.5}]                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3498,15 +3561,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 qualitativeRanges :[{rangeEnd : 7}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3548,15 +3612,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 qualitativeRanges :[{rangeEnd : 5}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3598,15 +3663,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 qualitativeRanges :[{rangeOpacity : 0.5}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3648,15 +3714,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 qualitativeRanges :[{rangeOpacity : 0.5}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3698,15 +3765,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 qualitativeRanges :[{rangeOpacity : 0.5}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3748,15 +3816,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 qualitativeRanges :[{rangeStroke : 5}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3798,15 +3867,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 qualitativeRanges :[{rangeStroke : 5}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3848,15 +3918,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 qualitativeRanges :[{rangeStroke : 5}]                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3898,15 +3969,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 qualitativeRangeSize : 35                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3948,15 +4020,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleLength :500                 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4042,15 +4115,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { comparativeMeasureSettings :{ stroke :2} }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4092,15 +4166,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
  quantitativeScaleSettings : { comparativeMeasureSettings :{ width :6} }                     
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4164,15 +4239,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { featuredMeasureSettings :{stroke : 2} }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4214,15 +4290,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="ejBulletGraph"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="ejBulletGraph"></div> 
+<script>
         $("#bulletGraph1").ejBulletGraph({
    quantitativeScaleSettings: { featuredMeasureSettings: { width: 3 }},
    });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -4286,15 +4363,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { featureMeasures :[{ category :null}] }                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4336,15 +4414,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { featureMeasures :[{ comparativeMeasureValue :2}] }                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4386,15 +4465,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { featureMeasures :[{ value :2}] }                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4458,15 +4538,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 fields :{category : "ProductId"}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4508,15 +4589,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 fields :{comparativeMeasure : "comparativeMeasureValue"}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4558,8 +4640,9 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // To initialize with local Json data to the dataSource
 $("#SampleBullet").ejBulletGraph({
 fields: {
@@ -4591,17 +4674,18 @@ $("#SampleBullet").ejBulletGraph({
 // Data Manager creation
            var dataManager = ej.DataManager({
                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
-           });</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+           });{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 fields : {datasource :{ej.DataManger :{url : "http://mvc.syncfusion.com/Services/Northwnd.svc/" }} }                 
 });
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -4643,15 +4727,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 fields :{featureMeasures : "UnitPrice"}                  
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4731,15 +4816,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 fields :{tableName : "Product"}                 
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4781,15 +4867,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { interval : 2 }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4875,15 +4962,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { labelSettings : { font :{ fontFamily : "Algerian" } } }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4925,15 +5013,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { labelSettings : { font :{ fontStyle : "italic" } } }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4975,15 +5064,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { labelSettings : { font :{ fontWeight : "lighter" } } }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5025,15 +5115,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { labelSettings : { font :{ opacity : 0.5 } } }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5075,15 +5166,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { labelSettings : { labelPlacement : "inside" } }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5125,15 +5217,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { labelSettings : { labelPrefix : "$" } }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5175,15 +5268,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { labelSettings : { labelSuffix : "K" } }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5225,15 +5319,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { labelSettings : { offset : 25 } }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5275,15 +5370,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { labelSettings : { position : "above" } }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5325,15 +5421,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { labelSettings : { size : 10 } }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5375,15 +5472,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { labelSettings : { stroke : "green" } }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5447,15 +5545,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { location : { x : 15 } } 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5497,15 +5596,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { location : { y : 15 } }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5569,15 +5669,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { majorTickSettings : { size : 15 } }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5619,15 +5720,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { majorTickSettings : { stroke : "red" } }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5669,15 +5771,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { majorTickSettings : { width : 1 } }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5719,15 +5822,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { maximum : 8 }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5769,15 +5873,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { minimum : 1 }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5841,15 +5946,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { minorTickSettings : { size : 10} }                  
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5891,15 +5997,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { minorTickSettings : { stroke : "green" } }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5941,15 +6048,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { minorTickSettings : { width : 1 } }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5991,15 +6099,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { minorTicksPerInterval : 5 }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6041,15 +6150,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { tickPlacement : "inside" }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6091,15 +6201,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 quantitativeScaleSettings : { tickPosition : "near" }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6141,15 +6252,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 theme : "flatdark"                  
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6213,15 +6325,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 tooltipSettings :{captionTemplate: "Tooltip"}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6263,15 +6376,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 tooltipSettings :{enableCaptionTooltip: true}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6313,15 +6427,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 tooltipSettings: { template : "tooltip"},
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6363,15 +6478,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 tooltipSettings :{visible: false}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6413,15 +6529,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 value : 1                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6463,15 +6580,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
 $("#bulletGraph1").ejBulletGraph({
 width : 600                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6504,25 +6622,27 @@ To destroy the bullet graph
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletgraph1"&gt;Bullet Graph&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="bulletgraph1">Bullet Graph</div> 
+ 
+<script>
 // Destroy Bullet graph
 var gphObj = $("#bulletGraph1").data("ejBulletGraph");
 gphObj.destroy(); // destroy the graph
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;BulletGraph&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="bulletGraph1">BulletGraph</div> 
+ 
+<script>
 // destroy the Bullet graph
 $("#bulletGraph1").ejButton("destroy"); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6548,25 +6668,27 @@ To redraw the bulet graph
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletgraph1"&gt;Bullet Graph&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="bulletgraph1">Bullet Graph</div> 
+ 
+<script>
 // Create Bullet graph
 var gphObj = $("#bulletGraph1").data("ejBulletGraph");
 gphObj.redraw(); // redraw the graph
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;BulletGraph&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="bulletGraph1">BulletGraph</div> 
+ 
+<script>
 // redraw the Bullet graph
 $("#butbulletGraph1ton1").ejButton("redraw");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6595,12 +6717,14 @@ To set the value for comparative measure in bullet graph.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Index</code></td>
+<td class="name">{% highlight html %}
+argument.Index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>
 <tr>
-<td class="name"><code>argument.Measure</code></td>
+<td class="name">{% highlight html %}
+argument.Measure{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>
@@ -6613,25 +6737,27 @@ To set the value for comparative measure in bullet graph.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;BulletGraph&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="bulletGraph1">BulletGraph</div> 
+ 
+<script>
 // set the value for comparative measure
 var btnObj = $("#bulletGraph1").data("ejBulletGraph");
 btnObj.setComparativeMeasureSymbol(1,7); // set the value
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;BulletGraph&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="bulletGraph1">BulletGraph</div> 
+ 
+<script>
 // set the value for comparative measure
 $("#bulletGraph1").ejBulletGraph("setComparativeMeasureSymbol(1,7)");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6660,12 +6786,14 @@ To set the value for feature measure bar.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.Index</code></td>
+<td class="name">{% highlight html %}
+argument.Index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>
 <tr>
-<td class="name"><code>argument.Measure</code></td>
+<td class="name">{% highlight html %}
+argument.Measure{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>
@@ -6678,25 +6806,27 @@ To set the value for feature measure bar.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;Bulletgraph&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="bulletGraph1">Bulletgraph</div> 
+ 
+<script>
 // To set the value for feature measure bar.
 var btnObj = $("#bulletGraph1").data("ejBulletGraph");
 btnObj.setFeatureMeasureBarValue(1,8); // set the value
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="bulletGraph1"&gt;BulletGraph&lt;/div&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="bulletGraph1">BulletGraph</div> 
+ 
+<script>
 // To set the value for feature measure bar.
 $("#bulletGraph1").ejBulletGraph("setFeatureMeasureBarValue(1,8)");     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6732,22 +6862,26 @@ Fires on rendering the caption of bullet graph.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.Object</code></td>
+<td class="name">{% highlight html %}
+args.Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">scaleElement</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.captionElement</code></td>
+<td class="name">{% highlight html %}
+args.captionElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">captionElement</span></td>
 <td class="description last">returns the current captionSettings element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.captionType</code></td>
+<td class="name">{% highlight html %}
+args.captionType{% endhighlight %}</td>
 <td class="type"><span class="param-type">captionType</span></td>
 <td class="description last">returns the type of the captionSettings.</td>
 </tr>
@@ -6760,13 +6894,14 @@ Fires on rendering the caption of bullet graph.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drawCaption event for bulletgraph
 $("#bulletGraph1").ejBulletGraph({
    drawCaption: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -6795,22 +6930,26 @@ Fires on rendering the category.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.Object</code></td>
+<td class="name">{% highlight html %}
+args.Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">scaleElement</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.categoryElement</code></td>
+<td class="name">{% highlight html %}
+args.categoryElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">categoryElement</span></td>
 <td class="description last">returns the options of category element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.Value</code></td>
+<td class="name">{% highlight html %}
+args.Value{% endhighlight %}</td>
 <td class="type"><span class="param-type">Value</span></td>
 <td class="description last">returns the text value of the category that is drawn.</td>
 </tr>
@@ -6823,13 +6962,14 @@ Fires on rendering the category.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drawCategory event for bulletgraph
 $("#bulletGraph1").ejBulletGraph({
    drawCategory: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -6858,22 +6998,26 @@ Fires on rendering the comparative measure symbol.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.Object</code></td>
+<td class="name">{% highlight html %}
+args.Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">scaleElement</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.targetElement</code></td>
+<td class="name">{% highlight html %}
+args.targetElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">targetElement</span></td>
 <td class="description last">returns the options of comparative measure element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.Value</code></td>
+<td class="name">{% highlight html %}
+args.Value{% endhighlight %}</td>
 <td class="type"><span class="param-type">Value</span></td>
 <td class="description last">returns the value of the comparative measure symbol.</td>
 </tr>
@@ -6886,13 +7030,14 @@ Fires on rendering the comparative measure symbol.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drawComparativeMeasureSymbol event for bulletgraph
 $("#bulletGraph1").ejBulletGraph({
    drawComparativeMeasureSymbol: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -6921,22 +7066,26 @@ Fires on rednering the feature measure bar.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.Object</code></td>
+<td class="name">{% highlight html %}
+args.Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">scaleElement</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.currentElement</code></td>
+<td class="name">{% highlight html %}
+args.currentElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">currentElement</span></td>
 <td class="description last">returns the options of feature measure element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.Value</code></td>
+<td class="name">{% highlight html %}
+args.Value{% endhighlight %}</td>
 <td class="type"><span class="param-type">Value</span></td>
 <td class="description last">returns the value of the feature measure bar.</td>
 </tr>
@@ -6949,13 +7098,14 @@ Fires on rednering the feature measure bar.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drawFeatureMeasureBar event for bulletgraph
 $("#bulletGraph1").ejBulletGraph({
    drawFeatureMeasureBar: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -6984,22 +7134,26 @@ Fires on rendering the indicator of bullet graph.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.indicatorSettings</code></td>
+<td class="name">{% highlight html %}
+args.indicatorSettings{% endhighlight %}</td>
 <td class="type"><span class="param-type">indicatorSettings</span></td>
 <td class="description last">returns an object to customize bullet graph indicator text and symbol before rendering it.</td>
 </tr>
 <tr>
-<td class="name"><code>args.model</code></td>
+<td class="name">{% highlight html %}
+args.model{% endhighlight %}</td>
 <td class="type"><span class="param-type"><a href="global.html#model">model</a></span></td>
 <td class="description last">returns the object of bullet graph.</td>
 </tr>
 <tr>
-<td class="name"><code>args.type</code></td>
+<td class="name">{% highlight html %}
+args.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">type</span></td>
 <td class="description last">returns the type of event.</td>
 </tr>
 <tr>
-<td class="name"><code>args.cancel</code></td>
+<td class="name">{% highlight html %}
+args.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">cancel</span></td>
 <td class="description last">for cancelling the event.</td>
 </tr>
@@ -7012,13 +7166,14 @@ Fires on rendering the indicator of bullet graph.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drawIndicator event for bulletgraph
 $("#bulletGraph1").ejBulletGraph({
    drawIndicator: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -7047,22 +7202,26 @@ Fires on rendering the labels.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.Object</code></td>
+<td class="name">{% highlight html %}
+args.Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
-<td class="name"><code>args.scaleElement</code></td>
+<td class="name">{% highlight html %}
+args.scaleElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">scaleElement</span></td>
 <td class="description last">returns the options of the scale element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.tickElement</code></td>
+<td class="name">{% highlight html %}
+args.tickElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">labelElement</span></td>
 <td class="description last">returns the current label element.</td>
 </tr>
 <tr>
-<td class="name"><code>args.labelType</code></td>
+<td class="name">{% highlight html %}
+args.labelType{% endhighlight %}</td>
 <td class="type"><span class="param-type">labelType</span></td>
 <td class="description last">returns the label type.</td>
 </tr>
@@ -7075,13 +7234,14 @@ Fires on rendering the labels.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drawLabels event for bulletgraph
 $("#bulletGraph1").ejBulletGraph({
    drawLabels: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -7110,22 +7270,26 @@ Fires on rendering the qualitative ranges.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>args.Object</code></td>
+<td class="name">{% highlight html %}
+args.Object{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the object of the bullet graph.</td>
 </tr>
 <tr>
-<td class="name"><code>args.rangeIndex</code></td>
+<td class="name">{% highlight html %}
+args.rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">rangeIndex</span></td>
 <td class="description last">returns the index of current range.</td>
 </tr>
 <tr>
-<td class="name"><code>args.rangeOptions</code></td>
+<td class="name">{% highlight html %}
+args.rangeOptions{% endhighlight %}</td>
 <td class="type"><span class="param-type">rangeOptions</span></td>
 <td class="description last">returns the settings for current range.</td>
 </tr>
 <tr>
-<td class="name"><code>args.rangeEndValue</code></td>
+<td class="name">{% highlight html %}
+args.rangeEndValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">rangeEndValue</span></td>
 <td class="description last">returns the end value of current range.</td>
 </tr>
@@ -7138,13 +7302,14 @@ Fires on rendering the qualitative ranges.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drawQualitativeRanges event for bulletgraph
 $("#bulletGraph1").ejBulletGraph({
    drawQualitativeRanges: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 
@@ -7170,13 +7335,14 @@ Fires on loading bullet graph.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //drawTicks event for bulletgraph
 $("#bulletGraph1").ejBulletGraph({
    load: function (args) {}
-});</code>
-</pre>
+});{% endhighlight %}
+
 
 
 

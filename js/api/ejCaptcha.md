@@ -36,7 +36,8 @@ $(element).ejCaptcha<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for Captcha</td>
 </tr>
@@ -49,15 +50,16 @@ $(element).ejCaptcha<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 // Create Captcha
 $('#Captcha1').ejCaptcha();     
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -128,15 +130,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set character set API value during initialization  
         $("#captcha1").ejCaptcha({  characterSet: "ABCD1234"}); 
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -178,15 +181,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set error message API value during initialization  
         $("#captcha1").ejCaptcha({  customErrorMessage: "InValid Captcha"});    
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -228,15 +232,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set auto validation API value during initialization  
         $("#captcha1").ejCaptcha({  enableAutoValidation: true});       
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -278,15 +283,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set case sensitivity API value during initialization  
         $("#captcha1").ejCaptcha({  enableCaseSensitivity: true});      
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -328,15 +334,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set target input API value during initialization  
         $("#captcha1").ejCaptcha({  enablePattern: true});      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -378,15 +385,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set enable RTL API value during initialization  
         $("#captcha1").ejCaptcha({  enableRTL: true});  
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -428,15 +436,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set mapper API value during initialization  
         $("#captcha1").ejCaptcha({  hatchStyle: "BackwardDiagonal"});   
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -478,15 +487,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set height API value during initialization  
         $("#captcha1").ejCaptcha({  height: 50});       
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -528,15 +538,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set mapper API value during initialization  
         $("#captcha1").ejCaptcha({  mapper: "GetCurrentItem"}); 
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -578,15 +589,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set maximum length API value during initialization  
         $("#captcha1").ejCaptcha({  maximumLength: 8}); 
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -628,15 +640,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set minimum length API value during initialization  
         $("#captcha1").ejCaptcha({  minimumLength: 6}); 
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -678,15 +691,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set request mapper API value during initialization  
         $("#captcha1").ejCaptcha({  requestMapper: "GetCurrentItem"});  
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -728,15 +742,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set enable audio API value during initialization  
         $("#captcha1").ejCaptcha({  showAudioButton: true});    
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -778,15 +793,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set enable refresh API value during initialization  
         $("#captcha1").ejCaptcha({  showRefreshButton: true});  
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -828,16 +844,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;button id="button1"&gt;Submit&lt;/button&gt; 
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<button id="button1">Submit</button> 
+<script>
 //To set target button API value during initialization  
         $("#captcha1").ejCaptcha({  targetButton: "button1"});  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -879,15 +896,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set target input API value during initialization  
         $("#captcha1").ejCaptcha({  targetInput: "input1"});    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -929,15 +947,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="captcha1"></div> 
+ 
+<script>
 //To set width API value during initialization  
         $("#captcha1").ejCaptcha({  width: 150});       
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -973,17 +992,20 @@ Fires when captch refresh begins.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Captcha model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -996,16 +1018,17 @@ Fires when captch refresh begins.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="captcha1"></div> 
  
-&lt;script&gt;
+<script>
 //Refresh begin event of Captcha control 
         $("#captcha1").ejCaptcha({  
                                 refreshBegin: function(args) {}
                                 });     
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -1034,17 +1057,20 @@ Fires after captch refresh completed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Captcha model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1057,16 +1083,17 @@ Fires after captch refresh completed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="captcha1"></div> 
  
-&lt;script&gt;
+<script>
 //Refresh complete event of Captcha control 
         $("#captcha1").ejCaptcha({  
                                 refreshComplete: function(args) {}
                                 });     
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -1095,17 +1122,20 @@ Fires when captch refresh fails to load.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Captcha model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1118,16 +1148,17 @@ Fires when captch refresh fails to load.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="captcha1"></div> 
  
-&lt;script&gt;
+<script>
 //Refresh failure event of Captcha control 
         $("#captcha1").ejCaptcha({  
                                 refreshFailure: function(args) {}
                                 });     
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 
@@ -1156,17 +1187,20 @@ Fires after captch refresh succeeded.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Captcha model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1179,16 +1213,17 @@ Fires after captch refresh succeeded.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="captcha1"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+<div id="captcha1"></div> 
  
-&lt;script&gt;
+<script>
 //Refresh success event of Captcha control 
         $("#captcha1").ejCaptcha({  
                                 refreshSuccess: function(args) {}
                                 });     
-&lt;/script&gt;                         </code>
-</pre>
+</script>                         {% endhighlight %}
+
 
 
 

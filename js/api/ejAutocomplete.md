@@ -23,15 +23,16 @@ $(element).ejAutocomplete<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Create AutoComplete
 $('#autocomplete').ejAutocomplete({ dataSource: window.carList,value:"Austin-Healey" });        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -79,15 +80,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete with the addNewText value specified
         $("#autocomplete").ejAutocomplete({dataSource: window.carList,allowAddNew: true,addNewText: "Add New Car" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -113,15 +115,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete with the allowAddNew value specified.
 $("#autocomplete").ejAutocomplete({dataSource: window.carList,allowAddNew: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -147,15 +150,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the grouping value specified.
 $("#autocomplete").ejAutocomplete({ dataSource: window.vehicle, allowGrouping: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -181,15 +185,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the allowSorting value specified.
 $("#autocomplete").ejAutocomplete({dataSource: window.carList,allowSorting: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -215,15 +220,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete autoFocus property 
         $("#autocomplete").ejAutocomplete({ dataSource: window.carList,autoFocs: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -249,15 +255,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the caseSensitiveSearch value specified.
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList,caseSensitiveSearch: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -283,15 +290,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete with the cssClass value specified
         $("#autocomplete").ejAutocomplete({ dataSource: window.carList,cssClass: 'gradient-lime'});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -317,15 +325,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //To set dataSource API value during initialization  
         $("#autocomplete").ejAutocomplete({ dataSource: window.carList,value:"Austin-Healey"});                         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -351,15 +360,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with delaySuggestionTimeout in milliseconds value specified.
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList,delaySuggestionTimeout : 500 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -385,15 +395,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete with the delimiterChar value specified
         $("#autocomplete").ejAutocomplete({dataSource: window.carList,multiSelectMode: ej.MultiSelectMode.Delimiter,delimiterChar: ';' });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -419,15 +430,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete emptyResultText property with the  value specified
         $("#autocomplete").ejAutocomplete({ dataSource: window.carList,emptyResultText: 'No Results Found' });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -453,15 +465,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the enableAutoFill  value specified.
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList,enableAutoFill : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -487,15 +500,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the enabled  value specified.
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList,enabled : false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -521,15 +535,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the enableDistinct value specified.
 $("#autocomplete").ejAutocomplete({dataSource: window.carList,enableDistinct: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -555,15 +570,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the enablePersistence   value specified.
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList,enablePersistence  : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -589,15 +605,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the enableRTL    value specified.
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList,enableRTL   : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -623,15 +640,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;  
+<input type="text" id="autocomplete" /> 
+ 
+<script>  
 //To set fields API value during initialization         
         $("#autocomplete").ejAutocomplete({ dataSource:window.countriesField,fields: { text: "name", key: "key" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -709,15 +727,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete with the filterType value specified
         $("#autocomplete").ejAutocomplete({dataSource: window.carList,filterType: 'contains'  });                                        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -743,15 +762,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete height property with the  value specified
         $("#autocomplete").ejAutocomplete({dataSource: window.carList, height: 30 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -777,15 +797,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the highlightSearch  value specified.
 $("#autocomplete").ejAutocomplete({dataSource: window.carList, highlightSearch : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -811,15 +832,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Count of the item that gets displayed in the popup
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList,itemsCount : 2 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -845,15 +867,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Minimum character that the autocomplete popup gets opened.
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList,minCharacter : 3 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -879,15 +902,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete with the multiSelectMode value specified
         $("#autocomplete").ejAutocomplete({dataSource: window.carList,multiSelectMode: ej.MultiSelectMode.Delimiter  });                                         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -913,15 +937,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete popupHeight property with the  value specified
         $("#autocomplete").ejAutocomplete({ dataSource: window.carList,popupHeight: '152px' });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -947,15 +972,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete popupWidth property with the  value specified
         $("#autocomplete").ejAutocomplete({ dataSource: window.carList,popupWidth: '152px' });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -981,16 +1007,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
+<input type="text" id="autocomplete" /> 
  
-&lt;script&gt;                   
+<script>                   
 //To set query API value during initialization  
 var dataManger = ej.DataManager({       url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"});
 var queryString = ej.Query().from("Suppliers").select("ContactName");
         $("#autocomplete").ejAutocomplete({ dataSource: dataManger, query: queryString, fields: { text: "ContactName" }});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1016,15 +1043,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the readOnly value specified.
 $("#autocomplete").ejAutocomplete({dataSource: window.carList,readOnly: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1041,14 +1069,15 @@ Set the values to the Autocomplete textbox by input key value.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.vehicle,selectValueByKey:"a"});   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1074,15 +1103,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the showEmptyResultText value specified.
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList, showEmptyResultText : false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1108,15 +1138,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the showLoadingIcon value specified.
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList,showLoadingIcon: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1142,15 +1173,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the showPopupButton  value specified.
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList,showPopupButton : true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1176,15 +1208,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the showRoundedCorner value specified.
 $("#autocomplete").ejAutocomplete({dataSource: window.carList,showRoundedCorner: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1210,15 +1243,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete with the sortOrder value specified
         $("#autocomplete").ejAutocomplete({dataSource: window.carList,sortOrder:"descending" });                                        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1244,15 +1278,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // To set template API value during initialization.     
-$("#autocomplete").ejAutocomplete({ dataSource: window.countries,template:"&lt;div class='flag ${sprite}'&gt; &lt;/div&gt;"+"&lt;div class='txt'&gt; ${text} &lt;/div&gt;"});
-&lt;/script&gt;</code>
-</pre>
+$("#autocomplete").ejAutocomplete({ dataSource: window.countries,template:"<div class='flag ${sprite}'> </div>"+"<div class='txt'> ${text} </div>"});
+</script>{% endhighlight %}
+
 
 
 
@@ -1278,11 +1313,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" name="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" name="autocomplete" /> 
+ 
+<script>
 //To set validationMessage API during initialization            
   $("#autocomplete").ejAutocomplete({ 
   dataSource: window.carList,                   
@@ -1293,8 +1329,8 @@ Example
                 required: "Required Autocomplete value"
         }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1320,11 +1356,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" name="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" name="autocomplete" /> 
+ 
+<script>
 //To set validationRules API during initialization              
   $("#autocomplete").ejAutocomplete({ 
   dataSource: window.carList,                   
@@ -1332,8 +1369,8 @@ Example
           required:true
         }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1359,15 +1396,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete value property with the  value specified
         $("#autocomplete").ejAutocomplete({ dataSource: window.carList,value:"Elantra" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1393,15 +1431,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Initialize the Autocomplete with the visible value specified.
 $("#autocomplete").ejAutocomplete({dataSource: window.carList,visible: false });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1427,15 +1466,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete with the watermarkText value specified
         $("#autocomplete").ejAutocomplete({ dataSource: window.carList,watermarkText: 'Enter the car name' });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1461,15 +1501,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 //Initialize the Autocomplete width property with the width value specified
         $("#autocomplete").ejAutocomplete({ dataSource: window.carList,width: 200 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Methods
@@ -1490,27 +1531,29 @@ Clears the text in the Autocomplete textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
 // Create autocomplete
 var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
 autocompleteObj.clearText(); // clear the autocomplete text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
 // Clears the text in the autocomplete
 $('#autocomplete').ejAutocomplete("clearText");         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1527,27 +1570,29 @@ destroy in the Autocomplete textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});
 // Create autocomplete
 var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
 autocompleteObj.destroy(); // destroy the autocomplete 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});
 // destroys autocomplete
 $('#autocomplete').ejAutocomplete("destroy");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1564,27 +1609,29 @@ To disable the autocomplete
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
 // Create autocomplete
 var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
 autocompleteObj.disable(); // disable the autocomplete
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
 // Disables autocomplete
 $('#autocomplete').ejAutocomplete("disable");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1601,27 +1648,29 @@ To enable the autocomplete
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});   
 // Create autocomplete
 var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
 autocompleteObj.enable(); // enable the autocomplete
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});   
 // Enables autocomplete
 $('#autocomplete').ejAutocomplete("enable");    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1638,27 +1687,29 @@ Returns the values selected in the Autocomplete textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
 // Create autocomplete
 var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
 autocompleteObj.getSelectedItems(); // getSelectedItems the autocomplete text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
 // Get the selected items in the autocomplete
 $('#autocomplete').ejAutocomplete("getSelectedItems");  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1675,27 +1726,29 @@ Returns the current value selected in the Autocomplete textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
 // Create autocomplete
 var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
 autocompleteObj.getValue(); // getValue of the autocomplete text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
 // Get the value of the selected item in the autocomplete
 $('#autocomplete').ejAutocomplete("getValue");  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1712,27 +1765,29 @@ search values in the Autocomplete textbox.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});
 // Create autocomplete
 var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
 autocompleteObj.search(); // search the autocomplete text
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});
 // Searches the item in the autocomplete
 $('#autocomplete').ejAutocomplete("search");    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1749,28 +1804,30 @@ Set the values to the Autocomplete textbox by input key value.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.vehicle});   
 // Create autocomplete
 var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
   // set key value corresponding text to the autocomplete textbox
 autocompleteObj.selectValueByKey("F"); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Create autocomplete
 $('#autocomplete').ejAutocomplete({dataSource: window.vehicle});
 $('#autocomplete').ejAutocomplete("selectValueByKey","F");  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1787,27 +1844,29 @@ Set the values to the Autocomplete textbox by input text value.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $('#autocomplete').ejAutocomplete({dataSource: window.vehicle});        
 // Create autocomplete
 var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
 autocompleteObj.selectValueByText("BMW 7"); // set text value to the autocomplete textbox
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 // Create autocomplete
 $('#autocomplete').ejAutocomplete({dataSource: window.vehicle}); 
 $('#autocomplete').ejAutocomplete("selectValueByText","BMW 7");         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 ## Events
@@ -1833,22 +1892,26 @@ Fires when changed successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the selected value</td>
 </tr>
@@ -1859,18 +1922,19 @@ Fires when changed successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList});
 //change event for Autocomplete
 $("#autocomplete").ejAutocomplete({ 
         change: function(args) {}
 });  
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -1892,17 +1956,20 @@ Fires after Autocomplete control popup is closed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1913,18 +1980,19 @@ Fires after Autocomplete control popup is closed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList});
 //close event for Autocomplete
 $("#autocomplete").ejAutocomplete({ 
         close: function(args) {}
 }); 
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -1946,17 +2014,20 @@ Fires after Autocomplete control is created.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -1967,18 +2038,19 @@ Fires after Autocomplete control is created.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList});
 //create event for Autocomplete
 $("#autocomplete").ejAutocomplete({ 
         create: function(args) {}
 }); 
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -2000,17 +2072,20 @@ Fires when the Autocomplete is destroyed successfully
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2021,18 +2096,19 @@ Fires when the Autocomplete is destroyed successfully
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList});
 //destroy event for Autocomplete
 $("#autocomplete").ejAutocomplete({ 
         destroy: function(args) {}
 }); 
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -2054,22 +2130,26 @@ Fires when focusIn successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the value</td>
 </tr>
@@ -2080,18 +2160,19 @@ Fires when focusIn successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList});
 //focusIn event for Autocomplete
 $("#autocomplete").ejAutocomplete({ 
         focusIn: function(args) {}
 });      
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -2113,22 +2194,26 @@ Fires when focusOut successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the value</td>
 </tr>
@@ -2139,18 +2224,19 @@ Fires when focusOut successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList});
 //focusOut event for Autocomplete
 $("#autocomplete").ejAutocomplete({ 
         focusOut: function(args) {}
 });  
-&lt;/script&gt;                                         </code>
-</pre>
+</script>                                         {% endhighlight %}
+
 
 
 
@@ -2172,17 +2258,20 @@ Fires after Autocomplete control popup is opned.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2193,18 +2282,19 @@ Fires after Autocomplete control popup is opned.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList});
 //open event for Autocomplete
 $("#autocomplete").ejAutocomplete({ 
         open: function(args) {}
 }); 
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -2226,37 +2316,44 @@ Fires when an item has been selected successfully.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.cancel</code></td>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>argument.model</code></td>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the autocomplete model</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.text</code></td>
+<td class="name">{% highlight html %}
+argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>argument.value</code></td>
+<td class="name">{% highlight html %}
+argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the selected value</td>
 </tr>
 <tr>
-<td class="name"><code>argument.type</code></td>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the selected text</td>
 </tr>
 <tr>
-<td class="name"><code>argument.key</code></td>
+<td class="name">{% highlight html %}
+argument.key{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the selected value key</td>
 </tr>
@@ -2267,17 +2364,18 @@ Fires when an item has been selected successfully.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;input type="text" id="autocomplete" /&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<input type="text" id="autocomplete" /> 
+ 
+<script>
 $("#autocomplete").ejAutocomplete({ dataSource: window.carList});
 //select event for Autocomplete
 $("#autocomplete").ejAutocomplete({ 
         select: function(args) {}
 }); 
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 

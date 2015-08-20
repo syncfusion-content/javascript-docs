@@ -33,14 +33,15 @@ $(element).ejDiagram<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagram"></div>
+<script>
 //Create Diagram
     $("#diagram").ejDiagram();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -141,12 +142,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({ backgroundColor: "red"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -188,12 +190,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -235,13 +238,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagramcontent"></div>
+<script>
 $("#diagramContent").ejDiagram({bridgeDirection: "top"} }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -283,13 +287,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 var connectors = [{ name: "connector" sourceNode: "node1", targetNode: "node2"}];
 $("#diagram").ejDiagram({ connectors:connectors });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -331,15 +336,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 var addInfo = {Name1:"Connector1",Connector2:"Connector3"}
 connectors=[{addInfo: addInfo}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -381,14 +387,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors=[];
 connectors=[{bridgeSpace:15}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -430,14 +437,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{constraints: ej.datavisualization.Diagram.ConnectorConstraints.Select}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -479,14 +487,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors=[];
 connectors=[{cornerRadius:2}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -528,14 +537,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{HorizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -577,15 +587,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>Refer nodes label for label properties details 
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+Refer nodes label for label properties details 
+<div id="diagramcontent"></div>
+<script>
 var label = [];
 label = [{ "text": "Connector1", "fontColor": "Red"}];
 $("#diagramcontent").ejDiagram({label:label});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -627,14 +638,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{lineColor:"blue"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -676,14 +688,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{lineDashArray:"4 4"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -725,14 +738,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors= [];
 connectors=[{lineHitPadding: 30}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -774,14 +788,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{lineWidth:4}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -823,14 +838,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{marginBottom: 1}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -872,14 +888,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{name:"connector",marginLeft: 1}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -921,14 +938,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{marginRight: 1}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -970,14 +988,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{marginTop: 1}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1019,14 +1038,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{name:"Connector1"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1068,14 +1088,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{opacity:0.6}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1117,12 +1138,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connector = [ {name: "rect",parent:"group1"}];
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1164,15 +1186,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 var point= {x:20,y:20};
 connectors=[{segments: [{type:"straight",point:point}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1214,14 +1237,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{segments: [{type:"orthogonal",direction:"left"}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1263,14 +1287,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{segments: [{type:"orthogonal",length:20}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1312,14 +1337,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var segments = [{ type: "straight",point:{x:10,y:30}}];
 connectors = [{ name: "connector1", segments: segments, sourcePoint: { x: 450, y: 150 }, targetPoint: { x: 210, y: 40 }}];
 $("#diagramcontent").ejDiagram({segments:segments});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1361,15 +1387,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 var point1={x:10,y:10}];
 connectors=[{segments: [{type:"bezier", point1:point1}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1411,15 +1438,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 var point2= {x:10,y:10};
 connectors=[{segments: [{type:"bezier",point2:point2}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1461,14 +1489,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link=[{segments:[{type:"straight"}]}];
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1510,15 +1539,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 var vector1= {x:20,y:20};
 connectors=[{segments: [{type:"bezier",vector1:vector1}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1560,15 +1590,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 var vector2= {x:20,y:20};
 connectors=[{segments: [{type:"bezier",vector2:vector2}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1610,15 +1641,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 var targetDecorator = { shape: "arrow", borderColor: "#606060", width: "10", height: "10" };
 connectors=[{targetDecorator:targetDecorator}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1660,14 +1692,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{borderColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1709,14 +1742,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{borderColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1758,14 +1792,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{borderWidth: 1}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1807,14 +1842,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{fillColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1856,14 +1892,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{fillColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1905,14 +1942,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{height:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1954,14 +1992,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{height:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2003,14 +2042,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{pathData: "M 269.711,29.3333C 269.711,44.061 257.772,56 243.044,56z"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2052,14 +2092,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{pathData: "M 269.711,29.3333C 269.711,44.061 257.772,56 243.044,56z"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2101,14 +2142,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{shape:"arrow"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2150,14 +2192,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{shape:"arrow"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2199,14 +2242,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{width:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2248,14 +2292,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{width:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2297,16 +2342,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 var connectors = [];
 nodes = {name: "openBrowses", width: 175, height: 60};
 connectors=[{sourceNode: "openBrowses"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2348,14 +2394,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors=[];
 connectors=[{sourcePadding:5}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2397,15 +2444,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 var sourcePoint= {x:20,y:20};
 connectors=[{ name: "connector1",sourcePoint: { x: 450, y: 150 }}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2447,9 +2495,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 var ports = [];
 var connectors = [];
@@ -2457,8 +2506,8 @@ nodes = {name: "openBrowses", width: 175, height: 60};
 ports = { offset: { x: 0, y: 0.5 }, name: "bport" };
 connectors=[{sourcePort: "bport"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2500,15 +2549,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 var targetDecorator = { shape: "arrow", borderColor: "#606060", width: "10", height: "10" };
 connectors=[{targetDecorator:targetDecorator}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2550,14 +2600,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{borderColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2599,14 +2650,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{fillColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2648,14 +2700,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{height:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2697,14 +2750,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{pathData: "M 269.711,29.3333C 269.711,44.061 257.772,56 243.044,56z"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2746,14 +2800,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{shape:"arrow"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2795,14 +2850,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var link=[];
 link={[targetDecorator:{width:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2844,16 +2900,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes =[];
 var connectors = [];
 nodes = {name: "openBrowses", width: 175, height: 60};
 connectors=[{targetNode: "openBrowses"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2895,14 +2952,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors=[];
 connectors=[{targetPadding:5}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2944,15 +3002,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 var targetPoint= {x:20,y:20};
 connectors=[{ name: "connector1",targetPoint: { x: 450, y: 150 }}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2994,9 +3053,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 var ports = [];
 var connectors = [];
@@ -3004,8 +3064,8 @@ nodes = {name: "openBrowses", width: 175, height: 60};
 ports = { offset: { x: 0, y: 0.5 }, name: "aport" };
 connectors=[{targetPort: "aport"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3047,14 +3107,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{VerticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3096,14 +3157,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [];
 connectors=[{visible: true}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3145,14 +3207,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors= [];
 connectors=[{connectors: 1}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3194,13 +3257,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 function connectorTemplate(diagram, connector, data) {connector.labels[0].text = data.Name};
 $("#diagram").ejDiagram({ connectorTemplate:connectorTemplate});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3242,13 +3306,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagramcontent"></div>
+<script>
 $("#diagramContent").ejDiagram({constraints: ej.datavisualization.Diagram.DiagramConstraints.Default} }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3312,16 +3377,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagramcontent"></div>
+<script>
 //Collection of  items
 var menucollection = [{ "name": "hyperLink", "text": "Hyperlink", "image": "", "style": "" }];
 var contextMenu = { items: menucollection};
 $("#diagramContent").ejDiagram({contextMenu: contextMenu}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3363,12 +3429,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({showCustomMenuItemsOnly: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3432,12 +3499,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ dataSourceSettings: {dataSource: localData}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3479,12 +3547,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ dataSourceSettings: {id: "CategoryID"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3526,12 +3595,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ dataSourceSettings: { parent: "reportingPerson"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3573,12 +3643,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 query: ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3620,12 +3691,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ dataSourceSettings: { root: "1"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3667,12 +3739,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ dataSourceSettings:{tableName: "Categories"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3714,12 +3787,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ defaultSettings: { node:  {width: 110, height: 40, fillColor:"skyblue"}}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3761,12 +3835,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ defaultSettings:{ connector:{ lineColor: "gray", lineWidth: 2 }}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3808,12 +3883,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ defaultSettings:{node: { fillColor: "#83A93F", borderColor: "#000000" }}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3855,12 +3931,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({ drawingTools: {textTool: ej.datavisualization.Diagram.TextTool()}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3902,12 +3979,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({drawType:{type:"node"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3949,12 +4027,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({enableAutoScroll: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -3996,12 +4075,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({enableContextMenu: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4043,12 +4123,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ height:"100%" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4112,11 +4193,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //fixedNode of the layout
-$("#diagramContent").ejDiagram({layout: { fixedNode: "nodename"}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({layout: { fixedNode: "nodename"}}); {% endhighlight %}
+
 
 
 
@@ -4158,13 +4240,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 function getLayoutInfo(diagram, node, options) { options.orientation = "vertical"; options.type = "left"; offset = 10;};
 $("#diagram").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4206,11 +4289,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 // marginY of the layout
-$("#diagramContent").ejDiagram({layout: { marginY: 0}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({layout: { marginY: 0}}); {% endhighlight %}
+
 
 
 
@@ -4252,11 +4336,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //horizontalSpacing of the layout
-$("#diagramContent").ejDiagram({layout: {horizontalSpacing: 30}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({layout: {horizontalSpacing: 30}}); {% endhighlight %}
+
 
 
 
@@ -4298,11 +4383,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //marginX of the layout
-$("#diagramContent").ejDiagram({layout: {marginX: 0}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({layout: {marginX: 0}}); {% endhighlight %}
+
 
 
 
@@ -4344,11 +4430,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //orientation of the layout
-$("#diagramContent").ejDiagram({layout: {orientation: "topToBottom"}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({layout: {orientation: "topToBottom"}}); {% endhighlight %}
+
 
 
 
@@ -4390,11 +4477,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //type of the layout
-$("#diagramContent").ejDiagram({layout: {type: "none"}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({layout: {type: "none"}}); {% endhighlight %}
+
 
 
 
@@ -4436,11 +4524,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //verticalSpacing of the layout
-$("#diagramContent").ejDiagram({layout: {verticalSpacing: 30}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({layout: {verticalSpacing: 30}}); {% endhighlight %}
+
 
 
 
@@ -4482,12 +4571,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({locale: "en-US"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4529,13 +4619,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 var nodes = [{ name: "node", width: 175, height: 60}];
 $("#diagram").ejDiagram({ nodes:nodes });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4577,14 +4668,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Activity, activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4626,16 +4718,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 var addInfo = {Name1:"Node1",Name2:"Name2"}
 nodes=[{addInfo: addInfo}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",{addInfo: addInfo}}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4677,14 +4770,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{name:"GroupNode",allowDrop:true}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4726,14 +4820,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{borderColor: "black"}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4775,14 +4870,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{borderDashArray: "2 2"}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4824,14 +4920,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{borderWidth: 3}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4873,15 +4970,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 var children = ["Node1","Node2"];
 nodes=[{name:"GroupNode",children:children,canUngroup:false}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4923,15 +5021,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 var children = ["Node1","Node2"];
 nodes=[{name:"GroupNode",children:children}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4973,14 +5072,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", shape:"dataObject", collection: false}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5022,14 +5122,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 node={name:"node1",connectorPadding: 2};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5071,14 +5172,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{Constraints: ej.datavisualization.Diagram.NodeConstraints.Select}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5104,14 +5206,15 @@ To set the constraints for the swimlane see <a href="global.html#NodeConstraints
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes = [ {type: "swimlane",name: "swimlane",constraints: ej.datavisualization.Diagram.NodeConstraints.Connect}
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5153,14 +5256,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{name:"GroupNode",container:{}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5202,15 +5306,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var container = ej.datavisualization.Diagram.ContainerType.Canvas
 container.orientation = "vertical"; 
 var nodes = [{name:"Node1",container : container}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5252,15 +5357,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var container = ej.datavisualization.Diagram.ContainerType.Canvas
 container.type = "linear; 
 var nodes = [{name:"Node1",container : container}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5302,14 +5408,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={[shape:{type:"rectangle",cornerRadius:2}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5351,14 +5458,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Event, event: ej.datavisualization.Diagram.BPMNEvents.Start}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5400,14 +5508,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{visible: true}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5449,14 +5558,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{isExpanded: true}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5498,14 +5608,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{fillColor: "white"}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5547,14 +5658,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Gateway, gateway: ej.datavisualization.Diagram.BPMNGateways.None}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5640,9 +5752,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.LinearGradientDefaults();
 gradient.type = "linear;
 gradient.x1 = 10;
@@ -5661,8 +5774,8 @@ gradient.stops.push(stop);
 gradient.stops.push(stop);
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5704,9 +5817,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.LinearGradientDefaults();
 gradient.type = "linear;
 gradient.x1 = 10;
@@ -5715,8 +5829,8 @@ gradient.y1 = 0;
 gradient.y2 = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5758,9 +5872,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.LinearGradientDefaults();
 gradient.type = "linear;
 gradient.x1 = 10;
@@ -5769,8 +5884,8 @@ gradient.y1 = 20;
 gradient.y2 = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5812,9 +5927,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.LinearGradientDefaults();
 gradient.type = "linear;
 gradient.x1 = 10;
@@ -5823,8 +5939,8 @@ gradient.y1 = 0;
 gradient.y2 = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5866,9 +5982,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.LinearGradientDefaults();
 gradient.type = "linear;
 gradient.x1 = 10;
@@ -5877,8 +5994,8 @@ gradient.y1 = 0;
 gradient.y2 = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5942,9 +6059,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.RadialGradientDefaults();
 gradient.type = "linear;
 gradient.cx = 20;
@@ -5953,8 +6071,8 @@ gradient.fx = 20;
 gradient.fy = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5996,9 +6114,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.RadialGradientDefaults();
 gradient.type = "linear;
 gradient.cx = 20;
@@ -6007,8 +6126,8 @@ gradient.fx = 20;
 gradient.fy = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6050,9 +6169,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.RadialGradientDefaults();
 gradient.type = "linear;
 gradient.cx = 20;
@@ -6061,8 +6181,8 @@ gradient.fx = 20;
 gradient.fy = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6104,9 +6224,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.RadialGradientDefaults();
 gradient.type = "linear;
 gradient.cx = 20;
@@ -6115,8 +6236,8 @@ gradient.fx = 20;
 gradient.fy = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6158,9 +6279,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.RadialGradientDefaults();
 gradient.type = "linear;
 gradient.x1 = 10;
@@ -6179,8 +6301,8 @@ gradient.stops.push(stop);
 gradient.stops.push(stop);
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6244,9 +6366,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.LinearGradientDefaults();
 gradient.type = "linear;
 gradient.x1 = 0;
@@ -6264,8 +6387,8 @@ gradient.stops.push(stop);
 gradient.stops.push(stop);
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6307,9 +6430,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.LinearGradientDefaults();
 gradient.type = "linear;
 gradient.x1 = 0;
@@ -6327,8 +6451,8 @@ gradient.stops.push(stop);
 gradient.stops.push(stop);
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6370,9 +6494,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var gradient = ej.datavisualization.Diagram.LinearGradientDefaults();
 gradient.type = "linear;
 gradient.x1 = 0;
@@ -6391,8 +6516,8 @@ gradient.stops.push(stop);
 gradient.stops.push(stop);
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6434,12 +6559,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  header: {text: "Header", width:50}}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6481,14 +6607,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{height: 100}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6530,13 +6657,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script> 
 node={name:"node1", ej.datavisualization.Diagram.HorizontalAlignment.Left};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6578,14 +6706,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [{ name: "connector1", sourceNode: "Node1", targetNode: "Node2"}];
 nodes=[{inEdges:connectors}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6627,12 +6756,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script> 
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  isSwimlane: true}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6674,15 +6804,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var label = [];
 label = { "text": "Node1", "fontColor": "Red"};
 nodes=[{labels:label}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6724,14 +6855,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{"bold": false}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6773,14 +6905,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{borderColor: "transparent"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6822,14 +6955,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{borderWidth: 4}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6871,14 +7005,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{fillColor: "green"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6920,14 +7055,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{"fontColor": "black"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6969,14 +7105,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{"fontFamily": "Arial"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7018,14 +7155,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{"fontSize": 12}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7067,14 +7205,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Center}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7116,14 +7255,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{"italic": false}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7165,14 +7305,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{"margin": ej.datavisualization.Diagram.Margin()}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7214,14 +7355,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{mode: ej.datavisualization.Diagram.LabelEditMode.Edit}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7263,14 +7405,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{name:"Label"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7312,14 +7455,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{offset: ej.datavisualization.Diagram.Point(0.5, 0.5)}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7361,14 +7505,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{"readOnly": false}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7410,14 +7555,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{rotateAngle: 90}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7459,14 +7605,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{"text": "Label"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7508,14 +7655,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{textAlign: ej.datavisualization.Diagram.TextAlign.Center}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7557,14 +7705,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7606,14 +7755,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Center}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7655,14 +7805,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{visible: true}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7704,14 +7855,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{width: 50}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7753,14 +7905,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node=[{labels:{wrapping: ej.datavisualization.Diagram.TextWrapping.Wrap}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7802,15 +7955,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var lanes = []; 
 lanes=[{["Lane1","Lane1"]}];
 $("#diagramcontent").ejDiagram( );
 var nodes = [ {type: "swimlane",name: "swimlane",lanes: []}
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7852,12 +8006,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "lane",name: "lane",{addInfo: addInfo}}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7899,12 +8054,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{children:[]}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7946,12 +8102,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{fillColor: "white"}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7993,12 +8150,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{header: {text: "Header", width:50}}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8040,12 +8198,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script> 
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{isLane:true}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8087,12 +8246,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{labels: [{text:"Label"}]}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8134,12 +8294,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{name:"lane"}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8181,12 +8342,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{orientation:"horizontal"}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8228,14 +8390,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 node={name:"node1",marginBottom: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8277,14 +8440,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{marginLeft: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8326,14 +8490,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 node={name:"node1",marginRight: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8375,14 +8540,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 node={name:"node1",marginTop: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8424,14 +8590,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 node={name:"node1",maxHeight: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8473,14 +8640,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 node={name:"node1",maxWidth: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8522,14 +8690,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 node={name:"node1",minHeight: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8571,14 +8740,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 node={name:"node1",minWidth: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8620,14 +8790,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{name:"Node1"}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8669,15 +8840,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{offsetX: 100}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",offsetX:100}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8719,15 +8891,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{offsetY: 100}];
 $("#diagramcontent").ejDiagram({nodes:nodes});          
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",offsetY:100}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8769,14 +8942,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{opacity: 2}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8818,12 +8992,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  orientation: "vertical"}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8865,14 +9040,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var connectors = [{ name: "connector1", sourceNode: "Node1", targetNode: "Node2"}];
 nodes=[{outEdges:connectors}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8914,14 +9090,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{paddingBottom: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8963,14 +9140,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{paddingLeft: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9012,14 +9190,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{paddingRight: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9061,14 +9240,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{paddingTop: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9110,12 +9290,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node = [ {name: "rect",parent:"group1"}];
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9157,14 +9338,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={[shape:{type:"path",pathData:"M 269.711,29.3333C 269.711,44.061 257.772,56 243.044,56L 158.058,56C 143.33z"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9206,15 +9388,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var phases = []; 
 phases=[{["phase1","phase2"]}];
 $("#diagramcontent").ejDiagram( );
 var nodes = [ {type: "swimlane",name: "swimlane",phases: []}
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9256,12 +9439,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{label:{text:"label"}}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9303,12 +9487,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{lineColor: "#606060"}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9350,12 +9535,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{lineDashArray: "3,3"}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9397,12 +9583,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{lineWidth: 1}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9444,12 +9631,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{name:"lane"}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9491,12 +9679,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{offset: 100}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9538,12 +9727,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{orientation: "horizontal"}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9585,12 +9775,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{parent: "parent"}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9632,12 +9823,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{type: "phase"}]}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9679,12 +9871,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt; 
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script> 
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",phaseSize:100}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9726,14 +9919,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{pivot: ej.datavisualization.Diagram.Point(0.8, 0.8)}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9775,14 +9969,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={[shape: { type: "polygon", points:[{ x: 0, y: 12.5 }, { x: 0, y: 50 }, { x: 50, y: 50 }, { x: 50, y: 0 }, { x: 12.5, y: 0 }, { x: 0, y: 12.5 }]}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9824,14 +10019,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var port: [{ offset: { x: 0, y: 0.5 }, name: "aport" }]
 nodes=[{ports:port}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9873,14 +10069,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={ports:[{borderColor:"green"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9922,14 +10119,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={ports:[{borderWidth: 1}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9971,13 +10169,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node = [{ports:[{connectorPadding:2}]}];
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10019,14 +10218,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={ports:[{constraints: ej.datavisualization.Diagram.PortConstraints.Connect}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10068,14 +10268,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={ports:[{fillColor:"green"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10117,14 +10318,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={ports:[{ name: "port"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10166,14 +10368,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={ports:[{{ x: 0, y: 0.5 }}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10215,14 +10418,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={ports:[{pathData:""}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10264,14 +10468,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={ports:[{shape: ej.datavisualization.Diagram.PortShapes.Square}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10313,14 +10518,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={ports:[{size: 10}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10362,14 +10568,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={ports:[{visibility: ej.datavisualization.Diagram.PortVisibility.Default}]};
 $("#diagramcontent").ejDiagram({nodes:port});
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -10411,14 +10618,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{rotateAngle: 120}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10460,14 +10668,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[shadow:{distance: 5,angle:45,opacity:0.7}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10509,14 +10718,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={[shadow:{angle:50}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10558,14 +10768,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={[shadow:{distance:7}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10607,14 +10818,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={[shadow:{opacity:0.9}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10656,14 +10868,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[shape: "rectangle"}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10705,14 +10918,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={[shape:{type:"image",source:"Syncfusion.png"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10754,14 +10968,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", activity: "subProcess", subProcess:{loop: ej.datavisualization.Diagram.BPMNLoops.Standard}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10803,14 +11018,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", subProcess:{adhoc: false}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10852,14 +11068,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", subProcess:{boundary: ej.datavisualization.Diagram.BPMNBoundary.Default}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10901,14 +11118,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", subProcess:{compensation: false}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10950,14 +11168,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", subProcess:{loop: ej.datavisualization.Diagram.BPMNLoops.Standard}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10999,14 +11218,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", task:{loop: ej.datavisualization.Diagram.BPMNLoops.Standard}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11048,14 +11268,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", task:{call: false}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11097,14 +11318,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", task:{compensation: false}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11146,14 +11368,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", task:{loop: ej.datavisualization.Diagram.BPMNLoops.Standard}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11195,14 +11418,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", task:{type: ej.datavisualization.Diagram.BPMNTasks.Service}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11244,14 +11468,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[]; 
 node={[shape: { type: "text", templateId: "templateId" }]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11293,16 +11518,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 var textBlock = ej.datavisualization.Diagram.TextBlockDefaults;
 textBlock.text = "TextNode";
 node={[shape: { type: "text", textBlock: textBlock }]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11344,14 +11570,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Event, trigger: ej.datavisualization.Diagram.BPMNTriggers.None}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11393,14 +11620,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var node=[];
 node={[shape:{type:"rectangle"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11442,14 +11670,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 node={name:"node1",VerticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11491,14 +11720,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{visible: true}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11540,14 +11770,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{width: 100}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11589,14 +11820,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var nodes = [];
 nodes=[{zOrder: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11638,13 +11870,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 function nodeTemplate(diagram, node) {node.labels[0].text = node.Name};
 $("#diagram").ejDiagram({ nodeTemplate:nodeTemplate});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11708,11 +11941,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //multiplePage of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {multiplePage: false}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({pageSettings: {multiplePage: false}}); {% endhighlight %}
+
 
 
 
@@ -11754,11 +11988,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //pageBackgroundColor of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageBackgroundColor: "#ffffff"}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({pageSettings: {pageBackgroundColor: "#ffffff"}}); {% endhighlight %}
+
 
 
 
@@ -11800,11 +12035,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //pageBorderColor of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageBorderColor: "#565656"}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({pageSettings: {pageBorderColor: "#565656"}}); {% endhighlight %}
+
 
 
 
@@ -11846,11 +12082,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //pageBorderWidth of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageBorderWidth: 3}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({pageSettings: {pageBorderWidth: 3}}); {% endhighlight %}
+
 
 
 
@@ -11892,11 +12129,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //pageHeight of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageHeight: 4500}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({pageSettings: {pageHeight: 4500}}); {% endhighlight %}
+
 
 
 
@@ -11938,11 +12176,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //pageMargin of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageMargin: 24}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({pageSettings: {pageMargin: 24}}); {% endhighlight %}
+
 
 
 
@@ -11984,11 +12223,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //pageWidth
-$("#diagramContent").ejDiagram({pageSettings: {pageWidth: 4500}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({pageSettings: {pageWidth: 4500}}); {% endhighlight %}
+
 
 
 
@@ -12030,11 +12270,12 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //showPageBreak of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {showPageBreak: false}}); </code>
-</pre>
+$("#diagramContent").ejDiagram({pageSettings: {showPageBreak: false}}); {% endhighlight %}
+
 
 
 
@@ -12098,13 +12339,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagramcontent"></div>
+<script>
 $("#diagramContent").ejDiagram({selectedItems:{constraints: ej.datavisualization.Diagram.SelectorConstraints.None} }}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12146,10 +12388,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-$("#diagramContent").ejDiagram({selectedItems: {height: 50}}); </code>
-</pre>
+
+{% highlight html %}
+ 
+$("#diagramContent").ejDiagram({selectedItems: {height: 50}}); {% endhighlight %}
+
 
 
 
@@ -12191,10 +12434,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-$("#diagramContent").ejDiagram({selectedItems: {offsetX: 50}}); </code>
-</pre>
+
+{% highlight html %}
+ 
+$("#diagramContent").ejDiagram({selectedItems: {offsetX: 50}}); {% endhighlight %}
+
 
 
 
@@ -12236,10 +12480,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-$("#diagramContent").ejDiagram({selectedItems: {offsetY: 50}}); </code>
-</pre>
+
+{% highlight html %}
+ 
+$("#diagramContent").ejDiagram({selectedItems: {offsetY: 50}}); {% endhighlight %}
+
 
 
 
@@ -12281,10 +12526,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-$("#diagramContent").ejDiagram({selectedItems: {rotateAngle: 50}}); </code>
-</pre>
+
+{% highlight html %}
+ 
+$("#diagramContent").ejDiagram({selectedItems: {rotateAngle: 50}}); {% endhighlight %}
+
 
 
 
@@ -12326,17 +12572,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var userHandle= [];
 function createUserHandles() {
 var cloneHandle = ej.datavisualization.Diagram.UserHandle();
 userhandle.push(cloneHandles);
 }
 $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12378,10 +12625,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-$("#diagramContent").ejDiagram({selectedItems: {width: 50}}); </code>
-</pre>
+
+{% highlight html %}
+ 
+$("#diagramContent").ejDiagram({selectedItems: {width: 50}}); {% endhighlight %}
+
 
 
 
@@ -12423,12 +12671,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram({showTooltip: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12492,12 +12741,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 var snap = {"enableSnapToObject":true};
 //enableSnapToObject: 
-$("#diagramContent").ejDiagram({snapSettings: snap}); </code>
-</pre>
+$("#diagramContent").ejDiagram({snapSettings: snap}); {% endhighlight %}
+
 
 
 
@@ -12561,15 +12811,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagramcontent"></div>
+<script>
 var gridline = { "snapConstraints":"lineColor": "blue" };
 //Linecolor of the horizontal gridlines
 $("#diagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12611,13 +12862,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { lineDashArray: "2 2"}}}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12659,14 +12911,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ snapSettings: { 
     horizontalGridLines: { linesInterval: [1, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15] }
 }}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12708,13 +12961,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { snapInterval: [10] }}}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12756,12 +13010,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 var snap = {"snapAngle":5};
 //enableSnapToObject: 
-$("#diagramContent").ejDiagram({snapSettings: snap}); </code>
-</pre>
+$("#diagramContent").ejDiagram({snapSettings: snap}); {% endhighlight %}
+
 
 
 
@@ -12803,12 +13058,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 var snap = {"snapObjectDistance":5};
 //snapObjectDistance
-$("#diagramContent").ejDiagram({snapSettings: snap}); </code>
-</pre>
+$("#diagramContent").ejDiagram({snapSettings: snap}); {% endhighlight %}
+
 
 
 
@@ -12872,15 +13128,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagramcontent"></div>
+<script>
 var gridline = { "snapConstraints":"lineColor": "blue" };
 //Linecolor of the vertical gridlines
 $("#diagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12922,13 +13179,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { lineDashArray: "2 2"}}}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12970,14 +13228,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ snapSettings: { 
     verticalGridLines: { linesInterval: [1, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15] }
 }}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13019,13 +13278,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { snapInterval: [10] }}}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13067,13 +13327,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagramcontent"></div>
+<script>
 $("#diagramContent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.Default} }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13115,17 +13376,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>         
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script type="text/x-jsrender" id="toolTipId"&gt;
-&lt;span &gt;{{:offsetX}}{{:x}}{{:offsetY}}{{:y}}
-&lt;/span&gt;
-&lt;/script&gt;
-&lt;script&gt;
+
+{% highlight html %}
+         
+<div id="diagramcontent"></div>
+<script type="text/x-jsrender" id="toolTipId">
+<span >{{:offsetX}}{{:x}}{{:offsetY}}{{:y}}
+</span>
+</script>
+<script>
 $("#diagramcontent").ejDiagram({ tooltipTemplateId: "toolTipId"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13167,12 +13429,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 $("#diagramcontent").ejDiagram("instance");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13214,12 +13477,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagram"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
 $("#diagram").ejDiagram({ width:"100%" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13261,13 +13525,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagramcontent"></div>
+<script>
 $("#diagramContent").ejDiagram({zoomFactor: 1}); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13303,12 +13568,14 @@ To activate the tool specified by toolName
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>toolName</code></td>
+<td class="name">{% highlight html %}
+toolName{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">name of the tool to be activated</td>
 </tr>
 <tr>
-<td class="name"><code>singleAction</code></td>
+<td class="name">{% highlight html %}
+singleAction{% endhighlight %}</td>
 <td class="type"><span class="param-type">Boolean</span></td>
 <td class="description last">default value set to true tool action to be performed only once</td>
 </tr>
@@ -13321,20 +13588,22 @@ To activate the tool specified by toolName
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.activateTool("panTool");
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");                 
 diagram.activateTool("orthogonalTool",false);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13363,7 +13632,8 @@ Add the specified node/connector to diagram
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>node</code></td>
+<td class="name">{% highlight html %}
+node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass node/connector to be added</td>
 </tr>
@@ -13376,15 +13646,16 @@ Add the specified node/connector to diagram
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node = [];
 node=[{ name: "node", width: 175, height: 60, offsetX: 400, offsetY: 60, type: "Rectangle"];
 diagram.add(node);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13413,12 +13684,14 @@ Add a phase to the group specified by name
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>name</code></td>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">of the group to add the phase</td>
 </tr>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">to define the phase to be added</td>
 </tr>
@@ -13431,14 +13704,15 @@ Add a phase to the group specified by name
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance"); 
 diagram.addPhase("swimlane", { name: "CustomPhase", offset: 600, label: { text: "CustomPhase" } });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13467,12 +13741,14 @@ Add the collection of ports to the node specified by name
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>name</code></td>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">to identify the object from the model</td>
 </tr>
 <tr>
-<td class="name"><code>ports</code></td>
+<td class="name">{% highlight html %}
+ports{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">collection of ports to be added to the node</td>
 </tr>
@@ -13485,15 +13761,16 @@ Add the collection of ports to the node specified by name
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+        
+<div id="diagramcontent"></div>
+<script>
 var diagram = $("#diagramcontent").ejDiagram("instance");
 var port = [{ offset: { x: 0, y: 0.5 }, name: "aport", fillColor: "yellow"}, { offset: { x: 0.5, y: 0.5 }, name: "bport", fillColor: "yellow",  }];
 diagram.addPorts("Rect1", port);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13522,7 +13799,8 @@ Select the node specified in the argument
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>node</code></td>
+<td class="name">{% highlight html %}
+node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass target node to be selected</td>
 </tr>
@@ -13535,14 +13813,15 @@ Select the node specified in the argument
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node=diagram.model.nodes[0];
 diagram.addSelection(node);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13571,7 +13850,8 @@ Align selected objects based on reference object and direction
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>direction</code></td>
+<td class="name">{% highlight html %}
+direction{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">To specify the driection for alignment ("left","right",top","bottom")</td>
 </tr>
@@ -13584,13 +13864,14 @@ Align selected objects based on reference object and direction
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.align("left"); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13619,7 +13900,8 @@ To bring the specified portion of the diagram content to the diagram viewport
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>bounds</code></td>
+<td class="name">{% highlight html %}
+bounds{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass bounds value (x,y,height,width)</td>
 </tr>
@@ -13632,13 +13914,14 @@ To bring the specified portion of the diagram content to the diagram viewport
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.bringIntoView(ej.datavisualization.Diagram.Rectangle(700, 500, 80, 80));
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13667,7 +13950,8 @@ To bring the specified portion of the diagram content to center of the diagram v
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>rect</code></td>
+<td class="name">{% highlight html %}
+rect{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass bounds value (x,y,height,width)</td>
 </tr>
@@ -13680,13 +13964,14 @@ To bring the specified portion of the diagram content to center of the diagram v
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.bringToCenter(ej.datavisualization.Diagram.Rectangle(700, 500, 80, 80));
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13712,13 +13997,14 @@ Move the selected object over all other intersected objects
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.bringToFront(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13744,13 +14030,14 @@ Remove all the elements from diagram
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.clear(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13776,13 +14063,14 @@ Copy the selected object to internal clipboard
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.copy(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13808,13 +14096,14 @@ Cut the selected object from diagram to diagram internal clipboard
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.cut(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13840,13 +14129,14 @@ Deactivate the current activated tool
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.deactivateTool();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13875,7 +14165,8 @@ Export the diagram as downloadable files or as data
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">to export the desired region of diagram to the desired formats
 <table class="params">
@@ -13888,32 +14179,38 @@ Export the diagram as downloadable files or as data
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fileName</code></td>
+<td class="name">{% highlight html %}
+fileName{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">name of the file to be downloaded</td>
 </tr>
 <tr>
-<td class="name"><code>format</code></td>
+<td class="name">{% highlight html %}
+format{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">format of the exported file/data See <a href="global.html#FileFormats">FileFormats</a></td>
 </tr>
 <tr>
-<td class="name"><code>mode</code></td>
+<td class="name">{% highlight html %}
+mode{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">to set whether to export diagram as a file or as raw data See <a href="global.html#ExportModes">ExportModes</a></td>
 </tr>
 <tr>
-<td class="name"><code>region</code></td>
+<td class="name">{% highlight html %}
+region{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">to set the region of the diagram to be exported See <a href="global.html#Region">Region</a></td>
 </tr>
 <tr>
-<td class="name"><code>bounds</code></td>
+<td class="name">{% highlight html %}
+bounds{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">to set the custom bounds of the diagram to be exported</td>
 </tr>
 <tr>
-<td class="name"><code>margin</code></td>
+<td class="name">{% highlight html %}
+margin{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">to set margin to the exported data</td>
 </tr>
@@ -13930,17 +14227,18 @@ Export the diagram as downloadable files or as data
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="diagramcontent"></div>
+<script>
 //To export the positive region of diagram as an image of JPEG format
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var options = { mode: "download", region: "pageSettings", format: "jpg",
              bounds:{x:0,y:0}, margin:{left:30}};
 diagram.exportDiagram(options);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13969,17 +14267,20 @@ Fit the diagram content into diagram viewport
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>mode</code></td>
+<td class="name">{% highlight html %}
+mode{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">to set the mode of fit to command. See <a href="global.html#FitMode">FitMode</a></td>
 </tr>
 <tr>
-<td class="name"><code>region</code></td>
+<td class="name">{% highlight html %}
+region{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">to set whether the region to be fit will be based on diagram elements or page settings <a href="global.html#Region">Region</a></td>
 </tr>
 <tr>
-<td class="name"><code>margin</code></td>
+<td class="name">{% highlight html %}
+margin{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">to set the required margin</td>
 </tr>
@@ -13992,14 +14293,15 @@ Fit the diagram content into diagram viewport
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>         
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+         
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.fitToPage(mode,region,margin);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14025,13 +14327,14 @@ Group the selected nodes and connectors
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.group(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14071,13 +14374,14 @@ Refresh the diagram with the specified layout
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.layout();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14106,7 +14410,8 @@ Load the diagram .
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last"></td>
 </tr>
@@ -14119,13 +14424,14 @@ Load the diagram .
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.load(data);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14151,13 +14457,14 @@ Increase the Z-index value of selected object by 1
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.moveForward(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14186,12 +14493,14 @@ Executes nudge command to move selected node/connector by one pixel/specified pi
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>direction</code></td>
+<td class="name">{% highlight html %}
+direction{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">specifies the driection to move the selected objects ("left","right",top","bottom")</td>
 </tr>
 <tr>
-<td class="name"><code>delta</code></td>
+<td class="name">{% highlight html %}
+delta{% endhighlight %}</td>
 <td class="type"><span class="param-type">Number</span></td>
 <td class="description last">specifies the number of pixels by which the selected objects to be moved</td>
 </tr>
@@ -14204,13 +14513,14 @@ Executes nudge command to move selected node/connector by one pixel/specified pi
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.nudge("direction", 5); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14236,13 +14546,14 @@ Paste the selected object from internal clipboard to diagram
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.paste(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14268,14 +14579,15 @@ Print the diagram as image .
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+  
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.print();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14301,13 +14613,14 @@ Restore the last action that was performed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.redo(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14336,7 +14649,8 @@ Remove the either given node/connector or the selected element from diagram
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>node</code></td>
+<td class="name">{% highlight html %}
+node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass node/connector to be removed</td>
 </tr>
@@ -14349,13 +14663,14 @@ Remove the either given node/connector or the selected element from diagram
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.remove(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14381,14 +14696,15 @@ Update the height of the objects in the selection list to the height of first ob
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+        
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.sameHeight(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14414,14 +14730,15 @@ Update the size of the objects in the selection list to the size of first object
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+        
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.sameSize(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14447,14 +14764,15 @@ Update the width of the objects in the selection list to the width of first obje
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+        
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.sameWidth(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14494,13 +14812,14 @@ Save the diagram .
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.save();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14529,7 +14848,8 @@ Bring the node into view
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>node</code></td>
+<td class="name">{% highlight html %}
+node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass node/connector to be brought into view</td>
 </tr>
@@ -14542,14 +14862,15 @@ Bring the node into view
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node = diagram.selectionList[0];
 diagram.scrollToNode(node); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14575,13 +14896,14 @@ Select all nodes and connector in diagram
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.selectAll(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14607,13 +14929,14 @@ Decrease the Z-index value of selected object by 1
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.sendBackward(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14639,13 +14962,14 @@ Move the selected object behind all other intersected objects
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.sendToBack(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14671,13 +14995,14 @@ Update horizontal space between the objects as equal and within selection bounda
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.spaceAcross(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14703,14 +15028,15 @@ Update vertical space between the objects as equal and within the selection boun
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>        
-&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+        
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.spaceDown(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14739,12 +15065,14 @@ Start the editing of the specified label of the given node
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>node</code></td>
+<td class="name">{% highlight html %}
+node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass the node/connector to which label to be edited</td>
 </tr>
 <tr>
-<td class="name"><code>label</code></td>
+<td class="name">{% highlight html %}
+label{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass the label to be edited</td>
 </tr>
@@ -14757,14 +15085,15 @@ Start the editing of the specified label of the given node
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node=diagram.selectionList[0];
 diagram.startLabelEdit(node,node.labels[0]);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14790,13 +15119,14 @@ Reverse the last action that was performed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.undo(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14822,13 +15152,14 @@ Ungroup the selected group
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.ungroup(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14857,12 +15188,14 @@ Update Diagram with its specific properties
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>name</code></td>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">to identify the diagram from the model</td>
 </tr>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">to specify which properties of the diagram to be updated</td>
 </tr>
@@ -14875,14 +15208,15 @@ Update Diagram with its specific properties
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var value = ej.datavisualization.Diagram.DiagramConstraints.Default;
 diagram.updateDiagram(diagram.name, { constraints: value });      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14911,12 +15245,14 @@ Update Connector with their its properties
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>name</code></td>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">to identify the connector from the model</td>
 </tr>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">to specify which property of the Connector to be update</td>
 </tr>
@@ -14929,14 +15265,15 @@ Update Connector with their its properties
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var value = ej.datavisualization.Diagram.ConnectorConstraints.Default;
 diagram.updateConnector(connector.name, { constraints: value });      
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14965,17 +15302,20 @@ Update the given label with its specific properties
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>nodeName</code></td>
+<td class="name">{% highlight html %}
+nodeName{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">pass the name of node/connector</td>
 </tr>
 <tr>
-<td class="name"><code>label</code></td>
+<td class="name">{% highlight html %}
+label{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass the label to be modified</td>
 </tr>
 <tr>
-<td class="name"><code>obj</code></td>
+<td class="name">{% highlight html %}
+obj{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass the new porperties of the label</td>
 </tr>
@@ -14988,16 +15328,17 @@ Update the given label with its specific properties
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node=diagram.selectionList[0];
 var label = [];
 label =[{"name":"node1" "text": "node", "bold": true, "italic": true}]
 diagram.updateLabel(node.name,node.labels[0],label);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15026,12 +15367,14 @@ Update Node with its specific properties
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>name</code></td>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">to identify the Node from the model</td>
 </tr>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">to specify which property of the Node to be update</td>
 </tr>
@@ -15044,14 +15387,15 @@ Update Node with its specific properties
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var value = ej.datavisualization.Diagram.NodeConstraints.Default &amp; ~ej.datavisualization.Diagram.NodeConstraints.Connect;
 diagram.updateNode(node.name, { constraints: value });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15080,7 +15424,8 @@ Update the specified node as selected object.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>name</code></td>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">to identify the object from the model</td>
 </tr>
@@ -15093,13 +15438,14 @@ Update the specified node as selected object.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance"); 
 diagram.updateSelectedObject(name);    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15128,7 +15474,8 @@ Update the selection of target node/connector
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>isDragging</code></td>
+<td class="name">{% highlight html %}
+isDragging{% endhighlight %}</td>
 <td class="type"><span class="param-type">Boolean</span></td>
 <td class="description last">pass true/false whether to drag or not</td>
 </tr>
@@ -15141,13 +15488,14 @@ Update the selection of target node/connector
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.updateSelection(true);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15176,7 +15524,8 @@ Update userhandles with respect to the given node
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>node</code></td>
+<td class="name">{% highlight html %}
+node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass node/connector</td>
 </tr>
@@ -15189,14 +15538,15 @@ Update userhandles with respect to the given node
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node = diagram.selectionList[0];
 diagram.updateUSerHandles(node); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15222,13 +15572,14 @@ To update viewport when window resize
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.updateViewPort();
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15257,7 +15608,8 @@ To Upgrade the diagram from old version .
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last"></td>
 </tr>
@@ -15270,14 +15622,15 @@ To Upgrade the diagram from old version .
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.upgrade(jsonData);
 diagram.load(jsonData);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15306,7 +15659,8 @@ Used to zoomIn/zoomOut diagram
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>zoom</code></td>
+<td class="name">{% highlight html %}
+zoom{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">pass zoom commands of the diagram</td>
 </tr>
@@ -15319,16 +15673,17 @@ Used to zoomIn/zoomOut diagram
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="diagramcontent"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var zoom =  ej.datavisualization.Diagram.Zoom();
 zoom.zoomFactor = .1;
 zoom.zoomCommand = ej.datavisualization.Diagram.ZoomCommand.ZoomIn;
 diagram.zoomTo(zoom);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15364,12 +15719,14 @@ Triggers When auto scroll is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.delay</code></td>
+<td class="name">{% highlight html %}
+argument.delay{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns should be inserted or removed</td>
 </tr>
 <tr>
-<td class="name"><code>argument.distanceFromDiagram</code></td>
+<td class="name">{% highlight html %}
+argument.distanceFromDiagram{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns node which to be added or deleted</td>
 </tr>
@@ -15382,12 +15739,13 @@ Triggers When auto scroll is changed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// autoScrollChange event for diagram
+
+{% highlight html %}
+// autoScrollChange event for diagram
 $("#diagramcontent").ejDiagram({
 autoScrollChange:function (args)  {}
- });</code>
-</pre>
+ });{% endhighlight %}
+
 
 
 
@@ -15416,7 +15774,8 @@ Triggers when click node/connector
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -15429,7 +15788,8 @@ Triggers when click node/connector
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns diagram</td>
 </tr>
@@ -15446,12 +15806,13 @@ Triggers when click node/connector
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>//  click event for diagram
+
+{% highlight html %}
+//  click event for diagram
 $("#diagramcontent").ejDiagram({
 click:function (args)  {}
-        });</code>
-</pre>
+        });{% endhighlight %}
+
 
 
 
@@ -15480,7 +15841,8 @@ Triggers when the connection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -15493,17 +15855,20 @@ Triggers when the connection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns connector</td>
 </tr>
 <tr>
-<td class="name"><code>connection</code></td>
+<td class="name">{% highlight html %}
+connection{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">parameter returns source or target node that was connected</td>
 </tr>
 <tr>
-<td class="name"><code>port</code></td>
+<td class="name">{% highlight html %}
+port{% endhighlight %}</td>
 <td class="type"><span class="param-type">port</span></td>
 <td class="description last">parameter returns source or target port that was connected</td>
 </tr>
@@ -15520,12 +15885,13 @@ Triggers when the connection is changed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// connectionChange event for diagram
+
+{% highlight html %}
+// connectionChange event for diagram
 $("#diagramcontent").ejDiagram({
 connectionChange:function (args)  {}
-        }); </code>
-</pre>
+        }); {% endhighlight %}
+
 
 
 
@@ -15554,7 +15920,8 @@ Triggers When connector collection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -15567,12 +15934,14 @@ Triggers When connector collection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>changetype</code></td>
+<td class="name">{% highlight html %}
+changetype{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">return should be inserted or removed</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns connector which to be added or deleted</td>
 </tr>
@@ -15589,12 +15958,13 @@ Triggers When connector collection is changed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// connectorCollectionChange event for diagram
+
+{% highlight html %}
+// connectorCollectionChange event for diagram
 $("#diagramcontent").ejDiagram({
 connectorCollectionChange:function (args) {}
-        });</code>
-</pre>
+        });{% endhighlight %}
+
 
 
 
@@ -15623,12 +15993,14 @@ Triggers when the connectors' source point is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.point</code></td>
+<td class="name">{% highlight html %}
+argument.point{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns source point</td>
 </tr>
 <tr>
-<td class="name"><code>argument.port</code></td>
+<td class="name">{% highlight html %}
+argument.port{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns source port</td>
 </tr>
@@ -15641,12 +16013,13 @@ Triggers when the connectors' source point is changed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// connectorSourceChange event for diagram
+
+{% highlight html %}
+// connectorSourceChange event for diagram
 $("#diagramcontent").ejDiagram({
 connectorSourceChange:function (args)  {}
-       });</code>
-</pre>
+       });{% endhighlight %}
+
 
 
 
@@ -15675,12 +16048,14 @@ Triggers when the connectors target point is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument.point</code></td>
+<td class="name">{% highlight html %}
+argument.point{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns target point</td>
 </tr>
 <tr>
-<td class="name"><code>argument.port</code></td>
+<td class="name">{% highlight html %}
+argument.port{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns target port</td>
 </tr>
@@ -15693,12 +16068,13 @@ Triggers when the connectors target point is changed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// connectorTargetChange event for diagram
+
+{% highlight html %}
+// connectorTargetChange event for diagram
 $("#diagramcontent").ejDiagram({
 connectorTargetChange:function (args)  {}
-      });</code>
-</pre>
+      });{% endhighlight %}
+
 
 
 
@@ -15727,7 +16103,8 @@ Triggers before open the context menu
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram</td>
 </tr>
@@ -15740,12 +16117,13 @@ Triggers before open the context menu
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// contextMenuBeforeOpen event for diagram
+
+{% highlight html %}
+// contextMenuBeforeOpen event for diagram
 $("#diagramcontent").ejDiagram({
 contextMenuBeforeOpen:function (args)  {}
-         });</code>
-</pre>
+         });{% endhighlight %}
+
 
 
 
@@ -15774,7 +16152,8 @@ Triggers when context menu item is clicked
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram</td>
 </tr>
@@ -15787,12 +16166,13 @@ Triggers when context menu item is clicked
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// contextMenuClick event for diagram
+
+{% highlight html %}
+// contextMenuClick event for diagram
 $("#diagramcontent").ejDiagram({
 contextMenuClick:function (args)  {}
-          });</code>
-</pre>
+          });{% endhighlight %}
+
 
 
 
@@ -15821,7 +16201,8 @@ Triggers when doubleClick node/connector
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -15834,12 +16215,14 @@ Triggers when doubleClick node/connector
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">Boolean</span></td>
 <td class="description last">if the event should be cancelled ,otherwise fasle</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns selected object in list</td>
 </tr>
@@ -15856,12 +16239,13 @@ Triggers when doubleClick node/connector
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>//  doubleClick event for diagram
+
+{% highlight html %}
+//  doubleClick event for diagram
 $("#diagramcontent").ejDiagram({
 doubleClick:function (args)  {}
-        });</code>
-</pre>
+        });{% endhighlight %}
+
 
 
 
@@ -15890,7 +16274,8 @@ Triggers while dragging the elements in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -15903,7 +16288,8 @@ Triggers while dragging the elements in diagram
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns node or connector</td>
 </tr>
@@ -15920,12 +16306,13 @@ Triggers while dragging the elements in diagram
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>//  deag event for diagram
+
+{% highlight html %}
+//  deag event for diagram
 $("#diagramcontent").ejDiagram({
 drag:function (args)  {}
-  });</code>
-</pre>
+  });{% endhighlight %}
+
 
 
 
@@ -15954,7 +16341,8 @@ Triggers when drag and drop symbols from palette to drawing area
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -15967,7 +16355,8 @@ Triggers when drag and drop symbols from palette to drawing area
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns node or connector</td>
 </tr>
@@ -15984,12 +16373,13 @@ Triggers when drag and drop symbols from palette to drawing area
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>//  drop event for diagram
+
+{% highlight html %}
+//  drop event for diagram
 $("#diagramcontent").ejDiagram({
 drop:function (args)  {}
-        });</code>
-</pre>
+        });{% endhighlight %}
+
 
 
 
@@ -16018,7 +16408,8 @@ Triggers when the diagram/diagram element is clicked
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">args.cancel if the event should be cancelled ,otherwise fasle
 <table class="params">
@@ -16031,22 +16422,26 @@ Triggers when the diagram/diagram element is clicked
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">return event name</td>
 </tr>
 <tr>
-<td class="name"><code>actualObject</code></td>
+<td class="name">{% highlight html %}
+actualObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">node was clicked</td>
 </tr>
 <tr>
-<td class="name"><code>selectedObject</code></td>
+<td class="name">{% highlight html %}
+selectedObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">actual selected object</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">contains holds the reference of diagram</td>
 </tr>
@@ -16063,12 +16458,13 @@ Triggers when the diagram/diagram element is clicked
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// itemClick event for diagram
+
+{% highlight html %}
+// itemClick event for diagram
 $("#diagramcontent").ejDiagram({
 itemClick:function (args) {}
-        });</code>
-</pre>
+        });{% endhighlight %}
+
 
 
 
@@ -16097,7 +16493,8 @@ Triggers When mouse enter node/connector
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -16110,17 +16507,20 @@ Triggers When mouse enter node/connector
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns node or connector</td>
 </tr>
 <tr>
-<td class="name"><code>source</code></td>
+<td class="name">{% highlight html %}
+source{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">the object dragged from this container</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">the object is going to be dropped.</td>
 </tr>
@@ -16137,12 +16537,13 @@ Triggers When mouse enter node/connector
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>//  mouseEnter event for diagram
+
+{% highlight html %}
+//  mouseEnter event for diagram
 $("#diagramcontent").ejDiagram({
 mouseEnter:function (args)  {}
-        });</code>
-</pre>
+        });{% endhighlight %}
+
 
 
 
@@ -16171,7 +16572,8 @@ Triggers When mouse leaves node/connector
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -16184,17 +16586,20 @@ Triggers When mouse leaves node/connector
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns node or connector</td>
 </tr>
 <tr>
-<td class="name"><code>source</code></td>
+<td class="name">{% highlight html %}
+source{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">the object dragged from this container</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">the object is going to be dropped.</td>
 </tr>
@@ -16211,12 +16616,13 @@ Triggers When mouse leaves node/connector
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>//  mouseLeave event for diagram
+
+{% highlight html %}
+//  mouseLeave event for diagram
 $("#diagramcontent").ejDiagram({
 mouseLeave:function (args)  {}
-               });</code>
-</pre>
+               });{% endhighlight %}
+
 
 
 
@@ -16245,7 +16651,8 @@ Triggers when mouse hover on node/connector
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -16258,17 +16665,20 @@ Triggers when mouse hover on node/connector
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>diagram</code></td>
+<td class="name">{% highlight html %}
+diagram{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns node or connector</td>
 </tr>
 <tr>
-<td class="name"><code>source</code></td>
+<td class="name">{% highlight html %}
+source{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">the object dragged from this container</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">the object is going to be dropped.</td>
 </tr>
@@ -16285,12 +16695,13 @@ Triggers when mouse hover on node/connector
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>//  mouseOver event for diagram
+
+{% highlight html %}
+//  mouseOver event for diagram
 $("#diagramcontent").ejDiagram({
 mouseOver:function (args)  {}
-        });   </code>
-</pre>
+        });   {% endhighlight %}
+
 
 
 
@@ -16319,7 +16730,8 @@ Triggers When node collection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -16332,12 +16744,14 @@ Triggers When node collection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>changetype</code></td>
+<td class="name">{% highlight html %}
+changetype{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">returns should be inserted or removed</td>
 </tr>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns node which to be added or deleted</td>
 </tr>
@@ -16354,12 +16768,13 @@ Triggers When node collection is changed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// nodeCollectionChange event for diagram
+
+{% highlight html %}
+// nodeCollectionChange event for diagram
 $("#diagramcontent").ejDiagram({
 nodeCollectionChange:function (args)  {}
- });</code>
-</pre>
+ });{% endhighlight %}
+
 
 
 
@@ -16388,7 +16803,8 @@ Triggers When node size has been changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -16401,17 +16817,20 @@ Triggers When node size has been changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns node that was resized</td>
 </tr>
 <tr>
-<td class="name"><code>offset</code></td>
+<td class="name">{% highlight html %}
+offset{% endhighlight %}</td>
 <td class="type"><span class="param-type">Number</span></td>
 <td class="description last">parameter returns size of the node</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">Boolean</span></td>
 <td class="description last">if the event should be cancelled ,otherwise fasle</td>
 </tr>
@@ -16428,12 +16847,13 @@ Triggers When node size has been changed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// sizeChange event for diagram
+
+{% highlight html %}
+// sizeChange event for diagram
 $("#diagramcontent").ejDiagram({
 sizeChange:function (args)  {}
-         });</code>
-</pre>
+         });{% endhighlight %}
+
 
 
 
@@ -16462,7 +16882,8 @@ Triggers when the element is rotated
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -16475,12 +16896,14 @@ Triggers when the element is rotated
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns node</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">Boolean</span></td>
 <td class="description last">if the event should be cancelled ,otherwise fasle</td>
 </tr>
@@ -16497,12 +16920,13 @@ Triggers when the element is rotated
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// rotationChange event for diagram
+
+{% highlight html %}
+// rotationChange event for diagram
 $("#diagramcontent").ejDiagram({
 rotationChange:function (args)  {}
-        });</code>
-</pre>
+        });{% endhighlight %}
+
 
 
 
@@ -16531,7 +16955,8 @@ Triggers When selection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -16544,12 +16969,14 @@ Triggers When selection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>oldItems</code></td>
+<td class="name">{% highlight html %}
+oldItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">parameter returns collection of nodes and connectors which were currently selected</td>
 </tr>
 <tr>
-<td class="name"><code>newItems</code></td>
+<td class="name">{% highlight html %}
+newItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">parameter returns collection of nodes and connectors which is to be selected</td>
 </tr>
@@ -16566,12 +16993,13 @@ Triggers When selection is changed
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>//  selectionChange event for diagram
+
+{% highlight html %}
+//  selectionChange event for diagram
 $("#diagramcontent").ejDiagram({
 selectionChange:function (args)  {}
-        });</code>
-</pre>
+        });{% endhighlight %}
+
 
 
 
@@ -16600,7 +17028,8 @@ Triggers When label editing is ended
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">args parameter from diagram
 <table class="params">
@@ -16613,12 +17042,14 @@ Triggers When label editing is ended
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>element</code></td>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns shape</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">parameter returns value in label edit box</td>
 </tr>
@@ -16635,12 +17066,13 @@ Triggers When label editing is ended
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>// textChanged event for diagram
+
+{% highlight html %}
+// textChanged event for diagram
 $("#diagramcontent").ejDiagram({
 textChanged:function (args)  {}
-        });</code>
-</pre>
+        });{% endhighlight %}
+
 
 
 

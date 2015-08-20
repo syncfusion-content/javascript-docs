@@ -37,7 +37,8 @@ $(element).ejSplitter<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for Slider.</td>
 </tr>
@@ -50,20 +51,21 @@ $(element).ejSplitter<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="innerSplitter"&gt;
-        &lt;div&gt;
-                &lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div&gt;
-                &lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-        &lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="innerSplitter">
+        <div>
+                <div class="cont">Pane 1 </div>
+        </div>
+        <div>
+                <div class="cont">Pane 2 </div>
+        </div>
+</div> 
+<script>
 // Create Splitter 
 $('#innerSplitter').ejSplitter(); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -134,21 +136,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //To set animationSpeed API value during initialization
 $("#innerSplitter").ejSplitter({animationSpeed: 150 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -190,20 +193,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="innerSplitter"&gt;
-        &lt;div&gt;
-                &lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div&gt;
-                &lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-        &lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="innerSplitter">
+        <div>
+                <div class="cont">Pane 1 </div>
+        </div>
+        <div>
+                <div class="cont">Pane 2 </div>
+        </div>
+</div> 
+<script>
 //To set cssClass API value during initialization
         $("#innerSplitter").ejSplitter({ cssClass: "gradient-lime"});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -245,21 +249,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-        &lt;div&gt;
-                &lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div&gt;
-                &lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-        &lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+        <div>
+                <div class="cont">Pane 1 </div>
+        </div>
+        <div>
+                <div class="cont">Pane 2 </div>
+        </div>
+</div> 
+<script>
 //To set enableAnimation API value during initialization  
         $("#innerSplitter").ejSplitter({ enableAnimation: false});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -301,20 +306,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //To set windowResizing API value during initialization
         $("#innerSplitter").ejSplitter({enableAutoResize: true});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -356,20 +362,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //To set enableRTL API value during initialization  
         $("#innerSplitter").ejSplitter({enableRTL: true} );
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -411,21 +418,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //To set height API value during initialization
         $("#innerSplitter").ejSplitter({height: "100%" });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -467,20 +475,21 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //To set orientation API value during initialization  
 $("#innerSplitter").ejSplitter({ orientation: ej.Orientation.Horizontal });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -522,21 +531,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //To set properties API value during initialization  
         $("#innerSplitter").ejSplitter({properties: [{ paneSize: "100px" }, { paneSize: "50px"}]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -578,21 +588,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //To set width API value during initialization  
         $("#innerSplitter").ejSplitter({width: 600} );
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -628,17 +639,20 @@ To add the new pane to splitter control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>content</code></td>
+<td class="name">{% highlight html %}
+content{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">content of pane.</td>
 </tr>
 <tr>
-<td class="name"><code>property</code></td>
+<td class="name">{% highlight html %}
+property{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">pane properties.</td>
 </tr>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">index of pane.</td>
 </tr>
@@ -651,39 +665,41 @@ To add the new pane to splitter control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div>
+<script>
 $("#innerSplitter").ejSplitter();
 // Create splitter control
 var splitterObj = $("#innerSplitter").data("ejSplitter");
 splitterObj.addItem("New pane 0",{ paneSize:20, minSize:20, maxSize:100},0);
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div>
+<script>
 $("#innerSplitter").ejSplitter();
 // expand the splitter control
 $("#innerSplitter").ejSplitter("addItem","New pane 0",{ paneSize:20, minSize:20, maxSize:100},0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -709,39 +725,41 @@ To collapse the splitter control pane.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div>
+<script>
 $("#innerSplitter").ejSplitter();
 // Create splitter control
 var splitterObj = $("#innerSplitter").data("ejSplitter");
 splitterObj.collapse(); // collpase the splitter control pane.
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div>
+<script>
 $("#innerSplitter").ejSplitter();
 // collpase the splitter control
 $("#innerSplitter").ejSplitter("collpase");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -767,39 +785,41 @@ To expand the splitter control pane.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div>
+<script>
 $("#innerSplitter").ejSplitter();
 // Create splitter control
 var splitterObj = $("#innerSplitter").data("ejSplitter");
 splitterObj.expand(); // expand the splitter control pane.
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div>
+<script>
 $("#innerSplitter").ejSplitter();
 // expand the splitter control
 $("#innerSplitter").ejSplitter("expand");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -825,39 +845,41 @@ To refresh the splitter control pane resizing.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div>
+<script>
 $("#innerSplitter").ejSplitter();
 // Create splitter control
 var splitterObj = $("#innerSplitter").data("ejSplitter");
 splitterObj.refresh(); // refresh the splitter control pane resizing.
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div>
+<script>
 $("#innerSplitter").ejSplitter();
 // refresh the splitter control
 $("#innerSplitter").ejSplitter("refresh");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -886,7 +908,8 @@ To remove the new pane from the splitter control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">index of pane.</td>
 </tr>
@@ -899,39 +922,41 @@ To remove the new pane from the splitter control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div>
+<script>
 $("#innerSplitter").ejSplitter();
 // Create splitter control
 var splitterObj = $("#innerSplitter").data("ejSplitter");
 splitterObj.removeItem(0); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div>
+<script>
 $("#innerSplitter").ejSplitter();
 // expand the splitter control
 $("#innerSplitter").ejSplitter("removeItem",0);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -967,7 +992,8 @@ Fires when before expand collapse in splitter control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from splitter control
 <table class="params">
@@ -980,32 +1006,38 @@ Fires when before expand collapse in splitter control.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>collapsed</code></td>
+<td class="name">{% highlight html %}
+collapsed{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns collapsed pane details.</td>
 </tr>
 <tr>
-<td class="name"><code>expanded</code></td>
+<td class="name">{% highlight html %}
+expanded{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns expanded pane details.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the splitter model.</td>
 </tr>
 <tr>
-<td class="name"><code>splitbarIndex</code></td>
+<td class="name">{% highlight html %}
+splitbarIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current split bar index.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -1022,23 +1054,24 @@ Fires when before expand collapse in splitter control.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //beforeExpandCollapse event for splitter control
 $("#innerSplitter").ejSplitter({
    beforeExpandCollapse: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1067,7 +1100,8 @@ Fires when splitter control pane has been created.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from splitter control
 <table class="params">
@@ -1080,17 +1114,20 @@ Fires when splitter control pane has been created.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the splitter model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -1107,22 +1144,23 @@ Fires when splitter control pane has been created.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //create event for splitter control
 $("#innerSplitter").ejSplitter({
    create: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1151,7 +1189,8 @@ Fires when splitter control pane has been destroyed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from splitter control
 <table class="params">
@@ -1164,17 +1203,20 @@ Fires when splitter control pane has been destroyed.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the splitter model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -1191,22 +1233,23 @@ Fires when splitter control pane has been destroyed.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //destroy event for splitter control
 $("#innerSplitter").ejSplitter({
    destroy: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1235,7 +1278,8 @@ Fires when expandCollapse in splitter control pane.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from splitter control
 <table class="params">
@@ -1248,32 +1292,38 @@ Fires when expandCollapse in splitter control pane.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>collapsed</code></td>
+<td class="name">{% highlight html %}
+collapsed{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns collapsed pane details.</td>
 </tr>
 <tr>
-<td class="name"><code>expanded</code></td>
+<td class="name">{% highlight html %}
+expanded{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns expanded pane details.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the splitter model.</td>
 </tr>
 <tr>
-<td class="name"><code>splitbarIndex</code></td>
+<td class="name">{% highlight html %}
+splitbarIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current split bar index.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -1290,23 +1340,24 @@ Fires when expandCollapse in splitter control pane.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //expandCollapse event for splitter control
 $("#innerSplitter").ejSplitter({
    expandCollapse: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1335,7 +1386,8 @@ Fires when resize in splitter control pane.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from splitter control
 <table class="params">
@@ -1348,32 +1400,38 @@ Fires when resize in splitter control pane.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>collapsed</code></td>
+<td class="name">{% highlight html %}
+collapsed{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns collapsed pane details.</td>
 </tr>
 <tr>
-<td class="name"><code>expanded</code></td>
+<td class="name">{% highlight html %}
+expanded{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns expanded pane details.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the splitter model.</td>
 </tr>
 <tr>
-<td class="name"><code>splitbarIndex</code></td>
+<td class="name">{% highlight html %}
+splitbarIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the current split bar index.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
@@ -1390,22 +1448,23 @@ Fires when resize in splitter control pane.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="innerSplitter"&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 1 &lt;/div&gt;
-&lt;/div&gt;
-&lt;div&gt;
-&lt;div class="cont"&gt;Pane 2 &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="innerSplitter">
+<div>
+<div class="cont">Pane 1 </div>
+</div>
+<div>
+<div class="cont">Pane 2 </div>
+</div>
+</div> 
+<script>
 //resize event for splitter control
 $("#innerSplitter").ejSplitter({
    resize: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

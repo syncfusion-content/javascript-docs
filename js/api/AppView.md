@@ -33,11 +33,12 @@ $(element).AppView<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div data-role="appview"&gt;&lt;/div&gt;
-       </code>
-</pre>
+
+{% highlight html %}
+ 
+<div data-role="appview"></div>
+       {% endhighlight %}
+
 
 
 
@@ -108,13 +109,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set addMetaTags API value
-&lt;script&gt;
+<script>
       App.addMetaTags=false;
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -156,13 +158,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set renderEJMControlsByDef API value
-&lt;div data-role="appview"&gt;
-&lt;a href="page2.html" data-ej-apptransition="pop"&gt; Move To Page2 &lt;/a&gt;
-&lt;/div&gt;</code>
-</pre>
+<div data-role="appview">
+<a href="page2.html" data-ej-apptransition="pop"> Move To Page2 </a>
+</div>{% endhighlight %}
+
 
 
 
@@ -204,13 +207,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set renderEJMControlsByDef API value
-&lt;script&gt;
+<script>
       App.renderEJMControlsByDef=false;
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -243,13 +247,14 @@ To return the Current Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Current Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.activeHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -275,13 +280,14 @@ To Add the Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set History about Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.add("http://js.syncfusion.com/demos/mobile/",{title:"Mobile Demo"});            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -307,13 +313,14 @@ To Clear the Forward History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Clear Forward History
-&lt;script&gt;            
+<script>            
       App.pageHistory.clearForward();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -339,13 +346,14 @@ To convert absolute url to relative url
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //check for hash
-&lt;script&gt;            
+<script>            
       App.route.convertToRelativeUrl("http://js.syncfusion.com/demos/mobile/default.html");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -371,13 +379,14 @@ To create a Appview Page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Create AppView
-&lt;script&gt;            
+<script>            
       App.createPage($("#AppPage"));            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -403,13 +412,14 @@ To find url in History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //find the url in history
-&lt;script&gt;            
+<script>            
       App.pageHistory.find("http://js.syncfusion.com/demos/mobile/");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -435,12 +445,13 @@ To get the URL location of current page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>             
-&lt;script&gt;
+
+{% highlight html %}
+             
+<script>
       App.getLocation();//return current url location
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -466,13 +477,14 @@ To check url has protocol
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //check for hash
-&lt;script&gt;            
+<script>            
       App.route.hasProtocol("http://js.syncfusion.com/demos/mobile/default.html");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -498,13 +510,14 @@ To Initalize the dynamically created appview
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Initalize AppView
-&lt;script&gt;            
+<script>            
       App.initPage();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -530,13 +543,14 @@ To return the Last Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Last Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.lastHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -562,13 +576,14 @@ To load a specific view page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Load Page
-&lt;script&gt;            
+<script>            
       App.loadView("page2.html");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -594,13 +609,14 @@ To Get Compelete Url
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //get absolute url
-&lt;script&gt;            
+<script>            
       App.route.makeUrlAbsolute("#default");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -626,13 +642,14 @@ To return the Current Next History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Next Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.nextHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -658,13 +675,14 @@ To return the Current Previous History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Next Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.prevHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -690,13 +708,14 @@ To Replace the Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set History about Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.replace("#sample");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -722,13 +741,14 @@ To set page rendermode
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //set page render mode
-&lt;script&gt;            
+<script>            
       App.route.setPageRenderMode($("#page2"));            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -754,13 +774,14 @@ To Split URL
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get Url Sections
-&lt;script&gt;            
+<script>            
       App.route.splitUrl("http://js.syncfusion.com/demos/mobile/");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -786,20 +807,22 @@ To transfer one page to another page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Transfer Page
-&lt;script&gt;
+<script>
  function loadpage(){
       App.transferPage(App.activePage,"page2.html");
  }
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;body&gt;
-&lt;a href="#" onClick="loadpage()" &gt; Move to Page2  &lt;/a&gt;
-&lt;/body&gt;</code>
-</pre>
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+<body>
+<a href="#" onClick="loadpage()" > Move to Page2  </a>
+</body>{% endhighlight %}
+
 
 
 
@@ -825,12 +848,13 @@ To get the userAgent Name
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>             
-&lt;script&gt;
+
+{% highlight html %}
+             
+<script>
       ej.userAgent();//return user agent name
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -869,11 +893,12 @@ $(element).AppView<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div data-role="appview"&gt;&lt;/div&gt;
-       </code>
-</pre>
+
+{% highlight html %}
+ 
+<div data-role="appview"></div>
+       {% endhighlight %}
+
 
 
 
@@ -944,13 +969,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set addMetaTags API value
-&lt;script&gt;
+<script>
       App.addMetaTags=false;
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -992,13 +1018,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set renderEJMControlsByDef API value
-&lt;div data-role="appview"&gt;
-&lt;a href="page2.html" data-ej-apptransition="pop"&gt; Move To Page2 &lt;/a&gt;
-&lt;/div&gt;</code>
-</pre>
+<div data-role="appview">
+<a href="page2.html" data-ej-apptransition="pop"> Move To Page2 </a>
+</div>{% endhighlight %}
+
 
 
 
@@ -1040,13 +1067,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set renderEJMControlsByDef API value
-&lt;script&gt;
+<script>
       App.renderEJMControlsByDef=false;
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -1079,13 +1107,14 @@ To return the Current Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Current Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.activeHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1111,13 +1140,14 @@ To Add the Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set History about Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.add("http://js.syncfusion.com/demos/mobile/",{title:"Mobile Demo"});            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1143,13 +1173,14 @@ To Clear the Forward History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Clear Forward History
-&lt;script&gt;            
+<script>            
       App.pageHistory.clearForward();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1175,13 +1206,14 @@ To convert absolute url to relative url
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //check for hash
-&lt;script&gt;            
+<script>            
       App.route.convertToRelativeUrl("http://js.syncfusion.com/demos/mobile/default.html");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1207,13 +1239,14 @@ To create a Appview Page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Create AppView
-&lt;script&gt;            
+<script>            
       App.createPage($("#AppPage"));            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1239,13 +1272,14 @@ To find url in History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //find the url in history
-&lt;script&gt;            
+<script>            
       App.pageHistory.find("http://js.syncfusion.com/demos/mobile/");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1271,12 +1305,13 @@ To get the URL location of current page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>             
-&lt;script&gt;
+
+{% highlight html %}
+             
+<script>
       App.getLocation();//return current url location
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -1302,13 +1337,14 @@ To check url has protocol
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //check for hash
-&lt;script&gt;            
+<script>            
       App.route.hasProtocol("http://js.syncfusion.com/demos/mobile/default.html");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1334,13 +1370,14 @@ To Initalize the dynamically created appview
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Initalize AppView
-&lt;script&gt;            
+<script>            
       App.initPage();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1366,13 +1403,14 @@ To return the Last Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Last Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.lastHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1398,13 +1436,14 @@ To load a specific view page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Load Page
-&lt;script&gt;            
+<script>            
       App.loadView("page2.html");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1430,13 +1469,14 @@ To Get Compelete Url
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //get absolute url
-&lt;script&gt;            
+<script>            
       App.route.makeUrlAbsolute("#default");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1462,13 +1502,14 @@ To return the Current Next History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Next Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.nextHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1494,13 +1535,14 @@ To return the Current Previous History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Next Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.prevHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1526,13 +1568,14 @@ To Replace the Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set History about Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.replace("#sample");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1558,13 +1601,14 @@ To set page rendermode
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //set page render mode
-&lt;script&gt;            
+<script>            
       App.route.setPageRenderMode($("#page2"));            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1590,13 +1634,14 @@ To Split URL
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get Url Sections
-&lt;script&gt;            
+<script>            
       App.route.splitUrl("http://js.syncfusion.com/demos/mobile/");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1622,20 +1667,22 @@ To transfer one page to another page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Transfer Page
-&lt;script&gt;
+<script>
  function loadpage(){
       App.transferPage(App.activePage,"page2.html");
  }
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;body&gt;
-&lt;a href="#" onClick="loadpage()" &gt; Move to Page2  &lt;/a&gt;
-&lt;/body&gt;</code>
-</pre>
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+<body>
+<a href="#" onClick="loadpage()" > Move to Page2  </a>
+</body>{% endhighlight %}
+
 
 
 
@@ -1661,12 +1708,13 @@ To get the userAgent Name
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>             
-&lt;script&gt;
+
+{% highlight html %}
+             
+<script>
       ej.userAgent();//return user agent name
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -1705,11 +1753,12 @@ $(element).AppView<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div data-role="appview"&gt;&lt;/div&gt;
-       </code>
-</pre>
+
+{% highlight html %}
+ 
+<div data-role="appview"></div>
+       {% endhighlight %}
+
 
 
 
@@ -1780,13 +1829,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set addMetaTags API value
-&lt;script&gt;
+<script>
       App.addMetaTags=false;
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -1828,13 +1878,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set renderEJMControlsByDef API value
-&lt;div data-role="appview"&gt;
-&lt;a href="page2.html" data-ej-apptransition="pop"&gt; Move To Page2 &lt;/a&gt;
-&lt;/div&gt;</code>
-</pre>
+<div data-role="appview">
+<a href="page2.html" data-ej-apptransition="pop"> Move To Page2 </a>
+</div>{% endhighlight %}
+
 
 
 
@@ -1876,13 +1927,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //To set renderEJMControlsByDef API value
-&lt;script&gt;
+<script>
       App.renderEJMControlsByDef=false;
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -1915,13 +1967,14 @@ To return the Current Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Current Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.activeHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1947,13 +2000,14 @@ To Add the Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set History about Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.add("http://js.syncfusion.com/demos/mobile/",{title:"Mobile Demo"});            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -1979,13 +2033,14 @@ To Clear the Forward History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Clear Forward History
-&lt;script&gt;            
+<script>            
       App.pageHistory.clearForward();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2011,13 +2066,14 @@ To convert absolute url to relative url
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //check for hash
-&lt;script&gt;            
+<script>            
       App.route.convertToRelativeUrl("http://js.syncfusion.com/demos/mobile/default.html");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2043,13 +2099,14 @@ To create a Appview Page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Create AppView
-&lt;script&gt;            
+<script>            
       App.createPage($("#AppPage"));            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2075,13 +2132,14 @@ To find url in History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //find the url in history
-&lt;script&gt;            
+<script>            
       App.pageHistory.find("http://js.syncfusion.com/demos/mobile/");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2107,12 +2165,13 @@ To get the URL location of current page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>             
-&lt;script&gt;
+
+{% highlight html %}
+             
+<script>
       App.getLocation();//return current url location
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 
@@ -2138,13 +2197,14 @@ To check url has protocol
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //check for hash
-&lt;script&gt;            
+<script>            
       App.route.hasProtocol("http://js.syncfusion.com/demos/mobile/default.html");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2170,13 +2230,14 @@ To Initalize the dynamically created appview
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Initalize AppView
-&lt;script&gt;            
+<script>            
       App.initPage();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2202,13 +2263,14 @@ To return the Last Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Last Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.lastHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2234,13 +2296,14 @@ To load a specific view page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Load Page
-&lt;script&gt;            
+<script>            
       App.loadView("page2.html");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2266,13 +2329,14 @@ To Get Compelete Url
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //get absolute url
-&lt;script&gt;            
+<script>            
       App.route.makeUrlAbsolute("#default");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2298,13 +2362,14 @@ To return the Current Next History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Next Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.nextHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2330,13 +2395,14 @@ To return the Current Previous History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get History about Next Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.prevHistory();            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2362,13 +2428,14 @@ To Replace the Page History
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Set History about Page
-&lt;script&gt;            
+<script>            
       App.pageHistory.replace("#sample");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2394,13 +2461,14 @@ To set page rendermode
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //set page render mode
-&lt;script&gt;            
+<script>            
       App.route.setPageRenderMode($("#page2"));            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2426,13 +2494,14 @@ To Split URL
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Get Url Sections
-&lt;script&gt;            
+<script>            
       App.route.splitUrl("http://js.syncfusion.com/demos/mobile/");            
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -2458,20 +2527,22 @@ To transfer one page to another page
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
+
+{% highlight html %}
+ 
 //Transfer Page
-&lt;script&gt;
+<script>
  function loadpage(){
       App.transferPage(App.activePage,"page2.html");
  }
-&lt;/script&gt;  </code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;body&gt;
-&lt;a href="#" onClick="loadpage()" &gt; Move to Page2  &lt;/a&gt;
-&lt;/body&gt;</code>
-</pre>
+</script>  {% endhighlight %}
+
+
+{% highlight html %}
+<body>
+<a href="#" onClick="loadpage()" > Move to Page2  </a>
+</body>{% endhighlight %}
+
 
 
 
@@ -2497,12 +2568,13 @@ To get the userAgent Name
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>             
-&lt;script&gt;
+
+{% highlight html %}
+             
+<script>
       ej.userAgent();//return user agent name
-&lt;/script&gt;         </code>
-</pre>
+</script>         {% endhighlight %}
+
 
 
 

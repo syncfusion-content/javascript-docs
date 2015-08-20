@@ -33,14 +33,15 @@ $(element).ejReportViewer<span class="signature">()</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
+<div id="reportviewer">ReportViewer</div> 
  
-&lt;script&gt;
+<script>
 // Create ReportViewer
 $('#reportviewer').ejReportViewer();    
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -171,10 +172,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ dataSources: [{name:"Menu Items",
                         values:[{ OrderId: "21D60", FoodName: "Burger", Price: 20, Category: "Veg" },
                                 { OrderId: "21D61", FoodName: "Pizza", Price: 25, Category: "Non-Veg" },
@@ -182,8 +184,8 @@ Example
                                 { OrderId: "21D65", FoodName: "Chicken Drum Sticks", Price: 23, Category: "Non-Veg" },
                                 { OrderId: "21D64", FoodName: "Fulka", Price: 15, Category: "Veg" }]}]
                                 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -225,9 +227,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ dataSources: [name:"Menu Items",
                         values:[{ OrderId: "21D60", FoodName: "Burger", Price: 20, Category: "Veg" },
                                 { OrderId: "21D61", FoodName: "Pizza", Price: 25, Category: "Non-Veg" },
@@ -235,8 +238,8 @@ Example
                                 { OrderId: "21D65", FoodName: "Chicken Drum Sticks", Price: 23, Category: "Non-Veg" },
                                 { OrderId: "21D64", FoodName: "Fulka", Price: 15, Category: "Veg" }]]
                                 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -278,9 +281,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ dataSources: [name:"Menu Items",
                         values:[{ OrderId: "21D60", FoodName: "Burger", Price: 20, Category: "Veg" },
                                 { OrderId: "21D61", FoodName: "Pizza", Price: 25, Category: "Non-Veg" },
@@ -288,8 +292,8 @@ Example
                                 { OrderId: "21D65", FoodName: "Chicken Drum Sticks", Price: 23, Category: "Non-Veg" },
                                 { OrderId: "21D64", FoodName: "Fulka", Price: 15, Category: "Veg" }]]
                                 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -353,16 +357,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer(
             {
                exportSettings:{ excelFormat: ej.ReportViewer.ExcelFormats.Excel97to2003}
             });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -404,16 +409,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer(
             {
                exportSettings:{ exportOptions: ej.ReportViewer.ExportOptions.Html | ej.ReportViewer.ExportOptions.Pdf }
             });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -455,16 +461,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer(
             {
                exportSettings:{ wordFormat: ej.ReportViewer.WordFormats.Doc}
             });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -506,16 +513,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
         $("#reportviewer").ejReportViewer(
                 {
                    locale: "it-IT"
                 });             
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -579,16 +587,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer(
             {
                pageSettings:{ orientation: ej.ReportViewer.Orientation.Landscape }
             });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -630,16 +639,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer(
             {
                pageSettings:{ paperSize: ej.ReportViewer.PaperSize.A4 }
             });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -681,10 +691,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ parameters: [{
                                 name:"Vehicle",
                                 labels:["Motor Bikes"],
@@ -692,8 +703,8 @@ Example
                                 values:["Red","Green","Blue","Yellow","Black"],
                                 nullable:false
                                  }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -735,9 +746,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ parameters: [{
                                 name:"Vehicle",
                                 labels:["Motor Bikes"],
@@ -745,8 +757,8 @@ Example
                                 values:["Red","Green","Blue","Yellow","Black"],
                                 nullable:false
                                  }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -788,9 +800,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ parameters: [{
                                 name:"Vehicle",
                                 labels:["Motor Bikes"],
@@ -798,8 +811,8 @@ Example
                                 values:["Red","Green","Blue","Yellow","Black"],
                                 nullable:false
                                  }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -841,9 +854,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ parameters: [{
                                 name:"Vehicle",
                                 labels:["Motor Bikes"],
@@ -851,8 +865,8 @@ Example
                                 values:["Red","Green","Blue","Yellow","Black"],
                                 nullable:false
                                  }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -894,9 +908,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ parameters: [{
                                 name:"Vehicle",
                                 labels:["Motor Bikes"],
@@ -904,8 +919,8 @@ Example
                                 values:["Red","Green","Blue","Yellow","Black"],
                                 nullable:false
                                  }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -947,9 +962,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ parameters: [{
                                 name:"Vehicle",
                                 labels:["Motor Bikes"],
@@ -957,8 +973,8 @@ Example
                                 values:["Red","Green","Blue","Yellow","Black"],
                                 nullable:false
                                  }]});
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1000,16 +1016,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
         $("#reportviewer").ejReportViewer(
                 {
                    printMode:true
                 });             
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1051,13 +1068,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer({ processingMode: ej.ReportViewer.ProcessingMode.Remote });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1099,13 +1117,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer({ renderMode: ej.ReportViewer.RenderMode.Default });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1147,12 +1166,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ reportPath: "~/App_Data/Sample.rdl" });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1194,13 +1214,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ reportServerUrl:  "http://172.16.7.164/ReportServer/SampleReport.rdl" });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1242,12 +1263,13 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="reportviewer"></div> 
+<script>
         $("#reportviewer").ejReportViewer({ reportServiceUrl:  "../api/RDLReport" });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1311,16 +1333,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
         $("#reportviewer").ejReportViewer(
             {
                toolbarSettings:{click: "onToolbarClick"}
             });         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1362,16 +1385,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer(
             {
                toolbarSettings:{ exportOptions: ej.ReportViewer.ToolbarItems.All }
             });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1413,16 +1437,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
         $("#reportviewer").ejReportViewer(
             {
                toolbarSettings:{showToolbar: true}
             });         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1464,16 +1489,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
         $("#reportviewer").ejReportViewer(
             {
                toolbarSettings:showTooltip: true}
             });         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1515,16 +1541,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;          
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
         $("#reportviewer").ejReportViewer(
             {
                toolbarSettings:{templateId: ""}
             });         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1566,13 +1593,14 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer({ zoomFactor:  2 });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1605,15 +1633,16 @@ Export the report to the specified format.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.exportReport(); //Exports the reports
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1639,15 +1668,16 @@ Fit the report page to the container.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.fitToPage(); // To fit the report page.
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1673,15 +1703,16 @@ Fit the report page height to the container.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.fitToPageHeight(); // To fit the report page height.
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1707,15 +1738,16 @@ Fit the report page width to the container.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.fitToPageWidth(); // To fit the report page width.
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1741,15 +1773,16 @@ Get the available datasets name of the rdlc report.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.getDataSetNames(); // To get the dataset names.
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1775,15 +1808,16 @@ Get the available parameters of the report.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.getParameters(); // To get the parameters.
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1809,15 +1843,16 @@ Navigate to first page of report.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.gotoFirstPage(); // To navigate to first page
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1843,15 +1878,16 @@ Navigate to last page of the report.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.gotoLastPage(); // Navigate to the last page
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1877,15 +1913,16 @@ Navigate to next page from the current page.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.gotoNextPage(); //To navigate to the next page
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1911,15 +1948,16 @@ Go to specific page index of the report.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.gotoPageIndex(5); // To navigate the specific page
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1945,15 +1983,16 @@ Navigate to previous page from the current page.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.gotoPreviousPage(); // To navigate to the previous page
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1979,15 +2018,16 @@ Print the report.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.print(); //To perform print operation.
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2013,15 +2053,16 @@ Apply print layout to the report.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.printLayout(); //Changes between print layout and normal modes.
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2047,15 +2088,16 @@ Refresh the report.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;ReportViewer&lt;/div&gt; 
+
+{% highlight html %}
  
-&lt;script&gt;
+<div id="reportviewer">ReportViewer</div> 
+ 
+<script>
 var reportviewerObj = $("#reportviewer").data("ejReportViewer");
 reportviewerObj.refresh(); // To refresh the report.
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2091,7 +2133,8 @@ Fires when the report viewer is destroyed successfully.If you want to perform an
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from reportviewer
 <table class="params">
@@ -2104,17 +2147,20 @@ Fires when the report viewer is destroyed successfully.If you want to perform an
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the report model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2131,17 +2177,18 @@ Fires when the report viewer is destroyed successfully.If you want to perform an
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer({ 
      destroy:  function (args) {
       // Write a code block to perform any operation after destroy of reportviewer.
       }
     });           
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2170,7 +2217,8 @@ Fires during drill through action done in report.If you want to perform any oper
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from reportviewer
 <table class="params">
@@ -2183,22 +2231,26 @@ Fires during drill through action done in report.If you want to perform any oper
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>actionInfo</code></td>
+<td class="name">{% highlight html %}
+actionInfo{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the actionInfo's parameters bookmarkLink,hyperLink,reportName,parameters.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the report model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2215,17 +2267,18 @@ Fires during drill through action done in report.If you want to perform any oper
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer({ 
          drillThrough: function (args) {
       // Write a code block to perform any operation when drill through action occurs in report.
       }
     });                   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2254,7 +2307,8 @@ Fires before report rendering is completed.If you want to perform any operation 
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from reportviewer
 <table class="params">
@@ -2267,17 +2321,20 @@ Fires before report rendering is completed.If you want to perform any operation 
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the report model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2294,10 +2351,11 @@ Fires before report rendering is completed.If you want to perform any operation 
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;  
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>  
 //rendering begin event for report.               
         $("#reportviewer").ejReportViewer({
        renderingBegin:function(args)
@@ -2305,8 +2363,8 @@ Example
                  // Write a code block to perform any operation before rendering.
             }
     });                 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2335,7 +2393,8 @@ Fires after report rendering completed.If you want to perform any operation afte
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from reportviewer
 <table class="params">
@@ -2348,27 +2407,32 @@ Fires after report rendering completed.If you want to perform any operation afte
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the report model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
 <tr>
-<td class="name"><code>reportParameters</code></td>
+<td class="name">{% highlight html %}
+reportParameters{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the collection of parameters</td>
 </tr>
 <tr>
-<td class="name"><code>reportParameters</code></td>
+<td class="name">{% highlight html %}
+reportParameters{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the collection of parameters</td>
 </tr>
@@ -2385,10 +2449,11 @@ Fires after report rendering completed.If you want to perform any operation afte
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
 //rendering complete event for reportviewer control.
         $("#reportviewer").ejReportViewer({ 
       renderingComplete:function(args)
@@ -2396,8 +2461,8 @@ Example
                  // Write a code block to perform any operation after rendering completed.
             }
     });            
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2426,7 +2491,8 @@ Fires when any error occurred while rendering the report.If you want to perform 
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from reportviewer
 <table class="params">
@@ -2439,22 +2505,26 @@ Fires when any error occurred while rendering the report.If you want to perform 
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>error</code></td>
+<td class="name">{% highlight html %}
+error{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the error details</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the report model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2471,17 +2541,18 @@ Fires when any error occurred while rendering the report.If you want to perform 
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer({
                   reportError: function (args) {
       // Write a code block to perform any operation when report error occurs.
       }
     });                         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2510,7 +2581,8 @@ Fires when the report is loaded.If you want to perform any operation after the s
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">event parameters from reportviewer
 <table class="params">
@@ -2523,17 +2595,20 @@ Fires when the report is loaded.If you want to perform any operation after the s
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the report model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2550,18 +2625,19 @@ Fires when the report is loaded.If you want to perform any operation after the s
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer({
           reportLoaded: function(args)
             {
                  // Write a code block to perform any action when the report is loaded successfully.
             }
     });             
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2590,7 +2666,8 @@ Fires when click the View Report Button.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from reportviewer
 <table class="params">
@@ -2603,22 +2680,26 @@ Fires when click the View Report Button.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">true if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
-<td class="name"><code>parameters</code></td>
+<td class="name">{% highlight html %}
+parameters{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the parameter collection.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the report model</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event</td>
 </tr>
@@ -2635,17 +2716,18 @@ Fires when click the View Report Button.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="reportviewer"&gt;&lt;/div&gt; 
-&lt;script&gt;        
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
         $("#reportviewer").ejReportViewer({ 
      viewReportClick:  function (args) {
       // Write a code block to perform any operation after destroy of reportviewer.
       }
     });           
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 

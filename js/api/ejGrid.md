@@ -36,7 +36,8 @@ $(element).ejGrid<span class="signature">(options)</span>
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>options</code></td>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">settings for grid</td>
 </tr>
@@ -49,15 +50,16 @@ $(element).ejGrid<span class="signature">(options)</span>
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 // Create Grid
 $('#Grid').ejGrid({
     dataSource: window.gridData
 });         
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -176,15 +178,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   allowCellMerging:true,
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -226,16 +229,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowGrouping:true                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -277,16 +281,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowKeyboardNavigation:false
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -328,16 +333,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowFiltering:true                       
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -379,17 +385,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   allowSorting:true,
   allowMultiSorting:true
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -431,16 +438,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>            
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+            
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowPaging:true                      
 });
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -482,16 +490,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>                     
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+                     
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowReordering:true
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -533,16 +542,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowResizeToFit:true,
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -584,18 +594,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowResizing:true,
     allowScrolling:true,
     scrollSettings:{width:300,height:300}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -637,16 +648,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   allowScrolling:true,
   scrollSettings:{width:300,height:100}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -688,17 +700,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowSearching: true,
     toolbarSettings:{showToolbar:true,toolbarItems:[ej.Grid.ToolBarItems.Search]}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -740,16 +753,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSelection:true                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -791,16 +805,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true                       
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -842,16 +857,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowTextWrap:true                      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -893,10 +909,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>            
-&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+            
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
    childGrid: {
@@ -904,8 +921,8 @@ dataSource: window.employeeView,
 queryString: "EmployeeID",
 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -947,16 +964,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData
 });
 var value = $("#Grid").ejGrid("option", "columns");
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -998,16 +1016,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   editSettings:{allowEditing:true},
   columns:[{field:"OrderID"},{field:"CustomerID",allowEditing:false},{field:"ShipCity"}] 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1049,16 +1068,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   allowFiltering:true,
   columns:[{field:"OrderID"},{field:"CustomerID",allowFiltering:false},{field:"ShipCity"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1100,16 +1120,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   allowGrouping:true,
   columns:[{field:"OrderID"},{field:"CustomerID",allowGrouping:false},{field:"ShipCity"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1151,16 +1172,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   allowSorting:true,
   columns:[{field:"OrderID"},{field:"CustomerID",allowSorting:false},{field:"ShipCity"}] 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1202,9 +1224,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     editSettings:{allowEditing:true,allowAdding:true,allowDeleting:true},
@@ -1224,8 +1247,8 @@ $("#Grid").ejGrid({
            }
     ] 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1267,9 +1290,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     editSettings:{allowEditing:true,allowAdding:true,allowDeleting:true},
@@ -1288,8 +1312,8 @@ $("#Grid").ejGrid({
            }
     ] 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1331,9 +1355,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     editSettings:{allowEditing:true,allowAdding:true,allowDeleting:true},
@@ -1352,8 +1377,8 @@ $("#Grid").ejGrid({
            }
     ] 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1395,19 +1420,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;style class="temp"&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<style class="temp">
 .temp{
 color:green;}
-&lt;/style&gt;
-&lt;script&gt;
+</style>
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID"},{field:"CustomerID",cssClass:"temp"},{field:"ShipCity"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1449,15 +1475,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;          
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>          
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID"},{field:"CustomerID",customAttributes:{"style":"color:red"}},{field:"Freight"}]
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1499,15 +1526,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;  
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>  
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID"},{field:"CustomerID",visible:false},{field:"ShipCity"}]
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1549,17 +1577,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;          
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>          
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   editSettings: {allowAdding: true},
   toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add] },
   columns:[{field:"OrderID"},{field:"CustomerID"},{field:"ShipCity",defaultValue:"ABC"}]
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1601,15 +1630,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
-    columns:[{field:"OrderID",headerText:"&lt;div&amp;gtOrder ID&lt;/div&gt;",disableHtmlEncode:true}
+    columns:[{field:"OrderID",headerText:"<div&amp;gtOrder ID</div>",disableHtmlEncode:true}
   });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1651,16 +1681,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     editSettings:{allowEditing:true,allowAdding:true,allowDeleting:true},
     columns:[{ field: "OrderID"}, { field: "Freight", editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }}]
   });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -1702,17 +1733,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   editSettings:{allowEditing:true},
   columns:[{field:"OrderID"},{field:"CustomerID"},
-            { field: "EmployeeID",editTemplate: { create: function () { return "&lt;input&gt;"; }, read: function (args) { return args.ejMaskEdit("get_StrippedValue"); }, write: function (args) { args.element.ejMaskEdit({ width: "100%" ,maskFormat: "9",value: args.rowdata !== undefined ? args.rowdata["EmployeeID"]: "" }); } } }]
+            { field: "EmployeeID",editTemplate: { create: function () { return "<input>"; }, read: function (args) { return args.ejMaskEdit("get_StrippedValue"); }, write: function (args) { args.element.ejMaskEdit({ width: "100%" ,maskFormat: "9",value: args.rowdata !== undefined ? args.rowdata["EmployeeID"]: "" }); } } }]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1754,16 +1786,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   editSettings:{allowEditing:true},
   columns:[{field:"OrderID"},{field:"CustomerID"},{field:"Freight",editType:ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1805,15 +1838,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1855,15 +1889,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;          
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>          
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID"},{field:"EmployeeID",foreignKeyField:"EmployeeID",foreignKeyValue:"FirstName",headerText:"FirstName",dataSource:window.employeeData },{field:"ShipCity"}]
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -1905,15 +1940,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;  
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>  
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID"},{field:"EmployeeID",foreignKeyField:"EmployeeID",foreignKeyValue:"FirstName",dataSource:window.employeeData,headerText:"FirstName"},{field:"ShipCity"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -1955,15 +1991,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;          
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>          
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID"},{field:"CustomerID"},{field:"Freight",format:"{0:C}"}]
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2005,19 +2042,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;div id="customerTemplate"&gt;
-&lt;span class="e-userlogin e-icon headericon"&gt;&lt;/span&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<div id="customerTemplate">
+<span class="e-userlogin e-icon headericon"></span>
  CUS ID
-&lt;/div&gt;
-&lt;script&gt;
+</div>
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID",headerTemplateID: "#customerTemplate"},{field:"CustomerID"},{field:"ShipCity"}]
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2059,15 +2097,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID",headerText:"Order ID"},{field:"CustomerID",headerText:"Customer ID"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2109,15 +2148,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID",headerTextAlign:ej.TextAlign.Center},{field:"CustomerID",headerTextAlign:ej.TextAlign.Right},{field:"ShipCity"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2159,17 +2199,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({             
   dataSource:window.gridData,
   allowScrolling: true,               
   scrollSettings:{width:500,height:100 }
   columns:[{field:"OrderID",isFrozen:true},{field:"CustomerID"},{field:"ShipCity"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2211,15 +2252,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID"},{field:"CustomerID",isIdentity:true},{field:"ShipCity"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2261,16 +2303,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({             
   dataSource:window.gridData,
   editSettings:{allowEditing:true},
   columns:[{field:"OrderID",isPrimaryKey:true},{field:"CustomerID"},{field:"ShipCity"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2312,15 +2355,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID",isUnbound:false},{field:"CustomerID"},{field:"ShipCity",headerText:"ShipCity"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2362,18 +2406,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script id="columnTemplate" type="text/x-jsrender"&gt;
-&lt;img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/&gt;
-&lt;/script&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script id="columnTemplate" type="text/x-jsrender">
+<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
+</script>
+<script>
 $("#Grid").ejGrid({
  dataSource:window.gridData,
  columns:[{headerText:"Employee",template:true,templateID:"#columnTemplate"},{field:"EmployeeID"}]
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2415,18 +2460,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script id="columnTemplate" type="text/x-jsrender"&gt;
-&lt;img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/&gt;
-&lt;/script&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script id="columnTemplate" type="text/x-jsrender">
+<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
+</script>
+<script>
 $("#Grid").ejGrid({
  dataSource:window.gridData,
  columns:[{headerText:"Employee",template:true,templateID:"#columnTemplate"},{field:"EmployeeID"}]
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2468,15 +2514,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID",textAlign:ej.TextAlign.Center},{field:"CustomerID",textAlign:ej.TextAlign.Right},{field:"ShipCity"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2518,15 +2565,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     columns:[{ field: "OrderID"}, { field: "Verified",type: "boolean" }]
   });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -2552,16 +2600,17 @@ Gets or sets a value that indicates to define constraints for saving data to the
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;          
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>          
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   editSettings: {allowEditing: true, allowAdding: true},
   columns:[{field:"OrderID", validationRules: { required: true, number: true }},{field:"CustomerID"},{field:"ShipCity"}] 
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2603,15 +2652,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID"},{field:"CustomerID",visible:false},{field:"ShipCity"}]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2653,15 +2703,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;          
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>          
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field:"OrderID",width:50},{field:"CustomerID",width:"15%"},{field:"ShipCity",width:"70px"}]
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2725,9 +2776,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    columns:[{field: "OrderID", isPrimaryKey: true},{field: "EmployeeID"}],
@@ -2737,8 +2789,8 @@ $("#Grid").ejGrid({
    allowPaging: true,
    contextMenuSettings: { enableContextMenu: true, contextMenuItems:["Add Record,Edit Record,Delete Record"]  }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2780,17 +2832,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;style type="text/css" class="cssStyles"&gt;
-&lt;/style&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<style type="text/css" class="cssStyles">
+</style>
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData, 
   contextMenuSettings: { enableContextMenu: true, customContextMenuItems:["Hidden Columns,Visible Columns"]  }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -2832,9 +2885,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource: window.gridData,
    columns:[{field: "OrderID", isPrimaryKey: true},{field: "EmployeeID"}],
@@ -2844,8 +2898,8 @@ $("#Grid").ejGrid({
    allowPaging: true,
    contextMenuSettings: { enableContextMenu: true }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2887,24 +2941,25 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;style type="text/css"&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div>
+<style type="text/css">
    .gradient-green {
        font-family: cursive;
    }
    .gradient-green .e-alt_row {
        background: none repeat scroll 0 0 #71A409;
    }
-&lt;/style&gt;
-&lt;script&gt;
+</style>
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    cssClass: "gradient-green"
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2946,15 +3001,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -2996,25 +3052,26 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script id="templateData" type="text/x-jsrender"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;
-&lt;img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/script&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script id="templateData" type="text/x-jsrender">
+<table>
+<tr>
+<td>
+<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
+</td>
+</tr>
+</table>
+</script>
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   detailsTemplate:"#templateData",
   detailsDataBound: "detailGridData",
 });             
-&lt;/script&gt;             </code>
-</pre>
+</script>             {% endhighlight %}
+
 
 
 
@@ -3078,17 +3135,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowAdding: true },
     toolbarSettings: { showToolbar: true, toolbarItems: ["add"] }                             
 });
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -3130,17 +3188,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowDeleting: true },
     toolbarSettings: { showToolbar: true, toolbarItems: ["delete"] }      
 });
-&lt;/script&gt;                  </code>
-</pre>
+</script>                  {% endhighlight %}
+
 
 
 
@@ -3182,17 +3241,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowEditing: true },
     toolbarSettings: { showToolbar: true, toolbarItems: ["edit"] }
 });
-&lt;/script&gt;              </code>
-</pre>
+</script>              {% endhighlight %}
+
 
 
 
@@ -3234,18 +3294,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>Defining editEvent with edit option:
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt; 
+
+{% highlight html %}
+Defining editEvent with edit option:
+<div id="Grid"></div> 
+<script> 
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowEditing: true, allowEditOnDblClick: false },
     toolbarSettings: { showToolbar: true, toolbarItems: ["edit"] }      
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3287,37 +3348,38 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>               
-&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script id="template" type="text/template"&gt;
-   &lt;table&gt;
-       &lt;tr&gt;
-           &lt;td&gt;OrderID&lt;/td&gt;
-           &lt;td&gt;
-               &lt;input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" /&gt;&lt;/td&gt;
-       &lt;/tr&gt;
-       &lt;tr&gt;
-           &lt;td&gt;CustomerID&lt;/td&gt;
-           &lt;td&gt;
-               &lt;input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" /&gt;&lt;/td&gt;
-       &lt;/tr&gt;
-       &lt;tr&gt;
-           &lt;td&gt;EmployeeID&lt;/td&gt;
-           &lt;td&gt;
-               &lt;input id="EmployeeID" name="EmployeeID" value="{{: EmployeeID}}" /&gt;&lt;/td&gt;
-       &lt;/tr&gt;
-   &lt;/table&gt;
-&lt;/script&gt;
-&lt;script&gt;
+
+{% highlight html %}
+               
+<div id="Grid"></div>
+<script id="template" type="text/template">
+   <table>
+       <tr>
+           <td>OrderID</td>
+           <td>
+               <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" /></td>
+       </tr>
+       <tr>
+           <td>CustomerID</td>
+           <td>
+               <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" /></td>
+       </tr>
+       <tr>
+           <td>EmployeeID</td>
+           <td>
+               <input id="EmployeeID" name="EmployeeID" value="{{: EmployeeID}}" /></td>
+       </tr>
+   </table>
+</script>
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowEditing: true, editMode: ej.Grid.EditMode.DialogTemplate, dialogEditorTemplateID: "#template" },
     toolbarSettings: { showToolbar: true, toolbarItems: ["edit"] }                             
 });
-&lt;/script&gt;                </code>
-</pre>
+</script>                {% endhighlight %}
+
 
 
 
@@ -3359,17 +3421,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowEditing: true, editMode: ej.Grid.EditMode.Dialog },
     toolbarSettings: { showToolbar: true, toolbarItems: ["edit"] }                             
 });
-&lt;/script&gt;                          </code>
-</pre>
+</script>                          {% endhighlight %}
+
 
 
 
@@ -3411,37 +3474,38 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>               
-&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script id="template" type="text/template"&gt;
-   &lt;table&gt;
-       &lt;tr&gt;
-           &lt;td&gt;OrderID&lt;/td&gt;
-           &lt;td&gt;
-               &lt;input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" /&gt;&lt;/td&gt;
-       &lt;/tr&gt;
-       &lt;tr&gt;
-           &lt;td&gt;CustomerID&lt;/td&gt;
-           &lt;td&gt;
-               &lt;input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" /&gt;&lt;/td&gt;
-       &lt;/tr&gt;
-       &lt;tr&gt;
-           &lt;td&gt;EmployeeID&lt;/td&gt;
-           &lt;td&gt;
-               &lt;input id="EmployeeID" name="EmployeeID" value="{{: EmployeeID}}" /&gt;&lt;/td&gt;
-       &lt;/tr&gt;
-   &lt;/table&gt;
-&lt;/script&gt;
-&lt;script&gt;
+
+{% highlight html %}
+               
+<div id="Grid"></div>
+<script id="template" type="text/template">
+   <table>
+       <tr>
+           <td>OrderID</td>
+           <td>
+               <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" /></td>
+       </tr>
+       <tr>
+           <td>CustomerID</td>
+           <td>
+               <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" /></td>
+       </tr>
+       <tr>
+           <td>EmployeeID</td>
+           <td>
+               <input id="EmployeeID" name="EmployeeID" value="{{: EmployeeID}}" /></td>
+       </tr>
+   </table>
+</script>
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowEditing: true, editMode: ej.Grid.EditMode.ExternalFormTemplate, externalFormTemplateID: "#template" },
     toolbarSettings: { showToolbar: true, toolbarItems: ["edit"] }                             
 });
-&lt;/script&gt;                </code>
-</pre>
+</script>                {% endhighlight %}
+
 
 
 
@@ -3483,17 +3547,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowAdding: true, allowEditing: true, editMode: ej.Grid.EditMode.ExternalForm, formPosition: ej.Grid.FormPosition.BottomLeft },
     toolbarSettings: { showToolbar: true, toolbarItems: ["edit"] }                             
 });
-&lt;/script&gt;    </code>
-</pre>
+</script>    {% endhighlight %}
+
 
 
 
@@ -3535,37 +3600,38 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>               
-&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script id="template" type="text/template"&gt;
-   &lt;table&gt;
-       &lt;tr&gt;
-           &lt;td&gt;OrderID&lt;/td&gt;
-           &lt;td&gt;
-               &lt;input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" /&gt;&lt;/td&gt;
-       &lt;/tr&gt;
-       &lt;tr&gt;
-           &lt;td&gt;CustomerID&lt;/td&gt;
-           &lt;td&gt;
-               &lt;input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" /&gt;&lt;/td&gt;
-       &lt;/tr&gt;
-       &lt;tr&gt;
-           &lt;td&gt;EmployeeID&lt;/td&gt;
-           &lt;td&gt;
-               &lt;input id="EmployeeID" name="EmployeeID" value="{{: EmployeeID}}" /&gt;&lt;/td&gt;
-       &lt;/tr&gt;
-   &lt;/table&gt;
-&lt;/script&gt;
-&lt;script&gt;
+
+{% highlight html %}
+               
+<div id="Grid"></div>
+<script id="template" type="text/template">
+   <table>
+       <tr>
+           <td>OrderID</td>
+           <td>
+               <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" /></td>
+       </tr>
+       <tr>
+           <td>CustomerID</td>
+           <td>
+               <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" /></td>
+       </tr>
+       <tr>
+           <td>EmployeeID</td>
+           <td>
+               <input id="EmployeeID" name="EmployeeID" value="{{: EmployeeID}}" /></td>
+       </tr>
+   </table>
+</script>
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowEditing: true, editMode: ej.Grid.EditMode.InlineTemplateForm, inlineFormTemplateID: "#template" },
     toolbarSettings: { showToolbar: true, toolbarItems: ["edit"] }                             
 });
-&lt;/script&gt;                </code>
-</pre>
+</script>                {% endhighlight %}
+
 
 
 
@@ -3607,17 +3673,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowEditing: true, allowAdding:true, rowPosition:"bottom" },
     toolbarSettings: { showToolbar: true, toolbarItems: ["add"]  },                             
 });
-&lt;/script&gt;                          </code>
-</pre>
+</script>                          {% endhighlight %}
+
 
 
 
@@ -3659,17 +3726,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowEditing: true, editMode: ej.Grid.EditMode.Batch, showConfirmDialog:false },
     toolbarSettings: { showToolbar: true, toolbarItems: ["edit","update","cancel"] }                             
 });
-&lt;/script&gt;                          </code>
-</pre>
+</script>                          {% endhighlight %}
+
 
 
 
@@ -3711,17 +3779,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     editSettings: { allowDeleting: true, showDeleteConfirmDialog:true },
     toolbarSettings: { showToolbar: true, toolbarItems: ["edit","update","cancel"] }                             
 });
-&lt;/script&gt;                          </code>
-</pre>
+</script>                          {% endhighlight %}
+
 
 
 
@@ -3763,15 +3832,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   enableAltRow:true,
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3813,10 +3883,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     editSettings: { allowEditing: true },
@@ -3824,8 +3895,8 @@ $("#Grid").ejGrid({
     columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
     enableAutoSaveOnSelectionChange: false
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3867,16 +3938,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    enableHeaderHover:true
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3918,17 +3990,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowGrouping: true,
     enablePresistence:true
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -3970,18 +4043,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Grid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Grid"></div> 
  
-&lt;script type="text/javascript"&gt; 
+<script type="text/javascript"> 
 $("#Grid").ejGrid({
   dataSource: window.gridData,
                 isResponsive: true,
                 enableResponsiveRow: true    
 });  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4023,16 +4097,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    enableRowHover:true
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4074,15 +4149,16 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   enableRTL:true,
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4124,16 +4200,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     enableTouch:false
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4197,16 +4274,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
     allowFiltering: true, 
     filterSettings: { enableCaseSensitivity:true, filterType:"excel"}                       
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4248,16 +4326,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowFiltering: true, 
    filterSettings:{ filterBarMode: ej.Grid.FilterBarMode.OnEnter }                
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4293,16 +4372,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowFiltering: true, 
    filterSettings: {  filterType: "menu", filteredColumns: [{ field: "ShipCity", operator: "startswith", value: "re", predicate: "and" }] }                     
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4350,16 +4430,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowFiltering: true, 
    filterSettings: {  filterType: "menu" }                     
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4401,16 +4482,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
     allowFiltering: true, 
     filterSettings: { maxFilterChoices:200, filterType:"excel"}                       
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4452,16 +4534,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowFiltering: true, 
    filterSettings: {  showFilterBarStatus: true }                        
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4503,16 +4586,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
     allowFiltering: true, 
     filterSettings: { showPredicate:true, filterType:"menu"}                       
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -4576,16 +4660,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowGrouping:true,
     groupSettings:{captionFormat: "{{:field}} - {{:key}} : {{:count}} {{if count == 1 }} item {{else}} items {{/if}}"}                          
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4627,16 +4712,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowGrouping: true,
    enableDropAreaAnimation:true                        
 });
-&lt;/script&gt;            </code>
-</pre>
+</script>            {% endhighlight %}
+
 
 
 
@@ -4678,16 +4764,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowGrouping:true,
     groupSettings:{enableDropAreaAutoSizing: true}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4729,16 +4816,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowGrouping:true,
     groupSettings:{groupedColumns:["OrderID"]}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4780,17 +4868,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowGrouping:true,
     groupSettings:{showDropArea:false, groupedColumns: ["ShipCity"]},
     columns: [{ field: "OrderID" }, { field: "CustomerID" }, { field: "ShipCity" }]
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -4832,16 +4921,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowGrouping:true,
     groupSettings:{showGroupedColumn:false}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4883,16 +4973,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowGrouping:true,
     groupSettings:{showToggleButton:true}
 });
-&lt;/script&gt;   </code>
-</pre>
+</script>   {% endhighlight %}
+
 
 
 
@@ -4934,16 +5025,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowGrouping:true,
     groupSettings:{showToggleButton: true, showUngroupButton:true}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -4985,17 +5077,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Grid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Grid"></div> 
  
-&lt;script type="text/javascript"&gt; 
+<script type="text/javascript"> 
 $("#Grid").ejGrid({
   dataSource: window.gridData,
                 isResponsive: true 
 });  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5037,10 +5130,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>            
-&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+            
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
    keySettings: {
@@ -5048,8 +5142,8 @@ saveRequest: "83",
 moveCellRight: "13",
 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5091,10 +5185,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 ej.Pager.locale["es-ES"] = {
    pagerInfo: "{0} de {1} p&aacute;ginas ({2} art&iacute;culos)"
 };
@@ -5103,8 +5198,8 @@ $("#Grid").ejGrid({
   allowPaging:true,
   locale : "es-ES" 
 });
-&lt;/script&gt;             </code>
-</pre>
+</script>             {% endhighlight %}
+
 
 
 
@@ -5146,16 +5241,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData, 
   minWidth: 990,
   isResponsive: true
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5219,16 +5315,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:  window.gridData,
     allowPaging: true,   
     pageSettings: { currentPage: 1 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5270,16 +5367,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:  window.gridData,
     allowPaging: true,   
     pageSettings: {enableQueryString: true }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5321,19 +5419,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script id="pagerTemplate" type="text/x-jsrender"&gt;
- &lt;input type="text" id="txtPageNumber"  value="" style="width: 45px; border: none; cursor: text" /&gt;
-&lt;input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" onclick="gotoPage(this)" /&gt;
-&lt;/script&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script id="pagerTemplate" type="text/x-jsrender">
+ <input type="text" id="txtPageNumber"  value="" style="width: 45px; border: none; cursor: text" />
+<input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" onclick="gotoPage(this)" />
+</script>
+<script>
 $("#Grid").ejGrid({
  dataSource:window.gridData,
  pageSettings:{enableTemplates:true,template:"#pagerTemplate"}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5375,16 +5474,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     allowPaging: true,    
     pageSettings: { pageCount: 1 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5426,16 +5526,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     allowPaging: true,   
     pageSettings: { pageSize: 2 }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5477,19 +5578,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script id="pagerTemplate" type="text/x-jsrender"&gt;
- &lt;input type="text" id="txtPageNumber"  value="" style="width: 45px; border: none; cursor: text" /&gt;
-&lt;input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" /&gt;
-&lt;/script&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script id="pagerTemplate" type="text/x-jsrender">
+ <input type="text" id="txtPageNumber"  value="" style="width: 45px; border: none; cursor: text" />
+<input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" />
+</script>
+<script>
 $("#Grid").ejGrid({
  dataSource:window.gridData,
  pageSettings:{showDefaults:true,enableTemplates:true,templateID:"#pagerTemplate"}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5531,19 +5633,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script id="pagerTemplate" type="text/x-jsrender"&gt;
- &lt;input type="text" id="txtPageNumber"  value="" style="width: 45px; border: none; cursor: text" /&gt;
-&lt;input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" /&gt;
-&lt;/script&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script id="pagerTemplate" type="text/x-jsrender">
+ <input type="text" id="txtPageNumber"  value="" style="width: 45px; border: none; cursor: text" />
+<input type="button" value="Go" style="border: none; cursor: pointer" id="btnGo" />
+</script>
+<script>
 $("#Grid").ejGrid({
  dataSource:window.gridData,
  pageSettings:{enableTemplates:true,template:"#pagerTemplate"}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5585,18 +5688,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;div id="print"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<div id="print"></div>
+<script>
 $("#Grid").ejGrid({
     dataSource:  window.gridData,
     allowPaging: true    
 });
 var value = $("#Grid").ejGrid("option", "pageSettings.totalPages");
 $("#print").text("TotalPages: " + value);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5638,18 +5742,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;div id="print"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<div id="print"></div>
+<script>
 $("#Grid").ejGrid({
     dataSource:  window.gridData,
     allowPaging: true
 });
 var value = $("#Grid").ejGrid("option", "pageSettings.totalRecordsCount");
 $("#print").text("TotalRecordsCount: " + value);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5691,18 +5796,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>       
-&lt;div id="Grid"&gt;&lt;/div&gt; 
+
+{% highlight html %}
+       
+<div id="Grid"></div> 
  
-&lt;script type="text/javascript"&gt;
+<script type="text/javascript">
 var queryOrder=ej.Query().select(["OrderID", "CustomerID"]); 
 $("#Grid").ejGrid({
   dataSource: window.gridData,
   query: queryOrder
 });  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5744,26 +5850,27 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script id="templateData" type="text/x-jsrender"&gt;
-&lt;tr&gt;
-&lt;td&gt;
-&lt;img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/&gt;
-&lt;/td&gt;
-&lt;td&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script id="templateData" type="text/x-jsrender">
+<tr>
+<td>
+<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
+</td>
+<td>
 {{:EmployeeID}}
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/script&gt;
-&lt;script&gt;
+</td>
+</tr>
+</script>
+<script>
 $("#Grid").ejGrid({
  dataSource:window.gridData,
   rowTemplate:"#templateData",
   columns:[{headerText:"Employeephoto"},{field:"EmployeeID",headerText:"EmployeeID"}],
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -5827,16 +5934,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowScrolling: true,
    scrollSettings:{width:300,height:100,allowVirtualScrolling:true}
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5878,16 +5986,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowScrolling: true,
    scrollSettings:{ enableTouchScroll:true }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5929,16 +6038,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowScrolling: true,               
     scrollSettings:{width:500,height:100,frozenColumns:2 }
 });  
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -5980,16 +6090,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowScrolling: true,               
     scrollSettings:{width:300,height:200,frozenRows:2 }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6031,16 +6142,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowScrolling: true,
    scrollSettings:{ height:100 }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6082,16 +6194,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
     dataSource: window.gridData,                     
     allowScrolling:true,
     scrollSettings:{ width:500 , height: 550 , allowVirtualScrolling:true, virtualScrollMode:ej.Grid.VirtualScrollMode.Normal }
 });
-&lt;/script&gt;                          </code>
-</pre>
+</script>                          {% endhighlight %}
+
 
 
 
@@ -6133,16 +6246,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowScrolling: true,
    scrollSettings:{ width:300 }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6184,19 +6298,20 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
 });                       
-&lt;/script&gt;
-&lt;script&gt;
+</script>
+<script>
 // display single or multiple selected records
 $("#Grid").ejGrid("model.selectedRecords")        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6238,16 +6353,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     selectedRowIndex:1
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6311,16 +6427,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:  window.gridData,
     allowSelection: true,   
     selectionSettings: {enableToggle: true }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6362,16 +6479,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSelection: true,   
    selectionSettings: {selectionMode: ["row","cell","column"] }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -6413,16 +6531,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    selectionType:"multiple"
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6464,17 +6583,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
 dataSource:window.gridData,
 columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
 editSettings: { allowEditing: true, allowAdding:true, rowPosition:"bottom", showAddNewRow: true },
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6516,17 +6636,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
 dataSource:window.gridData,
 columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
 editSettings: { allowEditing: true, allowAdding:true, rowPosition:"bottom", showAddNewRow: true },
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6568,16 +6689,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>            
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+            
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     showColumnChooser:true                      
 });
-&lt;/script&gt;                 </code>
-</pre>
+</script>                 {% endhighlight %}
+
 
 
 
@@ -6619,10 +6741,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
@@ -6640,8 +6763,8 @@ $("#Grid").ejGrid({
       { field: "ShipCity", headerText: "Ship City", width: 110 }
       ]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6683,18 +6806,19 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     columns: [{ field: "OrderID"}, { field: "Freight" }, { field: "ShipCity" }],
     showSummary:true,
     summaryRows:[{ title: "sum", summaryColumns: [{summaryType:ej.Grid.SummaryType.Count,displayColumn:"Freight",dataMember:"Freight"}]}]       
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6758,16 +6882,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;          
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>          
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field: "OrderID"},{field: "EmployeeID"}],
   sortSettings: {sortedColumns: [{field:"EmployeeID", direction:"descending"}] }                    
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6809,16 +6934,17 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;          
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>          
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData,
   columns:[{field: "OrderID"},{field: "EmployeeID"}],
   sortSettings: {sortedColumns: [{field:"EmployeeID"}] }             
 });
-&lt;/script&gt;  </code>
-</pre>
+</script>  {% endhighlight %}
+
 
 
 
@@ -6860,10 +6986,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
@@ -6881,8 +7008,8 @@ $("#Grid").ejGrid({
       { field: "ShipCity", headerText: "Ship City", width: 110 }
       ]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6924,10 +7051,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
@@ -6945,8 +7073,8 @@ $("#Grid").ejGrid({
       { field: "ShipCity", headerText: "Ship City", width: 110 }
       ]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -6988,10 +7116,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
@@ -7009,8 +7138,8 @@ $("#Grid").ejGrid({
       { field: "ShipCity", headerText: "Ship City", width: 110 }
       ]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7052,14 +7181,15 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="Grid"&gt;&lt;/div&gt;       
-&lt;style class="temp"&gt;
+
+{% highlight html %}
+  
+<div id="Grid"></div>       
+<style class="temp">
 .temp{
 color:green;}
-&lt;/style&gt;
-&lt;script&gt;
+</style>
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
@@ -7077,8 +7207,8 @@ $("#Grid").ejGrid({
       { field: "ShipCity", headerText: "Ship City", width: 110 }
       ]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7120,10 +7250,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
@@ -7141,8 +7272,8 @@ $("#Grid").ejGrid({
       { field: "ShipCity", headerText: "Ship City", width: 110 }
       ]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7184,10 +7315,11 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>  
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
@@ -7205,8 +7337,8 @@ $("#Grid").ejGrid({
       { field: "ShipCity", headerText: "Ship City", width: 110 }
       ]
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7248,9 +7380,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData,
      showSummary: true,
@@ -7264,8 +7397,8 @@ $("#Grid").ejGrid({
         }]
      }]                                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7307,9 +7440,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData,  
      columns:[{field: "OrderID"},{field: "Freight"}],
@@ -7325,8 +7459,8 @@ $("#Grid").ejGrid({
         showCaptionSummary: true
      }]                                    
 });
-&lt;/script&gt;           </code>
-</pre>
+</script>           {% endhighlight %}
+
 
 
 
@@ -7368,9 +7502,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData, 
      columns:[{field: "OrderID"},{field: "Freight"}],
@@ -7385,8 +7520,8 @@ $("#Grid").ejGrid({
         showTotalSummary: true
      }]                                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7428,9 +7563,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData, 
      columns:[{field: "OrderID"},{field: "Freight"}],
@@ -7444,8 +7580,8 @@ $("#Grid").ejGrid({
         }]
      }]                                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7487,9 +7623,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData,
      columns:[{field: "OrderID"},{field: "Freight"}],
@@ -7504,8 +7641,8 @@ $("#Grid").ejGrid({
         }]
      }]                                    
 });    
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7547,9 +7684,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData,
      columns:[{field: "OrderID"},{field: "Freight"}],
@@ -7563,8 +7701,8 @@ $("#Grid").ejGrid({
         }]
      }]                                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7606,9 +7744,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData,
      columns:[{field: "OrderID"},{field: "Freight"}],
@@ -7622,8 +7761,8 @@ $("#Grid").ejGrid({
         }]
      }]                                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7665,9 +7804,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData,
      columns:[{field: "OrderID"},{field: "Freight"}],
@@ -7682,8 +7822,8 @@ $("#Grid").ejGrid({
         }]
      }]                                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7725,9 +7865,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData,
      showSummary: true,
@@ -7741,8 +7882,8 @@ $("#Grid").ejGrid({
         }]
      }]                                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7784,9 +7925,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData,
      columns:[{field: "OrderID"},{field: "Freight"}],
@@ -7801,8 +7943,8 @@ $("#Grid").ejGrid({
         }]
      }]                                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7844,9 +7986,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData, 
      columns:[{field: "OrderID"},{field: "Freight"}],
@@ -7860,8 +8003,8 @@ $("#Grid").ejGrid({
         }]
      }]                                    
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -7903,9 +8046,10 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
      dataSource:window.gridData,  
      showSummary: true,
@@ -7919,8 +8063,8 @@ $("#Grid").ejGrid({
         }]
      }]                                    
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -7984,21 +8128,22 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;style type="text/css" class="cssStyles"&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<style type="text/css" class="cssStyles">
   .Expand:before
   {
     content:"\e627";
   }
-&lt;/style&gt;
-&lt;script&gt;
+</style>
+<script>
 $("#Grid").ejGrid({
   dataSource:window.gridData, 
   toolbarSettings:{showToolbar:true,customToolbarItems:["Expand"]}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8040,17 +8185,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource: window.gridData,
    columns:[{field: "OrderID", isPrimaryKey: true},{field: "EmployeeID"}],
    editSettings: { allowEditing: true },
    toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Edit] }
 });
-&lt;/script&gt; </code>
-</pre>
+</script> {% endhighlight %}
+
 
 
 
@@ -8092,17 +8238,18 @@ Default Value:
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    columns:[{field: "OrderID", isPrimaryKey: true},{field: "EmployeeID"}],
    editSettings: { allowDeleting: true, allowEditing: true, allowAdding: true },
    toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] }
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8135,22 +8282,24 @@ Add a new record in grid control even allowAdding is set as false.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends an add new record request to the grid
 gridObj.addRecord(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // add new record to the grid
 $("#Editing").ejGrid("addRecord",{OrderID:12333})       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8176,22 +8325,24 @@ Cancel the modified changes in grid control when edit mode is "batch".
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.batchCancel();
 // Cancel added, edited, and deleted changes made in grid
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Cancel added, edited, and deleted changes made in grid
 $("#Grid").ejGrid("batchCancel");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8217,22 +8368,24 @@ Save the modified changes to data source in grid control when edit mode is "batc
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Save added, edited, and deleted changes to source of data
 gridObj.batchSave(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Save added, edited, and deleted changes to source of data
 $("#Grid").ejGrid("batchSave");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8258,22 +8411,24 @@ Send a cancel request in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a cancel request to the grid
 gridObj.cancelEdit(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Sends a cancel request to the grid
 $("#Grid").ejGrid("cancelEdit");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8299,21 +8454,23 @@ It is used to clear all the cell selection.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.clearCellSelection();  // clears all of the cell selection
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;         
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>         
 // clears all of the cell selection
 $("#Grid").ejGrid("clearCellSelection");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8342,7 +8499,8 @@ It is used to clear all the row selection or at specific row selection based on 
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last"><span class="optional">optional</span> If index of the column is specified then it will remove the selection from the particular column else it will clears all of the column selection</td>
 </tr>
@@ -8355,24 +8513,26 @@ It is used to clear all the row selection or at specific row selection based on 
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.clearColumnSelection(2);  // Removes the selection based on the column index
 gridObj.clearColumnSelection();  // clears all of the column selection
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Removes the selection based on the column index
 $("#Grid").ejGrid("clearColumnSelection", 2);   
 // clears all of the column selection
 $("#Grid").ejGrid("clearColumnSelection");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8401,7 +8561,8 @@ Clear all the row selection or at specific row selection based on the index prov
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last"><span class="optional">optional</span> If index of the row is specified then it will remove the selection from the particular row else it will clears all of the row selection</td>
 </tr>
@@ -8414,24 +8575,26 @@ Clear all the row selection or at specific row selection based on the index prov
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.clearSelection(2);  // Removes the selection based on the row index
 gridObj.clearSelection();  // clears all of the row selection
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Removes the selection based on the row index
 $("#Grid").ejGrid("clearSelection", 2);   
 // clears all of the row selection
 $("#Grid").ejGrid("clearSelection");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8457,22 +8620,24 @@ Clear the sorting from columns in the grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Clears the sorting from columns in the grid
 gridObj.clearSorting(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Clears the sorting from columns in the grid
 $("#Grid").ejGrid("clearSorting");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8498,22 +8663,24 @@ Collapse all the group caption rows in grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Collapse all the group caption rows
 gridObj.collapseAll(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Collapse all the group caption rows
 $("#Grid").ejGrid("collapseAll");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8539,22 +8706,24 @@ Collapse the group drop area in grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Collapse the group drop area of the grid
 gridObj.collapseGroupDropArea(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Collapse the group drop area of the grid
 $("#Grid").ejGrid("collapseGroupDropArea");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8583,12 +8752,14 @@ Add or remove columns in grid column collections
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>columndetails</code></td>
+<td class="name">{% highlight html %}
+columndetails{% endhighlight %}</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">Pass array of columns or string of field name to add/remove the column in grid</td>
 </tr>
 <tr>
-<td class="name"><code>action</code></td>
+<td class="name">{% highlight html %}
+action{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last"><span class="optional">optional</span> Pass add/remove action to be performed. By default "add" action will perform</td>
 </tr>
@@ -8601,26 +8772,28 @@ Add or remove columns in grid column collections
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // remove grid column
 gridObj.columns("OrderID", "remove");
 // Add new column into grid or modified already existing column in the grid.
 gridObj.columns("CustomerID", "add"); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // remove grid column
 $("#Grid").ejGrid("columns","OrderID", "remove");   
 // Add new column into grid or modified already existing column in the grid.                    
 $("#Grid").ejGrid("columns","CustomerID", "add");                       
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8649,7 +8822,8 @@ Refresh the grid with new data source
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>datasource</code></td>
+<td class="name">{% highlight html %}
+datasource{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass new data source to the grid</td>
 </tr>
@@ -8662,22 +8836,24 @@ Refresh the grid with new data source
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Refreshes the grid data source
 gridObj.dataSource(data); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Refreshes the grid data source
 $("#Grid").ejGrid("dataSource", data);        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8706,12 +8882,14 @@ Delete a record in grid control even allowDeleting is set as false
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the primary key field Name of the column</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass the json data of record need to be delete.</td>
 </tr>
@@ -8724,22 +8902,24 @@ Delete a record in grid control even allowDeleting is set as false
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a delete record request to the grid
 gridObj.deleteRecord("OrderID", { OrderID: 10249, EmployeeID: 3 }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Sends a delete record request to the grid
 $("#Grid").ejGrid("deleteRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8765,20 +8945,22 @@ Destroy the grid widget all events bound using this._on will be unbind automatic
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.destroy(); // destroy the Grid
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // destroy the Grid
 $("#Grid").ejGrid("destroy");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8807,12 +8989,14 @@ Edit a particular cell based on the row index and field name provided in "batch"
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>index</code></td>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass row index to edit particular cell</td>
 </tr>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column to perform batch edit</td>
 </tr>
@@ -8825,20 +9009,22 @@ Edit a particular cell based on the row index and field name provided in "batch"
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;script&gt;
+
+{% highlight html %}
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Edit particular cell based on row index and column field name
 gridObj.editCell(2, "OrderID"); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
 // Edit particular cell based on row index and column field name
 $("#Grid").ejGrid("editCell", 2, "OrderID");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8864,22 +9050,24 @@ Send a save request in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a save request to the grid
 gridObj.endEdit(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Sends a save request to the grid
 $("#Grid").ejGrid("endEdit");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8905,22 +9093,24 @@ Expand all the group caption rows in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Expand all the group caption rows
 gridObj.expandAll(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Expand all the group caption rows
 $("#Grid").ejGrid("expandAll");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -8949,7 +9139,8 @@ Expand or collapse the row based on the row state in grid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>$target</code></td>
+<td class="name">{% highlight html %}
+$target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass the target object to expand/collapse the row based on its row state</td>
 </tr>
@@ -8962,22 +9153,24 @@ Expand or collapse the row based on the row state in grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Expands or collapses the row based on the row state
-gridObj.expandCollapse($("tr td.recordplusexpand &gt; div").first());  
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+gridObj.expandCollapse($("tr td.recordplusexpand > div").first());  
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Expands or collapses the row based on the row state
-$("#Grid").ejGrid("expandCollapse", $("tr td.recordplusexpand &gt; div").first());        
-&lt;/script&gt;</code>
-</pre>
+$("#Grid").ejGrid("expandCollapse", $("tr td.recordplusexpand > div").first());        
+</script>{% endhighlight %}
+
 
 
 
@@ -9003,22 +9196,24 @@ Expand the group drop area in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Expands the group drop area of the grid
 gridObj.expandGroupDropArea(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Expands the group drop area of the grid
 $("#Grid").ejGrid("expandGroupDropArea");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9047,27 +9242,32 @@ Send a filtering request to grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column</td>
 </tr>
 <tr>
-<td class="name"><code>filterOperator</code></td>
+<td class="name">{% highlight html %}
+filterOperator{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">string/integer/dateTime operator</td>
 </tr>
 <tr>
-<td class="name"><code>filterValue</code></td>
+<td class="name">{% highlight html %}
+filterValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string/number</span></td>
 <td class="description last">Pass the value to be filtered in a column</td>
 </tr>
 <tr>
-<td class="name"><code>predicate</code></td>
+<td class="name">{% highlight html %}
+predicate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the predicate as and/or</td>
 </tr>
 <tr>
-<td class="name"><code>matchcase</code></td>
+<td class="name">{% highlight html %}
+matchcase{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last"><span class="optional">optional</span> Pass the match case valueas true/false</td>
 </tr>
@@ -9080,21 +9280,23 @@ Send a filtering request to grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a filtering request to the grid
 gridObj.filterColumn("OrderID","equal","10248","and", true);
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
 // Sends a filtering request to the grid
 $("#Grid").ejGrid("filterColumn","OrderID","equal","10248","and", true);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9120,20 +9322,22 @@ Get the batch changes of edit, delete and add operations of grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;script&gt;
+
+{% highlight html %}
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the edit, delete, and add changes of a grid
 gridObj.getBatchChanges(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
 // Gets the edit, delete, and add changes of a grid
 $("#Grid").ejGrid("getBatchChanges");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9159,24 +9363,26 @@ Get the browser details
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the browser details of the application being run
 gridObj.getBrowserDetails(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Gets the browser details of the application being run
 $("#Grid").ejGrid("getBrowserDetails");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9205,7 +9411,8 @@ Get the column details based on the given field in grid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column to get the corresponding column object</td>
 </tr>
@@ -9224,22 +9431,24 @@ Object
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column details based on the given field name
 gridObj.getColumnByField("OrderID");
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the column details based on the given field name
 $("#Grid").ejGrid("getColumnByField", "OrderID");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9268,7 +9477,8 @@ Get the column details based on the given header text in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>headerText</code></td>
+<td class="name">{% highlight html %}
+headerText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the header text of the column to get the corresponding column object</td>
 </tr>
@@ -9287,22 +9497,24 @@ Object
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column details based on the given headerText
 gridObj.getColumnByHeaderText("Order ID"); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the column details based on the given headerText
 $("#Grid").ejGrid("getColumnByHeaderText", "Order ID");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9331,7 +9543,8 @@ Get the column details based on the given column index in grid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>columnIndex</code></td>
+<td class="name">{% highlight html %}
+columnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the index of the column to get the corresponding column object</td>
 </tr>
@@ -9350,22 +9563,24 @@ Object
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column details based on the given column index
 gridObj.getColumnByIndex(1); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the column details based on the given column index
 $("#Grid").ejGrid("getColumnByIndex", 1);        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9391,22 +9606,24 @@ Get the list of field names from column collection in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column field names based on the given index
 gridObj.getColumnFieldNames(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the column field names based on the given index
 $("#Grid").ejGrid("getColumnFieldNames");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9435,7 +9652,8 @@ Get the column index of the given field in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column to get the corresponding column index</td>
 </tr>
@@ -9454,24 +9672,26 @@ Index
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column index based on the given field name
 gridObj.getColumnIndexByField("OrderID"); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Gets the column index based on the given field name
 $("#Grid").ejGrid("getColumnIndexByField", "OrderID");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9497,22 +9717,24 @@ Get the content div element of grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets content of grid control
 gridObj.getContent(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets content of grid control
 $("#Grid").ejGrid("getContent");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9538,22 +9760,24 @@ Get the content table element of grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets content table of grid control
 gridObj.getContentTable();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets content table of grid control
 $("#Grid").ejGrid("getContentTable");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9579,22 +9803,24 @@ Get the data of currently edited cell value in "batch" edit mode
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Get data of currently edited cell value
 gridObj.getCurrentEditCellData(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Get data of currently edited cell value
 $("#Grid").ejGrid("getCurrentEditCellData");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9626,22 +9852,24 @@ PageIndex
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the current page index in grid
 gridObj.getCurrentIndex();  
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the current page index in grid
 $("#Grid").ejGrid("getCurrentIndex");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9667,22 +9895,24 @@ Get the current page data source of grid..
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets current view data of grid control
 gridObj.getCurrentViewData(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets current view data of grid control
 $("#Grid").ejGrid("getCurrentViewData");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9711,7 +9941,8 @@ Get the column field name from the given header text in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>headerText</code></td>
+<td class="name">{% highlight html %}
+headerText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass header text of the column to get its corresponding field name</td>
 </tr>
@@ -9724,22 +9955,24 @@ Get the column field name from the given header text in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column field name from the given headerText
 gridObj.getFieldNameByHeaderText("Order ID"); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the column field name from the given headerText
 $("#Grid").ejGrid("getFieldNameByHeaderText", "Order ID");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9765,22 +9998,24 @@ Get the filter bar of grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets filter bar of grid control
 gridObj.getFilterBar(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets filter bar of grid control
 $("#Grid").ejGrid("getFilterBar");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9806,22 +10041,24 @@ Get the records filtered or searched in Grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the filtered or searched records in Grid
 gridObj.getFilteredRecords();  
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the filtered or searched records in Grid
 $("#Grid").ejGrid("getFilteredRecords");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9847,22 +10084,24 @@ Get the footer content of grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets grid footer content of grid control
 gridObj.getFooterContent(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets grid footer content of grid control
 $("#Grid").ejGrid("getFooterContent");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9888,22 +10127,24 @@ Get the footer table element of grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets grid footer table of grid control
 gridObj.getFooterTable(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets grid footer table of grid control
 $("#Grid").ejGrid("getFooterTable");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9929,22 +10170,24 @@ Get the header content div element of grid..
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets grid header content of grid control
 gridObj.getHeaderContent(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets grid header content of grid control
 $("#Grid").ejGrid("getHeaderContent");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -9970,22 +10213,24 @@ Get the header table element of grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.getHeaderTable(); 
 // Gets header table of grid control
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets header table of grid control
 $("#Grid").ejGrid("getHeaderTable");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10014,7 +10259,8 @@ Get the column header text from the given field name in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>field</code></td>
+<td class="name">{% highlight html %}
+field{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass field name of the column to get its corresponding header text</td>
 </tr>
@@ -10027,21 +10273,23 @@ Get the column header text from the given field name in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.getHeaderTextByFieldName("OrderID"); // Gets the column header text from the given field name
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the column header text from the given field name
 $("#Grid").ejGrid("getHeaderTextByFieldName", "OrderID");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10067,22 +10315,24 @@ Get the names of all the hidden column collections in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets names of all the hidden column collections
 gridObj.getHiddenColumnNames(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets names of all the hidden column collections
 $("#Grid").ejGrid("getHiddenColumnNames");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10111,7 +10361,8 @@ Get the row index based on the given tr element in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>$tr</code></td>
+<td class="name">{% highlight html %}
+$tr{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass the tr element in grid content to get its row index</td>
 </tr>
@@ -10130,22 +10381,24 @@ index
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the row index based on the given row
 gridObj.getIndexByRow($(".gridcontent tr").first()); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the row index based on the given row
 $("#Grid").ejGrid("getIndexByRow", $(".gridcontent tr").first());        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10171,22 +10424,24 @@ Get the pager of grid..
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets grid pager of grid control
 gridObj.getPager(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets grid pager of grid control
 $("#Grid").ejGrid("getPager");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10218,22 +10473,24 @@ key fields
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the names of primary key columns
 gridObj.getPrimaryKeyFieldNames(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the names of primary key columns
 $("#Grid").ejGrid("getPrimaryKeyFieldNames");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10262,12 +10519,14 @@ Get the rows(tr element) from the given from and to row index in grid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>from</code></td>
+<td class="name">{% highlight html %}
+from{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the from index from which the rows to be returned</td>
 </tr>
 <tr>
-<td class="name"><code>to</code></td>
+<td class="name">{% highlight html %}
+to{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the to index to which the rows to be returned</td>
 </tr>
@@ -10280,22 +10539,24 @@ Get the rows(tr element) from the given from and to row index in grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the rows from the specified row index 
 gridObj.getRowByIndex(3, 6);  
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the rows from the specified row index
 $("#Grid").ejGrid("getRowByIndex", 3, 6);   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10321,22 +10582,24 @@ Get the row height of grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the row height of the grid
 gridObj.getRowHeight();  
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the row height of the grid
 $("#Grid").ejGrid("getRowHeight");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10362,22 +10625,24 @@ Get the rows(tr element)of grid which is displayed in the current page.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets grid rows of grid control
 gridObj.getRows(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets grid rows of grid control
 $("#Grid").ejGrid("getRows");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10403,22 +10668,24 @@ Get the scroller object of grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets scroll object of grid control
 gridObj.getScrollObject(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets scroll object of grid control
 $("#Grid").ejGrid("getScrollObject");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10444,22 +10711,24 @@ Get the selected records details in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the selected row list
 gridObj.getSelectedRecords();
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the selected row list
 $("#Grid").ejGrid("getSelectedRecords");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10485,22 +10754,24 @@ Get the names of all the visible column collections in grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the names of all the visible column collections
 gridObj.getVisibleColumnNames(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Gets the names of all the visible column collections
 $("#Grid").ejGrid("getVisibleColumnNames");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10529,7 +10800,8 @@ Send a paging request to specified page in grid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>pageIndex</code></td>
+<td class="name">{% highlight html %}
+pageIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pass the page index to perform paging at specified page index</td>
 </tr>
@@ -10542,22 +10814,24 @@ Send a paging request to specified page in grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a paging request to the grid with specified page index
 gridObj.gotoPage(3);
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Sends a paging request to the grid with specified page index
 $("#Grid").ejGrid("gotoPage", 3);        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10586,7 +10860,8 @@ Send a column grouping request in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field Name of the column to be grouped in grid control</td>
 </tr>
@@ -10599,22 +10874,24 @@ Send a column grouping request in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a group column request to the grid
 gridObj.groupColumn("OrderID"); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Sends a group column request to the grid
 $("#Grid").ejGrid("groupColumn", "OrderID");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10643,7 +10920,8 @@ Hide columns from the grid based on the header text
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>headerText</code></td>
+<td class="name">{% highlight html %}
+headerText{% endhighlight %}</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">you can pass either array of header text of various columns or a header text of a column to hide</td>
 </tr>
@@ -10656,24 +10934,26 @@ Hide columns from the grid based on the header text
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.hideColumns("Order ID"); // Hides column based on the given header text of the column
 gridObj.hideColumns(["Order ID", "Customer ID"]); // Hide columns based on the array of header text of the columns given
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Hide column based on the given header text of the column
 $("#Grid").ejGrid("hideColumns", "Order ID"); 
 // Hide columns based on the array of header text of the columns given
 $("#Grid").ejGrid("hideColumns", ["Order ID", "Customer ID"]);                  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10699,24 +10979,26 @@ Print the grid control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // It prints the grid.
 gridObj.print(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&amp;dgt; 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div&amp;dgt; 
+<script>
 // It prints the grid.
 $("#Grid").ejGrid("print");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10742,22 +11024,24 @@ It is used to refresh and reset the changes made in "batch" edit mode
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.refreshBatchEditChanges(); 
 // It is used to refresh and reset the changes made in batch edit mode
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // It is used to refresh and reset the changes made in batch edit mode
 $("#Grid").ejGrid("refreshBatchEditChanges");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10786,7 +11070,8 @@ Refresh the grid contents. The template refreshment is based on the argument pas
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>templateRefresh</code></td>
+<td class="name">{% highlight html %}
+templateRefresh{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last"><span class="optional">optional</span> When templateRefresh is set true, template and grid contents both are refreshed in grid else only grid content is refreshed</td>
 </tr>
@@ -10799,26 +11084,28 @@ Refresh the grid contents. The template refreshment is based on the argument pas
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.refreshContent(); // Refreshes the grid contents only
 gridObj.refreshContent(true); // Refreshes the template and grid contents
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Refreshes the grid contents only
 $("#Grid").ejGrid("refreshContent");        
 // Refreshes the template and grid contents
 $("#Grid").ejGrid("refreshContent", true);        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10844,22 +11131,24 @@ Refresh the template of the grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Refreshes the template of the grid control
 gridObj.refreshTemplate(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Refreshes the template of the grid control.
 $("#Grid").ejGrid("refreshTemplate");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10885,24 +11174,26 @@ Refresh the toolbar items in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Refreshes the toolbar items state
 gridObj.refreshToolbar(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Refreshes the toolbar items state
 $("#Grid").ejGrid("refreshToolbar");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10931,7 +11222,8 @@ Remove a column or collection of columns from a sorted column collections in gri
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">Pass array of field names of the columns to remove a collection of sorted columns or pass a string of field name to remove a column from sorted column collections</td>
 </tr>
@@ -10944,26 +11236,28 @@ Remove a column or collection of columns from a sorted column collections in gri
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Removes a column from sorted column collections
 gridObj.removeSortedColumns("OrderID"); 
 // Removes specified collection of columns from sorted column collections
 gridObj.removeSortedColumns(["CustomerID", "ShipCity"]); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Removes a column from sorted column collections
 $("#Grid").ejGrid("removeSortedColumns", "OrderID");        
 // Removes specified collection of columns from sorted column collections
 $("#Grid").ejGrid("removeSortedColumns", ["CustomerID", "ShipCity"]);        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -10989,24 +11283,26 @@ Creates a grid control
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // It renders the grid.
 gridObj.render(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&amp;dgt; 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div&amp;dgt; 
+<script>
 // It renders the grid.
 $("#Grid").ejGrid("render");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11035,12 +11331,14 @@ Re-order the column in grid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fromFieldName</code></td>
+<td class="name">{% highlight html %}
+fromFieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the from field name of the column needs to be changed</td>
 </tr>
 <tr>
-<td class="name"><code>toFieldName</code></td>
+<td class="name">{% highlight html %}
+toFieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the to field name of the column needs to be changed</td>
 </tr>
@@ -11053,22 +11351,24 @@ Re-order the column in grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Reorders the column based on the given index
 gridObj.reorderColumns("OrderID", "CustomerID"); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Reorders the column based on the given index
 $("#Grid").ejGrid("reorderColumns", "OrderID", "CustomerID");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11094,22 +11394,24 @@ Reset the model collections like pageSettings, groupSettings, filterSettings, so
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Reset model collections
 gridObj.resetModelCollections(); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Reset model collections
 $("#Grid").ejGrid("resetModelCollections");
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11135,23 +11437,25 @@ Resolves row height issue when unbound column is used with FrozenColumn
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.rowHeightRefresh(); // Resolves row height issue
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;         
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>         
 // Resolves row height issue
 $("#Grid").ejGrid("rowHeightRefresh");   
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11180,7 +11484,8 @@ Send a search request to grid with specified string passed in it
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>searchString</code></td>
+<td class="name">{% highlight html %}
+searchString{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the string to search in Grid records</td>
 </tr>
@@ -11193,21 +11498,23 @@ Send a search request to grid with specified string passed in it
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a search request to the grid
 gridObj.search("France"); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code>&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
 // Sends a search request to the grid
 $("#Grid").ejGrid("search", "France");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11236,7 +11543,8 @@ Select cells in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>rowCellIndexes</code></td>
+<td class="name">{% highlight html %}
+rowCellIndexes{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">It is used to set the starting index of row and indexes of cells for that corresponding row for selecting cells.</td>
 </tr>
@@ -11249,22 +11557,24 @@ Select cells in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Selects cells based on the given index
 gridObj.selectCells([[1, [4, 3, 2]]]); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Selects cells based on the given index
 $("#Grid").ejGrid("selectCells", [[1, [4, 3, 2]]]);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11293,7 +11603,8 @@ Select columns in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fromIndex</code></td>
+<td class="name">{% highlight html %}
+fromIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the starting index of column for selecting columns.</td>
 </tr>
@@ -11306,22 +11617,24 @@ Select columns in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Selects columns based on the given index
 gridObj.selectColumns(1,4); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Selects columns based on the given index
 $("#Grid").ejGrid("selectColumns", 1, 4);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11350,12 +11663,14 @@ Select rows in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fromIndex</code></td>
+<td class="name">{% highlight html %}
+fromIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the starting index of row for selecting rows.</td>
 </tr>
 <tr>
-<td class="name"><code>toIndex</code></td>
+<td class="name">{% highlight html %}
+toIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">It is used to set the ending index of row for selecting rows.</td>
 </tr>
@@ -11368,22 +11683,24 @@ Select rows in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Selects rows based on the given index
 gridObj.selectRows(1, 4); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Selects rows based on the given index
 $("#Grid").ejGrid("selectRows", 1, 4);
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11412,12 +11729,14 @@ Set validation to a field during editing.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Specify the field name of the column to set validation rules</td>
 </tr>
 <tr>
-<td class="name"><code>rules</code></td>
+<td class="name">{% highlight html %}
+rules{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Specify the validation rules for the field</td>
 </tr>
@@ -11430,22 +11749,24 @@ Set validation to a field during editing.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // It is used to set validation to a field during editing
 gridObj.setValidationToField("OrderID", { required: true }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // It is used to set validation to a field during editing
 $("#Grid").ejGrid("setValidationToField", "OrderID", { required: true });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11474,7 +11795,8 @@ Show columns in the grid based on the header text
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>headerText</code></td>
+<td class="name">{% highlight html %}
+headerText{% endhighlight %}</td>
 <td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">you can pass either array of header text of various columns or a header text of a column to show</td>
 </tr>
@@ -11487,24 +11809,26 @@ Show columns in the grid based on the header text
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.showColumns("Order ID"); // Shows column based on the given header text of the column
 gridObj.showColumns(["Order ID", "Customer ID"]); // Shows columns based on the array of header text of the columns given
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Shows column based on the given header text of the column
 $("#Grid").ejGrid("showColumns", "Order ID"); 
 // Shows columns based on the array of header text of the columns given
 $("#Grid").ejGrid("showColumns", ["Order ID", "Customer ID"]);                  
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11533,12 +11857,14 @@ Send a sorting request in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field name of the column as columnName for which sorting have to be performed</td>
 </tr>
 <tr>
-<td class="name"><code>sortingDirection</code></td>
+<td class="name">{% highlight html %}
+sortingDirection{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last"><span class="optional">optional</span> Pass the sort direction ascending/descending by which the column have to be sort. By default it is sorting in an ascending order</td>
 </tr>
@@ -11551,21 +11877,23 @@ Send a sorting request in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.sortColumn("OrderID", "ascending"); // Sends a sorting request to the grid with specified columnName and sortDirection
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Sends a sorting request to the grid with specified columnName and sortDirection
 $("#Grid").ejGrid("sortColumn", "OrderID", "ascending");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11594,7 +11922,8 @@ Send an edit record request in grid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>$tr</code></td>
+<td class="name">{% highlight html %}
+$tr{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Pass the tr- selected row element to be edited in grid</td>
 </tr>
@@ -11607,22 +11936,24 @@ Send an edit record request in grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends an edit record request to the grid
 gridObj.startEdit($(".gridcontent tr").first()); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Sends an edit record request to the grid
 $("#Grid").ejGrid("startEdit", $(".gridcontent tr").first());        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11651,7 +11982,8 @@ Un-group a column from grouped columns collection in grid
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the field Name of the column to be ungrouped from grouped column collection</td>
 </tr>
@@ -11664,22 +11996,24 @@ Un-group a column from grouped columns collection in grid
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends an ungroup column request to the grid
 gridObj.ungroupColumn("OrderID"); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Sends an ungroup column request to the grid
 $("#Grid").ejGrid("ungroupColumn", "OrderID");        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11708,12 +12042,14 @@ Update a edited record in grid control even allowEditing is set as false.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>fieldName</code></td>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Pass the primary key field Name of the column</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Pass the edited json data of record need to be update.</td>
 </tr>
@@ -11726,22 +12062,24 @@ Update a edited record in grid control even allowEditing is set as false.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a update record request to the grid
 gridObj.updateRecord("OrderID", { OrderID: 10249, EmployeeID: 3 }); 
-&lt;/script&gt;</code>
-</pre>
-<pre class="prettyprint">
-<code> 
-&lt;script&gt;
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
 // Sends a update record request to the grid
 $("#Grid").ejGrid("updateRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });        
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -11777,7 +12115,8 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid is initialized:
 <table class="params">
@@ -11790,17 +12129,20 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11809,7 +12151,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid paging action starts:
 <table class="params">
@@ -11822,42 +12165,50 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentPage</code></td>
+<td class="name">{% highlight html %}
+currentPage{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the current selected page number.</td>
 </tr>
 <tr>
-<td class="name"><code>previousPage</code></td>
+<td class="name">{% highlight html %}
+previousPage{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected page number.</td>
 </tr>
 <tr>
-<td class="name"><code>endIndex</code></td>
+<td class="name">{% highlight html %}
+endIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the end row index of that current page.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>startIndex</code></td>
+<td class="name">{% highlight html %}
+startIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the start row index of that current page.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11866,7 +12217,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid sorting action starts:
 <table class="params">
@@ -11879,32 +12231,38 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>columnSortDirection</code></td>
+<td class="name">{% highlight html %}
+columnSortDirection{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column sort direction.</td>
 </tr>
@@ -11913,7 +12271,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid grouping action starts:
 <table class="params">
@@ -11926,27 +12285,32 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -11955,7 +12319,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record editing action starts:
 <table class="params">
@@ -11968,47 +12333,56 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current edited row.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>primaryKey</code></td>
+<td class="name">{% highlight html %}
+primaryKey{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key.</td>
 </tr>
 <tr>
-<td class="name"><code>primaryKeyValue</code></td>
+<td class="name">{% highlight html %}
+primaryKeyValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key value.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>rowIndex</code></td>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the edited row index.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12017,7 +12391,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record save action starts:
 <table class="params">
@@ -12030,37 +12405,44 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>selectedRow</code></td>
+<td class="name">{% highlight html %}
+selectedRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected row index.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12069,7 +12451,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record cancel action starts:
 <table class="params">
@@ -12082,22 +12465,26 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12106,7 +12493,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid record delete action starts:
 <table class="params">
@@ -12119,37 +12507,44 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>tr</code></td>
+<td class="name">{% highlight html %}
+tr{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns selected row for delete.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12158,7 +12553,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when add new record action starts:
 <table class="params">
@@ -12171,27 +12567,32 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12200,7 +12601,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid filtering action starts:
 <table class="params">
@@ -12213,32 +12615,38 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentFilteringColumn</code></td>
+<td class="name">{% highlight html %}
+currentFilteringColumn{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current filtering column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>filterCollection</code></td>
+<td class="name">{% highlight html %}
+filterCollection{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns filter details.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12247,12 +12655,14 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid excel filtering action starts:</td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterbeforeopen"
 <table class="params">
@@ -12265,37 +12675,44 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>columnType</code></td>
+<td class="name">{% highlight html %}
+columnType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns type of the column like number, string and so on.</td>
 </tr>
 <tr>
-<td class="name"><code>filtermodel</code></td>
+<td class="name">{% highlight html %}
+filtermodel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterbeforeopen".</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12304,7 +12721,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicerequest"
 <table class="params">
@@ -12317,37 +12735,44 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>dataSource</code></td>
+<td class="name">{% highlight html %}
+dataSource{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the dataSource.</td>
 </tr>
 <tr>
-<td class="name"><code>filtermodel</code></td>
+<td class="name">{% highlight html %}
+filtermodel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>query</code></td>
+<td class="name">{% highlight html %}
+query{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the query manager.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterchoicerequest".</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12356,7 +12781,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicesearch"
 <table class="params">
@@ -12369,37 +12795,44 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>dataSource</code></td>
+<td class="name">{% highlight html %}
+dataSource{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the dataSource.</td>
 </tr>
 <tr>
-<td class="name"><code>filtermodel</code></td>
+<td class="name">{% highlight html %}
+filtermodel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>query</code></td>
+<td class="name">{% highlight html %}
+query{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the query manager.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterchoicesearch".</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12408,7 +12841,8 @@ Triggered for every grid action before its starts.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterbeforeopen"
 <table class="params">
@@ -12421,42 +12855,50 @@ Triggered for every grid action before its starts.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>columnType</code></td>
+<td class="name">{% highlight html %}
+columnType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns type of the column like number, string and so on.</td>
 </tr>
 <tr>
-<td class="name"><code>filtermodel</code></td>
+<td class="name">{% highlight html %}
+filtermodel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name"><code>isCustomFilter</code></td>
+<td class="name">{% highlight html %}
+isCustomFilter{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the customfilter option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterbeforeopen".</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12473,15 +12915,16 @@ Triggered for every grid action before its starts.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    actionBegin: function (args){}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -12510,7 +12953,8 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionComplete when grid is initialized.
 <table class="params">
@@ -12523,22 +12967,26 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12547,7 +12995,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionComplete after grid paging action is completed.
 <table class="params">
@@ -12560,52 +13009,62 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentPage</code></td>
+<td class="name">{% highlight html %}
+currentPage{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the current selected page number.</td>
 </tr>
 <tr>
-<td class="name"><code>previousPage</code></td>
+<td class="name">{% highlight html %}
+previousPage{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected page number.</td>
 </tr>
 <tr>
-<td class="name"><code>endIndex</code></td>
+<td class="name">{% highlight html %}
+endIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the end row index of that current page.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>startIndex</code></td>
+<td class="name">{% highlight html %}
+startIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the start row index of the current page.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12614,7 +13073,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid sorting action is completed.
 <table class="params">
@@ -12627,42 +13087,50 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current sorted column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>columnSortDirection</code></td>
+<td class="name">{% highlight html %}
+columnSortDirection{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column sort direction.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12671,7 +13139,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid grouping action is completed.
 <table class="params">
@@ -12684,37 +13153,44 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12723,7 +13199,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record editing action is completed.
 <table class="params">
@@ -12736,52 +13213,62 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current edited row.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>primaryKey</code></td>
+<td class="name">{% highlight html %}
+primaryKey{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key.</td>
 </tr>
 <tr>
-<td class="name"><code>primaryKeyValue</code></td>
+<td class="name">{% highlight html %}
+primaryKeyValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key value.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>rowIndex</code></td>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the edited row index.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12790,7 +13277,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record save action is completed.
 <table class="params">
@@ -12803,47 +13291,56 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>selectedRow</code></td>
+<td class="name">{% highlight html %}
+selectedRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selectedRow index.</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12852,7 +13349,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record cancel action is completed.
 <table class="params">
@@ -12865,32 +13363,38 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12899,7 +13403,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record delete action is completed.
 <table class="params">
@@ -12912,47 +13417,56 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>tr</code></td>
+<td class="name">{% highlight html %}
+tr{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns selected row for delete.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -12961,7 +13475,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after add new record action is completed.
 <table class="params">
@@ -12974,42 +13489,50 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns empty record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -13018,7 +13541,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid filtering action is completed.
 <table class="params">
@@ -13031,42 +13555,50 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentFilteringColumn</code></td>
+<td class="name">{% highlight html %}
+currentFilteringColumn{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current filtering column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>filterCollection</code></td>
+<td class="name">{% highlight html %}
+filterCollection{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns filter details.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -13075,12 +13607,14 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid excel filtering action end:</td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicerequest"
 <table class="params">
@@ -13093,32 +13627,38 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>dataSource</code></td>
+<td class="name">{% highlight html %}
+dataSource{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the dataSource.</td>
 </tr>
 <tr>
-<td class="name"><code>filtermodel</code></td>
+<td class="name">{% highlight html %}
+filtermodel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterchoicerequest".</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -13127,7 +13667,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterafteropen"
 <table class="params">
@@ -13140,37 +13681,44 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>columnType</code></td>
+<td class="name">{% highlight html %}
+columnType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns type of the column like number, string and so on.</td>
 </tr>
 <tr>
-<td class="name"><code>filtermodel</code></td>
+<td class="name">{% highlight html %}
+filtermodel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterafteropen".</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -13179,7 +13727,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterchoicesearch"
 <table class="params">
@@ -13192,32 +13741,38 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>dataSource</code></td>
+<td class="name">{% highlight html %}
+dataSource{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the dataSource.</td>
 </tr>
 <tr>
-<td class="name"><code>filtermodel</code></td>
+<td class="name">{% highlight html %}
+filtermodel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterchoicesearch".</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -13226,7 +13781,8 @@ Triggered for every grid action success event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters when grid request type as "filterafteropen"
 <table class="params">
@@ -13239,42 +13795,50 @@ Triggered for every grid action success event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>columnType</code></td>
+<td class="name">{% highlight html %}
+columnType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns type of the column like number, string and so on.</td>
 </tr>
 <tr>
-<td class="name"><code>filtermodel</code></td>
+<td class="name">{% highlight html %}
+filtermodel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the excel filter model.</td>
 </tr>
 <tr>
-<td class="name"><code>isCustomFilter</code></td>
+<td class="name">{% highlight html %}
+isCustomFilter{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the customfilter option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type as "filterafteropen".</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -13291,14 +13855,15 @@ Triggered for every grid action success event.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    actionComplete: function (args) {}
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13327,7 +13892,8 @@ Triggered for every grid action server failure event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionComplete when grid is initialized.
 <table class="params">
@@ -13340,27 +13906,32 @@ Triggered for every grid action server failure event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>error</code></td>
+<td class="name">{% highlight html %}
+error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -13369,7 +13940,8 @@ Triggered for every grid action server failure event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments in actionComplete after grid paging action is completed.
 <table class="params">
@@ -13382,57 +13954,68 @@ Triggered for every grid action server failure event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentPage</code></td>
+<td class="name">{% highlight html %}
+currentPage{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the current selected page number.</td>
 </tr>
 <tr>
-<td class="name"><code>previousPage</code></td>
+<td class="name">{% highlight html %}
+previousPage{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected page number.</td>
 </tr>
 <tr>
-<td class="name"><code>endIndex</code></td>
+<td class="name">{% highlight html %}
+endIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the end row index of that current page.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>startIndex</code></td>
+<td class="name">{% highlight html %}
+startIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the start row index of the current page.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>error</code></td>
+<td class="name">{% highlight html %}
+error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -13441,7 +14024,8 @@ Triggered for every grid action server failure event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid sorting action is completed.
 <table class="params">
@@ -13454,47 +14038,56 @@ Triggered for every grid action server failure event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current sorted column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>columnSortDirection</code></td>
+<td class="name">{% highlight html %}
+columnSortDirection{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column sort direction.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>error</code></td>
+<td class="name">{% highlight html %}
+error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -13503,7 +14096,8 @@ Triggered for every grid action server failure event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid grouping action is completed.
 <table class="params">
@@ -13516,42 +14110,50 @@ Triggered for every grid action server failure event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the current grouped column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>error</code></td>
+<td class="name">{% highlight html %}
+error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -13560,7 +14162,8 @@ Triggered for every grid action server failure event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record editing action is completed.
 <table class="params">
@@ -13573,57 +14176,68 @@ Triggered for every grid action server failure event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current edited row.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>primaryKey</code></td>
+<td class="name">{% highlight html %}
+primaryKey{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key.</td>
 </tr>
 <tr>
-<td class="name"><code>primaryKeyValue</code></td>
+<td class="name">{% highlight html %}
+primaryKeyValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key value.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>rowIndex</code></td>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the edited row index.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>error</code></td>
+<td class="name">{% highlight html %}
+error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -13632,7 +14246,8 @@ Triggered for every grid action server failure event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record save action is completed.
 <table class="params">
@@ -13645,52 +14260,62 @@ Triggered for every grid action server failure event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>selectedRow</code></td>
+<td class="name">{% highlight html %}
+selectedRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selectedRow index.</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>error</code></td>
+<td class="name">{% highlight html %}
+error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -13699,7 +14324,8 @@ Triggered for every grid action server failure event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid record delete action is completed.
 <table class="params">
@@ -13712,52 +14338,62 @@ Triggered for every grid action server failure event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>tr</code></td>
+<td class="name">{% highlight html %}
+tr{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns selected row for delete.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>error</code></td>
+<td class="name">{% highlight html %}
+error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -13766,7 +14402,8 @@ Triggered for every grid action server failure event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after add new record action is completed.
 <table class="params">
@@ -13779,47 +14416,56 @@ Triggered for every grid action server failure event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns empty record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>error</code></td>
+<td class="name">{% highlight html %}
+error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -13828,7 +14474,8 @@ Triggered for every grid action server failure event.
 </td>
 </tr>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Arguments in actionComplete after grid filtering action is completed.
 <table class="params">
@@ -13841,47 +14488,56 @@ Triggered for every grid action server failure event.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentFilteringColumn</code></td>
+<td class="name">{% highlight html %}
+currentFilteringColumn{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current filtering column field name.</td>
 </tr>
 <tr>
-<td class="name"><code>filterCollection</code></td>
+<td class="name">{% highlight html %}
+filterCollection{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns filter details.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>originalEventType</code></td>
+<td class="name">{% highlight html %}
+originalEventType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns current action event type.</td>
 </tr>
 <tr>
-<td class="name"><code>requestType</code></td>
+<td class="name">{% highlight html %}
+requestType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns request type.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>error</code></td>
+<td class="name">{% highlight html %}
+error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the error return by server.</td>
 </tr>
@@ -13898,14 +14554,15 @@ Triggered for every grid action server failure event.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    actionFailure: function (args) {}
 }); 
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -13934,7 +14591,8 @@ Triggered when record batch add.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when batchAdd event is triggered.
 <table class="params">
@@ -13947,42 +14605,50 @@ Triggered when record batch add.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>columnObject</code></td>
+<td class="name">{% highlight html %}
+columnObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name"><code>columnIndex</code></td>
+<td class="name">{% highlight html %}
+columnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the column index.</td>
 </tr>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row element.</td>
 </tr>
 <tr>
-<td class="name"><code>primaryKey</code></td>
+<td class="name">{% highlight html %}
+primaryKey{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the primaryKey.</td>
 </tr>
 <tr>
-<td class="name"><code>cell</code></td>
+<td class="name">{% highlight html %}
+cell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cell object.</td>
 </tr>
@@ -13999,14 +14665,15 @@ Triggered when record batch add.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    batchAdd: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14035,7 +14702,8 @@ Triggered when record batch delete.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when batchDelete event is triggered.
 <table class="params">
@@ -14048,17 +14716,20 @@ Triggered when record batch delete.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -14075,14 +14746,15 @@ Triggered when record batch delete.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    batchDelete: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14111,7 +14783,8 @@ Triggered before the batch add.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beforeBatchAdd event is triggered.
 <table class="params">
@@ -14124,27 +14797,32 @@ Triggered before the batch add.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>defaultData</code></td>
+<td class="name">{% highlight html %}
+defaultData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the default data object.</td>
 </tr>
 <tr>
-<td class="name"><code>primaryKey</code></td>
+<td class="name">{% highlight html %}
+primaryKey{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primaryKey.</td>
 </tr>
@@ -14161,14 +14839,15 @@ Triggered before the batch add.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    beforeBatchAdd: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14197,7 +14876,8 @@ Triggered before the batch delete.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beforeBatchDelete event is triggered.
 <table class="params">
@@ -14210,37 +14890,44 @@ Triggered before the batch delete.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>primaryKey</code></td>
+<td class="name">{% highlight html %}
+primaryKey{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primaryKey.</td>
 </tr>
 <tr>
-<td class="name"><code>rowIndex</code></td>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the row index.</td>
 </tr>
 <tr>
-<td class="name"><code>rowData</code></td>
+<td class="name">{% highlight html %}
+rowData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row data.</td>
 </tr>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row element.</td>
 </tr>
@@ -14257,14 +14944,15 @@ Triggered before the batch delete.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    beforeBatchDelete: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14293,7 +14981,8 @@ Triggered before the batch save.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beforeBatchSave event is triggered.
 <table class="params">
@@ -14306,22 +14995,26 @@ Triggered before the batch save.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>batchChanges</code></td>
+<td class="name">{% highlight html %}
+batchChanges{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the changed record object.</td>
 </tr>
@@ -14338,14 +15031,15 @@ Triggered before the batch save.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    beforeBatchSave: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14374,7 +15068,8 @@ Triggered before the record is going to be edited.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when beginEdit event is triggered.
 <table class="params">
@@ -14387,37 +15082,44 @@ Triggered before the record is going to be edited.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current edited row.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>primaryKey</code></td>
+<td class="name">{% highlight html %}
+primaryKey{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key.</td>
 </tr>
 <tr>
-<td class="name"><code>primaryKeyValue</code></td>
+<td class="name">{% highlight html %}
+primaryKeyValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns primary key value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowIndex</code></td>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the edited row index.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -14434,14 +15136,15 @@ Triggered before the record is going to be edited.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    beginEdit: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14470,7 +15173,8 @@ Triggered when record cell edit.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellEdit event is triggered.
 <table class="params">
@@ -14483,57 +15187,68 @@ Triggered when record cell edit.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>validationRules</code></td>
+<td class="name">{% highlight html %}
+validationRules{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the validation rules.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column name.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the cell value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowData</code></td>
+<td class="name">{% highlight html %}
+rowData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row data object.</td>
 </tr>
 <tr>
-<td class="name"><code>previousValue</code></td>
+<td class="name">{% highlight html %}
+previousValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the previous value of the cell.</td>
 </tr>
 <tr>
-<td class="name"><code>columnObject</code></td>
+<td class="name">{% highlight html %}
+columnObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name"><code>cell</code></td>
+<td class="name">{% highlight html %}
+cell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cell object.</td>
 </tr>
 <tr>
-<td class="name"><code>isForeignKey</code></td>
+<td class="name">{% highlight html %}
+isForeignKey{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns isForeignKey option value.</td>
 </tr>
@@ -14550,14 +15265,15 @@ Triggered when record cell edit.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    cellEdit: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14586,7 +15302,8 @@ Triggered when record cell save.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellSave event is triggered.
 <table class="params">
@@ -14599,52 +15316,62 @@ Triggered when record cell save.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>columnName</code></td>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the column name.</td>
 </tr>
 <tr>
-<td class="name"><code>value</code></td>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the cell value.</td>
 </tr>
 <tr>
-<td class="name"><code>rowData</code></td>
+<td class="name">{% highlight html %}
+rowData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the row data object.</td>
 </tr>
 <tr>
-<td class="name"><code>previousValue</code></td>
+<td class="name">{% highlight html %}
+previousValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the previous value of the cell.</td>
 </tr>
 <tr>
-<td class="name"><code>columnObject</code></td>
+<td class="name">{% highlight html %}
+columnObject{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name"><code>cell</code></td>
+<td class="name">{% highlight html %}
+cell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cell object.</td>
 </tr>
 <tr>
-<td class="name"><code>isForeignKey</code></td>
+<td class="name">{% highlight html %}
+isForeignKey{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns isForeignKey option value.</td>
 </tr>
@@ -14661,14 +15388,15 @@ Triggered when record cell save.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    cellSave: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14697,7 +15425,8 @@ Triggered after the cell is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellSelecting event is triggered.
 <table class="params">
@@ -14710,47 +15439,56 @@ Triggered after the cell is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cellIndex</code></td>
+<td class="name">{% highlight html %}
+cellIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected cell index value.</td>
 </tr>
 <tr>
-<td class="name"><code>previousRowCellIndex</code></td>
+<td class="name">{% highlight html %}
+previousRowCellIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected cell index value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentCell</code></td>
+<td class="name">{% highlight html %}
+currentCell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected cell element.</td>
 </tr>
 <tr>
-<td class="name"><code>previousRowCell</code></td>
+<td class="name">{% highlight html %}
+previousRowCell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected cell element.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>selectedRowCellIndex</code></td>
+<td class="name">{% highlight html %}
+selectedRowCellIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the selected row cell index values.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -14767,14 +15505,15 @@ Triggered after the cell is selected.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    cellSelected: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14803,7 +15542,8 @@ Triggered before the cell is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when cellSelecting event is triggered.
 <table class="params">
@@ -14816,52 +15556,62 @@ Triggered before the cell is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cellIndex</code></td>
+<td class="name">{% highlight html %}
+cellIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected cell index value.</td>
 </tr>
 <tr>
-<td class="name"><code>previousRowCellIndex</code></td>
+<td class="name">{% highlight html %}
+previousRowCellIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected cell index value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentCell</code></td>
+<td class="name">{% highlight html %}
+currentCell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected cell element.</td>
 </tr>
 <tr>
-<td class="name"><code>previousRowCell</code></td>
+<td class="name">{% highlight html %}
+previousRowCell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected cell element.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>previousRowCellIndex</code></td>
+<td class="name">{% highlight html %}
+previousRowCellIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the previously selected row cell index values</td>
 </tr>
 <tr>
-<td class="name"><code>isCtrlKeyPressed</code></td>
+<td class="name">{% highlight html %}
+isCtrlKeyPressed{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns whether the ctrl key is pressed while selecting cell</td>
 </tr>
 <tr>
-<td class="name"><code>isShiftKeyPressed</code></td>
+<td class="name">{% highlight html %}
+isShiftKeyPressed{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns whether the shift key is pressed while selecting cell</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -14878,14 +15628,15 @@ Triggered before the cell is going to be selected.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    cellSelecting: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -14914,7 +15665,8 @@ Triggered when the column is being dragged.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnDrag event is triggered.
 <table class="params">
@@ -14927,32 +15679,38 @@ Triggered when the column is being dragged.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>draggableType</code></td>
+<td class="name">{% highlight html %}
+draggableType{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns draggable element type.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the draggable column object.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns target elements based on mouse move position.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -14969,14 +15727,15 @@ Triggered when the column is being dragged.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    columnDrag: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15005,7 +15764,8 @@ Triggered when column dragging begins.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnDragStart event is triggered.
 <table class="params">
@@ -15018,32 +15778,38 @@ Triggered when column dragging begins.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>draggableType</code></td>
+<td class="name">{% highlight html %}
+draggableType{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns draggable element type.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the draggable column object.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns drag start element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -15060,14 +15826,15 @@ Triggered when column dragging begins.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
     columnDragStart: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15096,7 +15863,8 @@ Triggered when the column is dropped.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnDrop event is triggered.
 <table class="params">
@@ -15109,32 +15877,38 @@ Triggered when the column is dropped.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>draggableType</code></td>
+<td class="name">{% highlight html %}
+draggableType{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns draggable element type.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the draggable column object.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns dropped dragged element.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -15151,14 +15925,15 @@ Triggered when the column is dropped.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
  columnDrop: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15187,7 +15962,8 @@ Triggered after the column is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnSelected event is triggered.
 <table class="params">
@@ -15200,47 +15976,56 @@ Triggered after the column is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>columnIndex</code></td>
+<td class="name">{% highlight html %}
+columnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected cell index value.</td>
 </tr>
 <tr>
-<td class="name"><code>previousColumnIndex</code></td>
+<td class="name">{% highlight html %}
+previousColumnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected column index value.</td>
 </tr>
 <tr>
-<td class="name"><code>headerCell</code></td>
+<td class="name">{% highlight html %}
+headerCell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected header cell element.</td>
 </tr>
 <tr>
-<td class="name"><code>prevColumnHeaderCell</code></td>
+<td class="name">{% highlight html %}
+prevColumnHeaderCell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected header cell element.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns corresponding column object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>selectedColumnsIndex</code></td>
+<td class="name">{% highlight html %}
+selectedColumnsIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the selected columns values.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -15257,14 +16042,15 @@ Triggered after the column is selected.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    columnSelected: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15293,7 +16079,8 @@ Triggered before the column is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when columnSelecting event is triggered.
 <table class="params">
@@ -15306,52 +16093,62 @@ Triggered before the column is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>columnIndex</code></td>
+<td class="name">{% highlight html %}
+columnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected column index value.</td>
 </tr>
 <tr>
-<td class="name"><code>previousColumnIndex</code></td>
+<td class="name">{% highlight html %}
+previousColumnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected column index value.</td>
 </tr>
 <tr>
-<td class="name"><code>headerCell</code></td>
+<td class="name">{% highlight html %}
+headerCell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected header cell element.</td>
 </tr>
 <tr>
-<td class="name"><code>prevColumnHeaderCell</code></td>
+<td class="name">{% highlight html %}
+prevColumnHeaderCell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected header cell element.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns corresponding column object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>previousColumnIndex</code></td>
+<td class="name">{% highlight html %}
+previousColumnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
 <td class="description last">Returns the previously selected column index values</td>
 </tr>
 <tr>
-<td class="name"><code>isCtrlKeyPressed</code></td>
+<td class="name">{% highlight html %}
+isCtrlKeyPressed{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns whether the ctrl key is pressed while selecting cell</td>
 </tr>
 <tr>
-<td class="name"><code>isShiftKeyPressed</code></td>
+<td class="name">{% highlight html %}
+isShiftKeyPressed{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns whether the shift key is pressed while selecting cell</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -15368,14 +16165,15 @@ Triggered before the column is going to be selected.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    columnSelecting: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15404,7 +16202,8 @@ Triggered when context menu item is clicked
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when contextClick event is triggered.
 <table class="params">
@@ -15417,32 +16216,38 @@ Triggered when context menu item is clicked
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentTarget</code></td>
+<td class="name">{% highlight html %}
+currentTarget{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current item.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>status</code></td>
+<td class="name">{% highlight html %}
+status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the status of contextmenu item which denotes its enabled state</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target item.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -15459,14 +16264,15 @@ Triggered when context menu item is clicked
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    contextClick: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15495,7 +16301,8 @@ Triggered before the context menu is opened.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when contextOpen event is triggered.
 <table class="params">
@@ -15508,32 +16315,38 @@ Triggered before the context menu is opened.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentTarget</code></td>
+<td class="name">{% highlight html %}
+currentTarget{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current item.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>status</code></td>
+<td class="name">{% highlight html %}
+status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the status of contextmenu item which denotes its enabled state</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target item.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -15550,14 +16363,15 @@ Triggered before the context menu is opened.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    contextOpen: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15586,7 +16400,8 @@ Triggered when the grid is rendered completely.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
@@ -15599,17 +16414,20 @@ Triggered when the grid is rendered completely.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -15626,14 +16444,15 @@ Triggered when the grid is rendered completely.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
    create: function (args){}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15662,7 +16481,8 @@ Triggered the grid is bound with data during initial rendering.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when dataBound event is triggered.
 <table class="params">
@@ -15675,17 +16495,20 @@ Triggered the grid is bound with data during initial rendering.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -15702,14 +16525,15 @@ Triggered the grid is bound with data during initial rendering.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
  dataBound: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15738,7 +16562,8 @@ Triggered when grid going to destroy.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when destroy event is triggered.
 <table class="params">
@@ -15751,17 +16576,20 @@ Triggered when grid going to destroy.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -15778,14 +16606,15 @@ Triggered when grid going to destroy.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    destroy: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15814,7 +16643,8 @@ Triggered when detail template row is clicked to collapse.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when detailsCollapse event is triggered.
 <table class="params">
@@ -15827,37 +16657,44 @@ Triggered when detail template row is clicked to collapse.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>detailsRow</code></td>
+<td class="name">{% highlight html %}
+detailsRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns detail row element.</td>
 </tr>
 <tr>
-<td class="name"><code>masterData</code></td>
+<td class="name">{% highlight html %}
+masterData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns master row of detail row record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>masterRow</code></td>
+<td class="name">{% highlight html %}
+masterRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns master row element.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -15874,14 +16711,15 @@ Triggered when detail template row is clicked to collapse.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    detailsCollapse: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15910,7 +16748,8 @@ Triggered detail template row is initialized.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
@@ -15923,27 +16762,32 @@ Triggered detail template row is initialized.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>detailsElement</code></td>
+<td class="name">{% highlight html %}
+detailsElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns details row element.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the details row data.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -15960,14 +16804,15 @@ Triggered detail template row is initialized.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
    detailsDataBound: function (args){}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -15996,7 +16841,8 @@ Triggered when detail template row is clicked to expand.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when detailsExpand event is triggered.
 <table class="params">
@@ -16009,37 +16855,44 @@ Triggered when detail template row is clicked to expand.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>detailsRow</code></td>
+<td class="name">{% highlight html %}
+detailsRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns detail row element.</td>
 </tr>
 <tr>
-<td class="name"><code>masterData</code></td>
+<td class="name">{% highlight html %}
+masterData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns master row of detail row record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>masterRow</code></td>
+<td class="name">{% highlight html %}
+masterRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns master row element.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -16056,15 +16909,16 @@ Triggered when detail template row is clicked to expand.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    detailsExpand: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16093,7 +16947,8 @@ Triggered after the record is added.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when endAdd event is triggered.
 <table class="params">
@@ -16106,17 +16961,20 @@ Triggered after the record is added.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns added data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -16133,15 +16991,16 @@ Triggered after the record is added.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    endAdd: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16170,7 +17029,8 @@ Triggered after the record is deleted.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when endDelete event is triggered.
 <table class="params">
@@ -16183,17 +17043,20 @@ Triggered after the record is deleted.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -16210,14 +17073,15 @@ Triggered after the record is deleted.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    endDelete: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16246,7 +17110,8 @@ Triggered after the record is edited.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when endEdit event is triggered.
 <table class="params">
@@ -16259,17 +17124,20 @@ Triggered after the record is edited.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns modified data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -16286,15 +17154,16 @@ Triggered after the record is edited.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    endEdit: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16323,7 +17192,8 @@ Triggered initial load.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when load event is triggered.
 <table class="params">
@@ -16336,17 +17206,20 @@ Triggered initial load.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -16363,14 +17236,15 @@ Triggered initial load.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    load: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16399,7 +17273,8 @@ Triggered every time a request is made to access particular cell information, el
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
@@ -16412,52 +17287,62 @@ Triggered every time a request is made to access particular cell information, el
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cell</code></td>
+<td class="name">{% highlight html %}
+cell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid cell.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>text</code></td>
+<td class="name">{% highlight html %}
+text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the text value in the cell.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name"><code>rowMerge</code></td>
+<td class="name">{% highlight html %}
+rowMerge{% endhighlight %}</td>
 <td class="type"><span class="param-type">mergeRowback</span></td>
 <td class="description last">Returns the merge rows in grid.</td>
 </tr>
 <tr>
-<td class="name"><code>colMerge</code></td>
+<td class="name">{% highlight html %}
+colMerge{% endhighlight %}</td>
 <td class="type"><span class="param-type">mergeColback</span></td>
 <td class="description last">Returns the merge column in grid.</td>
 </tr>
 <tr>
-<td class="name"><code>merge</code></td>
+<td class="name">{% highlight html %}
+merge{% endhighlight %}</td>
 <td class="type"><span class="param-type">merge</span></td>
 <td class="description last">Returns the merge the rows and columns in grid.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -16474,14 +17359,15 @@ Triggered every time a request is made to access particular cell information, el
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    mergeCellInfo: function (args){}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16510,7 +17396,8 @@ Triggered every time a request is made to access particular cell information, el
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
@@ -16523,42 +17410,50 @@ Triggered every time a request is made to access particular cell information, el
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cell</code></td>
+<td class="name">{% highlight html %}
+cell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid cell.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>text</code></td>
+<td class="name">{% highlight html %}
+text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the text value in the cell.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -16575,14 +17470,15 @@ Triggered every time a request is made to access particular cell information, el
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    queryCellInfo: function (args){}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16611,7 +17507,8 @@ Triggered when record is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when recordClick event is triggered.
 <table class="params">
@@ -16624,37 +17521,44 @@ Triggered when record is clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>rowIndex</code></td>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the row index of the selected row.</td>
 </tr>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current selected row.</td>
 </tr>
 <tr>
-<td class="name"><code>cell</code></td>
+<td class="name">{% highlight html %}
+cell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current selected cell.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -16671,14 +17575,15 @@ Triggered when record is clicked.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    recordClick: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16707,7 +17612,8 @@ Triggered when record is double clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when recordDoubleClick event is triggered.
 <table class="params">
@@ -16720,37 +17626,44 @@ Triggered when record is double clicked.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>rowIndex</code></td>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the row index of the selected row.</td>
 </tr>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current selected row.</td>
 </tr>
 <tr>
-<td class="name"><code>cell</code></td>
+<td class="name">{% highlight html %}
+cell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current selected cell.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -16767,14 +17680,15 @@ Triggered when record is double clicked.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    recordDoubleClick: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16803,7 +17717,8 @@ Triggered after column resized.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when resized event is triggered.
 <table class="params">
@@ -16816,42 +17731,50 @@ Triggered after column resized.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>columnIndex</code></td>
+<td class="name">{% highlight html %}
+columnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the column index.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid object.</td>
 </tr>
 <tr>
-<td class="name"><code>oldWidth</code></td>
+<td class="name">{% highlight html %}
+oldWidth{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the old width value.</td>
 </tr>
 <tr>
-<td class="name"><code>newWidth</code></td>
+<td class="name">{% highlight html %}
+newWidth{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the new width value.</td>
 </tr>
@@ -16868,14 +17791,15 @@ Triggered after column resized.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    resized: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -16904,7 +17828,8 @@ Triggered when column resize end.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when resizeEnd event is triggered.
 <table class="params">
@@ -16917,47 +17842,56 @@ Triggered when column resize end.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>columnIndex</code></td>
+<td class="name">{% highlight html %}
+columnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the column index.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid object.</td>
 </tr>
 <tr>
-<td class="name"><code>oldWidth</code></td>
+<td class="name">{% highlight html %}
+oldWidth{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the old width value.</td>
 </tr>
 <tr>
-<td class="name"><code>newWidth</code></td>
+<td class="name">{% highlight html %}
+newWidth{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the new width value.</td>
 </tr>
 <tr>
-<td class="name"><code>extra</code></td>
+<td class="name">{% highlight html %}
+extra{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the extra width value.</td>
 </tr>
@@ -16974,14 +17908,15 @@ Triggered when column resize end.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    resizeEnd: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -17010,7 +17945,8 @@ Triggered when column resize start.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when resizeStart event is triggered.
 <table class="params">
@@ -17023,37 +17959,44 @@ Triggered when column resize start.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns deleted data.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
-<td class="name"><code>columnIndex</code></td>
+<td class="name">{% highlight html %}
+columnIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the column index.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid object.</td>
 </tr>
 <tr>
-<td class="name"><code>oldWidth</code></td>
+<td class="name">{% highlight html %}
+oldWidth{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the old width value.</td>
 </tr>
@@ -17070,14 +18013,15 @@ Triggered when column resize start.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    resizeStart: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -17106,7 +18050,8 @@ Triggered when right clicked on grid element.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rightClick event is triggered.
 <table class="params">
@@ -17119,52 +18064,62 @@ Triggered when right clicked on grid element.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentData</code></td>
+<td class="name">{% highlight html %}
+currentData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>rowIndex</code></td>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the row index of the selected row.</td>
 </tr>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current selected row.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected row data object.</td>
 </tr>
 <tr>
-<td class="name"><code>cellIndex</code></td>
+<td class="name">{% highlight html %}
+cellIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the cell index of the selected cell.</td>
 </tr>
 <tr>
-<td class="name"><code>cellValue</code></td>
+<td class="name">{% highlight html %}
+cellValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the cell value.</td>
 </tr>
 <tr>
-<td class="name"><code>cell</code></td>
+<td class="name">{% highlight html %}
+cell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cell object.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -17181,14 +18136,15 @@ Triggered when right clicked on grid element.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    rightClick: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -17217,7 +18173,8 @@ Triggered every time a request is made to access row information, element and da
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Event parameters from grid
 <table class="params">
@@ -17230,32 +18187,38 @@ Triggered every time a request is made to access row information, element and da
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns grid row.</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -17272,15 +18235,16 @@ Triggered every time a request is made to access row information, element and da
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
    rowDataBound: function (args){}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -17309,7 +18273,8 @@ Triggered after the row is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowSelected event is triggered.
 <table class="params">
@@ -17322,47 +18287,56 @@ Triggered after the row is selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>foreignKeyData</code></td>
+<td class="name">{% highlight html %}
+foreignKeyData{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the foreign key record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>rowIndex</code></td>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the row index of the selected row.</td>
 </tr>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current selected row.</td>
 </tr>
 <tr>
-<td class="name"><code>prevRow</code></td>
+<td class="name">{% highlight html %}
+prevRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected row element.</td>
 </tr>
 <tr>
-<td class="name"><code>prevRowIndex</code></td>
+<td class="name">{% highlight html %}
+prevRowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected row index.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -17379,15 +18353,16 @@ Triggered after the row is selected.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code> 
-&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    rowSelected: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -17416,7 +18391,8 @@ Triggered before the row is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when rowSelecting event is triggered.
 <table class="params">
@@ -17429,42 +18405,50 @@ Triggered before the row is going to be selected.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>rowIndex</code></td>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the selected row index value.</td>
 </tr>
 <tr>
-<td class="name"><code>row</code></td>
+<td class="name">{% highlight html %}
+row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the selected row element.</td>
 </tr>
 <tr>
-<td class="name"><code>prevRow</code></td>
+<td class="name">{% highlight html %}
+prevRow{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the previous selected row element.</td>
 </tr>
 <tr>
-<td class="name"><code>prevRowIndex</code></td>
+<td class="name">{% highlight html %}
+prevRowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the previous selected row index.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
 </tr>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -17481,14 +18465,15 @@ Triggered before the row is going to be selected.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    rowSelecting: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -17517,7 +18502,8 @@ Triggered when refresh the template column elements in the Grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when templateRefresh event is triggered.
 <table class="params">
@@ -17530,37 +18516,44 @@ Triggered when refresh the template column elements in the Grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>cell</code></td>
+<td class="name">{% highlight html %}
+cell{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the cell object.</td>
 </tr>
 <tr>
-<td class="name"><code>column</code></td>
+<td class="name">{% highlight html %}
+column{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name"><code>data</code></td>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current row data.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>rowIndex</code></td>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Returns the current row index.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -17577,14 +18570,15 @@ Triggered when refresh the template column elements in the Grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt;
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div>
+<script>
 $("#Grid").ejGrid({
  templateRefresh: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
@@ -17613,7 +18607,8 @@ Triggered when toolbar item is clicked in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>argument</code></td>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Arguments when toolBarClick event is triggered.
 <table class="params">
@@ -17626,32 +18621,38 @@ Triggered when toolbar item is clicked in grid.
 </thead>
 <tbody>
 <tr>
-<td class="name"><code>cancel</code></td>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name"><code>currentTarget</code></td>
+<td class="name">{% highlight html %}
+currentTarget{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current item.</td>
 </tr>
 <tr>
-<td class="name"><code>model</code></td>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
 </tr>
 <tr>
-<td class="name"><code>status</code></td>
+<td class="name">{% highlight html %}
+status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns the status of toolbar item which denotes its enabled state</td>
 </tr>
 <tr>
-<td class="name"><code>target</code></td>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the target item.</td>
 </tr>
 <tr>
-<td class="name"><code>type</code></td>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
@@ -17668,14 +18669,15 @@ Triggered when toolbar item is clicked in grid.
 Example
 {:.example}
 
-<pre class="prettyprint">
-<code>&lt;div id="Grid"&gt;&lt;/div&gt; 
-&lt;script&gt;
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
 $("#Grid").ejGrid({
    toolbarClick: function (args) {}
 });
-&lt;/script&gt;</code>
-</pre>
+</script>{% endhighlight %}
+
 
 
 
