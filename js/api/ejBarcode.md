@@ -26,7 +26,9 @@ Example
       $("#barcode").ejBarcode({
          text: "http://www.syncfusion.com"
       });         
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -844,8 +846,8 @@ $("#barcode").ejBarcode({
 });
 </script>
 
-{% endhighlight %}
 
+{% endhighlight %}
 
 
 
@@ -1264,12 +1266,12 @@ Example
 
 //Add div container for barcode rendering.
 <div id="barcode"> </div> 
-{% highlight html %}
  
 //create event for barcode
 $("#barcode").ejBarcode({
    load: function (args) {}
-});{% endhighlight %}
+});
+{% endhighlight %}
 
 
 {% highlight html %}
