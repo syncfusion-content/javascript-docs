@@ -844,7 +844,7 @@ $("#barcode").ejBarcode({
 });
 </script>
 
-
+{% endhighlight %}
 
 
 
