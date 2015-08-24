@@ -51,7 +51,7 @@ public void OnInitReportOptions(ReportViewerOptions reportOptions)
 
 
 
->**Note**_: DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports._
+N>DataSource credentials must be added to the ReportViewer for Shared DataSources that do not have credentials in the connection string and used in the SSRS Reports._
 
 
 

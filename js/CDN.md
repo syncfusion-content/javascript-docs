@@ -23,7 +23,7 @@ http://cdn.syncfusion.com/js/assets/external/**[fileName]**
 
 _Example: http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js_  
 
-> **Note:** The first four script libraries listed below are mandatory to render any of the Syncfusion Essential JS widgets.
+N>  The first four script libraries listed below are mandatory to render any of the Syncfusion Essential JS widgets.
 
 <table>
 <tr>
@@ -242,7 +242,7 @@ Here, the widget core file (<b>ej.widget.core.min.css</b>) is common and the the
 <a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.widgets.core.min.css</a><br/><br/><a href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css">http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure-dark/ej.theme.min.css</a><br/></td></tr>
 </table>
 
->   **Note:** All the provided CDN links can be accessed either through `http` or `https`.
+N>    All the provided CDN links can be accessed either through `http` or `https`.
 
 
 ## Refer local Scripts and CSS, when CDN fails

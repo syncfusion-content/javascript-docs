@@ -62,7 +62,7 @@ Requires
 
 Specifies the distance between the barcode and text below it.
 
->   **Note:** This property is applicable only for one dimensional barcode.
+N>    This property is applicable only for one dimensional barcode.
 
 
 Default Value:
@@ -119,7 +119,7 @@ Example
 
 Specifies the height of bars in the Barcode. By modifying the barHeight, the entire barcode height can be customized. Please refer to [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan) for two dimensional barcode height customization.
 
->   **Note:** This property is applicable only for one dimensional barcode.
+N>    This property is applicable only for one dimensional barcode.
 
 
 Default Value:
@@ -176,8 +176,8 @@ Example
 
 Specifies the dark bar color of the Barcode. One dimensional barcode contains a series of dark and light bars which are usually colored as black and white respectively. 
 
->   **Note:** 1. For the barcode should be properly detected by all scanners, choose the best possible contrast color.
->             2. This property is applicable only for one dimensional barcode.
+N>    1. For the barcode should be properly detected by all scanners, choose the best possible contrast color.
+N>             2. This property is applicable only for one dimensional barcode.
 
 Default Value:
 {:.param}
@@ -233,7 +233,7 @@ Example
 
 Specifies whether the text below the barcode is visible or hidden.
 
->   **Note:** This property is applicable only for one dimensional barcode.
+N>    This property is applicable only for one dimensional barcode.
 
 
 
@@ -331,7 +331,7 @@ Default Value:
 
 Specifies the start and stop encode symbol in the Barcode. In one dimensional barcodes, an additional character is added as start and stop delimiters. These symbols are optional and the unique of the symbol allows the reader to determine the direction of the barcode being scanned.
 
->   **Note:** This property is applicable only for one dimensional barcode.
+N>    This property is applicable only for one dimensional barcode.
 
 
 
@@ -390,8 +390,8 @@ Example
 
  Specifies the light bar color of the Barcode. One dimensional barcode contains a series of dark and light bars which are usually colored as black and white respectively.
 
->   **Note:** 1. For the barcode should be properly detected by all scanners, choose the best possible contrast color.
->             2. This property is applicable only for one dimensional barcode.
+N>    1. For the barcode should be properly detected by all scanners, choose the best possible contrast color.
+N>             2. This property is applicable only for one dimensional barcode.
 
 Default Value:
 {:.param}
@@ -447,7 +447,7 @@ Example
 
 Specifies the width of the narrow bars in the barcode. The dark bars in the one dimensional barcode contains random narrow and wide bars based on the provided input which can be specified during initialization.
 
->   **Note:** This property is applicable only for one dimensional barcode.
+N>    This property is applicable only for one dimensional barcode.
 
 
 
@@ -917,7 +917,7 @@ Example
 
 Specifies the color of the text/data at the bottom of the barcode.
 
->   **Note:** This property is applicable only for one dimensional barcode.
+N>    This property is applicable only for one dimensional barcode.
 
 
 
@@ -976,7 +976,7 @@ $("#barcode").ejBarcode({
 
 Specifies the width of the wide bars in the barcode. One dimensional barcode usually contains random narrow and wide bars based on the provided which can be customized during initialization.
 
->   **Note:** This property is applicable only for one dimensional barcode.
+N>    This property is applicable only for one dimensional barcode.
 
 
 Default Value:
@@ -1033,7 +1033,7 @@ Example
 
 Specifies the width of the narrowest element(bar or space) in a barcode. The greater the x dimension, the more easily a barcode reader will scan.
 
->   **Note:** This property is applicable only for two dimensional barcode.
+N>    This property is applicable only for two dimensional barcode.
 
 
 Default Value:

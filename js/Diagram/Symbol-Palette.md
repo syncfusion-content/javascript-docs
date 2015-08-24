@@ -50,7 +50,7 @@ $("#palette").ejSymbolPalette({
 });
 {% endhighlight %}
 
-> **Note:** For creating node refer the link [Node creation](/js/Diagram/Node#create-node). And for creating connector refer the link [Connector creation](/js/Diagram/Connector#create-connector).
+N>  For creating node refer the link [Node creation](/js/Diagram/Node#create-node). And for creating connector refer the link [Connector creation](/js/Diagram/Connector#create-connector).
 
 ## Adding Node and Connector
 

@@ -17,7 +17,7 @@ In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widge
 
 
 
-> **Note**: Images for this sample are available in ‘installed location/images/Employee’
+N> Images for this sample are available in ‘installed location/images/Employee’
 
 
 {% highlight html %}

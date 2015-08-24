@@ -202,7 +202,7 @@ You can add the icons or images with list items in dropdown popup by using sprit
 
 
 
-> **Note:** Images for this sample are available in ‘installed location /themes/images’ and you need to define images in mentioned CSS. Henceforth the images display. 
+N>  Images for this sample are available in ‘installed location /themes/images’ and you need to define images in mentioned CSS. Henceforth the images display. 
 
 In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 

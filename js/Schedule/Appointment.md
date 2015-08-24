@@ -91,7 +91,7 @@ When the appointment is saved, the **Schedule** control displays the created app
 {% include image.html url="/js/Schedule/Appointment_images/Appointment_img5.png" Caption="schedule with appointment saved using quick appointment window."%}
 
 
-> **Important**: We have a property named showQuickWindow that accepts Boolean value and set as true by default. When this property is set to false, it prevents the display of quick appointment window while single clicking on the Schedule cells or appointments. Thus the functionality of showing/hiding this quick window from the user depends on the value of this particular property.
+N> **Important**: We have a property named showQuickWindow that accepts Boolean value and set as true by default. When this property is set to false, it prevents the display of quick appointment window while single clicking on the Schedule cells or appointments. Thus the functionality of showing/hiding this quick window from the user depends on the value of this particular property.
 
 
 

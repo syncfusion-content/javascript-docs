@@ -168,7 +168,7 @@ The following screen shot displays a Tool bar in Gantt chart control:
 
 {% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img6.png"%}
 
-> **Note:** Add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete properties in the edit Options.
+N>  Add, edit, delete options are enabled when enabling the allowEditing, allowAdding, allowDelete properties in the edit Options.
 
 ### Enable Sorting
 
@@ -228,7 +228,7 @@ The following screen shot displays a Gantt chart control with Enable Editing opt
 
 {% include image.html url="/js/Gantt/Getting-Started_images/Getting-Started_img7.png"%}
 
-> **Note:** Both cellEditing and  normal  editing operations are performed through double-click action.
+N>  Both cellEditing and  normal  editing operations are performed through double-click action.
 
 ### Enable Context Menu
 

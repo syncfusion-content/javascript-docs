@@ -39,8 +39,8 @@ The assets have been organized in the following folder structure
 * Samples  – contains sample code that demonstrate usage of all the components.
 
 
->  **Note:** **Mac** and **Linux** users will not be able to use the **Reporting and Business Intelligence** components since the controls have a server-side .NET dependency.
->  Also, the exporting functionality available in some of the widgets like the grid will also not be available due to the server-side .NET dependencies.
+N>   **Mac** and **Linux** users will not be able to use the **Reporting and Business Intelligence** components since the controls have a server-side .NET dependency.
+N>  Also, the exporting functionality available in some of the widgets like the grid will also not be available due to the server-side .NET dependencies.
 
 
 ## Configuring Syncfusion NuGet Packages
@@ -55,7 +55,7 @@ The steps to download and configure the Syncfusion NuGet Packages in Visual Stud
 * Select `Package Manager|Package Sources` in the above pop-up and click on the `Browse` button(preceding the `Add` button) to navigate to the location where the above collection of NuGet packages are located on your machine.
 {% include image.html url="/js/Installation-and-Deployment_images/Installation-and-Deployment_img3.png" %}
 
->  **Note**: The **Source** textbox in the above image denotes the location of the NuGet packages on your machine and the **Name** section, allows you to provide a unique name which we will refer to in the package installation section later.
+N>  The **Source** textbox in the above image denotes the location of the NuGet packages on your machine and the **Name** section, allows you to provide a unique name which we will refer to in the package installation section later.
 
 * Now click the `Add` button and the package name will be listed in the **Available package sources** list as shown below and then Click `OK`.
 {% include image.html url="/js/Installation-and-Deployment_images/Installation-and-Deployment_img4.png" %}

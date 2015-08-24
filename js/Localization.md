@@ -17,7 +17,7 @@ To localize any of our Syncfusion components into a particular culture, it is ne
 * Other culture-specific script files, to which specific culture you need to adapt any of our Syncfusion control.
 
 
->   **Note**: All the culture-specific script files are available within the below specified location once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
+N>   All the culture-specific script files are available within the below specified location once you have installed Essential Studio in your machine, therefore it is not necessary to download these files explicitly.
 
 <table>
 <tr>
@@ -34,7 +34,7 @@ To localize any of our Syncfusion components into a particular culture, it is ne
 </tr>
 </table>
 
->   To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **globalize.culture.de-DE.min.js** file in your application, after the reference of jquery.globalize.min.js file. 
+N>   To translate our control content from default English to any of the culture, say For example - German language, then you need to refer the **globalize.culture.de-DE.min.js** file in your application, after the reference of jquery.globalize.min.js file. 
 
 
 ## Localizing the Syncfusion components 
@@ -104,7 +104,7 @@ Browse your HTML page in any of the web browser and now the screen will display 
 
 Define a dropdownlist control additionally in your HTML page along with the DatePicker control, to hold the required culture codes. When the user selects a particular culture code option from the dropdownlist, the datepicker will get localized appropriately based on the dynamic selection made – which is depicted in the below code.
 
->   **Note**: In the below example, copy the culture files of **de-DE**, **vi-VN** and **fr-FR** into the **Scripts** folder of your application and refer it in the head section along with the other css and script references, so that the **locale** of the datepicker switches between the selected culture appropriately.
+N>   In the below example, copy the culture files of **de-DE**, **vi-VN** and **fr-FR** into the **Scripts** folder of your application and refer it in the head section along with the other css and script references, so that the **locale** of the datepicker switches between the selected culture appropriately.
 
 
 {% highlight html %}
@@ -176,11 +176,11 @@ Define a dropdownlist control additionally in your HTML page along with the Date
 
 There are other Syncfusion components like Grid, Gantt, FileExplorer and Schedule which defines a collection of custom localized-text for each culture. In order to apply those localized label collection appropriately for each custom-texts, we need to define separately a collection of culture based translated words for each culture as shown below,
 
->   **Note**: Based on the components and specific-culture names used in the application, we can define the localized words for it using the below syntax within the script section,   
->               **ej.ComponentName.locale[Culture-Code] = { … };**
+N>   Based on the components and specific-culture names used in the application, we can define the localized words for it using the below syntax within the script section,   
+N>               **ej.ComponentName.locale[Culture-Code] = { … };**
 
->   For example, to define the localized words for the grid control in fr-FR culture, it can be done as follows,   
->               **ej.Grid.locale["fr-FR"] = { … };**
+N>   For example, to define the localized words for the grid control in fr-FR culture, it can be done as follows,   
+N>               **ej.Grid.locale["fr-FR"] = { … };**
 
 
 #### Example 2: Defining locale property in the Grid control using collection of localized text
@@ -304,7 +304,7 @@ Browse your HTML page in any of the web browser and now the screen will display 
 
 Define a dropdownlist control additionally in your HTML page along with the Grid control, to hold the required culture codes. When the user selects a particular culture code option from the dropdownlist, the grid control will get localized appropriately based on the dynamic selection made. Also, you need to define the collection of custom localized-words for all the required cultures (here, defined for **es-ES** and **de-DE** cultures) within the script section as depicted below,
 
->   **Note**: In the below example, copy the culture files of **de-DE** and **es-ES** into the Scripts folder of your application and refer it in the head section along with the other css and script references, so that the **locale** of the Grid control switches between the selected culture appropriately.
+N>   In the below example, copy the culture files of **de-DE** and **es-ES** into the Scripts folder of your application and refer it in the head section along with the other css and script references, so that the **locale** of the Grid control switches between the selected culture appropriately.
 
 {% highlight html %}
 

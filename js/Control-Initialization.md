@@ -46,7 +46,7 @@ In the below specified location, you can find all the required web related theme
 
 <b>(installed location)</b>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\css
 
->   **Note**: The **common-images** folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.
+N>   The **common-images** folder is needed to be copied into your application mandatorily, as it includes all the common font icons and other images required for the control to render.
 
 Now, Include the specific theme reference to your HTML file by referring the appropriate `ej.web.all.min.css` file from a particular theme folder (here, we have referred the **default-theme**), within the head section as shown below,
 
@@ -83,7 +83,7 @@ In the below specified location, you can find the dependent script files. Copy a
 
 Apart from the above dependent scripts, you need to refer the **ej.web.all.min.js** file, which contains all the JavaScript components script in a minified format.
 
-> **Note**: Syncfusion recommends not to use this file in the production environment as it contains all the controls and size will be huge. Please use our [Custom Script Generator](/js/include-only-the-needed-widgets) to generate only the needed scripts for the controls you have used in your application before going into production.
+N> Syncfusion recommends not to use this file in the production environment as it contains all the controls and size will be huge. Please use our [Custom Script Generator](/js/include-only-the-needed-widgets) to generate only the needed scripts for the controls you have used in your application before going into production.
 
 Copy the **ej.web.all.min.js** file into the **Scripts\\ej** folder.
 
@@ -114,7 +114,7 @@ Include the script references in the head section of your HTML page as shown bel
 {% endhighlight %}
 
 
->   **Note**: The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.
+N>   The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above.
 
 
 ### Adding Syncfusion Widget into your HTML page

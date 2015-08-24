@@ -269,7 +269,7 @@ The Load On Demand supported html file content (chickenDelite.html)
 
 {% endhighlight %}
 
-> **Note**: In Load On Demand, when the external files are referred from local the following error occurs.
+N> In Load On Demand, when the external files are referred from local the following error occurs.
 
 XMLHttpRequest cannot load [http://js.syncfusion.com/UG/Web/Tab-Content/cornSpainach.html?_=1399883825133](http://js.syncfusion.com/UG/Web/Tab-Content/cornSpainach.html?_=1399883825133). No 'Access-Control-Allow-Origin' header is present on the requested resource. 
 

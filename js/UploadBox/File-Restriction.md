@@ -13,7 +13,7 @@ documentation: ug
 
 Files are filtered before they are uploaded. You can select the files to be filtered by using **browse** button. The **extensionsAllow** property allows upload of the selected extensions only. You can give multiple extensions by using comma (,).  The data type is **string**.
 
-> **Note**: Prepend dot (.) symbol with extension like “.pdf”.
+N> Prepend dot (.) symbol with extension like “.pdf”.
 
 
 
@@ -47,7 +47,7 @@ For **JS**, configure **saveFiles.ashx** and **removeFiles.ashx** files as menti
 
 Files are filtered before they are uploaded. You can select the files to be filtered by using **browse** button. The **extensionsDeny** property denies upload of the selected extensions. You can give multiple extensions by using comma (,).  The data type is **string**.
 
-> **Note**: Prepend dot (.) symbol with extension like “.pdf”.
+N> Prepend dot (.) symbol with extension like “.pdf”.
 
 The following steps explain the configuration of **extensionsDeny** property in **Uploadbox**
 

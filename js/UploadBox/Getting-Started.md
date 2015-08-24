@@ -17,7 +17,7 @@ The following screenshot demonstrates the functionality of **Uploadbox** with th
 
 In the above screenshot, you can upload a resume that restricts **.html** and **.txt** files and allows **.png** file extension. This helps you to avoid unsupported resume formats getting uploaded in a server.
 
-> **Note**: To get upload the file, you should either run this sample in Visual Studio IDE or host in local IIS.
+N> To get upload the file, you should either run this sample in Visual Studio IDE or host in local IIS.
 
 
 
@@ -180,13 +180,13 @@ After you upload the files, the following screen shot is displayed.
 
 {% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img3.png" %}
 
-> **Note**: The above screenshot displays the Uploadbox control that shows the files are uploaded successfully.
+N> The above screenshot displays the Uploadbox control that shows the files are uploaded successfully.
 
 ## Set Restriction for File Extension
 
 In a real-time scenario, some file extensions are restricted. You can allow files and restrict files by using the following two properties **extensionsAllow** and **extensionsDeny** enabled in **Uploadbox**. 
 
-> **Note**: The SaveUrl and RemoveUrl are the same as above (see step 4)
+N> The SaveUrl and RemoveUrl are the same as above (see step 4)
 
 
 
@@ -194,7 +194,7 @@ Add input elements to create elements for file extension.
 
 
 
-> **Note**: Add the following input elements and two button elements to give file extensions that should support uploading. 
+N> Add the following input elements and two button elements to give file extensions that should support uploading. 
 
 
 
@@ -296,7 +296,7 @@ Add the given styles to display the **Uploadbox** with margin alignments.
 {% endhighlight %}
 
 
-> **Note**: You can restrict one or more files at a time by giving it as .html,.txt
+N> You can restrict one or more files at a time by giving it as .html,.txt
 
 
 The following screenshot displays an **Uploadbox** control with the file extension.

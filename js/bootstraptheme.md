@@ -118,9 +118,9 @@ Running the above code will display the output similar to the below screenshot,
 ![](bootstraptheme_images\bootstraptheme_img1.png)
 
 
-> **Note**: Apart from the default bootstrap theme, All the Essential JavaScript components are provided with built-in **responsive support**, so that it will adjust automatically based on the browser viewport.  
-> Setting width of any of the Syncfusion components to 100% is simply enough to make it responsive. Including **ej.responsive.css** file will make some components like menu, dialog, schedule to change their appearances accordingly in mobile devices.   
-> To render the grid control appropriately in mobile devices, **ejgrid.responsive.css** file needs to be referred separately along with the other css and script file references.
+N> Apart from the default bootstrap theme, All the Essential JavaScript components are provided with built-in **responsive support**, so that it will adjust automatically based on the browser viewport.  
+N> Setting width of any of the Syncfusion components to 100% is simply enough to make it responsive. Including **ej.responsive.css** file will make some components like menu, dialog, schedule to change their appearances accordingly in mobile devices.   
+N> To render the grid control appropriately in mobile devices, **ejgrid.responsive.css** file needs to be referred separately along with the other css and script file references.
 
 
 

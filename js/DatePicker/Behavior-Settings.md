@@ -190,7 +190,7 @@ Special dates fields
       </td>
    </tr>
 </table>
-> **Note:** You need to set the image as background url and its styles within this class
+N>  You need to set the image as background url and its styles within this class
 
 The following steps explain you how to specify the **fields** **mapping** in **DatePicker** widget.
 
@@ -244,7 +244,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 Add the following styles to specify the **fields mapping** in **DatePicker** widget.
 
-> **Note**: Images for this example are available in ‘installed location /Content/images’ and you need to define images in mentioned CSS. Henceforth the images are displayed.
+N> Images for this example are available in ‘installed location /Content/images’ and you need to define images in mentioned CSS. Henceforth the images are displayed.
 
 
 

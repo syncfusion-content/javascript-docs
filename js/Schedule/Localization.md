@@ -413,7 +413,7 @@ To learn about localizing in the **Schedule** control on your required culture, 
 {% endhighlight %}
 
 
-> **Important**: An important note while making use of localization in the schedule control, it is necessary to refer the required culture script file (globalize.culture.xx-XX.min.js) in the script reference section of the sample as follows.
+N> **Important**: An important note while making use of localization in the schedule control, it is necessary to refer the required culture script file (globalize.culture.xx-XX.min.js) in the script reference section of the sample as follows.
 
 
 

@@ -13,7 +13,7 @@ documentation: ug
 
 A page or printed media with barcode often appears colorful in the background and surrounding region with other contents. In such cases the barcode can also be customized to suit the needs. You can achieve this by changing the [darkBarColor](/js/api/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) property.
 
->   **Note:** This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
+N>    This color customization is possible only for one dimensional barcodes and it is not supported for two dimensional barcodes.
 
 {% highlight js %}
 $("#barcode").ejBarcode({

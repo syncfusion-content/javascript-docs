@@ -172,7 +172,7 @@ $(function() {
 {% endhighlight %}
 
 
-> **Note:** In order to render the localized OlapGauge, You are required to reset the content available in both OlapGauge Control and OLAP Cube.
+N>  In order to render the localized OlapGauge, You are required to reset the content available in both OlapGauge Control and OLAP Cube.
 
 ##Localizing Control Information
 

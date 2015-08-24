@@ -9,7 +9,7 @@ documentation: ug
 
 # Layouts
 
-> **Note:** This feature is applicable only for OLAP datasource.
+N>  This feature is applicable only for OLAP datasource.
 
 The four kinds of [Layouts](/js/api/ejPivotGrid#members:layout) supported by the **PivotGrid** are as follows:
 

@@ -91,7 +91,7 @@ Click **OK**.
 
 Add the script files and CSS files in the **title** tag of the **default.html** page.
 
-> **Note:** Please follow the following order while adding scripts and styles.
+N>  Please follow the following order while adding scripts and styles.
 
 {% highlight html %}
 
@@ -289,7 +289,7 @@ the namespace **WebApplication2** in **OlapChartService.svc.cs** file that is th
 
 {% endhighlight %}
 
-> **Note:** In this example, “WebApplication2” indicates the name of the project and “OlapChartService” indicates the name of the WCF service created.
+N>  In this example, “WebApplication2” indicates the name of the project and “OlapChartService” indicates the name of the WCF service created.
 
 
 

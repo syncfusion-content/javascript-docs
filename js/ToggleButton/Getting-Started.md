@@ -66,7 +66,7 @@ Adding input Checkbox element for Toggle Button rendering.
 
 
 
-> **Note**: The advantages of using checkbox element and label element for the rendering of Toggle Button are as follows.
+N> The advantages of using checkbox element and label element for the rendering of Toggle Button are as follows.
 
 
 

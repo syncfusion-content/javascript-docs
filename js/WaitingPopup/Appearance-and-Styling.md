@@ -125,7 +125,7 @@ Initialize the **WaitingPopup** with custom template using the following code ex
  In **CSS**, you can configure the custom styles for **WaitingPopup**.
 
 
-> **Note**: Images for this sample are available ‘installed sample location /images/waitingpopup’ and we need to define images in mentioned CSS. Henceforth the images will display.
+N> Images for this sample are available ‘installed sample location /images/waitingpopup’ and we need to define images in mentioned CSS. Henceforth the images will display.
 
 
 

@@ -118,7 +118,7 @@ The following steps illustrate how to add a `column series` to the chart.
 
 You can bind [JSON](http://json.org/) data to the chart using the [`dataSource`](/js/api/ejchart#seriesdatasourcespan-classtype-signature-type-objectobjectspan "dataSource") property in chart series. You can use the sample JSON data is given below which is needed for this tutorial. 
 
-> The precipitation data is taken from [http://www.usclimatedata.com/](http://www.usclimatedata.com/)
+N> The precipitation data is taken from [http://www.usclimatedata.com/](http://www.usclimatedata.com/)
 
 {% highlight js %}
 
@@ -282,7 +282,7 @@ The following screenshot displays a Chart with the desired output.
 
 To display the data labels, you need to enable the [`visible`](/js/api/ejchart#seriesmarkerdatalabelvisiblespan-classtype-signature-type-booleanbooleanspan "dataLabel.visible") property of [`dataLabel`](/js/api/ejchart#seriesmarkerdatalabelspan-classtype-signature-type-objectobjectspan "dataLabel") in the [`marker`](/js/api/ejchart#seriesmarkerspan-classtype-signature-type-objectobjectspan "series.marker") of specific series. 
 
-> ejChart `dataLabel` displays the Y-value with label format provided in axis by default. 
+N> ejChart `dataLabel` displays the Y-value with label format provided in axis by default. 
 
 The following code example shows how to add Data Labels.
 
@@ -327,7 +327,7 @@ The following screenshot displays a Chart when data labels are enabled.
 
 To display the [`tooltip`](/js/api/ejchart#seriestooltipspan-classtype-signature-type-objectobjectspan "tooltip"), enable the [`visible`](/js/api/ejchart#seriestooltipvisiblespan-classtype-signature-type-booleanbooleanspan "tooltip.visible") property of [`tooltip`](/js/api/ejchart#seriestooltipspan-classtype-signature-type-objectobjectspan "tooltip") in the specific series. 
 
-> ejChart `tooltip` displays `X` and `Y` value of points when the mouse is hovered over the points by default. 
+N> ejChart `tooltip` displays `X` and `Y` value of points when the mouse is hovered over the points by default. 
 
 The following code example shows how to enable a Tooltip.
 

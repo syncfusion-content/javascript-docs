@@ -67,7 +67,7 @@ The following properties are related to the zooming feature of the **Maps** cont
 
 The `level` property determines the map’s scale size when zooming. The default value of `level` is 1. 
 
->**Note**_: level cannot be less than 1_
+N>level cannot be less than 1_
 
 ###EnableZoom
 

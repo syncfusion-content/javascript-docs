@@ -11,7 +11,7 @@ documentation: ug
 
 This features allow you to upload and remove the files **synchronously**. To achieve this, set the **asyncUpload** property to ‘**false**’. The data type is **Boolean.**
 
-> **Note**: By default, Uploadbox widget works with asynchronous upload option only.
+N> By default, Uploadbox widget works with asynchronous upload option only.
 
 
 

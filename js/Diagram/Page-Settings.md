@@ -149,7 +149,7 @@ The scroll limit allows you to scroll the diagram page along X and Y axis based 
 * When `scrollLimit` is set as `diagram`, you are restricted to scroll the page beyond the diagram content. 
 * By specifying the value as `limited` you can set the limit of the scrollable area through `scrollableArea` property. 
 
-> **Note:** Refer to the [scrollable area](/js/Diagram/Page-Settings#scrollable-area) for more details.
+N>  Refer to the [scrollable area](/js/Diagram/Page-Settings#scrollable-area) for more details.
 
 The following code example illustrates how to specify scroll limit. 
 

@@ -57,7 +57,7 @@ Run the codes to get the following output
 
 When selecting a specific list item, it is highlighted with an active color. **data-ej-preventselection** attribute is used to prevent this behavior by setting it to **“True”**. 
 
-> _**Note:** When the click or select action is completed, the highlight is undone automatically even when the  attribute is set to “False”._
+N> _ When the click or select action is completed, the highlight is undone automatically even when the  attribute is set to “False”._
 
 Refer the following code examples.
 

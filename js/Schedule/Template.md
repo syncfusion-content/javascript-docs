@@ -209,7 +209,7 @@ The resources are provided with rich template support, so that the customization
 
 
 
-> **Important**: The above used images should be present in a separate images folder, so that it will be referred properly.The images name should be saved with id as same as given in the resourceSettings inorder to set unqiue images to all resources.
+N> **Important**: The above used images should be present in a separate images folder, so that it will be referred properly.The images name should be saved with id as same as given in the resourceSettings inorder to set unqiue images to all resources.
 
 
 The output for the above code which displays the resource with the template defined for it is given below.

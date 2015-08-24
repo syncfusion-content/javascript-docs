@@ -69,8 +69,8 @@ Refer the **ej.unobtrusive.min.js** file in your application along with the othe
 
 {% endhighlight %}
 
->   **Note**: In the above code, **value** is one of the DatePicker property to set the date value for the control, which is defined here with **data-ej** keyword prepended to it.
->   The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above. Before making use of the unobtrusive script in your application, make sure that you have copied the **ej.unobtrusive.min.js** file from its installed location into the **scripts/ej** folder of your application.
+N>   In the above code, **value** is one of the DatePicker property to set the date value for the control, which is defined here with **data-ej** keyword prepended to it.
+N>   The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above. Before making use of the unobtrusive script in your application, make sure that you have copied the **ej.unobtrusive.min.js** file from its installed location into the **scripts/ej** folder of your application.
 
 The output of the above code will look as the one shown below with the value set to the given date,
 {% include image.html url="/js/Unobtrusive-Support_images/Unobtrusive-Support_img1.png" %}
@@ -103,8 +103,8 @@ An important thing to be noted while using EJ role is that, you need to add the 
 
 {% endhighlight %}
 
->   **Note**: In the above code, **value** is one of the DatePicker property to set the date value for the control, which is defined here with **ej-** keyword prepended to it. 
->   Also, before proceeding with the property definition, it is necessary to define the control name with the **ej-** prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)
+N>   In the above code, **value** is one of the DatePicker property to set the date value for the control, which is defined here with **ej-** keyword prepended to it. 
+N>   Also, before proceeding with the property definition, it is necessary to define the control name with the **ej-** prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)
 
 The output of the above code will look as the one shown below with the value set to the given date,
 {% include image.html url="/js/Unobtrusive-Support_images/Unobtrusive-Support_img2.png" %}
@@ -137,8 +137,8 @@ While making use of directives, you need to add the **data-directive** attribute
 
 {% endhighlight %}
 
->   **Note**: In the above code, **value** is one of the available DatePicker property to set the value for the control, which is defined here with **ej-** keyword prepended to it. 
->   Also, you can notice here that the HTML tag name is replaced by the control name to be created.
+N>   In the above code, **value** is one of the available DatePicker property to set the value for the control, which is defined here with **ej-** keyword prepended to it. 
+N>   Also, you can notice here that the HTML tag name is replaced by the control name to be created.
 
 The output of the above code will look as the one shown below with the value set to the given date,
 {% include image.html url="/js/Unobtrusive-Support_images/Unobtrusive-Support_img3.png" %}

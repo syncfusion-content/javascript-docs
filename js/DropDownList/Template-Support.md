@@ -15,7 +15,7 @@ The following steps explains you the behaviour of template support with **Dropdo
 
 In an **HTML** page, add a **&lt;input&gt;** element to configure **Dropdownlist** widget
 
-> **Note:** Images for this sample are available in ‘installed location /themes/images’ 
+N>  Images for this sample are available in ‘installed location /themes/images’ 
 
 {% highlight html %}
 

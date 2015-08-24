@@ -84,7 +84,7 @@ url: "../wcf/PivotGridService.svc", locale: "fr-FR", enableVirtualScrolling: tru
 {% endhighlight %}
 
 
-> **Note:**This feature is currently not applicable for PivotTable Field List. In order to render the localized PivotGrid, you can reset the content available in both PivotGrid Control and OLAP Cube. 
+N> This feature is currently not applicable for PivotTable Field List. In order to render the localized PivotGrid, you can reset the content available in both PivotGrid Control and OLAP Cube. 
 
 ##Localizing Control Information:
 

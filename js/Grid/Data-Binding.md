@@ -83,7 +83,7 @@ The following output is the result of the above code example.
 
 {% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img2.png"%}
 
-> _**Note**: For information about DataManager with Grid check DataAdaptors concept._
+N> _For information about DataManager with Grid check DataAdaptors concept._
 
 ### Load at once
 

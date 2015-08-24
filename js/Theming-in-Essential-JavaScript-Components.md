@@ -37,11 +37,11 @@ This section explains what are all the files required to refer and the steps to 
 
 1. Create the following folders in the same structure under your application folder. 
 
->   appfolder\Content\ej\flat-saffron
+N>   appfolder\Content\ej\flat-saffron
 
 2. Copy **common-images** folder & **ej.widgets.core.min.css** file into the appfolder\Content\ej
 
-> Both of these folders and files are mandatory for any themes. 
+N> Both of these folders and files are mandatory for any themes. 
 
 3. Copy the css files available in the installed location of the flat-saffron folder into your app location appfolder\Content\ej\flat-saffron
 4. Refer the **ej.web.all.min.css** file in your HTML page within the `<head>` section before making any script reference as shown below,

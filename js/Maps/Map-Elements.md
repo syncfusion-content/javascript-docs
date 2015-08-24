@@ -162,7 +162,7 @@ Gets or sets the tooltip template for bubbles.</td></tr>
 
 To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the `maxValue`, `minValue`, and `valuePath` properties as illustrated in the following code sample.
 
->**Note**_: Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section._
+N>Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section._
 
 
 
@@ -259,7 +259,7 @@ The map legend size can be modified using `height` and `width` properties in leg
 
 The Layer shape type legends can be generated for each color mappings in shape settings. 
 
->**Note**_: Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred._
+N>Here, Equal Color Mapping code sample for shapeSettings with color mappings is referred._
 
 
 
@@ -299,7 +299,7 @@ You can provide the title for interactive legend by using `title` property in `l
 
 You can provide the left and right labels to interactive legend by using `leftLabel` and `rightLabel` properties in `legendSettings`. 
 
->**Note**_: Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred._
+N>Here, Range Color Mapping code snippet for shapeSettings with color mappings is referred._
 
 
 

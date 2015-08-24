@@ -172,7 +172,7 @@ $(function() {
 {% endhighlight %}
 
 
-> _**Note:** In order to render the localized OLAP Gauge, You are required to reset the content available in both_
+N> _ In order to render the localized OLAP Gauge, You are required to reset the content available in both_
 
    1. OLAP Gauge Control
    2. OLAP Cube

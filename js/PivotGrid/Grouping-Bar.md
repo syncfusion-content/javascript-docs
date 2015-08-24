@@ -9,7 +9,7 @@ documentation: ug
 
 #Grouping Bar
 
->**Note:** This feature is applicable only for Relational datasource.
+N> This feature is applicable only for Relational datasource.
 
 Grouping bar support in the PivotGrid control allows you to filter, sort, and remove members of relational data loaded in the PivotGrid control. The grouped report can also be changed dynamically using drag and drop operations.
 

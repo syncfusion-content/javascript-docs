@@ -160,7 +160,7 @@ You can customize the Accordion control using various properties. The Accordion 
 
 You can have multiple **Accordion** tabs opened to view all products at a time. To achieve this set the **enableMultipleOpen** property of the **Accordion** control to true.
 
-> **Note**: enableMultipleOpen property is false by default.
+N> enableMultipleOpen property is false by default.
 
 You can also open all the panels during initialization using the **selectedItems** property of the **Accordion** control. The following code sample illustrates the opening of multiple tabs by passing the tab index values of tab.
 
@@ -186,7 +186,7 @@ You can also open all the panels during initialization using the **selectedItems
 
 **Accordion** control, by default, is rendered in a regular rectangle. You can modify the regular rectangles with rounded corners by setting the **showRoundedCorner** property to **True**.
 
-> **Note**: showRoundedCorner property is False by default.
+N> showRoundedCorner property is False by default.
 
 
 

@@ -384,7 +384,7 @@ To rename the mail folders, set **allowEdit** property to **“True”**. You ca
 
 
 
-> **Note**: Refer to the previous example for datasource
+N> Refer to the previous example for datasource
 
 Execute this code example to render node editing.
 
@@ -417,7 +417,7 @@ Execute this code example to **Drag and Drop** the nodes anywhere within the **T
 
 {% endhighlight %}
 
-> **Note**: Refer to the previous example for datasource
+N> Refer to the previous example for datasource
 
 ### Configure Events for the TreeView
 
@@ -467,13 +467,13 @@ When you click on the Mailbox folder item, the corresponding navigation action i
 {% endhighlight %}
 
 
-> **Note**: Refer to the previous example for datasource 
+N> Refer to the previous example for datasource 
 
 Execute the code example to render **TreeView**. When you select the mail folder in the **TreeView,** the corresponding action takes place by raising the **select** event. 
 
 {% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img7.png"%}
 
-> **Note**: The inline edit validation is done on the rising of “inlineEditValidation” event as in the screenshot as follows. The “inlineEditValidation” event rises only when the “allowEdit” property is set to True.
+N> The inline edit validation is done on the rising of “inlineEditValidation” event as in the screenshot as follows. The “inlineEditValidation” event rises only when the “allowEdit” property is set to True.
 
 {% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img8.png"%}
 
@@ -554,7 +554,7 @@ Initialize the **Context Menu** in the script section.
 
 
 
-> **Note**: Refer to the previous example for datasource. 
+N> Refer to the previous example for datasource. 
 
 The following screenshot displays adding a new folder in the **TreeView** using the **Context Menu**. You can right-click on the **TreeView** Node and select the new folder option in the **Context Menu** for the selected folder. A new folder is added as the child of the **Drafts** folder.
 

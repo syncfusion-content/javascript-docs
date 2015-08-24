@@ -219,9 +219,9 @@ $(function () {
 {% endhighlight %}
 
 
-> **Important**: The images in the above code snippet are taken from the installation location of the Essential JavaScript Studio in your machine,
-> For example: $system drive: \Program Files\ Syncfusion\EssentialStudio\12.1.0.43\JavaScript\samples\web\images\schedule
-> You can create a folder named "Images" in the same location as your newly created HTML file and then move all the images from the installation folder to the newly created “Images” folder. This helps you in referring appointments appropriately within the Schedule control.
+N> **Important**: The images in the above code snippet are taken from the installation location of the Essential JavaScript Studio in your machine,
+N> For example: $system drive: \Program Files\ Syncfusion\EssentialStudio\12.1.0.43\JavaScript\samples\web\images\schedule
+N> You can create a folder named "Images" in the same location as your newly created HTML file and then move all the images from the installation folder to the newly created “Images” folder. This helps you in referring appointments appropriately within the Schedule control.
 
 Once you set the template for the appointments, the **Scheduler** is displayed with the customized appointments as shown in the following screenshot.
 
@@ -417,7 +417,7 @@ After setting the height for appointments in **month** view, the **Schedule** co
 
 
 
-> **Important**: While adding new appointments to the Schedule control either by using local or remote data, the new appointment data is saved automatically to the appointment collection.
+N> **Important**: While adding new appointments to the Schedule control either by using local or remote data, the new appointment data is saved automatically to the appointment collection.
 
 
 
@@ -432,7 +432,7 @@ The following screenshot illustrates a quick appointment pop-up window.
 {% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img8.png" Caption="Quick Appointment Pop-up Window."%}
 
 
-> **Important**: In case, you need to manipulate with newly created or edited appointments, you can use the events available within the Schedule control.
+N> **Important**: In case, you need to manipulate with newly created or edited appointments, you can use the events available within the Schedule control.
 
 
 The event named **appointmentSaved** is triggered while saving a new appointment to the **Schedule** control. It provides the new appointment data as an argument that helps you to retrieve the newly entered appointment data through a function. 

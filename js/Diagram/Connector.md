@@ -395,7 +395,7 @@ var connector = {
 
 {% include image.html url="/js/Diagram/Connector_images/Connector_img16.png" %}
 
-> **Note:** For node creation refer the link [Node creation](/js/Diagram/Node#create-node). And for creating connection refer the link [Connecting nodes](/js/Diagram/Connector#create-connector). 
+N>  For node creation refer the link [Node creation](/js/Diagram/Node#create-node). And for creating connection refer the link [Connecting nodes](/js/Diagram/Connector#create-connector). 
 ## Decorator
 
 You can decorate the source point and target point of the connector using decorator shape. The `sourceDecorator` and `targetDecorator` properties are used to add decorators to connector. The following code illustrates how decorator is created and added at connector's target point.
@@ -551,4 +551,4 @@ The following code illustrates how to disable `select` constraints of `connector
 connector.constraints = connector.Constraints & ~(ej.datavisualization.Diagram.ConnectorConstraints.Select);
 {% endhighlight %}
 
-> **Note:** Connector's constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations). 
+N>  Connector's constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations). 

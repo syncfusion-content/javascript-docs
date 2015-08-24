@@ -13,7 +13,7 @@ All the **Essential JavaScript** **Widget** supports **RTL** option, when set to
 
 **Example**: To display the DatePicker control from Right-To-Left, we need to define its **enableRTL** property to **true** as depicted below,
 
-> **Note**: Add and refer the necessary **Scripts** and **Stylesheets** to your sample application, before initializing any of the controls.
+N> Add and refer the necessary **Scripts** and **Stylesheets** to your sample application, before initializing any of the controls.
 
 {% highlight html %}
 

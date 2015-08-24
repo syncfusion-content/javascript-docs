@@ -151,5 +151,5 @@ The output of the above code example is as follows.
 {% include image.html url="/js/Schedule/Views_images/Views_img3.png" Caption=""%}
 
 
-> **Important**: When the date ranges specified in the renderDates property yield more than the difference of 7 days, then the schedule is rendered in the month-like view with the user provided dates. When the date difference yields less than 7, then the schedule gets rendered in the normal view with the specified dates.
+N> **Important**: When the date ranges specified in the renderDates property yield more than the difference of 7 days, then the schedule is rendered in the month-like view with the user provided dates. When the date difference yields less than 7, then the schedule gets rendered in the normal view with the specified dates.
 

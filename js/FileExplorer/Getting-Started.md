@@ -60,7 +60,7 @@ Add div element to render a **FileExplorer.**
 
 Initialize the script for **FileExplorer.**
 
-> **Note:** ajaxAction API used to perform ajax operation like read, delete creating folder etc, using ajaxAction property, mention the server class url. This server class that is provided handles ajax action, that is triggered client-side, same as uploading file and downloading file, customizable ajaxSettings are used. The upload property is used to call server action method, that uploads files to the server and downloads the property used to call server action to download files, that are located in the given path.  Here the path property is an important one, as you can mention the root path of file system using the path.
+N>  ajaxAction API used to perform ajax operation like read, delete creating folder etc, using ajaxAction property, mention the server class url. This server class that is provided handles ajax action, that is triggered client-side, same as uploading file and downloading file, customizable ajaxSettings are used. The upload property is used to call server action method, that uploads files to the server and downloads the property used to call server action to download files, that are located in the given path.  Here the path property is an important one, as you can mention the root path of file system using the path.
 
 {% highlight js %}
 

@@ -81,7 +81,7 @@ Click on New Item and select HTML Page from the listed templates. Name the page 
 
 Add the script files and CSS files in the title tag of the default.html page.
 
-> **Note:** Please follow the given order while adding scripts and styles.
+N>  Please follow the given order while adding scripts and styles.
 
 {% highlight html %}
 
@@ -361,7 +361,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %} 
 
-> **Note:** In this example, “WebApplication2” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created.
+N>  In this example, “WebApplication2” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created.
 
 
 

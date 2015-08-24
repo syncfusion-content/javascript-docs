@@ -99,7 +99,7 @@ var connector = {
 
 {% include image.html url="/js/Diagram/Label_images/Label_img4.png" %}
 
-> **Note:** No built-in support is added to rotate labels interactively.
+N>  No built-in support is added to rotate labels interactively.
 
 ## Appearance 
 

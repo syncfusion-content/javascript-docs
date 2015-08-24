@@ -289,7 +289,7 @@ ToolTipValue: "Valeur"
 
 {% endhighlight %}
 
-> **Note:** In order to render the localized OlapClient, we need to reset the content available in both OlapClient Control and OLAP Cube
+N>  In order to render the localized OlapClient, we need to reset the content available in both OlapClient Control and OLAP Cube
 
 ##Localizing Control Information
 

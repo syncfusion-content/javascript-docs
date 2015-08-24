@@ -111,7 +111,7 @@ Add the following code to your **web.config** file.
 
 
 
-> **Note**:  maxRequestLength is measured in kilobytes.
+N> maxRequestLength is measured in kilobytes.
 
 
 ### How to upload the files above 28.6 MB?
@@ -154,13 +154,13 @@ You can add the following code to your **web.config** file in order to set that 
 
 
 
-> **Note**: maxAllowedContentLength is measured in bytes.
+N> maxAllowedContentLength is measured in bytes.
 
 
 {% include image.html url="/js/UploadBox/File-Size_images/File-Size_img4.png" %}
                        
 
-> * When you configure both maxAllowedContentLength, maxRequestLength attributes, then maxAllowedContentLength is considered for execution.
-> * When the upload file’s size exceeds maxAllowedContentLength, you get a 404.13 error page.
-> * When the upload file’s size exceeds maxRequestLength value, you get an exception “System.Web.HttpException: Maximum request length exceeded”.
-> * The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).
+N> * When you configure both maxAllowedContentLength, maxRequestLength attributes, then maxAllowedContentLength is considered for execution.
+N> * When the upload file’s size exceeds maxAllowedContentLength, you get a 404.13 error page.
+N> * When the upload file’s size exceeds maxRequestLength value, you get an exception “System.Web.HttpException: Maximum request length exceeded”.
+N> * The ASP.NET method of maxRequestLength is greater than or equal to the IIS method of limiting the request length (maxAllowedContentLength).

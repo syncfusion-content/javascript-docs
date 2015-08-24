@@ -43,5 +43,5 @@ angular.module('gridCtrl', ['ejangular'])
 {% endhighlight %}
 
 
-> **Note:** This feature is applicable only for OLAP datasource.
+N>  This feature is applicable only for OLAP datasource.
 

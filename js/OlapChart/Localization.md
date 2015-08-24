@@ -114,7 +114,7 @@ $(function() {
 
 {% endhighlight %}
 
-> **Note:** In order to render the localized OlapChart, you are required to reset the content available in both OlapChart Control and OLAP Cube.
+N>  In order to render the localized OlapChart, you are required to reset the content available in both OlapChart Control and OLAP Cube.
 
 ##Localizing Control Information
 

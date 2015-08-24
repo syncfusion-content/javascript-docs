@@ -49,7 +49,7 @@ After clicking **OK**, the referred assemblies look as follows.
 
 Add the script files and CSS files in the **title** tag of the **default.html** page.
 
-> **Note:** Use the following code example when adding scripts and styles.
+N>  Use the following code example when adding scripts and styles.
 
 
 {% highlight html %}
@@ -316,7 +316,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %} 
 
-> **Note:** In this example, “WebApplication2” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created.
+N>  In this example, “WebApplication2” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created.
 
 #Relational
 
@@ -357,7 +357,7 @@ After clicking OK, the referred assemblies look as follows.
 
 Add the script files and CSS files in the **title** tag of the **default.html** page.
 
-> **Note:** Use the following code sample when adding scripts and styles.
+N>  Use the following code sample when adding scripts and styles.
 
 {% highlight html %}
 <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
@@ -687,4 +687,4 @@ namespace WebApplication2
 
 {% endhighlight %}
 
-> **Note:** In this example, “WebApplication2” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created.
+N>  In this example, “WebApplication2” indicates the name of the project and “PivotGridService” indicates the name of the WCF service created.
