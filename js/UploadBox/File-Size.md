@@ -51,7 +51,7 @@ Initialize the **Uploadbox** using the following code example.
 
 To know about file action, we need to refer link:
 
-[http://help.syncfusion.com/ug/js/default.htm#!documents/fileactions.htm](http://help.syncfusion.com/ug/js/default.htm)
+<http://docs.syncfusion.com/js/uploadbox/file-actions>
 
 The following screenshot displays **Uploadbox** control with customized file size.
 

@@ -19,7 +19,7 @@ Using this, you can view the equivalent **XHTML** code of the content in the edi
 
 To know more details about the **Angular binding**, refer to the following link location,
 
-[http://help.syncfusion.com/ug/js/default.htm#!documents/angularjs.htm](http://help.syncfusion.com/ug/js/default.htm#!documents/angularjs.htm)
+<http://docs.syncfusion.com/js/angularjs>
 
 You can bind data to the **RTE** control through **angular support**.
 
