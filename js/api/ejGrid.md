@@ -298,8 +298,8 @@ $("#Grid").ejGrid({
 
 
 
-### allowMultipleExporting<span class="type-signature type boolean">boolean</span>
-{:#members:allowmultipleexporting}
+### allowFiltering<span class="type-signature type boolean">boolean</span>
+{:#members:allowFiltering}
 
 
 
@@ -11460,6 +11460,58 @@ $("#Grid").ejGrid("rowHeightRefresh");
 
 
 
+###  setDimension<span class="signature">()</span>
+{:#methods:dimension}
+ 
+Set dimension for grid with corresponding to grid parent.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"><code>height</code></td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Pass the height of the grid container</td>
+</tr>
+<tr>
+<td class="name"><code>width</code></td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Pass the width of the grid container</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+<pre class="prettyprint">
+<code>&lt;script&gt;
+// Create grid object.
+ var gridObj = $("#Grid").data("ejGrid");
+   gridObj.setDimension(300,400); // Set grid dimension
+  &lt;/script&gt;</code>
+</pre>
+<pre class="prettyprint">
+<code>
+  &lt;script&gt;
+ //Set grid dimension based on providing height and width
+ &lt;/script&gt;</code>
+</pre>
+
+
+
+
+
 
 
 ### search<span class="signature">(searchString)</span>
@@ -12079,6 +12131,8 @@ gridObj.updateRecord("OrderID", { OrderID: 10249, EmployeeID: 3 });
 // Sends a update record request to the grid
 $("#Grid").ejGrid("updateRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });        
 </script>{% endhighlight %}
+
+
 
 
 
