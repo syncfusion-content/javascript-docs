@@ -91,7 +91,7 @@ Requires
 
 
 
-Enables or disables the ability to resize column.
+Enables or disables the ability to resize the column width interactively.
 
 
 
@@ -117,12 +117,11 @@ Example
 {:.example}
 
 
-{% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                   
-        $("#treegrid").ejTreeGrid({ allowColumnResize:  true });                        * 
-</script>{% endhighlight %}
+{% highlight html %}   
+              
+        $("#treegrid").ejTreeGrid({ allowColumnResize:  true });
+                                 
+{% endhighlight %}
 
 
 
@@ -140,7 +139,7 @@ Example
 
 
 
-To enable drag and drop the records.
+Enables or disables the ability to drag and drop the row interactively to reorder the rows.
 
 
 
@@ -168,11 +167,9 @@ Example
 
 {% highlight html %}
  
-<treegrid id="treegrid">treegrid</treegrid> 
- 
-<script>
         $("#treegrid").ejTreeGrid({  allowDragAndDrop : true });
-</script>{% endhighlight %}
+        
+{% endhighlight %}
 
 
 
@@ -190,7 +187,7 @@ Example
 
 
 
-Enables or disables Filtering fields column wise.
+Enables or disables the ability to filter the data on all the columns. Enabling this property will display a row with editor controls corresponding to each column. You can restrict filtering on particular column by disabling this property directly on that column instance itself.
 
 
 
@@ -217,12 +214,9 @@ Example
 
 
 {% highlight html %}
- 
-<treegrid id="treegrid">treegrid</treegrid> 
- 
-<script>
+
         $("#treegrid").ejTreeGrid({  allowFiltering : true });
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -240,7 +234,7 @@ Example
 
 
 
-Enables or Disables Keyboard navigation in treegrid
+Enables or disables keyboard navigation.
 
 
 
@@ -267,11 +261,9 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                  
         $("#treegrid").ejTreeGrid({ allowKeyboardNavigation : true});                   
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -289,7 +281,7 @@ Example
 
 
 
-Specifies enabling or disabling multiple sorting for tree grid columns
+Enables or disables the ability to sort the rows based on multiple columns/fields by clicking on each column header. Rows will be sorted recursively on clicking the column headers.
 
 
 
@@ -316,11 +308,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                   
         $("#treegrid").ejTreeGrid({ allowMultiSorting : true});                 
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -338,7 +329,7 @@ Example
 
 
 
-Enables or disables the interactive selection of a row.
+Enables or disables the ability to select a row interactively.
 
 
 
@@ -365,11 +356,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>   
-        $("#treegrid").ejTreeGrid({ allowSelection:  true });                   * 
-</script>{% endhighlight %}
+   
+        $("#treegrid").ejTreeGrid({ allowSelection:  true });                    
+
+{% endhighlight %}
 
 
 
@@ -387,7 +377,7 @@ Example
 
 
 
-Enables or disables sorting. When enabled, we can sort the column by clicking on the column.
+Enables or disables the ability to sort the rows based on a single field/column by clicking on that column header. When enabled, rows can be sorted only by single field/column.
 
 
 
@@ -414,12 +404,10 @@ Example
 
 
 {% highlight html %}
- 
-<treegrid id="treegrid">treegrid</treegrid> 
- 
-<script>
+
         $("#treegrid").ejTreeGrid({ allowSorting : true });
-</script>{% endhighlight %}
+        
+{% endhighlight %}
 
 
 
@@ -437,7 +425,7 @@ Example
 
 
 
-Specifies the alternate row template for each alternate TreeGrid row
+Specifies the id of the template that has to be applied for alternate rows.
 
 
 
@@ -464,14 +452,13 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                   
         $("#treegrid").ejTreeGrid(
  {
     altRowTemplateID: "altRowCustomTemplate"
  });            
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -489,7 +476,7 @@ Example
 
 
 
-It is to specify data values to the field.
+Option for adding columns; each column has the option to bind to a field in the dataSource.
 
 
 
@@ -500,8 +487,7 @@ Example
 
 
 {% highlight html %}
-<div id="treegrid"></div> 
-<script>                          
+                          
         $("#treegrid").ejTreeGrid(
  {
     columns: [{ field: "Name", headerText: "Name", isTemplateColumn: true, templateID: "customColumnTemplate" },
@@ -509,7 +495,8 @@ Example
                           { field: "DateCreated", headerText: "Date Created" },
                           { field: "DateModified", headerText: "Date Modified" }]       
  });            
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -527,7 +514,7 @@ Example
 
 
 
-Enables or disables Filtering field for particular column.
+Enables or disables the ability to filter the rows based on this column.
 
 
 
@@ -555,11 +542,8 @@ Example
 
 {% highlight html %}
  
-<div id="treegrid"></div> 
- 
-<script>
         $("#treegrid").ejTreeGrid({ columns: [{ allowFiltering: true },{allowFiltering: false }] });
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -577,7 +561,7 @@ Example
 
 
 
-Enables or disables sorting for a particular column.
+Enables or disables the ability to sort the rows based on this column/field.
 
 
 
@@ -605,11 +589,9 @@ Example
 
 {% highlight html %}
  
-<div id="treegrid"></div> 
- 
-<script>
         $("#treegrid").ejTreeGrid({ columns: [{ allowSorting: true },{allowSorting: false }]  });
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -627,7 +609,7 @@ Example
 
 
 
-Specify edit type of the column.
+Specifies the edit type of the column.
 
 
 
@@ -655,10 +637,9 @@ Example
 
 {% highlight html %}
  
-<div id="treegrid"></div> 
-<script>  
  $("#treegrid").ejTreeGrid({columns: [{ editType: "stringedit"},{editType: "booleanedit"}]});
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -676,7 +657,7 @@ Example
 
 
 
-Specify column field value from the data source.
+Specifies the name of the field from the dataSource to bind with this column.
 
 
 
@@ -703,11 +684,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
+      
         $("#treegrid").ejTreeGrid({columns: [{ field: "Name"},{field: "Type"}]});
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -725,7 +705,7 @@ Example
 
 
 
-Specify filter edit type of the column.
+Specifies the type of the editor control to be used to filter the rows.
 
 
 
@@ -752,11 +732,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
+       
         $("#treegrid").ejTreeGrid({columns: [{ filterEditType: "stringedit"},{filterEditType: "booleanedit"}]});
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -774,7 +753,7 @@ Example
 
 
 
-Specify column Header Text value to be displayed in each column.
+Header text of the column.
 
 
 
@@ -801,11 +780,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
+         
         $("#treegrid").ejTreeGrid({columns: [{ headerText: "Name"},{headerText: "Type"}]});
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -823,7 +801,7 @@ Example
 
 
 
-Specify column field visiblity.
+Controls the visibility of the column.
 
 
 
@@ -850,11 +828,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
+         
         $("#treegrid").ejTreeGrid({columns: [{ field: "name",visible: true},{field: "Type",visible: false}]});
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -872,7 +849,7 @@ Example
 
 
 
-Specifies the contextMenuSettings options.
+Options for displaying and customizing context menu items.
 
 
 
@@ -894,7 +871,7 @@ Specifies the contextMenuSettings options.
 
 
 
-Specifies the list of context menu items to rendered in context menu
+Option for adding items to context menu.
 
 
 
@@ -921,11 +898,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>  
+   
         $("#treegrid").ejTreeGrid({ contextMenuItems: [ej.TreeGrid.ContextMenuItems.Add,ej.TreeGrid.ContextMenuItems.Edit] });                   
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -943,7 +919,7 @@ Example
 
 
 
-Specifies the state of enabling or disabling context menu
+Shows/hides the context menu.
 
 
 
@@ -970,60 +946,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>  
+  
         $("#treegrid").ejTreeGrid(contextMenuSettings :{ showContextMenu:  true });                      
-</script>{% endhighlight %}
 
-
-
-
-
-
-
-### cssClass<span class="type-signature type string">string</span>
-{:#members:cssclass}
-
-
-
-
-
-
-
-
-Specify the CSS class to achieve tree grid custom theme.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* ""
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
-        $("#treegrid").ejTreeGrid({  cssClass : "gradient-lime" });
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -1041,7 +967,7 @@ Example
 
 
 
-Collection of data or hierarchical data to represent in TreeGrid
+Specifies hierarchical or self-referential data to populate the TreeGrid.
 
 
 
@@ -1068,14 +994,13 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
+          
         $("#treegrid").ejTreeGrid(
  {
     dataSource:[{Id:2,TaskName:"Testing",startDate:"12/1/2000",Duration:5 }]    
  });            
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1093,7 +1018,7 @@ Example
 
 
 
-Specifies the drag Tooltip options.
+Options for displaying and customizing the tooltip. This tooltip will show the preview of the row that is being dragged.
 
 
 
@@ -1115,7 +1040,7 @@ Specifies the drag Tooltip options.
 
 
 
-Specifies whether to show tooltip while draggging a row
+Specifies whether to show tooltip while dragging a row.
 
 
 
@@ -1142,11 +1067,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                 
         $("#treegrid").ejTreeGrid(dragTooltip :{ showTooltip:  true });
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1164,7 +1088,7 @@ Example
 
 
 
-Specifies the list of tooltip items to rendered in tooltip
+Option to add field names whose corresponding values in the dragged row needs to be shown in the preview tooltip.
 
 
 
@@ -1191,11 +1115,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>  
+
         $("#treegrid").ejTreeGrid(dragTooltip :{ tooltipItems: "TaskName","TaskID","StartDate" });                       
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1213,7 +1136,7 @@ Example
 
 
 
-Specifies the template for tooltip on mouseaction on row drag and drop
+Custom template for that tooltip that is shown while dragging a row.
 
 
 
@@ -1240,11 +1163,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                  
         $("#treegrid").ejTreeGrid(dragTooltip :{ tooltipTemplate: "" });        
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1262,7 +1184,7 @@ Example
 
 
 
-Specifies the editSettings options in treegrid.
+Options for enabling and configuring the editing related operations. 
 
 
 
@@ -1284,7 +1206,7 @@ Specifies the editSettings options in treegrid.
 
 
 
-Enables or Disables add row icon in treegrid toolbar
+Enables or disables the button to add new row in context menu as well as in toolbar.
 
 
 
@@ -1311,11 +1233,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                  
         $("#treegrid").ejTreeGrid({  editSettings:{allowAdding : true} });
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1333,7 +1254,7 @@ Example
 
 
 
-Enables or disables delete row icon in toolbar
+Enables or disables the button to delete the selected row in context menu as well as in toolbar.
 
 
 
@@ -1360,11 +1281,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                  
         $("#treegrid").ejTreeGrid({  editSettings:{allowDeleting : true} });    
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1382,7 +1302,7 @@ Example
 
 
 
-Specifies the option for enabling / disablig editing in treegrid part
+Enables or disables the ability to edit a row or cell.
 
 
 
@@ -1409,11 +1329,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                  
         $("#treegrid").ejTreeGrid({  editSettings:{allowEditing : true} });     
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1458,11 +1377,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                 
         $("#treegrid").ejTreeGrid({  editSettings:{editMode : "cellEditing"} });
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1480,7 +1398,7 @@ Example
 
 
 
-Specifies the position where have to add new row.
+Specifies the position where the new row has to be added.
 
 
 
@@ -1507,11 +1425,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>   
+   
  $("#treegrid").ejTreeGrid({  editSettings:{rowPosition : "aboveSelectedRow"} });
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1529,7 +1446,7 @@ Example
 
 
 
-Enables or Disables enableAltRow row effect in TreeGrid
+Specifies whether to render alternate rows in different background colors.
 
 
 
@@ -1556,11 +1473,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                  
         $("#treegrid").ejTreeGrid({ enableAltRow : false});                     
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1578,7 +1494,7 @@ Example
 
 
 
-Enables or disables the collapse all menus for tree grid , when enabled all sub menus will disappears in tree grid
+Specifies whether to load all the rows in collapsed state when the TreeGrid is rendered for the first time.
 
 
 
@@ -1605,14 +1521,13 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                 
         $("#treegrid").ejTreeGrid(
  {
     enableCollapseAll: false
  });            
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1630,7 +1545,7 @@ Example
 
 
 
-Specify the enableResize to tree grid.
+Specifies whether to resize TreeGrid whenever window size changes.
 
 
 
@@ -1657,11 +1572,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
+        
         $("#treegrid").ejTreeGrid({enableResize:true});
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1679,7 +1593,7 @@ Example
 
 
 
-Enables or Disables virtualization for rendering TreeGrid items.
+Specifies whether to render only the visual elements that are visible in the UI. When you enable this property, it will reduce the loading time for loading large number of records. 
 
 
 
@@ -1706,11 +1620,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                 
         $("#treegrid").ejTreeGrid({ enableVirtualization : true});                      
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1728,7 +1641,7 @@ Example
 
 
 
-To change filterBarMode either immediate or onEnter.
+Specifies if the filtering should happen immediately on each key press or only on pressing enter key.
 
 
 
@@ -1756,11 +1669,9 @@ Example
 
 {% highlight html %}
  
-<div id="treegrid"></div> 
- 
-<script>
         $("#treegrid").ejTreeGrid({  filterBarMode : "onEnter" });
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1778,7 +1689,7 @@ Example
 
 
 
-Specifies the mapping property path for child Id in self reference datasource
+Specifies the name of the field in the dataSource, which contains the id of that row.
 
 
 
@@ -1805,11 +1716,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                  
         $("#treegrid").ejTreeGrid({  IdMapping : "ID" });                   
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1827,7 +1737,7 @@ Example
 
 
 
-Specifies the mapping property path for parent Id in self reference datasource
+Specifies the name of the field in the dataSource, which contains the parent’s id. This is necessary to form a parent-child hierarchy, if the dataSource contains self-referential data.
 
 
 
@@ -1854,11 +1764,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                
         $("#treegrid").ejTreeGrid({  parentIdMapping : "ID" });             
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1876,7 +1785,7 @@ Example
 
 
 
-It receives query to retrieve data from the table (query is same as SQL).
+Specifies ej.Query to select data from the dataSource. This property is applicable only when the dataSource is ej.DataManager.
 
 
 
@@ -1903,13 +1812,13 @@ Example
 
 
 {% highlight html %}
-<div id="treegrid"></div> 
-<script>                          
+                          
         $("#treegrid").ejTreeGrid(
  {
     query:ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);      
  });            
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -1927,7 +1836,7 @@ Example
 
 
 
-Specifies the height of a single row in treegrid. Also, we need to set same height in the CSS style with class name e-rowcell.
+Specifies the height of a single row in tree grid. Also, we need to set same height in the CSS style with class name e-rowcell.
 
 
 
@@ -1954,13 +1863,11 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                          
+                          
         $("#treegrid").ejTreeGrid({  
                         rowHeight : 30,
                         });
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -1978,7 +1885,7 @@ Example
 
 
 
-Specifies the row template for each TreeGrid row
+Specifies the id of the template to be applied for all the rows.
 
 
 
@@ -2005,63 +1912,13 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                
         $("#treegrid").ejTreeGrid(
  {
     rowTemplateID: "customTemplate"
  });            
-</script>{% endhighlight %}
 
-
-
-
-
-
-
-### selectedItem<span class="type-signature type numeric">numeric</span>
-{:#members:selecteditem}
-
-
-
-
-
-
-
-
-Specifies the selected row index.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
-        $("#treegrid").ejTreeGrid({ selectedItem : 2});                 
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
 
@@ -2079,7 +1936,7 @@ Example
 
 
 
-Specifies the selected row Index in Treegrid , the row with given index is highlighted
+Specifies the index of the selected row.
 
 
 
@@ -2106,14 +1963,13 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                 
         $("#treegrid").ejTreeGrid(
  {
     selectedRowIndex:2
  });            
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -2131,7 +1987,7 @@ Example
 
 
 
-Specifes the single or multiple row selection
+Specifies the type of selection whether to select single row or multiple rows.
 
 
 
@@ -2158,11 +2014,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
+          
         $("#treegrid").ejTreeGrid({ selectionType:"multiple" });                   
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -2180,7 +2035,7 @@ Example
 
 
 
-Enables or disables the column chooser.
+Controls the visibility of the menu button, which is displayed on the column header. Clicking on this button will show a popup menu. When you choose “Columns” item from this popup, a list box with column names will be shown, from which you can select/deselect a column name to control the visibility of the respective columns.
 
 
 
@@ -2208,10 +2063,10 @@ Example
 
 {% highlight html %}
  
-<div id="treegrid"></div> 
-<script>   
+  
         $("#treegrid").ejTreeGrid({ showColumnChooser:  true });                        * 
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -2229,7 +2084,7 @@ Example
 
 
 
-Specifies whether to show grid cell tooltip.
+Specifies whether to show tooltip when mouse is hovered on the cell.
 
 
 
@@ -2256,12 +2111,11 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                 
         $("#treegrid").ejTreeGrid({  
                         showGridCellTooltip : true});
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -2279,7 +2133,7 @@ Example
 
 
 
-Specifies whether to show grid cell tooltip over expander cell alone.
+Specifies whether to show tooltip for the cells, which has expander button.
 
 
 
@@ -2306,12 +2160,11 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                  
         $("#treegrid").ejTreeGrid({  
                         showGridExpandCellTooltip : true});
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -2329,7 +2182,7 @@ Example
 
 
 
-Specifies the size options for Treegrid.
+Options for setting width and height for TreeGrid.
 
 
 
@@ -2351,7 +2204,7 @@ Specifies the size options for Treegrid.
 
 
 
-Specify the height to tree grid.
+Height of the TreeGrid.
 
 
 
@@ -2378,11 +2231,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
+          
         $("#treegrid").ejTreeGrid({sizeSettings{height:'450px'}});
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -2400,7 +2252,7 @@ Example
 
 
 
-Specify the width to tree grid.
+Width of the TreeGrid.
 
 
 
@@ -2427,11 +2279,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
+          
         $("#treegrid").ejTreeGrid({sizeSettings{width:'500px'}});
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -2449,7 +2300,7 @@ Example
 
 
 
-Specifes the sorting options for Treegrid.
+Options for sorting the rows.
 
 
 
@@ -2471,7 +2322,7 @@ Specifes the sorting options for Treegrid.
 
 
 
-Specifes the sorted columns for Tree grid
+Option to add columns based on which the rows have to be sorted recursively.
 
 
 
@@ -2498,11 +2349,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
+          
         $("#treegrid").ejTreeGrid({ sortSettings{sortedColumns : []}});            
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -2520,7 +2370,7 @@ Example
 
 
 
-Specifies the toolbarSettings options.
+Options for displaying and customizing the toolbar items.
 
 
 
@@ -2542,7 +2392,7 @@ Specifies the toolbarSettings options.
 
 
 
-Specifies the state of enabling or disabling toolbar
+Shows/hides the toolbar.
 
 
 
@@ -2569,11 +2419,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>  
+   
         $("#treegrid").ejTreeGrid({ showToolBar:  true });                       
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -2591,7 +2440,7 @@ Example
 
 
 
-Specifies the list of toolbar items to rendered in toolbar
+Option to add items to the toolbar.
 
 
 
@@ -2619,10 +2468,9 @@ Example
 
 {% highlight html %}
  
-<div id="treegrid"></div> 
-<script>  
         $("#treegrid").ejTreeGrid({ toolbarItems: [ej.TreeGrid.ToolbarItems.Add,ej.TreeGrid.ToolbarItems.Edit] });                       
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
@@ -2640,7 +2488,7 @@ Example
 
 
 
-Specifies the tree expander column index in tree grid
+Specifies the index of the column that needs to have the expander button. By default, cells in the first column contain the expander button.
 
 
 
@@ -2667,14 +2515,13 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>          
+         
         $("#treegrid").ejTreeGrid(
  {
     treeColumnIndex: 1
  });            
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
