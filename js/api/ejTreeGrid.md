@@ -187,7 +187,7 @@ Example
 
 
 
-Enables or disables the ability to filter the data on all the columns. Enabling this property will display a row.
+Enables or disables the ability to filter the data on all the columns. Enabling this property will display a row with editor controls corresponding to each column. You can restrict filtering on particular column by disabling this property directly on that column instance itself.
 
 
 
@@ -871,7 +871,7 @@ Options for displaying and customizing context menu items.
 
 
 
-Options for displaying and customizing context menu items.
+Option for adding items to context menu.
 
 
 
@@ -1377,11 +1377,10 @@ Example
 
 
 {% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>                  
+                 
         $("#treegrid").ejTreeGrid({  editSettings:{editMode : "cellEditing"} });
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
