@@ -70,16 +70,15 @@ Click on New Item and select HTML Page from the listed templates. Name the page 
 * Select the following assemblies: 
 
    1. Microsoft.AnalysisServices.AdomdClient.dll
-   2. Syncfusion.Core.dll, 
-   3. Syncfusion.Linq.Base.dll 
-   4. Syncfusion.Olap.Base.dll, 
-   5. Syncfusion.EJ.dll  
-   6. Syncfusion.EJ.Olap.dll.
+   2. Syncfusion.Linq.Base.dll 
+   3. Syncfusion.Olap.Base.dll, 
+   4. Syncfusion.EJ.dll  
+   5. Syncfusion.EJ.Olap.dll.
 * Click OK
 
 ###Add Scripts and Styles
 
-Add the script files and CSS files in the title tag of the default.html page.
+Add the script files and CSS files in the **&lt;head&gt;** tag of the **default.html** page.
 
 N>  Please follow the given order while adding scripts and styles.
 
@@ -101,7 +100,7 @@ Add the following code inside the **&lt;body&gt;** tag in the **default.html** p
 
 {% highlight html %}
 
-//Creating a div tag, which will act as a container for ejOlapGauge widget.
+<!--Creating a div tag, which will act as a container for ejOlapGauge widget.-->
 <div id = "OlapGauge" style = "height: 350px; width: 100%; position:relative">
 </div>
 
@@ -207,7 +206,7 @@ Add the following code inside the **&lt;body&gt;** tag in the **default.html** p
 
 ###Create WCF Service
 
-Right-click the project and select Add > New Folder.  Name the folder as WCF.Right-click the WCF folder created and select Add > New Item.  In the Add New Item window, select WCF Service and name it OlapGaugeService.svc. And then Click Add.
+Right-click the project and select Add > New Folder.  Name the folder as wcf. Let "wcf" folder name be in lower case. Right-click the wcf folder created and select Add > New Item.  In the Add New Item window, select WCF Service and name it OlapGaugeService.svc. And then Click Add.
 {% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img8.png" %}
 
 ###Add service methods inside Interface
@@ -252,7 +251,7 @@ Create the `OlapGaugeService` class to implement the service methods. Inherit th
 
 {% highlight c# %}
 
-namespace WebApplication2
+namespace WebApplication2.wcf
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class OlapGaugeService : IOlapGaugeService
@@ -331,29 +330,29 @@ private OlapReport CreateOlapReport()
 
 ###Configure Web.Config 
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is `WebApplication2.OlapGaugeService` where **"OlapGaugeService"** is the service class name and **“WebApplication2"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
+* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is `WebApplication2.wcf.OlapGaugeService` where **"OlapGaugeService"** is the service class name and **“WebApplication2.wcf"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
 
-   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapGaugeService** contract and hence it is `WebApplication2.IOlapGaugeService`.
+   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapGaugeService** contract and hence it is `WebApplication2.wcf.IOlapGaugeService`.
    2. **Binding:** In your application, you can use `webHttpBinding` to post and receive the requests and responses between client-end and service-end.
    3. **BehaviorConfiguration:** This property contains the name of the behavior used in the endpoint. **endpointBehaviors** are illustrated as follows**.**
 
 {% highlight xml %}
 
  <services>
-      <service name="WebApplication2.OlapGaugeService">
-        <endpoint address="" behaviorConfiguration="WebApplication2.OlapGaugeServiceAspNetAjaxBehavior"
-          binding="webHttpBinding" contract="WebApplication2.IOlapGaugeService" />
+      <service name="WebApplication2.wcf.OlapGaugeService">
+        <endpoint address="" behaviorConfiguration="WebApplication2.wcf.OlapGaugeServiceAspNetAjaxBehavior"
+          binding="webHttpBinding" contract="WebApplication2.wcf.IOlapGaugeService" />
       </service>
     </services>
 
 {% endhighlight %}
 
-* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, `WebApplication2.OlapGaugeServiceAspNetAjaxBehavior`` refers to the OlapGaugeService class under the namespace **WebApplication2** in **OlapGaugeService.svc.cs** file that is the appropriate behavior for the endpoint.
+* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code sample, `WebApplication2.wcf.OlapGaugeServiceAspNetAjaxBehavior` refers to the OlapGaugeService class under the namespace **WebApplication2.wcf** in **OlapGaugeService.svc.cs** file which is the appropriate behavior for the endpoint.
 
 {% highlight xml %}
 
    <endpointBehaviors>
-        <behavior name="WebApplication2.OlapGaugeServiceAspNetAjaxBehavior">
+        <behavior name="WebApplication2.wcf.OlapGaugeServiceAspNetAjaxBehavior">
           <enableWebScript />
         </behavior>
     </endpointBehaviors>
@@ -361,7 +360,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %} 
 
-N>  In this example, “WebApplication2” indicates the name of the project and “OlapGaugeService” indicates the name of the WCF service created.
+N>  In this example, “WebApplication2.wcf” indicates the namespace in the WCF Service and “OlapGaugeService” indicates the class name in the WCF Service.
 
 
 

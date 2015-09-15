@@ -89,7 +89,7 @@ Click **OK**.
 
 ###Add Scripts and Styles 
 
-Add the script files and CSS files in the **title** tag of the **default.html** page.
+Add the script files and CSS files in the **head** tag of the **default.html** page.
 
 N>  Please follow the following order while adding scripts and styles.
 
@@ -110,7 +110,7 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 {% highlight html %}
 
 <div>
-     //Creating a div tag which will act as a container for ejOlapChart widget.
+     <!--Creating a div tag which will act as a container for ejOlapChart widget.-->
     <div id="OlapChart" style="height: 350px; width: 100%; overflow: auto">
     </div>
     <script type="text/javascript">
@@ -133,7 +133,7 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 ###Create WCF Service
 
-Right-click the project, select **Add > New Folder**.  Name the folder as **WCF.**.Now right-click the **WCF** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it as **OlapChartService.svc**. And then click **Add**.
+Right-click the project, select **Add > New Folder**.  Name the folder as **wcf.** Let "wcf" folder name be in lower case. **.Now right-click the **wcf** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it as **OlapChartService.svc**. And then click **Add**.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img8.png" %}
 
@@ -152,6 +152,9 @@ public interface IOlapChartService
 
    [OperationContract]
    Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string customObject);
+    
+   [OperationContract]    
+   void Export(System.IO.Stream stream);
 }
 
 {% endhighlight %}
@@ -182,7 +185,7 @@ Create the `OlapChartService` class to implement the service methods. Inherit th
 
 {% highlight c# %}
 
-namespace WebApplication2
+namespace WebApplication2.wcf
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class OlapChartService : IOlapChartService
@@ -229,6 +232,15 @@ public Dictionary<string, object> DrillChart(string action, string drilledSeries
    dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());            
    return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
 }
+//This method export the OlapChart to Excel, word and PDF.
+public void Export(System.IO.Stream stream)
+{
+     System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
+     string args = System.Web.HttpContext.Current.Server.UrlDecode(sReader.ReadToEnd());
+     OlapDataManager DataManager = new OlapDataManager(connectionString);
+     string fileName = "Sample";
+     htmlHelper.ExportOlapChart(DataManager, args, fileName, System.Web.HttpContext.Current.Response);
+}
 
 //This method carries information about the default report rendered within OlapChart initially. 
 private OlapReport CreateOlapReport()
@@ -259,37 +271,36 @@ private OlapReport CreateOlapReport()
 
 ###Configuring Web.Config
 
-* You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is `WebApplication2.OlapChartService` where `OlapChartService` is the service class name and “**WebApplication2**" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
-   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapChartService** contract and hence it is `WebApplication2.IOlapChartService`.
+* You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is `WebApplication2.wcf.OlapChartService` where `OlapChartService` is the service class name and “**WebApplication2.wcf**" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
+   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapChartService** contract and hence it is `WebApplication2.wcf.IOlapChartService`.
    2. **Binding:** In your application, you use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
    3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows
 
 {% highlight xml %}
 
 <services>
-      <service name="WebApplication2.OlapChartService">
-        <endpoint address="" behaviorConfiguration="WebApplication2.OlapChartServiceAspNetAjaxBehavior"
-          binding="webHttpBinding" contract="WebApplication2.IOlapChartService" />
+      <service name="WebApplication2.wcf.OlapChartService">
+        <endpoint address="" behaviorConfiguration="WebApplication2.wcf.OlapChartServiceAspNetAjaxBehavior"
+          binding="webHttpBinding" contract="WebApplication2.wcf.IOlapChartService" />
       </service>
 </services>
 
 {% endhighlight %}
 
-* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this `name` property. In the following code sample, `WebApplication2.OlapChartServiceAspNetAjaxBehavior` refers to the **OlapChartService** class under
-the namespace **WebApplication2** in **OlapChartService.svc.cs** file that is the appropriate behavior for the endpoint. 
+* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this `name` property. In the following code sample, `WebApplication2.wcf.OlapChartServiceAspNetAjaxBehavior` refers to the **OlapChartService** class under
+the namespace **WebApplication2.wcf** in **OlapChartService.svc.cs** file which is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}
 
 <endpointBehaviors>
-        <behavior name="WebApplication2.OlapChartServiceAspNetAjaxBehavior">
+        <behavior name="WebApplication2.wcf.OlapChartServiceAspNetAjaxBehavior">
           <enableWebScript />
         </behavior>
 </endpointBehaviors>
 
-
 {% endhighlight %}
 
-N>  In this example, “WebApplication2” indicates the name of the project and “OlapChartService” indicates the name of the WCF service created.
+N>  In this example, “WebApplication2.wcf” indicates the namespace in the WCF Service and “OlapChartService” indicates the class name in the WCF Service.
 
 
 
