@@ -33,12 +33,12 @@ The primary reasons for using service in an **OLAP** processing are as follows:
    * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
    * Localized information is also available in cube schema.  
 
-3.**MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap**.**Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
+3.**MDX Generator: You can frame the MDX query using an MDX generator in Syncfusion.Olap**.**Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set, containing values that are converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
 
-4.**OLAP Report:** The OLAP Report holds the complete information of each axes such as column, row and slicer. Using OLAP Report, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
+4.**OLAP Report:** The OLAP Report holds the complete information of each axis such as column, row and slicer. Using OLAP Report, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
 
-As the OLAP Control is the key for each and every operation, initially you need to serialize the OLAP Reports and send to client-side in a form of string.
-When you perform any operation, such as drill up/down, filtering, sorting etc., you need to send OLAP Reports from the client-side to the service in a de-serialized and updated format.
+As the OLAP Control is the key for each and every operation, you need to serialize the OLAP Reports initially and send them client-side in the form of a string.
+When you perform any operation, such as drill up or down, filtering, sorting etc., you need to send OLAP Reports from the client-side to the service in a de-serialized and updated format.
 Further operations are carried with updated OLAP Reports only and you can send the updated OLAP Reports back to client-side with **JSON** data in a serialized format again. 
 This process has the OLAP Reports always updated. You cannot operate serialized OLAP Reports in client-side and hence it is carried to service for performing  the update operation.
 
@@ -133,7 +133,7 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 ###Create WCF Service
 
-Right-click the project, select **Add > New Folder**.  Name the folder as **wcf.** Let the "wcf" folder name be in lower case. **.Now right-click the **wcf** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it as **OlapChartService.svc**. And then click **Add**.
+Right-click the project, select **Add > New Folder**.  Name the folder as **wcf.** Let the "wcf" folder name be in lower case. Now right-click the **wcf** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it **OlapChartService.svc**. And then click **Add**.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img8.png" %}
 
@@ -225,7 +225,7 @@ public Dictionary<string, object> InitializeChart(string action, string customOb
    return htmlHelper.GetJsonData(action, DataManager);
 }
 
-//This method provides the required information from server-side while the drill up/down operation is performed in OlapChart.
+//This method provides the required information from server-side while the drill up ordown operation is performed in OlapChart.
 public Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string customObject)
 {
    DataManager.SetCurrentReport(Utils.DeserializeOlapReport(olapReport)); 
