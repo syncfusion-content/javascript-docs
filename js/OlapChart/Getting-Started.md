@@ -9,13 +9,13 @@ documentation: ug
 
 #Getting Started
 
-This section explains briefly about how to create an **OlapChart** in your application with **Essential JavaScript.**
+This section briefly explains how you can create an **OlapChart** in your application with **Essential JavaScript.**
 
 ##Syncfusion OLAP Controls – Architecture
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img2.png" %}
 
-The architecture gives a clear idea about how the control rendering takes place at client-side and all other analytical operations on each action takes place at the server-side.
+The architecture gives you a clear idea on how the control rendering takes place client-side, and all other analytical operations on each action that takes place server-side.
 
 ##Service for OLAP Controls##
 
@@ -25,9 +25,9 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 
    * Offline Cube
    * Online Cube (XML/A)
-   * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible at the client-side other than **Online Cube** (XML/A) option. Using service, you can connect any cube data source without any limitation.
+   * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible in client-side other than **Online Cube** (XML/A) option. Using service, you can connect any cube data source without any limitation.
 
-2.**Cube Schema:** As the connection is moved to service-side, you obviously use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
+2.**Cube Schema:** As the connection is moved to service-side, you can use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
 
    * Availability of cubes.
    * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
@@ -38,25 +38,25 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 4.**OLAP Report:** The OLAP Report holds the complete information of each axes such as column, row and slicer. Using OLAP Report, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that is included and excluded.  
 
 As the OLAP Control is the key for each and every operation, initially you need to serialize the OLAP Reports and send to client-side in a form of string.
-When you perform any operation such as drill up/down, filtering, sorting etc., you need to send OLAP Reports from the client-side to the service in a de-serialized and updated format.
+When you perform any operation, such as drill up/down, filtering, sorting etc., you need to send OLAP Reports from the client-side to the service in a de-serialized and updated format.
 Further operations are carried with updated OLAP Reports only and you can send the updated OLAP Reports back to client-side with **JSON** data in a serialized format again. 
 This process has the OLAP Reports always updated. You cannot operate serialized OLAP Reports in client-side and hence it is carried to service for performing  the update operation.
 
 ##Create an application
 
-This section encompasses on how to configure an **OlapChart** component in an application. You can also learn how to pass the required data to **OlapChart** and to customize its various options according to your requirements. 
+This section explains how you can configure an **OlapChart** component in an application. You can also learn how to pass the required data to **OlapChart** and to customize its various options according to your requirements. 
 
-In the following example, the **OlapChart** component displays the customer count over different fiscal years against various geographical locations. This helps you to analyze the summarized data over different fiscal years.
+In the following example, the **OlapChart** component displays the customer count over different fiscal years against various geographical locations. This helps you analyze the summarized data over different fiscal years.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img3.png" %}
 
-Open Visual Studio and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET Empty Web Application** template, and then click **OK**. The following screen shot displays the Project Creation Wizard:
+Open Visual Studio and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET Empty Web Application** template, and then click **OK**. The following screenshot with the Project Creation Wizard is displayed:
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img4.png" %}
 
 ##Create HTML Page
 
-To create a new web form in the application, right-click on the project and select **Add**. The following screen shot shows the Add New Item Wizard.
+To create a new web form in the application, right-click on the project and select **Add**. The following screenshot displays the Add New Item Wizard.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img5.png" %}
 
@@ -70,7 +70,7 @@ In the **Solution Explorer**, right-click the **References** folder, then clic
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img6.png" %}
 
-The following screen shot illustrates how to refer **Syncfusion.Olap.Base.**
+The following screenshot illustrates how to refer **Syncfusion.Olap.Base.**
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img7.png" %}
 
@@ -133,13 +133,13 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 ###Create WCF Service
 
-Right-click the project, select **Add > New Folder**.  Name the folder as **wcf.** Let "wcf" folder name be in lower case. **.Now right-click the **wcf** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it as **OlapChartService.svc**. And then click **Add**.
+Right-click the project, select **Add > New Folder**.  Name the folder as **wcf.** Let the "wcf" folder name be in lower case. **.Now right-click the **wcf** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it as **OlapChartService.svc**. And then click **Add**.
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img8.png" %}
 
 ###Add service methods inside Interface
 
-Add the following code sample inside the **IOlapChartService** interface available in the **IOlapChartService.cs** file.
+Add the following code example inside the **IOlapChartService** interface available in the **IOlapChartService.cs** file.
 
 {% highlight c# %}
 
@@ -181,7 +181,7 @@ using System.Web.Script.Serialization;
 
 ###Create Class in Service file
 
-Create the `OlapChartService` class to implement the service methods. Inherit the class from `IOlapChartService` interface, which is created automatically when any new service is added.
+Create the `OlapChartService` class to implement the service methods. Inherit the class from `IOlapChartService` interface, that is created automatically when any new service is added.
 
 {% highlight c# %}
 
@@ -198,7 +198,7 @@ namespace WebApplication2.wcf
 
 ###Implement Service Methods
 
-Add the following methods to the service, which is invoked during any server-side operations performed in **OlapChart**.
+Add the following methods to the service, that are invoked during any server-side operations performed in **OlapChart**.
 
 Initialize the OlapChart helper class and OLAP DataManager with appropriate connection string. 
 
@@ -215,7 +215,7 @@ Initialize the following service methods.
 
 {% highlight c# %}
 
-//This method provides the required information from the server side to initialize the OlapChart.
+//This method provides the required information from server-side to initialize the OlapChart.
 public Dictionary<string, object> InitializeChart(string action, string customObject)
 {
    OlapDataManager DataManager = null;
@@ -225,14 +225,14 @@ public Dictionary<string, object> InitializeChart(string action, string customOb
    return htmlHelper.GetJsonData(action, DataManager);
 }
 
-//This method provides the required information from the server side while drill up/down operation is performed in OlapChart.
+//This method provides the required information from server-side while the drill up/down operation is performed in OlapChart.
 public Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string customObject)
 {
    DataManager.SetCurrentReport(Utils.DeserializeOlapReport(olapReport)); 
    dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());            
    return htmlHelper.GetJsonData(action, DataManager, drilledSeries);
 }
-//This method export the OlapChart to Excel, word and PDF.
+//This method exports the OlapChart to Excel, word and PDF.
 public void Export(System.IO.Stream stream)
 {
      System.IO.StreamReader sReader = new System.IO.StreamReader(stream);
@@ -271,9 +271,9 @@ private OlapReport CreateOlapReport()
 
 ###Configuring Web.Config
 
-* You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is `WebApplication2.wcf.OlapChartService` where `OlapChartService` is the service class name and “**WebApplication2.wcf**" is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.  
-   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapChartService** contract and hence it is `WebApplication2.wcf.IOlapChartService`.
-   2. **Binding:** In your application, you use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
+* You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is `WebApplication2.wcf.OlapChartService` where `OlapChartService` is the service class name and “**WebApplication2.wcf**" is the name in the namespace, where the service class appears. The following are the properties that meet the appropriate endpoint.  
+   1. **Contract:** This property indicates the contract of the endpoint that is exposed. Here you are referring the **IOlapChartService** contract, hence it is `WebApplication2.wcf.IOlapChartService`.
+   2. **Binding:** In your application, you can use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
    3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows
 
 {% highlight xml %}
@@ -287,8 +287,8 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %}
 
-* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this `name` property. In the following code sample, `WebApplication2.wcf.OlapChartServiceAspNetAjaxBehavior` refers to the **OlapChartService** class under
-the namespace **WebApplication2.wcf** in **OlapChartService.svc.cs** file which is the appropriate behavior for the endpoint. 
+* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to its respective behavior only using the `name` property. In the following code example, `WebApplication2.wcf.OlapChartServiceAspNetAjaxBehavior` refers to the **OlapChartService** class under
+the namespace **WebApplication2.wcf** in **OlapChartService.svc.cs** file, which is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}
 
