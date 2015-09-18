@@ -25,7 +25,7 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 
    * Offline Cube
    * Online Cube (XML/A)
-   * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible in client-side other than **Online Cube** (XML/A) option. Using service, you can connect any cube data source without any limitation.
+   * Cube within SQL Server, locally or through remote, you can move the connectivity related coding to service-side as it is impossible in client-side other than **Online Cube** (XML/A) option. Using service, you can connect any cube data source without any limitation.
 
 2.**Cube Schema:** As the connection is moved to service-side, you can use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
 
@@ -91,7 +91,7 @@ Click **OK**.
 
 Add the script files and CSS files in the **head** tag of the **default.html** page.
 
-N>  Please follow the following order while adding scripts and styles.
+N>  You can follow the order given here while adding scripts and styles.
 
 {% highlight html %}
 
@@ -110,7 +110,7 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 {% highlight html %}
 
 <div>
-     <!--Creating a div tag which will act as a container for ejOlapChart widget.-->
+     <!--Creating a div tag that acts as a container for ejOlapChart widget.-->
     <div id="OlapChart" style="height: 350px; width: 100%; overflow: auto">
     </div>
     <script type="text/javascript">
