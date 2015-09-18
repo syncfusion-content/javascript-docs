@@ -30,7 +30,7 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 2.**Cube Schema:** As the connection is moved to service-side, you obviously use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
 
    * Availability of cubes.
-   * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties etc. about the dimension, hierarchy, level, members are available in cube schema only. 
+   * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties, etc., about the dimension, hierarchy, level, members are available in cube schema only. 
    * Localized information is also available in cube schema.
 
 3.**MDX Generator:** You can frame the MDX query using an MDX generator in **Syncfusion.Olap.Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
@@ -211,7 +211,7 @@ Right-click the project and select Add > New Folder.  Name the folder as wcf. Le
 
 ###Add service methods inside Interface
 
-Add the following code inside the `IOlapGaugeService` interface available in the IOlapGaugeService.cs file.
+Add the following code example inside the `IOlapGaugeService` interface available in the IOlapGaugeService.cs file.
 
 {% highlight c# %}
 
@@ -330,9 +330,9 @@ private OlapReport CreateOlapReport()
 
 ###Configure Web.Config 
 
-* You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is `WebApplication2.wcf.OlapGaugeService` where **"OlapGaugeService"** is the service class name and **“WebApplication2.wcf"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
+* You can expose services through the properties such as binding, contract and address etc., using an endpoint. In your application the service name is `WebApplication2.wcf.OlapGaugeService` where **"OlapGaugeService"** is the service class name and **“WebApplication2.wcf"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
 
-   1. **Contract:** This property indicates the contract of the endpoint that is exposed. Here you are referring **IOlapGaugeService** contract and hence it is `WebApplication2.wcf.IOlapGaugeService`.
+   1. **Contract:** This property indicates the contract of the endpoint that is exposed. Here you are referring to the **IOlapGaugeService** contract and hence it is `WebApplication2.wcf.IOlapGaugeService`.
    2. **Binding:** In your application, you can use `webHttpBinding` to post and receive the requests and responses between client-end and service-end.
    3. **BehaviorConfiguration:** This property contains the name of the behavior used in the endpoint. **endpointBehaviors** are illustrated as follows**.**
 
