@@ -475,7 +475,7 @@ private OlapReport CreateOlapReport()
 
 * You can expose services through the properties such as binding, contract and address etc. using an endpoint. In your application the service name is `WebApplication2.wcf.OlapClientService` where `OlapClientService` is the service class name and `WebApplication2.wcf` is the namespace name where the service class appears. The following are the properties that meet the appropriate endpoint.
 
-   1. **Contract:** This property indicates the contract of the endpoint is exposing. Here you are referring **IOlapClientService** contract and hence it is `WebApplication2.wcf.IOlapClientService`.
+   1. **Contract:** This property indicates the contract of the endpoint is exposed. Here you are referring to the **IOlapClientService** contract hence it is `WebApplication2.wcf.IOlapClientService`.
    2. **Binding:** In your application, you can use `webHttpBinding` to post and receive the requests and responses between client-end and service-end.
    3. **BehaviorConfiguration:** This property contains the name of the behavior used in the endpoint. **endpointBehaviors** are illustrated as follows**.**
 
@@ -492,7 +492,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %}
 
-* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the `name` property. In the following code example, `WebApplication2.wcf.OlapClientServiceAspNetAjaxBehavior` refers to the **OlapClientService** class under the namespace **WebApplication2.wcf** in **OlapClientService.svc.cs** file. That is the appropriate behavior for the endpoint.
+* The `endpointBehaviors` contains all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the `name` property. In the following code example, `WebApplication2.wcf.OlapClientServiceAspNetAjaxBehavior` refers to the **OlapClientService** class under the namespace **WebApplication2.wcf** in **OlapClientService.svc.cs** file. That is the appropriate behavior for the endpoint.
 
 {% highlight xml %}
 
