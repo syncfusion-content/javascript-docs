@@ -25,7 +25,7 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 
    * Offline Cube
    * Online Cube (XML/A)
-   * Cube within SQL Server (locally or through remote), you can move the connectivity related coding to service-side as it is impossible client-side other than **Online Cube** (**XML/A**) option. Using service, you can connect any cube data source without any limitation.
+   * Cube within SQL Server, locally or through remote, you can move the connectivity related coding to service-side as it is impossible client-side other than **Online Cube** (**XML/A**) option. Using service, you can connect any cube data source without any limitation.
 
 2. **Cube Schema:** As the connection is moved to service-side, you can use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the cube schema the following details can be achieved for control rendering.
 
@@ -38,7 +38,7 @@ The primary reasons for using service in an **OLAP** processing are as follows:
 4. **OLAP Report:** The **OLAP Report** holds the complete information of each axis such as column, row and slicer. Using OLAP Report, you can maintain the dimension element, measure element, hierarchy name, level name as well as member information that is included and excluded.  
 
 As the **OLAP Control** is the key for each and every operation, initially you need to serialize the OLAP Reports and send them client-side in the form of a string.
-When you perform any operation such as: drill up/down, filtering, sorting etc., you can send OLAP Reports from client-side to the service in a de-serialized and updated format.
+When you perform any operation, such as drill up or down, filtering, sorting etc., you can send OLAP Reports from client-side to the service in a de-serialized and updated format.
 Further operations are carried with updated OLAP Reports only, and you can send the updated OLAP Reports back to client-side with **JSON** data in a serialized format again.
 This process has the OLAP Reports always updated. You cannot operate serialized OLAP Reports client-side and hence it is carried to service to perform the update operation.
    
