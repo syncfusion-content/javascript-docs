@@ -312,7 +312,7 @@ public Dictionary<string, object> FilterElement(string action, string clientPara
     return olapClientHelper.GetJsonData(action, DataManager, clientParams);
 }
 
-//This method provides the required information from server-side while a split button is removed from any axes.
+//This method provides the required information from server-side while a split button is removed from any axis.
 public Dictionary<string, object> RemoveSplitButton(string action, string clientParams, string olapReport, string clientReports)
 {
     OlapDataManager DataManager = new OlapDataManager(connectionString);
@@ -329,7 +329,7 @@ public Dictionary<string, object> FetchMemberTreeNodes(string action, string dim
    return olapClientHelper.GetJsonData(action, DataManager, dimensionName);
 }
 
-//This method provides the required information from server-side while the drill up/down operation is performed in PivotGrid.
+//This method provides the required information from server-side while the drill up or down operation is performed in PivotGrid.
 public Dictionary<string, object> DrillGrid(string action, string cellPosition, string currentReport, string clientReports, string headerInfo, string layout)
 {
    OlapDataManager DataManager = new OlapDataManager(connectionString);
