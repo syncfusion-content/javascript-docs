@@ -225,7 +225,7 @@ public Dictionary<string, object> InitializeChart(string action, string customOb
    return htmlHelper.GetJsonData(action, DataManager);
 }
 
-//This method provides the required information from server-side while the drill up ordown operation is performed in OlapChart.
+//This method provides the required information from server-side while the drill up or down operation is performed in OlapChart.
 public Dictionary<string, object> DrillChart(string action, string drilledSeries, string olapReport, string customObject)
 {
    DataManager.SetCurrentReport(Utils.DeserializeOlapReport(olapReport)); 
@@ -272,7 +272,7 @@ private OlapReport CreateOlapReport()
 ###Configuring Web.Config
 
 * You can expose services through the properties such as binding, contract and address etc. using an **endpoint**. In your application the service name is `WebApplication2.wcf.OlapChartService` where `OlapChartService` is the service class name and “**WebApplication2.wcf**" is the name in the namespace, where the service class appears. The following are the properties that meet the appropriate endpoint.  
-   1. **Contract:** This property indicates the contract of the endpoint that is exposed. Here you are referring the **IOlapChartService** contract, hence it is `WebApplication2.wcf.IOlapChartService`.
+   1. **Contract:** This property indicates the contract of the endpoint that is exposed. Here you are referring to the **IOlapChartService** contract, hence it is `WebApplication2.wcf.IOlapChartService`.
    2. **Binding:** In your application, you can use **webHttpBinding** to post and receive the requests and responses between the client-end and the service.
    3. **behaviorConfiguration:** This property contains the name of the behavior to be used in the endpoint. **endpointBehaviors** are illustrated as follows
 
@@ -287,7 +287,7 @@ private OlapReport CreateOlapReport()
 
 {% endhighlight %}
 
-* The `endpointBehaviors` contain all the behaviors for an endpoint. You can link each endpoint to its respective behavior only using the `name` property. In the following code example, `WebApplication2.wcf.OlapChartServiceAspNetAjaxBehavior` refers to the **OlapChartService** class under
+* The `endpointBehaviors` contains all the behaviors for an endpoint. You can link each endpoint to its respective behavior only using the `name` property. In the following code example, `WebApplication2.wcf.OlapChartServiceAspNetAjaxBehavior` refers to the **OlapChartService** class under
 the namespace **WebApplication2.wcf** in **OlapChartService.svc.cs** file, which is the appropriate behavior for the endpoint. 
 
 {% highlight xml %}
