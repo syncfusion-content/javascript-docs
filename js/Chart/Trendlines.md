@@ -9,35 +9,54 @@ documentation: ug
 
 # Trendlines
 
-## Overview
-
-**EjChart** can generate Trendlines for Cartesian axes type series (line, column, scatter, area, candle, hilo etc...) except bar type series.
-
-The following code example illustrates how to enable Trendlines feature in Chart.
+EjChart can generate Trendlines for Cartesian type series *(line, column, scatter, area, candle, hilo etc.)* except bar type series. You can add more than one trendline object to the **trendlines** option.
 
 {% highlight js %}
 
-        $("#container").ejChart({
+        $("#chartcontainer").ejChart({
             series:[{
-            trendines: [{
-            visibility: “visible”, type: “linear”
-            }],
-            //....
-            //.... 
-            }]            
+                  trendlines: [{
+                       //Enable Trendline to chart series
+                       visibility: “visible”, type: “linear”
+                     }],
+                //...
+              }]          
+             //...  
         });
-
 
 
 {% endhighlight %}
 
-## Customize the Trendlines styles
-
-The line of Trendlines can be customized using properties such as fill, width, dahsArray and opacity. **fill** is used to add the color to the line stroke, **width** is used to specify line thickness, **dashArray** used to draw dotted lines and **opacity** is used to change the opacity value of the line. Default type of Trendline is “linear”.
-
 {% include image.html url="/js/Chart/Trendlines_images/Trendlines_img1.png" Caption="Adding Trendline to the chart"%}
 
-## Type of Trendlines
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/trendlines) here to view the Trendlines online demo sample.
+
+
+## Customizing the trendline styles
+
+A trendline can be customized using properties such as **fill**, **width**, **dahsArray** and **opacity**. Default type of trendline is **"linear"**.
+
+{% highlight js %}
+
+        $("#chartcontainer").ejChart({
+            series:[{
+                  trendlines: [{
+                         //...
+                         //Customize the Trendline styles
+                         fill: '#99CCFF', width: 3, opacity: 1, dashArray: '2,3'
+                     }],
+                //...
+              }]          
+             //...  
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img2.png" Caption="Customizing the trendlines"%}
+
+
+## Types of Trendline
 
 EjChart supports the following type of Trendlines.
 
@@ -49,87 +68,187 @@ EjChart supports the following type of Trendlines.
 
 ### Linear
 
-**Linear Trendline** is a best-fit straight line that is used with sets of simple linear data. A **Linear Trendline** shows when something is increasing or decreasing at a steady rate.
+To render Linear Trendline, you have to set *type* as **"linear"**. 
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img2.png" Caption="Adding Linear Trendline to the chart"%}
+{% highlight js %}
+
+        $("#chartcontainer").ejChart({
+            series:[{
+                  trendlines: [{
+                       //Change Trendline type
+                       type: “linear”
+                     }],
+                //...
+              }]          
+             //...  
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img3.png" Caption="Adding Linear Trendline to the chart"%}
 
 ### Exponential
 
-**Exponential Trendline** is a curved line that is used when data values rise or fall at constantly increasing rates.
+Exponential Trendline can be rendered by setting the *type* as **"exponential"**. 
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img3.png" Caption="Adding Exponential Trendline to the chart"%}
+{% highlight js %}
+
+        $("#chartcontainer").ejChart({
+            series:[{
+                  trendlines: [{
+                       //Change Trendline type
+                       type: “exponential”
+                     }],
+                //...
+              }]          
+             //...  
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img4.png" Caption="Adding Exponential Trendline to the chart"%}
 
 ### Logarithmic
 
-**Logarithmic Trendline** is a best-fit curved line that is used when the rate of change in the data increases or decreases and then levels out.
+Logarithmic Trendline can be rendered by setting the *type* as **"Logarithmic"**.  
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img4.png" Caption="Adding Logarithmic Trendline to the chart"%}
+{% highlight js %}
+
+        $("#chartcontainer").ejChart({
+            series:[{
+                  trendlines: [{
+                       //Change Trendline type
+                       type: “logarithmic”
+                     }],
+                //...
+              }]          
+             //...  
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img5.png" Caption="Adding Logarithmic Trendline to the chart"%}
 
 ### Power
 
-**Power Trendline** is a curved line that is used with sets of data comparing measurements that increase at a specific rate, for example the acceleration of race car at one second intervals.
+Power Trendline can be rendered by setting the *type* of trendline as **"power"**. 
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img5.png" Caption="Adding Power Trendline to the chart"%}
+{% highlight js %}
+
+        $("#chartcontainer").ejChart({
+            series:[{
+                  trendlines: [{
+                       //Change Trendline type
+                       type: “power”
+                     }],
+                //...
+              }]          
+             //...  
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img6.png" Caption="Adding Power Trendline to the chart"%}
 
 ### Polynomial
 
-**Polynomial Trendline** is a curved line that is used when data fluctuates.
+Polynomial Trendline can be rendered by setting trendline *type* as **"polynomial"**.  You can change the polynomial order by using **polynomialOrder** of trendlines. It ranges from 2 to 6.
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img6.png" Caption="Adding Polynomial Trendline to the chart"%}
+{% highlight js %}
+
+        $("#chartcontainer").ejChart({
+            series:[{
+                  trendlines: [{
+                       //Change Trendline type
+                       type: “polynomial”
+                     }],
+                //...
+              }]          
+             //...  
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img7.png" Caption="Adding Polynomial Trendline to the chart"%}
 
 ## Forecasting
 
-**Forecasting** is the prediction of future/past situations. **Trendlines** are also used to display trends for the future and the past. **Forecasting** can be classified into two types as follows.
+**Trendline forecasting** is the prediction of future/past situations.  **Forecasting** can be classified into two types as follows.
 
   * Forward Forecasting
   * Backward Forecasting
 
-These can be enabled by setting the value for the **Forward Forecasting** and **Backward Forecasting** properties. The value set for **Forward Forecasting** is used to determine the distance of moving towards the future and the value set for **Backward Forecasting** is used to determine the distance of moving backwards.
+### Forward Forecasting
 
-The following code example illustrates how to enable **Forward Forecasting** in Trendlines.
+The value set for **forwardForecast** is used to determine the distance moving towards the future trend.
 
 {% highlight js %}
 
-        $("#container").ejChart({
+        $("#chartcontainer").ejChart({
             series:[{
-            trendines: [{
-            visibility: “visible”, type: “linear”, forwardForecast: 5
-            }],
-            //....
-            //.... 
-            }] 
-             
+                  trendlines: [{
+                       //...
+                       //Set forward forecasting value
+                       forwardForecast: 5
+                     }],
+                //...
+              }]          
+             //...  
         });
 
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img7.png" Caption="Adding ForwardForecast value to Chart Trendline"%}
+{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img8.png" Caption="Adding ForwardForecast value to Chart Trendline"%}
 
-The following code example illustrates how to enable **Backward Forecasting** in Trendlines.
+
+### Backward Forecasting
+
+The value set for **backwardForecast** is used to determine the past trends.
 
 {% highlight js %}
 
-        $("#container").ejChart({
+        $("#chartcontainer").ejChart({
             series:[{
-            trendines: [{
-            visibility: “visible”, type: “linear”, backwardForecast: 5
-            }],
-            //....
-            //.... 
-            }] 
-             
+                  trendlines: [{
+                       //...
+                       //Set forward forecasting value
+                       backwardForecast: 5
+                     }],
+                //...
+              }]          
+             //...  
         });
 
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img8.png" Caption="Adding BackwardForecast  value to Chart Trendline"%}
+{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img9.png" Caption="Adding BackwardForecast  value to Chart Trendline"%}
 
 ## Trendlines Legend
 
-While setting trendlines visibility as **“visible”** or **“hidden”**, Trendlines legend appears with series legend collection in chart. We can do interaction with Trendlines legend as like series legends (show/hide series on legend click) and we can change the legend name using **“name”** property of Trendlines.
+To display legend item for trendline, use **name** property. You can interact with trendline legends similar to the series legends *(show/hide trendlines on legend click)*.  
 
-The screenshot illustrates how to hide the Trendline series on legend mouse click.
+{% highlight js %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img9.png" Caption="Hide the Trendline series on legend mouse click"%}
+        $("#chartcontainer").ejChart({
+            series:[{
+                  trendlines: [{
+                       //...
+                       //Set Trendline name to display in the legend
+                       name: 'Linear'
+                     }],
+                //...
+              }]          
+             //...  
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img10.png" Caption="Hide the Trendline series on legend mouse click"%}

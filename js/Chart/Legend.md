@@ -9,109 +9,140 @@ documentation: ug
 
 # Legend
 
-**EjChart** allows you to customize its **legend** position, color, border, size, shape, padding, font styles, opacity etc. You can enable and disable **Chart legends** using **legend visible** property. Default value of **legend****visible** property is set to **“true”**. 
+The legend contains the list of chart series and Trendlines that appear in a chart. 
 
-## Legend Title
+## Legend Visibility
 
-**EJ Chart** provides **Legend Title** support to the information about the series. It also provides options to customize the **Legend Title** with fonts and alignment.
+By default, legend is enabled in chart. You can enable or disable it using **visible** option of legend.
 
 {% highlight js %}
 
 
-                $("#container").ejChart({
-            legend: {
-                visible: true,
-                title: {
-                    text: "Countries",
-                    textAlignment: 'center',
-                    font: {
-                        size: ' 18px',
-                        color: 'black',
-                        fontFamily: "Segoe UI",
-                        fontStyle: "normal"
-                    },
-                },
-            }
-            // ...
-        });
+    $("#chartcontainer").ejChart({
+         // ...
+         legend: {
+            //Visible chart legend
+            visible: true
+        },
+        //...
+     });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Legend_images/Legend_img1.png" Caption="Legend visibility in chart"%}
 
 
-The following screenshot displays **Legend Title**:
+## Legend title
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img1.png" %}
-
-## Legend Position
-
-You can position the **legend** at top, bottom, left or right position of the Chart. Default value of **legend****position** is **“bottom”**.  And you can align the legend position using “**alignment**” property of **legend**.  This allows you to align the legend at center, far and near position of Chart area.  Default value of **legend****alignment** is “center”.
+For adding title to the legend, you have to specify **legend.title.text** option.
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
             // ...             
-            legend: { visible: true, position: 'bottom', alignment: 'center' }
+              legend: {
+                //...
+                title: {
+                   //Add title to the chart legend
+	               text: "Countries",
+				
+		         }  },
+
             // ...             
         });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Legend_images/Legend_img2.png" Caption="Chart with legend title"%}
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img2.png" %}
+## Positioning and Aligning Legend
+
+Using **position** option, you can position the legend at *left*, *right*, *top* or *bottom* of the chart. By default, legend is positioned at the **bottom** of the chart.
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: {
+                // ...  
+                //Place the legend at top of the chart
+                position: 'top',
+
+            }
+            // ...             
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Legend_images/Legend_img3.png" Caption="Change legend position"%}
+
+**Legend Alignment**
+
+You can align the legend to *center*, *far* or *near* based on its position using **alignment** option.
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: {
+                //...
+                //The below two settings will place the legend at the top-right corner of the chart.
+                alignment: 'far',
+                position: 'top', 
+            }
+            // ...             
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Legend_images/Legend_img4.png" Caption="Change legend position and alignment"%}
+
+
+## Arranging legend items in rows and columns
+
+You can arrange the legend items horizontally and vertically using rowCount and columnCount options of legend.
+
+* If only rowCount is specified, legend items will be arranged according to rowCount, and number of columns may vary based on number of legend items.
+
+* If only columnCount is specified, legend items will be arranged according to columnCount and number of rows may vary based on number of legend items.
+
+* If both options are specified, then the one which has higher value will be given preference. For example, if rowCount is 4 and columnCount is 3, legend items will be arranged in 4 rows.
+
+* If both options are specified and have same value, preference will be given to columnCount if it is positioned at top/bottom position and to rowCount if it is positioned at left/right position.
+ 
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: {
+                //Arrange legend items in 4 rows and approximately 4 columns. Column couldn’t may vary based on number of items. 
+                rowCount: 4,
+                columnCount: 4 
+            }
+            // ...             
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Legend_images/Legend_img5.png" Caption="Arrangeing legend items in rows and columns"%}
+
 
 ## Customization
 
-**Legend border and shape**
+### Legend shape
 
-In **EjChart**, you can customize the legend shape with different symbols like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend **“shape”** is “Rectangle”. And you can draw and customize the outline of Chart legends using border property of legend. Default value of legend border color is **“Transparent”**.
-
-{% highlight js %}
-
-
-        $("#chartcontainer").ejChart({
-            // ...             
-            legend: {
-                visible: true,
-                border: { color: 'red', width: 2 }, shape: 'circle'
-            }
-            // ...             
-        });
-
-
-{% endhighlight %}
-
-
-
-{% include image.html url="/js/Chart/Legend_images/Legend_img3.png" %}
-
-### Legend rowCount and columnCount
-
-**EjChart** allows you to display the **legend** items for row and column wise using “**rowCount**” and “**columnCount**” property. This is used to avoid overlapping between **legends** and **Chart** area when using more legends in Chart area.
-
-{% highlight js %}
-
-
-        $("#chartcontainer").ejChart({
-            // ...             
-            legend: { visible: true, rowCount: 2 }
-            // ...             
-        });
-
-
-{% endhighlight %}
-
-
-
-{% include image.html url="/js/Chart/Legend_images/Legend_img4.png" %}
-
-### Legend item style and border customization
-
-EjChart allows you to customize the legend item size, and border color and width using “**itemStyle**” property. Default value of legend item size is (10, 10), and legend item border color is “**Transparent**”.
+For changing the legend icon shape, you have to specify the shape in **shape** property of legend. If you want the legend icon to display the prototype of the series, you have to set **seriesType** as shape.
 
 {% highlight js %}
 
@@ -119,12 +150,9 @@ EjChart allows you to customize the legend item size, and border color and width
         $("#chartcontainer").ejChart({
             // ...             
             legend: {
-                visible: true, rowCount: 2,
-                itemStyle:
-                    {
-                        height: 12, width: 12,
-                        border: { color: 'magenta', width: 1.5 }
-                    },
+                //...
+                //Change legend shape
+                 shape: 'seriesType',
             }
             // ...             
         });
@@ -132,13 +160,12 @@ EjChart allows you to customize the legend item size, and border color and width
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Legend_images/Legend_img6.png" Caption="Changing legend shape"%}
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img5.png" %}
+### Legend items size and border
 
-### Legend font
-
-You can customize the legend font family, font style, font weight and size and font styles using “**font**” property of **legend**. This is illustrated in the following code example.
+You can change the size of legend items using **itemStyle.width** and **itemStyle.height** options. To change the legend item border, use **border** option of legend itemStyle.
 
 {% highlight js %}
 
@@ -146,11 +173,9 @@ You can customize the legend font family, font style, font weight and size and f
         $("#chartcontainer").ejChart({
             // ...             
             legend: {
-                visible: true,
-                font: { fontFamily: 'Segoe UI', fontStyle: 'Normal', fontWeight: 'Bold', size: '15px' },
-                rowCount: 2,
-                border: { color: 'red', width: 2 },
-                shape: 'circle'
+                //...
+                //Change legend items border, height and width
+                itemStyle: {width: 13, height: 13, border: { color: "#FF0000", width: 1 } },
             }
             // ...             
         });
@@ -158,53 +183,22 @@ You can customize the legend font family, font style, font weight and size and f
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Legend_images/Legend_img7.png" Caption="Changing legend items size and border"%}
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img6.png" %}
+### Legend size
 
-### Legend opacity and item padding
-
-**EjChart** allows you to set “**opacity”** for Chart legends. And you can define the spacing between the legend items using “**itemPadding**” property of legend. Default value of **itemPadding** size is 10.
-
-{% highlight js %}
-
-
-        $("#chartcontainer").ejChart({
-            // ...             
-            legend: {
-                visible: true, opacity: 1.5, itemPadding: 20,
-                itemStyle: {
-                    height: 12, width: 12,
-                    border: { color: 'magenta', width: 1.5 }
-                }
-            }
-            // ...             
-        });
-
-
-{% endhighlight %}
-
-
-
-{% include image.html url="/js/Chart/Legend_images/Legend_img7.png" %}
-
-### Scrollbar for legends
-
-**EjChart** allows you to customize the legend height and width using **size** property. Default value of the height and width are null and it varies depending upon the legend position. If the legen is in top or bottom of the chart, default value of height is 20% of chart height and width is 100% of chart width. Similarly if it is in the left or right side of the chart, default value of height is 100% of chart height and width is 20% of chart width.
-
-This property supports both pixels and percentage values. E.g. 100 or 10%.
-
-Scrollbar is enabled for the legends, when the legend size is greater than the user specified value or than the default value of the legend size.
+By default, legend takes 20% of **height** horizontally when it was placed on the top or bottom position and 20% of **width** vertically while placing on the left or right position of chart. You can change this default legend size using **size** option of legend.  
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({   
-            // ...     
-            commonSeriesOptions:{type: 'pie'},       
-            size: { width: '800', height: '600' },
-            legend: { visible: true, shape: 'circle', columnCount:2,
-                size:{height:'25%',width:'150'}
+            // ...
+            legend: { 
+                 //...
+                 //Change legend size
+                 size:{width: '550', height: '100'}
             }
             // ...             
         });
@@ -212,13 +206,12 @@ Scrollbar is enabled for the legends, when the legend size is greater than the u
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Legend_images/Legend_img8.png" Caption="Change legend size"%}
 
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img8.jpeg" %}
+### Legend Item Padding
 
-### Custom Legend Icons
-
-You can customize the shape of the legend icon. Normally the available shapes are circle, rectangle, star, wedge, uparrow, downarrow, pentagon, etc. By default, the shape of the legend icon is rectangle, you can modify this by setting **shape** property of **legend**. If you want series type as icon then set the **shape property** value as “seriesType”. You can customize the height and width of the icon by setting **itemStyle** property. 
+You can control the spacing between legend items using **itemPadding** option of legend.  The default value is 10. 
 
 {% highlight js %}
 
@@ -226,8 +219,9 @@ You can customize the shape of the legend icon. Normally the available shapes ar
         $("#chartcontainer").ejChart({
             // ...             
             legend: {
-                visible: true, position: 'bottom', shape: 'seriesType',
-                itemStyle: { height: 15, width: 15 }
+                //...
+                //Add space between each legend item
+                itemPadding: 15,
             }
             // ...             
         });
@@ -235,14 +229,12 @@ You can customize the shape of the legend icon. Normally the available shapes ar
 
 {% endhighlight %}
 
-
-{% include image.html url="/js/Chart/Legend_images/Legend_img9.png" %}
-
-## Legend Selection
-
-Series visibility can be toggled through legend click, now we can control the legend click through **toggleSeriesVisibility** property in legend and this will be used to select or highlight the series through the legend.
+{% include image.html url="/js/Chart/Legend_images/Legend_img9.png" Caption="Change padding between the legend items"%}
 
 
+### Legend border
+
+You can customize the legend border using **border** option in legend. 
 
 {% highlight js %}
 
@@ -250,8 +242,9 @@ Series visibility can be toggled through legend click, now we can control the le
         $("#chartcontainer").ejChart({
             // ...             
             legend: {
-                visible: true, 
-                toggleSeriesVisibility: false  
+                //...
+                //Set border color and width to legend
+                border: {color: "#FFC342", width: 2},
             }
             // ...             
         });
@@ -259,4 +252,107 @@ Series visibility can be toggled through legend click, now we can control the le
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Legend_images/Legend_img10.png" %}
+{% include image.html url="/js/Chart/Legend_images/Legend_img10.png" Caption="Customize the legend border"%} 
+
+
+### Scrollbar for legend
+
+You can enable or disable the legend scrollbar using **enableScrollbar** option of legend. If you disable the scrollbar option, legend won’t consider the [default size](legend.html#legend-size) and chart will draw in the reaming space. The default value of *enableScrollbar* option is **true**.  
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: {
+                //...
+                //Enable scrollbar option in for legend
+                enableScrollbar: true,
+                size:{width: '430', height: '80'},
+            }
+            // ...             
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Legend_images/Legend_img11.png" Caption="Enable scrollbar for legend"%}
+
+### Customizing legend text
+
+For customizing legend item text and title you can use **legend.font** and **legend.title** options. And you can change the legend title alignment using **textAlignment** option of legend title.
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+            // ...             
+            legend: {
+                //...
+                //Customize the legend item text
+                font: { fontFamily: 'Segoe UI', fontStyle: 'Normal', fontWeight: 'Bold', size: '15px' },
+                title: {
+                    //...
+		            textAlignment: "center",
+                    //Customize the legend title text
+	                font: { fontFamily: 'Segoe UI', fontStyle: 'Italic', 
+                                        fontWeight: 'Bold', size: '12px' },
+	             }            
+             },
+            // ...             
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Legend_images/Legend_img12.png" Caption="Customizing legend item and title text"%}
+
+
+## Handling legend item clicked
+
+You can get legend item details such as *index*, *bounds*, *shape* and *series* by subscribing **legendItemClick** event on chart. When the legend item is clicked, it will triggers the event and returns [legend information](../api/ejchart.html#events:legenditemclick). 
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+
+            legend: {
+                   //...
+              },
+              
+           //Subscribe the legenditem click event
+            legendItemClick: "onlegendclicked",
+            
+            //...
+        });
+        
+     function onlegendclicked(sender) {
+        //Get legend item details on legend item click.
+        var legendItem = sender.data;
+      }
+
+{% endhighlight %}
+
+
+## Series selection on legend item click
+
+You can select a specific series or point while clicking on the corresponding legend item through disabling the **toggleSeriesVisibility** option in legend. The default value of *toggleSeriesVisibility* option is **true**. To customize the series selection refer series [selection](../api/ejchart.html#members:series-selectionsettings).
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+            // ...             
+                legend: {
+                   //...
+                   //Disable series collapsing on legend item clicked
+                   toggleSeriesVisibility: false,
+               },
+           //...
+      });
+      
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Legend_images/Legend_img13.png" Caption="Avoid series collapsing on legend item clicked"%}

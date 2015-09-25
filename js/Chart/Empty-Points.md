@@ -1,38 +1,35 @@
 ---
 layout: post
-title: Empty-Points
-description: empty points
+title: Empty Points 
+description: empty points 
 platform: js
 control: Chart
 documentation: ug
 ---
 
-# Empty Points
+# Empty Points 
 
-The data that is passed to the Chart can have null or undefined values that are considered as empty points. Series type like line, spline, area, splinearea, stepline, steparea, column, bar, bubble, scatter, hilo, hiloopenclose, candle, rangecolumn and stacking series having empty point support.
+Data points that uses **null** or **undefined** as value are considered as empty points. Empty data points are ignored and not plotted in Chart. If the data is provided using **points** property, you can set **isEmpty** to true to specify that the particular point is an empty point.   
 
 {% highlight js %}
 
+      $("#chartcontainer").ejChart({
+            series : [{
 
-        $("#chartcontainer").ejChart({
-            // ...             
-            series: [{
-                points: [
-                { x: 1, y: 210 }, { x: 2, y: 150 },
-                { x: 3, y: 200 }, { x: 4, y: null },
-                { x: 5, y: 170 }, { x: 6, y: 230 },
-                { x: 7, y: 120 },
-                ],
-                name: 'Course', type: 'column',
-            }
-            ],
-            // ...             
-        });
-
+                 //Using empty points
+                 points: [ 
+                      { x: 1, y: 50 },
+                      { x: 2, y: null },
+                      { x: 3, y: 70 },
+                      { x: 4, y: 60, isEmpty: true },
+                      { x: 5, y: 50 }   
+                 ],    
+            }],
+            // ...
+       });
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Empty-Points_images/Empty-Points_img1.png" Caption="Chart with empty points"%}
 
-
-{% include image.html url="/js/Chart/Empty-Points_images/Empty-Points_img1.png" %}
-
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/emptypoints) here to view the online demo sample for empty points.

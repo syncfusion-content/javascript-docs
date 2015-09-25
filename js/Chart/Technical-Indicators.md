@@ -9,356 +9,388 @@ documentation: ug
 
 # Technical Indicators
 
-Technical indicators are the base of technical analysis, used to determine the future of financial, stock or economic trends. Indicators serve three broad functions: to alert, to confirm and to predict actions. Future price levels can be predicted easily with the help of given data and it also supports you to enter or exit a trade and enables to make a profit.
+EjChart control supports 10 types of technical indicators. 
 
-The following are the Technical indicators supported by **ejChart**.
+## Binding data to render indicator
 
-## Accumulation Distribution Indicator
+You can bind series **dataSource** to indicator by setting the specific series name to indicator using **"indicators.seriesName"** property.
 
-Accumulation distribution indicator is one of the technical indicator supported by **ejChart**. The indicator rendered is called signal line. **ejChart** also provides options to customize the width and color of the signal line.
+{% highlight js %}
+
+        $("#chartcontainer").ejChart({
+              //  ...
+              //Initializing Series
+              series:[{
+                  dataSource: chartData,
+                  xName: "xDate",
+                  high: "High",
+                  low: "Low",
+                  open: "Open",
+                  close: "Close", 
+                  //Set name to series
+                  name: 'Hilo',
+                  //  ...
+            }],
+
+            //Initializing Indicators    
+            indicators: [{
+                //Set Hilo series dataSource to indicator using seriesName
+                seriesName: "Hilo",
+                //  ...
+	     }],
+            //  ...
+     });
+
+{% endhighlight %}
+
+
+Also you can add data to indicator directly use **dataSource** option of indicator.  
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
-            // ...             
-            axes: [     // axis for indicator
-            {
-                name: 'indicator',
-                opposedPosition: true
-            }],
-            // ... 
-            series: [
-                {
-                    name: 'candle',
-                    type: 'hiloopenclose',
-                    drawMode: 'both',
-                    dataSource: window.chartData,
+            //  ...
+            //Initializing Indicators    
+            indicators: [{
+                   //Add dataSource to indicator directly
+                    dataSource: chartData,
+                    xName: "xDate",
                     high: "High",
                     low: "Low",
-                    close: "Close",
                     open: "Open",
-                    volume: "Volume",
-                    xName: "xDate",
+                    close: "Close",                
+                    //  ...
+	       }],
+            //  ...
+     });
 
-                }],
+{% endhighlight %}
+
+	
+## Indicator Types
+
+### Accumulation Distribution
+
+To create an Accumulation Distribution indicator, set the **indicators.type** as **"accumulationdistribution"**. Accumulation Distribution require **‘volume’** field additionally with **dataSource** to calculate the signal line.
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+             // Initializing Series
+              series:[{
+                       name: "Hilo",
+                       dataSource: chartData,
+                       xName: "xDate",
+                       high: "High",
+                       low: "Low",
+                       open: "Open",
+                       close: "Close",
+                       //Add additional volume field to data source for accumulation distribution
+                       volume: "Volume",
+                       //  ...
+                   }],
+               //Initializing Indicators    
+               indicators: [{
+                     seriesName: "Hilo",
+                     //Set indicator type
+                     type: "accumulationdistribution", 
+                     //  ...
+	        }],
+            // ...   
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img1.png" Caption="Accumulation Distribution Indicator"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/accumulationdistribution) here to view the Accumulation Distribution indicator online demo sample.
+
+
+### Average True Range (ATR)
+
+You can create an ATR indicator by setting the **indicators.type** as **"atr"** in the **indicators**. 
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+            // ...
+            //Initializing Indicators    
+            indicators: [{
+                 //Set indicator type
+                 type: "atr", 
+                 //  ...
+	      }],
+            // ...   
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img2.png" Caption="Average true range Indicator"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/atr) here to view the ATR indicator online demo sample.
+
+
+### Bollinger Band 
+
+Bollinger Band indicator is created by setting the **indicators.type** as **"bollingerband"**. It contains three lines, namely upper band, lower band and signal line. Bollinger Band default value of period is 14 and standardDeviations is 2.
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+             // ...             
+             //Initializing Indicators    
+              indicators: [{
+                   //Set indicator type
+                   type: " bollingerband", 
+                   //  ...
+	         }],
+            // ...   
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img3.png" Caption="Bollinger Band Indicator"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/bollingerband) here to view the Bollinger Band indicator online demo sample.
+
+
+### Exponential Moving Average (EMA)
+
+To render an EMA indicator, you have to set the **indicators.type** as **"ema"**.  
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+            // ...             
+             //Initializing Indicators    
+              indicators: [{
+                   //Set indicator type
+                   type: "ema", 
+                   //  ...
+	         }],
+            // ...   
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img4.png" Caption="Exponential Moving Average Indicator"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/ema) here to view the EMA indicator online demo sample.
+
+
+### Momentum 
+
+Momentum Technical indicator is created by setting the **indicators.type** as **"momentum"**. The momentum indicator renders two lines, namely upper band and signal line. Upper band always rendered at the value 100 and the signal line is calculated based on the momentum of data.
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+            // ...             
+             //Initializing Indicators    
+              indicators: [{
+                   //Set indicator type
+                   type: "momentum", 
+                   //  ...
+	         }],
             // ... 
-
-            indicators: [
-             {
-                 type: 'accumulationdistribution',
-                 seriesName: 'indicator',
-                 yAxisName: 'indicator'
-             }],
-            // ...   
         });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img5.png" Caption="Momentum Indicator"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/momentum) here to view the Momentum indicator online demo sample.
 
 
-The following screenshot displays Accumulation Distribution indicator.
+### Moving Average Convergence Divergence (MACD)
 
-
-
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img1.png" %}
-
-## Average True Range Indicator
-
-Average true range Indicator is one of the technical indicator supported by **ejChart**. The indicator rendered is called as signal line. You can also customize the width and color of the signal line.
+To render an MACD indicator, you have to set the **indicators.type** as **"macd"**.  MACD indicator contains Macd line, Signal line and Histogram column. Histogram is used to differentiate MACD and signal line.
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
             // ...             
-            axes: [     // axis for indicator
-            {
-                name: 'indicator',
-                opposedPosition: true
-            }],
-            // ...   
-            indicators: [
-            {
-                type: 'atr', seriesName: 'indicator', period: 14,
-                yAxisName: 'indicator'
-            }],
-            // ...   
+             //Initializing Indicators    
+              indicators: [{
+                   //Set indicator type
+                   type: "macd", 
+                   //  ...
+	         }],
+            // ...  
         });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img6.png" Caption="MACD Indicator"%}
 
-The following screenshot displays the Average true range indicator.
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/macd) here to view the MACD indicator online demo sample.
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img2.png" %}
 
-## Bollinger Band Indicator
+#### macdType
 
-Bollinger Band Indicator is one of the technical indicator supported by **ejChart**. It contains three lines namely upper band, lower band and signal line. Upper band, lower band are calculated based on the standard deviations value. Signal band is calculated based on the simple moving average. You can also customize the width and color of the upper band, lower band and signal line. The default value of period is 14.The default value of standardDeviations is 2.
+Using **macdType** enumeration property, you can change the MACD rendering as *line*, *histogram* or *both*. 
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
             // ...             
-            axes: [     // axis for indicator
-            {
-                name: 'indicator',
-                opposedPosition: true
-            }],
-            // ...   
-            indicators: [
-              {
-                  type: 'bollingerband',
-                  seriesName: 'indicator', period: 5,
-                  standardDeviations: 2,
-                  yAxisName: 'indicator'
-              }],
-            // ...   
+             //Initializing Indicators    
+              indicators: [{
+                   type: "macd", 
+                   //Set macd draw type
+                   macdType: "histogram", 
+                   //  ...
+	         }],
+            // ...  
         });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img7.png" Caption="MACD Histogram"%}
 
+### Relative Strength Index (RSI)
 
-The following screenshot displays the Bollinger Band indicator.
-
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img3.png" %}
-
-## Exponential Moving Average Indicator
-
-Exponential Moving Average Indicator is one of the technical indicator supported by ejChart. The indicator renders a line called signal line. You can also customize properties such as width, color etc., of the signal line.
-
-{% highlight js %}
-
-
-        $("#chartcontainer").ejChart({
-            axes: [{
-                name: 'indicator',
-                opposedPosition: true
-            }],
-            indicators: [{
-                type: 'ema',
-                seriesName: 'indicator',
-                period: 14,
-                yAxisName: 'indicator'
-            }],
-        });
-
-
-{% endhighlight %}
-
-
-
-The following screenshot displays the Exponential Moving Average Indicator
-
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img4.png" %}
-
-## Momentum Technical Indicator
-
-Momentum is one of the technical indicator supported by **ejChart**. The indicator renders two lines namely upper band and signal line. Upper band always render at value 100 and signal band is calculated based on the momentum formula. **ejChart** also provide options to customize the width and color of the upper band and signal line. You can also change the value for period. The default value of period is 14.
+For rendering the RSI indicator, set the **indicators.type** as **"rsi"**. It contains three lines, namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal line is calculated based on the **RSI** formula.
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
             // ...             
-            axes: [     // axis for indicator
-            {
-                name: 'indicator',
-                opposedPosition: true
-            }],
-            // ...   
-            indicators: [
-             {
-                 type: 'momentum', seriesName: 'indicator', period: 3,
-                 yAxisName: 'indicator'
-             }],
-            // ...   
+             //Initializing Indicators    
+              indicators: [{
+                   //Set indicator type
+                   type: "rsi",
+                   //  ...
+	         }],
+            // ...
         });
 
 
 {% endhighlight %}
 
 
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img8.png" Caption="RSI Indicator"%}
 
-The following screenshot displays the momentum technical indicator.
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/rsi) here to view the RSI indicator online demo sample.
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img5.png" %}
 
-## Moving Average Convergence Divergence Indicator
+### Simple Moving Average (SMA)
 
-**MACD** is one of the technical indicator supported by **ejChart**. It contains three lines namely Macd line, Signal line and Histogram column series that is used to differentiate macd and signal line. And also enumeration property: **macdType,****line**, **histogram** and **both**. By default, line series contain macd and signal line. Enumeration type **both** contain line and histogram series. Macd and signal line is calculated based on the **shortPeriod,****longPeriod** and **trigger** value with indicator formula and histogram displays the difference between them. **ejChart** also provides options to customize the width and color of the macd and signal line and histogram with tooltip and animation options. The value for short, long period and trigger value can also be changed.
+To render the SMA indicator, you should specify the **indicators.type** as **"sma"**.  
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
             // ...             
-            axes: [     // axis for indicator
-            {
-                name: "yAxis1",
-                opposedPosition: true
-            }],
-            // ...   
-            indicators: [{
-                type: "macd", seriesName: "Hilo", yAxisName: "yaxis",
-                longPeriod: 26, shortPeriod: 12, trigger: 9,
-                histogram: {
-                    fill: "red", opacity: 0.7, border: {
-                        color:
-                        "red", width: 1
-                    }
-                },
-                macdType: "both", tooltip: { visible: true }
-            }],
-            // ...   
+             //Initializing Indicators    
+              indicators: [{
+                   //Set indicator type
+                   type: "sma",
+                   //  ...
+	         }],
+            // ...
         });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img9.png" Caption="Simple Moving Average Indicator"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/sma) here to view the SMA indicator online demo sample.
 
 
-The following screenshot displays the MACD technical indicator
+### Stochastic 
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img6.png" %}
+For Stochastic indicator, you need to set the **indicators.type** as **"stochastic"**. The Stochastic indicator renders four lines, namely upper line, lower line, stochastic line and the signal line. Upper line always rendered at value 80 and the lower line is rendered at value 20. Stochastic and Signal Lines are calculated based on stochastic formula.
 
-## Relative Strength Index Indicator
+{% highlight js %}
 
-**RSI** is one of the technical indicator supported by **ejChart**. It contains three lines namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal band is calculated based on the **RSI** formula. You can also customize the width and color of the upper band, lower band and signal line with tooltip and animation options. 
+
+        $("#chartcontainer").ejChart({
+            // ...            
+             //Initializing Indicators    
+              indicators: [{
+                   //Set indicator type
+                   type: "stochastic",
+                   //  ...
+	         }],
+            // ...  
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img10.png" Caption="Stochastic Indicator"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/stochastic) here to view the stochastic indicator online demo sample.
+
+
+### Triangular Moving Average (TMA)
+
+To render the TMA indicator, you should specify the **indicators.type** as **"tma"**. 
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
             // ...             
-            axes: [     // axis for indicator
-            {
-                name: "yAxis1",
-                opposedPosition: true
-            }],
-            // ...   
-            indicators: [{
-                type: "rsi", seriesName: "Hilo",
-                yAxisName: "yAxis1", fill: "darkblue", width: 1,
-                upperLine: { fill: "green", width: 1 },
-                lowerLine: { fill: "red", width: 1 },
-                tooltip: { visible: true }
-            }],
-            // ...   
+             //Initializing Indicators    
+              indicators: [{
+                   //Set indicator type
+                   type: "tma",
+                   //  ...
+	         }],
+            // ...  
         });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img11.png" Caption="Triangular Moving Average Indicator"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/technicalindicators/tma) here to view the TMA indicator online demo sample.
 
 
-The following screenshot displays the **RSI** technical indicator
+## Enable Tooltip 
 
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img7.png" %}
-
-## Simple Moving Average Indicator
-
-Simple Moving Average Indicator is one of the technical indicators supported by ejChart. The indicator rendered is called as signal line. Signal line is calculated based on the simple moving average. You can also customize the Period, width and color of the signal line. The default value of period is 14.
-
-{% highlight js %}
-
-
-        $("#chartcontainer").ejChart({
-            // ... 
-
-            axes: [{
-                name: 'indicator',
-                opposedPosition: true
-            }
-            ],
-            // ...   
-            indicators: [{
-                type: 'sma',
-                seriesName: 'indicator',
-                period: 14,
-                yAxisName: 'indicator'
-            }
-            ],
-            // ...   
-        });
-
-
-{% endhighlight %}
-
-
-
-The following screenshot displays the Simple Moving Average Indicator.
-
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img8.png" %}
-
-## Stochastic Technical Indicator
-
-Stochastic technical indicator is one of the most common indicators used in technical analysis. The indicators render four lines namely upper line, lower line, stochastic line and signal line. Upper line always render at value 80 and lower line is render at value 20. Stochastic and Signal Lines are calculated based on stochastic formulas. You can also customize the width and color of the all lines. 
-
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img9.png" %}
+To display the indicator tooltip, use **visible** option of **indicators.tooltip**. Also you can change and customize the tooltip color, border, format and font properties similar to the series tooltip.
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
             // ...             
-            axes: [     // axis for indicator
-            {
-                name: 'indicator',
-                opposedPosition: true
-            }],
-            // ...   
-            indicators: [
-            {
-                type: 'stochastic',
-                seriesName: 'indicator',
-                period: 14,
-                kPeriod: 3,
-                dPeriod: 3,
-                yAxisName: 'indicator'
-            }],
-            // ...   
+             //Initializing Indicators    
+              indicators: [{
+                   //  ...
+                   tooltip: {
+                        //Enable tooltip for indicator
+                        visible: true
+                      },
+	         }],
+            // ...  
         });
 
 
 {% endhighlight %}
 
-## Triangular Moving Average Indicator
-
-Triangular Moving Average Indicator is one of the technical indicator supported by **ejChart**. The indicator rendered is called as signal line. You can also customize the width and color of the signal line.
-
-{% highlight js %}
-
-
-        $("#chartcontainer").ejChart({
-            // ...             
-            axes: [     // axis for indicator
-            {
-                name: 'indicator',
-                opposedPosition: true
-            }],
-            // ...   
-            indicators: [{
-                type: 'tma',
-                seriesName: 'indicator', period: 14, yAxisName: 'indicator'
-            }],
-            // ...   
-        });
-
-
-{% endhighlight %}
-
-
-
-The following screenshot displays the Triangular Moving Average indicator.
-
-{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img10.png" %}
-
+{% include image.html url="/js/Chart/Technical-Indicators_images/Technical-Indicators_img12.png" Caption="Indicator Tooltip"%}
 
 
