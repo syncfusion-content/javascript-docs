@@ -11,7 +11,7 @@ documentation: ug
 
 ## Title
 
-Using title option, you can add **text** as well as customize its [font](../api/ejchart.html#members:title-font).
+By using the title option, you can add the **text** as well as customize its [font](../api/ejchart.html#members:title-font).
 
 {% highlight js %}
 
@@ -46,7 +46,7 @@ Using title option, you can add **text** as well as customize its [font](../api/
 
 ### Title Alignment
 
-You can change the title alignment to *center*, *far* and *near* using **textAlignment** property of chart title. 
+You can change the title alignment to *center*, *far* and *near* by using the **textAlignment** property of the chart title. 
 
 {% highlight js %}
 
@@ -72,7 +72,7 @@ You can change the title alignment to *center*, *far* and *near* using **textAli
 
 ## Adding Subtitle to chart
 
-Using subTitle option you can add [subTitle](../api/ejchart.html#members:title-subtitle) to chart title and customize its [font](../api/ejchart.html#members:title-subtitle-font). 
+By using the subTitle option, you can add the [subTitle](../api/ejchart.html#members:title-subtitle) to the chart title and customize its [font](../api/ejchart.html#members:title-subtitle-font). 
 
 {% highlight js %}
 
@@ -107,7 +107,7 @@ Using subTitle option you can add [subTitle](../api/ejchart.html#members:title-s
 
 ### Subtitle Alignment
 
-To change the subtitle alignment to *center*, *far* and *near* using **textAlignment** property of subTitle.
+To change the subtitle alignment to *center*, *far* and *near* by using the **textAlignment** property of the subTitle.
 
 {% highlight js %}
 
