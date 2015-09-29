@@ -9,12 +9,12 @@ documentation: ug
 
 # 3D Chart
 
-Essential 3D Chart for JavaScript allows to view 8 chart types in 3D view such as **Column**, **Bar**, **Stacked Column**, **Stacked Bar**, **100% Stacked Column**, **100% Stacked Bar**, **Pie** and **Doughnut**.
+Essential 3D Chart for JavaScript allows you to view 8 chart types in 3D view such as **Column**, **Bar**, **Stacked Column**, **Stacked Bar**, **100% Stacked Column**, **100% Stacked Bar**, **Pie** and **Doughnut**.
 
 
 ## 3D Column Chart
 
-For rendering a 3D Column Chart you have to specify the series *type* as **"column"** in the chart series and set **enable3D** option as **true** in chart.
+For rendering a 3D Column Chart, specify the series *type* as **"column"** in the chart series and set **enable3D** option as **true** in the chart.
 
 {% highlight js %}
 
@@ -42,7 +42,7 @@ For rendering a 3D Column Chart you have to specify the series *type* as **"colu
 
 ## 3D Bar Chart
 
-You can create a 3D Bar Chart by setting the series *type* as **"bar"** in the chart series and enable **enable3D** option in chart.
+You can create a 3D Bar Chart by setting the series *type* as **"bar"** in the chart series and enable **enable3D** option in the chart.
 
 {% highlight js %}
 
@@ -70,7 +70,7 @@ You can create a 3D Bar Chart by setting the series *type* as **"bar"** in the c
 
 ## 3D Stacked Column Chart
 
-Stacking Column 3DChart is rendered by specifying the series *type* as **"stackingColumn"** in the chart series and enable **enable3D** option in chart.
+Stacking Column 3DChart is rendered by specifying the series *type* as **"stackingColumn"** in the chart series and enable **enable3D** option in the chart.
 
 {% highlight js %}
 
@@ -102,7 +102,7 @@ Stacking Column 3DChart is rendered by specifying the series *type* as **"stacki
 
 ## 3D 100% Stacked Column Chart
 
-100% Stacking Column 3DChart is rendered by specifying the series *type* as **"stackingColumn100"** in the chart series and enable **enable3D** option in chart.
+100% Stacking Column 3DChart is rendered by specifying the series *type* as **"stackingColumn100"** in the chart series and enable **enable3D** option in the chart.
 
 {% highlight js %}
 
@@ -134,7 +134,7 @@ Stacking Column 3DChart is rendered by specifying the series *type* as **"stacki
 
 ## 3D Stacked Bar Chart
 
-To create Stacking Bar 3DChart set the series *type* as **"stackingBar"** in the chart series and enable **enable3D** option in chart.
+To create Stacking Bar 3DChart, set the series *type* as **"stackingBar"** in the chart series and enable **enable3D** option in the chart.
 
 {% highlight js %}
 
@@ -318,7 +318,7 @@ In 3DChart, Cartesian axes lines are represented as walls and it defines the wid
 
 ### 3D Depth
 
-Using **depth** property, you can view the 3D Chart from front view of the series to background wall.
+By using the **depth** property, you can view the 3D Chart from the front view of the series to the background wall.
 
 {% highlight js %}
 
@@ -338,7 +338,7 @@ Using **depth** property, you can view the 3D Chart from front view of the serie
 
 ### Rotating and Tilting 3D Chart
 
-To spin the 3D Chart on mouse dragging, enable **enableRotation** option in chart. The **tilt** property specifies the angle of the slope of 3D Chart. The positive and negative values are declared to the side where the slope is present. The **rotation** option is used to rotate the 3D chart towards left or right side of the chart. The direction of the chart depends upon the positive and negative values of the angle.  
+To spin the 3D Chart on mouse dragging, enable **enableRotation** option in the chart. The **tilt** property specifies the angle of the slope of the 3D Chart. The positive and negative values are declared to the side where the slope is present. The **rotation** option is used to rotate the 3D chart towards left or right side of the chart. The direction of the chart depends upon the positive and negative values of the angle.  
 
 {% highlight js %}
 
@@ -366,7 +366,7 @@ To spin the 3D Chart on mouse dragging, enable **enableRotation** option in char
 
 ### PerspectiveAngle	
 
-The **perspectiveAngle** specifies the appearance of the height, width, depth and wall of the 3D Chart. When the perspectiveAngle is decreased, the 3D object is appearing very close to viewer. But when it is increased, the 3D object appears far away from the viewer.   
+The **perspectiveAngle** specifies the appearance of the height, width, depth and wall of the 3D Chart. When the perspectiveAngle is decreased, the 3D object appears very close to the viewer. But when it is increased, the 3D object appears far away from the viewer.   
 
 {% highlight js %}
 
