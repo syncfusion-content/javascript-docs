@@ -9,7 +9,7 @@ documentation: ug
 
 # Empty Points 
 
-Data points that uses **null** or **undefined** as value are considered as empty points. Empty data points are ignored and not plotted in Chart. If the data is provided using **points** property, you can set **isEmpty** to true to specify that the particular point is an empty point.   
+The Data points that uses the **null** or **undefined** as value are considered as empty points. Empty data points are ignored and not plotted in the Chart. When the data is provided by using the **points** property, you can set the **isEmpty** to true to specify that the particular point is an empty point.   
 
 {% highlight js %}
 
