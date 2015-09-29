@@ -11,7 +11,7 @@ documentation: ug
 
 **Annotations** are used to mark the specific area of interest in chart area with texts, shapes or images. 
 
-You can add annotations to chart using **annotations** option. Using **content** option of annotation object, you can specify the id of the element which needs to be displayed in the chart area.
+You can add annotations to the chart by using the **annotations** option. By using the **content** option of annotation object, you can specify the id of the element that needs to be displayed in the chart area.
 
 {% highlight html %}
 
@@ -44,7 +44,7 @@ You can add annotations to chart using **annotations** option. Using **content**
 
 ## Rotate the annotation template
 
-For rotating the annotation template, use **angle** property of annotations. 
+For rotating the annotation template, you can use the **angle** property of the annotations. 
 
 {% highlight js %}
 
@@ -69,17 +69,17 @@ For rotating the annotation template, use **angle** property of annotations.
 
 ## Positioning Annotation
 
-You can position annotations either using coordinates (**x** and **y** options) or using alignment options (**horizontalAlignment** and **verticalAlignment**).
+You can position annotations either by using the coordinates (**x** and **y** options) or using alignment options (**horizontalAlignment** and **verticalAlignment**).
 
-Using **coordinateUnit** option, you can specify whether the value provided in **x** and **y** options are relative to chart or axis.
+By using the **coordinateUnit** option, you can specify whether the value provided in the **x** and **y** options are relative to the chart or axis.
 
-* If the coordinateUnit is set to none, annotation will be placed relative to chart/plot area using **horizontalAlignment** and **verticalAlignment** options.
+* If the coordinateUnit is set to none, annotations are placed relative to the chart/plot area by using the **horizontalAlignment** and **verticalAlignment** options.
 
-* If the coordinateUnit is set to points, x and y values of the annotation are coordinates relative to axis and annotation will be positioned relative to the axis. By default, x and y values will be associated with **primaryXAxis** and **primaryYAxis**. In case, if the chart contains multiple axis and you want to associate the annotation with particular axis, you can specify **xAxisName** and **yAxisName** options of annotation object.
+* If the coordinateUnit is set to points, the x and y values of the annotation are the coordinates relative to axis and annotation is positioned relative to the axis. By default, the x and y values are associated with the **primaryXAxis** and **primaryYAxis**. In case, if the chart contains multiple axis and you want to associate the annotation with a particular axis, you can specify the **xAxisName** and **yAxisName** options of the annotation object.
 
-* If the coordinateUnit is set to pixels, x and y values are coordinates relative to the top-left corner of chart/plot area.   
+* If the coordinateUnit is set to pixels, the x and y values are coordinates relative to the top-left corner of the chart/plot area.   
 
-N> Using **region** option, you can specify whether annotation has to be placed relative to entire chart or plot area.
+N> By using the **region** option, you can specify whether annotation is placed relative to the entire chart or plot area.
 
 {% highlight js %}
 
@@ -106,7 +106,7 @@ N> Using **region** option, you can specify whether annotation has to be placed 
 
 ## Annotation alignments
 
-When the coordinateUnit is set to pixels or points, you can align the annotation relative to the coordinates using **horizontalAlignment** and **verticalAlignment** options. 
+When the coordinateUnit is set to pixels or points, you can align the annotation relative to the coordinates by using the **horizontalAlignment** and **verticalAlignment** options. 
 
 {% highlight js %}
 
