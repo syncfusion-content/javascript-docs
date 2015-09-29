@@ -13,11 +13,11 @@ Data markers are used to provide information about the data point to the user. Y
 
 ## Adding Shapes
 
-You can add shapes to any chart types but they are often used with line, area and spline series to indicate each data point. It will be highlighted when you hover the mouse on the shape.
+You can add shapes to any chart types but they are often used with line, area and spline series to indicate each data point. It is highlighted when you hover the mouse on the shape.
 
-Shapes can be added to chart by enabling **visible** option of **marker** property. There are different shapes you can add to the chart using shape option such as rectangle, circle, diamond etc.
+Shapes can be added to the chart by enabling the **visible** option of the **marker** property. There are different shapes you can add to the chart by using the shape option such as rectangle, circle, diamond etc.
 
-The following code example shows how to enable series marker and add shapes,
+The following code example explains on how to enable series marker and add shapes,
 
 {% highlight js %}
 
@@ -58,9 +58,9 @@ The following code example shows how to enable series marker and add shapes,
 
 ## Adding image as marker
 
-Apart from shapes, you can also add images to mark the data point using **imageUrl** option.
+Apart from the shapes, you can also add images to mark the data point by using the **imageUrl** option.
 
-Following code snippet illustrates this,
+The following code example illustrates this,
 
 {% highlight js %}
 
@@ -89,7 +89,7 @@ Following code snippet illustrates this,
 
 ## Adding labels
 
-Data label can be added to a chart series by enabling **visible** property in **dataLabel** option. By default, labels appear at the top of the data point.
+Data label can be added to a chart series by enabling the **visible** property in the **dataLabel** option. By default, the labels appear at the top of the data point.
 
 The following code example shows how to enable data label and set its horizontal and vertical text alignment. 
 
@@ -118,7 +118,7 @@ The following code example shows how to enable data label and set its horizontal
 {% include image.html url="/js/Chart/Data-Markers_images/Data-Markers_img3.png" Caption="Data Markers"%}
 
 
-Label content can be formatted using template option. Inside the template, you can add the placeholder text *"point.x"* and *"point.y"* to display corresponding data points x & y value.
+Label content can be formatted by using the template option. Inside the template, you can add the placeholder text *"point.x"* and *"point.y"* to display corresponding data points x & y value.
 
 You can adorn the labels with background shapes by setting *shape* option.
 
@@ -177,7 +177,7 @@ The following code example shows how to add background shapes and set template t
 {% include image.html url="/js/Chart/Data-Markers_images/Data-Markers_img4.png" Caption="Data Markers"%}
 
 
-Appearance of the labels can be customized using *font* and *offset* options. The *offset* option is used to move the labels vertically. Also, labels can be rotated using *rotate* option.
+Appearance of the labels can be customized by using the *font* and *offset* options. The *offset* option is used to move the labels vertically. Also, labels can be rotated by using the *rotate* option.
 
 The following code example shows how to rotate datalabel text and customize the font.
 
@@ -207,7 +207,7 @@ The following code example shows how to rotate datalabel text and customize the 
 {% include image.html url="/js/Chart/Data-Markers_images/Data-Markers_img5.png" Caption="Data Markers"%}
 
 
-For chart types such as column, bar, stacked bar, stacked column, 100% stacked bar, 100% stacked column, candle and OHLC, you can position the label to the top, center or bottom position of the segment using **textPosition** option.
+For the chart types such as column, bar, stacked bar, stacked column, 100% stacked bar, 100% stacked column, candle and OHLC, you can position the label to the top, center or bottom position of the segment by using the **textPosition** option.
 
 The following code example shows how to set textPosition to display data label in the middle of the column rectangle.
 
@@ -235,9 +235,9 @@ The following code example shows how to set textPosition to display data label i
 
 {% include image.html url="/js/Chart/Data-Markers_images/Data-Markers_img6.png" Caption="Data Markers"%}
 
-For chart types such as Pie and Doughnut, label can be positioned inside or outside the perimeter of the series using **labelPosition** option.
+For chart types such as Pie and Doughnut, label can be positioned inside or outside the perimeter of the series by using the **labelPosition** option.
 
-The following code example shows how to set *labelPosition*,
+The following code example shows how to set the *labelPosition*,
 
 {% highlight js %}
 
@@ -273,22 +273,22 @@ The following code example shows how to set *labelPosition*,
 {% include image.html url="/js/Chart/Data-Markers_images/Data-Markers_img7.png" Caption="Data Markers"%}
 
 
-The following screenshot shows the labels when **labelPosition** is *inside* position.
+The following screenshot displays the labels when **labelPosition** is *inside* position.
 
 {% include image.html url="/js/Chart/Data-Markers_images/Data-Markers_img8.png" Caption="Data Markers"%}
 
 
-The following screenshot shows the labels when **labelPosition** is *outsideExtended* position.
+The following screenshot displays the labels when **labelPosition** is *outsideExtended* position.
 
 {% include image.html url="/js/Chart/Data-Markers_images/Data-Markers_img9.png" Caption="Data Markers"%}
 
 ## Customize specific points
 
-Using ejChart, you can also customize individual/specific markers with different colors, shapes and also with different images.
+by using the ejChart, you can also customize the individual/specific markers with different colors, shapes and also with different images.
 
-There are two ways you can achieve this based on how the data is fed to the series.
+There are two ways to achieve this based on how the data is fed to the series.
 
-If the data is provided using **points** option, you can add marker for each data point or specific point using **marker** option as illustrated in the following code snippet.
+When the data is provided by using the **points** option, you can add marker for each data point or specific point by using the **marker** option as illustrated in the following code example.
 
 {% highlight js %}
 
@@ -333,7 +333,7 @@ If the data is provided using **points** option, you can add marker for each dat
 {% include image.html url="/js/Chart/Data-Markers_images/Data-Markers_img10.png" Caption="Data Markers"%}
 
 
-If the data is bound to series using **dataSource** option, you can customize the points in the **seriesRendering** event as illustarted in the following code snippet,
+When the data is bound to the series by using the **dataSource** option, you can customize the points in the **seriesRendering** event as illustarted in the following code example,
 
 {% highlight js %}
 
@@ -389,9 +389,9 @@ If the data is bound to series using **dataSource** option, you can customize th
 
 ## Connecting Line
 
-This feature is used to connect label and data point using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. Connecterline types can be set as *bezier* or *line* using **type** option.
+This feature is used to connect label and data point by using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. Connecterline types can be set as *bezier* or *line* using **type** option.
 
- The following code illustrates this,
+ The following code example illustrates this,
 
 {% highlight js %}
 
@@ -422,7 +422,7 @@ This feature is used to connect label and data point using a line. It can be ena
 
 ## Smartlabels
 
-Overlapping of labels can be avoided by enabling **enableSmartLabels** property. Default value is *true* for *accumulation type series* and *false* for *other series types*.
+Overlapping of labels can be avoided by enabling the **enableSmartLabels** property. Default value is *true* for *accumulation type series* and *false* for *other series types*.
 
 The following code example shows how to enable smart labels,
 
