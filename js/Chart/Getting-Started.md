@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-This section walks you through the steps required to populate the Chart with data, add data labels, tooltips and title to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
+This section explains you the steps required to populate the Chart with data, add data labels, tooltips and title to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
 
 ## Adding script reference
 
-Create an **HTML** page and add the scripts references in the order mentioned in the following code snippet.
+Create an **HTML** page and add the scripts references in the order mentioned in the following code example.
 
 {% highlight html %}
 
@@ -54,7 +54,7 @@ Add a *div* container to render the chart.
 
 {% endhighlight %}
 
-Next, initialize chart using ejChart method. By default, chart will be rendered to the size of its container. You can also customize chart dimension either by setting width and height for the container element as in the above code or using size option of Chart. Refer [Chart Dimensions](chart-dimensions.html) to know more about setting size for chart.
+Initialize the chart by using the ejChart method. By default, chart is rendered to the size of its container. You can also customize the chart dimension either by setting the width and height for the container element as in the above code or by using the size option of the Chart. Refer to the [Chart Dimensions](chart-dimensions.html) to know more about setting size for chart.
 
 {% highlight html %}
 
@@ -73,13 +73,13 @@ Next, initialize chart using ejChart method. By default, chart will be rendered 
 
 {% endhighlight %}
 
-Now, the Chart will be rendered with some auto-generated random values and with default Column chart type.
+Now, the Chart is rendered with some auto-generated random values and with default Column chart type.
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img1.png" Caption="Chart"%}
 
 ## Populate chart with data
 
-Now, let’s see how to plot JSON data to the Chart. First, let us prepare a sample JSON data with each object containing following fields – month and sales.
+Now, this section explains how to plot JSON data to the Chart. First, let us prepare a sample JSON data with each object containing following fields – month and sales.
 
 {% highlight js %}
 
@@ -119,9 +119,9 @@ Add a series object to the chart using *series* option and set the chart type as
 
 {% endhighlight %}
 
-You can also add multiple series objects based on your requirement. Refer [Chart Types](Chart-Types.html) and [Chart Series](Chart-Series.html) sections to know more about chart types, how to add multiple series and customize series appearance.
+You can also add multiple series objects based on your requirement. Refer to the [Chart Types](Chart-Types.html) and [Chart Series](Chart-Series.html) sections to know more about chart types, how to add multiple series and customize series appearance.
 
-Next, map the month and sales values in the data source to the line series by setting *xName* and *yName* with the field names respectively, and then set the actual data using *dataSource* option. Refer [Data Binding](working-with-data.html) section to know more about binding local and remote data to the chart.
+Now, map the month and sales values in the data source to the line series by setting *xName* and *yName* with the field names respectively, and then set the actual data by using the *dataSource* option. Refer to the [Data Binding](working-with-data.html) section to know more about binding local and remote data to the chart.
 
 {% highlight js %}
 
@@ -143,7 +143,7 @@ Next, map the month and sales values in the data source to the line series by se
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img2.png" Caption="Chart"%}
 
-Since the data is related to sales, let us format the vertical axis labels by adding ‘$’ as a prefix and ‘K’ as a suffix to each label. This can be achieved by setting “${value}K” to the *labelFormat* option in axis. Here, {value} acts as a placeholder for each axis label, “$” and “K” are the actual prefix and suffix added to each axis label. 
+Since the data is related to sales, format the vertical axis labels by adding ‘$’ as a prefix and ‘K’ as a suffix to each label. This can be achieved by setting the “${value}K” to the *labelFormat* option in axis. Here, {value} acts as a placeholder for each axis label, “$” and “K” are the actual prefix and suffix added to each axis label. 
 
 The following code example illustrates this,
 
@@ -164,11 +164,11 @@ The following code example illustrates this,
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img3.png" Caption="Chart"%}
 
-Refer [Axis](Axis.html) section to know more about axis types, adding multiple axes and other customization options.
+Refer to the [Axis](Axis.html) section to know more about axis types, adding multiple axes and other customization options.
 
 ## Add Data Labels
 
-You can add data labels to improve the readability of the chart. This can be achieved by enabling *visible* option in **dataLabel** option. Now, the data labels will be rendered at the top of all the data points.
+You can add data labels to improve the readability of the chart. This can be achieved by enabling the *visible* option in **dataLabel** option. Now, the data labels are rendered at the top of all the data points.
 
 The following code example illustrates this,
 
@@ -195,7 +195,7 @@ The following code example illustrates this,
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img4.png" Caption="Chart"%}
 
-There are situations where the default label content is not sufficient to the user. In this case, you can use *template* option to format the label content with some additional information.
+There are situations where the default label content is not sufficient to the user. In this case, you can use the *template* option to format the label content with some additional information.
 
  {% highlight html %}
 
@@ -211,7 +211,7 @@ There are situations where the default label content is not sufficient to the us
 
 {% endhighlight %}
 
-Above HTML template will be used as a template for each data label. Here, “point.x” and “point.y” are the placeholder text used to display the corresponding data point’s x & y value.
+The above HTML template is used as a template for each data label. Here, “point.x” and “point.y” are the placeholder text used to display the corresponding data point’s x & y value.
 
 The following code example shows how to set the id of the above template to *‘template’* option,
 
@@ -238,11 +238,11 @@ The following code example shows how to set the id of the above template to *‘
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img5.png" Caption="Chart"%}
 
-Refer [Data Markers](Data-Markers.html) section to know more about the options available to customize it.
+Refer to the [Data Markers](Data-Markers.html) section to know more about the options available to customize it.
 
 ## Enable Legend
 
-You can enable or disable legend using *visible* option in **legend**. By default, it is enabled in chart.
+You can enable or disable the legend by using the *visible* option in **legend**. By default, it is enabled in chart.
 
 {% highlight js %}
 
@@ -268,13 +268,13 @@ You can enable or disable legend using *visible* option in **legend**. By defaul
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img6.png" Caption="Chart"%}
 
-Refer [Legend](Legend.html) section to know more about how to position legend and customize its appearance.
+Refer to the [Legend](Legend.html) section to know more about how to position legend and customize its appearance.
 
 ## Enable Tooltip
 
-Tooltip is useful at situations when you cannot display information to the user using [Data Labels](data-markers.html#adding-labels) due to space constraints. You can enable tooltip by enabling *visible* option of **tooltip** in the specific series.
+Tooltip is useful at situations when you cannot display information by using the [Data Labels](data-markers.html#adding-labels) due to space constraints. You can enable tooltip by enabling the *visible* option of **tooltip** in the specific series.
 
-The following code illustrates this,
+The following code example illustrates this,
 
 {% highlight js %}
 
@@ -295,11 +295,11 @@ The following code illustrates this,
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img7.png" Caption="Chart"%}
 
-Refer [Tooltip](user-interactions.html) section to know more about formatting tooltip contents and customizing its appearance.
+Refer to the [Tooltip](user-interactions.html) section to know more about formatting tooltip contents and customizing its appearance.
 
 ## Add Chart Title
 
-You need to add a title to the chart to provide quick information to the user about the data being plotted in chart. You can add it using *text* option of **title**.
+You need to add a title to the chart to provide quick information to the user about the data being plotted in the chart. You can add it by using the *text* option of **title**.
 
 {% highlight js %}
 
@@ -318,4 +318,4 @@ You need to add a title to the chart to provide quick information to the user ab
 
 {% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img8.png" Caption="Chart"%}
 
-Refer [Chart Title](chart-title.html) section to know more about aligning title, customizing its appearance and adding subtitle to the chart.
+Refer to the [Chart Title](chart-title.html) section to know more about aligning title, customizing its appearance and adding subtitle to the chart.
