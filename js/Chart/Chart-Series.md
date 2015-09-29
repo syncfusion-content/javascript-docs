@@ -11,7 +11,7 @@ documentation: ug
 
 ## Multiple Series
 
-In EjChart, you can add multiple series object in **series** options. By default, series will be rendered in the order it is added to the **series** option. You can change this order using **zOrder** option.  
+In EjChart, you can add multiple series object in the **series** options. By default, the series are rendered in the order it is added to the **series** option. You can change this order by using the **zOrder** option.  
 
 {% highlight js %}
 
@@ -54,11 +54,11 @@ In EjChart, you can add multiple series object in **series** options. By default
 
 ### Customizing all series together
 
-Using **commonSeriesOptions**, you can customize the series options for all the series commonly instead of setting the options directly on each series object. 
+By using the **commonSeriesOptions**, you can customize the series options for all the series commonly instead of setting the options directly on each series object. 
 
-N> The inline properties of series will have first priority and override the commonSeriesOptions.
+N> The inline properties of the series has the first priority and override the commonSeriesOptions.
 
-The below code snippet shows how to enable marker, tooltip and animation for chart series using commonSeriesOptions.
+The following code example explains on how to enable marker, tooltip and animation for the chart series by using the commonSeriesOptions.
 
 {% highlight js %}
 
@@ -134,11 +134,11 @@ EjChart allows you to render the combination of different series in the chart.
 
 * *Bar*, *StackingBar*, and *StackingBar100* cannot be combined with the other Cartesian type series.
 
-* Cartesian type series cannot be combined with accumulation series (*pie, doughnut, funnel, and pyramid*).
+* Cartesian type series cannot be combined with the accumulation series (*pie, doughnut, funnel, and pyramid*).
 
-* *Polar* and *Radar* series cannot be combined with accumulation and Cartesian type series.
+* *Polar* and *Radar* series cannot be combined with the accumulation and Cartesian type series.
 
-When the combination of Cartesian and accumulation series types are added to the series option, the series which are similar to the first series will be rendered and other series will be ignored. Following code snippet illustrates this,  
+When the combination of Cartesian and accumulation series types are added to the series option, the series that are similar to the first series are rendered and other series are ignored. The following code example illustrates this,  
 
 
 {% highlight js %}
