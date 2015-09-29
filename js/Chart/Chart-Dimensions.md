@@ -9,11 +9,11 @@ documentation: ug
 
 # Chart Dimensions
 
-You can set the size of the chart directly on the chart or to the container of the chart. By default, if you don’t specify the size, it will take 450px as height and window size as its width. 
+You can set the size of the chart directly on the chart or to the container of the chart. By default, if you don’t specify the size, it takes 450px as the height and window size as its width. 
 
 ## Setting size for container
 
-You can customize the chart dimension by setting width and height for the container element. 
+You can customize the chart dimension by setting the width and height for the container element. 
 
 {% highlight html %}
 
@@ -34,7 +34,7 @@ You can customize the chart dimension by setting width and height for the contai
 
 ## Setting size in pixels
 
-You can also set the chart dimension using **size** property of the chart. 
+You can also set the chart dimension by using the **size** property of the chart. 
 
 {% highlight js %}
 
@@ -53,7 +53,7 @@ You can also set the chart dimension using **size** property of the chart.
 
 ## Setting size relative to the container size
 
-You can specify the chart size in percentage using **size** property. The chart gets its dimension with respect to its container.
+You can specify the chart size in percentage by using the **size** property. The chart gets its dimension with respect to its container.
 
 {% highlight html %}
 
@@ -77,7 +77,7 @@ You can specify the chart size in percentage using **size** property. The chart 
 
 ## Responsive chart
 
-To resize the Chart when the browser or the chart container is resized, set **canResize** property as **true**, where the chart adapts to the changes in size of the container.
+To resize the Chart when the browser or the chart container is resized, set the **canResize** property to **true**, where the chart adapts to the changes in size of the container.
 
 {% highlight js %}
 
