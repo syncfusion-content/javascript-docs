@@ -11,7 +11,7 @@ documentation: ug
 
 ## Custom Color Palette
 
-Chart displays different series in different colors by default. You can customize the color of each series by providing a custom color palette of your choice using **palette** property. 
+The Chart displays different series in different colors by default. You can customize the color of each series by providing a custom color palette of your choice by using the **palette** property. 
 
 {% highlight js %}
 
@@ -28,11 +28,11 @@ Chart displays different series in different colors by default. You can customiz
 
 {% include image.html url="/js/Chart/Appearance_images/Appearance_img1.png" Caption="Chart custom color palette"%}
 
-N> Color palette will be applied to points in accumulation type series
+N> The Color palette is applied to the points in accumulation type series
 
 ## Built-in Themes
 
-Following are the built-in themes available in Chart
+Following are the built-in themes available in the Chart
 
 * flatlight
 * flatdark
@@ -52,7 +52,7 @@ Following are the built-in themes available in Chart
 * gradient-saffrondark
 
 
-You can set your desired theme using **theme** property. Flat light is the default theme used in Chart.
+You can set your desired theme by using the **theme** property. Flat light is the default theme used in the Chart.
 
 {% highlight js %}
 
@@ -72,7 +72,7 @@ You can set your desired theme using **theme** property. Flat light is the defau
 
 ## Point level customization
 
-Marker, data label and fill color of each point in a series can be customized individually using the **points** collection.
+Marker, data label and fill color of each point in a series can be customized individually by using the **points** collection.
 
 {% highlight js %}
 
@@ -108,7 +108,7 @@ Marker, data label and fill color of each point in a series can be customized in
 
 ### Customizing chart background
 
-Chart background can be customized using the **background** property of Chart. To customize the chart border use **border** option of chart. 
+The Chart background can be customized by using the **background** property of the Chart. To customize the chart border, use **border** option of the chart. 
 
 {% highlight js %}
 
@@ -133,7 +133,7 @@ Chart background can be customized using the **background** property of Chart. T
 
 **Chart Margin**
 
-Chart **margin** property is used to add margin to chart area at left, right, top and bottom position.
+The Chart **margin** property is used to add the margin to the chart area at the left, right, top and bottom position.
 
 {% highlight js %}
 
@@ -156,7 +156,7 @@ Chart **margin** property is used to add margin to chart area at left, right, to
 
 **Setting background image**
 
-Background image can be added to chart using the **backGroundImageUrl** property.
+Background image can be added to the chart by using the **backGroundImageUrl** property.
 
 {% highlight js %}
 
@@ -181,7 +181,7 @@ Background image can be added to chart using the **backGroundImageUrl** property
 
 **Chart area background**
 
-Chart area background can be customized using the **background** property in chart area. 
+The Chart area background can be customized by using the **background** property in the chart area. 
 
 {% highlight js %}
 
@@ -206,7 +206,7 @@ Chart area background can be customized using the **background** property in cha
 
 ### Customizing chart area grid bands
 
-You can provide different color for alternate grid rows and columns formed by the grid lines in chart area using **alternateGridBand** property of axis. The properties **odd** and **even** are used to customize the grid bands at odd and even positions respectively. 
+You can provide different color for alternate grid rows and columns formed by the grid lines in the chart area by using the **alternateGridBand** property of axis. The properties **odd** and **even** are used to customize the grid bands at odd and even positions respectively. 
 
 {% highlight js %}
 
@@ -239,7 +239,7 @@ You can provide different color for alternate grid rows and columns formed by th
 
 ### Animation
 
-You can enable animation using **enableAnimation** property of series. This will animate the chart series on two occasions – when the chart is loaded for the first time or whenever you change the series type using type property.
+You can enable animation by using the **enableAnimation** property of series. This animates the chart series on two occasions – when the chart is loaded for the first time or whenever you change the series type by using the type property.
 
 {% highlight js %}
 
@@ -261,7 +261,7 @@ You can enable animation using **enableAnimation** property of series. This will
 
 {% endhighlight %}
 
-However, you can force the chart to animate series by calling animate method as illustrated in the following code example,
+However, you can force the chart to animate series by calling the animate method as illustrated in the following code example,
 
 {% highlight js %}
 
