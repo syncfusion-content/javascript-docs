@@ -11,7 +11,7 @@ documentation: ug
 
 ## Version 12.2 Changes
 
-As a part of an effort to improve the user experience and provide consistent API across all our controls, we have made significant changes to the API namings effective from Volume 2, 2014 release. We have documented the changes with mapping between the old and new API names to enable quick up gradation of any control. The users whoever needs to migrate **from Volume 1, 2014 or from earlier versions to this Volume-2, 2014**, needs to refer the below specified API changes,
+Significant changes are made to the API namings, effective from Volume 2, 2014 release. The changes are documented with mapping between the old and new API names to enable quick upgradation of any control. Refer to the following API changes to migrate **from Volume 1, 2014 or from earlier versions to this Volume-2, 2014**.
 
 List of **common changes** made for all the components are as follows,
 
@@ -180,22 +180,22 @@ enablePersistence </td><td>
    Methods</td><td>
 disableAll</td><td>
  </td><td>
-We have removed this method. Use <b>disable method</b> to achieve this behaviour</td></tr>
+This method is removed. Use <b>disable method</b> to achieve this behaviour</td></tr>
 <tr>
 <td>
 disableItemByIndex</td><td>
  </td><td>
-We removed this method. Use <b>disableItems method </b> to achieve this behaviour</td></tr>
+This method is removed. Use <b>disableItems method </b> to achieve this behaviour</td></tr>
 <tr>
 <td>
 enableAll</td><td>
  </td><td>
-We have removed this method. Use <b>enable method</b> to achieve this behaviour</td></tr>
+This method is removed. Use <b>enable method</b> to achieve this behaviour</td></tr>
 <tr>
 <td>
 hideAccordion</td><td>
  </td><td>
-We have removed this method. Already we have <b>hide </b>method to achieve this behaviour</td></tr>
+This method is removed, as we have <b>hide </b>method to achieve this behaviour</td></tr>
 <tr>
 <td>
 panelCount</td><td>
@@ -205,12 +205,12 @@ panelCount</td><td>
 <td>
 Selected</td><td>
  </td><td>
-We have removed this method. We can achieve this scenario through <b>selectedItemIndex </b>property</td></tr>
+This method is removed. You can achieve this scenario through <b>selectedItemIndex </b>property</td></tr>
 <tr>
 <td>
 showAccordion</td><td>
  </td><td>
-We have removed this method. Already we have <b>show method</b> to achieve this behaviour</td></tr>
+This method is removed, as we have <b>show method</b> to achieve this behaviour</td></tr>
 <tr>
 <td>
  <b>Enum</b></td> <td>
@@ -456,7 +456,7 @@ featuredMeasureBarStroke,featuredMeasureBarStrokeThicknessproperties are rename
 <td colspan = "3">
 showTooltiptooltipTemplateID</td><td colspan = "2">
 tooltip.visible, tooltip.template</td><td>
-Tooltip visible property andtemplate property is moved to“<b>tooltip</b>” object</td></tr>
+Tooltip visible property and template property is moved to“<b>tooltip</b>” object</td></tr>
 <tr>
 <td colspan = "3">
 canResize</td><td colspan = "2">
@@ -471,22 +471,22 @@ bindRangeStrokeToLabelsproperty is renamed to<b>applyRangeStrokeToLabels</b><
 <td colspan = "3">
 bindRangeStrokeToTicks</td><td colspan = "2">
 applyRangeStrokeToTicks</td><td>
-bindRangeStrokeToTicks propertyis renamed to<b>applyRangeStrokeToTicks</b></td></tr>
+bindRangeStrokeToTicks property is renamed to<b>applyRangeStrokeToTicks</b></td></tr>
 <tr>
 <td colspan = "3">
 featureMeasure</td><td colspan = "2">
 featureMeasures</td><td>
-featureMeasureproperty isrenamed to<b>featureMeasures</b></td></tr>
+featureMeasureproperty is renamed to<b>featureMeasures</b></td></tr>
 <tr>
 <td colspan = "3">
 caption</td><td colspan = "2">
 captionSettings</td><td>
-caption property isrenamed to<b>captionSettings</b></td></tr>
+caption property is renamed to<b>captionSettings</b></td></tr>
 <tr>
 <td colspan = "3">
 caption.subtitle</td><td colspan = "2">
 captionSettings.subTitle </td><td>
-subtitle in caption is renamed  as<b>subTitle </b>and moved under<b>captionSettings</b></td></tr>
+subtitle in caption is renamed as<b>subTitle </b>and moved under<b>captionSettings</b></td></tr>
 <tr>
 <td colspan = "3">
 quantitativeScale</td><td colspan = "2">
@@ -1057,7 +1057,7 @@ enableTriState</td><td>
 <td>
 indeterminateState</td><td>
  </td><td>
-We have removed this property.</td></tr>
+This property is removed.</td></tr>
 <tr>
 <td>
 roundedCorner</td><td>
@@ -1128,7 +1128,7 @@ Comments</th></tr>
 <b>Property</b></td><td>
 frameType</td><td rowspan = "4">
 frame: { <br/>frameType: "fullCircle", <br/>backgroundImageUrl: null, halfCircleFrameStartAngle: 180, halfCircleFrameEndAngle: 360 },</td><td rowspan = "4">
-All frame properties moved to Object type</td></tr>
+All frame properties are moved to Object type</td></tr>
 <tr>
 <td>
 halfCircleFrameStartAngle</td></tr>
@@ -1152,7 +1152,7 @@ enableAnimation</td><td>
 <td>
 capBorderColor</td><td rowspan = "5">
 pointerCap: { <br/>radius: 7, borderWidth: 3, <br/>interiorGradient: null, <br/>borderColor: null, <br/>backgroundColor: null }</td><td rowspan = "5">
-All  pointer cap properties moved to Object type</td></tr>
+All pointer cap properties are moved to Object type</td></tr>
 <tr>
 <td>
 capBackgroundColor</td></tr>
@@ -1169,7 +1169,7 @@ capInteriorGradient</td></tr>
 <td>
 borderColor</td><td rowspan = "2">
 border:{   color: null,   width:3}</td><td rowspan = "2">
-All border properties moved to Object type</td></tr>
+All border properties are moved to Object type</td></tr>
 <tr>
 <td>
 scaleBorderWidth</td></tr>
@@ -1192,7 +1192,7 @@ direction</td><td>
 <td>
 labelAutoAngle</td><td>
 labels.autoAngle</td><td>
-This property moved  under the label collection</td></tr>
+This property is moved under the label collection</td></tr>
 <tr>
 <td>
 pointerLength</td><td>
@@ -1222,7 +1222,7 @@ type</td><td>
 <td>
 borderColor</td><td rowspan = "2">
 border:{   color: null,   width:3}</td><td rowspan = "2">
-All border properties moved to Object type</td></tr>
+All border properties are moved to Object type</td></tr>
 <tr>
 <td>
 borderWidth</td></tr>
@@ -1240,7 +1240,7 @@ gradients</td><td>
 <td>
 borderColor</td><td rowspan = "2">
 border:{   color: null,   width:3}</td><td rowspan = "2">
-All border properties moved to Object type</td></tr>
+All border properties are moved to Object type</td></tr>
 <tr>
 <td>
 borderWidth</td></tr>
@@ -1425,7 +1425,7 @@ For Ticks</td></tr>
 <td>
 args.tickAngle</td><td rowspan = "3">
 args.tick{angleelement<br/>Index}</td><td rowspan = "3">
-arguments moved to Object type</td></tr>
+arguments are moved to Object type</td></tr>
 <tr>
 <td>
 args.tickElement</td></tr>
@@ -1446,7 +1446,7 @@ args.position</td><td>
 <td>
 args.labelAngle</td><td rowspan = "3">
 args.label{angleelement<br/>Index}</td><td rowspan = "3">
-arguments moved to Object type</td></tr>
+arguments are moved to Object type</td></tr>
 <tr>
 <td>
 args.labelElement</td></tr>
@@ -1467,7 +1467,7 @@ For labels</td></tr>
 <td>
 args.pointerAngle</td><td rowspan = "3">
 args.pointer{angleelement<br/>Index}</td><td rowspan = "3">
-arguments moved to Object type</td></tr>
+arguments are moved to Object type</td></tr>
 <tr>
 <td>
 args.pointerElement</td></tr>
@@ -1498,7 +1498,7 @@ For pointer cap</td></tr>
 <td>
 args.pointerElement</td><td>
 args.pointer{angleelement<br/>valueIndex}</td><td>
-arguments moved to Object type</td></tr>
+arguments are moved to Object type</td></tr>
 </table>
 
 <a name="ejColorPicker"></a>
@@ -2178,12 +2178,12 @@ allowMultiSelection </td><td>
   <b>Methods</b></td><td>
 getCheckedItems</td><td>
  </td><td>
-We have removed this method .we can get the checked items through value property.</td></tr>
+This method is removed. You can get the checked items through value property.</td></tr>
 <tr>
 <td>
 getSelectedIndex</td><td>
  </td><td>
-We have removed this method .we can get the checked items through<b>selectedItemIndex</b>property.</td></tr>
+This method is removed. You can get the checked items through<b>selectedItemIndex</b>property.</td></tr>
 <tr>
 <td>
 popupListHide</td><td>
@@ -2198,7 +2198,7 @@ popupListShow</td><td>
 <td>
 selectItemByIndex</td><td>
  </td><td>
-We have removed this method .we can this scenario through<b>selectedItemIndex</b>property.</td></tr>
+This method is removed. You can achieve this scenario through<b>selectedItemIndex</b>property.</td></tr>
 <tr>
 <td>
 selectItemByText</td><td>
@@ -2925,7 +2925,7 @@ Comments</th></tr>
 <b>Property</b></td><td>
 frameBackgroundImageUrl</td><td rowspan = "3">
 frame: { <br/>backgroundImageUrl: null, <br/>outerWidth: 12, <br/>innerWidth: 8 }</td><td rowspan = "3">
-Properties moved to Object type</td></tr>
+Properties are moved to Object type</td></tr>
 <tr>
 <td>
 frameOuterWidth</td></tr>
@@ -2971,7 +2971,7 @@ position</td><td>
 <td>
 borderColor</td><td rowspan = "2">
 border:{ color: null, width:3 }</td><td rowspan = "2">
-Border properties moved to object type</td></tr>
+Border properties are moved to object type</td></tr>
 <tr>
 <td>
 borderWidth</td></tr>
@@ -3004,7 +3004,7 @@ width</td><td>
 <td>
 xDistanceFromScale</td><td rowspan = "2">
 distanceFromScale: { x: 50, y: 50 }</td><td rowspan = "2">
-Property moved to Object type</td></tr>
+Property is moved to Object type</td></tr>
 <tr>
 <td>
 yDistanceFromScale</td></tr>
@@ -3022,7 +3022,7 @@ gradients</td><td>
 <td>
 borderColor</td><td rowspan = "2">
 border: { color: null, width:3 }</td><td rowspan = "2">
-Property moved to object type</td></tr>
+Property is moved to object type</td></tr>
 <tr>
 <td>
 borderWidth</td></tr>
@@ -3045,7 +3045,7 @@ unitTextPlacement</td><td>
 <td>
 xDistanceFromScale</td><td rowspan = "2">
 distanceFromScale: { x: 50, y: 50 }</td><td rowspan = "2">
-Property moved to object type</td></tr>
+Property is moved to object type</td></tr>
 <tr>
 <td>
 yDistanceFromScale</td></tr>
@@ -3200,7 +3200,7 @@ For ticks</td></tr>
 <td>
 args.tickAngle</td><td rowspan = "4">
 args.tick{angle,element,<br/>index,value}</td><td rowspan = "4">
-arguments moved to Object type</td></tr>
+arguments are moved to Object type</td></tr>
 <tr>
 <td>
 args.tickElement</td></tr>
@@ -3219,7 +3219,7 @@ For label</td></tr>
 <td>
 args.labelAngle</td><td rowspan = "4">
 args.tick{angle,element,<br/>index,value}</td><td rowspan = "4">
-arguments moved to Object type</td></tr>
+arguments are moved to Object type</td></tr>
 <tr>
 <td>
 args.labelElement</td></tr>
@@ -3263,7 +3263,7 @@ For Render Complete</td></tr>
 <td>
 args.pointerElement</td><td rowspan = "4">
 args.pointer{angle<br/>elementIndexvalue}</td><td rowspan = "4">
-arguments moved to Object type</td></tr>
+arguments are moved to Object type</td></tr>
 <tr>
 <td>
 args.pointerIndex</td></tr>
@@ -3491,7 +3491,7 @@ showTooltip</td><td colspan = "2">
 <td colspan = "2">
 mouseHoverColor</td><td colspan = "2">
 highlightColor</td><td colspan = "2">
-This API comes  under API shapeSettings</td></tr>
+This API comes under API shapeSettings</td></tr>
 <tr>
 <td colspan = "2">
 mouseHoverStroke</td><td colspan = "2">
@@ -4328,7 +4328,7 @@ enableDeferredUpdate</td><td>
 <td colspan = "2">
 tooltipSettings.labelstyles.font</td><td>
 tooltipSettings.font</td><td>
-<b>labelstyles</b> in tooltipSettings is removed and <b>font </b>property is moved directly undertoolSettings</td></tr>
+<b>labelstyles</b> in tooltipSettings is removed and <b>font </b>property is moved directly under toolSettings</td></tr>
 <tr>
 <td colspan = "2">
 labelSettings.labelstyles</td><td>
@@ -4383,7 +4383,7 @@ locale</td><td>
 <td colspan = "2">
 dataSource.data:”chartdata”,dataSource.xName:”xValue”,dataSource.yName:”yValue”</td><td>
 dataSource:”chartdata”, xName:”xValue”,yName:”yValue”</td><td>
-Removed dataSourceand movedthe properties under dataSource directly to the rangenavigatormodel, whereas the data property is renamed as <b>dataSource</b></td></tr>
+Removed dataSource and moved the properties under dataSource directly to the rangenavigatormodel, whereas the data property is renamed as <b>dataSource</b></td></tr>
 <tr>
 <td>
 <b>Member Type</b></td><td colspan = "2">
@@ -4469,7 +4469,7 @@ getCurrentValue</td><td>
 <td>
 hideResetButton</td><td>
  </td><td>
-We have removed this method. use <b>allowReset  property </b>to achieve this behaviour</td></tr>
+This method is removed. Use <b>allowReset property </b>to achieve this behaviour</td></tr>
 <tr>
 <td>
 setCurrentValue</td><td>
@@ -4479,17 +4479,17 @@ setCurrentValue</td><td>
 <td>
 showResetButton</td><td>
  </td><td>
-We have removed this method. use <b>allowReset  property </b>to achieve this behaviour</td></tr>
+This method is removed. Use <b>allowReset property </b>to achieve this behaviour</td></tr>
 <tr>
 <td>
 showRating</td><td>
  </td><td>
-We have removed this method. use <b>show method </b> to achieve this behaviour</td></tr>
+This method is removed. Use <b>show method </b> to achieve this behaviour</td></tr>
 <tr>
 <td>
 hideRating</td><td>
  </td><td>
-We have removed this method. use <b>hide method </b> to achieve this behaviour</td></tr>
+This method is removed. Use <b>hide method </b> to achieve this behaviour</td></tr>
 <tr>
 <td rowspan = "2">
 <b>Enum</b></td><td>
@@ -4877,13 +4877,13 @@ allDay</td><td>
 <b>Events</b></td><td>
 args.appObj  & args.data </td><td>
 args.appointment</td><td>
-In <b>appointmentSaved</b> event we have changed the arguments name.</td></tr>
+In <b>appointmentSaved</b> event, the argument names are changed.</td></tr>
 <tr>
 <td>
 <b>Events</b></td><td>
 args.newViewargs.oldViewargs.newDate</td><td>
 args.currentViewargs.prevViewargs.currentDate</td><td>
-In <b>navigation</b> event we have changed the arguments name.</td></tr>
+In <b>navigation</b> event, the argument names are changed.</td></tr>
 <tr>
 <td>
 <b>Enum</b></td><td>
@@ -5362,11 +5362,11 @@ addItem</td><td>
 <tr><td>
 disableItems</td><td>
  </td><td>
-We have remove this method. use <b>disabledItemIndex property </b>to achieve this behaviour</td></tr>
+This method is removed. Use <b>disabledItemIndex property </b>to achieve this behaviour</td></tr>
 <tr><td>
 enableItems</td><td>
  </td><td>
-We have remove this method. Use <b>enabledItemIndex property </b>to achieve this behaviour</td></tr>
+This method is removed. Use <b>enabledItemIndex property </b>to achieve this behaviour</td></tr>
 <tr><td>
 remove</td><td>
 removeItem</td><td>
@@ -6055,7 +6055,7 @@ enableResize</td><td>
 <td>
 showItems</td><td>
 N/A</td><td>
-This API is removed from leafItemSettings since it is achieved in showLabels api.</td></tr>
+This API is removed from leafItemSettings since it is achieved in showLabels API.</td></tr>
 <tr>
 <td>
 showItems</td><td>
@@ -6065,7 +6065,7 @@ This API is removed from treeMapLevel since it is achieved in showLabels API.</t
 <td>
 labelTemplate</td><td>
 itemTemplate</td><td>
-This API comes under leafItemSettings. You can  use this template to customize the item with label.</td></tr>
+This API comes under leafItemSettings. You can  use this template to customize the items with label.</td></tr>
 </table>
 
 <a name="ejtreeview"></a>
@@ -6190,7 +6190,7 @@ unselectNode</td><td>
 <td>
 isNodeExpanded</td><td>
  </td><td>
-We have removed this method. Use <b>isExpanded method</b> to achieve  this behavior </td></tr>
+This method is removed. Use <b>isExpanded method</b> to achieve this behavior </td></tr>
 </table>
 
 #### Event arguments
@@ -6295,4 +6295,714 @@ remove</td><td>
 args.fileStatus</td><td>
 args.status</td><td>
  </td></tr>
+</table>
+
+
+## Version 13.3 Changes
+
+### ejDatePicker
+
+<table>
+<tr>
+<td>
+**Member** **Type******<br/><br/></td><td>
+**Old** **API** **Name******<br/><br/></td><td>
+**New** **API** **Name******<br/><br/></td><td>
+**Comments******<br/><br/></td></tr>
+<tr>
+<td>
+**Properties******<br/><br/></td><td>
+fields: {  <br/>date: "date",    <br/>tooltip: "tooltip",     <br/>icon: "icon"     <br/>}      <br/><br/></td><td>
+fields: {<br/>date: "date",<br/>tooltip: "tooltip",<br/>iconClass: "icon"<br/>}<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+**Enum******<br/><br/></td><td>
+ej.DatePicker.Header = {<br/>ShowHeaderNone: "showheadernone",<br/>ShowHeaderShort: "showheadershort",<br/>ShowHeaderMin: "showheadermin",<br/>ShowHeaderLong: "showheaderlong"<br/>};<br/><br/></td><td>
+ej.DatePicker.Header = {<br/>None: "none",<br/>Short: "short",<br/>Min: "min",<br/>Long: "long"<br/>};<br/><br/></td><td>
+<br/><br/></td></tr>
+</table>
+### ejColorPicker
+
+<table>
+<tr>
+<td>
+**Member** **Type******<br/><br/></td><td>
+**Old** **API** **Name******<br/><br/></td><td>
+**New** **API** **Name******<br/><br/></td><td>
+**Comments******<br/><br/></td></tr>
+<tr>
+<td>
+**Enum******<br/><br/></td><td>
+modelType:{<br/>default:”default”,<br/>picker:”picker”,<br/>palette:“palette”<br/>}<br/><br/></td><td>
+modelType:{<br/>picker:”picker”,<br/>palette:“palette”<br/>}<br/><br/></td><td>
+<br/><br/></td></tr>
+</table>
+### ejTreeview
+
+<table>
+<tr>
+<td>
+**Member** **Type******<br/><br/></td><td>
+**Old** **API** **Name******<br/><br/></td><td>
+**New** **API**  **Name******<br/><br/></td><td>
+**Comments******<br/><br/></td></tr>
+<tr>
+<td>
+Properties<br/><br/></td><td>
+fields.linkAttribute<br/><br/></td><td>
+fields.linkAttribute<br/><br/></td><td>
+Changed the type string to object.<br/><br/></td></tr>
+<tr>
+<td>
+**Methods******<br/><br/></td><td>
+removeNode (node)<br/><br/></td><td>
+removeNode(node)<br/><br/></td><td>
+Before, to remove a node from Treeview, you can call removeNode() without any argument that removes the current selected node in the Treeview.<br/>In supposed method, specify the node that has to be deleted. The argument is mandatory.<br/><br/></td></tr>
+<tr>
+<td>
+********<br/><br/></td><td>
+addNode(“newnode”, $(“a”))<br/><br/></td><td>
+addNode(“newnode”, $(“LI”))<br/>or<br/>addNode(“newnode”, “#node1”)<br/><br/></td><td>
+Before, you can pass “A” element or “LI” element as an argument, but now you can pass only “LI” element, as the node is always considered as ‘li’ element.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+nodeDragStart <br/>- dragElement - dragged node info as json object<br/>- target - target element. “A” element.<br/><br/></td><td>
+nodeDragStart<br/>- dragTarget- original element to be dragged. “A” element.<br/>- target – target Tree node<br/>- targetElementData - dragged node info as json object<br/>- parentElement – Current Parent<br/>- parentElementData – parent element details as json<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+nodeDrag <br/>- dragElement - dragged node info as json object<br/>- target - drop target element<br/><br/></td><td>
+nodeDrag<br/>- draggedElement - current dragged LI element<br/>- draggedElementData - dragged node info as json object<br/>- dragTarget – Original dragTarget element.<br/>- target– current target LI element<br/>- targetElementData - target node info as json object<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+nodeDragStop <br/>- dragElement - dragged node info as json object<br/>- targetElement - target node info as json object<br/>- target - drop target element<br/><br/></td><td>
+nodeDragStop  <br/>- draggedElement - current dragged LI element<br/>- draggedElementData - dragged node info as json object<br/>- target– current target LI element<br/>- targetElementData - target node info as json object<br/>- dropTarget – Original drop target element<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+nodeDropped<br/>- dropedElement - dropped node info as json object<br/>- targetElement - target node info as json object<br/>- target - drop target element<br/>- dropPosition – position like over, before, after<br/><br/></td><td>
+nodeDropped <br/>- droppedElement - current dragged LI element<br/>- droppedElementData- - dragged node info as json object<br/>- target– current target LI element<br/>- targetElementData - target node info as json object<br/>- dropTarget – Original drop target element<br/>- position – position like over, before, after<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+beforeExpand<br/>- nodeId<br/>- nodeText<br/><br/></td><td>
+beforeExpand<br/>- Id<br/>- text<br/><br/></td><td>
+Event argument is changed<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+nodeSelect<br/>- nodeId<br/>- nodeText<br/><br/></td><td>
+nodeSelect<br/>- Id<br/>- text<br/><br/></td><td>
+Event argument is changed<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+nodeExpand<br/>- nodeId<br/>- nodeText<br/><br/></td><td>
+nodeExpand<br/>- Id<br/>- text<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+nodeCollapse<br/>- nodeId<br/>- nodeText<br/><br/></td><td>
+nodeCollapse<br/>- Id<br/>- text<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+inlineEditValidation<br/>- nodeId<br/>- nodeText<br/><br/></td><td>
+inlineEditValidation<br/>- Id<br/>- text<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+nodeEdit<br/>- nodeId<br/>- nodeText<br/><br/></td><td>
+nodeEdit<br/>-Id<br/>- text<br/><br/></td><td>
+<br/><br/></td></tr>
+</table>
+### ejFileExplorer
+
+<table>
+<tr>
+<td>
+**Member** **Type******<br/><br/></td><td>
+**Old** **API** **Name******<br/><br/></td><td>
+**New** **API**  **Name******<br/><br/></td><td>
+**Comments******<br/><br/></td></tr>
+<tr>
+<td>
+**Properties******<br/><br/></td><td>
+showLayout<br/><br/></td><td>
+<br/><br/></td><td>
+This property is removed.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+uploadBoxSettings: {       <br/>multipleFileSelection: true,<br/>fileSize: 31457280 <br/>}<br/><br/></td><td>
+uploadSettings: {<br/>allowMultipleFile:true,<br/>maxFileSize: 31457280<br/>}<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+showTreeview<br/><br/></td><td>
+showNavigationPane<br/><br/></td><td>
+Deprecated showTreeview property<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+ajaxSettings: {<br/>destroy: {},<br/>getDetais: {}<br/>}<br/><br/></td><td>
+ajaxSettings: {<br/>remove: {},<br/>getDetails: {}<br/>}<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+path<br/><br/></td><td>
+path<br/><br/></td><td>
+Previously, “path” API of file explorer returns current folder path. <br/>Now it points the root folder of file explorer<br/><br/></td></tr>
+<tr>
+<td>
+**Method******<br/><br/></td><td>
+enableToolbarItem(FileExplorerId+toolbarCommand)<br/><br/></td><td>
+enableToolbarItem(toolbarCommand)<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+disableToolbarItem(FileExplorerId+toolbarCommand)<br/><br/></td><td>
+disableToolbarItem(toolbarCommand)<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+removeToolbarItem(FileExplorerId+toolbarCommand)<br/><br/></td><td>
+removeToolbarItem(toolbarCommand)<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+**Event******<br/><br/></td><td>
+move<br/><br/></td><td>
+cut<br/><br/></td><td>
+<br/><br/></td></tr>
+</table>
+### ejDropDownList
+
+<table>
+<tr>
+<td>
+**Member** **Type******<br/><br/></td><td>
+**Old** **API** **Name******<br/><br/></td><td>
+**New** **API**  **Name******<br/><br/></td><td>
+**Comments******<br/><br/></td></tr>
+<tr>
+<td>
+**Properties******<br/><br/></td><td>
+selectedItemIndex<br/><br/></td><td>
+selectedIndex<br/><br/></td><td>
+Renamed<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+unselectItemByIndex<br/><br/></td><td>
+<br/><br/></td><td>
+Deprecated. The same functionalities can be achieved <br/>by unselectedItemsByIndices.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+selectedItems<br/><br/></td><td>
+selectedIndices<br/><br/></td><td>
+Renamed<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+allowGrouping<br/><br/></td><td>
+<br/><br/></td><td>
+Deprecated. The same functionalities can be achieved <br/>by setting fields.groupBy property.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+enableItemsByIndex<br/><br/></td><td>
+<br/><br/></td><td>
+Deprecated. The same functionality can be achieved <br/>by enableItemsByIndices method.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+disableItemsByIndex<br/><br/></td><td>
+<br/><br/></td><td>
+Deprecated. The same functionality can be achieved <br/>by disableItemsByIndices method.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+checkAll<br/><br/></td><td>
+<br/><br/></td><td>
+Deprecated. The same functionality can be achieved <br/>by checkAll method.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+uncheckAll<br/><br/></td><td>
+<br/><br/></td><td>
+Deprecated. The same functionality can be achieved <br/>by uncheckAll method.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+allowMultipleSelection<br/><br/></td><td>
+<br/><br/></td><td>
+Removed. Same can be achieved <br/>by multiSelectMode property.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+field.category<br/><br/></td><td>
+field.groupBy<br/><br/></td><td>
+Property “category” deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+Methods<br/><br/></td><td>
+setSelectedText<br/><br/></td><td>
+selectItemByText<br/><br/></td><td>
+Deprecated the old method.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+setSelectedValue<br/><br/></td><td>
+selectItemByValue<br/><br/></td><td>
+Deprecated the old method.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+getSelectedItemsID<br/><br/></td><td>
+<br/><br/></td><td>
+Deprecated. You can get the id of selected<br/>list items with the help of getSelectedItem method.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+selectItemByIndex<br/><br/></td><td>
+selectItemsByIndices<br/><br/></td><td>
+Deprecated the old method.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+unselectItemByIndex<br/><br/></td><td>
+unselectItemsByIndices<br/><br/></td><td>
+Deprecated the old method.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+getValue<br/><br/></td><td>
+<br/><br/></td><td>
+Deprecated. You can get the selected value<br/> by using value property.<br/><br/></td></tr>
+<tr>
+<td>
+Event<br/><br/></td><td>
+change<br/>- args.value<br/><br/></td><td>
+change<br/>- args.selectedValue<br/><br/></td><td>
+Renamed <br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+checkChange<br/>- args.value<br/><br/></td><td>
+checkChange<br/>- args.selectedValue<br/><br/></td><td>
+Renamed <br/><br/></td></tr>
+</table>
+### ejRTE
+
+<table>
+<tr>
+<td>
+**Member** **Type******<br/><br/></td><td>
+**Old** **API** **Name******<br/><br/></td><td>
+**New** **API** **Name******<br/><br/></td><td>
+**Comments******<br/><br/></td></tr>
+<tr>
+<td>
+Properties<br/><br/></td><td>
+customTool<br/><br/></td><td>
+customTools<br/><br/></td><td>
+customTool renamed as customTools.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+showHtmlSource: true<br/><br/></td><td>
+showHtmlSource: false<br/><br/></td><td>
+Default value changed<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+tools: {<br/>scripts: ["superscript", "subscript"],<br/>copyPaste: ["cut", "copy","paste"] ,<br/>links: ["createLink"]<br/>}<br/><br/></td><td>
+tools: {<br/>effects: ["superscript", "subscript"],<br/>clipbpoard: ["cut", "copy","paste"],<br/>links: ["createLink","removeLink"],<br/>media:[“video”]       <br/>}<br/><br/></td><td>
+Renamed the category header for tools.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+iframeAttribute<br/><br/></td><td>
+iframeAttributes<br/><br/></td><td>
+Now, you can apply any kind of attributes to<br/>the iframe's body element by using this.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+showClearAll:true<br/><br/></td><td>
+showClearAll:false<br/><br/></td><td>
+Default value changed<br/><br/></td></tr>
+<tr>
+<td>
+**Methods******<br/><br/></td><td>
+enableToolbarItem(rteId+toolbarCommand)<br/><br/></td><td>
+enableToolbarItem (toolbarCommand)<br/><br/></td><td>
+Parameter attribute value changed.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+enableToolbarItem(rteId+toolbarCommand)<br/><br/></td><td>
+disableToolbarItem (toolbarCommand)<br/><br/></td><td>
+Parameter attribute value changed.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+removeToolbarItem(rteId+ toolbarCommand)<br/><br/></td><td>
+removeToolbarItem (toolbarCommand)<br/><br/></td><td>
+Parameter attribute value changed.<br/><br/></td></tr>
+</table>
+### ejUploadBox
+
+<table>
+<tr>
+<td>
+**Member** **Type******<br/><br/></td><td>
+**Old** **API** **Name******<br/><br/></td><td>
+**New** **API** **Name******<br/><br/></td><td>
+**Comments******<br/><br/></td></tr>
+<tr>
+<td>
+Properties<br/><br/></td><td>
+multipleFilesSelection: false<br/><br/></td><td>
+multipleFilesSelection: true<br/><br/></td><td>
+Default value of multipleFilesSelection property <br/>is changed to true.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+dragAreaText<br/><br/></td><td>
+dropAreaText<br/><br/></td><td>
+As per behavior, the property name is <br/>changed. It is breaking changes in upload.<br/><br/></td></tr>
+<tr>
+<td>
+Event<br/><br/></td><td>
+fileSelect<br/>- Args[0]<br/><br/></td><td>
+fileSelect<br/>- args.files<br/><br/></td><td>
+In fileSelect, the selected files are available in<br/>event argument - ‘args.files’<br/><br/></td></tr>
+</table>
+### ejListbox
+
+<table>
+<tr>
+<td>
+**Member** **Type******<br/><br/></td><td>
+**Old** **API** **Name******<br/><br/></td><td>
+**New** **API** **Name******<br/><br/></td><td>
+**Comments******<br/><br/></td></tr>
+<tr>
+<td>
+**Properties******<br/><br/></td><td>
+fields.toolTipText<br/><br/></td><td>
+fields.tooltipText<br/><br/></td><td>
+The property **toolTipText** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+********<br/><br/></td><td>
+fields.selected<br/><br/></td><td>
+fields.selectBy<br/><br/></td><td>
+The property **selected** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+********<br/><br/></td><td>
+fields.category<br/><br/></td><td>
+fields.groupBy<br/><br/></td><td>
+The property **category** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+********<br/><br/></td><td>
+selectedItemIndex<br/><br/></td><td>
+selectedIndex<br/><br/></td><td>
+The property **selectedItemIndex** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+********<br/><br/></td><td>
+selectedItemlist<br/><br/></td><td>
+selectedIndices<br/><br/></td><td>
+The property **selectedItemlist** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+selectedItems<br/><br/></td><td>
+selectedIndices<br/><br/></td><td>
+The property **selectedItemd** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+checkItemsByIndex<br/><br/></td><td>
+-<br/><br/></td><td>
+The property **checkItemsByIndex** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+checkedItemlist<br/><br/></td><td>
+checkedIndices<br/><br/></td><td>
+The property **checkedItemlist** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+checkedItems<br/><br/></td><td>
+checkedIndices<br/><br/></td><td>
+The property **checkedItems** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+checkAll<br/><br/></td><td>
+-<br/><br/></td><td>
+The property **checkAll** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+uncheckAll<br/><br/></td><td>
+-<br/><br/></td><td>
+The property **uncheckAll** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+uncheckItemsByIndex<br/><br/></td><td>
+-<br/><br/></td><td>
+The property **uncheckItemsByIndex** is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+enableTooltip<br/><br/></td><td>
+-<br/><br/></td><td>
+The property enableTooltip is removed.<br/>Without using this property, you can enable tooltip<br/>by specifying the data source field name in<br/>fieldSettings.tooltipText property. <br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+allowGrouping<br/><br/></td><td>
+-<br/><br/></td><td>
+The property allowGrouping is removed. <br/>Without using this property, you can enable grouping <br/>by specifying the data source field name in <br/>fieldSettings.groupBy property. <br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+allowDragAndDrop<br/><br/></td><td>
+-<br/><br/></td><td>
+The property allowDragAndDrop is deprecated. <br/> This property is seperated as two properties <br/> allowDrag and allowDrop.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+enableItemsByIndex<br/><br/></td><td>
+-<br/><br/></td><td>
+The **enableItemsByIndex** property is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+disableItemsByIndex<br/><br/></td><td>
+-<br/><br/></td><td>
+The **disableItemsByIndex** property is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+**Events******<br/><br/></td><td>
+selected<br/><br/></td><td>
+select<br/><br/></td><td>
+The selected event is deprecated. <br/>The event arguments contain the following properties (changes).<br/>index: returns the item index<br/>isChecked: returns whether the item is checked or not.<br/>isEnabled: returns whether the item is checked or not.<br/>isSelected: returns whether the item is selected or not.<br/>item: returns the element (item)<br/>model: returns the current model<br/>text: returns the item text (label)<br/>type: returns the event name<br/>value: returns the item text<br/>cancel: returns the cancel option value.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+selectIndexChanged<br/><br/></td><td>
+change<br/><br/></td><td>
+The selectIndexChanged event is deprecated. <br/>The event arguments contain the following properties (changes).<br/>index: returns the item index<br/>isChecked: returns whether the item is checked or not.<br/>isEnabled: returns whether the item is checked or not.<br/>isSelected: returns whether the item is selected or not.<br/>item: returns the element (item)<br/>model: returns the current model<br/>text: returns the item text (label)<br/>type: returns the event name<br/>value: returns the item text<br/>cancel: returns the cancel option value.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+itemDropped<br/><br/></td><td>
+itemDrop<br/><br/></td><td>
+The itemDropped event is deprecated. <br/>The event arguments contain the following <br/>properties (changes).<br/>Items: returns the array of selected item objects<br/>(to be dropped) that contains the properties like<br/>index, isChecked, isEnabled, isSelected, etc.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+itemRequest<br/><br/></td><td>
+-<br/><br/></td><td>
+This event is removed. Use actionSuccess or <br/>actionComplete event as an alternative event. <br/><br/></td></tr>
+<tr>
+<td>
+**Methods******<br/><br/></td><td>
+getSelectedItem<br/><br/></td><td>
+-<br/><br/></td><td>
+This method is removed, as you can use<br/>getSelectedItems as an alternative method. <br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+getSelectedItems<br/><br/></td><td>
+<br/><br/></td><td>
+The return value of this method is changed.<br/>It returns all the selected item’s object <br/>(contains properties like index, isChecked, <br/>text, value, item, etc.) instead of selected elements.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+Checkitems<br/><br/></td><td>
+-<br/><br/></td><td>
+This method is removed.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+disableItem<br/><br/></td><td>
+-<br/><br/></td><td>
+The behavior of this method is changed. <br/>Previously it disables the selected item.<br/>But now it takes item’s text (label) as an<br/>argument and disables that item.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+refreshContent<br/><br/></td><td>
+refresh<br/><br/></td><td>
+The refreshContent method is removed. <br/>Use refresh method as an alternative.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+addItem<br/><br/></td><td>
+-<br/><br/></td><td>
+The behavior of this method is changed.<br/>This method previously accepts only text to <br/>add an item in the ListBox widget. Now it <br/>accepts an object or an array of objects or <br/>a string or an array of strings to add items.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+removeItem<br/><br/></td><td>
+removeSelectedItems<br/><br/></td><td>
+The **removeItem** method is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+unCheckAll<br/><br/></td><td>
+uncheckAll<br/><br/></td><td>
+The **unCheckAll** method is deprecated.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+unSelectAll<br/><br/></td><td>
+unselectAll<br/><br/></td><td>
+The **unSelectAll** method is deprecated.<br/><br/></td></tr>
+</table>
+### ejDialog
+
+<table>
+<tr>
+<td>
+**Member** **Type******<br/><br/></td><td>
+**Old** **API** **Name******<br/><br/></td><td>
+**New** **API** **Name******<br/><br/></td><td>
+**Comments******<br/><br/></td></tr>
+<tr>
+<td>
+**Property******<br/><br/></td><td>
+content<br/><br/></td><td>
+target<br/><br/></td><td>
+The **content** property is deprecated. Use **target** property.<br/><br/></td></tr>
+<tr>
+<td>
+**Event******<br/><br/></td><td>
+Close<br/><br/></td><td>
+close<br/><br/></td><td>
+The **Close** event is deprecated. Use **close** event. <br/><br/></td></tr>
+<tr>
+<td>
+**Method******<br/><br/></td><td>
+isOpened<br/><br/></td><td>
+isOpen<br/><br/></td><td>
+The isOpened method is deprecated. Use isOpen method.<br/><br/></td></tr>
+</table>
+### ejSchedule
+
+<table>
+<tr>
+<td>
+**Type******<br/><br/></td><td>
+**Old******<br/><br/></td><td>
+**New** ****<br/><br/></td><td>
+**Comments******<br/><br/></td></tr>
+<tr>
+<td>
+**API******<br/><br/></td><td>
+views: ["Day", "Week", "WorkWeek", "Month"]<br/><br/></td><td>
+views: ["Day", "Week", "WorkWeek", "Month", "**Agenda**"]<br/><br/></td><td>
+New view type is added for Agenda view.<br/><br/></td></tr>
+<tr>
+<td>
+**API******<br/><br/></td><td>
+<br/><br/></td><td>
+agendaViewSettings: {<br/>daysInAgenda: 7,<br/>dateColumnTemplateId: null,<br/>timeColumnTemplateId: null,<br/>},<br/><br/></td><td>
+daysInAgenda -  In Agenda View, by default <br/>it displays one week appointment summary, suppose <br/>customer has to display more than one <br/>week,(10,days, 2 week, etc.) you can<br/>provide the days count.<br/><br/>dateColumnTemplateId – To assign template <br/>design to the date column in the agenda view.<br/><br/>timeColumnTemplateId – To assign template<br/>design to the time column in the agenda view.<br/><br/></td></tr>
+<tr>
+<td>
+**API******<br/><br/></td><td>
+********<br/><br/></td><td>
+firstDayOfWeek:null<br/><br/></td><td>
+You can change the starting day of the week, <br/>workweek, month view based on the given day.<br/>firstDayOfWeek : “Monday”<br/><br/></td></tr>
+<tr>
+<td>
+**API******<br/><br/></td><td>
+********<br/><br/></td><td>
+workweek:[]<br/><br/></td><td>
+The workweek view days can be customized <br/>workweek: [“Monday”,”Tuesday”,”Wednesday”,”Thursday”<br/>,”Friday”,”Saturday”]<br/><br/></td></tr>
+<tr>
+<td>
+**API******<br/><br/></td><td>
+********<br/><br/></td><td>
+tooltipSettings:{<br/>enable: false,<br/>template: null <br/>},<br/><br/></td><td>
+For Tool tip feature, the tooltip allows to show<br/>appointment details. You can enable and disable <br/>tooltip, and customize the tooltip with the help of template.<br/><br/></td></tr>
+<tr>
+<td>
+**API******<br/><br/></td><td>
+highlightBusinessHours : **true**,<br/><br/></td><td>
+workHours:{<br/>highlight:true,<br/>start:9,<br/>end:18<br/>}<br/><br/></td><td>
+The highlightBusinessHours, <br/>businessHourStartTime and <br/>businessHourEndTime are grouped respectively.<br/><br/></td></tr>
+<tr>
+<td>
+**API******<br/><br/></td><td>
+businessStartHour: **9**<br/><br/></td><td>
+workHours:{<br/>highlight:true,<br/>start:9,<br/>end:18<br/>}<br/><br/></td><td>
+The highlightBusinessHours, <br/>businessHourStartTime and <br/>businessHourEndTime are grouped respectively.<br/><br/></td></tr>
+<tr>
+<td>
+**API******<br/><br/></td><td>
+businessEndHour: **18**<br/><br/></td><td>
+workHours:{<br/>highlight:true,<br/>start:9,<br/>end:18<br/>}<br/><br/></td><td>
+The highlightBusinessHours, <br/>businessHourStartTime and <br/>businessHourEndTime are grouped respectively.<br/><br/></td></tr>
+<tr>
+<td>
+**API******<br/><br/></td><td>
+timezoneCollection : {<br/>}<br/><br/></td><td>
+timeZoneCollection : {<br/><br/>}<br/><br/></td><td>
+The API in unique and standard format is changed.<br/><br/></td></tr>
+<tr>
+<td>
+**Event******<br/><br/></td><td>
+beforeContextMenuOpen:function(args){<br/>args.cancel,<br/>args.events,<br/>args.model,<br/>args.type<br/>}<br/><br/></td><td>
+beforeContextMenuOpen:function(args){<br/>args.cancel,<br/>args.cellIndex,<br/>args.currentDate,<br/>args.resources,<br/>args. events,<br/>args.model,<br/>args.type<br/>}<br/><br/></td><td>
+While opening the context menu on cell right click, pass the cell index and details.<br/><br/></td></tr>
+<tr>
+<td>
+**Event******<br/><br/></td><td>
+beforeContextMenuOpen:function(args){<br/>args.cancel,<br/>args.events,<br/>args.model,<br/>args.type<br/>}<br/><br/></td><td>
+beforeContextMenuOpen:function(args){<br/>args.appointment,            <br/>args.cancel,<br/>args. events,<br/>args.model,<br/>args.type<br/>}<br/><br/></td><td>
+While opening the context menu on Appointment right click, pass the appointment details.<br/><br/></td></tr>
+<tr>
+<td>
+**Event******<br/><br/></td><td>
+actionBegin:function(args) {<br/>args. currentview,<br/>args.Date,<br/>}<br/><br/></td><td>
+actionBegin:function(args) {<br/>args. data. currentView,<br/>args. data. currentDate,<br/>}<br/><br/></td><td>
+The arguments in unique and standard format are changed.<br/><br/></td></tr>
+<tr>
+<td>
+**Event******<br/><br/></td><td>
+navigation:function(args) {<br/>args. currentview,<br/>args.Date,<br/>}<br/><br/></td><td>
+navigation:function(args) {<br/>args. currentView,<br/>args. currentDate,<br/>}<br/><br/></td><td>
+The arguments in unique <br/>and standard format are changed.<br/><br/></td></tr>
+<tr>
+<td>
+**Event******<br/><br/></td><td>
+actionComplete:function(args) {<br/>args. preview,<br/>args.Date,<br/>args. prevDate<br/>}<br/><br/></td><td>
+actionComplete:function(args) {<br/>args. data.previousView,<br/>args. data.currentDate,<br/>args. data.previousDate<br/>}<br/><br/></td><td>
+The arguments in unique and standard format are changed.<br/><br/></td></tr>
 </table>
