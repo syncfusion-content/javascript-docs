@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working-with-Data
-description: working with data
+title: Working with Data
+description: working with data                                                   
 platform: js
 control: Chart
 documentation: ug
@@ -9,82 +9,93 @@ documentation: ug
 
 # Working with Data
 
-Chart gets data either locally or remotely. To populate the Chart with data, you can use the **dataSource** in **series** properties.
-
 ## Local Data
 
-**EjChart** provides you an option to bind the data to the Chart using the **dataSource** property of the series.
+There are two ways to provide local data to chart.
+
+1. You can bind the data to chart using **dataSource** property of series and then you need to map the X and Y value with **xName** & **yName** property respectively.
+
+N> For **OHLC** type series, you have to map four dataSource fields (**high**, **low**, **open** and **close**) to bind data source and for **bubble** series you have to map **size** field along with **xName** and **yName**. 
+
 
 {% highlight js %}
 
+     var chartData = [
+          { month: 'Jan', sales: 35 }, { month: 'Feb', sales: 28 },  { month: 'Mar', sales: 34 },
+          { month: 'Apr', sales: 32 },{ month: 'May', sales: 40 },{ month: 'Jun', sales: 32 },
+          { month: 'Jul', sales: 35 },  { month: 'Aug', sales: 55 }, { month: 'Sep', sales: 38 },
+          { month: 'Oct', sales: 30 }, { month: 'Nov', sales: 25 }, { month: 'Dec', sales: 32 }];
 
-        var dataVal = [
-            {"FoodName": "CHEESE BURGER", "Calorie": 100, "Protein": 15, "Fat": 15 },
-            { "FoodName": "PIZZA", "Calorie": 100, "Protein": 15, "Fat": 9 },
-            { "FoodName": "CHICKEN NOODLE", "Calorie": 50, "Protein": 4, "Fat": 2 },
-            { "FoodName": "YOGURT", "Calorie": 75, "Protein": 10, "Fat": 2 },
-            { "FoodName": "BEEF SANDWICH", "Calorie": 125, "Protein": 22, "Fat": 13}
-        ];
-        $("#chartcontainer").ejChart({     
-            series: [{                        
-                dataSource: dataVal,
-                xName: 'FoodName', 
-                yName: 'Calorie',
-                type:'column'
+       $("#chartcontainer").ejChart({
+                    
+          series: [{
+                // ... 
+         	//Add datasource and set xName and yName 
+                dataSource: chartData, 
+                xName: "month", 
+                yName: "sales"		
+             }]
 
-            },
-            {
-                dataSource: dataVal,
-                xName: 'FoodName',
-                yName: 'Protein',
-                type: 'column'
-            }
-            ],                      
-            // ...                       
+             // ...
         });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Working-with-Data_images/Working-with-Data_img1.png" Caption="Local Data Binding"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/localdata) here to view the local data binding online demo sample.
 
 
-{% include image.html url="/js/Chart/Working-with-Data_images/Working-with-Data_img1.png" %}
+2.You can also plot data to chart using [points](../api/ejchart.html#members:series-points) option in the series. Using this property you can customize each and every point in the data.
+
+{% highlight js %}
+
+    $("#chartcontainer").ejChart({
+
+            // ...
+
+           //Initializing Series
+           series: [{
+               //Adding data points using x and y field of points
+               points: [{ x: "John", y: 10000 }, { x: "Jake", y: 12000 }, { x: "Peter", y: 18000 },
+                        { x: "James", y: 11000 }, { x: "Mary", y: 9700 }],
+               // ...
+           }],
+            // ...
+
+      });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/Working-with-Data_images/Working-with-Data_img2.png" Caption="Plotting data with points"%}
 
 ## Remote Data
 
-You can bind the **ejChart** to remote data using **DataManager** and the **query** in series that is used to retrieve the data by creating queries. Data manager supports the following types of data binding.
+You can bind the remote data to chart using DataManager and you can use **query** property of series to filter the data from dataSource.
 
-1. JSON
-2. Web Services
-3. oData
-
-The following code example illustrates binding **ejChart** to oData service.   
 
 {% highlight js %}
 
-
-        $(function () {
-            //Remote URL           
-            var dataManger = new ej.DataManager({
-                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
-            });
-            // Query creation
-            var query = ej.Query().from("Orders").take(6);
-            $("#chartcontainer").ejChart({
-                series: [{
-                    type: 'column',
-                    dataSource: dataManger,
-                    xName: "ShipCity",
-                    yName: "Freight",
-                    query: query,
-                }],
-            });
+        //Remote URL           
+        var dataManger = new ej.DataManager({
+            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
         });
-
+        // Query creation
+        var query = ej.Query().from("Orders").take(6);
+        $("#chartcontainer").ejChart({
+            series: [{
+                type: 'column',
+                dataSource: dataManger,
+                xName: "ShipCity",
+                yName: "Freight",
+                query: query,
+            }],
+        });
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Working-with-Data_images/Working-with-Data_img3.png" Caption="Remote Data Binding"%}
 
-
-{% include image.html url="/js/Chart/Working-with-Data_images/Working-with-Data_img2.png" %}
-
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/remotedata) here to view the remote data binding online demo sample.	

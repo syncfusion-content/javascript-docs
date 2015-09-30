@@ -7,121 +7,90 @@ control: Chart
 documentation: ug
 ---
 
-# Exporting
+# Exporting Chart
 
-## Image Export
+## Image Exporting
 
-The **EJChart** supports client-side exporting using **canvg** script. **canvg** is a **SVG** parser and renderer. It takes a **URL** to a **SVG** file or the text of an SVG file, parses it to canvas, and renders the canvas image.
+The chart can be exported to image when it is rendered in canvas. To render a chart in canvas, set the **enableCanvasRendering** option to *true*. To export the chart, you can use the **export** method of the chart. Refer to the online [KB for exporting](http://www.syncfusion.com/kb/5045) to know more about chart exporting. 
 
-{% highlight html %}
-
-<img src="../images/chart/export.png" onclick="onExport()" title="Export Chart" style="float: right" />
-<div id="container"></div>
-<canvas id="canvas2" style="display: none"></canvas>
-
-{% endhighlight %}
-
-{% highlight js %}    
-
-        $("#chartcontainer").ejChart({   
-        });
-        function onExport() {
-            var canvas = document.getElementById('canvas2');
-            svg = $("#container").html();
-            canvg(canvas, svg);
-            var image = canvas.toDataURL("image/png")
-                              .replace("image/png", "image/octet-stream");
-            var downloadLink = document.createElement("a");
-            downloadLink.href = image;
-            downloadLink.download = "Chart.png";
-            document.body.appendChild(downloadLink);
-            downloadLink.click();
-            document.body.removeChild(downloadLink);
-            $('#canvas2').hide();
-        }         
-
-
-{% endhighlight %}
-
-## Excel Export
-
-**Exporting** is a server-side operation and JS Chart is a Client-side widget. So it is not feasible to export in pure Javascript platform. For HTTP Content read and write, you need server-side control. You can use **REST** service like **WebApi** to achieve server-side support while exporting in JS Chart. 
-Also since JS Chart is a Client-side, it does not have **mapper** property for custom URL mapping. You can achieve this by **export** method, which takes the type of export, URL, multiple export option as argument.
+N> Exporting chart as an image is supported in all major browsers except Internet Explorer due to its restriction towards client side download.
 
 {% highlight html %}
 
-<div style="height:20px;">
-  <a id="downloadexcel" style="cursor: pointer; position:absolute;>
-  <img src="../images/chart/ExcelExport.png" onclick="downloadExcel()" title="Excel Export"  />
-  </a>
-</div>
-
-{% endhighlight %}
-
-{% highlight js %}  
-      $("#container").ejChart(
-             {
-             primaryXAxis:
-             {
-                 title: { text: 'Manager' },
-                 majorGridLines: { visible: false }
-             }, 
-			
-             //Initializing Primary Y Axis	
-             primaryYAxis:
-             {
-                 title: { text: 'Sales' },
-                 axisLine: { visible: false },
-                 range: { min: 0, max: 20000, interval: 2000 }
-             },  
-			
-             //Initializing Series
-             series: 
-             [
-                 {
-                     points: [{ x: "John", y: 10000}, { x: "Jake", y: 12000 }, 
-                              { x: "Peter", y: 18000 },
-                              { x: "James", y: 11000}, { x: "Mary", y: 9700 }],
-                     name: 'Person',
-                     type: 'column',
-                     enableAnimation: true,
-                     tooltip:{visible:true}							 
-                 }
-             ],
- 
-             title :{text: 'Sales Comparison'},
-             size: { height: "600" }, 
-         });	
-         
-        function downloadExcel() {
-              var chart = $("#container").ejChart("instance");
-              chart.export('Excel', 'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport');
+<body>
+<!--Chart download link-->
+    <a id="download" download="Chart.png" style="cursor: pointer; position: absolute;right: 150px;">ExportChart</a>
+   <div id="chartcontainer"></div>
+<script>
+       
+        $("#chartcontainer").ejChart({
+   
+               // ...
+               //Enable Canvas mode to export chart as image
+               enableCanvasRendering: true
+         });
+        function download() {
+            var canvas = $("#chartcontainer").ejChart("export");
+            var dt = canvas.toDataURL();
+            this.href = dt;
         }
-        
-        public class JSChartExportController : ApiController
+        if (document.getElementById('download').addEventListener)
+            document.getElementById('download').addEventListener('click', download, false);
+        else
+            document.getElementById('download').attachEvent('onclick', download, false);
+</script>
+</body>
+
+
+{% endhighlight %}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/export) here to view the Export chart online demo sample.
+
+
+## Excel Exporting
+
+Exporting to excel is a server-side operation, so you can use the server-side frameworks such as **WebApi**, **WCF** service to achieve the excel exporting.
+
+### Server side implementation
+
+To convert the chart data from client to server-side, refer to the following steps.
+
+1. Create an MVC application and add a controller.
+
+2. Add Syncfusion.EJ, Syncfusion.EJ.MVC, Syncfusion.EJ.Export and Syncfusion.XlsIO dll’s as references to the application.
+
+3. Parse the data from client in MVC controller and export the chart to client.  
+
+{% highlight csharp %}
+
+     public class JSChartExportController : ApiController
         {
-         
         [System.Web.Http.ActionName("ExcelExport")]
         [AcceptVerbs("POST")]
         public void ExcelExport()
         {          
+            // get Chart data from client side in POST action
             string chartModel = HttpContext.Current.Request.Params["ChartModel"];  
 
             ChartProperties chartProperty = ConvertChartObject(chartModel);
             ExcelExport exp = new ExcelExport();          
             exp.Export(chartProperty, null,  "Export.xlsx", ExcelVersion.Excel2010, null, null);
         }
-
+        
+       // Converting client string data in to server chart object
         private ChartProperties ConvertChartObject(string ChartModel)
         {
             JavaScriptSerializer serializer = new JavaScriptSerializer();
 
             IEnumerable div = (IEnumerable)serializer.Deserialize(ChartModel, typeof(IEnumerable));
             ChartProperties chartProp = new ChartProperties();
+            
+            // Mapping each client property to chart object
             foreach (KeyValuePair<string, object> ds in div)
             {
 
-              var property = chartProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public |  BindingFlags.IgnoreCase);
+              var property = chartProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | 
+                                         BindingFlags.Public |  BindingFlags.IgnoreCase);
                 if (property != null)
                 {
                     Type type = property.PropertyType;
@@ -135,28 +104,84 @@ Also since JS Chart is a Client-side, it does not have **mapper** property for c
     }
 
 
+{% endhighlight %}
+
+4.Host the MVC application in your server and get the link for exporting action method
+Example: http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport
+
+5.For passing client data to server-side, you need to call the **export** method and should pass export type (either image or excel) and server-side **URL** as an argument. The third argument of the export method is a Boolean property that specifies whether the current chart should be exported or all charts in page should be exported.
+
+
+{% highlight html %}
+
+<body>
+    <!--Export Char to Excel-->
+  <a id="downloadexcel" style="cursor: pointer; position:absolute;">
+  <button onclick="downloadExcel()" title="Excel Export" value="Export">Export</button>
+      </a>
+   <div id="chartcontainer"></div>
+   
+<script>
+       //Render Chart1
+        $("#chartcontainer").ejChart();
+
+       //Export chart to excel
+        function downloadExcel() {
+            var chart = $("#chartcontainer").ejChart("instance");
+            var exportChart = chart["export"];
+           exportChart.call(chart, 'Excel', 
+                                      'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport');
+        }
+
+</script>
+</body>
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Exporting_images/Exporting_img1.png" %}
+{% include image.html url="/js/Chart/Exporting_images/Exporting_img1.png" Caption="Export chart to excel page"%}
 
-### Multiple Export
-
- Exporting to excel provide supports to export multiple chart on the page. When third argument for **export** method is true, then all the chart in the page get exported to excel. MultipleExportType.AppendToSheet append all the chart in active sheet and MultipleExportType.NewSheet creates a new sheet in excel for exporting each chart.
+6.Currently, the chart data can be exported at server-side only through the helper functions in the “.Net”. So to use exporting in your projects, it is required to create a server with any of the following.
  
- {% highlight js %}  
-    $("#container1").ejChart();
-            
-    $("#container2").ejChart();
-              
-         
-    function downloadExcel() {
-              var chart = $("#container").ejChart("instance");
-              chart.export('Excel', 'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport', true);
-    }
-        
+	i). ASP.Net MVC Controller
+    
+    ii). ASP.Net Webforms
+    
+    iii). WebAPI
+    
+    iv). WCF Service
+
+
+## Multiple Chart Exporting
+
+EjChart supports exporting more than one charts in a page, with the *third* argument for **export** method.
+
+N> Refer to the MultipleExportType.AppendToSheet, MultipleExportType.NewSheet. 
+
+{% highlight js %}
+
+       //Render Chart1
+       $("#container1").ejChart();
+
+       //Render Chart2
+        $("#container2").ejChart();
+
+       //Export multiple chart to excel
+        function downloadExcel() {
+            var chart = $("#container1").ejChart("instance");
+            chart.export('Excel', 
+                      'http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport', true);
+        }
+
+
+{% endhighlight %}
+
+
+Export multiple chart to excel at server-side
+
+{% highlight csharp %}
+
     public class JSChartExportController : ApiController
-    {
+      {
          
         [System.Web.Http.ActionName("ExcelExport")]
         [AcceptVerbs("POST")]
@@ -175,23 +200,21 @@ Also since JS Chart is a Client-side, it does not have **mapper** property for c
                         
                             if (initial)
                             {
-                                book = exp.Export((obj as ChartProperties), (IEnumerable)data, "Export1.xlsx", ExcelVersion.Excel2010, true, null, null);
+                                book = exp.Export((obj as ChartProperties), (IEnumerable)data, "Export1.xlsx", 
+                                                    ExcelVersion.Excel2010, true, null, null);
                                 initial = false;
                             }                            
                             else
                             {
-                                exp.Export((obj as ChartProperties), (IEnumerable)data, "Export.xlsx", ExcelVersion.Excel2010, false, book, MultipleExportType.NewSheet, null, null);
+                                exp.Export((obj as ChartProperties), (IEnumerable)data, "Export.xlsx", 
+                               ExcelVersion.Excel2010, false, book, MultipleExportType.NewSheet, null, null);
                             }                     
-                    }s
+                    }
                 }
             }      
        }
 
-        
-
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Exporting_images/Exporting_img2.png" %}
- 
-
+{% include image.html url="/js/Chart/Exporting_images/Exporting_img2.png" Caption="Export multiple chart to excel page"%}

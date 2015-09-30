@@ -9,51 +9,83 @@ documentation: ug
 
 # Chart Dimensions
 
-In this section you can learn how to change the **Chart****dimensions**. You can change the **Chart** height and width in terms of pixels and percentage with the **size** property. When size is specified, the Chart remains to that specific size irrespective of the size of the container. You can always resize the **Chart** when the browser or **Chart** container is resized by setting **canResize** property to **true**, where the **Chart** adapts to the changes in size of the container. By default, **Chart** height will be 450px and **Chart** width takes the container width as default value.
+You can set the size of the chart directly on the chart or to the container of the chart. By default, if you don’t specify the size, it takes 450px as the height and window size as its width. 
 
-## Setting dimension in pixel values
+## Setting size for container
 
-You can specify the width and height in pixels to change the dimension of the Chart. 
+You can customize the chart dimension by setting the width and height for the container element. 
 
-### Setting size
+{% highlight html %}
+
+
+    <body>
+       <div id=”container” style=”width:820px; height:500px;”></div>
+         <script type="text/javascript" language="javascript ">
+
+            $(function () {
+                $("#container").ejChart();
+            });
+         </script>
+    </body>
+
+
+{% endhighlight %}
+
+
+## Setting size in pixels
+
+You can also set the chart dimension by using the **size** property of the chart. 
 
 {% highlight js %}
 
 
-    $("#chartcontainer").ejChart({
-            size: { width: "800", height: "600" },
-            canResize: true,
+    $("#container").ejChart({
+         // ...
+    
+         //Set size to chart container
+         size: { width: '600', height: '450' },
     });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img1.png" Caption="Chart dimension in pixels"%}
 
+## Setting size relative to the container size
 
-In the above code, the width is set as 800px and height as 600px that displays the following Chart with the dimension 800*600.
-
-{% include image.html url="/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img1.png" %}
-
-## Setting dimension in percentage values
-
-You can also set the width and height of the **Chart** in percentage. The Chart gets its dimension with respect to its container size.
-
-### Setting size in percentage
+You can specify the chart size in percentage by using the **size** property. The chart gets its dimension with respect to its container.
 
 {% highlight html %}
 
-    <div id="chartContainer" style="width: 700px; height: 500px; border-color: #ff0000; border-style: solid;">
-    </div>
+    <body>
+    <div id="container" style="width:700px; height:500px"></div>
+   
+      <script>
+         $("#container").ejChart({
+              // ...
+              //Set size in percentage to chart container
+              size: { width: '80%', height: '90%' },
+           });
+      </script>
+    </body>
+
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img2.png" Caption="Chart in percentage"%}
+
+
+## Responsive chart
+
+To resize the Chart when the browser or the chart container is resized, set the **canResize** property to **true**, where the chart adapts to the changes in size of the container.
+
 {% highlight js %}
 
-        $("#chartcontainer").ejChart({
-            size: { width: "80%", height: "90%" },
-        });
-        
-{% endhighlight %}  
+      $("#container").ejChart({
+           // ...
+           //Enable canResize to change the chart size dynamically.
+           canResize: true           
+           // ...
+      });
 
-{% include image.html url="/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img2.png" %}
-
+{% endhighlight %} 
