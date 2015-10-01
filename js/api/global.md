@@ -2061,6 +2061,71 @@ Default{% endhighlight %}</td>
 
 
 
+### ConnectorLineType<span class="type-signature type string">string</span>
+{:#members:connectorlinetype}
+
+
+
+
+
+
+
+
+Enum for connector line in Chart data label
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Line{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">line</td>
+<td class="description last">Line will be used to connect datalabel and datapoint</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Bezier{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">bezier</td>
+<td class="description last">Bezier curve will be used to connect datalabel and datapoint</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### ContainerType<span class="type-signature type string">string</span>
 {:#members:containertype}
 
@@ -2252,6 +2317,78 @@ Both{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="default">both</td>
 <td class="description last">Enum for displaying both text and image content type</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### CoordinateUnit<span class="type-signature type string">string</span>
+{:#members:coordinateunit}
+
+
+
+
+
+
+
+
+Enum for coordinate unit in Chart annotation
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+None{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">none</td>
+<td class="description last">Set none as coordinate unit. Annotations will be placed at a location based on horizontal and vertical alignments</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Pixels{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">pixels</td>
+<td class="description last">Set pixel as coordinate unit.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Points{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">Points</td>
+<td class="description last">Set points as coordinate unit.</td>
 </tr>
 </tbody>
 </table>
@@ -3123,6 +3260,71 @@ Hide{% endhighlight %}</td>
 
 
 Widget element will be automatically set in this
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### ExportType<span class="type-signature type string">string</span>
+{:#members:exporttype}
+
+
+
+
+
+
+
+
+Enum for the types of exporting in Chart
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Image{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">image</td>
+<td class="description last">Specifies Chart should be exported as an image</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Excel{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">excel</td>
+<td class="description last">Specifies Chart should be exported in excel</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -6083,6 +6285,78 @@ Fill{% endhighlight %}</td>
 
 
 
+Enum for Horizontal Alignment of elements in Chart
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Left{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">left</td>
+<td class="description last">Set horizontal alignment as left</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Middle{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">middle</td>
+<td class="description last">Set horizontal alignment as middle</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Right{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">right</td>
+<td class="description last">Set horizontal alignment as right</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### HorizontalAlignment<span class="type-signature type string">string</span>
+{:#members:horizontalalignment}
+
+
+
+
+
+
+
+
 Enum for Horizontal Alignment of elements in diagram
 
 
@@ -6127,6 +6401,78 @@ Right{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="default">right</td>
 <td class="description last">Used to align text horizontally on right side of node/connector</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### HorizontalTextAlignment<span class="type-signature type string">string</span>
+{:#members:horizontaltextalignment}
+
+
+
+
+
+
+
+
+Enum for Horizontal Alignment of text in Chart
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Near{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">near</td>
+<td class="description last">Sets horizontal alignment of text to near</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Center{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">center</td>
+<td class="description last">Sets horizontal alignment of text to center</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Far{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">far</td>
+<td class="description last">Sets horizontal alignment of text to far</td>
 </tr>
 </tbody>
 </table>
@@ -6734,6 +7080,127 @@ Text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="default">text</td>
 <td class="description last">To set the IndicatorType text.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### IndicatorsType<span class="type-signature type string">string</span>
+{:#members:indicatorstype}
+
+
+
+
+
+
+
+
+Enum for type of indicator in Chart
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+RSI{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">RSI</td>
+<td class="description last">Set indicator type as RSI.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Momentum{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">Momentum</td>
+<td class="description last">Set indicator type as Momentum.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Bollingerband{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">Bollingerband</td>
+<td class="description last">Set indicator type as Bollingerband.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Accumulationdistribution{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">Accumulationdistribution</td>
+<td class="description last">Set indicator type as Accumulationdistribution.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+EMA{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">EMA</td>
+<td class="description last">Set indicator type as EMA.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+SMA{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">SMA</td>
+<td class="description last">Set indicator type as SMA.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Stochastic{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">Stochastic</td>
+<td class="description last">Set indicator type as Stochastic.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+ATR{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">ATR</td>
+<td class="description last">Set indicator type as ATR.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+MACD{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">MACD</td>
+<td class="description last">Set indicator type as MACD.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+TMA{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">TMA</td>
+<td class="description last">Set indicator type as TMA.</td>
 </tr>
 </tbody>
 </table>
@@ -8329,6 +8796,78 @@ Carousel{% endhighlight %}</td>
 
 
 
+### MACDType<span class="type-signature type string">string</span>
+{:#members:macdtype}
+
+
+
+
+
+
+
+
+Enum for MACDType
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Line{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">line</td>
+<td class="description last">Enum for MACD line</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Histogram{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">histogram</td>
+<td class="description last">Enum for MACD Histogram</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Both{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">both</td>
+<td class="description last">Enum for both MACD line and histogram</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### MarkerType<span class="type-signature type string">string</span>
 {:#members:markertype}
 
@@ -8581,6 +9120,71 @@ RoundedRectangle{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="default">roundedrectangle</td>
 <td class="description last">To set the MarkerType roundedrectangle.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Mode<span class="type-signature type string">string</span>
+{:#members:mode}
+
+
+
+
+
+
+
+
+Enum for highlighting and selection mode in Chart
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Series{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">series</td>
+<td class="description last">Specifies entire series should be highlighted or selected</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Point{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">point</td>
+<td class="description last">Specifies data point should be highlighted or selected</td>
 </tr>
 </tbody>
 </table>
@@ -9944,6 +10548,204 @@ Scrollable{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="default">scrollable</td>
 <td class="description last">used to enable scrollable pager</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Pattern<span class="type-signature type string">string</span>
+{:#members:pattern}
+
+
+
+
+
+
+
+
+Enum for highlighting or selecting patterns in Chart 
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+None{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">none</td>
+<td class="description last">Sets none as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Chessboard{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">chessboard</td>
+<td class="description last">Sets chess board as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Crosshatch{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">crosshatch</td>
+<td class="description last">Sets cross hatch as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Dots{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">dots</td>
+<td class="description last">Set dots as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Pacman{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">pacman</td>
+<td class="description last">Sets pacman as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+DiagonalBackward{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">diagonalbackward</td>
+<td class="description last">Sets diagonal backward as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+DiagonalForward{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">crosshatch</td>
+<td class="description last">Sets diagonal forward as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Grid{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">grid</td>
+<td class="description last">Set grid as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Turquoise{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">turquoise</td>
+<td class="description last">Sets turquoise as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Star{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">star</td>
+<td class="description last">Sets star as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Triangle{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">triangle</td>
+<td class="description last">Sets triangle as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Circle{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">circle</td>
+<td class="description last">Sets circle as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Tile{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">tile</td>
+<td class="description last">Sets tile as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+HorizontalDash{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">horizontaldash</td>
+<td class="description last">Sets horizontal dash as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+VerticalDash{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">verticaldash</td>
+<td class="description last">Sets vertical dash as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Rectangle{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">rectangle</td>
+<td class="description last">Set rectangle as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Box{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">box</td>
+<td class="description last">Sets box as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+VerticalStripe{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">tile</td>
+<td class="description last">Sets vertical stripe as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+HorizontalStripe{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">horizontalstripe</td>
+<td class="description last">Sets horizontal stripe as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Bubble{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">bubble</td>
+<td class="description last">Sets bubble as highlighting or selecting pattern</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Custom{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">custom</td>
+<td class="description last">Set custom as highlighting or selecting pattern. The user defined pattern provided in custom patter property will be used</td>
 </tr>
 </tbody>
 </table>
@@ -11361,6 +12163,71 @@ PageSettings{% endhighlight %}</td>
 <td class="type"><span class="param-type"><a href="global.html#Region">Region</a></span></td>
 <td class="default">pageSettings</td>
 <td class="description last">specifies the region based on the page settings</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Region<span class="type-signature type string">string</span>
+{:#members:region}
+
+
+
+
+
+
+
+
+Enum for placing annotation in Chart
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Chart{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">chart</td>
+<td class="description last">Specifies annotation placement should be based on Chart location</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Series{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">series</td>
+<td class="description last">Specifies annotation placement should be based on chart area</td>
 </tr>
 </tbody>
 </table>
@@ -13205,6 +14072,92 @@ qrBarcode{% endhighlight %}</td>
 
 
 
+### TrendlinesType<span class="type-signature type string">string</span>
+{:#members:trendlinestype}
+
+
+
+
+
+
+
+
+Enum for type of trendline in Chart.
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Linear{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">linear</td>
+<td class="description last">Sets linear as trendline type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Exponential{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">exponential</td>
+<td class="description last">Sets exponential as trendline type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Logarithmic{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">logarithmic</td>
+<td class="description last">Sets logarithmic as trendline type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Power{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">power</td>
+<td class="description last">Sets power as trendline type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Polynomial{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">polynomial</td>
+<td class="description last">Sets polynomial as trendline type.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### TextAlign<span class="type-signature type string">string</span>
 {:#members:textalign}
 
@@ -13691,6 +14644,71 @@ WrapWithOverflow{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="default">wrapwithoverflow</td>
 <td class="description last">Enables Line-break at normal word break points with longer word overflows</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### TickLinesPosition<span class="type-signature type string">string</span>
+{:#members:ticklinesposition}
+
+
+
+
+
+
+
+
+Enum for tick line position in Chart
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Inside{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">inside</td>
+<td class="description last">Tick lines will be placed inside</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Outside{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">outside</td>
+<td class="description last">Tick lines will be placed outside</td>
 </tr>
 </tbody>
 </table>
@@ -15650,6 +16668,78 @@ Logarithmic{% endhighlight %}</td>
 
 
 
+Enum for Vertical Alignment of elements in Chart
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Top{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">top</td>
+<td class="description last">Set vertical alignment as top</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Middle{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">center</td>
+<td class="description last">Set vertical alignment as middle</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Bottom{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">bottom</td>
+<td class="description last">Set vertical alignment as bottom</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### VerticalAlignment<span class="type-signature type string">string</span>
+{:#members:verticalalignment}
+
+
+
+
+
+
+
+
 Enum for Vertical Alignment of elements in diagram
 
 
@@ -15694,6 +16784,78 @@ Bottom{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="default">bottom</td>
 <td class="description last">Used to align text Vertically on bottom of node/connector</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### VerticalTextAlignment<span class="type-signature type string">string</span>
+{:#members:verticaltextalignment}
+
+
+
+
+
+
+
+
+Enum for Vertical Alignment of text in Chart
+
+
+
+
+
+
+#### Properties:
+{:#members:properties:}
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Near{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">near</td>
+<td class="description last">Sets vertical alignment of text to near</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Center{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">center</td>
+<td class="description last">Sets vertical alignment of text to center</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+Far{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="default">far</td>
+<td class="description last">Sets vertical alignment of text to far</td>
 </tr>
 </tbody>
 </table>
@@ -15758,7 +16920,7 @@ Over{% endhighlight %}</td>
 Behind{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="default">behind</td>
-<td class="description last">Support for changing the labelPosition to behind.</td>
+<td class="description last">Support for changing the zIndex to behind.</td>
 </tr>
 </tbody>
 </table>

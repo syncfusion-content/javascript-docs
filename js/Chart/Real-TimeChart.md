@@ -1,0 +1,52 @@
+---
+layout: post
+title: Real-Time Chart 
+description: real-time Chart 
+platform: js
+control: Chart
+documentation: ug
+---
+
+# Real-Time Chart 
+
+Chart can be updated dynamically with real time data. Whenever you add a point or remove a point from the dataSource, you have to call **redraw** method to request chart to redraw its content.    
+
+N> You can get the chart **instance** using instance method.
+
+{% highlight js %}
+
+     //Rendering empty Chart without data
+     $("#chartcontainer").ejChart({
+            
+             series: [ 
+                     {  points: [ ] }
+              ], 
+             // ...
+       });
+
+    //Using set interval to update chart dynamically
+    window.setInterval(updateChart, 200);
+
+    //Function that updates chart dynamically
+    function updateChart(){
+
+        //Creating chart instance
+        var chart =  $("#chartcontainer").ejChart("instance");      
+        
+        if (chart.model.series[0].points.length > 10)
+               chart.model.series[0].points.splice(0, 1);
+        
+        var point = chart.model.series[0].points;
+        var xValue = point.length > 0 ? point[point.length - 1].x + 1 : 1;
+        point[point.length] = { x:  xValue, y: getRandomNum( 1000 ) }
+                
+        //Update Chart dynamically using redraw option
+        //chart.redraw() can also be used here instead of redraw option
+        $("#chartcontainer").ejChart("redraw");      
+       }
+
+{% endhighlight %}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/live) here to view the online demo sample for real-time Chart.
+
+

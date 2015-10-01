@@ -9,25 +9,26 @@ documentation: ug
 
 # User Interactions
 
-When you deal with a large amount of data, you require interactions like **tooltip**, **crosshair** etc that allows you to track data changes and provide interaction capabilities.
+## Tooltip
 
-## ToolTip
+### Enable tooltip for data point
 
-**EjChart** provides you an option **tooltip** to display a pop up with the point values, on mouse move over the appropriate point. **EjChart** also allows you to customize its border color, border width, opacity, fill color, animation, duration, rx, ry, font size, font family, font style, font color, font weight, etc. You can change the **tooltip** properties for each series in Chart to change its appearance. When you require the same **tooltip** for all the series in Chart, you can specify the **tooltip** in **commonSeriesOptions**. You can also modify the default template for the **tooltip**using template property.
-
-### Tooltip visibility
-
-By default the visibility of **tooltip** is set to **false**, but you can change the visibility. When format or template is not specified for **tooltip**, then it displays the x and y values of the point.
+Tooltip for data points can be enabled using **visible** option of **tooltip** in series.
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
-            //  . . . 
-            commonSeriesOptions: {
-                tooltip: { visible: true }
-                // . . .
-            }
+           
+            // ...           
+            series: [{
+                  
+                  //...
+                  //Enable tooltip for the series
+                  tooltip: {visible: true}	
+              }],
+           // ...
+           
         });
 
 
@@ -35,265 +36,242 @@ By default the visibility of **tooltip** is set to **false**, but you can change
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img1.png" %}
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img1.png" Caption="Chart with tooltip"%}
 
-### Tooltip format
+### Formatting the tooltip 
 
-**EjChart** provides you support to change the format of the text displayed in the tooltip that allows you to use the data point information in desired format.
+Tooltip displays data specified by the **format** option of tooltip. Default value of format option is * **#point.x# : #point.y#** *. Here, * **#point.x#** * is the placeholder for x value of the point and * **#point.y#** * is the placeholder for y value of the point.
 
-For single y value, Chart like line series, you can form a format as follows.
-
-format: " **#point.x#****#series.name#  #point.y#**%"
-
-For multiple y values, in financial series, you can form a format as follows.
-
-format: " **#point.x# #series.name# #point.high# #point.low# #point.open# #point.close#** %"
+You can also use * **#series.<optionname>#** * as placeholder to display the value of an option in corresponding series and use * **#point.<optionname>#** * as place holder to display the value of an option in the corresponding point.
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
-            // . . .
-            commonSeriesOptions: {
-                tooltip: {
-                    visible: true, format: "In #point.x# #series.name# produced #point.y#%"
-                },
-                // . . .
-            }
+            // ...
+            series: [{
+                 tooltip: {
+                       //Displaying tooltip in a format
+                       format: "#series.name# <br/> #point.x# : #point.y#  (g/kWh)"	
+                       // ...
+                 } 
+              }],
+            // ...
         });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img2.png" Caption="Chart with formatted tooltip"%}
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img2.png" %}
+### Tooltip Template
 
-### Customize the tooltip border 
+HTML elements can be displayed in tooltip using **template** option of tooltip. The template option takes the value of id attribute of the HTML element. You can use * **#point.x#** * and * **#point.y#** * as place holders in the HTML element to display the x and y values of the corresponding data point. 
 
-EjChart provides you options to customize the border of the tooltip. You can change the width and color of the border. By default the border width is set to 1.
+You can also use * **#series.<optionname>#** * as place holder to display the value of an option in corresponding series of the tooltip and use * **#point.<optionname>#** * as place holder to display the value of an option in the corresponding point for which the tooltip is displayed.
+  
 
-{% highlight js %}
+{% highlight html %}
 
-
-        $("#chartcontainer").ejChart({
-            // . . .
-            commonSeriesOptions: {
-                tooltip: {
-                    visible: true, border: { width: 1, color: "#000000" }
-                },
-                // . . .
-            }
-        });
-
-
-{% endhighlight %}
-
-
-
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img3.png" %}
-
-### Changing the tooltip fill color
-
-You can modify the fill color of **tooltip**. By default the **tooltip** renders with the appropriate series color as background color.
-
-{% highlight js %}
-
-
-        $("#chartcontainer").ejChart({
-            // . . 
-            commonSeriesOptions: {
-                tooltip: { visible: true, fill: "#000000" },
-                // . . 
-            }
-        });
-
-
-{% endhighlight %}
-
-
-
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img4.png" %}
-
-### Customize the tooltip font
-
-**EjChart** provides you support to customize the text display in the **tooltip**. You can change font family, font color, font style, font weight. By default **“Segoe UI”** font family is set to **tooltip** text.
-
-{% highlight js %}
-
-
-       $("#chartcontainer").ejChart({
-            // . . .
-            commonSeriesOptions: {
-                tooltip: {
-                    visible: true,
-                    font: {
-                        fontFamily: "Algerian", fontWeight: "lighter", fontStyle: "Italic", size: "14px", color: "#000000"
-                    }
-                },
-                // . . .
-            }
-        });
-
-
-{% endhighlight %}
-
-
-
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img5.png" %}
-
-### Tooltip Animation
-
-**EjChart** provides you animation support for **tooltip** template. You can enable this by setting **“enableAnimation”** to **true**. The **“duration”** property in tooltip specificies the time taken to animate the **tooltip**, by default the duration is set to “500ms”.
-
-{% highlight js %}
-
-
-        $("#chartcontainer").ejChart({
-            // . . 
-            commonSeriesOptions: {
-                tooltip: {
-                    visible: true, template: 'Tooltip', enableAnimation: true, duaration: "600ms"
+<body>
+   <div id="chartcontainer"></div>
+    <!-- Create Tooltip template here -->
+    <div id="Tooltip" style="display: none;">
+              <div id="icon"> <div id="eficon"> </div>  </div>
+        <div id="value">
+            <div>
+               <label id="efpercentage">&nbsp;#point.y#% </label>
+               <label id="ef">Efficiency </label>
+            </div>
+        </div>
+    </div>
+<script>
+   $("#chartcontainer").ejChart({   
+     	// ...             
+	    series: [{
+              tooltip: {
+                 //Set template id to tooltip template
+                 template: 'Tooltip',	
+                 // ...
                 }
-                // . . .
-            }
-        });
-
+          }],
+	    // ...             
+    });
+    
+   </script>
+</body>
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img3.png" Caption="Chart with tooltip template"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/line) here to view the Tooltip template online demo sample.
 
 
-### Understanding the rx and ry in tooltip
+#### Tooltip template animation
 
-**EjChart** has **rx** and **ry** property in **tooltip** to customize the corners radius of the **tooltip**.
+You can enable animation by setting **enableAnimation** to true. Tooltip will be animated when moving mouse from one data point to another point. The **duration** property in tooltip specifies the time taken to animate the tooltip, by default the duration is set to **"500ms"**.
+
+N> Tooltip is animated only if the template is specified for tooltip.
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
-            // . . .
-            commonSeriesOptions: {
-                tooltip: { visible: true, rx: "50", ry: "50" }
-                // . . .                                
-            }
+            
+            // ...
+            series: [{
+                  tooltip: {
+                    //Enable tooltip template animation and set duration time
+                    enableAnimation: true, duaration: "1000ms",                                      
+                    // ...
+                 }
+             }],
+             
+            // ...
         });
 
 
 {% endhighlight %}
 
 
+### Customizing the appearance of tooltip   
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img6.png" %}
+The **fill** and **border** options are used to customize the background color and border of the tooltip respectively. The **font** option in tooltip is used to customize the font of tooltip text.
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+            // ...
+            series: [{
+                 tooltip: {
+                       //Change tooltip color and border
+                       fill: '#FF9933',
+                       border: { width: 1, color: "#993300" }	
+                       // ...
+                 } 
+              }],
+            // ...
+        });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img4.png" Caption="Customizing the appearance of tooltip "%}
+
+
+#### Tooltip with rounded corners
+
+The options **rx** and **ry** are used to customize the corner radius of the tooltip rectangle.
+
+{% highlight js %}
+
+
+        $("#chartcontainer").ejChart({
+           
+	        // ...             
+	        series: [{
+                 tooltip: {
+                    //Customize the corner radius of the tooltip rectangle.
+                    rx: "50", ry: "50"                            
+                    // ...
+                 }
+              }],
+	       // ... 
+        });
+
+
+{% endhighlight %}
+
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img5.png" Caption="Tooltip with rounded corners"%}
+
+
 
 ## Zooming and Panning
 
-**EjChart** provides you an option to zoom the Chart. Using this option you can clearly view the points and data in Chart. Zooming is done by dragging the mouse on the Chart or by scrolling the mouse wheel. During runtime, you can simply select the range you want to zoom with the mouse and the Chart zooms-in accordingly.
+### Enable Zooming
 
-### Enable zooming
+There are two ways you can zoom the chart,
 
-By default zooming is not enabled. You can enable it using the “enable” option in “zooming” property.
+* When **zooming.enable** option is set to true, you can zoom the chart using rubber band selection.
 
-{% highlight js %}
-
-
-        $("#chartcontainer").ejChart({
-            //  . . . 
-            zooming: { enable: true }
-            // . . .
-        });
-
-
-{% endhighlight %}
-
-
-
-**Before zooming**
-
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img7.png" %}
-
-**Selection for zooming**
-
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img8.png" %}
-
-**After zooming**
-
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img9.png" %}
-
-### Programmatic Zooming
-
-Programmatically the Chart can be zoomed using **zoomPosition** and **zoomFactor** properties.Both the properties are usually between 0 and 1. When you set the **zoomFactor** to 1, the Chart isn't zoomed. When you set it to 0.5, the Chart is double its usual size. The **zoomPosition** is used to set the starting position of the zoomed axis. For example, when both the properties are set to 0.5 for horizontal axis then the Chart is zoomed to double its size and the view port of the horizontal axis start from half of the axis. 
-
-### Enable zoom via mouse wheel
-
-**EjChart** provides you support to zoom the Chart by scrolling the mouse wheel. By default it is not enabled, you can enable it with the **enableMouseWheel** property in zooming.
+* When **zooming.enableMouseWheel** option is set to true, you can zoom the chart on mouse wheel scrolling. 
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
-            // . . .
-            zooming: { enable: true, enableMouseWheel : true } 
-            // . . .
+             //  ...             
+	         //Enable zooming in chart
+             zooming: {enable: true}
+             // ...
         });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img6.png" Caption="Zoomed chart"%}
 
 
-### Types of zooming 
+After zooming the chart, a zooming toolbar will appear with options to *zoom*, *pan* and *reset*. Selecting the Pan option will allow to pan the chart and selecting the Reset option will reset the zoomed chart.
 
-**EjChart** supports three types of zooming. You can zoom only the x axis or can zoom only the y axis or can zoom both x and y axis respectively. This is achieved using **type** property in zooming.
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img7.png" Caption="Select panning option from zoomkit"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/zoomingandpanning) here to view the Zooming and Panning online demo sample.
+
+
+### Types of zooming
+
+The **type** option in zooming specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of **type** is **"xy"** (both axis).
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
-            // . . .
-            zooming: { enable: true, enableMouseWheel: true, type: 'y' }
-            //. . .
+             //  ...             
+	         zooming: {
+                    enable: true,
+                    //Enable horizontal zooming
+                    type: 'x'
+                } 
+             // ...
         });
 
 
 {% endhighlight %}
 
+For zooming chart programmatically refer the online [KB](programmatic zooming).
 
+## Crosshair
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img10.png" %}
+Crosshair is used to view the value of an axis at mouse position or touch contact point. 
 
-## Crosshair and Trackball
+### Enable crosshair and crosshair label
 
-To enable tracking of data points in a Chart, you can use **Crosshair** and **Trackball**.
+Crosshair can be enabled using the **visible** option in **crosshair**. Crosshair label for an axis can be enabled by using the **visible** option of **crosshairLabel** in the corresponding axis.
 
-### Crosshair
-
-In order to view the value at mouse position or touch contact point, you can use the **crosshair** property. You can customize the appearance further using the **crosshair.line** properties. 
-
-To display the label containing the relevant data point value information, enable the **crosshairLabel.visible** property in the corresponding axis of the Chart. For example, to display the x-axis label you can set the **visible** property in **crosshairLabel** of the PrimaryAxis to **true**. You can customize **labels** and **tooltip** rect using font, fill and border properties in **crosshairLabel.**
-
-The following code example illustrates you on how to enable the **crosshair**.
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
             // ...             
-            primaryXAxis:
-            {
+            primaryXAxis:{
+                //Enable crosshairLabel to X-Axis
                 crosshairLabel: { visible: true },
             },
 
-            primaryYAxis:
-            {
+            primaryYAxis:{
+                //Enable crosshairLabel to Y-Axis
                 crosshairLabel: { visible: true },
             },
-
-            crosshair:
-            {
-                visible: true,
-                type: 'crosshair',
-                line: { width: 2, color: 'black' }
+           
+           //Initializing Crosshair
+            crosshair:{
+                visible: true
             },
             // ...             
 
@@ -302,112 +280,681 @@ The following code example illustrates you on how to enable the **crosshair**.
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img8.png" Caption="Chart with crosshair"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/crosshair) here to view the Crosshair online demo sample.
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img11.png" %}
+### Customizing crosshair line and crosshair label
 
-### Trackball
-
-In order to track a data point closer to the mouse position or touch contact point, you can use trackball. You can customize the track ball appearance using the marker and line property in the crosshair. To display a label containing the relevant data point value information, you can enable the crosshairLabel.visible property in the corresponding axis of the Chart. For example, to display the x-axis label, set the visible property of crosshairLabel in the PrimaryAxis to true.
+The **fill** and **border** options of **crosshairLabel** is used to customize the background color and border of the crosshair label respectively. Color and width of the crosshair line can be customized using the **line** option in **crosshair**.
 
 {% highlight js %}
 
 
         $("#chartcontainer").ejChart({
-            // ...             
-            primaryXAxis:
-            {
-                crosshairLabel: { visible: true, fill: '#E94649' },
-            },
-            crosshair:
-            {
-                visible: true,
-                type: 'trackball',
-                line: { width: 2, color: 'blue' },
-
-            },
-            // ...             
-
+             // ...             
+             primaryXAxis: {
+                     //...
+                     crosshairLabel: {
+                          visible: true,
+                          //Customizing the crosshair label background color and border
+                          fill: "red", 
+                          border: { color: "green", width: 2 }
+                      }
+              },
+               
+              crosshair: {
+                   visible: true,
+                   //Customizing the crosshair line
+                   line: { color: 'gray', width: 2 },
+              } 
+            // ...
         });
 
 
 {% endhighlight %}
 
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img9.png" Caption="Customize crosshair labels and line"%}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/crosshair) here to view the Crosshair online demo sample.
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img12.png" %}
 
-## Drill Down
+## Trackball
 
-**Drill Down** allows you to view the data’s in depth, for example yearly data to quarterly, quarterly to monthly or from categorical data to individual item. The **drill down** support is achieved using the **pointRegionClick** event. On clicking points in Chart series, **pointRegionClick** event gets triggered, using this event you can refresh your Chart by assigning new data to the Chart series through set model. In the following example a pie Chart with two points are used, when you click on the pie slice, **pointRegionClick** event gets triggered. Using this event and set model option, the Chart is refreshed with new data based on the point index.
+Trackball is used to track a data point close to the mouse position or touch contact point. Trackball marker indicates the closest point and trackball tooltip displays the information about the point.
+
+### Enable Trackball
+
+Trackball can be enabled by setting **visible** option of crosshair to *true* and then set *type* as **"trackball"**. Default value of type is **"crosshair"**.
 
 {% highlight js %}
 
 
-        $("#chartcontainer").ejChart({   
-            // ...             
-            series: [{
-                points: [{ x: "SUV", y: 25, text: '25%' }, 
-                         { x: "Car", y: 37, text: '37%' }],
-                name: 'Market'                            
-            }
-            ],
-            pointRegionClick: 'onclick',
-            // ...           
-        });
-
-       function onclick(sender) {
-            var pointIndex = sender.Data.Region.Region.PointIndex
-            if (sender.model.series[0].name == "Market")
-                $("#container").ejChart("option", { "drilldown": pieSeries(pointIndex) });
-        }
-
-        function pieSeries(index) {
-            if (index == 0) {
-                return {
-                    title: { text: 'Automobile Sales in the SUV segment' },
-                    series: [{
-                        points: [{ x: "Toyota", y: 8, text: 'Toyota 8%' },
-                                 { x: "Ford", y: 12, text: 'Ford 12%' },
-                                 { x: "GM", y: 17, text: 'GM 17%' }
-                        ],
-                        name: 'SUV-Sale', labelPosition: 'outside',
-                        marker: {
-                            dataLabel: { visible: true }
-                        }
-                    }],
-
-                    legend: { visible: false }
-                };
-            }
-            else if (index == 1) {
-                return {
-                    title: { text: 'Automobile Sales in the Car segment' },
-                    series: [{
-                        points: [{ x: "Toyota", y: 7, text: 'Toyota 7%' },
-                                 { x: "Chrysler", y: 12, text: 'Chrysler 12%' },
-                                 { x: "Nissan", y: 9, text: 'Nissan 9%' }
-                        ],
-
-                        name: 'Car-Sale', labelPosition: 'outside',
-                        marker: {
-                            dataLabel: { visible: true }
-                        }
-                    }],
-                    legend: { visible: false }
-
-                };
-            }
-        }
+       $("#chartcontainer").ejChart({   
+	
+             crosshair: {
+                   visible: true,
+                   //Change crosshair type to trackball
+                   type: 'trackball',
+                  } 
+           //......
+           });
 
 
 {% endhighlight %}
 
 
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img10.png" Caption="Chart with trackball"%}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img13.png" %}
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/trackball) here to view the Trackball online demo sample.
 
-Details about the first segment/slice in pie Chart:
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img14.png" %}
+#### Customizing trackball marker and trackball line
+
+Shape and size of the trackball Shape and size of the trackball marker can be customized using the **shape** and **size** options of crosshair marker. Color and width of the trackball line can be customized using the **line** option in crosshair.
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+             // ...
+             crosshair: {
+                  visible: true,
+
+                  //Customize the trackball line color and width
+                  line: { color: '#800000', width: 2 },
+
+                  //Customize the trackball marker shape size and visibility
+                  marker: {
+                       shape: 'pentagon',
+                       size: {
+                            height: 9, width: 9
+                         },
+                       //Enable/disable trackball marker
+                       visible: true
+                    }     
+                } 
+              // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img11.png" Caption="Customize trackball line and marker"%}
+
+
+### Formatting Trackball tooltip
+
+X and Y values displayed in trackball tooltip are formatted based on its axis **labelFormat**.  
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              primaryXAxis: {
+                   labelFormat: 'MMM, yyyy',
+                   //.............
+               },
+              
+              primaryYAxis: {
+                    labelFormat: '{value}K',
+                    //.............
+               },
+               
+               crosshair: {
+                    visible: true,
+                    type: 'trackball',                           
+                }
+                  // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img12.png" Caption="Change trackball tooltip format"%}
+
+To view the data representation depth in chart by clicking on the data point, refer [Drilldown](drilldown) KB.
+
+
+## Highlight
+
+EjChart provides highlighting support for series and data points on mouse hover. To enable the highlighting option, set **enable** property as *true* in **highlightSettings** of series.
+
+N> When hovering mouse on the data points, the corresponding series legend also will be highlighted.
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                    highlightSettings: {
+                        
+                         // enable the highlight settings
+                         enable: true,
+                     },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/selection) here to view the highlight and selections online demo sample.
+
+
+### Highlight Mode
+
+You can set three different highlight mode for highlighting data point and series using **mode** property of **highlightSettings**.
+
+* Series
+* Points
+* Cluster
+
+**Series mode**
+
+To highlight all the data points of the specified series, you can set **“series”** value to **mode** option in highlighSettings. 
+
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                    highlightSettings: {
+                        enable: true, 
+                        
+                        //Change highlight mode
+                        mode: 'series'
+
+                     },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img13.png" Caption="Highlighting chart series"%}
+
+
+**Point mode**
+
+For highlighting a single point you can set **“point”** value to **mode** option.
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                    highlightSettings: {
+                        enable: true, 
+                        
+                        //Change highlight mode
+                        mode: 'point'
+
+                     },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img14.png" Caption="Highlighting chart point"%}
+
+
+**Cluster mode**
+
+To highlight the points that corresponds to same index in all the series, set **“cluster”** value to **mode** option.
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                    highlightSettings: {
+                        enable: true, 
+                        
+                        //Change highlight mode
+                        mode: 'cluster'
+
+                     },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img15.png" Caption="Highlighting chart in cluster mode"%}
+
+
+### Customizing highlight styles
+
+To customize the highlighted series, use **color**, **border** and **opacity** option in highlightSettings.
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                    highlightSettings: {
+                        enable: true, 
+                        
+                        //Customizing 
+                        border: { width: '1.5', color: "red" },
+                        opacity: 0.5, color: "green"
+                     },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img16.png" Caption="Customizing highlight styles"%}
+
+
+### Patterns to highlight
+
+EjChart provides pattern support for highlighting the data by setting the value to **pattern** property of highlightSettings. The different types of highlight patterns are listed out below here.
+
+1.	chessboard
+2.	crosshatch
+3.	dots
+4.	packman
+5.	grid
+6.	turquoise
+7.	star
+8.	triangle
+9.	circle
+10.	tile
+11.	horizontalDash
+12.	verticalDash
+13.	rectangle
+14.	box
+15.	verticalStripe
+16.	horizontalStripe
+17.	bubble
+18.	diagonalBackward
+19.	diagonalForward
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                    highlightSettings: {
+                        enable: true, 
+                        
+                        //Change highlighting pattern
+                         pattern: "chessboard",
+
+                     },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img17.png" Caption="Changing pattern to highlight"%}
+
+
+#### Custom pattern
+
+To create custom pattern for highlighting data points, set pattern type as **"custom"** and add custom pattern **id** in **customPattern** option of highlightSettings.
+
+{% highlight html %}
+
+
+<body>
+    <div id="container"></div>
+            <svg>
+                <pattern id="dots_a" patternUnits="userSpaceOnUse" width="6" height="6">
+                    <rect x="0" y="0" width="6" height="6" transform="translate(0,0)" fill="black" opacity="1"></rect>
+                    <path d='M 3 -3 L -3 3 M 0 6 L 6 0 M 9 3 L 3 9'stroke-width="1" stroke="white"></path>
+                </pattern>
+            </svg>
+<script type="text/javascript">
+
+   $("#container").ejChart({
+            // ...
+            series:[{
+                highlightSettings: [{
+                    enable: true,
+                    //Add custom pattern for highlighting data
+                    pattern: "custom",
+                    customPattern: 'dots_a',
+                    // ...
+                }],
+                // ...       
+     });
+
+        </script>
+</body>
+
+{% endhighlight %}
+
+
+## Selection
+
+EjChart provides selection support for series and data points on mouse click. To enable the selection option, set **enable** property as *true* in **selectionSettings** of series.
+
+N> When mouse is clicked on the data points, the corresponding series legend also will be selected.
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                   selectionSettings: {
+                         // enable the selection settings
+                         enable: true, 
+                      },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/selection) here to view the highlight and selections online demo sample.
+
+
+### Selection Mode
+
+You can set three different selection mode for highlighting data point and series using **mode** property of selectionSettings.
+
+* Series
+* Points
+* Cluster
+
+**Series mode**
+
+To select all the data points of the specified series, you can set **"series"** value to **mode** option in selectionSettings.
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                   selectionSettings: {
+                         enable: true, 
+                         
+                        //Change selection mode
+                         mode: 'series',
+                         pattern: 'chessboard'
+                      },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img18.png" Caption="Series selection"%}
+
+
+**Point mode**
+
+For highlighting a single point you can set **"point"** value to **mode** option. 
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                   selectionSettings: {
+                         enable: true, 
+                         
+                        //Change selection mode
+                         mode: 'point',
+                         // ...
+                      },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img19.png" Caption="Point selection"%}
+
+
+**Cluster mode**
+
+To select the points that corresponds to same index in all the series, set **"cluster"** value to **mode** option.
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                   selectionSettings: {
+                         enable: true, 
+                         
+                        //Change selection mode
+                         mode: 'cluster',
+                         // ...
+                      },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img20.png" Caption="Cluster selection"%}
+
+
+### Customizing selection styles
+
+To customize the selection styles, use **color**, **border** and **opacity** option in selectionSettings.
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                   selectionSettings: {
+                         enable: true, 
+                         
+                        //Customizing selection rectangle styles
+                         border: { width: '1.5', color: "red" },
+                         opacity: 0.5, color: "red"
+                         // ...
+                      },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img21.png" Caption="Customizing selection styles"%}
+
+
+### Patterns for selection
+
+EjChart provides pattern support for data selection by setting the value to **pattern** property of selectionSettings. The different types of selection patterns are listed out below here.
+
+1.	chessboard
+2.	crosshatch
+3.	dots
+4.	packman
+5.	grid
+6.	turquoise
+7.	star
+8.	triangle
+9.	circle
+10.	tile
+11.	horizontalDash
+12.	verticalDash
+13.	rectangle
+14.	box
+15.	verticalStripe
+16.	horizontalStripe
+17.	bubble
+18.	diagonalBackward
+19.	diagonalForward
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+              // ...
+              series:[{
+                  
+                   selectionSettings: {
+                         enable: true, 
+                         
+                        //Change selection pattern
+                         pattern: "diagonalForward",
+                         // ...
+                      },
+                    // ... 
+               }]       
+                    
+               // ...
+           });
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img22.png" Caption="Selection pattern"%}
+
+
+#### Custom pattern
+
+To create custom pattern for selecting data points, set **pattern** type as **"custom"** and add custom pattern **id** in **customPattern** option of selectionSettings.
+
+{% highlight html %}
+
+
+<body>
+    <div id="container"></div>
+            <svg>
+                <pattern id="dots_a" patternUnits="userSpaceOnUse" width="6" height="6">
+                    <rect x="0" y="0" width="6" height="6" transform="translate(0,0)" fill="black" opacity="1"></rect>
+                    <path d='M 3 -3 L -3 3 M 0 6 L 6 0 M 9 3 L 3 9'stroke-width="1" stroke="white"></path>
+                </pattern>
+            </svg>
+<script type="text/javascript">
+
+   $("#container").ejChart({
+            // ...
+            series:[{
+                selectionSettings: [{
+                    enable: true,
+                    //Add custom pattern for selection data
+                    pattern: "custom",
+                    customPattern: 'dots_a',
+                    // ...
+                }],
+                // ...       
+     });
+
+        </script>
+</body>
+
+{% endhighlight %}
+
+
+{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img23.png" Caption="Add custom pattern for selection"%}
+
+
+### Handling Series Selection
+
+To get the series information when selecting the specific series, subscribe to the [seriesRegionClick](../api/ejchart.html#events:seriesregionclick) event and set the **selectionSettings.mode** as **"series"**.
+
+{% highlight js %}
+
+
+       $("#chartcontainer").ejChart({   
+	
+             // ... 
+              series:[{
+                selectionSettings: [{
+                    enable: true,
+                    //Change selection mode
+                    mode: "series",
+                    // ...
+                }],
+           
+           //Subscribe series selection event
+           seriesRegionClick: "seriesSelection",
+            // ... 
+        });
+
+        function seriesSelection(sender) {
+            //Get Series information on series selection
+            var seriesData = sender.series;
+        }
+
+{% endhighlight %}
+
+
+
 
