@@ -11,7 +11,11 @@ documentation: ug
 
 Toggle Axis support swaps dimensions, measures and named sets, between column and row axes, thereby refreshing OLAP Chart and OLAP Grid accordingly.
 
-{% include image.html url="/js/OlapClient/Toggle-Axis_images/Toggle-Axis_images1.png Caption="Before toggle axis" %}
+![Before toggle axis](/js/OlapClient/Toggle-Axis_images/Toggle-Axis_images1.png)
+Before toggle axis
+{:.caption}
 
-{% include image.html url="/js/OlapClient/Toggle-Axis_images/Toggle-Axis_images2.png Caption="After toggle axis" %}
+![After toggle axis](/js/OlapClient/Toggle-Axis_images/Toggle-Axis_images2.png)
+After toggle axis
+{:.caption}
 
