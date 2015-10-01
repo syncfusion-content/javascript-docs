@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Backward-Compatibility
-description: backward compatibility
+title: Backward-Compatibility - Version 12.2
+description: backward compatibility - Version 12.2
 platform: js
 control: Introduction
 documentation: ug
 ---
-
-# Backward Compatibility
 
 ## Version 12.2 Changes
 
@@ -6295,6 +6293,9 @@ remove</td><td>
 args.fileStatus</td><td>
 args.status</td><td>
  </td></tr>
+<<<<<<< HEAD:js/Backward-Compatibility/Version-12.2-Changes.md
+</table>
+=======
 </table>
 
 
@@ -7006,3 +7007,4 @@ actionComplete:function(args) {<br/>args. preview,<br/>args.Date,<br/>args. prev
 actionComplete:function(args) {<br/>args. data.previousView,<br/>args. data.currentDate,<br/>args. data.previousDate<br/>}<br/><br/></td><td>
 The arguments in unique and standard format are changed.<br/><br/></td></tr>
 </table>
+>>>>>>> development:js/Backward-Compatibility.md
