@@ -13,7 +13,7 @@ documentation: ug
 
 * The **views** option in the **Schedule** control is a collection that allows you to add/remove the view items to it. The items that are added to it is displayed in the date-header section of the **Schedule** control.
 
-* It accepts **Day,Week,WorkWeek,Month,CustomView** string array collections
+* It accepts **Day,Week,WorkWeek,Month,CustomView,Agenda** string array collections
 
 The following code example describes how to customize the display of view options of the **Schedule** control.
 

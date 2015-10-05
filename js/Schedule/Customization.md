@@ -576,21 +576,21 @@ Execute the above code to render the output as follows with the **Schedule** con
 {% include image.html url="/js/Schedule/Customization_images/Customization_img3.png" Caption=""%}
 
 
-**Business hours**
+**Work hours**
 
-* There is an option **highlightBusinessHours** in the **Schedule** control to enable/disable the action of highlighting the business hours. 
+* There is an option **highlight** within the workHours object in the **Scheduler** to enable/disable the action of highlighting the business hours. 
 
-* It is controlled with two additional options **businessStartHour** and **businessEndHour** to specify the time range to be defined as the business hours. By default, the business hours are highlighted in the **Schedule** control.
+* It is controlled with two additional options **start** and **end** to specify the time range to be defined as the business hours. By default, the business hours are highlighted in the **Schedule** control.
 
-**businessStartHour**
+**start**
 
 * It allows you to specify the start time to indicate the business start hour.
 
-**businessEndHour**
+**end**
 
 * It allows you to specify the end time to indicate the business end hour.
 
-* To enable the **highlightBusinessHours** and to customize the business start and end hours, refer the following code example.
+* To enable the **highlight** option and to customize the business start and end hours, refer the following code example.
 
 {% highlight html %}
 
@@ -616,10 +616,12 @@ $(function () {
                 recurrence: "Recurrence",
                 recurrenceRule: "RecurrenceRule"
             },
-            highlightBusinessHours: true,
-            // setting the business start and end hour to be highlighted in the schedule.
-            BusinessStartHour: 10,
-            BusinessEndHour: 3
+            workHours: {
+                highlight: true,
+                // setting the start and end work hour to be highlighted in the schedule.
+                start: 10,
+                end: 15
+            }
         });
     });
 
