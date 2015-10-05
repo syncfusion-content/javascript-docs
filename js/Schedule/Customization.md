@@ -266,7 +266,7 @@ Add the required details on the above displayed appointment window and then clic
 
 * To edit the appointments in customized appointment window, you can use **appointmentWindowOpen** event to avoid displaying the default appointment window when you double-click the appointments. 
 
-* The customized window is designed with the dialog control separately and it is display when you double-click appointments. 
+* The customized window is designed with the dialog control separately and it is displayed when you double-click appointments. 
 
 The following code example is added to the previous code example of appointment creation for Customized Appointment window.
 
@@ -867,7 +867,7 @@ Add new appointments to the **Schedule** control. The appointments are rendered 
 {% include image.html url="/js/Schedule/Customization_images/Customization_img9.png" Caption=""%}
 
 
-* In the above output, an appointment is initially created in the time-range 7.00am - 8.30am, it is saved in the timeslot between 9.00am – 10.30 am due to the time zone set to “UTC +2:00” in the **Schedule** control.
+* In the above output, an appointment is initially created in the time-range 7.00am - 8.30am, it is saved in the timeslot between 9.00am – 10.30am as the time zone is set to “UTC +2:00” in the **Schedule** control.
 
 
 **Current Time indicator**
