@@ -22,7 +22,7 @@ documentation: ug
 
 To know more detail about the **Angular binding**, you can refer the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/angularjs.htm](http://help.syncfusion.com/ug/js/documents/angularjs.htm)
+<http://docs.syncfusion.com/js/angularjs>
 
 N> Add the following script files as given in the following example to access angular binding. They have JS library for angular binding.
 
@@ -95,7 +95,7 @@ Two types of **Knockout** binding are supported,
 
 For more information about the **Knockout** **binding**, you can refer the following online documentation in the following link location,
 
-[http://help.syncfusion.com/ug/js/documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/documents/knockoutjs.htm)
+<http://docs.syncfusion.com/js/knockoutjs>
 
 N> Add the following script files along with the given code to access knockout binding. They have JS library for knockout binding.
 

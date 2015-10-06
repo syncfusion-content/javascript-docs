@@ -13,7 +13,7 @@ documentation: ug
 
 It uses a **Model-View-ViewModel** (MVVM) design pattern, where the **Model** is your stored data, **View** is the visual representation of that data (**UI**) and **ViewModel** acts as the intermediary between the **Model** and the **View**. For more information about the **Knockout** **binding**, refer the online documentation in the following link,
 
-[http://help.syncfusion.com/ug/js/default.htm#!documents/knockoutjs.htm](http://help.syncfusion.com/ug/js/default.htm)
+<http://docs.syncfusion.com/js/knockoutjs>
 
 When using **KO**, the view page is simply an **HTML** document with declarative bindings and you can link it to the **ViewModel**. **ViewModel** is nothing but an object, holding a list of items for creating the **TreeView** control using **Knockout binding**.
 

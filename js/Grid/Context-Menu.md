@@ -144,7 +144,7 @@ The Grid control has support to customize the context menu items by using the [`
           allowGrouping: true,
           contextClick : "click",
           editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, },
-          contextMenuSettings : {enableContextMenu : true, customContextMenuItems:["Add Record,Edit Record,Delete Record"]},
+          contextMenuSettings : {enableContextMenu : true, customContextMenuItems:["HideColumns"]},
           columns: [
                   { field: "OrderID", headerText: "Order ID", textAlign:ej.TextAlign.Right },
                   { field: "CustomerID", headerText: "Employee ID" },

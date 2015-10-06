@@ -67,7 +67,7 @@ Run the code to get the following output
 
 **FieldSettings**
 
-The **data-ej-fieldsettings** attribute is used to map the **DataSource** field with the list item fields. In addition to the list [item specific properties](http://help.syncfusion.com/ug/js/documents/groupedlist.htm), the following fields are available while mapping.
+The **data-ej-fieldsettings** attribute is used to map the **DataSource** field with the list item fields. In addition to the list [item specific properties](/js/listview/grouped-list), the following fields are available while mapping.
 
 _FieldSettings_
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gloabalizing and Localizing Syncfusion Essential JS Widgets
-description: How to localize and gloabalize the syncfusion essential js widgets during application loading or dynamically.
+title: Globalizing and Localizing Syncfusion Essential JS Widgets
+description: How to localize and globalize the syncfusion essential js widgets during application loading or dynamically.
 platform: js
 control: Introduction
 documentation: ug

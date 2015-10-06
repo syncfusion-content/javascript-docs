@@ -13,7 +13,7 @@ documentation: ug
 
 The CurrencyTextBox widget provides multi-language support using globalization. You can customize the CurrencyTextBox with your own language style by using this feature. You can change the globalization by using the **locale** property. The default value for **locale** property is **en-US** in CurrencyTextBox controls.
 
-In order to enable [Globalization](http://help.syncfusion.com/ug/js/default.htm) refer the following scripts: globalize.cultures.js and globalize.js. The “**globalize.cultures.js**” includes different language support for **JavaScript** controls and the “**globalize.js**” is a simple **JavaScript** library that allows you to format the value based on the specified culture.
+In order to enable [Globalization](/js/localization) refer the following scripts: globalize.cultures.js and globalize.js. The “**globalize.cultures.js**” includes different language support for **JavaScript** controls and the “**globalize.js**” is a simple **JavaScript** library that allows you to format the value based on the specified culture.
 
 You can refer the following online link reference for **globalize.js**
 

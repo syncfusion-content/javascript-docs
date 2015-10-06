@@ -9,7 +9,14 @@ documentation: ug
 
 # Enable Persistence
 
-**EnablePersistence** is used to maintain the current state of the grid model in browser's **local Storage**. When you refresh the page, stored state will be automatically used to render the grid. We can use [`enablePersistence`](/js/api/ejgrid#members:enablepersistence "enablePersistence") property to use enable persistence feature.
+**Grid** widget can store the model value in the browser **cookies** and on every time after initial rendering, the control get the model from the cookie only.Using [`enablePersistence`](/js/api/ejgrid#members:enablepersistence "enablePersistence") property you can store the model value in cookies. Thus when any changes are made dynamically then those values are updated in cookie. On refreshing the page the past state of the Grid control is maintained in cookie and control is rendered from it. They following features support persistence in Grid.
+
+* Paging
+* Grouping
+* Sorting
+* Filtering
+* Selection
+
 
 {% highlight html %}
 

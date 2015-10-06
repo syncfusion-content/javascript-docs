@@ -9,7 +9,7 @@ documentation: ug
 
 # Filtering
 
-Filtering is used to filter particular or related records in **Grid** to review details of records. To enable filtering behavior in **Grid** you can add `allowFiltering` property at **Grid** initialize. There are three types of filtering features in grid. They are
+Filtering is used to filter particular or related records in **Grid** to review details of records. To enable filtering behavior in **Grid** you can add [`allowFiltering`](/js/api/ejgrid#members:allowfiltering "allowFiltering") property at **Grid** initialize. There are three types of filtering features in grid. They are
 
 * Filter menu
 * Filter Bar

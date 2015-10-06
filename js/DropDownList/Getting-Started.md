@@ -474,7 +474,7 @@ From the **DropDownList** called “Country”, you can select your desired coun
 
 ## Set the Vote process in the DropDownList Widget
 
-The voting process is done by clicking the **Vote** button. A button is customized to support the voting process. For more information about the button you can refer the following link: [http://help.syncfusion.com/ug/js/default.htm](http://help.syncfusion.com/ug/js/default.htm)
+The voting process is done by clicking the **Vote** button. A button is customized to support the voting process. For more information about the button you can refer the following link: <http://docs.syncfusion.com/js/button>
 
 The following code sample explains how to set the Vote process in the **DropDownList** widget.
 

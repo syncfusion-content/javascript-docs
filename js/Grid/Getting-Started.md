@@ -61,7 +61,7 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
 
 
- Create the **ejGrid** widget as follows. In Columns definition, the [`textAlign`](/js/api/ejgrid#members:columns-textalign "textAlign") property allows you to align text of the columns, the [`width`](/js/api/ejgrid#members:columns-width "width") property allows you to define the width of the columns and [`format](/js/api/ejgrid#members:columns-format "format") property allows you to format the particular columns value.
+ Create the **ejGrid** widget as follows. In Columns definition, the [`textAlign`](/js/api/ejgrid#members:columns-textalign "textAlign") property allows you to align text of the columns, the [`width`](/js/api/ejgrid#members:columns-width "width") property allows you to define the width of the columns and [`format`](/js/api/ejgrid#members:columns-format "format") property allows you to format the particular columns value.
 
 {% highlight html %}
 

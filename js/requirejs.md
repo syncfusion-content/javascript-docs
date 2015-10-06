@@ -15,7 +15,7 @@ In General, a single widget file **ej.web.all.min.js** file is used to load any 
 
 The local module structure is as follows – where all the widget modules are placed under the **assets** folder. For detailed information on **assets** folder structure, refer here.
 
-![http://help.syncfusion.com/ug/js/ImagesExt/image70_372.png](requirejs_images\requirejs_img1.png)
+![](requirejs_images\requirejs_img1.png)
 
 You can find the **require.min.js** from the following installed location of your machine,
 
