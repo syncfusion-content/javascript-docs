@@ -11,11 +11,11 @@ documentation: ug
 
 ## Customized Appointment window 
 
-* You can display your own customized appointment window instead of the default appointment window while double-clicking on the cells. To achieve this, you can use the event **appointmentWindowOpen**. 
+* You can display your own customized appointment window instead of the default appointment window while double-clicking the cells. To achieve this, you can use the event **appointmentWindowOpen**. 
 
 * The customized window is designed with the dialog control separately.
 
-This example explains you on how to add the customized appointment window using the following code example.
+This example explains you on how to add the customized appointment window by using the following code example.
 
 
 
@@ -25,7 +25,7 @@ This example explains you on how to add the customized appointment window using 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Schedule JS Default Functionalities</title>
-    <!-- Refer the required script files here -->
+    <!-- Refer to the required script files here -->
 </head>
 <body>
     <!-- Schedule div-->
@@ -148,7 +148,7 @@ background-color: #FF8A8A;
         // For sub-controls used within the custom appointment window
         $("#StartTime").ejDateTimePicker({ width: "150px" });
         $("#EndTime").ejDateTimePicker({ width: "150px" });
-        // For dialog control which is to be used as customized appointment window
+        // For dialog control that is used as customized appointment window
         $("#customWindow").ejDialog({
             width: 600,
             height: "auto",
@@ -161,9 +161,9 @@ background-color: #FF8A8A;
             close: "clearFields"
         });
     });
-    // this method called before the default appointment window gets opened.
+    // This method is called before the default appointment window gets opened.
     function onAppointmentWindowOpen(args) {
-        // setting true for args.cancel will prevent the opening of default appointment window
+        // setting true for args.cancel prevents the opening of the default appointment window
         args.cancel = true;
         var quickobj = $("#Schedule1AppointmentQuickWindow").data("ejDialog");
         quickobj.close();
@@ -173,10 +173,10 @@ background-color: #FF8A8A;
             if ($(args.target.currentTarget).hasClass("e-alldaycells"))
                 $("#allday").prop("checked", true);
         }
-        // To open the custom appointment window
+        //Opens the custom appointment window
         $("#customWindow").ejDialog("open");
     }
-    // Function called while clicking the submit button on the appointment window
+    // Function is called while clicking the submit button on the appointment window
     function save() {
         if ($("#subject").val().trim() == "") {
             $("#subject").addClass("error");
@@ -254,7 +254,7 @@ background-color: #FF8A8A;
     
 {% endhighlight %}
 
-Execute the above code and then double-click on the required **Schedule** cells. The customized appointment window is opened instead of the default appointment window as follows.
+Execute the above code and then double-click the required **Schedule** cells. The customized appointment window is opened instead of the default appointment window as follows.
 
 {% include image.html url="/js/Schedule/Customization_images/Customization_img1.png" Caption=""%}
 
@@ -398,7 +398,7 @@ background-color: #FF8A8A;
         // For sub-controls used within the custom appointment window
         $("#StartTime").ejDateTimePicker({ width: "150px" });
         $("#EndTime").ejDateTimePicker({ width: "150px" });
-        // For dialog control which is to be used as customized appointment window
+        // For dialog control that is used as customized appointment window
         $("#customWindow").ejDialog({
             width: 600,
             height: "auto",
@@ -412,9 +412,9 @@ background-color: #FF8A8A;
         });
 
     });
-    // this method called before the default appointment window gets opened.
+    // This method is called before the default appointment window gets opened.
     function onAppointmentWindowOpen(args) {
-        // setting true for args.cancel will prevent the opening of default appointment window
+        // setting true for args.cancel prevents the opening of default appointment window
         args.cancel = true;
         var quickobj = $("#Schedule1AppointmentQuickWindow").data("ejDialog");
         quickobj.close();
@@ -425,7 +425,7 @@ background-color: #FF8A8A;
                 $("#allday").prop("checked", true);
         }
         if (!ej.isNullOrUndefined(args.appointment)) {
-            // Opens the custom appointment window with filled-in details, when double-clicked on the appointments
+            // Opens the custom appointment window with filled-in details, when the appointments are double-clicked.
             $("#customId").val(args.appointment.Id);
             $("#subject").val(args.appointment.Subject);
             $("#customdescription").val(args.appointment.Description);
@@ -439,10 +439,10 @@ background-color: #FF8A8A;
             }
             $("#customWindow").ejDialog("open");
         }
-        else // Opens the custom appointment window when double clicked on the schedule cells.
+        else // Opens the custom appointment window when the schedule cells are double clicked.
             $("#customWindow").ejDialog("open");
     }
-    // Function called while clicking the submit button on the appointment window
+    // Function is called while clicking the submit button on the appointment window
     function save() {
         if ($("#subject").val().trim() == "") {
             $("#subject").addClass("error");
@@ -523,7 +523,7 @@ background-color: #FF8A8A;
 
 
 
-Only the bolded texts in the above code examples are added to open the custom appointment window when you double-click the appointments. Execute the above code and then double-click on the appointment, the custom appointment window is displayed as follows.
+Only the bold texts in the above code examples are added to open the custom appointment window when you double-click the appointments. Execute the above code and then double-click the appointment, the custom appointment window is displayed as follows.
 
 {% include image.html url="/js/Schedule/Customization_images/Customization_img2.png" Caption=""%}
 
@@ -539,11 +539,11 @@ You can customize the appearance of the **Schedule** control by setting the spec
 
 **startHour**
 
-* Specify the start hour to set for the **Schedule** control.
+* Specifies the start hour to set the **Schedule** control.
 
 **endHour**
 
-* Specify the end hour to set for the **Schedule** control.
+* Specifies the end hour to set the **Schedule** control.
 
 
 {% highlight html %}
@@ -590,7 +590,7 @@ Execute the above code to render the output as follows with the **Schedule** con
 
 * It allows you to specify the end time to indicate the business end hour.
 
-* To enable the **highlight** option and to customize the business start and end hours, refer the following code example.
+* To enable the **highlight** option and to customize the business start and end hours, refer to the following code example.
 
 {% highlight html %}
 
@@ -736,7 +736,7 @@ The following screenshot displays the **Schedule** control with the **dateFormat
 
 * This feature allows you to specify the minimum and maximum dates for the **Schedule** control. It can be defined with the **minDate** and **maxDate** properties. 
 
-* Specifying minimum and maximum dates is especially useful when scheduling appointments for a project with fixed start and end dates.
+* Specifying minimum and maximum dates is especially useful when scheduling the appointments for a project with fixed start and end dates.
 
 * When these minimum and maximum dates are set, the dates apart from the specified range act as invalid/disabled dates and navigation beyond those dates are not possible.
 
@@ -804,7 +804,7 @@ The following screenshot displays the **Schedule** control with **MinDate** and 
 
  $(function () {
         $("#Schedule1").ejSchedule({
-            // setting the 24 hour mode for the schedule
+            // Sets the 24 hour mode for the schedule
             timeMode: ej.Schedule.TimeMode.Hour24,
         });
     });
@@ -812,7 +812,7 @@ The following screenshot displays the **Schedule** control with **MinDate** and 
 {% endhighlight %}
 
 
-The following screenshot displays the **Schedule** control when time mode is set to 24 hour mode.
+The following screenshot displays the **Schedule** control, when time mode is set to 24 hour mode.
 
 {% include image.html url="/js/Schedule/Customization_images/Customization_img8.png" Caption=""%}
 
@@ -821,7 +821,7 @@ The following screenshot displays the **Schedule** control when time mode is set
 
 * Appointments within the **Schedule** control is displayed based on the provided timezone. 
 
-* If no specific timezones are set for the **Schedule** control, then it takes the local system timezone into consideration.
+* When no specific timezones are set for the **Schedule** control, then it takes the local system timezone into consideration.
 
 * [Click here](http://en.wikipedia.org/wiki/List_of_tz_database_time_zones) to see the complete list of supported timezones.
 
@@ -842,7 +842,7 @@ You can set the timezone to the **Schedule** control as follows.
             $("#Schedule1").ejSchedule({
                 width: "100%",
                 height: "525px",
-                // setting the timezone to be followed in the schedule
+                // Sets the timezone to be followed in the schedule
                 timeZone: "UTC +2:00",
                 appointmentSettings: {
                     dataSource: dManager,
@@ -867,7 +867,7 @@ Add new appointments to the **Schedule** control. The appointments are rendered 
 {% include image.html url="/js/Schedule/Customization_images/Customization_img9.png" Caption=""%}
 
 
-* In the above output, an appointment is initially created in the time-range 7.00am - 8.30am, it is saved in the timeslot between 9.00am – 10.30am as the time zone is set to “UTC +2:00” in the **Schedule** control.
+* In the above output, an appointment is initially created in the time-range 7.00am - 8.30am. It is saved in the timeslot between 9.00am – 10.30am as the time zone is set to “UTC +2:00” in the **Schedule** control.
 
 
 **Current Time indicator**
