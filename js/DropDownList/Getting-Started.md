@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started 
 
-This section explains briefly on how to create a **DropDownList** control in your application using **JavaScript**.
+This section explains briefly on how to create a **DropDownList** control in your application by using **JavaScript**.
 
 The **DropDownList** control provides a list of options and allows you to choose an item from the list. It includes several other **HTML** elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options. In this example, you can learn how to customize **DropDownList** in a real time Voting Selection Scenario of World Cup Football. This helps you to display the groups and its countries in the **DropDownList** Selection Item. 
 
@@ -79,7 +79,7 @@ Add the input element to render **DropDownList** widgets.
 
 {% endhighlight %}
 
-Add the following style section for the **DropDownList** widgets alignment. You can add the following location in the **URL** path for the background image http://js.syncfusion.com/UG/Web/Content/football.png
+Add the following style section for the alignment of **DropDownList** widgets. You can add the following location in the **URL** path for the background image http://js.syncfusion.com/UG/Web/Content/football.png
 
 {% highlight css %}
 
@@ -127,7 +127,7 @@ Add the following style section for the **DropDownList** widgets alignment. You 
 
 {% endhighlight %}
 
-Initialize the **DropDownList** and other widgets using the following code sample.
+Initialize the **DropDownList** and other widgets by using the following code example.
 
 {% highlight js %}
 
@@ -159,13 +159,13 @@ Run this code to render the resultant output of the above steps.
 
 ## Configure Data Source
 
-You can configure **DropDownList** widgets using online services. Two different online data services for the two **DropDownList** Widgets are created. They are as follows, _groups_ data service for the group selection **DropDownList** and _countries_ data service for the country selection **DropDownList**. Both the data services are referred from the following service location.
+You can configure **DropDownList** widgets by using online services. Two different online data services for the two **DropDownList** widgets are created. They are as, _groups_ data service for the group selection **DropDownList** and _countries_ data service for the country selection **DropDownList**. Both the data services are referred from the following service location.
 
 [http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/](http://mvc.syncfusion.com/UGOdataServices/Northwnd.svc/)
 
-In the above mentioned scenario, the given data source is mentioned in the **Data** **Source** property. In the first and second **DropDownList** widgets, you can mention the Group widgets and countries Data Source in the **Data** **Source** property respectively. If the **Data** **Source** has different field names you can map the fields with the **field’s** property.
+In the above mentioned scenario, the given data source is mentioned in the **Data** **Source** property. In the first and second **DropDownList** widgets, you can mention the Group widgets and countries Data Source in the **Data** **Source** property respectively. When the **Data** **Source** has different field names, you can map the fields with the **field’s** property.
 
-The following code sample explains how to configure the **Data Source**.
+The following code example explains how to configure the **Data Source**.
 
 {% highlight js %}
 
@@ -197,7 +197,7 @@ The following code sample explains how to configure the **Data Source**.
 
              query: query1, // set query for groups
 
-             // Map the fields in the data source with the fields property if it not has the fields as in the fields property
+             // Map the fields in the data source with the fields property if its not having fields as in the fields property
              fields: {
                  text: "GroupName",
                  value: "GroupId"
@@ -231,17 +231,17 @@ The following code sample explains how to configure the **Data Source**.
 
 {% endhighlight %}
 
-Execute this code and you can see the output.
+Execute this code to render the output.
 
 {% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img3.png" %}
 
 ## Configure DropDownList with Sprite Icons
 
-To style the **DropDownList** popup with the Country flag, you can create the **SpriteCSS** styles using the flag icons from the following image source location.  You can add the following location in the **URL** path for the background image
+To style the **DropDownList** popup with the Country flag, create the **SpriteCSS** styles by using the flag icons from the following image source location. You can add the following location in the **URL** path for the background images.
 
 [http://js.syncfusion.com/UG/Web/Content/countryFootbal.png](http://js.syncfusion.com/UG/Web/Content/countryFootbal.png)
 
-You can load the spirit image icons for the countries in a **DropDownList** by adding the following code sample in styles section. 
+You can load the spirit image icons for the countries in a **DropDownList** by adding the following code example in styles section. 
 
 {% highlight css %}
 
@@ -402,7 +402,7 @@ Run the above code example to render the following **DropDownList** with Data so
 
 ## Set the Cascading Option
 
-In the above scenario, you have to select the group in the first **DropDownList** and the corresponding countries for that group are listed in the country **DropDownList.** You can achieve this by setting the **“cascadeTo”** that points the **DropDownList**, where the data is loaded dynamically. You can disable the second **DropDownList** till the data is loaded dynamically.
+In the above scenario, when you select the group in the first **DropDownList**, the corresponding countries for that group are listed in the country **DropDownList.** This is achieved by setting the **“cascadeTo”** that points the **DropDownList**, where the data is loaded dynamically. You can disable the second **DropDownList** till the data is loaded dynamically.
 
 The following code example explains how to set the Cascading Option.
 
@@ -421,7 +421,7 @@ The following code example explains how to set the Cascading Option.
            // Set Data Source in the Data Source Property
            dataSource: dataManger,
            query: query1, // set query for groups
-           // Map the fields in the data source with the fields property if it not has the fields as in the fields property
+           // Map the fields in the data source with the fields property if its not having fields as in the fields property
            fields: {
                text: "GroupName",
                value: "GroupId"
@@ -462,21 +462,21 @@ Initially, you can select the group from the popup of the first **DropDownList**
 
 {% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img6.png" %}
 
-Based on the group selection in the first **DropDownList**, the **DataSource** in the second **DropDownList** is loaded and the corresponding Countries are shown when clicking the drop-down button as follows.
+Based on the group selection in the first **DropDownList**, the **DataSource** in the second **DropDownList** is loaded and the corresponding Countries are displayed while clicking the drop-down button as follows.
 
 
 {% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img7.png" %}
 
-From the **DropDownList** called “Country”, you can select your desired country.
+From the **DropDownList** “Country”, you can select your desired country.
 
 
 {% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img8.png" %}
 
 ## Set the Vote process in the DropDownList Widget
 
-The voting process is done by clicking the **Vote** button. A button is customized to support the voting process. For more information about the button you can refer the following link: <http://help.syncfusion.com/js/button/overview>
+The voting process is done by clicking the **Vote** button. A button is customized to support the voting process. For more information on button, refer to the following link: <http://help.syncfusion.com/js/button/overview>
 
-The following code sample explains how to set the Vote process in the **DropDownList** widget.
+The following code example explains how to set the Vote process in the **DropDownList** widget.
 
 {% highlight js %}
 
@@ -506,7 +506,7 @@ The following code sample explains how to set the Vote process in the **DropDown
      
 {% endhighlight %}
 
-When you run the above code example, it displays the **DropDownList** widgets. You can select the value and click the **Vote** button. The button click event is processed and the values are displayed to the customer as follows.
+When you run the above code example, it displays the **DropDownList** widgets. You can select the value and click the **Vote** button. The button click event is processed and the values are displayed as follows.
 
 {% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img9.png" %}
 
