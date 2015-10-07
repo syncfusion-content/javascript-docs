@@ -104,7 +104,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try It: [Link to JS playground](Link)
+Try It: [Annotation angle](http://jsplayground.syncfusion.com/rgl4uwkj)
 
 
 
@@ -141,7 +141,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try It: [Annotation Content](Link)
+Try It: [Annotation Content](http://jsplayground.syncfusion.com/plihjtm3)
 
 
 
@@ -210,7 +210,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Horizontal Alignment](Link)
+Try it: [Horizontal Alignment](http://jsplayground.syncfusion.com/n5zfhoir)
 
 
 
@@ -224,7 +224,7 @@ Try it: [Horizontal Alignment](Link)
 Options to customize the margin of annotation
 
 
-Try it: [Margin](Link)
+Try it: [Margin](http://jsplayground.syncfusion.com/n5zfhoir)
 
 
 
@@ -394,7 +394,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Annotation Opacity](Link)
+Try it: [Annotation Opacity](http://jsplayground.syncfusion.com/rgl4uwkj)
 
 
 
@@ -430,7 +430,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Region](Link)
+Try it: [Annotation Region](http://jsplayground.syncfusion.com/yfxghhut)
 
 
 
@@ -466,7 +466,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Vertical Alignment](Link)
+Try it: [Vertical Alignment](http://jsplayground.syncfusion.com/frjpm2um)
 
 
 
@@ -502,7 +502,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Annotation Visibility](Link)
+Try it: [Annotation Visibility](http://jsplayground.syncfusion.com/plihjtm3)
 
 
 
@@ -540,7 +540,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Annotation Positioning](Link)
+Try it: [Annotation Positioning](http://jsplayground.syncfusion.com/frjpm2um)
 
 
 
@@ -576,7 +576,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/h23k4jcy)
 
 
 
@@ -613,7 +613,7 @@ annotations :[{ y : 100}]
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1nq2ss4v)
 
 
 
@@ -650,7 +650,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nqhtn0y)
 
 
 
@@ -686,7 +686,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS playground Sample](http://jsplayground.syncfusion.com/i1bys43l)
 
 
 
@@ -700,7 +700,7 @@ Try it: [Link to JS playground](Link)
 Options for customizing the color, opacity and width of the chart border.
 
 
-Try it: [Link to JS Playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wxxv2rq1)
 
 
 
@@ -836,7 +836,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/r12awtp3)
 
 
 
@@ -886,7 +886,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/picztz23)
 
 
 ### chartArea.border<span class="type-signature type object">object</span>
@@ -898,7 +898,7 @@ Try it: [Link to JS playground](Link)
 Options for customizing the border of the plot area.
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kzy21bwx)
 
 
 
@@ -1016,7 +1016,7 @@ $("#container").ejChart({
 Options to split Chart into multiple plotting areas vertically. Each object in the collection represents a plotting area in Chart.
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdfd1sai)
 
 
 
@@ -1313,7 +1313,7 @@ commonSeriesOptions : {dataSource: data }
  {% endhighlight %}
  
  
- Try it: [Link to JS playground](Link)
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ubbu5ukf)
 
 
 
@@ -1350,7 +1350,7 @@ commonSeriesOptions :{ doughnutCoefficient : 0.5}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/15exlbqk)
 
 
 
@@ -1386,7 +1386,7 @@ commonSeriesOptions :{ doughnutSize : 0.9}
  {% endhighlight %}
  
  
- Try it: [Link to JS playground](Link)
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ywbzcwhh)
 
 
 
@@ -1419,7 +1419,7 @@ commonSeriesOptions :{ drawType : "area"}
  {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/woedp3qa)
 
 
 
@@ -1489,7 +1489,7 @@ commonSeriesOptions :{ enableSmartLabels : false}
   {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ojz1vbr4)
 
 
 
@@ -1525,7 +1525,7 @@ commonSeriesOptions :{ endAngle : 270}
  {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/52kkuy5d)
 
 
 ### commonSeriesOptions.explode<span class="type-signature type boolean">boolean</span>
@@ -1560,7 +1560,7 @@ commonSeriesOptions :{ explode : true}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cletijkr)
 
 
 
@@ -1596,7 +1596,7 @@ commonSeriesOptions :{ explodeAll : true}
  {% endhighlight %}
  
  
- Try it: [Link to JS playground](Link)
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2btbqicb)
 
 
 
@@ -1633,7 +1633,7 @@ commonSeriesOptions :{ explodeIndex : 2}
  
  
  
- Try it: [Link to JS playground](Link)
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/lypx2awm)
 
 
 
@@ -1670,7 +1670,7 @@ commonSeriesOptions :{ explodeOffset : 20}
  {% endhighlight %}
  
  
- Try it: [Link to JS playground](Link)
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t2ysyshe)
 
 
 
@@ -1707,7 +1707,7 @@ commonSeriesOptions :{fill : "green"}
 
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground](http://jsplayground.syncfusion.com/wdgfh0f1)
 
 
 
@@ -1926,7 +1926,7 @@ commonSeriesOptions :{font :{size : "14px"}}
 
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gmjlryrg)
 
 
 
@@ -1963,7 +1963,7 @@ commonSeriesOptions : {funnelHeight : '40%' }
 </script> {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cnku50hw)
 
 
 
@@ -2000,7 +2000,7 @@ commonSeriesOptions : {funnelWidth : '40%' }
  
  
  
- Try it: [Link to JS playground](Link)
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/aj4pwnrm)
 
 
 
@@ -2037,7 +2037,7 @@ commonSeriesOptions :{ gapRatio : 0.5}
   {% endhighlight %}
   
   
-  Try it: [Link to JS playground](Link)
+Try it: [JS Playground](http://jsplayground.syncfusion.com/om3zazbd)
 
 
 
@@ -2074,7 +2074,7 @@ commonSeriesOptions :{ isClosed : false}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d41kmmwt)
 
 
 
@@ -2111,7 +2111,7 @@ commonSeriesOptions :{ isStacking : "true"}
  {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g40hdrpl)
 
 
 
@@ -2148,9 +2148,6 @@ commonSeriesOptions : {isTransposed : false }
 {% endhighlight %}
 
 
-Try it : [Link to JS playground](Link)
-
-
 
 
 ### commonSeriesOptions.labelPosition<span class="type-signature type enum">enum</span>
@@ -2184,7 +2181,7 @@ commonSeriesOptions :{ labelPosition : "outside"}
  {% endhighlight %}
  
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w5q1jt5k)
 
 
 
@@ -2392,7 +2389,7 @@ commonSeriesOptions :{marker :{dataLabel :{angle : 90}}}
 
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rbw3xizf)
 
 
 
@@ -2475,7 +2472,7 @@ commonSeriesOptions :{marker :{dataLabel :{border :{ width :2 }}}}
  {% endhighlight %}
  
  
- Try it: [Link to JS playground](Link)
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f4b4p32r)
 
 
 
@@ -2523,7 +2520,7 @@ commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ type : "bezier" }}}}
 
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 
 
 
@@ -2559,7 +2556,7 @@ commonSeriesOptions :{marker :{dataLabel :{connectorLine :{ width : 2 }}}}
  {% endhighlight %}
  
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 
 
 ### commonSeriesOptions.marker.dataLabel.fill<span class="type-signature type string">string</span>
@@ -2808,7 +2805,7 @@ commonSeriesOptions :{marker :{dataLabel :{horizontalTextAlignment : "far"}}}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/c3i3lxpg)
 
 
 
@@ -2958,7 +2955,7 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ top :10 } }}}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dff0lfpg)
 
 
 
@@ -3095,7 +3092,7 @@ commonSeriesOptions :{marker :{dataLabel :{textPosition : "bottom"}}}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground  Sample](http://jsplayground.syncfusion.com/tzmb3o0y)
 
 
 
@@ -3131,7 +3128,7 @@ commonSeriesOptions :{marker :{dataLabel :{verticalTextAlignment : "far"}}}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground  Sample](http://jsplayground.syncfusion.com/zro5pbw2)
 
 
 
@@ -3201,7 +3198,7 @@ commonSeriesOptions :{marker : { fill : "green" } }
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wh0gldoo)
 
 
 
@@ -3237,7 +3234,7 @@ commonSeriesOptions :{marker :{ imageUrl: "../images/sample.png"}}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/251niupi)
 
 
 
@@ -3307,7 +3304,7 @@ commonSeriesOptions :{marker :{ shape: "rectangle"}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wh0gldoo)
 
 
 
@@ -3390,7 +3387,7 @@ commonSeriesOptions :{marker :{ size :{ width : 2 } } }
 {% endhighlight %}
 
 
-Try it: [Link to JS playground](Link)
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fbrqexxu)
 
 
 ### commonSeriesOptions.marker.visible<span class="type-signature type boolean">boolean</span>
@@ -3425,7 +3422,7 @@ commonSeriesOptions :{marker :{ visible : true}}
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f2qfyfbt)
 
 
 
@@ -3530,7 +3527,7 @@ commonSeriesOptions :{ pieCoefficient : 1}
 
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yzleny3o)
 
 
 
@@ -3563,7 +3560,7 @@ commonSeriesOptions :{ pyramidMode : "linear"}
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/maeo3b3s)
 
 
 
@@ -3599,7 +3596,7 @@ commonSeriesOptions :{ startAngle : 150}
  {% endhighlight %}
  
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gposb4vh)
 
 
 
@@ -3695,7 +3692,7 @@ commonSeriesOptions :{tooltip :{border :{ width : 2}}}
 
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dmvqb51g)
 
 
 ### commonSeriesOptions.tooltip.duration<span class="type-signature type string">string</span>
@@ -3833,7 +3830,7 @@ commonSeriesOptions :{ tooltip : { format : "#point.x# : #point.y#%" } }
 
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rzxmpi0c)
 
 
 
@@ -3870,7 +3867,7 @@ commonSeriesOptions :{tooltip :{opacity : 0.5}}
 
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jih5jejk)
 
 
 
@@ -3911,7 +3908,7 @@ commonSeriesOptions :{ tooltip: { template : "item" }}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rmunfu1b)
 
 
 
@@ -3947,7 +3944,7 @@ commonSeriesOptions :{ tooltip :{visible : true} }
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tpizvdt0)
 
 
 ### commonSeriesOptions.type<span class="type-signature type enum">enum</span>
@@ -3980,7 +3977,7 @@ commonSeriesOptions :{ type : "spline"}
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/iyglee55)
 
 
 
@@ -4016,7 +4013,7 @@ commonSeriesOptions :{ xAxisName : "xAxis"}
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p1t424pc)
 
 
 ### commonSeriesOptions.xName<span class="type-signature type string">string</span>
@@ -4051,7 +4048,7 @@ commonSeriesOptions : {xName: "XValue" }
  {% endhighlight %}
  
  
- Try it: [Link to JS playground]
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ubbu5ukf)
 
 
 
@@ -4088,7 +4085,7 @@ commonSeriesOptions :{ yAxisName : "yAxis"}
  {% endhighlight %}
  
  
- Try it: [Link to JS playground]
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kac2fcth)
 
 
 
@@ -4124,7 +4121,7 @@ commonSeriesOptions :{yName: "yValue" }
  {% endhighlight %}
  
  
- Try it: [Link to JS playground]()
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ubbu5ukf)
  
  
 
@@ -4195,7 +4192,7 @@ commonSeriesOptions : {low: "low" }
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
 
 
 
@@ -4262,7 +4259,7 @@ commonSeriesOptions : {close: "close" }
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
 
 
 ### commonSeriesOptions.trendlines<span class="type-signature type array">array</span>
@@ -4569,7 +4566,7 @@ commonSeriesOptions :{trendlines:[{ backwardForeCast:2 }]}
 });
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d5o0dk1l)
 
 
 
@@ -4603,7 +4600,7 @@ commonSeriesOptions :{trendlines:[{ polynomialOrder:2 }]}
 });
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/opxwgddc)
 
 
 
@@ -4818,7 +4815,7 @@ commonSeriesOptions :{highlightSettings:{border:{width:1}}}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rppilz5a)
 
 
 ### commonSeriesOptions.highlightSettings.pattern<span class="type-signature type string">string</span>
@@ -4851,7 +4848,7 @@ commonSeriesOptions :{highlightSettings:{pattern:"chessboard"}}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/e31yyof2)
 
 
 
@@ -4885,7 +4882,7 @@ commonSeriesOptions :{highlightSettings:{customPattern:""}}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ecgabpa5)
 
 
 
@@ -4963,7 +4960,7 @@ commonSeriesOptions :{selectionSettings:{mode:"point"}}
 });
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yghrxu21)
 
 
 
@@ -5131,7 +5128,7 @@ commonSeriesOptions :{selectionSettings:{pattern:"chessboard"}}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zbipilg5)
 
 
 ### commonSeriesOptions.selectionSettings.customPattern<span class="type-signature type string">string</span>
@@ -5163,7 +5160,7 @@ commonSeriesOptions :{selectionSettings:{customPattern:""}}
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ne1iit3s)
 
 
 
@@ -5383,7 +5380,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hfja2bta)
 
 
 
@@ -5452,7 +5449,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/31w3q03j)
 
 
 
@@ -5490,7 +5487,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mfcep44t)
 
 ### enable3D<span class="type-signature type boolean">boolean</span>
 {:#members:enable3d}
@@ -5525,7 +5522,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dx0nj11k)
 
 
 
@@ -5561,7 +5558,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nvdn2ml)
 
 
 
@@ -5601,7 +5598,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hf5wopxp)
 
 
 ### indicators<span class="type-signature type array">array</span>
@@ -5651,7 +5648,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnfnqsqd)
 
 
 ### indicators.enableAnimation<span class="type-signature type boolean">boolean</span>
@@ -5687,7 +5684,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p443wnjd)
 
 
 ### indicators.fill<span class="type-signature type string">string</span>
@@ -5723,7 +5720,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vrm2umdf)
 
 
 ### indicators.histogram<span class="type-signature type object">object</span>
@@ -5748,7 +5745,7 @@ Options to customize the histogram in MACD indicator
 Options to customize the histogram border in MACD indicator
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/stbnoy0x)
 
 
 
@@ -5855,7 +5852,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2rvadgmd)
 
 
 ### indicators.histogram.opacity<span class="type-signature type number">number</span>
@@ -6059,7 +6056,7 @@ $("#container").ejChart({
 
 Options to customize the MACD line.
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/oarmpbow)
 
 
 
@@ -6205,7 +6202,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yk3njhr1)
 
 
 ### indicators.periodLine<span class="type-signature type object">object</span>
@@ -6216,7 +6213,7 @@ Try it: [Link to JS playground]
 
 Options to customize the period line in indicators.
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/20dlmyxk)
 
 
 
@@ -6326,7 +6323,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yk3njhr1)
 
 
 ### indicators.shortPeriod<span class="type-signature type number">number</span>
@@ -6362,7 +6359,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2hpibxjj)
 
 
 ### indicators.standardDeviations<span class="type-signature type number">number</span>
@@ -6398,7 +6395,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0b04ckwl)
 
 
 ### indicators.tooltip<span class="type-signature type object">object</span>
@@ -6409,7 +6406,7 @@ Try it: [Link to JS playground]
 
 Options to customize the tooltip.
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ritlgl5w)
 
 
 
@@ -6748,7 +6745,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nrh5tk4z)
 
 
 ### indicators.visibility<span class="type-signature type string">string</span>
@@ -6784,7 +6781,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gshculgi)
 
 
 ### indicators.type<span class="type-signature type string">string</span>
@@ -6820,7 +6817,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mr4ykv5i)
 
 
 ### indicators.upperLine<span class="type-signature type object">object</span>
@@ -6831,7 +6828,7 @@ Try it: [Link to JS playground]
 
 Options to customize the upper line in indicators
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/duskfkix)
 
 
 
@@ -6941,7 +6938,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/r23e0yrp)
 
 
 ### indicators.xAxisName<span class="type-signature type string">string</span>
@@ -6977,7 +6974,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kksyu40s)
 
 
 ### indicators.yAxisName<span class="type-signature type string">string</span>
@@ -7060,7 +7057,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jpcc441l)
 
 
 
@@ -7096,7 +7093,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yesrbzgh)
 
 
 
@@ -7110,7 +7107,7 @@ Try it: [Link to JS Playground]
 Options for customizing the legend border.
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zob1c5er)
 
 
 
@@ -7212,7 +7209,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g3p1ocgh)
 
 
 
@@ -7248,7 +7245,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3budcknt)
 
 
 
@@ -7285,7 +7282,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3alytf20)
 
 
 
@@ -7299,7 +7296,7 @@ Try it: [Link to JS Playground]
 Options to customize the font used for legend item text
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jo5t2d4u)
 
 
 
@@ -7467,7 +7464,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tozzsrit)
 
 
 
@@ -7494,7 +7491,7 @@ Options to customize the style of legend items
 Options for customizing the border of legend items.
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hplwwoll)
 
 
 
@@ -7640,7 +7637,7 @@ $("#container").ejChart({
 Options to customize the location of chart legend. Legend will be placed in provided location only if value of **position** property is **custom**
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xurqtijv)
 
 
 
@@ -7742,7 +7739,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nlewhk5r)
 
 
 
@@ -7779,7 +7776,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dwcvfzuv)
 
 
 
@@ -7815,7 +7812,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tovkgqw5)
 
 
 
@@ -7851,7 +7848,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/uq3eho3v)
 
 
 
@@ -7865,7 +7862,7 @@ Try it: [Link to JS Playground]
 Options to customize the size of the legend.
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tovkgqw5)
 
 
 
@@ -7958,7 +7955,7 @@ Options to customize the legend title.
 Options to customize the font used for legend title
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/bkgyatau)
 
 
 
@@ -8126,7 +8123,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ux1xb3j4)
 
 
 
@@ -8162,7 +8159,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnrnl1o1)
 
 
 
@@ -8198,7 +8195,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dwcvfzuv)
 
 
 
@@ -8235,7 +8232,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g3q30pdl)
 
 
 
@@ -8249,7 +8246,7 @@ Try it: [Link to JS Playground]
 Options to customize the left, right, top and bottom margins of chart area
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5rlvd0ri)
 
 
 
@@ -8421,7 +8418,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ofpxunlm)
 
 
 
@@ -8534,7 +8531,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vanuvupl)
 
 
 ### primaryXAxis.alternateGridBand.odd<span class="type-signature type object">object</span>
@@ -8619,7 +8616,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n23ku03f)
 
 
 ### primaryXAxis.axisLine<span class="type-signature type object">object</span>
@@ -8668,7 +8665,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gx3dji4o)
 
 
 ### primaryXAxis.axisLine.offset<span class="type-signature type number">number</span>
@@ -8704,7 +8701,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fmchh3yz)
 
 
 ### primaryXAxis.axisLine.visible<span class="type-signature type boolean">boolean</span>
@@ -8776,7 +8773,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0chmy5rg)
 
 
 ### primaryXAxis.columnIndex<span class="type-signature type number">number</span>
@@ -8848,7 +8845,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zqgvpx1v)
 
 
 ### primaryXAxis.crosshairLabel<span class="type-signature type object">object</span>
@@ -8969,7 +8966,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ff44lp52)
 
 
 ### primaryXAxis.enableTrim<span class="type-signature type boolean">boolean</span>
@@ -9005,7 +9002,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qt3th50v)
 
 
 ### primaryXAxis.font<span class="type-signature type object">object</span>
@@ -9199,7 +9196,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xm2ur0jj)
 
 
 ### primaryXAxis.intervalType<span class="type-signature type enum">enum</span>
@@ -9236,7 +9233,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qccdazta)
 
 
 ### primaryXAxis.isInversed<span class="type-signature type boolean">boolean</span>
@@ -9272,7 +9269,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xp1frbzw)
 
 
 ### primaryXAxis.labelFormat<span class="type-signature type string">string</span>
@@ -9308,7 +9305,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/x22gftws)
 
 
 ### primaryXAxis.labelIntersectAction<span class="type-signature type enum">enum</span>
@@ -9344,7 +9341,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/sedhp2ek)
 
 
 ### primaryXAxis.labelPosition<span class="type-signature type enum">enum</span>
@@ -9380,7 +9377,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/u0s1y0dg)
 
 
 ### primaryXAxis.labelRotation<span class="type-signature type number">number</span>
@@ -9416,7 +9413,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gl5iwbsh)
 
 
 ### primaryXAxis.logBase<span class="type-signature type number">number</span>
@@ -9609,7 +9606,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1tjezqc0)
 
 
 ### primaryXAxis.majorTickLines<span class="type-signature type object">object</span>
@@ -9730,7 +9727,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/30i5qgrm)
 
 
 ### primaryXAxis.maximumLabels<span class="type-signature type number">number</span>
@@ -9766,7 +9763,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/a4gcmpzx)
 
 
 ### primaryXAxis.maximumLabelWidth<span class="type-signature type number">Number</span>
@@ -9923,7 +9920,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xlobmfvj)
 
 
 ### primaryXAxis.minorTickLines<span class="type-signature type object">object</span>
@@ -10080,8 +10077,6 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
-
 
 ### primaryXAxis.name<span class="type-signature type string">string</span>
 {:#members:primaryxaxis-name}
@@ -10188,7 +10183,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yo4ek2ci)
 
 
 ### primaryXAxis.rangePadding<span class="type-signature type enum">enum</span>
@@ -10261,7 +10256,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hgqmxm50)
 
 
 
@@ -10872,7 +10867,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1at44wzi)
 
 
 ### primaryXAxis.tickLinesPosition<span class="type-signature type enum">enum</span>
@@ -11517,7 +11512,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/12z4yd2l)
 
 
 ### primaryYAxis.alternateGridBand.odd<span class="type-signature type object">object</span>
@@ -11602,7 +11597,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hyakwb3m)
 
 
 ### primaryYAxis.axisLine<span class="type-signature type object">object</span>
@@ -11687,7 +11682,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3drq4c1j)
 
 
 ### primaryYAxis.axisLine.visible<span class="type-signature type boolean">boolean</span>
@@ -11759,7 +11754,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zz4cubdn)
 
 
 ### primaryYAxis.crosshairLabel<span class="type-signature type object">object</span>
@@ -12112,7 +12107,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/s1dshld4))
 
 
 ### primaryYAxis.intervalType<span class="type-signature type enum">enum</span>
@@ -12149,7 +12144,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n2dwkjtr)
 
 
 ### primaryYAxis.isInversed<span class="type-signature type boolean">boolean</span>
@@ -12185,7 +12180,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mnnwkac1)
 
 
 ### primaryYAxis.labelFormat<span class="type-signature type string">string</span>
@@ -12221,7 +12216,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n2dwkjtr)
 
 
 ### primaryYAxis.labelIntersectAction<span class="type-signature type enum">enum</span>
@@ -12257,7 +12252,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pm2ksurr)
 
 
 ### primaryYAxis.labelPosition<span class="type-signature type enum">enum</span>
@@ -12327,7 +12322,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nfviof2i)
 
 
 ### primaryYAxis.majorGridLines<span class="type-signature type object">object</span>
@@ -12484,7 +12479,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jaqmz0ox)
 
 
 ### primaryYAxis.majorTickLines<span class="type-signature type object">object</span>
@@ -12605,7 +12600,7 @@ $("#container").ejChart({
 </script>  
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dumkxazd)
 
 
 ### primaryYAxis.maximumLabels<span class="type-signature type number">number</span>
@@ -12798,7 +12793,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3ijc021x)
 
 
 ### primaryYAxis.minorTickLines<span class="type-signature type object">object</span>
@@ -12956,7 +12951,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tbbhdw21)
 
 
 ### primaryYAxis.name<span class="type-signature type string">string</span>
@@ -13063,7 +13058,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ls2i5oiv)
 
 
 ### primaryYAxis.rangePadding<span class="type-signature type enum">enum</span>
@@ -13136,7 +13131,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ad225rnj)
 
 
 ### primaryYAxis.rowIndex<span class="type-signature type number">number</span>
@@ -13207,7 +13202,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fitf4tn3)
 
 
 ### primaryYAxis.stripLine<span class="type-signature type array">array</span>
@@ -13818,7 +13813,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pigg3hc0)
 
 
 ### primaryYAxis.tickLinesPosition<span class="type-signature type enum">enum</span>
@@ -14350,8 +14345,6 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
-
 
 
 
@@ -14389,7 +14382,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pf23aw13)
 
 
 
@@ -14403,7 +14396,7 @@ Try it: [Link to JS playground]
 Options to split Chart into multiple plotting areas horizontally. Each object in the collection represents a plotting area in Chart.
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jydjcqbo)
 
 
 
@@ -14585,7 +14578,7 @@ series : [{bearFillColor: "blue" }]
  {% endhighlight %}
  
  
- Try it: [Link to JS playground]
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p404ugol)
  
 
 
@@ -14669,7 +14662,7 @@ series :[{border :{ width : 2 } }]
 {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/vf2xong1)
 
 
 ### series.bullFillColor<span class="type-signature type string">string</span>
@@ -14703,7 +14696,7 @@ series : [{bullFillColor: "green" }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v540kjyb)
 
 
 
@@ -14739,7 +14732,7 @@ series :[{dashArray : "2,3"}]
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/322c4ex3)
 
 
 
@@ -14775,7 +14768,7 @@ series : [{dataSource: data }]
  {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/soesgx0m)
 
 
 ### series.doughnutCoefficient<span class="type-signature type number">number</span>
@@ -14810,7 +14803,7 @@ series : [{doughnutCoefficient : 0.5 }]
 {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/1xjrwrxl)
 
 
 ### series.doughnutSize<span class="type-signature type number">number</span>
@@ -14845,7 +14838,7 @@ series : [{doughnutSize : 0.6 }]
 {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/eyi1qmre)
 
 ### series.drawType<span class="type-signature type boolean">boolean</span>
 {:#members:series-drawtype}
@@ -14878,7 +14871,7 @@ series : [{drawType : "column" }]
  {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/pg04h4gh)
 
 
 ### series.enableAnimation<span class="type-signature type boolean">boolean</span>
@@ -14913,7 +14906,7 @@ series : [{enableAnimation : true }]
 {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/w4mkzixd)
 
 
 ### series.enableSmartLabels<span class="type-signature type number">number</span>
@@ -14948,7 +14941,7 @@ series : [{enableSmartLabels : false }]
  {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/40docuib)
 
 
 ### series.endAngle<span class="type-signature type number">number</span>
@@ -14982,7 +14975,7 @@ series : [{endAngle: 270 }]
 
 {% endhighlight %}
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/fqpf3ort)
 
 
 
@@ -15018,7 +15011,7 @@ series : [{explode: true }]
 {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/prpei1ld)
 
 
 ### series.explodeAll<span class="type-signature type boolean">boolean</span>
@@ -15053,7 +15046,7 @@ series : [{explodeAll: true }]
 {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/n3if1tnn)
 
 
 ### series.explodeIndex<span class="type-signature type number">number</span>
@@ -15088,7 +15081,7 @@ series : [{explodeIndex : 2 }]
  {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/taccivfh)
 
 
 
@@ -15124,7 +15117,7 @@ series : [{explodeOffset : 20 }]
  {% endhighlight %}
  
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/2j040lr0)
 
 
 
@@ -15160,7 +15153,7 @@ series :[{fill : "green"}]
 {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/sit3agft)
 
 
 ### series.font<span class="type-signature type object">object</span>
@@ -15377,7 +15370,7 @@ series :[{font :{size : "14px"}}]
 });
  {% endhighlight %}
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/g0jeybnt)
 
 
 ### series.funnelHeight<span class="type-signature type string">string</span>
@@ -15412,7 +15405,7 @@ series : [{funnelHeight : '40%' }]
  {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/5gqzqndn)
 
 
 ### series.funnelWidth<span class="type-signature type string">string</span>
@@ -15447,7 +15440,7 @@ series : [{funnelWidth : '40%' }]
  {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/u0f5hsbw)
 
 
 ### series.gapRatio<span class="type-signature type number">number</span>
@@ -15481,7 +15474,7 @@ series : [{gapRatio : 0.2 }]
 });
  {% endhighlight %}
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/cjocyfce)
 
 
 ### series.isClosed<span class="type-signature type boolean">boolean</span>
@@ -15515,7 +15508,7 @@ series : [{isClosed : false }]
 });
  {% endhighlight %}
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/ktrsbcrh)
 
 
 ### series.isStacking<span class="type-signature type boolean">boolean</span>
@@ -15550,7 +15543,7 @@ series : [{isStacking : false }]
  {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/mj2qdclr)
 
 
 
@@ -15587,7 +15580,7 @@ series : [{isTransposed : false }]
 {% endhighlight %}
 
 
-Try it : [Link to JS playground]
+Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/1ypcv5bf)
 
 
 
@@ -15624,7 +15617,7 @@ series : [{labelPosition : "outside" }]
  {% endhighlight %}
  
  
- Try it: [Link to JS playground]
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/q013nk40)
 
 
 
@@ -15786,7 +15779,7 @@ series :[{marker :{border :{width : 2}}}]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/po32cgmg)
 
 
 
@@ -15835,7 +15828,7 @@ series :[{marker :{dataLabel :{angle : 90}}]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ulhda01g)
 
 
 ### series.marker.dataLabel.border<span class="type-signature type object">object</span>
@@ -15996,7 +15989,7 @@ series :[{marker :{dataLabel :{connectorLine :{ width : 2 }}}}]
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fjr0nbgc)
 
 
 
@@ -16214,7 +16207,7 @@ series :[{marker :{dataLabel :{font : { size : "14px" }}}}]
 
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fjr0nbgc)
 
 
 
@@ -16399,7 +16392,7 @@ series :[{marker :{dataLabel :{margin :{ top :10 } }}}]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3yoplr42)
 
 
 
@@ -16565,7 +16558,7 @@ series :[{marker :{dataLabel :{verticalTextAlignment : "far"}}}]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/emylj2pu)
 
 
 ### series.marker.dataLabel.visible<span class="type-signature type boolean">boolean</span>
@@ -16631,7 +16624,7 @@ series :[{marker :{dataLabel :{template : "item"}}}]
 });
  {% endhighlight %}
  
- Try it: [Link to JS playground]()
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/l5pmkkgr)
  
  
  
@@ -16769,7 +16762,7 @@ series :[{marker :{ opacity : 0.5 }}]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1bavaoqq)
 
 
 
@@ -16803,7 +16796,7 @@ series :[{marker :{ shape: "rectangle"}]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vd552nid)
 
 
 ### series.marker.size<span class="type-signature type object">object</span>
@@ -16885,7 +16878,7 @@ series :[{marker :{ size :{ width : 2 } } }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/53gkiuse)
 
 
 ### series.marker.visible<span class="type-signature type boolean">boolean</span>
@@ -17025,7 +17018,7 @@ series : [{pieCoefficient : 0.6 }]
 
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
 
 
 
@@ -17119,7 +17112,7 @@ series :[{ points:[{ border :{width : 2} }] }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 
@@ -17352,7 +17345,7 @@ series :[{ points:[{ marker :{border :{width : 2}} }] }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3vkjgyc0)
 
 
 
@@ -17401,7 +17394,7 @@ series :[{ points:[{ marker :{dataLabel :{angle : 90} }] }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d3r5mcfc)
 
 
 ### series.points.marker.dataLabel.border<span class="type-signature type object">object</span>
@@ -17562,7 +17555,7 @@ series :[{ points:[{ marker :{dataLabel :{connectorLine :{ width : 2 }}} }] }]
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tm0wneyn)
 
 
 
@@ -17780,7 +17773,7 @@ series :[{ points:[{ marker :{dataLabel :{font : { size : "14px" }}}}] }]
 
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v4rp3aio)
 
 
 
@@ -17965,7 +17958,7 @@ series :[{ points:[{ marker :{dataLabel :{margin :{ top :10 } }}}] }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rezz5cjo)
 
 
 
@@ -18099,7 +18092,7 @@ series :[{ points: [{ marker :{dataLabel :{verticalTextAlignment : "far"}}}] }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/k5e5rltz)
 
 
 ### series.points.marker.dataLabel.visible<span class="type-signature type boolean">boolean</span>
@@ -18165,7 +18158,7 @@ series :[{ points:[{ marker :{dataLabel :{template : "item"}}}] }]
 });
  {% endhighlight %}
  
- Try it: [Link to JS playground]
+ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/lzjtnka5)
 
  
  
@@ -18303,7 +18296,7 @@ series :[{ points:[{ marker :{ opacity : 0.5 }}] }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fr1zj5v3)
 
 
 
@@ -18337,7 +18330,7 @@ series :[{ points:[{ marker :{ shape: "rectangle"}] }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5cgrkynp)
 
 
 ### series.points.marker.size<span class="type-signature type object">object</span>
@@ -18419,7 +18412,7 @@ series :[{ points:[{ marker :{ size :{ width : 2 } } }] }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hcnmls5c)
 
 
 ### series.points.marker.visible<span class="type-signature type boolean">boolean</span>
@@ -18624,7 +18617,7 @@ series : [{pyramidMode : "linear" }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xlnaeyog)
 
 
 
@@ -18662,7 +18655,7 @@ series : [{query: query }]
 
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 
 
 
@@ -18699,7 +18692,7 @@ series : [{startAngle: 140 }]
 
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cw1zlin3)
 
 
 ### series.tooltip<span class="type-signature type object">object</span>
@@ -18896,7 +18889,7 @@ series : [{tooltip : {fill : "green"} }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xz1asbhm)
 
 
 
@@ -18933,7 +18926,7 @@ series : [{tooltip : {format : "#point.x# : #point.y#"} }]
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ykkxirn1)
 
 
 ### series.tooltip.opacity<span class="type-signature type number">number</span>
@@ -19010,7 +19003,7 @@ series : [{ tooltip: { template : "item" }}]
 
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/j0twqmow)
 
 
 
@@ -19079,7 +19072,7 @@ series : [{type : "column" }]
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xab3pr0x)
 
 
 ### series.visibility<span class="type-signature type string">string</span>
@@ -19115,7 +19108,7 @@ series : [{visibility: "hidden" }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mg5325qz)
 
 
 ### series.xAxisName<span class="type-signature type string">string</span>
@@ -19150,7 +19143,7 @@ series : [{xAxisName: "xAxis" }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hz4rz01v)
 
 
 ### series.xName<span class="type-signature type string">string</span>
@@ -19185,7 +19178,7 @@ series : [{xName: "XValue" }]
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 
 
 ### series.yAxisName<span class="type-signature type string">string</span>
@@ -19220,7 +19213,7 @@ series : [{yAxisName: "yAxis" }]
  {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xn2uktf2)
 
 
 
@@ -19324,7 +19317,7 @@ series : [{low: "low" }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 
 
 
@@ -19391,7 +19384,7 @@ series : [{close: "close" }]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 
 
 ### series.trendlines<span class="type-signature type array">array</span>
@@ -19698,7 +19691,7 @@ series :[{trendlines:[{ backwardForeCast:2 }]}]
 });
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d3gntcp0)
 
 
 
@@ -19732,7 +19725,7 @@ series :[{trendlines:[{ polynomialOrder:2 }]}]
 });
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](/http://jsplayground.syncfusion.com/gdpriupt)
 
 
 
@@ -19947,7 +19940,7 @@ series :[{highlightSettings:{border:{width:1}}}]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ormhp3rz)
 
 
 ### series.highlightSettings.pattern<span class="type-signature type string">string</span>
@@ -19980,7 +19973,7 @@ series :[{highlightSettings:{pattern:"chessboard"}}]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gcdopi4d)
 
 
 
@@ -20014,7 +20007,7 @@ series :[{highlightSettings:{customPattern:""}}]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zmumutbx)
 
 
 
@@ -20092,7 +20085,7 @@ series :[{selectionSettings:{mode:"point"}}]
 });
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f0udmdts)
 
 
 
@@ -20260,7 +20253,7 @@ series :[{selectionSettings:{pattern:"chessboard"}}]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/cuee3fgt)
 
 
 ### series.selectionSettings.customPattern<span class="type-signature type string">string</span>
@@ -20292,7 +20285,7 @@ series :[{selectionSettings:{customPattern:""}}]
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wlovhaqi)
 
 
 
@@ -20331,7 +20324,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/lhtjjczw)
 
 
 
@@ -20367,7 +20360,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jael2rfm)
 
 
 
@@ -20406,7 +20399,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p0cd1lvx)
 
 
 
@@ -20431,7 +20424,7 @@ Options for customizing the title and subtitle of Chart.
 Options for customizing the font of Chart title.
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fhtgy2vx)
 
 
 
@@ -20621,7 +20614,7 @@ Options to customize the sub title of Chart.
 Options for customizing the font of sub title.
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vq3sp2j2)
 
 
 
@@ -20822,7 +20815,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/e3thfz5p)
 
 
 
@@ -20858,7 +20851,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yh1hzrly)
 
 
 
@@ -20894,7 +20887,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rk0x1e5u)
 
 
 
@@ -20930,7 +20923,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p1vsex5m)
 
 
 
@@ -20968,7 +20961,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-Try it: [Link to JS playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/q4nv04rw)
 
 
 
@@ -21083,7 +21076,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0gkvnyi3)
 
 
 
@@ -21119,7 +21112,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try it: [Link to JS Playground]
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hqmmhpgk)
 
 
 
