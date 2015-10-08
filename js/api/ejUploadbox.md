@@ -151,10 +151,10 @@ Example
 Uploadbox supports both synchronous and asynchronous upload. This can be achieved by using the asyncUpload property.
 
 Synchronous Upload -
-Selected files will be sent on the application form post action.	
+Selected files are sent to the application form post action.	
 
 Asynchronous Upload -
-Selected files will be sent to the server handler by using the AJAX Post.
+Selected files are sent to the server handler by using the AJAX Post.
 
 
 
@@ -185,7 +185,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set  asyncUpload API value during initialization
+//Sets the asyncUpload API value during initialization
         $("#uploadbox1").ejUploadbox({ asyncUpload: false });   
 </script>{% endhighlight %}
 
@@ -236,7 +236,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set autoUpload API value during initialization
+//Sets the autoUpload API value during initialization
         $("#uploadbox1").ejUploadbox({ autoUpload: true });     
 </script>{% endhighlight %}
 
@@ -323,7 +323,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set buttonText API during initialization  
+//Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ buttonText: { browse: "Choose File" }});
 </script>{% endhighlight %}
 
@@ -430,7 +430,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set buttonText API during initialization  
+//Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ buttonText: { upload: "Upload the File" }});
 </script>{% endhighlight %}
 
@@ -606,7 +606,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set customFileDetails API during initialization  
+//Sets the customFileDetails API during initialization  
         $("#uploadbox1").ejUploadbox({ customFileDetails: { name: true }});
 </script>{% endhighlight %}
 
@@ -644,7 +644,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set customFileDetails API during initialization  
+//Sets the customFileDetails API during initialization  
         $("#uploadbox1").ejUploadbox({ customFileDetails: { size:true}});
 </script>{% endhighlight %}
 
@@ -679,7 +679,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set customFileDetails API during initialization  
+//Sets the customFileDetails API during initialization  
         $("#uploadbox1").ejUploadbox({ customFileDetails: { status: true}});
 </script>{% endhighlight %}
 
@@ -699,7 +699,7 @@ Example
 
 
 
-Enable the title in File details for the dialog popup.
+Enables the title in File details for the dialog popup.
 
 
 
@@ -714,7 +714,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set customFileDetails API during initialization  
+//Sets the customFileDetails API during initialization  
         $("#uploadbox1").ejUploadbox({ customFileDetails: { title: true }});
 </script>{% endhighlight %}
 
@@ -765,7 +765,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set  dialogAction API value 
+//Sets the  dialogAction API value 
         $("#uploadbox1").ejUploadbox({ dialogAction:{ modal:false, closeOnComplete:false,resize: false, drag:true, content:"#controlid"}});     
 </script>{% endhighlight %}
 
@@ -785,7 +785,7 @@ Example
 
 
 
-TOnce uploaded successfully, dialog popup closes immediately.
+Once uploaded successfully, the dialog popup closes immediately.
 
 
 
@@ -800,7 +800,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set dialogAction API during initialization  
+//Sets the dialogAction API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogAction: { closeOnComplete: true }});
 </script>{% endhighlight %}
 
@@ -871,7 +871,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set dialogAction API during initialization  
+//Sets the dialogAction API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogAction: { drag: true }});
 </script>{% endhighlight %}
 
@@ -910,7 +910,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set dialogAction API during initialization  
+//Sets the dialogAction API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogAction: { modal: true }});
 </script>{% endhighlight %}
 
@@ -930,7 +930,7 @@ Example
 
 
 
-Displays the Uploadbox dialog at the given X and Y positions. X: Dialog set the left position value. Y: Dialog set the top position value.
+Displays the Uploadbox dialog at the given X and Y positions. X: Dialog sets the left position value. Y: Dialog sets the top position value.
 
 
 
@@ -961,7 +961,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set dialogPosition API value during initialization
+//Sets the dialogPosition API value during initialization
         $("#uploadbox1").ejUploadbox({dialogPosition: { X: 300, Y: 10 }});
 </script>{% endhighlight %}
 
@@ -1012,7 +1012,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set  dialogText API value during initialization
+//Sets the  dialogText API value during initialization
         $("#uploadbox1").ejUploadbox({ dialogText:{title:"Upload File List",name:"File Name",size:"File Size",status:"File Status" }});
 </script>{% endhighlight %}
 
@@ -1047,7 +1047,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set buttonText API during initialization  
+//Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogText: { name: "Name" }});
 </script>{% endhighlight %}
 
@@ -1082,7 +1082,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set buttonText API during initialization  
+//Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogText: { size: "Size" }});
 </script>{% endhighlight %}
 
@@ -1117,7 +1117,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set buttonText API during initialization  
+//Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogText: { status: "Status" }});
 </script>{% endhighlight %}
 
@@ -1152,7 +1152,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set buttonText API during initialization  
+//Sets the buttonText API during initialization  
         $("#uploadbox1").ejUploadbox({ dialogText: { title: "Upload Box" }});
 </script>{% endhighlight %}
 
@@ -1203,7 +1203,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set dragAreaText API value during initialization
+//Sets the dragAreaText API value during initialization
         $("#uploadbox1").ejUploadbox({ dropAreaText:"Drop files or click to upload"});
 </script> {% endhighlight %}
 
@@ -1254,7 +1254,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set dropAreaHeight API value during initialization
+//Sets the dropAreaHeight API value during initialization
         $("#uploadbox1").ejUploadbox({ dropAreaHeight:"100%"}); 
 </script>{% endhighlight %}
 
@@ -1305,7 +1305,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set dropAreaHeight API value during initialization
+//Sets the dropAreaHeight API value during initialization
         $("#uploadbox1").ejUploadbox({ dropAreaWidth:"100%");   
 </script> {% endhighlight %}
 
@@ -1324,7 +1324,7 @@ Example
 
 
 
-Based on the property value Uploadbox will be enabled or disabled.
+Based on the property value, Uploadbox is enabled or disabled.
 
 
 
@@ -1355,7 +1355,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set enabled API value during initialization
+//Sets the enabled API value during initialization
         $("#uploadbox1").ejUploadbox({ enabled: false });       
 </script>{% endhighlight %}
 
@@ -1406,7 +1406,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set enableRTL API value during initialization
+//Sets the enableRTL API value during initialization
         $("#uploadbox1").ejUploadbox({ enableRTL: true});       
 </script> {% endhighlight %}
 
@@ -1426,7 +1426,7 @@ Example
 
 
 
-Only files with the specified extension will be allowed to upload. This could be mentioned in the string format.
+Only the files with the specified extension is allowed to upload. This is mentioned in the string format.
 
 
 
@@ -1457,7 +1457,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set extensionsAllow API value during initialization
+//Sets the extensionsAllow API value during initialization
         $("#uploadbox1").ejUploadbox({ extensionsAllow: ".zip"  });     
 </script> {% endhighlight %}
 
@@ -1477,7 +1477,7 @@ Example
 
 
 
-Only files with the specified extension will be denied for upload. This could be mentioned in the string format.
+Only the files with the specified extension is denied for upload. This is mentioned in the string format.
 
 
 
@@ -1508,7 +1508,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set extensionsDeny API value during initialization
+//Sets the extensionsDeny API value during initialization
         $("#uploadbox1").ejUploadbox({ extensionsDeny: ".zip"  });      
 </script> {% endhighlight %}
 
@@ -1528,7 +1528,7 @@ Example
 
 
 
-Sets the maximum size limit for uploading the file. This could be mentioned in the number format.
+Sets the maximum size limit for uploading the file. This is mentioned in the number format.
 
 Note: fileSize represents the size of the individual file.
 
@@ -1562,7 +1562,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set extensionsAllow API value during initialization
+//Sets the extensionsAllow API value during initialization
         $("#uploadbox1").ejUploadbox({ fileSize: 31457280  });  
 </script> {% endhighlight %}
 
@@ -1582,7 +1582,7 @@ Example
 
 
 
-Sets the browse button height.
+Sets the height of the browse button.
 
 
 
@@ -1613,7 +1613,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set height API value during initialization
+//Sets the height API value during initialization
         $("#uploadbox1").ejUploadbox({ height:"40px"});
 </script>{% endhighlight %}
 
@@ -1689,7 +1689,7 @@ ej.Uploadbox.Locale["nl-BE"] = {
         closeToolTip: "dicht"
     }; 
 
-    //Sets locale API value on initialization.
+    //Sets the locale API value on initialization.
 $("#uploadbox1").ejUploadbox({ locale: "nl-BE" });        
 
 </script>{% endhighlight %}
@@ -1741,7 +1741,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set multipleFilesSelection API value during initialization
+//Sets the multipleFilesSelection API value during initialization
         $("#uploadbox1").ejUploadbox({ multipleFilesSelection: true });
 </script> {% endhighlight %}
 
@@ -1761,7 +1761,7 @@ Example
 
 
 
-You can push the file to the Uploadbox in the client side of the XHR supported browsers alone.
+You can push the file to the Uploadbox in the client-side of the XHR supported browsers alone.
 
 
 
@@ -1792,7 +1792,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To push new files via API value during initialization
+//Pushes the new files via API value during initialization
         $("#uploadbox1").ejUploadbox({ pushFile: files });      
 </script>{% endhighlight %}
 
@@ -1843,7 +1843,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set removeUrl API value during initialization
+//Sets the removeUrl API value during initialization
         $("#uploadbox1").ejUploadbox({ removeUrl: "http://js.syncfusion.com/demos/beta/removeFiles.ashx"});     
 </script>{% endhighlight %}
 
@@ -1894,7 +1894,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set saveUrl API value during initialization
+//Sets the saveUrl API value during initialization
         $("#uploadbox1").ejUploadbox({ saveUrl: "http://js.syncfusion.com/demos/beta/saveFiles.ashx"}); 
 </script>{% endhighlight %}
 
@@ -1945,7 +1945,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set showBrowseButton API value during initialization
+//Sets the showBrowseButton API value during initialization
         $("#uploadbox1").ejUploadbox({ showBrowseButton:true}); 
 </script> {% endhighlight %}
 
@@ -1965,7 +1965,7 @@ Example
 
 
 
-Specifies the file details to be displayed when selected for uploading. This can be done when showFileDetails is set to true.
+Specifies the file details to be displayed when selected for uploading. This can be done when the showFileDetails is set to true.
 
 
 
@@ -1995,7 +1995,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set showFileDetails API value during initialization
+//Sets the showFileDetails API value during initialization
         $("#uploadbox1").ejUploadbox({ showFileDetails: false });       
 </script>{% endhighlight %}
 
@@ -2069,7 +2069,7 @@ Example
 
 
 
-Sets the browse button width.
+Sets the width of the browse button.
 
 
 
@@ -2100,7 +2100,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//To set width API value during initialization
+//Sets the width API value during initialization
         $("#uploadbox1").ejUploadbox({ width:"120px"});
 </script>{% endhighlight %}
 
@@ -2127,7 +2127,7 @@ Example
 
 
 
-The destroy method destroys the control and brings the control to a pre-init state and all the events of the Upload control bound using this._on unbinds automatically.  
+The destroy method destroys the control and brings the control to a pre-init state. All the events of the Upload control is bound by using this._on unbinds automatically.  
 
 
 
@@ -2142,7 +2142,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-// Destroy Upload
+// Destroys Upload
 $("#uploadbox1").ejUploadbox();
 var uploadObj = $("#uploadbox1").data("ejUploadbox");
 uploadObj.destroy(); // destroy the Upload control
@@ -2154,7 +2154,7 @@ uploadObj.destroy(); // destroy the Upload control
 <div id="uploadbox1"></div> 
  
 <script>
-// destroy the Upload control
+// Destroys the Upload control
 $("#uploadbox1").ejUploadbox();
 $("#uploadbox1").ejUploadbox("destroy");        
 </script>{% endhighlight %}
@@ -2190,7 +2190,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-// Disable Uploadbox
+// Disables the Uploadbox
 $("#uploadbox1").ejUploadbox();
 var uploadObj = $("#uploadbox1").data("ejUploadbox");
 uploadObj.disable(); // disable the Uploadbox
@@ -2202,7 +2202,7 @@ uploadObj.disable(); // disable the Uploadbox
 <div id="uploadbox1"></div> 
  
 <script>
-// disable the Uploadbox
+// Disables the Uploadbox
 $("#uploadbox1").ejUploadbox();
 $("#uploadbox1").ejUploadbox("disable");        
 </script>{% endhighlight %}
@@ -2238,7 +2238,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-// enable Uploadbox
+// Enables the Uploadbox
 $("#uploadbox1").ejUploadbox();
 var uploadObj = $("#uploadbox1").data("ejUploadbox");
 uploadObj.enable(); // enable the Uploadbox
@@ -2250,7 +2250,7 @@ uploadObj.enable(); // enable the Uploadbox
 <div id="uploadbox1"></div> 
  
 <script>
-// enable the Uploadbox
+// Enables the Uploadbox
 $("#uploadbox1").ejUploadbox();
 $("#uploadbox1").ejUploadbox("enable"); 
 </script>{% endhighlight %}
@@ -2353,7 +2353,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//begin event for Uploadbox
+//Begin event for Uploadbox
 $("#uploadbox1").ejUploadbox({
    begin: function (args) {}
 });   
@@ -2437,7 +2437,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//cancel event for Uploadbox
+//Cancel event for Uploadbox
 $("#uploadbox1").ejUploadbox({
    cancel: function (args) {}
 });</script>{% endhighlight %}
@@ -2538,7 +2538,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//complete event for Uploadbox
+//Complete event for Uploadbox
 $("#uploadbox1").ejUploadbox({
    complete: function (args) {}
 });   
@@ -2645,7 +2645,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//complete event for Uploadbox
+//Complete event for Uploadbox
 $("#uploadbox1").ejUploadbox({
    complete: function (args) {}
 });   
@@ -2668,7 +2668,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 
-Fires when Uploadbox control is created.
+Fires when the Uploadbox control is created.
 
 <table class="params">
 <thead>
@@ -2746,7 +2746,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 
-Fires when Uploadbox control is destroyed.
+Fires when the Uploadbox control is destroyed.
 
 <table class="params">
 <thead>
@@ -2802,7 +2802,7 @@ Example
 <div id="uploadbox1"></div> 
  
 <script>
-//destroy event for Uploadbox
+//Destroy event for Uploadbox
 $("#uploadbox1").ejUploadbox({
    destroy: function (args) {}
 });  
