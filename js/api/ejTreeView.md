@@ -4877,7 +4877,7 @@ Fires before adding a node to TreeView.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -4964,7 +4964,7 @@ Fires before a node is collapsed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5042,7 +5042,7 @@ Fires before the node is cut in TreeView.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5137,7 +5137,7 @@ Fires before deleting a node in TreeView.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5239,7 +5239,7 @@ Fires before editing a node in TreeView.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5311,7 +5311,7 @@ Fires before expanding the node.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5395,7 +5395,7 @@ Fires before loading the nodes to TreeView.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5474,7 +5474,7 @@ Fires before pasting the node in TreeView.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5571,7 +5571,7 @@ Fires when the TreeView is created successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5637,7 +5637,7 @@ Fires when the TreeView is destroyed successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5703,7 +5703,7 @@ Fires before selecting a node in TreeView.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5789,7 +5789,7 @@ Fires before nodeEdit is successful.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5873,7 +5873,7 @@ Fires when the key is pressed successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set true when the event has to be cancelled, else false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -6835,7 +6835,7 @@ argument.dragTarget{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.draggedElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current dragging TreeView node</td>
+<td class="description last">returns the current dragging TreeView node.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -6898,7 +6898,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires before the dragged node is to be dropped.
+Fires before the dragged node is dropped.
 
 <table class="params">
 <thead>
