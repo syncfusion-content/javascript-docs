@@ -176,7 +176,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
      width: "100%",
                 allowResizing:true,
-       applicationTab: { Type: "ApplicationMenu", itemID: "ribbonmenu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "ribbonmenu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Clipboard", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -306,7 +306,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -322,8 +322,121 @@ $(function () {
 
 
 
-### applicationTab.text<span class="type-signature type string">string</span>
-{:#members:applicationtab-text}
+### applicationTab.backstageSettings<span class="type-signature type object">object</span>
+{:#members:applicationtab-backstageSettings}
+
+
+
+
+
+
+
+
+To specify the ribbon backstage page items.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* object
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### applicationTab.backstageSettings.text<span class="type-signature type string">string</span>
+{:#members:applicationtab-backstageSettings-text}
 
 
 
@@ -387,29 +500,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -422,7 +538,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -431,8 +547,9 @@ $(function() {
 
 
 
-### applicationTab.backStageHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:applicationtab-backstageheight}
+
+### applicationTab.backstageSettings.height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#members:applicationtab-backstageSettings-height}
 
 
 
@@ -496,29 +613,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -531,7 +651,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -539,8 +659,8 @@ $(function() {
 
 
 
-### applicationTab.backStageWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:applicationtab-backstagewidth}
+### applicationTab.backstageSettings.width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#members:applicationtab-backstageSettings-width}
 
 
 
@@ -604,29 +724,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -639,7 +762,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -648,8 +771,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage<span class="type-signature type array">array</span>
-{:#members:applicationtab-backstagepage}
+### applicationTab.backstageSettings.pages<span class="type-signature type array">array</span>
+{:#members:applicationtab-backstageSettings-pages}
 
 
 
@@ -713,29 +836,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -748,7 +874,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -757,8 +883,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage.id<span class="type-signature type string">string</span>
-{:#members:applicationtab-backstagepage-id}
+### applicationTab.backstageSettings.pages.id<span class="type-signature type string">string</span>
+{:#members:applicationtab-backstageSettings-pages-id}
 
 
 
@@ -822,29 +948,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -857,7 +986,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -866,8 +995,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage.text<span class="type-signature type string">string</span>
-{:#members:applicationtab-backstagepage-text}
+### applicationTab.backstageSettings.pages.text<span class="type-signature type string">string</span>
+{:#members:applicationtab-backstageSettings-pages-text}
 
 
 
@@ -931,29 +1060,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -966,7 +1098,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -975,8 +1107,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage.backStageItemType<span class="type-signature type enum">enum</span>
-{:#members:applicationtab-backstagepage-backstageitemtype}
+### applicationTab.backstageSettings.pages.itemType<span class="type-signature type enum">enum</span>
+{:#members:applicationtab-backstageSettings-pages-itemType}
 
 
 
@@ -998,7 +1130,7 @@ Default Value:
 
 
 
-* ej.Ribbon.backStageItemType.tab
+* ej.Ribbon.itemType.tab
 
 
 
@@ -1040,29 +1172,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -1075,7 +1210,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -1084,8 +1219,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage.contentId<span class="type-signature type string">string</span>
-{:#members:applicationtab-backstagepage-contentid}
+### applicationTab.backstageSettings.pages.contentID<span class="type-signature type string">string</span>
+{:#members:applicationtab-backstageSettings-pages-contentID}
 
 
 
@@ -1149,29 +1284,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -1184,7 +1322,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -1193,8 +1331,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage.enableSeparator<span class="type-signature type boolean">boolean</span>
-{:#members:applicationtab-backstagepage-enableseparator}
+### applicationTab.backstageSettings.pages.enableSeparator<span class="type-signature type boolean">boolean</span>
+{:#members:applicationtab-backstageSettings-pages-enableSeparator}
 
 
 
@@ -1258,29 +1396,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -1293,7 +1434,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -1302,8 +1443,121 @@ $(function() {
 
 
 
-### applicationTab.itemID<span class="type-signature type string">string</span>
-{:#members:applicationtab-itemid}
+### applicationTab.backstageSettings.headerWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#members:applicationtab-backstageSettings-headerWidth}
+
+
+
+
+
+
+
+
+To specify the width of backstage page header which contains tabs and buttons.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### applicationTab.menuItemID<span class="type-signature type string">string</span>
+{:#members:applicationtab-menuItemID}
 
 
 
@@ -1356,7 +1610,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1426,7 +1680,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1442,7 +1696,7 @@ $(function () {
 
 
 
-### applicationTab.Type<span class="type-signature type string">string</span>
+### applicationTab.type<span class="type-signature type enum">enum</span>
 {:#members:applicationtab-type}
 
 
@@ -1452,7 +1706,7 @@ $(function () {
 
 
 
-To specify the application menu or backstage page.Specify the type of application tab as "ApplicationMenu" to render the application menu or "BackStagePage" to render backstage page in the ribbon control.
+To specify the application menu or backstage page.Specify the type of application tab as "ej.Ribbon.applicationTabType.menu" to render the application menu or "ej.Ribbon.applicationTabType.backstage" to render backstage page in the ribbon control.
 
 
 
@@ -1465,7 +1719,7 @@ Default Value:
 
 
 
-* null
+*  ej.Ribbon.applicationTabType.menu
 
 
 
@@ -1496,7 +1750,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1569,7 +1823,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1668,7 +1922,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1767,7 +2021,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1866,7 +2120,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1964,7 +2218,7 @@ $(function () {
      width: "100%",
 // Set the disabledItemIndex during initialization. 
  disabledItemIndex: [1,2],
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -2040,7 +2294,7 @@ Example
 $(function () {
     $("#Ribbon").ejRibbon({
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -2122,7 +2376,7 @@ $(function () {
      width: "100%",
 // Set the selectedItemIndex during initialization. 
        selectedItemIndex : 2,
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -2199,7 +2453,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -2275,7 +2529,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -2345,7 +2599,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -2414,7 +2668,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -2494,7 +2748,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -2584,7 +2838,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -2664,7 +2918,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -2759,7 +3013,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -2874,7 +3128,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -2971,7 +3225,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -3067,7 +3321,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3196,7 +3450,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3329,7 +3583,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3462,7 +3716,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3595,7 +3849,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3728,7 +3982,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3861,7 +4115,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3990,7 +4244,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -4104,7 +4358,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [
                                 {
@@ -4192,7 +4446,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [
                                 {
@@ -4280,7 +4534,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [
                                 {
@@ -4368,7 +4622,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [
                                 {
@@ -4462,7 +4716,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -4542,7 +4796,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -4648,7 +4902,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -4777,7 +5031,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -4909,7 +5163,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -5039,7 +5293,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -5172,7 +5426,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -5301,7 +5555,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -5415,7 +5669,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -5495,7 +5749,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -5590,7 +5844,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -5719,7 +5973,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -5836,7 +6090,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -5918,7 +6172,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -5998,7 +6252,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -6078,7 +6332,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -6158,7 +6412,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -6239,7 +6493,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6307,7 +6561,7 @@ Example
 $(function () {
     $("#Ribbon").ejRibbon({
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", type: "custom", customContent: "<button id='customContent'>Custom Content</button>"
@@ -6377,7 +6631,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",enableGroupExpander: true,contentID:"btn"
@@ -6447,7 +6701,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6517,7 +6771,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6587,7 +6841,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6657,7 +6911,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6727,7 +6981,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6812,7 +7066,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6856,7 +7110,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6950,7 +7204,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6998,7 +7252,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7095,7 +7349,7 @@ Example
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                text: "One", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -7152,7 +7406,7 @@ $(function () {$("#Ribbon").ejRibbon({
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                text: "One", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -7275,7 +7529,7 @@ Example
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                text: "One", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -7323,7 +7577,7 @@ $(function () {$("#Ribbon").ejRibbon({
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                text: "One", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -7352,6 +7606,178 @@ $(function () {$("#Ribbon").ejRibbon({
         $("#Ribbon").ejRibbon("addTabGroupContent",1,0,0,content,2); 
 
 </script>  {% endhighlight %}
+
+
+
+
+
+
+### hideBackstage<span class="signature">()</span>
+{:#methods:hideBackstage}
+
+
+
+
+
+
+
+
+It is used to hide the ribbon backstage page.
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+//initialize the Ribbon object
+        var ribbonObj = $("#Ribbon").data("ejRibbon");
+        // hide the ribbon backstage page.
+        ribbonObj.hideBackstage();
+</script>{% endhighlight %}
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+$("#Ribbon").ejRibbon("hideBackstage");
+</script>{% endhighlight %}
 
 
 
@@ -7397,7 +7823,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7430,7 +7856,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7526,7 +7952,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7560,7 +7986,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7639,7 +8065,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7672,7 +8098,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7744,7 +8170,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7777,7 +8203,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7855,7 +8281,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7888,7 +8314,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7966,7 +8392,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7999,7 +8425,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8071,7 +8497,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8104,7 +8530,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8182,7 +8608,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8215,7 +8641,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8225,6 +8651,176 @@ $(function () {
 });                    
 $("#Ribbon").ejRibbon("setTabText","HOME","NEW"); 
 </script>  {% endhighlight %}
+
+
+
+
+
+
+### showBackstage<span class="signature">()</span>
+{:#methods:showBackstage}
+
+
+
+
+
+
+
+
+It is used to show the ribbon backstage page.
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+//initialize the Ribbon object
+        var ribbonObj = $("#Ribbon").data("ejRibbon");
+        // show the ribbon backstage page.
+        ribbonObj.showBackstage();
+</script>{% endhighlight %}
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+$("#Ribbon").ejRibbon("showBackstage");
+</script>{% endhighlight %}
 
 
 
@@ -8287,7 +8883,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8320,7 +8916,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8435,7 +9031,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8537,7 +9133,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8645,7 +9241,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8735,7 +9331,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8825,7 +9421,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8842,8 +9438,8 @@ $(function () {
 
 
 
-### onGalleryItemClick
-{:#events:ongalleryitemclick}
+### galleryItemClick
+{:#events:galleryItemClick}
 
 
 
@@ -8921,7 +9517,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
 
@@ -8973,7 +9569,7 @@ $(function () {
        }]
   }]
         }],
-      onGalleryItemClick: function (args) {}
+      galleryItemClick: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -8983,8 +9579,8 @@ $(function () {
 
 
 
-### onBackStageItemClick
-{:#events:onbackstageitemclick}
+### backstageItemClick
+{:#events:backstageItemClick}
 
 
 
@@ -9028,6 +9624,18 @@ argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the item clicked in the gallery.</td>
 </tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the id of the target item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.text{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the text of the target item.</td>
+</tr>
 </tbody>
 </table>
 
@@ -9067,29 +9675,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -9101,10 +9712,18 @@ $(function() {
                 contentID: "btn"
             }]
         }],
-      onBackStageItemClick: function (args) {}
+      backstageItemClick : function (args) {}
     });
-});	        
-</script> {% endhighlight %}
+});   
+</script>{% endhighlight %}
+
+
+
+
+
+
+### collapse
+{:#events:collapse}
 
 
 
@@ -9112,8 +9731,82 @@ $(function() {
 
 
 
-### onTabAdd
-{:#events:ontabadd}
+
+Triggered when the ribbon control is collapsed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ribbon model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function () {
+    $("#Ribbon").ejRibbon({
+// Set the width during initialization.         
+     width: "100%",
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+       tabs: [{
+           id: "home", text: "HOME", groups: [{
+                text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
+           }]
+        }],
+      collapse: function (args) {}
+  });
+});             
+</script>  {% endhighlight %}
+
+
+
+
+
+
+### expand
+{:#events:expand}
 
 
 
@@ -9122,7 +9815,91 @@ $(function() {
 
 
 
-Triggered after the new ribbon tab item add.
+Triggered when the ribbon control is expanded.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ribbon model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function () {
+    $("#Ribbon").ejRibbon({
+// Set the width during initialization.         
+     width: "100%",
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+       tabs: [{
+           id: "home", text: "HOME", groups: [{
+                text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
+           }]
+        }],
+      expand: function (args) {}
+  });
+});             
+</script>  {% endhighlight %}
+
+
+
+
+
+
+
+### tabAdd
+{:#events:tabAdd}
+
+
+
+
+
+
+
+
+Triggered after adding the new ribbon tab item.
 
 <table class="params">
 <thead>
@@ -9209,13 +9986,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-      onTabAdd: function (args) {}
+      tabAdd: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -9226,8 +10003,8 @@ $(function () {
 
 
 
-### onTabClick
-{:#events:ontabclick}
+### tabClick
+{:#events:tabClick}
 
 
 
@@ -9335,13 +10112,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-     onTabClick: function (args) {}
+     tabClick: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -9352,8 +10129,8 @@ $(function () {
 
 
 
-### onTabCreate
-{:#events:ontabcreate}
+### tabCreate
+{:#events:tabCreate}
 
 
 
@@ -9443,13 +10220,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-      onTabCreate: function (args) {}
+      tabCreate: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -9460,8 +10237,8 @@ $(function () {
 
 
 
-### onTabRemove
-{:#events:ontabremove}
+### tabRemove
+{:#events:tabRemove}
 
 
 
@@ -9515,15 +10292,9 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-removedTab{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns removed tab header.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-removedPanel{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns removed tab content panel.</td>
+removedIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the removed index.</td>
 </tr>
 </tbody>
 </table>
@@ -9557,13 +10328,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-      onTabRemove: function (args) {}
+      tabRemove: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -9574,8 +10345,8 @@ $(function () {
 
 
 
-### onTabSelect
-{:#events:ontabselect}
+### tabSelect
+{:#events:tabSelect}
 
 
 
@@ -9683,13 +10454,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-    onTabSelect: function (args) {}
+    tabSelect: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -9700,8 +10471,8 @@ $(function () {
 
 
 
-### onToggleButtonClick
-{:#events:ontogglebuttonclick}
+### toggleButtonClick
+{:#events:toggleButtonClick}
 
 
 
@@ -9773,13 +10544,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-      onToggleButtonClick: function (args) {}
+      toggleButtonClick: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
