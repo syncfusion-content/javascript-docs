@@ -132,7 +132,7 @@ Default Value:
 
 
 
-* { today: "Today", now: "Now", done: "Done", timeTitle: "Time" }
+* { today: "Today", timeNow: "Time Now", done: "Done", timeTitle: "Time" }
 
 
 
@@ -194,7 +194,7 @@ Example
 
 
 ### buttonText.now<span class="type-signature type string">String</span>
-{:#members:buttontext-now}
+{:#members:buttontext-timeNow}
 
 
 
@@ -218,7 +218,7 @@ Example
 <input type="text" id="datetime" />
 <script>
 //To set buttonText API during initialization  
-        $("#datetime").ejDateTimePicker({ buttonText: { now: "Now" }});
+        $("#datetime").ejDateTimePicker({ buttonText: { timeNow: "Current Time" }});
 </script>{% endhighlight %}
 
 
