@@ -38,7 +38,7 @@ In **ejGrid**, there is an option to group columns at **Grid Initialize** that i
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Grouping_images/Grouping_img1.png"%}
+![]("/js/Grid/Grouping_images/Grouping_img1.png")
 
 ## Group Buttons
 
@@ -68,13 +68,13 @@ Group buttons is one of the features under Grouping. It is helpful to do Groupin
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Grouping_images/Grouping_img2.png"%}
+![]("/js/Grid/Grouping_images/Grouping_img2.png")
 
 ## Hide Ungroup Button
 
 In **GroupDropArea**, grouped columns have an option to ungroup a column using **GroupButton**. It is easier than using Drag and Drop to ungroup columns.  By default this **UngroupButton** is visible. If you want to hide this button, you can use [`showUngroupButton`](/js/api/ejgrid#members:groupsettings-showungroupbutton "showUngroupButton") property to hide columns.
 
-{% include image.html url="/js/Grid/Grouping_images/Grouping_img3.png"%}
+![]("/js/Grid/Grouping_images/Grouping_img3.png")
 
 {% highlight html %}
 
@@ -99,7 +99,7 @@ In **GroupDropArea**, grouped columns have an option to ungroup a column using *
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Grouping_images/Grouping_img4.png"%}
+![]("/js/Grid/Grouping_images/Grouping_img4.png")
 
 ## AutoSize Drop Area
 
@@ -129,7 +129,7 @@ If you drag any header to Group column in Grid, it expands smoothly its Group Dr
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Grouping_images/Grouping_img5.png"%}
+![]("/js/Grid/Grouping_images/Grouping_img5.png")
 
 ## Hide Group Drop Area from Grid
 
@@ -160,5 +160,5 @@ When the [`showDropArea`](/js/api/ejgrid#members:groupsettings-showdroparea "sho
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Grouping_images/Grouping_img6.png"%}
+![]("/js/Grid/Grouping_images/Grouping_img6.png")
 

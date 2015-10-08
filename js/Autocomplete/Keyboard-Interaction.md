@@ -83,7 +83,7 @@ Provide Keyboard navigation access to AutoComplete.
 
  Run the sample, press **AccessKey + J** to focus in the AutoComplete widget and you can navigate using the arrow keys. Use the Escape key to close the popup.
 
-{% include image.html url="/js/Autocomplete/Keyboard-Interaction_images/Keyboard-Interaction_img1.png"%}
+![]("/js/Autocomplete/Keyboard-Interaction_images/Keyboard-Interaction_img1.png")
 
 
 

@@ -18,30 +18,30 @@ This section briefly explains how you can create a **PivotGrid** in your applica
 This section illustrates how to add and configure the PivotGrid component in an application with AdventureWorks Cycle cube to assess the Internet Sales Amount over a period of fiscal years across different customer geographic locations."
  
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img2.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img2.png") 
                                                                                    
 Open Visual Studio and create a new project by clicking **New Project**. Select the **Web category**, and then select the **ASP.NET Empty Web Application template** and then click **OK**. The following screenshot displays the **Project Creation Wizard**:
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img3.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img3.png") 
 
 ##Create HTML Page
 
 To create a new web form in the application, right-click on the project and select Add.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img4.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img4.png") 
 
 Click **New Item** and select **HTML Page** from the listed templates. Name the page **default.html** and click **OK**.
 After clicking **OK**, the referred assemblies look as follows.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img5.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img5.png") 
     
 ##Add References, Scripts, Styles and Control in HTML page
 
 ###Add References
 
 * In the **Solution Explorer**, right click the References folder and then click **Add Reference**.
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img6.png" %}
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img7.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img6.png") 
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img7.png") 
 * Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Compression.Base.dll, Syncfusion.Linq.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll,Syncfusion.PivotAnalysis.Base.dll, Syncfusion.XlsIO.Base.dll, Syncfusion.Pdf.Base.dll, Syncfusion.DocIO.Base.dll and Syncfusion.Olap.Base.dll. 
 * Click OK.
 
@@ -89,15 +89,15 @@ Add the following code example inside the &lt;body&gt; tag in the default.html p
 
 Right-click the project and select Add > New Folder. Name the folder as wcf. Let the folder name "wcf" be in lower case.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img8.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img8.png") 
 
 Now, right-click the wcf folder created and select Add > New Item.  
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img9.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img9.png") 
 
 In the **Add New Item** window, select **WCF Service** and name it as **PivotGridService.svc**. Click **Add**.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img10.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img10.png") 
 
 ###Add service methods inside Interface
 
@@ -339,30 +339,30 @@ This section explains how you can configure the **PivotGrid** component in an ap
 
 This example illustrates how the **PivotGrid** component tabulates the sales or revenue amount over a period of fiscal years across different locations. 
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img12.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img12.png") 
 
 Open **Visual Studio** and create a new project by clicking **New Project**. Select the **Web category**, and then select the **ASP.NET Empty Web Application template** and then click **OK**.  The following screenshot displays the **Project Creation Wizard**:
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img13.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img13.png") 
 
 ##Create HTML Page
 
 To create new web form in the application, right-click on the project and select Add.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img14.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img14.png") 
 
 Click New Item and select HTML Page from the listed templates. Name the page default.html and click OK.
 After clicking OK, the referred assemblies appear as follows.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img15.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img15.png") 
 
 ##Add References, Scripts, Styles and Control in HTML page
 
 ###Add References
 
 * In the Solution Explorer, right click the References folder and then click Add Reference.
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img16.png" %}
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img17.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img16.png") 
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img17.png") 
 * Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll, Syncfusion.Compression.Base.dll, Syncfusion.Linq.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll,Syncfusion.PivotAnalysis.Base and Syncfusion.Olap.Base.dll 
 * Click OK.    
 
@@ -410,15 +410,15 @@ Add the following code example inside the **&lt;body&gt;** tag in the **default.
 
 Right-click the project and select Add > New Folder. Name the folder as wcf. Let the folder name "wcf" be in lower case.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img18.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img18.png") 
 
 Now, right-click the wcf folder created and select Add > New Item.  
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img19.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img19.png") 
 
 In the Add New Item window, select WCF Service and name it as PivotGridService.svc. Click Add.
 
-{% include image.html url="/js/PivotGrid/Getting-Started_images/Getting-Started_img20.png" %}
+![]("/js/PivotGrid/Getting-Started_images/Getting-Started_img20.png") 
 
 ###Add service methods inside Interface
 

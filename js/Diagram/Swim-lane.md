@@ -11,7 +11,7 @@ documentation: ug
 
 Swim-lane diagrams are typically used to visualize a relationship between a business process and the department responsible for it by focusing on the logical relationships between activities. Swim lanes may be arranged either horizontally or vertically.
 
-{% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img1.png" %}
+![]("/js/Diagram/Swim-lane_images/Swim-lane_img1.png") 
 
 The following steps illustrates how to create a simple **swim lane**.
 
@@ -111,7 +111,7 @@ var swimlane = {
 }
 {% endhighlight %}
 The following screenshot is the swim lane generated from the example code.
-{% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img2.png" %}
+![]("/js/Diagram/Swim-lane_images/Swim-lane_img2.png") 
 
 ## Adding Nodes into the Lane 
 Now that the overall swim-lane skeleton is ready, add a node into the lane programmatically.
@@ -132,5 +132,5 @@ var swimlane = {
 }
 {% endhighlight %}
 After adding a `node` into a `lane`, the swim lane will display as follows.
-{% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img3.png" %}
+![]("/js/Diagram/Swim-lane_images/Swim-lane_img3.png") 
 Nodes can also be added into the `lanes` interactively by dropping nodes from the palette. Similarly `connectors` can also be added using `lane`'s `children` or from palette.

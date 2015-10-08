@@ -74,5 +74,5 @@ The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/DatePicker/Week-end-and-Special-dates-highlight_images/Week-end-and-Special-dates-highlight_img1.png"%}
+![]("/js/DatePicker/Week-end-and-Special-dates-highlight_images/Week-end-and-Special-dates-highlight_img1.png")
 

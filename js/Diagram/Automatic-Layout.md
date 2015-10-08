@@ -81,7 +81,7 @@ $("#diagram").ejDiagram({
 
 The following example illustrates the horizontal and vertical spacing of Hierarchical Layout.
 
-{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png" %}
+![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png") 
 
 ### Orientation
 
@@ -94,7 +94,7 @@ The `Orientation` property, `ej.datavisualization.Diagram.LayoutOrientations`, o
 
 The following image displays “Bottom to Top” orientation of layout.
 
-{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png"%}
+![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png")
 
 ## Organizational Chart
 
@@ -164,7 +164,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png" %}
+![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png") 
 
 ### Customizing the organizational chart
 
@@ -322,7 +322,7 @@ function getLayoutInfo(diagram, node, options) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png" %}
+![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png") 
 
 ### Assistant Support
 
@@ -343,4 +343,4 @@ function getLayoutInfo(diagram, node, options) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img11.png" %}
+![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img11.png") 

@@ -123,7 +123,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Layout_images/Layout_img1.png" %}
+![]("/js/OlapGauge/Layout_images/Layout_img1.png") 
 
 ### Column Count
 
@@ -227,5 +227,5 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Layout_images/Layout_img2.png" %}
+![]("/js/OlapGauge/Layout_images/Layout_img2.png") 
 

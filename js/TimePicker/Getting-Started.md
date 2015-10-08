@@ -13,7 +13,7 @@ This section explains briefly about how to create a **TimePicker** in your appli
 
 The following screenshot illustrates the functionality of a **TimePicker** with a time range of morning to evening. You can select a time to book a table, from a period of 9.00 AM to 6.00 PM for the current day. This avoids selecting a time prior to the morning.
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img1.png" %}
+![]("/js/TimePicker/Getting-Started_images/Getting-Started_img1.png") 
 
 ## Create a TimePicker 
 
@@ -137,7 +137,7 @@ Add the following styles to show **Time Picker** control.
 
 The following screenshot displays a **TimePicker** control.
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img2.png" %}
+![]("/js/TimePicker/Getting-Started_images/Getting-Started_img2.png") 
 
 ## Set the Min and Max Values
 
@@ -170,7 +170,7 @@ In a real-time hotel table booking scenario, the booking is open only for a limi
 
 The above code example displays the following output.
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img3.png" %}
+![]("/js/TimePicker/Getting-Started_images/Getting-Started_img3.png") 
 
 ## Set Time Interval
 
@@ -207,7 +207,7 @@ Execute the above code to achieve the desired result. You can select the date an
 
 
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img4.png" %}
+![]("/js/TimePicker/Getting-Started_images/Getting-Started_img4.png") 
 
 ## Display the Acknowledgement Message
 
@@ -249,7 +249,7 @@ The following code example shows how to display the **acknowledgement message**.
 
 The following screenshot displays the **acknowledgement message**.
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img5.png" %}
+![]("/js/TimePicker/Getting-Started_images/Getting-Started_img5.png") 
 
 ## Create Two TimePickers
 
@@ -357,7 +357,7 @@ Initialize **Two TimePickers** using the following code example.
 
 Execute the above code to achieve the desired result. By selecting the **Start Time** in the first **TimePicker**, you can select the End Time within the given range. This restricts you from selecting false time. This scenario is illustrated in the following screenshot.
 
-{% include image.html url="/js/TimePicker/Getting-Started_images/Getting-Started_img6.png" %}
+![]("/js/TimePicker/Getting-Started_images/Getting-Started_img6.png") 
 
 
 

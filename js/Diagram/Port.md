@@ -30,7 +30,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Port_images/Port_img1.png" %}
+![]("/js/Diagram/Port_images/Port_img1.png") 
 
 ## Connecting Ports
 
@@ -78,7 +78,7 @@ var connector = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Port_images/Port_img2.png" %}
+![]("/js/Diagram/Port_images/Port_img2.png") 
 
 ## Appearance
 

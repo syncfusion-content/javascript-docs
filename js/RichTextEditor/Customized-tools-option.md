@@ -106,7 +106,7 @@ Add the following code in your **HTML** page to render **RTE** with new tool ite
 
 The following screenshot demonstrates the functionality of new tool item.
 
-{% include image.html url="/js/RichTextEditor/Customized-tools-option_images/Customized-tools-option_img1.png" %}
+![]("/js/RichTextEditor/Customized-tools-option_images/Customized-tools-option_img1.png") 
 
 ## Remove the tool item
 
@@ -134,5 +134,5 @@ Add the following code in your **HTML** page.
     });
 {% endhighlight %}
 
-{% include image.html url="/js/RichTextEditor/Customized-tools-option_images/Customized-tools-option_img2.png" %}
+![]("/js/RichTextEditor/Customized-tools-option_images/Customized-tools-option_img2.png") 
 

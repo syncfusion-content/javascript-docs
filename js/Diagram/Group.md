@@ -31,7 +31,7 @@ var nodes = [ //Group node.
 ];
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Group_images/Group_img1.png" %}
+![]("/js/Diagram/Group_images/Group_img1.png") 
 
 ## Selecting a Group
 
@@ -39,15 +39,15 @@ You can select a group by clicking on any one of its children node. Consecutive 
 
 The following steps illustrate how to select an object that has two groups.
 
-{% include image.html url="/js/Diagram/Group_images/Group_img2.png" %}
+![]("/js/Diagram/Group_images/Group_img2.png") 
 
 1. Click on Node1 to select the outer group.
 2. Click again to select the inner group to which it belongs.
 3. Click again to select the child node after all groups have been traversed.
 
-{% include image.html url="/js/Diagram/Group_images/Group_img3.png" %}
+![]("/js/Diagram/Group_images/Group_img3.png") 
 
-{% include image.html url="/js/Diagram/Group_images/Group_img4.png" %}
+![]("/js/Diagram/Group_images/Group_img4.png") 
 
 ## Editing a Group
 
@@ -186,7 +186,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Group_images/Group_img9.png" %}
+![]("/js/Diagram/Group_images/Group_img9.png") 
 
 ### Stack panel
 
@@ -231,4 +231,4 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Group_images/Group_img10.png" %}
+![]("/js/Diagram/Group_images/Group_img10.png") 

@@ -15,25 +15,25 @@ You can show the relationship between two tasks in Gantt control. These relation
 
 You cannot start a task until the other task also starts.
 
-{% include image.html url="/js/Gantt/Task-Relationship_images/Task-Relationship_img1.png"%}
+![]("/js/Gantt/Task-Relationship_images/Task-Relationship_img1.png")
 
 ## Start to Finish(SF)
 
 You cannot finish a task until the other task is started.
 
-{% include image.html url="/js/Gantt/Task-Relationship_images/Task-Relationship_img2.png"%}
+![]("/js/Gantt/Task-Relationship_images/Task-Relationship_img2.png")
 
 ## Finish to Start(FS)
 
 You cannot start a task until the other task is completed.
 
-{% include image.html url="/js/Gantt/Task-Relationship_images/Task-Relationship_img3.png"%}
+![]("/js/Gantt/Task-Relationship_images/Task-Relationship_img3.png")
 
 ## Finish to Finish(FF)
 
 You cannot finish a task until the other task is completed.
 
-{% include image.html url="/js/Gantt/Task-Relationship_images/Task-Relationship_img4.png"%}
+![]("/js/Gantt/Task-Relationship_images/Task-Relationship_img4.png")
 
 The following code example shows you how to show the predecessor in the Gantt control.
 
@@ -48,5 +48,5 @@ The following code example shows you how to show the predecessor in the Gantt co
 
 The following screenshot displays the output of the above code. 
 
-{% include image.html url="/js/Gantt/Task-Relationship_images/Task-Relationship_img5.png"%}
+![]("/js/Gantt/Task-Relationship_images/Task-Relationship_img5.png")
 

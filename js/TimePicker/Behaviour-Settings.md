@@ -35,7 +35,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 {% endhighlight %}
 
 
-{% include image.html url="/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img1.png" %}
+![]("/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img1.png") 
 
 ## Enable/Disable TimePicker widget
 
@@ -73,9 +73,9 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img2.png" %}
+![]("/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img2.png") 
 
-{% include image.html url="/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img3.png" %}
+![]("/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img3.png") 
 
 ## Restrict editing
 
@@ -105,7 +105,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 The following screenshot illustrates a **TimePicker** textbox configured to restrict editing.
 
-{% include image.html url="/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img4.png" %}
+![]("/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img4.png") 
 
 ## Rounded Corner
 
@@ -135,7 +135,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 The following screenshot illustrates a **TimePicker** when **showRoundedCorner** is set to “**true**”.
 
-{% include image.html url="/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img5.png" %}
+![]("/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img5.png") 
 
 ## Scaling
 
@@ -168,7 +168,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img6.png" %}
+![]("/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img6.png") 
 
 ### Changing TimePicker PopupHeight and PopupWidth
 
@@ -197,7 +197,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img7.png" %}
+![]("/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img7.png") 
 
 ## State persistence
 
@@ -261,7 +261,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img8.png" %}
+![]("/js/TimePicker/Behaviour-Settings_images/Behaviour-Settings_img8.png") 
 
 ## Interval
 

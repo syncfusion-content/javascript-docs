@@ -136,5 +136,5 @@ Content inside the twitter.html
 
 The output of **Dialog** with **AJAX** content.
 
-{% include image.html url="/js/Dialog/AJAX-Content_images/AJAX-Content_img1.png" %}
+![]("/js/Dialog/AJAX-Content_images/AJAX-Content_img1.png") 
 

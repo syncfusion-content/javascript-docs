@@ -41,5 +41,5 @@ Add the following code inside the **script** tag.
 
 
 
-{% include image.html url="/js/Tile/Configure-Badge_images/Configure-Badge_img1.png"%}
+![]("/js/Tile/Configure-Badge_images/Configure-Badge_img1.png")
 

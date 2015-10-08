@@ -117,4 +117,4 @@ For instance let me bind data to Grid using `remoteSaveAdaptor` and extend it to
 
 The output is as follows:
 
-{% include image.html url="/js/Grid/How-to/DCustom-Binding-for-Grid-CRUD-operation_images/Custom-Binding-for-Grid-CRUD-operation_img1.png"%}
+![]("/js/Grid/How-to/DCustom-Binding-for-Grid-CRUD-operation_images/Custom-Binding-for-Grid-CRUD-operation_img1.png")

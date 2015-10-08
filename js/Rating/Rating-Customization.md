@@ -43,7 +43,7 @@ The following code example is used to render the **Rating** control with customi
 
 The following screenshot illustrates the **Rating** with custom defined value.
 
-{% include image.html url="/js/Rating/Rating-Customization_images/Rating-Customization_img1.png" %}
+![]("/js/Rating/Rating-Customization_images/Rating-Customization_img1.png") 
 
 ### Min Value
 
@@ -80,7 +80,7 @@ The following code example is used to render the **Rating** control with **minim
 
 The following screenshot illustrates **Rating** with **minimum** **value**.         
 
-{% include image.html url="/js/Rating/Rating-Customization_images/Rating-Customization_img2.png" %}
+![]("/js/Rating/Rating-Customization_images/Rating-Customization_img2.png") 
 
 ### Max Value
 
@@ -116,7 +116,7 @@ The following code example is used to render the Rating control with **maximum**
 
 The following screenshot illustrates the **Rating** with **maximum** **value**.
 
-{% include image.html url="/js/Rating/Rating-Customization_images/Rating-Customization_img3.png" %}
+![]("/js/Rating/Rating-Customization_images/Rating-Customization_img3.png") 
 
 ## Set Precision
 
@@ -171,7 +171,7 @@ The following code example is used to render the **Rating** control with **Preci
 
 The following screenshot illustrates the **Rating** with **Precision**.
 
-{% include image.html url="/js/Rating/Rating-Customization_images/Rating-Customization_img4.png" %}
+![]("/js/Rating/Rating-Customization_images/Rating-Customization_img4.png") 
 
 ## Increment Step
 
@@ -207,7 +207,7 @@ The following code example is used to render the **Rating** control with customi
 
 The following screenshot illustrates the **Rating** with customized increment.
 
-{% include image.html url="/js/Rating/Rating-Customization_images/Rating-Customization_img5.png" %}
+![]("/js/Rating/Rating-Customization_images/Rating-Customization_img5.png") 
 
 ## Resetting values
 
@@ -254,7 +254,7 @@ The following code example is used to render the **Rating** control with **allow
 
 The following screenshot illustrates the **Rating** with **allowReset**.
 
-{% include image.html url="/js/Rating/Rating-Customization_images/Rating-Customization_img6.png" %}
+![]("/js/Rating/Rating-Customization_images/Rating-Customization_img6.png") 
 
 ## Read only
 
@@ -291,7 +291,7 @@ The following code example is used to render the **Rating** control with **readO
 
 The following screenshot illustrates the **Rating** with **readOnly.**
 
-{% include image.html url="/js/Rating/Rating-Customization_images/Rating-Customization_img7.png" %}
+![]("/js/Rating/Rating-Customization_images/Rating-Customization_img7.png") 
 
 ## Enable or Disable
 
@@ -329,5 +329,5 @@ The following code example is used to render the **Rating** control with **enabl
 
 The following screenshot illustrates the **Rating** in **disabled** form.
 
-{% include image.html url="/js/Rating/Rating-Customization_images/Rating-Customization_img8.png" %}
+![]("/js/Rating/Rating-Customization_images/Rating-Customization_img8.png") 
 

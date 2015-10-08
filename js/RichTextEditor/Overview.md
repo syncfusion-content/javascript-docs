@@ -13,7 +13,7 @@ The **Essential JavaScript RichTextEditor (RTE)** control enables you to visuall
 
 ## Control structure
 
-{% include image.html url="/js/RichTextEditor/Overview_images/Overview_img1.png" %}
+![]("/js/RichTextEditor/Overview_images/Overview_img1.png") 
 
 ## Key Feature
 

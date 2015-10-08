@@ -58,7 +58,7 @@ diagram.align("center");
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img1.png" %}
+![]("/js/Diagram/Commands_images/Commands_img1.png") 
 
 ### Horizontal Alignment command
 
@@ -77,7 +77,7 @@ diagram.align("middle");
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img2.png" %}
+![]("/js/Diagram/Commands_images/Commands_img2.png") 
 
 ## Spacing Command
 
@@ -110,7 +110,7 @@ diagram.spaceAcross();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img3.png" %}
+![]("/js/Diagram/Commands_images/Commands_img3.png") 
 
 ### spaceDown Command
 
@@ -123,7 +123,7 @@ diagram.spaceDown();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img4.png" %}
+![]("/js/Diagram/Commands_images/Commands_img4.png") 
 
 ## Sizing Command
 
@@ -164,7 +164,7 @@ diagram.sameWidth();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img5.png" %}
+![]("/js/Diagram/Commands_images/Commands_img5.png") 
 
 ## Clipboard command
 
@@ -207,7 +207,7 @@ diagram.paste();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img6.png"%}
+![]("/js/Diagram/Commands_images/Commands_img6.png")
 
 ## Grouping Command
 
@@ -256,7 +256,7 @@ diagram.bringToFront();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img7.png" %}
+![]("/js/Diagram/Commands_images/Commands_img7.png") 
 
 ### sendToBack Command
 
@@ -269,7 +269,7 @@ diagram.sendToBack();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img8.png" %}
+![]("/js/Diagram/Commands_images/Commands_img8.png") 
 
 ### moveForward Command
 
@@ -282,7 +282,7 @@ diagram.moveForward();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img9.png" %}
+![]("/js/Diagram/Commands_images/Commands_img9.png") 
 
 ### sendBackward Command
 
@@ -295,7 +295,7 @@ diagram.sendBackward();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img10.png" %}
+![]("/js/Diagram/Commands_images/Commands_img10.png") 
 
 ## Zoom Command
 
@@ -363,7 +363,7 @@ diagram.nudge("up", 5);
 
 The corresponding arrow keys are used to move the selected elements to up, down, left or right by 1 pixel.
 
-{% include image.html url="/js/Diagram/Commands_images/Commands_img11.png" %}
+![]("/js/Diagram/Commands_images/Commands_img11.png") 
 
 `nudge` command are particularly useful for accurate placement of elements on the Diagram as it allows you to move by 1 pixel each time.
 

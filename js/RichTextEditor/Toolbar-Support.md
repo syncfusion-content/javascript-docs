@@ -84,9 +84,9 @@ Add the following code in your script section.
 
 {% endhighlight %}
 
-{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img1.png"%}
+![]("/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img1.png")
 
 The following image consists of formatted content by using the available toolbar items in **RTE** control.
 
-{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img2.png"%}
+![]("/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img2.png")
 

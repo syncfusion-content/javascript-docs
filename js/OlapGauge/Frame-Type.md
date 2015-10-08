@@ -116,7 +116,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Frame-Type_images/Frame-Type_img1.png" %}
+![]("/js/OlapGauge/Frame-Type_images/Frame-Type_img1.png") 
 
 ## Half Circle
 
@@ -220,5 +220,5 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Frame-Type_images/Frame-Type_img2.png" %}
+![]("/js/OlapGauge/Frame-Type_images/Frame-Type_img2.png") 
 

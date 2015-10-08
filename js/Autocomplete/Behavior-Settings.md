@@ -68,7 +68,7 @@ The following steps explain the configuration of the filtering conditions for an
 
 The following image is the output for AutoComplete control that filters list items based on the **endswith** option.
 
-{% include image.html url="/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img1.png"%}
+![]("/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img1.png")
 
 ## AutoFill
 
@@ -110,7 +110,7 @@ The following steps explain how to enable the **AutoFill** property for an **Aut
 
 The following image is the output for **AutoComplete** when **enableAutoFill** is set to ‘**True**’.
 
-{% include image.html url="/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img2.png"%}
+![]("/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img2.png")
 
 ## Sorting Items
 
@@ -149,7 +149,7 @@ The following steps explain how to enable the **sorting** property for an AutoCo
 
 The following image is the output for AutoComplete when “**sortOrder**” is configured.
 
-{% include image.html url="/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img3.png"%}
+![]("/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img3.png")
 
 ## Distinct List items
 
@@ -220,7 +220,7 @@ The following steps explain you how to enable the **distinct** property for an A
 
 The following images are the outputs for AutoComplete when **enableDistinct** is set to “True” and “False”.
 
-{% include image.html url="/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img4.png"%}
+![]("/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img4.png")
 
 ## Show Popup button
 
@@ -259,7 +259,7 @@ The following steps explains you how to configure the **Popup button** for an Au
 
 The following image is the output for **AutoComplete** when **showPopupButton** is enabled.
 
-{% include image.html url="/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img5.png"%}
+![]("/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img5.png")
 
 ## Restrict editing
 
@@ -298,7 +298,7 @@ The following steps help you to disable editing in an **AutoComplete** textbox.
 
 The following image is the output for the **AutoComplete** textbox configured to restrict editing.
 
-{% include image.html url="/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img6.png"%}
+![]("/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img6.png")
 
 ## Empty Result settings
 
@@ -340,5 +340,5 @@ The following steps allow you to set text for **empty results** of an AutoComple
 
 The following image is the output of the **AutoComplete** textbox when the list doesn’t return any value.
 
-{% include image.html url="/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img7.png"%}
+![]("/js/Autocomplete/Behavior-Settings_images/Behavior-Settings_img7.png")
 

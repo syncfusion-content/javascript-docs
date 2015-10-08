@@ -54,7 +54,7 @@ The output for **PercentageTextBox** with **decimalPlaces** is as follows.
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img1.png" %}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img1.png") 
 
 ## Persistence Support
 
@@ -100,9 +100,9 @@ The output for **PercentageTextBox** with **enablePersistence** is as follows. Y
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img2.png" Caption="PercentageTextBox at initial load"%}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img2.png" Caption="PercentageTextBox at initial load")
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="PercentageTextBox after changing the value and a page load "%}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="PercentageTextBox after changing the value and a page load ")
 
 
 
@@ -155,7 +155,7 @@ The output for **PercentageTextBox** when **enableStrictMode** is **“true”**
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img4.png" %}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img4.png") 
 
 ## Enabled or Disabled
 
@@ -201,9 +201,9 @@ The output for **PercentageTextBox** when **enabled** is **“true”** and when
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img5.png" Caption="PercentageTextBox with enabled as true"%}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img5.png" Caption="PercentageTextBox with enabled as true")
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img6.png" Caption="PercentageTextBox with enabled as false"%}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img6.png" Caption="PercentageTextBox with enabled as false")
 
 ## Adjusting PercentageTextBox Size
 
@@ -250,7 +250,7 @@ The output for **PercentageTextBox** after setting “**height**” and “**wid
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img7.png" %}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img7.png") 
 
 ## Increment Step
 
@@ -296,11 +296,11 @@ The output for **PercentageTextBox** with **incrementStep** is as follows**.**
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img8.png" Caption="PercentageTextBox at initial load"%}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img8.png" Caption="PercentageTextBox at initial load")
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img9.png" Caption="PercentageTextBox after increasing one step"%}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img9.png" Caption="PercentageTextBox after increasing one step")
 
 ## Define Name
 
@@ -382,7 +382,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 The output for **PercentageTextBox** with the **value** property is as follows**.**
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img11.png" %}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img11.png") 
 
 ## Define maxValue and minValue
 
@@ -436,11 +436,11 @@ The output for **PercentageTextBox** with basic properties is as follows**.**
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img12.png" Caption="PercentageTextBox with maxValue"%}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img12.png" Caption="PercentageTextBox with maxValue")
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img13.png" Caption="PercentageTextBox with minValue"%}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img13.png" Caption="PercentageTextBox with minValue")
 
 ## Read Only Support
 
@@ -487,7 +487,7 @@ The output for **PercentageTextBox** when **readOnly** is “**True**” is as f
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img14.png" %}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img14.png") 
 
 ## Appearance
 
@@ -581,7 +581,7 @@ The output for **PercentageTextBox** after applying **cssClass** is as follows.
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img15.png" %}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img15.png") 
 
 ## Rounded Corner Support
 
@@ -628,7 +628,7 @@ The output for **PercentageTextBox** when **showRoundedCorner** is “**true**�
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img16.png" %}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img16.png") 
 
 ## Spin Button Support
 
@@ -674,9 +674,9 @@ The output for **PercentageTextBox** when **showSpinButton** is “**True**”.
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img17.png" Caption="PercentageTextBox with showSpinButton is true"%}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img17.png" Caption="PercentageTextBox with showSpinButton is true")
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img18.png" Caption="PercentageTextBox with showSpinButton is false"%}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img18.png" Caption="PercentageTextBox with showSpinButton is false")
 
 ## Water Mark Text Support
 
@@ -721,5 +721,5 @@ The output for **PercentageTextBox** after applying **watermarkText** is as foll
 
 
 
-{% include image.html url="/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img19.png" %}
+![]("/js/PercentageTextBox/Behavior-Settings_images/Behavior-Settings_img19.png") 
 

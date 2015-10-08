@@ -131,5 +131,5 @@ Add the following code in your **HTML** section to initialize the **RTE** with S
 {% endhighlight %}
 
 
-{% include image.html url="/js/RichTextEditor/Localization_images/Localization_img1.png" %}
+![]("/js/RichTextEditor/Localization_images/Localization_img1.png") 
 

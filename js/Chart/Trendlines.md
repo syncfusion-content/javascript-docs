@@ -27,7 +27,7 @@ EjChart can generate Trendlines for Cartesian type series *(line, column, scatte
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img1.png" Caption="Adding Trendline to the chart"%}
+![]("/js/Chart/Trendlines_images/Trendlines_img1.png" Caption="Adding Trendline to the chart")
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/trendlines) here to view the Trendlines online demo sample.
 
@@ -53,7 +53,7 @@ A trendline can be customized using properties such as **fill**, **width**, **da
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img2.png" Caption="Customizing the trendlines"%}
+![]("/js/Chart/Trendlines_images/Trendlines_img2.png" Caption="Customizing the trendlines")
 
 
 ## Types of Trendline
@@ -86,7 +86,7 @@ To render Linear Trendline, you have to set *type* as **"linear"**.
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img3.png" Caption="Adding Linear Trendline to the chart"%}
+![]("/js/Chart/Trendlines_images/Trendlines_img3.png" Caption="Adding Linear Trendline to the chart")
 
 ### Exponential
 
@@ -108,7 +108,7 @@ Exponential Trendline can be rendered by setting the *type* as **"exponential"**
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img4.png" Caption="Adding Exponential Trendline to the chart"%}
+![]("/js/Chart/Trendlines_images/Trendlines_img4.png" Caption="Adding Exponential Trendline to the chart")
 
 ### Logarithmic
 
@@ -130,7 +130,7 @@ Logarithmic Trendline can be rendered by setting the *type* as **"Logarithmic"**
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img5.png" Caption="Adding Logarithmic Trendline to the chart"%}
+![]("/js/Chart/Trendlines_images/Trendlines_img5.png" Caption="Adding Logarithmic Trendline to the chart")
 
 ### Power
 
@@ -152,7 +152,7 @@ Power Trendline can be rendered by setting the *type* of trendline as **"power"*
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img6.png" Caption="Adding Power Trendline to the chart"%}
+![]("/js/Chart/Trendlines_images/Trendlines_img6.png" Caption="Adding Power Trendline to the chart")
 
 ### Polynomial
 
@@ -174,7 +174,7 @@ Polynomial Trendline can be rendered by setting trendline *type* as **"polynomia
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img7.png" Caption="Adding Polynomial Trendline to the chart"%}
+![]("/js/Chart/Trendlines_images/Trendlines_img7.png" Caption="Adding Polynomial Trendline to the chart")
 
 ## Forecasting
 
@@ -204,7 +204,7 @@ The value set for **forwardForecast** is used to determine the distance moving t
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img8.png" Caption="Adding ForwardForecast value to Chart Trendline"%}
+![]("/js/Chart/Trendlines_images/Trendlines_img8.png" Caption="Adding ForwardForecast value to Chart Trendline")
 
 
 ### Backward Forecasting
@@ -228,7 +228,7 @@ The value set for **backwardForecast** is used to determine the past trends.
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img9.png" Caption="Adding BackwardForecast  value to Chart Trendline"%}
+![]("/js/Chart/Trendlines_images/Trendlines_img9.png" Caption="Adding BackwardForecast  value to Chart Trendline")
 
 ## Trendlines Legend
 
@@ -251,4 +251,4 @@ To display legend item for trendline, use **name** property. You can interact wi
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img10.png" Caption="Hide the Trendline series on legend mouse click"%}
+![]("/js/Chart/Trendlines_images/Trendlines_img10.png" Caption="Hide the Trendline series on legend mouse click")

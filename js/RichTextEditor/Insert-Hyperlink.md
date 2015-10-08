@@ -35,5 +35,5 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 {% endhighlight %}
 
 
-{% include image.html url="/js/RichTextEditor/Insert-Hyperlink_images/Insert-Hyperlink_img1.png" %}
+![]("/js/RichTextEditor/Insert-Hyperlink_images/Insert-Hyperlink_img1.png") 
 

@@ -58,7 +58,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Range
 Execute the above code example to render the following output.
 
 
-{% include image.html url="/js/Slider/Updating-slider-value_images/Updating-slider-value_img1.png" %}
+![]("/js/Slider/Updating-slider-value_images/Updating-slider-value_img1.png") 
 
 ## MinValue
 
@@ -107,7 +107,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Defaul
 
 Execute the above code example to render the following output.
 
-{% include image.html url="/js/Slider/Updating-slider-value_images/Updating-slider-value_img2.png" %}
+![]("/js/Slider/Updating-slider-value_images/Updating-slider-value_img2.png") 
 
 In the above example, for **Default Slider** the slider value starts from “40” (min value) and ends in “80” (max value), so the slider handle is placed at the center of the Slider while specifying the value as “60”.
 

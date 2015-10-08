@@ -45,7 +45,7 @@ Columns are a key feature in **Grid** to define schema in a control based on a d
 
 The following is the result of column formatting.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img1.png" %}
+![]("/js/Grid/Columns_images/Columns_img1.png") 
 
 ## Template
 
@@ -82,7 +82,7 @@ A **template** is used to render a specific template to a particular column usin
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img2.png"%}
+![]("/js/Grid/Columns_images/Columns_img2.png")
 
 ## Custom Attribute
 
@@ -121,7 +121,7 @@ The following output is displayed as a result of the above code example.
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img3.png"%}
+![]("/js/Grid/Columns_images/Columns_img3.png")
 
 ## Read only
 
@@ -157,7 +157,7 @@ The following output is displayed as a result of the above code example.
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img4.png"%}
+![]("/js/Grid/Columns_images/Columns_img4.png")
 
 ## Controlling Grid actions
 
@@ -196,7 +196,7 @@ In **ejGrid**, you can control **Grid** actions through [`allowSorting`](/js/api
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img5.png"%}
+![]("/js/Grid/Columns_images/Columns_img5.png")
 
 ## Auto-generate column
 
@@ -223,7 +223,7 @@ The columns are automatically generated from the datasource and you do not need 
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img6.png"%}
+![]("/js/Grid/Columns_images/Columns_img6.png")
 
 ## Foreign key columns
 
@@ -258,7 +258,7 @@ Foreign key is a field in relational table using [`foreignKeyField`](/js/api/ejg
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img7.png"%}
+![]("/js/Grid/Columns_images/Columns_img7.png")
 
 ## Cell Merging
 
@@ -299,7 +299,7 @@ Cell merging feature enables to merge cells based on your requirement. The follo
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img8.png"%}
+![]("/js/Grid/Columns_images/Columns_img8.png")
 
 _Cell Merging_
 
@@ -332,7 +332,7 @@ AutoWrap feature allows you to wrap cell content to next line when the content e
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img9.png"%}
+![]("/js/Grid/Columns_images/Columns_img9.png")
 
 ## Column Chooser
 
@@ -357,7 +357,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img10.png"%}
+![]("/js/Grid/Columns_images/Columns_img10.png")
 
 ## DisableHtmlEncode
 
@@ -392,7 +392,7 @@ The following code example shows you how to set [`disableHtmlEncode`](/js/api/ej
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Columns_images/Columns_img11.png"%}
+![]("/js/Grid/Columns_images/Columns_img11.png")
 
 ## Stacked Header
 
@@ -427,7 +427,13 @@ The **Stacked Header** feature allows additional header rows that span across th
 
 The following output is displayed as a result of the above code example.
 
-{%include image.html url="/js/Grid/Columns_images/Columns_img12.png" Caption="Stacked Header"%}
+![]("/js/Grid/Columns_images/Columns_img12.png")
 
-{%include image.html url="/js/Grid/Columns_images/Columns_img13.png" Caption="Stacked Header with Grouping support"%}
+Stacked Header
+{:.caption}
+
+![]("/js/Grid/Columns_images/Columns_img13.png")
+
+Stacked Header with Grouping support
+{:.caption}
 

@@ -57,7 +57,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/WaitingPopup/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" %}
+![]("/js/WaitingPopup/Appearance-and-Styling_images/Appearance-and-Styling_img1.png") 
 
 ## Template
 
@@ -182,7 +182,7 @@ N> Images for this sample are available ‘installed sample location /images/wai
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/WaitingPopup/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" %}
+![]("/js/WaitingPopup/Appearance-and-Styling_images/Appearance-and-Styling_img2.png") 
 
 ## CSS Class
 
@@ -250,7 +250,7 @@ The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/WaitingPopup/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" %}
+![]("/js/WaitingPopup/Appearance-and-Styling_images/Appearance-and-Styling_img3.png") 
 
 
 

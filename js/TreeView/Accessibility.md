@@ -151,4 +151,4 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 The output for **TreeView** when **allowKeyboardNavigation** is set to “**True**”.
 
-{% include image.html url="/js/TreeView/Accessibility_images/Accessibility_img1.png"%}
+![]("/js/TreeView/Accessibility_images/Accessibility_img1.png")

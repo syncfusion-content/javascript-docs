@@ -97,7 +97,7 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% include image.html url="/js/DateTimePicker/Start-and-Depth-level_images/Start-and-Depth-level_img1.png"%}
+![]("/js/DateTimePicker/Start-and-Depth-level_images/Start-and-Depth-level_img1.png")
 
 
 ## Depth Level
@@ -122,6 +122,6 @@ The following code snippet is set to depth level in **DateTimePicker.**
 
 
 
-{% include image.html url="/js/DateTimePicker/Start-and-Depth-level_images/Start-and-Depth-level_img2.png"%}
+![]("/js/DateTimePicker/Start-and-Depth-level_images/Start-and-Depth-level_img2.png")
 
 

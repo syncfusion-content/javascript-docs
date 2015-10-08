@@ -28,9 +28,9 @@ The following code example explains how to define the `splitterPosition` propert
 
 {% endhighlight %}
 
-{% include image.html url="/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img2.png" Caption="Gantt with 30 % splitter position"%}
+![]("/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img2.png" Caption="Gantt with 30 % splitter position")
 
-{% include image.html url="/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img3.png" Caption="Gantt with 50% splitter position"%}
+![]("/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img3.png" Caption="Gantt with 50% splitter position")
 
-{% include image.html url="/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img4.png" Caption="Gantt with 600px splitter position"%}
+![]("/js/Gantt/How-to/Change-Splitter-position_images/Change-Splitter-position_img4.png" Caption="Gantt with 600px splitter position")
 

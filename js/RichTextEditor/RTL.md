@@ -49,5 +49,5 @@ Add the following code to the script section in your **HTML** page to initialize
 {% endhighlight %}
 
 
-{% include image.html url="/js/RichTextEditor/RTL_images/RTL_img1.png" %}
+![]("/js/RichTextEditor/RTL_images/RTL_img1.png") 
 

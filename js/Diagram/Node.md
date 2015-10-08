@@ -11,7 +11,7 @@ documentation: ug
 
 Nodes are graphical object that represents visual data to be placed on the page.
 
-{% include image.html url="/js/Diagram/Node_images/Node_img1.png" %}
+![]("/js/Diagram/Node_images/Node_img1.png") 
 
 ## Create Node
 
@@ -39,7 +39,7 @@ $("#Diagram").ejDiagram({
 });
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img2.png" %}
+![]("/js/Diagram/Node_images/Node_img2.png") 
 
 List of preloaded nodes from symbol palette are added to the Diagram by clicking on the palette nodes or by dragging a node and dropping on the Diagram. The method to add node/connector to palette and drag and drop on Diagram is explained in palettesection
 
@@ -83,7 +83,7 @@ node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img3.png" %}
+![]("/js/Diagram/Node_images/Node_img3.png") 
 
 ### Html
 
@@ -108,7 +108,7 @@ var node = {
 }
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img4.png" %}
+![]("/js/Diagram/Node_images/Node_img4.png") 
 
 ### Text Node
 
@@ -127,7 +127,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img5.png" %}
+![]("/js/Diagram/Node_images/Node_img5.png") 
 
 ### Path
 
@@ -145,7 +145,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img6.png" %}
+![]("/js/Diagram/Node_images/Node_img6.png") 
 
 ### Polygon
 
@@ -173,7 +173,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img7.png" %}
+![]("/js/Diagram/Node_images/Node_img7.png") 
 
 ### Native 
 
@@ -201,7 +201,7 @@ var node = {
 }
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img8.png" %}
+![]("/js/Diagram/Node_images/Node_img8.png") 
 
 N>  Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML and SVG elements is not feasible. Hence this limitation.
 
@@ -229,13 +229,13 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img9.png" %}
+![]("/js/Diagram/Node_images/Node_img9.png") 
 
 ## Shadow
 
 **Drop shadow effect** for a node can be enabled or disabled by using the `NodeConstraints.Shadow`. The following image represents the drop shadow effect for a Node.
 
-{% include image.html url="/js/Diagram/Node_images/Node_img10.png" %}
+![]("/js/Diagram/Node_images/Node_img10.png") 
 
 The following code example illustrates how to enable or disable the shadow.
 
@@ -268,7 +268,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img11.png" %}
+![]("/js/Diagram/Node_images/Node_img11.png") 
 
 ## Appearance
 
@@ -346,7 +346,7 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img12.png" %}
+![]("/js/Diagram/Node_images/Node_img12.png") 
 
 ## Constraints
 
@@ -449,7 +449,7 @@ The Default value for the node constraints property is `ej.datavisualization.Dia
 node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.Rotate;
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img13.png" %}
+![]("/js/Diagram/Node_images/Node_img13.png") 
 
 The following code illustrates how to disable rotate constraints. Disabling rotate constraint does not allow you to rotate the node.
 
@@ -459,6 +459,6 @@ The following code illustrates how to disable rotate constraints. Disabling rota
 node.constraints = node.constraints & ~(ej.datavisualization.Diagram.NodeConstraints.Rotate);
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Node_images/Node_img14.png" %}
+![]("/js/Diagram/Node_images/Node_img14.png") 
 
 N>  Node's constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).

@@ -18,7 +18,7 @@ You can insert all types of images from a defined path in **RichTextEditor** con
 
 
 
-{% include image.html url="/js/RichTextEditor/Insert-Image_images/Insert-Image_img1.png" %}
+![]("/js/RichTextEditor/Insert-Image_images/Insert-Image_img1.png") 
 
-{% include image.html url="/js/RichTextEditor/Insert-Image_images/Insert-Image_img2.png" %}
+![]("/js/RichTextEditor/Insert-Image_images/Insert-Image_img2.png") 
 

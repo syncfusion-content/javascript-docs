@@ -89,5 +89,5 @@ Add the following code in your script section.
 
 
 
-{% include image.html url="/js/FileExplorer/Toolbar-Support_images/Toolbar-Support_img1.png"%}
+![]("/js/FileExplorer/Toolbar-Support_images/Toolbar-Support_img1.png")
 

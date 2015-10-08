@@ -65,5 +65,5 @@ The **Ribbon** control has Custom Tooltip support that is displayed when you mov
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Custom-Tooltip_images/Custom-Tooltip_img1.png"%}
+![]("/js/Ribbon/Custom-Tooltip_images/Custom-Tooltip_img1.png")
 

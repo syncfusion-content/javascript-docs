@@ -197,5 +197,5 @@ Add the following code example in your **HTML** page.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Toolbar/Responsive-Layout_images/Responsive-Layout_img1.png"%}
+![]("/js/Toolbar/Responsive-Layout_images/Responsive-Layout_img1.png")
 

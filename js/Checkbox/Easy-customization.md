@@ -48,7 +48,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img1.png" %}
+![]("/js/Checkbox/Easy-customization_images/Easy-customization_img1.png") 
 
 
 ## Enable Tri-State
@@ -89,7 +89,7 @@ In the **HTML** page, add the following input elements to configure Checkbox wid
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img2.png" %}
+![]("/js/Checkbox/Easy-customization_images/Easy-customization_img2.png") 
 
 
 
@@ -175,7 +175,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img3.png" %}
+![]("/js/Checkbox/Easy-customization_images/Easy-customization_img3.png") 
 
 
 
@@ -232,7 +232,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img4.png" %}
+![]("/js/Checkbox/Easy-customization_images/Easy-customization_img4.png") 
 
 
 
@@ -272,7 +272,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img5.png" %}
+![]("/js/Checkbox/Easy-customization_images/Easy-customization_img5.png") 
 
 
 
@@ -316,7 +316,7 @@ In the **HTML** page, add the following input elements to configure **Checkbox**
 Execute the above code to render the following output.
 
 
-{% include image.html url="/js/Checkbox/Easy-customization_images/Easy-customization_img6.png" %}
+![]("/js/Checkbox/Easy-customization_images/Easy-customization_img6.png") 
 
 
 

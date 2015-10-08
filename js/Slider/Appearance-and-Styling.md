@@ -83,7 +83,7 @@ In an **HTML** page, specify the desired “**ej.widgets.all.min.css”** file t
 
 Execute the above code example to render the following output.
 
-{% include image.html url="/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" %}
+![]("/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img1.png") 
 
 ## Css Class
 
@@ -162,7 +162,7 @@ Include the **cssClass** value before each style of the **Slider** widget and cu
 
 Execute the above code example to render the following output.
 
-{% include image.html url="/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" %}
+![]("/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img2.png") 
 
 ## Show Tooltip
 
@@ -222,5 +222,5 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 Execute the above code example to render the following output.
 
 
-{% include image.html url="/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" %}
+![]("/js/Slider/Appearance-and-Styling_images/Appearance-and-Styling_img3.png") 
 

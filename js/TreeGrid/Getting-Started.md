@@ -15,7 +15,7 @@ The **Essential Javascript TreeGrid** has been designed to represent and edit th
 
 This section explains how to create a TreeGrid widget in your application with hierarchical data source and enable sorting and editing. The following screenshot displays the output.
 
-{% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img1.png"%}
+![]("/js/TreeGrid/Getting-Started_images/Getting-Started_img1.png")
 
 1.Create an HTML file and add the following template to the HTML file.
 
@@ -71,7 +71,7 @@ This section explains how to create a TreeGrid widget in your application with h
 
 {% endhighlight %}
 
-{% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img2.png" Caption="TreeGrid with empty datasource "%}
+![]("/js/TreeGrid/Getting-Started_images/Getting-Started_img2.png" Caption="TreeGrid with empty datasource ")
 
 4.Create data source for TreeGrid.
 
@@ -192,7 +192,7 @@ This section explains how to create a TreeGrid widget in your application with h
 
 TreeGrid widget is displayed as the output in the following screenshot.
 
-{% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img3.png"%}
+![]("/js/TreeGrid/Getting-Started_images/Getting-Started_img3.png")
 
 ### Enable Sorting
 
@@ -212,7 +212,7 @@ Enable the multicolumn sorting in TreeGrid by setting [`allowMultiSorting`](/js/
 
 {% endhighlight %}
 
-{% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img4.png"%}
+![]("/js/TreeGrid/Getting-Started_images/Getting-Started_img4.png")
 
 ### Enable Editing
 
@@ -263,5 +263,5 @@ You can set the editor type for a particular column as follows.
 
 The output of the DateTimePicker editor in TreeGrid control is as follows.
 
-{% include image.html url="/js/TreeGrid/Getting-Started_images/Getting-Started_img5.png"%}
+![]("/js/TreeGrid/Getting-Started_images/Getting-Started_img5.png")
 

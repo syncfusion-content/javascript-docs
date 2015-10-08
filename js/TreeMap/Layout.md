@@ -42,7 +42,7 @@ There are four different **TreeMap** layouts such as
 
 
 
-{% include image.html url="/js/TreeMap/Layout_images/Layout_img1.png"%}
+![]("/js/TreeMap/Layout_images/Layout_img1.png")
 
 ##SliceAndDiceAuto
 
@@ -65,7 +65,7 @@ There are four different **TreeMap** layouts such as
 
 
 
-{% include image.html url="/js/TreeMap/Layout_images/Layout_img2.png"%}
+![]("/js/TreeMap/Layout_images/Layout_img2.png")
 
 ##SliceAndDiceHorizontal
 
@@ -88,7 +88,7 @@ There are four different **TreeMap** layouts such as
 
 
 
-{% include image.html url="/js/TreeMap/Layout_images/Layout_img3.png"%}
+![]("/js/TreeMap/Layout_images/Layout_img3.png")
 
 ##SliceAndDiceVertical
 
@@ -111,5 +111,5 @@ There are four different **TreeMap** layouts such as
 
 
 
-{% include image.html url="/js/TreeMap/Layout_images/Layout_img4.png"%}
+![]("/js/TreeMap/Layout_images/Layout_img4.png")
 

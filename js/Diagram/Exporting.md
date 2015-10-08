@@ -96,4 +96,4 @@ Export diagram is based on page setting (page size, multiple page, page margin, 
 
 Format is to specify the type/format of the exported file. It includes jpg, png, bmp and svg.
 
-{% include image.html url="/js/Diagram/Exporting_images/Exporting_img1.png" %}
+![]("/js/Diagram/Exporting_images/Exporting_img1.png") 

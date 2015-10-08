@@ -35,5 +35,5 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-{% include image.html url="/js/RichTextEditor/Enable-or-disable_images/Enable-or-disable_img1.png" %}
+![]("/js/RichTextEditor/Enable-or-disable_images/Enable-or-disable_img1.png") 
 

@@ -53,4 +53,4 @@ angular.module('syncApp', ['ejangular'])
       });
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Angular-Binding_images/Angular-Binding_img1.png" %}
+![]("/js/Diagram/Angular-Binding_images/Angular-Binding_img1.png") 

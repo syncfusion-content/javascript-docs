@@ -145,5 +145,5 @@ Add the following code inside the **script** tag.
 
 
 
-{% include image.html url="/js/Tile/Add-Group-Tiles_images/Add-Group-Tiles_img1.png"%}
+![]("/js/Tile/Add-Group-Tiles_images/Add-Group-Tiles_img1.png")
 

@@ -65,5 +65,5 @@ You can assign the complete contents in “**WorldMap.json**” file to new JSON
 {% endhighlight %}
 
 
-{% include image.html url="/js/Maps/Layers_images/Layers_img1.png"%}
+![]("/js/Maps/Layers_images/Layers_img1.png")
 

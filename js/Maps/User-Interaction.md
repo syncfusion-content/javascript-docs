@@ -45,7 +45,7 @@ You can select the shape by tapping on the shape. The Single selection is enable
 
 
 
-{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img1.png"%}
+![]("/js/Maps/User-Interaction_images/User-Interaction_img1.png")
 
 ##Zooming
 
@@ -132,7 +132,7 @@ You can zoom the map with mouse events using mouse scroll. When the mouse is scr
 
 When the map is double-tapped using mouse, the zoom in operation is performed. 
 
-{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img2.png"%}
+![]("/js/Maps/User-Interaction_images/User-Interaction_img2.png")
 
 ###Shape Selection
 
@@ -218,7 +218,7 @@ The panning feature enables map navigation. The `enablePan` property is used to 
 **Navigation** control is built-in with **Maps** control. With Navigation control, **Maps** can be panned in any direction and zoomed. It is possible to show or hide the NavigationControl by `enableNavigation` property.
 
 
-{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img3.png"%}
+![]("/js/Maps/User-Interaction_images/User-Interaction_img3.png")
 
 
 
