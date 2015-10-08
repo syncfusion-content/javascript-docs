@@ -104,7 +104,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try It: [Annotation angle](http://jsplayground.syncfusion.com/rgl4uwkj)
+Try it: [Annotation angle](http://jsplayground.syncfusion.com/rgl4uwkj)
 
 
 
@@ -115,7 +115,7 @@ Try It: [Annotation angle](http://jsplayground.syncfusion.com/rgl4uwkj)
 
 
 
-Text content or id of a HTML element to be displayed as annotation
+Text content or id of a HTML element to be displayed as annotation.
 
 
 Default value:
@@ -141,7 +141,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-Try It: [Annotation Content](http://jsplayground.syncfusion.com/plihjtm3)
+Try it: [Annotation Content](http://jsplayground.syncfusion.com/plihjtm3)
 
 
 
@@ -152,7 +152,7 @@ Try It: [Annotation Content](http://jsplayground.syncfusion.com/plihjtm3)
 
 
 
-Specifies how annotations should be placed in Chart.
+Specifies how annotations have to be placed in Chart.
 
 
 Default value:
@@ -185,7 +185,7 @@ $("#container").ejChart({
 
 
 
-Specifies the horizontal alignment of the annotation
+Specifies the horizontal alignment of the annotation.
 
 
 Default value:
@@ -221,7 +221,7 @@ Try it: [Horizontal Alignment](http://jsplayground.syncfusion.com/n5zfhoir)
 
 
 
-Options to customize the margin of annotation
+Options to customize the margin of annotation.
 
 
 Try it: [Margin](http://jsplayground.syncfusion.com/n5zfhoir)
@@ -237,7 +237,7 @@ Try it: [Margin](http://jsplayground.syncfusion.com/n5zfhoir)
 
 
 
-Annotation will be placed at the specified value above its original position.
+Annotation is placed at the specified value above its original position.
 
 
 Default value:
@@ -270,7 +270,7 @@ $("#container").ejChart({
 
 
 
-Annotation will be placed at the specified value from left side of its original position.
+Annotation is placed at the specified value from left side of its original position.
 
 
 Default value:
@@ -303,7 +303,7 @@ $("#container").ejChart({
 
 
 
-Annotation will be placed at the specified value from the right side of its original position.
+Annotation is placed at the specified value from the right side of its original position.
 
 
 Default value:
@@ -336,7 +336,7 @@ $("#container").ejChart({
 
 
 
-Annotation will be placed at the specified value below its original position.
+Annotation is placed at the specified value under its original position.
 
 
 Default value:
@@ -369,7 +369,7 @@ $("#container").ejChart({
 
 
 
-Controls the opacity of the annotation
+Controls the opacity of the annotation.
 
 
 Default value:
@@ -405,7 +405,7 @@ Try it: [Annotation Opacity](http://jsplayground.syncfusion.com/rgl4uwkj)
 
 
 
-Specifies whether annotation should be placed with respect to chart or series.
+Specifies whether annotation has to be placed with respect to chart or series.
 
 
 Default value:
@@ -441,7 +441,7 @@ Try it: [Annotation Region](http://jsplayground.syncfusion.com/yfxghhut)
 
 
 
-Specifies the vertical alignment of the annotation
+Specifies the vertical alignment of the annotation.
 
 
 Default value:
@@ -477,7 +477,7 @@ Try it: [Vertical Alignment](http://jsplayground.syncfusion.com/frjpm2um)
 
 
 
-Controls the visibility of the annotation
+Controls the visibility of the annotation.
 
 
 Default value:
@@ -513,9 +513,9 @@ Try it: [Annotation Visibility](http://jsplayground.syncfusion.com/plihjtm3)
 
 
 
-Represents the horizontal offset if coordinateUnit is pixels. 
-If coordinateUnit is points, it will represent the x-coordinate of axis bounded with xAxisName property or primary X axis if xAxisName is not provided. 
-This property is not applicable if coordinateUnit is none.
+Represents the horizontal offset when coordinateUnit is pixels. 
+when coordinateUnit is points, it represents the x-coordinate of axis bounded with xAxisName property or primary X axis when xAxisName is not provided. 
+This property is not applicable when coordinateUnit is none.
 
 
 Default value:
@@ -551,7 +551,7 @@ Try it: [Annotation Positioning](http://jsplayground.syncfusion.com/frjpm2um)
 
 
 
-Name of the horizontal axis which should be used to position the annotation. This property is applicable only if coordinateUnit is points.
+Name of the horizontal axis to be used for positioning the annotation. This property is applicable only when coordinateUnit is points.
 
 
 Default value:
@@ -587,9 +587,9 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/h23k4jcy)
 
 
 
-Represents the vertical offset if coordinateUnit is pixels. 
-If coordinateUnit is points, it will represent the y-coordinate of axis bounded with yAxisName property or primary Y axis if yAxisName is not provided. 
-This property is not applicable if coordinateUnit is none.
+Represents the vertical offset when coordinateUnit is pixels. 
+When coordinateUnit is points, it represents the y-coordinate of axis bounded with yAxisName property or primary Y axis when yAxisName is not provided. 
+This property is not applicable when coordinateUnit is none.
 
 
 Default value:
@@ -624,8 +624,8 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1nq2ss4v)
 
 
 
-Name of the vertical axis which should be used to position the annotation. 
-This property is applicable only if coordinateUnit is points.
+Name of the vertical axis to be used for positioning the annotation. 
+This property is applicable only when coordinateUnit is points.
 
 
 Default value:
@@ -661,7 +661,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nqhtn0y)
 
 
 
-Url of the image to be used as chart background
+Url of the image to be used as chart background.
 
 
 Default value:
@@ -712,7 +712,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wxxv2rq1)
 
 
 
-Border color of the chart
+Border color of the chart.
 
 
 Default value:
@@ -745,7 +745,7 @@ $("#container").ejChart({
 
 
 
-Opacity of the chart border
+Opacity of the chart border.
 
 
 Default value:
@@ -778,7 +778,7 @@ $("#container").ejChart({
 
 
 
-Width of the Chart border
+Width of the Chart border.
 
 
 Default value:
@@ -811,7 +811,7 @@ $("#container").ejChart({
 
 
 
-Controls whether Chart should be responsive or not
+Controls whether Chart has to be responsive or not.
 
 
 Default Value:
@@ -847,7 +847,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/r12awtp3)
 
 
 
-Options for configuring the border and background of the plot area
+Options for configuring the border and background of the plot area.
 
 
 
@@ -858,7 +858,7 @@ Options for configuring the border and background of the plot area
 
 
 
-Background color of the plot area
+Background color of the plot area.
 
 
 Default value:
@@ -909,7 +909,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kzy21bwx)
 
 
 
-Border color of the plot area
+Border color of the plot area.
 
 
 Default value:
@@ -943,7 +943,7 @@ $("#container").ejChart({
 
 
 
-Opacity of the plot area border
+Opacity of the plot area border.
 
 
 Default value:
@@ -977,7 +977,7 @@ $("#container").ejChart({
 
 
 
-Border width of the plot area
+Border width of the plot area.
 
 
 Default value:
@@ -1060,7 +1060,7 @@ $("#container").ejChart({
 
 
 
-Width of the column in plotting area. Width will be measured in either pixel or percentage based on the value of unit property.
+Width of the column in plotting area. Width is measured in either pixel or percentage based on the value of unit property.
 
 
 Default value:
@@ -1093,7 +1093,7 @@ $("#container").ejChart({
 
 
 
-Color of the line that indicates the starting point of the column in plotting area
+Color of the line that indicates the starting point of the column in plotting area.
 
 
 Default value:
@@ -1126,7 +1126,7 @@ $("#container").ejChart({
 
 
 
-Width of the line that indicates the starting point of the column in plot area
+Width of the line that indicates the starting point of the column in plot area.
 
 
 Default value:
@@ -1159,7 +1159,7 @@ $("#container").ejChart({
 
 
 
-Options for configuring the properties of all the series. You can also override the options for specific series using series collection.
+Options for configuring the properties of all the series. You can also override the options for specific series by using series collection.
 
 
 
@@ -1730,7 +1730,7 @@ Options for customizing the font of all the series.
 
 
 
-Font color of the text in all series
+Font color of the text in all series.
 
 
 Default value:
@@ -1832,7 +1832,7 @@ commonSeriesOptions : {font :{fontStyle : "italic"}}
 
 
 
-Specifies the font weight for all the series
+Specifies the font weight for all the series.
 
 
 Default value:
@@ -2362,7 +2362,7 @@ Options for displaying and customizing data labels.
 
 
 
-Angle of the data label in degrees. Only the text will be rotated, the background and border will not be rotated. 
+Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate. 
 
 
 Default value:
@@ -2495,7 +2495,7 @@ Options for displaying and customizing the line that connects point and data lab
 
 
 
-Specifies if the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
+Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
 
 
 Default value:
@@ -3033,7 +3033,7 @@ commonSeriesOptions :{marker :{dataLabel :{shape : "circle"}}}
 
 
 
-Name of a field in data source from which datalabel text will be displayed.  
+Name of a field in data source, where datalabel text is displayed.  
 
 
 Default value:
@@ -3208,7 +3208,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wh0gldoo)
 
 
 
-The URL for the Image to be displayed as marker. In order to display image as marker, you need to set series.marker.shape as ‘image’.
+The URL for the Image to be displayed as marker. In order to display image as marker, set series.marker.shape as ‘image’.
 
 
 Default value:
@@ -3466,7 +3466,7 @@ commonSeriesOptions :{opacity : 0.5}
 
 
 
-Name of a field in data source from which fill color for all the data points will be generated.
+Name of a field in data source, where the fill color for all the data points is generated.
 
 
 Default value:
@@ -3570,7 +3570,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/maeo3b3s)
 
 
 
-Start angle from where the pie/doughnut series renders. By default it will start from 0.
+Start angle from where the pie/doughnut series renders. By default it starts from 0.
 
 
 Default value:
@@ -3631,7 +3631,7 @@ Options for customizing the border of the tooltip.
 
 
 
-Border Color of the tooltip.
+Border color of the tooltip.
 
 
 Default value:
@@ -3665,7 +3665,7 @@ commonSeriesOptions :{tooltip :{border:{ color : "green" }}}
 
 
 
-Border Width of the tooltip.
+Border width of the tooltip.
 
 
 Default value:
@@ -3701,7 +3701,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dmvqb51g)
 
 
 
-Specifies the duration, the tooltip should be displayed.
+Specifies the duration, the tooltip has to be displayed.
 
 
 Default value:
@@ -3987,7 +3987,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/iyglee55)
 
 
 
-Specifies the name of the x-axis, which needs to be associated with this series. You need to add an axis instance with this name to axes collection.
+Specifies the name of the x-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
 
 
 Default value:
@@ -4022,7 +4022,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p1t424pc)
 
 
 
-Name of the property in the datasource which contains x value for the series.
+Name of the property in the datasource that contains x value for the series.
 
 
 Default value:
@@ -4059,7 +4059,7 @@ commonSeriesOptions : {xName: "XValue" }
 
 
 
-Specifies the name of the y-axis, which needs to be associated with this series. You need to add an axis instance with this name to axes collection.
+Specifies the name of the y-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
 
 
 Default value:
@@ -4095,7 +4095,7 @@ commonSeriesOptions :{ yAxisName : "yAxis"}
 
 
 
-Name of the property in the datasource which contains y value for the series.
+Name of the property in the datasource that contains y value for the series.
 
 
 Default value:
@@ -4132,7 +4132,7 @@ commonSeriesOptions :{yName: "yValue" }
 
 
 
-Name of the property in the datasource which contains high value for the series.
+Name of the property in the datasource that contains high value for the series.
 
 
 Default value:
@@ -4166,7 +4166,7 @@ commonSeriesOptions : {high: "high" }
 
 
 
-Name of the property in the datasource which contains low value for the series.
+Name of the property in the datasource that contains low value for the series.
 
 
 Default value:
@@ -4202,7 +4202,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
 
 
 
-Name of the property in the datasource which contains open value for the series.
+Name of the property in the datasource that contains open value for the series.
 
 
 Default value:
@@ -4233,7 +4233,7 @@ commonSeriesOptions : {open: "oepn" }
 {:#members:commonseriesoptions-close}
 
 
-Name of the property in the datasource which contains close value for the series.
+Name of the property in the datasource that contains close value for the series.
 
 
 Default value:
@@ -4347,7 +4347,7 @@ commonSeriesOptions :{trendlines:[{ type:'linear' }]}
 
 
 
-Name for the trendlines, which is to be displayed in legend text.
+Name for the trendlines that is to be displayed in legend text.
 
 
 Default value:
@@ -5391,7 +5391,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hfja2bta)
 
 
 
-Specifies the type of the crosshair. It may be trackball or crosshair
+Specifies the type of the crosshair. It can be trackball or crosshair
 
 
 Default value:
@@ -5495,7 +5495,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mfcep44t)
 
 
 
-Controls whether 3D view should be enabled or not. 3D view is supported only for column, bar. Stacking column, stacking bar, pie and doughnut series types
+Controls whether 3D view has to be enabled or not. 3D view is supported only for column, bar. Stacking column, stacking bar, pie and doughnut series types.
 
 
 Default value:
@@ -5533,7 +5533,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dx0nj11k)
 
 
 
-Controls whether Chart should be rendered as Canvas or SVG. Canvas rendering supports all functionalities in SVG rendering except 3D Charts
+Controls whether Chart has to be rendered as Canvas or SVG. Canvas rendering supports all functionalities in SVG rendering except 3D Charts.
 
 
 Default value:
@@ -5569,7 +5569,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nvdn2ml)
 
 
 
-Controls whether 3D view should be rotated on dragging. This property is applicable only for 3D view
+Controls whether 3D view has to be rotated on dragging. This property is applicable only for 3D view.
 
 
 Default value:
@@ -5620,7 +5620,7 @@ Options to customize the technical indicators.
 
 
 
-The dPeriod value for stochastic indicator
+The dPeriod value for stochastic indicator.
 
 
 Default value:
@@ -5729,7 +5729,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vrm2umdf)
 
 
 
-Options to customize the histogram in MACD indicator
+Options to customize the histogram in MACD indicator.
 
 
 
@@ -5742,7 +5742,7 @@ Options to customize the histogram in MACD indicator
 
 
 
-Options to customize the histogram border in MACD indicator
+Options to customize the histogram border in MACD indicator.
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/stbnoy0x)
@@ -5755,7 +5755,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/stbnoy0x)
 
 
 
-Color of the histogram border in MACD indicator
+Color of the histogram border in MACD indicator.
 
 
 Default value:
@@ -5789,7 +5789,7 @@ $("#container").ejChart({
 
 
 
-Controls the width of histogram border line in MACD indicator
+Controls the width of histogram border line in MACD indicator.
 
 
 Default value:
@@ -5861,7 +5861,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2rvadgmd)
 
 
 
-Opacity of histogram columns in MACD indicator
+Opacity of histogram columns in MACD indicator.
 
 
 Default value:
@@ -5897,7 +5897,7 @@ $("#container").ejChart({
 
 
 
-Specifies the k period in stochastic indicator
+Specifies the k period in stochastic indicator.
 
 
 Default value:
@@ -5933,7 +5933,7 @@ $("#container").ejChart({
 
 
 
-Specifies the long period in MACD indicator
+Specifies the long period in MACD indicator.
 
 
 Default value:
@@ -5969,7 +5969,7 @@ $("#container").ejChart({
 
 
 
-Options to customize the lower line in indicators
+Options to customize the lower line in indicators.
 
 
 
@@ -6018,7 +6018,7 @@ $("#container").ejChart({
 
 
 
-Width of the lower line
+Width of the lower line.
 
 
 Default value:
@@ -6103,7 +6103,7 @@ $("#container").ejChart({
 
 
 
-Width of the MACD line
+Width of the MACD line.
 
 
 Default value:
@@ -6224,7 +6224,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/20dlmyxk)
 
 
 
-Color of period line in indicator
+Color of period line in indicator.
 
 
 Default value:
@@ -6260,7 +6260,7 @@ $("#container").ejChart({
 
 
 
-Width of the period line in indicators
+Width of the period line in indicators.
 
 
 Default value:
@@ -6296,7 +6296,7 @@ $("#container").ejChart({
 
 
 
-Name of the series for which indicator should be drawn
+Name of the series for which indicator has to be drawn.
 
 
 Default value:
@@ -6332,7 +6332,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yk3njhr1)
 
 
 
-Specifies the short period in MACD indicator
+Specifies the short period in MACD indicator.
 
 
 Default value:
@@ -6417,7 +6417,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ritlgl5w)
 
 
 
-Option to customize the border of indicator tooltip
+Option to customize the border of indicator tooltip.
 
 
 
@@ -6430,7 +6430,7 @@ Option to customize the border of indicator tooltip
 
 
 
-Border color of indicator tooltip
+Border color of indicator tooltip.
 
 
 Default value:
@@ -6466,7 +6466,7 @@ $("#container").ejChart({
 
 
 
-Border width of indicator tooltip
+Border width of indicator tooltip.
 
 
 Default value:
@@ -6610,7 +6610,7 @@ $("#container").ejChart({
 
 
 
-Background color of indicator tooltip
+Background color of indicator tooltip.
 
 
 Default value:
@@ -6646,7 +6646,7 @@ $("#container").ejChart({
 
 
 
-Opacity of indicator tooltip
+Opacity of indicator tooltip.
 
 
 Default value:
@@ -6682,7 +6682,7 @@ $("#container").ejChart({
 
 
 
-Controls the visibility of indicator tooltip
+Controls the visibility of indicator tooltip.
 
 
 Default value:
@@ -6754,7 +6754,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nrh5tk4z)
 
 
 
-Specifies the visibility of indicator
+Specifies the visibility of indicator.
 
 
 Default value:
@@ -6790,7 +6790,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gshculgi)
 
 
 
-Specifies the type of indicator that should be rendered
+Specifies the type of indicator that has to be rendered.
 
 
 Default value:
@@ -6911,7 +6911,7 @@ $("#container").ejChart({
 
 
 
-Width of the indicator line
+Width of the indicator line.
 
 
 Default value:
@@ -6947,7 +6947,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/r23e0yrp)
 
 
 
-Name of the horizontal axis used for indicator. Primary X axis will be used if x axis name is not specified.
+Name of the horizontal axis used for indicator. Primary X axis is used when x axis name is not specified.
 
 
 Default value:
@@ -6983,7 +6983,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kksyu40s)
 
 
 
-Name of the vertical axis used for indicator. Primary Y axis will be used if y axis name is not specified
+Name of the vertical axis used for indicator. Primary Y axis is used when y axis name is not specified
 
 
 Default value:
@@ -7019,7 +7019,7 @@ $("#container").ejChart({
 
 
 
-Options to customize the legend items and legend title
+Options to customize the legend items and legend title.
 
 
 
@@ -7118,7 +7118,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zob1c5er)
 
 
 
-Border color of the legend
+Border color of the legend.
 
 
 Default value:
@@ -7151,7 +7151,7 @@ $("#container").ejChart({
 
 
 
-Border width of the legend
+Border width of the legend.
 
 
 Default value:
@@ -7184,7 +7184,7 @@ $("#container").ejChart({
 
 
 
-Number of columns to arrange the legend items
+Number of columns to arrange the legend items.
 
 
 Default value:
@@ -7220,7 +7220,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g3p1ocgh)
 
 
 
-Controls whether legend should use scrollbar or not. If enabled, scroll bar may appear depending upon size and position properties of legend.
+Controls whether legend has to use scrollbar or not. When enabled, scroll bar appears depending upon size and position properties of legend.
 
 
 Default value:
@@ -7256,8 +7256,8 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3budcknt)
 
 
 
-Fill color for the legend items. Using this property will display all legend item shapes in same color. 
-Legend items representing invisible series will be displayed in gray color.
+Fill color for the legend items. By using this property, it displays all legend item shapes in same color. 
+Legend items representing invisible series is displayed in gray color.
 
 
 Default value:
@@ -7293,7 +7293,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3alytf20)
 
 
 
-Options to customize the font used for legend item text
+Options to customize the font used for legend item text.
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jo5t2d4u)
@@ -7475,7 +7475,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tozzsrit)
 
 
 
-Options to customize the style of legend items
+Options to customize the style of legend items.
 
 
 
@@ -7502,7 +7502,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hplwwoll)
 
 
 
-Border color of the legend items
+Border color of the legend items.
 
 
 Default value:
@@ -7535,7 +7535,7 @@ $("#container").ejChart({
 
 
 
-Border width of the legend items
+Border width of the legend items.
 
 
 Default value:
@@ -7601,7 +7601,7 @@ $("#container").ejChart({
 
 
 
-Width of the shape in legend items
+Width of the shape in legend items.
 
 
 Default value:
@@ -7634,7 +7634,7 @@ $("#container").ejChart({
 
 
 
-Options to customize the location of chart legend. Legend will be placed in provided location only if value of **position** property is **custom**
+Options to customize the location of chart legend. Legend is placed in provided location only when value of **position** property is **custom**
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xurqtijv)
@@ -7681,7 +7681,7 @@ $("#container").ejChart({
 
 
 
-Y value or vertical offset to position the legend
+Y value or vertical offset to position the legend.
 
 
 Default value:
@@ -7714,7 +7714,7 @@ $("#container").ejChart({
 
 
 
-Opacity of the legend
+Opacity of the legend.
 
 
 Default value:
@@ -7751,7 +7751,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nlewhk5r)
 
 
 Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the chart area. 
-To manually specify the location of legend set **custom** as value to this property.
+To manually specify the location of legend, set **custom** as value to this property.
 
 
 Default value:
@@ -8206,8 +8206,8 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dwcvfzuv)
 
 
 
-Name of the culture based on which chart should be localized. Number and date time values will be localized with respect to the culture name. 
-String type properties like title text will not be localized automatically. We should provide localized text as value to string type properties.
+Name of the culture based on which chart should be localized. Number and date time values are localized with respect to the culture name. 
+String type properties like title text are not localized automatically. Provide localized text as value to string type properties.
 
 
 Default value:
@@ -8243,7 +8243,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g3q30pdl)
 
 
 
-Options to customize the left, right, top and bottom margins of chart area
+Options to customize the left, right, top and bottom margins of chart area.
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5rlvd0ri)
@@ -8257,7 +8257,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5rlvd0ri)
 
 
 
-Spacing for the left margin of chart area. Setting positive value will decrease the width of the chart area from left side.
+Spacing for the left margin of chart area. Setting positive value decreases the width of the chart area from left side.
 
 
 Default Value:
@@ -8290,7 +8290,7 @@ $("#container").ejChart({
 
 
 
-Spacing for the right margin of chart area. Setting positive value will decrease the width of the chart area from right side.
+Spacing for the right margin of chart area. Setting positive value decreases the width of the chart area from right side.
 
 
 Default Value:
@@ -8323,7 +8323,7 @@ $("#container").ejChart({
 
 
 
-Spacing for the top margin of chart area. Setting positive value will decrease the height of the chart area from the top.
+Spacing for the top margin of chart area. Setting positive value decreases the height of the chart area from the top.
 
 
 Default Value:
@@ -8356,7 +8356,7 @@ $("#container").ejChart({
 
 
 
-Spacing for the bottom margin of the chart area. Setting positive value will decrease the height of the chart area from the bottom.
+Spacing for the bottom margin of the chart area. Setting positive value decreases the height of the chart area from the bottom.
 
 
 Default Value:
@@ -8429,7 +8429,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ofpxunlm)
 
 
 
-This is a horizontal axis which contains options to configure axis. This is the primary x axis for all the series in series array. If you need to override x axis for particular series, you can create an axis object by providing unique name using name property and add it to axes array. Then, assign the name to the series&rsquo;s xAxisName property to link both axis and series.
+This is a horizontal axis that contains options to configure axis and it is the primary x axis for all the series in series array. To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s xAxisName property to link both axis and series.
 
 
 
@@ -8638,7 +8638,7 @@ Options for customizing the axis line.
 
 
 
-Pattern of dashes and gaps to be applied to the axis line
+Pattern of dashes and gaps to be applied to the axis line.
 
 
 Default value:
@@ -8674,7 +8674,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gx3dji4o)
 
 
 
-Padding for axis line. Normally, it is used along with plotOffset to pad the plot area
+Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
 
 
 Default value:
@@ -8746,7 +8746,7 @@ $("#container").ejChart({
 
 
 
-Width of axis line
+Width of axis line.
 
 
 Default value:
@@ -8782,7 +8782,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0chmy5rg)
 
 
 
-Specifies the index of the column to which the axis is associated, when the chart area is divided into multiple plot areas using columnDefinitions.
+Specifies the index of the column where the axis is associated, when the chart area is divided into multiple plot areas by using columnDefinitions.
 
 
 Default value:
@@ -8975,7 +8975,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ff44lp52)
 
 
 
-Specified whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
+Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
 
 
 Default value:
@@ -9011,7 +9011,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/qt3th50v)
 
 
 
-Options for customizing the font of the axis Labels
+Options for customizing the font of the axis Labels.
 
 
 
@@ -9024,7 +9024,7 @@ Options for customizing the font of the axis Labels
 
 
 
-Font family of labels
+Font family of labels.
 
 
 Default value:
@@ -9579,7 +9579,7 @@ $("#container").ejChart({
 
 
 
-Width of the major grid lines
+Width of the major grid lines.
 
 
 Default value:
@@ -9700,7 +9700,7 @@ $("#container").ejChart({
 
 
 
-Width of the major tick lines
+Width of the major tick lines.
 
 
 Default value:
@@ -9772,7 +9772,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/a4gcmpzx)
 
 
 
-Maximum width of the axis label. If the label exceeds the width, the label will get trimmed when the enableTrim is set to true.
+Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
 
 
 Default value:
@@ -10002,7 +10002,7 @@ $("#container").ejChart({
     primaryXAxis: { minorTickLines: { visible: true } }
                           
 });
-Width of the minor tick line
+Width of the minor tick line.
 {% endhighlight %}
 
 
@@ -10014,7 +10014,7 @@ Width of the minor tick line
 
 
 
-Width of the minor tick line
+Width of the minor tick line.
 
 
 Default value:
@@ -10395,7 +10395,7 @@ $("#container").ejChart({
 
 
 
-Options for customizing the font of the text
+Options for customizing the font of the text.
 
 
 
@@ -10552,7 +10552,7 @@ $("#container").ejChart({
 
 
 
-Opacity of the strip line text
+Opacity of the strip line text.
 
 
 Default value:
@@ -10660,7 +10660,7 @@ $("#container").ejChart({
 
 
 
-Indicates whether to render the strip line from the minimum/start value of the axis. This property won’t work when start property is set.
+Indicates whether to render the strip line from the minimum/start value of the axis. This property does not work when start property is set.
 
 
 Default value:
@@ -10840,7 +10840,7 @@ $("#container").ejChart({
 
 
 
-Specifies the order in which strip line and the series have to be rendered. When zOrder is “behind”, strip line is rendered below the series and when it is “over”, it is rendered above the series.
+Specifies the order where the strip line and the series have to be rendered. When zOrder is “behind”, strip line is rendered under the series and when it is “over”, it is rendered above the series.
 
 
 Default value:
@@ -10913,7 +10913,7 @@ $("#container").ejChart({
 
 
 
-Options for customizing the axis title
+Options for customizing the axis title.
 
 
 
@@ -11156,7 +11156,7 @@ $("#container").ejChart({
 
 
 
-Maximum width of the title, if the title exceeds this width, the title gets trimmed, when the enableTrim is true. 
+Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true. 
 
 
 Default value:
@@ -11337,7 +11337,7 @@ $("#container").ejChart({
 
 
 
-The factor by which the axis is scaled. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Values ranges from 0 to 1.
+The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Value ranges from 0 to 1.
 
 
 Default value:
@@ -11373,7 +11373,7 @@ $("#container").ejChart({
 
 
 
-Position of the zoomed axis. Values ranges from 0 to 1
+Position of the zoomed axis. Value ranges from 0 to 1.
 
 
 
@@ -11410,7 +11410,7 @@ $("#container").ejChart({
 
 
 
-This is a vertical axis which contains options to configure axis. This is the primary y axis for all the series in series array. If you need to override y axis for particular series, you can create an axis object by providing unique name using name property and add it to axes array. Then, assign the name to the series&rsquo;s yAxisName property to link both axis and series.
+This is a vertical axis that contains options to configure axis. This is the primary y axis for all the series in series array. To override y axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s yAxisName property to link both axis and series.
 
 
 
@@ -11534,7 +11534,7 @@ Options for customizing odd grid band.
 
 
 
-Fill color of the odd grid bands
+Fill color of the odd grid bands.
 
 
 Default value:
@@ -11570,7 +11570,7 @@ $("#container").ejChart({
 
 
 
-Opacity of odd grid band
+Opacity of odd grid band.
 
 
 Default value:
@@ -11655,7 +11655,7 @@ $("#container").ejChart({
 
 
 
-Padding for axis line. Normally, it is used along with plotOffset to pad the plot area
+Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
 
 
 Default value:
@@ -11727,7 +11727,7 @@ $("#container").ejChart({
 
 
 
-Width of axis line
+Width of axis line.
 
 
 Default value:
@@ -11885,7 +11885,7 @@ $("#container").ejChart({
 
 
 
-Specified whether to trim the axis label when the width of the label exceeds the maximumLabelWidth. 
+Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth. 
 
 
 Default value:
@@ -11921,7 +11921,7 @@ $("#container").ejChart({
 
 
 
-Options for customizing the font of the axis Labels
+Options for customizing the font of the axis Labels.
 
 
 
@@ -11934,7 +11934,7 @@ Options for customizing the font of the axis Labels
 
 
 
-Font family of labels
+Font family of labels.
 
 
 Default value:
@@ -12452,7 +12452,7 @@ $("#container").ejChart({
 
 
 
-Width of the major grid lines
+Width of the major grid lines.
 
 
 Default value:
@@ -12573,7 +12573,7 @@ $("#container").ejChart({
 
 
 
-Width of the major tick lines
+Width of the major tick lines.
 
 
 Default value:
@@ -12645,7 +12645,7 @@ $("#container").ejChart({
 
 
 
-Maximum width of the axis label. If the label exceeds the width, the label will get trimmed when the enableTrim is set to true.
+Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
 
 
 Default value:
@@ -13140,7 +13140,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ad225rnj)
 
 
 
-Specifies the index of the row to which the axis is associated, when the chart area is divided into multiple plot areas using rowDefinitions.
+Specifies the index of the row to which the axis is associated, when the chart area is divided into multiple plot areas by using rowDefinitions.
 
 
 Default value:
@@ -13498,7 +13498,7 @@ $("#container").ejChart({
 
 
 
-Opacity of the strip line text
+Opacity of the strip line text.
 
 
 Default value:
@@ -13859,7 +13859,7 @@ $("#container").ejChart({
 
 
 
-Options for customizing the axis title
+Options for customizing the axis title.
 
 
 
@@ -14101,7 +14101,7 @@ $("#container").ejChart({
 
 
 
-Maximum width of the title, if the title exceeds this width, the title gets trimmed, when the enableTrim is true. 
+Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true. 
 
 
 Default value:
@@ -14282,7 +14282,7 @@ $("#container").ejChart({
 
 
 
-The factor by which the axis is scaled. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Values ranges from 0 to 1.
+The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Values ranges from 0 to 1.
 
 
 Default value:
@@ -14318,7 +14318,7 @@ $("#container").ejChart({
 
 
 
-Position of the zoomed axis. Values ranges from 0 to 1
+Position of the zoomed axis. Value ranges from 0 to 1
 
 
 Default value:
@@ -14354,7 +14354,7 @@ $("#container").ejChart({
 
 
 
-Rotation angle of the 3D view. This property is applicable only when 3D view is enabled
+Rotation angle of the 3D view. This property is applicable only when 3D view is enabled.
 
 
 Default value:
@@ -14440,7 +14440,7 @@ $("#container").ejChart({
 
 
 
-Height of the row in plotting area. Height will be measured in either pixel or percentage based on the value of unit property.
+Height of the row in plotting area. Height is measured in either pixel or percentage based on the value of unit property.
 
 
 Default value:
@@ -14950,7 +14950,7 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/40docuib)
 
 
 
-End angle of pie/doughnut series. By default, it will be 360 to have complete circle.
+End angle of pie/doughnut series. For a complete circle, it has to be 360, by default.
 
 
 Default value:
@@ -15802,7 +15802,7 @@ Options for displaying and customizing data labels.
 
 
 
-Angle of the data label in degrees. Only the text will be rotated, the background and border will not be rotated. 
+Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate. 
 
 
 Default value:
@@ -15930,7 +15930,7 @@ Options for displaying and customizing the line that connects point and data lab
 
 
 
-Specifies if the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types. 
+Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types. 
 
 
 Default value:
@@ -16468,7 +16468,7 @@ series :[{marker :{dataLabel :{shape : "circle"}}}]
 
 
 
-Name of a field in data source from which datalabel text will be displayed.  
+Name of a field in data source where datalabel text is displayed.  
 
 
 Default value:
@@ -16702,7 +16702,7 @@ series :[{marker : { fill : "green" } }]
 
 
 
-The URL for the Image to be displayed as marker. In order to display image as marker, you need to set series.marker.shape as ‘image’.
+The URL for the Image that is to be displayed as marker. In order to display image as marker, set series.marker.shape as ‘image’.
 
 
 Default value:
@@ -16955,7 +16955,7 @@ series :[{opacity : 0.5}]
 
 
 
-Name of a field in data source from which fill color for all the data points will be generated.
+Name of a field in data source where fill color for all the data points is generated.
 
 
 Default value:
@@ -17028,7 +17028,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
 
 
 
-Option to add data points; each point should have x and y property. Also, optionally, you can customize the points color, border, marker using fill, border and marker options.
+Option to add data points; each point should have x and y property. Also, optionally, you can customize the points color, border, marker by using fill, border and marker options.
 
 
 
@@ -17368,7 +17368,7 @@ Options for displaying and customizing data label.
 
 
 
-Angle of the data label in degrees. Only the text will be rotated, the background and border will not be rotated. 
+Angle of the data label in degrees. Only the text gets rotated, whereas the background and border does not rotate. 
 
 
 Default value:
@@ -17496,7 +17496,7 @@ Options for displaying and customizing the line that connects point and data lab
 
 
 
-Specifies if the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types. 
+Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types. 
 
 
 Default value:
@@ -18236,7 +18236,7 @@ series :[{ points:[{ marker : { fill : "green" } }] }]
 
 
 
-The URL for the Image to be displayed as marker. In order to display image as marker, you need to set series.marker.shape as ‘image’.
+The URL for the Image that is to be displayed as marker. In order to display image as marker, set series.marker.shape as ‘image’.
 
 
 Default value:
@@ -18489,7 +18489,7 @@ series :[{ points:[{ open : 30 }] }]
 
 
 
-Datalabel text for the point
+Datalabel text for the point.
 
 
 Default value:
@@ -18523,7 +18523,7 @@ series :[{ points:[{ text : "20%" }] }]
 
 
 
-X value of the point
+X value of the point.
 
 
 Default value:
@@ -18557,7 +18557,7 @@ series :[{ points:[{ x : 1 }] }]
 
 
 
-Y value of the point
+Y value of the point.
 
 
 Default value:
@@ -18665,7 +18665,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 
 
 
-Start angle from where the pie/doughnut series renders. By default it will start from 0.
+Start angle from where the pie/doughnut series renders. It starts from 0, by default.
 
 
 Default value:
@@ -18795,7 +18795,7 @@ series : [{tooltip : {border : { width :2} }]
 
 
 
-Specifies the duration, the tooltip should be displayed.
+Specifies the duration, the tooltip has to be displayed.
 
 
 Default value:
@@ -18829,7 +18829,7 @@ series : [{tooltip : { duration: "300ms" }]
 
 
 
-Enables/disables the animation of the tooltip when moving from one point to other.
+Enables/disables the animation of the tooltip when moving from one point to another.
 
 
 Default value:
@@ -19117,7 +19117,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mg5325qz)
 
 
 
-Specifies the name of the x-axis, which needs to be associated with this series. You need to add an axis instance with this name to axes collection.
+Specifies the name of the x-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
 
 
 Default value:
@@ -19152,7 +19152,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hz4rz01v)
 
 
 
-Name of the property in the datasource which contains x value for the series.
+Name of the property in the datasource that contains x value for the series.
 
 
 Default value:
@@ -19187,7 +19187,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 
 
 
-Specifies the name of the y-axis, which needs to be associated with this series. You need to add an axis instance with this name to axes collection.
+Specifies the name of the y-axis that has to be associated with this series. Add an axis instance with this name to axes collection.
 
 
 Default value:
@@ -19223,7 +19223,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xn2uktf2)
 
 
 
-Name of the property in the datasource which contains y value for the series.
+Name of the property in the datasource that contains y value for the series.
 
 
 Default value:
@@ -19257,7 +19257,7 @@ series : [{yName: "YValue" }]
 
 
 
-Name of the property in the datasource which contains high value for the series.
+Name of the property in the datasource that contains high value for the series.
 
 
 Default value:
@@ -19291,7 +19291,7 @@ series : [{high: "high" }]
 
 
 
-Name of the property in the datasource which contains low value for the series.
+Name of the property in the datasource that contains low value for the series.
 
 
 Default value:
@@ -19327,7 +19327,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 
 
 
-Name of the property in the datasource which contains open value for the series.
+Name of the property in the datasource that contains open value for the series.
 
 
 Default value:
@@ -19358,7 +19358,7 @@ series : [{open: "oepn" }]
 {:#members:series-close}
 
 
-Name of the property in the datasource which contains close value for the series.
+Name of the property in the datasource that contains close value for the series.
 
 
 Default value:
@@ -19472,7 +19472,7 @@ series :[{trendlines:[{ type:'linear' }]}]
 
 
 
-Name for the trendlines, which is to be displayed in legend text.
+Name for the trendlines that is to be displayed in legend text.
 
 
 Default value:
@@ -20296,7 +20296,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wlovhaqi)
 
 
 
-Controls whether data points should be displayed side by side or along the depth of the axis. 
+Controls whether data points has to be displayed side by side or along the depth of the axis. 
 
 
 Default value:
@@ -20371,7 +20371,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jael2rfm)
 
 
 
-Slope angle of 3D Chart. This property is applicable only when 3D view is enabled
+Slope angle of 3D Chart. This property is applicable only when 3D view is enabled.
 
 
 Default value:
@@ -20534,7 +20534,7 @@ $("#container").ejChart({
 
 
 
-Opacity of the Chart title
+Opacity of the Chart title.
 
 
 Default value:
@@ -20724,7 +20724,7 @@ $("#container").ejChart({
 
 
 
-Opacity of the sub title
+Opacity of the sub title.
 
 
 Default value:
@@ -20790,7 +20790,7 @@ $("#container").ejChart({
 
 
 
-Text to be displayed in sub title
+Text to be displayed in sub title.
 
 
 Default value:
@@ -21018,7 +21018,7 @@ $("#container").ejChart({
 
 
 
-Enable or disables the differed zooming. When it is enabled, chart will be updated only on mouse up action while zooming and panning.
+Enable or disables the differed zooming. When it is enabled, chart is updated only on mouse up action while zooming and panning.
 
 
 Default value:
@@ -21087,7 +21087,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0gkvnyi3)
 
 
 
-Specifies whether to allow zooming the chart vertically or horizontally or in both ways
+Specifies whether to allow zooming the chart vertically or horizontally or in both ways.
 
 
 Default value:
@@ -21128,9 +21128,9 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hqmmhpgk)
 
 
 
-Animates the series and/or indicators in Chart. If parameter is not passed to this method, then all the series and indicators present in Chart will be animated.
+Animates the series and/or indicators in Chart. When parameter is not passed to this method, then all the series and indicators present in Chart are animated.
 
-Following are the parameters you can pass to this method
+Following are the parameters that you can pass to this method.
 
 
 <table class="params">
@@ -21145,7 +21145,7 @@ Following are the parameters you can pass to this method
 <tr>
 <td class="name">options</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description last">Series and indicator objects passed in the array collection will be animated.
+<td class="description last">Series and indicator objects passed in the array collection are animated.
 <br/><br./>
 Example
 
@@ -21159,7 +21159,7 @@ chartObj.animate(chartObj.model.series);
 <tr>
 <td class="name">option</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Series or indicator object passed to this method will be animated.
+<td class="description last">Series or indicator object passed to this method are animated.
 <br/><br/>
 Example,
 
@@ -21182,9 +21182,9 @@ chartObj.animate(chartObj.model.indicators[0]);
 
 
 
-Exports chart as an image or to an excel file. Chart can be exported as an image only if exportCanvasRendering option is set to true.
+Exports chart as an image or to an excel file. Chart can be exported as an image only when exportCanvasRendering option is set to true.
 
-Following are the parameters you can pass to this method,
+Following are the parameters that you can pass to this method,
 
 
 <table class="params">
@@ -21231,7 +21231,7 @@ chartObj.export("excel", 'http://js.syncfusion.com/ExportingServices/api/JSChart
 exportMultipleChart</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">
-When this parameter is true, all the chart objects initialized to the same document will be exported to a single excel file. This is an optional parameter. By default, it is false.
+When this parameter is true, all the chart objects initialized to the same document are exported to a single excel file. This is an optional parameter. By default, it is false.
 <br/><br/>
 Example,
 
@@ -21286,7 +21286,7 @@ $("#container").ejChart("redraw");
 
 
 
-Fires after the series animation is completed. This event will be triggered for each series when animation is enabled.
+Fires after the series animation is completed. This event will beis triggered for each series when animation is enabled.
 
 Example:
 {:.example}
@@ -21350,7 +21350,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-Fires before rendering the labels. This event will be fired for each label in axis. You can use this event to add custom text to axis labels.
+Fires before rendering the labels. This event is fired for each label in axis. You can use this event to add custom text to axis labels.
 
 Example
 {:.example}
@@ -21427,7 +21427,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-Fires during the initialization of axis labels
+Fires during the initialization of axis labels.
 
 
 Example
@@ -21492,7 +21492,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-Fires during axes range calculation. This event will be fired for each axis present in Chart. You can use this event to customize axis range as required
+Fires during axes range calculation. This event is fired for each axis present in Chart. You can use this event to customize axis range as required.
 
 Example
 {:.example}
@@ -21531,7 +21531,7 @@ argument.data.range.delta{% endhighlight %}</td>
 <td class="name">{% highlight js %}
 argument.data.range.interval{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Interval value of axis range. Grid lines, tick lines and axis labels will be drawn based on this interval value.</td>
+<td class="description last">Interval value of axis range. Grid lines, tick lines and axis labels are drawn based on this interval value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -21573,7 +21573,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-Fires before rendering the axis title. This event will be triggered for each axis with title. You can use this event to add custom text to axis title.
+Fires before rendering the axis title. This event is triggered for each axis with title. You can use this event to add custom text to axis title.
 
 
 Example
@@ -21860,7 +21860,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-Fires before rendering the data labels. This event will be triggered for each data label in the series. You can use this event to add custom text in data labels.
+Fires before rendering the data labels. This event is triggered for each data label in the series. You can use this event to add custom text in data labels.
 
 
 Example
@@ -21950,7 +21950,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-Fires during the calculation of legend bounds. You can use this event to customize the bounds of legend
+Fires during the calculation of legend bounds. You can use this event to customize the bounds of legend.
 
 Example
 {:.example}
@@ -22090,7 +22090,7 @@ argument.data.legendItem.location.startY{% endhighlight %}</td>
 <td class="name">{% highlight js %}
 argument.data.legendItem.LegendItem{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the legend item object which is about to be rendered</td>
+<td class="description last">Instance of the legend item object that is about to be rendered</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -22126,7 +22126,7 @@ argument.data.legendItem.series{% endhighlight %}</td>
 
 
 
-Fires when moving mouse over legend item. You can use this event for hit testing on legend items
+Fires when moving mouse over legend item. You can use this event for hit testing on legend items.
 
 Example
 {:.example}
@@ -22190,7 +22190,7 @@ argument.data.legendItem.location.startY{% endhighlight %}</td>
 <td class="name">{% highlight js %}
 argument.data.legendItem.LegendItem{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the legend item object which is about to be rendered</td>
+<td class="description last">Instance of the legend item object that is about to be rendered</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -22227,7 +22227,7 @@ Argument.data.legendItem.series{% endhighlight %}</td>
 
 
 
-Fires before rendering the legend item. This event will be fired for each legend item in Chart. You can use this event to customize legend item shape or add custom text to legend item.
+Fires before rendering the legend item. This event is fired for each legend item in Chart. You can use this event to customize legend item shape or add custom text to legend item.
 
 
 Example
@@ -22292,7 +22292,7 @@ argument.data.location.startY{% endhighlight %}</td>
 <td class="name">{% highlight js %}
 argument.data.legendItem{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the legend item object which is about to be rendered</td>
+<td class="description last">Instance of the legend item object that is about to be rendered</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -22603,7 +22603,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-Fires after selecting a series. This event will be triggered after selecting a series only if selection mode is series.
+Fires after selecting a series. This event is triggered after selecting a series only if selection mode is series.
 
 Example
 {:.example}
@@ -22673,7 +22673,7 @@ argument.data.seriesIndex{% endhighlight %}</td>
 
 
 
-Fires before rendering a series. This event will be fired for each series in Chart.
+Fires before rendering a series. This event is fired for each series in Chart.
 
 Example
 {:.example}
@@ -22737,7 +22737,7 @@ argument.data.series{% endhighlight %}</td>
 
 
 
-Fires before rendering the marker symbols. This event will be triggered for each marker in Chart
+Fires before rendering the marker symbols. This event is triggered for each marker in Chart.
 
 Example
 {:.example}
@@ -22808,7 +22808,7 @@ argument.data.style{% endhighlight %}</td>
 
 
 
-Fires before rendering the Chart title. You can use this event to add custom text in Chart title
+Fires before rendering the Chart title. You can use this event to add custom text in Chart title.
 
 
 Example
@@ -22884,7 +22884,7 @@ argument.data.title{% endhighlight %}</td>
 
 
 
-Fires before rendering the tooltip. This event will be fired when tooltip is enabled and mouse is hovered on a Chart point. You can use this event to customize tooltip before rendering
+Fires before rendering the tooltip. This event is fired when tooltip is enabled and mouse is hovered on a Chart point. You can use this event to customize tooltip before rendering.
 
 Example
 {:.example}
@@ -22959,7 +22959,7 @@ argument.data.seriesIndex{% endhighlight %}</td>
 
 
 
-Fires before rendering crosshair tooltip in axis. This event will be fired for each axis with crosshair label enabled. You can use this event to customize crosshair label before rendering
+Fires before rendering crosshair tooltip in axis. This event is fired for each axis with crosshair label enabled. You can use this event to customize crosshair label before rendering
 
 
 Example
@@ -23041,7 +23041,7 @@ argument.data.currentTrackText{% endhighlight %}</td>
 
 
 
-Fires before rendering trackball tooltip. This event will be fired for each series in Chart because trackball tooltip will be displayed for all the series. You can use this event to customize the text displayed in trackball tooltip
+Fires before rendering trackball tooltip. This event is fired for each series in Chart because trackball tooltip is displayed for all the series. You can use this event to customize the text displayed in trackball tooltip.
 
 
 Example
