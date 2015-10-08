@@ -53,21 +53,13 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
 // Create File Explorer
 $('#fileExplorer').ejFileExplorer({ 
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
 });
 </script>{% endhighlight %}
 
@@ -86,16 +78,13 @@ Requires
 * module:jQuery
 
 
-* module:jquery.easing.1.3.js
+* module:jquery.easing.1.3.min.js
 
 
-* module:jquery.js
+* module:jquery.globalize.min.js
 
 
-* module:jquery.globalize.js
-
-
-* module:jquery.globalize.culture.en-US.js
+* module:jsrender.min.js
 
 
 * module:ej.core.js
@@ -149,6 +138,9 @@ Requires
 * module:ej.grid.sort.js
 
 
+* module:ej.grid.dragAndDrop.js
+
+
 * module:ej.grid.common.js
 
 
@@ -176,7 +168,7 @@ Requires
 
 
 
-Sets the Url of server side ajax handling method, which on going to handle file operation like Read, Delete, Renmae, Create, Upload, download, copy and Move in File Explorer.
+Sets the Url of server side ajax handling method, which on going to handle file operation like Read, Remove, Rename, Create, Upload, Download, Copy and Move in File Explorer.
 
 
 
@@ -204,27 +196,44 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with ajaxAction value specified.
+// Initialize the File Explorer with ajaxAction value specified.
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                       
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
 });
 </script>{% endhighlight %}
 
 
 
+### ajaxDataType<span class="type-signature type string">string</span>
+{:#members:ajaxdatatype}
 
+Specifies the data type of server side ajax handling method. 
+
+Default Value:
+{:.param}
+
+* "json"
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// Initialize the File Explorer with ajaxDataType value specified.
+$('#fileExplorer').ejFileExplorer({
+ajaxDataType: "jsonp",            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONPAction"
+});
+</script>{% endhighlight %}
 
 
 
@@ -238,7 +247,7 @@ ajaxSettings: {
 
 
 
-Using ajaxSettings property, we can customize the ajax settings. Normally we can customize following option in ajax handling data, url, type, async, contentType, dataType but here success function can't be customized. For upload and download API, we can customize url only.
+Using ajaxSettings property, we can customize the ajax configurations. Normally we can customize following option in ajax handling data, url, type, async, contentType, dataType and success. For upload, download and getImage API, we can customize url only.
 
 
 
@@ -251,7 +260,7 @@ Default Value:
 
 
 
-* { read: {}, createFolder: {}, destroy: {}, rename: {}, paste: {}, getDetais: {}, download: {}, upload: {}}
+* { read: {}, createFolder: {}, remove: {}, rename: {}, paste: {}, getDetails: {}, download: {}, upload: {}, getImage: {}}
 
 
 
@@ -266,27 +275,50 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with ajaxSettings value specified.
+// Initialize the File Explorer with ajaxSettings value specified.
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
 ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }
+    read: {
+        url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONPAction",
+        dataType: "jsonp"
+    }
+}
 });
 </script>{% endhighlight %}
 
 
 
+### allowMultiSelection<span class="type-signature type boolean">boolean</span>
+{:#members:allowmultiselection}
 
+The file explorer allows the user to select multiple files by enabling the allowMultiSelection property. The multi selection can be done by pressing the Ctrl key or Shift key. 
+
+Default Value:
+{:.param}
+
+* true
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// Initialize the File Explorer with allowMultiSelection value specified.
+$('#fileExplorer').ejFileExplorer({
+allowMultiSelection: false,            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+});
+</script>{% endhighlight %}
 
 
 
@@ -300,7 +332,7 @@ ajaxSettings: {
 
 
 
-Sets the root class for File explorer theme. This cssClass API helps to use custom skinning option for File explorer control. By defining the root class using this API, we need to include this root class in CSS.
+Sets the root class for File Explorer theme. This cssClass API helps to use custom skinning option for File Explorer control. By defining the root class using this API, we need to include this root class in CSS.
 
 
 
@@ -328,23 +360,15 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with cssClass value specified.
+// Initialize the File Explorer with cssClass value specified.
 $('#fileExplorer').ejFileExplorer({ 
 cssClass: 'gradient-lime',
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   },
-   });
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"      
+});
 </script>{% endhighlight %}
 
 
@@ -363,70 +387,7 @@ ajaxSettings: {
 
 
 
-Enables/Disables the resize of file explorer, while window resizing
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* true
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="fileExplorer" ></div> 
- 
-<script>
-// Initialize the File explorer with enableResize value specified.
-$('#fileExplorer').ejFileExplorer({ 
- enableResize: true,
-path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   },                          
-});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#members:enablertl}
-
-
-
-
-
-
-
-
-Enables/Disables the Right to Left alignment support in file explorer
+Enables/Disables the resize support in File Explorer control.
 
 
 
@@ -454,22 +415,69 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with enableRTL value specified.
+// Initialize the File Explorer with enableResize value specified.
 $('#fileExplorer').ejFileExplorer({ 
- enableRTL: true,
+enableResize: true,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   },                      
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                   
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### enableRTL<span class="type-signature type boolean">boolean</span>
+{:#members:enablertl}
+
+
+
+
+
+
+
+
+Enables/Disables the Right to Left alignment support in File Explorer control.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// Initialize the File Explorer with enableRTL value specified.
+$('#fileExplorer').ejFileExplorer({ 
+enableRTL: true,
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                
 });
 </script>{% endhighlight %}
 
@@ -489,7 +497,7 @@ ajaxSettings: {
 
 
 
-Allows specified type of files only to display in file explorer.
+Allows specified type of files only to display in File Explorer control.
 
 
 
@@ -502,7 +510,7 @@ Default Value:
 
 
 
-* "*.png,*.gif,*.jpg,*.jpeg"
+* "*.*"
 
 
 
@@ -517,22 +525,14 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
-// Specifies the file types, which one need to allow in file explorer control
+// Specifies the file types, which one need to allow in File Explorer control
 $('#fileExplorer').ejFileExplorer({ 
 fileTypes: "*.png,*.gif,*.jpg,*.jpeg,*.docx",
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                       
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"               
 });
 </script>{% endhighlight %}
 
@@ -552,7 +552,7 @@ ajaxSettings: {
 
 
 
-Gets or sets an object that indicates whether to customize the filtering behavior of the file explorer
+Using filterSettings property, we can customize the search functionality of the searchbar in File Explorer control.
 
 
 
@@ -574,7 +574,7 @@ Gets or sets an object that indicates whether to customize the filtering behavio
 
 
 
-Gets or sets a value that indicates to perform the filter operation with case sensitive
+Enable/Disable to perform the filter operation with case sensitive.
 
 
 
@@ -602,22 +602,16 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
 // Specifies the case sensitive for searching operation
 $('#fileExplorer').ejFileExplorer({ 
-caseSensitiveSearch: true,
+filterSettings: {
+  caseSensitiveSearch: true,
+},
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }              
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"     
 });
 </script>{% endhighlight %}
 
@@ -637,7 +631,7 @@ ajaxSettings: {
 
 
 
-Sets the search filter type. There are several filter types are available such as "startswith", "contains", "endswith", "lessthan", "lessthanorequal", "greaterthan", "greaterthanorequal", "equal", "notequal". See <a href="global.html#filterType">filterType</a>
+Sets the search filter type. There are several filter types are available such as "startswith", "contains", "endswith". See <a href="global.html#filterType">filterType</a>
 
 
 
@@ -650,7 +644,7 @@ Default Value:
 
 
 
-* ej.FileExplorer.filterType.StartsWith
+* ej.FileExplorer.filterType.Contains
 
 
 
@@ -665,22 +659,16 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
 // Specifies the filter types, which is used to filter the grid or list elements
-$('#fileExplorer').ejFileExplorer({ 
+$('#fileExplorer').ejFileExplorer({
+filterSettings: { 
 filterType: "startswith",
+},
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"     
 });
 </script>{% endhighlight %}
 
@@ -700,74 +688,11 @@ ajaxSettings: {
 
 
 
-Gets or sets an object that indicates whether to customize the grid behavior in the file explorer
+Using the gridSettings property, we can customize the grid behavior in the File Explorer control.
 
 
 
 
-
-
-
-
-
-
-
-### gridSettings.allowSearching<span class="type-signature type boolean">boolean</span>
-{:#members:gridsettings-allowsearching}
-
-
-
-
-
-
-
-
-Gets or sets a value that indicates whether to enable dynamic searching behavior in file explorer. Currently search box can be enabled through toolbar &#65533;tools&#65533;
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* true
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="fileExplorer" ></div> 
- 
-<script>
-// Initialize the File explorer with the allowSearching value specified for grid.
-$('#fileExplorer').ejFileExplorer({ 
- gridSettings:{allowSearching:false},
-path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                     
-});
-</script>{% endhighlight %}
 
 
 
@@ -818,17 +743,9 @@ Example
 <script>
 // Initialize the File explorer with the allowSorting value specified for grid.
 $('#fileExplorer').ejFileExplorer({ 
- gridSettings:{allowSorting:false},
+gridSettings:{allowSorting:false},
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                     
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"               
 }); 
 </script>{% endhighlight %}
 
@@ -861,7 +778,7 @@ Default Value:
 
 
 
-* [{ field: "name", headerText: "Name", width: 140 }, { field: "type", headerText: "Type", width: 95 }, { field: "size", headerText: "Size", width: 90 }, { field: "dateModified", headerText: "Date Modified", width: 140 }]
+* [{ field: "name", headerText: "Name", width: "25%" }, { field: "type", headerText: "Type", width: "20%" }, { field: "dateModified", headerText: "Date Modified", width: "35%" }, { field: "size", headerText: "Size", width: "15%", textAlign: "right", headerTextAlign: "left" }]
 
 
 
@@ -876,22 +793,14 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
 // Initialize the File explorer with the columns value specified for grid.
 $('#fileExplorer').ejFileExplorer({ 
- gridSettings:{columns:[{ field: "name", headerText: "Name", width: 90 }, { field: "type", headerText: "Type", width: 95 }, { field: "size", headerText: "Size", width: 90 }]},
+gridSettings:{columns:[{ field: "name", headerText: "Name", width: 90 }, { field: "type", headerText: "Type", width: 95 }, { field: "size", headerText: "Size", width: 90 }]},
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                     
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"               
 }); 
 </script>{% endhighlight %}
 
@@ -911,7 +820,7 @@ ajaxSettings: {
 
 
 
-Specifies the height of file explorer control
+Specifies the height of File Explorer control
 
 
 
@@ -939,22 +848,14 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with the height value specified.
+// Initialize the File Explorer with the height value specified.
 $('#fileExplorer').ejFileExplorer({   
 height: 450,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                    
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"            
 });
 </script>{% endhighlight %}
 
@@ -1002,22 +903,16 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
 // Initialize the File explorer with isResponsive value specified.
-$('#fileExplorer').ejFileExplorer({ 
- isResponsive: true,
-path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                      
+$('#fileExplorer').ejFileExplorer({
+isResponsive: true,
+width: "70%",
+height: "50%",
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
 });
 </script>{% endhighlight %}
 
@@ -1037,7 +932,7 @@ ajaxSettings: {
 
 
 
-Sets the file view type. There are two view types are available such as &#65533;grid&#65533;, &#65533;tile&#65533; See layoutType
+Sets the file view type. There are two view types are available such as grid, tile. See layoutType
 
 
 
@@ -1065,22 +960,14 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with the layout value specified.
+// Initialize the File Explorer with the layout value specified.
 $('#fileExplorer').ejFileExplorer({ 
-layout: "grid",
+layout: "tile",
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                      
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                 
 }); 
 </script>{% endhighlight %}
 
@@ -1128,28 +1015,129 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with the culture value specified.
+// Initialize the File Explorer with the culture value specified.
 $('#fileExplorer').ejFileExplorer({ 
 locale: "en-US",
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                    
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"               
 });
 </script>{% endhighlight %}
 
 
 
+### maxHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#members:maxheight}
 
+Set the maximum height of File Explorer control. 
+
+Default Value:
+{:.param}
+
+* null
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// Initialize the File Explorer with maxHeight value specified.
+$('#fileExplorer').ejFileExplorer({
+maxHeight: 500,            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+});
+</script>{% endhighlight %}
+
+
+### maxWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#members:maxwidth}
+
+Set the maximum width of File Explorer control. 
+
+Default Value:
+{:.param}
+
+* null
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// Initialize the File Explorer with maxWidth value specified.
+$('#fileExplorer').ejFileExplorer({
+maxWidth: 1000,            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+});
+</script>{% endhighlight %}
+
+
+### minHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#members:minheight}
+
+Set the minimum height of File Explorer control. 
+
+Default Value:
+{:.param}
+
+* 250
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// Initialize the File Explorer with minHeight value specified.
+$('#fileExplorer').ejFileExplorer({
+minHeight: 300,            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+});
+</script>{% endhighlight %}
+
+
+### minWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+{:#members:minwidth}
+
+Set the minimum width of File Explorer control. 
+
+Default Value:
+{:.param}
+
+* 400
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// Initialize the File Explorer with minWidth value specified.
+$('#fileExplorer').ejFileExplorer({
+minWidth: 300,            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+});
+</script>{% endhighlight %}
 
 
 
@@ -1163,7 +1151,7 @@ ajaxSettings: {
 
 
 
-Specifies the folder path to display in file Explorer,specified path will be consider as root path in file explorer
+The property path denotes the filesystem path which we are going to explore. The path for the filesystem can be physical path or relative path, but it should be relevant to where the Web API hosted.
 
 
 
@@ -1191,28 +1179,73 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
 // Specifies the root folder path, which is need to specified in file explorer control
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }
-ajaxAction: "@Url.Content("~/ImageBrowser/FileAction")"                           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                                 
 });
 </script>{% endhighlight %}
 
 
 
+### selectedFolder<span class="type-signature type string">String</span>
+{:#members:selectedfolder}
 
+The selectedFolder is used to select the specified folder of File Explorer control. 
+
+Default Value:
+{:.param}
+
+* ""
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// Initialize the File Explorer with selectedFolder value specified.
+$('#fileExplorer').ejFileExplorer({
+selectedFolder: "http://mvc.syncfusion.com/ODataServices/FileBrowser/Food",            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+});
+</script>{% endhighlight %}
+
+
+
+### selectedItems<span class="type-signature type string">String</span><span class="type-signature type array">Array</span>
+{:#members:selecteditems}
+
+The selectedItems is used to select the specified items (file, folder) of File Explorer control. 
+
+Default Value:
+{:.param}
+
+* ""
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// Initialize the File Explorer with selectedItems value specified.
+$('#fileExplorer').ejFileExplorer({
+selectedItems: ["Food", "Nature"],            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
+});
+</script>{% endhighlight %}
 
 
 
@@ -1226,7 +1259,7 @@ ajaxAction: "@Url.Content("~/ImageBrowser/FileAction")"
 
 
 
-Enables/Disable the context menu option in file explorer control
+Enables/Disable the context menu option in File Explorer control.
 
 
 
@@ -1254,22 +1287,14 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
 // Initialize the File explorer with the showContextMenu value specified.
 $('#fileExplorer').ejFileExplorer({ 
- showContextMenu: true,
+showContextMenu: false,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                          
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                     
 });
 </script>{% endhighlight %}
 
@@ -1289,7 +1314,7 @@ ajaxSettings: {
 
 
 
-Enables/Disable the file insert option in file explorer control
+Enables/Disable the footer in File Explorer control.The footer element displays the details of the current selected files and folders. And the footer having the switcher to change the layout view.
 
 
 
@@ -1317,87 +1342,18 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with the showFooter value specified.
+// Initialize the File Explorer with the showFooter value specified.
 $('#fileExplorer').ejFileExplorer({ 
-showFooter: true,
+showFooter: false,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                        
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                   
 });
 </script>{% endhighlight %}
 
 
-
-
-
-
-
-### showLayout<span class="type-signature type boolean">boolean</span>
-{:#members:showlayout}
-
-
-
-
-
-
-
-
-Enables/Disable the file view in file explorer control
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* true
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="fileExplorer" ></div> 
- 
-<script>
-// Initialize the File explorer with the showLayout value specified.
-$('#fileExplorer').ejFileExplorer({ 
-showLayout: true,
-path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                       
-}); 
-</script>{% endhighlight %}
 
 
 
@@ -1415,7 +1371,7 @@ ajaxSettings: {
 
 
 
-Shows/Disable the toolbar in file explorer control
+Shows/Disable the toolbar in File Explorer control.
 
 
 
@@ -1448,17 +1404,9 @@ Example
 <script>
 // Initialize the File explorer with the showToolbar value specified.
 $('#fileExplorer').ejFileExplorer({ 
- showToolbar: true,
+showToolbar: false,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                     
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                
 });
 </script>{% endhighlight %}
 
@@ -1468,8 +1416,8 @@ ajaxSettings: {
 
 
 
-### showTreeview<span class="type-signature type boolean">boolean</span>
-{:#members:showtreeview}
+### showNavigationPane<span class="type-signature type boolean">boolean</span>
+{:#members:shownavigationpane}
 
 
 
@@ -1478,7 +1426,7 @@ ajaxSettings: {
 
 
 
-Enables/Disable the tree view in file explorer control
+Enables/Disable the navigation pane in File Explorer control. The navigation pane contains the tree view element which displays all the folders from the filesystem in a hierarchical manner. This is useful to a quick navigation of any folder in the filesystem.
 
 
 
@@ -1509,19 +1457,11 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// Initialize the File explorer with the showTreeview value specified.
+// Initialize the File Explorer with the showNavigationPane value specified.
 $('#fileExplorer').ejFileExplorer({ 
-showTreeview: true,
+showNavigationPane: false,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                      
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                 
 }); 
 </script>{% endhighlight %}
 
@@ -1541,7 +1481,7 @@ ajaxSettings: {
 
 
 
-Sets the tools in File Explorer.
+The tools property is used to configure and group required toolbar items in File Explorer control.
 
 
 
@@ -1554,7 +1494,7 @@ Default Value:
 
 
 
-* { creation:["NewFolder", "Open"], navigation: ["Back", "Forward"], addressBar: ["Addressbar"], editing: ["Refresh", "Upload", "Delete", "Rename", "Download"], copyPaste: ["Cut", "Copy", "Paste"], getProperties: ["Details"], searchBar: ["Searchbar"] }
+* { creation:["NewFolder", "Open"], navigation: ["Back", "Forward", "Upward"], addressBar: ["Addressbar"], editing: ["Refresh", "Upload", "Delete", "Rename", "Download"], copyPaste: ["Cut", "Copy", "Paste"], getProperties: ["Details"], searchBar: ["Searchbar"] }
 
 
 
@@ -1572,11 +1512,11 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// Initialize the File explorer with toolbar tools value specified.
+// Initialize the File Explorer with toolbar tools value specified.
 $('#fileExplorer').ejFileExplorer({ 
 tools: {
   creation:["NewFolder", "Open"],
-  navigation: ["Back", "Forward"],
+  navigation: ["Back", "Forward", "Upward"],
   addressBar: ["Addressbar"],
   editing: ["Refresh", "Upload", "Delete", "Rename", "Download"],
   copyPaste: ["Cut", "Copy", "Paste"],
@@ -1584,15 +1524,7 @@ tools: {
   searchBar: ["Searchbar"]
 },
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }             
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"        
 });
 </script>{% endhighlight %}
 
@@ -1612,7 +1544,7 @@ ajaxSettings: {
 
 
 
-Sets the toolsList in File Explorer. It mapped with tool types, which is available in tools property
+The toolsList property is used to arrange the toolbar items in File Explorer control.
 
 
 
@@ -1625,7 +1557,7 @@ Default Value:
 
 
 
-* ["navigation", "addressBar", "editing", "copyPaste", "getProperties", "searchBar"]
+* ["creation", "navigation", "addressBar", "editing", "copyPaste", "getProperties", "searchBar"]
 
 
 
@@ -1640,22 +1572,14 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with toolsList value specified.
+// Initialize the File Explorer with toolsList value specified.
 $('#fileExplorer').ejFileExplorer({ 
-toolsList: ["creation","navigation", "addressBar", "editing", "copyPaste", "getProperties", "searchBar"],
+toolsList: ["navigation", "creation", "addressBar", "editing", "copyPaste", "getProperties", "searchBar"],
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                      
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                 
 }); 
 </script>{% endhighlight %}
 
@@ -1665,8 +1589,8 @@ ajaxSettings: {
 
 
 
-### uploadBoxSettings<span class="type-signature type object">Object</span>
-{:#members:uploadboxsettings}
+### uploadSettings<span class="type-signature type object">Object</span>
+{:#members:uploadsettings}
 
 
 
@@ -1675,7 +1599,7 @@ ajaxSettings: {
 
 
 
-Gets or sets an object that indicates whether to customize the upload behavior in the file explorer
+Gets or sets an object that indicates whether to customize the upload behavior in the File Explorer.
 
 
 
@@ -1687,8 +1611,8 @@ Gets or sets an object that indicates whether to customize the upload behavior i
 
 
 
-### uploadBoxSettings.fileSize<span class="type-signature type number">number</span>
-{:#members:uploadboxsettings-filesize}
+### uploadSettings.maxFileSize<span class="type-signature type number">number</span>
+{:#members:uploadSettings-maxfilesize}
 
 
 
@@ -1697,7 +1621,7 @@ Gets or sets an object that indicates whether to customize the upload behavior i
 
 
 
-Specifies the file size in bytes for uploading the file. This could be mentioned in number format.
+Specifies the maximum file size allowed to upload. It accepts the value in bytes.
 
 
 
@@ -1725,22 +1649,14 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with the fileSize value specified for uploadbox.
+// Initialize the File Explorer with the maxFileSize value specified for uploadbox.
 $('#fileExplorer').ejFileExplorer({ 
- uploadBoxSettings:{fileSize:10000},
+uploadSettings:{maxFileSize:10000},
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                     
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                
 }); 
 </script>{% endhighlight %}
 
@@ -1750,8 +1666,8 @@ ajaxSettings: {
 
 
 
-### uploadBoxSettings.multipleFilesSelection<span class="type-signature type boolean">boolean</span>
-{:#members:uploadboxsettings-multiplefilesselection}
+### uploadSettings.allowMultipleFile<span class="type-signature type boolean">boolean</span>
+{:#members:uploadSettings-allowmultiplefile}
 
 
 
@@ -1760,7 +1676,7 @@ ajaxSettings: {
 
 
 
-Enables/Disables the Multiple file selection, while uploading files in FileExplorer control.
+Enables or disables the multiple files upload. When it enabled the user can upload multiple files at a time, when disables user can upload only one file at a time.
 
 
 
@@ -1788,22 +1704,63 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
 // Initialize the File explorer with the multipleFilesSelection value specified for uploadbox.
 $('#fileExplorer').ejFileExplorer({ 
- uploadBoxSettings:{multipleFilesSelection:false},
+ uploadSettings:{allowMultipleFile:false},
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                     
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                
+}); 
+</script>{% endhighlight %}
+
+### uploadSettings.autoUpload<span class="type-signature type boolean">boolean</span>
+{:#members:uploadSettings-autoupload}
+
+
+
+
+
+
+
+
+Enables/Disables the auto upload option, while uploading files in FileExplorer control.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// Initialize the File explorer with auto upload option as true.
+$('#fileExplorer').ejFileExplorer({ 
+uploadSettings:{autoUpload:true},
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                
 }); 
 </script>{% endhighlight %}
 
@@ -1823,7 +1780,7 @@ ajaxSettings: {
 
 
 
-Specifies the width of file explorer control
+Specifies the width of File Explorer control.
 
 
 
@@ -1836,7 +1793,7 @@ Default Value:
 
 
 
-* 827
+* 850
 
 
 
@@ -1851,22 +1808,14 @@ Example
 
 {% highlight html %}
  
-<div id="fileExplorer" ></div> 
+<div id="fileExplorer"></div> 
  
 <script>
 // Initialize the File explorer with the width value specified.
 $('#fileExplorer').ejFileExplorer({   
-width: 810,
+width: 800,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                          
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                     
 });
 </script>{% endhighlight %}
 
@@ -1878,8 +1827,57 @@ ajaxSettings: {
 
 
 
+### adjustSize<span class="signature">()</span>
+{:#methods:adjustsize}
 
 
+Refresh the size of File Explorer control.
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// refresh the size of file explorer 
+$('#fileExplorer').ejFileExplorer({      
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"           
+});
+// Create FileExplorer instance
+var feObj = $("#fileExplorer").data("ejFileExplorer");
+feObj.adjustSize(); // refresh the size of file explorer               
+</script>{% endhighlight %}
+
+
+
+### disableMenuItem<span class="signature">()</span>
+{:#methods:disablemenuitem}
+
+
+Disable the particular context menu item
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// diable the context menu item 
+$('#fileExplorer').ejFileExplorer({      
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"           
+});
+// Create FileExplorer instance
+var feObj = $("#fileExplorer").data("ejFileExplorer");
+feObj.disableMenuItem("Upload"); // disable upload option                         
+</script>{% endhighlight %}
 
 
 
@@ -1911,24 +1909,39 @@ Example
 // diable the toolbar tool 
 $('#fileExplorer').ejFileExplorer({      
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"           
 });
 // Create FileExplorer instance
 var feObj = $("#fileExplorer").data("ejFileExplorer");
-feObj.disableToolbarItem("fileExplorerSearchbar"); // disable search bar                           
+feObj.disableToolbarItem("Searchbar"); // disable search bar                           
 </script>{% endhighlight %}
 
 
 
 
+### enableMenuItem<span class="signature">()</span>
+{:#methods:enablemenuitem}
+
+Enable the particular context menu item
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer" ></div> 
+ 
+<script>
+// enable the context menu item 
+$('#fileExplorer').ejFileExplorer({      
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"            
+});
+// Create FileExplorer instance
+var feObj = $("#fileExplorer").data("ejFileExplorer");
+feObj.enableMenuItem("Upload"); // enable upload option in context menu                     
+</script>{% endhighlight %}
 
 
 
@@ -1960,22 +1973,76 @@ Example
 // enable the toolbar tool 
 $('#fileExplorer').ejFileExplorer({      
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   }                 
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"            
 });
 // Create FileExplorer instance
 var feObj = $("#fileExplorer").data("ejFileExplorer");
-feObj.enableToolbarItem("fileExplorerSearchbar"); // enable search bar                     
+feObj.enableToolbarItem("Searchbar"); // enable search bar                     
 </script>{% endhighlight %}
 
 
+
+### refresh<span class="signature">()</span>
+{:#methods:refresh}
+
+
+Refresh the content of the selected folder in File Explorer control.
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer"></div> 
+ 
+<script>
+// refresh the content of selected folder 
+$('#fileExplorer').ejFileExplorer({      
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"           
+});
+// Create FileExplorer instance
+var feObj = $("#fileExplorer").data("ejFileExplorer");
+feObj.refresh(); // refresh the content of selected folder               
+</script>{% endhighlight %}
+
+
+
+### removeToolbarItem<span class="signature">()</span>
+{:#methods:removetoolbaritem}
+
+
+
+
+
+
+
+
+Remove the particular toolbar item
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer" ></div> 
+ 
+<script>
+// remove the toolbar tool 
+$('#fileExplorer').ejFileExplorer({      
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"            
+});
+// Create FileExplorer instance
+var feObj = $("#fileExplorer").data("ejFileExplorer");
+feObj.removeToolbarItem("Searchbar"); // remove search bar                     
+</script>{% endhighlight %}
 
 
 
@@ -1983,22 +2050,282 @@ feObj.enableToolbarItem("fileExplorerSearchbar"); // enable search bar
 
 
 
+### beforeAjaxRequest
+{:#events:beforeajaxrequest}
+
+Fires while before ajax request has been performed
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ajax response data</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the FileExplorer model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer" ></div> 
+ 
+<script>
+// beforeAjaxRequest event for File explorer
+$('#fileExplorer').ejFileExplorer({            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+beforeAjaxRequest: function (args) {}
+});
+</script>{% endhighlight %}
+
+
+
+### beforeDownload
+{:#events:beforedownload}
+
+
+
+Fires while before downloading the files.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+files{% endhighlight %}</td>
+<td class="type"><span class="param-type">string[]</span></td>
+<td class="description last">returns the downloaded file names</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the FileExplorer model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+path{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the path of currently opened item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+selectedItems{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the selected item details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer" ></div> 
+ 
+<script>
+// beforeDownload event for File explorer
+$('#fileExplorer').ejFileExplorer({            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+beforeDownload: function (args) {}
+});
+</script>{% endhighlight %}
 
 
 
 
-
-### copy
-{:#events:copy}
-
+### beforeOpen
+{:#events:beforeopen}
 
 
 
+Fires while files/ folders before opens
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+itemType{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the opened item type</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the FileExplorer model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+path{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the path of currently opened item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+selectedItems{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the selected item details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 
 
-Fires while file or folder has been copied from one place to another place sucesfully
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer" ></div> 
+ 
+<script>
+// beforeOpen event for File explorer
+$('#fileExplorer').ejFileExplorer({            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+beforeOpen: function (args) {}
+});
+</script>{% endhighlight %}
+
+
+
+### beforeUpload
+{:#events:beforeupload}
+
+
+
+Fires while before uploading the files
 
 <table class="params">
 <thead>
@@ -2037,21 +2364,116 @@ model{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
+path{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the path of currently opened item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+selectedItems{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the selected item details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer" ></div> 
+ 
+<script>
+// beforeUpload event for File explorer
+$('#fileExplorer').ejFileExplorer({            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+beforeUpload: function (args) {}
+});
+</script>{% endhighlight %}
+
+
+
+### copy
+{:#events:copy}
+
+
+
+Fires while file or folder has been copied successfully
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the FileExplorer model</td>
+</tr>
 <tr>
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">string[]</span></td>
 <td class="description last">returns the name of copied file/folder</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-targetPath{% endhighlight %}</td>
+selectedItems{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the selected item details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+sourcePath{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the target path</td>
+<td class="description last">returns the source path</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2075,32 +2497,15 @@ Example
 // copy event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   },
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
 copy: function (args) {}
 });
 </script>{% endhighlight %}
 
 
 
-
-
-
-
 ### createFolder
 {:#events:createfolder}
-
-
-
-
-
 
 
 
@@ -2137,9 +2542,21 @@ cancel{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ajax response data</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the FileExplorer model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+selectedItems{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the selected item details</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2169,32 +2586,110 @@ Example
 // createFolder event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   },
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
 createFolder: function (args) {}
 });
 </script>{% endhighlight %}
 
 
 
+### cut
+{:#events:cut}
 
+
+
+Fires while file or folder has been cut successfully
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the FileExplorer model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
+<td class="type"><span class="param-type">string[]</span></td>
+<td class="description last">returns the name of moved file/folder</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+selectedItems{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the selected item details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+sourcePath{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the source path</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer" ></div> 
+ 
+<script>
+// cut event for File explorer
+$('#fileExplorer').ejFileExplorer({            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+cut: function (args) {}
+});
+</script>{% endhighlight %}
 
 
 
 ### layoutChange
 {:#events:layoutchange}
-
-
-
-
-
 
 
 
@@ -2231,6 +2726,12 @@ cancel{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
+layoutType{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the current view type.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the FileExplorer model</td>
@@ -2240,12 +2741,6 @@ model{% endhighlight %}</td>
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-layoutType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current view type.</td>
 </tr>
 </tbody>
 </table>
@@ -2269,138 +2764,15 @@ Example
 // layoutChange event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   },
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
 layoutChange: function (args) {}
 });
 </script>{% endhighlight %}
 
 
 
-
-
-
-
-### move
-{:#events:move}
-
-
-
-
-
-
-
-
-Fires while file or folder has been moved from one place to another place sucesfully
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from FileExplorer
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of moved file/folder</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-targetPath{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the target path</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="fileExplorer" ></div> 
- 
-<script>
-// move event for File explorer
-$('#fileExplorer').ejFileExplorer({            
-path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   },
-move: function (args) {}
-});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
 ### open
 {:#events:open}
-
-
-
-
-
 
 
 
@@ -2437,27 +2809,33 @@ cancel{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
+itemType{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the opened item type</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the FileExplorer model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
 path{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the path of currently opened item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-itemType{% endhighlight %}</td>
+selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the opened item type</td>
+<td class="description last">returns the selected item details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2480,37 +2858,20 @@ Example
 <script>
 // open event for File explorer
 $('#fileExplorer').ejFileExplorer({            
-* path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   },
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
 open: function (args) {}
 });
 </script>{% endhighlight %}
 
 
 
+### paste
+{:#events:paste}
 
 
 
-
-### remove
-{:#events:remove}
-
-
-
-
-
-
-
-
-Fires when file or folder ahs been deleted sucessfully
+Fires while file or folder has been pasted successfully
 
 <table class="params">
 <thead>
@@ -2549,21 +2910,134 @@ model{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
+name{% endhighlight %}</td>
+<td class="type"><span class="param-type">string[]</span></td>
+<td class="description last">returns the name of moved file/folder</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+selectedItems{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the selected item details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+targetFolder{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the target folder item details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+targetPath{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the target path</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
 </tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer" ></div> 
+ 
+<script>
+// paste event for File explorer
+$('#fileExplorer').ejFileExplorer({            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+paste: function (args) {}
+});
+</script>{% endhighlight %}
+
+
+
+### remove
+{:#events:remove}
+
+
+
+Fires when file or folder has been deleted sucessfully
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ajax response data</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the FileExplorer model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the names of deleted items.</td>
+</tr>
 <tr>
 <td class="name">{% highlight html %}
 path{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the path of deleted item</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-itemType{% endhighlight %}</td>
+selectedItems{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the selected item details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the deleted item type.</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2587,32 +3061,261 @@ Example
 // remove event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   },
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
 remove: function (args) {}
 });
 </script>{% endhighlight %}
 
 
 
+### resize
+{:#events:resize}
 
+
+Fires this event when the resizing is performed for fileexplorer
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the mouse move event args</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the FileExplorer model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer" ></div> 
+ 
+<script>
+// resize event for File explorer
+$('#fileExplorer').ejFileExplorer({            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+resize: function (args) {}
+});
+</script>{% endhighlight %}
+
+
+
+### resizeStart
+{:#events:resizestart}
+
+
+Fires this event when the resizing is started for fileexplorer
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the mouse down event args</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the FileExplorer model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer" ></div> 
+ 
+<script>
+// resizeStart event for File explorer
+$('#fileExplorer').ejFileExplorer({            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+resizeStart: function (args) {}
+});
+</script>{% endhighlight %}
+
+
+
+### resizeStop
+{:#events:resizestop}
+
+
+Fires this event when the resizing is stopped for fileexplorer
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from FileExplorer
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the mouse leave event args</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the FileExplorer model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="fileExplorer" ></div> 
+ 
+<script>
+// resizeStop event for File explorer
+$('#fileExplorer').ejFileExplorer({            
+path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
+resizeStop: function (args) {}
+});
+</script>{% endhighlight %}
 
 
 
 ### select
 {:#events:select}
-
-
-
-
-
 
 
 
@@ -2655,27 +3358,27 @@ model{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of clicked item</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-itemType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the type of clicked item.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
 path{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the path of clicked item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+selectedItems{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the selected item details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2699,15 +3402,7 @@ Example
 // select event for File explorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
-ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction",      
-ajaxSettings: {
-       upload: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-       },
-       download: {
-           url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-       }
-   },
+ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",        
 select: function (args) {}
 });
 </script>{% endhighlight %}
