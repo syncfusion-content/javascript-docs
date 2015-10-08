@@ -177,7 +177,7 @@ Special dates fields
    </tr>
    <tr>
       <td>
-         icon 
+         iconClass 
       </td>
       <td>
          you can set the customized css with this property.
@@ -211,23 +211,23 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
           spldays = [{
              date: new Date(today.getFullYear(), today.getMonth(), 1),
              tooltip: "In America",
-             icon: "flag-am"
+             iconClass: "flag-am"
           }, {
              date: new Date(today.getFullYear(), today.getMonth() + 1, 6),
              tooltip: "In Argendina",
-             icon: "flag-ar"
+             iconClass: "flag-ar"
           }, {
              date: new Date(today.getFullYear(), today.getMonth() + 1, 27),
              tooltip: "In Bangladesh",
-             icon: "flag-bd"
+             iconClass: "flag-bd"
           }, {
              date: new Date(today.getFullYear(), today.getMonth() - 1, 3),
              tooltip: "In Brasil",
-             icon: "flag-br"
+             iconClass: "flag-br"
           }, {
              date: new Date(today.getFullYear(), today.getMonth() - 2, 22),
              tooltip: "In Canada",
-             icon: "flag-ca"
+             iconClass: "flag-ca"
           }, ]
           // declaration
        $("#datepicker").ejDatePicker({
@@ -235,7 +235,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
           fields: {
              date: "date",
              tooltip: "tooltip",
-             icon: "icon"
+             iconClass: "iconClass"
           }
        });
     });
