@@ -97,7 +97,7 @@ Requires
 
 
 
-Enable the dragAndDrop support to the Uploadbox control.
+Enables the file drag and drop support to the Uploadbox control.
 
 
 
@@ -126,11 +126,11 @@ Example
 {% highlight html %}
  
 <div id="uploadbox1"></div> 
- 
+
 <script>
-//To set allowDragAndDrop API value during initialization
-        $("#uploadbox1").ejUploadbox({ allowDragAndDrop:false});        
-</script> {% endhighlight %}
+    //Sets the allowDragAndDrop API value on initialization.
+    $("#uploadbox1").ejUploadbox({ allowDragAndDrop: false });        
+</script>{% endhighlight %}
 
 
 
@@ -148,7 +148,13 @@ Example
 
 
 
-Uploadbox supports both synchronous and asynchronous upload. This can be achieved by this property asyncUpload.
+Uploadbox supports both synchronous and asynchronous upload. This can be achieved by using the asyncUpload property.
+
+Synchronous Upload -
+Selected files will be sent on the application form post action.	
+
+Asynchronous Upload -
+Selected files will be sent to the server handler by using the AJAX Post.
 
 
 
@@ -199,7 +205,7 @@ Example
 
 
 
-Uploadbox supports auto uploading of files after the file selection is done.The auto upload is performed if autoUpload is set to true.
+Uploadbox supports auto uploading of files after the file selection is done.
 
 
 
@@ -240,7 +246,7 @@ Example
 
 
 
-### buttonText<span class="type-signature type string">string</span>
+### buttonText<span class="type-signature type string">object</span>
 {:#members:buttontext}
 
 
@@ -250,7 +256,7 @@ Example
 
 
 
-Specifies the text content for Uploadbox browse button while initialization.
+Sets the text for each action button.
 
 
 
@@ -263,7 +269,7 @@ Default Value:
 
 
 
-* "Browse"
+* {browse: "Browse", upload: "Upload", cancel: "Cancel", close: "Close"}
 
 
 
@@ -279,10 +285,11 @@ Example
 {% highlight html %}
  
 <div id="uploadbox1"></div> 
- 
+
 <script>
-//To set  browseButtonText API value 
-        $("#uploadbox1").ejUploadbox({ buttonText:{ browse:"Choose File", upload:"Upload the File", cancel:"Cancel the Upload"}});      
+    //Sets the buttonText API value on initialization.
+$("#uploadbox1").ejUploadbox({ buttonText: { browse: "Choose File", upload: "Upload the File", cancel: "Cancel the Upload"} });        
+
 </script>{% endhighlight %}
 
 
@@ -301,7 +308,7 @@ Example
 
 
 
-Sets the text for the Browse button.
+Sets the text for the browse button.
 
 
 
@@ -336,7 +343,7 @@ Example
 
 
 
-Sets the text for the Cancel button inside the dialog popup.
+Sets the text for the cancel button.
 
 
 
@@ -349,10 +356,11 @@ Example
 {% highlight html %}
  
 <div id="uploadbox1"></div> 
- 
+
 <script>
-//To set buttonText API during initialization  
-        $("#uploadbox1").ejUploadbox({ buttonText: { cancel: "Cancel the Upload" }});
+    //Sets the buttonText.cancel API value on initialization.
+$("#uploadbox1").ejUploadbox({ buttonText: { cancel: "Cancel"});        
+
 </script>{% endhighlight %}
 
 
@@ -371,7 +379,7 @@ Example
 
 
 
-Sets the text for the Close button inside the dialog popup.
+Sets the text for the close button.
 
 
 
@@ -384,10 +392,11 @@ Example
 {% highlight html %}
  
 <div id="uploadbox1"></div> 
- 
+
 <script>
-//To set buttonText API during initialization  
-        $("#uploadbox1").ejUploadbox({ buttonText: { close: "close dialog" }});
+    //Sets the buttonText.Close API value on initialization.
+$("#uploadbox1").ejUploadbox({ buttonText: {Close: "close"} });        
+
 </script>{% endhighlight %}
 
 
@@ -441,7 +450,8 @@ Example
 
 
 
-Set the root class for Uploadbox control theme. This cssClass API helps to use custom skinning option for Uploadbox control.
+Sets the root class for the Uploadbox control theme. This cssClass API helps to use custom skinning option for the Uploadbox button and dialog content.
+
 
 
 
@@ -470,11 +480,12 @@ Example
 {% highlight html %}
  
 <div id="uploadbox1"></div> 
- 
+
 <script>
-//To set cssClass  API value during initialization
-        $("#uploadbox1").ejUploadbox({ cssClass : "gradient-lime"});    
-</script> {% endhighlight %}
+    //Sets the cssClass API value on initialization.
+$("#uploadbox1").ejUploadbox({cssClass : "gradient- purple"});        
+
+</script>{% endhighlight %}
 
 
 
@@ -492,7 +503,7 @@ Example
 
 
 
-Specifies the custom file details in dialog popup while initialization.
+Specifies the custom file details in the dialog popup on initialization.
 
 
 
@@ -505,7 +516,7 @@ Default Value:
 
 
 
-* customFileDetails:{ title:true, name:true, size:true, status:true, action:true}
+* { title:true, name:true, size:true, status:true, action:true}
 
 
 
@@ -521,10 +532,11 @@ Example
 {% highlight html %}
  
 <div id="uploadbox1"></div> 
- 
+
 <script>
-//To set  customFileDetails API value 
-        $("#uploadbox1").ejUploadbox({ customFileDetails:{ title:true, name:true, size:true, status:true, action:true}});       
+    //Sets the customFileDetails API value on initialization.
+$("#uploadbox1").ejUploadbox({customFileDetails:{ title:true, name:true, size:true, status:true, action:true}});        
+
 </script>{% endhighlight %}
 
 
@@ -543,7 +555,7 @@ Example
 
 
 
-Enable the remove/ cancel action in File details for the dialog popup.
+Enables the file upload interactions like remove/cancel in File details of the dialog popup.
 
 
 
@@ -556,10 +568,11 @@ Example
 {% highlight html %}
  
 <div id="uploadbox1"></div> 
- 
+
 <script>
-//To set customFileDetails API during initialization  
-        $("#uploadbox1").ejUploadbox({ customFileDetails: { action: true}});
+    //Sets the customFileDetails.action API value on initialization.
+$("#uploadbox1").ejUploadbox({customFileDetails:{action:true}});        
+
 </script>{% endhighlight %}
 
 
@@ -578,7 +591,7 @@ Example
 
 
 
-Enable the name in File details for the dialog popup.
+Enables the name in the File details of the dialog popup.
 
 
 
@@ -613,7 +626,10 @@ Example
 
 
 
-Enable the size in File details for the dialog popup.
+Enables or disables the File size details of the dialog popup.
+
+Note: Details of the File Size is available from IE10+ browser version.
+
 
 
 
@@ -648,7 +664,7 @@ Example
 
 
 
-Enable the status in File details for the dialog popup.
+Enables or disables the file uploading status visibility in the dialog file details content.
 
 
 
@@ -731,7 +747,7 @@ Default Value:
 
 
 
-* dialogAction:{ modal:false, closeOnComplete:false, content:null, drag:true}
+* { modal:false, closeOnComplete:false, content:null, drag:true}
 
 
 
@@ -769,7 +785,7 @@ Example
 
 
 
-This will close the File details for the dialog popup once upload has performed successfully.
+TOnce uploaded successfully, dialog popup closes immediately.
 
 
 
@@ -804,7 +820,7 @@ Example
 
 
 
-set the content Container option for File details of dialog popup.
+Sets the content container option to the Uploadbox dialog popup.
 
 
 
@@ -817,10 +833,11 @@ Example
 {% highlight html %}
  
 <div id="uploadbox1"></div> 
- 
+
 <script>
-//To set dialogAction API during initialization  
-        $("#uploadbox1").ejUploadbox({ dialogAction: { content: "#uploadbox1" }});
+    //Sets the dialogAction.content API value on initialization.
+$("#uploadbox1").ejUploadbox({dialogAction:{ content: "#uploadbox1"}});        
+
 </script>{% endhighlight %}
 
 
@@ -839,7 +856,7 @@ Example
 
 
 
-Enable the drag option for File details of dialog popup.
+Enables the drag option to the dialog popup.
 
 
 
@@ -874,7 +891,11 @@ Example
 
 
 
-set the modal property for the dialog popup.
+Enables or disables the Uploadbox dialog’s modal property to the dialog popup.
+
+
+Note: dialogAction.modal property does not work in synchronous file upload.
+
 
 
 
@@ -899,7 +920,7 @@ Example
 
 
 
-### dialogPosition<span class="type-signature type jsonobject">JSONobject</span>
+### dialogPosition<span class="type-signature type object">object</span>
 {:#members:dialogposition}
 
 
@@ -909,7 +930,7 @@ Example
 
 
 
-Displays the uploadbox dialog window at the given X and Y position. X: Dialog set the left position value. Y: Dialog set the top position value.
+Displays the Uploadbox dialog at the given X and Y positions. X: Dialog set the left position value. Y: Dialog set the top position value.
 
 
 
@@ -950,7 +971,7 @@ Example
 
 
 
-### dialogText<span class="type-signature type string">string</span>
+### dialogText<span class="type-signature type object">object</span>
 {:#members:dialogtext}
 
 
@@ -960,7 +981,7 @@ Example
 
 
 
-Sets the text for the inside the dialog popup.
+Property for applying the text to the Dialog title and content headers.
 
 
 
@@ -973,7 +994,7 @@ Default Value:
 
 
 
-* UploadBox
+* { title: "Upload Box", name: "Name", size: "Size", status: "Status"}
 
 
 
@@ -1011,7 +1032,7 @@ Example
 
 
 
-Sets the Name text for the dialog popup.
+Sets the uploaded file’s Name (header text) to the Dialog popup.
 
 
 
@@ -1046,7 +1067,7 @@ Example
 
 
 
-Sets the Size text for dialog popup.
+Sets the upload file Size (header text) to the dialog popup.
 
 
 
@@ -1081,7 +1102,7 @@ Example
 
 
 
-Sets the Status text for dialog popup.
+Sets the upload file Status (header text) to the dialog popup.
 
 
 
@@ -1116,7 +1137,7 @@ Example
 
 
 
-Sets the title text dialog popup.
+Sets the title text of the dialog popup.
 
 
 
@@ -1141,7 +1162,7 @@ Example
 
 
 
-### dragAreaText<span class="type-signature type string">string</span>
+### dropAreaText<span class="type-signature type string">string</span>
 {:#members:dragareatext}
 
 
@@ -1151,7 +1172,7 @@ Example
 
 
 
-To specify the text to be displayed when enable the draganddrop support in theUploadbox control.
+The dropAreaText is displayed when the draganddrop support is enabled in the Uploadbox control.
 
 
 
@@ -1183,7 +1204,7 @@ Example
  
 <script>
 //To set dragAreaText API value during initialization
-        $("#uploadbox1").ejUploadbox({ dragAreaText:"Drop files or click to upload"});  
+        $("#uploadbox1").ejUploadbox({ dropAreaText:"Drop files or click to upload"});
 </script> {% endhighlight %}
 
 
@@ -1202,7 +1223,7 @@ Example
 
 
 
-To specify the dropareaheight when enable the draganddrop support in theUploadbox control.
+Specifies the dropAreaHeight when the draganddrop support is enabled in the Uploadbox control.
 
 
 
@@ -1235,7 +1256,7 @@ Example
 <script>
 //To set dropAreaHeight API value during initialization
         $("#uploadbox1").ejUploadbox({ dropAreaHeight:"100%"}); 
-</script> {% endhighlight %}
+</script>{% endhighlight %}
 
 
 
@@ -1253,7 +1274,7 @@ Example
 
 
 
-To specify the dropareawidth when enable the draganddrop support in theUploadbox control.
+Specifies the dropAreaWidth when the draganddrop support is enabled in the Uploadbox control.
 
 
 
@@ -1303,8 +1324,7 @@ Example
 
 
 
-
-Enables or disables Uploadbox based on boolean value.
+Based on the property value Uploadbox will be enabled or disabled.
 
 
 
@@ -1355,7 +1375,7 @@ Example
 
 
 
-Specifies the Right to Left direction property for Uploadbox control.
+Sets the right-to-left direction property for the Uploadbox control.
 
 
 
@@ -1368,7 +1388,7 @@ Default Value:
 
 
 
-* true
+* false
 
 
 
@@ -1406,7 +1426,7 @@ Example
 
 
 
-Specifies the file extension to allow for uploading the file while initialization. This could be mentioned in string format.
+Only files with the specified extension will be allowed to upload. This could be mentioned in the string format.
 
 
 
@@ -1457,7 +1477,7 @@ Example
 
 
 
-Specifies the file extension to deny for uploading the file while initialization. This could be mentioned in string format.
+Only files with the specified extension will be denied for upload. This could be mentioned in the string format.
 
 
 
@@ -1508,7 +1528,10 @@ Example
 
 
 
-Specifies the file size for uploading the file while initialization. This could be mentioned in number format.
+Sets the maximum size limit for uploading the file. This could be mentioned in the number format.
+
+Note: fileSize represents the size of the individual file.
+
 
 
 
@@ -1610,7 +1633,7 @@ Example
 
 
 
-Sets the culture in uploadbox.
+Configures the culture data and sets the culture to the Uploadbox.
 
 
 
@@ -1639,10 +1662,36 @@ Example
 {% highlight html %}
  
 <div id="uploadbox1"></div> 
- 
+
 <script>
-//To set  asyncUpload API value during initialization
-        $("#uploadbox1").ejUploadbox({ locale: vi-VN });        
+ej.Uploadbox.Locale["nl-BE"] = {
+        buttonText: {
+            upload: "uploaden",
+            browse: "Blader",
+            cancel: "Annuleer",
+            close: "dicht"
+        },
+        dialogText: {
+            title: "Upload Box",
+            name: "naam",
+            size: "grootte",
+            status: "toestand"
+        },
+        dropAreaText: "Drop bestanden of klik te uploaden ",
+        filedetail: "Het geselecteerde bestand is te groot . Selecteer een bestand in de geldige grootte.",
+        denyError: "Bestanden met #Extension extensies zijn niet toegestaan.",
+        allowError: "Alleen bestanden met #Extension extensies zijn toegestaan.",
+        cancelToolTip: "Annuleer",
+        removeToolTip: "verwijderen",
+        retryToolTip: "opnieuw proberen",
+        completedToolTip: "voltooid",
+        failedToolTip: "gefaald",
+        closeToolTip: "dicht"
+    }; 
+
+    //Sets locale API value on initialization.
+$("#uploadbox1").ejUploadbox({ locale: "nl-BE" });        
+
 </script>{% endhighlight %}
 
 
@@ -1661,7 +1710,7 @@ Example
 
 
 
-Enables to select multiple files
+Enables multiple file selection for upload.
 
 
 
@@ -1674,7 +1723,7 @@ Default Value:
 
 
 
-* false
+* true
 
 
 
@@ -1693,7 +1742,7 @@ Example
  
 <script>
 //To set multipleFilesSelection API value during initialization
-        $("#uploadbox1").ejUploadbox({ multipleFilesSelection: false });
+        $("#uploadbox1").ejUploadbox({ multipleFilesSelection: true });
 </script> {% endhighlight %}
 
 
@@ -1702,7 +1751,7 @@ Example
 
 
 
-### pushFile<span class="type-signature type data">data</span>
+### pushFile<span class="type-signature type object">object</span>
 {:#members:pushfile}
 
 
@@ -1712,7 +1761,7 @@ Example
 
 
 
-We can push the file into upload box in client side in xhr supported browsers alone.
+You can push the file to the Uploadbox in the client side of the XHR supported browsers alone.
 
 
 
@@ -1725,7 +1774,7 @@ Default Value:
 
 
 
-* files- rawfiles
+* null
 
 
 
@@ -1763,7 +1812,7 @@ Example
 
 
 
-Specifies the remove action which has to be performed after the file uploading is completed. Here we have to mention the server address which has to perform this action.
+Specifies the remove action to be performed after the file uploading is completed. Here, mention the server address for removal.
 
 
 
@@ -1814,7 +1863,7 @@ Example
 
 
 
-Specifies the save action which has to be performed after the file is pushed for uploading. Here we have to mention the server address which has to perform this action.
+Specifies the save action to be performed after the file is pushed for uploading. Here, mention the server address to be saved. 
 
 
 
@@ -1865,7 +1914,7 @@ Example
 
 
 
-Enable the browse button support to the Uploadbox control.
+Enables the browse button support to the Uploadbox control.
 
 
 
@@ -1916,8 +1965,7 @@ Example
 
 
 
-Specifies to display the file details of files while selected for uploading can be done when showFileDetails set to true.
-
+Specifies the file details to be displayed when selected for uploading. This can be done when showFileDetails is set to true.
 
 
 
@@ -1967,7 +2015,8 @@ Example
 
 
 
-Set the Name for Uploadbox control . This API helps to Map the action in code behind to retrieve the files.
+Sets the name for the Uploadbox control. This API helps to Map the action in code behind to retrieve the files.
+
 
 
 
@@ -1996,11 +2045,13 @@ Example
 {% highlight html %}
  
 <div id="uploadbox1"></div> 
- 
+
 <script>
-//To set uploadName property value during initialization
-        $("#uploadbox1").ejUploadbox({ uploadName : "Uploadbox"});      
-</script> {% endhighlight %}
+
+    //Sets the uploadName API value on initialization.
+  $("#uploadbox1").ejUploadbox({saveUrl: "http://js.syncfusion.com/demos/beta/saveFiles.ashx" ,uploadName: "Uploadbox", });      
+
+</script>{% endhighlight %}
 
 
 
@@ -2076,7 +2127,7 @@ Example
 
 
 
-destroy the Upload control all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+The destroy method destroys the control and brings the control to a pre-init state and all the events of the Upload control bound using this._on unbinds automatically.  
 
 
 
@@ -2124,7 +2175,7 @@ $("#uploadbox1").ejUploadbox("destroy");
 
 
 
-To disable the Uploadbox control
+Disables the Uploadbox control
 
 
 
@@ -2172,7 +2223,7 @@ $("#uploadbox1").ejUploadbox("disable");
 
 
 
-To enable the Uploadbox control
+Enables the Uploadbox control
 
 
 
@@ -2229,6 +2280,7 @@ $("#uploadbox1").ejUploadbox("enable");
 
 Fires when the upload progress begins.
 
+
 <table class="params">
 <thead>
 <tr>
@@ -2252,6 +2304,18 @@ argument{% endhighlight %}</td>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="name">{% highlight html %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">To pass additional information to the server.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+files{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Selected FileList Object.</td>
+</tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
@@ -2293,7 +2357,7 @@ Example
 $("#uploadbox1").ejUploadbox({
    begin: function (args) {}
 });   
-</script>   {% endhighlight %}
+</script>{% endhighlight %}
 
 
 
@@ -2338,9 +2402,9 @@ argument{% endhighlight %}</td>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+fileStatus{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Canceled FileList Object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2376,8 +2440,7 @@ Example
 //cancel event for Uploadbox
 $("#uploadbox1").ejUploadbox({
    cancel: function (args) {}
-});
-</script>     {% endhighlight %}
+});</script>{% endhighlight %}
 
 
 
@@ -2422,9 +2485,27 @@ argument{% endhighlight %}</td>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+e{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">AJAX event argument for reference.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+files{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Uploaded file list.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+responseText{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">response from the server.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+xhr{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">XHR-AJAX Object for reference.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2437,12 +2518,6 @@ model{% endhighlight %}</td>
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-files{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns file entries and its details</td>
 </tr>
 </tbody>
 </table>
@@ -2468,6 +2543,114 @@ $("#uploadbox1").ejUploadbox({
    complete: function (args) {}
 });   
 </script>   {% endhighlight %}
+
+
+
+
+
+
+### success
+{:#events:complete}
+
+
+
+
+
+
+
+
+Fires when the file upload progress is completed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from Uploadbox
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+responseText{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">response from the server.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+e{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">AJAX event argument for reference.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+success{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">successfully uploaded files list.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+files{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Uploaded file list.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+xhr{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">XHR-AJAX Object for reference.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the Uploadbox model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="uploadbox1"></div> 
+ 
+<script>
+//complete event for Uploadbox
+$("#uploadbox1").ejUploadbox({
+   complete: function (args) {}
+});   
+</script>   {% endhighlight %}
+
 
 
 
@@ -2510,12 +2693,6 @@ argument{% endhighlight %}</td>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
@@ -2596,12 +2773,6 @@ argument{% endhighlight %}</td>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Uploadbox model</td>
@@ -2680,15 +2851,9 @@ argument{% endhighlight %}</td>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Uploadbox model</td>
+error{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">details about the error information.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2700,7 +2865,7 @@ type{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the action name</td>
+<td class="description last">error event action details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2776,9 +2941,9 @@ argument{% endhighlight %}</td>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+files{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns Selected FileList objects</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2859,12 +3024,6 @@ argument{% endhighlight %}</td>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the Uploadbox model</td>
@@ -2877,7 +3036,7 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-status{% endhighlight %}</td>
+fileStatus{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the file details of the file object</td>
 </tr>
