@@ -1,38 +1,25 @@
 ---
 layout: post
 title: ejSchedule
+description: Methods, Members, Events available in ejSchedule
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: ejSchedule, API, Essential JS Schedule
 ---
 
-# Custom Design for Html Schedule control.
+# ejSchedule
 
+Custom Design for Html Schedule control.
 
+#### Syntax
 
+{% highlight js %}
 
+$(element).ejSchedule()
 
+{% endhighlight %}
 
-
-
-
-
-$(element).ejSchedule<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -40,4979 +27,3808 @@ Example
  
 <script>
 $('#Schedule').ejSchedule();         
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
-
-
-
-
-
-Requires
-{:.require}
-
-
-
+#### Requires
 
 * module:jQuery
-
-
 * module:jquery.easing.min.js
-
-
 * module:jquery.globalize.min.js
-
-
 * module:jsrender.min.js
-
-
 * module:ej.core.js
-
-
 * module:ej.data.js
-
-
 * module:ej.schedule.js
-
-
 * module:ej.scroller.js
-
-
 * module:ej.radiobutton.js
-
-
 * module:ej.editor.js
-
-
 * module:ej.dropdownlist.js
-
-
 * module:ej.autocomplete.js
-
-
 * module:ej.menu.js
-
-
 * module:ej.dialog.js
-
-
 * module:ej.button.js
-
-
 * module:ej.checkbox.js
-
-
 * module:ej.datepicker.js
-
-
 * module:ej.timepicker.js
-
-
 * module:ej.navigationdrawer.js
-
 
 
 
 ## Members
 
 
-
-
-
-
-
-
-### allowDragDrop<span class="type-signature type boolean">boolean</span>
+### allowDragDrop 'boolean'
 {:#members:allowdragdrop}
 
+When set to true, Scheduler allows the appointments to be dragged and dropped to the required time.
 
-
-
-
-
-
-
-Enables or disables the appointment drag and drop behavior of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * true
 
+#### Example
 
-
-
-
-
-
-
-Example
-{:.example}
-
+To disable the drag and drop functionality
 
 {% highlight html %}
  
 <div id="Schedule"></div> 
  
-<script>
-        $("#Schedule").ejSchedule({ 
-    allowDragDrop: true,
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }   
-       });
-</script>{% endhighlight %}
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+		        currentDate:new Date(2014,4,5),
+                allowDragDrop: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                } 
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
-
-
-
-
-
-### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+### allowKeyboardNavigation 'boolean'
 {:#members:allowkeyboardnavigation}
 
+When set to true, Scheduler allows the interaction via keyboard shortcut keys. 
 
-
-
-
-
-
-
-Enables or disables the keyboard interaction of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * true
 
+#### Example
 
-
-
-
-
-
-
-Example
-{:.example}
+To disable the Keyboard interaction with Schedule
 
 
 {% highlight html %}
  
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ allowKeyboardNavigation: true});
-</script>{% endhighlight %}
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+		            allowKeyboardNavigation: false
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
-
-
-
-
-
-### appointmentSettings<span class="type-signature type object">Object</span>
+### appointmentSettings 'object'
 {:#members:appointmentsettings}
 
+It includes the dataSource option and the fields related to Scheduler appointments.
 
 
+### appointmentSettings.dataSource 'object/Array'
+{:#members:appointmentSettings-dataSource}
 
 
+#### Default Value
 
+* Array
 
+The dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance which contains Scheduler appointments.
 
-This property is used to bind the appointmentSettings data fields to the schedule.
+#### Example
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* Object
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To set the dataSource with array of JSON object collection.
 
 {% highlight html %}
        
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate:new Date(2014,4,5),
+		        appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00)
+                    },
+                    {
+                        Id: 102,
+                        Subject: "Play with pets",
+                        StartTime: new Date(2014, 4, 5, 05, 00),
+                        EndTime: new Date(2014, 4, 5, 07, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
+#### Example
 
 
-
-
-
-### appointmentSettings.allDay<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-allday}
-
-
-
-
-
-
-
-
-Bind string value to allday field of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To set the dataSource with DataManager instance
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            // DataManager creation
+            var dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc/Events",
+                crossDomain: true
+            });
 
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                appointmentSettings: {
+                    dataSource: dataManager // passing remote url
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
 
-
-### appointmentSettings.categorize<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-categorize}
-
-
-
-
-
-
-
-
-Bind string value to categorize field of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay",
-              categorize: "Categorize"
-            }                                      
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### appointmentSettings.dataSource<span class="type-signature type object">object</span>
-{:#members:appointmentsettings-datasource}
-
-
-
-
-
-
-
-
-Render the appointments within the Schedule control based on the specified dataSource.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### appointmentSettings.description<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-description}
-
-
-
-
-
-
-
-
-Bind string value to description field of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { description: "Description",
-              dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",               
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### appointmentSettings.endTime<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-endtime}
-
-
-
-
-
-
-
-
-Bind string value to endTime field of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { endTime: "EndTime",
-              dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### appointmentSettings.endTimeZone<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-endtimezone}
-
-
-
-
-
-
-
-
-Bind string value to endTimeZone field of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { endTimeZone: "EndTimeZone",
-              dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### appointmentSettings.id<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-id}
-
-
-
-
-
-
-
-
-Bind string value to id field of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { id: "Id",
-              dataSource: window.Default, //collection of object from dataSource.                *               
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### appointmentSettings.location<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-location}
-
-
-
-
-
-
-
-
-Bind string value to location field of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay",
-              categorize: "Categorize",
-              location:"Location",
-            }                                      
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### appointmentSettings.priority<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-priority}
-
-
-
-
-
-
-
-
-Bind string value to priority field of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay",
-              categorize: "Categorize",
-              location:"Location",
-              priority:"Priority"
-            }                                      
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### appointmentSettings.query<span class="type-signature type object">object</span>
+### appointmentSettings.query 'string'
 {:#members:appointmentsettings-query}
 
-
-
-
-
-
-
-
-Query the data records from the table for schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * null
 
+It holds either the ej.Query() object or simply the query string which retrieves the specified records from the table.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To set the dataSource with DataManager instance and then querying the datamanager to fetch specific records from the Events table,
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            // DataManager creation
+            var dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc",
+                crossDomain: true
+            });
+            // Query creation
+            var query = ej.Query().from("Events").take(10);
 
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                appointmentSettings: {
+                    dataSource: dataManager, // passing remote url
+                    query: query // query to retrieve the records from “Events” table
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### appointmentSettings.tableName 'string'
+{:#members:appointmentsettings-tableName}
 
-
-### appointmentSettings.recurrence<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-recurrence}
-
-
-
-
-
-
-
-
-Bind string value to recurrence field of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * null
 
+Assign the table name from which the records are to be fetched for the Scheduler.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To set the dataSource with DataManager instance and using tableName property to directly fetch all the records from it,
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { recurrence: "Recurrence",
-              dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            // DataManager creation
+            var dataManager = ej.DataManager({
+                url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc",
+                crossDomain: true
+            });
+            
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                appointmentSettings: {
+                    dataSource: dataManager, // passing remote url
+                    tableName: "Events" // tableName to retrieve the records from it
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
+The following are the appointment fields which holds the appropriate column names from the dataSource.
 
+### appointmentSettings.id 'string'
+{:#members:appointmentsettings-id}
 
+Binds the id field name in the dataSource to the id of the Scheduler appointments. It denotes the unique id assigned to the appointments.
 
+### appointmentSettings.startTime 'string'
+{:#members:appointmentsettings-startTime}
 
+Binds the name of the startTime field in the dataSource with the start time of the Scheduler appointments. It indicates the date and Time when the Scheduler appointment actually starts.
 
-### appointmentSettings.recurrenceRule<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-recurrencerule}
+### appointmentSettings.endTime 'string'
+{:#members:appointmentsettings-endTime}
 
+Binds the name of the endTime field in the dataSource with the end time of the Scheduler appointments. It indicates the date and Time when the Scheduler appointment actually ends.
 
+#### Example
 
-
-
-
-
-
-Bind string value to recurrenceRule field of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To create a simple appointment with its mandatory fields such as id, startTime & endTime,
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { recurrenceRule: "RecurrenceRule",
-              dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
 
-
-
-
-
-
-
-### appointmentSettings.resourceFields<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-resourcefields}
-
-
-
-
-
-
-
-
-Binds the resource related fields to the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ 
-     resources: [
-     {
-       field: "ownerId",
-       title: "Owner",
-       name: "Owners", allowMultiple: true,
-       resourceSettings: { dataSource: [
-       { text: "Andrew", id: 1, groupId: 1, color: "#f8a398" },
-       { text: "Cruise", id: 3, groupId: 2, color: "#56ca85" },
-       { text: "Jerry", id: 5, groupId: 1, color: "#51a0ed" }],    
-       text: "text", id: "id", groupId: "groupId", color: "color" }
-     }],    
-     appointmentSettings: { dataSource: window.ResourcesData, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay",
-              resourceFields: "ownerId"
-            } 
-     });  
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### appointmentSettings.startTime<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-starttime}
-
-
-
-
-
-
-
-
-Bind string value to startTime field of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { startTime: "StartTime",
-              dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",               
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### appointmentSettings.startTimeZone<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-starttimezone}
-
-
-
-
-
-
-
-
-Bind string value to startTimeZone field of schedule.
-
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { startTimeZone: "StartTimeZone",
-              dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",               
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### appointmentSettings.subject<span class="type-signature type string">string</span>
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                  currentDate:new Date(2014,4,5),
+        		  appointmentSettings: {
+                    dataSource: [{
+                        EventId: 101,
+                        EventStartTime: new Date(2014, 4, 5, 10, 00),
+                        EventEndTime: new Date(2014, 4, 5, 12, 00)
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+> **Note :The fields such as id, startTime and endTime are the mandatory fields to be specified to create an appointment.**
+
+### appointmentSettings.subject 'string'
 {:#members:appointmentsettings-subject}
 
+Binds the name of the subject field in the dataSource to the appointment Subject. Indicates the Subject or the title which will get displayed on the Scheduler appointments.
 
+#### Example:
 
+To create an appointment with a **Subject**,
 
+{% highlight html %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate:new Date(2014,4,5),
+		            appointmentSettings: {
+                    dataSource: [{
+                        EventId: 101,
+                        EventStartTime: new Date(2014, 4, 5, 10, 00),
+                        EventEndTime: new Date(2014, 4, 5, 12, 00),
+                        EventSubject: "Play with pets"
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject"
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
-Bind string value to subject field of schedule.
+## appointmentSettings.description 'string'
+{:#members:appointmentsettings-description}
 
+Binds the description field name in the dataSource. It indicates the appointment description.
 
+#### Example
 
+To create an appointment with a **description**,
 
-Default Value:
-{:.param}
+{% highlight html %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                    currentDate:new Date(2014,4,5),
+		            appointmentSettings: {
+                    dataSource: [{
+                        EventId: 101,
+                        EventStartTime: new Date(2014, 4, 5, 10, 00),
+                        EventEndTime: new Date(2014, 4, 5, 12, 00),
+                        EventDescription: "Pet Lovers!!!"
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    description: "EventDescription"
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+> **Note: Unlike Subject field which is displayed as a label over an appointment, the description doesn’t shows up on it by default. To display description over the appointments, the appointment template can be used in such cases **
 
+### appointmentSettings.recurrence 'string'
+{:#members:appointmentsettings-recurrence}
+
+Binds the name of the recurrence field in the dataSource. It indicates whether the appointment is a recurrence appointment or not.
+
+### appointmentSettings.recurrenceRule 'string'
+{:#members:appointmentsettings-recurrenceRule}
+
+Binds the name of the recurrenceRule field in the dataSource. It indicates the recurrence pattern associated with the appointments.
+
+#### Example
+ 
+To create a **recurrence** appointment,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                    currentDate:new Date(2014,4,5),
+		            appointmentSettings: {
+                    dataSource: [{
+                        EventId: 101,
+                        EventSubject: "Play with Pets",
+                        EventStartTime: new Date(2014, 4, 5, 10, 00),
+                        EventEndTime: new Date(2014, 4, 5, 12, 00),
+                        EventRecurrence: true,
+                        EventRecurrenceRule: "FREQ=DAILY;INTERVAL=1;COUNT=10"
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    recurrence: "EventRecurrence",
+                    recurrenceRule: "EventRecurrenceRule"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+> **Note:The recurrence and recurrenceRule fields are inter-dependent, as when the recurrence field is set to true, the recurrenceRule needs to be defined mandatorily for an appointment.**
+
+### appointmentSettings.allDay 'string'
+{:#members:appointmentsettings-allday}
+
+Binds the name of the allDay field in the dataSource. It indicates whether the appointment is an allday appointment or not.
+
+#### Default Value
+
+* AllDay
+
+#### Example
+
+To create an **all-day** appointment,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 101,
+                        EventSubject: "Play with Pets",
+                        EventStartTime: new Date(2014, 4, 5, 10, 00),
+                        EventEndTime: new Date(2014, 4, 5, 12, 00),
+                        EventAllDay: true
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    allDay: "EventAllDay"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### appointmentSettings.resourceFields 'string'
+{:#members:appointmentsettings-resourceFields}
+
+#### Default Value
 
 * null
 
+Binds one or more fields in the resource collection dataSource. It maps the resource field names with the appointments, denoting to which resource the appointments actually belongs.
 
+#### Example:
 
-
-
-
-
-
-Example
-{:.example}
-
+To create appointments in multiple resources scenario,
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { subject: "Subject",
-              dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                group: {
+                    resources: ["Owners"]
+                },
+                resources: [{
+                    field: "ownerId", title: "Owner", name: "Owners",
+                    allowMultiple: true,
+                    resourceSettings: {
+                        dataSource: [
+                         { text: "Nancy", id: 1, color: "#f8a398" },
+                         { text: "Steven", id: 2, color: "#56ca85"}],
+                        text: "text", id: "id", color: "color"
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30),
+                        ownerId: 2
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    // bind one or more resources fields separated by commas
+                    resourceFields: "ownerId" 
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### appointmentSettings.categorize 'string'
+{:#members:appointmentsettings-categorize}
 
-
-
-### appointmentSettings.tableName<span class="type-signature type string">string</span>
-{:#members:appointmentsettings-tablename}
-
-
-
-
-
-
-
-
-Specify the tablename to retrive the data for schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * null
 
+Binds the name of the categorize field in the dataSource. It indicates the categorize value (red categorize, green, yellow and so on) applied to the appointments.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To create appointments with categorize options,
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-    appointmentSettings: { tableName:"tablename",
-              dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                                      
-   });
-</script>{% endhighlight %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                categorizeSettings: {
+                    enable: true
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30),
+                        EventCategorize: "6"
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    categorize: "EventCategorize"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+> **Note: There are six default Categorize colors available for the appointments which can be accessed by its default id. The default available Category options are Blue, Green, Orange, Purple, Red and Yellow and its id values ranges from 1 to 6 respectively. The default Categorize collection can also be replaced with the user-specified collection.**
 
 
+### appointmentSettings.location 'string'
+{:#members:appointmentsettings-location}
 
-
-
-
-
-### appointmentTemplateId<span class="type-signature type string">string</span>
-{:#members:appointmenttemplateid}
-
-
-
-
-
-
-
-
-Specifies an element&rsquo;s id which can be used for appointment template rendering.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * null
 
+Binds the name of the location field in the dataSource. It indicates the appointment location.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To create appointments with categorize options,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ appointmentTemplateId: "#templatename"});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                showLocationField: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30),
+                        EventLocation: "Hawaai"
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    location: "EventLocation"
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+> **Note: To make use of the location field in Scheduler, an additional API showLocationField needs to be enabled, so that the location textbox gets displayed on the default appointment window. **
 
+### appointmentSettings.priority 'string'
+{:#members:appointmentsettings-priority}
 
+#### Default Value
 
-### businessEndHour<span class="type-signature type number">number</span>
-{:#members:businessendhour}
+* null
 
+Binds the name of the priority field in the dataSource. It indicates the priority (high, low, medium and none) of the appointments.
 
+#### Example
 
-
-
-
-
-
-Apply the business end hour of the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 18
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To create appointments with priority option,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ highlightBusinessHours : true, businessEndHour: 16});
-</script>{% endhighlight %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                prioritySettings:{ enable:true },
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30),
+                        EventPriority: "high"
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    priority: "EventPriority"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+> **Note: To make use of the priority field in Scheduler, the prioritySettings needs to be enabled, so that the priority textbox gets displayed on the default appointment window.**
+
+### appointmentSettings.startTimeZone 'string'
+{:#members:appointmentsettings-startTimeZone}
+
+#### Default Value
+
+* StartTimeZone
+
+Binds the name of the start timezone field in the dataSource. It indicates the timezone of the appointment start date. If the startTimeZone field is not mentioned, then the appointment will make use of the Scheduler timeZone or System timeZone.
 
 
+### appointmentSettings.endTimeZone 'string'
+{:#members:appointmentsettings-endTimeZone}
 
+#### Default Value
 
+* EndTimeZone
 
+Binds the name of the end timezone field in the dataSource. It indicates the timezone of the appointment end date. If the endTimeZone field is not mentioned, then the appointment will make use of the Scheduler timeZone or System timeZone.
 
+#### Example
 
-### businessStartHour<span class="type-signature type number">number</span>
-{:#members:businessstarthour}
-
-
-
-
-
-
-
-
-Apply the business start hour of the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* 9
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To create appointments with priority option,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ highlightBusinessHours : true, businessStartHour: 7});
-</script>  {% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                prioritySettings: { enable: true },
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30),
+                        EventStartTimeZone: "UTC +00:00",
+                        EventEndTimeZone: "UTC +00:00"
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    priority: "EventPriority",
+                    startTimeZone: "EventStartTimeZone",
+                    endTimeZone: "EventEndTimeZone"
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### appointmentTemplateId 'string'
+{:#members:appointmentTemplateId }
 
+#### Default Value
 
+* null
 
-### categorizeSettings<span class="type-signature type object">Object</span>
-{:#members:categorizesettings}
+Template design that applies on the Schedule appointments.
+All the field names that are mapped from the dataSource to the appropriate field properties within the appointmentSettings can be used within the template.
 
+#### Example
 
-
-
-
-
-
-
-This property is used to bind the Categorize items of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* Object
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To set the appointment template
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-  categorizeSettings: {
-      enable: true,
-      }
-   });
-</script>{% endhighlight %}
+
+<div id="Schedule"></div>
+    
+<script id="apptemplate" type="text/x-jsrender">
+   <div style="height:100%">
+      <div>{{:Description}}</div>
+   </div>
+</script>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                appointmentTemplateId: "#apptemplate",
+	         currentDate:new Date(2014,4,5),
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        Description: "Splendid Nature!!!"
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### cssClass 'string'
+{:#members:cssClass  }
+
+#### Default Value
+
+* ""
+
+Accepts the custom CSS class name that defines the specific user-defined styles and themes to be applied for the partial/complete elements of the Scheduler. 
+
+#### Example
+
+To apply the custom css class name to the Scheduler and to customize only the background color of its header element,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<style type="text/css">
+    .customStyle .e-scheduleheader {
+        background-color: Teal;
+    }
+</style>
 
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                    cssClass: "customStyle",
+	                currentDate:new Date(2014,4,5),
+                    appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                } 
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+> **Note: For more general information on applying custom themes to Syncfusion controls, refer [here](http://docs.syncfusion.com/js/theming-in-essential-javascript-components#customizing-themes).**
 
+### categorizeSettings 'object'
+{:#members:categorizeSettings }
 
+Sets various categorize colors to the Scheduler appointments to differentiate it.
 
-### categorizeSettings.allowMultiple<span class="type-signature type boolean">boolean</span>
-{:#members:categorizesettings-allowmultiple}
+### categorizeSettings.allowMultiple 'boolean'
+{:#members:categorizeSettings-allowMultiple }
 
-
-
-
-
-
-
-
-allowMultiple option enables/disables the multiple selection of categories for the appointments.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * false
 
+When set to true, enables the multiple selection of categories to be applied for the appointments.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To enable multiple selection of categories,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ categorizeSettings:{allowMultiple: false}});
-</script>{% endhighlight %}
 
-
-
-
-
-
-
-### categorizeSettings.color<span class="type-signature type string">string</span>
-{:#members:categorizesettings-color}
-
-
-
-
-
-
-
-
-Bind string value to color field of categorize.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-  categorizeSettings:{
-   enable:true,
-   allowMultiple:false,
-     dataSource:[
-    { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "green" },
-    { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "green" },
-    { text: "Orange Category", id: 3, color: "#f19d5a", fontColor: "green" },
-    { text: "Purple Category", id: 4, color: "#937bd1", fontColor: "green" },
-    { text: "Red Category", id: 5, color: "#d98889", fontColor: "green" },
-    { text: "Yellow Category", id: 6, color: "#f8f264", fontColor: "green" }                
-    ],            
-     text: "text",
-     id:"id",
-     color:"color",
-     fontColor:"fontColor"
-      }
-     }                                      
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### categorizeSettings.dataSource<span class="type-signature type object">object</span>
-{:#members:categorizesettings-datasource}
-
-
-
-
-
-
-
-
-Defines the Categorize data collection for the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* Object
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ categorizeSettings:{enable: true,allowMultiple:false,
- dataSource:[
- { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "green" },
- { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "green" },
- { text: "Orange Category", id: 3, color: "#f19d5a", fontColor: "green" },
- { text: "Purple Category", id: 4, color: "#937bd1", fontColor: "green" },
- { text: "Red Category", id: 5, color: "#d98889", fontColor: "green" },
- { text: "Yellow Category", id: 6, color: "#f8f264", fontColor: "green" }                
- ],
-  });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### categorizeSettings.enable<span class="type-signature type boolean">boolean</span>
-{:#members:categorizesettings-enable}
-
-
-
-
-
-
-
-
-Enables or disables the Categorize option for schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+<div id="Schedule"></div>
+    
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                categorizeSettings: {
+                    enable: true,
+                    allowMultiple: true
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 4, 2, 9, 00),
+                        EndTime: new Date(2014, 4, 2, 10, 30),
+                        EventCategorize: "6,4,3"
+                    }],
+                    categorize: "EventCategorize"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### categorizeSettings.enable 'boolean'
+{:#members:categorizeSettings-enable }
+
+#### Default Value
 
 * false
 
+When set to true, enables the categories option to be applied for the appointments.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To enable the categorize option,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ categorizeSettings:{enable: false}});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
+    
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                categorizeSettings: {
+                    enable: true
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 4, 2, 9, 00),
+                        EndTime: new Date(2014, 4, 2, 10, 30),
+                        EventCategorize: "6"
+                    }],
+                    categorize: "EventCategorize"
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### categorizeSettings.dataSource 'array/object'
+{:#members:categorizeSettings-dataSource }
 
+#### Default Value
 
+* Array
 
+The dataSource option can accept either the JSON object collection or DataManager [[ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)] instance which contains the categorize data.
 
-### categorizeSettings.fontColor<span class="type-signature type string">string</span>
-{:#members:categorizesettings-fontcolor}
+#### Example
 
-
-
-
-
-
-
-
-Bind string value to fontColor field of categorize.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To set the dataSource with array of JSON object collection
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-  categorizeSettings:{
-   enable:true,
-   allowMultiple:false,
-     dataSource:[
-    { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "green" },
-    { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "green" },
-    { text: "Orange Category", id: 3, color: "#f19d5a", fontColor: "green" },
-    { text: "Purple Category", id: 4, color: "#937bd1", fontColor: "green" },
-    { text: "Red Category", id: 5, color: "#d98889", fontColor: "green" },
-    { text: "Yellow Category", id: 6, color: "#f8f264", fontColor: "green" }                
-    ],            
-     text: "text",
-     id:"id",
-     color:"color",
-     fontColor:"fontColor"
-      }
-     }                                      
-   });
-</script>{% endhighlight %}
+  
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                categorizeSettings: {
+                  enable: true,
+                  dataSource: [
+                   { text: "Good", id: 1, color: "#7499e1", fontColor: "red" },
+                   { text: "Excellent", id: 2, color: "#7cce6e", fontColor: "white" },
+                   { text: "Improve", id: 5, color: "#e04343", fontColor: "white" },
+                   { text: "Better", id: 6, color: "#f8f264", fontColor: "black"}]
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 4, 2, 9, 00),
+                        EndTime: new Date(2014, 4, 2, 10, 30),
+                        EventCategorize: "6"
+                    }],
+                    categorize: "EventCategorize"
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+The following are the category fields which holds the appropriate column names from the dataSource.
 
+### categorizeSettings.id 'string'
+{:#members:categorizeSettings-id}
 
+Binds the id field name in the dataSource to the id of the category data.
 
+#### Default Value
 
-### categorizeSettings.id<span class="type-signature type string">string</span>
-{:#members:categorizesettings-id}
+* id
 
+### categorizeSettings.text 'string'
+{:#members:categorizeSettings-text}
 
+Binds the text field name in the dataSource to the category text.
 
+#### Default Value
 
+* text
 
+### categorizeSettings.color 'string'
+{:#members:categorizeSettings-color}
 
+Binds the color field name in the dataSource to the category color.
 
+#### Default Value
 
-Bind string value to id field of categorize.
+* color
 
+#### Example
 
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To set the categorize options with id, text and color fields,
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-  categorizeSettings:{
-   enable:true,
-   allowMultiple:false,
-     dataSource:[
-    { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "green" },
-    { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "green" },
-    { text: "Orange Category", id: 3, color: "#f19d5a", fontColor: "green" },
-    { text: "Purple Category", id: 4, color: "#937bd1", fontColor: "green" },
-    { text: "Red Category", id: 5, color: "#d98889", fontColor: "green" },
-    { text: "Yellow Category", id: 6, color: "#f8f264", fontColor: "green" }                
-    ],            
-     text: "text",
-     id:"id",
-     color:"color",
-     fontColor:"fontColor"
-      }
-     }                                      
-   });
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                categorizeSettings: {
+                  enable: true,
+                  dataSource: [
+                   { CategoryText: "Good", Id: 1, CategoryColor: "#7499e1" },
+                   { CategoryText: "Excellent", Id: 2, CategoryColor: "#7cce6e" },
+                   { CategoryText: "Improve", Id: 5, CategoryColor: "#e04343" },
+                   { CategoryText: "Better", Id: 6, CategoryColor: "#f8f264" }],
+                   text: "CategoryText",
+                   id: "Id",
+                   color: "CategoryColor"
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 4, 2, 9, 00),
+                        EndTime: new Date(2014, 4, 2, 10, 30),
+                        EventCategorize: "6"
+                    }],
+                    categorize: "EventCategorize"
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### categorizeSettings.fontColor 'string'
+{:#members:categorizeSettings-fontColor}
 
+Binds the fontColor field name in the dataSource to the category font.
 
+#### Default Value
 
-### categorizeSettings.text<span class="type-signature type string">string</span>
-{:#members:categorizesettings-text}
+* fontColor
 
+#### Example
 
-
-
-
-
-
-
-Bind string value to text field of categorize.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To set the categorize options with fontColor,
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-  categorizeSettings:{
-   enable:true,
-   allowMultiple:false,
-     dataSource:[
-    { text: "Blue Category", id: 1, color: "#7499e1", fontColor: "green" },
-    { text: "Green Category", id: 2, color: "#7cce6e", fontColor: "green" },
-    { text: "Orange Category", id: 3, color: "#f19d5a", fontColor: "green" },
-    { text: "Purple Category", id: 4, color: "#937bd1", fontColor: "green" },
-    { text: "Red Category", id: 5, color: "#d98889", fontColor: "green" },
-    { text: "Yellow Category", id: 6, color: "#f8f264", fontColor: "green" }                
-    ],            
-     text: "text",
-     id:"id",
-     color:"color",
-     fontColor:"fontColor"
-      }
-     }                                      
-   });
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                categorizeSettings: {
+                  enable: true,
+                  dataSource: [
+                   { text: "Good", id: 1, color: "#7499e1", fontColor: "red" },
+                   { text: "Excellent", id: 2, color: "#7cce6e", fontColor: "red" }]
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30),
+                        EventCategorize: "2"
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    categorize: "EventCategorize"
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### cellHeight 'string'
+{:#members:cellHeight}
 
+Sets the height for the Schedule cells.
 
-
-### cellHeight<span class="type-signature type string">string</span>
-{:#members:cellheight}
-
-
-
-
-
-
-
-
-Defines the Cell height of the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * "20px"
 
+#### Example
 
-
-
-
-
-
-
-Example
-{:.example}
-
+To set the cell Height for Schedule,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ cellHeight: "100px"});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate:new Date(2014,4,5),
+                cellHeight: "35px",
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                } 
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### cellWidth 'string'
+{:#members:cellWidth}
 
+Sets the width for the Schedule cells.
 
-
-### cellWidth<span class="type-signature type string">string</span>
-{:#members:cellwidth}
-
-
-
-
-
-
-
-
-Defines the Cell Width of the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * ""
 
+#### Example
 
-
-
-
-
-
-
-Example
-{:.example}
-
+To set the cell width for Schedule,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ cellWidth: "100px"});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+        		currentDate:new Date(2014,4,5),
+                cellWidth: "180px",
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                } 
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### contextMenuSettings 'object'
+{:#members:contextMenuSettings}
 
+Holds all the options related to the context menu settings of the Schedule.
 
+### contextMenuSettings.enable 'boolean'
+{:#members:contextMenuSettings-enable}
 
-### contextMenuSettings<span class="type-signature type object">Object</span>
-{:#members:contextmenusettings}
-
-
-
-
-
-
-
-
-This property is used to bind the contextmenu items of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* Object
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-  contextMenuSettings: {
-      enable: true,
-      }
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### contextMenuSettings.enable<span class="type-signature type boolean">boolean</span>
-{:#members:contextmenusettings-enable}
-
-
-
-
-
-
-
-
-Enables or disables the context menu option for schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * false
 
+When set to true, enables the context menu options available for the Scheduler cells and appointments.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To enable the context menu options for Schedule control,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ contextMenuSettings:{enable: true}});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
+    
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                contextMenuSettings: {
+                    enable: true
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30)
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject"
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### contextMenuSettings.menuItems 'object'
+{:#members:contextMenuSettings-menuItems}
 
+#### Default Value
 
+* []
 
+Contains all the default context menu options that are applicable for both Scheduler cells and appointments. It also supports adding custom menu items to the cells or appointment collection.
 
-### contextMenuSettings.menuItems<span class="type-signature type object">object</span>
-{:#members:contextmenusettings-menuitems}
+#### Example
 
-
-
-
-
-
-
-
-Context menu collection for appointment and cells of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* Object
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+Default context menu options available for Schedule cells and appointments,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ contextMenuSettings:{enable: true,
-      menuItems:{appointment: [
-       { id: "open", text: "Open Appointment" },
-       { id: "delete", text: "Delete Appointment" }
-   ],
-   cells: [
-       { id: "new", text: "New Appointment" },
-       { id: "recurrence", text: "New Recurring Appointment" },
-       { id: "today", text: "Today" },
-       { id: "gotodate", text: "Go to date" },
-       { id: "settings", text: "Settings" },
-       { id: "view", text: "View", parentId: "settings" },
-       { id: "timemode", text: "TimeMode", parentId: "settings" },
-       { id: "view_Day", text: "Day", parentId: "view" },
-       { id: "view_Week", text: "Week", parentId: "view" },
-       { id: "view_Workweek", text: "Workweek", parentId: "view" },
-       { id: "view_Month", text: "Month", parentId: "view" },
-       { id: "timemode_Hour12", text: "12 Hours", parentId: "timemode" },
-       { id: "timemode_Hour24", text: "24 Hours", parentId: "timemode" },
-       { id: "businesshours", text: "Business Hours", parentId: "settings" }
-   ]}
-  }
-  });
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
+    
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                contextMenuSettings: {
+                    enable: true,
+                    menuItems: {
+                      appointment: [
+                        { id: "open", text: "Open Appointment" },
+                        { id: "delete", text: "Delete Appointment" }
+                      ],
+                      cells: [
+                        { id: "new", text: "New Appointment" },
+                        { id: "recurrence", text: "New Recurring Appointment" },
+                        { id: "today", text: "Today" },
+                        { id: "gotodate", text: "Go to date" },
+                        { id: "settings", text: "Settings" },
+                        { id: "view", text: "View", parentId: "settings" },
+                        { id: "timemode", text: "TimeMode", parentId: "settings" },
+                        { id: "view_Day", text: "Day", parentId: "view" },
+                        { id: "view_Week", text: "Week", parentId: "view" },
+                        { id: "view_Workweek", text: "Workweek", parentId: "view" },
+                        { id: "view_Month", text: "Month", parentId: "view" },
+                        { id: "timemode_Hour12", text: "12 Hours", parentId: "timemode" },
+                        { id: "timemode_Hour24", text: "24 Hours", parentId: "timemode" },
+                        { id: "businesshours", text: "Business Hours", parentId: "settings" }
+                      ]
+                    }
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30)
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject"
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+#### Example
 
-
-
-
-### cssClass<span class="type-signature type string">string</span>
-{:#members:cssclass}
-
-
-
-
-
-
-
-
-Specify the CSS class for schedule to achieve the custom theme.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* ""
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To add custom context menu option to the Schedule appointments,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ cssClass: "gradient-lime"});
-</script>{% endhighlight %}
+
+<div id="Schedule"></div>
+    
+<script type="text/javascript">
+    $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                contextMenuSettings: {
+                    enable: true,
+                    menuItems: {
+                        appointment: [
+                        { id: "open", text: "Open Appointment" },
+                        { id: "delete", text: "Delete Appointment" },
+                        { id: "custom1", text: "Customize" }
+                      ],
+                        cells: [
+                        { id: "new", text: "New Appointment" },
+                        { id: "recurrence", text: "New Recurring Appointment" },
+                        { id: "today", text: "Today" },
+                        { id: "gotodate", text: "Go to date" }
+                      ]
+                    }
+                }, 
+                menuItemClick: "onCustomMenuClick",
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30)
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject"
+                }
+            });
+        });
 
 
+        function onCustomMenuClick(args) {
+            if (args.events.ID == "custom1") {
+                $("#Appointment_" + args.targetInfo.EventId).find(".e-apptext").html("Custom Appointment"); 
+                $("#Appointment_" + args.targetInfo.EventId).css("background", "orange");
+            }
+        }
 
+</script>
 
+{% endhighlight %}
 
+> **Note:In the above sample, menuItemClick event has been defined, which gets triggered whenever any of the menu options are selected. Here, the condition is checked as, if the id of the selected menu item option contains custom1, then the target appointment’s text and its color gets modified.**
 
+### currentDate 'date'
+{:#members:currentDate}
 
-### currentDate<span class="type-signature type date">date</span>
-{:#members:currentdate}
-
-
-
-
-
-
-
-
-Apply the current date to the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * new Date()
 
+Sets the current date of the Scheduler. The scheduler displays initially with the date which is provided here.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To set the current date for Schedule,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ currentDate: new Date()});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+		            currentDate:new Date(2014,4,5),
+                    appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                } 
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### currentView 'string'
+{:#members:currentView}
 
+#### Default Value
 
+* week
 
-### currentView<span class="type-signature type enum">enum</span>
-{:#members:currentview}
+Sets the current view of the Scheduler. The scheduler displays initially with the view which is specified here. The available views are day, week, workweek and month, from which any one of the required view can be set to the scheduler.
 
+#### Example
 
-
-
-
-
-
-
-Specifies the current view of the schedule; See <a href="global.html#CurrentView">CurrentView</a>
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* ej.Schedule.CurrentView.Week
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To set the current view as **Day** for Scheduler,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
-<script>
-        $("#Schedule").ejSchedule({ currentView: ej.Schedule.CurrentView.Day});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+		        currentDate:new Date(2014,4,5),
+                currentView: ej.Schedule.CurrentView.Day,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                } 
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### dateFormat 'string'
+{:#members:dateFormat}
 
+#### Default Value
 
+* ""
 
-### dateFormat<span class="type-signature type string">String</span>
-{:#members:dateformat}
+Sets the format of the date for the Scheduler. 
 
+#### Example
 
-
-
-
-
-
-
-Defines the date format of the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "MM/dd/yyyy"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To set the date format for Scheduler,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
-<script>
-        $("#Schedule").ejSchedule({  dateFormat: "dd/MM/yyyy" });
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                dateFormat: "yyyy-MM-dd",
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### enableAppointmentNavigation 'boolean'
+{:#members:enableAppointmentNavigation}
 
-
-
-### enableAppointmentNavigation<span class="type-signature type boolean">boolean</span>
-{:#members:enableappointmentnavigation}
-
-
-
-
-
-
-
-
-Enables or disables the previous/next appointment navigation of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * true
 
+When set to true, enables the previous/Next appointment navigation within the Scheduler.  
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To disable the Previous/Next appointment navigation,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ 
-      enableAppointmentNavigation: true,
-      currentDate:new Date(2014,1,1),
-      appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }
-      });
-</script>{% endhighlight %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                enableAppointmentNavigation: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
+### enableAppointmentResize 'boolean'
+{:#members:enableAppointmentResize}
 
-
-
-
-
-### enableAppointmentResize<span class="type-signature type boolean">boolean</span>
-{:#members:enableappointmentresize}
-
-
-
-
-
-
-
-
-Enables or disables the appointment resize behavior of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * true
 
+When set to true, enables the resize behaviour of the appointments within the Scheduler. 
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To disable the appointment resizing,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ 
-    enableAppointmentResize: true,
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }   
-      });
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                enableAppointmentResize: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### enableLoadOnDemand 'boolean'
+{:#members:enableLoadOnDemand}
 
-
-
-### enableLoadOnDemand<span class="type-signature type boolean">boolean</span>
-{:#members:enableloadondemand}
-
-
-
-
-
-
-
-
-Enables/disables the load on demand option for schedule appointment data.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* true
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ enableLoadOnDemand: false});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#members:enablepersistence}
-
-
-
-
-
-
-
-
-Saves the current model value to the browser cookies for state maintanence. When we refresh the page, the Schedule control values will be retained.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * false
 
+When set to true, enables the loading of Schedule appointments based on the user demand. With this load on demand concept, the data consumption of the Schedule can be limited.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To enable the load on demand functionality for the Scheduler,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ enablePersistence: true});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            // DataManager creation
+            var dataManager = ej.DataManager({
+                // To get the required appointments from service
+                url: "http://mvc.syncfusion.com/OdataServices/api/ScheduleData/",
+                crossDomain: true
+            });
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                // To enable Load on demand
+                enableLoadOnDemand: true,
+                appointmentSettings: {
+                    dataSource: dataManager
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### enablePersistence 'boolean'
+{:#members:enablePersistence}
 
-
-
-### enableResize<span class="type-signature type boolean">boolean</span>
-{:#members:enableresize}
-
-
-
-
-
-
-
-
-Enables or disables the resize behavior of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * false
 
+Saves the current model value to the browser cookies for state maintenance. When the page gets refreshed, Schedule control values will be retained.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To enable the persistence for the Scheduler,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ enableResize: false});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                enablePersistence: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### enableRTL 'boolean'
+{:#members:enableRTL}
 
-
-
-### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#members:enablertl}
-
-
-
-
-
-
-
-
-Enables or disables the rtl direction for schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * false
 
+When set to true, changes the Schedule layout and behaviour as per the common RTL conventions.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To enable RTL for the Scheduler,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ enableRTL: true});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                enableRTL: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### endHour 'number'
+{:#members:endHour}
 
-
-
-### endHour<span class="type-signature type number">number</span>
-{:#members:endhour}
-
-
-
-
-
-
-
-
-Apply the end hour to the work area of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * 24
 
+Sets the end hour time limit to be displayed on the Scheduler.
+
+#### Example
 
 
-
-
-
-
-
-Example
-{:.example}
-
+To set the end hour on the Scheduler,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ endHour: 18});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                endHour: 18,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
-
-
-
-### group<span class="type-signature type object">Object</span>
+### group 'object'
 {:#members:group}
 
+To configure the resource grouping on the Scheduler.
 
-
-
-
-
-
-
-Groups the specified resources in the schedule control.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * null
 
+### group.resources 'object'
+{:#members:group-resources}
 
+Holds the array of resource names to be grouped on the Scheduler.
 
+#### Example
 
-
-
-
-
-Example
-{:.example}
-
+To group the resources on the Scheduler,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ 
-      group: {
-          resources: ["Rooms","Owners"]
-      },    
-      resources: [{
-       field: "ownerId",
-       title: "Owner",
-       name: "Owners", allowMultiple: true,
-       resourceSettings: { dataSource: [
-       { text: "Room1", id: 1, color: "#f8a398" }], 
-       text: "text", id: "id",  color: "color" }
-     },
-      {
-          field: "roomId",
-          title: "Room",
-          name: "Rooms", allowMultiple: false,
-          resourceSettings: { dataSource: [
-          { text: "Andrew", id: 1, groupId: 1, color: "#f8a398" },
-          { text: "Jerry", id: 2, groupId: 1, color: "#56ca85"}],
-            text: "text", id: "id", groupId: "groupId", color: "color"
-          }
-       }],
-      appointmentSettings: {
-          dataSource: window.ResourcesData,
-          id: "Id",
-          subject: "Subject",
-          startTime: "StartTime",
-          endTime: "EndTime",
-          allDay: "AllDay",
-          recurrence: "Recurrence",
-          recurrenceRule: "RecurrenceRule",
-          resourceFields: "roomId,ownerId"
-      } 
-   });  
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 04, 05),
+                group: {
+                    resources: ["Owners"]
+                },
+                appointmentSettings: {
+                    resourceFields: "ResourceId",
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        ResourceId: 3
+                    }]
+                },
+                resources: [
+                {
+                    field: "ResourceId",
+                    title: "Resource",
+                    name: "Owners", allowMultiple: true,
+                    resourceSettings: { dataSource: [
+                      { text: "Nancy", id: 1, groupId: 1, color: "#f8a398" },
+                      { text: "Steven", id: 3, groupId: 2, color: "#56ca85" },
+                      { text: "Michael", id: 5, groupId: 1, color: "#51a0ed" }],
+                    text: "text", id: "id", groupId: "groupId", color: "color"
+                    }
+                }]
+            });
+        });
+</script>
+  
+{% endhighlight %}
 
-
-
-
-
-### height<span class="type-signature type string">string</span>
+### height 'string'
 {:#members:height}
 
+#### Default Value 
 
+* "1120px"
 
+Sets the height of the Scheduler. Accepts both pixel and percentage values. 
 
+#### Example 
 
-
-
-
-Defines the height of the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "800px"
-
-
-
-
-
-
-
-
-Example
-{:.example}
+To set the height of the Scheduler in pixels,
 
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ height: "700px"});
-</script>{% endhighlight %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                height: "500px",
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+#### Example
 
 
+To set the height of the Scheduler in percentage,
+
+> **Note: To set the percentage values for the Scheduler height, make sure that the parent element which holds the Scheduler div is defined with some specific height. If the Scheduler is not placed within any of the parent element, then make sure that the html and body tags are explicitly defined with some height values either in pixel or percentage.**
+
+{% highlight html %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%">
+  <head>
+    <!--[CSS and SCRIPT reference section]-->
+  </head>
+
+  <body style="height:100%">
+
+    <div id="Schedule"></div>
+    <script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                height: "500px",
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+    </script>
+  </body>
+</html>
+
+{% endhighlight %}
 
 
+### workHours 'object'
+{:#members:workHours}
 
+To define the workHours display of the Schedule control.
 
+### workHours.highlight 'boolean'
+{:#members:workHours-hightlight}
 
-### highlightBusinessHours<span class="type-signature type boolean">boolean</span>
-{:#members:highlightbusinesshours}
-
-
-
-
-
-
-
-
-Enable or disable the business-hour highlighting behavior for schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * true
 
+When set to true, highlights the work hours of the Scheduler.  
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To disable the highlighting of Scheduler work hours,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ highlightBusinessHours: false});
-</script>{% endhighlight %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                workHours:{
+                    highlight:false
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### workHours.start 'number'
+{:#members:workHours-start}
+
+#### Default Value
+
+* null
+
+Sets the start time to depict the start of the working/business hour in a day.
+
+#### Example
+
+To set the working start hour for Scheduler
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                workHours:{
+                    highlight:false,
+                    start:9
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### workHours.end 'number'
+{:#members:workHours-end}
+
+#### Default Value
+
+* null
+
+Sets the end time to depict the end of the working/business hour in a day.
+
+#### Example
+
+To set the working end hour for Scheduler
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                workHours:{
+                    highlight:false,
+                    start:9,
+                    end:18
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
 
+### isDST 'boolean'
+{:#members:isDST}
 
-
-
-
-### isDST<span class="type-signature type boolean">boolean</span>
-{:#members:isdst}
-
-
-
-
-
-
-
-
-Enable or disable the Daylight Saving Time (DST) behavior for schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
+When set to true, enables the Scheduler to observe Daylight Saving Time for the supported timezones.  
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To enable the Daylight Saving time in Scheduler,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ isDST: true});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                isDST: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### isResponsive 'boolean'
+{:#members:isResponsive}
 
-
-
-### isResponsive<span class="type-signature type boolean">boolean</span>
-{:#members:isresponsive}
-
-
-
-
-
-
-
-
-Enables or disables the adaptive of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
+When set to true, adapts the Scheduler layout to fit the screen size of the devices on which it renders.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To make the Scheduler adaptive,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ isResponsive: true});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                isResponsive: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
-
-
-
-### locale<span class="type-signature type string">string</span>
+### locale 'string'
 {:#members:locale}
 
-
-
-
-
-
-
-
-Defines the locale for schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * "en-US"
 
 
+Sets the specific culture to the Scheduler.
 
+#### Example
 
+To set the French culture on Scheduler – set its locale as fr-FR,
 
+{% highlight html %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                locale: "fr-FR",
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
-Example
-{:.example}
+{% endhighlight %}
+
+> **Note: To set any culture for Scheduler, it is necessary to refer the required minified globalize files of the specific culture. For example, to use fr-FR culture in Scheduler, it is necessary to refer the globalize.culture.fr-FR.min script file. **
+
+> **Also define the locale words of that specific culture properly. For example, define the locale words for fr-FR culture in a variable ej.Schedule.Locale[“fr-FR”] = { }; under script section.**
+
+### maxDate 'date'
+{:#members:maxDate}
+
+#### Default Value
+
+* new Date(2099, 12, 31)
+
+Sets the maximum date limit to show up on the Scheduler. Setting maxDate with specific date value disallows the Scheduler to navigate beyond that date.
+
+#### Example
+
+To set the maximum date on the Scheduler,
 
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ locale: "en-US"});
-</script>{% endhighlight %}
+       
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                maxDate: new Date(2014, 04, 06),
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+{% endhighlight %}
 
+### minDate 'date'
+{:#members:minDate}
 
-
-
-
-
-### maxDate<span class="type-signature type date">date</span>
-{:#members:maxdate}
-
-
-
-
-
-
-
-
-Defines the Maximum date of the schedule.
-
-
-
-
-Default Value:
+#### Default Value
 {:.param}
-
-
-
-
-
-
-* maxDate: new Date(2099, 12, 31)
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ maxDate: new Date("20/11/2014")});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### minDate<span class="type-signature type date">date</span>
-{:#members:mindate}
-
-
-
-
-
-
-
-
-Defines the Minimum date of the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
 
 * new Date(1900, 01, 01)
 
+Sets the minimum date limit to show up on the Scheduler. Setting minDate with specific date value disallows the Scheduler to navigate beyond that date.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
+To set the minimum date on the Scheduler,
 
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ minDate: new Date("10/11/2014")});
-</script>{% endhighlight %}
+       
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                minDate: new Date(2014, 04, 03),
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-### orientation<span class="type-signature type enum">enum</span>
+### orientation 'string'
 {:#members:orientation}
 
+#### Default Value
 
+* vertical
 
+Sets the mode of rendering the Scheduler either in a vertical or horizontal direction.
 
+#### Example
 
-
-
-
-Defines the orientation type of the schedule; Renders the schedule either in vertical or horizontal mode as specified through this property.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* ej.Schedule.Orientation.Vertical
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
-<script>
-        $("#Schedule").ejSchedule({ orientation: ej.Schedule.Orientation.Horizontal});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### prioritySettings<span class="type-signature type object">Object</span>
-{:#members:prioritysettings}
-
-
-
-
-
-
-
-
-prioritySettings is an object collection that holds the priority related information. 
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* Object
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ prioritySettings:{enable: true}});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### prioritySettings.dataSource<span class="type-signature type object">object</span>
-{:#members:prioritysettings-datasource}
-
-
-
-
-
-
-
-
-Defines the Priority data collection for the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* Object
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ prioritySettings:{enable: true,dataSource:[
- { text: "None", id: 1, value: "none" },
- { text: "High", id: 2, value: "high" },
- { text: "Medium", id: 3, value: "medium" },
- { text: "Low", id: 4, value: "low" }               
- ],          
-     text: "text",
-     id:"id",
-     value:"value"
-     }
-     });
-        {% endhighlight %}
-
-
-
-
-
-
-
-
-
-
-
-### prioritySettings.enable<span class="type-signature type boolean">boolean</span>
-{:#members:prioritysettings-enable}
-
-
-
-
-
-
-
-
-Enables or disables the Priority option for schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ prioritySettings:{enable: false}});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### prioritySettings.id<span class="type-signature type string">string</span>
-{:#members:prioritysettings-id}
-
-
-
-
-
-
-
-
-Bind string/int value to id field of priority.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
+To render the Scheduler in horizontal orientation,
 
 
 {% highlight html %}
        
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-   prioritySettings:{
-   enable:true,
-   template:"",
- dataSource:[
- { text: "None", id: 1, value: "none" },
- { text: "High", id: 2, value: "high" },
- { text: "Medium", id: 3, value: "medium" },
- { text: "Low", id: 4, value: "low" }               
- ],          
-     text: "text",
-     id:"id",
-     value:"value"
-      }                                       
-   });
-</script>
-{% endhighlight %}
+<div id="Schedule"></div>
 
-
-
-
-
-
-
-
-### prioritySettings.template<span class="type-signature type boolean">boolean</span>
-{:#members:prioritysettings-template}
-
-
-
-
-
-
-
-
-template option to display the priority icons for the appointments.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ prioritySettings:{template: "<div class='${value}'></div>",  // To display the Priority option in the appointment window while passing custom datasource we need to mention the template like this
-        }
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                orientation: "horizontal",
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
         });
-        {% endhighlight %}
-
-
-
-
-
-
-
-
-
-
-
-### prioritySettings.text<span class="type-signature type string">string</span>
-{:#members:prioritysettings-text}
-
-
-
-
-
-
-
-
-Bind string value to text field of priority.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-   prioritySettings:{
-   enable:true,
-   template:"",
- dataSource:[
- { text: "None", id: 1, value: "none" },
- { text: "High", id: 2, value: "high" },
- { text: "Medium", id: 3, value: "medium" },
- { text: "Low", id: 4, value: "low" }               
- ],          
-     text: "text",
-     id:"id",
-     value:"value"
-      }                                           
-   });
 </script>
+
 {% endhighlight %}
 
 
+### prioritySettings 'object'
+{:#members:prioritySettings}
 
+Holds all the options related to the priority settings of the Schedule.
 
+### prioritySettings.enable 'boolean'
+{:#members:prioritySettings-enable}
 
-
-
-
-### prioritySettings.value<span class="type-signature type string">string</span>
-{:#members:prioritysettings-value}
-
-
-
-
-
-
-
-
-Bind string value to value field of priority.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-      
-<div id="Schedule"></div>  
-<script>
-$("#Schedule").ejSchedule({
-   prioritySettings:{
-   enable:true,
-   template:"",
- dataSource:[
- { text: "None", id: 1, value: "none" },
- { text: "High", id: 2, value: "high" },
- { text: "Medium", id: 3, value: "medium" },
- { text: "Low", id: 4, value: "low" }               
- ],          
-     text: "text",
-     id:"id",
-     value:"value"
-      }                                           
-   });
-</script>
-{% endhighlight %}
-
-
-
-
-
-
-
-### readOnly<span class="type-signature type boolean">boolean</span>
-{:#members:readonly}
-
-
-
-
-
-
-
-
-Enable or disable the interaction with appointments in schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * false
 
+When set to true, enables the priority options available for the Scheduler appointments.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
-
-
-{% highlight html %}
-
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ readOnly: false});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### reminderSettings<span class="type-signature type object">Object</span>
-{:#members:remindersettings}
-
-
-
-
-
-
-
-
-This property is used to set the reminder options of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* {enable: false, alertBefore: 5}
-
-
-
-
-
-
-
-
-Example
-{:.example}
+To enable the priority option in Scheduler,
 
 
 {% highlight html %}
        
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-  reminderSettings: {
-      enable: true,
-      }
-   });
-</script>{% endhighlight %}
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                prioritySettings: { enable: true },
+                appointmentSettings: {
+                    priority: "Priority",
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        Priority: "high"
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### prioritySettings.dataSource 'object/array'
+{:#members:prioritySettings-dataSource }
+
+#### Default Value
+
+* Array
+
+The dataSource option can accept the JSON object collection which contains the priority related data.
+
+#### Example
+
+To set the dataSource with array of JSON object collection,
 
 
+{% highlight html %}
+       
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                prioritySettings: {
+                  enable: true,
+                  dataSource: [
+                     { text: "None", value: "none" },
+                     { text: "High", value: "high" },
+                     { text: "Medium", value: "medium" },
+                     { text: "Low", value: "low" }]
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 4, 2, 9, 00),
+                        EndTime: new Date(2014, 4, 2, 10, 30),
+                        EventPriority: "low"
+                    }],
+                    priority: "EventPriority"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+The following are the priority fields which holds the appropriate column names from the dataSource.
+
+### prioritySettings.text 'string'
+{:#members:prioritySettings-text }
+
+#### Default Value
+
+* text
+
+Binds the text field name in the dataSource to the prioritySettings text. These text gets listed out in the priority field of the appointment window.
+
+### prioritySettings.value 'string'
+{:#members:prioritySettings-value }
+
+#### Default Value
+
+* value
+
+Binds the value field name in the dataSource to the prioritySettings value. These field names can usually accept four priority values by default – high, low, medium & none.
+
+#### Example
+
+To set the priority options with text and value fields,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                prioritySettings: {
+                  enable: true,
+                  dataSource: [
+                     { PriorityText: "None", PriorityValue: "none" },
+                     { PriorityText: "Important", PriorityValue: "high" },
+                     { PriorityText: "Normal", PriorityValue: "medium" },
+                     { PriorityText: "Least", PriorityValue: "low" }],
+                  text: "PriorityText",
+                  value: "PriorityValue"
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 4, 2, 9, 00),
+                        EndTime: new Date(2014, 4, 2, 10, 30),
+                        EventPriority: "low"
+                    }],
+                    priority: "EventPriority"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### prioritySettings.template 'string'
+{:#members:prioritySettings-template}
+
+#### Default Value
+
+* null
+
+Allows the priority field customization in the appointment window to add custom icons denoting the priority level for the appointments.
+
+#### Example
+
+To set the template for priority option in Scheduler,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<style type="text/css">
+    .high,
+    .medium {
+        height: 13px;
+        width: 13px;
+        float: left;
+        margin-right: 4px;
+        background-repeat: no-repeat;
+        background-size: 60px;
+        padding: 1px;
+        margin-top: 2px;
+    }
+
+    .high {
+        /*background: url('Content/ej/web/images/critical.png');*/
+        background-color: orange;
+        background-position: -13px;
+    }
+
+    .medium {
+        /*background: url('Content/ej/web/images/ultracritical.png');*/
+        background-color: #56ca85;
+        background-position: -59px;
+    }
+</style>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                prioritySettings: { 
+                  enable: true,
+                  dataSource: [
+                     { text: "High", value: "high" },
+                     { text: "Normal", value: "medium" }],
+                  template: "<div class='${value}'></div>"
+                },
+                appointmentSettings: {
+                    priority: "Priority",
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        Priority: "high"
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+> ** Note: Since the prioritySettings contains the default values in its dataSource like none, high, medium and low – therefore the appropriate css classes needs to be created with the same value names to apply it on the template.**
+
+### readOnly 'boolean'
+{:#members:readOnly }
+
+#### Default Value
+
+* false
+
+When set to true, disables the interaction with the Scheduler appointments – simply allowing the date and view navigation to occur.
+
+#### Example
+
+To make the Scheduler readOnly,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                readOnly: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
+### reminderSettings 'object'
+{:#members:reminderSettings }
 
+Holds all the options related to the reminder settings of the Schedule.
 
+### reminderSettings.enable 'boolean'
+{:#members:reminderSettings-enable }
 
-### reminderSettings.alertBefore<span class="type-signature type number">number</span>
-{:#members:remindersettings-alertbefore}
+#### Default Value
 
+* false
 
+When set to true, enables the reminder option available for the Scheduler appointments.
 
+#### Example 
 
+To enable the reminder option in Scheduler,
 
+{% highlight html %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                reminderSettings: { enable: true },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
-Set the alert timing in reminder settings option of schedule.
+{% endhighlight %}
 
+### reminderSettings.alertBefore 'number'
+{:#members:reminderSettings-alertBefore  }
 
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * 5
 
+Sets the timing, when the reminders are to be alerted for the Scheduler appointments.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To set the alert for Scheduler appointments,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ reminderSettings:{enable: true, alertBefore:6}});
-</script>{% endhighlight %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                reminderSettings: { enable: true, alertBefore: 7 },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### renderDates 'object'
+{:#members:renderDates}
+
+#### Default Value
+
+* null
+
+Defines the specific start and end dates to be rendered in the schedule control. To render such user-specified custom date ranges in the schedule control, it is necessary to set the **currentView** property to **customview**.
+
+### renderDates.start 'date'
+{:#members:renderDates-start}
+
+#### Default Value
+
+* null
+
+Sets the start of the custom date range to be rendered on the Schedule.
+
+### renderDates.end 'date'
+{:#members:renderDates-end}
+
+#### Default Value
+
+* null
+
+Sets the end limit of the custom date range.
+
+#### Example
+
+To set the custom date range in Scheduler,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                views: ["Day", "Week", "WorkWeek", "Month", "CustomView"], 
+                currentView: ej.Schedule.CurrentView.CustomView,
+                renderDates: {
+                    start: new Date(2014, 11, 7),
+                    end: new Date(2014, 12, 10)
+                },
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
+### resourceHeaderTemplateId 'string'
+{:#members:resourceHeaderTemplateId }
+
+#### Default Value
+
+* null
+
+Template design that applies on the Schedule resource header.
+
+All the field names that are mapped from the dataSource to the appropriate field properties within the resourceSettings can be used within the template.
+
+#### Example
+
+To set the resource header template,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script id="resTemplate" type="text/x-jsrender">
+  <div style="height:100%">
+     <div style="width:15px;height:15px;margin-left:25px;margin-top:3px;float:left;background:{{:color}};"></div><div>{{:text}}</div> 
+  </div>
+</script>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                resourceHeaderTemplateId: "#resTemplate",
+                group: {
+                    resources: ["Rooms"]
+                },
+                resources: [
+                {
+                    field: "roomId",
+                    title: "Room",
+                    name: "Rooms", allowMultiple: false,
+                    resourceSettings: { dataSource: [
+                    { text: "ROOM1", id: 1, color: "#cb6bb2" },
+                    { text: "ROOM2", id: 2, color: "#56ca85"}],
+                        text: "text", id: "id", color: "color"
+                    }
+                }],
+                appointmentSettings: {
+                    resourceFields: "roomId",
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        roomId: 2
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
+### resources 'array'
+{:#members:resources }
+
+#### Default Value
+
+* null
+
+Holds all the options related to the resources settings of the Schedule. It is a collection of one or more resource objects, on which the levels of resources are rendered on the Schedule based on the order of the resource data provided within this collection.
+
+### resources.fields 'string'
+{:#members:resources-fields }
+
+#### Default Value
+
+* []
+
+It holds the name of the resource field to be bound to the Scheduler appointments which contains the resource Id.
+
+#### Example
+
+To specify the resource field,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                resources: [{
+                    field: "ownerId", title: "Owner",
+                    resourceSettings: {
+                        dataSource: [
+                         { text: "Nancy", id: 1, color: "#f8a398" },
+                         { text: "Steven", id: 2, color: "#56ca85"}],
+                        text: "text", id: "id", color: "color"
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 04, 05, 9, 00),
+                        EndTime: new Date(2014, 04, 05, 10, 30),
+                        ownerId: 2
+                    }],
+                    // bind one or more resources fields separated by commas
+                    resourceFields: "ownerId"
+                }
+            });
+        });
+</script>
 
 
-
-### reminderSettings.enable<span class="type-signature type boolean">boolean</span>
-{:#members:remindersettings-enable}
+{% endhighlight %}
 
 
+### resources.title 'string'
+{:#members:resources-title }
+
+#### Default Value
+
+* []
+
+It holds the title name of the resource field to be displayed on the Scheduler appointment window.
+
+#### Example
+
+To specify the resource title,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+       $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                resources: [{
+                    field: "ownerId", title: "Owner",
+                    resourceSettings: {
+                        dataSource: [
+                         { text: "Nancy", id: 1, color: "#f8a398" },
+                         { text: "Steven", id: 2, color: "#56ca85"}],
+                        text: "text", id: "id", color: "color"
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 04, 05, 9, 00),
+                        EndTime: new Date(2014, 04, 05, 10, 30),
+                        ownerId: 2
+                    }],
+                    resourceFields: "ownerId"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
+### resources.name 'string'
+{:#members:resources-name }
+
+#### Default Value
+
+* []
+
+A unique resource name which is used for differentiating various resource objects while grouping it in various levels.
+
+#### Example
+
+To specify the resource field,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                group: {
+                    resources: ["Owners"],
+                },
+                resources: [{
+                    field: "ownerId", title: "Owner",
+                    name: "Owners",
+                    resourceSettings: {
+                        dataSource: [
+                         { text: "Nancy", id: 1, color: "#f8a398" },
+                         { text: "Steven", id: 2, color: "#56ca85"}],
+                        text: "text", id: "id", color: "color"
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 04, 05, 9, 00),
+                        EndTime: new Date(2014, 04, 05, 10, 30),
+                        ownerId: 2
+                    }],
+                    // bind one or more resources fields separated by commas
+                    resourceFields: "ownerId"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
+### resources.allowMultiple 'string'
+{:#members:resources-allowMultiple  }
+
+#### Default Value
+
+* []
+
+When set to true, allows multiple selection of resource names, thus creating multiple instances of same appointment for the selected resources.
+
+#### Example
+
+To set the allowMultiple option for a resource object,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                resources: [{
+                    field: "ownerId", title: "Owner",
+                    resourceSettings: {
+                        dataSource: [
+                         { text: "Nancy", id: 1, color: "#f8a398" },
+                         { text: "Steven", id: 2, color: "#56ca95"}],
+                        text: "text", id: "id", color: "color"
+                    }
+                },
+                {
+                    field: "roomId", title: "Room(s)",
+                    allowMultiple: true,
+                    resourceSettings: {
+                        dataSource: [
+                         { text: "Room1", id: 1, groupId: 1, color: "#f8a398" },
+                         { text: "Room2", id: 2, groupId: 2, color: "#56ca85"},
+                         { text: "Room3", id: 3, groupId: 2, color: "#56ac88"}],
+                        text: "text", id: "id", color: "color", groupId: "groupId"
+
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 04, 05, 9, 00),
+                        EndTime: new Date(2014, 04, 05, 10, 30),
+                        ownerId: 2,
+                        roomId: 3 
+                    }],
+                    resourceFields: "ownerId,roomId"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
-Enables or disables the reminder settings option for schedule.
+### resources.resourceSettings 'object'
+{:#members:resources-resourceSettings}
+
+It holds the field names of the resources to be bound to the Scheduler and also the dataSource.
+
+### resources.resourceSettings.dataSource 'object|array'
+{:#members:resources-resourceSettings-dataSource}
+
+The dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance which contains the resources related data.
+
+#### Example
+
+To set the dataSource with array of JSON object collection,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                resources: [{
+                    field: "ownerId", title: "Owner",
+                    resourceSettings: {
+                        dataSource: [
+                         { text: "Nancy", id: 1, color: "#f8a398" },
+                         { text: "Steven", id: 2, color: "#56ca85"}],
+                        text: "text", id: "id", color: "color"
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 04, 05, 9, 00),
+                        EndTime: new Date(2014, 04, 05, 10, 30),
+                        ownerId: 2
+                    }],
+                    resourceFields: "ownerId"
+                }
+            });
+        });
+
+</script>
+
+{% endhighlight %}
+
+The following are the resourceSettings fields which maps the appropriate column names from the dataSource.
+
+### resources.resourceSettings.text 'string'
+{:#members:resources-resourceSettings-text}
+
+Binds the text field name in the dataSource to the resourceSettings **text**. These text gets listed out in the resources field of the appointment window.
+
+### resources.resourceSettings.id 'string'
+{:#members:resources-resourceSettings-id }
+
+Binds the id field name in the dataSource to the resourceSettings **id**. 
+
+### resources.resourceSettings.groupId 'string'
+{:#members:resources-resourceSettings-groupId }
+
+Binds the groupId field name in the dataSource to the resourceSettings **groupId**.
+
+### resources.resourceSettings.color 'string'
+{:#members:resources-resourceSettings-color }
+
+Binds the color field name in the dataSource to the resourceSettings **color**. The color specified here gets applied to the Scheduler appointments denoting to which particular resource it belongs. 
 
 
+#### Example
+
+To set the resources options with id, text, groupId and color fields,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                resources: [{
+                    field: "ownerId", title: "Owner",
+                    resourceSettings: {
+                        dataSource: [
+                         { OwnerText: "Nancy", id: 1, OwnerColor: "#f8a398" },
+                         { OwnerText: "Steven", id: 2, OwnerColor: "#56ca95"}],
+                        text: "OwnerText", id: "id", color: "OwnerColor"
+                    }
+                },
+                {
+                    field: "roomId", title: "Room(s)",
+                    resourceSettings: {
+                        dataSource: [
+                       // groupId groups the current resources under the previous level of resource object
+                         { text: "Room1", id: 1, groupId: 1, color: "#f8a398" },
+                         { text: "Room2", id: 2, groupId: 2, color: "#56ca85"},
+                         { text: "Room3", id: 3, groupId: 2, color: "#56ac88"}],
+                        text: "text", id: "id", color: "color", groupId: "groupId"
+
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 04, 05, 9, 00),
+                        EndTime: new Date(2014, 04, 05, 10, 30),
+                        ownerId: 2,
+                        roomId: 3 
+                    }],
+                    resourceFields: "ownerId,roomId"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
-Default Value:
-{:.param}
+### appointmentClass 'string'
+{:#members:appointmentClass}
+
+Binds the appointmentClass field name in the dataSource. It applies the custom CSS classname to the appointments depicting to which particular resource it belongs.
+
+#### Example
+
+To customize the styles of the appointments based on the resources to which it belongs, need to make use of the appointmentClass field with other resources options,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<style type="text/css">
+    .e-schedule .e-appointcss1
+    {
+	background-color: Maroon;
+	color: Orange;
+    	
+    }
+    .e-schedule .e-appointcss2
+    {
+  	background-color: Orange;
+    	color: Maroon;
+    }
+</style>
 
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                resources: [{
+                    field: "ownerId", title: "Owner",
+                    resourceSettings: {
+                        dataSource: [
+                         { OwnerText: "Nancy", id: 1, customClass: "e-appointcss1" },
+                         { OwnerText: "Steven", id: 2, customClass: "e-appointcss2"}],
+                        text: "OwnerText", id: "id", appointmentClass: "customClass"
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 100,
+                        Subject: "Research on Sky Miracles",
+                        StartTime: new Date(2014, 04, 05, 9, 00),
+                        EndTime: new Date(2014, 04, 05, 10, 30),
+                        ownerId: 2
+                    },
+                    {
+                        Id: 101,
+                        Subject: "Discovery of exo-planets",
+                        StartTime: new Date(2014, 04, 07, 6, 00),
+                        EndTime: new Date(2014, 04, 07, 9, 30),
+                        ownerId: 1
+                    }],
+                    resourceFields: "ownerId"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+> **Note: The custom css class names defined separately for each resources within 'style' tag should be prefixed with the class name '.e-schedule', only then it gets applied to the appointments.**
 
 
+### showAllDayRow 'boolean'
+{:#members:showAllDayRow}
 
+#### Default Value
+
+* true
+
+When set to true, displays the all-day row cells on the Scheduler.
+
+#### Example 
+
+To hide the all-day row cells,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                showAllDayRow: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### showCurrentTimeIndicator 'boolean'
+{:#members:showCurrentTimeIndicator}
+
+#### Default Value
+
+* true
+
+When set to true, displays the current time indicator on the Scheduler.
+
+#### Example
+
+To hide the current time indicator,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                showCurrentTimeIndicator: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### showHeaderBar 'boolean'
+{:#members:showHeaderBar}
+
+#### Default Value
+
+* true
+
+When set to true, displays the header bar on the Scheduler.
+
+#### Example
+
+To hide the Schedule header bar,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                showHeaderBar: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### showLocationField 'boolean'
+{:#members:showLocationField}
+
+#### Default Value
 
 * false
 
+When set to true, displays the location field additionally on the Scheduler appointment window.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To show the location field,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ reminderSettings:{enable: true}});
-</script>{% endhighlight %}
 
-
-
-
-
-
-
-### renderDates<span class="type-signature type object">Object</span>
-{:#members:renderdates}
-
-
-
-
-
-
-
-
-Defines the specific start and end dates to be rendered in the schedule control. To render such user-specified custom dates in the schedule control, it is necessary to set the currentView property of the schedule to customview.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
-<script>
-        $("#Schedule").ejSchedule({ 
-          views: ["Day", "Week", "WorkWeek", "Month", "CustomView"], 
-          currentView: ej.Schedule.CurrentView.CustomView,
-          renderDates: {
-              start: new Date(2014, 11, 7),
-              end: new Date(2014, 12, 10)
-          }
-  });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### resourceHeaderTemplateId<span class="type-signature type string">string</span>
-{:#members:resourceheadertemplateid}
-
-
-
-
-
-
-
-
-Specifies an element&rsquo;s id which can be used for resource header template rendering.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ resourceHeaderTemplateId: "#resTemplate"});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### resources<span class="type-signature type object">Object</span>
-{:#members:resources}
-
-
-
-
-
-
-
-
-Binds the resource collection to the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* null
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ 
-     resources: [
-     {
-       field: "ownerId",
-       title: "Owner",
-       name: "Owners", allowMultiple: true,
-       resourceSettings: { dataSource: [
-       { text: "Andrew", id: 1, groupId: 1, color: "#f8a398" },
-       { text: "Cruise", id: 3, groupId: 2, color: "#56ca85" },
-       { text: "Jerry", id: 5, groupId: 1, color: "#51a0ed" }],    
-       text: "text", id: "id", groupId: "groupId", color: "color" }
-     }],    
-     appointmentSettings: { dataSource: window.ResourcesData, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay",
-              resourceFields: "ownerId"
-            } 
-     });  
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### showAllDayRow<span class="type-signature type boolean">boolean</span>
-{:#members:showalldayrow}
-
-
-
-
-
-
-
-
-Show/hide the allday row cells of the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                showLocationField: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        Location: "Chicago"
+                    }],
+                    location: "Location"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### showQuickWindow 'boolean'
+{:#members:showQuickWindow}
+
+#### Default Value
 
 * true
 
+When set to true, displays the quick window for every single click made on the Scheduler cells/appointments.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To hide the quick window,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ showAllDayRow: true});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                showQuickWindow: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### showTimeScale 'boolean'
+{:#members:showTimeScale}
 
-
-
-### showCurrentTimeIndicator<span class="type-signature type boolean">boolean</span>
-{:#members:showcurrenttimeindicator}
-
-
-
-
-
-
-
-
-Enables or disables the display of current time indicator on the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * true
 
+When set to true, displays the timescale on the left side of the Scheduler.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To hide the timescale,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ showCurrentTimeIndicator: true});
-</script>{% endhighlight %}
 
-
-
-
-
-
-
-### showHeaderBar<span class="type-signature type boolean">boolean</span>
-{:#members:showheaderbar}
-
-
-
-
-
-
-
-
-Enable or disable the header bar of the schedule control.
-
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* true
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ showHeaderBar: false});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-
-### showLocationField<span class="type-signature type boolean">boolean</span>
-{:#members:showlocationfield}
-
-
-
-
-
-
-
-
-Enable or disable the location field display behavior for schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ showLocationField: true});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### showQuickWindow<span class="type-signature type boolean">boolean</span>
-{:#members:showquickwindow}
-
-
-
-
-
-
-
-
-Enable or disable the quick window open behavior for schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* true
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ showQuickWindow: false});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### showTimeScale<span class="type-signature type boolean">boolean</span>
-{:#members:showtimescale}
-
-
-
-
-
-
-
-
-Enable or disable the time scale behavior for schedule.
-
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* true
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-
-{% highlight html %}
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ showTimeScale: false});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### startHour<span class="type-signature type number">number</span>
-{:#members:starthour}
-
-
-
-
-
-
-
-
-Apply the start hour to the work area of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                showTimeScale: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### startHour 'number'
+{:#members:startHour}
+
+#### Default Value
 
 * 0
 
+Sets the start hour time range to be displayed on the Scheduler.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To set the start hour on the Scheduler,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ startHour: 9});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                startHour: 9,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### timeMode 'string/enum'
+{:#members:timeMode}
 
-
-
-### timeMode<span class="type-signature type enum">enum</span>
-{:#members:timemode}
-
-
-
-
-
-
-
-
-Defines the time mode of the schedule; To know more on timemodes of the schedule. See <a href="global.html#TimeMode">TimeMode</a>
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* ej.Schedule.TimeMode.Hour12
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
-<script>
-        $("#Schedule").ejSchedule({ timeMode: ej.Schedule.TimeMode.Hour24});
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### timeZone<span class="type-signature type string">string</span>
-{:#members:timezone}
-
-
-
-
-
-
-
-
-Defines the timeZone of the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * null
 
+Sets either the 12/24 hour time mode on the Scheduler. It accepts either of the enum Value ej.Schedule.TimeMode.Hour12 or ej.Schedule.TimeMode.Hour24.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To set the 24 hour time mode on the Scheduler,
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ timeZone: "UTC +2:00"});
-</script>{% endhighlight %}
 
-
-
-
-
-
-
-### timezoneCollection<span class="type-signature type object">Object</span>
-{:#members:timezonecollection}
-
-
-
-
-
-
-
-
-This property is used to bind the timezoneCollection items of schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* Object
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-  timezoneCollection: {
-      }
-   });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### timezoneCollection.dataSource<span class="type-signature type object">object</span>
-{:#members:timezonecollection-datasource}
-
-
-
-
-
-
-
-
-Binds the timezone collection values specified in the dataSource to the Schedule control.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* Object
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ timezoneCollection:{
-        dataSource: [
-       { text: "UTC -12:00", id:"1", value: "UTC -12:00" },
-       { text: "UTC -11:00", id:"2", value: "UTC -11:00" },
-       { text: "UTC -10:00", id:"3", value: "UTC -10:00" },
-       { text: "UTC -09:00", id:"4", value: "UTC -09:00" },
-       { text: "UTC -08:00", id:"5", value: "UTC -08:00" },
-       { text: "UTC -07:00", id:"6", value: "UTC -07:00" }
-          ]
-          }
-  });
-</script>{% endhighlight %}
-
-
-
-
-
-
-
-### timezoneCollection.id<span class="type-signature type string">string</span>
-{:#members:timezonecollection-id}
-
-
-
-
-
-
-
-
-Binds the id field name to the id property of the timezoneCollection dataSource.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                timeMode: ej.Schedule.TimeMode.Hour24,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### timeZone 'string'
+{:#members:timeZone}
+
+#### Default Value
 
 * null
 
+Sets the timezone for the Scheduler.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To set the timezone on the Scheduler,
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-  timezoneCollection:{
-        dataSource: [
-       { text: "UTC -12:00", id:"1", value: "UTC -12:00" },
-       { text: "UTC -11:00", id:"2", value: "UTC -11:00" },
-       { text: "UTC -10:00", id:"3", value: "UTC -10:00" },
-       { text: "UTC -09:00", id:"4", value: "UTC -09:00" },
-       { text: "UTC -08:00", id:"5", value: "UTC -08:00" },
-       { text: "UTC -07:00", id:"6", value: "UTC -07:00" }
-          ],           
-     text: "text",
-     id:"id",
-     value:"value"
-      }                                      
-   });
-</script>{% endhighlight %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                timeZone: "UTC +2:00",
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### timeZoneCollection 'object'
+{:#members:timeZoneCollection}
+
+Sets the collection of timezone items to be bound to the Scheduler. Only the items bound to this property will gets listed out in the timezone field of the appointment window.
+
+### timeZoneCollection.dataSource 'object'
+{:#members:timeZoneCollection-dataSource}
+
+Sets the collection of timezone items toThe dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance which contains Scheduler timezones.
+
+#### Example
+
+To set the dataSource with array of JSON object collection,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                timeZoneCollection:{
+                  dataSource: [
+                    { text: "UTC -12:00", id: "1", value: "UTC -12:00" },
+                    { text: "UTC -11:00", id: "2", value: "UTC -11:00" },
+                    { text: "UTC -10:00", id: "3", value: "UTC -10:00" },
+                    { text: "UTC -09:00", id: "4", value: "UTC -09:00" },
+                    { text: "UTC -08:00", id: "5", value: "UTC -08:00" },
+                    { text: "UTC -07:00", id: "6", value: "UTC -07:00" }]
+                }, 
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+The following are the timeZoneCollection fields which maps the appropriate column names from the dataSource.
+
+### timeZoneCollection.text 'string'
+{:#members:timezoneCollection-text}
+
+Binds the text field name in the dataSource to the timeZoneCollection **text**. These text gets listed out in the timezone fields of the appointment window.
+
+### timeZoneCollection.id 'string'
+{:#members:timeZoneCollection-id }
+
+Binds the id field name in the dataSource to the timeZoneCollection **id**.  
+
+### timeZoneCollection.value 'string'
+{:#members:timeZoneCollection-value }
+
+Binds the value field name in the dataSource to the timeZoneCollection **value**.
+
+#### Example
+
+To define the timeZoneCollection options using all the above specified fields,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                timeZoneCollection:{
+                  dataSource: [
+                    { text: "UTC -12:00", id: "1", value: "UTC -12:00" },
+                    { text: "UTC -11:00", id: "2", value: "UTC -11:00" },
+                    { text: "UTC -10:00", id: "3", value: "UTC -10:00" },
+                    { text: "UTC -09:00", id: "4", value: "UTC -09:00" },
+                    { text: "UTC -08:00", id: "5", value: "UTC -08:00" },
+                    { text: "UTC -07:00", id: "6", value: "UTC -07:00" }],
+                  text: "text", id: "id", value: "value"
+                }, 
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
+### views 'array'
+{:#members:views }
+
+#### Default Value
+
+* ["Day", "Week", "WorkWeek", "Month", "Agenda"]
+
+Defines the view collection to be displayed on the Scheduler. By default, it shows up all the views namely – Day, Week, WorkWeek and Month.
+
+#### Example
+
+To display only the day and week view on the Scheduler,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                views: ["Day", "Week"],
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### width 'string'
+{:#members:width }
+
+#### Default Value
+
+* 100%
+
+Sets the width of the Scheduler. Accepts both pixel and percentage values. 
+
+#### Example
+
+To set the width of the Scheduler in pixels,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 04, 05),
+                width: "600px",
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### enableRecurrenceValidation 'boolean'
+{:#members:enableRecurrenceValidation}
+
+#### Default Value
+
+* true
+
+When set to true, Scheduler allows the validation of recurrence pattern to take place before it is being assigned to the appointments. For example, if one of the instance of recurrence appointment is dragged beyond the next/previous instance of the same recurrence appointment, then a pop-up will show up with the validation message disallowing the drag functionality. 
+
+#### Example
+
+To disable the RecurrenceValidation for Scheduler appointments,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+	            currentDate:new Date(2014,4,5),
+                enableRecurrenceValidation: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        Recurrence: true,
+                        RecurrenceRule: "FREQ=DAILY;INTERVAL=1;COUNT=10"
+
+                    }]
+                } 
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### agendaViewSettings 'object'
+{:#members:agendaViewSettings }
+
+Sets the week to display more than one week appointment summary.
+
+### agendaViewSettings.daysInAgenda 'number'
+{:#members:agendaViewSettings-daysinagenda }
+
+#### Default Value
+
+* 7
+
+You can display the summary of the multiple weeks appointment by settings this value.
+
+#### Example
+
+To set the daysInAgenda of agendaViewSettings.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+    
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                agendaViewSettings: {
+                    daysInAgenda: 10
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
+### agendaViewSettings.dateColumnTemplateId 'string'
+{:#members:agendaViewSettings-datecolumntemplateid }
 
-
-
-### timezoneCollection.text<span class="type-signature type string">string</span>
-{:#members:timezonecollection-text}
-
-
-
-
-
-
-
-
-Binds the text field name to the text property of the timezoneCollection dataSource.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * null
 
+You can customize the Date column display based on the requirement.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To display the StartTime value in the date column of agenda View.
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-  timezoneCollection:{
-        dataSource: [
-       { text: "UTC -12:00", id:"1", value: "UTC -12:00" },
-       { text: "UTC -11:00", id:"2", value: "UTC -11:00" },
-       { text: "UTC -10:00", id:"3", value: "UTC -10:00" },
-       { text: "UTC -09:00", id:"4", value: "UTC -09:00" },
-       { text: "UTC -08:00", id:"5", value: "UTC -08:00" },
-       { text: "UTC -07:00", id:"6", value: "UTC -07:00" }
-          ],           
-     text: "text",
-     id:"id",
-     value:"value"
-      }                                      
-   });
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script id="datecolumntemplate" type="text/x-jsrender">
+        <div style="height:100%">           
+            <div>
+                <div>{{:StartTime}}</div>
+            </div>
+        </div>
+</script>
+    
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                agendaViewSettings: {
+                    daysInAgenda: 7,
+                    dateColumnTemplateId: "#datecolumntemplate"
+                },
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### agendaViewSettings.timeColumnTemplateId 'string'
+{:#members:agendaViewSettings-timecolumntemplateid }
 
-
-
-### timezoneCollection.value<span class="type-signature type string">string</span>
-{:#members:timezonecollection-value}
-
-
-
-
-
-
-
-
-Binds the value field name to the value property of the timezoneCollection dataSource.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value
 
 * null
 
+You can customize the time column display based on the requirement.
 
+#### Example
 
-
-
-
-
-
-Example
-{:.example}
-
+To display the StartTime value in the time column of agenda View.
 
 {% highlight html %}
-       
-<div id="Schedule"></div> 
- 
-<script>
-$("#Schedule").ejSchedule({
-  timezoneCollection:{
-        dataSource: [
-       { text: "UTC -12:00", id:"1", value: "UTC -12:00" },
-       { text: "UTC -11:00", id:"2", value: "UTC -11:00" },
-       { text: "UTC -10:00", id:"3", value: "UTC -10:00" },
-       { text: "UTC -09:00", id:"4", value: "UTC -09:00" },
-       { text: "UTC -08:00", id:"5", value: "UTC -08:00" },
-       { text: "UTC -07:00", id:"6", value: "UTC -07:00" }
-          ],           
-     text: "text",
-     id:"id",
-     value:"value"
-      }                                      
-   });
-</script>{% endhighlight %}
+
+<div id="Schedule"></div>
+
+<script id="timecolumntemplate" type="text/x-jsrender">
+        <div style="height:100%">           
+            <div>
+                <div>{{:StartTime}}</div>
+            </div>
+        </div>
+</script>
+    
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                agendaViewSettings: {
+                    daysInAgenda: 7,
+                    timeColumnTemplateId: "#timecolumntemplate"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
+### firstDayOfWeek 'string'
+{:#members:firstDayOfWeek}
 
+#### Default Value
 
+* null
 
+You can change/set the starting day of the week.
 
+#### Example
 
-### views<span class="type-signature type array.string">Array.string</span>
-{:#members:views}
-
-
-
-
-
-
-
-
-Defines the collection of views to be displayed in the schedule control.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* [ "Day" , "Week" , "WorkWeek" , "Month" ]
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To set Tuesday as starting day of the week.
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
-<script>
-        $("#Schedule").ejSchedule({ views: ["Day","Month"], currentView:"day"});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                firstDayOfWeek:"Tuesday",
+            });
+        });
+</script>
 
+{% endhighlight %}
 
+### workWeek 'array'
+{:#members:workWeek}
 
+#### Default Value
 
+* ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
-### width<span class="type-signature type string">string</span>
-{:#members:width}
+You can set the workWeek days of the workWeek.
 
+#### Example
 
-
-
-
-
-
-
-Defines the width of the schedule.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* "800px"
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+To set Tuesday to Saturday as workWeek days of the workWeek.
 
 {% highlight html %}
- 
-<div id="Schedule"></div> 
- 
-<script>
-        $("#Schedule").ejSchedule({ width: "700px"});
-</script>{% endhighlight %}
 
+<div id="Schedule"></div>
 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                workWeek: ["Tuesday", "Wednesday", "Thursday", "Friday","Saturday"]
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### tooltipSettings 'object'
+{:#members:tooltipSettings}
+
+The tooltip allows to show appointment details in a tooltip while hovering on it.
+
+### tooltipSettings.enable 'boolean'
+{:#members:tooltipSettings-enable}
+
+#### Default Value
+
+* false
+
+To enable/disable the tooltip display.
+
+#### Example
+
+To enable the tooltip display.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                tooltipSettings:{
+                    enable:true
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### tooltipSettings.template 'string'
+{:#members:tooltipSettings-template}
+
+#### Default Value
+
+* null
+
+To customize the tooltip display based on the user requirements. 
+
+#### Example
+
+To display the customized tooltip.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script id="tooltip" type="text/x-jsrender">                 
+            <div>
+                <div>Subject: {{:Subject}}</div>
+                <div>StartTime: {{:StartTime}}</div>
+                <div>EndTime: {{:EndTime}}</div>
+            </div>        
+</script>
+    
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 5),
+                 tooltipSettings:{
+                    enable: true,
+                    template:"#tooltip"
+                },
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 
 
 ## Methods
 
 
-
-
-
-
-
-
-### deleteAppointment<span class="signature">()</span>
+### deleteAppointment()
 {:#methods:deleteappointment}
-
-
-
-
-
-
-
 
 It is used to delete the appointment. The id is based on the argument passed along with this method
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">id value of the appointment</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.id</td>
+            <td class="type">number</td>
+            <td class="description">id value of the appointment</td>
+        </tr>
+    </tbody>
 </table>
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -5020,45 +3836,37 @@ Example
  
 <script>
 $('#Schedule').ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
+    appointmentSettings: { 
+           dataSource: [{
+                        EventId: 105,
+                        EventSubject: "Play with Pets",
+                        EventStartTime: new Date(2014, 4, 5, 10, 00),
+                        EventEndTime: new Date(2014, 4, 5, 12, 00),
+                        EventStartTimeZone: "UTC +00:00",
+                        EventEndTimeZone: "UTC +00:00"
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    startTimeZone: "EventStartTimeZone",
+                    endTimeZone: "EventEndTimeZone"
             }                            
   });
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.deleteAppointment(105); //Appointments id number.
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
-
-
-
-
-
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
+Destroy the schedule widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 
-
-
-
-
-
-destroy the schedule widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
-
-
-
-
-
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5066,64 +3874,50 @@ Example
 <div id="Schedule"></div> 
  
 <script>
+
 $('#Schedule').ejSchedule();
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.destroy(); // destroy the schedule
-</script>{% endhighlight %}
+
+</script>
+
+{% endhighlight %}
 
 
-
-
-
-
-
-### exportSchedule<span class="signature">()</span>
+### exportSchedule()
 {:#methods:exportschedule}
-
-
-
-
-
-
-
 
 It used to Export the appointments from the schedule control.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.action{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">to refer the controller action name to redirect. (For MVC)</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.serverEvent{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">to refer the server event name.(For ASP)</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.id{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">to pass the id of an appointment, in case if a single appointment needs to be exported. Otherwise, it takes the null value.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.action</td>
+            <td class="type">string</td>
+            <td class="description">to refer the controller action name to redirect. (For MVC)</td>
+        </tr>
+        <tr>
+            <td class="name">argument.serverEvent</td>
+            <td class="type">string</td>
+            <td class="description">to refer the server event name.(For ASP)</td>
+        </tr>
+        <tr>
+            <td class="name">argument.id</td>
+            <td class="type">string</td>
+            <td class="description">to pass the id of an appointment, in case if a single appointment needs to be exported. Otherwise, it takes the null value.</td>
+        </tr>
+    </tbody>
 </table>
 
 
-
-
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5132,64 +3926,63 @@ Example
  
 <script>
 $('#Schedule').ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                            
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    },
+                    {
+                        Id: 102,
+                        Subject: "Play with pets",
+                        StartTime: new Date(2014, 4, 5, 05, 00),
+                        EndTime: new Date(2014, 4, 5, 07, 00),
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+       }                            
   });
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.exportSchedule("ActionName","ExportToICS", null); // To Export all the Appointments
 schObj.exportSchedule("ActionName","ExportToICS", 101); // To Export a single appointment with an id "101"
-</script>{% endhighlight %}
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-### filterAppointments<span class="signature">()</span>
+### filterAppointments ()
 {:#methods:filterappointments}
-
-
-
-
-
-
 
 
 It used search the appointments from appointment list of schedule control.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.filterConditions{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">filterConditions value of the filter collections for appointments.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.filterConditions</td>
+            <td class="type">object</td>
+            <td class="description">filterConditions value of the filter collections for appointments.</td>
+        </tr>
+    </tbody>
 </table>
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -5197,52 +3990,58 @@ Example
  
 <script>
 $('#Schedule').ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                            
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    },
+                    {
+                        Id: 102,
+                        Subject: "Play with pets",
+                        StartTime: new Date(2014, 4, 5, 05, 00),
+                        EndTime: new Date(2014, 4, 5, 07, 00),
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    },
+                    {
+                        Id: 103,
+                        Subject: "Reading books",
+                        StartTime: new Date(2014, 4, 5, 08, 00),
+                        EndTime: new Date(2014, 4, 5, 09, 00),
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+       }                            
   });
 var schObj = $("#Schedule").data("ejSchedule");
 var filter=[{
    field: "Subject",
    operator: "contains",
-   value: "gold",
+   value: "with",
    predicate: "or"
 }];
 var appointments=schObj.filterAppointments(filter); // Gets the appointments list of schedule control
-</script>{% endhighlight %}
+</script>
 
+{% endhighlight %}
 
-
-
-
-
-
-### getAppointments<span class="signature">()</span>
+### getAppointments()
 {:#methods:getappointments}
-
-
-
-
-
-
 
 
 It is used to get the appointment list of schedule control.
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -5250,45 +4049,53 @@ Example
  
 <script>
 $('#Schedule').ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                            
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    },
+                    {
+                        Id: 102,
+                        Subject: "Play with pets",
+                        StartTime: new Date(2014, 4, 5, 05, 00),
+                        EndTime: new Date(2014, 4, 5, 07, 00),
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    },
+                    {
+                        Id: 103,
+                        Subject: "Reading books",
+                        StartTime: new Date(2014, 4, 5, 08, 00),
+                        EndTime: new Date(2014, 4, 5, 09, 00),
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+       }                            
   });
 var schObj = $("#Schedule").data("ejSchedule");
 var appointments=schObj.getAppointments(); // Gets the appointments list of schedule control
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
-
-
-
-
-
-### print<span class="signature">()</span>
+### print()
 {:#methods:print}
-
-
-
-
-
-
 
 
 It is used to print the schedule.
 
-
-
-
-
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5296,46 +4103,50 @@ Example
 <div id="Schedule"></div> 
 <script>
 $('#Schedule').ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                            
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    },
+                    {
+                        Id: 102,
+                        Subject: "Play with pets",
+                        StartTime: new Date(2014, 4, 5, 05, 00),
+                        EndTime: new Date(2014, 4, 5, 07, 00),
+                        Recurrence:true,
+                        RecurrenceRule:"FREQ=DAILY;INTERVAL=1;COUNT=10",
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+       }                            
   });
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.print();
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
-
-
-
-
-
-### refreshScroller<span class="signature">()</span>
+### refreshScroller()
 {:#methods:refreshscroller}
-
-
-
-
-
-
-
 
 It used to Refresh Scroller while using schedule control in some other controls.
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -5345,130 +4156,112 @@ Example
 $('#Schedule').ejSchedule();
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.refreshScroller(); // To refresh scroller while using schedule control in some other control
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
-
-
-
-
-
-### saveAppointment<span class="signature">()</span>
+### saveAppointment()
 {:#methods:saveappointment}
-
-
-
-
-
-
-
 
 It is used to save the appointment. The appointment obj is based on the argument passed along with this method.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.obj{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">obj of the appointment</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.obj</td>
+            <td class="type">object</td>
+            <td class="description">obj of the appointment</td>
+        </tr>
+    </tbody>
 </table>
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="Schedule"></div> 
 <script>
 $('#Schedule').ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                            
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        AllDay:true,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    allday:"AllDay",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+        }                            
   });
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.saveAppointment(obj); //obj contains collection of appointment. 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
-
-
-
-
-### searchAppointments<span class="signature">()</span>
+### searchAppointments()
 {:#methods:searchappointments}
-
-
-
-
-
-
-
 
 It used search the appointments from appointment list of schedule control.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.searchString{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">searchString value of the search word in the appointments.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.fields{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">fields value of which feilds need search.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.filterOperator{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">filterOperator value of the search operation need to done.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.ignoreCase{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">ignoreCase value of the case.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.searchString</td>
+            <td class="type">string</td>
+            <td class="description">searchString value of the search word in the appointments.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.fields</td>
+            <td class="type">string</td>
+            <td class="description">fields value of which feilds need search.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.filterOperator</td>
+            <td class="type">string</td>
+            <td class="description">filterOperator value of the search operation need to done.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.ignoreCase</td>
+            <td class="type">boolean</td>
+            <td class="description">ignoreCase value of the case.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
-
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5477,20 +4270,84 @@ Example
  
 <script>
 $('#Schedule').ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            }                            
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    },
+                    {
+                        Id: 102,
+                        Subject: "Play with pets",
+                        StartTime: new Date(2014, 4, 5, 05, 00),
+                        EndTime: new Date(2014, 4, 5, 07, 00),
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    },
+                    {
+                        Id: 103,
+                        Subject: "Reading books",
+                        StartTime: new Date(2014, 4, 5, 08, 00),
+                        EndTime: new Date(2014, 4, 5, 09, 00),
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+       }                            
   });
 var schObj = $("#Schedule").data("ejSchedule");
-var appointments=schObj.searchAppointments("gold"); // Gets the appointments list of schedule control
-</script>{% endhighlight %}
+var appointments=schObj.searchAppointments("with"); // Gets the appointments list of schedule control
+</script>
+
+{% endhighlight %}
+
+### refresh()
+{:#methods:refresh}
+
+It used to Refresh the Schedule control.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+ 
+<script>
+$('#Schedule').ejSchedule();
+var schObj = $("#Schedule").data("ejSchedule");
+schObj.refresh(); // To refresh the schedule control within the client side event
+</script>
+
+{% endhighlight %}
+
+
+### refreshAppointment()
+{:#methods:refreshAppointment}
+
+It used to Refresh only the Schedule Control appointments.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+ 
+<script>
+$('#Schedule').ejSchedule();
+var schObj = $("#Schedule").data("ejSchedule");
+schObj.refreshAppointment(); // To refresh the schedule control within the client side event
+</script>
+
+{% endhighlight %}
+
 
 
 
@@ -5498,956 +4355,813 @@ var appointments=schObj.searchAppointments("gold"); // Gets the appointments lis
 
 ## Events
 
-
-
-
-
-
-
-
 ### actionBegin
 {:#events:actionbegin}
-
-
-
-
-
-
-
 
 Triggers before the action begin of the schedule.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when view change action starts:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-Date{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the current date value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-currentView{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the current view value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action begin request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the click.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when date navigate action starts:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-currentDate{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the current date value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action begin request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the click.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when date change by calendar action starts:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-currentDate{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the current date value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action begin request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the click.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when appointment save action starts:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the save appointment value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action begin request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when appointment edit action starts:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the edit appointment value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action begin request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when appointment delete action starts:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-id{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Returns the id of delete appointment.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action begin request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when appointment drag action starts:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the appointment we drag.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action begin request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when appointment resize action starts:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the appointment we resize.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action begin request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument</td>
+            <td class="type">object</td>
+            <td class="description">Event parameters when view change action starts:
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    <tr>
+                        <td class="name">argument.data.currentDate</td>
+                        <td class="type">date</td>
+                        <td class="description">Returns the current date value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">cancel</td>
+                        <td class="type">boolean</td>
+                        <td class="description">Returns the cancel option value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.data.currentView</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the current view value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">model</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the schedule model.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">requestType</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the action begin request type.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">target</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the target of the click.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">type</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the event.</td>
+                    </tr>
+                </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="name">argument</td>
+            <td class="type">object</td>
+            <td class="description">Event parameters when date navigate action starts:
+            <table class="params">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name">cancel</td>
+                        <td class="type">boolean</td>
+                        <td class="description">Returns the cancel option value.</td>      
+                    </tr>
+                    <tr>
+                        <td class="name">currentDate</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the current date value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">model</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the schedule model.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">requestType</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the action begin request type.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">target</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the target of the click.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">type</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the event.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="name">argument</td>
+            <td class="type">object</td>
+            <td class="description">Event parameters when date change by calendar action starts:
+            <table class="params">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name">cancel</td>
+                        <td class="type">boolean</td>
+                        <td class="description">Returns the cancel option value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">currentDate</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the current date value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">model</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the schedule model.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">requestType</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the action begin request type.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">target</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the target of the click.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">type</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the event.</td>
+                    </tr>
+                </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="name">argument</td>
+            <td class="type">object</td>
+            <td class="description">Event parameters when appointment save action starts:
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name">cancel</td>
+                            <td class="type">boolean</td>
+                            <td class="description">Returns the cancel option value.</td>
+                        </tr>
+                        <tr>
+                            <td class="name">data</td>
+                            <td class="type">object</td>                
+                            <td class="description">Returns the save appointment value.</td>
+                        </tr>                                                                                                                                  <tr>
+                            <td class="name">model</td>                                                                                                                                                                                                               <td class="type">object</td>
+                            <td class="description">Returns the schedule model.</td>
+                        </tr>
+                        <tr>
+                            <td class="name">requestType</td>
+                            <td class="type">string</td>
+                            <td class="description">Returns the action begin request type.</td>
+                        </tr>
+                        <tr>
+                            <td class="name">type</td>
+                            <td class="type">string</td>
+                            <td class="description">Returns the name of the event.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="name">argument</td>
+            <td class="type">object</td>
+            <td class="description">Event parameters when appointment edit action starts:
+            <table class="params">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name">cancel</td>
+                        <td class="type">boolean</td>
+                        <td class="description">Returns the cancel option value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">data</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the edit appointment value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">model</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the schedule model.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">requestType</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the action begin request type.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">type</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the event.</td>
+                    </tr>
+                </tbody>
+             </table>
+           </td>
+        </tr>
+        <tr>
+            <td class="name">argument</td>
+            <td class="type">object</td>
+            <td class="description">Event parameters when appointment delete action starts:
+            <table class="params">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name">cancel</td>
+                        <td class="type">boolean</td>
+                        <td class="description">Returns the cancel option value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">id</td>
+                        <td class="type">number</td>
+                        <td class="description">Returns the id of delete appointment.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">model</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the schedule model.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">requestType</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the action begin request type.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">type</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the event.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="name">argument</td>
+            <td class="type">object</td>
+            <td class="description">Event parameters when appointment drag action starts:
+            <table class="params">
+                <thead>
+                    <tr>
+                        <th>Name</th>       
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name">cancel</td>
+                        <td class="type">boolean</td>
+                        <td class="description">Returns the cancel option value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">data</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the target of the appointment we drag.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">model</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the schedule model.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">requestType</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the action begin request type.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">type</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the event.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="name">argument</td>
+            <td class="type">object</td>
+            <td class="description">Event parameters when appointment resize action starts:
+            <table class="params">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th class="last">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name">cancel</td>
+                        <td class="type">boolean</td>
+                        <td class="description">Returns the cancel option value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">data</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the target of the appointment we resize.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">model</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the schedule model.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">requestType</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the action begin request type.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">type</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the event.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+         </tr>
+    </tbody>
 </table>
 
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="Schedule"></div> 
  
 <script>
 $("#Schedule").ejSchedule({
    actionBegin: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### actionComplete
 {:#events:actioncomplete}
 
 
-
-
-
-
-
-
 Triggers after the action completion of the schedule.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when view change action completed:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the data about viewchange action.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action complete request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when date navigate action completed:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the data about the date navigate action.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action complete request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when date change by calendar action completed:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the data about calendar navigation action.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action complete request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when appointment save action completed:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the data about appointment saved value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action complete request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when appointment edit action completed:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the data about appointment edited value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action complete request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when appointment delete action completed:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the data about appointment deleted action.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action complete request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when appointment dragging action completed:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-appointment{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the appointment data we dropped.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action complete request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters when appointment resizing action completed:
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the element we resized.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-requestType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action complete request type.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="name">argument</td>
+        <td class="type">object</td>
+        <td class="description">Event parameters when view change action completed:
+        <table class="params">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name">cancel</td>
+                    <td class="type">boolean</td>
+                    <td class="description">Returns the cancel option value.</td>
+                </tr>
+                <tr>
+                    <td class="name">data</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the data about viewchange action.</td>
+                </tr>
+                <tr>
+                    <td class="name">model</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the schedule model.</td>
+                </tr>
+                <tr>
+                    <td class="name">requestType</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the action complete request type.</td>
+                </tr>
+                <tr>
+                    <td class="name">type</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the name of the event.</td>
+                </tr>
+            </tbody>
+        </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="name">argument</td>
+        <td class="type">object</td>
+        <td class="description">Event parameters when date navigate action completed:
+        <table class="params">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name">cancel</td>
+                    <td class="type">boolean</td>
+                    <td class="description">Returns the cancel option value.</td>
+                </tr>
+                <tr>
+                    <td class="name">data</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the data about the date navigate action.</td>
+                </tr>
+                <tr>
+                    <td class="name">model</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the schedule model.</td>
+                </tr>
+                <tr>
+                    <td class="name">requestType</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the action complete request type.</td>
+                </tr>
+                <tr>
+                    <td class="name">type</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the name of the event.</td>
+                </tr>
+            </tbody>
+        </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="name">argument</td>
+        <td class="type">object</td>
+        <td class="description">Event parameters when date change by calendar action completed:
+        <table class="params">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name">cancel</td>
+                    <td class="type">boolean</td>
+                    <td class="description">Returns the cancel option value.</td>
+                </tr>
+                <tr>
+                    <td class="name">data</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the data about calendar navigation action.</td>
+                </tr>
+                <tr>
+                    <td class="name">model</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the schedule model.</td>
+                </tr>
+                <tr>
+                    <td class="name">requestType</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the action complete request type.</td>
+                </tr>
+                <tr>
+                    <td class="name">type</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the name of the event.</td>
+                </tr>
+            </tbody>
+        </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="name">argument</td>
+        <td class="type">object</td>
+        <td class="description">Event parameters when appointment save action completed:
+        <table class="params">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th class="last">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name">cancel</td>
+                    <td class="type">boolean</td>
+                    <td class="description">Returns the cancel option value.</td>
+                </tr>
+                <tr>
+                    <td class="name">data</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the data about appointment saved value.</td>
+                </tr>
+                <tr>
+                    <td class="name">model</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the schedule model.</td>
+                </tr>
+                <tr>
+                    <td class="name">requestType</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the action complete request type.</td>
+                </tr>
+                <tr>
+                    <td class="name">type</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the name of the event.</td>
+                </tr>
+            </tbody>
+          </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="name">argument</td>
+        <td class="type">object</td>
+        <td class="description">Event parameters when appointment edit action completed:
+        <table class="params">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th class="last">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name">cancel</td>
+                    <td class="type">boolean</td>
+                    <td class="description">Returns the cancel option value.</td>
+                </tr>
+                <tr>
+                    <td class="name">data</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the data about appointment edited value.</td>
+                </tr>
+                <tr>
+                    <td class="name">model</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the schedule model.</td>
+                </tr>
+                <tr>
+                    <td class="name">requestType</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the action complete request type.</td>
+                </tr>
+                <tr>
+                    <td class="name">type</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the name of the event.</td>
+                </tr>
+              </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="name">argument</td>
+        <td class="type">object</td>
+        <td class="description">Event parameters when appointment delete action completed:
+        <table class="params">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name">cancel</td>
+                    <td class="type">boolean</td>
+                    <td class="description">Returns the cancel option value.</td>
+                </tr>
+                <tr>
+                    <td class="name">data</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the data about appointment deleted action.</td>
+                </tr>
+                <tr>
+                    <td class="name">model</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the schedule model.</td>
+                </tr>
+                <tr>
+                    <td class="name">requestType</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the action complete request type.</td>
+                </tr>
+                <tr>
+                    <td class="name">type</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the name of the event.</td>
+                </tr>
+            </tbody>
+          </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="name">argument</td>
+        <td class="type">object</td>
+        <td class="description">Event parameters when appointment dragging action completed:
+        <table class="params">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name">appointment</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the appointment data we dropped.</td>
+                </tr>
+                <tr>
+                    <td class="name">cancel</td>
+                    <td class="type">boolean</td>
+                    <td class="description">Returns the cancel option value.</td>
+                </tr>
+                <tr>
+                    <td class="name">model</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the schedule model.</td>
+                </tr>
+                <tr>
+                    <td class="name">requestType</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the action complete request type.</td>
+                </tr>
+                <tr>
+                    <td class="name">type</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the name of the event.</td>
+                </tr>
+             </tbody>
+        </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="name">argument</td>
+        <td class="type">object</td>
+        <td class="description">Event parameters when appointment resizing action completed:
+        <table class="params">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name">cancel</td>
+                    <td class="type">boolean</td>
+                    <td class="description">Returns the cancel option value.</td>
+                </tr>
+                <tr>
+                    <td class="name">data</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the element we resized.</td>
+                </tr>
+                <tr>
+                    <td class="name">model</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the schedule model.</td>
+                </tr>
+                <tr>
+                    <td class="name">requestType</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the action complete request type.</td>
+                </tr>
+                <tr>
+                    <td class="name">type</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the name of the event.</td>
+                </tr>
+            </tbody>
+        </table>
+        </td>
+    </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
+
 <div id="Schedule"></div> 
  
 <script>
 $("#Schedule").ejSchedule({
    actionComplete: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### appointmentClick
 {:#events:appointmentclick}
 
-
-
-
-
-
-
-
 Triggers after the appointment is clicked.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of appointmentClick event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.appointment{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the clicked appointment object.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of appointmentClick event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the clicked appointment object.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6456,85 +5170,81 @@ Example
  
 <script>
 $("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            },   
-   appointmentClick: function (args) {}
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        AllDay:true,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    allday:"AllDay",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+        },   
+        appointmentClick: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
-
+{% endhighlight %}
 
 ### appointmentDeleted
 {:#events:appointmentdeleted}
 
 
-
-
-
-
-
-
 Triggers after the appointment is deleted.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of appointmentDeleted event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.appointment{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the deleted appintment object.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of appointmentDeleted event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the deleted appintment object.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6543,86 +5253,93 @@ Example
  
 <script>
 $("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            },
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        AllDay:true,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    },
+                    {
+                        Id: 102,
+                        Subject: "Play with Pets",
+                        StartTime: new Date(2014, 4, 6, 10, 00),
+                        EndTime: new Date(2014, 4, 6, 12, 00),
+                        AllDay:false,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    allday:"AllDay",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+        },
    appointmentDeleted: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### appointmentEdited
 {:#events:appointmentedited}
 
 
-
-
-
-
-
-
 Triggers after the appointment is edited.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of appointmentEdited event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.appointment{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the edited appintment object.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of appointmentEdited event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the edited appintment object.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -6630,87 +5347,93 @@ Example
  
 <script>
 $("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            },
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        AllDay:true,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    },
+                    {
+                        Id: 102,
+                        Subject: "Play with Pets",
+                        StartTime: new Date(2014, 4, 6, 10, 00),
+                        EndTime: new Date(2014, 4, 6, 12, 00),
+                        AllDay:false,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    allday:"AllDay",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+        },
    appointmentEdited: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
-
+{% endhighlight %}
 
 
 ### appointmentHover
 {:#events:appointmenthover}
 
 
-
-
-
-
-
-
 Triggers after the appointment is hovered.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of appointmentHover event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.appointment{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the hovered appointment object.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of appointmentHover event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the hovered appointment object.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -6718,116 +5441,105 @@ Example
  
 <script>
 $("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            },   
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        AllDay:true,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    allday:"AllDay",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+        },   
    appointmentHover: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
-
+{% endhighlight %}
 
 ### appointmentSaved
 {:#events:appointmentsaved}
 
-
-
-
-
-
-
-
 Triggers after the appointment is saved.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of appointmentSaved event using appointment window.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.appointment{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the saved appintment object.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of appointmentSaved event using quick window.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.appointment{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the saved appintment object.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of appointmentSaved event using appointment window.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the saved appintment object.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of appointmentSaved event using quick window.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the saved appintment object.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -6837,127 +5549,102 @@ Example
 $("#Schedule").ejSchedule({
    appointmentSaved: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### appointmentWindowOpen
 {:#events:appointmentwindowopen}
 
-
-
-
-
-
-
-
 Triggers before the appointment window is opened.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the object of appointmentWindowOpen event while select detail option from quick window.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.endTime{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the end time of the double clicked cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.originalEventType{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the action name which triggers window open.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.startTime{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the start time of the double clicked cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the double clicked cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of edit appointmentWindowOpen event while select edit appointment/edit series option.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.appointment{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the edit appointment object.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.edit{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the edit occurrence option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">returns the object of appointmentWindowOpen event while select detail option from quick window.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.endTime</td>
+            <td class="type">object</td>
+            <td class="description">Returns the end time of the double clicked cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.originalEventType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the action name which triggers window open.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.startTime</td>
+            <td class="type">object</td>
+            <td class="description">Returns the start time of the double clicked cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.target</td>
+            <td class="type">object</td>
+            <td class="description">Returns the target of the double clicked cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of edit appointmentWindowOpen event while select edit appointment/edit series option.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the edit appointment object.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.edit</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the edit occurrence option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6968,250 +5655,220 @@ Example
 $("#Schedule").ejSchedule({
    appointmentWindowOpen: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### beforeContextMenuOpen
 {:#events:beforecontextmenuopen}
 
 
-
-
-
-
-
-
 Triggers before the context menu open up.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of beforeContextMenuOpen event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.events{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the object of before open menu target.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of beforeContextMenuOpen event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cellIndex</td>
+            <td class="type">number</td>
+            <td class="description">Returns the current cell index value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.currentDate</td>
+            <td class="type">date</td>
+            <td class="description">Returns the current date value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.resources</td>
+            <td class="type">object</td>
+            <td class="description">Returns the current resource details when multiple resources present otherwise returns null.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the current appointment details while opening the menu from the appointment.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.events</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of before open menu target.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>   
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="Schedule"></div> 
  
 <script>
 $("#Schedule").ejSchedule({
    beforeContextMenuOpen: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### cellClick
 {:#events:cellclick}
 
-
-
-
-
-
-
-
 Triggers after the cell is clicked.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of cellClick event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.endTime{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the end time of the clicked cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.startTime{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the start time of the clicked cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the clicked cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of cellClick event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.endTime</td>
+            <td class="type">object</td>
+            <td class="description">Returns the end time of the clicked cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.startTime</td>
+            <td class="type">object</td>
+            <td class="description">Returns the start time of the clicked cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.target</td>
+            <td class="type">object</td>
+            <td class="description">Returns the target of the clicked cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
+
 <div id="Schedule"></div> 
  
 <script>
 $("#Schedule").ejSchedule({
    cellClick: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### cellDoubleClick
 {:#events:celldoubleclick}
 
 
-
-
-
-
-
-
 Triggers after the cell is clicked twice.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of cellDoubleClick event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.endTime{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the end time of the double clicked cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.startTime{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the start time of the double clicked cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the double clicked cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of cellDoubleClick event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.endTime</td>
+            <td class="type">object</td>
+            <td class="description">Returns the end time of the double clicked cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.startTime</td>
+            <td class="type">object</td>
+            <td class="description">Returns the start time of the double clicked cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.target</td>
+            <td class="type">object</td>
+            <td class="description">Returns the target of the double clicked cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -7221,161 +5878,126 @@ Example
 $("#Schedule").ejSchedule({
    cellDoubleClick: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### cellHover
 {:#events:cellhover}
 
-
-
-
-
-
-
-
 Triggers after the cell is hovered.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of cellHover event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cellIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the index of the hovered cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.currentDate{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the current date of the hovered cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the clicked cell.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of cellHover event.</td>
+        </tr>   
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cellIndex</td>
+            <td class="type">object</td>
+            <td class="description">Returns the index of the hovered cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.currentDate</td>
+            <td class="type">object</td>
+            <td class="description">Returns the current date of the hovered cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.target</td>
+            <td class="type">object</td>
+            <td class="description">Returns the target of the clicked cell.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="Schedule"></div> 
  
 <script>
 $("#Schedule").ejSchedule({
    cellHover: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
-
+{% endhighlight %}
 
 ### drag
 {:#events:drag}
 
-
-
-
-
-
-
-
 Triggers while the appointment is being dragged over the workcells.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of dragOver event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the drag over appointment.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>       
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of dragOver event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.target</td>
+            <td class="type">object</td>
+            <td class="description">Returns the target of the drag over appointment.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7384,78 +6006,74 @@ Example
  
 <script>
 $("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            },
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 102,
+                        Subject: "Play with Pets",
+                        StartTime: new Date(2014, 4, 6, 10, 00),
+                        EndTime: new Date(2014, 4, 6, 12, 00),
+                        AllDay:false,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    allday:"AllDay",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+        },
    drag: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
-
+{% endhighlight %}
 
 ### dragStart
 {:#events:dragstart}
 
-
-
-
-
-
-
-
 Triggers when the appointment dragging begins.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of dargStart event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the dragging appointment.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of dargStart event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.target</td>
+            <td class="type">object</td>
+            <td class="description">Returns the target of the dragging appointment.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
@@ -7471,351 +6089,355 @@ Example
  
 <script>
 $("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            },
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        AllDay:false,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    allday:"AllDay",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+        },
    dragStart: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
-
+{% endhighlight %}
 
 ### dragStop
 {:#events:dragstop}
 
-
-
-
-
-
-
-
 Triggers when the appointment is dropped.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of dragDrop event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.appointment{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the dropped appointment object.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of dragDrop event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the dropped appointment object.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="Schedule"></div> 
  
 <script>
+
 $("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            },
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        AllDay:true,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    },
+                    {
+                        Id: 102,
+                        Subject: "Play with Pets",
+                        StartTime: new Date(2014, 4, 6, 10, 00),
+                        EndTime: new Date(2014, 4, 6, 12, 00),
+                        AllDay:false,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    allday:"AllDay",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+        },
    dragStop: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### menuItemClick
 {:#events:menuitemclick}
 
 
-
-
-
-
-
-
 Triggers after the context menu is clicked.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of menuItemClick event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.events{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the object of menu item event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of menuItemClick event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.events</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of menu item event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="Schedule"></div> 
  
 <script>
 $("#Schedule").ejSchedule({
    menuItemClick: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### navigation
 {:#events:navigation}
 
-
-
-
-
-
-
-
 Triggers after the Schedule view or date is navigated.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of schedule view navigation event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.Date{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the current date object.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.currentView{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the current view value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.prevView{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the previous view value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the action.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of previous/next date navigation event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.currentDate{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the new date of the schedule.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.prevDate{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the previous date of the schedule.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the action.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the navigation event while change the date using calendar in schedule.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.currentDate{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the new date of the schedule.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.prevDate{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the previous date of the schedule.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the action.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument</td>
+            <td class="type">object</td>
+            <td class="description">Event parameters when view changes:
+            Returns the object of schedule view navigation event
+            <table class="params">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>    
+                        <td class="name">argument.currentDate</td>
+                        <td class="type">date</td>
+                        <td class="description">Returns the current date object.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.cancel</td>
+                        <td class="type">boolean</td>
+                        <td class="description">Returns the cancel option value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.model</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the schedule model.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.currentView</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the current view value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.previousView</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the previous view value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.target</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the target of the action.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.type</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the event.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>   
+        </tr>
+            <td class="name">argument</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of previous/next date navigation event:
+            <table class="params">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="name">argument.cancel</td>
+                        <td class="type">boolean</td>
+                        <td class="description">Returns the cancel option value.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.model</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the schedule model.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.currentDate</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the new date of the schedule.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.previousDate</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the previous date of the schedule.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.target</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the target of the action.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.type</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the event.</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+            <td class="name">argument</td>
+            <td class="type">object</td>
+            <td class="description">Returns the navigation event while change the date using calendar in schedule.
+            <table class="params">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <tr>
+                        <td class="name">argument.cancel</td>
+                        <td class="type">boolean</td>
+                        <td class="description">Returns the cancel option value.</td>
+                    </tr>
+                <tr>
+                    <td class="name">argument.model</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the schedule model.</td>
+                </tr>
+                <tr>
+                    <td class="name">argument.currentDate</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the new date of the schedule.</td>
+                </tr>
+                <tr>
+                    <td class="name">argument.previousDate</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the previous date of the schedule.</td>
+                </tr>
+                <tr>
+                    <td class="name">argument.target</td>
+                    <td class="type">object</td>
+                    <td class="description">Returns the target of the action.</td>
+                </tr>
+                <tr>
+                    <td class="name">argument.type</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the name of the event.</td>
+                </tr>
+            </tbody>
+        </table>
+        </td>
+       </tr>
+    </tbody>
 </table>
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -7825,144 +6447,111 @@ Example
 $("#Schedule").ejSchedule({
    navigation: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
+{% endhighlight %}
 
 
 ### reminder
 {:#events:reminder}
 
-
-
-
-
-
-
-
 Triggers when the reminder is raised for an appointment.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.reminderAppointment{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the appointment object for which the reminder is raised.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.reminderAppointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the appointment object for which the reminder is raised.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
+
 <div id="Schedule"></div> 
  
 <script>
 $("#Schedule").ejSchedule({
    reminder: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
-
+{% endhighlight %}
 
 ### resize
 {:#events:resize}
 
-
-
-
-
-
-
-
 Triggers while resizing the appointment.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of resizing event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.element{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the resize element value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of resizing event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.element</td>
+            <td class="type">object</td>
+            <td class="description">Returns the resize element value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -7970,86 +6559,80 @@ Example
  
 <script>
 $("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            },
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 102,
+                        Subject: "Play With Friends",
+                        StartTime: new Date(2014, 4, 6, 10, 00),
+                        EndTime: new Date(2014, 4, 6, 12, 00),
+                        AllDay:false,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    allday:"AllDay",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+        },
    resize: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
-
+{% endhighlight %}
 
 ### resizeStart
 {:#events:resizestart}
 
-
-
-
-
-
-
-
 Triggers when the appointment resizing begins.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of resizeStart event.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.element{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the resize element value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of resizeStart event.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.element</td>
+            <td class="type">object</td>
+            <td class="description">Returns the resize element value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -8057,112 +6640,115 @@ Example
  
 <script>
 $("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            },
-   resizeStart: function (args) {}
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Lecturers",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        AllDay:false,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    allday:"AllDay",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+        },
+        resizeStart: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
-
+{% endhighlight %}
 
 ### resizeStop
 {:#events:resizestop}
 
-
-
-
-
-
-
-
 Triggers when appointment resizing is stopped.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.object{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Returns the object of resizeStop event</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.appointment{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the resized appointment value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the schedule model.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.target{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the target of the resized appointment.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">argument.object</td>
+            <td class="type">object</td>
+            <td class="description">Returns the object of resizeStop event</td>
+        </tr>
+        <tr>
+            <td class="name">argument.appointment</td>
+            <td class="type">object</td>
+            <td class="description">Returns the resized appointment value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.model</td>
+            <td class="type">object</td>
+            <td class="description">Returns the schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.target</td>
+            <td class="type">object</td>
+            <td class="description">Returns the target of the resized appointment.</td>
+        </tr>
+        <tr>
+            <td class="name">argument.type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
 </table>
 
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="Schedule"></div> 
 <script>
 $("#Schedule").ejSchedule({
-    appointmentSettings: { dataSource: window.Default, //collection of object from dataSource.
-              id: "Id",
-              subject: "Subject",
-              description: "Description",
-              startTime: "StartTime",
-              endTime: "EndTime",
-              recurrence: "Recurrence",
-              recurrenceRule: "RecurrenceRule",
-              allDay: "AllDay"
-            },
-   resizeStop: function (args) {}
+    appointmentSettings: { 
+        dataSource: [{
+                        Id: 101,
+                        Subject: "Helping to Dad",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 12, 00),
+                        AllDay:false,
+                        Recurrence:false,
+                        RecurrenceRule:null,
+                        StartTimeZone: "UTC +00:00",
+                        EndTimeZone: "UTC +00:00
+                    }]
+                    id: "Id",
+                    startTime: "StartTime",
+                    endTime: "EndTime",
+                    subject: "Subject",
+                    allday:"AllDay",
+                    recurrence:"Recurrence",
+                    recurrenceRule:"RecurrenceRule",
+                    startTimeZone: "StartTimeZone",
+                    endTimeZone: "EndTimeZone"
+        },
+        resizeStop: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
 
-
-
-
+{% endhighlight %}
