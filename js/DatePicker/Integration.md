@@ -26,7 +26,7 @@ To know more detail about the **Angular binding**, you can refer the following l
 
 N> Add the following script files as given in the following example to access angular binding. They have JS library for angular binding.
 
-* angular-min.js
+* angular.min.js
 * ej.widget.angular.min.js
 
 The following example depicts the way to bind data to the **DatePicker** widget through **angular support**.
@@ -99,7 +99,7 @@ For more information about the **Knockout** **binding**, you can refer the follo
 
 N> Add the following script files along with the given code to access knockout binding. They have JS library for knockout binding.
 
-* knockout-min.js
+* knockout.min.js
 * ej.widget.ko.min.js
 
 The link for those script files are as follows:

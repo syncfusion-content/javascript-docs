@@ -36,7 +36,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
        var today = new Date(),
           spldays = [{
              date: new Date(today.getFullYear(), today.getMonth(), 1),
-             icon: "flag-am"
+             iconClass: "flag-am"
           }, ]
           // declaration 
        $("#datepicker").ejDatePicker({

@@ -45,33 +45,6 @@ The following screenshot displays the output for the above code.
 
 
 
-## Display Default Date
-
-You can allow to display default date value in input textbox. By default “**displayDefaultDate**” property is set to ‘**true**’ in **DatePicker** widget. 
-
-The following steps explain **displayDefaultDate** in **DatePicker** widget.	
-
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
-
-{% highlight html %}
-
-<input id="datepicker" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-   
-    // Add the code to set the displayDefaultDate in DatePicker widget
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          displayDefaultDate: false,
-          value: new Date("5/8/2014")
-       });
-    });
-
-{% endhighlight %}
-
 ## Enabled
 
 You can **Enable** or **Disable** the **DatePicker** widget. By default “**enabled**” property is set to ‘**true**’ in **DatePicker** widget. You can disable the **DatePicker** widget by setting “**enabled**” property as ‘**false**’.

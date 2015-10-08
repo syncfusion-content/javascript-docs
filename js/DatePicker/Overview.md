@@ -21,4 +21,4 @@ The **DatePicker** control for **JavaScript** provides support for displaying a 
 * **Keyboard Navigation**: Users can interact with the **DatePicker** control by using the keyboard. 
 * **RTL support**: This feature allows the calendar to be aligned from right-to-left. 
 * **DisplayInline**: This feature allows the **DatePicker** control to function as a calendar control.
-* **Theme: Essential JavaScript** controls feature 12 built-in themes: 6 that are flat and 6 with gradient effects. They also support custom skin options to set user-defined themes.
+* **Theme: Essential JavaScript controls** feature 12 built-in themes: 6 that are flat and 6 with gradient effects. They also support custom skin options to set user-defined themes.
