@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-The TreeView can be easily configured with the DOM element, such as div or ul. you can create a TreeView with a highly customizable look and feel.
+The TreeView can be easily configured with the DOM element, such as div or ul. You can create a TreeView with a highly customizable look and feel.
 
 
 
@@ -197,7 +197,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether to enable drag and drop a node into ej.TreeView.
+Gets or sets a value that indicates to enable drag and drop a node into ej.TreeView.
 
 
 
@@ -251,7 +251,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether to drop a node to a sibling of particular node.
+Gets or sets a value that indicates to drop a node to a sibling of particular node.
 
 
 
@@ -305,7 +305,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether to drop a node to a child of particular node.
+Gets or sets a value that indicates to drop a node to a child of particular node.
 
 
 
@@ -412,7 +412,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether to enable keyboard support for TreeView actions like nodeSelection, nodeEditing, nodeExpand, nodeCollapse, nodeCut and Paste.
+Gets or sets a value that indicates whether to enable the keyboard support for TreeView actions like nodeSelection, nodeEditing, nodeExpand, nodeCollapse, nodeCut and Paste.
 
 
 
@@ -465,7 +465,7 @@ $("#treeView").ejTreeView({
 
 
 
-Allow us to specify the parent and child nodes to get auto check while we check or uncheck a node.
+Allows to specify the parent and child nodes to get auto check while you check or uncheck a node.
 
 
 
@@ -519,7 +519,7 @@ $("#treeView").ejTreeView({
 
 
 
-Allow us to specify the parent node to be retain in checked or unchecked state instead of going for indeterminate state.
+Allows to specify the parent node to be retained in checked or unchecked state instead of indeterminate state.
 
 
 
@@ -573,7 +573,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates the checkedNodes index collection as an array. The given array index position denotes the nodes, that are checked while rendering TreeView.
+Gets or sets a value that indicates the checkedNodes index collection as an array. The given array index position denotes the nodes, that are checked while rendering the TreeView.
 
 
 
@@ -627,7 +627,7 @@ $("#treeView").ejTreeView({
 
 
 
-Sets the root CSS class for TreeView which allow us to customize the appearance.
+Sets the root CSS class for TreeView that allows to customize the appearance.
 
 
 
@@ -680,7 +680,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether to enable or disable the animation effect while expanding or collapsing a node.
+Gets or sets a value that indicates to enable or disable the animation effect while expanding or collapsing a node.
 
 
 
@@ -733,7 +733,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether a TreeView can be enabled or disabled. No actions can be performed while this property is set as false
+Gets or sets a value that indicates whether a TreeView can be enabled or disabled. No actions can be performed while this property is set false.
 
 
 
@@ -786,7 +786,7 @@ $("#treeView").ejTreeView({
 
 
 
-Sets a value that indicates whether to persist the TreeView model state in page using applicable medium i.e., HTML5 localStorage or cookies
+Sets a value that indicates whether to persist the TreeView model state in page by using applicable medium like, HTML5 localStorage or cookies
 
 
 
@@ -839,7 +839,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates to align content in the TreeView control from right to left by setting the property as true.
+Gets or sets a value that indicates to align content in the TreeView control from right to left by setting the property true.
 
 
 
@@ -945,7 +945,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates the TreeView node can be expand or collapse by using the specified action.
+Gets or sets a value that indicates the TreeView node can be expanded or collapsed by using the specified action.
 
 
 
@@ -998,7 +998,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a fields object that allow us to map the data members with field properties in order to make the data binding easier.
+Gets or sets a fields object that allows to map the data members with field properties in order to make the data binding easier.
 
 
 
@@ -1116,7 +1116,7 @@ Specifies the node to be in expanded state.
 
 
 
-Its allow us to indicate whether the node has child or not in load on demand
+Its allows to indicate whether the node has child or not in load on demand.
 
 
 
@@ -1182,7 +1182,7 @@ Specifies the id to TreeView node items list.
 
 
 
-Specifies the image attribute to &ldquo;img&rdquo; tag inside items list
+Specifies the image attribute to &ldquo;img&rdquo; tag inside items list.
 
 
 
@@ -1226,7 +1226,7 @@ Specifies the html attributes to &ldquo;li&rdquo; item list.
 
 
 
-If its true Checkbox node will be checked when rendered with checkbox.
+When its true, the checkbox node is checked when rendered with checkbox.
 
 
 
@@ -1292,7 +1292,7 @@ Specifies the parent id of the node. The nodes are listed as child nodes of the 
 
 
 
-It receives query to retrieve data from the table (query is same as SQL).
+It receives the query to retrieve data from the table (query is same as SQL).
 
 
 
@@ -1314,7 +1314,7 @@ It receives query to retrieve data from the table (query is same as SQL).
 
 
 
-Allow us to specify the node to be in selected state
+Allows to specify the node to be in selected state.
 
 
 
@@ -1455,7 +1455,7 @@ $("#treeView").ejTreeView({
 
 
 
-Specifies the child nodes to be loaded on demand
+Specifies the child nodes to be loaded on demand.
 
 
 
@@ -1508,7 +1508,7 @@ $("#treeView").ejTreeView({
 
 
 
-Allow us to prevent multiple nodes to be in expanded state. If it set to false, previously expanded node will be collapsed automatically, while we expand a node.
+Allows to prevent multiple nodes to be in expanded state. When it is set false, previously expanded nodes are collapsed automatically, while you expand a node.
 
 
 
@@ -1561,7 +1561,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or Sets a value that indicates the index position of a tree node. The particular index tree node will be selected while rendering the TreeView.
+Gets or sets a value that indicates the index position of a tree node. The particular index tree node is selected while rendering the TreeView.
 
 
 
@@ -1614,7 +1614,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether to display or hide checkbox for all TreeView nodes.
+Gets or sets a value that indicates to display or hide checkbox for all TreeView nodes.
 
 
 
@@ -1667,7 +1667,7 @@ $("#treeView").ejTreeView({
 
 
 
-Allow us to use custom template in order to create TreeView.
+Allows to use custom template in order to create TreeView.
 
 
 
@@ -1741,7 +1741,7 @@ Example
 
  
 <script>
-// Initialize the TreeView with the template value specified
+// Initialize the TreeView with the template value specified.
 $("#treeView").ejTreeView({ 
    template: "#templatelocaldata"
 });
@@ -1793,7 +1793,7 @@ Example
  
 <div id="treeView"></div>
 <script>
-// Initialize the TreeView height property with the  value specified
+// Initialize the TreeView height property with the  value specified.
 $("#treeView").ejTreeView({
     fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
     width: 300
@@ -1823,7 +1823,7 @@ $("#treeView").ejTreeView({
 
 
 
-To add a Node or collection of nodes in TreeView. If target tree node is specified, then the given nodes are added as child of target tree node, otherwise nodes are added in TreeView.  
+To add a Node or collection of nodes in TreeView. When the target tree node is specified, the given nodes are added as child of target tree node, otherwise nodes are added in TreeView.  
 
 <table class="params">
 <thead>
@@ -1866,7 +1866,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.addNode("NodeNew", "book"); // First argument is new node text and it will be appended as child of node, which node is having ID book.
+treeObj.addNode("NodeNew", "book"); // The first argument is new node text and it is appended as child of node, the node that is having ID book.
 </script>{% endhighlight %}
 
 
@@ -1916,7 +1916,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.checkAll(); // All the TreeView nodes will be checked.
+treeObj.checkAll(); // All the TreeView nodes are checked.
 </script>{% endhighlight %}
 
 
@@ -1979,7 +1979,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.checkNode($("#book")); // // Given TreeView node will be checked.
+treeObj.checkNode($("#book")); // // Given TreeView node is checked.
 </script>{% endhighlight %}
 
 
@@ -2024,7 +2024,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.collapseAll(); // All the TreeView nodes will be collapsed.
+treeObj.collapseAll(); // All the TreeView nodes are collapsed.
 </script>{% endhighlight %}
 
 
@@ -2086,7 +2086,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.collapseNode($("#book")); // Given TreeView node will be collapsed.
+treeObj.collapseNode($("#book")); // Given TreeView node is collapsed.
 </script>{% endhighlight %}
 
 
@@ -2148,7 +2148,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.disableNode($("#book")); // Given TreeView node will be disabled and child nodes also disabled.
+treeObj.disableNode($("#book")); // Given TreeView node is disabled and child nodes are also disabled.
 </script>{% endhighlight %}
 
 
