@@ -98,6 +98,106 @@ Requires
 
 
 
+### allowEdit<span class="type-signature type boolean">Boolean</span>
+{:#members:allowedit}
+
+
+
+
+
+
+
+
+if allowEdit is set to false means we cannot able to type in datePicker textbox, we can only able to pick the date from datpicker popup. When this API is set to true means we can edit the values and also pick the date from datpicker popup.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
+//To set allowEdit API during initialization  
+        $("#datepicker").ejDatePicker({   allowEdit : true });
+</script>{% endhighlight %}
+
+
+
+
+
+
+### allowDrilDown<span class="type-signature type boolean">Boolean</span>
+{:#members:allowdrildown}
+
+
+
+
+
+
+
+
+Determines whether customer can change the popup view to month/year/decade while clicking on the popup title.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
+//To set allowDrilDown API during initialization  
+        $("#datepicker").ejDatePicker({   allowDrilDown : true });
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
 
 
 ### buttonText<span class="type-signature type string">String</span>
@@ -110,7 +210,7 @@ Requires
 
 
 
-Set the text name for the today button in the datepicker popup.
+Set the text name for the today button in the datepicker calendar.
 
 
 
@@ -143,7 +243,6 @@ Example
 //To set buttonText API during initialization  
         $("#datepicker").ejDatePicker({  buttonText : "Now" });
 </script>{% endhighlight %}
-
 
 
 
@@ -210,7 +309,7 @@ Example
 
 
 
-Specifies the date format to be displayed in the input textbox of Datepicker. The selected Datepicker value will be displayed in specified date format.
+Specifies the format, which is used to format the value of the DatePicker displayed in the input. The format also will be used to parse the input.The default value of dateFormat based on the culture.
 
 
 
@@ -260,7 +359,7 @@ Example
 
 
 
-Specifies the header format of days in short, longer or min types. See <a href="global.html#Header">Header</a>
+Specifies the header format of datepicker calendar in short, longer or min types. See <a href="global.html#Header">Header</a>
 
 
 
@@ -273,7 +372,7 @@ Default Value:
 
 
 
-* ej.DatePicker.Header.ShowHeaderMin
+* ej.DatePicker.Header.Min
 
 
 
@@ -291,7 +390,7 @@ Example
 <input type="text" id="datepicker" />
 <script>
 //To set dayHeaderFormat API value during initialization  
-        $("#datepicker").ejDatePicker({  dayHeaderFormat: ej.DatePicker.Header.ShowHeaderShort });
+        $("#datepicker").ejDatePicker({  dayHeaderFormat: ej.DatePicker.Header.Short });
 </script>{% endhighlight %}
 
 
@@ -310,7 +409,7 @@ Example
 
 
 
-Specifies the start level view in DatePicker calendar. See <a href="global.html#Level">Level</a>
+Specifies the navigation depth in DatePicker calendar.the option will not be applied if start option is lower than depth. Always set both and start and depth options. See <a href="global.html#Level">Level</a>
 
 
 
@@ -460,7 +559,7 @@ Example
 
 
 
-Enable or disable the animation effect in datepicker.
+Enable or disable the animation effect when opening the datepicker calendar in datepicker. Setting the enableAnimation option to false will disable the opening and closing animations. As a result the calendar popup will open and close instantly.
 
 
 
@@ -561,7 +660,7 @@ Example
 
 
 
-Enables or disables the state maintenance of DatePicker.
+Specify the enablePersistence to editor to DatePicker current model value to browser cookies for state maintains.
 
 
 
@@ -711,7 +810,7 @@ Example
 
 
 
-Specify the fields mapping in datepicker
+Specify the fields mapping for special Dates in datepicker.
 
 
 
@@ -763,7 +862,7 @@ specialDates: window.spldays, fields: {date:"date",tooltip:"tooltip",icon:"icon"
 
 
 
-Specifies the date to datepicker.
+Specifies the date.
 
 
 
@@ -829,7 +928,7 @@ Specifies the tooltip to date.
 
 
 
-Specifies the header format to be displayed in the pop up of Datepicker.
+Specifies the header format to be displayed in the Datepicker calendar.
 
 
 
@@ -979,7 +1078,7 @@ Example
 
 
 
-Week end will be displayed in bold, when this property is set to true.
+Week end will be highlighted , when this property is set to true.
 
 
 
@@ -1079,7 +1178,7 @@ Example
 
 
 
-Culture the language of DatePicker calendar.
+Specifies the culture info used by the widget.
 
 
 
@@ -1129,7 +1228,7 @@ Example
 
 
 
-Specifies the maximum date range to be displayed in DatePicker calendar.
+Specifies the maximum date, which the calendar can show.
 
 
 
@@ -1179,7 +1278,7 @@ Example
 
 
 
-Specifies the minimum date range to be displayed in DatePicker calendar.
+Specifies the minimum date that the calendar can show.
 
 
 
@@ -1229,7 +1328,7 @@ Example
 
 
 
-Indicates that the datepicker value can only be read.
+Toggles the readonly state of the widget. When the widget is readonly it doesn't allow user input.
 
 
 
@@ -1379,7 +1478,7 @@ Example
 
 
 
-Shows the date icon button at right side of textbox and shows DatePicker popup on clicking it.
+Show/Hide the date icon button at right side of textbox that used to shows DatePicker calendar.While clicking on DateIcon it shows the Datepicker calendar.
 
 
 
@@ -1479,7 +1578,7 @@ Example
 
 
 
-DatePicker Tooltip will be displayed, when this property is set to true.
+Specifies the property value as true then tooltip will be displayed when hover the days in the datepicker calendar.
 
 
 
@@ -1718,6 +1817,56 @@ Example
 
 
 
+### tooltipFormat<span class="type-signature type string">String</span>
+{:#members:tooltipformat}
+
+
+
+
+
+
+
+
+Set the formatting to the tooltip.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* "ddd MMM dd yyyy"
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
+//To set tooltipFormat API during initialization  
+        $("#datepicker").ejDatePicker({  tooltipFormat : "dd/MM/yyyy" });
+</script>{% endhighlight %}
+
+
+
+
+
+
+
 
 
 ### validationMessage<span class="type-signature type object">object</span>
@@ -1730,7 +1879,7 @@ Example
 
 
 
-Set the jquery validation error message in datepicker.
+Set the jquery validation error message in datepicker.The property will work when the widget present inside the form .Additionally need to include jquery.validate.min.js plugin.
 
 
 
@@ -1787,7 +1936,7 @@ Example
 
 
 
-Set the jquery validation rule in datepicker.
+Set the jquery validation rules to the datepicker.The property will work when the widget present inside the form .Additionally need to include jquery.validate.min.js plugin.
 
 
 
@@ -1841,7 +1990,7 @@ Example
 
 
 
-Specifies the selected date value.
+Specifies the selected date.
 
 
 
@@ -1891,7 +2040,7 @@ Example
 
 
 
-Specifies the water mark text to be display in input text.
+Specifies the water mark text to be displayed in input text.
 
 
 
@@ -2231,6 +2380,86 @@ $("#datepicker").ejDatePicker("show");
 
 
 
+
+### beforeClose
+{:#events:beforeclose}
+
+
+
+
+
+
+
+
+Fires before closing the datepicker popup.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the datepicker model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.events{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the event parameters from datepicker</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.element{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the datepicker popup</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
+//beforeClose event for datepicker
+$("#datepicker").ejDatePicker({
+   beforeClose: function (args) {}
+});  
+</script>                         {% endhighlight %}
+
+
+
+
+
+
+
+
+
 ### beforeDateCreate
 {:#events:beforedatecreate}
 
@@ -2301,6 +2530,83 @@ $("#datepicker").ejDatePicker({
    beforeDateCreate: function (args) {}
 });  
 </script>                         {% endhighlight %}
+
+
+
+
+### beforeOpen
+{:#events:beforeopen}
+
+
+
+
+
+
+
+
+Fires before opening the datepicker popup.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the datepicker model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.events{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the event parameters from datepicker</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.element{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the datepicker popup</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
+//beforeOpen event for datepicker
+$("#datepicker").ejDatePicker({
+   beforeOpen: function (args) {}
+});  
+</script>                         {% endhighlight %}
+
+
+
 
 
 
