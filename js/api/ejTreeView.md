@@ -1866,7 +1866,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.addNode("NodeNew", "book"); // The first argument is new node text and it is appended as child of node, the node that is having ID book.
+treeObj.addNode("NodeNew", "book"); // The first argument is new node text and it is appended as child of node, the node that has ID book.
 </script>{% endhighlight %}
 
 
@@ -1875,7 +1875,7 @@ treeObj.addNode("NodeNew", "book"); // The first argument is new node text and i
  
 <script>
 var treeObj = $("#treeView").data("ejTreeView");
-var obj = { id: "temp", name: "New node" }; // In this object, we can also use selected, isChecked, imageUrl, spriteCssClass properties.
+var obj = { id: "temp", name: "New node" }; // In this object, you can also use selected, isChecked, imageUrl, spriteCssClass properties.
 treeObj.addNode(obj, $("#book"));
 </script>{% endhighlight %}
 
@@ -2210,7 +2210,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.enableNode($("#book")); // Given TreeView node will be enabled and child nodes also enabled.
+treeObj.enableNode($("#book")); // Given TreeView node is enabled and child nodes are also enabled.
 </script>{% endhighlight %}
 
 
@@ -2237,7 +2237,7 @@ $("#treeView").ejTreeView("enableNode", $("#book"));
 
 
 
-To ensure that the TreeView node is visible in the TreeView. This method is useful if we need select a TreeView node dynamically.
+To ensure that the TreeView node is visible in the TreeView use this method. You can also select a TreeView node dynamically.
 
 <table class="params">
 <thead>
@@ -2331,7 +2331,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.expandAll(); // All the TreeView nodes will be expanded.
+treeObj.expandAll(); // All the TreeView nodes is expanded.
 </script>{% endhighlight %}
 
 
@@ -2356,7 +2356,7 @@ $("#treeView").ejTreeView("expandAll");
 
 
 
-To expandNode particular node in TreeView.
+To expand a particular node in TreeView.
 
 <table class="params">
 <thead>
@@ -2393,7 +2393,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.expandNode($("#book")); // Given TreeView node will be expanded.
+treeObj.expandNode($("#book")); // Given TreeView node is expanded.
 </script>{% endhighlight %}
 
 
@@ -2418,7 +2418,7 @@ $("#treeView").ejTreeView("expandNode", $("#book"));
 
 
 
-To get currently checked nodes in TreeView.
+To get the currently checked nodes in TreeView.
 
 
 
@@ -2448,7 +2448,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getCheckedNodes(); // All checked TreeView nodes will be returned.
+treeObj.getCheckedNodes(); // All checked TreeView nodes are returned.
 </script>{% endhighlight %}
 
 
@@ -2473,7 +2473,7 @@ $("#treeView").ejTreeView("getCheckedNodes");
 
 
 
-To get currently checked nodes indexes in TreeView.
+To get the currently checked nodes indexes in TreeView.
 
 
 
@@ -2503,7 +2503,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getCheckedNodesIndex(); // All checked TreeView nodes indexes will be returned as array.
+treeObj.getCheckedNodesIndex(); // All the checked TreeView node indexes are returned as array.
 </script>{% endhighlight %}
 
 
@@ -2529,7 +2529,7 @@ $("#treeView").ejTreeView("getCheckedNodesIndex");
 
 
 
-To get number of nodes in TreeView.
+To get the number of nodes in TreeView.
 
 
 
@@ -2559,7 +2559,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getCount(); // It will return the TreeView nodes count.
+treeObj.getCount(); // It returns the TreeView nodes count.
 </script>{% endhighlight %}
 
 
@@ -2586,7 +2586,7 @@ $("#treeView").ejTreeView("getCount");
 
 
 
-To get currently expanded nodes in TreeView.
+To get the currently expanded nodes in TreeView.
 
 
 
@@ -2617,7 +2617,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getExpandedNodes(); // All expanded TreeView nodes will be returned.
+treeObj.getExpandedNodes(); // All expanded TreeView nodes are returned.
 </script>{% endhighlight %}
 
 
@@ -2642,7 +2642,7 @@ $("#treeView").ejTreeView("getExpandedNodes");
 
 
 
-To get currently expanded nodes indexes in TreeView.
+To get the currently expanded node indexes in TreeView.
 
 
 
@@ -2672,7 +2672,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getExpandedNodesIndex(); // All expanded TreeView nodes indexes will be returned as array.
+treeObj.getExpandedNodesIndex(); // All expanded TreeView node indexes are returned as array.
 </script>{% endhighlight %}
 
 
@@ -2699,7 +2699,7 @@ $("#treeView").ejTreeView("getExpandedNodesIndex");
 
 
 
-To get TreeView node by using index position in TreeView.
+To get TreeView node by using the index position in TreeView.
 
 <table class="params">
 <thead>
@@ -2746,7 +2746,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getNodeByIndex(3); // It will return the TreeView node of specified index.
+treeObj.getNodeByIndex(3); // It returns the TreeView node of specified index.
 </script>{% endhighlight %}
 
 
@@ -2772,7 +2772,7 @@ $("#treeView").ejTreeView("getNodeByIndex", 3);
 
 
 
-To get TreeView node data such as nodeId, nodeText, parentId, selected, checked, expanded, level, childs and index.
+To get the TreeView node data such as nodeId, nodeText, parentId, selected, checked, expanded, level, childs and index.
 
 <table class="params">
 <thead>
@@ -2820,7 +2820,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getNode($("#book")); // Given TreeView node details will be returned as JSON object.
+treeObj.getNode($("#book")); // Given TreeView node details are returned as JSON object.
 </script>{% endhighlight %}
 
 
@@ -2846,7 +2846,7 @@ $("#treeView").ejTreeView("getNode", $("#book"));
 
 
 
-To get current index position of TreeView node.
+To get the current index position of TreeView node.
 
 <table class="params">
 <thead>
@@ -2893,7 +2893,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getNodeIndex($("#book")); // Given TreeView node index postion will be returned.
+treeObj.getNodeIndex($("#book")); // Given TreeView node index postion is returned.
 </script>{% endhighlight %}
 
 
@@ -2920,7 +2920,7 @@ $("#treeView").ejTreeView("getNodeIndex", $("#book"));
 
 
 
-To get immediate parent TreeView node of particular TreeView node.
+To get the immediate parent TreeView node of particular TreeView node.
 
 <table class="params">
 <thead>
@@ -2968,7 +2968,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getParent($("#book")); // It will return the immediate parent TreeView node of given TreeView node.
+treeObj.getParent($("#book")); // It returns the immediate parent TreeView node of given TreeView node.
 </script>{% endhighlight %}
 
 
@@ -3025,7 +3025,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getSelectedNode(); // Currently selected TreeView node will be returned.
+treeObj.getSelectedNode(); // Currently selected TreeView node is returned.
 </script>{% endhighlight %}
 
 
@@ -3082,7 +3082,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getSelectedNodeIndex(); // Currently selected TreeView node index poistion will be returned.
+treeObj.getSelectedNodeIndex(); // Currently selected TreeView node index poistion is returned.
 </script>{% endhighlight %}
 
 
@@ -3157,7 +3157,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getText($("#book")); // Given TreeView node text will be returned.
+treeObj.getText($("#book")); // Given TreeView node text is returned.
 </script>{% endhighlight %}
 
 
@@ -3213,7 +3213,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getTreeData(); // It will return the updated datasource as array of JSON object, after performing some operation.
+treeObj.getTreeData(); // It returns the updated datasource as array of JSON object, after performing some operation.
 </script>{% endhighlight %}
 
 
@@ -3240,7 +3240,7 @@ $("#treeView").ejTreeView("getTreeData");
 
 
 
-To get currently visible nodes in TreeView.
+To get the currently visible nodes in TreeView.
 
 
 
@@ -3271,7 +3271,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getVisibleNodes(); // It will return the currently visible TreeView nodes.
+treeObj.getVisibleNodes(); // It returns the currently visible TreeView nodes.
 </script>{% endhighlight %}
 
 
@@ -3299,7 +3299,7 @@ $("#treeView").ejTreeView("getVisibleNodes");
 
 
 
-To check a node having child or not.
+To check whether a node has child or not.
 
 
 <table class="params">
@@ -3348,7 +3348,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.hasChildNode($("#book")); // It will return true, if the given TreeView node having child node's, else false.
+treeObj.hasChildNode($("#book")); // It returns true when the given TreeView node has child nodes, else false.
 </script>{% endhighlight %}
 
 
@@ -3373,7 +3373,7 @@ $("#treeView").ejTreeView("hasChildNode", $("#book"));
 
 
 
-To show nodes in TreeView.
+To hide nodes in TreeView.
 
 
 
@@ -3393,7 +3393,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.hide(); // It will hide all the nodes in TreeView.
+treeObj.hide(); // It hides all the nodes in TreeView.
 </script>{% endhighlight %}
 
 
@@ -3418,7 +3418,7 @@ $("#treeView").ejTreeView("hide");
 
 
 
-To hideNode particular node in TreeView.
+To hide a particular node in TreeView.
 
 <table class="params">
 <thead>
@@ -3455,7 +3455,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.hideNode($("#book")); // It will hide the given TreeView node.
+treeObj.hideNode($("#book")); // It hides the given TreeView node.
 </script>{% endhighlight %}
 
 
@@ -3524,7 +3524,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.insertAfter("NodeNew", "book"); // First argument is new node text and it will be appended after the specified TreeView node, which node is having ID book.
+treeObj.insertAfter("NodeNew", "book"); // The first argument is new node text and it is appended after the specified TreeView node, the node that has ID book.
 </script>{% endhighlight %}
 
 
@@ -3533,7 +3533,7 @@ treeObj.insertAfter("NodeNew", "book"); // First argument is new node text and i
  
 <script>
 var treeObj = $("#treeView").data("ejTreeView");
-var obj = { id: "temp", name: "New node" }; // In this object, we can also use selected, isChecked, imageUrl, spriteCssClass properties.
+var obj = { id: "temp", name: "New node" }; // In this object, you can also use selected, isChecked, imageUrl, spriteCssClass properties.
 treeObj.insertAfter(obj, $("#book"));
 </script>{% endhighlight %}
 
@@ -3597,7 +3597,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.insertBefore("NodeNew", "book"); // First argument is new node text and it will be appended before the specified TreeView node, which node is having ID book.
+treeObj.insertBefore("NodeNew", "book"); // The first argument is new node text and it is appended before the specified TreeView node, the node that has ID book.
 </script>{% endhighlight %}
 
 
@@ -3606,7 +3606,7 @@ treeObj.insertBefore("NodeNew", "book"); // First argument is new node text and 
  
 <script>
 var treeObj = $("#treeView").data("ejTreeView");
-var obj = { id: "temp", name: "New node" }; // In this object, we can also use selected, isChecked, imageUrl, spriteCssClass properties.
+var obj = { id: "temp", name: "New node" }; // In this object, you can also use selected, isChecked, imageUrl, spriteCssClass properties.
 treeObj.insertBefore(obj, $("#book"));
 </script>{% endhighlight %}
 
@@ -3676,7 +3676,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.isNodeChecked($("#book")); // It will return true, if the given TreeView node is checked, else false. 
+treeObj.isNodeChecked($("#book")); // It returns true, when the given TreeView node is checked, else false. 
 </script>{% endhighlight %}
 
 
@@ -3749,7 +3749,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.isChildLoaded($("#book")); // It will return true, if the given TreeView node is child nodes are loaded, else false. 
+treeObj.isChildLoaded($("#book")); // It returns true when the given TreeView node is child nodes are loaded, else false. 
 </script>{% endhighlight %}
 
 
@@ -3822,7 +3822,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.isDisabled($("#book")); // It will return true, if the given TreeView node is disabled, else false. 
+treeObj.isDisabled($("#book")); // It returns true when the given TreeView node is disabled, else false. 
 </script>{% endhighlight %}
 
 
@@ -3849,7 +3849,7 @@ $("#treeView").ejTreeView("isDisabled", $("#book"));
 
 
 
-To check the given node is exist in TreeView.
+To check whether the given node exists in TreeView.
 
 <table class="params">
 <thead>
@@ -3895,7 +3895,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.isExist($("#book")); // It will return true, if the given node is exist in TreeView, else false. 
+treeObj.isExist($("#book")); // It returns true when the given node exists in TreeView, else false. 
 </script>{% endhighlight %}
 
 
@@ -3969,7 +3969,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.isExpanded($("#book")); // It will return true, if the given TreeView node is expanded, else false. 
+treeObj.isExpanded($("#book")); // It returns true when the given TreeView node is expanded, else false. 
 </script>{% endhighlight %}
 
 
@@ -4041,7 +4041,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.isSelected($("#book")); // It will return true, if the given TreeView node is selected, else false.
+treeObj.isSelected($("#book")); // It returns true when the given TreeView node is selected, else false.
 </script>{% endhighlight %}
 
 
