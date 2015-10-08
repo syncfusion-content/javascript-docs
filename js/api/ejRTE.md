@@ -162,7 +162,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p>
         </textarea><script>
-    // Initializes the RTE with the allowEditing value specified.
+    // Initializes the RTE with the specified allowEditing value.
     $("#rteSample").ejRTE({ allowEditing: false });
 </script>
 {% endhighlight %}
@@ -200,7 +200,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea > <script>
-    // Initializes the RTE with the allowKeyboardNavigation value specified.
+    // Initializes the RTE with the specified allowKeyboardNavigation value.
     $("#rteSample").ejRTE({ allowKeyboardNavigation: false });
 </script>
 {% endhighlight %}
@@ -240,7 +240,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the autoFocus value specified.
+    // Initializes the RTE with the specified autoFocus value.
     $("#rteSample").ejRTE({ autoFocus: true });
     </script>
 {% endhighlight %}
@@ -280,7 +280,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea><script>
-    // Initializes the RTE with the autoHeight value specified.
+    // Initializes the RTE with the specified autoHeight value.
     $("#rteSample").ejRTE({ autoHeight: true });
 </script>
 {% endhighlight %}
@@ -322,7 +322,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the colorCode value specified.
+    // Initializes the RTE with the specified colorCode value.
     $("#rteSample").ejRTE({
         toolsList: ["font"],
         tools: {
@@ -345,7 +345,7 @@ Example
 
 
 
-Given number of columns is rendered in the color palate popup.
+The number of columns given are rendered in the color palate popup.
 
 
 Default Value:
@@ -371,7 +371,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-        // Initializes the RTE with the colorPaletteColumns value specified.
+        // Initializes the RTE with the specified colorPaletteColumns value.
         $("#rteSample").ejRTE({
             toolsList: ["font"],
             tools: {
@@ -390,7 +390,7 @@ Example
 
 
 
-Given number of rows rendered in the color palate popup.
+The number of rows given are rendered in the color palate popup.
 
 
 Default Value:
@@ -416,7 +416,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea><script>
-    // Initializes the RTE with the 'colorPaletteRows' value specified. 
+    // Initializes the RTE with the specified 'colorPaletteRows' value. 
         $("#rteSample").ejRTE({
             toolsList: ["font"],
             tools: {
@@ -461,7 +461,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    //Initializes the RTE with the cssClass value specified.
+    //Initializes the RTE with the specified cssClass value.
     $("#rteSample").ejRTE({ cssClass: 'gradient-lime' });
 </script>
 {% endhighlight %}
@@ -502,7 +502,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the enabled value specified.
+    // Initializes the RTE with the specified enabled value.
     $("#rteSample").ejRTE({ enabled: false });
 </script>
 {% endhighlight %}
@@ -542,7 +542,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the enabled value specified.
+    // Initializes the RTE with the specified enabled value.
     $("#rteSample").ejRTE({ enableHtmlEncode: false });
 </script>
 {% endhighlight %}
@@ -556,7 +556,7 @@ Example
 
 
 
-Maintains the values of the RTE after page reload.
+Maintain the values of the RTE after page reload.
 
 
 Default Value:
@@ -582,7 +582,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the enablePersistence value specified.
+    // Initializes the RTE with the specified enablePersistence value.
     $("#rteSample").ejRTE({ enablePersistence: false });
 </script>
 {% endhighlight %}
@@ -597,7 +597,7 @@ Example
 
 
 
-Shows resize icon, and enables the resize option in the RTE.
+Shows the resize icon and enables the resize option in the RTE.
 
 
 Default Value:
@@ -623,7 +623,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the enableResize value specified.
+    // Initializes the RTE with the specified enableResize value.
     $("#rteSample").ejRTE({ enableResize: true });
 </script>
 {% endhighlight %}
@@ -637,7 +637,7 @@ Example
 
 
 
-Shows RTE in the RTL direction.
+Shows the RTE in the RTL direction.
 
 
 Default Value:
@@ -662,7 +662,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the enableRTL value specified.
+    // Initializes the RTE with the specified enableRTL value .
     $("#rteSample").ejRTE({ enableRTL: true });
 </script>
 {% endhighlight %}
@@ -703,7 +703,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initialize the RTE with the enableXHTML value specified.
+    // Initializes the RTE with the specified enableXHTML value.
     $("#rteSample").ejRTE({ enableXHTML: true });
 </script>
 {% endhighlight %}
@@ -718,7 +718,7 @@ Example
 
 
 
-This API allows to enable the file browser support in RTE control to browse, create delete and upload the files in specified current directory.
+This API allows to enable the file browser support in the RTE control to browse, create, delete and upload the files in the specified current directory.
 
 
 Default Value:
@@ -788,7 +788,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // InitializeS the RTE with the fileBrowser’s ajaxAction value specified.
+    // Initializes the RTE with the specified fileBrowser’s ajaxAction value.
     $("#rteSample").ejRTE({ fileBrowser: {
         ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction"
     }
@@ -805,7 +805,7 @@ Example
 
 
 
-Specifies the file type extension to be shown in file browser window.
+Specifies the file type extension shown in the file browser window.
 
 
 
@@ -822,7 +822,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the fileBrowser’s extensionAllow value specified.
+    // Initializes the RTE with the specified fileBrowser’s extensionAllow value.
     $("#rteSample").ejRTE({ fileBrowser: {
         extensionAllow: "*.doc,*.docx,*.pdf,*.txt"
     }
@@ -854,7 +854,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the fileBrowser’s filePath value specified.
+    // Initializes the RTE with the specified fileBrowser’s filePath value.
     $("#rteSample").ejRTE({ fileBrowser: {
         filePath: "../FileExplorerContent/"
     }
@@ -963,7 +963,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-// Initializes the RTE with the fontSize value specified.
+// Initializes the RTE with the specified fontSize value.
 $("#rteSample").ejRTE({ fontSize: [
                 {
                     text: "1",
@@ -1040,7 +1040,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-// Initializes the RTE with the format value specified.
+// Initializes the RTE with the specified format value.
 $("#rteSample").ejRTE({format: [
                 { text: "Paragraph", value: "<p>", spriteCssClass: "e-paragraph" },
                 { text: "Quotation", value: "<blockquote>", spriteCssClass: "e-quotation" }, 
@@ -1087,7 +1087,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    //Initializes the RTE height property with value specified
+    //Initializes the RTE height property with the specified value 
     $("#rteSample").ejRTE({ height: 250 });
 </script>
 {% endhighlight %}
@@ -1128,7 +1128,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-// Initializes the RTE with the HtmlAttributes specified.
+// Initializes the RTE with the specified HtmlAttributes.
     $("#rteSample").ejRTE({ htmlAttributes: { readOnly: "readOnly"} });
 </script>
 {% endhighlight %}
@@ -1169,7 +1169,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initialize the RTE with the iframeAttribute value specified.
+    // Initialize the RTE with the specified iframeAttribute value .
     $("#rteSample").ejRTE({ iframeAttribute:{ style :"color:#5C5C5C" }});
 </script>
 {% endhighlight %}
@@ -1184,7 +1184,7 @@ Example
 
 
 
-This API allows the image browser support in the RTE control to browse, create, delete, and upload the image files to the specified current directory.
+This API allows the image browser to support in the RTE control to browse, create, delete, and upload the image files to the specified current directory.
 
 
 Default Value:
@@ -1210,7 +1210,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-// Initializes the RTE with the imageBrowser value specified.
+// Initializes the RTE with the specified imageBrowser value.
 $("#rteSample").ejRTE({  imageBrowser: {
   filePath: "../FileExplorerContent/",
  extensionAllow: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
@@ -1229,7 +1229,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/",
 
 
 
-This API is used to receive the server-side handler for file related operations.
+This API is used to receive the server-side handler for the file related operations.
 
 
 
@@ -1246,7 +1246,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-// Initializes the RTE with the imageBrowser with ajaxAction value specified.
+// Initializes the RTE with the imageBrowser with the specified ajaxAction value.
 $("#rteSample").ejRTE({  imageBrowser: {
   ajaxAction: "http://mvc.syncfusion.com/OdataServices/api/fileoperation/"
 }});
@@ -1263,7 +1263,7 @@ $("#rteSample").ejRTE({  imageBrowser: {
 
 
 
-Specifies the file type extension to be shown in the image browser window.
+Specifies the file type extension shown in the image browser window.
 
 
 
@@ -1280,7 +1280,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the imageBrowser with extension value specified.
+    // Initializes the RTE with the imageBrowser with the specified extension value.
     $("#rteSample").ejRTE({ imageBrowser: {
         extensionAllow: "*.doc,*.docx,*.tiff,*.jpeg"
     }
@@ -1315,7 +1315,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the imageBrowser filePath value specified.
+    // Initializes the RTE with the specified imageBrowser filePath value.
     $("#rteSample").ejRTE({ imageBrowser: {
         filePath: "../FileExplorerContent/"
     }
@@ -1359,7 +1359,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the isResponsive value specified.
+    // Initializes the RTE with the specified isResponsive value.
     $("#rteSample").ejRTE({ isResponsive: true });
 </script>
 {% endhighlight %}
@@ -1374,7 +1374,7 @@ Example
 
 
 
-Sets the culture in the RTE when set localization values needs to be assigned to the corresponding text as follows.  
+Sets the culture in the RTE when you set the localization values are needs to be assigned to the corresponding text as follows.  
 
 
 Default Value:
@@ -1400,7 +1400,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the culture value specified.
+    // Initializes the RTE with the specified culture value.
 ej.RTE.Locale["en-US"] = {
         bold: "Bold",
         italic: "Italic",
@@ -1534,7 +1534,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the maxHeight value specified.
+    // Initializes the RTE with the specified maxHeight value.
     $("#rteSample").ejRTE({ maxHeight: 900 });
 </script>
 {% endhighlight %}
@@ -1615,7 +1615,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the maxWidth value specified.
+    // Initializes the RTE with the specified maxWidth value.
     $("#rteSample").ejRTE({ maxWidth: 900 });
 </script>
 {% endhighlight %}
@@ -1656,7 +1656,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the minHeight value specified.
+    // Initializes the RTE with the specified minHeight value.
     $("#rteSample").ejRTE({ minHeight: 900 });
 </script>
 {% endhighlight %}
@@ -1696,7 +1696,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the minWidth value specified.
+    // Initializes the RTE with the specified minWidth value .
     $("#rteSample").ejRTE({ minWidth: 900 });
 </script>
 {% endhighlight %}
@@ -1737,7 +1737,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the name value specified.
+    // Initializes the RTE with the specified name value.
     $("#rteSample").ejRTE({ name: "ecommentblog" });
 </script>
 {% endhighlight %}
@@ -1778,7 +1778,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the showClearAll value specified.
+    // Initializes the RTE with the specified showClearAll value.
     $("#rteSample").ejRTE({ showClearAll: false });
 </script>
 {% endhighlight %}
@@ -1819,7 +1819,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the showClearFormat value specified.
+    // Initializes the RTE with the specified showClearFormat value.
     $("#rteSample").ejRTE({ showClearFormat: false });
 </script>
 {% endhighlight %}
@@ -1833,7 +1833,7 @@ Example
 
 
 
-Shows Custom Table in the RTE.
+Shows the Custom Table in the RTE.
 
 
 Default Value:
@@ -1859,7 +1859,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the showCustomTable value specified.
+    // Initializes the RTE with the specified showCustomTable value.
     $("#rteSample").ejRTE({showCustomTable: true});
 </script>
 {% endhighlight %}
@@ -1874,7 +1874,7 @@ Example
 
 
 
-This API is used to set the default dimensions for image and video. When this property is set to true, the image and video dialog displays the dimension option.
+This API is used to set the default dimensions for the image and video. When this property is set to true, the image and video dialog displays the dimension option.
 
 
 Default Value:
@@ -1900,7 +1900,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the showDimensions value specified.
+    // Initializes the RTE with the specified showDimensions value.
     $("#rteSample").ejRTE({ showDimensions: false });
 </script>
 {% endhighlight %}
@@ -1914,7 +1914,7 @@ Example
 
 
 
-Shows FontOption in the RTE.
+Shows the FontOption in the RTE.
 
 
 Default Value:
@@ -1940,7 +1940,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the showFontOption value specified.
+    // Initializes the RTE with the specified showFontOption value.
     $("#rteSample").ejRTE({ showFontOption: false });
 </script>
 {% endhighlight %}
@@ -1981,7 +1981,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the showFooter value specified.
+    // Initializes the RTE with the specified showFooter value.
     $("#rteSample").ejRTE({ showFooter: true });
 </script>
 {% endhighlight %}
@@ -1995,7 +1995,7 @@ Example
 
 
 
-Shows HtmlSource in the RTE footer.
+Shows the HtmlSource in the RTE footer.
 
 
 Default Value:
@@ -2021,7 +2021,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the showHtmlSource value specified.
+    // Initializes the RTE with the specified showHtmlSource value.
     $("#rteSample").ejRTE({ showHtmlSource: false });
 </script>
 {% endhighlight %}
@@ -2061,7 +2061,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the showHtmlTagInfo value specified.
+    // Initializes the RTE with the specified showHtmlTagInfo value.
     $("#rteSample").ejRTE({ showHtmlTagInfo: false });
 </script>
 {% endhighlight %}
@@ -2075,7 +2075,7 @@ Example
 
 
 
-Shows toolbar in the RTE.
+Shows the toolbar in the RTE.
 
 
 Default Value:
@@ -2101,7 +2101,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the showToolbar value specified.
+    // Initializes the RTE with the specified showToolbar value.
     $("#rteSample").ejRTE({ showToolbar: false });
 </script>
 {% endhighlight %}
@@ -2139,7 +2139,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the showCharCount value specified.
+    // Initializes the RTE with the specified showCharCount value.
     $("#rteSample").ejRTE({showFooter: true , showCharCount: false });
 </script>
 {% endhighlight %}
@@ -2182,7 +2182,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the showWordCount value specified.
+    // Initializes the RTE with the specified showWordCount value.
     $("#rteSample").ejRTE({showFooter: true , showWordCount: false });
 </script>
 {% endhighlight %}
@@ -2197,7 +2197,7 @@ Example
 
 
 
-Given number of columns renders the insert table pop.
+The given number of columns render the insert table pop.
 
 
 Default Value:
@@ -2223,7 +2223,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the 'tableColumns' value specified.
+    // Initializes the RTE with the specified 'tableColumns' value.
     $("#rteSample").ejRTE({ tableColumns: 10 });
 </script>
  {% endhighlight %}
@@ -2237,7 +2237,7 @@ Example
 
 
 
-Given number of rows renders the insert table pop.
+The given number of rows render the insert table pop.
 
 
 Default Value:
@@ -2263,7 +2263,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the 'tableColumns' value specified.
+    // Initializes the RTE with the specified 'tableColumns' value.
     $("#rteSample").ejRTE({ tableRows: 10 });
 </script>
 {% endhighlight %}
@@ -2277,7 +2277,7 @@ Example
 
 
 
-Sets the tools in the RTE, and this gets the inner display order of the corresponding group element. Tools are dependent on toolsList property. 
+Sets the tools in the RTE and gets the inner display order of the corresponding group element. Tools are dependent on the toolsList property. 
 
 
 Default Value:
@@ -2314,7 +2314,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea><script>
-    // Initializes the RTE with the tools’ value specified.
+    // Initializes the RTE with the specified tools’ value.
     $("#rteSample").ejRTE({ tools: {
                 formatStyle: ["format"],
                 font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
@@ -2365,7 +2365,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the alignment tools value specified.
+    // Initializes the RTE with the specified alignment tools value.
     $("#rteSample").ejRTE({ tools: {
             alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"]                
             }    
@@ -2400,7 +2400,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with casing tools value specified.
+    // Initializes the RTE with the specified casing tools value.
     $("#rteSample").ejRTE({ tools: {
             casing:["upperCase", "lowerCase"]         
             }    
@@ -2435,7 +2435,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the clear tools value specified.
+    // Initializes the RTE with the specified clear tools value.
     $("#rteSample").ejRTE({ tools: {
             clear: ["clearFormat", "clearAll"]         
             }    
@@ -2471,7 +2471,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the clipboard tools value specified.
+    // Initializes the RTE with the specified clipboard tools value.
     $("#rteSample").ejRTE({ tools: {
             clipboard: ["cut", "copy", "paste"]         
             }    
@@ -2504,7 +2504,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea><script>
-    // Initializes the RTE with the doAction tools value specified.
+    // Initializes the RTE with the specified doAction tools value.
     $("#rteSample").ejRTE({ tools: {
             doAction: ["undo", "redo"]         
             }    
@@ -2520,7 +2520,7 @@ Example
 
 
 
-Specifies the effects tools and the display order of this tool in RTE toolbar.
+Specifies the effect of tools and the display order of this tool in RTE toolbar.
 
 
 
@@ -2537,7 +2537,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-// Initialize the RTE with the tools with effects value specified.
+// Initialize the RTE with the specified tools with effects value.
 $("#rteSample").ejRTE({  tools: {
 effects: ["superscript", "subscript"]
 }});
@@ -2569,7 +2569,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the font tools value specified.
+    // Initializes the RTE with the specified font tools value.
     $("#rteSample").ejRTE({ tools: {
             font: ["fontName", "fontSize", "fontColor", "backgroundColor"]         
             }    
@@ -2602,7 +2602,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the formatStyle tools value specified.
+    // Initializes the RTE with the specified formatStyle tools value.
     $("#rteSample").ejRTE({ tools: {
             formatStyle: ["format"]         
             }    
@@ -2635,7 +2635,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the image tools value specified.
+    // Initializes the RTE with the specified image tools value.
     $("#rteSample").ejRTE({ tools: {
             images: ["image"]         
             }    
@@ -2668,7 +2668,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the indent tools value specified.
+    // Initializes the RTE with the specified indent tools value.
     $("#rteSample").ejRTE({ tools: {
             indenting: ["outdent", "indent"]        
             }    
@@ -2700,7 +2700,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the link tools value specified.
+    // Initializes the RTE with the specified link tools value.
     $("#rteSample").ejRTE({ tools: {
             links: ["createLink","removeLink"]        
             }    
@@ -2734,7 +2734,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the list tools value specified.
+    // Initializes the RTE with the specified list tools value.
     $("#rteSample").ejRTE({ tools: {
             lists: ["unorderedList", "orderedList"]        
             }    
@@ -2766,7 +2766,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the media tools value specified.
+    // Initializes the RTE with the specified media tools value.
     $("#rteSample").ejRTE({ tools: {
             media: ["video"]
             }    
@@ -2800,7 +2800,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the style tools value specified.
+    // Initializes the RTE with the specified style tools value.
     $("#rteSample").ejRTE({ tools: {
             style: ["bold", "italic", "underline", "strikethrough"]
             }    
@@ -2834,7 +2834,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the table tools value specified.
+    // Initializes the RTE with the specified table tools value.
     $("#rteSample").ejRTE({ tools: {
             tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"]
             }    
@@ -2867,7 +2867,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea>
    <script>
-    // Initializes the RTE with the view tools value specified.
+    // Initializes the RTE with the specified view tools value.
     $("#rteSample").ejRTE({ tools: {
             view: ["fullScreen"]
             }    
@@ -2882,7 +2882,7 @@ Example
 {:#members:toolslist}
 
 
-Specifies the list of groups and order of those groups to be displayed in the RTE toolbar.  toolsList property is used to get the root group order and tools property is used to get the inner order of the corresponding groups to  be displayed. When value is not specified, it gets its default display order and tools.
+Specifies the list of groups and order of those groups displayed in the RTE toolbar.  The toolsList property is used to get the root group order and tools property is used to get the inner order of the corresponding groups displayed. When the value is not specified, it gets its default display order and tools.
 
 
 Default Value:
@@ -2908,7 +2908,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea > <script>
-    // Initializes the RTE with the toolsList value specified.
+    // Initializes the RTE with the specified toolsList value.
     $("#rteSample").ejRTE({toolsList: ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", "clear", "links", "images", "media", "tables", "casing", "customTools"]
  });
 </script>
@@ -2946,7 +2946,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initializes the RTE with the 'undoStackLimit' value specified.
+    // Initializes the RTE with the specified 'undoStackLimit' value.
     $("#rteSample").ejRTE({ undoStackLimit: 70 });
 </script>
 {% endhighlight %}
@@ -2960,7 +2960,7 @@ Example
 
 
 
-Given string value is displayed in the editable area.
+The given string value is displayed in the editable area.
 
 
 Default Value:
@@ -3024,7 +3024,7 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea > <script>
-//Initializes the RTE width property value specified
+//Initializes the specified RTE width property value
         $("#rteSample").ejRTE({ width: 500 });
 </script>{% endhighlight %}
 
@@ -3054,7 +3054,7 @@ Example
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
     $("#rteSample").ejRTE();
-    // Create RTE
+    // Creates the RTE
     var rteeObj = $("#rteSample").data("ejRTE");
     rteeObj.createRange(); //Returns the range object
 </script>
@@ -3238,7 +3238,7 @@ Example
     rteeObj.enableToolbarItem("createTable"); // Enables toolbar item
 </script>
 
-Note: Those using the release version before 13.3, please refer to the following.
+Note: When using the release version before 13.3, refer to the following.
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
@@ -3262,7 +3262,7 @@ Note: Those using the release version before 13.3, please refer to the following
     // Creates the RTE
     $("#rteSample").ejRTE("enableToolbarItem", "createTable"); // Enables toolbar item        
 </script>
-Note: Those who are using our release version before 13.3 use as like below
+Note: When you are using our release version before 13.3, refer to the following
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
@@ -3465,7 +3465,7 @@ $("#rteSample").ejRTE("getHtml");// Gets the html string from the rte.
 
 
 
-Gets the selected html string from RTE control.
+Gets the selected html string from the RTE control.
 
 
 
@@ -3604,7 +3604,7 @@ $("#rteSample").ejRTE("hide");// Hides the rte
 {:#methods:pasteContent}
 
 
-This method helps insert/paste the content at the current cursor (caret) position or the selected content can be replaced with our text by passing value as parameter to the pasteContent method in the Editor.
+This method helps to insert/paste the content at the current cursor (caret) position or the selected content to be replaced with our text by passing the value as parameter to the pasteContent method in the Editor.
 
 
 
@@ -3685,7 +3685,7 @@ $("#rteSample").ejRTE("refresh");// Refreshes the rte
 
 
 
-Removes the given tool from the RTE tool bar
+Removes the given tool from the RTE ToolBbar.
 
 
 Example
@@ -3707,7 +3707,7 @@ Example
     var rteeObj = $("#rteSample").data("ejRTE");
     rteeObj.removeToolbarItem("createTable"); // Removes the toolbar item
 </script>
-Note: Those using the release version before 13.3, please refer to the following
+Note: When you use the release version before 13.3, refer to the following
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
@@ -3731,7 +3731,7 @@ Note: Those using the release version before 13.3, please refer to the following
     // Creates the RTE
     $("#rteSample").ejRTE("removeToolbarItem", "createTable"); // Removes the toolbar item        
 </script>
-Note: Those using the release version before 13.3, please refer to the following
+Note: When using the release version before 13.3, refer to the following
 
 <script>
     $("#rteSample").ejRTE();
@@ -3816,7 +3816,7 @@ Example
 
 
 
-Sets the colorpicker model type to be rendered initially in the RTE control.
+Sets the colorpicker model type rendered initially in the RTE control.
 
 
 
@@ -3957,7 +3957,7 @@ $("#rteSample").ejRTE("show");// Shows the rte
 
 
 
-Fires when change successfully.
+Fires when changed successfully.
 
 <table class="params">
 <thead>
@@ -4005,7 +4005,7 @@ Example
         area. </p></textarea >     
 <script>
 $("#rteSample").ejRTE();
-//change event for RTE
+//changes the event for RTE
 $("#rteSample").ejRTE({ 
         change: function(args) {}
 });      
@@ -4020,7 +4020,7 @@ $("#rteSample").ejRTE({
 
 
 
-Fires when the RTE created successfully
+Fires when the RTE is created successfully
 
 <table class="params">
 <thead>
@@ -4068,7 +4068,7 @@ Example
         area. </p></textarea >     
 <script>
 $("#rteSample").ejRTE();
-//create event for RTE
+//creates an event for RTE
 $("#rteSample").ejRTE({ 
         create: function(args) {}
 });      
@@ -4130,7 +4130,7 @@ Example
         area. </p></textarea >     
 <script>
 $("#rteSample").ejRTE();
-//execute event for RTE
+//Executes the event for RTE
 $("#rteSample").ejRTE({ 
         destroy: function(args) {}
 });   
@@ -4145,7 +4145,7 @@ $("#rteSample").ejRTE({
 
 
 
-Fires when commands are executed successfully.
+Fires when the commands are executed successfully.
 
 <table class="params">
 <thead>
@@ -4193,7 +4193,7 @@ Example
         area. </p></textarea >     
 <script>
 $("#rteSample").ejRTE();
-//execute event for RTE
+//Executes the event for RTE
 $("#rteSample").ejRTE({ 
         execute: function(args) {}
 });   
@@ -4208,7 +4208,7 @@ $("#rteSample").ejRTE({
 
 
 
-Fires when keydown action is successful.
+Fires when the keydown action is successful.
 
 <table class="params">
 <thead>
@@ -4271,7 +4271,7 @@ $("#rteSample").ejRTE({
 
 
 
-Fires when keyup action is successful.
+Fires when the keyup action is successful.
 
 <table class="params">
 <thead>
