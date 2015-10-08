@@ -25,6 +25,12 @@ Comments<br/><br/></td></tr>
 <tr>
 <td>
 Properties<br/><br/></td><td>
+displayDefaultDate<br/><br/></td><td>
+<br/><br/></td><td>
+We have removed this property.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
 fields: {  <br/>date: "date",    <br/>tooltip: "tooltip",     <br/>icon: "icon"     <br/>}      <br/><br/></td><td>
 fields: {<br/>date: "date",<br/>tooltip: "tooltip",<br/>iconClass: "icon"<br/>}<br/><br/></td><td>
 <br/><br/></td></tr>
@@ -160,6 +166,15 @@ We have removed this property.<br/><br/></td></tr>
 <tr>
 <td>
 <br/><br/></td><td>
+gridSettings: {<br/>
+          allowSearching: true <br/>
+}
+<br/><br/></td><td>
+<br/><br/></td><td>
+We have removed this property.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
 uploadBoxSettings: {       <br/>multipleFileSelection: true,<br/>fileSize: 31457280 <br/>}<br/><br/></td><td>
 uploadSettings: {<br/>allowMultipleFile:true,<br/>maxFileSize: 31457280<br/>}<br/><br/></td><td>
 <br/><br/></td></tr>
@@ -278,6 +293,12 @@ field.groupBy<br/><br/></td><td>
 Property “category” deprecated.<br/><br/></td></tr>
 <tr>
 <td>
+<br/><br/></td><td>
+enableIncrementalSearch<br/><br/></td><td>
+<br/><br/></td><td>
+Default value have changed to True.<br/><br/></td></tr>
+<tr>
+<td>
 Methods<br/><br/></td><td>
 setSelectedText<br/><br/></td><td>
 selectItemByText<br/><br/></td><td>
@@ -312,6 +333,18 @@ Deprecated the old method<br/><br/></td></tr>
 getValue<br/><br/></td><td>
 <br/><br/></td><td>
 Deprecated. We can get the selected value<br/>using value property.<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+enableItemByIndex<br/><br/></td><td>enableItemsByIndices
+<br/><br/></td><td>
+Renamed <br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+disableItemByIndex<br/><br/></td><td>disableItemsByIndices
+<br/><br/></td><td>
+Renamed <br/><br/></td></tr>
 <tr>
 <td>
 Event<br/><br/></td><td>
@@ -643,36 +676,6 @@ Type<br/><br/></td><td>
 Old<br/><br/></td><td>
 New <br/><br/></td><td>
 Comments<br/><br/></td></tr>
-<tr>
-<td>
-API<br/><br/></td><td>
-views: ["Day", "Week", "WorkWeek", "Month"]<br/><br/></td><td>
-views: ["Day", "Week", "WorkWeek", "Month", "Agenda"]<br/><br/></td><td>
-We have added new view type for Agenda view.<br/><br/></td></tr>
-<tr>
-<td>
-API<br/><br/></td><td>
-<br/><br/></td><td>
-agendaViewSettings: {<br/>daysInAgenda: 7,<br/>dateColumnTemplateId: null,<br/>timeColumnTemplateId: null,<br/>},<br/><br/></td><td>
-daysInAgenda -  In Agenda View by default <br/>display one week appointment summary, suppose <br/>customer want to display the more than one <br/>week(10,days, 2 week, etc.) so we can<br/>give the days count.<br/><br/>dateColumnTemplateId – To assign template <br/>design to the date column in the agenda view.<br/><br/>timeColumnTemplateId – To assign template<br/>design to the time column in the agenda view.<br/><br/></td></tr>
-<tr>
-<td>
-API<br/><br/></td><td>
-<br/><br/></td><td>
-firstDayOfWeek:null<br/><br/></td><td>
-To changing starting day of the week, <br/>workweek and month view given day.<br/>firstDayOfWeek : “Monday”<br/><br/></td></tr>
-<tr>
-<td>
-API<br/><br/></td><td>
-<br/><br/></td><td>
-workweek:[]<br/><br/></td><td>
-We are customize the workweek view days  <br/>workweek: [“Monday”,”Tuesday”,”Wednesday”,”Thursday”<br/>,”Friday”,”Saturday”]<br/><br/></td></tr>
-<tr>
-<td>
-API<br/><br/></td><td>
-<br/><br/></td><td>
-tooltipSettings:{<br/>enable: false,<br/>template: null <br/>},<br/><br/></td><td>
-For Tool tip feature. The tooltip allows to show<br/>appointment details. To enable and disable <br/>tooltip and customize the tooltip with help of template<br/><br/></td></tr>
 <tr>
 <td>
 API<br/><br/></td><td>
