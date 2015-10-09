@@ -504,7 +504,7 @@ Example
 
 
 
-Enable or disable the animation effect in DateTimePicker.
+Enables or disables the animation effect in DateTimePicker.
 
 
 
@@ -1555,7 +1555,7 @@ Example
 
 
 
-Sets the jQuery validation error message in datetimepicker.
+Sets the jQuery validation error message in DateTimePicker.
 
 
 
@@ -1612,7 +1612,7 @@ Example
 
 
 
-Sets the jQuery validation rules in datetimepicker.
+Sets the jQuery validation rules in DateTimePicker.
 
 
 
