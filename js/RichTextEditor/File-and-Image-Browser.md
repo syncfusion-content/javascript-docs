@@ -15,13 +15,13 @@ The **RTE** control normally allows you to insert the images based on the online
 
 ![](File-and-Image-Browser_images/File-and-Image-Browser_img1.png)
 
-But, now a feature is added, in that you can include an image by browsing a list of predefined files and directories. And also supports to showcase the dynamically uploaded images in the directory. 
+But, now a feature is added, where you can include an image by browsing a list of predefined files and directories. And it also supports to showcase the dynamically uploaded images in the directory. 
 
 ![](File-and-Image-Browser_images/File-and-Image-Browser_img2.png)
 
 To retrieve or upload the images in the image browser, it requires a server side implementation.
 
-Add the following code to initialize the **RTE** control in the page.
+Add the following code example to initialize the **RTE** control in the page.
 
 {% highlight html %}
 
@@ -66,7 +66,7 @@ This property allows to showcase the specified file types in the image browser. 
 
 ### ajaxAction
 
-This property specifies the settings for loading and saving data. This property includes the actions such as **Read, CreateFolder, Paste, Delete, Rename, GetDetails, Download** and **Upload**.
+This property specifies the settings for loading and saving data. This property includes actions such as, **Read, CreateFolder, Paste, Delete, Rename, GetDetails, Download** and **Upload**.
 
 The following screenshot displays the output.
 
@@ -74,11 +74,11 @@ The following screenshot displays the output.
 
 ## File Browser
 
-The **RTE** control provides the supports file browsing that is same as image browsing, instead of image the selected file path is displayed in the **RTE**.
+The **RTE** control provides support for file browsing that is same as image browsing, instead of image the selected file path is displayed in the **RTE**.
 
 ![](File-and-Image-Browser_images/File-and-Image-Browser_img4.png)
 
-Add the following code to initialize the **RTE** control in the page.
+Add the following code example to initialize the **RTE** control in the page.
 
 {% highlight html %}
 
@@ -119,7 +119,7 @@ Add the following code to initialize the **RTE** control in the page.
 
 ### filePath
 
-This filePath property used to define the initial folder to be displayed in the file browser, relative to the root. 
+This filePath property is used to define the initial folder to be displayed in the file browser, relative to the root. 
 
 ### extensionAllow
 
@@ -127,7 +127,7 @@ This property allows to showcase the specified file types in the file browser. O
 
 ### ajaxAction
 
-This property specifies the settings for loading and saving data. This property includes the actions such as **Read, CreateFolder, Paste, Delete, Rename, GetDetails, Download** and **Upload**.
+This property specifies the settings for loading and saving data. This property includes actions such as, **Read, CreateFolder, Paste, Delete, Rename, GetDetails, Download** and **Upload**.
 
 The following screenshot displays the output.
 
