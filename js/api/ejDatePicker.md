@@ -108,7 +108,7 @@ Requires
 
 
 
-if allowEdit is set to false means we cannot able to type in datePicker textbox, we can only able to pick the date from datpicker popup. When this API is set to true means we can edit the values and also pick the date from datpicker popup.
+When allowEdit is set to false, you cannot able to type in datePicker textbox and you can only pick the date from datpicker popup. When this API is set to true, you can edit the values and also pick the date from datpicker popup.
 
 
 
@@ -157,7 +157,7 @@ Example
 
 
 
-Determines whether customer can change the popup view to month/year/decade while clicking on the popup title.
+Determines whether you can change the popup view to month/year/decade while clicking on the popup title.
 
 
 
@@ -210,7 +210,7 @@ Example
 
 
 
-Set the text name for the today button in the datepicker calendar.
+Sets the text name for the today button in the datepicker calendar.
 
 
 
@@ -259,7 +259,7 @@ Example
 
 
 
-Set the root class for DatePicker theme. This cssClass API helps to use custom skinning option for DatePicker control.
+Sets the root class for DatePicker theme. This cssClass API allows to use custom skinning option for DatePicker control.
 
 
 
@@ -309,7 +309,7 @@ Example
 
 
 
-Specifies the format, which is used to format the value of the DatePicker displayed in the input. The format also will be used to parse the input.The default value of dateFormat based on the culture.
+Specifies the format that is used to format the value of the DatePicker displayed in the input. The format is also used to parse the input. The default value of dateFormat is based on the culture.
 
 
 
@@ -409,7 +409,7 @@ Example
 
 
 
-Specifies the navigation depth in DatePicker calendar.the option will not be applied if start option is lower than depth. Always set both and start and depth options. See <a href="global.html#Level">Level</a>
+Specifies the navigation depth in DatePicker calendar. This option is not applied when start option is lower than depth. Always set both and start and depth options. See <a href="global.html#Level">Level</a>
 
 
 
@@ -459,7 +459,7 @@ Example
 
 
 
-Allow to display default date value in input textbox.
+Allows to display the default date value in input textbox.
 
 
 
@@ -509,7 +509,7 @@ Example
 
 
 
-Allows to embed the DatePicker in the page. Also associate DatePicker with div element instead of input.
+Allows to embed the DatePicker in the page. Also associates DatePicker with div element instead of input.
 
 
 
@@ -559,7 +559,7 @@ Example
 
 
 
-Enable or disable the animation effect when opening the datepicker calendar in datepicker. Setting the enableAnimation option to false will disable the opening and closing animations. As a result the calendar popup will open and close instantly.
+Enables or disables the animation effect when opening the datepicker calendar in datepicker. Setting the enableAnimation option to false, disables the opening and closing animations. As a result, the calendar popup opens and closes instantly.
 
 
 
@@ -660,7 +660,7 @@ Example
 
 
 
-Specify the enablePersistence to editor to DatePicker current model value to browser cookies for state maintains.
+Specifies the enablePersistence to editor to DatePicker current model value to browser cookies for state maintains.
 
 
 
@@ -710,7 +710,7 @@ Example
 
 
 
-Display Right to Left direction of DatePicker calendar and input box.
+Displays Right to Left direction of DatePicker calendar and input box.
 
 
 
@@ -760,7 +760,7 @@ Example
 
 
 
-When enableStrictMode true it allows the value outside of the range also, otherwise it internally changed to the correct value.
+When enableStrictMode is true, it allows the value outside the range also, otherwise it internally changes to the correct value.
 
 
 
@@ -810,7 +810,7 @@ Example
 
 
 
-Specify the fields mapping for special Dates in datepicker.
+Specifies the fields mapping for special Dates in datepicker.
 
 
 
@@ -1028,7 +1028,7 @@ Example
 
 
 
-HighlightSection used to highlight current month, week, workdays. See <a href="global.html#HighlightSection">HighlightSection</a>
+HighlightSection is used to highlight current month, week, workdays. See <a href="global.html#HighlightSection">HighlightSection</a>
 
 
 
@@ -1078,7 +1078,7 @@ Example
 
 
 
-Week end will be highlighted , when this property is set to true.
+Weekend is highlighted when this property is set to true.
 
 
 
@@ -1228,7 +1228,7 @@ Example
 
 
 
-Specifies the maximum date, which the calendar can show.
+Specifies the maximum date, the calendar can display.
 
 
 
@@ -1278,7 +1278,7 @@ Example
 
 
 
-Specifies the minimum date that the calendar can show.
+Specifies the minimum date, the calendar can display.
 
 
 
@@ -1328,7 +1328,7 @@ Example
 
 
 
-Toggles the readonly state of the widget. When the widget is readonly it doesn't allow user input.
+Toggles the readonly state of the widget. When the widget is readonly, it doesn't allow your input.
 
 
 
@@ -1378,7 +1378,7 @@ Example
 
 
 
-It allows to show footer in DatePicker calendar to select today date.
+It allows to display footer in DatePicker calendar to select today date.
 
 
 
@@ -1428,7 +1428,7 @@ Example
 
 
 
-It allows to show days in other months of DatePicker calendar.
+It allows to display days in other months of DatePicker calendar.
 
 
 
@@ -1478,7 +1478,7 @@ Example
 
 
 
-Show/Hide the date icon button at right side of textbox that used to shows DatePicker calendar.While clicking on DateIcon it shows the Datepicker calendar.
+Shows/Hides the date icon button at right side of textbox that is used to display the DatePicker calendar. While clicking on DateIcon it displays the Datepicker calendar.
 
 
 
@@ -1528,7 +1528,7 @@ Example
 
 
 
-DatePicker input will be displayed in rounded corner style, when this property is set to true.
+DatePicker input is displayed in rounded corner style when this property is set to true.
 
 
 
@@ -1578,7 +1578,7 @@ Example
 
 
 
-Specifies the property value as true then tooltip will be displayed when hover the days in the datepicker calendar.
+Specifies the property value as true. It displays the tooltip when hovering on the days in the datepicker calendar.
 
 
 
@@ -1628,7 +1628,7 @@ Example
 
 
 
-Specify the special dates in datepicker
+Specifies the special dates in DatePicker.
 
 
 
@@ -1827,7 +1827,7 @@ Example
 
 
 
-Set the formatting to the tooltip.
+Sets formatting to the tooltip.
 
 
 
@@ -1879,7 +1879,7 @@ Example
 
 
 
-Set the jquery validation error message in datepicker.The property will work when the widget present inside the form .Additionally need to include jquery.validate.min.js plugin.
+Sets the jQuery validation error message in datepicker. This property works when the widget is present inside the form. Include jquery.validate.min.js plugin additionally.
 
 
 
@@ -1936,7 +1936,7 @@ Example
 
 
 
-Set the jquery validation rules to the datepicker.The property will work when the widget present inside the form .Additionally need to include jquery.validate.min.js plugin.
+Sets the jQuery validation rules to the datepicker. This property works when the widget is present inside the form. Include jquery.validate.min.js plugin additionally.
 
 
 
@@ -2147,7 +2147,7 @@ Example
 
 
 
-Disables the datepicker control
+Disables the DatePicker control.
 
 
 
@@ -2193,7 +2193,7 @@ $("#datepicker").ejDatePicker("disable");
 
 
 
-Enables the datepicker control
+Enables the DatePicker control.
 
 
 
@@ -2239,7 +2239,7 @@ $("#datepicker").ejDatePicker("enable");
 
 
 
-Returns the current date value in the datepicker control
+Returns the current date value in the DatePicker control.
 
 
 
@@ -2291,7 +2291,7 @@ $("#datepicker").ejDatePicker("getValue");
 
 
 
-Hides the datepicker popup, if in opended state.
+Hides the DatePicker popup, when in opened state.
 
 
 
@@ -2337,7 +2337,7 @@ $("#datepicker").ejDatePicker("hide");
 
 
 
-Opens the datepicker popup
+Opens the DatePicker popup.
 
 
 
@@ -2391,7 +2391,7 @@ $("#datepicker").ejDatePicker("show");
 
 
 
-Fires before closing the datepicker popup.
+Fires before closing the DatePicker popup.
 
 <table class="params">
 <thead>
@@ -2406,31 +2406,31 @@ Fires before closing the datepicker popup.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model</td>
+<td class="description last">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.events{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the event parameters from datepicker</td>
+<td class="description last">returns the event parameters from datepicker.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker popup</td>
+<td class="description last">returns the datepicker popup.</td>
 </tr>
 </tbody>
 </table>
@@ -2485,31 +2485,31 @@ Fires when each date is created in the DatePicker popup.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model</td>
+<td class="description last">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.date{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current created date object</td>
+<td class="description last">returns the current created date object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current DOM object of the date from the Calendar</td>
+<td class="description last">returns the current DOM object of the date from the Calendar.</td>
 </tr>
 </tbody>
 </table>
@@ -2544,7 +2544,7 @@ $("#datepicker").ejDatePicker({
 
 
 
-Fires before opening the datepicker popup.
+Fires before opening the DatePicker popup.
 
 <table class="params">
 <thead>
@@ -2559,31 +2559,31 @@ Fires before opening the datepicker popup.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model</td>
+<td class="description last">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.events{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the event parameters from datepicker</td>
+<td class="description last">returns the event parameters from datepicker.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker popup</td>
+<td class="description last">returns the datepicker popup.</td>
 </tr>
 </tbody>
 </table>
@@ -2624,7 +2624,7 @@ $("#datepicker").ejDatePicker({
 
 
 
-Fires when the datepicker input value is changed.
+Fires when the DatePicker input value is changed.
 
 <table class="params">
 <thead>
@@ -2639,31 +2639,31 @@ Fires when the datepicker input value is changed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model</td>
+<td class="description last">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the datepicker input value</td>
+<td class="description last">returns the datepicker input value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected value</td>
+<td class="description last">returns the previously selected value.</td>
 </tr>
 </tbody>
 </table>
@@ -2701,7 +2701,7 @@ $("#datepicker").ejDatePicker({
 
 
 
-Fires when DatePicker popup closed.
+Fires when DatePicker popup is closed.
 
 <table class="params">
 <thead>
@@ -2716,31 +2716,31 @@ Fires when DatePicker popup closed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model</td>
+<td class="description last">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current date value</td>
+<td class="description last">returns the current date value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected value</td>
+<td class="description last">returns the previously selected value.</td>
 </tr>
 </tbody>
 </table>
@@ -2778,7 +2778,7 @@ $("#datepicker").ejDatePicker({
 
 
 
-Fires when create DatePicker successfully.
+Fires when the DatePicker is created successfully.
 
 <table class="params">
 <thead>
@@ -2793,19 +2793,19 @@ Fires when create DatePicker successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DatePicker model</td>
+<td class="description last">returns the DatePicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2858,19 +2858,19 @@ Fires when the DatePicker is destroyed successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DatePicker model</td>
+<td class="description last">returns the DatePicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2908,7 +2908,7 @@ $("#datepicker").ejDatePicker({
 
 
 
-Fires when datePicker input gets focus.
+Fires when DatePicker input gets focus.
 
 <table class="params">
 <thead>
@@ -2923,19 +2923,19 @@ Fires when datePicker input gets focus.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model</td>
+<td class="description last">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2973,7 +2973,7 @@ $("#datepicker").ejDatePicker({
 
 
 
-Fires when datePicker input losses the focus.
+Fires when DatePicker input looses the focus.
 
 <table class="params">
 <thead>
@@ -2988,19 +2988,19 @@ Fires when datePicker input losses the focus.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model</td>
+<td class="description last">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -3038,7 +3038,7 @@ $("#datepicker").ejDatePicker({
 
 
 
-Fires when DatePicker popup opened.
+Fires when DatePicker popup is opened.
 
 <table class="params">
 <thead>
@@ -3053,31 +3053,31 @@ Fires when DatePicker popup opened.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model</td>
+<td class="description last">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the eventclose"</td>
+<td class="description last">returns the name of the eventclose.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current date value</td>
+<td class="description last">returns the current date value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected value</td>
+<td class="description last">returns the previously selected value.</td>
 </tr>
 </tbody>
 </table>
@@ -3115,7 +3115,7 @@ $("#datepicker").ejDatePicker({
 
 
 
-Fires when a date is selected from the datepicker popup.
+Fires when a date is selected from the DatePicker popup.
 
 <table class="params">
 <thead>
@@ -3130,31 +3130,31 @@ Fires when a date is selected from the datepicker popup.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the datepicker model</td>
+<td class="description last">returns the datepicker model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current date value</td>
+<td class="description last">returns the current date value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDate{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected value</td>
+<td class="description last">returns the previously selected value.</td>
 </tr>
 </tbody>
 </table>
