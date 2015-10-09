@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains briefly about how to create a **DatePicker** in your application with **JavaScript**.
 
-The **Essential JavaScript DatePicker** provides support to display a calendar within your web page and allows you to pick a date from the calendar. In this example, you can learn how to customize two **DatePickers** in a real-time ticket booking application. The example shows you how to use the **DatePicker** control to book a ticket within a limited number of days. 
+The **Essential JavaScript DatePicker** provides support to display a calendar within your web page and allows you to pick a date from the calendar. In this example, you can learn how to customize two **DatePickers** in a real-time ticket booking application. The example illustrates how to use the **DatePicker** control to book a ticket within a limited number of days. 
 
 The following screenshot illustrates the functionality of a **DatePicker** with date range of maximum 60 days. You can select a date for Onward and Return journeys ranging for a period of 60 days from the current day. This avoids selecting a journey date prior to the current date.
 
@@ -94,7 +94,7 @@ Initialize **DatePicker** in script.
 
 
 
-Apply the following styles to show the **Date Picker** control in the **Horizontal** order.
+Apply the following styles to display the **Date Picker** control in the **Horizontal** order.
 
 
 
@@ -122,7 +122,7 @@ The following screenshot displays a **DatePicker** control.
 
 ## Set the Min and Max Date
 
-In a real time ticket booking scenario, the booking is open only for a limited number of days. You have to select a date from the given range. This can be achieved by using the properties **minDate** and **maxDate**. In this way, only those dates ranging between the **minDate** and **maxDate** are enabled in the **DatePicker**.
+In a real time ticket booking scenario, the booking is open only for a limited number of days. You have to select a date from the given range. This can be achieved by using the **minDate** and **maxDate** properties. In this way, only those dates ranging between the **minDate** and **maxDate** are enabled in the **DatePicker**.
 
 
 
@@ -150,7 +150,7 @@ In a real time ticket booking scenario, the booking is open only for a limited n
 
 
 
-The following screenshot shows the output of the above code example.
+The following screenshot displays the output of the above code example.
 
 
 
@@ -208,7 +208,7 @@ You can select the “Onward journey date” in the first **DatePicker** and the
 
 
 
-You can execute the above code and achieve the desired result. By selecting the onward journey date in the first **DatePicker**, you can select the Return Journey date within the given range. This restricts you from selecting the false date. This scenario is illustrated in the following screen shot.
+You can execute the above code and achieve the desired result. By selecting the onward journey date in the first **DatePicker**, you can select the Return Journey date within the given range. This restricts you from selecting the false date. This scenario is illustrated in the following screenshot.
 
 
 
