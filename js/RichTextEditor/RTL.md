@@ -29,25 +29,27 @@ Add the following code to the script section in your **HTML** page to initialize
             width: "850px",
             enableRTL: true,
             tools: {
-                font: ["fontSize", "fontColor", "backgroundColor"],
-                style: ["bold", "italic", "underline", "strikethrough"],
-                alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
-                lists: ["unorderedList", "orderedList"],
-                copyPaste: ["cut", "copy", "paste"],
-                doAction: ["undo", "redo"],
-                clear: ["clearFormat", "clearAll"],
-                links: ["createLink"],
-                images: ["image", "video"],
-                tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"],
-                scripts: ["superscript", "subscript"],
-                casing: ["upperCase", "lowerCase"],
-                paragraph: ["paragraph"]
-            }
+					formatStyle: ["format"],
+                    font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
+                    style: ["bold", "italic", "underline", "strikethrough"],
+                    alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
+                    lists: ["unorderedList", "orderedList"],
+                    clipboard: ["cut", "copy", "paste"],
+                    doAction: ["undo", "redo"],
+					indenting: ["outdent", "indent"],
+                    clear: ["clearFormat", "clearAll"],
+                    links: ["createLink","removeLink"],
+                    images: ["image"],
+					media:["video"],
+                    tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"],
+                    effects: ["superscript", "subscript"],
+                    casing: ["upperCase", "lowerCase"],
+					view:["fullScreen"]
+                }
         });
     });
 
 {% endhighlight %}
 
 
-{% include image.html url="/js/RichTextEditor/RTL_images/RTL_img1.png" %}
-
+![](RTL_images/RTL_img1.png)

@@ -61,10 +61,11 @@ Add the following code in your **HTML** page to render **RTE** with new tool ite
     //Add the following code in your script section to render RTE and set the action of the new tool item.
     $(function() {
        $("#rteSample").ejRTE({
-          toolsList: ["customTool"],
+          toolsList: ["customTools"],
           tools: {
-             customTool: [{
+             customTools: [{
                 name: "codeInsert",
+                text: "codeInsert",
                 tooltip: "Insert code snippets ",
                 css: "codeInsert",
                 action: function() {
@@ -106,7 +107,7 @@ Add the following code in your **HTML** page to render **RTE** with new tool ite
 
 The following screenshot demonstrates the functionality of new tool item.
 
-{% include image.html url="/js/RichTextEditor/Customized-tools-option_images/Customized-tools-option_img1.png" %}
+![](Customized-tools-option_images/Customized-tools-option_img1.png)
 
 ## Remove the tool item
 
@@ -130,9 +131,9 @@ Add the following code in your **HTML** page.
     $(function() {
        $("#rteSample").ejRTE();
        var rteeObj = $("#rteSample").data("ejRTE");
-       rteeObj.removeToolbarItem("rteSamplecreateTable"); // remove toolbar item
+       rteeObj.removeToolbarItem("createTable"); // remove toolbar item
     });
 {% endhighlight %}
 
-{% include image.html url="/js/RichTextEditor/Customized-tools-option_images/Customized-tools-option_img2.png" %}
+![](Customized-tools-option_images/Customized-tools-option_img2.png)
 

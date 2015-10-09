@@ -32,6 +32,7 @@ All the formatting tools allow you to change the appearance of text. Formatted 
 * Predefined sets of formatting features that can be applied to block and to make elements of the document inline.
 * Upper & lower case conversion
 * Indent
+* Fullscreen
 
 
 
@@ -65,28 +66,30 @@ Add the following code in your script section.
           width: "850px",
           showFooter: true,
           tools: {
-             font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
-             style: ["bold", "italic", "underline", "strikethrough"],
-             alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
-             lists: ["unorderedList", "orderedList"],
-             copyPaste: ["cut", "copy", "paste"],
-             doAction: ["undo", "redo"],
-             clear: ["clearFormat", "clearAll"],
-             links: ["createLink"],
-             images: ["image", "video"],
-             tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"],
-             scripts: ["superscript", "subscript"],
-             casing: ["upperCase", "lowerCase"],
-             paragraph: ["paragraph"]
-          }
+					formatStyle: ["format"],
+                    font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
+                    style: ["bold", "italic", "underline", "strikethrough"],
+                    alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
+                    lists: ["unorderedList", "orderedList"],
+                    clipboard: ["cut", "copy", "paste"],
+                    doAction: ["undo", "redo"],
+					indenting: ["outdent", "indent"],
+                    clear: ["clearFormat", "clearAll"],
+                    links: ["createLink","removeLink"],
+                    images: ["image"],
+					media:["video"],
+                    tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"],
+                    effects: ["superscript", "subscript"],
+                    casing: ["upperCase", "lowerCase"],
+					view:["fullScreen"]
+                }
        });
     });
 
 {% endhighlight %}
 
-{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img1.png"%}
+![](Toolbar-Support_images/Toolbar-Support_img1.png)
 
 The following image consists of formatted content by using the available toolbar items in **RTE** control.
 
-{% include image.html url="/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img2.png"%}
-
+![](Toolbar-Support_images/Toolbar-Support_img2.png)

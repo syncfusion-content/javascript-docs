@@ -13,11 +13,11 @@ documentation: ug
 
 The **RTE** control normally allows you to insert the images based on the online URL only, optionally specifies the tooltip support. 
 
-{% include image.html url="/js/RichTextEditor/File-and-Image-Browser_images/File-and-Image-Browser_img1.png" %}
+![](File-and-Image-Browser_images/File-and-Image-Browser_img1.png)
 
 But, now a feature is added, in that you can include an image by browsing a list of predefined files and directories. And also supports to showcase the dynamically uploaded images in the directory. 
 
-{% include image.html url="/js/RichTextEditor/File-and-Image-Browser_images/File-and-Image-Browser_img2.png" %}
+![](File-and-Image-Browser_images/File-and-Image-Browser_img2.png)
 
 To retrieve or upload the images in the image browser, it requires a server side implementation.
 
@@ -70,13 +70,13 @@ This property specifies the settings for loading and saving data. This property 
 
 The following screenshot displays the output.
 
-{% include image.html url="/js/RichTextEditor/File-and-Image-Browser_images/File-and-Image-Browser_img3.png" %}
+![](File-and-Image-Browser_images/File-and-Image-Browser_img3.png)
 
 ## File Browser
 
 The **RTE** control provides the supports file browsing that is same as image browsing, instead of image the selected file path is displayed in the **RTE**.
 
-{% include image.html url="/js/RichTextEditor/File-and-Image-Browser_images/File-and-Image-Browser_img4.png" %}
+![](File-and-Image-Browser_images/File-and-Image-Browser_img4.png)
 
 Add the following code to initialize the **RTE** control in the page.
 
@@ -131,5 +131,5 @@ This property specifies the settings for loading and saving data. This property 
 
 The following screenshot displays the output.
 
-{% include image.html url="/js/RichTextEditor/File-and-Image-Browser_images/File-and-Image-Browser_img5.png" %}
+![](File-and-Image-Browser_images/File-and-Image-Browser_img5.png)
 

@@ -47,8 +47,8 @@ Add the following code in your **HTML** page to initialize the **RTE** control.
 
 {% endhighlight %}
 
+![](Integration_images/Integration_img1.png)
 
-{% include image.html url="/js/RichTextEditor/Integration_images/Integration_img1.png" %}
 
 ## Knockout Binding
 
@@ -91,5 +91,5 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 {% endhighlight %}
 
 
-{% include image.html url="/js/RichTextEditor/Integration_images/Integration_img2.png" %}
+![](Integration_images/Integration_img2.png)
 

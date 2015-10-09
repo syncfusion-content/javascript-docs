@@ -54,7 +54,7 @@ Add the following code in your **HTML** page to initialize the **RTE** with grad
  
 {% endhighlight %}
 
-{% include image.html url="/js/RichTextEditor/Look-and-Feel_images/Look-and-Feel_img1.png" %}
+![](Look-and-Feel_images/Look-and-Feel_img1.png)
 
 ## Css Class
 
@@ -107,6 +107,4 @@ Add the following styles in your styles section.
 {% endhighlight %}
 
 
-
-{% include image.html url="/js/RichTextEditor/Look-and-Feel_images/Look-and-Feel_img2.png" %}
-
+![](Look-and-Feel_images/Look-and-Feel_img2.png)

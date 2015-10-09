@@ -13,7 +13,7 @@ The **Essential JavaScript RichTextEditor (RTE)** control enables you to visuall
 
 ## Control structure
 
-{% include image.html url="/js/RichTextEditor/Overview_images/Overview_img1.png" %}
+![](Overview_images/Overview_img1.png)
 
 ## Key Feature
 
@@ -28,11 +28,12 @@ The **Essential JavaScript RichTextEditor (RTE)** control enables you to visuall
 * Upper & lower case conversion
 * Indent
 * Font options
-* Hyperlink options
+* Hyperlink -insert/remove options
 * Table - insert, delete row, column and table.
 * Images insert form web URL.
 * Embed Video insert.
 * Format option.
+* Fullscreen mode option 
 * **Source code view:** Options to get the HTML elements with styles.
 * **Tool item template:** Toolbar item template support.
 * **Image insert:** Support to insert image from a defined path.

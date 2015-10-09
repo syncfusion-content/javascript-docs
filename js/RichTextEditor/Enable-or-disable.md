@@ -28,12 +28,11 @@ Add the following code in your **HTML** page.
     $(function () {
         $("#disable_tool").ejRTE();
         rteobj = $("#disable_tool").data("ejRTE");
-        rteobj.disableToolbarItem("disable_toolimage");
+        rteobj.disableToolbarItem("image");
     });
 
 
 {% endhighlight %}
 
-
-{% include image.html url="/js/RichTextEditor/Enable-or-disable_images/Enable-or-disable_img1.png" %}
+![](Enable-or-disable_images/Enable-or-disable_img1.png)
 

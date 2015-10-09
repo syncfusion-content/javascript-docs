@@ -11,7 +11,7 @@ documentation: ug
 
 This section briefly describes how to create and use **RichTextEditor** control using **Javascript** in your application. The **Essential JavaScript RichTextEditor (RTE)** control allows easily to edit contents, insert tables, images and to get the **HTML** content. In this section, you can learn how to use **RichTextEditor** for getting Feedback from the user. The following screenshot demonstrates how the **RTE** control is used in Feedback form.
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img1.png"%}
+![](Getting-Started_images/Getting-Started_img1.png)
 
 In the above screenshot , the **RTE** consists of content editable area with feedback title when you click the Post Feedback toolbar item to send the feedback information.
 
@@ -67,7 +67,7 @@ Initialize **RTE** in script.
 
 The following **RTE** screenshot is the output of above steps.
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img2.png"%}
+![](Getting-Started_images/Getting-Started_img2.png)
 
 ## Configure the Toolbar
 
@@ -83,7 +83,7 @@ The following code example is used to render the additional in-built toolbar ite
 
     $(function() {
        $("#feedBackEditor").ejRTE({
-          width: "100%",
+          width: "100%",          
           tools: {
              //specify the font type, size, color and background color option for text
              font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
@@ -95,7 +95,7 @@ The following code example is used to render the additional in-built toolbar ite
 
 The following screenshot is the output of above steps:
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img3.png"%}
+![](Getting-Started_images/Getting-Started_img3.png)
 
 ### Removing the ToolbarItem
 
@@ -111,14 +111,14 @@ Consider that the **“create table”** toolbar item is not necessary for the f
         //create the editor object for removing the toolbar item
         editorObj = $("#feedBackEditor").data('ejRTE');
         //remove the create table toolbar item by specifying the create table toolbar id
-        editorObj.removeToolbarItem("feedBackEditorcreateTable");
+        editorObj.removeToolbarItem("createTable");
     });
 
 {% endhighlight %}
 
 The following screenshot is the output of above steps:
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img4.png"%}
+![](Getting-Started_images/Getting-Started_img4.png)
 
 ## Configure Custom Toolbar item
 
@@ -129,8 +129,9 @@ To post the feedback directly you need additional toolbar item. The **RTE** cont
     $(function() {
        $("#feedBackEditor").ejRTE({
           tools: {
-             customTool: [{
+             customTools: [{
                 name: "PostFeedBack", //Id for the newly added tool
+                text:"PostFeedBack", //text for the newly added tool
                 tooltip: "Submit the feedback", // Shows the tooltip for custom tool
                 css: "FeedBack",
                 action: function() {
@@ -138,15 +139,14 @@ To post the feedback directly you need additional toolbar item. The **RTE** cont
                 }
              }]
           }
-       });
-       $("div.FeedBack").html("Post Feedback");
+       });      
     });
 
 {% endhighlight %}
 
 The following screenshot is the output of above steps:
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img5.png"%}
+![](Getting-Started_images/Getting-Started_img5.png)
 
 ## Validate the Content
 
@@ -179,8 +179,9 @@ You can specify the custom tool as previous script section with validation opera
        $("#feedBackEditor").ejRTE({
           width: "98%",
           tools: {
-             customTool: [{
+             customTools: [{
                 name: "PostFeedBack", //Id for the newly added tool
+                text:"PostFeedBack", //text for the newly added tool
                 tooltip: "submit the feedback", // Shows the tooltip for the custom tool
                 css: "FeedBack", // Css class for custom tool design purpose
                 action: function() {
@@ -217,7 +218,7 @@ The following styles are used to achieve the feedback form editor application.
         text-indent: 20px;
         float: left;
         padding: 20px 0px;
-        width: 98%;
+        width: 97%;
         border: 1px solid #bbbcbb;
     }
     .output {
@@ -241,5 +242,5 @@ The following styles are used to achieve the feedback form editor application.
 
 The output of the above steps is to send the feedback without content.
 
-{% include image.html url="/js/RichTextEditor/Getting-Started_images/Getting-Started_img6.png" %}
+![](Getting-Started_images/Getting-Started_img6.png)
 
