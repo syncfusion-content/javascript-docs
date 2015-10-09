@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html File Explorer control.
+# Custom Design for HTML FileExplorer control.
 
 
 
@@ -56,7 +56,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Create File Explorer
+// Create FileExplorer
 $('#fileExplorer').ejFileExplorer({ 
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
@@ -168,7 +168,7 @@ Requires
 
 
 
-Sets the Url of server side ajax handling method that handles file operation like Read, Remove, Rename, Create, Upload, Download, Copy and Move in File Explorer.
+Sets the URL of server side ajax handling method that handles file operation like Read, Remove, Rename, Create, Upload, Download, Copy and Move in File Explorer.
 
 
 
@@ -199,7 +199,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with ajaxAction value specified.
+// Initialize the FileExplorer with ajaxAction value specified.
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"
@@ -227,7 +227,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with ajaxDataType value specified.
+// Initialize the FileExplorer with ajaxDataType value specified.
 $('#fileExplorer').ejFileExplorer({
 ajaxDataType: "jsonp",            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -278,7 +278,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with ajaxSettings value specified.
+// Initialize the FileExplorer with ajaxSettings value specified.
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -296,7 +296,7 @@ ajaxSettings: {
 ### allowMultiSelection<span class="type-signature type boolean">boolean</span>
 {:#members:allowmultiselection}
 
-The file explorer allows to select multiple files by enabling the allowMultiSelection property. You can perform multi selection by pressing the Ctrl key or Shift key. 
+The FileExplorer allows to select multiple files by enabling the allowMultiSelection property. You can perform multi selection by pressing the Ctrl key or Shift key. 
 
 Default Value:
 {:.param}
@@ -312,7 +312,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with allowMultiSelection value specified.
+// Initialize the FileExplorer with allowMultiSelection value specified.
 $('#fileExplorer').ejFileExplorer({
 allowMultiSelection: false,            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -332,7 +332,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Sets the root class for File Explorer theme. This cssClass API allows to use custom skinning option for File Explorer control. By defining the root class by using this API, you have to include this root class in CSS.
+Sets the root class for FileExplorer theme. This cssClass API allows to use custom skinning option for File Explorer control. By defining the root class by using this API, you have to include this root class in CSS.
 
 
 
@@ -363,7 +363,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with cssClass value specified.
+// Initialize the FileExplorer with cssClass value specified.
 $('#fileExplorer').ejFileExplorer({ 
 cssClass: 'gradient-lime',
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -387,7 +387,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Enables/Disables the resize support in File Explorer control.
+Enables or disables the resize support in FileExplorer control.
 
 
 
@@ -418,7 +418,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with enableResize value specified.
+// Initialize the FileExplorer with enableResize value specified.
 $('#fileExplorer').ejFileExplorer({ 
 enableResize: true,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -442,7 +442,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Enables/Disables the Right to Left alignment support in File Explorer control.
+Enables or disables the Right to Left alignment support in FileExplorer control.
 
 
 
@@ -473,7 +473,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with enableRTL value specified.
+// Initialize the FileExplorer with enableRTL value specified.
 $('#fileExplorer').ejFileExplorer({ 
 enableRTL: true,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -497,7 +497,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Allows specified type of files only to display in File Explorer control.
+Allows specified type of files only to display in FileExplorer control.
 
 
 
@@ -528,7 +528,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Specifies the file types that one needs to allow in File Explorer control
+// Specifies the file types that one needs to allow in FileExplorer control
 $('#fileExplorer').ejFileExplorer({ 
 fileTypes: "*.png,*.gif,*.jpg,*.jpeg,*.docx",
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -552,7 +552,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-By using filterSettings property, you can customize the search functionality of the searchbar in File Explorer control.
+By using filterSettings property, you can customize the search functionality of the searchbar in FileExplorer control.
 
 
 
@@ -574,7 +574,7 @@ By using filterSettings property, you can customize the search functionality of 
 
 
 
-Enables/Disables to perform the filter operation with case sensitive.
+Enables or disables to perform the filter operation with case sensitive.
 
 
 
@@ -688,7 +688,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-By using the gridSettings property, you can customize the grid behavior in the File Explorer control.
+By using the gridSettings property, you can customize the grid behavior in the FileExplorer control.
 
 
 
@@ -741,7 +741,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// Initialize the File explorer with the allowSorting value specified for grid.
+// Initialize the FileExplorer with the allowSorting value specified for grid.
 $('#fileExplorer').ejFileExplorer({ 
 gridSettings:{allowSorting:false},
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -796,7 +796,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with the columns value specified for grid.
+// Initialize the FileExplorer with the columns value specified for grid.
 $('#fileExplorer').ejFileExplorer({ 
 gridSettings:{columns:[{ field: "name", headerText: "Name", width: 90 }, { field: "type", headerText: "Type", width: 95 }, { field: "size", headerText: "Size", width: 90 }]},
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -820,7 +820,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Specifies the height of File Explorer control.
+Specifies the height of FileExplorer control.
 
 
 
@@ -851,7 +851,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with the height value specified.
+// Initialize the FileExplorer with the height value specified.
 $('#fileExplorer').ejFileExplorer({   
 height: 450,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -875,7 +875,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Enables/Disables the responsive support for FileExplorer control during the window resizing time.
+Enables or disables the responsive support for FileExplorer control during the window resizing time.
 
 
 
@@ -906,7 +906,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with isResponsive value specified.
+// Initialize the FileExplorer with isResponsive value specified.
 $('#fileExplorer').ejFileExplorer({
 isResponsive: true,
 width: "70%",
@@ -963,7 +963,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with the layout value specified.
+// Initialize the FileExplorer with the layout value specified.
 $('#fileExplorer').ejFileExplorer({ 
 layout: "tile",
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1018,7 +1018,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with the culture value specified.
+// Initialize the FileExplorer with the culture value specified.
 $('#fileExplorer').ejFileExplorer({ 
 locale: "en-US",
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1031,7 +1031,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 ### maxHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 {:#members:maxheight}
 
-Sets the maximum height of File Explorer control. 
+Sets the maximum height of FileExplorer control. 
 
 Default Value:
 {:.param}
@@ -1047,7 +1047,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with maxHeight value specified.
+// Initialize the FileExplorer with maxHeight value specified.
 $('#fileExplorer').ejFileExplorer({
 maxHeight: 500,            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1059,7 +1059,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 ### maxWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 {:#members:maxwidth}
 
-Sets the maximum width of File Explorer control. 
+Sets the maximum width of FileExplorer control. 
 
 Default Value:
 {:.param}
@@ -1075,7 +1075,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with maxWidth value specified.
+// Initialize the FileExplorer with maxWidth value specified.
 $('#fileExplorer').ejFileExplorer({
 maxWidth: 1000,            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1087,7 +1087,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 ### minHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 {:#members:minheight}
 
-Sets the minimum height of File Explorer control. 
+Sets the minimum height of FileExplorer control. 
 
 Default Value:
 {:.param}
@@ -1103,7 +1103,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with minHeight value specified.
+// Initialize the FileExplorer with minHeight value specified.
 $('#fileExplorer').ejFileExplorer({
 minHeight: 300,            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1115,7 +1115,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 ### minWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 {:#members:minwidth}
 
-Sets the minimum width of File Explorer control. 
+Sets the minimum width of FileExplorer control. 
 
 Default Value:
 {:.param}
@@ -1131,7 +1131,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with minWidth value specified.
+// Initialize the FileExplorer with minWidth value specified.
 $('#fileExplorer').ejFileExplorer({
 minWidth: 300,            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1182,7 +1182,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Specifies the root folder path, which is need to specified in file explorer control
+// Specifies the root folder path that has to be specified in FileExplorer control
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                                 
@@ -1194,7 +1194,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 ### selectedFolder<span class="type-signature type string">String</span>
 {:#members:selectedfolder}
 
-The selectedFolder is used to select the specified folder of File Explorer control. 
+The selectedFolder is used to select the specified folder of FileExplorer control. 
 
 Default Value:
 {:.param}
@@ -1210,7 +1210,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with selectedFolder value specified.
+// Initialize the FileExplorer with selectedFolder value specified.
 $('#fileExplorer').ejFileExplorer({
 selectedFolder: "http://mvc.syncfusion.com/ODataServices/FileBrowser/Food",            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1223,7 +1223,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 ### selectedItems<span class="type-signature type string">String</span><span class="type-signature type array">Array</span>
 {:#members:selecteditems}
 
-The selectedItems is used to select the specified items (file, folder) of File Explorer control. 
+The selectedItems is used to select the specified items (file, folder) of FileExplorer control. 
 
 Default Value:
 {:.param}
@@ -1239,7 +1239,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with selectedItems value specified.
+// Initialize the FileExplorer with selectedItems value specified.
 $('#fileExplorer').ejFileExplorer({
 selectedItems: ["Food", "Nature"],            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1259,7 +1259,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Enables/Disable the context menu option in File Explorer control.
+Enables or disables the context menu option in FileExplorer control.
 
 
 
@@ -1290,7 +1290,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with the showContextMenu value specified.
+// Initialize the FileExplorer with the showContextMenu value specified.
 $('#fileExplorer').ejFileExplorer({ 
 showContextMenu: false,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1314,7 +1314,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Enables/Disables the footer in File Explorer control. The footer element displays the details of the current selected files and folders. And also the footer having the switcher to change the layout view.
+Enables or disables the footer in FileExplorer control. The footer element displays the details of the current selected files and folders. And also the footer having the switcher to change the layout view.
 
 
 
@@ -1345,7 +1345,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with the showFooter value specified.
+// Initialize the FileExplorer with the showFooter value specified.
 $('#fileExplorer').ejFileExplorer({ 
 showFooter: false,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1371,7 +1371,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Shows/Disables the toolbar in File Explorer control.
+Shows or disables the toolbar in FileExplorer control.
 
 
 
@@ -1402,7 +1402,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// Initialize the File explorer with the showToolbar value specified.
+// Initialize the FileExplorer with the showToolbar value specified.
 $('#fileExplorer').ejFileExplorer({ 
 showToolbar: false,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1426,7 +1426,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Enables/Disables the navigation pane in File Explorer control. The navigation pane contains a tree view element that displays all the folders from the filesystem in a hierarchical manner. This is useful to a quick navigation of any folder in the filesystem.
+Enables or disables the navigation pane in FileExplorer control. The navigation pane contains a tree view element that displays all the folders from the filesystem in a hierarchical manner. This is useful to a quick navigation of any folder in the filesystem.
 
 
 
@@ -1457,7 +1457,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// Initialize the File Explorer with the showNavigationPane value specified.
+// Initialize the FileExplorer with the showNavigationPane value specified.
 $('#fileExplorer').ejFileExplorer({ 
 showNavigationPane: false,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1481,7 +1481,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-The tools property is used to configure and group required toolbar items in File Explorer control.
+The tools property is used to configure and group required toolbar items in FileExplorer control.
 
 
 
@@ -1512,7 +1512,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// Initialize the File Explorer with toolbar tools value specified.
+// Initialize the FileExplorer with toolbar tools value specified.
 $('#fileExplorer').ejFileExplorer({ 
 tools: {
   creation:["NewFolder", "Open"],
@@ -1544,7 +1544,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-The toolsList property is used to arrange the toolbar items in the File Explorer control.
+The toolsList property is used to arrange the toolbar items in the FileExplorer control.
 
 
 
@@ -1575,7 +1575,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with toolsList value specified.
+// Initialize the FileExplorer with toolsList value specified.
 $('#fileExplorer').ejFileExplorer({ 
 toolsList: ["navigation", "creation", "addressBar", "editing", "copyPaste", "getProperties", "searchBar"],
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1599,7 +1599,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Gets or sets an object that indicates whether to customize the upload behavior in the File Explorer.
+Gets or sets an object that indicates whether to customize the upload behavior in the FileExplorer.
 
 
 
@@ -1652,7 +1652,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File Explorer with the maxFileSize value specified for uploadbox.
+// Initialize the FileExplorer with the maxFileSize value specified for uploadbox.
 $('#fileExplorer').ejFileExplorer({ 
 uploadSettings:{maxFileSize:10000},
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1707,7 +1707,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with the multipleFilesSelection value specified for uploadbox.
+// Initialize the FileExplorer with the multipleFilesSelection value specified for uploadbox.
 $('#fileExplorer').ejFileExplorer({ 
  uploadSettings:{allowMultipleFile:false},
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1725,7 +1725,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Enables/Disables the auto upload option while uploading files in FileExplorer control.
+Enables or disables the auto upload option while uploading files in FileExplorer control.
 
 
 
@@ -1756,7 +1756,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with auto upload option as true.
+// Initialize the FileExplorer with auto upload option as true.
 $('#fileExplorer').ejFileExplorer({ 
 uploadSettings:{autoUpload:true},
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -2120,7 +2120,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// beforeAjaxRequest event for File explorer
+// beforeAjaxRequest event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -2214,7 +2214,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// beforeDownload event for File explorer
+// beforeDownload event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -2310,7 +2310,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// beforeOpen event for File explorer
+// beforeOpen event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -2399,7 +2399,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// beforeUpload event for File explorer
+// beforeUpload event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -2494,7 +2494,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// copy event for File explorer
+// copy event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -2583,7 +2583,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// createFolder event for File explorer
+// createFolder event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -2856,7 +2856,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// open event for File explorer
+// open event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -2957,7 +2957,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// paste event for File explorer
+// paste event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -3058,7 +3058,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// remove event for File explorer
+// remove event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -3107,13 +3107,13 @@ cancel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the mouse move event args</td>
+<td class="description last">returns the mouse move event args.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -3304,7 +3304,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// resizeStop event for File explorer
+// resizeStop event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -3399,7 +3399,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// select event for File explorer
+// select event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",        
