@@ -102,7 +102,7 @@ N> Add the following script files along with the given code to access knockout b
 * knockout.min.js
 * ej.widget.ko.min.js
 
-The link for those script files are as follows:
+The link for these script files are as follows:
 
 [http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)
 
