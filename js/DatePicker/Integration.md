@@ -20,7 +20,7 @@ documentation: ug
 
 **Two-way binding** supports both the processes – it applies the scope values to the **DatePicker** properties as well as the changes made in the **DatePicker** widget are also reflected back and triggered within the angular scope change function.
 
-To know more detail about the **Angular binding**, you can refer the following link location,
+To know more detail about the **Angular binding**, you can refer to the following link location.
 
 <http://docs.syncfusion.com/js/angularjs>
 
