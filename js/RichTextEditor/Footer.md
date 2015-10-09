@@ -9,7 +9,7 @@ documentation: ug
 
 # Footer
 
-**RTE** has **footer** option with some most frequently used tool items. To enable the footer you can set “**showFooter**” property as “**True**”. The following features have been added in footer:
+**RTE** has **footer** option with some frequently used tool items. To enable the footer, set “**showFooter**” property as “**True**”. The following features are added in footer:
 
 * Get HTML
 * Characters count
@@ -18,7 +18,7 @@ documentation: ug
 * Resizing
 
 
-Refer to the following code snippet to enable the footer in **RTE**.
+Refer to the following code example to enable the footer in **RTE**.
 
 
 
@@ -43,7 +43,7 @@ Refer to the following code snippet to enable the footer in **RTE**.
 
 ## Characters Count
 
-**RTE** counts the number of characters in an editing area while you type. Consider a blog; the “About Me” profile information limit is maximum of 1,200 characters. In such a situation, you can get the number of characters you have typed by a simple alert. This count excludes white spaces.
+**RTE** counts the number of characters in an editing area while you type. Consider a blog, where the “About Me” profile information limit is maximum of 1,200 characters. In such a situation, you can get the number of characters that you have typed by a simple alert. This count excludes white spaces.
 
 ## Words Count
 
