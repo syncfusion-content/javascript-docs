@@ -11,9 +11,9 @@ documentation: ug
 
 ## Button Text
 
-Set the display text for the **Button** in the **DatePicker** popup. By default, **buttonText** is set **Today** (String). Change this default value by using **ButtonText** property to change the **Button Text**.
+Set the display text for the **Button** in the **DatePicker** popup. The **buttonText** is set **Today** (String), by default. You can change this default value by using **ButtonText** property to change the **Button Text**.
 
-The following steps explains how to set the **Button Text** for **DatePicker** widget.
+The following steps explain how to set the **Button Text** for **DatePicker** widget.
 
 In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
 
@@ -37,7 +37,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 {% endhighlight %}
 
 
-The following screenshot displays the output for the above code.
+The following screenshot displays the output for the above code example.
 
 
 
@@ -45,36 +45,9 @@ The following screenshot displays the output for the above code.
 
 
 
-## Display Default Date
-
-You can allow to display default date value in input textbox. By default “**displayDefaultDate**” property is set to ‘**true**’ in **DatePicker** widget. 
-
-The following steps explain **displayDefaultDate** in **DatePicker** widget.	
-
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
-
-{% highlight html %}
-
-<input id="datepicker" type="text" />
-    
-{% endhighlight %}
-
-{% highlight js %}
-   
-    // Add the code to set the displayDefaultDate in DatePicker widget
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          displayDefaultDate: false,
-          value: new Date("5/8/2014")
-       });
-    });
-
-{% endhighlight %}
-
 ## Enabled
 
-You can **Enable** or **Disable** the **DatePicker** widget. By default “**enabled**” property is set to ‘**true**’ in **DatePicker** widget. You can disable the **DatePicker** widget by setting “**enabled**” property as ‘**false**’.
+You can **Enable** or **Disable** the **DatePicker** widget. The “**enabled**” property is set to ‘**true**’ in **DatePicker** widget, by default. You can disable the **DatePicker** widget by setting the “**enabled**” property as ‘**false**’.
 
 The following steps explain you how to disable the **DatePicker** widget.
 
@@ -100,11 +73,11 @@ In the HTML page, add a **&lt;input&gt;** element to render **DatePicker** widge
   
 ## Enable strict mode
 
-When **enableStrictMode** is set to ‘**true**’, **DatePicker** doesn’t allow the value out of the range, it is internally changed to the correct value. . By default “**enableStrictMode**” property is set as ‘**false**’ in **DatePicker**.
+When **enableStrictMode** is set to ‘**true**’, **DatePicker** doesn’t allow the value out of the range, it internally changes to the correct value. The “**enableStrictMode**” property is set as ‘**false**’ in **DatePicker**, by default.
 
 The following steps explain you how to enable the “**enableStrictMode**” for **DatePicker** widget.
 
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** Widget
+In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** Widget.
 
 {% highlight html %}
 
@@ -130,7 +103,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** W
 
 You can specify the **fields** **mapping** in **DatePicker**. You can also provide the support to add image, image styles, sprite css class, query, and HTML attributes.
 
-The **DatePicker** widget provides support to customize the particular date. i.e. you can customize the date with image and tooltip options. The following table specifies the special date fields and its configuration.
+The **DatePicker** widget provides support to customize the particular date, that is, you can customize the date with image and tooltip options. The following table specifies the special date fields and its configuration.
 
 Special dates fields
 
@@ -152,7 +125,7 @@ Special dates fields
          date
       </td>
       <td>
-         The date that needs to be customized. 
+         The date that has to be customized. 
       </td>
       <td>
          Null 
@@ -166,7 +139,7 @@ Special dates fields
          tooltip
       </td>
       <td>
-         Shows  the tooltip to mention date while mouse hovering 
+         Shows the tooltip to mention date while mouse hovering. 
       </td>
       <td>
          Null 
@@ -177,10 +150,10 @@ Special dates fields
    </tr>
    <tr>
       <td>
-         icon 
+         iconClass 
       </td>
       <td>
-         you can set the customized css with this property.
+         You can set the customized css with this property.
       </td>
       <td>
          Null 
@@ -190,11 +163,11 @@ Special dates fields
       </td>
    </tr>
 </table>
-N>  You need to set the image as background url and its styles within this class
+N>  Set the image as background url and its styles within this class.
 
 The following steps explain you how to specify the **fields** **mapping** in **DatePicker** widget.
 
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
+In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
 
 {% highlight html %}
   
@@ -211,23 +184,23 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
           spldays = [{
              date: new Date(today.getFullYear(), today.getMonth(), 1),
              tooltip: "In America",
-             icon: "flag-am"
+             iconClass: "flag-am"
           }, {
              date: new Date(today.getFullYear(), today.getMonth() + 1, 6),
              tooltip: "In Argendina",
-             icon: "flag-ar"
+             iconClass: "flag-ar"
           }, {
              date: new Date(today.getFullYear(), today.getMonth() + 1, 27),
              tooltip: "In Bangladesh",
-             icon: "flag-bd"
+             iconClass: "flag-bd"
           }, {
              date: new Date(today.getFullYear(), today.getMonth() - 1, 3),
              tooltip: "In Brasil",
-             icon: "flag-br"
+             iconClass: "flag-br"
           }, {
              date: new Date(today.getFullYear(), today.getMonth() - 2, 22),
              tooltip: "In Canada",
-             icon: "flag-ca"
+             iconClass: "flag-ca"
           }, ]
           // declaration
        $("#datepicker").ejDatePicker({
@@ -235,7 +208,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
           fields: {
              date: "date",
              tooltip: "tooltip",
-             icon: "icon"
+             iconClass: "iconClass"
           }
        });
     });
@@ -244,7 +217,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 Add the following styles to specify the **fields mapping** in **DatePicker** widget.
 
-N> Images for this example are available in ‘installed location /Content/images’ and you need to define images in mentioned CSS. Henceforth the images are displayed.
+N> Images for this example are available in ‘installed location /Content/images’ and define the images in mentioned CSS. Henceforth the images are displayed.
 
 
 
@@ -267,17 +240,17 @@ N> Images for this example are available in ‘installed location /Content/image
 {% endhighlight %}
 
 
-The following screenshot displays the output for the above code.
+The following screenshot displays the output for the above code example.
 
 {% include image.html url="/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img2.png"%}
 
 ## Define start day of the week
 
-It specifies the **start day of the week** in **DatePicker** calendar. By default “**value**” is set to **0** (Sunday). 
+It specifies the **start day of the week** in **DatePicker** calendar. The “**value**” is set to **0** (Sunday), by default. 
 
 The following steps explain you how to specify the **start day of the week** in **DatePicker** widget.
 
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
+In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
 
 {% highlight html %}  
   
@@ -297,17 +270,17 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 {% endhighlight %}
 
-The following screenshot displays the output for the above code.
+The following screenshot displays the output for the above code example.
 
 {% include image.html url="/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img5.png"%}
 
 ## Step months
 
-It specifies the number of months to navigate at one click in next and previous button that is achieved by “**stepMonths”** property**.** You can change the **step months** by changing the default value using “**stepMonths”** property. 
+It specifies the number of months to navigate at one click in next and previous button that is achieved by “**stepMonths”** property**.** You can change the **step months** by changing the default value by using “**stepMonths”** property. 
 
-The following steps explain you how to specify the number of months to navigate at one click
+The following steps explain you how to specify the number of months to navigate at one click.
 
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
+In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
  
 {% highlight html %}
 
@@ -330,11 +303,11 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 ## Define value
 
-It specifies the selected date value. You can specify the selected date value by using “**value”** property.
+It specifies the selected date value. You can specify the selected date value by using the “**value”** property.
 
 The following steps explain you how to specify the selected value.
 
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
+In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
 
 
 {% highlight html %}
@@ -356,7 +329,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 {% endhighlight %}
 
 
-The following screenshot displays the output for the above code.
+The following screenshot displays the output for the above code example.
 
 
 
@@ -364,11 +337,11 @@ The following screenshot displays the output for the above code.
 
 ## Watermark Text
 
-It specifies the **Watermark Text** to display the input text in **DatePicker**. By default “**watermarkText”** property is set as “**select date**” in **DatePicker**. 
+It specifies the **Watermark Text** to display the input text in **DatePicker**. The “**watermarkText”** property is set as “**select date**” in **DatePicker**, by default. 
 
-The following steps explain you how to specify the **watermark Text** in **DatePicker** widget
+The following steps explain how to specify the **watermark Text** in **DatePicker** widget.
 
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
+In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
 
 
 {% highlight html %}
@@ -390,7 +363,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 {% endhighlight %}
 
 
-The following screenshot displays the output for the above code.
+The following screenshot displays the output for the above code example.
 
 
 

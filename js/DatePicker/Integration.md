@@ -20,13 +20,13 @@ documentation: ug
 
 **Two-way binding** supports both the processes – it applies the scope values to the **DatePicker** properties as well as the changes made in the **DatePicker** widget are also reflected back and triggered within the angular scope change function.
 
-To know more detail about the **Angular binding**, you can refer the following link location,
+To know more detail about the **Angular binding**, you can refer to the following link location.
 
 <http://docs.syncfusion.com/js/angularjs>
 
 N> Add the following script files as given in the following example to access angular binding. They have JS library for angular binding.
 
-* angular-min.js
+* angular.min.js
 * ej.widget.angular.min.js
 
 The following example depicts the way to bind data to the **DatePicker** widget through **angular support**.
@@ -99,10 +99,10 @@ For more information about the **Knockout** **binding**, you can refer the follo
 
 N> Add the following script files along with the given code to access knockout binding. They have JS library for knockout binding.
 
-* knockout-min.js
+* knockout.min.js
 * ej.widget.ko.min.js
 
-The link for those script files are as follows:
+The link for these script files are as follows:
 
 [http://cdn.syncfusion.com/js/assets/external/knockout.min.js](http://cdn.syncfusion.com/js/assets/external/knockout.min.js)
 
