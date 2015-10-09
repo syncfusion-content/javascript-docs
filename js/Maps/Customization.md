@@ -11,11 +11,11 @@ documentation: ug
 
 **Maps** control supports color customization to determine the exact combination of colors for shapes displayed in Maps and tooltip support to display additional information of shape data.
 
-##Shape Settings
+## Shape Settings
 
 The `shapeSettings` defines the basic customization settings of shapes in the map. 
 
-The important property that makes an impact on shape colors is `autoFill`. This `autoFill` property is available in the `shapeSettings`. 
+The important property that makes an impact on shape colors is `autoFill`. This `autoFill` property is available in `shapeSettings`. 
 
 * `fill` - It is used to set the fill color of the shapes in the map.
 * `stroke` - It is used to set the border color of the shape in the map.
@@ -24,7 +24,7 @@ The important property that makes an impact on shape colors is `autoFill`. This 
 * `highlightBorderWidth` - It is used to set the mouse hover border width for shapes in the map.
 * `selectionColor` - It is used to set the selection color for shapes in the map.
 
-The above properties of `shapeSettings` are applied only when `autoFill` property value is false. By map, `autoFill` property value is false.
+The above properties of `shapeSettings` are applied only when `autoFill` property value is false. By default, `autoFill` property value is false.
 
 {% highlight js %}
 
@@ -57,7 +57,7 @@ The above properties of `shapeSettings` are applied only when `autoFill` propert
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img1.png"%}
 
-##Color Mapping
+## Color Mapping
 
 The **Color Mapping** support enables the customization of shape colors based on the underlying value of shape received from bounded data.
 
@@ -268,7 +268,7 @@ Here USA election data is considered as input datasource and stored in “electi
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img3.png" %}
 
-##Color Palette
+## Color Palette
 
 ### AutoFill
 
@@ -296,7 +296,7 @@ When `autoFill` property is set to true, shapes are filled with default colors f
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img4.png"%}
 
-###Color Palette
+### Color Palette
 
 The `colorPalette` property determines whether the auto fill colors are fetched from built-in color palettes or custom palette.
 
@@ -333,7 +333,7 @@ This property is enabled only when `colorPalette` property value is set to “cu
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img5.png"%}
 
-##Tooltip
+## Tooltip
 
 The tooltip is displayed only when you set `showTooltip` to “True” in the shape layers. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. 
 
@@ -361,7 +361,7 @@ The tooltip is displayed only when you set `showTooltip` to “True” in the sh
 
 {% include image.html url="/js/Maps/Customization_images/Customization_img6.png"%}
 
-###Tooltip Template
+### Tooltip Template
 
 The `tooltipTemplate` property is used for customizing the template for tooltip.
 
