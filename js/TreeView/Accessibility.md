@@ -25,59 +25,55 @@ Keyboard Shortcuts
 <tr>
 <td>
 Alt+j</td><td>
-Focuses the control.</td></tr>
+Focus the control</td></tr>
 <tr>
 <td>
 F2</td><td>
-Edit the selected node. </td></tr>
+Edit the node</td></tr>
 <tr>
 <td>
 Ctrl + X</td><td>
-Cut the selected node.</td></tr>
-<tr>
-<td>
-Ctrl + C</td><td>
-Copy the selected node.</td></tr>
+Cut the selected node</td></tr>
 <tr>
 <td>
 Ctrl + V</td><td>
-Paste the cut or copied nodes to selected node.</td></tr>
+Paste the cut nodes to the selected node</td></tr>
 <tr>
 <td>
 Delete key</td><td>
-Delete the selected node.</td></tr>
+Delete the node</td></tr>
 <tr>
 <td>
 Down</td><td>
-Selected next node.</td></tr>
+Traverse the next node</td></tr>
 <tr>
 <td>
 Up</td><td>
-Selected previous node.</td></tr>
+Traverse the previous node</td></tr>
 <tr>
 <td>
 Right</td><td>
-Expand selected node. </td></tr>
+Expand the node/Traverse first child</td></tr>
 <tr>
 <td>
 Left</td><td>
-Collapse selected node.</td></tr>
+Collapse the node</td></tr>
 <tr>
 <td>
 Enter</td><td>
-Select node.</td></tr>
+Select the node</td></tr>
 <tr>
 <td>
 Space</td><td>
-Toggle Checks and Unchecks.</td></tr>
+Check/Uncheck the node</td></tr>
 <tr>
 <td>
 Home</td><td>
-Selected first child node.</td></tr>
+Traverse first node in the Tree.</td></tr>
 <tr>
 <td>
 End</td><td>
-Selected last child node.</td></tr>
+Traverse last node in the Tree</td></tr>
 </table>
 
 
