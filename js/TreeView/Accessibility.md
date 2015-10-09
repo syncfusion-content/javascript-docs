@@ -37,7 +37,7 @@ Cut the selected node</td></tr>
 <tr>
 <td>
 Ctrl + V</td><td>
-Paste the cut nodes to selected node</td></tr>
+Paste the cut nodes to the selected node</td></tr>
 <tr>
 <td>
 Delete key</td><td>
@@ -45,35 +45,35 @@ Delete the node</td></tr>
 <tr>
 <td>
 Down</td><td>
-Traverse next node</td></tr>
+Traverse the next node</td></tr>
 <tr>
 <td>
 Up</td><td>
-Traverse previous node</td></tr>
+Traverse the previous node</td></tr>
 <tr>
 <td>
 Right</td><td>
-Expand node/Traverse first child</td></tr>
+Expand the node/Traverse first child</td></tr>
 <tr>
 <td>
 Left</td><td>
-Collapse node</td></tr>
+Collapse the node</td></tr>
 <tr>
 <td>
 Enter</td><td>
-Select node</td></tr>
+Select the node</td></tr>
 <tr>
 <td>
 Space</td><td>
-Check/Uncheck node</td></tr>
+Check/Uncheck the node</td></tr>
 <tr>
 <td>
 Home</td><td>
-Traverse first node in Tree.</td></tr>
+Traverse first node in the Tree.</td></tr>
 <tr>
 <td>
 End</td><td>
-Traverse last node in Tree</td></tr>
+Traverse last node in the Tree</td></tr>
 </table>
 
 
