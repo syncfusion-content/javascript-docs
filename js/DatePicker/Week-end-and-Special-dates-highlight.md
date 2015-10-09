@@ -9,15 +9,15 @@ documentation: ug
 
 # Week end and Special dates highlight
 
-**Week end and special dates** are highlighted in **DatePicker** widget for your identification based on your requirement.
+**Week end and special dates** are highlighted in **DatePicker** widget for your identification as per your requirement.
 
 You can highlight the **week end** by using “**highlightWeekend”** property and **special dates** are highlighted by using **“specialDates”** property.
 
-You can find the sprite images in the following location when you have installed essential studio otherwise you can use your own image.
+You can find the sprite images in the following location when you have installed essential studio, otherwise you can use your own image.
 
 **[Installed Drive]**:\Users\[username]\AppData\Local\Syncfusion\EssentialStudio\{{ site.releaseversion }}\JavaScript\samples\web\images\autocomplete\flags.png
 
-The following steps explain you how to get the highlighted week end and special dates.
+The following steps explain how to get the highlighted week end and special dates.
 
 In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
 
@@ -70,7 +70,7 @@ Add the following styles to get the special dates highlighted.
 
 
 
-The following screenshot displays the output for the above code.
+The following screenshot displays the output for the above code example.
 
 
 
