@@ -168,7 +168,7 @@ Requires
 
 
 
-Sets the Url of server side ajax handling method, which on going to handle file operation like Read, Remove, Rename, Create, Upload, Download, Copy and Move in File Explorer.
+Sets the Url of server side ajax handling method that handles file operation like Read, Remove, Rename, Create, Upload, Download, Copy and Move in File Explorer.
 
 
 
@@ -247,7 +247,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Using ajaxSettings property, we can customize the ajax configurations. Normally we can customize following option in ajax handling data, url, type, async, contentType, dataType and success. For upload, download and getImage API, we can customize url only.
+By using ajaxSettings property, you can customize the ajax configurations. Normally you can customize the following option in ajax handling data, url, type, async, contentType, dataType and success. For upload, download and getImage API, you can only customize url.
 
 
 
@@ -296,7 +296,7 @@ ajaxSettings: {
 ### allowMultiSelection<span class="type-signature type boolean">boolean</span>
 {:#members:allowmultiselection}
 
-The file explorer allows the user to select multiple files by enabling the allowMultiSelection property. The multi selection can be done by pressing the Ctrl key or Shift key. 
+The file explorer allows to select multiple files by enabling the allowMultiSelection property. You can perform multi selection by pressing the Ctrl key or Shift key. 
 
 Default Value:
 {:.param}
@@ -332,7 +332,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Sets the root class for File Explorer theme. This cssClass API helps to use custom skinning option for File Explorer control. By defining the root class using this API, we need to include this root class in CSS.
+Sets the root class for File Explorer theme. This cssClass API allows to use custom skinning option for File Explorer control. By defining the root class by using this API, you have to include this root class in CSS.
 
 
 
@@ -528,7 +528,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Specifies the file types, which one need to allow in File Explorer control
+// Specifies the file types that one needs to allow in File Explorer control
 $('#fileExplorer').ejFileExplorer({ 
 fileTypes: "*.png,*.gif,*.jpg,*.jpeg,*.docx",
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -552,7 +552,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Using filterSettings property, we can customize the search functionality of the searchbar in File Explorer control.
+By using filterSettings property, you can customize the search functionality of the searchbar in File Explorer control.
 
 
 
@@ -574,7 +574,7 @@ Using filterSettings property, we can customize the search functionality of the 
 
 
 
-Enable/Disable to perform the filter operation with case sensitive.
+Enables/Disables to perform the filter operation with case sensitive.
 
 
 
@@ -631,7 +631,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Sets the search filter type. There are several filter types are available such as "startswith", "contains", "endswith". See <a href="global.html#filterType">filterType</a>
+Sets the search filter type. There are several filter types available, such as "startswith", "contains", "endswith". See <a href="global.html#filterType">filterType</a>
 
 
 
@@ -662,7 +662,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Specifies the filter types, which is used to filter the grid or list elements
+// Specifies the filter types that are used to filter the grid or list elements
 $('#fileExplorer').ejFileExplorer({
 filterSettings: { 
 filterType: "startswith",
@@ -688,7 +688,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Using the gridSettings property, we can customize the grid behavior in the File Explorer control.
+By using the gridSettings property, you can customize the grid behavior in the File Explorer control.
 
 
 
@@ -765,7 +765,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Gets or sets an object that indicates to render the grid with specified columns, we can use this property same as column property in grid control
+Gets or sets an object that indicates to render the grid with specified columns. You can use this property same as the column property in Grid control.
 
 
 
@@ -820,7 +820,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Specifies the height of File Explorer control
+Specifies the height of File Explorer control.
 
 
 
@@ -932,7 +932,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Sets the file view type. There are two view types are available such as grid, tile. See layoutType
+Sets the file view type. There are two view types available, such as grid, tile. See layoutType.
 
 
 
@@ -1031,7 +1031,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 ### maxHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 {:#members:maxheight}
 
-Set the maximum height of File Explorer control. 
+Sets the maximum height of File Explorer control. 
 
 Default Value:
 {:.param}
@@ -1059,7 +1059,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 ### maxWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 {:#members:maxwidth}
 
-Set the maximum width of File Explorer control. 
+Sets the maximum width of File Explorer control. 
 
 Default Value:
 {:.param}
@@ -1087,7 +1087,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 ### minHeight<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 {:#members:minheight}
 
-Set the minimum height of File Explorer control. 
+Sets the minimum height of File Explorer control. 
 
 Default Value:
 {:.param}
@@ -1115,7 +1115,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 ### minWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
 {:#members:minwidth}
 
-Set the minimum width of File Explorer control. 
+Sets the minimum width of File Explorer control. 
 
 Default Value:
 {:.param}
@@ -1151,7 +1151,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-The property path denotes the filesystem path which we are going to explore. The path for the filesystem can be physical path or relative path, but it should be relevant to where the Web API hosted.
+The property path denotes the filesystem path that are to be explored. The path for the filesystem can be physical path or relative path, but it has to be relevant to where the Web API is hosted.
 
 
 
@@ -1314,7 +1314,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Enables/Disable the footer in File Explorer control.The footer element displays the details of the current selected files and folders. And the footer having the switcher to change the layout view.
+Enables/Disables the footer in File Explorer control. The footer element displays the details of the current selected files and folders. And also the footer having the switcher to change the layout view.
 
 
 
@@ -1371,7 +1371,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Shows/Disable the toolbar in File Explorer control.
+Shows/Disables the toolbar in File Explorer control.
 
 
 
@@ -1426,7 +1426,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Enables/Disable the navigation pane in File Explorer control. The navigation pane contains the tree view element which displays all the folders from the filesystem in a hierarchical manner. This is useful to a quick navigation of any folder in the filesystem.
+Enables/Disables the navigation pane in File Explorer control. The navigation pane contains a tree view element that displays all the folders from the filesystem in a hierarchical manner. This is useful to a quick navigation of any folder in the filesystem.
 
 
 
@@ -1544,7 +1544,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-The toolsList property is used to arrange the toolbar items in File Explorer control.
+The toolsList property is used to arrange the toolbar items in the File Explorer control.
 
 
 
@@ -1676,7 +1676,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Enables or disables the multiple files upload. When it enabled the user can upload multiple files at a time, when disables user can upload only one file at a time.
+Enables or disables the multiple files upload. When it is enabled, you can upload multiple files at a time and when disabled, you can upload only one file at a time.
 
 
 
@@ -1725,7 +1725,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Enables/Disables the auto upload option, while uploading files in FileExplorer control.
+Enables/Disables the auto upload option while uploading files in FileExplorer control.
 
 
 
@@ -1780,7 +1780,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 
 
 
-Specifies the width of File Explorer control.
+Specifies the width of FileExplorer control.
 
 
 
@@ -1811,7 +1811,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// Initialize the File explorer with the width value specified.
+// Initialize the FileExplorer with the width value specified.
 $('#fileExplorer').ejFileExplorer({   
 width: 800,
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
@@ -1831,7 +1831,7 @@ ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/
 {:#methods:adjustsize}
 
 
-Refresh the size of File Explorer control.
+Refresh the size of FileExplorer control.
 
 Example
 {:.example}
@@ -1842,7 +1842,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// refresh the size of file explorer 
+// refresh the size of FileExplorer 
 $('#fileExplorer').ejFileExplorer({      
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"           
@@ -1858,7 +1858,7 @@ feObj.adjustSize(); // refresh the size of file explorer
 {:#methods:disablemenuitem}
 
 
-Disable the particular context menu item
+Disable the particular context menu item.
 
 Example
 {:.example}
@@ -1869,7 +1869,7 @@ Example
 <div id="fileExplorer"></div> 
  
 <script>
-// diable the context menu item 
+// disable the context menu item 
 $('#fileExplorer').ejFileExplorer({      
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"           
@@ -1891,7 +1891,7 @@ feObj.disableMenuItem("Upload"); // disable upload option
 
 
 
-Disable the particular toolbar item
+Disable the particular toolbar item.
 
 
 
@@ -1906,7 +1906,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// diable the toolbar tool 
+// disable the toolbar tool 
 $('#fileExplorer').ejFileExplorer({      
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"           
@@ -1922,7 +1922,7 @@ feObj.disableToolbarItem("Searchbar"); // disable search bar
 ### enableMenuItem<span class="signature">()</span>
 {:#methods:enablemenuitem}
 
-Enable the particular context menu item
+Enable the particular context menu item.
 
 Example
 {:.example}
@@ -1986,7 +1986,7 @@ feObj.enableToolbarItem("Searchbar"); // enable search bar
 {:#methods:refresh}
 
 
-Refresh the content of the selected folder in File Explorer control.
+Refresh the content of the selected folder in FileExplorer control.
 
 Example
 {:.example}
@@ -2019,7 +2019,7 @@ feObj.refresh(); // refresh the content of selected folder
 
 
 
-Remove the particular toolbar item
+Remove the particular toolbar item.
 
 
 
@@ -2053,7 +2053,7 @@ feObj.removeToolbarItem("Searchbar"); // remove search bar
 ### beforeAjaxRequest
 {:#events:beforeajaxrequest}
 
-Fires while before ajax request has been performed
+Fires before the ajax request is performed.
 
 <table class="params">
 <thead>
@@ -2082,7 +2082,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2135,7 +2135,7 @@ beforeAjaxRequest: function (args) {}
 
 
 
-Fires while before downloading the files.
+Fires before downloading the files.
 
 <table class="params">
 <thead>
@@ -2164,19 +2164,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 files{% endhighlight %}</td>
 <td class="type"><span class="param-type">string[]</span></td>
-<td class="description last">returns the downloaded file names</td>
+<td class="description last">returns the downloaded file names.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2188,7 +2188,7 @@ path{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details</td>
+<td class="description last">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2230,7 +2230,7 @@ beforeDownload: function (args) {}
 
 
 
-Fires while files/ folders before opens
+Fires before files or folders open.
 
 <table class="params">
 <thead>
@@ -2259,19 +2259,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the opened item type</td>
+<td class="description last">returns the opened item type.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2283,7 +2283,7 @@ path{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details</td>
+<td class="description last">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2325,7 +2325,7 @@ beforeOpen: function (args) {}
 
 
 
-Fires while before uploading the files
+Fires before uploading the files.
 
 <table class="params">
 <thead>
@@ -2354,13 +2354,13 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2372,7 +2372,7 @@ path{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details</td>
+<td class="description last">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2414,7 +2414,7 @@ beforeUpload: function (args) {}
 
 
 
-Fires while file or folder has been copied successfully
+Fires when file or folder is copied successfully.
 
 <table class="params">
 <thead>
@@ -2443,31 +2443,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string[]</span></td>
-<td class="description last">returns the name of copied file/folder</td>
+<td class="description last">returns the name of copied file/folder.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details</td>
+<td class="description last">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 sourcePath{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the source path</td>
+<td class="description last">returns the source path.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2509,7 +2509,7 @@ copy: function (args) {}
 
 
 
-Fires when new folder has been created sucessfully in file system
+Fires when new folder is created sucessfully in file system.
 
 <table class="params">
 <thead>
@@ -2538,7 +2538,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2598,7 +2598,7 @@ createFolder: function (args) {}
 
 
 
-Fires while file or folder has been cut successfully
+Fires when file or folder is cut successfully.
 
 <table class="params">
 <thead>
@@ -2627,31 +2627,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string[]</span></td>
-<td class="description last">returns the name of moved file/folder</td>
+<td class="description last">returns the name of moved file or folder.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details</td>
+<td class="description last">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 sourcePath{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the source path</td>
+<td class="description last">returns the source path.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2678,7 +2678,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// cut event for File explorer
+// cut event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -2693,7 +2693,7 @@ cut: function (args) {}
 
 
 
-Fires when the file view type has been changed
+Fires when the file view type is changed.
 
 <table class="params">
 <thead>
@@ -2722,7 +2722,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2734,7 +2734,7 @@ layoutType{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2761,7 +2761,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// layoutChange event for File explorer
+// layoutChange event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -2776,7 +2776,7 @@ layoutChange: function (args) {}
 
 
 
-Fires while files has been opened successfully
+Fires when files are successfully opened.
 
 <table class="params">
 <thead>
@@ -2805,19 +2805,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemType{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the opened item type</td>
+<td class="description last">returns the opened item type.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2829,7 +2829,7 @@ path{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details</td>
+<td class="description last">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2871,7 +2871,7 @@ open: function (args) {}
 
 
 
-Fires while file or folder has been pasted successfully
+Fires when a file or folder is pasted successfully.
 
 <table class="params">
 <thead>
@@ -2900,37 +2900,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string[]</span></td>
-<td class="description last">returns the name of moved file/folder</td>
+<td class="description last">returns the name of moved file or folder.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details</td>
+<td class="description last">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 targetFolder{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the target folder item details</td>
+<td class="description last">returns the target folder item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 targetPath{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the target path</td>
+<td class="description last">returns the target path.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -2972,7 +2972,7 @@ paste: function (args) {}
 
 
 
-Fires when file or folder has been deleted sucessfully
+Fires when file or folder is deleted sucessfully.
 
 <table class="params">
 <thead>
@@ -3001,19 +3001,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ajax response data</td>
+<td class="description last">returns the ajax response data.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -3025,13 +3025,13 @@ name{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 path{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the path of deleted item</td>
+<td class="description last">returns the path of deleted item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 selectedItems{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected item details</td>
+<td class="description last">returns the selected item details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -3072,7 +3072,7 @@ remove: function (args) {}
 {:#events:resize}
 
 
-Fires this event when the resizing is performed for fileexplorer
+Fires when resizing is performed for FileExplorer.
 
 <table class="params">
 <thead>
@@ -3140,7 +3140,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// resize event for File explorer
+// resize event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -3154,7 +3154,7 @@ resize: function (args) {}
 {:#events:resizestart}
 
 
-Fires this event when the resizing is started for fileexplorer
+Fires when resizing is started for FileExplorer.
 
 <table class="params">
 <thead>
@@ -3183,19 +3183,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the mouse down event args</td>
+<td class="description last">returns the mouse down event args.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -3222,7 +3222,7 @@ Example
 <div id="fileExplorer" ></div> 
  
 <script>
-// resizeStart event for File explorer
+// resizeStart event for FileExplorer
 $('#fileExplorer').ejFileExplorer({            
 path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",         
 ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",      
@@ -3236,7 +3236,7 @@ resizeStart: function (args) {}
 {:#events:resizestop}
 
 
-Fires this event when the resizing is stopped for fileexplorer
+Fires this event when the resizing is stopped for FileExplorer.
 
 <table class="params">
 <thead>
@@ -3265,19 +3265,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the mouse leave event args</td>
+<td class="description last">returns the mouse leave event args.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -3319,7 +3319,7 @@ resizeStop: function (args) {}
 
 
 
-Fires when the items from grid view or tile view of fileexplorer control has been selected.
+Fires when the items from grid view or tile view of FileExplorer control is selected.
 
 <table class="params">
 <thead>
@@ -3348,19 +3348,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the FileExplorer model</td>
+<td class="description last">returns the FileExplorer model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of clicked item</td>
+<td class="description last">returns the name of clicked item.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
