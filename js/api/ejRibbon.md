@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-The ribbon can be easily configured to the DOM element, such as div. you can create a ribbon with a highly customizable look and feel.
+The ribbon can be easily configured to the DOM element, such as div. You can create a ribbon with a highly customizable look and feel.
 
 
 
@@ -262,7 +262,7 @@ $(function () {
 
 
 
-Specify the application tab to contain application menu or backstage page in the ribbon control.
+Specifies the application tab to contain application menu or backstage page in the ribbon control.
 
 
 
@@ -332,7 +332,7 @@ $(function () {
 
 
 
-To specify the ribbon backstage page items.
+Specifies the ribbon backstage page items.
 
 
 
@@ -445,7 +445,7 @@ $(function() {
 
 
 
-To specify the display text of application tab.
+Specifies the display text of application tab.
 
 
 
@@ -558,7 +558,7 @@ $(function() {
 
 
 
-To specify the height of ribbon backstage page.
+Specifies the height of ribbon backstage page.
 
 
 
@@ -669,7 +669,7 @@ $(function() {
 
 
 
-To specify the width of ribbon backstage page.
+Specifies the width of ribbon backstage page.
 
 
 
@@ -781,7 +781,7 @@ $(function() {
 
 
 
-To specify the ribbon backstage page with its tab and button elements.
+Specifies the ribbon backstage page with its tab and button elements.
 
 
 
@@ -893,7 +893,7 @@ $(function() {
 
 
 
-To specify the id for ribbon backstage page's tab and button elements.
+Specifies the id for ribbon backstage page's tab and button elements.
 
 
 
@@ -1005,7 +1005,7 @@ $(function() {
 
 
 
-To specify the text for ribbon backstage page's tab header and button elements.
+Specifies the text for ribbon backstage page's tab header and button elements.
 
 
 
@@ -1117,7 +1117,7 @@ $(function() {
 
 
 
-To specify the type for ribbon backstage page's contents.Set "ej.Ribbon.backStageItemType.tab" to render the tab or "ej.Ribbon.backStageItemType.button" to render the button.
+Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStageItemType.tab" to render the tab or "ej.Ribbon.backStageItemType.button" to render the button.
 
 
 
@@ -1229,7 +1229,7 @@ $(function() {
 
 
 
-To specify the id of html elements(like div,ul,etc..,) as ribbon backstage page's tab content.
+Specifies the id of html elements like div, ul, etc., as ribbon backstage page's tab content.
 
 
 
@@ -1341,7 +1341,7 @@ $(function() {
 
 
 
-To specify the separator between backstage page's tab and button elements.
+Specifies the separator between backstage page's tab and button elements.
 
 
 
@@ -1453,7 +1453,7 @@ $(function() {
 
 
 
-To specify the width of backstage page header which contains tabs and buttons.
+Specifies the width of backstage page header that contains tabs and buttons.
 
 
 
@@ -1566,7 +1566,7 @@ $(function() {
 
 
 
-Specify the ID of 'ul' list to create application menu in the ribbon control.
+Specifies the ID of 'ul' list to create application menu in the ribbon control.
 
 
 
@@ -1636,7 +1636,7 @@ $(function () {
 
 
 
-Specify the menu members,events using the menu settings for the menu in the application tab.
+Specifies the menu members, events by using the menu settings for the menu in the application tab.
 
 
 
@@ -1706,7 +1706,7 @@ $(function () {
 
 
 
-To specify the application menu or backstage page.Specify the type of application tab as "ej.Ribbon.applicationTabType.menu" to render the application menu or "ej.Ribbon.applicationTabType.backstage" to render backstage page in the ribbon control.
+Specifies the application menu or backstage page. Specify the type of application tab as "ej.Ribbon.applicationTabType.menu" to render the application menu or "ej.Ribbon.applicationTabType.backstage" to render backstage page in the ribbon control.
 
 
 
@@ -1776,7 +1776,7 @@ $(function () {
 
 
 
-Specify the contextual tabs and tabset to the ribbon control with the background color and border color.Please refer the tabs section for adding tabs into the contextual tab and contextual tab set.
+Specifies the contextual tabs and tabset to the ribbon control with the background color and border color. Refer to the tabs section for adding tabs into the contextual tab and contextual tab set.
 
 
 
@@ -1875,7 +1875,7 @@ $(function () {
 
 
 
-Specify the backgroundColor of the contextual tabs and tabset in the ribbon control.
+Specifies the backgroundColor of the contextual tabs and tabset in the ribbon control.
 
 
 
@@ -1974,7 +1974,7 @@ $(function () {
 
 
 
-Specify the borderColor of the contextual tabs and tabset in the ribbon control.
+Specifies the borderColor of the contextual tabs and tabset in the ribbon control.
 
 
 
@@ -2073,7 +2073,7 @@ $(function () {
 
 
 
-Specify the tabs to present in the contectual tabs and tab set.Please refer the tabs section for adding tabs into the contextual tabs and tab set.
+Specifies the tabs to present in the contectual tabs and tab set. Refer to the tabs section for adding tabs into the contextual tabs and tab set.
 
 
 
@@ -2172,7 +2172,7 @@ $(function () {
 
 
 
-Specify the index or indexes to disable the given index tab or indexes tabs in the ribbon control.
+Specifies the index or indexes to disable the given index tab or indexes tabs in the ribbon control.
 
 
 
@@ -2250,7 +2250,7 @@ $(function () {
 
 
 
-Specify the index or indexes to enable the given index tab or indexes tabs in the ribbon control.
+Specifies the index or indexes to enable the given index tab or indexes tabs in the ribbon control.
 
 
 
@@ -2331,7 +2331,7 @@ $(function () {
 
 
 
-Specify the index of the ribbon tab to select the given index tab item in the ribbon control.
+Specifies the index of the ribbon tab to select the given index tab item in the ribbon control.
 
 
 
@@ -2408,7 +2408,7 @@ $(function () {
 
 
 
-Specify the tabs and its groups,controls to the ribbon control.
+Specifies the tabs and its groups. Also specifies the control details that has to be placed in the tab area in the ribbon control.
 
 
 
@@ -2485,7 +2485,7 @@ $(function () {
 
 
 
-Specify single group or multiple groups and its contents to each tab in the ribbon control.
+Specifies single group or multiple groups and its contents to each tab in the ribbon control.
 
 
 
@@ -2555,7 +2555,7 @@ $(function () {
 
 
 
-Specify the alignment of controls in the groups in 'row' type or 'column' type.Value for row type is "ej.Ribbon.alignType.rows" and Value for column type is "ej.Ribbon.alignType.columns".
+Specifies the alignment of controls in the groups in 'row' type or 'column' type. Value for row type is "ej.Ribbon.alignType.rows" and for column type is "ej.Ribbon.alignType.columns".
 
 
 
@@ -2625,7 +2625,7 @@ $(function () {
 
 
 
-Specify the syncfusion button,split button,dropdown list,toggle button,gallery,custom controls to the groups in the ribbon control.
+Specifies the Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls to the groups in the ribbon control.
 
 
 
@@ -2705,7 +2705,7 @@ $(function () {
 
 
 
-Specify the height,width,type,isBig property to the controls in the group commonly.
+Specifies the height, width, type, isBig property to the controls in the group commonly.
 
 
 
@@ -2795,7 +2795,7 @@ $(function () {
 
 
 
-Specify the controls such as syncfusion button,split button,dropdown list,toggle button,gallery,custom controls in the subgroup of the ribbon tab .
+Specifies the controls such as Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls in the subgroup of the ribbon tab .
 
 
 
@@ -2875,7 +2875,7 @@ $(function () {
 
 
 
-Specify the syncfusion button members,events using this buttonSettings.
+Specifies the Syncfusion button members, events by using this buttonSettings.
 
 
 
@@ -3084,7 +3084,7 @@ $(function () {
 
 
 
-Specify the custom items such as div,table,controls as custom controls with the type "ej.Ribbon.type.custom" in the groups.
+Specifies the custom items such as div, table, controls as custom controls with the type "ej.Ribbon.type.custom" in the groups.
 
 
 
@@ -3177,7 +3177,7 @@ $(function () {
 
 
 
-Specify the css class property to apply styles to the button,split,dropdown controls in the groups.
+Specifies the css class property to apply styles to the button, split, dropdown controls in the groups.
 
 
 
@@ -3263,7 +3263,7 @@ $(function () {
 
 
 
-Specify the syncfusion button and menu as gallery extra items.
+Specifies the Syncfusion button and menu as gallery extra items.
 
 
 
@@ -3392,7 +3392,7 @@ $(function () {
 
 
 
-Specify the syncfusion button members,events using buttonSettings.
+Specifies the syncfusion button members, events by using buttonSettings.
 
 
 
@@ -3525,7 +3525,7 @@ $(function () {
 
 
 
-Specify the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.button to render synfusion button and menu.
+Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.button to render Synfusion button and menu.
 
 
 
@@ -3658,7 +3658,7 @@ $(function () {
 
 
 
-Specify the custom tooltip for gallery extra item's button.Please refer ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
+Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
 
 
@@ -3791,7 +3791,7 @@ $(function () {
 
 
 
-Specify the UL list id to render menu as gallery extra item.
+Specifies the UL list id to render menu as gallery extra item.
 
 
 
@@ -3924,7 +3924,7 @@ $(function () {
 
 
 
-Specify the syncfusion menu members,events using menuSettings.
+Specifies the Syncfusion menu members, events by using menuSettings.
 
 
 
@@ -4057,7 +4057,7 @@ $(function () {
 
 
 
-Specify the text for gallery extra item's button.
+Specifies the text for gallery extra item's button.
 
 
 
@@ -4186,7 +4186,7 @@ $(function () {
 
 
 
-Specify the tooltip for gallery extra item's button.
+Specifies the tooltip for gallery extra item's button.
 
 
 
@@ -4315,7 +4315,7 @@ $(function () {
 
 
 
-Provide custom tooltip for button,split button,dropdown list,toggle button,custom controls in the sub groups.We have provided text and html support for title and content.
+Provides custom tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups. Text and html support are also provided for title and content.
 
 
 
@@ -4403,7 +4403,7 @@ $(function () {
 
 
 
-It is used to set content to the custom tooltip.We have provided text and html support for content.
+Sets content to the custom tooltip. Text and html support are provided for content.
 
 
 
@@ -4491,7 +4491,7 @@ $(function () {
 
 
 
-It is used to set icon to the custom tooltip content.
+Sets icon to the custom tooltip content.
 
 
 
@@ -4579,7 +4579,7 @@ $(function () {
 
 
 
-It is used to set title to the custom tooltip.We have provided text and html support for title and the title will be in bold for text format.
+Sets title to the custom tooltip. Text and html support are provided for title and the title is in bold for text format.
 
 
 
@@ -4667,7 +4667,7 @@ $(function () {
 
 
 
-Specify the syncfusion dropdown list members,events using this dropdownSettings.
+Specifies the Syncfusion dropdown list members, events by using this dropdownSettings.
 
 
 
@@ -4753,7 +4753,7 @@ $(function () {
 
 
 
-Specify the separator to the control which is in row type group.The separator separate the control from the next control in the group.Set "true" to enable the separator.
+Specifies the separator to the control that is in row type group. The separator separates the control from the next control in the group. Set "true" to enable the separator.
 
 
 
@@ -4844,7 +4844,7 @@ $(function () {
 
 
 
-It is used to set the count of gallery contents in a row,when the gallery is in expanded state.
+Sets the count of gallery contents in a row, when the gallery is in expanded state.
 
 
 
@@ -4973,7 +4973,7 @@ $(function () {
 
 
 
-It is used to define each gallery content.
+Defines each gallery content.
 
 
 
@@ -5102,7 +5102,7 @@ $(function () {
 
 
 
-Specify the syncfusion button members,events using buttonSettings.
+Specifies the Syncfusion button members, events by using buttonSettings.
 
 
 
@@ -5235,7 +5235,7 @@ $(function () {
 
 
 
-It is used to specify the custom tooltip for gallery content.Please refer ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
+Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
 
 
@@ -5368,7 +5368,7 @@ $(function () {
 
 
 
-It is used to set text for the gallery content.
+Sets text for the gallery content.
 
 
 
@@ -5497,7 +5497,7 @@ $(function () {
 
 
 
-It is used to set tooltip for the gallery content.
+Sets tooltip for the gallery content.
 
 
 
@@ -5626,7 +5626,7 @@ $(function () {
 
 
 
-Specify the Id for button,split button,dropdown list,toggle button,gallery,custom controls in the sub groups.
+Specifies the Id for button, split button, dropdown list, toggle button, gallery, custom controls in the sub groups.
 
 
 
@@ -5706,7 +5706,7 @@ $(function () {
 
 
 
-Specify the size for button,split button controls.set "true" for big size and "false" for small size.
+Specifies the size for button, split button controls. Set "true" for big size and "false" for small size.
 
 
 
@@ -5786,7 +5786,7 @@ $(function () {
 
 
 
-It is used to set the height of each gallery content.
+Sets the height of each gallery content.
 
 
 
@@ -5915,7 +5915,7 @@ $(function () {
 
 
 
-It is used to set the width of each gallery content.
+Sets the width of each gallery content.
 
 
 
@@ -6044,7 +6044,7 @@ $(function () {
 
 
 
-Specify the syncfusion split button members,events using this splitButtonSettings.
+Specifies the Syncfusion split button members, events by using this splitButtonSettings.
 
 
 
@@ -6129,7 +6129,7 @@ $(function () {
 
 
 
-Specify the text for button,split button,toggle button controls in the sub groups.
+Specifies the text for button, split button, toggle button controls in the sub groups.
 
 
 
@@ -6209,7 +6209,7 @@ $(function () {
 
 
 
-Specify the syncfusion toggle button members,events using this toggleButtonSettings.
+Specifies the Syncfusion toggle button members, events by using toggleButtonSettings.
 
 
 
@@ -6289,7 +6289,7 @@ $(function () {
 
 
 
-Specify the tooltip for button,split button,dropdown list,toggle button,custom controls in the sub groups.
+Specifies the tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups.
 
 
 
@@ -6369,7 +6369,7 @@ $(function () {
 
 
 
-Specify the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or "ej.Ribbon.type.dropDownList" or "ej.Ribbon.type.toggleButton" or "ej.Ribbon.type.custom" or "ej.Ribbon.type.gallery" to render button,split,dropdown,toggle button,gallery,custom controls.
+Specifies the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or "ej.Ribbon.type.dropDownList" or "ej.Ribbon.type.toggleButton" or "ej.Ribbon.type.custom" or "ej.Ribbon.type.gallery" to render button, split, dropdown, toggle button, gallery, custom controls.
 
 
 
@@ -6449,7 +6449,7 @@ $(function () {
 
 
 
-Specify the ID of custom items to place into the groups.
+Specifies the ID of custom items to be placed in the groups.
 
 
 
@@ -6519,7 +6519,7 @@ $(function () {
 
 
 
-Specify the HTML contents to place into the groups.
+Specifies the HTML contents to place into the groups.
 
 
 
@@ -6587,7 +6587,7 @@ $(function () {
 
 
 
-Specify the group expander for groups in the ribbon control.Set "true" to enable the group expander.
+Specifies the group expander for groups in the ribbon control. Set "true" to enable the group expander.
 
 
 
@@ -6657,7 +6657,7 @@ $(function () {
 
 
 
-Specify the text to the groups in the ribbon control.
+Specifies the text to the groups in the ribbon control.
 
 
 
@@ -6727,7 +6727,7 @@ $(function () {
 
 
 
-Specify the custom items such as div,table,controls using the type "custom".
+Specifies the custom items such as div, table, controls by using the "custom" type.
 
 
 
@@ -6797,7 +6797,7 @@ $(function () {
 
 
 
-Specify the ID for each tab's content panel.
+Specifies the ID for each tab's content panel.
 
 
 
@@ -6867,7 +6867,7 @@ $(function () {
 
 
 
-Specify the text of the tab in the ribbon control.
+Specifies the text of the tab in the ribbon control.
 
 
 
@@ -6937,7 +6937,7 @@ $(function () {
 
 
 
-Specify the width to the ribbon control.we can set width in string or number format.
+Specifies the width to the ribbon control. You can set width in string or number format.
 
 
 
@@ -7014,7 +7014,7 @@ $(function () {
 
 
 
-It is used to add contextual tab or contextual tab set dynamically in the ribbon control with contextualtabs object and index position.if index is null,ribbon contextual tab or contextual tab set will be added at the last index.
+Adds contextual tab or contextual tab set dynamically in the ribbon control with contextualtabs object and index position. When index is null, ribbon contextual tab or contextual tab set is added at the last index.
 
 <table class="params">
 <thead>
@@ -7035,7 +7035,7 @@ contextualTabSet{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">index of the contextual tab or contextual tab set,this is optional.</td>
+<td class="description last">index of the contextual tab or contextual tab set, this is optional.</td>
 </tr>
 </tbody>
 </table>
@@ -7147,7 +7147,7 @@ $("#Ribbon").ejRibbon("addContextualTabs",cTab,2);
 
 
 
-It is used to add tab dynamically in the ribbon control with given name,tab group array and index position.if index is null,ribbon tab will be added at the last index.
+Adds tab dynamically in the ribbon control with given name, tab group array and index position. When index is null, ribbon tab is added at the last index.
 
 <table class="params">
 <thead>
@@ -7294,7 +7294,7 @@ $("#Ribbon").ejRibbon("addTab","Tab2",tabGroup,2);
 
 
 
-It is used to add tab group dynamically in the ribbon control with given tab index,tab group object and group index position.if group index is null,ribbon group will be added at the last index.
+Adds tab group dynamically in the ribbon control with given tab index, tab group object and group index position. When group index is null, ribbon group is added at the last index.
 
 <table class="params">
 <thead>
@@ -7462,7 +7462,7 @@ $("#Ribbon").ejRibbon("addTab","Tab2",tabGroup,2);
 
 
 
-It is used to add group content dynamically in the ribbon control with given tab index,group index,sub group index,content, content index position.if content index is null,content will be added at the last index.
+Adds group content dynamically in the ribbon control with given tab index, group index, sub group index, content and content index position. When content index is null, content is added at the last index.
 
 <table class="params">
 <thead>
@@ -7622,7 +7622,7 @@ $(function () {$("#Ribbon").ejRibbon({
 
 
 
-It is used to hide the ribbon backstage page.
+Hides the ribbon backstage page.
 
 
 
@@ -7795,7 +7795,7 @@ $("#Ribbon").ejRibbon("hideBackstage");
 
 
 
-It is used to collapse the ribbon tab content.
+Collapses the ribbon tab content.
 
 
 
@@ -7883,7 +7883,7 @@ $("#Ribbon").ejRibbon("collapse");
 
 
 
-destroy the ribbon widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+Destroys the ribbon widget. All the events bound using this._on are unbound automatically and the ribbon control is moved to pre-init state.
 
 
 
@@ -7924,7 +7924,7 @@ $("#Ribbon").ejRibbon("destroy");
 
 
 
-It is used to expand the ribbon tab content.
+Expands the ribbon tab content.
 
 
 
@@ -8014,7 +8014,7 @@ $("#Ribbon").ejRibbon("expand");
 
 
 
-It is used to get text of the given index tab in the ribbon control.
+Gets text of the given index tab in the ribbon control.
 
 <table class="params">
 <thead>
@@ -8040,7 +8040,7 @@ index{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-of the given index tab in the ribbon control.
+Returns the given index tab in the ribbon control.
 
 
 Example
@@ -8125,7 +8125,7 @@ $("#Ribbon").ejRibbon("getTabText",1);
 
 
 
-It is used to hide the given text tab in the ribbon control.
+Hides the given text tab in the ribbon control.
 
 <table class="params">
 <thead>
@@ -8230,7 +8230,7 @@ $("#Ribbon").ejRibbon("hideTab","HOME");
 
 
 
-It is used to check given text tab in the ribbon control is enabled or not.
+Checks whether the given text tab in the ribbon control is enabled or not.
 
 <table class="params">
 <thead>
@@ -8256,7 +8256,7 @@ string{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-if it is in enabled state,false if it is in disabled state.
+Returns true when enabled, else false.                                                                              .
 
 
 Example
@@ -8341,7 +8341,7 @@ $("#Ribbon").ejRibbon("isEnable","HOME");
 
 
 
-It is used to check given text tab in the ribbon control is visible or not.
+Checks whether the given text tab in the ribbon control is visible or not.
 
 <table class="params">
 <thead>
@@ -8367,7 +8367,7 @@ string{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-if it is visible,false if it is invisible
+Returns true when visible, else false.
 
 
 Example
@@ -8452,7 +8452,7 @@ $("#Ribbon").ejRibbon("isVisible","HOME");
 
 
 
-It is used to remove the given index tab item from the ribbon control.
+Removes the given index tab item from the ribbon control.
 
 <table class="params">
 <thead>
@@ -8557,7 +8557,7 @@ $("#Ribbon").ejRibbon("removeTab",1);
 
 
 
-It is used to set new text to the given text tab in the ribbon control.
+Sets new text to the given text tab in the ribbon control.
 
 <table class="params">
 <thead>
@@ -8667,7 +8667,7 @@ $("#Ribbon").ejRibbon("setTabText","HOME","NEW");
 
 
 
-It is used to show the ribbon backstage page.
+Displays the ribbon backstage page.
 
 
 
@@ -8838,7 +8838,7 @@ $("#Ribbon").ejRibbon("showBackstage");
 
 
 
-It is used to show the given text tab in the ribbon control.
+Displays the given text tab in the ribbon control.
 
 <table class="params">
 <thead>
@@ -8950,7 +8950,7 @@ $("#Ribbon").ejRibbon("showTab","HOME");
 
 
 
-Triggered before the ribbon tab item remove.
+Triggered before the ribbon tab item is removed.
 
 <table class="params">
 <thead>
@@ -8979,7 +8979,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9058,7 +9058,7 @@ $(function () {
 
 
 
-Triggered before the ribbon control create.
+Triggered before the ribbon control is created.
 
 <table class="params">
 <thead>
@@ -9087,7 +9087,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9160,7 +9160,7 @@ $(function () {
 
 
 
-Triggered before the ribbon control destroy.
+Triggered before the ribbon control is destroyed.
 
 <table class="params">
 <thead>
@@ -9189,7 +9189,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9268,7 +9268,7 @@ $(function () {
 
 
 
-Triggered when the control in the group is clicked successfully .
+Triggered when the control in the group is clicked successfully.
 
 <table class="params">
 <thead>
@@ -9283,7 +9283,7 @@ Triggered when the control in the group is clicked successfully .
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9358,7 +9358,7 @@ $(function () {
 
 
 
-Triggered when the groupexpander in the group is clicked successfully .
+Triggered when the groupexpander in the group is clicked successfully.
 
 <table class="params">
 <thead>
@@ -9373,7 +9373,7 @@ Triggered when the groupexpander in the group is clicked successfully .
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9463,7 +9463,7 @@ Triggered when an item in the Gallery control is clicked successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9604,7 +9604,7 @@ Triggered when a tab or button in the backstage page is clicked successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9747,7 +9747,7 @@ Triggered when the ribbon control is collapsed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9928,7 +9928,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -10042,7 +10042,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -10139,7 +10139,7 @@ $(function () {
 
 
 
-Triggered before the ribbon tab create.
+Triggered before the ribbon tab is created.
 
 <table class="params">
 <thead>
@@ -10168,7 +10168,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -10247,7 +10247,7 @@ $(function () {
 
 
 
-Triggered after the tab item removed from the ribbon control.
+Triggered after the tab item is removed from the ribbon control.
 
 <table class="params">
 <thead>
@@ -10276,7 +10276,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -10355,7 +10355,7 @@ $(function () {
 
 
 
-Triggered after the ribbon tab item selected in the ribbon control.
+Triggered after the ribbon tab item is selected in the ribbon control.
 
 <table class="params">
 <thead>
@@ -10384,7 +10384,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -10496,7 +10496,7 @@ Triggered when the expand/collapse button is clicked successfully .
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
