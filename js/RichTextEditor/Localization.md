@@ -9,13 +9,13 @@ documentation: ug
 
 # Localization
 
-You can globalize the **RTE**, so that users of different cultures can make use of it and post their content. For your convenience, you can format the **RTE** control to your culture. When your blog is in your culture, the viewers of your culture can understand about your company and its products. You can achieve localization using the “**locale**” property. 
+You can globalize the **RTE**, for people of different cultures to post their content. For your convenience, you can format the **RTE** control to your culture. When your blog is in your culture, the viewers of your culture can understand about your company and its products. You can achieve localization by using the “**locale**” property. 
 
 **RTE** support all the cultures. **Globalize.js** is a simple JavaScript library that allows you to use different cultures. Globalize cultures is the open source and you can get all the culture files from http://cdnjs.com/libraries/globalize/ link. 
 
 In this example, **globalize.min.js** file is used that includes all the cultures information. And in this example **Spanish** culture is used. 
 
-Add the following code in your **HTML** section to initialize the **RTE** with Spanish content.
+Add the following code example in your **HTML** section to initialize the **RTE** with Spanish content.
 
 {% highlight html %}
 
