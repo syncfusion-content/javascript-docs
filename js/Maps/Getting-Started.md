@@ -296,7 +296,7 @@ You can customize the shape’s color by using `fill`, `stroke` and `strokeThick
 
 The Range color mapping is used to differentiate the shape’s fill based on its underlying value and color ranges. The `from` and `to` properties defines the value ranges and the `gradientColors` property defines the equivalent color ranges respective to their value ranges.
 
-N>The `enableGradient` property value should be true to apply gradient colors for maps._
+N>The `enableGradient` property value is set to true to apply gradient colors for the maps._
 
 
 
@@ -362,7 +362,7 @@ The following screenshot illustrates a map with gradient color property enabled.
 
 ## Enable Tooltip
 
-The tooltip is displayed only when `showTooltip` is set to “**True**” in the `layers`. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. The `tooltipTemplate` property is used for customizing the template for tooltip.	
+The tooltip is displayed only when the `showTooltip` is set to “**True**” in the `layers`. By default, it takes the property of the bound object that is referred in the `valuePath` and displays its content on hovering the corresponding shape. The `tooltipTemplate` property is used for customizing the template for tooltip.	
 
 {% highlight html %}
 
@@ -396,7 +396,7 @@ A Legend can be made visible by setting the `showLegend` property in `legendSett
 
 ### Interactive Legend
 
-The legends can be made interactive with an arrow mark indicating the exact range color in the legend, when the mouse hovers on the corresponding shape. You can enable this option by setting `mode` property in `legendSettings` value as "**interactive**". The default value of `mode` property is "**default**" to enable the normal legend.
+The legends can be made interactive with an arrow mark indicating the exact range color in the legend, when the mouse hovers on the corresponding shape. You can enable this option by setting the `mode` property in the `legendSettings` value as "**interactive**". The default value of `mode` property is "**default**" to enable the normal legend.
 
 #### Title
 
