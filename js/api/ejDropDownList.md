@@ -358,7 +358,7 @@ Example
 
 
 
-The enabled Animation property uses the easeOutQuad animation to SlideDown and SlideUp the Popup list in 200 and 100 milliseconds, respectively.  
+Enable or disable the animation effect in DropdownList.  
 
 
 Default Value:
