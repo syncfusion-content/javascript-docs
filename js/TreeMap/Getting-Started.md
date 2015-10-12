@@ -179,7 +179,7 @@ The following screenshot displays a TreeMap control that is rendered after execu
 
 {% include image.html url="/js/TreeMap/Getting-Started_images/Getting-Started_img2.png"%}
 
-## Grouping with Levels
+## Group with Levels
 
 You can group TreeMap items using the levels in it.
 
