@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-The ribbon can be easily configured to the DOM element, such as div. you can create a ribbon with a highly customizable look and feel.
+The ribbon can be easily configured to the DOM element, such as div. You can create a ribbon with a highly customizable look and feel.
 
 
 
@@ -133,7 +133,7 @@ Requires
 
 
 
-Property to enable the ribbon resize feature.
+Enables the ribbon resize feature.
 
 
 
@@ -176,7 +176,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
      width: "100%",
                 allowResizing:true,
-       applicationTab: { Type: "ApplicationMenu", itemID: "ribbonmenu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "ribbonmenu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Clipboard", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -262,7 +262,7 @@ $(function () {
 
 
 
-Specify the application tab to contain application menu or backstage page in the ribbon control.
+Specifies the application tab to contain application menu or backstage page in the ribbon control.
 
 
 
@@ -306,7 +306,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -322,8 +322,8 @@ $(function () {
 
 
 
-### applicationTab.text<span class="type-signature type string">string</span>
-{:#members:applicationtab-text}
+### applicationTab.backstageSettings<span class="type-signature type object">object</span>
+{:#members:applicationtab-backstageSettings}
 
 
 
@@ -332,7 +332,120 @@ $(function () {
 
 
 
-To specify the display text of application tab.
+Specifies the ribbon backstage page items.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* object
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### applicationTab.backstageSettings.text<span class="type-signature type string">string</span>
+{:#members:applicationtab-backstageSettings-text}
+
+
+
+
+
+
+
+
+Specifies the display text of application tab.
 
 
 
@@ -387,29 +500,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -422,7 +538,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -431,8 +547,9 @@ $(function() {
 
 
 
-### applicationTab.backStageHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:applicationtab-backstageheight}
+
+### applicationTab.backstageSettings.height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#members:applicationtab-backstageSettings-height}
 
 
 
@@ -441,7 +558,7 @@ $(function() {
 
 
 
-To specify the height of ribbon backstage page.
+Specifies the height of ribbon backstage page.
 
 
 
@@ -496,29 +613,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -531,7 +651,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -539,8 +659,8 @@ $(function() {
 
 
 
-### applicationTab.backStageWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:applicationtab-backstagewidth}
+### applicationTab.backstageSettings.width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#members:applicationtab-backstageSettings-width}
 
 
 
@@ -549,7 +669,7 @@ $(function() {
 
 
 
-To specify the width of ribbon backstage page.
+Specifies the width of ribbon backstage page.
 
 
 
@@ -604,29 +724,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -639,7 +762,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -648,8 +771,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage<span class="type-signature type array">array</span>
-{:#members:applicationtab-backstagepage}
+### applicationTab.backstageSettings.pages<span class="type-signature type array">array</span>
+{:#members:applicationtab-backstageSettings-pages}
 
 
 
@@ -658,7 +781,7 @@ $(function() {
 
 
 
-To specify the ribbon backstage page with its tab and button elements.
+Specifies the ribbon backstage page with its tab and button elements.
 
 
 
@@ -713,29 +836,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -748,7 +874,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -757,8 +883,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage.id<span class="type-signature type string">string</span>
-{:#members:applicationtab-backstagepage-id}
+### applicationTab.backstageSettings.pages.id<span class="type-signature type string">string</span>
+{:#members:applicationtab-backstageSettings-pages-id}
 
 
 
@@ -767,7 +893,7 @@ $(function() {
 
 
 
-To specify the id for ribbon backstage page's tab and button elements.
+Specifies the id for ribbon backstage page's tab and button elements.
 
 
 
@@ -822,29 +948,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -857,7 +986,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -866,8 +995,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage.text<span class="type-signature type string">string</span>
-{:#members:applicationtab-backstagepage-text}
+### applicationTab.backstageSettings.pages.text<span class="type-signature type string">string</span>
+{:#members:applicationtab-backstageSettings-pages-text}
 
 
 
@@ -876,7 +1005,7 @@ $(function() {
 
 
 
-To specify the text for ribbon backstage page's tab header and button elements.
+Specifies the text for ribbon backstage page's tab header and button elements.
 
 
 
@@ -931,29 +1060,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -966,7 +1098,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -975,8 +1107,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage.backStageItemType<span class="type-signature type enum">enum</span>
-{:#members:applicationtab-backstagepage-backstageitemtype}
+### applicationTab.backstageSettings.pages.itemType<span class="type-signature type enum">enum</span>
+{:#members:applicationtab-backstageSettings-pages-itemType}
 
 
 
@@ -985,7 +1117,7 @@ $(function() {
 
 
 
-To specify the type for ribbon backstage page's contents.Set "ej.Ribbon.backStageItemType.tab" to render the tab or "ej.Ribbon.backStageItemType.button" to render the button.
+Specifies the type for ribbon backstage page's contents. Set "ej.Ribbon.backStageItemType.tab" to render the tab or "ej.Ribbon.backStageItemType.button" to render the button.
 
 
 
@@ -998,7 +1130,7 @@ Default Value:
 
 
 
-* ej.Ribbon.backStageItemType.tab
+* ej.Ribbon.itemType.tab
 
 
 
@@ -1040,29 +1172,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -1075,7 +1210,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -1084,8 +1219,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage.contentId<span class="type-signature type string">string</span>
-{:#members:applicationtab-backstagepage-contentid}
+### applicationTab.backstageSettings.pages.contentID<span class="type-signature type string">string</span>
+{:#members:applicationtab-backstageSettings-pages-contentID}
 
 
 
@@ -1094,7 +1229,7 @@ $(function() {
 
 
 
-To specify the id of html elements(like div,ul,etc..,) as ribbon backstage page's tab content.
+Specifies the id of html elements like div, ul, etc., as ribbon backstage page's tab content.
 
 
 
@@ -1149,29 +1284,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -1184,7 +1322,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -1193,8 +1331,8 @@ $(function() {
 
 
 
-### applicationTab.backStagePage.enableSeparator<span class="type-signature type boolean">boolean</span>
-{:#members:applicationtab-backstagepage-enableseparator}
+### applicationTab.backstageSettings.pages.enableSeparator<span class="type-signature type boolean">boolean</span>
+{:#members:applicationtab-backstageSettings-pages-enableSeparator}
 
 
 
@@ -1203,7 +1341,7 @@ $(function() {
 
 
 
-To specify the separator between backstage page's tab and button elements.
+Specifies the separator between backstage page's tab and button elements.
 
 
 
@@ -1258,29 +1396,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -1293,7 +1434,7 @@ $(function() {
             }]
         }]
     });
-});	        
+});    
 </script>{% endhighlight %}
 
 
@@ -1302,8 +1443,8 @@ $(function() {
 
 
 
-### applicationTab.itemID<span class="type-signature type string">string</span>
-{:#members:applicationtab-itemid}
+### applicationTab.backstageSettings.headerWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{:#members:applicationtab-backstageSettings-headerWidth}
 
 
 
@@ -1312,7 +1453,120 @@ $(function() {
 
 
 
-Specify the ID of 'ul' list to create application menu in the ribbon control.
+Specifies the width of backstage page header that contains tabs and buttons.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### applicationTab.menuItemID<span class="type-signature type string">string</span>
+{:#members:applicationtab-menuItemID}
+
+
+
+
+
+
+
+
+Specifies the ID of 'ul' list to create application menu in the ribbon control.
 
 
 
@@ -1356,7 +1610,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1382,7 +1636,7 @@ $(function () {
 
 
 
-Specify the menu members,events using the menu settings for the menu in the application tab.
+Specifies the menu members, events by using the menu settings for the menu in the application tab.
 
 
 
@@ -1426,7 +1680,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1442,7 +1696,7 @@ $(function () {
 
 
 
-### applicationTab.Type<span class="type-signature type string">string</span>
+### applicationTab.type<span class="type-signature type enum">enum</span>
 {:#members:applicationtab-type}
 
 
@@ -1452,7 +1706,7 @@ $(function () {
 
 
 
-To specify the application menu or backstage page.Specify the type of application tab as "ApplicationMenu" to render the application menu or "BackStagePage" to render backstage page in the ribbon control.
+Specifies the application menu or backstage page. Specify the type of application tab as "ej.Ribbon.applicationTabType.menu" to render the application menu or "ej.Ribbon.applicationTabType.backstage" to render backstage page in the ribbon control.
 
 
 
@@ -1465,7 +1719,7 @@ Default Value:
 
 
 
-* null
+*  ej.Ribbon.applicationTabType.menu
 
 
 
@@ -1496,7 +1750,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1522,7 +1776,7 @@ $(function () {
 
 
 
-Specify the contextual tabs and tabset to the ribbon control with the background color and border color.Please refer the tabs section for adding tabs into the contextual tab and contextual tab set.
+Specifies the contextual tabs and tabset to the ribbon control with the background color and border color. Refer to the tabs section for adding tabs into the contextual tab and contextual tab set.
 
 
 
@@ -1569,7 +1823,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1621,7 +1875,7 @@ $(function () {
 
 
 
-Specify the backgroundColor of the contextual tabs and tabset in the ribbon control.
+Specifies the backgroundColor of the contextual tabs and tabset in the ribbon control.
 
 
 
@@ -1668,7 +1922,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1720,7 +1974,7 @@ $(function () {
 
 
 
-Specify the borderColor of the contextual tabs and tabset in the ribbon control.
+Specifies the borderColor of the contextual tabs and tabset in the ribbon control.
 
 
 
@@ -1767,7 +2021,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1819,7 +2073,7 @@ $(function () {
 
 
 
-Specify the tabs to present in the contectual tabs and tab set.Please refer the tabs section for adding tabs into the contextual tabs and tab set.
+Specifies the tabs to present in the contectual tabs and tab set. Refer to the tabs section for adding tabs into the contextual tabs and tab set.
 
 
 
@@ -1866,7 +2120,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1918,7 +2172,7 @@ $(function () {
 
 
 
-Specify the index or indexes to disable the given index tab or indexes tabs in the ribbon control.
+Specifies the index or indexes to disable the given index tab or indexes tabs in the ribbon control.
 
 
 
@@ -1964,7 +2218,7 @@ $(function () {
      width: "100%",
 // Set the disabledItemIndex during initialization. 
  disabledItemIndex: [1,2],
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -1996,7 +2250,7 @@ $(function () {
 
 
 
-Specify the index or indexes to enable the given index tab or indexes tabs in the ribbon control.
+Specifies the index or indexes to enable the given index tab or indexes tabs in the ribbon control.
 
 
 
@@ -2040,7 +2294,7 @@ Example
 $(function () {
     $("#Ribbon").ejRibbon({
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -2077,7 +2331,7 @@ $(function () {
 
 
 
-Specify the index of the ribbon tab to select the given index tab item in the ribbon control.
+Specifies the index of the ribbon tab to select the given index tab item in the ribbon control.
 
 
 
@@ -2122,7 +2376,7 @@ $(function () {
      width: "100%",
 // Set the selectedItemIndex during initialization. 
        selectedItemIndex : 2,
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -2154,7 +2408,7 @@ $(function () {
 
 
 
-Specify the tabs and its groups,controls to the ribbon control.
+Specifies the tabs and its groups. Also specifies the control details that has to be placed in the tab area in the ribbon control.
 
 
 
@@ -2199,7 +2453,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -2231,7 +2485,7 @@ $(function () {
 
 
 
-Specify single group or multiple groups and its contents to each tab in the ribbon control.
+Specifies single group or multiple groups and its contents to each tab in the ribbon control.
 
 
 
@@ -2275,7 +2529,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -2301,7 +2555,7 @@ $(function () {
 
 
 
-Specify the alignment of controls in the groups in 'row' type or 'column' type.Value for row type is "ej.Ribbon.alignType.rows" and Value for column type is "ej.Ribbon.alignType.columns".
+Specifies the alignment of controls in the groups in 'row' type or 'column' type. Value for row type is "ej.Ribbon.alignType.rows" and for column type is "ej.Ribbon.alignType.columns".
 
 
 
@@ -2345,7 +2599,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -2371,7 +2625,7 @@ $(function () {
 
 
 
-Specify the syncfusion button,split button,dropdown list,toggle button,gallery,custom controls to the groups in the ribbon control.
+Specifies the Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls to the groups in the ribbon control.
 
 
 
@@ -2414,7 +2668,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -2451,7 +2705,7 @@ $(function () {
 
 
 
-Specify the height,width,type,isBig property to the controls in the group commonly.
+Specifies the height, width, type, isBig property to the controls in the group commonly.
 
 
 
@@ -2494,7 +2748,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -2541,7 +2795,7 @@ $(function () {
 
 
 
-Specify the controls such as syncfusion button,split button,dropdown list,toggle button,gallery,custom controls in the subgroup of the ribbon tab .
+Specifies the controls such as Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls in the subgroup of the ribbon tab .
 
 
 
@@ -2584,7 +2838,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -2621,7 +2875,7 @@ $(function () {
 
 
 
-Specify the syncfusion button members,events using this buttonSettings.
+Specifies the Syncfusion button members, events by using this buttonSettings.
 
 
 
@@ -2664,7 +2918,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -2759,7 +3013,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -2830,7 +3084,7 @@ $(function () {
 
 
 
-Specify the custom items such as div,table,controls as custom controls with the type "ej.Ribbon.type.custom" in the groups.
+Specifies the custom items such as div, table, controls as custom controls with the type "ej.Ribbon.type.custom" in the groups.
 
 
 
@@ -2874,7 +3128,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -2923,7 +3177,7 @@ $(function () {
 
 
 
-Specify the css class property to apply styles to the button,split,dropdown controls in the groups.
+Specifies the css class property to apply styles to the button, split, dropdown controls in the groups.
 
 
 
@@ -2971,7 +3225,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -3009,7 +3263,7 @@ $(function () {
 
 
 
-Specify the syncfusion button and menu as gallery extra items.
+Specifies the Syncfusion button and menu as gallery extra items.
 
 
 
@@ -3067,7 +3321,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3138,7 +3392,7 @@ $(function () {
 
 
 
-Specify the syncfusion button members,events using buttonSettings.
+Specifies the syncfusion button members, events by using buttonSettings.
 
 
 
@@ -3196,7 +3450,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3271,7 +3525,7 @@ $(function () {
 
 
 
-Specify the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.button to render synfusion button and menu.
+Specifies the type as ej.Ribbon.customItemType.menu or ej.Ribbon.customItemType.button to render Synfusion button and menu.
 
 
 
@@ -3329,7 +3583,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3404,7 +3658,7 @@ $(function () {
 
 
 
-Specify the custom tooltip for gallery extra item's button.Please refer ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
+Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
 
 
@@ -3462,7 +3716,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3537,7 +3791,7 @@ $(function () {
 
 
 
-Specify the UL list id to render menu as gallery extra item.
+Specifies the UL list id to render menu as gallery extra item.
 
 
 
@@ -3595,7 +3849,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3670,7 +3924,7 @@ $(function () {
 
 
 
-Specify the syncfusion menu members,events using menuSettings.
+Specifies the Syncfusion menu members, events by using menuSettings.
 
 
 
@@ -3728,7 +3982,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3803,7 +4057,7 @@ $(function () {
 
 
 
-Specify the text for gallery extra item's button.
+Specifies the text for gallery extra item's button.
 
 
 
@@ -3861,7 +4115,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -3932,7 +4186,7 @@ $(function () {
 
 
 
-Specify the tooltip for gallery extra item's button.
+Specifies the tooltip for gallery extra item's button.
 
 
 
@@ -3990,7 +4244,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -4061,7 +4315,7 @@ $(function () {
 
 
 
-Provide custom tooltip for button,split button,dropdown list,toggle button,custom controls in the sub groups.We have provided text and html support for title and content.
+Provides custom tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups. Text and html support are also provided for title and content.
 
 
 
@@ -4104,7 +4358,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [
                                 {
@@ -4149,7 +4403,7 @@ $(function () {
 
 
 
-It is used to set content to the custom tooltip.We have provided text and html support for content.
+Sets content to the custom tooltip. Text and html support are provided for content.
 
 
 
@@ -4192,7 +4446,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [
                                 {
@@ -4237,7 +4491,7 @@ $(function () {
 
 
 
-It is used to set icon to the custom tooltip content.
+Sets icon to the custom tooltip content.
 
 
 
@@ -4280,7 +4534,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [
                                 {
@@ -4325,7 +4579,7 @@ $(function () {
 
 
 
-It is used to set title to the custom tooltip.We have provided text and html support for title and the title will be in bold for text format.
+Sets title to the custom tooltip. Text and html support are provided for title and the title is in bold for text format.
 
 
 
@@ -4368,7 +4622,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
             id: "home", text: "HOME", groups: [
                                 {
@@ -4413,7 +4667,7 @@ $(function () {
 
 
 
-Specify the syncfusion dropdown list members,events using this dropdownSettings.
+Specifies the Syncfusion dropdown list members, events by using this dropdownSettings.
 
 
 
@@ -4462,7 +4716,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -4499,7 +4753,7 @@ $(function () {
 
 
 
-Specify the separator to the control which is in row type group.The separator separate the control from the next control in the group.Set "true" to enable the separator.
+Specifies the separator to the control that is in row type group. The separator separates the control from the next control in the group. Set "true" to enable the separator.
 
 
 
@@ -4542,7 +4796,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -4590,7 +4844,7 @@ $(function () {
 
 
 
-It is used to set the count of gallery contents in a row,when the gallery is in expanded state.
+Sets the count of gallery contents in a row, when the gallery is in expanded state.
 
 
 
@@ -4648,7 +4902,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -4719,7 +4973,7 @@ $(function () {
 
 
 
-It is used to define each gallery content.
+Defines each gallery content.
 
 
 
@@ -4777,7 +5031,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -4848,7 +5102,7 @@ $(function () {
 
 
 
-Specify the syncfusion button members,events using buttonSettings.
+Specifies the Syncfusion button members, events by using buttonSettings.
 
 
 
@@ -4909,7 +5163,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -4981,7 +5235,7 @@ $(function () {
 
 
 
-It is used to specify the custom tooltip for gallery content.Please refer ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
+Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
 
 
@@ -5039,7 +5293,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -5114,7 +5368,7 @@ $(function () {
 
 
 
-It is used to set text for the gallery content.
+Sets text for the gallery content.
 
 
 
@@ -5172,7 +5426,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -5243,7 +5497,7 @@ $(function () {
 
 
 
-It is used to set tooltip for the gallery content.
+Sets tooltip for the gallery content.
 
 
 
@@ -5301,7 +5555,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -5372,7 +5626,7 @@ $(function () {
 
 
 
-Specify the Id for button,split button,dropdown list,toggle button,gallery,custom controls in the sub groups.
+Specifies the Id for button, split button, dropdown list, toggle button, gallery, custom controls in the sub groups.
 
 
 
@@ -5415,7 +5669,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -5452,7 +5706,7 @@ $(function () {
 
 
 
-Specify the size for button,split button controls.set "true" for big size and "false" for small size.
+Specifies the size for button, split button controls. Set "true" for big size and "false" for small size.
 
 
 
@@ -5495,7 +5749,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -5532,7 +5786,7 @@ $(function () {
 
 
 
-It is used to set the height of each gallery content.
+Sets the height of each gallery content.
 
 
 
@@ -5590,7 +5844,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -5661,7 +5915,7 @@ $(function () {
 
 
 
-It is used to set the width of each gallery content.
+Sets the width of each gallery content.
 
 
 
@@ -5719,7 +5973,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
         tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "Gallery", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -5790,7 +6044,7 @@ $(function () {
 
 
 
-Specify the syncfusion split button members,events using this splitButtonSettings.
+Specifies the Syncfusion split button members, events by using this splitButtonSettings.
 
 
 
@@ -5836,7 +6090,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -5875,7 +6129,7 @@ $(function () {
 
 
 
-Specify the text for button,split button,toggle button controls in the sub groups.
+Specifies the text for button, split button, toggle button controls in the sub groups.
 
 
 
@@ -5918,7 +6172,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -5955,7 +6209,7 @@ $(function () {
 
 
 
-Specify the syncfusion toggle button members,events using this toggleButtonSettings.
+Specifies the Syncfusion toggle button members, events by using toggleButtonSettings.
 
 
 
@@ -5998,7 +6252,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -6035,7 +6289,7 @@ $(function () {
 
 
 
-Specify the tooltip for button,split button,dropdown list,toggle button,custom controls in the sub groups.
+Specifies the tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups.
 
 
 
@@ -6078,7 +6332,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -6115,7 +6369,7 @@ $(function () {
 
 
 
-Specify the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or "ej.Ribbon.type.dropDownList" or "ej.Ribbon.type.toggleButton" or "ej.Ribbon.type.custom" or "ej.Ribbon.type.gallery" to render button,split,dropdown,toggle button,gallery,custom controls.
+Specifies the type as "ej.Ribbon.type.button" or "ej.Ribbon.type.splitButton" or "ej.Ribbon.type.dropDownList" or "ej.Ribbon.type.toggleButton" or "ej.Ribbon.type.custom" or "ej.Ribbon.type.gallery" to render button, split, dropdown, toggle button, gallery, custom controls.
 
 
 
@@ -6158,7 +6412,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,content: [{
@@ -6195,7 +6449,7 @@ $(function () {
 
 
 
-Specify the ID of custom items to place into the groups.
+Specifies the ID of custom items to be placed in the groups.
 
 
 
@@ -6239,7 +6493,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6265,7 +6519,7 @@ $(function () {
 
 
 
-Specify the HTML contents to place into the groups.
+Specifies the HTML contents to place into the groups.
 
 
 
@@ -6307,7 +6561,7 @@ Example
 $(function () {
     $("#Ribbon").ejRibbon({
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", type: "custom", customContent: "<button id='customContent'>Custom Content</button>"
@@ -6333,7 +6587,7 @@ $(function () {
 
 
 
-Specify the group expander for groups in the ribbon control.Set "true" to enable the group expander.
+Specifies the group expander for groups in the ribbon control. Set "true" to enable the group expander.
 
 
 
@@ -6377,7 +6631,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",enableGroupExpander: true,contentID:"btn"
@@ -6403,7 +6657,7 @@ $(function () {
 
 
 
-Specify the text to the groups in the ribbon control.
+Specifies the text to the groups in the ribbon control.
 
 
 
@@ -6447,7 +6701,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6473,7 +6727,7 @@ $(function () {
 
 
 
-Specify the custom items such as div,table,controls using the type "custom".
+Specifies the custom items such as div, table, controls by using the "custom" type.
 
 
 
@@ -6517,7 +6771,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6543,7 +6797,7 @@ $(function () {
 
 
 
-Specify the ID for each tab's content panel.
+Specifies the ID for each tab's content panel.
 
 
 
@@ -6587,7 +6841,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6613,7 +6867,7 @@ $(function () {
 
 
 
-Specify the text of the tab in the ribbon control.
+Specifies the text of the tab in the ribbon control.
 
 
 
@@ -6657,7 +6911,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6683,7 +6937,7 @@ $(function () {
 
 
 
-Specify the width to the ribbon control.we can set width in string or number format.
+Specifies the width to the ribbon control. You can set width in string or number format.
 
 
 
@@ -6727,7 +6981,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6760,7 +7014,7 @@ $(function () {
 
 
 
-It is used to add contextual tab or contextual tab set dynamically in the ribbon control with contextualtabs object and index position.if index is null,ribbon contextual tab or contextual tab set will be added at the last index.
+Adds contextual tab or contextual tab set dynamically in the ribbon control with contextualtabs object and index position. When index is null, ribbon contextual tab or contextual tab set is added at the last index.
 
 <table class="params">
 <thead>
@@ -6781,7 +7035,7 @@ contextualTabSet{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">index of the contextual tab or contextual tab set,this is optional.</td>
+<td class="description last">index of the contextual tab or contextual tab set, this is optional.</td>
 </tr>
 </tbody>
 </table>
@@ -6812,7 +7066,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6856,7 +7110,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6893,7 +7147,7 @@ $("#Ribbon").ejRibbon("addContextualTabs",cTab,2);
 
 
 
-It is used to add tab dynamically in the ribbon control with given name,tab group array and index position.if index is null,ribbon tab will be added at the last index.
+Adds tab dynamically in the ribbon control with given name, tab group array and index position. When index is null, ribbon tab is added at the last index.
 
 <table class="params">
 <thead>
@@ -6950,7 +7204,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -6998,7 +7252,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7040,7 +7294,7 @@ $("#Ribbon").ejRibbon("addTab","Tab2",tabGroup,2);
 
 
 
-It is used to add tab group dynamically in the ribbon control with given tab index,tab group object and group index position.if group index is null,ribbon group will be added at the last index.
+Adds tab group dynamically in the ribbon control with given tab index, tab group object and group index position. When group index is null, ribbon group is added at the last index.
 
 <table class="params">
 <thead>
@@ -7095,7 +7349,7 @@ Example
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                text: "One", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -7152,7 +7406,7 @@ $(function () {$("#Ribbon").ejRibbon({
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                text: "One", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -7208,7 +7462,7 @@ $("#Ribbon").ejRibbon("addTab","Tab2",tabGroup,2);
 
 
 
-It is used to add group content dynamically in the ribbon control with given tab index,group index,sub group index,content, content index position.if content index is null,content will be added at the last index.
+Adds group content dynamically in the ribbon control with given tab index, group index, sub group index, content and content index position. When content index is null, content is added at the last index.
 
 <table class="params">
 <thead>
@@ -7275,7 +7529,7 @@ Example
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                text: "One", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -7323,7 +7577,7 @@ $(function () {$("#Ribbon").ejRibbon({
 $(function () {$("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                text: "One", alignType: ej.Ribbon.alignType.rows, content: [{
@@ -7358,6 +7612,178 @@ $(function () {$("#Ribbon").ejRibbon({
 
 
 
+### hideBackstage<span class="signature">()</span>
+{:#methods:hideBackstage}
+
+
+
+
+
+
+
+
+Hides the ribbon backstage page.
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+//initialize the Ribbon object
+        var ribbonObj = $("#Ribbon").data("ejRibbon");
+        // hide the ribbon backstage page.
+        ribbonObj.hideBackstage();
+</script>{% endhighlight %}
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+$("#Ribbon").ejRibbon("hideBackstage");
+</script>{% endhighlight %}
+
+
+
+
+
+
 
 ### collapse<span class="signature">()</span>
 {:#methods:collapse}
@@ -7369,7 +7795,7 @@ $(function () {$("#Ribbon").ejRibbon({
 
 
 
-It is used to collapse the ribbon tab content.
+Collapses the ribbon tab content.
 
 
 
@@ -7397,7 +7823,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7430,7 +7856,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7457,7 +7883,7 @@ $("#Ribbon").ejRibbon("collapse");
 
 
 
-destroy the ribbon widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+Destroys the ribbon widget. All the events bound using this._on are unbound automatically and the ribbon control is moved to pre-init state.
 
 
 
@@ -7498,7 +7924,7 @@ $("#Ribbon").ejRibbon("destroy");
 
 
 
-It is used to expand the ribbon tab content.
+Expands the ribbon tab content.
 
 
 
@@ -7526,7 +7952,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7560,7 +7986,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "700px",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7588,7 +8014,7 @@ $("#Ribbon").ejRibbon("expand");
 
 
 
-It is used to get text of the given index tab in the ribbon control.
+Gets text of the given index tab in the ribbon control.
 
 <table class="params">
 <thead>
@@ -7614,7 +8040,7 @@ index{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-of the given index tab in the ribbon control.
+Returns the given index tab in the ribbon control.
 
 
 Example
@@ -7639,7 +8065,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7672,7 +8098,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7699,7 +8125,7 @@ $("#Ribbon").ejRibbon("getTabText",1);
 
 
 
-It is used to hide the given text tab in the ribbon control.
+Hides the given text tab in the ribbon control.
 
 <table class="params">
 <thead>
@@ -7744,7 +8170,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7777,7 +8203,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7804,7 +8230,7 @@ $("#Ribbon").ejRibbon("hideTab","HOME");
 
 
 
-It is used to check given text tab in the ribbon control is enabled or not.
+Checks whether the given text tab in the ribbon control is enabled or not.
 
 <table class="params">
 <thead>
@@ -7830,7 +8256,7 @@ string{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-if it is in enabled state,false if it is in disabled state.
+Returns true when enabled, else false.                                                                              .
 
 
 Example
@@ -7855,7 +8281,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7888,7 +8314,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7915,7 +8341,7 @@ $("#Ribbon").ejRibbon("isEnable","HOME");
 
 
 
-It is used to check given text tab in the ribbon control is visible or not.
+Checks whether the given text tab in the ribbon control is visible or not.
 
 <table class="params">
 <thead>
@@ -7941,7 +8367,7 @@ string{% endhighlight %}</td>
 #### Returns:
 {:#methods:returns:}
 
-if it is visible,false if it is invisible
+Returns true when visible, else false.
 
 
 Example
@@ -7966,7 +8392,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -7999,7 +8425,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8026,7 +8452,7 @@ $("#Ribbon").ejRibbon("isVisible","HOME");
 
 
 
-It is used to remove the given index tab item from the ribbon control.
+Removes the given index tab item from the ribbon control.
 
 <table class="params">
 <thead>
@@ -8071,7 +8497,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8104,7 +8530,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8131,7 +8557,7 @@ $("#Ribbon").ejRibbon("removeTab",1);
 
 
 
-It is used to set new text to the given text tab in the ribbon control.
+Sets new text to the given text tab in the ribbon control.
 
 <table class="params">
 <thead>
@@ -8182,7 +8608,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8215,7 +8641,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8225,6 +8651,176 @@ $(function () {
 });                    
 $("#Ribbon").ejRibbon("setTabText","HOME","NEW"); 
 </script>  {% endhighlight %}
+
+
+
+
+
+
+### showBackstage<span class="signature">()</span>
+{:#methods:showBackstage}
+
+
+
+
+
+
+
+
+Displays the ribbon backstage page.
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+//initialize the Ribbon object
+        var ribbonObj = $("#Ribbon").data("ejRibbon");
+        // show the ribbon backstage page.
+        ribbonObj.showBackstage();
+</script>{% endhighlight %}
+
+{% highlight html %}
+ 
+<div id="content1">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Info</div>
+<li>Protect Workbook</li>
+<li>Inspect Workbook</li>
+<li>Versions</li>
+<li>Browser View Options</li>
+</ul>
+</div>
+<div id="content2">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Open</div>
+<li>Recent Workbooks</li>
+<li>Computer</li>
+</ul>
+</div>
+<div id="content3">
+<ul style="list-style:none"><div style="margin-left:30px;font-size:20px">Export</div>
+<li>Create PDF/XPS Document</li>
+<li>Change File Type</li>
+</ul>
+</div>
+<div id="Ribbon"></div>
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function() {
+    $("#Ribbon").ejRibbon({
+        width: "500px",
+        applicationTab: {
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
+        },
+        tabs: [{
+            id: "home",
+            text: "HOME",
+            groups: [{
+                text: "New",
+                alignType: ej.Ribbon.alignType.rows,
+                type: "custom",
+                contentID: "btn"
+            }]
+        }]
+    });
+});    
+$("#Ribbon").ejRibbon("showBackstage");
+</script>{% endhighlight %}
 
 
 
@@ -8242,7 +8838,7 @@ $("#Ribbon").ejRibbon("setTabText","HOME","NEW");
 
 
 
-It is used to show the given text tab in the ribbon control.
+Displays the given text tab in the ribbon control.
 
 <table class="params">
 <thead>
@@ -8287,7 +8883,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8320,7 +8916,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8354,7 +8950,7 @@ $("#Ribbon").ejRibbon("showTab","HOME");
 
 
 
-Triggered before the ribbon tab item remove.
+Triggered before the ribbon tab item is removed.
 
 <table class="params">
 <thead>
@@ -8383,7 +8979,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -8435,7 +9031,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8462,7 +9058,7 @@ $(function () {
 
 
 
-Triggered before the ribbon control create.
+Triggered before the ribbon control is created.
 
 <table class="params">
 <thead>
@@ -8491,7 +9087,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -8537,7 +9133,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8564,7 +9160,7 @@ $(function () {
 
 
 
-Triggered before the ribbon control destroy.
+Triggered before the ribbon control is destroyed.
 
 <table class="params">
 <thead>
@@ -8593,7 +9189,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -8645,7 +9241,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8672,7 +9268,7 @@ $(function () {
 
 
 
-Triggered when the control in the group is clicked successfully .
+Triggered when the control in the group is clicked successfully.
 
 <table class="params">
 <thead>
@@ -8687,7 +9283,7 @@ Triggered when the control in the group is clicked successfully .
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -8735,7 +9331,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8762,7 +9358,7 @@ $(function () {
 
 
 
-Triggered when the groupexpander in the group is clicked successfully .
+Triggered when the groupexpander in the group is clicked successfully.
 
 <table class="params">
 <thead>
@@ -8777,7 +9373,7 @@ Triggered when the groupexpander in the group is clicked successfully .
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -8825,7 +9421,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
@@ -8842,8 +9438,8 @@ $(function () {
 
 
 
-### onGalleryItemClick
-{:#events:ongalleryitemclick}
+### galleryItemClick
+{:#events:galleryItemClick}
 
 
 
@@ -8867,7 +9463,7 @@ Triggered when an item in the Gallery control is clicked successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -8921,7 +9517,7 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
 
@@ -8973,7 +9569,7 @@ $(function () {
        }]
   }]
         }],
-      onGalleryItemClick: function (args) {}
+      galleryItemClick: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -8983,8 +9579,8 @@ $(function () {
 
 
 
-### onBackStageItemClick
-{:#events:onbackstageitemclick}
+### backstageItemClick
+{:#events:backstageItemClick}
 
 
 
@@ -9008,7 +9604,7 @@ Triggered when a tab or button in the backstage page is clicked successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9027,6 +9623,18 @@ argument.type{% endhighlight %}</td>
 argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the item clicked in the gallery.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the id of the target item.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.text{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the text of the target item.</td>
 </tr>
 </tbody>
 </table>
@@ -9067,29 +9675,32 @@ $(function() {
     $("#Ribbon").ejRibbon({
         width: "500px",
         applicationTab: {
-            Type: "BackStagePage",
-            text: "FILE",
-            backStageHeight: 250,
-            backStageWidth: 600,
-            backStagePage: [{
-                id: "info",
-                text: "Info",
-                backStageItemType: ej.Ribbon.backStageItemType.tab,
-                contentId: "content1"
-            }, {
-                id: "open",
-                text: "Open",
-                contentId: "content2"
-            }, {
-                id: "export",
-                text: "Export",
-                contentId: "content3",
-                enableSeparator: true
-            }, {
-                id: "exit",
-                text: "Exit",
-                backStageItemType: ej.Ribbon.backStageItemType.button
-            }]
+            type: ej.Ribbon.applicationTabType.backstage,
+            backstageSettings: {
+                text: "FILE",
+                height: 250,
+                width: 600,
+                headerWidth: 125,
+                pages: [{
+                    id: "info",
+                    text: "Info",
+                    itemType: ej.Ribbon.itemType.tab,
+                    contentID: "content1"
+                }, {
+                    id: "open",
+                    text: "Open",
+                    contentID: "content2"
+                }, {
+                    id: "export",
+                    text: "Export",
+                    contentID: "content3",
+                    enableSeparator: true
+                }, {
+                    id: "exit",
+                    text: "Exit",
+                    itemType: ej.Ribbon.itemType.button
+                }]
+            }
         },
         tabs: [{
             id: "home",
@@ -9101,10 +9712,18 @@ $(function() {
                 contentID: "btn"
             }]
         }],
-      onBackStageItemClick: function (args) {}
+      backstageItemClick : function (args) {}
     });
-});	        
-</script> {% endhighlight %}
+});   
+</script>{% endhighlight %}
+
+
+
+
+
+
+### collapse
+{:#events:collapse}
 
 
 
@@ -9112,8 +9731,82 @@ $(function() {
 
 
 
-### onTabAdd
-{:#events:ontabadd}
+
+Triggered when the ribbon control is collapsed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ribbon model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function () {
+    $("#Ribbon").ejRibbon({
+// Set the width during initialization.         
+     width: "100%",
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+       tabs: [{
+           id: "home", text: "HOME", groups: [{
+                text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
+           }]
+        }],
+      collapse: function (args) {}
+  });
+});             
+</script>  {% endhighlight %}
+
+
+
+
+
+
+### expand
+{:#events:expand}
 
 
 
@@ -9122,7 +9815,91 @@ $(function() {
 
 
 
-Triggered after the new ribbon tab item add.
+Triggered when the ribbon control is expanded.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ribbon model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<ul id="menu">
+<li><a>FILE </a>
+<ul>
+<li><a>New</a></li>
+<li><a>Open</a></li>
+<li><a>Save</a></li>
+<li><a>Save as</a></li>
+<li><a>Print</a></li>
+</ul></li></ul>
+<div id="Ribbon"></div> 
+<button id="btn">Home button</button>
+<script type="text/javascript">   
+$(function () {
+    $("#Ribbon").ejRibbon({
+// Set the width during initialization.         
+     width: "100%",
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
+       tabs: [{
+           id: "home", text: "HOME", groups: [{
+                text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
+           }]
+        }],
+      expand: function (args) {}
+  });
+});             
+</script>  {% endhighlight %}
+
+
+
+
+
+
+
+### tabAdd
+{:#events:tabAdd}
+
+
+
+
+
+
+
+
+Triggered after adding the new ribbon tab item.
 
 <table class="params">
 <thead>
@@ -9151,7 +9928,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9209,13 +9986,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-      onTabAdd: function (args) {}
+      tabAdd: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -9226,8 +10003,8 @@ $(function () {
 
 
 
-### onTabClick
-{:#events:ontabclick}
+### tabClick
+{:#events:tabClick}
 
 
 
@@ -9265,7 +10042,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9335,13 +10112,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-     onTabClick: function (args) {}
+     tabClick: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -9352,8 +10129,8 @@ $(function () {
 
 
 
-### onTabCreate
-{:#events:ontabcreate}
+### tabCreate
+{:#events:tabCreate}
 
 
 
@@ -9362,7 +10139,7 @@ $(function () {
 
 
 
-Triggered before the ribbon tab create.
+Triggered before the ribbon tab is created.
 
 <table class="params">
 <thead>
@@ -9391,7 +10168,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9443,13 +10220,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-      onTabCreate: function (args) {}
+      tabCreate: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -9460,8 +10237,8 @@ $(function () {
 
 
 
-### onTabRemove
-{:#events:ontabremove}
+### tabRemove
+{:#events:tabRemove}
 
 
 
@@ -9470,7 +10247,7 @@ $(function () {
 
 
 
-Triggered after the tab item removed from the ribbon control.
+Triggered after the tab item is removed from the ribbon control.
 
 <table class="params">
 <thead>
@@ -9499,7 +10276,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9515,15 +10292,9 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-removedTab{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns removed tab header.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-removedPanel{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns removed tab content panel.</td>
+removedIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the removed index.</td>
 </tr>
 </tbody>
 </table>
@@ -9557,13 +10328,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-      onTabRemove: function (args) {}
+      tabRemove: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -9574,8 +10345,8 @@ $(function () {
 
 
 
-### onTabSelect
-{:#events:ontabselect}
+### tabSelect
+{:#events:tabSelect}
 
 
 
@@ -9584,7 +10355,7 @@ $(function () {
 
 
 
-Triggered after the ribbon tab item selected in the ribbon control.
+Triggered after the ribbon tab item is selected in the ribbon control.
 
 <table class="params">
 <thead>
@@ -9613,7 +10384,7 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9683,13 +10454,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-    onTabSelect: function (args) {}
+    tabSelect: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
@@ -9700,8 +10471,8 @@ $(function () {
 
 
 
-### onToggleButtonClick
-{:#events:ontogglebuttonclick}
+### toggleButtonClick
+{:#events:toggleButtonClick}
 
 
 
@@ -9725,7 +10496,7 @@ Triggered when the expand/collapse button is clicked successfully .
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -9773,13 +10544,13 @@ $(function () {
     $("#Ribbon").ejRibbon({
 // Set the width during initialization.         
      width: "100%",
-       applicationTab: { Type: "ApplicationMenu", itemID: "menu", menuSettings: { openOnClick: false } },
+       applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "menu", menuSettings: { openOnClick: false } },
        tabs: [{
            id: "home", text: "HOME", groups: [{
                 text: "New", alignType: ej.Ribbon.alignType.rows,type:"custom",contentID:"btn"
            }]
         }],
-      onToggleButtonClick: function (args) {}
+      toggleButtonClick: function (args) {}
   });
 });             
 </script>  {% endhighlight %}
