@@ -9,11 +9,11 @@ documentation: ug
 
 # Toolbar Support
 
-The **RichTextEditor** control provides a number of tool items that provide a rich look to the text entered in the editing area. It brings to the Web popular editing features found in desktop word processors such as **Microsoft Word** and **OpenOffice.org Writer.**
+The **RichTextEditor** control provides a number of tool items that provide a rich look to the text entered in the editing area. It also provides the Web popular editing features found in desktop word processors such as **Microsoft Word** and **OpenOffice.org Writer.**
 
 ## Text Formatting 
 
-All the formatting tools allow you to change the appearance of text. Formatted text is visually interesting and easy for the visitor to read. Formatting tags provide emphasis or act as markers to help the visitor, find information. Some text styling options are also available as a drop-down list. Upon clicking them, the list opens and you can select a styling option.
+All the formatting tools allow you to change the appearance of text. Formatted text is visually interesting and easy to read. Formatting tags provide emphasis or act as markers to help the visitor, find information. Some text styling options are also available as a drop-down list. On clicking them, the list opens and you can select a styling option.
 
 ## List of Toolbar Items
 
@@ -38,13 +38,13 @@ All the formatting tools allow you to change the appearance of text. Formatted 
 
 ### Undo and Redo
 
-As the name explains, the **undo** function allows you to undo a number of recent actions in an editing area. To go along with **Undo** is **Redo**. Using this tool, you can avoid mistakes while editing.
+As the name explains, the **undo** function allows you to undo a number of recent actions in an editing area. To go along with **Undo** is **Redo**. You can avoid errors while editing, by using this tool.
 
 ### Clipboard action
 
-Most used clipboard actions are cut, copy, and paste. These tools are used to rearrange the content within your editing area. You can copy and paste the images or text from locations other than the editing area.
+The most used clipboard actions are cut, copy, and paste. These tools are used to rearrange the content within your editing area. You can copy and paste the images or text from locations other than the editing area.
 
-To render RichTextEditor with the above toolbar options, include the following code in your **HTML** page.
+To render RichTextEditor with the above toolbar options, include the following code example in your **HTML** page.
 
 
 
@@ -57,7 +57,7 @@ To render RichTextEditor with the above toolbar options, include the following c
 
 {% endhighlight %}
 
-Add the following code in your script section.
+Add the following code example in your script section.
 
 {% highlight js %}
 
@@ -90,6 +90,6 @@ Add the following code in your script section.
 
 ![](Toolbar-Support_images/Toolbar-Support_img1.png)
 
-The following image consists of formatted content by using the available toolbar items in **RTE** control.
+The following screenshot consists of formatted content by using the available toolbar items in **RTE** control.
 
 ![](Toolbar-Support_images/Toolbar-Support_img2.png)
