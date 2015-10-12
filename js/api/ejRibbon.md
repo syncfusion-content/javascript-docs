@@ -133,7 +133,7 @@ Requires
 
 
 
-Property to enable the ribbon resize feature.
+Enables the ribbon resize feature.
 
 
 
@@ -9830,7 +9830,7 @@ Triggered when the ribbon control is expanded.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
