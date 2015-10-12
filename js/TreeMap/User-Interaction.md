@@ -60,7 +60,7 @@ To enable the selection of leaf nodes, the `highlightGroupOnSelection` property 
         
 {% endhighlight %}
         
-{% include image.html url="/js/TreeMap/User-Interaction_images/User-Interaction_img2.png"%}
+{% include image.html url="/js/TreeMap/User-Interaction_images/User-Interaction_img3.png"%}
 
 ## MultiSelection
 
@@ -83,7 +83,7 @@ To select multiple items simulataneously, the mouse tap should be done along wit
         
 {% endhighlight %}
 
-{% include image.html url="/js/TreeMap/User-Interaction_images/User-Interaction_img3.png"%}
+{% include image.html url="/js/TreeMap/User-Interaction_images/User-Interaction_img2.png"%}
 
 #### Group Selection (Multiple)
 
