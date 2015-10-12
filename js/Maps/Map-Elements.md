@@ -9,7 +9,7 @@ documentation: ug
 
 # Map Elements
 
-Map control contains a set of map elements including shapes, bubbles, markers, legend, labels and data items that can be visualized with customized appearance showing additional information on the map using databound datas.
+Map control contains a set of map elements such as shapes, bubbles, markers, legend, labels and data items that can be visualized with the customized appearance showing additional information on the map by using the databound datas.
 
 ## Markers
 
@@ -57,7 +57,7 @@ The `markers` property has a list of objects that contains the data for Annotati
 
 {% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img1.png"%}
 
-### Adding Marker objects to map
+### Adding Marker objects to the map
 
 Without datasource, n number of markers can be added to shape layers with `markers` property. Each marker object contains the following list of properties.
 
@@ -158,11 +158,11 @@ String</td><td>
 Gets or sets the tooltip template for bubbles.</td></tr>
 </table>
 
-### Adding Bubbles to a Map
+### Add Bubbles to the Map
 
 To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the `maxValue`, `minValue`, and `valuePath` properties as illustrated in the following code sample.
 
-N>Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and shapeSettings. For more details, refer Tooltip and Color Mappings section._
+N>Tooltip and Color Mappings for bubble is to be set as similar to the tooltip and color mappings set in the layers and shapeSettings. For more details, refer to the Tooltip and Color Mappings section._
 
 
 
@@ -205,13 +205,13 @@ N>Tooltip and Color Mappings for bubble is to be set as similar to tooltip and c
 
 ## Legend
 
-A legend is a key used on a map, contains swatches of symbols with descriptions. It provides valuable information for interpreting what the map is displaying and can be represented in various colors, shapes or other identifiers based on the data. It gives a breakdown of what each symbol represents throughout the map.
+A legend is a key used on a map that contains swatches of symbols with descriptions. It provides valuable information for interpreting what the map is displaying and can be represented in various colors, shapes or other identifiers based on the data. It gives a breakdown of what each symbol represents throughout the map.
 
 ### Visibility
 
 The Legends can be made visible by setting the `showLegend` property of legendSettings to true. 
 
-### Positioning of Legend
+### Positioning of the Legend
 
 The legend can be positioned in two ways.
 
@@ -253,7 +253,7 @@ You can set this option by using `position` property in `legendSettings`.
 
 ### Legend Size
 
-The map legend size can be modified using `height` and `width` properties in `legendSettings`.
+The map legend size can be modified by using the `height` and `width` properties in `legendSettings`.
 
 ### Legend for Shapes
 
