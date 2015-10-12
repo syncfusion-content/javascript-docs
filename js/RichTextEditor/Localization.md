@@ -13,7 +13,7 @@ You can globalize the **RTE**, for people of different cultures to post their co
 
 **RTE** support all the cultures. **Globalize.js** is a simple JavaScript library that allows you to use different cultures. Globalize cultures is the open source and you can get all the culture files from http://cdnjs.com/libraries/globalize/ link. 
 
-In this example, **globalize.min.js** file is used that includes all the cultures information. And in this example **Spanish** culture is used. 
+In this example, **globalize.min.js** file is used that includes all the culture's information. And here, **Spanish** culture is used. 
 
 Add the following code example in your **HTML** section to initialize the **RTE** with Spanish content.
 
