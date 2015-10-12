@@ -11,7 +11,7 @@ documentation: ug
 
 **RTE** control supports a rich appearance. This control consist of six flat themes and six gradient themes. To use these twelve themes, you can refer to the themes files in **HTML**. 
 
-Two style sheets are required to apply styles to **RTE** control; one **ej.widgets.core.min.css** and one **ej.theme.min.css**. When you use **ej.widgets.all.min.css**, do not use **ej.widgets.core.min.css** and **ej.theme.min.css** as **ej.widgets.all.min.css** is a combination of these two.
+Two style sheets are required to apply styles to **RTE** control, **ej.widgets.core.min.css** and **ej.theme.min.css**. When you use **ej.widgets.all.min.css**, do not use **ej.widgets.core.min.css** and **ej.theme.min.css** as **ej.widgets.all.min.css** is a combination of these two.
 
 The core style sheet applies styles related to positioning and size, but are not related to the color scheme and are always required for the control to look right and function properly. The theme style sheet applies theme-specific styles, like colors and backgrounds.
 
