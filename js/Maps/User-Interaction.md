@@ -47,7 +47,7 @@ You can select the shape by tapping on the shape. The Single selection is enable
 
 ## MultiSelection
 
-This feature enables you to select multiple map shapes on mouse taps accompanied by "**Control**" key press. For this feature to get enabled, we have to set the property `selectionMode` as "**multiple**" along with `enableSelection` property.
+This feature enables you to select multiple map shapes on mouse taps accompanied by the "**Control**" key press. To enable this feature, set the `selectionMode` property as "**multiple**" along with the `enableSelection` property.
 
 {% highlight js %}
 
@@ -73,8 +73,8 @@ This feature enables you to select multiple map shapes on mouse taps accompanied
 
 ## Dragging On Selection
 
-This feature enables you to select the shapes by dragging over the shapes. While dragging over the shapes, a rectangle is generated and the shapes which come within the rectangle is selected.
-You can enable this feature by setting the property `draggingOnSelection` in the `layers` to **True**.
+This feature enables you to select the shapes by dragging over the shapes. While dragging over the shapes, a rectangle is generated and the shapes that comes within the rectangle is selected.
+You can enable this feature by setting the `draggingOnSelection` property in the `layers` to **True**.
 
 {% highlight js %}
 

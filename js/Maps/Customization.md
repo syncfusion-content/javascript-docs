@@ -15,7 +15,7 @@ documentation: ug
 
 The `shapeSettings` defines the basic customization settings of shapes in the map. 
 
-The important property that makes an impact on shape colors is `autoFill`. This `autoFill` property is available in `shapeSettings`. 
+The important property that makes an impact on shape colors is the `autoFill`. This `autoFill` property is available in the `shapeSettings`. 
 
 * `fill` - It is used to set the fill color of the shapes in the map.
 * `stroke` - It is used to set the border color of the shape in the map.
@@ -24,7 +24,7 @@ The important property that makes an impact on shape colors is `autoFill`. This 
 * `highlightBorderWidth` - It is used to set the mouse hover border width for shapes in the map.
 * `selectionColor` - It is used to set the selection color for shapes in the map.
 
-The above properties of `shapeSettings` are applied only when `autoFill` property value is false. By default, `autoFill` property value is false.
+The above properties of `shapeSettings` are applied only when the `autoFill` property value is set to false. By default, the `autoFill` property value is false.
 
 {% highlight js %}
 
