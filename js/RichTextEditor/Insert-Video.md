@@ -13,7 +13,7 @@ Videos can be included in **RTE** by rendering the embedded code of a video. In 
 
 ![](Insert-Video_images/Insert-Video_img1.png)
 
-N> Insert video option is enabled only in HTML5 support browsers.
+N> Insert video option is enabled only in HTML5 supported browsers.
 
 
 
