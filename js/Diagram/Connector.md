@@ -9,546 +9,748 @@ documentation: ug
 
 # Connector
 
-Connectors are objects used to create a link between two nodes. A connector is a line that has connection points at the ends of the line and stays connected to the elements that you attach it to.
+Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them. 
 
 {% include image.html url="/js/Diagram/Connector_images/Connector_img1.png"%}
 
 ## Create Connector
 
-`Connector` is created from JSON data and added to the Diagram using `diagram`'s `connectors` property. The `connector`'s `name` must be unique. By default, the connector type is `straight`. The following code illustrates how to create a Connector and add it to Diagram.
+Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of segments.
+To explore the properties of a connector, refer [Connector Properties](/js/api/ejDiagram "members:connectors").
+
+### Add connectors through connectors collection
+
+The `sourcePoint` and ` targetPoint` properties of connector allows you to define the end points of a connector. Following code snippet illustrates how to add a connector through connector collection.
 
 {% highlight js %}
 
-//create a connector 
-var connectors = [{
-   name: "connector",
-   lineWidth: 2,
-   sourcePoint: { x: 300, y: 40 },
-   targetPoint: { x: 400, y: 150 }
-}];
+    //Create connector
+    var connectors = [
+        // Define JSON
+        {
+            //Name of the connector
+            name: "connector",
 
-//add connectors to diagram
-$("#Diagram").ejDiagram({
-   connectors: connectors
-});
+            //Set source and target points 
+            sourcePoint: {
+                x: 100,
+                y: 100
+            },
+            targetPoint: {
+                x: 200,
+                y: 200
+            }
+        }
+    ];
+
+    //Initialize Diagram
+    $("#DiagramContent").ejDiagram({
+        //Assign connectors collection to diagram
+        connectors: connectors
+    });
+
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img2.png" %}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img2.png"%}
 
-## Connecting Nodes
+### Add connector at run time
 
-Connector is connected to the bounds of the node and at a specific point on the node. You are required to assign the source node name to `connector`'s `sourceNode` property and target node name to `connector`'s `targetNode` property, in order to establish the connection. The port to port connection between specific points on node is established by assigning the name of the node's port to `connector`'s `targetPort`/`sourcePort`. At runtime, you can change the point of connection while dragging or rotating node.
+Connectors can be added at runtime with the client side method `add`. Following code snippet illustrates how to add connector at runtime.
 
 {% highlight js %}
 
-//create a connection between headNode/tailNode using connector
+    // Define JSON
+    var connector = {
+        name: "connector",
+        sourcePoint: {
+            x: 100,
+            y: 100
+        },
+        targetPoint: {
+            x: 200,
+            y: 200
+        }
+    };
+    var diagram = $("#DiagramContent").ejDiagram("instance");
+    // Add to diagram
+    diagram.add(connector);
 
-var connector = [{
-    segment: type: ej.datavisualization.Diagram.Segment.Orthogonal
-    sourceNode: "headNode", //set name of sourceNode
-    targetNode: "tailNode" //set name of targetNode
-}];
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img17.png" %}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img3.png"%}
 
-The point of connection is changed optimally at runtime while performing operations such as Rotating and Dragging on Source/Target Node of Connector. In case of static or specific point connection at runtime, the [Port](/js/Diagram/Port) assists to maintain specific point connection between Nodes.
+### Connectors from palette
 
-## Connecting Ports
+Connectors can be predefined and added to symbol palette. You can drop those connectors into diagram when needed.
 
-Port establishes the connection with nodes at a specific point. For creating specific port connection, refer the link [Port to Port Connection](/js/Diagram/Port).
+For more information about adding connectors from symbol palette, refer [Symbol Palette](/js/Diagram/Symbol-Palette).
 
-## Appearance
+### Connectors through data source
 
-You can customize the appearance of the connector by setting a desired value to the appropriate appearance properties. The following code illustrates how to customize the appearance of connector.
+Connectors will be automatically generated based on the relationships defined through data source.
+The default properties for these connectors will be fetched from default settings. 
 
-<table>
-<tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-linewidth</td><td>
-number</td><td>
-Gets or sets the width of the line</td></tr>
-<tr>
-<td>
-lineDashArray</td><td>
-string</td><td>
-Gets or sets the pattern of dashes and gaps used to stroke connector border.</td></tr>
-<tr>
-<td>
-lineColor</td><td>
-String</td><td>
-Gets or sets the line color of the connector</td></tr>
-<tr>
-<td>
-opacity</td><td>
-number</td><td>
-Gets or sets the opacity of the connector</td></tr>
-</table>
+For more information about data source, refer [Data Binding](/js/Diagram/Data-Binding).
+
+### Draw connectors
+
+Connectors can be interactively drawn by clicking and dragging on diagram surface using **DrawingTool**. For more information about drawing connectors, refer [Draw Connectors](/js/Diagram/Tools "Drawing-Tools:Connectors").
+
+### Update Connector at runtime
+     
+The client side method `updateConnector` is used to update the connectors at run time. Following code snippet illustrates how to update a connector at runtime.
+
+{% highlight js %}
+
+    var diagram = $("#DiagramContent").ejDiagram("instance");
+    diagram.updateConnector("connectorName", {
+                lineColor: "#1BA0E2",
+                lineWidth: 5,
+                lineDashArray: "5,5"
+            });
+            
+{% endhighlight %}
+
+## Connect nodes
+
+The `SourceNode` and `targetNode` properties allow to define the nodes that have to be connected. Following snippet illustrates how to connect two nodes.
+
+{% highlight js %}
+
+// Define JSON to create tasks
+var task1 = { name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }] };
+var task2 = { name: "task2", offsetX: 400, offsetY: 200, labels: [{ text: "Task 2" }] };
+
+//Add tasks to nodes collection
+var nodes = [
+     task1,
+     task2
+  ];
+
+var connectors = [
+   //Define JSON
+   {
+      //Name of the connector
+      name: "flow1",
+
+      //Name of the source and target nodes
+      sourceNode: "task1",      
+      targetNode: "task2"
+
+   }];
+   
+$("#DiagramContent").ejDiagram({
+        //Set nodes collection to diagram model
+        nodes: nodes,
+
+        //Set connectors collection
+        connectors: connectors,
+
+        //Define the properties that carries the common values
+        defaultSettings: {
+            //Define the common values for the nodes
+            node: {
+                width: 100,
+                height: 50,
+                fillColor: "darkCyan",
+                borderColor: "black",
+                type: ej.datavisualization.Diagram.Shapes.Flow,
+                shape: ej.datavisualization.Diagram.FlowShapes.Process,
+                labels: [{ fontColor: "white" }]
+            }
+        }
+    });
+
+{% endhighlight %}
+
+{% include image.html url="/js/Diagram/Connector_images/Connector_img4.png"%}
+
+N> By default, connections will be created at the intersecting point of segments and node bounds. If connection needs to be created in between any specific points of source and target nodes, it can be achieved with connection ports. 
+
+### Connections with ports
+
+The `sourcePort` and `targetPort` properties allows to create connections between some specific points of source/target nodes. 
+Following code snippet illustrates how to create port to port connections.
 
 
 {% highlight js %}
-var segments = [{
-    type: "orthogonal"
-}];
 
-//set various appearance properties to connector
-connectors = [{
-    name: "connector1",
-    lineWidth: 2,
-    segments: segments,
-    lineColor: "black",
-    sourcePoint: { x: 210, y: 40 },
-    targetPoint: { x: 450, y: 150 }
-}];
+    //Define ports for task2 
+    var ports = [
+      { name: "in", offset: { x: 1, y: 0.65 }, shape: "circle", visibility: "visible",  
+        fillColor: "black" },
+      { name: "out", offset: { x: 1, y: 0.35 }, shape: "circle", visibility: "visible",  
+        fillColor: "black" }
+    ];
+
+    // Define JSON to create tasks
+    var task1 = { name: "task1", offsetX: 350, offsetY: 300, labels: [{ text: "Task 1" }] };
+    var task2 = { name: "task2", offsetX: 200, offsetY: 250, labels: [{ text: "Task 2" }],   
+     // Add ports to node
+     ports: ports };
+    var task3 = { name: "task3", offsetX: 350, offsetY: 200, labels: [{ text: "Task 3" }] };
+
+    //Add tasks to nodes collection
+    var nodes = [task1, task2, task3];
+    var connectors = [
+        {
+            name: "flow1", sourceNode: "task1", targetNode: "task2",
+            //Name of the target port that is defined in target node
+            targetPort: "in"
+        },
+        {
+            name: "flow2", sourceNode: "task2", targetNode: "task3",
+            //Name of the source port that is defined in source node
+            sourcePort: "out"
+        }];
+
+     $("#DiagramContent").ejDiagram({
+        //Set nodes collection to diagram model
+        nodes: nodes,
+
+        //Set connectors collection
+        connectors: connectors,
+
+        //Define the properties that carries the common values
+        defaultSettings: {
+            //Define the common values for the nodes
+            //Define common values for connectors
+            connector: { segments: [{ type: "orthogonal" }] }
+        }
+    });
+
 {% endhighlight %}
+
+{% include image.html url="/js/Diagram/Connector_images/Connector_img5.png"%}
 
 ## Segments
 
-The connector has three types of segments.
+The path of the connector is defined with a collection of segments. There are three types of segments.
 
-* Orthogonal Segments
-* Straight Segments
-* Bezier Segments
+### Straight
 
-### Orthogonal Segments
-
-Orthogonal segments are visually represented based on the specified length and direction values. The following code example illustrates how to add a Connector with an Orthogonal Segment.
+Straight segment allows to create a straight line. 
+To create a straight line, you have to add a straight segment to `segments` collection of connector and the `type` of the segment should be specified as "straight". Following code snippet illustrates how to create a default straight segment.
 
 {% highlight js %}
 
-//initializing connectors
-var connectors = [];
+    //Define JSON
+    var connector = {
+        name: "connector",
+        sourcePoint: { x: 100, y: 100 },
+        targetPoint: { x: 200, y: 200 },
 
-//Default Orthogonal Segment
-var segments = [{ type: "orthogonal"}];
+        //Define segment collection
+        segments: [
+            {
+                //If there is no previous segment, line will start from source point
+                //If the end point is not specified, line will end at target point
+                //Define the type of the segment
+                type: "straight"
+            }]
+    };
+    connectors.push(connector);
 
-//create a connector 
-var connectors = [{
-   name: "connector",
-   lineWidth: 2,
-   segments: segments,
-   sourcePoint: { x: 300, y: 40 },
-   targetPoint: { x: 400, y: 150 }
-}];
-
-//add connectors to diagram
-$("#Diagram").ejDiagram({
-   connectors: connectors
-});
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img3.png" %}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img6.png"%}
 
-The following code illustrates how to customize Orthogonal Segment.
+The `point` property of straight segment allows you to define the end point of it. Following code snippet illustrates how to define the end point of a straight segment.
 
 {% highlight js %}
 
-//Segments with direction and length
-var segments = [{
-   type: "orthogonal",
-   direction: "bottom",
-   length: 90
-}];
+    var connectors = [];
+    //Define JSON
+    var connector = {
+        name: "connector",
+        sourcePoint: { x: 100, y: 100 },
+        targetPoint: { x: 200, y: 300 },
 
-//create a connector 
-var connectors = [{
-   name: "connector",
-   lineWidth: 2,
-   segments: segments,
-   sourcePoint: { x: 300, y: 40 },
-   targetPoint: { x: 400, y: 150}
-}];
+        //Define segment collection
+        segments: [
+            {
+                // Define the type of the segment
+                type: "straight",
+                // Define the end point of the segment
+                point: { x: 100, y: 200 }
+                //An additional straight line will be drawn from this end point to the target point
+            }]
+    };
+    connectors.push(connector);
 
-//add connectors to diagram
-$("#Diagram").ejDiagram({
-   connectors: connectors
-});
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img4.png" %}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img7.png"%}
 
-### Straight Segment
+### Orthogonal
 
-The straight segments can be added by specifying points as to where the line has to be drawn. The segment end point links the source point and target point of the connector. The following code example illustrates how to add Straight Segment through code.
+Orthogonal segments are used to create segments that are perpendicular to each other. 
 
-{% highlight js %}
-//Adding straight segments
-var segments = [
-    { type: "straight", point: { x: 400, y: 150 } },
-    { type: "straight", point: { x: 300, y: 10 } }
-]; 
-
-var connector = [
-    {
-        segments: segments,
-        targetPoint: { x: 300, y: 150 },
-        sourcePoint: { x: 300, y: 150 }
-    }
-];
-{% endhighlight %}
-
-{% include image.html url="/js/Diagram/Connector_images/Connector_img5.png" %}
-
-{% include image.html url="/js/Diagram/Connector_images/Connector_img6.png" %}
-
-The control points can be added or deleted at runtime with shortcut key combination ctrl + shift +click on the control point.
-
-### Bezier Segment
-
-Bezier segments can be added through points or vector.
-
-* **Points (point1, point2)** are absolute and are specified based on the origin of page.
-* **Vectors (vector1, vector2)** are relative and are specified based on the length and angle between end points and control points.
-
-The following code example illustrates how to add Bezier segments.
-
-{% highlight js %}
-//Adding Control Points
-var segments = [{
-    type: "bezier",
-    point1: { x: 40, y: 80 },
-    point2: { x: 40, y: 72 }
-}];
-
-var connector = [{
-    segments: segments,
-    sourcePoint: { x: 290, y: 150 },
-    targetPoint: { x: 210, y: 40 }
-}];
-{% endhighlight %}
-
-{% include image.html url="/js/Diagram/Connector_images/Connector_img7.png" %}
-
-The following code example illustrates how to add vector point for Bezier segments.
-
-{% highlight js %}
-//Adding Bezier through vectors
-var segments = [{
-    type: "bezier",
-
-    //Length and angle between source point and (control point 1 or control point 2)
-    vector1: { angle: 180, distance: 120 },
-    vector2: { angle: 10, distance: 140 }
-}];
-
-var connectors = [{
-    segments: segments,
-    sourcePoint: { x: 310, y: 180 },
-    targetPoint: { x: 190, y: 40 }
-}];
-{% endhighlight %}
-
-{% include image.html url="/js/Diagram/Connector_images/Connector_img8.png" %}
-
-### Editing Segments
-
-The `segments` can be edited during runtime by dragging control thumbs. Segments can be updated when neighboring segments are adjusted.
-
-{% include image.html url="/js/Diagram/Connector_images/Connector_img9.png" %}
-
-## Connector Padding
-
-`connectorPadding` allows you to adjust the space between connector's end point and the object to which it is connected (Node, Group, or Port). 
-
-### Endpoint adjustment specific to connector ends
-
-Padding distance between source or target end with its connected end (Node, Group, or Port) can be adjusted by using `sourcePadding` and `targetPadding` respectively. The following code examples illustrate how to adjust the distance by using `padding` property.
+You need to set the segment `type` as "othogonal" to create a default orthogonal segment. Following code snippet illustrates how to create a default orthogonal segment.
 
 {% highlight js %}
 
-//Sets padding for the Connector.
-var connector = [{
-   sourcePadding: 15,
-   targetPadding: 20
-}];
+    var connectors = [];
+    //Define JSON
+    var connector = {
+        name: "connector",
+        sourcePoint: { x: 100, y: 100 },
+        targetPoint: { x: 200, y: 200 },
+        //Define segment collection
+        segments: [
+            {
+                // Define the type of the segment
+                type: "orthogonal"
+            }]
+    };
+    connectors.push(connector);
+
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img10.png" %}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img8.png"%}
 
-### Endpoint adjustment specific to nodes
-
-`ConnectorPadding` property of a node is used to specify the amount of space needed in pixels between a node and all its connected edges. The following code examples illustrate how to pad edges connected to a node.
+The `length` and `direction` properties allow to define the flow and length of segment. Following code snippet illustrates how to create customized orthogonal segments.
 
 {% highlight js %}
 
-//Sets padding for a Node.
-var node = [{
-   connectorPadding: 20
-}];
+    var connectors = [];
+    //Define JSON
+    var connector = {
+        name: "connector",
+        sourcePoint: { x: 100, y: 100 },
+        targetPoint: { x: 200, y: 200 },
+        //Define segment collection
+        segments: [
+            {
+                // Orthogonal segment of 50px length to the bottom
+                type: "orthogonal",
+                length: 50,
+                direction: "bottom"
+                // An additional orthogonal segment will be added from the end of the   
+                 last segment to the target point
+            }]
+    };
+    connectors.push(connector);
+
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img11.png" %}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img9.png"%}
 
-### Endpoint adjustment specific to ports
+#### Avoid overlapping
 
-`connectorPadding` property of a port is used to specify the amount of space needed in pixels between a port and all its connected edges. The following code examples illustrate how to pad edges connected to a port.
+Orthogonal segments will be automatically re-routed, in order to avoid overlapping with the source and target nodes. Following images illustrate how orthogonal segments are re-routed. 
+
+{% include image.html url="/js/Diagram/Connector_images/Connector_img10.png"%}
+
+{% include image.html url="/js/Diagram/Connector_images/Connector_img11.png"%}
+
+N> Overlapping with source and target nodes only will be avoided. Other nodes will not be considered as obstacles.
+
+### Bezier
+
+Bezier segments are used to create curve segments and the curves are configurable either with the control points or with vectors.
+
+To create a bezier segment, the `type` property of segment needs to be set as "bezier". Following code snippet illustrates how to create a default Bezier segment.
 
 {% highlight js %}
 
-//Sets Padding for a port.
-var port = [{
-   connectorPadding: 20
-}];
+    var connectors = [];
+    //Define JSON
+    var connector = {
+        name: "connector",
+        sourcePoint: { x: 100, y: 100 },
+        targetPoint: { x: 200, y: 200 },
+        //Define segment collection
+        segments: [
+            {
+                // Define the type of the segment
+                type: "bezier"
+            }]
+    };
+    connectors.push(connector);
+
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img12.png" %}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img12.png"%}
 
-## Line Bridging
-
-**Line Bridging** creates a bridge for lines to smartly cross over other lines, at points of intersection. When two line connectors meet each other, the line with the higher z-order draws an arc over the line with lower z-order. Only straight and orthogonal connectors support line bridging. Line bridging is disabled by default, you can enable it by adding `ConnectorConstraints.Bridging` in constraints. The following code illustrates how to enable line bridging.
+The `point1` and `point2` properties of bezier segment enable you to set the control points. Following code snippet illustrates how to configure the Bezier segments with control points.
 
 {% highlight js %}
 
-//Enable Line Bridging for a single connector
-var constraints = ej.datavisualization.Diagram.ConnectorConstraints;
-var constraint = constraints.Bridging | constraints.Default;
-var connector = [{
-   constraints: constraint
-}];
-
-//Enable Line Bridging for all connectors added to diagram
-var constraints = ej.datavisualization.Diagram.DiagramConstraints;
-var constraint = constraints1.Bridging | constraints1.Default;
-
-//Initialize the diagram
-$("#diagram").ejDiagram({
-      constraints: constraint;
-});
+    var connectors = [];
+    //Define JSON
+    var connector = {
+        name: "connector",
+        sourcePoint: { x: 100, y: 200 },
+        targetPoint: { x: 250, y: 200 },
+        //Define segment collection
+        segments: [
+            {
+                // Define the type of the segment
+                type: "bezier",
+                // First control point – 
+                // an absolute position from the page origin
+                point1: { x: 125, y: 75 },
+                // Second control point – 
+                // an absolute position from the page origin
+                point2: { x: 225, y: 75 }
+            }]
+    };
+    connectors.push(connector);
+    
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img13.png" %}
-
-When the connector constraint is set as `ConnectorConstraints.InheritBridging`, bridging is based on `DiagramConstraints`.
-
-### Line Bridging Direction
-
-Direction of the Line Bridge can be customized using the `bridgeDirection` property. This property decides the intersecting segment that shows a bridge based on your preferred direction. The default value for the Diagram's `bridgeDirection` property is `ej.datavisualization.Diagram.BridgeDirection.Top`.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Description</th><th>
-Value</th></tr>
-<tr>
-<td>
-bridgeDirection</td><td>
-Gets or sets the BridgeDirection for horizontal and vertical lines.</td><td>
-Enum<br/>
-BridgeDirection.Left<br/>BridgeDirection.Right<br/>BridgeDirection.Top<br/>BridgeDirection.Bottom</td></tr>
-</table>
+{% include image.html url="/js/Diagram/Connector_images/Connector_img13.png"%}
 
 
-The following code example is used to set Bridge Direction.
-
-**Example 1:** Bridge for Horizontal Connector, with BridgeDirection as Top.
+The `vactor1` and `vector2` properties of bezier segment enable you to define the vectors. Following code illustrates how to configure a bezier curve with vectors.
 
 {% highlight js %}
 
-//setting the Bridge Direction
-$("#diagram").ejDiagram({
-   bridgeDirection: ej.datavisualization.Diagram.BridgeDirection.Top
-});
+    //Define JSON
+    var connector = {
+        name: "connector",
+        sourcePoint: { x: 100, y: 200 },
+        targetPoint: { x: 250, y: 200 },
+        //Define segment collection
+        segments: [
+            {
+                // Define the type of the segment
+                type: "bezier",
+                // Length and angle between the source point and the first control point
+                vector1: { angle: 270, distance: 75 },
+                // Length and angle between the target point and the second control point
+                vector2: { angle: 270, distance: 75 }
+            }]
+    };
+    connectors.push(connector);
+    
+ {% endhighlight %}
 
-{% endhighlight %}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img14.png"%}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img14.png" %}
+### Complex segments
 
-**Example 2:** Bridge for Vertical Connector, with BridgeDirection as Left.
-
-{% highlight js %}
-
-//setting the Bridge Direction
-$("#diagram").ejDiagram({
-   bridgeDirection: ej.datavisualization.Diagram.BridgeDirection.Left
-});
-
-{% endhighlight %}
-
-{% include image.html url="/js/Diagram/Connector_images/Connector_img15.png" %}
-
-The following API method is used to change the BridgeDirection at runtime.                                                                                                
-
-{% highlight js %}
-var diagram = $("#diagram").ejDiagram("instance");
-//update the Bridge Direction at runtime.
-diagram.update({
-    bridgeDirection: ej.datavisualization.Diagram.BridgeDirection.Top
-});
-{% endhighlight %}
-
-## Corner Radius
-
-`cornerRadius` support enables you to create connectors with rounded corners. The following code example illustrates how to set corner radius for connectors.
+Multiple segments can be defined one after another. To create a connector with multiple segments, you need to define and add the segments to`segments` collection of connector. Following code snippet illustrates how to create a connector with multiple segments.
 
 {% highlight js %}
-//Adding corner radius for connector
-var connector = {
-   cornerRadius: 20
-};
+
+    var connectors = [];
+    //Define JSON
+    var connector = {
+        name: "connector",
+        sourcePoint: { x: 100, y: 200 },
+        targetPoint: { x: 250, y: 300 },
+        //Define segment collection
+        segments: [
+            {
+                // Segment of length 100px to the bottom
+                type: "orthogonal",
+                length: 150,
+                direction: "bottom"
+            },
+            {
+                //Defines a segment of 150px length to the right
+                type: "orthogonal",
+                direction: "right",
+                length: 150
+            }
+            //An additional orthogonal segment will be added from the end of the last segment to the target point
+        ]
+    };
+    connectors.push(connector);
+    
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img16.png" %}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img15.png"%}
 
-N>  For node creation refer the link [Node creation](/js/Diagram/Node#create-node). And for creating connection refer the link [Connecting nodes](/js/Diagram/Connector#create-connector). 
 ## Decorator
 
-You can decorate the source point and target point of the connector using decorator shape. The `sourceDecorator` and `targetDecorator` properties are used to add decorators to connector. The following code illustrates how decorator is created and added at connector's target point.
+Start and end points of a connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the `sourceDecorator` and `targetDecorator` properties of connector.
+To explore the properties of decorators, refer [Decorator Properties](/js/api/ejDiagram "members:connectors-sourceDecorator").
+
+The `shape` property of decorator allows to define the shape of the decorators. Following code snippet illustrates how to create decorators of various shapes.
 
 {% highlight js %}
 
-//set targetDecorator and sourceDecorator
-var connector = [{
-   targetDecorator: {
-      shape: ej.datavisualization.Diagram.DecoratorShapes.Arrow,
-      width: 10,
-      height: 10
-   },
-   sourceDecorator: {
-      shape: ej.datavisualization.Diagram.DecoratorShapes.Circle,
-      width: 10,
-      height: 10
-   }
-}];
+    var DecoratorShapes = ej.datavisualization.Diagram.DecoratorShapes;
+    var connectors = [];
+    //Define JSON
+    var connector = {
+        name: "connector", sourcePoint: { x: 100, y: 100 }, 
+        targetPoint: { x: 200, y: 200 },
+        // Decorator shape- circle
+        sourceDecorator: {
+            shape: DecoratorShapes.Circle,
+            width: 10, height: 10
+        },
+
+        // Decorator shape - Arrow
+        targetDecorator: {
+            shape: DecoratorShapes.Arrow, 
+            width: 10, height: 10
+        }
+    };
+    connectors.push(connector);
+
+    var connector2 = {
+        name: "connector2", sourcePoint: { x: 300, y: 100 }, 
+        targetPoint: { x: 400, y: 200 },
+        // Decorator shape - Open arrow
+        sourceDecorator: {
+            shape: DecoratorShapes.Diamond, 
+            width: 10, height: 10
+        },
+
+        // Decorator shape - Diamond
+        targetDecorator: {
+            shape: DecoratorShapes.OpenArrow, 
+            width: 10, height: 10
+        }
+    };
+    connectors.push(connector2);
+
+    var connector3 = {
+        name: "connector3", sourcePoint: { x: 500, y: 100 },  
+        targetPoint: { x: 600, y: 200 },
+
+        // Decorator shape - Path
+        targetDecorator: {
+            shape: DecoratorShapes.Path,
+            pathData: "M 376.892,225.284L 371.279,211.95L 376.892,198.617L 350.225,211.95L 376.892,225.284 Z"
+        }
+    };
+    connectors.push(connector3);
 
 {% endhighlight %}
 
+{% include image.html url="/js/Diagram/Connector_images/Connector_img16.png"%}
+
+## Padding
+
+Padding is used to leave space between the Connector's end point and the object to which it is connected.
+
+The `sourcePadding` and `targerPadding` properties of connector define the space to be left between the connection end points and the source and target nodes of connector. Following code snippet illustrates how to leave space between the connection end points and source, target nodes.
+
+{% highlight js %}
+
+// Define JSON to create tasks
+    var task1 = { name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }] };
+    var task2 = { name: "task2", offsetX: 400, offsetY: 200, labels: [{ text: "Task 2" }] };
+
+    //Add tasks to nodes collection
+    var nodes = [
+        task1,
+        task2
+    ];
+
+    var connectors = [
+        //Define JSON
+        {
+            name: "flow1", sourceNode: "task1", targetNode: "task2",
+            // Space between source point and source object
+            sourcePadding: 5,
+            // Space between target point and target object
+            targetPadding: 10
+        }];
+
+{% endhighlight %}
+
+{% include image.html url="/js/Diagram/Connector_images/Connector_img17.png"%}
+
+The `connectorPadding` property of node defines the space to be left between the node bounds and its edges. Following code snippet illustrates how to leave space between a node and its connections.
+
+{% highlight js %}
+
+    // Define JSON to create tasks
+    var task1 = {
+        name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }],
+        //Space between the node and its edges
+        connectorPadding: 5
+    };
+
+    var task2 = { name: "task2", offsetX: 400, offsetY: 200, labels: [{ text: "Task 2" }] };
+
+    //Add tasks to nodes collection
+    var nodes = [
+        task1,
+        task2
+    ];
+    var connectors = [
+        //Define JSON
+        {
+            name: "flow1", sourceNode: "task1", targetNode: "task2"
+        }];
+
+{% endhighlight %}
+
+{% include image.html url="/js/Diagram/Connector_images/Connector_img18.png"%}
+
+The `connectorPadding` property of port defines the space between the ports and its in/out edges. Following code snippet illustrates how to leave space between ports and its connections.
+
+{% highlight js %}
+
+// Define JSON to create tasks
+    var ports = [{
+        name: "port", offset: { x: 0, y: 0.5 }, shape: "circle",
+        visibility: "visible", fillColor: "black",
+        //space between port and its edges
+        connectorPadding: 5
+    }];
+
+    var task1 = { name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }] };
+    var task2 = { name: "task2", offsetX: 400, offsetY: 200, labels: [{ text: "Task 2" }], ports: ports };
+
+    //Add tasks to nodes collection
+
+    var nodes = [
+        task1,
+        task2
+    ];
+
+    var connectors = [
+        //Define JSON
+        {
+            name: "flow1", sourceNode: "task1", targetNode: "task2",
+            targetPort: "port"
+        }];
+
+{% endhighlight %}
+
+{% include image.html url="/js/Diagram/Connector_images/Connector_img19.png"%}
+
+## Bridging
+
+Line Bridging creates a bridge for lines to smartly cross over other lines, at points of intersection. When two line connectors meet each other, the line with the higher z-order (upper one) draws an arc over the underlying connector. 
+Bridging can be enabled/disabled either with the `constraints` property of connector or with diagram `constraints`. Following code snippet illustrates how to enable line bridging.
+
+{% highlight js %}
+
+var Diagram = ej.datavisualization.Diagram;
+
+//Enable briding for a single connector
+    var connector = {    
+        name: "connector1", sourcePoint: { x: 100, y: 100 }, 
+        targetPoint: { x: 200, y: 200 },
+        constraints: Diagram.ConnectorConstraints.Default
+// Remove inherit bridging or else bridging will be enabled/disabled based on diagram constraints
+         & ~Diagram.ConnectorConstraints.InheritBridging
+//Include bridging
+         | Diagram.ConnectorConstraints.Bridging    };    
+
+//Enable bridging for every connector added in the model
+    $("#DiagramContent").ejDiagram({
+        constraints: Diagram.DiagramConstraints.Default |   
+        Diagram.DiagramConstraints.Bridging
+    });    
+{% endhighlight %}
+
+{% include image.html url="/js/Diagram/Connector_images/Connector_img20.png"%}
+
+The direction of the bridge can be customized with the property `bridgeDirection`. bridgeDirection defines in which intersecting segment, the bridge has to be inserted. By default, the bridge direction will be top.
+
+To explore the bridge directions, refer [Bridge Directions](/js/Diagram/Interaction "Connection-Editing").
+
+Following code snippet illustrates how to draw the bridge at the bottom direction.
+
+{% highlight js %}
+
+    var DiagramConstraints= ej.datavisualization.Diagram.DiagramConstraints;   
+
+    $("#DiagramContent").ejDiagram({
+        //Set the bridge direction
+        bridgeDirection: "bottom",
+        //Enable bridging
+        constraints:DiagramConstraints.Default | DiagramConstraints.Bridging
+    });
+
+{% endhighlight %}
+
+{% include image.html url="/js/Diagram/Connector_images/Connector_img21.png"%}
+
+**Limitation**: Bezier segments do not support bridging.
+
+## Corner radius
+
+Corner radius allows to create connectors with rounded corners. The radius of the rounded corner is set with `cornerRadius` property.
+
+{% highlight js %}
+    // Define JSON to create tasks
+    var task1 = { name: "task1", offsetX: 200, offsetY: 200, labels: [{ text: "Task 1" }] };
+    var task2 = { name: "task2", offsetX: 350, offsetY: 300, labels: [{ text: "Task 2" }] };
+
+    //Add tasks to nodes collection
+    var nodes = [
+        task1,
+        task2
+    ];
+
+    var connectors = [
+        //Define JSON
+        {
+            name: "flow1", sourceNode: "task1", targetNode: "task2",
+            //Set the radius for the rounded corner
+            cornerRadius: 10
+        }];
+        
+{% endhighlight %}
+
+{% include image.html url="/js/Diagram/Connector_images/Connector_img22.png"%}
+
+## Appearance
+
+Stroke width, stroke color and style of the lines and decorators can be customized with a set of defined properties.
+
+### Segment Appearance
+
+Following code snippet illustrates how to customize the segment appearance.
+
+{% highlight js %}
+
+    //Customize the appearance of the connector
+    var connectors = [{
+        name: "connector",
+        sourcePoint: { x: 100, y: 100 },
+        targetPoint: { x: 200, y: 200 },
+        //stroke width of the line
+        lineWidth: 2,
+        //stroke color 
+        lineColor: "green",
+        //line style 
+        lineDashArray: "2,2",
+        //opiquity of the line
+        opacity: 0.8,
+        //defined in the decorator appearance section
+        targetDecorator: targetDecorator
+    }];
+    
+ {% endhighlight %}   
+ 
 ### Decorator Appearance
 
-Decorator appearance is customized by setting desired value to the appropriate appearance properties.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
-<tr>
-<td>
- width</td><td>
- number</td><td>
-Gets or sets the width of the decorator.</td></tr>
-<tr>
-<td>
- height</td><td>
- number</td><td>
-Gets or sets the height of the decorator.</td></tr>
-<tr>
-<td>
- borderColor</td><td>
- string</td><td>
-Gets or sets the border color of the decorator.</td></tr>
-<tr>
-<td>
- fillColor</td><td>
- string</td><td>
-Gets or sets the fill color of the decorator.</td></tr>
-<tr>
-<td>
- shape</td><td>
- ej.datavisualization.Diagram.DecoratorShapes</td><td>
-Gets or sets the shape of the decorator.</td></tr>
-<tr>
-<td>
- pathData</td><td>
- string</td><td>
-Gets or sets the path data of the decorator.</td></tr>
-</table>
-
-
-The following code illustrates how to customize Decorator Shape.
+Following code snippet illustrates how to customize the appearance of the decorator.
 
 {% highlight js %}
+//Customize the appearance of decorator    
 
-//set various appearance properties to decorator
-var connector = [{
-   targetDecorator: {
-      shape: ej.datavisualization.Diagram.DecoratorShapes.Arrow
-   },
-   sourceDecorator: {
-      shape: ej.datavisualization.Diagram.DecoratorShapes.Circle,
-      fillColor: "#606060",
-      borderColor: "black",
-      width: 8,
-      height: 8
-   }
-}];
-
+ var targetDecorator = {
+        //define the shape
+        shape: ej.datavisualization.Diagram.DecoratorShapes.Arrow,
+        //fill color of the decorator
+        fillColor: "red",
+        //stroke color
+        borderColor: "green",
+        //stroke width
+        borderWidth: 2,
+        width: 10,
+        height: 10
+    };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Connector_images/Connector_img18.png" %}
+{% include image.html url="/js/Diagram/Connector_images/Connector_img23.png"%}
+
+## Interaction
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer [Connection Editing](/js/Diagram/Interaction "Connection-Editing").
 
 ## Constraints
-
-You can enable or disable certain behaviors of Connectors using the `constraints` property.
-
-<table>
-<tr>
-<th>
-Constraints</th><th>
-Description</th></tr>
-<tr>
-<td>
-None</td><td>
-Disable all the constraints.</td></tr>
-<tr>
-<td>
-Select</td><td>
-Enables or disables selection.</td></tr>
-<tr>
-<td>
-Delete</td><td>
-Enables or disables deletion.</td></tr>
-<tr>
-<td>
-Drag</td><td>
-Enables or disables dragging.</td></tr>
-<tr>
-<td>
-DragSourceEnd</td><td>
-Enables or disables the source end to be dragged.</td></tr>
-<tr>
-<td>
-DragTargetEnd</td><td>
-Enables or disables the target end to be dragged.</td></tr>
-<tr>
-<td>
-DragsegmentThumbs</td><td>
-Enables or disables control point and end point of every segment in a connector for editing.</td></tr>
-<tr>
-<td>
-Bridging</td><td>
-Enables or disables bridging to the connector.</td></tr>
-<tr>
-<td>
-DragLabel</td><td>
-Enables or disables label of node to be dragged.</td></tr>
-<tr>
-<td>
-InheritBridging</td><td>
-Enables or disables bridging based on the diagram constraints.</td></tr>
-<tr>
-<td>
-Default</td><td>
-Enables all constraints.</td></tr>
-</table>
-
-
-The default value for the `connector`'s `constraints` property is `ej.datavisualization.Diagram.ConnectorConstraints.Default`.
-
-**Example**
-
-The following code illustrates how to disable `select` constraints of `connector`. Disabling select constraints does not allow you to select connector.
-
-{% highlight js %}
-
-//disable select constraint
-connector.constraints = connector.Constraints & ~(ej.datavisualization.Diagram.ConnectorConstraints.Select);
-{% endhighlight %}
-
-N>  Connector's constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations). 
+The `constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer [Connector Constraints](/js/Diagram/Constraints "ConnectorConstraints").

@@ -7,56 +7,124 @@ control: Diagram
 documentation: ug
 ---
 
-# Undo and Redo
+# History Manager
 
-The **Undo command** reverses the last editing action performed on Diagram. For example, some of the basic operations performed on Diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion and so on, can be reversed. The Redo command restores the last editing action if no other actions have occurred since the last undo.
+Diagram tracks the history of actions that are performed after loading time and provides support to reverse and restore those changes. 
 
-Diagram provides public API undo()/redo() to execute the undo/redo commands and the following code illustrate this.
+## Undo and Redo
 
-{% highlight js %}
+Diagram provides inbuilt support to track the changes that are made through interaction and through public APIs. The changes can be reverted or restored either through short cut keys or through commands.
 
-//undo
-var diagram = $("#Diagram").ejDiagram("instance");
-diagram.undo();
+### Undo redo through short cut keys
 
-//redo
-diagram.redo();
+Undo redo commands can be executed through short cut keys. Short cut key for undo is ctrl+z and short cut key for redo is ctrl+y.
 
-{% endhighlight %}
+For more information, refer [Keyboard Interactions](/js/Diagram/Interaction "Keyboard").
 
-## History Manager
+### Undo redo through public APIs
 
-Diagram provides inbuilt support to revert and restore the actions performed through interactions. When any other custom actions (changes through APIs) have to be tracked, it can be achieved by using HistoryManager. History manager allows to push custom history entries and to handle them when undo/redo is executed.
-
-Following code example illustrates how to revert the font color change of a text node.
-
-1\. Before changing the font color, push the current state to history manager.
+The client side methods `undo` and `redo` helps you to revert/restore the changes. The following snippet illustrates how to undo/redo the changes through script.
 
 {% highlight js %}
 
-//Saving the current state
-var entry = { object: node.name, previousState: { fontColor: node.textBlock.fontColor } };
+    var diagram = $("#Diagram").ejDiagram("instance");
+    
+    // Revert the last action performed    
+    diagram.undo();
+    
+    // Restore the last undone action     
+    diagram.redo();  
 
-//Add the state to history manager
-diagram.model.historyManager.push(entry);
+{% endhighlight %} 
 
-//Font color change
-diagram.updateLabel(node.name, node.textBlock, { fontColor: "red" });
 
-{% endhighlight %}
+## Track custom changes
 
-2\. Define the methods to handle the custom changes
+Diagram provides options to track the changes that are made to custom properties. For example, in case of an employee relationship diagram, you may need to track the changes in the employee information. The `historyManager` of diagram model enables you to track such changes.      
+Following example illustrates how to track such custom property changes.
+
+* Before changing the employee information, save the existing information to history manager using the client side method `push` of `historyManager`.
+
+ Following code snippet illustrates how to save the existing property values. 
 
 {% highlight js %}
 
-$("#diagram").ejDiagram({
-    historyManager: {
-        //Called to revert a custom action
-        undo: customUndoRedo,
-        
-        //Called to restore a reverted custom action
-        redo: customUndoRedo
+    var diagram = $("#diagram").ejDiagram("instance");
+    
+    //create a custom entry and add that to history manager 
+    var entry = { object: node, prevState: node.empInfo };    
+    diagram.model.historyManager.push(entry);
+
+    //update the new information    
+    var newValue = { role: "New role" };
+    node.empInfo = newValue;
+
+{% endhighlight %} 
+
+* Change the employee information
+
+{% highlight js %}
+
+    //update the new information    
+    var newValue = { role: "New role" };
+    node.empInfo = newValue;
+
+{% endhighlight %} 
+
+* Define the methods to handle the custom changes. These methods will be called when you try to revert/restore the custom changes.
+
+You need to define the methods to handle the custom changes and you need to assign that to `undo` and `redo` properties of `historyManager`.
+Following code snippet illustrates how to define methods to handle the custom changes.
+
+{% highlight js %}
+
+    $("#diagram").ejDiagram({
+        historyManager: {
+            //will be called to revert a custom action
+            undo: customUndoRedo,
+            //will be called to restore the reverted custom action
+            redo: customUndoRedo
+        }
+    });
+
+    //Method to handle the custom action 
+    function customUndoRedo(args) {
+        var diagram = $("#diagram").ejDiagram("instance");
+        var node = args.object;
+        var currentState = node.empInfo;
+
+        //Reset the state
+        node.empInfo = args.prevState;
+
+        //save previous state
+        args.prevState = currentState;
     }
-});
+    
+{% endhighlight %} 
 
-{% endhighlight %}
+## Group multiple changes 
+
+History manager allows to revert or restore multiple changes through a single undo/redo command. For example, you may need to revert/restore the fill color change of multiple elements at a time.
+
+The client side method `startGroupAction` is used to notify the diagram to start grouping the changes. The client side method `closeGroupAction` is used to notify to stop grouping the changes. Following code illustrates how to undo/redo fillColor change of multiple elements at a time.
+
+{% highlight js %}
+
+    var group = diagram.model.selectedItems
+
+    // Start to group the changes
+    diagram.model.historyManager.startGroupAction();
+
+    //Make the changes
+    for (var i = 0; i < group.children.length; i++) {
+        var option = {};
+        var item = group.children[i];
+        // update the fillColor for all the child elements.
+        option.fillColor = args.style.backgroundColor;
+        diagram.updateNode(item.name, option);
+    }
+
+    //End grouping the changes
+    diagram.model.historyManager.closeGroupAction();
+
+{% endhighlight %} 

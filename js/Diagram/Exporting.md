@@ -9,91 +9,126 @@ documentation: ug
 
 # Exporting
 
-You can export the Diagram to the following formats.
+Diagram provides support to export its content as image/svg files. 
+The client side method `exportDiagram` helps to export the diagram. The following code illustrates how to export the diagram as image.
+
+{% highlight js %}
+
+var diagram = $("#diagram").ejDiagram("instance");
+//Exports the diagram as an image of JPEG format
+diagram.exportDiagram();
+
+{% endhighlight %}
+
+{% include image.html url="/js/Diagram/Exporting_images/Exporting_img1.png" %}
+
+## Exporting options
+
+Diagram provides support to export the desired region of the diagram to desired formats. 
+
+### FileName
+
+FileName is the name of the file to be downloaded. By default, the file name is set as "Diagram".
+
+### Format
+
+Format is to specify the type/format of the exported file. By default, Diagram is exported as .jpg format.  You can export diagram to the following formats.
 
 * JPG
 * PNG
 * BMP
 * SVG
 
-The following code illustrates how to export the diagram as image
+For more information about the exportable formats, refer [File Formats](/js/api/global "FileFormats").
+
+### Margin
+
+Margin is to specify the amount of space that has to be left around the diagram.
 
 {% highlight js %}
 
-var diagram = $("#DiagramContent").ejDiagram("instance");
-
-//Exports the diagram as an image of JPEG format
-diagram.exportDiagram();
-
-{% endhighlight %}
-
-### Exporting options
-
-Diagram provides support to export the desired region of the diagram to desired formats. The following code example illustrates how to export and download the positive region of diagram to JPEG image format.
-
-{% highlight js %}
-
-var diagram = $("#DiagramContent").ejDiagram("instance");
-
+var diagram = $("#diagram").ejDiagram("instance");
 var options = {
+    //Name of the file to be downloaded
     fileName: "diagram",
-    mode: "download",
-    region: "pageSettings",
-    format: "jpg",
-    bounds: { x: 0, y: 0 },
-    margin: { left: 30 }
+    //margin to the exported file/data
+    margin: {
+        left: 30,
+        right: 30,
+        top: 30,
+        bottom: 30
+    }
 };
-
-//Exports the positivie region of diagram as an image of JPEG format.
 diagram.exportDiagram(options);
 
 {% endhighlight %}
 
-### File Name
+### Mode
 
-Name of the file to be downloaded. By default, the file name is set as “Diagram”.
+Mode is to specify whether the diagram is to be exported as files or as data(ImageURL/SVG). The exporting options are listed below.
 
-#### Mode
+* Exports and downloads diagram as image
+* Exports diagram as data of formats ImageURL/SVG
 
-Diagram provides support to export and download diagram as files. You can also export Diagram as data of ImageURL/SVG formats. Mode is to specify whether to export diagram as downloadable files or as data. Following table illustrates the possible mode options.
+For more information about the exporting modes, refer [Exporting Modes](/js/api/global "ExportModes").
 
-<table>
-<tr>
-<th>
-Modes</th><th>
-Description</th></tr>
-<tr>
-<td>
-Download</td><td>
-Exports and downloads diagram as files. </td></tr>
-<tr>
-<td>
-Data</td><td>
-Exports diagram as data of formats ImageURL/SVG.</td></tr>
-</table>
+The following code example illustrates how to export diagram as raw data.
 
-#### Region
+{% highlight js %}
 
-You can export any particular region of the Diagram. The region to be exported is based on the region and bounds properties. Following table illustrates provided diagram regions.
+var diagram = $("#diagram").ejDiagram("instance");
+var options = {
+    fileName: "diagram",
+    //Specifies whether to export as files/data
+    mode: "data"
+};
+diagram.exportDiagram(options);
 
-<table>
-<tr>
-<th>
-Region</th><th>
-Description</th></tr>
-<tr>
-<td>
-Content</td><td>
-Only content of the diagram is exported.</td></tr>
-<tr>
-<td>
-PageSettings</td><td>
-Export diagram is based on page setting (page size, multiple page, page margin, etc.)</td></tr>
-</table>
+{% endhighlight %}
 
+N> In IE-9, Diagrams cannot be exported as downloadable files. Instead, diagram provides the exported data (DataURL/SVG) that enables to export it from application.
 
-#### Format
+### Region
 
-Format is to specify the type/format of the exported file. It includes jpg, png, bmp and svg.
+You can export any particular region of the diagram and the region is categorized as follows.
 
-{% include image.html url="/js/Diagram/Exporting_images/Exporting_img1.png" %}
+* Region that fits all nodes and connectors that are added to model
+* Region that fits all pages (single or multiple pages based on page settings)
+
+For more information about region, refer [Regions](/js/api/global "Region").
+
+The following code snippet illustrates how to export the region occupied by diagram elements.
+
+{% highlight js %}
+
+var diagram = $("#diagram").ejDiagram("instance");
+var options = {
+    //Specifies the exporting region
+    mode: "content"
+};
+diagram.exportDiagram(options);
+
+{% endhighlight %}
+
+The following code snippet illustrates how to export any specific region of diagram.
+
+{% highlight js %}
+
+var diagram = $("#diagram").ejDiagram("instance");
+var options = {
+    fileName: "diagram",
+    //Specifies whether to export as files/data
+    mode: "download",
+    //Format of the exported file
+    format: "jpg",
+    // Define the custom bounds that has to be exported
+    bounds: {
+        x: 1000,
+        y: 1000,
+        width: 500,
+        height: 500
+    },
+};
+diagram.exportDiagram(options);
+
+{% endhighlight %}
