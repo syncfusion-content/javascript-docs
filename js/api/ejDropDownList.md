@@ -160,7 +160,7 @@ Example
 
 
 
-Sets the case sensitivity of the search operation. It supports both enableFilterSearch and enableIncrementalSearch property.
+Sets the case sensitivity of search operation. It supports both enableFilterSearch and enableIncrementalSearch property.
 
 
 Default Value:
@@ -1321,7 +1321,7 @@ Example
 
 
 
-With the help of this property, you can make single or multi selection with the DropDownList and display the text in two nodes, delimiter and visual mode. In delimiter mode, you can separate the items by using the delimiter character such as comma (,) or semi-colon (;) or any other special character. In the visual mode, the items are showcased like boxes with close icon in the textbox. 
+With the help of this property, you can make single or multi selection with the DropDownList and display the text in two nodes, delimiter and visual mode. In delimiter mode, you can separate the items by using the delimiter character such as, comma (,) or semi-colon (;) or any other special character. In the visual mode, the items are showcased like boxes with close icon in the textbox. 
 
 
 Default Value:
@@ -1755,7 +1755,7 @@ Example
 
 
 
-DropDownList control is displayed with the popup seen.
+DropDownList control is displayed with the popup.
 
 
 Default Value:
@@ -2007,7 +2007,7 @@ Example
 ### validationMessage<span class="type-signature type object">object</span>
 {:#members:validationmessage}
 
-Sets the jQuery validation error message in the DropDownList
+Sets the jQuery validation error message in the DropDownList.
 
 
 Default Value:
@@ -2167,7 +2167,7 @@ Example
 
 
 
-Specifies a short hint that describes the expected value of the DropDownList control.
+Specifies a small hint that describes the expected value of the DropDownList control.
 
 
 Default Value:
@@ -4872,7 +4872,7 @@ Example
 
 
 
-Fires the action, when the popup is resized. 
+Fires the action when the popup is resized. 
 
 <table class="params">
 <thead>
@@ -4946,7 +4946,7 @@ Example
 
 
 
-Fires the action, once the popup is opened.
+Fires the action once the popup is opened.
 
 <table class="params">
 <thead>
