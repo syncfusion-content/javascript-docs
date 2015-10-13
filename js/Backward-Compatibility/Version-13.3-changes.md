@@ -7,13 +7,13 @@ control: Introduction
 documentation: ug
 ---
 
-## Version 13.3 Changes
+# Version 13.3 Changes
 
 Significant changes are made to the API namings effective from Volume 3, 2015 release. The changes are documented with mapping between the old and new API names to enable quick upgradation of any control. To migrate from Volume 2, 2015 or from earlier versions to this Volume3, 2015, refer to the following API changes.
 
 List of API changes are as follows,
 
-### ejDatePicker
+## ejDatePicker
 
 <table>
 <tr>
@@ -42,7 +42,7 @@ ej.DatePicker.Header = {<br/>None: "none",<br/>Short: "short",<br/>Min: "min",<b
 <br/><br/></td></tr>
 </table>
 
-### ejColorPicker
+## ejColorPicker
 
 <table>
 <tr>
@@ -59,7 +59,7 @@ modelType:{<br/>picker:”picker”,<br/>palette:“palette”<br/>}<br/><br/></
 <br/><br/></td></tr>
 </table>
 
-### ejTreeview
+## ejTreeview
 
 <table>
 <tr>
@@ -148,7 +148,7 @@ nodeEdit<br/>-Id<br/>- text<br/><br/></td><td>
 <br/><br/></td></tr>
 </table>
 
-### ejFileExplorer
+## ejFileExplorer
 
 <table>
 <tr>
@@ -222,7 +222,7 @@ cut<br/><br/></td><td>
 <br/><br/></td></tr>
 </table>
 
-### ejDropDownList
+## ejDropDownList
 
 <table>
 <tr>
@@ -359,7 +359,7 @@ checkChange<br/>- args.selectedValue<br/><br/></td><td>
 Renamed <br/><br/></td></tr>
 </table>
 
-### ejRTE
+## ejRTE
 
 <table>
 <tr>
@@ -418,7 +418,7 @@ removeToolbarItem (toolbarCommand)<br/><br/></td><td>
 Parameter attribute value is changed.<br/><br/></td></tr>
 </table>
 
-### ejUploadBox
+## ejUploadBox
 
 <table>
 <tr>
@@ -447,7 +447,7 @@ fileSelect<br/>- args.files<br/><br/></td><td>
 In fileSelect, the selected files are available in<br/>event argument - ‘args.files’.<br/><br/></td></tr>
 </table>
 
-### ejListbox
+## ejListbox
 
 <table>
 <tr>
@@ -638,7 +638,7 @@ unselectAll<br/><br/></td><td>
 The unSelectAll method is deprecated.<br/><br/></td></tr>
 </table>
 
-### ejDialog
+## ejDialog
 
 <table>
 <tr>
@@ -667,7 +667,7 @@ isOpen<br/><br/></td><td>
 The isOpened method is deprecated. Use isOpen method.<br/><br/></td></tr>
 </table>
 
-### ejSchedule
+## ejSchedule
 
 <table>
 <tr>
