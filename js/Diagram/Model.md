@@ -13,9 +13,9 @@ The Diagram model represents the data to render the Diagram and to manipulate th
 
 {% highlight js %}
 
-//create diagram
+//Creates diagram
 $("#Diagram").ejDiagram({
-   //set diagram model properties
+   //Sets Diagram model properties
    width: "100%",
    height: "100%",
    pageSettings: {
@@ -27,4 +27,4 @@ $("#Diagram").ejDiagram({
 
 {% include image.html url="/js/Diagram/Model_images/Model_img1.png" %}
 
-To explore more model properties, refer [Model Properties](/js/api/ejdiagram "members").
+To explore more model properties, refer to [Model Properties](/js/api/ejdiagram "members").
