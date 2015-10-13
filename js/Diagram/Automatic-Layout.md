@@ -9,7 +9,7 @@ documentation: ug
 
 # Automatic Layout
 
-Diagram provides support to auto-arrange the nodes on diagram area which is referred as **Layout**. It includes the following layout modes.
+Diagram provides support to auto-arrange the nodes in Diagram area that is referred as **Layout**. It includes the following layout modes.
 
   * Hierarchical Layout
   * Organization Chart
@@ -18,12 +18,12 @@ Diagram provides support to auto-arrange the nodes on diagram area which is refe
 ## Hierarchical Layout
 
 The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in the hierarchical layout may have multiple parents. There is no need to specify the layout root. 
-To arrange the nodes in hierarchical structure, you need to specify the layout `type` as hierarchical tree.   Following example shows how to arrange nodes in hierarchical structure.
+To arrange the nodes in hierarchical structure, you need to specify the layout `type` as hierarchical tree. The following example shows how to arrange the nodes in a hierarchical structure.
 
 
 {% highlight js %}
 
-//Initialize data source
+//Initializes data source
 var data = [{
     Name: "Steve-Ceo"
 }, {
@@ -48,19 +48,19 @@ var data = [{
 
 var type = ej.datavisualization.Diagram.LayoutTypes;
 
-//Bind custom JSON with node
+//Binds custom JSON with node
 function nodeTemplate(diagram, node) {
     node.labels[0].text = node.Name;
 }
 
 $("#diagram").ejDiagram({
-    //use layout to auto-arrange nodes on the diagram page          
+    //Uses layout to auto-arrange nodes on the Diagram page          
     layout: {
-        //set layout type
+        //Sets layout type
         type: type.HierarchicalTree
     },
     defaultSettings: {
-        //set the default properties for nodes and connectors.
+        //Sets the default properties for nodes and connectors
         node: {
             width: 100,
             height: 40,
@@ -81,15 +81,15 @@ $("#diagram").ejDiagram({
         }
     },
 
-    //initialize the node template.
+    //Initializes the node template.
     nodeTemplate: nodeTemplate,
-    //configure data source for diagram
+    //Configures data source for Diagram
     dataSourceSettings: {
-        //Define the unique field
+        //Defines the unique field
         id: "Name",
-        //define the relationship
+        //Defines the relationship
         parent: "ReportingPerson",
-        //specifies the dataSource
+        //Specifies the dataSource
         dataSource: data
     }
 });
@@ -102,13 +102,13 @@ N> You can ignore a particular Node from layout arrangement by setting its **exc
 
 ## Radial Tree Layout
 
-The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node, indicating the node level in the hierarchy. If no root node is set, the algorithm automatically considers one of the diagram nodes as the root node.
+The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node, indicating the node level in the hierarchy. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
 
 To arrange nodes in a radial tree structure, you need to set the `type` property of layout as radial tree. The following code illustrates how to arrange the nodes in a radial tree structure. 
 
 {% highlight js %}
 
-//Initialize data source
+//Initializes data source
 var data = [{
     Id: "parent",
     ImageUrl: "images/Clayton.png"
@@ -234,7 +234,7 @@ var data = [{
     ReportingPerson: 19
 }, ];
 
-//Bind custom JSON with node
+//Binds custom JSON with node
 function nodeTemplate(diagram, node) {
     node.name = node.Id;
     node.source = node.ImageUrl;
@@ -243,13 +243,13 @@ function nodeTemplate(diagram, node) {
 $("#diagram").ejDiagram({
     width: "100%",
     height: "700px",
-    //use layout to auto-arrange nodes on the diagram page          
+    //Uses layout to auto-arrange nodes on the Diagram page          
     layout: {
         type: "radialtree",
         horizontalSpacing: 30,
         verticalSpacing: 30
     },
-    //set the default properties of the nodes
+    //Sets the default properties of the nodes
     defaultSettings: {
         node: {
             width: 50,
@@ -259,7 +259,7 @@ $("#diagram").ejDiagram({
         }
     },
     nodeTemplate: nodeTemplate,
-    //configure data source for diagram
+    //Configures data source for Diagram
     dataSourceSettings: {
         id: "Id",
         parent: "ReportingPerson",
@@ -273,12 +273,12 @@ $("#diagram").ejDiagram({
 
 ## Organizational Chart
 
-An **organizational chart** is a diagram that displays the structure of an organization and relationships. To create an organizational chart, `type` property of layout should be set as organizatoinal chart.
+An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `type` property of layout should be set as organizatoinal chart.
 The following code example illustrates how to create an organizational chart.
 
 {% highlight js %}
 
-//Initialize data source
+//Initializes data source
 var data = [{
     Id: "parent",
     Role: "Project Management"
@@ -376,19 +376,19 @@ var data = [{
     Team: "17"
 }];
 
-//Bind JSON data with node
+//Binds JSON data with node
 function nodeTemplate(diagram, node) {
     node.labels[0].text = node.Role;
 }
 
-//Initialize diagram
+//Initializes Diagram
 $("#diagram").ejDiagram({
-    //Define default layout as organizational chart
+    //Defines default layout as organizational chart
     layout: {
         type: "organizationalchart"
     },
     defaultSettings: {
-        //set the default properties of the node.
+        //Sets the default properties of the node.
         node: {
             width: 100,
             height: 40,
@@ -398,7 +398,7 @@ $("#diagram").ejDiagram({
                 fontColor: "white"
             }]
         },
-        //set the default properties of the connector.    
+        //Sets the default properties of the connector.    
         connector: {
             segments: [{
                 "type": "orthogonal"
@@ -409,7 +409,7 @@ $("#diagram").ejDiagram({
         }
     },
     nodeTemplate: nodeTemplate,
-    //configure data source for diagram
+    //Configures data source for Diagram
     dataSourceSettings: {
         id: "Id",
         parent: "Team",
@@ -421,11 +421,11 @@ $("#diagram").ejDiagram({
 
 {% include image.html url="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png" %}
 
-Organizational chart layout starts parsing from root and iterate through all its child elements. ‘getLayoutInfo’ method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. You can customize the arrangements by overriding this function, explained as follows.
+Organizational chart layout starts parsing from root and iterate through all its child elements. ‘getLayoutInfo’ method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. You can customize the arrangements by overriding this function as explained.
 
 ### GetLayoutInfo
 
-You can set Chart orientations, chart types and offset to be left between parent and child nodes by overriding the method diagram.model.layout.getLayoutInfo. The getLayoutInfo method is called to configure every subtree of the organizational chart. And it takes the following arguments.
+You can set Chart orientations, chart types and offset to be left between parent and child nodes by overriding the method diagram.model.layout.getLayoutInfo. The getLayoutInfo method is called to configure every subtree of the organizational chart. It takes the following arguments.
 
   * diagram (Reference of diagram)
   * node (Parent node to that options are to be customized)
@@ -438,17 +438,17 @@ The following code example illustrates how to define the method getLayoutInfo.
 var  chartOrientations = ej.datavisualization.Diagram.ChartOrientations;
 var  chartTypes = ej.datavisualization.Diagram.ChartTypes;
  
-//Defining getLayoutInfo
+//Defines getLayoutInfo
 function getLayoutInfo(diagram, node, options) {
     options.orientation = chartOrientations.Vertical;
-    //Configures the sub tree of the node vertically at right side.
+    //Configures the sub tree of the node vertically at right-side.
     options.type = chartTypes.Right;
     options.offset = 10;
 }
  
-//Initialize diagram
+//Initializes Diagram
 $("#diagram").ejDiagram({
-    //use automatic layout to arrange elements
+    //Uses automatic layout to arrange elements
     layout: {
         type: "organizationalchart",
         getLayoutInfo: getLayoutInfo
@@ -457,7 +457,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-Following table illustrates the properties that "options" argument takes.
+The following table illustrates the properties that "options" argument takes.
 
 <table>
 <tr>
@@ -508,7 +508,7 @@ true</td></tr>
 </table>
 
 
-Following table illustrates the different chart orientations and chart types.
+The following table illustrates the different chart orientations and chart types.
 
 <table>
 <tr>
@@ -555,11 +555,11 @@ Vertically arranges the children at both left and right sides of parent</td><td>
 <img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img9.png" alt="" width="157pt" height="105pt"/></td></tr>
 </table>
 
-Following code example illustrates how to set the vertical right arrangement to the leaf level trees.
+The following code example illustrates how to set the vertical right arrangement to the leaf level trees.
 
 {% highlight js %}
 
-//Initialize data source
+//Initializes data source
 var data = [{
     Id: "parent",
     Role: "Board"
@@ -620,7 +620,7 @@ var data = [{
 var  chartOrientations = ej.datavisualization.Diagram.ChartOrientations;
 var  chartTypes = ej.datavisualization.Diagram.ChartTypes;
 
-//creating the node template
+//Creates the node template
 function nodeTemplate(diagram, node) {
     node.labels[0].text = node.Role;
 }
@@ -632,9 +632,9 @@ function getLayoutInfo(diagram, node, options) {
     }
 }
 
-//Initialize diagram
+//Initializes Diagram
 $("#diagram").ejDiagram({
-    //Define default layout as organizational chart
+    //Defines default layout as organizational chart
     layout: {
         type: "organizationalchart",
         getLayoutInfo: getLayoutInfo
@@ -658,7 +658,7 @@ $("#diagram").ejDiagram({
             }
         }
     },
-    //initialize the node template.
+    //Initialize the node template.
     nodeTemplate: nodeTemplate,
     //configure data source for diagram
     dataSourceSettings: {
@@ -680,7 +680,7 @@ The following code example illustrates how to add assistants to layout.
 
 {% highlight js %}
 
-//Initialize data source
+//Initializes data source
 var data = [{
     Id: 1,
     Role: "General Manager"
@@ -706,12 +706,12 @@ var data = [{
     Team: 1
 }, ];
 
-//creating the node template
+//Creates the node template
 function nodeTemplate(diagram, node) {
     node.labels[0].text = node.Role;
 }
 
-//defining getLayoutInfo 
+//Defines getLayoutInfo 
 function getLayoutInfo(diagram, node, options) {
     if (node.labels[0].text == "General Manager") {
         options.assistants.push(options.children[0]);
@@ -721,9 +721,9 @@ function getLayoutInfo(diagram, node, options) {
     options.type = "center"
 }
 
-//Initialize diagram
+//Initializes Diagram
 $("#diagram").ejDiagram({
-    //Define default layout as organizational chart
+    //Defines default layout as organizational chart
     layout: {
         type: "organizationalchart",
         getLayoutInfo: getLayoutInfo
@@ -767,7 +767,7 @@ To explore layout properties, refer [Layout Properties](/js/api/ejDiagram "membe
 
 ### Layout Orientation 
 
-Diagram provides support to customize the orientation of layout. You can set the desired orinetation to the `orientation` property of layout. For more information about orientation, refer [Layout Orientations](/js/api/global "LayoutOrientations")
+Diagram provides support to customize the orientation of layout. You can set the desired orinetation to the `orientation` property of layout. For more information about orientation, refer to [Layout Orientations](/js/api/global "LayoutOrientations")
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 
@@ -788,16 +788,16 @@ $("#diagram").ejDiagram({
         verticalSpacing: 20
     },
     defaultSettings: {
-        //set the default properties of the node.
-        //set the default properties of the connector.    
+        //Sets the default properties of the node.
+        //Sets the default properties of the connector.    
     },
 
-    //initialize the node template.
+    //Initializes the node template.
     nodeTemplate: nodeTemplate,
 
-    //configure data source for diagram
+    //Configures data source for Diagram
     dataSourceSettings: {
-        //specifies the dataSource
+        //Specifies the dataSource
     }
 });
 
@@ -808,11 +808,11 @@ $("#diagram").ejDiagram({
 ### Fixed Node
 
 Layout provides support to arrange the nodes with reference to the position of a fixed node and the fixed node has to be set to the`fixedNode` propery of layout. 
-This will be helpful, when you try to expand/collapse a node. It might be expected that the position of the double clicked node should not be changed. 
+This is helpful when you try to expand/collapse a node. It might be expected that the position of the double-clicked node should not be changed. 
 
 {% highlight js %}
 
-//Initialize data source
+//Initializes data source
 var data = [{
     name: "parent",
     Role: "General Manager",
@@ -831,32 +831,32 @@ var data = [{
     Manager: "parent",
 }];
 
-//creating the node template
+//Creates the node template
 function nodeTemplate(diagram, node) {
     node.labels[0].text = node.Role;
 }
 
-//defining getLayoutInfo 
+//Defines getLayoutInfo 
 function getLayoutInfo(diagram, node, options) {
     options.orientation = "horizontal";
     options.type = "center"
 }
 
-//Initialize diagram
+//Initializes Diagram
 $("#DiagramContent").ejDiagram({
-    //Define default layout as organizational chart
+    //Defines default layout as organizational chart
     layout: {
         type: "organizationalchart", fixedNode: "parent",
         getLayoutInfo: getLayoutInfo
     },
     defaultSettings: {
-        //set the default properties of the node.
-        //set the default properties of the connector.    
+        //Sets the default properties of the node.
+        //Sets the default properties of the connector.    
     },
     nodeTemplate: nodeTemplate,
-    //configure data source for diagram
+    //Configures data source for diagram
     dataSourceSettings: {
-        //specifies the dataSource
+        //Specifies the dataSource
     }
 });
 
@@ -866,17 +866,17 @@ $("#DiagramContent").ejDiagram({
 
 ### Expand and collapse
 
-Diagram allows to expand/collapse the sub trees of a layout. `isExpanded` property of node allows you to expand/collapse its children. Following code example shows how to expand/collapse the children of a node. 
+Diagram allows to expand/collapse the sub trees of a layout. `isExpanded` property of node allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node. 
     
 {% highlight js %}
 
-//Initialize diagram
+//Initializes Diagram
 $("#diagram").ejDiagram({
-    //Define default layout as organizational chart
+    //Defines default layout as organizational chart
     layout: {
         type: "organizationalchart", fixedNode: "node1"
     },
-    //Define double click event
+    //Defines double click event
     doubleClick: onDoubleClick
 });
 
@@ -884,10 +884,10 @@ function onDoubleClick(args) {
     var diagram = $("#diagram").ejDiagram("instance");
     var node = args.element;
     
-    // Set the double clicked node as fixed node 
+    // Sets the double clicked node as fixed node 
     $("#diagram").ejDiagram({ layout: { fixedNode: node.name } });
         
-    //Expand/collapse the children of node
+    //Expands/collapses the children of node
     diagram.updateNode(node.name, { isExpanded: !node.isExpanded });
 }
 
@@ -897,4 +897,4 @@ In above example, while expanding/collapsing a node, it is set as fixed node in 
 
 ### Refresh layout
 
-Diagram allows to refresh the layout at runtime. To refresh the layout, refer [Refresh layout](/js/api/ejDiagram "methods:layout").
+Diagram allows to refresh the layout at runtime. To refresh the layout, refer to [Refresh layout](/js/api/ejDiagram "methods:layout").
