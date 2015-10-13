@@ -27,11 +27,11 @@ To explore those properties, see [Data source settings](/js/api/ejDiagram "membe
 
 Diagram can be populated based on the user defined JSON data (**Local Data**) by mapping the relevant data source fields.
 
-To map the user defined JSON data with diagram, you have to configure the fields of `dataSourceSettings`. The following code example illustrates how to bind local data with the Diagram.
+To map the user defined JSON data with Diagram, you have to configure the fields of `dataSourceSettings`. The following code example illustrates how to bind local data with the Diagram.
 
 {% highlight js %}
 
-//Initialize local data
+//Initializes local data
 
 var data = [{
         "Name": "Director"
@@ -68,21 +68,21 @@ var data = [{
     }
 ];
 
-//To bind the JSON(local data) with node
+//Binds the JSON(local data) with node
 
 function nodeTemplate(diagram, node) {
-    // Set the Name field of JSON data as label.
+    // Sets the Name field of JSON data as label.
     node.labels[0].text = node.Name;
 }
 
 $(function() {
-    //Initialize Diagram
+    //Initializes Diagram
     $("#diagram").ejDiagram({
-        //use automatic layout to arranging elements on the page        
+        //Uses automatic layout to arrange elements on the page        
         layout: {
             type: "hierarchicaltree"
         },
-        //set the default properties for nodes and connectors.
+        //Sets the default properties for nodes and connectors.
         defaultSettings: {
             node: {
                 width: 100,
@@ -103,15 +103,15 @@ $(function() {
                 }
             }
         },
-        //initialize the node template.
+        //Initializes the node template.
         nodeTemplate: nodeTemplate,
-        //configure data source for diagram
+        //Configures data source for Diagram
         dataSourceSettings: {
-            // Define the unique field of each JSON data
+            // Defines the unique field of each JSON data
             id: "Name",
-            // Define the parent field which builds the relationship
+            // Defines the parent field which builds the relationship
             parent: "ReportingPerson",
-            //set the local data source to the diagram.
+            //Sets the local data source to the diagram.
             dataSource: data
         }
     });
@@ -123,28 +123,28 @@ $(function() {
 
 ## Remote Data
 
-You can bind the Diagram with Remote Data using dataManager.  
+You can bind the Diagram with Remote Data by using dataManager.  
 
   * DataManager supports the following types of data-binding: JSON, Web Services, oData. 
 
   * It uses two different classes: ej.DataManager for processing and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. 
 
-  * To learn more, refer [Data Manager](/js/DataManager/Getting-Started).
+  * To learn more, refer to [Data Manager](/js/DataManager/Getting-Started).
 
-To bind remote data to diagram, you have to configure the fields of `dataSourceSettings`. The following code illustrates how to bind remote data to the Diagram.
+To bind remote data to the Diagram, you have to configure the fields of `dataSourceSettings`. The following code illustrates how to bind remote data to the Diagram.
 
 {% highlight js %}
 
 $(function() {
-    //Initialize Diagram
+    //Initializes Diagram
     $("#diagram").ejDiagram({
-        //To bind the custom JSON fields with node
+        //Binds the custom JSON fields with node
         nodeTemplate: nodeTemplate,
-        //Initialize automatic layout
+        //Initializes automatic layout
         layout: {
             type: "hierarchicaltree"
         },
-        //set the default properties for nodes and connectors
+        //Sets the default properties for nodes and connectors
         defaultSettings: {
             node: {
                 width: 100,
@@ -163,18 +163,18 @@ $(function() {
                 }]
             }
         },
-        //Configure data source
+        //Configures data source
         dataSourceSettings: {
-            //Initialize the data manager
+            //Initializes the data manager
             dataSource: ej.DataManager({
-                // Specify the remote data service
+                // Specifies the remote data service
                 url: "[http://mvc.syncfusion.com/Services/Northwnd.svc/](http://mvc.syncfusion.com/Services/Northwnd.svc/)"
             }),
-            //Define the query to retrieve data
+            //Defines the query to retrieve data
             query: ej.Query().from("Employees").select("EmployeeID, ReportsTo, FirstName"),
-            // Define the table name
+            // Defines the table name
             tableName: "Employees",
-            // Define the unique field
+            // Defines the unique field
             id: "EmployeeID",
             // Define the field to relate objects
             parent: "ReportsTo"
@@ -182,7 +182,7 @@ $(function() {
     });
 });
 
-//Bind custom JSON with node
+//Binds custom JSON with node
 
 function nodeTemplate(diagram, node) {
     node.labels[0].text = node.FirstName;
@@ -194,9 +194,9 @@ function nodeTemplate(diagram, node) {
 
 ## Html Table Data
 
-The Diagram provides support to populate diagram from the **HTML table**. It is flexible to convert HTML table to diagram using **Data Manager**.
+The Diagram provides support to populate the Diagram from the **HTML table**. It is flexible to convert HTML table to Diagram by using **Data Manager**.
 
-The following code illustrates how to convert HTML table to diagram.
+The following code illustrates how to convert HTML table to the Diagram.
 
 {% highlight html %}
 <!-- HTML Table -->
@@ -269,7 +269,7 @@ The following code illustrates how to convert HTML table to diagram.
 {% endhighlight %}
 {% highlight js %}
 
-//Bind custom JSON with node
+//Binds custom JSON with node
 
 function nodeTemplate(diagram, node) {
     node.labels[0].text = node.Designation;
@@ -277,7 +277,7 @@ function nodeTemplate(diagram, node) {
 }
 
 $(function() {
-    //Initialize Diagram
+    //Initializes Diagram
     $("#diagram").ejDiagram({
         width: "100%",
         height: "600px",
@@ -285,7 +285,7 @@ $(function() {
             type: "hierarchicaltree"
         },
         defaultSettings: {
-            //set the default properties for nodes and connectors.
+            //Sets the default properties for nodes and connectors.
             node: {
                 width: 120,
                 height: 40,
@@ -306,13 +306,13 @@ $(function() {
                 }
             }
         },
-        //initialize the node template.
+        //Initializes the node template.
         nodeTemplate: nodeTemplate,
-        //configure data source for diagram
+        //Configures data source for Diagram
         dataSourceSettings: {
             id: "Id",
             parent: "ReportingPerson",
-            //define data source with html table
+            //Defines data source with html table
             dataSource: ej.DataManager($("#htmlbinding")),
         }
     });
