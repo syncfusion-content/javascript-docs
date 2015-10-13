@@ -17,14 +17,14 @@ You can add a label to a node/connector by defining the label object and adding 
 
 {% highlight js %}
 
-    //Initialize Diagram
+    //Initializes Diagram
     $("#diagram").ejDiagram({
         width: "100%",
         height: "100%",
         pageSettings: {
             scrollLimit: "diagram"
         },
-        //Initialize nodes collection
+        //Initializes nodes collection
         nodes: [{
             name: "node",
             width: 100,
@@ -33,16 +33,16 @@ You can add a label to a node/connector by defining the label object and adding 
             offsetY: 100,
             borderColor: "black",
             fillColor: "#1BA0E2",
-            //Initialize labels collection
+            //Initializes labels collection
             labels: [
-                // Define JSON to create a label
+                // Defines JSON to create a label
                 {
-                    //Define the text to be displayed
+                    //Defines the text to be displayed
                     text: "Label"
                 }
             ]
         }],
-        //Initialize connectors collection
+        //Initializes connectors collection
         connectors: [{
             name: "connector1",
             sourcePoint: {
@@ -58,13 +58,13 @@ You can add a label to a node/connector by defining the label object and adding 
                 length: 50,
                 direction: "bottom"
             }],
-            //Initialize labels collection
+            //Initializes labels collection
             labels: [
-                //Define JSON to create a label
+                //Defines JSON to create a label
                 {
-                    //Define the text to be displayed
+                    //Defines the text to be displayed
                     text: "Label",
-                    //Define the background color of the text block
+                    //Defines the background color of the text block
                     fillColor: "white"
                 }
             ]
@@ -75,13 +75,13 @@ You can add a label to a node/connector by defining the label object and adding 
 
 {% include image.html url="/js/Diagram/Label_images/Label_img1.png" %}
 
-To explore more label properties, refer [Label Properties](/js/api/ejdiagram "members:nodes-labels").
+To explore more label properties, refer to [Label Properties](/js/api/ejdiagram "members:nodes-labels").
 
 ## Update Label at runtime
      
 The client side API `updateLabel` is used to update the labels at run time.
 
-The following code snippet illustrates how to change the label properties.
+The following code example illustrates how to change the label properties.
 
 {% highlight js %}
 
@@ -94,13 +94,13 @@ The following code snippet illustrates how to change the label properties.
 
 ## Alignment
 
-Label can be aligned relative to the node boundaries. It has margin, offset, horizontal and vertical alignment settings. It will be quite tricky when all four alignments are used together but gives you more control over alignment.
+Label can be aligned relative to the node boundaries. It has margin, offset, horizontal and vertical alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
 
 ### Offset
 
 The `offset` property of label is used to align the labels based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
 
-The following image shows the relationship between the label position(black colored circle) and offset(fraction values).
+The following image shows the relationship between the label position (black colored circle) and offset (fraction values).
 
 {% include image.html url="/js/Diagram/Label_images/Label_img2.png" %}
 
@@ -108,7 +108,7 @@ The following image shows the relationship between the label position(black colo
 
 The `horizontalAlignment` property of label is used to set how the label is horizontally aligned at the label position determined from the fraction values. The `verticalAlignment` property is used to set how label is vertically aligned at the label position. 
 
-The following tables illustrates all possible alignment visually with **offset (0, 0).**
+The following tables illustrates all the possible alignments visually with **offset (0, 0).**
 
 <table>
 <tr>
@@ -167,7 +167,7 @@ The following codes illustrates how to align labels.
 
 {% highlight js %}
 
-    //Initialize Diagram
+    //Initializes Diagram
     $("#diagram").ejDiagram({
         width: "100%",
         height: "100%",
@@ -184,16 +184,16 @@ The following codes illustrates how to align labels.
             fillColor: "#1BA0E2",
             labels: [{
                 text: "Label",
-                // set offset to label
+                // Sets offset to label
                 offset: {
                     x: 0,
                     y: 0.5
                 },
-                // set how to align label horizontally relative to given offset 
+                // Sets to align label horizontally relative to given offset 
                 horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
-                // set how to align label vertically relative to given offset
+                // Sets to align label vertically relative to given offset
                 verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Center,
-                // set text alignment to label
+                // Sets text alignment to label
                 textAlign: ej.datavisualization.Diagram.TextAlign.Center
             }]
         }],
@@ -205,19 +205,19 @@ The following codes illustrates how to align labels.
 
 ### Margin
 
-**Margin** is an absolute value used to add some blank space in any of its four sides. You can displace the labels with the `margin` property.
-Following code snippet illustrates how to align a label based on its `offset`, `horizontalAlignment`, `verticalAlignment` and `margin` values.
+**Margin** is an absolute value used to add some blank space in any one of its four sides. You can displace the labels with the `margin` property.
+The following code example illustrates how to align a label based on its `offset`, `horizontalAlignment`, `verticalAlignment` and `margin` values.
 
 {% highlight js %}
 
-    //Initialize Diagram
+    //Initializes Diagram
     $("#diagram").ejDiagram({
         width: "100%",
         height: "100%",
         pageSettings: {
             scrollLimit: "diagram"
         },
-        //Set nodes collection to diagram model
+        //Sets nodes collection to Diagram model
         nodes: [{
             name: "node",
             width: 100,
@@ -234,7 +234,7 @@ Following code snippet illustrates how to align a label based on its `offset`, `
                 },
                 horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Center,
                 verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
-                //set margin to add label outside a node 
+                //Sets margin to add label outside a node 
                 margin: {
                     top: 10
                 }
@@ -248,11 +248,11 @@ Following code snippet illustrates how to align a label based on its `offset`, `
 
 ### Text Alignment
 
-The `textAlign` property of label allows you to set how the text should be aligned (left, right, center or justify) inside the text block. The following codes illustrate how to set textAlign for a label.
+The `textAlign` property of label allows you to set how the text should be aligned (left, right, center, or justify) inside the text block. The following codes illustrate how to set textAlign for a label.
 
 {% highlight js %}
 
-    //Initialize Diagram
+    //Initializes Diagram
     $("#diagram").ejDiagram({
         width: "100%",
         height: "100%",
@@ -267,7 +267,7 @@ The `textAlign` property of label allows you to set how the text should be align
             offsetY: 100,
             borderColor: "black",
             fillColor: "#1BA0E2",
-            // set text alignment for a label
+            // Sets text alignment for a label
             labels: [{
                 text: "Text Align is set as Left",
                 textAlign: ej.datavisualization.Diagram.TextAlign.Left
@@ -304,7 +304,7 @@ Justify</td><td>
 
 ## Wrapping
 
-When text overflows node boundaries, we can control it using text wrapping, so it will be wrapped into multiple lines. The `wrapping` property of label defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
+When text overflows node boundaries, you can control it by using text wrapping. So, it is wrapped into multiple lines. The `wrapping` property of label defines how the text should be wrapped. The following code illustrates how to wrap a text in a node.
 
 {% highlight js %}
 
@@ -322,7 +322,7 @@ When text overflows node boundaries, we can control it using text wrapping, so i
             offsetY: 100,
             borderColor: "black",
             fillColor: "#1BA0E2",
-            //Enable Text-wrapping
+            //Enables Text-wrapping
             labels: [{
                 text: "Label Text Wrapping",
                 wrapping: ej.datavisualization.Diagram.TextWrapping.Wrap
@@ -369,7 +369,7 @@ You can change the font style of the labels with the font specific properties(`f
         pageSettings: {
             scrollLimit: "diagram"
         },
-        //Set nodes collection to diagram model
+        //Sets nodes collection to Diagram model
         nodes: [{
             name: "node",
             width: 100,
@@ -380,7 +380,7 @@ You can change the font style of the labels with the font specific properties(`f
             fillColor: "#1BA0E2",
             labels: [{
                 text: "Label Text",
-                //Set styles to a label 
+                //Sets styles to a label 
                 fontSize: 12,
                 fontFamily: "TimesNewRoman",
                 fontColor: "black",
@@ -395,7 +395,7 @@ You can change the font style of the labels with the font specific properties(`f
 
 {% include image.html url="/js/Diagram/Label_images/Label_img23.png" %}
 
-The fill and border appearance of the text also can be customized with appearance specific properties of label.The following code illustrates how to customize background and border of a label.
+The fill and border appearances of the text can also be customized with appearance specific properties of label.The following code illustrates how to customize background and border of a label.
 
 {% highlight js %}
 
@@ -405,7 +405,7 @@ The fill and border appearance of the text also can be customized with appearanc
         pageSettings: {
             scrollLimit: "diagram"
         },
-        //Set nodes collection to diagram model
+        //Sets nodes collection to Diagram model
         nodes: [{
             name: "node",
             width: 100,
@@ -416,7 +416,7 @@ The fill and border appearance of the text also can be customized with appearanc
             fillColor: "#1BA0E2",
             labels: [{
                 text: "Label Text",
-                //Customize background and borders of a label 
+                //Customizes background and borders of a label 
                 fillColor: "white",
                 borderColor: "black",
                 borderWidth: 1,
@@ -443,7 +443,7 @@ A **Label** can be displaced from its original position to any preferred locatio
         offsetY: 100,
         borderColor: "black",
         fillColor: "#1BA0E2",
-        //Enable Label Dragging for node.
+        //Enables Label Dragging for node.
         constraints: nodeConstraints.Default | nodeConstraints.DragLabel,
         labels: [{
             text: "Label Text"
@@ -466,7 +466,7 @@ A **Label** can be displaced from its original position to any preferred locatio
             length: 50,
             direction: "bottom"
         }],
-        //Enable Label Dragging for connector. 
+        //Enables Label Dragging for connector. 
         constraints: connectorConstraints.Default | connectorConstraints.DragLabel,
         labels: [{
             text: "Label "
@@ -489,11 +489,11 @@ A **Label** can be displaced from its original position to any preferred locatio
 
 ## Rotate
 
-You can rotate the labels to any desired angles. Labels will be rotated to the angle that is defined by the `rotateAngle` property of label. The following code illustrates how to rotate a label.
+You can rotate the labels to any desired angle. Labels are rotated to the angle that is defined by the `rotateAngle` property of label. The following code illustrates how to rotate a label.
 
 {% highlight js %}
 
-    //Initialize Diagram
+    //Initializes Diagram
     $("#diagram").ejDiagram({
         width: "100%",
         height: "100%",
@@ -510,7 +510,7 @@ You can rotate the labels to any desired angles. Labels will be rotated to the a
             fillColor: "#1BA0E2",
             labels: [{
                 text: "Label",
-                //set label's rotation Angle
+                //Sets label's rotation Angle
                 rotateAngle: 45
             }]
         }]
@@ -526,11 +526,11 @@ N> There is no built-in support to rotate labels interactively.
 
 **Diagram** provides support to edit a Label at runtime, either programmatically or interactively. By default, label is in **View** mode. But it can be brought to edit mode in two ways; 
 
-   1. By double clicking on the label.
+   1. By double-clicking the label.
 
    2. By selecting the item and pressing the **F2** key. 
 
-Double clicking on any label will enable **editing** of that. Double clicking on the node will enable first label editing. When the focus of editor is lost, the label for the node will be updated.
+Double-clicking any label will enables **editing** of that. Double-clicking the node enables first label editing. When the focus of editor is lost, the label for the node is updated.
 
 You can programmatically edit the label by changing the `mode` of the label. The following code illustrates how to edit the label programmatically.
 
@@ -538,7 +538,7 @@ You can programmatically edit the label by changing the `mode` of the label. The
 
     var diagram = $("#diagram").ejDiagram("instance");
     var node = diagram.model.selectedItems.children[0];
-    //set label mode as Edit 
+    //Sets label mode as Edit 
     var options = {
         mode: ej.datavisualization.Diagram.LabelEditMode.Edit
     };
@@ -554,7 +554,7 @@ Diagram allows to create read only labels. You have to set the `readOnly` proper
 
 {% highlight js %}
 
-    //Initialize Diagram
+    //Initializes Diagram
     $("#diagram").ejDiagram({
         width: "100%",
         height: "100%",
@@ -569,7 +569,7 @@ Diagram allows to create read only labels. You have to set the `readOnly` proper
             offsetY: 100,
             borderColor: "black",
             fillColor: "#1BA0E2",
-            //set label as read-only
+            //Sets label as read-only
             labels: [{
                 text: "Label",
                 readOnly: true
@@ -581,7 +581,7 @@ Diagram allows to create read only labels. You have to set the `readOnly` proper
 
 ## Multiple labels
 
-We can add any number of labels to a node or connector.  The following code illustrates how to add multiple labels to a node. 
+You can add any number of labels to a node or connector.  The following code illustrates how to add multiple labels to a node. 
 
 {% highlight js %}
 
@@ -599,7 +599,7 @@ We can add any number of labels to a node or connector.  The following code illu
             offsetY: 100,
             borderColor: "black",
             fillColor: "#1BA0E2",
-            //adding multiple labels to a node
+            //Adds multiple labels to a node
             labels: [{
                 text: "Left",
                 offset: {
@@ -628,7 +628,7 @@ We can add any number of labels to a node or connector.  The following code illu
 
 ## Limitation
 
-* To enable faster rendering, labels are rendered in a separate layer, because of this all labels will always stay on top. When two nodes are overlapped, text of underlying node will not be hidden by the overlapped node. 
+* To enable faster rendering, labels are rendered in a separate layer because of this, all the labels always stay on top. When two nodes are overlapped, text of underlying node is not hidden by the overlapped node. 
 
 <table>
 <tr>
