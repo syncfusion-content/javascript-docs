@@ -9,22 +9,22 @@ documentation: ug
 
 # Group
 
-Group is used to cluster multiple nodes and connectors into a single element. It acts like a container for its children (nodes, groups and connectors). Every change that made to group will also affect the children. Child elements can be edited individually. 
+Group is used to cluster multiple nodes and connectors into a single element. It acts like a container for its children (nodes, groups, and connectors). Every change made to the group also affects the children. Child elements can be edited individually. 
 
 ## Create Group
 
 ### Add group when initializing diagram
 
-You can add a group to diagram model through `nodes` collection. To define an object as group, you need to set its `type` property as "group" and you need to add the child objects to the `children` collection of the group. The following code illustrates how to create a group node.
+You can add a group to the Diagram model through `nodes` collection. To define an object as group, set its `type` property as "group" and you need to add the child objects to the `children` collection of the group. The following code illustrates how to create a group node.
 
 {% highlight js %}
 
 var nodes = [
         {
-        //set the name
+        //Sets the name
         name: "group1",
         
-        //Define the collection of children
+        //Defines the collection of children
         children: [{
             name: "rectangle1",
             offsetX: 100,
@@ -51,14 +51,14 @@ var nodes = [
             }]
         }, ],
         
-        // set the type as group
+        // Sets the type as group
         type: "group"
     }
 ]
 
 //Initialize Diagram
 $("#DiagramContent").ejDiagram({
-    //set nodes collection to diagram model.
+    //Sets nodes collection to Diagram model.
     nodes: nodes
 });
 
@@ -66,7 +66,7 @@ $("#DiagramContent").ejDiagram({
  
 ### Add group at run time
 
-You can add a group node at runtime using the client side method `add`.
+You can add a group node at runtime by using the client side method `add`.
 
 The following code illustrates how a group node is added at run time.
 
@@ -105,16 +105,16 @@ var group = {
 
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
-// add group to diagram.
+// Adds group to the Diagram.
 diagram.add(group);
 
 {% endhighlight %}
 
 ### Group from palette
 
-Group nodes can be predefined and added to symbol palette. You can drop those groups into diagram when needed.
+Group nodes can be predefined and added to symbol palette. You can drop those groups into Diagram, when required.
 
-To explore how to add groups from symbol palette, refer [Symbol Palette](/js/Diagram/Symbol-Palette)
+To explore how to add groups from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette)
 
 ## Container
 
@@ -123,9 +123,9 @@ There are two types of containers available.
 
 ### Canvas
 
-  * The Canvas panel supports absolute positioning and provides the least layout functionality to its contained diagram elements. 
+  * The Canvas panel supports absolute positioning and provides the least layout functionality to its contained Diagram elements. 
 
-  * Canvas allows you to position its contained elements by using margin and alignment property.
+  * Canvas allows you to position its contained elements by using margin and alignment properties.
 
   * It allows elements to be either vertically or horizontally aligned.
 
@@ -148,7 +148,7 @@ var nodes = [{
     }, {
         type: "node",
         name: "node2",
-        // set the margin to define the space around the child node.
+        // Sets the margin to define the space around the child node.
         marginTop: 30,
         marginLeft: 30,
         fillColor: "white",
@@ -172,14 +172,14 @@ var nodes = [{
         height: 100
     }],
     
-    //set the container as canvas.
+    //Sets the container as canvas.
     container: {
         type: "canvas"
     },
     fillColor: "#E7EBF4",
     borderColor: "black",
     
-    //set the padding to give space between the group border and group content.
+    //Sets the padding to give space between the group border and group content.
     paddingLeft: 30,
     paddingTop: 30,
     paddingRight: 30,
@@ -211,14 +211,14 @@ var nodes = [{
     offsetY: 200,
     fillColor: "#E7EBF4",
     borderColor: "black",
-    // set the minimum size for stack panel.
+    // Sets the minimum size for stack panel.
     minHeight: 300,
     minWidth: 300,
     children: [{
         type: "node",
         name: "snode1",
         fillColor: "darkCyan",
-        //set the horizontal Alignment for child node.
+        //Sets the horizontal Alignment for child node.
         horizontalAlign: "left",
         width: 100,
         height: 100
@@ -237,7 +237,7 @@ var nodes = [{
         width: 100,
         height: 100
     }],
-    // set the container as stack.
+    // Sets the container as stack.
     container: {
         type: "stack"
     },
@@ -260,7 +260,7 @@ $("#DiagramContent").ejDiagram({
 <tr>
 <td>
 It arranges the child elements based on the child element’s position and size properties.</td><td>
-Each container has a predefined behaviour to measure and arrange its child elements. Canvas and stack containers are supported in diagram.</td></tr>
+Each container has a predefined behaviour to measure and arrange its child elements. Canvas and stack containers are supported in the Diagram.</td></tr>
 <tr>
 <td>
 Padding, Min and Max Size properties are not applicable for basic group.</td><td>
@@ -273,4 +273,4 @@ It is applicable for container.</td></tr>
 
 ## Interaction
 
-You can edit the group and its children at runtime. For more information about how to interact with a group, refer [Interaction](/js/Diagram/Interaction "Selection").
+You can edit the group and its children at runtime. For more information about how to interact with a group, refer to [Interaction](/js/Diagram/Interaction "Selection").
