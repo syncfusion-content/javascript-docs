@@ -9,9 +9,9 @@ documentation: ug
 
 # Context Menu
 
-  * In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right click operation. Nested level of context menu items can be created.
+  * In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created.
 
-  * Diagram provides some in built context menu items and allows to define custom menu items.
+  * Diagram provides some in-built context menu items and allows to define custom menu items.
   
 ## Default Context Menu
 
@@ -23,7 +23,7 @@ The following code illustrates how to enable the default context menu items.
 $("#DiagramContent").ejDiagram({
     width: "700px",
     height: "600px",
-    //enable the context menu
+    //Enables the context menu
     enableContextMenu: true
 });
 
@@ -34,22 +34,22 @@ $("#DiagramContent").ejDiagram({
 ## Customize Context Menu
 
 Apart from the default context menu items, you can define some additional context menu items. Those additional items have to be defined and added to `items` property of `contextMenu`. `subItems` property of context menu item enables to define a set of sub menu items.
-The following code snippet illustrate how to add custom context menu items.
+The following code example illustrate how to add custom context menu items.
 
 {% highlight js %}
 
 $("#DiagramContent").ejDiagram({
     width: "700px",
     height: "600px",
-    //enable the context menu
+    //Enables the context menu
     enableContextMenu: true,
     contextMenu: {
-        // define the custom context menu items
+        // Defines the custom context menu items
         items: [{
             name: "zoom",
             // Text to be displayed 
             text: "Zoom",
-            // define the sub items
+            // Defines the sub items
             subItems: [{
                 name: "zoomIn",
                 text: "ZoomIn"
@@ -58,17 +58,17 @@ $("#DiagramContent").ejDiagram({
                 text: "ZoomOut"
             }]
         }, ],
-        // hide the default context menu items
+        // Hides the default context menu items
         showCustomMenuItemsOnly: true
     }
 });
 
-If you want to display only your custom context menu items, you can set true to the `showCustomMenuItemsOnly` property. 
+When you want to display only your custom context menu items, you can set true to the `showCustomMenuItemsOnly` property. 
 
 {% endhighlight %}
 
 Icons of context menu items can be customized by overriding the default context menu item style.
-The following code snippet illustrates how to customize the icon of context menu items.
+The following code example illustrates how to customize the icon of context menu items.
 
 {% highlight html %}
 
@@ -93,7 +93,7 @@ The following code snippet illustrates how to customize the icon of context menu
 
 ## Context Menu Events
 
-  * You will be notified with events when you try to open the context menu items(`contextMenuBeforeOpen`) and when you click the menu items(`contextMenuClick`). The following code snippet illustrates how to define those events.
+  * You would be notified with events when you try to open the context menu items(`contextMenuBeforeOpen`) and when you click the menu items(`contextMenuClick`). The following code example illustrates how to define those events.
 
 {% highlight js %}
 
