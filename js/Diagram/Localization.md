@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-  * Localization is the process of providing controls in different cultures, to help you set your own culture easily. Diagram provides localization support for Context Menu items.  
+  * Localization is the process of providing controls in different cultures to help you set your own culture easily. Diagram provides localization support for Context Menu items.  
 
   * The Diagram model’s 'locale' property is used to define the culture code. 
 
@@ -17,7 +17,7 @@ The following code illustrates how to provide localization support for Context M
 
 {% highlight js %}
 
-// define the context menu items with spanish language
+// Defines the context menu items with spanish language
 
 ej.datavisualization.Diagram.Locale["es-ES"] = {
     cut: "Corte",
@@ -56,16 +56,16 @@ $(function() {
         targetNode: "rectangle2"
     }]
 
-    //initialize the diagram.
+    //Initializes the Diagram.
     $("#diagram").ejDiagram({
         width: "700px",
         height: "600px",
-        //set the culture code
+        //Sets the culture code
         locale: "es-ES",
         nodes: nodes,
         connectors: connectors,
         defaultSettings: {
-            //set the default properties of the nodes.
+            //Sets the default properties of the nodes.
             node: {
                 width: 100,
                 height: 100,
