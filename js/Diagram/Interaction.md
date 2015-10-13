@@ -11,17 +11,17 @@ documentation: ug
 
 ## Selection
 
-Selector provides a visual representation of selected elements. It behaves like a container and enables you to update the size, position and rotation angle of the selected elements through interaction and programmatically. Single or multiple elements can be selected at a time.
+Selector provides a visual representation of selected elements. It behaves like a container and enables you to update the size, position, and rotation angle of the selected elements through interaction and programmatically. Single or multiple elements can be selected at a time.
 
 ### Single selection
 
-An element can be selected by clicking on that. During single click, all previously selected items will be cleared. Following image shows how the selected elememts are visually represented.
+An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elememts are visually represented.
 
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img1.png" %}
 
 ### Selecting a group
 
-If a child element of any group is clicked, its contained group will be selected instead of the child element. With consecutive clicks on the selected element, selection will be changed from top to bottom in the hierarchy of parent group to its children.
+When a child element of any group is clicked, its contained group is selected instead of the child element. With consecutive clicks on the selected element, selection is changed from top to bottom in the hierarchy of parent group to its children.
 
 ### Multiple selection
 
@@ -29,44 +29,44 @@ Multiple elements can be selected with the following ways.
 
 1. Ctrl+Click
 
-   During single click, any existing items in the selection list be cleared, and only the item that is clicked recently be there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.  
+   During single click, any existing item in the selection list be cleared, and only the item clicked recently is there in the selection list. To avoid cleaning the old selected item, Ctrl key must be on hold when clicking.  
 
 2. Selection rectangle / Rubber band selection
 
-   Clicking and dragging on the diagram area allows to create a rectangular region. And the elements that are covered under the rectangular region will be selected at the end.   
+   Clicking and dragging the Diagram area allows to create a rectangular region. The elements that are covered under the rectangular region are selected at the end.   
 
-Multiple selected elements will be visually represented as shown below.
+Multiple selected elements are visually represented as shown.
 
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img2.png" %}
 
 ### Select/Unselect elements programmatically
 
-The client side methods `addSelection`, `clearSelection` and `removeSelection` help to select/unselect elements at runtime. Following code snippet illustrates how to select/unselect an item through programmatically.
+The client side methods `addSelection`, `clearSelection` and `removeSelection` help select/unselect elements at runtime. The following code example illustrates how to select/unselect an item through programmatically.
 
 {% highlight js %}
 
     var diagram = $("#DiagramContent").ejDiagram("instance");
     var node = diagram.findNode("node1");
     
-    //Select an element
+    //Selects an element
     diagram.addSelection(node);
     
-    //Clear the current selection
+    //Clears the current selection
     diagram.clearSelection();
     
-    //Unselect a particular object
+    //Unselects a particular object
     diagram.removeSelection(node);
 
 {% endhighlight %}  
 
-You can get the current selected items from the `children` collection of `selectedItems` property of diagram model.
-The client side method `updateSelector` helps you to change the size, position and rotation angle of the selected elements at runtime. Following code snippets illustrates how to read the selected items and how to update the position, size and rotation angle.
+You can get the current selected items from the `children` collection of `selectedItems` property of the Diagram model.
+The client side method `updateSelector` helps you to change the size, position, and rotation angle of the selected elements at runtime. The following code example illustrates how to read the selected items and how to update the position, size, and rotation angle.
 
 {% highlight js %}
 
     var diagram = $("#DiagramContent").ejDiagram("instance");
 
-    //update the size, position and rotateAngle of selected elements.
+    //Updates the size, position and rotateAngle of selected elements.
 
     diagram.updateSelector({
         offsetX: 200,
@@ -76,20 +76,20 @@ The client side method `updateSelector` helps you to change the size, position a
         rotateAngle: 200
     });
     
-    //To iterate the selected elements
+    //Iterates the selected elements
     for (var i = 0; i < diagram.model.selectedItems.children.length; i++) {
         var child = diagram.model.selectedItems.children[i];
     }
     
 {% endhighlight %}
 
-N> SelectedItems’s children is a read-only property. We can’t change the children collection at run time.
+N> SelectedItems’s children is a read-only property. You cannot change the children collection at run time.
 
 ## Drag
 
-* An object can be dragged by clicking and dragging it. If multiple elements are selected, dragging any one of the selected elements will move every selected element. 
+* An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element. 
 
-* While dragging, the objects will be snapped towards the nearest objects to make better alignments. For better alignments, refer [Snapping](/js/Diagram/Gridlines "Snapping"). 
+* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines "Snapping"). 
 
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img3.png" %}
 
@@ -97,21 +97,21 @@ N> SelectedItems’s children is a read-only property. We can’t change the chi
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 
-* When one corner of the selector is dragged, opposite corner will be in static position.
+* When one corner of the selector is dragged, opposite corner is in a static position.
 
-* While resizing, the objects will be snapped towards the nearest objects to make better alignments. For better alignments, refer [Snapping](/js/Diagram/Gridlines "Snapping").
+* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines "Snapping").
 
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img4.png" %}
 
 ## Rotate
 
-* A rotate handler will be placed above the selector. Clicking and dragging the handler in a circular direction leads to rotate the node.
+* A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
 
-* The node will be rotated with reference to the static pivot point. 
+* The node is rotated with reference to the static pivot point. 
 
-* Pivot thumb (thumb at the middle of the node) will appear while rotating the node to represent the static point.
+* Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
 
-* For more information about pivot, refer [Pivot](/js/Diagram/Node "Pivot").
+* For more information about pivot, refer to [Pivot](/js/Diagram/Node "Pivot").
 
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img5.png" %}
 
@@ -121,17 +121,17 @@ N> SelectedItems’s children is a read-only property. We can’t change the chi
 
 ### End point handles
 
-Source and target points of the selected connectors will be represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
+Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img6.png" %}
 
 ### Straight segment editing
 
-* End point of each straight segment will be represented by a thumb that enables to edit the segment.
+* End point of each straight segment is represented by a thumb that enables to edit the segment.
 
-* Any number of new segments can be inserted into a straight line by clicking on that when shift and ctrl keys are pressed. (Ctrl+Shift+Click).
+* Any number of new segments can be inserted into a straight line by clicking that when shift and ctrl keys are pressed. (Ctrl+Shift+Click).
 
-* Straight segments can be removed by clicking at the segment end point, when ctrl and shift keys are pressed. (Ctrl+Shift+Click).
+* Straight segments can be removed by clicking the segment end point, when ctrl and shift keys are pressed. (Ctrl+Shift+Click).
 
 ### Orthogonal thumbs
 
@@ -139,19 +139,19 @@ Source and target points of the selected connectors will be represented with two
 
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img7.png" %}
 
-* If necessary, some segments will be added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
+* When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img8.png" %}
 
 ### Bezier thumbs
 
-* Bezier segments will be annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
+* Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img9.png" %}
 
 ## Drag and drop nodes over other elements
 
-Diagram provides support to drop a node/connector over another node/connector. Drop event will be raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the `constraints` property. The following code illustrates how to enable **dropping**.
+Diagram provides support to drop a node/connector over another node/connector. Drop event is raised to notify that an element is dropped over another one and it is disabled by default. It can enabled with the `constraints` property. The following code illustrates how to enable **dropping**.
 
 {% highlight js %}
 
@@ -163,7 +163,7 @@ var nodes = [{
     offsetX: 100,
     offsetY: 100,
     fillColor: "#1BA0E2",
-    //Enable allow drop for node.
+    //Enables allow drop for node.
     constraints: nodeConstraints.Default | nodeConstraints.AllowDrop,
 }];
 
@@ -173,7 +173,7 @@ var connectors = [{
     sourcePoint: { x: 200, y: 50 },
     targetPoint: { x: 300, y: 150 },
     segments: [{ type: "orthogonal", length: 50, direction: "bottom" }],
-    //Enable allow drop for connector. 
+    //Enables allow drop for connector. 
     constraints: connectorConstraints.Default | connectorConstraints.AllowDrop,
 }];
 
@@ -192,20 +192,20 @@ The following code example illustrates how to insert a child to a group interact
 
 {% highlight js %}
 $("#diagram").ejDiagram({
-    //define drop event
+    //Defines drop event
     drop: ondrop
 }
 function ondrop(args) {
     if (args.target && args.element) {
     
-       //element that is being dropped
+       //Element that is being dropped
         var node = args.element;
         
-        //element over which another element is dropped
+        //Element over which another element is dropped
         var target = args.target;
         
         if (diagram.getObjectType(target) == "group" && diagram.getObjectType(node) == "node") {
-            //Insert the node into group
+            //Inserts the node into group
             node.parent = target.name;
             target.children.push(node.name);
         }
@@ -215,27 +215,27 @@ function ondrop(args) {
 
 ## User handles
 
-User handles are used to add some frequently used commands around the selector. To create user handles, You need to define and add them to the `userHandles` collection of `selectedItems` property.
+User handles are used to add some frequently used commands around the selector. To create user handles, define and add them to the `userHandles` collection of `selectedItems` property.
 The `tool` property of user handle should be set with any appropriate tool to enable interaction.
 
 The following code example illustrates how to draw a user handle.
 
 {% highlight js %}
 
-// Define a tool to interact with the user handle
+// Defines a tool to interact with the user handle
 var CloneTool = (function (base) {
     ej.datavisualization.Diagram.extend(CloneTool, base);
 
-    // Initialize the tool
+    // Initializes the tool
     function CloneTool(name) {
         base.call(this, name);
     }
 
-    // Define the required events
+    // Defines the required events
     CloneTool.prototype.mouseup = function (evt) {
-        //clone the selected elements when click on the custom handle.
+        //clones the selected elements when the custom handle is clicked.
         this.diagram.copy();
-        //paste the cloned elements.
+        //Pastes the cloned elements.
         this.diagram.paste();
         base.prototype.mouseup.call(this, evt);
     };
@@ -244,19 +244,19 @@ var CloneTool = (function (base) {
 
     var userHandles = [];	
 
-    //initialize the handles
+    //Initializes the handles
     var cloneHandle = ej.datavisualization.Diagram.UserHandle();
 
-    // name of the user handle.
+    // Name of the user handle.
     cloneHandle.name = "Clone";
 
-    // set the tool that you have defined to interact with handle.
+    // Sets the tool that you have defined to interact with handle.
     cloneHandle.tool = new CloneTool(cloneHandle.name);
     userHandles.push(cloneHandle);
 
-    //Initialize Diagram
+    //Initializes Diagram
     $("#DiagramContent").ejDiagram({
-        //Set user handles
+        //Sets user handles
         selectedItems: {
             userHandles: userHandles
         }
@@ -267,9 +267,9 @@ var CloneTool = (function (base) {
 
 ### Appearance
 
-Position, size and style of the user handle can be customized with a set of predefined properties.
+Position, size, and style of the user handle can be customized with a set of predefined properties.
 
-Following code snippet illustrates how to customize the appearance of the user handle.
+The following code example illustrates how to customize the appearance of the user handle.
 {% highlight js %}
 
  var UserHandlePositions = ej.datavisualization.Diagram.UserHandlePositions;
@@ -278,16 +278,16 @@ Following code snippet illustrates how to customize the appearance of the user h
 
     var cloneHandle = ej.datavisualization.Diagram.UserHandle();
     cloneHandle.name = "Clone";
-    // set the position of the user handle.
+    // Sets the position of the user handle.
     cloneHandle.position = UserHandlePositions.BottomLeft;
-    // set the user handle visibility.
+    // Sets the user handle visibility.
     cloneHandle.visible = true;
-    // define whether user handle should be enabled for multiple selection or not.
+    // Defines whether user handle should be enabled for multiple selection or not.
     cloneHandle.enableMultiSelection = true;
-    // set the size of the user handle.
+    // Sets the size of the user handle.
     cloneHandle.size = 30;
     
-    // customize the appearance of user handle
+    // Customizes the appearance of user handle
     cloneHandle.backgroundColor = "#4D4D4D";
     cloneHandle.pathColor = "white";
     cloneHandle.borderColor = "red";
@@ -305,15 +305,15 @@ Following code snippet illustrates how to customize the appearance of the user h
 
 ## Zoom pan
 
-* When a large diagram is loaded, only certain portion of diagram will be visible, remaining portions will be clipped. Clipped portions can be explored by scrolling the scrollbars or panning the diagram.
+* When a large Diagram is loaded, only certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
 
-* Diagram can be zoomed in or out using Ctrl + mouse wheel.
+* Diagram can be zoomed in or out by using Ctrl + mouse wheel.
 
 ## Keyboard
 
-Diagram provides support to interact with the elements with key gestures. By default, some in built commands are bound with a relevant set of key combinations.
+Diagram provides support to interact with the elements with key gestures. By default, some in-built commands are bound with a relevant set of key combinations.
 
-Following table illustrates those commands with the associated key values.
+The following table illustrates those commands with the associated key values.
 
 <table>
 <tr>
@@ -350,7 +350,7 @@ Undo(Reverse the last editing action performed on diagram)</td></tr>
 <td>
 Ctrl + Y</td><td>
 redo</td><td>
-Redo(Restores the last editing action if no other actions have occurred since the last undo on diagram)</td></tr>
+Redo(Restores the last editing action when no other actions have occurred since the last undo on diagram)</td></tr>
 <tr>
 <td>
 Delete</td><td>
