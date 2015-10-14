@@ -24,7 +24,7 @@ Apply the plugin and property assigning to the **TimePicker** widget element thr
 
 To know more details about Angular binding, refer the following link location,
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 The following code example depicts you the way to bind data to the **TimePicker** widget through angular support,
 

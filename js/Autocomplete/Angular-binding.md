@@ -22,7 +22,7 @@ Apply the plugin and property assigning to the AutoComplete widget element throu
 
 To know more about the **Angular** binding, you can refer the online documentation in the following link location,
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 The following code example depicts the way to bind data to the **AutoComplete** widget through **angular** support.
 
