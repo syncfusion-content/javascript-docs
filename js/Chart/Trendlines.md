@@ -32,9 +32,9 @@ EjChart can generate Trendlines for Cartesian type series *(line, column, scatte
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/trendlines) here to view the Trendlines online demo sample.
 
 
-## Customizing the trendline styles
+## Customize the trendline styles
 
-A trendline can be customized using properties such as [fill](../api/ejchart#members:series-trendlines-fill), [width](../api/ejchart#members:series-trendlines-width), **dahsArray** and **opacity**. Default type of trendline is **"linear"**.
+A trendline can be customized by using the properties such as [fill](../api/ejchart#members:series-trendlines-fill), [width](../api/ejchart#members:series-trendlines-width), **dahsArray** and **opacity**. The default type of trendline is **"linear"**.
 
 {% highlight js %}
 
@@ -68,7 +68,7 @@ EjChart supports the following type of Trendlines.
 
 ### Linear
 
-To render Linear Trendline, you have to set [type](../api/ejchart#members:series-trendlines-type) as **"linear"**. 
+To render Linear Trendline, you have to set the [type](../api/ejchart#members:series-trendlines-type) as **"linear"**. 
 
 {% highlight js %}
 
@@ -134,7 +134,7 @@ Logarithmic Trendline can be rendered by setting the [type](../api/ejchart#membe
 
 ### Power
 
-Power Trendline can be rendered by setting the [type](../api/ejchart#members:series-trendlines-type) of trendline as **"power"**. 
+Power Trendline can be rendered by setting the [type](../api/ejchart#members:series-trendlines-type) of the trendline as **"power"**. 
 
 {% highlight js %}
 
@@ -156,7 +156,7 @@ Power Trendline can be rendered by setting the [type](../api/ejchart#members:ser
 
 ### Polynomial
 
-Polynomial Trendline can be rendered by setting trendline [type](../api/ejchart#members:series-trendlines-type) as **"polynomial"**.  You can change the polynomial order by using **polynomialOrder** of trendlines. It ranges from 2 to 6.
+Polynomial Trendline can be rendered by setting the trendline [type](../api/ejchart#members:series-trendlines-type) as **"polynomial"**.  You can change the polynomial order by using the **polynomialOrder** of the trendlines. It ranges from 2 to 6.
 
 {% highlight js %}
 
@@ -209,7 +209,7 @@ The value set for [forwardForecast](../api/ejchart#members:series-trendlines-for
 
 ### Backward Forecasting
 
-The value set for [backwardForecast](../api/ejchart#members:series-trendlines-backwardForecast) is used to determine the past trends.
+The value set for the [backwardForecast](../api/ejchart#members:series-trendlines-backwardForecast) is used to determine the past trends.
 
 {% highlight js %}
 
@@ -232,7 +232,7 @@ The value set for [backwardForecast](../api/ejchart#members:series-trendlines-ba
 
 ## Trendlines Legend
 
-To display legend item for trendline, use [name](../api/ejchart#members:series-trendlines-name) property. You can interact with trendline legends similar to the series legends *(show/hide trendlines on legend click)*.  
+To display the legend item for trendline, use the [name](../api/ejchart#members:series-trendlines-name) property. You can interact with the trendline legends similar to the series legends *(show/hide trendlines on legend click)*.  
 
 {% highlight js %}
 
