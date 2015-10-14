@@ -11,9 +11,9 @@ documentation: ug
 
 EjChart control supports 10 types of technical indicators. 
 
-## Binding data to render indicator
+## Bind data to the render indicator
 
-You can bind series [dataSource](../api/ejchart#members:indicators-datasource) to indicator by setting the specific series name to indicator using [indicators.seriesName](../api/ejchart#members:indicators-seriesname) property.
+You can bind the series [dataSource](../api/ejchart#members:indicators-datasource) to the indicator by setting the specific series name to the indicator by using the [indicators.seriesName](../api/ejchart#members:indicators-seriesname) property.
 
 {% highlight js %}
 
@@ -44,7 +44,7 @@ You can bind series [dataSource](../api/ejchart#members:indicators-datasource) t
 {% endhighlight %}
 
 
-Also you can add data to indicator directly use [dataSource](../api/ejchart#members:indicators-datasource) option of indicator.  
+Also, you can add data to the indicator directly by using the [dataSource](../api/ejchart#members:indicators-datasource) option of the indicator.  
 
 {% highlight js %}
 
@@ -72,7 +72,7 @@ Also you can add data to indicator directly use [dataSource](../api/ejchart#memb
 
 ### Accumulation Distribution
 
-To create an Accumulation Distribution indicator, set the [indicators.type](../api/ejchart#members:indicators-type) as **"accumulationdistribution"**. Accumulation Distribution require **‘volume’** field additionally with [dataSource](../api/ejchart#members:indicators-datasource) to calculate the signal line.
+To create an Accumulation Distribution indicator, set the [indicators.type](../api/ejchart#members:indicators-type) as **"accumulationdistribution"**. Accumulation Distribution require **‘volume’** field additionally with the [dataSource](../api/ejchart#members:indicators-datasource) to calculate the signal line.
 
 {% highlight js %}
 
@@ -137,7 +137,7 @@ You can create an ATR indicator by setting the [indicators.type](../api/ejchart#
 
 ### Bollinger Band 
 
-Bollinger Band indicator is created by setting the [indicators.type](../api/ejchart#members:indicators-type) as **"bollingerband"**. It contains three lines, namely upper band, lower band and signal line. Bollinger Band default value of period is 14 and standardDeviations is 2.
+Bollinger Band indicator is created by setting the [indicators.type](../api/ejchart#members:indicators-type) as **"bollingerband"**. It contains three lines, namely upper band, lower band and signal line. Bollinger Band default value of the period is 14 and standardDeviations is 2.
 
 {% highlight js %}
 
@@ -189,7 +189,7 @@ To render an EMA indicator, you have to set the [indicators.type](../api/ejchart
 
 ### Momentum 
 
-Momentum Technical indicator is created by setting the [indicators.type](../api/ejchart#members:indicators-type) as **"momentum"**. The momentum indicator renders two lines, namely upper band and signal line. Upper band always rendered at the value 100 and the signal line is calculated based on the momentum of data.
+Momentum Technical indicator is created by setting the [indicators.type](../api/ejchart#members:indicators-type) as **"momentum"**. The momentum indicator renders two lines, namely upper band and signal line. Upper band always rendered at the value 100 and the signal line is calculated based on the momentum of the data.
 
 {% highlight js %}
 
@@ -241,7 +241,7 @@ To render an MACD indicator, you have to set the [indicators.type](../api/ejchar
 
 #### macdType
 
-Using [macdType](../api/ejchart#members:indicators-macdtype) enumeration property, you can change the MACD rendering as *line*, *histogram* or *both*. 
+By using the [macdType](../api/ejchart#members:indicators-macdtype) enumeration property, you can change the MACD rendering as *line*, *histogram* or *both*. 
 
 {% highlight js %}
 
@@ -265,7 +265,7 @@ Using [macdType](../api/ejchart#members:indicators-macdtype) enumeration propert
 
 ### Relative Strength Index (RSI)
 
-For rendering the RSI indicator, set the [indicators.type](../api/ejchart#members:indicators-type) as **"rsi"**. It contains three lines, namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal line is calculated based on the **RSI** formula.
+To render the RSI indicator, set the [indicators.type](../api/ejchart#members:indicators-type) as **"rsi"**. It contains three lines, namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal line is calculated based on the **RSI** formula.
 
 {% highlight js %}
 
@@ -318,7 +318,7 @@ To render the SMA indicator, you should specify the [indicators.type](../api/ejc
 
 ### Stochastic 
 
-For Stochastic indicator, you need to set the [indicators.type](../api/ejchart#members:indicators-type) as **"stochastic"**. The Stochastic indicator renders four lines, namely upper line, lower line, stochastic line and the signal line. Upper line always rendered at value 80 and the lower line is rendered at value 20. Stochastic and Signal Lines are calculated based on stochastic formula.
+For the Stochastic indicator, you need to set the [indicators.type](../api/ejchart#members:indicators-type) as **"stochastic"**. The Stochastic indicator renders four lines namely, upper line, lower line, stochastic line and the signal line. Upper line always rendered at value 80 and the lower line is rendered at value 20. Stochastic and Signal Lines are calculated based on the stochastic formula.
 
 {% highlight js %}
 
@@ -370,7 +370,7 @@ To render the TMA indicator, you should specify the [indicators.type](../api/ejc
 
 ## Enable Tooltip 
 
-To display the indicator tooltip, use [visible](../api/ejchart#members:indicators-tooltip) option of [indicators.tooltip](../api/ejchart#members:indicators-tooltip). Also you can change and customize the tooltip color, border, format and font properties similar to the series tooltip.
+To display the indicator tooltip, use [visible](../api/ejchart#members:indicators-tooltip) option of the [indicators.tooltip](../api/ejchart#members:indicators-tooltip). Also, you can change and customize the tooltip color, border, format and font properties similar to the series tooltip.
 
 {% highlight js %}
 
