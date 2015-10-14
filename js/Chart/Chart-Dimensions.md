@@ -9,9 +9,9 @@ documentation: ug
 
 # Chart Dimensions
 
-You can set the size of the chart directly on the chart or to the container of the chart. By default, if you don’t specify the size, it takes 450px as the height and window size as its width. 
+You can set the size of the chart directly on the chart or to the container of the chart. When you do not specify the size, it takes 450px as the height and window size as its width, by default. 
 
-## Setting size for container
+## Set size for the container
 
 You can customize the chart dimension by setting the width and height for the container element. 
 
@@ -32,7 +32,7 @@ You can customize the chart dimension by setting the width and height for the co
 {% endhighlight %}
 
 
-## Setting size in pixels
+## Set size in pixels
 
 You can also set the chart dimension by using the [size](../api/ejchart#members:size) property of the chart. 
 
