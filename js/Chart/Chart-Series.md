@@ -11,7 +11,7 @@ documentation: ug
 
 ## Multiple Series
 
-In EjChart, you can add multiple series object in the [series](../api/ejchart.html#members:series) options. By default, the series are rendered in the order it is added to the [series](../api/ejchart.html#members:series) option. You can change this order by using the [zOrder](../api/ejchart.html#members:series-zorder) option.  
+In EjChart, you can add multiple series object in the [series](../api/ejchart.html#members:series) options. The series are rendered in the order it is added to the [series](../api/ejchart.html#members:series) option, by default. You can change this order by using the [zOrder](../api/ejchart.html#members:series-zorder) option.  
 
 {% highlight js %}
 
@@ -54,7 +54,7 @@ In EjChart, you can add multiple series object in the [series](../api/ejchart.ht
 
 ### Customizing all series together
 
-By using the [commonSeriesOptions](../api/ejchart.html#members:series-commonseriesoptions), you can customize the series options for all the series commonly instead of setting the options directly on each series object. 
+By using the [commonSeriesOptions](../api/ejchart.html#members:series-commonseriesoptions), you can customize the series options for all the series commonly, instead of setting the options directly on each series object. 
 
 N> The inline properties of the series has the first priority and override the commonSeriesOptions.
 
