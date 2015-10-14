@@ -11,7 +11,7 @@ documentation: ug
 
 ## Multiple Series
 
-In EjChart, you can add multiple series object in the **series** options. By default, the series are rendered in the order it is added to the **series** option. You can change this order by using the **zOrder** option.  
+In EjChart, you can add multiple series object in the [series](../api/ejchart.html#members:series) options. By default, the series are rendered in the order it is added to the [series](../api/ejchart.html#members:series) option. You can change this order by using the [zOrder](../api/ejchart.html#members:series-zorder) option.  
 
 {% highlight js %}
 
@@ -54,7 +54,7 @@ In EjChart, you can add multiple series object in the **series** options. By def
 
 ### Customizing all series together
 
-By using the **commonSeriesOptions**, you can customize the series options for all the series commonly instead of setting the options directly on each series object. 
+By using the [commonSeriesOptions](../api/ejchart.html#members:series-commonseriesoptions), you can customize the series options for all the series commonly instead of setting the options directly on each series object. 
 
 N> The inline properties of the series has the first priority and override the commonSeriesOptions.
 
@@ -132,11 +132,11 @@ EjChart allows you to render the combination of different series in the chart.
 
 ### Limitation of combination chart
 
-* *Bar*, *StackingBar*, and *StackingBar100* cannot be combined with the other Cartesian type series.
+* [Bar](chart-types#bar-chart), [StackingBar](chart-types#stacked-bar-chart), and [StackingBar100](chart-types#stacked-bar-chart-1) cannot be combined with the other Cartesian type series.
 
-* Cartesian type series cannot be combined with the accumulation series (*pie, doughnut, funnel, and pyramid*).
+* Cartesian type series cannot be combined with the accumulation series ([pie](chart-types#pie-chart), [doughnut](chart-types#doughnut-chart), [funnel](chart-types#funnel-chart), and [pyramid](chart-types#pyramid-chart)).
 
-* *Polar* and *Radar* series cannot be combined with the accumulation and Cartesian type series.
+* [Polar](chart-types#polar) and [Radar](chart-types#radar-chart) series cannot be combined with the accumulation and Cartesian type series.
 
 When the combination of Cartesian and accumulation series types are added to the series option, the series that are similar to the first series are rendered and other series are ignored. The following code example illustrates this,  
 
@@ -155,7 +155,7 @@ When the combination of Cartesian and accumulation series types are added to the
                  type: 'line',
                  // ...
                },
-               {       // Add pie series
+               {       // Add [Pie](chart-types#pie-chart) series
                 points: [{ x: "Jan", y: 70 },
                   // ...
                 ],                

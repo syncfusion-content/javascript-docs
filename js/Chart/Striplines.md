@@ -13,7 +13,7 @@ EjChart supports horizontal and vertical striplines.
 
 ## Horizontal Stripline
 
-You can create horizontal stripline by adding **stripLine** in the **vertical axis** and set **visible** option as **true**. Striplines will be rendering in the specified **start** to **end** range and you can add more than one stripline for an axis.
+You can create horizontal stripline by adding [stripline](../api/ejchart#members:primaryyaxis-stripline) in the **vertical axis** and set [visible](../api/ejchart#members:primaryxaxis-stripline-visible) option as **true**. Striplines will be rendering in the specified **start** to **end** range and you can add more than one stripline for an axis.
 
 
 {% highlight js %}
@@ -48,7 +48,7 @@ You can create horizontal stripline by adding **stripLine** in the **vertical ax
 
 ## Vertical Stripline
 
-You can create vertical stripline by adding **stripLine** in the **horizontal axis** and set **visible** option as **true**.  
+You can create vertical stripline by adding [stripline](../api/ejchart#members:primaryxaxis-stripline) in the **horizontal axis** and set [visible](../api/ejchart#members:primaryyaxis-stripline-visible) option as **true**.  
 
 
 {% highlight js %}
@@ -82,7 +82,7 @@ You can create vertical stripline by adding **stripLine** in the **horizontal ax
 
 ## Customizing Text
 
-For customizing the stripLine text, use **text** and **font** options. 
+For customizing the stripLine text, use [text](../api/ejchart#members:primaryyaxis-stripline-text) and [font](../api/ejchart#members:primaryyaxis-stripline-font) options. 
 
 {% highlight js %}
 
@@ -109,7 +109,7 @@ For customizing the stripLine text, use **text** and **font** options.
 
 **Text Alignment**
 
-Stripline text can be aligned using **textAlignment** property.  
+Stripline text can be aligned using [textAlignment](../api/ejchart#members:primaryyaxis-stripline-textalignment) property.  
 
 {% highlight js %}
 
@@ -136,7 +136,7 @@ Stripline text can be aligned using **textAlignment** property.
 
 ## Customizing Stripline
 
-For customizing the stripLine styles, use **color**, **opacity**, **borderWidth** and **borderColor** properties. 
+For customizing the stripLine styles, use [color](../api/ejchart#members:primaryyaxis-stripline-color), [opacity](../api/ejchart#members:primaryyaxis-stripline-opacity), [borderWidth](../api/ejchart#members:primaryyaxis-stripline-borderwidth) and [borderColor](../api/ejchart#members:primaryyaxis-stripline-bordercolor) properties. 
 
 {% highlight js %}
 
@@ -166,7 +166,7 @@ For customizing the stripLine styles, use **color**, **opacity**, **borderWidth*
 
 ## Changing the zorder of stripline
 
-Stripline **zIndex** property is used to display the stripLine either behind or over of the series.  
+Stripline [zIndex](../api/ejchart#members:primaryyaxis-stripline-zindex) property is used to display the stripLine either behind or over of the series.  
 
 {% highlight js %}
 

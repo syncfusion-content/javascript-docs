@@ -4262,6 +4262,41 @@ commonSeriesOptions : {close: "close" }
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
 
 
+### commonSeriesOptions.size<span class="type-signature type string">string</span>
+{:#members:commonseriesoptions-size}
+
+
+
+
+Name of the property in the datasource which contains size value for bubble series.
+
+
+Default value:
+{:.param}
+
+
+
+ null
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions : [{size: "size" }]                   
+});
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kf0d05wi)
+
+
 ### commonSeriesOptions.trendlines<span class="type-signature type array">array</span>
 {:#members:commonseriesoptions-trendlines}
 
@@ -10184,6 +10219,110 @@ $("#container").ejChart({
 {% endhighlight %}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yo4ek2ci)
+
+
+### primaryXAxis.range<span class="type-signature type object">object</span>
+{:#members:primaryxaxis-range}
+
+
+
+
+Options to customize the range of the axis.
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/Sync_jhhilggd)
+
+
+### primaryXAxis.range.minimum<span class="type-signature type number">number</span>
+{:#members:primaryxaxis-range-minimum}
+
+
+
+
+Minimum value of the axis range.
+
+
+Default value:
+{:.param}
+null
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { range : { minimum: 10 } }
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.range.maximum<span class="type-signature type number">number</span>
+{:#members:primaryxaxis-range-maximum}
+
+
+
+
+Maximum value of the axis range.
+
+
+Default value:
+{:.param}
+null
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { range : { maximum: 100 } }
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.range.interval<span class="type-signature type number">number</span>
+{:#members:primaryxaxis-range-interval}
+
+
+
+
+Interval of the axis range.
+
+
+Default value:
+{:.param}
+null
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { range : { interval: 10 } }
+                          
+});
+
+{% endhighlight %}
 
 
 ### primaryXAxis.rangePadding<span class="type-signature type enum">enum</span>
@@ -17149,6 +17288,38 @@ series :[{ points:[{ close : 50 }] }]
 {% endhighlight %}
 
 
+### series.points.size<span class="type-signature type number">number</span>
+{:#members:series-points-size}
+
+
+
+
+Size of a bubble in bubble series. This is applicable only for bubble series.
+
+
+Default value:
+{:.param}
+
+
+
+null
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ points:[{ size : 5 }] }]                  
+});
+{% endhighlight %}
+
+
 
 
 ### series.points.fill<span class="type-signature type string">string</span>
@@ -19387,6 +19558,41 @@ series : [{close: "close" }]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 
 
+### series.size<span class="type-signature type string">string</span>
+{:#members:series-size}
+
+
+
+
+Name of the property in the datasource which contains size value for bubble series.
+
+
+Default value:
+{:.param}
+
+
+
+ null
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{size: "size" }]                   
+});
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xsmhbrfn)
+
+
 ### series.trendlines<span class="type-signature type array">array</span>
 {:#members:series-trendlines}
 
@@ -20325,6 +20531,84 @@ $("#container").ejChart({
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/lhtjjczw)
+
+
+### size<span class="type-signature type object">object</span>
+{:#members:size}
+
+
+
+
+Options to customize the Chart size.
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wpvk5t3p)
+
+
+
+
+### size.height<span class="type-signature type string">string</span>
+{:#members:size-height}
+
+
+
+
+Height of the Chart. Height can be specified in either pixel or percentage.
+
+
+Default value:
+{:.param}
+'450'
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   size :{height : '80%'}          
+
+});
+
+{% endhighlight %}
+
+
+
+
+### size.width<span class="type-signature type string">string</span>
+{:#members:size-width}
+
+
+
+
+Width of the Chart. Width can be specified in either pixel or percentage.
+
+
+Default value:
+{:.param}
+'450'
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   size :{width : '80%'}          
+
+});
+
+{% endhighlight %}
 
 
 

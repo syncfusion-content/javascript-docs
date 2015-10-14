@@ -11,7 +11,7 @@ documentation: ug
 
 ## Custom Color Palette
 
-The Chart displays different series in different colors by default. You can customize the color of each series by providing a custom color palette of your choice by using the **palette** property. 
+The Chart displays different series in different colors by default. You can customize the color of each series by providing a custom color palette of your choice by using the [palette](../api/ejchart#members:palette) property. 
 
 {% highlight js %}
 
@@ -52,7 +52,7 @@ Following are the built-in themes available in the Chart
 * gradient-saffrondark
 
 
-You can set your desired theme by using the **theme** property. Flat light is the default theme used in the Chart.
+You can set your desired theme by using the [theme](../api/ejchart#members:theme) property. Flat light is the default theme used in the Chart.
 
 {% highlight js %}
 
@@ -72,7 +72,7 @@ You can set your desired theme by using the **theme** property. Flat light is th
 
 ## Point level customization
 
-Marker, data label and fill color of each point in a series can be customized individually by using the **points** collection.
+Marker, data label and fill color of each point in a series can be customized individually by using the [points](../api/ejchart#members:series-points) collection.
 
 {% highlight js %}
 
@@ -108,7 +108,7 @@ Marker, data label and fill color of each point in a series can be customized in
 
 ### Customizing chart background
 
-The Chart background can be customized by using the **background** property of the Chart. To customize the chart border, use **border** option of the chart. 
+The Chart background can be customized by using the [background](../api/ejchart#members:background) property of the Chart. To customize the chart border, use [border](../api/ejchart#members:border) option of the chart. 
 
 {% highlight js %}
 
@@ -133,7 +133,7 @@ The Chart background can be customized by using the **background** property of t
 
 **Chart Margin**
 
-The Chart **margin** property is used to add the margin to the chart area at the left, right, top and bottom position.
+The Chart [margin](../api/ejchart#members:margin) property is used to add the margin to the chart area at the left, right, top and bottom position.
 
 {% highlight js %}
 
@@ -156,7 +156,7 @@ The Chart **margin** property is used to add the margin to the chart area at the
 
 **Setting background image**
 
-Background image can be added to the chart by using the **backGroundImageUrl** property.
+Background image can be added to the chart by using the [backGroundImageUrl](../api/ejchart#members:backgroundimageurl) property.
 
 {% highlight js %}
 
@@ -181,7 +181,7 @@ Background image can be added to the chart by using the **backGroundImageUrl** p
 
 **Chart area background**
 
-The Chart area background can be customized by using the **background** property in the chart area. 
+The Chart area background can be customized by using the [background](../api/ejchart#members:chartarea-background) property in the chart area. 
 
 {% highlight js %}
 
@@ -206,7 +206,7 @@ The Chart area background can be customized by using the **background** property
 
 ### Customizing chart area grid bands
 
-You can provide different color for alternate grid rows and columns formed by the grid lines in the chart area by using the **alternateGridBand** property of axis. The properties **odd** and **even** are used to customize the grid bands at odd and even positions respectively. 
+You can provide different color for alternate grid rows and columns formed by the grid lines in the chart area by using the [alternateGridBand](../api/ejchart#members:primaryxaxis-alternategridband) property of axis. The properties [odd](../api/ejchart#members:primaryxaxis-alternategridband-odd) and [even](../api/ejchart#members:primaryxaxis-alternategridband-even) are used to customize the grid bands at odd and even positions respectively. 
 
 {% highlight js %}
 
@@ -239,7 +239,7 @@ You can provide different color for alternate grid rows and columns formed by th
 
 ### Animation
 
-You can enable animation by using the **enableAnimation** property of series. This animates the chart series on two occasions – when the chart is loaded for the first time or whenever you change the series type by using the type property.
+You can enable animation by using the [enableAnimation](../api/ejchart#members:series-enableanimation) property of series. This animates the chart series on two occasions – when the chart is loaded for the first time or whenever you change the series type by using the type property.
 
 {% highlight js %}
 

@@ -13,7 +13,7 @@ EjChart control supports 10 types of technical indicators.
 
 ## Binding data to render indicator
 
-You can bind series **dataSource** to indicator by setting the specific series name to indicator using **"indicators.seriesName"** property.
+You can bind series [dataSource](../api/ejchart#members:indicators-datasource) to indicator by setting the specific series name to indicator using [indicators.seriesName](../api/ejchart#members:indicators-seriesname) property.
 
 {% highlight js %}
 
@@ -44,7 +44,7 @@ You can bind series **dataSource** to indicator by setting the specific series n
 {% endhighlight %}
 
 
-Also you can add data to indicator directly use **dataSource** option of indicator.  
+Also you can add data to indicator directly use [dataSource](../api/ejchart#members:indicators-datasource) option of indicator.  
 
 {% highlight js %}
 
@@ -72,7 +72,7 @@ Also you can add data to indicator directly use **dataSource** option of indicat
 
 ### Accumulation Distribution
 
-To create an Accumulation Distribution indicator, set the **indicators.type** as **"accumulationdistribution"**. Accumulation Distribution require **‘volume’** field additionally with **dataSource** to calculate the signal line.
+To create an Accumulation Distribution indicator, set the [indicators.type](../api/ejchart#members:indicators-type) as **"accumulationdistribution"**. Accumulation Distribution require **‘volume’** field additionally with [dataSource](../api/ejchart#members:indicators-datasource) to calculate the signal line.
 
 {% highlight js %}
 
@@ -111,7 +111,7 @@ To create an Accumulation Distribution indicator, set the **indicators.type** as
 
 ### Average True Range (ATR)
 
-You can create an ATR indicator by setting the **indicators.type** as **"atr"** in the **indicators**. 
+You can create an ATR indicator by setting the [indicators.type](../api/ejchart#members:indicators-type) as **"atr"** in the [indicators](../api/ejchart#members:indicators). 
 
 {% highlight js %}
 
@@ -137,7 +137,7 @@ You can create an ATR indicator by setting the **indicators.type** as **"atr"** 
 
 ### Bollinger Band 
 
-Bollinger Band indicator is created by setting the **indicators.type** as **"bollingerband"**. It contains three lines, namely upper band, lower band and signal line. Bollinger Band default value of period is 14 and standardDeviations is 2.
+Bollinger Band indicator is created by setting the [indicators.type](../api/ejchart#members:indicators-type) as **"bollingerband"**. It contains three lines, namely upper band, lower band and signal line. Bollinger Band default value of period is 14 and standardDeviations is 2.
 
 {% highlight js %}
 
@@ -163,7 +163,7 @@ Bollinger Band indicator is created by setting the **indicators.type** as **"bol
 
 ### Exponential Moving Average (EMA)
 
-To render an EMA indicator, you have to set the **indicators.type** as **"ema"**.  
+To render an EMA indicator, you have to set the [indicators.type](../api/ejchart#members:indicators-type) as **"ema"**.  
 
 {% highlight js %}
 
@@ -189,7 +189,7 @@ To render an EMA indicator, you have to set the **indicators.type** as **"ema"**
 
 ### Momentum 
 
-Momentum Technical indicator is created by setting the **indicators.type** as **"momentum"**. The momentum indicator renders two lines, namely upper band and signal line. Upper band always rendered at the value 100 and the signal line is calculated based on the momentum of data.
+Momentum Technical indicator is created by setting the [indicators.type](../api/ejchart#members:indicators-type) as **"momentum"**. The momentum indicator renders two lines, namely upper band and signal line. Upper band always rendered at the value 100 and the signal line is calculated based on the momentum of data.
 
 {% highlight js %}
 
@@ -215,7 +215,7 @@ Momentum Technical indicator is created by setting the **indicators.type** as **
 
 ### Moving Average Convergence Divergence (MACD)
 
-To render an MACD indicator, you have to set the **indicators.type** as **"macd"**.  MACD indicator contains Macd line, Signal line and Histogram column. Histogram is used to differentiate MACD and signal line.
+To render an MACD indicator, you have to set the [indicators.type](../api/ejchart#members:indicators-type) as **"macd"**.  MACD indicator contains Macd line, Signal line and Histogram column. Histogram is used to differentiate MACD and signal line.
 
 {% highlight js %}
 
@@ -241,7 +241,7 @@ To render an MACD indicator, you have to set the **indicators.type** as **"macd"
 
 #### macdType
 
-Using **macdType** enumeration property, you can change the MACD rendering as *line*, *histogram* or *both*. 
+Using [macdType](../api/ejchart#members:indicators-macdtype) enumeration property, you can change the MACD rendering as *line*, *histogram* or *both*. 
 
 {% highlight js %}
 
@@ -265,7 +265,7 @@ Using **macdType** enumeration property, you can change the MACD rendering as *l
 
 ### Relative Strength Index (RSI)
 
-For rendering the RSI indicator, set the **indicators.type** as **"rsi"**. It contains three lines, namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal line is calculated based on the **RSI** formula.
+For rendering the RSI indicator, set the [indicators.type](../api/ejchart#members:indicators-type) as **"rsi"**. It contains three lines, namely upper band, lower band and signal line. Upper and lower band always render at value 70 and 30 respectively and signal line is calculated based on the **RSI** formula.
 
 {% highlight js %}
 
@@ -292,7 +292,7 @@ For rendering the RSI indicator, set the **indicators.type** as **"rsi"**. It co
 
 ### Simple Moving Average (SMA)
 
-To render the SMA indicator, you should specify the **indicators.type** as **"sma"**.  
+To render the SMA indicator, you should specify the [indicators.type](../api/ejchart#members:indicators-type) as **"sma"**.  
 
 {% highlight js %}
 
@@ -318,7 +318,7 @@ To render the SMA indicator, you should specify the **indicators.type** as **"sm
 
 ### Stochastic 
 
-For Stochastic indicator, you need to set the **indicators.type** as **"stochastic"**. The Stochastic indicator renders four lines, namely upper line, lower line, stochastic line and the signal line. Upper line always rendered at value 80 and the lower line is rendered at value 20. Stochastic and Signal Lines are calculated based on stochastic formula.
+For Stochastic indicator, you need to set the [indicators.type](../api/ejchart#members:indicators-type) as **"stochastic"**. The Stochastic indicator renders four lines, namely upper line, lower line, stochastic line and the signal line. Upper line always rendered at value 80 and the lower line is rendered at value 20. Stochastic and Signal Lines are calculated based on stochastic formula.
 
 {% highlight js %}
 
@@ -344,7 +344,7 @@ For Stochastic indicator, you need to set the **indicators.type** as **"stochast
 
 ### Triangular Moving Average (TMA)
 
-To render the TMA indicator, you should specify the **indicators.type** as **"tma"**. 
+To render the TMA indicator, you should specify the [indicators.type](../api/ejchart#members:indicators-type) as **"tma"**. 
 
 {% highlight js %}
 
@@ -370,7 +370,7 @@ To render the TMA indicator, you should specify the **indicators.type** as **"tm
 
 ## Enable Tooltip 
 
-To display the indicator tooltip, use **visible** option of **indicators.tooltip**. Also you can change and customize the tooltip color, border, format and font properties similar to the series tooltip.
+To display the indicator tooltip, use [visible](../api/ejchart#members:indicators-tooltip) option of [indicators.tooltip](../api/ejchart#members:indicators-tooltip). Also you can change and customize the tooltip color, border, format and font properties similar to the series tooltip.
 
 {% highlight js %}
 

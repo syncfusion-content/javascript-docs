@@ -13,9 +13,9 @@ documentation: ug
 
 There are two ways to provide local data to chart.
 
-1. You can bind the data to chart using **dataSource** property of series and then you need to map the X and Y value with **xName** & **yName** property respectively.
+1. You can bind the data to chart using [dataSource](../api/ejchart#members:series-datasource) property of series and then you need to map the X and Y value with [xName](../api/ejchart#members:series-xname) & [yName](../api/ejchart#members:series-yname) property respectively.
 
-N> For **OHLC** type series, you have to map four dataSource fields (**high**, **low**, **open** and **close**) to bind data source and for **bubble** series you have to map **size** field along with **xName** and **yName**. 
+N> For **OHLC** type series, you have to map four dataSource fields ([high](../api/ejchart#members:series-high), [low](../api/ejchart#members:series-low), [open](../api/ejchart#members:series-open) and [close](../api/ejchart#members:series-close)) to bind data source and for **bubble** series you have to map [size](../api/ejchart#members:series-size) field along with [xName](../api/ejchart#members:series-xname) and [yName](../api/ejchart#members:series-yname). 
 
 
 {% highlight js %}
@@ -73,7 +73,7 @@ N> For **OHLC** type series, you have to map four dataSource fields (**high**, *
 
 ## Remote Data
 
-You can bind the remote data to chart using DataManager and you can use **query** property of series to filter the data from dataSource.
+You can bind the remote data to chart using DataManager and you can use [query]((../api/ejchart#members:series-query)) property of series to filter the data from dataSource.
 
 
 {% highlight js %}
