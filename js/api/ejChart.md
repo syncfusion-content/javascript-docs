@@ -4268,7 +4268,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fqxo0isj)
 
 
 
-Name of the property in the datasource which contains size value for bubble series.
+Name of the property in the datasource that contains the size value for the bubble series.
 
 
 Default value:
@@ -4303,7 +4303,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/kf0d05wi)
 
 
 
-Option to add trendlines to chart.
+Option to add the trendlines to chart.
 
 
 
@@ -4349,7 +4349,7 @@ commonSeriesOptions :{trendlines:[{ visibility:'visible' }]}
 
 
 
-Specifies the type of trendline for the series.
+Specifies the type of the trendline for the series.
 
 
 Default value:
@@ -4382,7 +4382,7 @@ commonSeriesOptions :{trendlines:[{ type:'linear' }]}
 
 
 
-Name for the trendlines that is to be displayed in legend text.
+Name for the trendlines that is to be displayed in the legend text.
 
 
 Default value:
@@ -4611,7 +4611,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/d5o0dk1l)
 
 
 
-Specifies the order of polynomial trendlines.
+Specifies the order of the polynomial trendlines.
 
 
 Default value:
@@ -4656,7 +4656,7 @@ Options for customizing the appearance of the series or data point while highlig
 
 
 
-Enables/disables the ability to highlight series or data point interactively.
+Enables/disables the ability to highlight the series or data point interactively.
 
 
 Default value:
@@ -4689,7 +4689,7 @@ commonSeriesOptions :{highlightSettings:{enable:true}}
 
 
 
-Specifies whether series or data point has to be highlighted.
+Specifies whether the series or data point has to be highlighted.
 
 
 Default value:
@@ -4970,7 +4970,7 @@ commonSeriesOptions :{selectionSettings:{enable:true}}
 
 
 
-Specifies whether series or data point has to be selected.
+Specifies whether the series or data point has to be selected.
 
 
 Default value:
@@ -5067,7 +5067,7 @@ commonSeriesOptions:{selectionSettings:{opacity:1}}
 
 
 
-Options for customizing the border of series on selection.
+Options for customizing the border of the series on selection.
 
 
 
@@ -17294,7 +17294,7 @@ series :[{ points:[{ close : 50 }] }]
 
 
 
-Size of a bubble in bubble series. This is applicable only for bubble series.
+Size of a bubble in the bubble series. This is applicable only for the bubble series.
 
 
 Default value:
@@ -19564,7 +19564,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 
 
 
-Name of the property in the datasource which contains size value for bubble series.
+Name of the property in the datasource that contains the size value for the bubble series.
 
 
 Default value:
