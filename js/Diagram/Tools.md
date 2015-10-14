@@ -11,11 +11,11 @@ documentation: ug
 
 ## Drawing Tools
 
-Drawing tool allows you to draw any kind of node/connector during runtime by clicking and dragging on diagram page. 
+Drawing tool allows you to draw any kind of node/connector during runtime by clicking and dragging on the Diagram page. 
 
 ### Shapes
 
-To draw a shape, you need to set the JSON of that shape to the `drawType` property of diagram model and you have to activate the drawing tool using the `tool` property. The following code example illustrates how to draw a rectangle at run time. 
+To draw a shape, you need to set the JSON of that shape to the `drawType` property of the Diagram model and you have to activate the drawing tool by using the `tool` property. The following code example illustrates how to draw a rectangle at run time. 
 
 {% highlight js %}
 
@@ -47,7 +47,7 @@ diagram.update({
 
 {% include image.html url="/js/Diagram/Tools_images/Tools_img1.png" %}
 
-Following code snippet illustrates how to draw a path.
+The following code example illustrates how to draw a path.
 
 {% highlight js %}
 
@@ -73,7 +73,7 @@ Following code snippet illustrates how to draw a path.
 
 ### Connectors
 
-To draw connectors, you have to set the JSON of the connector to `drawType` property. The drawing tool can be activated using the `tool` property as shown below. The following code example illustrates how to draw a straight line connector. 
+To draw connectors, you have to set the JSON of the connector to `drawType` property. The drawing tool can be activated by using the `tool` property as shown. The following code example illustrates how to draw a straight line connector. 
 
 {% highlight js %}
 
@@ -96,7 +96,7 @@ diagram.update({
 
 ### Text 
 
-Diagram allows you to create a textNode as soon as you click on diagram page. The following code illustrates how to draw a text.
+Diagram allows you to create a textNode as soon as you click on the Diagram page. The following code illustrates how to draw a text.
 
 {% highlight js %}
 
@@ -111,18 +111,18 @@ diagram.update({
 
 {% endhighlight %}
 
-Once you activated the texttool, you can also able to perform label editing of a node/connector.
+Once you activate the texttool, you can also able to perform label editing of a node/connector.
 
 ## Tool Selection
 
-There are some functionalities that can be achieved by clicking and dragging on the diagram surface. They are as follows.
+There are some functionalities that can be achieved by clicking and dragging on the Diagram surface. They are as follows.
 
 * Draw selection rectangle - MultipleSelect tool
-* Pan the diagram - Zoom pan
+* Pan the Diagram - Zoom pan
 * Draw nodes/connectors - ContinuousDraw / DrawOnce
 
-As all three behaviors are completely different, You can achieve only one behavior at a time based on the tool that you choose.
-If more than one of those tools are applied, a tool will be activated based on the precedence given in the following table. 
+As all the three behaviors are completely different, You can achieve only one behavior at a time based on the tool that you choose.
+When more than one of those tools are applied, a tool is activated based on the precedence given in the following table. 
 
 <table>
 <tr>
@@ -134,22 +134,22 @@ Description</th></tr>
 <td>
 1st </td><td>
 ContinuesDraw</td><td>
-Allows you to draw the nodes or connectors continuously. Once it is activated we could not perform any other interaction in the diagram. </td></tr>
+Allows you to draw the nodes or connectors continuously. Once it is activated, you cannot perform any other interaction in the Diagram. </td></tr>
 <tr>
 <td>
 2nd </td><td>
 DrawOnce</td><td>
-Allows you to draw single node or connector. Once you completed the drawOnce action, SingleSelect and MultipleSelect tools will be automatically enabled. </td></tr>
+Allows you to draw single node or connector. Once you complete the drawOnce action, SingleSelect and MultipleSelect tools are automatically enabled. </td></tr>
 <tr>
 <td>
 3rd </td><td>
 ZoomPan</td><td>
-Allows you to pan the diagram. If you enabled both SingleSelect and ZoomPan tools, you can able to perform the basic interaction when cursors hovers node/connector and panning will be enabled when cursor hovers diagram.</td></tr>
+Allows you to pan the Diagram. When you enable both the SingleSelect and ZoomPan tools, you can perform the basic interaction as the cursor hovers node/connector. Panning is enabled when cursor hovers the Diagram.</td></tr>
 <tr>
 <td>
 4th </td><td>
 MultipleSelect</td><td>
-Allows you to select multiple nodes and connectors. If you enabled both MultipleSelect and ZoomPan tools, when cursor hovers the diagram, panning will be enabled and you cannot to select multiple nodes. </td></tr>
+Allows you to select multiple nodes and connectors. When you enable both the MultipleSelect and ZoomPan tools, cursor hovers the Diagram. When panning is enabled, you cannot select multiple nodes. </td></tr>
 <tr>
 <td>
 5th </td><td>
@@ -162,19 +162,19 @@ None</td><td>
 Disables all tools</td></tr>
 </table>
 
-You can set the desired tool to the `tool` property of diagram model. The following code illustrates how to enable single/multiple tools.
+You can set the desired tool to the `tool` property of the Diagram model. The following code illustrates how to enable single/multiple tools.
 
 {% highlight js %}
 
 // To Enable Single Tool 
 $("#diagram").ejDiagram({
-    // To Enable a Single Selection
+    //Enables a Single Selection
     tool: ej.datavisualization.Diagram.Tool.SingleSelect
 });
 
-// Enable multiple tools
+// Enables multiple tools
 $("#diagram").ejDiagram({
-    // Select when you click on a node and pan when you click on diagram surface
+    // Selects when you click a node and pans when you click the Diagram surface
     tool: ej.datavisualization.Diagram.Tool.SingleSelect | ej.datavisualization.Diagram.Tool.ZoomPan
 });
 
