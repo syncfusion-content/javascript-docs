@@ -22,5 +22,5 @@ The **Essential JavaScript Scroller** control has a sliding document whose posit
 
 ## Control Structure
 
-{% include image.html url="/js/Scroller/Overview_images/Overview_img1.png"%}
+![]("/js/Scroller/Overview_images/Overview_img1.png")
 

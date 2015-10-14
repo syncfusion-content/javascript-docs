@@ -13,7 +13,7 @@ This section briefly explains how you can create an **OlapChart** in your applic
 
 ##Syncfusion OLAP Controls – Architecture
 
-{% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img2.png" %}
+![]("/js/OlapChart/Getting-Started_images/Getting-Started_img2.png") 
 
 The architecture gives you a clear idea on how the control rendering takes place client-side, and all other analytical operations on each action that takes place server-side.
 
@@ -48,17 +48,17 @@ This section explains how you can configure an **OlapChart** component in an app
 
 In the following example, the **OlapChart** component displays the customer count over different fiscal years against various geographical locations. This helps you analyze the summarized data over different fiscal years.
 
-{% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img3.png" %}
+![]("/js/OlapChart/Getting-Started_images/Getting-Started_img3.png") 
 
 Open Visual Studio and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET Empty Web Application** template, and then click **OK**. The following screenshot with the Project Creation Wizard is displayed:
 
-{% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img4.png" %}
+![]("/js/OlapChart/Getting-Started_images/Getting-Started_img4.png") 
 
 ##Create HTML Page
 
 To create a new web form in the application, right-click on the project and select **Add**. The following screenshot displays the Add New Item Wizard.
 
-{% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img5.png" %}
+![]("/js/OlapChart/Getting-Started_images/Getting-Started_img5.png") 
 
 Click **New Item** and select **HTML Page** from the listed templates. Name the page as **default.html** and click **OK**.
 
@@ -68,11 +68,11 @@ Click **New Item** and select **HTML Page** from the listed templates. Name the 
 
 In the **Solution Explorer**, right-click the **References** folder, then click **Add Reference**.
 
-{% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img6.png" %}
+![]("/js/OlapChart/Getting-Started_images/Getting-Started_img6.png") 
 
 The following screenshot illustrates how to refer **Syncfusion.Olap.Base.**
 
-{% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img7.png" %}
+![]("/js/OlapChart/Getting-Started_images/Getting-Started_img7.png") 
 
 Select the following assemblies: 
 
@@ -135,7 +135,7 @@ Add the following code inside the &lt;body&gt; tag in the **default.html** page.
 
 Right-click the project, select **Add > New Folder**.  Name the folder as **wcf.** Let the "wcf" folder name be in lower case. Now right-click the **wcf** folder created and select **Add > New Item**.  In the **Add New** Item window, select **WCF Service** and name it **OlapChartService.svc**. And then click **Add**.
 
-{% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img8.png" %}
+![]("/js/OlapChart/Getting-Started_images/Getting-Started_img8.png") 
 
 ###Add service methods inside Interface
 

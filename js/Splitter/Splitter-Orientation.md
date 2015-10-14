@@ -50,9 +50,9 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
 
 The output for **Splitter** with **ej.Orientation.Vertical**.
 
-{% include image.html url="/js/Splitter/Splitter-Orientation_images/Splitter-Orientation_img1.png" %}
+![]("/js/Splitter/Splitter-Orientation_images/Splitter-Orientation_img1.png") 
 
 The output for **Splitter** with **ej.Orientation.Horizontal**.
 
-{% include image.html url="/js/Splitter/Splitter-Orientation_images/Splitter-Orientation_img2.png" %}
+![]("/js/Splitter/Splitter-Orientation_images/Splitter-Orientation_img2.png") 
 

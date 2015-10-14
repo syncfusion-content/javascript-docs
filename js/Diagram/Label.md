@@ -28,7 +28,7 @@ var connector = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img1.png" %}
+![]("/js/Diagram/Label_images/Label_img1.png") 
 
 ## Displacement
 
@@ -52,7 +52,7 @@ var connector = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img2.png" %}
+![]("/js/Diagram/Label_images/Label_img2.png") 
 
 The following code illustrates how to displace `label` through API.
 
@@ -73,7 +73,7 @@ var node = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img3.png" %}
+![]("/js/Diagram/Label_images/Label_img3.png") 
 
 ## Label Rotation
 
@@ -97,7 +97,7 @@ var connector = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img4.png" %}
+![]("/js/Diagram/Label_images/Label_img4.png") 
 
 N>  No built-in support is added to rotate labels interactively.
 
@@ -123,7 +123,7 @@ var label = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img5.png" %}
+![]("/js/Diagram/Label_images/Label_img5.png") 
 
 ## Label Editing
 
@@ -141,7 +141,7 @@ diagram.updateLabel(node.name, node.labels[0], label);
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img6.png" %}
+![]("/js/Diagram/Label_images/Label_img6.png") 
 
 ## Read-only Label
 
@@ -235,9 +235,9 @@ Bottom</td><td>
 <img src="/js/Diagram/Label_images/Label_img9.png" alt="" width="68pt" height="58pt"/></td></tr>
 </table>
 
-{% include image.html url="/js/Diagram/Label_images/Label_img10.png" %}
+![]("/js/Diagram/Label_images/Label_img10.png") 
 
-{% include image.html url="/js/Diagram/Label_images/Label_img11.png" %}
+![]("/js/Diagram/Label_images/Label_img11.png") 
 
 ### Text Alignment
 
@@ -287,7 +287,7 @@ var label = {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img12.png" %}
+![]("/js/Diagram/Label_images/Label_img12.png") 
 
 <table>
 <tr>
@@ -349,4 +349,4 @@ var node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img16.png" %}
+![]("/js/Diagram/Label_images/Label_img16.png") 

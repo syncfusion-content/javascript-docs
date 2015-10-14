@@ -61,7 +61,7 @@ You can customize the labels of the **legenditem** using `legendLabel` property 
 
 
 
-{% include image.html url="/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img1.png"%}
+![]("/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img1.png")
 
 ## Header
 
@@ -94,7 +94,7 @@ You can set headers for each level by setting the `showHeader` propery of the ea
 
 
 
-{% include image.html url="/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img2.png"%}
+![]("/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img2.png")
 
 ## Label
 
@@ -131,5 +131,5 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
 
 
 
-{% include image.html url="/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img3.png"%}
+![]("/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img3.png")
 

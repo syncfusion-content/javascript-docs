@@ -88,5 +88,5 @@ In an **HTML** page, add a &lt;ul&gt; element to configure **ListBox** widget.
 
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Tooltip-Support_images/Tooltip-Support_img1.png"%}
+![]("/js/ListBox/Tooltip-Support_images/Tooltip-Support_img1.png")
 

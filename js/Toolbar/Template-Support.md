@@ -54,4 +54,4 @@ Set the list for **DropDown control** inside a list tag and define this tag as a
 
 The following screenshot displays a Toolbar with embedded controls.
 
-{% include image.html url="/js/Toolbar/Template-Support_images/Template-Support_img1.png"%}
+![]("/js/Toolbar/Template-Support_images/Template-Support_img1.png")

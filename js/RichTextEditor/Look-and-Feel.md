@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Look-and-Feel
 description: look and feel
@@ -54,7 +54,9 @@ Add the following code example in your **HTML** page to initialize the **RTE** w
  
 {% endhighlight %}
 
+
 ![](Look-and-Feel_images/Look-and-Feel_img1.png)
+
 
 ## Css Class
 
@@ -107,4 +109,6 @@ Add the following styles in your styles section.
 {% endhighlight %}
 
 
+
 ![](Look-and-Feel_images/Look-and-Feel_img2.png)
+

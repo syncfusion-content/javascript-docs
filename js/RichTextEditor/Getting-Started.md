@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting-Started
 description: getting started
@@ -12,6 +12,7 @@ documentation: ug
 This section briefly describes how to create and use **RichTextEditor** control by using **Javascript** in your application. The **Essential JavaScript RichTextEditor (RTE)** control allows easily to edit contents, insert tables, images and to get the **HTML** content. In this section, you can learn how to use **RichTextEditor** to get a feedback. The following screenshot demonstrates how the **RTE** control is used in Feedback form.
 
 ![](Getting-Started_images/Getting-Started_img1.png)
+
 
 In the above screenshot , the **RTE** consists of content editable area with feedback title when you click the Post Feedback toolbar item to send the feedback information.
 
@@ -67,7 +68,9 @@ Initialize **RTE** in script.
 
 The following **RTE** screenshot is the output of above steps.
 
+
 ![](Getting-Started_images/Getting-Started_img2.png)
+
 
 ## Configure the Toolbar
 
@@ -95,7 +98,9 @@ The following code example is used to render the additional in-built toolbar ite
 
 The following screenshot is the output of above steps.
 
+
 ![](Getting-Started_images/Getting-Started_img3.png)
+
 
 ### Removing the ToolbarItem
 
@@ -118,7 +123,10 @@ Consider, that the **“create table”** toolbar item is not necessary for the 
 
 The following screenshot is the output of above steps.
 
+
 ![](Getting-Started_images/Getting-Started_img4.png)
+
+
 
 ## Configure Custom Toolbar item
 
@@ -146,7 +154,9 @@ To post the feedback directly, additional toolbar item is required. The **RTE** 
 
 The following screenshot is the output of above steps.
 
+
 ![](Getting-Started_images/Getting-Started_img5.png)
+
 
 ## Validate the Content
 
@@ -242,5 +252,7 @@ The following styles are used to achieve the feedback form editor application.
 
 The output of the above steps is to send the feedback without content as follows.
 
+
 ![](Getting-Started_images/Getting-Started_img6.png)
+
 

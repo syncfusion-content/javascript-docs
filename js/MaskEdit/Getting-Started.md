@@ -17,7 +17,7 @@ Essential JavaScript **MaskEdit** control allows you to set the type and format 
 
 The following screenshot illustrates the functionality of a **MaskEdit**. Using **MaskEdit** control textbox, you can enter only the assigned text format and no other formats. The input mask prevents you from entering invalid characters into the control. In this application, **Mobile Number** textbox has a mask value.
 
-{% include image.html url="/js/MaskEdit/Getting-Started_images/Getting-Started_img1.png"%}
+![]("/js/MaskEdit/Getting-Started_images/Getting-Started_img1.png")
 
 In the above screenshot, you can type only numbers and it does not allow text format.
 
@@ -195,7 +195,7 @@ The following screenshot shows the output for the above code example.
 
 
 
-{% include image.html url="/js/MaskEdit/Getting-Started_images/Getting-Started_img2.png"%}
+![]("/js/MaskEdit/Getting-Started_images/Getting-Started_img2.png")
 
 ### Create Product Key Validation App using MaskEdit Widget
 
@@ -298,7 +298,7 @@ The following screenshot shows the output for the above code example.
 
 
 
-{% include image.html url="/js/MaskEdit/Getting-Started_images/Getting-Started_img3.png"%}
+![]("/js/MaskEdit/Getting-Started_images/Getting-Started_img3.png")
 
 
 

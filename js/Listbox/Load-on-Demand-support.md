@@ -53,5 +53,5 @@ In an **HTML** page, add a **&lt;li&gt; element** to configure **ListBox** widge
 
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Load-on-Demand-support_images/Load-on-Demand-support_img1.png" %}
+![]("/js/ListBox/Load-on-Demand-support_images/Load-on-Demand-support_img1.png") 
 

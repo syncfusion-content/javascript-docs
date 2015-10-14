@@ -89,5 +89,5 @@ In the HTML page, add a &lt;div&gt; element to configure Scroller widget.
 
 The following screenshot displays the **Scroller** control in **RTL** direction.
 
-{% include image.html url="/js/Scroller/RTL_images/RTL_img1.png"%}
+![]("/js/Scroller/RTL_images/RTL_img1.png")
 

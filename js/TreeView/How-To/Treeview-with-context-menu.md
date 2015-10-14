@@ -139,7 +139,7 @@ Define the events in the script as follows.
 
 
 
-{% include image.html url="/js/TreeView/How-To/Treeview-with-context-menu_images/Treeview-with-context-menu_img1.png"%}
+![]("/js/TreeView/How-To/Treeview-with-context-menu_images/Treeview-with-context-menu_img1.png")
 
 
 

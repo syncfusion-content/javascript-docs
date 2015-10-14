@@ -53,7 +53,7 @@ The labels are found along the range, displaying the value of the data it corres
 
 {% endhighlight %}
 
-{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img1.png" %}
+![]("/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img1.png") 
 
 
 ##### Label Placement
@@ -86,7 +86,7 @@ The following screenshot illustrates a **RangeNavigator** with labels inside the
 
 
 
-{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img2.png" %}
+![]("/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img2.png") 
 
 #### Customize RangeNavigator
 
@@ -155,7 +155,7 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
 
 
 
-{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img3.png" %}
+![]("/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img3.png") 
 
 #### Themes
 
@@ -193,4 +193,4 @@ RangeNavigator is customized using **navigatorStyleSettings** properties. You ca
 
 
 
-{% include image.html url="/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img4.png" %}
+![]("/js/RangeNavigator/Appearance-And-Styling_images/Appearance-And-Styling_img4.png") 

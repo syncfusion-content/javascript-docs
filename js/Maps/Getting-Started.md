@@ -15,7 +15,7 @@ This section explains briefly about how to create **Maps** in your application w
 
 You can configure an **Essential JavaScript** Map in simple steps. In this example, you can learn how to configure USA population map with customized appearance and tooltip.
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img1.png"%}
+![]("/js/Maps/Getting-Started_images/Getting-Started_img1.png")
 
 ## Add Libraries
 
@@ -213,7 +213,7 @@ Refer to both shape data and datasource as illustrated in the following code exa
 
 The above code renders a map, with default properties and shape input provided through data in layers.
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img2.png"%}
+![]("/js/Maps/Getting-Started_images/Getting-Started_img2.png")
 
 ##Data Binding in Map
 
@@ -290,7 +290,7 @@ You can customize the shape’s color by using `fill`, `stroke` and `strokeThick
 
 
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img3.png"%}
+![]("/js/Maps/Getting-Started_images/Getting-Started_img3.png")
 
 ### Customize Map Appearance by Range
 
@@ -358,7 +358,7 @@ N>The `enableGradient` property value is set to true to apply gradient colors fo
 
 The following screenshot illustrates a map with gradient color property enabled.
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img4.png"%}
+![]("/js/Maps/Getting-Started_images/Getting-Started_img4.png")
 
 ## Enable Tooltip
 
@@ -388,7 +388,7 @@ The tooltip is displayed only when the `showTooltip` is set to “**True**” in
 
 The following screenshot illustrates a map control displaying a Tooltip.
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img5.png"%}
+![]("/js/Maps/Getting-Started_images/Getting-Started_img5.png")
 
 ## Legend
 
@@ -473,7 +473,7 @@ You can use `leftLabel` and `rightLabel` property to provide left and right labe
 
 The following screenshot illustrates a map displaying an interactive legend.
 
-{% include image.html url="/js/Maps/Getting-Started_images/Getting-Started_img6.png"%}
+![]("/js/Maps/Getting-Started_images/Getting-Started_img6.png")
 
 The complete code sample can be found [here](http://www.syncfusion.com/uploads/user/directTrac/General/Getting_Started1888184355.zip).
 

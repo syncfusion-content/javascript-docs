@@ -30,7 +30,7 @@ var node = {
 
 The list of basic shapes are as follows.
 
-{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img1.png" %}
+![]("/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img1.png") 
 
 ## Flow Shape
 
@@ -47,7 +47,7 @@ var node = {
 
 The list of flow shapes are as follows.
 
-{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img2.png" %}
+![]("/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img2.png") 
 
 ## BPMN Shape
 
@@ -62,7 +62,7 @@ BPMN shapes are used to represent internal business procedure in graphical notat
 
 The shapes are listed as follows.
 
-{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img3.png" %}
+![]("/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img3.png") 
 
 The BPMN shapes and its types are explained as follows.
 
@@ -284,17 +284,17 @@ var node = {
 The different activities in the BPMN shape are listed as follows.
 
 * Loop: The task that is internally being looped
-{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img23.png" %}
+![]("/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img23.png") 
 * Tasks: The task for sending, receiving, user based task etc…
-{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img24.png" %}
+![]("/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img24.png") 
 * Compensation: Compensation triggered when operation is partially failed.
-{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img25.png" %}
+![]("/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img25.png") 
 * Call
-{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img26.png" %}
+![]("/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img26.png") 
 * Ad-Hoc
-{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img27.png" %}
+![]("/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img27.png") 
 * Boundary: Boundary represents the type of task that is being processed
-{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img28.png" %}
+![]("/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img28.png") 
 
 ### Data
 
@@ -319,4 +319,4 @@ node = {
 };
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img29.png" %}
+![]("/js/Diagram/Predefined-Shapes_images/Predefined-Shapes_img29.png") 

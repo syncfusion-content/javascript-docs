@@ -58,4 +58,4 @@ $(function() {
 });
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Knockout-Binding_images/Knockout-Binding_img1.png" %}
+![]("/js/Diagram/Knockout-Binding_images/Knockout-Binding_img1.png") 

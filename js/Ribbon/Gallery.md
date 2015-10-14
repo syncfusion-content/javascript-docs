@@ -107,8 +107,8 @@ To use the gallery feature, include the following properties under **tabgroups**
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Gallery_images/Gallery_img1.png" Caption="Ribbon control default Gallery."%}
+![]("/js/Ribbon/Gallery_images/Gallery_img1.png" Caption="Ribbon control default Gallery.")
 
 
-{% include image.html url="/js/Ribbon/Gallery_images/Gallery_img2.png" Caption="Ribbon control after  Gallery expand operation"%}
+![]("/js/Ribbon/Gallery_images/Gallery_img2.png" Caption="Ribbon control after  Gallery expand operation")
 

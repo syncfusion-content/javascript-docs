@@ -17,7 +17,7 @@ This section briefly explains on how to create a **Linear Gauge** control for yo
 
 
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img1.png" Caption=""%}
+![]("/js/LinearGauge/Getting-Started_images/Getting-Started_img1.png" Caption="")
 
 ## Create a Linear Gauge
 
@@ -70,7 +70,7 @@ $(function () {
 On executing the above code sample renders a default **Linear Gauge** with default values as follows.
 
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
+![]("/js/LinearGauge/Getting-Started_images/Getting-Started_img2.png" Caption="")
 
 **Set Height and Width values**
 
@@ -95,7 +95,7 @@ On executing the above code sample renders a default **Linear Gauge** with defau
 On executing the above code sample renders a default **Linear Gauge** with height and width.
 
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
+![]("/js/LinearGauge/Getting-Started_images/Getting-Started_img3.png" Caption="")
 
 ## Set animate option and Label Color
 
@@ -123,7 +123,7 @@ On executing the above code sample renders a default **Linear Gauge** with heigh
 
 On executing the above code sample renders a customized **Linear Gauge** as follows.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img4.png" Caption=""%}
+![]("/js/LinearGauge/Getting-Started_images/Getting-Started_img4.png" Caption="")
 
 ## Provide scale values
 
@@ -173,7 +173,7 @@ $(function () {
 
 On executing the above code sample renders a customized gauge with ranges as follows.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img5.png" Caption=""%}
+![]("/js/LinearGauge/Getting-Started_images/Getting-Started_img5.png" Caption="")
 
 ## Add pointers data
 
@@ -216,7 +216,7 @@ In **Linear gauge** there are two types of pointers available such as marker poi
 
 On executing the above code sample renders a **Linear Gauge** with bar marker as follows.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img6.png" Caption=""%}
+![]("/js/LinearGauge/Getting-Started_images/Getting-Started_img6.png" Caption="")
 
 ## Add Label Customization
 
@@ -260,7 +260,7 @@ On executing the above code sample renders a **Linear Gauge** with bar marker as
 
 On executing the above code sample renders a customized **Linear Gauge** as follows.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img7.png" Caption=""%}
+![]("/js/LinearGauge/Getting-Started_images/Getting-Started_img7.png" Caption="")
 
 ## Add Ticks Details
 
@@ -320,7 +320,7 @@ On executing the above code sample renders a customized **Linear Gauge** as foll
 
 On executing the above code sample renders a **Linear Gauge** with custom labels as follows.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img8.png" Caption=""%}
+![]("/js/LinearGauge/Getting-Started_images/Getting-Started_img8.png" Caption="")
 
 ## Add Custom Label Details
 
@@ -370,7 +370,7 @@ The following code example illustrates how to use custom texts.
 
 On executing the above code sample renders a customized **Linear Gauge** as follows. 
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img9.png" Caption=""%}
+![]("/js/LinearGauge/Getting-Started_images/Getting-Started_img9.png" Caption="")
 
 ## Change scale Degree to Fahrenheit
 
@@ -406,7 +406,7 @@ On executing the above code sample renders a **Linear Gauge** with values in Deg
 
 
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img10.png" Caption=""%}
+![]("/js/LinearGauge/Getting-Started_images/Getting-Started_img10.png" Caption="")
 
 ## Add Custom label for Current Value
 
@@ -468,5 +468,5 @@ You can add the function that displays the current temperature value in the cust
 
 The following screen shot displays a linear gauge with all the customizations discussed earlier.
 
-{% include image.html url="/js/LinearGauge/Getting-Started_images/Getting-Started_img11.png" Caption=""%}
+![]("/js/LinearGauge/Getting-Started_images/Getting-Started_img11.png" Caption="")
 

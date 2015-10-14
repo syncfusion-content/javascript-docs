@@ -15,7 +15,7 @@ Here you can learn how to customize **ListBox** in Contact Selection tool. This 
 
 The following screenshot demonstrates the functionality of **ListBox** with **Multi-Selection** and **Drag and Drop** features.
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img6.png" %}
+![]("/js/ListBox/Getting-Started_images/Getting-Started_img6.png") 
 
 In the above screenshot, you can select a list item from the first **ListBox** widget. After you select the item, you can move the selected item to the second **ListBox** widget. 
 
@@ -146,7 +146,7 @@ Initialize the **ListBox** and other widgets using the following code sample.
 
 Run this code to render the resultant output of the above steps.
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img2.png" %}
+![]("/js/ListBox/Getting-Started_images/Getting-Started_img2.png") 
 
 
 ## Configure ListBox with Items
@@ -231,7 +231,7 @@ To populate items inside **ListBox**, you have to add list items inside **&lt;ul
 
 Run the above code to render **ListBox** with list items rendered inside **ListBox. ListBox** with Contact list items is shown as follows.
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img3.png" %}
+![]("/js/ListBox/Getting-Started_images/Getting-Started_img3.png") 
 
 
 ## Enable Drag and Drop
@@ -262,7 +262,7 @@ You can drag an item from a **ListBox** and drop it in a droppable element.To dr
 
 Run the above code example to render the following **ListBox** with **Drag and Drop** feature. **ListBox** with Drag and Drop list items across control is displayed in the following image. 
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img4.png" %}
+![]("/js/ListBox/Getting-Started_images/Getting-Started_img4.png") 
 
 
 ## Enable Multiple Selection
@@ -294,7 +294,7 @@ You can select multiple list items simultaneously in **ListBox** control, and mo
 
 Run the above code example to render the following **ListBox** with **Multi-Selection** feature. **ListBox** control with **Multi-Selection** of list items is displayed as follows.
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img5.png" %}
+![]("/js/ListBox/Getting-Started_images/Getting-Started_img5.png") 
 
 ## Adding items to a Second ListBox
 
@@ -347,6 +347,6 @@ The following code sample explains how to add to an item to second **ListBox.**
 
 Run this code and you can see the output. Selected items from the first **ListBox** has been moved to Second **ListBox** using **addItem()** and **removeItem()** method and it is shown in the following figure.
 
-{% include image.html url="/js/ListBox/Getting-Started_images/Getting-Started_img6.png" %}
+![]("/js/ListBox/Getting-Started_images/Getting-Started_img6.png") 
 
 

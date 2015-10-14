@@ -47,7 +47,7 @@ A grid is a tabular representation of data, arranged in the form of rows and col
 
 Cube Selector allows user to select any one of the cube form the cubes available in connected database this can be achieved with dropdown list displaying names of cubes. On selecting a cube from the dropdown list it gets loaded.
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img1.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img1.png") 
 
 ## Cube Dimension Browser
 
@@ -111,11 +111,11 @@ _Table: Differentiating Attribute hierarchy and User-defined hierarchy_
 <table>
 <tr>
 <td>
-{% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img2.png" alt="" width="25pt" height="28pt" %}</td><td>
+![]("OLAP-Client-Elements_images\OLAP-Client-Elements_img2.png" alt="" width="25pt" height="28pt") </td><td>
 Attribute Hierarchy, contains only one level.</td></tr>
 <tr>
 <td>
-{% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img3.png" alt="" width="25pt" height="24pt" %}</td><td>
+![]("OLAP-Client-Elements_images\OLAP-Client-Elements_img3.png" alt="" width="25pt" height="24pt") </td><td>
  User Defined Hierarchy and its levels are mentioned with a similar image. It contains one or more levels.</td></tr>
 </table>
 
@@ -133,27 +133,27 @@ Node Type</th>
 Is Draggable</th></tr>
 <tr>
 <td>
-{% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img4.png" alt="" width="25pt" height="25pt" %}</td><td>
+![]("OLAP-Client-Elements_images\OLAP-Client-Elements_img4.png" alt="" width="25pt" height="25pt") </td><td>
 Display Folder</td><td>Display Folder</td><td>False</td></tr>
 <tr>
 <td>
-{% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img5.png" alt="" width="22pt" height="24pt" %}</td><td>
+![]("OLAP-Client-Elements_images\OLAP-Client-Elements_img5.png" alt="" width="22pt" height="24pt") </td><td>
 Measure</td><td>Measure</td><td>True</td></tr>
 <tr>
 <td>
-{% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img6.png" alt="" width="28pt" height="28pt" %}</td><td>
+![]("OLAP-Client-Elements_images\OLAP-Client-Elements_img6.png" alt="" width="28pt" height="28pt") </td><td>
 Dimension</td></td><td>Dimension</td><td>True</td></tr>
 <tr>
 <td>
-{% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img7.png" alt="" width="29pt" height="28pt" %}</td><td>
+![]("OLAP-Client-Elements_images\OLAP-Client-Elements_img7.png" alt="" width="29pt" height="28pt") </td><td>
 User Defined Hierarchy</td><td>Hierarchy</td><td>True</td></tr>
 <tr>
 <td>
-{% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img8.png" alt="" width="19pt" height="26pt" %}</td><td>
+![]("OLAP-Client-Elements_images\OLAP-Client-Elements_img8.png" alt="" width="19pt" height="26pt") </td><td>
 Attribute Hierarchy</td><td>Hierarchy</td><td>True</td></tr>
 <tr>
 <td>
-{% include image.html url="OLAP-Client-Elements_images\OLAP-Client-Elements_img9.png" alt="" width="22pt" height="24pt" %}</td><td>
+![]("OLAP-Client-Elements_images\OLAP-Client-Elements_img9.png" alt="" width="22pt" height="24pt") </td><td>
 Level Element</td><td>Level Elements</td><td>True</td></tr>
 </table>
 
@@ -174,7 +174,7 @@ The series axis defines one or more dimensions that are displayed along the char
 
 The slicer axis is used as a filter to narrow the focus of the multidimensional data displayed in the **Chart/Grid**. The slicer axis lets you analyze any member of a dimension, in-depth. For the slicer to display the member's data, that member must not be present on both categorical axis and series axis.
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img10.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img10.png") 
 
 ### Addition of Elements to an Axis Element Builder
 
@@ -182,7 +182,7 @@ The slicer axis is used as a filter to narrow the focus of the multidimensional 
 
 The measure, dimension, hierarchy and level elements can be dragged from the Cube Dimension Browser and dropped into the Axis Element Builder using the drag-and-drop operation. Also you can move the measure, dimension, hierarchy and level elements from one axis to another by moving the appropriate Split Button.
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img11.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img11.png") 
 
 
 ### Remove Elements from an Axis Element Builder
@@ -191,31 +191,31 @@ The measure, dimension, hierarchy and level elements can be dragged from the Cub
 
 In order to remove measure, dimension, hierarchy and level element from the Axis Element Builder, click the Remove symbol available next to the Split Button while hovering over it.
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img13.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img13.png") 
 
 ### Rearrange Elements in an Axis
 
 Rearranging can be done by dragging an element one below the other.
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img15.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img15.png") 
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img16.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img16.png") 
 
 ## Split Button
 
 Split Button highlights the elements in the Axis Element Builder. It holds dimensions/measures. When you drag and drop a node from Cube Dimensional Browser into Axis Element Builder**,** a Split Button is created, displaying the dimension name.
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img17.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img17.png") 
 
 When you drag and drop a measure, the Axis Element Builder will create a Split Button only for the first measure. The next time a measure is added, it maintains the same single Split Button to hold the entire measure collection.
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img18.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img18.png") 
 
 ### Remove Split Button
 
 Split Button can be removed with the help of the Remove option available while hovering over it.
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img19.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img19.png") 
 
 ## Elements Editor
 
@@ -223,23 +223,23 @@ Split Button can be removed with the help of the Remove option available while h
 
 Measure Editor is a dialog that displays the collection of measures in the current report. 
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img20.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img20.png") 
 
 #### Remove a Measure 
 
 To remove a measure, click the Remove button next to the corresponding measure while hovering over it. To avoid removing the current selection, click Cancel.
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img21.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img21.png") 
 
 ### Member Editor
 
 Member Editor is a tree-view control that displays the member of the current dimension.
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img22.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img22.png") 
 
 ## Toolbar
 
-{% include image.html url="/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img25.png" %}
+![]("/js/OlapClient/OLAP-Client-Elements_images/OLAP-Client-Elements_img25.png") 
 
 
 <table>

@@ -45,7 +45,7 @@ Getting started with your **Essential JavaScript Diagram** is easy. You can star
 
 3\. This creates an empty diagram.
 
-{% include image.html url="/js/Diagram/Getting-Started_images/Getting-Started_img2.png" %}
+![]("/js/Diagram/Getting-Started_images/Getting-Started_img2.png") 
 
 ## Define Employee Information
 
@@ -251,4 +251,4 @@ $("#DiagramContent").ejDiagram({
 
 The Employee details are displayed in the Diagram as follows.
 
-{% include image.html url="/js/Diagram/Getting-Started_images/Getting-Started_img3.png" %}
+![]("/js/Diagram/Getting-Started_images/Getting-Started_img3.png") 

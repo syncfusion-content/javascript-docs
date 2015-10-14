@@ -62,7 +62,7 @@ documentation: ug
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img1.png"%}
+![]("/js/Grid/Editing_images/Editing_img1.png")
 
 ## Cell edit type
 
@@ -114,7 +114,7 @@ The edit type of every column can be customized using the [`editType`](/js/api/e
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img2.png"%}
+![]("/js/Grid/Editing_images/Editing_img2.png")
 
 ### External DataSource for DropDown EditType Column
 
@@ -155,7 +155,7 @@ N> _The external datasource must be given in a structure that it should contain 
 
 
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img3.png"%}
+![]("/js/Grid/Editing_images/Editing_img3.png")
 
 ## Edit Template
 
@@ -209,7 +209,7 @@ The following code example is for **Edit Template.**
 
 The forllowing screen shot showed the out put of the above code snippet.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img4.png"%}
+![]("/js/Grid/Editing_images/Editing_img4.png")
 
 ## Edit Mode
 
@@ -268,7 +268,7 @@ This feature allows you to edit various fields of a single record, simultaneousl
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img5.png"%}
+![]("/js/Grid/Editing_images/Editing_img5.png")
 
 ### Dialog Editing
 
@@ -314,7 +314,7 @@ The **Dialog Edit** feature allows you to edit data, using a dialog box that has
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img6.png"%}
+![]("/js/Grid/Editing_images/Editing_img6.png")
 
 ### Inline Form Editing
 
@@ -361,7 +361,7 @@ This feature allows you to edit various fields of a single record, simultaneousl
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img7.png"%}
+![]("/js/Grid/Editing_images/Editing_img7.png")
 
 ### External Form Editing
 
@@ -412,7 +412,7 @@ You can position the edit form either in the top-right corner or the bottom-left
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img8.png"%}
+![]("/js/Grid/Editing_images/Editing_img8.png")
 
 ### Template Form Editing
 
@@ -550,7 +550,7 @@ In Inline Template, you can specify the template inside the script tag and selec
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img9.png"%}
+![]("/js/Grid/Editing_images/Editing_img9.png")
 
 In the above screenshot you can see that the elements are not rendered based on the type of the column. For example, in Freight column, the textbox is rendered instead of NumericTextBox.
 
@@ -671,7 +671,7 @@ Now, the elements defined in the templates, are changed to JavaScript controls. 
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img10.png"%}
+![]("/js/Grid/Editing_images/Editing_img10.png")
 
 #### External Template Form Editing
 
@@ -702,7 +702,7 @@ The above mentioned procedure applies to **ExternalTemplate** editing feature al
 
 The following screenshot shows External Template Form Editing.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img11.png"%}
+![]("/js/Grid/Editing_images/Editing_img11.png")
 
 #### Dialog Template Editing
 
@@ -731,7 +731,7 @@ $(function() { // Document is ready.
 
 The following screenshot shows Dialog Template Form Editing.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img12.png"%}
+![]("/js/Grid/Editing_images/Editing_img12.png")
 
 ### Batch Editing
 
@@ -779,13 +779,13 @@ These markers are not shown after the updated data is rendered. The following co
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img13.png"%}
+![]("/js/Grid/Editing_images/Editing_img13.png")
 
 When the Save or Cancel button is clicked, or performing an action before you save the edited records, the Confirmation message is displayed. 
 
 The following screenshot shows the Confirmation Dialog box.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img14.png"%}
+![]("/js/Grid/Editing_images/Editing_img14.png")
 
 
 
@@ -916,7 +916,7 @@ The following code example shows you how to include the jquery validation suppor
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img15.png"%}
+![]("/js/Grid/Editing_images/Editing_img15.png")
 
 ### Custom Validation
 
@@ -969,7 +969,7 @@ In addition to jquery validation methods, you can also add your own custom valid
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img16.png"%}
+![]("/js/Grid/Editing_images/Editing_img16.png")
 
 ## CRUD Operation With Server-Side
 
@@ -1111,13 +1111,13 @@ When you use [`remoteSaveAdaptor`](/js/datamanager/data-adaptors#remotesave-adap
 
 The output for the Server Binding of records is as follows:
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img17.png" Caption=""%}
+![]("/js/Grid/Editing_images/Editing_img17.png" Caption="")
 
 _Edit_
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img18.png" Caption="Server Bind"%}
+![]("/js/Grid/Editing_images/Editing_img18.png" Caption="Server Bind")
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img19.png" Caption="Console Post"%}
+![]("/js/Grid/Editing_images/Editing_img19.png" Caption="Console Post")
 
 ## Editing Remote Data
 
@@ -1129,7 +1129,7 @@ The **Grid** control for **JavaScript** allows you to bind and edit data from th
 
 1. Open Visual Studio 2012. In the File menu, click New and select Project. The New Project Dialog box is opened.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img20.png" Caption="WCF Dataservice"%}
+![]("/js/Grid/Editing_images/Editing_img20.png" Caption="WCF Dataservice")
 
 2. Select ASP.NET Empty Web Application and click OK.
 
@@ -1145,7 +1145,7 @@ The **Grid** control for **JavaScript** allows you to bind and edit data from th
 
 
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img21.png" Caption="Creating a New Entity Data Model"%}
+![]("/js/Grid/Editing_images/Editing_img21.png" Caption="Creating a New Entity Data Model")
 
 8. Select the ADO.NET Entity Data Model template, give the Entity Data Model the name Northwind.edmx, and click the Add button. Click Add to launch the Data Model Wizard. 
 
@@ -1153,25 +1153,25 @@ The **Grid** control for **JavaScript** allows you to bind and edit data from th
 
 
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img22.png" Caption="Entity Data Model Wizard"%}
+![]("/js/Grid/Editing_images/Editing_img22.png" Caption="Entity Data Model Wizard")
 
 10. In the Choose Your Data Connection step, select the NORTHWND.MDF database connection, enter the entities connection settings name NORTHWNDEntities and click Next.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img23.png" Caption="Entity Data Model Wizard"%}
+![]("/js/Grid/Editing_images/Editing_img23.png" Caption="Entity Data Model Wizard")
 
 11. In the **Choose Your Database Objects** step, select all the database tables and click **Finish**.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img24.png" Caption="Figure 70: Entity Data Model Wizard"%}
+![]("/js/Grid/Editing_images/Editing_img24.png" Caption="Figure 70: Entity Data Model Wizard")
 
 When you are finished, you can see the following image.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img25.png" Caption="GridDemo"%}
+![]("/js/Grid/Editing_images/Editing_img25.png" Caption="GridDemo")
 
 12. Right-click the Models folder in the Solution Explorer window and select the Menu option Add New Item.
 
 13. In the Add New Item dialog, in the Web category, select WCF Data Service, enter Northwnd.svc in the Name textbox and click Add. 
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img26.png" Caption="Add New Item- GridDemo"%}
+![]("/js/Grid/Editing_images/Editing_img26.png" Caption="Add New Item- GridDemo")
 
 14. The WCF Data Service file is created. Open the Nothwnd.svs.cs file and set the NORTHWNDEntities as a class for the DataService.
 
@@ -1263,7 +1263,7 @@ var dataManger = ej.DataManager({
 
 The output for the above Grid creation with editing options code example is as follows.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img27.png"%}
+![]("/js/Grid/Editing_images/Editing_img27.png")
 
 ## Adding New Row Position
 
@@ -1306,7 +1306,7 @@ The following code example illustrates you how to set rowPosition.
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img28.png"%}
+![]("/js/Grid/Editing_images/Editing_img28.png")
 
 _Adding new row position_
 
@@ -1344,5 +1344,5 @@ This property helps you to add a new row dynamically and save the record either 
 
 The following screenshot is the output of the above code example.
 
-{% include image.html url="/js/Grid/Editing_images/Editing_img29.png"%}
+![]("/js/Grid/Editing_images/Editing_img29.png")
 

@@ -109,5 +109,5 @@ The following code example depicts the way to bind data to the **AutoComplete** 
 
 The following is the output of **AutoComplete** control with two way **angular binding**.
 
-{% include image.html url="/js/Autocomplete/Angular-binding_images/Angular-binding_img1.png"%}
+![]("/js/Autocomplete/Angular-binding_images/Angular-binding_img1.png")
 

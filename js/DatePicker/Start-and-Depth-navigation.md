@@ -79,7 +79,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/DatePicker/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img1.png"%}
+![]("/js/DatePicker/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img1.png")
 
 ## Depth Level
 
@@ -154,5 +154,5 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/DatePicker/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img2.png"%}
+![]("/js/DatePicker/Start-and-Depth-navigation_images/Start-and-Depth-navigation_img2.png")
 

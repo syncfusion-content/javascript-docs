@@ -46,5 +46,5 @@ In the **HTML** page, add the following button elements to configure **Button
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Dropdown-Button_images/Dropdown-Button_img1.png" %}
+![]("/js/SplitButton/Dropdown-Button_images/Dropdown-Button_img1.png") 
 

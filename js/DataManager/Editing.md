@@ -104,7 +104,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Editing_images/Editing_img1.png" %}
+![]("/js/DataManager/Editing_images/Editing_img1.png") 
 
 ##Insert
 
@@ -158,7 +158,7 @@ The `insert` method of the data manager is used to add a new record to the table
 
 Result of the above code example is illustrated as follows.
 
-{% include image.html url="/js/DataManager/Editing_images/Editing_img2.png" %}
+![]("/js/DataManager/Editing_images/Editing_img2.png") 
 
 ##Update
 
@@ -210,7 +210,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Editing_images/Editing_img3.png" %}
+![]("/js/DataManager/Editing_images/Editing_img3.png") 
 
 ##Remove
 
@@ -259,5 +259,5 @@ The `remove` method is used to delete a record from the data source of the **Dat
 
 Result of the above code example is illustrated as follows.
 
-{% include image.html url="/js/DataManager/Editing_images/Editing_img4.png" %}
+![]("/js/DataManager/Editing_images/Editing_img4.png") 
 

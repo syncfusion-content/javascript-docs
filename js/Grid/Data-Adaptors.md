@@ -48,7 +48,7 @@ documentation: ug
 
 The following screenshot is the result of the above code example.
 
-{% include image.html url="/js/Grid/Data-Adaptors_images/Data-Adaptors_img1.png"%}
+![]("/js/Grid/Data-Adaptors_images/Data-Adaptors_img1.png")
 
 ## OData Adaptor
 
@@ -76,7 +76,7 @@ Nowadays **oData** is a very useful technique in consuming data. You can use **o
 
 The following screenshot is the result of the above code example.
 
-{% include image.html url="/js/Grid/Data-Adaptors_images/Data-Adaptors_img2.png"%}
+![]("/js/Grid/Data-Adaptors_images/Data-Adaptors_img2.png")
 
 ## Custom Adaptor
 
@@ -125,7 +125,7 @@ The following screenshot is the result of the above code example.
 
 The following screenshot is the result of the above code example.
 
-{% include image.html url="/js/Grid/Data-Adaptors_images/Data-Adaptors_img3.png"%}
+![]("/js/Grid/Data-Adaptors_images/Data-Adaptors_img3.png")
 
 ## Cache Adaptor
 
@@ -156,6 +156,6 @@ Cache Adaptor is a technique used to cache multiple page data by using the prope
 
 The following screenshot is the result of the above code example.
 
-{% include image.html url="/js/Grid/Data-Adaptors_images/Data-Adaptors_img4.png"%}
+![]("/js/Grid/Data-Adaptors_images/Data-Adaptors_img4.png")
 
 

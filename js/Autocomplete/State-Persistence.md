@@ -40,5 +40,5 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete
 
 The following image is the output for **AutoComplete** when **enablePersistence** is set to ‘**True**’.
 
-{% include image.html url="/js/Autocomplete/State-Persistence_images/State-Persistence_img1.png"%}
+![]("/js/Autocomplete/State-Persistence_images/State-Persistence_img1.png")
 

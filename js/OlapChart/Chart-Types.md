@@ -50,7 +50,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays a **Column Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img1.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img1.png") 
 
 ## Stacking Column Chart
 
@@ -77,7 +77,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays the **Stacking Column Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img2.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img2.png") 
 
 ## Bar Chart
 
@@ -105,7 +105,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays a **Bar Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img3.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img3.png") 
 
 ## Stacking Bar Chart
 
@@ -132,7 +132,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays the **Stacking Bar Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img4.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img4.png") 
 
 ## Pie Chart
 
@@ -160,7 +160,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays a **Pie Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img5.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img5.png") 
 
 ## Pyramid Chart
 
@@ -187,7 +187,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screen shot displays the **Pyramid Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img6.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img6.png") 
 
 ## Funnel Chart
 
@@ -214,7 +214,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screen shot displays the **Funnel Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img14.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img14.png") 
 
 ## Line Chart
 
@@ -241,7 +241,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays the **Line Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img7.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img7.png") 
 
 ## Step Line Chart
 
@@ -269,7 +269,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays the **Step Line Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img8.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img8.png") 
 
 ## Spline Chart
 
@@ -296,7 +296,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays the **Spline Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img9.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img9.png") 
 
 ## Area Chart
 
@@ -324,7 +324,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays the **Area Chart**.
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img10.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img10.png") 
 
 ## Step Area Chart
 
@@ -351,7 +351,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays a **Step Area Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img11.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img11.png") 
 
 ## Spline Area Chart
 
@@ -379,7 +379,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following Screenshot displays a **Spline Area Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img12.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img12.png") 
 
 ## Stacking Area Chart
 
@@ -407,7 +407,7 @@ $("#OlapChart1").ejOlapChart({
 
 The following screenshot displays a **Stacking Area Chart.**
 
-{% include image.html url="/js/OlapChart/Chart-Types_images/Chart-Types_img13.png" %}
+![]("/js/OlapChart/Chart-Types_images/Chart-Types_img13.png") 
 
 ##Combination Chart
 
@@ -445,4 +445,4 @@ function onSeriesRenders(args) {
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Series_images/Series_img1.png" %}
+![]("/js/OlapChart/Series_images/Series_img1.png") 

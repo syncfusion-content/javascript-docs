@@ -28,7 +28,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Title_images/Title_img1.png" %}
+![]("/js/OlapChart/Title_images/Title_img1.png") 
 
 ##Title Customization
 
@@ -58,5 +58,5 @@ function load(args) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Title_images/Title_img2.png" %}
+![]("/js/OlapChart/Title_images/Title_img2.png") 
 

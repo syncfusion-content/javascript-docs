@@ -41,7 +41,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 The following screenshot illustrates a **TagCloud** control when you disable title,
 
-{% include image.html url="/js/TagCloud/Title-Customization_images/Title-Customization_img1.png" %}
+![]("/js/TagCloud/Title-Customization_images/Title-Customization_img1.png") 
 
 
 
@@ -81,7 +81,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 The following screenshot illustrates the **TagCloud** control with customized title text.
 
-{% include image.html url="/js/TagCloud/Title-Customization_images/Title-Customization_img2.png"%}
+![]("/js/TagCloud/Title-Customization_images/Title-Customization_img2.png")
 
 
 
@@ -136,7 +136,7 @@ Using CSS class you can resize the image content as follows.
 
 The following screenshot illustrates the **TagCloud** control with customized title image.
 
-{% include image.html url="/js/TagCloud/Title-Customization_images/Title-Customization_img3.png"%}
+![]("/js/TagCloud/Title-Customization_images/Title-Customization_img3.png")
 
 
 

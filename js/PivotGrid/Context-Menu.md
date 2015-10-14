@@ -78,5 +78,5 @@ cell_RightClick = function(evt) {
 
 The output of the above code creates a **PivotGrid** with **Cell Context** options as shown in the following screenshot.
 
-{% include image.html url="/js/PivotGrid/Context-Menu_images/Context-Menu_img1.png" %}
+![]("/js/PivotGrid/Context-Menu_images/Context-Menu_img1.png") 
 

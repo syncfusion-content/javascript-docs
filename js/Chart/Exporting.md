@@ -138,7 +138,7 @@ Example: http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExpor
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Exporting_images/Exporting_img1.png" Caption="Export chart to excel page"%}
+![]("/js/Chart/Exporting_images/Exporting_img1.png" Caption="Export chart to excel page")
 
 6.Currently, the chart data can be exported at server-side only through the helper functions in the “.Net”. So to use exporting in your projects, it is required to create a server with any of the following.
  
@@ -217,4 +217,4 @@ Export multiple chart to excel at server-side
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Exporting_images/Exporting_img2.png" Caption="Export multiple chart to excel page"%}
+![]("/js/Chart/Exporting_images/Exporting_img2.png" Caption="Export multiple chart to excel page")
