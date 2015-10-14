@@ -9,7 +9,7 @@ keywords: ejSchedule, API, Essential JS Schedule
 
 # ejSchedule
 
-Custom Design for Html Schedule control.
+Custom Design for HTML Schedule control.
 
 #### Syntax
 
@@ -62,7 +62,7 @@ $('#Schedule').ejSchedule();
 ### allowDragDrop 'boolean'
 {:#members:allowdragdrop}
 
-When set to true, Scheduler allows the appointments to be dragged and dropped to the required time.
+When set to true, Schedule allows the appointments to be dragged and dropped at the required time.
 
 #### Default Value
 
@@ -70,7 +70,7 @@ When set to true, Scheduler allows the appointments to be dragged and dropped to
 
 #### Example
 
-To disable the drag and drop functionality
+To disable the drag and drop functionality,
 
 {% highlight html %}
  
@@ -99,7 +99,7 @@ To disable the drag and drop functionality
 ### allowKeyboardNavigation 'boolean'
 {:#members:allowkeyboardnavigation}
 
-When set to true, Scheduler allows the interaction via keyboard shortcut keys. 
+When set to true, Schedule allows interaction through keyboard shortcut keys. 
 
 #### Default Value
 
@@ -107,7 +107,7 @@ When set to true, Scheduler allows the interaction via keyboard shortcut keys.
 
 #### Example
 
-To disable the Keyboard interaction with Schedule
+To disable the keyboard interaction with Schedule,
 
 
 {% highlight html %}
@@ -128,7 +128,7 @@ To disable the Keyboard interaction with Schedule
 ### appointmentSettings 'object'
 {:#members:appointmentsettings}
 
-It includes the dataSource option and the fields related to Scheduler appointments.
+It includes the dataSource option and the fields related to Schedule appointments.
 
 
 ### appointmentSettings.dataSource 'object/Array'
@@ -139,11 +139,11 @@ It includes the dataSource option and the fields related to Scheduler appointmen
 
 * Array
 
-The dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance which contains Scheduler appointments.
+The dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance that contains Schedule appointments.
 
 #### Example
 
-To set the dataSource with array of JSON object collection.
+To set the dataSource with array of JSON object collection,
 
 {% highlight html %}
        
@@ -177,7 +177,7 @@ To set the dataSource with array of JSON object collection.
 #### Example
 
 
-To set the dataSource with DataManager instance
+To set the dataSource with DataManager instance,
 
 {% highlight html %}
 
@@ -210,11 +210,11 @@ To set the dataSource with DataManager instance
 
 * null
 
-It holds either the ej.Query() object or simply the query string which retrieves the specified records from the table.
+It holds either the ej.Query() object or simply the query string that retrieves the specified records from the table.
 
 #### Example
 
-To set the dataSource with DataManager instance and then querying the datamanager to fetch specific records from the Events table,
+To set the dataSource with DataManager instance and querying the datamanager to fetch specific records from the Events table,
 
 {% highlight html %}
 
@@ -249,7 +249,7 @@ To set the dataSource with DataManager instance and then querying the datamanage
 
 * null
 
-Assign the table name from which the records are to be fetched for the Scheduler.
+Assign the table name from where the records are to be fetched for the Schedule.
 
 #### Example
 
@@ -280,26 +280,26 @@ To set the dataSource with DataManager instance and using tableName property to 
 {% endhighlight %}
 
 
-The following are the appointment fields which holds the appropriate column names from the dataSource.
+The following are the appointment fields that holds the appropriate column names from the dataSource.
 
 ### appointmentSettings.id 'string'
 {:#members:appointmentsettings-id}
 
-Binds the id field name in the dataSource to the id of the Scheduler appointments. It denotes the unique id assigned to the appointments.
+Binds the id field name in the dataSource to the id of the Schedule appointments. It denotes the unique id assigned to the appointments.
 
 ### appointmentSettings.startTime 'string'
 {:#members:appointmentsettings-startTime}
 
-Binds the name of the startTime field in the dataSource with the start time of the Scheduler appointments. It indicates the date and Time when the Scheduler appointment actually starts.
+Binds the name of the startTime field in the dataSource with the start time of the Schedule appointments. It indicates the date and time when the Schedule appointment actually starts.
 
 ### appointmentSettings.endTime 'string'
 {:#members:appointmentsettings-endTime}
 
-Binds the name of the endTime field in the dataSource with the end time of the Scheduler appointments. It indicates the date and Time when the Scheduler appointment actually ends.
+Binds the name of the endTime field in the dataSource with the end time of the Schedule appointments. It indicates the date and time when the Schedule appointment actually ends.
 
 #### Example
 
-To create a simple appointment with its mandatory fields such as id, startTime & endTime,
+To create a simple appointment with its mandatory fields such as id, startTime and endTime,
 
 {% highlight html %}
 
@@ -325,12 +325,12 @@ To create a simple appointment with its mandatory fields such as id, startTime &
 
 {% endhighlight %}
 
-> **Note :The fields such as id, startTime and endTime are the mandatory fields to be specified to create an appointment.**
+> **Note :The fields such as, id, startTime and endTime are mandatory fields that are to be specified to create an appointment.**
 
 ### appointmentSettings.subject 'string'
 {:#members:appointmentsettings-subject}
 
-Binds the name of the subject field in the dataSource to the appointment Subject. Indicates the Subject or the title which will get displayed on the Scheduler appointments.
+Binds the name of the subject field in the dataSource to the appointment Subject. Indicates the Subject or the title that gets displayed on the Schedule appointments.
 
 #### Example:
 
@@ -397,12 +397,12 @@ To create an appointment with a **description**,
 
 {% endhighlight %}
 
-> **Note: Unlike Subject field which is displayed as a label over an appointment, the description doesn’t shows up on it by default. To display description over the appointments, the appointment template can be used in such cases **
+> **Note: Unlike Subject field that is displayed as a label over an appointment, the description doesn’t show up on it by default. To display description over the appointments, use the appointment template.**
 
 ### appointmentSettings.recurrence 'string'
 {:#members:appointmentsettings-recurrence}
 
-Binds the name of the recurrence field in the dataSource. It indicates whether the appointment is a recurrence appointment or not.
+Binds the name of recurrence field in the dataSource. It indicates whether the appointment is a recurrence appointment or not.
 
 ### appointmentSettings.recurrenceRule 'string'
 {:#members:appointmentsettings-recurrenceRule}
@@ -443,7 +443,7 @@ To create a **recurrence** appointment,
 
 {% endhighlight %}
 
-> **Note:The recurrence and recurrenceRule fields are inter-dependent, as when the recurrence field is set to true, the recurrenceRule needs to be defined mandatorily for an appointment.**
+> **Note:The recurrence and recurrenceRule fields are inter-dependent, as when the recurrence field is set to true, the recurrenceRule has to be mandatorily defined for an appointment.**
 
 ### appointmentSettings.allDay 'string'
 {:#members:appointmentsettings-allday}
@@ -493,7 +493,7 @@ To create an **all-day** appointment,
 
 * null
 
-Binds one or more fields in the resource collection dataSource. It maps the resource field names with the appointments, denoting to which resource the appointments actually belongs.
+Binds one or more fields in the resource collection dataSource. It maps the resource field names with the appointments, denoting to the resource where the appointments actually belongs.
 
 #### Example:
 
@@ -548,7 +548,7 @@ To create appointments in multiple resources scenario,
 
 * null
 
-Binds the name of the categorize field in the dataSource. It indicates the categorize value (red categorize, green, yellow and so on) applied to the appointments.
+Binds the name of the categorize field in the dataSource. It indicates the categorize value like, red categorize, green, yellow and so on applied to the appointments.
 
 #### Example
 
@@ -585,7 +585,7 @@ To create appointments with categorize options,
 
 {% endhighlight %}
 
-> **Note: There are six default Categorize colors available for the appointments which can be accessed by its default id. The default available Category options are Blue, Green, Orange, Purple, Red and Yellow and its id values ranges from 1 to 6 respectively. The default Categorize collection can also be replaced with the user-specified collection.**
+> **Note: There are six default Categorize colors, Blue, Green, Orange, Purple, Red and Yellow available for the appointments that can be accessed by its default id values ranging from 1 to 6 respectively. The default Categorize collection can also be replaced with the user-specified collection.**
 
 
 ### appointmentSettings.location 'string'
@@ -630,7 +630,7 @@ To create appointments with categorize options,
 
 {% endhighlight %}
 
-> **Note: To make use of the location field in Scheduler, an additional API showLocationField needs to be enabled, so that the location textbox gets displayed on the default appointment window. **
+> **Note: To use the location field in Schedule, an additional API showLocationField has to be enabled that displays the location textbox on the default appointment window.**
 
 ### appointmentSettings.priority 'string'
 {:#members:appointmentsettings-priority}
@@ -639,7 +639,7 @@ To create appointments with categorize options,
 
 * null
 
-Binds the name of the priority field in the dataSource. It indicates the priority (high, low, medium and none) of the appointments.
+Binds the name of the priority field in the dataSource. It indicates the priority like, high, low, medium and none of the appointments.
 
 #### Example
 
@@ -674,7 +674,7 @@ To create appointments with priority option,
 
 {% endhighlight %}
 
-> **Note: To make use of the priority field in Scheduler, the prioritySettings needs to be enabled, so that the priority textbox gets displayed on the default appointment window.**
+> **Note: To use the priority field in Schedule, the prioritySettings has to be enabled that displays the priority textbox on the default appointment window.**
 
 ### appointmentSettings.startTimeZone 'string'
 {:#members:appointmentsettings-startTimeZone}
@@ -683,7 +683,7 @@ To create appointments with priority option,
 
 * StartTimeZone
 
-Binds the name of the start timezone field in the dataSource. It indicates the timezone of the appointment start date. If the startTimeZone field is not mentioned, then the appointment will make use of the Scheduler timeZone or System timeZone.
+Binds the name of the start timezone field in the dataSource. It indicates the timezone of the appointment start date. When the startTimeZone field is not mentioned, the appointment uses the Schedule timeZone or System timeZone.
 
 
 ### appointmentSettings.endTimeZone 'string'
@@ -693,7 +693,7 @@ Binds the name of the start timezone field in the dataSource. It indicates the t
 
 * EndTimeZone
 
-Binds the name of the end timezone field in the dataSource. It indicates the timezone of the appointment end date. If the endTimeZone field is not mentioned, then the appointment will make use of the Scheduler timeZone or System timeZone.
+Binds the name of the end timezone field in the dataSource. It indicates the timezone of the appointment end date. When the endTimeZone field is not mentioned, the appointment uses the Schedule timeZone or System timeZone.
 
 #### Example
 
@@ -743,7 +743,7 @@ All the field names that are mapped from the dataSource to the appropriate field
 
 #### Example
 
-To set the appointment template
+To set the appointment template,
 
 {% highlight html %}
 
@@ -782,11 +782,11 @@ To set the appointment template
 
 * ""
 
-Accepts the custom CSS class name that defines the specific user-defined styles and themes to be applied for the partial/complete elements of the Scheduler. 
+Accepts the custom CSS class name that defines the specific user-defined styles and themes to be applied for the partial or complete elements of the Schedule. 
 
 #### Example
 
-To apply the custom css class name to the Scheduler and to customize only the background color of its header element,
+To apply the custom css class name to the Schedule and to customize only the background color of its header element,
 
 {% highlight html %}
 
@@ -823,7 +823,7 @@ To apply the custom css class name to the Scheduler and to customize only the ba
 ### categorizeSettings 'object'
 {:#members:categorizeSettings }
 
-Sets various categorize colors to the Scheduler appointments to differentiate it.
+Sets various categorize colors to the Schedule appointments to differentiate it.
 
 ### categorizeSettings.allowMultiple 'boolean'
 {:#members:categorizeSettings-allowMultiple }
@@ -913,11 +913,11 @@ To enable the categorize option,
 
 * Array
 
-The dataSource option can accept either the JSON object collection or DataManager [[ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)] instance which contains the categorize data.
+The dataSource option can accept either the JSON object collection or DataManager [[ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)] instance that contains the categorize data.
 
 #### Example
 
-To set the dataSource with array of JSON object collection
+To set the dataSource with array of JSON object collection,
 
 {% highlight html %}
   
@@ -951,12 +951,12 @@ To set the dataSource with array of JSON object collection
 
 {% endhighlight %}
 
-The following are the category fields which holds the appropriate column names from the dataSource.
+The following are the category fields that holds the appropriate column names from the dataSource.
 
 ### categorizeSettings.id 'string'
 {:#members:categorizeSettings-id}
 
-Binds the id field name in the dataSource to the id of the category data.
+Binds the id field name in dataSource to the id of category data.
 
 #### Default Value
 
@@ -965,7 +965,7 @@ Binds the id field name in the dataSource to the id of the category data.
 ### categorizeSettings.text 'string'
 {:#members:categorizeSettings-text}
 
-Binds the text field name in the dataSource to the category text.
+Binds the text field name in dataSource to category text.
 
 #### Default Value
 
@@ -974,7 +974,7 @@ Binds the text field name in the dataSource to the category text.
 ### categorizeSettings.color 'string'
 {:#members:categorizeSettings-color}
 
-Binds the color field name in the dataSource to the category color.
+Binds the color field name in dataSource to category color.
 
 #### Default Value
 
@@ -1077,7 +1077,7 @@ Sets the height for the Schedule cells.
 
 #### Example
 
-To set the cell Height for Schedule,
+To set the cell height for Schedule,
 
 {% highlight html %}
 
@@ -1150,7 +1150,7 @@ Holds all the options related to the context menu settings of the Schedule.
 
 * false
 
-When set to true, enables the context menu options available for the Scheduler cells and appointments.
+When set to true, enables the context menu options available for the Schedule cells and appointments.
 
 #### Example
 
@@ -1192,7 +1192,7 @@ To enable the context menu options for Schedule control,
 
 * []
 
-Contains all the default context menu options that are applicable for both Scheduler cells and appointments. It also supports adding custom menu items to the cells or appointment collection.
+Contains all the default context menu options that are applicable for both Schedule cells and appointments. It also supports adding custom menu items to the cells or appointment collection.
 
 #### Example
 
@@ -1305,7 +1305,7 @@ To add custom context menu option to the Schedule appointments,
 
 {% endhighlight %}
 
-> **Note:In the above sample, menuItemClick event has been defined, which gets triggered whenever any of the menu options are selected. Here, the condition is checked as, if the id of the selected menu item option contains custom1, then the target appointment’s text and its color gets modified.**
+> **Note:In the above code example, menuItemClick event is defined that triggers whenever any of the menu options are selected. Here, the condition is checked as, when the id of the selected menu item option contains custom1, then the target appointment’s text and its color gets modified.**
 
 ### currentDate 'date'
 {:#members:currentDate}
@@ -1314,7 +1314,7 @@ To add custom context menu option to the Schedule appointments,
 
 * new Date()
 
-Sets the current date of the Scheduler. The scheduler displays initially with the date which is provided here.
+Sets the current date of the Schedule. The schedule displays initially with the date that is provided here.
 
 #### Example
 
@@ -1349,11 +1349,11 @@ To set the current date for Schedule,
 
 * week
 
-Sets the current view of the Scheduler. The scheduler displays initially with the view which is specified here. The available views are day, week, workweek and month, from which any one of the required view can be set to the scheduler.
+Sets the current view of the Schedule. The schedule initially displays with the view that is specified here. The available views are day, week, workweek and month, from that you can set any one of the required view to the Schedule.
 
 #### Example
 
-To set the current view as **Day** for Scheduler,
+To set the current view as **Day** for Schedule,
 
 {% highlight html %}
 
@@ -1385,11 +1385,11 @@ To set the current view as **Day** for Scheduler,
 
 * ""
 
-Sets the format of the date for the Scheduler. 
+Sets the date format for the Schedule. 
 
 #### Example
 
-To set the date format for Scheduler,
+To set the date format for Schedule,
 
 {% highlight html %}
 
@@ -1421,11 +1421,11 @@ To set the date format for Scheduler,
 
 * true
 
-When set to true, enables the previous/Next appointment navigation within the Scheduler.  
+When set to true, enables the previous or next appointment navigation within the Schedule.  
 
 #### Example
 
-To disable the Previous/Next appointment navigation,
+To disable the Previous or Next appointment navigation,
 
 {% highlight html %}
 
@@ -1458,7 +1458,7 @@ To disable the Previous/Next appointment navigation,
 
 * true
 
-When set to true, enables the resize behaviour of the appointments within the Scheduler. 
+When set to true, enables the resize behaviour of the appointments within the Schedule. 
 
 #### Example
 
@@ -1494,11 +1494,11 @@ To disable the appointment resizing,
 
 * false
 
-When set to true, enables the loading of Schedule appointments based on the user demand. With this load on demand concept, the data consumption of the Schedule can be limited.
+When set to true, enables the loading of Schedule appointments based on your demand. With this load on demand concept, the data consumption of Schedule can be limited.
 
 #### Example
 
-To enable the load on demand functionality for the Scheduler,
+To enable the load on demand functionality for the Schedule,
 
 {% highlight html %}
 
@@ -1533,11 +1533,11 @@ To enable the load on demand functionality for the Scheduler,
 
 * false
 
-Saves the current model value to the browser cookies for state maintenance. When the page gets refreshed, Schedule control values will be retained.
+Saves the current model value to the browser cookies for state maintenance. When the page gets refreshed, Schedule control values are retained.
 
 #### Example
 
-To enable the persistence for the Scheduler,
+To enable the persistence for Schedule,
 
 {% highlight html %}
 
@@ -1574,7 +1574,7 @@ When set to true, changes the Schedule layout and behaviour as per the common RT
 
 #### Example
 
-To enable RTL for the Scheduler,
+To enable RTL for the Schedule,
 
 {% highlight html %}
 
@@ -1607,12 +1607,12 @@ To enable RTL for the Scheduler,
 
 * 24
 
-Sets the end hour time limit to be displayed on the Scheduler.
+Sets the end hour time limit to be displayed on the Schedule.
 
 #### Example
 
 
-To set the end hour on the Scheduler,
+To set the end hour on the Schedule,
 
 {% highlight html %}
 
@@ -1641,7 +1641,7 @@ To set the end hour on the Scheduler,
 ### group 'object'
 {:#members:group}
 
-To configure the resource grouping on the Scheduler.
+To configure the resource grouping on the Schedule.
 
 #### Default Value
 
@@ -1650,11 +1650,11 @@ To configure the resource grouping on the Scheduler.
 ### group.resources 'object'
 {:#members:group-resources}
 
-Holds the array of resource names to be grouped on the Scheduler.
+Holds the array of resource names to be grouped on the Schedule.
 
 #### Example
 
-To group the resources on the Scheduler,
+To group the resources on the Schedule,
 
 {% highlight html %}
 
@@ -1702,11 +1702,11 @@ To group the resources on the Scheduler,
 
 * "1120px"
 
-Sets the height of the Scheduler. Accepts both pixel and percentage values. 
+Sets the height of Schedule. Accepts both pixel and percentage values. 
 
 #### Example 
 
-To set the height of the Scheduler in pixels,
+To set the height of Schedule in pixels,
 
 
 {% highlight html %}
@@ -1736,9 +1736,9 @@ To set the height of the Scheduler in pixels,
 #### Example
 
 
-To set the height of the Scheduler in percentage,
+To set the height of Schedule in percentage,
 
-> **Note: To set the percentage values for the Scheduler height, make sure that the parent element which holds the Scheduler div is defined with some specific height. If the Scheduler is not placed within any of the parent element, then make sure that the html and body tags are explicitly defined with some height values either in pixel or percentage.**
+> **Note: To set the percentage values for Schedule height, make sure that the parent element that holds the Scheduler div is defined with some specific height. When the Scheduler is not placed within any of the parent element, then make sure that the HTML and body tags are explicitly defined with some height values either in pixel or percentage.**
 
 {% highlight html %}
 
@@ -1777,7 +1777,7 @@ To set the height of the Scheduler in percentage,
 ### workHours 'object'
 {:#members:workHours}
 
-To define the workHours display of the Schedule control.
+Defines the workHours display of the Schedule control.
 
 ### workHours.highlight 'boolean'
 {:#members:workHours-hightlight}
@@ -1786,11 +1786,11 @@ To define the workHours display of the Schedule control.
 
 * true
 
-When set to true, highlights the work hours of the Scheduler.  
+When set to true, highlights the work hours of the Schedule.  
 
 #### Example
 
-To disable the highlighting of Scheduler work hours,
+To disable the highlighting of Schedule work hours,
 
 {% highlight html %}
 
@@ -1825,11 +1825,11 @@ To disable the highlighting of Scheduler work hours,
 
 * null
 
-Sets the start time to depict the start of the working/business hour in a day.
+Sets the start time to depict the start of working or business hour in a day.
 
 #### Example
 
-To set the working start hour for Scheduler
+To set the working start hour for Schedule,
 
 {% highlight html %}
 
@@ -1865,11 +1865,11 @@ To set the working start hour for Scheduler
 
 * null
 
-Sets the end time to depict the end of the working/business hour in a day.
+Sets the end time to depict the end of the working or business hour in a day.
 
 #### Example
 
-To set the working end hour for Scheduler
+To set the working end hour for Schedule,
 
 {% highlight html %}
 
@@ -1908,11 +1908,11 @@ To set the working end hour for Scheduler
 
 * false
 
-When set to true, enables the Scheduler to observe Daylight Saving Time for the supported timezones.  
+When set to true, enables the Schedule to observe daylight saving time for the supported timezones.  
 
 #### Example
 
-To enable the Daylight Saving time in Scheduler,
+To enable the daylight saving time in Schedule,
 
 {% highlight html %}
 
@@ -1945,11 +1945,11 @@ To enable the Daylight Saving time in Scheduler,
 
 * true
 
-When set to true, adapts the Scheduler layout to fit the screen size of the devices on which it renders.
+When set to true, adapts the Schedule layout to fit the screen size of the devices on which it renders.
 
 #### Example
 
-To make the Scheduler adaptive,
+To make the Schedule adaptive,
 
 {% highlight html %}
 
@@ -1983,11 +1983,11 @@ To make the Scheduler adaptive,
 * "en-US"
 
 
-Sets the specific culture to the Scheduler.
+Sets the specific culture to the Schedule.
 
 #### Example
 
-To set the French culture on Scheduler – set its locale as fr-FR,
+To set the French culture on Schedule, set its locale as fr-FR.
 
 {% highlight html %}
 
@@ -2013,7 +2013,7 @@ To set the French culture on Scheduler – set its locale as fr-FR,
 
 {% endhighlight %}
 
-> **Note: To set any culture for Scheduler, it is necessary to refer the required minified globalize files of the specific culture. For example, to use fr-FR culture in Scheduler, it is necessary to refer the globalize.culture.fr-FR.min script file. **
+> **Note: To set any culture for Schedule, it is necessary to refer to the required minified globalize files of the specific culture. For example, to use fr-FR culture in Schedule, it is necessary to refer to the globalize.culture.fr-FR.min script file. **
 
 > **Also define the locale words of that specific culture properly. For example, define the locale words for fr-FR culture in a variable ej.Schedule.Locale[“fr-FR”] = { }; under script section.**
 
@@ -2024,11 +2024,11 @@ To set the French culture on Scheduler – set its locale as fr-FR,
 
 * new Date(2099, 12, 31)
 
-Sets the maximum date limit to show up on the Scheduler. Setting maxDate with specific date value disallows the Scheduler to navigate beyond that date.
+Sets the maximum date limit to show up on the Schedule. Setting maxDate with specific date value disallows the Schedule to navigate beyond that date.
 
 #### Example
 
-To set the maximum date on the Scheduler,
+To set the maximum date on the Schedule,
 
 
 {% highlight html %}
@@ -2062,11 +2062,11 @@ To set the maximum date on the Scheduler,
 
 * new Date(1900, 01, 01)
 
-Sets the minimum date limit to show up on the Scheduler. Setting minDate with specific date value disallows the Scheduler to navigate beyond that date.
+Sets the minimum date limit to show up on the Schedule. Setting minDate with specific date value disallows the Schedule to navigate beyond that date.
 
 #### Example
 
-To set the minimum date on the Scheduler,
+To set the minimum date on the Schedule,
 
 
 {% highlight html %}
@@ -2100,11 +2100,11 @@ To set the minimum date on the Scheduler,
 
 * vertical
 
-Sets the mode of rendering the Scheduler either in a vertical or horizontal direction.
+Sets the mode of rendering the Schedule either in a vertical or horizontal direction.
 
 #### Example
 
-To render the Scheduler in horizontal orientation,
+To render the Schedule in horizontal orientation,
 
 
 {% highlight html %}
@@ -2144,11 +2144,11 @@ Holds all the options related to the priority settings of the Schedule.
 
 * false
 
-When set to true, enables the priority options available for the Scheduler appointments.
+When set to true, enables the priority options available for the Schedule appointments.
 
 #### Example
 
-To enable the priority option in Scheduler,
+To enable the priority option in Schedule,
 
 
 {% highlight html %}
@@ -2184,7 +2184,7 @@ To enable the priority option in Scheduler,
 
 * Array
 
-The dataSource option can accept the JSON object collection which contains the priority related data.
+The dataSource option can accept the JSON object collection that contains the priority related data.
 
 #### Example
 
@@ -2223,7 +2223,7 @@ To set the dataSource with array of JSON object collection,
 
 {% endhighlight %}
 
-The following are the priority fields which holds the appropriate column names from the dataSource.
+The following are the priority fields that holds the appropriate column names from the dataSource.
 
 ### prioritySettings.text 'string'
 {:#members:prioritySettings-text }
@@ -2241,7 +2241,7 @@ Binds the text field name in the dataSource to the prioritySettings text. These 
 
 * value
 
-Binds the value field name in the dataSource to the prioritySettings value. These field names can usually accept four priority values by default – high, low, medium & none.
+Binds the value field name in the dataSource to the prioritySettings value. These field names can usually accept four priority values by default, high, low, medium and none.
 
 #### Example
 
@@ -2292,7 +2292,7 @@ Allows the priority field customization in the appointment window to add custom 
 
 #### Example
 
-To set the template for priority option in Scheduler,
+To set the template for priority option in Schedule,
 
 {% highlight html %}
 
@@ -2352,7 +2352,7 @@ To set the template for priority option in Scheduler,
 
 {% endhighlight %}
 
-> ** Note: Since the prioritySettings contains the default values in its dataSource like none, high, medium and low – therefore the appropriate css classes needs to be created with the same value names to apply it on the template.**
+> ** Note: Since the prioritySettings contains the default values in its dataSource like none, high, medium and low, the appropriate css classes has to be created with the same value names to apply it on the template.**
 
 ### readOnly 'boolean'
 {:#members:readOnly }
@@ -2361,11 +2361,11 @@ To set the template for priority option in Scheduler,
 
 * false
 
-When set to true, disables the interaction with the Scheduler appointments – simply allowing the date and view navigation to occur.
+When set to true, disables the interaction with the Schedule appointments, simply allowing the date and view navigation to occur.
 
 #### Example
 
-To make the Scheduler readOnly,
+To make the Schedule readOnly,
 
 {% highlight html %}
 
@@ -2404,11 +2404,11 @@ Holds all the options related to the reminder settings of the Schedule.
 
 * false
 
-When set to true, enables the reminder option available for the Scheduler appointments.
+When set to true, enables the reminder option available for the Schedule appointments.
 
 #### Example 
 
-To enable the reminder option in Scheduler,
+To enable the reminder option in Schedule,
 
 {% highlight html %}
 
@@ -2441,11 +2441,11 @@ To enable the reminder option in Scheduler,
 
 * 5
 
-Sets the timing, when the reminders are to be alerted for the Scheduler appointments.
+Sets the timing, when the reminders are to be alerted for the Schedule appointments.
 
 #### Example
 
-To set the alert for Scheduler appointments,
+To set the alert for Schedule appointments,
 
 {% highlight html %}
 
@@ -2478,7 +2478,7 @@ To set the alert for Scheduler appointments,
 
 * null
 
-Defines the specific start and end dates to be rendered in the schedule control. To render such user-specified custom date ranges in the schedule control, it is necessary to set the **currentView** property to **customview**.
+Defines the specific start and end dates to be rendered in the Schedule control. To render such user-specified custom date ranges in the Schedule control, it is necessary to set the **currentView** property to **customview**.
 
 ### renderDates.start 'date'
 {:#members:renderDates-start}
@@ -2487,7 +2487,7 @@ Defines the specific start and end dates to be rendered in the schedule control.
 
 * null
 
-Sets the start of the custom date range to be rendered on the Schedule.
+Sets the start of the custom date range to be rendered on Schedule.
 
 ### renderDates.end 'date'
 {:#members:renderDates-end}
@@ -2500,7 +2500,7 @@ Sets the end limit of the custom date range.
 
 #### Example
 
-To set the custom date range in Scheduler,
+To set the custom date range in Schedule,
 
 {% highlight html %}
 
@@ -2601,7 +2601,7 @@ To set the resource header template,
 
 * null
 
-Holds all the options related to the resources settings of the Schedule. It is a collection of one or more resource objects, on which the levels of resources are rendered on the Schedule based on the order of the resource data provided within this collection.
+Holds all the options related to the resources settings of the Schedule. It is a collection of one or more resource objects, where the levels of resources are rendered on the Schedule based on the order of the resource data provided within this collection.
 
 ### resources.fields 'string'
 {:#members:resources-fields }
@@ -2610,7 +2610,7 @@ Holds all the options related to the resources settings of the Schedule. It is a
 
 * []
 
-It holds the name of the resource field to be bound to the Scheduler appointments which contains the resource Id.
+It holds the name of the resource field to be bound to the Schedule appointments that contains the resource Id.
 
 #### Example
 
@@ -2660,7 +2660,7 @@ To specify the resource field,
 
 * []
 
-It holds the title name of the resource field to be displayed on the Scheduler appointment window.
+It holds the title name of the resource field to be displayed on the Schedule appointment window.
 
 #### Example
 
@@ -2708,7 +2708,7 @@ To specify the resource title,
 
 * []
 
-A unique resource name which is used for differentiating various resource objects while grouping it in various levels.
+A unique resource name that is used for differentiating various resource objects while grouping it in various levels.
 
 #### Example
 
@@ -2818,12 +2818,12 @@ To set the allowMultiple option for a resource object,
 ### resources.resourceSettings 'object'
 {:#members:resources-resourceSettings}
 
-It holds the field names of the resources to be bound to the Scheduler and also the dataSource.
+It holds the field names of the resources to be bound to the Schedule and also the dataSource.
 
 ### resources.resourceSettings.dataSource 'object|array'
 {:#members:resources-resourceSettings-dataSource}
 
-The dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance which contains the resources related data.
+The dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance that contains the resources related data.
 
 #### Example
 
@@ -2864,7 +2864,7 @@ To set the dataSource with array of JSON object collection,
 
 {% endhighlight %}
 
-The following are the resourceSettings fields which maps the appropriate column names from the dataSource.
+The following are the resourceSettings fields that maps the appropriate column names from the dataSource.
 
 ### resources.resourceSettings.text 'string'
 {:#members:resources-resourceSettings-text}
@@ -2884,7 +2884,7 @@ Binds the groupId field name in the dataSource to the resourceSettings **groupId
 ### resources.resourceSettings.color 'string'
 {:#members:resources-resourceSettings-color }
 
-Binds the color field name in the dataSource to the resourceSettings **color**. The color specified here gets applied to the Scheduler appointments denoting to which particular resource it belongs. 
+Binds the color field name in the dataSource to the resourceSettings **color**. The color specified here gets applied to the Schedule appointments denoting the resource it belongs. 
 
 
 #### Example
@@ -2942,11 +2942,11 @@ To set the resources options with id, text, groupId and color fields,
 ### appointmentClass 'string'
 {:#members:appointmentClass}
 
-Binds the appointmentClass field name in the dataSource. It applies the custom CSS classname to the appointments depicting to which particular resource it belongs.
+Binds the appointmentClass field name in the dataSource. It applies the custom CSS classname to the appointments depicting the particular resource it belongs.
 
 #### Example
 
-To customize the styles of the appointments based on the resources to which it belongs, need to make use of the appointmentClass field with other resources options,
+To customize the styles of the appointments based on the resources it belongs, use the appointmentClass field with other resources options,
 
 {% highlight html %}
 
