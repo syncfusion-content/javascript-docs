@@ -119,7 +119,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img1.png" %}
+![]("/js/Diagram/Data-Binding_images/Data-Binding_img1.png") 
 
 ## Remote Data
 
@@ -127,7 +127,11 @@ You can bind the Diagram with Remote Data by using dataManager.
 
   * DataManager supports the following types of data-binding: JSON, Web Services, oData. 
 
+
   * It uses two different classes: ej.DataManager for processing and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. 
+
+![]("/js/Diagram/Data-Binding_images/Data-Binding_img2.png") 
+
 
   * To learn more, refer to [Data Manager](/js/DataManager/Getting-Started).
 
@@ -190,7 +194,11 @@ function nodeTemplate(diagram, node) {
 
 {% endhighlight %}
 
+
 {% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img2.png" %}
+
+![]("/js/Diagram/Data-Binding_images/Data-Binding_img3.png") 
+
 
 ## Html Table Data
 
@@ -320,10 +328,14 @@ $(function() {
 
 {% endhighlight %}
 
+
 {% include image.html url="/js/Diagram/Data-Binding_images/Data-Binding_img4.png" %}
 
 
 
 
 
+
+
+![]("/js/Diagram/Data-Binding_images/Data-Binding_img4.png") 
 

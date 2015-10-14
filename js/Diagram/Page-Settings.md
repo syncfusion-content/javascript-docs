@@ -12,14 +12,18 @@ documentation: ug
 
 Page settings enable to customize the appearance, width, and height of the Diagram page.
 
-{% include image.html url="/js/Diagram/Page-Settings_images/Page-Settings_img1.png" %}
+![]("/js/Diagram/Page-Settings_images/Page-Settings_img1.png") 
 
 ## Page size and appearance
 
 The size and appearance of the Diagram pages can be customized with the `pageSettings` property. 
 
+
 The `pageWidth` and `pageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with a set of appearance specific properties.
 To explore those properties, refer [Page Settings](/js/api/ejDiagram "members:pagesettings").
+
+![]("/js/Diagram/Page-Settings_images/Page-Settings_img2.png") 
+
 
 You can also customize the appearance of off-page regions with the property `backgroundColor`.
 
@@ -75,4 +79,8 @@ The following code illustrates how to enable multiple page and page break lines.
       });
 
 {% endhighlight %}
+
+
+
+![]("/js/Diagram/Page-Settings_images/Page-Settings_img3.png") 
 

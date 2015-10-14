@@ -61,7 +61,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Sorting_images/Sorting_img1.png" %}
+![]("/js/DataManager/Sorting_images/Sorting_img1.png") 
 
 ##SortByDesc
 
@@ -113,7 +113,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Sorting_images/Sorting_img2.png" %}
+![]("/js/DataManager/Sorting_images/Sorting_img2.png") 
 
 ##Dynamic sorting
 
@@ -183,7 +183,7 @@ Result of above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Sorting_images/Sorting_img3.png" %}
+![]("/js/DataManager/Sorting_images/Sorting_img3.png") 
 
 ##Multi sorting
 
@@ -238,7 +238,7 @@ Result of above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Sorting_images/Sorting_img4.png" %}
+![]("/js/DataManager/Sorting_images/Sorting_img4.png") 
 
 
 

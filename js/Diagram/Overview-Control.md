@@ -53,6 +53,7 @@ The `sourceId` property of overview should be set with the corresponding Diagram
 
 In overview, the view port of the Diagram is highlighted with a red colored rectangle. Diagram can be zoomed/panned by interacting with that. You can interact with overview as follows. 
 
+
 * Resize the rectangle - Zooms in/out the Diagram
 * Drag the rectangle - Pans the Diagram
 * Click at a position - Navigates to the clicked region
@@ -60,3 +61,6 @@ In overview, the view port of the Diagram is highlighted with a red colored rect
 
 The following image shows how the Diagram is zoomed/panned with overview.
 {% include image.html url="/js/Diagram/Overview-Control_images/Overview-Control_img2.png" %}
+
+![]("/js/Diagram/Overview-Control_images/Overview-Control_img1.png") 
+

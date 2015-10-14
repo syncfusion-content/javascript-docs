@@ -42,7 +42,7 @@ documentation: ug
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Row_images/Row_img1.png"%}
+![]("/js/Grid/Row_images/Row_img1.png")
 
 ## Hierarchy
 
@@ -84,7 +84,7 @@ In this section, you can learn how to use the **Hierachy tree** in **Grid View**
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Row_images/Row_img2.png"%}
+![]("/js/Grid/Row_images/Row_img2.png")
 
 ## Row Template
 
@@ -162,7 +162,7 @@ The following output is displayed as a result of the above code example.
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Row_images/Row_img3.png"%}
+![]("/js/Grid/Row_images/Row_img3.png")
 
 ## Customize Hover and AltRow 
 
@@ -201,5 +201,5 @@ The following output is displayed as a result of the above code example.
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Row_images/Row_img4.png"%}
+![]("/js/Grid/Row_images/Row_img4.png")
 

@@ -41,7 +41,7 @@ Also in the button sample, you can use the icon class names as follows,
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Icons_images/Icons_img1.png" Caption="Icon library used in button component"%}
+![]("/js/Button/Icons_images/Icons_img1.png" Caption="Icon library used in button component")
 
 ## List of Icons
 

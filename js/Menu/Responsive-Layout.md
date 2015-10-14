@@ -84,5 +84,5 @@ Add the following code in your **HTML** page.
 
 The following screenshot displays the output for the above code. 
 
-{% include image.html url="/js/Menu/Responsive-Layout_images/Responsive-Layout_img2.png"%}
+![]("/js/Menu/Responsive-Layout_images/Responsive-Layout_img2.png")
 

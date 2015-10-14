@@ -39,5 +39,5 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/DatePicker/Date-Range_images/Date-Range_img1.png"%}
+![]("/js/DatePicker/Date-Range_images/Date-Range_img1.png")
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: RTL
 description: rtl
@@ -50,6 +50,7 @@ Add the following code example to the script section in your **HTML** page to in
     });
 
 {% endhighlight %}
+
 
 
 ![](RTL_images/RTL_img1.png)

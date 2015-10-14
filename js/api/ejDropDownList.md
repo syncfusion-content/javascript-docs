@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-The DropDownList control provides a list of options to choose an item from the list. It can including other HTML elements such as images, textboxes, check box, radio buttons, and so on.
+The DropDownList control provides a list of options to choose an item from the list. It includes other HTML elements such as images, textboxes, check box, radio buttons, and so on.
 
 
 
@@ -92,7 +92,7 @@ Requires
 
 
 
-The cascading DropDownLists is a series of two or more DropDownLists in which each DropDownList is filtered according to the previous DropDownList’s value.
+The cascading DropDownLists is a series of two or more DropDownLists, where each DropDownList is filtered according to the previous DropDownList’s value.
 
 
 Default Value:
@@ -160,7 +160,7 @@ Example
 
 
 
-Sets the case sensitivity of the search operation. It supports both enableFilterSearch and enableIncrementalSearch property.
+Sets the case sensitivity of search operation. It supports both enableFilterSearch and enableIncrementalSearch property.
 
 
 Default Value:
@@ -207,7 +207,7 @@ Example
 
 
 Dropdown widget's style and appearance can be controlled based on 13 different default built-in themes.  
-You can customize the appearance of the dropdown by using the cssClass property. You need to specify a class name in the cssClass property and the same class name is used before the class definitions wherever the custom styles are applied.
+You can customize the appearance of the dropdown by using the cssClass property. Specify a class name in the cssClass property and the same class name is used before the class definitions wherever the custom styles are applied.
 
 
 
@@ -358,7 +358,7 @@ Example
 
 
 
-The enabled Animation property uses the easeOutQuad animation to SlideDown and SlideUp the Popup list in 200 and 100 milliseconds, respectively.  
+Enables or disables the animation effect in DropdownList.  
 
 
 Default Value:
@@ -785,7 +785,7 @@ Example
 
 
 
-Used to group the items. 
+Used for grouping the items. 
 
 
 
@@ -874,7 +874,7 @@ Defines the sprite css for the image tag.
 
 
 
-Defines the table name for tag value or display text while rendering remote data.
+Defines the table name for tag value or displays text while rendering remote data.
 
 
 
@@ -908,7 +908,7 @@ Defines the tag value.
 
 
 
-When the enableFilterSearch property value is set to true, the values in the DropDownList shows the items starting with or containing the key word/letter typed in the Search textbox.
+When the enableFilterSearch property value is set to true, the values in the DropDownList display the items starting with or containing the key word or letter typed in the Search textbox.
 
 
 Default Value:
@@ -1321,7 +1321,7 @@ Example
 
 
 
-With the help of this property, you can make a single or multi selection with the DropDownList and display the text in two modes, delimiter and visual mode. In delimiter mode, you can separate the items by using the delimiter character such as comma (,) or semi-colon (;) or any other special character. In the visual mode, the items are showcased like boxes with close icon in the textbox. 
+With the help of this property, you can make single or multi selection with the DropDownList and display the text in two nodes, delimiter and visual mode. In delimiter mode, you can separate the items by using the delimiter character such as, comma (,) or semi-colon (;) or any other special character. In the visual mode, the items are showcased like boxes with close icon in the textbox. 
 
 
 Default Value:
@@ -1549,7 +1549,7 @@ Example
 
 
 
-Specifies that the DropDownList textbox values should be read-only.
+Specifies that the DropDownList textbox values has to be read-only.
 
 
 Default Value:
@@ -1755,7 +1755,7 @@ Example
 
 
 
-DropDownList control is displayed with the popup seen.
+DropDownList control is displayed with the popup.
 
 
 Default Value:
@@ -1804,7 +1804,7 @@ Example
 
 
 
-DropDownList textbox displayed with the rounded corner style.
+DropDownList textbox is displayed with the rounded corner style.
 
 
 Default Value:
@@ -1899,7 +1899,7 @@ Example
 
 
 
-By default, you can add any text or image to the DropDownList item. To customize the item layout or to create your own visualized elements, you can use this template support.
+You can add any text or image to the DropDownList item, by default. To customize the item layout or to create your own visualized elements, you can use this template support.
 
 
 Default Value:
@@ -1919,7 +1919,7 @@ Example
 {% highlight html %}
  
         
-// Sets the template API value during initialization  .   
+// Sets the template API value during initialization  
 <input type="text" id="drpdwn" /><script>
         window.countries = [
              { text: "Argentina", flag: "flag-ar" },
@@ -2007,7 +2007,7 @@ Example
 ### validationMessage<span class="type-signature type object">object</span>
 {:#members:validationmessage}
 
-Sets the jQuery validation error message in the DropDownList
+Sets the jQuery validation error message in the DropDownList.
 
 
 Default Value:
@@ -2061,7 +2061,7 @@ Example
 
 
 
-Sets the jquery validation rules in the Dropdownlist.
+Sets the jQuery validation rules in the Dropdownlist.
 
 
 Default Value:
@@ -2113,7 +2113,7 @@ Example
 
 
 
-Specifies the value (text content) for the DropDownList control.
+Specifies the value, text content for the DropDownList control.
 
 
 Default Value:
@@ -2167,7 +2167,7 @@ Example
 
 
 
-Specifies a short hint that describes the expected value of the DropDownList control.
+Specifies a small hint that describes the expected value of the DropDownList control.
 
 
 Default Value:
@@ -2265,11 +2265,11 @@ Example
 
 
 
-The Virtual Scrolling feature is used to display a large amount of records in the DropDownList, that is, when scrolling, an Ajax request is sent to fetch some amount of data from the server dynamically. To achieve this scenario with DropDownList, set the allowVirtualScrolling to true. You can set the itemsCount property that represents the number of items to be fetched from the server on every Ajax request. 
+The Virtual Scrolling feature is used to display a large amount of records in the DropDownList, that is, while scrolling, an Ajax request is sent to fetch some data from the server dynamically. To achieve this scenario with DropDownList, set the allowVirtualScrolling to true. You can set the itemsCount property that represents the number of items to be fetched from the server on every Ajax request. 
 
 This property enables the data to load dynamically in two ways. 
 
-In normal mode, the data is loaded only to the corresponding page (display items). When scrolling some other position, it enables the load on demand with the DropDownList. 
+In normal mode, the data is loaded only to the corresponding page that display items. When scrolling some other position, it enables the load on demand with the DropDownList. 
 
 
 Default Value:
@@ -2349,7 +2349,7 @@ Example
 
 
 
-Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and html attributes for those items. 
+Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and HTML attributes for those items. 
 
 
 
@@ -2876,7 +2876,7 @@ Example
 
 
 
-Enables an Item or set of Items that are disabled in the DropDownList
+Enables an Item or set of Items that are disabled in the DropDownList.
 
 
 
@@ -3089,7 +3089,7 @@ Example
 
 
 
-This method is used to retrieve the items value that are selected in the DropDownList.
+This method is used to retrieve the value of items that are selected in the DropDownList.
 
 
 
@@ -3440,7 +3440,7 @@ Example
 
 
 
-This method shows the DropDownList control with the suggestion popup.
+This method displays the DropDownList control with the suggestion popup.
 
 
 
@@ -3578,7 +3578,7 @@ Example
 
 
 
-This method is used to unselect the list of items in the DropDownList through Index of the items.
+This method is used to unselect the list of items in the DropDownList through the Index of items.
 
 
 
@@ -3792,7 +3792,7 @@ Example
 
 
 
-Fires the action when the list of items is bound to the DropDownList by xhr post calling 
+Fires the action when the list of items is bound to the DropDownList by xhr post calling.
 
 <table class="params">
 <thead>
@@ -3807,49 +3807,49 @@ Fires the action when the list of items is bound to the DropDownList by xhr post
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.count{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Returns number of times trying to fetch the data</td>
+<td class="description last">Returns the number of times trying to fetch the data.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.query{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the query for data retrieval </td>
+<td class="description last">Returns the query for data retrieval.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.request{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the query for data retrieval from the Database </td>
+<td class="description last">Returns the query for data retrieval from the Database.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.result{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description last">Returns the number of items fetched from remote data</td>
+<td class="description last">Returns the number of items fetched from remote data.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.xhr{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the requested data</td>
+<td class="description last">Returns the requested data.</td>
 </tr>
 </tbody>
 </table>
@@ -3893,7 +3893,7 @@ Example
 
 
 
-Fires the action when the xhr post calling failed on remote data binding with the DropDownList control.
+Fires the action when the xhr post calling gets failed on remote data binding with the DropDownList control.
 
 <table class="params">
 <thead>
@@ -3908,31 +3908,31 @@ Fires the action when the xhr post calling failed on remote data binding with th
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the error message</td>
+<td class="description last">Returns the error message.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.query{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the query for data retrieval </td>
+<td class="description last">Returns the query for data retrieval.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -3974,7 +3974,7 @@ Example
 
 
 
-Fires the action when the xhr post calling succeed on remote data binding with the DropDownList control 
+Fires the action when the xhr post calling succeeds on remote data binding with the DropDownList control.
 
 <table class="params">
 <thead>
@@ -3989,49 +3989,49 @@ Fires the action when the xhr post calling succeed on remote data binding with t
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.count{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Returns number of times trying to fetch the data</td>
+<td class="description last">Returns the number of times trying to fetch the data.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.query{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the query for data retrieval </td>
+<td class="description last">Returns the query for data retrieval.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.request{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the query for data retrieval from the Database </td>
+<td class="description last">Returns the query for data retrieval from the Database.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.result{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description last">Returns the number of items fetched from remote data</td>
+<td class="description last">Returns the number of items fetched from remote data.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.xhr{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the requested data</td>
+<td class="description last">Returns the requested data.</td>
 </tr>
 </tbody>
 </table>
@@ -4091,31 +4091,31 @@ Fires the action before the popup is ready to hide.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected text</td>
+<td class="description last">Returns the selected text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected value</td>
+<td class="description last">Returns the selected value.</td>
 </tr>
 </tbody>
 </table>
@@ -4178,31 +4178,31 @@ Fires the action before the popup is ready to be displayed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected text</td>
+<td class="description last">Returns the selected text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected value</td>
+<td class="description last">Returns the selected value.</td>
 </tr>
 </tbody>
 </table>
@@ -4246,7 +4246,7 @@ Example
 {:#events:cascade}
 
 
-Fires when the cascading happens between two DropDownList exactly after the value changes in the first dropdown and before filtering in the second Dropdown.   
+Fires when the cascading occurs between two DropDownList exactly after the value changes in the first dropdown and before filtering in the second Dropdown.   
 
 <table class="params">
 <thead>
@@ -4261,7 +4261,7 @@ Fires when the cascading happens between two DropDownList exactly after the valu
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -4273,25 +4273,25 @@ argument.cascadeModel{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.cascadeValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current selected value in first dropdown.</td>
+<td class="description last">Returns the current selected value in first dropdown.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.requiresDefaultFilter{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the default filter action for second dropdown data should happen or not.</td>
+<td class="description last">Returns the default filter action for second dropdown data should happen or not.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -4355,7 +4355,7 @@ Example
 
 
 
-Fires the action when the DropDownList control’s value is changed. 
+Fires the action when the value of DropDownList control changes.
 
 <table class="params">
 <thead>
@@ -4370,7 +4370,7 @@ Fires the action when the DropDownList control’s value is changed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -4388,7 +4388,7 @@ argument.itemId{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -4400,7 +4400,7 @@ argument.selectedText{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -4474,7 +4474,7 @@ Fires the action when the list item checkbox value is changed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -4492,7 +4492,7 @@ argument.itemId{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -4504,7 +4504,7 @@ argument.selectedText{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -4580,19 +4580,19 @@ Fires the action once the DropDownList is created.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -4637,7 +4637,7 @@ Example
 
 
 
-Fires the action when the list items is bound to the DropDownList. 
+Fires the action when the list items are bound to the DropDownList. 
 
 <table class="params">
 <thead>
@@ -4652,25 +4652,25 @@ Fires the action when the list items is bound to the DropDownList.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the data that is bound to DropDownList</td>
+<td class="description last">Returns the data that is bound to DropDownList.</td>
 </tr>
 </tbody>
 </table>
@@ -4728,19 +4728,19 @@ Fires the action when the DropDownList is destroyed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">its value is set as true,if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -4788,7 +4788,7 @@ Example
 
 
 
-Fires the action, once the popup is closed
+Fires the action once the popup is closed.
 
 <table class="params">
 <thead>
@@ -4803,31 +4803,31 @@ Fires the action, once the popup is closed
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected text</td>
+<td class="description last">Returns the selected text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected value</td>
+<td class="description last">Returns the selected value.</td>
 </tr>
 </tbody>
 </table>
@@ -4872,7 +4872,7 @@ Example
 
 
 
-Fires the action, when the popup is resized. 
+Fires the action when the popup is resized. 
 
 <table class="params">
 <thead>
@@ -4887,19 +4887,19 @@ Fires the action, when the popup is resized.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -4946,7 +4946,7 @@ Example
 
 
 
-Fires the action, once the popup is opened.
+Fires the action once the popup is opened.
 
 <table class="params">
 <thead>
@@ -4961,31 +4961,31 @@ Fires the action, once the popup is opened.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected text</td>
+<td class="description last">Returns the selected text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected value</td>
+<td class="description last">Returns the selected value.</td>
 </tr>
 </tbody>
 </table>
@@ -5029,7 +5029,7 @@ Example
 {:#events:popupResizeStart}
 
 
-Fires the action, when resizing a popup starts. 
+Fires the action when a popup starts to resize. 
 
 <table class="params">
 <thead>
@@ -5044,19 +5044,19 @@ Fires the action, when resizing a popup starts.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5106,7 +5106,7 @@ Example
 
 
 
-Fires the action, when the popup resizing is stopped. 
+Fires the action when the popup stops to resize. 
 
 <table class="params">
 <thead>
@@ -5121,19 +5121,19 @@ Fires the action, when the popup resizing is stopped.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5197,7 +5197,7 @@ Fires the action before filtering the list items that starts in the DropDownList
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5209,7 +5209,7 @@ argument.items{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5221,7 +5221,7 @@ argument.selectedText{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5275,7 +5275,7 @@ Example
 
 
 
-Fires the action, when the list of item is selected.
+Fires the action when the list of item is selected.
 
 <table class="params">
 <thead>
@@ -5290,7 +5290,7 @@ Fires the action, when the list of item is selected.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description last">Set to true when the event has to be cancelled, else false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5308,7 +5308,7 @@ argument.itemId{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description last">Returns the DropDownList model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -5320,7 +5320,7 @@ argument.selectedText{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description last">Returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}

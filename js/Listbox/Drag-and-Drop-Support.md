@@ -74,5 +74,5 @@ Add the following class in CSS.
 
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png" %}
+![]("/js/ListBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png") 
 

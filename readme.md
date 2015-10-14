@@ -1,15 +1,15 @@
-# Documentation Guidelines
+﻿# Documentation Guidelines
 
 This section contains guidelines on naming files, sections, documents and other document elements.
 
 > **NOTE**: Some of the items are marked as TODO which will be documented later.
 
 ## File naming Convention:
-* All files must have `.md` extension.
-* Separate words in file names must be hyphenated
-* File names of the documents must have one or two-word names that describe the material covered in the document. 
-* The full title of the document must be in the file name. 
-* Phrase title and description in a way that users can determine what questions the text will answer, and the material that will be addressed, without reading the content. This eases the time spent looking for answers, and improvises search/scanning, and possibly **SEO**.
+
+* All files should have `.md` extension.
+* Separate words in file names should be hyphenated
+* File names of the documents should have one or two-word names that describe the material covered in the document. 
+* Phrase title and description in a way that users can determine what questions the text will answer, and material that will be addressed, without reading the content. This eases the time spent looking for answers, and improvises search/scanning, and possibly **SEO**.
 * Provide titles and headers in the form of “Using foo” over “How to Foo.”
 
 > For example, at the top section of each MD file,

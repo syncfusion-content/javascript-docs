@@ -55,7 +55,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 
 Execute the above code example to render the following output.
 
-{% include image.html url="/js/Slider/Scale-Settings_images/Scale-Settings_img1.png" %}
+![]("/js/Slider/Scale-Settings_images/Scale-Settings_img1.png") 
 
 ## Enable Small Ticks
 
@@ -105,7 +105,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 Execute the above code example to render the following output.
 
 
-{% include image.html url="/js/Slider/Scale-Settings_images/Scale-Settings_img2.png" %}
+![]("/js/Slider/Scale-Settings_images/Scale-Settings_img2.png") 
 
 ## Small step
 
@@ -160,7 +160,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the “Defau
 Execute the above code example to render the following output.
 
 
-{% include image.html url="/js/Slider/Scale-Settings_images/Scale-Settings_img3.png" %}
+![]("/js/Slider/Scale-Settings_images/Scale-Settings_img3.png") 
 
 In the above example, for “Default Slider” the “**smallStep**” value is specified as “5”, so for each 5 values from the starting value, small ticks is enabled. Also, “**largeStep**” value is specified as “20”, so for each 20 values from the starting value, large ticks is enabled.
 

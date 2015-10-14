@@ -25,6 +25,10 @@ $("#Diagram").ejDiagram({
 });
 {% endhighlight %}
 
+
 {% include image.html url="/js/Diagram/Model_images/Model_img1.png" %}
 
 To explore more model properties, refer to [Model Properties](/js/api/ejdiagram "members").
+
+![]("/js/Diagram/Model_images/Model_img1.png") 
+

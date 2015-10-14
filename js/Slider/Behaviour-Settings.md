@@ -39,7 +39,7 @@ In an HTML page, add a &lt;div&gt; element to render it as a Slider widget.
 
 Execute the above code example to render the following output.
 
-{% include image.html url="/js/Slider/Behaviour-Settings_images/Behaviour-Settings_img1.png" %}
+![]("/js/Slider/Behaviour-Settings_images/Behaviour-Settings_img1.png") 
 
 ## IncrementStep
 
@@ -72,7 +72,7 @@ In an **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** 
 
 Execute the above code example to render the following output.
 
-{% include image.html url="/js/Slider/Behaviour-Settings_images/Behaviour-Settings_img2.png" %}
+![]("/js/Slider/Behaviour-Settings_images/Behaviour-Settings_img2.png") 
 
 In the above example, value for **incrementStep** property is specified as “5” therefore, when you move the **Slider** handle, value “5” increments/decrements from the current **Slider** value.
 

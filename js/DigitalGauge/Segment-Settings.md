@@ -47,7 +47,7 @@ documentation: ug
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Segment-Settings_images/Segment-Settings_img1.png" Caption=""%}
+![]("/js/DigitalGauge/Segment-Settings_images/Segment-Settings_img1.png" Caption="")
 
 ## Dimension Modification
 
@@ -88,5 +88,5 @@ Execute the above code examples to render the **Digital****Gauge** as follows.
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-{% include image.html url="/js/DigitalGauge/Segment-Settings_images/Segment-Settings_img2.png" Caption=""%}
+![]("/js/DigitalGauge/Segment-Settings_images/Segment-Settings_img2.png" Caption="")
 

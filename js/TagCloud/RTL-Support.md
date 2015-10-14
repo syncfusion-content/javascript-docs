@@ -40,7 +40,7 @@ The following screenshot illustrates the **TagCloud** control with RTL support.
 
 
 
-{% include image.html url="/js/TagCloud/RTL-Support_images/RTL-Support_img1.png" %}
+![]("/js/TagCloud/RTL-Support_images/RTL-Support_img1.png") 
 
 
 

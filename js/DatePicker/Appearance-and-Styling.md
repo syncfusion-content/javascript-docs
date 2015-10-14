@@ -76,7 +76,7 @@ The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png"%}
+![]("/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png")
 
 ## Keyboard Navigation
 
@@ -207,5 +207,5 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **DatePicker*
 
 Run the sample, press **[Access key](http://en.wikipedia.org/wiki/Access_key) + J** to focus in the **DatePicker** widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
 
-{% include image.html url="/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png"%}
+![]("/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png")
 

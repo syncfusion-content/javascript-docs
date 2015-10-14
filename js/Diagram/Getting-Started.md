@@ -52,7 +52,11 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 
 3. This creates an empty diagram
 
+
 {% include image.html url="/js/Diagram/Getting-Started_images/Getting-Started_img1.png" %}
+
+![]("/js/Diagram/Getting-Started_images/Getting-Started_img2.png") 
+
 
 ### Create and add Node
 
@@ -347,4 +351,8 @@ Following code examples indicate how to define the default appearance of node an
 
 * The Employee details are displayed in the Diagram as follows.
 
+
 {% include image.html url="/js/Diagram/Getting-Started_images/Getting-Started_img5.png" %}
+
+![]("/js/Diagram/Getting-Started_images/Getting-Started_img3.png") 
+

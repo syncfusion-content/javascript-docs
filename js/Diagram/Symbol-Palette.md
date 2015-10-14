@@ -11,7 +11,11 @@ documentation: ug
 
 The **SymbolPalette** displays a collection of palettes. The Palette shows a set of nodes and connectors. It allows you to drag and drop the nodes and connectors into the Diagram. The Palette has a header that displays the name and also allows you to expand or collapse its items. Each node or connector in the palette is called a Palette Item.
 
+
 ## Create and add symbols to the Palette 
+
+![]("/js/Diagram/Symbol-Palette_images/Symbol-Palette_img1.png") 
+
 
 The following steps illustrate how to add palette items to symbol palette. 
 
@@ -114,6 +118,7 @@ You can add any number of palettes to the `palettes` collection of the symbol pa
 
 {% highlight js %}
 
+
       //Initializes the symbol palette
       $("#symbolpalette").ejSymbolPalette({ 
           //Defines the palette collection 
@@ -125,6 +130,9 @@ You can add any number of palettes to the `palettes` collection of the symbol pa
         });
         
 {% endhighlight %}
+
+![]("/js/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png") 
+
 
 The following image shows the symbol palette with multiple palette Items.
 

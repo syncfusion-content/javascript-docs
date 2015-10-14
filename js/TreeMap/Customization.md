@@ -44,7 +44,7 @@ You can color, all the leaf nodes with the same color by setting the `color` val
 
 
 
-{% include image.html url="/js/TreeMap/Customization_images/Customization_img1.png"%}
+![]("/js/TreeMap/Customization_images/Customization_img1.png")
 
 ### Range Color Mapping
 
@@ -72,7 +72,7 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
 
 
-{% include image.html url="/js/TreeMap/Customization_images/Customization_img2.png"%}
+![]("/js/TreeMap/Customization_images/Customization_img2.png")
 
 ### Desaturation Color Mapping
 
@@ -98,7 +98,7 @@ You can differentiate all the leaf nodes using the `desaturationColorMapping` pr
 
 
 
-{% include image.html url="/js/TreeMap/Customization_images/Customization_img3.png"%}
+![]("/js/TreeMap/Customization_images/Customization_img3.png")
 
 ## Tooltip
 
@@ -152,5 +152,5 @@ You can customize the **Leaf level TreeMapitems** using `leafItemSettings`. The 
 
 
 
-{% include image.html url="/js/TreeMap/Customization_images/Customization_img4.png"%}
+![]("/js/TreeMap/Customization_images/Customization_img4.png")
 

@@ -147,7 +147,7 @@ And also you can add image, image styles, sprite css class, query and html attri
 
 {% endhighlight %}
 
-{% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img1.png" %}
+![]("/js/Toolbar/Data-binding_images/Data-binding_img1.png") 
 
 
 ## Remote data
@@ -185,7 +185,7 @@ To bind Remote data to **Toolbar**, use the following code example.
 {% endhighlight %}
 
 
-{% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img2.png" %}
+![]("/js/Toolbar/Data-binding_images/Data-binding_img2.png") 
 
 ## Knockout binding
 
@@ -241,7 +241,7 @@ The following code example depicts you the way to bind data to the **Toolbar** t
     
  {% endhighlight %}
     
- {% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img4.png"%}
+ ![]("/js/Toolbar/Data-binding_images/Data-binding_img4.png")
     
 
 ## Angular binding
@@ -393,5 +393,5 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 
 {% endhighlight %}
 
-{% include image.html url="/js/Toolbar/Data-binding_images/Data-binding_img6.png"%}
+![]("/js/Toolbar/Data-binding_images/Data-binding_img6.png")
 

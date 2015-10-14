@@ -10,7 +10,11 @@ documentation: ug
 
 # Swim lane
 
+
 Swim-lane Diagrams are typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities. Swimlanes may be arranged either horizontally or vertically.
+
+![]("/js/Diagram/Swim-lane_images/Swim-lane_img1.png") 
+
 
 ## Create a swimlane
 
@@ -217,6 +221,11 @@ You can limit the size of a lane with its `minWidth`, `minHeight`, `maxWidth`, a
 
 {% endhighlight %}
 
+
+The following screenshot is the swim lane generated from the example code.
+![]("/js/Diagram/Swim-lane_images/Swim-lane_img2.png") 
+
+
 #### Disable/Update header
 
 You can disable/update the lane header at runtime with the client side method, `updateNode`. The following code example illustrates how to disable the lane header at run time.
@@ -287,6 +296,7 @@ To add nodes to a lane, You need to add them to the `children` collection of lan
         };
 
 {% endhighlight %}
+
 
 {% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img4.png" %}
 
@@ -379,3 +389,8 @@ N> A default phase is added, when the phase collection of the swimlane is empty.
 ## Limitations
 
 * You cannot add connectors as the children of lanes. 
+
+After adding a `node` into a `lane`, the swim lane will display as follows.
+![]("/js/Diagram/Swim-lane_images/Swim-lane_img3.png") 
+Nodes can also be added into the `lanes` interactively by dropping nodes from the palette. Similarly `connectors` can also be added using `lane`'s `children` or from palette.
+

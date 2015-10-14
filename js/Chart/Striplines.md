@@ -41,7 +41,7 @@ You can create horizontal stripline by adding **stripLine** in the **vertical ax
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Striplines_images/Striplines_img1.png" Caption="Horizontal Striplines"%}
+![]("/js/Chart/Striplines_images/Striplines_img1.png" Caption="Horizontal Striplines")
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/striplines) here to view the Striplines online demo sample.
 
@@ -77,7 +77,7 @@ You can create vertical stripline by adding **stripLine** in the **horizontal ax
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Striplines_images/Striplines_img2.png" Caption="Vertical Striplines"%}
+![]("/js/Chart/Striplines_images/Striplines_img2.png" Caption="Vertical Striplines")
 
 
 ## Customizing Text
@@ -105,7 +105,7 @@ For customizing the stripLine text, use **text** and **font** options.
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Striplines_images/Striplines_img3.png" Caption="Customize stripline text"%}	
+![]("/js/Chart/Striplines_images/Striplines_img3.png" Caption="Customize stripline text")	
 
 **Text Alignment**
 
@@ -131,7 +131,7 @@ Stripline text can be aligned using **textAlignment** property.
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Striplines_images/Striplines_img4.png" Caption="Stripline text alignment"%}
+![]("/js/Chart/Striplines_images/Striplines_img4.png" Caption="Stripline text alignment")
 
 
 ## Customizing Stripline
@@ -161,7 +161,7 @@ For customizing the stripLine styles, use **color**, **opacity**, **borderWidth*
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Striplines_images/Striplines_img5.png" Caption="Customize stripline rectangle"%}
+![]("/js/Chart/Striplines_images/Striplines_img5.png" Caption="Customize stripline rectangle")
 
 
 ## Changing the zorder of stripline
@@ -188,4 +188,7 @@ Stripline **zIndex** property is used to display the stripLine either behind or 
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Striplines_images/Striplines_img6.png" Caption="Stripline zIndex"%} 
+![]("/js/Chart/Striplines_images/Striplines_img6.png")
+
+Stripline zIndex
+{:.caption}
