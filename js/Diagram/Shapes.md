@@ -21,20 +21,20 @@ Diagram provides support to add different kind of nodes. They are as follows.
  
 ## Text
 
-Texts can be added to diagram as text nodes. For text nodes, the `type` should be set as "text". In addition, you need to define the `textBlock` object that is used to define the `text` to be added and to customize the appearance of that text. The following code illustrates how to create a text node.
+Texts can be added to the Diagram as text nodes. For text nodes, the `type` should be set as "text". In addition, you need to define the `textBlock` object that is used to define the `text` to be added and to customize the appearance of that text. The following code illustrates how to create a text node.
 
 {% highlight js %}
 var diagram = ej.datavisualization.Diagram;
-//create a html node
+//Creates a html node
 var nodes = [{
     name: "textNode",
     offsetX: 100,
     offsetY: 100,
     width: 100,
     height: 50,
-    //Set type of the node
+    //Sets type of the node
     type: diagram.Shapes.Text,
-    //To Customize the appearance such as text, font, fill and stroke.
+    //Customizes the appearances such as text, font, fill, and stroke.
     textBlock: {
         text: "Text Node",
         fontColor: "black",
@@ -51,16 +51,16 @@ Diagram allows to add images as image nodes. For image nodes, the `type` should 
 
 {% highlight js %}
 var diagram = ej.datavisualization.Diagram;
-//create an Image node
+//Creates an Image node
 var nodes = [
     {
         name: "imageNode", offsetX: 100, offsetY: 100,
         width: 50, height: 50,
         
-        //Set type of the node as Image
+        //Sets type of the node as Image
         type: diagram.Shapes.Image,
         
-        //Set url of the image
+        //Sets url of the image
         source: "sample/syncfusion.png"
 
     }
@@ -72,7 +72,7 @@ var nodes = [
 
 ## HTML
 
-**Html** elements can be embedded in diagram through **Html** type node. To create a html node, you need to set the `type` of node as "html". In addition, you need to set the id of html template to the `templateId` property of node. The following code illustrates how an **Html** node is created.
+**Html** elements can be embedded in the Diagram through **Html** type node. To create a html node, you need to set the `type` of node as "html". In addition, you need to set the id of html template to the `templateId` property of node. The following code illustrates how an **Html** node is created.
 
 {% highlight html %}
 
@@ -89,16 +89,16 @@ var nodes = [
 
 {% highlight js %}
 
-// Define JSON to create node with HTML element
+// Defines JSON to create node with HTML element
 var nodes = [
     {
         name: "htmlNode", offsetX: 100, offsetY: 100,
         width: 120, height: 60,
 
-        //Set type as Html
+        //Sets type as Html
         type: ej.datavisualization.Diagram.Shapes.Html,
 
-        //Set id of html template
+        //Sets id of html template
         templateId: "htmlTemplate",
         value: "Button"
     }
@@ -108,11 +108,11 @@ var nodes = [
 
 {% include image.html url="/js/Diagram/Shapes_images/Shapes_img61.png" %}
 
-N> HTML node cannot be exported to image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence this limitation. 
+N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation. 
 
 ## Native
 
-**Diagram** provides support to embed **SVG** element into a node. To create a native node, the `type` node should be set as "native". Also, you need to define the id of the svg template using the `templateId` property of node. The following code illustrates how a **Native node** is created.
+**Diagram** provides support to embed **SVG** element into a node. To create a native node, the `type` node should be set as "native". Also, you need to define the id of the svg template by using the `templateId` property of node. The following code illustrates how a **Native node** is created.
 
 {% highlight html %}
 
@@ -129,15 +129,15 @@ N> HTML node cannot be exported to image format, like JPEG, PNG and BMP. It is b
 
 {% highlight js %}
 
-// Define JSON to create node with HTML element
+// Defines JSON to create node with HTML element
 var nodes = [
     {
         name: "NativeNode", offsetX: 100, offsetY: 100,
 
-        //Set type as Native
+        //Sets type as Native
         type: ej.datavisualization.Diagram.Shapes.Native,
 
-        //Set id of SVG element
+        //Sets id of SVG element
         templateId: "svgTemplate",
         labels: [{text: "Mail"}]
     }
@@ -150,7 +150,7 @@ N> Like HTML node, Native node also cannot be exported to image format. Fill col
 
 ## Basic Shapes
 
-The Basic shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the `type` of the node should be set as "basic". And its `shape` property can be set with any one of the inbuilt [basic shapes](/js/api/global "BasicShapes"). 
+The Basic shapes are common shapes that are used to represent the geometrical information visually. To create basic shapes, the `type` of the node should be set as "basic". Its `shape` property can be set with any one of the inbuilts [basic shapes](/js/api/global "BasicShapes"). 
 The following code example illustrates how to create a basic shape. 
 
 {% highlight js %}
@@ -170,13 +170,13 @@ $("#diagram").ejDiagram({
         borderWidth: 2,
         borderColor: "black",
         
-        //Specify the radius of rounded corner
+        //Specifies the radius of rounded corner
         cornerRadius:10,
         
-        //Set the type of shape
+        //Sets the type of shape
         type: ej.datavisualization.Diagram.Shapes.Basic,
         
-        //Set the type of basic shape
+        //Sets the type of basic shape
         shape: ej.datavisualization.Diagram.BasicShapes.Rectangle
     }],
 });
@@ -186,26 +186,26 @@ $("#diagram").ejDiagram({
 {% include image.html url="/js/Diagram/Shapes_images/Shapes_img1.png" %}
 
 N> By default, the `type` property of node is set as "basic".
-N> If the `shape` is not set for a basic shape, it will be considered a "rectangle".
+N> When the `shape` is not set for a basic shape, it is considered a "rectangle".
 
 ### Path
 
-Path node is a commonly used basic shape that allows to visually represent the geometrical information. To create a path node, You need to specify the `type` as "basic" and the `shape` as "path. The `pathData` property of node allows you to define the path to be drawn. The following code illustrates how a Path node is created.
+Path node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, You need to specify the `type` as "basic" and the `shape` as "path. The `pathData` property of node allows you to define the path to be drawn. The following code illustrates how a Path node is created.
 
 {% highlight js %}
 
-// Define JSON to create path node
+// Defines JSON to create path node
 
 var nodes = [
     {
         name: "pathNode", offsetX: 100, offsetY: 100,
         width: 120, height: 60,
-        //By default, the type will be considered as "basic"
+        //By default, the type is considered as "basic"
         
-        //Set shape as Path
+        //Sets shape as Path
         shape: Diagram.BasicShapes.Path,
         
-        //Define svg pathdata
+        //Defines svg pathdata
         pathData: "M35.2441,25 L22.7161,49.9937 L22.7161,0.00657536 L35.2441,25 z M22.7167,25 L-0.00131226,25 M35.2441,49.6337 L35.2441,0.368951 M35.2441,25 L49.9981,25"
     }
 ];
@@ -220,7 +220,7 @@ The list of basic shapes are as follows.
 
 ## Flow Shapes
 
-The flow shapes are used to represent the process flow. It is used for analyzing, designing, managing or for documentation process. To create a flow shape, you need to specify the `type` as "flow". Its `shape` property can be set with any one of the inbuilt [flow shapes](/js/api/global "FlowShapes") and by default, it will be considered as "process". The following code example illustrates how to create a flow shape. 
+The flow shapes are used to represent the process flow. It is used for analyzing, designing, and managing for documentation process. To create a flow shape, you need to specify the `type` as "flow". Its `shape` property can be set with any one of the inbuilts [flow shapes](/js/api/global "FlowShapes") and by default, it is considered as "process". The following code example illustrates how to create a flow shape. 
 
 {% highlight js %}
 
@@ -238,9 +238,9 @@ $("#diagram").ejDiagram({
         offsetY: 100,
         borderWidth: 2,
         borderColor: "black",
-        //Set the type of shape
+        //Sets the type of shape
         type: ej.datavisualization.Diagram.Shapes.Flow,
-        //Set the type of flow shape
+        //Sets the type of flow shape
         shape: ej.datavisualization.Diagram.FlowShapes.Document
     }],
 });
@@ -255,7 +255,7 @@ The list of flow shapes are as follows.
 
 ## BPMN Shapes
 
-BPMN shapes are used to represent the internal business procedure in graphical notation and enables you to communicate the procedures in a standard manner. To create a bpmn shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the inbuilt [BPMN Shapes](/js/api/global "BPMNShapes"). The following code example illustrates how to create a simple business process. 
+BPMN shapes are used to represent the internal business procedure in a graphical notation and enables you to communicate the procedures in a standard manner. To create a bpmn shape, the `type` of the node should be set as "bpmn" and its `shape` should be set as any one of the inbuilts [BPMN Shapes](/js/api/global "BPMNShapes"). The following code example illustrates how to create a simple business process. 
 
 {% highlight js %}
 
@@ -276,11 +276,11 @@ $("#diagram").ejDiagram({
         labels: [{
             text: "End Event"
         }],
-        //Set the type of shape as BPMN
+        //Sets the type of shape as BPMN
         type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Set the type of bpmn shape
+        //Sets the type of bpmn shape
         shape: ej.datavisualization.Diagram.BPMNShapes.Event,
-        //Set type of the Event
+        //Sets type of the Event
         event: ej.datavisualization.Diagram.BPMNEvents.End
     }],
 });
@@ -352,13 +352,13 @@ $("#diagram").ejDiagram({
         offsetY: 100,
         borderWidth: 2,
         borderColor: "black",
-        //Set the type as BPMN
+        //Sets the type as BPMN
         type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Set the shape as BPMN Event
+        //Sets the shape as BPMN Event
         shape: ej.datavisualization.Diagram.BPMNShapes.Event,
-        //Set type of the Event
+        //Sets type of the Event
         event: ej.datavisualization.Diagram.BPMNEvents.End,
-        //Set sub-type of the Event
+        //Sets sub-type of the Event
         trigger: ej.datavisualization.Diagram.BPMNTriggers.None
     }],
 });
@@ -394,7 +394,7 @@ End</td><td>
 <img src="/js/Diagram/Shapes_images/Shapes_img17" alt="" width="80pt" height="80pt" /></td></tr>
 </table>
 
-Event triggers are notated as icons inside the circle and they represent the specific details of the process. The `triggers` property of node allows you to set the type of trigger and by default, it is set as "none". Following table illustrates the type of event triggers.
+Event triggers are notated as icons inside the circle and they represent the specific details of the process. The `triggers` property of node allows you to set the type of trigger and by default, it is set as "none". The following table illustrates the type of event triggers.
 
 <table>
 <tr>
@@ -439,7 +439,7 @@ Timer</td><td>
 
 ### Gateway     
 
-Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `shape` property of node should be set as "gateway" and the `gateway` property can be set with any on of the appropriate [Gateways](/js/api/global "BPMNGateways"). The following code example illustrates how to create a BPMN Gateway.
+Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `shape` property of node should be set as "gateway" and the `gateway` property can be set with any of the appropriate [Gateways](/js/api/global "BPMNGateways"). The following code example illustrates how to create a BPMN Gateway.
 
 {% highlight js %}
 
@@ -458,9 +458,9 @@ $("#diagram").ejDiagram({
         borderWidth: 2,
         borderColor: "black",
         type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Set the shape as Gateway
+        //Sets the shape as Gateway
         shape: ej.datavisualization.Diagram.BPMNShapes.Gateway,
-        //Set the type of BPMN Gateway
+        //Sets the type of BPMN Gateway
         gateway: ej.datavisualization.Diagram.BPMNGateways.None,
     }],
 });
@@ -471,7 +471,7 @@ $("#diagram").ejDiagram({
 
 N> By default, the `gateway` will be set as "none".
 
-There are several types of gateways and are tabulated below
+There are several types of gateways as tabulated
 
 <table>
 <tr>
@@ -502,13 +502,13 @@ Parallel</td><td>
 
 The activity is the task that is performed in a business process. It is represented by a rounded rectangle.
 
-There are two types of activity .They are listed as follows.
+There are two types of activities .They are listed as follows.
 
   * Task – Occurs within a process and it is not broken down to finer level of detail.
 
   * Subprocess – Occurs within a process and it is broken down to finer level of detail.
 
-To create a BPMN activity, you need to set the `shape` as "activity". You also need to set the type of the [activity](/js/api/global "BPMNActivity") using the `activity` property of node. By default, the type of the `activity` will be set as "task". The following code example illustrates how to create an activity.
+To create a BPMN activity, you need to set the `shape` as "activity". You also need to set the type of the [activity](/js/api/global "BPMNActivity") by using the `activity` property of node. By default, the type of the `activity` is set as "task". The following code example illustrates how to create an activity.
 
 {% highlight js %}
 
@@ -527,9 +527,9 @@ $("#diagram").ejDiagram({
         borderWidth: 2,
         borderColor: "black",
         type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Set the bpmn shape as activity
+        //Sets the bpmn shape as activity
         shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-        //Set the type of BPMN Activity
+        //Sets the type of BPMN Activity
         activity: ej.datavisualization.Diagram.BPMNActivity.Task,
     }],
 });
@@ -561,11 +561,11 @@ $("#diagram").ejDiagram({
         borderWidth: 2,
         borderColor: "black",
         type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Set the type of bpmn shape
+        //Sets the type of bpmn shape
         shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-        //Set the type of BPMN Activity
+        //Sets the type of BPMN Activity
         activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-        //Set the type of BPMN Task Activity
+        //Sets the type of BPMN Task Activity
         task: {
             type: ej.datavisualization.Diagram.BPMNTasks.Send
         }
@@ -576,7 +576,7 @@ $("#diagram").ejDiagram({
 
 {% include image.html url="/js/Diagram/Shapes_images/Shapes_img34.png" %}
 
-The various types of BPMN tasks are tabulated below.
+The various types of BPMN tasks are tabulated as follows.
 
 <table>
 <tr>
@@ -632,11 +632,11 @@ var node = {
     borderWidth: 2,
     borderColor: "black",
     type: ej.datavisualization.Diagram.Shapes.BPMN,
-    //Set the type of BPMN shape    
+    //Sets the type of BPMN shape    
     shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-    //Set the type of BPMN Activity    
+    //Sets the type of BPMN Activity    
     activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-    //Set the type of bpmn loops.
+    //Sets the type of bpmn loops.
     task: {
         loop: ej.datavisualization.Diagram.BPMNLoops.Standard
     }
@@ -653,9 +653,9 @@ node = {
     borderColor: "black",
     type: ej.datavisualization.Diagram.Shapes.BPMN,
     shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-    //Set the type of BPMN activity
+    //Sets the type of BPMN activity
     activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-    //Set the type of bpmn loops.
+    //Sets the type of bpmn loops.
     subProcess: {
         loop: ej.datavisualization.Diagram.BPMNLoops.Standard
     }
@@ -666,7 +666,7 @@ diagram.add(node);
 
 {% include image.html url="/js/Diagram/Shapes_images/Shapes_img43.png" %}
 
-The table shown below contains various types of BPMN loops.
+The following table contains various types of BPMN loops.
 
 <table>
 <tr>
@@ -709,9 +709,9 @@ nodes.push({
     borderColor: "black",
     type: ej.datavisualization.Diagram.Shapes.BPMN,
     shape: ej.datavisualization.Diagram.BPMNShapes.Activity
-        //Set the type of BPMN Activity
+        //Sets the type of BPMN Activity
     activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-    //Create compensation task
+    //Creates compensation task
     task: {
         compensation: true
     }
@@ -727,9 +727,9 @@ nodes.push({
     borderColor: "black",
     type: ej.datavisualization.Diagram.Shapes.BPMN,
     shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-    //Set the type of BPMN Activity
+    //Sets the type of BPMN Activity
     activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-    //Create compensation subprocess 
+    //Creates compensation subprocess 
     subProcess: {
         compensation: true
     }
@@ -750,7 +750,7 @@ $("#diagram").ejDiagram({
 
 #### Call
 
-A call activity is a global sub-process which is reused at various points of the business flow and you can set it with the `call` property of task.
+A call activity is a global sub-process that is reused at various points of the business flow and you can set it with the `call` property of task.
 
 {% highlight js %}
 
@@ -770,9 +770,9 @@ $("#diagram").ejDiagram({
         borderColor: "black",
         type: ej.datavisualization.Diagram.Shapes.BPMN,
         shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-        //Set the type of BPMN Activity
+        //Sets the type of BPMN Activity
         activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-        //create a call task
+        //Creates a call task
         task: {
             call: true
         }
@@ -806,7 +806,7 @@ $("#diagram").ejDiagram({
         type: ej.datavisualization.Diagram.Shapes.BPMN,
         shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
         activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-        //create ad hoc subprocess
+        //Creates ad hoc subprocess
         subProcess: {
             adhoc: true
         }
@@ -840,7 +840,7 @@ $("#diagram").ejDiagram({
         type: ej.datavisualization.Diagram.Shapes.BPMN,
         shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
         activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-        //add boundary to a subprocess 
+        //Adds boundary to a subprocess 
         subProcess: {
             boundary: ej.datavisualization.Diagram.BPMNBoundary.Call
         }
@@ -849,7 +849,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-The table shown below contains various types of BPMN boundaries.
+The following table contains various types of BPMN boundaries.
 
 <table>
 <tr>
@@ -872,7 +872,7 @@ Default</td><td>
 
 ### Data
 
-A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a data object, you need to set the `shape` as "dataobject". You can create multiple instances of data object, with the `collection` property of node.
+A data object represents information flowing through the process, such as data placed into the process, data resulting from the process, data that needs to be collected, or data that must be stored. To define a data object, set the `shape` as "dataobject". You can create multiple instances of data object with the `collection` property of node.
 
 {% highlight js %}
 
@@ -890,11 +890,11 @@ $("#diagram").ejDiagram({
         offsetY: 100,
         borderWidth: 2,
         borderColor: "black",
-        //Set the type of the shape
+        //Sets the type of the shape
         type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Set the type of BPMN Shape
+        //Sets the type of BPMN Shape
         shape: ej.datavisualization.Diagram.BPMNShapes.DataObject,
-        //Set collection as true if Dataobject is not a Single instance
+        //Sets collection as true when Dataobject is not a Single instance
         collection: true
     }]
 });
@@ -905,7 +905,7 @@ $("#diagram").ejDiagram({
 
 ### Datasource
 
-DataSource is used to store or access data that’s associated with a business process. To create a data source, you need to set the `shape` as "datasource". The following code example illustrate how to create data source.
+DataSource is used to store or access data associated with a business process. To create a data source, set the `shape` as "datasource". The following code example illustrate how to create data source.
 
 {% highlight js %}
 
@@ -923,9 +923,9 @@ $("#diagram").ejDiagram({
         offsetY: 100,
         borderWidth: 2,
         borderColor: "black",
-        //Set type of the shape
+        //Sets type of the shape
         type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Set the type of bpmn shape
+        //Sets the type of bpmn shape
         shape: ej.datavisualization.Diagram.BPMNShapes.DataSource,
     }]
 });
