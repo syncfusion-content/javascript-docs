@@ -106,7 +106,7 @@ Marker, data label and fill color of each point in a series can be customized in
 
 ## Chart area customization
 
-### Customizing chart background
+### Customize chart background
 
 The Chart background can be customized by using the [background](../api/ejchart#members:background) property of the Chart. To customize the chart border, use [border](../api/ejchart#members:border) option of the chart. 
 
@@ -204,9 +204,9 @@ The Chart area background can be customized by using the [background](../api/ejc
 {% include image.html url="/js/Chart/Appearance_images/Appearance_img7.png" Caption="Add background color to chart area"%}
 
 
-### Customizing chart area grid bands
+### Customize chart area grid bands
 
-You can provide different color for alternate grid rows and columns formed by the grid lines in the chart area by using the [alternateGridBand](../api/ejchart#members:primaryxaxis-alternategridband) property of axis. The properties [odd](../api/ejchart#members:primaryxaxis-alternategridband-odd) and [even](../api/ejchart#members:primaryxaxis-alternategridband-even) are used to customize the grid bands at odd and even positions respectively. 
+You can provide different color for alternate grid rows and columns formed by the grid lines in the chart area by using the [alternateGridBand](../api/ejchart#members:primaryxaxis-alternategridband) property of the axis. The properties [odd](../api/ejchart#members:primaryxaxis-alternategridband-odd) and [even](../api/ejchart#members:primaryxaxis-alternategridband-even) are used to customize the grid bands at odd and even positions respectively. 
 
 {% highlight js %}
 
@@ -239,7 +239,7 @@ You can provide different color for alternate grid rows and columns formed by th
 
 ### Animation
 
-You can enable animation by using the [enableAnimation](../api/ejchart#members:series-enableanimation) property of series. This animates the chart series on two occasions – when the chart is loaded for the first time or whenever you change the series type by using the type property.
+You can enable animation by using the [enableAnimation](../api/ejchart#members:series-enableanimation) property of the series. This animates the chart series on two occasions – when the chart is loaded for the first time or whenever you change the series type by using the type property.
 
 {% highlight js %}
 
