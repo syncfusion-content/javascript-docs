@@ -62,7 +62,7 @@ $('#Schedule').ejSchedule();
 ### allowDragDrop 'boolean'
 {:#members:allowdragdrop}
 
-When set to true, Schedule allows the appointments to be dragged and dropped at the required time.
+When set to true, Schedule allows the appointments to be dragged and dropped at required time.
 
 #### Default Value
 
@@ -4400,7 +4400,7 @@ Triggers before the action in Schedule begins.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4447,7 +4447,7 @@ Triggers before the action in Schedule begins.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4494,7 +4494,7 @@ Triggers before the action in Schedule begins.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4539,7 +4539,7 @@ Triggers before the action in Schedule begins.
                             <td class="description">Returns the save appointment value.</td>
                         </tr>                                                                                                                                  <tr>
                             <td class="name">model</td>                                                                                                                                                                                                               <td class="type">object</td>
-                            <td class="description">Returns the schedule model.</td>
+                            <td class="description">Returns the Schedule model.</td>
                         </tr>
                         <tr>
                             <td class="name">requestType</td>
@@ -4581,7 +4581,7 @@ Triggers before the action in Schedule begins.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4623,7 +4623,7 @@ Triggers before the action in Schedule begins.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4665,7 +4665,7 @@ Triggers before the action in Schedule begins.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4707,7 +4707,7 @@ Triggers before the action in Schedule begins.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4761,7 +4761,7 @@ Triggers after the action gets completed in Schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when view change action completed:
+        <td class="description">Event parameters when view change action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4784,7 +4784,7 @@ Triggers after the action gets completed in Schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -4803,7 +4803,7 @@ Triggers after the action gets completed in Schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when date navigate action completed:
+        <td class="description">Event parameters when date navigate action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4826,7 +4826,7 @@ Triggers after the action gets completed in Schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -4845,7 +4845,7 @@ Triggers after the action gets completed in Schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when date change by calendar action completed:
+        <td class="description">Event parameters when date change by calendar action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4868,7 +4868,7 @@ Triggers after the action gets completed in Schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -4887,7 +4887,7 @@ Triggers after the action gets completed in Schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when appointment save action completed:
+        <td class="description">Event parameters when appointment save action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4910,7 +4910,7 @@ Triggers after the action gets completed in Schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -4929,7 +4929,7 @@ Triggers after the action gets completed in Schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when appointment edit action completed:
+        <td class="description">Event parameters when appointment edit action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4952,7 +4952,7 @@ Triggers after the action gets completed in Schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -4971,7 +4971,7 @@ Triggers after the action gets completed in Schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when appointment delete action completed:
+        <td class="description">Event parameters when appointment delete action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4994,7 +4994,7 @@ Triggers after the action gets completed in Schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -5013,7 +5013,7 @@ Triggers after the action gets completed in Schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when appointment dragging action completed:
+        <td class="description">Event parameters when appointment dragging action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -5036,7 +5036,7 @@ Triggers after the action gets completed in Schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -5055,7 +5055,7 @@ Triggers after the action gets completed in Schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when appointment resizing action completed:
+        <td class="description">Event parameters when appointment resizing action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -5078,7 +5078,7 @@ Triggers after the action gets completed in Schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -5148,7 +5148,7 @@ Triggers after the appointment is clicked.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5226,12 +5226,12 @@ Triggers after the appointment is deleted.
         <tr>
             <td class="name">argument.appointment</td>
             <td class="type">object</td>
-            <td class="description">Returns the deleted appintment object.</td>
+            <td class="description">Returns the deleted appointment object.</td>
         </tr>
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5316,7 +5316,7 @@ Triggers after the appointment is edited.
         <tr>
             <td class="name">argument.appointment</td>
             <td class="type">object</td>
-            <td class="description">Returns the edited appintment object.</td>
+            <td class="description">Returns the edited appointment object.</td>
         </tr>
         <tr>
             <td class="name">argument.cancel</td>
@@ -5326,7 +5326,7 @@ Triggers after the appointment is edited.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5420,7 +5420,7 @@ Triggers after the appointment is hovered.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5501,7 +5501,7 @@ Triggers after the appointment is saved.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5521,12 +5521,12 @@ Triggers after the appointment is saved.
         <tr>
             <td class="name">argument.appointment</td>
             <td class="type">object</td>
-            <td class="description">Returns the saved appintment object.</td>
+            <td class="description">Returns the saved appointment object.</td>
         </tr>
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5571,7 +5571,7 @@ Triggers before the appointment window is opened.
         <tr>
             <td class="name">argument.object</td>
             <td class="type">object</td>
-            <td class="description">returns the object of appointmentWindowOpen event while selecting the detail option from quick window.</td>
+            <td class="description">Returns the object of appointmentWindowOpen event while selecting the detail option from quick window.</td>
         </tr>
         <tr>
             <td class="name">argument.cancel</td>
@@ -5586,7 +5586,7 @@ Triggers before the appointment window is opened.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.originalEventType</td>
@@ -5631,7 +5631,7 @@ Triggers before the appointment window is opened.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5713,7 +5713,7 @@ Triggers before the context menu opens up.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the chedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5773,7 +5773,7 @@ Triggers after the cell is clicked.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.startTime</td>
@@ -5845,7 +5845,7 @@ Triggers after the cell is clicked twice.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.startTime</td>
@@ -5920,7 +5920,7 @@ Triggers after the cell is hovered.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.target</td>
@@ -5979,7 +5979,7 @@ Triggers while the appointment is being dragged over the workcells.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.target</td>
@@ -6149,7 +6149,7 @@ Triggers when the appointment is dropped.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -6244,7 +6244,7 @@ Triggers after the context menu is clicked.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -6290,7 +6290,7 @@ Triggers after the Schedule view or date is navigated.
             <td class="name">argument</td>
             <td class="type">object</td>
             <td class="description">Event parameters when view changes:
-            Returns the object of schedule view navigation event.
+            Returns the object of Schedule view navigation event.
             <table class="params">
                 <thead>
                     <tr>
@@ -6313,7 +6313,7 @@ Triggers after the Schedule view or date is navigated.
                     <tr>
                         <td class="name">argument.model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">argument.currentView</td>
@@ -6341,7 +6341,7 @@ Triggers after the Schedule view or date is navigated.
         </tr>
             <td class="name">argument</td>
             <td class="type">object</td>
-            <td class="description">Returns the object of previous or next date navigation event:
+            <td class="description">Returns the object of previous or next date navigation event.
             <table class="params">
                 <thead>
                     <tr>
@@ -6359,17 +6359,17 @@ Triggers after the Schedule view or date is navigated.
                     <tr>
                         <td class="name">argument.model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">argument.currentDate</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the new date of the schedule.</td>
+                        <td class="description">Returns the new date of the Schedule.</td>
                     </tr>
                     <tr>
                         <td class="name">argument.previousDate</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the previous date of the schedule.</td>
+                        <td class="description">Returns the previous date of the Schedule.</td>
                     </tr>
                     <tr>
                         <td class="name">argument.target</td>
@@ -6407,17 +6407,17 @@ Triggers after the Schedule view or date is navigated.
                 <tr>
                     <td class="name">argument.model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">argument.currentDate</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the new date of the schedule.</td>
+                    <td class="description">Returns the new date of the Schedule.</td>
                 </tr>
                 <tr>
                     <td class="name">argument.previousDate</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the previous date of the schedule.</td>
+                    <td class="description">Returns the previous date of the Schedule.</td>
                 </tr>
                 <tr>
                     <td class="name">argument.target</td>
@@ -6474,7 +6474,7 @@ Triggers when the reminder is raised for an appointment.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -6538,7 +6538,7 @@ Triggers while resizing the appointment.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -6700,7 +6700,7 @@ Triggers when appointment resize stops.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.target</td>
