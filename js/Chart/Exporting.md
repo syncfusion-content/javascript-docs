@@ -106,10 +106,10 @@ To convert the chart data from client to server-side, refer to the following ste
 
 {% endhighlight %}
 
-4.Host the MVC application in your server and get the link for exporting action method
+4. Host the MVC application in your server and get the link for exporting action method
 Example: http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport
 
-5.For passing client data to server-side, you need to call the [export]{../api/ejchart#methods:export} method and should pass export type (either image or excel) and server-side **URL** as an argument. The third argument of the export method is a Boolean property that specifies whether the current chart should be exported or all charts in page should be exported.
+5. To pass client data to server-side, you need to call the [export]{../api/ejchart#methods:export} method and pass export type (either image or excel) and server-side **URL** as an argument. The third argument of the export method is a Boolean property that specifies whether only the current chart should be exported or all charts in page should be exported.
 
 
 {% highlight html %}
@@ -153,7 +153,7 @@ Example: http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExpor
 
 ## Multiple Chart Exporting
 
-EjChart supports exporting more than one charts in a page, with the *third* argument for [export]{../api/ejchart#methods:export} method.
+EjChart supports exporting more than one charts in a page, with the *third* argument for the [export]{../api/ejchart#methods:export} method.
 
 N> Refer to the MultipleExportType.AppendToSheet, MultipleExportType.NewSheet. 
 
