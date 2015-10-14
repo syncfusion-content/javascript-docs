@@ -9,11 +9,11 @@ documentation: ug
 
 # Map Elements
 
-Map control contains a set of map elements, including shapes, bubbles, markers, legend, labels and data items that can be visualized with customized appearance showing additional information on the map using databound datas.
+Map control contains a set of map elements such as shapes, bubbles, markers, legend, labels and data items that can be visualized with the customized appearance showing additional information on the map by using the databound datas.
 
-##Markers
+## Markers
 
-Markers are notes that is used to leave some message on the map. 
+Markers are notes used to leave some message on the map. 
 
 There are two ways to set marker for map.
 
@@ -21,9 +21,9 @@ There are two ways to set marker for map.
 
 2. Adding marker objects to map.
 
-###Marker and Marker Template 
+### Markers and Marker Template 
 
-The `markers` property has a list of objects that contains the data for Annotation. You can visualize these data by using `markerTemplate` property.
+The `markers` property has a list of objects that contains the data for Annotation. By default, it displays the bound data at the specified latitude and longitude. The `markerTemplate` property is used for customizing the template for markers.	
 
 {% highlight js %}
 
@@ -57,7 +57,7 @@ The `markers` property has a list of objects that contains the data for Annotati
 
 {% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img1.png"%}
 
-###Adding Marker objects to map
+### Adding Marker objects to the map
 
 Without datasource, n number of markers can be added to shape layers with `markers` property. Each marker object contains the following list of properties.
 
@@ -101,13 +101,13 @@ Without datasource, n number of markers can be added to shape layers with `marke
 
 {% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img2.png"%}
 
-##Bubbles
+## Bubbles
 
 Bubbles in the **Maps** control represent the underlying data values of the map. Bubbles are scattered throughout the map shapes that contain bound values.
 
 Bubbles are included when data binding and the `bubbleSettings` is set to the shape layers. 
 
-###Properties
+### Properties
 
 
 <table>
@@ -158,11 +158,11 @@ String</td><td>
 Gets or sets the tooltip template for bubbles.</td></tr>
 </table>
 
-###Adding Bubbles to a Map
+### Add Bubbles to the Map
 
 To add bubbles to a map, the bubble marker setting is added to the shape file layer. Create the Model and ViewModel as illustrated in the Data Binding topic and add the following code. Also set the `maxValue`, `minValue`, and `valuePath` properties as illustrated in the following code sample.
 
-N>Tooltip and Color Mappings for bubble is to be set as similar to tooltip and color mappings set in layers and ShapeSettings. For more details, refer Tooltip and Color Mappings section._
+N>Tooltip and Color Mappings for bubble is to be set as similar to the tooltip and color mappings set in the layers and shapeSettings. For more details, refer to the Tooltip and Color Mappings section._
 
 
 
@@ -203,15 +203,15 @@ N>Tooltip and Color Mappings for bubble is to be set as similar to tooltip and c
 
 {% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img3.png"%}
 
-##Legend
+## Legend
 
-A legend is a key used on a map, contains swatches of symbols with descriptions. It provides valuable information for interpreting what the map is displaying you, and can be represented in various colors, shapes or other identifiers based on the data. It gives a breakdown of what each symbol represents throughout the map.
+A legend is a key used on a map that contains swatches of symbols with descriptions. It provides valuable information for interpreting what the map is displaying and can be represented in various colors, shapes or other identifiers based on the data. It gives a breakdown of what each symbol represents throughout the map.
 
-###Visibility
+### Visibility
 
-The Legends can be made visible by setting the `showLegend` property of legendSettings. 
+The Legends can be made visible by setting the `showLegend` property of legendSettings to true. 
 
-###Positioning of Legend
+### Positioning of the Legend
 
 The legend can be positioned in two ways.
 
@@ -219,11 +219,11 @@ The legend can be positioned in two ways.
 
 2. Dock Position.
 
-####Absolute Position
+#### Absolute Position
 
 Based on the margin values of X and Y-axes, the Map legends can be positioned with the support of `positionX` and `positionY` properties available in `legendSettings`. For positioning the legend based on margins corresponding to a map, `position` value is set as ‘_none_’.
 
-####Dock Position
+#### Dock Position
 
 The map legends can be positioned in following locations within the container.
 
@@ -251,11 +251,11 @@ The map legends can be positioned in following locations within the container.
 
 You can set this option by using `position` property in `legendSettings`.
 
-###Legend Size
+### Legend Size
 
-The map legend size can be modified using `height` and `width` properties in legendSettings.
+The map legend size can be modified by using the `height` and `width` properties in `legendSettings`.
 
-###Legend for Shapes
+### Legend for Shapes
 
 The Layer shape type legends can be generated for each color mappings in shape settings. 
 
@@ -287,15 +287,15 @@ N>Here, Equal Color Mapping code sample for shapeSettings with color mappings is
 
 {% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img4.png"%}
 
-###Interactive Legend
+### Interactive Legend
 
 The legends can be made interactive with an arrow mark indicating the exact range color in the legend when the mouse hovers over the corresponding shapes. You can enable this option by setting `mode` property in `legendSettings` value as “interactive” and default value of `mode` property is “default” to enable the normal legend.
 
-####Title for Interactive Legend
+#### Title for Interactive Legend
 
 You can provide the title for interactive legend by using `title` property in `legendSettings`.
 
-####Label for Interactive Legend
+#### Label for Interactive Legend
 
 You can provide the left and right labels to interactive legend by using `leftLabel` and `rightLabel` properties in `legendSettings`. 
 
@@ -332,7 +332,7 @@ N>Here, Range Color Mapping code snippet for shapeSettings with color mappings i
 
 {% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img5.png"%}
 
-###Bubble Legend
+### Bubble Legend
 
 A bubble legend feature is used to provide the key (legend) for another map element bubble. You can activate the Bubble legend by setting the enum `type` in `legendSettings` as “bubble” and this enables you to easily identify what value a particular bubble is representing.
 

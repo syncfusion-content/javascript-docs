@@ -9,9 +9,9 @@ documentation: ug
 
 # Customized tools option
 
-In RichTextEditor, toolbars are customizable. When you want to include a new tool item with new functionality that is not available in the existing **RTE** toolbar items, it is possible to create a new tool item using the custom tool option. The following example illustrates how to insert an **HTML**, **JavaScript**, or **CSS** code in the editing area as a code block. 
+In RichTextEditor, toolbars are customizable. To include a new tool item with new functionality that is not available in the existing **RTE** toolbar items, you can create a new tool item by using the custom tool option. The following example illustrates how to insert an **HTML**, **JavaScript**, or **CSS** code in the editing area as a code block. 
 
-Add the following code in your **HTML** page to render **RTE** with new tool item.
+Add the following code example in your **HTML** page to render **RTE** with new tool item.
 
 
 {% highlight html %}
@@ -61,10 +61,11 @@ Add the following code in your **HTML** page to render **RTE** with new tool ite
     //Add the following code in your script section to render RTE and set the action of the new tool item.
     $(function() {
        $("#rteSample").ejRTE({
-          toolsList: ["customTool"],
+          toolsList: ["customTools"],
           tools: {
-             customTool: [{
+             customTools: [{
                 name: "codeInsert",
+                text: "codeInsert",
                 tooltip: "Insert code snippets ",
                 css: "codeInsert",
                 action: function() {
@@ -106,11 +107,11 @@ Add the following code in your **HTML** page to render **RTE** with new tool ite
 
 The following screenshot demonstrates the functionality of new tool item.
 
-{% include image.html url="/js/RichTextEditor/Customized-tools-option_images/Customized-tools-option_img1.png" %}
+![](Customized-tools-option_images/Customized-tools-option_img1.png)
 
 ## Remove the tool item
 
-In some cases you may have to remove a particular item from existing toolbar item of RTE. It can easily be done by using the property **removeToolBarItem** in **RTE**. Consider a content blog that does not require "insert table" option. In that case, you can remove the “**createTable**” tool item from the toolbar. The following code illustrates how to remove the “**createTable**” tool item from list of toolbars.
+In certain cases, to remove a particular item from the existing toolbar item of RTE, use the **removeToolBarItem** property in **RTE**. Consider a content blog that does not require "insert table" option. In that case, you can remove the “**createTable**” tool item from the toolbar. The following code example illustrates how to remove the “**createTable**” tool item from list of toolbars.
 
 Add the following code in your **HTML** page.
 
@@ -130,9 +131,9 @@ Add the following code in your **HTML** page.
     $(function() {
        $("#rteSample").ejRTE();
        var rteeObj = $("#rteSample").data("ejRTE");
-       rteeObj.removeToolbarItem("rteSamplecreateTable"); // remove toolbar item
+       rteeObj.removeToolbarItem("createTable"); // remove toolbar item
     });
 {% endhighlight %}
 
-{% include image.html url="/js/RichTextEditor/Customized-tools-option_images/Customized-tools-option_img2.png" %}
+![](Customized-tools-option_images/Customized-tools-option_img2.png)
 
