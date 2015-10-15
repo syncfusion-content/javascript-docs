@@ -14,7 +14,7 @@ This section explains briefly about how to create a **WaitingPopup** in your app
 
 The following screenshot illustrates the functionality of a **WaitingPopup** with login page scenario.
 
-{% include image.html url="/js/WaitingPopup/Getting-Started_images/Getting-Started_img1.png" %}
+![]("/js/WaitingPopup/Getting-Started_images/Getting-Started_img1.png") 
 
 You can give the Username and Password in the **login page**. When you click the **Login** button, you get the **WaitingPopup**. After loading, the alert box pops up with the message “Signed in successfully”.
 
@@ -127,7 +127,7 @@ You can give the Username and Password in the **login page**. When you click the
 The following screenshot displays a **User** **login**.
 
 
-{% include image.html url="/js/WaitingPopup/Getting-Started_images/Getting-Started_img2.png" %}
+![]("/js/WaitingPopup/Getting-Started_images/Getting-Started_img2.png") 
 
 ## Add WaitingPopup Widget
 
@@ -158,5 +158,5 @@ The following screenshot displays a **User** **login**.
 
  The following screenshot shows the output of the above code example.
 
-{% include image.html url="/js/WaitingPopup/Getting-Started_images/Getting-Started_img3.png" %}
+![]("/js/WaitingPopup/Getting-Started_images/Getting-Started_img3.png") 
 

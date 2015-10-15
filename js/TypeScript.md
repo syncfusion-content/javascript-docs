@@ -28,19 +28,19 @@ To work with [TypeScript](http://www.typescriptlang.org/Handbook), the below men
 ## Getting Started
 
 Start Visual Studio 2013 and Create a new TypeScript Application from `File|New|Project` and `save` it with a meaningful name as shown below (Select the **TypeScript** option, which is available by default in the listed Templates on the left side),
-{% include image.html url="/js/TypeScript_images/TypeScript_img1.png" %}
+![]("/js/TypeScript_images/TypeScript_img1.png") 
 
 Now, you need to add the required Scripts and style sheets into your Project, as shown below – Copy the required Scripts and themes from the installed location on your machine into your new TypeScript application for rendering the Syncfusion widgets (steps for copying the required scripts and stylesheets are described in the [manual reference](/js/control-initialization#manual-reference-of-scripts-and-stylesheets-in-a-html-page) section of the Control Initialization topic),
-{% include image.html url="/js/TypeScript_images/TypeScript_img2.png" Caption="Scripts & themes folder copied into current project" %}
+![]("/js/TypeScript_images/TypeScript_img2.png" Caption="Scripts & themes folder copied into current project") 
 
 Add the ej.widgets.all.d.ts and jquery.d.ts type-definition files in your project and refer it in the app.ts file of your project as shown below,
-{% include image.html url="/js/TypeScript_images/TypeScript_img3.png" %}
+![]("/js/TypeScript_images/TypeScript_img3.png") 
 
 Now, refer these two files within the app.ts file (before referring these files, remove all the unwanted content in that app.ts file) as shown below,
-{% include image.html url="/js/TypeScript_images/TypeScript_img4.png" %}
+![]("/js/TypeScript_images/TypeScript_img4.png") 
 
 Within the **Index.html** page, define the container name for the specific Syncfusion widget to be used and also make the other Script and css references in this page as shown below,
-{% include image.html url="/js/TypeScript_images/TypeScript_img5.png" %}
+![]("/js/TypeScript_images/TypeScript_img5.png") 
 
 Now build your application, so that the **app.js** file is automatically generated and got added to your project (User have nothing to do with this file). Now, whatever code changes that you make in **app.ts** file will be reflected in app.js file automatically. 
 
@@ -53,15 +53,15 @@ Usually, the Syncfusion widget initialization is done within this **app.ts** fil
 
 Initialization of Syncfusion widgets can be done through the instance created for the required Widget’s classes. 
 
-{% include image.html url="/js/TypeScript_images/TypeScript_img6.png" Caption="Initializing DatePicker widget through ej.DatePicker class" %}
+![]("/js/TypeScript_images/TypeScript_img6.png" Caption="Initializing DatePicker widget through ej.DatePicker class") 
 
-{% include image.html url="/js/TypeScript_images/TypeScript_img7.png" Caption="Accessing DatePicker methods through the DatePicker instance" %}
+![]("/js/TypeScript_images/TypeScript_img7.png" Caption="Accessing DatePicker methods through the DatePicker instance") 
 
 ### jQuery Interface 
 
 Here, the widgets are initialized using the plug-in name, by passing all the required widget properties to it. The property names can be accessible through intelliSense and while providing input values to those properties – if any wrong data values were assigned to the properties by the user, then it will be automatically notified to the user at the compile time itself with an error message.
-{% include image.html url="/js/TypeScript_images/TypeScript_img8.png" Caption="Initializing the DatePicker widget through intelliSense" %}
+![]("/js/TypeScript_images/TypeScript_img8.png" Caption="Initializing the DatePicker widget through intelliSense") 
 
-{% include image.html url="/js/TypeScript_images/TypeScript_img9.png" Caption="Configuring the DatePicker properties" %}
+![]("/js/TypeScript_images/TypeScript_img9.png" Caption="Configuring the DatePicker properties") 
 
-{% include image.html url="/js/TypeScript_images/TypeScript_img10.png" Caption="Accessing the DatePicker methods through the widgets’ object" %}
+![]("/js/TypeScript_images/TypeScript_img10.png" Caption="Accessing the DatePicker methods through the widgets’ object") 

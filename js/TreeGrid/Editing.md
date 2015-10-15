@@ -32,5 +32,5 @@ The following code example shows you how to enable `cellEditing` in TreeGrid�
 
 The output of the TreeGrid with `cellEditing` is as follows.
 
-{% include image.html url="/js/TreeGrid/Editing_images/Editing_img1.png"%}
+![]("/js/TreeGrid/Editing_images/Editing_img1.png")
 

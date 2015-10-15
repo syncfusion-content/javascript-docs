@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Localization
 description: localization
@@ -157,6 +157,9 @@ Add the following code example in your **HTML** section to initialize the **RTE*
 {% endhighlight %}
 
 
+
 ![](Localization_images/Localization_img1.png)
+
+
 
 

@@ -22,7 +22,7 @@ Apply the plugin and property assigning to the **PercentageTextBox** widget elem
 
 To know more details about the **Angular binding**, refer the following link location,
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 The following example depicts the way to bind data to the **PercentageTextBox** widget through **angular support**.
 
@@ -76,7 +76,7 @@ The following example depicts the way to bind data to the **PercentageTextBox** 
 
 The output of **PercentageTextBox** controls with **two-way angular binding** is as follows.
 
-{% include image.html url="/js/PercentageTextBox/Angular-Support_images/Angular-Support_img1.png" %}
+![]("/js/PercentageTextBox/Angular-Support_images/Angular-Support_img1.png") 
 
-{% include image.html url="/js/PercentageTextBox/Angular-Support_images/Angular-Support_img2.png" %}
+![]("/js/PercentageTextBox/Angular-Support_images/Angular-Support_img2.png") 
 

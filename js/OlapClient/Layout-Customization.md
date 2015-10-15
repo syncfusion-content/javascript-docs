@@ -35,7 +35,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img1.png" %}
+![]("/js/OlapClient/Layout-Customization_images/Layout-Customization_img1.png") 
 
 ### Tab View
 
@@ -54,7 +54,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img2.png" %}
+![]("/js/OlapClient/Layout-Customization_images/Layout-Customization_img2.png") 
 
 ## Default View
 
@@ -77,7 +77,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img3.png" %}
+![]("/js/OlapClient/Layout-Customization_images/Layout-Customization_img3.png") 
 
 ### Grid View
 
@@ -96,7 +96,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img4.png" %}
+![]("/js/OlapClient/Layout-Customization_images/Layout-Customization_img4.png") 
 
 ## Hide Grid/Chart
 
@@ -117,7 +117,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img5.png" %}
+![]("/js/OlapClient/Layout-Customization_images/Layout-Customization_img5.png") 
 
 ###Chart Only
 
@@ -136,7 +136,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img6.png" %}
+![]("/js/OlapClient/Layout-Customization_images/Layout-Customization_img6.png") 
 
 ###Both Grid and Chart
 
@@ -155,7 +155,7 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img7.png" %}
+![]("/js/OlapClient/Layout-Customization_images/Layout-Customization_img7.png") 
 
 ## Toggle Panel
 
@@ -174,13 +174,13 @@ $("#OlapClient1").ejOlapClient({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img8.png" %}
+![]("/js/OlapClient/Layout-Customization_images/Layout-Customization_img8.png") 
 
 ## Maximized/Full Screen View
 
 You can maximize **PivotGrid** and **OlapChart** to [full screen mode](/js/api/ejOlapClient#members:displaysettings-enablefullscreen) inside **OlapClient** for a precise view. By selecting Full Screen icon in the toolbar, **PivotGrid** and **OlapChart** are maximized depending on the current tab. You can also perform drilldown action in both **PivotGrid** and **OlapChart** in the maximized view.
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img9.png" %}
+![]("/js/OlapClient/Layout-Customization_images/Layout-Customization_img9.png") 
 
 {% highlight js %}
 
@@ -196,5 +196,5 @@ $("#OlapClient1").ejOlapClient({
 
 The following screenshot shows the maximized view of **PivotGrid** and **OlapChart.**
 
-{% include image.html url="/js/OlapClient/Layout-Customization_images/Layout-Customization_img10.png" %}
+![]("/js/OlapClient/Layout-Customization_images/Layout-Customization_img10.png") 
 

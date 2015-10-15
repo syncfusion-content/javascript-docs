@@ -147,7 +147,7 @@ In an HTML page, add a &lt;input&gt; element to configure Dropdownlist widget.
 
 Output of the above steps
 
-{% include image.html url="/js/DropDownList/Data-binding_images/Data-binding_img1.png" %}
+![]("/js/DropDownList/Data-binding_images/Data-binding_img1.png") 
 
 ## Remote data
 
@@ -189,7 +189,7 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 Output of the above steps
 
-{% include image.html url="/js/DropDownList/Data-binding_images/Data-binding_img2.png" %}
+![]("/js/DropDownList/Data-binding_images/Data-binding_img2.png") 
 
 ## Angular Binding
 
@@ -204,7 +204,7 @@ Two-way binding supports both the processes – it applies the scope values to t
 
 To know more detail about the Angular binding, you can refer the following link location,
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 The following example depicts the way to bind data to the **DropdownList** widget through angular support
 
@@ -295,7 +295,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **DropdownLis
 
 Output of the above steps
 
-{% include image.html url="/js/DropDownList/Data-binding_images/Data-binding_img4.png" %}
+![]("/js/DropDownList/Data-binding_images/Data-binding_img4.png") 
 
 ## Knockout Binding
 
@@ -312,7 +312,7 @@ Two-way binding supports both the processes – it applies the observable values
 
 For more information about the knockout binding, refer the following online documentation in the following link location,
 
-<http://docs.syncfusion.com/js/knockoutjs>
+<http://help.syncfusion.com/js/knockoutjs>
 
 The following example depicts the way to bind data to the **DropdownList** widget through the knockout support that enables and populates data to a **DropdownList** widget based on the value set to the other dropdown widget.
 
@@ -390,4 +390,4 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 Output of the above steps
 
-{% include image.html url="/js/DropDownList/Data-binding_images/Data-binding_img6.png" %}
+![]("/js/DropDownList/Data-binding_images/Data-binding_img6.png") 

@@ -46,7 +46,7 @@ $("#rangecontainer").ejRangeNavigator(
 
 
 
-{% include image.html url="/js/RangeNavigator/Tooltip_images/Tooltip_img1.png" %}
+![]("/js/RangeNavigator/Tooltip_images/Tooltip_img1.png") 
 
 #### Label Format
 
@@ -78,7 +78,7 @@ $("#rangecontainer").ejRangeNavigator({
 {% endhighlight %}
 
 
-{% include image.html url="/js/RangeNavigator/Tooltip_images/Tooltip_img2.png" %}
+![]("/js/RangeNavigator/Tooltip_images/Tooltip_img2.png") 
 
 #### Tooltip display mode
 
@@ -119,4 +119,4 @@ $("#rangecontainer").ejRangeNavigator({
 
 
 
-{% include image.html url="/js/RangeNavigator/Tooltip_images/Tooltip_img3.png" %}
+![]("/js/RangeNavigator/Tooltip_images/Tooltip_img3.png") 

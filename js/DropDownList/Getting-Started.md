@@ -15,7 +15,7 @@ The **DropDownList** control provides a list of options and allows you to choose
 
 The following screenshot demonstrates the functionality of **DropDownList** with a Cascading feature.
 
-{% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img1.png"%}
+![]("/js/DropDownList/Getting-Started_images/Getting-Started_img1.png")
 
 In the above screenshot, you can select a group from the first **DropDownList** widget. After you select the group, the corresponding countries for that group are listed in the second **DropDownList** widget.Then, you can select a country and press the **Vote** option.  
 
@@ -155,7 +155,7 @@ Initialize the **DropDownList** and other widgets by using the following code ex
 
 Run this code to render the resultant output of the above steps.
 
-{% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img2.png" %}
+![]("/js/DropDownList/Getting-Started_images/Getting-Started_img2.png") 
 
 ## Configure Data Source
 
@@ -233,7 +233,7 @@ The following code example explains how to configure the **Data Source**.
 
 Execute this code to render the output.
 
-{% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img3.png" %}
+![]("/js/DropDownList/Getting-Started_images/Getting-Started_img3.png") 
 
 ## Configure DropDownList with Sprite Icons
 
@@ -398,7 +398,7 @@ You can load the spirit image icons for the countries in a **DropDownList** by a
 
 Run the above code example to render the following **DropDownList** with Data sources.
 
-{% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img4.png" %}
+![]("/js/DropDownList/Getting-Started_images/Getting-Started_img4.png") 
 
 ## Set the Cascading Option
 
@@ -455,22 +455,22 @@ The following code example explains how to set the Cascading Option.
 
 Execute this code to render the **DropDownList** with Cascading Option.  
 
-{% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img5.png" %}
+![]("/js/DropDownList/Getting-Started_images/Getting-Started_img5.png") 
 
 Initially, you can select the group from the popup of the first **DropDownList**. After you select the option, selected value is loaded.   
 
 
-{% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img6.png" %}
+![]("/js/DropDownList/Getting-Started_images/Getting-Started_img6.png") 
 
 Based on the group selection in the first **DropDownList**, the **DataSource** in the second **DropDownList** is loaded and the corresponding Countries are displayed while clicking the drop-down button as follows.
 
 
-{% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img7.png" %}
+![]("/js/DropDownList/Getting-Started_images/Getting-Started_img7.png") 
 
 From the **DropDownList** “Country”, you can select your desired country.
 
 
-{% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img8.png" %}
+![]("/js/DropDownList/Getting-Started_images/Getting-Started_img8.png") 
 
 ## Set the Vote process in the DropDownList Widget
 
@@ -508,5 +508,5 @@ The following code example explains how to set the Vote process in the **DropDow
 
 When you run the above code example, it displays the **DropDownList** widgets. You can select the value and click the **Vote** button. The button click event is processed and the values are displayed as follows.
 
-{% include image.html url="/js/DropDownList/Getting-Started_images/Getting-Started_img9.png" %}
+![]("/js/DropDownList/Getting-Started_images/Getting-Started_img9.png") 
 

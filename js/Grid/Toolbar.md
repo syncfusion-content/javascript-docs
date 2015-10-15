@@ -76,5 +76,5 @@ If you want **Toolbar** items other than the above items, you can make it using 
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Toolbar_images/Toolbar_img1.png"%}
+![]("/js/Grid/Toolbar_images/Toolbar_img1.png")
 

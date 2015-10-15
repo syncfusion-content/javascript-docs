@@ -41,7 +41,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 The following screenshot illustrates the **TagCloud** control with customized font sizes.
 
-{% include image.html url="/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" %}
+![]("/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img1.png") 
 
 
 
@@ -93,7 +93,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to configure **TagCloud** wi
 
 The following screenshot illustrates the **TagCloud** control with customized formats.
 
-{% include image.html url="/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" %}
+![]("/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img2.png") 
 
 
 
@@ -173,7 +173,7 @@ Define CSS class for customizing the **TagCloud** widget.
 
 The following screenshot illustrates the **TagCloud** with customized CSS class,
 
-{% include image.html url="/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" %}
+![]("/js/TagCloud/Appearance-and-Styling_images/Appearance-and-Styling_img3.png") 
 
 
 

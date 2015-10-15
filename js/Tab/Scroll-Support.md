@@ -83,7 +83,7 @@ Add the following **HTML** code to create a simple Tab with scroll button.
 
 The following screenshot illustrates you the **Tab** control with scroll button. 
 
-{% include image.html url="/js/Tab/Scroll-Support_images/Scroll-Support_img1.png" %}
+![]("/js/Tab/Scroll-Support_images/Scroll-Support_img1.png") 
 
 
 

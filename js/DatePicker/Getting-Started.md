@@ -15,7 +15,7 @@ The **Essential JavaScript DatePicker** provides support to display a calendar w
 
 The following screenshot illustrates the functionality of a **DatePicker** with date range of maximum 60 days. You can select a date for Onward and Return journeys ranging for a period of 60 days from the current day. This avoids selecting a journey date prior to the current date.
 
-{% include image.html url="/js/DatePicker/Getting-Started_images/Getting-Started_img1.png"%}
+![]("/js/DatePicker/Getting-Started_images/Getting-Started_img1.png")
 
 ## Create a DatePicker 
 
@@ -118,7 +118,7 @@ The following screenshot displays a **DatePicker** control.
 
 
 
-{% include image.html url="/js/DatePicker/Getting-Started_images/Getting-Started_img2.png"%}
+![]("/js/DatePicker/Getting-Started_images/Getting-Started_img2.png")
 
 ## Set the Min and Max Date
 
@@ -154,7 +154,7 @@ The following screenshot displays the output of the above code example.
 
 
 
-{% include image.html url="/js/DatePicker/Getting-Started_images/Getting-Started_img3.png"%}
+![]("/js/DatePicker/Getting-Started_images/Getting-Started_img3.png")
 
 
 ## Set Event to Process the Min and Max Date Validations
@@ -212,13 +212,13 @@ You can execute the above code and achieve the desired result. By selecting the 
 
 
 
-{% include image.html url="/js/DatePicker/Getting-Started_images/Getting-Started_img4.png"%}
+![]("/js/DatePicker/Getting-Started_images/Getting-Started_img4.png")
 
 By using the min/max date range property, you can select a date within a given range as follows.
 
 
 
-{% include image.html url="/js/DatePicker/Getting-Started_images/Getting-Started_img5.png"%}
+![]("/js/DatePicker/Getting-Started_images/Getting-Started_img5.png")
 
 You can also add additional functionalities such as localization and date formats to the date picker. 
 

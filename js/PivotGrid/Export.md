@@ -63,12 +63,12 @@ public void Export(System.IO.Stream stream)
 
 {% endhighlight %}
 
-{% include image.html url="/js/PivotGrid/Export_images/Export_img1.png" Caption="Exported PivotGrid in Excel"%}
+![]("/js/PivotGrid/Export_images/Export_img1.png" Caption="Exported PivotGrid in Excel")
 
-{% include image.html url="/js/PivotGrid/Export_images/Export_img2.png" Caption="Exported PivotGrid in Word"%}
+![]("/js/PivotGrid/Export_images/Export_img2.png" Caption="Exported PivotGrid in Word")
 
-{% include image.html url="/js/PivotGrid/Export_images/Export_img3.png" Caption="Exported PivotGrid in PDF"%}
+![]("/js/PivotGrid/Export_images/Export_img3.png" Caption="Exported PivotGrid in PDF")
 
-{% include image.html url="/js/PivotGrid/Export_images/Export_img4.png" Caption="Exported PivotGrid in CSV"%}
+![]("/js/PivotGrid/Export_images/Export_img4.png" Caption="Exported PivotGrid in CSV")
 
 

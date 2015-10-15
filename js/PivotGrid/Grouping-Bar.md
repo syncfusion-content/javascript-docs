@@ -35,7 +35,7 @@ function onServiceInvokes(args) {
 
 {% endhighlight %}
 
-{% include image.html url="/js/PivotGrid/Grouping-Bar_images/Grouping-Bar_img1.png" %}
+![]("/js/PivotGrid/Grouping-Bar_images/Grouping-Bar_img1.png") 
 
 The following operations can be done using Grouping bar:
 

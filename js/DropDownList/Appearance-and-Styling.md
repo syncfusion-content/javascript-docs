@@ -58,7 +58,7 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
  Output of the above steps
 
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img1.png" %}
+![]("/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img1.png") 
 
 ## Adjusting Dropdown size
 
@@ -109,7 +109,7 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 Output of the above steps
 
 
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" %}  
+![]("/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img2.png")  
 
 ## Water Mark
 
@@ -153,7 +153,7 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 Output of the above steps
 
 
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img3.png" %}  
+![]("/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img3.png")  
 
 ## Enabling Rounded corner
 
@@ -194,7 +194,7 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget.
 
 Output of the above steps
  
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img4.png" %}  
+![]("/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img4.png")  
 
 ## Icons Support
 
@@ -315,7 +315,7 @@ Configure sprite **CSS** styles to **DropdownList**
 
 Output of the above steps
 
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img6.png" %}  
+![]("/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img6.png")  
 
 ## Animation with Dropdown list
 
@@ -431,5 +431,5 @@ Configure the **CSS** styles to apply on **DropdownList**
 
 Output of the above steps
 
-{% include image.html url="/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img7.png" %} 
+![]("/js/DropDownList/Appearance-and-Styling_images/Appearance-and-Styling_img7.png") 
 

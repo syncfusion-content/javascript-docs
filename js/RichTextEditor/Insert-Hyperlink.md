@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Insert-Hyperlink
 description: insert hyperlink
@@ -34,4 +34,8 @@ Add the following code example in your **HTML** page to initialize the **RTE**.
 
 {% endhighlight %}
 
+
 ![](Insert-Hyperlink_images/Insert-Hyperlink_img1.png)
+
+
+

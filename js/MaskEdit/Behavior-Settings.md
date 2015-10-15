@@ -41,9 +41,9 @@ Output of MaskEdit with **enablePersistence** is as follows.
 
 
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img1.png"%}
+![]("/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img1.png")
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img2.png"%}
+![]("/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img2.png")
 
 ## Enabled or Disabled
 
@@ -78,9 +78,9 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 Output when **enabled** is **“false”** and when **enabled** is “**true**”**.**
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="MaskEdit with disabled state"%}
+![]("/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="MaskEdit with disabled state")
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="MaskEdit with default state"%}
+![]("/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="MaskEdit with default state")
 
 ## Adjusting MaskEdit Size
 
@@ -119,7 +119,7 @@ Output of MaskEdit after setting “**height**” and “**width**” is as foll
 
 
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img5.png" %}
+![]("/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img5.png") 
 
 ## Define Value
 
@@ -157,7 +157,7 @@ Output of MaskEdit with the **value** property is as follows**.**
 
 
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img6.png"%} 
+![]("/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img6.png") 
 
 ## Read Only Support
 
@@ -194,7 +194,7 @@ Output of **MaskEdit** when **readOnly** is “**true**” is as follows. MaskEd
 
 
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img7.png"%}
+![]("/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img7.png")
 
 ## Error Visibility
 
@@ -233,7 +233,7 @@ Output for **MaskEdit** when **showError** is “**true**” is as follows**.**
 
 
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img8.png" Caption="MaskEdit with error class"%}
+![]("/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img8.png" Caption="MaskEdit with error class")
 
-{% include image.html url="/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img9.png" Caption="MaskEdit with proper input value"%}
+![]("/js/MaskEdit/Behavior-Settings_images/Behavior-Settings_img9.png" Caption="MaskEdit with proper input value")
 

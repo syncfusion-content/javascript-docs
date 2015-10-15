@@ -58,7 +58,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img1.png" %}
+![]("/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img1.png") 
 
 ## Select the value by index
 
@@ -102,7 +102,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img2.png" %}
+![]("/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img2.png") 
 
 ## Enable or Disable the ListBox Widget
 
@@ -142,5 +142,5 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 Output of the above steps.
 
-{% include image.html url="/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img3.png" %}
+![]("/js/ListBox/Behaviour-Settings_images/Behaviour-Settings_img3.png") 
 

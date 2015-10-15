@@ -84,7 +84,7 @@ Basic attributes such as **height** and **width** property are used to set heigh
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Sub-Gauges_images/Sub-Gauges_img1.png" Caption=""%}
+![]("/js/CircularGauge/Sub-Gauges_images/Sub-Gauges_img1.png" Caption="")
 
 ## Multiple SubGauges
 
@@ -145,5 +145,5 @@ You can set multiple sub gauges in a single **Circular Gauge** by adding an arra
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Sub-Gauges_images/Sub-Gauges_img2.png" Caption=""%}
+![]("/js/CircularGauge/Sub-Gauges_images/Sub-Gauges_img2.png" Caption="")
 

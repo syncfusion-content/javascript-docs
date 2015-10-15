@@ -146,5 +146,5 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The output for the **Localized OlapChart** is as follows:
 
-{% include image.html url="/js/OlapChart/Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png" %}
+![]("/js/OlapChart/Localization-and-Translation-support_images/Localization-and-Translation-support_img1.png") 
 

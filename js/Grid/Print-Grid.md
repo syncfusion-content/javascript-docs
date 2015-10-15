@@ -32,5 +32,5 @@ Printing is easy with **Grid** control by using **Print Grid** feature. Toolbar 
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Print-Grid_images/Print-Grid_img1.png"%}
+![]("/js/Grid/Print-Grid_images/Print-Grid_img1.png")
 

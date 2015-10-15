@@ -13,7 +13,7 @@ This section briefly explains how you can create an **OlapGauge** in your applic
 
 ##Syncfusion OLAP Controls – Architecture
 
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img2.png" %}
+![]("/js/OlapGauge/Getting-Started_images/Getting-Started_img2.png") 
 
 As shown in the above architecture, control rendering takes place client-side and all other analytical operations on each action takes place server-side.
 
@@ -46,17 +46,17 @@ This section explains how you can configure the **OlapGauge** control in applica
 
 In the following example, **OlapGauge** is used to visualize the Revenue for Reseller over a Fiscal Year 2004 on the product category - Accessories.
 
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img3.png" %}
+![]("/js/OlapGauge/Getting-Started_images/Getting-Started_img3.png") 
 
 Open Visual Studio and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET Empty Web Application** template, and then click **OK**. The following screenshot displays the Project Creation Wizard:
 
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img4.png" %}
+![]("/js/OlapGauge/Getting-Started_images/Getting-Started_img4.png") 
 
 ##Create HTML page
 
 To create a new web form in the application, right-click on the project and select Add. The following screenshot displays the Add New Item Wizard.
 
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img5.png" %}
+![]("/js/OlapGauge/Getting-Started_images/Getting-Started_img5.png") 
 
 Click on New Item and select HTML Page from the listed templates. Name the page as default.html and click OK.
 
@@ -65,8 +65,8 @@ Click on New Item and select HTML Page from the listed templates. Name the page 
 ###Add References
 
 * In the Solution Explorer, right-click the References folder, and then click Add Reference.
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img6.png" %}
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img7.png" %}
+![]("/js/OlapGauge/Getting-Started_images/Getting-Started_img6.png") 
+![]("/js/OlapGauge/Getting-Started_images/Getting-Started_img7.png") 
 * Select the following assemblies: 
 
    1. Microsoft.AnalysisServices.AdomdClient.dll
@@ -207,7 +207,7 @@ Add the following code inside the **&lt;body&gt;** tag in the **default.html** p
 ###Create WCF Service
 
 Right-click the project and select Add > New Folder.  Name the folder as wcf. Let the folder name "wcf" be in lower case. Right-click the wcf folder created and select Add > New Item.  In the Add New Item window, select WCF Service and name it OlapGaugeService.svc. And then Click Add.
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img8.png" %}
+![]("/js/OlapGauge/Getting-Started_images/Getting-Started_img8.png") 
 
 ###Add service methods inside Interface
 

@@ -60,9 +60,9 @@ The output for **NumericTextBox** with Globalization.
 
 
 
-{% include image.html url="/js/NumericTextBox/Globalization-Support_images/Globalization-Support_img1.png" Caption="NumericTextBox with de-DE locale"%}
+![]("/js/NumericTextBox/Globalization-Support_images/Globalization-Support_img1.png" Caption="NumericTextBox with de-DE locale")
 
 
 
-{% include image.html url="/js/NumericTextBox/Globalization-Support_images/Globalization-Support_img2.png" Caption="NumericTextBox with en-US locale"%}
+![]("/js/NumericTextBox/Globalization-Support_images/Globalization-Support_img2.png" Caption="NumericTextBox with en-US locale")
 

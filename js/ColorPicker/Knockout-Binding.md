@@ -22,7 +22,7 @@ Two types of knockout binding is supported,
 
 For more information about **Knockout** binding, you can refer to the online documentation in the following link location,
 
-<http://docs.syncfusion.com/js/knockoutjs>
+<http://help.syncfusion.com/js/knockoutjs>
 
 The following example depicts how you can bind data to the **ColorPicker** widget through **knockout** support that enables and populates data to a **ColorPicker** widget based on the value set to the other **ColorPicker** widget.
 
@@ -96,5 +96,5 @@ The following screenshot displays the output of the above code example.
 
 
 
-{% include image.html url="/js/ColorPicker/Knockout-Binding_images/Knockout-Binding_img1.png" %}
+![]("/js/ColorPicker/Knockout-Binding_images/Knockout-Binding_img1.png") 
 

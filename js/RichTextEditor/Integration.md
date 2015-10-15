@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Integration
 description: integration
@@ -19,7 +19,7 @@ By using this, you can view the equivalent **XHTML** code of the content in the 
 
 To know more details about the **Angular binding**, refer to the following link location.
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 You can bind data to the **RTE** control through **angular support**.
 
@@ -48,6 +48,7 @@ Add the following code example in your **HTML** page to initialize the **RTE** c
 {% endhighlight %}
 
 ![](Integration_images/Integration_img1.png)
+
 
 
 ## Knockout Binding
@@ -91,5 +92,7 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 {% endhighlight %}
 
 
+
 ![](Integration_images/Integration_img2.png)
+
 

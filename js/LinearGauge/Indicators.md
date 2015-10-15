@@ -75,7 +75,7 @@ Indicators simply indicates the current status of the pointer. Indicators are in
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img1.png" Caption=""%}
+![]("/js/LinearGauge/Indicators_images/Indicators_img1.png" Caption="")
 
 ## State Ranges
 
@@ -169,7 +169,7 @@ State ranges are used to specify the indicator behavior in the certain region. *
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img2.png" Caption="Linear Gauge with indicator state ranges"%}
+![]("/js/LinearGauge/Indicators_images/Indicators_img2.png" Caption="Linear Gauge with indicator state ranges")
 
 ## Color and Appearance
 
@@ -235,7 +235,7 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img3.png" Caption=""%}
+![]("/js/LinearGauge/Indicators_images/Indicators_img3.png" Caption="")
 
 ## Font optoins
 
@@ -335,7 +335,7 @@ The basic font options available for the textual type indicators in the **Linear
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img4.png" Caption=""%}
+![]("/js/LinearGauge/Indicators_images/Indicators_img4.png" Caption="")
 
 ## Multiple Indicator
 
@@ -444,5 +444,5 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/LinearGauge/Indicators_images/Indicators_img5.png" Caption=""%}
+![]("/js/LinearGauge/Indicators_images/Indicators_img5.png" Caption="")
 
