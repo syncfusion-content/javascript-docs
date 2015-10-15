@@ -55,7 +55,7 @@ The `markers` property has a list of objects that contains the data for Annotati
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img1.png"%}
+![]("/js/Maps/Map-Elements_images/Map-Elements_img1.png")
 
 ### Adding Marker objects to the map
 
@@ -99,7 +99,7 @@ Without datasource, n number of markers can be added to shape layers with `marke
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img2.png"%}
+![]("/js/Maps/Map-Elements_images/Map-Elements_img2.png")
 
 ## Bubbles
 
@@ -201,7 +201,7 @@ N>Tooltip and Color Mappings for bubble is to be set as similar to the tooltip a
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img3.png"%}
+![]("/js/Maps/Map-Elements_images/Map-Elements_img3.png")
 
 ## Legend
 
@@ -285,7 +285,7 @@ N>Here, Equal Color Mapping code sample for shapeSettings with color mappings is
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img4.png"%}
+![]("/js/Maps/Map-Elements_images/Map-Elements_img4.png")
 
 ### Interactive Legend
 
@@ -330,7 +330,7 @@ N>Here, Range Color Mapping code snippet for shapeSettings with color mappings i
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img5.png"%}
+![]("/js/Maps/Map-Elements_images/Map-Elements_img5.png")
 
 ### Bubble Legend
 
@@ -395,5 +395,5 @@ A bubble legend feature is used to provide the key (legend) for another map elem
 
 
 
-{% include image.html url="/js/Maps/Map-Elements_images/Map-Elements_img6.png"%}
+![]("/js/Maps/Map-Elements_images/Map-Elements_img6.png")
 

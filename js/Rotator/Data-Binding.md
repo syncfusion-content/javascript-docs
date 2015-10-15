@@ -84,7 +84,7 @@ This property retrieves data from remote data. This property is applicable only 
   {% endhighlight %}
 
 
-{% include image.html url="/js/Rotator/Data-Binding_images/Data-Binding_img1.png"%}
+![]("/js/Rotator/Data-Binding_images/Data-Binding_img1.png")
 
 ## Knockout support
 
@@ -153,7 +153,7 @@ The following code example depicts the way to bind data to the **Rotator** throu
 
   {% endhighlight %}
 
-{% include image.html url="/js/Rotator/Data-Binding_images/Data-Binding_img2.png" %}
+![]("/js/Rotator/Data-Binding_images/Data-Binding_img2.png") 
 
 ## Angular support
 
@@ -230,5 +230,5 @@ The following code example depicts the way to bind data to the **Rotator** widge
 
 
 
-{% include image.html url="/js/Rotator/Data-Binding_images/Data-Binding_img3.png"%}
+![]("/js/Rotator/Data-Binding_images/Data-Binding_img3.png")
 

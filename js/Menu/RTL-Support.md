@@ -78,6 +78,6 @@ The following code depicts you on how to enable the **rtl** property of the **Me
 
 Following screenshot displays the output for the above code.
 
-{% include image.html url="/js/Menu/RTL-Support_images/RTL-Support_img1.png" Caption="RTL Support"%}
+![]("/js/Menu/RTL-Support_images/RTL-Support_img1.png" Caption="RTL Support")
 
 

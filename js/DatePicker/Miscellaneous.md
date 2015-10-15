@@ -155,7 +155,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 The following screenshot displays the output for the above code.   
 
-{% include image.html url="/js/DatePicker/Miscellaneous_images/Miscellaneous_img1.png"%}
+![]("/js/DatePicker/Miscellaneous_images/Miscellaneous_img1.png")
 
 
 
@@ -241,7 +241,7 @@ The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/DatePicker/Miscellaneous_images/Miscellaneous_img2.png"%}
+![]("/js/DatePicker/Miscellaneous_images/Miscellaneous_img2.png")
 
 ## Show rounded corner
 
@@ -274,7 +274,7 @@ The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/DatePicker/Miscellaneous_images/Miscellaneous_img3.png"%}
+![]("/js/DatePicker/Miscellaneous_images/Miscellaneous_img3.png")
 
 
 ## Show Tooltip
@@ -307,7 +307,7 @@ The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/DatePicker/Miscellaneous_images/Miscellaneous_img4.png"%}
+![]("/js/DatePicker/Miscellaneous_images/Miscellaneous_img4.png")
 
 
 

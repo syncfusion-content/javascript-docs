@@ -39,5 +39,5 @@ In the **HTML** page, add a **&lt;div&gt;** element to render **DatePicker** wid
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/DatePicker/Display-Inline_images/Display-Inline_img1.png"%}
+![]("/js/DatePicker/Display-Inline_images/Display-Inline_img1.png")
 

@@ -15,7 +15,7 @@ The following screenshot displays the drag and drop support.
 
 
 
-{% include image.html url="/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png" %}
+![]("/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img1.png") 
 
 ## Enable drag and drop 
 
@@ -80,7 +80,7 @@ In CSS, configure the custom styles for drag and drop.
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img2.png" %}
+![]("/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img2.png") 
 
 ## Drag Area text
 
@@ -143,7 +143,7 @@ In CSS, configure the custom styles for drag and drop.
 
  The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img3.png" %}
+![]("/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img3.png") 
 
 ## Adjust Drop area size
 
@@ -181,7 +181,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to enable the drag and drop 
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img4.png" %}
+![]("/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img4.png") 
 
 ## Drop area with Browse button behavior
 
@@ -251,5 +251,5 @@ The following screenshot displays the output for the above code.
 
 
 
-{% include image.html url="/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img5.png" %}
+![]("/js/UploadBox/Drag-and-Drop-Support_images/Drag-and-Drop-Support_img5.png") 
 

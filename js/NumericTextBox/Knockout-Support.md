@@ -89,7 +89,7 @@ The output of Knockout binding in NumericTextBox .
 
 
 
-{% include image.html url="/js/NumericTextBox/Knockout-Support_images/Knockout-Support_img1.png" Caption="NumericTextBox at initial load"%}
+![]("/js/NumericTextBox/Knockout-Support_images/Knockout-Support_img1.png" Caption="NumericTextBox at initial load")
 
-{% include image.html url="/js/NumericTextBox/Knockout-Support_images/Knockout-Support_img2.png" Caption="NumericTextBox with knockout binding"%}
+![]("/js/NumericTextBox/Knockout-Support_images/Knockout-Support_img2.png" Caption="NumericTextBox with knockout binding")
 

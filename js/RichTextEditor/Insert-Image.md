@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Insert-Image
 description: insert image
@@ -20,4 +20,5 @@ You can insert all types of images from a defined path in **RichTextEditor** con
 ![](Insert-Image_images/Insert-Image_img1.png)
 
 ![](Insert-Image_images/Insert-Image_img2.png)
+
 

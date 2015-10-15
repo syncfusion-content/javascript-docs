@@ -67,7 +67,7 @@ Refer to the following code example for the paging options.
 
 Result for the above code example is illustrated as follows.
 
-{% include image.html url="/js/DataManager/Paging_images/Paging_img1.png" %}
+![]("/js/DataManager/Paging_images/Paging_img1.png") 
 
 ##Dynamic Paging
 
@@ -137,7 +137,7 @@ Page Size: <input type="text" value="1" id="size"/>
 
 Result of above code example is illustrated as follows.
 
-{% include image.html url="/js/DataManager/Paging_images/Paging_img2.png" %}
+![]("/js/DataManager/Paging_images/Paging_img2.png") 
 
 ##Custom paging
 
@@ -195,7 +195,7 @@ In this section, you can learn how to use customized paging. The following code 
 
 Result of above code example is illustrated as follows.
 
-{% include image.html url="/js/DataManager/Paging_images/Paging_img3.png" %}
+![]("/js/DataManager/Paging_images/Paging_img3.png") 
 
 ##Skip
 
@@ -252,7 +252,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Paging_images/Paging_img4.png" %}
+![]("/js/DataManager/Paging_images/Paging_img4.png") 
 
 ##Take
 
@@ -306,7 +306,7 @@ The `take` query is used to get some certain number of records from the data sou
 
 Result of the above code example is illustrated as follows.
 
-{% include image.html url="/js/DataManager/Paging_images/Paging_img5.png" %}
+![]("/js/DataManager/Paging_images/Paging_img5.png") 
 
 ##RequiresCount
 
@@ -364,7 +364,7 @@ The `requiresCount` query is used to get the count of the total number of record
 
 Result of the above code example is illustrated as follows.
 
-{% include image.html url="/js/DataManager/Paging_images/Paging_img6.png" %}
+![]("/js/DataManager/Paging_images/Paging_img6.png") 
 
 ##Range
 
@@ -421,5 +421,5 @@ Result of the cabove code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Paging_images/Paging_img7.png" %}
+![]("/js/DataManager/Paging_images/Paging_img7.png") 
 

@@ -89,7 +89,7 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
 
 When the node is selected in **TreeView**, the integrated output is displayed in the second pane.
 
-{% include image.html url="/js/Splitter/Splitter-Integration_images/Splitter-Integration_img1.png" %}
+![]("/js/Splitter/Splitter-Integration_images/Splitter-Integration_img1.png") 
 
-{% include image.html url="/js/Splitter/Splitter-Integration_images/Splitter-Integration_img2.png" %}
+![]("/js/Splitter/Splitter-Integration_images/Splitter-Integration_img2.png") 
 

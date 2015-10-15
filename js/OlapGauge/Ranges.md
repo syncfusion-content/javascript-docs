@@ -115,5 +115,5 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Ranges_images/Ranges_img1.png" %}
+![]("/js/OlapGauge/Ranges_images/Ranges_img1.png") 
 

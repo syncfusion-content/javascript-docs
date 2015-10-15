@@ -89,12 +89,12 @@ In the **HTML** page set a **&lt;div&gt;** element with dialog content for rende
 
 The output of **Dialog** open is as follows.
 
-{% include image.html url="/js/Dialog/Client-Side-APIs_images/Client-Side-APIs_img1.png" %}
+![]("/js/Dialog/Client-Side-APIs_images/Client-Side-APIs_img1.png") 
 
 
 The output of Dialog close is as follows.                                     
 
-{% include image.html url="/js/Dialog/Client-Side-APIs_images/Client-Side-APIs_img2.png" %}
+![]("/js/Dialog/Client-Side-APIs_images/Client-Side-APIs_img2.png") 
                                                                     
 
 ## IsOpened and Destroy
@@ -198,7 +198,7 @@ Set the width and height to the **Dialog** function and get the **Dialog** objec
 
 The output of **Dialog** open is as follows.    
 
-{% include image.html url="/js/Dialog/Client-Side-APIs_images/Client-Side-APIs_img3.png" %}
+![]("/js/Dialog/Client-Side-APIs_images/Client-Side-APIs_img3.png") 
 
             
 
@@ -207,14 +207,14 @@ The output of Dialog close is as follows.
 
 
 
-{% include image.html url="/js/Dialog/Client-Side-APIs_images/Client-Side-APIs_img4.png" %}
+![]("/js/Dialog/Client-Side-APIs_images/Client-Side-APIs_img4.png") 
 
 
 
 The output of **Dialog** destroyed is as follows.
 
 
-{% include image.html url="/js/Dialog/Client-Side-APIs_images/Client-Side-APIs_img5.png" %}
+![]("/js/Dialog/Client-Side-APIs_images/Client-Side-APIs_img5.png") 
 
 
 

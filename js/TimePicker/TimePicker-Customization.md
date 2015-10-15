@@ -37,5 +37,5 @@ The following screenshot illustrates you a default **TimePicker**.
 
 
 
-{% include image.html url="/js/TimePicker/TimePicker-Customization_images/TimePicker-Customization_img1.png" %}
+![]("/js/TimePicker/TimePicker-Customization_images/TimePicker-Customization_img1.png") 
 

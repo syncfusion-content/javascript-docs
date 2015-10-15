@@ -64,7 +64,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img1.png" %}
+![]("/js/ToggleButton/Easy-Customization_images/Easy-Customization_img1.png") 
 
 
 
@@ -172,11 +172,11 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img2.png" %}
+![]("/js/ToggleButton/Easy-Customization_images/Easy-Customization_img2.png") 
 
 
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img3.png" %}
+![]("/js/ToggleButton/Easy-Customization_images/Easy-Customization_img3.png") 
 
 
 
@@ -347,7 +347,7 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img4.png" %}
+![]("/js/ToggleButton/Easy-Customization_images/Easy-Customization_img4.png") 
 
 
 
@@ -564,7 +564,7 @@ Configure the styles
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img5.png" %}
+![]("/js/ToggleButton/Easy-Customization_images/Easy-Customization_img5.png") 
 
 
 
@@ -823,7 +823,7 @@ Configure the styles
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img6.png" %}
+![]("/js/ToggleButton/Easy-Customization_images/Easy-Customization_img6.png") 
 
 
 
@@ -993,7 +993,7 @@ Configure the CSS styles to apply on buttons.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/ToggleButton/Easy-Customization_images/Easy-Customization_img7.png" %}
+![]("/js/ToggleButton/Easy-Customization_images/Easy-Customization_img7.png") 
 
 
 

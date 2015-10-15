@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: TreeMapLevels
 description: treemaplevels
@@ -45,7 +45,7 @@ You can use `groupGap` property to separate the items from every flat level and
 
 
 
-{% include image.html url="/js/TreeMap/TreeMapLevels_images/TreeMapLevels_img1.png"%}
+![](TreeMapLevels_images/TreeMapLevels_img1.png)
 
 ## Hierarchical Level
 
@@ -89,4 +89,5 @@ You can use `groupGap` property to separate the items from every flat level and
 
 
 
-{% include image.html url="/js/TreeMap/TreeMapLevels_images/TreeMapLevels_img2.png"%}
+![](TreeMapLevels_images/TreeMapLevels_img2.png)
+

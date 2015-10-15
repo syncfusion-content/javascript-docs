@@ -13,7 +13,7 @@ While using **Grid** in a touch device environment, you have the option of multi
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Multi-sorting-in-Touch-device_images/Multi-sorting-in-Touch-device_img1.png"%}
+![]("/js/Grid/Multi-sorting-in-Touch-device_images/Multi-sorting-in-Touch-device_img1.png")
 
 ## Multi sorting key configs
 
@@ -54,9 +54,9 @@ In **ejGrid**, you have an **API** to clear sorted columns. Through this **API**
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Multi-sorting-in-Touch-device_images/Multi-sorting-in-Touch-device_img2.png"%}
+![]("/js/Grid/Multi-sorting-in-Touch-device_images/Multi-sorting-in-Touch-device_img2.png")
 
-{% include image.html url="/js/Grid/Multi-sorting-in-Touch-device_images/Multi-sorting-in-Touch-device_img3.png"%}
+![]("/js/Grid/Multi-sorting-in-Touch-device_images/Multi-sorting-in-Touch-device_img3.png")
 
 ## Merge Sort
 
@@ -115,5 +115,5 @@ In the normal way of sorting, first preference is given to capital letters and t
 
  The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Multi-sorting-in-Touch-device_images/Multi-sorting-in-Touch-device_img4.png"%}
+![]("/js/Grid/Multi-sorting-in-Touch-device_images/Multi-sorting-in-Touch-device_img4.png")
 

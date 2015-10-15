@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Overview
 description: overview
@@ -13,7 +13,9 @@ The **Essential JavaScript RichTextEditor (RTE)** control enables you to visuall
 
 ## Control structure
 
+
 ![](Overview_images/Overview_img1.png)
+
 
 ## Key Feature
 

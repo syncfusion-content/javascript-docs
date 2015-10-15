@@ -96,4 +96,4 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList
 
 Run the sample, press Alt + J to focus in the **DropdownList** widget that enables it and you can navigate using arrow keys and Esc key to close the popup.
 
-{% include image.html url="/js/DropDownList/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" %}
+![]("/js/DropDownList/Keyboard-Interaction_images/Keyboard-Interaction_img1.png") 

@@ -42,7 +42,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([high](
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Working-with-Data_images/Working-with-Data_img1.png" Caption="Local Data Binding"%}
+![]("/js/Chart/Working-with-Data_images/Working-with-Data_img1.png" Caption="Local Data Binding")
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/localdata) here to view the local data binding online demo sample.
 
@@ -69,7 +69,7 @@ N> For the **OHLC** type series, you have to map four dataSource fields ([high](
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Working-with-Data_images/Working-with-Data_img2.png" Caption="Plotting data with points"%}
+![]("/js/Chart/Working-with-Data_images/Working-with-Data_img2.png" Caption="Plotting data with points")
 
 ## Remote Data
 
@@ -96,6 +96,6 @@ You can bind the remote data to the chart by using the DataManager and you can u
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Working-with-Data_images/Working-with-Data_img3.png" Caption="Remote Data Binding"%}
+![]("/js/Chart/Working-with-Data_images/Working-with-Data_img3.png" Caption="Remote Data Binding")
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/databinding/remotedata) here to view the remote data binding online demo sample.	

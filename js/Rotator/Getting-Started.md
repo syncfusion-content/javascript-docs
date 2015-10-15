@@ -13,7 +13,7 @@ This section explains briefly about how to create a **Rotator** in your applicat
 
 The following screenshot demonstrates the functionality of **Rotator** widget.
 
-{% include image.html url="/js/Rotator/Getting-Started_images/Getting-Started_img1.png"%}
+![]("/js/Rotator/Getting-Started_images/Getting-Started_img1.png")
 
 ## Create Rotator Widget
 
@@ -132,5 +132,5 @@ Add the following script in the **HTML** file.
 
 The above code gives the output displayed in following screenshot.
 
-{% include image.html url="/js/Rotator/Getting-Started_images/Getting-Started_img2.png"%}
+![]("/js/Rotator/Getting-Started_images/Getting-Started_img2.png")
 

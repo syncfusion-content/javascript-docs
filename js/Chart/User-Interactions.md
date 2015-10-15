@@ -36,7 +36,7 @@ Tooltip for the data points can be enabled by using the [visible](../api/ejchart
 
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img1.png" Caption="Chart with tooltip"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img1.png" Caption="Chart with tooltip")
 
 ### Format the tooltip 
 
@@ -62,7 +62,7 @@ You can also use * **#series.<optionname>#** * as placeholder to display the val
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img2.png" Caption="Chart with formatted tooltip"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img2.png" Caption="Chart with formatted tooltip")
 
 
 ### Tooltip Template
@@ -104,7 +104,7 @@ You can also use * **#series.<optionname>#** * as place holder to display the va
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img3.png" Caption="Chart with tooltip template"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img3.png" Caption="Chart with tooltip template")
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/line) here to view the Tooltip template online demo sample.
 
@@ -159,7 +159,7 @@ The [fill](../api/ejchart#members:series-tooltip-fill) and [border](../api/ejcha
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img4.png" Caption="Customizing the appearance of tooltip "%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img4.png" Caption="Customizing the appearance of tooltip ")
 
 
 #### Tooltip with rounded corners
@@ -186,7 +186,7 @@ The options [rx](../api/ejchart#members:series-tooltip-rx) and [ry](../api/ejcha
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img5.png" Caption="Tooltip with rounded corners"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img5.png" Caption="Tooltip with rounded corners")
 
 
 
@@ -213,12 +213,12 @@ There are two ways you can zoom the chart,
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img6.png" Caption="Zoomed chart"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img6.png" Caption="Zoomed chart")
 
 
 After zooming the chart, a zooming toolbar will appear with options to *zoom*, *pan* and *reset*. Selecting the Pan option will allow to pan the chart and selecting the Reset option will reset the zoomed chart.
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img7.png" Caption="Select panning option from zoomkit"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img7.png" Caption="Select panning option from zoomkit")
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/zoomingandpanning) here to view the Zooming and Panning online demo sample.
 
@@ -280,7 +280,7 @@ Crosshair can be enabled by using the [visible](../api/ejchart#members:series-to
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img8.png" Caption="Chart with crosshair"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img8.png" Caption="Chart with crosshair")
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/crosshair) here to view the Crosshair online demo sample.
 
@@ -315,7 +315,7 @@ The [fill](../api/ejchart#members:crosshair-fill) and [border](../api/ejchart#me
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img9.png" Caption="Customize crosshair labels and line"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img9.png" Caption="Customize crosshair labels and line")
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/crosshair) here to view the Crosshair online demo sample.
 
@@ -346,7 +346,7 @@ Trackball can be enabled by setting the [visible](../api/ejchart#members:crossha
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img10.png" Caption="Chart with trackball"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img10.png" Caption="Chart with trackball")
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/trackball) here to view the Trackball online demo sample.
 
@@ -383,7 +383,7 @@ Shape and size of the trackball marker can be customized by using the [shape](..
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img11.png" Caption="Customize trackball line and marker"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img11.png" Caption="Customize trackball line and marker")
 
 
 ### Format Trackball tooltip
@@ -416,7 +416,7 @@ X and Y values displayed in the trackball tooltip are formatted based on its axi
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img12.png" Caption="Change trackball tooltip format"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img12.png" Caption="Change trackball tooltip format")
 
 To view the data representation depth in chart by clicking on the data point, refer [Drilldown](drilldown) KB.
 
@@ -489,7 +489,7 @@ To highlight all the data points of the specified series, you can set the **“s
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img13.png" Caption="Highlighting chart series"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img13.png" Caption="Highlighting chart series")
 
 
 **Point mode**
@@ -520,7 +520,7 @@ To highlight a single point, you can set the **“point”** value to the [mode]
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img14.png" Caption="Highlighting chart point"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img14.png" Caption="Highlighting chart point")
 
 
 **Cluster mode**
@@ -551,7 +551,7 @@ To highlight the points that corresponds to the same index in all the series, se
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img15.png" Caption="Highlighting chart in cluster mode"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img15.png" Caption="Highlighting chart in cluster mode")
 
 
 ### Customize the highlight styles
@@ -582,7 +582,7 @@ To customize the highlighted series, use the [color](../api/ejchart#members:seri
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img16.png" Caption="Customizing highlight styles"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img16.png" Caption="Customizing highlight styles")
 
 
 ### Patterns to highlight
@@ -633,7 +633,7 @@ EjChart provides pattern support for highlighting the data by setting the value 
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img17.png" Caption="Changing pattern to highlight"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img17.png" Caption="Changing pattern to highlight")
 
 
 #### Custom pattern
@@ -738,7 +738,7 @@ To select all the data points of the specified series, you can set the **"series
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img18.png" Caption="Series selection"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img18.png" Caption="Series selection")
 
 
 **Point mode**
@@ -769,7 +769,7 @@ To highlight a single point, you can set the **"point"** value to the [mode](../
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img19.png" Caption="Point selection"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img19.png" Caption="Point selection")
 
 
 **Cluster mode**
@@ -800,7 +800,7 @@ To select the points that corresponds to the same index in all the series, set t
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img20.png" Caption="Cluster selection"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img20.png" Caption="Cluster selection")
 
 
 ### Customizing selection styles
@@ -832,7 +832,7 @@ To customize the selection styles, use the [color](../api/ejchart#members:series
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img21.png" Caption="Customizing selection styles"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img21.png" Caption="Customizing selection styles")
 
 
 ### Patterns for selection
@@ -883,7 +883,7 @@ EjChart provides pattern support for the data selection by setting the value to 
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img22.png" Caption="Selection pattern"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img22.png" Caption="Selection pattern")
 
 
 #### Custom pattern
@@ -922,7 +922,7 @@ To create a custom pattern for selecting the data points, set the [pattern](../a
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/User-Interactions_images/User-Interactions_img23.png" Caption="Add custom pattern for selection"%}
+![]("/js/Chart/User-Interactions_images/User-Interactions_img23.png" Caption="Add custom pattern for selection")
 
 
 ### Handling Series Selection

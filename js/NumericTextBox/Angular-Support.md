@@ -87,7 +87,7 @@ The following example depicts the way to bind data to the **NumericTextBox** wid
 
 The output of **NumericTextBox** controls with **two-way angular binding** is as follows.
 
-{% include image.html url="/js/NumericTextBox/Angular-Support_images/Angular-Support_img1.png" Caption="NumericTextBox at initial load"%}
+![]("/js/NumericTextBox/Angular-Support_images/Angular-Support_img1.png" Caption="NumericTextBox at initial load")
 
-{% include image.html url="/js/NumericTextBox/Angular-Support_images/Angular-Support_img2.png" Caption="NumericTextBox with Angular Binding"%}
+![]("/js/NumericTextBox/Angular-Support_images/Angular-Support_img2.png" Caption="NumericTextBox with Angular Binding")
 

@@ -109,9 +109,9 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Responsive-Layout_images/Responsive-Layout_img1.png" Caption="Normal View"%}
+![]("/js/OlapGauge/Responsive-Layout_images/Responsive-Layout_img1.png" Caption="Normal View")
 
-{% include image.html url="/js/OlapGauge/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Responsive View"%}
+![]("/js/OlapGauge/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Responsive View")
 
 
 

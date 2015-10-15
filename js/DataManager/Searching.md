@@ -60,5 +60,5 @@ Searching is a basic query technique in data manager. It is used to filter the r
 
 Result of above code example is illustrated as follows.
 
-{% include image.html url="/js/DataManager/Searching_images/Searching_img1.png" %}
+![]("/js/DataManager/Searching_images/Searching_img1.png") 
 

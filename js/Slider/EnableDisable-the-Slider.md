@@ -43,5 +43,5 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Defaul
 Execute the above code example to render the following output.
 
 
-{% include image.html url="/js/Slider/EnableDisable-the-Slider_images/EnableDisable-the-Slider_img1.png" %}
+![]("/js/Slider/EnableDisable-the-Slider_images/EnableDisable-the-Slider_img1.png") 
 

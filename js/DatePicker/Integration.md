@@ -78,7 +78,7 @@ The following example depicts the way to bind data to the **DatePicker** widget 
 
 
 
-{% include image.html url="/js/DatePicker/Integration_images/Integration_img2.png"%}
+![]("/js/DatePicker/Integration_images/Integration_img2.png")
 
 ## Knockout Binding
 
@@ -152,5 +152,5 @@ The following example depicts the way to bind data to the **DatePicker** widget 
 
 
 
-{% include image.html url="/js/DatePicker/Integration_images/Integration_img4.png"%}
+![]("/js/DatePicker/Integration_images/Integration_img4.png")
 

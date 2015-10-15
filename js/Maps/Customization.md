@@ -55,7 +55,7 @@ The above properties of `shapeSettings` are applied only when the `autoFill` pro
 
 
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img1.png"%}
+![]("/js/Maps/Customization_images/Customization_img1.png")
 
 ## Color Mapping
 
@@ -151,7 +151,7 @@ When the underlying object value is 700000, then the fill color of the correspon
 
 When the underlying value is below any of the given sorted range or above the sorted range, then the fill is set from fill.
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img2.png"%}
+![]("/js/Maps/Customization_images/Customization_img2.png")
 
 * `equalColorMapping` - The equalColorMapping is used to differentiate the shape’s fill based on its underlying value and color. The properties of equalColorMapping is listed in the following table.
 
@@ -266,7 +266,7 @@ Here USA election data is considered as input datasource and stored in “electi
 
 {% endhighlight %}
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img3.png" %}
+![]("/js/Maps/Customization_images/Customization_img3.png") 
 
 ## Color Palette
 
@@ -294,7 +294,7 @@ When `autoFill` property is set to true, shapes are filled with default colors f
 {% endhighlight %}
 
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img4.png"%}
+![]("/js/Maps/Customization_images/Customization_img4.png")
 
 ### Color Palette
 
@@ -331,7 +331,7 @@ This property is enabled only when `colorPalette` property value is set to “cu
 
 
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img5.png"%}
+![]("/js/Maps/Customization_images/Customization_img5.png")
 
 ## Tooltip
 
@@ -359,7 +359,7 @@ The tooltip is displayed only when you set `showTooltip` to “True” in the sh
 
 
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img6.png"%}
+![]("/js/Maps/Customization_images/Customization_img6.png")
 
 ### Tooltip Template
 
@@ -404,5 +404,5 @@ The `tooltipTemplate` property is used for customizing the template for tooltip.
 
 The following screenshot illustrates a map control displaying a Tooltip with template.
 
-{% include image.html url="/js/Maps/Customization_images/Customization_img7.png"%}
+![]("/js/Maps/Customization_images/Customization_img7.png")
 

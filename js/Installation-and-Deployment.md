@@ -50,15 +50,15 @@ The steps to download and configure the Syncfusion NuGet Packages in Visual Stud
 * Download the and unzip the Syncfusion NuGet Packages for JavaScript from [here](http://nuget.syncfusion.com/login) 
 
 * In Visual Studio, navigate to `Tools|Library Package Manager|Package Manager Settings`, the Options pop-up will appear on the screen as shown below,
-{% include image.html url="/js/Installation-and-Deployment_images/Installation-and-Deployment_img1.png" %}
+![]("/js/Installation-and-Deployment_images/Installation-and-Deployment_img1.png") 
 
 * Select `Package Manager|Package Sources` in the above pop-up and click on the `Browse` button(preceding the `Add` button) to navigate to the location where the above collection of NuGet packages are located on your machine.
-{% include image.html url="/js/Installation-and-Deployment_images/Installation-and-Deployment_img3.png" %}
+![]("/js/Installation-and-Deployment_images/Installation-and-Deployment_img3.png") 
 
 N>  The **Source** textbox in the above image denotes the location of the NuGet packages on your machine and the **Name** section, allows you to provide a unique name which we will refer to in the package installation section later.
 
 * Now click the `Add` button and the package name will be listed in the **Available package sources** list as shown below and then Click `OK`.
-{% include image.html url="/js/Installation-and-Deployment_images/Installation-and-Deployment_img4.png" %}
+![]("/js/Installation-and-Deployment_images/Installation-and-Deployment_img4.png") 
 
 * Now you can proceed with the installation. The steps involved in usage within your application is explained in the [Control Initialization](/js/control-initialization#configuring-and-installing-nuget-into-your-project) section.
 
