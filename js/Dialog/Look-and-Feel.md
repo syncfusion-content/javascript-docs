@@ -11,7 +11,7 @@ documentation: ug
 
 You can customize the appearance of **Dialog** widget using various themes that are available in **Essential JavaScript**. Applying themes customizes the entire control and its appearances. Refer the following link.
 
-<http://help.syncfusion.com/js/theming-in-essential-javascript-components>
+<http://docs.syncfusion.com/js/theming-in-essential-javascript-components>
 
 ## CSS Class
 

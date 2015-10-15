@@ -818,7 +818,7 @@ To apply the custom css class name to the Scheduler and to customize only the ba
 
 {% endhighlight %}
 
-> **Note: For more general information on applying custom themes to Syncfusion controls, refer [here](http://help.syncfusion.com/js/theming-in-essential-javascript-components#customizing-themes).**
+> **Note: For more general information on applying custom themes to Syncfusion controls, refer [here](http://docs.syncfusion.com/js/theming-in-essential-javascript-components#customizing-themes).**
 
 ### categorizeSettings 'object'
 {:#members:categorizeSettings }

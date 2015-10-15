@@ -22,7 +22,7 @@ Apply the plugin and property assigning to the **PercentageTextBox** widget elem
 
 To know more details about the **Angular binding**, refer the following link location,
 
-<http://help.syncfusion.com/js/angularjs>
+<http://docs.syncfusion.com/js/angularjs>
 
 The following example depicts the way to bind data to the **PercentageTextBox** widget through **angular support**.
 
