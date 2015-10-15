@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connector
-description: connector
+title: Connecting any two points, nodes or ports
+description: How to connect points, nodes or ports
 platform: js
 control: Diagram
 documentation: ug
