@@ -75,5 +75,5 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
 
 Output of the above steps.
 
-![]("/js/ListBox/RTL-Support_images/RTL-Support_img1.png")
+{% include image.html url="/js/ListBox/RTL-Support_images/RTL-Support_img1.png"%}
 

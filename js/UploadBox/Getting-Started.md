@@ -13,7 +13,7 @@ This section explains briefly about how to create an **Uploadbox** in your appli
 
 The following screenshot demonstrates the functionality of **Uploadbox** with the file extension.
 
-![]("/js/UploadBox/Getting-Started_images/Getting-Started_img1.png") 
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img1.png" %}
 
 In the above screenshot, you can upload a resume that restricts **.html** and **.txt** files and allows **.png** file extension. This helps you to avoid unsupported resume formats getting uploaded in a server.
 
@@ -172,13 +172,13 @@ Initialize the script for **Uploadbox.**
 
 The following screenshot displays an **Uploadbox** control.
 
-![]("/js/UploadBox/Getting-Started_images/Getting-Started_img2.png") 
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img2.png" %}
 
 
 
 After you upload the files, the following screen shot is displayed. 
 
-![]("/js/UploadBox/Getting-Started_images/Getting-Started_img3.png") 
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img3.png" %}
 
 N> The above screenshot displays the Uploadbox control that shows the files are uploaded successfully.
 
@@ -303,7 +303,7 @@ The following screenshot displays an **Uploadbox** control with the file extensi
 
 
 
-![]("/js/UploadBox/Getting-Started_images/Getting-Started_img4.png") 
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img4.png" %}
 
 The above screenshot shows the **Uploadbox** that allows “.**png**” files and restricts “**.txt”** and “**.html”** file formats. You can give the number file formats in both allow and deny textbox elements.
 
@@ -313,5 +313,5 @@ You can click the **Browse** button and select the file to upload multiple files
 
 The following screenshot displays an **Uploadbox** control with multiple files.
 
-![]("/js/UploadBox/Getting-Started_images/Getting-Started_img5.png") 
+{% include image.html url="/js/UploadBox/Getting-Started_images/Getting-Started_img5.png" %}
 

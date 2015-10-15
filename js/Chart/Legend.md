@@ -30,7 +30,7 @@ By default, legend is enabled in chart. You can enable or disable it using **vis
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img1.png" Caption="Legend visibility in chart")
+{% include image.html url="/js/Chart/Legend_images/Legend_img1.png" Caption="Legend visibility in chart"%}
 
 
 ## Legend title
@@ -56,7 +56,7 @@ For adding title to the legend, you have to specify **legend.title.text** option
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img2.png" Caption="Chart with legend title")
+{% include image.html url="/js/Chart/Legend_images/Legend_img2.png" Caption="Chart with legend title"%}
 
 
 ## Positioning and Aligning Legend
@@ -80,7 +80,7 @@ Using **position** option, you can position the legend at *left*, *right*, *top*
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img3.png" Caption="Change legend position")
+{% include image.html url="/js/Chart/Legend_images/Legend_img3.png" Caption="Change legend position"%}
 
 **Legend Alignment**
 
@@ -103,7 +103,7 @@ You can align the legend to *center*, *far* or *near* based on its position usin
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img4.png" Caption="Change legend position and alignment")
+{% include image.html url="/js/Chart/Legend_images/Legend_img4.png" Caption="Change legend position and alignment"%}
 
 
 ## Arranging legend items in rows and columns
@@ -135,7 +135,7 @@ You can arrange the legend items horizontally and vertically using rowCount and 
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img5.png" Caption="Arrangeing legend items in rows and columns")
+{% include image.html url="/js/Chart/Legend_images/Legend_img5.png" Caption="Arrangeing legend items in rows and columns"%}
 
 
 ## Customization
@@ -160,7 +160,7 @@ For changing the legend icon shape, you have to specify the shape in **shape** p
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img6.png" Caption="Changing legend shape")
+{% include image.html url="/js/Chart/Legend_images/Legend_img6.png" Caption="Changing legend shape"%}
 
 
 ### Legend items size and border
@@ -183,7 +183,7 @@ You can change the size of legend items using **itemStyle.width** and **itemStyl
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img7.png" Caption="Changing legend items size and border")
+{% include image.html url="/js/Chart/Legend_images/Legend_img7.png" Caption="Changing legend items size and border"%}
 
 
 ### Legend size
@@ -206,7 +206,7 @@ By default, legend takes 20% of **height** horizontally when it was placed on th
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img8.png" Caption="Change legend size")
+{% include image.html url="/js/Chart/Legend_images/Legend_img8.png" Caption="Change legend size"%}
 
 
 ### Legend Item Padding
@@ -229,7 +229,7 @@ You can control the spacing between legend items using **itemPadding** option of
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img9.png" Caption="Change padding between the legend items")
+{% include image.html url="/js/Chart/Legend_images/Legend_img9.png" Caption="Change padding between the legend items"%}
 
 
 ### Legend border
@@ -252,10 +252,7 @@ You can customize the legend border using **border** option in legend.
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img10.png")
-
-Customize the legend border
-{:.caption}
+{% include image.html url="/js/Chart/Legend_images/Legend_img10.png" Caption="Customize the legend border"%} 
 
 
 ### Scrollbar for legend
@@ -279,7 +276,7 @@ You can enable or disable the legend scrollbar using **enableScrollbar** option 
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img11.png" Caption="Enable scrollbar for legend")
+{% include image.html url="/js/Chart/Legend_images/Legend_img11.png" Caption="Enable scrollbar for legend"%}
 
 ### Customizing legend text
 
@@ -308,7 +305,7 @@ For customizing legend item text and title you can use **legend.font** and **leg
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img12.png" Caption="Customizing legend item and title text")
+{% include image.html url="/js/Chart/Legend_images/Legend_img12.png" Caption="Customizing legend item and title text"%}
 
 
 ## Handling legend item clicked
@@ -358,4 +355,4 @@ You can select a specific series or point while clicking on the corresponding le
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img13.png" Caption="Avoid series collapsing on legend item clicked")
+{% include image.html url="/js/Chart/Legend_images/Legend_img13.png" Caption="Avoid series collapsing on legend item clicked"%}

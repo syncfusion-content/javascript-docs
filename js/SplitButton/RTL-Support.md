@@ -66,5 +66,5 @@ Configure the styles
 
 Execute the above code to render the following output.
 
-![]("/js/SplitButton/RTL-Support_images/RTL-Support_img1.png") 
+{% include image.html url="/js/SplitButton/RTL-Support_images/RTL-Support_img1.png" %}
 

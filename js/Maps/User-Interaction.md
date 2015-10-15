@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: User-Interaction
 description: user interaction
@@ -47,7 +47,6 @@ You can select the shape by tapping on the shape. The Single selection is enable
 
 ## MultiSelection
 
-
 This feature enables you to select multiple map shapes on mouse taps accompanied by the "**Control**" key press. To enable this feature, set the `selectionMode` property as "**multiple**" along with the `enableSelection` property.
 
 {% highlight js %}
@@ -94,9 +93,7 @@ You can enable this feature by setting the `draggingOnSelection` property in the
 
 {% endhighlight %}
 
-
-![](User-Interaction_images/User-Interaction_img1.png)
-
+{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img4.png"%}
 
 ## Zooming
 
@@ -183,7 +180,7 @@ You can zoom the map with mouse events using mouse scroll. When the mouse is scr
 
 When the map is double-tapped using mouse, the zoom in operation is performed. 
 
-![](User-Interaction_images/User-Interaction_img2.png)
+{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img2.png"%}
 
 ### Shape Selection
 
@@ -269,7 +266,7 @@ The panning feature enables map navigation. The `enablePan` property is used to 
 **Navigation** control is built-in with **Maps** control. With Navigation control, **Maps** can be panned in any direction and zoomed. It is possible to show or hide the NavigationControl by `enableNavigation` property.
 
 
-![](User-Interaction_images/User-Interaction_img3.png)
+{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img3.png"%}
 
 
 

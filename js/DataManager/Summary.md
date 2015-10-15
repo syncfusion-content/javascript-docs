@@ -79,7 +79,7 @@ The result of the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Summary_images/Summary_img1.png") 
+{% include image.html url="/js/DataManager/Summary_images/Summary_img1.png" %}
 
 ##Min
 
@@ -134,7 +134,7 @@ The minimum of particular field can be calculated as follows.
 
 The result of the above code example is illustrated as follows.
 
-![]("/js/DataManager/Summary_images/Summary_img2.png") 
+{% include image.html url="/js/DataManager/Summary_images/Summary_img2.png" %}
 
 ##Max
 
@@ -190,7 +190,7 @@ The maximum of particular field can be calculated as follows.
 
 The result for the above code example is illustrated as follows.
 
-![]("/js/DataManager/Summary_images/Summary_img3.png") 
+{% include image.html url="/js/DataManager/Summary_images/Summary_img3.png" %}
 
 ##Avg
 
@@ -243,7 +243,7 @@ The Average summary type provides the average of the given data. The Average dat
 
 The result of the above code example is illustrated as follows.
 
-![]("/js/DataManager/Summary_images/Summary_img4.png") 
+{% include image.html url="/js/DataManager/Summary_images/Summary_img4.png" %}
 
 ##Distinct
 
@@ -313,5 +313,5 @@ The following code example illustrates how to use the `ej.distinct` method. In t
 
 The result for the above code example is illustrated as follows.
 
-![]("/js/DataManager/Summary_images/Summary_img5.png") 
+{% include image.html url="/js/DataManager/Summary_images/Summary_img5.png" %}
 

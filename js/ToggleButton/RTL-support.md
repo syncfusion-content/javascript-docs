@@ -48,6 +48,6 @@ Output of above steps
 
 
 
-![]("/js/ToggleButton/RTL-support_images/RTL-support_img1.png") 
+{% include image.html url="/js/ToggleButton/RTL-support_images/RTL-support_img1.png" %}
 
 

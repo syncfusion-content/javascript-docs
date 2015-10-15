@@ -65,5 +65,5 @@ Add the following code into sample.
 
 
 
-![]("/js/Tile/Template-Support_images/Template-Support_img1.png")
+{% include image.html url="/js/Tile/Template-Support_images/Template-Support_img1.png"%}
 

@@ -170,7 +170,7 @@ The following code example explains how to render the multiple resources on the 
 
 The output of the above code looks as follows.
 
- ![]("/js/Schedule/Resources_images/Resources_img1.png" Caption="")
+ {% include image.html url="/js/Schedule/Resources_images/Resources_img1.png" Caption=""%}
 
 
 **Resource Grouping**
@@ -315,7 +315,7 @@ The above specified resource related fields are require to  bound to the resourc
 
 Execute the above code to render the output as follows.
 
-![]("/js/Schedule/Resources_images/Resources_img2.png" Caption="")
+{% include image.html url="/js/Schedule/Resources_images/Resources_img2.png" Caption=""%}
 
 
 **Multiple Appointment Creation**
@@ -374,21 +374,21 @@ $(function () {
 
 Execute the above code to display the **Schedule** control with appointments saved for multiple resources differentiated with its specific colors.
 
-![]("/js/Schedule/Resources_images/Resources_img3.png" Caption="schedule with multiple resource creation.")
+{% include image.html url="/js/Schedule/Resources_images/Resources_img3.png" Caption="schedule with multiple resource creation."%}
 
 To save the same appointment for multiple resources, refer the following steps.Double-click on the required work cell, the appointment window pops up as shown in the following image with an individual autocomplete field for selecting the available resources.
 
-![]("/js/Schedule/Resources_images/Resources_img4.png" Caption="schedule with multiple appointment window.")
+{% include image.html url="/js/Schedule/Resources_images/Resources_img4.png" Caption="schedule with multiple appointment window."%}
 
 
 Since the **allowMultiple** property is set to ‘true’ for this resource object, so you can select any number of available resources in it as follows.
 
-![]("/js/Schedule/Resources_images/Resources_img5.png" Caption="schedule with multiple appointment window with different type owner.")
+{% include image.html url="/js/Schedule/Resources_images/Resources_img5.png" Caption="schedule with multiple appointment window with different type owner."%}
 
 
 The same appointment with the subject **Test Ride** is created for each resource individually as follows when you click the **Done** button.
 
-![]("/js/Schedule/Resources_images/Resources_img6.png" Caption="schedule with saved multiple appointments with different type owner.")
+{% include image.html url="/js/Schedule/Resources_images/Resources_img6.png" Caption="schedule with saved multiple appointments with different type owner."%}
 
 
 

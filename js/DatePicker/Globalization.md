@@ -50,5 +50,5 @@ The following screenshot displays the output for the above code example.
 
 
 
-![]("/js/DatePicker/Globalization_images/Globalization_img1.png")
+{% include image.html url="/js/DatePicker/Globalization_images/Globalization_img1.png"%}
 

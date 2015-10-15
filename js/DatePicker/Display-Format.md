@@ -95,7 +95,7 @@ The following screenshot displays the output for the above code.
 
 
 
-![]("/js/DatePicker/Display-Format_images/Display-Format_img1.png")
+{% include image.html url="/js/DatePicker/Display-Format_images/Display-Format_img1.png"%}
 
 ## Day header format
 
@@ -169,7 +169,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 The following screenshot displays the output for the above code.
 
 
-![]("/js/DatePicker/Display-Format_images/Display-Format_img2.png")
+{% include image.html url="/js/DatePicker/Display-Format_images/Display-Format_img2.png"%}
 
 ## Header format
 
@@ -202,5 +202,5 @@ The following screenshot displays the output for the above code.
 
 
 
-![]("/js/DatePicker/Display-Format_images/Display-Format_img3.png")
+{% include image.html url="/js/DatePicker/Display-Format_images/Display-Format_img3.png"%}
 

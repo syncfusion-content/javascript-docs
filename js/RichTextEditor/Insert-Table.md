@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Insert-Table
 description: insert table
@@ -23,10 +23,7 @@ You can also use the “**Create custom table**” link under the grid. This lin
 
 This popup window contains options to change the width and height of cells, cells spacing, cells padding, and many more.
 
-
 ![](Insert-Table_images/Insert-Table_img1.png)
-
-
 
 ## Table Manipulation
 
@@ -41,6 +38,4 @@ You can modify the existing information or add new information in a table by usi
 * Delete table
 
 
-
 ![](Insert-Table_images/Insert-Table_img2.png)
-

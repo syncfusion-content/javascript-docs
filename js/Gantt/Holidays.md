@@ -26,5 +26,5 @@ Holidays in Gantt control is used to highlight the non-working days in Gantt con
 
 The following screenshot shows the output of Holidays in Gantt control.
 
-![]("/js/Gantt/Holidays_images/Holidays_img1.png")
+{% include image.html url="/js/Gantt/Holidays_images/Holidays_img1.png"%}
 

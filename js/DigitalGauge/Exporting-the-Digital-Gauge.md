@@ -45,5 +45,5 @@ documentation: ug
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-![]("/js/DigitalGauge/Exporting-the-Digital-Gauge_images/Exporting-the-Digital-Gauge_img1.png" Caption="")
+{% include image.html url="/js/DigitalGauge/Exporting-the-Digital-Gauge_images/Exporting-the-Digital-Gauge_img1.png" Caption=""%}
 

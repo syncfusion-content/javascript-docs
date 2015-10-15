@@ -11,11 +11,7 @@ documentation: ug
 
 **Gridlines** are the pattern of lines drawn behind the Diagram elements. It provides a visual guidance while dragging or arranging the objects on the Diagram surface.
 
-
 ## Customize the gridlines visibility
-
-![]("/js/Diagram/Gridlines_images/Gridlines_img1.png") 
-
 
 The `snapConstraints` property of `snapSettings` enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
 
@@ -159,7 +155,6 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-
 ## Snap To Objects
 
 The snap-to-object provides visual cues to assist with aligning and spacing Diagram elements. A node can be snapped with its neighbouring objects based on certain alignments. Such alignments are visually represented as smart guides. 
@@ -180,7 +175,4 @@ $("#diagram").ejDiagram({
 {% endhighlight %}
 
 {% include image.html url="/js/Diagram/Gridlines_images/Gridlines_img4.png" %}
-
-
-![]("/js/Diagram/Gridlines_images/Gridlines_img2.png") 
 

@@ -64,5 +64,5 @@ In the **HTML** page set a **&lt;div&gt;** element with dialog content for rende
 
 The output of modal dialog control. 
 
-![]("/js/Dialog/Modal-Dialog-Support_images/Modal-Dialog-Support_img1.png") 
+{% include image.html url="/js/Dialog/Modal-Dialog-Support_images/Modal-Dialog-Support_img1.png" %}
 

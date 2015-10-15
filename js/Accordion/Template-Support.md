@@ -60,5 +60,5 @@ In **JavaScript**, you can load the contents or **HTML** elements directly insid
 
 
 
-![]("/js/Accordion/Template-Support_images/Template-Support_img1.png")
+{% include image.html url="/js/Accordion/Template-Support_images/Template-Support_img1.png"%}
 

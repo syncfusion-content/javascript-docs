@@ -47,5 +47,5 @@ Resources are represented by staff, equipment and materials etc. In Gantt contro
 
 The following screenshot shows Gantt control with Resources.
 
-![]("/js/Gantt/Resources_images/Resources_img1.png")
+{% include image.html url="/js/Gantt/Resources_images/Resources_img1.png"%}
 

@@ -43,7 +43,7 @@ Add the following code inside the **script** tag.
 
 
 
-![]("/js/Tile/Image-Configuration_images/Image-Configuration_img1.png")
+{% include image.html url="/js/Tile/Image-Configuration_images/Image-Configuration_img1.png"%}
 
 You can give images for each tile through **css** classes by using **"data-ej-imageclass”** attribute. You can define your desired styles in the specified class.
 
@@ -73,5 +73,5 @@ Add the following code inside the **script** tag.
 
 {% endhighlight %}
 
-![]("/js/Tile/Image-Configuration_images/Image-Configuration_img2.png")
+{% include image.html url="/js/Tile/Image-Configuration_images/Image-Configuration_img2.png"%}
 

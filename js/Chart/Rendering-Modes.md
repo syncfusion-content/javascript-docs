@@ -54,7 +54,7 @@ The following code example shows how to enable HTML5 Canvas rendering in chart.
 
 {% endhighlight %}
 
-![]("/js/Chart/Rendering-Modes_images/Rendering-Modes_img1.png" Caption="Canvas Chart")
+{% include image.html url="/js/Chart/Rendering-Modes_images/Rendering-Modes_img1.png" Caption="Canvas Chart"%}
 
 **Limitations:**
   

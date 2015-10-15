@@ -93,5 +93,5 @@ Execute the above code to render the following output.
 
 
 
-![]("/js/TimePicker/Angular-Support_images/Angular-Support_img1.png") 
+{% include image.html url="/js/TimePicker/Angular-Support_images/Angular-Support_img1.png" %}
 

@@ -50,7 +50,7 @@ Circular Gauge contains angular support. You can add object as well as array obj
 
 Execute the above code to render the output as follows.
 
-![]("/js/CircularGauge/MVVM_images/MVVM_img1.png" Caption="")
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img1.png" Caption=""%}
 
 ## Adding Scale Collection
 
@@ -79,7 +79,7 @@ Execute the above code to render the output as follows.
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/MVVM_images/MVVM_img2.png" Caption="")
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img2.png" Caption=""%}
 
 ## Adding Pointer Collection
 
@@ -112,7 +112,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the output as follows.
 
-![]("/js/CircularGauge/MVVM_images/MVVM_img3.png" Caption="")
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img3.png" Caption=""%}
 
 ## Adding Label Collection
 
@@ -143,7 +143,7 @@ Execute the above code to render the output as follows.
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/MVVM_images/MVVM_img4.png" Caption="")
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img4.png" Caption=""%}
 
 ## Adding Tick Collection
 
@@ -180,7 +180,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/MVVM_images/MVVM_img5.png" Caption="")
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img5.png" Caption=""%}
 
 ## Adding Range Collection
 
@@ -225,7 +225,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/MVVM_images/MVVM_img6.png" Caption="")
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img6.png" Caption=""%}
 
 ## Two Way Binding 
 
@@ -300,7 +300,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/MVVM_images/MVVM_img7.png" Caption="")
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img7.png" Caption=""%}
 
 ## Knockout JS
 
@@ -360,5 +360,5 @@ Knockout support allows you to bind the **HTML** elements against any of the ava
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/MVVM_images/MVVM_img8.png" Caption="")
+{% include image.html url="/js/CircularGauge/MVVM_images/MVVM_img8.png" Caption=""%}
 

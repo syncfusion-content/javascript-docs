@@ -94,7 +94,7 @@ The appointments are provided with rich template support, so that the customizat
 
 The output for the above code is as follows that displays the appointment with the template defined for it.
 
-![]("/js/Schedule/Template_images/Template_img1.png" Caption="")
+{% include image.html url="/js/Schedule/Template_images/Template_img1.png" Caption=""%}
 
 
 ## Resource Header Template
@@ -215,7 +215,7 @@ N> **Important**: The above used images should be present in a separate images f
 The output for the above code which displays the resource with the template defined for it is given below.
 
 
-![]("/js/Schedule/Template_images/Template_img2.png" Caption="")
+{% include image.html url="/js/Schedule/Template_images/Template_img2.png" Caption=""%}
 
 
 

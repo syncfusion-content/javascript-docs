@@ -131,8 +131,4 @@ var options = {
 };
 diagram.exportDiagram(options);
 
-
 {% endhighlight %}
-
-![]("/js/Diagram/Exporting_images/Exporting_img1.png") 
-

@@ -82,10 +82,6 @@ $(function() {
 
 {% endhighlight %}
 
-
 {% include image.html url="/js/Diagram/Localization_images/Localization_img1.png" %}
 
 N> You have to define the textual descriptions of the context menu items for your custom cultures.
-
-![]("/js/Diagram/Localization_images/Localization_img1.png") 
-

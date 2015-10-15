@@ -19,25 +19,6 @@ You can add a group to the Diagram model through `nodes` collection. To define a
 
 {% highlight js %}
 
-
-//Creates a group node.
-var nodes = [ //Group node.
-    {
-        name: "group",
-        type: "group",
-        children: [
-            { name: "node1", parent: "group" },
-            { name: "node2", parent: "group" }
-        ]
-    }
-];
-{% endhighlight %}
-
-![]("/js/Diagram/Group_images/Group_img1.png") 
-
-## Selecting a Group
-
-{% highlight js %}
 var nodes = [
         {
         //Sets the name
@@ -81,25 +62,15 @@ $("#DiagramContent").ejDiagram({
     nodes: nodes
 });
 
-
 {% endhighlight %}
  
 ### Add group at run time
 
-![]("/js/Diagram/Group_images/Group_img2.png") 
-
-
 You can add a group node at runtime by using the client side method `add`.
-
 
 The following code illustrates how a group node is added at run time.
 
 {% highlight js %}
-
-![]("/js/Diagram/Group_images/Group_img3.png") 
-
-![]("/js/Diagram/Group_images/Group_img4.png") 
-
 
 var group = {
     name: "group1",
@@ -221,7 +192,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Group_images/Group_img9.png") 
+{% include image.html url="/js/Diagram/Group_images/Group_img9.png" %}
 
 ### Stack
 
@@ -278,7 +249,6 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-
 {% include image.html url="/js/Diagram/Group_images/Group_img10.png" %}
 
 ## Difference between a basic group and containers
@@ -304,6 +274,3 @@ It is applicable for container.</td></tr>
 ## Interaction
 
 You can edit the group and its children at runtime. For more information about how to interact with a group, refer to [Interaction](/js/Diagram/Interaction "Selection").
-
-![]("/js/Diagram/Group_images/Group_img10.png") 
-

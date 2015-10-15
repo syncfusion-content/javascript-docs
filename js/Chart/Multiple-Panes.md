@@ -60,7 +60,7 @@ To split the chart area vertically into number of rows use **rowDefinitions** of
 
 {% endhighlight %}
 
-![]("/js/Chart/Multiple-Panes_images/Multiple-Panes_img1.png" Caption="Chart with multiple rows")
+{% include image.html url="/js/Chart/Multiple-Panes_images/Multiple-Panes_img1.png" Caption="Chart with multiple rows"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/multipleaxes) here to view the online demo sample for multiple panes.
 
@@ -101,7 +101,7 @@ For spanning the vertical axis along multiple panes vertically, you can use [row
 
 {% endhighlight %}
 
-![]("/js/Chart/Multiple-Panes_images/Multiple-Panes_img2.png" Caption="Chart with row span")
+{% include image.html url="/js/Chart/Multiple-Panes_images/Multiple-Panes_img2.png" Caption="Chart with row span"%}
 
 
 ## Column Definitions
@@ -146,7 +146,7 @@ To split the chart area horizontally into number of columns use **columnDefiniti
 
 {% endhighlight %}
 
-![]("/js/Chart/Multiple-Panes_images/Multiple-Panes_img3.png" Caption="Chart with multiple columns")
+{% include image.html url="/js/Chart/Multiple-Panes_images/Multiple-Panes_img3.png" Caption="Chart with multiple columns"%}
 
 
 **Column Span**
@@ -185,5 +185,5 @@ For spanning the horizontal axis along multiple panes horizontally, you can use 
 
 {% endhighlight %}
 
-![]("/js/Chart/Multiple-Panes_images/Multiple-Panes_img4.png" Caption="Chart with column span")
+{% include image.html url="/js/Chart/Multiple-Panes_images/Multiple-Panes_img4.png" Caption="Chart with column span"%}
 

@@ -58,7 +58,7 @@ The Syncfusion components can be localized on two basis,
 ### Use of Built-in localized words in the DatePicker control
 
 The date formats, day names and month names are automatically translated into the specific culture based on the culture-code assigned to the **locale** property, as these date related common conversions are processed as built-in within the source. Here, the above code will render the DatePicker control in **German** culture, as shown below,
-![]("/js/Localization_images/Localization_img1.png") 
+{% include image.html url="/js/Localization_images/Localization_img1.png" %}
 
 #### Example 1: Defining locale property in the DatePicker control using built-in localized texts - Static
 
@@ -98,7 +98,7 @@ Copy the file **globalize.culture.de-DE.min.js** into the **Scripts** folder of 
 {% endhighlight %}
 
 Browse your HTML page in any of the web browser and now the screen will display the DatePicker widget with the localized texts as shown below,
-![]("/js/Localization_images/Localization_img2.png") 
+{% include image.html url="/js/Localization_images/Localization_img2.png" %}
 
 #### To change the locale property dynamically in DatePicker control
 
@@ -298,7 +298,7 @@ Now define the **locale** property for the Grid control with the appropriate **c
 {% endhighlight %}
 
 Browse your HTML page in any of the web browser and now the screen will display the Grid control with the localized texts. Now double click on any of the row – the edit record dialog too pops-up with the localized words as shown below,
-![]("/js/Localization_images/Localization_img3.png") 
+{% include image.html url="/js/Localization_images/Localization_img3.png" %}
 
 #### To change the locale property dynamically in Grid control
 

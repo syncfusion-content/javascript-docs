@@ -56,5 +56,5 @@ Output for Accordion control with loaded Ajax content is as follows.
 
 
 
-![]("/js/Accordion/Ajax-settings_images/Ajax-settings_img1.png")
+{% include image.html url="/js/Accordion/Ajax-settings_images/Ajax-settings_img1.png"%}
 

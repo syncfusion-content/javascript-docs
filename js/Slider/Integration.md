@@ -91,7 +91,7 @@ The following example explains you the binding of **value** property using the A
 Execute the above code example to render the following output.
 
 
-![]("/js/Slider/Integration_images/Integration_img1.png") 
+{% include image.html url="/js/Slider/Integration_images/Integration_img1.png" %}
 
 ## Knockout binding
 
@@ -145,5 +145,5 @@ The following example explains you the binding of **value** property using the A
 Execute the above code example to render the following output.
 
 
-![]("/js/Slider/Integration_images/Integration_img2.png") 
+{% include image.html url="/js/Slider/Integration_images/Integration_img2.png" %}
 

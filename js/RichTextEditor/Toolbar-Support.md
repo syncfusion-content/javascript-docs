@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Toolbar-Support
 description: toolbar support
@@ -88,10 +88,8 @@ Add the following code example in your script section.
 
 {% endhighlight %}
 
-
 ![](Toolbar-Support_images/Toolbar-Support_img1.png)
 
 The following screenshot consists of formatted content by using the available toolbar items in **RTE** control.
-
 
 ![](Toolbar-Support_images/Toolbar-Support_img2.png)

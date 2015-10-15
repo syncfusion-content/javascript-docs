@@ -49,7 +49,7 @@ You can also set the chart dimension by using the **size** property of the chart
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img1.png" Caption="Chart dimension in pixels")
+{% include image.html url="/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img1.png" Caption="Chart dimension in pixels"%}
 
 ## Setting size relative to the container size
 
@@ -72,7 +72,7 @@ You can specify the chart size in percentage by using the **size** property. The
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img2.png" Caption="Chart in percentage")
+{% include image.html url="/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img2.png" Caption="Chart in percentage"%}
 
 
 ## Responsive chart

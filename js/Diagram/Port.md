@@ -80,7 +80,7 @@ You can add ports at runtime by using the client side method `addPorts`. The fol
 
 {% endhighlight %}
 
-![]("/js/Diagram/Port_images/Port_img1.png") 
+{% include image.html url="/js/Diagram/Port_images/Port_img1.png" %}
 
 To explore the set of properties for defining a port, refer to [Port Properties](/js/api/ejDiagram "members:nodes-ports")
 
@@ -97,11 +97,7 @@ The client side API `updatePort` is used to update the ports at run time. The fo
 
 {% endhighlight %}
 
-
 ## Connect with ports    
-
-![]("/js/Diagram/Port_images/Port_img2.png") 
-
 
 Connector’s 'sourcePort' and 'targetPort' properties allow to create connections between some specific points of source/target nodes. 
 For more information about creating connections with port, refer to [Connections with ports](/js/Diagram/Connector "Connections with ports")  

@@ -60,7 +60,7 @@ The result of the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img1.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img1.png" %}
 
 ##REST Services
 
@@ -119,7 +119,7 @@ The result of the above code example is illustrated as follows.
 
 The result of the above code example is illustrated as follows.
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img2.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img2.png" %}
 
 ##OData V4
 
@@ -169,7 +169,7 @@ The request and response to the service from the **DataManager** is illustrated 
 
 
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img3.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img3.png" %}
 
  _OData v4 request and response_
 
@@ -177,7 +177,7 @@ The result of the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img4.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img4.png" %}
 
  _OData v4 binding_
 
@@ -228,7 +228,7 @@ Refer to the following code example for consuming Web API data using ej.DataMana
 
 The request to the Web API and response is illustrated as follows.
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img5.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img5.png" %}
 
 _Web API adaptor request and response_
 
@@ -236,7 +236,7 @@ The result for the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img6.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img6.png" %}
 
 _Web API data binding_
 
@@ -287,7 +287,7 @@ Refer to the following code example to know how the **DataManager** can be used 
 {% endhighlight %}
 
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img7.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img7.png" %}
 
 Consuming data from the MVC controller`s action is as follows. Now the data from the action is handled by the UrlAdaptor.
 
@@ -353,7 +353,7 @@ Consuming data from the MVC controller`s action is as follows. Now the data from
 
 The result and the request-response to the controller is illustrated as follows.
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img8.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img8.png" %}
 
 ##Offline Mode
 
@@ -408,7 +408,7 @@ The result of the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img9.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img9.png" %}
 
 ##Load on demand
 
@@ -493,7 +493,7 @@ You can use the following code example for implementing load on demand using **D
 
 The result of the above code example is illustrated as follows.
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img10.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img10.png" %}
 
  _Load on demand_
 
@@ -501,7 +501,7 @@ The request and the response for the above code is send as follows.
 
 
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img11.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img11.png" %}
 
  _Demanded data_	
  		
@@ -603,7 +603,7 @@ You can set the custom headers using pre-request callback **beforeSend** as foll
 
 The above method generates the request header with custom header as follows.
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img12.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img12.png" %}
 
 ##Cross domain & JSONP
 
@@ -655,7 +655,7 @@ Result of above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img13.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img13.png" %}
 
 ##Html Table
 
@@ -743,4 +743,4 @@ Refer to the following code example for the **HTML** element binding using **Dat
 The result of the above code example is illustrated as follows.
 
 
-![]("/js/DataManager/Data-Binding_images/Data-Binding_img14.png") 
+{% include image.html url="/js/DataManager/Data-Binding_images/Data-Binding_img14.png" %}

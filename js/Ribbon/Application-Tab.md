@@ -59,5 +59,5 @@ The **application menu** support is provided in the Ribbon control application t
 
 The following screenshot illustrates Ribbon with application menu.
 
-![]("/js/Ribbon/Application-Tab_images/Application-Tab_img1.png")
+{% include image.html url="/js/Ribbon/Application-Tab_images/Application-Tab_img1.png"%}
 

@@ -65,7 +65,7 @@ Execute the above code to render the following output.
 
 
 
-![]("/js/LinearGauge/Basic-Settings_images/Basic-Settings_img1.png" Caption="")
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img1.png" Caption=""%}
 
 
 
@@ -125,7 +125,7 @@ Execute the above code to render the following output.
 
 
 
-![]("/js/LinearGauge/Basic-Settings_images/Basic-Settings_img2.png" Caption="")
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img2.png" Caption=""%}
 
 
 
@@ -196,7 +196,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![]("/js/LinearGauge/Basic-Settings_images/Basic-Settings_img3.png" Caption="")
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img3.png" Caption=""%}
 
 
 
@@ -261,7 +261,7 @@ Execute the above code to render the following output.
 Execute the above code to render the following output.
 
 
-![]("/js/LinearGauge/Basic-Settings_images/Basic-Settings_img4.png" Caption="")
+{% include image.html url="/js/LinearGauge/Basic-Settings_images/Basic-Settings_img4.png" Caption=""%}
 
 
 

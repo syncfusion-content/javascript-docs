@@ -73,7 +73,7 @@ N>   In the above code, **value** is one of the DatePicker property to set the d
 N>   The order of the reference to the script files made in the above section should be maintained in the same manner as mentioned above. Before making use of the unobtrusive script in your application, make sure that you have copied the **ej.unobtrusive.min.js** file from its installed location into the **scripts/ej** folder of your application.
 
 The output of the above code will look as the one shown below with the value set to the given date,
-![]("/js/Unobtrusive-Support_images/Unobtrusive-Support_img1.png") 
+{% include image.html url="/js/Unobtrusive-Support_images/Unobtrusive-Support_img1.png" %}
 
 ## EJ role
 
@@ -107,7 +107,7 @@ N>   In the above code, **value** is one of the DatePicker property to set the d
 N>   Also, before proceeding with the property definition, it is necessary to define the control name with the **ej-** prefix, in order to instruct which control is needed to be created. (Here, ej-datepicker is defined first, before defining other properties of it.)
 
 The output of the above code will look as the one shown below with the value set to the given date,
-![]("/js/Unobtrusive-Support_images/Unobtrusive-Support_img2.png") 
+{% include image.html url="/js/Unobtrusive-Support_images/Unobtrusive-Support_img2.png" %}
 
 ## Directives
 
@@ -141,7 +141,7 @@ N>   In the above code, **value** is one of the available DatePicker property to
 N>   Also, you can notice here that the HTML tag name is replaced by the control name to be created.
 
 The output of the above code will look as the one shown below with the value set to the given date,
-![]("/js/Unobtrusive-Support_images/Unobtrusive-Support_img3.png") 
+{% include image.html url="/js/Unobtrusive-Support_images/Unobtrusive-Support_img3.png" %}
 
 The unobtrusive support can be easily achieved with the above specified 3 types of control initialization methods and all the options (properties) available within the Syncfusion controls can be easily assigned with its required values in an unobtrusive way. Thus, the control creation can be entirely coded in plain HTML with this unobtrusive support, by maintaining the scripts and css references separately.
 

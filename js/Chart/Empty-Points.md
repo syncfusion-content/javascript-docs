@@ -30,6 +30,6 @@ The Data points that uses the **null** or **undefined** as value are considered 
 
 {% endhighlight %}
 
-![]("/js/Chart/Empty-Points_images/Empty-Points_img1.png" Caption="Chart with empty points")
+{% include image.html url="/js/Chart/Empty-Points_images/Empty-Points_img1.png" Caption="Chart with empty points"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/emptypoints) here to view the online demo sample for empty points.

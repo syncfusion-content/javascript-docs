@@ -192,7 +192,7 @@ Refer the external dependency to support localization
 
 The following screenshot shows Gantt with French culture.
 
-![]("/js/Gantt/Localization_images/Localization_img1.png")
+{% include image.html url="/js/Gantt/Localization_images/Localization_img1.png"%}
 
 
 

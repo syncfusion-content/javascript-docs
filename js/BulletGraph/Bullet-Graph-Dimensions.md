@@ -28,7 +28,7 @@ $("#bullet1").ejBulletGraph({
 
 In the above code example, width is set as 500 pixel and height is set as 100 pixel. The output of the above code example with dimension 500 * 100 is as follows.
 
-![]("/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img1.png") 
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img1.png" %}
 
 ## Value for performance bar
 
@@ -49,7 +49,7 @@ $("#bullet1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with a performance measure value of 5.
 
-![]("/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img2.png")
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img2.png"%}
 
 ## Comparative measure value
 
@@ -70,7 +70,7 @@ $("#bullet1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with comparative measure value of 5.
 
-![]("/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img3.png")
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img3.png"%}
 
 ## Theme
 
@@ -91,7 +91,7 @@ $("#bullet1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with **flatdark** theme
 
-![]("/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img4.png")
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img4.png"%}
 
 ## Orientation
 
@@ -131,7 +131,7 @@ $("#bullet1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** in a backward direction.
 
-![]("/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img5.png") 
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img5.png" %}
 
 ## Qualitative range size
 
@@ -153,7 +153,7 @@ $("#bullet1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with Qualitative range of size 50
 
-![]("/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img6.png") 
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img6.png" %}
 
 ## Quantitative scale length
 
@@ -174,5 +174,5 @@ Length of the **Quantitative****scale** is customized using **quantitativeScaleL
 
 The following screenshot displays **Bullet Graph** with Quantitative scale length of 500.
 
-![]("/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img7.png") 
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Dimensions_images/Bullet-Graph-Dimensions_img7.png" %}
 

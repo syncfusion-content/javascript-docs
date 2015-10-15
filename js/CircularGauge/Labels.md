@@ -41,7 +41,7 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Labels_images/Labels_img1.png" Caption="")
+{% include image.html url="/js/CircularGauge/Labels_images/Labels_img1.png" Caption=""%}
 
 ## Label Customization
 
@@ -104,7 +104,7 @@ Font option is also available on the labels. The basic three properties of fonts
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Labels_images/Labels_img2.png" Caption="")
+{% include image.html url="/js/CircularGauge/Labels_images/Labels_img2.png" Caption=""%}
 
 **Unit text and Position**
 
@@ -153,7 +153,7 @@ Labels can be positioned with the help of two properties such as **distanceFromS
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Labels_images/Labels_img3.png" Caption="")
+{% include image.html url="/js/CircularGauge/Labels_images/Labels_img3.png" Caption=""%}
 
 ## Multiple Labels
 
@@ -199,5 +199,5 @@ You can achieve multiple labels such as minor and major in a **Gauge** sample sc
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Labels_images/Labels_img4.png" Caption="")
+{% include image.html url="/js/CircularGauge/Labels_images/Labels_img4.png" Caption=""%}
 

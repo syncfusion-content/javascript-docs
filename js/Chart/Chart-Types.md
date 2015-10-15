@@ -29,7 +29,7 @@ To render a Line Chart, set the series *type* as **"line"** in the chart series.
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img1.png" Caption="Line Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img1.png" Caption="Line Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/line) here to view the Line Chart online demo sample.
 
@@ -53,7 +53,7 @@ For changing the width of the line segment, you can use the **width** property i
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img2.png" Caption="Changing the line width")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img2.png" Caption="Changing the line width"%}
 
 
 ### Dashed lines
@@ -74,7 +74,7 @@ To render the line series with dotted lines, you can use the [dashArray](../api/
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img3.png" Caption="Line series with dashed lines")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img3.png" Caption="Line series with dashed lines"%}
 
 
 
@@ -98,7 +98,7 @@ For customizing the start and end caps of the line segment, you can use the [lin
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img4.png" Caption="Changin line cap")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img4.png" Caption="Changin line cap"%}
 
 
 ### Changing the line join
@@ -122,7 +122,7 @@ You can use the [lineJoin](../api/ejchart.html#members:series-linejoin) property
 {% endhighlight %}
 
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img5.png" Caption="Changing the line join")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img5.png" Caption="Changing the line join"%}
 
 
 ## Step Line Chart
@@ -145,7 +145,7 @@ To render a Step Line Chart, set the series *type* as **"stepline"** in the char
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img6.png" Caption="Step Line Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img6.png" Caption="Step Line Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stepline) here to view the Step Line Chart online demo sample.
 
@@ -169,7 +169,7 @@ To change the line width, you can use the **width** property.
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img7.png" Caption="Changing the step line width")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img7.png" Caption="Changing the step line width"%}
 
 
 ### Dashed lines
@@ -190,7 +190,7 @@ To render the step line series with dotted lines, you can use the [dashArray](..
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img8.png" Caption="Step Line series with dashed lines")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img8.png" Caption="Step Line series with dashed lines"%}
 
 
 
@@ -214,7 +214,7 @@ For customizing the start and end caps of the line segment, you can use the [lin
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img9.png" Caption="Changin line cap")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img9.png" Caption="Changin line cap"%}
 
 
 ### Changing the line join
@@ -238,7 +238,7 @@ You can use the [lineJoin](../api/ejchart.html#members:series-linejoin) property
 {% endhighlight %}
 
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img10.png" Caption="Changing the line join")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img10.png" Caption="Changing the line join"%}
 
 
 ## Area Chart
@@ -264,7 +264,7 @@ To render an Area chart, you can specify the series *type* as **“area”** in 
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img11.png" Caption="Area Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img11.png" Caption="Area Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/area) here to view the Area Chart online demo.
 
@@ -302,7 +302,7 @@ Since the RangeArea series requires two y values for a point, you have to add th
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img12.png" Caption="RangeArea Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img12.png" Caption="RangeArea Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/rangearea) here to view our Range Area Chart online demo.
 
@@ -329,7 +329,7 @@ To render a Step Area Chart, set *type* as **"stepArea"** in the chart series. F
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img13.png" Caption="StepArea Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img13.png" Caption="StepArea Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/steparea) here to view our Step Area Chart online demo.
 
@@ -357,7 +357,7 @@ To render a Spline Area Chart, set the *type* as **"splineArea"** in the chart s
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img14.png" Caption="SplineArea Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img14.png" Caption="SplineArea Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/splinearea) here to view our Spline Area Chart online demo.
 
@@ -386,7 +386,7 @@ To render a Stacked Area Chart, set the *type* as **"stackingArea"** in the char
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img15.png" Caption="Stacked Area Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img15.png" Caption="Stacked Area Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stackedarea) here to view our Stacked Area Chart online demo.
 
@@ -413,7 +413,7 @@ To render a 100% Stacked Area Chart, set the *type* as **"stackingArea100"** in 
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img16.png" Caption="100% Stacked Area Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img16.png" Caption="100% Stacked Area Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stackedarea) here to view our 100% Stacked Area Chart online demo.
 
@@ -441,7 +441,7 @@ To render a Column Chart, set the *type* as **"column"** in the chart series. Fo
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img17.png" Caption="Column Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img17.png" Caption="Column Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/column) here to view our Column Chart demo.
 
@@ -470,7 +470,7 @@ You can change the color of a column by using the **fill** property of the point
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img18.png" Caption="Change the color of a column")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img18.png" Caption="Change the color of a column"%}
 
 
 ## RangeColumn Chart
@@ -507,7 +507,7 @@ Since, the RangeColumn series requires two y values for a point, add the **high*
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img19.png" Caption="Range Column Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img19.png" Caption="Range Column Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/rangecolumn) here to view our Range Column Chart online demo.
 
@@ -536,7 +536,7 @@ To change the color of a range column, you can use the **fill** property of poin
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img20.png" Caption="Change the color of a range column")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img20.png" Caption="Change the color of a range column"%}
 
 
 ## Stacked Column Chart
@@ -563,7 +563,7 @@ To render a Stacked Column Chart, set the *type* as **"stackingColumn"** in the 
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img21.png" Caption="Stacked Column Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img21.png" Caption="Stacked Column Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stackedcolumn) here to view our Stacked Column Chart online demo.
 
@@ -596,7 +596,7 @@ You can use the **stackingGroup** property to group the stacked columns. Columns
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img22.png" Caption="grouping stacked columns")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img22.png" Caption="grouping stacked columns"%}
 
 
 ### Changing a point color
@@ -621,7 +621,7 @@ To change the color of a stacking column, you can use the **fill** property of t
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img23.png" Caption="Change the color of a stacked column")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img23.png" Caption="Change the color of a stacked column"%}
 
  
 
@@ -647,7 +647,7 @@ To render a 100% Stacked Column Chart, set the *type* as **"stackingColumn100"**
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img24.png" Caption="100% Stacking column chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img24.png" Caption="100% Stacking column chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/100%stackedcolumn) here to view our 100% Stacked Column Chart online demo.
 
@@ -680,7 +680,7 @@ By using the **stackingGroup** property, you can group the 100% stacking columns
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img25.png" Caption="grouping 100% stacked columns")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img25.png" Caption="grouping 100% stacked columns"%}
 
 
 ### Changing a point color
@@ -706,7 +706,7 @@ For changing the color of a 100% stacking column, you can use the **fill** prope
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img26.png" Caption="Change the color of a 100% stacked column")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img26.png" Caption="Change the color of a 100% stacked column"%}
 
 
 ## Bar Chart
@@ -731,7 +731,7 @@ To render a bar Chart, set the *type* as **"bar"** in the chart series. For chan
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img27.png" Caption="Bar Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img27.png" Caption="Bar Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/bar) here to view our Bar Chart demo.
 
@@ -759,7 +759,7 @@ By using the **fill** property of the point, you can change the specific point o
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img28.png" Caption="Change the color of a bar")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img28.png" Caption="Change the color of a bar"%}
 
 
 ## Stacked Bar Chart
@@ -784,7 +784,7 @@ To render a Stacked Bar Chart, set the *type* as **"stackingBar"** in the chart 
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img29.png" Caption="Stacked Bar Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img29.png" Caption="Stacked Bar Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stackedbar) here to view our Stacked Bar Chart online demo.
 
@@ -817,7 +817,7 @@ You can use the **stackingGroup** property to group the stacking bars with the s
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img30.png" Caption="grouping stacked bar")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img30.png" Caption="grouping stacked bar"%}
 
 
 ### Changing a point color
@@ -842,7 +842,7 @@ You can change the color of a stacking bar by using the **fill** property of the
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img31.png" Caption="Change the color of a stacked bar")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img31.png" Caption="Change the color of a stacked bar"%}
 
 
 ## 100% Stacked Bar Chart
@@ -867,7 +867,7 @@ To render a 100% Stacked Bar Chart, set the *type* as **"stackingBar100"** in th
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img32.png" Caption="100% Stacked Bar Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img32.png" Caption="100% Stacked Bar Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/100%stackedbar) here to view our 100% Stacked Bar Chart online demo.
 
@@ -897,7 +897,7 @@ By using the **stackingGroup** property, you can group the 100% stacking bars wi
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img33.png" Caption="grouping 100% stacked bar")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img33.png" Caption="grouping 100% stacked bar"%}
 
 
 ### Changing a point color
@@ -922,7 +922,7 @@ For changing the color of a 100% stacking bar, you can use the **fill** property
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img34.png" Caption="Change the color of a 100% stacked bar")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img34.png" Caption="Change the color of a 100% stacked bar"%}
 
 
 ## Spline Chart
@@ -948,7 +948,7 @@ To render a Spline Chart, set the *type* as **"spline"** in the chart series. Fo
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img35.png" Caption="Spline Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img35.png" Caption="Spline Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/spline) here to view the Spline Chart online demo sample.
 
@@ -975,7 +975,7 @@ For changing the spline segment width, you can use the **width** property of the
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img36.png" Caption="Changing the spline width")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img36.png" Caption="Changing the spline width"%}
 
 
 ### Dashed lines
@@ -1000,7 +1000,7 @@ To render the spline series with dotted lines, you can use the [dashArray](../ap
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img37.png" Caption="Spline chart with dashed lines")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img37.png" Caption="Spline chart with dashed lines"%}
 
 
 ## Pie Chart
@@ -1026,7 +1026,7 @@ You can create a pie chart by setting the series *type* as **"pie"** in the char
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img38.png" Caption="Pie Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img38.png" Caption="Pie Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/pie) here to view the Pie chart online demo sample.
 
@@ -1053,7 +1053,7 @@ You can use the **pieCoefficient** property to change the diameter of the Pie ch
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img39.png" Caption="Changing the pie size")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img39.png" Caption="Changing the pie size"%}
 
 
 ### Exploding a pie segment
@@ -1078,7 +1078,7 @@ You can explode a pie segment on the chart load by using the **explodeIndex** of
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img40.png" Caption="Exploding a pie segment")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img40.png" Caption="Exploding a pie segment"%}
 
 
 ### Exploding all the segments
@@ -1103,7 +1103,7 @@ To explode all the segments of the Pie chart, you can enable the **explodeAll** 
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img41.png" Caption="Exploding all the segments")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img41.png" Caption="Exploding all the segments"%}
 
 
 ### Exploding a pie segment on mouse over
@@ -1128,7 +1128,7 @@ To explode a pie segment on a mouse over, you can enable the **explode** propert
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img42.png" Caption="Exploding a pie segment on mouse over")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img42.png" Caption="Exploding a pie segment on mouse over"%}
 
 ### Sector of Pie
 
@@ -1153,7 +1153,7 @@ EjChart allows you to render all the data points/segments in the semi-pie, quart
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img43.png" Caption="SemiPie Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img43.png" Caption="SemiPie Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/semipieanddoughnut) here to view the Semi Pie Chart online demo sample.
 
@@ -1181,7 +1181,7 @@ To create a Doughnut chart, you can specify the series *type* as **"doughnut"** 
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img44.png" Caption="Doughnut Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img44.png" Caption="Doughnut Chart"%}
 
 
 ### Changing Doughnut inner radius
@@ -1206,7 +1206,7 @@ You can change the doughnut chart inner radius by using the **doughnutCoefficien
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img45.png" Caption="Changing Doughnut inner radius")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img45.png" Caption="Changing Doughnut inner radius"%}
 
 
 ### Changing the doughnut size
@@ -1231,7 +1231,7 @@ You can use the **doughnutSize** property to change the diameter of the Doughnut
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img46.png" Caption="Changing the doughnut size")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img46.png" Caption="Changing the doughnut size"%}
 
 
 ### Exploding a doughnut segment
@@ -1256,7 +1256,7 @@ To explode a specific doughnut segment, you have to set the index to be exploded
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img47.png" Caption="Exploding a doughnut segment")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img47.png" Caption="Exploding a doughnut segment"%}
 
 
 ### Exploding all the segments
@@ -1281,7 +1281,7 @@ To explode all the segments, you can enable the **explodeAll** property of the s
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img48.png" Caption="Exploding all the segments")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img48.png" Caption="Exploding all the segments"%}
 
 
 ### Exploding a doughnut segment on mouse over
@@ -1306,7 +1306,7 @@ To explode a doughnut segment on a mouse over, you can enable the **explode** pr
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img49.png" Caption="Exploding a doughnut segment on mouse over")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img49.png" Caption="Exploding a doughnut segment on mouse over"%}
 
 ### Sector of Doughnut
 
@@ -1331,7 +1331,7 @@ EjChart allows you to render all the data points/segments in semi-doughnut, quar
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img50.png" Caption="Arc of Doughnut")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img50.png" Caption="Arc of Doughnut"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/semipieanddoughnut) here to view the Semi Doughnut Chart online demo sample.
 
@@ -1358,7 +1358,7 @@ To create a Pyramid chart, you can specify the series *type* as **"pyramid"** in
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img51.png" Caption="Pyramid Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img51.png" Caption="Pyramid Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/pyramid) here to view the Pyramid Chart online demo sample.
 
@@ -1385,7 +1385,7 @@ Pyramid mode has two types, *linear* and *surface* respectively. The default **"
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img52.png" Caption="Pyramid Chart with surface mode")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img52.png" Caption="Pyramid Chart with surface mode"%}
 
 
 ### Gap between the segments
@@ -1410,7 +1410,7 @@ You can control the gap between the segments by using the **gapRatio** option of
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img53.png" Caption="Pyramid Chart with GapRatio")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img53.png" Caption="Pyramid Chart with GapRatio"%}
 
 
 ### Exploding a pyramid segment
@@ -1435,7 +1435,7 @@ You can explode a pyramid segment on the chart load by using the **explodeIndex*
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img54.png" Caption="Exploding a pyramid segment")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img54.png" Caption="Exploding a pyramid segment"%}
 
 
 ## Funnel Chart
@@ -1460,7 +1460,7 @@ You can create a funnel chart by setting the series *type* as **"funnel"** in th
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img55.png" Caption="Funnel Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img55.png" Caption="Funnel Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/funnel) here to view the Funnel Chart online demo sample.
 
@@ -1488,7 +1488,7 @@ Funnel segments height and width is calculated from chart size, by default. You 
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img56.png" Caption="Changing funnel width and height")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img56.png" Caption="Changing funnel width and height"%}
 
 
 ### Exploding a funnel segment
@@ -1513,7 +1513,7 @@ You can explode a funnel segment on the chart load by using the **explodeIndex**
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img57.png" Caption="Exploding a funnel segment")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img57.png" Caption="Exploding a funnel segment"%}
 
 
 ## Bubble Chart
@@ -1548,7 +1548,7 @@ To create a Bubble chart, you can set the series *type* as **"bubble"** in the c
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img58.png" Caption="Bubble Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img58.png" Caption="Bubble Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/bubble) here to view the Bubble Chart online demo sample.
 
@@ -1573,7 +1573,7 @@ To create a Scatter chart, you can set the series *type* as **"scatter"**’ in 
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img59.png" Caption="Scatter Series")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img59.png" Caption="Scatter Series"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/scatter) here to view the Scatter Chart online demo sample.
 
@@ -1603,7 +1603,7 @@ You can change the scatter size by using the **size** property of the series mar
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img60.png" Caption="Changing scatter size and color")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img60.png" Caption="Changing scatter size and color"%}
  
 
 ## HiloOpenClose Chart 
@@ -1641,7 +1641,7 @@ To create a HiloOpenClose chart you can set the series *type* as **"hiloopenclos
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img61.png" Caption="HiLoOpenCloseSeries")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img61.png" Caption="HiLoOpenCloseSeries"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/hiloopenclose) here to view the HiloOpenClose Chart online demo sample.
 
@@ -1667,7 +1667,7 @@ You can change the HiloOpenClose chart **drawMode** to *open*, *close* or *both*
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img62.png" Caption="HiLoOpenCloseSeries Open DrawMode ")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img62.png" Caption="HiLoOpenCloseSeries Open DrawMode "%}
 
 
 ### Bull and Bear Color	
@@ -1692,7 +1692,7 @@ Hiloopenclose chart **bullFillColor** is used to specify a fill color for the se
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img63.png" Caption="Change OHLC Bull and Bear Color")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img63.png" Caption="Change OHLC Bull and Bear Color"%}
 
 
 ## Candle
@@ -1729,7 +1729,7 @@ You can create a Candle chart by specifying the series *type* as **"candle"** in
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img64.png" Caption="Candle Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img64.png" Caption="Candle Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/candle) here to view the Candle Chart online demo sample.
 
@@ -1755,7 +1755,7 @@ Candle chart **bullFillColor** is used to specify a fill color for the segments 
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img65.png" Caption="Change Candle bull and bear Color")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img65.png" Caption="Change Candle bull and bear Color"%}
 
 
 ## Hilo
@@ -1791,7 +1791,7 @@ Hilo chart is created by setting the series *type* as **"hilo"** in the chart se
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img66.png" Caption="Change Candle bull and bear Color")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img66.png" Caption="Change Candle bull and bear Color"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/hilo) here to view the Hilo Chart online demo sample.
 
@@ -1820,7 +1820,7 @@ Polar chart is created by setting the series *type* as **polar** in the chart se
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img67.png" Caption="Polar Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img67.png" Caption="Polar Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/polar) here to view the Polar Chart online demo sample.
 
@@ -1846,7 +1846,7 @@ Polar **drawType** property is used to change the series plotting type to *line*
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img68.png" Caption="Polar Chart column type")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img68.png" Caption="Polar Chart column type"%}
 
 
 ### Stacking columns in Polar chart
@@ -1870,7 +1870,7 @@ By using the **isStacking** property, you can specify whether the column has to 
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img69.png" Caption="Polar Chart IsStacking")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img69.png" Caption="Polar Chart IsStacking"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/windrose) here to view the Polar Wind Rose Chart online demo sample.
 
@@ -1897,7 +1897,7 @@ To create a Radar chart, you can specify the series *type* as **"radar"** in the
 {% endhighlight %}
 
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img70.png" Caption="Radar Chart")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img70.png" Caption="Radar Chart"%}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/radar) here to view the Radar Chart online demo sample.
 
@@ -1924,7 +1924,7 @@ Radar **drawType** property is used to change the series plotting type to *line*
 {% endhighlight %}
 
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img71.png" Caption="Radar Chart with column drawType")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img71.png" Caption="Radar Chart with column drawType"%}
 
 
 ### Stacking columns in Radar chart
@@ -1949,7 +1949,7 @@ By using the **isStacking** property, you can specify whether the column has to 
 {% endhighlight %}
 
 
-![]("/js/Chart/Chart-Types_images/Chart-Types_img72.png" Caption="Radar IsStacking")
+{% include image.html url="/js/Chart/Chart-Types_images/Chart-Types_img72.png" Caption="Radar IsStacking"%}
 
 
 

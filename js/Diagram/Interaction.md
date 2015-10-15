@@ -83,11 +83,7 @@ The client side method `updateSelector` helps you to change the size, position, 
     
 {% endhighlight %}
 
-
 N> SelectedItems’s children is a read-only property. You cannot change the children collection at run time.
-
-![]("/js/Diagram/Interaction_images/Interaction_img1.png") 
-
 
 ## Drag
 
@@ -97,11 +93,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img3.png" %}
 
-
 ## Resize
-
-![]("/js/Diagram/Interaction_images/Interaction_img2.png") 
-
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 
@@ -145,11 +137,7 @@ Source and target points of the selected connectors are represented with two han
 
 * Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
 
-
 {% include image.html url="/js/Diagram/Interaction_images/Interaction_img7.png" %}
-
-![]("/js/Diagram/Interaction_images/Interaction_img3.png") 
-
 
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
@@ -279,11 +267,7 @@ var CloneTool = (function (base) {
 
 ### Appearance
 
-
 Position, size, and style of the user handle can be customized with a set of predefined properties.
-
-![]("/js/Diagram/Interaction_images/Interaction_img4.png") 
-
 
 The following code example illustrates how to customize the appearance of the user handle.
 {% highlight js %}

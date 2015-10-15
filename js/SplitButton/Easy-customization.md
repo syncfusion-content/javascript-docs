@@ -53,7 +53,7 @@ In the **HTML** page, add the following button elements to configure **Split But
 
 Execute the above code to render the following output.
 
-![]("/js/SplitButton/Easy-customization_images/Easy-customization_img1.png") 
+{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img1.png" %}
 
 ## Button Size
 
@@ -237,7 +237,7 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-![]("/js/SplitButton/Easy-customization_images/Easy-customization_img2.png") 
+{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img2.png" %}
 
 ## Content Type
 
@@ -425,7 +425,7 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-![]("/js/SplitButton/Easy-customization_images/Easy-customization_img3.png") 
+{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img3.png" %}
 
 ## Image Position
 
@@ -666,7 +666,7 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-![]("/js/SplitButton/Easy-customization_images/Easy-customization_img4.png") 
+{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img4.png" %}
 
 ## Theme support
 
@@ -856,5 +856,5 @@ Configure the **CSS** styles to apply on buttons.
 
 Execute the above code to render the following output.
 
-![]("/js/SplitButton/Easy-customization_images/Easy-customization_img5.png") 
+{% include image.html url="/js/SplitButton/Easy-customization_images/Easy-customization_img5.png" %}
 

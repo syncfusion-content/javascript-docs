@@ -61,7 +61,7 @@ By default, the selection mode of the grid is “**Row**”. This enables you to
 
 The following screenshot displays the result of the above code.
 
-![]("/js/Grid/Selection_images/Selection_img1.png")
+{% include image.html url="/js/Grid/Selection_images/Selection_img1.png"%}
 
 **Cell**
 
@@ -98,7 +98,7 @@ Cell selection can be enabled using the [`selectionMode`](/js/api/ejgrid#members
 
 The following screenshot displays the result of the above code.
 
-![]("/js/Grid/Selection_images/Selection_img2.png")
+{% include image.html url="/js/Grid/Selection_images/Selection_img2.png"%}
 
 **Column**
 
@@ -135,7 +135,7 @@ Column selection can be enabled using the [`selectionMode`](/js/api/ejgrid#membe
 
 The following screenshot displays the result of the above code.
 
-![]("/js/Grid/Selection_images/Selection_img3.png")
+{% include image.html url="/js/Grid/Selection_images/Selection_img3.png"%}
 
 ### Multiple Selection
 
@@ -181,7 +181,7 @@ By default, the selection mode of the grid is “**Row**”. This enable you to 
 
 The following screenshot displays the result of the above code.
 
-![]("/js/Grid/Selection_images/Selection_img4.png")
+{% include image.html url="/js/Grid/Selection_images/Selection_img4.png"%}
 
 **Cell**
 
@@ -221,7 +221,7 @@ Cell selection can be enabled using the [`selectionMode`](/js/api/ejgrid#members
 
 The following screenshot displays the result of the above code.
 
-![]("/js/Grid/Selection_images/Selection_img5.png")
+{% include image.html url="/js/Grid/Selection_images/Selection_img5.png"%}
 
 **Column**
 
@@ -261,7 +261,7 @@ Column selection can be enabled using the [`selectionMode`](/js/api/ejgrid#membe
 
 The following screenshot displays the result of the above code.
 
-![]("/js/Grid/Selection_images/Selection_img6.png")
+{% include image.html url="/js/Grid/Selection_images/Selection_img6.png"%}
 
 ## Enable All Modes of selection
 
@@ -298,7 +298,7 @@ You can also enable all the three modes of selection using [`selectionMode`](/js
 
 The following screenshot displays the result of the above code.
 
-![]("/js/Grid/Selection_images/Selection_img7.png")
+{% include image.html url="/js/Grid/Selection_images/Selection_img7.png"%}
 
 ## Enable toggle
 
@@ -334,15 +334,9 @@ You can toggle the selection using the [`enableToggle`](/js/api/ejgrid#members:s
 
 The following screenshot displays the result of the above code.
 
-![]("/js/Grid/Selection_images/Selection_img8.png")
+{%include image.html url="/js/Grid/Selection_images/Selection_img8.png" Caption="select Row"%}
 
-select Row
-{:.caption}
-
-![]("/js/Grid/Selection_images/Selection_img9.png")
-
-Unselect Row
-{:.caption}
+{%include image.html url="/js/Grid/Selection_images/Selection_img9.png" Caption="Unselect Row"%}
 
 ## Customize Selection Color
 
@@ -380,7 +374,7 @@ In this section, you can learn how to customize or override selection background
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Selection_images/Selection_img10.png")
+{% include image.html url="/js/Grid/Selection_images/Selection_img10.png"%}
 
 ## Get selected record data
 
@@ -425,5 +419,5 @@ In this section, you can learn how to get selected records from one **Grid** and
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Selection_images/Selection_img11.png")
+{% include image.html url="/js/Grid/Selection_images/Selection_img11.png"%}
 

@@ -27,9 +27,9 @@ function setChartProperties(args) {
 
 {% endhighlight %}
 
-![]("/js/OlapClient/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Normal View")
+{% include image.html url="/js/OlapClient/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Normal View"%}
 
-![]("/js/OlapClient/Responsive-Layout_images/Responsive-Layout_img3.png" Caption="Responsive View")
+{% include image.html url="/js/OlapClient/Responsive-Layout_images/Responsive-Layout_img3.png" Caption="Responsive View"%}
 
 
 

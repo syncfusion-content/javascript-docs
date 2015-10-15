@@ -11,7 +11,7 @@ documentation: ug
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
-![]("/js/Diagram/Node_images/Node_img1.png") 
+{% include image.html url="/js/Diagram/Node_images/Node_img1.png" %}
 
 ## Create Node
 
@@ -52,7 +52,7 @@ $("#diagram").ejDiagram({
 });
 {% endhighlight %}
 
-![]("/js/Diagram/Node_images/Node_img2.png") 
+{% include image.html url="/js/Diagram/Node_images/Node_img2.png" %}
 
 ### Add node at runtime
 
@@ -79,7 +79,7 @@ diagram.add(node);
 
 {% endhighlight %}
 
-![]("/js/Diagram/Node_images/Node_img3.png") 
+{% include image.html url="/js/Diagram/Node_images/Node_img3.png" %}
 
 ### Add node from palette
 
@@ -89,11 +89,7 @@ Nodes can be predefined and added to palette and can be dropped into the Diagram
 
 Nodes can be generated automatically with the information provided through data source. The default properties for these nodes are fetched from default settings. For more information about data source, refer to [Data Binding](/js/Diagram/Data-Binding).
 
-
 ### Draw nodes
-
-![]("/js/Diagram/Node_images/Node_img4.png") 
-
 
 Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **DrawingTool**. For more information about drawing nodes, refer to [Draw Nodes](/js/Diagram/Tools "Drawing-Tools:Shapes").
 
@@ -112,18 +108,11 @@ The client side method `updateNode` is used to update the nodes at run time. The
 {% endhighlight %}
 
 
-
-![]("/js/Diagram/Node_images/Node_img5.png") 
-
-### Path
-
-
 ## Position
 
 Position of a node is controlled by using its `offsetX` and `offsetY` properties. By default, these offset properties represent the distance between origin of the Diagram's page and node's center point. You may expect this offset values to represent the distance between page origin and node's top left corner instead of center. `pivot` property helps solve this problem. Default value of node's pivot point is (0.5, 0.5), that means center of Node.
 
 The following table illustrates how pivot relates offset values with node boundaries.
-
 
 <table>
 <tr>
@@ -144,9 +133,6 @@ offsetX and offsetY values are considered as the top left corner of node</td></t
 offsetX and offsetY values are considered as the bottom right corner of the node.</td></tr>
 </table>
 
-![]("/js/Diagram/Node_images/Node_img6.png") 
-
-
 
 The following code illustrates how to change the `pivot` value.
 
@@ -165,11 +151,7 @@ var nodes = [
 ];
 {% endhighlight %}
 
-
 {% include image.html url="/js/Diagram/Node_images/Node_img4.png" %}
-
-![]("/js/Diagram/Node_images/Node_img7.png") 
-
 
 ## Types
 
@@ -202,11 +184,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-
 {% include image.html url="/js/Diagram/Node_images/Node_img5.png" %}
-
-![]("/js/Diagram/Node_images/Node_img8.png") 
-
 
 ### Gradient
 
@@ -222,12 +200,8 @@ The `gradient` property of node allows you to define and applies the gradient ef
 
 //Creates linear gradient
 
-
 var linearGradient = {
     type: "linear",
-
-![]("/js/Diagram/Node_images/Node_img9.png") 
-
 
     //Start point of linear gradient
     x1: 0, y1: 0,
@@ -242,11 +216,7 @@ var linearGradient = {
     ]
 };
 
-
 //Creates radial gradient
-
-![]("/js/Diagram/Node_images/Node_img10.png") 
-
 
 var radialGradient = {
     type: "radial",
@@ -291,15 +261,11 @@ var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 //Enables Shadow effect for a node.
 var constraints = nodeConstraints.Default | nodeConstraints.Shadow;
 
-
 // Defines JSON to create path node
 var nodes = [
     {
         name: "node", offsetX: 100, offsetY: 100,
         height: 100, width:100,
-
-![]("/js/Diagram/Node_images/Node_img11.png") 
-
 
         //Sets shape of node
         shape: "rectangle",
@@ -320,10 +286,6 @@ var node = diagram.findNode("node");
 constraints = node.constraints &~ nodeConstraints.Shadow;
 diagram.updateNode("node", { constraints: constraints });
 {% endhighlight %}
-
-
-
-![]("/js/Diagram/Node_images/Node_img12.png") 
 
 
 ### Customizing Shadow
@@ -348,22 +310,12 @@ var nodes = [
 ];
 {% endhighlight %}
 
-
 {% include image.html url="/js/Diagram/Node_images/Node_img8.png" %}
-
-![]("/js/Diagram/Node_images/Node_img13.png") 
-
-The following code illustrates how to disable rotate constraints. Disabling rotate constraint does not allow you to rotate the node.
-
 
 ## Interaction
 
 Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Interaction](/js/Diagram/Interaction).
 
-
 ## Constraints
-
-![]("/js/Diagram/Node_images/Node_img14.png") 
-
 
 The `constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/js/Diagram/Constraints "NodeConstraints").

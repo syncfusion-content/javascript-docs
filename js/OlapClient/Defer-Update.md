@@ -27,9 +27,9 @@ $(function()
 
 {% endhighlight %}
 
-![]("/js/OlapClient/Defer-Update_images/Defer-Update_images1.png" Caption="Before Defer Update")
+{% include image.html url="/js/OlapClient/Defer-Update_images/Defer-Update_images1.png" Caption="Before Defer Update"%}
 
-![]("/js/OlapClient/Defer-Update_images/Defer-Update_images2.png" Caption="After Defer Update")
+{% include image.html url="/js/OlapClient/Defer-Update_images/Defer-Update_images2.png" Caption="After Defer Update"%}
 
 
 

@@ -56,7 +56,7 @@ Apply the plugin and property assigning the Map element through the directive 
 
 
 
-![]("/js/Maps/AngularJS-Support_images/AngularJS-Support_img1.png")
+{% include image.html url="/js/Maps/AngularJS-Support_images/AngularJS-Support_img1.png"%}
 
 
 

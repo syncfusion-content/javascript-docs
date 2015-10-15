@@ -73,7 +73,7 @@ You can add a label to a node/connector by defining the label object and adding 
 
 {% endhighlight %}
 
-![]("/js/Diagram/Label_images/Label_img1.png") 
+{% include image.html url="/js/Diagram/Label_images/Label_img1.png" %}
 
 To explore more label properties, refer to [Label Properties](/js/api/ejdiagram "members:nodes-labels").
 
@@ -92,21 +92,11 @@ The following code example illustrates how to change the label properties.
 {% endhighlight %}
 
 
-
-![]("/js/Diagram/Label_images/Label_img2.png") 
-
-The following code illustrates how to displace `label` through API.
-
-
 ## Alignment
 
 Label can be aligned relative to the node boundaries. It has margin, offset, horizontal and vertical alignment settings. It is quite tricky when all four alignments are used together but gives you more control over alignment.
 
-
 ### Offset
-
-![]("/js/Diagram/Label_images/Label_img3.png") 
-
 
 The `offset` property of label is used to align the labels based on fractions. 0 represents top/left corner, 1 represents bottom/right corner, and 0.5 represents half of width/height.
 
@@ -116,11 +106,7 @@ The following image shows the relationship between the label position (black col
 
 ### Horizontal and vertical alignements
 
-
 The `horizontalAlignment` property of label is used to set how the label is horizontally aligned at the label position determined from the fraction values. The `verticalAlignment` property is used to set how label is vertically aligned at the label position. 
-
-![]("/js/Diagram/Label_images/Label_img4.png") 
-
 
 The following tables illustrates all the possible alignments visually with **offset (0, 0).**
 
@@ -215,11 +201,7 @@ The following codes illustrates how to align labels.
 
 {% endhighlight %}
 
-
 {% include image.html url="/js/Diagram/Label_images/Label_img12.png" %}
-
-![]("/js/Diagram/Label_images/Label_img5.png") 
-
 
 ### Margin
 
@@ -262,11 +244,7 @@ The following code example illustrates how to align a label based on its `offset
 
 {% endhighlight %}
 
-
 {% include image.html url="/js/Diagram/Label_images/Label_img13.png" %}
-
-![]("/js/Diagram/Label_images/Label_img6.png") 
-
 
 ### Text Alignment
 
@@ -379,15 +357,9 @@ Text-wrapping occurs when the text overflows beyond the available node width. Ho
 <img src="/js/Diagram/Label_images/Label_img22.png" alt="" width="145pt" height="128pt"/></td></tr>
 </table>
 
-
 ## Appearance
 
 You can change the font style of the labels with the font specific properties(`fontSize`,`fontFamily`,`fontColor`.,). The following code illustrates how to customize the appearance of a label.
-
-![]("/js/Diagram/Label_images/Label_img10.png") 
-
-![]("/js/Diagram/Label_images/Label_img11.png") 
-
 
 {% highlight js %}
 
@@ -546,11 +518,7 @@ You can rotate the labels to any desired angle. Labels are rotated to the angle 
 
 {% endhighlight %}
 
-
 {% include image.html url="/js/Diagram/Label_images/Label_img26.png" %}
-
-![]("/js/Diagram/Label_images/Label_img12.png") 
-
 
 N> There is no built-in support to rotate labels interactively.
 
@@ -656,7 +624,6 @@ You can add any number of labels to a node or connector.  The following code ill
 
 {% endhighlight %}
 
-
 {% include image.html url="/js/Diagram/Label_images/Label_img28.png" %}
 
 ## Limitation
@@ -674,6 +641,3 @@ You can add any number of labels to a node or connector.  The following code ill
 </tr>
 
 </table>
-
-![]("/js/Diagram/Label_images/Label_img16.png") 
-

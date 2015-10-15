@@ -17,7 +17,7 @@ The following screenshot illustrates the functionality of a **DateTimePicker** w
 
 
 
-![]("/js/DateTimePicker/Getting-Started_images/Getting-Started_img1.png")
+{% include image.html url="/js/DateTimePicker/Getting-Started_images/Getting-Started_img1.png"%}
 
 ## Create DateTimePicker 
 
@@ -109,7 +109,7 @@ Initialize **DateTimePicker** in the script.
 
 The following screenshot displays a **DateTimePicker** control.
 
-![]("/js/DateTimePicker/Getting-Started_images/Getting-Started_img2.png")
+{% include image.html url="/js/DateTimePicker/Getting-Started_images/Getting-Started_img2.png"%}
 
 ## Set the Min and Max Date with Time Interval
 
@@ -132,5 +132,5 @@ In a real-time appointment scenario, the appointment is open only for a limited 
 
 The following screenshot shows the output for the above code example.
 
-![]("/js/DateTimePicker/Getting-Started_images/Getting-Started_img3.png")
+{% include image.html url="/js/DateTimePicker/Getting-Started_images/Getting-Started_img3.png"%}
 

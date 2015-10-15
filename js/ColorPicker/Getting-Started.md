@@ -13,7 +13,7 @@ This section explains briefly about how to create a **ColorPicker** in your appl
 
 In this example, you can learn how to customize **ColorPicker** control in a category Application. 
 
-![]("/js/ColorPicker/Getting-Started_images/Getting-Started_img1.png") 
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img1.png" %}
 
 In the following sections you can learn, How to:
 
@@ -77,7 +77,7 @@ Initialize **ColorPicker** element in **&lt;script&gt;** tag.
 
 Run the above code to render the following output.
 
-![]("/js/ColorPicker/Getting-Started_images/Getting-Started_img2.png") 
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img2.png" %}
 
 ## Initialize the other widgets
 
@@ -243,7 +243,7 @@ Add the following style section to align form fields.
 
 Run the above code to render the following output.
 
-![]("/js/ColorPicker/Getting-Started_images/Getting-Started_img3.png") 
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img3.png" %}
 
 ## Add value with Selected Color 
 
@@ -276,5 +276,5 @@ Initialize the click event for the button element in **&lt;script&gt;** tag.
 
 The following screenshot illustrates the resultant output after you click **Add** button.
 
-![]("/js/ColorPicker/Getting-Started_images/Getting-Started_img4.png") 
+{% include image.html url="/js/ColorPicker/Getting-Started_images/Getting-Started_img4.png" %}
 

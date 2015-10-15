@@ -114,5 +114,5 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Indicators_images/Indicators_img1.png") 
+{% include image.html url="/js/OlapGauge/Indicators_images/Indicators_img1.png" %}
 

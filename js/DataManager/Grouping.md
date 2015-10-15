@@ -73,7 +73,7 @@ Grouping technique is also supported in **DataManager**. When you want to analys
 
 Result of the above code example is illustrated as follows.
 
-![]("/js/DataManager/Grouping_images/Grouping_img1.png") 
+{% include image.html url="/js/DataManager/Grouping_images/Grouping_img1.png" %}
 
 
 

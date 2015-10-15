@@ -47,7 +47,7 @@ In the **HTML** page, add the following button elements to configure **Toggle Bu
 
 Execute the above code to render the following output.
 
-![]("/js/ToggleButton/Miscellaneous_images/Miscellaneous_img1.png") 
+{% include image.html url="/js/ToggleButton/Miscellaneous_images/Miscellaneous_img1.png" %}
 
 
 
@@ -93,7 +93,7 @@ Execute the above code to render the following output.
 
 
 
-![]("/js/ToggleButton/Miscellaneous_images/Miscellaneous_img2.png") 
+{% include image.html url="/js/ToggleButton/Miscellaneous_images/Miscellaneous_img2.png" %}
 
 
 

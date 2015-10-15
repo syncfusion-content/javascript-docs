@@ -15,7 +15,7 @@ This section explains briefly about how to create a **Splitter** in your applica
 
 From the following guidelines, you can create a **Splitter**, add Tree view in the **Splitter** and set actions to view the image. It is used to split the document or image and Expand or Collapse in the **Splitter**. The following screenshot demonstrates the functionality of **Splitter** widget.
 
-![]("/js/Splitter/Getting-Started_images/Getting-Started_img1.png") 
+{% include image.html url="/js/Splitter/Getting-Started_images/Getting-Started_img1.png" %}
 
 ## Create Splitter Control
 
@@ -169,5 +169,5 @@ Add the following code example in the view page to set the action to view the im
 
 The following screenshot is the output for the above code.
 
-![]("/js/Splitter/Getting-Started_images/Getting-Started_img2.png") 
+{% include image.html url="/js/Splitter/Getting-Started_images/Getting-Started_img2.png" %}
 

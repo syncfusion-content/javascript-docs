@@ -73,7 +73,7 @@ Ribbon tab and Contextual Tab are rendered with the following code example.
 
 After executing the above code, you can render the following output.
 
-![]("/js/Ribbon/Angular-Support_images/Angular-Support_img1.png")
+{% include image.html url="/js/Ribbon/Angular-Support_images/Angular-Support_img1.png"%}
 
 ## Rendering Gallery and Custom Tooltip
 
@@ -132,5 +132,5 @@ Gallery and Custom Tooltip are rendered by using the following code example.
 
 After executing the above code, you can render the following output.
 
-![]("/js/Ribbon/Angular-Support_images/Angular-Support_img2.png")
+{% include image.html url="/js/Ribbon/Angular-Support_images/Angular-Support_img2.png"%}
 

@@ -17,7 +17,7 @@ This section encompasses the details on how to configure the **BulletGraph** con
 
 In the following screenshot, a **BulletGraph** is used to compare the actual monsoon rainfall received in a state versus its forecasted values for the years ranging from 1988 to 2013. 
 
-![]("/js/BulletGraph/Getting-Started_images/Getting-Started_img1.png") 
+{% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img1.png" %}
 
 **Create a BulletGraph**
 
@@ -82,7 +82,7 @@ In the following screenshot, a **BulletGraph** is used to compare the actual mon
 
 4.Run the above code and the **BulletGraph** is displayed. In order to customize the measure bars within the **BulletGraph**, either local or remote data should be passed to it.
 
-![]("/js/BulletGraph/Getting-Started_images/Getting-Started_img2.png") 
+{% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img2.png" %}
 
 **Provide Required Data**
 
@@ -273,7 +273,7 @@ By default, the **BulletGraph** is rendered in the Horizontal orientation with i
 
 
 
-![]("/js/BulletGraph/Getting-Started_images/Getting-Started_img3.png") 
+{% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img3.png" %}
 
 As you can see in the image above, the bullet graph without any ranges is displayed in thebackground. The steps to add the **qualitativeRanges** are described in the next section.
 
@@ -327,7 +327,7 @@ By default, 3 ranges are displayed in the **BulletGraph** control duringthe init
 
 After adding **qualitativeRanges** to the **BulletGraph**, the control will be rendered as follows.
 
-![]("/js/BulletGraph/Getting-Started_images/Getting-Started_img4.png") 
+{% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img4.png" %}
 
 **Ticks and Measure Bars Customization**
 
@@ -383,7 +383,7 @@ You have to dothe following code changes in the quantitative scalein order to cu
 
 When customization of ticks and measure bars is done, **BulletGraph** looks as follows
 
-![]("/js/BulletGraph/Getting-Started_images/Getting-Started_img5.png") 
+{% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img5.png" %}
 
 **Add Caption and Subtitle**
 
@@ -450,7 +450,7 @@ You can display an appropriate Caption and Subtitle in the **BulletGraph** by ad
 
 The following screenshot displays a **BulletGraph** in the caption and title in the **BulletGraph**.
 
-![]("/js/BulletGraph/Getting-Started_images/Getting-Started_img6.png") 
+{% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img6.png" %}
 
 **Show Tooltip**
 
@@ -540,5 +540,5 @@ You can use a Tooltip in your application to display anyinformation. In this exa
 
 By using the customization options discussed in this section, the **BulletGraph** is rendered as displayed on the following screenshot.
 
-![]("/js/BulletGraph/Getting-Started_images/Getting-Started_img7.png") 
+{% include image.html url="/js/BulletGraph/Getting-Started_images/Getting-Started_img7.png" %}
 

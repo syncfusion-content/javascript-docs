@@ -13,7 +13,7 @@ This section briefly explains how you can create an **OlapClient** in your appli
 
 ##Syncfusion OLAP Controls – Architecture
 
-![]("/js/OlapClient/Getting-Started_images/Getting-Started_img2.png") 
+{% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img2.png" %}
 
 As shown in the above architecture, control rendering takes place in client-side and the analytical operations on each action takes place server-side.
 
@@ -49,17 +49,17 @@ This process has the OLAP Reports always updated. You cannot operate serialized 
 
 This section illustrates how to add and configure the OlapClient component in an application with AdventureWorks Cycle cube to assess the Customer Count over different fiscal years.
 
-![]("/js/OlapClient/Getting-Started_images/Getting-Started_img3.png") 
+{% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img3.png" %}
 
 Open **Visual Studio** and create a new project by clicking **New Project**. Select the **Web** category. Select the **ASP.NET Empty Web Application** template, and then click **OK**. The following screenshot of a Project Creation Wizard is displayed:
 
-![]("/js/OlapClient/Getting-Started_images/Getting-Started_img4.png") 
+{% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img4.png" %}
 
 ##Create HTML page
 
 To create a new web form in the application, right-click on the project and select Add. The following screenshot shows the Add New Item Wizard.
 
-![]("/js/OlapClient/Getting-Started_images/Getting-Started_img5.png") 
+{% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img5.png" %}
 
 Click New Item and select HTML Page from the listed templates. Name the page as default.html and click OK.
 
@@ -68,9 +68,9 @@ Click New Item and select HTML Page from the listed templates. Name the page as 
 ###Add References
 
 * In the Solution Explorer, right-click the References folder and then click **Add Reference**.
-![]("/js/OlapClient/Getting-Started_images/Getting-Started_img6.png") 
+{% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img6.png" %}
 * The following screenshot illustrates how to refer **Syncfusion.Olap.Base.**
-![]("/js/OlapClient/Getting-Started_images/Getting-Started_img7.png") 
+{% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img7.png" %}
 * Select the following assemblies: Microsoft.AnalysisServices.AdomdClient.dll,  Syncfusion.Compression.Base.dll, Syncfusion.Linq.Base.dll, Syncfusion.Olap.Base.dll, Syncfusion.EJ.dll, Syncfusion.EJ.Olap.dll and Syncfusion.XlsIO.Base.dll, Syncfusion.DocIO.Base.dll, Syncfusion.Pdf.Base.dll , System.Data.SqlServerCe.dll (Version: 4.0.0.0).
 * Click OK.
 
@@ -121,15 +121,15 @@ Add the following code example in the **&lt;body&gt;** tag in the **default.html
 
 Right-click the project and select **Add > New Folder**.  Name the folder as **wcf.** Let the folder name "wcf" be in lower case.
 
-![]("/js/OlapClient/Getting-Started_images/Getting-Started_img8.png") 
+{% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img8.png" %}
 
 Now right-click the **wcf** folder created and select **Add > New Item.**
 
-![]("/js/OlapClient/Getting-Started_images/Getting-Started_img9.png") 
+{% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img9.png" %}
 
 In the Add New Item window, select **WCF Service** and name it **OlapClientService.svc.** Click **Add.**
 
-![]("/js/OlapClient/Getting-Started_images/Getting-Started_img10.png") 
+{% include image.html url="/js/OlapClient/Getting-Started_images/Getting-Started_img10.png" %}
 
 ###Add service methods inside Interface
 

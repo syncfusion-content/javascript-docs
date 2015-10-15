@@ -63,7 +63,7 @@ Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access
 
 
 
-![]("/js/NumericTextBox/Keyboard-Interaction_images/Keyboard-Interaction_img1.png") 
+{% include image.html url="/js/NumericTextBox/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" %}
 
 
 

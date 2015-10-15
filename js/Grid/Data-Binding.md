@@ -51,7 +51,7 @@ Grid can bind to local data source. To bind local data, directly assign the JSON
 
 Result of the above code example.
 
-![]("/js/Grid/Data-Binding_images/Data-Binding_img1.png")
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img1.png"%}
 
 ## Remote data
 
@@ -81,7 +81,7 @@ Result of the above code example.
 
 The following output is the result of the above code example.
 
-![]("/js/Grid/Data-Binding_images/Data-Binding_img2.png")
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img2.png"%}
 
 N> _For information about DataManager with Grid check DataAdaptors concept._
 
@@ -116,7 +116,7 @@ Through this [**load at once**](/js/datamanager/data-binding#offline-mode "load 
 
 The following output is the result of the above code example.
 
-![]("/js/Grid/Data-Binding_images/Data-Binding_img3.png")
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img3.png"%}
 
 ### Load on demand
 
@@ -145,11 +145,11 @@ The following output is the result of the above code example.
 
 The following screenshot is the result of the above code example.
 
-![]("/js/Grid/Data-Binding_images/Data-Binding_img4.png")
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img4.png"%}
 
 If you have developer tools, you can capture network transfer to check **Grid** consumed data. The following screenshot shows demanded data being loaded in **Grid**.
 
-![]("/js/Grid/Data-Binding_images/Data-Binding_img5.png")
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img5.png"%}
 
 ### Cross domain
 
@@ -182,7 +182,7 @@ Cross domain data requests can be possible using [`ej.DataManager`](/js/datamana
 
 The following screenshot is the result of the above code example.
 
-![]("/js/Grid/Data-Binding_images/Data-Binding_img6.png")
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img6.png"%}
 
 ### HTTP additional parameters
 
@@ -215,7 +215,7 @@ In this section, you can learn how to customize or add an extra parameter for `H
 
 The following screenshot is the result of the above code example.
 
-![]("/js/Grid/Data-Binding_images/Data-Binding_img7.png")
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img7.png"%}
 
 ### Supported DataTypes
 
@@ -337,5 +337,5 @@ Grid can be created from [**HTML table**](/js/datamanager/data-binding#html-tabl
 
 The following screenshot is the result of the above code example.
 
-![]("/js/Grid/Data-Binding_images/Data-Binding_img8.png")
+{% include image.html url="/js/Grid/Data-Binding_images/Data-Binding_img8.png"%}
 

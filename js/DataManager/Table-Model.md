@@ -109,7 +109,7 @@ The result for the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Table-Model_images/Table-Model_img1.png") 
+{% include image.html url="/js/DataManager/Table-Model_images/Table-Model_img1.png" %}
 
 
 

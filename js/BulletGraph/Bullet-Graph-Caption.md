@@ -51,7 +51,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays a **Bullet Graph** with customized caption using the above code.
 
-![]("/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img1.png")
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img1.png"%}
 
 ## Subtitle
 
@@ -86,7 +86,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays **Bullet Graph** with a subtitle
 
-![]("/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img2.png")
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img2.png"%}
 
 ## Indicator
 
@@ -138,7 +138,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays a bullet graph with indicator.
 
-![]("/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img3.png")
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img3.png"%}
 
 ## Trim
 
@@ -163,7 +163,7 @@ $("#BulletGraph1").ejBulletGraph({
 
 The following screenshot displays the BulletGraph with Trim.
 
-![]("/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img4.png")
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img4.png"%}
 
 ## Text Placement
 
@@ -199,7 +199,7 @@ The property, textPosition, is used to position the text at the top, bottom, lef
 
 The following screenshot displays the Bullet Graph with the title positioned above.
 
-![]("/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img5.png")
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img5.png"%}
 
 ### Text Alignment
 
@@ -244,7 +244,7 @@ Alignment of text at different positions with respect to scale can be customized
 
 The following screenshot displays the Bullet Graph with the title and subtitle at different alignments.
 
-![]("/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img6.png")
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img6.png"%}
 
 ### Text Anchor
 
@@ -287,7 +287,7 @@ Text elements aligned at the same position are anchored by using the textAnchor 
 
 
 
-![]("/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img7.png")
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img7.png"%}
 
 ### Padding
 
@@ -320,5 +320,5 @@ $("#BulletGraph1").ejBulletGraph({
 {% endhighlight %}
 
 
-![]("/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img8.png")
+{% include image.html url="/js/BulletGraph/Bullet-Graph-Caption_images/Bullet-Graph-Caption_img8.png"%}
 

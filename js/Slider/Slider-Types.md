@@ -73,7 +73,7 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **RangeS
 Execute the above code example to render the following output.
 
 
-![]("/js/Slider/Slider-Types_images/Slider-Types_img1.png") 
+{% include image.html url="/js/Slider/Slider-Types_images/Slider-Types_img1.png" %}
 
 
 

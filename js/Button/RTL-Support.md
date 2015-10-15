@@ -39,5 +39,5 @@ In above mentioned code example prefixIcon property is used and the icon that is
 
 Execute the above code to render the following output.
 
-![]("/js/Button/RTL-Support_images/RTL-Support_img1.png") 
+{% include image.html url="/js/Button/RTL-Support_images/RTL-Support_img1.png" %}
 

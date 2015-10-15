@@ -28,4 +28,4 @@ Stripline in Gantt control is used to highlight the important event in Gantt cha
 
 The following screenshot shows stripline in Gantt control.
 
-![]("/js/Gantt/Stripline_images/Stripline_img1.png")
+{% include image.html url="/js/Gantt/Stripline_images/Stripline_img1.png"%}

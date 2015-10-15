@@ -108,7 +108,7 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Scales_images/Scales_img1.png") 
+{% include image.html url="/js/OlapGauge/Scales_images/Scales_img1.png" %}
 
 ## Pointers
 
@@ -219,7 +219,7 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Scales_images/Pointers_img1.png") 
+{% include image.html url="/js/OlapGauge/Scales_images/Pointers_img1.png" %}
 
 
 ## Ticks
@@ -328,7 +328,7 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Scales_images/Ticks_img1.png") 
+{% include image.html url="/js/OlapGauge/Scales_images/Ticks_img1.png" %}
 
 
 ### Hiding Ticks
@@ -429,7 +429,7 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Scales_images/Ticks_img2.png") 
+{% include image.html url="/js/OlapGauge/Scales_images/Ticks_img2.png" %}
 
 ## Indicators
 
@@ -537,5 +537,5 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Scales_images/Indicators_img1.png") 
+{% include image.html url="/js/OlapGauge/Scales_images/Indicators_img1.png" %}
 

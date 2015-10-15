@@ -32,5 +32,5 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
   
-![]("/js/DateTimePicker/Right-to-Left_images/Right-to-Left_img1.png")
+{% include image.html url="/js/DateTimePicker/Right-to-Left_images/Right-to-Left_img1.png"%}
 

@@ -54,7 +54,7 @@ In an **HTML** page, add a **&lt;div&gt;** element to render **WaitingPopup** wi
 
 The following screenshot illustrates the **WaitingPopup** when **showOnInit** is set to “**true**”.
 
-![]("/js/WaitingPopup/Behavior-and-Settings_images/Behavior-and-Settings_img1.png") 
+{% include image.html url="/js/WaitingPopup/Behavior-and-Settings_images/Behavior-and-Settings_img1.png" %}
 
 ## Enable / Disable Popup Indicator
 
@@ -115,9 +115,9 @@ The following steps explains you to enable / disable popup indicator in **Waitin
 
 Execute the above code to render the following output.
 
-![]("/js/WaitingPopup/Behavior-and-Settings_images/Behavior-and-Settings_img2.png") 
+{% include image.html url="/js/WaitingPopup/Behavior-and-Settings_images/Behavior-and-Settings_img2.png" %}
 
-![]("/js/WaitingPopup/Behavior-and-Settings_images/Behavior-and-Settings_img3.png") 
+{% include image.html url="/js/WaitingPopup/Behavior-and-Settings_images/Behavior-and-Settings_img3.png" %}
 
 ## Show / Hide WaitingPopup
 
@@ -171,5 +171,5 @@ Add the following styles to render **WaitingPopup** widget.
 
 The following screenshot illustrates a **WaitingPopup** when **show()** method is invoked.
 
-![]("/js/WaitingPopup/Behavior-and-Settings_images/Behavior-and-Settings_img4.png") 
+{% include image.html url="/js/WaitingPopup/Behavior-and-Settings_images/Behavior-and-Settings_img4.png" %}
 

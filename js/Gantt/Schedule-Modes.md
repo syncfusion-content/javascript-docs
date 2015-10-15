@@ -41,7 +41,7 @@ In the Week schedule mode, the upper part of the schedule header displays the we
 
 The following screenshot illustrates the Week Schedule in Gantt control.
 
-![]("/js/Gantt/Schedule-Modes_images/Schedule-Modes_img1.png")
+{% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img1.png"%}
 
 ### Month Schedule Mode
 
@@ -62,7 +62,7 @@ In the Week schedule mode, the upper part of the schedule header displays the Mo
 
 The following screenshot illustrates the Month Schedule in Gantt control.
 
-![]("/js/Gantt/Schedule-Modes_images/Schedule-Modes_img2.png")
+{% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img2.png"%}
 
 ### Year Schedule Mode
 
@@ -83,7 +83,7 @@ In the Week schedule mode, the upper schedule header displays the Years, whereas
 
 The following screen shot shows the Year Schedule in Gantt control.
 
-![]("/js/Gantt/Schedule-Modes_images/Schedule-Modes_img3.png")
+{% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img3.png"%}
 
 ### Day Schedule Mode
 
@@ -104,7 +104,7 @@ In the Week schedule mode, the upper part of the header displays the Days, where
 
 The following screenshot illustrates the Day Schedule in Gantt control.
 
-![]("/js/Gantt/Schedule-Modes_images/Schedule-Modes_img4.png")
+{% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img4.png"%}
 
 ### Hour Schedule Mode
 
@@ -135,5 +135,5 @@ The Hour Schedule Mode supports both the `minute` and `hour` duration units.
 
 {% endhighlight %}
 
-![]("/js/Gantt/Schedule-Modes_images/Schedule-Modes_img5.png")
+{% include image.html url="/js/Gantt/Schedule-Modes_images/Schedule-Modes_img5.png"%}
 

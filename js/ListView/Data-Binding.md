@@ -63,7 +63,7 @@ Add the following script in your code.
 
 Run the code to get the following output
 
-![]("/js/ListView/Data-Binding_images/Data-Binding_img1.png") 
+{% include image.html url="/js/ListView/Data-Binding_images/Data-Binding_img1.png" %}
 
 **FieldSettings**
 
@@ -145,12 +145,12 @@ Add the following script in your code.
 
 Run the code to get the following output
 
-![]("/js/ListView/Data-Binding_images/Data-Binding_img2.png") 
+{% include image.html url="/js/ListView/Data-Binding_images/Data-Binding_img2.png" %}
 
 
 When you click on the parent item, it navigates to its corresponding child list item as follows.
 
 
 
-![]("/js/ListView/Data-Binding_images/Data-Binding_img3.png") 
+{% include image.html url="/js/ListView/Data-Binding_images/Data-Binding_img3.png" %}
 

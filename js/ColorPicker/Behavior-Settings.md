@@ -34,7 +34,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img1.png") 
+{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img1.png" %}
 
 ## showRecentColors
 
@@ -63,7 +63,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img2.png") 
+{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img2.png" %}
 
 ## enableOpacity
 
@@ -92,7 +92,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img3.png") 
+{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img3.png" %}
 
 ## columns
 
@@ -121,5 +121,5 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img4.png") 
+{% include image.html url="/js/ColorPicker/Behavior-Settings_images/Behavior-Settings_img4.png" %}
 

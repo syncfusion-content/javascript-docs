@@ -36,7 +36,7 @@ The following code example shows you how to enable `cellEditing` in Gantt contro
 
 The output of Gantt with cellEditing is as follows.
 
-![]("/js/Gantt/Editing_images/Editing_img1.png")
+{% include image.html url="/js/Gantt/Editing_images/Editing_img1.png"%}
 
 ### Normal Editing
 
@@ -58,7 +58,7 @@ The following code example shows you how to enable normal editing in Gantt contr
 
 The following screenshot shows the output of `normal` editing.
 
-![]("/js/Gantt/Editing_images/Editing_img2.png")
+{% include image.html url="/js/Gantt/Editing_images/Editing_img2.png"%}
 
 ### Taskbar Editing
 
@@ -90,5 +90,5 @@ Update the predecessor details of a task using mouse interactions. The following
 
 The following screen shot shows the predecessor editing in Gantt control.
 
-![]("/js/Gantt/Editing_images/Editing_img3.png")
+{% include image.html url="/js/Gantt/Editing_images/Editing_img3.png"%}
 

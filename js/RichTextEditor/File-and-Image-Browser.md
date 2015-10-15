@@ -15,12 +15,9 @@ The **RTE** control normally allows you to insert the images based on the online
 
 ![](File-and-Image-Browser_images/File-and-Image-Browser_img1.png)
 
-
 But, now a feature is added, where you can include an image by browsing a list of predefined files and directories. And it also supports to showcase the dynamically uploaded images in the directory. 
 
-
 ![](File-and-Image-Browser_images/File-and-Image-Browser_img2.png)
-
 
 To retrieve or upload the images in the image browser, it requires a server side implementation.
 
@@ -73,17 +70,13 @@ This property specifies the settings for loading and saving data. This property 
 
 The following screenshot displays the output.
 
-
 ![](File-and-Image-Browser_images/File-and-Image-Browser_img3.png)
-
-
 
 ## File Browser
 
 The **RTE** control provides support for file browsing that is same as image browsing, instead of image the selected file path is displayed in the **RTE**.
 
 ![](File-and-Image-Browser_images/File-and-Image-Browser_img4.png)
-
 
 Add the following code example to initialize the **RTE** control in the page.
 
@@ -138,8 +131,5 @@ This property specifies the settings for loading and saving data. This property 
 
 The following screenshot displays the output.
 
-
 ![](File-and-Image-Browser_images/File-and-Image-Browser_img5.png)
-
-
 

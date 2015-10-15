@@ -57,7 +57,7 @@ Add the following code in your script section.
 
 
 
-![]("/js/FileExplorer/Disable-or-Enabling-toolbar-tool_images/Disable-or-Enabling-toolbar-tool_img1.png")
+{% include image.html url="/js/FileExplorer/Disable-or-Enabling-toolbar-tool_images/Disable-or-Enabling-toolbar-tool_img1.png"%}
 
 
 

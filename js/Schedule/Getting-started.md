@@ -18,7 +18,7 @@ documentation: ug
 
 The following screenshot displays the **Schedule** control with daily important activities
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img1.png" Caption="")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img1.png" Caption=""%}
 
 
 
@@ -81,7 +81,7 @@ $(function () {
 
 You can run the above code example and an empty **Scheduler** is displayed without appointments. In order, to display the appointments in the **Schedule**, you need to pass data to it. 
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img2.png" Caption="")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img2.png" Caption=""%}
 
 
 ## Pass data to Schedule control
@@ -141,7 +141,7 @@ When the **DataSource** property is assigned with the specific service **URL**, 
 
 The following screenshot displays a **Schedule** control with the appointments in a normal style.
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img3.png" Caption="")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img3.png" Caption=""%}
 
 
 You can also customize the appointments within the **Scheduler** using the **template** support discussed in the following sections.
@@ -225,7 +225,7 @@ N> You can create a folder named "Images" in the same location as your newly cre
 
 Once you set the template for the appointments, the **Scheduler** is displayed with the customized appointments as shown in the following screenshot.
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img4.png" Caption="")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img4.png" Caption=""%}
 
 
 
@@ -308,7 +308,7 @@ You can change the view of the **Schedule** from **week** to **month** by using 
 
 When you execute the above code example, a **Scheduler** is displayed as follows with the fixed appointment height in a **month** view. 
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img5.png" Caption="")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img5.png" Caption=""%}
 
 
 
@@ -404,7 +404,7 @@ The default height of an appointment is always suitable for the text.  In order 
 
 After setting the height for appointments in **month** view, the **Schedule** control is rendered as follows,
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img6.png" Caption="")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img6.png" Caption=""%}
 
 
 ## Manipulate the Appointments
@@ -424,12 +424,12 @@ N> **Important**: While adding new appointments to the Schedule control either b
 The following screenshot displays an appointment window pop- up that appears when you double-click on the **Schedule** cells.
 
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img7.png" Caption="Appointment with Pop-up Dialog.")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img7.png" Caption="Appointment with Pop-up Dialog."%}
 
 
 The following screenshot illustrates a quick appointment pop-up window.
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img8.png" Caption="Quick Appointment Pop-up Window.")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img8.png" Caption="Quick Appointment Pop-up Window."%}
 
 
 N> **Important**: In case, you need to manipulate with newly created or edited appointments, you can use the events available within the Schedule control.
@@ -444,12 +444,12 @@ The event named **appointmentSaved** is triggered while saving a new appointment
 * In order to edit the appointments, double-click the desired appointment, and then edit the required fields in the appointment pop-up as shown in the following screenshot.
 
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img9.png" Caption="Edit Appointments Pop-up.")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img9.png" Caption="Edit Appointments Pop-up."%}
 
 
 To delete an appointment, click the appointment, and then click **delete** icon in the quick appointment pop-up as shown in the following screenshot.
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img10.png" Caption="Delete Appointments Pop-up Window.")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img10.png" Caption="Delete Appointments Pop-up Window."%}
 
 
 You can also delete the appointment by selecting the required appointment in the **Schedule** control and click the delete key option. This works only when you set “**allowKeyboardNavigation**” option to **“True”**.
@@ -460,23 +460,23 @@ You can also delete the appointment by selecting the required appointment in the
 
 To add **recurrence** appointments, you need to check the “**repeat**” option in the appointment window as shown in the following screenshot.
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img11.png" Caption="Repeat Appointments.")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img11.png" Caption="Repeat Appointments."%}
 
 
 When you check the **repeat** option, the sub-options available in the recurrence category are shown in the appointment pop-up as follows.
 
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img12.png" Caption="Options in Recurrence Dialog.")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img12.png" Caption="Options in Recurrence Dialog."%}
 
 
 You can choose the required recurrence pattern from the available options and then click **Done**. The main appointment pop-up appears as shown in the following screenshot.
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img13.png" Caption="Main Appointment Dialog.")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img13.png" Caption="Main Appointment Dialog."%}
 
 
 Click **Done**. The recurrence appointment with daily pattern is created for every two days that ends after 10 occurrences.
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img14.png" Caption="recurrence appointment with daily pattern.")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img14.png" Caption="recurrence appointment with daily pattern."%}
 
 
 You can store the chosen recurrence options usually in a **RecurrenceRule** field in a string format.  Also, the **Recurrence** field indicates whether the appointments created are normal or recurrence type. You can create appointments in a **recurrence** type by setting **Boolean** type to **True**.
@@ -488,13 +488,13 @@ You can store the chosen recurrence options usually in a **RecurrenceRule** fiel
 * When you double-click the **recurrence** appointment a pop-up window appears as shown in the following screenshot. 
 
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img15.png" Caption="Double-Click the Recurrence Appointment.")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img15.png" Caption="Double-Click the Recurrence Appointment."%}
 
 
 When you click the recurrence appointment, a quick appointment window opens with the following options: **Edit Appointment** and **Edit Series** for editing the appointments - **delete** icon for deleting the appointments.
 
 
-![]("/js/Schedule/Getting-started_images/Getting-started_img16.png" Caption="Quick Appointment Window.")
+{% include image.html url="/js/Schedule/Getting-started_images/Getting-started_img16.png" Caption="Quick Appointment Window."%}
 
 
 ## Behavior Customization using the events

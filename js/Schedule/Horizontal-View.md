@@ -49,7 +49,7 @@ documentation: ug
 Execute the above code to render the following output.
 
 
-![]("/js/Schedule/Horizontal-View_images/Horizontal-View_img1.png" Caption="schedule with horizontal view.")
+{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img1.png" Caption="schedule with horizontal view."%}
 
 
 The above example illustrates the horizontal view of **Schedule** control. Similarly you can also set the mode of the **Schedule** as “vertical”.
@@ -90,7 +90,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![]("/js/Schedule/Horizontal-View_images/Horizontal-View_img2.png" Caption="schedule with vertical view.")
+{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img2.png" Caption="schedule with vertical view."%}
 
 
 **Resources**
@@ -157,7 +157,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![]("/js/Schedule/Horizontal-View_images/Horizontal-View_img3.png" Caption="")
+{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img3.png" Caption=""%}
 
 
 **Horizontal Resource Grouping**
@@ -237,4 +237,4 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![]("/js/Schedule/Horizontal-View_images/Horizontal-View_img4.png" Caption="")
+{% include image.html url="/js/Schedule/Horizontal-View_images/Horizontal-View_img4.png" Caption=""%}

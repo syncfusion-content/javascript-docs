@@ -37,5 +37,5 @@ $(function() {
 
 Output:
 
-![]("/js/PivotGrid/Hyperlink_images/Hyperlink_img1.png") 
+{% include image.html url="/js/PivotGrid/Hyperlink_images/Hyperlink_img1.png" %}
 

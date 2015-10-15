@@ -116,6 +116,6 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The following screenshot displays the **PivotGrid** with French localization:
 
-![]("/js/PivotGrid/Localization_images/Localization_img1.png") 
+{% include image.html url="/js/PivotGrid/Localization_images/Localization_img1.png" %}
 
 

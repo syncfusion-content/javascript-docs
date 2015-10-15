@@ -147,7 +147,7 @@ In the HTML page, add a &lt;div&gt; element to configure TreeView.
 
 The output for **TreeView** control with **Local Data** binding is as follows.
 
-![]("/js/TreeView/Data-Binding_images/Data-Binding_img1.png")
+{% include image.html url="/js/TreeView/Data-Binding_images/Data-Binding_img1.png"%}
 
 ## Remote Data
 
@@ -210,5 +210,5 @@ Assign dataSource and query property values to bind the remote data. Map the cor
 
 The output for **TreeView** control with **Remote Data** binding is as follows.
 
-![]("/js/TreeView/Data-Binding_images/Data-Binding_img2.png")
+{% include image.html url="/js/TreeView/Data-Binding_images/Data-Binding_img2.png"%}
 

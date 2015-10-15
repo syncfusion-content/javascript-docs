@@ -48,7 +48,7 @@ In an HTML page set a &lt;div&gt; element with dialog content for rendering the 
 
 The output for Dialog control when “enableResize” is “true” is as follows.
 
-![]("/js/Dialog/Behavior-Settings_images/Behavior-Settings_img1.png") 
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img1.png" %}
 
 ## Drag Support
 
@@ -87,7 +87,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control when “allowDraggable” is “true” is as follows.
 
-![]("/js/Dialog/Behavior-Settings_images/Behavior-Settings_img2.png") 
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img2.png" %}
 
 ## Close Icon ToolTip Support
 
@@ -125,7 +125,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control when “closeIconTooltip” is “close” is as follows.
 
-![]("/js/Dialog/Behavior-Settings_images/Behavior-Settings_img3.png") 
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img3.png" %}
 
 ## Persistence Support
 
@@ -159,7 +159,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 Make resize and reload the web page. The state is maintained in the **Dialog** control. The output for **Dialog** control when “**enablePersistence**” is “**true**” is as follows. 
 
-![]("/js/Dialog/Behavior-Settings_images/Behavior-Settings_img4.png") 
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img4.png" %}
 
 ## Enabled or Disabled
 
@@ -197,7 +197,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control when “enabled” is “true” is as follows.          
 
-![]("/js/Dialog/Behavior-Settings_images/Behavior-Settings_img5.png") 
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img5.png" %}
 
 ## Disable Dialog Control
 
@@ -226,7 +226,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control when enabled is “false” is as follows.
 
-![]("/js/Dialog/Behavior-Settings_images/Behavior-Settings_img6.png") 
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img6.png" %}
 
 ## Dialog Position
 
@@ -261,7 +261,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control after setting X-axis and Y-axis value.
 
-![]("/js/Dialog/Behavior-Settings_images/Behavior-Settings_img7.png") 
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img7.png" %}
 
 ## Header Option
 
@@ -298,7 +298,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control when showHeader is “true” is as follows.
 
-![]("/js/Dialog/Behavior-Settings_images/Behavior-Settings_img8.png") 
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img8.png" %}
 
 ### Hide Header
 
@@ -330,7 +330,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control when showHeader is “false” is as follows.
 
-![]("/js/Dialog/Behavior-Settings_images/Behavior-Settings_img9.png") 
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img9.png" %}
 
 ## Show at Initial
 
@@ -365,7 +365,7 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for Dialog control when showOnInit is “true” is as follows.
 
-![]("/js/Dialog/Behavior-Settings_images/Behavior-Settings_img10.png") 
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img10.png" %}
 
 ## Rounded Corner Support
 
@@ -401,5 +401,5 @@ In the HTML page set a &lt;div&gt; element with the dialog content for rendering
 
 The output for **Dialog** control when **showRoundedCorner** is “**true**” is as follows.
 
-![]("/js/Dialog/Behavior-Settings_images/Behavior-Settings_img11.png") 
+{% include image.html url="/js/Dialog/Behavior-Settings_images/Behavior-Settings_img11.png" %}
 

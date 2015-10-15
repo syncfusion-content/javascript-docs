@@ -65,7 +65,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Query_images/Query_img1.png")
+{% include image.html url="/js/DataManager/Query_images/Query_img1.png"%}
 
 ##From
 
@@ -120,7 +120,7 @@ The `from` query of the data manager is used to select the table from where the 
 
 Result of the above code example is illustrated as follows.
 
-![]("/js/DataManager/Query_images/Query_img2.png")
+{% include image.html url="/js/DataManager/Query_images/Query_img2.png"%}
 
 ##Clone
 
@@ -179,7 +179,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Query_images/Query_img3.png")
+{% include image.html url="/js/DataManager/Query_images/Query_img3.png"%}
 
 ##Expand
 
@@ -237,5 +237,5 @@ Result of the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Query_images/Query_img4.png")
+{% include image.html url="/js/DataManager/Query_images/Query_img4.png"%}
 
