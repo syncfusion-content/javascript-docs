@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customized-tools-option
 description: customized tools option
@@ -107,9 +107,7 @@ Add the following code example in your **HTML** page to render **RTE** with new 
 
 The following screenshot demonstrates the functionality of new tool item.
 
-
 ![](Customized-tools-option_images/Customized-tools-option_img1.png)
-
 
 ## Remove the tool item
 
@@ -137,7 +135,5 @@ Add the following code in your **HTML** page.
     });
 {% endhighlight %}
 
-
 ![](Customized-tools-option_images/Customized-tools-option_img2.png)
-
 

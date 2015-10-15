@@ -33,11 +33,11 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapChart/Responsive-Layout_images/Responsive-Layout_img1.png" Caption="Normal View")
+{% include image.html url="/js/OlapChart/Responsive-Layout_images/Responsive-Layout_img1.png" Caption="Normal View"%}
 
 <br/>
 
-![]("/js/OlapChart/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Responsive View")
+{% include image.html url="/js/OlapChart/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Responsive View"%}
 
 
 

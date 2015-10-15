@@ -57,7 +57,7 @@ Set the `symbologyType` and provide input URL to the `text` property to render t
 </script>
 {% endhighlight %}
 
-![]("/js/Barcode/Getting-Started_images/Getting-Started_img2.png" Caption="")
+{% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img2.png" Caption=""%}
 
 ## Adding a Code39 Barcode
 
@@ -98,7 +98,7 @@ $("#barcode").ejBarcode({
 {% endhighlight %}
 
 
-![]("/js/Barcode/Getting-Started_images/Getting-Started_img3.png" Caption="")
+{% include image.html url="/js/Barcode/Getting-Started_images/Getting-Started_img3.png" Caption=""%}
 
 ## Customizing the Barcode appearance
 The height of the barcode can be changed using the [barHeight](/js/api/ejBarcode#barheightspan-classtype-signature-type-numbernumberspan) property. The equivalent property to change the block size for two dimensional barcode is [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan). You can also customize the barcode color by changing the [darkBarColor](/js/api/ejBarcode#darkbarcolorspan-classtype-signature-type-objectobjectspan) and [lightBarColor](/js/api/ejbarcode#lightbarcolorspan-classtype-signature-type-objectobjectspan) properties.

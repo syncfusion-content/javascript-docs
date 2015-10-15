@@ -50,7 +50,7 @@ Filter menus are a good **UI** based filtering option. It visibly denotes filter
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Filtering_images/Filtering_img1.png")
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img1.png"%}
 
 ## Filter Bar
 
@@ -113,7 +113,7 @@ Boolean filter bar works with either <b>true</b> or <b>false</b>.</td></tr>
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Filtering_images/Filtering_img2.png")
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img2.png"%}
 
 ## Excel styled menu
 
@@ -127,7 +127,7 @@ The Checkbox list is available in the menu that contains the possible filter val
 
 The output of the excel like filterin as shown as below.
 
-![]("/js/Grid/Filtering_images/Filtering_img3.png")
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img3.png"%}
 
 A Search box is available at the top of the check box list that is used to search the possible filter choices. The number of possible filter choices are restricted by the setting the [`maxFilterChoices`](/js/api/ejgrid#members:filtersettings-maxfilterchoices "maxFilterChoices") property of the [`filterSettings`](/js/api/ejgrid#members:filtersettings "filterSettings"). 
 
@@ -137,9 +137,9 @@ The Submenu items in the filter menu provide the advanced filtering options for 
 
 The ourput of the custom filter menu was showed in below screenshot.
 
-![]("/js/Grid/Filtering_images/Filtering_img4.png")
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img4.png"%}
 
-![]("/js/Grid/Filtering_images/Filtering_img5.png")
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img5.png"%}
 
 {% highlight html %}
 
@@ -296,5 +296,5 @@ ej.FilterOperators.equal</td></tr>
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Filtering_images/Filtering_img6.png")
+{% include image.html url="/js/Grid/Filtering_images/Filtering_img6.png"%}
 

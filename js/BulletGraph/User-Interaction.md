@@ -71,13 +71,13 @@ $("#BulletGraph1").ejBulletGraph({
 
 {% endhighlight %}
 
-![]("/js/BulletGraph/User-Interaction_images/User-Interaction_img1.png") 
+{% include image.html url="/js/BulletGraph/User-Interaction_images/User-Interaction_img1.png" %}
 
 ## Tooltip
 
 By default **Bullet Graph** displays **Tooltip** when mouse is hovered over feature measure bar. **Tooltip** is enabled or disabled using visible property in **tooltipSettings**.
 
-![]("/js/BulletGraph/User-Interaction_images/User-Interaction_img2.png") 
+{% include image.html url="/js/BulletGraph/User-Interaction_images/User-Interaction_img2.png" %}
 
 Bullet Graph supports Tooltip template instead of default Tooltip to customize the appearance and contents of Tooltip. The Tooltip template should be a &lt;div&gt; element with display set to ‘none’, so it is displayed only when mouse is placed on feature measure bar. The id value of the &lt;div&gt; element should be provided as value to the template property in tooltipSettings of Bullet Graph to display the customized &lt;div&gt; element as Tooltip instead of default Tooltip. The values displayed in default Tooltip such as current value, target value and category are accessed in template &lt;div&gt; element by using {{currentValue}}, {{targetValue}} and {{category}} respectively.
 
@@ -103,5 +103,5 @@ Bullet Graph supports Tooltip template instead of default Tooltip to customize t
 
 The following screenshot displays **Bullet Graph** with a customized **Tooltip** including a header and contents such as current value and target value in different colors.
 
-![]("/js/BulletGraph/User-Interaction_images/User-Interaction_img3.png") 
+{% include image.html url="/js/BulletGraph/User-Interaction_images/User-Interaction_img3.png" %}
 

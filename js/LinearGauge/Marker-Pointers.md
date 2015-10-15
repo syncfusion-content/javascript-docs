@@ -61,7 +61,7 @@ You can add **Marker Pointer** collection directly to the scale object. To add p
 Execute the above code to render the following output.
 
 
-![]("/js/LinearGauge/Marker-Pointers_images/Marker-Pointers_img1.png" Caption="")
+{% include image.html url="/js/LinearGauge/Marker-Pointers_images/Marker-Pointers_img1.png" Caption=""%}
 
 ## Add marker pointer value
 
@@ -124,7 +124,7 @@ The **value** property is the important element in the marker pointer collection
 Execute the above code to render the following output.
 
 
-![]("/js/LinearGauge/Marker-Pointers_images/Marker-Pointers_img2.png" Caption="")
+{% include image.html url="/js/LinearGauge/Marker-Pointers_images/Marker-Pointers_img2.png" Caption=""%}
 
 ## Pointer Styles
 
@@ -199,7 +199,7 @@ Execute the above code to render the following output.
 
 
 
-![]("/js/LinearGauge/Marker-Pointers_images/Marker-Pointers_img3.png" Caption="")
+{% include image.html url="/js/LinearGauge/Marker-Pointers_images/Marker-Pointers_img3.png" Caption=""%}
 
 ## Positioning the pointer
 
@@ -263,7 +263,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![]("/js/LinearGauge/Marker-Pointers_images/Marker-Pointers_img4.png" Caption="")
+{% include image.html url="/js/LinearGauge/Marker-Pointers_images/Marker-Pointers_img4.png" Caption=""%}
 
 ## Types
 
@@ -369,5 +369,5 @@ It is possible to change the dimension of the marker pointer. Dimensions availab
 Execute the above code to render the following output.
 
 
-![]("/js/LinearGauge/Marker-Pointers_images/Marker-Pointers_img5.png" Caption="")
+{% include image.html url="/js/LinearGauge/Marker-Pointers_images/Marker-Pointers_img5.png" Caption=""%}
 

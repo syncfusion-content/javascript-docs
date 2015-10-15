@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Custom-Binding-for-Grid-CRUD-operation
 description: custom binding for grid crud operation
@@ -117,6 +117,4 @@ For instance let me bind data to Grid using `remoteSaveAdaptor` and extend it to
 
 The output is as follows:
 
-
-![](DCustom-Binding-for-Grid-CRUD-operation_images/Custom-Binding-for-Grid-CRUD-operation_img1.png)
-
+{% include image.html url="/js/Grid/How-to/Custom-Binding-for-Grid-CRUD-operation_images/Custom-Binding-for-Grid-CRUD-operation_img1.png"%}

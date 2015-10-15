@@ -127,7 +127,7 @@ This property specifies the position of the **showPager** in the **Rotator** Ite
 
 
 
-![]("/js/Rotator/Behavior-settings_images/Behavior-settings_img1.png")
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img1.png"%}
 
 ### Show pager
 
@@ -144,7 +144,7 @@ The **“showPager”** property turns on or off the **pager** support in the **
 
 
 
-![]("/js/Rotator/Behavior-settings_images/Behavior-settings_img2.png")
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img2.png"%}
 
 ## Show options
 
@@ -163,7 +163,7 @@ The “**showPlayButton**” property enables play / pause button on **Rotator**
 
 
 
-![]("/js/Rotator/Behavior-settings_images/Behavior-settings_img3.png")
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img3.png"%}
 
 ### Show navigate button
 
@@ -180,7 +180,7 @@ The “**showNavigateButton**” property turns on or off the slide buttons (nex
 
 
 
-![]("/js/Rotator/Behavior-settings_images/Behavior-settings_img4.png") 
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img4.png" %}
 
 ### Show caption
 
@@ -197,5 +197,5 @@ When the **Rotator** Item is an image, you can specify a caption for the **Rotat
 
 
 
-![]("/js/Rotator/Behavior-settings_images/Behavior-settings_img5.png") 
+{% include image.html url="/js/Rotator/Behavior-settings_images/Behavior-settings_img5.png" %}
 

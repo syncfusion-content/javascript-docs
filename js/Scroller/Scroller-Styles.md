@@ -118,5 +118,5 @@ Configure the styles.
 
 The following screenshot displays the **Scroller** control with basic styles
 
-![]("/js/Scroller/Scroller-Styles_images/Scroller-Styles_img1.png")
+{% include image.html url="/js/Scroller/Scroller-Styles_images/Scroller-Styles_img1.png"%}
 

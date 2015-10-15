@@ -84,7 +84,7 @@ saveFiles.ashx
 
 The following screenshot displays the output. 
 
-![]("/js/UploadBox/File-Actions_images/File-Actions_img1.png") 
+{% include image.html url="/js/UploadBox/File-Actions_images/File-Actions_img1.png" %}
 
 ## Remove File Action 
 
@@ -159,7 +159,7 @@ removeFiles.ashx
 
 The following screenshot displays the output. 
 
-![]("/js/UploadBox/File-Actions_images/File-Actions_img2.png") 
+{% include image.html url="/js/UploadBox/File-Actions_images/File-Actions_img2.png" %}
 
 ##  Auto Upload
 
@@ -195,5 +195,5 @@ The following screenshot displays the output.
 
 
 
-![]("/js/UploadBox/File-Actions_images/File-Actions_img3.png") 
+{% include image.html url="/js/UploadBox/File-Actions_images/File-Actions_img3.png" %}
 

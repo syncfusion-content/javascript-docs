@@ -66,11 +66,11 @@ Gets or sets a color for highlighting tree map item during drill down.</td></tr>
 
 
 
-![]("/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img1.png" Caption="")
+{% include image.html url="/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img1.png" Caption=""%}
 
 _Before Drill Down_
 
-![]("/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img2.png" Caption="")
+{% include image.html url="/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img2.png" Caption=""%}
 
 _After Drill Down_
 

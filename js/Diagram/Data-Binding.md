@@ -9,211 +9,198 @@ documentation: ug
 
 # Data Binding
 
-Diagram can be populated with the node and connector based on information from an external data source using data binding. Diagram supports binding data sources containing hierarchical data and supports both local data and remote data, for retrieving data from a specified data source. Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
+  * Diagram can be populated with the nodes and connectors based on the information provided from an external data source. 
 
-You can populate Diagram elements using data binding support such as `JSON` and `OData` services.
+  * Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
 
-#### DataSource Settings
+To explore those properties, see [Data source settings](/js/api/ejDiagram "members:datasourcesettings")
 
-The `dataSourceSettings` property of Diagram includes the required data source fields and it can be set with appropriate values as follows.
+  * Diagram supports three different kinds of Data binding.
 
-<table>
-<tr>
-<th>
-Name</th><th>
-Description</th></tr>
-<tr>
-<td>
-dataSource</td><td>
-datasource receives <b>Essential DataManager</b> object and <b>JSON</b> object.</td></tr>
-<tr>
-<td>
-query</td><td>
-It receives query to retrieve data from the table (query is same as SQL).<br/>
-Example: ej.Query().from("Categories").select("CategoryID, CategoryName").take(3);</td></tr>
-<tr>
-<td>
-tableName</td><td>
-It receives table name to execute query on the corresponding table.</td></tr>
-<tr>
-<td>
-id</td><td>
-Specifies the unique id of data source items</td></tr>
-<tr>
-<td>
-parent</td><td>
-Specifies the parent id of the data source items.</td></tr>
-</table>
+    * Local Data
 
+    * Remote Data
+
+    * Html Table Data
 
 ## Local Data
 
-To bind the **Local Data** to the Diagram control, map the user-defined `JSON` data names with its appropriate data source field. You can bind data to the Diagram by mapping fields such as `dataSource`, `id` and `parent`. The following code example illustrates how to bind local data to the Diagram.
+Diagram can be populated based on the user defined JSON data (**Local Data**) by mapping the relevant data source fields.
+
+To map the user defined JSON data with Diagram, you have to configure the fields of `dataSourceSettings`. The following code example illustrates how to bind local data with the Diagram.
 
 {% highlight js %}
 
-//To Initialize data
-var data = [{
-   "Name": "Director"
-}, {
-   "Name": "Manager",
-   "ReportingPerson": "Director"
-}, {
-   "Name": "TeamLead",
-   "ReportingPerson": "Director"
-}, {
-   "Name": "Software Developer",
-   "ReportingPerson": "TeamLead"
-}, {
-   "Name": "Testing engineer",
-   "ReportingPerson": "TeamLead"
-}, {
-   "Name": "Software Developer",
-   "ReportingPerson": "Manager"
-}, {
-   "Name": "Testing engineer",
-   "ReportingPerson": "Manager"
-}];
+//Initializes local data
 
-//To customize nodes before rendering
+var data = [{
+        "Name": "Director"
+    },
+
+    {
+        "Name": "Manager",
+        "ReportingPerson": "Director"
+    },
+
+    {
+        "Name": "TeamLead",
+        "ReportingPerson": "Director"
+    },
+
+    {
+        "Name": "Software Developer",
+        "ReportingPerson": "TeamLead"
+    },
+
+    {
+        "Name": "Testing engineer",
+        "ReportingPerson": "TeamLead"
+    },
+
+    {
+        "Name": "Software Developer",
+        "ReportingPerson": "Manager"
+    },
+
+    {
+        "Name": "Testing engineer",
+        "ReportingPerson": "Manager"
+    }
+];
+
+//Binds the JSON(local data) with node
+
 function nodeTemplate(diagram, node) {
-   node.labels[0].text = node.Name;
+    // Sets the Name field of JSON data as label.
+    node.labels[0].text = node.Name;
 }
 
-//To Initialize diagram
-$("#diagram").ejDiagram({
-
-   //use automatic layout to arranging elements on the page        
-   layout: {
-      type: "hierarchicaltree"
-   },
-   
-   defaultSettings: {
-   
-      //set the default properties of the node.
-      node: {
-         width: 100,
-         height: 40,
-         fillColor: "darkcyan",
-         labels: [{
-            name: "label1",
-            bold: true
-         }]
-      },
-      
-      //set the default properties of the connector.         
-      connector: {
-         segments: [{
-            type: "orthogonal"
-         }],
-         targetDecorator: {
-            shape: "none"
-         }
-      }
-   },
-   
-   //initialize the node template.
-   nodeTemplate: nodeTemplate,
-   
-   //configure data source for diagram
-   dataSourceSettings: {
-      id: "Name",
-      parent: "ReportingPerson",
-      dataSource: data 
-   }
-});         
-
-{% endhighlight %}
-
-![]("/js/Diagram/Data-Binding_images/Data-Binding_img1.png") 
-
-## Remote Data
-
-You can bind the Diagram to Remote Data using `dataManager` and the query in fields is used to retrieve the data. `dataManager` supports the following types of data-binding: `JSON`, `Web Services`, `oData`. It uses two different classes: `ej.DataManager` for processing and ej.Query for serving data. `ej.DataManager` communicates with data source and `ej.Query` generates data queries that are read by the `dataManager`. For further details refer link [dataManager](/js/datamanager/getting-started#create-your-datamanager-in-javascript)
-
-The following code illustrates how to bind remote data to the Diagram.
-
-{% highlight js %}
-
-//Initialize Diagram
-$("#diagram").ejDiagram({
-
-   //To customize node before rendering
-   nodeTemplate: nodeTemplate,
-
-   //Initialize automatic layout
-   layout: {
-      type: "hierarchicaltree"
-   },
-   defaultSettings: {
-   
-      //set the default properties of the nodes
-      node: {
-         width: 100,
-         height: 40,
-         fillColor: "darkcyan",
-         labels: [{
-            name: "label1",
-            bold: true,
-            fontColor: "white"
-         }],
-         borderColor: "none"
-      },
-
-      //set the default properties of the connectors
-      connector: {
-         segments: [{
-            type: "orthogonal"
-         }]
-      }
-   },
-
-   //Configure data source
-   dataSourceSettings: {
-      dataSource: ej.DataManager({
-         url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
-      }),
-      query: ej.Query().from("Employees").select("EmployeeID, ReportsTo, FirstName"),
-      tableName: "Employees",
-      id: "EmployeeID",
-      parent: "ReportsTo"
-   }
+$(function() {
+    //Initializes Diagram
+    $("#diagram").ejDiagram({
+        //Uses automatic layout to arrange elements on the page        
+        layout: {
+            type: "hierarchicaltree"
+        },
+        //Sets the default properties for nodes and connectors.
+        defaultSettings: {
+            node: {
+                width: 100,
+                height: 40,
+                fillColor: "darkcyan",
+                labels: [{
+                    name: "label1",
+                    bold: true,
+                    fontColor: "white"
+                }]
+            },
+            connector: {
+                segments: [{
+                    type: "orthogonal"
+                }],
+                targetDecorator: {
+                    shape: "none"
+                }
+            }
+        },
+        //Initializes the node template.
+        nodeTemplate: nodeTemplate,
+        //Configures data source for Diagram
+        dataSourceSettings: {
+            // Defines the unique field of each JSON data
+            id: "Name",
+            // Defines the parent field which builds the relationship
+            parent: "ReportingPerson",
+            //Sets the local data source to the diagram.
+            dataSource: data
+        }
+    });
 });
 
 {% endhighlight %}
 
-![]("/js/Diagram/Data-Binding_images/Data-Binding_img2.png") 
+![]("/js/Diagram/Data-Binding_images/Data-Binding_img1.png")
 
-### Root
+## Remote Data
 
-During automatic layout, node without parent is treated as root of the layout. You can specify this root by using the data source settings. The following code example illustrates how to specify the root object for the Diagram.
+You can bind the Diagram with Remote Data by using dataManager.  
+
+  * DataManager supports the following types of data-binding: JSON, Web Services, oData. 
+
+  * It uses two different classes: ej.DataManager for processing and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. 
+
+  * To learn more, refer to [Data Manager](/js/DataManager/Getting-Started).
+
+To bind remote data to the Diagram, you have to configure the fields of `dataSourceSettings`. The following code illustrates how to bind remote data to the Diagram.
 
 {% highlight js %}
 
-//configure data source for diagram
-dataSourceSettings: {
-   id: "Name",
-   parent: "ReportingPerson",
+$(function() {
+    //Initializes Diagram
+    $("#diagram").ejDiagram({
+        //Binds the custom JSON fields with node
+        nodeTemplate: nodeTemplate,
+        //Initializes automatic layout
+        layout: {
+            type: "hierarchicaltree"
+        },
+        //Sets the default properties for nodes and connectors
+        defaultSettings: {
+            node: {
+                width: 100,
+                height: 40,
+                fillColor: "darkcyan",
+                labels: [{
+                    name: "label1",
+                    bold: true,
+                    fontColor: "white"
+                }],
+                borderColor: "none"
+            },
+            connector: {
+                segments: [{
+                    type: "orthogonal"
+                }]
+            }
+        },
+        //Configures data source
+        dataSourceSettings: {
+            //Initializes the data manager
+            dataSource: ej.DataManager({
+                // Specifies the remote data service
+                url: "[http://mvc.syncfusion.com/Services/Northwnd.svc/](http://mvc.syncfusion.com/Services/Northwnd.svc/)"
+            }),
+            //Defines the query to retrieve data
+            query: ej.Query().from("Employees").select("EmployeeID, ReportsTo, FirstName"),
+            // Defines the table name
+            tableName: "Employees",
+            // Defines the unique field
+            id: "EmployeeID",
+            // Define the field to relate objects
+            parent: "ReportsTo"
+        }
+    });
+});
 
-   //Object with id "Manager", is considered as root of tree layout.
-   root: "Manager",
+//Binds custom JSON with node
 
-   //specifies the dataSource
-   dataSource: data
+function nodeTemplate(diagram, node) {
+    node.labels[0].text = node.FirstName;
 }
 
 {% endhighlight %}
 
-![]("/js/Diagram/Data-Binding_images/Data-Binding_img3.png") 
+![]("/js/Diagram/Data-Binding_images/Data-Binding_img2.png")
 
-## HTML Binding
+## Html Table Data
 
-The Diagram provides support to form diagram from the **HTML table**. It is flexible to convert HTML table to diagram using **Data Manager**. The following code example illustrates how to convert HTML table to diagram.
+The Diagram provides support to populate the Diagram from the **HTML table**. It is flexible to convert HTML table to Diagram by using **Data Manager**.
+
+The following code illustrates how to convert HTML table to the Diagram.
 
 {% highlight html %}
-
 <!-- HTML Table -->
-<table id="Table1">
+<table id="htmlbinding">
      <thead>
          <tr>
              <th>Id</th>
@@ -280,18 +267,63 @@ The Diagram provides support to form diagram from the **HTML table**. It is flex
      </tbody>
 </table>
 {% endhighlight %}
-
 {% highlight js %}
 
-//configure data source for diagram	
-dataSourceSettings: {
-   id: "Id",
-   parent: "ReportingPerson",
-   
-   //specifies the table name 
-   dataSource: ej.DataManager($("#Table1"))
+//Binds custom JSON with node
+
+function nodeTemplate(diagram, node) {
+    node.labels[0].text = node.Designation;
+    node.fillColor = node.Color;
 }
+
+$(function() {
+    //Initializes Diagram
+    $("#diagram").ejDiagram({
+        width: "100%",
+        height: "600px",
+        layout: {
+            type: "hierarchicaltree"
+        },
+        defaultSettings: {
+            //Sets the default properties for nodes and connectors.
+            node: {
+                width: 120,
+                height: 40,
+                shape: "rectangle",
+                borderColor: "transparent",
+                labels: [{
+                    name: "label1",
+                    fontColor: "#ffffff"
+                }]
+            },
+            connector: {
+                segments: [{
+                    "type": "orthogonal"
+                }],
+                targetDecorator: {
+                    fillColor: "#4F4F4F",
+                    borderColor: "#4F4F4F"
+                }
+            }
+        },
+        //Initializes the node template.
+        nodeTemplate: nodeTemplate,
+        //Configures data source for Diagram
+        dataSourceSettings: {
+            id: "Id",
+            parent: "ReportingPerson",
+            //Defines data source with html table
+            dataSource: ej.DataManager($("#htmlbinding")),
+        }
+    });
+});
 
 {% endhighlight %}
 
-![]("/js/Diagram/Data-Binding_images/Data-Binding_img4.png") 
+![]("/js/Diagram/Data-Binding_images/Data-Binding_img4.png")
+
+
+
+
+
+

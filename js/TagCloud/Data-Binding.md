@@ -94,7 +94,7 @@ Map Local datasource to corresponding fields in **TagCloud** control as follows,
 
 The following screenshot displays the **TagCloud** control with local data binding.
 
-![]("/js/TagCloud/Data-Binding_images/Data-Binding_img1.png")
+{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img1.png"%}
 
 
 
@@ -163,7 +163,7 @@ The following screenshot displays a **TagCloud** control with remote data bindin
 
 
 
-![]("/js/TagCloud/Data-Binding_images/Data-Binding_img2.png") 
+{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img2.png" %}
 
 
 
@@ -246,7 +246,7 @@ The following code example depicts you the way to bind data to the **TagCloud** 
 
 Execute the above code to render the following output.
 
-![]("/js/TagCloud/Data-Binding_images/Data-Binding_img3.png")
+{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img3.png"%}
 
 
 
@@ -324,7 +324,7 @@ The following example depicts you the way to bind data to the **TagCloud** widge
 
 The following screenshot illustrates a **TagCloud** control using Angular databinding,
 
-![]("/js/TagCloud/Data-Binding_images/Data-Binding_img4.png")
+{% include image.html url="/js/TagCloud/Data-Binding_images/Data-Binding_img4.png"%}
 
 
 

@@ -59,5 +59,5 @@ In an HTML page, define a div element that is a container for  Accordion widg
 
 Output for accordion when “enableRTL” is set to “true” is as follows,
 
-![]("/js/Accordion/RTL-Support_images/RTL-Support_img1.png") 
+{% include image.html url="/js/Accordion/RTL-Support_images/RTL-Support_img1.png" %}
 

@@ -53,9 +53,9 @@ documentation: ug
 
 The following screenshot displays the **Grid** data source before refreshing.
 
-![]("/js/Grid/How-to/Refresh-datasource_images/Refresh-datasource_img1.png" Caption="Before Refreshing")
+{% include image.html url="/js/Grid/How-to/Refresh-datasource_images/Refresh-datasource_img1.png" Caption="Before Refreshing"%}
 
 The following screenshot displays the **Grid** data source after refreshing.
 
-![]("/js/Grid/How-to/Refresh-datasource_images/Refresh-datasource_img2.png" Caption="After Refreshing")
+{% include image.html url="/js/Grid/How-to/Refresh-datasource_images/Refresh-datasource_img2.png" Caption="After Refreshing"%}
 

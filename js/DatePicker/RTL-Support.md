@@ -38,5 +38,5 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 The following screenshot displays the output for the above code.
 
-![]("/js/DatePicker/RTL-Support_images/RTL-Support_img1.png")
+{% include image.html url="/js/DatePicker/RTL-Support_images/RTL-Support_img1.png"%}
 

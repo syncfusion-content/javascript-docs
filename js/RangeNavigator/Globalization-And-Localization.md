@@ -49,7 +49,7 @@ ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 
 
 
-![]("/js/RangeNavigator/Globalization-And-Localization_images/Globalization-And-Localization_img1.png") 
+{% include image.html url="/js/RangeNavigator/Globalization-And-Localization_images/Globalization-And-Localization_img1.png" %}
 
 #### RTL
 
@@ -70,7 +70,7 @@ ej.datavisualization.RangeNavigator.locale["fr-FR"] = {
 
 
 
-![]("/js/RangeNavigator/Globalization-And-Localization_images/Globalization-And-Localization_img2.png") 
+{% include image.html url="/js/RangeNavigator/Globalization-And-Localization_images/Globalization-And-Localization_img2.png" %}
 
 
 

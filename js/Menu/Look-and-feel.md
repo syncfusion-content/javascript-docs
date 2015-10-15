@@ -127,5 +127,5 @@ Add the following code in your style section.
 
 Following screenshot displays the output of the above code.
 
-![]("/js/Menu/Look-and-feel_images/Look-and-feel_img1.png") 
+{% include image.html url="/js/Menu/Look-and-feel_images/Look-and-feel_img1.png" %}
 

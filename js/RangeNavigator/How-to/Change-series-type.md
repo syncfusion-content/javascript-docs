@@ -31,7 +31,7 @@ $("#rangecontainer").ejRangeNavigator({
 
 
 
-![]("/js/RangeNavigator/How-to/Change-series-type_images/Change-series-type_img1.png") 
+{% include image.html url="/js/RangeNavigator/How-to/Change-series-type_images/Change-series-type_img1.png" %}
 
 
 When using multiple series in **RangeNavigator**, **type** property in **seriesSettings** is used to set a type common for all the series.
@@ -54,6 +54,6 @@ $("#rangecontainer").ejRangeNavigator({
 
 {% endhighlight %}
 
-![]("/js/RangeNavigator/How-to/Change-series-type_images/Change-series-type_img2.png") 
+{% include image.html url="/js/RangeNavigator/How-to/Change-series-type_images/Change-series-type_img2.png" %}
 
 

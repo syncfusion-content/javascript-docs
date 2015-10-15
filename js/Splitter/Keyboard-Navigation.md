@@ -109,5 +109,5 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 Run the sample and press **Alt + J** to focus the **Splitter** widget. Perform provided functionality by using keyboard shortcuts.
 
-![]("/js/Splitter/Keyboard-Navigation_images/Keyboard-Navigation_img1.png") 
+{% include image.html url="/js/Splitter/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" %}
 

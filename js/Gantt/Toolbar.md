@@ -39,5 +39,5 @@ Gantt control contains toolbar options for editing, searching, expanding and col
 
 The following screenshot shows the toolbar option in Gantt control.
 
-![]("/js/Gantt/Toolbar_images/Toolbar_img1.png")
+{% include image.html url="/js/Gantt/Toolbar_images/Toolbar_img1.png"%}
 

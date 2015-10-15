@@ -9,22 +9,22 @@ documentation: ug
 
 # Commands
 
-There are several commands available in diagram. They are listed as follows.
+There are several commands available in the Diagram as follows.
 
-* Alignment
-* Spacing
-* Sizing
-* Clipboard
-* Grouping
-* Z-Order
-* Zoom
-* Nudge
-* FitToPage
-* Undo/Redo
+  * Alignment commands
+  * Spacing commands
+  * Sizing commands
+  * Clipboard commands
+  * Grouping commands
+  * Z-order commands
+  * Zoom commands
+  * Nudge commands
+  * FitToPage commands
+  * Undo/Redo commands
 
-## Alignment Command
+## Align
 
-**Alignment command** are used to align selected nodes/connectors on the Diagram page. The alignment is based on the selection boundary. The alignment command is as follows.
+Alignment commands enable you to align the selected objects such as nodes and connectors with respect to the selection boundary.
 
 <table>
 <tr>
@@ -35,341 +35,286 @@ Description</th></tr>
 <tr>
 <td>
 align</td><td>
-<b>direction</b> (string)<br/>
-Values accepted-(“left”, “right”, “center”, “top”, “bottom” or “middle”)</td><td>
-Align all the nodes/connectors in the selection list to the left, right, center, top, bottom, middle of the selection boundary</td></tr>
+<b>direction</b> (string)</td><td>
+Align all the nodes/connectors in the selection list with respect to specified direction of the selection boundary.</td></tr>
 </table>
 
+The accepted values of the argument "direction" are as follows.
+    
+  * "left" - Align all the selected objects at the left of the selection boundary.
+  * "right" - Align all the selected objects at the right of the selection boundary.
+  * "center" - Align all the selected objects at the center of the selection boundary.
+  * "top" - Align all the selected objects at the top of the selection boundary.
+  * "bottom" - Align all the selected objects at the bottom of the selection boundary.
+  * "middle" - Align all the selected objects at the middle of the selection boundary.
 
-### Vertical Alignment command
 
-The node is aligned vertically to left, right and center using alignment command. The following code illustrates how to execute the vertical alignment command.
+The following code example illustrates how to align all the selected objects at the left side of selection boundary.
 
 {% highlight js %}
 
-//align left
+var diagram = $("#DiagramContent").ejDiagram("instance");
+//Sets direction as left
 diagram.align("left");
 
-//align right
-diagram.align("right");
-
-//align center
-diagram.align("center");
-
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img1.png") 
+![]("/js/Diagram/Commands_images/Commands_img1.png")
 
-### Horizontal Alignment command
+![]("/js/Diagram/Commands_images/Commands_img2.png")
 
-The node is aligned horizontally to top, bottom, and middle using alignment commands. The following code illustrates how to execute the horizontal alignment command.
+## Space
+
+Spacing commands enable you to place the selected objects on the page at equal intervals from each other. The selected objects are equally spaced within the selection boundary.
+
+The following code example illustrates how to execute the space commands.
 
 {% highlight js %}
 
-//align top
-diagram.align("top");
+var diagram = $("#DiagramContent").ejDiagram("instance");
 
-//align bottom
-diagram.align("bottom");
-
-//align middle
-diagram.align("middle");
-
-{% endhighlight %}
-
-![]("/js/Diagram/Commands_images/Commands_img2.png") 
-
-## Spacing Command
-
-**Spacing command** are used to place selected nodes on the diagram at equal intervals from each other. The objects are spaced within the bounds of the first and last objects in the selection.
-
-<table>
-<tr>
-<th>
-Command</th><th>
-Description</th></tr>
-<tr>
-<td>
-spaceAcross</td><td>
-Align the nodes/connectors in the selection list with equal horizontal distance between them.</td></tr>
-<tr>
-<td>
-spaceDown</td><td>
-Align the nodes/connectors in the selection list with equal vertical distance between them.</td></tr>
-</table>
-
-
-### spaceAcross Command
-
-The `spaceAcross` command spaces selected nodes with equal horizontal distance between them. The following code illustrates how to execute spaceAcross command.
-
-{% highlight js %}
-
-//SpaceAcross
+//Equally spaces the selected nodes horizontally
 diagram.spaceAcross();
 
-{% endhighlight %}
-
-![]("/js/Diagram/Commands_images/Commands_img3.png") 
-
-### spaceDown Command
-
-The `spaceDown` command spaces selected nodes with equal vertical distance between them. The following code illustrate how to execute spaceDown command.
-
-{% highlight js %}
-
-//space down
+//Equally spaces the selected nodes vertically
 diagram.spaceDown();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img4.png") 
+![]("/js/Diagram/Commands_images/Commands_img3.png")
 
-## Sizing Command
+![]("/js/Diagram/Commands_images/Commands_img4.png")
 
-**Sizing command** are used to size the selected nodes on the Diagram. The following are the sizing commands.
+## Sizing
 
-<table>
-<tr>
-<th>
-Command</th><th>
-Description</th></tr>
-<tr>
-<td>
-sameSize</td><td>
-Size of the nodes in the selection list is resized to size of first node in the selection list.</td></tr>
-<tr>
-<td>
-sameHeight</td><td>
-Height of the nodes in the selection list is resized to height of first node in the selection list.</td></tr>
-<tr>
-<td>
-sameWidth</td><td>
-Width of the nodes in the selection list is resized to width of first node in the selection list.</td></tr>
-</table>
+Sizing commands enable to equally size the selected nodes with respect to the first selected object.
 
-
-The following code illustrate how to execute Sizing command
+The following code example illustrates how to execute the size commands.
 
 {% highlight js %}
 
-//same size
+var diagram = $("#DiagramContent").ejDiagram("instance");
+
+//Scales the selected items to the size of first selected object
 diagram.sameSize();
 
-//same height
+//Vertically scales the selected items to the height of first selected object
 diagram.sameHeight();
 
-//same width
+//Horizontally scales the selected items to the width of first selected object
 diagram.sameWidth();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img5.png") 
+![]("/js/Diagram/Commands_images/Commands_img5.png")
 
-## Clipboard command
 
-**Clipboard command** are used to cut, copy, and paste the selected elements on Diagram. The following are the Clipboard command.
+## Clipboard 
 
-* cut
-* copy
-* paste
+Clipboard commands are used to cut, copy or paste the selected elements. 
 
-### Cut
-
-`cut` the selected elements from the Diagram to the `Diagram`'s clipboard. The following code illustrates how to execute Cut command.
+The following code illustrates how to execute the clipboard commands. 
 
 {% highlight js %}
 
-//cut the selected nodes/connectors
+//Cuts the selected elements from the Diagram to the Diagram’s clipboard
 diagram.cut();
 
-{% endhighlight %}
-
-### Copy
-
-`copy` the selected elements from the Diagram to the `Diagram`'s clipboard. The following code illustrates how to execute Copy command.
-
-{% highlight js %}
-
-//copy the nodes/connectors
+//Copies the selected elements from the Diagram to the Diagram’s clipboard.
 diagram.copy();
 
-{% endhighlight %}
-
-### Paste
-
-`paste` the `Diagram`'s clipboard data (nodes/connectors) into the Diagram. The following code illustrates how to execute Paste command.
-
-{% highlight js %}
-
-//paste the cut/copied nodes/connectors on diagram
+//Pastes the Diagram’s clipboard data (nodes/connectors) into the Diagram.
 diagram.paste();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img6.png")
+![]("/js/Diagram/Commands_images/Commands_img6.png"%}
 
-## Grouping Command
+## Grouping 
 
-**Grouping command** are used to group/ungroup the selected elements on Diagram.
+**Grouping commands** are used to group/ungroup the selected elements on the Diagram.
 
-### Group
-
-The following code illustrates how to Group the selected elements on Diagram.
+The following code illustrates how to execute the Grouping commands.
 
 {% highlight js %}
 
-//group the selected nodes/connectors
+//Groups the selected elements.
 diagram.group();
 
-{% endhighlight %}
-
-### Ungroup
-
-The following code illustrates how to Ungroup the selected group on diagram.
-
-{% highlight js %}
-
-//ungroup the selected group 
+//Ungroups the selected group.
 diagram.ungroup();
 
 {% endhighlight %}
 
 ## Z-Order Command
 
-**Z-order command** are used to move the selected elements to the front of other elements. To send it back of other elements, move it one step (z-index) forward and move it one step (z-index) backward.
-These commands provide support to control overlapping objects.
-
-* bringToFront
-* sendToBack
-* moveForward
-* sendBackward
+**Z-Order commands** enable you to visually arrange the selected objects such as nodes and connectors on the page.
 
 ### bringToFront Command
 
-The `bringToFront` command moves the selected element over other elements by increasing the selected element's z-index to Diagram element's maximum value. The following code illustrates how to execute the BringToFront command.
+The 'bringToFront' command visually brings the selected element to front over all the other overlapped elements. The following code illustrates how to execute the bringToFront command.
 
 {% highlight js %}
 
-//bring to front
+//Brings to front
 diagram.bringToFront();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img7.png") 
+![]("/js/Diagram/Commands_images/Commands_img7.png")
 
 ### sendToBack Command
 
-The `sendToBack` command moves the selected element behind all other elements by setting the selected element's z-index to zero. The following code illustrates how to execute sendToBack command.
+The 'sendToBack' command visually moves the selected element behind all the other overlapped elements. The following code illustrates how to execute the sendToBack command.
 
 {% highlight js %}
 
-//send to back
+//Sends to back
 diagram.sendToBack();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img8.png") 
+![]("/js/Diagram/Commands_images/Commands_img8.png")
 
 ### moveForward Command
 
-The `moveForward` command increases the z-index value of the selected element by 1. The following code illustrates how to execute moveForward Command.
+The 'moveForward' command visually moves the selected element over the nearest overlapping element. The following code illustrates how to execute the moveForward Command.
 
 {% highlight js %}
 
-//move forward
+//Moves forward
 diagram.moveForward();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img9.png") 
+![]("/js/Diagram/Commands_images/Commands_img9.png")
 
 ### sendBackward Command
 
-The `sendBackward` command decreases the z-index value of the selected element by 1. The following code illustrates how to execute sendBackward command.
+The 'sendBackward' command visually moves the selected element behind the underlying element. The following code illustrates how to execute the sendBackward command.
 
 {% highlight js %}
 
-//send backward
+//Sends backward
 diagram.sendBackward();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img10.png") 
+![]("/js/Diagram/Commands_images/Commands_img10.png")
 
-## Zoom Command
+## Zoom
 
-Zoom feature is used to zoom-in and zoom-out the Diagram view and the zooming performed based on the center of current Diagram view. The following code illustrates how to zoom-in the Diagram.
+**zoomTo** command is used to zoom-in and zoom-out the Diagram view.
 
-{% highlight js %}
-
-//ZoomIn
-function ZoomIn() {
-   var diagram = $("#diagram").ejDiagram("instance");
-   var zoom = {
-      zoomFactor: 0.2,
-      zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn
-   };
-   diagram.zoomTo(zoom);
-}  
-
-{% endhighlight %}
-
-The following code illustrates how to zoom-out the Diagram.
+The following code illustrates how to zoom-in/zoom out the Diagram. 
 
 {% highlight js %}
 
-//ZoomOut       
-function ZoomOut() {
-   var diagram = $("#diagram").ejDiagram("instance");
-   var zoom = {
-      zoomFactor: 0.2,
-      zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut
-   };
-   diagram.zoomTo(zoom);
+function Zoom() {
+    var diagram = $("#diagram").ejDiagram("instance");
+    var zoom = {
+        // Sets the zoomFactor
+        zoomFactor: 0.2,
+        // Sets the zoomCommand as zoomIn to zoom-in the Diagram
+        zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn,
+        // for zoomOut
+        //zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut
+        //Defines the focusPoint to zoom the Diagram with respect to any point
+        focusPoint: {
+            x: 100,
+            y: 100
+        } //When you do not set focus point, zooming is performed with reference to the center of current Diagram view.
+    };
+    diagram.zoomTo(zoom);
 }
+
 {% endhighlight %}
 
 ## Nudge Command
 
-`nudge` command move selected elements on the Diagram toward up, down, left or right by 1 pixel. The Nudge command is as follows.
+**nudge** commands move the selected elements towards up, down, left or right by 1 pixel.
 
 <table>
 <tr>
-<th>
-Command</th><th>
+<th>Command</th><th>
 Parameter</th><th>
 Description</th></tr>
 <tr>
 <td>
-nudge</td><td>
-direction (string)<br/>
-Value accepted- (“up”/“down”/“left”/“right”)<br/>
-delta(integer)</td><td>
-Nudge command moves the selected elements towards up/ down/ left/ right by the number of pixels specified by the parameter delta. When delta is not specified, by default it is considered as 1 pixel.</td></tr>
+nudge </td><td>
+direction (string),
+delta(integer) </td><td>
+Nudge command moves the selected elements towards the specified direction by the number of pixels specified by the parameter delta. When delta is not specified, it is considered as 1 pixel, by default. </td></tr>
 </table>
 
+The accepted values of the argument "direction" are as follows.
+
+  * "up" - moves the selected elements towards up by the the specified delta value.
+  * "down" - moves the selected elements towards down by the specified delta value.
+  * "left" - moves the selected elements towards left by the specified delta value.
+  * "right" - moves the selected elements towards right by the specified delta value.
 
 The following code illustrates how to execute Nudge command.
 
 {% highlight js %}
 
-//nudge up
+var diagram = $("#diagramcontent").ejDiagram("instance");
+//Nudges up
 diagram.nudge("up", 5);
 
 {% endhighlight %}
 
 **Nudge by using Arrow Keys**
 
-The corresponding arrow keys are used to move the selected elements to up, down, left or right by 1 pixel.
+The corresponding arrow keys are used to move the selected elements towards up, down, left, or right direction by 1 pixel.
 
-![]("/js/Diagram/Commands_images/Commands_img11.png") 
+![]("/js/Diagram/Commands_images/Commands_img11.png")
 
-`nudge` command are particularly useful for accurate placement of elements on the Diagram as it allows you to move by 1 pixel each time.
+Nudge commands are particularly useful for accurate placement of elements.
+
+For more information,  refer to [Keyboard Interaction](/js/Diagram/Interaction "Keyboard").
+
+## BringIntoView
+
+`bringIntoView` command brings the specified rectangular region into the view port of the Diagram
+
+The following code illustrates how to execute the bringIntoView command.
+ 
+{% highlight js %}
+
+var diagram = $("#DiagramContent").ejDiagram("instance");
+//Brings the specified rectangular region of the Diagram content to the viewport of the page.
+diagram.bringIntoView({
+    x: 700,
+    y: 500,
+    width: 100,
+    height: 100
+});
+
+{% endhighlight %}
+
+## BringToCenter
+
+`bringToCenter` command brings the specified rectangular region of the Diagram content to the center of the view port.
+
+The following code illustrates how to execute the bringToCenter command.
+
+{% highlight js %}
+
+var diagram = $("#DiagramContent").ejDiagram("instance");
+//Brings the specified rectangular region of the Diagram content to the center of the viewport.    
+diagram.bringToCenter({
+    x: 700,
+    y: 500,
+    width: 100,
+    height: 100
+});
+
+{% endhighlight %}
 
 ## FitToPage command
 
-`fitToPage` command helps to fit the Diagram content into the view with respect to either width, height or at the whole.
+`fitToPage` command helps to fit the Diagram content into the view with respect to either width, height, or at the whole.
 
 <table>
 <tr>
@@ -379,24 +324,19 @@ Parameter</th><th>
 Description</th></tr>
 <tr>
 <td>
-fitToPage</td><td>
-<b>mode</b> (string)<br/>
-Value accepted: ej.datavisualization.Diagram.FitMode<br/><br/>
-<b>region</b> (string)<br/>
-Value accepted-ej.datavisualization.Diagram.Region<br/><br/>
-<b>margin</b> (object) </td><td>
-<b>FitToPage</b> command fits the <b>Diagram</b> into the view. The area/bounds to be fit into a view is specified through the parameters.<br/>
-<b>mode</b> – To specify whether to fit the <b>Diagram</b> into view either in terms of width, height or entire page.<br/>
-<b>region</b> – To specify whether to fit the content based on the <b>Diagram</b> elements or page settings.<br/>
-<b>margin</b> – Space that is to be left in between the content and viewport.</td></tr>
+           fitToPage </td><td>
+<b>mode</b> (string) Value accepted: ej.datavisualization.Diagram.FitMode    <b>region</b> (string) Value accepted-ej.datavisualization.Diagram.Region   <b>margin</b> (object) </td><td>
+<b>FitToPage</b> command fits the <b>Diagram</b> into the view. The area/bounds to be fit into view is specified through the parameters.   
+<b>mode</b> – [FitToMode](#FitToMode).
+<b>region</b> – [Region](#Region).
+<b>margin</b> – Space that is to be left in between the content and viewport. </td></tr>
 </table>
 
-
-The following code illustrates how to execute FitToPage command.
+The following code illustrates how to execute FitToPage command.
 
 {% highlight js %}
 
-//fit to page – fit diagram based on elements
+//Fits to page – fit Diagram based on elements
 diagram.fitToPage("page", "content", {
    left: 25,
    top: 25,
@@ -407,233 +347,82 @@ diagram.fitToPage("page", "content", {
 
 ### FitToMode
 
-`Mode` is to specify whether the Diagram content can be fit into view with respect to width, height or entire bounds of diagram.
-
-<table>
-<tr>
-<th>
-Mode</th><th>
-Description</th></tr>
-<tr>
-<td>
-Page</td><td>
-Fits the entire <b>Diagram</b> content into view</td></tr>
-<tr>
-<td>
-Width</td><td>
-Fits the width of <b>Diagram</b> content into view </td></tr>
-<tr>
-<td>
-Height</td><td>
-Fits the height of <b>Diagram</b> content into view</td></tr>
-</table>
-
+Mode specifies whether the Diagram content has to be fit into view with respect to width, height, or entire bounds of the Diagram. To explore the mode, refer to [FitToMode](/js/api/global "FitMode"). 
 
 ### Region
 
-`Region` is to specify the region/bounds of Diagram content to fit into view.
-
-<table>
-<tr>
-<th>
-Region</th><th>
-Description</th></tr>
-<tr>
-<td>
-Content</td><td>
-Specifies the region covered by the <b>Diagram</b> elements </td></tr>
-<tr>
-<td>
-PageSettings</td><td>
-Specifies the region based on page settings</td></tr>
-</table>
-
-
-## Undo/Redo Command
-
-Refer to the Link for [Undo/Redo Commands](/js/Diagram/Undo-and-Redo).
+Region specifies the region/bounds of the Diagram content that is to be fit into the view. For more information about Region, refer to [Region](/js/api/global "Region").
 
 ## Command Manager
 
-Diagram provides support to map/bind command execution with desired combination of key gestures. By default, the diagram maps some commands with a set of key gestures and they are illustrated in the following table.
-
-<table>
-<tr>
-<td>
-<b>Shortcut Key</b></td><td>
-<b>Command</b></td><td>
-<b>Description</b></td></tr>
-<tr>
-<td>
-Ctrl + A</td><td>
-selectAll</td><td>
-Select all nodes/connectors in the diagram</td></tr>
-<tr>
-<td>
-Ctrl + C</td><td>
-copy</td><td>
-Copy the diagram selected elements</td></tr>
-<tr>
-<td>
-Ctrl + V</td><td>
-paste</td><td>
-Paste the copied elements</td></tr>
-<tr>
-<td>
-Ctrl + X</td><td>
-cut</td><td>
-Cut the selected elements</td></tr>
-<tr>
-<td>
-Ctrl + Z</td><td>
-undo</td><td>
-Undo(Reverse the last editing action performed on the diagram)</td></tr>
-<tr>
-<td>
-Ctrl + Y</td><td>
-redo</td><td>
-Redo(Restores the last editing action if no other actions have occurred since the last undo on the diagram)</td></tr>
-<tr>
-<td>
-Delete</td><td>
-delete</td><td>
-Delete the selected elements </td></tr>
-<tr>
-<td>
-F2</td><td>
-startEdit</td><td>
-Sets the selected element's label mode as “edit” </td></tr>
-<tr>
-<td>
-Esc</td><td>
-endEdit</td><td>
-Sets the selected element's label mode as “view” </td></tr>
-<tr>
-<td>
-Ctrl /Shift+ Click on object</td><td>
-</td><td>
-Multiple selection(Selector binds all selected nodes/connectors)</td></tr>
-<tr>
-<td>
-Up Arrow</td><td>
-nudge(“up”)</td><td>
-nudgeUp(move the selected elements towards up by one pixel)</td></tr>
-<tr>
-<td>
-Down Arrow</td><td>
-nudge(“down”)</td><td>
-nudgeDown(move the selected elements towards down by one pixel)</td></tr>
-<tr>
-<td>
-Left Arrow</td><td>
-nudge(“left”)</td><td>
-nudgeLeft(move the selected elements towards left by one pixel)</td></tr>
-<tr>
-<td>
-Right Arrow</td><td>
-nudge(“right”)</td><td>
-nudgeRight(move the selected elements towards right by one pixel)</td></tr>
-<tr>
-<td>
-Ctrl + MouseScroll</td><td>
-zoom</td><td>
-Zoom(Zoom in/Zoom out the diagram)</td></tr>
-<tr>
-<td>
-Ctrl+MouseScroll</td><td>
-zoom</td><td>
-Zoom(Zoom in/Zoom out the diagram)</td></tr>
-</table>
-
-_In built commands_
-
-Command Manager provides support to map custom commands with the set of desired key combinations. The defined custom commands are executed when the specified key gesture is recognized.
+Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some in-built commands. For more information about inbuilt commands, refer to [Keyboard Interaction](/js/Diagram/Interaction "Keyboard").
+Command Manager provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
 
 ### Custom command
 
-A custom command is defined with a set of predefined fields as follows.
-
-<table>
-<tr>
-<td>
-<b>Property</b></td><td>
-<b>Type</b></td><td>
-<b>Default</b></td><td>
-<b>Description</b></td></tr>
-<tr>
-<td>
-gesture</td><td>
-Object</td><td>
-Null</td><td>
-Combination of keys and key modifiers to recognize when to execute the command</td></tr>
-<tr>
-<td>
-canExecute</td><td>
-Object</td><td>
-A method that returns true.</td><td>
-The method to define whether the command is executable at the current moment or not.It is called when the specified key gesture is recognized.</td></tr>
-<tr>
-<td>
-execute</td><td>
-Object</td><td>
-Null</td><td>
-The execute method acts as the command handler and it is called when the canExecute method returns true.</td></tr>
-<tr>
-<td>
-parameter</td><td>
-Object</td><td>
-Null</td><td>
-parameter is an object. If specified, the parameter is passed to the handler on command execution.</td></tr>
-</table>
-
-_Custom Command_
+To define a custom command, you need to specify the combination of key gestures(`gesture`), a method to define whether the command can be executed at the moment(`canExecute`) and a method to execute the command(`execute`).
+To explore the properties of custom commands, refer to [Commands](/js/api/diagram "commandManager:commands")
 
 The following code example illustrates how to define a custom command.
 
 {% highlight js %}
 
-$("#DiagramContent").ejDiagram({
-    commandManager: {
-        commands:{
-            //command to clone the selected item
-            "clone": {
-                //Method to define whether the command can be executed at the current moment
-                canExecute: function (args) {
-                    //Defines that the clone command can be executed, if and only if the selection list is not empty.
-                    if (args.model.selectedItems.length) return true;
-                },
-                //Command handler
-                execute: function (args) {
-                    //Logic to clone the selected element
-                    diagram.copy();
-                    diagram.paste();
-                },
-                //Defines that the clone command has to be executed on the recognition of Shift+C key press.
-                gesture: { key: ej.datavisualization.Diagram.Keys.C, keyModifiers: ej.datavisualization.Diagram.KeyModifiers.Shift }
-            }
-        }
-    }
-});
-
+      $("#DiagramContent").ejDiagram({
+      commandManager: {      
+            commands: {      
+                  //Commands to clone the selected item      
+                  "clone": {      
+                  //Method to define whether the command can be executed at the current moment      
+                  canExecute: function (args) {      
+                        //Defines that the clone command can be executed, if and only if the selection list is not empty.      
+                        if (args.model.selectedItems.length) return true;      
+                  },
+      
+                  //Command handler      
+                  execute: function (args) {      
+                        //Logic to clone the selected element      
+                        diagram.copy();      
+                        diagram.paste();      
+                  },      
+                  //Defines that the clone command has to be executed on the recognition of Shift+C key press.      
+                  gesture: { key: ej.datavisualization.Diagram.Keys.C, keyModifiers: ej.datavisualization.Diagram.KeyModifiers.Shift }      
+                  }      
+            }      
+         }      
+      });
 {% endhighlight %}
 
 ### Modify the existing command
 
-By default, the diagram maps certain commands with the relevant key combination. If those commands are not desired for the specified keys, they can be disabled. If the functionality of a specific command has to be changed, the command can be completely rewritten. Following code example illustrates how to disable a command.
+When any one of the default commands is not desired, they can be disabled. To change the functionality of a specific command, the command can be completely modified.
+
+The following code example illustrates how to disable a command and how to modify the in-built commands.
+
 
 {% highlight js %}
 
-$("#DiagramContent").ejDiagram({
-    //disable the nudging commands
-    commandManager: {
-        commands:{
-        //Assigning null value to an existing command, disables its execution
-        "nudgeUp": null,
-        "nudgeDown": null,
-        "nudgeRight": null,
-        "nudgeLeft": null
-        }
-  }
-});
+      $("#DiagramContent").ejDiagram({      
+      //Disables the nudging commands      
+            commandManager: {            
+                  commands: {            
+                        //Assigns null value to an existing command and disables its execution            
+                        "nudgeUp": null,            
+                        "nudgeDown": null,            
+                        "nudgeRight": null,      
+                              
+                        //Modifies the existing command - nudgeLeft     
+                        "nudgeLeft": {            
+                        canExecute: function (args) {            
+                              if (args.model.selectedItems.length) return true;            
+                        },            
+                        //Command handler            
+                        execute: function (args) {                     
+                              diagram.nudge("left");            
+                        },            
+                        gesture: { key: ej.datavisualization.Diagram.Keys.Left }            
+                        }            
+                  }            
+            }    
+      });
 
 {% endhighlight %}

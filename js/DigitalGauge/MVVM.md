@@ -46,7 +46,7 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-![]("/js/DigitalGauge/MVVM_images/MVVM_img1.png" Caption="")
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img1.png" Caption=""%}
 
 ## Adding the Digital Gauge Items
 
@@ -72,7 +72,7 @@ Execute the above code to render the following output.
 
 Finally while running the above codes, the following output will be rendered.
 
-![]("/js/DigitalGauge/MVVM_images/MVVM_img2.png" Caption="")
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img2.png" Caption=""%}
 
 ## Two Way Binding
 
@@ -110,7 +110,7 @@ Finally while running the above codes, the following output will be rendered.
 
 Execute the above code to render the following output.
 
-![]("/js/DigitalGauge/MVVM_images/MVVM_img3.png" Caption="")
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img3.png" Caption=""%}
 
 
 
@@ -156,5 +156,5 @@ Knockout support allows you to bind the html elements against any of the availab
 
 Execute the above code to render the following output.
 
-![]("/js/DigitalGauge/MVVM_images/MVVM_img4.png" Caption="")
+{% include image.html url="/js/DigitalGauge/MVVM_images/MVVM_img4.png" Caption=""%}
 

@@ -15,7 +15,7 @@ This section explains briefly about how to create a **Grid** in your application
 
 The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. You can create a **Grid** with a highly customizable look and feel. You can use the **Grid control** to generate complex **Grid** based reports with rich formatting. In the following example, you can take a look at how the transaction of a product is managed, analysis of a particular sale using filtering and grouping feature. This section explains you about adding group, filter and paging of sales products.
 
-![]("/js/Grid/Getting-Started_images/Getting-Started_img1.png")
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img1.png"%}
 
 
    Create an **HTML** file and add the following references to the required libraries.
@@ -90,7 +90,7 @@ The **Grid** can be easily configured to the DOM element, such as &lt;div&gt;. Y
 
  You can execute the above code example to render an empty **ejGrid** with specified column headers, where the data is specified.
 
-![]("/js/Grid/Getting-Started_images/Getting-Started_img2.png")
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img2.png"%}
 
 ##Set Sales Data
 
@@ -127,7 +127,7 @@ You can pass the data to the **Grid**  either  locally or remotly. Assign the we
 
 The following screenshot illustrates a **Grid** with sales data.
 
-![]("/js/Grid/Getting-Started_images/Getting-Started_img3.png")
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img3.png"%}
 
 ##Enable Paging
 
@@ -166,7 +166,7 @@ The following screenshot illustrates a **Grid** with sales data.
 
 Use [`allowPaging`](/js/api/ejgrid#members:allowpaging  "allowPaging") to switch between pages.
 
-![]("/js/Grid/Getting-Started_images/Getting-Started_img4.png")
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img4.png"%}
 
 ##Enable Filtering
 
@@ -207,7 +207,7 @@ To enable filtering, use `allowFiltering` property of **Grid** as follows.
 
 The following screenshot illustrates how to filter the sales data.
 
-![]("/js/Grid/Getting-Started_images/Getting-Started_img5.png")
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img5.png"%}
 
 ##Enable Grouping
 
@@ -250,7 +250,7 @@ $(function () {
 
 The following screenshot shows the analysis of sales data by grouping unit stock.
 
-![]("/js/Grid/Getting-Started_images/Getting-Started_img6.png")
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img6.png"%}
 
 ##Enable Group Summary
 
@@ -305,5 +305,5 @@ The following code example shows the option to enable group summary.
 
 The following screenshot shows the group summary.
 
-![]("/js/Grid/Getting-Started_images/Getting-Started_img7.png")
+{% include image.html url="/js/Grid/Getting-Started_images/Getting-Started_img7.png"%}
 

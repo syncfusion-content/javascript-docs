@@ -35,7 +35,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Interaction-and-Animation_images/Interaction-and-Animation_img1.png" Caption="")
+{% include image.html url="/js/CircularGauge/Interaction-and-Animation_images/Interaction-and-Animation_img1.png" Caption=""%}
 
 **Animations**
 
@@ -65,5 +65,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Interaction-and-Animation_images/Interaction-and-Animation_img2.png" Caption="")
+{% include image.html url="/js/CircularGauge/Interaction-and-Animation_images/Interaction-and-Animation_img2.png" Caption=""%}
 

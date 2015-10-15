@@ -69,7 +69,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 The output for **Splitter** when **enableRTL** is “**true**”.
 
-![]("/js/Splitter/RTL-Support_images/RTL-Support_img1.png") 
+{% include image.html url="/js/Splitter/RTL-Support_images/RTL-Support_img1.png" %}
 
 
 

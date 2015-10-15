@@ -68,5 +68,5 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker**
 
 Execute the above code to render the following output.
 
-![]("/js/TimePicker/Globalization_images/Globalization_img1.png") 
+{% include image.html url="/js/TimePicker/Globalization_images/Globalization_img1.png" %}
 

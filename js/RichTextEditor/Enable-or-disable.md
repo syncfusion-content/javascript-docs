@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Enable-or-disable
 description: enable or disable
@@ -34,7 +34,5 @@ Add the following code example in your **HTML** page.
 
 {% endhighlight %}
 
-
 ![](Enable-or-disable_images/Enable-or-disable_img1.png)
-
 

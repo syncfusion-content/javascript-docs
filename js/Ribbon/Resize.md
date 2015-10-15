@@ -160,9 +160,9 @@ documentation: ug
 
 The following screenshot displays **Ribbon** control without resizing the window.
 
-![]("/js/Ribbon/Resize_images/Resize_img1.png")
+{% include image.html url="/js/Ribbon/Resize_images/Resize_img1.png"%}
 
 When you resize the window, the ribbon groups are converted  into group button based on the window width. When you click the group button, the corresponding group items are displayed .The following screenshot displays the Ribbon control when clicking the group button **Actions**.
 
-![]("/js/Ribbon/Resize_images/Resize_img2.png")
+{% include image.html url="/js/Ribbon/Resize_images/Resize_img2.png"%}
 

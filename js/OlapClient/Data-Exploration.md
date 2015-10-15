@@ -21,7 +21,7 @@ documentation: ug
 
 After you click Split Button, Member Editor Dialog opens and through that you can check or uncheck the nodes to filter the members. Based on the selected members in the Member Editor Dialog, **OLAP Report** gets updated and generates the **MDX** query accordingly.
 
-![]("/js/OlapClient/Data-Exploration_images/Data-Exploration_img1.png") 
+{% include image.html url="/js/OlapClient/Data-Exploration_images/Data-Exploration_img1.png" %}
 
 The above filter illustrates that the members France and Germany, along with Queensland and South Australia are filtered from the **Grid** and **Chart** view.
 
@@ -45,15 +45,15 @@ The options in Filtering tab are as follows:
 
 The following screenshot displays the **Filtering** Dialog box.
 
-![]("/js/OlapClient/Data-Exploration_images/Data-Exploration_img2.png") 
+{% include image.html url="/js/OlapClient/Data-Exploration_images/Data-Exploration_img2.png" %}
 
 The following screenshot displays data before Filtering.
 
-![]("/js/OlapClient/Data-Exploration_images/Data-Exploration_img3.png") 
+{% include image.html url="/js/OlapClient/Data-Exploration_images/Data-Exploration_img3.png" %}
 
 The following screenshot displays the data after Filtering.
 
-![]("/js/OlapClient/Data-Exploration_images/Data-Exploration_img4.png") 
+{% include image.html url="/js/OlapClient/Data-Exploration_images/Data-Exploration_img4.png" %}
 
 ## Sorting
 
@@ -77,19 +77,19 @@ The options in the Sorting tab are as follows:
 
 The following screenshot displays the **Sorting** and **Filtering** dialog box.
 
-![]("/js/OlapClient/Data-Exploration_images/Data-Exploration_img5.png") 
+{% include image.html url="/js/OlapClient/Data-Exploration_images/Data-Exploration_img5.png" %}
 
 The following screenshot displays the data before sorting.
 
-![]("/js/OlapClient/Data-Exploration_images/Data-Exploration_img6.png") 
+{% include image.html url="/js/OlapClient/Data-Exploration_images/Data-Exploration_img6.png" %}
 
 The following screenshot displays the data after sorting.
 
-![]("/js/OlapClient/Data-Exploration_images/Data-Exploration_img7.png") 
+{% include image.html url="/js/OlapClient/Data-Exploration_images/Data-Exploration_img7.png" %}
 
 ## Grouping
 
 The data can be grouped when more than one dimension element is dropped into Categorical or Series in Axis Element Builder based on the order of addition, data is grouped and the report is updated. In the following example, the customer dimension values get grouped, with respect to date dimension values, likewise you can group multiple dimension values by dragging the elements from Cube Dimension Browsers to Axis Element Builder and the report values get updated according to it.
 
-![]("/js/OlapClient/Data-Exploration_images/Data-Exploration_img8.png") 
+{% include image.html url="/js/OlapClient/Data-Exploration_images/Data-Exploration_img8.png" %}
 

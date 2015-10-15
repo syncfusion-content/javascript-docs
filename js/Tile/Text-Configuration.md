@@ -35,5 +35,5 @@ Add the following code inside the **script** tag.
 
 
 
-![]("/js/Tile/Text-Configuration_images/Text-Configuration_img1.png")
+{% include image.html url="/js/Tile/Text-Configuration_images/Text-Configuration_img1.png"%}
 

@@ -95,5 +95,5 @@ You can add **Contextual Tabs** and **Tab Set** in the Ribbon control. In contex
 
 The following screenshot illustrates Ribbon with **Contextual Tabs** and **Tab Set**.
 
-![]("/js/Ribbon/Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png")
+{% include image.html url="/js/Ribbon/Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png"%}
 

@@ -135,5 +135,5 @@ Run the code sample, press **[Access key](http://en.wikipedia.org/wiki/Access_ke
 
 
 
-![]("/js/TimePicker/Keyboard-Interaction_images/Keyboard-Interaction_img1.png") 
+{% include image.html url="/js/TimePicker/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" %}
 

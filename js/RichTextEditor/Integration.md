@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Integration
 description: integration
@@ -50,7 +50,6 @@ Add the following code example in your **HTML** page to initialize the **RTE** c
 ![](Integration_images/Integration_img1.png)
 
 
-
 ## Knockout Binding
 
 **KnockoutJS** uses a **Model-View-View Model** (**MVVM**) design pattern, where the model is your stored data and the view is the visual representation of that data (**UI**) and View Model acts as the intermediary between the model and the view. Sometimes you may need to enter some text box value to replicate in **RTE** content area. In such situations, use the knockout binding feature to control the contents from other view field.
@@ -92,7 +91,5 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 {% endhighlight %}
 
 
-
 ![](Integration_images/Integration_img2.png)
-
 

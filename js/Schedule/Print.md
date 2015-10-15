@@ -56,12 +56,12 @@ $(function () {
 
 Execute the above code to render the following output.
 
- ![]("/js/Schedule/Print_images/Print_img1.png" Caption="schedule with print button.")
+ {% include image.html url="/js/Schedule/Print_images/Print_img1.png" Caption="schedule with print button."%}
 
 Click the print button to render the following output.
 
 
-![]("/js/Schedule/Print_images/Print_img2.png" Caption="schedule with Print window.")
+{% include image.html url="/js/Schedule/Print_images/Print_img2.png" Caption="schedule with Print window."%}
 
 
 **Appointment Print**
@@ -106,9 +106,9 @@ In **Schedule** control, you can print the appointment alone by using context me
 
 Right click on the appointment and select print appointment in the context menu as follows.
 
-![]("/js/Schedule/Print_images/Print_img3.png" Caption="schedule with Print option in Context Menu.")
+{% include image.html url="/js/Schedule/Print_images/Print_img3.png" Caption="schedule with Print option in Context Menu."%}
 
  Now, the widow is promoted to new document with appointment details and print window opens.
 
-![]("/js/Schedule/Print_images/Print_img4.png" Caption="schedule with Appointment Print.")
+{% include image.html url="/js/Schedule/Print_images/Print_img4.png" Caption="schedule with Appointment Print."%}
 

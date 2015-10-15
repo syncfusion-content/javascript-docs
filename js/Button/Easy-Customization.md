@@ -131,7 +131,7 @@ In the **HTML** page, add the following button elements to configure button widg
 
 Execute the above code to render the following output.
 
-![]("/js/Button/Easy-Customization_images/Easy-Customization_img1.png")
+{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img1.png"%}
 
 
 ## Content Type
@@ -319,7 +319,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 Execute the above code to render the following output.
 
-![]("/js/Button/Easy-Customization_images/Easy-Customization_img2.png") 
+{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img2.png" %}
 
 
 ## Image Position
@@ -491,7 +491,7 @@ In the **HTML** page, add the following button elements to configure **Button** 
 
 Execute the above code to render the following output.
 
-![]("/js/Button/Easy-Customization_images/Easy-Customization_img3.png")
+{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img3.png"%}
 
 
 ## Theme support
@@ -617,5 +617,5 @@ Configure the **CSS** styles to apply on buttons.
 
 Execute the above code to render the following output.
 
-![]("/js/Button/Easy-Customization_images/Easy-Customization_img4.png")
+{% include image.html url="/js/Button/Easy-Customization_images/Easy-Customization_img4.png"%}
 

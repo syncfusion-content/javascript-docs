@@ -55,4 +55,4 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 Output of the above steps
 
-![]("/js/DropDownList/Search-Options_images/Search-Options_img1.png") 
+{% include image.html url="/js/DropDownList/Search-Options_images/Search-Options_img1.png" %}

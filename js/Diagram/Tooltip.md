@@ -1,0 +1,209 @@
+---
+layout: post
+title: Tooltip
+description: Tooltip
+platform: js
+control: Diagram
+documentation: ug
+---
+
+# Tooltip
+In Graphical User Interface (GUI), tooltip is a message that is displayed when mouse hovers over an element. Diagram provides tooltip support while dragging, resizing, rotating a node, and when mouse hovers any Diagram element.
+
+## Default tooltip
+
+By default, Diagram displays a tooltip to provide the size, position, and angle related information while dragging, resizing, and rotation. The following images illustrate how the Diagram displays the node information during interaction.
+
+<table>
+<tr>
+<td>
+<img src='![]("/js/Diagram/Tooltip_images/Tooltip_img1" %}' alt="" width="213pt" height="181pt"/></td><td>
+<img src='![]("/js/Diagram/Tooltip_images/Tooltip_img2" %}' alt="" width="213pt" height="181pt"/></td><td>
+<img src='![]("/js/Diagram/Tooltip_images/Tooltip_img3" %}' alt="" width="213pt" height="181pt"/></td></tr>
+</table>
+
+### Disable default tooltip
+
+To disable the default tooltip, You need to set "null" to the `tooltip` property of the object `selectedItems`. The following code example illustrates how to disable default tooltip.
+
+{% highlight js %}
+    
+    $("#diagram").ejDiagram({
+        //Disable tooltip during interaction
+        selectedItems: {
+            tooltip: null
+        }
+    });
+    
+{% endhighlight %} 
+
+
+## Common tooltip for all nodes and connectors
+
+Diagram provides support to show tooltip when mouse hovers over any node/connector. 
+To show tooltip on mouse over, the `tooltip` property of Diagram model needs to be set with the tooltip `templateId` and alignments as shown in the following example.
+
+{% highlight html %}
+
+    <!--Define tooltip template-->
+    <script type="text/x-jsrender" id="mouseovertooltip">
+        <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
+            <span style="padding: 5px;">{{"{{"}}:Designation{{}}}}</span>
+        </div>
+    </script>
+
+{% endhighlight %}
+
+{% highlight js %}
+    
+    $("#diagram").ejDiagram({
+        width: "100%",
+        height: "700px",
+        
+        //Defines mouse over tooltip
+        tooltip: {
+            templateId: "mouseovertooltip",
+            alignment: {
+                horizontal: "center",
+                vertical: "bottom"
+            }
+        },
+        
+        //Defines nodes
+        nodes: [{
+            name: "elizabeth",
+            width: 70,
+            height: 40,
+            offsetX: 100,
+            offsetY: 100,
+            fillColor: "darkCyan",
+            labels: [{
+                text: "Elizabeth",
+                fontColor: "white",
+                bold: "true"
+            }],
+            Designation: "Managing Director"
+        }]
+    });
+    
+{% endhighlight %} 
+
+![]("/js/Diagram/Tooltip_images/Tooltip_img4.png")
+
+### Disable tooltip at runtime
+
+Tooltips on mouse over can be disabled by assigning "null" value to the `tooltip` property. The following code example illustrates how to disable the mouse over tooltip at runtime.
+
+{% highlight js %}
+    
+    $("#diagram").ejDiagram({
+        //Disables mouse over tooltip at runtime
+        tooltip: null
+    });
+    
+{% endhighlight %} 
+
+## Tooltip for a specific node/connector
+
+Tooltips can be customized for every node. Tooltip can be defined for individual node/connector by using the `tooltip` property of that node/connector. In addition to that, you have to remove the **InheritTooltip** option from the `constraints` of that node/connector. The following code example illustrates how to customize tooltips for individual elements.
+
+{% highlight js %}
+
+    var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
+    //Customizes tooltip for a node/connector       
+    var node = {
+        //Remove InheritTooltip not to inherit the tooltip defined in model
+        constraints: NodeConstraints.Default & ~NodeConstraints.InheritTooltip,
+        //Defines mouse over tooltip for a node
+        tooltip: {
+            templateId: "nodetooltiptemplate"
+        }
+    };
+
+    //Disables tooltip for any node/connector
+    node = {
+        //Removes InheritTooltip not to inherit the tooltip defined in model
+        constraints: NodeConstraints.Default & ~NodeConstraints.InheritTooltip,
+        //Disables tooltip for a node
+        tooltip: null
+    };
+    
+ {% endhighlight %} 
+  
+ ## Tooltip alignments
+ 
+ ### Tooltip relative to object
+
+Diagram provides support to show tooltip around the node/connector that is hovered by mouse. You can align the tooltip as you wish by using the `alignment` and `margin` properties of tooltip. The `relativeMode` property of tooltip defines whether the tooltip has to be displayed around the object or at the mouse position. The following code example illustrates how to position the tooltip around object.
+
+{% highlight html %}
+
+    <!--Define tooltip template-->
+    <script type="text/x-jsrender" id="mouseovertooltip">
+        <div style="background-color: #F08080; color: white; padding: 5px;">
+            <span>{{"{{"}}:Designation{{}}}}</span>
+        </div>
+    </script>
+    
+{% endhighlight %}
+
+{% highlight js %}
+
+    var node = {
+        name: "elizabeth", width: 70, height: 40, offsetX: 100, offsetY: 100,
+        //Removes inherit tooltip from constraints
+        constraints: NodeConstraints.Default & ~NodeConstraints.InheritTooltip,
+        //Defines tooltip
+        tooltip: {
+            //Defines template id
+            templateId: "mouseovertooltip",
+            
+            //Sets to show tooltip around the element
+            relativeMode:ej.datavisualization.Diagram.RelativeMode.Object,
+            
+            //Sets the alignment properties
+            alignment: {
+                //Defines horizontal alignment around node
+                horizontal: "center",
+                //Defines vertical alignment around node
+                vertical: "top"
+            }
+        },
+        Designation: "Director",
+        fillColor: "darkcyan", labels: [{ text: "Elizabeth", fontColor: "white" }]
+    };
+    
+{% endhighlight %}    
+    
+![]("/js/Diagram/Tooltip_images/Tooltip_img5.png")
+
+### Tooltip relative to mouse position
+
+To display the tooltip at mouse position, you need to set "mouse" option to the `relativeMode` property of tooltip. The following code example illustrates how to show tooltip at mouse position.
+
+{% highlight js %}
+
+   //Defines tooltip template as mentioned in the previous snippet
+     var node = {
+            name: "elizabeth", width: 70, height: 40, offsetX: 100, offsetY: 100,
+            //Removes inherit tooltip from constraints
+            constraints: NodeConstraints.Default & ~NodeConstraints.InheritTooltip,
+            //Defines tooltip
+            tooltip: {
+                //Sets to show tooltip at mouse position
+                relativeMode:ej.datavisualization.Diagram.RelativeMode.Mouse,
+                
+                //Defines template id
+                templateId: "mouseovertooltip",
+                //Sets margin - absolute distance between mouse position and tooltip
+                margin: { top: 10, left: 10 },
+            },
+            Designation: "Director",
+            fillColor: "darkcyan", labels: [{ text: "Elizabeth", fontColor: "white" }]
+        }; 
+
+{% endhighlight %}   
+ 
+![]("/js/Diagram/Tooltip_images/Tooltip_img6.png")
+
+

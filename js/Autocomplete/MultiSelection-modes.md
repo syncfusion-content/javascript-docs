@@ -71,5 +71,5 @@ The following steps explain the configuration of the **multiSelectMode** for an 
 
 The following image is the output for **AutoComplete** control with configured multiple selection.
 
-![]("/js/Autocomplete/MultiSelection-modes_images/MultiSelection-modes_img1.png")
+{% include image.html url="/js/Autocomplete/MultiSelection-modes_images/MultiSelection-modes_img1.png"%}
 

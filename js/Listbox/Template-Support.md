@@ -101,5 +101,5 @@ Customize the template in **CSS**.
 
 Output of the above steps.
 
-![]("/js/ListBox/Template-Support_images/Template-Support_img1.png")
+{% include image.html url="/js/ListBox/Template-Support_images/Template-Support_img1.png"%}
 

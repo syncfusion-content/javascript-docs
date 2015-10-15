@@ -9,226 +9,268 @@ documentation: ug
 
 # Group
 
-Diagram provides support to `Group` and `Ungroup` nodes. `Group` is a composite node that has a set of child nodes/connector and it is a container for its children. All the operations performed on a Group also affect the individual child in that particular Group. You can edit any node/connector in the group individually. On Ungrouping, the children in the group is a individual node/connector of the Diagram. 
+Group is used to cluster multiple nodes and connectors into a single element. It acts like a container for its children (nodes, groups, and connectors). Every change made to the group also affects the children. Child elements can be edited individually. 
 
 ## Create Group
 
-You can create `Group` like node and add it to the Diagram using `diagram`'s `nodes` property. You can set `isGroup` property as `true` to differentiate the group from node. You can set the array of children (`nodes`/`connectors`) names to `children` property. The `group`'s `children` `nodes`/`connectors` are added to the node array before adding the group to nodes array. 
+### Add group when initializing diagram
 
-The following code illustrates how a group node is created and added in the nodes array.
-
-{% highlight js %}
-//Creates a group node.
-var nodes = [ //Group node.
-    {
-        name: "group",
-        type: "group",
-        children: [
-            { name: "node1", parent: "group" },
-            { name: "node2", parent: "group" }
-        ]
-    }
-];
-{% endhighlight %}
-
-![]("/js/Diagram/Group_images/Group_img1.png") 
-
-## Selecting a Group
-
-You can select a group by clicking on any one of its children node. Consecutive clicks on a child object select the parent groups in the order of their creation. In a similar manner, consecutive clicks on a child object leads to the selection of inner groups and eventually the object itself and this cycle continues.
-
-The following steps illustrate how to select an object that has two groups.
-
-![]("/js/Diagram/Group_images/Group_img2.png") 
-
-1. Click on Node1 to select the outer group.
-2. Click again to select the inner group to which it belongs.
-3. Click again to select the child node after all groups have been traversed.
-
-![]("/js/Diagram/Group_images/Group_img3.png") 
-
-![]("/js/Diagram/Group_images/Group_img4.png") 
-
-## Editing a Group
-
-To edit a group, select the corresponding group. You can apply the following features on Group for editing. For example, resizing a group, automatically resizes its child objects to fit the selection area.
-
-<table>
-<tr>
-<th>
-Editing Options</th><th>
-Before</th><th>
-After</th></tr>
-<tr>
-<td>
-Resize</td><td>
-<img src="/js/Diagram/Group_images/Group_img5.png" alt="" width="141pt" height="177pt"/></td><td>
-<img src="/js/Diagram/Group_images/Group_img6.png" alt="" width="131pt" height="139pt"/></td></tr>
-<tr>
-<td>
-Rotate</td><td>
-<img src="/js/Diagram/Group_images/Group_img7.png" alt="" width="141pt" height="177pt"/></td><td>
-<img src="/js/Diagram/Group_images/Group_img8.png" alt="" width="190pt" height="188pt"/></td></tr>
-</table>
-
-
-## Layout Panel
-
-The `container` property of `Group` can be set to any of the available `layout panel`. It is used to control the size and position of `group`'s `children`. There are two types of layout panels.
-
-* Canvas panel 
-* Stack panel
-
-The following properties are used to align the child element on the Group, this property is applicable for all panel.
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Data type</th><th>
-Description</th></tr>
-<tr>
-<td>
-marginLeft</td><td>
-number</td><td>
-Gets or sets the left margin value of the elements.</td></tr>
-<tr>
-<td>
-marginRight</td><td>
-number</td><td>
-Gets or sets the right margin value of the elements.</td></tr>
-<tr>
-<td>
-marginBottom</td><td>
-number</td><td>
-Gets or sets the bottom margin value of the elements.</td></tr>
-<tr>
-<td>
-marginTop</td><td>
-number</td><td>
-Gets or sets the top margin value of the elements.</td></tr>
-<tr>
-<td>
-horizontalAlignment</td><td>
-string</td><td>
-Gets or sets the horizontal alignment of the elements.</td></tr>
-<tr>
-<td>
-verticalAlignment</td><td>
-string</td><td>
-Gets or sets the vertical alignment of the elements.</td></tr>
-<tr>
-<td>
-paddingTop</td><td>
-number</td><td>
-Gets or sets the top padding value of the group.</td></tr>
-<tr>
-<td>
-paddingBottom</td><td>
-number</td><td>
-Gets or sets the bottom padding value of the group.</td></tr>
-<tr>
-<td>
-paddingLeft</td><td>
-number</td><td>
-Gets or sets the left padding value of the group.</td></tr>
-<tr>
-<td>
-paddingRight</td><td>
-number</td><td>
-Gets or sets the right padding value of the group.</td></tr>
-</table>
-
-
-### Canvas Panel
-
-The Canvas panel supports absolute positioning and provides the least layout functionality to its contained diagram elements. Canvas allows you to position contained elements at an offset and also elements can be arranged with either horizontally or vertically.
+You can add a group to the Diagram model through `nodes` collection. To define an object as group, set its `type` property as "group" and you need to add the child objects to the `children` collection of the group. The following code illustrates how to create a group node.
 
 {% highlight js %}
 
 var nodes = [
-    {
-        name: "Canvas",
-        offsetX: 400,
-        offsetY: 400,
-        children: [
-            { type: "node", name: "snode1", fillColor: "darkCyan" },
-            { type: "node", name: "snode2", marginTop: 30, marginLeft: 30, fillColor: "white" },
-            { type: "node", name: "snode3", marginTop: 60, marginLeft: 60, fillColor: "darkCyan" },
-            { type: "node", name: "snode4", marginTop: 90, marginLeft: 90, fillColor: "white" }
-        ],
-
-        //Canvas Panel.
-        container: {
-            type: "canvas"
-        },
-
-        fillColor: "#E7EBF4",
-        borderColor: "black",
-        paddingLeft: 30,
-        paddingTop: 30,
-        paddingRight: 30,
-        paddingBottom: 30
+        {
+        //Sets the name
+        name: "group1",
+        
+        //Defines the collection of children
+        children: [{
+            name: "rectangle1",
+            offsetX: 100,
+            offsetY: 100,
+            width: 100,
+            height: 100,
+            type: "node",
+            fillColor: "darkCyan",
+            borderWidth: 2,
+            labels: [{
+                text: "rectangle1"
+            }]
+        }, {
+            name: "rectangle2",
+            offsetX: 200,
+            offsetY: 200,
+            width: 100,
+            height: 100,
+            type: "node",
+            fillColor: "darkCyan",
+            borderWidth: 2,
+            labels: [{
+                text: "rectangle2"
+            }]
+        }, ],
+        
+        // Sets the type as group
+        type: "group"
     }
-];
+]
 
-
-$("#diagram").ejDiagram({
-   nodes: nodes,
-   defaultSettings: {
-      node: {
-         height: 70,
-         width: 70,
-         parent: "Canvas",
-      },
-   },
+//Initialize Diagram
+$("#DiagramContent").ejDiagram({
+    //Sets nodes collection to Diagram model.
+    nodes: nodes
 });
 
 {% endhighlight %}
+ 
+### Add group at run time
 
-![]("/js/Diagram/Group_images/Group_img9.png") 
+You can add a group node at runtime by using the client side method `add`.
 
-### Stack panel
-
-Stack panel is used to arrange its childre in a single line or stack order, either vertically or horizontally. It controls spacing by setting margin properties of child and padding properties of group. By default, a Stack Panel's orientation is vertical. The following code illustrates how to add stack panel.
+The following code illustrates how a group node is added at run time.
 
 {% highlight js %}
 
-var nodes = [
-    {
-        type: "group",
-        name: "Stack",
+var group = {
+    name: "group1",
+    type: "group",
+    children: [{
+        name: "rectangle1",
+        offsetX: 100,
+        offsetY: 100,
+        width: 100,
+        height: 100,
+        type: "node",
+        fillColor: "darkCyan",
+        borderWidth: 2,
+        labels: [{
+            text: "rectangle1"
+        }]
+    }, {
+
+        name: "rectangle2",
         offsetX: 200,
-        offsetY: 400,
-        fillColor: "#E7EBF4",
-        borderColor: "black",
-        minHeight: 300,
-        minWidth: 300,
+        offsetY: 200,
+        width: 100,
+        height: 100,
+        type: "node",
+        fillColor: "darkCyan",
+        borderWidth: 2,
+        labels: [{
+            text: "rectangle2"
+        }]
+    }, ]
+};
 
-        children: [
-            { type: "node", name: "cnode1", fillColor: "darkCyan", horizontalAlign: "left" },
-            { type: "node", name: "cnode2", fillColor: "darkCyan", horizontalAlign: "right" },
-            { type: "node", name: "cnode3", fillColor: "darkCyan", horizontalAlign: "stretch" }
-        ],
 
-        // Stack panel.
-        container: {
-            type: "stack"
-        }
-    }
-];
+var diagram = $("#DiagramContent").ejDiagram("instance");
+// Adds group to the Diagram.
+diagram.add(group);
 
-$("#diagram").ejDiagram({
-   nodes: nodes,
-   defaultSettings: {
-      node: {
-         height: 100,
-         width: 100,
-         parent: "Stack",
-      },
-   }
+{% endhighlight %}
+
+### Group from palette
+
+Group nodes can be predefined and added to symbol palette. You can drop those groups into Diagram, when required.
+
+To explore how to add groups from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette)
+
+## Container
+
+Containers are used to automatically measure and arrange the size and position of the child elements in a predefined manner.
+There are two types of containers available.
+
+### Canvas
+
+  * The Canvas panel supports absolute positioning and provides the least layout functionality to its contained Diagram elements. 
+
+  * Canvas allows you to position its contained elements by using margin and alignment properties.
+
+  * It allows elements to be either vertically or horizontally aligned.
+
+The `container` property of group should be defined and its `type` should be set as "canvas" to create a canvas panel. The following code illustrates how to add a canvas panel.     
+
+{% highlight js %}
+
+var nodes = [{
+    type: "group",
+    name: "canvas",
+    offsetX: 400,
+    offsetY: 400,
+    
+    children: [{
+        type: "node",
+        name: "node1",
+        fillColor: "darkCyan",
+        width: 100,
+        height: 100
+    }, {
+        type: "node",
+        name: "node2",
+        // Sets the margin to define the space around the child node.
+        marginTop: 30,
+        marginLeft: 30,
+        fillColor: "white",
+        width: 100,
+        height: 100
+    }, {
+        type: "node",
+        name: "node3",
+        marginTop: 60,
+        marginLeft: 60,
+        fillColor: "darkCyan",
+        width: 100,
+        height: 100
+    }, {
+        type: "node",
+        name: "node4",
+        marginTop: 90,
+        marginLeft: 90,
+        fillColor: "white",
+        width: 100,
+        height: 100
+    }],
+    
+    //Sets the container as canvas.
+    container: {
+        type: "canvas"
+    },
+    fillColor: "#E7EBF4",
+    borderColor: "black",
+    
+    //Sets the padding to give space between the group border and group content.
+    paddingLeft: 30,
+    paddingTop: 30,
+    paddingRight: 30,
+    paddingBottom: 30
+}];    
+
+$("#DiagramContent").ejDiagram({
+    nodes: nodes
 });
 
 {% endhighlight %}
 
-![]("/js/Diagram/Group_images/Group_img10.png") 
+![]("/js/Diagram/Group_images/Group_img9.png")
+
+### Stack
+
+  * Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.
+   
+  * It controls spacing by setting margin properties of child and padding properties of group. By default, a Stack Panel’s `orientation` is vertical. 
+
+The `container` property of group should be defined and its `type` should be set as "stack" to create a canvas panel The following code illustrates how to add a stack panel.
+
+{% highlight js %}
+
+var nodes = [{
+    type: "group",
+    name: "Stack",
+    offsetX: 600,
+    offsetY: 200,
+    fillColor: "#E7EBF4",
+    borderColor: "black",
+    // Sets the minimum size for stack panel.
+    minHeight: 300,
+    minWidth: 300,
+    children: [{
+        type: "node",
+        name: "snode1",
+        fillColor: "darkCyan",
+        //Sets the horizontal Alignment for child node.
+        horizontalAlign: "left",
+        width: 100,
+        height: 100
+    }, {
+        type: "node",
+        name: "snode2",
+        fillColor: "darkCyan",
+        horizontalAlign: "right",
+        width: 100,
+        height: 100
+    }, {
+        type: "node",
+        name: "snode3",
+        fillColor: "darkCyan",
+        horizontalAlign: "stretch",
+        width: 100,
+        height: 100
+    }],
+    // Sets the container as stack.
+    container: {
+        type: "stack"
+    },
+}];
+
+$("#DiagramContent").ejDiagram({
+    nodes: nodes
+});
+
+{% endhighlight %}
+
+![]("/js/Diagram/Group_images/Group_img10.png")
+
+## Difference between a basic group and containers
+
+<table>
+<tr>
+<th>Group</th>
+<th>Container</th></tr>
+<tr>
+<td>
+It arranges the child elements based on the child element’s position and size properties.</td><td>
+Each container has a predefined behaviour to measure and arrange its child elements. Canvas and stack containers are supported in the Diagram.</td></tr>
+<tr>
+<td>
+Padding, Min and Max Size properties are not applicable for basic group.</td><td>
+It is applicable for container.</td></tr>
+<tr>
+<td>
+Children's margin and alignment properties are not applicable for basic group.</td><td>
+It is applicable for container.</td></tr>
+</table>
+
+## Interaction
+
+You can edit the group and its children at runtime. For more information about how to interact with a group, refer to [Interaction](/js/Diagram/Interaction "Selection").

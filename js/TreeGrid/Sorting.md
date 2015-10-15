@@ -41,4 +41,4 @@ TreeGrid allows you to sort multiple columns by clicking the desired column hea
 
 The following screenshot shows the output of multicolumn sorting in TreeGrid control.
 
-![]("/js/TreeGrid/Sorting_images/Sorting_img1.png")
+{% include image.html url="/js/TreeGrid/Sorting_images/Sorting_img1.png"%}

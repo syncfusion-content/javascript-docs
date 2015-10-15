@@ -52,5 +52,5 @@ The [`allowEditOnDblClick`](/js/api/ejgrid#members:editsettings-alloweditondblcl
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/How-to/Disable-double-click-edit_images/Disable-double-click-edit_img1.png")
+{% include image.html url="/js/Grid/How-to/Disable-double-click-edit_images/Disable-double-click-edit_img1.png"%}
 

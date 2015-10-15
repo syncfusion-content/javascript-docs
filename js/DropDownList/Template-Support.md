@@ -59,6 +59,6 @@ Customize the template in CSS.
 
 Output of the above steps.
 
-![]("/js/DropDownList/Template-Support_images/Template-Support_img2.png") 
+{% include image.html url="/js/DropDownList/Template-Support_images/Template-Support_img2.png" %}
  
 

@@ -13,7 +13,7 @@ This section explains briefly about how to create a **Tab** Control in your appl
 
 
 
-![]("/js/Tab/Getting-Started_images/Getting-Started_img1.png") 
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img1.png" %}
 
 
 ## Create Tab Control
@@ -93,7 +93,7 @@ The following screen shot illustrates the **Tab** control with Header.
 
 
 
-![]("/js/Tab/Getting-Started_images/Getting-Started_img2.png") 
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img2.png" %}
 
 ## Configure Content
 
@@ -187,7 +187,7 @@ The following screenshot illustrates the **Tab** content with rating control.
 
 
 
-![]("/js/Tab/Getting-Started_images/Getting-Started_img3.png") 
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img3.png" %}
 
 
 
@@ -319,7 +319,7 @@ At the time of Ajax call, the content fetched from external file referenced loca
 
 
 
-![]("/js/Tab/Getting-Started_images/Getting-Started_img5.png") 
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img5.png" %}
 
 
 
@@ -327,7 +327,7 @@ The following screenshot illustrates the First **Tab** with the sub **Tab** cont
 
 
 
-![]("/js/Tab/Getting-Started_images/Getting-Started_img6.png") 
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img6.png" %}
 
 ## Orientation Change
 
@@ -360,7 +360,7 @@ The following screenshot illustrates the sub **Tab** with vertical orientation.
 
 
 
-![]("/js/Tab/Getting-Started_images/Getting-Started_img7.png") 
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img7.png" %}
 
 ## Header Image Customization
 
@@ -418,7 +418,7 @@ The following screenshot illustrates the **Tab** with the customized header imag
 
 
 
-![]("/js/Tab/Getting-Started_images/Getting-Started_img8.png") 
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img8.png" %}
 
 ## Configuring Contents to remaining Tab items
 
@@ -567,7 +567,7 @@ The following screenshot illustrates you the second **Tab** contents in **Tab** 
 
 
 
-![]("/js/Tab/Getting-Started_images/Getting-Started_img9.png") 
+{% include image.html url="/js/Tab/Getting-Started_images/Getting-Started_img9.png" %}
 
 
 

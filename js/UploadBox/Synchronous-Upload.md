@@ -51,5 +51,5 @@ The following screenshot displays the output.
 
 
 
-![]("/js/UploadBox/Synchronous-Upload_images/Synchronous-Upload_img1.png") 
+{% include image.html url="/js/UploadBox/Synchronous-Upload_images/Synchronous-Upload_img1.png" %}
 

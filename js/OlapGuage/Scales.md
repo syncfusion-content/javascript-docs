@@ -112,5 +112,5 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Scales_images/Scales_img1.png") 
+{% include image.html url="/js/OlapGauge/Scales_images/Scales_img1.png" %}
 

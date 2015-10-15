@@ -256,7 +256,7 @@ background-color: #FF8A8A;
 
 Execute the above code and then double-click the required **Schedule** cells. The customized appointment window is opened instead of the default appointment window as follows.
 
-![]("/js/Schedule/Customization_images/Customization_img1.png" Caption="")
+{% include image.html url="/js/Schedule/Customization_images/Customization_img1.png" Caption=""%}
 
 
 Add the required details on the above displayed appointment window and then click **Submit** button to save the appointment.
@@ -525,7 +525,7 @@ background-color: #FF8A8A;
 
 Only the bold texts in the above code examples are added to open the custom appointment window when you double-click the appointments. Execute the above code and then double-click the appointment, the custom appointment window is displayed as follows.
 
-![]("/js/Schedule/Customization_images/Customization_img2.png" Caption="")
+{% include image.html url="/js/Schedule/Customization_images/Customization_img2.png" Caption=""%}
 
 
 You can change the details in the above window and then click **Submit** button to save the updated values.
@@ -573,7 +573,7 @@ You can customize the appearance of the **Schedule** control by setting the spec
 
 Execute the above code to render the output as follows with the **Schedule** control beginning with 08.00am and ending with 06.00pm.
 
-![]("/js/Schedule/Customization_images/Customization_img3.png" Caption="")
+{% include image.html url="/js/Schedule/Customization_images/Customization_img3.png" Caption=""%}
 
 
 **Work hours**
@@ -631,7 +631,7 @@ $(function () {
 
 Execute the above code to render the following output that explains the highlighting of business hours in the **Schedule** control from 10.00am to 3.00pm.
 
-![]("/js/Schedule/Customization_images/Customization_img4.png" Caption="")
+{% include image.html url="/js/Schedule/Customization_images/Customization_img4.png" Caption=""%}
 
 
 ## Date/Time Customization
@@ -680,7 +680,7 @@ The following code example explains how to change the current date of the **Sche
 
 Execute the above code and the following screenshot displays the **Schedule** control with the current date set to (May 05, 2014).
 
-![]("/js/Schedule/Customization_images/Customization_img5.png" Caption="")
+{% include image.html url="/js/Schedule/Customization_images/Customization_img5.png" Caption=""%}
 
 **Date Format**
 
@@ -729,7 +729,7 @@ The following code example explains how to change the **dateFormat** of the **Sc
 
 The following screenshot displays the **Schedule** control with the **dateFormat** set as “**dd-MM-yyyy**”.
 
-![]("/js/Schedule/Customization_images/Customization_img6.png" Caption="")
+{% include image.html url="/js/Schedule/Customization_images/Customization_img6.png" Caption=""%}
 
 
 **Minimum and Maximum Dates**
@@ -779,7 +779,7 @@ The following code example explains how to set the minimum and maximum date of t
 
 The following screenshot displays the **Schedule** control with **MinDate** and **MaxDate** set to **11/25/2014** and **12/4/2014,** respectively.
 
-![]("/js/Schedule/Customization_images/Customization_img7.png" Caption="")
+{% include image.html url="/js/Schedule/Customization_images/Customization_img7.png" Caption=""%}
 
 
 **Timemode**
@@ -814,7 +814,7 @@ The following screenshot displays the **Schedule** control with **MinDate** and 
 
 The following screenshot displays the **Schedule** control, when time mode is set to 24 hour mode.
 
-![]("/js/Schedule/Customization_images/Customization_img8.png" Caption="")
+{% include image.html url="/js/Schedule/Customization_images/Customization_img8.png" Caption=""%}
 
 
 **TimeZone**
@@ -864,7 +864,7 @@ You can set the timezone to the **Schedule** control as follows.
 
 Add new appointments to the **Schedule** control. The appointments are rendered based on the time difference that tends to the timezone set to it.
 
-![]("/js/Schedule/Customization_images/Customization_img9.png" Caption="")
+{% include image.html url="/js/Schedule/Customization_images/Customization_img9.png" Caption=""%}
 
 
 * In the above output, an appointment is initially created in the time-range 7.00am - 8.30am. It is saved in the timeslot between 9.00am – 10.30am as the time zone is set to “UTC +2:00” in the **Schedule** control.
@@ -879,7 +879,7 @@ Add new appointments to the **Schedule** control. The appointments are rendered 
 The following screenshot displays the **Schedule** control with the current time indicator marked with 5.41 AM across the date 30 April, 2014,
 
 
-![]("/js/Schedule/Customization_images/Customization_img10.png" Caption="schedule with time customization.")
+{% include image.html url="/js/Schedule/Customization_images/Customization_img10.png" Caption="schedule with time customization."%}
 
 The following code example explains how to disable the current time indicator from the **Schedule** control. 
 
@@ -916,5 +916,5 @@ The following code example explains how to disable the current time indicator fr
 
 After setting **showCurrentTimeIndicator** property to "false", the **Schedule** control is displayed without the current time indicator as follows.
 
-![]("/js/Schedule/Customization_images/Customization_img11.png" Caption="schedule with show current time indicator.")
+{% include image.html url="/js/Schedule/Customization_images/Customization_img11.png" Caption="schedule with show current time indicator."%}
 

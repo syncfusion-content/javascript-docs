@@ -119,5 +119,5 @@ Configure the styles.
 
 Scroller control is added to the application. 
 
-![]("/js/Scroller/Getting-Started_images/Getting-Started_img1.png")
+{% include image.html url="/js/Scroller/Getting-Started_images/Getting-Started_img1.png"%}
 

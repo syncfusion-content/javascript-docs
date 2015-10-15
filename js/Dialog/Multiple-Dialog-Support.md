@@ -71,5 +71,5 @@ In the **HTML** page set a **&lt;div&gt;** element with dialog content for rende
 
 The output of multiple **Dialog** control is as follows.
 
-![]("/js/Dialog/Multiple-Dialog-Support_images/Multiple-Dialog-Support_img1.png") 
+{% include image.html url="/js/Dialog/Multiple-Dialog-Support_images/Multiple-Dialog-Support_img1.png" %}
 

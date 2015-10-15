@@ -49,4 +49,4 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList
 
 Output of the above steps
 
-![]("/js/DropDownList/RTL_images/RTL_img1.png") 
+{% include image.html url="/js/DropDownList/RTL_images/RTL_img1.png" %}

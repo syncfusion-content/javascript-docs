@@ -76,5 +76,5 @@ In the above code example, “ng-app” is a directive that is used to declare a
 
 The following screenshot displays the output of the above code.
 
-![]("/js/TreeView/Angular-Binding_images/Angular-Binding_img1.png")
+{% include image.html url="/js/TreeView/Angular-Binding_images/Angular-Binding_img1.png"%}
 

@@ -50,7 +50,7 @@ documentation: ug
 Execute the above code to render the following output.
 
 
-![]("/js/LinearGauge/MVVM_images/MVVM_img1.png" Caption="")
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img1.png" Caption=""%}
 
 
 ## Adding Scale collection
@@ -77,7 +77,7 @@ Scale is an array object and the inner tag is used for it. You can extend the Ob
 
 Execute the above code to render the following output.
 
-![]("/js/LinearGauge/MVVM_images/MVVM_img2.png" Caption="")
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img2.png" Caption=""%}
 
 ## Adding Marker Pointer collection
 
@@ -109,7 +109,7 @@ Marker Pointer is an array object and the inner tag is used for it. You can exte
 
 Execute the above code to render the following output.
 
-![]("/js/LinearGauge/MVVM_images/MVVM_img3.png" Caption="")
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img3.png" Caption=""%}
 
 ## Adding label collection
 
@@ -144,7 +144,7 @@ Label is also an array object and the inner tag is used for it. You can extend t
 
 Execute the above code to render the following output.
 
-![]("/js/LinearGauge/MVVM_images/MVVM_img4.png" Caption="")
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img4.png" Caption=""%}
 
 ## Adding Tick collection
 
@@ -176,7 +176,7 @@ Tick is an array object and the inner tag is used for it.
 
 Execute the above code to render the following output.
 
-![]("/js/LinearGauge/MVVM_images/MVVM_img5.png" Caption="")
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img5.png" Caption=""%}
 
 ## Adding Range collection
 
@@ -216,7 +216,7 @@ Range is an array object and the inner tag is used for it. You can extend the Ob
 
 Finally while running the above codes, the resultant gauge appears as follows.
 
-![]("/js/LinearGauge/MVVM_images/MVVM_img6.png" Caption="")
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img6.png" Caption=""%}
 
 ## Two Way Binding
 
@@ -251,7 +251,7 @@ Finally while running the above codes, the resultant gauge appears as follows.
 
 Execute the above code to render the following output.
 
-![]("/js/LinearGauge/MVVM_images/MVVM_img7.png" Caption="")
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img7.png" Caption=""%}
 
 
 ## Knockout JS
@@ -311,5 +311,5 @@ Knockout support allows you to bind the html elements against any of the availab
 
 Execute the above code to render the following output.
 
-![]("/js/LinearGauge/MVVM_images/MVVM_img8.png" Caption="")
+{% include image.html url="/js/LinearGauge/MVVM_images/MVVM_img8.png" Caption=""%}
 

@@ -31,8 +31,8 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/PivotGrid/Cell-Selection_images/Cell-Selection_img1.png" Caption="Cell Selection in the PivotGrid Control") 
+{% include image.html url="/js/PivotGrid/Cell-Selection_images/Cell-Selection_img1.png" Caption="Cell Selection in the PivotGrid Control" %}
 
-![]("/js/PivotGrid/Cell-Selection_images/Cell-Selection_img2.png" Caption="Chart Series Based on Selected Cells") 
+{% include image.html url="/js/PivotGrid/Cell-Selection_images/Cell-Selection_img2.png" Caption="Chart Series Based on Selected Cells" %}
 
 

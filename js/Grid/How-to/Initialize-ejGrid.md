@@ -28,5 +28,5 @@ $("#Grid").ejGrid({
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/How-to/Initialize-ejGrid_images/Initialize-ejGrid_img1.png")
+{% include image.html url="/js/Grid/How-to/Initialize-ejGrid_images/Initialize-ejGrid_img1.png"%}
 

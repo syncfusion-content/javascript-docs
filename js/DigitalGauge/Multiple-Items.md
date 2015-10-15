@@ -73,5 +73,5 @@ The text in the **Digital Gauge** is positioned with position object. This objec
 
 Execute the above code example to render the **Digital****Gauge** as follows.
 
-![]("/js/DigitalGauge/Multiple-Items_images/Multiple-Items_img1.png" Caption="")
+{% include image.html url="/js/DigitalGauge/Multiple-Items_images/Multiple-Items_img1.png" Caption=""%}
 

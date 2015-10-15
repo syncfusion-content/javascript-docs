@@ -74,7 +74,7 @@ Add the following code in your **HTML** page.
 
 
 
-![]("/js/DateTimePicker/Integration_images/Integration_img1.png")
+{% include image.html url="/js/DateTimePicker/Integration_images/Integration_img1.png"%}
 
 ## Knockout Support
 
@@ -141,5 +141,5 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-![]("/js/DateTimePicker/Integration_images/Integration_img2.png")
+{% include image.html url="/js/DateTimePicker/Integration_images/Integration_img2.png"%}
 

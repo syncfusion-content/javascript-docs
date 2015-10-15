@@ -75,7 +75,7 @@ Initialize the chart by using the ejChart method. The chart is rendered to the s
 
 Now, the Chart is rendered with some auto-generated random values and with default Column chart type.
 
-![]("/js/Chart/Getting-Started_images/Getting-Started_img1.png" Caption="Chart")
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img1.png" Caption="Chart"%}
 
 ## Populate chart with data
 
@@ -141,7 +141,7 @@ Now, map the month and sales values in the data source to the line series by set
 
 {% endhighlight %}
 
-![]("/js/Chart/Getting-Started_images/Getting-Started_img2.png" Caption="Chart")
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img2.png" Caption="Chart"%}
 
 Since the data is related to sales, format the vertical axis labels by adding ‘$’ as a prefix and ‘K’ as a suffix to each label. This can be achieved by setting the “${value}K” to the [labelFormat](../api/ejchart#members:primaryxaxis-labelformat) option of the axis. Here, {value} acts as a placeholder for each axis label, “$” and “K” are the actual prefix and suffix added to each axis label. 
 
@@ -162,7 +162,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![]("/js/Chart/Getting-Started_images/Getting-Started_img3.png" Caption="Chart")
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img3.png" Caption="Chart"%}
 
 Refer to the [Axis](Axis.html) section to know more about axis types, adding multiple axes and other customization options.
 
@@ -193,7 +193,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![]("/js/Chart/Getting-Started_images/Getting-Started_img4.png" Caption="Chart")
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img4.png" Caption="Chart"%}
 
 There are situations where the default label content is not sufficient to the user. In this case, you can use the [template](../api/ejchart#members:series-marker-datalabel-template) option to format the label content with some additional information.
 
@@ -236,7 +236,7 @@ The following code example shows how to set the id of the above template to [tem
 
 {% endhighlight %}
 
-![]("/js/Chart/Getting-Started_images/Getting-Started_img5.png" Caption="Chart")
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img5.png" Caption="Chart"%}
 
 Refer to the [Data Markers](Data-Markers.html) section to know more about the options available to customize it.
 
@@ -266,7 +266,7 @@ You can enable or disable the legend by using the [visible](../api/ejchart#membe
 
 {% endhighlight %}
 
-![]("/js/Chart/Getting-Started_images/Getting-Started_img6.png" Caption="Chart")
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img6.png" Caption="Chart"%}
 
 Refer to the [Legend](Legend.html) section to know more about how to position legend and customize its appearance.
 
@@ -293,7 +293,7 @@ The following code example illustrates this,
 
 {% endhighlight %}
 
-![]("/js/Chart/Getting-Started_images/Getting-Started_img7.png" Caption="Chart")
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img7.png" Caption="Chart"%}
 
 Refer to the [Tooltip](user-interactions.html) section to know more about formatting tooltip contents and customizing its appearance.
 
@@ -316,6 +316,6 @@ You need to add a title to the chart to provide quick information to the user ab
 
 {% endhighlight %}
 
-![]("/js/Chart/Getting-Started_images/Getting-Started_img8.png" Caption="Chart")
+{% include image.html url="/js/Chart/Getting-Started_images/Getting-Started_img8.png" Caption="Chart"%}
 
 Refer to the [Chart Title](chart-title.html) section to know more about aligning title, customizing its appearance and adding subtitle to the chart.

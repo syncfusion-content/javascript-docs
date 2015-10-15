@@ -138,7 +138,7 @@ It maps the corresponding categorize field name from the data table or JSON data
 
 On executing the above specified code the **Location** field will be added in the create appointment window as follows:
 
-![]("/js/Schedule/Data-binding_images/Data-binding_img1.png" Caption="")
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img1.png" Caption=""%}
 
 
 **priority**
@@ -231,7 +231,7 @@ On executing the above specified code the **Location** field will be added in th
 
 On executing the above specified code the **Scheduler** displays the appointments across the specific timeslots as follows:
 
-![]("/js/Schedule/Data-binding_images/Data-binding_img2.png" Caption="")
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img2.png" Caption=""%}
 
 
 
@@ -284,7 +284,7 @@ $(function () {
 
 The following screenshot displays the remote data bound to the **Schedule** control.
 
-![]("/js/Schedule/Data-binding_images/Data-binding_img3.png" Caption="")
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img3.png" Caption=""%}
 
 ## Load On Demand
 
@@ -294,7 +294,7 @@ The following screenshot displays the remote data bound to the **Schedule** cont
 
 * If you have developer tools, you can capture the network transfer to check the consumed data of the Schedule. The following screnshot shows the data being loaded in **Schedule**.
 
-![]("/js/Schedule/Data-binding_images/Data-binding_img4.png" Caption="schedule with Schedule Demanded data.")
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img4.png" Caption="schedule with Schedule Demanded data."%}
 
 
 The following code example shows you how **load on demand** works with **Schedule**.
@@ -347,7 +347,7 @@ The following code example shows you how **load on demand** works with **Sche
 
 The following screenshot is the result of the above code example.
 
-![]("/js/Schedule/Data-binding_images/Data-binding_img5.png" Caption="Schedule with load on demand.")
+{% include image.html url="/js/Schedule/Data-binding_images/Data-binding_img5.png" Caption="Schedule with load on demand."%}
 
 
 [Click here](http://js.syncfusion.com/demos/web/#!/azure/schedule/databinding/loaddataondemand) to see how **load on demand** works with **Schedule**.

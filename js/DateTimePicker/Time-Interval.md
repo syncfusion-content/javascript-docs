@@ -34,5 +34,5 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-![]("/js/DateTimePicker/Time-Interval_images/Time-Interval_img1.png")
+{% include image.html url="/js/DateTimePicker/Time-Interval_images/Time-Interval_img1.png"%}
 

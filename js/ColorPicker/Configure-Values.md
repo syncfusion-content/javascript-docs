@@ -35,7 +35,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Configure-Values_images/Configure-Values_img1.png") 
+{% include image.html url="/js/ColorPicker/Configure-Values_images/Configure-Values_img1.png" %}
 
 ## button and tooltipText
 
@@ -245,5 +245,5 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Configure-Values_images/Configure-Values_img2.png") 
+{% include image.html url="/js/ColorPicker/Configure-Values_images/Configure-Values_img2.png" %}
 
