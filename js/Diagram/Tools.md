@@ -45,7 +45,7 @@ diagram.update({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Tools_images/Tools_img1.png" %}
+![]("/js/Diagram/Tools_images/Tools_img1.png")
 
 The following code example illustrates how to draw a path.
 
@@ -69,7 +69,7 @@ The following code example illustrates how to draw a path.
 
  {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Tools_images/Tools_img3.png" %}    
+![]("/js/Diagram/Tools_images/Tools_img3.png")    
 
 ### Connectors
 
@@ -92,7 +92,7 @@ diagram.update({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Tools_images/Tools_img2.png" %}
+![]("/js/Diagram/Tools_images/Tools_img2.png")
 
 ### Text 
 

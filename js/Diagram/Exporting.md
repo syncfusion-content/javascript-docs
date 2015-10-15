@@ -20,7 +20,7 @@ diagram.exportDiagram();
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Exporting_images/Exporting_img1.png" %}
+![]("/js/Diagram/Exporting_images/Exporting_img1.png")
 
 ## Exporting options
 

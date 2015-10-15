@@ -192,7 +192,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Group_images/Group_img9.png" %}
+![]("/js/Diagram/Group_images/Group_img9.png")
 
 ### Stack
 
@@ -249,7 +249,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Group_images/Group_img10.png" %}
+![]("/js/Diagram/Group_images/Group_img10.png")
 
 ## Difference between a basic group and containers
 

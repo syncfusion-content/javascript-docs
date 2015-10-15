@@ -73,7 +73,7 @@ You can add a label to a node/connector by defining the label object and adding 
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img1.png" %}
+![]("/js/Diagram/Label_images/Label_img1.png")
 
 To explore more label properties, refer to [Label Properties](/js/api/ejdiagram "members:nodes-labels").
 
@@ -102,7 +102,7 @@ The `offset` property of label is used to align the labels based on fractions. 0
 
 The following image shows the relationship between the label position (black colored circle) and offset (fraction values).
 
-{% include image.html url="/js/Diagram/Label_images/Label_img2.png" %}
+![]("/js/Diagram/Label_images/Label_img2.png")
 
 ### Horizontal and vertical alignements
 
@@ -201,7 +201,7 @@ The following codes illustrates how to align labels.
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img12.png" %}
+![]("/js/Diagram/Label_images/Label_img12.png")
 
 ### Margin
 
@@ -244,7 +244,7 @@ The following code example illustrates how to align a label based on its `offset
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img13.png" %}
+![]("/js/Diagram/Label_images/Label_img13.png")
 
 ### Text Alignment
 
@@ -277,7 +277,7 @@ The `textAlign` property of label allows you to set how the text should be align
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img14.png" %}
+![]("/js/Diagram/Label_images/Label_img14.png")
 
 <table>
 <tr>
@@ -332,7 +332,7 @@ When text overflows node boundaries, you can control it by using text wrapping. 
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img19.png" %}
+![]("/js/Diagram/Label_images/Label_img19.png")
 
 <table>
 <tr>
@@ -393,7 +393,7 @@ You can change the font style of the labels with the font specific properties(`f
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img23.png" %}
+![]("/js/Diagram/Label_images/Label_img23.png")
 
 The fill and border appearances of the text can also be customized with appearance specific properties of label.The following code illustrates how to customize background and border of a label.
 
@@ -426,7 +426,7 @@ The fill and border appearances of the text can also be customized with appearan
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img24.png" %}
+![]("/js/Diagram/Label_images/Label_img24.png")
 
 ## Drag
 
@@ -485,7 +485,7 @@ A **Label** can be displaced from its original position to any preferred locatio
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img25.png" %}
+![]("/js/Diagram/Label_images/Label_img25.png")
 
 ## Rotate
 
@@ -518,7 +518,7 @@ You can rotate the labels to any desired angle. Labels are rotated to the angle 
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img26.png" %}
+![]("/js/Diagram/Label_images/Label_img26.png")
 
 N> There is no built-in support to rotate labels interactively.
 
@@ -546,7 +546,7 @@ You can programmatically edit the label by changing the `mode` of the label. The
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img27.png" %}
+![]("/js/Diagram/Label_images/Label_img27.png")
 
 ### Read Only labels
 
@@ -624,7 +624,7 @@ You can add any number of labels to a node or connector.  The following code ill
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Label_images/Label_img28.png" %}
+![]("/js/Diagram/Label_images/Label_img28.png")
 
 ## Limitation
 

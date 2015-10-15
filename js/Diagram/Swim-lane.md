@@ -49,7 +49,7 @@ The following code example illustrates how to add a swimlane to the Diagram thro
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img2.png" %}
+![]("/js/Diagram/Swim-lane_images/Swim-lane_img2.png")
 
 ## Headers
 
@@ -91,7 +91,7 @@ Swimlane allows to define a header to textually describe it. The `header` proper
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img3.png" %}
+![]("/js/Diagram/Swim-lane_images/Swim-lane_img3.png")
 
 ### Update Header
 
@@ -288,7 +288,7 @@ To add nodes to a lane, You need to add them to the `children` collection of lan
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img4.png" %}
+![]("/js/Diagram/Swim-lane_images/Swim-lane_img4.png")
 
 ## Phase 
 
@@ -341,7 +341,7 @@ The following code example illustrates how to add a phase on initializing swimla
 
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Swim-lane_images/Swim-lane_img5.png" %}
+![]("/js/Diagram/Swim-lane_images/Swim-lane_img5.png")
 
 ### Add phase at runtime
 

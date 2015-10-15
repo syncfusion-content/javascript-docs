@@ -41,7 +41,7 @@ Diagram allows you to pan the Diagram before loading, so that any desired region
 
 In the example given below, the vertical scroll bar is scrolled down by 50px and horizontal scroll bar is scrolled to right by 100px. 
 
-{% include image.html url="/js/Diagram/Scroll-Settings/Scroll-Settings_img1.png" %}
+![]("/js/Diagram/Scroll-Settings/Scroll-Settings_img1.png")
 
 ## Update scroll status
 

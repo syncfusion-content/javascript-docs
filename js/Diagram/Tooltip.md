@@ -17,9 +17,9 @@ By default, Diagram displays a tooltip to provide the size, position, and angle 
 <table>
 <tr>
 <td>
-<img src='{% include image.html url="/js/Diagram/Tooltip_images/Tooltip_img1" %}' alt="" width="213pt" height="181pt"/></td><td>
-<img src='{% include image.html url="/js/Diagram/Tooltip_images/Tooltip_img2" %}' alt="" width="213pt" height="181pt"/></td><td>
-<img src='{% include image.html url="/js/Diagram/Tooltip_images/Tooltip_img3" %}' alt="" width="213pt" height="181pt"/></td></tr>
+<img src='![]("/js/Diagram/Tooltip_images/Tooltip_img1" %}' alt="" width="213pt" height="181pt"/></td><td>
+<img src='![]("/js/Diagram/Tooltip_images/Tooltip_img2" %}' alt="" width="213pt" height="181pt"/></td><td>
+<img src='![]("/js/Diagram/Tooltip_images/Tooltip_img3" %}' alt="" width="213pt" height="181pt"/></td></tr>
 </table>
 
 ### Disable default tooltip
@@ -88,7 +88,7 @@ To show tooltip on mouse over, the `tooltip` property of Diagram model needs to 
     
 {% endhighlight %} 
 
-{% include image.html url="/js/Diagram/Tooltip_images/Tooltip_img4.png" %}
+![]("/js/Diagram/Tooltip_images/Tooltip_img4.png")
 
 ### Disable tooltip at runtime
 
@@ -175,7 +175,7 @@ Diagram provides support to show tooltip around the node/connector that is hover
     
 {% endhighlight %}    
     
-{% include image.html url="/js/Diagram/Tooltip_images/Tooltip_img5.png" %}
+![]("/js/Diagram/Tooltip_images/Tooltip_img5.png")
 
 ### Tooltip relative to mouse position
 
@@ -204,6 +204,6 @@ To display the tooltip at mouse position, you need to set "mouse" option to the 
 
 {% endhighlight %}   
  
-{% include image.html url="/js/Diagram/Tooltip_images/Tooltip_img6.png" %}
+![]("/js/Diagram/Tooltip_images/Tooltip_img6.png")
 
 
