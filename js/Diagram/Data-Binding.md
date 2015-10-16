@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populate diagram from external data sources
+title: Populate Diagram from external data sources
 description: How to populate the Diagram from the local data, remote data, or html tables?
 platform: js
 control: Diagram
