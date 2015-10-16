@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connecting any two points, nodes or ports
-description: How to connect points, nodes or ports
+title: Draw a line connecting two points, nodes or ports
+description: How to draw a line to connect points, nodes or ports
 platform: js
 control: Diagram
 documentation: ug

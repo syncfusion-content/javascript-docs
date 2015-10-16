@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Symbol-Palette
-description: symbol palette
+title: Define and add the frequently used nodes/connectors to symbol palette
+description: How to add shapes to symbol palette and drag and drop them over drawing area
 platform: js
 control: Diagram
 documentation: ug

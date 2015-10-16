@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Group
-description: group
+title: Group two or more relevant objects
+description: How to group two or more nodes and connectors
 platform: js
 control: Diagram
 documentation: ug

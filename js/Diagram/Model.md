@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Model
-description: model
+title: Represent the data to render diagram control
+description: How to represent the data to render diagram control
 platform: js
 control: Diagram
 documentation: ug

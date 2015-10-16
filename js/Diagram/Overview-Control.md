@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview-Control
-description: overview control
+title: Create a preview of the entire content of diagram
+description: How to see the preview of large diagrams and to ease navigations within that diagram
 platform: js
 control: Diagram
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Serialization
-description: serialization
+title: Serialize the diagram as JSON and load diagram from serialized JSON
+description: How to save and load the diagram
 platform: js
 control: Diagram
 documentation: ug

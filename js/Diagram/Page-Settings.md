@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Page-Settings
-description: page settings
+title: Customize the size and appearance of single or multiple diagram pages
+description: How to customize the size and appearance of diagram pages
 platform: js
 control: Diagram
 documentation: ug

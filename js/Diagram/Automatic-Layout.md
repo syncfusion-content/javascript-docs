@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Arranging nodes and connectors in an organized structure
+title: Layout nodes and connectors in an organized structure
 description: How to arrange nodes using automatic layouts
 platform: js
 control: Diagram

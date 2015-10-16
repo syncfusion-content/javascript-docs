@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Undo-and-Redo
-description: undo and redo
+title: Track the history of changes and revert/restore them when needed
+description: How to revert/restore the changes
 platform: js
 control: Diagram
 documentation: ug

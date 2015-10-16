@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tools
-description: tools
+title: Draw shapes, selection rectangles or Pan diagram when you click and drag over digram surface
+description: How to draw shapes or pan diagram by clicking and dragging over diagram surface
 platform: js
 control: Diagram
 documentation: ug

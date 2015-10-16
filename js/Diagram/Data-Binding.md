@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data-Binding
-description: data binding
+title: Populate diagram from external data sources
+description: How to populate diagram from local data, remote data or html tables
 platform: js
 control: Diagram
 documentation: ug

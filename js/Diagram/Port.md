@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Port
-description: port
+title: Create custom connection points to draw connections with any specific point of node
+description: How to draw connections with specific points of node
 platform: js
 control: Diagram
 documentation: ug

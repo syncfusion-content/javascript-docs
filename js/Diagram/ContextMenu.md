@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Port
-description: port
+title: Add context menu items to ease the execution of frequently used commands
+description: How to execute frequently used commands using context menu items
 platform: js
 control: Diagram
 documentation: ug

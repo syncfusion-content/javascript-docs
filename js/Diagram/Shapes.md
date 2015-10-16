@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Shapes
-description: shapes
+title: Pick the type of node among the predefined nodes and shapes
+description: How to choose the type of the node with respect to the requirement 
 platform: js
 control: Diagram
 documentation: ug
