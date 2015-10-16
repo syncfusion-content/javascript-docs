@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add gridlines behind nodes and connectors to ease alignments
-description: How to add gridlines behind nodes and connectors
+description: How to add gridlines behind nodes and connectors?
 platform: js
 control: Diagram
 documentation: ug
