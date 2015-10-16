@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create a preview of the entire content of diagram
-description: How to see the preview of large diagrams and to ease navigations within that diagram
+title: Create a preview of the entire content of the Diagram
+description: How to see the preview of the large Diagrams and to ease navigations within that Diagram?
 platform: js
 control: Diagram
 documentation: ug
