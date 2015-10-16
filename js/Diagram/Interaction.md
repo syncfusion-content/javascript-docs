@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactively edit nodes and connectors during runtime
-description: How to select and edit nodes and connectors during runtime
+description: How to select and edit nodes and connectors during runtime?
 platform: js
 control: Diagram
 documentation: ug
