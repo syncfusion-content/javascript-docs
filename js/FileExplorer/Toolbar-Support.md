@@ -89,5 +89,5 @@ Add the following code in your script section.
 
 
 
-![]("/js/FileExplorer/Toolbar-Support_images/Toolbar-Support_img1.png")
+![](/js/FileExplorer/Toolbar-Support_images/Toolbar-Support_img1.png)
 

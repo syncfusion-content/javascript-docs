@@ -50,7 +50,7 @@ In this following code example, [`scrollSettings`](/js/api/ejgrid#members:scroll
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Scrolling_images/Scrolling_img1.png")
+![](/js/Grid/Scrolling_images/Scrolling_img1.png)
 
 ## Scroll Settings
 
@@ -98,7 +98,7 @@ The following code example illustrates how to enable vertical scrolling in the *
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Scrolling_images/Scrolling_img2.png")
+![](/js/Grid/Scrolling_images/Scrolling_img2.png)
 
 ### To Enable Horizontal Scrolling
 
@@ -144,7 +144,7 @@ The following code example illustrates how to enable horizontal scrolling in the
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Scrolling_images/Scrolling_img3.png")
+![](/js/Grid/Scrolling_images/Scrolling_img3.png)
 
 ## Virtual scrolling on demand
 
@@ -189,11 +189,11 @@ This feature allows you to load the **Grid** with data while scrolling. The foll
 
 The following screenshot displays the Grid while scrolling. The request is sent to the server to fetch data.
 
-![]("/js/Grid/Scrolling_images/Scrolling_img4.png")
+![](/js/Grid/Scrolling_images/Scrolling_img4.png)
 
 The following screenshot displays the **Grid** after it is loaded with data.
 
-![]("/js/Grid/Scrolling_images/Scrolling_img5.png")
+![](/js/Grid/Scrolling_images/Scrolling_img5.png)
 
 ### Continuous Mode
 
@@ -229,9 +229,9 @@ You can enable the continuous mode by setting the [`virtualScrollMode`](/js/api
 
 The following screenshot illustrates the request made to fetch the data after the **Grid** scrollbar touches the end.
 
-![]("/js/Grid/Scrolling_images/Scrolling_img6.png")
+![](/js/Grid/Scrolling_images/Scrolling_img6.png)
 
 The following screenshot illustrates the **Grid** after the data is loaded.
 
-![]("/js/Grid/Scrolling_images/Scrolling_img7.png")
+![](/js/Grid/Scrolling_images/Scrolling_img7.png)
 

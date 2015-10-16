@@ -13,7 +13,7 @@ documentation: ug
 The **Essential JavaScript ListView** widget builds an interactive list view interface. This control allows you to select an item from a list-like interface and provides the infrastructure to display a set of data items in different layouts or views. Lists display data, data navigation, result lists, and data entry.
 
 
-![]("/js/ListView/Getting-Started_images/Getting-Started_img1.png") 
+![](/js/ListView/Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a simple ListView
 
@@ -88,7 +88,7 @@ Create the **ListView** control by adding script as follows.
 
 Run the above code to render the following output.
 
-![]("/js/ListView/Getting-Started_images/Getting-Started_img2.png") 
+![](/js/ListView/Getting-Started_images/Getting-Started_img2.png) 
 
 **Add Header** 
 
@@ -108,5 +108,5 @@ You can add a header for **ListView**. Refer to the following script.
 
 Run the above code to render the following output.
 
-![]("/js/ListView/Getting-Started_images/Getting-Started_img3.png") 
+![](/js/ListView/Getting-Started_images/Getting-Started_img3.png) 
 

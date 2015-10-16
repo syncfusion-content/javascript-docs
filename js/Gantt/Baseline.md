@@ -24,5 +24,5 @@ Baseline is used to describe the original plan of the task and it can be the sam
 
 The following screenshot shows the baseline in Gantt control.
 
-![]("/js/Gantt/Baseline_images/Baseline_img1.png")
+![](/js/Gantt/Baseline_images/Baseline_img1.png)
 

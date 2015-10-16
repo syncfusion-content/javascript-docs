@@ -53,9 +53,15 @@ documentation: ug
 
 The following screenshot displays the **Grid** data source before refreshing.
 
-![]("/js/Grid/How-to/Refresh-datasource_images/Refresh-datasource_img1.png" Caption="Before Refreshing")
+![](/js/Grid/How-to/Refresh-datasource_images/Refresh-datasource_img1.png)
+
+Before Refreshing
+{:.caption}
 
 The following screenshot displays the **Grid** data source after refreshing.
 
-![]("/js/Grid/How-to/Refresh-datasource_images/Refresh-datasource_img2.png" Caption="After Refreshing")
+![](/js/Grid/How-to/Refresh-datasource_images/Refresh-datasource_img2.png)
+
+After Refreshing
+{:.caption}
 

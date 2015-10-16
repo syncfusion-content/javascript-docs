@@ -79,7 +79,7 @@ In the **HTML** page, add **&lt;ul&gt;** and **&lt;li&gt;** elements to configur
 
 The output for **TreeView** when **allowDragAndDrop** is set to **True**.
 
-![]("/js/TreeView/Drag-and-Drop_images/Drag-and-Drop_img1.png")
+![](/js/TreeView/Drag-and-Drop_images/Drag-and-Drop_img1.png)
 
 ## Allow Drop Child
 

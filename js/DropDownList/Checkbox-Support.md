@@ -59,4 +59,4 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 Output of the above steps
 
-![]("/js/DropDownList/Checkbox-Support_images/Checkbox-Support_img1.png") 
+![](/js/DropDownList/Checkbox-Support_images/Checkbox-Support_img1.png) 

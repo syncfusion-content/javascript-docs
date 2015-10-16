@@ -104,5 +104,5 @@ You can refer the following code example of Thumbnail in Rotator.
   {% endhighlight %}
 
 
-![]("/js/Rotator/Thumbnail_images/Thumbnail_img1.png")
+![](/js/Rotator/Thumbnail_images/Thumbnail_img1.png)
 

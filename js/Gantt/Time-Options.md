@@ -96,5 +96,5 @@ Use the following code example for including time options in start date and end 
 
 Execute the above code to render the following output.
 
-![]("/js/Gantt/Time-Options_images/Time-Options_img1.png")
+![](/js/Gantt/Time-Options_images/Time-Options_img1.png)
 

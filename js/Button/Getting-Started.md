@@ -13,7 +13,7 @@ This section explains you briefly on how to create a **Button** in your applicat
 
 The following screenshot illustrates the functionality of a Button control in Media Player and Office Ribbon Application.
 
-![]("/js/Button/Getting-Started_images/Getting-Started_img1.png")
+![](/js/Button/Getting-Started_images/Getting-Started_img1.png)
 
 ##Create Button Widget
 
@@ -280,7 +280,7 @@ Add the following function in **&lt;script&gt;** tag.
 
 The following screenshot displays the output.
 
-![]("/js/Button/Getting-Started_images/Getting-Started_img2.png") 
+![](/js/Button/Getting-Started_images/Getting-Started_img2.png) 
 
 ##Create Office Ribbon Control
 
@@ -384,9 +384,9 @@ Add Function Definition from click event to Button function.
 
 The following screenshot displays Office Ribbon Application.
 
-![]("/js/Button/Getting-Started_images/Getting-Started_img3.png") 
+![](/js/Button/Getting-Started_images/Getting-Started_img3.png) 
 
 The following screenshot displays **Office Ribbon** **Bold** Option.	
 
-![]("/js/Button/Getting-Started_images/Getting-Started_img4.png")
+![](/js/Button/Getting-Started_images/Getting-Started_img4.png)
 

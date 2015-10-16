@@ -37,5 +37,5 @@ $(function() {
 
 Output:
 
-![]("/js/PivotGrid/Hyperlink_images/Hyperlink_img1.png") 
+![](/js/PivotGrid/Hyperlink_images/Hyperlink_img1.png) 
 

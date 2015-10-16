@@ -147,7 +147,7 @@ In an HTML page, add a &lt;input&gt; element to configure Dropdownlist widget.
 
 Output of the above steps
 
-![]("/js/DropDownList/Data-binding_images/Data-binding_img1.png") 
+![](/js/DropDownList/Data-binding_images/Data-binding_img1.png) 
 
 ## Remote data
 
@@ -189,7 +189,7 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 Output of the above steps
 
-![]("/js/DropDownList/Data-binding_images/Data-binding_img2.png") 
+![](/js/DropDownList/Data-binding_images/Data-binding_img2.png) 
 
 ## Angular Binding
 
@@ -295,7 +295,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **DropdownLis
 
 Output of the above steps
 
-![]("/js/DropDownList/Data-binding_images/Data-binding_img4.png") 
+![](/js/DropDownList/Data-binding_images/Data-binding_img4.png) 
 
 ## Knockout Binding
 
@@ -390,4 +390,4 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 Output of the above steps
 
-![]("/js/DropDownList/Data-binding_images/Data-binding_img6.png") 
+![](/js/DropDownList/Data-binding_images/Data-binding_img6.png) 

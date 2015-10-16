@@ -31,8 +31,14 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/PivotGrid/Cell-Selection_images/Cell-Selection_img1.png" Caption="Cell Selection in the PivotGrid Control") 
+![](/js/PivotGrid/Cell-Selection_images/Cell-Selection_img1.png)
 
-![]("/js/PivotGrid/Cell-Selection_images/Cell-Selection_img2.png" Caption="Chart Series Based on Selected Cells") 
+Cell Selection in the PivotGrid Control
+{:.caption} 
+
+![](/js/PivotGrid/Cell-Selection_images/Cell-Selection_img2.png)
+
+Chart Series Based on Selected Cells
+{:.caption} 
 
 

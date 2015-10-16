@@ -58,7 +58,7 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 Output for disabled Accordion control is as follows.
 
 
-![]("/js/Accordion/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img1.png") 
+![](/js/Accordion/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img1.png) 
 
 ## Enable panel items
 
@@ -116,5 +116,5 @@ Output for Accordion control with some enabled and disabled items, where first p
 
 
 
-![]("/js/Accordion/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img2.png") 
+![](/js/Accordion/Accordion-Panel-enabler_images/Accordion-Panel-enabler_img2.png) 
 

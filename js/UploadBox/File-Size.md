@@ -59,13 +59,13 @@ When you want to browse the file within the fileSize, you can browse and upload 
 
 
 
-![]("/js/UploadBox/File-Size_images/File-Size_img1.png") 
+![](/js/UploadBox/File-Size_images/File-Size_img1.png) 
 
 When you try to browse the file with exceeded fileSize, we cannot browse and upload the files.
 
 
 
-![]("/js/UploadBox/File-Size_images/File-Size_img2.png") 
+![](/js/UploadBox/File-Size_images/File-Size_img2.png) 
 
 ## Maximum File Upload Size in IIS
 
@@ -157,7 +157,7 @@ You can add the following code to your **web.config** file in order to set that 
 N> maxAllowedContentLength is measured in bytes.
 
 
-![]("/js/UploadBox/File-Size_images/File-Size_img4.png") 
+![](/js/UploadBox/File-Size_images/File-Size_img4.png) 
                        
 
 N> * When you configure both maxAllowedContentLength, maxRequestLength attributes, then maxAllowedContentLength is considered for execution.

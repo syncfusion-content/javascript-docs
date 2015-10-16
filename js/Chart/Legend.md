@@ -30,7 +30,10 @@ By default, the legend is enabled in the chart. You can enable or disable it by 
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img1.png" Caption="Legend visibility in chart")
+![](/js/Chart/Legend_images/Legend_img1.png)
+
+Legend visibility in chart
+{:.caption}
 
 
 ## Legend title
@@ -56,7 +59,10 @@ To add the title to the legend, you have to specify the [legend.title.text](../a
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img2.png" Caption="Chart with legend title")
+![](/js/Chart/Legend_images/Legend_img2.png)
+
+Chart with legend title
+{:.caption}
 
 
 ## Position and Align the Legend
@@ -80,7 +86,10 @@ By using the [position](../api/ejchart#members:legend-position) option, you can 
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img3.png" Caption="Change legend position")
+![](/js/Chart/Legend_images/Legend_img3.png)
+
+Change legend position
+{:.caption}
 
 **Legend Alignment**
 
@@ -103,7 +112,10 @@ You can align the legend to the *center*, *far* or *near* based on its position 
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img4.png" Caption="Change legend position and alignment")
+![](/js/Chart/Legend_images/Legend_img4.png)
+
+Change legend position and alignment
+{:.caption}
 
 
 ## Arrange legend items in the rows and columns
@@ -135,7 +147,10 @@ You can arrange the legend items horizontally and vertically by using the [rowCo
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img5.png" Caption="Arrangeing legend items in rows and columns")
+![](/js/Chart/Legend_images/Legend_img5.png)
+
+Arrangeing legend items in rows and columns
+{:.caption}
 
 
 ## Customization
@@ -160,7 +175,10 @@ To change the legend icon shape, you have to specify the shape in the [shape](..
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img6.png" Caption="Changing legend shape")
+![](/js/Chart/Legend_images/Legend_img6.png)
+
+Changing legend shape
+{:.caption}
 
 
 ### Legend items size and border
@@ -183,7 +201,10 @@ You can change the size of the legend items by using the [itemStyle.width](../ap
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img7.png" Caption="Changing legend items size and border")
+![](/js/Chart/Legend_images/Legend_img7.png)
+
+Changing legend items size and border
+{:.caption}
 
 
 ### Legend size
@@ -206,7 +227,10 @@ By default, legend takes 20% of the **height** horizontally when it was placed o
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img8.png" Caption="Change legend size")
+![](/js/Chart/Legend_images/Legend_img8.png)
+
+Change legend size
+{:.caption}
 
 
 ### Legend Item Padding
@@ -229,7 +253,10 @@ You can control the spacing between the legend items by using the [itemPadding](
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img9.png" Caption="Change padding between the legend items")
+![](/js/Chart/Legend_images/Legend_img9.png)
+
+Change padding between the legend items
+{:.caption}
 
 
 ### Legend border
@@ -252,7 +279,7 @@ You can customize the legend border by using the [border](../api/ejchart#members
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img10.png")
+![](/js/Chart/Legend_images/Legend_img10.png)
 
 Customize the legend border
 {:.caption}
@@ -279,7 +306,10 @@ You can enable or disable the legend scrollbar by using the [enableScrollbar](..
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img11.png" Caption="Enable scrollbar for legend")
+![](/js/Chart/Legend_images/Legend_img11.png)
+
+Enable scrollbar for legend
+{:.caption}
 
 ### Customize the legend text
 
@@ -308,7 +338,10 @@ To customize the legend item text and title you can use the [legend.font](../api
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img12.png" Caption="Customizing legend item and title text")
+![](/js/Chart/Legend_images/Legend_img12.png)
+
+Customizing legend item and title text
+{:.caption}
 
 
 ## Handle the legend item clicked
@@ -358,4 +391,7 @@ You can select a specific series or point while clicking on the corresponding le
 
 {% endhighlight %}
 
-![]("/js/Chart/Legend_images/Legend_img13.png" Caption="Avoid series collapsing on legend item clicked")
+![](/js/Chart/Legend_images/Legend_img13.png)
+
+Avoid series collapsing on legend item clicked
+{:.caption}

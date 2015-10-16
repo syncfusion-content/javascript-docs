@@ -190,5 +190,5 @@ The **Ribbon** control has group expander support. Set **enableGroupExpander** v
 
 The following screenshot illustrates the group New with the group expander.
 
-![]("/js/Ribbon/Group-Expander_images/Group-Expander_img1.png")
+![](/js/Ribbon/Group-Expander_images/Group-Expander_img1.png)
 

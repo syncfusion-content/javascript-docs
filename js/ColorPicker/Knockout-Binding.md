@@ -96,5 +96,5 @@ The following screenshot displays the output of the above code example.
 
 
 
-![]("/js/ColorPicker/Knockout-Binding_images/Knockout-Binding_img1.png") 
+![](/js/ColorPicker/Knockout-Binding_images/Knockout-Binding_img1.png) 
 

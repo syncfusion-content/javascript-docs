@@ -37,7 +37,10 @@ You can add annotations to the chart by using the [annotations](../api/ejchart#m
 {% endhighlight %}
 
 
-![]("/js/Chart/Annotations_images/Annotations_img1.png" Caption="Chart with Annotations")
+![](/js/Chart/Annotations_images/Annotations_img1.png)
+
+Chart with Annotations
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/annotations) here to view the Annotations online demo sample.
 
@@ -65,7 +68,10 @@ To rotate the annotation template, you can use the [angle](../api/ejchart#member
 {% endhighlight %}
 
 
-![]("/js/Chart/Annotations_images/Annotations_img2.png" Caption="Rotate the annotation template")
+![](/js/Chart/Annotations_images/Annotations_img2.png)
+
+Rotate the annotation template
+{:.caption}
 
 ## Positioning Annotation
 
@@ -101,7 +107,10 @@ N> By using the [region](../api/ejchart#members:annotations-region) option, you 
 {% endhighlight %}
 
 
-![]("/js/Chart/Annotations_images/Annotations_img3.png" Caption="Annotations with chart region")
+![](/js/Chart/Annotations_images/Annotations_img3.png)
+
+Annotations with chart region
+{:.caption}
 
 
 ## Annotation alignments
@@ -130,7 +139,7 @@ When the coordinateUnit is set to pixels or points, you can align the annotation
 {% endhighlight %}
 
 
-![]("/js/Chart/Annotations_images/Annotations_img4.png")
+![](/js/Chart/Annotations_images/Annotations_img4.png)
 
 Change annotation alignments
 {:.caption}

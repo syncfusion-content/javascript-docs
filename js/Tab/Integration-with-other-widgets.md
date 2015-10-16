@@ -78,7 +78,7 @@ Add the following styles to render **Tab**.
 
 The following screenshot illustrates the **Tab** content with rating control. 
 
-![]("/js/Tab/Integration-with-other-widgets_images/Integration-with-other-widgets_img1.png") 
+![](/js/Tab/Integration-with-other-widgets_images/Integration-with-other-widgets_img1.png) 
 
 
 

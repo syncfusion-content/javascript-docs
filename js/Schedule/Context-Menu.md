@@ -83,7 +83,7 @@ This collection accepts the id, text and parent Id of the menu items that are to
 
 Execute the above code to render the following output.
 
-![]("/js/Schedule/Context-Menu_images/Context-Menu_img1.png" Caption="")
+![](/js/Schedule/Context-Menu_images/Context-Menu_img1.png" Caption=")
 
 
 **Categorize** 
@@ -152,7 +152,7 @@ You can refer the following code example to render the categorize options in the
 
 Execute the above code to render the following output with categorized appointments. Also when you right click “Appointment”, the context menu with categorize option is displayed as follows.
 
-![]("/js/Schedule/Context-Menu_images/Context-Menu_img2.png" Caption="")
+![](/js/Schedule/Context-Menu_images/Context-Menu_img2.png" Caption=")
 
 **Cells** 
 
@@ -218,4 +218,4 @@ $(function () {
 
 Execute the above code to render the following output when you right-click on the cells.
 
-![]("/js/Schedule/Context-Menu_images/Context-Menu_img3.png" Caption="")
+![](/js/Schedule/Context-Menu_images/Context-Menu_img3.png" Caption=")

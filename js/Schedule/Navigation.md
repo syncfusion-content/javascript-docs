@@ -53,7 +53,7 @@ The following code example explains how to set the value for **enableAppointment
 
 The **Schedule** control with the appointment navigation tabs (marked with a box) enabled looks like the following screenshot.
 
- ![]("/js/Schedule/Navigation_images/Navigation_img1.png" Caption="")
+ ![](/js/Schedule/Navigation_images/Navigation_img1.png" Caption=")
 
 **Calendar Navigation**
 
@@ -63,7 +63,7 @@ The **Schedule** control with the appointment navigation tabs (marked with a box
 
 The following screenshot displays the calendar that pops down on clicking the date headerbar (marked with a box),
 
-![]("/js/Schedule/Navigation_images/Navigation_img2.png" Caption="")
+![](/js/Schedule/Navigation_images/Navigation_img2.png" Caption=")
 
 
 **Keyboard navigation**
@@ -189,4 +189,4 @@ $(function () {
 
 Since the keyboard navigation functionality is enabled by default, the **Schedule** control below indicates the multiple cell selection through the **shift + right arrow key** combination as follows.
 
-![]("/js/Schedule/Navigation_images/Navigation_img3.png" Caption="")
+![](/js/Schedule/Navigation_images/Navigation_img3.png" Caption=")

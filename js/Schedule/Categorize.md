@@ -141,4 +141,4 @@ The following code example illustrates on how to render categorize feature in th
 
 The output of the above code is illustrated as follows.
 
-![]("/js/Schedule/Categorize_images/Categorize_img1.png" Caption="")
+![](/js/Schedule/Categorize_images/Categorize_img1.png" Caption=")

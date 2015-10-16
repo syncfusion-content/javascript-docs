@@ -43,5 +43,5 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 The following screenshot displays the output for the above code.
 
-![]("/js/ProgressBar/Enabling-the-ProgressBar_images/Enabling-the-ProgressBar_img1.png") 
+![](/js/ProgressBar/Enabling-the-ProgressBar_images/Enabling-the-ProgressBar_img1.png) 
 

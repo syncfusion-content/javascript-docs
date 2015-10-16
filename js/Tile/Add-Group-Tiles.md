@@ -145,5 +145,5 @@ Add the following code inside the **script** tag.
 
 
 
-![]("/js/Tile/Add-Group-Tiles_images/Add-Group-Tiles_img1.png")
+![](/js/Tile/Add-Group-Tiles_images/Add-Group-Tiles_img1.png)
 

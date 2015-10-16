@@ -15,7 +15,7 @@ This section explains briefly about how to create a **TreeMap** in your applicat
 
 You can configure an **Essential JavaScript TreeMap** in simple steps. In this section, you can learn how to configure a TreeMap control in a real-time scenario where it is used to visually represent the percentage of growth in population in each continent. It also provides a walk-through on some of the customization features available in TreeMap control. 
 
-![]("/js/TreeMap/Getting-Started_images/Getting-Started_img1.png")
+![](/js/TreeMap/Getting-Started_images/Getting-Started_img1.png)
 
 ## Add Libraries
 
@@ -177,7 +177,7 @@ The final **HTML** file is illustrated in the following code sample.
 
 The following screenshot displays a TreeMap control that is rendered after executing the above code sample. The control is rendered with the default properties using the above code. 
 
-![]("/js/TreeMap/Getting-Started_images/Getting-Started_img2.png")
+![](/js/TreeMap/Getting-Started_images/Getting-Started_img2.png)
 
 ## Group with Levels
 
@@ -214,7 +214,7 @@ The following code sample explains how to group TreeMap Items using ‘Levels’
 
 The following screenshot displays grouping of **TreeMap****Items** using **Levels**.
 
-![]("/js/TreeMap/Getting-Started_images/Getting-Started_img3.png")
+![](/js/TreeMap/Getting-Started_images/Getting-Started_img3.png)
 
 ## Customize TreeMap by Range
 
@@ -254,7 +254,7 @@ The following code sample explains how to customize TreeMap appearance using Ran
 
 The following screenshot displays a customized **TreeMap** control. 
 
-![]("/js/TreeMap/Getting-Started_images/Getting-Started_img4.png")
+![](/js/TreeMap/Getting-Started_images/Getting-Started_img4.png)
 
 ## Enable Tooltip
 
@@ -294,7 +294,7 @@ You can customize the Leaf level TreeMap items using `leafItemSettings`. The Lab
 
 The following screenshot displays a ToolTip in a **TreeMap** control.
 
-![]("/js/TreeMap/Getting-Started_images/Getting-Started_img5.png")
+![](/js/TreeMap/Getting-Started_images/Getting-Started_img5.png)
 
 ## Enable Legend
 
@@ -342,7 +342,7 @@ The following code sample illustrates how to add labels for legend in a TreeMap.
 
 The following screenshot displays labels in a **TreeMap** control. 
 
-![]("/js/TreeMap/Getting-Started_images/Getting-Started_img6.png")
+![](/js/TreeMap/Getting-Started_images/Getting-Started_img6.png)
 
 N>Population data is referred from [List of continents by population](http://en.wikipedia.org/wiki/List_of_continents_by_population)._
 

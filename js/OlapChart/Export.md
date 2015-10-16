@@ -66,12 +66,24 @@ public void Export(System.IO.Stream stream)
 
 {% endhighlight %}
 
-![]("/js/OlapChart/Export_images/Export_img1.png" Caption="Exported OlapChart in Excel")
+![](/js/OlapChart/Export_images/Export_img1.png)
 
-![]("/js/OlapChart/Export_images/Export_img2.png" Caption="Exported OlapChart in Word")
+Exported OlapChart in Excel
+{:.caption}
 
-![]("/js/OlapChart/Export_images/Export_img3.png" Caption="Exported OlapChart in PDF")
+![](/js/OlapChart/Export_images/Export_img2.png)
 
-![]("/js/OlapChart/Export_images/Export_img4.png" Caption="Exported OlapChart in image formats")
+Exported OlapChart in Word
+{:.caption}
+
+![](/js/OlapChart/Export_images/Export_img3.png)
+
+Exported OlapChart in PDF
+{:.caption}
+
+![](/js/OlapChart/Export_images/Export_img4.png)
+
+Exported OlapChart in image formats
+{:.caption}
 
 

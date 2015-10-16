@@ -94,5 +94,5 @@ The following code example depicts the way to bind data to the **ColorPicker** w
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Angular-Binding_images/Angular-Binding_img1.png")
+![](/js/ColorPicker/Angular-Binding_images/Angular-Binding_img1.png)
 

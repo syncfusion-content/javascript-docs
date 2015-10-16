@@ -128,7 +128,7 @@ You can add any number of palettes to the `palettes` collection of the symbol pa
 
 The following image shows the symbol palette with multiple palette Items.
 
-![]("/js/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png")
+![](/js/Diagram/Symbol-Palette_images/Symbol-Palette_img3.png)
 
 ## Customize the size of palette items
 

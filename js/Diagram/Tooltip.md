@@ -88,7 +88,7 @@ To show tooltip on mouse over, the `tooltip` property of Diagram model needs to 
     
 {% endhighlight %} 
 
-![]("/js/Diagram/Tooltip_images/Tooltip_img4.png")
+![](/js/Diagram/Tooltip_images/Tooltip_img4.png)
 
 ### Disable tooltip at runtime
 
@@ -175,7 +175,7 @@ Diagram provides support to show tooltip around the node/connector that is hover
     
 {% endhighlight %}    
     
-![]("/js/Diagram/Tooltip_images/Tooltip_img5.png")
+![](/js/Diagram/Tooltip_images/Tooltip_img5.png)
 
 ### Tooltip relative to mouse position
 
@@ -204,6 +204,6 @@ To display the tooltip at mouse position, you need to set "mouse" option to the 
 
 {% endhighlight %}   
  
-![]("/js/Diagram/Tooltip_images/Tooltip_img6.png")
+![](/js/Diagram/Tooltip_images/Tooltip_img6.png)
 
 

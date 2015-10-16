@@ -33,7 +33,7 @@ Sorting is a basic technique in **ejGrid**. It helps you view **Grid** records i
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Sorting_images/Sorting_img1.png")
+![](/js/Grid/Sorting_images/Sorting_img1.png)
 
 N> _EJGrid also has support to sort more than one column. This behavior is called as multi sorting. To enable this behavior in Grid then use ["allowMultiSorting"](/js/api/ejgrid#members:allowmultisorting "allowMultiSorting") in Grid._
 
@@ -81,5 +81,5 @@ In **ejGrid**, you have an **API** to sort a column dynamically. The following c
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Sorting_images/Sorting_img2.png")
+![](/js/Grid/Sorting_images/Sorting_img2.png)
 

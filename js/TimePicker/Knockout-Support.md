@@ -109,5 +109,5 @@ The following example depicts the way to bind data to the **TimePicker** widget 
 
 Execute the above code to render the following output.
 
-![]("/js/TimePicker/Knockout-Support_images/Knockout-Support_img1.png") 
+![](/js/TimePicker/Knockout-Support_images/Knockout-Support_img1.png) 
 

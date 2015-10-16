@@ -67,9 +67,15 @@ The output for **PercentageTextBox** with Globalization.
 
 
 
-![]("/js/PercentageTextBox/Globalization-Support_images/Globalization-Support_img1.png" Caption="PercentageTextBox with de-DE locale")
+![](/js/PercentageTextBox/Globalization-Support_images/Globalization-Support_img1.png)
+
+PercentageTextBox with de-DE locale
+{:.caption}
 
 
 
-![]("/js/PercentageTextBox/Globalization-Support_images/Globalization-Support_img2.png" Caption="PercentageTextBox with en-US locale				")
+![](/js/PercentageTextBox/Globalization-Support_images/Globalization-Support_img2.png)
+
+PercentageTextBox with en-US locale				
+{:.caption}
 

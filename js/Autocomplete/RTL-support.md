@@ -43,5 +43,5 @@ The following steps explain how you can enable the **right-to-left** property fo
 
 The following image is the output for AutoComplete when **enableRTL** is set to “**True”**.
 
-![]("/js/Autocomplete/RTL-support_images/RTL-support_img1.png")
+![](/js/Autocomplete/RTL-support_images/RTL-support_img1.png)
 

@@ -41,7 +41,10 @@ Also in the button sample, you can use the icon class names as follows,
 
 Execute the above code to render the following output.
 
-![]("/js/Button/Icons_images/Icons_img1.png" Caption="Icon library used in button component")
+![](/js/Button/Icons_images/Icons_img1.png)
+
+Icon library used in button component
+{:.caption}
 
 ## List of Icons
 

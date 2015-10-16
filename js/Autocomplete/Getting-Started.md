@@ -13,7 +13,7 @@ This section explains briefly about how to create an AutoComplete in your applic
 
 The following screenshot illustrates the AutoComplete control that searches the list of components available in the database. 
 
-![]("/js/Autocomplete/Getting-Started_images/Getting-Started_img1.png")
+![](/js/Autocomplete/Getting-Started_images/Getting-Started_img1.png)
 
 ## Create an AutoComplete
 
@@ -69,7 +69,7 @@ The following screenshot illustrates the AutoComplete control that searches the 
 
  Execute the above code to create the AutoComplete textbox as shown in the following screen shot.
 
-![]("/js/Autocomplete/Getting-Started_images/Getting-Started_img2.png")
+![](/js/Autocomplete/Getting-Started_images/Getting-Started_img2.png)
 
 ## Populate Data to AutoComplete
 
@@ -128,7 +128,7 @@ By default, the AutoComplete is rendered with single value selection that can be
 
 
 
-![]("/js/Autocomplete/Getting-Started_images/Getting-Started_img3.png")
+![](/js/Autocomplete/Getting-Started_images/Getting-Started_img3.png)
 
 ## Configure Highlight Search and Rounded corners
 
@@ -150,7 +150,7 @@ By default, the AutoComplete is rendered with single value selection that can be
 
 When you set the **highlightSearch** property to **“True”**, the characters typed in textbox gets highlighted in the suggestion list. To display textbox reforms from sharp ends to rounded ends, you can enable the **showRoundedCorner** property.
 
-![]("/js/Autocomplete/Getting-Started_images/Getting-Started_img4.png")
+![](/js/Autocomplete/Getting-Started_images/Getting-Started_img4.png)
 
 ## Configure DropDown button
 
@@ -191,5 +191,5 @@ Now you can override the search icon class and replace the content to **DropDown
 
 
 
-![]("/js/Autocomplete/Getting-Started_images/Getting-Started_img6.png")
+![](/js/Autocomplete/Getting-Started_images/Getting-Started_img6.png)
 

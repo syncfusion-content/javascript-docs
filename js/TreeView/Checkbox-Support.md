@@ -72,7 +72,7 @@ In the HTML page, add &lt;ul&gt; and &lt;li&gt; elements to configure **TreeView
 
 The following image is the output for TreeView when showCheckbox is set to “True”.
 
-![]("/js/TreeView/Checkbox-Support_images/Checkbox-Support_img1.png")
+![](/js/TreeView/Checkbox-Support_images/Checkbox-Support_img1.png)
 
 ### Auto Check Parent Node
 

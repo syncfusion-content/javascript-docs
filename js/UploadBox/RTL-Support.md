@@ -42,7 +42,7 @@ The following screenshot displays the output.
 
 
 
-![]("/js/UploadBox/RTL-Support_images/RTL-Support_img1.png") 
+![](/js/UploadBox/RTL-Support_images/RTL-Support_img1.png) 
 
 
 

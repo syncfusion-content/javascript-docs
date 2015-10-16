@@ -112,5 +112,5 @@ The following example depicts how you can bind data to the **AutoComplete** widg
 
 The following image is the result of the above code example.
 
-![]("/js/Autocomplete/Knockout-binding_images/Knockout-binding_img1.png")
+![](/js/Autocomplete/Knockout-binding_images/Knockout-binding_img1.png)
 

@@ -11,15 +11,15 @@ documentation: ug
 
 Essential Diagram for JS provides support to define custom ports for making connections.
 
-![]("/js/Diagram/Port_images/Port_img3.png")
+![](/js/Diagram/Port_images/Port_img3.png)
 
 When a connector is connected between two nodes, its end points are automatically docked to node's nearest boundary as shown in the following image. 
 
-![]("/js/Diagram/Port_images/Port_img4.png")
+![](/js/Diagram/Port_images/Port_img4.png)
 
 Ports act as the connection points of node and allows to create connections with only those specific points as shown in the following image.
 
-![]("/js/Diagram/Port_images/Port_img5.png")
+![](/js/Diagram/Port_images/Port_img5.png)
 
 ## Create Port
 
@@ -80,7 +80,7 @@ You can add ports at runtime by using the client side method `addPorts`. The fol
 
 {% endhighlight %}
 
-![]("/js/Diagram/Port_images/Port_img1.png")
+![](/js/Diagram/Port_images/Port_img1.png)
 
 To explore the set of properties for defining a port, refer to [Port Properties](/js/api/ejDiagram "members:nodes-ports")
 
@@ -134,7 +134,7 @@ The following code illustrates how to change the appearance of port.
    
 {% endhighlight %}
 
-![]("/js/Diagram/Port_images/Port_img2.png")
+![](/js/Diagram/Port_images/Port_img2.png)
 
 ## Constraints
 

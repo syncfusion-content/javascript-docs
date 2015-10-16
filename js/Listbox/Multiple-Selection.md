@@ -79,7 +79,7 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
 
 Output for **ListBox** control that provides multiple selection is as follows.
 
-![]("/js/ListBox/Multiple-Selection_images/Multiple-Selection_img1.png")
+![](/js/ListBox/Multiple-Selection_images/Multiple-Selection_img1.png)
 
 ## Multiple selection through index
 
@@ -150,7 +150,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 Output of the above steps.
 
-![]("/js/ListBox/Multiple-Selection_images/Multiple-Selection_img2.png")
+![](/js/ListBox/Multiple-Selection_images/Multiple-Selection_img2.png)
 
 # Checkbox Support
 
@@ -224,7 +224,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 Output of the above steps.
 
-![]("/js/ListBox/Multiple-Selection_images/Multiple-Selection_img3.png")
+![](/js/ListBox/Multiple-Selection_images/Multiple-Selection_img3.png)
 
 ## Check All
 
@@ -295,7 +295,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 Output of the above steps.
 
-![]("/js/ListBox/Multiple-Selection_images/Multiple-Selection_img4.png")
+![](/js/ListBox/Multiple-Selection_images/Multiple-Selection_img4.png)
 
 ## Uncheck All
 

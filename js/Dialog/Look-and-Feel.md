@@ -67,7 +67,7 @@ Customize the **CSS** class by setting **CSS** Properties.
 
 The output for **Dialog** control after customizing the “**cssClass**” is as follows.
 
-![]("/js/Dialog/Look-and-Feel_images/Look-and-Feel_img1.png") 
+![](/js/Dialog/Look-and-Feel_images/Look-and-Feel_img1.png) 
 
 
 

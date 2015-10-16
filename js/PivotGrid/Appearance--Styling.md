@@ -215,5 +215,5 @@ documentation: ug
 
 {% endhighlight %}
 
-![]("/js/PivotGrid/Appearance--Styling_images/Appearance--Styling_img1.png") 
+![](/js/PivotGrid/Appearance--Styling_images/Appearance--Styling_img1.png) 
 

@@ -17,7 +17,7 @@ Selector provides a visual representation of selected elements. It behaves like 
 
 An element can be selected by clicking that element. During single click, all previously selected items are cleared. The following image shows how the selected elememts are visually represented.
 
-![]("/js/Diagram/Interaction_images/Interaction_img1.png")
+![](/js/Diagram/Interaction_images/Interaction_img1.png)
 
 ### Selecting a group
 
@@ -37,7 +37,7 @@ Multiple elements can be selected with the following ways.
 
 Multiple selected elements are visually represented as shown.
 
-![]("/js/Diagram/Interaction_images/Interaction_img2.png")
+![](/js/Diagram/Interaction_images/Interaction_img2.png)
 
 ### Select/Unselect elements programmatically
 
@@ -91,7 +91,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines "Snapping"). 
 
-![]("/js/Diagram/Interaction_images/Interaction_img3.png")
+![](/js/Diagram/Interaction_images/Interaction_img3.png)
 
 ## Resize
 
@@ -101,7 +101,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 
 * While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines "Snapping").
 
-![]("/js/Diagram/Interaction_images/Interaction_img4.png")
+![](/js/Diagram/Interaction_images/Interaction_img4.png)
 
 ## Rotate
 
@@ -113,7 +113,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 
 * For more information about pivot, refer to [Pivot](/js/Diagram/Node "Pivot").
 
-![]("/js/Diagram/Interaction_images/Interaction_img5.png")
+![](/js/Diagram/Interaction_images/Interaction_img5.png)
 
 ## Connection editing
 
@@ -123,7 +123,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 
 Source and target points of the selected connectors are represented with two handles. Clicking and dragging those handles help you to adjust the source and target points.
 
-![]("/js/Diagram/Interaction_images/Interaction_img6.png")
+![](/js/Diagram/Interaction_images/Interaction_img6.png)
 
 ### Straight segment editing
 
@@ -137,17 +137,17 @@ Source and target points of the selected connectors are represented with two han
 
 * Orthogonal thumbs allow to adjust the length of adjacent segments by clicking and dragging it.
 
-![]("/js/Diagram/Interaction_images/Interaction_img7.png")
+![](/js/Diagram/Interaction_images/Interaction_img7.png)
 
 * When necessary, some segments are added or removed automatically, when dragging the segment. This is to maintain proper routing of orthogonality between segments.
 
-![]("/js/Diagram/Interaction_images/Interaction_img8.png")
+![](/js/Diagram/Interaction_images/Interaction_img8.png)
 
 ### Bezier thumbs
 
 * Bezier segments are annotated with two thumbs to represent the control points. Control points of the curve can be configured by clicking and dragging the control thumbs.
 
-![]("/js/Diagram/Interaction_images/Interaction_img9.png")
+![](/js/Diagram/Interaction_images/Interaction_img9.png)
 
 ## Drag and drop nodes over other elements
 
@@ -263,7 +263,7 @@ var CloneTool = (function (base) {
     });
 {% endhighlight %}
 
-![]("/js/Diagram/Interaction_images/Interaction_img10.png")
+![](/js/Diagram/Interaction_images/Interaction_img10.png)
 
 ### Appearance
 
@@ -301,7 +301,7 @@ The following code example illustrates how to customize the appearance of the us
     });
 {% endhighlight %}
 
-![]("/js/Diagram/Interaction_images/Interaction_img11.png")
+![](/js/Diagram/Interaction_images/Interaction_img11.png)
 
 ## Zoom pan
 

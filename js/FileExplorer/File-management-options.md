@@ -15,7 +15,7 @@ By clicking the New Folder Icon, the highlighted model dialog opens as shown in 
 
 
 
-![]("/js/FileExplorer/File-management-options_images/File-management-options_img1.png")
+![](/js/FileExplorer/File-management-options_images/File-management-options_img1.png)
 
 ## Download option
 
@@ -23,7 +23,7 @@ The Download option is used to download the required files from the online file 
 
 
 
-![]("/js/FileExplorer/File-management-options_images/File-management-options_img2.png")
+![](/js/FileExplorer/File-management-options_images/File-management-options_img2.png)
 
 ## Upload option
 
@@ -31,7 +31,7 @@ You can upload files to the required place using the built-in Upload box control
 
 
 
-![]("/js/FileExplorer/File-management-options_images/File-management-options_img3.png")
+![](/js/FileExplorer/File-management-options_images/File-management-options_img3.png)
 
 ## Search support
 
@@ -39,7 +39,7 @@ To easily search the files in file system, you are provided with the Search bar 
 
 
 
-![]("/js/FileExplorer/File-management-options_images/File-management-options_img4.png")
+![](/js/FileExplorer/File-management-options_images/File-management-options_img4.png)
 
 ## Sorting support
 
@@ -47,5 +47,5 @@ In the Details view, you can sort the files using required fields. For example, 
 
 
 
-![]("/js/FileExplorer/File-management-options_images/File-management-options_img5.png")
+![](/js/FileExplorer/File-management-options_images/File-management-options_img5.png)
 

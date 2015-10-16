@@ -215,5 +215,5 @@ The default type is **button**.
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Ribbon/Controls-Support_images/Controls-Support_img1.png")
+![](/js/Ribbon/Controls-Support_images/Controls-Support_img1.png)
 

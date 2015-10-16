@@ -36,7 +36,7 @@ N>  This feature is applicable only for OLAP datasource.
 
 The page size for categorical and series axes are set in the **OlapReport**. **Pager** is loaded with current page and total pages of **PivotGrid** is automatically displayed as illustrated in the following screenshot. The icons to move pages to next, last, previous and first are added.  Also you can directly navigate to the desired page by entering the appropriate numeric value into the text box.
 
-![]("/js/PivotGrid/Paging_images/Paging_img1.png") 
+![](/js/PivotGrid/Paging_images/Paging_img1.png) 
 
 ##Virtual Paging
 
@@ -50,9 +50,15 @@ $("#PivotGrid1").ejPivotGrid({
 
 {% endhighlight %}
 
-![]("/js/PivotGrid/Paging_images/Paging_img2.png" Caption="PivotGrid with Virtual Scroller")
+![](/js/PivotGrid/Paging_images/Paging_img2.png)
 
-![]("/js/PivotGrid/Paging_images/Paging_img3.png" Caption="Page indication while scrolling")
+PivotGrid with Virtual Scroller
+{:.caption}
+
+![](/js/PivotGrid/Paging_images/Paging_img3.png)
+
+Page indication while scrolling
+{:.caption}
 
 ##OLAP Report for Paging and Virtual Scrolling
 

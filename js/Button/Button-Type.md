@@ -89,5 +89,5 @@ In the HTML page, add the following button elements to configure Button widget.
 
 Execute the above code to render the following output.
 
-![]("/js/Button/Button-Type_images/Button-Type_img1.png") 
+![](/js/Button/Button-Type_images/Button-Type_img1.png) 
 

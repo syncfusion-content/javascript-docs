@@ -34,7 +34,7 @@ You can enable this feature by setting the `layerType` property value as "OSM".
 
 The `urlTemplate` property determines the format of tile map. You can specify the template for the tile layer. 
 
-![]("/js/Maps/Map-Providers_images/Map-Providers_img1.png")
+![](/js/Maps/Map-Providers_images/Map-Providers_img1.png)
 
 ## Bing Map
 
@@ -61,5 +61,5 @@ You can enable this feature by defining the `layerType` as “bing”.
 
 The bing Map key is provided as input to this `key` property. The Bing Map key can be obtained from [http://www.microsoft.com/maps/create-a-bing-maps-key.aspx](http://www.microsoft.com/maps/create-a-bing-maps-key.aspx).
 
-![]("/js/Maps/Map-Providers_images/Map-Providers_img2.png")
+![](/js/Maps/Map-Providers_images/Map-Providers_img2.png)
 

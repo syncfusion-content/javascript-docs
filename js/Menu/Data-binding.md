@@ -141,7 +141,7 @@ Add the following code in your **HTML** page.
 
 The following screenshot displays the output of the above code.
 
-![]("/js/Menu/Data-binding_images/Data-binding_img1.png") 
+![](/js/Menu/Data-binding_images/Data-binding_img1.png) 
 
 
 ##Remote data
@@ -195,4 +195,4 @@ Add the following code in your **HTML** page.
 
 The following screenshot displays the output of the above code. 
 
-![]("/js/Menu/Data-binding_images/Data-binding_img2.png") 
+![](/js/Menu/Data-binding_images/Data-binding_img2.png) 

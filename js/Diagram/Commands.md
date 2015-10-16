@@ -59,9 +59,9 @@ diagram.align("left");
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img1.png")
+![](/js/Diagram/Commands_images/Commands_img1.png)
 
-![]("/js/Diagram/Commands_images/Commands_img2.png")
+![](/js/Diagram/Commands_images/Commands_img2.png)
 
 ## Space
 
@@ -81,9 +81,9 @@ diagram.spaceDown();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img3.png")
+![](/js/Diagram/Commands_images/Commands_img3.png)
 
-![]("/js/Diagram/Commands_images/Commands_img4.png")
+![](/js/Diagram/Commands_images/Commands_img4.png)
 
 ## Sizing
 
@@ -106,7 +106,7 @@ diagram.sameWidth();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img5.png")
+![](/js/Diagram/Commands_images/Commands_img5.png)
 
 
 ## Clipboard 
@@ -161,7 +161,7 @@ diagram.bringToFront();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img7.png")
+![](/js/Diagram/Commands_images/Commands_img7.png)
 
 ### sendToBack Command
 
@@ -174,7 +174,7 @@ diagram.sendToBack();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img8.png")
+![](/js/Diagram/Commands_images/Commands_img8.png)
 
 ### moveForward Command
 
@@ -187,7 +187,7 @@ diagram.moveForward();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img9.png")
+![](/js/Diagram/Commands_images/Commands_img9.png)
 
 ### sendBackward Command
 
@@ -200,7 +200,7 @@ diagram.sendBackward();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img10.png")
+![](/js/Diagram/Commands_images/Commands_img10.png)
 
 ## Zoom
 
@@ -268,7 +268,7 @@ diagram.nudge("up", 5);
 
 The corresponding arrow keys are used to move the selected elements towards up, down, left, or right direction by 1 pixel.
 
-![]("/js/Diagram/Commands_images/Commands_img11.png")
+![](/js/Diagram/Commands_images/Commands_img11.png)
 
 Nudge commands are particularly useful for accurate placement of elements.
 

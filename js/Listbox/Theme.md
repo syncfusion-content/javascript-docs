@@ -28,9 +28,15 @@ By default, there are 12 themes support available for **ListBox** control namely
 
 The following screenshot illustrates the **ListBox** with Flat-lime and Flat-Saffron built-in themes.
 
-![]("/js/ListBox/Theme_images/Theme_img1.png" Caption="ListBox with Flat-lime Theme")
+![](/js/ListBox/Theme_images/Theme_img1.png)
 
-![]("/js/ListBox/Theme_images/Theme_img2.png" Caption="ListBox with Flat-Saffron Theme")
+ListBox with Flat-lime Theme
+{:.caption}
+
+![](/js/ListBox/Theme_images/Theme_img2.png)
+
+ListBox with Flat-Saffron Theme
+{:.caption}
 
 ## Custom class with ListBox
 
@@ -116,5 +122,5 @@ Configure the **CSS** styles to apply on **ListBox**.
 
 Output of the above steps.
 
-![]("/js/ListBox/Theme_images/Theme_img3.png")
+![](/js/ListBox/Theme_images/Theme_img3.png)
 

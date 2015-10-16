@@ -90,7 +90,7 @@ Font option is also available on  Customlabels. The basic three properties of fo
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Custom-labels_images/Custom-labels_img1.png" Caption="")
+![](/js/CircularGauge/Custom-labels_images/Custom-labels_img1.png" Caption=")
 
 ## Multiple Custom Labels
 
@@ -151,7 +151,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Custom-labels_images/Custom-labels_img2.png" Caption="")
+![](/js/CircularGauge/Custom-labels_images/Custom-labels_img2.png" Caption=")
 
 ## Outer Custom Label
 
@@ -220,5 +220,5 @@ When a custom label is to be displayed as an **Outer Custom Label**, set the API
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Custom-labels_images/Custom-labels_img3.png" Caption="")
+![](/js/CircularGauge/Custom-labels_images/Custom-labels_img3.png" Caption=")
 

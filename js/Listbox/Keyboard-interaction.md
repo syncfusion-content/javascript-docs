@@ -93,7 +93,7 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
 
 Run the sample, press Alt + J to focus in the **ListBox** widget that enables it and you can navigate using arrow keys.
 
-![]("/js/ListBox/Keyboard-interaction_images/Keyboard-interaction_img1.png") 
+![](/js/ListBox/Keyboard-interaction_images/Keyboard-interaction_img1.png) 
 
 
 

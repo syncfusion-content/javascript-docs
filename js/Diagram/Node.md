@@ -11,7 +11,7 @@ documentation: ug
 
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
-![]("/js/Diagram/Node_images/Node_img1.png")
+![](/js/Diagram/Node_images/Node_img1.png)
 
 ## Create Node
 
@@ -52,7 +52,7 @@ $("#diagram").ejDiagram({
 });
 {% endhighlight %}
 
-![]("/js/Diagram/Node_images/Node_img2.png")
+![](/js/Diagram/Node_images/Node_img2.png)
 
 ### Add node at runtime
 
@@ -79,7 +79,7 @@ diagram.add(node);
 
 {% endhighlight %}
 
-![]("/js/Diagram/Node_images/Node_img3.png")
+![](/js/Diagram/Node_images/Node_img3.png)
 
 ### Add node from palette
 
@@ -151,7 +151,7 @@ var nodes = [
 ];
 {% endhighlight %}
 
-![]("/js/Diagram/Node_images/Node_img4.png")
+![](/js/Diagram/Node_images/Node_img4.png)
 
 ## Types
 
@@ -184,7 +184,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Node_images/Node_img5.png")
+![](/js/Diagram/Node_images/Node_img5.png)
 
 ### Gradient
 
@@ -249,7 +249,7 @@ var nodes = [{
  }];
 {% endhighlight %}
  
-![]("/js/Diagram/Node_images/Node_img6.png")
+![](/js/Diagram/Node_images/Node_img6.png)
  
 ## Shadow
 
@@ -275,7 +275,7 @@ var nodes = [
     }
 ];
 
-![]("/js/Diagram/Node_images/Node_img7.png")
+![](/js/Diagram/Node_images/Node_img7.png)
 
 The following code illustrates how to disable shadow effect at runtime.
 
@@ -310,7 +310,7 @@ var nodes = [
 ];
 {% endhighlight %}
 
-![]("/js/Diagram/Node_images/Node_img8.png")
+![](/js/Diagram/Node_images/Node_img8.png)
 
 ## Interaction
 

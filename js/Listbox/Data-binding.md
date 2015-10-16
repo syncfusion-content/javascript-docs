@@ -120,7 +120,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 Output of the above steps
 
-![]("/js/ListBox/Data-binding_images/Data-binding_img1.png") 
+![](/js/ListBox/Data-binding_images/Data-binding_img1.png) 
 
 
 ## Remote data
@@ -165,7 +165,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
  Output of the above steps.
 
-![]("/js/ListBox/Data-binding_images/Data-binding_img2.png") 
+![](/js/ListBox/Data-binding_images/Data-binding_img2.png) 
 
 
 ## Angular binding
@@ -263,7 +263,7 @@ In the HTML page, add a &lt;ul&gt; element to configure ListBox widget.
 
 Output of the above steps.
 
-![]("/js/ListBox/Data-binding_images/Data-binding_img3.png") 
+![](/js/ListBox/Data-binding_images/Data-binding_img3.png) 
 
 
 ## Knockout binding
@@ -371,6 +371,6 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 Output of the above steps.
 
-![]("/js/ListBox/Data-binding_images/Data-binding_img4.png") 
+![](/js/ListBox/Data-binding_images/Data-binding_img4.png) 
 
 

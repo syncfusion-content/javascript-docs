@@ -42,7 +42,7 @@ Tick collection is directly added to the scale object. Refer the following code 
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Ticks_images/Ticks_img1.png" Caption="")
+![](/js/CircularGauge/Ticks_images/Ticks_img1.png" Caption=")
 
 ## Tick Customization
 
@@ -89,5 +89,5 @@ Major type ticks are for major interval values and minor type ticks are for mino
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Ticks_images/Ticks_img2.png" Caption="")
+![](/js/CircularGauge/Ticks_images/Ticks_img2.png" Caption=")
 

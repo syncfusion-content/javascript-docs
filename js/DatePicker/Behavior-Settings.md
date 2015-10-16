@@ -41,7 +41,7 @@ The following screenshot displays the output for the above code example.
 
 
 
-![]("/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img1.png")
+![](/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img1.png)
 
 
 
@@ -242,7 +242,7 @@ N> Images for this example are available in ‘installed location /Content/image
 
 The following screenshot displays the output for the above code example.
 
-![]("/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img2.png")
+![](/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img2.png)
 
 ## Define start day of the week
 
@@ -272,7 +272,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 The following screenshot displays the output for the above code example.
 
-![]("/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img5.png")
+![](/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img5.png)
 
 ## Step months
 
@@ -333,7 +333,7 @@ The following screenshot displays the output for the above code example.
 
 
 
-![]("/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img6.png")
+![](/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img6.png)
 
 ## Watermark Text
 
@@ -367,5 +367,5 @@ The following screenshot displays the output for the above code example.
 
 
 
-![]("/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img7.png")
+![](/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img7.png)
 

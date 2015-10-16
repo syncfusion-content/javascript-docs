@@ -81,9 +81,15 @@ The output of **Knockout binding** in **PercentageTextBox** .
 
 
 
-![]("/js/PercentageTextBox/Knockout-Support_images/Knockout-Support_img1.png" Caption="PercentageTextBox at initial load")
+![](/js/PercentageTextBox/Knockout-Support_images/Knockout-Support_img1.png)
+
+PercentageTextBox at initial load
+{:.caption}
 
 
 
-![]("/js/PercentageTextBox/Knockout-Support_images/Knockout-Support_img2.png" Caption="PercentageTextBox with knockout binding")
+![](/js/PercentageTextBox/Knockout-Support_images/Knockout-Support_img2.png)
+
+PercentageTextBox with knockout binding
+{:.caption}
 

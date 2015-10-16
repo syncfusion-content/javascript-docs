@@ -16,7 +16,7 @@ documentation: ug
 * **Digital gauge** is used in advertisement, decorative purpose, displaying share details in share market, game score boards, token systems, etc.
 
 
-![]("/js/DigitalGauge/Getting-Started_images/Getting-Started_img1.png" Caption="")
+![](/js/DigitalGauge/Getting-Started_images/Getting-Started_img1.png" Caption=")
 
 ## Create a Digital Gauge
 
@@ -76,7 +76,7 @@ Once the container is added, create the **ejDigitalGauge** widget as follows,
 
 On executing the above code, sample renders a default **Digital Gauge** with default values as follows.
 
-![]("/js/DigitalGauge/Getting-Started_images/Getting-Started_img2.png" Caption="")
+![](/js/DigitalGauge/Getting-Started_images/Getting-Started_img2.png" Caption=")
 
 ## Set Height and Width values
 
@@ -98,7 +98,7 @@ Basic attributes of each canvas elements are height and width. You can set the h
 
 On executing the above code, sample renders a default **Digital Gauge** with the specified height and width values.
 
-![]("/js/DigitalGauge/Getting-Started_images/Getting-Started_img3.png" Caption="")
+![](/js/DigitalGauge/Getting-Started_images/Getting-Started_img3.png" Caption=")
 
 ## Set Items Property
 
@@ -141,7 +141,7 @@ $(function () {
 
 On executing the above code, sample renders a **Digital Gauge** with default values as follows.
 
-![]("/js/DigitalGauge/Getting-Started_images/Getting-Started_img4.png" Caption="")
+![](/js/DigitalGauge/Getting-Started_images/Getting-Started_img4.png" Caption=")
 
 ## Add Background Image
 
@@ -174,7 +174,7 @@ You can add a **&lt;div&gt;** element to set the background for the **Digital Ga
 
 On executing the above code, sample renders a default **Digital Gauge** as follows.           
 
-![]("/js/DigitalGauge/Getting-Started_images/Getting-Started_img5.png" Caption="")
+![](/js/DigitalGauge/Getting-Started_images/Getting-Started_img5.png" Caption=")
 
 ## Add Location
 
@@ -201,7 +201,7 @@ $(function () {
 On executing the above code, sample renders a default **Digital Gauge** as follows.
 
 
-![]("/js/DigitalGauge/Getting-Started_images/Getting-Started_img6.png" Caption="")
+![](/js/DigitalGauge/Getting-Started_images/Getting-Started_img6.png" Caption=")
 
 ## Add Items collection
 
@@ -264,5 +264,5 @@ You can add **Items collection** to display the temperature value as used in the
 
 The following screenshot displays a **Digital Gauge** with all the customizations discussed earlier.
 
-![]("/js/DigitalGauge/Getting-Started_images/Getting-Started_img7.png" Caption="")
+![](/js/DigitalGauge/Getting-Started_images/Getting-Started_img7.png" Caption=")
 

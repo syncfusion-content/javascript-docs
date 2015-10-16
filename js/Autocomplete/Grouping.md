@@ -66,5 +66,5 @@ The following steps explain you how to configure **Grouping** for an AutoComplet
 
 The following image is the output for AutoComplete control that provides Grouping.
 
-![]("/js/Autocomplete/Grouping_images/Grouping_img1.png")
+![](/js/Autocomplete/Grouping_images/Grouping_img1.png)
 

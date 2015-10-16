@@ -35,7 +35,10 @@ For rendering a 3D Column Chart, specify the series [type](../api/ejchart#member
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img1.png" Caption="3D Column Chart") 
+![](/js/Chart/3D-Chart_images/3D-Chart_img1.png)
+
+3D Column Chart
+{:.caption} 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/column) here to view the 3D Column Chart online demo sample.
 
@@ -63,7 +66,10 @@ You can create a 3D Bar Chart by setting the series [type](../api/ejchart#member
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img2.png" Caption="3D Bar Chart") 
+![](/js/Chart/3D-Chart_images/3D-Chart_img2.png)
+
+3D Bar Chart
+{:.caption} 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/bar) here to view the 3D Bar Chart online demo sample.
 
@@ -95,7 +101,10 @@ Stacking Column 3DChart is rendered by specifying the series [type](../api/ejcha
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img3.png" Caption="3D Stacked Column Chart")
+![](/js/Chart/3D-Chart_images/3D-Chart_img3.png)
+
+3D Stacked Column Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/stackedcolumn) here to view the Stacked Column 3DChart online demo sample.
 
@@ -127,7 +136,10 @@ Stacking Column 3DChart is rendered by specifying the series [type](../api/ejcha
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img4.png" Caption="3D 100% Stacked Column Chart")
+![](/js/Chart/3D-Chart_images/3D-Chart_img4.png)
+
+3D 100% Stacked Column Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/100%stackedcolumn) here to view the 100% Stacked Column 3DChart online demo sample.
 
@@ -159,7 +171,10 @@ To create Stacking Bar 3DChart, set the series [type](../api/ejchart#members:ser
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img5.png" Caption="3D Stacked Bar Chart")
+![](/js/Chart/3D-Chart_images/3D-Chart_img5.png)
+
+3D Stacked Bar Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/stackedbar) here to view the Stacked Bar 3DChart online demo sample.
 
@@ -191,7 +206,10 @@ You can create 100% Stacking Bar 3DChart by setting the series [type](../api/ejc
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img6.png" Caption="3D StackingBar100 Chart")
+![](/js/Chart/3D-Chart_images/3D-Chart_img6.png)
+
+3D StackingBar100 Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/100%stackedbar) here to view the 100% Stacking Bar 3DChart online demo sample.
 
@@ -219,7 +237,10 @@ To render the Pie Chart in 3D view, enable the **enbel3D** option in the chart a
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img7.png" Caption="3D Pie Chart")
+![](/js/Chart/3D-Chart_images/3D-Chart_img7.png)
+
+3D Pie Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/pie) here to view the Pie 3DChart online demo sample.
 
@@ -247,7 +268,10 @@ To render the Doughnut Chart in 3D view, enable the **enbel3D** option in the ch
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img8.png" Caption="3D Doughnut Chart")
+![](/js/Chart/3D-Chart_images/3D-Chart_img8.png)
+
+3D Doughnut Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/doughnut) here to view the Doughnut 3DChart online demo sample.
 
@@ -271,7 +295,10 @@ To render the EjChart in 3D view, set the [enable3D](../api/ejchart#members:enab
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img9.png" Caption="3D Chart")
+![](/js/Chart/3D-Chart_images/3D-Chart_img9.png)
+
+3D Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/column) here to view the 3DChart online demo sample.
 
@@ -293,7 +320,10 @@ To render the EjChart in 3D view, set the [enable3D](../api/ejchart#members:enab
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img10.png" Caption="3D Chart with SideBySideSeriesPlacement")
+![](/js/Chart/3D-Chart_images/3D-Chart_img10.png)
+
+3D Chart with SideBySideSeriesPlacement
+{:.caption}
 
 
 ### Setting Axis Wall Size
@@ -313,7 +343,7 @@ In 3DChart, Cartesian axes lines are represented as walls and it defines the wid
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img11.png")
+![](/js/Chart/3D-Chart_images/3D-Chart_img11.png)
 
 Customize 3D Chart axis wall size
 {:.caption}
@@ -336,7 +366,7 @@ By using the [depth](../api/ejchart#members:depth) property, you can view the 3D
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img12.png")
+![](/js/Chart/3D-Chart_images/3D-Chart_img12.png)
 
 Customize 3D Chart depth
 {:.caption}
@@ -367,7 +397,10 @@ To spin the 3D Chart on mouse dragging, enable [enableRotation](../api/ejchart#m
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img13.png" Caption="Rotating and Tilting 3D Chart")
+![](/js/Chart/3D-Chart_images/3D-Chart_img13.png)
+
+Rotating and Tilting 3D Chart
+{:.caption}
  
 
 ### PerspectiveAngle	
@@ -388,5 +421,8 @@ The [perspectiveAngle](../api/ejchart#members:perspectiveangle) specifies the ap
 {% endhighlight %}
 
 
-![]("/js/Chart/3D-Chart_images/3D-Chart_img14.png" Caption="3D Chart PerspectiveAngle")
+![](/js/Chart/3D-Chart_images/3D-Chart_img14.png)
+
+3D Chart PerspectiveAngle
+{:.caption}
 

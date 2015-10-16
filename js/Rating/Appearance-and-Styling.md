@@ -45,7 +45,7 @@ The following code example is used to render the **Rating** control without **to
 
 The following screenshot illustrates **Rating** without **Tooltip**.
 
-![]("/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img1.png") 
+![](/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 ## Adjusting Rating Size
 
@@ -129,7 +129,7 @@ $("#rating").ejRating({ value: 4, shapeWidth: 29, shapeHeight: 29 });
 
 The following screenshot illustrates **Rating** with customized **shapeWidth** and **shapeHeight**.
 
-![]("/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img2.png")
+![](/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ## Theme
 
@@ -201,5 +201,5 @@ $("#rating").ejRating({ cssClass: "custom" });
 
 The following screenshot illustrates the **Rating** with customized style.
 
-![]("/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img3.png")
+![](/js/Rating/Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 

@@ -135,5 +135,5 @@ Configure the styles as follows.
 
 Output of the above steps.
 
-![]("/js/ListBox/Cascading-Support_images/Cascading-Support_img1.png") 
+![](/js/ListBox/Cascading-Support_images/Cascading-Support_img1.png) 
 

@@ -96,7 +96,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png")
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img1.png)
 
 N> You can ignore a particular Node from layout arrangement by setting its **excludeFromLayout** property as true.
 
@@ -269,7 +269,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png")
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img2.png)
 
 ## Organizational Chart
 
@@ -419,7 +419,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png")
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img3.png)
 
 Organizational chart layout starts parsing from root and iterate through all its child elements. ‘getLayoutInfo’ method provides necessary information of a node’s children and the way to arrange (direction, orientation, offsets, etc.) them. You can customize the arrangements by overriding this function as explained.
 
@@ -670,7 +670,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png")
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img10.png)
 
 ### Assistant
 
@@ -757,7 +757,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img11.png")
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img11.png)
 
 ## Customize Layout
 
@@ -803,7 +803,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img12.png")
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img12.png)
 
 ### Fixed Node
 
@@ -862,7 +862,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Automatic-Layout_images/Automatic-Layout_img13.png")
+![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img13.png)
 
 ### Expand and collapse
 

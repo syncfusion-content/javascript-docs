@@ -44,7 +44,7 @@ var nodes = [{
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img59.png")
+![](/js/Diagram/Shapes_images/Shapes_img59.png)
 
 ## Image
 Diagram allows to add images as image nodes. For image nodes, the `type` should be set as "image". In addition, the `source` property of node enables you to set the image source. The following code illustrates how an **Image** node is created.
@@ -68,7 +68,7 @@ var nodes = [
 ];
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img60.png")
+![](/js/Diagram/Shapes_images/Shapes_img60.png)
 
 ## HTML
 
@@ -106,7 +106,7 @@ var nodes = [
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img61.png")
+![](/js/Diagram/Shapes_images/Shapes_img61.png)
 
 N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design that while exporting, Diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation. 
 
@@ -144,7 +144,7 @@ var nodes = [
 ];
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img62.png")
+![](/js/Diagram/Shapes_images/Shapes_img62.png)
 
 N> Like HTML node, Native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template. 
 
@@ -183,7 +183,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img1.png")
+![](/js/Diagram/Shapes_images/Shapes_img1.png)
 
 N> By default, the `type` property of node is set as "basic".
 N> When the `shape` is not set for a basic shape, it is considered a "rectangle".
@@ -212,11 +212,11 @@ var nodes = [
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img58.png")
+![](/js/Diagram/Shapes_images/Shapes_img58.png)
 
 The list of basic shapes are as follows.
 
-![]("/js/Diagram/Shapes_images/Shapes_img2.png")
+![](/js/Diagram/Shapes_images/Shapes_img2.png)
 
 ## Flow Shapes
 
@@ -247,11 +247,11 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img3.png")
+![](/js/Diagram/Shapes_images/Shapes_img3.png)
 
 The list of flow shapes are as follows.
 
-![]("/js/Diagram/Shapes_images/Shapes_img4.png")
+![](/js/Diagram/Shapes_images/Shapes_img4.png)
 
 ## BPMN Shapes
 
@@ -287,7 +287,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img5.png")
+![](/js/Diagram/Shapes_images/Shapes_img5.png)
 
 N> The default value for the property `shape` is "event".
 
@@ -365,7 +365,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img12.png")
+![](/js/Diagram/Shapes_images/Shapes_img12.png)
 
 <table>
 <tr>
@@ -467,7 +467,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img27.png")
+![](/js/Diagram/Shapes_images/Shapes_img27.png)
 
 N> By default, the `gateway` will be set as "none".
 
@@ -536,7 +536,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img33.png")
+![](/js/Diagram/Shapes_images/Shapes_img33.png)
 
 The different activities of BPMN process are listed as follows.
 
@@ -574,7 +574,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img34.png")
+![](/js/Diagram/Shapes_images/Shapes_img34.png)
 
 The various types of BPMN tasks are tabulated as follows.
 
@@ -664,7 +664,7 @@ diagram.add(node);
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img43.png")
+![](/js/Diagram/Shapes_images/Shapes_img43.png)
 
 The following table contains various types of BPMN loops.
 
@@ -746,7 +746,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img50.png")
+![](/js/Diagram/Shapes_images/Shapes_img50.png)
 
 #### Call
 
@@ -781,7 +781,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img51.png")
+![](/js/Diagram/Shapes_images/Shapes_img51.png)
 
 #### Ad-Hoc
 
@@ -815,7 +815,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img52.png")
+![](/js/Diagram/Shapes_images/Shapes_img52.png)
 
 #### Boundary
 
@@ -901,7 +901,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img56.png")
+![](/js/Diagram/Shapes_images/Shapes_img56.png)
 
 ### Datasource
 
@@ -932,4 +932,4 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Shapes_images/Shapes_img57.png")
+![](/js/Diagram/Shapes_images/Shapes_img57.png)

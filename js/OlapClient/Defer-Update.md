@@ -27,9 +27,15 @@ $(function()
 
 {% endhighlight %}
 
-![]("/js/OlapClient/Defer-Update_images/Defer-Update_images1.png" Caption="Before Defer Update")
+![](/js/OlapClient/Defer-Update_images/Defer-Update_images1.png)
 
-![]("/js/OlapClient/Defer-Update_images/Defer-Update_images2.png" Caption="After Defer Update")
+Before Defer Update
+{:.caption}
+
+![](/js/OlapClient/Defer-Update_images/Defer-Update_images2.png)
+
+After Defer Update
+{:.caption}
 
 
 

@@ -40,7 +40,10 @@ $("#chartcontainer").ejChart({
 
 
 
-![]("/js/Chart/Axis_images/axis_img1.png" Caption="Chart with category axis")
+![](/js/Chart/Axis_images/axis_img1.png)
+
+Chart with category axis
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/column) here to view our online demo sample that uses Category axis.
 
@@ -65,7 +68,10 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img2.png" Caption="Category axis labels on ticks")
+![](/js/Chart/Axis_images/axis_img2.png)
+
+Category axis labels on ticks
+{:.caption}
 
 
 ### Display labels after a fixed interval
@@ -88,7 +94,10 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img3.png" Caption="Change category axis labels fixed interval")
+![](/js/Chart/Axis_images/axis_img3.png)
+
+Change category axis labels fixed interval
+{:.caption}
 
 
 ## Numeric Axis 
@@ -110,7 +119,10 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img4.png" Caption="Numeric axis")
+![](/js/Chart/Axis_images/axis_img4.png)
+
+Numeric axis
+{:.caption}
 
 
 ### Customize numeric range
@@ -135,7 +147,10 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img5.png" Caption="Customizing numeric range")
+![](/js/Chart/Axis_images/axis_img5.png)
+
+Customizing numeric range
+{:.caption}
 
 
 #### Customizing numeric interval
@@ -160,7 +175,10 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img6.png" Caption="Customizing numeric interval")
+![](/js/Chart/Axis_images/axis_img6.png)
+
+Customizing numeric interval
+{:.caption}
 
 ### Apply padding to the range
 
@@ -193,7 +211,10 @@ When the value of the [rangePadding](../api/ejchart#members:primaryxaxis-rangepa
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img7.png" Caption="Chart’s Y-axis with RangePadding set to None")
+![](/js/Chart/Axis_images/axis_img7.png)
+
+Chart’s Y-axis with RangePadding set to None
+{:.caption}
 
 #### Round
 
@@ -219,12 +240,18 @@ When the value of [rangePadding](../api/ejchart#members:primaryxaxis-rangepaddin
 
 **Chart before rounding axis range**
 
-![]("/js/Chart/Axis_images/axis_img8.png" Caption="Chart before rounding axis range") 
+![](/js/Chart/Axis_images/axis_img8.png)
+
+Chart before rounding axis range
+{:.caption} 
 
 
 **Chart after rounding axis range**
 
-![]("/js/Chart/Axis_images/axis_img9.png" Caption="Chart after rounding axis range") 
+![](/js/Chart/Axis_images/axis_img9.png)
+
+Chart after rounding axis range
+{:.caption} 
 
 
 **Additional**
@@ -249,7 +276,10 @@ When the value of the [rangePadding](../api/ejchart#members:primaryxaxis-rangepa
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img10.png" Caption="Chart’s Y-axis with RangePadding set to Additional")
+![](/js/Chart/Axis_images/axis_img10.png)
+
+Chart’s Y-axis with RangePadding set to Additional
+{:.caption}
 
 
 **Normal**
@@ -274,7 +304,10 @@ When the value of the [rangePadding](../api/ejchart#members:primaryyaxis-rangepa
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img11.png" Caption="Chart’s Y-axis with RangePadding set to Normal")
+![](/js/Chart/Axis_images/axis_img11.png)
+
+Chart’s Y-axis with RangePadding set to Normal
+{:.caption}
 
 ## DateTime Axis
 
@@ -297,7 +330,10 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img12.png" Caption="DateTime axis")
+![](/js/Chart/Axis_images/axis_img12.png)
+
+DateTime axis
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/datetimeaxis) here to view our online demo sample for date time axis.
 
@@ -326,7 +362,10 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img13.png" Caption="DateTime axis range")
+![](/js/Chart/Axis_images/axis_img13.png)
+
+DateTime axis range
+{:.caption}
 
 ### Date time intervals
 
@@ -362,7 +401,10 @@ Essential Chart supports the following types of interval for date time axis.
 {% endhighlight %}
 
 
-![]("/js/Chart/Axis_images/axis_img14.png" Caption="DateTime Axis Interval")
+![](/js/Chart/Axis_images/axis_img14.png)
+
+DateTime Axis Interval
+{:.caption}
 
 
 ### Apply padding to the range
@@ -391,7 +433,10 @@ When the value of the [rangePadding](../api/ejchart#members:primaryxaxis-rangepa
 
 {% endhighlight %} 
 
-![]("/js/Chart/Axis_images/axis_img15.png" Caption="Chart’s X-axis with RangePadding set to None")
+![](/js/Chart/Axis_images/axis_img15.png)
+
+Chart’s X-axis with RangePadding set to None
+{:.caption}
 
 **Round**
 
@@ -413,11 +458,17 @@ When the value of the [rangePadding](../api/ejchart#members:primaryxaxis-rangepa
 
 **Chart before rounding axis range**
 
-![]("/js/Chart/Axis_images/axis_img16.png" Caption="Chart before rounding axis range")
+![](/js/Chart/Axis_images/axis_img16.png)
+
+Chart before rounding axis range
+{:.caption}
 
 **Chart after rounding axis range**
 
-![]("/js/Chart/Axis_images/axis_img17.png" Caption="Chart after rounding axis range")
+![](/js/Chart/Axis_images/axis_img17.png)
+
+Chart after rounding axis range
+{:.caption}
 
 **Additional** 
 
@@ -437,7 +488,10 @@ When the value of the [rangePadding](../api/ejchart#members:primaryxaxis-rangepa
 
 {% endhighlight %} 
 
-![]("/js/Chart/Axis_images/axis_img18.png" Caption="Chart’s x-axis with RangePadding set to Additional")
+![](/js/Chart/Axis_images/axis_img18.png)
+
+Chart’s x-axis with RangePadding set to Additional
+{:.caption}
 
 ## Logarithmic Axis
 
@@ -460,7 +514,10 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing whe
 {% endhighlight %}
 
 
-![]("/js/Chart/Axis_images/axis_img19.png" Caption="Chart with Logarthimic Axis")
+![](/js/Chart/Axis_images/axis_img19.png)
+
+Chart with Logarthimic Axis
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/logaxis) here to view our online demo sample link for logarithmic axis.
 
@@ -483,7 +540,10 @@ Logarithmic range can be customized by using the [range](../api/ejchart#members:
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img20.png" Caption="Change logarthimic axis range")
+![](/js/Chart/Axis_images/axis_img20.png)
+
+Change logarthimic axis range
+{:.caption}
 
 ### Logarithmic base
 
@@ -504,7 +564,10 @@ Logarithmic base can be customized by using the [logBase](../api/ejchart#members
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img21.png" Caption="Logarthimic axis logbase")
+![](/js/Chart/Axis_images/axis_img21.png)
+
+Logarthimic axis logbase
+{:.caption}
 
 
 ### Logarithmic interval
@@ -526,7 +589,7 @@ Logarithmic axis interval can be customized by using the [interval](../api/ejcha
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img22.png")
+![](/js/Chart/Axis_images/axis_img22.png)
 
 Logarthimic axis interval
 {:.caption}       
@@ -553,7 +616,10 @@ Numeric labels can be formatted by using the [labelFormat](../api/ejchart#member
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img23.png" Caption="Formatting numeric labels")
+![](/js/Chart/Axis_images/axis_img23.png)
+
+Formatting numeric labels
+{:.caption}
 
 The following table describes the result of applying some commonly used label formats on numeric values. 
  
@@ -633,7 +699,10 @@ Date time labels can be formatted by using the [labelFormat](../api/ejchart#memb
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img24.png" Caption="Formatting datetime labels")
+![](/js/Chart/Axis_images/axis_img24.png)
+
+Formatting datetime labels
+{:.caption}
 
 
 The following table describes the result of applying some common date time formats to the labelFormat property
@@ -700,7 +769,10 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img25.png" Caption="Custom label format")
+![](/js/Chart/Axis_images/axis_img25.png)
+
+Custom label format
+{:.caption}
 
 ## Common axis features
 
@@ -726,7 +798,10 @@ Axis visibility can be controlled by using the [visible](../api/ejchart#members:
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img26.png" Caption="Chart with hidden Y-axis")
+![](/js/Chart/Axis_images/axis_img26.png)
+
+Chart with hidden Y-axis
+{:.caption}
 
 ### Axis title
 
@@ -758,7 +833,10 @@ The [title](../api/ejchart#members:primaryxaxis-title) property in the axis prov
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img27.png" Caption="Axis Title")
+![](/js/Chart/Axis_images/axis_img27.png)
+
+Axis Title
+{:.caption}
 
 
 ### Label customization
@@ -786,7 +864,10 @@ The [font](../api/ejchart#members:primaryxaxis-font) property of the axis provid
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img28.png" Caption="Axis label customization")
+![](/js/Chart/Axis_images/axis_img28.png)
+
+Axis label customization
+{:.caption}
 
 
 ### Label and tick positioning
@@ -810,7 +891,10 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img29.png" Caption="Label and tick positioning")
+![](/js/Chart/Axis_images/axis_img29.png)
+
+Label and tick positioning
+{:.caption}
 
 
 ### Edge labels placement
@@ -834,11 +918,17 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
 **Chart before setting edge label placement to X-axis**
 
-![]("/js/Chart/Axis_images/axis_img30.png" Caption="Chart before setting edge label placement to X-axis")
+![](/js/Chart/Axis_images/axis_img30.png)
+
+Chart before setting edge label placement to X-axis
+{:.caption}
 
 **Chart after setting edge label placement to X-axis**
 
-![]("/js/Chart/Axis_images/axis_img31.png" Caption="Chart after setting edge label placement to X-axis")
+![](/js/Chart/Axis_images/axis_img31.png)
+
+Chart after setting edge label placement to X-axis
+{:.caption}
 
 ### Grid lines customization
 
@@ -868,7 +958,10 @@ The [majorGridLines](../api/ejchart#members:primaryxaxis-majorgridlines) and [mi
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img32.png" Caption="Major gridlines customization")
+![](/js/Chart/Axis_images/axis_img32.png)
+
+Major gridlines customization
+{:.caption}
 
 
 ### Tick lines customization
@@ -902,7 +995,10 @@ The [majorTickLines](../api/ejchart#members:primaryxaxis-majorticklines) and [mi
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img33.png" Caption="Major gridlines customization")
+![](/js/Chart/Axis_images/axis_img33.png)
+
+Major gridlines customization
+{:.caption}
 
   
 ### Inversing axis
@@ -927,11 +1023,17 @@ Axis can be inversed by using the [isInversed](../api/ejchart#members:primaryxax
 
 **Chart before inversing the axes**
 
-![]("/js/Chart/Axis_images/axis_img34.png" Caption="Chart before inversing the axes")
+![](/js/Chart/Axis_images/axis_img34.png)
+
+Chart before inversing the axes
+{:.caption}
 
 **Chart after inversing the axes**
 
-![]("/js/Chart/Axis_images/axis_img35.png" Caption="Chart after inversing the axes")
+![](/js/Chart/Axis_images/axis_img35.png)
+
+Chart after inversing the axes
+{:.caption}
    
 
 ### Place axes at the opposite side
@@ -956,11 +1058,17 @@ The [opposedPosition](../api/ejchart#members:primaryxaxis-opposedposition) prope
 
 **Chart with X and Y axes at normal position**
 
-![]("/js/Chart/Axis_images/axis_img36.png" Caption="Chart with X and Y axes at normal position")
+![](/js/Chart/Axis_images/axis_img36.png)
+
+Chart with X and Y axes at normal position
+{:.caption}
 
 **Chart with Y-axis at opposed position**
 
-![]("/js/Chart/Axis_images/axis_img37.png" Caption="Chart with Y-axis at opposed position")
+![](/js/Chart/Axis_images/axis_img37.png)
+
+Chart with Y-axis at opposed position
+{:.caption}
 
 
 ### Maximum number of labels per 100 pixels
@@ -985,18 +1093,27 @@ A maximum of 3 labels are displayed for each 100 pixels in the axis, by default.
 
 **Chart before setting maximum labels per 100 pixels**
 
-![]("/js/Chart/Axis_images/axis_img38.png" Caption="Chart before setting maximum labels per 100 pixels")
+![](/js/Chart/Axis_images/axis_img38.png)
+
+Chart before setting maximum labels per 100 pixels
+{:.caption}
 
 **Chart after setting maximum labels one per 100 pixels**
 
-![]("/js/Chart/Axis_images/axis_img39.png" Caption="Chart after setting maximum labels one per 100 pixels")
+![](/js/Chart/Axis_images/axis_img39.png)
+
+Chart after setting maximum labels one per 100 pixels
+{:.caption}
 
 
 ## Multiple Axis
 
 Multiple axes can be used in the Chart and chart area can be split into multiple panes to draw multiple series with multiple axes.
 
-![]("/js/Chart/Axis_images/axis_img40.png" Caption="Chart with multiple axes")
+![](/js/Chart/Axis_images/axis_img40.png)
+
+Chart with multiple axes
+{:.caption}
 
 An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **axes** collection and then you can associate it to a series by specifying the name of the axis to the [xAxisName](../api/ejchart#members:series-xaxisname) or [yAxisName](../api/ejchart#members:series-yaxisname) property of the series.
 
@@ -1034,7 +1151,10 @@ An additional horizontal or vertical axis can be added to the chart by adding an
 
 
 
-![]("/js/Chart/Axis_images/axis_img41.png" Caption="Chart with Multiple Axis")
+![](/js/Chart/Axis_images/axis_img41.png)
+
+Chart with Multiple Axis
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/multipleaxes) here to view the multiple axis online demo sample.
 
@@ -1061,7 +1181,10 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 
 
 
-![]("/js/Chart/Axis_images/axis_img42.png" Caption="Chart with smart Axis Labelss")
+![](/js/Chart/Axis_images/axis_img42.png)
+
+Chart with smart Axis Labelss
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/smartaxislabels) here to view our online demo sample for smart axis labels.
 
@@ -1069,29 +1192,47 @@ When the Axis labels overlap with each other based on the chart dimensions and l
 
 The following screenshot displays the result, when the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **rotate45**.
 
-![]("/js/Chart/Axis_images/axis_img43.png" Caption="LabelIntersectAction rotate to 45 degree")
+![](/js/Chart/Axis_images/axis_img43.png)
+
+LabelIntersectAction rotate to 45 degree
+{:.caption}
 
 
 The following screenshot displays the result, when the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **rotate90**.
 
-![]("/js/Chart/Axis_images/axis_img44.png" Caption="LabelIntersectAction rotate to 90 degree")
+![](/js/Chart/Axis_images/axis_img44.png)
+
+LabelIntersectAction rotate to 90 degree
+{:.caption}
 
 
 The following screenshot displays the result, when the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **wrap**.
 
-![]("/js/Chart/Axis_images/axis_img45.png" Caption="LabelIntersectAction with wrapping the text")
+![](/js/Chart/Axis_images/axis_img45.png)
+
+LabelIntersectAction with wrapping the text
+{:.caption}
 
 
 The following screenshot displays the result, when of setting the **trim** as value to the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property.
 
-![]("/js/Chart/Axis_images/axis_img46.png" Caption="LabelIntersectAction with trimming the text")
+![](/js/Chart/Axis_images/axis_img46.png)
+
+LabelIntersectAction with trimming the text
+{:.caption}
 
 
 The following screenshot displays the result, when the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **hide**.
 
-![]("/js/Chart/Axis_images/axis_img47.png" Caption="LabelIntersectAction with hide the text")
+![](/js/Chart/Axis_images/axis_img47.png)
+
+LabelIntersectAction with hide the text
+{:.caption}
 
 
 The following screenshot displays the result, when the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **multiplerows **.
 
-![]("/js/Chart/Axis_images/axis_img48.png" Caption="LabelIntersectAction with multiplerows of the text")
+![](/js/Chart/Axis_images/axis_img48.png)
+
+LabelIntersectAction with multiplerows of the text
+{:.caption}

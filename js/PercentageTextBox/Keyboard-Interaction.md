@@ -73,7 +73,7 @@ Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access
 
 
 
-![]("/js/PercentageTextBox/Keyboard-Interaction_images/Keyboard-Interaction_img1.png") 
+![](/js/PercentageTextBox/Keyboard-Interaction_images/Keyboard-Interaction_img1.png) 
 
 
 

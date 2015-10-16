@@ -74,5 +74,5 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 The output for **TreeView** when **enablePersistence** is set to **True** is as follows.
 
-![]("/js/TreeView/Node-Persistence-Handling_images/Node-Persistence-Handling_img1.png")
+![](/js/TreeView/Node-Persistence-Handling_images/Node-Persistence-Handling_img1.png)
 

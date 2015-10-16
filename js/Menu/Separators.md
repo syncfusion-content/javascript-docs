@@ -86,6 +86,6 @@ Add the following **&lt;script&gt;** in the above code sample to display the **M
 
 The following screenshot displays the output for the above code. 
 
-![]("/js/Menu/Separators_images/Separators_img2.png") 
+![](/js/Menu/Separators_images/Separators_img2.png) 
 
 

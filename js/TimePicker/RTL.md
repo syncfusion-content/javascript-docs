@@ -37,5 +37,5 @@ In the **HTML** page, add a **&lt;input&gt;** element to configure **TimePicker*
 
 The following screenshot illustrates a **TimePicker** control when **enableRTL** is set to **“true”**
 
-![]("/js/TimePicker/RTL_images/RTL_img1.png") 
+![](/js/TimePicker/RTL_images/RTL_img1.png) 
 

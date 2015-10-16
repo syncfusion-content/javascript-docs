@@ -42,7 +42,7 @@ The output for CurrencyTextBox with decimalPlaces is as follows.
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img1.png") 
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img1.png) 
 
 ## Persistence Support
 
@@ -76,9 +76,15 @@ The output for **CurrencyTextBox** with **enablePersistence** is as follows. You
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img2.png" Caption="CurrencyTextBox at initial load")
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img2.png)
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="CurrencyTextBox after changing the value and a page load ")
+CurrencyTextBox at initial load
+{:.caption}
+
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img3.png)
+
+CurrencyTextBox after changing the value and a page load 
+{:.caption}
 
 ## Strict Mode Support
 
@@ -114,7 +120,7 @@ The output for **CurrencyTextBox** when **enableStrictMode** is **“True”** i
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img4.png") 
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img4.png) 
 
 ## Enabled or Disabled
 
@@ -148,11 +154,17 @@ The output for CurrencyTextBox when **enabled** is **“True”** and when **ena
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img5.png" Caption="CurrencyTextBox with enabled as False")
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img5.png)
+
+CurrencyTextBox with enabled as False
+{:.caption}
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img6.png" Caption="CurrencyTextBox with enabled as True")
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img6.png)
+
+CurrencyTextBox with enabled as True
+{:.caption}
 
 ## Adjusting CurrencyTextBox Size
 
@@ -186,7 +198,7 @@ The output for CurrencyTextBox after setting “**height**” and “**width**�
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img7.png") 
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img7.png) 
 
 ## Increment Step
 
@@ -219,11 +231,17 @@ The output for CurrencyTextBox with **incrementStep** is as follows.
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img8.png" Caption="CurrencyTextBox at initial load")
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img8.png)
+
+CurrencyTextBox at initial load
+{:.caption}
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img9.png" Caption="CurrencyTextBox after increasing one step")
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img9.png)
+
+CurrencyTextBox after increasing one step
+{:.caption}
 
 ## Define Name
 
@@ -280,7 +298,7 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 The output for **CurrencyTextBox** with the **value** property is as follows**.**
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img11.png") 
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img11.png) 
 
 ## Define maxValue and minValue
 
@@ -321,11 +339,17 @@ The output for **CurrencyTextBox** with basic properties is as follows.
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img12.png" Caption="CurrencyTextBox with maxValue")
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img12.png)
+
+CurrencyTextBox with maxValue
+{:.caption}
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img13.png" Caption="CurrencyTextBox with minValue")
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img13.png)
+
+CurrencyTextBox with minValue
+{:.caption}
 
 ## Read Only Support
 
@@ -359,7 +383,7 @@ The output for CurrencyTextBox when **readOnly** is “**True**” is as follows
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img14.png") 
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img14.png) 
 
 ## Appearance
 
@@ -436,7 +460,7 @@ The output for CurrencyTextBox after applying **cssClass** is as follows.
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img15.png") 
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img15.png) 
 
 ## Rounded Corner Support
 
@@ -468,7 +492,7 @@ The output for CurrencyTextBox when **showRoundedCorner** is “**True**”.
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img16.png") 
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img16.png) 
 
 ## Spin Button Support
 
@@ -501,9 +525,15 @@ The output for **CurrencyTextBox** when **showSpinButton** is “**True**”.
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img17.png" Caption="CurrencyTextBox with showSpinButton is True")
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img17.png)
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img18.png" Caption="CurrencyTextBox with showSpinButton is False")
+CurrencyTextBox with showSpinButton is True
+{:.caption}
+
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img18.png)
+
+CurrencyTextBox with showSpinButton is False
+{:.caption}
 
 ## Water Mark Text Support
 
@@ -535,5 +565,5 @@ The output for CurrencyTextBox after applying **watermarkText** is as follows.
 
 
 
-![]("/js/Currency/Behavior-Settings_images/Behavior-Settings_img19.png") 
+![](/js/Currency/Behavior-Settings_images/Behavior-Settings_img19.png) 
 

@@ -42,7 +42,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **ProgressBar*
 
 The following screenshot displays the output.
 
-![]("/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img1.png") 
+![](/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 ## Custom text
 
@@ -79,7 +79,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 The following screenshot displays the output.      
 
- ![]("/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img2.png") 
+ ![](/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 ## Theme
 
@@ -155,5 +155,5 @@ Add the following styles to render the ProgressBar with customized style.
 
 The following screenshot displays the output.
 
-![]("/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img3.png") 
+![](/js/ProgressBar/Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 

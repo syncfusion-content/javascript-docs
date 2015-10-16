@@ -41,7 +41,10 @@ You can create horizontal stripline by adding the [stripline](../api/ejchart#mem
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img1.png" Caption="Horizontal Striplines")
+![](/js/Chart/Striplines_images/Striplines_img1.png)
+
+Horizontal Striplines
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/striplines) here to view the Striplines online demo sample.
 
@@ -77,7 +80,10 @@ You can create vertical stripline by adding the [stripline](../api/ejchart#membe
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img2.png" Caption="Vertical Striplines")
+![](/js/Chart/Striplines_images/Striplines_img2.png)
+
+Vertical Striplines
+{:.caption}
 
 
 ## Customize the Text
@@ -105,7 +111,10 @@ To customize the stripLine text, use the [text](../api/ejchart#members:primaryya
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img3.png" Caption="Customize stripline text")	
+![](/js/Chart/Striplines_images/Striplines_img3.png)
+
+Customize stripline text
+{:.caption}	
 
 **Text Alignment**
 
@@ -131,7 +140,10 @@ Stripline text can be aligned by using the [textAlignment](../api/ejchart#member
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img4.png" Caption="Stripline text alignment")
+![](/js/Chart/Striplines_images/Striplines_img4.png)
+
+Stripline text alignment
+{:.caption}
 
 
 ## Customize the Stripline
@@ -161,7 +173,10 @@ To customize the stripLine styles, use the [color](../api/ejchart#members:primar
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img5.png" Caption="Customize stripline rectangle")
+![](/js/Chart/Striplines_images/Striplines_img5.png)
+
+Customize stripline rectangle
+{:.caption}
 
 
 ## Change the zorder of the stripline
@@ -188,7 +203,7 @@ Stripline [zIndex](../api/ejchart#members:primaryyaxis-stripline-zindex) propert
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img6.png")
+![](/js/Chart/Striplines_images/Striplines_img6.png)
 
 Stripline zIndex
 {:.caption}

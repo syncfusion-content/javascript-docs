@@ -12,7 +12,7 @@ documentation: ug
 This section explains briefly about how to create a **Dialog** in your application with **JavaScript**.The **Essential JavaScript Dialog** control displays a **Dialog** window within the web page. The **Dialog** control enables you to display a message in the supplementary content like images, text and interactive content such as forms. The **Dialog** control displays the content on **modal dialog**, in which you cannot interact with other items on the page. You can drag and resize the **Dialog**. This section explains you how to customize a **Dialog** for a real time login form scenario. The following screen shot illustrates the appearance of the **Dialog**.
 
 
-![]("/js/Dialog/Getting-Started_images/Getting-Started_img1.png") 
+![](/js/Dialog/Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a Dialog
 
@@ -85,7 +85,7 @@ Execute the above code to render the following output.
 
 
 
-![]("/js/Dialog/Getting-Started_images/Getting-Started_img2.png") 
+![](/js/Dialog/Getting-Started_images/Getting-Started_img2.png) 
 
 This screenshot illustrates the **Dialog** control without any dialog content.  By default the **Dialog** control shows the header element. The title text is taken from **dialog element title** attribute or **title** property.
 
@@ -229,7 +229,7 @@ Execute the code to render the following output.
 
 
 
-![]("/js/Dialog/Getting-Started_images/Getting-Started_img3.png") 
+![](/js/Dialog/Getting-Started_images/Getting-Started_img3.png) 
 
 This process enables you to render the **Dialog** control with sign up form elements. The above screen shot displays the **Dialog** control with header and resizable option. These options are enabled in **Dialog** control by default. 
 
@@ -260,7 +260,7 @@ Execute the code to render the following output.
 
 
 
-![]("/js/Dialog/Getting-Started_images/Getting-Started_img4.png") 
+![](/js/Dialog/Getting-Started_images/Getting-Started_img4.png) 
 
 ##  Add Validation
 
@@ -387,7 +387,7 @@ Add the following styles to customize the styles of error message.
 
 Execute the code to render the following output.
 
-![]("/js/Dialog/Getting-Started_images/Getting-Started_img5.png") 
+![](/js/Dialog/Getting-Started_images/Getting-Started_img5.png) 
 
 The above screen shot displays an error message when an invalid input is given to form elements. The dialog is closed when the value is in a valid format or the **Dialog** is open.	 
 

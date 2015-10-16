@@ -105,6 +105,6 @@ In an HTML page, define a &lt;div&gt; element that is a container for  Accor
 
 Output for Accordion widget focused and navigated to last item using Keyboard navigation is as follows.
 
-![]("/js/Accordion/Keyboard-Navigation_images/Keyboard-Navigation_img1.png") 
+![](/js/Accordion/Keyboard-Navigation_images/Keyboard-Navigation_img1.png) 
 
 

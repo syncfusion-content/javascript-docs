@@ -76,7 +76,7 @@ The following example depicts the way to bind data to the **PercentageTextBox** 
 
 The output of **PercentageTextBox** controls with **two-way angular binding** is as follows.
 
-![]("/js/PercentageTextBox/Angular-Support_images/Angular-Support_img1.png") 
+![](/js/PercentageTextBox/Angular-Support_images/Angular-Support_img1.png) 
 
-![]("/js/PercentageTextBox/Angular-Support_images/Angular-Support_img2.png") 
+![](/js/PercentageTextBox/Angular-Support_images/Angular-Support_img2.png) 
 

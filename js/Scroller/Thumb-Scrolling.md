@@ -73,5 +73,5 @@ In the HTML page, add a &lt;div&gt; element to configure Scroller widget.
 
 The following screenshot displays **Scroller** control with disabled touch support.
 
-![]("/js/Scroller/Thumb-Scrolling_images/Thumb-Scrolling_img1.png")
+![](/js/Scroller/Thumb-Scrolling_images/Thumb-Scrolling_img1.png)
 

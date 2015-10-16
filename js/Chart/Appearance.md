@@ -26,7 +26,10 @@ The Chart displays different series in different colors by default. You can cust
 
 {% endhighlight %}
 
-![]("/js/Chart/Appearance_images/Appearance_img1.png" Caption="Chart custom color palette")
+![](/js/Chart/Appearance_images/Appearance_img1.png)
+
+Chart custom color palette
+{:.caption}
 
 N> The Color palette is applied to the points in accumulation type series
 
@@ -67,7 +70,10 @@ You can set your desired theme by using the [theme](../api/ejchart#members:theme
 
 {% endhighlight %}
 
-![]("/js/Chart/Appearance_images/Appearance_img2.png" Caption="Chart using gradient light theme")
+![](/js/Chart/Appearance_images/Appearance_img2.png)
+
+Chart using gradient light theme
+{:.caption}
 
 
 ## Point level customization
@@ -101,7 +107,10 @@ Marker, data label and fill color of each point in a series can be customized in
 
 {% endhighlight %}
 
-![]("/js/Chart/Appearance_images/Appearance_img3.png" Caption="Customize a specific point marker and color")
+![](/js/Chart/Appearance_images/Appearance_img3.png)
+
+Customize a specific point marker and color
+{:.caption}
 
 
 ## Chart area customization
@@ -129,7 +138,10 @@ The Chart background can be customized by using the [background](../api/ejchart#
 
 {% endhighlight %} 
 
-![]("/js/Chart/Appearance_images/Appearance_img4.png" Caption="Customizing chart background and border")
+![](/js/Chart/Appearance_images/Appearance_img4.png)
+
+Customizing chart background and border
+{:.caption}
 
 **Chart Margin**
 
@@ -151,7 +163,10 @@ The Chart [margin](../api/ejchart#members:margin) property is used to add the ma
 
 {% endhighlight %} 
 
-![]("/js/Chart/Appearance_images/Appearance_img5.png" Caption="Customizing chartarea margin")
+![](/js/Chart/Appearance_images/Appearance_img5.png)
+
+Customizing chartarea margin
+{:.caption}
 
 
 **Setting background image**
@@ -174,7 +189,10 @@ Background image can be added to the chart by using the [backGroundImageUrl](../
 
 {% endhighlight %} 
 
-![]("/js/Chart/Appearance_images/Appearance_img6.png" Caption="Add background image to chart")
+![](/js/Chart/Appearance_images/Appearance_img6.png)
+
+Add background image to chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/tooltiptemplate) here to view our online demo sample for setting Chart background image.
 
@@ -201,7 +219,10 @@ The Chart area background can be customized by using the [background](../api/ejc
 
 {% endhighlight %} 
 
-![]("/js/Chart/Appearance_images/Appearance_img7.png" Caption="Add background color to chart area")
+![](/js/Chart/Appearance_images/Appearance_img7.png)
+
+Add background color to chart area
+{:.caption}
 
 
 ### Customize chart area grid bands
@@ -232,7 +253,10 @@ You can provide different color for alternate grid rows and columns formed by th
 
 {% endhighlight %} 
 
-![]("/js/Chart/Appearance_images/Appearance_img8.png" Caption="Customizing chart area grid bands")
+![](/js/Chart/Appearance_images/Appearance_img8.png)
+
+Customizing chart area grid bands
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/alternategridband) here to view the alternate grid band online demo sample.
 

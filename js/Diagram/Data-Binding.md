@@ -119,7 +119,7 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/Diagram/Data-Binding_images/Data-Binding_img1.png")
+![](/js/Diagram/Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
@@ -190,7 +190,7 @@ function nodeTemplate(diagram, node) {
 
 {% endhighlight %}
 
-![]("/js/Diagram/Data-Binding_images/Data-Binding_img2.png")
+![](/js/Diagram/Data-Binding_images/Data-Binding_img2.png)
 
 ## Html Table Data
 
@@ -320,7 +320,7 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/Diagram/Data-Binding_images/Data-Binding_img4.png")
+![](/js/Diagram/Data-Binding_images/Data-Binding_img4.png)
 
 
 

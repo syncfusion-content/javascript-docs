@@ -154,7 +154,7 @@ Add the following code in your style section.
 
 The following screenshot displays the output of the above code example.       
 
-![]("/js/Menu/Integration_images/Integration_img1.png") 
+![](/js/Menu/Integration_images/Integration_img1.png) 
 
 
 ##Knockout binding
@@ -256,6 +256,6 @@ Add the following code in your style section.
 
 The following screenshot displays the output of the above code.              
 
-![]("/js/Menu/Integration_images/Integration_img2.png") 
+![](/js/Menu/Integration_images/Integration_img2.png) 
 
 

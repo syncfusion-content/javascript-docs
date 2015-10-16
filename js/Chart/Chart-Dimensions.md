@@ -49,7 +49,10 @@ You can also set the chart dimension by using the [size](../api/ejchart#members:
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img1.png" Caption="Chart dimension in pixels")
+![](/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img1.png)
+
+Chart dimension in pixels
+{:.caption}
 
 ## Setting size relative to the container size
 
@@ -72,7 +75,10 @@ You can specify the chart size in percentage by using the [size](../api/ejchart#
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img2.png" Caption="Chart in percentage")
+![](/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img2.png)
+
+Chart in percentage
+{:.caption}
 
 
 ## Responsive chart

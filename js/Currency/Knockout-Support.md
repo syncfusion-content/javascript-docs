@@ -89,9 +89,15 @@ The output of **Knockout binding** in **CurrencyTextBox** .
 
 
 
-![]("/js/Currency/Knockout-Support_images/Knockout-Support_img1.png" Caption="CurrencyTextBox at initial load")
+![](/js/Currency/Knockout-Support_images/Knockout-Support_img1.png)
+
+CurrencyTextBox at initial load
+{:.caption}
 
 
 
-![]("/js/Currency/Knockout-Support_images/Knockout-Support_img2.png" Caption="CurrencyTextBox with knockout binding")
+![](/js/Currency/Knockout-Support_images/Knockout-Support_img2.png)
+
+CurrencyTextBox with knockout binding
+{:.caption}
 

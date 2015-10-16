@@ -85,7 +85,7 @@ In an **HTML** page, add the **&lt;ul&gt;** and **&lt;li&gt;** to configure **Me
 
 The following screenshot displays the output of the above code.        
 
-![]("/js/Menu/Orientation_images/Orientation_img1.png") 
+![](/js/Menu/Orientation_images/Orientation_img1.png) 
 
 
 ##Vertical Menu
@@ -113,6 +113,6 @@ Add the following code in your **&lt;script&gt;** section.
 
 The following screen shot displays the output of the above code.                       
 
-![]("/js/Menu/Orientation_images/Orientation_img2.png") 
+![](/js/Menu/Orientation_images/Orientation_img2.png) 
 
 

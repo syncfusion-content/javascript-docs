@@ -45,7 +45,7 @@ The following code example is for the **Grid** with default options.
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Paging_images/Paging_img1.png")
+![](/js/Grid/Paging_images/Paging_img1.png)
 
 ## External Paging
 
@@ -88,7 +88,7 @@ In this section, you can see how to use external paging. The following code exam
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Paging_images/Paging_img2.png")
+![](/js/Grid/Paging_images/Paging_img2.png)
 
 ## Pager Templates
 
@@ -122,7 +122,7 @@ The following output is displayed as a result of the above code example.
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Paging_images/Paging_img3.png")
+![](/js/Grid/Paging_images/Paging_img3.png)
 
 ## Methods
 
@@ -191,7 +191,7 @@ In this section, you can see how to use paging methods in **Grid** control. The 
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Paging_images/Paging_img4.png")
+![](/js/Grid/Paging_images/Paging_img4.png)
 
 ## Localization for paging
 
@@ -278,5 +278,5 @@ In this section, you can see how to use Globilzation in Grid pager. The followin
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Grid/Paging_images/Paging_img5.png")
+![](/js/Grid/Paging_images/Paging_img5.png)
 

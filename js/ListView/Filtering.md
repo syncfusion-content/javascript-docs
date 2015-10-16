@@ -51,9 +51,15 @@ Add the following script in your code.
 
 **Screenshot:**
 
-![]("/js/ListView/Filtering_images/Filtering_img1.png" Caption="Before Filtering")
+![](/js/ListView/Filtering_images/Filtering_img1.png)
+
+Before Filtering
+{:.caption}
 
 
 
-![]("/js/ListView/Filtering_images/Filtering_img2.png" Caption="After Filtering")
+![](/js/ListView/Filtering_images/Filtering_img2.png)
+
+After Filtering
+{:.caption}
 

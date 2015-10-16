@@ -50,5 +50,5 @@ The following screenshot displays the output for the above code example.
 
 
 
-![]("/js/DatePicker/Globalization_images/Globalization_img1.png")
+![](/js/DatePicker/Globalization_images/Globalization_img1.png)
 

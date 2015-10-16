@@ -40,5 +40,5 @@ In the **HTML** page set a **&lt;div&gt;** element with dialog content for rende
 
 The output for **Dialog** when **enabelRTL** is “**True**” is as follows.
 
-![]("/js/Dialog/RTL-Support_images/RTL-Support_img1.png") 
+![](/js/Dialog/RTL-Support_images/RTL-Support_img1.png) 
 

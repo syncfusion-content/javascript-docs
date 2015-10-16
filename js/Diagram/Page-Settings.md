@@ -12,7 +12,7 @@ documentation: ug
 
 Page settings enable to customize the appearance, width, and height of the Diagram page.
 
-![]("/js/Diagram/Page-Settings_images/Page-Settings_img1.png")
+![](/js/Diagram/Page-Settings_images/Page-Settings_img1.png)
 
 ## Page size and appearance
 
@@ -48,9 +48,9 @@ The following code illustrates how to customize the page size and the appearance
 {% endhighlight %}
 
 
-![]("/js/Diagram/Page-Settings_images/Page-Settings_img2.png")
+![](/js/Diagram/Page-Settings_images/Page-Settings_img2.png)
 
-![]("/js/Diagram/Page-Settings_images/Page-Settings_img3.png")
+![](/js/Diagram/Page-Settings_images/Page-Settings_img3.png)
 
 N> When the pageWidth and pageHeight are not specified, the rectangular region that completely fits all nodes and connectors are considered as page size.
 
@@ -58,7 +58,7 @@ N> When the pageWidth and pageHeight are not specified, the rectangular region t
 
 When MultiplePage is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. Page Breaks is used as a visual guide to see how pages are split into multiple pages.
 
-![]("/js/Diagram/Page-Settings_images/Page-Settings_img4.png")
+![](/js/Diagram/Page-Settings_images/Page-Settings_img4.png)
 
 `multiplePage` and `showPageBreak` properties of page settings allow you to enable/disable multiple pages and page breaks respectively.
 The following code illustrates how to enable multiple page and page break lines.

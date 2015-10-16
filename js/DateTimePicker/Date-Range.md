@@ -48,5 +48,5 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-![]("/js/DateTimePicker/Date-Range_images/Date-Range_img1.png")
+![](/js/DateTimePicker/Date-Range_images/Date-Range_img1.png)
 

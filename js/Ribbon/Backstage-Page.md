@@ -79,4 +79,4 @@ We can set height and width to backstage page using properties _**backStageHeigh
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Ribbon/Backstage-Page_images/Backstage-Page_img1.png" Caption="")
+![](/js/Ribbon/Backstage-Page_images/Backstage-Page_img1.png" Caption=")

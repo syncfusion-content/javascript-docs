@@ -130,7 +130,7 @@ You can render the **Schedule** by using the following code example. Object in t
 
 Execute the above codes to render the Resultant schedule as follows.
 
-![]("/js/Schedule/MVVM_images/MVVM_img1.png" Caption="")
+![](/js/Schedule/MVVM_images/MVVM_img1.png" Caption=")
 
 
 **Two Way Binding** 
@@ -209,7 +209,7 @@ Execute the above codes to render the Resultant schedule as follows.
 
 Execute the above code to render the following output.
 
-![]("/js/Schedule/MVVM_images/MVVM_img2.png" Caption="")
+![](/js/Schedule/MVVM_images/MVVM_img2.png" Caption=")
 
 
 **Knockout binding**
@@ -265,5 +265,5 @@ Execute the above code to render the following output.
 
 Output of the above code example is as follows.
 
-![]("/js/Schedule/MVVM_images/MVVM_img3.png" Caption="")
+![](/js/Schedule/MVVM_images/MVVM_img3.png" Caption=")
 

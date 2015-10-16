@@ -47,7 +47,7 @@ The following steps explain how you can enable the **highlightSearch** property 
 
 The following image is the output for **AutoComplete** when **highlightSearch** is set to ‘**True**’.
 
-![]("/js/Autocomplete/Search-Customization_images/Search-Customization_img1.png")
+![](/js/Autocomplete/Search-Customization_images/Search-Customization_img1.png)
 
 ## Case-sensitive Search
 
@@ -87,5 +87,5 @@ The following steps explain you how to enable the **caseSensitiveSearch** proper
 
 The following image is the output for **AutoComplete** when **caseSensitiveSearch** is set to ‘**True**’.
 
-![]("/js/Autocomplete/Search-Customization_images/Search-Customization_img2.png")
+![](/js/Autocomplete/Search-Customization_images/Search-Customization_img2.png)
 

@@ -68,7 +68,7 @@ Here, you can learn when and how each adaptor is used.
 The result of above code example is illustrated as follows.
 
 
-![]("/js/DataManager/Data-Adaptors_images/Data-Adaptors_img1.png") 
+![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img1.png) 
 
 ##URL Adaptor
 
@@ -135,7 +135,7 @@ Url Adaptor of **DataManager** can be used when you are required to use remote s
 The result of the above code example is illustrated as follows.
 
 
-![]("/js/DataManager/Data-Adaptors_images/Data-Adaptors_img2.png") 
+![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img2.png) 
 
 ##OData Adaptor
 
@@ -193,7 +193,7 @@ The result of the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Data-Adaptors_images/Data-Adaptors_img3.png") 
+![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img3.png) 
 
 ##WebAPI Adaptor
 
@@ -246,7 +246,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Data-Adaptors_images/Data-Adaptors_img4.png") 
+![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img4.png) 
 
 ##RemoteSave Adaptor
 
@@ -419,7 +419,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Data-Adaptors_images/Data-Adaptors_img5.png") 
+![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img5.png) 
 
 
 
@@ -495,5 +495,5 @@ Custom adaptor is a key technique to customize adaptors in **DataManager**. It i
 
 Result of above code example is as follows.
 
-![]("/js/DataManager/Data-Adaptors_images/Data-Adaptors_img6.png") 
+![](/js/DataManager/Data-Adaptors_images/Data-Adaptors_img6.png) 
 

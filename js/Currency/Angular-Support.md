@@ -86,7 +86,13 @@ The following example depicts the way to bind data to the **CurrencyTextBox** wi
 
 The output of **CurrencyTextBox** controls with **two-way angular binding** is as follows.
 
-![]("/js/Currency/Angular-Support_images/Angular-Support_img1.png" Caption="CurrencyTextBox at initial load")
+![](/js/Currency/Angular-Support_images/Angular-Support_img1.png)
 
-![]("/js/Currency/Angular-Support_images/Angular-Support_img2.png" Caption="CurrencyTextBox with Angular Binding")
+CurrencyTextBox at initial load
+{:.caption}
+
+![](/js/Currency/Angular-Support_images/Angular-Support_img2.png)
+
+CurrencyTextBox with Angular Binding
+{:.caption}
 

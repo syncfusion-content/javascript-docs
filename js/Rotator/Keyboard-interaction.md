@@ -175,7 +175,7 @@ Add the following code in your **JavaScript** to focus the control.
 
 
 
-![]("/js/Rotator/Keyboard-interaction_images/Keyboard-interaction_img1.png") 
+![](/js/Rotator/Keyboard-interaction_images/Keyboard-interaction_img1.png) 
 
 
 
