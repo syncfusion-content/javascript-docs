@@ -9,7 +9,7 @@ keywords: ejSchedule, API, Essential JS Schedule
 
 # ejSchedule
 
-Custom Design for Html Schedule control.
+Html Schedule control.
 
 #### Syntax
 
@@ -2334,6 +2334,7 @@ To set the template for priority option in Scheduler,
                   dataSource: [
                      { text: "High", value: "high" },
                      { text: "Normal", value: "medium" }],
+                  text: "text", value: "value",
                   template: "<div class='${value}'></div>"
                 },
                 appointmentSettings: {
@@ -6339,6 +6340,7 @@ Triggers after the Schedule view or date is navigated.
             </table>
             </td>   
         </tr>
+        <tr>
             <td class="name">argument</td>
             <td class="type">object</td>
             <td class="description">Returns the object of previous/next date navigation event:
@@ -6381,58 +6383,57 @@ Triggers after the Schedule view or date is navigated.
                         <td class="type">string</td>
                         <td class="description">Returns the name of the event.</td>
                     </tr>
-                    </tr>
                 </tbody>
             </table>
             </td>
         </tr>
+        <tr>
             <td class="name">argument</td>
             <td class="type">object</td>
             <td class="description">Returns the navigation event while change the date using calendar in schedule.
             <table class="params">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Type</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
                     <tr>
                         <td class="name">argument.cancel</td>
                         <td class="type">boolean</td>
                         <td class="description">Returns the cancel option value.</td>
                     </tr>
-                <tr>
-                    <td class="name">argument.model</td>
-                    <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
-                </tr>
-                <tr>
-                    <td class="name">argument.currentDate</td>
-                    <td class="type">object</td>
-                    <td class="description">Returns the new date of the schedule.</td>
-                </tr>
-                <tr>
-                    <td class="name">argument.previousDate</td>
-                    <td class="type">object</td>
-                    <td class="description">Returns the previous date of the schedule.</td>
-                </tr>
-                <tr>
-                    <td class="name">argument.target</td>
-                    <td class="type">object</td>
-                    <td class="description">Returns the target of the action.</td>
-                </tr>
-                <tr>
-                    <td class="name">argument.type</td>
-                    <td class="type">string</td>
-                    <td class="description">Returns the name of the event.</td>
-                </tr>
-            </tbody>
-        </table>
-        </td>
-       </tr>
+                    <tr>
+                        <td class="name">argument.model</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the schedule model.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.currentDate</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the new date of the schedule.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.previousDate</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the previous date of the schedule.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.target</td>
+                        <td class="type">object</td>
+                        <td class="description">Returns the target of the action.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">argument.type</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the event.</td> 
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
     </tbody>
 </table>
 
