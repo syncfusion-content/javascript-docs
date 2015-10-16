@@ -139,7 +139,7 @@ It includes the dataSource option and the fields related to Schedule appointment
 
 * Array
 
-The dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance that contains Schedule appointments.
+The dataSource option accepts either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance that contains Schedule appointments.
 
 #### Example
 
@@ -253,7 +253,7 @@ Assign the table name from where the records are to be fetched for the Schedule.
 
 #### Example
 
-To set the dataSource with DataManager instance and using tableName property to directly fetch all the records from it,
+To set the dataSource with DataManager instance and to use tableName property to directly fetch all the records from it,
 
 {% highlight html %}
 
@@ -280,26 +280,26 @@ To set the dataSource with DataManager instance and using tableName property to 
 {% endhighlight %}
 
 
-The following are the appointment fields which holds the appropriate column names from the dataSource.
+The following are the appointment fields that holds the appropriate column names from the dataSource.
 
 ### appointmentSettings.id 'string'
 {:#members:appointmentsettings-id}
 
-Binds the id field name in the dataSource to the id of the Scheduler appointments. It denotes the unique id assigned to the appointments.
+Binds the id field name in dataSource to the id of Schedule appointments. It denotes the unique id assigned to appointments.
 
 ### appointmentSettings.startTime 'string'
 {:#members:appointmentsettings-startTime}
 
-Binds the name of the startTime field in the dataSource with the start time of the Scheduler appointments. It indicates the date and Time when the Scheduler appointment actually starts.
+Binds the name of startTime field in the dataSource with start time of the Schedule appointments. It indicates the date and Time when Schedule appointment actually starts.
 
 ### appointmentSettings.endTime 'string'
 {:#members:appointmentsettings-endTime}
 
-Binds the name of the endTime field in the dataSource with the end time of the Scheduler appointments. It indicates the date and Time when the Scheduler appointment actually ends.
+Binds the name of endTime field in dataSource with the end time of Schedule appointments. It indicates the date and time when Schedule appointment actually ends.
 
 #### Example
 
-To create a simple appointment with its mandatory fields such as id, startTime & endTime,
+To create a simple appointment with mandatory fields, id, startTime and endTime,
 
 {% highlight html %}
 
@@ -325,12 +325,12 @@ To create a simple appointment with its mandatory fields such as id, startTime &
 
 {% endhighlight %}
 
-> **Note :The fields such as id, startTime and endTime are the mandatory fields to be specified to create an appointment.**
+> **Note :The fields, id, startTime and endTime are mandatory fields to be specified to create an appointment.**
 
 ### appointmentSettings.subject 'string'
 {:#members:appointmentsettings-subject}
 
-Binds the name of the subject field in the dataSource to the appointment Subject. Indicates the Subject or the title which will get displayed on the Scheduler appointments.
+Binds the name of subject field in the dataSource to appointment Subject. Indicates the Subject or title that gets displayed on Schedule appointments.
 
 #### Example:
 
@@ -365,7 +365,7 @@ To create an appointment with a **Subject**,
 ## appointmentSettings.description 'string'
 {:#members:appointmentsettings-description}
 
-Binds the description field name in the dataSource. It indicates the appointment description.
+Binds the description field name in dataSource. It indicates the appointment description.
 
 #### Example
 
@@ -397,17 +397,17 @@ To create an appointment with a **description**,
 
 {% endhighlight %}
 
-> **Note: Unlike Subject field which is displayed as a label over an appointment, the description doesn’t shows up on it by default. To display description over the appointments, the appointment template can be used in such cases **
+> **Note: Unlike Subject field that is displayed as a label over an appointment, the description doesn’t show up on it, by default. To display description over appointments, the appointment template can be used. **
 
 ### appointmentSettings.recurrence 'string'
 {:#members:appointmentsettings-recurrence}
 
-Binds the name of the recurrence field in the dataSource. It indicates whether the appointment is a recurrence appointment or not.
+Binds the name of recurrence field in dataSource. It indicates whether the appointment is a recurrence appointment or not.
 
 ### appointmentSettings.recurrenceRule 'string'
 {:#members:appointmentsettings-recurrenceRule}
 
-Binds the name of the recurrenceRule field in the dataSource. It indicates the recurrence pattern associated with the appointments.
+Binds the name of recurrenceRule field in dataSource. It indicates the recurrence pattern associated with appointments.
 
 #### Example
  
@@ -443,12 +443,12 @@ To create a **recurrence** appointment,
 
 {% endhighlight %}
 
-> **Note:The recurrence and recurrenceRule fields are inter-dependent, as when the recurrence field is set to true, the recurrenceRule needs to be defined mandatorily for an appointment.**
+> **Note:The recurrence and recurrenceRule fields are inter-dependent, as when the recurrence field is set to true, the recurrenceRule has to be defined mandatorily for an appointment.**
 
 ### appointmentSettings.allDay 'string'
 {:#members:appointmentsettings-allday}
 
-Binds the name of the allDay field in the dataSource. It indicates whether the appointment is an allday appointment or not.
+Binds the name of allDay field in dataSource. It indicates whether the appointment is an allday appointment or not.
 
 #### Default Value
 
@@ -493,7 +493,7 @@ To create an **all-day** appointment,
 
 * null
 
-Binds one or more fields in the resource collection dataSource. It maps the resource field names with the appointments, denoting to which resource the appointments actually belongs.
+Binds one or more fields in resource collection dataSource. It maps the resource field names with appointments denoting the resource of appointments actually belongs.
 
 #### Example:
 
@@ -548,7 +548,7 @@ To create appointments in multiple resources scenario,
 
 * null
 
-Binds the name of the categorize field in the dataSource. It indicates the categorize value (red categorize, green, yellow and so on) applied to the appointments.
+Binds the name of categorize field in dataSource. It indicates the categorize value, red categorize, green, yellow and so on applied to the appointments.
 
 #### Example
 
@@ -585,7 +585,7 @@ To create appointments with categorize options,
 
 {% endhighlight %}
 
-> **Note: There are six default Categorize colors available for the appointments which can be accessed by its default id. The default available Category options are Blue, Green, Orange, Purple, Red and Yellow and its id values ranges from 1 to 6 respectively. The default Categorize collection can also be replaced with the user-specified collection.**
+> **Note: There are six default Categorize colors available for appointments, Blue, Green, Orange, Purple, Red and Yellow that can be accessed by its default id values ranging from 1 to 6 respectively. The default Categorize collection can also be replaced with user-specified collection.**
 
 
 ### appointmentSettings.location 'string'
@@ -595,7 +595,7 @@ To create appointments with categorize options,
 
 * null
 
-Binds the name of the location field in the dataSource. It indicates the appointment location.
+Binds the name of location field in dataSource. It indicates the appointment location.
 
 #### Example
 
@@ -630,7 +630,7 @@ To create appointments with categorize options,
 
 {% endhighlight %}
 
-> **Note: To make use of the location field in Scheduler, an additional API showLocationField needs to be enabled, so that the location textbox gets displayed on the default appointment window. **
+> **Note: To use the location field in Schedule, enable an additional API showLocationField that displays the location textbox on the default appointment window. **
 
 ### appointmentSettings.priority 'string'
 {:#members:appointmentsettings-priority}
@@ -639,7 +639,7 @@ To create appointments with categorize options,
 
 * null
 
-Binds the name of the priority field in the dataSource. It indicates the priority (high, low, medium and none) of the appointments.
+Binds the name of the priority field in dataSource. It indicates the priority, high, low, medium and none of the appointments.
 
 #### Example
 
@@ -674,7 +674,7 @@ To create appointments with priority option,
 
 {% endhighlight %}
 
-> **Note: To make use of the priority field in Scheduler, the prioritySettings needs to be enabled, so that the priority textbox gets displayed on the default appointment window.**
+> **Note: To use the priority field in Schedule, enable the prioritySettings that displays the priority textbox on the default appointment window.**
 
 ### appointmentSettings.startTimeZone 'string'
 {:#members:appointmentsettings-startTimeZone}
@@ -683,7 +683,7 @@ To create appointments with priority option,
 
 * StartTimeZone
 
-Binds the name of the start timezone field in the dataSource. It indicates the timezone of the appointment start date. If the startTimeZone field is not mentioned, then the appointment will make use of the Scheduler timeZone or System timeZone.
+Binds the name of start timezone field in dataSource. It indicates the timezone of appointment start date. When startTimeZone field is not mentioned, the appointment uses the Schedule timeZone or System timeZone.
 
 
 ### appointmentSettings.endTimeZone 'string'
@@ -693,7 +693,7 @@ Binds the name of the start timezone field in the dataSource. It indicates the t
 
 * EndTimeZone
 
-Binds the name of the end timezone field in the dataSource. It indicates the timezone of the appointment end date. If the endTimeZone field is not mentioned, then the appointment will make use of the Scheduler timeZone or System timeZone.
+Binds the name of end timezone field in dataSource. It indicates the timezone of appointment end date. When the endTimeZone field is not mentioned, the appointment uses the Schedule timeZone or System timeZone.
 
 #### Example
 
@@ -739,11 +739,11 @@ To create appointments with priority option,
 * null
 
 Template design that applies on the Schedule appointments.
-All the field names that are mapped from the dataSource to the appropriate field properties within the appointmentSettings can be used within the template.
+All the field names that are mapped from dataSource to the appropriate field properties within the appointmentSettings can be used within the template.
 
 #### Example
 
-To set the appointment template
+To set the appointment template,
 
 {% highlight html %}
 
@@ -782,11 +782,11 @@ To set the appointment template
 
 * ""
 
-Accepts the custom CSS class name that defines the specific user-defined styles and themes to be applied for the partial/complete elements of the Scheduler. 
+Accepts the custom CSS class name that defines specific user-defined styles and themes to be applied for partial or complete elements of the Schedule. 
 
 #### Example
 
-To apply the custom css class name to the Scheduler and to customize only the background color of its header element,
+To apply custom css class name to the Schedule and to customize only background color of its header element,
 
 {% highlight html %}
 
@@ -818,12 +818,12 @@ To apply the custom css class name to the Scheduler and to customize only the ba
 
 {% endhighlight %}
 
-> **Note: For more general information on applying custom themes to Syncfusion controls, refer [here](http://docs.syncfusion.com/js/theming-in-essential-javascript-components#customizing-themes).**
+> **Note: For more information on applying custom themes to Syncfusion controls, refer [here](http://docs.syncfusion.com/js/theming-in-essential-javascript-components#customizing-themes).**
 
 ### categorizeSettings 'object'
 {:#members:categorizeSettings }
 
-Sets various categorize colors to the Scheduler appointments to differentiate it.
+Sets various categorize colors to the Schedule appointments to differentiate it.
 
 ### categorizeSettings.allowMultiple 'boolean'
 {:#members:categorizeSettings-allowMultiple }
@@ -913,11 +913,11 @@ To enable the categorize option,
 
 * Array
 
-The dataSource option can accept either the JSON object collection or DataManager [[ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)] instance which contains the categorize data.
+The dataSource option accepts either the JSON object collection or DataManager [[ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)] instance that contains the categorize data.
 
 #### Example
 
-To set the dataSource with array of JSON object collection
+To set the dataSource with array of JSON object collection,
 
 {% highlight html %}
   
@@ -951,12 +951,12 @@ To set the dataSource with array of JSON object collection
 
 {% endhighlight %}
 
-The following are the category fields which holds the appropriate column names from the dataSource.
+The following are the category fields that holds appropriate column names from dataSource.
 
 ### categorizeSettings.id 'string'
 {:#members:categorizeSettings-id}
 
-Binds the id field name in the dataSource to the id of the category data.
+Binds id field name in the dataSource to id of category data.
 
 #### Default Value
 
@@ -965,7 +965,7 @@ Binds the id field name in the dataSource to the id of the category data.
 ### categorizeSettings.text 'string'
 {:#members:categorizeSettings-text}
 
-Binds the text field name in the dataSource to the category text.
+Binds text field name in the dataSource to category text.
 
 #### Default Value
 
@@ -974,7 +974,7 @@ Binds the text field name in the dataSource to the category text.
 ### categorizeSettings.color 'string'
 {:#members:categorizeSettings-color}
 
-Binds the color field name in the dataSource to the category color.
+Binds color field name in the dataSource to category color.
 
 #### Default Value
 
@@ -1022,7 +1022,7 @@ To set the categorize options with id, text and color fields,
 ### categorizeSettings.fontColor 'string'
 {:#members:categorizeSettings-fontColor}
 
-Binds the fontColor field name in the dataSource to the category font.
+Binds fontColor field name in the dataSource to category font.
 
 #### Default Value
 
@@ -1030,7 +1030,7 @@ Binds the fontColor field name in the dataSource to the category font.
 
 #### Example
 
-To set the categorize options with fontColor,
+To set categorize options with fontColor,
 
 {% highlight html %}
 
@@ -1069,7 +1069,7 @@ To set the categorize options with fontColor,
 ### cellHeight 'string'
 {:#members:cellHeight}
 
-Sets the height for the Schedule cells.
+Sets the height for Schedule cells.
 
 #### Default Value
 
@@ -1077,7 +1077,7 @@ Sets the height for the Schedule cells.
 
 #### Example
 
-To set the cell Height for Schedule,
+To set cell height for Schedule,
 
 {% highlight html %}
 
@@ -1105,7 +1105,7 @@ To set the cell Height for Schedule,
 ### cellWidth 'string'
 {:#members:cellWidth}
 
-Sets the width for the Schedule cells.
+Sets the width for Schedule cells.
 
 #### Default Value
 
@@ -1141,7 +1141,7 @@ To set the cell width for Schedule,
 ### contextMenuSettings 'object'
 {:#members:contextMenuSettings}
 
-Holds all the options related to the context menu settings of the Schedule.
+Holds all options related to the context menu settings of the Schedule.
 
 ### contextMenuSettings.enable 'boolean'
 {:#members:contextMenuSettings-enable}
@@ -1150,7 +1150,7 @@ Holds all the options related to the context menu settings of the Schedule.
 
 * false
 
-When set to true, enables the context menu options available for the Scheduler cells and appointments.
+When set to true, enables the context menu options available for the Schedule cells and appointments.
 
 #### Example
 
@@ -1192,7 +1192,7 @@ To enable the context menu options for Schedule control,
 
 * []
 
-Contains all the default context menu options that are applicable for both Scheduler cells and appointments. It also supports adding custom menu items to the cells or appointment collection.
+Contains all the default context menu options that are applicable for both Schedule cells and appointments. It also supports adding custom menu items to cells or appointment collection.
 
 #### Example
 
@@ -1305,7 +1305,7 @@ To add custom context menu option to the Schedule appointments,
 
 {% endhighlight %}
 
-> **Note:In the above sample, menuItemClick event has been defined, which gets triggered whenever any of the menu options are selected. Here, the condition is checked as, if the id of the selected menu item option contains custom1, then the target appointment’s text and its color gets modified.**
+> **Note:In the above code example, menuItemClick event is defined that triggers when any of the menu options are selected. Here, the condition is checked as, when the id of selected menu item option contains custom1, then the target appointment’s text and its color gets modified.**
 
 ### currentDate 'date'
 {:#members:currentDate}
@@ -1314,11 +1314,11 @@ To add custom context menu option to the Schedule appointments,
 
 * new Date()
 
-Sets the current date of the Scheduler. The scheduler displays initially with the date which is provided here.
+Sets current date of the Schedule. The Schedule displays initially with the date that is provided here.
 
 #### Example
 
-To set the current date for Schedule,
+To set current date for Schedule,
 
 {% highlight html %}
 
@@ -1349,11 +1349,11 @@ To set the current date for Schedule,
 
 * week
 
-Sets the current view of the Scheduler. The scheduler displays initially with the view which is specified here. The available views are day, week, workweek and month, from which any one of the required view can be set to the scheduler.
+Sets current view of the Schedule. Schedule displays initially with the view that is specified here. The available views are day, week, workweek and month, from where any one of the required view can be set to the Schedule.
 
 #### Example
 
-To set the current view as **Day** for Scheduler,
+To set the current view as **Day** for Schedule,
 
 {% highlight html %}
 
@@ -1385,11 +1385,11 @@ To set the current view as **Day** for Scheduler,
 
 * ""
 
-Sets the format of the date for the Scheduler. 
+Sets the date format for Schedule. 
 
 #### Example
 
-To set the date format for Scheduler,
+To set date format for Schedule,
 
 {% highlight html %}
 
@@ -1421,11 +1421,11 @@ To set the date format for Scheduler,
 
 * true
 
-When set to true, enables the previous/Next appointment navigation within the Scheduler.  
+When set to true, enables the previous or next appointment navigation within the Schedule.  
 
 #### Example
 
-To disable the Previous/Next appointment navigation,
+To disable the previous or next appointment navigation,
 
 {% highlight html %}
 
@@ -1458,7 +1458,7 @@ To disable the Previous/Next appointment navigation,
 
 * true
 
-When set to true, enables the resize behaviour of the appointments within the Scheduler. 
+When set to true, enables the resize behaviour of appointments within the Schedule. 
 
 #### Example
 
@@ -1494,11 +1494,11 @@ To disable the appointment resizing,
 
 * false
 
-When set to true, enables the loading of Schedule appointments based on the user demand. With this load on demand concept, the data consumption of the Schedule can be limited.
+When set to true, enables the loading of Schedule appointments based on your demand. With this load on demand concept, the data consumption of the Schedule can be limited.
 
 #### Example
 
-To enable the load on demand functionality for the Scheduler,
+To enable the load on demand functionality for Schedule,
 
 {% highlight html %}
 
@@ -1533,11 +1533,11 @@ To enable the load on demand functionality for the Scheduler,
 
 * false
 
-Saves the current model value to the browser cookies for state maintenance. When the page gets refreshed, Schedule control values will be retained.
+Saves the current model value to browser cookies for state maintenance. When the page gets refreshed, Schedule control values are retained.
 
 #### Example
 
-To enable the persistence for the Scheduler,
+To enable persistence for the Schedule,
 
 {% highlight html %}
 
@@ -1574,7 +1574,7 @@ When set to true, changes the Schedule layout and behaviour as per the common RT
 
 #### Example
 
-To enable RTL for the Scheduler,
+To enable RTL for the Schedule,
 
 {% highlight html %}
 
@@ -1607,12 +1607,12 @@ To enable RTL for the Scheduler,
 
 * 24
 
-Sets the end hour time limit to be displayed on the Scheduler.
+Sets the end hour time limit to be displayed on the Schedule.
 
 #### Example
 
 
-To set the end hour on the Scheduler,
+To set end hour on the Schedule,
 
 {% highlight html %}
 
@@ -1641,7 +1641,7 @@ To set the end hour on the Scheduler,
 ### group 'object'
 {:#members:group}
 
-To configure the resource grouping on the Scheduler.
+To configure resource grouping on the Schedule.
 
 #### Default Value
 
@@ -1650,11 +1650,11 @@ To configure the resource grouping on the Scheduler.
 ### group.resources 'object'
 {:#members:group-resources}
 
-Holds the array of resource names to be grouped on the Scheduler.
+Holds the array of resource names to be grouped on the Schedule.
 
 #### Example
 
-To group the resources on the Scheduler,
+To group the resources on the Schedule,
 
 {% highlight html %}
 
@@ -1702,11 +1702,11 @@ To group the resources on the Scheduler,
 
 * "1120px"
 
-Sets the height of the Scheduler. Accepts both pixel and percentage values. 
+Sets the height of the Schedule. Accepts both pixel and percentage values. 
 
 #### Example 
 
-To set the height of the Scheduler in pixels,
+To set the height of Schedule in pixels,
 
 
 {% highlight html %}
@@ -1736,9 +1736,9 @@ To set the height of the Scheduler in pixels,
 #### Example
 
 
-To set the height of the Scheduler in percentage,
+To set height of Schedule in percentage,
 
-> **Note: To set the percentage values for the Scheduler height, make sure that the parent element which holds the Scheduler div is defined with some specific height. If the Scheduler is not placed within any of the parent element, then make sure that the html and body tags are explicitly defined with some height values either in pixel or percentage.**
+> **Note: To set the percentage values for the Schedule height, define the parent element with some specific height that holds the Scheduler div. When the Schedule is not placed within any of the parent element, define the HTML and body tags explicitly with some height values either in pixel or percentage.**
 
 {% highlight html %}
 
@@ -1786,11 +1786,11 @@ To define the workHours display of the Schedule control.
 
 * true
 
-When set to true, highlights the work hours of the Scheduler.  
+When set to true, highlights the work hours of the Schedule.  
 
 #### Example
 
-To disable the highlighting of Scheduler work hours,
+To disable the highlighting of Schedule work hours,
 
 {% highlight html %}
 
@@ -1825,11 +1825,11 @@ To disable the highlighting of Scheduler work hours,
 
 * null
 
-Sets the start time to depict the start of the working/business hour in a day.
+Sets the start time to depict the start of working or business hour in a day.
 
 #### Example
 
-To set the working start hour for Scheduler
+To set the working start hour for Schedule,
 
 {% highlight html %}
 
@@ -1865,11 +1865,11 @@ To set the working start hour for Scheduler
 
 * null
 
-Sets the end time to depict the end of the working/business hour in a day.
+Sets the end time to depict the end of working or business hour in a day.
 
 #### Example
 
-To set the working end hour for Scheduler
+To set the working end hour for Schedule,
 
 {% highlight html %}
 
@@ -1908,11 +1908,11 @@ To set the working end hour for Scheduler
 
 * false
 
-When set to true, enables the Scheduler to observe Daylight Saving Time for the supported timezones.  
+When set to true, enables the Schedule to observe Daylight Saving Time for supported timezones.  
 
 #### Example
 
-To enable the Daylight Saving time in Scheduler,
+To enable the Daylight Saving time in Schedule,
 
 {% highlight html %}
 
@@ -1945,11 +1945,11 @@ To enable the Daylight Saving time in Scheduler,
 
 * true
 
-When set to true, adapts the Scheduler layout to fit the screen size of the devices on which it renders.
+When set to true, adapts the Schedule layout to fit the screen size of devices on which it renders.
 
 #### Example
 
-To make the Scheduler adaptive,
+To make the Schedule adaptive,
 
 {% highlight html %}
 
@@ -1983,11 +1983,11 @@ To make the Scheduler adaptive,
 * "en-US"
 
 
-Sets the specific culture to the Scheduler.
+Sets the specific culture to the Schedule.
 
 #### Example
 
-To set the French culture on Scheduler – set its locale as fr-FR,
+To set the French culture on Schedule, set its locale as fr-FR,
 
 {% highlight html %}
 
@@ -2013,7 +2013,7 @@ To set the French culture on Scheduler – set its locale as fr-FR,
 
 {% endhighlight %}
 
-> **Note: To set any culture for Scheduler, it is necessary to refer the required minified globalize files of the specific culture. For example, to use fr-FR culture in Scheduler, it is necessary to refer the globalize.culture.fr-FR.min script file. **
+> **Note: To set any culture for Schedule, refer to the required minified globalize files of the specific culture. For example, to use fr-FR culture in Schedule, refer to the globalize.culture.fr-FR.min script file. **
 
 > **Also define the locale words of that specific culture properly. For example, define the locale words for fr-FR culture in a variable ej.Schedule.Locale[“fr-FR”] = { }; under script section.**
 
@@ -2024,11 +2024,11 @@ To set the French culture on Scheduler – set its locale as fr-FR,
 
 * new Date(2099, 12, 31)
 
-Sets the maximum date limit to show up on the Scheduler. Setting maxDate with specific date value disallows the Scheduler to navigate beyond that date.
+Sets the maximum date limit to display on the Schedule. Setting maxDate with specific date value disallows the Schedule to navigate beyond that date.
 
 #### Example
 
-To set the maximum date on the Scheduler,
+To set the maximum date on the Schedule,
 
 
 {% highlight html %}
@@ -2062,11 +2062,11 @@ To set the maximum date on the Scheduler,
 
 * new Date(1900, 01, 01)
 
-Sets the minimum date limit to show up on the Scheduler. Setting minDate with specific date value disallows the Scheduler to navigate beyond that date.
+Sets the minimum date limit to display on the Schedule. Setting minDate with specific date value disallows the Schedule to navigate beyond that date.
 
 #### Example
 
-To set the minimum date on the Scheduler,
+To set the minimum date on the Schedule,
 
 
 {% highlight html %}
@@ -2100,11 +2100,11 @@ To set the minimum date on the Scheduler,
 
 * vertical
 
-Sets the mode of rendering the Scheduler either in a vertical or horizontal direction.
+Sets the mode of rendering the Schedule either in a vertical or horizontal direction.
 
 #### Example
 
-To render the Scheduler in horizontal orientation,
+To render the Schedule in horizontal orientation,
 
 
 {% highlight html %}
@@ -2135,7 +2135,7 @@ To render the Scheduler in horizontal orientation,
 ### prioritySettings 'object'
 {:#members:prioritySettings}
 
-Holds all the options related to the priority settings of the Schedule.
+Holds all the options related to priority settings of the Schedule.
 
 ### prioritySettings.enable 'boolean'
 {:#members:prioritySettings-enable}
@@ -2144,11 +2144,11 @@ Holds all the options related to the priority settings of the Schedule.
 
 * false
 
-When set to true, enables the priority options available for the Scheduler appointments.
+When set to true, enables the priority options available for the Schedule appointments.
 
 #### Example
 
-To enable the priority option in Scheduler,
+To enable the priority option in Schedule,
 
 
 {% highlight html %}
@@ -2184,7 +2184,7 @@ To enable the priority option in Scheduler,
 
 * Array
 
-The dataSource option can accept the JSON object collection which contains the priority related data.
+The dataSource option can accept the JSON object collection that contains the priority related data.
 
 #### Example
 
@@ -2223,7 +2223,7 @@ To set the dataSource with array of JSON object collection,
 
 {% endhighlight %}
 
-The following are the priority fields which holds the appropriate column names from the dataSource.
+The following are the priority fields that holds the appropriate column names from dataSource.
 
 ### prioritySettings.text 'string'
 {:#members:prioritySettings-text }
@@ -2232,7 +2232,7 @@ The following are the priority fields which holds the appropriate column names f
 
 * text
 
-Binds the text field name in the dataSource to the prioritySettings text. These text gets listed out in the priority field of the appointment window.
+Binds text field name in the dataSource to prioritySettings text. These text gets listed out in priority field of the appointment window.
 
 ### prioritySettings.value 'string'
 {:#members:prioritySettings-value }
@@ -2241,7 +2241,7 @@ Binds the text field name in the dataSource to the prioritySettings text. These 
 
 * value
 
-Binds the value field name in the dataSource to the prioritySettings value. These field names can usually accept four priority values by default – high, low, medium & none.
+Binds value field name in the dataSource to prioritySettings value. These field names usually accepts four priority values by default, high, low, medium and none.
 
 #### Example
 
@@ -2288,11 +2288,11 @@ To set the priority options with text and value fields,
 
 * null
 
-Allows the priority field customization in the appointment window to add custom icons denoting the priority level for the appointments.
+Allows priority field customization in the appointment window to add custom icons denoting the priority level for the appointments.
 
 #### Example
 
-To set the template for priority option in Scheduler,
+To set the template for priority option in Schedule,
 
 {% highlight html %}
 
@@ -2353,7 +2353,7 @@ To set the template for priority option in Scheduler,
 
 {% endhighlight %}
 
-> ** Note: Since the prioritySettings contains the default values in its dataSource like none, high, medium and low – therefore the appropriate css classes needs to be created with the same value names to apply it on the template.**
+> ** Note: Since the prioritySettings contains the default values in its dataSource like none, high, medium and low, the appropriate css classes has to be created with the same value names to apply it on the template.**
 
 ### readOnly 'boolean'
 {:#members:readOnly }
@@ -2362,11 +2362,11 @@ To set the template for priority option in Scheduler,
 
 * false
 
-When set to true, disables the interaction with the Scheduler appointments – simply allowing the date and view navigation to occur.
+When set to true, disables the interaction with the Schedule appointments, simply allowing the date and view navigation to occur.
 
 #### Example
 
-To make the Scheduler readOnly,
+To make the Schedule readOnly,
 
 {% highlight html %}
 
@@ -2396,7 +2396,7 @@ To make the Scheduler readOnly,
 ### reminderSettings 'object'
 {:#members:reminderSettings }
 
-Holds all the options related to the reminder settings of the Schedule.
+Holds all the options related to reminder settings of the Schedule.
 
 ### reminderSettings.enable 'boolean'
 {:#members:reminderSettings-enable }
@@ -2405,11 +2405,11 @@ Holds all the options related to the reminder settings of the Schedule.
 
 * false
 
-When set to true, enables the reminder option available for the Scheduler appointments.
+When set to true, enables the reminder option available for the Schedule appointments.
 
 #### Example 
 
-To enable the reminder option in Scheduler,
+To enable the reminder option in Schedule,
 
 {% highlight html %}
 
@@ -2442,11 +2442,11 @@ To enable the reminder option in Scheduler,
 
 * 5
 
-Sets the timing, when the reminders are to be alerted for the Scheduler appointments.
+Sets the timing, when the reminders are to be alerted for the Schedule appointments.
 
 #### Example
 
-To set the alert for Scheduler appointments,
+To set the alert for Schedule appointments,
 
 {% highlight html %}
 
@@ -2479,7 +2479,7 @@ To set the alert for Scheduler appointments,
 
 * null
 
-Defines the specific start and end dates to be rendered in the schedule control. To render such user-specified custom date ranges in the schedule control, it is necessary to set the **currentView** property to **customview**.
+Defines the specific start and end dates to be rendered in the Schedule control. To render such user-specified custom date ranges in the Schedule control, set the **currentView** property to **customview**.
 
 ### renderDates.start 'date'
 {:#members:renderDates-start}
@@ -2488,7 +2488,7 @@ Defines the specific start and end dates to be rendered in the schedule control.
 
 * null
 
-Sets the start of the custom date range to be rendered on the Schedule.
+Sets the start of custom date range to be rendered in the Schedule.
 
 ### renderDates.end 'date'
 {:#members:renderDates-end}
@@ -2501,7 +2501,7 @@ Sets the end limit of the custom date range.
 
 #### Example
 
-To set the custom date range in Scheduler,
+To set the custom date range in Schedule,
 
 {% highlight html %}
 
@@ -2542,7 +2542,7 @@ To set the custom date range in Scheduler,
 
 Template design that applies on the Schedule resource header.
 
-All the field names that are mapped from the dataSource to the appropriate field properties within the resourceSettings can be used within the template.
+All field names that are mapped from the dataSource to appropriate field properties within the resourceSettings can be used within the template.
 
 #### Example
 
@@ -2602,7 +2602,7 @@ To set the resource header template,
 
 * null
 
-Holds all the options related to the resources settings of the Schedule. It is a collection of one or more resource objects, on which the levels of resources are rendered on the Schedule based on the order of the resource data provided within this collection.
+Holds all the options related to the resources settings of the Schedule. It is a collection of one or more resource objects, where the levels of resources are rendered on the Schedule based on the order of the resource data provided within this collection.
 
 ### resources.fields 'string'
 {:#members:resources-fields }
@@ -2611,7 +2611,7 @@ Holds all the options related to the resources settings of the Schedule. It is a
 
 * []
 
-It holds the name of the resource field to be bound to the Scheduler appointments which contains the resource Id.
+It holds the name of the resource field to be bound to the Schedule appointments that contains the resource Id.
 
 #### Example
 
@@ -2661,7 +2661,7 @@ To specify the resource field,
 
 * []
 
-It holds the title name of the resource field to be displayed on the Scheduler appointment window.
+It holds the title name of the resource field to be displayed on the Schedule appointment window.
 
 #### Example
 
@@ -2709,7 +2709,7 @@ To specify the resource title,
 
 * []
 
-A unique resource name which is used for differentiating various resource objects while grouping it in various levels.
+A unique resource name that is used for differentiating various resource objects while grouping it in various levels.
 
 #### Example
 
@@ -2766,7 +2766,7 @@ When set to true, allows multiple selection of resource names, thus creating mul
 
 #### Example
 
-To set the allowMultiple option for a resource object,
+To set allowMultiple option for a resource object,
 
 {% highlight html %}
 
@@ -2819,12 +2819,12 @@ To set the allowMultiple option for a resource object,
 ### resources.resourceSettings 'object'
 {:#members:resources-resourceSettings}
 
-It holds the field names of the resources to be bound to the Scheduler and also the dataSource.
+It holds the field names of the resources to be bound to the Schedule and also the dataSource.
 
 ### resources.resourceSettings.dataSource 'object|array'
 {:#members:resources-resourceSettings-dataSource}
 
-The dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance which contains the resources related data.
+The dataSource option accepts either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance that contains the resources related data.
 
 #### Example
 
@@ -2865,27 +2865,27 @@ To set the dataSource with array of JSON object collection,
 
 {% endhighlight %}
 
-The following are the resourceSettings fields which maps the appropriate column names from the dataSource.
+The following are the resourceSettings fields that maps the appropriate column names from the dataSource.
 
 ### resources.resourceSettings.text 'string'
 {:#members:resources-resourceSettings-text}
 
-Binds the text field name in the dataSource to the resourceSettings **text**. These text gets listed out in the resources field of the appointment window.
+Binds text field name in the dataSource to resourceSettings **text**. These text gets listed out in resources field of the appointment window.
 
 ### resources.resourceSettings.id 'string'
 {:#members:resources-resourceSettings-id }
 
-Binds the id field name in the dataSource to the resourceSettings **id**. 
+Binds id field name in the dataSource to resourceSettings **id**. 
 
 ### resources.resourceSettings.groupId 'string'
 {:#members:resources-resourceSettings-groupId }
 
-Binds the groupId field name in the dataSource to the resourceSettings **groupId**.
+Binds groupId field name in the dataSource to resourceSettings **groupId**.
 
 ### resources.resourceSettings.color 'string'
 {:#members:resources-resourceSettings-color }
 
-Binds the color field name in the dataSource to the resourceSettings **color**. The color specified here gets applied to the Scheduler appointments denoting to which particular resource it belongs. 
+Binds color field name in the dataSource to resourceSettings **color**. The color specified here gets applied to the Schedule appointments denoting to the resource it belongs. 
 
 
 #### Example
@@ -2943,11 +2943,11 @@ To set the resources options with id, text, groupId and color fields,
 ### appointmentClass 'string'
 {:#members:appointmentClass}
 
-Binds the appointmentClass field name in the dataSource. It applies the custom CSS classname to the appointments depicting to which particular resource it belongs.
+Binds appointmentClass field name in the dataSource. It applies custom CSS classname to appointments depicting to the resorce it belongs.
 
 #### Example
 
-To customize the styles of the appointments based on the resources to which it belongs, need to make use of the appointmentClass field with other resources options,
+To customize the styles of the appointments based on the resources it belongs, use the appointmentClass field with other resources options,
 
 {% highlight html %}
 
@@ -3005,7 +3005,7 @@ To customize the styles of the appointments based on the resources to which it b
 
 {% endhighlight %}
 
-> **Note: The custom css class names defined separately for each resources within 'style' tag should be prefixed with the class name '.e-schedule', only then it gets applied to the appointments.**
+> **Note: The custom css class names defined separately for each resources within 'style' tag are prefixed with the class name '.e-schedule', only then it gets applied to the appointments.**
 
 
 ### showAllDayRow 'boolean'
@@ -3015,7 +3015,7 @@ To customize the styles of the appointments based on the resources to which it b
 
 * true
 
-When set to true, displays the all-day row cells on the Scheduler.
+When set to true, displays the all-day row cells on the Schedule.
 
 #### Example 
 
@@ -3052,7 +3052,7 @@ To hide the all-day row cells,
 
 * true
 
-When set to true, displays the current time indicator on the Scheduler.
+When set to true, displays the current time indicator on the Schedule.
 
 #### Example
 
@@ -3089,7 +3089,7 @@ To hide the current time indicator,
 
 * true
 
-When set to true, displays the header bar on the Scheduler.
+When set to true, displays the header bar on the Schedule.
 
 #### Example
 
@@ -3126,7 +3126,7 @@ To hide the Schedule header bar,
 
 * false
 
-When set to true, displays the location field additionally on the Scheduler appointment window.
+When set to true, displays the location field additionally on Schedule appointment window.
 
 #### Example
 
@@ -3165,7 +3165,7 @@ To show the location field,
 
 * true
 
-When set to true, displays the quick window for every single click made on the Scheduler cells/appointments.
+When set to true, displays the quick window for every single click made on the Schedule cells or appointments.
 
 #### Example
 
@@ -3202,7 +3202,7 @@ To hide the quick window,
 
 * true
 
-When set to true, displays the timescale on the left side of the Scheduler.
+When set to true, displays the timescale on the left side of the Schedule.
 
 #### Example
 
@@ -3239,11 +3239,11 @@ To hide the timescale,
 
 * 0
 
-Sets the start hour time range to be displayed on the Scheduler.
+Sets the start hour time range to be displayed on the Schedule.
 
 #### Example
 
-To set the start hour on the Scheduler,
+To set the start hour on the Schedule,
 
 {% highlight html %}
 
@@ -3276,11 +3276,11 @@ To set the start hour on the Scheduler,
 
 * null
 
-Sets either the 12/24 hour time mode on the Scheduler. It accepts either of the enum Value ej.Schedule.TimeMode.Hour12 or ej.Schedule.TimeMode.Hour24.
+Sets either 12 or 24 hour time mode on the Schedule. It accepts either the enum Value ej.Schedule.TimeMode.Hour12 or ej.Schedule.TimeMode.Hour24.
 
 #### Example
 
-To set the 24 hour time mode on the Scheduler,
+To set the 24 hour time mode on the Schedule,
 
 {% highlight html %}
 
@@ -3313,11 +3313,11 @@ To set the 24 hour time mode on the Scheduler,
 
 * null
 
-Sets the timezone for the Scheduler.
+Sets the timezone for the Schedule.
 
 #### Example
 
-To set the timezone on the Scheduler,
+To set the timezone in Schedule,
 
 {% highlight html %}
 
@@ -3346,12 +3346,12 @@ To set the timezone on the Scheduler,
 ### timeZoneCollection 'object'
 {:#members:timeZoneCollection}
 
-Sets the collection of timezone items to be bound to the Scheduler. Only the items bound to this property will gets listed out in the timezone field of the appointment window.
+Sets the collection of timezone items to be bound to the Schedule. Only the items bound to this property gets listed out in the timezone field of the appointment window.
 
 ### timeZoneCollection.dataSource 'object'
 {:#members:timeZoneCollection-dataSource}
 
-Sets the collection of timezone items toThe dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance which contains Scheduler timezones.
+Sets the collection of timezone items to the dataSource that accepts either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance that contains Schedule timezones.
 
 #### Example
 
@@ -3389,26 +3389,26 @@ To set the dataSource with array of JSON object collection,
 
 {% endhighlight %}
 
-The following are the timeZoneCollection fields which maps the appropriate column names from the dataSource.
+The following are the timeZoneCollection fields that maps the appropriate column names from the dataSource.
 
 ### timeZoneCollection.text 'string'
 {:#members:timezoneCollection-text}
 
-Binds the text field name in the dataSource to the timeZoneCollection **text**. These text gets listed out in the timezone fields of the appointment window.
+Binds text field name in the dataSource to timeZoneCollection **text**. These text gets listed out in the timezone fields of the appointment window.
 
 ### timeZoneCollection.id 'string'
 {:#members:timeZoneCollection-id }
 
-Binds the id field name in the dataSource to the timeZoneCollection **id**.  
+Binds id field name in the dataSource to timeZoneCollection **id**.  
 
 ### timeZoneCollection.value 'string'
 {:#members:timeZoneCollection-value }
 
-Binds the value field name in the dataSource to the timeZoneCollection **value**.
+Binds value field name in the dataSource to timeZoneCollection **value**.
 
 #### Example
 
-To define the timeZoneCollection options using all the above specified fields,
+To define the timeZoneCollection options by using all the above specified fields,
 
 {% highlight html %}
 
@@ -3451,11 +3451,11 @@ To define the timeZoneCollection options using all the above specified fields,
 
 * ["Day", "Week", "WorkWeek", "Month", "Agenda"]
 
-Defines the view collection to be displayed on the Scheduler. By default, it shows up all the views namely – Day, Week, WorkWeek and Month.
+Defines the view collection to be displayed on the Schedule. By default, it displays all the views namely, Day, Week, WorkWeek and Month.
 
 #### Example
 
-To display only the day and week view on the Scheduler,
+To display only the day and week view on the Schedule,
 
 {% highlight html %}
 
@@ -3488,11 +3488,11 @@ To display only the day and week view on the Scheduler,
 
 * 100%
 
-Sets the width of the Scheduler. Accepts both pixel and percentage values. 
+Sets the width of the Schedule. Accepts both pixel and percentage values. 
 
 #### Example
 
-To set the width of the Scheduler in pixels,
+To set the width of the Schedule in pixels,
 
 {% highlight html %}
 
@@ -3524,11 +3524,11 @@ To set the width of the Scheduler in pixels,
 
 * true
 
-When set to true, Scheduler allows the validation of recurrence pattern to take place before it is being assigned to the appointments. For example, if one of the instance of recurrence appointment is dragged beyond the next/previous instance of the same recurrence appointment, then a pop-up will show up with the validation message disallowing the drag functionality. 
+When set to true, Schedule allows the validation of recurrence pattern to take place before it is being assigned to the appointments. For example, when one of the instance of recurrence appointment is dragged beyond the next or previous instance of the same recurrence appointment, a pop-up is displayed with the validation message disallowing the drag functionality. 
 
 #### Example
 
-To disable the RecurrenceValidation for Scheduler appointments,
+To disable the RecurrenceValidation for Schedule appointments,
 
 {% highlight html %}
 
@@ -3568,11 +3568,11 @@ Sets the week to display more than one week appointment summary.
 
 * 7
 
-You can display the summary of the multiple weeks appointment by settings this value.
+You can display the summary of multiple week's appointment by setting this value.
 
 #### Example
 
-To set the daysInAgenda of agendaViewSettings.
+To set the daysInAgenda of agendaViewSettings,
 
 {% highlight html %}
 
@@ -3603,7 +3603,7 @@ You can customize the Date column display based on the requirement.
 
 #### Example
 
-To display the StartTime value in the date column of agenda View.
+To display the StartTime value in the date column of agenda View,
 
 {% highlight html %}
 
@@ -3678,7 +3678,7 @@ To display the StartTime value in the time column of agenda View.
 
 * null
 
-You can change/set the starting day of the week.
+You can change or set the starting day of the week.
 
 #### Example
 
@@ -3730,7 +3730,7 @@ To set Tuesday to Saturday as workWeek days of the workWeek.
 ### tooltipSettings 'object'
 {:#members:tooltipSettings}
 
-The tooltip allows to show appointment details in a tooltip while hovering on it.
+The tooltip allows to display appointment details in a tooltip while hovering on it.
 
 ### tooltipSettings.enable 'boolean'
 {:#members:tooltipSettings-enable}
@@ -3739,7 +3739,7 @@ The tooltip allows to show appointment details in a tooltip while hovering on it
 
 * false
 
-To enable/disable the tooltip display.
+To enable or disable the tooltip display.
 
 #### Example
 
@@ -3769,7 +3769,7 @@ To enable the tooltip display.
 
 * null
 
-To customize the tooltip display based on the user requirements. 
+To customize the tooltip display based on your requirements. 
 
 #### Example
 
@@ -3809,7 +3809,7 @@ To display the customized tooltip.
 ### deleteAppointment()
 {:#methods:deleteappointment}
 
-It is used to delete the appointment. The id is based on the argument passed along with this method
+It is used to delete the appointment. The id is based on the argument passed along with this method.
 
 <table class="params">
     <thead>
@@ -3864,7 +3864,7 @@ schObj.deleteAppointment(105); //Appointments id number.
 ### destroy()
 {:#methods:destroy}
 
-Destroy the schedule widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+Destroys the Schedule widget. All the events bound using this._on are unbound automatically and the control is moved to pre-init state.
 
 
 #### Example
@@ -3888,7 +3888,7 @@ schObj.destroy(); // destroy the schedule
 ### exportSchedule()
 {:#methods:exportschedule}
 
-It used to Export the appointments from the schedule control.
+Exports the appointments from the Schedule control.
 
 <table class="params">
     <thead>
@@ -3902,17 +3902,17 @@ It used to Export the appointments from the schedule control.
         <tr>
             <td class="name">argument.action</td>
             <td class="type">string</td>
-            <td class="description">to refer the controller action name to redirect. (For MVC)</td>
+            <td class="description">To refer the controller action name to redirect. (For MVC)</td>
         </tr>
         <tr>
             <td class="name">argument.serverEvent</td>
             <td class="type">string</td>
-            <td class="description">to refer the server event name.(For ASP)</td>
+            <td class="description">To refer the server event name.(For ASP)</td>
         </tr>
         <tr>
             <td class="name">argument.id</td>
             <td class="type">string</td>
-            <td class="description">to pass the id of an appointment, in case if a single appointment needs to be exported. Otherwise, it takes the null value.</td>
+            <td class="description">To pass the id of an appointment, in case of a single appointment to be exported. Otherwise, it takes the null value.</td>
         </tr>
     </tbody>
 </table>
@@ -3963,7 +3963,7 @@ schObj.exportSchedule("ActionName","ExportToICS", 101); // To Export a single ap
 {:#methods:filterappointments}
 
 
-It used search the appointments from appointment list of schedule control.
+Searches the appointments from appointment list of Schedule control.
 
 <table class="params">
     <thead>
@@ -4031,7 +4031,7 @@ var filter=[{
    value: "with",
    predicate: "or"
 }];
-var appointments=schObj.filterAppointments(filter); // Gets the appointments list of schedule control
+var appointments=schObj.filterAppointments(filter); // Gets the appointments list of Schedule control
 </script>
 
 {% endhighlight %}
@@ -4040,7 +4040,7 @@ var appointments=schObj.filterAppointments(filter); // Gets the appointments lis
 {:#methods:getappointments}
 
 
-It is used to get the appointment list of schedule control.
+Gets the appointment list of Schedule control.
 
 #### Example
 
@@ -4084,7 +4084,7 @@ $('#Schedule').ejSchedule({
        }                            
   });
 var schObj = $("#Schedule").data("ejSchedule");
-var appointments=schObj.getAppointments(); // Gets the appointments list of schedule control
+var appointments=schObj.getAppointments(); // Gets the appointments list of Schedule control
 </script>
 
 {% endhighlight %}
@@ -4094,7 +4094,7 @@ var appointments=schObj.getAppointments(); // Gets the appointments list of sche
 {:#methods:print}
 
 
-It is used to print the schedule.
+Prints the Schedule.
 
 #### Example
 
@@ -4145,7 +4145,7 @@ schObj.print();
 ### refreshScroller()
 {:#methods:refreshscroller}
 
-It used to Refresh Scroller while using schedule control in some other controls.
+Refreshes the Scroller while using Schedule control in some other controls.
 
 #### Example
 
@@ -4156,7 +4156,7 @@ It used to Refresh Scroller while using schedule control in some other controls.
 <script>
 $('#Schedule').ejSchedule();
 var schObj = $("#Schedule").data("ejSchedule");
-schObj.refreshScroller(); // To refresh scroller while using schedule control in some other control
+schObj.refreshScroller(); // To refresh scroller while using Schedule control in some other control
 </script>
 
 {% endhighlight %}
@@ -4226,7 +4226,7 @@ schObj.saveAppointment(obj); //obj contains collection of appointment.
 ### searchAppointments()
 {:#methods:searchappointments}
 
-It used search the appointments from appointment list of schedule control.
+Searches the appointments from appointment list of Schedule control.
 
 <table class="params">
     <thead>
@@ -4245,12 +4245,12 @@ It used search the appointments from appointment list of schedule control.
         <tr>
             <td class="name">argument.fields</td>
             <td class="type">string</td>
-            <td class="description">fields value of which feilds need search.</td>
+            <td class="description">field value of fields that requires search.</td>
         </tr>
         <tr>
             <td class="name">argument.filterOperator</td>
             <td class="type">string</td>
-            <td class="description">filterOperator value of the search operation need to done.</td>
+            <td class="description">filterOperator value of the search operation.</td>
         </tr>
         <tr>
             <td class="name">argument.ignoreCase</td>
@@ -4305,7 +4305,7 @@ $('#Schedule').ejSchedule({
        }                            
   });
 var schObj = $("#Schedule").data("ejSchedule");
-var appointments=schObj.searchAppointments("with"); // Gets the appointments list of schedule control
+var appointments=schObj.searchAppointments("with"); // Gets the appointments list of Schedule control
 </script>
 
 {% endhighlight %}
@@ -4313,7 +4313,7 @@ var appointments=schObj.searchAppointments("with"); // Gets the appointments lis
 ### refresh()
 {:#methods:refresh}
 
-It used to Refresh the Schedule control.
+To refresh the Schedule control.
 
 #### Example
 
@@ -4324,7 +4324,7 @@ It used to Refresh the Schedule control.
 <script>
 $('#Schedule').ejSchedule();
 var schObj = $("#Schedule").data("ejSchedule");
-schObj.refresh(); // To refresh the schedule control within the client side event
+schObj.refresh(); // To refresh the Schedule control within the client side event
 </script>
 
 {% endhighlight %}
@@ -4333,7 +4333,7 @@ schObj.refresh(); // To refresh the schedule control within the client side even
 ### refreshAppointment()
 {:#methods:refreshAppointment}
 
-It used to Refresh only the Schedule Control appointments.
+To Refresh only the Schedule control appointments.
 
 #### Example
 
@@ -4344,7 +4344,7 @@ It used to Refresh only the Schedule Control appointments.
 <script>
 $('#Schedule').ejSchedule();
 var schObj = $("#Schedule").data("ejSchedule");
-schObj.refreshAppointment(); // To refresh the schedule control within the client side event
+schObj.refreshAppointment(); // To refresh the Schedule control within the client side event
 </script>
 
 {% endhighlight %}
@@ -4359,7 +4359,7 @@ schObj.refreshAppointment(); // To refresh the schedule control within the clien
 ### actionBegin
 {:#events:actionbegin}
 
-Triggers before the action begin of the schedule.
+Triggers before the action begin of the Schedule.
 
 <table class="params">
     <thead>
@@ -4401,7 +4401,7 @@ Triggers before the action begin of the schedule.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4448,7 +4448,7 @@ Triggers before the action begin of the schedule.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4495,7 +4495,7 @@ Triggers before the action begin of the schedule.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4540,7 +4540,7 @@ Triggers before the action begin of the schedule.
                             <td class="description">Returns the save appointment value.</td>
                         </tr>                                                                                                                                  <tr>
                             <td class="name">model</td>                                                                                                                                                                                                               <td class="type">object</td>
-                            <td class="description">Returns the schedule model.</td>
+                            <td class="description">Returns the Schedule model.</td>
                         </tr>
                         <tr>
                             <td class="name">requestType</td>
@@ -4582,7 +4582,7 @@ Triggers before the action begin of the schedule.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4624,7 +4624,7 @@ Triggers before the action begin of the schedule.
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4661,12 +4661,12 @@ Triggers before the action begin of the schedule.
                     <tr>
                         <td class="name">data</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the target of the appointment we drag.</td>
+                        <td class="description">Returns the target of the appointment you drag.</td>
                     </tr>
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4703,12 +4703,12 @@ Triggers before the action begin of the schedule.
                     <tr>
                         <td class="name">data</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the target of the appointment we resize.</td>
+                        <td class="description">Returns the target of the appointment you resize.</td>
                     </tr>
                     <tr>
                         <td class="name">model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">requestType</td>
@@ -4748,7 +4748,7 @@ $("#Schedule").ejSchedule({
 {:#events:actioncomplete}
 
 
-Triggers after the action completion of the schedule.
+Triggers after the completion of action in the Schedule.
 
 <table class="params">
     <thead>
@@ -4762,7 +4762,7 @@ Triggers after the action completion of the schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when view change action completed:
+        <td class="description">Event parameters when view change action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4785,7 +4785,7 @@ Triggers after the action completion of the schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -4804,7 +4804,7 @@ Triggers after the action completion of the schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when date navigate action completed:
+        <td class="description">Event parameters when date navigate action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4827,7 +4827,7 @@ Triggers after the action completion of the schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -4846,7 +4846,7 @@ Triggers after the action completion of the schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when date change by calendar action completed:
+        <td class="description">Event parameters when date change by calendar action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4869,7 +4869,7 @@ Triggers after the action completion of the schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -4888,7 +4888,7 @@ Triggers after the action completion of the schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when appointment save action completed:
+        <td class="description">Event parameters when appointment save action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4911,7 +4911,7 @@ Triggers after the action completion of the schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -4930,7 +4930,7 @@ Triggers after the action completion of the schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when appointment edit action completed:
+        <td class="description">Event parameters when appointment edit action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4953,7 +4953,7 @@ Triggers after the action completion of the schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -4972,7 +4972,7 @@ Triggers after the action completion of the schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when appointment delete action completed:
+        <td class="description">Event parameters when appointment delete action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -4995,7 +4995,7 @@ Triggers after the action completion of the schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -5014,7 +5014,7 @@ Triggers after the action completion of the schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when appointment dragging action completed:
+        <td class="description">Event parameters when appointment dragging action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -5027,7 +5027,7 @@ Triggers after the action completion of the schedule.
                 <tr>
                     <td class="name">appointment</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the appointment data we dropped.</td>
+                    <td class="description">Returns the appointment data dropped.</td>
                 </tr>
                 <tr>
                     <td class="name">cancel</td>
@@ -5037,7 +5037,7 @@ Triggers after the action completion of the schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -5056,7 +5056,7 @@ Triggers after the action completion of the schedule.
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when appointment resizing action completed:
+        <td class="description">Event parameters when appointment resizing action completes:
         <table class="params">
             <thead>
                 <tr>
@@ -5079,7 +5079,7 @@ Triggers after the action completion of the schedule.
                 <tr>
                     <td class="name">model</td>
                     <td class="type">object</td>
-                    <td class="description">Returns the schedule model.</td>
+                    <td class="description">Returns the Schedule model.</td>
                 </tr>
                 <tr>
                     <td class="name">requestType</td>
@@ -5149,7 +5149,7 @@ Triggers after the appointment is clicked.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5227,12 +5227,12 @@ Triggers after the appointment is deleted.
         <tr>
             <td class="name">argument.appointment</td>
             <td class="type">object</td>
-            <td class="description">Returns the deleted appintment object.</td>
+            <td class="description">Returns the deleted appointment object.</td>
         </tr>
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5317,7 +5317,7 @@ Triggers after the appointment is edited.
         <tr>
             <td class="name">argument.appointment</td>
             <td class="type">object</td>
-            <td class="description">Returns the edited appintment object.</td>
+            <td class="description">Returns the edited appointment object.</td>
         </tr>
         <tr>
             <td class="name">argument.cancel</td>
@@ -5327,7 +5327,7 @@ Triggers after the appointment is edited.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5421,7 +5421,7 @@ Triggers after the appointment is hovered.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5487,12 +5487,12 @@ Triggers after the appointment is saved.
         <tr>
             <td class="name">argument.object</td>
             <td class="type">object</td>
-            <td class="description">Returns the object of appointmentSaved event using appointment window.</td>
+            <td class="description">Returns the object of appointmentSaved event by using appointment window.</td>
         </tr>
         <tr>
             <td class="name">argument.appointment</td>
             <td class="type">object</td>
-            <td class="description">Returns the saved appintment object.</td>
+            <td class="description">Returns the saved appointment object.</td>
         </tr>
         <tr>
             <td class="name">argument.cancel</td>
@@ -5502,7 +5502,7 @@ Triggers after the appointment is saved.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5512,7 +5512,7 @@ Triggers after the appointment is saved.
         <tr>
             <td class="name">argument.object</td>
             <td class="type">object</td>
-            <td class="description">Returns the object of appointmentSaved event using quick window.</td>
+            <td class="description">Returns the object of appointmentSaved event by using quick window.</td>
         </tr>
         <tr>
             <td class="name">argument.cancel</td>
@@ -5522,12 +5522,12 @@ Triggers after the appointment is saved.
         <tr>
             <td class="name">argument.appointment</td>
             <td class="type">object</td>
-            <td class="description">Returns the saved appintment object.</td>
+            <td class="description">Returns the saved appointment object.</td>
         </tr>
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5558,7 +5558,7 @@ $("#Schedule").ejSchedule({
 ### appointmentWindowOpen
 {:#events:appointmentwindowopen}
 
-Triggers before the appointment window is opened.
+Triggers before the appointment window opens.
 
 <table class="params">
     <thead>
@@ -5572,7 +5572,7 @@ Triggers before the appointment window is opened.
         <tr>
             <td class="name">argument.object</td>
             <td class="type">object</td>
-            <td class="description">returns the object of appointmentWindowOpen event while select detail option from quick window.</td>
+            <td class="description">returns the object of appointmentWindowOpen event while selecting the detail option from quick window.</td>
         </tr>
         <tr>
             <td class="name">argument.cancel</td>
@@ -5587,12 +5587,12 @@ Triggers before the appointment window is opened.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.originalEventType</td>
             <td class="type">string</td>
-            <td class="description">Returns the action name which triggers window open.</td>
+            <td class="description">Returns the action name that triggers window open.</td>
         </tr>
         <tr>
             <td class="name">argument.startTime</td>
@@ -5612,7 +5612,7 @@ Triggers before the appointment window is opened.
         <tr>
             <td class="name">argument.object</td>
             <td class="type">object</td>
-            <td class="description">Returns the object of edit appointmentWindowOpen event while select edit appointment/edit series option.</td>
+            <td class="description">Returns the object of edit appointmentWindowOpen event while selecting the edit appointment or edit series option.</td>
         </tr>
         <tr>
             <td class="name">argument.appointment</td>
@@ -5632,7 +5632,7 @@ Triggers before the appointment window is opened.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5665,7 +5665,7 @@ $("#Schedule").ejSchedule({
 {:#events:beforecontextmenuopen}
 
 
-Triggers before the context menu open up.
+Triggers before the context menu opens.
 
 <table class="params">
     <thead>
@@ -5699,22 +5699,22 @@ Triggers before the context menu open up.
         <tr>
             <td class="name">argument.resources</td>
             <td class="type">object</td>
-            <td class="description">Returns the current resource details when multiple resources present otherwise returns null.</td>
+            <td class="description">Returns the current resource details, when multiple resources are present, otherwise returns null.</td>
         </tr>
         <tr>
             <td class="name">argument.appointment</td>
             <td class="type">object</td>
-            <td class="description">Returns the current appointment details while opening the menu from the appointment.</td>
+            <td class="description">Returns the current appointment details while opening the menu from appointment.</td>
         </tr>
         <tr>
             <td class="name">argument.events</td>
             <td class="type">object</td>
-            <td class="description">Returns the object of before open menu target.</td>
+            <td class="description">Returns the object of before opening menu target.</td>
         </tr>
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -5774,7 +5774,7 @@ Triggers after the cell is clicked.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.startTime</td>
@@ -5846,7 +5846,7 @@ Triggers after the cell is clicked twice.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.startTime</td>
@@ -5921,7 +5921,7 @@ Triggers after the cell is hovered.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.target</td>
@@ -5980,7 +5980,7 @@ Triggers while the appointment is being dragged over the workcells.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.target</td>
@@ -6062,7 +6062,7 @@ Triggers when the appointment dragging begins.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.target</td>
@@ -6150,7 +6150,7 @@ Triggers when the appointment is dropped.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -6245,7 +6245,7 @@ Triggers after the context menu is clicked.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -6291,7 +6291,7 @@ Triggers after the Schedule view or date is navigated.
             <td class="name">argument</td>
             <td class="type">object</td>
             <td class="description">Event parameters when view changes:
-            Returns the object of schedule view navigation event
+            Returns the object of Schedule view navigation event.
             <table class="params">
                 <thead>
                     <tr>
@@ -6314,7 +6314,7 @@ Triggers after the Schedule view or date is navigated.
                     <tr>
                         <td class="name">argument.model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">argument.currentView</td>
@@ -6343,7 +6343,7 @@ Triggers after the Schedule view or date is navigated.
         <tr>
             <td class="name">argument</td>
             <td class="type">object</td>
-            <td class="description">Returns the object of previous/next date navigation event:
+            <td class="description">Returns the object of previous or next date navigation event:
             <table class="params">
                 <thead>
                     <tr>
@@ -6361,17 +6361,17 @@ Triggers after the Schedule view or date is navigated.
                     <tr>
                         <td class="name">argument.model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">argument.currentDate</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the new date of the schedule.</td>
+                        <td class="description">Returns the new date of the Schedule.</td>
                     </tr>
                     <tr>
                         <td class="name">argument.previousDate</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the previous date of the schedule.</td>
+                        <td class="description">Returns the previous date of the Schedule.</td>
                     </tr>
                     <tr>
                         <td class="name">argument.target</td>
@@ -6390,7 +6390,7 @@ Triggers after the Schedule view or date is navigated.
         <tr>
             <td class="name">argument</td>
             <td class="type">object</td>
-            <td class="description">Returns the navigation event while change the date using calendar in schedule.
+            <td class="description">Returns the navigation event while changing the date by using calendar in Schedule.
             <table class="params">
                 <thead>
                     <tr>
@@ -6408,17 +6408,17 @@ Triggers after the Schedule view or date is navigated.
                     <tr>
                         <td class="name">argument.model</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the schedule model.</td>
+                        <td class="description">Returns the Schedule model.</td>
                     </tr>
                     <tr>
                         <td class="name">argument.currentDate</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the new date of the schedule.</td>
+                        <td class="description">Returns the new date of the Schedule.</td>
                     </tr>
                     <tr>
                         <td class="name">argument.previousDate</td>
                         <td class="type">object</td>
-                        <td class="description">Returns the previous date of the schedule.</td>
+                        <td class="description">Returns the previous date of the Schedule.</td>
                     </tr>
                     <tr>
                         <td class="name">argument.target</td>
@@ -6475,7 +6475,7 @@ Triggers when the reminder is raised for an appointment.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -6539,7 +6539,7 @@ Triggers while resizing the appointment.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -6620,7 +6620,7 @@ Triggers when the appointment resizing begins.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.type</td>
@@ -6672,7 +6672,7 @@ $("#Schedule").ejSchedule({
 ### resizeStop
 {:#events:resizestop}
 
-Triggers when appointment resizing is stopped.
+Triggers when appointment resizing stops.
 
 <table class="params">
     <thead>
@@ -6686,7 +6686,7 @@ Triggers when appointment resizing is stopped.
         <tr>
             <td class="name">argument.object</td>
             <td class="type">object</td>
-            <td class="description">Returns the object of resizeStop event</td>
+            <td class="description">Returns the object of resizeStop event.</td>
         </tr>
         <tr>
             <td class="name">argument.appointment</td>
@@ -6701,7 +6701,7 @@ Triggers when appointment resizing is stopped.
         <tr>
             <td class="name">argument.model</td>
             <td class="type">object</td>
-            <td class="description">Returns the schedule model.</td>
+            <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
             <td class="name">argument.target</td>
