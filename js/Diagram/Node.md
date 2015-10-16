@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visually represents the geometrical informations, process flow, or entities
+title: Visually represent the geometrical informations, process flow, or entities
 description: How to visually represent the geometrical information and process flows as nodes?
 platform: js
 control: Diagram
