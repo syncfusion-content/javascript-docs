@@ -1111,9 +1111,10 @@ When you use [`remoteSaveAdaptor`](/js/datamanager/data-adaptors#remotesave-adap
 
 The output for the Server Binding of records is as follows:
 
-![](/js/Grid/Editing_images/Editing_img17.png" Caption=")
+![](/js/Grid/Editing_images/Editing_img17.png)
 
-_Edit_
+Edit
+{:.caption}
 
 ![](/js/Grid/Editing_images/Editing_img18.png)
 
@@ -1135,10 +1136,10 @@ The **Grid** control for **JavaScript** allows you to bind and edit data from th
 
 1. Open Visual Studio 2012. In the File menu, click New and select Project. The New Project Dialog box is opened.
 
-![](/js/Grid/Editing_images/Editing_img20.png)
+	![](/js/Grid/Editing_images/Editing_img20.png)
 
-WCF Dataservice
-{:.caption}
+	WCF Dataservice
+	{:.caption}
 
 2. Select ASP.NET Empty Web Application and click OK.
 
@@ -1154,94 +1155,89 @@ WCF Dataservice
 
 
 
-![](/js/Grid/Editing_images/Editing_img21.png)
+   ![](/js/Grid/Editing_images/Editing_img21.png)
 
-Creating a New Entity Data Model
-{:.caption}
+   Creating a New Entity Data Model
+   {:.caption}
 
 8. Select the ADO.NET Entity Data Model template, give the Entity Data Model the name Northwind.edmx, and click the Add button. Click Add to launch the Data Model Wizard. 
 
 9. In the Choose Model Contents step, choose the Generate from database option and click Next.
+  
+    ![](/js/Grid/Editing_images/Editing_img22.png)
 
-
-
-![](/js/Grid/Editing_images/Editing_img22.png)
-
-Entity Data Model Wizard
-{:.caption}
+    Entity Data Model Wizard
+    {:.caption}
 
 10. In the Choose Your Data Connection step, select the NORTHWND.MDF database connection, enter the entities connection settings name NORTHWNDEntities and click Next.
+	
+	 ![](/js/Grid/Editing_images/Editing_img23.png)
 
-![](/js/Grid/Editing_images/Editing_img23.png)
-
-Entity Data Model Wizard
-{:.caption}
+	 Entity Data Model Wizard
+	 {:.caption}
 
 11. In the **Choose Your Database Objects** step, select all the database tables and click **Finish**.
 
-![](/js/Grid/Editing_images/Editing_img24.png)
+     ![](/js/Grid/Editing_images/Editing_img24.png)
 
-Figure 70: Entity Data Model Wizard
-{:.caption}
+     Entity Data Model Wizard
+     {:.caption}
 
-When you are finished, you can see the following image.
+    When you are finished, you can see the following image.
 
-![](/js/Grid/Editing_images/Editing_img25.png)
+	 ![](/js/Grid/Editing_images/Editing_img25.png)
 
-GridDemo
-{:.caption}
+	 GridDemo
+	 {:.caption}
 
 12. Right-click the Models folder in the Solution Explorer window and select the Menu option Add New Item.
 
 13. In the Add New Item dialog, in the Web category, select WCF Data Service, enter Northwnd.svc in the Name textbox and click Add. 
 
-![](/js/Grid/Editing_images/Editing_img26.png)
+     ![](/js/Grid/Editing_images/Editing_img26.png)
 
-Add New Item- GridDemo
-{:.caption}
+     Add New Item- GridDemo
+     {:.caption}
 
 14. The WCF Data Service file is created. Open the Nothwnd.svs.cs file and set the NORTHWNDEntities as a class for the DataService.
 
-{% highlight c# %}
+    ~~~ csharp
 
-public class Northwnd : DataService</* TODO: put your data source class name here.*/>
-Replace the above line with the following:
-public class Northwnd : DataService<NORTHWNDEntities>
+	public class Northwnd : DataService</* TODO: put your data source class name here.*/>
+	Replace the above line with the following:
+	public class Northwnd : DataService<NORTHWNDEntities>
 
-
-{% endhighlight %}
+    ~~~
 
 
 
 15. Add the highlighted line in the Nothwnd.svs.cs.
 
-{% highlight c# %}
-
-public static void InitializeService(DataServiceConfiguration config) 
-    {
-	// TODO: Set rules to indicate which entity sets and service operations are visible, updatable, etc.
-	// Examples:
-	// config.SetEntitySetAccessRule("MyEntityset", EntitySetRights.AllRead);
-	// config.SetServiceOperationAccessRule("MyServiceOperation", ServiceOperationRights.All);
-	config.DataServiceBehavior.MaxProtocolVersion = DataServiceProtocolVersion.V3;
-	config.SetEntitySetAccessRule("*", EntitySetRights.All);
-}
-
-
-{% endhighlight %}
+    ~~~ csharp
+	
+	public static void InitializeService(DataServiceConfiguration config) 
+	{
+		// TODO: Set rules to indicate which entity sets and service operations are visible, updatable, etc.
+		// Examples:
+		// config.SetEntitySetAccessRule("MyEntityset", EntitySetRights.AllRead);
+		// config.SetServiceOperationAccessRule("MyServiceOperation", ServiceOperationRights.All);
+		config.DataServiceBehavior.MaxProtocolVersion = DataServiceProtocolVersion.V3;
+		config.SetEntitySetAccessRule("*", EntitySetRights.All);
+	}
+    ~~~
 
 
 
 16. Refer to the following code sample to get the data from the local server.
 
-{% highlight js %}
+    ~~~ js
 
-var dataManger = ej.DataManager({
-                url: "/model/Northwnd.svc/Orders"
-});
+	var dataManger = ej.DataManager
+	({
+					url: "/model/Northwnd.svc/Orders"
+	});
 
-
-{% endhighlight %}
+    ~~~ 
 
 
 
@@ -1335,7 +1331,8 @@ The following output is displayed as a result of the above code example.
 
 ![](/js/Grid/Editing_images/Editing_img28.png)
 
-_Adding new row position_
+Adding new row position
+{:.caption}
 
 ## Render grid with add new row
 
