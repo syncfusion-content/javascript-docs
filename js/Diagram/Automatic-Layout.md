@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layout nodes and connectors in an organized structure
-description: How to arrange nodes by using the automatic layouts
+description: How to arrange nodes by using the automatic layouts?
 platform: js
 control: Diagram
 documentation: ug
