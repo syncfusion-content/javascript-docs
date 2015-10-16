@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting
-description: exporting
+title: Export Diagram content as image/svg files
+description: How to export the Diagram as image/svg?
 platform: js
 control: Diagram
 documentation: ug

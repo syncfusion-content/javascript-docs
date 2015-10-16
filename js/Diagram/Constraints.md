@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Constraints
-description: constraints
+title: Enable/Disable the optional features
+description: How to enable/disable the optional features?
 platform: js
 control: Diagram
 documentation: ug
 ---
 
 # Constraints
-Constraints are used to enable/disable certain behaviors of the Diagram, node and connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators.
+Constraints are used to enable/disable certain behaviors of the diagram, node and connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators.
 To know more about bitwise operators, refer to [Bitwise Operations](#Bitwise-Operations) 
  
 ## DiagramConstraints 

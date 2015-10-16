@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip
-description: Tooltip
+title: Show tooltips when mouse hovers over objects
+description: How to show/hide tooltips when mouse hovers over objects or during interaction?
 platform: js
 control: Diagram
 documentation: ug

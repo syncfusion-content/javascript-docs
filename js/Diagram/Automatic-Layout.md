@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Automatic-Layout
-description: automatic layout
+title: Layout nodes and connectors in an organized structure
+description: How to arrange nodes by using the automatic layouts?
 platform: js
 control: Diagram
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Automatic Layout
 
-Diagram provides support to auto-arrange the nodes in Diagram area that is referred as **Layout**. It includes the following layout modes.
+Diagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
 
   * Hierarchical Layout
   * Organization Chart
@@ -102,7 +102,7 @@ N> You can ignore a particular Node from layout arrangement by setting its **exc
 
 ## Radial Tree Layout
 
-The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node, indicating the node level in the hierarchy. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
+The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
 
 To arrange nodes in a radial tree structure, you need to set the `type` property of layout as radial tree. The following code illustrates how to arrange the nodes in a radial tree structure. 
 
@@ -425,7 +425,7 @@ Organizational chart layout starts parsing from root and iterate through all its
 
 ### GetLayoutInfo
 
-You can set Chart orientations, chart types and offset to be left between parent and child nodes by overriding the method diagram.model.layout.getLayoutInfo. The getLayoutInfo method is called to configure every subtree of the organizational chart. It takes the following arguments.
+You can set Chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, diagram.model.layout.getLayoutInfo. The getLayoutInfo method is called to configure every subtree of the organizational chart. It takes the following arguments.
 
   * diagram (Reference of diagram)
   * node (Parent node to that options are to be customized)
@@ -761,9 +761,9 @@ $("#diagram").ejDiagram({
 
 ## Customize Layout
 
-Orientation, spacings and position of layout can be customized with a set of properties.
+Orientation, spacings, and position of layout can be customized with a set of properties.
 
-To explore layout properties, refer [Layout Properties](/js/api/ejDiagram "members:layout").
+To explore layout properties, refer to [Layout Properties](/js/api/ejDiagram "members:layout").
 
 ### Layout Orientation 
 

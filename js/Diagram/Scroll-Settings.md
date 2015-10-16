@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scroll-Settings
-description: Scroll settings
+title: Read the current scroll status and programmatically pan Diagrams
+description: How to read/modify the scroll status of the Diagram?
 platform: js
 control: Diagram
 documentation: ug

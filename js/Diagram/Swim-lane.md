@@ -1,7 +1,7 @@
 ---
 layout: post
-title: swim lane
-description: swim lane
+title: Visually represent a business process with its functional blocks/departments
+description: How to visually represent a business process and the relationships among its functional blocks?
 platform: js
 control: Control Name undefined
 documentation: ug

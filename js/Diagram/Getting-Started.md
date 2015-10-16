@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with Syncfusion Essential Diagram for JavaScript
-description: Getting started walk through to create your first Organizational chart diagram. 
+description: Getting started walk through to create your first Flow Diagram and Organizational Chart Diagram. 
 platform: js
 control: Diagram
 documentation: ug

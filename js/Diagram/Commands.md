@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Commands
-description: commands
+title: Explore the frequently used inbuilt commands
+description: How to explore and use the inbuilt commands?
 platform: js
 control: Diagram
 documentation: ug

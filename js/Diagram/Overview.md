@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Explore the features of the Diagram control
+description: What are all the main features of the Diagram control?
 platform: js
 control: Diagram
 documentation: ug
