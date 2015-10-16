@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalize and Localize the diagram control
-description: How to globalize and localize diagram control
+title: Globalize and Localize the Diagram control
+description: How to globalize and localize the Diagram control?
 platform: js
 control: Diagram
 documentation: ug
