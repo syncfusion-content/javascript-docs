@@ -9,7 +9,7 @@ keywords: ejSchedule, API, Essential JS Schedule
 
 # ejSchedule
 
-Html Schedule control.
+HTML Schedule control.
 
 #### Syntax
 
@@ -62,7 +62,7 @@ $('#Schedule').ejSchedule();
 ### allowDragDrop 'boolean'
 {:#members:allowdragdrop}
 
-When set to true, Scheduler allows the appointments to be dragged and dropped to the required time.
+When set to true, Schedule allows the appointments to be dragged and dropped at required time.
 
 #### Default Value
 
@@ -70,7 +70,7 @@ When set to true, Scheduler allows the appointments to be dragged and dropped to
 
 #### Example
 
-To disable the drag and drop functionality
+To disable the drag and drop functionality,
 
 {% highlight html %}
  
@@ -99,7 +99,7 @@ To disable the drag and drop functionality
 ### allowKeyboardNavigation 'boolean'
 {:#members:allowkeyboardnavigation}
 
-When set to true, Scheduler allows the interaction via keyboard shortcut keys. 
+When set to true, Schedule allows interaction through keyboard shortcut keys. 
 
 #### Default Value
 
@@ -107,7 +107,7 @@ When set to true, Scheduler allows the interaction via keyboard shortcut keys.
 
 #### Example
 
-To disable the Keyboard interaction with Schedule
+To disable the Keyboard interaction with Schedule,
 
 
 {% highlight html %}
@@ -128,7 +128,7 @@ To disable the Keyboard interaction with Schedule
 ### appointmentSettings 'object'
 {:#members:appointmentsettings}
 
-It includes the dataSource option and the fields related to Scheduler appointments.
+It includes the dataSource option and the fields related to Schedule appointments.
 
 
 ### appointmentSettings.dataSource 'object/Array'
@@ -139,11 +139,11 @@ It includes the dataSource option and the fields related to Scheduler appointmen
 
 * Array
 
-The dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance which contains Scheduler appointments.
+The dataSource option can accept either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance that contains Schedule appointments.
 
 #### Example
 
-To set the dataSource with array of JSON object collection.
+To set the dataSource with array of JSON object collection,
 
 {% highlight html %}
        
@@ -177,7 +177,7 @@ To set the dataSource with array of JSON object collection.
 #### Example
 
 
-To set the dataSource with DataManager instance
+To set the dataSource with DataManager instance,
 
 {% highlight html %}
 
@@ -210,11 +210,11 @@ To set the dataSource with DataManager instance
 
 * null
 
-It holds either the ej.Query() object or simply the query string which retrieves the specified records from the table.
+It holds either the ej.Query() object or simply the query string that retrieves the specified records from the table.
 
 #### Example
 
-To set the dataSource with DataManager instance and then querying the datamanager to fetch specific records from the Events table,
+To set the dataSource with DataManager instance and querying the datamanager to fetch specific records from the Events table,
 
 {% highlight html %}
 
@@ -249,7 +249,7 @@ To set the dataSource with DataManager instance and then querying the datamanage
 
 * null
 
-Assign the table name from which the records are to be fetched for the Scheduler.
+Assign the table name from where the records are to be fetched for the Schedule.
 
 #### Example
 
