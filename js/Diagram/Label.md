@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add text annotations to diagram objects to textually describe them
-description: How to textually describe nodes and connectors
+title: Add text annotations to Diagram objects to textually describe them
+description: How to textually describe nodes and connectors?
 platform: js
 control: Diagram
 documentation: ug
