@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tracks the history of changes and reverts/restores them when required
+title: Track the history of changes and revert/restore them when required
 description: How to revert/restore the changes?
 platform: js
 control: Diagram
