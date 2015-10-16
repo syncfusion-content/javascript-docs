@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the size and appearance of single or multiple diagram pages
-description: How to customize the size and appearance of diagram pages
+title: Customize the size and appearance of single or multiple Diagram pages
+description: How to customize the size and appearance of the Diagram pages?
 platform: js
 control: Diagram
 documentation: ug
