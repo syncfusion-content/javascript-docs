@@ -45,7 +45,13 @@ The default value is Overlay.
 
 The following screenshot illustrates the output.
 
-![]("animations_images\animations_img2.png" Caption="Before target click")
+![](animations_images\animations_img2.png)
 
-![]("animations_images\animations_img3.png" Caption="After target click")
+Before target click
+{:.caption}
+
+![](animations_images\animations_img3.png)
+
+After target click
+{:.caption}
 

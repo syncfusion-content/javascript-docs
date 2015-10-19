@@ -13,7 +13,7 @@ documentation: ug
 
 AngularJS is an open-source web application framework. AngularJS extends **HTML** with new attributes. AngularJS is a **JavaScript** framework. You can add it to an **HTML** page with a **&lt;script&gt;** tag. AngularJS extends **HTML** attributes with Directives, and binds data to **HTML** with Expressions. The support is achieved by an integration JS library file. You can know more about the Angular support in the following link location. 
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 Sometime you can use menu value for retrieving information from the database by performing related action that is selected in menu. You can achieve this after the selected menu action is performed in the server side.
 
@@ -154,7 +154,7 @@ Add the following code in your style section.
 
 The following screenshot displays the output of the above code example.       
 
-![]("/js/Menu/Integration_images/Integration_img1.png") 
+![](/js/Menu/Integration_images/Integration_img1.png) 
 
 
 ##Knockout binding
@@ -256,6 +256,6 @@ Add the following code in your style section.
 
 The following screenshot displays the output of the above code.              
 
-![]("/js/Menu/Integration_images/Integration_img2.png") 
+![](/js/Menu/Integration_images/Integration_img2.png) 
 
 

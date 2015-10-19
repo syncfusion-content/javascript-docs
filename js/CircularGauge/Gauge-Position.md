@@ -87,5 +87,5 @@ The possible enum values for the gaugePosition are as follows:
 
 Execute the above code to render the following output.
 
-![]("/js/CircularGauge/Gauge-Position_images/Gauge-Position_img1.png" Caption="")
+![](/js/CircularGauge/Gauge-Position_images/Gauge-Position_img1.png" Caption=")
 

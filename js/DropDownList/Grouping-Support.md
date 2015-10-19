@@ -57,7 +57,7 @@ Configure the **DataSource** and initialize the **DropDownList** widget in the S
 
 The above code example illustrates the following output.
 
-![]("/js/DropDownList/Grouping-Support_images/Grouping-Support_img1.png") 
+![](/js/DropDownList/Grouping-Support_images/Grouping-Support_img1.png) 
 
 ## Grouping Support using UL and LI structure
 
@@ -100,5 +100,5 @@ Add the input element and the UL and LI structures to group the **DropDownList**
 
 {% endhighlight %}
 
-![]("/js/DropDownList/Grouping-Support_images/Grouping-Support_img2.png") 
+![](/js/DropDownList/Grouping-Support_images/Grouping-Support_img2.png) 
 

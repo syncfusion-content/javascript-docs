@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Integration
 description: integration
@@ -15,17 +15,17 @@ documentation: ug
 
 Angular JS is an open-source web application framework. Angular JS extends **HTML** with new attribute. It can be added to **HTML** page with **&lt;script&gt;** tag. The library reads in **HTML** that contains additional custom tag attributes. **Angular JS** extends **HTML** attribute with **Directives** and binds data to **HTML** with **Expressions**. 
 
-Using this, you can view the equivalent **XHTML** code of the content in the editing area while you type.
+By using this, you can view the equivalent **XHTML** code of the content in the editing area while you type.
 
-To know more details about the **Angular binding**, refer to the following link location,
+To know more details about the **Angular binding**, refer to the following link location.
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 You can bind data to the **RTE** control through **angular support**.
 
 The following example illustrates how to bind the **RTE** data with simple text box as a two-way binding.
 
-Add the following code in your **HTML** page to initialize the **RTE** control.
+Add the following code example in your **HTML** page to initialize the **RTE** control.
 
 {% highlight html %}
 
@@ -47,16 +47,17 @@ Add the following code in your **HTML** page to initialize the **RTE** control.
 
 {% endhighlight %}
 
+![](Integration_images/Integration_img1.png)
 
-![]("/js/RichTextEditor/Integration_images/Integration_img1.png") 
+
 
 ## Knockout Binding
 
 **KnockoutJS** uses a **Model-View-View Model** (**MVVM**) design pattern, where the model is your stored data and the view is the visual representation of that data (**UI**) and View Model acts as the intermediary between the model and the view. Sometimes you may need to enter some text box value to replicate in **RTE** content area. In such situations, use the knockout binding feature to control the contents from other view field.
 
-If you want to create an **HTML** page for your application and there is a live demo for your **HTML** page, then it is better to customize your **HTML** page. You can achieve this by using **knockout** **binding** with **RTE**.
+To create an **HTML** page for your application and when there is a live demo for your **HTML** page, then it is better to customize your **HTML** page. You can achieve this by using **knockout** **binding** with **RTE**.
 
-In the following example, one simple text area and one **RTE** control have been created. Added is some **HTML** code("&lt;h1&gt;Description: The Rich Text Editor (RTE) control is an easy to render in client side. &lt;/h1&gt;”) in the normal text area. When you run the sample, you can get the result of this **RTE** text area. At runtime, add the following **HTML** code in normal text area.
+In the following example, one simple text area and one **RTE** control are created. Added is some **HTML** code("&lt;h1&gt;Description: The Rich Text Editor (RTE) control is an easy to render in client side. &lt;/h1&gt;”) in the normal text area. When you run the sample, you can get the result of this **RTE** text area. At runtime, add the following **HTML** code example in normal text area.
 
 “&lt;div style="border: 2px solid #a1a1a1;padding: 10px 40px;background: #dddddd; width: 300px; border-radius: 25px;"&gt;&lt;h2&gt;Demo of current html content in text area&lt;/h2&gt;&lt;/div&gt;”
 
@@ -91,5 +92,7 @@ Add the following code in your **HTML** page to initialize the **RTE**.
 {% endhighlight %}
 
 
-![]("/js/RichTextEditor/Integration_images/Integration_img2.png") 
+
+![](Integration_images/Integration_img2.png)
+
 

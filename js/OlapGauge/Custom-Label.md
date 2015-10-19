@@ -113,5 +113,5 @@ $(function() {
 });
 {% endhighlight %}
 
-![]("/js/OlapGauge/Custom-Label_images/Custom-Label_img3.png") 
+![](/js/OlapGauge/Custom-Label_images/Custom-Label_img3.png) 
 

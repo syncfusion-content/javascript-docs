@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Toolbar-Support
 description: toolbar support
@@ -9,11 +9,11 @@ documentation: ug
 
 # Toolbar Support
 
-The **RichTextEditor** control provides a number of tool items that provide a rich look to the text entered in the editing area. It brings to the Web popular editing features found in desktop word processors such as **Microsoft Word** and **OpenOffice.org Writer.**
+The **RichTextEditor** control provides a number of tool items that provide a rich look to the text entered in the editing area. It also provides the Web popular editing features found in desktop word processors such as **Microsoft Word** and **OpenOffice.org Writer.**
 
 ## Text Formatting 
 
-All the formatting tools allow you to change the appearance of text. Formatted text is visually interesting and easy for the visitor to read. Formatting tags provide emphasis or act as markers to help the visitor, find information. Some text styling options are also available as a drop-down list. Upon clicking them, the list opens and you can select a styling option.
+All the formatting tools allow you to change the appearance of text. Formatted text is visually interesting and easy to read. Formatting tags provide emphasis or act as markers to help the visitor, find information. Some text styling options are also available as a drop-down list. On clicking them, the list opens and you can select a styling option.
 
 ## List of Toolbar Items
 
@@ -32,18 +32,19 @@ All the formatting tools allow you to change the appearance of text. Formatted 
 * Predefined sets of formatting features that can be applied to block and to make elements of the document inline.
 * Upper & lower case conversion
 * Indent
+* Fullscreen
 
 
 
 ### Undo and Redo
 
-As the name explains, the **undo** function allows you to undo a number of recent actions in an editing area. To go along with **Undo** is **Redo**. Using this tool, you can avoid mistakes while editing.
+As the name explains, the **undo** function allows you to undo a number of recent actions in an editing area. To go along with **Undo** is **Redo**. You can avoid errors while editing, by using this tool.
 
 ### Clipboard action
 
-Most used clipboard actions are cut, copy, and paste. These tools are used to rearrange the content within your editing area. You can copy and paste the images or text from locations other than the editing area.
+The most used clipboard actions are cut, copy, and paste. These tools are used to rearrange the content within your editing area. You can copy and paste the images or text from locations other than the editing area.
 
-To render RichTextEditor with the above toolbar options, include the following code in your **HTML** page.
+To render RichTextEditor with the above toolbar options, include the following code example in your **HTML** page.
 
 
 
@@ -56,7 +57,7 @@ To render RichTextEditor with the above toolbar options, include the following c
 
 {% endhighlight %}
 
-Add the following code in your script section.
+Add the following code example in your script section.
 
 {% highlight js %}
 
@@ -65,28 +66,32 @@ Add the following code in your script section.
           width: "850px",
           showFooter: true,
           tools: {
-             font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
-             style: ["bold", "italic", "underline", "strikethrough"],
-             alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
-             lists: ["unorderedList", "orderedList"],
-             copyPaste: ["cut", "copy", "paste"],
-             doAction: ["undo", "redo"],
-             clear: ["clearFormat", "clearAll"],
-             links: ["createLink"],
-             images: ["image", "video"],
-             tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"],
-             scripts: ["superscript", "subscript"],
-             casing: ["upperCase", "lowerCase"],
-             paragraph: ["paragraph"]
-          }
+					formatStyle: ["format"],
+                    font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
+                    style: ["bold", "italic", "underline", "strikethrough"],
+                    alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
+                    lists: ["unorderedList", "orderedList"],
+                    clipboard: ["cut", "copy", "paste"],
+                    doAction: ["undo", "redo"],
+					indenting: ["outdent", "indent"],
+                    clear: ["clearFormat", "clearAll"],
+                    links: ["createLink","removeLink"],
+                    images: ["image"],
+					media:["video"],
+                    tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"],
+                    effects: ["superscript", "subscript"],
+                    casing: ["upperCase", "lowerCase"],
+					view:["fullScreen"]
+                }
        });
     });
 
 {% endhighlight %}
 
-![]("/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img1.png")
 
-The following image consists of formatted content by using the available toolbar items in **RTE** control.
+![](Toolbar-Support_images/Toolbar-Support_img1.png)
 
-![]("/js/RichTextEditor/Toolbar-Support_images/Toolbar-Support_img2.png")
+The following screenshot consists of formatted content by using the available toolbar items in **RTE** control.
 
+
+![](Toolbar-Support_images/Toolbar-Support_img2.png)

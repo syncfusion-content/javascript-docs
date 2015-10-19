@@ -74,7 +74,7 @@ The following code example shows you how to bind the hierarchical local data int
 
 The output of the above steps is as follows:
 
-![]("/js/TreeGrid/Data-Binding_images/Data-Binding_img1.png")
+![](/js/TreeGrid/Data-Binding_images/Data-Binding_img1.png)
 
 ###Self-Referential Data Binding (Flat Data)
 
@@ -161,5 +161,5 @@ TreeGrid is rendered from Self-Referential data structures by providing two fiel
 
 The following screenshot shows the output of the above steps,
 
-![]("/js/TreeGrid/Data-Binding_images/Data-Binding_img2.png")
+![](/js/TreeGrid/Data-Binding_images/Data-Binding_img2.png)
 

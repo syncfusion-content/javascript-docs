@@ -11,7 +11,7 @@ documentation: ug
 
 ## Title
 
-By using the title option, you can add the **text** as well as customize its [font](../api/ejchart.html#members:title-font).
+By using the title option, you can add the [text](../api/ejchart.html#members:title-text) as well as customize its [font](../api/ejchart.html#members:title-font).
 
 {% highlight js %}
 
@@ -39,14 +39,17 @@ By using the title option, you can add the **text** as well as customize its [fo
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Title_images/Chart-Title_img1.png" Caption="Chart with title")
+![](/js/Chart/Chart-Title_images/Chart-Title_img1.png)
+
+Chart with title
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/subtitle) here to view the Chart Title online demo sample.
 
 
 ### Title Alignment
 
-You can change the title alignment to *center*, *far* and *near* by using the **textAlignment** property of the chart title. 
+You can change the title alignment to *center*, *far* and *near* by using the [textAlignment](../api/ejchart.html#members:title-textalignment) property of the chart title. 
 
 {% highlight js %}
 
@@ -67,10 +70,13 @@ You can change the title alignment to *center*, *far* and *near* by using the **
 
 {% endhighlight %} 
 
-![]("/js/Chart/Chart-Title_images/Chart-Title_img2.png" Caption="Title text alignment")
+![](/js/Chart/Chart-Title_images/Chart-Title_img2.png)
+
+Title text alignment
+{:.caption}
 
 
-## Adding Subtitle to chart
+## Add Subtitle to the chart
 
 By using the subTitle option, you can add the [subTitle](../api/ejchart.html#members:title-subtitle) to the chart title and customize its [font](../api/ejchart.html#members:title-subtitle-font). 
 
@@ -102,12 +108,15 @@ By using the subTitle option, you can add the [subTitle](../api/ejchart.html#mem
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Title_images/Chart-Title_img3.png" Caption="Title and SubTitle")
+![](/js/Chart/Chart-Title_images/Chart-Title_img3.png)
+
+Title and SubTitle
+{:.caption}
 
 
 ### Subtitle Alignment
 
-To change the subtitle alignment to *center*, *far* and *near* by using the **textAlignment** property of the subTitle.
+You can change the subtitle alignment to *center*, *far* and *near* by using the [textAlignment](../api/ejchart.html#members:title-subtitle-textalignment) property of the subTitle.
 
 {% highlight js %}
 
@@ -130,5 +139,8 @@ To change the subtitle alignment to *center*, *far* and *near* by using the **te
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Title_images/Chart-Title_img4.png" Caption="Subtitle text alignment")
+![](/js/Chart/Chart-Title_images/Chart-Title_img4.png)
+
+Subtitle text alignment
+{:.caption}
 

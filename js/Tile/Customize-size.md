@@ -41,5 +41,5 @@ Add the following code inside the **script** tag.
 
 
 
-![]("/js/Tile/Customize-size_images/Customize-size_img1.png")
+![](/js/Tile/Customize-size_images/Customize-size_img1.png)
 

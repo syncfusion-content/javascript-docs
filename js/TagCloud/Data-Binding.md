@@ -94,7 +94,7 @@ Map Local datasource to corresponding fields in **TagCloud** control as follows,
 
 The following screenshot displays the **TagCloud** control with local data binding.
 
-![]("/js/TagCloud/Data-Binding_images/Data-Binding_img1.png")
+![](/js/TagCloud/Data-Binding_images/Data-Binding_img1.png)
 
 
 
@@ -163,7 +163,7 @@ The following screenshot displays a **TagCloud** control with remote data bindin
 
 
 
-![]("/js/TagCloud/Data-Binding_images/Data-Binding_img2.png") 
+![](/js/TagCloud/Data-Binding_images/Data-Binding_img2.png) 
 
 
 
@@ -180,7 +180,7 @@ Two-way binding supports both the processes – it applies the observable values
 
 For more information about the knockout binding, refer the following link location,
 
-<http://docs.syncfusion.com/js/knockoutjs>
+<http://help.syncfusion.com/js/knockoutjs>
 
 The following code example depicts you the way to bind data to the **TagCloud** widget using knockout support,
 
@@ -246,7 +246,7 @@ The following code example depicts you the way to bind data to the **TagCloud** 
 
 Execute the above code to render the following output.
 
-![]("/js/TagCloud/Data-Binding_images/Data-Binding_img3.png")
+![](/js/TagCloud/Data-Binding_images/Data-Binding_img3.png)
 
 
 
@@ -265,7 +265,7 @@ Apply the plugin and property assigning to the **TagCloud** widget element throu
 
 To know more detail about the Angular binding, refer the following link location,
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 The following example depicts you the way to bind data to the **TagCloud** widget using angular support,
 
@@ -324,7 +324,7 @@ The following example depicts you the way to bind data to the **TagCloud** widge
 
 The following screenshot illustrates a **TagCloud** control using Angular databinding,
 
-![]("/js/TagCloud/Data-Binding_images/Data-Binding_img4.png")
+![](/js/TagCloud/Data-Binding_images/Data-Binding_img4.png)
 
 
 

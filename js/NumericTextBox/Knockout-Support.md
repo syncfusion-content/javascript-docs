@@ -22,7 +22,7 @@ documentation: ug
 
 For more information about the **knockout binding**, refer the following online documentation in the given link location,
 
-<http://docs.syncfusion.com/js/knockoutjs>
+<http://help.syncfusion.com/js/knockoutjs>
 
 The following example depicts the way to bind data to the **NumericTextBox** widgets through **knockout** **support** that enables and populates data to the **NumericTextBox** widget based on the value set to the other **NumericTextBox** widget.
 
@@ -89,7 +89,13 @@ The output of Knockout binding in NumericTextBox .
 
 
 
-![]("/js/NumericTextBox/Knockout-Support_images/Knockout-Support_img1.png" Caption="NumericTextBox at initial load")
+![](/js/NumericTextBox/Knockout-Support_images/Knockout-Support_img1.png)
 
-![]("/js/NumericTextBox/Knockout-Support_images/Knockout-Support_img2.png" Caption="NumericTextBox with knockout binding")
+NumericTextBox at initial load
+{:.caption}
+
+![](/js/NumericTextBox/Knockout-Support_images/Knockout-Support_img2.png)
+
+NumericTextBox with knockout binding
+{:.caption}
 

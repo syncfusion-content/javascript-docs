@@ -73,7 +73,7 @@ The following screenshot displays the output.
 
 
 
-![]("/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img1.png") 
+![](/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img1.png) 
 
 
 ## Customizing Upload Dialog
@@ -139,7 +139,7 @@ The following screenshot displays the output.
 
 
 
-![]("/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img2.png") 
+![](/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img2.png) 
 
 
 ## Show or Hide File details 
@@ -253,7 +253,7 @@ The following screenshot displays the output.
 
 
 
-![]("/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img3.png")
+![](/js/UploadBox/Appearance-and-styling_images/Appearance-and-styling_img3.png)
 
 
 

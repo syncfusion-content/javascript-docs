@@ -52,5 +52,5 @@ documentation: ug
 
 
 
-![]("/js/Grid/Hierarchy-Grid_images/Hierarchy-Grid_img1.png")
+![](/js/Grid/Hierarchy-Grid_images/Hierarchy-Grid_img1.png)
 

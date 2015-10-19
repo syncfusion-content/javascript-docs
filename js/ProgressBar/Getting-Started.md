@@ -15,7 +15,7 @@ This section briefly describes how to create a **ProgressBar** control using **J
 The following screenshot shows the **ProgressBar.**
 
 
-![]("/js/ProgressBar/Getting-Started_images/Getting-Started_img1.png") 
+![](/js/ProgressBar/Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a ProgressBar
 
@@ -116,7 +116,7 @@ The following screenshot displays a **ProgressBar** control.
 
 
 
-![]("/js/ProgressBar/Getting-Started_images/Getting-Started_img2.png") 
+![](/js/ProgressBar/Getting-Started_images/Getting-Started_img2.png) 
 
 Include the following code within the **&lt;head&gt;** tag to change the page layout.
 
@@ -210,11 +210,11 @@ You can change themes or appearance of the ProgressBar as required.
 The final output is displayed as follows.
 
 
-![]("/js/ProgressBar/Getting-Started_images/Getting-Started_img3.png") 
+![](/js/ProgressBar/Getting-Started_images/Getting-Started_img3.png) 
 
-![]("/js/ProgressBar/Getting-Started_images/Getting-Started_img4.png") 
+![](/js/ProgressBar/Getting-Started_images/Getting-Started_img4.png) 
 
-![]("/js/ProgressBar/Getting-Started_images/Getting-Started_img5.png") 
+![](/js/ProgressBar/Getting-Started_images/Getting-Started_img5.png) 
 
 You can also bind an event at the start and finish of a ProgressBar by using the start, complete and change properties of the ProgressBar.
 

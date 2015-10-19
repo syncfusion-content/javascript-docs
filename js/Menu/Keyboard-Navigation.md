@@ -141,12 +141,12 @@ Add the following code in your style section.
 
 Following screenshot displays the output of the above code. 
 
-![]("/js/Menu/Keyboard-Navigation_images/Keyboard-Navigation_img1.png")
+![](/js/Menu/Keyboard-Navigation_images/Keyboard-Navigation_img1.png)
 
 
 When you press **alt+j,** the first item of the **Menu** control only gets focused as displayed in the following screenshot.
 
-![]("/js/Menu/Keyboard-Navigation_images/Keyboard-Navigation_img2.png")
+![](/js/Menu/Keyboard-Navigation_images/Keyboard-Navigation_img2.png)
 
 
 Similarly you can access the **Menu** control using keyboard itself.

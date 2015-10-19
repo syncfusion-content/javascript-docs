@@ -1,184 +1,78 @@
 ---
 layout: post
-title: Page-Settings
-description: page settings
+title: Customize the size and appearance of single or multiple Diagram pages
+description: How to customize the size and appearance of the Diagram pages?
 platform: js
 control: Diagram
 documentation: ug
 ---
 
-# Page Settings
 
-**Page settings** enable you to customize the width and height of the Diagram page. The properties of Page setting are listed as follows.
+# Page Settings 
 
-<table>
-<tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-pageWidth</td><td>
-number</td><td>
-Gets or sets the width of the page</td></tr>
-<tr>
-<td>
-pageHeight</td><td>
-number</td><td>
-Gets or sets the height of the page</td></tr>
-<tr>
-<td>
-multiplePage</td><td>
-boolean</td><td>
-Gets or sets whether  multiple page option is enabled or not</td></tr>
-<tr>
-<td>
-pageBorderWidth</td><td>
-number</td><td>
-Gets or sets the border width of the page</td></tr>
-<tr>
-<td>
-pageBackgroundColor</td><td>
-string</td><td>
-Gets or sets the background color of the page</td></tr>
-<tr>
-<td>
-pageBorderColor</td><td>
-string</td><td>
-Gets or sets the border color of the page</td></tr>
-<tr>
-<td>
-pageMargin</td><td>
-number</td><td>
-Gets or sets the  margin of the page</td></tr>
-<tr>
-<td>
-showPageBreak</td><td>
-boolean</td><td>
-Gets or sets whether  page break option is enabled or not</td></tr>
-<tr>
-<td>
-pageOrientation</td><td>
-ej.datavisualization.Diagram.PageOrientations</td><td>
-Gets or sets the orientation of the page</td></tr>
-</table>
+Page settings enable to customize the appearance, width, and height of the Diagram page.
 
-The following code illustrates how to customize Page Settings
+![](/js/Diagram/Page-Settings_images/Page-Settings_img1.png)
+
+## Page size and appearance
+
+The size and appearance of the Diagram pages can be customized with the `pageSettings` property. 
+
+The `pageWidth` and `pageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with a set of appearance specific properties.
+To explore those properties, refer [Page Settings](/js/api/ejDiagram "members:pagesettings").
+
+You can also customize the appearance of off-page regions with the property `backgroundColor`.
+
+The following code illustrates how to customize the page size and the appearance of page and off-page.
 
 {% highlight js %}
 
-//set page setting properties
-$("#Diagram").ejDiagram({
-   pageSettings: {
-      pageHeight: 300,
-      pageWidth: 450,
-      pageBorderWidth: 4,
-      pageBackgroundColor: "lightblue",
-      pageBorderColor: "black",
-      pageMargin: 35,
-      showPageBreaks: true,
-      multiplePage: true,
-      pageOrientation: ej.datavisualization.Diagram.Orientation.Portrait
-   }
-});
-
+    $("#diagram").ejDiagram({
+        //Sets off-page background
+        backgroundColor: "whitesmoke",
+        pageSettings: {
+            //Sets page size
+            pageHeight: 500,
+            pageWidth: 500,
+            
+            //Customizes the appearance of page
+            pageBorderWidth: 4,
+            pageBackgroundColor: "white",
+            pageBorderColor: "lightgray",
+            pageMargin: 25,
+            showPageBreak: true,
+            multiplePage: true,
+            pageOrientation: ej.datavisualization.Diagram.PageOrientations.Portrait
+        }
+    });
 {% endhighlight %}
 
-![]("/js/Diagram/Page-Settings_images/Page-Settings_img1.png") 
+
+![](/js/Diagram/Page-Settings_images/Page-Settings_img2.png)
+
+![](/js/Diagram/Page-Settings_images/Page-Settings_img3.png)
+
+N> When the pageWidth and pageHeight are not specified, the rectangular region that completely fits all nodes and connectors are considered as page size.
 
 ## MultiplePage and PageBreaks
 
-When `multiplePage` is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. `pageBreaks` is used as a visual guide to see how pages are split into multiple pages.
+When MultiplePage is enabled, size of the page dynamically increases or decreases in multiples of page width and height and completely fits diagram within the page boundaries. Page Breaks is used as a visual guide to see how pages are split into multiple pages.
 
-![]("/js/Diagram/Page-Settings_images/Page-Settings_img2.png") 
+![](/js/Diagram/Page-Settings_images/Page-Settings_img4.png)
 
-## AutoScroll
-
-Autoscroll feature automatically scrolls the Diagram whenever the node or connector is beyond the boundary of the diagram so that, it is always visible during dragging, resizing and multiple selection operations. Autoscroll is automatically triggered when, any one of the following is dragged towards edges of the diagram.
-
-* Node dragging
-* Node's control points: resizer, rotator
-* Connector's control points: end point, segment
-* Rubber band selection
-* Dropping item from palette
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-scrollLimit</td><td>
-string</td><td>
-Gets or sets the scroll limit of the page</td></tr>
-<tr>
-<td>
-scrollableArea</td><td>
-object</td><td>
-Gets or sets the scrollable region of the page</td></tr>
-<tr>
-<td>
-autoScrollBorder</td><td>
-object</td><td>
-Gets or sets the auto scroll starting point </td></tr>
-</table>
-_Properties table_
-
-**Autoscroll border**
-
-The autoscroll border is used to specify the distance, from where the autoscroll is to be enabled when moving the node or connector. The default value is set as 15 for all sides (left, right, top and bottom). The following code example illustrates how to set autoscroll border.
+`multiplePage` and `showPageBreak` properties of page settings allow you to enable/disable multiple pages and page breaks respectively.
+The following code illustrates how to enable multiple page and page break lines.
 
 {% highlight js %}
 
-pageSettings: 
-    { 
-        // Specifies autoscroll border
-        autoScrollBorder: { left: 150, top: 15, right:15, bottom: 15}  
-    }  
+      $("#diagram").ejDiagram({      
+            pageSettings: {            
+                  //Enables the multiple page            
+                  multiplePage: true,            
+                  //Enables the page break lines            
+                  showPageBreak: true,                  
+            }      
+      });
 
 {% endhighlight %}
 
-**Scroll limit**
-
-The scroll limit allows you to scroll the diagram page along X and Y axis based on the options specified. 
-
-* By default the value is set as `infinity` (can scroll in all directions, without any restrictions). 
-* When `scrollLimit` is set as `diagram`, you are restricted to scroll the page beyond the diagram content. 
-* By specifying the value as `limited` you can set the limit of the scrollable area through `scrollableArea` property. 
-
-N>  Refer to the [scrollable area](/js/Diagram/Page-Settings#scrollable-area) for more details.
-
-The following code example illustrates how to specify scroll limit. 
-
-{% highlight js %}
-
-//Scroll limit for diagram by default
-pageSettings: { scrollLimit:"infinity" }
-
-{% endhighlight %}
-
-### Scrollable Area
-
-You can restrict scrolling beyond a particular rectangular area and the rectangular area is specified using `scrollableArea` property. This is applicable only when the `scrollLimit` for the diagram is specified as `limited`. The following code example illustrates how to customize scrollable area of diagram.
-
-{% highlight js %}
-
-pageSettings: {
-   //Scrolllimit for diagram as limited
-   scrollLimit: "limited",
-
-   //Set limit of the scrollable area
-   scrollableArea: {
-      x: 0,
-      y: 0,
-      width: 5000,
-      height: 5000
-   }
-}
-
-{% endhighlight %}
-
-![]("/js/Diagram/Page-Settings_images/Page-Settings_img3.png") 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Accessibility
 description: accessibility
@@ -61,7 +61,7 @@ Collapse node.</td></tr>
 <tr>
 <td>
 Enter</td><td>
-Select node.</td></tr>
+Select the node</td></tr>
 <tr>
 <td>
 Space</td><td>
@@ -147,4 +147,4 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 The output for **TreeView** when **allowKeyboardNavigation** is set to “**True**” is as follows.
 
-![]("/js/TreeView/Accessibility_images/Accessibility_img1.png")
+![](Accessibility_images/Accessibility_img1.png)

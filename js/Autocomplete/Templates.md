@@ -141,5 +141,5 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete
 
 The following image is the output for **AutoComplete** widget with **Template** support.
 
-![]("/js/Autocomplete/Templates_images/Templates_img1.png")
+![](/js/Autocomplete/Templates_images/Templates_img1.png)
 

@@ -40,5 +40,5 @@ Gantt allows you to sort multiple columns by clicking the desired column headers
 
 The following screenshot shows the output of multicolumn sorting in Gantt control.
 
-![]("/js/Gantt/Sorting_images/Sorting_img1.png")
+![](/js/Gantt/Sorting_images/Sorting_img1.png)
 

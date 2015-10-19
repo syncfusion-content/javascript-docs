@@ -119,7 +119,7 @@ Requires
 
 
 
-Displays the custom text for the buttons inside the DateTimePicker popup. When the culture value changes, you can change the buttons text based on the culture.
+Displays the custom text for the buttons inside the DateTimePicker popup. when the culture value changed, we can change the buttons text based on the culture.
 
 
 
@@ -132,7 +132,7 @@ Default Value:
 
 
 
-* { today: "Today", timeNow: "Time Now", done: "Done", timeTitle: "Time" }
+* { today: "Today", now: "Now", done: "Done", timeTitle: "Time" }
 
 
 
@@ -194,7 +194,7 @@ Example
 
 
 ### buttonText.now<span class="type-signature type string">String</span>
-{:#members:buttontext-timeNow}
+{:#members:buttontext-now}
 
 
 
@@ -218,7 +218,7 @@ Example
 <input type="text" id="datetime" />
 <script>
 //To set buttonText API during initialization  
-        $("#datetime").ejDateTimePicker({ buttonText: { timeNow: "Current Time" }});
+        $("#datetime").ejDateTimePicker({ buttonText: { now: "Now" }});
 </script>{% endhighlight %}
 
 
@@ -305,7 +305,7 @@ Example
 
 
 
-Sets the root class for DateTimePicker theme. This cssClass API enables to use the custom skinning option for DateTimePicker control.
+Set the root class for DateTimePicker theme. This cssClass API helps to use custom skinning option for DateTimePicker control.
 
 
 
@@ -354,7 +354,7 @@ Example
 
 
 
-Defines the datetime format displayed in the DateTimePicker. The value has to be a combination of date format and time format.
+Defines the datetime format displayed in the DateTimePicker. The value should be a combination of date format and time format.
 
 
 
@@ -504,7 +504,7 @@ Example
 
 
 
-Enables or disables the animation effect in DateTimePicker.
+Enable or disable the animation effect in DateTimePicker.
 
 
 
@@ -705,8 +705,8 @@ Example
 
 
 
-When enableStrictMode is true, it allows the value outside the range also, otherwise it internally changes to the correct value.
- 
+When enableStrictMode true it allows the value outside of the range also, otherwise it internally changed to the correct value.
+
 
 
 
@@ -855,7 +855,7 @@ Example
 
 
 
-Specifies the HTML Attributes of the ejDateTimePicker.
+Specifies the HTML Attributes of the ejDateTimePicker
 
 
 
@@ -1005,7 +1005,7 @@ Example
 
 
 
-Sets the maximum value to the DateTimePicker. Beyond the maximum value, an error class is added to the wrapper element.
+Sets the maximum value to the DateTimePicker. Beyond the maximum value an error class is added to the wrapper element.
 
 
 
@@ -1055,7 +1055,7 @@ Example
 
 
 
-Sets the minimum value to the DateTimePicker. Beyond the minimum value, an error class is added to the wrapper element.
+Sets the minimum value to the DateTimePicker. Behind the minimum value an error class is added to the wrapper element.
 
 
 
@@ -1105,7 +1105,7 @@ Example
 
 
 
-Indicates that the DateTimePicker value can only be read and cannot be modified.
+Indicates that the DateTimePicker value can only be read and can&rsquo;t change.
 
 
 
@@ -1205,7 +1205,7 @@ Example
 
 
 
-Shows or hides the arrow button from the DateTimePicker textbox. When the button is disabled, the DateTimePicker popup opens while focus in the textbox and hides while focus out from the textbox.
+Shows or hides the arrow button from the DateTimePicker textbox. When the button disabled, the DateTimePicker popup opens while focus in the textbox and hides while focusout from the textbox.
 
 
 
@@ -1555,7 +1555,7 @@ Example
 
 
 
-Sets the jQuery validation error message in DateTimePicker.
+Set the jquery validation error message in datetimepicker.
 
 
 
@@ -1612,7 +1612,7 @@ Example
 
 
 
-Sets the jQuery validation rules in DateTimePicker.
+Set the jquery validation rules in datetimepicker.
 
 
 
@@ -2062,7 +2062,7 @@ $("#datetime").ejDateTimePicker("show");
 
 
 
-Fires when the datetime value changes in the DateTimePicker textbox.
+Fires when the datetime value changed in the DateTimePicker textbox.
 
 <table class="params">
 <thead>
@@ -2077,37 +2077,37 @@ Fires when the datetime value changes in the DateTimePicker textbox.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set it true when the event has to be canceled, else false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model.</td>
+<td class="description last">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.isValidState{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the current value is valid or not.</td>
+<td class="description last">returns the current value is valid or not</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the modified datetime value.</td>
+<td class="description last">returns the modified datetime value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDateTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected date time value.</td>
+<td class="description last">returns the previously selected date time value</td>
 </tr>
 </tbody>
 </table>
@@ -2145,7 +2145,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-Fires when the DateTimePicker popup closes.
+Fires when DateTimePicker popup closes.
 
 <table class="params">
 <thead>
@@ -2160,31 +2160,31 @@ Fires when the DateTimePicker popup closes.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set it true when the event has to be canceled, else false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model.</td>
+<td class="description last">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the modified datetime value.</td>
+<td class="description last">returns the modified datetime value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDateTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected date time value.</td>
+<td class="description last">returns the previously selected date time value</td>
 </tr>
 </tbody>
 </table>
@@ -2222,7 +2222,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-Fires after the DateTimePicker control is created.
+Fires after DateTimePicker control is created.
 
 <table class="params">
 <thead>
@@ -2237,19 +2237,19 @@ Fires after the DateTimePicker control is created.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set it true when the event has to be canceled, else false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DateTimePicker model.</td>
+<td class="description last">returns the DateTimePicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -2287,7 +2287,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-Fires when the DateTimePicker is destroyed successfully.
+Fires when the DateTimePicker is destroyed successfully
 
 <table class="params">
 <thead>
@@ -2302,19 +2302,19 @@ Fires when the DateTimePicker is destroyed successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set it true when the event has to be canceled, else false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DateTimePicker model.</td>
+<td class="description last">returns the DateTimePicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -2352,7 +2352,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-Fires when the focus-in is performed in the DateTimePicker textbox.
+Fires when the focus-in happens in the DateTimePicker textbox.
 
 <table class="params">
 <thead>
@@ -2367,25 +2367,25 @@ Fires when the focus-in is performed in the DateTimePicker textbox.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set it true when the event has to be canceled, else false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model.</td>
+<td class="description last">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the datetime value that is in text box.</td>
+<td class="description last">returns the datetime value, which is in text box</td>
 </tr>
 </tbody>
 </table>
@@ -2423,7 +2423,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-Fires when the focus-out is performed in the DateTimePicker textbox.
+Fires when the focus-out happens in the DateTimePicker textbox.
 
 <table class="params">
 <thead>
@@ -2438,25 +2438,25 @@ Fires when the focus-out is performed in the DateTimePicker textbox.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set it true when the event has to be canceled, else false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model.</td>
+<td class="description last">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the datetime value that is in text box.</td>
+<td class="description last">returns the datetime value, which is in text box</td>
 </tr>
 </tbody>
 </table>
@@ -2494,7 +2494,7 @@ $("#datetime").ejDateTimePicker({
 
 
 
-Fires when the DateTimePicker popup opens.
+Fires when DateTimePicker popup opens.
 
 <table class="params">
 <thead>
@@ -2509,31 +2509,31 @@ Fires when the DateTimePicker popup opens.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Set it true when the event has to be canceled, else false.</td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model.</td>
+<td class="description last">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description last">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the modified datetime value.</td>
+<td class="description last">returns the modified datetime value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDateTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected date time value.</td>
+<td class="description last">returns the previously selected date time value</td>
 </tr>
 </tbody>
 </table>

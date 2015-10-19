@@ -11,7 +11,7 @@ documentation: ug
 
 ## Image Exporting
 
-The chart can be exported to image when it is rendered in canvas. To render a chart in canvas, set the **enableCanvasRendering** option to *true*. To export the chart, you can use the **export** method of the chart. Refer to the online [KB for exporting](http://www.syncfusion.com/kb/5045) to know more about chart exporting. 
+The chart can be exported to image when it is rendered in canvas. To render a chart in canvas, set the [enableCanvasRendering]{../api/ejchart#members:enablecanvasrendering} option to *true*. To export the chart, you can use the [export]{../api/ejchart#methods:export} method of the chart. Refer to the online [KB for exporting](http://www.syncfusion.com/kb/5045) to know more about chart exporting. 
 
 N> Exporting chart as an image is supported in all major browsers except Internet Explorer due to its restriction towards client side download.
 
@@ -106,10 +106,10 @@ To convert the chart data from client to server-side, refer to the following ste
 
 {% endhighlight %}
 
-4.Host the MVC application in your server and get the link for exporting action method
+4. Host the MVC application in your server and get the link for exporting action method
 Example: http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport
 
-5.For passing client data to server-side, you need to call the **export** method and should pass export type (either image or excel) and server-side **URL** as an argument. The third argument of the export method is a Boolean property that specifies whether the current chart should be exported or all charts in page should be exported.
+5. To pass client data to server-side, you need to call the [export]{../api/ejchart#methods:export} method and pass export type (either image or excel) and server-side **URL** as an argument. The third argument of the export method is a Boolean property that specifies whether only the current chart should be exported or all charts in page should be exported.
 
 
 {% highlight html %}
@@ -138,7 +138,10 @@ Example: http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExpor
 
 {% endhighlight %}
 
-![]("/js/Chart/Exporting_images/Exporting_img1.png" Caption="Export chart to excel page")
+![](/js/Chart/Exporting_images/Exporting_img1.png)
+
+Export chart to excel page
+{:.caption}
 
 6.Currently, the chart data can be exported at server-side only through the helper functions in the “.Net”. So to use exporting in your projects, it is required to create a server with any of the following.
  
@@ -153,7 +156,7 @@ Example: http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExpor
 
 ## Multiple Chart Exporting
 
-EjChart supports exporting more than one charts in a page, with the *third* argument for **export** method.
+EjChart supports exporting more than one charts in a page, with the *third* argument for the [export]{../api/ejchart#methods:export} method.
 
 N> Refer to the MultipleExportType.AppendToSheet, MultipleExportType.NewSheet. 
 
@@ -217,4 +220,7 @@ Export multiple chart to excel at server-side
 
 {% endhighlight %}
 
-![]("/js/Chart/Exporting_images/Exporting_img2.png" Caption="Export multiple chart to excel page")
+![](/js/Chart/Exporting_images/Exporting_img2.png)
+
+Export multiple chart to excel page
+{:.caption}

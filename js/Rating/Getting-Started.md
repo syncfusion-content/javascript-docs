@@ -13,7 +13,7 @@ This section explains briefly about how to create a **Rating** control in your a
 
 The following screenshot illustrates the functionality of a Rating widget with a Rating range of 0 to 5. 
 
-![]("/js/Rating/Getting-Started_images/Getting-Started_img1.png") 
+![](/js/Rating/Getting-Started_images/Getting-Started_img1.png) 
 
 ##Create a Rating Widget
 
@@ -178,7 +178,7 @@ The following screenshot illustrates the functionality of a Rating widget with a
 
  The following screenshot displays a Rating widget.
 
-![]("/js/Rating/Getting-Started_images/Getting-Started_img2.png") 
+![](/js/Rating/Getting-Started_images/Getting-Started_img2.png) 
 
 ##Set the Min and Max Value
 
@@ -222,7 +222,7 @@ In a real-time scenario, you can extend the range by using the properties **minV
 
 The above code example displays the following output.
 
-![]("/js/Rating/Getting-Started_images/Getting-Started_img3.png")
+![](/js/Rating/Getting-Started_images/Getting-Started_img3.png)
 
 ##Set Precision
 
@@ -284,7 +284,7 @@ In a real-time movie **Rating** scenario, you can set precision in between two w
 
 The above code example displays the following output.
 
-![]("/js/Rating/Getting-Started_images/Getting-Started_img4.jpeg")
+![](/js/Rating/Getting-Started_images/Getting-Started_img4.jpeg)
 
 You can also add additional functionalities such as orientation, event tracer and API’s to the **Rating**. 
 

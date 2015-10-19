@@ -22,7 +22,13 @@ $("#OlapClient").ejOlapClient({
 
 On selecting a measure group from the drop-down list, the Cube Dimension Browser tree-view displays the related dimensions as follows.
 
-![]("/js/OlapClient/Measure-Groups_images/Measure-Groups_img1.png" Caption="OlapClient with Measure Groups in a drop-down list")
+![](/js/OlapClient/Measure-Groups_images/Measure-Groups_img1.png)
 
-![]("/js/OlapClient/Measure-Groups_images/Measure-Groups_img2.png" Caption="OlapClient with filtered tree-view in Cube Dimension Browser")
+OlapClient with Measure Groups in a drop-down list
+{:.caption}
+
+![](/js/OlapClient/Measure-Groups_images/Measure-Groups_img2.png)
+
+OlapClient with filtered tree-view in Cube Dimension Browser
+{:.caption}
 

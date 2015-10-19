@@ -13,7 +13,7 @@ documentation: ug
 
 ### Enable tooltip for data point
 
-Tooltip for data points can be enabled using **visible** option of **tooltip** in series.
+Tooltip for the data points can be enabled by using the [visible](../api/ejchart#members:series-tooltip-visible) option of the [tooltip](../api/ejchart#members:series-tooltip) in the series.
 
 {% highlight js %}
 
@@ -36,11 +36,14 @@ Tooltip for data points can be enabled using **visible** option of **tooltip** i
 
 
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img1.png" Caption="Chart with tooltip")
+![](/js/Chart/User-Interactions_images/User-Interactions_img1.png)
 
-### Formatting the tooltip 
+Chart with tooltip
+{:.caption}
 
-Tooltip displays data specified by the **format** option of tooltip. Default value of format option is * **#point.x# : #point.y#** *. Here, * **#point.x#** * is the placeholder for x value of the point and * **#point.y#** * is the placeholder for y value of the point.
+### Format the tooltip 
+
+Tooltip displays data specified by the [format](../api/ejchart#members:series-tooltip-format) option of the tooltip. The default value of the format option is * **#point.x# : #point.y#** *. Here, * **#point.x#** * is the placeholder for x value of the point and * **#point.y#** * is the placeholder for y value of the point.
 
 You can also use * **#series.<optionname>#** * as placeholder to display the value of an option in corresponding series and use * **#point.<optionname>#** * as place holder to display the value of an option in the corresponding point.
 
@@ -62,12 +65,15 @@ You can also use * **#series.<optionname>#** * as placeholder to display the val
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img2.png" Caption="Chart with formatted tooltip")
+![](/js/Chart/User-Interactions_images/User-Interactions_img2.png)
+
+Chart with formatted tooltip
+{:.caption}
 
 
 ### Tooltip Template
 
-HTML elements can be displayed in tooltip using **template** option of tooltip. The template option takes the value of id attribute of the HTML element. You can use * **#point.x#** * and * **#point.y#** * as place holders in the HTML element to display the x and y values of the corresponding data point. 
+HTML elements can be displayed in the tooltip by using the [template](../api/ejchart#members:series-tooltip-template) option of the tooltip. The template option takes the value of the id attribute of the HTML element. You can use the * **#point.x#** * and * **#point.y#** * as place holders in the HTML element to display the x and y values of the corresponding data point. 
 
 You can also use * **#series.<optionname>#** * as place holder to display the value of an option in corresponding series of the tooltip and use * **#point.<optionname>#** * as place holder to display the value of an option in the corresponding point for which the tooltip is displayed.
   
@@ -104,14 +110,17 @@ You can also use * **#series.<optionname>#** * as place holder to display the va
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img3.png" Caption="Chart with tooltip template")
+![](/js/Chart/User-Interactions_images/User-Interactions_img3.png)
+
+Chart with tooltip template
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/line) here to view the Tooltip template online demo sample.
 
 
 #### Tooltip template animation
 
-You can enable animation by setting **enableAnimation** to true. Tooltip will be animated when moving mouse from one data point to another point. The **duration** property in tooltip specifies the time taken to animate the tooltip, by default the duration is set to **"500ms"**.
+You can enable animation by setting the [enableAnimation](../api/ejchart#members:series-tooltip-enableanimation) to true. Tooltip animates when the mouse moves from one data point to another point. The [duration](../api/ejchart#members:series-tooltip-duration) property in tooltip specifies the time taken to animate the tooltip. the duration is set to **"500ms"**, by default.
 
 N> Tooltip is animated only if the template is specified for tooltip.
 
@@ -136,9 +145,9 @@ N> Tooltip is animated only if the template is specified for tooltip.
 {% endhighlight %}
 
 
-### Customizing the appearance of tooltip   
+### Customize the appearance of tooltip   
 
-The **fill** and **border** options are used to customize the background color and border of the tooltip respectively. The **font** option in tooltip is used to customize the font of tooltip text.
+The [fill](../api/ejchart#members:series-tooltip-fill) and [border](../api/ejchart#members:series-tooltip-border) options are used to customize the background color and border of the tooltip respectively. The [font](../api/ejchart#members:series-tooltip-font) option in the tooltip is used to customize the font of the tooltip text.
 
 {% highlight js %}
 
@@ -159,12 +168,15 @@ The **fill** and **border** options are used to customize the background color a
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img4.png" Caption="Customizing the appearance of tooltip ")
+![](/js/Chart/User-Interactions_images/User-Interactions_img4.png)
+
+Customizing the appearance of tooltip 
+{:.caption}
 
 
 #### Tooltip with rounded corners
 
-The options **rx** and **ry** are used to customize the corner radius of the tooltip rectangle.
+The options [rx](../api/ejchart#members:series-tooltip-rx) and [ry](../api/ejchart#members:series-tooltip-ry) are used to customize the corner radius of the tooltip rectangle.
 
 {% highlight js %}
 
@@ -186,7 +198,10 @@ The options **rx** and **ry** are used to customize the corner radius of the too
 {% endhighlight %}
 
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img5.png" Caption="Tooltip with rounded corners")
+![](/js/Chart/User-Interactions_images/User-Interactions_img5.png)
+
+Tooltip with rounded corners
+{:.caption}
 
 
 
@@ -196,9 +211,9 @@ The options **rx** and **ry** are used to customize the corner radius of the too
 
 There are two ways you can zoom the chart,
 
-* When **zooming.enable** option is set to true, you can zoom the chart using rubber band selection.
+* When the [zooming.enable](../api/ejchart#members:zooming-enable) option is set to true, you can zoom the chart by using the rubber band selection.
 
-* When **zooming.enableMouseWheel** option is set to true, you can zoom the chart on mouse wheel scrolling. 
+* When the [zooming.enableMouseWheel](../api/ejchart#members:zooming-enablemousewheel) option is set to true, you can zoom the chart on mouse wheel scrolling. 
 
 {% highlight js %}
 
@@ -213,19 +228,25 @@ There are two ways you can zoom the chart,
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img6.png" Caption="Zoomed chart")
+![](/js/Chart/User-Interactions_images/User-Interactions_img6.png)
+
+Zoomed chart
+{:.caption}
 
 
 After zooming the chart, a zooming toolbar will appear with options to *zoom*, *pan* and *reset*. Selecting the Pan option will allow to pan the chart and selecting the Reset option will reset the zoomed chart.
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img7.png" Caption="Select panning option from zoomkit")
+![](/js/Chart/User-Interactions_images/User-Interactions_img7.png)
+
+Select panning option from zoomkit
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/zoomingandpanning) here to view the Zooming and Panning online demo sample.
 
 
 ### Types of zooming
 
-The **type** option in zooming specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of **type** is **"xy"** (both axis).
+The [type](../api/ejchart#members:zooming-type) option in zooming specifies whether the chart is allowed to scale along the horizontal axis or vertical axis or along both axis. The default value of the [type](../api/ejchart#members:zooming-type) is **"xy"** (both axis).
 
 {% highlight js %}
 
@@ -251,7 +272,7 @@ Crosshair is used to view the value of an axis at mouse position or touch contac
 
 ### Enable crosshair and crosshair label
 
-Crosshair can be enabled using the **visible** option in **crosshair**. Crosshair label for an axis can be enabled by using the **visible** option of **crosshairLabel** in the corresponding axis.
+Crosshair can be enabled by using the [visible](../api/ejchart#members:series-tooltip-visible) option in the [crosshair](../api/ejchart#members:crosshair). Crosshair label for an axis can be enabled by using the [visible](../api/ejchart#members:primaryxaxis-crosshairlabel-visible) option of [crosshairLabel](../api/ejchart#members:primaryxaxis-crosshairlabel) in the corresponding axis.
 
 
 {% highlight js %}
@@ -280,14 +301,17 @@ Crosshair can be enabled using the **visible** option in **crosshair**. Crosshai
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img8.png" Caption="Chart with crosshair")
+![](/js/Chart/User-Interactions_images/User-Interactions_img8.png)
+
+Chart with crosshair
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/crosshair) here to view the Crosshair online demo sample.
 
 
-### Customizing crosshair line and crosshair label
+### Customize the crosshair line and crosshair label
 
-The **fill** and **border** options of **crosshairLabel** is used to customize the background color and border of the crosshair label respectively. Color and width of the crosshair line can be customized using the **line** option in **crosshair**.
+The [fill](../api/ejchart#members:crosshair-fill) and [border](../api/ejchart#members:crosshair-border) options of the [crosshairLabel](../api/ejchart#members:crosshairlabel) is used to customize the background color and border of the crosshair label respectively. Color and width of the crosshair line can be customized by using the [line](../api/ejchart#members:crosshair-line) option in the [crosshair](../api/ejchart#members:crosshair).
 
 {% highlight js %}
 
@@ -315,7 +339,10 @@ The **fill** and **border** options of **crosshairLabel** is used to customize t
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img9.png" Caption="Customize crosshair labels and line")
+![](/js/Chart/User-Interactions_images/User-Interactions_img9.png)
+
+Customize crosshair labels and line
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/crosshair) here to view the Crosshair online demo sample.
 
@@ -327,7 +354,7 @@ Trackball is used to track a data point close to the mouse position or touch con
 
 ### Enable Trackball
 
-Trackball can be enabled by setting **visible** option of crosshair to *true* and then set *type* as **"trackball"**. Default value of type is **"crosshair"**.
+Trackball can be enabled by setting the [visible](../api/ejchart#members:crosshair-visible) option of the crosshair to *true* and then set the [type](../api/ejchart#members:crosshair-type) as **"trackball"**. The default value of type is **"crosshair"**.
 
 {% highlight js %}
 
@@ -346,14 +373,17 @@ Trackball can be enabled by setting **visible** option of crosshair to *true* an
 {% endhighlight %}
 
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img10.png" Caption="Chart with trackball")
+![](/js/Chart/User-Interactions_images/User-Interactions_img10.png)
+
+Chart with trackball
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/userinteraction/trackball) here to view the Trackball online demo sample.
 
 
-#### Customizing trackball marker and trackball line
+#### Customize trackball marker and trackball line
 
-Shape and size of the trackball Shape and size of the trackball marker can be customized using the **shape** and **size** options of crosshair marker. Color and width of the trackball line can be customized using the **line** option in crosshair.
+Shape and size of the trackball marker can be customized by using the [shape](../api/ejchart#members:crosshair-marker-shape) and [size](../api/ejchart#members:crosshair-marker-size) options of the crosshair marker. Color and width of the trackball line can be customized by using the [line](../api/ejchart#members:crosshair-line) option in the crosshair.
 
 {% highlight js %}
 
@@ -383,12 +413,15 @@ Shape and size of the trackball Shape and size of the trackball marker can be cu
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img11.png" Caption="Customize trackball line and marker")
+![](/js/Chart/User-Interactions_images/User-Interactions_img11.png)
+
+Customize trackball line and marker
+{:.caption}
 
 
-### Formatting Trackball tooltip
+### Format Trackball tooltip
 
-X and Y values displayed in trackball tooltip are formatted based on its axis **labelFormat**.  
+X and Y values displayed in the trackball tooltip are formatted based on its axis [labelFormat](../api/ejchart#members:primaryxaxis-labelformat).  
 
 {% highlight js %}
 
@@ -416,14 +449,17 @@ X and Y values displayed in trackball tooltip are formatted based on its axis **
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img12.png" Caption="Change trackball tooltip format")
+![](/js/Chart/User-Interactions_images/User-Interactions_img12.png)
+
+Change trackball tooltip format
+{:.caption}
 
 To view the data representation depth in chart by clicking on the data point, refer [Drilldown](drilldown) KB.
 
 
 ## Highlight
 
-EjChart provides highlighting support for series and data points on mouse hover. To enable the highlighting option, set **enable** property as *true* in **highlightSettings** of series.
+EjChart provides highlighting support for the series and data points on mouse hover. To enable the highlighting option, set the [enable](../api/ejchart#members:series-highlightsettings-enable) property to *true* in the [highlightsettings](../api/ejchart#members:series-highlightsettings) of the series.
 
 N> When hovering mouse on the data points, the corresponding series legend also will be highlighted.
 
@@ -454,7 +490,7 @@ N> When hovering mouse on the data points, the corresponding series legend also 
 
 ### Highlight Mode
 
-You can set three different highlight mode for highlighting data point and series using **mode** property of **highlightSettings**.
+You can set three different highlight mode for the highlighting data point and series by using the [mode](../api/ejchart#members:series-highlightsettings-mode) property of the [highlightsettings](../api/ejchart#members:series-highlightsettings).
 
 * Series
 * Points
@@ -462,7 +498,7 @@ You can set three different highlight mode for highlighting data point and serie
 
 **Series mode**
 
-To highlight all the data points of the specified series, you can set **“series”** value to **mode** option in highlighSettings. 
+To highlight all the data points of the specified series, you can set the **“series”** value to the [mode](../api/ejchart#members:series-highlightsettings-mode) option in the highlighSettings. 
 
 
 {% highlight js %}
@@ -489,12 +525,15 @@ To highlight all the data points of the specified series, you can set **“serie
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img13.png" Caption="Highlighting chart series")
+![](/js/Chart/User-Interactions_images/User-Interactions_img13.png)
+
+Highlighting chart series
+{:.caption}
 
 
 **Point mode**
 
-For highlighting a single point you can set **“point”** value to **mode** option.
+To highlight a single point, you can set the **“point”** value to the [mode](../api/ejchart#members:series-highlightsettings-mode) option.
 
 {% highlight js %}
 
@@ -520,12 +559,15 @@ For highlighting a single point you can set **“point”** value to **mode** op
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img14.png" Caption="Highlighting chart point")
+![](/js/Chart/User-Interactions_images/User-Interactions_img14.png)
+
+Highlighting chart point
+{:.caption}
 
 
 **Cluster mode**
 
-To highlight the points that corresponds to same index in all the series, set **“cluster”** value to **mode** option.
+To highlight the points that corresponds to the same index in all the series, set the **“cluster”** value to the [mode](../api/ejchart#members:series-highlightsettings-mode) option.
 
 {% highlight js %}
 
@@ -551,12 +593,15 @@ To highlight the points that corresponds to same index in all the series, set **
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img15.png" Caption="Highlighting chart in cluster mode")
+![](/js/Chart/User-Interactions_images/User-Interactions_img15.png)
+
+Highlighting chart in cluster mode
+{:.caption}
 
 
-### Customizing highlight styles
+### Customize the highlight styles
 
-To customize the highlighted series, use **color**, **border** and **opacity** option in highlightSettings.
+To customize the highlighted series, use the [color](../api/ejchart#members:series-highlightsettings-color), [border](../api/ejchart#members:series-tooltip-border) and [opacity](../api/ejchart#members:series-highlightsettings-opacity) options in the highlightSettings.
 
 {% highlight js %}
 
@@ -582,12 +627,15 @@ To customize the highlighted series, use **color**, **border** and **opacity** o
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img16.png" Caption="Customizing highlight styles")
+![](/js/Chart/User-Interactions_images/User-Interactions_img16.png)
+
+Customizing highlight styles
+{:.caption}
 
 
 ### Patterns to highlight
 
-EjChart provides pattern support for highlighting the data by setting the value to **pattern** property of highlightSettings. The different types of highlight patterns are listed out below here.
+EjChart provides pattern support for highlighting the data by setting the value to the [pattern](../api/ejchart#members:series-highlightsettings-pattern) property of the highlightSettings. The different types of highlight patterns are as follows.
 
 1.	chessboard
 2.	crosshatch
@@ -633,12 +681,15 @@ EjChart provides pattern support for highlighting the data by setting the value 
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img17.png" Caption="Changing pattern to highlight")
+![](/js/Chart/User-Interactions_images/User-Interactions_img17.png)
+
+Changing pattern to highlight
+{:.caption}
 
 
 #### Custom pattern
 
-To create custom pattern for highlighting data points, set pattern type as **"custom"** and add custom pattern **id** in **customPattern** option of highlightSettings.
+To create a custom pattern for the highlighting data points, set the pattern type as **"custom"** and add the custom pattern **id** in the [customPattern](../api/ejchart#members:series-highlightsettings-custompattern) option of the highlightSettings.
 
 {% highlight html %}
 
@@ -674,7 +725,7 @@ To create custom pattern for highlighting data points, set pattern type as **"cu
 
 ## Selection
 
-EjChart provides selection support for series and data points on mouse click. To enable the selection option, set **enable** property as *true* in **selectionSettings** of series.
+EjChart provides selection support for the series and data points on mouse click. To enable the selection option, set the [enable](../api/ejchart#members:series-selectionsettings-enable) property to *true* in the [selectionSettings](../api/ejchart#members:series-selectionSettings) of the series.
 
 N> When mouse is clicked on the data points, the corresponding series legend also will be selected.
 
@@ -704,7 +755,7 @@ N> When mouse is clicked on the data points, the corresponding series legend als
 
 ### Selection Mode
 
-You can set three different selection mode for highlighting data point and series using **mode** property of selectionSettings.
+You can set three different selection mode for highlighting the data point and series by using the [mode](../api/ejchart#members:series-selectionsettings-mode) property of the selectionSettings.
 
 * Series
 * Points
@@ -712,7 +763,7 @@ You can set three different selection mode for highlighting data point and serie
 
 **Series mode**
 
-To select all the data points of the specified series, you can set **"series"** value to **mode** option in selectionSettings.
+To select all the data points of the specified series, you can set the **"series"** value to the [mode](../api/ejchart#members:series-selectionsettings-mode) option in the selectionSettings.
 
 {% highlight js %}
 
@@ -738,12 +789,15 @@ To select all the data points of the specified series, you can set **"series"** 
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img18.png" Caption="Series selection")
+![](/js/Chart/User-Interactions_images/User-Interactions_img18.png)
+
+Series selection
+{:.caption}
 
 
 **Point mode**
 
-For highlighting a single point you can set **"point"** value to **mode** option. 
+To highlight a single point, you can set the **"point"** value to the [mode](../api/ejchart#members:series-selectionsettings-mode) option. 
 
 {% highlight js %}
 
@@ -769,12 +823,15 @@ For highlighting a single point you can set **"point"** value to **mode** option
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img19.png" Caption="Point selection")
+![](/js/Chart/User-Interactions_images/User-Interactions_img19.png)
+
+Point selection
+{:.caption}
 
 
 **Cluster mode**
 
-To select the points that corresponds to same index in all the series, set **"cluster"** value to **mode** option.
+To select the points that corresponds to the same index in all the series, set the **"cluster"** value to the [mode](../api/ejchart#members:series-selectionsettings-mode) option.
 
 {% highlight js %}
 
@@ -800,12 +857,15 @@ To select the points that corresponds to same index in all the series, set **"cl
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img20.png" Caption="Cluster selection")
+![](/js/Chart/User-Interactions_images/User-Interactions_img20.png)
+
+Cluster selection
+{:.caption}
 
 
 ### Customizing selection styles
 
-To customize the selection styles, use **color**, **border** and **opacity** option in selectionSettings.
+To customize the selection styles, use the [color](../api/ejchart#members:series-selectionsettings-color), [border](../api/ejchart#members:series-selectionsettings-border) and [opacity](../api/ejchart#members:series-selectionsettings-opacity) options in the selectionSettings.
 
 {% highlight js %}
 
@@ -832,12 +892,15 @@ To customize the selection styles, use **color**, **border** and **opacity** opt
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img21.png" Caption="Customizing selection styles")
+![](/js/Chart/User-Interactions_images/User-Interactions_img21.png)
+
+Customizing selection styles
+{:.caption}
 
 
 ### Patterns for selection
 
-EjChart provides pattern support for data selection by setting the value to **pattern** property of selectionSettings. The different types of selection patterns are listed out below here.
+EjChart provides pattern support for the data selection by setting the value to the [pattern](../api/ejchart#members:series-selectionsettings-pattern) property of the selectionSettings. The different types of selection patterns are as follows.
 
 1.	chessboard
 2.	crosshatch
@@ -883,12 +946,15 @@ EjChart provides pattern support for data selection by setting the value to **pa
 
 {% endhighlight %}
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img22.png" Caption="Selection pattern")
+![](/js/Chart/User-Interactions_images/User-Interactions_img22.png)
+
+Selection pattern
+{:.caption}
 
 
 #### Custom pattern
 
-To create custom pattern for selecting data points, set **pattern** type as **"custom"** and add custom pattern **id** in **customPattern** option of selectionSettings.
+To create a custom pattern for selecting the data points, set the [pattern](../api/ejchart#members:series-selectionsettings-pattern) type as **"custom"** and add the custom pattern **id** in the [customPattern](../api/ejchart#members:series-selectionsettings-custompattern) option of the selectionSettings.
 
 {% highlight html %}
 
@@ -922,7 +988,10 @@ To create custom pattern for selecting data points, set **pattern** type as **"c
 {% endhighlight %}
 
 
-![]("/js/Chart/User-Interactions_images/User-Interactions_img23.png" Caption="Add custom pattern for selection")
+![](/js/Chart/User-Interactions_images/User-Interactions_img23.png)
+
+Add custom pattern for selection
+{:.caption}
 
 
 ### Handling Series Selection

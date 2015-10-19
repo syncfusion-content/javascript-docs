@@ -147,7 +147,7 @@ And also you can add image, image styles, sprite css class, query and html attri
 
 {% endhighlight %}
 
-![]("/js/Toolbar/Data-binding_images/Data-binding_img1.png") 
+![](/js/Toolbar/Data-binding_images/Data-binding_img1.png) 
 
 
 ## Remote data
@@ -185,7 +185,7 @@ To bind Remote data to **Toolbar**, use the following code example.
 {% endhighlight %}
 
 
-![]("/js/Toolbar/Data-binding_images/Data-binding_img2.png") 
+![](/js/Toolbar/Data-binding_images/Data-binding_img2.png) 
 
 ## Knockout binding
 
@@ -202,7 +202,7 @@ Two-way binding supports both the processes – it applies the observable values
 
 For more information about the knockout binding, refer the following link location,
 
-<http://docs.syncfusion.com/js/knockoutjs>
+<http://help.syncfusion.com/js/knockoutjs>
 
 
 N> Add the following script files along with the specified code to access knockout binding. It contains JS library for knockout binding.
@@ -241,7 +241,7 @@ The following code example depicts you the way to bind data to the **Toolbar** t
     
  {% endhighlight %}
     
- ![]("/js/Toolbar/Data-binding_images/Data-binding_img4.png")
+ ![](/js/Toolbar/Data-binding_images/Data-binding_img4.png)
     
 
 ## Angular binding
@@ -257,7 +257,7 @@ Two-way binding supports both the processes – it applies the scope values to t
 
 To know more detail about the Angular binding, refer the following link location,
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 
 Add the following script files as given in the below example to access knockout binding. It contains JS library for angular binding.
@@ -393,5 +393,5 @@ The following code example depicts you the way to bind data to the **Toolbar** w
 
 {% endhighlight %}
 
-![]("/js/Toolbar/Data-binding_images/Data-binding_img6.png")
+![](/js/Toolbar/Data-binding_images/Data-binding_img6.png)
 

@@ -76,19 +76,19 @@ The following output is displayed as a result of the above code example.
 
 **Content**
 
-![]("/js/Grid/Context-Menu_images/Context-Menu_img1.png" Caption="")
+![](/js/Grid/Context-Menu_images/Context-Menu_img1.png" Caption=")
 
 _Context Menu in content_
 
 **Header**
 
-![]("/js/Grid/Context-Menu_images/Context-Menu_img2.png" Caption="")
+![](/js/Grid/Context-Menu_images/Context-Menu_img2.png" Caption=")
 
 _Context Menu in Header_
 
 **Footer**
 
-![]("/js/Grid/Context-Menu_images/Context-Menu_img3.png" Caption="")
+![](/js/Grid/Context-Menu_images/Context-Menu_img3.png" Caption=")
 
 _Context Menu in Footer_
 
@@ -125,7 +125,7 @@ The Context Menu feature displays all the options by default . When you want to 
 
 {% endhighlight %}
 
-![]("/js/Grid/Context-Menu_images/Context-Menu_img4.png" Caption="")
+![](/js/Grid/Context-Menu_images/Context-Menu_img4.png" Caption=")
 
 ##Custom Context Menu
 
@@ -162,4 +162,4 @@ The Grid control has support to customize the context menu items by using the [`
 
 {% endhighlight %}
 
-![]("/js/Grid/Context-Menu_images/Context-Menu_img5.png" Caption="")
+![](/js/Grid/Context-Menu_images/Context-Menu_img5.png" Caption=")

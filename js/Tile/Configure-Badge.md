@@ -41,5 +41,5 @@ Add the following code inside the **script** tag.
 
 
 
-![]("/js/Tile/Configure-Badge_images/Configure-Badge_img1.png")
+![](/js/Tile/Configure-Badge_images/Configure-Badge_img1.png)
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Data with Editing-cut-copy-paste
 
-The **TreeView** control permits you to edit a node and also allows you to cut, copy and paste the node in **TreeView**. You can edit the tree node name when it is required. This is achieved by using the **allowEditing** property. By setting the property as **“true”**, you can select a node and press F2 or double click the node to initiate editing.
+The **TreeView** control permits you to edit a node and also allows you to cut and paste the node in the **TreeView**. You can edit the tree node name when it is required. This is achieved by using the **allowEditing** property. By setting the property to **“true”**, you can select a node and press F2 or double-click the node to initiate editing.
 
 The following steps explain how to enable the **allowEditing** property for **TreeView**.
 
@@ -78,7 +78,7 @@ In the HTML page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeView.
 {% endhighlight %}
 
 
-The following screenshot displays the appearance of Editing-cut-copy-paste the node in TreeView component.
+The following screenshot displays the appearance of Editing-cut-paste the node in the TreeView component.
 
-![]("/js/TreeView/Data-with-Editing-cut-copy-paste_images/Data-with-Editing-cut-copy-paste_img1.png")
+![](/js/TreeView/Data-with-Editing-cut-copy-paste_images/Data-with-Editing-cut-copy-paste_img1.png)
 

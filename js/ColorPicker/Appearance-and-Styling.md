@@ -84,7 +84,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png")
+![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## palette
 
@@ -275,7 +275,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png") 
+![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 
 ## custompalette
 
@@ -306,7 +306,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img3.png") 
+![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 ## displayInline
 
@@ -336,7 +336,7 @@ In the **HTML** page, add a **&lt;div&gt;** element to render **ColorPicker** wi
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img4.png") 
+![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
 
 ## Theme Support
 
@@ -400,7 +400,7 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **ColorPicker** 
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img5.png")
+![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 ## CustomCss
 
@@ -452,5 +452,5 @@ Custom Css Styles.
 
 The following screenshot displays the output of above steps.
 
-![]("/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img6.png")
+![](/js/ColorPicker/Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 

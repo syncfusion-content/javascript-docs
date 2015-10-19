@@ -141,5 +141,5 @@ The following screenshot displays the output of the above code example.
 
 
 
-![]("/js/ColorPicker/Keyboard-Interaction_images/Keyboard-Interaction_img1.png") 
+![](/js/ColorPicker/Keyboard-Interaction_images/Keyboard-Interaction_img1.png) 
 

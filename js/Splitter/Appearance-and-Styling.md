@@ -108,7 +108,7 @@ In the **HTML** page set the corresponding **&lt;div&gt;** element for rendering
 
 The output for **Splitter** when **enableAnimation** is “**True**”. Expanding or collapsing the outer pane in the **Splitter** produces the animation effect with the animation speed.
 
-![]("/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img3.png") 
+![](/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img3.png) 
 
 ## Adjusting Splitter Size
 
@@ -172,13 +172,13 @@ In the **HTML** page set the **&lt;div&gt;** element for rendering **Splitter** 
 
 The output for **Splitter** after adding the properties.
 
-![]("/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img4.png") 
+![](/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img4.png) 
 
-![]("/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img5.png") 
+![](/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img5.png) 
 
-![]("/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img6.png") 
+![](/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img6.png) 
 
-![]("/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img7.png") 
+![](/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img7.png) 
 
 ## Theme
 
@@ -260,5 +260,5 @@ Customize the **CSS** class by setting **CSS** properties.
 
 The output for **Splitter** after customizing the CSS class.
 
-![]("/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img8.png") 
+![](/js/Splitter/Appearance-and-Styling_images/Appearance-and-Styling_img8.png) 
 

@@ -13,7 +13,7 @@ You can provide more customization to the **Tab** with **rating** control as con
 
 The **Essential JavaScript Rating** control provide you an intuitive rating experience that allows you to select the number of stars that represents the rating. For more information about the rating, you can refer the following link:
 
-<http://docs.syncfusion.com/js/rating/getting-started>
+<http://help.syncfusion.com/js/rating/getting-started>
 
 The following code example explains you the **rating** control creation. The input element is used to create the **rating** control. Render the input element as **rating** control using the input element **id**. The code example is placed within the content description &lt;div&gt; element to declare the **rating** control and description in the **Tab** section and it is appended with the header initialization code section &lt;div&gt; element.
 
@@ -78,7 +78,7 @@ Add the following styles to render **Tab**.
 
 The following screenshot illustrates the **Tab** content with rating control. 
 
-![]("/js/Tab/Integration-with-other-widgets_images/Integration-with-other-widgets_img1.png") 
+![](/js/Tab/Integration-with-other-widgets_images/Integration-with-other-widgets_img1.png) 
 
 
 

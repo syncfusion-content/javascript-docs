@@ -78,7 +78,7 @@ The following image is displayed as the output for the above steps.
 
 
 
-![]("/js/RadioButton/Easy-Customization_images/Easy-Customization_img1.png") 
+![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img1.png) 
 
 ## Text
 
@@ -143,7 +143,7 @@ Configure the CSS styles to align the radio buttons.
 
 The following image is displayed as the output for the above steps.
 
-![]("/js/RadioButton/Easy-Customization_images/Easy-Customization_img2.png") 
+![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img2.png) 
 
 ## Size
 
@@ -249,7 +249,7 @@ The following image is displayed as the output for the above steps.
 
 
 
-![]("/js/RadioButton/Easy-Customization_images/Easy-Customization_img3.png") 
+![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img3.png) 
 
 ## RTL Support 
 
@@ -317,5 +317,5 @@ The following image is displayed as the output for the above steps.
 
 
 
-![]("/js/RadioButton/Easy-Customization_images/Easy-Customization_img4.png") 
+![](/js/RadioButton/Easy-Customization_images/Easy-Customization_img4.png) 
 

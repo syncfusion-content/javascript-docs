@@ -55,19 +55,34 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the **MaskEdit** w
 
 The output for **MaskEdit** with its properties is as follows.
 
-![]("/js/MaskEdit/MaskEdit-Properties_images/MaskEdit-Properties_img1.png" Caption="MaskEdit with MaskFormat")
+![](/js/MaskEdit/MaskEdit-Properties_images/MaskEdit-Properties_img1.png)
+
+MaskEdit with MaskFormat
+{:.caption}
 
 
 
-![]("/js/MaskEdit/MaskEdit-Properties_images/MaskEdit-Properties_img2.png" Caption="MaskEdit with HidePromtOnLeave")
+![](/js/MaskEdit/MaskEdit-Properties_images/MaskEdit-Properties_img2.png)
+
+MaskEdit with HidePromtOnLeave
+{:.caption}
 
 
 
-![]("/js/MaskEdit/MaskEdit-Properties_images/MaskEdit-Properties_img3.png" Caption="MaskEdit with prompt focus")
+![](/js/MaskEdit/MaskEdit-Properties_images/MaskEdit-Properties_img3.png)
+
+MaskEdit with prompt focus
+{:.caption}
 
 
 
-![]("/js/MaskEdit/MaskEdit-Properties_images/MaskEdit-Properties_img4.png" Caption="MaskEdit with InputMode text")
+![](/js/MaskEdit/MaskEdit-Properties_images/MaskEdit-Properties_img4.png)
 
-![]("/js/MaskEdit/MaskEdit-Properties_images/MaskEdit-Properties_img5.png" Caption="MaskEdit with CustomCharacter")
+MaskEdit with InputMode text
+{:.caption}
+
+![](/js/MaskEdit/MaskEdit-Properties_images/MaskEdit-Properties_img5.png)
+
+MaskEdit with CustomCharacter
+{:.caption}
 

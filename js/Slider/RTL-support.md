@@ -45,5 +45,5 @@ In an **HTML** page, specify the **&lt;div&gt;** elements to render the **Range 
 Execute the above code example to render the following output.
 
 
-![]("/js/Slider/RTL-support_images/RTL-support_img1.png") 
+![](/js/Slider/RTL-support_images/RTL-support_img1.png) 
 

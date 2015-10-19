@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Enable-or-disable
 description: enable or disable
@@ -7,11 +7,11 @@ control: RichTextEditor
 documentation: ug
 ---
 
-# Enable or disable
+# Enable or Disable
 
-You can enable or disable the tool items that are available in the **RTE** toolbar. Intermittently, it is not possible to allow some tool item actions in the editing area. To avoid mistakes in such a situation, you can disable the unnecessary tool items. Later, you can enable the disabled tool items, and when you are not going to use images in your blog you can disable the image tool item by using the “**disableToolbarItem**” method. The following example illustrates how to disable the “**image**” tool.
+You can enable or disable the tool items that are available in the **RTE** toolbar. Intermittently, some tool item actions are not allowed in the editing area. To avoid errors in such situations, you can disable the unnecessary tool items. Later, you can enable the disabled tool items, and when you don't use images in your blog, you can disable the image tool item by using the “**disableToolbarItem**” method. The following example illustrates how to disable the “**image**” tool.
 
-Add the following code in your **HTML** page.
+Add the following code example in your **HTML** page.
 
 {% highlight html %}
 
@@ -28,12 +28,13 @@ Add the following code in your **HTML** page.
     $(function () {
         $("#disable_tool").ejRTE();
         rteobj = $("#disable_tool").data("ejRTE");
-        rteobj.disableToolbarItem("disable_toolimage");
+        rteobj.disableToolbarItem("image");
     });
 
 
 {% endhighlight %}
 
 
-![]("/js/RichTextEditor/Enable-or-disable_images/Enable-or-disable_img1.png") 
+![](Enable-or-disable_images/Enable-or-disable_img1.png)
+
 

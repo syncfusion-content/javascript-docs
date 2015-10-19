@@ -29,7 +29,7 @@ Field List (also known as Pivot Schema Designer) is powerful tool that allows yo
  }
 {% endhighlight %}
 
-![]("/js/PivotGrid/Field-List_images/Field-List_img1.png") 
+![](/js/PivotGrid/Field-List_images/Field-List_img1.png) 
 
 ##Interactions
 
@@ -37,21 +37,21 @@ Field List (also known as Pivot Schema Designer) is powerful tool that allows yo
 
 You can change the report on the fly through simple drag-and-drop operation. You can drag from the filed list and drop them either into the column, row, value or filter section available at the bottom of the Field list. 
 
-![]("/js/PivotGrid/Field-List_images/Field-List_img2.png") 
+![](/js/PivotGrid/Field-List_images/Field-List_img2.png) 
 
 ###Check and Uncheck
 
 You can alter the report on the fly through check and uncheck option (as an alternate). By default, fields are added to the row label when checked.
 
-![]("/js/PivotGrid/Field-List_images/Field-List_img3.png") 
+![](/js/PivotGrid/Field-List_images/Field-List_img3.png) 
 
 ###Filtering 
 
 Filter pop-up window can be launched by clicking on the expander icon available at the right-hand corner of each field item. Values can be filtered by checking/unchecking the check box besides them in the filter pop-up window. As a result of the filtering operation, PivotGrid is refresh showing the updated values. 
 
-![]("/js/PivotGrid/Field-List_images/Field-List_img4.png") 
+![](/js/PivotGrid/Field-List_images/Field-List_img4.png) 
 
-![]("/js/PivotGrid/Field-List_images/Field-List_img5.png") 
+![](/js/PivotGrid/Field-List_images/Field-List_img5.png) 
 
 ##Layout Section
 

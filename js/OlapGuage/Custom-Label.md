@@ -11,7 +11,7 @@ documentation: ug
 
 **Custom label** provides information about the members associated behind each **OlapGauge**. You can define multiple labels for **OlapGauge** and it can be positioned along X and Y co-ordinates based on location settings.
 
-![]("/js/OlapGauge/Custom-Label_images/Custom-Label_img1.png") 
+![](/js/OlapGauge/Custom-Label_images/Custom-Label_img1.png) 
 
 ## Positioning the Custom Label
 
@@ -96,7 +96,7 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Custom-Label_images/Custom-Label_img2.png") 
+![](/js/OlapGauge/Custom-Label_images/Custom-Label_img2.png) 
 
 ## Font and Style Customization of Custom Label
 
@@ -201,5 +201,5 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Custom-Label_images/Custom-Label_img3.png") 
+![](/js/OlapGauge/Custom-Label_images/Custom-Label_img3.png) 
 

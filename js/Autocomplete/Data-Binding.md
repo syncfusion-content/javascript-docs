@@ -88,7 +88,7 @@ The following steps explain local data binding to an **AutoComplete** textbox.
 
 The following image is the output for AutoComplete control with local data binding.
 
-![]("/js/Autocomplete/Data-Binding_images/Data-Binding_img1.png")
+![](/js/Autocomplete/Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote data
 
@@ -141,5 +141,5 @@ The following steps explain the remote data binding to an **AutoComplete** textb
 
 The following image is the output for AutoComplete control with remote data binding.
 
-![]("/js/Autocomplete/Data-Binding_images/Data-Binding_img2.png")
+![](/js/Autocomplete/Data-Binding_images/Data-Binding_img2.png)
 

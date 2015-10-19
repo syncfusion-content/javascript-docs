@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization
 
-EjChart supports localization for its axis labels and tooltip. To render the chart with specific culture you have to refer the corresponding **globalize** culture script and need to specify the culture name in **locale** property of chart.   
+EjChart supports localization for its axis labels and tooltip. To render the chart with specific culture you have to refer the corresponding **globalize** culture script and need to specify the culture name in [locale](../api/ejchart#members:locale) property of chart.   
 
 {% highlight html %}
 
@@ -35,7 +35,10 @@ EjChart supports localization for its axis labels and tooltip. To render the cha
 
 {% endhighlight %}
 
-![]("/js/Chart/Localization_images/Localization_img1.png" Caption="Chart with french localization")
+![](/js/Chart/Localization_images/Localization_img1.png)
+
+Chart with french localization
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/localization) here to view the localization chart online demo sample.
 

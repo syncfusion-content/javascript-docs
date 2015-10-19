@@ -109,5 +109,5 @@ Adding the style for TreeView control as follows.
 
 The **TreeView** control template displays the following output.
 
-![]("/js/TreeView/Ul-Li-Template_images/Ul-Li-Template_img1.png")
+![](/js/TreeView/Ul-Li-Template_images/Ul-Li-Template_img1.png)
 

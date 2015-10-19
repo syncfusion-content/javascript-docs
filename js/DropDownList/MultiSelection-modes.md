@@ -49,5 +49,5 @@ In an **HTML** page, add a **&lt;input&gt;** element to configure **DropdownList
 
 Output for Dropdown control that provides multiple selection is as follows.
 
-![]("/js/DropDownList/MultiSelection-modes_images/MultiSelection-modes_img1.png") 
+![](/js/DropDownList/MultiSelection-modes_images/MultiSelection-modes_img1.png) 
 

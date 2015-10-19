@@ -13,7 +13,7 @@ documentation: ug
 
 **Angular binding** uses directives to plug its action into the page. Directives, all prefaced with ng-, are placed in **HTML** attributes. To know more about **Angular binding** refer the following link,
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 Apply the plugin and property assigning the **TreeView** element through the directive that starts with the letter **“e-“.** The following example depicts how to bind data to the **TreeView** control through **Angular support**.
 
@@ -76,5 +76,5 @@ In the above code example, “ng-app” is a directive that is used to declare a
 
 The following screenshot displays the output of the above code.
 
-![]("/js/TreeView/Angular-Binding_images/Angular-Binding_img1.png")
+![](/js/TreeView/Angular-Binding_images/Angular-Binding_img1.png)
 

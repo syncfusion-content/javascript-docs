@@ -13,7 +13,7 @@ documentation: ug
 
 **AngularJS** is an open-source web application framework. **AngularJS** extends HTML with new attributes. **AngularJS** is a JavaScript framework. It can be added to an **HTML** page with a **&lt;script&gt;** tag. **AngularJS** extends **HTML** attributes with **Directives**, and binds data to **HTML** with **Expressions**. The support is achieved by an integration JS library file. You can know more about the Angular support in our documentation. You can find the online documentation in the following link location. 
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 Sometimes you need to use **DateTimePicker** value for sorting and retrieving the information from database. Consider you are going to sort the number of users registered in your site. Whenever you select the date and time from the **DateTimePicker** popup window the result of sorting should be changed based on date and timings. To achieve this, date and time value has to bind to the model while you change the value of date and time in **DateTimePicker** control. You can achieve data binding with lesser code by integrating the angular concept with your control.  
 
@@ -74,7 +74,7 @@ Add the following code in your **HTML** page.
 
 
 
-![]("/js/DateTimePicker/Integration_images/Integration_img1.png")
+![](/js/DateTimePicker/Integration_images/Integration_img1.png)
 
 ## Knockout Support
 
@@ -141,5 +141,5 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-![]("/js/DateTimePicker/Integration_images/Integration_img2.png")
+![](/js/DateTimePicker/Integration_images/Integration_img2.png)
 

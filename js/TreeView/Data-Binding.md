@@ -147,13 +147,13 @@ In the HTML page, add a &lt;div&gt; element to configure TreeView.
 
 The output for **TreeView** control with **Local Data** binding is as follows.
 
-![]("/js/TreeView/Data-Binding_images/Data-Binding_img1.png")
+![](/js/TreeView/Data-Binding_images/Data-Binding_img1.png)
 
 ## Remote Data
 
 You can bind **TreeView** to **Remote Data** using **dataManager** and the query in fields is used to retrieve the data. **dataManager** supports the following types of data-binding: JSON, Web Services, oData. It uses two different classes; **ej.DataManager** for processing, and **ej.Query** for serving data. **ej.DataManager** communicates with data source and **ej.Query** generates data queries that are read by the **dataManager**. In the following link, how to create **dataManager** is explained in full detail.
 
-<http://docs.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript>
+<http://help.syncfusion.com/js/datamanager/getting-started#create-your-datamanager-in-javascript>
 
 The following steps explain how you can bind remote data to **TreeView** control.
 
@@ -210,5 +210,5 @@ Assign dataSource and query property values to bind the remote data. Map the cor
 
 The output for **TreeView** control with **Remote Data** binding is as follows.
 
-![]("/js/TreeView/Data-Binding_images/Data-Binding_img2.png")
+![](/js/TreeView/Data-Binding_images/Data-Binding_img2.png)
 

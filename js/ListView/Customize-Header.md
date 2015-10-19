@@ -51,5 +51,5 @@ Add the following script in your code.
 
 Run the code to get the following output
 
-![]("/js/ListView/Customize-Header_images/Customize-Header_img1.png") 
+![](/js/ListView/Customize-Header_images/Customize-Header_img1.png) 
 

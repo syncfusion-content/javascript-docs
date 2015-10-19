@@ -32,7 +32,7 @@ SVG is used to render Chart by default for all browsers other than IE7 and IE8.
 
 ## Canvas
 
-You can switch between SVG and Canvas rendering using **enableCanvasRendering** option. We recommend using canvas mode rendering in the following scenarios,
+You can switch between SVG and Canvas rendering by using the [enableCanvasRendering](../api/ejchart#members:enablecanvasrendering) option. The canvas mode rendering is used in the following scenarios,
 
 * Plotting large number of data points.
 * Performing high frequency live updates.
@@ -54,7 +54,10 @@ The following code example shows how to enable HTML5 Canvas rendering in chart.
 
 {% endhighlight %}
 
-![]("/js/Chart/Rendering-Modes_images/Rendering-Modes_img1.png" Caption="Canvas Chart")
+![](/js/Chart/Rendering-Modes_images/Rendering-Modes_img1.png)
+
+Canvas Chart
+{:.caption}
 
 **Limitations:**
   

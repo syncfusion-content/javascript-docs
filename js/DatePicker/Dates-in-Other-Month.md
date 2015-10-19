@@ -40,5 +40,5 @@ In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** w
 
 The following screenshot displays the output for the above code.
 
-![]("/js/DatePicker/Dates-in-Other-Month_images/Dates-in-Other-Month_img1.png")
+![](/js/DatePicker/Dates-in-Other-Month_images/Dates-in-Other-Month_img1.png)
 

@@ -37,5 +37,5 @@ In the HTML page set the corresponding &lt;input&gt; elements for rendering Nume
 
 The output for **NumericTextBox** when **enableRTL** is **“True”** is as follows. 
 
-![]("/js/NumericTextBox/RTL-Support_images/RTL-Support_img1.png") 
+![](/js/NumericTextBox/RTL-Support_images/RTL-Support_img1.png) 
 

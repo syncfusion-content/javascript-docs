@@ -40,7 +40,7 @@ The following steps explain the **dimensional** properties of an AutoComplete te
 
 The following image is the output for **AutoComplete** textbox with customized dimensions.
 
-![]("/js/Autocomplete/Appearance-and-Styling_images/Appearance-and-Styling_img1.png")
+![](/js/Autocomplete/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## Rounded corner
 
@@ -77,7 +77,7 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComple
 
 The following image is the output for AutoComplete when **showRoundedCorner** is set to “**True**”.
 
-![]("/js/Autocomplete/Appearance-and-Styling_images/Appearance-and-Styling_img2.png")
+![](/js/Autocomplete/Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ## Watermark text
 
@@ -114,7 +114,7 @@ In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComple
 
 The following image is the output for AutoComplete when **watermarkText** is defined.
 
-![]("/js/Autocomplete/Appearance-and-Styling_images/Appearance-and-Styling_img3.png")
+![](/js/Autocomplete/Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 ## Adjusting Suggestion list size
 
@@ -152,7 +152,7 @@ Configure dimensions for popup panel in **AutoComplete** control as follows.
 
 The following image is the output for **AutoComplete,** after configuring the height and width of the popup panel.
 
-![]("/js/Autocomplete/Appearance-and-Styling_images/Appearance-and-Styling_img4.png")
+![](/js/Autocomplete/Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 ## PopUp Time Delay
 
@@ -270,5 +270,5 @@ Add the **cssClass** property to **AutoComplete** textbox.
 
 The following image is of an AutoComplete textbox configured based on CSS class.
 
-![]("/js/Autocomplete/Appearance-and-Styling_images/Appearance-and-Styling_img5.png")
+![](/js/Autocomplete/Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 

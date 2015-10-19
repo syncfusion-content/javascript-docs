@@ -9,9 +9,9 @@ documentation: ug
 
 # Chart Dimensions
 
-You can set the size of the chart directly on the chart or to the container of the chart. By default, if you don’t specify the size, it takes 450px as the height and window size as its width. 
+You can set the size of the chart directly on the chart or to the container of the chart. When you do not specify the size, it takes 450px as the height and window size as its width, by default. 
 
-## Setting size for container
+## Set size for the container
 
 You can customize the chart dimension by setting the width and height for the container element. 
 
@@ -32,9 +32,9 @@ You can customize the chart dimension by setting the width and height for the co
 {% endhighlight %}
 
 
-## Setting size in pixels
+## Set size in pixels
 
-You can also set the chart dimension by using the **size** property of the chart. 
+You can also set the chart dimension by using the [size](../api/ejchart#members:size) property of the chart. 
 
 {% highlight js %}
 
@@ -49,11 +49,14 @@ You can also set the chart dimension by using the **size** property of the chart
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img1.png" Caption="Chart dimension in pixels")
+![](/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img1.png)
+
+Chart dimension in pixels
+{:.caption}
 
 ## Setting size relative to the container size
 
-You can specify the chart size in percentage by using the **size** property. The chart gets its dimension with respect to its container.
+You can specify the chart size in percentage by using the [size](../api/ejchart#members:size) property. The chart gets its dimension with respect to its container.
 
 {% highlight html %}
 
@@ -72,12 +75,15 @@ You can specify the chart size in percentage by using the **size** property. The
 
 {% endhighlight %}
 
-![]("/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img2.png" Caption="Chart in percentage")
+![](/js/Chart/Chart-Dimensions_images/Chart-Dimensions_img2.png)
+
+Chart in percentage
+{:.caption}
 
 
 ## Responsive chart
 
-To resize the Chart when the browser or the chart container is resized, set the **canResize** property to **true**, where the chart adapts to the changes in size of the container.
+To resize the Chart when the browser or the chart container is resized, set the [canResize](../api/ejchart#members:canresize) property to **true**, where the chart adapts to the changes in size of the container.
 
 {% highlight js %}
 

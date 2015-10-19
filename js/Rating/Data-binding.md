@@ -80,7 +80,7 @@ The following example depicts the way to bind data to the **Rating** control thr
 
 The following screenshot illustrates **Rating** with **Knockout** support.
 
-![]("/js/Rating/Data-binding_images/Data-binding_img1.png") 
+![](/js/Rating/Data-binding_images/Data-binding_img1.png) 
 
 ## Angular Binding
 
@@ -157,5 +157,5 @@ The following example depicts the way to bind data to the **Rating** control by 
 
 The following screenshot displays the output of **Rating** with **Angular** support.
 
-![]("/js/Rating/Data-binding_images/Data-binding_img2.png") 
+![](/js/Rating/Data-binding_images/Data-binding_img2.png) 
 

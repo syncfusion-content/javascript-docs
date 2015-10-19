@@ -20,7 +20,7 @@ Vertical axis always uses numerical or logarithmic scale. Horizontal(x) axis sup
 
 ## Category Axis
 
-Category axis displays the text labels instead of numbers. To use the categorical axis, you can set the **valueType** property of the axis to **category**. Default value of **valueType** is **double**.
+Category axis displays the text labels instead of numbers. To use the categorical axis, you can set the [valueType](../api/ejchart#members:primaryxaxis-valuetype) property of the axis to the **category**. Default value of [valueType](../api/ejchart#members:primaryxaxis-valuetype) is **double**.
 
 {% highlight js %}
 
@@ -40,14 +40,17 @@ $("#chartcontainer").ejChart({
 
 
 
-![]("/js/Chart/Axis_images/axis_img1.png" Caption="Chart with category axis")
+![](/js/Chart/Axis_images/axis_img1.png)
+
+Chart with category axis
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/column) here to view our online demo sample that uses Category axis.
 
 
-### Placing labels on ticks
+### Place labels on ticks
 
-Labels in the category axis can be placed on the ticks by setting the **labelPlacement** property of axis to **onticks**. Default value of **labelPlacement** property is **betweenticks** i.e. labels are placed between the ticks by default.
+Labels in the category axis can be placed on the ticks by setting the [labelPlacement](../api/ejchart#members:primaryxaxis-labelplacement) property of axis to the **onticks**. The default value of the [labelPlacement](../api/ejchart#members:primaryxaxis-valuetype) property is **betweenticks** i.e. labels are placed between the ticks, by default.
 
 {% highlight js %}
 
@@ -65,12 +68,15 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img2.png" Caption="Category axis labels on ticks")
+![](/js/Chart/Axis_images/axis_img2.png)
+
+Category axis labels on ticks
+{:.caption}
 
 
-### Displaying labels after a fixed interval
+### Display labels after a fixed interval
 
-To display the labels after a fixed interval n, you can set the **interval** property of the axis range as **n**. Default value of interval is 1 i.e. all the labels are displayed by default.
+To display the labels after a fixed interval n, you can set the [interval](../api/ejchart#members:primaryxaxis-range-interval) property of the axis range as **n**. The default value of the interval is 1 i.e. all the labels are displayed.
 
 {% highlight js %}
 
@@ -88,12 +94,15 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img3.png" Caption="Change category axis labels fixed interval")
+![](/js/Chart/Axis_images/axis_img3.png)
+
+Change category axis labels fixed interval
+{:.caption}
 
 
 ## Numeric Axis 
 
-Numeric axis uses numerical scale and displays numbers as labels. To use numeric axis, you can set the **valueType** property of axis to **double**. 
+Numeric axis uses numerical scale and displays numbers as labels. To use numeric axis, you can set the [valueType](../api/ejchart#members:primaryxaxis-valuetype) property of the axis to **double**. 
 
 {% highlight js %}
 
@@ -110,12 +119,15 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img4.png" Caption="Numeric axis")
+![](/js/Chart/Axis_images/axis_img4.png)
+
+Numeric axis
+{:.caption}
 
 
-### Customizing numeric range
+### Customize numeric range
 
-To customize the range of an axis, you can use the **range** property of axis to set the *minimum*, *maximum* and *interval* values. By default, nice range is calculated automatically based on the provided data.
+To customize the range of an axis, you can use the [range](../api/ejchart#members:primaryxaxis-range) property of the axis to set the [minimum](../api/ejchart#members:primaryxaxis-range-minimum), [maximum](../api/ejchart#members:primaryxaxis-range-maximum) and [interval](../api/ejchart#members:primaryxaxis-range-interval) values. Nice range is calculated automatically based on the provided data, by default.
 
 
 {% highlight js %}
@@ -135,12 +147,15 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img5.png" Caption="Customizing numeric range")
+![](/js/Chart/Axis_images/axis_img5.png)
+
+Customizing numeric range
+{:.caption}
 
 
 #### Customizing numeric interval
 
-Axis interval can be customized by using the **interval** property of the axis range. By default, nice interval is calculated based on the minimum and maximum value of the provided data.
+Axis interval can be customized by using the [interval](../api/ejchart#members:primaryyaxis-range-interval) property of the axis range. Nice interval is calculated based on the minimum and maximum value of the provided data, by default.
 
 {% highlight js %}
 
@@ -160,11 +175,14 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img6.png" Caption="Customizing numeric interval")
+![](/js/Chart/Axis_images/axis_img6.png)
+
+Customizing numeric interval
+{:.caption}
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the axis range by using the **rangePadding** property. Numeric axis supports the following types of padding
+Padding can be applied to the minimum and maximum extremes of the axis range by using the [rangePadding](../api/ejchart#members:primaryxaxis-rangepadding) property. Numeric axis supports the following types of padding
 
 * None
 * Round
@@ -173,7 +191,7 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 **None**
 
-When the value of the **rangePadding** property is **none**, padding can not be applied to the axis. This is also the default value of the rangePadding. 
+When the value of the [rangePadding](../api/ejchart#members:primaryxaxis-rangepadding) property is **none**, padding can not be applied to the axis. This is also the default value of the rangePadding. 
 
 {% highlight js %}
 
@@ -193,11 +211,14 @@ When the value of the **rangePadding** property is **none**, padding can not be 
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img7.png" Caption="Chart’s Y-axis with RangePadding set to None")
+![](/js/Chart/Axis_images/axis_img7.png)
+
+Chart’s Y-axis with RangePadding set to None
+{:.caption}
 
 #### Round
 
-When the value of **rangePadding** property is **round**, axis range is rounded to the nearest possible value divided by the interval.
+When the value of [rangePadding](../api/ejchart#members:primaryxaxis-rangepadding) property is **round**, the axis range is rounded to the nearest possible value divided by the interval.
 
 {% highlight js %}
 
@@ -219,17 +240,23 @@ When the value of **rangePadding** property is **round**, axis range is rounded 
 
 **Chart before rounding axis range**
 
-![]("/js/Chart/Axis_images/axis_img8.png" Caption="Chart before rounding axis range") 
+![](/js/Chart/Axis_images/axis_img8.png)
+
+Chart before rounding axis range
+{:.caption} 
 
 
 **Chart after rounding axis range**
 
-![]("/js/Chart/Axis_images/axis_img9.png" Caption="Chart after rounding axis range") 
+![](/js/Chart/Axis_images/axis_img9.png)
+
+Chart after rounding axis range
+{:.caption} 
 
 
 **Additional**
 
-When the value of the **rangePadding** property is **additional**, axis range is rounded and an interval of the axis is added as padding to the minimum and maximum values of the range.
+When the value of the [rangePadding](../api/ejchart#members:primaryxaxis-rangepadding) property is **additional**, the axis range is rounded and an interval of the axis is added as padding to the minimum and maximum values of the range.
 
 {% highlight js %}
 
@@ -249,12 +276,15 @@ When the value of the **rangePadding** property is **additional**, axis range is
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img10.png" Caption="Chart’s Y-axis with RangePadding set to Additional")
+![](/js/Chart/Axis_images/axis_img10.png)
+
+Chart’s Y-axis with RangePadding set to Additional
+{:.caption}
 
 
 **Normal**
 
-When the value of the **rangePadding** property is **normal**, padding is applied to the axis based on the range calculation.
+When the value of the [rangePadding](../api/ejchart#members:primaryyaxis-rangepadding) property is **normal**, the padding is applied to the axis based on the range calculation.
 
 {% highlight js %}
 
@@ -274,11 +304,14 @@ When the value of the **rangePadding** property is **normal**, padding is applie
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img11.png" Caption="Chart’s Y-axis with RangePadding set to Normal")
+![](/js/Chart/Axis_images/axis_img11.png)
+
+Chart’s Y-axis with RangePadding set to Normal
+{:.caption}
 
 ## DateTime Axis
 
-Date time axis uses date time scale and displays date time values as axis labels in the specified format. To use date time axis, you can set the **valueType** property of axis to **datetime**.
+Date time axis uses date time scale and displays the date time values as axis labels in the specified format. To use date time axis, set the [valueType](../api/ejchart#members:primaryxaxis-valuetype) property of the axis to **datetime**.
 
 {% highlight js %}
 
@@ -297,14 +330,17 @@ Date time axis uses date time scale and displays date time values as axis labels
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img12.png" Caption="DateTime axis")
+![](/js/Chart/Axis_images/axis_img12.png)
+
+DateTime axis
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/datetimeaxis) here to view our online demo sample for date time axis.
 
  
 ### Customizing date time range
  
- Axis range can be customized by using the **range** property to set the *minimum*, *maximum* and *interval* values. By default, nice range is calculated automatically based on the provided data.
+ Axis range can be customized by using the [range](../api/ejchart#members:primaryxaxis-range) property to set the [minimum](../api/ejchart#members:primaryxaxis-range-minimum), [maximum](../api/ejchart#members:primaryxaxis-range-maximum) and [interval](../api/ejchart#members:primaryxaxis-range-interval) values. Nice range is calculated automatically based on the provided data, by default.
  
  {% highlight js %}
 
@@ -326,11 +362,14 @@ Date time axis uses date time scale and displays date time values as axis labels
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img13.png" Caption="DateTime axis range")
+![](/js/Chart/Axis_images/axis_img13.png)
+
+DateTime axis range
+{:.caption}
 
 ### Date time intervals
 
-Date time intervals can be customized by using the **interval** and **intervalType** properties of the axis. For example, setting **interval** as **2** and **intervalType** as **years** considers 2 years as interval.
+Date time intervals can be customized by using the [interval](../api/ejchart#members:primaryxaxis-range-interval) and [intervalType](../api/ejchart#members:primaryxaxis-intervaltype) properties of the axis. For example, when you set [interval](../api/ejchart#members:primaryxaxis-range-interval) as **2** and [intervalType](../api/ejchart#members:primaryxaxis-intervaltype) as **years**, it considers the 2 years as interval.
 
 Essential Chart supports the following types of interval for date time axis.
 
@@ -362,12 +401,15 @@ Essential Chart supports the following types of interval for date time axis.
 {% endhighlight %}
 
 
-![]("/js/Chart/Axis_images/axis_img14.png" Caption="DateTime Axis Interval")
+![](/js/Chart/Axis_images/axis_img14.png)
+
+DateTime Axis Interval
+{:.caption}
 
 
 ### Apply padding to the range
 
-Padding can be applied to the minimum and maximum extremes of the range by using the **rangePadding** property. Date time axis supports the following types of padding
+Padding can be applied to the minimum and maximum extremes of the range by using the [rangePadding](../api/ejchart#members:primaryxaxis-rangepadding) property. Date time axis supports the following types of padding
 
 * None
 * Round
@@ -375,7 +417,7 @@ Padding can be applied to the minimum and maximum extremes of the range by using
 
 **None**
 
-When the value of the **rangePadding** property is **none**, padding is applied to the axis. This is also the default value of the **rangePadding**. 
+When the value of the [rangePadding](../api/ejchart#members:primaryxaxis-rangepadding) property is **none**, padding is applied to the axis. This is also the default value of the [rangePadding](../api/ejchart#members:primaryxaxis-rangepadding). 
 
 {% highlight js %}
 
@@ -391,11 +433,14 @@ When the value of the **rangePadding** property is **none**, padding is applied 
 
 {% endhighlight %} 
 
-![]("/js/Chart/Axis_images/axis_img15.png" Caption="Chart’s X-axis with RangePadding set to None")
+![](/js/Chart/Axis_images/axis_img15.png)
+
+Chart’s X-axis with RangePadding set to None
+{:.caption}
 
 **Round**
 
-When the value of the **rangePadding** property is **round**, axis range is rounded to the nearest possible date time value.
+When the value of the [rangePadding](../api/ejchart#members:primaryxaxis-rangepadding) property is **round**, the axis range is rounded to the nearest possible date time value.
 
 {% highlight js %}
 
@@ -413,15 +458,21 @@ When the value of the **rangePadding** property is **round**, axis range is roun
 
 **Chart before rounding axis range**
 
-![]("/js/Chart/Axis_images/axis_img16.png" Caption="Chart before rounding axis range")
+![](/js/Chart/Axis_images/axis_img16.png)
+
+Chart before rounding axis range
+{:.caption}
 
 **Chart after rounding axis range**
 
-![]("/js/Chart/Axis_images/axis_img17.png" Caption="Chart after rounding axis range")
+![](/js/Chart/Axis_images/axis_img17.png)
+
+Chart after rounding axis range
+{:.caption}
 
 **Additional** 
 
-When the value of the **rangePadding** property is **additional**, range is rounded and date time interval of the axis are added as padding to the minimum and maximum extremes of the range.
+When the value of the [rangePadding](../api/ejchart#members:primaryxaxis-rangepadding) property is **additional**, the range is rounded and date time interval of the axis are added as padding to the minimum and maximum extremes of the range.
 
 {% highlight js %}
 
@@ -437,11 +488,14 @@ When the value of the **rangePadding** property is **additional**, range is roun
 
 {% endhighlight %} 
 
-![]("/js/Chart/Axis_images/axis_img18.png" Caption="Chart’s x-axis with RangePadding set to Additional")
+![](/js/Chart/Axis_images/axis_img18.png)
+
+Chart’s x-axis with RangePadding set to Additional
+{:.caption}
 
 ## Logarithmic Axis
 
-Logarithmic axis uses logarithmic scale and it is very useful in visualizing when the data has values with both lower order of magnitude **(eg: 10<sup>-6</sup>)** and higher order of magnitude **(eg: 10<sup>6</sup>)**. To use logarithmic axis, you can set the **valueType** property of axis to **logarithmic**.  
+Logarithmic axis uses logarithmic scale and it is very useful in visualizing when the data has values with both lower order of magnitude **(eg: 10<sup>-6</sup>)** and higher order of magnitude **(eg: 10<sup>6</sup>)**. To use logarithmic axis, set the [valueType](../api/ejchart#members:primaryxaxis-valuetype) property of the axis to **logarithmic**.  
 
 {% highlight js %}
 
@@ -460,13 +514,16 @@ Logarithmic axis uses logarithmic scale and it is very useful in visualizing whe
 {% endhighlight %}
 
 
-![]("/js/Chart/Axis_images/axis_img19.png" Caption="Chart with Logarthimic Axis")
+![](/js/Chart/Axis_images/axis_img19.png)
+
+Chart with Logarthimic Axis
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/logaxis) here to view our online demo sample link for logarithmic axis.
 
-### Customizing Logarithmic range
+### Customize Logarithmic range
 
-Logarithmic range can be customized by using the **range** property of axis to change the *minimum*, *maximum* and *interval* values. By default, nice range is calculated automatically based on the provided data.
+Logarithmic range can be customized by using the [range](../api/ejchart#members:primaryxaxis-range) property of the axis to change the [minimum](../api/ejchart#members:primaryxaxis-range-minimum), [maximum](../api/ejchart#members:primaryxaxis-range-maximum) and [interval](../api/ejchart#members:primaryxaxis-range-interval) values. Nice range is calculated automatically based on the provided data, by default.
 
 {% highlight js %}
 
@@ -483,11 +540,14 @@ Logarithmic range can be customized by using the **range** property of axis to c
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img20.png" Caption="Change logarthimic axis range")
+![](/js/Chart/Axis_images/axis_img20.png)
+
+Change logarthimic axis range
+{:.caption}
 
 ### Logarithmic base
 
-Logarithmic base can be customized by using the **logBase** property of the axis. Default value of **logBase** is **10**.
+Logarithmic base can be customized by using the [logBase](../api/ejchart#members:primaryxaxis-logbase) property of the axis. The default value of the [logBase](../api/ejchart#members:primaryxaxis-logbase) is **10**.
 
 {% highlight js %}
 
@@ -504,12 +564,15 @@ Logarithmic base can be customized by using the **logBase** property of the axis
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img21.png" Caption="Logarthimic axis logbase")
+![](/js/Chart/Axis_images/axis_img21.png)
+
+Logarthimic axis logbase
+{:.caption}
 
 
 ### Logarithmic interval
 
-Logarithmic axis interval can be customized by using the **interval** property of the axis. When the logarithmic base is 10 and logarithmic interval is 2, then the axis labels are placed at an interval of 10<sup>2</sup>. Default value of interval is 1. 
+Logarithmic axis interval can be customized by using the [interval](../api/ejchart#members:primaryxaxis-range-interval) property of the axis. When the logarithmic base is 10 and logarithmic interval is 2, then the axis labels are placed at an interval of 10<sup>2</sup>. The default value of the interval is 1. 
 
 {% highlight js %}
 
@@ -526,16 +589,16 @@ Logarithmic axis interval can be customized by using the **interval** property o
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img22.png")
+![](/js/Chart/Axis_images/axis_img22.png)
 
 Logarthimic axis interval
 {:.caption}       
 
 ## Label Format
 
-### Formatting numeric labels
+### Format numeric labels
 
-Numeric labels can be formatted by using the **labelFormat** property. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
+Numeric labels can be formatted by using the [labelFormat](../api/ejchart#members:primaryxaxis-labelformat) property. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
 
 {% highlight js %}
 
@@ -553,7 +616,10 @@ Numeric labels can be formatted by using the **labelFormat** property. Numeric v
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img23.png" Caption="Formatting numeric labels")
+![](/js/Chart/Axis_images/axis_img23.png)
+
+Formatting numeric labels
+{:.caption}
 
 The following table describes the result of applying some commonly used label formats on numeric values. 
  
@@ -615,9 +681,9 @@ The following table describes the result of applying some commonly used label fo
 </table>
 
 
-### Formatting date time values
+### Format date time values
 
-Date time labels can be formatted by using the **labelFormat** property of the axis.
+Date time labels can be formatted by using the [labelFormat](../api/ejchart#members:primaryxaxis-labelformat) property of the axis.
 
 {% highlight js %}
 
@@ -633,7 +699,10 @@ Date time labels can be formatted by using the **labelFormat** property of the a
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img24.png" Caption="Formatting datetime labels")
+![](/js/Chart/Axis_images/axis_img24.png)
+
+Formatting datetime labels
+{:.caption}
 
 
 The following table describes the result of applying some common date time formats to the labelFormat property
@@ -685,7 +754,7 @@ The following table describes the result of applying some common date time forma
 
 ### Custom label format
 
-Prefix and suffix can be added to the category labels by using the **labelFormat** property. You can use the *{value}* as placeholder text in your custom text, it is replaced with the corresponding axis label at runtime.
+Prefix and suffix can be added to the category labels by using the [labelFormat](../api/ejchart#members:primaryxaxis-labelformat) property. You can use the *{value}* as placeholder text in your custom text, it is replaced with the corresponding axis label at the runtime.
 
 {% highlight js %}
 
@@ -700,7 +769,10 @@ $("#chartcontainer").ejChart({
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img25.png" Caption="Custom label format")
+![](/js/Chart/Axis_images/axis_img25.png)
+
+Custom label format
+{:.caption}
 
 ## Common axis features
 
@@ -708,7 +780,7 @@ Customization of features such as axis title, labels, grid lines and tick lines 
 
 ### Axis Visibility
 
-Axis visibility can be controlled by using the **visible** property of the axis. Default value of the **visible** property is **true**. 
+Axis visibility can be controlled by using the [visible](../api/ejchart#members:primaryxaxis-visible) property of the axis. The default value of the [visible](../api/ejchart#members:primaryxaxis-visible) property is **true**. 
 
 {% highlight js %}
 
@@ -726,11 +798,14 @@ Axis visibility can be controlled by using the **visible** property of the axis.
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img26.png" Caption="Chart with hidden Y-axis")
+![](/js/Chart/Axis_images/axis_img26.png)
+
+Chart with hidden Y-axis
+{:.caption}
 
 ### Axis title
 
-The **title** property in the axis provides options to customize the text and font of axis title. Axis does not display title by default. Title text can also be trimmed based on the title text length or specified length.
+The [title](../api/ejchart#members:primaryxaxis-title) property in the axis provides options to customize the text and font of the axis title. Axis does not display the title, by default. Title text can also be trimmed based on the title text length or specified length.
 
 {% highlight js %}
 
@@ -758,12 +833,15 @@ The **title** property in the axis provides options to customize the text and fo
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img27.png" Caption="Axis Title")
+![](/js/Chart/Axis_images/axis_img27.png)
+
+Axis Title
+{:.caption}
 
 
 ### Label customization
 
-The **font** property of axis provides options to customize the **font-family**, **color**, **opacity**, **size** and **font-weight** of the axis labels.  
+The [font](../api/ejchart#members:primaryxaxis-font) property of the axis provides options to customize the [font-family](../api/ejchart#members:primaryxaxis-font-fontfamily), [color](../api/ejchart#members:primaryxaxis-font-color), [opacity](../api/ejchart#members:primaryxaxis-font-opacity), [size](../api/ejchart#members:primaryxaxis-font-size) and [font-weight](../api/ejchart#members:primaryxaxis-font-fontweight) of the axis labels.  
 
 {% highlight js %}
 
@@ -786,12 +864,15 @@ The **font** property of axis provides options to customize the **font-family**,
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img28.png" Caption="Axis label customization")
+![](/js/Chart/Axis_images/axis_img28.png)
+
+Axis label customization
+{:.caption}
 
 
 ### Label and tick positioning
  
-Axis labels and ticks can be positioned inside or outside the chart area by using the **labelPosition** and **tickPosition** properties. By default, the labels and ticks are positioned outside the chart area.
+Axis labels and ticks can be positioned inside or outside the chart area by using the [labelPosition](../api/ejchart#members:primaryxaxis-labelposition) and [tickPosition](../api/ejchart#members:primaryxaxis-tickposition) properties. The labels and ticks are positioned outside the chart area, by default.
  
 {% highlight js %}
 
@@ -810,12 +891,15 @@ Axis labels and ticks can be positioned inside or outside the chart area by usin
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img29.png" Caption="Label and tick positioning")
+![](/js/Chart/Axis_images/axis_img29.png)
+
+Label and tick positioning
+{:.caption}
 
 
 ### Edge labels placement
 
-Labels with long text at the edges of an axis may appear partially outside the chart. The **edgeLabelPlacement** property can be used to avoid the partial appearance of labels at the corners. 
+Labels with long text at the edges of an axis may appear partially outside the chart. The [edgeLabelPlacement](../api/ejchart#members:primaryxaxis-edgelabelplacement) property can be used to avoid the partial appearance of the labels at the corners. 
 
 {% highlight js %}
 
@@ -834,15 +918,21 @@ Labels with long text at the edges of an axis may appear partially outside the c
 
 **Chart before setting edge label placement to X-axis**
 
-![]("/js/Chart/Axis_images/axis_img30.png" Caption="Chart before setting edge label placement to X-axis")
+![](/js/Chart/Axis_images/axis_img30.png)
+
+Chart before setting edge label placement to X-axis
+{:.caption}
 
 **Chart after setting edge label placement to X-axis**
 
-![]("/js/Chart/Axis_images/axis_img31.png" Caption="Chart after setting edge label placement to X-axis")
+![](/js/Chart/Axis_images/axis_img31.png)
+
+Chart after setting edge label placement to X-axis
+{:.caption}
 
 ### Grid lines customization
 
-The **majorGridLines** and **minorGridLines** properties in the axis are used to customize the major grid lines and minor grid lines of an axis. They provide options to change the width, color, visibility and opacity of grid lines. By default, the minor grid lines are not visible.
+The [majorGridLines](../api/ejchart#members:primaryxaxis-majorgridlines) and [minorGridLines](../api/ejchart#members:primaryxaxis-minorgridlines) properties in the axis are used to customize the major grid lines and minor grid lines of an axis. They provide options to change the width, color, visibility and opacity of the grid lines. The minor grid lines are not visible, by default.
 
 {% highlight js %}
 
@@ -868,12 +958,15 @@ The **majorGridLines** and **minorGridLines** properties in the axis are used to
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img32.png" Caption="Major gridlines customization")
+![](/js/Chart/Axis_images/axis_img32.png)
+
+Major gridlines customization
+{:.caption}
 
 
 ### Tick lines customization
 
-The **majorTickLines** and **minorTickLines** properties in the axis are used to customize the major tick lines of an axis and minor tick lines of an axis. They provide options to change the width, size, color and visibility of grid lines. By default, the minor tick lines are not visible.
+The [majorTickLines](../api/ejchart#members:primaryxaxis-majorticklines) and [minorTickLines](../api/ejchart#members:primaryxaxis-minorticklines) properties in the axis are used to customize the major tick lines of an axis and minor tick lines of an axis. They provide options to change the width, size, color and visibility of the grid lines. The minor tick lines are not visible, by default.
 
 {% highlight js %}
 
@@ -902,12 +995,15 @@ The **majorTickLines** and **minorTickLines** properties in the axis are used to
 
 {% endhighlight %}
 
-![]("/js/Chart/Axis_images/axis_img33.png" Caption="Major gridlines customization")
+![](/js/Chart/Axis_images/axis_img33.png)
+
+Major gridlines customization
+{:.caption}
 
   
 ### Inversing axis
 
-Axis can be inversed by using the **isInversed** property of the axis. Default value of **isInversed** property is **false**.
+Axis can be inversed by using the [isInversed](../api/ejchart#members:primaryxaxis-isinversed) property of the axis. The default value of the [isInversed](../api/ejchart#members:primaryxaxis-isinversed) property is **false**.
 
 {% highlight js %}
 
@@ -927,16 +1023,22 @@ Axis can be inversed by using the **isInversed** property of the axis. Default v
 
 **Chart before inversing the axes**
 
-![]("/js/Chart/Axis_images/axis_img34.png" Caption="Chart before inversing the axes")
+![](/js/Chart/Axis_images/axis_img34.png)
+
+Chart before inversing the axes
+{:.caption}
 
 **Chart after inversing the axes**
 
-![]("/js/Chart/Axis_images/axis_img35.png" Caption="Chart after inversing the axes")
+![](/js/Chart/Axis_images/axis_img35.png)
+
+Chart after inversing the axes
+{:.caption}
    
 
-### Placing axes at the opposite side
+### Place axes at the opposite side
 
-The **opposedPosition** property of axis can be used to place the axis at the opposite side of its default position. Default value of **opposedPosition** property is **false**. 
+The [opposedPosition](../api/ejchart#members:primaryxaxis-opposedposition) property of axis can be used to place the axis at the opposite side of its default position. The default value of the [opposedPosition](../api/ejchart#members:primaryxaxis-opposedposition) property is **false**. 
 
 {% highlight js %}
 
@@ -956,16 +1058,22 @@ The **opposedPosition** property of axis can be used to place the axis at the op
 
 **Chart with X and Y axes at normal position**
 
-![]("/js/Chart/Axis_images/axis_img36.png" Caption="Chart with X and Y axes at normal position")
+![](/js/Chart/Axis_images/axis_img36.png)
+
+Chart with X and Y axes at normal position
+{:.caption}
 
 **Chart with Y-axis at opposed position**
 
-![]("/js/Chart/Axis_images/axis_img37.png" Caption="Chart with Y-axis at opposed position")
+![](/js/Chart/Axis_images/axis_img37.png)
+
+Chart with Y-axis at opposed position
+{:.caption}
 
 
 ### Maximum number of labels per 100 pixels
 
-By default, a maximum of 3 labels are displayed for each 100 pixels in the axis. The maximum number of labels that should be present within the 100 pixels length can be customized by using the **maximumLabels** property of the axis. This property is applicable only for an automatic range calculation and will not work if you set value for **interval** property in the axis range.
+A maximum of 3 labels are displayed for each 100 pixels in the axis, by default. The maximum number of labels that is present within the 100 pixels length can be customized by using the [maximumLabels](../api/ejchart#members:primaryxaxis-maximumlabels) property of the axis. This property is applicable only for an automatic range calculation and it does not work when you set the value for [interval](../api/ejchart#members:primaryxaxis-range-interval) property in the axis range.
 
 {% highlight js %}
 
@@ -985,20 +1093,29 @@ By default, a maximum of 3 labels are displayed for each 100 pixels in the axis.
 
 **Chart before setting maximum labels per 100 pixels**
 
-![]("/js/Chart/Axis_images/axis_img38.png" Caption="Chart before setting maximum labels per 100 pixels")
+![](/js/Chart/Axis_images/axis_img38.png)
+
+Chart before setting maximum labels per 100 pixels
+{:.caption}
 
 **Chart after setting maximum labels one per 100 pixels**
 
-![]("/js/Chart/Axis_images/axis_img39.png" Caption="Chart after setting maximum labels one per 100 pixels")
+![](/js/Chart/Axis_images/axis_img39.png)
+
+Chart after setting maximum labels one per 100 pixels
+{:.caption}
 
 
 ## Multiple Axis
 
 Multiple axes can be used in the Chart and chart area can be split into multiple panes to draw multiple series with multiple axes.
 
-![]("/js/Chart/Axis_images/axis_img40.png" Caption="Chart with multiple axes")
+![](/js/Chart/Axis_images/axis_img40.png)
 
-An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **axes** collection, and then you can associate it to a series by specifying the name of the axis to the **xAxisName** or **yAxisName** property of the series.
+Chart with multiple axes
+{:.caption}
+
+An additional horizontal or vertical axis can be added to the chart by adding an axis instance to the **axes** collection and then you can associate it to a series by specifying the name of the axis to the [xAxisName](../api/ejchart#members:series-xaxisname) or [yAxisName](../api/ejchart#members:series-yaxisname) property of the series.
 
 {% highlight js %}
 
@@ -1034,21 +1151,24 @@ An additional horizontal or vertical axis can be added to the chart by adding an
 
 
 
-![]("/js/Chart/Axis_images/axis_img41.png" Caption="Chart with Multiple Axis")
+![](/js/Chart/Axis_images/axis_img41.png)
+
+Chart with Multiple Axis
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/multipleaxes) here to view the multiple axis online demo sample.
 
 
 ## Smart Axis Labels
 
-Axis labels may overlap with each other based on the chart dimensions and label size. The **labelIntersectAction** property of the axis is very useful in avoiding the overlapping of the axis labels with each other. Default value of **labelIntersectAction** is **none**. Other available values of Label Intersect Actions are **rotate45**, **rotate90**, **trim**, **multiplerows**, **wrap** and **hide**.
+When the Axis labels overlap with each other based on the chart dimensions and label size, you can use the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping. The default value of the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) is **none**. The other available values of the Label Intersect Actions are **rotate45**, **rotate90**, **trim**, **multiplerows**, **wrap** and **hide**.
 
 {% highlight js %}
 
        $("#chartcontainer").ejChart({
 
             // Avoid overlapping of x-axis labels
-            primaryXAxis: {¬¬
+            primaryXAxis: {
                 labelIntersectAction : 'multiplerows',
                  //  ...
             },
@@ -1061,37 +1181,58 @@ Axis labels may overlap with each other based on the chart dimensions and label 
 
 
 
-![]("/js/Chart/Axis_images/axis_img42.png" Caption="Chart with smart Axis Labelss")
+![](/js/Chart/Axis_images/axis_img42.png)
+
+Chart with smart Axis Labelss
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/smartaxislabels) here to view our online demo sample for smart axis labels.
 
 
 
-The following screenshot displays the result of setting the **rotate45** as value to the *labelIntersectAction* property.
+The following screenshot displays the result, when the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **rotate45**.
 
-![]("/js/Chart/Axis_images/axis_img43.png" Caption="LabelIntersectAction rotate to 45 degree")
+![](/js/Chart/Axis_images/axis_img43.png)
 
-
-The following screenshot displays the result of setting the **rotate90** as value to the *labelIntersectAction* property.
-
-![]("/js/Chart/Axis_images/axis_img44.png" Caption="LabelIntersectAction rotate to 90 degree")
+LabelIntersectAction rotate to 45 degree
+{:.caption}
 
 
-The following screenshot displays the result of setting the **wrap** as value to the *labelIntersectAction* property.
+The following screenshot displays the result, when the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **rotate90**.
 
-![]("/js/Chart/Axis_images/axis_img45.png" Caption="LabelIntersectAction with wrapping the text")
+![](/js/Chart/Axis_images/axis_img44.png)
 
-
-The following screenshot displays the result of setting the **trim** as value to the *labelIntersectAction* property.
-
-![]("/js/Chart/Axis_images/axis_img46.png" Caption="LabelIntersectAction with trimming the text")
+LabelIntersectAction rotate to 90 degree
+{:.caption}
 
 
-The following screenshot displays the result of setting the **hide** as value to the *labelIntersectAction* property.
+The following screenshot displays the result, when the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **wrap**.
 
-![]("/js/Chart/Axis_images/axis_img47.png" Caption="LabelIntersectAction with hide the text")
+![](/js/Chart/Axis_images/axis_img45.png)
+
+LabelIntersectAction with wrapping the text
+{:.caption}
 
 
-The following screenshot displays the result of setting the **multiplerows ** as value to the *labelIntersectAction* property.
+The following screenshot displays the result, when of setting the **trim** as value to the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property.
 
-![]("/js/Chart/Axis_images/axis_img48.png" Caption="LabelIntersectAction with multiplerows of the text")
+![](/js/Chart/Axis_images/axis_img46.png)
+
+LabelIntersectAction with trimming the text
+{:.caption}
+
+
+The following screenshot displays the result, when the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **hide**.
+
+![](/js/Chart/Axis_images/axis_img47.png)
+
+LabelIntersectAction with hide the text
+{:.caption}
+
+
+The following screenshot displays the result, when the [labelIntersectAction](../api/ejchart#members:primaryxaxis-labelintersectaction) property is set as **multiplerows **.
+
+![](/js/Chart/Axis_images/axis_img48.png)
+
+LabelIntersectAction with multiplerows of the text
+{:.caption}

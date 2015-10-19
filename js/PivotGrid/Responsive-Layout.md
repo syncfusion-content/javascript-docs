@@ -22,7 +22,13 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/PivotGrid/Responsive-Layout_images/Responsive-Layout_img1.png" Caption="Normal View")
+![](/js/PivotGrid/Responsive-Layout_images/Responsive-Layout_img1.png)
 
-![]("/js/PivotGrid/Responsive-Layout_images/Responsive-Layout_img2.png" Caption="Responsive View")
+Normal View
+{:.caption}
+
+![](/js/PivotGrid/Responsive-Layout_images/Responsive-Layout_img2.png)
+
+Responsive View
+{:.caption}
 

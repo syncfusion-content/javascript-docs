@@ -17,7 +17,7 @@ This section explains how to configure a **ReportViewer** component in web appli
 
 Open **Visual Studio** and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET** **Empty Web Application** template, and then click **OK**. The following screenshot displays the **Project Creation** Wizard.
 
-![]("/js/ReportViewer/Getting-Started_images/Getting-Started_img2.png") 
+![](/js/ReportViewer/Getting-Started_images/Getting-Started_img2.png) 
 
 ###Create HTML Page
 
@@ -25,13 +25,13 @@ To create a new web form in the application
 
 1\. Right-Click on the project and select **Add**
 
-![]("/js/ReportViewer/Getting-Started_images/Getting-Started_img3.png") 
+![](/js/ReportViewer/Getting-Started_images/Getting-Started_img3.png) 
 
 
 
 2\. Click **New Item** and select **HTML** Page from the listed templates
 
-![]("/js/ReportViewer/Getting-Started_images/Getting-Started_img4.png") 
+![](/js/ReportViewer/Getting-Started_images/Getting-Started_img4.png) 
 
 
 
@@ -47,7 +47,7 @@ To create a new web form in the application
 
 
 
-![]("/js/ReportViewer/Getting-Started_images/Getting-Started_img5.png") 
+![](/js/ReportViewer/Getting-Started_images/Getting-Started_img5.png) 
 
 2\. Add the following assemblies
 
@@ -128,7 +128,7 @@ N>Add your report files to your application’s App_Data folder. You can obtain 
 
 The **JavaScript ReportViewer** uses **WebApi** services to process the report file and process the request from control.
 
-![]("/js/ReportViewer/Getting-Started_images/Getting-Started_img6.png") 
+![](/js/ReportViewer/Getting-Started_images/Getting-Started_img6.png) 
 
 ####Inherit IReportController
 
@@ -185,7 +185,7 @@ namespace ReportViewerDemo.Api
 
 1\. Right-Click the **Project**, select **Add >** and select **Global.asax** file from the listed templates.
 
-![]("/js/ReportViewer/Getting-Started_images/Getting-Started_img7.png") 
+![](/js/ReportViewer/Getting-Started_images/Getting-Started_img7.png) 
 
 2\. You can route the **WebAPI** in **Application_Start** event into **Global.asax** file as follows.
 
@@ -223,7 +223,7 @@ namespace ReportViewerDemo
 
 Run the sample application and you can see the **ReportViewer** on the page as displayed in the following screenshot.
 
-![]("/js/ReportViewer/Getting-Started_images/Getting-Started_img8.png") 
+![](/js/ReportViewer/Getting-Started_images/Getting-Started_img8.png) 
 
 ##Load SSRS Server Reports
 
@@ -270,7 +270,7 @@ public void OnInitReportOptions(ReportViewerOptions reportOption)
 
 3\. Run the application and you can see the **ReportViewer** on the page as displayed in the following screenshot.
 
-![]("/js/ReportViewer/Getting-Started_images/Getting-Started_img9.png") 
+![](/js/ReportViewer/Getting-Started_images/Getting-Started_img9.png) 
 
 ##Load RDLC Reports
 
@@ -317,5 +317,5 @@ The **ReportViewer** has data binding support to visualize the **RDLC** reports.
 
 2\. Run the application and you can see the **ReportViewer** on the page as displayed in the following screenshot.
 
-![]("/js/ReportViewer/Getting-Started_images/Getting-Started_img10.png") 
+![](/js/ReportViewer/Getting-Started_images/Getting-Started_img10.png) 
 

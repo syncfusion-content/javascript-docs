@@ -166,7 +166,7 @@ The following code example explains how to get the reminder list and display it 
 
 Execute the above code to render the following output.
 
- ![]("/js/Schedule/Reminder_images/Reminder_img1.png" Caption="")
+ ![](/js/Schedule/Reminder_images/Reminder_img1.png" Caption=")
 
 
 

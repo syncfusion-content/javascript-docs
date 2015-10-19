@@ -89,7 +89,7 @@ The output for MaskEdit after applying **cssClass** is as follows.
 
 
 
-![]("/js/MaskEdit/Appearance_images/Appearance_img1.png")
+![](/js/MaskEdit/Appearance_images/Appearance_img1.png)
 
 ## Rounded Corner Support
 
@@ -125,7 +125,7 @@ Output of MaskEdit when **showRoundedCorner** is “**true**”.
 
 
 
-![]("/js/MaskEdit/Appearance_images/Appearance_img2.png")
+![](/js/MaskEdit/Appearance_images/Appearance_img2.png)
 
 ## WatermarkText Support
 
@@ -162,7 +162,7 @@ Output of MaskEdit when **waterMarkText** is “**true**”.
 
 
 
-![]("/js/MaskEdit/Appearance_images/Appearance_img3.png")
+![](/js/MaskEdit/Appearance_images/Appearance_img3.png)
 
 ## Text Alignment Support
 
@@ -197,7 +197,7 @@ In the HTML page, add a &lt;div&gt; element to render the MaskEdit widget
 
 The output for Textboxes when **textAlign** is set to **“right”**.
 
-![]("/js/MaskEdit/Appearance_images/Appearance_img4.png")
+![](/js/MaskEdit/Appearance_images/Appearance_img4.png)
 
 
 

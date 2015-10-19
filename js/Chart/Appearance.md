@@ -11,7 +11,7 @@ documentation: ug
 
 ## Custom Color Palette
 
-The Chart displays different series in different colors by default. You can customize the color of each series by providing a custom color palette of your choice by using the **palette** property. 
+The Chart displays different series in different colors by default. You can customize the color of each series by providing a custom color palette of your choice by using the [palette](../api/ejchart#members:palette) property. 
 
 {% highlight js %}
 
@@ -26,7 +26,10 @@ The Chart displays different series in different colors by default. You can cust
 
 {% endhighlight %}
 
-![]("/js/Chart/Appearance_images/Appearance_img1.png" Caption="Chart custom color palette")
+![](/js/Chart/Appearance_images/Appearance_img1.png)
+
+Chart custom color palette
+{:.caption}
 
 N> The Color palette is applied to the points in accumulation type series
 
@@ -52,7 +55,7 @@ Following are the built-in themes available in the Chart
 * gradient-saffrondark
 
 
-You can set your desired theme by using the **theme** property. Flat light is the default theme used in the Chart.
+You can set your desired theme by using the [theme](../api/ejchart#members:theme) property. Flat light is the default theme used in the Chart.
 
 {% highlight js %}
 
@@ -67,12 +70,15 @@ You can set your desired theme by using the **theme** property. Flat light is th
 
 {% endhighlight %}
 
-![]("/js/Chart/Appearance_images/Appearance_img2.png" Caption="Chart using gradient light theme")
+![](/js/Chart/Appearance_images/Appearance_img2.png)
+
+Chart using gradient light theme
+{:.caption}
 
 
 ## Point level customization
 
-Marker, data label and fill color of each point in a series can be customized individually by using the **points** collection.
+Marker, data label and fill color of each point in a series can be customized individually by using the [points](../api/ejchart#members:series-points) collection.
 
 {% highlight js %}
 
@@ -101,14 +107,17 @@ Marker, data label and fill color of each point in a series can be customized in
 
 {% endhighlight %}
 
-![]("/js/Chart/Appearance_images/Appearance_img3.png" Caption="Customize a specific point marker and color")
+![](/js/Chart/Appearance_images/Appearance_img3.png)
+
+Customize a specific point marker and color
+{:.caption}
 
 
 ## Chart area customization
 
-### Customizing chart background
+### Customize chart background
 
-The Chart background can be customized by using the **background** property of the Chart. To customize the chart border, use **border** option of the chart. 
+The Chart background can be customized by using the [background](../api/ejchart#members:background) property of the Chart. To customize the chart border, use [border](../api/ejchart#members:border) option of the chart. 
 
 {% highlight js %}
 
@@ -129,11 +138,14 @@ The Chart background can be customized by using the **background** property of t
 
 {% endhighlight %} 
 
-![]("/js/Chart/Appearance_images/Appearance_img4.png" Caption="Customizing chart background and border")
+![](/js/Chart/Appearance_images/Appearance_img4.png)
+
+Customizing chart background and border
+{:.caption}
 
 **Chart Margin**
 
-The Chart **margin** property is used to add the margin to the chart area at the left, right, top and bottom position.
+The Chart [margin](../api/ejchart#members:margin) property is used to add the margin to the chart area at the left, right, top and bottom position.
 
 {% highlight js %}
 
@@ -151,12 +163,15 @@ The Chart **margin** property is used to add the margin to the chart area at the
 
 {% endhighlight %} 
 
-![]("/js/Chart/Appearance_images/Appearance_img5.png" Caption="Customizing chartarea margin")
+![](/js/Chart/Appearance_images/Appearance_img5.png)
+
+Customizing chartarea margin
+{:.caption}
 
 
 **Setting background image**
 
-Background image can be added to the chart by using the **backGroundImageUrl** property.
+Background image can be added to the chart by using the [backGroundImageUrl](../api/ejchart#members:backgroundimageurl) property.
 
 {% highlight js %}
 
@@ -174,14 +189,17 @@ Background image can be added to the chart by using the **backGroundImageUrl** p
 
 {% endhighlight %} 
 
-![]("/js/Chart/Appearance_images/Appearance_img6.png" Caption="Add background image to chart")
+![](/js/Chart/Appearance_images/Appearance_img6.png)
+
+Add background image to chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/tooltiptemplate) here to view our online demo sample for setting Chart background image.
 
 
 **Chart area background**
 
-The Chart area background can be customized by using the **background** property in the chart area. 
+The Chart area background can be customized by using the [background](../api/ejchart#members:chartarea-background) property in the chart area. 
 
 {% highlight js %}
 
@@ -201,12 +219,15 @@ The Chart area background can be customized by using the **background** property
 
 {% endhighlight %} 
 
-![]("/js/Chart/Appearance_images/Appearance_img7.png" Caption="Add background color to chart area")
+![](/js/Chart/Appearance_images/Appearance_img7.png)
+
+Add background color to chart area
+{:.caption}
 
 
-### Customizing chart area grid bands
+### Customize chart area grid bands
 
-You can provide different color for alternate grid rows and columns formed by the grid lines in the chart area by using the **alternateGridBand** property of axis. The properties **odd** and **even** are used to customize the grid bands at odd and even positions respectively. 
+You can provide different color for alternate grid rows and columns formed by the grid lines in the chart area by using the [alternateGridBand](../api/ejchart#members:primaryxaxis-alternategridband) property of the axis. The properties [odd](../api/ejchart#members:primaryxaxis-alternategridband-odd) and [even](../api/ejchart#members:primaryxaxis-alternategridband-even) are used to customize the grid bands at odd and even positions respectively. 
 
 {% highlight js %}
 
@@ -232,14 +253,17 @@ You can provide different color for alternate grid rows and columns formed by th
 
 {% endhighlight %} 
 
-![]("/js/Chart/Appearance_images/Appearance_img8.png" Caption="Customizing chart area grid bands")
+![](/js/Chart/Appearance_images/Appearance_img8.png)
+
+Customizing chart area grid bands
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/alternategridband) here to view the alternate grid band online demo sample.
 
 
 ### Animation
 
-You can enable animation by using the **enableAnimation** property of series. This animates the chart series on two occasions – when the chart is loaded for the first time or whenever you change the series type by using the type property.
+You can enable animation by using the [enableAnimation](../api/ejchart#members:series-enableanimation) property of the series. This animates the chart series on two occasions – when the chart is loaded for the first time or whenever you change the series type by using the type property.
 
 {% highlight js %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains briefly about how to create a **NumericTextBox** control in your application with **JavaScript**. From the following steps you can learn how to create and use **NumericTextBox** in your application.You will learn how to use our JavaScript textboxes widgets in the Electric bill calculator Application from the following documentation. This will guide you to use the wide range functionalities of textbox widgets features to complete this application. 
 
-![]("/js/NumericTextBox/Getting-Started_images/Getting-Started_img1.png") 
+![](/js/NumericTextBox/Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create Textboxes Widgets
 
@@ -188,7 +188,7 @@ You can add the following location in the **URL** path for the background image 
 
 The following screenshot displays the output when the above code is executed. 
 
-![]("/js/NumericTextBox/Getting-Started_images/Getting-Started_img2.png") 
+![](/js/NumericTextBox/Getting-Started_images/Getting-Started_img2.png) 
 
 
 ## Set the MinValue, MaxValue and value in NumericTextBox
@@ -245,7 +245,7 @@ The following screenshot illustrates the output of the above code examples.
 
 
 
-![]("/js/NumericTextBox/Getting-Started_images/Getting-Started_img3.png") 
+![](/js/NumericTextBox/Getting-Started_images/Getting-Started_img3.png) 
 
 
 ## Set the Strict Mode Option
@@ -340,5 +340,5 @@ You can use events to calculate the total and display the value. You can achieve
 
 Run the above code example, fill the required Textbox fields and click the Calculate button. The values are displayed and an alert message is shown. The following screenshot illustrates the final output of the Electricity bill calculator. 
 
-![]("/js/NumericTextBox/Getting-Started_images/Getting-Started_img4.png") 
+![](/js/NumericTextBox/Getting-Started_images/Getting-Started_img4.png) 
 

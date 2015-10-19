@@ -97,7 +97,7 @@ After registering the keys, you have to assign the formulas and values for the k
 
 Now, the HTML page is displayed like the following image.
 
-![]("/js/Calculate/CalcQuick_images/CalcQuick_img1.png" Caption="")
+![](/js/Calculate/CalcQuick_images/CalcQuick_img1.png" Caption=")
 
 ### Manual Calculation
 
@@ -127,7 +127,7 @@ Click the **calculate** button to perform the calculation of the key elements. O
 
 {% endhighlight %}
 
-![]("/js/Calculate/CalcQuick_images/CalcQuick_img2.png" Caption="")
+![](/js/Calculate/CalcQuick_images/CalcQuick_img2.png" Caption=")
 
 ### Auto Calculation
 
@@ -172,7 +172,7 @@ function valueSet(event, data) {
 
 
 
-![]("/js/Calculate/CalcQuick_images/CalcQuick_img3.png" Caption="")
+![](/js/Calculate/CalcQuick_images/CalcQuick_img3.png" Caption=")
 
 ### Show Formula
 
@@ -198,5 +198,5 @@ You can view the formula of elements by using the method, showFomula of the calc
 
 {% endhighlight %}
 
-![]("/js/Calculate/CalcQuick_images/CalcQuick_img4.png" Caption="")
+![](/js/Calculate/CalcQuick_images/CalcQuick_img4.png" Caption=")
 

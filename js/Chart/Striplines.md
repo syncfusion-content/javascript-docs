@@ -13,7 +13,7 @@ EjChart supports horizontal and vertical striplines.
 
 ## Horizontal Stripline
 
-You can create horizontal stripline by adding **stripLine** in the **vertical axis** and set **visible** option as **true**. Striplines will be rendering in the specified **start** to **end** range and you can add more than one stripline for an axis.
+You can create horizontal stripline by adding the [stripline](../api/ejchart#members:primaryyaxis-stripline) in the **vertical axis** and set [visible](../api/ejchart#members:primaryxaxis-stripline-visible) option to **true**. Striplines are rendered in the specified **start** to **end** range and you can add more than one stripline for an axis.
 
 
 {% highlight js %}
@@ -41,14 +41,17 @@ You can create horizontal stripline by adding **stripLine** in the **vertical ax
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img1.png" Caption="Horizontal Striplines")
+![](/js/Chart/Striplines_images/Striplines_img1.png)
+
+Horizontal Striplines
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/striplines) here to view the Striplines online demo sample.
 
 
 ## Vertical Stripline
 
-You can create vertical stripline by adding **stripLine** in the **horizontal axis** and set **visible** option as **true**.  
+You can create vertical stripline by adding the [stripline](../api/ejchart#members:primaryxaxis-stripline) in the **horizontal axis** and set [visible](../api/ejchart#members:primaryyaxis-stripline-visible) option to **true**.  
 
 
 {% highlight js %}
@@ -77,12 +80,15 @@ You can create vertical stripline by adding **stripLine** in the **horizontal ax
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img2.png" Caption="Vertical Striplines")
+![](/js/Chart/Striplines_images/Striplines_img2.png)
+
+Vertical Striplines
+{:.caption}
 
 
-## Customizing Text
+## Customize the Text
 
-For customizing the stripLine text, use **text** and **font** options. 
+To customize the stripLine text, use the [text](../api/ejchart#members:primaryyaxis-stripline-text) and [font](../api/ejchart#members:primaryyaxis-stripline-font) options. 
 
 {% highlight js %}
 
@@ -105,11 +111,14 @@ For customizing the stripLine text, use **text** and **font** options.
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img3.png" Caption="Customize stripline text")	
+![](/js/Chart/Striplines_images/Striplines_img3.png)
+
+Customize stripline text
+{:.caption}	
 
 **Text Alignment**
 
-Stripline text can be aligned using **textAlignment** property.  
+Stripline text can be aligned by using the [textAlignment](../api/ejchart#members:primaryyaxis-stripline-textalignment) property.  
 
 {% highlight js %}
 
@@ -131,12 +140,15 @@ Stripline text can be aligned using **textAlignment** property.
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img4.png" Caption="Stripline text alignment")
+![](/js/Chart/Striplines_images/Striplines_img4.png)
+
+Stripline text alignment
+{:.caption}
 
 
-## Customizing Stripline
+## Customize the Stripline
 
-For customizing the stripLine styles, use **color**, **opacity**, **borderWidth** and **borderColor** properties. 
+To customize the stripLine styles, use the [color](../api/ejchart#members:primaryyaxis-stripline-color), [opacity](../api/ejchart#members:primaryyaxis-stripline-opacity), [borderWidth](../api/ejchart#members:primaryyaxis-stripline-borderwidth) and [borderColor](../api/ejchart#members:primaryyaxis-stripline-bordercolor) properties. 
 
 {% highlight js %}
 
@@ -161,12 +173,15 @@ For customizing the stripLine styles, use **color**, **opacity**, **borderWidth*
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img5.png" Caption="Customize stripline rectangle")
+![](/js/Chart/Striplines_images/Striplines_img5.png)
+
+Customize stripline rectangle
+{:.caption}
 
 
-## Changing the zorder of stripline
+## Change the zorder of the stripline
 
-Stripline **zIndex** property is used to display the stripLine either behind or over of the series.  
+Stripline [zIndex](../api/ejchart#members:primaryyaxis-stripline-zindex) property is used to display the stripLine either behind or over the series.  
 
 {% highlight js %}
 
@@ -188,7 +203,7 @@ Stripline **zIndex** property is used to display the stripLine either behind or 
 
 {% endhighlight %}
 
-![]("/js/Chart/Striplines_images/Striplines_img6.png")
+![](/js/Chart/Striplines_images/Striplines_img6.png)
 
 Stripline zIndex
 {:.caption}

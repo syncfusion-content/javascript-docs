@@ -100,7 +100,7 @@ The following code example illustrates the hierarchical query and foreignkey met
 
 The result for the above code example is illustrated as follows.
 
-![]("/js/DataManager/Hierarchical-Query_images/Hierarchical-Query_img1.png") 
+![](/js/DataManager/Hierarchical-Query_images/Hierarchical-Query_img1.png) 
 
 
 

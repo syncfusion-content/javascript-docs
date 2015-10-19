@@ -75,7 +75,7 @@ In an HTML page, add a **&lt;input&gt;** element to configure DropdownList widge
 
 Output of the above steps
 
-![]("/js/DropDownList/Cascading-Support_images/Cascading-Support_img2.png") 
+![](/js/DropDownList/Cascading-Support_images/Cascading-Support_img2.png) 
 
 ## Multiple Cascading support
 
@@ -172,5 +172,5 @@ In an HTML page, add a &lt;input&gt; element to configure DropDownList widget.
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/DropDownList/Cascading-Support_images/Cascading-Support_img4.png") 
+![](/js/DropDownList/Cascading-Support_images/Cascading-Support_img4.png) 
 

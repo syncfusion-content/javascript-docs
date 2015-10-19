@@ -1,10 +1,11 @@
-# Documentation Guidelines
+﻿# Documentation Guidelines
 
 This section contains guidelines on naming files, sections, documents and other document elements.
 
 > **NOTE**: Some of the items are marked as TODO which will be documented later.
 
 ## File naming Convention:
+
 * All files should have `.md` extension.
 * Separate words in file names should be hyphenated
 * File names of the documents should have one or two-word names that describe the material covered in the document. 
@@ -19,7 +20,7 @@ This section contains guidelines on naming files, sections, documents and other 
 
 
 ## Markdown Syntax Guideline
-* Follow the syntax mentioned in this [link](http://kramdown.gettalong.org/syntax.html) for most of the elements. There are some elements which need special styling or additional settings to do. Those have been described in the below topics.
+* Follow the syntax mentioned in this [link](http://kramdown.gettalong.org/syntax.html) for most of the elements. There are some elements which need special styling or additional settings to do. They are described in the following topics.
 
 ## General
 * Do not bold the words unnecessarily.
@@ -40,16 +41,16 @@ This section contains guidelines on naming files, sections, documents and other 
 
 ### Table
 * Use the [kramdown syntax](http://kramdown.gettalong.org/syntax.html#tables) for creating the tables.
-* **Advanced tables**: If you want to create an advanced tables with row span or column span or with code snippets, you can go with the standard html table syntax as described below.
+* **Advanced tables**: If you want to create an advanced tables with row span or column span or with code examples, you can go with the standard html table syntax as described below.
 
 > 1. start with `<table>` tag. Tag should be left indented and should have empty space in left side. 
 
 > 2. Provide `TH` tag for table headers.
 
-> 3. Code snippet can include within `<td> [code snippet] </td>`. Follow the same pattern like code snippet. 
+> 3. Code examples can be included within `<td> [code snippet] </td>`. Follow the same pattern like code examples. 
 
 * Do not provide table captions.
-* You should use the below markdown syntax if you want to use markdown syntax within the html tags.
+* You can use the following markdown syntax if you want to use markdown syntax within the html tags.
 
 > \{{'<MarkdownSyntax>' | markdownify }}
 
@@ -61,8 +62,8 @@ This section contains guidelines on naming files, sections, documents and other 
 
 ### Image
 
-* Make sure image is not resized or blurred. 
-* Caption is not necessary to provide for all images except for the case where we will have displayed more than one image.
+* Make sure the image is not resized or blurred. 
+* Caption is not necessary for all images except where you have displayed more than one image.
 
 * Adding Image : General markdown [syntax](http://kramdown.gettalong.org/syntax.html#images) will work.
 
@@ -80,16 +81,16 @@ This section contains guidelines on naming files, sections, documents and other 
 * Maximum height of the image should be 550 PX
 * Image format should be either .jpeg or .png format 
 * Size of the image should not exceed  20 to 40 KB  
-* If you are including the image to show an output of a code block, make sure the exact output can see the user also when he executes the same code snippet.
+* If you are including the image to show an output of a code example, make sure the exact output can see the user also when he executes the same code example.
 
 ### Code Blocks
 * Refer [this page](http://haisum.github.io/2014/11/07/jekyll-pygments-supported-highlighters/) for Code block syntax and supported languages.
-* Align the code snippets using following free formatters:
+* Align the code examples using following free formatters:
 	[JS](http://jsbeautifier.org/) ,
 	[HTML](http://www.freeformatter.com/html-formatter.html)
-* Remove extra lines added within the code block.
+* Remove extra lines added within the code example.
 * Make sure the given code block runs without any issues.
-* JSRender template syntax can be rendered by the following syntax :
+* JSRender template syntax can be rendered by using the following syntax :
 
 > \{{"{{"}} code block here {{}}}}
 
@@ -100,7 +101,7 @@ This section contains guidelines on naming files, sections, documents and other 
 
 ### Notes style
 
-* To add the different type of predefined blockqoute use the below syntax. Since we will insert the title or relevant icon for this block of content, do not add the **"Title"**. 
+* To add the different type of predefined blockqoute use the follwing syntax. Since the title or relevant icon for this block of content will be added later, do not add the **"Title"**. 
 
 **Information** or **Notes**
 > **Syntax**: I> [Content]
@@ -156,7 +157,7 @@ This section contains guidelines on naming files, sections, documents and other 
 * Enclose the each keys with `<kbd>` tag to display the keys with different styling. For ex, <kbd>Ctrl</kbd>+<kbd>A</kbd> .
 
 ### Product Release Version variable 
-* To add the version number in the documentation, use the below variables that replace the corresponding release version number while publishing. So that, always your content will contains the latest release version number. 
+* To add the version number in the documentation, use the following variables that replace the corresponding release version number while publishing. So that, always your content will contains the latest release version number. 
 
 | Variable Name     	           | Output         | Description            					                             |  
 | ---------------------------------|:--------------:|:----------------------------------------------------------------------:|  
@@ -176,4 +177,4 @@ This section contains guidelines on naming files, sections, documents and other 
 * Use the JS API naming standards mentioned in the following page - [API Naming Standards](https://syncfusion.atlassian.net/wiki/display/JS/API+Naming+Standards)
 
 # See Also
-[Style Guide](/style-guide.md)
+[Style Guide](https://syncfusion.atlassian.net/wiki/display/SYNC/User+Guide+Documentation+-+Style+Guide)

@@ -37,9 +37,15 @@ Add the following code in the **script** tag.
 
 The following screenshots illustrates the output.
 
-![]("targetid_images\targetid_img1.png" Caption="Before target click")
+![](targetid_images\targetid_img1.png)
+
+Before target click
+{:.caption}
 
 
 
-![]("targetid_images\targetid_img2.png" Caption="After target click")
+![](targetid_images\targetid_img2.png)
+
+After target click
+{:.caption}
 

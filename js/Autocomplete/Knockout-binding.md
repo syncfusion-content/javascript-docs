@@ -22,7 +22,7 @@ Two types of knockout binding is supported,
 
 For more information about **Knockout** binding, you can refer the online documentation in the following link location,
 
-<http://docs.syncfusion.com/js/knockoutjs>
+<http://help.syncfusion.com/js/knockoutjs>
 
 The following example depicts how you can bind data to the **AutoComplete** widget through **knockout** support that enables and populates data to an AutoComplete widget based on the value set to the other AutoComplete widget.
 
@@ -112,5 +112,5 @@ The following example depicts how you can bind data to the **AutoComplete** widg
 
 The following image is the result of the above code example.
 
-![]("/js/Autocomplete/Knockout-binding_images/Knockout-binding_img1.png")
+![](/js/Autocomplete/Knockout-binding_images/Knockout-binding_img1.png)
 

@@ -41,4 +41,4 @@ function onSeriesRenders(args) {
 
 {% endhighlight %}
 
-![]("/js/OlapChart/Series_images/Series_img2.png") 
+![](/js/OlapChart/Series_images/Series_img2.png) 

@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to create an application with CalcEngine support in JavaScript. The following screenshot shows the formula support of CalcEngine for JavaScript. For example: “=SUM(A1:A8)”.
 
-![]("/js/Calculate/Getting-Started_images/Getting-Started_img1.png" Caption="")
+![](/js/Calculate/Getting-Started_images/Getting-Started_img1.png" Caption=")
 
 ## Configuring Calculate in JavaScript
 

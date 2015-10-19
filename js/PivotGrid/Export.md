@@ -63,12 +63,24 @@ public void Export(System.IO.Stream stream)
 
 {% endhighlight %}
 
-![]("/js/PivotGrid/Export_images/Export_img1.png" Caption="Exported PivotGrid in Excel")
+![](/js/PivotGrid/Export_images/Export_img1.png)
 
-![]("/js/PivotGrid/Export_images/Export_img2.png" Caption="Exported PivotGrid in Word")
+Exported PivotGrid in Excel
+{:.caption}
 
-![]("/js/PivotGrid/Export_images/Export_img3.png" Caption="Exported PivotGrid in PDF")
+![](/js/PivotGrid/Export_images/Export_img2.png)
 
-![]("/js/PivotGrid/Export_images/Export_img4.png" Caption="Exported PivotGrid in CSV")
+Exported PivotGrid in Word
+{:.caption}
+
+![](/js/PivotGrid/Export_images/Export_img3.png)
+
+Exported PivotGrid in PDF
+{:.caption}
+
+![](/js/PivotGrid/Export_images/Export_img4.png)
+
+Exported PivotGrid in CSV
+{:.caption}
 
 

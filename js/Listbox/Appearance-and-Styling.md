@@ -56,7 +56,7 @@ In an **HTML** page, add a **&lt;ul&gt;** element to configure **ListBox** widge
 
 Output of the above steps.
 
-![]("/js/ListBox/Appearance-and-Styling_images/Appearance-and-Styling_img1.png") 
+![](/js/ListBox/Appearance-and-Styling_images/Appearance-and-Styling_img1.png) 
 
 ## Enabling Rounded corner
 
@@ -95,5 +95,5 @@ In an **HTML** page, add a **&lt;ul&gt; element** to configure **ListBox** widge
 
 Output of the above steps.
 
-![]("/js/ListBox/Appearance-and-Styling_images/Appearance-and-Styling_img2.png") 
+![](/js/ListBox/Appearance-and-Styling_images/Appearance-and-Styling_img2.png) 
 

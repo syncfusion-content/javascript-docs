@@ -48,9 +48,9 @@ The following screenshot displays the output.
 
 
 
-![]("/js/UploadBox/Multiple-files-upload_images/Multiple-files-upload_img1.png")
+![](/js/UploadBox/Multiple-files-upload_images/Multiple-files-upload_img1.png)
 
 
 
-![]("/js/UploadBox/Multiple-files-upload_images/Multiple-files-upload_img2.png")
+![](/js/UploadBox/Multiple-files-upload_images/Multiple-files-upload_img2.png)
 

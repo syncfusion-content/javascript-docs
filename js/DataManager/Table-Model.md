@@ -109,7 +109,7 @@ The result for the above code example is illustrated as follows.
 
 
 
-![]("/js/DataManager/Table-Model_images/Table-Model_img1.png") 
+![](/js/DataManager/Table-Model_images/Table-Model_img1.png) 
 
 
 

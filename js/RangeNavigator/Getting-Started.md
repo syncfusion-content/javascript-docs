@@ -17,7 +17,7 @@ This section encompasses on how to configure the **ejRangeNavigator** and update
 
 
 
-![]("/js/RangeNavigator/Getting-Started_images/Getting-Started_img1.png") 
+![](/js/RangeNavigator/Getting-Started_images/Getting-Started_img1.png) 
 
 **Configure ejRangeNavigator**
 
@@ -84,7 +84,7 @@ The following screen shot displays the **RangeNavigator** with a range from 2010
 
 
 
-![]("/js/RangeNavigator/Getting-Started_images/Getting-Started_img2.png") 
+![](/js/RangeNavigator/Getting-Started_images/Getting-Started_img2.png) 
 
 **Add series**
 
@@ -123,7 +123,7 @@ The following screenshot displays a RangeNavigator with the default **“Line”
 
 
 
-![]("/js/RangeNavigator/Getting-Started_images/Getting-Started_img3.png") 
+![](/js/RangeNavigator/Getting-Started_images/Getting-Started_img3.png) 
 
 **Enable tooltip**
 
@@ -150,7 +150,7 @@ The following code sample shows how to enable a Tooltip.
 
 The following screenshot displays the label format **Tooltip** in RangeNavigator:
 
-![]("/js/RangeNavigator/Getting-Started_images/Getting-Started_img4.png") 
+![](/js/RangeNavigator/Getting-Started_images/Getting-Started_img4.png) 
 
 **Update Chart**
 
@@ -232,7 +232,7 @@ The following screenshot displays how a RangeNavigator is updated when a selecte
 
 
 
-![]("/js/RangeNavigator/Getting-Started_images/Getting-Started_img5.png") 
+![](/js/RangeNavigator/Getting-Started_images/Getting-Started_img5.png) 
 
 **Set value type**
 
@@ -281,5 +281,5 @@ The following screenshot displays a RangeNavigator with numerical values:
 
 
 
-![]("/js/RangeNavigator/Getting-Started_images/Getting-Started_img6.png") 
+![](/js/RangeNavigator/Getting-Started_images/Getting-Started_img6.png) 
 

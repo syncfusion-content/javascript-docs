@@ -11,7 +11,7 @@ documentation: ug
 
 You can customize the appearance of **Dialog** widget using various themes that are available in **Essential JavaScript**. Applying themes customizes the entire control and its appearances. Refer the following link.
 
-<http://docs.syncfusion.com/js/theming-in-essential-javascript-components>
+<http://help.syncfusion.com/js/theming-in-essential-javascript-components>
 
 ## CSS Class
 
@@ -67,7 +67,7 @@ Customize the **CSS** class by setting **CSS** Properties.
 
 The output for **Dialog** control after customizing the “**cssClass**” is as follows.
 
-![]("/js/Dialog/Look-and-Feel_images/Look-and-Feel_img1.png") 
+![](/js/Dialog/Look-and-Feel_images/Look-and-Feel_img1.png) 
 
 
 

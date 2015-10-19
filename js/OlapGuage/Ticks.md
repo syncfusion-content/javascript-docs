@@ -104,7 +104,7 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Ticks_images/Ticks_img1.png") 
+![](/js/OlapGauge/Ticks_images/Ticks_img1.png) 
 
 ## Customizing the distance from Scale
 
@@ -207,7 +207,7 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Ticks_images/Ticks_img2.png") 
+![](/js/OlapGauge/Ticks_images/Ticks_img2.png) 
 
 ## Height and Width Customization
 
@@ -310,7 +310,7 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Ticks_images/Ticks_img3.png") 
+![](/js/OlapGauge/Ticks_images/Ticks_img3.png) 
 
 ## Hiding Ticks
 
@@ -410,5 +410,5 @@ $(function() {
 
 {% endhighlight %}
 
-![]("/js/OlapGauge/Ticks_images/Ticks_img4.png") 
+![](/js/OlapGauge/Ticks_images/Ticks_img4.png) 
 

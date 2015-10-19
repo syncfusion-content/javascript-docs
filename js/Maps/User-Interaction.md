@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: User-Interaction
 description: user interaction
@@ -11,7 +11,7 @@ documentation: ug
 
 Options like zooming, panning and map selection enables the effective interaction on map elements.
 
-##Map Selection
+## Map Selection
 
 Each shape in the map can be selected and deselected during interaction with shapes. 
 
@@ -26,7 +26,7 @@ You can select the shape by tapping on the shape. The Single selection is enable
                 layers: [
                     {
                         shapeData: usMap,
-                        ShapeSettings: {
+                        shapeSettings: {
                             fill: "#9CBF4E",
                             strokeThickness: "0.5",
                             stroke: "White",
@@ -43,15 +43,66 @@ You can select the shape by tapping on the shape. The Single selection is enable
 
 {% endhighlight %}
 
+{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img1.png"%}
+
+## MultiSelection
 
 
-![]("/js/Maps/User-Interaction_images/User-Interaction_img1.png")
+This feature enables you to select multiple map shapes on mouse taps accompanied by the "**Control**" key press. To enable this feature, set the `selectionMode` property as "**multiple**" along with the `enableSelection` property.
 
-##Zooming
+{% highlight js %}
+
+        jQuery(function($) {
+            $("#mapContainer").ejMap({
+                layers: [
+                    {
+                        shapeData: usMap,
+                        // ...
+                        enableSelection: true,
+                        selectionMode: "multiple",
+                        // ..
+                    }
+                ]
+            });
+        }); 
+
+
+{% endhighlight %}
+
+{% include image.html url="/js/Maps/User-Interaction_images/User-Interaction_img5.png"%}
+
+
+## Dragging On Selection
+
+This feature enables you to select the shapes by dragging over the shapes. While dragging over the shapes, a rectangle is generated and the shapes that comes within the rectangle is selected.
+You can enable this feature by setting the `draggingOnSelection` property in the `layers` to **True**.
+
+{% highlight js %}
+
+        jQuery(function($) {
+            $("#mapContainer").ejMap({
+                layers: [
+                    {
+                        // ...                        
+                        draggingOnSelection: true
+                        // ...
+                    }
+                ]
+            });
+        }); 
+
+
+{% endhighlight %}
+
+
+![](User-Interaction_images/User-Interaction_img1.png)
+
+
+## Zooming
 
 The zooming feature enables you to zoom in and out of the map to show in-depth information. It is controlled by the `level` property of the map. When the zoom level of the Map control is increased, the map is zoomed in. When the zoom level is decreased, then the map is zoomed out.
 
-###Properties
+### Properties
 
 The following properties are related to the zooming feature of the **Maps** control:
 
@@ -63,21 +114,21 @@ The following properties are related to the zooming feature of the **Maps** cont
 
 4. maxValue
 
-###Level
+### Level
 
 The `level` property determines the map’s scale size when zooming. The default value of `level` is 1. 
 
 N>level cannot be less than 1_
 
-###EnableZoom
+### EnableZoom
 
 The `enableZoom` property enables or disables the zooming feature. 
 
-###MinValue
+### MinValue
 
 The `minValue` property is used to set the minimum zoom level of the map. 
 
-###MaxValue
+### MaxValue
 
 The `maxValue` property is used to set the maximum zoom level of the map.
 
@@ -103,7 +154,7 @@ The `maxValue` property is used to set the maximum zoom level of the map.
 
 {% endhighlight %}
 
-###Additional Options to Zoom the Map
+### Additional Options to Zoom the Map
 
 Maps can be zoomed using the following options also,
 
@@ -113,7 +164,7 @@ Maps can be zoomed using the following options also,
 * shape selection
 * Position
 
-###Zoom method
+### Zoom method
 
 You can zoom the Maps using `zoom` method. The `zoom` method contains parameter zoom value. The map can be zoomed or scaled based on zoom value parameter.
 
@@ -124,17 +175,17 @@ You can zoom the Maps using `zoom` method. The `zoom` method contains parameter 
 
 {% endhighlight %}
 
-###Mouse scroll
+### Mouse scroll
 
 You can zoom the map with mouse events using mouse scroll. When the mouse is scrolled up, the map is zoomed in and when the mouse is scrolled down, the map is zoomed out.
 
-###Mouse double tap
+### Mouse double tap
 
 When the map is double-tapped using mouse, the zoom in operation is performed. 
 
-![]("/js/Maps/User-Interaction_images/User-Interaction_img2.png")
+![](User-Interaction_images/User-Interaction_img2.png)
 
-###Shape Selection
+### Shape Selection
 
 Map shape is zoomed to the whole map area, on the shape selected. Animation can be applied for that zooming, using the `enableAnimation` property as true. 
 
@@ -157,7 +208,7 @@ When `enableZoomOnSelection` property is set to true, then, zoom on double click
 
 {% endhighlight %}
 
-###Positioning
+### Positioning
 
 Depending on the latitude and longitude, you can zoom the map to the exact position. All locations are considered as latitude and longitude values and the exact location is considered as map coordinates.
 
@@ -197,7 +248,7 @@ Zoom level of the map</td></tr>
 
 {% endhighlight %}
 
-##Panning
+## Panning
 
 The panning feature enables map navigation. The `enablePan` property is used to enable or disable the panning support.
 
@@ -213,12 +264,12 @@ The panning feature enables map navigation. The `enablePan` property is used to 
 
 {% endhighlight %}
 
-##Navigation Control
+## Navigation Control
 
 **Navigation** control is built-in with **Maps** control. With Navigation control, **Maps** can be panned in any direction and zoomed. It is possible to show or hide the NavigationControl by `enableNavigation` property.
 
 
-![]("/js/Maps/User-Interaction_images/User-Interaction_img3.png")
+![](User-Interaction_images/User-Interaction_img3.png)
 
 
 
@@ -235,18 +286,18 @@ The panning feature enables map navigation. The `enablePan` property is used to 
 
 {% endhighlight %}
 
-###Positions
+### Positions
 
 The Navigation control can be positioned in two ways.
 
 * Absolute Position
 * Dock Position
 
-####Absolute Position
+#### Absolute Position
 
 Based on the margin values of X and Y-axes, the navigation control can be positioned with the help of the **x** and **y** properties available in `absolutePosition`. For positioning the navigation control based on margins corresponding to a map, `dockPosition` value is set as ‘_none_’.
 
-####Dock Position
+#### Dock Position
 
 The navigation control can be positioned in following locations within the container.
 

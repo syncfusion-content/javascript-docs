@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Port
-description: port
+title: Create custom connection points to draw connections with any specific point of node
+description: How to draw connections with specific points of node?
 platform: js
 control: Diagram
 documentation: ug
@@ -9,167 +9,150 @@ documentation: ug
 
 # Port
 
-**Port** is a specific connection point on node to make a static connection with node. You can define any number of ports on a node. 
+Essential Diagram for JS provides support to define custom ports for making connections.
+
+![](/js/Diagram/Port_images/Port_img3.png)
+
+When a connector is connected between two nodes, its end points are automatically docked to node's nearest boundary as shown in the following image. 
+
+![](/js/Diagram/Port_images/Port_img4.png)
+
+Ports act as the connection points of node and allows to create connections with only those specific points as shown in the following image.
+
+![](/js/Diagram/Port_images/Port_img5.png)
 
 ## Create Port
 
-The following code illustrates how to create a port and add it to nodes port array.
+### Add ports when initializing nodes
+
+To add a connection port, you need to define the port object and add it to node's `ports` collection. The `offset` property of port accepts an object of fractions and used to determine the position of ports. The following code illustrates how to add ports when initializing the node.
 
 {% highlight js %}
-//create a port and it to node's ports array. 
-var node = {
-   ports: [{
-      name: "port1",
-      offset: {
-         x: 0,
-         y: 0.5
-      },
-      fillColor: "yellow",
-      visibility: ej.datavisualization.Diagram.PortVisibility.Visible
-   }]
-};
-{% endhighlight %}
 
-![]("/js/Diagram/Port_images/Port_img1.png") 
+    var nodes = [{
+        width: 100, height: 100,
+        // Defines a collection of ports
+        ports: [    
+            //Defines JSON to create port    
+           {    
+            //Sets the port name    
+            name: "port1",    
+            // Specifies the port offset – fraction value relative         
+            to node bounds     
+            offset: {    
+                x: 0,    
+                y: 0.5    
+            },    
+        }]    
+    }];
+    
+    $("#diagram").ejDiagram({    
+        // Sets the nodes to Diagram model    
+        nodes: nodes,    
+    });
+    
+{% endhighlight %} 
 
-## Connecting Ports
+### Add ports at runtime
 
-The connection between specific ports on the node is established by assigning the name of the node's port to connector's target port/source port. The following code illustrates how to establish a port connection:
-
-{% highlight js %}
-//create nodes with ports
-var nodes = [
-    {
-        name: "node1",
-        offsetX: 300,
-        offsetY: 300,
-        width: 100,
-        height: 100,
-        ports: [
-            { name: "port1", offset: { x: 0, y: 0.5 } },
-            { name: "port2", offset: { x: 0.5, y: 0 } },
-            { name: "port3", offset: { x: 1, y: 0.5 } },
-            { name: "port4", offset: { x: 0.5, y: 1 } }
-        ]
-    },
-    {
-        name: "node2",
-        offsetX: 450,
-        offsetY: 500,
-        width: 100,
-        height: 100,
-        ports: [
-            { name: "port1", offset: { x: 0, y: 0.5 } },
-            { name: "port2", offset: { x: 0.5, y: 0 } },
-            { name: "port3", offset: { x: 1, y: 0.5 } },
-            { name: "port4", offset: { x: 0.5, y: 1 } }
-        ]
-    }
-];
-
-
-//create connector and connect ports
-var connector = {
-   name: "connector",
-   sourceNode: "node1",
-   targetNode: "node2",
-   sourcePort: "port4",
-   targetPort: "port1"
-};
-{% endhighlight %}
-
-![]("/js/Diagram/Port_images/Port_img2.png") 
-
-## Appearance
-
-You can customize the Port appearance by setting desired values to the appropriate appearance property.
-
-<table>
-<tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-visibility</td><td>
-boolean</td><td>
-Gets or sets the visibility of port</td></tr>
-<tr>
-<td>
-size</td><td>
-number</td><td>
-Gets or sets the size of the port</td></tr>
-<tr>
-<td>
-offset</td><td>
-points</td><td>
-Gets or sets the offset of the port</td></tr>
-<tr>
-<td>
-borderColor</td><td>
-string</td><td>
-Gets or sets the border color of the port</td></tr>
-<tr>
-<td>
-borderWidth</td><td>
-number</td><td>
-Gets or sets the border width of the port</td></tr>
-<tr>
-<td>
-fillColor</td><td>
-string</td><td>
-Gets or sets the fill color of the port</td></tr>
-<tr>
-<td>
-pathData</td><td>
-string</td><td>
-Gets or sets the path data of the port</td></tr>
-</table>
-
-The following code illustrates how to customize the port.
+You can add ports at runtime by using the client side method `addPorts`. The following code illustrates how to add ports to node at runtime.
 
 {% highlight js %}
-//set various appearance properties to port
-var port = {
-   visibility: true,
-   fillColor: "yellow",
-   shape: {
-      type: "circle"
-   },
-   size: 12,
-   borderColor: "black",
-   borderWidth: 2
-};
+
+    // Defines a collection of ports that have to be added at runtime    
+    var ports = [{    
+        name: "port1",    
+        // Specifies the port offset – fraction value relative         
+        to node bounds – determines the position of port on node    
+        offset: {    
+            x: 0,    
+            y: 0.5    
+        }},    
+        { name: "port2",offset: {x: 1,y: 0.5 }},    
+        { name: "port3",offset: {x: 0.5,y: 0 }},    
+        { name: "port4",offset: {x: 0.5,y: 1 }}        
+    ];
+    
+    // Gets the instance for the Diagram    
+    var diagram = $("#diagram").ejDiagram("instance");    
+    // Adds the ports to the node of name "node"    
+    diagram.addPorts("node", ports)
+
 {% endhighlight %}
+
+![](/js/Diagram/Port_images/Port_img1.png)
+
+To explore the set of properties for defining a port, refer to [Port Properties](/js/api/ejDiagram "members:nodes-ports")
+
+### Update Port at runtime
+     
+The client side API `updatePort` is used to update the ports at run time. The following code example illustrates how to change the port properties.
+
+{% highlight js %}
+
+    var diagram = $("#diagram").ejDiagram("instance");
+    var selectedObject = diagram.model.selectedItems.children[0];
+    var visibility = ej.datavisualization.Diagram.PortVisibility.Visible;
+    diagram.updatePort(selectedObject.name, selectedObject.ports[0], { fillColor: "red", visibility: visibility });
+
+{% endhighlight %}
+
+## Connect with ports    
+
+Connector’s 'sourcePort' and 'targetPort' properties allow to create connections between some specific points of source/target nodes. 
+For more information about creating connections with port, refer to [Connections with ports](/js/Diagram/Connector "Connections with ports")  
+
+## Appearance 
+
+You can change the shape of port by using its `shape` property. To explore the different types of port shapes, refer to [Port Shapes](/js/api/global "PortShapes").
+The appearance of ports can be customized with a set of style specific properties. 
+
+The following code illustrates how to change the appearance of port.
+
+{% highlight js %}
+
+    var ports = [{     
+        // Specifies the port position    
+        offset: {    
+            x: 1,    
+            y: 0.5    
+        },
+        //Defines the shape of port     
+        shape: ej.datavisualization.Diagram.PortShapes.Circle ,
+                        
+        //Specifies the port visibility     
+        visibility: true,    
+        
+        //Customizes the appearance    
+        fillColor: "yellow",  
+        size: 12,    
+        borderColor: "black",      
+        borderWidth: 2    
+    }];
+    
+    var nodes = [{ name: "node", ports: ports }];
+   
+{% endhighlight %}
+
+![](/js/Diagram/Port_images/Port_img2.png)
 
 ## Constraints
 
-You can enable or disable certain behaviors of Port using `Port`'s `constraints` property. 
+The `constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Constraints](/js/Diagram/Constraints "Port Constraints")
 
-<table>
-<tr>
-<th>
-Constraints</th><th>
-Description</th></tr>
-<tr>
-<td>
-None</td><td>
-Disable all constraints</td></tr>
-<tr>
-<td>
-Connect</td><td>
-Enables connections with connector</td></tr>
-</table>
 
-The following code illustrates how to set port constraints.
 
-{% highlight js %}
 
-//set port's "Connect" constraint
-var port = {
-   constraints: ej.datavisualization.Diagram.PortConstraints.Connect
-};
-{% endhighlight %}
 
-N>  Port's constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).
+
+
+
+
+
+
+
+
+
+
+
+ 

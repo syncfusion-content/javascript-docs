@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Node
-description: node
+title: Visually represent the geometrical informations, process flow, or entities
+description: How to visually represent the geometrical information and process flows as nodes?
 platform: js
 control: Diagram
 documentation: ug
@@ -9,456 +9,313 @@ documentation: ug
 
 # Node
 
-Nodes are graphical object that represents visual data to be placed on the page.
+Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure, entity, or any other kind of data.
 
-![]("/js/Diagram/Node_images/Node_img1.png") 
+![](/js/Diagram/Node_images/Node_img1.png)
 
 ## Create Node
 
-Node is created from JSON data and added to the Diagram using `nodes` property. The `node`'s `name` must be unique. The following code illustrates how to create a node and add it to the Diagram.
+A node can be created and added to the Diagram, either programmatically or interactively. Nodes are stacked on the Diagram area from bottom to top in the order they are added.
+
+### Add node through nodes collection
+
+To create a node, You have to define the node object and add that to `nodes` collection of the Diagram model. The following code example illustrates how to add a node to the Diagram.
 
 {% highlight js %}
-//create a node with default shape (Rectangle)
+// Defines JSON to create a node
 var node = {
-    name: "Rect1",
+    //Name of the node
+    name: "node1",
+    
+    //Sets the size
     width: 100,
     height: 100,
-    offsetX: 400,
-    offsetY: 60,
-    fillColor: "darkCyan",
-    borderWidth: 2
-};
 
-//node array
+    //Sets the position
+    offsetX: 250,
+    offsetY: 250,
+
+    //Customizes the appearance
+    fillColor: "darkcyan",
+    borderWidth: 2
+    };
+
+//Adds node to nodes collection
 var nodes = [];
 nodes.push(node);
 
-//add nodes to Diagram
-$("#Diagram").ejDiagram({
+//Initializes Diagram
+$("#diagram").ejDiagram({
+    width: "100%", height: "100%",
+    //Initializes nodes collection
     nodes: nodes
 });
 {% endhighlight %}
 
-![]("/js/Diagram/Node_images/Node_img2.png") 
+![](/js/Diagram/Node_images/Node_img2.png)
 
-List of preloaded nodes from symbol palette are added to the Diagram by clicking on the palette nodes or by dragging a node and dropping on the Diagram. The method to add node/connector to palette and drag and drop on Diagram is explained in palettesection
+### Add node at runtime
 
-## Node Shapes
+Nodes can be added at runtime by using public method, `add`. The following code illustrates how to add a node by using 'add' method.
 
-Diagram has a collection of predefined shapes. The shape to be drawn can be set by using a set of shape specific properties. The most commonly used shapes are:
+{% highlight js %}
+// Defines JSON to create a node
+var node = {
+    name: "node1",
+    width: 100,
+    height: 100,
+    
+    //Sets position
+    offsetX: 250,
+    offsetY: 250,
+    fillColor: "darkcyan",
+    borderWidth: 2
+    };
 
-* Rectangle (A type of basic shape)
-* Ellipse (A type of basic shape)
-* Html
-* Text
-* Native
-* Path (A type of basic shape)
-* Polygon (A type of basic shape)
+var diagram = $("#diagram").ejDiagram("instance");
 
-### Rectangle
+// Adds node to the Diagram
+diagram.add(node);
 
-You can create a rectangle shape by setting the type of `node`'s `type` as `ej.datavisualization.Diagram.Shapes.Basic` and `node`'s `shape` as `ej.datavisualization.Diagram.BasicShapes.Rectangle`. The following code illustrates how a rectangle node is created.
+{% endhighlight %}
+
+![](/js/Diagram/Node_images/Node_img3.png)
+
+### Add node from palette
+
+Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding nodes from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette).
+
+### Create node through data source
+
+Nodes can be generated automatically with the information provided through data source. The default properties for these nodes are fetched from default settings. For more information about data source, refer to [Data Binding](/js/Diagram/Data-Binding).
+
+### Draw nodes
+
+Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **DrawingTool**. For more information about drawing nodes, refer to [Draw Nodes](/js/Diagram/Tools "Drawing-Tools:Shapes").
+
+### Update Node at runtime
+     
+The client side method `updateNode` is used to update the nodes at run time. The following code example illustrates how to update a node at runtime.
 
 {% highlight js %}
 
-var Diagram = ej.datavisualization.Diagram;
-
-//create a node with rectangle shape
-var node = {
-   type: Diagram.Shapes.Basic,
-   shape: Diagram.BasicShapes.Rectangle
-};
-
-//create a node with rounded rectangle shape
-node = {
-   type: Diagram.Shapes.Basic,
-   shape: Diagram.BasicShapes.Rectangle,
-   cornerRadius: 5
-};
-
-//create a node with ellipse shape
-node = {
-   type: Diagram.Shapes.Basic,
-   shape: Diagram.BasicShapes.Ellipse
-};
+    var diagram = $("#DiagramContent").ejDiagram("instance");
+    diagram.updateNode("nodeName", {
+                fillColor: "#1BA0E2",
+                borderWidth: 5,
+                borderColor: "#000000"
+            })
 {% endhighlight %}
 
-![]("/js/Diagram/Node_images/Node_img3.png") 
 
-### Html
+## Position
 
-**Html** elements are embedded in diagram through Html shape node. The following code illustrates how an Html node is created.
+Position of a node is controlled by using its `offsetX` and `offsetY` properties. By default, these offset properties represent the distance between origin of the Diagram's page and node's center point. You may expect this offset values to represent the distance between page origin and node's top left corner instead of center. `pivot` property helps solve this problem. Default value of node's pivot point is (0.5, 0.5), that means center of Node.
 
-{% highlight html %}
-<!-- dependency scripts -->
-<script src = "http://borismoore.github.io/jsrender/jsrender.min.js"> </script>
+The following table illustrates how pivot relates offset values with node boundaries.
 
-<script id="htmlTemplate" type="text/x-jsrender">
-    <div>
-        <input type="button" value="{{"{{"}}:value{{}}}}" />
-    </div>
-</script>
-{% endhighlight %}
+<table>
+<tr>
+<th>
+Pivot</th><th>
+Offset </th></tr>
+<tr>
+<td>
+(0.5,0.5)</td><td>
+offsetX and offsetY values are considered as the node’s center point.</td></tr>
+<tr>
+<td>
+(0,0)</td><td>
+offsetX and offsetY values are considered as the top left corner of node</td></tr>
+<tr>
+<td>
+(1,1)</td><td>
+offsetX and offsetY values are considered as the bottom right corner of the node.</td></tr>
+</table>
+
+
+The following code illustrates how to change the `pivot` value.
 
 {% highlight js %}
-var node = {
-    type: ej.datavisualization.Diagram.Shapes.Html,
-    templateId: "htmlTemplate",
-    value: "button"
-}
+// Defines JSON to create node
+
+var nodes = [
+    {
+        name: "node", offsetX: 100, offsetY: 100,
+        height: 100, width: 100,        
+        shape: "rectangle",
+        //Sets pivot point 
+        pivot: ej.datavisualization.Diagram.Point(0, 0)
+
+    }
+];
 {% endhighlight %}
 
-![]("/js/Diagram/Node_images/Node_img4.png") 
+![](/js/Diagram/Node_images/Node_img4.png)
 
-### Text Node
+## Types
 
-You can add Text to the Diagram using **Text shape node**. The text shape has `textblock` that contains text, font style and align properties. The following code illustrates how to create a `Text` node.
-
-{% highlight js %}
-//create a node with text content
-var Diagram = ej.datavisualization.Diagram;
-
-var node = {
-   type: Diagram.Shapes.Text,
-   textBlock: {
-      text: "TextNode",
-      textAlign: Diagram.TextAlign.Center
-   }
-};
-{% endhighlight %}
-
-![]("/js/Diagram/Node_images/Node_img5.png") 
-
-### Path
-
-You can create complex shapes using **Path shape node**. It is achieved by assigning path string to `shape`'s `pathData`. The following code illustrates how a `Path` node is created.
-
-{% highlight js %}
-
-//create a node with path shape
-var Diagram = ej.datavisualization.Diagram;
-
-var node = {
-   type: Diagram.Shapes.Basic,
-   shape: Diagram.BasicShapes.Path,
-   pathData: "M 67.2947 100 L 67.2947 0.00102291 L 59.138 0.00102291 M 100 50 L 66.8899 50 M 33.1101 50 L 0 50 M 33.1101 0 L 67.5585 50.0015 L 33.1101 99.9995 Z"
-};
-{% endhighlight %}
-
-![]("/js/Diagram/Node_images/Node_img6.png") 
-
-### Polygon
-
-You can create **Polygon** shape by setting `node`'s type as `ej.datavisualization.Diagram.Shapes.Polygon` and assigns the desired points to the `node`'s `point` property.
-
-{% highlight js %}
-
-var Diagram = ej.datavisualization.Diagram;
-
-var node = {
-      type: Diagram.Shapes.Basic, 
-      shape: Diagram.BasicShapes.Polygon, points: [
-            { x: 0, y: 20 },
-            { x: 25, y: 30 },
-            { x: 0, y: 100 },
-            { x: 100, y: 100 },
-            { x: 75, y: 30 },
-            { x: 100, y: 20 },
-            { x: 75, y: 20 },
-            { x: 75, y: 0 },
-            { x: 25, y: 0 },
-            { x: 25, y: 20 },
-            { x: 0, y: 20 }
-      ]
-};
-{% endhighlight %}
-
-![]("/js/Diagram/Node_images/Node_img7.png") 
-
-### Native 
-
-Diagram supports to add **SVG** content as shape content. It is achieved by setting node's type as `ej.datavisualization.Diagram.Shapes.Native` and assigns the template id to the `templateId` property. The `templateId` property receives id svg template. The following code illustrates how a Native node is created.
-
-{% highlight html %}
-<!-- dependency scripts -->
-<script src = "http://borismoore.github.io/jsrender/jsrender.min.js"> </script>
-
-<script id="svgTemplate" type="text/x-jsrender">
-    <g id="{{"{{"}}:text{{}}}}">
-        <path d="M 58.813 0 H 3.182 L 30.998 24.141 L 58.813 0 Z M 32.644 34.425 C 32.133 34.87 31.567 35.095 31 35.095 S 29.867 34.87 29.353 34.425 L 1 9.826 V 60 H 61 V 9.826 L 32.644 34.425 Z ">
-        </path>
-        <text x="20" y="45">{{"{{"}}:text{{}}}}
-        </text>
-    </g>
-</script>
-{% endhighlight %}
-
-{% highlight js %}
-var node = {
-   type: ej.datavisualization.Diagram.Shapes.Native,
-   templateId: "svgTemplate",
-   text: "Mail"
-}
-{% endhighlight %}
-
-![]("/js/Diagram/Node_images/Node_img8.png") 
-
-N>  Shapes of type Node or HTML cannot be exported to an image format, like JPEG, PNG and BMP. It is by design that while exporting, diagram is drawn in a canvas. Further this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML and SVG elements is not feasible. Hence this limitation.
-
-N>  Fill color will be applied to the Native Node only when its inline style, or fill, for an SVG child element is not specified. In the following example, the node's fill color is overridden by the specified color for the group.
-
-{% highlight html %}
-<svg>
-   <g id=”task”>
-      <g fill="#fff">
-      </g>
-   </g>
-</svg>
-{% endhighlight %}
-
-### Image
-
-You can add **Image** as a node to the Diagram by setting node's type as `ej.datavisualization.Diagram.Shapes.Image` and set the image URL to `source` property of shape. The following code illustrates how an Image node is created.
-
-{% highlight js %}
-
-//create a node with image
-var node = {
-   type: ej.datavisualization.Diagram.Shapes.Image,
-    source: "sample/Syncfusion.PNG"
-};
-{% endhighlight %}
-
-![]("/js/Diagram/Node_images/Node_img9.png") 
-
-## Shadow
-
-**Drop shadow effect** for a node can be enabled or disabled by using the `NodeConstraints.Shadow`. The following image represents the drop shadow effect for a Node.
-
-![]("/js/Diagram/Node_images/Node_img10.png") 
-
-The following code example illustrates how to enable or disable the shadow.
-
-{% highlight js %}
-
-//Enables Shadow for the node.
-var node = {
-   constraints: ej.datavisualization.Diagram.NodeConstraints.Default | ej.datavisualization.Diagram.NodeConstraints.Shadow
-};
-
-//Disables shadow for the node.
-var node = {
-   constraints: node.Constraints & ~ej.datavisualization.Diagram.NodeConstraints.Shadow
-};
-{% endhighlight %}
-
-**Customizing Shadow**
-
-Position and opacity of the `shadow` can be customized by using `opacity`, `angle`, and `distance` of the `shadow`. The following code example illustrates how to customize the `shadow`.
-
-{% highlight js %}
-
-//Shadow Customization.
-var node = {
-   shadow: {
-      opacity: 0.8,
-      distance: 9,
-      angle: 50
-   }
-};
-{% endhighlight %}
-
-![]("/js/Diagram/Node_images/Node_img11.png") 
+Diagram allows to add different kind of nodes. To explore the types of nodes, refer to [Types of Nodes](/js/Diagram/Shapes).
 
 ## Appearance
 
-You can customize the appearance of the shapes by using following properties.
+You can customize the appearance of a node by changing its font, fill colors, patterns, line weight and style, or shadow. The following code illustrates how to customize the appearance of the shape.
 
-<table>
-<tr>
-<th>
-Properties</th><th>
-Data Type</th><th>
-Description</th></tr>
-<tr>
-<td>
-visible</td><td>
-boolean</td><td>
-Gets or sets the visibility of the node</td></tr>
-<tr>
-<td>
-borderColor</td><td>
-string</td><td>
-Gets or sets the border color of the node</td></tr>
-<tr>
-<td>
-fillColor</td><td>
-string</td><td>
-Gets or sets the fill color of the node</td></tr>
-<tr>
-<td>
-opacity</td><td>
-number</td><td>
-Gets or sets the opacity of the node</td></tr>
-<tr>
-<td>
-gradient</td><td>
-object</td><td>
-Gets or sets the gradient fill of the node</td></tr>
-<tr>
-<td>
-borderDashArray</td><td>
-string</td><td>
-Gets or sets the pattern of dashes and gaps used to stroke node border.</td></tr>
-<tr>
-<td>
-borderWidth</td><td>
-number</td><td>
-Gets or sets the width of node border.</td></tr>
-</table>
+{% highlight js %}
+var nodes = [{
+    name: "node1",
+    width: 100, height: 100,
+    offsetX: 250, offsetY: 250,
+    
+    //Sets styles to a node to customize the appearance
+    fillColor: "darkcyan",
+    borderWidth: 2,
+    borderColor: "black",
+    borderDashArray: "5 5",
+}];
+
+//Initializes Diagram
+$("#diagram").ejDiagram({
+    width: "100%", height: "100%",
+
+    //Initializes nodes collection
+    nodes: nodes
+});
+
+{% endhighlight %}
+
+![](/js/Diagram/Node_images/Node_img5.png)
+
+### Gradient
+
+There are two types of gradients.
+
+* **Linear gradient -** Defines a smooth transition between a set of colors (so-called "stops") on a line. 
+
+* **Radial gradient -** Defines a smooth transition between stops on a circle.
+
+The `gradient` property of node allows you to define and applies the gradient effect to that node.
 
 {% highlight js %}
 
-//create linear gradient
+//Creates linear gradient
+
 var linearGradient = {
-   type: "linear",
-   x1: 0,
-   x2: 50,
-   y1: 0,
-   y2: 50,
-   stops: [{
-      color: "white",
-      offset: 0
-   }, {
-      color: "darkCyan",
-      offset: 100
-   }]
+    type: "linear",
+
+    //Start point of linear gradient
+    x1: 0, y1: 0,
+
+    //End point of linear gradient
+    x2: 50, y2: 50,
+
+    //Sets an array of stop objects
+    stops: [
+        { color: "white", offset: 0 },
+        { color: "darkCyan", offset: 100 }
+    ]
 };
 
-//set various appearance properties to node
-var node = {
-   visible: true,
-   borderColor: "black",
-   borderWidth: 2,
-   opacity: 1,
-   gradient: linearGradient,
-   borderDashArray: "5 5"
+//Creates radial gradient
+
+var radialGradient = {
+    type: "radial",
+
+    //Center point of outer circle
+    cx: 50, cy: 50,
+
+    //Center point of inner circle
+    fx: 25, fy: 25,
+
+    //Radius of a radial gradient
+    r: 50,
+
+    //Sets an array of stop objects
+    stops: [
+        { color: "white", offset: 0 },
+        { color: "darkCyan", offset: 100 }
+    ]
 };
+
+var nodes = [{
+    name: "node1",
+    width: 100, height: 100,
+    offsetX: 250, offsetY: 250,
+
+    //Sets styles to a node to customize the appearance
+    fillColor: "darkcyan",
+    borderWidth: 2,
+    gradient: linearGradient
+ }];
+{% endhighlight %}
+ 
+![](/js/Diagram/Node_images/Node_img6.png)
+ 
+## Shadow
+
+**Diagram** provides support to add **shadow** effect to a node that is disabled by default. It can be enabled with the `constraints` property of node. The following code illustrates how to drop shadow.
+
+{% highlight js %}
+var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
+
+//Enables Shadow effect for a node.
+var constraints = nodeConstraints.Default | nodeConstraints.Shadow;
+
+// Defines JSON to create path node
+var nodes = [
+    {
+        name: "node", offsetX: 100, offsetY: 100,
+        height: 100, width:100,
+
+        //Sets shape of node
+        shape: "rectangle",
+
+        //Enables Shadow for the node.
+        constraints: constraints
+    }
+];
+
+![](/js/Diagram/Node_images/Node_img7.png)
+
+The following code illustrates how to disable shadow effect at runtime.
+
+var diagram = $("#diagram").ejDiagram("instance");
+var node = diagram.findNode("node");
+
+//Disables Shadow effect for a node.
+constraints = node.constraints &~ nodeConstraints.Shadow;
+diagram.updateNode("node", { constraints: constraints });
 {% endhighlight %}
 
-![]("/js/Diagram/Node_images/Node_img12.png") 
+
+### Customizing Shadow
+
+The angle, translation, and opacity of the shadow can be customized with the `shadow` property of node. The following code example illustrates how to customize shadow.
+
+{% highlight js %}
+var nodes = [
+    {
+        name: "node", offsetX: 100, offsetY: 100,
+        height: 100, width: 100,
+
+        //Sets shape of node 
+        shape: "rectangle",
+
+        //Enables Shadow for the node.
+        constraints: constraints,
+
+        //Customizes shadow effect
+        shadow: { opacity: 0.8, distance: 9, angle: 50}
+    }
+];
+{% endhighlight %}
+
+![](/js/Diagram/Node_images/Node_img8.png)
+
+## Interaction
+
+Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Interaction](/js/Diagram/Interaction).
 
 ## Constraints
 
-**Node Constraints**
-
-You can enable or disable certain behaviors of Nodes by using `Node`'s `constraints` property.
-
-<table>
-<tr>
-<th>
-Constraints</th><th>
-Description</th></tr>
-<tr>
-<td>
-Select</td><td>
-Enables or disables selection.</td></tr>
-<tr>
-<td>
-Delete</td><td>
-Enables or disables deletion.</td></tr>
-<tr>
-<td>
-Resize</td><td>
-Enables or disables resizing.</td></tr>
-<tr>
-<td>
-Drag</td><td>
-Enables or disables dragging.</td></tr>
-<tr>
-<td>
-Rotate</td><td>
-Enables or disables rotation.</td></tr>
-<tr>
-<td>
-Connect</td><td>
-Enables or disables connection.</td></tr>
-<tr>
-<td>
-ResizeNorthEast</td><td>
-Enables or disables resizing nodes in the north east direction.</td></tr>
-<tr>
-<td>
-ResizeEast</td><td>
-Enables or disables resizing nodes in the east.</td></tr>
-<tr>
-<td>
-ResizeSouthEast</td><td>
-Enables or disables resizing nodes in the south east.</td></tr>
-<tr>
-<td>
-ResizeSouth </td><td>
-Enables or disables resizing nodes in the south.</td></tr>
-<tr>
-<td>
-ResizeSouthWest</td><td>
-Enables or disables resizing nodes in the south west.</td></tr>
-<tr>
-<td>
-ResizeWest</td><td>
-Enables or disables resizing nodes in the west.</td></tr>
-<tr>
-<td>
-ResizeNorthWest</td><td>
-Enables or disables resizing nodes in the north west direction.</td></tr>
-<tr>
-<td>
-ResizeNorth </td><td>
-Enables or disables resizing nodes in the north.</td></tr>
-<tr>
-<td>
-Shadow</td><td>
-Enables or disables Shadow.</td></tr>
-<tr>
-<td>
-DragLabel</td><td>
-Enables or disables label dragging.</td></tr>
-<tr>
-<td>
-AllowPan</td><td>
-Enables or disables panning while dragging nodes.</td></tr>
-<tr>
-<td>
-AspectRatio</td><td>
-Enables or disables proportional  resizing of nodes.</td></tr>
-<tr>
-<td>
-Default</td><td>
-Enables all the constraints.</td></tr>
-<tr>
-<td>
-None</td><td>
-Disables all the constraints.</td></tr>
-</table>
-
-The Default value for the node constraints property is `ej.datavisualization.Diagram.NodeConstraints.Default`. The following code illustrates how to enable rotate, select constraints, and disable other constraints.
-
-{% highlight js %}
- 
-//Applies selection and rotation constraints only.
-node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.Rotate;
-{% endhighlight %}
-
-![]("/js/Diagram/Node_images/Node_img13.png") 
-
-The following code illustrates how to disable rotate constraints. Disabling rotate constraint does not allow you to rotate the node.
-
-{% highlight js %}
-
-//Disables rotate constraint.
-node.constraints = node.constraints & ~(ej.datavisualization.Diagram.NodeConstraints.Rotate);
-{% endhighlight %}
-
-![]("/js/Diagram/Node_images/Node_img14.png") 
-
-N>  Node's constraints property is manipulated using bitwise operations. For more information about bitwise operations, see [Bitwise Operations](/js/Diagram/How-To/Bitwise-Operations).
+The `constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/js/Diagram/Constraints "NodeConstraints").

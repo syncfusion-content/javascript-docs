@@ -41,5 +41,5 @@ In the **HTML** page set a **&lt;div&gt;** element with dialog content for rende
 
 The output of **actionButtons** in **Dialog** widget is as follows.
 
-![]("/js/Dialog/Custom-Action-Support_images/Custom-Action-Support_img1.png") 
+![](/js/Dialog/Custom-Action-Support_images/Custom-Action-Support_img1.png) 
 

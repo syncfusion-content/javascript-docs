@@ -13,13 +13,13 @@ Chart area can be divided into multiple panes using the [rowDefinitions](../api/
 
 ### Row Definitions
 
-To split the chart area vertically into number of rows use **rowDefinitions** of chart. 
+To split the chart area vertically into a number of rows, use [rowDefinitions](../api/ejchart.html#members:rowdefinitions) of the chart. 
 
-* You can allocate space for each row, using **unit** option which determines whether the chart area should be split by *percentage* or *pixels* for the given **rowHeight** value of rowDefinitions.
+* You can allocate space for each row by using the [unit](../api/ejchart.html#members:rowdefinitions-unit) option that determines whether the chart area should be split by *percentage* or *pixels* for the given [rowHeight](../api/ejchart.html#members:rowdefinitions-rowheight) value of the rowDefinitions.
  
-* To associate a vertical axis to a row, specify the rowDefintions **index** value to **rowIndex** property of chart axis.
+* To associate a vertical axis to a row, specify the rowDefintions **index** value to the [rowIndex](../api/ejchart.html#members:primaryyaxis-rowindex) property of the chart axis.
 
-* For customizing each row’s horizontal line, use **lineColor** and **lineWidth** property.
+* To customize each row’s horizontal line, use [lineColor](../api/ejchart.html#members:rowdefinitions-linecolor) and [lineWidth](../api/ejchart.html#members:rowdefinitions-linewidth) property.
 
 
 {% highlight js %}
@@ -60,7 +60,10 @@ To split the chart area vertically into number of rows use **rowDefinitions** of
 
 {% endhighlight %}
 
-![]("/js/Chart/Multiple-Panes_images/Multiple-Panes_img1.png" Caption="Chart with multiple rows")
+![](/js/Chart/Multiple-Panes_images/Multiple-Panes_img1.png)
+
+Chart with multiple rows
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartaxes/multipleaxes) here to view the online demo sample for multiple panes.
 
@@ -101,16 +104,19 @@ For spanning the vertical axis along multiple panes vertically, you can use [row
 
 {% endhighlight %}
 
-![]("/js/Chart/Multiple-Panes_images/Multiple-Panes_img2.png" Caption="Chart with row span")
+![](/js/Chart/Multiple-Panes_images/Multiple-Panes_img2.png)
+
+Chart with row span
+{:.caption}
 
 
 ## Column Definitions
 
-To split the chart area horizontally into number of columns use **columnDefinitions** of chart.
+To split the chart area horizontally into a number of columns, use [columnDefinitions](../api/ejchart.html#members:columndefinitions) of the chart.
 
-* You can allocate space for each column, using **unit** option which determines whether the chart area should be split by *percentage* or *pixels* for the given **columnWidth** value of columnDefinitions.
+* You can allocate space for each column by using the [unit](../api/ejchart.html#members:columndefinitions-unit) option that determines whether the chart area should be split by *percentage* or *pixels* for the given [columnWidth](../api/ejchart.html#members:columndefinitions-columnwidth) value of the columnDefinitions.
  
-* To associate a horizontal axis to a column, specify the columnDefintions **index** value to **columnIndex** property of chart axis.
+* To associate a horizontal axis to a column, specify the columnDefintions **index** value to the [columnIndex](../api/ejchart.html#members:primaryxaxis-columnindex) property of the chart axis.
  
 {% highlight js %}
 
@@ -146,7 +152,10 @@ To split the chart area horizontally into number of columns use **columnDefiniti
 
 {% endhighlight %}
 
-![]("/js/Chart/Multiple-Panes_images/Multiple-Panes_img3.png" Caption="Chart with multiple columns")
+![](/js/Chart/Multiple-Panes_images/Multiple-Panes_img3.png)
+
+Chart with multiple columns
+{:.caption}
 
 
 **Column Span**
@@ -185,5 +194,8 @@ For spanning the horizontal axis along multiple panes horizontally, you can use 
 
 {% endhighlight %}
 
-![]("/js/Chart/Multiple-Panes_images/Multiple-Panes_img4.png" Caption="Chart with column span")
+![](/js/Chart/Multiple-Panes_images/Multiple-Panes_img4.png)
+
+Chart with column span
+{:.caption}
 

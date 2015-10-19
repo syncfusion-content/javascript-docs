@@ -57,5 +57,5 @@ In the **HTML** page, add a &lt;div&gt; element to configure TreeView.
 
 The output for TreeView when loadOnDemand is set to “True” is as follows.
 
-![]("/js/TreeView/Load-on-Demand_images/Load-on-Demand_img1.png")
+![](/js/TreeView/Load-on-Demand_images/Load-on-Demand_img1.png)
 

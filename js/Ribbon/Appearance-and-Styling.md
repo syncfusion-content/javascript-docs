@@ -100,7 +100,7 @@ Specifies the index of the **Ribbon tab** to select the given index tab item in 
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img1.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## DisabledItemIndex
 
@@ -193,7 +193,7 @@ Specifies the index or indexes to disable the corresponding tabs in the **Ribbon
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img2.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ## EnableItemIndex
 
@@ -288,7 +288,7 @@ The following output is displayed as a result of the above code example.
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img3.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 ## HideTab
 
@@ -379,7 +379,7 @@ This method is used to hide the given text tab in the **Ribbon** control.
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img4.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 ## ShowTab
 
@@ -471,7 +471,7 @@ This method is used to show the given text tab in the **Ribbon** control.
   
 The following output is displayed as a result of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img5.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 ## RemoveTab
 
@@ -562,7 +562,7 @@ This method is used to remove the given index tab item from the **Ribbon** contr
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img6.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 
 ## Width
 
@@ -650,7 +650,7 @@ Specifies the **width** to the **Ribbon** control.
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img7.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
 
 ## Add Tab Groups
 
@@ -730,7 +730,7 @@ This method is used to add Ribbon Group dynamically in the Ribbon control. This 
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img8.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
 
 ## Add Tab Group Content
 
@@ -802,7 +802,7 @@ This method is used to add group content dynamically in the ribbon. This method 
 
 The following output is displayed as a result of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img9.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img9.png)
 
 ## Collapse and Expand
 
@@ -851,7 +851,7 @@ The following output is displayed as a result of the above code example.
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img10.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img10.png)
 
 ### Expand
 
@@ -898,7 +898,7 @@ The following screenshot displays the output of the above code example.
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img11.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img11.png)
 
 ## AddTab
 
@@ -956,7 +956,7 @@ This method is used to add tab dynamically in the Ribbon control. This method re
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img12.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img12.png)
 
 ## AddContextualTabs
 
@@ -1020,5 +1020,5 @@ This method is used to add contextual tabs dynamically.This method has two argum
 
 The following screenshot displays the output of the above code example.
 
-![]("/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img13.png")
+![](/js/Ribbon/Appearance-and-Styling_images/Appearance-and-Styling_img13.png)
 

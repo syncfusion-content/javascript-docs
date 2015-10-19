@@ -66,5 +66,5 @@ Configure the styles
 
 Execute the above code to render the following output.
 
-![]("/js/SplitButton/RTL-Support_images/RTL-Support_img1.png") 
+![](/js/SplitButton/RTL-Support_images/RTL-Support_img1.png) 
 
