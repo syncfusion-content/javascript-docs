@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started for Essential JavaScript Chart
+description: How to create a chart, add series, enable tooltip and other features in Chart.
 platform: js
 control: Chart
 documentation: ug

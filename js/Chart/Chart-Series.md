@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Series
-description: chart series
+title: Multiple chart series
+description: Learn how to render different types of series in chart.
 platform: js
 control: Chart
 documentation: ug

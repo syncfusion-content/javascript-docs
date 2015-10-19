@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance
-description: appearance
+title: Customizing the appearance of Essential JavaScript Chart
+description: Learn how to customize the appearance of Chart using palettes, themes, color, background and animation. 
 platform: js
 control: Chart
 documentation: ug

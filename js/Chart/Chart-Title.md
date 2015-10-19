@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Title
-description: chart title
+title: Chart Title
+description: How to customize the chart title.
 platform: js
 control: Chart
 documentation: ug

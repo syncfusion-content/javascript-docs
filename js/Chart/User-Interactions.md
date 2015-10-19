@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User-Interactions
-description: user interactions
+title: Interactions available in Essential JavaScript Chart
+description: What are the interactions available in Chart like tooltip, crosshair, trackball, highlighting, zooming and panning, etc..,
 platform: js
 control: Chart
 documentation: ug

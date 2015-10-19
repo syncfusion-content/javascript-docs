@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Real-Time Chart 
-description: real-time Chart 
+title: Using Essential JavaScript Chart in real-time scenario 
+description: Learn how to update the chart dynamically with real-time data. 
 platform: js
 control: Chart
 documentation: ug

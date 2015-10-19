@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Striplines
-description: striplines                                                   
+title: Chart Striplines
+description: Learn how to add horizontal or vertical lines in Chart.                                                  
 platform: js
 control: Chart
 documentation: ug

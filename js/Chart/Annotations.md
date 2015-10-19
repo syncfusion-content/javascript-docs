@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Annotations
-description: chart annotations
+title: Chart Annotations 
+description: How to add annotations in Essential JavaScript Chart and the different options available to customize its position. 
 platform: js
 control: Chart
 documentation: ug

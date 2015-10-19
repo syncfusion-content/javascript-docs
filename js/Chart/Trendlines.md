@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Trendlines
-description: Trendlines
+title: Trendlines in Essential JavaScript Chart
+description: What are the different types of trendlines available in chart.
 platform: js
 control: Chart
 documentation: ug
