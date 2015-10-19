@@ -87,10 +87,10 @@ It is referred when excel like filter menu is enabled</td></tr>
 
 To get started, you can use the `ej.web.all.min.js` file that encapsulates all the `ej` controls and frameworks in one single file. So the complete boilerplate code is
 
+{% highlight html %}
+
 <!DOCTYPE html>
-
 <html>
-
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -126,10 +126,11 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 </body>
 
 </html>
+{% endhighlight %}
 
 
 
-N> _In production, we highly recommend you to use our_ [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) _to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use_ [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server_._ 
+N> _In production, we highly recommend you to use our_ [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) _to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use_ [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server._
 
 For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
@@ -137,9 +138,9 @@ For themes, you can use the `ej.web.all.min.css` CDN link from the code example 
 
 The grid can be created from a HTML `DIV` element with the HTML `id` attribute set to it. To create the grid, you should call the `ejGrid` jQuery plug-in function with the options as parameter. Refer to the following code example.
 
+{% highlight html %}
+
 <div id='Grid'></div>
-
-
 
 <script>
 
@@ -148,27 +149,19 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
         $('#Grid').ejGrid({
 
             dataSource: shipDetails
-
         });
-
     });
 
-
-
     var shipDetails = [
-
           { Name: 'Hanari Carnes', City: 'Brazil' },
-
           { Name: 'Split Rail Beer & Ale', City: 'USA' },
-
           { Name: 'Ricardo Adocicados', City: 'Brazil' }
-
     ];
 
 </script>
 
 
-
+{% endhighlight %}
 
 
 ![](Getting-started_images/Getting-started_img1.png)
@@ -179,31 +172,23 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 
 [`Data binding`](http://helpjs.syncfusion.com/js/grid/data-binding) in the grid is achieved by using the [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview) that supports both RESTful JSON data services binding and local JSON array binding.  To set the data source to the grid, the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:columns-datasource) property is assigned with the instance of the `ej.DataManger`. For demonstration purpose, [Northwind OData service](http://mvc.syncfusion.com/Services/Northwnd.svc/) is used in this tutorial. Refer to the following code example.
 
+{% highlight html %}
+
 <div id="Grid"></div>
-
 <script type="text/javascript">
-
     $(function () {// Document is ready.
-
         //oData Adaptor with DataManager
-
         var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
-
-
-
         $("#Grid").ejGrid({
-
             dataSource: dataManager
-
         });
-
     });
-
 </script>
 
+{% endhighlight %}
 
 
-N> _ ODataAdaptor is the default adaptor for the DataManager. On binding to other web services, proper_ [data adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors) needs _to be set on `adaptor` option of the DataManager._ 
+N> _ODataAdaptor is the default adaptor for the DataManager. On binding to other web services, proper_ [data adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors) needs _to be set on `adaptor` option of the DataManager._ 
 
 ![](Getting-started_images/Getting-started_img2.png)
 {:.image }
@@ -213,52 +198,51 @@ N> _ ODataAdaptor is the default adaptor for the DataManager. On binding to othe
 
 [Paging](http://helpjs.syncfusion.com/js/grid/paging) can be enabled by setting the [`allowPaging`](http://help.syncfusion.com/js/api/ejgrid#members:allowpaging) to true.  This adds the pager in the bottom of the grid and page size can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-pagesize) property
 
-$(function () {
+{% highlight html %}
 
-    var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+<div id="Grid"></div>
+<script type="text/javascript">
+     $(function () {
+        var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+        $("#Grid").ejGrid({
+            dataSource: dataManager,
+            allowPaging: true,
+            pageSettings: { pageSize: 8 }
+       });
+
+   });
+</script>
+{% endhighlight %}
+
+N> _Pager settings can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for pageSize and pageCount are 12 and 8 respectively._
 
 
-
-    $("#Grid").ejGrid({
-
-        dataSource: dataManager,
-
-        allowPaging: true,
-
-        pageSettings: { pageSize: 8 }
-
-    });
-
-});
-
-N> _: Pager settings can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for pageSize and pageCount are 12 and 8 respectively.
 _![](Getting-started_images/Getting-started_img3.png)
 {:.image }
 
 
 ## Enable Filtering
 
-[Filtering](http://helpjs.syncfusion.com/js/grid/filtering) can be enabled by setting the `allowFiltering` to `true`. By default, the filter bar row is displayed to perform filtering, you can change the filter type by using the [`filterSetting.filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings) property.
+[`Filtering`](http://helpjs.syncfusion.com/js/grid/filtering) can be enabled by setting the `allowFiltering` to `true`. By default, the filter bar row is displayed to perform filtering, you can change the filter type by using the [`filterSetting.filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings) property.
 
-$(function () {
+{% highlight html %}
 
-    var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+<div id="Grid"></div>
+<script type="text/javascript">
+    
+    $(function () {
+        var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+        $("#Grid").ejGrid({
+             dataSource: dataManager,
+             allowPaging: true,
+             pageSettings: { pageSize: 8 },
+            allowFiltering: true
 
-
-
-    $("#Grid").ejGrid({
-
-        dataSource: dataManager,
-
-        allowPaging: true,
-
-        pageSettings: { pageSize: 8 },
-
-        allowFiltering: true
+         });
 
     });
-
-});
+    </script>
+{% endhighlight %}
 
 ![](Getting-started_images/Getting-started_img4.png)
 {:.image }
@@ -267,58 +251,48 @@ $(function () {
 ## Enable Grouping
 
 [`Grouping`](http://helpjs.syncfusion.com/js/grid/grouping) can be enabled by setting the [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping) to `true`.  Columns can be grouped dynamically by drag and drop the grid column header to the group drop area. The initial grouping can be done by adding required column names in the [`groupSettings.groupedColumns`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-groupedcolumns) property. 
+{% highlight html %}
 
-$(function () {
+<div id="Grid"></div>
 
-    var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
-
-
-
-    $("#Grid").ejGrid({
-
-        dataSource: dataManager,
-
-        allowPaging: true,
-
-        pageSettings: { pageSize: 8 },
-
-        allowGrouping: true
-
+<script type="text/javascript">
+    $(function () {
+        var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+        $("#Grid").ejGrid({
+            dataSource: dataManager,
+            allowPaging: true,
+            pageSettings: { pageSize: 8 },
+            allowGrouping: true
+        });
     });
-
-});
+</script>
+{% endhighlight %}
 
 ![](Getting-started_images/Getting-started_img5.png)
 {:.image }
 
 
 Refer to the following code example for initial grouping.
+{% highlight html %}
 
-$(function () {
+<div id="Grid"></div>
+<script type="text/javascript">
+    
+    $(function () {
+      var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+        $("#Grid").ejGrid({
+            dataSource: dataManager,
+            allowPaging: true,
+            pageSettings: { pageSize: 8 },
+            allowGrouping: true,
+            groupSettings: { groupedColumns: ["ItemType"] }
 
-    var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
-
-
-
-    $("#Grid").ejGrid({
-
-        dataSource: dataManager,
-
-        allowPaging: true,
-
-        pageSettings: { pageSize: 8 },
-
-        allowGrouping: true,
-
-        groupSettings: { groupedColumns: ["ItemType"] }
+         });
 
     });
 
-});
-
-
-
-
+</script>
+{% endhighlight %}
 
 ![](Getting-started_images/Getting-started_img6.png)
 {:.image }
@@ -328,47 +302,33 @@ $(function () {
 
 [`Summaries`](http://helpjs.syncfusion.com/js/grid/summary) can be added by setting the [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary) to true and adding required summary rows and columns in the [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) property. For demonstration, Stock column’s `sum` value is displayed as summary.
 
-$(function () {
+{% highlight html %}
 
-    var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
-
-
-
-    $("#Grid").ejGrid({
-
-        dataSource: dataManager,
-
-        allowPaging: true,
-
-        pageSettings: { pageSize: 8 },
-
-        allowGrouping: true,
-
-        groupSettings: { groupedColumns: ["ItemType"] },
-
-        showSummary: true,
-
-        summaryRows: [
-
-        {
-
-          	title: "Sum",
-
-          	summaryColumns: [
-
-                { summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Stock", dataMember: "Stock" }
-
-          	]
-
-        }
-
-        ]
-
-    });
-
-})
+<div id="Grid"></div>
+<script type="text/javascript">
+    $(function () {
+        var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
+        $("#Grid").ejGrid({
+            dataSource: dataManager,
+            allowPaging: true,
+            pageSettings: { pageSize: 8 },
+            allowGrouping: true,
+            groupSettings: { groupedColumns: ["ItemType"] },
+            showSummary: true,
+            summaryRows: [
+                {
+                  	title: "Sum",
+                  	summaryColumns: [
+                    { summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Stock", dataMember: "Stock" }
+              	  ]
+              }
+           ]
+        });
+    })
 
 
+</script>
+{% endhighlight %}
 
 ![](Getting-started_images/Getting-started_img7.png)
 {:.image }
