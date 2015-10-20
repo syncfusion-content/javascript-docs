@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Data
-description: working with data                                                   
+title: Data binding
+description: Learn how to bind Chart with JSON data from a remote server or locally in client browser.
 platform: js
 control: Chart
 documentation: ug

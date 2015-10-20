@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Axis
-description: axis
+title: Chart Axis
+description: How to customize the grid lines, tick lines, labels and title of chart axis
 platform: js
 control: Chart
 documentation: ug

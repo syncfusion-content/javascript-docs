@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ejChart
-description: Methods, members, events available in ejChart
+title: API reference for ejChart
+description: What are the options, methods and events available in Essential JavaScript Chart.
 documentation: API
 platform: js
 keywords: ejChart, API, Essential JS Chart, Chart

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data-Markers
-description: data markers
+title: Markers and data labels in Essential JavaScript Chart
+description: Learn how to add markers and data point labels to a Chart series.
 platform: js
 control: Chart
 documentation: ug

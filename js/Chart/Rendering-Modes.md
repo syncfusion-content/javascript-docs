@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rendering-Modes
-description: rendering modes                    
+title: Rendering modes available in Essential JavaScript Chart
+description: How Essential Chart renders in IE7 and IE8. How to render Essential Chart in a HTML5 Canvas.                    
 platform: js
 control: Chart
 documentation: ug

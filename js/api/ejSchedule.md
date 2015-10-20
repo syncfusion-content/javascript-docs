@@ -9,8 +9,6 @@ keywords: ejSchedule, API, Essential JS Schedule
 
 # ejSchedule
 
-HTML Schedule control.
-
 #### Syntax
 
 {% highlight js %}
@@ -132,7 +130,7 @@ It includes the dataSource option and the fields related to Schedule appointment
 
 
 ### appointmentSettings.dataSource 'object/Array'
-{:#members:appointmentSettings-dataSource}
+{:#members:appointmentsettings-datasource}
 
 
 #### Default Value
@@ -243,7 +241,7 @@ To set the dataSource with DataManager instance and querying the datamanager to 
 {% endhighlight %}
 
 ### appointmentSettings.tableName 'string'
-{:#members:appointmentsettings-tableName}
+{:#members:appointmentsettings-tablename}
 
 #### Default Value
 
@@ -288,12 +286,12 @@ The following are the appointment fields that holds the appropriate column names
 Binds the id field name in dataSource to the id of Schedule appointments. It denotes the unique id assigned to appointments.
 
 ### appointmentSettings.startTime 'string'
-{:#members:appointmentsettings-startTime}
+{:#members:appointmentsettings-starttime}
 
 Binds the name of startTime field in the dataSource with start time of the Schedule appointments. It indicates the date and Time when Schedule appointment actually starts.
 
 ### appointmentSettings.endTime 'string'
-{:#members:appointmentsettings-endTime}
+{:#members:appointmentsettings-endtime}
 
 Binds the name of endTime field in dataSource with the end time of Schedule appointments. It indicates the date and time when Schedule appointment actually ends.
 
@@ -405,7 +403,7 @@ To create an appointment with a **description**,
 Binds the name of recurrence field in dataSource. It indicates whether the appointment is a recurrence appointment or not.
 
 ### appointmentSettings.recurrenceRule 'string'
-{:#members:appointmentsettings-recurrenceRule}
+{:#members:appointmentsettings-recurrencerule}
 
 Binds the name of recurrenceRule field in dataSource. It indicates the recurrence pattern associated with appointments.
 
@@ -487,7 +485,7 @@ To create an **all-day** appointment,
 {% endhighlight %}
 
 ### appointmentSettings.resourceFields 'string'
-{:#members:appointmentsettings-resourceFields}
+{:#members:appointmentsettings-resourcefields}
 
 #### Default Value
 
@@ -677,7 +675,7 @@ To create appointments with priority option,
 > **Note: To use the priority field in Schedule, enable the prioritySettings that displays the priority textbox on the default appointment window.**
 
 ### appointmentSettings.startTimeZone 'string'
-{:#members:appointmentsettings-startTimeZone}
+{:#members:appointmentsettings-starttimezone}
 
 #### Default Value
 
@@ -687,7 +685,7 @@ Binds the name of start timezone field in dataSource. It indicates the timezone 
 
 
 ### appointmentSettings.endTimeZone 'string'
-{:#members:appointmentsettings-endTimeZone}
+{:#members:appointmentsettings-endtimezone}
 
 #### Default Value
 
@@ -732,7 +730,7 @@ To create appointments with priority option,
 {% endhighlight %}
 
 ### appointmentTemplateId 'string'
-{:#members:appointmentTemplateId }
+{:#members:appointmenttemplateid }
 
 #### Default Value
 
@@ -776,7 +774,7 @@ To set the appointment template,
 {% endhighlight %}
 
 ### cssClass 'string'
-{:#members:cssClass  }
+{:#members:cssclass  }
 
 #### Default Value
 
@@ -821,12 +819,12 @@ To apply custom css class name to the Schedule and to customize only background 
 > **Note: For more information on applying custom themes to Syncfusion controls, refer [here](http://docs.syncfusion.com/js/theming-in-essential-javascript-components#customizing-themes).**
 
 ### categorizeSettings 'object'
-{:#members:categorizeSettings }
+{:#members:categorizesettings }
 
 Sets various categorize colors to the Schedule appointments to differentiate it.
 
 ### categorizeSettings.allowMultiple 'boolean'
-{:#members:categorizeSettings-allowMultiple }
+{:#members:categorizesettings-allowmultiple }
 
 #### Default Value
 
@@ -867,7 +865,7 @@ To enable multiple selection of categories,
 {% endhighlight %}
 
 ### categorizeSettings.enable 'boolean'
-{:#members:categorizeSettings-enable }
+{:#members:categorizesettings-enable }
 
 #### Default Value
 
@@ -907,7 +905,7 @@ To enable the categorize option,
 {% endhighlight %}
 
 ### categorizeSettings.dataSource 'array/object'
-{:#members:categorizeSettings-dataSource }
+{:#members:categorizesettings-datasource }
 
 #### Default Value
 
@@ -954,7 +952,7 @@ To set the dataSource with array of JSON object collection,
 The following are the category fields that holds appropriate column names from dataSource.
 
 ### categorizeSettings.id 'string'
-{:#members:categorizeSettings-id}
+{:#members:categorizesettings-id}
 
 Binds id field name in the dataSource to id of category data.
 
@@ -963,7 +961,7 @@ Binds id field name in the dataSource to id of category data.
 * id
 
 ### categorizeSettings.text 'string'
-{:#members:categorizeSettings-text}
+{:#members:categorizesettings-text}
 
 Binds text field name in the dataSource to category text.
 
@@ -972,7 +970,7 @@ Binds text field name in the dataSource to category text.
 * text
 
 ### categorizeSettings.color 'string'
-{:#members:categorizeSettings-color}
+{:#members:categorizesettings-color}
 
 Binds color field name in the dataSource to category color.
 
@@ -1020,7 +1018,7 @@ To set the categorize options with id, text and color fields,
 {% endhighlight %}
 
 ### categorizeSettings.fontColor 'string'
-{:#members:categorizeSettings-fontColor}
+{:#members:categorizesettings-fontcolor}
 
 Binds fontColor field name in the dataSource to category font.
 
@@ -1067,7 +1065,7 @@ To set categorize options with fontColor,
 {% endhighlight %}
 
 ### cellHeight 'string'
-{:#members:cellHeight}
+{:#members:cellheight}
 
 Sets the height for Schedule cells.
 
@@ -1103,7 +1101,7 @@ To set cell height for Schedule,
 {% endhighlight %}
 
 ### cellWidth 'string'
-{:#members:cellWidth}
+{:#members:cellwidth}
 
 Sets the width for Schedule cells.
 
@@ -1139,12 +1137,12 @@ To set the cell width for Schedule,
 {% endhighlight %}
 
 ### contextMenuSettings 'object'
-{:#members:contextMenuSettings}
+{:#members:contextmenusettings}
 
 Holds all options related to the context menu settings of the Schedule.
 
 ### contextMenuSettings.enable 'boolean'
-{:#members:contextMenuSettings-enable}
+{:#members:contextmenusettings-enable}
 
 #### Default Value
 
@@ -1186,7 +1184,7 @@ To enable the context menu options for Schedule control,
 {% endhighlight %}
 
 ### contextMenuSettings.menuItems 'object'
-{:#members:contextMenuSettings-menuItems}
+{:#members:contextmenusettings-menuitems}
 
 #### Default Value
 
@@ -1308,7 +1306,7 @@ To add custom context menu option to the Schedule appointments,
 > **Note:In the above code example, menuItemClick event is defined that triggers when any of the menu options are selected. Here, the condition is checked as, when the id of selected menu item option contains custom1, then the target appointment’s text and its color gets modified.**
 
 ### currentDate 'date'
-{:#members:currentDate}
+{:#members:currentdate}
 
 #### Default Value
 
@@ -1343,7 +1341,7 @@ To set current date for Schedule,
 {% endhighlight %}
 
 ### currentView 'string'
-{:#members:currentView}
+{:#members:currentview}
 
 #### Default Value
 
@@ -1379,7 +1377,7 @@ To set the current view as **Day** for Schedule,
 {% endhighlight %}
 
 ### dateFormat 'string'
-{:#members:dateFormat}
+{:#members:dateformat}
 
 #### Default Value
 
@@ -1415,7 +1413,7 @@ To set date format for Schedule,
 {% endhighlight %}
 
 ### enableAppointmentNavigation 'boolean'
-{:#members:enableAppointmentNavigation}
+{:#members:enableappointmentnavigation}
 
 #### Default Value
 
@@ -1452,7 +1450,7 @@ To disable the previous or next appointment navigation,
 
 
 ### enableAppointmentResize 'boolean'
-{:#members:enableAppointmentResize}
+{:#members:enableappointmentresize}
 
 #### Default Value
 
@@ -1488,7 +1486,7 @@ To disable the appointment resizing,
 {% endhighlight %}
 
 ### enableLoadOnDemand 'boolean'
-{:#members:enableLoadOnDemand}
+{:#members:enableloadondemand}
 
 #### Default Value
 
@@ -1527,7 +1525,7 @@ To enable the load on demand functionality for Schedule,
 {% endhighlight %}
 
 ### enablePersistence 'boolean'
-{:#members:enablePersistence}
+{:#members:enablepersistence}
 
 #### Default Value
 
@@ -1564,7 +1562,7 @@ To enable persistence for the Schedule,
 {% endhighlight %}
 
 ### enableRTL 'boolean'
-{:#members:enableRTL}
+{:#members:enablertl}
 
 #### Default Value
 
@@ -1601,7 +1599,7 @@ To enable RTL for the Schedule,
 {% endhighlight %}
 
 ### endHour 'number'
-{:#members:endHour}
+{:#members:endhour}
 
 #### Default Value
 
@@ -1775,12 +1773,12 @@ To set height of Schedule in percentage,
 
 
 ### workHours 'object'
-{:#members:workHours}
+{:#members:workhours}
 
 To define the workHours display of the Schedule control.
 
 ### workHours.highlight 'boolean'
-{:#members:workHours-hightlight}
+{:#members:workhours-hightlight}
 
 #### Default Value
 
@@ -1819,7 +1817,7 @@ To disable the highlighting of Schedule work hours,
 {% endhighlight %}
 
 ### workHours.start 'number'
-{:#members:workHours-start}
+{:#members:workhours-start}
 
 #### Default Value
 
@@ -1859,7 +1857,7 @@ To set the working start hour for Schedule,
 {% endhighlight %}
 
 ### workHours.end 'number'
-{:#members:workHours-end}
+{:#members:workhours-end}
 
 #### Default Value
 
@@ -1902,7 +1900,7 @@ To set the working end hour for Schedule,
 
 
 ### isDST 'boolean'
-{:#members:isDST}
+{:#members:isdst}
 
 #### Default Value 
 
@@ -1939,7 +1937,7 @@ To enable the Daylight Saving time in Schedule,
 {% endhighlight %}
 
 ### isResponsive 'boolean'
-{:#members:isResponsive}
+{:#members:isresponsive}
 
 #### Default Value 
 
@@ -2018,7 +2016,7 @@ To set the French culture on Schedule, set its locale as fr-FR,
 > **Also define the locale words of that specific culture properly. For example, define the locale words for fr-FR culture in a variable ej.Schedule.Locale[“fr-FR”] = { }; under script section.**
 
 ### maxDate 'date'
-{:#members:maxDate}
+{:#members:maxdate}
 
 #### Default Value
 
@@ -2055,7 +2053,7 @@ To set the maximum date on the Schedule,
 {% endhighlight %}
 
 ### minDate 'date'
-{:#members:minDate}
+{:#members:mindate}
 
 #### Default Value
 {:.param}
@@ -2133,12 +2131,12 @@ To render the Schedule in horizontal orientation,
 
 
 ### prioritySettings 'object'
-{:#members:prioritySettings}
+{:#members:prioritysettings}
 
 Holds all the options related to priority settings of the Schedule.
 
 ### prioritySettings.enable 'boolean'
-{:#members:prioritySettings-enable}
+{:#members:prioritysettings-enable}
 
 #### Default Value
 
@@ -2178,7 +2176,7 @@ To enable the priority option in Schedule,
 {% endhighlight %}
 
 ### prioritySettings.dataSource 'object/array'
-{:#members:prioritySettings-dataSource }
+{:#members:prioritysettings-datasource }
 
 #### Default Value
 
@@ -2226,7 +2224,7 @@ To set the dataSource with array of JSON object collection,
 The following are the priority fields that holds the appropriate column names from dataSource.
 
 ### prioritySettings.text 'string'
-{:#members:prioritySettings-text }
+{:#members:prioritysettings-text }
 
 #### Default Value
 
@@ -2235,7 +2233,7 @@ The following are the priority fields that holds the appropriate column names fr
 Binds text field name in the dataSource to prioritySettings text. These text gets listed out in priority field of the appointment window.
 
 ### prioritySettings.value 'string'
-{:#members:prioritySettings-value }
+{:#members:prioritysettings-value }
 
 #### Default Value
 
@@ -2282,7 +2280,7 @@ To set the priority options with text and value fields,
 {% endhighlight %}
 
 ### prioritySettings.template 'string'
-{:#members:prioritySettings-template}
+{:#members:prioritysettings-template}
 
 #### Default Value
 
@@ -2356,7 +2354,7 @@ To set the template for priority option in Schedule,
 > ** Note: Since the prioritySettings contains the default values in its dataSource like none, high, medium and low, the appropriate css classes has to be created with the same value names to apply it on the template.**
 
 ### readOnly 'boolean'
-{:#members:readOnly }
+{:#members:readonly }
 
 #### Default Value
 
@@ -2394,12 +2392,12 @@ To make the Schedule readOnly,
 
 
 ### reminderSettings 'object'
-{:#members:reminderSettings }
+{:#members:remindersettings }
 
 Holds all the options related to reminder settings of the Schedule.
 
 ### reminderSettings.enable 'boolean'
-{:#members:reminderSettings-enable }
+{:#members:remindersettings-enable }
 
 #### Default Value
 
@@ -2436,7 +2434,7 @@ To enable the reminder option in Schedule,
 {% endhighlight %}
 
 ### reminderSettings.alertBefore 'number'
-{:#members:reminderSettings-alertBefore  }
+{:#members:remindersettings-alertbefore  }
 
 #### Default Value
 
@@ -2473,7 +2471,7 @@ To set the alert for Schedule appointments,
 {% endhighlight %}
 
 ### renderDates 'object'
-{:#members:renderDates}
+{:#members:renderdates}
 
 #### Default Value
 
@@ -2482,7 +2480,7 @@ To set the alert for Schedule appointments,
 Defines the specific start and end dates to be rendered in the Schedule control. To render such user-specified custom date ranges in the Schedule control, set the **currentView** property to **customview**.
 
 ### renderDates.start 'date'
-{:#members:renderDates-start}
+{:#members:renderdates-start}
 
 #### Default Value
 
@@ -2491,7 +2489,7 @@ Defines the specific start and end dates to be rendered in the Schedule control.
 Sets the start of custom date range to be rendered in the Schedule.
 
 ### renderDates.end 'date'
-{:#members:renderDates-end}
+{:#members:renderdates-end}
 
 #### Default Value
 
@@ -2534,7 +2532,7 @@ To set the custom date range in Schedule,
 
 
 ### resourceHeaderTemplateId 'string'
-{:#members:resourceHeaderTemplateId }
+{:#members:resourceheadertemplateid }
 
 #### Default Value
 
@@ -2756,7 +2754,7 @@ To specify the resource field,
 
 
 ### resources.allowMultiple 'string'
-{:#members:resources-allowMultiple  }
+{:#members:resources-allowmultiple  }
 
 #### Default Value
 
@@ -2817,12 +2815,12 @@ To set allowMultiple option for a resource object,
 
 
 ### resources.resourceSettings 'object'
-{:#members:resources-resourceSettings}
+{:#members:resources-resourcesettings}
 
 It holds the field names of the resources to be bound to the Schedule and also the dataSource.
 
 ### resources.resourceSettings.dataSource 'object|array'
-{:#members:resources-resourceSettings-dataSource}
+{:#members:resources-resourcesettings-datasource}
 
 The dataSource option accepts either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance that contains the resources related data.
 
@@ -2868,22 +2866,22 @@ To set the dataSource with array of JSON object collection,
 The following are the resourceSettings fields that maps the appropriate column names from the dataSource.
 
 ### resources.resourceSettings.text 'string'
-{:#members:resources-resourceSettings-text}
+{:#members:resources-resourcesettings-text}
 
 Binds text field name in the dataSource to resourceSettings **text**. These text gets listed out in resources field of the appointment window.
 
 ### resources.resourceSettings.id 'string'
-{:#members:resources-resourceSettings-id }
+{:#members:resources-resourcesettings-id }
 
 Binds id field name in the dataSource to resourceSettings **id**. 
 
 ### resources.resourceSettings.groupId 'string'
-{:#members:resources-resourceSettings-groupId }
+{:#members:resources-resourcesettings-groupid }
 
 Binds groupId field name in the dataSource to resourceSettings **groupId**.
 
 ### resources.resourceSettings.color 'string'
-{:#members:resources-resourceSettings-color }
+{:#members:resources-resourcesettings-color }
 
 Binds color field name in the dataSource to resourceSettings **color**. The color specified here gets applied to the Schedule appointments denoting to the resource it belongs. 
 
@@ -2941,7 +2939,7 @@ To set the resources options with id, text, groupId and color fields,
 
 
 ### appointmentClass 'string'
-{:#members:appointmentClass}
+{:#members:appointmentclass}
 
 Binds appointmentClass field name in the dataSource. It applies custom CSS classname to appointments depicting to the resorce it belongs.
 
@@ -3009,7 +3007,7 @@ To customize the styles of the appointments based on the resources it belongs, u
 
 
 ### showAllDayRow 'boolean'
-{:#members:showAllDayRow}
+{:#members:showalldayrow}
 
 #### Default Value
 
@@ -3046,7 +3044,7 @@ To hide the all-day row cells,
 {% endhighlight %}
 
 ### showCurrentTimeIndicator 'boolean'
-{:#members:showCurrentTimeIndicator}
+{:#members:showcurrenttimeindicator}
 
 #### Default Value
 
@@ -3083,7 +3081,7 @@ To hide the current time indicator,
 {% endhighlight %}
 
 ### showHeaderBar 'boolean'
-{:#members:showHeaderBar}
+{:#members:showheaderbar}
 
 #### Default Value
 
@@ -3120,7 +3118,7 @@ To hide the Schedule header bar,
 {% endhighlight %}
 
 ### showLocationField 'boolean'
-{:#members:showLocationField}
+{:#members:showlocationfield}
 
 #### Default Value
 
@@ -3159,7 +3157,7 @@ To show the location field,
 {% endhighlight %}
 
 ### showQuickWindow 'boolean'
-{:#members:showQuickWindow}
+{:#members:showquickwindow}
 
 #### Default Value
 
@@ -3196,7 +3194,7 @@ To hide the quick window,
 {% endhighlight %}
 
 ### showTimeScale 'boolean'
-{:#members:showTimeScale}
+{:#members:showtimescale}
 
 #### Default Value
 
@@ -3233,7 +3231,7 @@ To hide the timescale,
 {% endhighlight %}
 
 ### startHour 'number'
-{:#members:startHour}
+{:#members:starthour}
 
 #### Default Value
 
@@ -3270,7 +3268,7 @@ To set the start hour on the Schedule,
 {% endhighlight %}
 
 ### timeMode 'string/enum'
-{:#members:timeMode}
+{:#members:timemode}
 
 #### Default Value
 
@@ -3307,7 +3305,7 @@ To set the 24 hour time mode on the Schedule,
 {% endhighlight %}
 
 ### timeZone 'string'
-{:#members:timeZone}
+{:#members:timezone}
 
 #### Default Value
 
@@ -3344,12 +3342,12 @@ To set the timezone in Schedule,
 {% endhighlight %}
 
 ### timeZoneCollection 'object'
-{:#members:timeZoneCollection}
+{:#members:timezonecollection}
 
 Sets the collection of timezone items to be bound to the Schedule. Only the items bound to this property gets listed out in the timezone field of the appointment window.
 
 ### timeZoneCollection.dataSource 'object'
-{:#members:timeZoneCollection-dataSource}
+{:#members:timezonecollection-datasource}
 
 Sets the collection of timezone items to the dataSource that accepts either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance that contains Schedule timezones.
 
@@ -3392,17 +3390,17 @@ To set the dataSource with array of JSON object collection,
 The following are the timeZoneCollection fields that maps the appropriate column names from the dataSource.
 
 ### timeZoneCollection.text 'string'
-{:#members:timezoneCollection-text}
+{:#members:timezonecollection-text}
 
 Binds text field name in the dataSource to timeZoneCollection **text**. These text gets listed out in the timezone fields of the appointment window.
 
 ### timeZoneCollection.id 'string'
-{:#members:timeZoneCollection-id }
+{:#members:timezonecollection-id }
 
 Binds id field name in the dataSource to timeZoneCollection **id**.  
 
 ### timeZoneCollection.value 'string'
-{:#members:timeZoneCollection-value }
+{:#members:timezonecollection-value }
 
 Binds value field name in the dataSource to timeZoneCollection **value**.
 
@@ -3518,7 +3516,7 @@ To set the width of the Schedule in pixels,
 {% endhighlight %}
 
 ### enableRecurrenceValidation 'boolean'
-{:#members:enableRecurrenceValidation}
+{:#members:enablerecurrencevalidation}
 
 #### Default Value
 
@@ -3557,12 +3555,12 @@ To disable the RecurrenceValidation for Schedule appointments,
 {% endhighlight %}
 
 ### agendaViewSettings 'object'
-{:#members:agendaViewSettings }
+{:#members:agendaviewsettings }
 
 Sets the week to display more than one week appointment summary.
 
 ### agendaViewSettings.daysInAgenda 'number'
-{:#members:agendaViewSettings-daysinagenda }
+{:#members:agendaviewsettings-daysinagenda }
 
 #### Default Value
 
@@ -3593,7 +3591,7 @@ To set the daysInAgenda of agendaViewSettings,
 
 
 ### agendaViewSettings.dateColumnTemplateId 'string'
-{:#members:agendaViewSettings-datecolumntemplateid }
+{:#members:agendaviewsettings-datecolumntemplateid }
 
 #### Default Value
 
@@ -3632,7 +3630,7 @@ To display the StartTime value in the date column of agenda View,
 {% endhighlight %}
 
 ### agendaViewSettings.timeColumnTemplateId 'string'
-{:#members:agendaViewSettings-timecolumntemplateid }
+{:#members:agendaviewsettings-timecolumntemplateid }
 
 #### Default Value
 
@@ -3672,7 +3670,7 @@ To display the StartTime value in the time column of agenda View.
 
 
 ### firstDayOfWeek 'string'
-{:#members:firstDayOfWeek}
+{:#members:firstdayofweek}
 
 #### Default Value
 
@@ -3700,7 +3698,7 @@ To set Tuesday as starting day of the week.
 {% endhighlight %}
 
 ### workWeek 'array'
-{:#members:workWeek}
+{:#members:workweek}
 
 #### Default Value
 
@@ -3728,12 +3726,12 @@ To set Tuesday to Saturday as workWeek days of the workWeek.
 {% endhighlight %}
 
 ### tooltipSettings 'object'
-{:#members:tooltipSettings}
+{:#members:tooltipsettings}
 
 The tooltip allows to display appointment details in a tooltip while hovering on it.
 
 ### tooltipSettings.enable 'boolean'
-{:#members:tooltipSettings-enable}
+{:#members:tooltipsettings-enable}
 
 #### Default Value
 
@@ -3763,7 +3761,7 @@ To enable the tooltip display.
 {% endhighlight %}
 
 ### tooltipSettings.template 'string'
-{:#members:tooltipSettings-template}
+{:#members:tooltipsettings-template}
 
 #### Default Value
 
@@ -4331,7 +4329,7 @@ schObj.refresh(); // To refresh the Schedule control within the client side even
 
 
 ### refreshAppointment()
-{:#methods:refreshAppointment}
+{:#methods:refreshappointment}
 
 To Refresh only the Schedule control appointments.
 

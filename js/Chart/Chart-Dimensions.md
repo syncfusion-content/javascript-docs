@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Dimensions
-description: chart dimensions
+title: Chart size
+description: Learn how to set Chart size and make it responsive. 
 platform: js
 control: Chart
 documentation: ug
