@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Types
-description: chart types
+title: Chart types
+description: What are the different types of Charts available in Essential JavaScript Chart.
 platform: js
 control: Chart
 documentation: ug

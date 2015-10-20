@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview                                                   
+title: Overview of Essential Javascript Chart
+description: What are the key features available in chart.                                                   
 platform: js
 control: Chart
 documentation: ug

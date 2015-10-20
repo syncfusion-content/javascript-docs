@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization
-description: localization
+title: Localization of Essential JavaScript Chart
+description: Learn how to localize chart based on a specific culture.
 platform: js
 control: Chart
 documentation: ug

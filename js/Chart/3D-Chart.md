@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 3D-Chart
-description: 3d chart
+title: 3D Chart types available in Essential JavaScript Chart
+description: Learn about the different types of 3D charts supported by Syncfusion Essential JavaScript Chart and how to customize the 3D view.
 platform: js
 control: Chart
 documentation: ug

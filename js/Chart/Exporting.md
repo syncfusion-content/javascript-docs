@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting
-description: exporting
+title: Exporting options in Essential JavaScript Chart
+description: Learn how to export Chart as excel file or image.
 platform: js
 control: Chart
 documentation: ug

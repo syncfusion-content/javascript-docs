@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Empty Points 
-description: empty points 
+description: How to show or hide an empty point in Essential JavaScript Chart.
 platform: js
 control: Chart
 documentation: ug

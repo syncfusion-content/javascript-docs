@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple-Panes
-description: multiple panes                    
+title: Render Chart in multiple layouts
+description: Learn how to split chart area into multiple plot areas and render different types of series in each area.                    
 platform: js
 control: Chart
 documentation: ug

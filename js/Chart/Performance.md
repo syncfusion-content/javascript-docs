@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance 
-description: performance 
+title: Performance tips 
+description: How to improve the performance of Essential JavaScript Chart
 platform: js
 control: Chart
 documentation: ug

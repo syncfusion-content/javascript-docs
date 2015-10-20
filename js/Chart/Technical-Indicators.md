@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Technical-Indicators
-description: technical indicators
+title: Technical Indicators
+description: What are the different types of technical indicators supported in Essential Chart for financial analysis.
 platform: js
 control: Chart
 documentation: ug

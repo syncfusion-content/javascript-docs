@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Legend
-description: legend
+title: Chart legend
+description: How to cutomize the legend in Essential JavaScript Chart.
 platform: js
 control: Chart
 documentation: ug
