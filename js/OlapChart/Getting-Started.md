@@ -18,7 +18,7 @@ This section explains on how to create a simple OlapChart.
 ###Project Initialization
 Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **OlapChartDemo”**.
 
-Next, add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as “GettingStarted.html”. Finally click **Add.**
+Next, add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as “GettingStarted.html”, click **Add.**
 
 Now, set “GettingStarted.html” as start-up page by right clicking on “GettingStarted.html” page and select **“Set As Start Page”.**
 
@@ -39,7 +39,7 @@ CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn) to know more about s
 NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
 
 ###Control Initialization
-In-order to initialize a OlapChart widget, first, define a “div” tag with an appropriate “id” attribute that acts as a container for OlapChart widget. Then, initialize the widget by using ejOlapChart method inside “script” tag.
+To initialize a OlapChart widget, first, define a “div” tag with an appropriate “id” attribute that acts as a container for OlapChart widget. Then, initialize the widget by using ejOlapChart method inside “script” tag.
 
 {% highlight html %}
 
@@ -91,7 +91,7 @@ The “url” property in OlapChart widget points the service endpoint, where da
 
 To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapChartServiceController.cs”. Finally, click **Add.**
 
-Now WebAPI controller is added into your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the immediate sections.
+Now WebAPI controller is added into your application successfully that contains the following file. 
 * OlapChartService.cs
 
 >**NOTE: While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in the demo the controller is named as “OlapChartServiceController”.**
@@ -111,7 +111,7 @@ namespace OlapChartDemo
 
 **List of Dependency Libraries**
 
-Next, add the following mentioned dependency libraries into your Web Application. You can find these libraries in GAC (Global Assembly Cache) in your machine.
+Add the following mentioned dependency libraries into your Web Application. You can find these libraries in GAC (Global Assembly Cache) in your machine.
 
 To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference.** Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
@@ -170,7 +170,7 @@ namespace OlapChartDemo
 
 **Service methods in WebAPI Controller**
 
-Now, define the service methods inside OlapChartController class, found inside `**OlapChartController.cs**` file, created while adding WebAPI Controller Class to your Web Application.
+Define the service methods inside OlapChartController class, found inside `**OlapChartController.cs**` file, created while adding WebAPI Controller Class to your Web Application.
 
 {% highlight c# %}
 
