@@ -11,7 +11,7 @@ documentation: ug
 
 ###Binding OlapChart to Offline Cube
 
-To connect an OLAP Cube available in local machine, physical path of the Cube needs to be set in the connection string. Below code sample illustrates the same.
+To connect an OLAP Cube available in local machine, set the physical path of the Cube in the connection string. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -22,7 +22,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 ###Binding OlapChart to Cube in local SQL Server
 
-To connect an OLAP Cube available in SQL Server Analysis Service in local machine, server name and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+To connect an OLAP Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -33,7 +33,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 ###Binding OlapChart to Cube in online SQL Server
 
-To connect an OLAP Cube available in SQL Server Analysis Service in online server through `**XML/A**`, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+To connect an OLAP Cube available in SQL Server Analysis Service in online server through `**XML/A**`, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 
 {% highlight c# %}
@@ -45,7 +45,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 ###Binding OlapChart to Cube in online Mondrian Server
 
-To connect an OLAP Cube available in Mondrian Server through `**XML/A**`, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+To connect an OLAP Cube available in Mondrian Server through `**XML/A**`, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -57,7 +57,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 
 ###Binding OlapChart to Cube in online ActivePivot Server
-To connect an OLAP Cube available in ActivePivot Server through `**XML/A**`, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+To connect an OLAP Cube available in ActivePivot Server through `**XML/A**`, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -72,9 +72,9 @@ DataManager.DataProvider.ProviderName=Syncfusion.Olap.DataProvider.Providers.Act
 ###WCF
 **Adding a WCF Service**
 
-To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as “OlapChartService.svc” and click Add.
+To add a WCF service in an existing web application, right-click on project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as “OlapChartService.svc”, click Add.
 
-Now WCF service is added into your application successfully which in-turn comprise of the following files. The utilization of these files will be explained in the immediate sections.
+Now, WCF service is added into your application successfully and it comprises of the following files. The utilization of these files is explained in the immediate sections.
 
 * OlapChartService.svc
 * OlapChartService.svc.cs
@@ -82,7 +82,7 @@ Now WCF service is added into your application successfully which in-turn compri
 
 **Configuring WCF Service Class**
 
-Remove the “DoWork” method present inside both OlapChartService.svc.cs and IOlapChartService.cs files. Next, add “AspNetCompatibilityRequirements” attribute on top of main class present inside `**OlapChartService.svc.cs**` and set “RequirementsMode” value to “Allowed”.
+Remove the “DoWork” method present inside both OlapChartService.svc.cs and IOlapChartService.cs files. Next, add “AspNetCompatibilityRequirements” attribute on top of main class present inside `**OlapChartService.svc.cs**` and set “RequirementsMode” value as “Allowed”.
 
 {% highlight c# %}
 
@@ -98,11 +98,11 @@ namespace OlapChartDemo
 
 **List of Dependency Libraries**
 
-Next we need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) in your machine.
+Next, add the following dependency libraries into your Web Application. These libraries can be found in GAC (Global Assembly Cache) in your machine.
  
-To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the below mentioned Syncfusion libraries are found. 
+To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
->**NOTE: If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
+>**NOTE: When you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
 
 * Microsoft.AnalysisServices.AdomdClient.dll,  
 * Syncfusion.Linq.Base.dll, 
@@ -115,7 +115,7 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 **List of Namespaces**
 
-Below are the list of namespaces to be added on top of the main class inside `**OlapChartService.svc.cs**` file.
+Following are the list of namespaces to be added on top of the main class inside `**OlapChartService.svc.cs**` file.
 
 {% highlight c# %}
 
@@ -137,7 +137,7 @@ namespace OlapChartDemo
 
 **Datasource Initialization**
 
-Now the connection string to connect OLAP Cube, OlapChart and JavaScriptSerializer instances are created immediately inside the main class in `**OlapChartService.svc.cs**` file.
+Now, the connection string to connect OLAP Cube, OlapChart and JavaScriptSerializer instances are created immediately inside the main class in `**OlapChartService.svc.cs**` file.
 
 {% highlight c# %}
 
@@ -157,7 +157,7 @@ namespace OlapChartDemo
 
 **Service methods in WCF Service**
 
-First, we need to define the service methods inside IOlapChartService interface, found in `**IOlapChartService.cs**` file, created while adding WCF Service to your Web Application.
+First, define the service methods inside IOlapChartService interface, found in `**IOlapChartService.cs**` file, created while adding WCF Service to your Web Application.
 
  {% highlight c# %}
 
@@ -175,7 +175,7 @@ namespace OlapChartDemo
     }
 }
 
-Secondly, we need to elaborate the service methods inside the main class, found in OlapChartService.svc.cs file
+Secondly, elaborate the service methods inside the main class, found in OlapChartService.svc.cs file
 
 namespace OlapChartDemo
 {
@@ -238,8 +238,8 @@ namespace OlapChartDemo
 
 **Configuring Web Configuration File**
 
-You can expose services through the properties such as binding, contract and address using an endpoint.
-* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring IOlapChartService contract and hence it is `OlapChartDemo.IOlapChartService.`
+You can expose services through the properties, binding, contract and address by using an endpoint.
+* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to IOlapChartService contract and hence it is `OlapChartDemo.IOlapChartService.`
 * Binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service.
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
@@ -256,7 +256,7 @@ The endpointBehaviors are illustrated as follows.
 
 {% endhighlight %}
 
-The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property.
+The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using this name property.
 
 {% highlight xml %}
 
@@ -272,7 +272,7 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 
 >** NOTE: In this example, “OlapChartDemo” indicates the name and root namespace of the Web Application created in Visual Studio IDE and “OlapChartService” indicates the name of the WCF service created.
-Now, OlapChart will be rendered with Customer Count over a period of fiscal years across different customer geographic locations.**
+Now, OlapChart is rendered with Customer Count over a period of fiscal years across different customer geographic locations.**
 
 {% include image.html url="/js/OlapChart/Getting-Started_images/Getting-Started_img9.png"%}
 
