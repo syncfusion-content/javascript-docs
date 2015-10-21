@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 ###Binding OlapClient to Offline Cube
-To connect an OLAP Cube available in local machine, physical path of the Cube needs to be set in the connection string. Below code sample illustrates the same.
+To connect an OLAP Cube available in local machine, set the physical path of the Cube set in the connection string. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -18,7 +18,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
 ###Binding OlapClient to Cube in local SQL Server
-To connect an OLAP Cube available in SQL Server Analysis Service in local machine, server name and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+To connect an OLAP Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -28,7 +28,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
 ###Binding OlapClient to Cube in online SQL Server
-To connect an OLAP Cube available in SQL Server Analysis Service in online server through `**XML/A**`, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+To connect an OLAP Cube available in SQL Server Analysis Service in online server through `**XML/A**`, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -38,7 +38,7 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 {% endhighlight %}
 
 ###Binding OlapClient to Cube in online Mondrian Server
-To connect an OLAP Cube available in Mondrian Server through `**XML/A**`, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+To connect an OLAP Cube available in Mondrian Server through `**XML/A**`, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -49,7 +49,7 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 {% endhighlight %}
 
 ###Binding OlapClient to Cube in online ActivePivot Server
-To connect an OLAP Cube available in ActivePivot Server through `**XML/A**`, host server link and database name needs to be set in the connection string. If you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. Below code sample illustrates the same.
+To connect an OLAP Cube available in ActivePivot Server through `**XML/A**`, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
 
@@ -62,9 +62,9 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 ###WCF
 **Adding a WCF Service**
 
-To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as “OlapClientService.svc” and click Add.
+To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as “OlapClientService.svc”, click Add.
  
-Now WCF service is added into your application successfully which in-turn comprise of the following files. The utilization of these files will be explained in the immediate sections.
+Now, WCF service is added into your application successfully that comprises of the following files. The utilization of these files is explained in the immediate sections.
 
 * OlapClientService.svc
 * OlapClientService.svc.cs
@@ -88,11 +88,11 @@ namespace OlapClientDemo
 
 **List of Dependency Libraries**
 
-Next we need to add the below mentioned dependency libraries into your Web Application. These libraries could be found in GAC (Global Assembly Cache) in your machine.
+Next, add the following dependency libraries into your Web Application. You can find these libraries in GAC (Global Assembly Cache) in your machine.
  
-To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the below mentioned Syncfusion libraries are found. 
+To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
->**NOTE: If you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
+>**NOTE: When you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
 
 * Microsoft.AnalysisServices.AdomdClient.dll
 * Syncfusion.Compression.Base.dll
@@ -107,7 +107,7 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 **List of Namespaces**
 
-Below are the list of namespaces to be added on top of the main class inside `**OlapClientService.svc.cs**` file.
+The following are the list of namespaces to be added on top of the main class inside `**OlapClientService.svc.cs**` file.
 
 {% highlight c# %}
 using System.ServiceModel.Activation;
@@ -139,7 +139,7 @@ namespace OlapClientDemo
 
 **Datasource Initialization**
 
-Now the connection string to connect OLAP Cube, OlapClient and JavaScriptSerializer instances are created immediately inside the main class in `**OlapClientService.svc.cs**` file.
+Now, the connection string to connect OLAP Cube, OlapClient and JavaScriptSerializer instances are created immediately inside the main class in `**OlapClientService.svc.cs**` file.
 
 {% highlight c# %}
 
@@ -161,7 +161,7 @@ namespace OlapClientDemo
 
 **Service methods in WCF Service**
 
-First, we need to define the service methods inside IOlapClientService interface, found in `**IOlapClientService.cs**` file, created while adding WCF Service to your Web Application.
+First, define the service methods inside IOlapClientService interface, found in `**IOlapClientService.cs**` file, created while adding WCF Service to your Web Application.
 
  {% highlight c# %}
 
@@ -212,7 +212,7 @@ namespace OlapClientDemo
         Dictionary < string, object > ToggleAxis(string action, string currentReport, string clientReports);
     }
 }
-Secondly, we need to elaborate the service methods inside the main class, found in OlapClientService.svc.cs file 
+Secondly, elaborate the service methods inside the main class, found in OlapClientService.svc.cs file 
 
 namespace OlapClientDemo
 {
@@ -431,8 +431,8 @@ namespace OlapClientDemo
 
 **Configuring Web Configuration File**
 
-You can expose services through the properties such as binding, contract and address using an endpoint.
-* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring IOlapClientService contract and hence it is OlapClientDemo.IOlapClientService.
+You can expose services through the properties, binding, contract and address by using an endpoint.
+* Contract: This property indicates that the contract of the endpoint is exposing. Here you are referring to IOlapClientService contract and hence it is OlapClientDemo.IOlapClientService.
 * Binding: In your application, you use webHttpBinding to post and receive the requests and responses between the client-end and the service.
 * behaviorConfiguration: This property contains the name of the behavior to be used in the endpoint.
 
@@ -447,7 +447,7 @@ The endpointBehaviors are illustrated as follows.
     </services>
 </system.serviceModel>
 
-The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only using this name property.
+The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using this name property.
 
 {% highlight xml %}
 
@@ -464,6 +464,6 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 
 
 >** NOTE: In this example, “OlapClientDemo” indicates the name and root namespace of the Web Application created in Visual Studio IDE and “OlapClientService” indicates the name of the WCF service created.
-Now, OlapClient will be rendered OlapChart and PivotGird with Customer Count over a period of fiscal  years.**
+Now, OlapClient is rendered OlapChart and PivotGird with Customer Count over a period of fiscal  years.**
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/OlapClient.png" %}
