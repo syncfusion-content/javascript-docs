@@ -94,7 +94,7 @@ To add a WebAPI controller in your existing Web Application, right-click on the 
 Now WebAPI controller is added into your application successfully which in-turn comprise of the following file. The utilization of this file will be explained in the immediate sections.
 * OlapChartService.cs
 
->**NOTE: While adding WebAPI Controller Class, name it with the suffix “Controller” which is mandatory. For example, in our demo we have named the controller as “OlapChartServiceController”.**
+>**NOTE: While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in the demo the controller is named as “OlapChartServiceController”.**
 
 Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `**OlapChartServiceController.cs**` file.
 
