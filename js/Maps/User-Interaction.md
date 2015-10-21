@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User-Interaction
-description: User Interaction
+description: user interaction
 platform: js
 control: Maps
 documentation: ug
