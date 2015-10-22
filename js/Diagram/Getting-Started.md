@@ -93,6 +93,7 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 {% endhighlight %}
 
 N> 'labels' property is an array, which indicates that more than one label can be added to a node.
+
 Added node will be displayed in diagram as shown below.
 
 ![](/js/Diagram/Getting-Started_images/Getting-Started_img2.png)

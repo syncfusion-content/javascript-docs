@@ -186,9 +186,10 @@ $("#diagram").ejDiagram({
 ![](/js/Diagram/Shapes_images/Shapes_img1.png)
 
 N> By default, the `type` property of node is set as "basic".
+
 N> When the `shape` is not set for a basic shape, it is considered a "rectangle".
 
-### Path
+## Path
 
 Path node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, You need to specify the `type` as "basic" and the `shape` as "path. The `pathData` property of node allows you to define the path to be drawn. The following code illustrates how a Path node is created.
 
