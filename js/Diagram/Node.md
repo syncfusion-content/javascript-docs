@@ -114,24 +114,11 @@ Position of a node is controlled by using its `offsetX` and `offsetY` properties
 
 The following table illustrates how pivot relates offset values with node boundaries.
 
-<table>
-<tr>
-<th>
-Pivot</th><th>
-Offset </th></tr>
-<tr>
-<td>
-(0.5,0.5)</td><td>
-offsetX and offsetY values are considered as the node’s center point.</td></tr>
-<tr>
-<td>
-(0,0)</td><td>
-offsetX and offsetY values are considered as the top left corner of node</td></tr>
-<tr>
-<td>
-(1,1)</td><td>
-offsetX and offsetY values are considered as the bottom right corner of the node.</td></tr>
-</table>
+| Pivot | Offset |
+|---|---|
+| (0.5,0.5) | offsetX and offsetY values are considered as the nodeâ??s center point. |
+| (0,0) | offsetX and offsetY values are considered as the top left corner of node |
+| (1,1) | offsetX and offsetY values are considered as the bottom right corner of the node. |
 
 
 The following code illustrates how to change the `pivot` value.

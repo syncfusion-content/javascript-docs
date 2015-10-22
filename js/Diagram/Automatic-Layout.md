@@ -299,101 +299,28 @@ $("#diagram").ejDiagram({
 
 The following table illustrates the properties that "options" argument takes.
 
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Default Value</th></tr>
-<tr>
-<td>
-options.children</td><td>
-Contains the list of child nodes.Children collection can be modified.</td><td>
-Array of child nodes</td></tr>
-<tr>
-<td>
-options.assistants</td><td>
-By default, the collection is empty. When any of the child nodes have to be set as "Assistant", you can remove from children collection and have to insert into assistants collection. </td><td>
-Empty array</td></tr>
-<tr>
-<td>
-options.orientation</td><td>
-Gets or sets the organizational chart orientation. </td><td>
-ChartOrientation.Vertical </td></tr>
-<tr>
-<td>
-options.type</td><td>
-Gets or sets the chart organizational chart type </td><td>
-For horizontal chart orientation:ChartType.Center For Vertical chart orientation:ChartType.Alternate</td></tr>
-<tr>
-<td>
-options.offset</td><td>
-Offset is the horizontal space to be left between parent and child nodes.</td><td>
-20 pixels.Applicable only for vertical chart orientations.</td></tr>
-<tr>
-<td>
-options.hasSubTree</td><td>
-Gets whether the node contains sub trees.</td><td>
-Boolean</td></tr>
-<tr>
-<td>
-options.level</td><td>
-Gets the depth of the node from layout root</td><td>
-Number</td></tr>
-<tr>
-<td>
-options.enableRouting</td><td>
-By default, Connections are routed based on the chart type and orientations.This property gets or sets whether default routing is to be enabled or disabled.</td><td>
-true</td></tr>
-</table>
+Property|Description|Default Value
+---|---|---
+options.children|Contains the list of child nodes.Children collection can be modified.|Array of child nodes
+options.assistants|By default, the collection is empty. When any of the child nodes have to be set as "Assistant", you can remove from children collection and have to insert into assistants collection. |Empty array
+options.orientation|Gets or sets the organizational chart orientation. |ChartOrientation.Vertical 
+options.type|Gets or sets the chart organizational chart type |For horizontal chart orientation:ChartType.Center For Vertical chart orientation:ChartType.Alternate
+options.offset|Offset is the horizontal space to be left between parent and child nodes.|20 pixels.Applicable only for vertical chart orientations.
+options.hasSubTree|Gets whether the node contains sub trees.|Boolean
+options.level|Gets the depth of the node from layout root|Number
+options.enableRouting|By default, Connections are routed based on the chart type and orientations.This property gets or sets whether default routing is to be enabled or disabled.|true
 
 
 The following table illustrates the different chart orientations and chart types.
 
-<table>
-<tr>
-<th>
-Orientation </th><th>
-Type </th><th>
-Description</th><th>
-Example</th></tr>
-<tr>
-<td>
-Horizontal</td><td>
-Left</td><td>
-Arranges the child nodes horizontally at the left side of parent.</td><td>
-<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img4.png" alt="" width="225pt" height="85pt"/></td></tr>
-<tr>
-<td>
- </td><td>
-Right</td><td>
-Arranges the child nodes horizontally at the right side of parent.</td><td>
-<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img5.png" alt="" width="224pt" height="84pt"/></td></tr>
-<tr>
-<td>
- </td><td>
-Center</td><td>
-Arranges the children like standard tree layout orientation.</td><td>
-<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img6.png" alt="" width="223pt" height="83pt"/></td></tr>
-<tr>
-<td>
-Vertical</td><td>
-Left</td><td>
-Vertically arranges the children at the left side of parent</td><td>
-<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img7.png" alt="" width="111pt" height="139pt"/></td></tr>
-<tr>
-<td>
- </td><td>
-Right</td><td>
-Vertically arranges the children at the right side of parent</td><td>
-<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img8.png" alt="" width="111pt" height="138pt"/></td></tr>
-<tr>
-<td>
- </td><td>
-Alternate</td><td>
-Vertically arranges the children at both left and right sides of parent</td><td>
-<img src="/js/Diagram/Automatic-Layout_images/Automatic-Layout_img9.png" alt="" width="157pt" height="105pt"/></td></tr>
-</table>
+| Orientation | Type | Description | Example |
+|---|---|---|---|
+| Horizontal | Left | Arranges the child nodes horizontally at the left side of parent. | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img4.png) |
+|  | Right | Arranges the child nodes horizontally at the right side of parent. | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img5.png) |
+|  | Center | Arranges the children like standard tree layout orientation. | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img6.png) |
+| Vertical | Left | Vertically arranges the children at the left side of parent | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img7.png) |
+|  | Right | Vertically arranges the children at the right side of parent | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img8.png) |
+|  | Alternate | Vertically arranges the children at both left and right sides of parent | ![](/js/Diagram/Automatic-Layout_images/Automatic-Layout_img9.png) |
 
 The following code example illustrates how to set the vertical right arrangement to the leaf level trees.
 

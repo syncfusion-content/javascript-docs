@@ -180,23 +180,11 @@ $("#symbolpalette").ejSymbolPalette({
 
 Palette item size is set based on the precedence flow given in the following table.
 
-<table>
-<tr>
-<th>
-Palette Item</th><th>
-Rendering Size</th><th>
-Preview Size</th></tr>
-<tr>
-<td><b>
-Precedence - Width</b> </td><td>
-paletteItem.width > model.paletteItemWidth > node.width </td><td>
-paletteItem.previewWidth > model.previewWidth > node.width</td></tr>
-<tr>
-<td><b>
-Precedence - Height </b></td><td>
-paletteItem.height > model.paletteItem.Height > node.height </td><td>
-paletteItem.previewHeight > model.previewHeight > node.height</td></tr>
-</table>
+| Palette Item | Rendering Size | Preview Size |
+|---|---|---|
+| Precedence - Width | paletteItem.width > model.paletteItemWidth > node.width | paletteItem.previewWidth > model.previewWidth > node.width |
+| Precedence - Height | paletteItem.height > model.paletteItem.Height > node.height | paletteItem.previewHeight > model.previewHeight > node.height |
+
 Palette item size can be based on the actual size of the node, regardless of the precedence. 
 
 The `enableScale` property of the palette item enables you to customize the size of the item regardless of the precedence. The following code example illustrates how to customize the palette item size.

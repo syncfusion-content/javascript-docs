@@ -110,58 +110,17 @@ The `horizontalAlignment` property of label is used to set how the label is hori
 
 The following tables illustrates all the possible alignments visually with **offset (0, 0).**
 
-<table>
-<tr>
-<th>
-Horizontal Alignment</th><th>
-Vertical Alignment</th><th>
-Output with Offset(0,0)</th></tr>
-<tr>
-<td>
-Left</td><td>
-Top</td><td>
-<img src="/js/Diagram/Label_images/Label_img3.png" alt="" width="155pt" height="138pt"/></td></tr>
-<tr>
-<td>
-Center</td><td>
- </td><td>
-<img src="/js/Diagram/Label_images/Label_img4.png" alt="" width="155pt" height="138pt"/></td></tr>
-<tr>
-<td>
-Right</td><td>
- </td><td>
-<img src="/js/Diagram/Label_images/Label_img5.png" alt="" width="155pt" height="138pt"/></td></tr>
-<tr>
-<td>
-Left</td><td>
-Center</td><td>
-<img src="/js/Diagram/Label_images/Label_img6.png" alt="" width="155pt" height="138pt"/></td></tr>
-<tr>
-<td>
-Center</td><td>
- </td><td>
-<img src="/js/Diagram/Label_images/Label_img7.png" alt="" width="155pt" height="138pt"/></td></tr>
-<tr>
-<td>
-Right</td><td>
- </td><td>
-<img src="/js/Diagram/Label_images/Label_img8.png" alt="" width="155pt" height="138pt"/></td></tr>
-<tr>
-<td>
-Left</td><td>
-Bottom</td><td>
-<img src="/js/Diagram/Label_images/Label_img9.png" alt="" width="155pt" height="138pt"/></td></tr>
-<tr>
-<td>
-Center</td><td>
- </td><td>
-<img src="/js/Diagram/Label_images/Label_img10.png" alt="" width="155pt" height="138pt"/></td></tr>
-<tr>
-<td>
-Right</td><td>
- </td><td>
-<img src="/js/Diagram/Label_images/Label_img11.png" alt="" width="155pt" height="138pt"/></td></tr>
-</table>
+| Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
+|---|---|---|
+| Left | Top | ![](/js/Diagram/Label_images/Label_img3.png) |
+| Center |  | ![](/js/Diagram/Label_images/Label_img4.png) |
+| Right |  | ![](/js/Diagram/Label_images/Label_img5.png) |
+| Left | Center | ![](/js/Diagram/Label_images/Label_img6.png) |
+| Center |  | ![](/js/Diagram/Label_images/Label_img7.png) |
+| Right |  | ![](/js/Diagram/Label_images/Label_img8.png) |
+| Left | Bottom | ![](/js/Diagram/Label_images/Label_img9.png) |
+| Center |  | ![](/js/Diagram/Label_images/Label_img10.png) |
+| Right |  | ![](/js/Diagram/Label_images/Label_img11.png) |
 
 The following codes illustrates how to align labels.
 
@@ -279,28 +238,12 @@ The `textAlign` property of label allows you to set how the text should be align
 
 ![](/js/Diagram/Label_images/Label_img14.png)
 
-<table>
-<tr>
-<th>
-TextAlign</th><th>
-Image</th></tr>
-<tr>
-<td>
-Left</td><td>
-<img src="/js/Diagram/Label_images/Label_img15.png" alt="" width="128pt" height="129pt"/></td></tr>
-<tr>
-<td>
-Right</td><td>
-<img src="/js/Diagram/Label_images/Label_img16.png" alt="" width="128pt" height="129pt"/></td></tr>
-<tr>
-<td>
-Center</td><td>
-<img src="/js/Diagram/Label_images/Label_img17.png" alt="" width="128pt" height="129pt"/></td></tr>
-<tr>
-<td>
-Justify</td><td>
-<img src="/js/Diagram/Label_images/Label_img18.png" alt="" width="128pt" height="129pt"/></td></tr>
-</table>
+| TextAlign | Image |
+|---|---|
+| Left | ![](/js/Diagram/Label_images/Label_img15.png) |
+| Right | ![](/js/Diagram/Label_images/Label_img16.png) |
+| Center | ![](/js/Diagram/Label_images/Label_img17.png) |
+| Justify | ![](/js/Diagram/Label_images/Label_img18.png) |
 
 ## Wrapping
 
@@ -334,28 +277,11 @@ When text overflows node boundaries, you can control it by using text wrapping. 
 
 ![](/js/Diagram/Label_images/Label_img19.png)
 
-<table>
-<tr>
-<th>
-Values</th><th>
-Description</th><th>
-Image</th></tr>
-<tr>
-<td>
-NoWrap</td><td>
-Text will not be wrapped </td><td>
-<img src="/js/Diagram/Label_images/Label_img20.png" alt="" width="145pt" height="128pt"/></td></tr>
-<tr>
-<td>
-Wrap</td><td>
-Text-wrapping occurs when the text overflows beyond the available node width. </td><td>
-<img src="/js/Diagram/Label_images/Label_img21.png" alt="" width="145pt" height="128pt"/></td></tr>
-<tr>
-<td>
-WrapWithOverflow (Default)</td><td>
-Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word.</td><td>
-<img src="/js/Diagram/Label_images/Label_img22.png" alt="" width="145pt" height="128pt"/></td></tr>
-</table>
+| Values | Description | Image |
+|---|---|---|
+| NoWrap | Text will not be wrapped | ![](/js/Diagram/Label_images/Label_img20.png) |
+| Wrap | Text-wrapping occurs when the text overflows beyond the available node width. | ![](/js/Diagram/Label_images/Label_img21.png) |
+| WrapWithOverflow (Default) | Text-wrapping occurs when the text overflows beyond the available node width. However, the text may overflow beyond the node width in the case of a very long word. | ![](/js/Diagram/Label_images/Label_img22.png) |
 
 ## Appearance
 
@@ -629,14 +555,6 @@ You can add any number of labels to a node or connector.  The following code ill
 
 * To enable faster rendering, labels are rendered in a separate layer because of this, all the labels always stay on top. When two nodes are overlapped, text of underlying node is not hidden by the overlapped node. 
 
-<table>
-<tr>
-<th>Expected behavior</th>
-<th>Current behavior</th>
-</tr>
-<tr>
-<td><img src="/js/Diagram/Label_images/Label_img29.png" alt="" width="140pt" height="129pt"/></td>
-<td><img src="/js/Diagram/Label_images/Label_img30.png" alt="" width="140pt" height="129pt"/></td>
-</tr>
-
-</table>
+| Expected behavior | Current behavior |
+|---|---|
+| ![](/js/Diagram/Label_images/Label_img29.png) | ![](/js/Diagram/Label_images/Label_img30.png) |
