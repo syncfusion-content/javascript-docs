@@ -302,27 +302,27 @@ Image</th></tr>
 <tr>
 <td>
 Event</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img6" alt="" width="85pt" height="90pt"/></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img6.png" alt="" width="85pt" height="90pt"/></td></tr>
 <tr>
 <td>
 Gateway</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img7" alt="" width="85pt" height="90pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img7.png" alt="" width="85pt" height="90pt" /></td></tr>
 <tr>
 <td>
 Task</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img8" alt="" width="92pt" height="90pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img8.png" alt="" width="92pt" height="90pt" /></td></tr>
 <tr>
 <td>
 Message</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img9" alt="" width="90pt" height="70pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img9.png" alt="" width="90pt" height="70pt" /></td></tr>
 <tr>
 <td>
 DataSource</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img10" alt="" width="86pt" height="86pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img10.png" alt="" width="86pt" height="86pt" /></td></tr>
 <tr>
 <td>
 DataObject</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img11" alt="" width="92pt" height="87pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img11.png" alt="" width="92pt" height="87pt" /></td></tr>
 </table>
 
 The BPMN shapes and its types are explained as follows.
@@ -376,23 +376,23 @@ Image</th></tr>
 <tr>
 <td>
 Start</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img13" alt="" width="80pt" height="78pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img13.png" alt="" width="80pt" height="78pt" /></td></tr>
 <tr>
 <td>
 NonInterruptingStart</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img14" alt="" width="85pt" height="85pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img14.png" alt="" width="85pt" height="85pt" /></td></tr>
 <tr>
 <td>
 Intermediate</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img15" alt="" width="81pt" height="78pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img15.png" alt="" width="81pt" height="78pt" /></td></tr>
 <tr>
 <td>
 NonInterruptingIntermediate</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img16" alt="" width="85pt" height="84pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img16.png" alt="" width="85pt" height="84pt" /></td></tr>
 <tr>
 <td>
 End</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img17" alt="" width="80pt" height="80pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img17.png" alt="" width="80pt" height="80pt" /></td></tr>
 </table>
 
 Event triggers are notated as icons inside the circle and they represent the specific details of the process. The `triggers` property of node allows you to set the type of trigger and by default, it is set as "none". The following table illustrates the type of event triggers.
@@ -403,39 +403,39 @@ Event triggers are notated as icons inside the circle and they represent the spe
 <tr>
 <td>
 Message</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img18" alt="" width="84pt" height="85pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img18.png" alt="" width="84pt" height="85pt" /></td></tr>
 <tr>
 <td>
 Compensation</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img19" alt="" width="84pt" height="82pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img19.png" alt="" width="84pt" height="82pt" /></td></tr>
 <tr>
 <td>
 Error</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img20" alt="" width="82pt" height="85pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img20.png" alt="" width="82pt" height="85pt" /></td></tr>
 <tr>
 <td>
 Escalation</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img21" alt="" width="87pt" height="86pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img21.png" alt="" width="87pt" height="86pt" /></td></tr>
 <tr>
 <td>
 Link</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img22" alt="" width="85pt" height="81pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img22.png" alt="" width="85pt" height="81pt" /></td></tr>
 <tr>
 <td>
 Multiple</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img23" alt="" width="84pt" height="84pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img23.png" alt="" width="84pt" height="84pt" /></td></tr>
 <tr>
 <td>
 Parallel</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img24" alt="" width="83pt" height="83pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img24.png" alt="" width="83pt" height="83pt" /></td></tr>
 <tr>
 <td>
 Signal</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img25" alt="" width="87pt" height="84pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img25.png" alt="" width="87pt" height="84pt" /></td></tr>
 <tr>
 <td>
 Timer</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img26" alt="" width="83pt" height="80pt" /></td></tr>
+<img src="/js/Diagram/Shapes_images/Shapes_img26.png" alt="" width="83pt" height="80pt" /></td></tr>
 </table>
 
 ### Gateway     

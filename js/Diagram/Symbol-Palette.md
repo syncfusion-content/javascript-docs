@@ -223,9 +223,9 @@ The `enableScale` property of the palette item enables you to customize the size
 
 {% endhighlight %}
  
-![]("/js/Diagram/Symbol-Palette_images/Symbol-Palette_img1.png" caption = "Enable Scale - false" %}
+![]("/js/Diagram/Symbol-Palette_images/Symbol-Palette_img1.png" caption = "Enable Scale - false")
 
-![]("/js/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png" caption = "Enable Scale - true" %}
+![]("/js/Diagram/Symbol-Palette_images/Symbol-Palette_img2.png" caption = "Enable Scale - true")
 
 ## Appearance 
 
