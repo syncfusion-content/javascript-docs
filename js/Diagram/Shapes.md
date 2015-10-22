@@ -11,13 +11,13 @@ documentation: ug
 
 Diagram provides support to add different kind of nodes. They are as follows.
   
-  * Text Node
-  * Image Node
-  * Html Node
-  * Native Node
-  * Basic Shapes
-  * Flow Shapes
-  * BPMN Shapes
+* Text Node
+* Image Node
+* Html Node
+* Native Node
+* Basic Shapes
+* Flow Shapes
+* BPMN Shapes
  
 ## Text
 
@@ -331,9 +331,9 @@ The BPMN shapes and its types are explained as follows.
 
 An event is notated with a circle and it represents an event in a business process. The type of events are as follows.
 
-  * Start
-  * End
-  * Intermediate
+* Start
+* End
+* Intermediate
 
 The `event` property of the node allows you to define the type of the event. The default value of the `event` is "start". The following code example illustrates how to create a BPMN Event.
 
@@ -505,9 +505,8 @@ The activity is the task that is performed in a business process. It is represen
 
 There are two types of activities .They are listed as follows.
 
-  * Task – Occurs within a process and it is not broken down to finer level of detail.
-
-  * Subprocess – Occurs within a process and it is broken down to finer level of detail.
+* Task – Occurs within a process and it is not broken down to finer level of detail.
+* Subprocess – Occurs within a process and it is broken down to finer level of detail.
 
 To create a BPMN activity, you need to set the `shape` as "activity". You also need to set the type of the [activity](/js/api/global "BPMNActivity") by using the `activity` property of node. By default, the type of the `activity` is set as "task". The following code example illustrates how to create an activity.
 

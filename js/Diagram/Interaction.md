@@ -88,7 +88,6 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 ## Drag
 
 * An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element. 
-
 * While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines "Snapping"). 
 
 ![](/js/Diagram/Interaction_images/Interaction_img3.png)
@@ -96,9 +95,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 ## Resize
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
-
 * When one corner of the selector is dragged, opposite corner is in a static position.
-
 * While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines "Snapping").
 
 ![](/js/Diagram/Interaction_images/Interaction_img4.png)
@@ -106,11 +103,8 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 ## Rotate
 
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
-
 * The node is rotated with reference to the static pivot point. 
-
 * Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
-
 * For more information about pivot, refer to [Pivot](/js/Diagram/Node "Pivot").
 
 ![](/js/Diagram/Interaction_images/Interaction_img5.png)
@@ -128,9 +122,7 @@ Source and target points of the selected connectors are represented with two han
 ### Straight segment editing
 
 * End point of each straight segment is represented by a thumb that enables to edit the segment.
-
 * Any number of new segments can be inserted into a straight line by clicking that when shift and ctrl keys are pressed. (Ctrl+Shift+Click).
-
 * Straight segments can be removed by clicking the segment end point, when ctrl and shift keys are pressed. (Ctrl+Shift+Click).
 
 ### Orthogonal thumbs
@@ -306,7 +298,6 @@ The following code example illustrates how to customize the appearance of the us
 ## Zoom pan
 
 * When a large Diagram is loaded, only certain portion of the Diagram is visible. The remaining portions are clipped. Clipped portions can be explored by scrolling the scrollbars or panning the Diagram.
-
 * Diagram can be zoomed in or out by using Ctrl + mouse wheel.
 
 ## Keyboard

@@ -15,7 +15,7 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 
 ### Initialize diagram
 
-1. Create an HTML file and add the necessary script references and style sheets in the Head tag as shown in the following code example.
+    1. Create an HTML file and add the necessary script references and style sheets in the Head tag as shown in the following code example.
 
 {% highlight html %}
 
@@ -27,14 +27,14 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!--script to create Diagram-->
-    <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 </head>
 <body></body>
 </html>
 
 {% endhighlight %}
 
-2. Add a placeholder div element that can be used to initialize the diagram widget as shown below.
+    2. Add a placeholder div element that can be used to initialize the diagram widget as shown below.
 
 {% highlight html %}
 
@@ -50,13 +50,13 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 
 {% endhighlight %}
 
-3. This creates an empty diagram
+    3. This creates an empty diagram
 
 ![](/js/Diagram/Getting-Started_images/Getting-Started_img1.png)
 
 ### Create and add Node
 
-1. Create node: Let us create and add a node (JSON data) with specific position, size, label and shape.
+Create node: Let us create and add a node (JSON data) with specific position, size, label and shape.
 
 {% highlight js %}
 
@@ -137,7 +137,7 @@ Added node will be displayed in diagram as shown below.
 
 {% endhighlight %}
 
-Connector connects the two nodes as shown below.
+* Connector connects the two nodes as shown below.
 
 ![](/js/Diagram/Getting-Started_images/Getting-Started_img3.png)
 
@@ -222,7 +222,6 @@ Final flow chart will looks as shown below.
 ### Note
 
 * Initializing diagram is already discussed in Flow Diagram section.
-
 * In 'Flow Diagram' section we saw how to create a diagram manually, now let us see how to create and position diagram automatically.
 
 ### Business object (Employee information)

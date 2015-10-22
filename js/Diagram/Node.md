@@ -191,7 +191,6 @@ $("#diagram").ejDiagram({
 There are two types of gradients.
 
 * **Linear gradient -** Defines a smooth transition between a set of colors (so-called "stops") on a line. 
-
 * **Radial gradient -** Defines a smooth transition between stops on a circle.
 
 The `gradient` property of node allows you to define and applies the gradient effect to that node.

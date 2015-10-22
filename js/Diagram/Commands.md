@@ -11,16 +11,16 @@ documentation: ug
 
 There are several commands available in the Diagram as follows.
 
-  * Alignment commands
-  * Spacing commands
-  * Sizing commands
-  * Clipboard commands
-  * Grouping commands
-  * Z-order commands
-  * Zoom commands
-  * Nudge commands
-  * FitToPage commands
-  * Undo/Redo commands
+* Alignment commands
+* Spacing commands
+* Sizing commands
+* Clipboard commands
+* Grouping commands
+* Z-order commands
+* Zoom commands
+* Nudge commands
+* FitToPage commands
+* Undo/Redo commands
 
 ## Align
 
@@ -41,12 +41,12 @@ Align all the nodes/connectors in the selection list with respect to specified d
 
 The accepted values of the argument "direction" are as follows.
     
-  * "left" - Align all the selected objects at the left of the selection boundary.
-  * "right" - Align all the selected objects at the right of the selection boundary.
-  * "center" - Align all the selected objects at the center of the selection boundary.
-  * "top" - Align all the selected objects at the top of the selection boundary.
-  * "bottom" - Align all the selected objects at the bottom of the selection boundary.
-  * "middle" - Align all the selected objects at the middle of the selection boundary.
+* "left" - Align all the selected objects at the left of the selection boundary.
+* "right" - Align all the selected objects at the right of the selection boundary.
+* "center" - Align all the selected objects at the center of the selection boundary.
+* "top" - Align all the selected objects at the top of the selection boundary.
+* "bottom" - Align all the selected objects at the bottom of the selection boundary.
+* "middle" - Align all the selected objects at the middle of the selection boundary.
 
 
 The following code example illustrates how to align all the selected objects at the left side of selection boundary.
@@ -249,10 +249,10 @@ Nudge command moves the selected elements towards the specified direction by the
 
 The accepted values of the argument "direction" are as follows.
 
-  * "up" - moves the selected elements towards up by the the specified delta value.
-  * "down" - moves the selected elements towards down by the specified delta value.
-  * "left" - moves the selected elements towards left by the specified delta value.
-  * "right" - moves the selected elements towards right by the specified delta value.
+* "up" - moves the selected elements towards up by the the specified delta value.
+* "down" - moves the selected elements towards down by the specified delta value.
+* "left" - moves the selected elements towards left by the specified delta value.
+* "right" - moves the selected elements towards right by the specified delta value.
 
 The following code illustrates how to execute Nudge command.
 

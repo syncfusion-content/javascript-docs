@@ -68,13 +68,10 @@ You can programmatically change the scroll offsets at runtime by using the clien
 
 Autoscroll feature automatically scrolls the Diagram whenever the node or connector is moved beyond the boundary of the Diagram. So that, it is always visible during dragging, resizing, and multiple selection operations. Autoscroll is automatically triggered when any one of the following is done towards the edges of the Diagram.
 
-  * Node dragging , resizing 
-
-  * Connection editing
-
-  * Rubber band selection
-
-  * Label dragging
+* Node dragging, resizing 
+* Connection editing
+* Rubber band selection
+* Label dragging
 
 ## Autoscroll border
 
@@ -96,9 +93,7 @@ The Autoscroll border is used to specify the maximum distance between the object
 The scroll limit allows you to define the scrollable region of the Diagram. It includes the following options.
 
 * Allows to scroll in all directions without any restriction.
-
 * Allows to scroll within the Diagram content.
-
 * Allows to scroll within the specified scrollable area.
 
 `scrollLimit` property of scroll settings helps to limit the scrolling. For the accepted values of the scrollLimit, refer to [Scroll Limit](/js/api/ejDiagram "Scroll-Limit").

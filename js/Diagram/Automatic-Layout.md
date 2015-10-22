@@ -11,9 +11,9 @@ documentation: ug
 
 Diagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout**. It includes the following layout modes.
 
-  * Hierarchical Layout
-  * Organization Chart
-  * Radial Tree
+* Hierarchical Layout
+* Organization Chart
+* Radial Tree
 
 ## Hierarchical Layout
 
@@ -427,9 +427,9 @@ Organizational chart layout starts parsing from root and iterate through all its
 
 You can set Chart orientations, chart types, and offset to be left between parent and child nodes by overriding the method, diagram.model.layout.getLayoutInfo. The getLayoutInfo method is called to configure every subtree of the organizational chart. It takes the following arguments.
 
-  * diagram (Reference of diagram)
-  * node (Parent node to that options are to be customized)
-  * options (object to set the customizable properties)
+* diagram (Reference of diagram)
+* node (Parent node to that options are to be customized)
+* options (object to set the customizable properties)
   
 The following code example illustrates how to define the method getLayoutInfo.
 

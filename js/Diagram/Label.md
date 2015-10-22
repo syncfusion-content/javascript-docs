@@ -526,9 +526,8 @@ N> There is no built-in support to rotate labels interactively.
 
 **Diagram** provides support to edit a Label at runtime, either programmatically or interactively. By default, label is in **View** mode. But it can be brought to edit mode in two ways; 
 
-   1. By double-clicking the label.
-
-   2. By selecting the item and pressing the **F2** key. 
+1. By double-clicking the label.
+2. By selecting the item and pressing the **F2** key. 
 
 Double-clicking any label will enables **editing** of that. Double-clicking the node enables first label editing. When the focus of editor is lost, the label for the node is updated.
 
