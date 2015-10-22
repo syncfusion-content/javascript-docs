@@ -273,11 +273,14 @@ var nodes = [
         constraints: constraints
     }
 ];
+{% endhighlight %}
+
 
 ![](/js/Diagram/Node_images/Node_img7.png)
 
 The following code illustrates how to disable shadow effect at runtime.
 
+{% highlight js %}
 var diagram = $("#diagram").ejDiagram("instance");
 var node = diagram.findNode("node");
 

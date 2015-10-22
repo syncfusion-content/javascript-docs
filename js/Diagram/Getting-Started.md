@@ -361,10 +361,10 @@ Following code examples indicate how to define the default appearance of node an
         //Use automatic layout to arrange elements on the page
         layout: {
             type: ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart,
-            marginX: **10**,
-            marginY: **50**,
-            horizontalSpacing: **50**,
-            verticalSpacing: **50**,
+            marginX: 10,
+            marginY: 50,
+            horizontalSpacing: 50,
+            verticalSpacing: 50,
             orientation: ej.datavisualization.Diagram.LayoutOrientations.TopToBottom
         }
 
