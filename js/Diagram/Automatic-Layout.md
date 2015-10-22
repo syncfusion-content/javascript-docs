@@ -24,27 +24,15 @@ To arrange the nodes in hierarchical structure, you need to specify the layout `
 {% highlight js %}
 
 //Initializes data source
-var data = [{
-    Name: "Steve-Ceo"
-}, {
-    Name: "Kevin-Manager",
-    ReportingPerson: "Steve-Ceo"
-}, {
-    Name: "Peter-Manager",
-    ReportingPerson: "Steve-Ceo"
-}, {
-    Name: "John- Manager",
-    ReportingPerson: "Peter-Manager"
-}, {
-    Name: "Mary-CSE ",
-    ReportingPerson: "Peter-Manager"
-}, {
-    Name: "Jim-CSE ",
-    ReportingPerson: "Kevin-Manager"
-}, {
-    Name: "Martin-CSE",
-    ReportingPerson: "Kevin-Manager"
-}];
+var data = [
+    {Name: "Steve-Ceo"},
+    {Name: "Kevin-Manager",	ReportingPerson: "Steve-Ceo"},
+    {Name: "Peter-Manager",	ReportingPerson: "Steve-Ceo"},
+    {Name: "John- Manager",	ReportingPerson: "Peter-Manager"},
+    {Name: "Mary-CSE ",	ReportingPerson: "Peter-Manager"},
+    {Name: "Jim-CSE ", ReportingPerson: "Kevin-Manager"},
+    {Name: "Martin-CSE", ReportingPerson: "Kevin-Manager"}
+];
 
 var type = ej.datavisualization.Diagram.LayoutTypes;
 
@@ -53,14 +41,15 @@ function nodeTemplate(diagram, node) {
     node.labels[0].text = node.Name;
 }
 
-$("#diagram").ejDiagram({
+$("#diagram").ejDiagram({    
     //Uses layout to auto-arrange nodes on the Diagram page          
     layout: {
         //Sets layout type
         type: type.HierarchicalTree
     },
+    
+    //Sets the default properties for nodes and connectors
     defaultSettings: {
-        //Sets the default properties for nodes and connectors
         node: {
             width: 100,
             height: 40,
@@ -83,12 +72,15 @@ $("#diagram").ejDiagram({
 
     //Initializes the node template.
     nodeTemplate: nodeTemplate,
+    
     //Configures data source for Diagram
     dataSourceSettings: {
         //Defines the unique field
         id: "Name",
+        
         //Defines the relationship
         parent: "ReportingPerson",
+        
         //Specifies the dataSource
         dataSource: data
     }
@@ -109,130 +101,39 @@ To arrange nodes in a radial tree structure, you need to set the `type` property
 {% highlight js %}
 
 //Initializes data source
-var data = [{
-    Id: "parent",
-    ImageUrl: "images/Clayton.png"
-}, {
-    Id: 1,
-    ImageUrl: "images/image55.png",
-    ReportingPerson: "parent"
-}, {
-    Id: 2,
-    ImageUrl: "images/Robin.PNG",
-    ReportingPerson: "parent"
-}, {
-    Id: 3,
-    ImageUrl: "images/Robin.PNG",
-    ReportingPerson: "parent"
-}, {
-    Id: 4,
-    ImageUrl: "images/Paul.png",
-    ReportingPerson: "parent"
-}, {
-    Id: 5,
-    ImageUrl: "images/image53.png",
-    ReportingPerson: "parent"
-}, {
-    Id: 6,
-    ImageUrl: "images/Maria.png",
-    ReportingPerson: "parent"
-}, {
-    Id: 7,
-    ImageUrl: "images/Jenny.png",
-    ReportingPerson: 3
-}, {
-    Id: 8,
-    ImageUrl: "images/Thomas.PNG",
-    ReportingPerson: "parent"
-}, {
-    Id: 9,
-    ImageUrl: "images/Jenny.png",
-    ReportingPerson: 2
-}, {
-    Id: 10,
-    ImageUrl: "images/Thomas.png",
-    ReportingPerson: 2
-}, {
-    Id: 11,
-    ImageUrl: "images/Maria.PNG",
-    ReportingPerson: 4
-}, {
-    Id: 12,
-    ImageUrl: "images/Thomas.PNG",
-    ReportingPerson: 1
-}, {
-    Id: 13,
-    ImageUrl: "images/Clayton.png",
-    ReportingPerson: 6
-}, {
-    Id: 14,
-    ImageUrl: "images/Jenny.png",
-    ReportingPerson: 3
-}, {
-    Id: 15,
-    ImageUrl: "images/Thomas.png",
-    ReportingPerson: 3
-}, {
-    Id: 16,
-    ImageUrl: "images/John.png",
-    ReportingPerson: 6
-}, {
-    Id: 17,
-    ImageUrl: "images/Jenny.png",
-    ReportingPerson: 4
-}, {
-    Id: 18,
-    ImageUrl: "images/Robin.png",
-    ReportingPerson: 4
-}, {
-    Id: 19,
-    ImageUrl: "images/Clayton.png",
-    ReportingPerson: 4
-}, {
-    Id: 20,
-    ImageUrl: "images/image57.png",
-    ReportingPerson: 12
-}, {
-    Id: 21,
-    ImageUrl: "images/Robin.png",
-    ReportingPerson: 5
-}, {
-    Id: 22,
-    ImageUrl: "images/image51.png",
-    ReportingPerson: 6
-}, {
-    Id: 23,
-    ImageUrl: "images/image55.png",
-    ReportingPerson: 19
-}, {
-    Id: 24,
-    ImageUrl: "images/Thomas.png",
-    ReportingPerson: 8
-}, {
-    Id: 25,
-    ImageUrl: "images/image56.png",
-    ReportingPerson: 8
-}, {
-    Id: 26,
-    ImageUrl: "images/image55.png",
-    ReportingPerson: 1
-}, {
-    Id: 27,
-    ImageUrl: "images/image57.png",
-    ReportingPerson: 13
-}, {
-    Id: 28,
-    ImageUrl: "images/Robin.PNG",
-    ReportingPerson: 12
-}, {
-    Id: 29,
-    ImageUrl: "images/Thomas.PNG",
-    ReportingPerson: 13
-}, {
-    Id: 30,
-    ImageUrl: "images/image57.png",
-    ReportingPerson: 19
-}, ];
+var data = [
+  {Id: "parent",	ImageUrl: "images/Clayton.png"}, 
+  {Id: 1, ImageUrl: "images/image55.png", ReportingPerson: "parent"},
+  {Id: 2, ImageUrl: "images/Robin.PNG", ReportingPerson: "parent"},
+  {Id: 3, ImageUrl: "images/Robin.PNG",	ReportingPerson: "parent"},
+  {Id: 4, ImageUrl: "images/Paul.png", ReportingPerson: "parent"},
+  {Id: 5, ImageUrl: "images/image53.png", ReportingPerson: "parent"},
+  {Id: 6, ImageUrl: "images/Maria.png",	ReportingPerson: "parent"},
+  {Id: 7, ImageUrl: "images/Jenny.png",	ReportingPerson: 3},
+  {Id: 8, ImageUrl: "images/Thomas.PNG", ReportingPerson: "parent"},
+  {Id: 9, ImageUrl: "images/Jenny.png",	ReportingPerson: 2},
+  {Id: 10, ImageUrl: "images/Thomas.png", ReportingPerson: 2},
+  {Id: 11, ImageUrl: "images/Maria.PNG", ReportingPerson: 4},
+  {Id: 12, ImageUrl: "images/Thomas.PNG", ReportingPerson: 1},
+  {Id: 13, ImageUrl: "images/Clayton.png", ReportingPerson: 6},
+  {Id: 14, ImageUrl: "images/Jenny.png",	ReportingPerson: 3},
+  {Id: 15, ImageUrl: "images/Thomas.png", ReportingPerson: 3},
+  {Id: 16, ImageUrl: "images/John.png", ReportingPerson: 6},
+  {Id: 17, ImageUrl: "images/Jenny.png", ReportingPerson: 4},
+  {Id: 18, ImageUrl: "images/Robin.png", ReportingPerson: 4},
+  {Id: 19, ImageUrl: "images/Clayton.png", ReportingPerson: 4},
+  {Id: 20, ImageUrl: "images/image57.png", ReportingPerson: 12},
+  {Id: 21, ImageUrl: "images/Robin.png", ReportingPerson: 5}, 
+  {Id: 22, ImageUrl: "images/image51.png", ReportingPerson: 6},
+  {Id: 23, ImageUrl: "images/image55.png", ReportingPerson: 19}, 
+  {Id: 24, ImageUrl: "images/Thomas.png", ReportingPerson: 8}, 
+  {Id: 25, ImageUrl: "images/image56.png", ReportingPerson: 8}, 
+  {Id: 26, ImageUrl: "images/image55.png", ReportingPerson: 1}, 
+  {Id: 27, ImageUrl: "images/image57.png", ReportingPerson: 13}, 
+  {Id: 28, ImageUrl: "images/Robin.PNG", ReportingPerson: 12}, 
+  {Id: 29, ImageUrl: "images/Thomas.PNG", ReportingPerson: 13}, 
+  {Id: 30, ImageUrl: "images/image57.png",ReportingPerson: 19}
+];
 
 //Binds custom JSON with node
 function nodeTemplate(diagram, node) {
@@ -243,12 +144,14 @@ function nodeTemplate(diagram, node) {
 $("#diagram").ejDiagram({
     width: "100%",
     height: "700px",
+    
     //Uses layout to auto-arrange nodes on the Diagram page          
     layout: {
         type: "radialtree",
         horizontalSpacing: 30,
         verticalSpacing: 30
     },
+    
     //Sets the default properties of the nodes
     defaultSettings: {
         node: {
@@ -258,7 +161,9 @@ $("#diagram").ejDiagram({
             type: "image"
         }
     },
+    
     nodeTemplate: nodeTemplate,
+    
     //Configures data source for Diagram
     dataSourceSettings: {
         id: "Id",
@@ -279,102 +184,32 @@ The following code example illustrates how to create an organizational chart.
 {% highlight js %}
 
 //Initializes data source
-var data = [{
-    Id: "parent",
-    Role: "Project Management"
-}, {
-    Id: 1,
-    Role: "R&D Team",
-    Team: "parent"
-}, {
-    Id: 3,
-    Role: "Philosophy",
-    Team: "1"
-}, {
-    Id: 4,
-    Role: " Organization",
-    Team: "1"
-}, {
-    Id: 5,
-    Role: "Technology",
-    Team: "1"
-}, {
-    Id: 7,
-    Role: " Funding",
-    Team: "1"
-}, {
-    Id: 8,
-    Role: "Resource Allocation",
-    Team: "1"
-}, {
-    Id: 9,
-    Role: "Targeting",
-    Team: "1"
-}, {
-    Id: 11,
-    Role: "Evaluation",
-    Team: "1"
-}, {
-    Id: 156,
-    Role: "HR Team",
-    Team: "parent"
-}, {
-    Id: 13,
-    Role: "Recruitment",
-    Team: "156"
-}, {
-    Id: 113,
-    Role: "Training",
-    Team: "12"
-}, {
-    Id: 112,
-    Role: "Employee Relation",
-    Team: "156"
-}, {
-    Id: 14,
-    Role: "Record Keeping",
-    Team: "12"
-}, {
-    Id: 15,
-    Role: "Compensations & Benefits",
-    Team: "12"
-}, {
-    Id: 16,
-    Role: "Compliances",
-    Team: "12"
-}, {
-    Id: 17,
-    Role: "Production & Sales Team",
-    Team: "parent"
-}, {
-    Id: 119,
-    Role: "Design",
-    Team: "17"
-}, {
-    Id: 19,
-    Role: "Operation",
-    Team: "17"
-}, {
-    Id: 20,
-    Role: "Support",
-    Team: "17"
-}, {
-    Id: 21,
-    Role: "Quality Assurance",
-    Team: "17"
-}, {
-    Id: 23,
-    Role: "Customer Interaction",
-    Team: "17"
-}, {
-    Id: 24,
-    Role: "Support and Maintenance",
-    Team: "17"
-}, {
-    Id: 25,
-    Role: "Task Coordination",
-    Team: "17"
-}];
+var data = [
+  {Id: "parent", Role: "Project Management" },
+  {Id: 1, Role: "R&D Team", Team: "parent"},
+  {Id: 3, Role: "Philosophy", Team: "1"},
+  {Id: 4, Role: " Organization", Team: "1"},
+  {Id: 5, Role: "Technology", Team: "1"},
+  {Id: 7, Role: " Funding", Team: "1"},
+  {Id: 8, Role: "Resource Allocation", Team: "1"},
+  {Id: 9, Role: "Targeting", Team: "1"},
+  {Id: 11, Role: "Evaluation", Team: "1"},
+  {Id: 156, Role: "HR Team", Team: "parent"},
+  {Id: 13, Role: "Recruitment", Team: "156"},
+  {Id: 113, Role: "Training", Team: "12"},
+  {Id: 112, Role: "Employee Relation", Team: "156"},
+  {Id: 14, Role: "Record Keeping", Team: "12"},
+  {Id: 15, Role: "Compensations & Benefits", Team: "12"},
+  {Id: 16, Role: "Compliances", Team: "12"},
+  {Id: 17, Role: "Production & Sales Team", Team: "parent"},
+  {Id: 119, Role: "Design", Team: "17"},
+  {Id: 19, Role: "Operation", Team: "17"},
+  {Id: 20, Role: "Support", Team: "17"},
+  {Id: 21, Role: "Quality Assurance", Team: "17"},
+  {Id: 23, Role: "Customer Interaction", Team: "17"},
+  {Id: 24, Role: "Support and Maintenance", Team: "17"},
+  {Id: 25, Role: "Task Coordination", Team: "17"}
+];
 
 //Binds JSON data with node
 function nodeTemplate(diagram, node) {
@@ -387,6 +222,7 @@ $("#diagram").ejDiagram({
     layout: {
         type: "organizationalchart"
     },
+    
     defaultSettings: {
         //Sets the default properties of the node.
         node: {
@@ -398,6 +234,7 @@ $("#diagram").ejDiagram({
                 fontColor: "white"
             }]
         },
+        
         //Sets the default properties of the connector.    
         connector: {
             segments: [{
@@ -408,7 +245,9 @@ $("#diagram").ejDiagram({
             }
         }
     },
+    
     nodeTemplate: nodeTemplate,
+    
     //Configures data source for Diagram
     dataSourceSettings: {
         id: "Id",
@@ -441,6 +280,7 @@ var  chartTypes = ej.datavisualization.Diagram.ChartTypes;
 //Defines getLayoutInfo
 function getLayoutInfo(diagram, node, options) {
     options.orientation = chartOrientations.Vertical;
+    
     //Configures the sub tree of the node vertically at right-side.
     options.type = chartTypes.Right;
     options.offset = 10;
@@ -560,62 +400,22 @@ The following code example illustrates how to set the vertical right arrangement
 {% highlight js %}
 
 //Initializes data source
-var data = [{
-    Id: "parent",
-    Role: "Board"
-}, {
-    Id: "1",
-    Role: "General Manager",
-    Manager: "parent"
-}, {
-    Id: "2",
-    Role: "Human Resource Manager",
-    Manager: "1"
-}, {
-    Id: "3",
-    Role: "Trainers",
-    Manager: "2"
-}, {
-    Id: "4",
-    Role: "Recruiting Team",
-    Manager: "2"
-}, {
-    Id: "5",
-    Role: "Finance Asst. Manager",
-    Manager: "2"
-}, {
-    Id: "6",
-    Role: "Design Manager",
-    Manager: "1",
-}, {
-    Id: "7",
-    Role: "Design Supervisor",
-    Manager: "6"
-}, {
-    Id: "8",
-    Role: "Development Supervisor",
-    Manager: "6"
-}, {
-    Id: "9",
-    Role: "Drafting Supervisor",
-    Manager: "6"
-}, {
-    Id: "10",
-    Role: "Marketing Manager",
-    Manager: "1",
-}, {
-    Id: "11",
-    Role: "Oversea sales Manager",
-    Manager: "10"
-}, {
-    Id: "12",
-    Role: "Petroleum Manager",
-    Manager: "10"
-}, {
-    Id: "13",
-    Role: "Service Dept. Manager",
-    Manager: "10"
-}, ];
+var data = [
+  { Id: "parent", Role: "Board" },
+  { Id: "1", Role: "General Manager", Manager: "parent" },
+  { Id: "2", Role: "Human Resource Manager", Manager: "1" },
+  { Id: "3", Role: "Trainers", Manager: "2" },
+  { Id: "4", Role: "Recruiting Team", Manager: "2" },
+  { Id: "5", Role: "Finance Asst. Manager", Manager: "2" },
+  { Id: "6", Role: "Design Manager", Manager: "1" },
+  { Id: "7", Role: "Design Supervisor", Manager: "6" },
+  { Id: "8", Role: "Development Supervisor", Manager: "6" },
+  { Id: "9", Role: "Drafting Supervisor", Manager: "6" },
+  { Id: "10", Role: "Marketing Manager", Manager: "1" },
+  { Id: "11", Role: "Oversea sales Manager", Manager: "10" },
+  { Id: "12", Role: "Petroleum Manager", Manager: "10" },
+  { Id: "13", Role: "Service Dept. Manager", Manager: "10" }, 
+];
 
 var  chartOrientations = ej.datavisualization.Diagram.ChartOrientations;
 var  chartTypes = ej.datavisualization.Diagram.ChartTypes;
@@ -681,30 +481,14 @@ The following code example illustrates how to add assistants to layout.
 {% highlight js %}
 
 //Initializes data source
-var data = [{
-    Id: 1,
-    Role: "General Manager"
-}, {
-    Id: 2,
-    Role: "Assistant Manager",
-    Team: 1
-}, {
-    Id: 3,
-    Role: "Human Resource Manager",
-    Team: 1
-}, {
-    Id: 4,
-    Role: "Design Manager",
-    Team: 1
-}, {
-    Id: 5,
-    Role: "Operation Manager",
-    Team: 1
-}, {
-    Id: 6,
-    Role: "Marketing Manager",
-    Team: 1
-}, ];
+var data = [
+  { Id: 1, Role: "General Manager" },
+  { Id: 2, Role: "Assistant Manager", Team: 1 },
+  { Id: 3, Role: "Human Resource Manager", Team: 1 },
+  { Id: 4, Role: "Design Manager", Team: 1 },
+  { Id: 5, Role: "Operation Manager", Team: 1 },
+  { Id: 6, Role: "Marketing Manager", Team: 1 }
+];
 
 //Creates the node template
 function nodeTemplate(diagram, node) {
@@ -780,10 +564,13 @@ $("#diagram").ejDiagram({
     layout: {
         //Sets the type of the layout
         type: type.HierarchicalTree,
+        
         //Sets the orientation
         orientation: orientation.BottomToTop,
+        
         //Sets the space to be horizontally left between nodes
         horizontalSpacing: 20,
+        
         //Sets the space to be vertically left between nodes
         verticalSpacing: 20
     },
@@ -814,21 +601,22 @@ This is helpful when you try to expand/collapse a node. It might be expected tha
 
 //Initializes data source
 var data = [{
-    name: "parent",
-    Role: "General Manager",
-    offsetX: 250, offsetY: 50
+	name: "parent",
+	Role: "General Manager",
+	offsetX: 250,
+	offsetY: 50
 }, {
-    name: "1",
-    Role: "Human Resource Manager",
-    Manager: "parent"
+	name: "1",
+	Role: "Human Resource Manager",
+	Manager: "parent"
 }, {
-    name: "2",
-    Role: "Design Manager",
-    Manager: "parent",
+	name: "2",
+	Role: "Design Manager",
+	Manager: "parent",
 }, {
-    name: "3",
-    Role: "Marketing Manager",
-    Manager: "parent",
+	name: "3",
+	Role: "Marketing Manager",
+	Manager: "parent",
 }];
 
 //Creates the node template
@@ -849,11 +637,14 @@ $("#DiagramContent").ejDiagram({
         type: "organizationalchart", fixedNode: "parent",
         getLayoutInfo: getLayoutInfo
     },
+    
     defaultSettings: {
         //Sets the default properties of the node.
         //Sets the default properties of the connector.    
     },
+    
     nodeTemplate: nodeTemplate,
+    
     //Configures data source for diagram
     dataSourceSettings: {
         //Specifies the dataSource
@@ -876,6 +667,7 @@ $("#diagram").ejDiagram({
     layout: {
         type: "organizationalchart", fixedNode: "node1"
     },
+    
     //Defines double click event
     doubleClick: onDoubleClick
 });

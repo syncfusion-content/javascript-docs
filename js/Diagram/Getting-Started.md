@@ -59,36 +59,38 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 Create node: Let us create and add a node (JSON data) with specific position, size, label and shape.
 
 {% highlight js %}
+// a node is created and stored in variable nodes.
+var nodes = [{
+  
+  // Unique name for the node
+  name: "Start",
+  
+  // Position of the node
+  offsetX: 300,
+  offsetY: 50,
+  
+  // Size of the node
+  width: 140,
+  height: 50,
+  
+  // Text(label) added to the node
+  labels: [{
+    text: "Start"
+  }],
+  
+  // Shape for the node
+  type: "flow",
+  shape: "terminator"
+  
+}];
 
-        // a node is created and stored in variable nodes.
-        var nodes =
-        [{
-            // Unique name for the node
-            name: "Start",
-
-            // Position of the node
-            offsetX: 300,
-            offsetY: 50,
-
-            // Size of the node
-            width: 140,
-            height: 50,
-
-            // Text(label) added to the node
-            labels: [{ text: "Start" }],
-
-            // Shape for the node
-            type: "flow",
-            shape: "terminator"
-        }];
-
-        $("#diagram").ejDiagram({
-            width: "100%",
-            height: "600px",
-
-            // Add node
-            nodes: nodes,
-        });
+$("#diagram").ejDiagram({
+  width: "100%",
+  height: "600px",
+  
+  // Add node
+  nodes: nodes,
+});
 
 {% endhighlight %}
 
@@ -104,11 +106,17 @@ Added node will be displayed in diagram as shown below.
 
 {% highlight js %}
 
-    var nodes =
-                [
-                    { name: "Start", offsetX: 300, width: 140, height: 50, offsetY: 50, labels: [{ text: "Start" }], type: "flow", shape: "terminator" },
-                    { name: "Init", offsetX: 300, width: 140, height: 50, offsetY: 140, labels: [{ text: "var i = 0;" }], type: "flow", shape: "process" },
-                ];
+var nodes =
+[
+    {
+        name: "Start", offsetX: 300, width: 140, height: 50, offsetY: 50, 
+        labels: [{ text: "Start" }], type: "flow", shape: "terminator" 
+    },
+    {
+        name: "Init", offsetX: 300, width: 140, height: 50, offsetY: 140, 
+        labels: [{ text: "var i = 0;" }], type: "flow", shape: "process" 
+    },
+];
 
 {% endhighlight %}
 
@@ -144,28 +152,46 @@ Added node will be displayed in diagram as shown below.
 * Common values for all nodes and connectors can be set using default settings. For example if all nodes have same width and height, we can move such properties into defaultSettings. Above code can be rewritten as shown below.
 
 {% highlight js %}
-        var nodes =
-                    [
-                        { name: "Start", offsetY: 50, labels: [{ text: "Start" }], type: "flow", shape: "terminator" },
-                        { name: "Init", offsetY: 140, labels: [{ text: "var i = 0;" }], type: "flow", shape: "process" }
-                    ];
 
-        var connectors = [
-                { name: "connector1", sourceNode: "Start", targetNode: "Init" }
-        ];
+var nodes = [{
+  name: "Start",
+  offsetY: 50,
+  labels: [{ text: "Start" }],
+  type: "flow",
+  shape: "terminator"
+}, {
+  name: "Init",
+  offsetY: 140,
+  labels: [{ text: "var i = 0;" }],
+  type: "flow",
+  shape: "process"
+}];
 
-        $("#diagram").ejDiagram({
-            width: "100%",
-            height: "600px",
-            nodes: nodes,
-            connectors: connectors,
+var connectors = [{
+  name: "connector1",
+  sourceNode: "Start",
+  targetNode: "Init"
+}];
 
-            // Common values of all nodes and connectors define using defaultSettings
-            defaultSettings: {
-                node: { offsetX: 300, width: 140, height: 50 },
-                connector: { labels: [{ "fillColor": "white" }], segments: [{ type: "orthogonal" }] },
-            }
-        });
+$("#diagram").ejDiagram({
+  width: "100%",
+  height: "600px",
+  nodes: nodes,
+  connectors: connectors,
+
+  // Common values of all nodes and connectors define using defaultSettings
+  defaultSettings: {
+    node: {
+      offsetX: 300,
+      width: 140,
+      height: 50
+    },
+    connector: {
+      labels: [{ "fillColor": "white" }],
+      segments: [{ type: "orthogonal" }]
+    },
+  }
+});
  
  {% endhighlight %}
  
@@ -176,40 +202,41 @@ Similarly we can add more nodes and connectors to form a complete flow diagram.
 {% highlight js %}
 
 var nodes =
-             [
-                 { name: "Start", offsetY: 50, labels: [{ text: "Start" }], shape: "terminator" },
-                 { name: "Init", offsetY: 140, labels: [{ text: "var i = 0;" }], shape: "process" },
-                 { name: "Condition", offsetY: 230, labels: [{ text: "i < 10?" }], shape: "decision" },
-                 { name: "Print", offsetY: 320, labels: [{ text: "print(\"Hello!!\");" }], shape: "predefinedprocess" },
-                 { name: "Increment", offsetY: 410, labels: [{ text: "i++;" }], shape: "process" },
-                 { name: "End", offsetY: 500, labels: [{ text: "End" }], shape: "terminator" },
-             ];
+[
+    { name: "Start", offsetY: 50, labels: [{ text: "Start" }], shape: "terminator" },
+    { name: "Init", offsetY: 140, labels: [{ text: "var i = 0;" }], shape: "process" },
+    { name: "Condition", offsetY: 230, labels: [{ text: "i < 10?" }], shape: "decision" },
+    { name: "Print", offsetY: 320, labels: [{ text: "print(\"Hello!!\");" }], shape: "predefinedprocess" },
+    { name: "Increment", offsetY: 410, labels: [{ text: "i++;" }], shape: "process" },
+    { name: "End", offsetY: 500, labels: [{ text: "End" }], shape: "terminator" },
+];
+
 var connectors = [
+    { name: "connector1", sourceNode: "Start", targetNode: "Init" },
+    { name: "connector2", sourceNode: "Init", targetNode: "Condition" },
+    { name: "connector3", sourceNode: "Condition", targetNode: "Print", labels: [{ text: "Yes" }] },
+    { name: "connector4", sourceNode: "Condition", targetNode: "End", labels: [{ text: "No" }],
+        segments: [{ length: 30, direction: "right" }]
+    },
+    { name: "connector5", sourceNode: "Print", targetNode: "Increment" },
+    { name: "connector6", sourceNode: "Increment", targetNode: "Condition",
+        segments: [{ length: 30, direction: "left" }]
+    }
+];
 
-                { name: "connector1", sourceNode: "Start", targetNode: "Init" },
-                { name: "connector2", sourceNode: "Init", targetNode: "Condition" },
-                { name: "connector3", sourceNode: "Condition", targetNode: "Print", labels: [{ text: "Yes" }] },
-                {
-                    name: "connector4", sourceNode: "Condition", targetNode: "End", labels: [{ text: "No" }],
-                    segments: [{ length: 30, direction: "right" }]
-                },
-                { name: "connector5", sourceNode: "Print", targetNode: "Increment" },
-                {
-                    name: "connector6", sourceNode: "Increment", targetNode: "Condition",
-                    segments: [{ length: 30, direction: "left" }]
-                }
-        ];
-
-        $("#diagram").ejDiagram({
-            width: "100%",
-            height: "600px",
-            nodes: nodes,
-            connectors: connectors,
-            defaultSettings: {
-                node: { offsetX: 300, width: 140, height: 50, type: "flow" },
-                connector: { labels: [{ "fillColor": "white" }], segments: [{ type: "orthogonal" }] },
-            }
-        });
+$("#diagram").ejDiagram({
+    width: "100%",
+    height: "600px",
+    nodes: nodes,
+    connectors: connectors,
+    defaultSettings: {
+        node: { offsetX: 300, width: 140, height: 50, type: "flow" },
+        connector: { 
+            labels: [{ "fillColor": "white" }], 
+            segments: [{ type: "orthogonal" }] 
+        }
+    }
+});
 
 {% endhighlight %}
 
@@ -230,16 +257,16 @@ Final flow chart will looks as shown below.
 
 {% highlight js %}
 
-        //Initialize data source...
-        var data = [
-            { Name: "Elizabeth", Role: "Director" },
-            { Name: "Christina", ReportingPerson: "Elizabeth", Role: "Manager" },
-            { Name: "Yoshi", ReportingPerson: "Christina", Role: "Lead" },
-            { Name: "Philip", ReportingPerson: "Christina", Role: "Lead" },
-            { Name: "Yang", ReportingPerson: "Elizabeth", Role: "Manager" },
-            { Name: "Roland", ReportingPerson: "Yang", Role: "Lead" },
-            { Name: "Yvonne", ReportingPerson: "Yang", Role: "Lead" }
-        ];
+//Initialize data source...
+var data = [
+    { Name: "Elizabeth", Role: "Director" },
+    { Name: "Christina", ReportingPerson: "Elizabeth", Role: "Manager" },
+    { Name: "Yoshi", ReportingPerson: "Christina", Role: "Lead" },
+    { Name: "Philip", ReportingPerson: "Christina", Role: "Lead" },
+    { Name: "Yang", ReportingPerson: "Elizabeth", Role: "Manager" },
+    { Name: "Roland", ReportingPerson: "Yang", Role: "Lead" },
+    { Name: "Yvonne", ReportingPerson: "Yang", Role: "Lead" }
+];
 
 {% endhighlight %}
 
