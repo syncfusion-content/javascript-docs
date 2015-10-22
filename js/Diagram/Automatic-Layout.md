@@ -26,10 +26,10 @@ To arrange the nodes in hierarchical structure, you need to specify the layout `
 //Initializes data source
 var data = [
     {Name: "Steve-Ceo"},
-    {Name: "Kevin-Manager",	ReportingPerson: "Steve-Ceo"},
-    {Name: "Peter-Manager",	ReportingPerson: "Steve-Ceo"},
-    {Name: "John- Manager",	ReportingPerson: "Peter-Manager"},
-    {Name: "Mary-CSE ",	ReportingPerson: "Peter-Manager"},
+    {Name: "Kevin-Manager", ReportingPerson: "Steve-Ceo"},
+    {Name: "Peter-Manager", ReportingPerson: "Steve-Ceo"},
+    {Name: "John- Manager", ReportingPerson: "Peter-Manager"},
+    {Name: "Mary-CSE ", ReportingPerson: "Peter-Manager"},
     {Name: "Jim-CSE ", ReportingPerson: "Kevin-Manager"},
     {Name: "Martin-CSE", ReportingPerson: "Kevin-Manager"}
 ];
@@ -102,21 +102,21 @@ To arrange nodes in a radial tree structure, you need to set the `type` property
 
 //Initializes data source
 var data = [
-  {Id: "parent",	ImageUrl: "images/Clayton.png"}, 
+  {Id: "parent", ImageUrl: "images/Clayton.png"}, 
   {Id: 1, ImageUrl: "images/image55.png", ReportingPerson: "parent"},
   {Id: 2, ImageUrl: "images/Robin.PNG", ReportingPerson: "parent"},
-  {Id: 3, ImageUrl: "images/Robin.PNG",	ReportingPerson: "parent"},
+  {Id: 3, ImageUrl: "images/Robin.PNG", ReportingPerson: "parent"},
   {Id: 4, ImageUrl: "images/Paul.png", ReportingPerson: "parent"},
   {Id: 5, ImageUrl: "images/image53.png", ReportingPerson: "parent"},
-  {Id: 6, ImageUrl: "images/Maria.png",	ReportingPerson: "parent"},
-  {Id: 7, ImageUrl: "images/Jenny.png",	ReportingPerson: 3},
+  {Id: 6, ImageUrl: "images/Maria.png", ReportingPerson: "parent"},
+  {Id: 7, ImageUrl: "images/Jenny.png", ReportingPerson: 3},
   {Id: 8, ImageUrl: "images/Thomas.PNG", ReportingPerson: "parent"},
-  {Id: 9, ImageUrl: "images/Jenny.png",	ReportingPerson: 2},
+  {Id: 9, ImageUrl: "images/Jenny.png", ReportingPerson: 2},
   {Id: 10, ImageUrl: "images/Thomas.png", ReportingPerson: 2},
   {Id: 11, ImageUrl: "images/Maria.PNG", ReportingPerson: 4},
   {Id: 12, ImageUrl: "images/Thomas.PNG", ReportingPerson: 1},
   {Id: 13, ImageUrl: "images/Clayton.png", ReportingPerson: 6},
-  {Id: 14, ImageUrl: "images/Jenny.png",	ReportingPerson: 3},
+  {Id: 14, ImageUrl: "images/Jenny.png", ReportingPerson: 3},
   {Id: 15, ImageUrl: "images/Thomas.png", ReportingPerson: 3},
   {Id: 16, ImageUrl: "images/John.png", ReportingPerson: 6},
   {Id: 17, ImageUrl: "images/Jenny.png", ReportingPerson: 4},
@@ -185,12 +185,12 @@ The following code example illustrates how to create an organizational chart.
 
 //Initializes data source
 var data = [
-  {Id: "parent", Role: "Project Management" },
+  {Id: "parent", Role: "Project Management"},
   {Id: 1, Role: "R&D Team", Team: "parent"},
   {Id: 3, Role: "Philosophy", Team: "1"},
-  {Id: 4, Role: " Organization", Team: "1"},
+  {Id: 4, Role: "Organization", Team: "1"},
   {Id: 5, Role: "Technology", Team: "1"},
-  {Id: 7, Role: " Funding", Team: "1"},
+  {Id: 7, Role: "Funding", Team: "1"},
   {Id: 8, Role: "Resource Allocation", Team: "1"},
   {Id: 9, Role: "Targeting", Team: "1"},
   {Id: 11, Role: "Evaluation", Team: "1"},

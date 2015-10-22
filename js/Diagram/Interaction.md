@@ -234,7 +234,7 @@ var CloneTool = (function (base) {
     return CloneTool;
 })(ej.datavisualization.Diagram.ToolBase);
 
-    var userHandles = [];	
+    var userHandles = []; 
 
     //Initializes the handles
     var cloneHandle = ej.datavisualization.Diagram.UserHandle();
@@ -306,87 +306,22 @@ Diagram provides support to interact with the elements with key gestures. By def
 
 The following table illustrates those commands with the associated key values.
 
-<table>
-<tr>
-<th>
-Shortcut Key</th><th>
-Command</th><th>
-Description</th></tr>
-<tr>
-<td>
-Ctrl + A</td><td>
-selectAll</td><td>
-Select all nodes/connectors in diagram</td></tr>
-<tr>
-<td>
-Ctrl + C</td><td>
-copy</td><td>
-Copy the diagram selected elements</td></tr>
-<tr>
-<td>
-Ctrl + V</td><td>
-paste</td><td>
-Paste the copied elements</td></tr>
-<tr>
-<td>
-Ctrl + X</td><td>
-cut</td><td>
-Cut the selected elements</td></tr>
-<tr>
-<td>
-Ctrl + Z</td><td>
-undo</td><td>
-Undo(Reverse the last editing action performed on diagram)</td></tr>
-<tr>
-<td>
-Ctrl + Y</td><td>
-redo</td><td>
-Redo(Restores the last editing action when no other actions have occurred since the last undo on diagram)</td></tr>
-<tr>
-<td>
-Delete</td><td>
-delete</td><td>
-Delete the selected elements </td></tr>
-<tr>
-<td>
-Ctrl /Shift+ Click on object</td><td>
- </td><td>
-Multiple selection(Selector binds all selected nodes/connectors)</td></tr>
-<tr>
-<td>
-Up Arrow</td><td>
-nudge("up")</td><td>
-nudgeUp(move the selected elements towards up by one pixel)</td></tr>
-<tr>
-<td>
-Down Arrow</td><td>
-nudge("down")</td><td>
-nudgeDown(move the selected elements towards down by one pixel)</td></tr>
-<tr>
-<td>
-Left Arrow</td><td>
-nudge("left")</td><td>
-nudgeLeft(move the selected elements towards left by one pixel)</td></tr>
-<tr>
-<td>
-Right Arrow</td><td>
-nudge("right")</td><td>
-nudgeRight(move the selected elements towards right by one pixel)</td></tr>
-<tr>
-<td>
-Ctrl+MouseScroll</td><td>
-zoom</td><td>
-Zoom(Zoom in/Zoom out the diagram)</td></tr>
-<tr>
-<td>
-F2</td><td>
-startLabelEditing</td><td>
-Starts to edit the label of selected element</td></tr>
-<tr>
-<td>
-Esc</td><td>
-endLabelEditing</td><td>
-Sets the label mode as View and stops editing.</td></tr>
-</table>
+| Shortcut Key | Command | Description |
+|---|---|---|
+| Ctrl + A | selectAll | Select all nodes/connectors in diagram |
+| Ctrl + C | copy | Copy the diagram selected elements |
+| Ctrl + V | paste | Paste the copied elements |
+| Ctrl + X | cut | Cut the selected elements |
+| Ctrl + Z | undo | Undo(Reverse the last editing action performed on diagram) |
+| Ctrl + Y | redo | Redo(Restores the last editing action when no other actions have occurred since the last undo on diagram) |
+| Delete | delete | Delete the selected elements |
+| Ctrl /Shift+ Click on object |  | Multiple selection(Selector binds all selected nodes/connectors) |
+| Up Arrow | nudge("up") | nudgeUp(move the selected elements towards up by one pixel) |
+| Down Arrow | nudge("down") | nudgeDown(move the selected elements towards down by one pixel) |
+| Left Arrow | nudge("left") | nudgeLeft(move the selected elements towards left by one pixel) |
+| Right Arrow | nudge("right") | nudgeRight(move the selected elements towards right by one pixel) |
+| Ctrl+MouseScroll | zoom | Zoom(Zoom in/Zoom out the diagram) |
+| F2 | startLabelEditing | Starts to edit the label of selected element |
+| Esc | endLabelEditing | Sets the label mode as View and stops editing. |
 
 To add custom commands, configure or modify key/mouse gesture through [Command Manager](/js/Diagram/command-manager). 
