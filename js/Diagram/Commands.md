@@ -11,42 +11,33 @@ documentation: ug
 
 There are several commands available in the Diagram as follows.
 
-  * Alignment commands
-  * Spacing commands
-  * Sizing commands
-  * Clipboard commands
-  * Grouping commands
-  * Z-order commands
-  * Zoom commands
-  * Nudge commands
-  * FitToPage commands
-  * Undo/Redo commands
+* Alignment commands
+* Spacing commands
+* Sizing commands
+* Clipboard commands
+* Grouping commands
+* Z-order commands
+* Zoom commands
+* Nudge commands
+* FitToPage commands
+* Undo/Redo commands
 
 ## Align
 
 Alignment commands enable you to align the selected objects such as nodes and connectors with respect to the selection boundary.
 
-<table>
-<tr>
-<th>
-Command</th><th>
-Parameter</th><th>
-Description</th></tr>
-<tr>
-<td>
-align</td><td>
-<b>direction</b> (string)</td><td>
-Align all the nodes/connectors in the selection list with respect to specified direction of the selection boundary.</td></tr>
-</table>
+| Command | Parameter | Description |
+|---|---|---|
+| align | direction (string) | Align all the nodes/connectors in the selection list with respect to specified direction of the selection boundary. |
 
 The accepted values of the argument "direction" are as follows.
     
-  * "left" - Align all the selected objects at the left of the selection boundary.
-  * "right" - Align all the selected objects at the right of the selection boundary.
-  * "center" - Align all the selected objects at the center of the selection boundary.
-  * "top" - Align all the selected objects at the top of the selection boundary.
-  * "bottom" - Align all the selected objects at the bottom of the selection boundary.
-  * "middle" - Align all the selected objects at the middle of the selection boundary.
+* "left" - Align all the selected objects at the left of the selection boundary.
+* "right" - Align all the selected objects at the right of the selection boundary.
+* "center" - Align all the selected objects at the center of the selection boundary.
+* "top" - Align all the selected objects at the top of the selection boundary.
+* "bottom" - Align all the selected objects at the bottom of the selection boundary.
+* "middle" - Align all the selected objects at the middle of the selection boundary.
 
 
 The following code example illustrates how to align all the selected objects at the left side of selection boundary.
@@ -128,7 +119,7 @@ diagram.paste();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img6.png"%}
+![]("/js/Diagram/Commands_images/Commands_img6.png")
 
 ## Grouping 
 
@@ -234,25 +225,17 @@ function Zoom() {
 
 **nudge** commands move the selected elements towards up, down, left or right by 1 pixel.
 
-<table>
-<tr>
-<th>Command</th><th>
-Parameter</th><th>
-Description</th></tr>
-<tr>
-<td>
-nudge </td><td>
-direction (string),
-delta(integer) </td><td>
-Nudge command moves the selected elements towards the specified direction by the number of pixels specified by the parameter delta. When delta is not specified, it is considered as 1 pixel, by default. </td></tr>
-</table>
+| Command | Parameter | Description |
+|---|---|---|
+| nudge | direction (string),
+delta(integer) | Nudge command moves the selected elements towards the specified direction by the number of pixels specified by the parameter delta. When delta is not specified, it is considered as 1 pixel, by default. |
 
 The accepted values of the argument "direction" are as follows.
 
-  * "up" - moves the selected elements towards up by the the specified delta value.
-  * "down" - moves the selected elements towards down by the specified delta value.
-  * "left" - moves the selected elements towards left by the specified delta value.
-  * "right" - moves the selected elements towards right by the specified delta value.
+* "up" - moves the selected elements towards up by the the specified delta value.
+* "down" - moves the selected elements towards down by the specified delta value.
+* "left" - moves the selected elements towards left by the specified delta value.
+* "right" - moves the selected elements towards right by the specified delta value.
 
 The following code illustrates how to execute Nudge command.
 

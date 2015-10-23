@@ -11,13 +11,13 @@ documentation: ug
 
 Diagram provides support to add different kind of nodes. They are as follows.
   
-  * Text Node
-  * Image Node
-  * Html Node
-  * Native Node
-  * Basic Shapes
-  * Flow Shapes
-  * BPMN Shapes
+* Text Node
+* Image Node
+* Html Node
+* Native Node
+* Basic Shapes
+* Flow Shapes
+* BPMN Shapes
  
 ## Text
 
@@ -186,9 +186,10 @@ $("#diagram").ejDiagram({
 ![](/js/Diagram/Shapes_images/Shapes_img1.png)
 
 N> By default, the `type` property of node is set as "basic".
+
 N> When the `shape` is not set for a basic shape, it is considered a "rectangle".
 
-### Path
+## Path
 
 Path node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, You need to specify the `type` as "basic" and the `shape` as "path. The `pathData` property of node allows you to define the path to be drawn. The following code illustrates how a Path node is created.
 
@@ -293,36 +294,14 @@ N> The default value for the property `shape` is "event".
 
 The list of BPMN shapes are as follows.
 
-<table>
-<tr>
-<th>
-Shape</th><th>
-Image</th></tr>
-<tr>
-<td>
-Event</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img6" alt="" width="85pt" height="90pt"/></td></tr>
-<tr>
-<td>
-Gateway</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img7" alt="" width="85pt" height="90pt" /></td></tr>
-<tr>
-<td>
-Task</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img8" alt="" width="92pt" height="90pt" /></td></tr>
-<tr>
-<td>
-Message</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img9" alt="" width="90pt" height="70pt" /></td></tr>
-<tr>
-<td>
-DataSource</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img10" alt="" width="86pt" height="86pt" /></td></tr>
-<tr>
-<td>
-DataObject</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img11" alt="" width="92pt" height="87pt" /></td></tr>
-</table>
+| Shape | Image |
+|---|---|
+| Event | ![](/js/Diagram/Shapes_images/Shapes_img6.png) |
+| Gateway | ![](/js/Diagram/Shapes_images/Shapes_img7.png) |
+| Task | ![](/js/Diagram/Shapes_images/Shapes_img8.png) |
+| Message | ![](/js/Diagram/Shapes_images/Shapes_img9.png) |
+| DataSource | ![](/js/Diagram/Shapes_images/Shapes_img10.png) |
+| DataObject | ![](/js/Diagram/Shapes_images/Shapes_img11.png) |
 
 The BPMN shapes and its types are explained as follows.
 
@@ -330,9 +309,9 @@ The BPMN shapes and its types are explained as follows.
 
 An event is notated with a circle and it represents an event in a business process. The type of events are as follows.
 
-  * Start
-  * End
-  * Intermediate
+* Start
+* End
+* Intermediate
 
 The `event` property of the node allows you to define the type of the event. The default value of the `event` is "start". The following code example illustrates how to create a BPMN Event.
 
@@ -367,75 +346,27 @@ $("#diagram").ejDiagram({
 
 ![](/js/Diagram/Shapes_images/Shapes_img12.png)
 
-<table>
-<tr>
-<th>
-Event</th><th>
-Image</th></tr>
-<tr>
-<td>
-Start</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img13" alt="" width="80pt" height="78pt" /></td></tr>
-<tr>
-<td>
-NonInterruptingStart</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img14" alt="" width="85pt" height="85pt" /></td></tr>
-<tr>
-<td>
-Intermediate</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img15" alt="" width="81pt" height="78pt" /></td></tr>
-<tr>
-<td>
-NonInterruptingIntermediate</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img16" alt="" width="85pt" height="84pt" /></td></tr>
-<tr>
-<td>
-End</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img17" alt="" width="80pt" height="80pt" /></td></tr>
-</table>
+| Event | Image |
+|---|---|
+| Start | ![](/js/Diagram/Shapes_images/Shapes_img13.png) |
+| NonInterruptingStart | ![](/js/Diagram/Shapes_images/Shapes_img14.png) |
+| Intermediate | ![](/js/Diagram/Shapes_images/Shapes_img15.png) |
+| NonInterruptingIntermediate | ![](/js/Diagram/Shapes_images/Shapes_img16.png) |
+| End | ![](/js/Diagram/Shapes_images/Shapes_img17.png) |
 
 Event triggers are notated as icons inside the circle and they represent the specific details of the process. The `triggers` property of node allows you to set the type of trigger and by default, it is set as "none". The following table illustrates the type of event triggers.
 
-<table>
-<tr>
-<th>Triggers</th><th>Image</th></tr>
-<tr>
-<td>
-Message</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img18" alt="" width="84pt" height="85pt" /></td></tr>
-<tr>
-<td>
-Compensation</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img19" alt="" width="84pt" height="82pt" /></td></tr>
-<tr>
-<td>
-Error</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img20" alt="" width="82pt" height="85pt" /></td></tr>
-<tr>
-<td>
-Escalation</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img21" alt="" width="87pt" height="86pt" /></td></tr>
-<tr>
-<td>
-Link</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img22" alt="" width="85pt" height="81pt" /></td></tr>
-<tr>
-<td>
-Multiple</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img23" alt="" width="84pt" height="84pt" /></td></tr>
-<tr>
-<td>
-Parallel</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img24" alt="" width="83pt" height="83pt" /></td></tr>
-<tr>
-<td>
-Signal</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img25" alt="" width="87pt" height="84pt" /></td></tr>
-<tr>
-<td>
-Timer</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img26" alt="" width="83pt" height="80pt" /></td></tr>
-</table>
+| Triggers | Image |
+|---|---|
+| Message | ![](/js/Diagram/Shapes_images/Shapes_img18.png) |
+| Compensation | ![](/js/Diagram/Shapes_images/Shapes_img19.png) |
+| Error | ![](/js/Diagram/Shapes_images/Shapes_img20.png) |
+| Escalation | ![](/js/Diagram/Shapes_images/Shapes_img21.png) |
+| Link | ![](/js/Diagram/Shapes_images/Shapes_img22.png) |
+| Multiple | ![](/js/Diagram/Shapes_images/Shapes_img23.png) |
+| Parallel | ![](/js/Diagram/Shapes_images/Shapes_img24.png) |
+| Signal | ![](/js/Diagram/Shapes_images/Shapes_img25.png) |
+| Timer | ![](/js/Diagram/Shapes_images/Shapes_img26.png) |
 
 ### Gateway     
 
@@ -473,30 +404,13 @@ N> By default, the `gateway` will be set as "none".
 
 There are several types of gateways as tabulated
 
-<table>
-<tr>
-<th>Gateways</th><th>Image</th></tr>
-<tr>
-<td>
-Complex</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img28.png" alt="" width="82pt" height="84pt" /></td></tr>
-<tr>
-<td>
-EventBased</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img29.png" alt="" width="83pt" height="83pt" /></td></tr>
-<tr>
-<td>
-Exclusive</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img30.png" alt="" width="86pt" height="83pt" /></td></tr>
-<tr>
-<td>
-Inclusive</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img31.png" alt="" width="86pt" height="85pt" /></td></tr>
-<tr>
-<td>
-Parallel</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img32.png" alt="" width="84pt" height="84pt" /></td></tr>
-</table>
+| Gateways | Image |
+|---|---|
+| Complex | ![](/js/Diagram/Shapes_images/Shapes_img28.png) |
+| EventBased | ![](/js/Diagram/Shapes_images/Shapes_img29.png) |
+| Exclusive | ![](/js/Diagram/Shapes_images/Shapes_img30.png) |
+| Inclusive | ![](/js/Diagram/Shapes_images/Shapes_img31.png) |
+| Parallel | ![](/js/Diagram/Shapes_images/Shapes_img32.png) |
 
 ### Activity
 
@@ -504,9 +418,8 @@ The activity is the task that is performed in a business process. It is represen
 
 There are two types of activities .They are listed as follows.
 
-  * Task – Occurs within a process and it is not broken down to finer level of detail.
-
-  * Subprocess – Occurs within a process and it is broken down to finer level of detail.
+* Task – Occurs within a process and it is not broken down to finer level of detail.
+* Subprocess – Occurs within a process and it is broken down to finer level of detail.
 
 To create a BPMN activity, you need to set the `shape` as "activity". You also need to set the type of the [activity](/js/api/global "BPMNActivity") by using the `activity` property of node. By default, the type of the `activity` is set as "task". The following code example illustrates how to create an activity.
 
@@ -578,42 +491,16 @@ $("#diagram").ejDiagram({
 
 The various types of BPMN tasks are tabulated as follows.
 
-<table>
-<tr>
-<th>Task Type</th><th>Image</th></tr>
-<tr>
-<td>
-Service</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img35.png" alt="" width="120pt" height="121pt" /></td></tr>
-<tr>
-<td>
-Send</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img36.png" alt="" width="120pt" height="121pt" /></td></tr>
-<tr>
-<td>
-Receive</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img37.png" alt="" width="120pt" height="123pt" /></td></tr>
-<tr>
-<td>
-Instantiating Receive</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img38.png" alt="" width="130pt" height="125pt" /></td></tr>
-<tr>
-<td>
-Manual</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img39.png" alt="" width="120pt" height="122pt" /></td></tr>
-<tr>
-<td>
-Business Rule</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img40.png" alt="" width="120pt" height="121pt" /></td></tr>
-<tr>
-<td>
-User</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img41.png" alt="" width="120pt" height="121pt" /></td></tr>
-<tr>
-<td>
-Script</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img42.png" alt="" width="120pt" height="120pt" /></td></tr>
-</table>
+| Task Type | Image |
+|---|---|
+| Service | ![](/js/Diagram/Shapes_images/Shapes_img35.png) |
+| Send | ![](/js/Diagram/Shapes_images/Shapes_img36.png) |
+| Receive | ![](/js/Diagram/Shapes_images/Shapes_img37.png) |
+| Instantiating Receive | ![](/js/Diagram/Shapes_images/Shapes_img38.png) |
+| Manual | ![](/js/Diagram/Shapes_images/Shapes_img39.png) |
+| Business Rule | ![](/js/Diagram/Shapes_images/Shapes_img40.png) |
+| User | ![](/js/Diagram/Shapes_images/Shapes_img41.png) |
+| Script | ![](/js/Diagram/Shapes_images/Shapes_img42.png) |
 
 #### Loop
 
@@ -668,28 +555,11 @@ diagram.add(node);
 
 The following table contains various types of BPMN loops.
 
-<table>
-<tr>
-<th>
-Loops</th><th>
-Task</th><th>
-SubProcess</th></tr>
-<tr>
-<td>
-Standard</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img44.png" alt="" width="122pt" height="125pt" /></td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img45.png" alt="" width="123pt" height="126pt" /></td></tr>
-<tr>
-<td>
-SequenceMultiInstance</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img46.png" alt="" width="123pt" height="121pt" /></td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img47.png" alt="" width="122pt" height="121pt" /></td></tr>
-<tr>
-<td>
-ParallelMultiInstance</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img48.png" alt="" width="121pt" height="121pt" /></td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img49.png" alt="" width="119pt" height="117pt" /></td></tr>
-</table>
+| Loops | Task | SubProcess |
+|---|---|---|
+| Standard | ![](/js/Diagram/Shapes_images/Shapes_img44.png) | ![](/js/Diagram/Shapes_images/Shapes_img45.png) |
+| SequenceMultiInstance | ![](/js/Diagram/Shapes_images/Shapes_img46.png) | ![](/js/Diagram/Shapes_images/Shapes_img47.png) |
+| ParallelMultiInstance | ![](/js/Diagram/Shapes_images/Shapes_img48.png) | ![](/js/Diagram/Shapes_images/Shapes_img49.png) |
 
 #### Compensation
 
@@ -851,24 +721,11 @@ $("#diagram").ejDiagram({
 
 The following table contains various types of BPMN boundaries.
 
-<table>
-<tr>
-<th>
-Boundary</th><th>
-Image</th></tr>
-<tr>
-<td>
-Call</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img53.png" alt="" width="128pt" height="121pt" /></td></tr>
-<tr>
-<td>
-Event</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img54.png" alt="" width="126pt" height="120pt" /></td></tr>
-<tr>
-<td>
-Default</td><td>
-<img src="/js/Diagram/Shapes_images/Shapes_img55.png" alt="" width="130pt" height="125pt" /></td></tr>
-</table>
+| Boundary | Image |
+|---|---|
+| Call | ![](/js/Diagram/Shapes_images/Shapes_img53.png) |
+| Event | ![](/js/Diagram/Shapes_images/Shapes_img54.png) |
+| Default | ![](/js/Diagram/Shapes_images/Shapes_img55.png) |
 
 ### Data
 

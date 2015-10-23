@@ -9,9 +9,8 @@ documentation: ug
 
 # Localization
 
-  * Localization is the process of providing controls in different cultures to help you set your own culture easily. Diagram provides localization support for Context Menu items.  
-
-  * The Diagram model’s 'locale' property is used to define the culture code. 
+* Localization is the process of providing controls in different cultures to help you set your own culture easily. Diagram provides localization support for Context Menu items.
+* The Diagram model’s 'locale' property is used to define the culture code. 
 
 The following code illustrates how to provide localization support for Context Menu items.
 
