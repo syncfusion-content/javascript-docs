@@ -9,18 +9,14 @@ documentation: ug
 
 # Data Binding
 
-  * Diagram can be populated with the nodes and connectors based on the information provided from an external data source. 
-
-  * Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
+* Diagram can be populated with the nodes and connectors based on the information provided from an external data source. 
+* Diagram exposes its specific data-related properties allowing you to specify the data source fields from where the node information has to be retrieved from.
 
 To explore those properties, see [Data source settings](/js/api/ejDiagram "members:datasourcesettings")
 
-  * Diagram supports three different kinds of Data binding.
-
+* Diagram supports three different kinds of Data binding.
     * Local Data
-
     * Remote Data
-
     * Html Table Data
 
 ## Local Data
@@ -125,11 +121,9 @@ $(function() {
 
 You can bind the Diagram with Remote Data by using dataManager.  
 
-  * DataManager supports the following types of data-binding: JSON, Web Services, oData. 
-
-  * It uses two different classes: ej.DataManager for processing and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. 
-
-  * To learn more, refer to [Data Manager](/js/DataManager/Getting-Started).
+* DataManager supports the following types of data-binding: JSON, Web Services, oData. 
+* It uses two different classes: ej.DataManager for processing and ej.Query for serving data. ej.DataManager communicates with data source and ej.Query generates data queries that are read by the dataManager. 
+* To learn more, refer to [Data Manager](/js/DataManager/Getting-Started).
 
 To bind remote data to the Diagram, you have to configure the fields of `dataSourceSettings`. The following code illustrates how to bind remote data to the Diagram.
 

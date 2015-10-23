@@ -114,24 +114,11 @@ Position of a node is controlled by using its `offsetX` and `offsetY` properties
 
 The following table illustrates how pivot relates offset values with node boundaries.
 
-<table>
-<tr>
-<th>
-Pivot</th><th>
-Offset </th></tr>
-<tr>
-<td>
-(0.5,0.5)</td><td>
-offsetX and offsetY values are considered as the node’s center point.</td></tr>
-<tr>
-<td>
-(0,0)</td><td>
-offsetX and offsetY values are considered as the top left corner of node</td></tr>
-<tr>
-<td>
-(1,1)</td><td>
-offsetX and offsetY values are considered as the bottom right corner of the node.</td></tr>
-</table>
+| Pivot | Offset |
+|---|---|
+| (0.5,0.5) | offsetX and offsetY values are considered as the nodeâ??s center point. |
+| (0,0) | offsetX and offsetY values are considered as the top left corner of node |
+| (1,1) | offsetX and offsetY values are considered as the bottom right corner of the node. |
 
 
 The following code illustrates how to change the `pivot` value.
@@ -191,7 +178,6 @@ $("#diagram").ejDiagram({
 There are two types of gradients.
 
 * **Linear gradient -** Defines a smooth transition between a set of colors (so-called "stops") on a line. 
-
 * **Radial gradient -** Defines a smooth transition between stops on a circle.
 
 The `gradient` property of node allows you to define and applies the gradient effect to that node.
@@ -274,11 +260,14 @@ var nodes = [
         constraints: constraints
     }
 ];
+{% endhighlight %}
+
 
 ![](/js/Diagram/Node_images/Node_img7.png)
 
 The following code illustrates how to disable shadow effect at runtime.
 
+{% highlight js %}
 var diagram = $("#diagram").ejDiagram("instance");
 var node = diagram.findNode("node");
 

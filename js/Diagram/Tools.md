@@ -124,43 +124,14 @@ There are some functionalities that can be achieved by clicking and dragging on 
 As all the three behaviors are completely different, You can achieve only one behavior at a time based on the tool that you choose.
 When more than one of those tools are applied, a tool is activated based on the precedence given in the following table. 
 
-<table>
-<tr>
-<th>
-Precedence</th><th>
-Tools</th><th>
-Description</th></tr>
-<tr>
-<td>
-1st </td><td>
-ContinuesDraw</td><td>
-Allows you to draw the nodes or connectors continuously. Once it is activated, you cannot perform any other interaction in the Diagram. </td></tr>
-<tr>
-<td>
-2nd </td><td>
-DrawOnce</td><td>
-Allows you to draw single node or connector. Once you complete the drawOnce action, SingleSelect and MultipleSelect tools are automatically enabled. </td></tr>
-<tr>
-<td>
-3rd </td><td>
-ZoomPan</td><td>
-Allows you to pan the Diagram. When you enable both the SingleSelect and ZoomPan tools, you can perform the basic interaction as the cursor hovers node/connector. Panning is enabled when cursor hovers the Diagram.</td></tr>
-<tr>
-<td>
-4th </td><td>
-MultipleSelect</td><td>
-Allows you to select multiple nodes and connectors. When you enable both the MultipleSelect and ZoomPan tools, cursor hovers the Diagram. When panning is enabled, you cannot select multiple nodes. </td></tr>
-<tr>
-<td>
-5th </td><td>
-SingleSelect</td><td>
-Allows you to select individual nodes or connectors.</td></tr>
-<tr>
-<td>
-6th </td><td>
-None</td><td>
-Disables all tools</td></tr>
-</table>
+| Precedence | Tools | Description |
+|---|---|---|
+| 1st | ContinuesDraw | Allows you to draw the nodes or connectors continuously. Once it is activated, you cannot perform any other interaction in the Diagram. |
+| 2nd | DrawOnce | Allows you to draw single node or connector. Once you complete the drawOnce action, SingleSelect and MultipleSelect tools are automatically enabled. |
+| 3rd | ZoomPan | Allows you to pan the Diagram. When you enable both the SingleSelect and ZoomPan tools, you can perform the basic interaction as the cursor hovers node/connector. Panning is enabled when cursor hovers the Diagram. |
+| 4th | MultipleSelect | Allows you to select multiple nodes and connectors. When you enable both the MultipleSelect and ZoomPan tools, cursor hovers the Diagram. When panning is enabled, you cannot select multiple nodes. |
+| 5th | SingleSelect | Allows you to select individual nodes or connectors. |
+| 6th | None | Disables all tools |
 
 You can set the desired tool to the `tool` property of the Diagram model. The following code illustrates how to enable single/multiple tools.
 
