@@ -1,3 +1,11 @@
+---
+layout: post
+title: How to Grid
+description: How to Grid
+platform: js
+control: Grid
+documentation: ug
+---
 # How to
 
 ## Display Tooltip

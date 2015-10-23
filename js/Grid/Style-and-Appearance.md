@@ -1,3 +1,11 @@
+---
+layout: post
+title: Styling and appearance
+description: Styling and appearance
+platform: js
+control: Grid
+documentation: ug
+---
 # Styling
 
 ## List of classes and its purposes

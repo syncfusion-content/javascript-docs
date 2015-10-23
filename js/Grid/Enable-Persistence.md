@@ -1,3 +1,12 @@
+
+---
+layout: post
+title: State Persistence
+description: State Persistence
+platform: js
+control: Grid
+documentation: ug
+---
 # State Persistence 
 
 State Persistence is to maintain grid state in browser’s [local storage]([http://www.w3schools.com/html/html5_webstorage.asp](http://www.w3schools.com/html/html5_webstorage.asp# "")) even if browser refresh or move to next page. Grid stores its model in local storage by defining [`enablePersistence`](http://help.syncfusion.com/js/api/ejgrid#members:enablepersistence "") as true. 

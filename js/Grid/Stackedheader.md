@@ -1,3 +1,11 @@
+---
+layout: post
+title: Stacked Headers
+description: Stacked Headers
+platform: js
+control: Grid
+documentation: ug
+---
 # Stacked Headers
 
 The stacked headers enable you to group the logical columns in grid. It can be shown by setting [`showStackedHeader`](http://help.syncfusion.com/js/api/ejgrid#members:showstackedheader "") as `true` and by defining [`stackedHeaderRows`](http://help.syncfusion.com/js/api/ejgrid#members:stackedheaderrows "").

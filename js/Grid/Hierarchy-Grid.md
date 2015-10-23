@@ -1,3 +1,11 @@
+---
+layout: post
+title: Hierarchical
+description: Hierarchical
+platform: js
+control: Grid
+documentation: ug
+---
 # Hierarchical Bindings
 
 Hierarchical binding can enabled by defining [`childGrid`](http://help.syncfusion.com/js/api/ejgrid#members:childgrid "childGrid") and `childGrid.queryString`. `childGrid` is to define options of child. `childGrid.queryString` is to define relation between parent and child grid.

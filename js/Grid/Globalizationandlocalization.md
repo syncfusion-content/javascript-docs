@@ -1,3 +1,11 @@
+---
+layout: post
+title: Globalization and localization
+description: Globalization and localization
+platform: js
+control: Grid
+documentation: ug
+---
 # Globalization and localization
 
 ## Localization

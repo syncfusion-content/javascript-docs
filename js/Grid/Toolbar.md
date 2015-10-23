@@ -1,3 +1,12 @@
+
+---
+layout: post
+title: Toolbar
+description:Toolbar
+platform: js
+control: Grid
+documentation: ug
+---
 # Toolbar
 
 Toolbar can be shown by defining [`toolbarSettings.showToolbar`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-showtoolbar "toolbarSettings.showToolbar") should be true. Toolbar has option to add default items in [`toolbarSettings.toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarSettings.toolbarItems") and customized items in [`toolbarSettings.customToolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-customtoolbaritems "").

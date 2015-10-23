@@ -1,3 +1,12 @@
+
+---
+layout: post
+title: Print - Grid
+description: Print - Grid
+platform: js
+control: Grid
+documentation: ug
+---
 # Print
 
 You need to use [`print()`]([http://helpjs.syncfusion.com/js/api/ejgrid#methods:print](http://helpjs.syncfusion.com/js/api/ejgrid#methods:print "")) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "").

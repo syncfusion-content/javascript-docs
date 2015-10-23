@@ -1,3 +1,11 @@
+---
+layout: post
+title: Responsive - Grid
+description:Responsive -Grid
+platform: js
+control: Grid
+documentation: ug
+---
 # Responsive
 
 The grid control has support for responsive behavior based on client browser’s width and height. To enable responsive, [`isResponsive`](http://help.syncfusion.com/js/api/ejgrid#members:isresponsive "isResponsive") property should be true. There are three modes of responsive layout is available in grid based on client width. They are.

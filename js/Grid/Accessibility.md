@@ -1,3 +1,12 @@
+
+---
+layout: post
+title: Accessibility
+description: Accessibility
+platform: js
+control: Grid
+documentation: ug
+---
 # Accessibility
 
 Web accessibility is an easy way to create a website or application by worldwide users, including disabled users. You can develop sites with the help of assistive technologies.

@@ -1,3 +1,11 @@
+---
+layout: post
+title: Summary
+description: Summary
+platform: js
+control: Grid
+documentation: ug
+---
 # Summary
 
 Summary rows visibility can be controlled by [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary "showSummary") properties and it can be added to grid by using [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows "summaryRows") property. The example snippet is follows
