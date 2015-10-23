@@ -14,13 +14,9 @@ In Graphical User Interface (GUI), tooltip is a message that is displayed when m
 
 By default, Diagram displays a tooltip to provide the size, position, and angle related information while dragging, resizing, and rotation. The following images illustrate how the Diagram displays the node information during interaction.
 
-<table>
-<tr>
-<td>
-<img src='![]("/js/Diagram/Tooltip_images/Tooltip_img1" %}' alt="" width="213pt" height="181pt"/></td><td>
-<img src='![]("/js/Diagram/Tooltip_images/Tooltip_img2" %}' alt="" width="213pt" height="181pt"/></td><td>
-<img src='![]("/js/Diagram/Tooltip_images/Tooltip_img3" %}' alt="" width="213pt" height="181pt"/></td></tr>
-</table>
+| Drag | Resize | Rotate |
+|---|---|---|
+| ![]("/js/Diagram/Tooltip_images/Tooltip_img1.png") | ![]("/js/Diagram/Tooltip_images/Tooltip_img2.png") | ![]("/js/Diagram/Tooltip_images/Tooltip_img3.png") |
 
 ### Disable default tooltip
 

@@ -15,7 +15,7 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 
 ### Initialize diagram
 
-1. Create an HTML file and add the necessary script references and style sheets in the Head tag as shown in the following code example.
+    1. Create an HTML file and add the necessary script references and style sheets in the Head tag as shown in the following code example.
 
 {% highlight html %}
 
@@ -27,14 +27,14 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <!--script to create Diagram-->
-    <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 </head>
 <body></body>
 </html>
 
 {% endhighlight %}
 
-2. Add a placeholder div element that can be used to initialize the diagram widget as shown below.
+    2. Add a placeholder div element that can be used to initialize the diagram widget as shown below.
 
 {% highlight html %}
 
@@ -50,49 +50,52 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 
 {% endhighlight %}
 
-3. This creates an empty diagram
+    3. This creates an empty diagram
 
 ![](/js/Diagram/Getting-Started_images/Getting-Started_img1.png)
 
 ### Create and add Node
 
-1. Create node: Let us create and add a node (JSON data) with specific position, size, label and shape.
+Create node: Let us create and add a node (JSON data) with specific position, size, label and shape.
 
 {% highlight js %}
+// a node is created and stored in variable nodes.
+var nodes = [{
+  
+  // Unique name for the node
+  name: "Start",
+  
+  // Position of the node
+  offsetX: 300,
+  offsetY: 50,
+  
+  // Size of the node
+  width: 140,
+  height: 50,
+  
+  // Text(label) added to the node
+  labels: [{
+    text: "Start"
+  }],
+  
+  // Shape for the node
+  type: "flow",
+  shape: "terminator"
+  
+}];
 
-        // a node is created and stored in variable nodes.
-        var nodes =
-        [{
-            // Unique name for the node
-            name: "Start",
-
-            // Position of the node
-            offsetX: 300,
-            offsetY: 50,
-
-            // Size of the node
-            width: 140,
-            height: 50,
-
-            // Text(label) added to the node
-            labels: [{ text: "Start" }],
-
-            // Shape for the node
-            type: "flow",
-            shape: "terminator"
-        }];
-
-        $("#diagram").ejDiagram({
-            width: "100%",
-            height: "600px",
-
-            // Add node
-            nodes: nodes,
-        });
+$("#diagram").ejDiagram({
+  width: "100%",
+  height: "600px",
+  
+  // Add node
+  nodes: nodes,
+});
 
 {% endhighlight %}
 
 N> 'labels' property is an array, which indicates that more than one label can be added to a node.
+
 Added node will be displayed in diagram as shown below.
 
 ![](/js/Diagram/Getting-Started_images/Getting-Started_img2.png)
@@ -103,11 +106,17 @@ Added node will be displayed in diagram as shown below.
 
 {% highlight js %}
 
-    var nodes =
-                [
-                    { name: "Start", offsetX: 300, width: 140, height: 50, offsetY: 50, labels: [{ text: "Start" }], type: "flow", shape: "terminator" },
-                    { name: "Init", offsetX: 300, width: 140, height: 50, offsetY: 140, labels: [{ text: "var i = 0;" }], type: "flow", shape: "process" },
-                ];
+var nodes =
+[
+    {
+        name: "Start", offsetX: 300, width: 140, height: 50, offsetY: 50, 
+        labels: [{ text: "Start" }], type: "flow", shape: "terminator" 
+    },
+    {
+        name: "Init", offsetX: 300, width: 140, height: 50, offsetY: 140, 
+        labels: [{ text: "var i = 0;" }], type: "flow", shape: "process" 
+    },
+];
 
 {% endhighlight %}
 
@@ -136,35 +145,53 @@ Added node will be displayed in diagram as shown below.
 
 {% endhighlight %}
 
-Connector connects the two nodes as shown below.
+* Connector connects the two nodes as shown below.
 
 ![](/js/Diagram/Getting-Started_images/Getting-Started_img3.png)
 
 * Common values for all nodes and connectors can be set using default settings. For example if all nodes have same width and height, we can move such properties into defaultSettings. Above code can be rewritten as shown below.
 
 {% highlight js %}
-        var nodes =
-                    [
-                        { name: "Start", offsetY: 50, labels: [{ text: "Start" }], type: "flow", shape: "terminator" },
-                        { name: "Init", offsetY: 140, labels: [{ text: "var i = 0;" }], type: "flow", shape: "process" }
-                    ];
 
-        var connectors = [
-                { name: "connector1", sourceNode: "Start", targetNode: "Init" }
-        ];
+var nodes = [{
+  name: "Start",
+  offsetY: 50,
+  labels: [{ text: "Start" }],
+  type: "flow",
+  shape: "terminator"
+}, {
+  name: "Init",
+  offsetY: 140,
+  labels: [{ text: "var i = 0;" }],
+  type: "flow",
+  shape: "process"
+}];
 
-        $("#diagram").ejDiagram({
-            width: "100%",
-            height: "600px",
-            nodes: nodes,
-            connectors: connectors,
+var connectors = [{
+  name: "connector1",
+  sourceNode: "Start",
+  targetNode: "Init"
+}];
 
-            // Common values of all nodes and connectors define using defaultSettings
-            defaultSettings: {
-                node: { offsetX: 300, width: 140, height: 50 },
-                connector: { labels: [{ "fillColor": "white" }], segments: [{ type: "orthogonal" }] },
-            }
-        });
+$("#diagram").ejDiagram({
+  width: "100%",
+  height: "600px",
+  nodes: nodes,
+  connectors: connectors,
+
+  // Common values of all nodes and connectors define using defaultSettings
+  defaultSettings: {
+    node: {
+      offsetX: 300,
+      width: 140,
+      height: 50
+    },
+    connector: {
+      labels: [{ "fillColor": "white" }],
+      segments: [{ type: "orthogonal" }]
+    },
+  }
+});
  
  {% endhighlight %}
  
@@ -175,40 +202,41 @@ Similarly we can add more nodes and connectors to form a complete flow diagram.
 {% highlight js %}
 
 var nodes =
-             [
-                 { name: "Start", offsetY: 50, labels: [{ text: "Start" }], shape: "terminator" },
-                 { name: "Init", offsetY: 140, labels: [{ text: "var i = 0;" }], shape: "process" },
-                 { name: "Condition", offsetY: 230, labels: [{ text: "i < 10?" }], shape: "decision" },
-                 { name: "Print", offsetY: 320, labels: [{ text: "print(\"Hello!!\");" }], shape: "predefinedprocess" },
-                 { name: "Increment", offsetY: 410, labels: [{ text: "i++;" }], shape: "process" },
-                 { name: "End", offsetY: 500, labels: [{ text: "End" }], shape: "terminator" },
-             ];
+[
+    { name: "Start", offsetY: 50, labels: [{ text: "Start" }], shape: "terminator" },
+    { name: "Init", offsetY: 140, labels: [{ text: "var i = 0;" }], shape: "process" },
+    { name: "Condition", offsetY: 230, labels: [{ text: "i < 10?" }], shape: "decision" },
+    { name: "Print", offsetY: 320, labels: [{ text: "print(\"Hello!!\");" }], shape: "predefinedprocess" },
+    { name: "Increment", offsetY: 410, labels: [{ text: "i++;" }], shape: "process" },
+    { name: "End", offsetY: 500, labels: [{ text: "End" }], shape: "terminator" },
+];
+
 var connectors = [
+    { name: "connector1", sourceNode: "Start", targetNode: "Init" },
+    { name: "connector2", sourceNode: "Init", targetNode: "Condition" },
+    { name: "connector3", sourceNode: "Condition", targetNode: "Print", labels: [{ text: "Yes" }] },
+    { name: "connector4", sourceNode: "Condition", targetNode: "End", labels: [{ text: "No" }],
+        segments: [{ length: 30, direction: "right" }]
+    },
+    { name: "connector5", sourceNode: "Print", targetNode: "Increment" },
+    { name: "connector6", sourceNode: "Increment", targetNode: "Condition",
+        segments: [{ length: 30, direction: "left" }]
+    }
+];
 
-                { name: "connector1", sourceNode: "Start", targetNode: "Init" },
-                { name: "connector2", sourceNode: "Init", targetNode: "Condition" },
-                { name: "connector3", sourceNode: "Condition", targetNode: "Print", labels: [{ text: "Yes" }] },
-                {
-                    name: "connector4", sourceNode: "Condition", targetNode: "End", labels: [{ text: "No" }],
-                    segments: [{ length: 30, direction: "right" }]
-                },
-                { name: "connector5", sourceNode: "Print", targetNode: "Increment" },
-                {
-                    name: "connector6", sourceNode: "Increment", targetNode: "Condition",
-                    segments: [{ length: 30, direction: "left" }]
-                }
-        ];
-
-        $("#diagram").ejDiagram({
-            width: "100%",
-            height: "600px",
-            nodes: nodes,
-            connectors: connectors,
-            defaultSettings: {
-                node: { offsetX: 300, width: 140, height: 50, type: "flow" },
-                connector: { labels: [{ "fillColor": "white" }], segments: [{ type: "orthogonal" }] },
-            }
-        });
+$("#diagram").ejDiagram({
+    width: "100%",
+    height: "600px",
+    nodes: nodes,
+    connectors: connectors,
+    defaultSettings: {
+        node: { offsetX: 300, width: 140, height: 50, type: "flow" },
+        connector: { 
+            labels: [{ "fillColor": "white" }], 
+            segments: [{ type: "orthogonal" }] 
+        }
+    }
+});
 
 {% endhighlight %}
 
@@ -221,7 +249,6 @@ Final flow chart will looks as shown below.
 ### Note
 
 * Initializing diagram is already discussed in Flow Diagram section.
-
 * In 'Flow Diagram' section we saw how to create a diagram manually, now let us see how to create and position diagram automatically.
 
 ### Business object (Employee information)
@@ -230,16 +257,16 @@ Final flow chart will looks as shown below.
 
 {% highlight js %}
 
-        //Initialize data source...
-        var data = [
-            { Name: "Elizabeth", Role: "Director" },
-            { Name: "Christina", ReportingPerson: "Elizabeth", Role: "Manager" },
-            { Name: "Yoshi", ReportingPerson: "Christina", Role: "Lead" },
-            { Name: "Philip", ReportingPerson: "Christina", Role: "Lead" },
-            { Name: "Yang", ReportingPerson: "Elizabeth", Role: "Manager" },
-            { Name: "Roland", ReportingPerson: "Yang", Role: "Lead" },
-            { Name: "Yvonne", ReportingPerson: "Yang", Role: "Lead" }
-        ];
+//Initialize data source...
+var data = [
+    { Name: "Elizabeth", Role: "Director" },
+    { Name: "Christina", ReportingPerson: "Elizabeth", Role: "Manager" },
+    { Name: "Yoshi", ReportingPerson: "Christina", Role: "Lead" },
+    { Name: "Philip", ReportingPerson: "Christina", Role: "Lead" },
+    { Name: "Yang", ReportingPerson: "Elizabeth", Role: "Manager" },
+    { Name: "Roland", ReportingPerson: "Yang", Role: "Lead" },
+    { Name: "Yvonne", ReportingPerson: "Yang", Role: "Lead" }
+];
 
 {% endhighlight %}
 
@@ -334,10 +361,10 @@ Following code examples indicate how to define the default appearance of node an
         //Use automatic layout to arrange elements on the page
         layout: {
             type: ej.datavisualization.Diagram.LayoutTypes.OrganizationalChart,
-            marginX: **10**,
-            marginY: **50**,
-            horizontalSpacing: **50**,
-            verticalSpacing: **50**,
+            marginX: 10,
+            marginY: 50,
+            horizontalSpacing: 50,
+            verticalSpacing: 50,
             orientation: ej.datavisualization.Diagram.LayoutOrientations.TopToBottom
         }
 

@@ -123,11 +123,9 @@ There are two types of containers available.
 
 ### Canvas
 
-  * The Canvas panel supports absolute positioning and provides the least layout functionality to its contained Diagram elements. 
-
-  * Canvas allows you to position its contained elements by using margin and alignment properties.
-
-  * It allows elements to be either vertically or horizontally aligned.
+* The Canvas panel supports absolute positioning and provides the least layout functionality to its contained Diagram elements. 
+* Canvas allows you to position its contained elements by using margin and alignment properties.
+* It allows elements to be either vertically or horizontally aligned.
 
 The `container` property of group should be defined and its `type` should be set as "canvas" to create a canvas panel. The following code illustrates how to add a canvas panel.     
 
@@ -196,9 +194,8 @@ $("#DiagramContent").ejDiagram({
 
 ### Stack
 
-  * Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.
-   
-  * It controls spacing by setting margin properties of child and padding properties of group. By default, a Stack Panel’s `orientation` is vertical. 
+* Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.   
+* It controls spacing by setting margin properties of child and padding properties of group. By default, a Stack Panel’s `orientation` is vertical. 
 
 The `container` property of group should be defined and its `type` should be set as "stack" to create a canvas panel The following code illustrates how to add a stack panel.
 
@@ -253,23 +250,11 @@ $("#DiagramContent").ejDiagram({
 
 ## Difference between a basic group and containers
 
-<table>
-<tr>
-<th>Group</th>
-<th>Container</th></tr>
-<tr>
-<td>
-It arranges the child elements based on the child element’s position and size properties.</td><td>
-Each container has a predefined behaviour to measure and arrange its child elements. Canvas and stack containers are supported in the Diagram.</td></tr>
-<tr>
-<td>
-Padding, Min and Max Size properties are not applicable for basic group.</td><td>
-It is applicable for container.</td></tr>
-<tr>
-<td>
-Children's margin and alignment properties are not applicable for basic group.</td><td>
-It is applicable for container.</td></tr>
-</table>
+| Group | Container |
+|---|---|
+| It arranges the child elements based on the child elementâ??s position and size properties. | Each container has a predefined behaviour to measure and arrange its child elements. Canvas and stack containers are supported in the Diagram. |
+| Padding, Min and Max Size properties are not applicable for basic group. | It is applicable for container. |
+| Children's margin and alignment properties are not applicable for basic group. | It is applicable for container. |
 
 ## Interaction
 
