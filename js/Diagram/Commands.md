@@ -119,7 +119,7 @@ diagram.paste();
 
 {% endhighlight %}
 
-![]("/js/Diagram/Commands_images/Commands_img6.png"%}
+![]("/js/Diagram/Commands_images/Commands_img6.png")
 
 ## Grouping 
 

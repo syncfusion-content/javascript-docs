@@ -20,7 +20,7 @@ To explore the properties of a connector, refer to [Connector Properties](/js/ap
 
 ### Add connectors through connectors collection
 
-The `sourcePoint` and ` targetPoint` properties of connector allow you to define the end points of a connector. The following code example illustrates how to add a connector through connector collection.
+The `sourcePoint` and `targetPoint` properties of connector allow you to define the end points of a connector. The following code example illustrates how to add a connector through connector collection.
 
 {% highlight js %}
 
