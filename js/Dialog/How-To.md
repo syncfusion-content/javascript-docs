@@ -1,6 +1,6 @@
 ---
 layout: post
-title: how-to
+title: How-To
 description: how to
 platform: js
 control: Dialog
@@ -68,7 +68,7 @@ Initialize the Dialog widgets by adding the script section as below.
 
 N>If the position of the dialog is not set as above, all the three dialogs will be overlapped with each other.{% seealso %}[position]{% endseealso %}
 
-![Alt text](how _to_images\create-multiple-dialogs_img1.png)
+![Alt text](How -To_Images\create-multiple-dialogs_img1.png)
 
 ### Create Nested Dialog
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: animation
+title: Animation
 description: animation
 platform: js
 control: Dialog

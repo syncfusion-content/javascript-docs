@@ -1,6 +1,6 @@
 ---
 layout: post
-title: load-content
+title: Load-Content
 description: load content
 platform: js
 control: Dialog
@@ -42,8 +42,8 @@ dialogcontent.html
 
 {% highlight html %}
 
-  <div id="content">
-This content is loaded via AJAX request.
+    <div id="content">
+        This content is loaded via AJAX request.
     </div>
 
 

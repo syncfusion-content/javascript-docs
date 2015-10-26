@@ -16,18 +16,17 @@ This section helps to understand the getting started of the Dialog widget with t
 Create a new HTML file and include the below code
 
 {% highlight html %}
-
-<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+ 
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="utf-8" />
+    <title></title>
 </head>
 <body>
 
 </body>
-</html>
+</html> 
 
 
 {% endhighlight %}

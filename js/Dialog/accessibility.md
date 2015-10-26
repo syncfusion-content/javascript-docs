@@ -1,6 +1,6 @@
 ---
 layout: post
-title: accessibility
+title: Accessibility
 description: accessibility
 platform: js
 control: Dialog

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: action-buttons
+title: Action-Buttons
 description: action buttons
 platform: js
 control: Dialog
