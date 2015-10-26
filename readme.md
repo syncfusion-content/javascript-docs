@@ -5,6 +5,7 @@ This section contains guidelines on naming files, sections, documents and other 
 > **NOTE**: Some of the items are marked as TODO which will be documented later.
 
 ## File naming Convention:
+
 * All files should have `.md` extension.
 * Separate words in file names should be hyphenated
 * File names of the documents should have one or two-word names that describe the material covered in the document. 
@@ -73,9 +74,16 @@ This section contains guidelines on naming files, sections, documents and other 
 
 * Adding image with caption:
 
-> **Syntax**: \{% include image.html url="image path" caption="caption text"%}
+> **Syntax**: 
+> \!\[Alt text](/path/to/img.jpg)
+>
+> Caption Text
+> \{:.caption}
 
-> **Example**: \{% include image.html url="/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" caption="caption text"%}
+> **Example**: 
+> \!\[Alt text](/path/to/img.jpg)
+> Adding Filters in Grid
+> {:.caption}
 
 * Maximum width of the image should be 750 PX
 * Maximum height of the image should be 550 PX
@@ -103,36 +111,45 @@ This section contains guidelines on naming files, sections, documents and other 
 
 * To add the different type of predefined blockqoute use the below syntax. Since we will insert the title or relevant icon for this block of content, do not add the **"Title"**. 
 
-**Information** or **Notes**
+**Information**
 > **Syntax**: I> [Content]
 
-> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> **Example**: I> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+
+**Notes**
+> **Syntax**: N> [Content]
+
+> **Example**: N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Warning**
 > **Syntax**: W> [Content]
 
-> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> **Example**: N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Errors**
 > **Syntax**: E> [Content]
 
-> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> **Example**: E> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Tips**
 > **Syntax**: T> [Content]
 
-> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> **Example**: T>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
-### Notes multiple paragraph style
-* Use the BR tag between the content to enable multiple paragraph style.  
+### Notes/Info/Warning/Error/Tips multiple paragraph style
 
+> **Syntax**:
+> >N [Line 1]
+> >N [Line 2]
+> >N [Line 3]
+> >N [Line 4]
 
-**Tips**
-> **Syntax**: T> [Content]
-
-> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. **<BR>**Duis volutpat, elit eget iaculis venenatis
-
-
+> **Example**
+> >N Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> >N Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> >N Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> >N
+> >N Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 ### See also
 
