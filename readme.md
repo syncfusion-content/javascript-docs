@@ -7,6 +7,7 @@ This section contains guidelines on naming files, sections, documents and other 
 ## File naming Convention:
 
 * All files should have `.md` extension.
+* Do not use any special characters except hyphen in folder/file names 
 * Separate words in file names should be hyphenated
 * File names of the documents should have one or two-word names that describe the material covered in the document. 
 * The full title of the document should be in the file name. 
@@ -18,6 +19,10 @@ This section contains guidelines on naming files, sections, documents and other 
 > **Title :** Getting started with Chart widget for Syncfusion Essential JS 
 
 > **Description :** How to create a chart, add series, enable tooltip and other functionalities.
+
+## Adding a Document to left side Tree
+
+* Each new markdown document should be 
 
 
 ## Front Matter
@@ -32,7 +37,7 @@ Each markdown file should have the following information at the top of the docum
 
 > description: page description
 
-> platform: short platform name
+> platform: platform name identifier
 
 > control: control name
 
@@ -59,6 +64,40 @@ Each markdown file should have the following information at the top of the docum
 > keywords: ejchart, chart, chart widget, js chart
 
 > \---
+
+### Platform Name Identifiers
+
+Please use the following platform names only in the front matter information
+
+> Based on these platform names, we are showing search results, download and forum links
+
+|    Platform       	  	|PlatformName Identifier|
+|--------------------------:+:---------------------:|
+| Android           	  	| andrroid				|
+| ASP.NET           	  	| aspnet				|
+| ASP.NET Classic   	  	| aspnet-classic		|
+| ASP.NET MVC             	| ejmvc					|
+| ASP.NET MVC Classic     	| aspnetmvc-claasic		|
+| ASP.NET MVC Mobile      	| mobileaspnetmvc		|
+| BigData			      	| bigdata				|
+| Dashboard			      	| dashboard				|
+| File Formats			  	| file-formats			|
+| Install & Configuration 	| common				|
+| iOS					  	| ios					|
+| JavaScript			  	| js					|
+| JavaScript Mobile		  	| mobilejs				|
+| LightSwitch 			  	| lightswitch			|
+| Orubase				  	| orubase				|
+| Predictive Analytics		| predictive-analytics	|
+| Report Server				| report-server			|
+| Silverlight				| silverlight			|
+| Universal Classic			| universal-classic		|
+| UWP						| uwp					|
+| Windows Forms				| windowsforms			|
+| Windows Phone				| wp8					|
+| WinRT						| winrt					|
+| WPF						| wpf					|
+| Xamarin					| xamarin				|
 
 ## Encoding
 * Markdown files should be saved with "Encoding without UTF-8" encoding format <http://www.larshaendler.com/2015/01/20/remove-bom-with-notepad>
