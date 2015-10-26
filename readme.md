@@ -139,17 +139,17 @@ This section contains guidelines on naming files, sections, documents and other 
 ### Notes/Info/Warning/Error/Tips multiple paragraph style
 
 > **Syntax**:
-> >N [Line 1]
-> >N [Line 2]
-> >N [Line 3]
-> >N [Line 4]
+> N> [Line 1]
+> N> [Line 2]
+> N> [Line 3]
+> N> [Line 4]
 
 > **Example**
-> >N Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
-> >N Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
-> >N Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
-> >N
-> >N Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> N>
+> N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 ### See also
 
@@ -178,15 +178,17 @@ This section contains guidelines on naming files, sections, documents and other 
 
 | Variable Name     	           | Output         | Description            					                             |  
 | ---------------------------------|:--------------:|:----------------------------------------------------------------------:|  
-| {{ site.releaseversion }}        | 13.2.0.29      |Syncfusion Essential Studio version                                     |  
-| {{ site.20esreleaseversion }}    | 13.1200.0.29   |Syncfusion Essential Studio assemblies version for .NET Framework 2.0   |  
-| {{ site.35esreleaseversion }}    | 13.1350.0.29   |Syncfusion Essential Studio assemblies version for .NET Framework 3.5   |  
-| {{ site.40esreleaseversion }}    | 13.1400.0.29   |Syncfusion Essential Studio assemblies version for .NET Framework 4.0   |  
-| {{ site.45esreleaseversion }}    | 13.1450.0.29   |Syncfusion Essential Studio assemblies version for .NET Framework 4.5   |  
-| {{ site.451esreleaseversion }}   | 13.1451.0.29   |Syncfusion Essential Studio assemblies version for .NET Framework 4.5.1 |  
-| {{ site.mvc3releaseversion }}    | 13.1300.0.29   |Syncfusion Essential Studio assemblies based on MVC Version 3.0         |  
-| {{ site.mvc4releaseversion }}    | 13.1400.0.29   |Syncfusion Essential Studio assemblies based on MVC Version 4.0         |  
-| {{ site.mvc5releaseversion }}    | 13.1500.0.29   |Syncfusion Essential Studio assemblies based on MVC Version 5.0         |  
+| {{ site.releaseversion }}        | 13.3.0.7       |Syncfusion Essential Studio version                                     |  
+| {{ site.20esreleaseversion }}    | 13.3200.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 2.0   |  
+| {{ site.35esreleaseversion }}    | 13.3350.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 3.5   |  
+| {{ site.40esreleaseversion }}    | 13.3400.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 4.0   |  
+| {{ site.45esreleaseversion }}    | 13.3450.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 4.5   |  
+| {{ site.451esreleaseversion }}   | 13.3451.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 4.5.1 |  
+| {{ site.46esreleaseversion }}    | 13.3460.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 4.5.1 | 
+| {{ site.mvc3releaseversion }}    | 13.3300.0.7    |Syncfusion Essential Studio assemblies based on MVC Version 3.0         |  
+| {{ site.mvc4releaseversion }}    | 13.3400.0.7    |Syncfusion Essential Studio assemblies based on MVC Version 4.0         |  
+| {{ site.mvc5releaseversion }}    | 13.3500.0.7    |Syncfusion Essential Studio assemblies based on MVC Version 5.0         |  
+| {{ site.mvc6releaseversion }}    | 13.3600.0.7    |Syncfusion Essential Studio assemblies based on MVC Version 5.0         |  
 
 ## API Reference Guideline
 
