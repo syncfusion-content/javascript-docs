@@ -20,6 +20,33 @@ This section contains guidelines on naming files, sections, documents and other 
 > **Description :** How to create a chart, add series, enable tooltip and other functionalities.
 
 
+## Front Matter
+
+Each markdown file should have the following information at the top of the document.
+
+> **Syntax:**
+> ---
+> title: page title
+> description: page description
+> platform: short platform name
+> control: control name
+> documentation: ug/api
+> keywords: Search engine will use these keyword to get the search results
+> ---
+
+> **Example:**
+> ---
+> title: Getting started with Chart widget for Syncfusion Essential JS
+> description: How to create a chart, add series, enable tooltip and other functionalities
+> platform: js
+> control: chart
+> documentation: ug
+> keywords: ejchart, chart, chart widget, js chart
+> ---
+
+## Encoding
+* Markdown files should be saved with "Encoding without UTF-8" encoding format <http://www.larshaendler.com/2015/01/20/remove-bom-with-notepad>
+
 ## Markdown Syntax Guideline
 * Follow the syntax mentioned in this [link](http://kramdown.gettalong.org/syntax.html) for most of the elements. There are some elements which need special styling or additional settings to do. Those have been described in the below topics.
 
