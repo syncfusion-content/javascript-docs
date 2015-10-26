@@ -72,7 +72,7 @@ Please use the following platform names only in the front matter information
 > Based on these platform names, we are showing search results, download and forum links
 
 |    Platform       	  	|PlatformName Identifier|
-|--------------------------:+:---------------------:|
+|:-------------------------:|:---------------------:|
 | Android           	  	| andrroid				|
 | ASP.NET           	  	| aspnet				|
 | ASP.NET Classic   	  	| aspnet-classic		|
