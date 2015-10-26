@@ -141,16 +141,23 @@ This section contains guidelines on naming files, sections, documents and other 
 > **Syntax**:
   
   N> [Line 1]
+  
   N> [Line 2]
+  
   N> [Line 3]
+  
   N> [Line 4]
 
 > **Example**
   
   N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+  
   N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+  
   N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+  
   N>
+  
   N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 ### See also
