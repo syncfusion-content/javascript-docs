@@ -37,7 +37,7 @@ You can add **Contextual Tabs** and **Tab Set** in the Ribbon control. In contex
             $("#Ribbon").ejRibbon({
                 width: "800px",
                 applicationTab: {
-                    type: "ApplicationMenu",
+                   type: ej.Ribbon.applicationTabType.menu,
                     menuItemID: "menu",
                     menuSettings: {
                         openOnClick: false

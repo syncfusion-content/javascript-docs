@@ -31,7 +31,7 @@ The **Ribbon** control has Custom Tooltip support that is displayed when you mov
           $(function () {
              $("#defaultRibbon").ejRibbon({
                  width: "100%", 
-                 applicationTab: { Type: "ApplicationMenu", itemID: "ribbonmenu" },
+                 applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "ribbonmenu" },
                  tabs: [{
                      id: "home", text: "HOME", groups: [
                      {

@@ -36,7 +36,7 @@ Specifies the index of the **Ribbon tab** to select the given index tab item in 
                 $("#Ribbon").ejRibbon({
                     width: "600px",
                     applicationTab: {
-                        type: "ApplicationMenu",
+                        type: ej.Ribbon.applicationTabType.menu,
                         menuItemID: "menu",
                         menuSettings: {
                             openOnClick: false
@@ -129,7 +129,7 @@ Specifies the index or indexes to disable the corresponding tabs in the **Ribbon
                 $("#Ribbon").ejRibbon({
                     width: "600px",
                     applicationTab: {
-                        type: "ApplicationMenu",
+                        type: ej.Ribbon.applicationTabType.menu,
                         menuItemID: "menu",
                         menuSettings: {
                             openOnClick: false
@@ -221,7 +221,7 @@ The following output is displayed as a result of the above code example.
                 $("#Ribbon").ejRibbon({
                     width: "600px",
                     applicationTab: {
-                        type: "ApplicationMenu",
+                       type: ej.Ribbon.applicationTabType.menu
                         menuItemID: "menu",
                         menuSettings: {
                             openOnClick: false
@@ -317,7 +317,7 @@ This method is used to hide the given text tab in the **Ribbon** control.
                 $("#Ribbon").ejRibbon({
                     width: "600px",
                     applicationTab: {
-                        type: "ApplicationMenu",
+                        type: ej.Ribbon.applicationTabType.menu
                         menuItemID: "menu",
                         menuSettings: {
                             openOnClick: false
@@ -408,7 +408,7 @@ This method is used to show the given text tab in the **Ribbon** control.
                 $("#Ribbon").ejRibbon({
                     width: "600px",
                     applicationTab: {
-                        type: "ApplicationMenu",
+                        type: ej.Ribbon.applicationTabType.menu,
                         menuItemID: "menu",
                         menuSettings: {
                             openOnClick: false
@@ -500,7 +500,7 @@ This method is used to remove the given index tab item from the **Ribbon** contr
                 $("#Ribbon").ejRibbon({
                     width: "600px",
                     applicationTab: {
-                        type: "ApplicationMenu",
+                        type: ej.Ribbon.applicationTabType.menu,
                         menuItemID: "menu",
                         menuSettings: {
                             openOnClick: false
@@ -590,7 +590,7 @@ Specifies the **width** to the **Ribbon** control.
                 $("#Ribbon").ejRibbon({
                     width: 800,
                     applicationTab: {
-                        type: "ApplicationMenu",
+                        type: ej.Ribbon.applicationTabType.menu,
                         menuItemID: "menu",
                         menuSettings: {
                             openOnClick: false
@@ -676,7 +676,7 @@ This method is used to add Ribbon Group dynamically in the Ribbon control. This 
               $("#Ribbon").ejRibbon({
                   width: "700px",
                   applicationTab: {
-                      type: "ApplicationMenu",
+                      type: ej.Ribbon.applicationTabType.menu,
                       menuItemID: "menu"
                   },
                   tabs: [{
@@ -759,7 +759,7 @@ This method is used to add group content dynamically in the ribbon. This method 
                     // Set the width during initialization. 	
                     width: "700px",
                     applicationTab: {
-                        type: "ApplicationMenu",
+                        type: ej.Ribbon.applicationTabType.menu,
                         menuItemID: "menu"
                     },
                     tabs: [{
@@ -827,7 +827,7 @@ The following output is displayed as a result of the above code example.
             $("#Ribbon").ejRibbon({
                 width: "800px",
                 applicationTab: {
-                    type: "ApplicationMenu",
+                    type: ej.Ribbon.applicationTabType.menu,
                     menuItemID: "menu"
                 },
                 tabs: [{
@@ -874,7 +874,7 @@ The following screenshot displays the output of the above code example.
             $("#Ribbon").ejRibbon({
                 width: "800px",
                 applicationTab: {
-                    type: "ApplicationMenu",
+                    type: ej.Ribbon.applicationTabType.menu,
                     menuItemID: "menu"
                 },
                 tabs: [{
@@ -926,7 +926,7 @@ This method is used to add tab dynamically in the Ribbon control. This method re
             $("#Ribbon").ejRibbon({
                 width: "800px",
                 applicationTab: {
-                    type: "ApplicationMenu",
+                    type: ej.Ribbon.applicationTabType.menu,
                     menuItemID: "menu"
                 },
                 tabs: [{
@@ -983,7 +983,7 @@ This method is used to add contextual tabs dynamically.This method has two argum
          $("#Ribbon").ejRibbon({
              width: "800px",
              applicationTab: {
-                 type: "ApplicationMenu",
+                 type: ej.Ribbon.applicationTabType.menu,
                  menuItemID: "menu"
              },
              tabs: [{

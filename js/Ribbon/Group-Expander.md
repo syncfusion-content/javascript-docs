@@ -65,7 +65,7 @@ The **Ribbon** control has group expander support. Set **enableGroupExpander** v
 		    $("#Ribbon").ejRibbon({
 		        width: "700px",
 		        applicationTab: {
-		            Type: "ApplicationMenu",
+		            type: ej.Ribbon.applicationTabType.menu,
 		            itemID: "menu",
 		            menuSettings: {
 		                openOnClick: false

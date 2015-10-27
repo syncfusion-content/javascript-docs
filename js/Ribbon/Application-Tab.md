@@ -34,8 +34,8 @@ The **application menu** support is provided in the Ribbon control application t
 		    $("#Ribbon").ejRibbon({
 		        width: "800px",
 		        applicationTab: {
-		            Type: "ApplicationMenu",
-		            itemID: "menu",
+		            type: ej.Ribbon.applicationTabType.menu,
+		            menuItemID: "menu",
 		            menuSettings: {
 		                openOnClick: false
 		            }

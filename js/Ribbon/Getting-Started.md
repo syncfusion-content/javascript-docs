@@ -78,7 +78,7 @@ Create the **ejRibbon** widget as follows. The width property allows you to def
 		    $("#Ribbon").ejRibbon({
 		        width: "500px",
 		        applicationTab: {
-		            type: "ApplicationMenu",
+		            type: ej.Ribbon.applicationTabType.menu,
 		            menuItemID: "menu",
 		            menuSettings: {
 		                openOnClick: false
@@ -368,7 +368,7 @@ The **Ribbon** control has control separator support. Set enableSeparator value 
 		     $("#Ribbon").ejRibbon({
 		         width: "700px",
 		         applicationTab: {
-		             type: "ApplicationMenu",
+		             type: ej.Ribbon.applicationTabType.menu,
 		             menuItemID: "menu",
 		             menuSettings: {
 		                 openOnClick: false

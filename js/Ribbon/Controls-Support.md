@@ -61,7 +61,7 @@ The default type is **button**.
 			    $("#Ribbon").ejRibbon({
 			        width: 800,
 			        applicationTab: {
-			            type: "ApplicationMenu",
+			            type: ej.Ribbon.applicationTabType.menu,
 			            menuItemID: "menu",
 			            menuSettings: {
 			                openOnClick: false

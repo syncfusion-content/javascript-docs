@@ -33,7 +33,7 @@ documentation: ug
                   width: "70%",
                   allowResizing: true,
                   applicationTab: {
-                      type: "ApplicationMenu",
+                      type: ej.Ribbon.applicationTabType.menu,
                       menuItemID: "ribbonmenu"
                   },
 
