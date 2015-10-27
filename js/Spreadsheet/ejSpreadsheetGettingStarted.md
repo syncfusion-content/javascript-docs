@@ -256,7 +256,7 @@ I>[In production, we highly recommend you to use our [custom script generator](h
 
 ## Creating ejSpreadsheet
 
-The Spreadsheet control can be created from an HTML `DIV` element with `id` attribute.  To create the Spreadsheet, you should call the ` ejSpreadsheet ` jQuery plug-in function with the options as parameter.  The basic options to create Spreadsheet are `rowCount`, `colCount`, `activeSheetIndex`, `sheetCount` , `scrollSettings.width` and `scrollSettings.height`. Code snippet for loading `ejSpreadheet` with minimal settings and initialize data initially.
+The Spreadsheet control can be created from an HTML `DIV` element with `id` attribute.  To create the Spreadsheet, you should call the ` ejSpreadsheet ` jQuery plug-in function with the options as parameter.  The basic options to create Spreadsheet are `rowCount`, `colCount`, `activeSheetIndex`, `sheetCount` , `scrollSettings.width` and `scrollSettings.height`. Code snippet for loading `ejSpreadheet` with minimal settings and to initialize with default data.
 
 {% highlight html %}
 <div id='Spreadsheet'></div>
@@ -266,7 +266,7 @@ The Spreadsheet control can be created from an HTML `DIV` element with `id` attr
                 sheetCount: 3,
                 activeSheetIndex: 1,
                 scrollSettings: { height: 400, width: 900 },
-// JSON data can be loaded into Spreadsheet using rangeSettings.dataSource for particular sheet.
+// JSON data can be loaded into Spreadsheet using rangeSettings.dataSource for particular sheet. This is optional
                 sheets: [{
                     rangeSettings: { dataSource: window.defaultData, startCell: "A1", showHeader: true, }
                 }],
