@@ -323,7 +323,7 @@ $(function () {
 
 
 ### applicationTab.backstageSettings<span class="type-signature type object">object</span>
-{:#members:applicationtab-backstageSettings}
+{:#members:applicationtab-backstagesettings}
 
 
 
@@ -436,7 +436,7 @@ $(function() {
 
 
 ### applicationTab.backstageSettings.text<span class="type-signature type string">string</span>
-{:#members:applicationtab-backstageSettings-text}
+{:#members:applicationtab-backstagesettings-text}
 
 
 
@@ -549,7 +549,7 @@ $(function() {
 
 
 ### applicationTab.backstageSettings.height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:applicationtab-backstageSettings-height}
+{:#members:applicationtab-backstagesettings-height}
 
 
 
@@ -660,7 +660,7 @@ $(function() {
 
 
 ### applicationTab.backstageSettings.width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:applicationtab-backstageSettings-width}
+{:#members:applicationtab-backstagesettings-width}
 
 
 
@@ -772,7 +772,7 @@ $(function() {
 
 
 ### applicationTab.backstageSettings.pages<span class="type-signature type array">array</span>
-{:#members:applicationtab-backstageSettings-pages}
+{:#members:applicationtab-backstagesettings-pages}
 
 
 
@@ -884,7 +884,7 @@ $(function() {
 
 
 ### applicationTab.backstageSettings.pages.id<span class="type-signature type string">string</span>
-{:#members:applicationtab-backstageSettings-pages-id}
+{:#members:applicationtab-backstagesettings-pages-id}
 
 
 
@@ -996,7 +996,7 @@ $(function() {
 
 
 ### applicationTab.backstageSettings.pages.text<span class="type-signature type string">string</span>
-{:#members:applicationtab-backstageSettings-pages-text}
+{:#members:applicationtab-backstagesettings-pages-text}
 
 
 
@@ -1108,7 +1108,7 @@ $(function() {
 
 
 ### applicationTab.backstageSettings.pages.itemType<span class="type-signature type enum">enum</span>
-{:#members:applicationtab-backstageSettings-pages-itemType}
+{:#members:applicationtab-backstagesettings-pages-itemtype}
 
 
 
@@ -1220,7 +1220,7 @@ $(function() {
 
 
 ### applicationTab.backstageSettings.pages.contentID<span class="type-signature type string">string</span>
-{:#members:applicationtab-backstageSettings-pages-contentID}
+{:#members:applicationtab-backstagesettings-pages-contentid}
 
 
 
@@ -1332,7 +1332,7 @@ $(function() {
 
 
 ### applicationTab.backstageSettings.pages.enableSeparator<span class="type-signature type boolean">boolean</span>
-{:#members:applicationtab-backstageSettings-pages-enableSeparator}
+{:#members:applicationtab-backstagesettings-pages-enableseparator}
 
 
 
@@ -1444,7 +1444,7 @@ $(function() {
 
 
 ### applicationTab.backstageSettings.headerWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:applicationtab-backstageSettings-headerWidth}
+{:#members:applicationtab-backstagesettings-headerwidth}
 
 
 
@@ -1557,7 +1557,7 @@ $(function() {
 
 
 ### applicationTab.menuItemID<span class="type-signature type string">string</span>
-{:#members:applicationtab-menuItemID}
+{:#members:applicationtab-menuitemid}
 
 
 
@@ -7613,7 +7613,7 @@ $(function () {$("#Ribbon").ejRibbon({
 
 
 ### hideBackstage<span class="signature">()</span>
-{:#methods:hideBackstage}
+{:#methods:hidebackstage}
 
 
 
@@ -8658,7 +8658,7 @@ $("#Ribbon").ejRibbon("setTabText","HOME","NEW");
 
 
 ### showBackstage<span class="signature">()</span>
-{:#methods:showBackstage}
+{:#methods:showbackstage}
 
 
 
@@ -9439,7 +9439,7 @@ $(function () {
 
 
 ### galleryItemClick
-{:#events:galleryItemClick}
+{:#events:galleryitemclick}
 
 
 
@@ -9580,7 +9580,7 @@ $(function () {
 
 
 ### backstageItemClick
-{:#events:backstageItemClick}
+{:#events:backstageitemclick}
 
 
 
@@ -9890,7 +9890,7 @@ $(function () {
 
 
 ### tabAdd
-{:#events:tabAdd}
+{:#events:tabadd}
 
 
 
@@ -10004,7 +10004,7 @@ $(function () {
 
 
 ### tabClick
-{:#events:tabClick}
+{:#events:tabclick}
 
 
 
@@ -10130,7 +10130,7 @@ $(function () {
 
 
 ### tabCreate
-{:#events:tabCreate}
+{:#events:tabcreate}
 
 
 
@@ -10238,7 +10238,7 @@ $(function () {
 
 
 ### tabRemove
-{:#events:tabRemove}
+{:#events:tabremove}
 
 
 
@@ -10346,7 +10346,7 @@ $(function () {
 
 
 ### tabSelect
-{:#events:tabSelect}
+{:#events:tabselect}
 
 
 
@@ -10472,7 +10472,7 @@ $(function () {
 
 
 ### toggleButtonClick
-{:#events:toggleButtonClick}
+{:#events:togglebuttonclick}
 
 
 
