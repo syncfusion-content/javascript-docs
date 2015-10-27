@@ -5,201 +5,203 @@ description: row
 platform: js
 control: Grid
 documentation: ug
----
+--- 
 
 # Row
 
+It represents the record details that are fetched from the datasource.
+
+## Row Hover
+
+You can see the mouse hovering effect on the corresponding grid rows using [`enableRowHover`](http://help.syncfusion.com/js/api/ejgrid#members:enablerowhover "") property. By default it is `true`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		enableRowHover : true,
+		allowPaging : true,
+		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Row_images/Row_img1.jpeg)
+
+
 ## Details Template
 
-**Details Template** feature provides a detailed view about additional information of each row. If you want to view the detailed information, you can expand a row.We are able to set the detail template content using [`detailsTemplate`](/js/api/ejgrid#members:detailstemplate "detailsTemplate") property.
+It provides a [detailed view](http://help.syncfusion.com/js/api/ejgrid#members:detailstemplate "") /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the [`detailsTemplate`](http://help.syncfusion.com/js/api/ejgrid#members:detailstemplate "") property. And also you can change HTML elements in detail template row into JavaScript controls using [`detailsDataBound`](http://help.syncfusion.com/js/api/ejgrid#events:detailsdatabound "") event.
+
+On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details row.
+
+I> [It’s a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "") within the `script` tag with `type` as "text/x-jsrender".]
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
 <div id="Grid"></div>
 <script id="tabGridContents" type="text/x-jsrender">
-  <div id="contact{{:EmployeeID}}" style="font-weight:bold; padding:5px;">
-      <div id="cont">
-          contact:{{:Address}}<br />
-          city:{{:City}}<br />
-          Country:{{:Country}}<br />
-          phone:{{:HomePhone}}<br />
-      </div>
-  </div>
+   <div class="tabcontrol" id="Test">
+   <ul>
+   <li><a href="#gridTab{{:EmployeeID}}">Stock Grid</a></li>
+   </ul>
+   <div id="gridTab{{:EmployeeID}}">
+   <div id="detailGrid">
+   </div>
+   </div>
+   </div>
 </script>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.employeeView" is referred from jsondata.min.js
-          dataSource: ej.DataManager(window.employeeView).executeLocal(ej.Query().take(9)),
-          detailsTemplate: "#tabGridContents", // detail template
-      });
-  });
-</script>
-
 {% endhighlight %}
 
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.employeeView,
+		detailsTemplate : "#tabGridContents",
+		detailsDataBound : "detailGridData",
+		columns : ["EmployeeID", "FirstName", "Title", "City", "Country"]
+	});
+});
 
+function detailGridData(e) {
+	// Here you can get the parent details from “data”. EmployeeID is the unique column value in parent row.
+	var filteredData = e.data["EmployeeID"];
+	// the datasource "window.ordersView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+	var data = ej.DataManager(window.ordersView).executeLocal(ej.Query().where("EmployeeID", "equal", parseInt(filteredData), true).take(5)); // form the query to filter the detail row data by using EmplooyeeID column value.
+	//detailsElement contains all the elements which are mentioned in the template.
+	// Here the detailGrid element is changed as ejGrid control
+	e.detailsElement.find("#detailGrid").ejGrid({
+		dataSource : data,
+		//  allowPaging: true,
+		// pageSettings: { pageSize: 3 },
+		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
+	});
+	// Here the element which has tabcontrol class is changed as ejTab control
+	e.detailsElement.find(".tabcontrol").ejTab();
+}
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Row_images/Row_img1.png)
+![](Row_images/Row_img2.jpeg)
 
-## Hierarchy
-
-In this section, you can learn how to use the **Hierachy tree** in **Grid View**. The following code example is of **Hierachy Grid**.
-
-{% highlight html %}
-
-   <div id="Grid"></div>
-<script id="tabGridContents" type="text/x-jsrender">
-  <div class="tabcontrol" id="Test">
-      <div id="detailGrid">
-          <label id="employeeDet" style="display: none">{{:EmployeeID}}</label>
-      </div>
-      </div>
-</script>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.employeeView" is referred from jsondata.min.js
-          dataSource: ej.DataManager(window.employeeView).executeLocal(ej.Query().take(9)),
-          detailsTemplate: "#tabGridContents",
-          detailData: "detailGridData",
-      });
-  });
-  function detailGridData(e) {
-      var filteredData = e.detailsElement.find("#employeeDet").text();
-      // the datasource "window.ordersView" is referred from jsondata.min.js
-      var data = ej.DataManager(window.ordersView).executeLocal(ej.Query().where("EmployeeID", "equal", parseInt(filteredData), true));
-      e.detailsElement.find("#detailGrid").ejGrid({
-          dataSource: data,
-      });
-  }
-</script>
-
-
-{% endhighlight %}
-
-
-
-The following output is displayed as a result of the above code example.
-
-![](/js/Grid/Row_images/Row_img2.png)
 
 ## Row Template
 
-**Row template** is used to render your template in every row. It is used to place elements inside **Grid** rows. This feature makes it easier to customise **Grid** rows with **HTML** elements. We are able to set the detail template content using [`rowTemplate`](/js/api/ejgrid#members:rowtemplate "rowTemplate") property.
+Row template enables you to set the customized look and behavior to grid all rows. [`rowTemplate`](http://help.syncfusion.com/js/api/ejgrid#members:rowtemplate "") property can be used bind the `id` of HTML template.
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
 <div id="Grid"></div>
 <script id="templateData" type="text/x-jsrender">
-  <tr>
-      <td class="photo">
-          <img style="width:130px;height: 160px" src="http://js.syncfusion.com/demos/web/themes/images/Employees//{{:EmployeeID}}.png" alt="{{:EmployeeID}}" />
-      </td>
-      <td class="details">
-          <table class="CardTable" cellpadding="3" cellspacing="6">
-              <colgroup>
-                  <col width="50%">
-                  <col width="50%">
-              </colgroup>
-              <tbody>
-                  <tr>
-                      <td class="CardHeader">First Name: </td>
-                      <td style="padding:20px">{{:FirstName}} </td>
-                  </tr>
-                  <tr>
-  
-                      <td class="CardHeader">
-                          Birth Date:
-                      </td>
-                      <td style="padding:20px">
-                          {{:BirthDate.toLocaleDateString()}}
-                      </td>
-                  </tr>
-                  <tr>
-  
-                      <td class="CardHeader">
-                          Hire Date:
-                      </td>
-                      <td style="padding:20px">
-                          {{:HireDate.toLocaleDateString()}}
-                      </td>
-                  </tr>
-              </tbody>
-          </table>
-      </td>
-  </tr>
+   <tr>
+   <td class="photo">
+   <img style="width: 130px; height: 160px" src="/13.2.0.29/themes/web/images/employees/{{:EmployeeID}}.png" alt="" />
+   </td>
+   <td class="details">
+   <table class="CardTable" cellpadding="3" cellspacing="2">
+   <colgroup>
+   <col width="50%">
+   <col width="50%">
+   </colgroup>
+   <tbody>
+   <tr>
+   <td class="CardHeader">First Name </td>
+   <td>{{:FirstName}}</td>
+   </tr>
+   <tr>
+   <td class="CardHeader">Last Name</td>
+   <td>{{:LastName}}</td>
+   </tr>
+   <tr>
+   <td class="CardHeader">Title
+   </td>
+   <td>{{:Title}}</td>
+   </tr>
+   </tbody>
+   </table>
+   </td>
+   </tr>
 </script>
-<style>
-  .CardHeader {
-  font-weight: bold;
-  font-size: 14px;
-  padding: 20px;
-  }
-</style>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.employeeData" is referred from templatelocaldata.js
-          dataSource: window.employeeView,
-          allowScrolling: true,
-          scrollSettings: { height: 480, width: 500 },
-          rowTemplate: "#templateData",   // row template
-          columns: [
-          { headerText: "Photo", width: 30 },
-          { headerText: 'Employee Details', width: 70 }
-          ]
-      });
-  });
-</script>
-
-
 {% endhighlight %}
 
+{% highlight css %}
+.photo img {
+	width: 130px;
+}
+.photo, .details {
+	border-color: #c4c4c4;
+	border-style: solid;
+}
+.photo {
+	border-width: 1px 0px 0px 0px;
+}
+.details {
+	border-width: 1px 0px 0px 1px;
+}
+.details > table {
+	width: 100%;
+}
+.CardHeader {
+	font-weight: bolder;
+}
+{% endhighlight %}
 
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : ej.DataManager(window.employeeView).executeLocal(ej.Query().take(2)),
+		rowTemplate : "#templateData", // row template
+		columns : [
+			{ headerText: "Photo", width: 30 },
+			{ headerText: 'Employee Details', width: 70 }
+		]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Row_images/Row_img3.png)
+![](Row_images/Row_img3.jpeg)
 
-## Customize Hover and AltRow 
 
-[`enableAltRow`](/js/api/ejgrid#members:enablealtrow "enableAltRow") and [`enableRowHover`](/js/api/ejgrid#members:enablerowhover "enableRowHover") are graphical features in **Grid** that are used to enable alternate row color in **Grid** and enable hover effects while hovering over row cells. By default, these two features are enabled in **Grid**. In this section, you can learn how to cutomize alternative rows color and hover color in the **ejGrid** controls.
+## Alternate row styling
+
+Alternate row styling enhances the readability of grid rows by setting different background color for every alternate row. You can enable the [alternative](http://help.syncfusion.com/js/api/ejgrid#members:enablealtrow "") rows styling in grid by using [`enableAltRow`](http://help.syncfusion.com/js/api/ejgrid#members:enablealtrow "") property. 
+
+By default its value is `true`, so the following code example describes the how to turn off alternate row behavior.
 
 {% highlight html %}
-
- <style>
-  .e-grid .e-alt_row {
-  background-color: lightgreen !important;
-  }
-  .e-grid .e-hover {
-  background: black !important;
-  }
-</style>
-<body>
-  <div id="Grid"></div>
-  <script type="text/javascript">
-    $(function(){
-        $("#Grid").ejGrid({
-            // the datasource "window.gridData" is referred from jsondata.min.js
-            dataSource: window.gridData,
-            enableRowHover: true,
-            enableAltRow: true,
-            allowPaging: true,
-            pageSettings: { pageSize: 5 },
-        });
-    });
-  </script>
-</body>
-
-
+<div id="Grid"></div>
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		enableAltRow : false,
+		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Row_images/Row_img4.png)
+![](Row_images/Row_img4.jpeg)
+
 

@@ -5,425 +5,202 @@ description: selection
 platform: js
 control: Grid
 documentation: ug
----
+--- 
 
 # Selection
 
-The Selection property is used to highlight a row that you select. 
+[Selection](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "") provides an interactive support to highlight the row, cell or column that you select. Selection can be done through simple Mouse down or Keyboard interaction. To enable selection, set [`allowSelection`](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "") as `true`. 
 
-## Types of selection
+## Types of Selection
 
- There are two types of Selections. 
+There are two types of selections available in grid. They are
 
-* Single
-* Multiple
+1. Single 
+2. Multiple 
 
-Single selection is used to select a single row, cell or column in Grid. In Multiple selection you can select more than one row, cell or column. Refer to the following code examples of Selection types.
+Single Selection
 
-### Single Selection
+[Single](http://help.syncfusion.com/js/api/ejgrid#members:selectiontype "") selection is an interactive support to select a specific row, cell or column in grid by mouse or keyboard interactions. To enable single selection by setting [`selectionType`](http://help.syncfusion.com/js/api/ejgrid#members:selectiontype "") property as `single` and also set [`allowSelection`](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "") property as `true`.
 
-By default, the selection type is “**Single**”.
+Multiple Selections
 
-#### Selection Modes
+[Multiple](http://help.syncfusion.com/js/api/ejgrid#members:selectiontype "") selections is an interactive support to select a group of rows, cells or columns in grid by mouse or keyboard interactions. To enable multiple selections by set [`selectionType`](http://help.syncfusion.com/js/api/ejgrid#members:selectiontype "") property as `multiple` and also set [`allowSelection`](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "") property as `true`.
 
-**Row**
+### Row Selection
 
-By default, the selection mode of the grid is “**Row**”. This enables you to select the row in the grid. Refer to the following code example. Using [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property in [`selectionSettings`]( /js/api/ejgrid#members:selectionsettings "selectionSettings") property to enable row selection.
+[Row selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "") is enabled by set [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "") as `row`. For random row selection, press “Ctrl + mouse left” click and for continuous row selection press “Shift + mouse left” click on the grid rows. To unselect selected rows, by press “Ctrl + mouse left click on selected row.
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          allowSelection: true,
-          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row] },
-          columns: [
-                  { field: "OrderID", headerText: "Order ID", width: 75 },
-                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                  { field: "Freight", width: 75, format: "{0:C}" },
-                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                  { field: "ShipCity", headerText: "Ship City", width: 110 }
-          ]
-      });
-  });
-</script>
+{% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowSelection : true,
+		selectionType : "multiple",
+		selectionSettings: {selectionMode: ["row"] },
+		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
+	});
+});
 {% endhighlight %}
 
 
 
-The following screenshot displays the result of the above code.
+The following output is displayed as a result of the above code example
 
-![](/js/Grid/Selection_images/Selection_img1.png)
+![](selection_images/selection_img1.jpeg)
 
-**Cell**
 
-Cell selection can be enabled using the [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property. This enables you to select a cell in the grid. Refer to the following code example.
+### Cell Selection
+
+[Cell selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "") is enabled by set [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "") as `cell`. For random cell selection, press “Ctrl + mouse left” click and for continuous cell selection, press “Shift + mouse left” click on the grid cells. To unselect selected cells, press “Ctrl + mouse left on selected cell” click.
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          allowSelection: true,
-          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Cell] },
-          columns: [
-                  { field: "OrderID", headerText: "Order ID", width: 75 },
-                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                  { field: "Freight", width: 75, format: "{0:C}" },
-                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                  { field: "ShipCity", headerText: "Ship City", width: 110 }
-          ]
-      });
-  });
-</script>
-
-
 {% endhighlight %}
 
-
-
-The following screenshot displays the result of the above code.
-
-![](/js/Grid/Selection_images/Selection_img2.png)
-
-**Column**
-
-Column selection can be enabled using the [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property. This enables you to select a particular column in the grid. Refer to the following code example.
-
-{% highlight html %}
-
-
-<div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          allowSelection: true,
-          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Column] },
-          columns: [
-                  { field: "OrderID", headerText: "Order ID", width: 75 },
-                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                  { field: "Freight", width: 75, format: "{0:C}" },
-                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                  { field: "ShipCity", headerText: "Ship City", width: 110 }
-          ]
-      });
-  });
-</script>
-
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowSelection : true,
+		selectionType : "multiple",
+		selectionSettings: {selectionMode: ["cell"] },
+		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
+	});
+});
 {% endhighlight %}
 
+The following output is displayed as a result of the above code example
+
+![](selection_images/selection_img2.jpeg)
 
 
-The following screenshot displays the result of the above code.
+#### Cell Selection Mode
 
-![](/js/Grid/Selection_images/Selection_img3.png)
+There are two types of cell selection available in grid. They are
 
-### Multiple Selection
+1. Continuous Selection
+2. Box Selection
 
-Multiple selection can be enabled using [`selectionType`](/js/api/ejgrid#members:selectiontype "selectionType") property. This allows you to select more than one row, cell and column at a time.
+Box cell selection is to select multiple cells vertically based on the initial column index selection.  
 
-#### Selection Modes
-
-**Row**
-
-By default, the selection mode of the grid is “**Row**”. This enable you to select the row in the grid. Refer to the following code example.
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          allowSelection: true,
-          //select the multiple records in the grid.
-          selectionType: "multiple",   // you can also enable to select single record{selectionType:"single"}
-          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row] },
-          columns: [
-                  { field: "OrderID", headerText: "Order ID", width: 75 },
-                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                  { field: "Freight", width: 75, format: "{0:C}" },
-                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                  { field: "ShipCity", headerText: "Ship City", width: 110 }
-          ]
-      });
-  });
-</script>
-
-
-
 {% endhighlight %}
 
-
-
-The following screenshot displays the result of the above code.
-
-![](/js/Grid/Selection_images/Selection_img4.png)
-
-**Cell**
-
-Cell selection can be enabled using the [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property. This enables you to select a cell in the grid. Refer to the following code example.
-
-{% highlight html %}
-
-
-<div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          allowSelection: true,
-          //select the multiple records in the grid.
-          selectionType: "multiple",   // you can also enable to select single record{selectionType:"single"}
-          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Cell] },
-          columns: [
-                  { field: "OrderID", headerText: "Order ID", width: 75 },
-                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                  { field: "Freight", width: 75, format: "{0:C}" },
-                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                  { field: "ShipCity", headerText: "Ship City", width: 110 }
-          ]
-      });
-  });
-</script>
-
-
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowSelection : true,
+		selectionType : "multiple",
+		selectionSettings: {selectionMode: ["cell"], cellSelectionMode: "box" },
+		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
+	});
+});
 {% endhighlight %}
 
+The following output is displayed as a result of the above code example
+
+![](selection_images/selection_img3.jpeg)
 
 
-The following screenshot displays the result of the above code.
+### Column Selection
 
-![](/js/Grid/Selection_images/Selection_img5.png)
+[Column selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "") can be enabled by setting [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "") as `column`. For random column selection, press “Ctrl + mouse left click” and for continuous column selection, press “Shift + mouse left click” on the top of the column header. To unselect selected columns, press “Ctrl + mouse left click” on top of the selected column header.
 
-**Column**
-
-Column selection can be enabled using the [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property. This enables you to select a particular column in the grid. Refer to the following code example.
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          allowSelection: true,
-          //select the multiple records in the grid.
-          selectionType: "multiple",   // you can also enable to select single record{selectionType:"single"}
-          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Column] },
-          columns: [
-                  { field: "OrderID", headerText: "Order ID", width: 75 },
-                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                  { field: "Freight", width: 75, format: "{0:C}" },
-                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                  { field: "ShipCity", headerText: "Ship City", width: 110 }
-          ]
-      });
-  });
-</script>
-
-
-
 {% endhighlight %}
 
-
-
-The following screenshot displays the result of the above code.
-
-![](/js/Grid/Selection_images/Selection_img6.png)
-
-## Enable All Modes of selection
-
-You can also enable all the three modes of selection using [`selectionMode`](/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property. Refer to the following code example.
-
-{% highlight html %}
-
-<div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          allowSelection: true,
-          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row, ej.Grid.SelectionMode.Cell, ej.Grid.SelectionMode.Column] },
-          columns: [
-                  { field: "OrderID", headerText: "Order ID", width: 75 },
-                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                  { field: "Freight", width: 75, format: "{0:C}" },
-                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                  { field: "ShipCity", headerText: "Ship City", width: 110 }
-          ]
-      });
-  });
-</script>
-
-
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowSelection : true,
+		selectionType : "multiple",
+		selectionSettings: {selectionMode: ["column"] },
+		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
+	});
+});
 {% endhighlight %}
 
+The following output is displayed as a result of the above code example
+
+![](selection_images/selection_img4.jpeg)
 
 
-The following screenshot displays the result of the above code.
+## Touch options
 
-![](/js/Grid/Selection_images/Selection_img7.png)
+While using grid in a [touch](http://help.syncfusion.com/js/api/ejgrid#members:enabletouch "") device environment, there is an option for multi selection through single tap on the row and it will shows a popup with multi-selection symbol. Tap the icon to enable multi selection in a single tap.
 
-## Enable toggle
-
-You can toggle the selection using the [`enableToggle`](/js/api/ejgrid#members:selectionsettings-enabletoggle "enableToggle") property. This provides support to toggle selection based on the Boolean value specified to the property. By default the [`enableToggle`](/js/api/ejgrid#members:selectionsettings-enabletoggle "enableToggle") property is set to disabled. Refer to the following code example.
+The following code example describes the above behavior. 
 
 {% highlight html %}
-
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          allowSelection: true,
-          selectionSettings: { selectionMode: [ej.Grid.SelectionMode.Row], enableToggle: true },
-          columns: [
-                  { field: "OrderID", headerText: "Order ID", width: 75 },
-                  { field: "CustomerID", headerText: "Customer ID", width: 80 },
-                  { field: "EmployeeID", headerText: "Employee ID", width: 75 },
-                  { field: "Freight", width: 75, format: "{0:C}" },
-                  { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:dd/MM/yyyy}" },
-                  { field: "ShipCity", headerText: "Ship City", width: 110 }
-          ]
-      });
-  });
-</script>
-
 {% endhighlight %}
 
-
-
-The following screenshot displays the result of the above code.
-
-![](/js/Grid/Selection_images/Selection_img8.png)
-
-select Row
-{:.caption}
-
-![](/js/Grid/Selection_images/Selection_img9.png)
-
-Unselect Row
-{:.caption}
-
-## Customize Selection Color
-
-In this section, you can learn how to customize or override selection background color through css. The following code example is for Selection color customization.
-
-{% highlight html %}
-
-<head>
-  <style type="text/css">
-    .e-grid td.e-active {
-    background-color: lightseagreen !important;
-    }
-  </style>
-</head>
-<body>
-  <div id="Grid"></div>
-  <script type="text/javascript">
-    $(function () {
-        $("#Grid").ejGrid({
-            // the datasource "window.gridData" is referred from jsondata.min.js
-            dataSource: window.gridData,
-            //select the multiple records in the grid.
-            selectionType: "multiple",  // you can also enable to select single
-            allowPaging: true,
-            pageSettings: { pageSize: 8 }
-        });
-    });
-  </script>
-</body>
-
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowSelection : true,
+		selectionType : "multiple",
+		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
+	});
+});
 {% endhighlight %}
 
 
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Selection_images/Selection_img10.png)
+![](selection_images/selection_img5.jpeg)
 
-## Get selected record data
 
-In this section, you can learn how to get selected records from one **Grid** and how this selected record is used to update datasource of another **Grid**. 
+## Toggle Selection
+
+The [Toggle](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-enabletoggle "") selection allows to perform selection and unselection of the particular row, cell or column.  To enable toggle selection, set [`enableToggle`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-enabletoggle "") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "") as `true`. If you click on the selected row, cell or column then it will be unselected and vice versa. 
+
+I> If multi selection is enabled, then in first click on any selected row (without pressing Ctrl key), it will clear multi selection and in second click on the same row, it will be unselected. 
+
+The following code example describes the above behavior. 
 
 {% highlight html %}
-
-
-  <div class="label1">Master Grid </div>
-<div id="MasterGrid"></div>
-<div class="label1">Detail Grid</div>
-<div id="DetailGrid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#MasterGrid").ejGrid({
-          // the datasource "window.employeeData" is referred from templatelocaldata.js
-          dataSource: ej.DataManager(window.employeeData).executeLocal(ej.Query().take(5)),
-          rowSelected: function (args) {
-              var employeeID = args.data.EmployeeID;
-              var detaildata = ej.DataManager(window.gridData).executeLocal(ej.Query().where("EmployeeID", ej.FilterOperators.equal, employeeID, false).take(10));
-              var gridObj = $("#DetailGrid").ejGrid("instance");
-              gridObj.model.dataSource = ej.DataManager(detaildata.slice(0, 5));
-              $("#DetailGrid").ejGrid("refreshContent");
-          },
-      });
-  
-      $("#DetailGrid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(10)),
-          allowPaging: false
-      });
-  
-      $("#MasterGrid").ejGrid("selectRows", 0);
-  
-  });
-</script>
-
-
+<div id="Grid"></div>
 {% endhighlight %}
 
-
-
-The following output is displayed as a result of the above code example.
-
-![](/js/Grid/Selection_images/Selection_img11.png)
+{% highlight js %}
+$(function () {
+	// the datasource "window.gridData" is referred from jsondata.min.js
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		allowPaging : true,
+		enableRowHover : false,
+		selectionSettings: { enableToggle: true },
+		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
 
