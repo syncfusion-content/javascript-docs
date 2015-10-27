@@ -5,160 +5,281 @@ description: grouping
 platform: js
 control: Grid
 documentation: ug
----
+--- 
 
 # Grouping
 
-**Grouping** is an important feature in **Grid**. If you want to analysis any particular records, based on its category, you can simply group that column and analyse records based on category. There are several flexible options, such as grouped buttons, group close etc. To enable **Grouping** in **Grid**, add [`allowGrouping`](/js/api/ejgrid#members:allowgrouping "allowGrouping") at **Grid Initialize**. 
+[Grouping](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "") is a collection of records that belong to particular category. When grouping is applied, the data is organized into a hierarchical structure based on corresponding column values. To enable grouping, set [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "") property as `true`.
+
+Columns can be grouped by simply dragging the column header and drop on the group drop area or simply click the group button which is displayed in the column. By default, sorting is done while grouping the column.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowGrouping : true,
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img1.jpeg)
+
 
 ## Initial Grouping
 
-In **ejGrid**, there is an option to group columns at **Grid Initialize** that is rendered through [`groupedColumns`](/js/api/ejgrid#members:groupsettings-groupedcolumns "groupedColumns") and [`allowGrouping`](/js/api/ejgrid#members:allowgrouping "allowGrouping") property in **Grid**. This is an important option because in some scenarios, need to analyse **Grid** records with **Grouping** may arise, at the time of initialize.
+While initializing the grid itself, there is an option to group the column and display it in a hierarchical structure. To enable initial grouping, set array of column’s [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") name to be grouped to [`groupSettings.groupedColumns`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-groupedcolumns "") property. Define the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") name in the array format.
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          //window.gridData is refered from jsondata.min.js
-          dataSource: window.gridData,
-          groupSettings: { groupedColumns: ["ShipCity"] },
-          allowGrouping: true,
-          allowPaging: true,
-  
-      });
-  });
-</script>
-
-
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowGrouping : true,
+		groupSettings: { groupedColumns: ["ShipCountry"] },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Grouping_images/Grouping_img1.png)
+![](Grouping_images/Grouping_img2.jpeg)
 
-## Group Buttons
 
-Group buttons is one of the features under Grouping. It is helpful to do Grouping easily without doing drag and drop. To enable this feature use [`showToggleButton`](/js/api/ejgrid#members:groupsettings-showgroupedcolumn "showToggleButton") at **Grid Initialize**.  
+## Multi-Column Grouping
+
+Group multiple columns by simply drag and drop the columns one by one from column header to group drop area.
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          //window.gridData is refered from jsondata.min.js
-          dataSource: window.gridData,
-          allowGrouping: true,
-          groupSettings: { showToggleButton: true, groupedColumns: ["ShipCity"] },
-          allowPaging: true,
-  
-      });
-  });
-  
-</script>
-
-
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowGrouping : true,
+		// More than one column is grouped while initializing the grid itself.
+		groupSettings: { groupedColumns: ["ShipCountry"] },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Grouping_images/Grouping_img2.png)
+![](Grouping_images/Grouping_img3.jpeg)
 
-## Hide Ungroup Button
 
-In **GroupDropArea**, grouped columns have an option to ungroup a column using **GroupButton**. It is easier than using Drag and Drop to ungroup columns.  By default this **UngroupButton** is visible. If you want to hide this button, you can use [`showUngroupButton`](/js/api/ejgrid#members:groupsettings-showungroupbutton "showUngroupButton") property to hide columns.
+## Group buttons
 
-![](/js/Grid/Grouping_images/Grouping_img3.png)
+To do grouping easily without doing drag and drop column header by setting [`showToggleButton`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showtogglebutton "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") as `true`.
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          //window.gridData is refered from jsondata.min.js
-          dataSource: window.gridData,
-          groupSettings: { showUngroupButton: false, groupedColumns: ["ShipCity"] },
-          allowGrouping: true,
-          allowPaging: true,
-      });
-  });
-</script>
-
-
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowGrouping : true,
+		groupSettings: { showToggleButton: true },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Grouping_images/Grouping_img4.png)
+![](Grouping_images/Grouping_img4.jpeg)
+
+
+## Hide Ungroup button
+
+Hide ungroup button from grouped columns which is in the group drop area by setting the [`showUngroupButton`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showungroupbutton "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") as `false`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowGrouping : true,
+		groupSettings: { showUngroupButton: false },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img5.jpeg)
+
+
+## Hide Grouped Column
+
+While grouping a particular column, there is an option to hide the grouped columns from grid. To enable hide grouped column option, set [`showGroupedColumn`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showgroupedcolumn "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") as `false`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowGrouping : true,
+		groupSettings: { showGroupedColumn: false },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img6.jpeg)
+
 
 ## AutoSize Drop Area
 
-If you drag any header to Group column in Grid, it expands smoothly its Group Drop Area portion. In some scenarios, you need to stop this type of animation while grouping. You can use the [`enableDropAreaAutoSizing`](/js/api/ejgrid#members:groupsettings-enabledropareaautosizing "enableDropAreaAutoSizing") property to stop animation in Group Drop Area.
+Drag any header and move it on the group drop area, then its portion expands smoothly. Stop this animation by setting [`enableDropAreaAutoSizing`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-enabledropareaautosizing "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") as `false`.
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-    
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          //window.gridData is refered from jsondata.min.js
-          dataSource: window.gridData,
-          groupSettings: { enableDropAreaAutoSizing: false },
-          allowGrouping: true,
-          allowPaging: true,
-      });
-  });
-</script>
-
-
-
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowGrouping : true,
+		groupSettings: { enableDropAreaAutoSizing: false },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Grouping_images/Grouping_img5.png)
+![](Grouping_images/Grouping_img7.jpeg)
 
-## Hide Group Drop Area from Grid
 
-In **ejGrid**, there is an option to hide the **Group Drop Area** at **Grid Initialize** that is achieved through the [`showDropArea`](/js/api/ejgrid#members:groupsettings-showdroparea "showDropArea") property of a [`groupSettings`](/js/api/ejgrid#members:groupsettings "groupSettings") in **the Grid.** The default value is **true**. By using this property, you can avoid ungrouping or further grouping of a column after the initial column grouping.
+## Hide Drop area
 
-When the [`showDropArea`](/js/api/ejgrid#members:groupsettings-showdroparea "showDropArea") property is set to **false**, the **groupDropArea** is hidden. 
+To avoid ungrouping or further grouping of a column after an initial column grouping by setting [`showDropArea`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showdroparea "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") as `false`.
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          allowGrouping: true,
-          groupSettings: { groupedColumns: ["ShipCountry"],showDropArea: false }
-      });
-  });
-</script>
-
-
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		allowGrouping : true,
+		groupSettings: { showDropArea: false, groupedColumns: ["ShipCountry"] },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Grouping_images/Grouping_img6.png)
+![](Grouping_images/Grouping_img8.jpeg)
+
+
+## Group Caption Format / Group Caption Template
+
+Using [`captionFormat`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-captionformat "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") you can render any type of JsRender templates or customizing the group caption text. 
+
+You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "").
+
+T> [1. It’s a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender". <BR> 2. Using locale property of `GroupCaptionFormat`, you can only customize the default group caption text.] 
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+<script id="template" type="text/x-jsrender">
+{{:field}} - {{:key}} 
+<button id="btn{{:field}}{{:key}}" class="btn">Collapse</button>
+</script>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowPaging : true,
+		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"],
+		allowGrouping : true,
+		groupSettings: { captionFormat: "#template" },
+		actionComplete : function (args) {
+			$(".btn").ejButton({
+				click : "btnClick"
+			});
+		}
+	});
+});
+
+function btnClick(args) {
+	var gridObj = $("#Grid").data("ejGrid");
+	gridObj.expandCollapse(this.element.parent().prev());
+	$("#" + this._id).ejButton("model.text", args.model.text == "Collapse" ? "Expand" : "Collapse");
+}
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Grouping_images/Grouping_img9.jpeg)
+
+
+![](Grouping_images/Grouping_img10.jpeg)
+
 

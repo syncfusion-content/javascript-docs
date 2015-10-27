@@ -5,1368 +5,1433 @@ description: editing
 platform: js
 control: Grid
 documentation: ug
----
+--- 
 
 # Editing
 
-**Essential Studio JavaScript Grid** has built-in support for editing **Grid** content. This can be achieved by defining an edit option for the Grid. You must provide toolbar support for editing records and validation support while editing the record. 
+The grid control has support for dynamic insertion, updation and deletion of records. You can start the edit either by double click on the particular row or selecting the required row and click on Edit icon in toolbar. Also, you can start adding new record either by clicking on insert icon in toolbar or on external button which is bound to call [`addRecord`](http://help.syncfusion.com/js/api/ejgrid#methods:addrecord "") method of grid.  `Save` and `Cancel` while on edit mode is possible using respective toolbar icon in grid.
+
+Deletion of the record is possible by selecting the required row and clicking on Delete icon in toolbar. 
+
+The primary key for the data source should be defined in [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") definition for editing to work properly. In [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") definition, particular primary column’s [`isPrimaryKey`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isprimarykey "") property should be set to `true`. Refer the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "") for more information.
+
+T> [1. In grid, the primary key column will automatically set to read only while editing the row, but you can specify primary key column value while adding a new record. <BR> 2. The column which is specified as [`isIdentity`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isidentity ""), then it is in readonly mode while editing or adding a record. And also auto incremented value is assigned to that [`isIdentity`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isidentity "") column.]
 
 ## Toolbar with edit option
 
-**Essential Studio JavaScript Grid** provides toolbar support and it can be customized. It contains the following built-in [**toolbar items**](/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbar items") : 
+Using [toolbar](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "") you can show all the CRUD related action which is rendered at the top of the grid header. To enable toolbar and toolbar items, set [`showToolbar`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-showtoolbar "") property as true and [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems ""). The default toolbar items are `Add`, `Edit`, `Delete`, `Update` and `Cancel`.
 
-* Add
-* Edit
-* Delete
-* Update
-* Cancel
+I> [For [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "") property you can assign either `string` value (“add”) or `enum` value (`ej.Grid.ToolBarItems.Add`)]
 
-
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-          allowPaging: true,
-          columns: [
-              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-              { field: "CustomerID", headerText: "Customer ID" },
-              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right" },
-              { field: "ShipCity", headerText: "Ship City" },
-              { field: "Verified", headerText: "Verified" }
-          ]
-  
-      });
-  });
-  
-</script>
-
-
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {	
+	$("#Grid").ejGrid({
+		dataSource : window.gridData, // the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		toolbarSettings : {	showToolbar : true, toolbarItems : ["add", "edit", "delete", "update", "cancel"] },
+		editSettings:{ allowEditing: true, allowAdding: true, allowDeleting: true},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "EmployeeID" },
+			{ field: "ShipCity" },
+			{ field: "ShipCountry" }
+		]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Editing_images/Editing_img1.png)
-
-## Cell edit type
-
-Essential Studio JavaScript Grid supports column edit type by using delegated controls for specific data types. They are:
-
-* **CheckBox** control for boolean data type.
-* **NumericTextBox** control for integers, double, and decimal types.
-* **InputTextBox** control for string data types.
-* **DatePicker** control for date data.
-* **DateTimePicker** control for date-time data.
-* **DropDownList** control for list of data.
-
-The edit type of every column can be customized using the [`editType`](/js/api/ejgrid#members:columns-edittype "editType") property.
-
-{% highlight html %}
+![](Editing_images/Editing_img1.jpeg)
 
 
- <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-          allowPaging: true,
-          columns: [
-              { field: "OrderID", headerText: "Order ID", IsPrimaryKey: true, textAlign: "right" },
-              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right",editType: ej.Grid.EditingType.Numeric },
-              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
-              { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
-              { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
-          ]
-      });
-  });
-  
-</script>
+## Cell edit type and its params
 
-{% endhighlight %}
+The edit type of bound column can be customized using [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns ""). The following Essential JavaScript controls are supported inbuilt by [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype ""). You can set the [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "") based on specific data type of the column. 
+
+ [`CheckBox`](http://help.syncfusion.com/js/api/ejcheckbox# "") control for boolean data type.
+ [`NumericTextBox`](http://help.syncfusion.com/js/api/ejtextboxes# "") control for integers, double, and decimal data types.
+ `InputTextBox` control for string data type.
+ [`DatePicker`](http://help.syncfusion.com/js/api/ejdatepicker# "") control for date data type.
+ [`DateTimePicker`](http://help.syncfusion.com/js/api/ejdatetimepicker# "") control for date-time data type.
+ [`DropDownList`](http://help.syncfusion.com/js/api/ejdropdownlist# "") control for list of data type.
 
 
 
-The following output is displayed as a result of the above code example.
+And also you can define the model for all the editTypes controls while editing through [`editParams`](http://help.syncfusion.com/js/api/ejgrid#members:columns-editparams "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "").
 
-![](/js/Grid/Editing_images/Editing_img2.png)
+The following table describes [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "") and their corresponding [`editParams`](http://help.syncfusion.com/js/api/ejgrid#members:columns-editparams "") of the specific data type of the column.
 
-### External DataSource for DropDown EditType Column
+<table>
+<tr>
+<td>
+EditType<br/><br/></td><td>
+EditParams<br/><br/></td><td>
+Example<br/><br/></td></tr>
+<tr>
+<td>
+CheckBox<br/><br/></td><td>
+{{'[http://help.syncfusion.com/js/api/ejcheckbox](http://help.syncfusion.com/js/api/ejcheckbox#"")'| markdownify }} <br/><br/></td><td>
+editParams: { checked: true }<br/><br/></td></tr>
+<tr>
+<td>
+NumericTextBox <br/><br/></td><td>
+{{'[http://help.syncfusion.com/js/api/ejtextboxes](http://help.syncfusion.com/js/api/ejtextboxes#"")'| markdownify }} <br/><br/></td><td>
+editParams: { decimalPlaces: 2, value:5  }<br/><br/></td></tr>
+<tr>
+<td>
+InputTextBox <br/><br/></td><td>
+-<br/><br/></td><td>
+-<br/><br/></td></tr>
+<tr>
+<td>
+DatePicker <br/><br/></td><td>
+{{'[http://help.syncfusion.com/js/api/ejdatepicker](http://help.syncfusion.com/js/api/ejdatepicker#"")'| markdownify }} <br/><br/></td><td>
+editParams: {  buttonText : "Now" }<br/><br/><br/><br/></td></tr>
+<tr>
+<td>
+DateTimePicker<br/><br/></td><td>
+{{'[http://help.syncfusion.com/js/api/ejdatetimepicker](http://help.syncfusion.com/js/api/ejdatetimepicker#"")'| markdownify }} <br/><br/></td><td>
+editParams: {  enabled: true }<br/><br/><br/><br/></td></tr>
+<tr>
+<td>
+DropDownList<br/><br/></td><td>
+{{'[http://help.syncfusion.com/js/api/ejdropdownlist](http://help.syncfusion.com/js/api/ejdropdownlist#"")'| markdownify }} <br/><br/></td><td>
+editParams: {  allowGrouping: true }<br/><br/><br/><br/></td></tr>
+</table>
+T> [1. If [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "") is not set then by default it will display the input element (“stringedit”) while editing a column. <BR> 2. For [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "") property you can assign either `string` value (“numericedit”) or `enum` value (`ej.Grid.EditingType.Numeric`)]
 
-By default, the datasource for Dropdown Edit Column is set by Grid Control from its datasource. You can also bind external datasource to the Dropdown control of corresponding column in edit mode by using “**dataSource**” Grid Column property.
-
-N> _The external datasource must be given in a structure that it should contain properties “text” and “value” that holds the data._
-
-
-{% highlight html %}
-
-  <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-          allowPaging: true,
-          columns: [
-              { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },
-              { field: "CustomerID", headerText: 'Customer ID', width: 90 },
-              { field: "EmployeeID", headerText: 'Employee ID', textAlign: ej.TextAlign.Right, width: 80 },
-              { field: "Freight", headerText: 'Freight', width: 80 },
-              { field: "ShipCountry", headerText: 'Ship Country', width: 90, editType: ej.Grid.EditingType.Dropdown, dataSource: countries }
-          ]
-      });
-  });
-  
-</script>
-{% endhighlight %}
-
-
-
-![](/js/Grid/Editing_images/Editing_img3.png)
-
-## Edit Template
-
-**Edit Template** feature is used to create a custom editor to edit column values. **Edit Template** has three functions. Using [`ediTemplate`](/js/api/ejgrid#members:columns-edittemplate "ediTemplate") property we are able to achieve Edit Template feature.
-
-* **Create** – It is used to create the control at time of initialize
-* **Read** –  It is used to read the input value at time of save
-* **Write** – It is used to assign the value to control at time of editing
-
-The following code example is for **Edit Template.**
+The following code example describes the above behavior.
 
 {% highlight html %}
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, },
-          toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
-          columns: [
-                  { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },
-                  { field: "CustomerID", headerText: 'Customer ID', width: 90 },
-                  {
-                      field: "EmployeeID", headerText: 'Employee ID',
-                      editTemplate: {
-                          create: function () {
-                              return "<input>";
-                          },
-                          read: function (args) {
-                              return args.ejMaskEdit("get_StrippedValue");
-                          },
-                          write: function (args) {
-                              args.element.ejMaskEdit({ width: "100%", maskFormat: "9", value: args.rowdata !== undefined ? args.rowdata["EmployeeID"] : "" });
-                              }
-                      }, textAlign: ej.TextAlign.Right, width: 80,
-                  },
-                  { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, width: 80, format: "{0:C0}" },
-                  { field: "ShipName", headerText: 'Ship Name', width: 150 },
-                  { field: "ShipCountry", headerText: 'Ship Country', editType: ej.Grid.EditingType.Dropdown, width: 90, }
-          ]
-      });
-  });
-</script>
-
 {% endhighlight %}
 
-
-
-The forllowing screen shot showed the out put of the above code snippet.
-
-![](/js/Grid/Editing_images/Editing_img4.png)
-
-## Edit Mode
-
-Essential Studio JavaScript Grid supports eight modes of editing feature in grid. They are:
-
-* Normal row editing
-* Inline form editing
-* Inline template form editing
-* Dialog editing
-* Dialog template form editing
-* External form editing
-* External template form editing
-* Batch editing
-
-### Normal Editing
-
-This feature allows you to edit various fields of a single record, simultaneously. The row goes to editable state. The following code example shows you how to set [`editMode`](/js/api/ejgrid#members:editsettings-editmode "editMode") as **Normal**.
-
-{% highlight html %}
-
- <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: {
-              allowEditing: true, allowAdding: true, allowDeleting: true,
-              editMode: ej.Grid.EditMode.Normal
-          },
-          allowPaging: true,
-          columns: [
-              { field: "OrderID", headerText: "Order ID", isPrimarKey: true, textAlign: "right" },
-              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
-              { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
-              { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
-          ]
-      });
-  });
-  
-</script>
-
-
+{% highlight js %}
+$(function () {
+	// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		toolbarSettings : { showToolbar : true, toolbarItems : ["add", "edit", "delete", "update", "cancel"] },
+		editSettings:{ allowEditing: true, allowAdding: true, allowDeleting: true},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID", editType: "stringedit" },
+			{ field: "Freight", editType: "numericedit", editParams: { decimalPlaces: 2 } },
+			{ field: "ShipCity", editType: "dropdownedit", editParams: { enableAnimation: true } },
+			{ field: "ShipCountry" },
+			{ field: "OrderDate", editType: "datepicker", format: "{0:MM/dd/yyyy}", editParams: { buttonText: "Now" } },
+			{ field: "Verified", editType: "booleanedit", editParams: { showRoundedCorner: true } }
+		]
+	});
+});
 {% endhighlight %}
-
-
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Editing_images/Editing_img5.png)
+![](Editing_images/Editing_img2.jpeg)
 
-### Dialog Editing
 
-The **Dialog Edit** feature allows you to edit data, using a dialog box that has fields associated with the data record being edited. You can only edit the data stored in the fields that you have rendered to be visible. The following code example shows you how to set [`editMode`](/js/api/ejgrid#members:editsettings-editmode "editMode")as **Dialog**.
+## Cell Edit Template
+
+To create a custom editor to edit column values by using [`editTemplate`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittemplate "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns ""). It has three functions, they are
+
+1. `create` - It is used to create the control at time of initialize.
+2. `read` - It is used to read the input value at time of save.
+3. `write` - It is used to assign the value to control at time of editing.
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: {
-              allowEditing: true, allowAdding: true, allowDeleting: true,
-              editMode: ej.Grid.EditMode.Dialog
-          },
-          allowPaging: true,
-          columns: [
-              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
-              { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
-              { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
-          ]
-      });
-  });
-  
-</script>
-
-
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		toolbarSettings : { showToolbar : true, toolbarItems : ["add", "edit", "delete", "update", "cancel"] },
+		editSettings:{ allowEditing: true, allowAdding: true, allowDeleting: true},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "Freight" },
+			{ field: "ShipCountry" },
+			{
+				field : "ShipPostalCode",
+				editTemplate : {
+					create : function () {
+						return "<input>";
+					},
+					read : function (args) {
+						return args.ejMaskEdit("get_UnstrippedValue");
+					},
+					write : function (args) {
+						args.element.ejMaskEdit({
+						maskFormat : "99-99-9999",
+						value : args.rowdata["ShipPostalCode"]
+						});
+					}
+				}
+			}
+		]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Editing_images/Editing_img6.png)
+![](Editing_images/Editing_img3.jpeg)
 
-### Inline Form Editing
 
-This feature allows you to edit various fields of a single record, simultaneously. It is called inline because it is shown in between two rows, called as rows of control. After you have edited a row, the inline form is displayed. 
+## Edit Modes
+
+### Inline 
+
+Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") as `normal`, then the row itself changed as an edited row.
+
+I> [For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") property you can assign either `string` value (“normal”) or `enum` value (`ej.Grid.EditMode.Normal`)]
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: {
-              allowEditing: true, allowAdding: true, allowDeleting: true,
-              editMode: ej.Grid.EditMode.InlineForm
-          },
-          allowPaging: true,
-          pageSettings: { pageSize: 8 },
-          columns: [
-              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
-              { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
-              { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
-          ]
-      });
-  });
-  
-</script>
-
-
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			editMode : "normal"
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "Freight", editType: "numericedit" },
+			{ field: "ShipCountry", editType: "dropdownedit" },
+			{ field: "OrderDate",editType: "datepicker", format: "{0:dd/MM/yyyy}"}
+		]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Editing_images/Editing_img7.png)
+![](Editing_images/Editing_img4.jpeg)
 
-### External Form Editing
 
-The **External Form Edit Mode** helps you edit various data entries in the **Grid**, one at a time, using an external edit form.
+### Inline Form
 
-This is different from the **Dialog Editing** mode in that it allows you to see the other entries in the **Grid** while you are editing one.
+Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") as `inlineform`, then edit form will be inserted next to row which is going to edit and that has fields associated with the data record being edited.
 
-You can position the edit form either in the top-right corner or the bottom-left corner (by default) of the **Grid**. The following code example shows you how to set [`editMode`](/js/api/ejgrid#members:editsettings-editmode "editMode")as **External Form**.
+The following code example describes the above behavior.
 
 {% highlight html %}
-
- <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: {
-              allowEditing: true, allowAdding: true, allowDeleting: true,
-              editMode: ej.Grid.EditMode.ExternalForm,
-              formPosition: ej.Grid.FormPosition.BottomLeft
-          },
-          allowPaging: true,
-          pageSettings: { pageSize: 8 },
-          columns: [
-              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown },
-              { field: "OrderDate", headerText: "Order Date", editType: ej.Grid.EditingType.DatePicker, format: "{0:MM/dd/yyyy}" },
-              { field: "Verified", headerText: "Verified", editType: ej.Grid.EditingType.Boolean }
-          ]
-      });
-  });
-  
-</script>
-
+<div id="Grid"></div>
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			editMode : "inlineform"
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "Freight", editType: "numericedit" },
+			{ field: "ShipCountry", editType: "dropdownedit" },
+			{ field: "OrderDate",editType: "datepicker", format: "{0:dd/MM/yyyy}"}
+		]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Editing_images/Editing_img8.png)
+![](Editing_images/Editing_img5.jpeg)
 
-### Template Form Editing
+
+### Inline Template Form
+
+To edit the records using Inline template form, set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") as `inlineformtemplate` and specify the template ID to ` [editSettings.inlineFormTemplateID](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-inlineformtemplateid "")`. Using this template, you can edit the fields that are not bound to grid columns.
+
+While using template form, you can change the HTML elements in it to appropriate JS controls based on the column type. This can be achieved by using [`actionComplete`](http://help.syncfusion.com/js/api/ejgrid#events:actioncomplete "") event of grid.
+
+T> [1. `value`, attribute is used to bind the corresponding field value while editing. <BR> 2. `name`, attribute is used to get the changed field values while save the edited record.]
+
+1. It’s a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender".
+2. For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") property you can assign either `string` value (“inlineformtemplate”) or `enum` value (`ej.Grid.EditMode.InlineTemplateForm`)
+
+The following code example describes the above behaviour.
+
+{% highlight html %}
+<div id="Grid"></div>
+<script id="template" type="text/template">
+   <table cellspacing="10">
+		<tr>
+			<td>Order ID</td>
+			<td>
+				<input id="OrderID" name="OrderID" disabled="disabled" value="{{:OrderID}}" />
+			</td>
+			<td>Customer ID</td>
+			<td>
+				<input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
+			</td>
+		</tr>
+		<tr>
+			<td>Employee ID</td>
+			<td>
+				<input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+			</td>
+			<td>Ship City</td>
+			<td>
+				<select id="ShipCity" name="ShipCity">
+					<option value="Argentina">Argentina</option>
+					<option value="Austria">Austria</option>
+					<option value="Belgium">Belgium</option>
+					<option value="Brazil">Brazil</option>
+					<option value="Canada">Canada</option>
+					<option value="Denmark">Denmark</option>
+				</select>
+			</td>
+		</tr>
+   </table>
+</script>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			editMode : "inlineformtemplate",
+			inlineFormTemplateID : "#template"
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "ShipCity" }
+		],
+		actionComplete : "complete"
+	});
+});
+
+function complete(args) {
+	$("#EmployeeID").ejNumericTextbox();
+	$("#Freight").ejNumericTextbox();
+	$("#ShipCity").ejDropDownList();
+}
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img6.jpeg)
+
+
+![](Editing_images/Editing_img7.jpeg)
+
+
+### Dialog
+
+Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") as `dialog`, to edit data using a dialog box that has fields associated with the data record being edited.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			editMode : "dialog"
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "Freight", editType: "numericedit" },
+			{ field: "ShipCountry", editType: "dropdownedit" },
+			{ field: "OrderDate",editType: "datepicker", format: "{0:dd/MM/yyyy}"}
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img8.jpeg)
+
+
+### Dialog Template Form
 
 You can edit any of the fields pertaining to a single record of data and apply it to a template so that the same format is applied to all the other records that you may edit later.
 
-You can also edit the fields that are not visible in the **Grid** using this template. You are provided with three template editing support in **Grid**.
+Using this template support, you can edit the fields that are not bound to grid columns.
 
-* Inline template form editing
-* Dialog template form editing
-* External template form editing
+To edit the records using Inline template form, by setting [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") as dialogtemplate and specify the template id to [`dialogEditorTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-dialogeditortemplateid "") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "").
 
-#### Inline Template Form Editing
+While using template, you can change the elements that are defined in the `template`, to appropriate JS controls based on the column type. This can be achieved by using [`actionComplete`](http://help.syncfusion.com/js/api/ejgrid#events:actioncomplete "") event of grid.
 
-In Inline Template, you can specify the template inside the script tag and select the type as text/template. Only then the HTML elements defined in the template will not be displayed in the browser. You can define the template as follows. Using [`inlineFormTemplateID`](/js/api/ejgrid#members:editsettings-inlineformtemplateid "inlineFormTemplateID") we are able to set the form template for editing.
+T> [1. `value` attribute is used to bind the corresponding field value while editing <BR> 2. `name` attribute is used to get the changed field values while save the edited record. <BR> 3. For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") property you can assign either `string` value (“dialogtemplate”) or `enum` value (`ej.Grid.EditMode.DialogTemplate`)]
+
+The following code example describes the above behaviour.
 
 {% highlight html %}
-
-<script id="template" type="text/template">
-  <table cellspacing="10">
-      <tr>
-          <td style="text-align: right;">
-              Order ID
-          </td>
-          <td style="text-align: left">
-              <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
-          </td>
-          <td style="text-align: right;">
-              Customer ID
-          </td>
-          <td style="text-align: left">
-              <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
-          </td>
-      </tr>
-      <tr>
-          <td style="text-align: right;">
-              Employee ID
-          </td>
-          <td style="text-align: left">
-              <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
-          </td>
-          <td style="text-align: right;">
-              Ship City
-          </td>
-          <td style="text-align: left">
-              <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
-          </td>
-      </tr>
-      <tr>
-          <td style="text-align: right;">
-              Freight
-          </td>
-          <td style="text-align: left">
-              <input id="Freight" name="Freight" value="{{: Freight}}" />
-          </td>
-      </tr>
-  </table>
-</script>
-
-   <!-- Now you can assign the template id to the InlineFormTemplateId property of edit.-->
-
 <div id="Grid"></div>
 <script id="template" type="text/template">
-  <table cellspacing="10">
-      <tr>
-          <td style="text-align: right;">
-              Order ID
-          </td>
-          <td style="text-align: left">
-              <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
-          </td>
-          <td style="text-align: right;">
-              Customer ID
-          </td>
-          <td style="text-align: left">
-              <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
-          </td>
-      </tr>
-      <tr>
-          <td style="text-align: right;">
-              Employee ID
-          </td>
-          <td style="text-align: left">
-              <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
-          </td>
-          <td style="text-align: right;">
-              Ship City
-          </td>
-          <td style="text-align: left">
-              <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
-          </td>
-      </tr>
-      <tr>
-          <td style="text-align: right;">
-              Freight
-          </td>
-          <td style="text-align: left">
-              <input id="Freight" name="Freight" value="{{: Freight}}" />
-          </td>
-      </tr>
-  </table>
+   <table cellspacing="10">
+		<tr>
+			<td>Order ID</td>
+			<td>
+				<input id="OrderID" name="OrderID" disabled="disabled" value="{{:OrderID}}" class="e-field e-ejinputtext" style="width:116px;height:28px" />
+            </td>
+			<td>Customer ID</td>
+			<td>
+				<input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
+			</td>
+		</tr>
+		<tr>
+			<td>Employee ID</td>
+			<td>
+				<input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+			</td>
+			<td>Ship City</td>
+			<td>
+				<select id="ShipCity" name="ShipCity">
+					<option value="Argentina">Argentina</option>
+					<option value="Austria">Austria</option>
+					<option value="Belgium">Belgium</option>
+					<option value="Brazil">Brazil</option>
+					<option value="Canada">Canada</option>
+					<option value="Denmark">Denmark</option>
+				</select>
+			</td>
+		</tr>
+   </table>
 </script>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-  
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: {
-              allowEditing: true, allowAdding: true, allowDeleting: true,
-  
-              editMode: ej.Grid.EditMode.InlineTemplateForm,
-  
-              inlineFormTemplateID: "#template"
-          },
-          allowPaging: true,
-          pageSettings: { pageSize: 6 },
-          columns: [
-              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-          ]
-      });
-  });
-</script>
-
 {% endhighlight %}
-
-The following output is displayed as a result of the above code example.
-
-![](/js/Grid/Editing_images/Editing_img9.png)
-
-In the above screenshot you can see that the elements are not rendered based on the type of the column. For example, in Freight column, the textbox is rendered instead of NumericTextBox.
-
-While using template, you can change the elements that are defined in the template, to appropriate control based on the column type. 
-
-Through the [`actionComplete`](/js/api/ejgrid#events:actioncomplete "actionComplete") **Grid** event, you can achieve this.
-
-{% highlight html %}
-
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-  
-          //. . . .
-     actionComplete: "complete",
-          //. . . .
-  
-      });
-  });
-  function complete(args) {
-      $("#EmployeeID").ejNumericTextbox();
-      $("#Freight").ejNumericTextbox();
-      $("#ShipCity").ejDropDownList();
-  }
-</script>
-
-
-{% endhighlight %}
-
-
-
-Now, the elements defined in the templates, are changed to JavaScript controls. You can see the entire code example for Template editing as follows.
-
-{% highlight html %}
-
-
- <div id="Grid"></div>
-<script id="template" type="text/template">
-  <table cellspacing="10">
-      <tr>
-          <td style="text-align: right;">
-              Order ID
-          </td>
-          <td style="text-align: left">
-              <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" />
-          </td>
-          <td style="text-align: right;">
-              Customer ID
-          </td>
-          <td style="text-align: left">
-              <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" />
-          </td>
-      </tr>
-      <tr>
-          <td style="text-align: right;">
-              Employee ID
-          </td>
-          <td style="text-align: left">
-              <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
-          </td>
-          <td style="text-align: right;">
-              Ship City
-          </td>
-          <td style="text-align: left">
-              <input id="ShipCity" name="ShipCity" value="{{: ShipCity}}" class="e-field e-ejinputtext valid" style="width: 116px; height: 28px" />
-          </td>
-  
-      </tr>
-      <tr>
-          <td style="text-align: right;">
-              Freight
-          </td>
-          <td style="text-align: left">
-              <input id="Freight" name="Freight" value="{{: Freight}}" />
-          </td>
-  
-      </tr>
-  </table>
-</script>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: {
-              allowEditing: true, allowAdding: true, allowDeleting: true,
-              editMode: ej.Grid.EditMode.InlineTemplateForm,
-              inlineFormTemplateID: "#template"
-          },
-          allowPaging: true,
-          pageSettings: { pageSize: 6 },
-          columns: [
-              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-          ],
-          actionComplete: "complete"
-      });
-  });
-  function complete(args) {
-      $("#EmployeeID").ejNumericTextbox();
-      $("#Freight").ejNumericTextbox();
-      $("#ShipCity").ejDropDownList();
-  }
-</script>
-    
-{% endhighlight %}
-
-
-
-The following output is displayed as a result of the above code example.
-
-![](/js/Grid/Editing_images/Editing_img10.png)
-
-#### External Template Form Editing
-
-The above mentioned procedure applies to **ExternalTemplate** editing feature also. Use the given code example instead of setting inlineTemplateForm as [editMode`](/js/api/ejgrid#members:editsettings-editmode "editMode"). Using [`externalFormTemplateID`](/js/api/ejgrid#members:editsettings-externalformtemplateid "externalFormTemplateID") we are able to set external template for editing.
 
 {% highlight js %}
-
- 
- $(function() { // Document is ready.
-     $("#Grid").ejGrid({
-         //. . . .
-         editSettings: {
-             allowEditing: true,
-             allowAdding: true,
-             allowDeleting: true,
-             editMode: ej.Grid.editMode.ExternalFormTemplate,
-             externalFormTemplateID: "#template"
-         },
-         //. . . .
-     });
- });
-
-
-
-{% endhighlight %}
-
-
-
-The following screenshot shows External Template Form Editing.
-
-![](/js/Grid/Editing_images/Editing_img11.png)
-
-#### Dialog Template Editing
-
-The above mentioned procedure applies to **DialogTemplate** editing feature also. Use the given code example instead of setting for DialogTemplate as [`editMode`](/js/api/ejgrid#members:editsettings-editmode "editMode"). Using [`dialogEditorTemplateID`](/js/api/ejgrid#members:editsettings-dialogeditortemplateid "dialogEditorTemplateID") property to set the dialog template for editing.
-
-{% highlight js %}
-
-$(function() { // Document is ready.
-    $("#Grid").ejGrid({
-        //. . . .
-        editSettings: {
-            allowEditing: true,
-            allowAdding: true,
-            allowDeleting: true,
-            editMode: ej.Grid.EditMode.DialogTemplate,
-            dialogEditorTemplateID: "#template"
-        },
-        //. . . .
-    });
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			editMode : "dialogtemplate",
+			dialogEditorTemplateID : "#template"
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "ShipCity" }
+		],
+		actionComplete : "complete"
+	});
 });
 
-
+function complete(args) {
+	$("#EmployeeID").ejNumericTextbox();
+	$("#Freight").ejNumericTextbox();
+	$("#ShipCity").ejDropDownList();
+}
 {% endhighlight %}
-
-
-
-The following screenshot shows Dialog Template Form Editing.
-
-![](/js/Grid/Editing_images/Editing_img12.png)
-
-### Batch Editing
-
-This feature allows you to edit various fields of the **Grid**, simultaneously, with the ease of Excel-like functionality in editing data.
-
-Edited data is marked on the **Grid,** so that you know which fields or cells have been edited.
-These markers are not shown after the updated data is rendered. The following code example shows you how to enable Excel-like editing, also called **Batch editing**, in **Grid**.
-
-{% highlight html %}
-
-
-  <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: {
-              allowEditing: true, allowAdding: true, allowDeleting: true,
-              editMode: ej.Grid.EditMode.Batch
-          },
-          allowPaging: true,
-          pageSettings: { pageSize: 6 },
-          columns: [
-              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-              { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-              { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-              { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-          ]
-      });
-  });
-</script>
-
-
-{% endhighlight %}
-
-
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Editing_images/Editing_img13.png)
-
-When the Save or Cancel button is clicked, or performing an action before you save the edited records, the Confirmation message is displayed. 
-
-The following screenshot shows the Confirmation Dialog box.
-
-![](/js/Grid/Editing_images/Editing_img14.png)
+![](Editing_images/Editing_img9.jpeg)
 
 
+![](Editing_images/Editing_img10.jpeg)
 
-## Validation
 
-**Essential JavaScript Grid** supports all the standard validation methods of **jquery**. Using this feature you can validate the value of the edited record cell before the edited record cell values are saved.
+### External Form
 
-For validation you can refer the following two **jquery** validation script files.
+Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") as externalform, then the edit form is opened out of grid content, which has fields associated with the data record being edited.
 
-1. jquery.validate.min.js
+The following code example describes the above behavior.
 
-2. jquery.validate.unobtrusive.min.js
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
 
-### jQuery Validation Methods
+{% highlight js %}
+$(function () {
+	// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			editMode : "externalform"
+		},
+		allowPaging : true,
+		pageSettings : {
+			pageSize : 7
+		},
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "Freight", editType: "numericedit" },
+			{ field: "ShipCountry", editType: "dropdownedit" },
+			{ field: "OrderDate", editType: "datepicker",format: "{0:dd/MM/yyyy}"}
+		]
+	});
+});
+{% endhighlight %}
 
-The following are jquery validation methods.
+The following output is displayed as a result of the above code example.
 
-_List of jquery validation methods_
+![](Editing_images/Editing_img11.jpeg)
+
+
+Form Position:
+
+You can [position](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-formposition "") an external edit form in the following two ways. 
+
+1. Top-right
+2. Bottom left
+
+This can be achieved by set [`formPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-formposition "") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "") as “topright” or “bottomleft”.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			editMode : "externalform",
+			formPosition : "topright"
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "Freight", editType: "numericedit" },
+			{ field: "ShipCountry", editType: "dropdownedit" }
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img12.jpeg)
+
+
+### External Template Form
+
+You can edit any of the fields pertaining to a single record of data and apply it to a template so that the same format is applied to all the other records that you may edit later.
+
+Using this template support, you can edit the fields that are not bound to grid columns.
+
+To edit the records using Inline template form, by setting [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") as externalformtemplate and specify the template id to [`externalFormTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-externalformtemplateid "") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "").
+
+While using template, you can change the elements that are defined in the template, to appropriate JS controls based on the column type. This can be achieved by using [`actionComplete`](http://help.syncfusion.com/js/api/ejgrid#events:actioncomplete "") event of grid.
+
+T> [1. `value` attribute is used to bind the corresponding field value while editing. <BR> 2. `name` attribute is used to get the changed field values while save the edited record. <BR> 3. For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") property you can assign either `string` value (“externalformtemplate”) or `enum` value (`ej.Grid.EditMode.ExternalFormTemplate`)]
+
+The following code example describes the above behaviour.
+
+{% highlight html %}
+<div id="Grid"></div>
+<script id="template" type="text/template">
+<table cellspacing="10">
+   <tr>
+      <td>Order ID</td>
+      <td>
+         <input id="OrderID" name="OrderID" disabled="disabled" value="{{:OrderID}}" class="e-field e-ejinputtext" style="width:116px;height:28px" />           
+      </td>
+      <td>Customer ID</td>
+      <td>
+         <input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
+      </td>
+   </tr>
+   <tr>
+      <td>Employee ID</td>
+      <td>
+         <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+      </td>
+      <td>Ship City</td>
+      <td>
+         <select id="ShipCity" name="ShipCity">
+            <option value="Argentina">Argentina</option>
+            <option value="Austria">Austria</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Canada">Canada</option>
+            <option value="Denmark">Denmark</option>
+         </select>
+      </td>
+   </tr>
+</table>
+</script>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			editMode : "externalformtemplate",
+			externalFormTemplateID : "#template"
+		},
+		allowPaging : true,
+		pageSettings : {
+			pageSize : 5
+		},
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "ShipCity" }
+		],
+		actionComplete : "complete"
+	});
+});
+
+function complete(args) {
+	$("#EmployeeID").ejNumericTextbox();
+	$("#Freight").ejNumericTextbox();
+	$("#ShipCity").ejDropDownList();
+}
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img13.jpeg)
+
+
+![](Editing_images/Editing_img14.jpeg)
+
+
+### Batch / Excel-like
+
+Users can start editing by typing into any cell. Edited cell will be marked while navigating to next cell or any other row, so that you know which fields or cells has been edited. Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "") as `batch` to enable batch editing.
+
+I> [Refer the KB [link](http://www.syncfusion.com/kb/3016/how-to-suppress-grid-confirmation-messages# "") for “How to suppress grid confirmation messages” in batch mode]
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			editMode : "batch"
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "Freight", editType: "numericedit" },
+			{ field: "ShipCountry", editType: "dropdownedit" },
+			{ field: "OrderDate", editType: "datepicker", format: "{0:dd/MM/yyyy}" }
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img15.jpeg)
+
+
+## Confirmation messages
+
+To show the [confirm dialog](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showconfirmdialog "") while saving or discarding the batch changes (discarding during the grid action like filtering, sorting and paging). To enable confirmation dialog, set [`showConfirmDialog`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showconfirmdialog "") as `true`.
+
+I> [[`showConfirmDialog`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showconfirmdialog "") property is only for batch editing mode.]
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			editMode : "batch"
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "Freight", editType: "numericedit" },
+			{ field: "ShipCountry", editType: "dropdownedit" },
+			{ field: "OrderDate", editType: "datepicker", format: "{0:dd/MM/yyyy}"}
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img16.jpeg)
+
+
+To show delete confirm dialog while deleting a record by setting the [`showDeleteConfirmDialog`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showdeleteconfirmdialog "") as true.
+
+I> [[`showDeleteConfirmDialog`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showdeleteconfirmdialog "") property is for all type of [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "").]
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+	$("#Grid").ejGrid({
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			showDeleteConfirmDialog : true
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "Freight", editType: "numericedit" },
+			{ field: "ShipCountry", editType: "dropdownedit" },
+			{ field: "OrderDate", editType: "datepicker", format: "{0:dd/MM/yyyy}"}
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img17.jpeg)
+
+
+## Column Validation
+
+[Validate](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "") the value of the edited or added record cell before the values are saved.
+
+The below validation script files are needed when editing is enabled with validation.
+
+ jquery.validate.min.js
+ jquery.validate.unobtrusive.min.js
+### Jquery Validation
+
+
+You can set validation rules using [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns ""). The following are Jquery validation methods.
+
+__List__ __of__ __Jquery__ __validation__ __methods__
 
 <table>
 <tr>
-<th>
-<b>Rules</b></th><th>
-<b>Description</b></th></tr>
+<td>
+Rules<br/><br/></td><td>
+Description<br/><br/></td></tr>
 <tr>
 <td>
-Required</td><td>
- Requires an element.</td></tr>
+required<br/><br/></td><td>
+Requires an element.<br/><br/></td></tr>
 <tr>
 <td>
-Remote</td><td>
- Requests a resource to check the element for validity.</td></tr>
+remote<br/><br/></td><td>
+Requests a resource to check the element for validity.<br/><br/></td></tr>
 <tr>
 <td>
-minlength</td><td>
- Requires the element to be of given minimum length.</td></tr>
+minlength<br/><br/></td><td>
+Requires the element to be of given minimum length.<br/><br/></td></tr>
 <tr>
 <td>
-maxlength</td><td>
- Requires the element to be of given maximum length.</td></tr>
+maxlength<br/><br/></td><td>
+Requires the element to be of given maximum length.<br/><br/></td></tr>
 <tr>
 <td>
-rangelength</td><td>
- Requires the element to be in given value range.</td></tr>
+rangelength<br/><br/></td><td>
+Requires the element to be in given value range.<br/><br/></td></tr>
 <tr>
 <td>
-Min</td><td>
- The element requires a given minimum.</td></tr>
+min<br/><br/></td><td>
+The element requires a given minimum.<br/><br/></td></tr>
 <tr>
 <td>
-Max</td><td>
- The element requires a given maximum.</td></tr>
+max<br/><br/></td><td>
+The element requires a given maximum.<br/><br/></td></tr>
 <tr>
 <td>
-range</td><td>
- Requires the element to be in a given value range.</td></tr>
+range<br/><br/></td><td>
+Requires the element to be in a given value range.<br/><br/></td></tr>
 <tr>
 <td>
-email</td><td>
- The element requires a valid email.</td></tr>
+email<br/><br/></td><td>
+The element requires a valid email.<br/><br/></td></tr>
 <tr>
 <td>
-url</td><td>
- The element requires a valid url</td></tr>
+url<br/><br/></td><td>
+The element requires a valid url<br/><br/></td></tr>
 <tr>
 <td>
-Date</td><td>
- Requires the element to be a date.</td></tr>
+date<br/><br/></td><td>
+Requires the element to be a date.<br/><br/></td></tr>
 <tr>
 <td>
-dateISO</td><td>
- The element requires an ISO date.</td></tr>
+dateISO<br/><br/></td><td>
+The element requires an ISO date.<br/><br/></td></tr>
 <tr>
 <td>
-number</td><td>
- The element requires a decimal number.</td></tr>
+number<br/><br/></td><td>
+The element requires a decimal number.<br/><br/></td></tr>
 <tr>
 <td>
-digits</td><td>
- The element requires digits only.</td></tr>
+digits<br/><br/></td><td>
+The element requires digits only.<br/><br/></td></tr>
 <tr>
 <td>
-creditcard</td><td>
- Requires the element to be a credit card number.</td></tr>
+creditcard<br/><br/></td><td>
+Requires the element to be a credit card number.<br/><br/></td></tr>
 <tr>
 <td>
-equalTo</td><td>
- Requires the element to be the same as another.</td></tr>
+equalTo<br/><br/></td><td>
+Requires the element to be the same as another.<br/><br/></td></tr>
 </table>
+Grid supports all the standard validation methods of Jquery, please refer the Jquery validation documentation [link](http://jqueryvalidation.org/documentation/# "") for more information.
 
-
-The following code example shows you how to include the jquery validation support for **Grid** while editing the records. We can set validation rules using `validationRules` property.
+The following code example describes the above behavior.
 
 {% highlight html %}
- 
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: {
-              allowEditing: true, allowAdding: true, allowDeleting: true
-          },
-          allowPaging: true,
-          columns: [
-                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right", validationRules: { required: true } },
-                  { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String },
-                  { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                  { field: "Freight", textAlign: "right", editType: ej.Grid.EditingType.Numeric, validationRules: { range: [0, 1000] } },
-                  { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-          ]
-      });
-  });
-</script>
-
-
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			showDeleteConfirmDialog : true
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true, validationRules: { required: true, number: true } },
+			{ field: "CustomerID", validationRules: { required: true, minlength: 3 } },
+			{ field: "ShipCity" },
+			{ field: "Freight", editType: "numericedit", validationRules: { range: [0, 1000] } },
+			{ field: "ShipCountry" }
+		]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Editing_images/Editing_img15.png)
+![](Editing_images/Editing_img18.jpeg)
+
 
 ### Custom Validation
 
-In addition to jquery validation methods, you can also add your own custom validation methods for a specific column. The following code example shows you how to specify the custom validation for a specific column.
+In addition to Jquery validation methods, you can also add your own custom validation methods for a specific column. Information for calling custom validator function using [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns ""). 
+
+Using `messages` property of [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "") you can specify the error message for that column.
+
+Grid supports all the standard custom validation methods of Jquery, please refer the Jquery validation documentation [link](http://jqueryvalidation.org/jQuery.validator.addMethod# "") for more information
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
- <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $.validator.addMethod("customCompare", function (value, element, params) {
-          return element.value > params[0] && element.value < params[1]
-      }, "Freight value must be between 1 and 9");
-  
-      $.validator.addMethod("customRegex", function (value, element, params) {
-          if (element.value.length == params)
-              return true;
-          return false;
-      }, "Customer ID must be 5 characters");
-  
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: {
-              allowEditing: true, allowAdding: true, allowDeleting: true
-          },
-          allowPaging: true,
-          columns: [
-                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right", validationRules: { required: true } },
-                  { field: "CustomerID", headerText: "Customer ID", editType: ej.Grid.EditingType.String, validationRules: { customRegex: 5 } },
-                  { field: "Freight", textAlign: "right", editType: ej.Grid.EditingType.Numeric },
-                  { field: "EmployeeID", headerText: "Employee ID", textAlign: "right", editType: ej.Grid.EditingType.Numeric, validationRules: { customCompare: [1, 9] } },
-                  { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-          ]
-      });
-  });
-</script>
-
-
+<div id="Grid"></div>
 {% endhighlight %}
 
+{% highlight js %}
+$(function () {
+	$.validator.addMethod("customCompare", function (value, element, params) {
+		return element.value > params[0] && element.value < params[1]
+	}, "Freight value must be between 0 and 1000");
 
+	$.validator.addMethod("customRegex", function (value, element, params) {
+		if (element.value.length == params)
+			return true;
+		return false;
+	}, "Customer ID must be 5 characters");
+
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			showDeleteConfirmDialog : true
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true, validationRules: { required: true, number: true } },
+			{ field: "CustomerID", validationRules: { customRegex: 5 } },
+			{ field: "ShipCity" },
+			{ field: "Freight", editType: "numericedit", validationRules: { customCompare: [0, 1000] } },
+			{ field: "ShipCountry" }
+		]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Editing_images/Editing_img16.png)
+![](Editing_images/Editing_img19.jpeg)
 
-## CRUD Operation With Server-Side
 
-The **Server-Side CRUD** operation can be performed by using the following adaptor methods in **ejGrid**.
+## Persisting data in Server
 
-1. Url Adaptor
-2. RemoteSaveAdaptor
+Edited data can be persisted in database using RESTful web services. 
 
-The **Server-Side** function is declared with the following parameters for each editing functionality.
+All the CRUD operations in grid are done through DataManager. Datamanger have an option to bind all the CRUD related data in server side. Please refer the link to know about the [DataManager](http://help.syncfusion.com/js/datamanager/overview# "").
 
-_Parameters Table_
+In the below section, we have explained about how to get the edited data details in server side using URLAdaptor. 
+
+For you information ODataAdaptor persist date in server as OData protocol.
+
+URL Adaptor
+
+You can use the `UrlAdaptor` of [`ejDataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "") when binding datasource from remote data. At initial load of Grid, using URL property of DataManager, data are fetched from remote data and binded to Grid. You can map CRUD operation in Grid to Server-Side Controller action using the properties `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl` and `batchUrl`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		dataSource : ej.DataManager({
+			url : "Home/DataSource",
+			updateUrl : "Home/Update",
+			insertUrl : "Home/Insert",
+			removeUrl : "Home/Delete",
+			adaptor : “UrlAdaptor”
+		}),
+		allowPaging : true,
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true
+		},
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel]
+		},
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "EmployeeID"},
+			{ field: "Freight", editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, format: "{0:C}" },
+			{ field: "ShipName" },
+			{ field: "ShipCountry"}
+		]
+	});
+});
+{% endhighlight %}
+
+Also when you use `UrlAdaptor`, you need to return the data as `JSON` and the JSON object must contain field name as `result` with its value as dataSource and one more field name as `count` with its value as dataSource total records count.
+
+The following code example describes the above behavior.
+
+{% highlight cs %}
+public ActionResult DataSource(DataManager dm)
+{
+	IEnumerable DataSource = OrderRepository.GetAllRecords();
+	DataResult result = new DataResult();
+	DataOperations operation = new DataOperations();
+	result.result = DataSource;
+	result.count = result.result.AsQueryable().Count();
+	if (dm.Skip > 0)
+		result.result = operation.PerformSkip(result.result, dm.Skip);
+	if (dm.Take > 0)
+		result.result = operation.PerformTake(result.result, dm.Take);
+	return Json(result, JsonRequestBehavior.AllowGet);
+}
+public class DataResult
+{
+	public IEnumerable result { get; set; }
+	public int count { get; set; }
+}
+{% endhighlight %}
+
+The grid actions (sorting, filtering, paging, searching, and aggregates) details are obtained in the “DataManager” class. While initializing the grid, paging only enabled hence in the below screen shot paging details are bound to the DataManager class.
+
+Please refer the below screen shot.
+
+![](Editing_images/Editing_img20.jpeg)
+
+
+And also using “DataOperations” class methods you can perform grid action in server side. The in-build methods that we have provided in the DataOperations class can be listed below.
+
+ PerformSorting
+ PerformFiltering
+ PerformSearching
+ PerformSkip
+ PerformTake
+ PerformWhereFilter
+ PerformSelect
+ Execute
+
+Accessing CRUD action request details in server side:
+
+The “Server-Side” function must be declared with the following parameter name for each editing functionality.
+
+__Parameters__ __Table__
 
 <table>
-   <tr>
-      <th>
-         <b>Action</b>
-      </th>
-      <th>
-         <b>Parameter Name</b>
-      </th>
-      <th>
-         <b>Example</b>
-      </th>
-   </tr>
-   <tr>
-      <td rowspan = "2">
-         Update, Insert
-      </td>
-      <td rowspan = "2">
-         value
-      </td>
-      <td>
-         public ActionResult Update(EditableOrder value){}
-      </td>
-   </tr>
-   <tr>
-      <td>
-         public ActionResult Insert(EditableOrder value){}
-      </td>
-   </tr>
-   <tr>
-      <td>
-         Remove
-      </td>
-      <td>
-         key
-      </td>
-      <td>
-         public ActionResult Remove(int key){}
-      </td>
-   </tr>
-   <tr>
-      <td>
-         Batch Add
-      </td>
-      <td>
-         added
-      </td>
-      <td rowspan = "3">
-        public ActionResult BatchUpdate(List&lt;Orders&gt; changed, List&lt;Orders&gt; added, List&lt;Orders&gt; deleted){}(int key){}
-      </td>
-   </tr>
-   <tr>
-      <td>Batch Update</td>
-      <td> changed </td>
-   </tr>
-   <tr>
-      <td>Batch Delete</td>
-      <td> deleted</td>
-   </tr>
+<tr>
+<td>
+Action<br/><br/></td><td>
+Parameter Name<br/><br/></td><td>
+Example<br/><br/></td></tr>
+<tr>
+<td>
+Update,Insert<br/><br/></td><td>
+value<br/><br/></td><td>
+public ActionResult Update(EditableOrder value){ }<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+public ActionResult Insert(EditableOrder value){ }<br/><br/></td></tr>
+<tr>
+<td>
+Remove<br/><br/></td><td>
+key<br/><br/></td><td>
+public ActionResult Remove(int key){ }<br/><br/></td></tr>
+<tr>
+<td>
+Batch Add<br/><br/></td><td>
+added<br/><br/></td><td>
+public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key){ }<br/><br/></td></tr>
+<tr>
+<td>
+Batch Update<br/><br/></td><td>
+changed<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+Batch Delete<br/><br/></td><td>
+deleted<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+Crud Update,<br/><br/>Crud Remove,<br/><br/>Crud Insert<br/><br/></td><td>
+value, action<br/><br/></td><td>
+public ActionResult CrudUrl(EditableOrder value, string action){ }<br/><br/></td></tr>
 </table>
+Insert Record:
 
+Using `insertUrl` property, you can specify the controller action mapping URL to perform insert operation in server side.
 
+The following code example describes the above behavior.
 
-### URL Adaptor
-
-You can use the [`UrlAdaptor`](/js/datamanager/data-adaptors#url-adaptor "UrlAdaptor") of ejDataManger when binding datasource from remote data. At initial load of **Grid**, using **URL** property of DataManager, data are fetched from remote data and binded to **Grid**. You can map **CRUD** operation in **Grid** to Server-Side Controller action using the properties `InsertURL`, `UpdateURL` and `RemoveURL`. We can set insert, update and remove url using ejDataManager properties `insertUrl,removeUrl` and `updateUrl.`
-
-Also when you use [`UrlAdaptor`](/js/datamanager/data-adaptors#url-adaptor "UrlAdaptor"), you need to return the data as **JSON** and the **JSON** object must contain field name as “result” with its value as dataSource and one more field name as “count” with its value as dataSource total records count.
-
-
-{% highlight html %}
-
-<div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          dataSource: ej.DataManager({ url: "Home/DataSource", updateUrl: "Home/Update", insertUrl: "Home/Insert", removeUrl: "Home/Delete", adaptor: “UrlAdaptor” }),
-          allowPaging: true,
-          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-          toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
-          columns: [
-                  { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, validationRules: { required: true, number: true }, width: 90 },
-                  { field: "CustomerID", headerText: 'Customer ID', validationRules: { required: true, minlength: 3 }, width: 90 },
-                  { field: "EmployeeID", headerText: 'Employee ID',  textAlign: ej.TextAlign.Right, width: 80, validationRules: { number: true } },
-                  { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] }, width: 80, format: "{0:C}" },
-                  { field: "ShipName", headerText: 'Ship Name', width: 150 },
-                  { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
-          ]
-      });
-  });
-</script>
-
-
+{% highlight cs %}
+public ActionResult Insert(EditableOrder value)
+{
+	//Insert record in database
+}
 {% endhighlight %}
 
-### remoteSave Adaptor
+The newly added record details are bound to the “value” parameter. Please refer the below image.
 
-The [`remoteSaveAdaptor`](/js/datamanager/data-adaptors#remotesave-adaptor "remoteSaveAdaptor") of DataManager can be used when you bind local data to **Grid** datasource. **CRUD** operations in **Grid** local data can be mapped to server-side controller using **CRUD URL’s** `InsertUrl`, `UpdateUrl` and `RemoveUrl`. We can set insert, update and remove url using ejDataManager properties `insertUrl, removeUrl` and `updateUrl.`
-
-When you use [`remoteSaveAdaptor`](/js/datamanager/data-adaptors#remotesave-adaptor "remoteSaveAdaptor"), server-side post back occurs only for **CRUD** actions in **Grid**. Rest of the **Grid** actions (paging, sorting, filtering, etc.,) can be handled at client-side itself.
-
-{% highlight html %}
+![C:/Users/maithiliyk/Desktop/Untitled.png](Editing_images/Editing_img21.jpeg)
 
 
-<div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          dataSource: ej.DataManager({ json: window.gridData, updateUrl: "Home/Update", insertUrl: "Home/Insert", removeUrl: "Home/Delete", adaptor: "remoteSaveAdaptor" }),
-          allowPaging: true,
-          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
-          toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
-          columns: [
-                  { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, validationRules: { required: true, number: true }, width: 90 },
-                  { field: "CustomerID", headerText: 'Customer ID', validationRules: { required: true, minlength: 3 }, width: 90 },
-                  { field: "EmployeeID", headerText: 'Employee ID',  textAlign: ej.TextAlign.Right, width: 80, validationRules: { number: true } },
-                  { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, validationRules: { range: [0, 1000] }, width: 80, format: "{0:C}" },
-                  { field: "ShipName", headerText: 'Ship Name', width: 150 },
-                  { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
-          ]
-      });
-  });
-</script>
+Update Record:
 
+Using `updateUrl` property, you can specify the controller action mapping URL to perform save/update operation in server side.
+
+The following code example describes the above behavior.
+
+{% highlight cs %}
+public ActionResult Update(EditableOrder value)
+{
+	//Update record in database
+}
 {% endhighlight %}
 
+The updated record details are bound to the “value” parameter. Please refer the below image.
+
+![](Editing_images/Editing_img22.jpeg)
 
 
-The output for the Server Binding of records is as follows:
+Delete Record:
 
-![](/js/Grid/Editing_images/Editing_img17.png)
+Using `removeUrl` property, you can specify the controller action mapping URL to perform delete operation in server side.
 
-Edit
-{:.caption}
+The following code example describes the above behavior.
 
-![](/js/Grid/Editing_images/Editing_img18.png)
+{% highlight cs %}
+public ActionResult Remove(int key)
+{
+	//Delete record in database
+}
+{% endhighlight %}
 
-Server Bind
-{:.caption}
+The deleted record primary key value is bound to the “key” parameter. Please refer the below image.
 
-![](/js/Grid/Editing_images/Editing_img19.png)
-
-Console Post
-{:.caption}
-
-## Editing Remote Data
-
-In general, the client-side controls cannot be directly bound to SQL Server database. To access or modify the database, you must create web services that will return the **JSON** data, based on the request made.  [**DataManager**](/js/datamanager/overview "DataManager") can be bound to any web services. For a quick start, you can use **ODataServices** like WebApi, WCF DataServices.
-
-Refer to the following steps to create WCF dataservice.
-
-The **Grid** control for **JavaScript** allows you to bind and edit data from the local server. Refer to the following steps to edit local server data.
-
-1. Open Visual Studio 2012. In the File menu, click New and select Project. The New Project Dialog box is opened.
-
-	![](/js/Grid/Editing_images/Editing_img20.png)
-
-	WCF Dataservice
-	{:.caption}
-
-2. Select ASP.NET Empty Web Application and click OK.
-
-3. Create empty folders named App_Data and Models in the root of the application.
-
-4. Add an HTML page in the root of the application. 
-
-5. Add the NORTHWND.MDF file into the App_Data folder, and the corresponding NORTHWND_log.ldf is created automatically.
-
-6. Right-click the Models folder in the Solution Explorer window and select the menu option Add New Item.
-
-7. In the Add New Item dialog, select the Data category.
+![C:/Users/maithiliyk/Desktop/Untitled.png](Editing_images/Editing_img23.jpeg)
 
 
+CRUD URL:
 
-   ![](/js/Grid/Editing_images/Editing_img21.png)
+Instead of specifying separate controller action method for CRUD (insert, update and delete)operation, using `crudUrl` property you can specify the controller action mapping URL to perform all the CRUD operation in server side using single method.
 
-   Creating a New Entity Data Model
-   {:.caption}
+The action parameter of `crudUrl` is used to get the corresponding CRUD action.
 
-8. Select the ADO.NET Entity Data Model template, give the Entity Data Model the name Northwind.edmx, and click the Add button. Click Add to launch the Data Model Wizard. 
+The following code example describes the above behavior.
 
-9. In the Choose Model Contents step, choose the Generate from database option and click Next.
-  
-    ![](/js/Grid/Editing_images/Editing_img22.png)
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
 
-    Entity Data Model Wizard
-    {:.caption}
-
-10. In the Choose Your Data Connection step, select the NORTHWND.MDF database connection, enter the entities connection settings name NORTHWNDEntities and click Next.
-	
-	 ![](/js/Grid/Editing_images/Editing_img23.png)
-
-	 Entity Data Model Wizard
-	 {:.caption}
-
-11. In the **Choose Your Database Objects** step, select all the database tables and click **Finish**.
-
-     ![](/js/Grid/Editing_images/Editing_img24.png)
-
-     Entity Data Model Wizard
-     {:.caption}
-
-    When you are finished, you can see the following image.
-
-	 ![](/js/Grid/Editing_images/Editing_img25.png)
-
-	 GridDemo
-	 {:.caption}
-
-12. Right-click the Models folder in the Solution Explorer window and select the Menu option Add New Item.
-
-13. In the Add New Item dialog, in the Web category, select WCF Data Service, enter Northwnd.svc in the Name textbox and click Add. 
-
-     ![](/js/Grid/Editing_images/Editing_img26.png)
-
-     Add New Item- GridDemo
-     {:.caption}
-
-14. The WCF Data Service file is created. Open the Nothwnd.svs.cs file and set the NORTHWNDEntities as a class for the DataService.
-
-    ~~~ csharp
-
-	public class Northwnd : DataService</* TODO: put your data source class name here.*/>
-	Replace the above line with the following:
-	public class Northwnd : DataService<NORTHWNDEntities>
-
-    ~~~
-
-
-
-15. Add the highlighted line in the Nothwnd.svs.cs.
-
-    ~~~ csharp
-	
-	public static void InitializeService(DataServiceConfiguration config) 
-	{
-		// TODO: Set rules to indicate which entity sets and service operations are visible, updatable, etc.
-		// Examples:
-		// config.SetEntitySetAccessRule("MyEntityset", EntitySetRights.AllRead);
-		// config.SetServiceOperationAccessRule("MyServiceOperation", ServiceOperationRights.All);
-		config.DataServiceBehavior.MaxProtocolVersion = DataServiceProtocolVersion.V3;
-		config.SetEntitySetAccessRule("*", EntitySetRights.All);
-	}
-    ~~~
-
-
-
-16. Refer to the following code sample to get the data from the local server.
-
-    ~~~ js
-
-	var dataManger = ej.DataManager
-	({
-					url: "/model/Northwnd.svc/Orders"
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		dataSource : ej.DataManager({
+			url : "Home/DataSource",
+			crudUrl : "Home/CrudUpdate",
+			adaptor : “UrlAdaptor”
+		}),
+		allowPaging : true,
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true
+		},
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel]
+		},
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "EmployeeID"},
+			{ field: "Freight", editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, format: "{0:C}" },
+			{ field: "ShipName" },
+			{ field: "ShipCountry"}
+		]
 	});
-
-    ~~~ 
-
-
-
-17. Add the following codes into the HTML page.
-
-{% highlight html %}
-
-
-
-  <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      var dataManger = ej.DataManager({
-          url: "/model/Northwnd.svc/Orders"
-      });
-      $("#Grid").ejGrid({
-          dataSource: dataManger,
-          toolbarSettings: {
-              showToolbar: true,
-              toolbarItems: [
-                 ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit,
-                 ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update,
-                 ej.Grid.ToolBarItems.Cancel
-              ]
-          },
-          editSettings: {
-              allowEditing: true, allowAdding: true, allowDeleting: true
-          },
-          allowPaging: true,
-          columns: [
-                  { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: "right" },
-                  { field: "CustomerID", headerText: "Customer ID" },
-                  { field: "ShipCity", headerText: "Ship City " },
-                  { field: "Freight", textAlign: "right" },
-                  { field: "ShipCountry", headerText: "Ship Country" },
-          ]
-      });
-  });
-</script>
-
-
-
+});
 {% endhighlight %}
 
+{% highlight js %}
+public ActionResult CrudUpdate(EditableOrder value, string action)
+{
+	//Delete record in database
+}
+{% endhighlight %}
+
+Please refer the below image to know about the action parameter
+
+![](Editing_images/Editing_img24.jpeg)
 
 
-The output for the above Grid creation with editing options code example is as follows.
+I> [If you specify `insertUrl` along with `CrudUrl` then while adding `insertUrl` only called.]
 
-![](/js/Grid/Editing_images/Editing_img27.png)
+Batch URL:
+
+The `batchUrl` property supports only for batch editing mode. You can specify the controller action mapping URL to perform Batch operation in server side.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		dataSource : ej.DataManager({
+			url : "Home/DataSource",
+			batchUrl : "Home/BatchUpdate",
+			adaptor : “UrlAdaptor”
+		}),
+		allowPaging : true,
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			editMode : "batch"
+		},
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel]
+		},
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "EmployeeID"},
+			{ field: "Freight", editType: ej.Grid.EditingType.Numeric, editParams: { decimalPlaces: 2 }, format: "{0:C}" },
+			{ field: "ShipName" },
+			{ field: "ShipCountry"}
+		]
+	});
+});
+{% endhighlight %}
+
+{% highlight cs %}
+public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key)
+{
+	//Save the batch changes in database
+}
+{% endhighlight %}
+
+Please refer the below image for more information about batch paramaters
+
+![](Editing_images/Editing_img25.jpeg)
+
 
 ## Adding New Row Position
 
-Adding new row position allows you to add new row in the top or bottom position that depends upon the requirement. 
+To add new row in the top or bottom [position](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "") of grid content that depends upon the requirement. Using [`rowPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "") you can specify add new row position.
 
-ejGrid supports two types of rowposition. Using [`rowPosition`](/js/api/ejgrid#members:editsettings-rowposition "rowPosition") property to assign row position for editing.They are
-
-* Top
-* Bottom
-
-The following code example illustrates you how to set rowPosition.
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-
-  <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {
-      // the datasource "window.gridData" is referred from jsondata.min.js
-      $("#Grid").ejGrid({
-          dataSource: windows.gridData,
-          allowPaging: true,
-          scrollSettings: { width: 500, height: 300 },
-          editSettings: { allowAdding: true, rowPosition: "bottom", allowEditing: true, allowDeleting: true },
-          allowScrolling: true,
-          columns: [
-                      { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right },
-                      { field: "CustomerID", headerText: "Employee ID" },
-                      { field: " EmployeeID ", headerText: "Frieght", textAlign: ej.TextAlign.Right },
-                      { field: "ShipCity", headerText: "Ship City", editType: ej.Grid.EditingType.Dropdown }
-          ]
-      });
-  });
-</script>
-
-
+<div id="Grid"></div>
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			rowPosition : "bottom"
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "ShipCity" },
+			{ field: "Freight", editType: "numericedit" },
+			{ field: "ShipCountry" }
+		]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-![](/js/Grid/Editing_images/Editing_img28.png)
+![](Editing_images/Editing_img26.jpeg)
 
-Adding new row position
-{:.caption}
 
-## Render grid with add new row
+## Render with blank row for easy add new
 
-In **ejGrid,** there is an option to show the newly add row at the bottom or top of the Grid content during **Grid Initialize** that is achieved by using [`showAddNewRow`](/js/api/ejgrid#members:showaddnewrow "showAddNewRow") property of [`editSettings`](/js/api/ejgrid#members:editsettings "editSettings") in **Grid**. The default value is **false**.
+The blank add new row is displayed in the grid content during grid initialization itself to add a new record easily. To enable show add new row by default, set [`showAddNewRow`](http://help.syncfusion.com/js/api/ejgrid#members:showaddnewrow "") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "") as `true`.
 
-This property helps you to add a new row dynamically and save the record either top or bottom of the **Grid**.
+The blank add new row is displayed either in the top or bottom of the corresponding page, its position is based on the [`rowPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "").
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
 <div id="Grid"></div>
-<script type="text/javascript">
-  $(function () {// Document is ready.
-      $("#Grid").ejGrid({
-          dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(10)),
-          editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, rowPosition: "bottom", showAddNewRow: true },
-          toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
-          columns: [
-                 { field: "OrderID", isPrimaryKey: true, headerText: "Order ID" },
-                 { field: "CustomerID", headerText: 'Customer ID' },
-                 { field: "EmployeeID", headerText: 'Employee ID' },
-                 { field: "ShipName", headerText: 'Ship Name', width: 150 },
-                 { field: "ShipCountry", headerText: 'Ship Country', editType: ej.Grid.EditingType.Dropdown },
-  
-          ],
-      });
-  });
-</script>
-
-
 {% endhighlight %}
 
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true,
+			showAddNewRow : true
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "ShipCity" },
+			{ field: "Freight", editType: "numericedit" },
+			{ field: "ShipCountry" }
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img27.jpeg)
 
 
-The following screenshot is the output of the above code example.
+T> [ 1. If it is remote, then the newly added record is placed based on the index from current view data. <BR> 2. If it is local, then the newly added record is added at the top of the page even the added new [`rowPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "") is mentioned as “bottom”.]
 
-![](/js/Grid/Editing_images/Editing_img29.png)
+## Default column values on add new
+
+
+While adding new record in grid, there is an option to set the default value for the columns. Using [`defaultValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-defaultvalue "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") you can set the default values for that particular column while editing or adding a new row.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		toolbarSettings : {
+			showToolbar : true,
+			toolbarItems : ["add", "edit", "delete", "update", "cancel"]
+		},
+		editSettings : {
+			allowEditing : true,
+			allowAdding : true,
+			allowDeleting : true
+		},
+		allowPaging : true,
+		columns : [
+			{ field: "OrderID", isPrimaryKey: true },
+			{ field: "CustomerID" },
+			{ field: "ShipCity", defaultValue: "Bern" },
+			{ field: "Freight", editType: "numericedit", defaultValue: 45 },
+			{ field: "ShipCountry", defaultValue: "Brazil" }
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](Editing_images/Editing_img28.jpeg)
+
 
