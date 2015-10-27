@@ -1,258 +1,109 @@
-﻿---
-layout: post
-title: Getting-Started
-description: getting started
-platform: js
-control: RichTextEditor
-documentation: ug
----
-
 # Getting Started
 
-This section briefly describes how to create and use **RichTextEditor** control by using **Javascript** in your application. The **Essential JavaScript RichTextEditor (RTE)** control allows easily to edit contents, insert tables, images and to get the **HTML** content. In this section, you can learn how to use **RichTextEditor** to get a feedback. The following screenshot demonstrates how the **RTE** control is used in Feedback form.
+This section helps to understand the getting started of RTE control with the step-by-step instruction.
 
-![](Getting-Started_images/Getting-Started_img1.png)
+## Script and CSS reference
 
-
-In the above screenshot , the **RTE** consists of content editable area with feedback title when you click the Post Feedback toolbar item to send the feedback information.
-
-## Create a RichTextEditor
-
-**Essential JavaScript RTE** widget basically renders by using simple text area element. The following steps describe the creation of **RTE** control.  
-
-Create an **HTML** file and add the following template to it for **RTE** creation.
+Create a new HTML file and include the below code
 
 {% highlight html %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title></title>
+</head>
+<body>
 
-<!DOCTYPE html>
-<html>
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-      <!-- Style sheet for default theme (flat azure) -->
-      <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-      <!--Scripts-->
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-      <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
-      <!--Add custom scripts here -->
-   </head>
-   <body>
-      <!--add rich text element elememt here-->
-   </body>
+</body>
 </html>
-
 {% endhighlight %}
 
-Add text area element within the body element to render **RichTextEditor**.
+Add link to the CSS file from the specific theme folder to your HTML file within the head section. Refer the built-in available themes from [here](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components# ""). 
 
 {% highlight html %}
-
-<div>
-   <textarea id="feedBackEditor"></textarea>
-</div>
-
+<head>
+<meta charset="utf-8" />
+<title>Getting Started - RichTextEditor</title>
+<link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+</head>
 {% endhighlight %}
 
-Initialize **RTE** in script.
-
-{% highlight js %}
-
-    $(function () {
-        // document ready
-        // simple RTE creation
-        $("#feedBackEditor").ejRTE();
-    });
-
-{% endhighlight %}
-
-The following **RTE** screenshot is the output of above steps.
-
-
-![](Getting-Started_images/Getting-Started_img2.png)
-
-
-## Configure the Toolbar
-
-The **RichTextEditor** is used to configure the toolbar items to provide editing and styling functionality. In this scenario, use the default **RTE** toolbar items to provide feedback form. 
-
-### Add the Toolbar Item
-
-The additional functionality toolbar item is necessary to perform the required operation. The **RTE** provides some additional toolbar items that are already predefined, but not rendered in without specifying the toolbar items. 
-
-The following code example is used to render the additional in-built toolbar items to **RTE** toolbar list.
-
-{% highlight js %}
-
-    $(function() {
-       $("#feedBackEditor").ejRTE({
-          width: "100%",          
-          tools: {
-             //specify the font type, size, color and background color option for text
-             font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
-          }
-       });
-    });
-
-{% endhighlight %}
-
-The following screenshot is the output of above steps.
-
-
-![](Getting-Started_images/Getting-Started_img3.png)
-
-
-### Removing the ToolbarItem
-
-You can remove the particular toolbar item by using the **remove ToolbarItem** method. 
-
-Consider, that the **“create table”** toolbar item is not necessary for the feedback scenario. To easily remove the **“create table”** toolbar item, use the following code example that removes the in-built toolbar items from **RTE** toolbar list.
-
-{% highlight js %}
-
-    var editorObj;
-    $(function () {
-        $("#feedBackEditor").ejRTE();
-        //create the editor object for removing the toolbar item
-        editorObj = $("#feedBackEditor").data('ejRTE');
-        //remove the create table toolbar item by specifying the create table toolbar id
-        editorObj.removeToolbarItem("createTable");
-    });
-
-{% endhighlight %}
-
-The following screenshot is the output of above steps.
-
-
-![](Getting-Started_images/Getting-Started_img4.png)
-
-
-
-## Configure Custom Toolbar item
-
-To post the feedback directly, additional toolbar item is required. The **RTE** control provides support to create the custom toolbar item for custom action. The following code example demonstrates the custom **toolbar** item creation in the **RTE** control.
-
-{% highlight js %}
-    
-    $(function() {
-       $("#feedBackEditor").ejRTE({
-          tools: {
-             customTools: [{
-                name: "PostFeedBack", //Id for the newly added tool
-                text:"PostFeedBack", //text for the newly added tool
-                tooltip: "Submit the feedback", // Shows the tooltip for custom tool
-                css: "FeedBack",
-                action: function() {
-                   //when click the custom tool item, the event will triggered                             
-                }
-             }]
-          }
-       });      
-    });
-
-{% endhighlight %}
-
-The following screenshot is the output of above steps.
-
-
-![](Getting-Started_images/Getting-Started_img5.png)
-
-
-## Validate the Content
-
-To send the feedback form without contents, validate them before submitting the contents. To achieve this validation use **getText()** method in **RTE** control.
-
-When the content area is empty, set the notification message displayed in the &lt;div&gt; element area for an alert. The following **HTML** code example is used to create the feedback form editor with support of **RTE** control.
+Also add links to the [CDN](http://helpjs.syncfusion.com/js/cdn# "") Script files along with the other external dependencies as depicted below,
 
 {% highlight html %}
-
-<div class="commentSection">
-   <div class="titleSection">
-      <label>Title:</label>
-      <input type="text" class="input ejinput" />
-   </div>
-   <!--textarea element section-->
-   <textarea id="feedBackEditor" class="hide" rows="10" cols="30"></textarea>
-   <!-- validation message display area-->
-   <div class="output"></div>
-</div>
-
+<head>
+<meta charset="utf-8" />
+<title>Getting Started - RichTextEditor</title>
+<link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+<script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
+</head>
 {% endhighlight %}
 
-When feedback is sent, you can validate whether the content area is empty or not. To achieve this validation, use **RTE** client side events. In this **RTE**, it provides the “action” function to perform the client side events to custom tool.
+Note: Note: Uncompressed version of the required library files are available for the development or debugging purpose which can be generated from the custom script [here](http://csg.syncfusion.com/# ""). Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip "") compression in your server.
 
-You can specify the custom tool as previous script section with validation operations.
+## Control Initialization
 
-{% highlight js %}
+Create a **TextArea** element within the body of the HTML document where the widget needs to be rendered.
 
-    $(function() {
-       $("#feedBackEditor").ejRTE({
-          width: "98%",
-          tools: {
-             customTools: [{
-                name: "PostFeedBack", //Id for the newly added tool
-                text:"PostFeedBack", //text for the newly added tool
-                tooltip: "submit the feedback", // Shows the tooltip for the custom tool
-                css: "FeedBack", // Css class for custom tool design purpose
-                action: function() {
-                   var editorObj = $("#feedBackEditor").data("ejRTE");
-                   //support the client side validation for content present in the area or not
-                   if (($.trim(editorObj.getText()).length < 1)) {
-                      //the content area is empty
-                      $(".output").html("The feedback content is empty");
-                   } else { //the content area contains information
-                      $(".output").html("");
-                      //custom code to send the feedback form contents
-                      alert("The feedback content has been saved");
-                   }
-                }
-             }]
-          }
-       });
-    });
-
+{% highlight html %}
+<body>
+<textarea id="texteditor"></textarea>
+</body>
 {% endhighlight %}
 
-The following styles are used to achieve the feedback form editor application.
+Initialize the editor by adding the following script to the HTML document.
 
-{% highlight css %}
-
-<style>
-    .commentSection {
-        width: 60%;
-        background: none repeat scroll 0 0 #f9f9f1;
-        border: 1px solid #e9e9e1;
-        padding: 10px;
-    }
-    .titleSection {
-        text-indent: 20px;
-        float: left;
-        padding: 20px 0px;
-        width: 97%;
-        border: 1px solid #bbbcbb;
-    }
-    .output {
-        height: 20px;
-        padding: 5px;
-        color: red;
-    }
-    .titleSection .level {
-        margin: 15px 0px 5px 0px;
-    }
-    .input.ejinput {
-        text-indent: 5px;
-        height: 24px;
-        width: 80%;
-        margin-left: 5px;
-    }
-</style>
-
-
+{% highlight html %}
+<body>
+<textarea id="texteditor"></textarea>
+<script type="text/javascript">
+$(function () {
+$("#texteditor").ejRTE();
+});
+</script>
+</body>
 {% endhighlight %}
 
-The output of the above steps is to send the feedback without content as follows.
+## Toolbar–Configuration
 
+You can configure a toolbar with the tools as your application requires.
 
-![](Getting-Started_images/Getting-Started_img6.png)
+{% highlight html %}
+$(function () {
+$("#texteditor").ejRTE({
+toolsList: ["style", "lists", "doAction", "links", "images"],
+tools: {
+style: ["bold", "italic"],
+lists: ["unorderedList", "orderedList"],
+doAction: ["undo", "redo"],
+links: ["createLink"],
+images: ["image"]
+}
+});
+});
+{% endhighlight %}
 
+## Setting and Getting Content
+
+You can set the content of the editor as follows.
+
+{% highlight html %}
+$("#texteditor").ejRTE({
+value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+});
+{% endhighlight %}
+
+To retrieve the editor contents,
+
+{% highlight html %}
+var currentValue = $("#texteditor").ejRTE("model.value");
+{% endhighlight %}
+
+You can find sample to quick start with the editor [here](http://jsplayground.syncfusion.com/Sync_nenmojvz# "").
 

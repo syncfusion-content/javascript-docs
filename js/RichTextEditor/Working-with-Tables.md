@@ -1,0 +1,129 @@
+# Working with Tables
+
+The editor provides tools that make to work with tables in your content. You can add, edit, and remove the table as well as perform other table related tasks.
+
+## Create a Table
+
+By default, [Insert Table](http://help.syncfusion.com/js/api/ejrte#members:tools-tables "") tool is enabled in the editor’s toolbar. There are two ways to insert a table into the editor’s content.
+
+* [Insert a table](#_Insert_a_Table "")
+* [Insert a custom table](#_Custom_Table "")
+
+{% highlight html %}
+
+<textarea id="texteditor"></textarea>
+
+<script type="text/javascript">
+
+$(function () {
+
+$("#texteditor").ejRTE({
+value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+toolsList: ["tables"],
+tools: {
+tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"]
+}
+
+});
+
+});
+
+</script>
+
+
+
+
+
+{% endhighlight %}
+
+### Insert a Table
+
+You can insert a basic table by select the “Insert Table” tool from toolbar and drag the cursor over the grid until you highlight the number of columns and rows you want. A table can be inserted as large as with ten columns and eight rows (10 * 8 cells). When you finish inserting tables, click in a cell and start typing or insert an image.
+
+![](WorkingwithTables_images/WorkingwithTables_img1.jpeg)
+
+
+Note: If you want to make any adjustment with drawn table, you can [add/remove rows and columns](#_Inserting/Deleting_Rows_and ""). 
+
+### Custom Table
+
+You can use custom table tools to insert tables with custom behaviors. You can create a table with more than ten columns and eight rows, as well as set the table related attributes (such as width, height, cell spacing/padding, and more) using the custom table dialog.  
+
+![](WorkingwithTables_images/WorkingwithTables_img2.jpeg)
+
+
+## Insert and Delete a Row or Column
+
+You can choose the following options to modify the inserted table from the toolbar, it will be enabled when you’re in table cell.
+
+* Add a row above
+* Insert row below
+* Insert column left
+* Insert column right
+* Delete a column
+* Delete a row
+
+![](WorkingwithTables_images/WorkingwithTables_img3.jpeg)
+
+
+Note: You can also quickly add a new row by clicking on the lower-right cell of the table and pressing the Tab key.
+
+## Format a Table
+
+After you create a table, you can format the entire table by using **Table** **Properties** dialog. In the Table Properties dialog, set or modify each table styles to apply the styles to table elements. 
+
+
+
+* Table - width, height, style, border, and alignment.
+* Cell - border, spacing, and padding.
+* Row - height, border, and text align.
+
+![](WorkingwithTables_images/WorkingwithTables_img4.jpeg)
+
+
+@Note: When you click in a table cell, the **Table** **Properties** option will be enabled under **Table** tool on the editor’s toolbar.
+
+## Resize a Table, Row, or Column
+
+You can change the size of table or row or column by adjust the table size, column width, or row height.
+
+### Resize a Table
+
+* To resize the table, handle will be displayed at lower-right corner of table on focus the table. You can drag the handle until the table is the size you want. 
+
+![](WorkingwithTables_images/WorkingwithTables_img5.jpeg)
+
+
+* Focus inside the table and specify the height and width that you want on the Table Properties dialog.
+
+![](WorkingwithTables_images/WorkingwithTables_img6.jpeg)
+
+
+### Resize a Row
+
+* To change the row height, resize handle will be appeared when you place the cursor on the row boundary. You can drag the boundary until the row is the height you want. 
+
+* Focus on the cell and specify the height in the Row tab on the Table Properties dialog.
+
+![](WorkingwithTables_images/WorkingwithTables_img7.jpeg)
+
+
+### Resize a Column
+
+* To change the column width, resize handle will be appeared when you place the cursor on the right of the column boundary. You can drag the boundary until the column is the width you want. 
+
+* Focus on the cell and specify the width in the cell tab on the Table Properties dialog.
+
+![](WorkingwithTables_images/WorkingwithTables_img8.jpeg)
+
+
+## Delete a table
+
+To delete a table from your content, focus on the table and select “Delete a Table” tool from toolbar. It will delete the entire table with all formatting content.
+
+![](WorkingwithTables_images/WorkingwithTables_img9.jpeg)
+
+
+@Note: To delete the table contents alone, select the required content of the table which you want to delete and press Delete key. All the content disappears but the rows and columns remain along with its formatting.
+
