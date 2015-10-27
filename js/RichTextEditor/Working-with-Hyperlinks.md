@@ -2,7 +2,7 @@
 
 A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 
-## Add/Edit a hyperlink
+## Add and Edit a hyperlink
 
 To add a hyperlink to the editor, follow these instructions:
 

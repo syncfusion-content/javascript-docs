@@ -127,7 +127,7 @@ doAction: ["undo", "redo"]
 
 {% endhighlight %}
 
-## Undo/Redo 
+## Undo and Redo 
 
 Undo and Redo buttons allow you to editing the text by disregard/cancel the recently made changes and restore it to previous state. It is a useful tool to restore the performed action which got changed by mistake. Up to 50 actions can be undo/redo in the editor by default. 
 

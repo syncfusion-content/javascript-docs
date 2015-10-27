@@ -1,8 +1,8 @@
-## Working with Tables
+# Working with Tables
 
 The editor provides tools that make to work with tables in your content. You can add, edit, and remove the table as well as perform other table related tasks.
 
-### Create a Table
+## Create a Table
 
 By default, [Insert Table](http://help.syncfusion.com/js/api/ejrte#members:tools-tables "") tool is enabled in the editor’s toolbar. There are two ways to insert a table into the editor’s content.
 
@@ -37,7 +37,7 @@ tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "add
 
 {% endhighlight %}
 
-#### Insert a Table
+### Insert a Table
 
 You can insert a basic table by select the “Insert Table” tool from toolbar and drag the cursor over the grid until you highlight the number of columns and rows you want. A table can be inserted as large as with ten columns and eight rows (10 * 8 cells). When you finish inserting tables, click in a cell and start typing or insert an image.
 
@@ -46,14 +46,14 @@ You can insert a basic table by select the “Insert Table” tool from toolbar 
 
 Note: If you want to make any adjustment with drawn table, you can [add/remove rows and columns](#_Inserting/Deleting_Rows_and ""). 
 
-#### Custom Table
+### Custom Table
 
 You can use custom table tools to insert tables with custom behaviors. You can create a table with more than ten columns and eight rows, as well as set the table related attributes (such as width, height, cell spacing/padding, and more) using the custom table dialog.  
 
 ![](WorkingwithTables_images/WorkingwithTables_img2.jpeg)
 
 
-### Insert/Delete a Row or Column
+## Insert and Delete a Row or Column
 
 You can choose the following options to modify the inserted table from the toolbar, it will be enabled when you’re in table cell.
 
@@ -69,7 +69,7 @@ You can choose the following options to modify the inserted table from the toolb
 
 Note: You can also quickly add a new row by clicking on the lower-right cell of the table and pressing the Tab key.
 
-### Format a Table
+## Format a Table
 
 After you create a table, you can format the entire table by using **Table** **Properties** dialog. In the Table Properties dialog, set or modify each table styles to apply the styles to table elements. 
 
@@ -84,11 +84,11 @@ After you create a table, you can format the entire table by using **Table** **P
 
 @Note: When you click in a table cell, the **Table** **Properties** option will be enabled under **Table** tool on the editor’s toolbar.
 
-### Resize a Table, Row, or Column
+## Resize a Table, Row, or Column
 
 You can change the size of table or row or column by adjust the table size, column width, or row height.
 
-#### Resize a Table
+### Resize a Table
 
 * To resize the table, handle will be displayed at lower-right corner of table on focus the table. You can drag the handle until the table is the size you want. 
 
@@ -100,7 +100,7 @@ You can change the size of table or row or column by adjust the table size, colu
 ![](WorkingwithTables_images/WorkingwithTables_img6.jpeg)
 
 
-#### Resize a Row
+### Resize a Row
 
 * To change the row height, resize handle will be appeared when you place the cursor on the row boundary. You can drag the boundary until the row is the height you want. 
 
@@ -109,7 +109,7 @@ You can change the size of table or row or column by adjust the table size, colu
 ![](WorkingwithTables_images/WorkingwithTables_img7.jpeg)
 
 
-#### Resize a Column
+### Resize a Column
 
 * To change the column width, resize handle will be appeared when you place the cursor on the right of the column boundary. You can drag the boundary until the column is the width you want. 
 
@@ -118,7 +118,7 @@ You can change the size of table or row or column by adjust the table size, colu
 ![](WorkingwithTables_images/WorkingwithTables_img8.jpeg)
 
 
-### Delete a table
+## Delete a table
 
 To delete a table from your content, focus on the table and select “Delete a Table” tool from toolbar. It will delete the entire table with all formatting content.
 
