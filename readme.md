@@ -22,7 +22,11 @@ This section contains guidelines on naming files, sections, documents and other 
 
 ## Adding a Document to left side Tree
 
-* Each new markdown document should be 
+* Each new markdown document should be added to the toc.html file, it is available at the root level of the repository
+
+> **Syntax**: <li><a href="/[platform-name]/[control-name]/[topic]">[topic]</a></li>
+
+> **Example**: <li><a href="/js/grid/multi-sorting-in-touch-device">Multi sorting in Touch device</a></li>
 
 
 ## Front Matter
