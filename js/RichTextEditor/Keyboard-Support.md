@@ -125,8 +125,5 @@ value: "The RichTextEditor (RTE) control enables you to edit the conte
 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
 allowKeyboardNavigation: false
 });
-
-
-
 {% endhighlight %}
 

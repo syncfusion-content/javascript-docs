@@ -30,11 +30,6 @@ tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "add
 });
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 ### Insert a Table

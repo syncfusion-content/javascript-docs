@@ -13,9 +13,6 @@ enableXHTML: true
 });
 
 });
-
-
-
 {% endhighlight %}
 
 The editor checks the following settings on validation:
