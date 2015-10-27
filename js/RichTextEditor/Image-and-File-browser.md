@@ -24,11 +24,6 @@ images: ["image"]
 });
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 ![](ImageandFilebrowser_images/ImageandFilebrowser_img1.jpeg)
@@ -67,11 +62,6 @@ extensionAllow: "*.txt, *.pdf"
 });
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 ![](ImageandFilebrowser_images/ImageandFilebrowser_img2.jpeg)
@@ -118,11 +108,6 @@ showDimensions: false
 });
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 ![](ImageandFilebrowser_images/ImageandFilebrowser_img5.jpeg)

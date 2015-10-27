@@ -30,7 +30,6 @@ lowerCase: "Lower Case",
 clearAll: "Clear All",
 clearFormat: "Clear Format",
 createLink: "Insert/Edit hyperlink",
-
 removeLink: "Remove hyperlink",
 image: "Insert image",
 video: "Insert video",
@@ -94,11 +93,6 @@ dotted: "Dotted",
 dashed: "Dashed",
 doubled: "Doubled"
 };
-
-
-
-
-
 {% endhighlight %}
 
 Note:  The culture name has to be specified in a standard format such as [Language Code]-[County/Region Code].
@@ -196,18 +190,10 @@ solid: "solide",
 dotted: "gepunktete",
 dashed: "Eine gestrichelte",
 doubled: "verdoppelt",
-
 maximize: "maximieren", 
-
 resize: "minimieren",
-
 swatches: "Farbfelder"
 };
-
-
-
-
-
 {% endhighlight %}
 
 You can set the [locale](http://help.syncfusion.com/js/api/ejrte#members:locale "") property of the editor to the new language. 
@@ -220,10 +206,5 @@ value: "Das Richtexteditor (RTE) Steuerung ermöglicht Ihnen, den Inhalt
 " um die in der Textarea eingegeben Gehalt gelten können.",
 locale: "de-DE"
 });
-
-
-
-
-
 {% endhighlight %}
 

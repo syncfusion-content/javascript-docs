@@ -30,11 +30,6 @@ editor.selectAll();
 }
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 ## Select a Range 
@@ -65,9 +60,6 @@ editor.selectRange(range);
 });
 
 </script>
-
-
-
 {% endhighlight %}
 
 ## Get Selection
@@ -100,10 +92,5 @@ var selectedHtml = editor.getSelectedHtml();
 }
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 

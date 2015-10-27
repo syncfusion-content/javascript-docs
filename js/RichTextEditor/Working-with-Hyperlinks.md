@@ -37,11 +37,6 @@ links: ["createLink", "removeLink"]
 });
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 @Note: hyperlinks on a picture are not always visible, but the pointer’s appearance will be changed on positioning the mouse pointer over it.

@@ -31,11 +31,6 @@ $("#texteditor").val(encoded);
 });
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 ## Refresh
@@ -73,11 +68,6 @@ editor.refresh()
 }
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 ## Editing and Formatting 
@@ -122,9 +112,6 @@ doAction: ["undo", "redo"]
 });
 
 </script>
-
-
-
 {% endhighlight %}
 
 ## Undo and Redo 
@@ -156,9 +143,6 @@ doAction: ["undo", "redo"]
 });
 
 </script>
-
-
-
 {% endhighlight %}
 
 ## Clipboard Operations
@@ -193,11 +177,6 @@ clipboard: ["cut", "copy", "paste"]
 });
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 ## Persistence
@@ -217,9 +196,6 @@ enablePersistence: true
 });
 
 });
-
-
-
 {% endhighlight %}
 
 ## Change the Font
@@ -249,9 +225,6 @@ ddl.selectItemByValue("TimesNewRoman");
 });
 
 </script>
-
-
-
 {% endhighlight %}
 
 * You can set default font for <iframe>’s body tag using **[iframeAttributes](#_Iframe_Attributes "")** property.
@@ -273,11 +246,6 @@ iframeAttribute: "font-family: Arial;"
 });
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 * If you want to override the default font from CSS, create a style tag with CSS styles and append it to the <iframe>’s head tag of the editor.
@@ -309,9 +277,6 @@ editorDoc.head.appendChild(styleTag);
 });
 
 </script>
-
-
-
 {% endhighlight %}
 
 ### Adding Fonts
@@ -339,11 +304,6 @@ ddl.selectItemByValue("CalibriLight");
 });
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 
@@ -368,10 +328,5 @@ var editor = $("#texteditor").ejRTE("instance");
 var selectedHtml = editor.getSelectedHtml();
 editor.pasteContent("<p style='background-color:yellow;color:skyblue'>" + selectedHtml + "  </p>");
 }
-
-
-
-
-
 {% endhighlight %}
 

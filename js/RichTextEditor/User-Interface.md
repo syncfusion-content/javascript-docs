@@ -120,11 +120,6 @@ The toolbar contains groups, which are similar or related functionalities of too
 toolsList: ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", 
 
 "clear", "links", "images", "media", "tables", "casing", "customTools", "view"]
-
-
-
-
-
 {% endhighlight %}
 
 The group can be rearranged on customization using the **[toolsList](http://help.syncfusion.com/js/api/ejrte#members:toolslist "")** property.
@@ -147,10 +142,6 @@ images: ["image"]
 });
 
 });
-
-
-
-
 
 {% endhighlight %}
 
@@ -178,9 +169,6 @@ var rte = $("#texteditor").data("ejRTE");
 }]
 }
 });
-
-
-
 {% endhighlight %}
 
 Define the CSS that will be applied to the custom tool.
@@ -191,9 +179,6 @@ content: "\e780";
 font-size: 18px;
 margin: 3px;
 }
-
-
-
 {% endhighlight %}
 
 Note: The CSS class that defined for custom tool is directly applies to the newly added toolbar item. 
@@ -205,9 +190,6 @@ To remove a particular toolbar item, pass the id of a toolbar item to the [remov
 {% highlight html %}
 var rte = $("#texteditor").data("ejRTE");
 rte.removeToolbarItem("video");
-
-
-
 {% endhighlight %}
 
 Note: This method completely removes the DOM element along with the events bounded to it.
@@ -219,17 +201,11 @@ The state of each toolbar item can be controlled by calling the client-side meth
 {% highlight html %}
 var rte = $("#texteditor").data("ejRTE");
 rte.disableToolbarItem("video");
-
-
-
 {% endhighlight %}
 
 {% highlight html %}
 var rte = $("#texteditor").data("ejRTE");
 rte.enableToolbarItem("video");
-
-
-
 {% endhighlight %}
 
 Note: If a toolbar item is in disabled state, then it will not have any interactivity including mouse hover.
@@ -242,9 +218,6 @@ The toolbar can be initially set to visible or hidden within the editor using [s
 $("#texteditor").ejRTE({
 showToolbar: false
 });
-
-
-
 {% endhighlight %}
 
 ## Content Area
@@ -266,9 +239,6 @@ iframeAttribute: "background-color:#e0ffff;color:#6495ed;"
 });
 
 });
-
-
-
 {% endhighlight %}
 
 ### Adding CSS File
@@ -295,11 +265,6 @@ linkTag.rel = "stylesheet";
 linkTag.href = "Content/Css/iframe-custom.css";
 iframeDoc.head.appendChild(linkTag);
 }
-
-
-
-
-
 {% endhighlight %}
 
 The new file named iframe-custom.css is created and moved to the content folder with the following styles.
@@ -321,11 +286,6 @@ display: block;
 list-style-type: circle;
 margin-right: 10px;
 }
-
-
-
-
-
 {% endhighlight %}
 
 ### Content Editable
@@ -349,11 +309,6 @@ allowEditing: false
 });
 
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 The contentEditable attribute allows you to make any element of HTML content to become editable or non-editable.  
@@ -378,9 +333,6 @@ $($(paragraph)[1]).attr("contenteditable", "false");
 });
 
 </script>
-
-
-
 {% endhighlight %}
 
 Note: Content editable is fully compatible with latest browsers, to know more details, see [here](http://www.w3schools.com/tags/att_global_contenteditable.asp# "").
@@ -399,9 +351,6 @@ This option allows you to specify which footer elements should display at the bo
 $("#texteditor").ejRTE({
 showFooter: true
 });
-
-
-
 {% endhighlight %}
 
 ### Source View
@@ -415,11 +364,6 @@ $("#texteditor").ejRTE({
 showFooter:true,
 showHtmlSource: true
 });
-
-
-
-
-
 {% endhighlight %}
 
 Note: Source view is useful for working directly with raw HTML text, so this tool is mainly used for advanced users who would like to have more control over the source of their content. 
@@ -433,11 +377,6 @@ $("#texteditor").ejRTE({
 showFooter: true,
 showHtmlTagInfo: true
 });
-
-
-
-
-
 {% endhighlight %}
 
 @Note: The outermost tag is the body tag of <iframe> element in design view, so it shows the path from currently selected path to the body tag.
@@ -461,11 +400,6 @@ maxLength: 500
 
 });
 </script>
-
-
-
-
-
 {% endhighlight %}
 
 @Note: The editor counts the characters by including the space, and this validation occurs while pasting the content into the editor also.
@@ -480,9 +414,6 @@ $("#texteditor").ejRTE({
 showFooter: true,
 showClearFormat: true
 });
-
-
-
 {% endhighlight %}
 
 ### Resize Handle
@@ -497,9 +428,6 @@ enableResize: true,
 width: 600, minWidth: 250, maxWidth: 750,
 height: 300, minHeight: 250, maxHeight: 500
 });
-
-
-
 {% endhighlight %}
 
 Note: When you set the enableRTL property to true, the resize handle will automatically positioned to the bottom-left corner of the editor.
