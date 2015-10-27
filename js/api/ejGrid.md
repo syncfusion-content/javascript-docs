@@ -6601,52 +6601,7 @@ editSettings: { allowEditing: true, allowAdding:true, rowPosition:"bottom", show
 
 
 
-### showAddNewRow<span class="type-signature type boolean">boolean</span>
-{:#members:showaddnewrow}
 
-
-
-
-
-
-
-
-This specifies to add new editable row dynamically at the top or bottom of the grid.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-dataSource:window.gridData,
-columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
-editSettings: { allowEditing: true, allowAdding:true, rowPosition:"bottom", showAddNewRow: true },
-});
-</script> {% endhighlight %}
 
 
 
