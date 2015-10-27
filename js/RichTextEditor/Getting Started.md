@@ -1,0 +1,141 @@
+# Getting Started
+
+This section helps to understand the getting started of RTE control with the step-by-step instruction.
+
+## Script/CSS reference
+
+Create a new HTML file and include the below code
+
+{% highlight html %}
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+{% endhighlight %}
+
+Add link to the CSS file from the specific theme folder to your HTML file within the head section. Refer the built-in available themes from [here](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components# ""). 
+
+{% highlight html %}
+<head>
+<meta charset="utf-8" />
+<title>Getting Started - RichTextEditor</title>
+<link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+</head>
+
+
+
+{% endhighlight %}
+
+Also add links to the [CDN](http://helpjs.syncfusion.com/js/cdn# "") Script files along with the other external dependencies as depicted below,
+
+{% highlight html %}
+<head>
+<meta charset="utf-8" />
+<title>Getting Started - RichTextEditor</title>
+<link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+<script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+<script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
+</head>
+
+
+
+{% endhighlight %}
+
+Note: Note: Uncompressed version of the required library files are available for the development or debugging purpose which can be generated from the custom script [here](http://csg.syncfusion.com/# ""). Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip "") compression in your server.
+
+## Control Initialization
+
+Create a **TextArea** element within the body of the HTML document where the widget needs to be rendered.
+
+{% highlight html %}
+<body>
+<textarea id="texteditor"></textarea>
+</body>
+
+
+
+{% endhighlight %}
+
+Initialize the editor by adding the following script to the HTML document.
+
+{% highlight html %}
+<body>
+<textarea id="texteditor"></textarea>
+<script type="text/javascript">
+$(function () {
+$("#texteditor").ejRTE();
+});
+</script>
+</body>
+
+
+
+{% endhighlight %}
+
+## Toolbar – configuration
+
+You can configure a toolbar with the tools as your application requires.
+
+{% highlight html %}
+
+$(function () {
+
+$("#texteditor").ejRTE({
+toolsList: ["style", "lists", "doAction", "links", "images"],
+tools: {
+style: ["bold", "italic"],
+lists: ["unorderedList", "orderedList"],
+doAction: ["undo", "redo"],
+links: ["createLink"],
+images: ["image"]
+}
+});
+
+});
+
+
+
+
+
+{% endhighlight %}
+
+## Setting/Getting Content
+
+You can set the content of the editor as follows.
+
+{% highlight html %}
+$("#texteditor").ejRTE({
+value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+});
+
+
+
+{% endhighlight %}
+
+To retrieve the editor contents,
+
+{% highlight html %}
+var currentValue = $("#texteditor").ejRTE("model.value");
+
+
+
+
+
+{% endhighlight %}
+
+You can find sample to quick start with the editor [here](http://jsplayground.syncfusion.com/Sync_nenmojvz# "").
+
