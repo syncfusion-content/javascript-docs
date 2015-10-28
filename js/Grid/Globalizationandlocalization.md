@@ -305,7 +305,7 @@ columns:
 
 {% endhighlight %}
 
-![](Globalizationandlocalization._images/Globalizationandlocalization._img1.jpeg)
+![](Globalizationandlocalization._images/Globalizationandlocalization._img1.png)
 
 
 I> [You need to change pager locale in `ej.Pager.locale` object.]
@@ -479,7 +479,7 @@ Please find the code
 
 <div id="Grid"></div>
 <script type="text/javascript">
-  ej.ExcelFilter.locale["de-De"] = {
+  ej.ExcelFilter.locale["de-DE"] = {
       SortNoSmaller: "Art Anzahl kleiner",
       SortNoLarger: "Art Anzahl größer",
       SortTextAscending: "Sortieren aufsteigend Text",
@@ -495,11 +495,12 @@ Please find the code
       locale: "de-DE",
       allowPaging: true,
       allowFiltering: true,
-      FilterSettings: { FilterType: "Excel"},
+       filterSettings: { filterType: "excel"},
       columns:
           [
               { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 75 },
               { field: "CustomerID", headerText: "Customer ID", width: 95 },
+              {field:"OrderDate", headerText:"Order Date", width:100,format:"{0:MM/dd/yyyy}"},
               { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 95 },
               { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
               { field: "ShipCity", headerText: "Ship City", width: 80 }
@@ -511,7 +512,7 @@ Please find the code
 
 {% endhighlight %}
 
-![](Globalizationandlocalization._images/Globalizationandlocalization._img2.jpeg)
+![](Globalizationandlocalization._images/Globalizationandlocalization._img2.png)
 
 
 ## Globalization
@@ -541,7 +542,7 @@ Please find the code
 
 {% endhighlight %}
 
-![](Globalizationandlocalization._images/Globalizationandlocalization._img3.jpeg)
+![](Globalizationandlocalization._images/Globalizationandlocalization._img3.png)
 
 I>[ In the above example, you need to use `globalize.culture.de-DE` script file to globalize values. ]
 
@@ -575,6 +576,6 @@ By default, Grid render its text and layout from left to right. To customize Gri
 
 {% endhighlight %}
 
-![](Globalizationandlocalization._images/Globalizationandlocalization._img4.jpeg)
+![](Globalizationandlocalization._images/Globalizationandlocalization._img4.png)
 
 

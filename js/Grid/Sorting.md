@@ -33,7 +33,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img1.jpeg)
+![](sorting_images/sorting_img1.png)
 
 
 ## Initial Sorting
@@ -63,7 +63,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img2.jpeg)
+![](sorting_images/sorting_img2.png)
 
 
 ## Multi-Column Sorting
@@ -97,7 +97,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img3.jpeg)
+![](sorting_images/sorting_img3.png)
 
 
 ## Stable sorting
@@ -131,7 +131,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img4.jpeg)
+![](sorting_images/sorting_img4.png)
 
 
 ## Touch options
@@ -163,6 +163,6 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](sorting_images/sorting_img5.jpeg)
+![](sorting_images/sorting_img5.png)
 
 

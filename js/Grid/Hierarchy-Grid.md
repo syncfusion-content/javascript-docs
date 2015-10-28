@@ -57,7 +57,7 @@ Hierarchical binding can enabled by defining [`childGrid`](http://help.syncfusio
 
 {% endhighlight %}
 
-![](HierarchyGrid_images/HierarchyGrid_img1.jpeg)
+![](HierarchyGrid_images/HierarchyGrid_img1.png)
 
 
 ## Expand or Collapse All Childs

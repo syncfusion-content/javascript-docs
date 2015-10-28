@@ -46,7 +46,7 @@ Summary rows visibility can be controlled by [`showSummary`](http://help.syncfus
 </script>
 {% endhighlight %}
 
-![](summaryGrid_images/summaryGrid_img1.jpeg)
+![](summaryGrid_images/summaryGrid_img1.png)
 
 
 ## Supported Aggregates 
@@ -120,7 +120,7 @@ Summaries with [`Sum`](http://help.syncfusion.com/js/datamanager/summary#sum "su
 
 {% endhighlight %}
 
-![](summaryGrid_images/summaryGrid_img2.jpeg)
+![](summaryGrid_images/summaryGrid_img2.png)
 
 
 ### True and False Count 
@@ -166,7 +166,7 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
 
 {% endhighlight %}
 
-![](summaryGrid_images/summaryGrid_img3.jpeg)
+![](summaryGrid_images/summaryGrid_img3.png)
 
 
 ### Custom Summary
@@ -210,7 +210,7 @@ To enable Custom Summary, [`summaryType`](http://help.syncfusion.com/js/api/ejgr
 
 {% endhighlight %}
 
-![](summaryGrid_images/summaryGrid_img4.jpeg)
+![](summaryGrid_images/summaryGrid_img4.png)
 
 
 ## Group Summary
@@ -255,7 +255,7 @@ To show summary rows at the end of each Group, set the [`showTotalSummary`](http
 
 {% endhighlight %}
 
-![](summaryGrid_images/summaryGrid_img5.jpeg)
+![](summaryGrid_images/summaryGrid_img5.png)
 
 
 W> [Minimum one column should be grouped to show summary details].
@@ -300,7 +300,7 @@ To show summaries at each group’s Caption row, particular summary row definiti
 
 {% endhighlight %}
 
-![](summaryGrid_images/summaryGrid_img6.jpeg)
+![](summaryGrid_images/summaryGrid_img6.png)
 
 
 W>[ Minimum one column should be grouped to show summary details].
@@ -341,7 +341,7 @@ To format Summary values, [`format`](http://help.syncfusion.com/js/api/ejgrid#me
 
 {% endhighlight %}
 
-![](summaryGrid_images/summaryGrid_img7.jpeg)
+![](summaryGrid_images/summaryGrid_img7.png)
 
 
 W> [`globalize.js` script need to referred while formatting is applied to summary values]

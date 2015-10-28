@@ -35,7 +35,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img1.jpeg)
+![](columns_images/columns_img1.png)
 
 
 How to set isPrimaryKey for auto generated columns when editing is enabled:
@@ -123,7 +123,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img2.jpeg)
+![](columns_images/columns_img2.png)
 
 
 Header Text alignment
@@ -162,7 +162,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img3.jpeg)
+![](columns_images/columns_img3.png)
 
 
 Header Template
@@ -202,7 +202,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img4.jpeg)
+![](columns_images/columns_img4.png)
 
 
 ## Text alignment
@@ -241,7 +241,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img5.jpeg)
+![](columns_images/columns_img5.png)
 
 
 ## Format
@@ -275,7 +275,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img6.jpeg)
+![](columns_images/columns_img6.png)
 
 
 ## Width
@@ -309,7 +309,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img7.jpeg)
+![](columns_images/columns_img7.png)
 
 
 ## Resize to fit 
@@ -346,7 +346,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img8.jpeg)
+![](columns_images/columns_img8.png)
 
 
 ## Auto wrap column
@@ -379,7 +379,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img9.jpeg)
+![](columns_images/columns_img9.png)
 
 
 ## Reorder
@@ -406,7 +406,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img10.jpeg)
+![](columns_images/columns_img10.png)
 
 
 ## Visibility
@@ -440,7 +440,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img11.jpeg)
+![](columns_images/columns_img11.png)
 
 
 ## Cell Merging
@@ -479,7 +479,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img12.jpeg)
+![](columns_images/columns_img12.png)
 
 
 ## Unbound Column
@@ -521,7 +521,7 @@ function clk(e) {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img13.jpeg)
+![](columns_images/columns_img13.png)
 
 
 ## Column Template
@@ -564,7 +564,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img14.jpeg)
+![](columns_images/columns_img14.png)
 
 
 ## Controlling Grid actions
@@ -631,7 +631,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img15.jpeg)
+![](columns_images/columns_img15.png)
 
 
 ## Expression Column
@@ -667,7 +667,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img16.jpeg)
+![](columns_images/columns_img16.png)
 
 
 ## Command Column
@@ -722,7 +722,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img17.jpeg)
+![](columns_images/columns_img17.png)
 
 
 Custom buttons
@@ -767,7 +767,7 @@ function onClick(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img18.jpeg)
+![](columns_images/columns_img18.png)
 
 
 ## Column Chooser
@@ -800,7 +800,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img19.jpeg)
+![](columns_images/columns_img19.png)
 
 
 ## Foreign Key Column
@@ -839,7 +839,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img20.jpeg)
+![](columns_images/columns_img20.png)
 
 
 ## Custom Attribute
@@ -875,7 +875,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img21.jpeg)
+![](columns_images/columns_img21.png)
 
 
 ## Displaying HTML content
@@ -906,7 +906,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img22.jpeg)
+![](columns_images/columns_img22.png)
 
 
 ## Customize column
@@ -953,7 +953,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img23.jpeg)
+![](columns_images/columns_img23.png)
 
 
 ## Type
@@ -987,6 +987,6 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](columns_images/columns_img24.jpeg)
+![](columns_images/columns_img24.png)
 
 
