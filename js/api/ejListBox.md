@@ -7,72 +7,40 @@ metaname:
 metacontent: 
 ---
 
-The Listbox control provides a list options to make user to choose an item from the list. It is capable of including other html elements such as images, textboxes, check box, radio buttons and so on.
+##Custom Design for Html ListBox control.
 
-
-
-
+The ListBox widget provides a list options to make user to choose an item from the list. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
 
 $(element).ejListBox<span class="signature">()</span>
-
-
-
-
-
 
 Example
 {:.example}
 
-
 {% highlight html %}
- 
 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+       <ul id="carsList">
+        <li>Audi A4</li>
+        <li>Audi A5</li>
+        <li>Audi A6</li>
+        <li>Audi A7</li>
+        <li>Audi A8</li>
+        <li>BMW 501</li>
+        <li>BMW 502</li>
+        <li>BMW 503</li>
+        <li>BMW 507</li>
+        <li>BMW 3200</li>
+    </ul>
 
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-</script> {% endhighlight %}
+    <script>
 
+        $('#list').ejListBox();
 
-{% highlight html %}
-// Another way to render ListBox control, using its targetID.
-        <ul id="listboxsample">
-   </ul>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#listboxsample').ejListBox({targetID: "carlist"});   
-</script> {% endhighlight %}
-
-
-
+    </script>
+	
+{% endhighlight  %}
 
 Requires
 {:.require}
-
 
 * module:jQuery
 
@@ -88,3353 +56,3230 @@ Requires
 
 * module:ej.scroller.js
 
+###Members
 
-## Members
-
-
-
-
-### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
+####allowDragAndDrop [Deprecated]  <span class="type-signature type boolean">Boolean</span>
 {:#members:allowdraganddrop}
 
+Enables/disables the drag and drop behavior of the ListBox widget.
 
-
-
-To enable the drag and drop nodes.
-
+N>Since this is a deprecated property we suggest to use *allowDrag* and *allowDrop* properties.
 
 Default Value:
 {:.param}
-
-
-
-* true
-
-
-
+ * false
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+            $("#list").ejListBox({
 
-<script>
-// Initialize the with the allowDragAndDrop value specified.
-$('#carsList').ejListBox({allowDragAndDrop: true});     
-</script> {% endhighlight %}
+                allowDragAndDrop: true
 
+            });
+            
+{% endhighlight %}
 
+####allowDrag  <span class="type-signature type boolean">Boolean</span>
+{:#members:allowdrag} 
 
-
-### allowGrouping<span class="type-signature type boolean">boolean</span>
-{:#members:allowgrouping}
-
-
-
-
-Specifies the grouping option in ListBox.
-
+Enables/disables the dragging behavior of the ListBox widget’s item within a ListBox or between two ListBox widgets.
 
 Default Value:
 {:.param}
+ * false
 
+Example
+{:.example}
 
+{% highlight js %}
 
+            $("#list").ejListBox({
+                allowDrag: true
+            });
+            
+{% endhighlight %}
+
+####allowDrop  <span class="type-signature type boolean">Boolean</span>
+{:#members:allowdrop} 
+
+Accepts the items which are dropped in to it, when it is set to true. 
+
+N>Need to enable allowDrag property to drag the list (li) item from the listbox control. 
+
+Default Value:
+{:.param}
 * false
 
+Example
+{:.example}
 
+{% highlight js %}
 
+            $("#list").ejListBox({
+                allowDrop: true
+            });
+
+{% endhighlight %}
+
+####allowMultiSelection <span class="type-signature type boolean">Boolean</span>
+{:#members:allowmultiselection}  
+
+Enables or disables multiple selection.
+
+Default Value:
+{:.param}
+* false
+
+Example 
+{:.example}
+
+{% highlight js %}
+
+    $('#list').ejListBox({allowMultiSelection: true}); 
+
+{% endhighlight %}
+
+####allowVirtualScrolling <span class="type-signature type boolean">Boolean</span>
+{:#members:allowvirtualscrolling}  
+
+Loads the list data on demand via scrolling behavior to improve the application’s performance. There are two ways to load data which can be defined using “virtualScrollMode” property.
+
+Default Value:
+{:.param} 
+* false
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
+            $("#customerlist").ejListBox({
+
+            allowVirtualScrolling: true           
+
+              });
+
+{% endhighlight %}
+
+####caseSensitiveSearch <span class="type-signature type boolean">Boolean</span>
+{:#members:casesensitivesearch} 
  
-   <ul id="select1">    </ul>
+Enables or disables the case sensitive search for list item by typing the text (search) value.
 
-<script>
-            var skillset = [
-          { skill: "Bahrain", category: "B" }, { skill: "Brazil", category: "B" }, { skill: "Argentina", category: "A" },
-       { skill: "Bangladesh", category: "B" }, { skill: "Burma", category: "B" }, { skill: "Afghanistan", category: "A" }, { skill: "Antigua and Barbuda", category: "A" },
-       { skill: "Barbados", category: "B" }, { skill: "Botswana", category: "B" }, { skill: "Albania", category: "A" }, { skill: "Andorra", category: "A" },
-       { skill: "Belarus", category: "B" }, { skill: "Bolivia", category: "B" }, { skill: "Algeria", category: "A" }, { skill: "Angola", category: "A" }
-       ];
-// Initialize the ListBox with the allowGrouping value specified.
-          $("#select1").ejListBox({
-       dataSource: skillset,
-         fields: { text: "skill", category: "category" },allowGrouping:true
-             });
-</script> {% endhighlight %}
+N> It works only when the enableIncrementalSearch is set as true.
 
-
-
-
-### allowMultiSelection<span class="type-signature type boolean">boolean</span>
-{:#members:allowmultiselection}
-
-
-
-
-To allow multiple selection of list items
-
-
-Default Value:
+Default Value: 
 {:.param}
-
-
-
-* true
-
-
-
+* false
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+    $('#list).ejListBox({
+    
+    enableIncrementalSearch : true ,
+    
+        caseSensitiveSearch : true 
+    
+    }); 
 
-<script>
-// Initialize the allowMultiSelection with the value specified.
-$('#carsList').ejListBox({allowMultiSelection: true});  
-</script> {% endhighlight %}
+{% endhighlight %}  
 
 
+####cascadeTo  <span class="type-signature type string">String</span>
+{:#members:cascadeto} 
 
-
-### cascadeTo<span class="type-signature type string">string</span>
-{:#members:cascadeto}
-
-
-
-
-cascadeTo is used in cascading ListBox scenario, to map the child ListBox list widget in the parent ListBox list widget. By selecting an option in the parent ListBox, the child ListBox has to load the corresponding value regarding the parent ListBox.
-
+Dynamically populate data of a list box while selecting an item in another list box i.e. rendering child list box based on the item selection in parent list box. This property accepts the id of the child ListBox widget to populate the data.
 
 Default Value:
 {:.param}
-
-
-
 * null
 
-
-
-
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-<div style="float: left;">
-      <span class="txt">Select Group</span>
-  <ul id="groupsList" /> </ul>
-</div>
+        $('#list').ejListBox({ 
 
-<div style="float: right;">
-       <span class="txt">Select Country</span>
-       <ul id="countryList" /> </ul>
-</div>
-<script>
- var groups = [
-         { parentId: 'a', text: "Group A" },
-         { parentId: 'b', text: "Group B" },
-         { parentId: 'c', text: "Group C" },
-         { parentId: 'd', text: "Group D" },
-         { parentId: 'e', text: "Group E" }]
-           //first level child
-           var countries = [{ value: 11, parentId: 'a', text: "Algeria", sprite: "flag-dz" },
-          { value: 12, parentId: 'a', text: "Armenia", sprite: "flag-am" },
-          { value: 13, parentId: 'a', text: "Bangladesh", sprite: "flag-bd" },
-          { value: 14, parentId: 'a', text: "Cuba", sprite: "flag-cu" },
-          { value: 15, parentId: 'b', text: "Denmark", sprite: "flag-dk" },
-          { value: 16, parentId: 'b', text: "Egypt", sprite: "flag-eg" },
-          { value: 17, parentId: 'c', text: "Finland", sprite: "flag-fi" },
-          { value: 18, parentId: 'c', text: "India", sprite: "flag-in" },
-          { value: 19, parentId: 'c', text: "Malaysia", sprite: "flag-my" },
-          { value: 20, parentId: 'd', text: "New Zealand", sprite: "flag-nz" },
-          { value: 21, parentId: 'd', text: "Norway", sprite: "flag-no" },
-          { value: 22, parentId: 'd', text: "Poland", sprite: "flag-pl" },
-          { value: 23, parentId: 'e', text: "Romania", sprite: "flag-ro" },
-          { value: 24, parentId: 'e', text: "Singapore", sprite: "flag-sg" },
-          { value: 25, parentId: 'e', text: "Thailand", sprite: "flag-th" },
-          { value: 26, parentId: 'e', text: "Ukraine", sprite: "flag-ua" }]
-// To set cascadeTo API value during initialization  . 
-           $('#groupsList').ejListBox({
-               dataSource: groups,
-               fields: { value: "parentId" },
-               cascadeTo: 'countryList'
-           });
-           $('#countryList').ejListBox({
-               dataSource: countries,
-               enabled:false
-           });
-</script>{% endhighlight %}
+        cascadeTo: 'countryList' 
+
+        });
+
+{% endhighlight %}
 
 
+####checkAll [Deprecated] <span class="type-signature type boolean">Boolean</span>
+{:#members:checkall} 
 
-
-### checkAll<span class="type-signature type boolean">boolean</span>
-{:#members:checkall}
-
-
-
-
-Specifies to select all the items of ListBox can be done with the help of this checkAll property, it supports only when the showCheckbox property true.
-
+To check all the items of the ListBox widget. It works only when the showCheckbox property is set to true. 
 
 Default Value:
 {:.param}
-
-
-
 * false
 
-
-
-
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+    $('#list').ejListBox({showCheckbox: true, checkAll: true }); 
 
-<script>
-// Initialize the ListBox with the checkAll value specified.
-$('#carsList').ejListBox({showCheckbox: true, checkAll: true  });       
-</script> {% endhighlight %}
+{% endhighlight %}
 
+####checkedItems (Deprecated) <span class="type-signature type array">Array</span>
+{:#members:checkeditems} 
 
+List of items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
 
-
-### checkedItemlist<span class="type-signature type integerarray">integerarray</span>
-{:#members:checkeditemlist}
-
-
-
-
-Specifies the checkedItemlist for ListBox.
-
+N> Since this is a deprecated property we suggest to use checkedIndices property.
 
 Default Value:
-{:.param}
-
-
-
+{:.param} 
 * []
 
-
-
-
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+    $('#list').ejListBox({ showCheckbox:true, checkedItems : [1,2] }); 
 
-<script>
-// To sets the checked item  API value during initialization  .         
-$('#carsList').ejListBox({ showCheckbox:true,checkedItemlist  : [1,2] });       
-</script> {% endhighlight %}
+{% endhighlight %}
 
+####checkedItemlist (Deprecated) <span class="type-signature type array">Array</span>
+{:#members:checkeditemlist} 
 
+List of items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
 
-
-### checkItemsByIndex<span class="type-signature type string">string</span>
-{:#members:checkitemsbyindex}
-
-
-
-
-Specifies the index value to check the items in the listbox.
-
+N>Since this is a deprecated property we suggest to use checkedIndices property.
 
 Default Value:
 {:.param}
-
-
-
-* null
-
-
-
+*  []
 
 Example
 {:.example}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+{% highlight js %}
 
-<script>
-// To set checkItemsByIndex API value during initialization  .
-$('#carsList').ejListBox("disable");    
-$('#carsList').ejListBox({checkItemsByIndex  : "2,3"});         
-</script> {% endhighlight %}
+    $('#list').ejListBox({ showCheckbox:true, checkedItemlist : [1,2] }); 
 
+{% endhighlight %}
 
+####checkItemsByIndex (Deprecated) <span class="type-signature type string">String</span>
+{:#members:checkitemsbyindex} 
 
+List of items to be checked by default using index values. It works only when the showCheckbox property is set to true. 
 
-### cssClass<span class="type-signature type string">string</span>
+N> Since this is a deprecated property we suggest to use checkedIndices property.
+
+Default Value: 
+{:.param}
+* null
+
+Example
+{:.example}
+
+{% highlight js %}
+
+        $('#list').ejListBox({ showCheckbox: true, checkItemsByIndex: "2,3" });
+        
+{% endhighlight %}
+
+####checkedIndices <span class="type-signature type string">String</span>
+{:#members:checkedindices} 
+
+Set of list items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
+
+Default Value:
+{:param}
+* null
+
+Example
+{:.example}
+
+{% highlight js %}
+
+        $('#list').ejListBox({ showCheckbox: true, checkedIndices: "2,3" });
+        
+{% endhighlight %}
+
+####cssClass <span class="type-signature type string">String</span>
 {:#members:cssclass}
 
-
-
-
-Sets the root class for ListBox theme. This cssClass API helps to use custom skinning option for ListBox control. By defining the root class using this API, we need to include this root class in CSS.
-
+The root class for the ListBox widget to customize the existing theme.
 
 Default Value:
 {:.param}
-
-
-
-* "gradient-lime"
-
-
-
+* “gradient-lime”
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-
- <div id="carsList">
-   <ul>
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-   </ul>
- </div>
-<script>
-//Initialize the ListBox with the cssClass value specified
-        $("#carsList").ejListBox({ targetID: "carsList",cssClass: 'gradient-lime'});
-</script>{% endhighlight %}
+        $("#list").ejListBox({ cssClass: 'gradient-lime' });
+        
+ {% endhighlight %}
 
 
-
-
-### dataSource<span class="type-signature type data">data</span>
+####dataSource <span class="type-signature type JSONobject">JSONobject</span>
 {:#members:datasource}
 
-
-
-
-Specifies the data source of the ListBox. The data source contains the list of data for generating the List items.
-
+Contains the list of data for generating the list items.
 
 Default Value:
 {:.param}
-
-
-
 * null
-
-
-
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
- <ul id="countrylist">  </ul>
-<script>          
-//To set dataSource API value during initialization  
-        $("#countrylist").ejListBox({ dataSource: window.countries });                   
-</script>{% endhighlight %}
+            $("#customerlist").ejListBox({
 
+                dataSource: customerData
 
+            });
+            
+ {% endhighlight %}
 
-
-### disableItemsByIndex<span class="type-signature type string">string</span>
+####disableItemsByIndex [Deprecated] <span class="type-signature type string">String</span>
 {:#members:disableitemsbyindex}
 
-
-
-
-Specifies the index value to disable the items in the listbox.
-
+Disables set of list items using its index value.
 
 Default Value:
 {:.param}
-
-
-
 * null
 
-
-
-
 Example
-{:.example}
+{:.example} 
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+    $('#list').ejListBox({disableItemsByIndex : "2,3"}); 
 
-<script>
-// To set disableItemsByIndex API value during initialization  .
-$('#carsList').ejListBox({disableItemsByIndex  : "2,3"});
-</script> {% endhighlight %}
+{% endhighlight %}
 
-
-
-
-### enabled<span class="type-signature type boolean">boolean</span>
+####enabled <span class="type-signature type boolean">Boolean</span>
 {:#members:enabled}
 
-
-
-
-When this property sets to false, it disables the ListBox control.
-
+Enables or disables the ListBox widget.
 
 Default Value:
 {:.param}
-
-
-
 * true
 
-
-
-
-Example
+Example 
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
+    $('#list').ejListBox({enabled : false }); 
 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+{% endhighlight %}
 
-<script>
-// Initialize the ListBox with the enabled  value specified.
-$('#carsList').ejListBox({enabled : false  });  
-</script> {% endhighlight %}
-
-
-
-
-### enableItemsByIndex<span class="type-signature type string">string</span>
+####enableItemsByIndex [Deprecated] <span class="type-signature type string">String</span>
 {:#members:enableitemsbyindex}
 
-
-
-
-Specifies the index value to enable the items in the listbox.
-
+Enables the set of disabled list items using its index value.
 
 Default Value:
 {:.param}
-
-
-
 * null
-
-
-
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+            $('#list').ejListBox({ enableItemsByIndex: "2,3" });
 
-<script>
-// To set enableItemsByIndex API value during initialization  .
-$('#carsList').ejListBox("disable");    
-$('#carsList').ejListBox({enableItemsByIndex  : "2,3"});        
-</script> {% endhighlight %}
+{% endhighlight  %}
 
-
-
-
-### enableLoadOnDemand<span class="type-signature type boolean">boolean</span>
+####enableLoadOnDemand [Deprecated] <span class="type-signature type boolean">Boolean</span>
 {:#members:enableloadondemand}
 
+Loads data on demand for the ListBox widget via scrolling behavior.If this is set to true, this will implicitly make allowVirtualScrolling to true and sets virtualScrollMode to “normal”.
 
-
-
-Specifies to enable Load data items onDemand for the ListBox.
-
+N> Since this is a deprecated property we suggest to use allowVirtualScrolling property.
 
 Default Value:
 {:.param}
-
-
-
 * false
-
-
-
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
- <ul id="countrylist">  </ul>
-<script>          
-//To set fields API value during initialization  
-        $("#countrylist").ejListBox({ dataSource: window.countriesField, enableLoadOnDemand:true,  fields: { text: "name", value: "key" }});
-</script>{% endhighlight %}
+            $("#customerlist").ejListBox({
+
+                enableLoadOnDemand: true
+
+            });
+
+        });
+        
+ {% endhighlight %}
 
 
 
+####enableIncrementalSearch <span class="type-signature type boolean">Boolean</span>
+{:#members:enableincrementalsearch}
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+Enables or disables the search behavior to find the specific list item by typing the text value.
+
+Default Value:
+{:.param}
+* false
+
+Example 
+{:.example}
+
+{% highlight js %}
+
+    $('#list').ejListBox({enableIncrementalSearch : true}); 
+
+{% endhighlight %}
+
+####enablePersistence <span class="type-signature type boolean">Boolean</span>
 {:#members:enablepersistence}
 
+Allows the current model values to be saved in local storage or browser cookies for state maintenance when it is set to true.
 
-
-
-Save current model value to browser cookies for state maintains. While refresh the ListBox control page retains the model value apply from browser cookies.
-
+N>[Local storage](http://www.w3schools.com/html/html5_webstorage.asp) is supported only in Html5 supported browsers. If the browsers don’t have support for local storage, browser cookies will be used to maintain the state.
 
 Default Value:
 {:.param}
-
-
-
 * false
 
-
-
-
-Example
+Example 
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+    $('#list').ejListBox({enablePersistence : false}); 
 
-<script>
-// Initialize the ListBox with the enablePersistence  value specified.
-$('#carsList').ejListBox({enablePersistence : false});  
-</script>{% endhighlight %}
+{% endhighlight %}
 
-
-
-
-### enableRTL<span class="type-signature type boolean">boolean</span>
+####enableRTL <span class="type-signature type boolean">Boolean</span>
 {:#members:enablertl}
 
-
-
-
-Sets the ListBox textbox direction as right to left alignment.
-
+Displays the ListBox widget’s content from right to left when enabled.
 
 Default Value:
-{:.param}
-
-
-
+{:.param} 
 * false
 
-
-
-
-Example
+Example 
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+    $('#list').ejListBox({enableRTL : true }); 
 
-<script>
-// Initialize the ListBox with the enableRTL  value specified.
-$('#carsList').ejListBox({enableRTL : true  });         
-</script> {% endhighlight %}
-
-
-
-
-### enableTooltip<span class="type-signature type boolean">boolean</span>
-{:#members:enabletooltip}
-
-
-
-
-Sets to enable tooltip text for ListBox.
-
-
-Default Value:
-{:.param}
-
-
-
-* false
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-
-<script>
-// Initialize the ListBox with the enableRTL  value specified.
-$('#carsList').ejListBox({enableTooltip : true  });     
-</script> {% endhighlight %}
-
-
-
-
-### enableVirtualScrolling<span class="type-signature type boolean">boolean</span>
+{% endhighlight %}
+####enableVirtualScrolling  [Deprecated] <span class="type-signature type boolean">Boolean</span>
 {:#members:enablevirtualscrolling}
 
+Loads data on demand for the ListBox widget via scrolling behavior. If this is set to true, this will implicitly make allowVirtualScrolling to true and sets virtualScrollMode to “continuous”.
 
-
-
-Specifies to enable virtual scrolling behavior along with Load data items onDemand for the ListBox.
-
+N>Since this is a deprecated property we suggest to use allowVirtualScrolling property.
 
 Default Value:
 {:.param}
-
-
-
 * false
-
-
-
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
- <ul id="countrylist">  </ul>
-<script>          
-//To set fields API value during initialization  
-        $("#countrylist").ejListBox({ dataSource: window.countriesField, enableLoadOnDemand:true,enableVirtualScrolling:true,  fields: { text: "name", value: "key" }});
-</script>{% endhighlight %}
+            $("#customerlist").ejListBox({
+            
+            enableVirtualScrolling: true           
+            
+            });
+
+{% endhighlight %}
 
 
-
-
-### fields<span class="type-signature type object">object</span>
+####fields <span class="type-signature type JSONobject">JSONobject</span>
 {:#members:fields}
 
-
-
-
-Specifies mapping fields for the data items of the ListBox.
-
+Mapping fields for the data items of the ListBox widget.
 
 Default Value:
 {:.param}
-
-
-
 * null
-
-
-
 
 Example
 {:.example}
 
-
-{% highlight html %}
- 
- <ul id="countrylist">  </ul>
-<script>          
-//To set fields API value during initialization  
-        $("#countrylist").ejListBox({ dataSource: window.countriesField,   fields: { text: "name", value: "key" }});
-</script>{% endhighlight %}
-
-
-
-
-### fields.category<span class="type-signature type string">String</span>
-{:#members:fields-category}
-
-
-
-
-Defines the category for data item.
-
-
-
-
-
-
-### fields.htmlAttributes<span class="type-signature type object">Object</span>
-{:#members:fields-htmlattributes}
-
-
-
-
-Defines the html attributes such as id, class, styles for the item.
-
-
-
-
-
-
-### fields.id<span class="type-signature type string">String</span>
-{:#members:fields-id}
-
-
-
-
-Defines id for the tag.
-
-
-
-
-
-
-### fields.imageAttributes<span class="type-signature type string">String</span>
-{:#members:fields-imageattributes}
-
-
-
-
-Defines the image attributes such as height, width, styles and so on.
-
-
-
-
-
-
-### fields.imageUrl<span class="type-signature type string">String</span>
-{:#members:fields-imageurl}
-
-
-
-
-Defines the imageURL for the image location.
-
-
-
-
-
-
-### fields.selected<span class="type-signature type string">String</span>
-{:#members:fields-selected}
-
-
-
-
-Defines the tag value to be selected initially
-
-
-
-
-
-
-### fields.spriteCssClass<span class="type-signature type string">String</span>
-{:#members:fields-spritecssclass}
-
-
-
-
-Defines the sprite css for the image tag.
-
-
-
-
-
-
-### fields.tableName<span class="type-signature type string">String</span>
-{:#members:fields-tablename}
-
-
-
-
-Defines the table name for tag value or display text while render with remote data.
-
-
-
-
-
-
-### fields.text<span class="type-signature type string">String</span>
-{:#members:fields-text}
-
-
-
-
-Defines the text content for the tag.
-
-
-
-
-
-
-### fields.toolTipText<span class="type-signature type object">Object</span>
-{:#members:fields-tooltiptext}
-
-
-
-
-Defines the tooltip text to be displayed for the data list item.
-
-
-
-
-
-
-### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+{% highlight js %}
+
+        $("#countrylist").ejListBox({ 
+
+        dataSource: countries, 
+        
+        fields: { text: "name", value: "key" } 
+        
+        });
+
+{% endhighlight %}
+
+<table>
+<tr>
+<td>
+fields.category [Deprecated]</td><td>
+The grouping in the ListBox widget can be defined using this field. Note: Since this is deprecated we suggest you to use fields.groupBy API.</td></tr>
+<tr>
+<td>
+fields.checkBy </td><td>
+Defines the specific field name which contains Boolean values to specify whether the list items to be checked by default or not. </td></tr>
+<tr>
+<td>
+fields.groupBy </td><td>
+The grouping in the ListBox widget can be defined using this field. </td></tr>
+<tr>
+<td>
+fields.htmlAttributes</td><td>
+Defines the html attributes such as id, class, styles for the specific ListBox item.</td></tr>
+<tr>
+<td>
+fields.id</td><td>
+Defines the specific field name which contains id values for the list items.</td></tr>
+<tr>
+<td>
+fields.imageUrl</td><td>
+Defines the imageURL for the image to be displayed in the ListBox item.</td></tr>
+<tr>
+<td>
+fields.imageAttributes</td><td>
+Defines the image attributes such as height, width, styles and so on.</td></tr>
+<tr>
+<td>
+fields.selected [Deprecated]</td><td>
+Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.Note: Since this is deprecated we suggest you to use fields.selectBy API.</td></tr>
+<tr>
+<td>
+fields.selectBy</td><td>
+Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.</td></tr>
+<tr>
+<td>
+fields.spriteCssClass</td><td>
+Defines the sprite css class for the image to be displayed.</td></tr>
+<tr>
+<td>
+fields.tableName</td><td>
+Defines the table name to get the specific set of list items to be loaded in the ListBox widget while rendering with remote data.</td></tr>
+<tr>
+<td>
+fields.text</td><td>
+Defines the specific field name in the data source to load the list with data.</td></tr>
+<tr>
+<td>
+fields.tooltipText [Deprecated]</td><td>
+Defines the specific field name to display the tooltip text for all the list items.</td></tr>
+</table>
+
+
+####height  <span class="type-signature type string">String</span>
 {:#members:height}
 
-
-
-
-Defines the height of the ListBox.
-
+Defines the height of the ListBox widget.
 
 Default Value:
-{:.param}
-
-
-
-* Null
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-
-<script>
-//Initialize the ListBox height property with the  value specified
-$('#carsList').ejListBox({ height: "300"});     
-</script> {% endhighlight %}
-
-
-
-
-### query<span class="type-signature type object">object</span>
-{:#members:query}
-
-
-
-
-Specifies the query to retrieve the data from online server.
-
-
-Default Value:
-{:.param}
-
-
-
+{:.param} 
 * null
 
-
-
-
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
- <ul id="customerlist">  </ul>
-<script>          
-//To set query API value during initialization  
-var dataManger = ej.DataManager({       url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"});
-var queryString = ej.Query().from("Suppliers").select("Customers");
-        $("#customerlist").ejListBox({ dataSource: dataManger, query: queryString, fields: { text: "CustomerID" }});
-</script>{% endhighlight %}
+    $('#list').ejListBox({ height: "300"}); 
 
+{% endhighlight %}
 
+####itemsCount <span class="type-signature type integer">Integer</span>
+{:#members:itemscount}
 
-
-### selectedItemIndex<span class="type-signature type number">number</span>
-{:#members:selecteditemindex}
-
-
-
-
-Specifies the selectedItemIndex for ListBox.
-
+The number of list items to be shown in the ListBox widget. The remaining list items will be scrollable.
 
 Default Value:
 {:.param}
-
-
-
 * null
 
+Example
+{:.example}
 
+{% highlight js %}
 
+    $('#list').ejListBox({itemsCount: 8}); 
+
+{% endhighlight %}
+
+####itemRequestCount  <span class="type-signature type integer">Integer</span>
+{:#members:itemrequestcount}
+
+The number of list items to be loaded in the list box while enabling virtual scrolling and when virtualScrollMode is set to continuous.
+
+Default Value:
+{:.param}
+* 5
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+            $("#customerlist").ejListBox({
 
-<script>
-// To set selectedItemIndex   API value during initialization  .        
-$('#carsList').ejListBox({selectedItemIndex  : 2});     
-</script> {% endhighlight %}
+                itemRequestCount: 6 
 
+            });
 
+        });
+        
+ {% endhighlight %}
 
+####loadDataOnInit <span class="type-signature type boolean">Boolean</span>
+{:#members:loaddataoninit}
 
-### selectedItemlist<span class="type-signature type integerarray">integerarray</span>
-{:#members:selecteditemlist}
+Loads data for the listbox by default (i.e. on initialization) when set to true.
 
+N> It is used along with cascading feature. See also cascadeTo.
 
-
-
-Specifies the selectedItems for ListBox.
-
-
-Default Value:
+Default Value: 
 {:.param}
-
-
-
-* []
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-
-<script>
-// To set selectedItemlist   API value during initialization  .         
-$('#carsList').ejListBox({ allowMultiSelection:true,selectedItemlist  : [1,2] });       
-</script> {% endhighlight %}
-
-
-
-
-### selectedItems<span class="type-signature type integerarray">integerarray</span>
-{:#members:selecteditems}
-
-
-
-
-Specifies the items to be an selected in listbox.
-
-
-Default Value:
-{:.param}
-
-
-
-* null
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-
-<script>
-// To set selectedItems API value during initialization  .
-$('#carsList').ejListBox({showCheckbox: true, selectedItems : [1,2]});
-</script> {% endhighlight %}
-
-
-
-
-### showCheckbox<span class="type-signature type boolean">boolean</span>
-{:#members:showcheckbox}
-
-
-
-
-Specifies the multi selection option in ListBox with the help of checkbox control. For this we have to set showCheckbox option true.
-
-
-Default Value:
-{:.param}
-
-
-
-* false
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-
-<script>
-// Initialize the ListBox with the showCheckbox value specified.
-$('#carsList').ejListBox({showCheckbox: true });        
-</script> {% endhighlight %}
-
-
-
-
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
-{:#members:showroundedcorner}
-
-
-
-
-ListBox textbox to be displayed with rounded corner style.
-
-
-Default Value:
-{:.param}
-
-
-
 * true
 
-
-
-
 Example
 {:.example}
 
+ {% endhighlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+        $('#countryList').ejListBox({ 
 
-<script>
-// Initialize the ListBox with the showRoundedCorner value specified.
-$('#carsList').ejListBox({ showRoundedCorner: true });  
-</script> {% endhighlight %}
+            loadDataOnInit: false 
 
+        });
+        
+ {% endhighlight %}
+####query <span class="type-signature type ej.Query">ej.Query</span>
+{:#members:query}
 
-
-
-### template<span class="type-signature type string">string</span>
-{:#members:template}
-
-
-
-
-Specifies the template for ListBox.
-
+The query to retrieve required data from the data source.
 
 Default Value:
 {:.param}
-
-
-
 * null
 
+Example
+{:.example}
 
+{% highlight js %}
 
+            var query = ej.Query()
+
+                   .from("Customers").take(10);
+                   
+            $("#customerlist").ejListBox({
+
+                query: query
+
+            });
+
+{% endhighlight %}
+
+####selectedItemIndex [Deprecated] <span class="type-signature type integer">Integer</span>
+{:#members:selecteditemindex}
+
+The item to be selected by default using its index.
+
+N>Since this is a deprecated property we suggest to use selectedIndex property.
+
+Default Value:
+{:.param}
+* null
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
- 
-<ul id="carsList" /> </ul> 
- 
-<script>          
-// To set template API value during initialization  .   
-$("#carsList").ejListBox({ dataSource: window.carsListempList, template: '<img class="eimg" src="styles/images/Employee/${eimg}.png" alt="employee" height="50px" width="50px"/>' +
-  '<div class="ename"> ${text} </div><div class="desig"> ${desig} </div><div class="cont"> ${country} </div>'});
-</script>{% endhighlight %}
+    $('#list').ejListBox({selectedItemIndex : 2}); 
+    
+{% endhighlight %}
 
+####selectedItemlist [Deprecated] <span class="type-signature type array">Array</span>
+{:#members:selecteditemlist}
 
+The list of items to be selected by default using its index values. To use this property allowMultiSelection should be enabled.
 
-
-### unCheckAll<span class="type-signature type boolean">boolean</span>
-{:#members:uncheckall}
-
-
-
-
-Specifies to uncheck all the items of ListBox can be done with the help of this unCheckAll property, it supports only when the showCheckbox property true.
-
+N>Since this is a deprecated property we suggest to use selectedIndices property.
 
 Default Value:
 {:.param}
+* []
 
+Example
+{:.example}
 
+{% highlight js %}
 
+        $('#list).ejListBox({ 
+        
+        allowMultiSelection:true,
+        
+            selectedItemlist : [1,2] 
+        
+        }); 
+
+{% endhighlight %}
+
+####selectedItems [Deprecated] <span class="type-signature type array">Array</span>
+{:#members:selecteditems}
+
+The list of items to be selected by default using its index. To use this property allowMultiSelection should be enabled.
+
+N>Since this is a deprecated property we suggest to use selectedIndices property.
+
+Default Value:
+{:.param}
+* []
+
+Example
+{:.example}
+
+{% highlight js %}
+
+    $('#list').ejListBox({allowMultiSelection:true, selectedItems : [1,2]}); 
+
+{% endhighlight %}
+
+####selectedIndex  <span class="type-signature type integer">Integer</span>
+{:#members:selectedindex}
+
+The list item to be selected by default using its index.
+
+Default Value:
+{:.param}
+* null
+
+Example
+{:.example}
+
+{% highlight js %}
+
+    $('#list').ejListBox({selectedIndex : 2}); 
+
+{% endhighlight %}
+
+####selectedIndices <span class="type-signature type array">Array</span>
+{:#members:selectedindices}
+
+The list items to be selected by default using its indices. To use this property allowMultiSelection should be enabled.
+
+Default Value:
+{:.param}
+* []
+
+Example
+{:.example}
+
+{% highlight js %}
+
+    $('#list').ejListBox({selectedIndices : [2,4]}); 
+
+{% endhighlight %}
+
+####showCheckbox <span class="type-signature type boolean">Boolean</span>
+{:#members:showcheckbox}
+
+Enables/Disables the multi selection option with the help of checkbox control.
+
+Default Value:
+{:.param}
 * false
 
+Example
+{:.example}
 
+{% highlight js %}
 
+    $('#list').ejListBox({showCheckbox: true }); 
+
+{% endhighlight %}
+
+####showRoundedCorner <span class="type-signature type boolean">Boolean</span>
+{:#members:showroundedcorner}
+
+To display the ListBox container with rounded corners.
+
+Default Value:
+{:.param}
+* false
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+    $('#list').ejListBox({ showRoundedCorner: true }); 
 
-<script>
-// Initialize the ListBox with the uncheckAll value specified.
-$('#carsList').ejListBox({showCheckbox: true,  uncheckAll: true  });    
-</script> {% endhighlight %}
+{% endhighlight %}
+####template <span class="type-signature type string">String</span>
+{:#members:template}
 
+The template to display the ListBox widget with customized appearance.
 
+Default Value: 
+{:.param}
+*null
 
+Example
+{:.example}
 
-### uncheckItemsByIndex<span class="type-signature type string">string</span>
+{% highlight js %}
+
+            $('#selectExperts').ejListBox({
+
+                template: '&lt;div class="ename"&gt; ${text} &lt;/div&gt;&lt;div class="desig"&gt; ${desig} &lt;/div&gt;&lt;div class="cont"&gt; ${country} &lt;/div&gt;'
+
+            });
+        });
+        
+ {% endhighlight %}
+
+####unCheckAll [Deprecated] <span class="type-signature type boolean">Boolean</span>
+{:#members:uncheckall}
+
+Unchecks all the checked list items. It is dependent on showCheckbox property.
+
+Default Value:
+{:.param}
+* false
+
+Example
+{:.example}
+
+{% highlight js %}
+
+    $("#button").ejButton({ text: "uncheck All list Items", click: "uncheckall" });
+
+{% endhighlight %}
+
+####uncheckItemsByIndex [Deprecated] <span class="type-signature type string">String</span>
 {:#members:uncheckitemsbyindex}
 
-
-
-
-Specifies the index value to uncheck the items in the listbox.
-
+Unchecks the list of items by using its index values. It is dependent on showCheckbox property.
 
 Default Value:
 {:.param}
-
-
-
 * null
 
-
-
-
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+            $('#list').ejListBox({ showCheckbox: true, uncheckItemsByIndex: "2,3" });
+            
+{% endhighlight %}
 
-<script>
-// To set uncheckItemsByIndex API value during initialization  .
-$('#carsList').ejListBox({uncheckItemsByIndex  : "2,3"});
-</script> {% endhighlight %}
+####value <span class="type-signature type integer">Integer</span>
+{:#members:value}
 
-
-
-
-### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:width}
-
-
-
-
-Defines the width of the ListBox.
-
+Holds the selected items values and used to bind value to the list item using angular and knockout.
 
 Default Value:
 {:.param}
-
-
-
-* Null
-
-
-
+* “”
 
 Example
 {:.example}
 
-
 {% highlight html %}
+    <div ng-app="ListCtrl" ng-controller="ListBoxCtrl">
+
+        <ul id="bookSelect" ej-listbox e-datasource="dataList" e-value="value"></ul>
+        <input type="text" style="margin-top:20px;" id="dropValue" class="input ejinputtext" ng-model="value" />;
+
+    </div>
+        <script type="text/javascript">
+
+            var list = [
+
+            { empid: "cr1", text: "Dodge Avenger" },
+
+            { empid: "cr2", text: "Chrysler 200" },
+
+            { empid: "cr3", text: "Ford Focus" },
+
+            { empid: "cr4", text: "Ford Taurus", },
+
+            { empid: "cr5", text: "Dazzler", },
+
+            { empid: "cr6", text: "Chevy Spark", },
+
+            { empid: "cr7", text: "Chevy Volt", },
+
+            { empid: "cr8", text: "Honda Fit", },
+
+            { empid: "cr9", text: "Honda Crosstour", },
+
+            { empid: "cr10", text: "Acura RL", },
+
+            { empid: "cr11", text: "Hyundai Elantra", },
+
+            { empid: "cr12", text: "Mazda3", }
+
+            ];
+
+            angular.module('ListCtrl', ['ejangular'])
+
+            .controller('ListBoxCtrl', function ($scope) {
+
+                $scope.dataList = list;
+
+                $scope.value = "Ford Taurus";
+
+            });
+
+            $(function () {
+
+                var target = $('#bookSelect').data("ejListBox");
+
+                target.selectItemByIndex(3);
+
+            });
+            </script>
+
+            
+ {% endhighlight %}
+
+####virtualScrollMode <span class="type-signature type enum">Enum</span>
+{:#members:virtualscrollmode}
+
+Specifies the virtual scroll mode to load the list data on demand via scrolling behavior. There are two types of mode.
+
+* continuous:
+
+Each time when we scroll to the end of the ListBox widget, the other set of list items will get loaded.
+
+* normal:
+
+This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.
+
+Default Value:
+{:.param} 
+* “normal”. 
+
+Example
+{:.example}
+
+ {% highlight js %}
+            $("#customerlist").ejListBox({
+            
+                    allowVirtualScrolling: true, 
+            
+            virtualScrollMode: "continuous"           
+            
+            });
+
+ {% endhighlight %}
+
+####width <span class="type-signature type string">String</span>
+{:#members:width}
+
+Defines the width of the ListBox widget.
+
+Default Value:
+{:.param}
+* null
+
+Example
+{:.example}
+
+ {% highlight js %}
  
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-
-<script>
-//Initialize the ListBox width property with the  value specified
-$('#carsList').ejListBox({ width: "220"});      
-</script> {% endhighlight %}
+    $('#list').ejListBox({ width: "220"}); 
+    
+ {% endhighlight %}
+ 
+ 
+ 
+###Methods
 
 
-
-## Methods
-
-
-
-
-### addItem<span class="signature">()</span>
+####addItem<span class="signature">(listItem, index)</span>
 {:#methods:additem}
 
+Adds a given list items in the ListBox widget at a specified index. It accepts two parameters. 
 
-
-
-To add an list item in the ListBox
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.addItem("Java"); // add an new item in the ListBox
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("addItem","Java");     
-</script>{% endhighlight %}
-
-
-
-
-### checkAll<span class="signature">()</span>
-{:#methods:checkall}
-
-
-
-
-To check all the list items in the ListBox
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+listItem</td><td>
+object / string</td><td>
+This can be a list item object (for JSON binding) or a string (for UL and LI rendering). Also we can the specify this as an array of list item object or an array of strings to add multiple items.</td></tr>
+<tr>
+<td>
+index</td><td>
+Integer</td><td>
+The index value to add the given items at the specified index. If index is not specified, the given items will be added at the end of the list.</td></tr>
+</table>
 
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox({showCheckbox:true});  
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.checkAll(); // checks all the list items in the ListBox
-</script>{% endhighlight %}
+        $('#list').ejListBox("addItem","Audi R8",1); 
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox({showCheckbox:true});  
-$('#carsList').ejListBox("checkAll");   
-</script>{% endhighlight %}
+####checkAll<span class="signature">()</span>
+{:#methods:checkAll}
+
+Checks all the list items in the ListBox widget. It is dependent on showCheckbox property.
+
+N> This method does not accept any arguments.
+
+Example
+{:.example}
+
+{% highlight js %}
+
+        $('#list').ejListBox("checkAll"); 
+
+{% endhighlight %}
 
 
-
-
-### checkItemByIndex<span class="signature">()</span>
+####checkItemByIndex<span class="signature">(index)</span>
 {:#methods:checkitembyindex}
 
+Checks a list item by using its index. It is dependent on showCheckbox property.
 
-
-
-To check a list items through index in the ListBox
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.checkItemsByIndex(2,3); // checks the specified items the ListBox
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox       
-$('#carsList').ejListBox("checkItemByIndex","2,3");     
-</script>{% endhighlight %}
-
-
-
-
-### checkitems<span class="signature">()</span>
-{:#methods:checkitems}
-
-
-
-
-To check items in the checkitemslist in the ListBox
-
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+Integer</td><td>
+Index of the listbox item to be checked. If index is not specified, the given items will be added at the end of the list.</td></tr>
+</table>
 
 Example
 {:.example}
 
+{% highlight js %}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox({showCheckbox:true});  
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.checkitems(); // checks all the list items in the checkedItemlist
-</script>{% endhighlight %}
+        $('#list').ejListBox("checkItemByIndex",3); 
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox({showCheckbox:true});  
-$('#carsList').ejListBox("checkitems");         
-</script>{% endhighlight %}
+####checkItemsByIndices<span class="signature">(index/indices) </span>
+{:#methods:checkitemsbyindices}
+
+Checks multiple list items by using its index values. It is dependent on showCheckbox property.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index/indices</td><td>
+Integer array/ string</td><td>
+Index/Indices of the listbox items to be checked. If index is not specified, the given items will be added at the end of the list.</td></tr>
+</table>
 
 
+N> This method accepts array of integers or a string containing integer values separated by commas as an argument.
+
+Example
+{:.example}
+
+{% highlight js%}
+        
+        $('#list').ejListBox("checkItemsByIndices","2,3");
+
+{% endhighlight %}
 
 
-### disable<span class="signature">()</span>
+####disable<span class="signature">()</span>
 {:#methods:disable}
 
+Disables the ListBox widget.
 
-
-
-To disable the ListBox
-
-
+N> This method does not accept any arguments.
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.disable(); // disable the ListBox
-</script>{% endhighlight %}
+        $('#list').ejListBox("disable"); 
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();
-$('#carsList').ejListBox("disable");    
-</script>{% endhighlight %}
-
-
-
-
-### disableItem<span class="signature">()</span>
+####disableItem<span class="signature">(text)</span>
 {:#methods:disableitem}
 
+Disables a list item by passing the item text as parameter.
 
-
-
-To disable an list item in the ListBox
-
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+text</td><td>
+String</td><td>
+Text of the listbox item to be disabled.</td></tr>
+</table>
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.disableItem(); // disable selected item in the ListBox
-</script>{% endhighlight %}
+        $('#list').ejListBox("disableItem","Audi A5"); 
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("disableItem");        
-</script>{% endhighlight %}
-
-
-
-
-### disableItemByIndex<span class="signature">()</span>
+####disableItemByIndex<span class="signature">(index)</span>
 {:#methods:disableitembyindex}
 
+Disables a list Item using its index value.
 
-
-
-To disable an Item or set of Items in the ListBox
-
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+integer</td><td>
+Index of the listbox item to be disabled.</td></tr>
+</table>
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.disableItemByIndex("3,5,7");
-</script>{% endhighlight %}
+        $('#list').ejListBox("disableItemByIndex" ,3); 
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("disableItemsByIndex" ,"3,5,7");
-</script>{% endhighlight %}
+####disableItemsByIndices<span class="signature">(indices)</span>
+{:#methods:disableitemsbyindices}
+
+Disables set of list Items using its index values.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+Indices</td><td>
+Integer array/ string</td><td>
+Indices of the listbox item to be disabled.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+        $('#list').ejListBox("disableItemsByIndices" ,"3,5,7"); 
+
+{% endhighlight %}
 
 
-
-
-### enable<span class="signature">()</span>
+####enable<span class="signature">()</span>
 {:#methods:enable}
 
-
-
-
-To enable the ListBox
-
-
+Enables the ListBox widget when it is disabled.
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.enable(); // enable the ListBox
-</script>{% endhighlight %}
+            $('#list').ejListBox("enable");
+            
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();
-$('#carsList').ejListBox("enable");     
-</script>{% endhighlight %}
+####enableItem<span class="signature">(text)</span>
+{:#methods:enableitem}
+
+Enables a list Item using its item text value.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+text</td><td>
+string</td><td>
+Text of the listbox item to be enabled.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("enableItem", "Audi A5");
+
+{% endhighlight %}
 
 
-
-
-### enableItemByIndex<span class="signature">()</span>
+####enableItemByIndex<span class="signature">(index)</span>
 {:#methods:enableitembyindex}
 
+Enables a list item using its index value.
 
-
-
-To enable a single Item or set of Items in the ListBox
-
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+Integer </td><td>
+Index of the listbox item to be enabled.</td></tr>
+</table>
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.enableItemByIndex("3,5");
-</script>{% endhighlight %}
+            $('#list').ejListBox("enableItemByIndex", 5);
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("enableItemsByIndex" ,"3,5");
-</script>{% endhighlight %}
+####enableItemsByIndices<span class="signature">(indices)</span>
+{:#methods:enableitemsbyindices}
+
+Enables a set of list Items using its index values.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+indices</td><td>
+Integer array/ string</td><td>
+Indices of the listbox items to be enabled.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
 
 
+        $('#list').ejListBox("enableItemsByIndices", "3,5");
+
+{% endhighlight %}
 
 
-### getCheckedItems<span class="signature">()</span>
+####getCheckedItems<span class="signature">()</span>
 {:#methods:getcheckeditems}
 
+Returns the list of checked items in the ListBox widget. It is dependent on showCheckbox property.
 
-
-
-To get the list of checked list items in the ListBox
-
-
+N>This method does not accept any arguments.
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.getCheckedItems(); // get the list of checked items the ListBox
-</script>{% endhighlight %}
+        $('#list').ejListBox("getCheckedItems");
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("getCheckedItems");    
-</script>{% endhighlight %}
-
-
-
-
-### getSelectedItem<span class="signature">()</span>
-{:#methods:getselecteditem}
-
-
-
-
-To get the selected list item in the ListBox
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.getSelectedItem(); // gets the selected item from the ListBox
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("getSelectedItem");    
-</script>{% endhighlight %}
-
-
-
-
-### getSelectedItems<span class="signature">()</span>
+####getSelectedItems<span class="signature">()</span>
 {:#methods:getselecteditems}
 
+Returns the list of selected items in the ListBox widget. 
+
+N> This method does not accept any arguments.
+
+Example
+{:.example}
+
+{% highlight js%}
+
+        $('#list').ejListBox("getSelectedItems");
+
+{% endhighlight %}
 
 
+####getIndexByText<span class="signature">(text)</span>
+{:#methods:getindexbytext}
 
-To get the list of selected list items in the ListBox
 
+Returns an item’s index based on the given text.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+text</td><td>
+string</td><td>
+The list item text (label)</td></tr>
+</table>
 
 
 Example
 {:.example}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.getSelectedItems(); // gets the list of selected list items from the ListBox
-</script>{% endhighlight %}
+{% highlight js%}
+
+        $('#list').ejListBox("getIndexByText", "Audi A5");
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("getSelectedItems");   
-</script>{% endhighlight %}
+####getIndexByValue<span class="signature">(value)</span>
+{:#methods:getindexbyvalue}
+
+Returns an item’s index based on the value given.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+value</td><td>
+string</td><td>
+The list item’s value</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+        $('#list').ejListBox("getIndexByValue", "audia4");
+
+{% endhighlight %}
 
 
+####getTextByIndex<span class="signature">(index)</span>
+{:#methods:gettextbyindex}
+
+Returns an item’s text (label) based on the index given.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+Integer </td><td>
+The list item index.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("getTextByIndex", 3);
+
+{% endhighlight %}
 
 
-### moveDown<span class="signature">()</span>
+####getItemByIndex<span class="signature">(index)</span>
+{:#methods:getitembyindex}
+
+Returns a list item’s object using its index.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+Integer </td><td>
+The list item index.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("getItemByIndex", 3);
+
+{% endhighlight %}
+
+
+####getItemByText<span class="signature">(text)</span>
+{:#methods:getitembytext}
+
+Returns a list item’s object based on the text given.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+text</td><td>
+string</td><td>
+The list item text.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("getItemByText", "Audi A7");
+
+{% endhighlight %}
+
+
+####moveDown<span class="signature">()</span>
 {:#methods:movedown}
 
+Selects the next item based on the current selection.
 
-
-
-To move the selected list item one step Down in the ListBox
-
-
+N> This method does not accept any arguments.
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.moveDown(); //moves down the selected item in the ListBox
-</script>{% endhighlight %}
+            $('#list').ejListBox("moveDown");
+            
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("moveDown");   
-</script>{% endhighlight %}
-
-
-
-
-### moveUp<span class="signature">()</span>
+####moveUp<span class="signature">()</span>
 {:#methods:moveup}
 
+Selects the previous item based on the current selection.
 
-
-
-To move the selected list item one step Up in the ListBox
-
-
+ This method does not accept any arguments._
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.moveUp(); // moves up selected item in the ListBox
-</script>{% endhighlight %}
+            $('#list').ejListBox("moveUp");
+
+{% endhighlight %}            
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("moveUp");     
-</script>{% endhighlight %}
+####refresh<span class="signature">(refreshData)</span>
+{:#methods:refresh}
+
+Refreshes the ListBox widget.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+refreshData</td><td>
+Boolean</td><td>
+Refreshes both the datasource and the dimensions of the ListBox widget when the parameter is passed as true, otherwise only the ListBox dimensions will be refreshed.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+                $("#customerlist").ejListBox("refresh", true);
+
+{% endhighlight %}
 
 
-
-
-### removeItem<span class="signature">()</span>
+####removeItem<span class="signature">()</span> [Deprecated]
 {:#methods:removeitem}
 
+Removes the selected list items from the listbox. 
 
-
-
-To remove an list item in the ListBox
-
-
+N>
+> 1. This method does not accept any arguments.
+> 2.Since this method is deprecated we suggest you to use removeSelectedItems method.
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.removeItem(); // removes the selected item from the ListBox
-</script>{% endhighlight %}
+            $('#list').ejListBox("removeItem"); 
+            
+ {% endhighlight %}         
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("removeItem");         
-</script>{% endhighlight %}
+####removeSelectedItems<span class="signature">()</span>
+{:#methods:removeselecteditems}
+
+Removes the selected list items from the listbox.
+
+N> This method does not accept any arguments.
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("removeSelectedItems");
+
+{% endhighlight %}
 
 
+####removeItemByText<span class="signature">(text)</span>
+{:#methods:removeitembytext}
+
+Removes a list item by using its text.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+text</td><td>
+string</td><td>
+Text of the listbox item to be removed. </td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("removeItemByText","Audi A5");
+
+{% endhighlight %}
 
 
-### selectAll<span class="signature">()</span>
+####removeItemByIndex<span class="signature">(index)</span>
+{:#methods:removeitembyindex}
+
+Removes a list item by using its index value.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+Integer </td><td>
+Index of the listbox item to be removed.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("removeItemByIndex", 2);
+
+{% endhighlight %}
+
+
+####selectAll<span class="signature">()</span>
 {:#methods:selectall}
 
+Selects all the list items dynamically. This method will works when the allowMultiSelection property is set as true.
 
-
-
-To select all the list items in the ListBox
-
-
+N> This method does not accept any arguments._
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.selectAll(); // selects all the list items in the ListBox
-</script>{% endhighlight %}
+            $('#list').ejListBox("selectAll");
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("selectAll");  
-</script>{% endhighlight %}
+####selectItemByText<span class="signature">(text)</span>
+{:#methods:selectItemByText}
+
+Selects the list tem using its text value.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+text</td><td>
+string</td><td>
+Text of the listbox item to be selected.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("selectItemByText", "Audi A5");
+
+{% endhighlight %}
 
 
+####selectItemByValue<span class="signature">(value)</span>
+{:#methods:selectitembyvalue}
+
+Selects list tem using its value property.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+value</td><td>
+String</td><td>
+Value of the listbox item to be selected.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("selectItemByValue", "audia5");
+
+{% endhighlight %}
 
 
-### selectItemByIndex<span class="signature">()</span>
+####selectItemByIndex<span class="signature">(index)</span>
 {:#methods:selectitembyindex}
 
+Selects list item using its index value.
 
-
-
-To select an Item using its index in the ListBox
-
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+Integer </td><td>
+Index of the listbox item to be selected.</td></tr>
+</table>
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.selectItemByIndex(2); //selects the item in the ListBox
-</script>{% endhighlight %}
+            $('#list').ejListBox("selectItemByIndex", 2);
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("selectItemByIndex" ,"2");     
-</script>{% endhighlight %}
-
-
-
-
-### selectItemsByIndex<span class="signature">()</span>
+####selectItemsByIndex<span class="signature">(index/indices)</span>  [Deprecated]
 {:#methods:selectitemsbyindex}
 
+Selects a set of list items through its index values. This method will works when allowMultiSelection property is set to true.
 
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index/Indices</td><td>
+Integer array/ string</td><td>
+Index/Indices of the listbox items to be selected.</td></tr>
+</table>
 
-
-To select a list items through index in the ListBox
-
-
+N> Since this property is deprecated, we suggest you to use selectItemsByIndices property.
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.selectItemsByIndex(2,3); // selects the specified items the ListBox
-</script>{% endhighlight %}
+            $('#list').ejListBox("selectItemsByIndex", "2,3,5");
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("selectItemsByIndex","2,3");   
-</script>{% endhighlight %}
+####selectItemsByIndices<span class="signature">(indices)</span>  [Deprecated]
+{:#methods:selectitemsbyindices}
+
+Selects a set of list items through its index values. 
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index/Indices</td><td>
+Integer array/ string</td><td>
+Index/Indices of the listbox item to be selected.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("selectItemsByIndices", "2,3,5");
+            
+{% endhighlight %}
 
 
-
-
-### unCheckAll<span class="signature">()</span>
+####unCheckAll<span class="signature">()</span> [Deprecated]
 {:#methods:uncheckall}
 
+Unchecks all the checked list items in the ListBox widget. To use this method showCheckbox property to be set as true.
 
+N>
+> 1. This method does not accept any arguments.
 
-
-To uncheck all the list items in the ListBox
-
-
+> 2. Since this method is deprecated, we suggest you to use  uncheckAll method.
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox({showCheckbox:true});  
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.unCheckAll(); // Unchecks all the list items in the ListBox
-</script>{% endhighlight %}
+            $('#list').ejListBox("unCheckAll");
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox({showCheckbox:true});  
-$('#carsList').ejListBox("unCheckAll");         
-</script>{% endhighlight %}
+####uncheckAll<span class="signature">()</span>
+{:#methods:uncheckAll}
+
+Unchecks all the checked list items in the ListBox widget. To use this method showCheckbox property to be set as true.
+
+N> This method does not accept any arguments.
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("uncheckAll");
+
+{% endhighlight %}
 
 
-
-
-### uncheckItemByIndex<span class="signature">()</span>
+####uncheckItemByIndex<span class="signature">(index)</span>
 {:#methods:uncheckitembyindex}
 
+Unchecks a checked list item using its index value. To use this method showCheckbox property to be set as true.
 
-
-
-To uncheck set of list items in the ListBox
-
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+Integer </td><td>
+Index of the listbox item to be unchecked.</td></tr>
+</table>
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
+            $('#list').ejListBox("uncheckItemByIndex", 3);
  
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.uncheckItemsByIndex(2,3); // uncheckItems specified the ListBox
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox("uncheckItemByIndex","2,3");   
-</script>{% endhighlight %}
+####uncheckItemsByIndices<span class="signature">(indices)</span>
+{:#methods:uncheckitemsbyindices}
+
+Unchecks the set of checked list items using its index values. To use this method showCheckbox property must be set to true.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+indices</td><td>
+Integer array/ string</td><td>
+Indices of the listbox item to be unchecked.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("uncheckItemsByIndices", "2,3,5");
+
+{% endhighlight %}
 
 
-
-
-### unSelectAll<span class="signature">()</span>
+####unSelectAll<span class="signature">()</span> [Deprecated]
 {:#methods:unselectall}
 
+Unselect all the selected list items in the ListBox widget. 
 
+N>
+>1. This method does not accept any arguments.
 
-
-To unselect all the list items in the ListBox
-
-
+>2. Since this method is deprecated, we suggest you to use unselectAll method.
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.unSelectAll(); // unselect all the items in the ListBox
-</script>{% endhighlight %}
+            $('#list').ejListBox("unSelectAll");
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("unSelectAll");        
-</script>{% endhighlight %}
+####unselectAll<span class="signature">()</span>
+{:#methods:unselectall}
+
+Unselect all the selected list items in the ListBox widget. 
+
+N> This method does not accept any arguments.
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("unselectAll");
 
 
+{% endhighlight %}
 
 
-### unselectItemByIndex<span class="signature">()</span>
+####unselectItemByIndex<span class="signature">(index)</span>
 {:#methods:unselectitembyindex}
 
+Unselects a selected list item using its index value
 
-
-
-To unselect a list item in the ListBox
-
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+Integer </td><td>
+Index of the listbox item to be unselected.</td></tr>
+</table>
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.unselectItemByIndex(2); // unselects the list item specified in the index  in the ListBox
-</script>{% endhighlight %}
+            $('#list').ejListBox("unselectItemByIndex", 2);
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("unselectItemByIndex","2");    
-</script>{% endhighlight %}
-
-
-
-
-### unselectItemsByIndex<span class="signature">()</span>
+####unselectItemsByIndex<span class="signature">(index/indices)</span> [Deprecated]
 {:#methods:unselectitemsbyindex}
 
+Unselects a set of list items using its index values. 
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index/Indices</td><td>
+Integer array/ string</td><td>
+Index/Indices of the listbox item to be unselected.</td></tr>
+</table>
 
 
+N> Since this property is deprecated, we suggest you to use unselectItemsByIndices property.
 
-To unselect set of list items in the ListBox
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("unselectItemsByIndex", "2,3,5");
+
+{% endhighlight %}
 
 
+####unselectItemByText<span class="signature">(text)</span>
+{:#methods:unselectitembytext}
+
+Unselects a selected list item using its text value.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+text</td><td>
+string</td><td>
+Text of the listbox item to be unselected.</td></tr>
+</table>
 
 Example
 {:.example}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-var ListBoxObj  = $("#carsList").data("ejListBox");
-ListBoxObj.unselectItemsByIndex(2,3); // unselectItems specified the ListBox
-</script>{% endhighlight %}
+{% highlight js%}
+
+            $('#list').ejListBox("unselectItemByText", "Audi A5");
+
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-<script>
-// Create ListBox
-$('#carsList').ejListBox();     
-$('#carsList').ejListBox("unselectItemsByIndex","2,3");         
-</script>{% endhighlight %}
+####unselectItemByValue<span class="signature">(value)</span>
+{:#methods:unselectitembyvalue}
+
+Unselects a selected list item using its value.
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+value</td><td>
+string</td><td>
+Value of the listbox item to be unselected.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("unselectItemByValue", "audia5");
+
+{% endhighlight %}
+
+
+####unselectItemsByIndices<span class="signature">(indices)</span>
+{:#methods:unselectitemsbyindices}
+
+Unselects a set of list items using its index values. 
+
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+indices</td><td>
+Integer array/ string</td><td>
+Indices of the listbox item to be unselected.</td></tr>
+</table>
+
+
+N> This method accepts array of integers or a string containing list of integer values separated by commas as an argument.
+
+Example
+{:.example}
+
+{% highlight js%}
+
+            $('#list').ejListBox("unselectItemsByIndices", "2,3,5");
+
+{% endhighlight %}
 
 
 
-## Events
+### Events
+
+####actionSuccess
+{:#events:actionsuccess}
+
+Triggers when the data requested from AJAX will get successfully loaded in the ListBox widget. 
+
+N> It internally uses jQuery ajaxSuccess event. For details refer [here](http://api.jquery.com/ajaxsuccess/).
+
+Example
+{:.example}
+
+{% highlight js%}
+
+		$("#list").ejListBox({
+		
+		actionSuccess: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
+{% endhighlight %}
 
 
+####actionComplete
+{:#events:actioncomplete}
+
+Triggers when the AJAX requests complete. The request may get failed or succeed.
+
+N> It internally uses jQuery ajaxComplete event. For details refer [here](http://api.jquery.com/ajaxcomplete/).
+
+Example
+{:.example}
 
 
-### checkChange
+{% highlight js%}
+
+		$("#list").ejListBox({
+		
+		actionComplete: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
+
+{% endhighlight %}
+
+
+####actionFailure
+{:#events:actionfailure}
+
+Triggers when the data requested from AJAX get failed.
+
+N> It internally uses jQuery ajaxError event. For details refer [here](http://api.jquery.com/ajaxerror/).
+
+ Example
+ {:.example}
+
+{% highlight js%}
+		
+		$("#list").ejListBox({
+		
+		actionFailure: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
+
+{% endhighlight %}
+
+
+####change 
+{:#events:change}
+
+Triggers when the item selection is changed.
+
+<table>
+<tr>
+<th>
+<b>Event Arguments</b></th><th>
+<b>Type</b></th><th>
+<b>Description</b></th></tr>
+<tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.isChecked</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is checked or not.</td></tr>
+<tr>
+<td>
+argument.isSelected</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is selected or not.</td></tr>
+<tr>
+<td>
+argument.isEnabled</td><td>
+Boolean</td><td>
+Boolean value based on the list item is enabled or not.</td></tr>
+<tr>
+<td>
+argument.text</td><td>
+String</td><td>
+List item’s text (label).</td></tr>
+<tr>
+<td>
+argument.value</td><td>
+String</td><td>
+List item’s value.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+		$("#list").ejListBox({
+		
+		change: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
+
+{% endhighlight %}
+
+
+####checkChange
 {:#events:checkchange}
 
+Triggers when the list item is checked or unchecked.
 
-
-
-Fires when check state of an list item changed successfully.
-
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ListBox model</td>
-</tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.isChecked</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is checked or not.</td></tr>
+<tr>
+<td>
+argument.isSelected</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is selected or not.</td></tr>
+<tr>
+<td>
+argument.isEnabled</td><td>
+Boolean</td><td>
+Boolean value based on the list item is enabled or not.</td></tr>
+<tr>
+<td>
+argument.text</td><td>
+String</td><td>
+List item’s text (label).</td></tr>
+<tr>
+<td>
+argument.value</td><td>
+String</td><td>
+List item’s value.</td></tr>
 </table>
-
 
 Example
 {:.example}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+{% highlight js%}
 
-<script>
-//checkChange event for ListBox
-$('#carsList').ejListBox({      showCheckbox:true,checkChange: function(args) {}});     
-</script>            {% endhighlight %}
+		$("#list").ejListBox({
+		
+		checkChange: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
 
 
+{% endhighlight %}
 
 
-### create
+####create
 {:#events:create}
 
+Triggers when the ListBox widget is created successfully.
 
-
-
-Fires when create successfully.
-
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the listbox model object.</td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ListBox model</td>
-</tr>
+<td>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
 </table>
 
-
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+		$("#list").ejListBox({
+		
+		create: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
 
-<script>
-//create event for ListBox
-$('#carsList').ejListBox({      create: function(args) {}});    
-</script>            {% endhighlight %}
+{% endhighlight %}
 
 
-
-
-### destroy
+####destroy
 {:#events:destroy}
 
+Triggers when the ListBox widget is destroyed successfully.
 
-
-
-Fires when destroy successfully.
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-
-<script>
-//destroy event for ListBox
-$('#carsList').ejListBox({      destroy: function(args) {}});   
-</script>           {% endhighlight %}
-
-
-
-
-### destroy
-{:#events:destroy}
-
-
-
-
-Fires when the listbox data items loaded successfully.
-
-
+<table>
+<tr>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+</table>
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+		$("#list").ejListBox({
+		
+		destroy: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
 
-<script>
-//actionComplete event for ListBox
-$('#carsList').ejListBox({      destroy: function(args) {}});   
-</script>           {% endhighlight %}
+{% endhighlight %}
 
 
-
-
-### itemDrag
+####itemDrag
 {:#events:itemdrag}
 
+Triggers when the list item is being dragged.
 
-
-
-Fires when list item is being dragged successfully.
-
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ListBox model</td>
-</tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.isChecked</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is checked or not.</td></tr>
+<tr>
+<td>
+argument.isSelected</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is selected or not.</td></tr>
+<tr>
+<td>
+argument.isEnabled</td><td>
+Boolean</td><td>
+Boolean value based on the list item is enabled or not.</td></tr>
+<tr>
+<td>
+argument.text</td><td>
+String</td><td>
+List item’s text (label).</td></tr>
+<tr>
+<td>
+argument.value</td><td>
+String</td><td>
+List item’s value.</td></tr>
 </table>
-
 
 Example
 {:.example}
 
+{% highlight js%}
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+		$("#list").ejListBox({
+		
+		itemDrag: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
 
-<script>
-//itemDrag event for ListBox
-$('#carsList').ejListBox({      itemDrag: function(args) {}});  
-</script>            {% endhighlight %}
+{% endhighlight %}
 
 
+####itemRequest [Deprecated]
+{:#events:itemrequest}
+
+Triggers when the virtual scrolling, requests for new set of list items to be loaded in the ListBox widget.
+
+<table>
+<tr>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.originalEvent</td><td>
+Object</td><td>
+Returns the event arguments like event type,timestamp, etc.,</td></tr>
+<tr>
+<td>
+argument.scrollData</td><td>
+Object</td><td>
+Returns the dimension and position properties for scrolled element.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js%}
+
+		$("#list").ejListBox({
+		
+		itemRequest: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
+
+{% endhighlight %}
 
 
-### itemDragStart
+####itemDragStart
 {:#events:itemdragstart}
 
+Triggers when the list item is ready to be dragged. 
 
-
-
-Fires when list item started to drag successfully.
-
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ListBox model</td>
-</tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.isChecked</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is checked or not.</td></tr>
+<tr>
+<td>
+argument.isSelected</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is selected or not.</td></tr>
+<tr>
+<td>
+argument.isEnabled</td><td>
+Boolean</td><td>
+Boolean value based on the list item is enabled or not.</td></tr>
+<tr>
+<td>
+argument.text</td><td>
+String</td><td>
+List item’s text (label).</td></tr>
+<tr>
+<td>
+argument.value</td><td>
+String</td><td>
+List item’s value.</td></tr>
 </table>
 
+ Example
+ {:.example}
 
-Example
-{:.example}
+{% highlight js%}
 
+		$("#list").ejListBox({
+		
+		itemDragStart: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-
-<script>
-//itemDragStart event for ListBox
-$('#carsList').ejListBox({      itemDragStart: function(args) {}});     
-</script>            {% endhighlight %}
+{% endhighlight %}
 
 
-
-
-### itemDragStop
+####itemDragStop
 {:#events:itemdragstop}
 
+Triggers when the list item stops dragging. 
 
-
-
-Fires when list item stopped dragging successfully.
-
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ListBox model</td>
-</tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.isChecked</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is checked or not.</td></tr>
+<tr>
+<td>
+argument.isSelected</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is selected or not.</td></tr>
+<tr>
+<td>
+argument.isEnabled</td><td>
+Boolean</td><td>
+Boolean value based on the list item is enabled or not.</td></tr>
+<tr>
+<td>
+argument.text</td><td>
+String</td><td>
+List item’s text (label).</td></tr>
+<tr>
+<td>
+argument.value</td><td>
+String</td><td>
+List item’s value.</td></tr>
 </table>
 
+ Example
+ {:.example}
 
-Example
-{:.example}
+{% highlight js%}
 
+		$("#list").ejListBox({
+		
+		itemDragStop: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-
-<script>
-//itemDragStop event for ListBox
-$('#carsList').ejListBox({      itemDragStop: function(args) {}});      
-</script>            {% endhighlight %}
+{% endhighlight %}
 
 
-
-
-### itemDropped
+####itemDropped [Deprecated]
 {:#events:itemdropped}
 
+Triggers when the list item is dropped. 
 
+N> Since this event is deprecated we suggest to use itemDrop event.
 
-
-Fires when list item stopped dropping successfully.
-
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ListBox model</td>
-</tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.isChecked</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is checked or not.</td></tr>
+<tr>
+<td>
+argument.isSelected</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is selected or not.</td></tr>
+<tr>
+<td>
+argument.isEnabled</td><td>
+Boolean</td><td>
+Boolean value based on the list item is enabled or not.</td></tr>
+<tr>
+<td>
+argument.text</td><td>
+String</td><td>
+List item’s text (label).</td></tr>
+<tr>
+<td>
+argument.value</td><td>
+String</td><td>
+List item’s value.</td></tr>
 </table>
 
+ Example
+ {:.example}
 
-Example
+{% highlight js%}
+
+		$("#list").ejListBox({
+		
+		itemDropped: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
+
+{% endhighlight %}
+
+
+####itemDrop 
+{:#events:itemdrop}
+
+Triggers when the list item is dropped. 
+
+<table>
+<tr>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.isChecked</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is checked or not.</td></tr>
+<tr>
+<td>
+argument.isSelected</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is selected or not.</td></tr>
+<tr>
+<td>
+argument.isEnabled</td><td>
+Boolean</td><td>
+Boolean value based on the list item is enabled or not.</td></tr>
+<tr>
+<td>
+argument.text</td><td>
+String</td><td>
+List item’s text (label).</td></tr>
+<tr>
+<td>
+argument.value</td><td>
+String</td><td>
+List item’s value.</td></tr>
+</table>
+
+ Example
 {:.example}
 
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
+{% highlight js%}
 
-<script>
-//itemDropped event for ListBox
-$('#carsList').ejListBox({      itemDropped: function(args) {}});       
-</script>            {% endhighlight %}
+		$("#list").ejListBox({
+		
+		itemDrop: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
+
+{% endhighlight %}
 
 
-
-
-### selected
+####selected [Deprecated]
 {:#events:selected}
 
+Triggers when a list item gets selected.
 
+N> Since this event is deprecated, we suggest to use select event.
 
-
-Fires when list item gets selected successfully.
-
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ListBox model</td>
-</tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.isChecked</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is checked or not.</td></tr>
+<tr>
+<td>
+argument.isSelected</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is selected or not.</td></tr>
+<tr>
+<td>
+argument.isEnabled</td><td>
+Boolean</td><td>
+Boolean value based on the list item is enabled or not.</td></tr>
+<tr>
+<td>
+argument.text</td><td>
+String</td><td>
+List item’s text (label).</td></tr>
+<tr>
+<td>
+argument.value</td><td>
+String</td><td>
+List item’s value.</td></tr>
 </table>
 
+ Example
+ {:.example}
 
-Example
-{:.example}
+{% highlight js%}
 
+		$("#list").ejListBox({
+		
+		selected: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-
-<script>
-//selected event for ListBox
-$('#carsList').ejListBox({      selected: function(args) {}});  
-</script>            {% endhighlight %}
+{% highlight js%}
 
 
+####select
+{:#events:selected}
+
+Triggers when a list item gets selected. 
+
+<table>
+<tr>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.isChecked</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is checked or not.</td></tr>
+<tr>
+<td>
+argument.isSelected</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is selected or not.</td></tr>
+<tr>
+<td>
+argument.isEnabled</td><td>
+Boolean</td><td>
+Boolean value based on the list item is enabled or not.</td></tr>
+<tr>
+<td>
+argument.text</td><td>
+String</td><td>
+List item’s text (label).</td></tr>
+<tr>
+<td>
+argument.value</td><td>
+String</td><td>
+List item’s value.</td></tr>
+</table>
+
+ Example
+ {:.example}
+
+{% highlight js%}
+
+		$("#list").ejListBox({
+		
+		select: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
+
+{% endhighlight %}
 
 
-### selectIndexChanged
+####unselect
+{:#events:unselect}
+
+Triggers when a list item gets unselected. 
+
+<table>
+<tr>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.isChecked</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is checked or not.</td></tr>
+<tr>
+<td>
+argument.isSelected</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is selected or not.</td></tr>
+<tr>
+<td>
+argument.isEnabled</td><td>
+Boolean</td><td>
+Boolean value based on the list item is enabled or not.</td></tr>
+<tr>
+<td>
+argument.text</td><td>
+String</td><td>
+List item’s text (label).</td></tr>
+<tr>
+<td>
+argument.value</td><td>
+String</td><td>
+List item’s value.</td></tr>
+</table>
+
+ Example
+ {:.example}
+
+{% highlight js%}
+		
+		$("#list").ejListBox({
+		
+		unselect: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
+
+{% endhighlight %}
+
+
+####selectIndexChanged [Deprecated]
 {:#events:selectindexchanged}
 
+Triggers when the item selection is changed. 
 
+N> Since this event is deprecated. We suggest to use change event.
 
-
-Fires when selected list item Index Changed successfully.
-
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Event Arguments</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the ListBox model</td>
-</tr>
+<td>
+argument.model</td><td>
+Object</td><td>
+Instance of the listbox model object.</td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.item</td><td>
+Object</td><td>
+List item object.</td></tr>
+<tr>
+<td>
+argument.data</td><td>
+Object</td><td>
+The Datasource of the listbox.</td></tr>
+<tr>
+<td>
+argument.index</td><td>
+Number</td><td>
+List item’s index.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.isChecked</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is checked or not.</td></tr>
+<tr>
+<td>
+argument.isSelected</td><td>
+Boolean</td><td>
+Boolean value based on whether the list item is selected or not.</td></tr>
+<tr>
+<td>
+argument.isEnabled</td><td>
+Boolean</td><td>
+Boolean value based on the list item is enabled or not.</td></tr>
+<tr>
+<td>
+argument.text</td><td>
+String</td><td>
+List item’s text (label).</td></tr>
+<tr>
+<td>
+argument.value</td><td>
+String</td><td>
+List item’s value.</td></tr>
 </table>
 
+ Example
+ {:.example}
 
-Example
-{:.example}
+{% highlight js%}
 
+		$("#list").ejListBox({
+		
+		selectIndexChanged: function(args) { 
+		
+		//do something
+		
+		}          
+		
+		});
 
-{% highlight html %}
- 
-   <ul id="carsList">
-      <li>Audi A4</li>
-      <li>Audi A5</li>
-      <li>Audi A6</li>
-      <li>Audi A7</li>
-      <li>Audi A8</li>
-           <li>BMW 501</li>
-      <li>BMW 502</li>
-      <li>BMW 503</li>
-      <li>BMW 507</li>
-      <li>BMW 3200</li>
-   </ul>
-
-<script>
-//selectIndexChanged event for ListBox
-$('#carsList').ejListBox({      selectIndexChanged: function(args) {}});        
-</script>            {% endhighlight %}
-
+{% endhighlight %}
 
 
