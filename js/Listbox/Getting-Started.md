@@ -7,346 +7,189 @@ control: ListBox
 documentation: ug
 ---
 
-# Getting Started
+## Getting Started
 
-This section explains briefly on how to create a **ListBox** control in your application.
+This section helps to understand the getting started of the ListBox widget with the step-by-step instructions.
 
-Here you can learn how to customize **ListBox** in Contact Selection tool. This allows you display the list of contacts, to select and move them to the next **ListBox** that has the selected items. The following example illustrates simulator of Group Creation tool like Skype messenger.
+### Script/CSS reference
 
-The following screenshot demonstrates the functionality of **ListBox** with **Multi-Selection** and **Drag and Drop** features.
-
-![](/js/ListBox/Getting-Started_images/Getting-Started_img6.png) 
-
-In the above screenshot, you can select a list item from the first **ListBox** widget. After you select the item, you can move the selected item to the second **ListBox** widget. 
-
-## Create a ListBox Widget
-
-**Essential JavaScript ListBox** widget renders with built-in features.
-
-You can create an **HTML** file and add the following code example to it. 
+Create a new HTML file and include the below code
 
 {% highlight html %}
 
-<!doctype html>
-<html>
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <!-- style sheet for default theme(flat azure) -->
-    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-    <!--scripts-->
-    <script src=" http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js "></script>
-    <script src=" http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js "></script>
-    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>
+    <meta charset="utf-8" />
+    <title></title>
 </head>
 <body>
-    <!--add the ListBox element here -->
+
 </body>
 </html>
 
 
 {% endhighlight %}
 
-Add the **&lt;ul&gt;** element to render **ListBox** widgets.
+
+
+Add link to the CSS file from the specific [theme](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components) folder to your HTML file within the head section. Refer the built-in theme which is mentioned [here](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components). 
 
 {% highlight html %}
 
-<div id="sample">
-   <h5><b>Add people</b></h5>
-   <h5>Choose a contact and click move button to add in group </h5>
-   <div id="control">
-      <div id="container1">
-         Contacts List
-         <ul id="select">
-         </ul>
-      </div>
-      <div class="middlebuttons">
-         <button id="Add">>></button>
-         <br />
-         <br />
-         <button id="Remove"><<</button>
-      </div>
-      <div id="container2">
-         People in this group
-         <ul id="selecteditems">
-         </ul>
-      </div>
-   </div>
-</div>
+<head>
+    <meta charset="utf-8" />
+    <title>Getting Started - ListBox </title>
+    <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+</head>
+
 
 {% endhighlight %}
 
-Add the following style section for the **ListBox** widgets alignment. 
-
-{% highlight css %}
-
-<style type="text/css" class="cssStyles">
-    #control {
-        height: 300px;
-        width: 500px;
-        padding: 25px;
-        background-color: #f7f7f7;
-        display: flex;
-    }
-
-    #sample {
-        height: 472px;
-        width: 600px;
-    }
-
-    #selecteditems_container {
-        float: right;
-    }
-
-    #select_container {
-        float: left;
-    }
-
-    .middlebuttons {
-        padding: 91px 25px 25px 25px;
-    }
-
-    #container1, #container2 {
-        width: 200px;
-    }
-
-    img {
-        padding-right: 10px;
-        padding-top: 3px;
-        width: 18px;
-        height: 15px;
-    }
-</style>
-
-{% endhighlight %}
-
-Initialize the **ListBox** and other widgets using the following code sample.
-
-{% highlight js %}
-
-    jQuery(function ($) {
-        // document ready
-        // simple ListBox creation 
-
-        $("#select").ejListBox();
-        $("#selecteditems").ejListBox();
-        // simple Button creation 
-        // to add list item to selection ListBox
-        $("#Add").ejButton({
-            size: "normal",
-            showRoundedCorner: true,
-        });
-        // to remove an list item from selection ListBox
-        $("#Remove").ejButton({
-            size: "normal",
-            showRoundedCorner: true,
-        });
-    });
-
-{% endhighlight %}
-
-Run this code to render the resultant output of the above steps.
-
-![](/js/ListBox/Getting-Started_images/Getting-Started_img2.png) 
 
 
-## Configure ListBox with Items
-
-To populate items inside **ListBox**, you have to add list items inside **&lt;ul&gt;** as **&lt;li&gt;&lt;/li&gt;** elements. Include the following **&lt;li&gt;** elements in your sample.
+Add links to the [CDN](http://helpjs.syncfusion.com/js/cdn) Script files with dependencies to the head section.
 
 {% highlight html %}
 
-<div id="sample">
-    <h5><b>Add people</b></h5>
-    <h5>Choose a contact and click move button to add in group </h5>
-    <div id="control">
 
-        <div id="container1">
-            Contacts List
-            <ul id="select">
-                <li>
-                    <img src="images/listbox/busy.png" alt=" busy" />
-                    Nancy</li>
-                <li>
-                    <img src="images/listbox/busy.png" alt="busy" />
-                    Andrew</li>
-                <li>
-                    <img src="images/listbox/avail.png" alt="Flag" />
-                    Janet</li>
-                <li>
-                    <img src="images/listbox/away.png" alt="away" />
-                    Margaret</li>
-                <li>
-                    <img src="images/listbox/away.png" alt="away" />
-                    Michael</li>
-                <li>
-                    <img src="images/listbox/avail.png" alt="avail" />
-                    Robert</li>
-                <li>
-                    <img src="images/listbox/avail.png" alt="avail" />
-                    Laura</li>
-                <li>
-                    <img src="images/listbox/avail.png" alt="avail" />
-                    Anne</li>
-                <li>
-                    <img src="images/listbox/away.png" alt="away" />
-                    Suyama</li>
-                <li>
-                    <img src="images/listbox/avail.png" alt="avail" />
-                    Callahan</li>
-                <li>
-                    <img src="images/listbox/avail.png" alt="avail" />
-                    Peacock</li>
-                <li>
-                    <img src="images/listbox/avail.png" alt="avail" />
-                    Fuller</li>
-                <li>
-                    <img src="images/listbox/avail.png" alt="avail" />
-                    Davolio</li>
-                <li>
-                    <img src="images/listbox/avail.png" alt="avail" />
-                    Dodsworth</li>
-                <li>
-                    <img src="images/listbox/avail.png" alt="avail" />
-                    Louis</li>
-            </ul>
-        </div>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+    <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
 
-        <div class="middlebuttons">
-            <button id="Add">>></button>
-            <br />
-            <br />
-            <button id="Remove"><<</button>
-        </div>
-
-        <div id="container2">
-            People in this group
-
-            <ul id="selecteditems">
-            </ul>
-        </div>
-    </div>
-</div>
 
 {% endhighlight %}
 
-Run the above code to render **ListBox** with list items rendered inside **ListBox. ListBox** with Contact list items is shown as follows.
-
-![](/js/ListBox/Getting-Started_images/Getting-Started_img3.png) 
 
 
-## Enable Drag and Drop
+ {% seealso %} [custom script generator]{% endseealso %}
 
-You can drag an item from a **ListBox** and drop it in a droppable element.To drag and drop a list item across control or within the control, you have to set **allowDragAndDrop** property as **“True”.**
+N> To reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
+
+### Create ListBox
+
+Create UL and LI elements and add in the &lt;body&gt; tag as below.
+
+{% highlight html %}
+
+
+               <div>
+                    <ul id="listbox">
+                        <li>Audi A4</li>
+                        <li>Audi A5</li>
+                        <li>Audi A6</li>
+                        <li>Audi A7</li>
+                        <li>Audi A8</li>
+                        <li>BMW 501</li>
+                        <li>BMW 502</li>
+                        <li>BMW 503</li>
+                        <li>Batch</li>
+                        <li>BMW 507</li>
+                        <li>BMW 3200</li>
+                        <li>Cut</li>
+                    </ul>
+                </div>
+
+
+{% endhighlight %}
+
+
+
+Initialize the ListBox widget as below.
 
 {% highlight js %}
 
-    jQuery(function ($) {
-        $("#select").ejListBox({
-            allowDragAndDrop: true
-        });
-        $("#selecteditems").ejListBox({ allowDragAndDrop: true });
-        // simple Button creation 
-        // to add list item to selection ListBox
-        $("#Add").ejButton({
-            size: "normal", click: "add",
-            showRoundedCorner: true,
-        });
-        // to remove an list item from selection ListBox
-        $("#Remove").ejButton({
-            size: "normal", click: "remove",
-            showRoundedCorner: true,
-        });
-    });
+
+        $(function () {
+            $("#listbox").ejListBox();
+        });
+
+
 
 {% endhighlight %}
 
-Run the above code example to render the following **ListBox** with **Drag and Drop** feature. **ListBox** with Drag and Drop list items across control is displayed in the following image. 
-
-![](/js/ListBox/Getting-Started_images/Getting-Started_img4.png) 
 
 
-## Enable Multiple Selection
 
-You can select multiple list items simultaneously in **ListBox** control, and move the multiple selected items to selection listbox. To select multiple items in a **ListBox**, set **allowMultiSelection** property for the **ListBox** as **“True”**.
+
+
+
+![Alt text](Getting-Started_Images\getting-started_img1.png)
+
+### Databinding
+
+We can populate data in the ListBox widget using “datasource” and “fields” properties. 
+
+{% seealso %} Databinding {% endseealso %}.
+
+{% highlight html %}
+
+
+ <ul id="listbox"></ul>
+
+    <script type="text/javascript">
+        jQuery(function ($) {
+
+
+            bikeList = [
+                { bikeId: "bk1", bikeName: "Apache RTR" }, 
+                { bikeId: "bk2", bikeName: "CBR 150-R" }, 
+                { bikeId: "bk3", bikeName: "CBZ Xtreme" },
+                { bikeId: "bk4", bikeName: "Discover" }, 
+                { bikeId: "bk5", bikeName: "Dazzler" }, 
+                { bikeId: "bk6", bikeName: "Flame" },
+                { bikeId: "bk7", bikeName: "Fazer" }, 
+                { bikeId: "bk8", bikeName: "FZ-S" }, 
+                { bikeId: "bk9", bikeName: "Pulsar" },
+                { bikeId: "bk10", bikeName: "Shine" }, 
+                { bikeId: "bk11", bikeName: "R15" }, 
+                { bikeId: "bk12", bikeName: "Unicorn" }
+            ];
+            $("#listbox").ejListBox({
+                dataSource: bikeList,
+                fields: { 
+                     id: "bikeId", 
+                     text: "bikeName" 
+                }
+            });
+        });
+
+    </script> 
+
+
+
+{% endhighlight %}
+
+![Alt text](Getting-Started_Images\getting-started_img2.png)
+
+### Selection
+
+The ListBox widget supports item selection. 
+
+{% seealso %} Selection {% endseealso %}
 
 {% highlight js %}
 
-    jQuery(function ($) {
 
-        $("#select").ejListBox({
-           allowDragAndDrop: true, allowMultiSelection: true
+        jQuery(function ($) {
+
+            $("#listbox").ejListBox(
+                {
+                    selectedIndex: 2
+                });
         });
-        $("#selecteditems").ejListBox({ allowDragAndDrop: true, });
-        // simple Button creation 
-        // to add list item to selection ListBox
-        $("#Add").ejButton({
-            size: "normal", click: "add",
-            showRoundedCorner: true,
-        });
-        // to remove an list item from selection ListBox
-        $("#Remove").ejButton({
-            size: "normal", click: "remove",
-            showRoundedCorner: true,
-        });
-    });
+
+
+
 
 {% endhighlight %}
 
-Run the above code example to render the following **ListBox** with **Multi-Selection** feature. **ListBox** control with **Multi-Selection** of list items is displayed as follows.
 
-![](/js/ListBox/Getting-Started_images/Getting-Started_img5.png) 
 
-## Adding items to a Second ListBox
 
-You have to move the selected list item to the second **ListBox** using **addItem(value)** method. And remove existing item in the first **ListBox** using **removeItem()** method.
 
-The following code sample explains how to add to an item to second **ListBox.**
-
-{% highlight js %}
-
-    jQuery(function ($) {
-        $("#select").ejListBox();
-        $("#selecteditems").ejListBox();
-        // simple Button creation 
-        // to add list item to selection ListBox
-        $("#Add").ejButton({
-            size: "normal", click: "add",
-            showRoundedCorner: true,
-        });
-        // to remove an list item from selection ListBox
-        $("#Remove").ejButton({
-            size: "normal", click: "remove",
-            showRoundedCorner: true,
-        });
-    });
-    function add(e) {
-        var firstListBox = $('#select').data("ejListBox");
-        var selecteditems = firstListBox.getSelectedItems();
-        var len = selecteditems.length;
-        for (i = 0; i < len; i++) {
-            var value = $(selecteditems[i]).html();
-            selecteditems[i].remove();
-            var target = $('#selecteditems').data("ejListBox");
-            target.addItem(value);
-        }
-    }
-    
-    function remove(e) {
-        var firstListBox = $('#selecteditems').data("ejListBox");
-        var selecteditem = firstListBox.getSelectedItems();
-        var len = selecteditem.length;
-        for (i = 0; i < len; i++) {
-            var value = $(selecteditems[i]).html();
-            selecteditem[i].remove();
-            var target = $('#select').data("ejListBox");
-            target.addItem(value);
-        }
-    }
-
-{% endhighlight %}
-
-Run this code and you can see the output. Selected items from the first **ListBox** has been moved to Second **ListBox** using **addItem()** and **removeItem()** method and it is shown in the following figure.
-
-![](/js/ListBox/Getting-Started_images/Getting-Started_img6.png) 
-
+![Alt text](Getting-Started_Images\getting-started_img3.png)
 
