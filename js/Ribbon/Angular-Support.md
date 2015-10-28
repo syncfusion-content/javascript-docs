@@ -23,7 +23,7 @@ Ribbon tab and Contextual Tab are rendered with the following code example.
  
     <div ng-app="ribbonApp">
        <div ng-controller="RibbonCtrl">
-          <div id="defaultRibbon" ej-ribbon e-width="100%" e-applicationtab-itemid="ribbonmenu" e-applicationtab-type="ApplicationMenu">
+          <div id="defaultRibbon" ej-ribbon e-width="100%" e-applicationtab-menuitemid="ribbonmenu" e-applicationtab-type="ApplicationMenu">
              <div e-tabs>
                 <div e-tab e-id="home" e-text="HOME">
                    <div e-groups>

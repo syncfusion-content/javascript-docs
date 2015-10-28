@@ -48,8 +48,8 @@ To use the gallery feature, include the following properties under **tabgroups**
                 $("#defaultRibbon").ejRibbon({
                     width: "800",
                     applicationTab: {
-                        Type: "ApplicationMenu",
-                        itemID: "ribbonmenu"
+                        type: ej.Ribbon.applicationTabType.menu,
+                        menuItemID: "ribbonmenu"
                     },
                     tabs: [{
                         id: "home",
