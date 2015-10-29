@@ -244,6 +244,8 @@ namespace OlapGaugeDemo
 
 Now, the connection string to connect OLAP Cube, OlapGauge and JavaScriptSerializer instances are created immediately inside the main class in `**OlapGaugeController.cs**` file.
 
+{% highlight c# %}
+
 namespace OlapGaugeDemo
 {
     public class OlapGaugeController: ApiController
