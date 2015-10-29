@@ -9,20 +9,22 @@ documentation: ug
 
 # Getting Started 
 
-##Creating a simple application with OlapGauge
+## Creating a simple application with OlapGauge
 
 This section explains how to create a simple OlapGauge.
 
->**NOTE: This section is illustrated by creating a simple Web Application through Visual Studio IDE since OlapGauge is a server-side control with .NET dependency. The Web Application contains a HTML page and a service that transfers data to server-side, process and return backs the data to client-side for control re-rendering. The service utilized to communicate can be either WCF or WebAPI based on your requirement and illustrated both for your convenience.**
+N> This section is illustrated by creating a simple Web Application through Visual Studio IDE since OlapGauge is a server-side control with .NET dependency. The Web Application contains a HTML page and a service that transfers data to server-side, process and return backs the data to client-side for control re-rendering. The service utilized to communicate can be either WCF or WebAPI based on your requirement and illustrated both for your convenience.**
 
-###Project Initialization
+### Project Initialization
+
 Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“OlapGaugeDemo”**.
 
 Next, add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as “GettingStarted.html”, click **Add.**
 
 Now, set “GettingStarted.html” as start-up page by right clicking on “GettingStarted.html” page and select **“Set As Start Page”.**
 
-###Scripts and CSS Initialization
+### Scripts and CSS Initialization
+
 The scripts and style sheets that are mandatorily required to render a OlapGauge widget inside a HTML page are highlighted in an appropriate order as follows,
 
 1. ej.widgets.all.min.css
@@ -38,7 +40,8 @@ CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn) to know more about s
 
 NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
 
-###Control Initialization
+### Control Initialization
+
 To initialize a OlapGauge widget, define a “div” tag with an appropriate “id” attribute that acts as a container for OlapGauge widget. Then, initialize the widget using ejOlapGauge method inside “script” tag.
     
 {% highlight html %}
@@ -181,7 +184,7 @@ To initialize a OlapGauge widget, define a “div” tag with an appropriate “
 
 The “url” property in Olapgauge widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapGauge widget as endpoint are WCF and WebAPI. 
 
-###WebAPI
+### WebAPI
 
 **Adding a WebAPI Controller**
 
@@ -190,7 +193,7 @@ To add a WebAPI controller in your existing Web Application, right-click on the 
 Now, WebAPI controller is added into your application successfully that contains the following file. The utilization of this file is explained in the immediate sections.
 * OlapGaugeController.cs
 
->**NOTE: While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OlapGaugeController”.**
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OlapGaugeController”.**
 
 Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `**OlapGaugeController.cs**` file.
 
@@ -211,7 +214,7 @@ Add the following dependency libraries into your Web Application. You can find t
 
 To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference.** Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
->**NOTE: When you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
+N> When you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
 
 * Microsoft.AnalysisServices.AdomdClient.dll
 * Syncfusion.Linq.Base.dll 
@@ -337,6 +340,7 @@ Now, OlapGauge is rendered with Internet Revenue for Internet Sales Amount over 
 
 {% include image.html url="/js/OlapGauge/Getting-Started_images/OlapGauge.png" %}
 
-###WCF
+### WCF
+
 This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapGauge. For more details on this topic, [click here](http://help.syncfusion.com/js/olapgauge/data-binding).
   
