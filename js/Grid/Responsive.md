@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive Grid
-description: Responsive Grid
+title: Responsive
+description: Responsive
 platform: js
 control: Grid
 documentation: ug
