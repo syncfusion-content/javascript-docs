@@ -138,8 +138,6 @@ using System.Web.Script.Serialization;
 using OLAPUTILS = Syncfusion.JavaScript.Olap;
 
 
-{% highlight c# %}
-
 namespace OlapClientDemo
 {
     public class OlapClientServiceController: ApiController
