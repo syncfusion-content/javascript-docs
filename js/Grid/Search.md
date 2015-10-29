@@ -33,7 +33,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](searching_images/searching_img1.jpeg)
+![](searching_images/searching_img1.png)
 
 
 ## Initial Searching
@@ -64,7 +64,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](searching_images/searching_img2.jpeg)
+![](searching_images/searching_img2.png)
 
 
 List of supported operators in searching.

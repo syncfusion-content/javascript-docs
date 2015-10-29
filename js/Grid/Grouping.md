@@ -33,7 +33,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img1.jpeg)
+![](Grouping_images/Grouping_img1.png)
 
 
 ## Initial Grouping
@@ -61,7 +61,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img2.jpeg)
+![](Grouping_images/Grouping_img2.png)
 
 
 ## Multi-Column Grouping
@@ -90,7 +90,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img3.jpeg)
+![](Grouping_images/Grouping_img3.png)
 
 
 ## Group buttons
@@ -118,7 +118,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img4.jpeg)
+![](Grouping_images/Grouping_img4.png)
 
 
 ## Hide Ungroup button
@@ -146,7 +146,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img5.jpeg)
+![](Grouping_images/Grouping_img5.png)
 
 
 ## Hide Grouped Column
@@ -174,7 +174,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img6.jpeg)
+![](Grouping_images/Grouping_img6.png)
 
 
 ## AutoSize Drop Area
@@ -202,7 +202,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img7.jpeg)
+![](Grouping_images/Grouping_img7.png)
 
 
 ## Hide Drop area
@@ -230,7 +230,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img8.jpeg)
+![](Grouping_images/Grouping_img8.png)
 
 
 ## Group Caption Format / Group Caption Template
@@ -277,9 +277,9 @@ function btnClick(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Grouping_images/Grouping_img9.jpeg)
+![](Grouping_images/Grouping_img9.png)
 
 
-![](Grouping_images/Grouping_img10.jpeg)
+![](Grouping_images/Grouping_img10.png)
 
 

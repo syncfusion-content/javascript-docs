@@ -54,7 +54,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example
 
-![](selection_images/selection_img1.jpeg)
+![](selection_images/selection_img1.png)
 
 
 ### Cell Selection
@@ -83,7 +83,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example
 
-![](selection_images/selection_img2.jpeg)
+![](selection_images/selection_img2.png)
 
 
 #### Cell Selection Mode
@@ -117,7 +117,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example
 
-![](selection_images/selection_img3.jpeg)
+![](selection_images/selection_img3.png)
 
 
 ### Column Selection
@@ -146,7 +146,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example
 
-![](selection_images/selection_img4.jpeg)
+![](selection_images/selection_img4.png)
 
 
 ## Touch options
@@ -176,7 +176,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](selection_images/selection_img5.jpeg)
+![](selection_images/selection_img5.png)
 
 
 ## Toggle Selection

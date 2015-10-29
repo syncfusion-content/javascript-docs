@@ -33,7 +33,7 @@ You need to use [`print()`]([http://helpjs.syncfusion.com/js/api/ejgrid#methods:
 	
 {% endhighlight %}
 
-![](Print_images/Print_img1.jpeg)
+![](Print_images/Print_img1.png)
 
 
 ## Page Setup
@@ -89,12 +89,12 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](Print_images/Print_img2.jpeg)
+![](Print_images/Print_img2.png)
 
 {:caption}
 Grid with external button for Print
 
-![](Print_images/Print_img3.jpeg)
+![](Print_images/Print_img3.png)
 {:caption}
 
 Print dialog in Chrome browser

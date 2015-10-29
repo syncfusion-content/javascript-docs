@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive - Grid
-description:Responsive -Grid
+title: Responsive
+description: Responsive
 platform: js
 control: Grid
 documentation: ug
@@ -23,6 +23,7 @@ If client width is less than 321px, the grid will render in mobile mode. In whic
 Enabling Responsive row makes the Grid to render the record values in vertical order which removes the need for horizontal scrolling to view complete record details. It can be enabled by defining [`enableResponsiveRow`](http://help.syncfusion.com/js/api/ejgrid#members:enableresponsiverow "enableResponsiveRow") property as `true`.
 
 {% highlight html %}
+
 <div id="Grid"></div>
 
 <script type="text/javascript">
@@ -53,7 +54,7 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](Responsive_images/Responsive_img1.jpeg)
+![](Responsive_images/Responsive_img1.png)
 
 
 W> [IE8 and IE9 does not support responsive row. `ejgrid.responsive.css` should be referred to display Responsive Row.]
@@ -62,31 +63,31 @@ W> [IE8 and IE9 does not support responsive row. `ejgrid.responsive.css` should 
 
 The customized layout for filtering, sorting, searching and CRUD operations in mobile device can be seen following screen shots.
 
-![](Responsive_images/Responsive_img2.jpeg)
+![](Responsive_images/Responsive_img2.png)
 {:caption}
 Responsive row with filtering , sorting and searching
 
-![](Responsive_images/Responsive_img3.jpeg)
+![](Responsive_images/Responsive_img3.png)
 
 {:caption}
 Crud in mobile layout
 
-![](Responsive_images/Responsive_img4.jpeg)
+![](Responsive_images/Responsive_img4.png)
 
 {:caption}
 Filtering in mobile layout
 
-![](Responsive_images/Responsive_img5.jpeg)
+![](Responsive_images/Responsive_img5.png)
 {:caption}
 
 Filtering in mobile layout
 
-![](Responsive_images/Responsive_img6.jpeg)
+![](Responsive_images/Responsive_img6.png)
 
 {:caption}
 Sorting in mobile layout
 
-![](Responsive_images/Responsive_img7.jpeg)
+![](Responsive_images/Responsive_img7.png)
 {:caption}
 
 Searching in mobile layout
@@ -163,12 +164,12 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](Responsive_images/Responsive_img8.jpeg)
+![](Responsive_images/Responsive_img8.png)
 {:caption}
 
 Default tablayout
 
-![](Responsive_images/Responsive_img9.jpeg)
+![](Responsive_images/Responsive_img9.png)
 
 {:caption}
 Filtering design in tablayout.
@@ -177,7 +178,7 @@ Filtering design in tablayout.
 
 By default, the grid is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign `width` of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") in percentage. 
 
-{% highlight js %}
+{% highlight html %}
 <div id="Grid"></div>
 
 <script type="text/javascript">
@@ -228,7 +229,7 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](Responsive_images/Responsive_img10.jpeg)
+![](Responsive_images/Responsive_img10.png)
 
 
 MinWidth set to Grid

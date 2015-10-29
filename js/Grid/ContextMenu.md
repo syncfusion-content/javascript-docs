@@ -121,17 +121,17 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](ContextMenu_images/ContextMenu_img1.jpeg)
+![](ContextMenu_images/ContextMenu_img1.png)
 {:catption}
 
 Contextmenu at header
 
-![](ContextMenu_images/ContextMenu_img2.jpeg)
+![](ContextMenu_images/ContextMenu_img2.png)
 {:catption}
 
 Contextmenu at body
 
-![](ContextMenu_images/ContextMenu_img3.jpeg)
+![](ContextMenu_images/ContextMenu_img3.png)
 {:caption}
 
 Contextmenu at pager
@@ -175,6 +175,6 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](ContextMenu_images/ContextMenu_img4.jpeg)
+![](ContextMenu_images/ContextMenu_img4.png)
 
 

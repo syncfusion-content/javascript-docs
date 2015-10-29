@@ -132,6 +132,12 @@ Requires
 * module:ej.toolbar.js
 
 
+* module:ej.menu.js
+
+
+* module:ej.excelfilter.js
+
+
 
 
 ## Members
@@ -343,6 +349,58 @@ $("#Grid").ejGrid({
    allowFiltering:true                       
 });
 </script>{% endhighlight %}
+
+
+
+
+
+
+### allowSorting<span class="type-signature type boolean">boolean</span>
+{:#members:allowsorting}
+
+
+
+
+
+
+
+
+Gets or sets a value that indicates whether to enable the dynamic sorting behavior on grid data. Sorting can be done through clicking on particular column header.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSorting:true                       
+});
+</script> {% endhighlight %}
+
 
 
 
@@ -770,58 +828,6 @@ $("#Grid").ejGrid({
 
 
 
-### allowSorting<span class="type-signature type boolean">boolean</span>
-{:#members:allowsorting}
-
-
-
-
-
-
-
-
-Gets or sets a value that indicates whether to enable the dynamic sorting behavior on grid data. Sorting can be done through clicking on particular column header.
-
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
-
-* false
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-  
-<div id="Grid"></div> 
-<script>
-$("#Grid").ejGrid({
-   dataSource:window.gridData,
-   allowSorting:true                       
-});
-</script> {% endhighlight %}
-
-
-
-
-
-
-
 ### allowTextWrap<span class="type-signature type boolean">boolean</span>
 {:#members:allowtextwrap}
 
@@ -867,6 +873,162 @@ $("#Grid").ejGrid({
    allowTextWrap:true                      
 });
 </script> {% endhighlight %}
+
+
+
+
+
+
+### allowMultipleExporting<span class="type-signature type boolean">boolean</span>
+{:#members:allowmultipleexporting}
+
+
+
+
+
+
+
+
+Gets or sets a value that indicates whether to enable the multiple exporting behavior on grid data. 
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowMultipleExporting:true                       
+});
+</script> {% endhighlight %}
+
+
+
+
+
+
+
+### commonWidth<span class="type-signature type number">number</span>
+{:#members:commonwidth}
+
+
+
+
+
+
+
+
+Gets or sets a value that indicates to define common width for all the columns in the grid.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* -
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   commonWidth:200                       
+});
+</script> {% endhighlight %}
+
+
+
+
+
+
+
+### gridLines<span class="type-signature type enum">enum</span>
+{:#members:gridlines}
+
+
+
+
+
+
+
+
+Gets or sets a value that indicates to enable the visibility of the grid lines.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* ej.Grid.GridLines.Both
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+  
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   gridLines:ej.Grid.GridLines.Vertical                       
+});
+</script> {% endhighlight %}
+
 
 
 
@@ -1182,6 +1344,58 @@ $("#Grid").ejGrid({
   columns:[{field:"OrderID"},{field:"CustomerID",allowSorting:false},{field:"ShipCity"}] 
 });
 </script> {% endhighlight %}
+
+
+
+
+
+
+### columns.allowResizing<span class="type-signature type boolean">boolean</span>
+{:#members:columns-allowresizing}
+
+
+
+
+
+
+
+
+Gets or sets a value that indicates whether to enable dynamic resizabiliy for particular column.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+  dataSource:window.gridData,
+  allowResizing:true,
+  columns:[{field:"OrderID"},{field:"CustomerID",allowResizing:false},{field:"ShipCity"}] 
+});
+</script> {% endhighlight %}
+
 
 
 
@@ -3790,6 +4004,59 @@ $("#Grid").ejGrid({
     toolbarSettings: { showToolbar: true, toolbarItems: ["edit","update","cancel"] }                             
 });
 </script>                          {% endhighlight %}
+
+
+
+
+
+
+### editSettings.showAddNewRow<span class="type-signature type boolean">boolean</span>
+{:#members:editsettings-showaddnewrow}
+
+
+
+
+
+
+
+
+Gets or sets a value that indicates whether to display the add new form by default in the grid.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource: window.gridData,
+    columns: [{ field: "OrderID", isPrimaryKey: true }, { field: "CustomerID" }, { field: "ShipCity" }],
+    editSettings: { allowAdding: true, showAddNewRow: true },
+    toolbarSettings: { showToolbar: true, toolbarItems: ["add"] }                             
+});
+</script>                 {% endhighlight %}
+
 
 
 
@@ -7415,6 +7682,68 @@ $("#Grid").ejGrid({
      }]                                    
 });
 </script>           {% endhighlight %}
+
+
+
+
+
+
+### summaryRows.showGroupSummary<span class="type-signature type boolean">boolean</span>
+{:#members:summaryrows-showgroupsummary}
+
+
+
+
+
+
+
+
+Gets or sets a value that indicates whether to show the group summary value for the corresponding summary column while grouping a column
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+     dataSource:window.gridData,  
+     columns:[{field: "OrderID"},{field: "Freight"}],
+     allowGrouping: true,
+     showSummary: true,
+     summaryRows: [{
+        title: "Sum",
+        summaryColumns: [{
+           summaryType: ej.Grid.SummaryType.Sum,
+           displayColumn: "Freight",
+           dataMember: "Freight"
+        }],
+        showGroupSummary: true
+     }]                                    
+});
+</script>           {% endhighlight %}
+
 
 
 

@@ -47,5 +47,5 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](Stackedheader_images/Stackedheader_img1.jpeg)
+![](Stackedheader_images/Stackedheader_img1.png)
 
