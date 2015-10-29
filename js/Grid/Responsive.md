@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive - Grid
-description:Responsive -Grid
+title: Responsive
+description: Responsive
 platform: js
 control: Grid
 documentation: ug
@@ -23,6 +23,7 @@ If client width is less than 321px, the grid will render in mobile mode. In whic
 Enabling Responsive row makes the Grid to render the record values in vertical order which removes the need for horizontal scrolling to view complete record details. It can be enabled by defining [`enableResponsiveRow`](http://help.syncfusion.com/js/api/ejgrid#members:enableresponsiverow "enableResponsiveRow") property as `true`.
 
 {% highlight html %}
+
 <div id="Grid"></div>
 
 <script type="text/javascript">
@@ -177,7 +178,7 @@ Filtering design in tablayout.
 
 By default, the grid is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign `width` of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") in percentage. 
 
-{% highlight js %}
+{% highlight html %}
 <div id="Grid"></div>
 
 <script type="text/javascript">
