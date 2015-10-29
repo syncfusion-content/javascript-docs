@@ -225,7 +225,7 @@ Example
 
 The selector for the container element. If this property is set, the dialog will be displayed (positioned) based on its container.
 
-N>Since it is deprecated we suggest to use the API “[target](#methods:isopen "")”.
+N> Since it is deprecated we suggest to use the API “[target](#methods:isopen "")”.
 
 Default Value: 
 {:.param}
@@ -811,7 +811,7 @@ Example
 
     var isOpen = $("#dialog").ejDialog("isOpen"); 
 
-{% highlight js %}
+{% endhighlight %}
 
 
 ####maximize<span class="signature">()</span>
