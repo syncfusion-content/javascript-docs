@@ -489,6 +489,7 @@ Example
     $('#list').ejListBox({enableRTL : true }); 
 
 {% endhighlight %}
+
 ####enableVirtualScrolling  [Deprecated] <span class="type-signature type boolean">Boolean</span>
 {:#members:enablevirtualscrolling}
 
@@ -668,7 +669,7 @@ Default Value:
 Example
 {:.example}
 
- {% endhighlight js %}
+ {% highlight js %}
 
         $('#countryList').ejListBox({ 
 
@@ -677,6 +678,7 @@ Example
         });
         
  {% endhighlight %}
+ 
 ####query <span class="type-signature type ej.Query">ej.Query</span>
 {:#members:query}
 
@@ -1227,7 +1229,7 @@ Indices of the listbox item to be disabled.</td></tr>
 Example
 {:.example}
 
-{% highlight js%}
+{% highlight js %}
 
         $('#list').ejListBox("disableItemsByIndices" ,"3,5,7"); 
 
@@ -1578,9 +1580,9 @@ Example
 
 Removes the selected list items from the listbox. 
 
-N>
-> 1. This method does not accept any arguments.
-> 2.Since this method is deprecated we suggest you to use removeSelectedItems method.
+
+N> 1. This method does not accept any arguments.
+N> 2.Since this method is deprecated we suggest you to use removeSelectedItems method.
 
 Example
 {:.example}
@@ -3020,7 +3022,7 @@ List item’s value.</td></tr>
 		
 		});
 
-{% highlight js%}
+{% endhighlight %}
 
 
 ####select
