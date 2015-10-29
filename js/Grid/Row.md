@@ -35,7 +35,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img1.jpeg)
+![](Row_images/Row_img1.png)
 
 
 ## Details Template
@@ -94,7 +94,7 @@ function detailGridData(e) {
 
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img2.jpeg)
+![](Row_images/Row_img2.png)
 
 
 ## Row Template
@@ -175,7 +175,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img3.jpeg)
+![](Row_images/Row_img3.png)
 
 
 ## Alternate row styling
@@ -202,6 +202,6 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Row_images/Row_img4.jpeg)
+![](Row_images/Row_img4.png)
 
 

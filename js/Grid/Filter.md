@@ -48,7 +48,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img1.jpeg)
+![](filtering_images/filtering_img1.png)
 
 
 ## Menu filter
@@ -88,16 +88,16 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img2.jpeg)
+![](filtering_images/filtering_img2.png)
 
 
-![](filtering_images/filtering_img3.jpeg)
+![](filtering_images/filtering_img3.png)
 
 
-![](filtering_images/filtering_img4.jpeg)
+![](filtering_images/filtering_img4.png)
 
 
-![](filtering_images/filtering_img5.jpeg)
+![](filtering_images/filtering_img5.png)
 
 
 ## Excel-like filter
@@ -128,7 +128,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img6.jpeg)
+![](filtering_images/filtering_img6.png)
 
 
 Checkbox list generation:
@@ -161,7 +161,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img7.jpeg)
+![](filtering_images/filtering_img7.png)
 
 
 ### Case Sensitivity
@@ -189,7 +189,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img8.jpeg)
+![](filtering_images/filtering_img8.png)
 
 
 ## Filter bar
@@ -284,7 +284,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img9.jpeg)
+![](filtering_images/filtering_img9.png)
 
 
 Filter bar modes:
@@ -321,7 +321,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](filtering_images/filtering_img10.jpeg)
+![](filtering_images/filtering_img10.png)
 
 
 ## Filter Operators

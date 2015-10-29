@@ -35,7 +35,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img1.jpeg)
+![](scrolling_images/scrolling_img1.png)
 
 
 ## Set width and height in pixel 	
@@ -62,7 +62,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img2.jpeg)
+![](scrolling_images/scrolling_img2.png)
 
 
 ## Set width and height in percentage
@@ -89,7 +89,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img3.jpeg)
+![](scrolling_images/scrolling_img3.png)
 
 
 ## Set width as auto
@@ -116,7 +116,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img4.jpeg)
+![](scrolling_images/scrolling_img4.png)
 
 
 ## Frozen columns
@@ -145,7 +145,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img5.jpeg)
+![](scrolling_images/scrolling_img5.png)
 
 
 Freeze particular columns:
@@ -182,7 +182,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img6.jpeg)
+![](scrolling_images/scrolling_img6.png)
 
 
 Frozen Columns alert Messages:
@@ -224,7 +224,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img7.jpeg)
+![](scrolling_images/scrolling_img7.png)
 
 
 ## Touch scroll
@@ -281,7 +281,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img8.jpeg)
+![](scrolling_images/scrolling_img8.png)
 
 
 Continuous Mode:
@@ -307,6 +307,6 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](scrolling_images/scrolling_img9.jpeg)
+![](scrolling_images/scrolling_img9.png)
 
 

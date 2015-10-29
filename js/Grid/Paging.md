@@ -30,7 +30,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](paging_images/paging_img1.jpeg)
+![](paging_images/paging_img1.png)
 
 
 ## Pager with query string
@@ -57,7 +57,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](paging_images/paging_img2.jpeg)
+![](paging_images/paging_img2.png)
 
 
 ## Pager template
@@ -111,6 +111,6 @@ function btnClick(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](paging_images/paging_img3.jpeg)
+![](paging_images/paging_img3.png)
 
 

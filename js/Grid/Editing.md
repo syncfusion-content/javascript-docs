@@ -49,7 +49,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img1.jpeg)
+![](Editing_images/Editing_img1.png)
 
 
 ## Cell edit type and its params
@@ -137,7 +137,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img2.jpeg)
+![](Editing_images/Editing_img2.png)
 
 
 ## Cell Edit Template
@@ -191,7 +191,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img3.jpeg)
+![](Editing_images/Editing_img3.png)
 
 
 ## Edit Modes
@@ -237,7 +237,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img4.jpeg)
+![](Editing_images/Editing_img4.png)
 
 
 ### Inline Form
@@ -279,7 +279,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img5.jpeg)
+![](Editing_images/Editing_img5.png)
 
 
 ### Inline Template Form
@@ -365,10 +365,10 @@ function complete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img6.jpeg)
+![](Editing_images/Editing_img6.png)
 
 
-![](Editing_images/Editing_img7.jpeg)
+![](Editing_images/Editing_img7.png)
 
 
 ### Dialog
@@ -410,7 +410,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img8.jpeg)
+![](Editing_images/Editing_img8.png)
 
 
 ### Dialog Template Form
@@ -497,10 +497,10 @@ function complete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img9.jpeg)
+![](Editing_images/Editing_img9.png)
 
 
-![](Editing_images/Editing_img10.jpeg)
+![](Editing_images/Editing_img10.png)
 
 
 ### External Form
@@ -545,7 +545,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img11.jpeg)
+![](Editing_images/Editing_img11.png)
 
 
 Form Position:
@@ -592,7 +592,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img12.jpeg)
+![](Editing_images/Editing_img12.png)
 
 
 ### External Template Form
@@ -682,10 +682,10 @@ function complete(args) {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img13.jpeg)
+![](Editing_images/Editing_img13.png)
 
 
-![](Editing_images/Editing_img14.jpeg)
+![](Editing_images/Editing_img14.png)
 
 
 ### Batch / Excel-like
@@ -729,7 +729,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img15.jpeg)
+![](Editing_images/Editing_img15.png)
 
 
 ## Confirmation messages
@@ -773,7 +773,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img16.jpeg)
+![](Editing_images/Editing_img16.png)
 
 
 To show delete confirm dialog while deleting a record by setting the [`showDeleteConfirmDialog`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showdeleteconfirmdialog "") as true.
@@ -815,7 +815,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img17.jpeg)
+![](Editing_images/Editing_img17.png)
 
 
 ## Column Validation
@@ -940,7 +940,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img18.jpeg)
+![](Editing_images/Editing_img18.png)
 
 
 ### Custom Validation
@@ -996,7 +996,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img19.jpeg)
+![](Editing_images/Editing_img19.png)
 
 
 ## Persisting data in Server
@@ -1080,7 +1080,7 @@ The grid actions (sorting, filtering, paging, searching, and aggregates) details
 
 Please refer the below screen shot.
 
-![](Editing_images/Editing_img20.jpeg)
+![](Editing_images/Editing_img20.png)
 
 
 And also using “DataOperations” class methods you can perform grid action in server side. The in-build methods that we have provided in the DataOperations class can be listed below.
@@ -1157,7 +1157,7 @@ public ActionResult Insert(EditableOrder value)
 
 The newly added record details are bound to the “value” parameter. Please refer the below image.
 
-![C:/Users/maithiliyk/Desktop/Untitled.png](Editing_images/Editing_img21.jpeg)
+![C:/Users/maithiliyk/Desktop/Untitled.png](Editing_images/Editing_img21.png)
 
 
 Update Record:
@@ -1175,7 +1175,7 @@ public ActionResult Update(EditableOrder value)
 
 The updated record details are bound to the “value” parameter. Please refer the below image.
 
-![](Editing_images/Editing_img22.jpeg)
+![](Editing_images/Editing_img22.png)
 
 
 Delete Record:
@@ -1193,7 +1193,7 @@ public ActionResult Remove(int key)
 
 The deleted record primary key value is bound to the “key” parameter. Please refer the below image.
 
-![C:/Users/maithiliyk/Desktop/Untitled.png](Editing_images/Editing_img23.jpeg)
+![C:/Users/maithiliyk/Desktop/Untitled.png](Editing_images/Editing_img23.png)
 
 
 CRUD URL:
@@ -1247,7 +1247,7 @@ public ActionResult CrudUpdate(EditableOrder value, string action)
 
 Please refer the below image to know about the action parameter
 
-![](Editing_images/Editing_img24.jpeg)
+![](Editing_images/Editing_img24.png)
 
 
 I> [If you specify `insertUrl` along with `CrudUrl` then while adding `insertUrl` only called.]
@@ -1302,7 +1302,7 @@ public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<E
 
 Please refer the below image for more information about batch paramaters
 
-![](Editing_images/Editing_img25.jpeg)
+![](Editing_images/Editing_img25.png)
 
 
 ## Adding New Row Position
@@ -1344,7 +1344,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img26.jpeg)
+![](Editing_images/Editing_img26.png)
 
 
 ## Render with blank row for easy add new
@@ -1388,7 +1388,7 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img27.jpeg)
+![](Editing_images/Editing_img27.png)
 
 
 T> [ 1. If it is remote, then the newly added record is placed based on the index from current view data. <BR> 2. If it is local, then the newly added record is added at the top of the page even the added new [`rowPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "") is mentioned as “bottom”.]
@@ -1432,6 +1432,6 @@ $(function () {
 
 The following output is displayed as a result of the above code example.
 
-![](Editing_images/Editing_img28.jpeg)
+![](Editing_images/Editing_img28.png)
 
 

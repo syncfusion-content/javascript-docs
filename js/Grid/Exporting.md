@@ -45,7 +45,7 @@ $(function () {
 
 {% endhighlight %}
 
-![](Exporting_images/Exporting_img1.jpeg)
+![](Exporting_images/Exporting_img1.png)
 
 
 ## Server configuration

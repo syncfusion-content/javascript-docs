@@ -84,7 +84,7 @@ Search text in records<br/><br/></td></tr>
 
 {% endhighlight %}
 
-![](Toolbar_images/Toolbar_img1.jpeg)
+![](Toolbar_images/Toolbar_img1.png)
 
 
 I>[ [`editSettings.allowAdding`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowadding ""), [`editSettings.allowEditing`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowediting "") and [`editSettings.allowDeleting`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowdeleting "") need to be enabled for add, delete, edit, save & cancel in [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems ""). [`allowSearching`](http://help.syncfusion.com/js/api/ejgrid#members:allowsearching "")` to be enabled while adding Search in toolbar to perform search action.]
@@ -143,6 +143,6 @@ Custom toolbar is used to create your own toolbar items in toolbar. It can add b
 
 {% endhighlight %}
 
-![](Toolbar_images/Toolbar_img2.jpeg)
+![](Toolbar_images/Toolbar_img2.png)
 
 
