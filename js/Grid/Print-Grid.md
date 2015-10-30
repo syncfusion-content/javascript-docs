@@ -1,8 +1,8 @@
 
 ---
 layout: post
-title: Print - Grid
-description: Print - Grid
+title: Print Grid
+description: Print Grid
 platform: js
 control: Grid
 documentation: ug
