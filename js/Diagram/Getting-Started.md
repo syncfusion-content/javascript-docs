@@ -13,9 +13,9 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 
 ## Flow Diagram
 
-### Initialize diagram
+### Initialize Diagram
 
-    1. Create an HTML file and add the necessary script references and style sheets in the Head tag as shown in the following code example.
+1\. Create an `HTML` file and add the necessary script references and style sheets in the `Head` tag as shown in the following code example.
 
 {% highlight html %}
 
@@ -34,12 +34,12 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 
 {% endhighlight %}
 
-    2. Add a placeholder div element that can be used to initialize the diagram widget as shown below.
+2\. Add a placeholder `div` element that can be used to initialize the diagram widget as shown below.
 
 {% highlight html %}
 
     <body>
-        <div id="Div1"></div>
+        <div id="diagram"></div>
         <script type="text/javascript">
             $("#diagram").ejDiagram({
                 width: "100%",
@@ -50,16 +50,16 @@ Getting started with your Essential JavaScript Diagram is easy. You can start by
 
 {% endhighlight %}
 
-    3. This creates an empty diagram
+3\. This creates an empty diagram
 
 ![](/js/Diagram/Getting-Started_images/Getting-Started_img1.png)
 
 ### Create and add Node
 
-Create node: Let us create and add a node (JSON data) with specific position, size, label and shape.
+Let us create and add a `node` (JSON data) with specific position, size, label and shape.
 
 {% highlight js %}
-// a node is created and stored in variable nodes.
+// a node is created and stored in nodes array.
 var nodes = [{
   
   // Unique name for the node
@@ -94,7 +94,7 @@ $("#diagram").ejDiagram({
 
 {% endhighlight %}
 
-N> 'labels' property is an array, which indicates that more than one label can be added to a node.
+N> `labels` property is an array, which indicates that more than one label can be added to a node.
 
 Added node will be displayed in diagram as shown below.
 
@@ -102,7 +102,7 @@ Added node will be displayed in diagram as shown below.
 
 ### Connect nodes
 
-* Create another node with another set of data.
+* Create another `node` with another set of data.
 
 {% highlight js %}
 
@@ -120,7 +120,7 @@ var nodes =
 
 {% endhighlight %}
 
-* Connect these two nodes by adding a connector into diagram.connectors collection with reference to source and target end. 
+* Connect these two nodes by adding a `connector` into `diagram.connectors` collection with reference to source and target end. 
 
 {% highlight js %}
 
@@ -145,11 +145,11 @@ var nodes =
 
 {% endhighlight %}
 
-* Connector connects the two nodes as shown below.
+* `Connector` connects the two nodes as shown below.
 
 ![](/js/Diagram/Getting-Started_images/Getting-Started_img3.png)
 
-* Common values for all nodes and connectors can be set using default settings. For example if all nodes have same width and height, we can move such properties into defaultSettings. Above code can be rewritten as shown below.
+* Default values for all nodes and connectors can be set using default settings. For example if all nodes have same `width` and `height`, we can move such properties into `defaultSettings`. Above code can be rewritten as shown below.
 
 {% highlight js %}
 
@@ -197,7 +197,7 @@ $("#diagram").ejDiagram({
  
 ### Complete flow diagram
 
-Similarly we can add more nodes and connectors to form a complete flow diagram.
+Similarly we can add required nodes and connectors to form a complete flow diagram.
 
 {% highlight js %}
 
@@ -246,14 +246,16 @@ Final flow chart will looks as shown below.
 
 ## Automatic organization chart
 
-### Note
+In 'Flow Diagram' section we saw how to create a diagram manually, now let us see how to create and position diagram automatically.
 
-* Initializing diagram is already discussed in Flow Diagram section.
-* In 'Flow Diagram' section we saw how to create a diagram manually, now let us see how to create and position diagram automatically.
+### Initialize diagram
+Initializing diagram is already discussed in Flow Diagram > [Initialize diagram](#Initialize-Diagram) section.
 
 ### Business object (Employee information)
 
-* Define Employee Information as JSON data. The following code example shows a list of employees whose Name value is used as a unique identifier and the ReportingPerson value is used to identify the person to whom they report to in the organization.
+* Define Employee Information as JSON data. The following code example shows an employee array whose,
+    * `Name` is used as a unique identifier and 
+    * `ReportingPerson` is used to identify the person to whom an employee report to, in the organization.
 
 {% highlight js %}
 
@@ -272,7 +274,7 @@ var data = [
 
 ### Map data source
 
-* You can configure this "Employee Information” with Diagram, so that the node and connector are automatically generated using mapping properties. The following code examples show how dataSourceSetting is used to map id and parent with property name identifiers for employee information.
+* You can configure this "Employee Information" with Diagram, so that the node and connector are automatically generated using mapping properties. The following code examples show how dataSourceSetting is used to map id and parent with property name identifiers for employee information.
 
 {% highlight js %}
 
