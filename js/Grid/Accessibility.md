@@ -128,7 +128,6 @@ Collapse All visible groups<br/><br/></td></tr>
 
 
 
-
 ## ARIA
 
 This helps enable better user interaction in ejGrid and uses the W3C’s Widget Design Patterns in the WAI specification and added customize attributes. Please find the list of ARIA attribute used in Grid.
