@@ -1,0 +1,307 @@
+---
+layout: post
+title: Databinding
+description: databinding
+platform: js
+control: ListBox
+documentation: ug
+---
+
+## Databinding
+
+### Field mapping
+
+The ListBox widget has a field property (object) which holds the properties to map with datasource fields. For example, the field object has a text property which is necessary to map with specific field in the datasource to render the items in the ListBox widget.
+
+The field object contains the following properties.
+
+* [text](http://helpjs.syncfusion.com/js/api/ejlistbox)
+
+* [toolTipText](http://helpjs.syncfusion.com/js/api/ejlistbox)
+
+* [id](http://helpjs.syncfusion.com/js/api/ejlistbox)
+
+* selectBy
+
+* groupBy
+
+* checkBy
+
+* [tableName](http://helpjs.syncfusion.com/js/api/ejlistbox)
+
+* [imageUrl](http://helpjs.syncfusion.com/js/api/ejlistbox)
+
+* [imageAttributes](http://helpjs.syncfusion.com/js/api/ejlistbox)
+
+* [spriteCssClass](http://helpjs.syncfusion.com/js/api/ejlistbox)
+
+* [htmlAttributes](http://helpjs.syncfusion.com/js/api/ejlistbox)
+
+
+### Local data
+
+The local data can be an array of JSON objects which is assigned for the ListBox widget’s datasource property. Refer the below example. 
+
+Here the bikeName and bikeId fields are mapped with text and id properties of the field object respectively.
+
+{% highlight html %}
+
+
+ <ul id="listbox"></ul>
+
+    <script type="text/javascript">
+        jQuery(function ($) {
+
+
+            bikeList = [
+                { bikeId: "bk1", bikeName: "Apache RTR" }, 
+                { bikeId: "bk2", bikeName: "CBR 150-R" }, 
+                { bikeId: "bk3", bikeName: "CBZ Xtreme" },
+                { bikeId: "bk4", bikeName: "Discover" }, 
+                { bikeId: "bk5", bikeName: "Dazzler" }, 
+                { bikeId: "bk6", bikeName: "Flame" },
+                { bikeId: "bk7", bikeName: "Fazer" }, 
+                { bikeId: "bk8", bikeName: "FZ-S" }, 
+                { bikeId: "bk9", bikeName: "Pulsar" },
+                { bikeId: "bk10", bikeName: "Shine" }, 
+                { bikeId: "bk11", bikeName: "R15" }, 
+                { bikeId: "bk12", bikeName: "Unicorn" }
+            ];
+            $("#listbox").ejListBox({
+                dataSource: bikeList,
+                fields: { 
+                     id: "bikeId", 
+                     text: "bikeName" 
+                }
+            });
+        });
+
+    </script> 
+
+
+
+{% endhighlight %}
+
+
+
+![Alt text](databinding_images\local-data_img1.png)
+
+### Remote data
+#### OData
+
+[OData](http://helpjs.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from oData service by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
+
+Here the CustomerID field is mapped with text property of the field object. The queries can be created using [ej.Query()](http://helpjs.syncfusion.com/js/datamanager/query).
+
+{% highlight js %}
+
+
+        jQuery(function ($) {
+            //create datamanager
+            var dataManager = ej.DataManager({
+                //OData service
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+            });
+            // create query
+            var query = ej.Query()
+                   .from("Customers").take(10);
+
+            $('#listbox').ejListBox({
+                dataSource: dataManager,
+                fields: { text: "CustomerID" },
+                query: query
+            });
+        });
+
+
+
+{% endhighlight %}
+
+
+
+![Alt text](Databinding_images\odata_img1.png)
+
+#### WebAPI
+
+
+
+[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994%28v=vs.108%29.aspx) is a framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
+
+
+
+{% highlight js %}
+
+
+        jQuery(function ($) {
+            //create datamanager
+            var dataManager = ej.DataManager({
+                //ASP.NET Web API
+                url: "http://mvc.syncfusion.com/UGService/api/Orders",
+                crossDomain: true
+            });
+
+            $('#listbox').ejListBox({
+                dataSource: dataManager,
+                fields: { text: "CustomerID" }
+            });
+
+        });
+
+
+
+{% endhighlight %}
+
+
+
+N>In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API.
+
+ {% seealso %} [Cross domain](http://helpjs.syncfusion.com/js/grid/data-binding){% endseealso %}
+
+![Alt text](Databinding_images\webapi_img1.png)
+
+#### Virtual Scrolling
+
+ The ListBox widget provides support to load its data on demand via scrolling behavior to improve the application’s performance. This can be achieved using “allowVirtualScrolling” property. There are two ways to load data based on the scrolling type.
+
+1. Normal scrolling
+
+2. Continuous Scrolling
+
+The scrolling type can be defined via “virtualScrollMode” property.
+
+##### Normal Scrolling
+
+This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.
+
+{% highlight js %}
+
+
+        jQuery(function ($) {
+            //create datamanager
+            var dataManager = ej.DataManager({
+                //OData service
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+            });
+            // create query
+            var query = ej.Query().from("Customers");
+
+            $('#listbox').ejListBox({
+                dataSource: dataManager,
+                fields: { text: "CustomerID" },
+                query: query,
+                allowVirtualScrolling: true
+
+            });
+        });
+
+
+
+
+{% endhighlight %}
+
+
+
+N> By default, the value of “virtualScrollMode” property is normal.
+
+{% include image.html url="Databinding_images\normal-scrolling_img1.png" Caption="Before scrolling"%}
+
+{% include image.html url="Databinding_images\normal-scrolling_img2.png" Caption="Virtual scrolling (normal)"%}
+
+
+##### Continuous Scrolling
+
+This mode allows you to load the list box data when the scrollbar reaches the end point. In this mode, we can specify the number of items to be loaded per request.
+
+The number of items to be loaded per request can be specified using the “itemRequestCount” property.
+
+{% highlight js %}
+
+
+        jQuery(function ($) {
+            //create datamanager
+            var dataManager = ej.DataManager({
+                //OData service
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+            });
+            // create query
+            var query = ej.Query().from("Customers");
+
+            $('#listbox').ejListBox({
+                dataSource: dataManager,
+                fields: { text: "CustomerID" },
+                query: query,
+                allowVirtualScrolling: true,
+                // specifying the scroll mode
+                virtualScrollMode: ej.VirtualScrollMode.Continuous,
+                //specifying the number of items to be loaded per request
+                itemRequestCount: 10
+            });
+        });
+
+
+
+{% endhighlight %}
+
+
+
+N> The “itemRequestCount” property will work only when “virtualScrollMode” is “continuous”.
+
+{% include image.html url="Databinding_images\continuous-scrolling_img1.png" Caption="Before scrolling"%}
+
+{% include image.html url="Databinding_images\continuous-scrolling_img2.png" Caption="Virtual scrolling (continuous)"%}
+
+
+
+#### Handling errors
+
+ In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle it using the “actionFailure” event. 
+
+{% seealso %} [actionComplete](http://helpjs.syncfusion.com/js/api/ejlistbox) and [actionSuccess](http://helpjs.syncfusion.com/js/api/ejlistbox){% endseealso %}
+
+
+
+{% highlight js %}
+
+
+     jQuery(function ($) {
+            //create datamanager
+            var dataManager = ej.DataManager({
+                //OData service
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
+            });
+            // create query
+            var query = ej.Query()
+                   .from("Customers").take(10);
+
+            $('#listbox').ejListBox({
+                dataSource: dataManager,
+                fields: { text: "CustomerID" },
+                query: query,
+                actionFailure: "onFailure"
+            });
+        });
+
+        function onFailure(args) {
+            //handle errors
+        }
+
+
+
+{% endhighlight %}
+
+
+
+![Alt text](Databinding_images\handling-errors_img1.png)
+
+
+
+
+
+
+
+
+
+
+
+
+

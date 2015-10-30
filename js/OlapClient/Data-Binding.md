@@ -7,7 +7,8 @@ control: OlapClient
 documentation: ug
 ---
 
-###Binding OlapClient to Offline Cube
+### Binding OlapClient to Offline Cube
+
 To connect an OLAP Cube available in local machine, set the physical path of the Cube set in the connection string. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -17,7 +18,8 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-###Binding OlapClient to Cube in local SQL Server
+### Binding OlapClient to Cube in local SQL Server
+
 To connect an OLAP Cube available in SQL Server Analysis Service in local machine, set the server name and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -27,7 +29,8 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-###Binding OlapClient to Cube in online SQL Server
+### Binding OlapClient to Cube in online SQL Server
+
 To connect an OLAP Cube available in SQL Server Analysis Service in online server through `**XML/A**`, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -37,7 +40,8 @@ OlapDataManager DataManager = new OlapDataManager(connectionString);
 
 {% endhighlight %}
 
-###Binding OlapClient to Cube in online Mondrian Server
+### Binding OlapClient to Cube in online Mondrian Server
+
 To connect an OLAP Cube available in Mondrian Server through `**XML/A**`, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -48,7 +52,8 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.M
 
 {% endhighlight %}
 
-###Binding OlapClient to Cube in online ActivePivot Server
+### Binding OlapClient to Cube in online ActivePivot Server
+
 To connect an OLAP Cube available in ActivePivot Server through `**XML/A**`, set the host server link and database name in the connection string. When you have any credentials to connect your Cube, then set the “User ID” and “Password” attributes accordingly. The following code example illustrates the same.
 
 {% highlight c# %}
@@ -59,7 +64,8 @@ DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers
 
 {% endhighlight %}
 
-###WCF
+### WCF
+
 **Adding a WCF Service**
 
 To add a WCF service in an existing web application, right-click on the project in Solution Explorer and select **Add > New Item**. In the **Add New Item** window, select WCF Service and name it as “OlapClientService.svc”, click Add.
@@ -92,7 +98,7 @@ Next, add the following dependency libraries into your Web Application. You can 
  
 To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference**. Now, in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
 
->**NOTE: When you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
+N> When you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
 
 * Microsoft.AnalysisServices.AdomdClient.dll
 * Syncfusion.Compression.Base.dll
@@ -447,6 +453,8 @@ The endpointBehaviors are illustrated as follows.
     </services>
 </system.serviceModel>
 
+{% endhighlight %}
+
 The endpointBehaviors contain all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using this name property.
 
 {% highlight xml %}
@@ -463,7 +471,7 @@ The endpointBehaviors contain all the behaviors for an endpoint. You can link ea
 {% endhighlight %}
 
 
->** NOTE: In this example, “OlapClientDemo” indicates the name and root namespace of the Web Application created in Visual Studio IDE and “OlapClientService” indicates the name of the WCF service created.
+N> In this example, “OlapClientDemo” indicates the name and root namespace of the Web Application created in Visual Studio IDE and “OlapClientService” indicates the name of the WCF service created.
 Now, OlapClient is rendered OlapChart and PivotGird with Customer Count over a period of fiscal  years.**
 
 {% include image.html url="/js/OlapClient/Getting-Started_images/OlapClient.png" %}
