@@ -168,6 +168,7 @@ Please use the following platform names only in the front matter information
 
 > **Example**: 
 > \!\[Alt text](/path/to/img.jpg)
+>
 > Adding Filters in Grid
 > {:.caption}
 
