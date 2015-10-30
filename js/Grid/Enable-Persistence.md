@@ -71,5 +71,6 @@ var gridStateObject = JSON.parse(window.localStorage.ejGridGrid);//grid state as
 
 {% endhighlight %}
 
+
 I> [In the above example, `ejGrid` is plugin name and Grid is control id.]        
 

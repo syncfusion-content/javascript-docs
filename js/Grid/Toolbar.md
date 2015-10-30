@@ -2,7 +2,7 @@
 ---
 layout: post
 title: Toolbar
-description:Toolbar
+description: Toolbar
 platform: js
 control: Grid
 documentation: ug
@@ -138,7 +138,6 @@ Custom toolbar is used to create your own toolbar items in toolbar. It can add b
   content: "\e677";
   }
 </style>
-
 
 
 {% endhighlight %}
