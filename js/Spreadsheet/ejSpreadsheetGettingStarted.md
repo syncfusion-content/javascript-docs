@@ -1,3 +1,12 @@
+
+---
+layout: post
+title: Getting started | Spreadsheet | JavaScript | Syncfusion
+description: getting started
+platform: JS
+control: Spreadsheet
+documentation: ug
+---
 # Getting started
 
 ## Preparing HTML document

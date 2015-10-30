@@ -1,4 +1,13 @@
 
+---
+layout: post
+title: Server Configuration 
+description: server configuration
+platform: JS
+control: Spreadsheet
+documentation: ug
+---
+
 # Server Configuration
 
 In Spreadsheet control, the import and export to and from excel is processed in server-side only, through Syncfusion.EJ.Export helper functions provided for .Net Framework. So, to use importing and exporting in your projects, it is required to create a server with any of the following web services. 
