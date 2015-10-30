@@ -98,8 +98,6 @@ The following code example describes the above behavior.
 {% highlight html %}
 <div id="Grid"></div>
 
-
-
 {% endhighlight %}
 
 {% highlight js %}
@@ -134,7 +132,7 @@ For OData Version 4 support ej.ODataV4Adaptor should be used. By using `url` pro
 
 I>[ You can provide adaptor value either as `string` value (“ODataAdaptor”) or by creating a new instance (new `ej.ODataAdaptor`).] 
 
-{%seealso}For further details about OData service please refer [the link](http://www.odata.org/# ""). {% endseealso %}
+{% seealso %}For further details about OData service please refer [the link](http://www.odata.org/# ""). {% endseealso %}
 
 The following code example describes the above behavior.
 
