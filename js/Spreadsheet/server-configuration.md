@@ -1,8 +1,7 @@
-
 ---
 layout: post
-title: Server Configuration 
-description: server configuration
+title: ServerConfiguration 
+description: serverconfiguration
 platform: JS
 control: Spreadsheet
 documentation: ug
