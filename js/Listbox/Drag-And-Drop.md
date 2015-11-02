@@ -7,11 +7,11 @@ control: ListBox
 documentation: ug
 ---
 
-## Drag and drop
+# Drag and drop
 
 A list item can be moved from a widget to another ListBox widget. Also the order of list items can be changed. This can be achieved using the drag and drop support. 
 
-### Transferring a ListBox data to another ListBox
+## Transferring a ListBox data to another ListBox
 
 In some scenarios we might want to transfer a ListBox data to another ListBox. In the below steps we will see how to move skills from a ListBox widget to another.
 
@@ -75,20 +75,17 @@ Enable the drag and drop support through “allowDrag” and “allowDrop” pro
 
 
 
-N> The datasource is not set for the second ListBox widget. In the above example we have restricted listbox1 as draggable element and the listbox2 as droppable element. In this case we can’t drag an item from listbox2 to listbox1. If we want to achieve two way drag and drop, we need to enable both allowDrag and allowDrop properties in both ListBox widgets configuration.
+N> _The datasource is not set for the second ListBox widget. In the above example we have restricted listbox1 as draggable element and the listbox2 as droppable element. In this case we can’t drag an item from listbox2 to listbox1. If we want to achieve two way drag and drop, we need to enable both allowDrag and allowDrop properties in both ListBox widgets configuration._
 
-
-
-{% seealso %}databinding{% endseealso %}
 
 {% include image.html url="Drag-And-Drop_Images\transferring-a-listbox-data-to-another-listbox_img1.png" Caption="Before Drag and Drop"%}
 
 {% include image.html url="Drag-And-Drop_Images\transferring-a-listbox-data-to-another-listbox_img2.png" Caption="After some items were dragged and dropped"%}
 
 
-### Dynamically set data source on drag and drop
+## Dynamically set data source on drag and drop
 
-In JSON binding, while moving the specific item from a ListBox****to another**,** its data source also will be updated automatically along with the DOM (which is explained here). But in case of remote binding, only the DOM will be updated. We need to update the data source manually since it’s not possible to update the remote data source. So in this case, we can use “itemDrop” event to update the datasource of the second ListBox widget based on the dropped items. 
+In JSON binding, while moving the specific item from a ListBox to another, its data source also will be updated automatically along with the DOM (which is explained here). But in case of remote binding, only the DOM will be updated. We need to update the data source manually since it’s not possible to update the remote data source. So in this case, we can use “itemDrop” event to update the datasource of the second ListBox widget based on the dropped items. 
 
 Both the ListBox widgets are bound to a remote data source.
 
@@ -154,7 +151,7 @@ Both the ListBox widgets are bound to a remote data source.
 
 In the “itemDrop” event, we can implement “updateDataSource” function to update the datasource of the second ListBox widget. The “itemDrop” event’s argument contains the details of the dropped item. 
 
-### Reordering
+## Reordering
 
 Item reordering can be done within a ListBox widget by enabling both “allowDrag” and “allowDrop” properties.
 
@@ -195,5 +192,5 @@ Item reordering can be done within a ListBox widget by enabling both “allowDra
 
 {% include image.html url="Drag-And-Drop_Images\reordering_img2.png" Caption="After reordering"%}
 
-N>The item reordering can be done dynamically without mouse interaction. For that we have provided two APIs namely “[moveUp](http://helpjs.syncfusion.com/js/api/ejlistbox)” and “[moveDown](http://helpjs.syncfusion.com/js/api/ejlistbox)”.
+N> _The item reordering can be done dynamically without mouse interaction. For that we have provided two APIs namely “[moveUp](http://help.syncfusion.com/js/api/ejlistbox#methods:moveup)” and “[moveDown](http://help.syncfusion.com/js/api/ejlistbox#methods:movedown)”._
 

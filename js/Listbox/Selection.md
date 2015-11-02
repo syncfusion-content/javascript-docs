@@ -7,12 +7,12 @@ control: ListBox
 documentation: ug
 ---
 
-## Selection
+# Selection
 
 The ListBox widget allows you to highlight the selected item. It allows multiple selection also. 
 
 
-### Selection on initialize
+## Selection on initialize
 
 By default, the ListBox widget allows single item selection. We can select specific item during initialization of the ListBox widget using the “selectedIndex” API. 
 
@@ -33,13 +33,11 @@ By default, the ListBox widget allows single item selection. We can select speci
 {% endhighlight %}
 
 
-### Multiple selection
+## Multiple selection
 
 Multiple selection can be enabled using “allowMultiSelection” property. You can select multiple list items using <kbd>“Ctrl”</kbd> and <kbd>“Shift”</kbd> keys.
 
-{% seealso%} Keyboard Interaction{% endseealso%}.
-
-
+**See Also** [Keyboard Interaction](http://help.syncfusion.com/js/listbox/accessibility#keyboard-interaction).
 
 {% highlight js %}
 
@@ -56,14 +54,13 @@ Multiple selection can be enabled using “allowMultiSelection” property. You 
 
 {% endhighlight %}
 
-### Checkbox
+## Checkbox
 
 The ListBox widget allows selection through checkbox. It can be enabled using “showCheckbox” API.
 
 The specified items can be checked on initialize through “checkedIndices” property. 
 
-{% seealso%} “[checkedIndex](http://helpjs.syncfusion.com/js/api/ejlistbox)” {% endseealso%}
-
+**See Also** [“checkedIndices](http://helpjs.syncfusion.com/js/api/ejlistbox#members:checkedindices).
 {% highlight js %}
 
 
@@ -82,4 +79,4 @@ The specified items can be checked on initialize through “checkedIndices” pr
 
 
 
-![Alt text](Selection_Images\checkbox_img1.png)
+![Checked Listbox](Selection_Images\checkbox_img1.png)

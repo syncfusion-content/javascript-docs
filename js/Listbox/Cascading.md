@@ -7,7 +7,7 @@ control: ListBox
 documentation: ug
 ---
 
-## Cascading
+# Cascading
 
 We can dynamically populate data of a list box while selecting an item in another list box i.e. rendering child list box based on the item selection in parent list box. This can be achieved using “cascadeTo” property.
 
@@ -78,9 +78,9 @@ Create the ListBox widgets as below.
 
 The parent ListBox widget’s “cascadeTo” API should point to its child ListBox****widget by specifying the id of the child ListBox widget. The child ListBox widget can be displayed with empty data on initialize by setting its “loadDataOnInit” property to false.
 
-N>In the below data source definition, the “categoryId” column will act as a primary key to define the parent-child relationship.
+N> _In the below data source definition, the “categoryId” column will act as a primary key to define the parent-child relationship._
 
-### Multilevel cascading
+## Multilevel cascading
 
 Please refer the below code snippets which is expanded from the above example, to achieve multi-level (three level here) cascading of the ListBox widgets.
 
@@ -113,11 +113,9 @@ Create the UL elements to render the parent and the child ListBox widgets as bel
 {% endhighlight %}
 
 
-
 Create the ListBox widgets as below.
 
 {% highlight js %}
-
 
         $(function () {
             // datasource for parent listbox
@@ -195,8 +193,6 @@ Create the ListBox widgets as below.
                 loadDataOnInit: false,
             });
         });
-
-
 
 {% endhighlight %}
 
