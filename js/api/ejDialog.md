@@ -367,7 +367,7 @@ Example
 {% endhighlight  %}
 
 ### enableResize<span class="type-signature type boolean">Boolean</span>
-{:#members:enablepersistence}
+{:#members:enableResize}
 
 Allows the dialog to be resized. The dialog cannot be resized less than the minimum height and minimum width values.
 
@@ -566,7 +566,7 @@ Example
 {% endhighlight  %}
 
 ### showHeader<span class="type-signature type boolean">Boolean</span>    
-{:#members:showHeader}
+{:#members:showheader}
 
 Shows or hides the dialog header.
 
@@ -618,6 +618,8 @@ Example
     $("#dialog").ejDialog({showRoundedCorner: true}); 
 
 {% endhighlight  %}
+
+
 ### target <span class="type-signature type string">String</span> 
 {:#members:target}
 
@@ -671,8 +673,8 @@ Example
 
 {% endhighlight  %}
 
-### zIndex <span class="type-signature type integer">Integer</span>
-{:#members:zIndex}
+### zIndex<span class="type-signature type integer">Integer</span>
+{:#members:zindex}
 
 Sets the z-index value for the Dialog widget.
 
@@ -834,6 +836,7 @@ Example
 
 {% endhighlight  %}
 
+
 ### restore<span class="signature">()</span>
 {:#methods:restore}
 
@@ -863,6 +866,7 @@ Example
 
 {% endhighlight  %}
 
+
 ### setTitle<span class="signature">(title)</span>
 {:#methods:settitle}
 
@@ -890,6 +894,7 @@ Example
 
 {% endhighlight  %}
 
+
 ### setContent<span class="signature">(content)</span>
 {:#methods:setcontent}
 
@@ -916,6 +921,8 @@ Example
     $("#dialog").ejDialog("setContent","custom content"); 
 
 {% endhighlight  %}
+
+
 ### focus<span class="signature">()</span>
 {:#methods:focus}
 
@@ -930,6 +937,7 @@ Example
 
 {% endhighlight  %}
 
+
 ## Events
 
 ### beforeOpen 
@@ -940,36 +948,39 @@ This event is triggered before the dialog widgets gets open.
 <table>
 <tr>
 <th>
-Event arguments<br/><br/></th><th>
-Type<br/><br/></th><th>
-Description<br/><br/></th></tr>
+<b>Event arguments</b></th><th>
+<b>Type</b></th><th>
+<b>Description</b></th></tr>
 <tr>
 <td>
-argument.cancel<br/><br/></td><td>
-boolean<br/><br/></td><td>
-Set this option to true to cancel the event.<br/><br/></td></tr>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model<br/><br/></td><td>
-object<br/><br/></td><td>
-Instance of the dialog model object.<br/><br/></td></tr>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type<br/><br/></td><td>
-String<br/><br/></td><td>
-Name of the event<br/><br/></td></tr>
+argument.type</td><td>
+String</td><td>
+Name of the event</td></tr>
 </table>
+
 
 Example
 {:.example}
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ beforeOpen: function (args) {} }); 
 
-{% endhighlight  %}
+        $("#dialog").ejDialog({ 	beforeOpen: function (args) {} }); 
 
-### ajaxError
+{% endhighlight %}
+
+
+###ajaxError
 {:#events:ajaxerror}
 
 This event is triggered whenever the Ajax request fails to retrieve the dialog content.
@@ -977,54 +988,58 @@ This event is triggered whenever the Ajax request fails to retrieve the dialog c
 <table>
 <tr>
 <th>
-Name<br/><br/></th><th>
-Type<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
-argument.cancel<br/><br/></td><td>
-boolean<br/><br/></td><td>
-Set this option to true to cancel the event.<br/><br/></td></tr>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model<br/><br/></td><td>
-object<br/><br/></td><td>
-Instance of the dialog model object.<br/><br/></td></tr>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type<br/><br/></td><td>
-string<br/><br/></td><td>
-Name of the event.<br/><br/></td></tr>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
 <tr>
 <td>
-argument.url<br/><br/></td><td>
-string<br/><br/></td><td>
-URL of the content.<br/><br/></td></tr>
+argument.url</td><td>
+string</td><td>
+URL of the content.</td></tr>
 <tr>
 <td>
-argument.data.responseText<br/><br/></td><td>
-string<br/><br/></td><td>
-Error page content<br/><br/></td></tr>
+argument.data.responseText</td><td>
+string</td><td>
+Error page content</td></tr>
 <tr>
 <td>
-argument.data.status<br/><br/></td><td>
-integer<br/><br/></td><td>
-Error code<br/><br/></td></tr>
+argument.data.status</td><td>
+integer</td><td>
+Error code</td></tr>
 <tr>
 <td>
-Argument.data.statusText<br/><br/></td><td>
-string<br/><br/></td><td>
-returns the corresponding error text for error code <br/><br/></td></tr>
+Argument.data.statusText</td><td>
+string</td><td>
+returns the corresponding error text for error code </td></tr>
 </table>
+
 
 Example
 {:.example}
 
+
 {% highlight js %}
 
-    $("#dialog").ejDialog({ ajaxError: function (args){} }); 
 
-{% endhighlight  %}
+        $("#dialog").ejDialog({ 	ajaxError: function (args){} }); 
+
+{% endhighlight %}
+
 
 ### ajaxSuccess
 {:#events:ajaxsuccess}
@@ -1034,46 +1049,49 @@ This event is triggered whenever the Ajax request to retrieve the dialog content
 <table>
 <tr>
 <th>
-Name<br/><br/></th><th>
-Type<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
-argument.cancel<br/><br/></td><td>
-boolean<br/><br/></td><td>
-Set this option to true to cancel the event.<br/><br/></td></tr>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model<br/><br/></td><td>
-object<br/><br/></td><td>
-Instance of the dialog model object.<br/><br/></td></tr>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type<br/><br/></td><td>
-string<br/><br/></td><td>
-Name of the event.<br/><br/></td></tr>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
 <tr>
 <td>
-argument.url<br/><br/></td><td>
-string<br/><br/></td><td>
-URL of the content.<br/><br/></td></tr>
+argument.url</td><td>
+string</td><td>
+URL of the content.</td></tr>
 <tr>
 <td>
-argument.data<br/><br/></td><td>
-string<br/><br/></td><td>
-Response content.<br/><br/></td></tr>
+argument.data</td><td>
+string</td><td>
+Response content.</td></tr>
 </table>
 
 Example
 {:.example}
 
+
 {% highlight js %}
 
-    $("#dialog").ejDialog({ ajaxSuccess: function (args){}});
 
-{% endhighlight  %}
+$("#dialog").ejDialog({ 	ajaxSuccess: function (args){}});
 
-### beforeClose
+{% endhighlight %}
+
+
+###beforeClose
 {:#events:beforeclose}
 
 This event is triggered before the dialog widgets get closed.
@@ -1081,29 +1099,253 @@ This event is triggered before the dialog widgets get closed.
 <table>
 <tr>
 <th>
-Name<br/><br/></th><th>
-Type<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
-argument.event<br/><br/></td><td>
-Object<br/><br/></td><td>
-Current event object.<br/><br/></td></tr>
+argument.event</td><td>
+Object</td><td>
+Current event object.</td></tr>
 <tr>
 <td>
-argument.cancel<br/><br/></td><td>
-boolean<br/><br/></td><td>
-Set this option to true to cancel the event.<br/><br/></td></tr>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
-argument.model<br/><br/></td><td>
-object<br/><br/></td><td>
-Instance of the dialog model object.<br/><br/></td></tr>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
 <tr>
 <td>
-argument.type<br/><br/></td><td>
-string<br/><br/></td><td>
-Name of the event.<br/><br/></td></tr>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
+</table>
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+
+
+    $("#dialog").ejDialog({ 	beforeClose: function(args){}});
+
+{% endhighlight %}
+
+
+###Close [Deprecated]
+{:#events:closedeprecated}
+
+This event is triggered after the dialog widget is closed.
+
+N>Since it is deprecated use the method “close”. Here casing is the difference between two methods.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.event</td><td>
+Object</td><td>
+Current event object.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+</table>
+
+Example
+{:.example}
+
+
+
+{% highlight js %}
+
+    $("#dialog").ejDialog({ 	Close: function (args) {} }); 
+
+{% endhighlight %}
+
+
+###close 
+{:#events:close}
+
+This event is triggered after the dialog widget is closed.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.event</td><td>
+Object</td><td>
+Current event object.</td></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event</td></tr>
+</table>
+
+Example
+{:.example}
+
+
+
+{% highlight js %}
+
+    $("#dialog").ejDialog({ 	close: function (args) {} }); 
+
+{% endhighlight  %}
+
+
+
+###contentLoad
+{:#events:contentload}
+
+Triggered after the dialog content is loaded in DOM.
+
+N> This event is triggered only when the [contentType](http://docs.syncfusion.com/js/api/ejdialog) is set to image or iframe.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.url</td><td>
+String</td><td>
+URL of the content.</td></tr>
+<tr>
+<td>
+argument.contentType</td><td>
+Object</td><td>
+Content type</td></tr>
+</table>
+
+Example
+{:.example}
+
+
+{% highlight js %}
+
+    $("#dialog").ejDialog({ contentLoad: function (args) {} }); 
+
+{% endhighlight  %}
+
+
+###create
+{:#events:create}
+
+Triggered after the dialog is created successfully
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
+</table>
+
+Example
+{:.example}
+
+
+{% highlight js %}
+
+    $("#dialog").ejDialog({ 	create: function (args) {} }); 
+
+{% endhighlight %}
+
+
+###destroy
+{:#events:destroy}
+
+Triggered after the dialog widget is destroyed successfully
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
 </table>
 
 Example
@@ -1111,13 +1353,400 @@ Example
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ beforeClose: function(args){}});
+
+    $("#dialog").ejDialog({ 	destroy: function (args) {} }); 
 
 {% endhighlight  %}
 
-### Close [Deprecated]
-{:#events:close}
 
-This event is triggered after the dialog widget is closed.
+###drag
+{:#events:drag}
 
-N>Since it is deprecated use the method.
+Triggered while the dialog is dragged.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.event</td><td>
+Object</td><td>
+Current event object.</td></tr>
+</table>
+
+Example
+{:.example}
+
+
+{% highlight js %}
+
+$("#dialog").ejDialog({ 	drag: function (args) {} }); 
+
+{% endhighlight  %}
+
+
+###dragStart
+{:#events:dragstart}
+
+Triggered when the user starts dragging the dialog.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.event</td><td>
+Object</td><td>
+Current event object.</td></tr>
+</table>
+
+Example
+{:.example}
+
+
+{% highlight js %}
+
+$("#dialog").ejDialog({ 	dragStart: function (args) {} }); 
+
+{% endhighlight  %}
+
+
+###dragStop
+{:#events:dragstop}
+
+Triggered when the user stops dragging the dialog.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.event</td><td>
+Object</td><td>
+Current event object.</td></tr>
+</table>
+Example
+{:.example}
+
+
+{% highlight js %}
+
+    $("#dialog").ejDialog({ 	dragStop: function (args) {} }); 
+
+{% endhighlight %}
+
+
+###open
+{:#events:open}
+
+Triggered after the dialog is opened.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js %}
+
+
+$("#dialog").ejDialog({ 	open: function (args) {} }); 
+
+{% endhighlight %}
+
+
+###resize
+{:#events:resize}
+
+Triggered while the dialog is resized.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
+<tr>
+<td>
+argument.event</td><td>
+Object</td><td>
+Current event object.</td></tr>
+</table>
+
+Example
+{:.example}
+
+
+{% highlight js %}
+
+$("#dialog").ejDialog({ 	resize: function (args) {} }); 
+
+{% endhighlight  %}
+
+
+###resizeStart
+{:#events:resizestart}
+
+Triggered when the user starts resizing the dialog.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+string</td><td>
+Name of the event</td></tr>
+<tr>
+<td>
+argument.event</td><td>
+Object</td><td>
+Current event object.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js %}
+
+
+    $("#dialog").ejDialog({ 	resizeStart: function (args) {} }); 
+
+{% endhighlight  %}
+
+
+###resizeStop
+{:#events:resizestop}
+
+Triggered when the user stops resizing the dialog.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+Boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+String</td><td>
+Name of the event</td></tr>
+<tr>
+<td>
+argument.event</td><td>
+Object</td><td>
+Current event object.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js %}
+
+
+    $("#dialog").ejDialog({ 	resizeStop: function (args) {} }); 
+
+{% endhighlight  %}
+
+
+###expand
+{:#events:expand}
+
+Triggered when the dialog content is expanded.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
+</table>
+
+Example
+{:.example}
+
+{% highlight js %}
+
+
+        $("#dialog").ejDialog({ 
+        
+            actionButtons: ["close","collapse","expand"], 
+        
+            expand: function (args) {} 
+        
+        }); 
+
+{% endhighlight %}
+
+
+###collapse
+{:#events:collapse}
+
+Triggered when the dialog content is collapsed.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+argument.cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
+<tr>
+<td>
+argument.model</td><td>
+object</td><td>
+Instance of the dialog model object.</td></tr>
+<tr>
+<td>
+argument.type</td><td>
+string</td><td>
+Name of the event.</td></tr>
+</table>
+
+Example
+{:.example}
+
+
+
+{% highlight js %}
+
+$("#dialog").ejDialog({ 
+
+	actionButtons: ["close","collapse","expand"], 
+
+	collapse: function (args) {} 
+
+}); 
+
+{% endhighlight %}
