@@ -11,7 +11,7 @@ documentation: ug
 
 Connectors are objects used to create link between two points, nodes or ports to represent the relationships between them. 
 
-![]("/js/Diagram/Connector_images/Connector_img1.png")
+![](/js/Diagram/Connector_images/Connector_img1.png)
 
 ## Create Connector
 
@@ -51,7 +51,7 @@ The `sourcePoint` and `targetPoint` properties of connector allow you to define 
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img2.png")
+![](/js/Diagram/Connector_images/Connector_img2.png)
 
 ### Add connector at run time
 
@@ -77,7 +77,7 @@ Connectors can be added at runtime with the client side method, `add`. The follo
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img3.png")
+![](/js/Diagram/Connector_images/Connector_img3.png)
 
 ### Connectors from palette
 
@@ -163,7 +163,7 @@ $("#DiagramContent").ejDiagram({
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img4.png")
+![](/js/Diagram/Connector_images/Connector_img4.png)
 
 N> By default, connections are created at the intersecting point of segments and node bounds. The connection between any specific point of source and target nodes can be achieved with connection ports. 
 
@@ -221,7 +221,7 @@ The following code example illustrates how to create port to port connections.
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img5.png")
+![](/js/Diagram/Connector_images/Connector_img5.png)
 
 ## Segments
 
@@ -253,7 +253,7 @@ To create a straight line, you have to add a straight segment to `segments` coll
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img6.png")
+![](/js/Diagram/Connector_images/Connector_img6.png)
 
 The `point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 
@@ -280,7 +280,7 @@ The `point` property of straight segment allows you to define the end point of i
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img7.png")
+![](/js/Diagram/Connector_images/Connector_img7.png)
 
 ### Orthogonal
 
@@ -307,7 +307,7 @@ Set the segment `type` as "othogonal" to create a default orthogonal segment. Th
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img8.png")
+![](/js/Diagram/Connector_images/Connector_img8.png")
 
 The `length` and `direction` properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
@@ -334,15 +334,15 @@ The `length` and `direction` properties allow to define the flow and length of s
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img9.png")
+![](/js/Diagram/Connector_images/Connector_img9.png)
 
 #### Avoid overlapping
 
 Orthogonal segments are automatically re-routed, in order to avoid overlapping with the source and target nodes. The following images illustrate how orthogonal segments are re-routed. 
 
-![]("/js/Diagram/Connector_images/Connector_img10.png")
+![](/js/Diagram/Connector_images/Connector_img10.png)
 
-![]("/js/Diagram/Connector_images/Connector_img11.png")
+![](/js/Diagram/Connector_images/Connector_img11.png)
 
 N> Overlapping with source and target nodes are only avoided. Other nodes are not considered as obstacles.
 
@@ -371,7 +371,7 @@ To create a bezier segment, the `type` property of segment is set as "bezier". T
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img12.png")
+![](/js/Diagram/Connector_images/Connector_img12.png)
 
 The `point1` and `point2` properties of bezier segment enable you to set the control points. The following code example illustrates how to configure the Bezier segments with control points.
 
@@ -400,7 +400,7 @@ The `point1` and `point2` properties of bezier segment enable you to set the con
     
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img13.png")
+![](/js/Diagram/Connector_images/Connector_img13.png)
 
 
 The `vactor1` and `vector2` properties of bezier segment enable you to define the vectors. The following code illustrates how to configure a bezier curve with vectors.
@@ -427,7 +427,7 @@ The `vactor1` and `vector2` properties of bezier segment enable you to define th
     
  {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img14.png")
+![](/js/Diagram/Connector_images/Connector_img14.png)
 
 ### Complex segments
 
@@ -462,7 +462,7 @@ Multiple segments can be defined one after another. To create a connector with m
     
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img15.png")
+![](/js/Diagram/Connector_images/Connector_img15.png)
 
 ## Decorator
 
@@ -524,7 +524,7 @@ The `shape` property of decorator allows to define the shape of the decorators. 
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img16.png")
+![](/js/Diagram/Connector_images/Connector_img16.png)
 
 ## Padding
 
@@ -556,7 +556,7 @@ The `sourcePadding` and `targerPadding` properties of connector define the space
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img17.png")
+![](/js/Diagram/Connector_images/Connector_img17.png)
 
 The `connectorPadding` property of node defines the space to be left between the node bounds and its edges. The following code example illustrates how to leave the space between a node and its connections.
 
@@ -584,7 +584,7 @@ The `connectorPadding` property of node defines the space to be left between the
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img18.png")
+![](/js/Diagram/Connector_images/Connector_img18.png)
 
 The `connectorPadding` property of port defines the space between the ports and its in/out edges. The following code example illustrates how to leave the space between ports and its connections.
 
@@ -617,7 +617,7 @@ The `connectorPadding` property of port defines the space between the ports and 
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img19.png")
+![](/js/Diagram/Connector_images/Connector_img19.png)
 
 ## Bridging
 
@@ -645,7 +645,7 @@ var Diagram = ej.datavisualization.Diagram;
     });    
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img20.png")
+![](/js/Diagram/Connector_images/Connector_img20.png)
 
 The direction of the bridge can be customized with the property `bridgeDirection`. BridgeDirection defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
 
@@ -666,7 +666,7 @@ The following code example illustrates how to draw the bridge at the bottom dire
 
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img21.png")
+![](/js/Diagram/Connector_images/Connector_img21.png)
 
 **Limitation**: Bezier segments do not support bridging.
 
@@ -695,7 +695,7 @@ Corner radius allows to create connectors with rounded corners. The radius of th
         
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img22.png")
+![](/js/Diagram/Connector_images/Connector_img22.png)
 
 ## Appearance
 
@@ -747,7 +747,7 @@ The following code example illustrates how to customize the appearance of the de
     };
 {% endhighlight %}
 
-![]("/js/Diagram/Connector_images/Connector_img23.png")
+![](/js/Diagram/Connector_images/Connector_img23.png)
 
 ## Interaction
 Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/js/Diagram/Interaction "Connection-Editing").
