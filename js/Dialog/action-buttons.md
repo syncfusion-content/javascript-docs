@@ -7,7 +7,7 @@ control: Dialog
 documentation: ug
 ---
 
-## Action Buttons
+# Action Buttons
 
 The Dialog widget provides the following action buttons.
 
@@ -23,9 +23,7 @@ The Dialog widget provides the following action buttons.
 
 You can display only the necessary buttons in the Dialog widget by configuring the actionButtons property.
 
-{% highlight html %}
-
-
+{% highlight js %}
 
            //create dialog widget
             $("#dialog").ejDialog({
@@ -33,11 +31,9 @@ You can display only the necessary buttons in the Dialog widget by configuring t
                 actionButtons: ["close", "maximize", "minimize"]
             });
 
-
-
 {% endhighlight %}
 
 
 
-![Alt text](Action-Buttons_Images\action-buttons_img1.png)
+![Action Buttons](action-buttons_images\action-buttons_img1.png)
 

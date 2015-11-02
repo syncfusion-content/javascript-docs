@@ -7,7 +7,7 @@ control: AutoComplete
 documentation: ug
 ---
 
-## Grouping
+# Grouping
 
 The suggestion list items can be grouped by providing a header for each set of items. The grouping will be defined based on the “groupBy” API in fields object.
 
