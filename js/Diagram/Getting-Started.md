@@ -249,7 +249,7 @@ Final flow chart will looks as shown below.
 In 'Flow Diagram' section we saw how to create a diagram manually, now let us see how to create and position diagram automatically.
 
 ### Initialize diagram
-Initializing diagram is already discussed in Flow Diagram > [Initialize diagram](#Initialize-Diagram) section.
+Initializing diagram is already discussed in Flow Diagram > [Initialize diagram](#initialize-diagram) section.
 
 ### Business object (Employee information)
 

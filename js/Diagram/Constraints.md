@@ -9,7 +9,7 @@ documentation: ug
 
 # Constraints
 Constraints are used to enable/disable certain behaviors of the diagram, node and connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators.
-To know more about bitwise operators, refer to [Bitwise Operations](#Bitwise-Operations) 
+To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations) 
  
 ## DiagramConstraints 
 Diagram constraints allow to enable or disable the following behaviors. 
