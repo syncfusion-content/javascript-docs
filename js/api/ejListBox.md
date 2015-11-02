@@ -7,7 +7,6 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html ListBox control.
 
 The ListBox widget provides a list options to make user to choose an item from the list. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
 
@@ -87,8 +86,7 @@ Example
 Enables/disables the dragging behavior of the ListBox widget’s item within a ListBox or between two ListBox widgets.
 
 Default Value:
-{:.param}
- * false
+{:.param} false
 
 Example
 {:.example}
@@ -521,7 +519,9 @@ Example
 <tr>
 <td>
 fields.category [Deprecated]</td><td>
-The grouping in the ListBox widget can be defined using this field. Note: Since this is deprecated we suggest you to use fields.groupBy API.</td></tr>
+The grouping in the ListBox widget can be defined using this field. 
+N> Since this is deprecated we suggest you to use fields.groupBy API.
+</td></tr>
 <tr>
 <td>
 fields.checkBy </td><td>
@@ -2982,7 +2982,7 @@ List item’s value.</td></tr>
 
 
 ### select
-{:#events:selected}
+{:#events:select}
 
 Triggers when a list item gets selected. 
 
