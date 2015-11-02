@@ -16,14 +16,14 @@ The Spreadsheet have the following list of external dependencies.
 * [jsRender](https://github.com/borismoore/jsrender# "") - to render the templates
 * [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/# "") - to support the animation effects in the components
 * [jQuery.Globalize](https://github.com/jquery/globalize/tree/v0.1.1# "") v0.1.1 - to support the globalization
-* [jQuery.validate](https://github.com/jzaefferer/jquery-validation# "") – to support validation in editing and dialog inputs
+* [jQuery.validate](https://github.com/jzaefferer/jquery-validation# "") - to support validation in editing and dialog inputs
 
 And the internal dependencies are tabulated below. 
 
 <table>
 <tr>
 <td>
-**File**                          <br/><br/></td><td>
+**File**<br/><br/></td><td>
 **Description/Usage**<br/><br/></td></tr>
 <tr>
 <td>
@@ -387,10 +387,10 @@ Extend the selection in right.<br/><br/></td></tr>
 </table>
 The Spreadsheet control also has support for excel like drag fill, which can be used to fill the adjacent cells data using a dragging fill handle of a selected cells. With drag fill, the following list of Auto fill options are also provided in Spreadsheet. 
 
-1. Copy – repeat values (Text)
-2. Series – fill data based on series (Number, Month, Day)
-3. Formula Series – fill formula based on cell reference
-4. Formatting – repeat cell formats
+1. Copy - repeat values (Text)
+2. Series - fill data based on series (Number, Month, Day)
+3. Formula Series - fill formula based on cell reference
+4. Formatting - repeat cell formats
 
 For auto filling, editing and autofill should be enabled using `allowEditing` and `allowAutoFill`.
 
@@ -422,8 +422,8 @@ For auto filling, editing and autofill should be enabled using `allowEditing` an
 
 The Spreadsheet control provides options to create chart through API and Ribbon. The chart can be created using ribbon similar to excel and to create using API, `XLChart.createChart()` should be called with the following parameters.
 
-1. Range – Chart data from the range
-2. Chart options – for setting its width, height, type e.t.c
+1. Range - Chart data from the range
+2. Chart options - for setting its width, height, type e.t.c
 
 {% highlight html %}
 <div id='Spreadsheet'></div>
