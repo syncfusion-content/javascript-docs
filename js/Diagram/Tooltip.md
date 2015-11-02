@@ -16,7 +16,7 @@ By default, Diagram displays a tooltip to provide the size, position, and angle 
 
 | Drag | Resize | Rotate |
 |---|---|---|
-| ![]("/js/Diagram/Tooltip_images/Tooltip_img1.png") | ![]("/js/Diagram/Tooltip_images/Tooltip_img2.png") | ![]("/js/Diagram/Tooltip_images/Tooltip_img3.png") |
+| ![](/js/Diagram/Tooltip_images/Tooltip_img1.png) | ![](/js/Diagram/Tooltip_images/Tooltip_img2.png) | ![](/js/Diagram/Tooltip_images/Tooltip_img3.png) |
 
 ### Disable default tooltip
 

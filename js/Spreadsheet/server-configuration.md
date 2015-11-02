@@ -1,8 +1,7 @@
-
 ---
 layout: post
-title: Server Configuration 
-description: server configuration
+title: ServerConfiguration 
+description: serverconfiguration
 platform: JS
 control: Spreadsheet
 documentation: ug
@@ -15,7 +14,7 @@ In Spreadsheet control, the import and export to and from excel is processed in 
 * WebAPI 
 * WCF Service
 * ASP.Net MVC Controller Action 
-* ASP.Net WebForm’s WebMethod 
+* ASP.Net WebForm's WebMethod 
 
 Following code snippet demonstrate importing and exporting with WebAPI controller.
 
