@@ -7,7 +7,7 @@ control: AutoComplete
 documentation: ug
 ---
 
-# Multiselection modes
+# Multiselection 
 
 The AutoCompletewidget helps you to select multiple values from the suggestion list using themultiSelectModeproperty.{% seealso %} [MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete){% endseealso %}
 
