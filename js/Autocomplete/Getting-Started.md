@@ -69,7 +69,7 @@ Add links to the [CDN](http://helpjs.syncfusion.com/js/cdn) Script files with de
 
 
 
-N> _**Notes:** In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server._
+N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server._
 
 
 
@@ -108,7 +108,8 @@ Initialize the AutoComplete widget by adding the following code in script sectio
 
 The data for the suggestion list can be populated using the dataSource property. 
 
-See also[Data Binding](http://help.syncfusion.com/js/autocomplete/data-binding)
+{%seealso%}[Data Binding](http://help.syncfusion.com/js/autocomplete/data-binding){%endseealso%}
+
 
 {% highlight js %}
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Overview
 
-The AutoComplete control is a textbox control that provides a list of suggestions based on the user query. When users enter text into the text box, the control performs a search operation and provides a list of results. There are several filter types available to perform the search.
+The AutoComplete control is a textbox control that provides a list of suggestions based on the user query.When the users enters the text in the text box, the control performs a search operation and provides a list of results in the suggestion pop up. There are several filter types available to perform the search.
 
 **Key Features**
 
-* Delimiter: Supports search for multiple words using a delimiter symbol.
+* Multiword Search: Supports searching using multiple words
 
 * Data binding: Supports data binding with JSON data and remote data.
 

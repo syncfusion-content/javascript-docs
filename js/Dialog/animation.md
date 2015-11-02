@@ -7,14 +7,13 @@ control: Dialog
 documentation: ug
 ---
 
-## Animation
+# Animation
 
 The Dialog widget can be animated while opening and closing the dialog.
 
 We can specify the effect and the duration for the animation. There are two types of effects. They are slide and fade. We can configure these settings separately for open and close dialog actions.
 
-{% highlight html %}
-
+{% highlight js %}
 
             //create dialog widget
             $("#dialog").ejDialog({
@@ -35,12 +34,7 @@ We can specify the effect and the duration for the animation. There are two type
                 }
             });
 
-
-
-
 {% endhighlight %}
 
-
-
-![Alt text](Animation_Images\animation_img1.png)
+![Animation](animation_images\animation_img1.png)
 

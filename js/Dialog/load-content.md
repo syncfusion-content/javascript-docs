@@ -7,7 +7,7 @@ control: Dialog
 documentation: ug
 ---
 
-## Load content
+# Load content
 
 BY default, the content inside the Dialog element is considered as the content for the Dialog widget. 
 
@@ -21,9 +21,7 @@ Also, we can render the Dialog widget content through the following ways.
 
 This settings can be specified through “contentType” property. 
 
-{% highlight html %}
-
-
+{% highlight js %}
 
             $("#dialog").ejDialog({
                 title: "Dialog",
@@ -51,14 +49,13 @@ dialogcontent.html
 
 
 
-![Alt text](Load-Content_Images\load-content_img1.png)
+![Load content](load-content_images\load-content_img1.png)
 
 We can handle the AJAX request’s success and failures through the events “ajaxSuccess” and “ajaxError” events respectively. See also ajaxSuccess and ajaxError
 
 The previous example is modified as below to handle the success and failure events.
 
-{% highlight html %}
-
+{% highlight js %}
 
             $("#dialog").ejDialog({
                 title: "Dialog",
@@ -75,8 +72,6 @@ The previous example is modified as below to handle the success and failure even
         function onError(args) {
             //handle success event
         }
-
-
 
 {% endhighlight %}
 
