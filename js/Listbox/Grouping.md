@@ -7,16 +7,16 @@ control: ListBox
 documentation: ug
 ---
 
-## Grouping
+# Grouping
 
-Grouping defines set of items to be categorized by providing a heading (header) for each set of items. It can be done in two ways.
+ListBox items can be grouped by providing a heading (header) for each set of items. It can be done in two ways.
 
 1. Using span tag
 
 2. Databinding
 
 
-### Using span tag
+## Using span tag
 
 The header for each group can be defined using the “span” element”. 
 
@@ -64,11 +64,11 @@ The header for each group can be defined using the “span” element”.
 
 ![Alt text](Grouping_Images\using-span-tag_img1.png)
 
-### Databinding
+## Databinding
 
 The grouped ListBox can be also created via databinding which is explained below. The data items can be categorized by using a specific field in the ListBox widget.
 
-{% seealso%}Data Binding{% endseealso%}
+{% seealso %} [Data Binding](http://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
 
 The grouping will be defined based on the “groupBy” API in fields object.
 
@@ -117,5 +117,5 @@ The grouping will be defined based on the “groupBy” API in fields object.
 
 
 
-![Alt text](Grouping_Images\databinding_img1.png)
+![DataBinding Listbox](Grouping_Images\databinding_img1.png)
 
