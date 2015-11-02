@@ -102,7 +102,7 @@ Print dialog in Chrome browser
 
 By default, the Grid will print all records. To print current page, you need to set `pageSettings.printMode` as `ej.Grid.PrintMode.CurrentPage`.
 
-{%hightlight html%}
+{%highlight html%}
 <div id="Grid"></div>
 <script type="text/javascript">
 $("#Grid").ejGrid({
