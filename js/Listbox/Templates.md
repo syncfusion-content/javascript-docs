@@ -38,7 +38,7 @@ The ListBox widget’s appearance can be customized based on different needs usi
 
 N> _In the above code snippet, the image path (images/Employees) is given just for demonstration. Hence the images will not be displayed while using the above code._
 
-**See Also** [Data Binding](http://help.syncfusion.com/js/listbox/databinding).
+{% seealso %} [Data Binding](http://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
 
 Define the styles for the template as below.
 

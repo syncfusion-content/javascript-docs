@@ -155,7 +155,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 N> _In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API._
 
- See Also [Cross domain](http://help.syncfusion.com/js/grid/data-binding)
+ {% seealso %} [Cross domain](http://help.syncfusion.com/js/grid/data-binding) {% endseealso %}
 
 ![Alt text](Databinding_images\webapi_img1.png)
 
@@ -256,7 +256,7 @@ N> _The “itemRequestCount” property will work only when “virtualScrollMode
 
  In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle it using the “actionFailure” event. 
 
-**See Also** [actionComplete](http://help.syncfusion.com/js/api/ejlistbox#events:actioncomplete) and [actionSuccess]((http://help.syncfusion.com/js/api/ejlistbox#events:actionsuccess)
+{% seealso %} [actionComplete](http://help.syncfusion.com/js/api/ejlistbox#events:actioncomplete) and [actionSuccess](http://help.syncfusion.com/js/api/ejlistbox#events:actionsuccess) {% endseealso %}
 
 
 

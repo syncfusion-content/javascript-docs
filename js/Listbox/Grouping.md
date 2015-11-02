@@ -68,7 +68,7 @@ The header for each group can be defined using the “span” element”.
 
 The grouped ListBox can be also created via databinding which is explained below. The data items can be categorized by using a specific field in the ListBox widget.
 
-**See Also** [Data Binding](http://help.syncfusion.com/js/listbox/databinding).
+{% seealso %} [Data Binding](http://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
 
 The grouping will be defined based on the “groupBy” API in fields object.
 
