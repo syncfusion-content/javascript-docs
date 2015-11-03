@@ -138,7 +138,7 @@ public class JSXLExportController: ApiController
 
 ## Server dependencies
 
-Import and Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, which is available in the Essential Studio & Essential JavaScript builds. The full list of assemblies needed for Spreadsheet import and export is follows
+Import and Export Helper functions are available in the Assembly `Syncfusion.EJ.Export`, which is available in Essential Studio and Essential JavaScript builds. The full list of assemblies needed for Spreadsheet import and export is follows
 
 1. Syncfusion.EJ
 2. Syncfusion.EJ.Export
