@@ -193,9 +193,9 @@ $(function () {
 		columns : [
 			{ field : "OrderID", headerText : "Order ID" },
 			{ field : "EmployeeID", headerTemplateID : "Emp ID < span class = "e-userlogin e-icon employee" >  <  / span > " },
-			{ field: " Freight ", headerText: " Freight " },
-			{ field: " ShipCountry ", headerText: " Country " },
-			{ field: " ShipCity ", headerText: " City " }
+			{ field: "Freight", headerText: "Freight" },
+			{ field: "ShipCountry", headerText: "Country" },
+			{ field: "ShipCity", headerText: "City" }
 		]
 	});
 });

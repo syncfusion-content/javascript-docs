@@ -163,7 +163,7 @@ $("#Grid").ejGrid({
 		{field: "CustomerID",headerText: 'Customer ID',width: 90},
 		{field: "EmployeeID",headerText: 'Employee ID',textAlign: ej.TextAlign.Right,width: 90},
 		{field: "Freight",headerText: 'Freight',textAlign: ej.TextAlign.Right,width: 80,format: "{0:C}"},
-		{field: "ShipCountry",headerText: 'Ship Country',width: 90,}
+		{field: "ShipCountry",headerText: 'Ship Country',width: 90}
 		]
 
 });
