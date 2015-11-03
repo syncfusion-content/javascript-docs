@@ -20,22 +20,22 @@ Diagram allows you to pan the Diagram before loading, so that any desired region
 
 {% highlight js %}
 
-    $("#diagram").ejDiagram({
-        height: "400px",
-        width: "400px",
-        //Sets horizontal and vertical scroll offsets
-        scrollSettings: {
-            horizontalOffset: 100,
-            verticalOffset: 50,
-            zoomFactor: 0.2
-        },
+$("#diagram").ejDiagram({
+	height: "400px",
+	width: "400px",
+	//Sets horizontal and vertical scroll offsets
+	scrollSettings: {
+		horizontalOffset: 100,
+		verticalOffset: 50,
+		zoomFactor: 0.2
+	},
 
-        //Sets page settings
-        pageSettings: {
-            pageWidth: 500,
-            pageHeight: 500
-        }
-    });
+	//Sets page settings
+	pageSettings: {
+		pageWidth: 500,
+		pageHeight: 500
+	}
+});
 
 {% endhighlight %}
 
@@ -49,19 +49,18 @@ You can programmatically change the scroll offsets at runtime by using the clien
 
 {% highlight js %}
 
-            var diagram = $("#diagram").ejDiagram("instance");
-            var scrollSettings = {
-                //Sets scroll status
-                horizontalOffset: 200,
-                verticalOffset: 200,
-                
-                //Sets zoomFactor
-                zoomFactor: 0.5
-            }
+var diagram = $("#diagram").ejDiagram("instance");
+var scrollSettings = {
+	//Sets scroll status
+	horizontalOffset: 200,
+	verticalOffset: 200,
+	//Sets zoomFactor
+	zoomFactor: 0.5
+}
 
-            //Updates scroll settings
-            diagram.update({ scrollSettings: scrollSettings });
-            
+//Updates scroll settings
+diagram.update({ scrollSettings: scrollSettings });
+
 {% endhighlight %}
 
 ## AutoScroll 
@@ -79,12 +78,12 @@ The Autoscroll border is used to specify the maximum distance between the object
 
 {% highlight js %}
 
-      $("#Diagram").ejDiagram({      
-            pageSettings: {            
-                  // Specifies autoscroll border            
-                  autoScrollBorder: { left: 150, top: 15, right: 15, bottom: 15 }
-            }      
-      });
+$("#Diagram").ejDiagram({
+	pageSettings: {
+		// Specifies autoscroll border
+		autoScrollBorder: { left: 150, top: 15, right: 15, bottom: 15 }
+	}
+});
 
 {% endhighlight %}
 
@@ -102,12 +101,12 @@ The following code example illustrates how to specify the scroll limit.
 
 {% highlight js %}
 
-      $("#diagram").ejDiagram({      
-            pageSettings: {             
-            //Sets the scroll limit            
-            scrollLimit: "infinity"            
-            }      
-      });
+$("#diagram").ejDiagram({
+	pageSettings: {
+	//Sets the scroll limit
+	scrollLimit: "infinity"
+	}
+});
 
 {% endhighlight %}
 
@@ -116,18 +115,19 @@ The following code example illustrates how to specify the scroll limit.
 You can restrict scrolling beyond any particular rectangular area by using the `scrollableArea` property of scroll settings. To restrict scrolling beyond any custom region, you have to set the `scrollLimit` as "limited". The following code example illustrates how to customize scrollable area.
 
 {% highlight js %}
-   
-      $("#diagram").ejDiagram({      
-            pageSettings: {            
-                  //Sets scroll limit as limited            
-                  scrollLimit: "limited",            
-                  //Sets the limited scrollable area            
-                  scrollableArea: {            
-                        x: 0,            
-                        y: 0,            
-                        width: 500,            
-                        height: 500            
-                  }            
-            }      
-      });
+
+$("#diagram").ejDiagram({
+	pageSettings: {
+		//Sets scroll limit as limited
+		scrollLimit: "limited",
+		//Sets the limited scrollable area
+		scrollableArea: {
+			x: 0,
+			y: 0,
+			width: 500,
+			height: 500
+		}
+	}
+});
+
 {% endhighlight %}

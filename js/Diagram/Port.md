@@ -29,28 +29,29 @@ To add a connection port, you need to define the port object and add it to node'
 
 {% highlight js %}
 
-    var nodes = [{
-        width: 100, height: 100,
-        // Defines a collection of ports
-        ports: [    
-            //Defines JSON to create port    
-           {    
-            //Sets the port name    
-            name: "port1",    
-            // Specifies the port offset – fraction value relative         
-            to node bounds     
-            offset: {    
-                x: 0,    
-                y: 0.5    
-            },    
-        }]    
-    }];
-    
-    $("#diagram").ejDiagram({    
-        // Sets the nodes to Diagram model    
-        nodes: nodes,    
-    });
-    
+var nodes = [{
+	width: 100,
+	height: 100,
+	// Defines a collection of ports
+	ports: [
+		//Defines JSON to create port
+		{
+		//Sets the port name
+		name: "port1",
+		// Specifies the port offset – fraction value relative
+		to node bounds
+		offset: {
+			x: 0,
+			y: 0.5
+		},
+	}]
+}];
+
+$("#diagram").ejDiagram({
+	// Sets the nodes to Diagram model
+	nodes: nodes,
+});
+
 {% endhighlight %} 
 
 ### Add ports at runtime
@@ -59,24 +60,26 @@ You can add ports at runtime by using the client side method `addPorts`. The fol
 
 {% highlight js %}
 
-    // Defines a collection of ports that have to be added at runtime    
-    var ports = [{    
-        name: "port1",    
-        // Specifies the port offset – fraction value relative         
-        to node bounds – determines the position of port on node    
-        offset: {    
-            x: 0,    
-            y: 0.5    
-        }},    
-        { name: "port2",offset: {x: 1,y: 0.5 }},    
-        { name: "port3",offset: {x: 0.5,y: 0 }},    
-        { name: "port4",offset: {x: 0.5,y: 1 }}        
-    ];
-    
-    // Gets the instance for the Diagram    
-    var diagram = $("#diagram").ejDiagram("instance");    
-    // Adds the ports to the node of name "node"    
-    diagram.addPorts("node", ports)
+// Defines a collection of ports that have to be added at runtime
+var ports = [
+	{
+		name: "port1",
+		// Specifies the port offset – fraction value relative
+		to node bounds – determines the position of port on node
+		offset: {	
+			x: 0,	
+			y: 0.5
+		}
+	},
+	{ name: "port2",offset: {x: 1,y: 0.5 }},
+	{ name: "port3",offset: {x: 0.5,y: 0 }},
+	{ name: "port4",offset: {x: 0.5,y: 1 }}
+];
+
+// Gets the instance for the Diagram
+var diagram = $("#diagram").ejDiagram("instance");
+// Adds the ports to the node of name "node"
+diagram.addPorts("node", ports)
 
 {% endhighlight %}
 
@@ -85,22 +88,22 @@ You can add ports at runtime by using the client side method `addPorts`. The fol
 To explore the set of properties for defining a port, refer to [Port Properties](/js/api/ejDiagram "members:nodes-ports")
 
 ### Update Port at runtime
-     
+
 The client side API `updatePort` is used to update the ports at run time. The following code example illustrates how to change the port properties.
 
 {% highlight js %}
 
-    var diagram = $("#diagram").ejDiagram("instance");
-    var selectedObject = diagram.model.selectedItems.children[0];
-    var visibility = ej.datavisualization.Diagram.PortVisibility.Visible;
-    diagram.updatePort(selectedObject.name, selectedObject.ports[0], { fillColor: "red", visibility: visibility });
+var diagram = $("#diagram").ejDiagram("instance");
+var selectedObject = diagram.model.selectedItems.children[0];
+var visibility = ej.datavisualization.Diagram.PortVisibility.Visible;
+diagram.updatePort(selectedObject.name, selectedObject.ports[0], { fillColor: "red", visibility: visibility });
 
 {% endhighlight %}
 
-## Connect with ports    
+## Connect with ports
 
 Connector’s 'sourcePort' and 'targetPort' properties allow to create connections between some specific points of source/target nodes. 
-For more information about creating connections with port, refer to [Connections with ports](/js/Diagram/Connector "Connections with ports")  
+For more information about creating connections with port, refer to [Connections with ports](/js/Diagram/Connector "Connections with ports")
 
 ## Appearance 
 
@@ -111,27 +114,25 @@ The following code illustrates how to change the appearance of port.
 
 {% highlight js %}
 
-    var ports = [{     
-        // Specifies the port position    
-        offset: {    
-            x: 1,    
-            y: 0.5    
-        },
-        //Defines the shape of port     
-        shape: ej.datavisualization.Diagram.PortShapes.Circle ,
-                        
-        //Specifies the port visibility     
-        visibility: true,    
-        
-        //Customizes the appearance    
-        fillColor: "yellow",  
-        size: 12,    
-        borderColor: "black",      
-        borderWidth: 2    
-    }];
-    
-    var nodes = [{ name: "node", ports: ports }];
-   
+var ports = [{
+	// Specifies the port position
+	offset: {
+		x: 1,
+		y: 0.5
+	},
+	//Defines the shape of port
+	shape: ej.datavisualization.Diagram.PortShapes.Circle,
+	//Specifies the port visibility
+	visibility: true,
+	//Customizes the appearance
+	fillColor: "yellow",
+	size: 12,
+	borderColor: "black",
+	borderWidth: 2
+}];
+
+var nodes = [{ name: "node", ports: ports }];
+
 {% endhighlight %}
 
 ![](/js/Diagram/Port_images/Port_img2.png)
@@ -139,20 +140,3 @@ The following code illustrates how to change the appearance of port.
 ## Constraints
 
 The `constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Constraints](/js/Diagram/Constraints "Port Constraints")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 

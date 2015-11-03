@@ -14,6 +14,9 @@ To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-ope
 ## DiagramConstraints 
 Diagram constraints allow to enable or disable the following behaviors. 
 
+## DiagramConstraints
+Diagram constraints allow to enable or disable the following behaviors.
+
 * Page Editing
 * Line Bridging
 * Zoom and Pan
@@ -23,17 +26,17 @@ For more information about Diagram contraints, refer to [Diagram Constraints](/j
 
 **Example**
 
-The following example illustrates how to disable page editing. 
+The following example illustrates how to disable page editing.
 
 {% highlight js %}
 
-    var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
-    //Disables PageEditing 
-    $("#diagram").ejDiagram({
-        constraints: DiagramConstraints.Default &~ DiagramConstraints.PageEditable
-    });
+var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
+//Disables PageEditing
+$("#diagram").ejDiagram({
+	constraints: DiagramConstraints.Default &~ DiagramConstraints.PageEditable
+});
 
-{% endhighlight %} 
+{% endhighlight %}
 
 ## NodeConstraints
 
@@ -47,7 +50,7 @@ NodeConstraints allows to enable or disable the following behaviors of node.
 * Connect
 * Drop shadow
 * Drag label
-* Define tooltip 
+* Define tooltip
 
 For more information about node contraints, refer to [Node Constraints](/js/api/global "NodeConstraints")
 
@@ -57,19 +60,18 @@ The following code illustrates how to disable rotation.
 
 {% highlight js %}
 
-    //Disables rotation
-    var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
-    var nodes = [
-        {
-            name: "node",
-            constraints: NodeConstraints.Default & ~NodeConstraints.Rotate
-        }];
-        
-    $("#diagram").ejDiagram({
-        nodes: nodes,
-    });
+//Disables rotation
+var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
+var nodes = [{
+	name: "node",
+	constraints: NodeConstraints.Default & ~NodeConstraints.Rotate
+}];
 
-{% endhighlight %} 
+$("#diagram").ejDiagram({
+	nodes: nodes,
+});
+
+{% endhighlight %}
 
 ## ConnectorConstraints
 
@@ -79,8 +81,8 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 * Deletion
 * Drag
 * Segment editing
-* Define tooltip 
-* Bridging 
+* Define tooltip
+* Bridging
 * Label dragging
 
 For more information about connector contraints, refer to [Connector Constraints](/js/api/global "ConnectorConstraints")
@@ -88,23 +90,23 @@ For more information about connector contraints, refer to [Connector Constraints
 **Example**
 
 The following code illustrates how to disable selection.
- 
+
 {% highlight js %}
 
-    //Disables selection 
-    var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
-    var connectors = [{
-        name: "connector",
-        constraints: ConnectorConstraints.Default & ~ ConnectorConstraints.Select
-    }];
+//Disables selection
+var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
+var connectors = [{
+	name: "connector",
+	constraints: ConnectorConstraints.Default & ~ ConnectorConstraints.Select
+}];
 
-    $("#diagram").ejDiagram({
-        connectors: connectors,
-    });
+$("#diagram").ejDiagram({
+	connectors: connectors,
+});
 
-{% endhighlight %} 
+{% endhighlight %}
 
-## PortConstraints  
+## PortConstraints
 
 You can enable or disable certain behaviors of Port. They are as follows.
 
@@ -114,24 +116,24 @@ For more information about port contraints, refer to [Port Constraints](/js/api/
 
 **Example**
 
-The following code illustrates how to disable creating connections with a port.  
+The following code illustrates how to disable creating connections with a port.
 
 {% highlight js %}
 
-    var PortConstraints = ej.datavisualization.Diagram.PortConstraints;
-    var nodes = [{
-        name: "node",
-        ports: [{
-            //Sets the port as not connectable
-            constraints: PortConstraints.None
-        }]
-    }];
-    
-    $("#diagram").ejDiagram({
-        nodes: nodes,
-    });
+var PortConstraints = ej.datavisualization.Diagram.PortConstraints;
+var nodes = [{
+	name: "node",
+	ports: [{
+		//Sets the port as not connectable
+		constraints: PortConstraints.None
+	}]
+}];
 
-{% endhighlight %} 
+$("#diagram").ejDiagram({
+	nodes: nodes,
+});
+
+{% endhighlight %}
 
 ## SelectorConstraints
 Selector visually represents the selected elements with certain editable thumbs. The visibility of the thumbs can be controlled with selector constraints. The part of selector is categorized as follows.
@@ -139,28 +141,28 @@ Selector visually represents the selected elements with certain editable thumbs.
 * Resizer
 * Rotator
 * User handles
- 
+
 For more information about Selector contraints, refer to [Selector Constraints](/js/api/global "SelectorConstraints")
 
 **Example**
 
-The following code illustrates how to hide rotator. 
+The following code illustrates how to hide rotator.
 
 {% highlight js %}
 
-    var SelectorConstraints = ej.datavisualization.Diagram.SelectorConstraints;
-    $("#diagram").ejDiagram({
-        selectedItems: {
-        //Hides rotator
-            constraints:SelectorConstraints.All & ~ SelectorConstraints.Rotator
-        }
-    });
+var SelectorConstraints = ej.datavisualization.Diagram.SelectorConstraints;
+$("#diagram").ejDiagram({
+	selectedItems: {
+		//Hides rotator
+		constraints:SelectorConstraints.All & ~ SelectorConstraints.Rotator
+	}
+});
 
-{% endhighlight %} 
+{% endhighlight %}
 
-## SnapConstraints 
+## SnapConstraints
 
-Snap Constraints control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.  
+Snap Constraints control the visibility of gridlines and enable/disable snapping. Snap constraints allow to set the following behaviors.
 
 * Show only horizontal or vertical gridlines
 * Show both horizontal and vertical gridlines
@@ -175,14 +177,14 @@ The following code illustrates how to show only horizontal gridlines.
 
 {% highlight js %}
 
-    $("#diagram").ejDiagram({    
-        snapSettings: {    
-            //Shows horizontal gridlines    
-            snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines    
-        }    
-    });
+$("#diagram").ejDiagram({
+	snapSettings: {
+		//Shows horizontal gridlines
+		snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowHorizontalLines
+	}
+});
 
-{% endhighlight %} 
+{% endhighlight %}
 
 ## Inherit behaviors
 
@@ -192,24 +194,26 @@ The following code example illustrates how to inherit the line bridging behavior
 
 {% highlight js %}
 
-        // Enables/disables line bridging based on the Diagram constraints 
-        var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
-        var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
-        var connectors = [{
-            name: "connector", sourcePoint: { x: 100, y: 100 }, targetPoint: { x: 200, y: 200 },
+// Enables/disables line bridging based on the Diagram constraints
+var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
+var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
+var connectors = [{
+	name: "connector",
+	sourcePoint: { x: 100, y: 100 },
+	targetPoint: { x: 200, y: 200 },
 
-            //Sets to inherit bridging from model
-            constraints: ConnectorConstraints.Default | ConnectorConstraints.InheritBridging
-        }];
+	//Sets to inherit bridging from model
+	constraints: ConnectorConstraints.Default | ConnectorConstraints.InheritBridging
+}];
 
-        $("#diagram").ejDiagram({
-            connectors: connectors,
+$("#diagram").ejDiagram({
+	connectors: connectors,
 
-            //Enables line bridging for all connectors
-            constraints: DiagramConstraints.Default | DiagramConstraints.Bridging
-        });
+	//Enables line bridging for all connectors
+	constraints: DiagramConstraints.Default | DiagramConstraints.Bridging
+});
 
-{% endhighlight %} 
+{% endhighlight %}
 
 
 ## Bitwise Operations
@@ -222,9 +226,9 @@ You can **add** or **enable** multiple values at a time by using **Bitwise*
 
 {% highlight js %}
 
-    node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.Rotate;
+node.constraints = ej.datavisualization.Diagram.NodeConstraints.Select | ej.datavisualization.Diagram.NodeConstraints.Rotate;
 
-{% endhighlight %} 
+{% endhighlight %}
 
 In the above example, you can do both the selection and rotation.
 
@@ -234,9 +238,9 @@ You can **remove** or **disable** values by using **Bitwise** ‘&~’ (XO
 
 {% highlight js %}
 
-    node.constraints = node.constraints &~ (ej.datavisualization.Diagram.NodeConstraints.Rotate);
+node.constraints = node.constraints &~ (ej.datavisualization.Diagram.NodeConstraints.Rotate);
 
-{% endhighlight %} 
+{% endhighlight %}
 
 In the above example, **Rotation** is disabled but other constraints are enabled.
 
@@ -246,11 +250,8 @@ You can check any value by using **Bitwise** ‘&’ (AND) **operator**.
 
 {% highlight js %}
 
-    if ((node.constraints & (ej.datavisualization.Diagram.NodeConstraints.Rotate)) == (ej.datavisualization.Diagram.NodeConstraints.Rotate));
+if ((node.constraints & (ej.datavisualization.Diagram.NodeConstraints.Rotate)) == (ej.datavisualization.Diagram.NodeConstraints.Rotate));
 
-{% endhighlight %} 
+{% endhighlight %}
 
 In the above example, you can check whether the rotate constraints are enabled in a Node. When Node constraints have rotate constraints, the expression returns a rotate constraint.
-
-
-
