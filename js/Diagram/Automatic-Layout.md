@@ -96,7 +96,7 @@ N> You can ignore a particular Node from layout arrangement by setting its **exc
 
 The Radial Tree layout arranges nodes on a virtual concentric circles around a root node. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. When no root node is set, the algorithm automatically considers one of the Diagram nodes as the root node.
 
-To arrange nodes in a radial tree structure, you need to set the `type` property of layout as radial tree. The following code illustrates how to arrange the nodes in a radial tree structure.
+To arrange nodes in a radial tree structure, you need to set the `layout.type` as `radialtree`. The following code illustrates how to arrange the nodes in a radial tree structure.
 
 {% highlight js %}
 
@@ -178,7 +178,7 @@ $("#diagram").ejDiagram({
 
 ## Organizational Chart
 
-An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `type` property of layout should be set as organizatoinal chart.
+An **organizational chart** is a Diagram that displays the structure of an organization and relationships. To create an organizational chart, `layout.type` should be set as `organizatoinalchart`.
 The following code example illustrates how to create an organizational chart.
 
 {% highlight js %}
@@ -301,7 +301,7 @@ The following table illustrates the properties that "options" argument takes.
 
 Property|Description|Default Value
 ---|---|---
-options.children|Contains the list of child nodes.Children collection can be modified.|Array of child nodes
+options.children|Contains the list of child nodes. Children collection can be modified.|Array of child nodes
 options.assistants|By default, the collection is empty. When any of the child nodes have to be set as "Assistant", you can remove from children collection and have to insert into assistants collection. |Empty array
 options.orientation|Gets or sets the organizational chart orientation. |ChartOrientation.Vertical
 options.type|Gets or sets the chart organizational chart type |For horizontal chart orientation:ChartType.Center For Vertical chart orientation:ChartType.Alternate
@@ -401,7 +401,7 @@ $("#diagram").ejDiagram({
 
 ### Assistant
 
-**Assistants** are child item that have a different relationship with the parent node. They are laid out in a dedicated part of the tree. You can specify a node as an assistant of its parent by adding it to **assistants** property of the argument "options".
+**Assistants** are child item that have a different relationship with the parent node. They are laid out in a dedicated part of the tree. You can specify a node as an assistant of its parent by adding it to `assistants` property of the argument "options".
 
 The following code example illustrates how to add assistants to layout.
 
@@ -478,7 +478,7 @@ To explore layout properties, refer to [Layout Properties](/js/api/ejDiagram "me
 
 ### Layout Orientation
 
-Diagram provides support to customize the orientation of layout. You can set the desired orinetation to the `orientation` property of layout. For more information about orientation, refer to [Layout Orientations](/js/api/global "LayoutOrientations")
+Diagram provides support to customize the orientation of layout. You can set the desired orinetation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/js/api/global "LayoutOrientations")
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 
@@ -521,7 +521,7 @@ $("#diagram").ejDiagram({
 
 ### Fixed Node
 
-Layout provides support to arrange the nodes with reference to the position of a fixed node and the fixed node has to be set to the`fixedNode` propery of layout.
+Layout provides support to arrange the nodes with reference to the position of a fixed node and the fixed node has to be set to the `layout.fixedNode`.
 This is helpful when you try to expand/collapse a node. It might be expected that the position of the double-clicked node should not be changed.
 
 {% highlight js %}
@@ -585,7 +585,7 @@ $("#DiagramContent").ejDiagram({
 
 ### Expand and collapse
 
-Diagram allows to expand/collapse the sub trees of a layout. `isExpanded` property of node allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node.
+Diagram allows to expand/collapse the sub trees of a layout. `node.isExpanded` allows you to expand/collapse its children. The following code example shows how to expand/collapse the children of a node.
 
 {% highlight js %}
 

@@ -16,11 +16,11 @@ Connectors are objects used to create link between two points, nodes or ports to
 ## Create Connector
 
 Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of segments.
-To explore the properties of a connector, refer to [Connector Properties](/js/api/ejDiagram "members:connectors").
+To explore the properties of a `connector`, refer to [Connector Properties](/js/api/ejDiagram "members:connectors").
 
 ### Add connectors through connectors collection
 
-The `sourcePoint` and `targetPoint` properties of connector allow you to define the end points of a connector. The following code example illustrates how to add a connector through connector collection.
+The `sourcePoint` and `targetPoint` properties of connector allow you to define the end points of a `connector`. The following code example illustrates how to add a connector through connector collection.
 
 {% highlight js %}
 
@@ -341,7 +341,7 @@ N> Overlapping with source and target nodes are only avoided. Other nodes are no
 
 Bezier segments are used to create curve segments and the curves are configurable either with the control points or with vectors.
 
-To create a bezier segment, the `type` property of segment is set as "bezier". The following code example illustrates how to create a default Bezier segment.
+To create a bezier segment, the `segment.type` is set as `bezier`. The following code example illustrates how to create a default Bezier segment.
 
 {% highlight js %}
 
@@ -419,7 +419,7 @@ connectors.push(connector);
 
 ### Complex segments
 
-Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to`segments` collection of connector. The Following code example illustrates how to create a connector with multiple segments.
+Multiple segments can be defined one after another. To create a connector with multiple segments, define and add the segments to `connector.segments` collection. The Following code example illustrates how to create a connector with multiple segments.
 
 {% highlight js %}
 
@@ -623,7 +623,7 @@ var connectors = [
 ## Bridging
 
 Line Bridging creates a bridge for lines to smartly cross over other lines, at points of intersection. When two line connectors meet each other, the line with the higher z-order (upper one) draws an arc over the underlying connector.
-Bridging can be enabled/disabled either with the `constraints` property of connector or with Diagram `constraints`. The following code example illustrates how to enable line bridging.
+Bridging can be enabled/disabled either with the `connector.constraints` or `diagram.constraints`. The following code example illustrates how to enable line bridging.
 
 {% highlight js %}
 
@@ -722,7 +722,7 @@ var connectors = [{
 	lineColor: "green",
 	//Line style
 	lineDashArray: "2,2",
-	//Opiquity of the line
+	//Opacity of the line
 	opacity: 0.8,
 	//Defined in the decorator appearance section
 	targetDecorator: targetDecorator

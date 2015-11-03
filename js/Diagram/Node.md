@@ -56,7 +56,7 @@ $("#diagram").ejDiagram({
 
 ### Add node at runtime
 
-Nodes can be added at runtime by using public method, `add`. The following code illustrates how to add a node by using 'add' method.
+Nodes can be added at runtime by using public method, `add`. The following code illustrates how to add a node.
 
 {% highlight js %}
 // Defines JSON to create a node

@@ -143,7 +143,7 @@ diagram.ungroup();
 
 ### bringToFront Command
 
-The 'bringToFront' command visually brings the selected element to front over all the other overlapped elements. The following code illustrates how to execute the bringToFront command.
+The `bringToFront` command visually brings the selected element to front over all the other overlapped elements. The following code illustrates how to execute the bringToFront command.
 
 {% highlight js %}
 
@@ -156,7 +156,7 @@ diagram.bringToFront();
 
 ### sendToBack Command
 
-The 'sendToBack' command visually moves the selected element behind all the other overlapped elements. The following code illustrates how to execute the sendToBack command.
+The `sendToBack` command visually moves the selected element behind all the other overlapped elements. The following code illustrates how to execute the sendToBack command.
 
 {% highlight js %}
 
@@ -169,7 +169,7 @@ diagram.sendToBack();
 
 ### moveForward Command
 
-The 'moveForward' command visually moves the selected element over the nearest overlapping element. The following code illustrates how to execute the moveForward Command.
+The `moveForward` command visually moves the selected element over the nearest overlapping element. The following code illustrates how to execute the moveForward Command.
 
 {% highlight js %}
 
@@ -182,7 +182,7 @@ diagram.moveForward();
 
 ### sendBackward Command
 
-The 'sendBackward' command visually moves the selected element behind the underlying element. The following code illustrates how to execute the sendBackward command.
+The `sendBackward` command visually moves the selected element behind the underlying element. The following code illustrates how to execute the sendBackward command.
 
 {% highlight js %}
 
@@ -345,7 +345,11 @@ Command Manager provides support to define custom commands. The custom commands 
 
 ### Custom command
 
-To define a custom command, you need to specify the combination of key gestures(`gesture`), a method to define whether the command can be executed at the moment(`canExecute`) and a method to execute the command(`execute`).
+To define a custom command, you need to specify following properties.
+* `execute`: a method to be execute.
+* `canExecute`: a method to define whether the command can be executed at the moment. 
+* `gesture`: the combination of key gestures.
+
 To explore the properties of custom commands, refer to [Commands](/js/api/diagram "commandManager:commands")
 
 The following code example illustrates how to define a custom command.
@@ -387,7 +391,6 @@ commandManager: {
 When any one of the default commands is not desired, they can be disabled. To change the functionality of a specific command, the command can be completely modified.
 
 The following code example illustrates how to disable a command and how to modify the in-built commands.
-
 
 {% highlight js %}
 
