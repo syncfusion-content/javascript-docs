@@ -55,7 +55,7 @@ The following properties are not included while maintaining Grid state in local 
 * editSettings.showAddNewRow 
 * contextMenuSettings.enableContextMenu
 
-I> [The given excluded properties can be included in persist state using `_ignoreOnPersist` in grid prototype.] 
+I> The given excluded properties can be included in persist state using `_ignoreOnPersist` in grid prototype. 
 
 
 
