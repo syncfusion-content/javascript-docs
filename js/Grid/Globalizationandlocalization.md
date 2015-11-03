@@ -140,11 +140,11 @@ PDF Export<br/><br/></td></tr>
 <tr>
 <td>
 StringMenuOptions<br/><br/></td><td>
-[{<br/><br/>text: "StartsWith",<br/><br/>value: "StartsWith"<br/><br/>},<br/><br/>{<br/><br/>text: "EndsWith",<br/><br/>value: "EndsWith"<br/><br/>},<br/><br/>{<br/><br/>text: "Contains",<br/><br/>value: "Contains"<br/><br/>},<br/><br/>{<br/><br/>text: "Equal",<br/><br/>value: "Equal"<br/><br/>},<br/><br/>{<br/><br/>text: "NotEqual",<br/><br/>value: "NotEqual"<br/><br/>}]<br/><br/></td></tr>
+[<br/><br/>{text: "StartsWith",value: "StartsWith"},<br/><br/>{text: "EndsWith",value: "EndsWith"},<br/><br/>{text: "Contains",value: "Contains"},<br/><br/>{text: "Equal",value: "Equal"},<br/><br/>{text: "NotEqual",value: "NotEqual"}<br/><br/>]<br/><br/></td></tr>
 <tr>
 <td>
 NumberMenuOptions<br/><br/></td><td>
-[{<br/><br/>text: "LessThan",<br/><br/>value: "LessThan"<br/><br/>},<br/><br/>{<br/><br/>text: "GreaterThan",<br/><br/>value: "GreaterThan"<br/><br/>},<br/><br/>{<br/><br/>text: "LessThanOrEqual",<br/><br/>value: "LessThanOrEqual"<br/><br/>},<br/><br/>{<br/><br/>text: "GreaterThanOrEqual",<br/><br/>value: "GreaterThanOrEqual"<br/><br/>},<br/><br/>{<br/><br/>text: "Equal",<br/><br/>value: "Equal"<br/><br/>},<br/><br/>{<br/><br/>text: "NotEqual",<br/><br/>value: "NotEqual"<br/><br/>}]<br/><br/></td></tr>
+[<br/><br/>{text: "LessThan",value: "LessThan"},<br/><br/>{text: "GreaterThan",value: "GreaterThan"},<br/><br/>{text: "LessThanOrEqual",value: "LessThanOrEqual"},<br/><br/>{text: "GreaterThanOrEqual",value: "GreaterThanOrEqual"},<br/><br/>{text: "Equal",value: "Equal"},<br/><br/>{text: "NotEqual",value: "NotEqual"}]<br/><br/></td></tr>
 <tr>
 <td>
 PredicateAnd<br/><br/></td><td>
@@ -308,7 +308,8 @@ columns:
 ![](Globalizationandlocalization._images/Globalizationandlocalization._img1.png)
 
 
-I> [You need to change pager locale in `ej.Pager.locale` object.]
+I> You need to change pager locale in `ej.Pager.locale` object.
+
 
 ## Excel-Filter Localization
 
@@ -399,15 +400,15 @@ Date Filter<br/><br/></td></tr>
 <tr>
 <td>
 StringMenuOptions<br/><br/></td><td>
-[<br/><br/>{ <br/><br/>text:"Equal",<br/><br/>value:"equal"<br/><br/>},<br/><br/>{ <br/><br/>text:"Not Equal", <br/><br/>value:"notequal"<br/><br/>},<br/><br/>{ <br/><br/>text:"Starts With",<br/><br/>value:"startswith"<br/><br/>}, <br/><br/>{ <br/><br/>text:"Ends With",<br/><br/>value:"endswith"<br/><br/>},<br/><br/>{ <br/><br/>text:"Contains",<br/><br/>value:"contains"<br/><br/>}, <br/><br/>{<br/><br/>text:"Custom Filter", <br/><br/>value:"customfilter"<br/><br/>}],<br/><br/></td></tr>
+[<br/><br/>{ text:"Equal",value:"equal"},<br/><br/>{ text:"Not Equal", value:"notequal"},<br/><br/>{ text:"Starts With",value:"startswith"}, <br/><br/>{ text:"Ends With",value:"endswith"},<br/><br/>{ text:"Contains",value:"contains"}, <br/><br/>{text:"Custom Filter", value:"customfilter"}],<br/><br/></td></tr>
 <tr>
 <td>
 NumberMenuOptions<br/><br/></td><td>
-[{<br/><br/>text:"Equal",<br/><br/>value:"equal"<br/><br/>}, <br/><br/>{<br/><br/>text:"Not Equal", <br/><br/>value:"notequal"<br/><br/>}, <br/><br/>{ <br/><br/>text:"Less Than",<br/><br/>value:"lessthan"<br/><br/>}, <br/><br/>{<br/><br/>text:"Less Than Or Equal", <br/><br/>value:"lessthanorequal"<br/><br/>}, <br/><br/>{<br/><br/>text:"Greater Than", <br/><br/>value:"greaterthan"<br/><br/>},<br/><br/>{ <br/><br/>text:"Greater Than Or Equal", <br/><br/>value:"greaterthanorequal"<br/><br/>}, <br/><br/>{ <br/><br/>text:"Between",<br/><br/>value:"between"<br/><br/>},<br/><br/>{ <br/><br/>text:"Custom Filter", <br/><br/>value:"customfilter"<br/><br/>}]<br/><br/></td></tr>
+[<br/><br/>{text:"Equal",value:"equal"}, <br/><br/>{text:"Not Equal",value:"notequal"}, <br/><br/>{ text:"Less Than",value:"lessthan"}, <br/><br/>{text:"Less Than Or Equal", value:"lessthanorequal"}, <br/><br/>{text:"Greater Than",value:"greaterthan"},<br/><br/>{ text:"Greater Than Or Equal", value:"greaterthanorequal"}, <br/><br/>{ text:"Between",value:"between"},<br/><br/>{ text:"Custom Filter", value:"customfilter"}]<br/><br/></td></tr>
 <tr>
 <td>
 DateMenuOptions<br/><br/></td><td>
-[<br/><br/>{ <br/><br/>text:"Equal", <br/><br/>value:"equal"<br/><br/>}<br/><br/>, { <br/><br/>text:"Not Equal",<br/><br/>value:"notequal"<br/><br/>},<br/><br/>{ <br/><br/>text:"Less Than",<br/><br/>value:"lessthan"<br/><br/>}, <br/><br/>{<br/><br/>text:"Less Than Or Equal",<br/><br/>value:"lessthanorequal"<br/><br/>}, <br/><br/>{ <br/><br/>text:"Greater Than",<br/><br/>value:"greaterthan"<br/><br/>},<br/><br/>{<br/><br/>text:"Greater Than Or Equal", <br/><br/>value:"greaterthanorequal"<br/><br/>}, <br/><br/>{ <br/><br/>text:"Between",<br/><br/>value:"between"<br/><br/>},<br/><br/>{ <br/><br/>text:"Custom Filter", <br/><br/>value:"customfilter"<br/><br/>}]<br/><br/></td></tr>
+[<br/><br/>{ text:"Equal", value:"equal"}<br/><br/>, {text:"Not Equal",value:"notequal"},<br/><br/>{text:"Less Than",>value:"lessthan"}, <br/><br/>{text:"Less Than Or Equal",value:"lessthanorequal"}, <br/><br/>{text:"Greater Than",value:"greaterthan"},<br/><br/>{text:"Greater Than Or Equal", value:"greaterthanorequal"}, <br/><br/>{ text:"Between",value:"between"},<br/><br/>{ text:"Custom Filter", value:"customfilter"}]<br/><br/></td></tr>
 <tr>
 <td>
 Top10MenuOptions<br/><br/></td><td>
@@ -517,7 +518,7 @@ Please find the code
 
 ## Globalization
 
-[`jQuery.globalize`]([https://github.com/jquery/globalize/tree/v0.1.1](https://github.com/jquery/globalize/tree/v0.1.1# "") library is used to globalize numeric values in Grid control using [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "") property in [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "")`. Globalize values will be automatically used when `[locale](http://help.syncfusion.com/js/api/ejgrid#members:locale "") property is set with locale string value for example `en-US`.
+[`jQuery.globalize`](https://github.com/jquery/globalize/tree/v0.1.1) library is used to globalize numeric values in Grid control using [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "format") property in [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). Globalize values will be automatically used when [`locale`](http://help.syncfusion.com/js/api/ejgrid#members:locale "locale") property is set with locale string value for example `en-US`.
 
 {% highlight html %}
 
@@ -544,13 +545,13 @@ Please find the code
 
 ![](Globalizationandlocalization._images/Globalizationandlocalization._img3.png)
 
-I>[ In the above example, you need to use `globalize.culture.de-DE` script file to globalize values. ]
+I> In the above example, you need to use `globalize.culture.de-DE` script file to globalize values. 
 
-{% seealso %} [localization]( [http://helpjs.syncfusion.com/js/localization](http://helpjs.syncfusion.com/js/localization# "")) {% endseealso %}
+{% seealso %} [localization](http://helpjs.syncfusion.com/js/localization) {% endseealso %}
 
 ## Right to Left – RTL
 
-By default, Grid render its text and layout from left to right. To customize Grid’s direction, you can change direction from LTR to RTL by using [`enableRTL`](http://help.syncfusion.com/js/api/ejgrid#members:enablertl "") as true.
+By default, Grid render its text and layout from left to right. To customize Grid’s direction, you can change direction from LTR to RTL by using [`enableRTL`](http://help.syncfusion.com/js/api/ejgrid#members:enablertl "enableRTL") as true.
 
 {% highlight html %}
 

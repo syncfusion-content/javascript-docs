@@ -120,26 +120,26 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-![](ContextMenu_images/ContextMenu_img1.png)
+![](Context-Menu_images/ContextMenu_img1.png)
 {:catption}
 
 Contextmenu at header
 
-![](ContextMenu_images/ContextMenu_img2.png)
+![](Context-Menu_images/ContextMenu_img2.png)
 {:catption}
 
 Contextmenu at body
 
-![](ContextMenu_images/ContextMenu_img3.png)
+![](Context-Menu_images/ContextMenu_img3.png)
 {:caption}
 
 Contextmenu at pager
 
-I>[`allowGrouping`, `allowSorting` should be enabled to perform default context menu actions in Grid header. `allowEditing`, `allowDeleting` and `allowAdding` should be enabled to perform default actions in body. ]____
+N> `allowGrouping`, `allowSorting` should be enabled to perform default context menu actions in Grid header. `allowEditing`, `allowDeleting` and `allowAdding` should be enabled to perform default actions in body.
 
 ## Custom Context Menu
 
-Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`toolbarSettings.customToolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-customtoolbaritems "") and bind Actions for this customized context menu in `contextClick` event.
+Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`toolbarSettings.customToolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-customtoolbaritems) and bind Actions for this customized context menu in `contextClick` event.
 
 
 {% highlight html %}
@@ -175,6 +175,6 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 
-![](ContextMenu_images/ContextMenu_img4.png)
+![](Context-Menu_images/ContextMenu_img4.png)
 
 

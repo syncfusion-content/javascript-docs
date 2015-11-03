@@ -26,7 +26,8 @@ There are four types of filtering available in menu filter, they are
 
 The corresponding filter menu is opened based on the column type.
 
-T> [1. Need to specify the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-type "") of column when first record data value is empty or null otherwise the filter menu is not opened. <BR> 2. The default filter type is Filter bar when `allowFiltering` is enabled and [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "") is not set.]
+N> 1. Need to specify the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-type "type") of column when first record data value is empty or null otherwise the filter menu is not opened. 
+N> 2. The default filter type is Filter bar when `allowFiltering` is enabled and [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") is not set.
 
 The following code example describes the above behavior.
 
@@ -37,7 +38,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowFiltering : true,
@@ -53,11 +54,11 @@ The following output is displayed as a result of the above code example.
 
 ## Menu filter
 
-[Menu filtering](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "") can be enabled by setting [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "") as `menu` in the [`filterSettings`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings "") property. 
+[Menu filtering](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "Menu filtering") can be enabled by setting [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") as `menu` in the [`filterSettings`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings "filterSettings") property. 
 
-There is an option to show or hide the additional filter options in the menu by setting [`filterSettings.showPredicate`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-showpredicate "") as `true` or `false` respectively.
+There is an option to show or hide the additional filter options in the menu by setting [`filterSettings.showPredicate`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-showpredicate "filterSettings.showPredicate") as `true` or `false` respectively.
 
-I>  [For [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "") property you can assign either `string` value (“menu”) or `enum` value (`ej.Grid.FilterType.Menu`)]
+N> For [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") property you can assign either `string` value (“menu”) or `enum` value (`ej.Grid.FilterType.Menu`).
 
 The following code example describes the above behavior.
 
@@ -68,7 +69,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowFiltering : true,
@@ -102,7 +103,7 @@ The following output is displayed as a result of the above code example.
 
 ## Excel-like filter
 
-You can enable [excel menu](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "") by setting  [`filterSettings.filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "") as `excel`. The excel filter menu contains an option such as Sorting, Clear filter, submenu for the advanced filter options.
+You can enable [excel menu](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "excel menu") by setting  [`filterSettings.filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") as `excel`. The excel filter menu contains an option such as Sorting, Clear filter, submenu for the advanced filter options.
 
 The following code example describes the above behavior.
 
@@ -113,7 +114,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowSorting : true,
@@ -135,9 +136,10 @@ Checkbox list generation:
 
 By default, the checkbox list generated from distinct values of the filter column from data source which give easy option search and select the required items.
 
-Also on checkbox list generation, if the number of distinct values are higher than 1000, the excel filter will display only first 1000 values to ensure the best performance on rendering and search. However this limit customized to according to your requirement by setting [`filterSettings.maxFilterChoices`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-maxfilterchoices "") with required limit in integer.
+Also on checkbox list generation, if the number of distinct values are higher than 1000, the excel filter will display only first 1000 values to ensure the best performance on rendering and search. However this limit customized to according to your requirement by setting [`filterSettings.maxFilterChoices`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-maxfilterchoices "filterSettings.maxFilterChoices") with required limit in integer.
 
-T> [1. Using filter events you can change the datasource of the checkbox list. <BR> 2. [`ej.Query`](http://help.syncfusion.com/js/api/ejquery# "") of checkbox list can also be changed using filter events.]
+N> 1. Using filter events you can change the datasource of the checkbox list. 
+N> 2. [`ej.Query`](http://help.syncfusion.com/js/api/ejquery# "ej.Query") of checkbox list can also be changed using filter events.
 
 The following code example describes the above behavior.
 
@@ -148,7 +150,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowSorting : true,
@@ -166,7 +168,7 @@ The following output is displayed as a result of the above code example.
 
 ### Case Sensitivity
 
-To perform filter operation with case sensitive in excel styled filter menu mode by setting [`enableCaseSensitivity`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-enablecasesensitivity "") as `true`.
+To perform filter operation with case sensitive in excel styled filter menu mode by setting [`enableCaseSensitivity`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-enablecasesensitivity "enableCaseSensitivity") as `true`.
 
 The following code example describes the above behavior.
 
@@ -177,7 +179,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowFiltering : true,
@@ -194,7 +196,7 @@ The following output is displayed as a result of the above code example.
 
 ## Filter bar
 
-[Filter bar](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "") row is located next to column header row. It enables you to filter the records with different expressions depending upon the column type. To show the filter bar row, set the [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "") as `filterbar`.
+[Filter bar](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "Filter bar") row is located next to column header row. It enables you to filter the records with different expressions depending upon the column type. To show the filter bar row, set the [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") as `filterbar`.
 
 List of Filter bar Expressions:
 
@@ -272,7 +274,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowFiltering : true,
@@ -289,16 +291,16 @@ The following output is displayed as a result of the above code example.
 
 Filter bar modes:
 
-This specifies the grid to starts the filter action while typing in the filter bar or after pressing the enter key based on [`filterBarMode`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filterbarmode "").There are two types of [`filterBarModes`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filterbarmode ""), they are
+This specifies the grid to starts the filter action while typing in the filter bar or after pressing the enter key based on [`filterBarMode`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filterbarmode "filterBarMode").There are two types of [`filterBarMode`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filterbarmode "filterBarMode"), they are
 
 1. OnEnter
 2. Immediate
 
-I> [For [`filterBarMode`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filterbarmode "") property you can assign either `string` value (onenter) or `enum` value (`ej.Grid.FilterBarMode.OnEnter`)]
+N> For [`filterBarMode`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filterbarmode "filterBarMode") property you can assign either `string` value (onenter) or `enum` value (`ej.Grid.FilterBarMode.OnEnter`).
 
 Filter bar message:
 
-The filter bar message is supported only for the [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "") as filterbar. The filtered data with column name is displayed in the grid pager itself. By default [`showFilterBarMessage`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-showfilterbarmessage "") is true.
+The filter bar message is supported only for the [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") as filterbar. The filtered data with column name is displayed in the grid pager itself. By default [`showFilterBarMessage`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-showfilterbarmessage "showFilterBarMessage") is true.
 
 The following code example describes the above behavior.
 
@@ -309,7 +311,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowFiltering : true,
@@ -326,7 +328,7 @@ The following output is displayed as a result of the above code example.
 
 ## Filter Operators
 
-The grid controls uses filter operators from [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# ""), that are used at the time of filtering. Filter operators are used to denote filtering type.
+The grid controls uses filter operators from [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager"), that are used at the time of filtering. Filter operators are used to denote filtering type.
 
 List of Column type and Filter operators
 

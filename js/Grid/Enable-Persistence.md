@@ -8,9 +8,9 @@ documentation: ug
 ---
 # State Persistence 
 
-State Persistence is to maintain grid state in browser's [local storage]([http://www.w3schools.com/html/html5_webstorage.asp](http://www.w3schools.com/html/html5_webstorage.asp# "")) even if browser refresh or move to next page. Grid stores its model in local storage by defining [`enablePersistence`](http://help.syncfusion.com/js/api/ejgrid#members:enablepersistence "") as true. 
+State Persistence is to maintain grid state in browser’s [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) even if browser refresh or move to next page. Grid stores its model in local storage by defining [`enablePersistence`](http://help.syncfusion.com/js/api/ejgrid#members:enablepersistence) as true. 
 
-I>  [localstorage]( [http://www.w3schools.com/html/html5_webstorage.asp](http://www.w3schools.com/html/html5_webstorage.asp# "")) is not supported below IE9 then grid state persistence technique is fallback to [cookie]( [http://www.w3schools.com/js/js_cookies.asp](http://www.w3schools.com/js/js_cookies.asp# "")).
+I>  [localstorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below IE9 then grid state persistence technique is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
 
 ## List of properties are not Persisted by default
 
@@ -57,7 +57,7 @@ The following properties are not included while maintaining Grid state in local 
 
 I> [The given excluded properties can be included in persist state using `_ignoreOnPersist` in grid prototype.] 
 
-{% seealso %} [Ignore on persist](need to give kb link) {% endseealso %}.
+
 
 ## Accessing currently stored state
 

@@ -10,7 +10,7 @@ documentation: ug
 
 ## List of classes and its purposes
 
-To modify Grid appearance, you need to override default CSS of Grid. Please find the list of CSS classes and its corresponding section in Grid. Also you have an option to create your own custom theme for all JavaScript controls using our [Theme Studio]([http://js.syncfusion.com/themestudio/](http://js.syncfusion.com/themestudio/# "")).
+To modify Grid appearance, you need to override default CSS of Grid. Please find the list of CSS classes and its corresponding section in Grid. Also you have an option to create your own custom theme for all JavaScript controls using our [Theme Studio](http://js.syncfusion.com/themestudio/# "Theme Studio").
 
 <table>
 <tr>
@@ -124,9 +124,11 @@ This class is added to rows of grid summary. <br/><br/></td></tr>
 e-summaryrow<br/><br/></td><td>
 This class is added to cells of summary row. This to override background color of summary.<br/><br/></td></tr>
 </table>
+
+
 ## Toolbar Customization
 
 To customize toolbar, you need to use toolbar default CSS class to override icon in toolbar. 
 
-{% seealso %} [customize toolbar ]( [http://www.syncfusion.com/kb/5076/how-to-change-custom-icons-for-default-edit-toolbar-items](http://www.syncfusion.com/kb/5076/how-to-change-custom-icons-for-default-edit-toolbar-items# "")) {% endseealso %}
+{% seealso %} [customize toolbar ](http://www.syncfusion.com/kb/5076/how-to-change-custom-icons-for-default-edit-toolbar-items "customize toolbar") {% endseealso %}
 
