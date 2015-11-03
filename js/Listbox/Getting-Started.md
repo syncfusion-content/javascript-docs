@@ -7,11 +7,11 @@ control: ListBox
 documentation: ug
 ---
 
-## Getting Started
+# Getting Started
 
 This section helps to understand the getting started of the ListBox widget with the step-by-step instructions.
 
-### Script/CSS reference
+## Script/CSS reference
 
 Create a new HTML file and include the below code
 
@@ -34,14 +34,14 @@ Create a new HTML file and include the below code
 
 
 
-Add link to the CSS file from the specific [theme](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components) folder to your HTML file within the head section. Refer the built-in theme which is mentioned [here](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components). 
+Add link to the CSS file from the specific [theme](http://help.syncfusion.com/js/theming-in-essential-javascript-components) folder to your HTML file within the head section. Refer the built-in theme which is mentioned [here](http://help.syncfusion.com/js/theming-in-essential-javascript-components). 
 
 {% highlight html %}
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" />
     <title>Getting Started - ListBox </title>
-    <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 </head>
 
 
@@ -49,7 +49,7 @@ Add link to the CSS file from the specific [theme](http://helpjs.syncfusion.com/
 
 
 
-Add links to the [CDN](http://helpjs.syncfusion.com/js/cdn) Script files with dependencies to the head section.
+Add links to the [CDN](http://help.syncfusion.com/js/cdn) Script files with dependencies to the head section.
 
 {% highlight html %}
 
@@ -65,11 +65,9 @@ Add links to the [CDN](http://helpjs.syncfusion.com/js/cdn) Script files with de
 
 
 
- {% seealso %} [custom script generator]{% endseealso %}
+ N> _In production, we highly recommend you to use our [custom script generator](http://help.syncfusion.com/js/include-only-the-needed-widgets) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server._
 
-N> To reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
-
-### Create ListBox
+## Create ListBox
 
 Create UL and LI elements and add in the &lt;body&gt; tag as below.
 
@@ -103,9 +101,9 @@ Initialize the ListBox widget as below.
 {% highlight js %}
 
 
-        $(function () {
-            $("#listbox").ejListBox();
-        });
+      $(function () {
+        $("#listbox").ejListBox();
+      });
 
 
 
@@ -113,17 +111,13 @@ Initialize the ListBox widget as below.
 
 
 
-
-
-
-
 ![Alt text](Getting-Started_Images\getting-started_img1.png)
 
-### Databinding
+## Databinding
 
 We can populate data in the ListBox widget using “datasource” and “fields” properties. 
 
-{% seealso %} Databinding {% endseealso %}.
+{% seealso %} [Databinding](http://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
 
 {% highlight html %}
 
@@ -163,13 +157,13 @@ We can populate data in the ListBox widget using “datasource” and “fields�
 
 {% endhighlight %}
 
-![Alt text](Getting-Started_Images\getting-started_img2.png)
+![Databinding Listbox](Getting-Started_Images\getting-started_img2.png)
 
-### Selection
+## Selection
 
 The ListBox widget supports item selection. 
 
-{% seealso %} Selection {% endseealso %}
+{% seealso %} [Selection](http://help.syncfusion.com/js/listbox/selection) {% endseealso %}
 
 {% highlight js %}
 
@@ -191,5 +185,5 @@ The ListBox widget supports item selection.
 
 
 
-![Alt text](Getting-Started_Images\getting-started_img3.png)
+![Selection Listbox](Getting-Started_Images\getting-started_img3.png)
 

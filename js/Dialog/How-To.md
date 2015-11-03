@@ -6,8 +6,10 @@ platform: js
 control: Dialog
 documentation: ug
 ---
-## How To?
-### Create Multiple Dialogs
+# How To?
+
+
+## Create Multiple Dialogs
 
 Essential JS library supports multiple Dialog widgets in the same web page with different contents and different functionalities.
 
@@ -66,9 +68,10 @@ Initialize the Dialog widgets by adding the script section as below.
 
 
 
-N>If the position of the dialog is not set as above, all the three dialogs will be overlapped with each other.{% seealso %}[position]{% endseealso %}
+N>If the position of the dialog is not set as above, all the three dialogs will be overlapped with each other.
+{%seealso%}[position](http://help.syncfusion.com/js/api/ejdialog#members:position){%endseealso%}
 
-![Alt text](How -To_Images\create-multiple-dialogs_img1.png)
+![Create Multiple Dialogs](how-to_images\create-multiple-dialogs_img1.png)
 
 ### Create Nested Dialog
 

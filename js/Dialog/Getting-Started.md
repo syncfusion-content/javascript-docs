@@ -7,11 +7,11 @@ control: Dialog
 documentation: ug
 ---
 
-## Getting Started
+# Getting Started
 
 This section helps to understand the getting started of the Dialog widget with the step-by-step instructions.
 
-### Script/CSS reference
+## Script/CSS reference
 
 Create a new HTML file and include the below code
 
@@ -68,9 +68,10 @@ Add links to the [CDN](http://helpjs.syncfusion.com/js/cdn) Script files with de
 
 
 
-N>To reduce the file size further please use_ [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) _compression in your server. {% seealso %}[custom script generator]{% endseealso %}(http://helpjs.syncfusion.com/js/include-only-the-needed-widgets)__
+N>To reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server. 
+{%seealso%}[custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) {%endseealso%}
 
-### Create Dialog
+## Create Dialog
 
 Add a div element in the &lt;body&gt; tag as below.
 
@@ -98,9 +99,9 @@ Initialize the Dialog widgets by adding the script section as below.
 
 
 
-![Alt text](Getting-Started_Images\getting-started_img1.png)
+![Create Dialog](getting-started_images\getting-started_img1.png)
 
-#### Add dialog content
+### Add dialog content
 
 Add the contents for the dialog as below.
 
@@ -116,9 +117,9 @@ Add the contents for the dialog as below.
 
 
 
-![Alt text](Getting-Started_Images\getting-started_img2.png)
+![Add dialog content](getting-started_images\getting-started_img2.png)
 
-#### Set the title
+### Set the title
 
 The Dialog widget’s title can be set as follows.
 
@@ -135,9 +136,9 @@ The Dialog widget’s title can be set as follows.
 
 N>The title can be also set through the title attribute for the dialog’s div element (&lt;div id="dialog" title="Dialog"&gt;)
 
-![Alt text](Getting-Started_Images\getting-started_img3.png)
+![Set the title](getting-started_images\getting-started_img3.png)
 
-#### Open Dialog dynamically
+### Open Dialog dynamically
 
 In most cases, the Dialog widgets are needed only in dynamic actions like showing some messages on clicking a button, to provide alert, etc. So the Dialog widget provides “open” and “close” methods to open/close the dialogs dynamically.
 
@@ -145,7 +146,8 @@ The Dialog widget can be hidden on initialize using “showOnInit” property wh
 
 Refer the below example. The dialog will be opened on clicking the Button widget. 
 
-See also [Button](http://docs.syncfusion.com/js/button/overview).
+{%seealso%} [Button](http://docs.syncfusion.com/js/button/overview)
+{%endseealso%}
 
 {% highlight html %}
 
@@ -174,5 +176,5 @@ See also [Button](http://docs.syncfusion.com/js/button/overview).
 
 
 
-![Alt text](Getting-Started_Images\getting-started_img4.png)
+![Open-Dialog-dynamically](getting-started_images\getting-started_img4.png)
 

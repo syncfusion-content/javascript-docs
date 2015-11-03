@@ -7,38 +7,38 @@ control: ListBox
 documentation: ug
 ---
 
-## Databinding
+# Databinding
 
-### Field mapping
+## Field mapping
 
 The ListBox widget has a field property (object) which holds the properties to map with datasource fields. For example, the field object has a text property which is necessary to map with specific field in the datasource to render the items in the ListBox widget.
 
 The field object contains the following properties.
 
-* [text](http://helpjs.syncfusion.com/js/api/ejlistbox)
+* [text](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
 
-* [toolTipText](http://helpjs.syncfusion.com/js/api/ejlistbox)
+* [toolTipText](http://helpjs.syncfusion.com/js/api/ejlistbox#members:fields)
 
-* [id](http://helpjs.syncfusion.com/js/api/ejlistbox)
+* [id](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
 
-* selectBy
+* [selectBy](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
 
-* groupBy
+* [groupBy](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
 
-* checkBy
+* [checkBy](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
 
-* [tableName](http://helpjs.syncfusion.com/js/api/ejlistbox)
+* [tableName](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
 
-* [imageUrl](http://helpjs.syncfusion.com/js/api/ejlistbox)
+* [imageUrl](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
 
-* [imageAttributes](http://helpjs.syncfusion.com/js/api/ejlistbox)
+* [imageAttributes](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
 
-* [spriteCssClass](http://helpjs.syncfusion.com/js/api/ejlistbox)
+* [spriteCssClass](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
 
-* [htmlAttributes](http://helpjs.syncfusion.com/js/api/ejlistbox)
+* [htmlAttributes](http://help.syncfusion.com/js/api/ejlistbox#members:fields)
 
 
-### Local data
+## Local data
 
 The local data can be an array of JSON objects which is assigned for the ListBox widget’s datasource property. Refer the below example. 
 
@@ -84,10 +84,10 @@ Here the bikeName and bikeId fields are mapped with text and id properties of th
 
 
 
-![Alt text](databinding_images\local-data_img1.png)
+![FieldSetting Listbox](databinding_images\local-data_img1.png)
 
-### Remote data
-#### OData
+## Remote data
+### OData
 
 [OData](http://helpjs.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from oData service by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
 
@@ -121,7 +121,7 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 ![Alt text](Databinding_images\odata_img1.png)
 
-#### WebAPI
+### WebAPI
 
 
 
@@ -153,13 +153,13 @@ Here the CustomerID field is mapped with text property of the field object. The 
 
 
 
-N>In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API.
+N> _In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API._
 
- {% seealso %} [Cross domain](http://helpjs.syncfusion.com/js/grid/data-binding){% endseealso %}
+ {% seealso %} [Cross domain](http://help.syncfusion.com/js/grid/data-binding) {% endseealso %}
 
 ![Alt text](Databinding_images\webapi_img1.png)
 
-#### Virtual Scrolling
+### Virtual Scrolling
 
  The ListBox widget provides support to load its data on demand via scrolling behavior to improve the application’s performance. This can be achieved using “allowVirtualScrolling” property. There are two ways to load data based on the scrolling type.
 
@@ -169,7 +169,7 @@ N>In the above data manager configuration, “crossDomain” must be set to true
 
 The scrolling type can be defined via “virtualScrollMode” property.
 
-##### Normal Scrolling
+#### **Normal Scrolling**
 
 This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.
 
@@ -201,14 +201,14 @@ This mode allows you to load the list box data while scrolling i.e. each time th
 
 
 
-N> By default, the value of “virtualScrollMode” property is normal.
+N> _By default, the value of “virtualScrollMode” property is normal._
 
 {% include image.html url="Databinding_images\normal-scrolling_img1.png" Caption="Before scrolling"%}
 
 {% include image.html url="Databinding_images\normal-scrolling_img2.png" Caption="Virtual scrolling (normal)"%}
 
 
-##### Continuous Scrolling
+#### **Continuous Scrolling**
 
 This mode allows you to load the list box data when the scrollbar reaches the end point. In this mode, we can specify the number of items to be loaded per request.
 
@@ -244,7 +244,7 @@ The number of items to be loaded per request can be specified using the “itemR
 
 
 
-N> The “itemRequestCount” property will work only when “virtualScrollMode” is “continuous”.
+N> _The “itemRequestCount” property will work only when “virtualScrollMode” is “continuous”._
 
 {% include image.html url="Databinding_images\continuous-scrolling_img1.png" Caption="Before scrolling"%}
 
@@ -252,11 +252,11 @@ N> The “itemRequestCount” property will work only when “virtualScrollMode�
 
 
 
-#### Handling errors
+### Handling errors
 
  In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle it using the “actionFailure” event. 
 
-{% seealso %} [actionComplete](http://helpjs.syncfusion.com/js/api/ejlistbox) and [actionSuccess](http://helpjs.syncfusion.com/js/api/ejlistbox){% endseealso %}
+{% seealso %} [actionComplete](http://help.syncfusion.com/js/api/ejlistbox#events:actioncomplete) and [actionSuccess](http://help.syncfusion.com/js/api/ejlistbox#events:actionsuccess) {% endseealso %}
 
 
 

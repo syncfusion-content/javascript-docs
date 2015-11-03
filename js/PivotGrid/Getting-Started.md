@@ -18,7 +18,7 @@ This section explains on how to create a simple PivotGrid bound to OLAP datasour
 ###Project Initialization
 Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“PivotGridDemo”**.
 
-Next, add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as “GettingStarted.html”, click **Add.**
+Next, add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as **“GettingStarted.html”**, click **Add.**
 
 Now, set “GettingStarted.html” as start-up page by right clicking on “GettingStarted.html” page and select **“Set As Start Page”.**
 
@@ -77,18 +77,21 @@ To initialize a PivotGrid widget, define a “div” tag with an appropriate “
 
 The “url” property in PivotGrid widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the PivotGrid widget as endpoint are WCF and WebAPI.
 
+N> The above "GettingStarted.html" contains WebAPI Url, which is, **“../OLAPService”**. Suppose if you are using WCF service then the Url would look like **"../OLAPService.svc"**. 
+
 ###WebAPI
 
 **Adding a WebAPI Controller**
 
 To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OLAPServiceController.cs”, click **Add.**
 
-Now, WebAPI controller is added into your application successfully that contains the following file. 
+Now, WebAPI controller is added into your application successfully that contains the following file.
+ 
 * OLAPServiceController.cs
 
 >**NOTE: While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OLAPServiceController”.**
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `**OLAPServiceController.cs**` file. 
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OLAPServiceController.cs` file. 
 
 {% highlight c# %}
 
@@ -123,7 +126,7 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `**OLAPServiceController.cs**` file.
+Following are the list of namespaces to be added on top of the main class inside `OLAPServiceController.cs` file.
 
 {% highlight c# %}
 
@@ -148,7 +151,7 @@ namespace PivotGridDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in `**OLAPServiceController.cs**` file.
+Now, the connection string to connect OLAP Cube, PivotGrid and JavaScriptSerializer instances are created immediately inside the main class in `OLAPServiceController.cs` file.
 
 {% highlight c# %}
 
@@ -168,7 +171,7 @@ namespace PivotGridDemo
 
 **Service methods in WebAPI Controller**
 
-Define the service methods inside OLAPServiceController class, found inside `**OLAPServiceController.cs**` file, created while adding WebAPI Controller Class to your Web Application.
+Define the service methods inside OLAPServiceController class, found inside `OLAPServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
  
 {% highlight c# %}
 
@@ -416,7 +419,7 @@ The “url” property in PivotGrid widget points the service endpoint, where da
 
 **Adding a WebAPI Controller**
 
-To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New** Item. In the **Add New Item** window, select **WebAPI** Controller Class and name it as “RelationalServiceController.cs”, click **Add.**
+To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New** Item. In the **Add New Item** window, select **WebAPI** Controller Class and name it as **“RelationalServiceController.cs”**, click **Add.**
  
 Now, WebAPI controller is added into your application successfully that contains the following file. 
 
@@ -424,7 +427,7 @@ Now, WebAPI controller is added into your application successfully that contains
 
 >**NOTE: While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “RelationalServiceController”.**
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `**RelationalServiceController.cs**` file.
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `RelationalServiceController.cs` file.
 
 {% highlight c# %}
 
@@ -456,7 +459,7 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 **List of Namespaces**
 
-Following are the list of namespaces to be added on top of the main class inside `**RelationalServiceController.cs**` file.
+Following are the list of namespaces to be added on top of the main class inside `RelationalServiceController.cs` file.
  
 {% highlight c# %}
 
@@ -476,7 +479,7 @@ namespace PivotGridDemo
 
 **Datasource Initialization**
 
-A simple collection is provided as a datasource for the PivotGrid in this demo section. This datasource is placed inside a separate class “ProductSales” in `**RelationalServiceController.cs**` file. Refer to the following code example.
+A simple collection is provided as a datasource for the PivotGrid in this demo section. This datasource is placed inside a separate class “ProductSales” in `RelationalServiceController.cs` file. Refer to the following code example.
 
 {% highlight c# %}
 
@@ -591,7 +594,7 @@ internal class ProductSales
 
 **Service methods in WebAPI Controller**
 
-Define the service methods inside RelationalServiceController class, found inside `**RelationalServiceController.cs**` file, created while adding WebAPI Controller Class to your Web Application.
+Define the service methods inside RelationalServiceController class, found inside `RelationalServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
  
 {% highlight c# %}
 
@@ -672,9 +675,9 @@ namespace PivotGridDemo
 
 **Configure routing in Global Application Class**
 
-To add a Global.asax in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New** Item. In the **Add New Item** window, select **Global Application** Class and name it as “Global.asax”, click **Add.**
+To add a Global.asax in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New** Item. In the **Add New Item** window, select **Global Application** Class and name it as **“Global.asax”**, click **Add.**
  
-Once you finish adding the `**Global.asax**` file, immediately add the namespace `**“using System.Web.Http;”**` and then you can configure routing like in the following code example.
+Once you finish adding the **Global.asax** file, immediately add the namespace **“using System.Web.Http;”** and then you can configure routing like in the following code example.
 
 {% highlight c# %}
 

@@ -7,7 +7,6 @@ metaname:
 metacontent: 
 ---
 
-##Custom Design for Html ListBox control.
 
 The ListBox widget provides a list options to make user to choose an item from the list. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
 
@@ -56,18 +55,17 @@ Requires
 
 * module:ej.scroller.js
 
-###Members
+## Members
 
-####allowDragAndDrop [Deprecated]  <span class="type-signature type boolean">Boolean</span>
+### allowDragAndDrop [Deprecated]  <span class="type-signature type boolean">boolean</span>
 {:#members:allowdraganddrop}
 
 Enables/disables the drag and drop behavior of the ListBox widget.
 
-N>Since this is a deprecated property we suggest to use *allowDrag* and *allowDrop* properties.
+N> Since this is a deprecated property we suggest to use **allowDrag** and **allowDrop** properties.
 
 Default Value:
-{:.param}
- * false
+{:.param} false
 
 Example
 {:.example}
@@ -82,14 +80,13 @@ Example
             
 {% endhighlight %}
 
-####allowDrag  <span class="type-signature type boolean">Boolean</span>
+### allowDrag  <span class="type-signature type boolean">boolean</span>
 {:#members:allowdrag} 
 
 Enables/disables the dragging behavior of the ListBox widget’s item within a ListBox or between two ListBox widgets.
 
 Default Value:
-{:.param}
- * false
+{:.param} false
 
 Example
 {:.example}
@@ -102,16 +99,15 @@ Example
             
 {% endhighlight %}
 
-####allowDrop  <span class="type-signature type boolean">Boolean</span>
+### allowDrop  <span class="type-signature type boolean">boolean</span>
 {:#members:allowdrop} 
 
 Accepts the items which are dropped in to it, when it is set to true. 
 
-N>Need to enable allowDrag property to drag the list (li) item from the listbox control. 
+N> Need to enable allowDrag property to drag the list (li) item from the listbox control.
 
 Default Value:
-{:.param}
-* false
+{:.param} false
 
 Example
 {:.example}
@@ -124,14 +120,13 @@ Example
 
 {% endhighlight %}
 
-####allowMultiSelection <span class="type-signature type boolean">Boolean</span>
+### allowMultiSelection <span class="type-signature type boolean">boolean</span>
 {:#members:allowmultiselection}  
 
 Enables or disables multiple selection.
 
 Default Value:
-{:.param}
-* false
+{:.param} false
 
 Example 
 {:.example}
@@ -142,14 +137,13 @@ Example
 
 {% endhighlight %}
 
-####allowVirtualScrolling <span class="type-signature type boolean">Boolean</span>
+### allowVirtualScrolling <span class="type-signature type boolean">boolean</span>
 {:#members:allowvirtualscrolling}  
 
 Loads the list data on demand via scrolling behavior to improve the application’s performance. There are two ways to load data which can be defined using “virtualScrollMode” property.
 
 Default Value:
-{:.param} 
-* false
+{:.param} false
 
 Example
 {:.example}
@@ -164,7 +158,7 @@ Example
 
 {% endhighlight %}
 
-####caseSensitiveSearch <span class="type-signature type boolean">Boolean</span>
+### caseSensitiveSearch <span class="type-signature type boolean">boolean</span>
 {:#members:casesensitivesearch} 
  
 Enables or disables the case sensitive search for list item by typing the text (search) value.
@@ -172,8 +166,7 @@ Enables or disables the case sensitive search for list item by typing the text (
 N> It works only when the enableIncrementalSearch is set as true.
 
 Default Value: 
-{:.param}
-* false
+{:.param} false
 
 Example
 {:.example}
@@ -191,14 +184,13 @@ Example
 {% endhighlight %}  
 
 
-####cascadeTo  <span class="type-signature type string">String</span>
+### cascadeTo  <span class="type-signature type string">string</span>
 {:#members:cascadeto} 
 
 Dynamically populate data of a list box while selecting an item in another list box i.e. rendering child list box based on the item selection in parent list box. This property accepts the id of the child ListBox widget to populate the data.
 
 Default Value:
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -214,14 +206,13 @@ Example
 {% endhighlight %}
 
 
-####checkAll [Deprecated] <span class="type-signature type boolean">Boolean</span>
+### checkAll [Deprecated] <span class="type-signature type boolean">boolean</span>
 {:#members:checkall} 
 
 To check all the items of the ListBox widget. It works only when the showCheckbox property is set to true. 
 
 Default Value:
-{:.param}
-* false
+{:.param} false
 
 Example
 {:.example}
@@ -232,7 +223,7 @@ Example
 
 {% endhighlight %}
 
-####checkedItems (Deprecated) <span class="type-signature type array">Array</span>
+### checkedItems [Deprecated] <span class="type-signature type array">array</span>
 {:#members:checkeditems} 
 
 List of items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
@@ -240,8 +231,7 @@ List of items to be checked by default using its index. It works only when the s
 N> Since this is a deprecated property we suggest to use checkedIndices property.
 
 Default Value:
-{:.param} 
-* []
+{:.param} []
 
 Example
 {:.example}
@@ -252,16 +242,15 @@ Example
 
 {% endhighlight %}
 
-####checkedItemlist (Deprecated) <span class="type-signature type array">Array</span>
+### checkedItemlist [Deprecated] <span class="type-signature type array">array</span>
 {:#members:checkeditemlist} 
 
 List of items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
 
-N>Since this is a deprecated property we suggest to use checkedIndices property.
+N> Since this is a deprecated property we suggest to use checkedIndices property.
 
 Default Value:
-{:.param}
-*  []
+{:.param} []
 
 Example
 {:.example}
@@ -273,7 +262,7 @@ Example
 
 {% endhighlight %}
 
-####checkItemsByIndex (Deprecated) <span class="type-signature type string">String</span>
+### checkItemsByIndex [Deprecated] <span class="type-signature type string">string</span>
 {:#members:checkitemsbyindex} 
 
 List of items to be checked by default using index values. It works only when the showCheckbox property is set to true. 
@@ -281,8 +270,7 @@ List of items to be checked by default using index values. It works only when th
 N> Since this is a deprecated property we suggest to use checkedIndices property.
 
 Default Value: 
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -293,14 +281,13 @@ Example
         
 {% endhighlight %}
 
-####checkedIndices <span class="type-signature type string">String</span>
+### checkedIndices <span class="type-signature type string">string</span>
 {:#members:checkedindices} 
 
 Set of list items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
 
 Default Value:
-{:param}
-* null
+{:param} null
 
 Example
 {:.example}
@@ -311,14 +298,13 @@ Example
         
 {% endhighlight %}
 
-####cssClass <span class="type-signature type string">String</span>
+### cssClass <span class="type-signature type string">string</span>
 {:#members:cssclass}
 
 The root class for the ListBox widget to customize the existing theme.
 
 Default Value:
-{:.param}
-* “gradient-lime”
+{:.param} “”
 
 Example
 {:.example}
@@ -330,14 +316,13 @@ Example
  {% endhighlight %}
 
 
-####dataSource <span class="type-signature type JSONobject">JSONobject</span>
+### dataSource <span class="type-signature type JSONobject">JSONobject</span>
 {:#members:datasource}
 
 Contains the list of data for generating the list items.
 
 Default Value:
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -352,14 +337,13 @@ Example
             
  {% endhighlight %}
 
-####disableItemsByIndex [Deprecated] <span class="type-signature type string">String</span>
+### disableItemsByIndex [Deprecated] <span class="type-signature type string">string</span>
 {:#members:disableitemsbyindex}
 
 Disables set of list items using its index value.
 
 Default Value:
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example} 
@@ -370,14 +354,13 @@ Example
 
 {% endhighlight %}
 
-####enabled <span class="type-signature type boolean">Boolean</span>
+### enabled <span class="type-signature type boolean">boolean</span>
 {:#members:enabled}
 
 Enables or disables the ListBox widget.
 
 Default Value:
-{:.param}
-* true
+{:.param} true
 
 Example 
 {:.example}
@@ -388,14 +371,13 @@ Example
 
 {% endhighlight %}
 
-####enableItemsByIndex [Deprecated] <span class="type-signature type string">String</span>
+### enableItemsByIndex [Deprecated] <span class="type-signature type string">string</span>
 {:#members:enableitemsbyindex}
 
 Enables the set of disabled list items using its index value.
 
 Default Value:
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -406,7 +388,7 @@ Example
 
 {% endhighlight  %}
 
-####enableLoadOnDemand [Deprecated] <span class="type-signature type boolean">Boolean</span>
+### enableLoadOnDemand [Deprecated] <span class="type-signature type boolean">boolean</span>
 {:#members:enableloadondemand}
 
 Loads data on demand for the ListBox widget via scrolling behavior.If this is set to true, this will implicitly make allowVirtualScrolling to true and sets virtualScrollMode to “normal”.
@@ -414,8 +396,7 @@ Loads data on demand for the ListBox widget via scrolling behavior.If this is se
 N> Since this is a deprecated property we suggest to use allowVirtualScrolling property.
 
 Default Value:
-{:.param}
-* false
+{:.param} false
 
 Example
 {:.example}
@@ -434,14 +415,13 @@ Example
 
 
 
-####enableIncrementalSearch <span class="type-signature type boolean">Boolean</span>
+### enableIncrementalSearch <span class="type-signature type boolean">boolean</span>
 {:#members:enableincrementalsearch}
 
 Enables or disables the search behavior to find the specific list item by typing the text value.
 
 Default Value:
-{:.param}
-* false
+{:.param} false
 
 Example 
 {:.example}
@@ -452,16 +432,15 @@ Example
 
 {% endhighlight %}
 
-####enablePersistence <span class="type-signature type boolean">Boolean</span>
+### enablePersistence <span class="type-signature type boolean">boolean</span>
 {:#members:enablepersistence}
 
 Allows the current model values to be saved in local storage or browser cookies for state maintenance when it is set to true.
 
-N>[Local storage](http://www.w3schools.com/html/html5_webstorage.asp) is supported only in Html5 supported browsers. If the browsers don’t have support for local storage, browser cookies will be used to maintain the state.
+N> [Local storage](http://www.w3schools.com/html/html5_webstorage.asp) is supported only in Html5 supported browsers. If the browsers don’t have support for local storage, browser cookies will be used to maintain the state.
 
 Default Value:
-{:.param}
-* false
+{:.param} false
 
 Example 
 {:.example}
@@ -472,14 +451,13 @@ Example
 
 {% endhighlight %}
 
-####enableRTL <span class="type-signature type boolean">Boolean</span>
+### enableRTL <span class="type-signature type boolean">boolean</span>
 {:#members:enablertl}
 
 Displays the ListBox widget’s content from right to left when enabled.
 
 Default Value:
-{:.param} 
-* false
+{:.param} false
 
 Example 
 {:.example}
@@ -490,16 +468,15 @@ Example
 
 {% endhighlight %}
 
-####enableVirtualScrolling  [Deprecated] <span class="type-signature type boolean">Boolean</span>
+### enableVirtualScrolling  [Deprecated] <span class="type-signature type boolean">boolean</span>
 {:#members:enablevirtualscrolling}
 
 Loads data on demand for the ListBox widget via scrolling behavior. If this is set to true, this will implicitly make allowVirtualScrolling to true and sets virtualScrollMode to “continuous”.
 
-N>Since this is a deprecated property we suggest to use allowVirtualScrolling property.
+N> Since this is a deprecated property we suggest to use allowVirtualScrolling property.
 
 Default Value:
-{:.param}
-* false
+{:.param} false
 
 Example
 {:.example}
@@ -515,14 +492,13 @@ Example
 {% endhighlight %}
 
 
-####fields <span class="type-signature type JSONobject">JSONobject</span>
+### fields <span class="type-signature type JSONobject">JSONobject</span>
 {:#members:fields}
 
 Mapping fields for the data items of the ListBox widget.
 
 Default Value:
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -543,7 +519,9 @@ Example
 <tr>
 <td>
 fields.category [Deprecated]</td><td>
-The grouping in the ListBox widget can be defined using this field. Note: Since this is deprecated we suggest you to use fields.groupBy API.</td></tr>
+The grouping in the ListBox widget can be defined using this field. 
+N> Since this is deprecated we suggest you to use fields.groupBy API.
+</td></tr>
 <tr>
 <td>
 fields.checkBy </td><td>
@@ -595,14 +573,13 @@ Defines the specific field name to display the tooltip text for all the list ite
 </table>
 
 
-####height  <span class="type-signature type string">String</span>
+### height  <span class="type-signature type string">string</span>
 {:#members:height}
 
 Defines the height of the ListBox widget.
 
 Default Value:
-{:.param} 
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -613,14 +590,13 @@ Example
 
 {% endhighlight %}
 
-####itemsCount <span class="type-signature type integer">Integer</span>
+### itemsCount <span class="type-signature type integer">integer</span>
 {:#members:itemscount}
 
 The number of list items to be shown in the ListBox widget. The remaining list items will be scrollable.
 
 Default Value:
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -631,14 +607,13 @@ Example
 
 {% endhighlight %}
 
-####itemRequestCount  <span class="type-signature type integer">Integer</span>
+### itemRequestCount  <span class="type-signature type integer">integer</span>
 {:#members:itemrequestcount}
 
 The number of list items to be loaded in the list box while enabling virtual scrolling and when virtualScrollMode is set to continuous.
 
 Default Value:
-{:.param}
-* 5
+{:.param} 5
 
 Example
 {:.example}
@@ -655,16 +630,15 @@ Example
         
  {% endhighlight %}
 
-####loadDataOnInit <span class="type-signature type boolean">Boolean</span>
+### loadDataOnInit <span class="type-signature type boolean">boolean</span>
 {:#members:loaddataoninit}
 
 Loads data for the listbox by default (i.e. on initialization) when set to true.
 
-N> It is used along with cascading feature. See also cascadeTo.
+N> It is used along with cascading feature. See also [cascadeTo](http://help.syncfusion.com//js/api/ejlistbox#members:cascadeto).
 
 Default Value: 
-{:.param}
-* true
+{:.param} true
 
 Example
 {:.example}
@@ -679,14 +653,13 @@ Example
         
  {% endhighlight %}
  
-####query <span class="type-signature type ej.Query">ej.Query</span>
+### query <span class="type-signature type ej.Query">ej.Query</span>
 {:#members:query}
 
 The query to retrieve required data from the data source.
 
 Default Value:
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -705,16 +678,15 @@ Example
 
 {% endhighlight %}
 
-####selectedItemIndex [Deprecated] <span class="type-signature type integer">Integer</span>
+### selectedItemIndex [Deprecated] <span class="type-signature type integer">integer</span>
 {:#members:selecteditemindex}
 
 The item to be selected by default using its index.
 
-N>Since this is a deprecated property we suggest to use selectedIndex property.
+N> Since this is a deprecated property we suggest to use selectedIndex property.
 
 Default Value:
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -725,16 +697,15 @@ Example
     
 {% endhighlight %}
 
-####selectedItemlist [Deprecated] <span class="type-signature type array">Array</span>
+### selectedItemlist [Deprecated] <span class="type-signature type array">array</span>
 {:#members:selecteditemlist}
 
 The list of items to be selected by default using its index values. To use this property allowMultiSelection should be enabled.
 
-N>Since this is a deprecated property we suggest to use selectedIndices property.
+N> Since this is a deprecated property we suggest to use selectedIndices property.
 
 Default Value:
-{:.param}
-* []
+{:.param} []
 
 Example
 {:.example}
@@ -751,16 +722,15 @@ Example
 
 {% endhighlight %}
 
-####selectedItems [Deprecated] <span class="type-signature type array">Array</span>
+### selectedItems [Deprecated] <span class="type-signature type array">array</span>
 {:#members:selecteditems}
 
 The list of items to be selected by default using its index. To use this property allowMultiSelection should be enabled.
 
-N>Since this is a deprecated property we suggest to use selectedIndices property.
+N> Since this is a deprecated property we suggest to use selectedIndices property.
 
 Default Value:
-{:.param}
-* []
+{:.param} []
 
 Example
 {:.example}
@@ -771,14 +741,13 @@ Example
 
 {% endhighlight %}
 
-####selectedIndex  <span class="type-signature type integer">Integer</span>
+### selectedIndex  <span class="type-signature type integer">integer</span>
 {:#members:selectedindex}
 
 The list item to be selected by default using its index.
 
 Default Value:
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -789,14 +758,13 @@ Example
 
 {% endhighlight %}
 
-####selectedIndices <span class="type-signature type array">Array</span>
+### selectedIndices <span class="type-signature type array">array</span>
 {:#members:selectedindices}
 
 The list items to be selected by default using its indices. To use this property allowMultiSelection should be enabled.
 
 Default Value:
-{:.param}
-* []
+{:.param} []
 
 Example
 {:.example}
@@ -807,14 +775,13 @@ Example
 
 {% endhighlight %}
 
-####showCheckbox <span class="type-signature type boolean">Boolean</span>
+### showCheckbox <span class="type-signature type boolean">boolean</span>
 {:#members:showcheckbox}
 
 Enables/Disables the multi selection option with the help of checkbox control.
 
 Default Value:
-{:.param}
-* false
+{:.param} false
 
 Example
 {:.example}
@@ -825,14 +792,13 @@ Example
 
 {% endhighlight %}
 
-####showRoundedCorner <span class="type-signature type boolean">Boolean</span>
+### showRoundedCorner <span class="type-signature type boolean">boolean</span>
 {:#members:showroundedcorner}
 
 To display the ListBox container with rounded corners.
 
 Default Value:
-{:.param}
-* false
+{:.param} false
 
 Example
 {:.example}
@@ -842,14 +808,13 @@ Example
     $('#list').ejListBox({ showRoundedCorner: true }); 
 
 {% endhighlight %}
-####template <span class="type-signature type string">String</span>
+### template <span class="type-signature type string">string</span>
 {:#members:template}
 
 The template to display the ListBox widget with customized appearance.
 
 Default Value: 
-{:.param}
-*null
+{:.param} null
 
 Example
 {:.example}
@@ -865,14 +830,13 @@ Example
         
  {% endhighlight %}
 
-####unCheckAll [Deprecated] <span class="type-signature type boolean">Boolean</span>
+### unCheckAll [Deprecated] <span class="type-signature type boolean">boolean</span>
 {:#members:uncheckall}
 
 Unchecks all the checked list items. It is dependent on showCheckbox property.
 
 Default Value:
-{:.param}
-* false
+{:.param} false
 
 Example
 {:.example}
@@ -883,14 +847,13 @@ Example
 
 {% endhighlight %}
 
-####uncheckItemsByIndex [Deprecated] <span class="type-signature type string">String</span>
+### uncheckItemsByIndex [Deprecated] <span class="type-signature type string">string</span>
 {:#members:uncheckitemsbyindex}
 
 Unchecks the list of items by using its index values. It is dependent on showCheckbox property.
 
 Default Value:
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -901,14 +864,13 @@ Example
             
 {% endhighlight %}
 
-####value <span class="type-signature type integer">Integer</span>
+### value <span class="type-signature type integer">integer</span>
 {:#members:value}
 
 Holds the selected items values and used to bind value to the list item using angular and knockout.
 
 Default Value:
-{:.param}
-* “”
+{:.param} “”
 
 Example
 {:.example}
@@ -972,7 +934,7 @@ Example
             
  {% endhighlight %}
 
-####virtualScrollMode <span class="type-signature type enum">Enum</span>
+### virtualScrollMode <span class="type-signature type enum">enum</span>
 {:#members:virtualscrollmode}
 
 Specifies the virtual scroll mode to load the list data on demand via scrolling behavior. There are two types of mode.
@@ -986,8 +948,7 @@ Each time when we scroll to the end of the ListBox widget, the other set of list
 This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.
 
 Default Value:
-{:.param} 
-* “normal”. 
+{:.param} “normal”. 
 
 Example
 {:.example}
@@ -1003,14 +964,13 @@ Example
 
  {% endhighlight %}
 
-####width <span class="type-signature type string">String</span>
+### width <span class="type-signature type string">string</span>
 {:#members:width}
 
 Defines the width of the ListBox widget.
 
 Default Value:
-{:.param}
-* null
+{:.param} null
 
 Example
 {:.example}
@@ -1023,10 +983,10 @@ Example
  
  
  
-###Methods
+## Methods
 
 
-####addItem<span class="signature">(listItem, index)</span>
+### addItem<span class="signature">(listItem, index)</span>
 {:#methods:additem}
 
 Adds a given list items in the ListBox widget at a specified index. It accepts two parameters. 
@@ -1059,7 +1019,7 @@ Example
 
 {% endhighlight %}
 
-####checkAll<span class="signature">()</span>
+### checkAll<span class="signature">()</span>
 {:#methods:checkAll}
 
 Checks all the list items in the ListBox widget. It is dependent on showCheckbox property.
@@ -1076,7 +1036,7 @@ Example
 {% endhighlight %}
 
 
-####checkItemByIndex<span class="signature">(index)</span>
+### checkItemByIndex<span class="signature">(index)</span>
 {:#methods:checkitembyindex}
 
 Checks a list item by using its index. It is dependent on showCheckbox property.
@@ -1104,7 +1064,7 @@ Example
 {% endhighlight %}
 
 
-####checkItemsByIndices<span class="signature">(index/indices) </span>
+### checkItemsByIndices<span class="signature">(index/indices) </span>
 {:#methods:checkitemsbyindices}
 
 Checks multiple list items by using its index values. It is dependent on showCheckbox property.
@@ -1135,7 +1095,7 @@ Example
 {% endhighlight %}
 
 
-####disable<span class="signature">()</span>
+### disable<span class="signature">()</span>
 {:#methods:disable}
 
 Disables the ListBox widget.
@@ -1152,7 +1112,7 @@ Example
 {% endhighlight %}
 
 
-####disableItem<span class="signature">(text)</span>
+### disableItem<span class="signature">(text)</span>
 {:#methods:disableitem}
 
 Disables a list item by passing the item text as parameter.
@@ -1180,7 +1140,7 @@ Example
 {% endhighlight %}
 
 
-####disableItemByIndex<span class="signature">(index)</span>
+### disableItemByIndex<span class="signature">(index)</span>
 {:#methods:disableitembyindex}
 
 Disables a list Item using its index value.
@@ -1208,7 +1168,7 @@ Example
 {% endhighlight %}
 
 
-####disableItemsByIndices<span class="signature">(indices)</span>
+### disableItemsByIndices<span class="signature">(indices)</span>
 {:#methods:disableitemsbyindices}
 
 Disables set of list Items using its index values.
@@ -1236,7 +1196,7 @@ Example
 {% endhighlight %}
 
 
-####enable<span class="signature">()</span>
+### enable<span class="signature">()</span>
 {:#methods:enable}
 
 Enables the ListBox widget when it is disabled.
@@ -1251,7 +1211,7 @@ Example
 {% endhighlight %}
 
 
-####enableItem<span class="signature">(text)</span>
+### enableItem<span class="signature">(text)</span>
 {:#methods:enableitem}
 
 Enables a list Item using its item text value.
@@ -1279,7 +1239,7 @@ Example
 {% endhighlight %}
 
 
-####enableItemByIndex<span class="signature">(index)</span>
+### enableItemByIndex<span class="signature">(index)</span>
 {:#methods:enableitembyindex}
 
 Enables a list item using its index value.
@@ -1307,7 +1267,7 @@ Example
 {% endhighlight %}
 
 
-####enableItemsByIndices<span class="signature">(indices)</span>
+### enableItemsByIndices<span class="signature">(indices)</span>
 {:#methods:enableitemsbyindices}
 
 Enables a set of list Items using its index values.
@@ -1336,12 +1296,12 @@ Example
 {% endhighlight %}
 
 
-####getCheckedItems<span class="signature">()</span>
+### getCheckedItems<span class="signature">()</span>
 {:#methods:getcheckeditems}
 
 Returns the list of checked items in the ListBox widget. It is dependent on showCheckbox property.
 
-N>This method does not accept any arguments.
+N> This method does not accept any arguments.
 
 Example
 {:.example}
@@ -1353,7 +1313,7 @@ Example
 {% endhighlight %}
 
 
-####getSelectedItems<span class="signature">()</span>
+### getSelectedItems<span class="signature">()</span>
 {:#methods:getselecteditems}
 
 Returns the list of selected items in the ListBox widget. 
@@ -1370,7 +1330,7 @@ Example
 {% endhighlight %}
 
 
-####getIndexByText<span class="signature">(text)</span>
+### getIndexByText<span class="signature">(text)</span>
 {:#methods:getindexbytext}
 
 
@@ -1401,7 +1361,7 @@ Example
 {% endhighlight %}
 
 
-####getIndexByValue<span class="signature">(value)</span>
+### getIndexByValue<span class="signature">(value)</span>
 {:#methods:getindexbyvalue}
 
 Returns an item’s index based on the value given.
@@ -1429,7 +1389,7 @@ Example
 {% endhighlight %}
 
 
-####getTextByIndex<span class="signature">(index)</span>
+### getTextByIndex<span class="signature">(index)</span>
 {:#methods:gettextbyindex}
 
 Returns an item’s text (label) based on the index given.
@@ -1457,7 +1417,7 @@ Example
 {% endhighlight %}
 
 
-####getItemByIndex<span class="signature">(index)</span>
+### getItemByIndex<span class="signature">(index)</span>
 {:#methods:getitembyindex}
 
 Returns a list item’s object using its index.
@@ -1485,7 +1445,7 @@ Example
 {% endhighlight %}
 
 
-####getItemByText<span class="signature">(text)</span>
+### getItemByText<span class="signature">(text)</span>
 {:#methods:getitembytext}
 
 Returns a list item’s object based on the text given.
@@ -1513,7 +1473,7 @@ Example
 {% endhighlight %}
 
 
-####moveDown<span class="signature">()</span>
+### moveDown<span class="signature">()</span>
 {:#methods:movedown}
 
 Selects the next item based on the current selection.
@@ -1530,12 +1490,12 @@ Example
 {% endhighlight %}
 
 
-####moveUp<span class="signature">()</span>
+### moveUp<span class="signature">()</span>
 {:#methods:moveup}
 
 Selects the previous item based on the current selection.
 
- This method does not accept any arguments._
+ N> This method does not accept any arguments.
 
 Example
 {:.example}
@@ -1547,7 +1507,7 @@ Example
 {% endhighlight %}            
 
 
-####refresh<span class="signature">(refreshData)</span>
+### refresh<span class="signature">(refreshData)</span>
 {:#methods:refresh}
 
 Refreshes the ListBox widget.
@@ -1575,7 +1535,7 @@ Example
 {% endhighlight %}
 
 
-####removeItem<span class="signature">()</span> [Deprecated]
+### removeItem<span class="signature">()</span> [Deprecated]
 {:#methods:removeitem}
 
 Removes the selected list items from the listbox. 
@@ -1594,7 +1554,7 @@ Example
  {% endhighlight %}         
 
 
-####removeSelectedItems<span class="signature">()</span>
+### removeSelectedItems<span class="signature">()</span>
 {:#methods:removeselecteditems}
 
 Removes the selected list items from the listbox.
@@ -1611,7 +1571,7 @@ Example
 {% endhighlight %}
 
 
-####removeItemByText<span class="signature">(text)</span>
+### removeItemByText<span class="signature">(text)</span>
 {:#methods:removeitembytext}
 
 Removes a list item by using its text.
@@ -1639,7 +1599,7 @@ Example
 {% endhighlight %}
 
 
-####removeItemByIndex<span class="signature">(index)</span>
+### removeItemByIndex<span class="signature">(index)</span>
 {:#methods:removeitembyindex}
 
 Removes a list item by using its index value.
@@ -1667,12 +1627,12 @@ Example
 {% endhighlight %}
 
 
-####selectAll<span class="signature">()</span>
+### selectAll<span class="signature">()</span>
 {:#methods:selectall}
 
 Selects all the list items dynamically. This method will works when the allowMultiSelection property is set as true.
 
-N> This method does not accept any arguments._
+N> This method does not accept any arguments.
 
 Example
 {:.example}
@@ -1684,7 +1644,7 @@ Example
 {% endhighlight %}
 
 
-####selectItemByText<span class="signature">(text)</span>
+### selectItemByText<span class="signature">(text)</span>
 {:#methods:selectItemByText}
 
 Selects the list tem using its text value.
@@ -1712,7 +1672,7 @@ Example
 {% endhighlight %}
 
 
-####selectItemByValue<span class="signature">(value)</span>
+### selectItemByValue<span class="signature">(value)</span>
 {:#methods:selectitembyvalue}
 
 Selects list tem using its value property.
@@ -1740,7 +1700,7 @@ Example
 {% endhighlight %}
 
 
-####selectItemByIndex<span class="signature">(index)</span>
+### selectItemByIndex<span class="signature">(index)</span>
 {:#methods:selectitembyindex}
 
 Selects list item using its index value.
@@ -1768,7 +1728,7 @@ Example
 {% endhighlight %}
 
 
-####selectItemsByIndex<span class="signature">(index/indices)</span>  [Deprecated]
+### selectItemsByIndex<span class="signature">(index/indices)</span> [Deprecated]
 {:#methods:selectitemsbyindex}
 
 Selects a set of list items through its index values. This method will works when allowMultiSelection property is set to true.
@@ -1798,7 +1758,7 @@ Example
 {% endhighlight %}
 
 
-####selectItemsByIndices<span class="signature">(indices)</span>  [Deprecated]
+### selectItemsByIndices<span class="signature">(indices)</span> [Deprecated]
 {:#methods:selectitemsbyindices}
 
 Selects a set of list items through its index values. 
@@ -1826,15 +1786,13 @@ Example
 {% endhighlight %}
 
 
-####unCheckAll<span class="signature">()</span> [Deprecated]
+### unCheckAll<span class="signature">()</span> [Deprecated]
 {:#methods:uncheckall}
 
 Unchecks all the checked list items in the ListBox widget. To use this method showCheckbox property to be set as true.
 
-N>
-> 1. This method does not accept any arguments.
-
-> 2. Since this method is deprecated, we suggest you to use  uncheckAll method.
+N> 1. This method does not accept any arguments.
+N> 2. Since this method is deprecated, we suggest you to use  uncheckAll method.
 
 Example
 {:.example}
@@ -1846,7 +1804,7 @@ Example
 {% endhighlight %}
 
 
-####uncheckAll<span class="signature">()</span>
+### uncheckAll<span class="signature">()</span>
 {:#methods:uncheckAll}
 
 Unchecks all the checked list items in the ListBox widget. To use this method showCheckbox property to be set as true.
@@ -1863,7 +1821,7 @@ Example
 {% endhighlight %}
 
 
-####uncheckItemByIndex<span class="signature">(index)</span>
+### uncheckItemByIndex<span class="signature">(index)</span>
 {:#methods:uncheckitembyindex}
 
 Unchecks a checked list item using its index value. To use this method showCheckbox property to be set as true.
@@ -1891,7 +1849,7 @@ Example
 {% endhighlight %}
 
 
-####uncheckItemsByIndices<span class="signature">(indices)</span>
+### uncheckItemsByIndices<span class="signature">(indices)</span>
 {:#methods:uncheckitemsbyindices}
 
 Unchecks the set of checked list items using its index values. To use this method showCheckbox property must be set to true.
@@ -1919,15 +1877,13 @@ Example
 {% endhighlight %}
 
 
-####unSelectAll<span class="signature">()</span> [Deprecated]
+### unSelectAll<span class="signature">()</span> [Deprecated]
 {:#methods:unselectall}
 
 Unselect all the selected list items in the ListBox widget. 
 
-N>
->1. This method does not accept any arguments.
-
->2. Since this method is deprecated, we suggest you to use unselectAll method.
+N> 1. This method does not accept any arguments.
+N> 2. Since this method is deprecated, we suggest you to use unselectAll method.
 
 Example
 {:.example}
@@ -1939,7 +1895,7 @@ Example
 {% endhighlight %}
 
 
-####unselectAll<span class="signature">()</span>
+### unselectAll<span class="signature">()</span>
 {:#methods:unselectall}
 
 Unselect all the selected list items in the ListBox widget. 
@@ -1957,7 +1913,7 @@ Example
 {% endhighlight %}
 
 
-####unselectItemByIndex<span class="signature">(index)</span>
+### unselectItemByIndex<span class="signature">(index)</span>
 {:#methods:unselectitembyindex}
 
 Unselects a selected list item using its index value
@@ -1985,7 +1941,7 @@ Example
 {% endhighlight %}
 
 
-####unselectItemsByIndex<span class="signature">(index/indices)</span> [Deprecated]
+### unselectItemsByIndex<span class="signature">(index/indices)</span> [Deprecated]
 {:#methods:unselectitemsbyindex}
 
 Unselects a set of list items using its index values. 
@@ -2016,7 +1972,7 @@ Example
 {% endhighlight %}
 
 
-####unselectItemByText<span class="signature">(text)</span>
+### unselectItemByText<span class="signature">(text)</span>
 {:#methods:unselectitembytext}
 
 Unselects a selected list item using its text value.
@@ -2045,7 +2001,7 @@ Example
 {% endhighlight %}
 
 
-####unselectItemByValue<span class="signature">(value)</span>
+### unselectItemByValue<span class="signature">(value)</span>
 {:#methods:unselectitembyvalue}
 
 Unselects a selected list item using its value.
@@ -2073,7 +2029,7 @@ Example
 {% endhighlight %}
 
 
-####unselectItemsByIndices<span class="signature">(indices)</span>
+### unselectItemsByIndices<span class="signature">(indices)</span>
 {:#methods:unselectitemsbyindices}
 
 Unselects a set of list items using its index values. 
@@ -2105,9 +2061,9 @@ Example
 
 
 
-### Events
+## Events
 
-####actionSuccess
+### actionSuccess
 {:#events:actionsuccess}
 
 Triggers when the data requested from AJAX will get successfully loaded in the ListBox widget. 
@@ -2131,7 +2087,7 @@ Example
 {% endhighlight %}
 
 
-####actionComplete
+### actionComplete
 {:#events:actioncomplete}
 
 Triggers when the AJAX requests complete. The request may get failed or succeed.
@@ -2157,7 +2113,7 @@ Example
 {% endhighlight %}
 
 
-####actionFailure
+### actionFailure
 {:#events:actionfailure}
 
 Triggers when the data requested from AJAX get failed.
@@ -2182,7 +2138,7 @@ N> It internally uses jQuery ajaxError event. For details refer [here](http://ap
 {% endhighlight %}
 
 
-####change 
+### change 
 {:#events:change}
 
 Triggers when the item selection is changed.
@@ -2268,7 +2224,7 @@ Example
 {% endhighlight %}
 
 
-####checkChange
+### checkChange
 {:#events:checkchange}
 
 Triggers when the list item is checked or unchecked.
@@ -2356,7 +2312,7 @@ Example
 {% endhighlight %}
 
 
-####create
+### create
 {:#events:create}
 
 Triggers when the ListBox widget is created successfully.
@@ -2402,7 +2358,7 @@ Example
 {% endhighlight %}
 
 
-####destroy
+### destroy
 {:#events:destroy}
 
 Triggers when the ListBox widget is destroyed successfully.
@@ -2448,7 +2404,7 @@ Example
 {% endhighlight %}
 
 
-####itemDrag
+### itemDrag
 {:#events:itemdrag}
 
 Triggers when the list item is being dragged.
@@ -2534,7 +2490,7 @@ Example
 {% endhighlight %}
 
 
-####itemRequest [Deprecated]
+### itemRequest [Deprecated]
 {:#events:itemrequest}
 
 Triggers when the virtual scrolling, requests for new set of list items to be loaded in the ListBox widget.
@@ -2590,7 +2546,7 @@ Example
 {% endhighlight %}
 
 
-####itemDragStart
+### itemDragStart
 {:#events:itemdragstart}
 
 Triggers when the list item is ready to be dragged. 
@@ -2676,7 +2632,7 @@ List item’s value.</td></tr>
 {% endhighlight %}
 
 
-####itemDragStop
+### itemDragStop
 {:#events:itemdragstop}
 
 Triggers when the list item stops dragging. 
@@ -2762,7 +2718,7 @@ List item’s value.</td></tr>
 {% endhighlight %}
 
 
-####itemDropped [Deprecated]
+### itemDropped [Deprecated]
 {:#events:itemdropped}
 
 Triggers when the list item is dropped. 
@@ -2850,7 +2806,7 @@ List item’s value.</td></tr>
 {% endhighlight %}
 
 
-####itemDrop 
+### itemDrop 
 {:#events:itemdrop}
 
 Triggers when the list item is dropped. 
@@ -2937,7 +2893,7 @@ List item’s value.</td></tr>
 {% endhighlight %}
 
 
-####selected [Deprecated]
+### selected [Deprecated]
 {:#events:selected}
 
 Triggers when a list item gets selected.
@@ -3025,8 +2981,8 @@ List item’s value.</td></tr>
 {% endhighlight %}
 
 
-####select
-{:#events:selected}
+### select
+{:#events:select}
 
 Triggers when a list item gets selected. 
 
@@ -3111,7 +3067,7 @@ List item’s value.</td></tr>
 {% endhighlight %}
 
 
-####unselect
+### unselect
 {:#events:unselect}
 
 Triggers when a list item gets unselected. 
@@ -3197,7 +3153,7 @@ List item’s value.</td></tr>
 {% endhighlight %}
 
 
-####selectIndexChanged [Deprecated]
+### selectIndexChanged [Deprecated]
 {:#events:selectindexchanged}
 
 Triggers when the item selection is changed. 

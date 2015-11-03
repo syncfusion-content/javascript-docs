@@ -7,9 +7,9 @@ control: ListBox
 documentation: ug
 ---
 
-## Accessibility
+# Accessibility
 
-### Keyboard interaction
+## Keyboard interaction
 
 You can use Keyboard shortcut keys as an alternative for mouse actions to interact with the ListBox widget. The keyboard interaction will be enabled by default in the ListBox widget. It can be disabled by setting “allowKeyboardNavigation” to false.Please refer the below table for details about short cut keys and its corresponding usage.
 
@@ -49,5 +49,5 @@ Moves to last item</td></tr>
 </table>
 
 
-N>Initial focus can be done by pressing tab key multiple times until it is focused.
+N> _Initial focus can be done by pressing tab key multiple times until it is focused._
 

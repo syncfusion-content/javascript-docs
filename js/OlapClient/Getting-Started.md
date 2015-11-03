@@ -28,7 +28,8 @@ The scripts and style sheets that are mandatorily required to render OlapClient 
 1. ej.widgets.all.min.css
 2. jquery-1.10.2.min.js
 3. jquery.easing.1.3.min.js
-4. ej.web.all.min.js
+4. jquery.globalize.min.js
+5. ej.web.all.min.js
 
 You can find the scripts and style sheets listed above could in any of the following locations:
 
@@ -75,20 +76,24 @@ To initialize a OlapClient widget, define a “div” tag with an appropriate �
 </html>
 
 {% endhighlight %}
-The “url” property in OlapClient widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapClient widget as endpoint are WCF and WebAPI. 
+
+The “url” property in OlapClient widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapClient widget as endpoint are WCF and WebAPI.
+
+N> The above "GettingStarted.html" contains WebAPI Url, which is, **“../OlapClientService”**. Suppose if you are using WCF service then the Url would look like **"../OlapClientService.svc"**. 
 
 ###WebAPI
 
 **Adding a WebAPI Controller**
 
-To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapClientServiceController.cs”, click **Add.**
+To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as **“OlapClientServiceController.cs”**, click **Add.**
 
-Now, WebAPI controller is added into your application successfully that contains the following file. 
-* OLAPServiceController.cs
+Now, WebAPI controller is added into your application successfully that contains the following file.
+ 
+* OlapClientServiceController.cs
 
->**NOTE: While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named “OlapClientServiceController”.**
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named “OlapClientServiceController”.
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `**OlapClientServiceController.cs**` file. 
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapClientServiceController.cs` file. 
 
 {% highlight c# %}
 
@@ -124,7 +129,7 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 **List of Namespaces**
 
-The following are the list of namespaces to be added on top of the main class inside `**OlapClientServiceController.cs**` file.
+The following are the list of namespaces to be added on top of the main class inside `OlapClientServiceController.cs` file.
 
 {% highlight c# %}
 
@@ -137,7 +142,6 @@ using Syncfusion.Olap.Reports;
 using System.Web.Script.Serialization;
 using OLAPUTILS = Syncfusion.JavaScript.Olap;
 
-
 namespace OlapClientDemo
 {
     public class OlapClientServiceController: ApiController
@@ -149,7 +153,7 @@ namespace OlapClientDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, OlapClient and JavaScriptSerializer instances are created immediately inside the main class in `**OlapClientServiceController.cs**` file.
+Now, the connection string to connect OLAP Cube, OlapClient and JavaScriptSerializer instances are created immediately inside the main class in `OlapClientServiceController.cs` file.
 
 {% highlight c# %}
 
@@ -170,7 +174,7 @@ namespace OlapClientDemo
 
 **Service methods in WebAPI Controller**
 
-Define the service methods inside OLAPServiceController class, found inside `**OlapClientServiceController.cs**` file, created while adding WebAPI Controller Class to your Web Application.
+Define the service methods inside OlapClientServiceController class, found inside `OlapClientServiceController.cs` file, created while adding WebAPI Controller Class to your Web Application.
  
 {% highlight c# %}
 

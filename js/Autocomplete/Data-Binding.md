@@ -7,11 +7,11 @@ control: AutoComplete
 documentation: ug
 ---
 
-## Data Binding
+# Data Binding
 
 In order to render the AutoComplete control, the data needs to be bound to it in a proper way. The below sections explains about how to bind either the local or remote data to the AutoComplete widget. 
 
-### Fields
+## Fields
 
 The AutoComplete widget has a field property (object) which holds the properties to map with datasource fields. For example, the field object has a text property which is necessary to map with specific field in the datasource to render the suggestion items in the AutoComplete widget.
 
@@ -69,7 +69,7 @@ Here the name and index fields are mapped with text and key properties of the fi
 
 #### OData
 
-[OData](http://help.syncfusion.com/js/datamanager/data-binding)is a standardized protocol for creating and consuming the data. You can retrieve data from oData service by using[ej.DataManager](http://help.syncfusion.com/js/datamanager/getting-started).
+[OData](http://help.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from oData service by using [ej.DataManager](http://help.syncfusion.com/js/datamanager/getting-started).
 
 Here the ContactName and SupplierID fields are mapped with text and key properties respectively, of the field object. The queries can be created using [ej.Query()](http://helpjs.syncfusion.com/js/datamanager/query).
 
@@ -105,7 +105,7 @@ Here the ContactName and SupplierID fields are mapped with text and key properti
 
 
 
-[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994(v=vs.108).aspx) is a framework for building HTTP services. You can retrieve data from ASP.NET Web API by using[ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
+[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994(v=vs.108).aspx) is a framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
 
 Here the ContactName field is mapped with text property of the field object. 
 
@@ -131,7 +131,7 @@ Here the ContactName field is mapped with text property of the field object.
 
 
 
-N> **Note:** In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API. [Cross domain](http://helpjs.syncfusion.com/js/grid/data-binding) requests can be possible using ej.DataManager.
+N> In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API. [Cross domain](http://helpjs.syncfusion.com/js/grid/data-binding) requests can be possible using ej.DataManager.
 
 ![AutoComplete-APIData](webapi_images\webapi_img1.png)
 
@@ -142,7 +142,11 @@ N> **Note:** In the above data manager configuration, “crossDomain” must be 
 
  In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this using the “[actionFailure](http://help.syncfusion.com/js/api/ejautocomplete)” event. 
 
-See also [actionComplete](http://help.syncfusion.com/js/api/ejautocomplete) and [actionSuccess](http://help.syncfusion.com/js/api/ejautocomplete) events.
+{%seealso%} 
+* [actionComplete](http://help.syncfusion.com/js/api/ejautocomplete) 
+
+* [actionSuccess](http://help.syncfusion.com/js/api/ejautocomplete) events
+{%endseealso%}
 
 {% highlight html %}
 
