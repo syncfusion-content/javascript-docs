@@ -1,3 +1,12 @@
+---
+layout: post
+title: Keyboard Support
+description: Keyboard Support
+platform: js
+control: RTE
+documentation: ug
+
+---
 # Keyboard Support
 
 The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs. 
@@ -116,7 +125,7 @@ Decrease font size<br/><br/></td></tr>
 <br/><br/></td><td>
 Increase font size<br/><br/></td></tr>
 </table>
-To disable the keyboard navigation, set the [allowKeyboardNavigation](http://help.syncfusion.com/js/api/ejrte#members:allowkeyboardnavigation "") property of the editor to false (its default value is true). It will disable all the keyboard navigation shortcuts except for the UP/DOWN keys and PAGE UP/PAGE DOWN keys.
+To disable the keyboard navigation, set the [allowKeyboardNavigation](http://help.syncfusion.com/js/api/ejrte#members:allowkeyboardnavigation) property of the editor to false (its default value is true). It will disable all the keyboard navigation shortcuts except for the UP/DOWN keys and PAGE UP/PAGE DOWN keys.
 
 {% highlight html %}
 

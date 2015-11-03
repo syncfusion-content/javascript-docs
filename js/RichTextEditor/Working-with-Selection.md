@@ -1,12 +1,21 @@
+---
+layout: post
+title: Working with Selection
+description: Working with Selection
+platform: js
+control: RTE
+documentation: ug
+
+---
 # Working with Selection
 
 The editor control provides option to select all the content and in addition to selection of a particular range of content. 
 
 ## Select All 
 
-The [selectAll](http://help.syncfusion.com/js/api/ejrte#methods "") method enables you to select the entire content including images in the editor by programmatically.
+The [selectAll](http://help.syncfusion.com/js/api/ejrte#methods) method enables you to select the entire content including images in the editor by programmatically.
 
-@Note: the selection highlight is invisible if the editor does not have focus. So, if you want to call the selectAll method, focus the editor before.
+N> the selection highlight is invisible if the editor does not have focus. So, if you want to call the selectAll method, focus the editor before.
 
 {% highlight html %}
 

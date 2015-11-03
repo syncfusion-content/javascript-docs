@@ -1,3 +1,12 @@
+---
+layout: post
+title: Working with Hyperlinks
+description: Working with Hyperlinks
+platform: js
+control: RTE
+documentation: ug
+
+---
 # Working with Hyperlinks
 
 A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
@@ -11,7 +20,7 @@ To add a hyperlink to the editor, follow these instructions:
 3. In the **Web** **Address** box, type or paste the destination for the link you are creating.
 4. In the **Text** box, type or edit the required text that you want to display text for the link. 
 
-@Note: Leave this textbox blank if you want to display the full link as hyperlink in the editor.
+N> Leave this textbox blank if you want to display the full link as hyperlink in the editor.
 
 5. To display additional helpful information when you place the pointer on the hyperlink, type the required text in the “Tooltip” field.
 6. Click OK button to insert a hyperlink.
@@ -39,7 +48,7 @@ links: ["createLink", "removeLink"]
 </script>
 {% endhighlight %}
 
-@Note: hyperlinks on a picture are not always visible, but the pointer’s appearance will be changed on positioning the mouse pointer over it.
+N> hyperlinks on a picture are not always visible, but the pointer’s appearance will be changed on positioning the mouse pointer over it.
 
 ## Remove a hyperlink
 
