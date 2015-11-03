@@ -18,7 +18,7 @@ This section explains on how to create a simple OlapChart.
 ###Project Initialization
 Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **OlapChartDemo”**.
 
-Next, add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as “GettingStarted.html”, click **Add.**
+Next, add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as **GettingStarted.html**, click **Add.**
 
 Now, set “GettingStarted.html” as start-up page by right clicking on “GettingStarted.html” page and select **“Set As Start Page”.**
 
@@ -28,7 +28,8 @@ The scripts and style sheets that are mandatorily required to render a OlapChart
 1. ej.widgets.all.min.css
 2. jquery-1.10.2.min.js
 3. jquery.easing.1.3.min.js
-4. ej.web.all.min.js
+4. jquery.globalize.min.js
+5. ej.web.all.min.js
 
 You can find the scripts and style sheets listed above in any of the following locations:
 
@@ -83,20 +84,23 @@ To initialize a OlapChart widget, first, define a “div” tag with an appropri
 
 {% endhighlight %}
 
-The “url” property in OlapChart widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapChart widget as endpoint are WCF and WebAPI. 
+The “url” property in OlapChart widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapChart widget as endpoint are WCF and WebAPI.
+
+N> The above "GettingStarted.html" contains WebAPI Url, which is, **“../OlapChartService”**. Suppose if you are using WCF service then the Url would look like **"../OlapChartService.svc"**.
 
 ###WebAPI
 
 **Adding a WebAPI Controller**
 
-To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapChartServiceController.cs”. Finally, click **Add.**
+To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as **OlapChartServiceController.cs**. Finally, click **Add.**
 
-Now WebAPI controller is added into your application successfully that contains the following file. 
+Now WebAPI controller is added into your application successfully that contains the following file.
+ 
 * OlapChartService.cs
 
 >**NOTE: While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in the demo the controller is named as “OlapChartServiceController”.**
 
-Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `**OlapChartServiceController.cs**` file.
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `OlapChartServiceController.cs` file.
 
 {% highlight c# %}
 
@@ -128,7 +132,7 @@ To add them to your Web Application, right-click on **References** in Solution E
 
 **List of Namespaces**
 
-The following are the list of namespaces to be added on top of the main class inside `**OlapChartController.cs**` file.
+The following are the list of namespaces to be added on top of the main class inside `OlapChartController.cs` file.
 
 {% highlight c# %}
 
@@ -151,7 +155,7 @@ namespace OlapchartDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, OlapChart and JavaScriptSerializer instances are created immediately inside the main class in `**OlapChartController.cs**` file.
+Now, the connection string to connect OLAP Cube, OlapChart and JavaScriptSerializer instances are created immediately inside the main class in `OlapChartController.cs` file.
 
 {% highlight c# %}
 
@@ -170,7 +174,7 @@ namespace OlapChartDemo
 
 **Service methods in WebAPI Controller**
 
-Define the service methods inside OlapChartController class, found inside `**OlapChartController.cs**` file, created while adding WebAPI Controller Class to your Web Application.
+Define the service methods inside OlapChartController class, found inside `OlapChartController.cs` file, created while adding WebAPI Controller Class to your Web Application.
 
 {% highlight c# %}
 
