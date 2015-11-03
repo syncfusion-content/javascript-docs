@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | Grid | JavaScript | Syncfusion
+title: Getting started ' Grid ' JavaScript ' Syncfusion
 description: getting started
 platform: JS
 control: Grid
@@ -23,7 +23,7 @@ Refer to the internal dependencies in the following table.
 <table>
 <tr>
 <td>
-File                          </td><td>
+File                          </td><td>
 Description/Usage</td></tr>
 <tr>
 <td>
@@ -36,15 +36,15 @@ Used to handle data operation and is used while binding data to the JS controls.
 <tr>
 <td>
 ej.grid.min.js</td><td>
-The grid’s main file</td></tr>
+The grid's main file</td></tr>
 <tr>
 <td>
 ej.pager.min.js</td><td>
-It is referred when paging is used in the Grid.  </td></tr>
+It is referred when paging is used in the Grid.  </td></tr>
 <tr>
 <td>
 ej.scroller.min.js</td><td>
-It is referred when scrolling is used in the Grid.  </td></tr>
+It is referred when scrolling is used in the Grid.  </td></tr>
 <tr>
 <td>
 ej.waitingpopup.min.js</td><td>
@@ -300,7 +300,7 @@ Refer to the following code example for initial grouping.
 
 ## Add Summaries
 
-[`Summaries`](http://helpjs.syncfusion.com/js/grid/summary) can be added by setting the [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary) to true and adding required summary rows and columns in the [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) property. For demonstration, Stock column’s `sum` value is displayed as summary.
+[`Summaries`](http://helpjs.syncfusion.com/js/grid/summary) can be added by setting the [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary) to true and adding required summary rows and columns in the [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) property. For demonstration, Stock column's `sum` value is displayed as summary.
 
 {% highlight html %}
 

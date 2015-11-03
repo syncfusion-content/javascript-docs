@@ -9,7 +9,7 @@ documentation: ug
 
 # Paging
 
-You can display the grid records in paged view, by setting [`allowPaging`](http://help.syncfusion.com/js/api/ejgrid#members:allowpaging "") property as `true`. 
+You can display the grid records in paged view, by setting [`allowPaging`](http://help.syncfusion.com/js/api/ejgrid#members:allowpaging "allowPaging") property as `true`. 
 
 The code snippet to enable paging is follows.
 
@@ -20,7 +20,7 @@ The code snippet to enable paging is follows.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
@@ -35,7 +35,7 @@ The following output is displayed as a result of the above code example.
 
 ## Pager with query string
 
-You can pass the current page information as a [query](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-enablequerystring "") string while navigating to other page. To enable query string, set the [`enableQueryString`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-enablequerystring "") property of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "")[`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "") as `true`.
+You can pass the current page information as a [query](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-enablequerystring "query") string while navigating to other page. To enable query string, set the [`enableQueryString`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-enablequerystring "enableQueryString") property of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "pageSettings") as `true`.
 
 The following code example describes the above behavior.
 
@@ -46,7 +46,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		pageSettings: { enableQueryString: true },
@@ -62,11 +62,11 @@ The following output is displayed as a result of the above code example.
 
 ## Pager template
 
-Apart from default pager, there is an option to render a specific custom [template](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "") in a grid pager. To render template in pager, set [`enableTemplates`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-enabletemplates "") as true and [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "") properties of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "").
+Apart from default pager, there is an option to render a specific custom [template](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "template") in a grid pager. To render template in pager, set [`enableTemplates`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-enabletemplates "enableTemplates") as true and [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "template") properties of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "pageSettings").
 
-Prevent to show the default pager while enabling the pager [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "") by setting [`showDefaults`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-showdefaults "") property of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "") as `false`.
+Prevent to show the default pager while enabling the pager [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "template") by setting [`showDefaults`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-showdefaults "showDefaults") property of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "pageSettings") as `false`.
 
-I> [It’s a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "") within the `script` tag with `type` as "text/x-jsrender".]
+N> It's a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "template") within the `script` tag with `type` as "text/x-jsrender".
 
 The following code example describes the above behavior.
 
@@ -89,7 +89,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		pageSettings: { enableTemplates: true, template: "#template", showDefaults: false },  

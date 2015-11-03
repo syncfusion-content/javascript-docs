@@ -8,15 +8,16 @@ documentation: ug
 ---
 # Print
 
-You need to use [`print()`]([http://helpjs.syncfusion.com/js/api/ejgrid#methods:print](http://helpjs.syncfusion.com/js/api/ejgrid#methods:print "")) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "").
+You need to use [`print()`](http://helpjs.syncfusion.com/js/api/ejgrid#methods:print) method from Grid instance to print the Grid. You can add Print option in Toolbar item by adding `ej.Grid.ToolBarItems.PrintGrid` in [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems).
 
 {% highlight html %}
+
 <div id="Grid">
 <script type="text/javascript">
   $("#Grid").ejGrid(
   // the datasource "window.gridData" is referred from jsondata.min.js
  	 dataSource: window.gridData,
-  	toolbarSettings: showToolbar: true,
+  	toolbarSettings:{ showToolbar: true},
   	toolbarItems: [ej.Grid.ToolBarItems.PrintGrid],
   	allowPaging: true,
   	columns: 
@@ -39,14 +40,14 @@ You need to use [`print()`]([http://helpjs.syncfusion.com/js/api/ejgrid#methods:
 
 Some of print options are not configurable through JavaScript code. You need to customize layout, paper size, margins options through browser's page setup dialog. Please find the following guidelines link to browser page setup.
 
-* [Chrome]([https://support.google.com/chrome/answer/1379552?hl=en](https://support.google.com/chrome/answer/1379552?hl=en# ""))
-* [Firefox]([https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox](https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox# ""))
-* [Safari]([http://www.maclife.com/article/howtos/how_optimize_your_print_settings](http://www.maclife.com/article/howtos/how_optimize_your_print_settings# ""))
-* [IE]( [http://www.helpteaching.com/help/print/index.htm](http://www.helpteaching.com/help/print/index.htm# "")) 
+* [Chrome](https://support.google.com/chrome/answer/1379552?hl=en)
+* [Firefox](https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox)
+* [Safari](http://www.maclife.com/article/howtos/how_optimize_your_print_settings)
+* [IE](http://www.helpteaching.com/help/print/index.htm) 
 
 ## Print on external Button Click
 
-By default, the Grid can be print from toolbar. To print from external button action, you need to call the grid's [`print()`](http://help.syncfusion.com/js/api/ejgrid#methods:print "") method from required button event.
+By default, the Grid can be print from toolbar. To print from external button action, you need to call the grid's [`print()`](http://help.syncfusion.com/js/api/ejgrid#methods:print) method from required button event.
 
 {% highlight html %}
 <button id="print">Print</button>
@@ -102,7 +103,8 @@ Print dialog in Chrome browser
 
 By default, the Grid will print all records. To print current page, you need to set `pageSettings.printMode` as `ej.Grid.PrintMode.CurrentPage`.
 
-{%highlight html%}
+{% highlight  html %}
+
 <div id="Grid"></div>
 <script type="text/javascript">
 $("#Grid").ejGrid({

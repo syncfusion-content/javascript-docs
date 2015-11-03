@@ -9,7 +9,7 @@ documentation: ug
 
 # Grouping
 
-[Grouping](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "") is a collection of records that belong to particular category. When grouping is applied, the data is organized into a hierarchical structure based on corresponding column values. To enable grouping, set [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "") property as `true`.
+[Grouping](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "Grouping") is a collection of records that belong to particular category. When grouping is applied, the data is organized into a hierarchical structure based on corresponding column values. To enable grouping, set [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "allowGrouping") property as `true`.
 
 Columns can be grouped by simply dragging the column header and drop on the group drop area or simply click the group button which is displayed in the column. By default, sorting is done while grouping the column.
 
@@ -22,7 +22,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowGrouping : true,
@@ -38,7 +38,7 @@ The following output is displayed as a result of the above code example.
 
 ## Initial Grouping
 
-While initializing the grid itself, there is an option to group the column and display it in a hierarchical structure. To enable initial grouping, set array of column’s [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") name to be grouped to [`groupSettings.groupedColumns`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-groupedcolumns "") property. Define the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") name in the array format.
+While initializing the grid itself, there is an option to group the column and display it in a hierarchical structure. To enable initial grouping, set array of column's [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name to be grouped to [`groupSettings.groupedColumns`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-groupedcolumns "groupSettings.groupedColumns") property. Define the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name in the array format.
 
 The following code example describes the above behavior.
 
@@ -49,7 +49,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowGrouping : true,
@@ -77,7 +77,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowGrouping : true,
@@ -95,7 +95,7 @@ The following output is displayed as a result of the above code example.
 
 ## Group buttons
 
-To do grouping easily without doing drag and drop column header by setting [`showToggleButton`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showtogglebutton "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") as `true`.
+To do grouping easily without doing drag and drop column header by setting [`showToggleButton`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showtogglebutton "showToggleButton") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "groupSettings") as `true`.
 
 The following code example describes the above behavior.
 
@@ -106,7 +106,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowGrouping : true,
@@ -123,7 +123,7 @@ The following output is displayed as a result of the above code example.
 
 ## Hide Ungroup button
 
-Hide ungroup button from grouped columns which is in the group drop area by setting the [`showUngroupButton`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showungroupbutton "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") as `false`.
+Hide ungroup button from grouped columns which is in the group drop area by setting the [`showUngroupButton`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showungroupbutton "showUngroupButton") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "groupSettings") as `false`.
 
 The following code example describes the above behavior.
 
@@ -134,7 +134,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowGrouping : true,
@@ -151,7 +151,7 @@ The following output is displayed as a result of the above code example.
 
 ## Hide Grouped Column
 
-While grouping a particular column, there is an option to hide the grouped columns from grid. To enable hide grouped column option, set [`showGroupedColumn`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showgroupedcolumn "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") as `false`.
+While grouping a particular column, there is an option to hide the grouped columns from grid. To enable hide grouped column option, set [`showGroupedColumn`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showgroupedcolumn "showGroupedColumn") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "groupSettings") as `false`.
 
 The following code example describes the above behavior.
 
@@ -162,7 +162,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowGrouping : true,
@@ -179,7 +179,7 @@ The following output is displayed as a result of the above code example.
 
 ## AutoSize Drop Area
 
-Drag any header and move it on the group drop area, then its portion expands smoothly. Stop this animation by setting [`enableDropAreaAutoSizing`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-enabledropareaautosizing "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") as `false`.
+Drag any header and move it on the group drop area, then its portion expands smoothly. Stop this animation by setting [`enableDropAreaAutoSizing`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-enabledropareaautosizing "enableDropAreaAutoSizing") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "groupSettings") as `false`.
 
 The following code example describes the above behavior.
 
@@ -190,7 +190,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowGrouping : true,
@@ -207,7 +207,7 @@ The following output is displayed as a result of the above code example.
 
 ## Hide Drop area
 
-To avoid ungrouping or further grouping of a column after an initial column grouping by setting [`showDropArea`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showdroparea "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") as `false`.
+To avoid ungrouping or further grouping of a column after an initial column grouping by setting [`showDropArea`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-showdroparea "showDropArea") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "groupSettings") as `false`.
 
 The following code example describes the above behavior.
 
@@ -218,7 +218,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowGrouping : true,
@@ -235,11 +235,12 @@ The following output is displayed as a result of the above code example.
 
 ## Group Caption Format / Group Caption Template
 
-Using [`captionFormat`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-captionformat "") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "") you can render any type of JsRender templates or customizing the group caption text. 
+Using [`captionFormat`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-captionformat "captionFormat") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "groupSettings") you can render any type of JsRender templates or customizing the group caption text. 
 
-You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "").
+You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
-T> [1. It’s a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender". <BR> 2. Using locale property of `GroupCaptionFormat`, you can only customize the default group caption text.] 
+N> 1. It's a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender". 
+N> 2. Using locale property of `GroupCaptionFormat`, you can only customize the default group caption text.
 
 The following code example describes the above behavior.
 
@@ -254,7 +255,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"],

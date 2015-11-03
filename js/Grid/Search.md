@@ -10,7 +10,7 @@ documentation: ug
 
 # Search
 
-The grid has an option to search its content using the JavaScript method [`search`](http://help.syncfusion.com/js/api/ejgrid#methods:search "") with search key as parameter. Also, it provides option to integrate Search text box in grid toolbar, by adding `search` toolbar item in [`toolbarSetting.toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "") property.
+The grid has an option to search its content using the JavaScript method [`search`](http://help.syncfusion.com/js/api/ejgrid#methods:search "search") with search key as parameter. Also, it provides option to integrate Search text box in grid toolbar, by adding `search` toolbar item in [`toolbarSetting.toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarSetting.toolbarItems") property.
 
 The following code example describes the above behavior.
 
@@ -22,7 +22,7 @@ The following code example describes the above behavior.
 $(function () {
 	$("#Grid").ejGrid({
 		toolbarSettings : { showToolbar : true, toolbarItems : ["search"] },
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowSearching : true,
@@ -40,7 +40,7 @@ The following output is displayed as a result of the above code example.
 
 While initializing the grid, there is an option to display only the searched data in grid. To perform initial searching, define `fields`, `operator`, `key` and `ignoreCase` in `searchSettings` property.
 
-I> `key` value must be passed as `string`.
+N> `key` value must be passed as `string`.
 
 The following code example describes the above behavior.
 
@@ -52,7 +52,7 @@ The following code example describes the above behavior.
 $(function () {
 	$("#Grid").ejGrid({
 		toolbarSettings : { showToolbar : true, toolbarItems : ["search"] },
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowSearching : true,
