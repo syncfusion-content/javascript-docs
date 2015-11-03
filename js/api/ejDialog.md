@@ -8,7 +8,12 @@ metacontent:
 ---
 
 ## Custom Design for Html Dialog widget.
-$(element).ejDialog<span class="signature">(options)</span>
+
+{% highlight js %}
+
+    $(element).ejDialog<span class="signature">(options)</span>
+
+{% endhighlight %}
 
 <table>
 <tr>
@@ -64,7 +69,8 @@ Example
 
     $("#dialog").ejDialog({actionButtons: ["close","collapsible","pin"]}); 
     
- {% endhighlight  %}
+ {% endhighlight %}
+
 
 ### allowDraggable<span class="type-signature type object">Boolean
 {:#members:allowdraggable}
@@ -82,7 +88,7 @@ Example
 
      $("#dialog").ejDialog({allowDraggable: false});
          
-{% endhighlight  %}
+{% endhighlight %}
 
 ### allowKeyboardNavigation<span class="type-signature type boolean">Boolean</span>
 {:#members:allowkeyboardnavigation}
@@ -100,7 +106,8 @@ Example
 
     $("#dialog").ejDialog({allowKeyboardNavigation: true}); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### animation<span class="type-signature type JSONobject">JSONobject</span>
 {:#members:animation}
@@ -175,7 +182,8 @@ Example
         
         });   
               
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### closeIconTooltip<span class="type-signature type string">String</span>
 {:#members:closeicontooltip}
@@ -193,7 +201,8 @@ Example
 
     $("#dialog").ejDialog({closeIconTooltip: "close" }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### closeOnEscape<span class="type-signature type boolean">Boolean</span>
 {:#members:closeonescape}
@@ -211,7 +220,8 @@ Example
 
     $("#dialog").ejDialog({closeOnEscape: false}); 
     
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### content[Deprecated]<span class="type-signature type string">String</span>
 {:#members:content}
@@ -231,7 +241,8 @@ Example
 
     $("#dialog").ejDialog({content: "#samplearea" }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### contentType<span class="type-signature type string">String</span>
 {:#members:contenttype}
@@ -252,6 +263,7 @@ Example
 
 {% endhighlight %}
 
+
 ### contentUrl<span class="type-signature type string">String</span>
 {:#members:contenturl}
 
@@ -270,7 +282,8 @@ Example
 
     contentUrl: "http://js.syncfusion.com/demos/web/dialog/ajaxcontent.html" }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### cssClass<span class="type-signature type string">String</span>
 {:#members:cssclass}
@@ -288,7 +301,7 @@ Example
 
     $("#dialog").ejDialog({ cssClass: "gradient-lime" }); 
     
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ### enableAnimation<span class="type-signature type boolean">Boolean</span>
@@ -307,7 +320,8 @@ Example
 
     $("#dialog").ejDialog({ enableAnimation: false}); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### enabled<span class="type-signature type boolean">Boolean</span>
 {:#members:enabled}
@@ -325,7 +339,8 @@ Example
 
     $("#dialog").ejDialog({ enabled: true }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### enableModal<span class="type-signature type boolean">Boolean</span>
 {:#members:enablemodal}
@@ -343,7 +358,8 @@ Example
 
     $("#dialog").ejDialog({enableModal: true}); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### enablePersistence<span class="type-signature type boolean">Boolean</span>
 {:#members:enablepersistence}
@@ -364,7 +380,8 @@ Example
 
     $("#dialog").ejDialog({enablePersistence: true}); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### enableResize<span class="type-signature type boolean">Boolean</span>
 {:#members:enableResize}
@@ -382,7 +399,8 @@ Example
 
     $("#dialog").ejDialog({enableResize: false}); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### enableRTL<span class="type-signature type boolean">Boolean</span>
 {:#members:enablertl}
@@ -400,7 +418,8 @@ Example
 
     $("#dialog").ejDialog({enableRTL: true}); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### faviconCSS<span class="type-signature type string">String</span>
 {:#members:faviconcss}
@@ -418,7 +437,8 @@ Example
 
     $("#dialog").ejDialog({faviconCSS : "custom-icon" }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### height<span class="type-signature type string">String</span> <span class="type-signature type integer">Integer</span> 
 {:#members:height}
@@ -436,7 +456,8 @@ Example
 
     $("#dialog").ejDialog({height: 400 }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### isResponsive<span class="type-signature type boolean">Boolean</span> 
 {:#members:isresponsive}
@@ -456,7 +477,8 @@ Example
 
     $("#dialog").ejDialog({isResponsive: true }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### maxHeight<span class="type-signature type integer">Integer</span> 
 {:#members:maxheight}
@@ -474,7 +496,8 @@ Example
 
     $("#dialog").ejDialog({maxHeight: 600 }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### maxWidth<span class="type-signature type integer">Integer</span> 
 {:#members:maxwidth}
@@ -492,7 +515,8 @@ Example
 
     $("#dialog").ejDialog({maxWidth: 600 }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### minHeight<span class="type-signature type integer">Integer</span> 
 {:#members:minheight}
@@ -510,7 +534,7 @@ Example
 
     $("#dialog").ejDialog({minHeight: 400 }); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 ### minWidth<span class="type-signature type integer">Integer</span> 
 {:#members:minwidth}
@@ -528,7 +552,8 @@ Example
 
     $("#dialog").ejDialog({minWidth: 400 }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### position<span class="type-signature type JSONobject">JSONobject</span>   
 {:#members:position}
@@ -563,7 +588,8 @@ Example
 
     $("#dialog").ejDialog({position: { X: 300, Y: 10 }}); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### showHeader<span class="type-signature type boolean">Boolean</span>    
 {:#members:showheader}
@@ -581,7 +607,8 @@ Example
 
     $("#dialog").ejDialog({showHeader: false}); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### showOnInit<span class="type-signature type boolean">Boolean</span> 
 {:#members:showoninit}
@@ -599,7 +626,8 @@ Example
 
     $("#dialog").ejDialog({showOnInit:true}); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### showRoundedCorner<span class="type-signature type boolean">Boolean</span> 
 {:#members:showroundedcorner}
@@ -617,7 +645,7 @@ Example
 
     $("#dialog").ejDialog({showRoundedCorner: true}); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ### target <span class="type-signature type string">String</span> 
@@ -636,7 +664,8 @@ Example
 
     $("#dialog").ejDialog({target: "#samplearea" }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### title <span class="type-signature type string">String</span> 
 {:#members:title}
@@ -654,7 +683,9 @@ Example
 
     $("#dialog").ejDialog({title: "Custom title" }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
+
 ### width <span class="type-signature type string">String</span> <span class="type-signature type integer">Integer</span> 
 {:#members:width}
 
@@ -671,7 +702,8 @@ Example
 
     $("#dialog").ejDialog({width: 500 }); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### zIndex<span class="type-signature type integer">Integer</span>
 {:#members:zindex}
@@ -689,7 +721,7 @@ Example
 
     $("#dialog").ejDialog({zIndex: 500 }); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 ## Methods
 
@@ -705,7 +737,7 @@ Example
 
     $("#dialog").ejDialog("close"); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 ### collapse<span class="signature">()</span>
 {:#methods:collapse}
@@ -719,7 +751,8 @@ Example
 
     $("#dialog").ejDialog("collapse"); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### destroy<span class="signature">()</span>
 {:#methods:destroy}
@@ -733,7 +766,8 @@ Example
 
     $("#dialog").ejDialog("destroy"); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### expand<span class="signature">()</span>
 {:#methods:expand}
@@ -747,7 +781,7 @@ Example
 
     $("#dialog").ejDialog("collapse");
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ### isOpened<span class="signature">()</span> [Deprecated]
@@ -762,9 +796,10 @@ Example
 
 {% highlight js %}
 
-$("#dialog").ejDialog("isOpened"); 
+    $("#dialog").ejDialog("isOpened"); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### isOpen<span class="signature">()</span>
 {:#methods:isopen}
@@ -778,7 +813,8 @@ Example
 
     var isOpen = $("#dialog").ejDialog("isOpen"); 
 
-{% highlight js %}
+{% endhighlight %}
+
 
 ### maximize<span class="signature">()</span>
 {:#methods:maximize}
@@ -792,7 +828,8 @@ Example
 
     $("#dialog").ejDialog("maximize"); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### minimize<span class="signature">()</span>
 {:#methods:minimize}
@@ -806,7 +843,8 @@ Example
 
     $("#dialog").ejDialog("minimize"); 
 
-{% endhighlight  %}
+{% endhighlight %}
+
 
 ### open<span class="signature">()</span>
 {:#methods:open}
@@ -820,7 +858,7 @@ Example
 
     $("#dialog").ejDialog("open"); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 ### pin<span class="signature">()</span>
 {:#methods:pin}
@@ -834,7 +872,7 @@ Example
 
     $("#dialog").ejDialog("pin"); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ### restore<span class="signature">()</span>
@@ -849,7 +887,7 @@ Example
 
     $("#dialog").ejDialog("maximize");
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ### unpin<span class="signature">()</span>
@@ -864,7 +902,7 @@ Example
 
     $("#dialog").ejDialog("unpin"); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ### setTitle<span class="signature">(title)</span>
@@ -892,7 +930,7 @@ Example
 
     $("#dialog").ejDialog("setTitle","The Dialog"); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ### setContent<span class="signature">(content)</span>
@@ -920,7 +958,7 @@ Example
 
     $("#dialog").ejDialog("setContent","custom content"); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ### focus<span class="signature">()</span>
@@ -935,7 +973,7 @@ Example
 
     $("#dialog").ejDialog("focus"); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ## Events
@@ -1086,7 +1124,7 @@ Example
 {% highlight js %}
 
 
-$("#dialog").ejDialog({ 	ajaxSuccess: function (args){}});
+    $("#dialog").ejDialog({ 	ajaxSuccess: function (args){}});
 
 {% endhighlight %}
 
@@ -1226,7 +1264,7 @@ Example
 
     $("#dialog").ejDialog({ 	close: function (args) {} }); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 
@@ -1278,7 +1316,7 @@ Example
 
     $("#dialog").ejDialog({ contentLoad: function (args) {} }); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ###create
@@ -1356,7 +1394,7 @@ Example
 
     $("#dialog").ejDialog({ 	destroy: function (args) {} }); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ###drag
@@ -1400,7 +1438,7 @@ Example
 
 $("#dialog").ejDialog({ 	drag: function (args) {} }); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ###dragStart
@@ -1444,7 +1482,7 @@ Example
 
 $("#dialog").ejDialog({ 	dragStart: function (args) {} }); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ###dragStop
@@ -1524,7 +1562,7 @@ Example
 {% highlight js %}
 
 
-$("#dialog").ejDialog({ 	open: function (args) {} }); 
+           $("#dialog").ejDialog({ 	open: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1568,9 +1606,9 @@ Example
 
 {% highlight js %}
 
-$("#dialog").ejDialog({ 	resize: function (args) {} }); 
+    $("#dialog").ejDialog({ 	resize: function (args) {} }); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ###resizeStart
@@ -1614,7 +1652,7 @@ Example
 
     $("#dialog").ejDialog({ 	resizeStart: function (args) {} }); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ###resizeStop
@@ -1658,7 +1696,7 @@ Example
 
     $("#dialog").ejDialog({ 	resizeStop: function (args) {} }); 
 
-{% endhighlight  %}
+{% endhighlight %}
 
 
 ###expand
