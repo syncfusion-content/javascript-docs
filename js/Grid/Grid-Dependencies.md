@@ -16,7 +16,7 @@ _Grid Dependency_
 <table>
 <tr>
 <th>
-<b>File                          </b></th><th>
+<b>File                          </b></th><th>
 <b>Description/Usage</b></th></tr>
 <tr>
 <td>
@@ -33,11 +33,11 @@ Should be referred when using <b>Grid</b> control.</td></tr>
 <tr>
 <td>
 ej.pager.min.js</td><td>
-Should be referred when using paging in grid.  </td></tr>
+Should be referred when using paging in grid.  </td></tr>
 <tr>
 <td>
 ej.scroller.min.js</td><td>
-Should be referred when using scrolling in grid.  </td></tr>
+Should be referred when using scrolling in grid.  </td></tr>
 <tr>
 <td>
 ej.waitingpopup.min.js</td><td>

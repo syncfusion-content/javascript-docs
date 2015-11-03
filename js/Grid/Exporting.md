@@ -50,7 +50,7 @@ $(function () {
 
 ## Server configuration
 
-Currently grid data can be converted to different file formats in server-side only, through `EJ`’s helper functions in .Net. So, to use exporting in your projects, it is required to create a server with any of the following web services. 
+Currently grid data can be converted to different file formats in server-side only, through **EJ's** helper functions in .Net. So, to use exporting in your projects, it is required to create a server with any of the following web services. 
 
 * WebAPI 
 * WCF Service
@@ -151,7 +151,7 @@ public class OrdersController: ApiController
 
 			var property = gridProp.GetType()
 
-				.GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+				.GetProperty(ds.Key, BindingFlags.Instance ' BindingFlags.Public ' BindingFlags.IgnoreCase);
 
 			if (property != null)
 
@@ -204,7 +204,7 @@ Currently server helper functions allows following three types of exporting
 ## Multiple Grid export to single file
 
 
-To export multiple grids in current page, the method `ej.Grid.exportAll` can be used with ‘jquery selector’ as the parameter.
+To export multiple grids in current page, the method `ej.Grid.exportAll` can be used with 'jquery selector' as the parameter.
 
 The JavaScript code snippet for it is 
 
@@ -380,7 +380,7 @@ The snippet for this is.
 
 {% endhighlight %}
 
-On server before calling the `Export` function, the data source should be processed using DataOperations’s Execute function. 
+On server before calling the `Export` function, the data source should be processed using DataOperations's Execute function. 
 
 {% highlight c# %}
 
@@ -446,7 +446,7 @@ private GridProperties ConvertGridpropertiesect(string gridProperty)
 
 	{
 
-		var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+		var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance ' BindingFlags.Public ' BindingFlags.IgnoreCase);
 
 		if (property != null)
 
@@ -473,7 +473,7 @@ private GridProperties ConvertGridpropertiesect(string gridProperty)
 
 ## Local data 
 
-By default, client data source is not sent to server to prevent unwanted data transfer since all data origin is server. In case, if you don’t want to query the data source again for exporting in server, the grid’s client `dataSource` can be sent to server on export postback by removing the `dataSource` property in grid’s ignore list. The code snippet for this is follows
+By default, client data source is not sent to server to prevent unwanted data transfer since all data origin is server. In case, if you don't want to query the data source again for exporting in server, the grid's client `dataSource` can be sent to server on export postback by removing the `dataSource` property in grid's ignore list. The code snippet for this is follows
 
 {% highlight js %}
 

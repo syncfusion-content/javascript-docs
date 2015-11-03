@@ -12,7 +12,7 @@ documentation: ug
 Column definitions are used as the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") schema in grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") property of the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") is necessary to map the datasource values in grid columns.
 
 N> 1.The column with [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") which are not in the datasource, then the column values will be displayed as empty.
-N> 2.If the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name contains “dot” then it is considered as complex binding.
+N> 2.If the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name contains "dot" then it is considered as complex binding.
 
 ## Auto generation
 
@@ -43,7 +43,7 @@ How to set isPrimaryKey for auto generated columns when editing is enabled:
 
 Using [`dataBound`](http://help.syncfusion.com/js/api/ejgrid#events:databound "dataBound") event, you can set [`isPrimaryKey`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isprimarykey "isPrimaryKey") value as `true` by two ways. The following code example demonstrates the above behavior.
 
-1. If primary key “column index” is known then refer the following code example
+1. If primary key "column index" is known then refer the following code example
 {% highlight html %}
 <div id="Grid"></div>
 {% endhighlight %}
@@ -69,7 +69,7 @@ $(function () {
 });
 {% endhighlight %}
 
-2. If primary key “column field name” is known then refer the following code example
+2. If primary key "column field name" is known then refer the following code example
 {% highlight html %}
 <div id="Grid"></div>
 {% endhighlight %}
@@ -97,7 +97,7 @@ HeaderText
 
 It represents the title for particular column. To enable header text, set [`headerText`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "headerText") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). The following code example describes the above behavior.
 
-N> If [`headerText`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "headerText") is not defined then the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name is considered as header text for that particular column. If [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name and [`headerText`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "headerText") also not defined then the column is rendered with “empty” header text.
+N> If [`headerText`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "headerText") is not defined then the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name is considered as header text for that particular column. If [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name and [`headerText`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "headerText") also not defined then the column is rendered with "empty" header text.
 
 The following code example describes the above behavior.
 
@@ -136,7 +136,7 @@ Header Text alignment
 3. Center
 4. Justify
 
-N> For [`headerTextAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertextalign "headerTextAlign") property you can assign either `string` value (“right”) or `enum` value (`ej.TextAlign.Right`).
+N> For [`headerTextAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertextalign "headerTextAlign") property you can assign either `string` value ("right") or `enum` value (`ej.TextAlign.Right`).
 
 The following code example describes the above behavior.
 
@@ -172,7 +172,7 @@ The template design that applies on for the column header. To render template, s
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
-N> It’s a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") within the `script` tag with `type` as “text/x-jsrender”.
+N> It's a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") within the `script` tag with `type` as "text/x-jsrender".
 
 The following code example describes the above behavior.
 
@@ -192,7 +192,7 @@ $(function () {
 		allowPaging : true,
 		columns : [
 			{ field : "OrderID", headerText : "Order ID" },
-			{ field : "EmployeeID", headerTemplateID : “Emp ID < span class = "e-userlogin e-icon employee" >  <  / span > " },
+			{ field : "EmployeeID", headerTemplateID : "Emp ID < span class = "e-userlogin e-icon employee" >  <  / span > " },
 			{ field: " Freight ", headerText: " Freight " },
 			{ field: " ShipCountry ", headerText: " Country " },
 			{ field: " ShipCity ", headerText: " City " }
@@ -215,7 +215,7 @@ You can [align](http://help.syncfusion.com/js/api/ejgrid#members:columns-textali
 3. Center
 4. Justify
 
-N> 1.For [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "textAlign") property you can assign either `string` value (“right”) or `enum` value (`ej.TextAlign.Right`).
+N> 1.For [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "textAlign") property you can assign either `string` value ("right") or `enum` value (`ej.TextAlign.Right`).
 N> 2. The [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "textAlign") property will affect both content and header text of the grid.
 
 The following code example describes the above behavior.
@@ -250,7 +250,7 @@ The following output is displayed as a result of the above code example.
 
 [Format](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "Format") is the process of customizing the particular column data with specified jquery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. To specify the globalize format, by using [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "format") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns").
 
-The [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "format") value should be wrapped within “{0:” and “}”. (For ex: "{0:C3}"). The [data format](https://github.com/jquery/globalize/tree/v0.1.1#format "data format") strings available for the Date and Number types.
+The [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "format") value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format](https://github.com/jquery/globalize/tree/v0.1.1#format "data format") strings available for the Date and Number types.
 
 The following code example describes the above behavior.
 
@@ -316,9 +316,9 @@ The following output is displayed as a result of the above code example.
 
 ## Resize to fit 
 
-The [`allowResizeToFit`](http://help.syncfusion.com/js/api/ejgrid#members:allowresizetofit "allowResizeToFit") property enable the grid to set width to columns based on maximum width of the particular column’s content to facilitate full visibility of data in all the grid rows and this automatic behavior is applicable Only for the columns which does not have width specified. 
+The [`allowResizeToFit`](http://help.syncfusion.com/js/api/ejgrid#members:allowresizetofit "allowResizeToFit") property enable the grid to set width to columns based on maximum width of the particular column's content to facilitate full visibility of data in all the grid rows and this automatic behavior is applicable Only for the columns which does not have width specified. 
 
-On columns where “width is defined”, double click on the particular column header’s resizer symbol to resize the column to show the whole text. For example, refer the “ShipCity” column in the below code snippet and output screen shot. 
+On columns where "width is defined", double click on the particular column header's resizer symbol to resize the column to show the whole text. For example, refer the "ShipCity" column in the below code snippet and output screen shot. 
 
 The following code example describes the above behavior. 
 
@@ -449,7 +449,7 @@ The following output is displayed as a result of the above code example.
 
 The grid has options to merge the grid cells based on the required conditions. This can be enabled by setting [`allowCellMerging`](http://help.syncfusion.com/js/api/ejgrid#members:allowcellmerging "allowCellMerging") property as `true` and the merge conditions can be defined in [`mergeCellInfo`](http://help.syncfusion.com/js/api/ejgrid#events:mergecellinfo "mergeCellInfo") event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
 
-You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in [`mergeCellInfo`](http://help.syncfusion.com/js/api/ejgrid#events:mergecellinfo "mergeCellInfo") event’s argument.
+You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in [`mergeCellInfo`](http://help.syncfusion.com/js/api/ejgrid#events:mergecellinfo "mergeCellInfo") event's argument.
 
 The following code example describes the above behavior.
 
@@ -528,7 +528,7 @@ The following output is displayed as a result of the above code example.
 
 ## Column Template
 
-Html templates can be specified in the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") property of the particular column as a string (html element) or ID of the template’s HTML element.
+Html templates can be specified in the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") property of the particular column as a string (html element) or ID of the template's HTML element.
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
 
@@ -603,7 +603,7 @@ $(function () {
 
 ## Read only
 
-To make a column as “read-only” then set [`allowEditing`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowediting "allowEditing") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") as `false`.
+To make a column as "read-only" then set [`allowEditing`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowediting "allowEditing") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") as `false`.
 
 The following code example describes the above behavior.
 
@@ -729,9 +729,9 @@ The following output is displayed as a result of the above code example.
 
 Custom buttons
 
-You can add custom button in the command column by specifying the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "type") property of [`commands`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "commands") as “empty” or any other `string` instead of `enum` values.
+You can add custom button in the command column by specifying the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "type") property of [`commands`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "commands") as "empty" or any other `string` instead of `enum` values.
 
-N> 1. For [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "type") property you can assign either `string` value (“edit”) or `enum` value (`ej.Grid.UnboundType.Edit`).
+N> 1. For [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "type") property you can assign either `string` value ("edit") or `enum` value (`ej.Grid.UnboundType.Edit`).
 N> 2. In command column you can add only buttons.
 
 The following code example describes the above behavior.
@@ -810,7 +810,7 @@ The following output is displayed as a result of the above code example.
 
 Lookup data source can be bound to [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). Data [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") and `text` can be set using [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") and [`foreignKeyValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns").
 
-Notes: For foreign key column the sorting and grouping is based on [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") instead of [`foreignKeyValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue").
+I> For foreign key column the sorting and grouping is based on [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") instead of [`foreignKeyValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue").
 
 The following code example describes the above behavior.
 
@@ -963,7 +963,7 @@ The following output is displayed as a result of the above code example.
 
 Used to define the type of the particular column data. If the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-type "type") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") is not specified then its type is automatically defined based on the first row data of that column.
 
-N> The [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-type "type") is needed for filtering feature when first row of the data is “null” or “empty”.
+N> The [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-type "type") is needed for filtering feature when first row of the data is "null" or "empty".
 
 The following code example describes the above behavior.
 

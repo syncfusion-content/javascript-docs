@@ -28,7 +28,7 @@ Multiple Selections
 
 ### Row Selection
 
-[Row selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "Row selection") is enabled by set [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `row`. For random row selection, press “Ctrl + mouse left” click and for continuous row selection press “Shift + mouse left” click on the grid rows. To unselect selected rows, by press “Ctrl + mouse left click on selected row.
+[Row selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "Row selection") is enabled by set [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `row`. For random row selection, press "Ctrl + mouse left" click and for continuous row selection press "Shift + mouse left" click on the grid rows. To unselect selected rows, by press "Ctrl + mouse left" click on selected row.
 
 The following code example describes the above behavior.
 
@@ -59,7 +59,7 @@ The following output is displayed as a result of the above code example
 
 ### Cell Selection
 
-[Cell selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "Cell selection") is enabled by set [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `cell`. For random cell selection, press “Ctrl + mouse left” click and for continuous cell selection, press “Shift + mouse left” click on the grid cells. To unselect selected cells, press “Ctrl + mouse left on selected cell” click.
+[Cell selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "Cell selection") is enabled by set [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `cell`. For random cell selection, press "Ctrl + mouse left" click and for continuous cell selection, press "Shift + mouse left" click on the grid cells. To unselect selected cells, press "Ctrl + mouse left" on selected cell click.
 
 The following code example describes the above behavior.
 
@@ -122,7 +122,7 @@ The following output is displayed as a result of the above code example
 
 ### Column Selection
 
-[Column selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "Column selection") can be enabled by setting [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `column`. For random column selection, press “Ctrl + mouse left click” and for continuous column selection, press “Shift + mouse left click” on the top of the column header. To unselect selected columns, press “Ctrl + mouse left click” on top of the selected column header.
+[Column selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "Column selection") can be enabled by setting [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `column`. For random column selection, press "Ctrl + mouse left click" and for continuous column selection, press "Shift + mouse left click" on the top of the column header. To unselect selected columns, press "Ctrl + mouse left click" on top of the selected column header.
 
 The following code example describes the above behavior.
 

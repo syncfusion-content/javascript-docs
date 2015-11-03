@@ -38,7 +38,7 @@ You need to use [`print()`](http://helpjs.syncfusion.com/js/api/ejgrid#methods:p
 
 ## Page Setup
 
-Some of print options are not configurable through JavaScript code. You need to customize layout, paper size, margins options through browser’s page setup dialog. Please find the following guidelines link to browser page setup.
+Some of print options are not configurable through JavaScript code. You need to customize layout, paper size, margins options through browser's page setup dialog. Please find the following guidelines link to browser page setup.
 
 * [Chrome](https://support.google.com/chrome/answer/1379552?hl=en)
 * [Firefox](https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox)
@@ -47,7 +47,7 @@ Some of print options are not configurable through JavaScript code. You need to 
 
 ## Print on external Button Click
 
-By default, the Grid can be print from toolbar. To print from external button action, you need to call the grid’s [`print()`](http://help.syncfusion.com/js/api/ejgrid#methods:print) method from required button event.
+By default, the Grid can be print from toolbar. To print from external button action, you need to call the grid's [`print()`](http://help.syncfusion.com/js/api/ejgrid#methods:print) method from required button event.
 
 {% highlight html %}
 <button id="print">Print</button>

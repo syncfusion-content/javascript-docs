@@ -58,7 +58,7 @@ The following output is displayed as a result of the above code example.
 
 There is an option to show or hide the additional filter options in the menu by setting [`filterSettings.showPredicate`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-showpredicate "filterSettings.showPredicate") as `true` or `false` respectively.
 
-N> For [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") property you can assign either `string` value (“menu”) or `enum` value (`ej.Grid.FilterType.Menu`).
+N> For [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") property you can assign either `string` value ("menu") or `enum` value (`ej.Grid.FilterType.Menu`).
 
 The following code example describes the above behavior.
 

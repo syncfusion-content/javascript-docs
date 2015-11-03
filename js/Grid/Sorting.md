@@ -40,7 +40,7 @@ The following output is displayed as a result of the above code example.
 
 Through `sortedColumns` property of [`sortSettings`](http://help.syncfusion.com/js/api/ejgrid#members:sortsettings "sortSettings"), you can sort the columns while initializing the grid itself. You need to specify the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:sortsettings-sortedcolumns-field "field") (column) name and `direction` in the `sortedColumns`.
 
-N> 1. For [`direction`](http://help.syncfusion.com/js/api/ejgrid#members:sortsettings-sortedcolumns-direction "direction") property you can assign either `string` value (“descending”) or `enum` value (`ej.sortOrder.Descending`). 
+N> 1. For [`direction`](http://help.syncfusion.com/js/api/ejgrid#members:sortsettings-sortedcolumns-direction "direction") property you can assign either `string` value ("descending") or `enum` value (`ej.sortOrder.Descending`). 
 N> 2. You can add multiple columns in `sortedColumns` for multi column sorting while initializing the grid itself.
 
 The following code example describes the above behavior.
@@ -71,7 +71,7 @@ The following output is displayed as a result of the above code example.
 
 [Sort multiple](http://help.syncfusion.com/js/api/ejgrid#members:allowmultisorting "Sort multiple") columns in grid by setting [`allowMultiSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowmultisorting "allowMultiSorting") property as true. The sorting order is displayed in the header while doing multi sorting.
 
-You can sort more than one column by pressing “Ctrl key + mouse left click” on the column header. To clear sorting for particular column, press “Shift + mouse left click”. 
+You can sort more than one column by pressing "Ctrl key + mouse left" click on the column header. To clear sorting for particular column, press "Shift + mouse left click". 
 
 N> [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "allowSorting") must be true while enabling multi sort.
 The following code example describes the above behavior.
@@ -106,7 +106,7 @@ For sorting, grid uses default browser's sort function for better performance. O
 
 To resolve this, you need to set `ej.support.stableSort` as `false`.
 
-This will tell the “DataManager” to use custom sort function for sorting data. 
+This will tell the "DataManager" to use custom sort function for sorting data. 
 
 Please refer [the link](https://en.wikipedia.org/wiki/Category:Stable_sorts# "the link"), to know more information about stable sort.
 

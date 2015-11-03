@@ -263,7 +263,7 @@ W> [Minimum one column should be grouped to show summary details].
 
 ## Group Caption Summary
 
-To show summaries at each group’s Caption row, particular summary row definition should have [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `true`.
+To show summaries at each group's Caption row, particular summary row definition should have [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `true`.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -308,7 +308,7 @@ W>[ Minimum one column should be grouped to show summary details].
 
 ## Format
 
-To format Summary values, [`format`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in [`summaryColumns`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
+To format Summary values, [`format`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in [`summaryColumns`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
 
 {% highlight html %}
 <div id="Grid"></div>

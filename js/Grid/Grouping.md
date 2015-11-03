@@ -38,7 +38,7 @@ The following output is displayed as a result of the above code example.
 
 ## Initial Grouping
 
-While initializing the grid itself, there is an option to group the column and display it in a hierarchical structure. To enable initial grouping, set array of column’s [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name to be grouped to [`groupSettings.groupedColumns`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-groupedcolumns "groupSettings.groupedColumns") property. Define the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name in the array format.
+While initializing the grid itself, there is an option to group the column and display it in a hierarchical structure. To enable initial grouping, set array of column's [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name to be grouped to [`groupSettings.groupedColumns`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-groupedcolumns "groupSettings.groupedColumns") property. Define the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name in the array format.
 
 The following code example describes the above behavior.
 
@@ -239,7 +239,7 @@ Using [`captionFormat`](http://help.syncfusion.com/js/api/ejgrid#members:groupse
 
 You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
-N> 1. It’s a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender". 
+N> 1. It's a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender". 
 N> 2. Using locale property of `GroupCaptionFormat`, you can only customize the default group caption text.
 
 The following code example describes the above behavior.

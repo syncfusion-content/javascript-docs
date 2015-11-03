@@ -44,7 +44,7 @@ It provides a [detailed view](http://help.syncfusion.com/js/api/ejgrid#members:d
 
 On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details row.
 
-N> It’s a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
+N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
 
 The following code example describes the above behavior.
 
@@ -75,7 +75,7 @@ $(function () {
 });
 
 function detailGridData(e) {
-	// Here you can get the parent details from “data”. EmployeeID is the unique column value in parent row.
+	// Here you can get the parent details from "data". EmployeeID is the unique column value in parent row.
 	var filteredData = e.data["EmployeeID"];
 	// the datasource "window.ordersView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 	var data = ej.DataManager(window.ordersView).executeLocal(ej.Query().where("EmployeeID", "equal", parseInt(filteredData), true).take(5)); // form the query to filter the detail row data by using EmplooyeeID column value.

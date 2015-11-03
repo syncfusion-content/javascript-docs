@@ -549,9 +549,9 @@ I> In the above example, you need to use `globalize.culture.de-DE` script file t
 
 {% seealso %} [localization](http://helpjs.syncfusion.com/js/localization) {% endseealso %}
 
-## Right to Left – RTL
+## Right to Left - RTL
 
-By default, Grid render its text and layout from left to right. To customize Grid’s direction, you can change direction from LTR to RTL by using [`enableRTL`](http://help.syncfusion.com/js/api/ejgrid#members:enablertl "enableRTL") as true.
+By default, Grid render its text and layout from left to right. To customize Grid's direction, you can change direction from LTR to RTL by using [`enableRTL`](http://help.syncfusion.com/js/api/ejgrid#members:enablertl "enableRTL") as true.
 
 {% highlight html %}
 

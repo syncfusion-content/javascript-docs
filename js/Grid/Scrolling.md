@@ -94,7 +94,7 @@ The following output is displayed as a result of the above code example.
 
 ## Set width as auto
 
-Specify [`width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "width") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") as auto, and then the scrollbar is rendered only when grid width is greater than browser window size.
+Specify [`width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "width") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") as auto, and then the scrollbar is rendered only when grid width is greater than browser window size.
 
 The following code example describes the above behavior.
 
@@ -292,7 +292,7 @@ The following output is displayed as a result of the above code example.
 
 Continuous Mode:
 
-In `Continuous` mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the [`virtualScrollMode`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") property as `continuous`.
+In Continuous mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the [`virtualScrollMode`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") property as `continuous`.
 
 The following code example describes the above behavior.
 

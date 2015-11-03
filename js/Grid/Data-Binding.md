@@ -92,7 +92,7 @@ To bind remote data to the grid, you can assign a service data as an instance of
 
 ### OData
 
-OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/#) URL directly to the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") class and then you can assign it to Grid [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "datasource")`.
+OData is a standardized protocol for creating and consuming data. You can provide the [OData service](http://www.odata.org/#) URL directly to the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") class and then you can assign it to Grid [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "datasource")`.
 
 The following code example describes the above behavior.
 
@@ -104,7 +104,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 		$(function () {
 
-			var dm =ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders”);
+			var dm =ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
 
 				$("#Grid").ejGrid({
 
@@ -131,7 +131,7 @@ The following output is displayed as a result of the above code example.
 
 For OData Version 4 support ej.ODataV4Adaptor should be used. By using `url` property of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") you can bind OData Version 4 Service link and specify  `adaptor` as `ej.ODataV4Adaptor`.
 
-I> You can provide adaptor value either as `string` value (“ODataAdaptor”) or by creating a new instance (new `ej.ODataAdaptor`).
+I> You can provide adaptor value either as `string` value ("ODataAdaptor") or by creating a new instance (new `ej.ODataAdaptor`).
 
 {% seealso %}For further details about OData service please refer [the link](http://www.odata.org/#). {% endseealso %}
 
@@ -171,7 +171,7 @@ The following code example describes the above behavior.
 
 ### WebAPI
 
-Using `ej.WebApiAdaptor`, you can bind WebApi service data to Grid. The data from WebApi service must be returned as object that has property `Items` with its value as datasource and another property `Count` with its value as dataSource’s total records count.
+Using `ej.WebApiAdaptor`, you can bind WebApi service data to Grid. The data from WebApi service must be returned as object that has property `Items` with its value as datasource and another property `Count` with its value as dataSource's total records count.
 
 The following code example describes the above behavior.
 
@@ -414,7 +414,7 @@ The following output is displayed as a result of the above code example.
 
 Date caching will help you can prevent the request to server for already visited pages in Grid using `enableCaching` property of `[ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"). Also the grid options to control the number of pages to be cached and duration it should be cached. The properties for these are `cachingPageSize` and `timeTillExpiration` respectively.
 
-N>_ The cached data will be stored in browser’s HTML5 `localStorage`. _
+N>_ The cached data will be stored in browser's HTML5 `localStorage`. _
 
 The following code example describes the above behavior.
 

@@ -66,7 +66,7 @@ Apart from default pager, there is an option to render a specific custom [templa
 
 Prevent to show the default pager while enabling the pager [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "template") by setting [`showDefaults`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-showdefaults "showDefaults") property of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "pageSettings") as `false`.
 
-N> It’s a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "template") within the `script` tag with `type` as "text/x-jsrender".
+N> It's a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "template") within the `script` tag with `type` as "text/x-jsrender".
 
 The following code example describes the above behavior.
 

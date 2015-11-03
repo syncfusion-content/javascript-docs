@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Responsive
 
-The grid control has support for responsive behavior based on client browser’s width and height. To enable responsive, [`isResponsive`](http://help.syncfusion.com/js/api/ejgrid#members:isresponsive "isResponsive") property should be true. There are three modes of responsive layout is available in grid based on client width. They are.
+The grid control has support for responsive behavior based on client browser's width and height. To enable responsive, [`isResponsive`](http://help.syncfusion.com/js/api/ejgrid#members:isresponsive "isResponsive") property should be true. There are three modes of responsive layout is available in grid based on client width. They are.
 
 * Mobile(<321px)
 * Tablet (321px to 800px)
@@ -236,7 +236,7 @@ MinWidth set to Grid
 
 ## Priority for Columns
 
-Priority makes column to be visible or hidden based on `priority` and browser’s width to best accommodate possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
+Priority makes column to be visible or hidden based on `priority` and browser's width to best accommodate possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
 
 {% highlight html %}
 <div id="Grid"></div>
