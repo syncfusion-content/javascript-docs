@@ -1,13 +1,22 @@
+---
+layout: post
+title: Working with Tables
+description: Working with Tables
+platform: js
+control: RTE
+documentation: ug
+
+---
 # Working with Tables
 
 The editor provides tools that make to work with tables in your content. You can add, edit, and remove the table as well as perform other table related tasks.
 
 ## Create a Table
 
-By default, [Insert Table](http://help.syncfusion.com/js/api/ejrte#members:tools-tables "") tool is enabled in the editor’s toolbar. There are two ways to insert a table into the editor’s content.
+By default, [Insert Table](http://help.syncfusion.com/js/api/ejrte#members:tools-tables) tool is enabled in the editor’s toolbar. There are two ways to insert a table into the editor’s content.
 
-* [Insert a table](#_Insert_a_Table "")
-* [Insert a custom table](#_Custom_Table "")
+* [Insert a table](#_Insert_a_Table)
+* [Insert a custom table](#_Custom_Table)
 
 {% highlight html %}
 
@@ -39,7 +48,7 @@ You can insert a basic table by select the “Insert Table” tool from toolbar 
 ![](WorkingwithTables_images/WorkingwithTables_img1.jpeg)
 
 
-Note: If you want to make any adjustment with drawn table, you can [add/remove rows and columns](#_Inserting/Deleting_Rows_and ""). 
+N> If you want to make any adjustment with drawn table, you can [add/remove rows and columns](#_Inserting/Deleting_Rows_and). 
 
 ### Custom Table
 
@@ -62,7 +71,7 @@ You can choose the following options to modify the inserted table from the toolb
 ![](WorkingwithTables_images/WorkingwithTables_img3.jpeg)
 
 
-Note: You can also quickly add a new row by clicking on the lower-right cell of the table and pressing the Tab key.
+N> You can also quickly add a new row by clicking on the lower-right cell of the table and pressing the Tab key.
 
 ## Format a Table
 
@@ -77,7 +86,7 @@ After you create a table, you can format the entire table by using **Table** **P
 ![](WorkingwithTables_images/WorkingwithTables_img4.jpeg)
 
 
-@Note: When you click in a table cell, the **Table** **Properties** option will be enabled under **Table** tool on the editor’s toolbar.
+N> When you click in a table cell, the **Table** **Properties** option will be enabled under **Table** tool on the editor’s toolbar.
 
 ## Resize a Table, Row, or Column
 
@@ -120,5 +129,5 @@ To delete a table from your content, focus on the table and select “Delete a T
 ![](WorkingwithTables_images/WorkingwithTables_img9.jpeg)
 
 
-@Note: To delete the table contents alone, select the required content of the table which you want to delete and press Delete key. All the content disappears but the rows and columns remain along with its formatting.
+N> To delete the table contents alone, select the required content of the table which you want to delete and press Delete key. All the content disappears but the rows and columns remain along with its formatting.
 

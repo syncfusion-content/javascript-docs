@@ -1,3 +1,12 @@
+---
+layout: post
+title: User Interface
+description: User Interface
+platform: js
+control: RTE
+documentation: ug
+
+---
 # User Interface
 
 The editor user interface (UI) is designed with the toolbar, content area (iframe), and footer elements.
@@ -117,9 +126,11 @@ You can customize and rearrange items (buttons and dropdowns) by adding, removin
 The toolbar contains groups, which are similar or related functionalities of toolbar items for efficient access. By default, the groups are arranged using the following order:
 
 {% highlight html %}
+<script type="text/javascript">
 toolsList: ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", 
 
 "clear", "links", "images", "media", "tables", "casing", "customTools", "view"]
+</script>
 {% endhighlight %}
 
 The group can be rearranged on customization using the **[toolsList](http://help.syncfusion.com/js/api/ejrte#members:toolslist "")** property.
@@ -127,9 +138,8 @@ The group can be rearranged on customization using the **[toolsList](http://help
 
 
 {% highlight html %}
-
+<script type="text/javascript">
 $(function () {
-
 $("#texteditor").ejRTE({
 toolsList: ["links", "lists", "doAction", "style", "images"],
 tools: {
@@ -142,7 +152,7 @@ images: ["image"]
 });
 
 });
-
+</script>
 {% endhighlight %}
 
 Note: If you are not specify any group in **toolsList** property, the editor will create the toolbar with default group.
@@ -152,6 +162,7 @@ Note: If you are not specify any group in **toolsList** property, the editor wil
 The editor’s toolbar can be extended through the **customTools** option, which renders the custom toolbar items along with the built-in toolbar items. 
 
 {% highlight html %}
+<script type="text/javascript">
 $("#texteditor").ejRTE({
 
 toolsList: ["customTools"],
@@ -169,16 +180,19 @@ var rte = $("#texteditor").data("ejRTE");
 }]
 }
 });
+</script>
 {% endhighlight %}
 
 Define the CSS that will be applied to the custom tool.
 
 {% highlight html %}
+<style type="text/css">
 .e-rte-toolbar-icon.insertcode:before {
 content: "\e780";
 font-size: 18px;
 margin: 3px;
 }
+</style>
 {% endhighlight %}
 
 Note: The CSS class that defined for custom tool is directly applies to the newly added toolbar item. 
@@ -188,8 +202,10 @@ Note: The CSS class that defined for custom tool is directly applies to the newl
 To remove a particular toolbar item, pass the id of a toolbar item to the [removeToolbarItem](http://help.syncfusion.com/js/api/ejrte#methods:removetoolbaritem "") method.
 
 {% highlight html %}
+<script type="text/javascript">
 var rte = $("#texteditor").data("ejRTE");
 rte.removeToolbarItem("video");
+</script>
 {% endhighlight %}
 
 Note: This method completely removes the DOM element along with the events bounded to it.
@@ -199,13 +215,17 @@ Note: This method completely removes the DOM element along with the events bound
 The state of each toolbar item can be controlled by calling the client-side methods such as [enableToolbarItem](http://help.syncfusion.com/js/api/ejrte#methods:enabletoolbaritem "") and [disableToolbatItem](http://help.syncfusion.com/js/api/ejrte#methods:disabletoolbaritem "").
 
 {% highlight html %}
+<script type="text/javascript">
 var rte = $("#texteditor").data("ejRTE");
 rte.disableToolbarItem("video");
+</script>
 {% endhighlight %}
 
 {% highlight html %}
+<script type="text/javascript">
 var rte = $("#texteditor").data("ejRTE");
 rte.enableToolbarItem("video");
+</script>
 {% endhighlight %}
 
 Note: If a toolbar item is in disabled state, then it will not have any interactivity including mouse hover.
@@ -215,9 +235,11 @@ Note: If a toolbar item is in disabled state, then it will not have any interact
 The toolbar can be initially set to visible or hidden within the editor using [showToolbar](http://help.syncfusion.com/js/api/ejrte#members:showtoolbar "") API. Default value is “true”.
 
 {% highlight html %}
+<script type="text/javascript">
 $("#texteditor").ejRTE({
 showToolbar: false
 });
+</script>
 {% endhighlight %}
 
 ## Content Area
@@ -229,7 +251,7 @@ The editor creates the iframe element as the content area on control initializat
 The editor allows you to passing an additional attributes to body tag of a <iframe> element using [iframeAttributes](http://help.syncfusion.com/js/api/ejrte#members:iframeattribute "") property. The property contains name/value pairs in string format, it is used to override the default appearance of the content area. For example, the content area’s font, color, margins, and background can be overridden using iframeAttributes property. You can specifies the editable behavior (content editable) of the content also in this property. For more information about the content editable, see [content editable](#_ContentEditable "").
 
 {% highlight html %}
-
+<script type="text/javascript">
 $(function () {
 
 $("#texteditor").ejRTE({
@@ -239,6 +261,7 @@ iframeAttribute: "background-color:#e0ffff;color:#6495ed;"
 });
 
 });
+</script>
 {% endhighlight %}
 
 ### Adding CSS File
@@ -246,6 +269,7 @@ iframeAttribute: "background-color:#e0ffff;color:#6495ed;"
 The editor offers you to add external CSS file to style the <iframe> element.  You can change the appearance of editor’s content using an external CSS file. For example, apply default styles for headings (h1, h2, etc.) and lists (bulleted or numbered) of the editor’s content. 
 
 {% highlight html %}
+<script type="text/javascript">
 
 $(function () {
 
@@ -265,11 +289,13 @@ linkTag.rel = "stylesheet";
 linkTag.href = "Content/Css/iframe-custom.css";
 iframeDoc.head.appendChild(linkTag);
 }
+</script>
 {% endhighlight %}
 
 The new file named iframe-custom.css is created and moved to the content folder with the following styles.
 
 {% highlight html %}
+<style type="text/css">
 h1 {
 color: navy;
 margin-left: 20px;
@@ -286,6 +312,7 @@ display: block;
 list-style-type: circle;
 margin-right: 10px;
 }
+</style>
 {% endhighlight %}
 
 ### Content Editable
@@ -348,9 +375,11 @@ This option allows you to specify which footer elements should display at the bo
 5. Resizer
 
 {% highlight html %}
+<script type="text/javascript">
 $("#texteditor").ejRTE({
 showFooter: true
 });
+</script>
 {% endhighlight %}
 
 ### Source View
@@ -360,10 +389,12 @@ Source view displays the HTML code of the content in a separate dialog. Source v
 You can paste HTML text into Source view. If you cut or copy from HTML source such as page source of Browser, paste as HTML (without escape characters) into Source view. 
 
 {% highlight html %}
+<script type="text/javascript">
 $("#texteditor").ejRTE({
 showFooter:true,
 showHtmlSource: true
 });
+</script>
 {% endhighlight %}
 
 Note: Source view is useful for working directly with raw HTML text, so this tool is mainly used for advanced users who would like to have more control over the source of their content. 
@@ -373,10 +404,12 @@ Note: Source view is useful for working directly with raw HTML text, so this too
 The HTML tag info tool that shows the path of currently selected tag along with hierarchy of parent tags to which it belongs. The tag information is displayed at the bottom of the editor. It is used to determine which element has the focus in the editor’s content. 
 
 {% highlight html %}
+<script type="text/javascript">
 $("#texteditor").ejRTE({
 showFooter: true,
 showHtmlTagInfo: true
 });
+</script>
 {% endhighlight %}
 
 @Note: The outermost tag is the body tag of <iframe> element in design view, so it shows the path from currently selected path to the body tag.
@@ -409,25 +442,27 @@ maxLength: 500
 The clear format tool is useful to remove all formatting styles (such as bold, italic, underline, color, superscript, subscript, and more) from currently selected text. As a result, all the text formatting will be cleared and return to its default formatting styles. When you set the [showClearFormat](http://help.syncfusion.com/js/api/ejrte#members:showclearformat "") property to true, the clear format tool will be displayed at bottom of the editor.
 
 {% highlight html %}
-
+<script type="text/javascript">
 $("#texteditor").ejRTE({
 showFooter: true,
 showClearFormat: true
 });
+</script>
 {% endhighlight %}
 
 ### Resize Handle
 
-When you set the [enableResize](http://help.syncfusion.com/js/api/ejrte#members:enableresize "") property to true, resize handle will be displayed at bottom-right corner of the editor. You can drag the handle to change its size. On resizing, the editor will automatically adjust the toolbar, content area, and footer within it accordingly. Resize limits can be defined via [minHeight](http://help.syncfusion.com/js/api/ejrte#members:minheight ""), [maxHeight](http://help.syncfusion.com/js/api/ejrte#members:maxheight ""), [minWidth](http://help.syncfusion.com/js/api/ejrte#members:minwidth ""), and [maxWidth](http://help.syncfusion.com/js/api/ejrte#members:maxwidth "") properties. You can specify the size of the editor programmatically through the [height](http://help.syncfusion.com/js/api/ejrte#members:height "") and [width](http://help.syncfusion.com/js/api/ejrte#members:width "") properties. 
+When you set the [enableResize](http://help.syncfusion.com/js/api/ejrte#members:enableresize) property to true, resize handle will be displayed at bottom-right corner of the editor. You can drag the handle to change its size. On resizing, the editor will automatically adjust the toolbar, content area, and footer within it accordingly. Resize limits can be defined via [minHeight](http://help.syncfusion.com/js/api/ejrte#members:minheight), [maxHeight](http://help.syncfusion.com/js/api/ejrte#members:maxheight), [minWidth](http://help.syncfusion.com/js/api/ejrte#members:minwidth), and [maxWidth](http://help.syncfusion.com/js/api/ejrte#members:maxwidth) properties. You can specify the size of the editor programmatically through the [height](http://help.syncfusion.com/js/api/ejrte#members:height) and [width](http://help.syncfusion.com/js/api/ejrte#members:width) properties. 
 
 {% highlight html %}
-
+<script type="text/javascript">
 $("#texteditor").ejRTE({
 showFooter: true,
 enableResize: true,
 width: 600, minWidth: 250, maxWidth: 750,
 height: 300, minHeight: 250, maxHeight: 500
 });
+</script>
 {% endhighlight %}
 
 Note: When you set the enableRTL property to true, the resize handle will automatically positioned to the bottom-left corner of the editor.

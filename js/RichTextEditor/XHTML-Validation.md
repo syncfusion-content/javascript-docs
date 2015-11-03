@@ -1,9 +1,19 @@
+---
+layout: post
+title: XHTML Validation
+description: XHTML Validation
+platform: js
+control: RTE
+documentation: ug
+
+---
 # XHTML Validation
 
-The editor provides option to validate its content through the [enableXHTML](http://help.syncfusion.com/js/api/ejrte#members:enablexhtml "") property. When you set or modify the content into the editor, it continuously checks whether the HTML source of the content that you are creating is valid. The editor examines the HTML markup and then removes the elements or attributes that are not valid. 
+The editor provides option to validate its content through the [enableXHTML](http://help.syncfusion.com/js/api/ejrte#members:enablexhtml) property. When you set or modify the content into the editor, it continuously checks whether the HTML source of the content that you are creating is valid. The editor examines the HTML markup and then removes the elements or attributes that are not valid. 
 
 {% highlight html %}
 
+<script type="text/javascript">
 $(function () {
 
 $("#texteditor").ejRTE({
@@ -13,6 +23,7 @@ enableXHTML: true
 });
 
 });
+</script>
 {% endhighlight %}
 
 The editor checks the following settings on validation:
