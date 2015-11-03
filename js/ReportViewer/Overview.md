@@ -9,11 +9,11 @@ documentation: ug
 
 # Overview
 
-The **ReportViewer** is a visualization control to view Microsoft SSRS RDL/RDLC files on a web page and it is powered by HTML5/JavaScript. It has support to bind DataSources/Parameters to the Reports and also supports exporting, paging, zooming and printing the report.
+The ReportViewer is a visualization control to view Microsoft SSRS RDL/RDLC files on a web page and it is powered by HTML5/JavaScript. It has support to bind DataSources/Parameters to the Reports and also supports exporting, paging, zooming and printing the report.
 
-##Key Features##
+## Key Features
 
-The **ReportViewer** supports the following features.
+The ReportViewer supports the following features.
 
 * DataSources (SQL Server, Oracle, MS Azure, XML, Business Object and SQL Server Compact Data Sources)
 * Filters and Parameters
