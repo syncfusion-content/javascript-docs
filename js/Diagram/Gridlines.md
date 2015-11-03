@@ -19,15 +19,15 @@ The `snapConstraints` property of `snapSettings` enables you to show/hide the gr
 
 //Shows both horizontal and vertical gridlines
 var snapSettings = {
-    snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines
+	snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines
 };
 
 $(function() {
-    $("#diagram").ejDiagram({
-        width: "400px",
-        height: "400px",
-        snapSettings: snapSettings
-    });
+	$("#diagram").ejDiagram({
+		width: "400px",
+		height: "400px",
+		snapSettings: snapSettings
+	});
 });
 
 {% endhighlight %}
@@ -38,30 +38,30 @@ To show only horizontal/vertical gridlines or to hide gridlines, refer to [Const
 
 ## Appearance
 
-You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties,  refer to [Gridlines](/js/api/diagram "snapSettings:horizontalGridLines")
+You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](/js/api/diagram "snapSettings:horizontalGridLines")
 The `horizontalGridLines` and `verticalGridLines` properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
 
 {% highlight js %}
 
 var snapSettings = {
-    snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines,
-    // Customizes the line color and line style to the gridlines.
-    horizontalGridLines: {
-        lineColor: "blue",
-        lineDashArray: "2  2"
-    },
-    verticalGridLines: {
-        lineColor: "blue",
-        lineDashArray: "2  2"
-    }
+	snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines,
+	// Customizes the line color and line style to the gridlines.
+	horizontalGridLines: {
+		lineColor: "blue",
+		lineDashArray: "2 2"
+	},
+	verticalGridLines: {
+		lineColor: "blue",
+		lineDashArray: "2 2"
+	}
 };
 
 $(function() {
-    $("#diagram").ejDiagram({
-        width: "400px",
-        height: "400px",
-        snapSettings: snapSettings
-    });
+	$("#diagram").ejDiagram({
+		width: "400px",
+		height: "400px",
+		snapSettings: snapSettings
+	});
 });
 
 {% endhighlight %}
@@ -77,26 +77,26 @@ The following code example illustrates how to customize the thickness of lines a
 {% highlight js %}
 
 var snapSettings = {
-    snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines,
-    horizontalGridLines: {
-        // Defines the thickness and intervals for a pattern of lines
-        linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15],
-        lineColor: "blue",
-        lineDashArray: "2  2"
-    },
-    verticalGridLines: {
-        linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15],
-        lineColor: "blue",
-        lineDashArray: "2  2"
-    }
+	snapConstraints: ej.datavisualization.Diagram.SnapConstraints.ShowLines,
+	horizontalGridLines: {
+		// Defines the thickness and intervals for a pattern of lines
+		linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15],
+		lineColor: "blue",
+		lineDashArray: "2 2"
+	},
+	verticalGridLines: {
+		linesInterval: [1.25, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15],
+		lineColor: "blue",
+		lineDashArray: "2 2"
+	}
 };
 
 $(function() {
-    $("#diagram").ejDiagram({
-        width: "400px",
-        height: "400px",
-        snapSettings: snapSettings
-    });
+	$("#diagram").ejDiagram({
+		width: "400px",
+		height: "400px",
+		snapSettings: snapSettings
+	});
 });
 
 {% endhighlight %}
@@ -115,61 +115,61 @@ Snapping to gridlines can be enabled/disabled with the `snapConstraints` propert
 
 //Enables snapping to both the horizontal and vertical lines.
 snapSettings = {
-    snapConstraints: ej.datavisualization.Diagram.SnapConstraints.SnapToLines
+	snapConstraints: ej.datavisualization.Diagram.SnapConstraints.SnapToLines
 };
 
 $(function() {
-    $("#diagram").ejDiagram({
-        width: "400px",
-        height: "400px",
-        snapSettings: snapSettings,
-    });
+	$("#diagram").ejDiagram({
+		width: "400px",
+		height: "400px",
+		snapSettings: snapSettings,
+	});
 });
 
 {% endhighlight %}
 
 To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] [/js/Diagram/Constraints "SnapConstraints"]
 
-## Customization of Snap Intervals    
+## Customization of Snap Intervals
 
 By default, the objects are snapped towards the nearest gridline. The gridline or position towards where the diagram object snaps can be customized with the property, `snapInterval`. The following code example illustrates how to customize the snap intervals.
 
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "400px",
-    height: "400px",
-    snapSettings: {
-        horizontalGridLines: {
-            //Defines a set of intervals where the object is snapped. 
-            //In this example, the object is snapped to every 10px.
-            snapInterval: [10]
-        },
-        verticalGridLines: {
-            //The object is snapped to every 10px.
-            snapInterval: [10]
-        },
-        snapConstraints: ej.datavisualization.Diagram.SnapConstraints.All
-    },
+	width: "400px",
+	height: "400px",
+	snapSettings: {
+		horizontalGridLines: {
+			//Defines a set of intervals where the object is snapped.
+			//In this example, the object is snapped to every 10px.
+			snapInterval: [10]
+		},
+		verticalGridLines: {
+			//The object is snapped to every 10px.
+			snapInterval: [10]
+		},
+		snapConstraints: ej.datavisualization.Diagram.SnapConstraints.All
+	},
 });
 
 {% endhighlight %}
 
 ## Snap To Objects
 
-The snap-to-object provides visual cues to assist with aligning and spacing Diagram elements. A node can be snapped with its neighbouring objects based on certain alignments. Such alignments are visually represented as smart guides. 
+The snap-to-object provides visual cues to assist with aligning and spacing Diagram elements. A node can be snapped with its neighbouring objects based on certain alignments. Such alignments are visually represented as smart guides.
 
 The `enableSnapToObject` property allows you to enable/disable smart guides. The following code example illustrates how to enable/disable the smart guides.
 
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "400px",
-    height: "400px",
-    //Enables smart guides
-    snapSettings: {
-        enableSnapToObject: true
-    },
+	width: "400px",
+	height: "400px",
+	//Enables smart guides
+	snapSettings: {
+		enableSnapToObject: true
+	},
 });
 
 {% endhighlight %}

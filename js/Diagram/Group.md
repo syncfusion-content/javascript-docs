@@ -19,51 +19,47 @@ You can add a group to the Diagram model through `nodes` collection. To define a
 
 {% highlight js %}
 
-var nodes = [
-        {
-        //Sets the name
-        name: "group1",
-        
-        //Defines the collection of children
-        children: [{
-            name: "rectangle1",
-            offsetX: 100,
-            offsetY: 100,
-            width: 100,
-            height: 100,
-            type: "node",
-            fillColor: "darkCyan",
-            borderWidth: 2,
-            labels: [{
-                text: "rectangle1"
-            }]
-        }, {
-            name: "rectangle2",
-            offsetX: 200,
-            offsetY: 200,
-            width: 100,
-            height: 100,
-            type: "node",
-            fillColor: "darkCyan",
-            borderWidth: 2,
-            labels: [{
-                text: "rectangle2"
-            }]
-        }, ],
-        
-        // Sets the type as group
-        type: "group"
-    }
-]
+var nodes = [{
+	//Sets the name
+	name: "group1",
+	// Sets the type as group
+	type: "group",
+	//Defines the collection of children
+	children: [{
+		name: "rectangle1",
+		offsetX: 100,
+		offsetY: 100,
+		width: 100,
+		height: 100,
+		type: "node",
+		fillColor: "darkCyan",
+		borderWidth: 2,
+		labels: [{
+			text: "rectangle1"
+		}]
+	},{
+		name: "rectangle2",
+		offsetX: 200,
+		offsetY: 200,
+		width: 100,
+		height: 100,
+		type: "node",
+		fillColor: "darkCyan",
+		borderWidth: 2,
+		labels: [{
+		text: "rectangle2"
+		}]
+	}]
+}]
 
 //Initialize Diagram
 $("#DiagramContent").ejDiagram({
-    //Sets nodes collection to Diagram model.
-    nodes: nodes
+	//Sets nodes collection to Diagram model.
+	nodes: nodes
 });
 
 {% endhighlight %}
- 
+
 ### Add group at run time
 
 You can add a group node at runtime by using the client side method `add`.
@@ -73,34 +69,33 @@ The following code illustrates how a group node is added at run time.
 {% highlight js %}
 
 var group = {
-    name: "group1",
-    type: "group",
-    children: [{
-        name: "rectangle1",
-        offsetX: 100,
-        offsetY: 100,
-        width: 100,
-        height: 100,
-        type: "node",
-        fillColor: "darkCyan",
-        borderWidth: 2,
-        labels: [{
-            text: "rectangle1"
-        }]
-    }, {
-
-        name: "rectangle2",
-        offsetX: 200,
-        offsetY: 200,
-        width: 100,
-        height: 100,
-        type: "node",
-        fillColor: "darkCyan",
-        borderWidth: 2,
-        labels: [{
-            text: "rectangle2"
-        }]
-    }, ]
+	name: "group1",
+	type: "group",
+	children: [{
+		name: "rectangle1",
+		offsetX: 100,
+		offsetY: 100,
+		width: 100,
+		height: 100,
+		type: "node",
+		fillColor: "darkCyan",
+		borderWidth: 2,
+		labels: [{
+			text: "rectangle1"
+		}]
+	}, {
+		name: "rectangle2",
+		offsetX: 200,
+		offsetY: 200,
+		width: 100,
+		height: 100,
+		type: "node",
+		fillColor: "darkCyan",
+		borderWidth: 2,
+		labels: [{
+			text: "rectangle2"
+		}]
+	}]
 };
 
 
@@ -127,65 +122,65 @@ There are two types of containers available.
 * Canvas allows you to position its contained elements by using margin and alignment properties.
 * It allows elements to be either vertically or horizontally aligned.
 
-The `container` property of group should be defined and its `type` should be set as "canvas" to create a canvas panel. The following code illustrates how to add a canvas panel.     
+The `container` property of group should be defined and its `type` should be set as "canvas" to create a canvas panel. The following code illustrates how to add a canvas panel.
 
 {% highlight js %}
 
 var nodes = [{
-    type: "group",
-    name: "canvas",
-    offsetX: 400,
-    offsetY: 400,
-    
-    children: [{
-        type: "node",
-        name: "node1",
-        fillColor: "darkCyan",
-        width: 100,
-        height: 100
-    }, {
-        type: "node",
-        name: "node2",
-        // Sets the margin to define the space around the child node.
-        marginTop: 30,
-        marginLeft: 30,
-        fillColor: "white",
-        width: 100,
-        height: 100
-    }, {
-        type: "node",
-        name: "node3",
-        marginTop: 60,
-        marginLeft: 60,
-        fillColor: "darkCyan",
-        width: 100,
-        height: 100
-    }, {
-        type: "node",
-        name: "node4",
-        marginTop: 90,
-        marginLeft: 90,
-        fillColor: "white",
-        width: 100,
-        height: 100
-    }],
-    
-    //Sets the container as canvas.
-    container: {
-        type: "canvas"
-    },
-    fillColor: "#E7EBF4",
-    borderColor: "black",
-    
-    //Sets the padding to give space between the group border and group content.
-    paddingLeft: 30,
-    paddingTop: 30,
-    paddingRight: 30,
-    paddingBottom: 30
-}];    
+	type: "group",
+	name: "canvas",
+	offsetX: 400,
+	offsetY: 400,
+	
+	children: [{
+		type: "node",
+		name: "node1",
+		fillColor: "darkCyan",
+		width: 100,
+		height: 100
+	}, {
+		type: "node",
+		name: "node2",
+		// Sets the margin to define the space around the child node.
+		marginTop: 30,
+		marginLeft: 30,
+		fillColor: "white",
+		width: 100,
+		height: 100
+	}, {
+		type: "node",
+		name: "node3",
+		marginTop: 60,
+		marginLeft: 60,
+		fillColor: "darkCyan",
+		width: 100,
+		height: 100
+	}, {
+		type: "node",
+		name: "node4",
+		marginTop: 90,
+		marginLeft: 90,
+		fillColor: "white",
+		width: 100,
+		height: 100
+	}],
+	
+	//Sets the container as canvas.
+	container: {
+		type: "canvas"
+	},
+	fillColor: "#E7EBF4",
+	borderColor: "black",
+	
+	//Sets the padding to give space between the group border and group content.
+	paddingLeft: 30,
+	paddingTop: 30,
+	paddingRight: 30,
+	paddingBottom: 30
+}];
 
 $("#DiagramContent").ejDiagram({
-    nodes: nodes
+	nodes: nodes
 });
 
 {% endhighlight %}
@@ -194,7 +189,7 @@ $("#DiagramContent").ejDiagram({
 
 ### Stack
 
-* Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.   
+* Stack panel is used to arrange its children in a single line or stack order, either vertically or horizontally.
 * It controls spacing by setting margin properties of child and padding properties of group. By default, a Stack Panel’s `orientation` is vertical. 
 
 The `container` property of group should be defined and its `type` should be set as "stack" to create a canvas panel The following code illustrates how to add a stack panel.
@@ -202,46 +197,46 @@ The `container` property of group should be defined and its `type` should be set
 {% highlight js %}
 
 var nodes = [{
-    type: "group",
-    name: "Stack",
-    offsetX: 600,
-    offsetY: 200,
-    fillColor: "#E7EBF4",
-    borderColor: "black",
-    // Sets the minimum size for stack panel.
-    minHeight: 300,
-    minWidth: 300,
-    children: [{
-        type: "node",
-        name: "snode1",
-        fillColor: "darkCyan",
-        //Sets the horizontal Alignment for child node.
-        horizontalAlign: "left",
-        width: 100,
-        height: 100
-    }, {
-        type: "node",
-        name: "snode2",
-        fillColor: "darkCyan",
-        horizontalAlign: "right",
-        width: 100,
-        height: 100
-    }, {
-        type: "node",
-        name: "snode3",
-        fillColor: "darkCyan",
-        horizontalAlign: "stretch",
-        width: 100,
-        height: 100
-    }],
-    // Sets the container as stack.
-    container: {
-        type: "stack"
-    },
+	type: "group",
+	name: "Stack",
+	offsetX: 600,
+	offsetY: 200,
+	fillColor: "#E7EBF4",
+	borderColor: "black",
+	// Sets the minimum size for stack panel.
+	minHeight: 300,
+	minWidth: 300,
+	children: [{
+		type: "node",
+		name: "snode1",
+		fillColor: "darkCyan",
+		//Sets the horizontal Alignment for child node.
+		horizontalAlign: "left",
+		width: 100,
+		height: 100
+	}, {
+		type: "node",
+		name: "snode2",
+		fillColor: "darkCyan",
+		horizontalAlign: "right",
+		width: 100,
+		height: 100
+	}, {
+		type: "node",
+		name: "snode3",
+		fillColor: "darkCyan",
+		horizontalAlign: "stretch",
+		width: 100,
+		height: 100
+	}],
+	// Sets the container as stack.
+	container: {
+		type: "stack"
+	},
 }];
 
 $("#DiagramContent").ejDiagram({
-    nodes: nodes
+	nodes: nodes
 });
 
 {% endhighlight %}

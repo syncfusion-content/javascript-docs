@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting
 
-Diagram provides support to export its content as image/svg files. 
+Diagram provides support to export its content as image/svg files.
 The client side method `exportDiagram` helps to export the Diagram. The following code illustrates how to export the Diagram as image.
 
 {% highlight js %}
@@ -24,7 +24,7 @@ diagram.exportDiagram();
 
 ## Exporting options
 
-Diagram provides support to export the desired region of the Diagram to desired formats. 
+Diagram provides support to export the desired region of the Diagram to desired formats.
 
 ### FileName
 
@@ -32,7 +32,7 @@ FileName is the name of the file to be downloaded. By default, the file name is 
 
 ### Format
 
-Format is to specify the type/format of the exported file. By default, Diagram is exported as .jpg format.  You can export Diagram to the following formats.
+Format is to specify the type/format of the exported file. By default, Diagram is exported as .jpg format. You can export Diagram to the following formats.
 
 * JPG
 * PNG
@@ -49,15 +49,15 @@ Margin specifies the amount of space that has to be left around the Diagram.
 
 var diagram = $("#diagram").ejDiagram("instance");
 var options = {
-    //Name of the file to be downloaded
-    fileName: "diagram",
-    //Margin to the exported file/data
-    margin: {
-        left: 30,
-        right: 30,
-        top: 30,
-        bottom: 30
-    }
+	//Name of the file to be downloaded
+	fileName: "diagram",
+	//Margin to the exported file/data
+	margin: {
+		left: 30,
+		right: 30,
+		top: 30,
+		bottom: 30
+	}
 };
 diagram.exportDiagram(options);
 
@@ -78,9 +78,9 @@ The following code example illustrates how to export the Diagram as raw data.
 
 var diagram = $("#diagram").ejDiagram("instance");
 var options = {
-    fileName: "diagram",
-    //Specifies whether to export as files/data
-    mode: "data"
+	fileName: "diagram",
+	//Specifies whether to export as files/data
+	mode: "data"
 };
 diagram.exportDiagram(options);
 
@@ -103,8 +103,8 @@ The following code example illustrates how to export the region occupied by the 
 
 var diagram = $("#diagram").ejDiagram("instance");
 var options = {
-    //Specifies the exporting region
-    mode: "content"
+	//Specifies the exporting region
+	mode: "content"
 };
 diagram.exportDiagram(options);
 
@@ -116,18 +116,18 @@ The following code example illustrates how to export any specific region of the 
 
 var diagram = $("#diagram").ejDiagram("instance");
 var options = {
-    fileName: "diagram",
-    //Specifies whether to export as files/data
-    mode: "download",
-    //Format of the exported file
-    format: "jpg",
-    // Defines the custom bounds that has to be exported
-    bounds: {
-        x: 1000,
-        y: 1000,
-        width: 500,
-        height: 500
-    },
+	fileName: "diagram",
+	//Specifies whether to export as files/data
+	mode: "download",
+	//Format of the exported file
+	format: "jpg",
+	// Defines the custom bounds that has to be exported
+	bounds: {
+		x: 1000,
+		y: 1000,
+		width: 500,
+		height: 500
+	},
 };
 diagram.exportDiagram(options);
 

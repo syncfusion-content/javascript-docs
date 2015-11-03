@@ -10,7 +10,7 @@ documentation: ug
 # Shapes
 
 Diagram provides support to add different kind of nodes. They are as follows.
-  
+
 * Text Node
 * Image Node
 * Html Node
@@ -18,28 +18,29 @@ Diagram provides support to add different kind of nodes. They are as follows.
 * Basic Shapes
 * Flow Shapes
 * BPMN Shapes
- 
+
 ## Text
 
 Texts can be added to the Diagram as text nodes. For text nodes, the `type` should be set as "text". In addition, you need to define the `textBlock` object that is used to define the `text` to be added and to customize the appearance of that text. The following code illustrates how to create a text node.
 
 {% highlight js %}
+
 var diagram = ej.datavisualization.Diagram;
 //Creates a html node
 var nodes = [{
-    name: "textNode",
-    offsetX: 100,
-    offsetY: 100,
-    width: 100,
-    height: 50,
-    //Sets type of the node
-    type: diagram.Shapes.Text,
-    //Customizes the appearances such as text, font, fill, and stroke.
-    textBlock: {
-        text: "Text Node",
-        fontColor: "black",
-        textAlign: diagram.TextAlign.Center
-    }
+	name: "textNode",
+	offsetX: 100,
+	offsetY: 100,
+	width: 100,
+	height: 50,
+	//Sets type of the node
+	type: diagram.Shapes.Text,
+	//Customizes the appearances such as text, font, fill, and stroke.
+	textBlock: {
+		text: "Text Node",
+		fontColor: "black",
+		textAlign: diagram.TextAlign.Center
+	}
 }];
 
 {% endhighlight %}
@@ -50,22 +51,22 @@ var nodes = [{
 Diagram allows to add images as image nodes. For image nodes, the `type` should be set as "image". In addition, the `source` property of node enables you to set the image source. The following code illustrates how an **Image** node is created.
 
 {% highlight js %}
+
 var diagram = ej.datavisualization.Diagram;
 //Creates an Image node
 var nodes = [
-    {
-        name: "imageNode", offsetX: 100, offsetY: 100,
-        width: 50, height: 50,
-        
-        //Sets type of the node as Image
-        type: diagram.Shapes.Image,
-        
-        //Sets url of the image
-        source: "sample/syncfusion.png"
-
-    }
-
+	{
+		name: "imageNode", offsetX: 100, offsetY: 100,
+		width: 50, height: 50,
+		
+		//Sets type of the node as Image
+		type: diagram.Shapes.Image,
+		
+		//Sets url of the image
+		source: "sample/syncfusion.png"
+	}
 ];
+
 {% endhighlight %}
 
 ![](/js/Diagram/Shapes_images/Shapes_img60.png)
@@ -79,30 +80,28 @@ var nodes = [
 <!--dependency scripts-->
 <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 <!—define html element-->
-    <script id="htmlTemplate" type="text/x-jsrender">
-        <div style="margin-left: 32px; margin-top: 18px">
-            <input type="button" value="{{"{{"}}:value{{}}}}" />
-        </div>
-    </script>
-    
+<script id="htmlTemplate" type="text/x-jsrender">
+	<div style="margin-left: 32px; margin-top: 18px">
+		<input type="button" value="{{"{{"}}:value{{}}}}" />
+	</div>
+</script>
+
 {% endhighlight %}
 
 {% highlight js %}
 
 // Defines JSON to create node with HTML element
-var nodes = [
-    {
-        name: "htmlNode", offsetX: 100, offsetY: 100,
-        width: 120, height: 60,
-
-        //Sets type as Html
-        type: ej.datavisualization.Diagram.Shapes.Html,
-
-        //Sets id of html template
-        templateId: "htmlTemplate",
-        value: "Button"
-    }
-];
+var nodes = [{
+	name: "htmlNode", offsetX: 100, offsetY: 100,
+	width: 120, height: 60,
+	
+	//Sets type as Html
+	type: ej.datavisualization.Diagram.Shapes.Html,
+	
+	//Sets id of html template
+	templateId: "htmlTemplate",
+	value: "Button"
+}];
 
 {% endhighlight %}
 
@@ -120,9 +119,9 @@ N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is 
 <script src="http://borismoore.github.io/jsrender/jsrender.min.js"></script>
 <!--define html element-->
 <script id="svgTemplate" type="text/x-jsrender">
-  <g>	
-        <path d="M 58.813 0 H 3.182 L 30.998 24.141 L 58.813 0 Z M 32.644 34.425 C 32.133 34.87 31.567 35.095 31 35.095 S 29.867 34.87 29.353 34.425 L 1 9.826V 60 H 61 V 9.826 L 32.644 34.425Z"></path>
-    </g>
+	<g>	
+		<path d="M 58.813 0 H 3.182 L 30.998 24.141 L 58.813 0 Z M 32.644 34.425 C 32.133 34.87 31.567 35.095 31 35.095 S 29.867 34.87 29.353 34.425 L 1 9.826V 60 H 61 V 9.826 L 32.644 34.425Z"></path>
+	</g>
 </script>
 
 {% endhighlight %}
@@ -130,18 +129,17 @@ N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is 
 {% highlight js %}
 
 // Defines JSON to create node with HTML element
-var nodes = [
-    {
-        name: "NativeNode", offsetX: 100, offsetY: 100,
+var nodes = [{
+	name: "NativeNode", offsetX: 100, offsetY: 100,
 
-        //Sets type as Native
-        type: ej.datavisualization.Diagram.Shapes.Native,
+	//Sets type as Native
+	type: ej.datavisualization.Diagram.Shapes.Native,
 
-        //Sets id of SVG element
-        templateId: "svgTemplate",
-        labels: [{text: "Mail"}]
-    }
-];
+	//Sets id of SVG element
+	templateId: "svgTemplate",
+	labels: [{text: "Mail"}]
+}];
+
 {% endhighlight %}
 
 ![](/js/Diagram/Shapes_images/Shapes_img62.png)
@@ -156,29 +154,29 @@ The following code example illustrates how to create a basic shape.
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "node",
-        width: 100,
-        height: 70,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        
-        //Specifies the radius of rounded corner
-        cornerRadius:10,
-        
-        //Sets the type of shape
-        type: ej.datavisualization.Diagram.Shapes.Basic,
-        
-        //Sets the type of basic shape
-        shape: ej.datavisualization.Diagram.BasicShapes.Rectangle
-    }],
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 70,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+
+		//Specifies the radius of rounded corner
+		cornerRadius:10,
+
+		//Sets the type of shape
+		type: ej.datavisualization.Diagram.Shapes.Basic,
+
+		//Sets the type of basic shape
+		shape: ej.datavisualization.Diagram.BasicShapes.Rectangle
+	}],
 });
 
 {% endhighlight %}
@@ -197,19 +195,17 @@ Path node is a commonly used basic shape that allows visually to represent the g
 
 // Defines JSON to create path node
 
-var nodes = [
-    {
-        name: "pathNode", offsetX: 100, offsetY: 100,
-        width: 120, height: 60,
-        //By default, the type is considered as "basic"
-        
-        //Sets shape as Path
-        shape: Diagram.BasicShapes.Path,
-        
-        //Defines svg pathdata
-        pathData: "M35.2441,25 L22.7161,49.9937 L22.7161,0.00657536 L35.2441,25 z M22.7167,25 L-0.00131226,25 M35.2441,49.6337 L35.2441,0.368951 M35.2441,25 L49.9981,25"
-    }
-];
+var nodes = [{
+	name: "pathNode", offsetX: 100, offsetY: 100,
+	width: 120, height: 60,
+	//By default, the type is considered as "basic"
+
+	//Sets shape as Path
+	shape: Diagram.BasicShapes.Path,
+
+	//Defines svg pathdata
+	pathData: "M35.2441,25 L22.7161,49.9937 L22.7161,0.00657536 L35.2441,25 z M22.7167,25 L-0.00131226,25 M35.2441,49.6337 L35.2441,0.368951 M35.2441,25 L49.9981,25"
+}];
 
 {% endhighlight %}
 
@@ -226,24 +222,24 @@ The flow shapes are used to represent the process flow. It is used for analyzing
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "node",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        //Sets the type of shape
-        type: ej.datavisualization.Diagram.Shapes.Flow,
-        //Sets the type of flow shape
-        shape: ej.datavisualization.Diagram.FlowShapes.Document
-    }],
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+		//Sets the type of shape
+		type: ej.datavisualization.Diagram.Shapes.Flow,
+		//Sets the type of flow shape
+		shape: ej.datavisualization.Diagram.FlowShapes.Document
+	}],
 });
 
 {% endhighlight %}
@@ -261,29 +257,29 @@ BPMN shapes are used to represent the internal business procedure in a graphical
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "node",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        labels: [{
-            text: "End Event"
-        }],
-        //Sets the type of shape as BPMN
-        type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Sets the type of bpmn shape
-        shape: ej.datavisualization.Diagram.BPMNShapes.Event,
-        //Sets type of the Event
-        event: ej.datavisualization.Diagram.BPMNEvents.End
-    }],
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+		labels: [{
+			text: "End Event"
+		}],
+		//Sets the type of shape as BPMN
+		type: ej.datavisualization.Diagram.Shapes.BPMN,
+		//Sets the type of bpmn shape
+		shape: ej.datavisualization.Diagram.BPMNShapes.Event,
+		//Sets type of the Event
+		event: ej.datavisualization.Diagram.BPMNEvents.End
+	}],
 });
 
 {% endhighlight %}
@@ -318,28 +314,28 @@ The `event` property of the node allows you to define the type of the event. The
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "node",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        //Sets the type as BPMN
-        type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Sets the shape as BPMN Event
-        shape: ej.datavisualization.Diagram.BPMNShapes.Event,
-        //Sets type of the Event
-        event: ej.datavisualization.Diagram.BPMNEvents.End,
-        //Sets sub-type of the Event
-        trigger: ej.datavisualization.Diagram.BPMNTriggers.None
-    }],
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+		//Sets the type as BPMN
+		type: ej.datavisualization.Diagram.Shapes.BPMN,
+		//Sets the shape as BPMN Event
+		shape: ej.datavisualization.Diagram.BPMNShapes.Event,
+		//Sets type of the Event
+		event: ej.datavisualization.Diagram.BPMNEvents.End,
+		//Sets sub-type of the Event
+		trigger: ej.datavisualization.Diagram.BPMNTriggers.None
+	}],
 });
 
 {% endhighlight %}
@@ -368,32 +364,32 @@ Event triggers are notated as icons inside the circle and they represent the spe
 | Signal | ![](/js/Diagram/Shapes_images/Shapes_img25.png) |
 | Timer | ![](/js/Diagram/Shapes_images/Shapes_img26.png) |
 
-### Gateway     
+### Gateway
 
 Gateway is used to control the flow of a process. It is represented as a diamond shape. To create a gateway, the `shape` property of node should be set as "gateway" and the `gateway` property can be set with any of the appropriate [Gateways](/js/api/global "BPMNGateways"). The following code example illustrates how to create a BPMN Gateway.
 
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "node",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Sets the shape as Gateway
-        shape: ej.datavisualization.Diagram.BPMNShapes.Gateway,
-        //Sets the type of BPMN Gateway
-        gateway: ej.datavisualization.Diagram.BPMNGateways.None,
-    }],
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+		type: ej.datavisualization.Diagram.Shapes.BPMN,
+		//Sets the shape as Gateway
+		shape: ej.datavisualization.Diagram.BPMNShapes.Gateway,
+		//Sets the type of BPMN Gateway
+		gateway: ej.datavisualization.Diagram.BPMNGateways.None,
+	}],
 });
 
 {% endhighlight %}
@@ -426,25 +422,25 @@ To create a BPMN activity, you need to set the `shape` as "activity". You also n
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "node",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Sets the bpmn shape as activity
-        shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-        //Sets the type of BPMN Activity
-        activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-    }],
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+		type: ej.datavisualization.Diagram.Shapes.BPMN,
+		//Sets the bpmn shape as activity
+		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+		//Sets the type of BPMN Activity
+		activity: ej.datavisualization.Diagram.BPMNActivity.Task,
+	}],
 });
 
 {% endhighlight %}
@@ -455,34 +451,34 @@ The different activities of BPMN process are listed as follows.
 
 #### Tasks
 
-The `task` property of node allows you to define the `type` of task such as sending, receiving, user based task etc…  By default, the `type` property of task is set as "none". The following code illustrates how to create different types of BPMN tasks. 
+The `task` property of node allows you to define the `type` of task such as sending, receiving, user based task etc… By default, the `type` property of task is set as "none". The following code illustrates how to create different types of BPMN tasks. 
 
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "task",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Sets the type of bpmn shape
-        shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-        //Sets the type of BPMN Activity
-        activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-        //Sets the type of BPMN Task Activity
-        task: {
-            type: ej.datavisualization.Diagram.BPMNTasks.Send
-        }
-    }]
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "task",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+		type: ej.datavisualization.Diagram.Shapes.BPMN,
+		//Sets the type of bpmn shape
+		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+		//Sets the type of BPMN Activity
+		activity: ej.datavisualization.Diagram.BPMNActivity.Task,
+		//Sets the type of BPMN Task Activity
+		task: {
+			type: ej.datavisualization.Diagram.BPMNTasks.Send
+		}
+	}]
 });
 
 {% endhighlight %}
@@ -511,41 +507,41 @@ Loop is a task that is internally being looped. The `loop` property of task allo
 var diagram = $("#diagram").ejDiagram("instance");
 
 var node = {
-    name: "task",
-    width: 100,
-    height: 100,
-    offsetX: 100,
-    offsetY: 100,
-    borderWidth: 2,
-    borderColor: "black",
-    type: ej.datavisualization.Diagram.Shapes.BPMN,
-    //Sets the type of BPMN shape    
-    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-    //Sets the type of BPMN Activity    
-    activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-    //Sets the type of bpmn loops.
-    task: {
-        loop: ej.datavisualization.Diagram.BPMNLoops.Standard
-    }
+	name: "task",
+	width: 100,
+	height: 100,
+	offsetX: 100,
+	offsetY: 100,
+	borderWidth: 2,
+	borderColor: "black",
+	type: ej.datavisualization.Diagram.Shapes.BPMN,
+	//Sets the type of BPMN shape
+	shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+	//Sets the type of BPMN Activity
+	activity: ej.datavisualization.Diagram.BPMNActivity.Task,
+	//Sets the type of bpmn loops.
+	task: {
+		loop: ej.datavisualization.Diagram.BPMNLoops.Standard
+	}
 };
 diagram.add(node);
 
 node = {
-    name: "subprocess",
-    width: 100,
-    height: 100,
-    offsetX: 300,
-    offsetY: 100,
-    borderWidth: 2,
-    borderColor: "black",
-    type: ej.datavisualization.Diagram.Shapes.BPMN,
-    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-    //Sets the type of BPMN activity
-    activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-    //Sets the type of bpmn loops.
-    subProcess: {
-        loop: ej.datavisualization.Diagram.BPMNLoops.Standard
-    }
+	name: "subprocess",
+	width: 100,
+	height: 100,
+	offsetX: 300,
+	offsetY: 100,
+	borderWidth: 2,
+	borderColor: "black",
+	type: ej.datavisualization.Diagram.Shapes.BPMN,
+	shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+	//Sets the type of BPMN activity
+	activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+	//Sets the type of bpmn loops.
+	subProcess: {
+		loop: ej.datavisualization.Diagram.BPMNLoops.Standard
+	}
 };
 diagram.add(node);
 
@@ -570,48 +566,48 @@ Compensation is triggered when operation is partially failed and you can enable 
 var nodes = [];
 
 nodes.push({
-    name: "task",
-    width: 100,
-    height: 100,
-    offsetX: 100,
-    offsetY: 100,
-    borderWidth: 2,
-    borderColor: "black",
-    type: ej.datavisualization.Diagram.Shapes.BPMN,
-    shape: ej.datavisualization.Diagram.BPMNShapes.Activity
-        //Sets the type of BPMN Activity
-    activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-    //Creates compensation task
-    task: {
-        compensation: true
-    }
+	name: "task",
+	width: 100,
+	height: 100,
+	offsetX: 100,
+	offsetY: 100,
+	borderWidth: 2,
+	borderColor: "black",
+	type: ej.datavisualization.Diagram.Shapes.BPMN,
+	shape: ej.datavisualization.Diagram.BPMNShapes.Activity
+	//Sets the type of BPMN Activity
+	activity: ej.datavisualization.Diagram.BPMNActivity.Task,
+	//Creates compensation task
+	task: {
+		compensation: true
+	}
 });
 
 nodes.push({
-    name: "subprocess",
-    width: 100,
-    height: 100,
-    offsetX: 300,
-    offsetY: 100,
-    borderWidth: 2,
-    borderColor: "black",
-    type: ej.datavisualization.Diagram.Shapes.BPMN,
-    shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-    //Sets the type of BPMN Activity
-    activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-    //Creates compensation subprocess 
-    subProcess: {
-        compensation: true
-    }
+	name: "subprocess",
+	width: 100,
+	height: 100,
+	offsetX: 300,
+	offsetY: 100,
+	borderWidth: 2,
+	borderColor: "black",
+	type: ej.datavisualization.Diagram.Shapes.BPMN,
+	shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+	//Sets the type of BPMN Activity
+	activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+	//Creates compensation subprocess 
+	subProcess: {
+		compensation: true
+	}
 });
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: nodes
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: nodes
 });
 
 {% endhighlight %}
@@ -625,28 +621,28 @@ A call activity is a global sub-process that is reused at various points of the 
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "task",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        type: ej.datavisualization.Diagram.Shapes.BPMN,
-        shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-        //Sets the type of BPMN Activity
-        activity: ej.datavisualization.Diagram.BPMNActivity.Task,
-        //Creates a call task
-        task: {
-            call: true
-        }
-    }]
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "task",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+		type: ej.datavisualization.Diagram.Shapes.BPMN,
+		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+		//Sets the type of BPMN Activity
+		activity: ej.datavisualization.Diagram.BPMNActivity.Task,
+		//Creates a call task
+		task: {
+			call: true
+		}
+	}]
 });
 
 {% endhighlight %}
@@ -660,27 +656,27 @@ An ad hoc subprocess is a group of tasks that are executed in any order or skipp
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "task",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        type: ej.datavisualization.Diagram.Shapes.BPMN,
-        shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-        activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-        //Creates ad hoc subprocess
-        subProcess: {
-            adhoc: true
-        }
-    }]
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "task",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+		type: ej.datavisualization.Diagram.Shapes.BPMN,
+		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+		activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+		//Creates ad hoc subprocess
+		subProcess: {
+			adhoc: true
+		}
+	}]
 });
 
 {% endhighlight %}
@@ -694,27 +690,27 @@ Boundary represents the type of task that is being processed. The `boundary` pro
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "task",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        type: ej.datavisualization.Diagram.Shapes.BPMN,
-        shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
-        activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
-        //Adds boundary to a subprocess 
-        subProcess: {
-            boundary: ej.datavisualization.Diagram.BPMNBoundary.Call
-        }
-    }]
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "task",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+		type: ej.datavisualization.Diagram.Shapes.BPMN,
+		shape: ej.datavisualization.Diagram.BPMNShapes.Activity,
+		activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess,
+		//Adds boundary to a subprocess 
+		subProcess: {
+			boundary: ej.datavisualization.Diagram.BPMNBoundary.Call
+		}
+	}]
 });
 
 {% endhighlight %}
@@ -734,26 +730,26 @@ A data object represents information flowing through the process, such as data p
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "task",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        //Sets the type of the shape
-        type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Sets the type of BPMN Shape
-        shape: ej.datavisualization.Diagram.BPMNShapes.DataObject,
-        //Sets collection as true when Dataobject is not a Single instance
-        collection: true
-    }]
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "task",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+		//Sets the type of the shape
+		type: ej.datavisualization.Diagram.Shapes.BPMN,
+		//Sets the type of BPMN Shape
+		shape: ej.datavisualization.Diagram.BPMNShapes.DataObject,
+		//Sets collection as true when Dataobject is not a Single instance
+		collection: true
+	}]
 });
 
 {% endhighlight %}
@@ -767,24 +763,24 @@ DataSource is used to store or access data associated with a business process. T
 {% highlight js %}
 
 $("#diagram").ejDiagram({
-    width: "100%",
-    height: "100%",
-    pageSettings: {
-        scrollLimit: "diagram"
-    },
-    nodes: [{
-        name: "task",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderWidth: 2,
-        borderColor: "black",
-        //Sets type of the shape
-        type: ej.datavisualization.Diagram.Shapes.BPMN,
-        //Sets the type of bpmn shape
-        shape: ej.datavisualization.Diagram.BPMNShapes.DataSource,
-    }]
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "task",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderWidth: 2,
+		borderColor: "black",
+		//Sets type of the shape
+		type: ej.datavisualization.Diagram.Shapes.BPMN,
+		//Sets the type of bpmn shape
+		shape: ej.datavisualization.Diagram.BPMNShapes.DataSource,
+	}]
 });
 
 {% endhighlight %}

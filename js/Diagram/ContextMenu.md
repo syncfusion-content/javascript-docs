@@ -11,7 +11,7 @@ documentation: ug
 
 * In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created.
 * Diagram provides some in-built context menu items and allows to define custom menu items.
-  
+
 ## Default Context Menu
 
 The `enableContextMenu` property helps you to enable/disable the context menu. Diagram provides some default context menu items to ease the execution of some frequently used commands.
@@ -20,10 +20,10 @@ The following code illustrates how to enable the default context menu items.
 {% highlight js %}
 
 $("#DiagramContent").ejDiagram({
-    width: "700px",
-    height: "600px",
-    //Enables the context menu
-    enableContextMenu: true
+	width: "700px",
+	height: "600px",
+	//Enables the context menu
+	enableContextMenu: true
 });
 
 {% endhighlight %}
@@ -38,31 +38,31 @@ The following code example illustrate how to add custom context menu items.
 {% highlight js %}
 
 $("#DiagramContent").ejDiagram({
-    width: "700px",
-    height: "600px",
-    //Enables the context menu
-    enableContextMenu: true,
-    contextMenu: {
-        // Defines the custom context menu items
-        items: [{
-            name: "zoom",
-            // Text to be displayed 
-            text: "Zoom",
-            // Defines the sub items
-            subItems: [{
-                name: "zoomIn",
-                text: "ZoomIn"
-            }, {
-                name: "zoomOut",
-                text: "ZoomOut"
-            }]
-        }, ],
-        // Hides the default context menu items
-        showCustomMenuItemsOnly: true
-    }
+	width: "700px",
+	height: "600px",
+	//Enables the context menu
+	enableContextMenu: true,
+	contextMenu: {
+		// Defines the custom context menu items
+		items: [{
+			name: "zoom",
+			// Text to be displayed
+			text: "Zoom",
+			// Defines the sub items
+			subItems: [{
+				name: "zoomIn",
+				text: "ZoomIn"
+			},{
+				name: "zoomOut",
+				text: "ZoomOut"
+			}]
+		}],
+		// Hides the default context menu items
+		showCustomMenuItemsOnly: true
+	}
 });
 
-When you want to display only your custom context menu items, you can set true to the `showCustomMenuItemsOnly` property. 
+When you want to display only your custom context menu items, you can set true to the `showCustomMenuItemsOnly` property.
 
 {% endhighlight %}
 
@@ -71,20 +71,19 @@ The following code example illustrates how to customize the icon of context menu
 
 {% highlight html %}
 
-    <style>
-        #Zoom_image {
-            background-image: url("zoom.png");
-     
-        }
+<style>
+#Zoom_image {
+	background-image: url("zoom.png");
+}
 
-        #ZoomIn_image {
-            background-image: url("zoom-in.png");
-        }
+#ZoomIn_image {
+	background-image: url("zoom-in.png");
+}
 
-        #ZoomOut_image {
-            background-image: url("zoom-out.png");
-        }
-    </style>
+#ZoomOut_image {
+	background-image: url("zoom-out.png");
+}
+</style>
 
 {% endhighlight %}
 
@@ -97,22 +96,24 @@ The following code example illustrates how to customize the icon of context menu
 {% highlight js %}
 
 $("#DiagramContent").ejDiagram({
-            contextMenu: {
-                items: [{
-                        name: "zoom",
-                        text: "zoom",
-                    },
-                    contextMenuBeforeOpen: function(args) {
-                        //do your custom action here.
-                    },
+	contextMenu: {
+		items: [{
+			name: "zoom",
+			text: "zoom"
+		}],
 
-                    contextMenuClick: function(args) {
-                        switch (args.text) {
-                            case "zoom":
-                                //do your custom action here.
-                                break;
-                        }
-                    }
-                });
-                
+		contextMenuBeforeOpen: function(args) {
+			//do your custom action here.
+		},
+
+		contextMenuClick: function(args) {
+			switch (args.text) {
+				case "zoom":
+					//do your custom action here.
+				break;
+			}
+		}
+	}
+});
+
 {% endhighlight %}

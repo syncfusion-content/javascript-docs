@@ -24,21 +24,21 @@ To create a node, You have to define the node object and add that to `nodes` col
 {% highlight js %}
 // Defines JSON to create a node
 var node = {
-    //Name of the node
-    name: "node1",
-    
-    //Sets the size
-    width: 100,
-    height: 100,
+	//Name of the node
+	name: "node1",
 
-    //Sets the position
-    offsetX: 250,
-    offsetY: 250,
+	//Sets the size
+	width: 100,
+	height: 100,
 
-    //Customizes the appearance
-    fillColor: "darkcyan",
-    borderWidth: 2
-    };
+	//Sets the position
+	offsetX: 250,
+	offsetY: 250,
+
+	//Customizes the appearance
+	fillColor: "darkcyan",
+	borderWidth: 2
+};
 
 //Adds node to nodes collection
 var nodes = [];
@@ -46,9 +46,9 @@ nodes.push(node);
 
 //Initializes Diagram
 $("#diagram").ejDiagram({
-    width: "100%", height: "100%",
-    //Initializes nodes collection
-    nodes: nodes
+	width: "100%", height: "100%",
+	//Initializes nodes collection
+	nodes: nodes
 });
 {% endhighlight %}
 
@@ -61,16 +61,16 @@ Nodes can be added at runtime by using public method, `add`. The following code 
 {% highlight js %}
 // Defines JSON to create a node
 var node = {
-    name: "node1",
-    width: 100,
-    height: 100,
-    
-    //Sets position
-    offsetX: 250,
-    offsetY: 250,
-    fillColor: "darkcyan",
-    borderWidth: 2
-    };
+	name: "node1",
+	width: 100,
+	height: 100,
+
+	//Sets position
+	offsetX: 250,
+	offsetY: 250,
+	fillColor: "darkcyan",
+	borderWidth: 2
+};
 
 var diagram = $("#diagram").ejDiagram("instance");
 
@@ -94,17 +94,17 @@ Nodes can be generated automatically with the information provided through data 
 Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **DrawingTool**. For more information about drawing nodes, refer to [Draw Nodes](/js/Diagram/Tools "Drawing-Tools:Shapes").
 
 ### Update Node at runtime
-     
+
 The client side method `updateNode` is used to update the nodes at run time. The following code example illustrates how to update a node at runtime.
 
 {% highlight js %}
 
-    var diagram = $("#DiagramContent").ejDiagram("instance");
-    diagram.updateNode("nodeName", {
-                fillColor: "#1BA0E2",
-                borderWidth: 5,
-                borderColor: "#000000"
-            })
+var diagram = $("#DiagramContent").ejDiagram("instance");
+diagram.updateNode("nodeName", {
+	fillColor: "#1BA0E2",
+	borderWidth: 5,
+	borderColor: "#000000"
+})
 {% endhighlight %}
 
 
@@ -124,18 +124,16 @@ The following table illustrates how pivot relates offset values with node bounda
 The following code illustrates how to change the `pivot` value.
 
 {% highlight js %}
+
 // Defines JSON to create node
+var nodes = [{
+	name: "node", offsetX: 100, offsetY: 100,
+	height: 100, width: 100,
+	shape: "rectangle",
+	//Sets pivot point 
+	pivot: ej.datavisualization.Diagram.Point(0, 0)
+}];
 
-var nodes = [
-    {
-        name: "node", offsetX: 100, offsetY: 100,
-        height: 100, width: 100,        
-        shape: "rectangle",
-        //Sets pivot point 
-        pivot: ej.datavisualization.Diagram.Point(0, 0)
-
-    }
-];
 {% endhighlight %}
 
 ![](/js/Diagram/Node_images/Node_img4.png)
@@ -150,23 +148,22 @@ You can customize the appearance of a node by changing its font, fill colors, pa
 
 {% highlight js %}
 var nodes = [{
-    name: "node1",
-    width: 100, height: 100,
-    offsetX: 250, offsetY: 250,
-    
-    //Sets styles to a node to customize the appearance
-    fillColor: "darkcyan",
-    borderWidth: 2,
-    borderColor: "black",
-    borderDashArray: "5 5",
+	name: "node1",
+	width: 100, height: 100,
+	offsetX: 250, offsetY: 250,
+	//Sets styles to a node to customize the appearance
+	fillColor: "darkcyan",
+	borderWidth: 2,
+	borderColor: "black",
+	borderDashArray: "5 5",
 }];
 
 //Initializes Diagram
 $("#diagram").ejDiagram({
-    width: "100%", height: "100%",
-
-    //Initializes nodes collection
-    nodes: nodes
+	width: "100%", 
+	height: "100%",
+	//Initializes nodes collection
+	nodes: nodes
 });
 
 {% endhighlight %}
@@ -187,56 +184,48 @@ The `gradient` property of node allows you to define and applies the gradient ef
 //Creates linear gradient
 
 var linearGradient = {
-    type: "linear",
-
-    //Start point of linear gradient
-    x1: 0, y1: 0,
-
-    //End point of linear gradient
-    x2: 50, y2: 50,
-
-    //Sets an array of stop objects
-    stops: [
-        { color: "white", offset: 0 },
-        { color: "darkCyan", offset: 100 }
-    ]
+	type: "linear",
+	//Start point of linear gradient
+	x1: 0, y1: 0,
+	//End point of linear gradient
+	x2: 50, y2: 50,
+	//Sets an array of stop objects
+	stops: [
+		{ color: "white", offset: 0 },
+		{ color: "darkCyan", offset: 100 }
+	]
 };
 
 //Creates radial gradient
 
 var radialGradient = {
-    type: "radial",
-
-    //Center point of outer circle
-    cx: 50, cy: 50,
-
-    //Center point of inner circle
-    fx: 25, fy: 25,
-
-    //Radius of a radial gradient
-    r: 50,
-
-    //Sets an array of stop objects
-    stops: [
-        { color: "white", offset: 0 },
-        { color: "darkCyan", offset: 100 }
-    ]
+	type: "radial",
+	//Center point of outer circle
+	cx: 50, cy: 50,
+	//Center point of inner circle
+	fx: 25, fy: 25,
+	//Radius of a radial gradient
+	r: 50,
+	//Sets an array of stop objects
+	stops: [
+		{ color: "white", offset: 0 },
+		{ color: "darkCyan", offset: 100 }
+	]
 };
 
 var nodes = [{
-    name: "node1",
-    width: 100, height: 100,
-    offsetX: 250, offsetY: 250,
-
-    //Sets styles to a node to customize the appearance
-    fillColor: "darkcyan",
-    borderWidth: 2,
-    gradient: linearGradient
- }];
+	name: "node1",
+	width: 100, height: 100,
+	offsetX: 250, offsetY: 250,
+	//Sets styles to a node to customize the appearance
+	fillColor: "darkcyan",
+	borderWidth: 2,
+	gradient: linearGradient
+}];
 {% endhighlight %}
- 
+
 ![](/js/Diagram/Node_images/Node_img6.png)
- 
+
 ## Shadow
 
 **Diagram** provides support to add **shadow** effect to a node that is disabled by default. It can be enabled with the `constraints` property of node. The following code illustrates how to drop shadow.
@@ -248,18 +237,14 @@ var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 var constraints = nodeConstraints.Default | nodeConstraints.Shadow;
 
 // Defines JSON to create path node
-var nodes = [
-    {
-        name: "node", offsetX: 100, offsetY: 100,
-        height: 100, width:100,
-
-        //Sets shape of node
-        shape: "rectangle",
-
-        //Enables Shadow for the node.
-        constraints: constraints
-    }
-];
+var nodes = [{
+	name: "node", offsetX: 100, offsetY: 100,
+	height: 100, width:100,
+	//Sets shape of node
+	shape: "rectangle",
+	//Enables Shadow for the node.
+	constraints: constraints
+}];
 {% endhighlight %}
 
 
@@ -268,12 +253,14 @@ var nodes = [
 The following code illustrates how to disable shadow effect at runtime.
 
 {% highlight js %}
+
 var diagram = $("#diagram").ejDiagram("instance");
 var node = diagram.findNode("node");
 
 //Disables Shadow effect for a node.
 constraints = node.constraints &~ nodeConstraints.Shadow;
 diagram.updateNode("node", { constraints: constraints });
+
 {% endhighlight %}
 
 
@@ -282,21 +269,16 @@ diagram.updateNode("node", { constraints: constraints });
 The angle, translation, and opacity of the shadow can be customized with the `shadow` property of node. The following code example illustrates how to customize shadow.
 
 {% highlight js %}
-var nodes = [
-    {
-        name: "node", offsetX: 100, offsetY: 100,
-        height: 100, width: 100,
-
-        //Sets shape of node 
-        shape: "rectangle",
-
-        //Enables Shadow for the node.
-        constraints: constraints,
-
-        //Customizes shadow effect
-        shadow: { opacity: 0.8, distance: 9, angle: 50}
-    }
-];
+var nodes = [{
+	name: "node", offsetX: 100, offsetY: 100,
+	height: 100, width: 100,
+	//Sets shape of node 
+	shape: "rectangle",
+	//Enables Shadow for the node.
+	constraints: constraints,
+	//Customizes shadow effect
+	shadow: { opacity: 0.8, distance: 9, angle: 50}
+}];
 {% endhighlight %}
 
 ![](/js/Diagram/Node_images/Node_img8.png)
