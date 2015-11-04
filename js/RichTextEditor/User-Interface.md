@@ -227,22 +227,21 @@ showToolbar: false
 
 ## Content Area
 
-The editor creates the iframe element as the content area on control initialization, it is used to display and editing the content. In Content Area, the editor displays only the body tag of a &lt; iframe &gt; document. To set or modify details in the <head> tag, use [Source view](#_HTML_View "") of the editor.
+The editor creates the iframe element as the content area on control initialization, it is used to display and editing the content. In Content Area, the editor displays only the body tag of a &lt; iframe &gt; document. To set or modify details in the &lt; head &gt; tag, use [Source view](#_HTML_View) of the editor.
 
 ### Iframe Attributes
 
 The editor allows you to passing an additional attributes to body tag of a &lt; iframe &gt; element using [iframeAttributes](http://help.syncfusion.com/js/api/ejrte#members:iframeattribute) property. The property contains name/value pairs in string format, it is used to override the default appearance of the content area. For example, the content area’s font, color, margins, and background can be overridden using iframeAttributes property. You can specifies the editable behavior (content editable) of the content also in this property. For more information about the content editable, see [content editable](#_ContentEditable).
 
 {% highlight js %}
-$(function () {
+ $(function () {
 
-$("#texteditor").ejRTE({
-value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-iframeAttribute: "background-color:#e0ffff;color:#6495ed;"
-});
-
-});
+ $("#texteditor").ejRTE({
+ value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+ " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+ iframeAttributes:{style: "background-color:#e0ffff;color:#6495ed;"}
+ });
+ });
 {% endhighlight %}
 
 ### Adding CSS File
@@ -250,24 +249,15 @@ iframeAttribute: "background-color:#e0ffff;color:#6495ed;"
 The editor offers you to add external CSS file to style the &lt; iframe &gt; element.  You can change the appearance of editor’s content using an external CSS file. For example, apply default styles for headings (h1, h2, etc.) and lists (bulleted or numbered) of the editor’s content. 
 
 {% highlight js %}
-$(function () {
+ $(function () {
 
-$("#texteditor").ejRTE({
-value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+ $("#texteditor").ejRTE({
+  value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+ " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+ externalCSS: "Content/Css/iframe-custom.css",
 });
 
-});
-
-function addCssToIframe() {
-var editor = $("#texteditor").ejRTE("instance");
-var iframeDoc = editor.getDocument();
-var linkTag = document.createElement("link");
-linkTag.type = "text/css";
-linkTag.rel = "stylesheet";
-linkTag.href = "Content/Css/iframe-custom.css";
-iframeDoc.head.appendChild(linkTag);
-}
+ });
 {% endhighlight %}
 
 The new file named iframe-custom.css is created and moved to the content folder with the following styles.
@@ -297,19 +287,19 @@ The editor provides option to control the editable behavior using [allowEditing]
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id ="texteditor"></textarea>
 
-<script type="text/javascript">
+<script type ="text/javascript">
 
-$(function () {
+   $(function () {
 
-$("#texteditor").ejRTE({
-value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-allowEditing: false
-});
+            $("#texteditor").ejRTE({
+                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+                allowEditing: false
+            });
 
-});
+        });
 
 </script>
 {% endhighlight %}
@@ -318,22 +308,22 @@ The contentEditable attribute allows you to make any element of HTML content to 
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id ="texteditor"></textarea>
 
-<script type="text/javascript">
+<script type ="text/javascript">
 
-$(function () {
+ $(function () {
 
-$("#texteditor").ejRTE({
-value: "<p>The RichTextEditor (RTE) control enables you to edit the contents with insert table and images,</p>" +
-"<p> it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.</p>",
-});
+            $("#texteditor").ejRTE({
+                value: "<p>The RichTextEditor (RTE) control enables you to edit the contents with insert table and images,</p>" +
+                "<p> it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.</p>",
+            });
 
-var editor = $("#texteditor").ejRTE("instance");
-var iframeDoc = editor.getDocument();
-var paragraph = $("p", iframeDoc.body);
-$($(paragraph)[1]).attr("contenteditable", "false");
-});
+            var editor = $("#texteditor").ejRTE("instance");
+            var iframeDoc = editor.getDocument();
+            var paragraph = $("p", iframeDoc.body);
+            $($(paragraph)[1]).attr("contenteditable", "false");
+        });
 
 </script>
 {% endhighlight %}
@@ -389,19 +379,18 @@ N> The outermost tag is the body tag of &lt; iframe &gt; element in design view,
 The editor automatically counts the number of characters and words in the content while you type. The characters and words count displayed at the bottom of the editor. You can limit the number of characters in your content using [maxLength](http://help.syncfusion.com/js/api/ejrte#members:maxlength) property. By default, the editor sets the characters limit value as 7000 characters.
 
 {% highlight html %}
+<textarea id="texteditor"></textarea>
+<script type="text/javascript">
+    $(function () {
 
-<textarea id="texteditor"></textarea>
-<script type="text/javascript">
-$(function () {
+        $("#texteditor").ejRTE({
+            showFooter: true,
+            showWordCount: true,
+            showCharCount: true,
+            maxLength: 500
+        });
 
-$("#texteditor").ejRTE({
-showFooter: true,
-showWordCount: true,
-showCharCount: true,
-maxLength: 500
-});
-
-});
+    });
 </script>
 {% endhighlight %}
 

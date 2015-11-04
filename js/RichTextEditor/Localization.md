@@ -102,6 +102,17 @@ dotted: "Dotted",
 dashed: "Dashed",
 doubled: "Doubled"
 };
+var format= [
+{ text: "Paragraph", value: "p", spriteCssClass: "e-paragraph" },
+{ text: "Quotation", value: "blockquote", spriteCssClass: "e-quotation" },
+{ text: "Heading 1", value: "h1", spriteCssClass: "e-h1" },
+{ text: "Heading 2", value: "h2", spriteCssClass: "e-h2" },
+{ text: "Heading 3", value: "h3", spriteCssClass: "e-h3" },
+{ text: "Heading 4", value: "h4", spriteCssClass: "e-h4" },
+{ text: "Heading 5", value: "h5", spriteCssClass: "e-h5" },
+{ text: "Heading 6", value: "h6", spriteCssClass: "e-h6" }
+];
+
 {% endhighlight %}
 
 N>  The culture name has to be specified in a standard format such as [Language Code]-[County/Region Code].
@@ -199,10 +210,20 @@ solid: "solide",
 dotted: "gepunktete",
 dashed: "Eine gestrichelte",
 doubled: "verdoppelt",
-maximize: "maximieren", 
+maximize: "maximieren",
 resize: "minimieren",
 swatches: "Farbfelder"
 };
+var format_DE = [
+{ text: "Absatz", value: "p", spriteCssClass: "e-paragraph" },
+{text: "Zitat", value: "blockquote", spriteCssClass: "e-quotation" },
+{ text: "Kopf 1", value: "h1", spriteCssClass: "e-h1" },
+{ text: "Kopf 2", value: "h2", spriteCssClass: "e-h2" },
+{ text: "Kopf 3", value: "h3", spriteCssClass: "e-h3" },
+{ text: "Kopf 4", value: "h4", spriteCssClass: "e-h4" },
+{ text: "Kopf 5", value: "h5", spriteCssClass: "e-h5" },
+{ text: "Kopf 6", value: "h6", spriteCssClass: "e-h6" }
+];
 {% endhighlight %}
 
 You can set the [locale](http://help.syncfusion.com/js/api/ejrte#members:locale) property of the editor to the new language. 
@@ -212,7 +233,7 @@ $("#texteditor").ejRTE({
 value: "Das Richtexteditor (RTE) Steuerung ermöglicht Ihnen, den Inhalt mit Einsatz Tisch und Bilder zu bearbeiten ," +
 " sondern bietet auch eine Werkzeugleiste , die Rich-Text- Format ," +
 " um die in der Textarea eingegeben Gehalt gelten können.",
-locale: "de-DE"
+locale: "de-DE",format:format_DE
 });
 {% endhighlight %}
 

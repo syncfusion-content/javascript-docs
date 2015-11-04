@@ -16,11 +16,12 @@ This section helps to understand the getting started of RTE control with the ste
 Create a new HTML file and include the below code
 
 {% highlight html %}
+
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8" />
-<title></title>
+    <meta charset="utf-8" />
+    <title></title>
 </head>
 <body>
 
@@ -32,9 +33,9 @@ Add link to the CSS file from the specific theme folder to your HTML file within
 
 {% highlight html %}
 <head>
-<meta charset="utf-8" />
-<title>Getting Started - RichTextEditor</title>
-<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+   <meta charset ="utf-8"   />
+   <title>Getting Started - RichTextEditor</title>
+   <link href ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
 </head>
 {% endhighlight %}
 
@@ -42,14 +43,14 @@ Also add links to the [CDN](http://helpjs.syncfusion.com/js/cdn#) Script files a
 
 {% highlight html %}
 <head>
-<meta charset="utf-8" />
-<title>Getting Started - RichTextEditor</title>
-<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-<script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+   <meta charset="utf-8"   />
+   <title>Getting Started - RichTextEditor</title>
+   <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+   <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+   <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+   <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+   <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+   <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 </head>
 {% endhighlight %}
 
@@ -61,7 +62,7 @@ Create a **TextArea** element within the body of the HTML document where the wid
 
 {% highlight html %}
 <body>
-<textarea id="texteditor"></textarea>
+   <textarea id ="texteditor"></textarea>
 </body>
 {% endhighlight %}
 
@@ -69,12 +70,13 @@ Initialize the editor by adding the following script to the HTML document.
 
 {% highlight html %}
 <body>
-<textarea id="texteditor"></textarea>
-<script type="text/javascript">
-$(function () {
-$("#texteditor").ejRTE();
-});
-</script>
+   <textarea id="texteditor"></textarea>
+   
+   <script type="text/javascript">
+        $(function () {
+            $("#texteditor").ejRTE();
+        });
+   </script>
 </body>
 {% endhighlight %}
 
@@ -83,7 +85,7 @@ $("#texteditor").ejRTE();
 You can configure a toolbar with the tools as your application requires.
 
 {% highlight js %}
-$(function () { 
+$(function () {
 $("#texteditor").ejRTE({
 toolsList: ["style", "lists", "doAction", "links", "images"],
 tools: {
