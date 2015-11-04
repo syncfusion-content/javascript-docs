@@ -75,40 +75,41 @@ The following table describes [`editType`](http://help.syncfusion.com/js/api/ejg
 <table>
 <tr>
 <th>
-EditType<br/><br/></th><th>
-EditParams<br/><br/></th><th>
-Example<br/><br/></th></tr>
+EditType</th><th>
+EditParams</th><th>
+Example</th></tr>
 <tr>
 <td>
-CheckBox<br/><br/></td><td>
-{{[`ejCheckBox`](http://help.syncfusion.com/js/api/ejcheckbox# "checkbox")'' markdownify }} <br/><br/></td><td>
-editParams: { checked: true }<br/><br/></td></tr>
+CheckBox</td><td>
+{{[`ejCheckBox`](http://help.syncfusion.com/js/api/ejcheckbox# "checkbox")'' markdownify }} </td><td>
+editParams: { checked: true }</td></tr>
 <tr>
 <td>
-NumericTextBox <br/><br/></td><td>
-{{[ejTextBoxes](http://help.syncfusion.com/js/api/ejtextboxes# "textbox")'' markdownify }} <br/><br/></td><td>
-editParams: { decimalPlaces: 2, value:5  }<br/><br/></td></tr>
+NumericTextBox </td><td>
+{{[ejTextBoxes](http://help.syncfusion.com/js/api/ejtextboxes# "textbox")'' markdownify }} </td><td>
+editParams: { decimalPlaces: 2, value:5  }</td></tr>
 <tr>
 <td>
-InputTextBox <br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td></tr>
+InputTextBox </td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
-DatePicker <br/><br/></td><td>
-{{'[ejDatePicker](http://help.syncfusion.com/js/api/ejdatepicker# "datapicker")'' markdownify }} <br/><br/></td><td>
-editParams: {  buttonText : "Now" }<br/><br/><br/><br/></td></tr>
+DatePicker </td><td>
+{{'[ejDatePicker](http://help.syncfusion.com/js/api/ejdatepicker# "datapicker")'' markdownify }} </td><td>
+editParams: {  buttonText : "Now" }</td></tr>
 <tr>
 <td>
-DateTimePicker<br/><br/></td><td>
-{{'[ejDateTimePicker](http://help.syncfusion.com/js/api/ejdatetimepicker# "datetimepicker")'' markdownify }} <br/><br/></td><td>
-editParams: {  enabled: true }<br/><br/><br/><br/></td></tr>
+DateTimePicker</td><td>
+{{'[ejDateTimePicker](http://help.syncfusion.com/js/api/ejdatetimepicker# "datetimepicker")'' markdownify }} </td><td>
+editParams: {  enabled: true }</td></tr>
 <tr>
 <td>
-DropDownList<br/><br/></td><td>
-{{'[ejDropDownList](http://help.syncfusion.com/js/api/ejdropdownlist# "dropdownlist")'' markdownify }} <br/><br/></td><td>
-editParams: {  allowGrouping: true }<br/><br/><br/><br/></td></tr>
+DropDownList</td><td>
+{{'[ejDropDownList](http://help.syncfusion.com/js/api/ejdropdownlist# "dropdownlist")'' markdownify }} </td><td>
+editParams: {  allowGrouping: true }</td></tr>
 </table>
+
 N> 1. If [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") is not set then by default it will display the input element ("stringedit") while editing a column.
 N> 2. For [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") property you can assign either `string` value ("numericedit") or `enum` value (`ej.Grid.EditingType.Numeric`).
 
@@ -853,73 +854,74 @@ __List__ __of__ __Jquery__ __validation__ __methods__
 <table>
 <tr>
 <td>
-Rules<br/><br/></td><td>
-Description<br/><br/></td></tr>
+Rules</td><td>
+Description</td></tr>
 <tr>
 <td>
-required<br/><br/></td><td>
-Requires an element.<br/><br/></td></tr>
+required</td><td>
+Requires an element.</td></tr>
 <tr>
 <td>
-remote<br/><br/></td><td>
-Requests a resource to check the element for validity.<br/><br/></td></tr>
+remote</td><td>
+Requests a resource to check the element for validity.</td></tr>
 <tr>
 <td>
-minlength<br/><br/></td><td>
-Requires the element to be of given minimum length.<br/><br/></td></tr>
+minlength</td><td>
+Requires the element to be of given minimum length.</td></tr>
 <tr>
 <td>
-maxlength<br/><br/></td><td>
-Requires the element to be of given maximum length.<br/><br/></td></tr>
+maxlength</td><td>
+Requires the element to be of given maximum length.</td></tr>
 <tr>
 <td>
-rangelength<br/><br/></td><td>
-Requires the element to be in given value range.<br/><br/></td></tr>
+rangelength</td><td>
+Requires the element to be in given value range.</td></tr>
 <tr>
 <td>
-min<br/><br/></td><td>
-The element requires a given minimum.<br/><br/></td></tr>
+min</td><td>
+The element requires a given minimum.</td></tr>
 <tr>
 <td>
-max<br/><br/></td><td>
-The element requires a given maximum.<br/><br/></td></tr>
+max</td><td>
+The element requires a given maximum.</td></tr>
 <tr>
 <td>
-range<br/><br/></td><td>
-Requires the element to be in a given value range.<br/><br/></td></tr>
+range</td><td>
+Requires the element to be in a given value range.</td></tr>
 <tr>
 <td>
-email<br/><br/></td><td>
-The element requires a valid email.<br/><br/></td></tr>
+email</td><td>
+The element requires a valid email.</td></tr>
 <tr>
 <td>
-url<br/><br/></td><td>
-The element requires a valid url<br/><br/></td></tr>
+url</td><td>
+The element requires a valid url</td></tr>
 <tr>
 <td>
-date<br/><br/></td><td>
-Requires the element to be a date.<br/><br/></td></tr>
+date</td><td>
+Requires the element to be a date.</td></tr>
 <tr>
 <td>
-dateISO<br/><br/></td><td>
-The element requires an ISO date.<br/><br/></td></tr>
+dateISO</td><td>
+The element requires an ISO date.</td></tr>
 <tr>
 <td>
-number<br/><br/></td><td>
-The element requires a decimal number.<br/><br/></td></tr>
+number</td><td>
+The element requires a decimal number.</td></tr>
 <tr>
 <td>
-digits<br/><br/></td><td>
-The element requires digits only.<br/><br/></td></tr>
+digits</td><td>
+The element requires digits only.</td></tr>
 <tr>
 <td>
-creditcard<br/><br/></td><td>
-Requires the element to be a credit card number.<br/><br/></td></tr>
+creditcard</td><td>
+Requires the element to be a credit card number.</td></tr>
 <tr>
 <td>
-equalTo<br/><br/></td><td>
-Requires the element to be the same as another.<br/><br/></td></tr>
+equalTo</td><td>
+Requires the element to be the same as another.</td></tr>
 </table>
+
 Grid supports all the standard validation methods of Jquery, please refer the Jquery validation documentation [link](http://jqueryvalidation.org/documentation/# "link") for more information.
 
 The following code example describes the above behavior.
@@ -1120,80 +1122,80 @@ __Parameters__ __Table__
 <table>
         <tr>
             <th>
-                Action<br /><br />
+                Action
             </th>
             <th>
-                Parameter Name<br /><br /></th>
+                Parameter Name</th>
             <th>
-                Example<br /><br />
+                Example
             </th>
         </tr>
         <tr>
             <td rowspan="2">
-                Update,Insert<br /><br />
+                Update,Insert
             </td>
             <td>
-                value<br /><br />
+                value
             </td>
             <td>
-                public ActionResult Update(EditableOrder value){ }<br /><br />
+                public ActionResult Update(EditableOrder value){ }
             </td>
         </tr>
         <tr>
            
             <td>
-                public ActionResult Insert(EditableOrder value){ }<br /><br />
+                public ActionResult Insert(EditableOrder value){ }
             </td>
         </tr>
         <tr>
             <td>
-                Remove<br /><br />
+                Remove
             </td>
             <td>
-                key<br /><br />
+                key
             </td>
             <td>
-                public ActionResult Remove(int key){ }<br /><br />
+                public ActionResult Remove(int key){ }
             </td>
         </tr>
         <tr>
             <td>
-                Batch Add<br /><br />
+                Batch Add
             </td>
             <td>
-                added<br /><br />
+                added
             </td>
             <td rowspan="3">
-                public ActionResult BatchUpdate(string action, List<editableorder> added, List<editableorder> changed, List<editableorder> deleted, int? key){ }<br /><br />
+                public ActionResult BatchUpdate(string action, List<editableorder> added, List<editableorder> changed, List<editableorder> deleted, int? key){ }
             </td>
         </tr>
         <tr>
             <td>
-                Batch Update<br /><br />
+                Batch Update
             </td>
             <td>
-                changed<br /><br />
+                changed
             </td>
             
         </tr>
         <tr>
             <td>
-                Batch Delete<br /><br />
+                Batch Delete
             </td>
             <td>
-                deleted<br /><br />
+                deleted
             </td>
            
         </tr>
         <tr>
             <td>
-                Crud Update,<br /><br />Crud Remove,<br /><br />Crud Insert<br /><br />
+                Crud Update,Crud Remove,Crud Insert
             </td>
             <td>
-                value, action<br /><br />
+                value, action
             </td>
             <td>
-                public ActionResult CrudUrl(EditableOrder value, string action){ }<br /><br />
+                public ActionResult CrudUrl(EditableOrder value, string action){ }
             </td>
         </tr>
     </table>

@@ -17,112 +17,112 @@ Supported Keyboard Interactions keys with description which are in Grid
 <table>
 <tr>
 <th>
-Interaction Keys<br/><br/></th><th>
-Description<br/><br/></th></tr>
+Interaction Keys</th><th>
+Description</th></tr>
 <tr>
 <td>
-Alt + j<br/><br/></td><td>
-Focus the Grid<br/><br/></td></tr>
+Alt + j</td><td>
+Focus the Grid</td></tr>
 <tr>
 <td>
-Insert<br/><br/></td><td>
-Insert record in Grid<br/><br/></td></tr>
+Insert</td><td>
+Insert record in Grid</td></tr>
 <tr>
 <td>
-Delete<br/><br/></td><td>
-Delete record in Grid<br/><br/></td></tr>
+Delete</td><td>
+Delete record in Grid</td></tr>
 <tr>
 <td>
-F2<br/><br/></td><td>
-Edit record in Grid<br/><br/></td></tr>
+F2</td><td>
+Edit record in Grid</td></tr>
 <tr>
 <td>
-Enter <br/><br/></td><td>
-Save edited or added <br/><br/></td></tr>
+Enter </td><td>
+Save edited or added </td></tr>
 <tr>
 <td>
-Esc<br/><br/></td><td>
-Cancel add or edit state<br/><br/></td></tr>
+Esc</td><td>
+Cancel add or edit state</td></tr>
 <tr>
 <td>
-PgDn<br/><br/></td><td>
-Go to next Page<br/><br/></td></tr>
+PgDn</td><td>
+Go to next Page</td></tr>
 <tr>
 <td>
-PgUp<br/><br/></td><td>
-Go to previous Page<br/><br/></td></tr>
+PgUp</td><td>
+Go to previous Page</td></tr>
 <tr>
 <td>
-Ctrl +Alt +PgDn<br/><br/></td><td>
-Go to last page<br/><br/></td></tr>
+Ctrl +Alt +PgDn</td><td>
+Go to last page</td></tr>
 <tr>
 <td>
-Ctrl + Alt + PgUp<br/><br/></td><td>
-Go to first page <br/><br/></td></tr>
+Ctrl + Alt + PgUp</td><td>
+Go to first page </td></tr>
 <tr>
 <td>
-Alt + PgDown<br/><br/></td><td>
-Go to next Pager<br/><br/></td></tr>
+Alt + PgDown</td><td>
+Go to next Pager</td></tr>
 <tr>
 <td>
-Alt + PgUp<br/><br/></td><td>
-Go to previous Pager<br/><br/></td></tr>
+Alt + PgUp</td><td>
+Go to previous Pager</td></tr>
 <tr>
 <td>
-Home<br/><br/></td><td>
-Go to first cell<br/><br/></td></tr>
+Home</td><td>
+Go to first cell</td></tr>
 <tr>
 <td>
-End<br/><br/></td><td>
-Go to last cell<br/><br/></td></tr>
+End</td><td>
+Go to last cell</td></tr>
 <tr>
 <td>
-Ctrl + Home<br/><br/></td><td>
-Go to first row<br/><br/></td></tr>
+Ctrl + Home</td><td>
+Go to first row</td></tr>
 <tr>
 <td>
-Ctrl + End<br/><br/></td><td>
-Go to last row<br/><br/></td></tr>
+Ctrl + End</td><td>
+Go to last row</td></tr>
 <tr>
 <td>
-Up arrow<br/><br/></td><td>
-Move to up cell selection<br/><br/></td></tr>
+Up arrow</td><td>
+Move to up cell selection</td></tr>
 <tr>
 <td>
-Down arrow<br/><br/></td><td>
-Move to down cell selection<br/><br/></td></tr>
+Down arrow</td><td>
+Move to down cell selection</td></tr>
 <tr>
 <td>
-Right arrow<br/><br/></td><td>
-Move to right cell selection<br/><br/></td></tr>
+Right arrow</td><td>
+Move to right cell selection</td></tr>
 <tr>
 <td>
-Left arrow<br/><br/></td><td>
-Move to left cell selection<br/><br/></td></tr>
+Left arrow</td><td>
+Move to left cell selection</td></tr>
 <tr>
 <td>
-Tab<br/><br/></td><td>
-Go to next cell<br/><br/></td></tr>
+Tab</td><td>
+Go to next cell</td></tr>
 <tr>
 <td>
-Shift + tab<br/><br/></td><td>
-Go to previous cell<br/><br/></td></tr>
+Shift + tab</td><td>
+Go to previous cell</td></tr>
 <tr>
 <td>
-Alt + DownArrow<br/><br/></td><td>
-Expand selected group<br/><br/></td></tr>
+Alt + DownArrow</td><td>
+Expand selected group</td></tr>
 <tr>
 <td>
-Ctrl + DownArrow<br/><br/></td><td>
-Expand All visible groups<br/><br/></td></tr>
+Ctrl + DownArrow</td><td>
+Expand All visible groups</td></tr>
 <tr>
 <td>
-Alt + UpArrow<br/><br/></td><td>
-Collapse selected group<br/><br/></td></tr>
+Alt + UpArrow</td><td>
+Collapse selected group</td></tr>
 <tr>
 <td>
-Ctrl + UpArrow<br/><br/></td><td>
-Collapse All visible groups<br/><br/></td></tr>
+Ctrl + UpArrow</td><td>
+Collapse All visible groups</td></tr>
 </table>
 
 

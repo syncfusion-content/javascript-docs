@@ -15,209 +15,209 @@ To modify Grid appearance, you need to override default CSS of Grid. Please find
   <table>
         <tr>
             <th>
-                Section<br /><br />
+                Section
             </th>
             <th>
-                CSS class<br /><br />
+                CSS class
             </th>
             <th>
-                Purpose of CSS class<br /><br />
+                Purpose of CSS class
             </th>
         </tr>
         <tr>
             <td rowspan="2">
-                Root <br /><br />
+                Root 
             </td>
             <td>
-                e-grid <br /><br />
+                e-grid 
             </td>
             <td rowspan="2">
-                This classes are in this root element (div) of grid control. <br /><br />
+                This classes are in this root element (div) of grid control. 
             </td>
         </tr>
         <tr>
             
             <td>
-                e-js<br /><br />
+                e-js
             </td>
            
         </tr>
         <tr>
             <td rowspan="5">
-                Header<br /><br />
+                Header
             </td>
             <td>
-                e-gridheader<br /><br />
+                e-gridheader
             </td>
             <td>
-                This is class is added in the root element of header element. In this class, You can override thin line between header and content of grid.<br /><br />
-            </td>
-        </tr>
-        <tr>
-            
-            <td>
-                e-table<br /><br />
-            </td>
-            <td>
-                This class is added at 'table' of grid header. This CSS class makes table width as 100 %.<br /><br />
+                This is class is added in the root element of header element. In this class, You can override thin line between header and content of grid.
             </td>
         </tr>
         <tr>
             
             <td>
-                e-columnheader<br /><br />
+                e-table
             </td>
             <td>
-                This class is added at 'tr' of grid header. <br /><br />
+                This class is added at 'table' of grid header. This CSS class makes table width as 100 %.
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                e-columnheader
+            </td>
+            <td>
+                This class is added at 'tr' of grid header. 
             </td>
         </tr>
         <tr>
           
             <td>
-                e-headercell<br /><br />
+                e-headercell
             </td>
             <td>
-                This class is added in 'th' element of grid header. You can override background color of header and border color<br /><br />
+                This class is added in 'th' element of grid header. You can override background color of header and border color
             </td>
         </tr>
         <tr>
            
             <td>
-                e-headercelldiv<br /><br />
+                e-headercelldiv
             </td>
             <td>
-                This class is add in div which present 'th' element in header. You recommend you to use e-headercelldiv to override skeleton of header.<br /><br />
+                This class is add in div which present 'th' element in header. You recommend you to use e-headercelldiv to override skeleton of header.
             </td>
         </tr>
         <tr>
             <td rowspan="7">
-                Body<br /><br />
+                Body
             </td>
             <td>
-                e-gridcontent<br /><br />
+                e-gridcontent
             </td>
             <td>
-                This class is added at root of body content. This is to override background color of body.<br /><br />
+                This class is added at root of body content. This is to override background color of body.
             </td>
         </tr>
         <tr>
             
             <td>
-                e-table<br /><br />
+                e-table
             </td>
             <td>
-                This class is added to table of content. This CSS class makes table width as 100 %.<br /><br />
+                This class is added to table of content. This CSS class makes table width as 100 %.
             </td>
         </tr>
         <tr>
            
             <td>
-                e-alt_row<br /><br />
+                e-alt_row
             </td>
             <td>
-                This class is added to alternate rows of grid. This is to override alternate row color of grid.<br /><br />
-            </td>
-        </tr>
-        <tr>
-            
-            <td>
-                e-rowcell<br /><br />
-            </td>
-            <td>
-                This class is added to all cells in grid. This is to override cells appearance and styling.<br /><br />
+                This class is added to alternate rows of grid. This is to override alternate row color of grid.
             </td>
         </tr>
         <tr>
             
             <td>
-                e-groupcaption<br /><br />
+                e-rowcell
             </td>
             <td>
-                This class is added to 'td' of group caption which is to change background color of caption cell.<br /><br />
+                This class is added to all cells in grid. This is to override cells appearance and styling.
             </td>
         </tr>
         <tr>
             
             <td>
-                e-selectionbackground<br /><br />
+                e-groupcaption
             </td>
             <td>
-                This class is added to rowcell's of grid. this is override selection.<br /><br />
+                This class is added to 'td' of group caption which is to change background color of caption cell.
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                e-selectionbackground
+            </td>
+            <td>
+                This class is added to rowcell's of grid. this is override selection.
             </td>
         </tr>
         <tr>
           
             <td>
-                e-hover <br /><br />
+                e-hover 
             </td>
             <td>
-                This class adds to row of grid while hover grid rows.<br /><br />
+                This class adds to row of grid while hover grid rows.
             </td>
         </tr>
         <tr>
             <td rowspan="3">
-                Pager<br /><br />
+                Pager
             </td>
             <td>
-                e-pager<br /><br />
+                e-pager
             </td>
             <td>
-                This class is added to root element of pager. This to change appearance of background color and color of font.<br /><br />
+                This class is added to root element of pager. This to change appearance of background color and color of font.
             </td>
         </tr>
         <tr>
             
             <td>
-                e-pagercontainer<br /><br />
+                e-pagercontainer
             </td>
             <td>
-                This class is added to numeric items of pager.<br /><br />
+                This class is added to numeric items of pager.
             </td>
         </tr>
         <tr>
           
             <td>
-                e-parentmsgbar<br /><br />
+                e-parentmsgbar
             </td>
             <td>
-                This class is added to pager info of pager.<br /><br />
+                This class is added to pager info of pager.
             </td>
         </tr>
         <tr>
             <td rowspan="4">
-                Summary<br /><br />
+                Summary
             </td>
             <td>
-                e-gridfooter<br /><br />
+                e-gridfooter
             </td>
             <td>
-                This class is added to root of summary div.<br /><br />
-            </td>
-        </tr>
-        <tr>
-          
-            <td>
-                e-gridsummary<br /><br />
-            </td>
-            <td>
-                This class is added to table of summary. This CSS class makes table width as 100 %.<br /><br />
+                This class is added to root of summary div.
             </td>
         </tr>
         <tr>
           
             <td>
-                e-gridSummaryRows<br /><br />
+                e-gridsummary
             </td>
             <td>
-                This class is added to rows of grid summary. <br /><br />
+                This class is added to table of summary. This CSS class makes table width as 100 %.
+            </td>
+        </tr>
+        <tr>
+          
+            <td>
+                e-gridSummaryRows
+            </td>
+            <td>
+                This class is added to rows of grid summary. 
             </td>
         </tr>
         <tr>
             <td>
-                e-summaryrow<br /><br />
+                e-summaryrow
             </td>
             <td>
-                This class is added to cells of summary row. This to override background color of summary.<br /><br />
+                This class is added to cells of summary row. This to override background color of summary.
             </td>
         </tr>
     </table>

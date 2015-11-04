@@ -40,7 +40,7 @@ The following output is displayed as a result of the above code example.
 
 ## Details Template
 
-It provides a [detailed view](http://help.syncfusion.com/js/api/ejgrid#members:detailstemplate "detailed view") /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the [`detailsTemplate`](http://help.syncfusion.com/js/api/ejgrid#members:detailstemplate "detailsTemplate") property. And also you can change HTML elements in detail template row into JavaScript controls using [`detailsDataBound`](http://help.syncfusion.com/js/api/ejgrid#events:detailsdatabound "detailsDataBound") event.
+It provides a detailed view /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the [`detailsTemplate`](http://help.syncfusion.com/js/api/ejgrid#members:detailstemplate "detailsTemplate") property. And also you can change HTML elements in detail template row into JavaScript controls using [`detailsDataBound`](http://help.syncfusion.com/js/api/ejgrid#events:detailsdatabound "detailsDataBound") event.
 
 On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details row.
 
@@ -180,7 +180,7 @@ The following output is displayed as a result of the above code example.
 
 ## Alternate row styling
 
-Alternate row styling enhances the readability of grid rows by setting different background color for every alternate row. You can enable the [alternative](http://help.syncfusion.com/js/api/ejgrid#members:enablealtrow "alternative") rows styling in grid by using [`enableAltRow`](http://help.syncfusion.com/js/api/ejgrid#members:enablealtrow "enableAltRow") property. 
+Alternate row styling enhances the readability of grid rows by setting different background color for every alternate row. You can enable the alternative rows styling in grid by using [`enableAltRow`](http://help.syncfusion.com/js/api/ejgrid#members:enablealtrow "enableAltRow") property. 
 
 By default its value is `true`, so the following code example describes the how to turn off alternate row behavior.
 

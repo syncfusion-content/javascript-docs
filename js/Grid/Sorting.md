@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting
 
-[Sorting](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "Sorting") is the process of arranging records in some ordered sequence by setting [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "allowSorting") property as `true`. 
+Sorting is the process of arranging records in some ordered sequence by setting [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "allowSorting") property as `true`. 
 
 Sort the column by clicking on the header of that particular column. The order switches between ascending and descending each time you click a column header for sorting.
 
@@ -69,7 +69,7 @@ The following output is displayed as a result of the above code example.
 
 ## Multi-Column Sorting
 
-[Sort multiple](http://help.syncfusion.com/js/api/ejgrid#members:allowmultisorting "Sort multiple") columns in grid by setting [`allowMultiSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowmultisorting "allowMultiSorting") property as true. The sorting order is displayed in the header while doing multi sorting.
+Sort multiple columns in grid by setting [`allowMultiSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowmultisorting "allowMultiSorting") property as true. The sorting order is displayed in the header while doing multi sorting.
 
 You can sort more than one column by pressing "Ctrl key + mouse left" click on the column header. To clear sorting for particular column, press "Shift + mouse left click". 
 

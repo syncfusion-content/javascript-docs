@@ -17,32 +17,32 @@ The following table shows default toolbar items and its action.
 <table>
 <tr>
 <th>
-Default toolbar items<br/><br/></th><th>
-Action<br/><br/></th></tr>
+Default toolbar items</th><th>
+Action</th></tr>
 <tr>
 <td>
-Add<br/><br/></td><td>
-Add a new row<br/><br/></td></tr>
+Add</td><td>
+Add a new row</td></tr>
 <tr>
 <td>
-Edit<br/><br/></td><td>
-Edit an existing<br/><br/></td></tr>
+Edit</td><td>
+Edit an existing</td></tr>
 <tr>
 <td>
-Delete<br/><br/></td><td>
-Delete a row<br/><br/></td></tr>
+Delete</td><td>
+Delete a row</td></tr>
 <tr>
 <td>
-Update<br/><br/></td><td>
-Update edited or added row<br/><br/></td></tr>
+Update</td><td>
+Update edited or added row</td></tr>
 <tr>
 <td>
-Cancel<br/><br/></td><td>
-Cancel edited or added row<br/><br/></td></tr>
+Cancel</td><td>
+Cancel edited or added row</td></tr>
 <tr>
 <td>
-Search<br/><br/></td><td>
-Search text in records<br/><br/></td></tr>
+Search</td><td>
+Search text in records</td></tr>
 </table>
 
 
