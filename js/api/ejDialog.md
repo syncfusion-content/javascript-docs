@@ -1013,7 +1013,7 @@ Example
 {% highlight js %}
 
 
-        $("#dialog").ejDialog({ 	beforeOpen: function (args) {} }); 
+        $("#dialog").ejDialog({ beforeOpen: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1074,7 +1074,7 @@ Example
 {% highlight js %}
 
 
-        $("#dialog").ejDialog({ 	ajaxError: function (args){} }); 
+        $("#dialog").ejDialog({ ajaxError: function (args){} }); 
 
 {% endhighlight %}
 
@@ -1124,7 +1124,7 @@ Example
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	ajaxSuccess: function (args){}});
+    $("#dialog").ejDialog({ ajaxSuccess: function (args){}});
 
 {% endhighlight %}
 
@@ -1170,7 +1170,7 @@ Example
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	beforeClose: function(args){}});
+    $("#dialog").ejDialog({ beforeClose: function(args){}});
 
 {% endhighlight %}
 
@@ -1217,7 +1217,7 @@ Example
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	Close: function (args) {} }); 
+    $("#dialog").ejDialog({ Close: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1262,7 +1262,7 @@ Example
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	close: function (args) {} }); 
+    $("#dialog").ejDialog({ close: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1353,7 +1353,7 @@ Example
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	create: function (args) {} }); 
+    $("#dialog").ejDialog({ create: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1392,7 +1392,7 @@ Example
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	destroy: function (args) {} }); 
+    $("#dialog").ejDialog({ destroy: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1436,7 +1436,7 @@ Example
 
 {% highlight js %}
 
-$("#dialog").ejDialog({ 	drag: function (args) {} }); 
+    $("#dialog").ejDialog({ drag: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1480,7 +1480,7 @@ Example
 
 {% highlight js %}
 
-$("#dialog").ejDialog({ 	dragStart: function (args) {} }); 
+$("#dialog").ejDialog({ dragStart: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1523,7 +1523,7 @@ Example
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	dragStop: function (args) {} }); 
+    $("#dialog").ejDialog({ dragStop: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1562,7 +1562,7 @@ Example
 {% highlight js %}
 
 
-           $("#dialog").ejDialog({ 	open: function (args) {} }); 
+           $("#dialog").ejDialog({ open: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1606,7 +1606,7 @@ Example
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	resize: function (args) {} }); 
+    $("#dialog").ejDialog({ resize: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1650,7 +1650,7 @@ Example
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	resizeStart: function (args) {} }); 
+    $("#dialog").ejDialog({ resizeStart: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1694,7 +1694,7 @@ Example
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	resizeStop: function (args) {} }); 
+    $("#dialog").ejDialog({ resizeStop: function (args) {} }); 
 
 {% endhighlight %}
 
