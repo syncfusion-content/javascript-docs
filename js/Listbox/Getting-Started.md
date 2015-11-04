@@ -63,9 +63,9 @@ Add links to the [CDN](http://help.syncfusion.com/js/cdn) Script files with depe
 
 {% endhighlight %}
 
+{% seealso %} [Custom Script Generator](http://help.syncfusion.com/js/include-only-the-needed-widgets) {% endseealso %}
 
-
- N> _In production, we highly recommend you to use our [custom script generator](http://help.syncfusion.com/js/include-only-the-needed-widgets) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server._
+ N> To reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) compression in your server.
 
 ## Create ListBox
 
@@ -117,16 +117,15 @@ Initialize the ListBox widget as below.
 
 We can populate data in the ListBox widget using “datasource” and “fields” properties. 
 
-{% seealso %} [Databinding](http://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
+{% seealso %} [Databinding](http://help.syncfusion.com/js/listbox/databinding) {% endseealso %}
 
 {% highlight html %}
 
 
- <ul id="listbox"></ul>
+<ul id="listbox"></ul>
 
-    <script type="text/javascript">
+<script type="text/javascript">
         jQuery(function ($) {
-
 
             bikeList = [
                 { bikeId: "bk1", bikeName: "Apache RTR" }, 
@@ -142,6 +141,7 @@ We can populate data in the ListBox widget using “datasource” and “fields�
                 { bikeId: "bk11", bikeName: "R15" }, 
                 { bikeId: "bk12", bikeName: "Unicorn" }
             ];
+            
             $("#listbox").ejListBox({
                 dataSource: bikeList,
                 fields: { 
@@ -151,7 +151,7 @@ We can populate data in the ListBox widget using “datasource” and “fields�
             });
         });
 
-    </script> 
+</script> 
 
 
 

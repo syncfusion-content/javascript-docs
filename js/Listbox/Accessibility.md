@@ -49,5 +49,5 @@ Moves to last item</td></tr>
 </table>
 
 
-N> _Initial focus can be done by pressing tab key multiple times until it is focused._
+N> Initial focus can be done by pressing tab key multiple times until it is focused.
 

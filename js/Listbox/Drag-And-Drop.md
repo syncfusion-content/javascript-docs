@@ -20,62 +20,53 @@ Enable the drag and drop support through “allowDrag” and “allowDrop” pro
 {% highlight html %}
 
     <!--listbox1-->
-    <div class="control">
-        <div>Select your skills</div>
-        <ul id="listbox1"></ul>
-    </div>
-    <!--listbox2-->
-    <div class="control">
-        <div>Selected skills</div>
-        <ul id="listbox2"></ul>
-    </div>
+   < div class = "control" >
+       < div > Select your skills < /div> < ul id = "listbox1" > < /ul> < /div>
+       <!--listbox2-->
+       < div class = "control" >
+       < div > Selected skills < /div> < ul id = "listbox2" > < /ul> < /div>
 
-    <script type="text/javascript">
-        jQuery(function ($) {
-            // datasource
-            var skillSet = [
-               { skill: "ASP.NET" },
-               { skill: "ActionScript" },
-               { skill: "Basic" },
-               { skill: "C++" },
-               { skill: "C#" },
-               { skill: "dBase" },
-               { skill: "Delphi" },
-               { skill: "ESPOL" },
-               { skill: "F#" },
-               { skill: "FoxPro" },
-               { skill: "Java" },
-               { skill: "J#" },
-               { skill: "Lisp" },
-               { skill: "Logo" },
-               { skill: "PHP" }
-            ];
+   < script type = "text/javascript" >
+       jQuery(function($) {
+           // datasource
+           var skillSet = [{ skill: "ASP.NET"}, 
+           { skill: "ActionScript" }, { skill: "Basic" }, 
+           { skill: "C++" }, { skill: "C#" }, 
+           { skill: "dBase"}, { skill: "Delphi" },
+           { skill: "ESPOL"}, { skill: "F#" }, 
+           { skill: "FoxPro" , { skill: "Java" }, 
+           { skill: "J#" }, { skill: "Lisp" }, 
+           { skill: "Logo" }, { skill: "PHP" }];
 
-            //create listbox1 - draggable
-            $("#listbox1").ejListBox({
-                dataSource: skillSet,
-                fields: { text: "skill" }, allowDrag: true
-            });
-            //create listbox1 – droppable
-            $("#listbox2").ejListBox({
-                allowDrop: true
-            });
+           //create listbox1 - draggable
+           $("#listbox1").ejListBox({
+               dataSource: skillSet,
+               fields: {
+                   text: "skill"
+               },
+               allowDrag: true
+           });
+           //create listbox1 – droppable
+           $("#listbox2").ejListBox({
+               allowDrop: true
+           });
 
-        });
-    </script>
-    <!--define the styles-->
-    <style type="text/css" class="cssStyles">
-        .control {
-            margin-left: 20px;
-            float: left;
-        }
-    </style>
+       }); 
+   < /script>
+       
+   <!--define the styles-->
+   < style type = "text/css" class = "cssStyles" >
+       .control {
+           margin - left: 20 px;
+           float: left;
+       } 
+   < /style>
 
 {% endhighlight %}
 
 
 
-N> _The datasource is not set for the second ListBox widget. In the above example we have restricted listbox1 as draggable element and the listbox2 as droppable element. In this case we can’t drag an item from listbox2 to listbox1. If we want to achieve two way drag and drop, we need to enable both allowDrag and allowDrop properties in both ListBox widgets configuration._
+N> The datasource is not set for the second ListBox widget. In the above example we have restricted listbox1 as draggable element and the listbox2 as droppable element. In this case we can’t drag an item from listbox2 to listbox1. If we want to achieve two way drag and drop, we need to enable both allowDrag and allowDrop properties in both ListBox widgets configuration.
 
 
 {% include image.html url="Drag-And-Drop_Images\transferring-a-listbox-data-to-another-listbox_img1.png" Caption="Before Drag and Drop"%}
@@ -192,5 +183,5 @@ Item reordering can be done within a ListBox widget by enabling both “allowDra
 
 {% include image.html url="Drag-And-Drop_Images\reordering_img2.png" Caption="After reordering"%}
 
-N> _The item reordering can be done dynamically without mouse interaction. For that we have provided two APIs namely “[moveUp](http://help.syncfusion.com/js/api/ejlistbox#methods:moveup)” and “[moveDown](http://help.syncfusion.com/js/api/ejlistbox#methods:movedown)”._
+N> The item reordering can be done dynamically without mouse interaction. For that we have provided two APIs namely “[moveUp](http://help.syncfusion.com/js/api/ejlistbox#methods:moveup)” and “[moveDown](http://help.syncfusion.com/js/api/ejlistbox#methods:movedown)”.
 
