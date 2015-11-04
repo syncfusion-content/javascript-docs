@@ -28,7 +28,7 @@ Create a new HTML file and include the below code
 </html>
 {% endhighlight %}
 
-Add link to the CSS file from the specific theme folder to your HTML file within the head section. Refer the built-in available themes from [here](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components# ""). 
+Add link to the CSS file from the specific theme folder to your HTML file within the head section. Refer the built-in available themes from [here](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components#). 
 
 {% highlight html %}
 <head>
@@ -82,8 +82,7 @@ $("#texteditor").ejRTE();
 
 You can configure a toolbar with the tools as your application requires.
 
-{% highlight html %}
-<script type="text/javascript">
+{% highlight js %}
 $(function () { 
 $("#texteditor").ejRTE({
 toolsList: ["style", "lists", "doAction", "links", "images"],
@@ -96,25 +95,22 @@ images: ["image"]
 }
 });
 });
-</script>
 {% endhighlight %}
 
 ## Setting and Getting Content
 
 You can set the content of the editor as follows.
 
-{% highlight html %}
-<script type="text/javascript">
+{% highlight js %}
 $("#texteditor").ejRTE({
 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
 });
-</script>
 {% endhighlight %}
 
 To retrieve the editor contents,
 
-{% highlight html %}
+{% highlight js %}
 var currentValue = $("#texteditor").ejRTE("model.value");
 {% endhighlight %}
 

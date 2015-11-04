@@ -185,7 +185,7 @@ clipboard: ["cut", "copy", "paste"]
 
 The editor is capable to persist its content with HTML format. By default, the persistence support is disabled in the editor. When you set the [enablePersistence](http://help.syncfusion.com/js/api/ejrte#members:enablepersistence) property to true, the persistence will be enabled in the editor.
 
-Note:  [localstorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below ie9 version, therefore persistence support is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
+N>  [localstorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below ie9 version, therefore persistence support is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
 
 {% highlight html %}
 
@@ -315,8 +315,7 @@ ddl.selectItemByValue("CalibriLight");
 
 If you want to insert/paste the content at the current cursor position (or) to replace the selected content with some formatting, you can use pasteContent method in the editor.
 
-{% highlight html %}
-<script type="text/javascript">
+{% highlight js %}
 $(function () {
 
 $("#texteditor").ejRTE({
@@ -331,6 +330,5 @@ var editor = $("#texteditor").ejRTE("instance");
 var selectedHtml = editor.getSelectedHtml();
 editor.pasteContent("<p style='background-color:yellow;color:skyblue'>" + selectedHtml + "  </p>");
 }
-</script>
 {% endhighlight %}
 

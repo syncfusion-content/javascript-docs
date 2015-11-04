@@ -11,8 +11,7 @@ documentation: ug
 
 The editor provides option to localize its strings, it is used to adapting the editor to a particular local language. By default, the editor will use the US English (en-US) as its language. Please find the table with list of keys and their corresponding values for default language (en-US).
 
-{% highlight html %}
-<script type="text/javascript">
+{% highlight js %}
 ej.RTE.Locale["en-US"] = {
 bold: "Bold",
 italic: "Italic",
@@ -103,15 +102,13 @@ dotted: "Dotted",
 dashed: "Dashed",
 doubled: "Doubled"
 };
-</script>
 {% endhighlight %}
 
-Note:  The culture name has to be specified in a standard format such as [Language Code]-[County/Region Code].
+N>  The culture name has to be specified in a standard format such as [Language Code]-[County/Region Code].
 
 To localize the editor’s strings with your own localization, copy the default language informations and localize the strings in the values column. For example, to localize the editor in German language (“de-DE”).
 
-{% highlight html %}
-<script type="text/javascript">
+{% highlight js %}
 ej.RTE.Locale["de-DE"] = {
 bold: "fett",
 italic: "kursiv",
@@ -206,19 +203,16 @@ maximize: "maximieren",
 resize: "minimieren",
 swatches: "Farbfelder"
 };
-</script>
 {% endhighlight %}
 
 You can set the [locale](http://help.syncfusion.com/js/api/ejrte#members:locale) property of the editor to the new language. 
 
-{% highlight html %}
-<script type="text/javascript">
+{% highlight js %}
 $("#texteditor").ejRTE({
 value: "Das Richtexteditor (RTE) Steuerung ermöglicht Ihnen, den Inhalt mit Einsatz Tisch und Bilder zu bearbeiten ," +
 " sondern bietet auch eine Werkzeugleiste , die Rich-Text- Format ," +
 " um die in der Textarea eingegeben Gehalt gelten können.",
 locale: "de-DE"
 });
-</script>
 {% endhighlight %}
 
