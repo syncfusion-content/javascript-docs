@@ -384,7 +384,7 @@ Example
 
 
 ### enableResize<span class="type-signature type boolean">Boolean</span>
-{:#members:enableResize}
+{:#members:enableresize}
 
 Allows the dialog to be resized. The dialog cannot be resized less than the minimum height and minimum width values.
 
@@ -912,10 +912,10 @@ Sets the title for the Dialog widget.
 
 <table>
 <tr>
-<td>
-Parameters<br/><br/></td><td>
-Type<br/><br/></td><td>
-Description<br/><br/></td></tr>
+<th>
+<b>Parameters</b></th><th>
+<b>Type</b></th><th>
+<b>Description</b></th></tr>
 <tr>
 <td>
 Title<br/><br/></td><td>
@@ -940,10 +940,10 @@ Sets the content for the Dialog widget dynamically.
 
 <table>
 <tr>
-<td>
-Parameters<br/><br/></td><td>
-Type<br/><br/></td><td>
-Description<br/><br/></td></tr>
+<th>
+<b>Parameters</b></th><th>
+<b>Type</b></th><th>
+<b>Description</b></th></tr>
 <tr>
 <td>
 content<br/><br/></td><td>
