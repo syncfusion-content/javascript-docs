@@ -17,59 +17,59 @@ You can add a label to a node/connector by defining the label object and adding 
 
 {% highlight js %}
 
-    //Initializes Diagram
-    $("#diagram").ejDiagram({
-        width: "100%",
-        height: "100%",
-        pageSettings: {
-            scrollLimit: "diagram"
-        },
-        //Initializes nodes collection
-        nodes: [{
-            name: "node",
-            width: 100,
-            height: 100,
-            offsetX: 100,
-            offsetY: 100,
-            borderColor: "black",
-            fillColor: "#1BA0E2",
-            //Initializes labels collection
-            labels: [
-                // Defines JSON to create a label
-                {
-                    //Defines the text to be displayed
-                    text: "Label"
-                }
-            ]
-        }],
-        //Initializes connectors collection
-        connectors: [{
-            name: "connector1",
-            sourcePoint: {
-                x: 200,
-                y: 50
-            },
-            targetPoint: {
-                x: 300,
-                y: 150
-            },
-            segments: [{
-                type: "orthogonal",
-                length: 50,
-                direction: "bottom"
-            }],
-            //Initializes labels collection
-            labels: [
-                //Defines JSON to create a label
-                {
-                    //Defines the text to be displayed
-                    text: "Label",
-                    //Defines the background color of the text block
-                    fillColor: "white"
-                }
-            ]
-        }]
-    });
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	//Initializes nodes collection
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderColor: "black",
+		fillColor: "#1BA0E2",
+		//Initializes labels collection
+		labels: [
+			// Defines JSON to create a label
+			{
+				//Defines the text to be displayed
+				text: "Label"
+			}
+		]
+	}],
+	//Initializes connectors collection
+	connectors: [{
+		name: "connector1",
+		sourcePoint: {
+			x: 200,
+			y: 50
+		},
+		targetPoint: {
+			x: 300,
+			y: 150
+		},
+		segments: [{
+			type: "orthogonal",
+			length: 50,
+			direction: "bottom"
+		}],
+		//Initializes labels collection
+		labels: [
+			//Defines JSON to create a label
+			{
+				//Defines the text to be displayed
+				text: "Label",
+				//Defines the background color of the text block
+				fillColor: "white"
+			}
+		]
+	}]
+});
 
 {% endhighlight %}
 
@@ -78,16 +78,16 @@ You can add a label to a node/connector by defining the label object and adding 
 To explore more label properties, refer to [Label Properties](/js/api/ejdiagram "members:nodes-labels").
 
 ## Update Label at runtime
-     
+
 The client side API `updateLabel` is used to update the labels at run time.
 
 The following code example illustrates how to change the label properties.
 
 {% highlight js %}
 
-            var diagram = $("#diagram").ejDiagram("instance");
-            var selectedObject = diagram.model.selectedItems.children[0];
-            diagram.updateLabel(selectedObject.name, selectedObject.labels[0], { text: "label", fillColor: "red" });
+var diagram = $("#diagram").ejDiagram("instance");
+var selectedObject = diagram.model.selectedItems.children[0];
+diagram.updateLabel(selectedObject.name, selectedObject.labels[0], { text: "label", fillColor: "red" });
 
 {% endhighlight %}
 
@@ -113,50 +113,50 @@ The following tables illustrates all the possible alignments visually with **off
 | Horizontal Alignment | Vertical Alignment | Output with Offset(0,0) |
 |---|---|---|
 | Left | Top | ![](/js/Diagram/Label_images/Label_img3.png) |
-| Center |  | ![](/js/Diagram/Label_images/Label_img4.png) |
-| Right |  | ![](/js/Diagram/Label_images/Label_img5.png) |
+| Center | | ![](/js/Diagram/Label_images/Label_img4.png) |
+| Right | | ![](/js/Diagram/Label_images/Label_img5.png) |
 | Left | Center | ![](/js/Diagram/Label_images/Label_img6.png) |
-| Center |  | ![](/js/Diagram/Label_images/Label_img7.png) |
-| Right |  | ![](/js/Diagram/Label_images/Label_img8.png) |
+| Center | | ![](/js/Diagram/Label_images/Label_img7.png) |
+| Right | | ![](/js/Diagram/Label_images/Label_img8.png) |
 | Left | Bottom | ![](/js/Diagram/Label_images/Label_img9.png) |
-| Center |  | ![](/js/Diagram/Label_images/Label_img10.png) |
-| Right |  | ![](/js/Diagram/Label_images/Label_img11.png) |
+| Center | | ![](/js/Diagram/Label_images/Label_img10.png) |
+| Right | | ![](/js/Diagram/Label_images/Label_img11.png) |
 
 The following codes illustrates how to align labels.
 
 {% highlight js %}
 
-    //Initializes Diagram
-    $("#diagram").ejDiagram({
-        width: "100%",
-        height: "100%",
-        pageSettings: {
-            scrollLimit: "diagram"
-        },
-        nodes: [{
-            name: "node",
-            width: 100,
-            height: 100,
-            offsetX: 100,
-            offsetY: 100,
-            borderColor: "black",
-            fillColor: "#1BA0E2",
-            labels: [{
-                text: "Label",
-                // Sets offset to label
-                offset: {
-                    x: 0,
-                    y: 0.5
-                },
-                // Sets to align label horizontally relative to given offset 
-                horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
-                // Sets to align label vertically relative to given offset
-                verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Center,
-                // Sets text alignment to label
-                textAlign: ej.datavisualization.Diagram.TextAlign.Center
-            }]
-        }],
-    });
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderColor: "black",
+		fillColor: "#1BA0E2",
+		labels: [{
+			text: "Label",
+			// Sets offset to label
+			offset: {
+				x: 0,
+				y: 0.5
+			},
+			// Sets to align label horizontally relative to given offset 
+			horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left,
+			// Sets to align label vertically relative to given offset
+			verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Center,
+			// Sets text alignment to label
+			textAlign: ej.datavisualization.Diagram.TextAlign.Center
+		}]
+	}],
+});
 
 {% endhighlight %}
 
@@ -169,37 +169,37 @@ The following code example illustrates how to align a label based on its `offset
 
 {% highlight js %}
 
-    //Initializes Diagram
-    $("#diagram").ejDiagram({
-        width: "100%",
-        height: "100%",
-        pageSettings: {
-            scrollLimit: "diagram"
-        },
-        //Sets nodes collection to Diagram model
-        nodes: [{
-            name: "node",
-            width: 100,
-            height: 100,
-            offsetX: 100,
-            offsetY: 100,
-            borderColor: "black",
-            fillColor: "#1BA0E2",
-            labels: [{
-                text: "Label",
-                offset: {
-                    x: 0.5,
-                    y: 1
-                },
-                horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Center,
-                verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
-                //Sets margin to add label outside a node 
-                margin: {
-                    top: 10
-                }
-            }]
-        }],
-    });
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	//Sets nodes collection to Diagram model
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderColor: "black",
+		fillColor: "#1BA0E2",
+		labels: [{
+			text: "Label",
+			offset: {
+				x: 0.5,
+				y: 1
+			},
+			horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Center,
+			verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top,
+			//Sets margin to add label outside a node 
+			margin: {
+				top: 10
+			}
+		}]
+	}],
+});
 
 {% endhighlight %}
 
@@ -211,28 +211,28 @@ The `textAlign` property of label allows you to set how the text should be align
 
 {% highlight js %}
 
-    //Initializes Diagram
-    $("#diagram").ejDiagram({
-        width: "100%",
-        height: "100%",
-        pageSettings: {
-            scrollLimit: "diagram"
-        },
-        nodes: [{
-            name: "node",
-            width: 100,
-            height: 100,
-            offsetX: 100,
-            offsetY: 100,
-            borderColor: "black",
-            fillColor: "#1BA0E2",
-            // Sets text alignment for a label
-            labels: [{
-                text: "Text Align is set as Left",
-                textAlign: ej.datavisualization.Diagram.TextAlign.Left
-            }]
-        }],
-    });
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderColor: "black",
+		fillColor: "#1BA0E2",
+		// Sets text alignment for a label
+		labels: [{
+			text: "Text Align is set as Left",
+			textAlign: ej.datavisualization.Diagram.TextAlign.Left
+		}]
+	}],
+});
 
 {% endhighlight %}
 
@@ -251,27 +251,27 @@ When text overflows node boundaries, you can control it by using text wrapping. 
 
 {% highlight js %}
 
-    $("#diagram").ejDiagram({
-        width: "100%",
-        height: "100%",
-        pageSettings: {
-            scrollLimit: "diagram"
-        },
-        nodes: [{
-            name: "node",
-            width: 100,
-            height: 100,
-            offsetX: 100,
-            offsetY: 100,
-            borderColor: "black",
-            fillColor: "#1BA0E2",
-            //Enables Text-wrapping
-            labels: [{
-                text: "Label Text Wrapping",
-                wrapping: ej.datavisualization.Diagram.TextWrapping.Wrap
-            }]
-        }],
-    });
+$("#diagram").ejDiagram({
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderColor: "black",
+		fillColor: "#1BA0E2",
+		//Enables Text-wrapping
+		labels: [{
+			text: "Label Text Wrapping",
+			wrapping: ej.datavisualization.Diagram.TextWrapping.Wrap
+		}]
+	}],
+});
 
 {% endhighlight %}
 
@@ -289,33 +289,33 @@ You can change the font style of the labels with the font specific properties(`f
 
 {% highlight js %}
 
-    $("#diagram").ejDiagram({
-        width: "100%",
-        height: "100%",
-        pageSettings: {
-            scrollLimit: "diagram"
-        },
-        //Sets nodes collection to Diagram model
-        nodes: [{
-            name: "node",
-            width: 100,
-            height: 100,
-            offsetX: 100,
-            offsetY: 100,
-            borderColor: "black",
-            fillColor: "#1BA0E2",
-            labels: [{
-                text: "Label Text",
-                //Sets styles to a label 
-                fontSize: 12,
-                fontFamily: "TimesNewRoman",
-                fontColor: "black",
-                bold: true,
-                italic: true,
-                textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline
-            }]
-        }],
-    });
+$("#diagram").ejDiagram({
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	//Sets nodes collection to Diagram model
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderColor: "black",
+		fillColor: "#1BA0E2",
+		labels: [{
+			text: "Label Text",
+			//Sets styles to a label 
+			fontSize: 12,
+			fontFamily: "TimesNewRoman",
+			fontColor: "black",
+			bold: true,
+			italic: true,
+			textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline
+		}]
+	}],
+});
 
 {% endhighlight %}
 
@@ -325,30 +325,30 @@ The fill and border appearances of the text can also be customized with appearan
 
 {% highlight js %}
 
-    $("#diagram").ejDiagram({
-        width: "100%",
-        height: "100%",
-        pageSettings: {
-            scrollLimit: "diagram"
-        },
-        //Sets nodes collection to Diagram model
-        nodes: [{
-            name: "node",
-            width: 100,
-            height: 100,
-            offsetX: 100,
-            offsetY: 100,
-            borderColor: "black",
-            fillColor: "#1BA0E2",
-            labels: [{
-                text: "Label Text",
-                //Customizes background and borders of a label 
-                fillColor: "white",
-                borderColor: "black",
-                borderWidth: 1,
-            }]
-        }],
-    });
+$("#diagram").ejDiagram({
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	//Sets nodes collection to Diagram model
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderColor: "black",
+		fillColor: "#1BA0E2",
+		labels: [{
+			text: "Label Text",
+			//Customizes background and borders of a label 
+			fillColor: "white",
+			borderColor: "black",
+			borderWidth: 1,
+		}]
+	}],
+});
 
 {% endhighlight %}
 
@@ -360,54 +360,54 @@ A **Label** can be displaced from its original position to any preferred locatio
 
 {% highlight js %}
 
-    var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
-    var nodes = [{
-        name: "node",
-        width: 100,
-        height: 100,
-        offsetX: 100,
-        offsetY: 100,
-        borderColor: "black",
-        fillColor: "#1BA0E2",
-        //Enables Label Dragging for node.
-        constraints: nodeConstraints.Default | nodeConstraints.DragLabel,
-        labels: [{
-            text: "Label Text"
-        }]
-    }];
-    
-    var connectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
-    var connectors = [{
-        name: "connector1",
-        sourcePoint: {
-            x: 200,
-            y: 50
-        },
-        targetPoint: {
-            x: 300,
-            y: 150
-        },
-        segments: [{
-            type: "orthogonal",
-            length: 50,
-            direction: "bottom"
-        }],
-        //Enables Label Dragging for connector. 
-        constraints: connectorConstraints.Default | connectorConstraints.DragLabel,
-        labels: [{
-            text: "Label "
-        }]
-    }];
-    
-    $("#diagram").ejDiagram({
-        width: "100%",
-        height: "100%",
-        pageSettings: {
-            scrollLimit: "diagram"
-        },
-        nodes: nodes,
-        connectors: connectors
-    });
+var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
+var nodes = [{
+	name: "node",
+	width: 100,
+	height: 100,
+	offsetX: 100,
+	offsetY: 100,
+	borderColor: "black",
+	fillColor: "#1BA0E2",
+	//Enables Label Dragging for node.
+	constraints: nodeConstraints.Default | nodeConstraints.DragLabel,
+	labels: [{
+		text: "Label Text"
+	}]
+}];
+
+var connectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
+var connectors = [{
+	name: "connector1",
+	sourcePoint: {
+		x: 200,
+		y: 50
+	},
+	targetPoint: {
+		x: 300,
+		y: 150
+	},
+	segments: [{
+		type: "orthogonal",
+		length: 50,
+		direction: "bottom"
+	}],
+	//Enables Label Dragging for connector. 
+	constraints: connectorConstraints.Default | connectorConstraints.DragLabel,
+	labels: [{
+		text: "Label "
+	}]
+}];
+
+$("#diagram").ejDiagram({
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: nodes,
+	connectors: connectors
+});
 
 {% endhighlight %}
 
@@ -419,28 +419,28 @@ You can rotate the labels to any desired angle. Labels are rotated to the angle 
 
 {% highlight js %}
 
-    //Initializes Diagram
-    $("#diagram").ejDiagram({
-        width: "100%",
-        height: "100%",
-        pageSettings: {
-            scrollLimit: "diagram"
-        },
-        nodes: [{
-            name: "node",
-            width: 100,
-            height: 100,
-            offsetX: 100,
-            offsetY: 100,
-            borderColor: "black",
-            fillColor: "#1BA0E2",
-            labels: [{
-                text: "Label",
-                //Sets label's rotation Angle
-                rotateAngle: 45
-            }]
-        }]
-    });
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderColor: "black",
+		fillColor: "#1BA0E2",
+		labels: [{
+			text: "Label",
+			//Sets label's rotation Angle
+			rotateAngle: 45
+		}]
+	}]
+});
 
 {% endhighlight %}
 
@@ -461,13 +461,13 @@ You can programmatically edit the label by changing the `mode` of the label. The
 
 {% highlight js %}
 
-    var diagram = $("#diagram").ejDiagram("instance");
-    var node = diagram.model.selectedItems.children[0];
-    //Sets label mode as Edit 
-    var options = {
-        mode: ej.datavisualization.Diagram.LabelEditMode.Edit
-    };
-    diagram.updateLabel(node.name, node.labels[0], options);
+var diagram = $("#diagram").ejDiagram("instance");
+var node = diagram.model.selectedItems.children[0];
+//Sets label mode as Edit 
+var options = {
+	mode: ej.datavisualization.Diagram.LabelEditMode.Edit
+};
+diagram.updateLabel(node.name, node.labels[0], options);
 
 {% endhighlight %}
 
@@ -479,73 +479,73 @@ Diagram allows to create read only labels. You have to set the `readOnly` proper
 
 {% highlight js %}
 
-    //Initializes Diagram
-    $("#diagram").ejDiagram({
-        width: "100%",
-        height: "100%",
-        pageSettings: {
-            scrollLimit: "diagram"
-        },
-        nodes: [{
-            name: "node",
-            width: 100,
-            height: 100,
-            offsetX: 100,
-            offsetY: 100,
-            borderColor: "black",
-            fillColor: "#1BA0E2",
-            //Sets label as read-only
-            labels: [{
-                text: "Label",
-                readOnly: true
-            }]
-        }],
-    });
+//Initializes Diagram
+$("#diagram").ejDiagram({
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderColor: "black",
+		fillColor: "#1BA0E2",
+		//Sets label as read-only
+		labels: [{
+			text: "Label",
+			readOnly: true
+		}]
+	}],
+});
 
 {% endhighlight %}
 
 ## Multiple labels
 
-You can add any number of labels to a node or connector.  The following code illustrates how to add multiple labels to a node. 
+You can add any number of labels to a node or connector. The following code illustrates how to add multiple labels to a node. 
 
 {% highlight js %}
 
-    $("#diagram").ejDiagram({
-        width: "100%",
-        height: "100%",
-        pageSettings: {
-            scrollLimit: "diagram"
-        },
-        nodes: [{
-            name: "node",
-            width: 100,
-            height: 100,
-            offsetX: 100,
-            offsetY: 100,
-            borderColor: "black",
-            fillColor: "#1BA0E2",
-            //Adds multiple labels to a node
-            labels: [{
-                text: "Left",
-                offset: {
-                    x: 0.12,
-                    y: 0.1
-                }
-            }, {
-                text: "Center",
-                offset: {
-                    x: 0.5,
-                    y: 0.5
-                }
-            }, {
-                text: "Right",
-                offset: {
-                    x: 0.82,
-                    y: 0.9
-                }
-            }]
-        }],
-    });
+$("#diagram").ejDiagram({
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		scrollLimit: "diagram"
+	},
+	nodes: [{
+		name: "node",
+		width: 100,
+		height: 100,
+		offsetX: 100,
+		offsetY: 100,
+		borderColor: "black",
+		fillColor: "#1BA0E2",
+		//Adds multiple labels to a node
+		labels: [{
+			text: "Left",
+			offset: {
+				x: 0.12,
+				y: 0.1
+			}
+		}, {
+			text: "Center",
+			offset: {
+				x: 0.5,
+				y: 0.5
+			}
+		}, {
+			text: "Right",
+			offset: {
+				x: 0.82,
+				y: 0.9
+			}
+		}]
+	}],
+});
 
 {% endhighlight %}
 

@@ -1,3 +1,12 @@
+---
+layout: post
+title: Working with Content
+description: Working with Content
+platform: js
+control: RTE
+documentation: ug
+
+---
 # Working with Content
 
 ## Submit Content
@@ -31,48 +40,42 @@ $("#texteditor").val(encoded);
 });
 
 </script>
+
 {% endhighlight %}
 
 ## Refresh
 
-When you move the editor’s wrapper element into another DOM element, the editor needs to be reinitialized by the [refresh](http://help.syncfusion.com/js/api/ejrte#methods:refresh "") method to retain its content. The method reload the content area and rebind the events of the editor. 
+When you move the editor’s wrapper element into another DOM element, the editor needs to be reinitialized by the [refresh](http://help.syncfusion.com/js/api/ejrte#methods:refresh) method to retain its content. The method reload the content area and rebind the events of the editor. 
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="texteditor"></textarea> 
+
 <div id="target"> </div>
 <button onclick="appendTo()">Append To</button>
 <button onclick="refresh()">Refresh</button>
-
 <script type="text/javascript">
-
 var editor = null;
-
 $(function () {
-
 $("#texteditor").ejRTE({
 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
 });
-
 editor = $("#texteditor").ejRTE("instance");
-
 });
-
 function appendTo() {
 editor.wrapper.appendTo($("#target"))
 }
-
 function refresh() {
 editor.refresh()
 }
-
 </script>
+
 {% endhighlight %}
 
 ## Editing and Formatting 
 
-The editor’s [toolbar](#_Toolbar "") contains buttons and dropdowns that allow you to editing and formatting in your content.
+The editor’s [toolbar](#_Toolbar) contains buttons and dropdowns that allow you to editing and formatting in your content.
 
 * Font name, font size, and color
 * Bold, italic, underline, and strikethrough
@@ -88,9 +91,7 @@ The editor’s [toolbar](#_Toolbar "") contains buttons and dropdowns that allow
 <textarea id="texteditor"></textarea>
 
 <script type="text/javascript">
-
 $(function () {
-
 $("#texteditor").ejRTE({
 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
@@ -108,10 +109,10 @@ clipboard: ["cut", "copy", "paste"],
 doAction: ["undo", "redo"]
 }
 });
-
 });
 
 </script>
+
 {% endhighlight %}
 
 ## Undo and Redo 
@@ -122,6 +123,7 @@ To undo and redo operations, do one of the following:
 
 * Press the undo/redo button on the toolbar
 * Press the **Ctrl** **+** **Z**/**Ctrl** **+** **Y** combination on the keyboard
+
 
 {% highlight html %}
 
@@ -155,7 +157,7 @@ You can use the keyboard shortcuts to perform the clipboard operations.
 * Copy - CTRL+C
 * Paste - CTRL+V
 
-Note: Some browsers block the clipboard access from JavaScript. If you want to use the Cut, Copy, and Paste buttons on the toolbar, you need to allow JavaScript to use the clipboard. If you don’t want to do this configuration, use CTRL+C, CTRL+X, and CTRL+V keyboard commands.
+N> Some browsers block the clipboard access from JavaScript. If you want to use the Cut, Copy, and Paste buttons on the toolbar, you need to allow JavaScript to use the clipboard. If you don’t want to do this configuration, use CTRL+C, CTRL+X, and CTRL+V keyboard commands.
 
 {% highlight html %}
 
@@ -181,14 +183,14 @@ clipboard: ["cut", "copy", "paste"]
 
 ## Persistence
 
-The editor is capable to persist its content with HTML format. By default, the persistence support is disabled in the editor. When you set the [enablePersistence](http://help.syncfusion.com/js/api/ejrte#members:enablepersistence "") property to true, the persistence will be enabled in the editor.
+The editor is capable to persist its content with HTML format. By default, the persistence support is disabled in the editor. When you set the [enablePersistence](http://help.syncfusion.com/js/api/ejrte#members:enablepersistence) property to true, the persistence will be enabled in the editor.
 
-Note:  [localstorage](http://www.w3schools.com/html/html5_webstorage.asp# "") is not supported below ie9 version, therefore persistence support is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp# "").
+Note:  [localstorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below ie9 version, therefore persistence support is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
 
 {% highlight html %}
 
 $(function () {
-
+<script type="text/javascript">
 $("#texteditor").ejRTE({
 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
@@ -196,11 +198,12 @@ enablePersistence: true
 });
 
 });
+</script>
 {% endhighlight %}
 
 ## Change the Font
 
-By default, the editor’s <iframe> is initialized with “Segoe UI” font. To change it, select a different font from the drop-down in the editor’s toolbar. To apply different font for particular section of the content, select the text that you would like to change, and select a required font from the drop-down to apply the changes to the selected text.
+By default, the editor’s &lt; iframe &gt; is initialized with “Segoe UI” font. To change it, select a different font from the drop-down in the editor’s toolbar. To apply different font for particular section of the content, select the text that you would like to change, and select a required font from the drop-down to apply the changes to the selected text.
 
 ### Set Default Font
 
@@ -227,7 +230,7 @@ ddl.selectItemByValue("TimesNewRoman");
 </script>
 {% endhighlight %}
 
-* You can set default font for <iframe>’s body tag using **[iframeAttributes](#_Iframe_Attributes "")** property.
+* You can set default font for &lt; iframe &gt;’s body tag using **[iframeAttributes](#_Iframe_Attributes)** property.
 
 {% highlight html %}
 
@@ -248,7 +251,7 @@ iframeAttribute: "font-family: Arial;"
 </script>
 {% endhighlight %}
 
-* If you want to override the default font from CSS, create a style tag with CSS styles and append it to the <iframe>’s head tag of the editor.
+* If you want to override the default font from CSS, create a style tag with CSS styles and append it to the &lt; iframe &gt;’s head tag of the editor.
 
 {% highlight html %}
 
@@ -313,7 +316,7 @@ ddl.selectItemByValue("CalibriLight");
 If you want to insert/paste the content at the current cursor position (or) to replace the selected content with some formatting, you can use pasteContent method in the editor.
 
 {% highlight html %}
-
+<script type="text/javascript">
 $(function () {
 
 $("#texteditor").ejRTE({
@@ -328,5 +331,6 @@ var editor = $("#texteditor").ejRTE("instance");
 var selectedHtml = editor.getSelectedHtml();
 editor.pasteContent("<p style='background-color:yellow;color:skyblue'>" + selectedHtml + "  </p>");
 }
+</script>
 {% endhighlight %}
 

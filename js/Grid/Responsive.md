@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Responsive
 
-The grid control has support for responsive behavior based on client browser’s width and height. To enable responsive, [`isResponsive`](http://help.syncfusion.com/js/api/ejgrid#members:isresponsive "isResponsive") property should be true. There are three modes of responsive layout is available in grid based on client width. They are.
+The grid control has support for responsive behavior based on client browser's width and height. To enable responsive, [`isResponsive`](http://help.syncfusion.com/js/api/ejgrid#members:isresponsive "isResponsive") property should be true. There are three modes of responsive layout is available in grid based on client width. They are.
 
 * Mobile(<321px)
 * Tablet (321px to 800px)
@@ -57,7 +57,7 @@ $("#Grid").ejGrid({
 ![](Responsive_images/Responsive_img1.png)
 
 
-W> [IE8 and IE9 does not support responsive row. `ejgrid.responsive.css` should be referred to display Responsive Row.]
+W> IE8 and IE9 does not support responsive row. `ejgrid.responsive.css` should be referred to display Responsive Row.
 
 ### Customized Features
 
@@ -176,7 +176,7 @@ Filtering design in tablayout.
 
 ## Width
 
-By default, the grid is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign `width` of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") in percentage. 
+By default, the grid is adaptable to its parent container. It can adjust its width of columns based on parent container width. You can also assign `width` of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") in percentage. 
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -197,11 +197,11 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-I>[  [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "") should be false while defining width in percentage.]
+I>  [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") should be false while defining width in percentage.
 
 ## Min Width
 
-Min Width is used to maintain minimum width for the Grid. To enable Min Width, [`minWidth`](http://help.syncfusion.com/js/api/ejgrid#members:minwidth "") should be defined. If the grid width is less than [`minWidth`](http://help.syncfusion.com/js/api/ejgrid#members:minwidth "") then the scrollbar will be displayed to maintain minimum width.
+Min Width is used to maintain minimum width for the Grid. To enable Min Width, [`minWidth`](http://help.syncfusion.com/js/api/ejgrid#members:minwidth "minWidth") should be defined. If the grid width is less than [`minWidth`](http://help.syncfusion.com/js/api/ejgrid#members:minwidth "minWidth") then the scrollbar will be displayed to maintain minimum width.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -236,7 +236,7 @@ MinWidth set to Grid
 
 ## Priority for Columns
 
-Priority makes column to be visible or hidden based on `priority` and browser’s width to best accommodate possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
+Priority makes column to be visible or hidden based on `priority` and browser's width to best accommodate possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -262,5 +262,5 @@ $("#Grid").ejGrid({
 
 {% endhighlight %}
 
-I>[ `ejgrid.responsive.css` should be referred].
+I> `ejgrid.responsive.css` should be referred.
 

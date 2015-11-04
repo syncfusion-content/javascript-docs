@@ -1,3 +1,12 @@
+---
+layout: post
+title: Getting Started - RichTextEditor
+description: Getting Started - RichTextEditor
+platform: js
+control: RTE
+documentation: ug
+
+---
 # Getting Started
 
 This section helps to understand the getting started of RTE control with the step-by-step instruction.
@@ -29,7 +38,7 @@ Add link to the CSS file from the specific theme folder to your HTML file within
 </head>
 {% endhighlight %}
 
-Also add links to the [CDN](http://helpjs.syncfusion.com/js/cdn# "") Script files along with the other external dependencies as depicted below,
+Also add links to the [CDN](http://helpjs.syncfusion.com/js/cdn#) Script files along with the other external dependencies as depicted below,
 
 {% highlight html %}
 <head>
@@ -44,7 +53,7 @@ Also add links to the [CDN](http://helpjs.syncfusion.com/js/cdn# "") Script file
 </head>
 {% endhighlight %}
 
-Note: Note: Uncompressed version of the required library files are available for the development or debugging purpose which can be generated from the custom script [here](http://csg.syncfusion.com/# ""). Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip "") compression in your server.
+N> Uncompressed version of the required library files are available for the development or debugging purpose which can be generated from the custom script [here](http://csg.syncfusion.com/#). Also to reduce the file size further please use [GZip](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) compression in your server.
 
 ## Control Initialization
 
@@ -74,7 +83,8 @@ $("#texteditor").ejRTE();
 You can configure a toolbar with the tools as your application requires.
 
 {% highlight html %}
-$(function () {
+<script type="text/javascript">
+$(function () { 
 $("#texteditor").ejRTE({
 toolsList: ["style", "lists", "doAction", "links", "images"],
 tools: {
@@ -86,6 +96,7 @@ images: ["image"]
 }
 });
 });
+</script>
 {% endhighlight %}
 
 ## Setting and Getting Content
@@ -93,10 +104,12 @@ images: ["image"]
 You can set the content of the editor as follows.
 
 {% highlight html %}
+<script type="text/javascript">
 $("#texteditor").ejRTE({
 value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
 });
+</script>
 {% endhighlight %}
 
 To retrieve the editor contents,
@@ -105,5 +118,5 @@ To retrieve the editor contents,
 var currentValue = $("#texteditor").ejRTE("model.value");
 {% endhighlight %}
 
-You can find sample to quick start with the editor [here](http://jsplayground.syncfusion.com/Sync_nenmojvz# "").
+You can find sample to quick start with the editor [here](http://jsplayground.syncfusion.com/Sync_nenmojvz#).
 

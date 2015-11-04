@@ -1,4 +1,13 @@
-# Overview
+---
+layout: post
+title: Maps | Javascript | Syncfusion
+description: Maps Overview
+platform: js
+control: Maps
+documentation: ug
+---
+
+# Maps
 
 A **Map** is a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on Earth. Using pan and zoom, the maps can be navigated. Maps supports enhanced data visualization with bubbles and labels using data bound to the map.
 

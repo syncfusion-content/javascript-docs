@@ -24,28 +24,29 @@ The `sourceId` property of overview should be set with the corresponding Diagram
 
 {% highlight html %}
 
-    <!--Initializes the Diagram element-->
-    <div id="diagram"></div>;     
-    
-    <!-- Initializes the overview element -->    
-    <div id="overview"></div>;  
-      
+<!--Initializes the Diagram element-->
+<div id="diagram"></div>;
+
+<!-- Initializes the overview element -->
+<div id="overview"></div>;
+
 {% endhighlight %}
- 
+
 {% highlight js %}
-    // Initializes the Diagram control    
-    $("#diagram").ejDiagram({    
-        width: "1020px",    
-        height: "600px"    
-    });
-    
-    // Initializes the overview control    
-    $("#overview").ejOverview({    
-        // Relates Diagram with overview     
-        sourceID: "diagram",    
-        width: "100%",    
-        height: "100%"
-    });
+
+// Initializes the Diagram control
+$("#diagram").ejDiagram({
+	width: "1020px",
+	height: "600px"
+});
+
+// Initializes the overview control
+$("#overview").ejOverview({
+	// Relates Diagram with overview
+	sourceID: "diagram",
+	width: "100%",
+	height: "100%"
+});
 
 {% endhighlight %}
 

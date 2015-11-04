@@ -31,7 +31,7 @@ Alignment commands enable you to align the selected objects such as nodes and co
 | align | direction (string) | Align all the nodes/connectors in the selection list with respect to specified direction of the selection boundary. |
 
 The accepted values of the argument "direction" are as follows.
-    
+
 * "left" - Align all the selected objects at the left of the selection boundary.
 * "right" - Align all the selected objects at the right of the selection boundary.
 * "center" - Align all the selected objects at the center of the selection boundary.
@@ -100,11 +100,11 @@ diagram.sameWidth();
 ![](/js/Diagram/Commands_images/Commands_img5.png)
 
 
-## Clipboard 
+## Clipboard
 
-Clipboard commands are used to cut, copy or paste the selected elements. 
+Clipboard commands are used to cut, copy or paste the selected elements.
 
-The following code illustrates how to execute the clipboard commands. 
+The following code illustrates how to execute the clipboard commands.
 
 {% highlight js %}
 
@@ -121,7 +121,7 @@ diagram.paste();
 
 ![](/js/Diagram/Commands_images/Commands_img6.png)
 
-## Grouping 
+## Grouping
 
 **Grouping commands** are used to group/ungroup the selected elements on the Diagram.
 
@@ -197,26 +197,28 @@ diagram.sendBackward();
 
 **zoomTo** command is used to zoom-in and zoom-out the Diagram view.
 
-The following code illustrates how to zoom-in/zoom out the Diagram. 
+The following code illustrates how to zoom-in/zoom out the Diagram.
 
 {% highlight js %}
 
 function Zoom() {
-    var diagram = $("#diagram").ejDiagram("instance");
-    var zoom = {
-        // Sets the zoomFactor
-        zoomFactor: 0.2,
-        // Sets the zoomCommand as zoomIn to zoom-in the Diagram
-        zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn,
-        // for zoomOut
-        //zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut
-        //Defines the focusPoint to zoom the Diagram with respect to any point
-        focusPoint: {
-            x: 100,
-            y: 100
-        } //When you do not set focus point, zooming is performed with reference to the center of current Diagram view.
-    };
-    diagram.zoomTo(zoom);
+	var diagram = $("#diagram").ejDiagram("instance");
+	var zoom = {
+		// Sets the zoomFactor
+		zoomFactor: 0.2,
+		// Sets the zoomCommand as zoomIn to zoom-in the Diagram
+		zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomIn,
+		// for zoomOut
+		//zoomCommand: ej.datavisualization.Diagram.ZoomCommand.ZoomOut
+
+		//Defines the focusPoint to zoom the Diagram with respect to any point
+		//When you do not set focus point, zooming is performed with reference to the center of current Diagram view.
+		focusPoint: {
+			x: 100,
+			y: 100
+		}
+	};
+	diagram.zoomTo(zoom);
 }
 
 {% endhighlight %}
@@ -255,23 +257,23 @@ The corresponding arrow keys are used to move the selected elements towards up, 
 
 Nudge commands are particularly useful for accurate placement of elements.
 
-For more information,  refer to [Keyboard Interaction](/js/Diagram/Interaction "Keyboard").
+For more information, refer to [Keyboard Interaction](/js/Diagram/Interaction "Keyboard").
 
 ## BringIntoView
 
 `bringIntoView` command brings the specified rectangular region into the view port of the Diagram
 
 The following code illustrates how to execute the bringIntoView command.
- 
+
 {% highlight js %}
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
 //Brings the specified rectangular region of the Diagram content to the viewport of the page.
 diagram.bringIntoView({
-    x: 700,
-    y: 500,
-    width: 100,
-    height: 100
+	x: 700,
+	y: 500,
+	width: 100,
+	height: 100
 });
 
 {% endhighlight %}
@@ -285,12 +287,12 @@ The following code illustrates how to execute the bringToCenter command.
 {% highlight js %}
 
 var diagram = $("#DiagramContent").ejDiagram("instance");
-//Brings the specified rectangular region of the Diagram content to the center of the viewport.    
+//Brings the specified rectangular region of the Diagram content to the center of the viewport.
 diagram.bringToCenter({
-    x: 700,
-    y: 500,
-    width: 100,
-    height: 100
+	x: 700,
+	y: 500,
+	width: 100,
+	height: 100
 });
 
 {% endhighlight %}
@@ -309,7 +311,7 @@ Description</th></tr>
 <td>
            fitToPage </td><td>
 <b>mode</b> (string) Value accepted: ej.datavisualization.Diagram.FitMode    <b>region</b> (string) Value accepted-ej.datavisualization.Diagram.Region   <b>margin</b> (object) </td><td>
-<b>FitToPage</b> command fits the <b>Diagram</b> into the view. The area/bounds to be fit into view is specified through the parameters.   
+<b>FitToPage</b> command fits the <b>Diagram</b> into the view. The area/bounds to be fit into view is specified through the parameters.
 <b>mode</b> – [FitToMode](#FitToMode).
 <b>region</b> – [Region](#Region).
 <b>margin</b> – Space that is to be left in between the content and viewport. </td></tr>
@@ -321,16 +323,16 @@ The following code illustrates how to execute FitToPage command.
 
 //Fits to page – fit Diagram based on elements
 diagram.fitToPage("page", "content", {
-   left: 25,
-   top: 25,
-   right: 25,
-   bottom: 25
+	left: 25,
+	top: 25,
+	right: 25,
+	bottom: 25
 });
 {% endhighlight %}
 
 ### FitToMode
 
-Mode specifies whether the Diagram content has to be fit into view with respect to width, height, or entire bounds of the Diagram. To explore the mode, refer to [FitToMode](/js/api/global "FitMode"). 
+Mode specifies whether the Diagram content has to be fit into view with respect to width, height, or entire bounds of the Diagram. To explore the mode, refer to [FitToMode](/js/api/global "FitMode").
 
 ### Region
 
@@ -350,29 +352,34 @@ The following code example illustrates how to define a custom command.
 
 {% highlight js %}
 
-      $("#DiagramContent").ejDiagram({
-      commandManager: {      
-            commands: {      
-                  //Commands to clone the selected item      
-                  "clone": {      
-                  //Method to define whether the command can be executed at the current moment      
-                  canExecute: function (args) {      
-                        //Defines that the clone command can be executed, if and only if the selection list is not empty.      
-                        if (args.model.selectedItems.length) return true;      
-                  },
-      
-                  //Command handler      
-                  execute: function (args) {      
-                        //Logic to clone the selected element      
-                        diagram.copy();      
-                        diagram.paste();      
-                  },      
-                  //Defines that the clone command has to be executed on the recognition of Shift+C key press.      
-                  gesture: { key: ej.datavisualization.Diagram.Keys.C, keyModifiers: ej.datavisualization.Diagram.KeyModifiers.Shift }      
-                  }      
-            }      
-         }      
-      });
+$("#DiagramContent").ejDiagram({
+commandManager: {
+	commands: {
+		//Commands to clone the selected item
+		"clone": {
+			//Method to define whether the command can be executed at the current moment
+			canExecute: function (args) {
+				//Defines that the clone command can be executed, if and only if the selection list is not empty.
+				if (args.model.selectedItems.length) {
+					return true;
+				}
+			},
+
+			//Command handler
+			execute: function (args) {
+				//Logic to clone the selected element
+				diagram.copy();
+				diagram.paste();
+			},
+
+			//Defines that the clone command has to be executed on the recognition of Shift+C key press.
+			gesture: {
+				key: ej.datavisualization.Diagram.Keys.C,
+				keyModifiers: ej.datavisualization.Diagram.KeyModifiers.Shift
+			}
+		}
+	}
+});
 {% endhighlight %}
 
 ### Modify the existing command
@@ -384,28 +391,34 @@ The following code example illustrates how to disable a command and how to modif
 
 {% highlight js %}
 
-      $("#DiagramContent").ejDiagram({      
-      //Disables the nudging commands      
-            commandManager: {            
-                  commands: {            
-                        //Assigns null value to an existing command and disables its execution            
-                        "nudgeUp": null,            
-                        "nudgeDown": null,            
-                        "nudgeRight": null,      
-                              
-                        //Modifies the existing command - nudgeLeft     
-                        "nudgeLeft": {            
-                        canExecute: function (args) {            
-                              if (args.model.selectedItems.length) return true;            
-                        },            
-                        //Command handler            
-                        execute: function (args) {                     
-                              diagram.nudge("left");            
-                        },            
-                        gesture: { key: ej.datavisualization.Diagram.Keys.Left }            
-                        }            
-                  }            
-            }    
-      });
+$("#DiagramContent").ejDiagram({
+	//Disables the nudging commands
+	commandManager: {
+		commands: {
+			//Assigns null value to an existing command and disables its execution
+			"nudgeUp": null,
+			"nudgeDown": null,
+			"nudgeRight": null,
+
+			//Modifies the existing command - nudgeLeft
+			"nudgeLeft": {
+				canExecute: function (args)
+					if (args.model.selectedItems.length) {
+						return true;
+					}
+				},
+
+				//Command handler
+				execute: function (args) {
+					diagram.nudge("left");
+				},
+
+				gesture: {
+					key: ej.datavisualization.Diagram.Keys.Left
+				}
+			}
+		}
+	}
+});
 
 {% endhighlight %}

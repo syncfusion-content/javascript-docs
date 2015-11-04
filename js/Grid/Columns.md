@@ -9,13 +9,14 @@ documentation: ug
 
 # Columns
 
-Column definitions are used as the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "") schema in grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") property of the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") is necessary to map the datasource values in grid columns.
+Column definitions are used as the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") schema in grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") property of the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") is necessary to map the datasource values in grid columns.
 
-T> [1.The column with [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") which are not in the datasource, then the column values will be displayed as empty.<BR> 2.If the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") name contains “dot” then it is considered as complex binding.]
+N> 1.The column with [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") which are not in the datasource, then the column values will be displayed as empty.
+N> 2.If the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name contains "dot" then it is considered as complex binding.
 
 ## Auto generation
 
-The [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") are automatically generated when [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") declaration is empty or undefined while initializing the grid. Also, all the columns which are in [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "") are bound as a grid columns.
+The [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") are automatically generated when [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") declaration is empty or undefined while initializing the grid. Also, all the columns which are in [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") are bound as a grid columns.
 
 The following code example shows auto-generate columns behavior.
 
@@ -26,7 +27,7 @@ The following code example shows auto-generate columns behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true
 	});
@@ -40,9 +41,9 @@ The following output is displayed as a result of the above code example.
 
 How to set isPrimaryKey for auto generated columns when editing is enabled:
 
-Using [`dataBound`](http://help.syncfusion.com/js/api/ejgrid#events:databound "") event, you can set [`isPrimaryKey`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isprimarykey "") value as `true` by two ways. The following code example demonstrates the above behavior.
+Using [`dataBound`](http://help.syncfusion.com/js/api/ejgrid#events:databound "dataBound") event, you can set [`isPrimaryKey`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isprimarykey "isPrimaryKey") value as `true` by two ways. The following code example demonstrates the above behavior.
 
-1. If primary key “column index” is known then refer the following code example
+1. If primary key "column index" is known then refer the following code example
 {% highlight html %}
 <div id="Grid"></div>
 {% endhighlight %}
@@ -50,7 +51,7 @@ Using [`dataBound`](http://help.syncfusion.com/js/api/ejgrid#events:databound ""
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		editSettings : {
@@ -68,7 +69,7 @@ $(function () {
 });
 {% endhighlight %}
 
-2. If primary key “column field name” is known then refer the following code example
+2. If primary key "column field name" is known then refer the following code example
 {% highlight html %}
 <div id="Grid"></div>
 {% endhighlight %}
@@ -76,7 +77,7 @@ $(function () {
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		editSettings : { allowEditing : true },
@@ -94,9 +95,9 @@ $(function () {
 
 HeaderText
 
-It represents the title for particular column. To enable header text, set `[headerText](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "")` property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns ""). The following code example describes the above behavior.
+It represents the title for particular column. To enable header text, set [`headerText`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "headerText") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). The following code example describes the above behavior.
 
-I>  [If [`headerText`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "") is not defined then the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") name is considered as header text for that particular column. If [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") name and [`headerText`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "") also not defined then the column is rendered with “empty” header text.]
+N> If [`headerText`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "headerText") is not defined then the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name is considered as header text for that particular column. If [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name and [`headerText`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "headerText") also not defined then the column is rendered with "empty" header text.
 
 The following code example describes the above behavior.
 
@@ -107,7 +108,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [
@@ -128,14 +129,14 @@ The following output is displayed as a result of the above code example.
 
 Header Text alignment
 
-[Align](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertextalign "") the header text of column header using [`headerTextAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertextalign "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns ""). There are four possible ways to align header text, they are
+[Align](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertextalign "Align") the header text of column header using [`headerTextAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertextalign "headerTextAlign") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). There are four possible ways to align header text, they are
 
 1. Right
 2. Left
 3. Center
 4. Justify
 
-I> [For [`headerTextAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertextalign "") property you can assign either `string` value (“right”) or `enum` value (`ej.TextAlign.Right`)]
+N> For [`headerTextAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertextalign "headerTextAlign") property you can assign either `string` value ("right") or `enum` value (`ej.TextAlign.Right`).
 
 The following code example describes the above behavior.
 
@@ -146,7 +147,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [
@@ -167,11 +168,11 @@ The following output is displayed as a result of the above code example.
 
 Header Template
 
-The template design that applies on for the column header. To render template, set [`headerTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertemplateid "") property of the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "").
+The template design that applies on for the column header. To render template, set [`headerTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertemplateid "headerTemplateID") property of the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns").
 
-You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "").
+You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
-I> [It’s a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "") within the `script` tag with `type` as “text/x-jsrender”.]
+N> It's a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") within the `script` tag with `type` as "text/x-jsrender".
 
 The following code example describes the above behavior.
 
@@ -186,15 +187,15 @@ Emp ID
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [
 			{ field : "OrderID", headerText : "Order ID" },
-			{ field : "EmployeeID", headerTemplateID : “Emp ID < span class = "e-userlogin e-icon employee" >  <  / span > " },
-			{ field: " Freight ", headerText: " Freight " },
-			{ field: " ShipCountry ", headerText: " Country " },
-			{ field: " ShipCity ", headerText: " City " }
+			{ field : "EmployeeID", headerTemplateID : "Emp ID < span class = "e-userlogin e-icon employee" >  <  / span > " },
+			{ field: "Freight", headerText: "Freight" },
+			{ field: "ShipCountry", headerText: "Country" },
+			{ field: "ShipCity", headerText: "City" }
 		]
 	});
 });
@@ -207,14 +208,15 @@ The following output is displayed as a result of the above code example.
 
 ## Text alignment
 
-You can [align](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "") both content and header text of particular column using [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns ""). There are four possible ways to align content and header text of column, [they](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "") are 
+You can [align](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "align") both content and header text of particular column using [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "textAlign") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). There are four possible ways to align content and header text of column, [they](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "they") are 
 
 1. Right
 2. Left
 3. Center
 4. Justify
 
-T> [1.  For [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "") property you can assign either `string` value (“right”) or `enum` value (`ej.TextAlign.Right`) <BR> 2. The [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "") property will affect both content and header text of the grid.]
+N> 1.For [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "textAlign") property you can assign either `string` value ("right") or `enum` value (`ej.TextAlign.Right`).
+N> 2. The [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "textAlign") property will affect both content and header text of the grid.
 
 The following code example describes the above behavior.
 
@@ -225,7 +227,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [
@@ -246,9 +248,9 @@ The following output is displayed as a result of the above code example.
 
 ## Format
 
-[Format](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "") is the process of customizing the particular column data with specified jquery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. To specify the globalize format, by using [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "").
+[Format](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "Format") is the process of customizing the particular column data with specified jquery recognized globalize formats, such as currency, numeric, decimal, percentage or dates. To specify the globalize format, by using [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "format") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns").
 
-The [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "") value should be wrapped within “{0:” and “}”. (For ex: "{0:C3}"). The [data format](https://github.com/jquery/globalize/tree/v0.1.1#format "") strings available for the Date and Number types.
+The [`format`](http://help.syncfusion.com/js/api/ejgrid#members:columns-format "format") value should be wrapped within "{0:" and "}". (For ex: "{0:C3}"). The [data format](https://github.com/jquery/globalize/tree/v0.1.1#format "data format") strings available for the Date and Number types.
 
 The following code example describes the above behavior.
 
@@ -259,7 +261,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [
@@ -280,7 +282,7 @@ The following output is displayed as a result of the above code example.
 
 ## Width
 
-You can specify the width for particular column by setting [`width`](http://help.syncfusion.com/js/api/ejgrid#members:columns-width "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") as in pixel (ex: 100) or in percentage (ex: 40%).
+You can specify the width for particular column by setting [`width`](http://help.syncfusion.com/js/api/ejgrid#members:columns-width "width") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") as in pixel (ex: 100) or in percentage (ex: 40%).
 
 The following code example describes the above behavior.
 
@@ -291,7 +293,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [
@@ -314,9 +316,9 @@ The following output is displayed as a result of the above code example.
 
 ## Resize to fit 
 
-The [`allowResizeToFit`](http://help.syncfusion.com/js/api/ejgrid#members:allowresizetofit "") property enable the grid to set width to columns based on maximum width of the particular column’s content to facilitate full visibility of data in all the grid rows and this automatic behavior is applicable Only for the columns which does not have width specified. 
+The [`allowResizeToFit`](http://help.syncfusion.com/js/api/ejgrid#members:allowresizetofit "allowResizeToFit") property enable the grid to set width to columns based on maximum width of the particular column's content to facilitate full visibility of data in all the grid rows and this automatic behavior is applicable Only for the columns which does not have width specified. 
 
-On columns where “width is defined”, double click on the particular column header’s resizer symbol to resize the column to show the whole text. For example, refer the “ShipCity” column in the below code snippet and output screen shot. 
+On columns where "width is defined", double click on the particular column header's resizer symbol to resize the column to show the whole text. For example, refer the "ShipCity" column in the below code snippet and output screen shot. 
 
 The following code example describes the above behavior. 
 
@@ -327,7 +329,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowResizeToFit : true,
@@ -351,7 +353,7 @@ The following output is displayed as a result of the above code example.
 
 ## Auto wrap column
 
-[`allowTextWrap`](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "") property enables the grid to [wrap](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "") cell content to next line when the content exceeds the boundary of the cell width. 
+[`allowTextWrap`](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "allowTextWrap") property enables the grid to [wrap](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "wrap") cell content to next line when the content exceeds the boundary of the cell width. 
 
 The following code example describes the above behavior.
 
@@ -362,7 +364,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowTextWrap : true,
@@ -384,7 +386,7 @@ The following output is displayed as a result of the above code example.
 
 ## Reorder
 
-[Reordering](http://help.syncfusion.com/js/api/ejgrid#members:allowreordering "") can be done by drag and drop the particular column header from one index to another index within the grid. Reordering can be enabled by setting [`allowReordering`](http://help.syncfusion.com/js/api/ejgrid#members:allowreordering "") property as `true`.
+[Reordering](http://help.syncfusion.com/js/api/ejgrid#members:allowreordering "Reordering") can be done by drag and drop the particular column header from one index to another index within the grid. Reordering can be enabled by setting [`allowReordering`](http://help.syncfusion.com/js/api/ejgrid#members:allowreordering "allowReordering") property as `true`.
 
 The following code example describes the above behavior.
 
@@ -395,7 +397,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowReordering : true,
@@ -411,7 +413,7 @@ The following output is displayed as a result of the above code example.
 
 ## Visibility
 
-You can [hide](http://help.syncfusion.com/js/api/ejgrid#members:columns-visible "") particular column in grid view by setting [`visible`](http://help.syncfusion.com/js/api/ejgrid#members:columns-visible "") property of it as `false`.
+You can [hide](http://help.syncfusion.com/js/api/ejgrid#members:columns-visible "hide") particular column in grid view by setting [`visible`](http://help.syncfusion.com/js/api/ejgrid#members:columns-visible "visible") property of it as `false`.
 
 The following code example describes the above behavior.
 
@@ -422,7 +424,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [
@@ -445,9 +447,9 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Merging
 
-The grid has options to merge the grid cells based on the required conditions. This can be enabled by setting [`allowCellMerging`](http://help.syncfusion.com/js/api/ejgrid#members:allowcellmerging "") property as `true` and the merge conditions can be defined in [`mergeCellInfo`](http://help.syncfusion.com/js/api/ejgrid#events:mergecellinfo "") event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
+The grid has options to merge the grid cells based on the required conditions. This can be enabled by setting [`allowCellMerging`](http://help.syncfusion.com/js/api/ejgrid#members:allowcellmerging "allowCellMerging") property as `true` and the merge conditions can be defined in [`mergeCellInfo`](http://help.syncfusion.com/js/api/ejgrid#events:mergecellinfo "mergeCellInfo") event. In this event, you can get the column details and data of that particular row and column which is helpful in defining conditions. 
 
-You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in [`mergeCellInfo`](http://help.syncfusion.com/js/api/ejgrid#events:mergecellinfo "") event’s argument.
+You can merge the rows and cells of grid, using `rowMerge`, `colMerge` and `merge` functions available in [`mergeCellInfo`](http://help.syncfusion.com/js/api/ejgrid#events:mergecellinfo "mergeCellInfo") event's argument.
 
 The following code example describes the above behavior.
 
@@ -458,7 +460,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowCellMerging : true,
@@ -484,9 +486,9 @@ The following output is displayed as a result of the above code example.
 
 ## Unbound Column
 
-You can define the unbound columns in grid by not defining [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") property for that particular. Value for this columns can be populated either manually using [`queryCellInfo`](http://help.syncfusion.com/js/api/ejgrid#events:querycellinfo "") event or by using column [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "").
+You can define the unbound columns in grid by not defining [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") property for that particular. Value for this columns can be populated either manually using [`queryCellInfo`](http://help.syncfusion.com/js/api/ejgrid#events:querycellinfo "queryCellInfo") event or by using column [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template").
 
-I> [Editing, grouping, filtering, sorting, summary and searching support are not available for unbound columns.] 
+N> Editing, grouping, filtering, sorting, summary and searching support are not available for unbound columns.
 
 The following code example describes the above behavior. 
 
@@ -497,7 +499,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		editSettings : {
@@ -526,11 +528,11 @@ The following output is displayed as a result of the above code example.
 
 ## Column Template
 
-Html templates can be specified in the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "") property of the particular column as a string (html element) or ID of the template’s HTML element.
+Html templates can be specified in the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") property of the particular column as a string (html element) or ID of the template's HTML element.
 
-You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi ""). 
+You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [this link](http://www.jsviews.com/#jsrapi "this link"). 
 
-I> [If [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") is not specified, you will not able to perform editing, grouping, filtering, sorting, search and summary functionalities in particular column.]
+N> If [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") is not specified, you will not able to perform editing, grouping, filtering, sorting, search and summary functionalities in particular column.
 
 The following code example describes the above behavior.
 
@@ -545,7 +547,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.employeeView,
 		allowPaging : true,
 		pageSettings : {
@@ -569,7 +571,7 @@ The following output is displayed as a result of the above code example.
 
 ## Controlling Grid actions
 
-You can control the grid actions of a particular column by setting [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting ""), [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping ""), `allowFiltering`, [`allowResizing`](http://help.syncfusion.com/js/api/ejgrid#members:allowresizing "") and [`allowEditing`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowediting "") properties of it as `false`.
+You can control the grid actions of a particular column by setting [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "allowSorting"), [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "allowGrouping"), `allowFiltering`, [`allowResizing`](http://help.syncfusion.com/js/api/ejgrid#members:allowresizing "allowResizing") and [`allowEditing`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowediting "allowEditing") properties of it as `false`.
 
 The following code example describes the above behavior.
 
@@ -580,7 +582,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		columns : [
 			{ field: "OrderID", isPrimaryKey:true },
@@ -601,7 +603,7 @@ $(function () {
 
 ## Read only
 
-To make a column as “read-only” then set [`allowEditing`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowediting "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") as `false`.
+To make a column as "read-only" then set [`allowEditing`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-allowediting "allowEditing") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") as `false`.
 
 The following code example describes the above behavior.
 
@@ -612,7 +614,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		editSettings : {
@@ -636,11 +638,11 @@ The following output is displayed as a result of the above code example.
 
 ## Expression Column
 
-[Expression](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "") column is possible only for [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "") column. You can use JsRender syntax in the template.
+[Expression](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "Expression") column is possible only for [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") column. You can use JsRender syntax in the template.
 
-You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi ""). 
+You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link"). 
 
-I> [This expression column is supported at read only mode.]
+N> This expression column is supported at read only mode.
 
 The following code example describes the above behavior.
 
@@ -651,7 +653,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.FoodInformation" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.FoodInformation" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.FoodInformation,
 		allowPaging : true,
 		columns : [
@@ -674,14 +676,14 @@ The following output is displayed as a result of the above code example.
 
 Default action buttons
 
-Using [`command`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "") column, you can add CRUD action buttons as one of the grid column, through [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "") property of [`commands`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands ""). The type property supports the below default `[UnboundType](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "")` buttons.
+Using [`command`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "command") column, you can add CRUD action buttons as one of the grid column, through [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "type") property of [`commands`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "commands"). The type property supports the below default [UnboundType](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "UnboundType") buttons.
 
 1. edit
 2. save
 3. delete
 4. cancel
 
-Through [`buttonOptions`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-buttonoptions "") property of [`commands`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands ""), you can specify all the button options which are supported by Essential Studio JavaScript [`Button`](http://help.syncfusion.com/js/api/ejbutton# "") control. 
+Through [`buttonOptions`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-buttonoptions "buttonOptions") property of [`commands`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "commands"), you can specify all the button options which are supported by Essential Studio JavaScript [`Button`](http://help.syncfusion.com/js/api/ejbutton# "Button") control. 
 
 The following code example describes the above behavior.
 
@@ -692,7 +694,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		editSettings : {
@@ -727,9 +729,10 @@ The following output is displayed as a result of the above code example.
 
 Custom buttons
 
-You can add custom button in the command column by specifying the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "") property of [`commands`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "") as “empty” or any other `string` instead of `enum` values.
+You can add custom button in the command column by specifying the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "type") property of [`commands`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "commands") as "empty" or any other `string` instead of `enum` values.
 
-T> [1. For [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "") property you can assign either `string` value (“edit”) or `enum` value (`ej.Grid.UnboundType.Edit`) <BR> 2. In command column you can add only buttons.] 
+N> 1. For [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "type") property you can assign either `string` value ("edit") or `enum` value (`ej.Grid.UnboundType.Edit`).
+N> 2. In command column you can add only buttons.
 
 The following code example describes the above behavior.
 
@@ -740,7 +743,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.employeeView,
 		columns : [
 			{ field : "EmployeeID" }, 
@@ -772,7 +775,7 @@ The following output is displayed as a result of the above code example.
 
 ## Column Chooser
 
-[`Column chooser`](http://help.syncfusion.com/js/api/ejgrid#members:showcolumnchooser "") contains all the columns which are defined in the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") property, using this you can control the visibility of columns in grid. You can prevent to show the particular column in column chooser by setting [`showInColumnChooser`](http://help.syncfusion.com/js/api/ejgrid#members:showcolumnchooser "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") as `false`. It can be shown in the right corner of grid. To enable column chooser, set [`showColumnChooser`](http://help.syncfusion.com/js/api/ejgrid#members:showcolumnchooser "") property as `true`. 
+[Column chooser](http://help.syncfusion.com/js/api/ejgrid#members:showcolumnchooser "Column chooser") contains all the columns which are defined in the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") property, using this you can control the visibility of columns in grid. You can prevent to show the particular column in column chooser by setting [`showInColumnChooser`](http://help.syncfusion.com/js/api/ejgrid#members:showcolumnchooser "showInColumnChooser") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") as `false`. It can be shown in the right corner of grid. To enable column chooser, set [`showColumnChooser`](http://help.syncfusion.com/js/api/ejgrid#members:showcolumnchooser "showColumnChooser") property as `true`. 
 
 The following code example describes the above behavior.
 
@@ -783,7 +786,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		showColumnChooser : true,
@@ -805,9 +808,9 @@ The following output is displayed as a result of the above code example.
 
 ## Foreign Key Column
 
-Lookup data source can be bound to [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns ""). Data [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "") and `text` can be set using [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "") and [`foreignKeyValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyvalue "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "").
+Lookup data source can be bound to [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). Data [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") and `text` can be set using [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") and [`foreignKeyValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns").
 
-Notes: For foreign key column the sorting and grouping is based on [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "") instead of [`foreignKeyValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyvalue "").
+I> For foreign key column the sorting and grouping is based on [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") instead of [`foreignKeyValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue").
 
 The following code example describes the above behavior.
 
@@ -818,7 +821,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" and "window.employeeView" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		editSettings : {
@@ -844,11 +847,11 @@ The following output is displayed as a result of the above code example.
 
 ## Custom Attribute
 
-You can add [`custom attribute`](http://help.syncfusion.com/js/api/ejgrid#members:columns-customattributes "") for particular column `td` element by using [`customAttributes`](http://help.syncfusion.com/js/api/ejgrid#members:columns-customattributes "") property of the column.
+You can add [custom attribute](http://help.syncfusion.com/js/api/ejgrid#members:columns-customattributes "custom attribute") for particular column `td` element by using [`customAttributes`](http://help.syncfusion.com/js/api/ejgrid#members:columns-customattributes "customAttributes") property of the column.
 
 Based on custom attribute you can customize the style and appearance of the `td` element or handling Jquery functionalities. 
 
-You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "").
+You can use JsRender syntax in the template.For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
 The following code example describes the above behavior.
 
@@ -859,7 +862,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [
@@ -880,7 +883,7 @@ The following output is displayed as a result of the above code example.
 
 ## Displaying HTML content
 
-This will helps you to show actual [`HTML`](http://help.syncfusion.com/js/api/ejgrid#members:columns-disablehtmlencode "") value in grid content and header. To disable html code, set [`disableHtmlEncode`](http://help.syncfusion.com/js/api/ejgrid#members:columns-disablehtmlencode "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") as true. 
+This will helps you to show actual [HTML](http://help.syncfusion.com/js/api/ejgrid#members:columns-disablehtmlencode "HTML") value in grid content and header. To disable html code, set [`disableHtmlEncode`](http://help.syncfusion.com/js/api/ejgrid#members:columns-disablehtmlencode "disableHtmlEncode") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") as true. 
 
 The following code example describes the above behavior.
 
@@ -891,7 +894,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [
@@ -911,7 +914,7 @@ The following output is displayed as a result of the above code example.
 
 ## Customize column
 
-You can [`customize`](http://help.syncfusion.com/js/api/ejgrid#members:columns-cssclass "") the header and content of that particular column by [`cssClass`](http://help.syncfusion.com/js/api/ejgrid#members:columns-cssclass "") property of the column.
+You can [customize](http://help.syncfusion.com/js/api/ejgrid#members:columns-cssclass "customize") the header and content of that particular column by [`cssClass`](http://help.syncfusion.com/js/api/ejgrid#members:columns-cssclass "cssClass") property of the column.
 
 The following code example describes the above behavior.
 
@@ -938,7 +941,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [
@@ -958,9 +961,9 @@ The following output is displayed as a result of the above code example.
 
 ## Type
 
-Used to define the type of the particular column data. If the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-type "") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "") is not specified then its type is automatically defined based on the first row data of that column.
+Used to define the type of the particular column data. If the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-type "type") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") is not specified then its type is automatically defined based on the first row data of that column.
 
-I> [The [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-type "") is needed for filtering feature when first row of the data is “null” or “empty”.]
+N> The [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-type "type") is needed for filtering feature when first row of the data is "null" or "empty".
 
 The following code example describes the above behavior.
 
@@ -971,7 +974,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		columns : [

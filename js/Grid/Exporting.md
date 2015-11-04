@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Export
 
-To export grid, `export` method should  be called with export mapper as parameter. To make it work from toolbar, ` ExcelExport`, ` WordExport` and `PdfExport` toolbar items needs to be added in ‘toolbarSettings.toolbarItems’ property and equivalent server action mapper should be defined in `exportToExcelAction`, `exportToWordAction`, and `exportToPdfAction` properties. The code snippet for this is
+To export grid, `export` method should  be called with export mapper as parameter. To make it work from toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in `toolbarSettings.toolbarItems` property and equivalent server action mapper should be defined in `exportToExcelAction`, `exportToWordAction`, and `exportToPdfAction` properties. The code snippet for this is
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -50,7 +50,7 @@ $(function () {
 
 ## Server configuration
 
-Currently grid data can be converted to different file formats in server-side only, through `EJ`’s helper functions in .Net. So, to use exporting in your projects, it is required to create a server with any of the following web services. 
+Currently grid data can be converted to different file formats in server-side only, through **EJ's** helper functions in .Net. So, to use exporting in your projects, it is required to create a server with any of the following web services. 
 
 * WebAPI 
 * WCF Service
@@ -60,6 +60,7 @@ Currently grid data can be converted to different file formats in server-side on
 Following code snippet demonstrate exporting with WebAPI controller.
 
 {% highlight c# %}
+
 public class OrdersController: ApiController
 
 {
@@ -150,7 +151,7 @@ public class OrdersController: ApiController
 
 			var property = gridProp.GetType()
 
-				.GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+				.GetProperty(ds.Key, BindingFlags.Instance ' BindingFlags.Public ' BindingFlags.IgnoreCase);
 
 			if (property != null)
 
@@ -198,10 +199,12 @@ Currently server helper functions allows following three types of exporting
 * Word
 * Excel
 * Pdf
+
+
 ## Multiple Grid export to single file
 
 
-To export multiple grids in current page, the method `ej.Grid.exportAll` can be used with ‘jquery selector’ as the parameter.
+To export multiple grids in current page, the method `ej.Grid.exportAll` can be used with 'jquery selector' as the parameter.
 
 The JavaScript code snippet for it is 
 
@@ -216,9 +219,11 @@ The JavaScript code snippet for it is
 
 {% endhighlight %}
 
+
 The Server side C# snippet is
 
 {% highlight c# %}
+
 // Excel export
 
 public void MultipleExportToExcel(string[] GridModel)
@@ -359,7 +364,9 @@ Following are the list of properties that are exclude during grid export, to red
 * pageSettings
 * enableRTL
 * cssClass
-## Export only visible records
+
+
+##Export only visible records
 
 
 By default `pageSettings` is ignored in export to facilitate all pages export. To achieve current visible page record export, `pageSettings` should be removed from ignore list using following code.
@@ -373,9 +380,10 @@ The snippet for this is.
 
 {% endhighlight %}
 
-On server before calling the `Export` function, the data source should be processed using DataOperations’s Execute function. 
+On server before calling the `Export` function, the data source should be processed using DataOperations's Execute function. 
 
 {% highlight c# %}
+
 public void ExportToExcel(string GridModel)
 
 {
@@ -438,7 +446,7 @@ private GridProperties ConvertGridpropertiesect(string gridProperty)
 
 	{
 
-		var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance | BindingFlags.Public | BindingFlags.IgnoreCase);
+		var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance ' BindingFlags.Public ' BindingFlags.IgnoreCase);
 
 		if (property != null)
 
@@ -465,14 +473,17 @@ private GridProperties ConvertGridpropertiesect(string gridProperty)
 
 ## Local data 
 
-By default, client data source is not sent to server to prevent unwanted data transfer since all data origin is server. In case, if you don’t want to query the data source again for exporting in server, the grid’s client `dataSource` can be sent to server on export postback by removing the `dataSource` property in grid’s ignore list. The code snippet for this is follows
+By default, client data source is not sent to server to prevent unwanted data transfer since all data origin is server. In case, if you don't want to query the data source again for exporting in server, the grid's client `dataSource` can be sent to server on export postback by removing the `dataSource` property in grid's ignore list. The code snippet for this is follows
 
-<table>
-<tr>
-<td>
-var grid = $('#GridId').ejGrid('instance');<br/><br/>grid.ignoreOnExport.splice(grid.ignoreOnExport.indexOf('dataSource'), 1);<br/><br/><br/><br/></td></tr>
-</table>
-## Theme
+{% highlight js %}
+
+var grid = $('#GridId').ejGrid('instance');
+grid.ignoreOnExport.splice(grid.ignoreOnExport.indexOf('dataSource'), 1);
+
+{% endhighlight %}
+
+
+##Theme
 
 The grid export have 13 theme option to match with our [built-in control themes](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components# ""). They are
 
@@ -493,6 +504,7 @@ The grid export have 13 theme option to match with our [built-in control themes]
 Also, it have `none` option which will export the grid without any theme.  The desired theme name can be passed as a parameter to `Export` method and the code snippet for this is follows
 
 {% highlight c# %}
+
 [System.Web.Http.ActionName("ExcelExport")]
 
 [AcceptVerbs("POST")]
@@ -512,10 +524,6 @@ public void ExcelExport()
 	exp.Export(gridProperty, result, "Export.xlsx", ExcelVersion.Excel2010, false, false, " gradient-azure");
 
 }
-
-
-
-
 
 {% endhighlight %}
 

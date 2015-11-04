@@ -27,24 +27,23 @@ The following code illustrates how to customize the page size and the appearance
 
 {% highlight js %}
 
-    $("#diagram").ejDiagram({
-        //Sets off-page background
-        backgroundColor: "whitesmoke",
-        pageSettings: {
-            //Sets page size
-            pageHeight: 500,
-            pageWidth: 500,
-            
-            //Customizes the appearance of page
-            pageBorderWidth: 4,
-            pageBackgroundColor: "white",
-            pageBorderColor: "lightgray",
-            pageMargin: 25,
-            showPageBreak: true,
-            multiplePage: true,
-            pageOrientation: ej.datavisualization.Diagram.PageOrientations.Portrait
-        }
-    });
+$("#diagram").ejDiagram({
+	//Sets off-page background
+	backgroundColor: "whitesmoke",
+	pageSettings: {
+		//Sets page size
+		pageHeight: 500,
+		pageWidth: 500,
+		//Customizes the appearance of page
+		pageBorderWidth: 4,
+		pageBackgroundColor: "white",
+		pageBorderColor: "lightgray",
+		pageMargin: 25,
+		showPageBreak: true,
+		multiplePage: true,
+		pageOrientation: ej.datavisualization.Diagram.PageOrientations.Portrait
+	}
+});
 {% endhighlight %}
 
 
@@ -65,14 +64,14 @@ The following code illustrates how to enable multiple page and page break lines.
 
 {% highlight js %}
 
-      $("#diagram").ejDiagram({      
-            pageSettings: {            
-                  //Enables the multiple page            
-                  multiplePage: true,            
-                  //Enables the page break lines            
-                  showPageBreak: true,                  
-            }      
-      });
+$("#diagram").ejDiagram({
+	pageSettings: {
+		//Enables the multiple page
+		multiplePage: true,
+		//Enables the page break lines
+		showPageBreak: true,
+	}
+});
 
 {% endhighlight %}
 

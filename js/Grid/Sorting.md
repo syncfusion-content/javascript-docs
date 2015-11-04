@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting
 
-[Sorting](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "") is the process of arranging records in some ordered sequence by setting [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "") property as `true`. 
+[Sorting](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "Sorting") is the process of arranging records in some ordered sequence by setting [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "allowSorting") property as `true`. 
 
 Sort the column by clicking on the header of that particular column. The order switches between ascending and descending each time you click a column header for sorting.
 
@@ -22,7 +22,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowSorting : true,
@@ -38,9 +38,10 @@ The following output is displayed as a result of the above code example.
 
 ## Initial Sorting
 
-Through `sortedColumns` property of [`sortSettings`](http://help.syncfusion.com/js/api/ejgrid#members:sortsettings ""), you can sort the columns while initializing the grid itself. You need to specify the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:sortsettings-sortedcolumns-field "") (column) name and `direction` in the `sortedColumns`.
+Through `sortedColumns` property of [`sortSettings`](http://help.syncfusion.com/js/api/ejgrid#members:sortsettings "sortSettings"), you can sort the columns while initializing the grid itself. You need to specify the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:sortsettings-sortedcolumns-field "field") (column) name and `direction` in the `sortedColumns`.
 
-T> [1. For [`direction`](http://help.syncfusion.com/js/api/ejgrid#members:sortsettings-sortedcolumns-direction "") property you can assign either `string` value (“descending”) or `enum` value (`ej.sortOrder.Descending`). <BR> 2. You can add multiple columns in `sortedColumns` for multi column sorting while initializing the grid itself.]
+N> 1. For [`direction`](http://help.syncfusion.com/js/api/ejgrid#members:sortsettings-sortedcolumns-direction "direction") property you can assign either `string` value ("descending") or `enum` value (`ej.sortOrder.Descending`). 
+N> 2. You can add multiple columns in `sortedColumns` for multi column sorting while initializing the grid itself.
 
 The following code example describes the above behavior.
 
@@ -51,7 +52,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowSorting : true,
@@ -68,12 +69,11 @@ The following output is displayed as a result of the above code example.
 
 ## Multi-Column Sorting
 
-[Sort multiple](http://help.syncfusion.com/js/api/ejgrid#members:allowmultisorting "") columns in grid by setting [`allowMultiSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowmultisorting "") property as true. The sorting order is displayed in the header while doing multi sorting.
+[Sort multiple](http://help.syncfusion.com/js/api/ejgrid#members:allowmultisorting "Sort multiple") columns in grid by setting [`allowMultiSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowmultisorting "allowMultiSorting") property as true. The sorting order is displayed in the header while doing multi sorting.
 
-You can sort more than one column by pressing “Ctrl key + mouse left click” on the column header. To clear sorting for particular column, press “Shift + mouse left click”. 
+You can sort more than one column by pressing "Ctrl key + mouse left" click on the column header. To clear sorting for particular column, press "Shift + mouse left click". 
 
-I> [[`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "") must be true while enabling multi sort.]
-
+N> [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "allowSorting") must be true while enabling multi sort.
 The following code example describes the above behavior.
 
 {% highlight html %}
@@ -83,7 +83,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowSorting : true,
@@ -106,9 +106,9 @@ For sorting, grid uses default browser's sort function for better performance. O
 
 To resolve this, you need to set `ej.support.stableSort` as `false`.
 
-This will tell the “DataManager” to use custom sort function for sorting data. 
+This will tell the "DataManager" to use custom sort function for sorting data. 
 
-Please refer [the link](https://en.wikipedia.org/wiki/Category:Stable_sorts# ""), to know more information about stable sort.
+Please refer [the link](https://en.wikipedia.org/wiki/Category:Stable_sorts# "the link"), to know more information about stable sort.
 
 The following code example describes the above behavior.
 
@@ -120,7 +120,7 @@ The following code example describes the above behavior.
 ej.support.stableSort = false;
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowSorting : true,
@@ -140,7 +140,7 @@ While using Grid in a touch device, you have an option for multi sorting in sing
 
 Again if you tap the popup symbol again, then the single tap multi sorting will be disabled. 
 
-I> [[`allowMultiSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowmultisorting "") and [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "") should be `true` then only the popup will be shown.]
+N> [`allowMultiSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowmultisorting "allowMultiSorting") and [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "allowSorting") should be `true` then only the popup will be shown.
 
 The following code example describes the above behavior.
 
@@ -151,7 +151,7 @@ The following code example describes the above behavior.
 {% highlight js %}
 $(function () {
 	$("#Grid").ejGrid({
-		// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData,
 		allowPaging : true,
 		allowMultiSorting : true,
