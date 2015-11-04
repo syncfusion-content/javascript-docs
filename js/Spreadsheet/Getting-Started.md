@@ -12,227 +12,227 @@ documentation: ug
 
 The Spreadsheet have the following list of external dependencies. 
 
-* [jQuery](http://jquery.com/# "") 1.7.1 and later versions
-* [jsRender](https://github.com/borismoore/jsrender# "") - to render the templates
-* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/# "") - to support the animation effects in the components
-* [jQuery.Globalize](https://github.com/jquery/globalize/tree/v0.1.1# "") v0.1.1 - to support the globalization
-* [jQuery.validate](https://github.com/jzaefferer/jquery-validation# "") - to support validation in editing and dialog inputs
+* [jQuery](http://jquery.com/) 1.7.1 and later versions.
+* [jsRender](https://github.com/borismoore/jsrender) - to render the templates.
+* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/) - to support the animation effects in the components.
+* [jQuery.Globalize](https://github.com/jquery/globalize/tree/v0.1.1) v0.1.1 - to support the globalization.
+* [jQuery.validate](https://github.com/jzaefferer/jquery-validation) - to support validation in editing and dialog inputs.
 
 And the internal dependencies are tabulated below. 
 
 <table>
 <tr>
-<td>
-**File**<br/><br/></td><td>
-**Description/Usage**<br/><br/></td></tr>
+<th>
+File                              </th><th>
+Description/Usage</th></tr>
 <tr>
 <td>
 ej.core.min.js<br/><br/></td><td>
-Must be referred always before using all the JS controls.<br/><br/></td></tr>
+Must be referred always before using all the JS controls.  </td></tr>
 <tr>
 <td>
 ej.data.min.js<br/><br/></td><td>
-Used to handle data operation and should be used while binding data to JS controls.<br/><br/></td></tr>
+Used to handle data operation and should be used while binding data to JS controls.  </td></tr>
 <tr>
 <td>
-ej.scroller.min.js<br/><br/></td><td>
-Used to handle scrolling operation in all JS controls.<br/><br/></td></tr>
+ej.scroller.min.js</td><td>
+Used to handle scrolling operation in all JS controls.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.common.min.js<br/><br/></td><td>
-Spreadsheet's main file.<br/><br/></td></tr>
+ej.spreadsheet.common.min.js</td><td>
+Spreadsheet's main file.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.selection.min.js<br/><br/></td><td>
-Should be referred when using selection in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.selection.min.js</td><td>
+Should be referred when using selection in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.filter.min.js<br/><br/></td><td>
-Should be referred when using filtering in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.filter.min.js</td><td>
+Should be referred when using filtering in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.ribbon.min.js<br/><br/></td><td>
-Should be referred when ribbon is enabled in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.ribbon.min.js</td><td>
+Should be referred when ribbon is enabled in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.freezepane.min.js<br/><br/></td><td>
-Should be referred when using freeze pane options in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.freezepane.min.js</td><td>
+Should be referred when using freeze pane options in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.math.min.js<br/><br/></td><td>
-Must be referred and used for Spreadsheet common calculation.<br/><br/></td></tr>
+ej.spreadsheet.math.min.js</td><td>
+Must be referred and used for Spreadsheet common calculation.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.resizing.min.js<br/><br/></td><td>
-Should be referred when using resizing in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.resizing.min.js</td><td>
+Should be referred when using resizing in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.editing.min.js<br/><br/></td><td>
-Should be referred when using editing in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.editing.min.js</td><td>
+Should be referred when using editing in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.validation.min.js<br/><br/></td><td>
-Should be referred when using data validation in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.validation.min.js</td><td>
+Should be referred when using data validation in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.comments.min.js<br/><br/></td><td>
-Should be referred when using comments in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.comments.min.js</td><td>
+Should be referred when using comments in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.dragFill.min.js<br/><br/></td><td>
-Should be referred when using auto fill in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.dragFill.min.js</td><td>
+Should be referred when using auto fill in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.cellNavigation.min.js<br/><br/></td><td>
-Should be referred when using keyboard navigation in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.cellNavigation.min.js</td><td>
+Should be referred when using keyboard navigation in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.cellFormatting.min.js<br/><br/></td><td>
-Should be referred when using cell formatting in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.cellFormatting.min.js</td><td>
+Should be referred when using cell formatting in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.cFormat.min.js<br/><br/></td><td>
-Should be referred when using conditional formatting in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.cFormat.min.js</td><td>
+Should be referred when using conditional formatting in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.clipboard.min.js<br/><br/></td><td>
-Should be referred when using clipboard options in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.clipboard.min.js</td><td>
+Should be referred when using clipboard options in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.contextmenu.min.js<br/><br/></td><td>
-Should be referred when using context menu in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.contextmenu.min.js</td><td>
+Should be referred when using context menu in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.sorting.min.js<br/><br/></td><td>
-Should be referred when using sorting in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.sorting.min.js</td><td>
+Should be referred when using sorting in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.dragAndDrop.min.js<br/><br/></td><td>
-Should be referred when using drag and drop in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.dragAndDrop.min.js</td><td>
+Should be referred when using drag and drop in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.findnreplace.min.js<br/><br/></td><td>
-Should be referred when using find and replace option in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.findnreplace.min.js</td><td>
+Should be referred when using find and replace option in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.exporting.min.js<br/><br/></td><td>
-Should be referred when using exporting in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.exporting.min.js</td><td>
+Should be referred when using exporting in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.shape.min.js<br/><br/></td><td>
-Should be referred when using picture and chart in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.shape.min.js</td><td>
+Should be referred when using picture and chart in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.chart.min.js<br/><br/></td><td>
-Should be referred when using chart in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.chart.min.js</td><td>
+Should be referred when using chart in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.print.min.js<br/><br/></td><td>
-Should be referred when using print option in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.print.min.js</td><td>
+Should be referred when using print option in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.spreadsheet.scroller.min.js<br/><br/></td><td>
-Should be referred when using scrolling in Spreadsheet.<br/><br/></td></tr>
+ej.spreadsheet.scroller.min.js</td><td>
+Should be referred when using scrolling in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.grid.min.js<br/><br/></td><td>
-Used this control for Name Manager option in Spreadsheet.<br/><br/></td></tr>
+ej.grid.min.js</td><td>
+Used this control for Name Manager option in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.pager.min.js<br/><br/></td><td>
-Must be referred and used for paging option in Spreadsheet.<br/><br/></td></tr>
+ej.pager.min.js</td><td>
+Must be referred and used for paging option in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.waitingpopup.min.js<br/><br/></td><td>
-Should be referred while importing files in Spreadsheet<br/><br/></td></tr>
+ej.waitingpopup.min.js</td><td>
+Should be referred while importing files in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.autocomplete.min.js<br/><br/></td><td>
-Should be referred when editing is enabled in Spreadsheet.<br/><br/></td></tr>
+ej.autocomplete.min.js</td><td>
+Should be referred when editing is enabled in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.ribbon.min.js<br/><br/></td><td>
-These files are used when ribbon option is enabled in Spreadsheet.<br/><br/></td></tr>
+ej.ribbon.min.js</td><td>
+These files are used when ribbon option is enabled in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.button.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.button.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.checkbox.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.checkbox.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.radiobutton.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.radiobutton.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.dropdownlist.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.dropdownlist.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.listbox.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.listbox.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.editor.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.editor.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.menu.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.menu.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.colorpicker.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.colorpicker.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.slider.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.slider.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.splitbutton.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.splitbutton.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.togglebutton.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.togglebutton.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.toolbar.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.toolbar.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.tab.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.tab.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.uploadbox.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.uploadbox.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.calculate.min.js<br/><br/></td><td>
-Must be referred and used for formula in Spreadsheet<br/><br/><br/><br/></td></tr>
+ej.calculate.min.js</td><td>
+Must be referred and used for formula in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.dialog.min.js<br/><br/></td><td>
-Must be referred since dialog is used in various features in Spreadsheet.<br/><br/></td></tr>
+ej.dialog.min.js</td><td>
+Must be referred since dialog is used in various features in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.draggable.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.draggable.min.js</td><td>
+</td></tr>
 <tr>
 <td>
-ej.treeview.min.js<br/><br/></td><td>
-Should be referred when Hyperlink options is enabled in Spreadsheet.<br/><br/></td></tr>
+ej.treeview.min.js</td><td>
+Should be referred when Hyperlink options is enabled in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.excelfilter.min.js<br/><br/></td><td>
-Should be referred when filtering is enabled in Spreadsheet.<br/><br/></td></tr>
+ej.excelfilter.min.js</td><td>
+Should be referred when filtering is enabled in Spreadsheet.  </td></tr>
 <tr>
 <td>
-ej.datepicker.min.js<br/><br/></td><td>
-<br/><br/></td></tr>
+ej.datepicker.min.js</td><td>
+</td></tr>
 </table>
 For getting started, you can use the `ej.web.all.min.js` file, which encapsulates all the `ej` controls and frameworks in one single file. For themes, you can use the `ej.web.all.min.css` or Use CDN links for scripts and CSS from the snippet given. 
 
@@ -260,11 +260,11 @@ For getting started, you can use the `ej.web.all.min.js` file, which encapsulate
             </html>
 			{% endhighlight %}
 			
-I>[In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets# "") to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip "") in your server.]
+N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets# "") to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip "") in your server.
 
 ## Creating ejSpreadsheet
 
-The Spreadsheet control can be created from an HTML `DIV` element with `id` attribute.  To create the Spreadsheet, you should call the ` ejSpreadsheet ` jQuery plug-in function with the options as parameter.  The basic options to create Spreadsheet are `rowCount`, `colCount`, `activeSheetIndex`, `sheetCount` , `scrollSettings.width` and `scrollSettings.height`. Code snippet for loading `ejSpreadheet` with minimal settings and to initialize with default data.
+The Spreadsheet control can be created from an HTML `DIV` element with `id` attribute.  To create the Spreadsheet, you should call the `ejSpreadsheet` jQuery plug-in function with the options as parameter.  The basic options to create Spreadsheet are `rowCount`, `colCount`, `activeSheetIndex`, `sheetCount` , `scrollSettings.width` and `scrollSettings.height`. Code snippet for loading `ejSpreadsheet` with minimal settings and to initialize with default data.
 
 {% highlight html %}
 <div id='Spreadsheet'></div>
@@ -289,7 +289,7 @@ The Spreadsheet control can be created from an HTML `DIV` element with `id` attr
 
 ## Initialize from Excel File
 
-The Spreadsheet control can be initialized from an Excel file by defining `importSettings.importUrl` with server endpoint. The server endpoint requires to be a .Net Web service or MVC controller/action, where excel file can be serialized in to JSON format, that the Spreadsheet can understand. The required .Net helper libraries are provided in Essential Studio build, please refer {% seealso %} [this link](http://help.syncfusion.com/js/spreadsheet/server-configuration# "")  {% endseealso %} for configuring server.
+The Spreadsheet control can be initialized from an Excel file by defining `importSettings.importUrl` with server endpoint. The server endpoint requires to be a .Net Web service or MVC controller/action, where excel file can be serialized in to JSON format, that the Spreadsheet can understand. The required .Net helper libraries are provided in Essential Studio build, please refer [this link](http://help.syncfusion.com/js/spreadsheet/server-configuration)  for configuring server.
 
 {% highlight html %}
 <div id='Spreadsheet'></div>
@@ -317,80 +317,80 @@ The Spreadsheet provides built-in support for cell navigation as in MS Excel. Th
 
 <table>
 <tr>
-<td>
-**Keys**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Keys                     </th><th>
+Description</th></tr>
 <tr>
 <td>
-Tab<br/><br/></td><td>
-Navigate to next cell in the row.<br/><br/></td></tr>
+Tab</td><td>
+Navigate to next cell in the row.  </td></tr>
 <tr>
 <td>
-Shift + tab<br/><br/></td><td>
-Navigate to previous cell in the row.<br/><br/></td></tr>
+Shift + tab</td><td>
+Navigate to previous cell in the row.  </td></tr>
 <tr>
 <td>
-Enter<br/><br/></td><td>
-Navigate to next cell in the column.<br/><br/></td></tr>
+Enter</td><td>
+Navigate to next cell in the column.  </td></tr>
 <tr>
 <td>
-Shift + Enter <br/><br/></td><td>
-Navigate to previous cell in the column.<br/><br/></td></tr>
+Shift + Enter </td><td>
+Navigate to previous cell in the column.  </td></tr>
 <tr>
 <td>
-Up<br/><br/></td><td>
-Navigate to previous cell in the column<br/><br/></td></tr>
+Up</td><td>
+Navigate to previous cell in the column.  </td></tr>
 <tr>
 <td>
-Down<br/><br/></td><td>
-Navigate to next cell in the column.<br/><br/></td></tr>
+Down</td><td>
+Navigate to next cell in the column.  </td></tr>
 <tr>
 <td>
-Left<br/><br/></td><td>
-Navigate to previous cell in the row.<br/><br/></td></tr>
+Left</td><td>
+Navigate to previous cell in the row.  </td></tr>
 <tr>
 <td>
-Right<br/><br/></td><td>
-Navigate to next cell in the row.<br/><br/></td></tr>
+Right</td><td>
+Navigate to next cell in the row.  </td></tr>
 <tr>
 <td>
-Ctrl  + Up<br/><br/></td><td>
-Navigate  to first cell in the column<br/><br/></td></tr>
+Ctrl  + Up</td><td>
+Navigate  to first cell in the column.  </td></tr>
 <tr>
 <td>
-Ctrl + Down<br/><br/></td><td>
-Navigate  to last cell in the column<br/><br/></td></tr>
+Ctrl + Down</td><td>
+Navigate  to last cell in the column.  </td></tr>
 <tr>
 <td>
-Ctrl + Left<br/><br/></td><td>
-Navigate  to first cell in the row<br/><br/></td></tr>
+Ctrl + Left</td><td>
+Navigate  to first cell in the row.  </td></tr>
 <tr>
 <td>
-Ctrl + Right<br/><br/></td><td>
-Navigate  to last cell in the row<br/><br/></td></tr>
+Ctrl + Right</td><td>
+Navigate  to last cell in the row.  </td></tr>
 <tr>
 <td>
-Shift  + Up<br/><br/></td><td>
-Extend the selection Upward<br/><br/></td></tr>
+Shift  + Up</td><td>
+Extend the selection Upward.  </td></tr>
 <tr>
 <td>
-Shift + Down<br/><br/></td><td>
-Extend the selection downwards<br/><br/></td></tr>
+Shift + Down</td><td>
+Extend the selection downwards.  </td></tr>
 <tr>
 <td>
-Shift + Left<br/><br/></td><td>
-Extend the selection in left.<br/><br/></td></tr>
+Shift + Left</td><td>
+Extend the selection in left.  </td></tr>
 <tr>
 <td>
-Shift + Right<br/><br/></td><td>
-Extend the selection in right.<br/><br/></td></tr>
+Shift + Right</td><td>
+Extend the selection in right.  </td></tr>
 </table>
 The Spreadsheet control also has support for excel like drag fill, which can be used to fill the adjacent cells data using a dragging fill handle of a selected cells. With drag fill, the following list of Auto fill options are also provided in Spreadsheet. 
 
-1. Copy - repeat values (Text)
-2. Series - fill data based on series (Number, Month, Day)
-3. Formula Series - fill formula based on cell reference
-4. Formatting - repeat cell formats
+1. Copy - repeat values (Text).
+2. Series - fill data based on series (Number, Month, Day).
+3. Formula Series - fill formula based on cell reference.
+4. Formatting - repeat cell formats.
 
 For auto filling, editing and autofill should be enabled using `allowEditing` and `allowAutoFill`.
 
@@ -422,8 +422,8 @@ For auto filling, editing and autofill should be enabled using `allowEditing` an
 
 The Spreadsheet control provides options to create chart through API and Ribbon. The chart can be created using ribbon similar to excel and to create using API, `XLChart.createChart()` should be called with the following parameters.
 
-1. Range - Chart data from the range
-2. Chart options - for setting its width, height, type e.t.c
+1. Range - Chart data from the range.
+2. Chart options - for setting its width, height, type e.t.c.
 
 {% highlight html %}
 <div id='Spreadsheet'></div>
