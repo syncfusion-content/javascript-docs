@@ -51,12 +51,11 @@ The header for each group can be defined using the “span” element”.
 
 {% highlight js %}
 
+jQuery(function($) {
 
-        jQuery(function ($) {
-           $("#listbox").ejListBox();
-        });
+    $("#listbox").ejListBox();
 
-
+});
 
 {% endhighlight %}
 

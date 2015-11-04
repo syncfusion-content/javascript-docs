@@ -36,7 +36,7 @@ The ListBox widget’s appearance can be customized based on different needs usi
 
 
 
-N> _In the above code snippet, the image path (images/Employees) is given just for demonstration. Hence the images will not be displayed while using the above code._
+N> In the above code snippet, the image path (images/Employees) is given just for demonstration. Hence the images will not be displayed while using the above code.
 
 {% seealso %} [Data Binding](http://help.syncfusion.com/js/listbox/databinding). {% endseealso %}
 
@@ -44,24 +44,22 @@ Define the styles for the template as below.
 
 {% highlight css %}
 
-        .image
-        {
-            margin:0;
-            padding: 3px 10px 3px 3px;
-            border:0 none;
-            width:60px;
-            height:60px;
-            float:left;
-        }
-        .text
-        {
-             font-weight:bold;
-             padding:6px 3px 1px 3px;
-        }
-        .desig,.country{
-            font-size:smaller;
-            padding:3px 3px 0px 0px;
-        }
+.image {
+     margin:0;
+     padding: 3px 10px 3px 3px;
+     border:0 none;
+     width:60px;
+     height:60px;
+     float:left;
+}
+.text{
+    font-weight:bold;
+    padding:6px 3px 1px 3px;
+}
+.desig, .country{
+    font-size:smaller;
+    padding:3px 3px 0px 0px;
+}
 
 
 

@@ -10,7 +10,7 @@ metacontent:
 
 The ListBox widget provides a list options to make user to choose an item from the list. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
 
-$(element).ejListBox<span class="signature">()</span>
+$(element).ejListBox<span class="signature">(options)</span>
 
 Example
 {:.example}
@@ -65,18 +65,20 @@ Enables/disables the drag and drop behavior of the ListBox widget.
 N> Since this is a deprecated property we suggest to use **allowDrag** and **allowDrop** properties.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example
 {:.example}
 
 {% highlight js %}
 
-            $("#list").ejListBox({
+$("#list").ejListBox({
 
-                allowDragAndDrop: true
+    allowDragAndDrop: true
 
-            });
+});
             
 {% endhighlight %}
 
@@ -86,7 +88,9 @@ Example
 Enables/disables the dragging behavior of the ListBox widget’s item within a ListBox or between two ListBox widgets.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example
 {:.example}
@@ -107,7 +111,9 @@ Accepts the items which are dropped in to it, when it is set to true.
 N> Need to enable allowDrag property to drag the list (li) item from the listbox control.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example
 {:.example}
@@ -126,7 +132,9 @@ Example
 Enables or disables multiple selection.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example 
 {:.example}
@@ -143,7 +151,9 @@ Example
 Loads the list data on demand via scrolling behavior to improve the application’s performance. There are two ways to load data which can be defined using “virtualScrollMode” property.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example
 {:.example}
@@ -166,20 +176,22 @@ Enables or disables the case sensitive search for list item by typing the text (
 N> It works only when the enableIncrementalSearch is set as true.
 
 Default Value: 
-{:.param} false
+{:.param} 
+
+false
 
 Example
 {:.example}
 
 {% highlight js %}
 
-    $('#list).ejListBox({
-    
-    enableIncrementalSearch : true ,
-    
-        caseSensitiveSearch : true 
-    
-    }); 
+    $('#list').ejListBox({
+
+        enableIncrementalSearch: true,
+
+        caseSensitiveSearch: true
+
+    });
 
 {% endhighlight %}  
 
@@ -190,18 +202,20 @@ Example
 Dynamically populate data of a list box while selecting an item in another list box i.e. rendering child list box based on the item selection in parent list box. This property accepts the id of the child ListBox widget to populate the data.
 
 Default Value:
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
 
 {% highlight js %}
 
-        $('#list').ejListBox({ 
+$('#list').ejListBox({
 
-        cascadeTo: 'countryList' 
+    cascadeTo: 'countryList'
 
-        });
+});
 
 {% endhighlight %}
 
@@ -212,7 +226,9 @@ Example
 To check all the items of the ListBox widget. It works only when the showCheckbox property is set to true. 
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example
 {:.example}
@@ -231,7 +247,9 @@ List of items to be checked by default using its index. It works only when the s
 N> Since this is a deprecated property we suggest to use checkedIndices property.
 
 Default Value:
-{:.param} []
+{:.param} 
+
+[]
 
 Example
 {:.example}
@@ -250,7 +268,9 @@ List of items to be checked by default using its index. It works only when the s
 N> Since this is a deprecated property we suggest to use checkedIndices property.
 
 Default Value:
-{:.param} []
+{:.param} 
+
+[]
 
 Example
 {:.example}
@@ -270,7 +290,9 @@ List of items to be checked by default using index values. It works only when th
 N> Since this is a deprecated property we suggest to use checkedIndices property.
 
 Default Value: 
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
@@ -287,7 +309,9 @@ Example
 Set of list items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
 
 Default Value:
-{:param} null
+{:param} 
+
+null
 
 Example
 {:.example}
@@ -304,7 +328,9 @@ Example
 The root class for the ListBox widget to customize the existing theme.
 
 Default Value:
-{:.param} “”
+{:.param} 
+
+“”
 
 Example
 {:.example}
@@ -322,7 +348,9 @@ Example
 Contains the list of data for generating the list items.
 
 Default Value:
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
@@ -343,7 +371,9 @@ Example
 Disables set of list items using its index value.
 
 Default Value:
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example} 
@@ -360,7 +390,9 @@ Example
 Enables or disables the ListBox widget.
 
 Default Value:
-{:.param} true
+{:.param} 
+
+true
 
 Example 
 {:.example}
@@ -377,7 +409,9 @@ Example
 Enables the set of disabled list items using its index value.
 
 Default Value:
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
@@ -396,21 +430,19 @@ Loads data on demand for the ListBox widget via scrolling behavior.If this is se
 N> Since this is a deprecated property we suggest to use allowVirtualScrolling property.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example
 {:.example}
 
 {% highlight js %}
 
-            $("#customerlist").ejListBox({
-
-                enableLoadOnDemand: true
-
-            });
-
-        });
-        
+ $("#customerlist").ejListBox({
+     enableLoadOnDemand: true
+ });
+ 
  {% endhighlight %}
 
 
@@ -421,7 +453,9 @@ Example
 Enables or disables the search behavior to find the specific list item by typing the text value.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example 
 {:.example}
@@ -440,7 +474,9 @@ Allows the current model values to be saved in local storage or browser cookies 
 N> [Local storage](http://www.w3schools.com/html/html5_webstorage.asp) is supported only in Html5 supported browsers. If the browsers don’t have support for local storage, browser cookies will be used to maintain the state.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example 
 {:.example}
@@ -457,7 +493,9 @@ Example
 Displays the ListBox widget’s content from right to left when enabled.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example 
 {:.example}
@@ -476,18 +514,18 @@ Loads data on demand for the ListBox widget via scrolling behavior. If this is s
 N> Since this is a deprecated property we suggest to use allowVirtualScrolling property.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example
 {:.example}
 
 {% highlight js %}
 
-            $("#customerlist").ejListBox({
-            
-            enableVirtualScrolling: true           
-            
-            });
+ $("#customerlist").ejListBox({
+     enableVirtualScrolling: true
+ });
 
 {% endhighlight %}
 
@@ -498,20 +536,25 @@ Example
 Mapping fields for the data items of the ListBox widget.
 
 Default Value:
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
 
 {% highlight js %}
+       
+$("#countrylist").ejListBox({
 
-        $("#countrylist").ejListBox({ 
+    dataSource: countries,
 
-        dataSource: countries, 
-        
-        fields: { text: "name", value: "key" } 
-        
-        });
+    fields: {
+        text: "name",
+        value: "key"
+    }
+
+});
 
 {% endhighlight %}
 
@@ -579,7 +622,9 @@ Defines the specific field name to display the tooltip text for all the list ite
 Defines the height of the ListBox widget.
 
 Default Value:
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
@@ -596,7 +641,9 @@ Example
 The number of list items to be shown in the ListBox widget. The remaining list items will be scrollable.
 
 Default Value:
-{:.param} null
+{:.param}
+
+null
 
 Example
 {:.example}
@@ -613,20 +660,21 @@ Example
 The number of list items to be loaded in the list box while enabling virtual scrolling and when virtualScrollMode is set to continuous.
 
 Default Value:
-{:.param} 5
+{:.param} 
+
+5
 
 Example
 {:.example}
 
 {% highlight js %}
 
-            $("#customerlist").ejListBox({
+$("#customerlist").ejListBox({
 
-                itemRequestCount: 6 
+    itemRequestCount: 6
 
-            });
+});
 
-        });
         
  {% endhighlight %}
 
@@ -638,7 +686,9 @@ Loads data for the listbox by default (i.e. on initialization) when set to true.
 N> It is used along with cascading feature. See also [cascadeTo](http://help.syncfusion.com//js/api/ejlistbox#members:cascadeto).
 
 Default Value: 
-{:.param} true
+{:.param} 
+
+true
 
 Example
 {:.example}
@@ -659,22 +709,24 @@ Example
 The query to retrieve required data from the data source.
 
 Default Value:
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
 
 {% highlight js %}
 
-            var query = ej.Query()
+var query = ej.Query()
 
-                   .from("Customers").take(10);
-                   
-            $("#customerlist").ejListBox({
+.from("Customers").take(10);
 
-                query: query
+$("#customerlist").ejListBox({
 
-            });
+    query: query
+
+});
 
 {% endhighlight %}
 
@@ -686,7 +738,9 @@ The item to be selected by default using its index.
 N> Since this is a deprecated property we suggest to use selectedIndex property.
 
 Default Value:
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
@@ -705,14 +759,16 @@ The list of items to be selected by default using its index values. To use this 
 N> Since this is a deprecated property we suggest to use selectedIndices property.
 
 Default Value:
-{:.param} []
+{:.param} 
+
+[]
 
 Example
 {:.example}
 
 {% highlight js %}
 
-        $('#list).ejListBox({ 
+        $('#list').ejListBox({ 
         
         allowMultiSelection:true,
         
@@ -730,7 +786,9 @@ The list of items to be selected by default using its index. To use this propert
 N> Since this is a deprecated property we suggest to use selectedIndices property.
 
 Default Value:
-{:.param} []
+{:.param} 
+
+[]
 
 Example
 {:.example}
@@ -747,7 +805,9 @@ Example
 The list item to be selected by default using its index.
 
 Default Value:
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
@@ -764,7 +824,9 @@ Example
 The list items to be selected by default using its indices. To use this property allowMultiSelection should be enabled.
 
 Default Value:
-{:.param} []
+{:.param} 
+
+[]
 
 Example
 {:.example}
@@ -781,7 +843,9 @@ Example
 Enables/Disables the multi selection option with the help of checkbox control.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example
 {:.example}
@@ -798,7 +862,9 @@ Example
 To display the ListBox container with rounded corners.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example
 {:.example}
@@ -808,13 +874,16 @@ Example
     $('#list').ejListBox({ showRoundedCorner: true }); 
 
 {% endhighlight %}
+
 ### template <span class="type-signature type string">string</span>
 {:#members:template}
 
 The template to display the ListBox widget with customized appearance.
 
 Default Value: 
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
@@ -826,7 +895,6 @@ Example
                 template: '&lt;div class="ename"&gt; ${text} &lt;/div&gt;&lt;div class="desig"&gt; ${desig} &lt;/div&gt;&lt;div class="cont"&gt; ${country} &lt;/div&gt;'
 
             });
-        });
         
  {% endhighlight %}
 
@@ -836,7 +904,9 @@ Example
 Unchecks all the checked list items. It is dependent on showCheckbox property.
 
 Default Value:
-{:.param} false
+{:.param} 
+
+false
 
 Example
 {:.example}
@@ -853,7 +923,9 @@ Example
 Unchecks the list of items by using its index values. It is dependent on showCheckbox property.
 
 Default Value:
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
@@ -870,7 +942,9 @@ Example
 Holds the selected items values and used to bind value to the list item using angular and knockout.
 
 Default Value:
-{:.param} “”
+{:.param} 
+
+“”
 
 Example
 {:.example}
@@ -948,7 +1022,9 @@ Each time when we scroll to the end of the ListBox widget, the other set of list
 This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.
 
 Default Value:
-{:.param} “normal”. 
+{:.param} 
+
+“normal”. 
 
 Example
 {:.example}
@@ -970,7 +1046,9 @@ Example
 Defines the width of the ListBox widget.
 
 Default Value:
-{:.param} null
+{:.param} 
+
+null
 
 Example
 {:.example}
@@ -1020,7 +1098,7 @@ Example
 {% endhighlight %}
 
 ### checkAll<span class="signature">()</span>
-{:#methods:checkAll}
+{:#methods:checkall}
 
 Checks all the list items in the ListBox widget. It is dependent on showCheckbox property.
 
@@ -1758,7 +1836,7 @@ Example
 {% endhighlight %}
 
 
-### selectItemsByIndices<span class="signature">(indices)</span> [Deprecated]
+### selectItemsByIndices<span class="signature">(indices)</span>
 {:#methods:selectitemsbyindices}
 
 Selects a set of list items through its index values. 
@@ -1787,7 +1865,7 @@ Example
 
 
 ### unCheckAll<span class="signature">()</span> [Deprecated]
-{:#methods:uncheckall}
+{:#methods:unCheckAll}
 
 Unchecks all the checked list items in the ListBox widget. To use this method showCheckbox property to be set as true.
 
@@ -1805,7 +1883,7 @@ Example
 
 
 ### uncheckAll<span class="signature">()</span>
-{:#methods:uncheckAll}
+{:#methods:uncheckall}
 
 Unchecks all the checked list items in the ListBox widget. To use this method showCheckbox property to be set as true.
 
@@ -2075,15 +2153,16 @@ Example
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		actionSuccess: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    actionSuccess: function(args) {
+
+        //do something
+
+    }
+
+});
+
 {% endhighlight %}
 
 
@@ -2100,15 +2179,15 @@ Example
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		actionComplete: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    actionComplete: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -2125,15 +2204,15 @@ N> It internally uses jQuery ajaxError event. For details refer [here](http://ap
 
 {% highlight js%}
 		
-		$("#list").ejListBox({
-		
-		actionFailure: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    actionFailure: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -2211,15 +2290,15 @@ Example
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		change: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    change: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -2298,15 +2377,15 @@ Example
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		checkChange: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    change: function(args) {
+
+        //do something
+
+    }
+
+});
 
 
 {% endhighlight %}
@@ -2345,15 +2424,15 @@ Example
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		create: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    create: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -2390,16 +2469,16 @@ Example
 {:.example}
 
 {% highlight js%}
+ 
+ $("#list").ejListBox({
 
-		$("#list").ejListBox({
-		
-		destroy: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+    destroy: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -2477,15 +2556,15 @@ Example
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		itemDrag: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    itemDrag: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -2533,15 +2612,15 @@ Example
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		itemRequest: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    itemRequest: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -2619,15 +2698,15 @@ List item’s value.</td></tr>
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		itemDragStart: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    itemDragStart: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -2705,15 +2784,15 @@ List item’s value.</td></tr>
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		itemDragStop: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    itemDragStop: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -2793,15 +2872,15 @@ List item’s value.</td></tr>
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		itemDropped: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    itemDropped: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -2880,15 +2959,15 @@ List item’s value.</td></tr>
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		itemDrop: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    itemDrop: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -2968,15 +3047,15 @@ List item’s value.</td></tr>
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		selected: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    selected: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -3054,15 +3133,15 @@ List item’s value.</td></tr>
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		select: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    select: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -3140,15 +3219,15 @@ List item’s value.</td></tr>
 
 {% highlight js%}
 		
-		$("#list").ejListBox({
-		
-		unselect: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    unselect: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
@@ -3228,15 +3307,15 @@ List item’s value.</td></tr>
 
 {% highlight js%}
 
-		$("#list").ejListBox({
-		
-		selectIndexChanged: function(args) { 
-		
-		//do something
-		
-		}          
-		
-		});
+$("#list").ejListBox({
+
+    selectIndexChanged: function(args) {
+
+        //do something
+
+    }
+
+});
 
 {% endhighlight %}
 
