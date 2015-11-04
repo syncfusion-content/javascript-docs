@@ -84,7 +84,7 @@ The following output is displayed as a result of the above code example.
 
 I> There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of custom adaptor concept. 
 
-{% seealso %}Refer this [Knowledge Base link](http://www.syncfusion.com/kb/3377/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid#) for bounding XML data to grid using custom adaptor. {% endalso %}
+{% seealso %}Refer this [Knowledge Base link](http://www.syncfusion.com/kb/3377/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid#) for bounding XML data to grid using custom adaptor. {% endseealso %}
 
 ## Remote Data
 
