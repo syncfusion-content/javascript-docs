@@ -13,7 +13,7 @@ documentation: ug
 
 ## Customize the gridlines visibility
 
-The `snapConstraints` property of `snapSettings` enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
+The `snapSettings.snapConstraints` enables you to show/hide the gridlines. The following code example illustrates how to show or hide gridlines.
 
 {% highlight js %}
 
@@ -109,7 +109,7 @@ $(function() {
 
 This feature allows the Diagram objects to snap to the nearest intersection of gridlines while being dragged or resized. This feature enables easier alignment during layout or design.
 
-Snapping to gridlines can be enabled/disabled with the `snapConstraints` property of snapSettings. The following code example illustrates how to enable/disable the snapping to gridlines.
+Snapping to gridlines can be enabled/disabled with the `snapSettings.snapConstraints`. The following code example illustrates how to enable/disable the snapping to gridlines.
 
 {% highlight js %}
 

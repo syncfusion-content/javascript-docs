@@ -27,6 +27,8 @@ Add a placeholder `div` element that can be used to initialize the diagram widge
 	</script>
 </body>
 
+{% endhighlight %}
+
 ## Create a swimlane
 
 To create a swimlane, you need to define an object with `isSwimlane` property that helps identify the object as a swimlane. By default, the swimlanes are arranged vertically. You can change that with the `orientation` property of swimlane.

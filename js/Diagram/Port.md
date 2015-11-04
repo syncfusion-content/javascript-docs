@@ -102,7 +102,7 @@ diagram.updatePort(selectedObject.name, selectedObject.ports[0], { fillColor: "r
 
 ## Connect with ports
 
-Connector’s 'sourcePort' and 'targetPort' properties allow to create connections between some specific points of source/target nodes. 
+Connector’s `sourcePort` and `targetPort` properties allow to create connections between some specific points of source/target nodes. 
 For more information about creating connections with port, refer to [Connections with ports](/js/Diagram/Connector "Connections with ports")
 
 ## Appearance 
