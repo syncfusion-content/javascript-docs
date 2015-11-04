@@ -32,7 +32,7 @@ $("#DiagramContent").ejDiagram({
 
 ## Customize Context Menu
 
-Apart from the default context menu items, you can define some additional context menu items. Those additional items have to be defined and added to `items` property of `contextMenu`. `subItems` property of context menu item enables to define a set of sub menu items.
+Apart from the default context menu items, you can define some additional context menu items. Those additional items have to be defined and added to `contextMenu.items`. Sub menu items for context menu can set using `contextMenu.items.subItems`
 The following code example illustrate how to add custom context menu items.
 
 {% highlight js %}
@@ -62,9 +62,9 @@ $("#DiagramContent").ejDiagram({
 	}
 });
 
-When you want to display only your custom context menu items, you can set true to the `showCustomMenuItemsOnly` property.
-
 {% endhighlight %}
+
+When you want to display only your custom context menu items, you can set true to the `showCustomMenuItemsOnly` property.
 
 Icons of context menu items can be customized by overriding the default context menu item style.
 The following code example illustrates how to customize the icon of context menu items.
@@ -91,7 +91,7 @@ The following code example illustrates how to customize the icon of context menu
 
 ## Context Menu Events
 
-* You would be notified with events when you try to open the context menu items(`contextMenuBeforeOpen`) and when you click the menu items(`contextMenuClick`). The following code example illustrates how to define those events.
+You would be notified with events when you try to open the context menu items(`contextMenuBeforeOpen`) and when you click the menu items(`contextMenuClick`). The following code example illustrates how to define those events.
 
 {% highlight js %}
 

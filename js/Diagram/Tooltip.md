@@ -20,7 +20,7 @@ By default, Diagram displays a tooltip to provide the size, position, and angle 
 
 ### Disable default tooltip
 
-To disable the default tooltip, You need to set "null" to the `tooltip` property of the object `selectedItems`. The following code example illustrates how to disable default tooltip.
+To disable the default tooltip, You need to set `selectedItems.tooltip` as `null`. The following code example illustrates how to disable default tooltip.
 
 {% highlight js %}
 
@@ -37,7 +37,7 @@ $("#diagram").ejDiagram({
 ## Common tooltip for all nodes and connectors
 
 Diagram provides support to show tooltip when mouse hovers over any node/connector. 
-To show tooltip on mouse over, the `tooltip` property of Diagram model needs to be set with the tooltip `templateId` and alignments as shown in the following example.
+To show tooltip on mouse over, the `tooltip` property of Diagram model needs to be set with the tooltip `templateId` and `alignment` as shown in the following example.
 
 {% highlight html %}
 
@@ -86,7 +86,7 @@ $("#diagram").ejDiagram({
 
 ### Disable tooltip at runtime
 
-Tooltips on mouse over can be disabled by assigning "null" value to the `tooltip` property. The following code example illustrates how to disable the mouse over tooltip at runtime.
+Tooltips on mouse over can be disabled by assigning `tooltip` property as `null`. The following code example illustrates how to disable the mouse over tooltip at runtime.
 
 {% highlight js %}
 
