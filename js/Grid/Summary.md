@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Summary
 
-Summary rows visibility can be controlled by [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary "showSummary") properties and it can be added to grid by using [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows "summaryRows") property. The example snippet is follows
+Summary rows visibility can be controlled by [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary "showSummary") property and it can be added to grid by using [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows "summaryRows") array property. The example snippet is follows
 
 {% highlight html %}
 
@@ -51,7 +51,7 @@ Summary rows visibility can be controlled by [`showSummary`](http://help.syncfus
 
 ## Supported Aggregates 
 
-List of supported [aggregates](http://help.syncfusion.com/js/datamanager/summary#). They are
+Following are the supported list of [aggregates](http://help.syncfusion.com/js/datamanager/summary#) 
 
 * Sum
 * Average

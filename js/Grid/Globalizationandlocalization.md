@@ -14,245 +14,245 @@ All text in Grid can be localized using `ej.Grid.locale` object. Please find the
 
 <table>
 <tr>
-<td>
-Locale key words <br/><br/></td><td>
-Text<br/><br/></td></tr>
+<th>
+Locale key words </th><th>
+Text</th></tr>
 <tr>
 <td>
-EmptyRecord<br/><br/></td><td>
-No records to display<br/><br/></td></tr>
+EmptyRecord</td><td>
+No records to display</td></tr>
 <tr>
 <td>
-GroupDropArea<br/><br/></td><td>
-Drag a column header here to group its column<br/><br/></td></tr>
+GroupDropArea</td><td>
+Drag a column header here to group its column</td></tr>
 <tr>
 <td>
-DeleteOperationAlert<br/><br/></td><td>
-No records selected for delete operation<br/><br/></td></tr>
+DeleteOperationAlert</td><td>
+No records selected for delete operation</td></tr>
 <tr>
 <td>
-EditOperationAlert<br/><br/></td><td>
-No records selected for edit operation<br/><br/></td></tr>
+EditOperationAlert</td><td>
+No records selected for edit operation</td></tr>
 <tr>
 <td>
-SaveButton<br/><br/></td><td>
-Save<br/><br/></td></tr>
+SaveButton</td><td>
+Save</td></tr>
 <tr>
 <td>
-OkButton<br/><br/></td><td>
-OK<br/><br/></td></tr>
+OkButton</td><td>
+OK</td></tr>
 <tr>
 <td>
-CancelButton<br/><br/></td><td>
-Cancel<br/><br/></td></tr>
+CancelButton</td><td>
+Cancel</td></tr>
 <tr>
 <td>
-EditFormTitle<br/><br/></td><td>
-Details of<br/><br/></td></tr>
+EditFormTitle</td><td>
+Details of</td></tr>
 <tr>
 <td>
-AddFormTitle<br/><br/></td><td>
-Add New Record<br/><br/></td></tr>
+AddFormTitle</td><td>
+Add New Record</td></tr>
 <tr>
 <td>
-Notactionkeyalert<br/><br/></td><td>
-This Key-Combination is not available <br/><br/></td></tr>
+Notactionkeyalert</td><td>
+This Key-Combination is not available </td></tr>
 <tr>
 <td>
-Keyconfigalerttext<br/><br/></td><td>
-This Key-Combination has already been assigned to<br/><br/></td></tr>
+Keyconfigalerttext</td><td>
+This Key-Combination has already been assigned to</td></tr>
 <tr>
 <td>
-GroupCaptionFormat<br/><br/></td><td>
-{{:headerText}}: {{:key}} - {{:count}} {{if count == 1 }} item {{else}} items {{/if}}<br/><br/></td></tr>
+GroupCaptionFormat</td><td>
+{{:headerText}}: {{:key}} - {{:count}} {{if count == 1 }} item {{else}} items {{/if}}</td></tr>
 <tr>
 <td>
-BatchSaveConfirm<br/><br/></td><td>
-Are you sure you want to save changes?<br/><br/></td></tr>
+BatchSaveConfirm</td><td>
+Are you sure you want to save changes?</td></tr>
 <tr>
 <td>
-BatchSaveLostChanges<br/><br/></td><td>
-Unsaved changes will be lost. Are you sure you want to continue?<br/><br/></td></tr>
+BatchSaveLostChanges</td><td>
+Unsaved changes will be lost. Are you sure you want to continue?</td></tr>
 <tr>
 <td>
-ConfirmDelete<br/><br/></td><td>
-Are you sure you want to Delete Record?<br/><br/></td></tr>
+ConfirmDelete</td><td>
+Are you sure you want to Delete Record?</td></tr>
 <tr>
 <td>
-PagerInfo<br/><br/></td><td>
-{0} of {1} pages ({2} items)<br/><br/></td></tr>
+PagerInfo</td><td>
+{0} of {1} pages ({2} items)</td></tr>
 <tr>
 <td>
-FrozenColumnsViewAlert<br/><br/></td><td>
-Frozen columns should be in grid view area<br/><br/></td></tr>
+FrozenColumnsViewAlert</td><td>
+Frozen columns should be in grid view area</td></tr>
 <tr>
 <td>
-FrozenColumnsScrollAlert<br/><br/></td><td>
-Enable allowScrolling while using frozen Columns<br/><br/></td></tr>
+FrozenColumnsScrollAlert</td><td>
+Enable allowScrolling while using frozen Columns</td></tr>
 <tr>
 <td>
-FrozenNotSupportedException<br/><br/></td><td>
-Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing<br/><br/></td></tr>
+FrozenNotSupportedException</td><td>
+Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing</td></tr>
 <tr>
 <td>
-Add<br/><br/></td><td>
-Add<br/><br/></td></tr>
+Add</td><td>
+Add</td></tr>
 <tr>
 <td>
-Edit<br/><br/></td><td>
-Edit<br/><br/></td></tr>
+Edit</td><td>
+Edit</td></tr>
 <tr>
 <td>
-Delete<br/><br/></td><td>
-Delete<br/><br/></td></tr>
+Delete</td><td>
+Delete</td></tr>
 <tr>
 <td>
-Update<br/><br/></td><td>
-Update<br/><br/></td></tr>
+Update</td><td>
+Update</td></tr>
 <tr>
 <td>
-Cancel<br/><br/></td><td>
-Cancel<br/><br/></td></tr>
+Cancel</td><td>
+Cancel</td></tr>
 <tr>
 <td>
-Done<br/><br/></td><td>
-Done<br/><br/></td></tr>
+Done</td><td>
+Done</td></tr>
 <tr>
 <td>
-Columns<br/><br/></td><td>
-Columns<br/><br/></td></tr>
+Columns</td><td>
+Columns</td></tr>
 <tr>
 <td>
-PrintGrid<br/><br/></td><td>
-Print<br/><br/></td></tr>
+PrintGrid</td><td>
+Print</td></tr>
 <tr>
 <td>
-ExcelExport<br/><br/></td><td>
-Excel Export<br/><br/></td></tr>
+ExcelExport</td><td>
+Excel Export</td></tr>
 <tr>
 <td>
-WordExport<br/><br/></td><td>
-Word Export<br/><br/></td></tr>
+WordExport</td><td>
+Word Export</td></tr>
 <tr>
 <td>
-PdfExport<br/><br/></td><td>
-PDF Export<br/><br/></td></tr>
+PdfExport</td><td>
+PDF Export</td></tr>
 <tr>
 <td>
-StringMenuOptions<br/><br/></td><td>
-[<br/><br/>{text: "StartsWith",value: "StartsWith"},<br/><br/>{text: "EndsWith",value: "EndsWith"},<br/><br/>{text: "Contains",value: "Contains"},<br/><br/>{text: "Equal",value: "Equal"},<br/><br/>{text: "NotEqual",value: "NotEqual"}<br/><br/>]<br/><br/></td></tr>
+StringMenuOptions</td><td>
+[{text: "StartsWith",value: "StartsWith"},{text: "EndsWith",value: "EndsWith"},{text: "Contains",value: "Contains"},{text: "Equal",value: "Equal"},{text: "NotEqual",value: "NotEqual"}]</td></tr>
 <tr>
 <td>
-NumberMenuOptions<br/><br/></td><td>
-[<br/><br/>{text: "LessThan",value: "LessThan"},<br/><br/>{text: "GreaterThan",value: "GreaterThan"},<br/><br/>{text: "LessThanOrEqual",value: "LessThanOrEqual"},<br/><br/>{text: "GreaterThanOrEqual",value: "GreaterThanOrEqual"},<br/><br/>{text: "Equal",value: "Equal"},<br/><br/>{text: "NotEqual",value: "NotEqual"}]<br/><br/></td></tr>
+NumberMenuOptions</td><td>
+[{text: "LessThan",value: "LessThan"},{text: "GreaterThan",value: "GreaterThan"},{text: "LessThanOrEqual",value: "LessThanOrEqual"},{text: "GreaterThanOrEqual",value: "GreaterThanOrEqual"},{text: "Equal",value: "Equal"},{text: "NotEqual",value: "NotEqual"}]</td></tr>
 <tr>
 <td>
-PredicateAnd<br/><br/></td><td>
-AND<br/><br/></td></tr>
+PredicateAnd</td><td>
+AND</td></tr>
 <tr>
 <td>
-PredicateOr<br/><br/></td><td>
-OR<br/><br/></td></tr>
+PredicateOr</td><td>
+OR</td></tr>
 <tr>
 <td>
-Filter<br/><br/></td><td>
-Filter<br/><br/></td></tr>
+Filter</td><td>
+Filter</td></tr>
 <tr>
 <td>
-FilterMenuCaption<br/><br/></td><td>
-Filter Value<br/><br/></td></tr>
+FilterMenuCaption</td><td>
+Filter Value</td></tr>
 <tr>
 <td>
-FilterbarTitle<br/><br/></td><td>
-'s filter bar cell<br/><br/></td></tr>
+FilterbarTitle</td><td>
+'s filter bar cell</td></tr>
 <tr>
 <td>
-MatchCase<br/><br/></td><td>
-Match Case<br/><br/></td></tr>
+MatchCase</td><td>
+Match Case</td></tr>
 <tr>
 <td>
-Clear<br/><br/></td><td>
-Clear<br/><br/></td></tr>
+Clear</td><td>
+Clear</td></tr>
 <tr>
 <td>
-ResponsiveFilter<br/><br/></td><td>
-Filter<br/><br/></td></tr>
+ResponsiveFilter</td><td>
+Filter</td></tr>
 <tr>
 <td>
-ResponsiveSorting<br/><br/></td><td>
-Sort<br/><br/></td></tr>
+ResponsiveSorting</td><td>
+Sort</td></tr>
 <tr>
 <td>
-Search<br/><br/></td><td>
-Search<br/><br/></td></tr>
+Search</td><td>
+Search</td></tr>
 <tr>
 <td>
-DatePickerWaterMark<br/><br/></td><td>
-Select date<br/><br/></td></tr>
+DatePickerWaterMark</td><td>
+Select date</td></tr>
 <tr>
 <td>
-EmptyDataSource<br/><br/></td><td>
-DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid<br/><br/></td></tr>
+EmptyDataSource</td><td>
+DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid</td></tr>
 <tr>
 <td>
-True<br/><br/></td><td>
-True<br/><br/></td></tr>
+True</td><td>
+True</td></tr>
 <tr>
 <td>
-False<br/><br/></td><td>
-False<br/><br/></td></tr>
+False</td><td>
+False</td></tr>
 <tr>
 <td>
-UnGroup<br/><br/></td><td>
-Click here to ungroup<br/><br/></td></tr>
+UnGroup</td><td>
+Click here to ungroup</td></tr>
 <tr>
 <td>
-AddRecord<br/><br/></td><td>
-Add Record<br/><br/></td></tr>
+AddRecord</td><td>
+Add Record</td></tr>
 <tr>
 <td>
-EditRecord<br/><br/></td><td>
-Edit Record<br/><br/></td></tr>
+EditRecord</td><td>
+Edit Record</td></tr>
 <tr>
 <td>
-DeleteRecord<br/><br/></td><td>
-Delete Record<br/><br/></td></tr>
+DeleteRecord</td><td>
+Delete Record</td></tr>
 <tr>
 <td>
-Save<br/><br/></td><td>
-Save<br/><br/></td></tr>
+Save</td><td>
+Save</td></tr>
 <tr>
 <td>
-Grouping<br/><br/></td><td>
-Grouping<br/><br/></td></tr>
+Grouping</td><td>
+Grouping</td></tr>
 <tr>
 <td>
-Ungrouping<br/><br/></td><td>
-Ungrouping<br/><br/></td></tr>
+Ungrouping</td><td>
+Ungrouping</td></tr>
 <tr>
 <td>
-SortInAscendingOrder<br/><br/></td><td>
-Sort In Ascending Order<br/><br/></td></tr>
+SortInAscendingOrder</td><td>
+Sort In Ascending Order</td></tr>
 <tr>
 <td>
-SortInDescendingOrder<br/><br/></td><td>
-Sort In Descending Order<br/><br/></td></tr>
+SortInDescendingOrder</td><td>
+Sort In Descending Order</td></tr>
 <tr>
 <td>
-NextPage<br/><br/></td><td>
-Next Page<br/><br/></td></tr>
+NextPage</td><td>
+Next Page</td></tr>
 <tr>
 <td>
-PreviousPage<br/><br/></td><td>
-Previous Page<br/><br/></td></tr>
+PreviousPage</td><td>
+Previous Page</td></tr>
 <tr>
 <td>
-FirstPage<br/><br/></td><td>
-First Page<br/><br/></td></tr>
+FirstPage</td><td>
+First Page</td></tr>
 <tr>
 <td>
-LastPage<br/><br/></td><td>
-Last Page<br/><br/></td></tr>
+LastPage</td><td>
+Last Page</td></tr>
 </table>
 
 
@@ -319,160 +319,160 @@ All text in Grid can be localized using `ej.ExcelFilter.locale` object. Please f
 <table>
 <tr>
 <td>
-Locale key words <br/><br/></td><td>
-Text<br/><br/></td></tr>
+Locale key words </td><td>
+Text</td></tr>
 <tr>
 <td>
-SortNoSmaller<br/><br/></td><td>
-Sort Smallest to Largest<br/><br/></td></tr>
+SortNoSmaller</td><td>
+Sort Smallest to Largest</td></tr>
 <tr>
 <td>
-SortNoLarger<br/><br/></td><td>
-Sort Largest to smallest<br/><br/></td></tr>
+SortNoLarger</td><td>
+Sort Largest to smallest</td></tr>
 <tr>
 <td>
-SortTextAscending<br/><br/></td><td>
-Sort A to Z<br/><br/></td></tr>
+SortTextAscending</td><td>
+Sort A to Z</td></tr>
 <tr>
 <td>
-SortTextDescending<br/><br/></td><td>
-Sort Z to A<br/><br/></td></tr>
+SortTextDescending</td><td>
+Sort Z to A</td></tr>
 <tr>
 <td>
-SortDateOldest<br/><br/></td><td>
-Sort By Oldest<br/><br/></td></tr>
+SortDateOldest</td><td>
+Sort By Oldest</td></tr>
 <tr>
 <td>
-SortDateNewest<br/><br/></td><td>
-Sort By Newest<br/><br/></td></tr>
+SortDateNewest</td><td>
+Sort By Newest</td></tr>
 <tr>
 <td>
-SortByColor<br/><br/></td><td>
-Sort By Color<br/><br/></td></tr>
+SortByColor</td><td>
+Sort By Color</td></tr>
 <tr>
 <td>
-SortByCellColor<br/><br/></td><td>
-Sort By Cell Color<br/><br/></td></tr>
+SortByCellColor</td><td>
+Sort By Cell Color</td></tr>
 <tr>
 <td>
-SortByFontColor:<br/><br/></td><td>
-Sort By Font Color:<br/><br/></td></tr>
+SortByFontColor:</td><td>
+Sort By Font Color:</td></tr>
 <tr>
 <td>
-FilterByColor<br/><br/></td><td>
-Filter By Color<br/><br/></td></tr>
+FilterByColor</td><td>
+Filter By Color</td></tr>
 <tr>
 <td>
-SortColorOptions:<br/><br/></td><td>
-[{ id: 1, background:"#FFFFFF"}, {id: 2, background:"#5EABDA"}],<br/><br/></td></tr>
+SortColorOptions:</td><td>
+[{ id: 1, background:"#FFFFFF"}, {id: 2, background:"#5EABDA"}],</td></tr>
 <tr>
 <td>
-CustomSort<br/><br/></td><td>
-Custom Sort<br/><br/></td></tr>
+CustomSort</td><td>
+Custom Sort</td></tr>
 <tr>
 <td>
-FilterColorOptions<br/><br/></td><td>
-{ id: 1, background:"#FFFFFF"}, {id: 2, background:"#5EABDA"}],<br/><br/></td></tr>
+FilterColorOptions</td><td>
+{ id: 1, background:"#FFFFFF"}, {id: 2, background:"#5EABDA"}],</td></tr>
 <tr>
 <td>
-FilterByCellColor<br/><br/></td><td>
-Filter By Cell Color<br/><br/></td></tr>
+FilterByCellColor</td><td>
+Filter By Cell Color</td></tr>
 <tr>
 <td>
-FilterByFontColor<br/><br/></td><td>
-Filter By Font Color<br/><br/></td></tr>
+FilterByFontColor</td><td>
+Filter By Font Color</td></tr>
 <tr>
 <td>
-ClearFilter<br/><br/></td><td>
-Clear Filter<br/><br/></td></tr>
+ClearFilter</td><td>
+Clear Filter</td></tr>
 <tr>
 <td>
-NumberFilter<br/><br/></td><td>
-Number Filter<br/><br/></td></tr>
+NumberFilter</td><td>
+Number Filter</td></tr>
 <tr>
 <td>
-TextFilter<br/><br/></td><td>
-Text Filter<br/><br/></td></tr>
+TextFilter</td><td>
+Text Filter</td></tr>
 <tr>
 <td>
-DateFilter<br/><br/></td><td>
-Date Filter<br/><br/></td></tr>
+DateFilter</td><td>
+Date Filter</td></tr>
 <tr>
 <td>
-StringMenuOptions<br/><br/></td><td>
-[<br/><br/>{ text:"Equal",value:"equal"},<br/><br/>{ text:"Not Equal", value:"notequal"},<br/><br/>{ text:"Starts With",value:"startswith"}, <br/><br/>{ text:"Ends With",value:"endswith"},<br/><br/>{ text:"Contains",value:"contains"}, <br/><br/>{text:"Custom Filter", value:"customfilter"}],<br/><br/></td></tr>
+StringMenuOptions</td><td>
+[{ text:"Equal",value:"equal"},{ text:"Not Equal", value:"notequal"},{ text:"Starts With",value:"startswith"}, { text:"Ends With",value:"endswith"},{ text:"Contains",value:"contains"}, {text:"Custom Filter", value:"customfilter"}],</td></tr>
 <tr>
 <td>
-NumberMenuOptions<br/><br/></td><td>
-[<br/><br/>{text:"Equal",value:"equal"}, <br/><br/>{text:"Not Equal",value:"notequal"}, <br/><br/>{ text:"Less Than",value:"lessthan"}, <br/><br/>{text:"Less Than Or Equal", value:"lessthanorequal"}, <br/><br/>{text:"Greater Than",value:"greaterthan"},<br/><br/>{ text:"Greater Than Or Equal", value:"greaterthanorequal"}, <br/><br/>{ text:"Between",value:"between"},<br/><br/>{ text:"Custom Filter", value:"customfilter"}]<br/><br/></td></tr>
+NumberMenuOptions</td><td>
+[{text:"Equal",value:"equal"}, {text:"Not Equal",value:"notequal"}, { text:"Less Than",value:"lessthan"}, {text:"Less Than Or Equal", value:"lessthanorequal"}, {text:"Greater Than",value:"greaterthan"},{ text:"Greater Than Or Equal", value:"greaterthanorequal"}, { text:"Between",value:"between"},{ text:"Custom Filter", value:"customfilter"}]</td></tr>
 <tr>
 <td>
-DateMenuOptions<br/><br/></td><td>
-[<br/><br/>{ text:"Equal", value:"equal"}<br/><br/>, {text:"Not Equal",value:"notequal"},<br/><br/>{text:"Less Than",>value:"lessthan"}, <br/><br/>{text:"Less Than Or Equal",value:"lessthanorequal"}, <br/><br/>{text:"Greater Than",value:"greaterthan"},<br/><br/>{text:"Greater Than Or Equal", value:"greaterthanorequal"}, <br/><br/>{ text:"Between",value:"between"},<br/><br/>{ text:"Custom Filter", value:"customfilter"}]<br/><br/></td></tr>
+DateMenuOptions</td><td>
+[{ text:"Equal", value:"equal"}, {text:"Not Equal",value:"notequal"},{text:"Less Than",>value:"lessthan"}, {text:"Less Than Or Equal",value:"lessthanorequal"}, {text:"Greater Than",value:"greaterthan"},{text:"Greater Than Or Equal", value:"greaterthanorequal"}, { text:"Between",value:"between"},{ text:"Custom Filter", value:"customfilter"}]</td></tr>
 <tr>
 <td>
-Top10MenuOptions<br/><br/></td><td>
-[{ <br/><br/>text:"Top", <br/><br/>value:"top"<br/><br/>},<br/><br/>{<br/><br/>text:"Bottom", <br/><br/>value:"bottom"<br/><br/>}]<br/><br/></td></tr>
+Top10MenuOptions</td><td>
+[{ text:"Top", value:"top"},{text:"Bottom", value:"bottom"}]</td></tr>
 <tr>
 <td>
-title<br/><br/></td><td>
-Custom Filter<br/><br/></td></tr>
+title</td><td>
+Custom Filter</td></tr>
 <tr>
 <td>
-PredicateOr<br/><br/></td><td>
-OR<br/><br/></td></tr>
+PredicateOr</td><td>
+OR</td></tr>
 <tr>
 <td>
-Ok<br/><br/></td><td>
-Ok<br/><br/></td></tr>
+Ok</td><td>
+Ok</td></tr>
 <tr>
 <td>
-MathCase<br/><br/></td><td>
-Match Case<br/><br/></td></tr>
+MathCase</td><td>
+Match Case</td></tr>
 <tr>
 <td>
-Cancel<br/><br/></td><td>
-Cancel<br/><br/></td></tr>
+Cancel</td><td>
+Cancel</td></tr>
 <tr>
 <td>
-NoResult<br/><br/></td><td>
-No Match Found<br/><br/></td></tr>
+NoResult</td><td>
+No Match Found</td></tr>
 <tr>
 <td>
-CheckBoxStatusMsg<br/><br/></td><td>
-Not all items showing<br/><br/></td></tr>
+CheckBoxStatusMsg</td><td>
+Not all items showing</td></tr>
 <tr>
 <td>
-DatePickerWaterMark<br/><br/></td><td>
-Select date<br/><br/></td></tr>
+DatePickerWaterMark</td><td>
+Select date</td></tr>
 <tr>
 <td>
-True<br/><br/></td><td>
-True<br/><br/></td></tr>
+True</td><td>
+True</td></tr>
 <tr>
 <td>
-False<br/><br/></td><td>
-False<br/><br/></td></tr>
+False</td><td>
+False</td></tr>
 <tr>
 <td>
-Search<br/><br/></td><td>
-Search<br/><br/></td></tr>
+Search</td><td>
+Search</td></tr>
 <tr>
 <td>
-DatePickerWaterMark<br/><br/></td><td>
-Select date<br/><br/></td></tr>
+DatePickerWaterMark</td><td>
+Select date</td></tr>
 <tr>
 <td>
-EmptyDataSource<br/><br/></td><td>
-DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid<br/><br/></td></tr>
+EmptyDataSource</td><td>
+DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid</td></tr>
 <tr>
 <td>
-True<br/><br/></td><td>
-True<br/><br/></td></tr>
+True</td><td>
+True</td></tr>
 <tr>
 <td>
-False<br/><br/></td><td>
-False<br/><br/></td></tr>
+False</td><td>
+False</td></tr>
 </table>
 Please find the code
 

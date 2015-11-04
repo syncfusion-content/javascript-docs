@@ -16,75 +16,75 @@ Please find the below table for default context menu items and its actions.
 
 <table>
 <tr>
-<td>
-Section<br/><br/></td><td>
-Context menu items<br/><br/></td><td>
-Action<br/><br/></td></tr>
+<th>
+Section</th><th>
+Context menu items</th><th>
+Action</th></tr>
 <tr>
 <td>
-Header <br/><br/></td><td>
-Sort in Ascending Order<br/><br/></td><td>
-Sort column in Ascending order<br/><br/></td></tr>
+Header </td><td>
+Sort in Ascending Order</td><td>
+Sort column in Ascending order</td></tr>
 <tr>
 <td>
-<br/><br/></td><td>
-Sort in Descending Order<br/><br/></td><td>
-Sort column in Descending order<br/><br/></td></tr>
+</td><td>
+Sort in Descending Order</td><td>
+Sort column in Descending order</td></tr>
 <tr>
 <td>
-<br/><br/></td><td>
-Group<br/><br/></td><td>
-Group the current column<br/><br/></td></tr>
+</td><td>
+Group</td><td>
+Group the current column</td></tr>
 <tr>
 <td>
-<br/><br/></td><td>
-Ungroup<br/><br/></td><td>
-Ungroup the current column if already grouped<br/><br/></td></tr>
+</td><td>
+Ungroup</td><td>
+Ungroup the current column if already grouped</td></tr>
 <tr>
 <td>
-Body<br/><br/></td><td>
-Add Record<br/><br/></td><td>
-Start Add new record<br/><br/></td></tr>
+Body</td><td>
+Add Record</td><td>
+Start Add new record</td></tr>
 <tr>
 <td>
-<br/><br/></td><td>
-Edit Record<br/><br/></td><td>
-Start Edit in current record<br/><br/></td></tr>
+</td><td>
+Edit Record</td><td>
+Start Edit in current record</td></tr>
 <tr>
 <td>
-<br/><br/></td><td>
-Delete Record<br/><br/></td><td>
-Delete the current record<br/><br/></td></tr>
+</td><td>
+Delete Record</td><td>
+Delete the current record</td></tr>
 <tr>
 <td>
-<br/><br/></td><td>
-Save<br/><br/></td><td>
-Save the record if Add/Edit record is started<br/><br/></td></tr>
+</td><td>
+Save</td><td>
+Save the record if Add/Edit record is started</td></tr>
 <tr>
 <td>
-<br/><br/></td><td>
-Cancel<br/><br/></td><td>
-Cancel Added/Edited state<br/><br/></td></tr>
+</td><td>
+Cancel</td><td>
+Cancel Added/Edited state</td></tr>
 <tr>
 <td>
-Pager<br/><br/></td><td>
-Next Page<br/><br/></td><td>
-Go to Next Page<br/><br/></td></tr>
+Pager</td><td>
+Next Page</td><td>
+Go to Next Page</td></tr>
 <tr>
 <td>
-<br/><br/></td><td>
-Last Page<br/><br/></td><td>
-Go to Last page<br/><br/></td></tr>
+</td><td>
+Last Page</td><td>
+Go to Last page</td></tr>
 <tr>
 <td>
-<br/><br/></td><td>
-Previous page<br/><br/></td><td>
-Go to previous page<br/><br/></td></tr>
+</td><td>
+Previous page</td><td>
+Go to previous page</td></tr>
 <tr>
 <td>
-<br/><br/></td><td>
-First page<br/><br/></td><td>
-Go to first page<br/><br/></td></tr>
+</td><td>
+First page</td><td>
+Go to first page</td></tr>
 </table>
 
 
