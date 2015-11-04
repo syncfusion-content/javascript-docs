@@ -1675,8 +1675,8 @@ $("#tab").ejTab("show");
 
 
 
-### active
-{:#events:active}
+### itemActive
+{:#events:itemActive}
 
 
 
