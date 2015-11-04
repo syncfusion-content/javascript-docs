@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection
 
-[Selection](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "Selection") provides an interactive support to highlight the row, cell or column that you select. Selection can be done through simple Mouse down or Keyboard interaction. To enable selection, set [`allowSelection`](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "allowSelection") as `true`. 
+Selection provides an interactive support to highlight the row, cell or column that you select. Selection can be done through simple Mouse down or Keyboard interaction. To enable selection, set [`allowSelection`](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "allowSelection") as `true`. 
 
 ## Types of Selection
 
@@ -18,17 +18,17 @@ There are two types of selections available in grid. They are
 1. Single 
 2. Multiple 
 
-Single Selection
+### Single Selection
 
-[Single](http://help.syncfusion.com/js/api/ejgrid#members:selectiontype "Single") selection is an interactive support to select a specific row, cell or column in grid by mouse or keyboard interactions. To enable single selection by setting [`selectionType`](http://help.syncfusion.com/js/api/ejgrid#members:selectiontype "selectionType") property as `single` and also set [`allowSelection`](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "allowSelection") property as `true`.
+Single selection is an interactive support to select a specific row, cell or column in grid by mouse or keyboard interactions. To enable single selection by setting [`selectionType`](http://help.syncfusion.com/js/api/ejgrid#members:selectiontype "selectionType") property as `single` and also set [`allowSelection`](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "allowSelection") property as `true`.
 
-Multiple Selections
+### Multiple Selections
 
-[Multiple](http://help.syncfusion.com/js/api/ejgrid#members:selectiontype "Multiple") selections is an interactive support to select a group of rows, cells or columns in grid by mouse or keyboard interactions. To enable multiple selections by set [`selectionType`](http://help.syncfusion.com/js/api/ejgrid#members:selectiontype "selectionType") property as `multiple` and also set [`allowSelection`](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "allowSelection") property as `true`.
+Multiple selections is an interactive support to select a group of rows, cells or columns in grid by mouse or keyboard interactions. To enable multiple selections by set [`selectionType`](http://help.syncfusion.com/js/api/ejgrid#members:selectiontype "selectionType") property as `multiple` and also set [`allowSelection`](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "allowSelection") property as `true`.
 
-### Row Selection
+## Row Selection
 
-[Row selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "Row selection") is enabled by set [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `row`. For random row selection, press "Ctrl + mouse left" click and for continuous row selection press "Shift + mouse left" click on the grid rows. To unselect selected rows, by press "Ctrl + mouse left" click on selected row.
+Row selection is enabled by set [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `row`. For random row selection, press "Ctrl + mouse left" click and for continuous row selection press "Shift + mouse left" click on the grid rows. To unselect selected rows, by press "Ctrl + mouse left" click on selected row.
 
 The following code example describes the above behavior.
 
@@ -57,9 +57,9 @@ The following output is displayed as a result of the above code example
 ![](selection_images/selection_img1.png)
 
 
-### Cell Selection
+## Cell Selection
 
-[Cell selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "Cell selection") is enabled by set [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `cell`. For random cell selection, press "Ctrl + mouse left" click and for continuous cell selection, press "Shift + mouse left" click on the grid cells. To unselect selected cells, press "Ctrl + mouse left" on selected cell click.
+Cell selection is enabled by set [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `cell`. For random cell selection, press **"Ctrl + mouse left"** click and for continuous cell selection, press **"Shift + mouse left"** click on the grid cells. To unselect selected cells, press **"Ctrl + mouse left"** on selected cell click.
 
 The following code example describes the above behavior.
 
@@ -86,7 +86,7 @@ The following output is displayed as a result of the above code example
 ![](selection_images/selection_img2.png)
 
 
-#### Cell Selection Mode
+### Cell Selection Mode
 
 There are two types of cell selection available in grid. They are
 
@@ -120,9 +120,9 @@ The following output is displayed as a result of the above code example
 ![](selection_images/selection_img3.png)
 
 
-### Column Selection
+## Column Selection
 
-[Column selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "Column selection") can be enabled by setting [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `column`. For random column selection, press "Ctrl + mouse left click" and for continuous column selection, press "Shift + mouse left click" on the top of the column header. To unselect selected columns, press "Ctrl + mouse left click" on top of the selected column header.
+[Column selection](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "Column selection") can be enabled by setting [`selectionMode`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings-selectionmode "selectionMode") property of [`selectionSettings`](http://help.syncfusion.com/js/api/ejgrid#members:selectionsettings "selectionSettings") as `column`. For random column selection, press "Ctrl + mouse left click" and for continuous column selection, press "Shift + mouse left click" on the top of the column header. To unselect selected columns, press **"Ctrl + mouse left click"** on top of the selected column header.
 
 The following code example describes the above behavior.
 

@@ -20,7 +20,7 @@ N> 2. The column which is specified as [`isIdentity`](http://help.syncfusion.com
 
 ## Toolbar with edit option
 
-Using [toolbar](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbar") you can show all the CRUD related action which is rendered at the top of the grid header. To enable toolbar and toolbar items, set [`showToolbar`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") property as true and [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems"). The default toolbar items are `Add`, `Edit`, `Delete`, `Update` and `Cancel`.
+Using toolbar you can show all the CRUD related action which is rendered at the top of the grid header. To enable toolbar and toolbar items, set [`showToolbar`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") property as true and [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems"). The default toolbar items are `Add`, `Edit`, `Delete`, `Update` and `Cancel`.
 
 N> For [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") property you can assign either `string` value ("add") or `enum` value (`ej.Grid.ToolBarItems.Add`).
 
@@ -39,14 +39,15 @@ $(function () {
 		editSettings:{ allowEditing: true, allowAdding: true, allowDeleting: true},
 		allowPaging : true,
 		columns : [
-			{ field: "OrderID", isPrimaryKey: true },
-			{ field: "CustomerID" },
-			{ field: "EmployeeID" },
-			{ field: "ShipCity" },
-			{ field: "ShipCountry" }
-		]
-	});
+					{ field: "OrderID", isPrimaryKey: true },
+					{ field: "CustomerID" },
+					{ field: "EmployeeID" },
+					{ field: "ShipCity" },
+					{ field: "ShipCountry" }
+				]
+		});
 });
+
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -73,19 +74,19 @@ The following table describes [`editType`](http://help.syncfusion.com/js/api/ejg
 
 <table>
 <tr>
-<td>
-EditType<br/><br/></td><td>
-EditParams<br/><br/></td><td>
-Example<br/><br/></td></tr>
+<th>
+EditType<br/><br/></th><th>
+EditParams<br/><br/></th><th>
+Example<br/><br/></th></tr>
 <tr>
 <td>
 CheckBox<br/><br/></td><td>
-{{'[http://help.syncfusion.com/js/api/ejcheckbox](http://help.syncfusion.com/js/api/ejcheckbox#"")'' markdownify }} <br/><br/></td><td>
+{{[`ejCheckBox`](http://help.syncfusion.com/js/api/ejcheckbox# "checkbox")'' markdownify }} <br/><br/></td><td>
 editParams: { checked: true }<br/><br/></td></tr>
 <tr>
 <td>
 NumericTextBox <br/><br/></td><td>
-{{'[http://help.syncfusion.com/js/api/ejtextboxes](http://help.syncfusion.com/js/api/ejtextboxes#"")'' markdownify }} <br/><br/></td><td>
+{{[ejTextBoxes](http://help.syncfusion.com/js/api/ejtextboxes# "textbox")'' markdownify }} <br/><br/></td><td>
 editParams: { decimalPlaces: 2, value:5  }<br/><br/></td></tr>
 <tr>
 <td>
@@ -95,17 +96,17 @@ InputTextBox <br/><br/></td><td>
 <tr>
 <td>
 DatePicker <br/><br/></td><td>
-{{'[http://help.syncfusion.com/js/api/ejdatepicker](http://help.syncfusion.com/js/api/ejdatepicker#"")'' markdownify }} <br/><br/></td><td>
+{{'[ejDatePicker](http://help.syncfusion.com/js/api/ejdatepicker# "datapicker")'' markdownify }} <br/><br/></td><td>
 editParams: {  buttonText : "Now" }<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 DateTimePicker<br/><br/></td><td>
-{{'[http://help.syncfusion.com/js/api/ejdatetimepicker](http://help.syncfusion.com/js/api/ejdatetimepicker#"")'' markdownify }} <br/><br/></td><td>
+{{'[ejDateTimePicker](http://help.syncfusion.com/js/api/ejdatetimepicker# "datetimepicker")'' markdownify }} <br/><br/></td><td>
 editParams: {  enabled: true }<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 DropDownList<br/><br/></td><td>
-{{'[http://help.syncfusion.com/js/api/ejdropdownlist](http://help.syncfusion.com/js/api/ejdropdownlist#"")'' markdownify }} <br/><br/></td><td>
+{{'[ejDropDownList](http://help.syncfusion.com/js/api/ejdropdownlist# "dropdownlist")'' markdownify }} <br/><br/></td><td>
 editParams: {  allowGrouping: true }<br/><br/><br/><br/></td></tr>
 </table>
 N> 1. If [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") is not set then by default it will display the input element ("stringedit") while editing a column.
@@ -126,16 +127,16 @@ $(function () {
 		editSettings:{ allowEditing: true, allowAdding: true, allowDeleting: true},
 		allowPaging : true,
 		columns : [
-			{ field: "OrderID", isPrimaryKey: true },
-			{ field: "CustomerID", editType: "stringedit" },
-			{ field: "Freight", editType: "numericedit", editParams: { decimalPlaces: 2 } },
-			{ field: "ShipCity", editType: "dropdownedit", editParams: { enableAnimation: true } },
-			{ field: "ShipCountry" },
-			{ field: "OrderDate", editType: "datepicker", format: "{0:MM/dd/yyyy}", editParams: { buttonText: "Now" } },
-			{ field: "Verified", editType: "booleanedit", editParams: { showRoundedCorner: true } }
-		]
+					{ field: "OrderID", isPrimaryKey: true },
+					{ field: "CustomerID", editType: "stringedit" },
+					{ field: "Freight", editType: "numericedit", editParams: { decimalPlaces: 2 } },
+					{ field: "ShipCity", editType: "dropdownedit", editParams: { enableAnimation: true } },
+					{ field: "ShipCountry" },
+					{ field: "OrderDate", editType: "datepicker", format: "{0:MM/dd/yyyy}", editParams: { buttonText: "Now" } },
+					{ field: "Verified", editType: "booleanedit", editParams: { showRoundedCorner: true } }
+			]
+		});
 	});
-});
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -166,15 +167,15 @@ $(function () {
 		editSettings:{ allowEditing: true, allowAdding: true, allowDeleting: true},
 		allowPaging : true,
 		columns : [
-			{ field: "OrderID", isPrimaryKey: true },
-			{ field: "CustomerID" },
-			{ field: "Freight" },
-			{ field: "ShipCountry" },
-			{
-				field : "ShipPostalCode",
-				editTemplate : {
+					{ field: "OrderID", isPrimaryKey: true },
+					{ field: "CustomerID" },
+					{ field: "Freight" },
+					{ field: "ShipCountry" },
+					{
+						field : "ShipPostalCode",
+					editTemplate : {
 					create : function () {
-						return "<input>";
+							return "<input>";
 					},
 					read : function (args) {
 						return args.ejMaskEdit("get_UnstrippedValue");
@@ -293,9 +294,8 @@ While using template form, you can change the HTML elements in it to appropriate
 
 N> 1. `value`, attribute is used to bind the corresponding field value while editing.
 N> 2. `name`, attribute is used to get the changed field values while save the edited record.
-
-1. It's a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender".
-2. For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("inlineformtemplate") or `enum` value (`ej.Grid.EditMode.InlineTemplateForm`)
+N> 3.  It's a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender".
+N> 4.  For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("inlineformtemplate") or `enum` value (`ej.Grid.EditMode.InlineTemplateForm`) 
 
 The following code example describes the above behaviour.
 
@@ -371,8 +371,13 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img6.png)
 
+{:caption}
+Before the template elements are converted to JS controls
+
 
 ![](Editing_images/Editing_img7.png)
+{:caption}
+After the template elements are converted to JS controls using actionComplete event 
 
 
 ### Dialog
@@ -504,10 +509,12 @@ function complete(args) {
 The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img9.png)
-
+{:caption}
+Before the template elements are converted to JS controls
 
 ![](Editing_images/Editing_img10.png)
-
+{:caption}
+After the template elements are converted to JS controls using actionComplete event 
 
 ### External Form
 
@@ -834,6 +841,8 @@ The below validation script files are needed when editing is enabled with valida
 
  jquery.validate.min.js
  jquery.validate.unobtrusive.min.js
+ 
+ 
 ### Jquery Validation
 
 
@@ -1017,7 +1026,7 @@ In the below section, we have explained about how to get the edited data details
 
 For you information ODataAdaptor persist date in server as OData protocol.
 
-URL Adaptor
+### URL Adaptor
 
 You can use the `UrlAdaptor` of [`ejDataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "ejDataManger") when binding datasource from remote data. At initial load of Grid, using URL property of DataManager, data are fetched from remote data and binded to Grid. You can map CRUD operation in Grid to Server-Side Controller action using the properties `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl` and `batchUrl`.
 
@@ -1102,55 +1111,96 @@ And also using "DataOperations" class methods you can perform grid action in ser
  PerformSelect
  Execute
 
-Accessing CRUD action request details in server side:
+#### Accessing CRUD action request details in server side:
 
 The "Server-Side" function must be declared with the following parameter name for each editing functionality.
 
 __Parameters__ __Table__
 
 <table>
-<tr>
-<td>
-Action<br/><br/></td><td>
-Parameter Name<br/><br/></td><td>
-Example<br/><br/></td></tr>
-<tr>
-<td>
-Update,Insert<br/><br/></td><td>
-value<br/><br/></td><td>
-public ActionResult Update(EditableOrder value){ }<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-public ActionResult Insert(EditableOrder value){ }<br/><br/></td></tr>
-<tr>
-<td>
-Remove<br/><br/></td><td>
-key<br/><br/></td><td>
-public ActionResult Remove(int key){ }<br/><br/></td></tr>
-<tr>
-<td>
-Batch Add<br/><br/></td><td>
-added<br/><br/></td><td>
-public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key){ }<br/><br/></td></tr>
-<tr>
-<td>
-Batch Update<br/><br/></td><td>
-changed<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
-Batch Delete<br/><br/></td><td>
-deleted<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
-Crud Update,<br/><br/>Crud Remove,<br/><br/>Crud Insert<br/><br/></td><td>
-value, action<br/><br/></td><td>
-public ActionResult CrudUrl(EditableOrder value, string action){ }<br/><br/></td></tr>
-</table>
-Insert Record:
+        <tr>
+            <th>
+                Action<br /><br />
+            </th>
+            <th>
+                Parameter Name<br /><br /></th>
+            <th>
+                Example<br /><br />
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                Update,Insert<br /><br />
+            </td>
+            <td>
+                value<br /><br />
+            </td>
+            <td>
+                public ActionResult Update(EditableOrder value){ }<br /><br />
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                public ActionResult Insert(EditableOrder value){ }<br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Remove<br /><br />
+            </td>
+            <td>
+                key<br /><br />
+            </td>
+            <td>
+                public ActionResult Remove(int key){ }<br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Batch Add<br /><br />
+            </td>
+            <td>
+                added<br /><br />
+            </td>
+            <td rowspan="3">
+                public ActionResult BatchUpdate(string action, List<editableorder> added, List<editableorder> changed, List<editableorder> deleted, int? key){ }<br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Batch Update<br /><br />
+            </td>
+            <td>
+                changed<br /><br />
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                Batch Delete<br /><br />
+            </td>
+            <td>
+                deleted<br /><br />
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                Crud Update,<br /><br />Crud Remove,<br /><br />Crud Insert<br /><br />
+            </td>
+            <td>
+                value, action<br /><br />
+            </td>
+            <td>
+                public ActionResult CrudUrl(EditableOrder value, string action){ }<br /><br />
+            </td>
+        </tr>
+    </table>
+	
+	
+	
+##### Insert Record:
 
 Using `insertUrl` property, you can specify the controller action mapping URL to perform insert operation in server side.
 
@@ -1165,10 +1215,11 @@ public ActionResult Insert(EditableOrder value)
 
 The newly added record details are bound to the "value" parameter. Please refer the below image.
 
+
 ![](Editing_images/Editing_img21.png)
 
 
-Update Record:
+##### Update Record:
 
 Using `updateUrl` property, you can specify the controller action mapping URL to perform save/update operation in server side.
 
@@ -1186,7 +1237,7 @@ The updated record details are bound to the "value" parameter. Please refer the 
 ![](Editing_images/Editing_img22.png)
 
 
-Delete Record:
+##### Delete Record:
 
 Using `removeUrl` property, you can specify the controller action mapping URL to perform delete operation in server side.
 
@@ -1204,7 +1255,7 @@ The deleted record primary key value is bound to the "key" parameter. Please ref
 ![](Editing_images/Editing_img23.png)
 
 
-CRUD URL:
+##### CRUD URL:
 
 Instead of specifying separate controller action method for CRUD (insert, update and delete)operation, using `crudUrl` property you can specify the controller action mapping URL to perform all the CRUD operation in server side using single method.
 
@@ -1260,7 +1311,7 @@ Please refer the below image to know about the action parameter
 
 N> If you specify `insertUrl` along with `CrudUrl` then while adding `insertUrl` only called.
 
-Batch URL:
+##### Batch URL:
 
 The `batchUrl` property supports only for batch editing mode. You can specify the controller action mapping URL to perform Batch operation in server side.
 
@@ -1271,6 +1322,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight js %}
+
 $(function () {
 	$("#Grid").ejGrid({
 		dataSource : ej.DataManager({
@@ -1299,14 +1351,19 @@ $(function () {
 		]
 	});
 });
+
 {% endhighlight %}
 
+
 {% highlight cs %}
+
 public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key)
 {
 	//Save the batch changes in database
 }
+
 {% endhighlight %}
+
 
 Please refer the below image for more information about batch paramaters
 
@@ -1348,6 +1405,7 @@ $(function () {
 		]
 	});
 });
+
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -1402,8 +1460,8 @@ The following output is displayed as a result of the above code example.
 N> 1. If it is remote, then the newly added record is placed based on the index from current view data. 
 N> 2. If it is local, then the newly added record is added at the top of the page even the added new [`rowPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "rowPosition") is mentioned as "bottom".
 
-## Default column values on add new
 
+## Default column values on add new
 
 While adding new record in grid, there is an option to set the default value for the columns. Using [`defaultValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-defaultvalue "defaultValue") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") you can set the default values for that particular column while editing or adding a new row.
 
@@ -1438,6 +1496,7 @@ $(function () {
 	});
 });
 {% endhighlight %}
+
 
 The following output is displayed as a result of the above code example.
 

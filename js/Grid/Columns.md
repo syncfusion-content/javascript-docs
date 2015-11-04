@@ -11,8 +11,8 @@ documentation: ug
 
 Column definitions are used as the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") schema in grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") property of the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") is necessary to map the datasource values in grid columns.
 
-N> 1.The column with [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") which are not in the datasource, then the column values will be displayed as empty.
-N> 2.If the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name contains "dot" then it is considered as complex binding.
+N> 1. The column with [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") which are not in the datasource, then the column values will be displayed as empty.
+N> 2. If the [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") name contains "dot" then it is considered as complex binding.
 
 ## Auto generation
 
@@ -39,7 +39,7 @@ The following output is displayed as a result of the above code example.
 ![](columns_images/columns_img1.png)
 
 
-How to set isPrimaryKey for auto generated columns when editing is enabled:
+### How to set isPrimaryKey for auto generated columns when editing is enabled:
 
 Using [`dataBound`](http://help.syncfusion.com/js/api/ejgrid#events:databound "dataBound") event, you can set [`isPrimaryKey`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isprimarykey "isPrimaryKey") value as `true` by two ways. The following code example demonstrates the above behavior.
 
@@ -93,7 +93,7 @@ $(function () {
 
 ## Headers
 
-HeaderText
+### HeaderText
 
 It represents the title for particular column. To enable header text, set [`headerText`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertext "headerText") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). The following code example describes the above behavior.
 
@@ -127,7 +127,7 @@ The following output is displayed as a result of the above code example.
 ![](columns_images/columns_img2.png)
 
 
-Header Text alignment
+### Header Text alignment
 
 [Align](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertextalign "Align") the header text of column header using [`headerTextAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertextalign "headerTextAlign") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). There are four possible ways to align header text, they are
 
@@ -166,13 +166,13 @@ The following output is displayed as a result of the above code example.
 ![](columns_images/columns_img3.png)
 
 
-Header Template
+### Header Template
 
 The template design that applies on for the column header. To render template, set [`headerTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:columns-headertemplateid "headerTemplateID") property of the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns").
 
 You can use JsRender syntax in the template. For more information about JsRender syntax, please refer [the link](http://www.jsviews.com/#jsrapi "the link").
 
-N> It's a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") within the `script` tag with `type` as "text/x-jsrender".
+N> It's a standard way to enclose the [`template`](http://help.syncfusion.com/js/api/ejgrid#members:columns-template "template") within the `script` tag with `type` as `text/x-jsrender`.
 
 The following code example describes the above behavior.
 
@@ -192,7 +192,7 @@ $(function () {
 		allowPaging : true,
 		columns : [
 			{ field : "OrderID", headerText : "Order ID" },
-			{ field : "EmployeeID", headerTemplateID : "Emp ID < span class = "e-userlogin e-icon employee" >  <  / span > " },
+			{ field : "EmployeeID", headerTemplateID : "#empTemplate" },
 			{ field: "Freight", headerText: "Freight" },
 			{ field: "ShipCountry", headerText: "Country" },
 			{ field: "ShipCity", headerText: "City" }
@@ -215,7 +215,7 @@ You can [align](http://help.syncfusion.com/js/api/ejgrid#members:columns-textali
 3. Center
 4. Justify
 
-N> 1.For [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "textAlign") property you can assign either `string` value ("right") or `enum` value (`ej.TextAlign.Right`).
+N> 1. For [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "textAlign") property you can assign either `string` value ("right") or `enum` value (`ej.TextAlign.Right`).
 N> 2. The [`textAlign`](http://help.syncfusion.com/js/api/ejgrid#members:columns-textalign "textAlign") property will affect both content and header text of the grid.
 
 The following code example describes the above behavior.
@@ -353,7 +353,7 @@ The following output is displayed as a result of the above code example.
 
 ## Auto wrap column
 
-[`allowTextWrap`](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "allowTextWrap") property enables the grid to [wrap](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "wrap") cell content to next line when the content exceeds the boundary of the cell width. 
+[`allowTextWrap`](http://help.syncfusion.com/js/api/ejgrid#members:allowtextwrap "allowTextWrap") property enables the grid to wrap cell content to next line when the content exceeds the boundary of the cell width. 
 
 The following code example describes the above behavior.
 
@@ -386,7 +386,7 @@ The following output is displayed as a result of the above code example.
 
 ## Reorder
 
-[Reordering](http://help.syncfusion.com/js/api/ejgrid#members:allowreordering "Reordering") can be done by drag and drop the particular column header from one index to another index within the grid. Reordering can be enabled by setting [`allowReordering`](http://help.syncfusion.com/js/api/ejgrid#members:allowreordering "allowReordering") property as `true`.
+Reordering can be done by drag and drop the particular column header from one index to another index within the grid. Reordering can be enabled by setting [`allowReordering`](http://help.syncfusion.com/js/api/ejgrid#members:allowreordering "allowReordering") property as `true`.
 
 The following code example describes the above behavior.
 
@@ -413,7 +413,7 @@ The following output is displayed as a result of the above code example.
 
 ## Visibility
 
-You can [hide](http://help.syncfusion.com/js/api/ejgrid#members:columns-visible "hide") particular column in grid view by setting [`visible`](http://help.syncfusion.com/js/api/ejgrid#members:columns-visible "visible") property of it as `false`.
+You can hide particular column in grid view by setting [`visible`](http://help.syncfusion.com/js/api/ejgrid#members:columns-visible "visible") property of it as `false`.
 
 The following code example describes the above behavior.
 
@@ -540,7 +540,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 <script type="text/x-jsrender" id="columnTemplate">
 <!--The image is referred from this location "http://jsplayground.syncfusion.com/13.2.0.29/themes/web/images/employees/1.png" based on EmployeeID-->
-<img style="width: 75px; height: 70px" src="/13.2.0.29/themes/web/images/employees/{{:EmployeeID}}.png" alt="{{: EmployeeID }}" />
+<img style="width: 75px; height: 70px" src="/13.2.0.29/themes/web/images/employees/{{{{}}:EmployeeID}}.png" alt="{{: EmployeeID }}" />
 </script>
 {% endhighlight %}
 
@@ -674,9 +674,9 @@ The following output is displayed as a result of the above code example.
 
 ## Command Column
 
-Default action buttons
+### Default action buttons
 
-Using [`command`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "command") column, you can add CRUD action buttons as one of the grid column, through [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "type") property of [`commands`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "commands"). The type property supports the below default [UnboundType](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "UnboundType") buttons.
+Using [`command`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "command") column, you can add CRUD action buttons as one of the grid column, through [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "type") property of [`commands`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "commands"). The type property supports the below default [`UnboundType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "UnboundType") buttons.
 
 1. edit
 2. save
@@ -727,7 +727,7 @@ The following output is displayed as a result of the above code example.
 ![](columns_images/columns_img17.png)
 
 
-Custom buttons
+### Custom buttons
 
 You can add custom button in the command column by specifying the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands-type "type") property of [`commands`](http://help.syncfusion.com/js/api/ejgrid#members:columns-commands "commands") as "empty" or any other `string` instead of `enum` values.
 
@@ -775,7 +775,7 @@ The following output is displayed as a result of the above code example.
 
 ## Column Chooser
 
-[Column chooser](http://help.syncfusion.com/js/api/ejgrid#members:showcolumnchooser "Column chooser") contains all the columns which are defined in the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") property, using this you can control the visibility of columns in grid. You can prevent to show the particular column in column chooser by setting [`showInColumnChooser`](http://help.syncfusion.com/js/api/ejgrid#members:showcolumnchooser "showInColumnChooser") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") as `false`. It can be shown in the right corner of grid. To enable column chooser, set [`showColumnChooser`](http://help.syncfusion.com/js/api/ejgrid#members:showcolumnchooser "showColumnChooser") property as `true`. 
+Column chooser contains all the columns which are defined in the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") property, using this you can control the visibility of columns in grid. You can prevent to show the particular column in column chooser by setting [`showInColumnChooser`](http://help.syncfusion.com/js/api/ejgrid#members:showcolumnchooser "showInColumnChooser") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") as `false`. It can be shown in the right corner of grid. To enable column chooser, set [`showColumnChooser`](http://help.syncfusion.com/js/api/ejgrid#members:showcolumnchooser "showColumnChooser") property as `true`. 
 
 The following code example describes the above behavior.
 

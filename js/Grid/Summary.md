@@ -15,9 +15,7 @@ Summary rows visibility can be controlled by [`showSummary`](http://help.syncfus
 <div id="Grid"></div>
 <script type="text/javascript">
   $("#Grid").ejGrid({
-  
-      /// the datasource "window.gridData" is referred from jsondata.min.js
-  
+     // the datasource "window.gridData" is referred from jsondata.min.js
       dataSource: window.gridData,
       showSummary: true,
       summaryRows: [{
@@ -28,11 +26,8 @@ Summary rows visibility can be controlled by [`showSummary`](http://help.syncfus
               dataMember: "Freight",
               format: "{0:C2}"
           }]
-  
       }],
-  
       allowPaging: true,
-  
       columns: [
           { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
           {field: "EmployeeID",headerText: "Employee ID",editType: ej.Grid.EditingType.NumericEdit,textAlign: ej.TextAlign.Right,width: 80 },
@@ -40,7 +35,6 @@ Summary rows visibility can be controlled by [`showSummary`](http://help.syncfus
           {field: "ShipCountry",headerText: "Ship Country", width: 100},
           { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" }
       ]
-  
   });
   
 </script>
@@ -172,7 +166,7 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
 
 ### Custom Summary
 
-To enable Custom Summary, [`summaryType`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom'](http://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and `value` property need to define as function. In this property `value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation returned value will display in corresponding Summary cell. 
+To enable Custom Summary, [`summaryType`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](http://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and `value` property need to define as function. In this property `value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation returned value will display in corresponding Summary cell. 
 
 {% highlight html %}
 
@@ -259,7 +253,7 @@ To show summary rows at the end of each Group, set the [`showTotalSummary`](http
 ![](Summary_images/summaryGrid_img5.png)
 
 
-W> [Minimum one column should be grouped to show summary details].
+W> Minimum one column should be grouped to show summary details.
 
 ## Group Caption Summary
 
@@ -304,7 +298,7 @@ To show summaries at each group's Caption row, particular summary row definition
 ![](Summary_images/summaryGrid_img6.png)
 
 
-W>[ Minimum one column should be grouped to show summary details].
+W> Minimum one column should be grouped to show summary details.
 
 ## Format
 

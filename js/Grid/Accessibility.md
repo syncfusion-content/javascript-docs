@@ -16,9 +16,9 @@ Supported Keyboard Interactions keys with description which are in Grid
 
 <table>
 <tr>
-<td>
-Interaction Keys<br/><br/></td><td>
-Description<br/><br/></td></tr>
+<th>
+Interaction Keys<br/><br/></th><th>
+Description<br/><br/></th></tr>
 <tr>
 <td>
 Alt + j<br/><br/></td><td>

@@ -9,7 +9,7 @@ documentation: ug
 
 # Grouping
 
-[Grouping](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "Grouping") is a collection of records that belong to particular category. When grouping is applied, the data is organized into a hierarchical structure based on corresponding column values. To enable grouping, set [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "allowGrouping") property as `true`.
+Grouping is a collection of records that belong to particular category. When grouping is applied, the data is organized into a hierarchical structure based on corresponding column values. To enable grouping, set [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "allowGrouping") property as `true`.
 
 Columns can be grouped by simply dragging the column header and drop on the group drop area or simply click the group button which is displayed in the column. By default, sorting is done while grouping the column.
 

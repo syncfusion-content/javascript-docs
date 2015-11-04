@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Filter
+title: filter
 description: filter
 platform: js
 control: Grid
 documentation: ug
 --- 
-
 # Filter 
 
 Filtering helps to view particular or related records from datasource which meets a given filtering criteria. To enable filter, set `allowFiltering` as `true`. 
@@ -90,16 +89,20 @@ $(function () {
 The following output is displayed as a result of the above code example.
 
 ![](filtering_images/filtering_img2.png)
-
+{:caption}
+Numeric Filter
 
 ![](filtering_images/filtering_img3.png)
-
+{:caption}
+String Filter
 
 ![](filtering_images/filtering_img4.png)
-
+{:caption}
+Date Filter
 
 ![](filtering_images/filtering_img5.png)
 
+Boolean Filter
 
 ## Excel-like filter
 
@@ -202,69 +205,140 @@ List of Filter bar Expressions:
 
 You can enter the below filtering expressions manually in the filter bar.
 
-<table>
-<tr>
-<td>
-Expression<br/><br/></td><td>
-Example<br/><br/></td><td>
-Description<br/><br/></td><td>
-Column Type<br/><br/></td></tr>
-<tr>
-<td>
-=<br/><br/></td><td>
-= value<br/><br/></td><td>
-equal<br/><br/></td><td>
-Numeric<br/><br/></td></tr>
-<tr>
-<td>
-!= <br/><br/></td><td>
-!= value<br/><br/></td><td>
-notequal<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
-><br/><br/></td><td>
-> value<br/><br/></td><td>
-greaterthan<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
-<<br/><br/></td><td>
-< value<br/><br/></td><td>
-lessthan<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
->=<br/><br/></td><td>
->= value<br/><br/></td><td>
-greaterthanorequal<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
-<=<br/><br/></td><td>
-<= value<br/><br/></td><td>
-lessthanorequal<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
-N/A<br/><br/></td><td>
-N/A<br/><br/></td><td>
-Always `startswith` operator will be used for string filter<br/><br/></td><td>
-String<br/><br/></td></tr>
-<tr>
-<td>
-N/A<br/><br/></td><td>
-N/A<br/><br/></td><td>
-Always `equal` operator will be used for Date filter <br/><br/></td><td>
-Date<br/><br/></td></tr>
-<tr>
-<td>
-N/A<br/><br/></td><td>
-N/A<br/><br/></td><td>
-Always `equal` operator will be used for Boolean filter<br/><br/></td><td>
-Boolean<br/><br/></td></tr>
-</table>
-
+ <table>
+        <tr>
+            <th>
+                Expression<br /><br />
+            </th>
+            <th>
+                Example<br /><br />
+            </th>
+            <th>
+                Description<br /><br />
+            </th>
+            <th>
+                Column Type<br /><br />
+            </th>
+        </tr>
+        <tr>
+            <td>
+                =<br /><br />
+            </td>
+            <td>
+                = value<br /><br />
+            </td>
+            <td>
+                equal<br /><br />
+            </td>
+            <td rowspan="5">
+                Numeric<br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                != <br /><br />
+            </td>
+            <td>
+                != value<br /><br />
+            </td>
+            <td>
+                notequal<br /><br />
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                ><br /><br />
+            </td>
+            <td>
+                > value<br /><br />
+            </td>
+            <td>
+                greaterthan<br /><br />
+            </td>
+          
+        </tr>
+        <tr>
+            <td>
+                <<br /><br />
+            </td>
+            <td>
+                < value<br /><br />
+            </td>
+            <td>
+                lessthan<br /><br />
+            </td>
+          
+        </tr>
+        <tr>
+            <td>
+                >=<br /><br />
+            </td>
+            <td>
+                >= value<br /><br />
+            </td>
+            <td>
+                greaterthanorequal<br /><br />
+            </td>
+           >
+        </tr>
+        <tr>
+            <td>
+                <=<br /><br />
+            </td>
+            <td>
+                <= value<br /><br />
+            </td>
+            <td>
+                lessthanorequal<br /><br />
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                N/A<br /><br />
+            </td>
+            <td>
+                N/A<br /><br />
+            </td>
+            <td>
+                Always `startswith` operator will be used for string filter<br /><br />
+            </td>
+            <td>
+                String<br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                N/A<br /><br />
+            </td>
+            <td>
+                N/A<br /><br />
+            </td>
+            <td>
+                Always `equal` operator will be used for Date filter <br /><br />
+            </td>
+            <td>
+                Date<br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                N/A<br /><br />
+            </td>
+            <td>
+                N/A<br /><br />
+            </td>
+            <td>
+                Always `equal` operator will be used for Boolean filter<br /><br />
+            </td>
+            <td>
+                Boolean<br /><br />
+            </td>
+        </tr>
+    </table>
+	
+	
 The following code example describes the above behavior.
 
 {% highlight html %}
@@ -333,84 +407,134 @@ The grid controls uses filter operators from [`ej.DataManager`](http://help.sync
 List of Column type and Filter operators
 
 <table>
-<tr>
-<td>
-Column Type<br/><br/></td><td>
-Filter Operators<br/><br/></td></tr>
-<tr>
-<td>
-Number<br/><br/></td><td>
-ej.FilterOperators.greaterThan<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.greaterThanOrEqual<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.lessThan<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.lessThanOrEqual<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.equal<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.notEqual<br/><br/></td></tr>
-<tr>
-<td>
-String<br/><br/></td><td>
-ej.FilterOperators.startsWith<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.endsWith<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.contains<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.equal<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.notEqual<br/><br/></td></tr>
-<tr>
-<td>
-Boolean<br/><br/></td><td>
-ej.FilterOperators.equal<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.notEqual<br/><br/></td></tr>
-<tr>
-<td>
-Date<br/><br/></td><td>
-ej.FilterOperators.greaterThan<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.greaterThanOrEqual<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.lessThan<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.lessThanOrEqual<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.equal<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-ej.FilterOperators.notEqual<br/><br/></td></tr>
-</table>
+        <tr>
+            <th>
+                Column Type<br /><br />
+            </th>
+            <th>
+                Filter Operators<br /><br />
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="6">
+                Number<br /><br />
+            </td>
+            <td>
+                ej.FilterOperators.greaterThan<br /><br />
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                ej.FilterOperators.greaterThanOrEqual<br /><br />
+            </td>
+        </tr>
+        <tr>
+       
+            <td>
+                ej.FilterOperators.lessThan<br /><br />
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                ej.FilterOperators.lessThanOrEqual<br /><br />
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                ej.FilterOperators.equal<br /><br />
+            </td>
+        </tr>
+        <tr>
+          >
+            <td>
+                ej.FilterOperators.notEqual<br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="5">
+                String<br /><br />
+            </td>
+            <td>
+                ej.FilterOperators.startsWith<br /><br />
+            </td>
+        </tr>
+        <tr>
+          
+            <td>
+                ej.FilterOperators.endsWith<br /><br />
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                ej.FilterOperators.contains<br /><br />
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                ej.FilterOperators.equal<br /><br />
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                ej.FilterOperators.notEqual<br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                Boolean<br /><br />
+            </td>
+            <td>
+                ej.FilterOperators.equal<br /><br />
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                ej.FilterOperators.notEqual<br /><br />
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="6">
+                Date<br /><br />
+            </td>
+            <td>
+                ej.FilterOperators.greaterThan<br /><br />
+            </td>
+        </tr>
+        <tr>
+            
+            <td>
+                ej.FilterOperators.greaterThanOrEqual<br /><br />
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                ej.FilterOperators.lessThan<br /><br />
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                ej.FilterOperators.lessThanOrEqual<br /><br />
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                ej.FilterOperators.equal<br /><br />
+            </td>
+        </tr>
+        <tr>
+          
+            <td>
+                ej.FilterOperators.notEqual<br /><br />
+            </td>
+        </tr>
+    </table>

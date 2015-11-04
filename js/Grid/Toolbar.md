@@ -16,9 +16,9 @@ The following table shows default toolbar items and its action.
 
 <table>
 <tr>
-<td>
-Default toolbar items<br/><br/></td><td>
-Action<br/><br/></td></tr>
+<th>
+Default toolbar items<br/><br/></th><th>
+Action<br/><br/></th></tr>
 <tr>
 <td>
 Add<br/><br/></td><td>
