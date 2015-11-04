@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Export
 
-To export grid, `export` method should  be called with export mapper as parameter. To make it work from toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in `toolbarSettings.toolbarItems` property and equivalent server action mapper should be defined in `exportToExcelAction`, `exportToWordAction`, and `exportToPdfAction` properties. The code snippet for this is
+To export the grid, `export` method should  be called with export mapper as parameter. To make it work from the grid toolbar, `ExcelExport`, `WordExport` and `PdfExport` toolbar items needs to be added in `toolbarSettings.toolbarItems` property and equivalent server action mapper should be defined in `exportToExcelAction`, `exportToWordAction`, and `exportToPdfAction` properties. The code snippet for this is
 
 {% highlight html %}
 <div id="Grid"></div>

@@ -9,7 +9,7 @@ documentation: ug
 
 # Data binding
 
-Grid uses [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview# "ej.DataManager") which supports both RESTful JSON data services binding and local JSON array binding.  The [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property can be assigned either with the instance of [`ej.DataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") or JSON data array collection. It supports different kinds of databinding methods such as
+The Grid control uses [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview# "ej.DataManager") which supports both RESTful JSON data services binding and local JSON array binding.  The [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property can be assigned either with the instance of [`ej.DataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") or JSON data array collection. It supports different kinds of databinding methods such as
 
 1. Local data
 2. Remote data
@@ -19,7 +19,7 @@ Grid uses [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overvie
 ## Local Data
 
 
-To bind local data to the grid, you can assign a JSON array to the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property.
+To bind local data to the Grid, you can assign a JSON array to the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property.
 
 The following code example describes the above behavior.
 
@@ -51,30 +51,19 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
-
-
-
 {% endhighlight %}
 
 {% highlight js %}
 	$(function () {
 
 			$("#Grid").ejGrid({
-
 			// the datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
-
 				dataSource: ej.DataManager(window.gridData),
-
 				allowPaging: true,
-
 				columns: ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
-
 		});
 
 	});
-
-
-
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -102,24 +91,16 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight js %}
-		$(function () {
+	$(function () {
 
-			var dm =ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
-
-				$("#Grid").ejGrid({
-
-					dataSource: dm,
-
-					allowPaging:true,
-
-					columns: ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
-
-					});
-
-			});
-
-
-
+		var dm =ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders");
+		$("#Grid").ejGrid({
+			dataSource: dm,
+			allowPaging:true,
+			columns: ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
+		});
+		
+	});
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -139,33 +120,21 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
-
-
-
 {% endhighlight %}
 
 {% highlight js %}
 	$(function () {
 
 		var dataManager = ej.DataManager({
-
 			url:"[http://services.odata.org/V4/Northwind/Northwind.svc/Regions/](http://services.odata.org/V4/Northwind/Northwind.svc/Regions/# "")",
-
 			adaptor: new ej.ODataV4Adaptor()
-
-			});
+		});
 
 		$("#Grid").ejGrid({
-
 			dataSource: dataManager,
-
 			allowPaging:true
-
-			});
-
+		});
 	});
-
-
 
 {% endhighlight %}
 
@@ -178,90 +147,56 @@ The following code example describes the above behavior.
 {% highlight html %}
 <div id="Grid"></div>
 
-
-
 {% endhighlight %}
 
 {% highlight js %}
-		$(function () {
-
-			var dataManager = ej.DataManager({
-
+	$(function () {
+		var dataManager = ej.DataManager({
 			url:"/api/Orders",
-
 			adaptor: new ej.WebApiAdaptor()
-
 		});
 
 		$("#Grid").ejGrid({
-
 			dataSource: dataManager,
-
 			allowPaging:true,
-
 			columns: ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
-
-			});
-
+		});
 	});
-
-
 
 {% endhighlight %}
 
 {% highlight cs %}
 using EJGrid.Models;
-
 using System;
-
 using System.Collections.Generic;
-
 using System.Linq;
-
 using System.Linq.Expressions;
-
 using System.Net;
-
 using System.Net.Http;
-
 using System.Web;
-
 using System.Web.Http;
 
 namespace EJGrid.Controllers
-
 {
 
 	public class OrdersController: ApiController
-
 	{
 
 		// GET: api/Orders
-
 		NORTHWNDEntities db = new NORTHWNDEntities();
 
 		public object Get()
-
 		{
-
 			var queryString = HttpContext.Current.Request.QueryString;
-
 			int skip = Convert.ToInt32(queryString["$skip"]);
-
 			int take = Convert.ToInt32(queryString["$top"]);
-
 			var data = db.Orders.Skip(skip).Take(take).ToList();
-
 			return new {
 				Items = data.Skip(skip).Take(take), Count = data.Count()
 			};
-
 		}
-
 	}
-
-
-
+}
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -280,62 +215,45 @@ The following code example describes the above behavior.
 {% highlight html %}
 <div id="Grid"></div>
 
-
-
 {% endhighlight %}
 
 {% highlight js %}
 $(function() {
 
 	var customAdaptor = new ej.Adaptor().extend({
-
 		insert: function(dm, data) {
-
 			//Auto-increment `id` field value on insert
-
 			data["id"] = dm.dataSource.json[dm.dataSource.json.length - parseInt(1, 10)].id + 1;
-
 			return dm.dataSource.json.push(data);
-
 		},
-
 		processQuery: ej.JsonAdaptor.prototype.processQuery //Reusing JsonAdaptor`s processQuery
-
 	});
 
 	window.gridData = [
-
 	{
 		id: 1,
 		firstName: "John",
 		lastName: "Beckett",
 		email: "john@syncfusion.com"
 	},
-
 	{
 		id: 2,
 		firstName: "Ben",
 		lastName: "Beckett",
 		email: "ben@syncfusion.com"
 	},
-
 	{
 		id: 3,
 		firstName: "Andrew",
 		lastName: "Beckett",
 		email: "andrew@syncfusion.com"
-	}
-
-	];
+	}];
 
 	var dataManager = new ej.DataManager(window.gridData);
-
 	// assigning custom adaptor to datamanager
-
 	dataManager.adaptor = new customAdaptor();
 
 	// insert from custom adaptor usage
-
 	dataManager.insert({
 		firstName: "Joel",
 		lastName: "Beckett",
@@ -343,16 +261,10 @@ $(function() {
 	});
 
 	$("#Grid").ejGrid({
-
 		dataSource: dataManager,
-
 		columns: ["firstName", "lastName", "email"]
-
 	});
-
 });
-
-
 
 {% endhighlight %}
 
@@ -369,37 +281,24 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
-
-
-
 {% endhighlight %}
 
 {% highlight js %}
 $(function() {
 
 	var dataManager = ej.DataManager({
-
 		url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",
-
 		adaptor: new ej.ODataAdaptor(),
-
 		offline: true
-
 	});
 
 	$("#Grid").ejGrid({
-
 		dataSource: dataManager,
-
 		allowPaging: true,
-
 		columns: ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
-
 	});
 
 });
-
-
 
 {% endhighlight %}
 
@@ -421,8 +320,6 @@ The following code example describes the above behavior.
 {% highlight html %}
 <div id="CacheGrid"></div>
 
-
-
 {% endhighlight %}
 
 {% highlight js %}
@@ -430,25 +327,16 @@ The following code example describes the above behavior.
 $(function() {
 
 	var dataManger = ej.DataManager({
-
 		url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/",
-
 		enableCaching: true,
-
 		cachingPageSize: 10,
-
 		timeTillExpiration: 120000
-
 	});
 
 	$("#CacheGrid").ejGrid({
-
 		dataSource: dataManger,
-
 		allowPaging: true,
-
 		columns: ["OrderID", "CustomerID", "EmployeeID", "Freight", "ShipCity"]
-
 	});
 
 });
@@ -470,33 +358,19 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
-
-
-
 {% endhighlight %}
 
 {% highlight js %}
 $(function() {
-
 	$("#Grid").ejGrid({
-
 		dataSource: ej.DataManager({
-
 			url: [http: //mvc.syncfusion.com/Services/Northwnd.svc/Orders](http://mvc.syncfusion.com/Services/Northwnd.svc/Orders# "")
-
-			}),
-
+		}),
 		allowPaging: true,
-
 		query: new ej.Query().addParams("Syncfusion", true),
-
 		columns: ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
-
-		});
-
 	});
-
-
+});
 
 {% endhighlight %}
 
@@ -538,31 +412,19 @@ The following code example describes the above behavior.
 
 {% highlight js %}
 $(function() {
-
 	var dataManger = ej.DataManager({
-
 		url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Order",
-
 		adaptor: "ODataAdaptor"
-
 	});
 
 	$("#Grid").ejGrid({
-
 		dataSource: dataManger,
-
 		allowPaging: true,
-
 		columns: ["OrderID", "CustomerID", "EmployeeID", "Freight", "ShipCity"],
-
 		actionFailure: function(args) {
-
 			alert(args.error.status + " : " + args.error.statusText);
-
 		}
-
 	});
-
 });
 
 {% endhighlight %}
@@ -580,21 +442,18 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
-
-
-
 {% endhighlight %}
 
 {% highlight html %}
 <table id="Table1">
    <thead>
       <tr>
-         <th> Laptop </th>
-         <th> Model </th>
-         <th> Price </th>
-         <th> OS </th>
-         <th> RAM </th>
-         <th> ScreenSize </th>
+         <th>Laptop</th>
+         <th>Model</th>
+         <th>Price</th>
+         <th>OS</th>
+         <th>RAM</th>
+         <th>ScreenSize</th>
       </tr>
    </thead>
    <tbody>
@@ -641,24 +500,15 @@ The following code example describes the above behavior.
    </tbody>
 </table>
 
-
-
 {% endhighlight %}
 
 {% highlight js %}
 $(function() {
-
 	$("#Grid").ejGrid({
-
 		dataSource: ej.DataManager($("#Table1")),
-
 		columns: ["Laptop", "Model", "Price", "RAM", "ScreenSize"]
-
 	});
-
 });
-
-
 
 {% endhighlight %}
 
