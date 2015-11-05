@@ -95,6 +95,35 @@ Create a div element to render the child Dialog widget and use it as a content o
 
 {% endhighlight %}
 
+Initialize both the Dialog widgets by adding the script section as below.
+
+{% highlight js %}
+
+
+        $(function () {
+            $("#button1").ejButton({ click: "openDialog" });
+            $("#button2").ejButton({ click: "openNestedDialog" });
+
+            $("#dialog").ejDialog({
+                title: "Dialog",
+                showOnInit: false,
+                width: 500, height: 400,
+                actionButtons: ["close", "collapsible", "maximize", "minimize", "pin"]
+            });
+            $("#nesteddialog").ejDialog({
+                title: "Nested Dialog",
+                showOnInit: false,
+                width: 300, height: 200
+            });
+        });
+
+        function openDialog(args) {
+            $("#dialog").ejDialog("open");
+        }
+        function openNestedDialog(args) {
+            $("#nesteddialog").ejDialog("open");
+        }   
 
 
 
+{% endhighlight %}

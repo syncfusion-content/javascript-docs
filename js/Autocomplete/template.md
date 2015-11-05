@@ -13,27 +13,27 @@ The suggestion list can be customized based on different needs using templates. 
 
 {% highlight html %}
 
-
-<input type="text" id="autocomplete" />
-
-<script type="text/javascript">
-
-        /* Local Data */
-        var mobileList = [
-                { pName: "Galaxy Grand 2", quantity: "3" },
-            { pName: "Galaxy S6", quantity: "5" },
-            { pName: "IPhone S6", quantity: "8" },
-            { pName: "Ipod Mini", quantity: "3" }, ];
-
-
-        $('#autocomplete').ejAutocomplete({
-            dataSource: mobileList,
-            fields: { text: "pName" },
-            template: "<div><div class='product-text'>${pName}</div> <span class='product-quantity' style='font-size:10px'> Quantity : ${quantity}</span></div>"
-        });
-
-</script>
-
+        
+        <input type="text" id="autocomplete" />
+        
+        <script type="text/javascript">
+        
+                /* Local Data */
+                var mobileList = [
+                        { pName: "Galaxy Grand 2", quantity: "3" },
+                { pName: "Galaxy S6", quantity: "5" },
+                { pName: "IPhone S6", quantity: "8" },
+                { pName: "Ipod Mini", quantity: "3" }, ];
+        
+        
+                $('#autocomplete').ejAutocomplete({
+                dataSource: mobileList,
+                fields: { text: "pName" },
+                template: "<div><div class='product-text'>${pName}</div> <span class='product-quantity' style='font-size:10px'> Quantity : ${quantity}</span></div>"
+                });
+        
+        </script>
+        
 
 
 {% endhighlight %}

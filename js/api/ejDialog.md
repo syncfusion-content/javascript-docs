@@ -228,7 +228,7 @@ Example
 
 The selector for the container element. If this property is set, the dialog will be displayed (positioned) based on its container.
 
-N>Since it is deprecated we suggest to use the API “[target](#methods:isopen)”.
+N>Since it is deprecated we suggest to use the API “[target](#methods:target)”.
 
 Default Value: 
 {:.param}
@@ -1063,7 +1063,7 @@ Error code</td></tr>
 <td>
 Argument.data.statusText</td><td>
 string</td><td>
-returns the corresponding error text for error code </td></tr>
+The corresponding error description.</td></tr>
 </table>
 
 
