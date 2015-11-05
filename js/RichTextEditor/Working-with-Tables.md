@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Tables
-description: Working with Tables
+title: Working with Tables opreation in RichTextEditor widget for Syncfusion Essential JS
+description: Working with Tables customization for RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug

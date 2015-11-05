@@ -1,7 +1,7 @@
 ---
 layout: post
-title: XHTML Validation
-description: XHTML Validation
+title: XHTML Validation in RichTextEditor widget for Syncfusion Essential JS
+description: XHTML Validation to format the RichTextEditor widget's content
 platform: js
 control: RTE
 documentation: ug

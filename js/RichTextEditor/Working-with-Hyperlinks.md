@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Hyperlinks
-description: Working with Hyperlinks
+title: Hyperlink customization in RichTextEditor widget for Syncfusion Essential JS
+description: Working with Hyperlinks customization in RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug
