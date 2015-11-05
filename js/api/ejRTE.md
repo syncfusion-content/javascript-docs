@@ -1136,8 +1136,8 @@ Example
 
 
 
-### iframeAttribute<span class="type-signature type string">object</span>
-{:#members:iframeattribute}
+### iframeAttributes<span class="type-signature type string">object</span>
+{:#members:iframeattributes}
 
 
 
@@ -1169,8 +1169,8 @@ Example
         the displayed content. A rich text editor control provides users with a toolbar
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
-    // Initialize the RTE with the specified iframeAttribute value .
-    $("#rteSample").ejRTE({ iframeAttribute:{ style :"color:#5C5C5C" }});
+    // Initialize the RTE with the specified iframeAttributes value .
+    $("#rteSample").ejRTE({ iframeAttributes:{ style :"color:#5C5C5C" }});
 </script>
 {% endhighlight %}
 
