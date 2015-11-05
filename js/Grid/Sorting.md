@@ -9,9 +9,9 @@ documentation: ug
 
 # Sorting
 
-Sorting is the process of arranging records in some ordered sequence by setting [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "allowSorting") property as `true`. 
+The Grid control has support to sort databound columns in ascending or descending order. This can be enabled by setting [`allowSorting`](http://help.syncfusion.com/js/api/ejgrid#members:allowsorting "allowSorting") property as `true`. 
 
-Sort the column by clicking on the header of that particular column. The order switches between ascending and descending each time you click a column header for sorting.
+To dynamically sort a paticular column, click on its column header. The order switches between ascending and descending each time you click a column header for sorting.
 
 The following code example describes the above behavior.
 
