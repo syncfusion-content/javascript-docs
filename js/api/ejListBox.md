@@ -1013,13 +1013,9 @@ Example
 
 Specifies the virtual scroll mode to load the list data on demand via scrolling behavior. There are two types of mode.
 
-* continuous:
+* __continuous__: Each time when we scroll to the end of the ListBox widget, the other set of list items will get loaded.
 
-Each time when we scroll to the end of the ListBox widget, the other set of list items will get loaded.
-
-* normal:
-
-This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.
+* __normal__: This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.
 
 Default Value:
 {:.param} 
