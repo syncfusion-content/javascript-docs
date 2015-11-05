@@ -385,22 +385,38 @@ During server interaction from the Grid, there may occur some server-side except
 
 The argument passed to the [`actionFailure`](http://help.syncfusion.com/js/api/ejgrid#events:actionfailure "actionFailure") Grid event contains the Error details returned from server. Please refer the following table for some error details acquired in client-side event arguments.
 
-<table>
-<tr>
-<td colspan=1 rowspan=1>
-Parameter<br/><br/></td><td colspan=1 rowspan=1>
-JSON Properties<br/><br/></td><td colspan=1 rowspan=1>
-Description<br/><br/></td></tr>
-<tr>
-<td colspan=1 rowspan=2>
-argument<br/><br/></td><td colspan=1 rowspan=1>
-argument.error.status<br/><br/></td><td colspan=1 rowspan=1>
-It returns the response error code<br/><br/></td></tr>
-<tr>
-<td colspan=1 rowspan=1>
-argument.error.statusText<br/><br/></td><td colspan=1 rowspan=1>
-It returns the error message<br/><br/></td></tr>
-</table>
+ <table>
+        <tr>
+            <th>
+                Parameter
+            </th>
+            <th>
+                JSON Properties
+            </th>
+            <th>
+                Description
+            </th>
+        </tr>
+        <tr>
+            <td rowspan=2>
+                argument
+            </td>
+            <td>
+                argument.error.status
+            </td>
+            <td>
+                It returns the response error code
+            </td>
+        </tr>
+        <tr>
+            <td>
+                argument.error.statusText
+            </td>
+            <td>
+                It returns the error message
+            </td>
+        </tr>
+    </table>
 
 
 The following code example describes the above behavior.
