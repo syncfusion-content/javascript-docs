@@ -1219,7 +1219,7 @@ Disables set of list Items using its index values.
 <td>
 Indices</td><td>
 Integer array/ string</td><td>
-Indices of the listbox item to be disabled.</td></tr>
+Indices of the listbox items to be disabled.</td></tr>
 </table>
 
 Example
