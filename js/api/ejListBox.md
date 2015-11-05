@@ -1620,7 +1620,8 @@ Removes the selected list items from the listbox.
 
 
 N> 1. This method does not accept any arguments.
-N> 2.Since this method is deprecated we suggest you to use removeSelectedItems method.
+N> 2. Since this method is deprecated, we suggest you to use  removeSelectedItems method.
+
 
 Example
 {:.example}

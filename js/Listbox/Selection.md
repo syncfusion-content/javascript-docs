@@ -54,6 +54,9 @@ Multiple selection can be enabled using “allowMultiSelection” property. You 
 
 {% endhighlight %}
 
+![MultiSelect Listbox](Selection_Images\multipleselection_img1.png)
+
+
 ## Checkbox
 
 The ListBox widget allows selection through checkbox. It can be enabled using “showCheckbox” API.
