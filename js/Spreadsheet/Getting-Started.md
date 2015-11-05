@@ -27,11 +27,11 @@ File                              </th><th>
 Description/Usage</th></tr>
 <tr>
 <td>
-ej.core.min.js<br/><br/></td><td>
+ej.core.min.js</td><td>
 Must be referred always before using all the JS controls.  </td></tr>
 <tr>
 <td>
-ej.data.min.js<br/><br/></td><td>
+ej.data.min.js</td><td>
 Used to handle data operation and should be used while binding data to JS controls.  </td></tr>
 <tr>
 <td>
@@ -260,7 +260,7 @@ For getting started, you can use the `ej.web.all.min.js` file, which encapsulate
             </html>
 			{% endhighlight %}
 			
-N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets# "") to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip "") in your server.
+N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 
 ## Creating ejSpreadsheet
 
@@ -284,7 +284,7 @@ The Spreadsheet control can be created from an HTML `DIV` element with `id` attr
     </script>
 {% endhighlight %}
 
-![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img1.jpeg)
+![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img1.png)
 
 
 ## Initialize from Excel File
@@ -308,7 +308,7 @@ The Spreadsheet control can be initialized from an Excel file by defining `impor
     </script>
 {% endhighlight %}
 
-![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img2.jpeg)
+![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img2.png)
 
 
 ## Cell Navigation and Drag Fill
@@ -415,7 +415,7 @@ For auto filling, editing and autofill should be enabled using `allowEditing` an
 {% endhighlight %}
 
 
-![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img3.jpeg)
+![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img3.png)
 
 
 ## Creating Chart
@@ -450,7 +450,7 @@ The Spreadsheet control provides options to create chart through API and Ribbon.
     </script>
 			{% endhighlight %}
 			
-![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img4.jpeg)
+![](ejSpreadsheetGettingStarted_images/ejSpreadsheetGettingStarted_img4.png)
 
 
 
