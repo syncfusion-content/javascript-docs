@@ -22,9 +22,9 @@ Refer to the internal dependencies in the following table.
 
 <table>
 <tr>
-<td>
-File                          </td><td>
-Description/Usage</td></tr>
+<th>
+File                          </th><th>
+Description/Usage</th></tr>
 <tr>
 <td>
 ej.core.min.js</td><td>
@@ -130,7 +130,7 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 
 
 
-N> _In production, we highly recommend you to use our_ [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets) _to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use_ [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server._
+N> In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets)  to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en) in your server.
 
 For themes, you can use the `ej.web.all.min.css` CDN link from the code example given. To add the themes in your application, please refer to [this link](http://help.syncfusion.com/js/theming-in-essential-javascript-components).
 
@@ -214,10 +214,10 @@ N> _ODataAdaptor is the default adaptor for the DataManager. On binding to other
 </script>
 {% endhighlight %}
 
-N> _Pager settings can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for pageSize and pageCount are 12 and 8 respectively._
+N> _Pager settings can be customized by using the [`pageSettings.pageSize`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-pagesize) property. When it is not given the default values for `pageSize` and `pageCount` are 12 and 8 respectively._
 
 
-_![](Getting-started_images/Getting-started_img3.png)
+![](Getting-started_images/Getting-started_img3.png)
 {:.image }
 
 
@@ -300,7 +300,7 @@ Refer to the following code example for initial grouping.
 
 ## Add Summaries
 
-[`Summaries`](http://helpjs.syncfusion.com/js/grid/summary) can be added by setting the [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary) to true and adding required summary rows and columns in the [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) property. For demonstration, Stock column's `sum` value is displayed as summary.
+[`Summaries`](http://helpjs.syncfusion.com/js/grid/summary) can be added by setting the [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary) to true and adding required summary rows and columns in the [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) property. For demonstration, Stock column's sum value is displayed as summary.
 
 {% highlight html %}
 

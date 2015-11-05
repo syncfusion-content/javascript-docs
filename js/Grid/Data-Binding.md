@@ -364,7 +364,7 @@ The following code example describes the above behavior.
 $(function() {
 	$("#Grid").ejGrid({
 		dataSource: ej.DataManager({
-			url: [http: //mvc.syncfusion.com/Services/Northwnd.svc/Orders](http://mvc.syncfusion.com/Services/Northwnd.svc/Orders# "")
+			url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"
 		}),
 		allowPaging: true,
 		query: new ej.Query().addParams("Syncfusion", true),
@@ -401,6 +401,8 @@ It returns the response error code<br/><br/></td></tr>
 argument.error.statusText<br/><br/></td><td colspan=1 rowspan=1>
 It returns the error message<br/><br/></td></tr>
 </table>
+
+
 The following code example describes the above behavior.
 
 {% highlight html %}
