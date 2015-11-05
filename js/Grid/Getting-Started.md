@@ -187,11 +187,11 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 
 {% endhighlight %}
 
-
-N> _ODataAdaptor is the default adaptor for the DataManager. On binding to other web services, proper_ [data adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors) needs _to be set on `adaptor` option of the DataManager._ 
-
 ![](Getting-started_images/Getting-started_img2.png)
 {:.image }
+
+
+N> _ODataAdaptor is the default adaptor for the DataManager. On binding to other web services, proper_ [data adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors) needs _to be set on `adaptor` option of the DataManager._ 
 
 
 ## Enable Paging
