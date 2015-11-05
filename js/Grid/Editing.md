@@ -81,12 +81,12 @@ Example</th></tr>
 <tr>
 <td>
 CheckBox</td><td>
-{{[`ejCheckBox`](http://help.syncfusion.com/js/api/ejcheckbox# "checkbox")'' markdownify }} </td><td>
+[ejCheckBox](http://help.syncfusion.com/js/api/ejcheckbox# "checkbox") </td><td>
 editParams: { checked: true }</td></tr>
 <tr>
 <td>
 NumericTextBox </td><td>
-{{[ejTextBoxes](http://help.syncfusion.com/js/api/ejtextboxes# "textbox")'' markdownify }} </td><td>
+[ejTextBoxes](http://help.syncfusion.com/js/api/ejtextboxes# "textbox") </td><td>
 editParams: { decimalPlaces: 2, value:5  }</td></tr>
 <tr>
 <td>
@@ -96,18 +96,19 @@ InputTextBox </td><td>
 <tr>
 <td>
 DatePicker </td><td>
-{{'[ejDatePicker](http://help.syncfusion.com/js/api/ejdatepicker# "datapicker")'' markdownify }} </td><td>
+[ejDatePicker](http://help.syncfusion.com/js/api/ejdatepicker# "datapicker") </td><td>
 editParams: {  buttonText : "Now" }</td></tr>
 <tr>
 <td>
 DateTimePicker</td><td>
-{{'[ejDateTimePicker](http://help.syncfusion.com/js/api/ejdatetimepicker# "datetimepicker")'' markdownify }} </td><td>
+[ejDateTimePicker](http://help.syncfusion.com/js/api/ejdatetimepicker# "datetimepicker") </td><td>
 editParams: {  enabled: true }</td></tr>
 <tr>
 <td>
 DropDownList</td><td>
-{{'[ejDropDownList](http://help.syncfusion.com/js/api/ejdropdownlist# "dropdownlist")'' markdownify }} </td><td>
+[ejDropDownList](http://help.syncfusion.com/js/api/ejdropdownlist# "dropdownlist") </td><td>
 editParams: {  allowGrouping: true }</td></tr>
+
 </table>
 
 N> 1. If [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") is not set then by default it will display the input element ("stringedit") while editing a column.
@@ -699,10 +700,12 @@ function complete(args) {
 The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img13.png)
-
+{:caption}
+Before the template elements are converted to JS controls
 
 ![](Editing_images/Editing_img14.png)
-
+{:caption}
+After the template elements are converted to JS controls using actionComplete event
 
 ### Batch / Excel-like
 
@@ -1113,7 +1116,7 @@ And also using "DataOperations" class methods you can perform grid action in ser
  PerformSelect
  Execute
 
-#### Accessing CRUD action request details in server side:
+### Accessing CRUD action request details in server side:
 
 The "Server-Side" function must be declared with the following parameter name for each editing functionality.
 
@@ -1137,7 +1140,7 @@ __Parameters__ __Table__
             <td>
                 value
             </td>
-            <td>
+            <td rowspan="2">
                 public ActionResult Update(EditableOrder value){ }
             </td>
         </tr>
@@ -1166,7 +1169,7 @@ __Parameters__ __Table__
                 added
             </td>
             <td rowspan="3">
-                public ActionResult BatchUpdate(string action, List<editableorder> added, List<editableorder> changed, List<editableorder> deleted, int? key){ }
+                public ActionResult BatchUpdate(string action, List &lt;editableorder&gt; added, List &lt;editableorder&gt; changed, List &lt;editableorder&gt; deleted, int? key){ }
             </td>
         </tr>
         <tr>
@@ -1199,10 +1202,9 @@ __Parameters__ __Table__
             </td>
         </tr>
     </table>
+
 	
-	
-	
-##### Insert Record:
+### Insert Record:
 
 Using `insertUrl` property, you can specify the controller action mapping URL to perform insert operation in server side.
 
@@ -1221,7 +1223,7 @@ The newly added record details are bound to the "value" parameter. Please refer 
 ![](Editing_images/Editing_img21.png)
 
 
-##### Update Record:
+### Update Record:
 
 Using `updateUrl` property, you can specify the controller action mapping URL to perform save/update operation in server side.
 
@@ -1239,7 +1241,7 @@ The updated record details are bound to the "value" parameter. Please refer the 
 ![](Editing_images/Editing_img22.png)
 
 
-##### Delete Record:
+### Delete Record:
 
 Using `removeUrl` property, you can specify the controller action mapping URL to perform delete operation in server side.
 
@@ -1257,7 +1259,7 @@ The deleted record primary key value is bound to the "key" parameter. Please ref
 ![](Editing_images/Editing_img23.png)
 
 
-##### CRUD URL:
+### CRUD URL:
 
 Instead of specifying separate controller action method for CRUD (insert, update and delete)operation, using `crudUrl` property you can specify the controller action mapping URL to perform all the CRUD operation in server side using single method.
 
@@ -1313,7 +1315,7 @@ Please refer the below image to know about the action parameter
 
 N> If you specify `insertUrl` along with `CrudUrl` then while adding `insertUrl` only called.
 
-##### Batch URL:
+### Batch URL:
 
 The `batchUrl` property supports only for batch editing mode. You can specify the controller action mapping URL to perform Batch operation in server side.
 
@@ -1321,9 +1323,7 @@ The following code example describes the above behavior.
 
 {% highlight html %}
 <div id="Grid"></div>
-{% endhighlight %}
 
-{% highlight js %}
 
 $(function () {
 	$("#Grid").ejGrid({
@@ -1357,12 +1357,12 @@ $(function () {
 {% endhighlight %}
 
 
-{% highlight cs %}
+{% highlight c# %}
 
-public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key)
-{
-	//Save the batch changes in database
-}
+	public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key)
+		{
+				//Save the batch changes in database
+			}
 
 {% endhighlight %}
 

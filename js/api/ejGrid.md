@@ -2624,7 +2624,7 @@ Example
 {% highlight html %}
 <div id="Grid"></div> 
 <script id="columnTemplate" type="text/x-jsrender">
-<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
+<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
 </script>
 <script>
 $("#Grid").ejGrid({
@@ -2678,7 +2678,7 @@ Example
 {% highlight html %}
 <div id="Grid"></div> 
 <script id="columnTemplate" type="text/x-jsrender">
-<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
+<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
 </script>
 <script>
 $("#Grid").ejGrid({
@@ -3273,7 +3273,7 @@ Example
 <table>
 <tr>
 <td>
-<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
+<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
 </td>
 </tr>
 </table>
@@ -3571,17 +3571,17 @@ Example
        <tr>
            <td>OrderID</td>
            <td>
-               <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" /></td>
+               <input id="OrderID" name="OrderID" value="{{"{{"}}:OrderID{{}}}}" disabled="disabled" /></td>
        </tr>
        <tr>
            <td>CustomerID</td>
            <td>
-               <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" /></td>
+               <input id="CustomerID" name="CustomerID" value="{{"{{"}}:CustomerID{{}}}}" /></td>
        </tr>
        <tr>
            <td>EmployeeID</td>
            <td>
-               <input id="EmployeeID" name="EmployeeID" value="{{: EmployeeID}}" /></td>
+               <input id="EmployeeID" name="EmployeeID" value="{{"{{"}}:EmployeeID{{}}}}" /></td>
        </tr>
    </table>
 </script>
@@ -3697,17 +3697,17 @@ Example
        <tr>
            <td>OrderID</td>
            <td>
-               <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" /></td>
+               <input id="OrderID" name="OrderID" value="{{"{{"}}:OrderID{{}}}}" disabled="disabled" /></td>
        </tr>
        <tr>
            <td>CustomerID</td>
            <td>
-               <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" /></td>
+               <input id="CustomerID" name="CustomerID" value="{{"{{"}}:CustomerID{{}}}}" /></td>
        </tr>
        <tr>
            <td>EmployeeID</td>
            <td>
-               <input id="EmployeeID" name="EmployeeID" value="{{: EmployeeID}}" /></td>
+               <input id="EmployeeID" name="EmployeeID" value="{{"{{"}}:EmployeeID{{}}}}" /></td>
        </tr>
    </table>
 </script>
@@ -3823,17 +3823,17 @@ Example
        <tr>
            <td>OrderID</td>
            <td>
-               <input id="OrderID" name="OrderID" value="{{: OrderID}}" disabled="disabled" /></td>
+               <input id="OrderID" name="OrderID" value="{{"{{"}}:OrderID{{}}}}" disabled="disabled" /></td>
        </tr>
        <tr>
            <td>CustomerID</td>
            <td>
-               <input id="CustomerID" name="CustomerID" value="{{: CustomerID}}" /></td>
+               <input id="CustomerID" name="CustomerID" value="{{"{{"}}:CustomerID{{}}}}" /></td>
        </tr>
        <tr>
            <td>EmployeeID</td>
            <td>
-               <input id="EmployeeID" name="EmployeeID" value="{{: EmployeeID}}" /></td>
+               <input id="EmployeeID" name="EmployeeID" value="{{"{{"}}:EmployeeID{{}}}}" /></td>
        </tr>
    </table>
 </script>
@@ -6123,10 +6123,10 @@ Example
 <script id="templateData" type="text/x-jsrender">
 <tr>
 <td>
-<img src="styles/images/Employees/{{:EmployeeID}}.png" alt="{{:EmployeeID}}"/>
+<img src="styles/images/Employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}"/>
 </td>
 <td>
-{{:EmployeeID}}
+{{"{{"}}:EmployeeID{{}}}}
 </td>
 </tr>
 </script>
