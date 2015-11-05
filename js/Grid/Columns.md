@@ -540,7 +540,7 @@ The following code example describes the above behavior.
 <div id="Grid"></div>
 <script type="text/x-jsrender" id="columnTemplate">
 <!--The image is referred from this location "http://jsplayground.syncfusion.com/13.2.0.29/themes/web/images/employees/1.png" based on EmployeeID-->
-<img style="width: 75px; height: 70px" src="/13.2.0.29/themes/web/images/employees/{{{{}}:EmployeeID}}.png" alt="{{: EmployeeID }}" />
+<img style="width: 75px; height: 70px" src="/13.2.0.29/themes/web/images/employees/{{"{{"}}:EmployeeID{{}}}}.png" alt="{{"{{"}}:EmployeeID{{}}}}" />
 </script>
 {% endhighlight %}
 
