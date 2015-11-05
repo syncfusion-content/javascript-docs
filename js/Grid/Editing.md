@@ -20,7 +20,7 @@ N> 2. The column which is specified as [`isIdentity`](http://help.syncfusion.com
 
 ## Toolbar with edit option
 
-Using [toolbar](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbar") you can show all the CRUD related action which is rendered at the top of the grid header. To enable toolbar and toolbar items, set [`showToolbar`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") property as true and [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems"). The default toolbar items are `Add`, `Edit`, `Delete`, `Update` and `Cancel`.
+Using toolbar you can show all the CRUD related action which is rendered at the top of the grid header. To enable toolbar and toolbar items, set [`showToolbar`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") property as true and [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems"). The default toolbar items are `Add`, `Edit`, `Delete`, `Update` and `Cancel`.
 
 N> For [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") property you can assign either `string` value ("add") or `enum` value (`ej.Grid.ToolBarItems.Add`).
 
@@ -39,14 +39,15 @@ $(function () {
 		editSettings:{ allowEditing: true, allowAdding: true, allowDeleting: true},
 		allowPaging : true,
 		columns : [
-			{ field: "OrderID", isPrimaryKey: true },
-			{ field: "CustomerID" },
-			{ field: "EmployeeID" },
-			{ field: "ShipCity" },
-			{ field: "ShipCountry" }
-		]
-	});
+					{ field: "OrderID", isPrimaryKey: true },
+					{ field: "CustomerID" },
+					{ field: "EmployeeID" },
+					{ field: "ShipCity" },
+					{ field: "ShipCountry" }
+				]
+		});
 });
+
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -73,41 +74,42 @@ The following table describes [`editType`](http://help.syncfusion.com/js/api/ejg
 
 <table>
 <tr>
-<td>
-EditType<br/><br/></td><td>
-EditParams<br/><br/></td><td>
-Example<br/><br/></td></tr>
+<th>
+EditType</th><th>
+EditParams</th><th>
+Example</th></tr>
 <tr>
 <td>
-CheckBox<br/><br/></td><td>
-{{'[http://help.syncfusion.com/js/api/ejcheckbox](http://help.syncfusion.com/js/api/ejcheckbox#"")'' markdownify }} <br/><br/></td><td>
-editParams: { checked: true }<br/><br/></td></tr>
+CheckBox</td><td>
+{{[`ejCheckBox`](http://help.syncfusion.com/js/api/ejcheckbox# "checkbox")'' markdownify }} </td><td>
+editParams: { checked: true }</td></tr>
 <tr>
 <td>
-NumericTextBox <br/><br/></td><td>
-{{'[http://help.syncfusion.com/js/api/ejtextboxes](http://help.syncfusion.com/js/api/ejtextboxes#"")'' markdownify }} <br/><br/></td><td>
-editParams: { decimalPlaces: 2, value:5  }<br/><br/></td></tr>
+NumericTextBox </td><td>
+{{[ejTextBoxes](http://help.syncfusion.com/js/api/ejtextboxes# "textbox")'' markdownify }} </td><td>
+editParams: { decimalPlaces: 2, value:5  }</td></tr>
 <tr>
 <td>
-InputTextBox <br/><br/></td><td>
--<br/><br/></td><td>
--<br/><br/></td></tr>
+InputTextBox </td><td>
+-</td><td>
+-</td></tr>
 <tr>
 <td>
-DatePicker <br/><br/></td><td>
-{{'[http://help.syncfusion.com/js/api/ejdatepicker](http://help.syncfusion.com/js/api/ejdatepicker#"")'' markdownify }} <br/><br/></td><td>
-editParams: {  buttonText : "Now" }<br/><br/><br/><br/></td></tr>
+DatePicker </td><td>
+{{'[ejDatePicker](http://help.syncfusion.com/js/api/ejdatepicker# "datapicker")'' markdownify }} </td><td>
+editParams: {  buttonText : "Now" }</td></tr>
 <tr>
 <td>
-DateTimePicker<br/><br/></td><td>
-{{'[http://help.syncfusion.com/js/api/ejdatetimepicker](http://help.syncfusion.com/js/api/ejdatetimepicker#"")'' markdownify }} <br/><br/></td><td>
-editParams: {  enabled: true }<br/><br/><br/><br/></td></tr>
+DateTimePicker</td><td>
+{{'[ejDateTimePicker](http://help.syncfusion.com/js/api/ejdatetimepicker# "datetimepicker")'' markdownify }} </td><td>
+editParams: {  enabled: true }</td></tr>
 <tr>
 <td>
-DropDownList<br/><br/></td><td>
-{{'[http://help.syncfusion.com/js/api/ejdropdownlist](http://help.syncfusion.com/js/api/ejdropdownlist#"")'' markdownify }} <br/><br/></td><td>
-editParams: {  allowGrouping: true }<br/><br/><br/><br/></td></tr>
+DropDownList</td><td>
+{{'[ejDropDownList](http://help.syncfusion.com/js/api/ejdropdownlist# "dropdownlist")'' markdownify }} </td><td>
+editParams: {  allowGrouping: true }</td></tr>
 </table>
+
 N> 1. If [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") is not set then by default it will display the input element ("stringedit") while editing a column.
 N> 2. For [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") property you can assign either `string` value ("numericedit") or `enum` value (`ej.Grid.EditingType.Numeric`).
 
@@ -126,16 +128,16 @@ $(function () {
 		editSettings:{ allowEditing: true, allowAdding: true, allowDeleting: true},
 		allowPaging : true,
 		columns : [
-			{ field: "OrderID", isPrimaryKey: true },
-			{ field: "CustomerID", editType: "stringedit" },
-			{ field: "Freight", editType: "numericedit", editParams: { decimalPlaces: 2 } },
-			{ field: "ShipCity", editType: "dropdownedit", editParams: { enableAnimation: true } },
-			{ field: "ShipCountry" },
-			{ field: "OrderDate", editType: "datepicker", format: "{0:MM/dd/yyyy}", editParams: { buttonText: "Now" } },
-			{ field: "Verified", editType: "booleanedit", editParams: { showRoundedCorner: true } }
-		]
+					{ field: "OrderID", isPrimaryKey: true },
+					{ field: "CustomerID", editType: "stringedit" },
+					{ field: "Freight", editType: "numericedit", editParams: { decimalPlaces: 2 } },
+					{ field: "ShipCity", editType: "dropdownedit", editParams: { enableAnimation: true } },
+					{ field: "ShipCountry" },
+					{ field: "OrderDate", editType: "datepicker", format: "{0:MM/dd/yyyy}", editParams: { buttonText: "Now" } },
+					{ field: "Verified", editType: "booleanedit", editParams: { showRoundedCorner: true } }
+			]
+		});
 	});
-});
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -166,15 +168,15 @@ $(function () {
 		editSettings:{ allowEditing: true, allowAdding: true, allowDeleting: true},
 		allowPaging : true,
 		columns : [
-			{ field: "OrderID", isPrimaryKey: true },
-			{ field: "CustomerID" },
-			{ field: "Freight" },
-			{ field: "ShipCountry" },
-			{
-				field : "ShipPostalCode",
-				editTemplate : {
+					{ field: "OrderID", isPrimaryKey: true },
+					{ field: "CustomerID" },
+					{ field: "Freight" },
+					{ field: "ShipCountry" },
+					{
+						field : "ShipPostalCode",
+					editTemplate : {
 					create : function () {
-						return "<input>";
+							return "<input>";
 					},
 					read : function (args) {
 						return args.ejMaskEdit("get_UnstrippedValue");
@@ -293,9 +295,8 @@ While using template form, you can change the HTML elements in it to appropriate
 
 N> 1. `value`, attribute is used to bind the corresponding field value while editing.
 N> 2. `name`, attribute is used to get the changed field values while save the edited record.
-
-1. It's a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender".
-2. For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("inlineformtemplate") or `enum` value (`ej.Grid.EditMode.InlineTemplateForm`)
+N> 3.  It's a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender".
+N> 4.  For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("inlineformtemplate") or `enum` value (`ej.Grid.EditMode.InlineTemplateForm`) 
 
 The following code example describes the above behaviour.
 
@@ -371,8 +372,13 @@ The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img6.png)
 
+{:caption}
+Before the template elements are converted to JS controls
+
 
 ![](Editing_images/Editing_img7.png)
+{:caption}
+After the template elements are converted to JS controls using actionComplete event 
 
 
 ### Dialog
@@ -504,10 +510,12 @@ function complete(args) {
 The following output is displayed as a result of the above code example.
 
 ![](Editing_images/Editing_img9.png)
-
+{:caption}
+Before the template elements are converted to JS controls
 
 ![](Editing_images/Editing_img10.png)
-
+{:caption}
+After the template elements are converted to JS controls using actionComplete event 
 
 ### External Form
 
@@ -834,6 +842,8 @@ The below validation script files are needed when editing is enabled with valida
 
  jquery.validate.min.js
  jquery.validate.unobtrusive.min.js
+ 
+ 
 ### Jquery Validation
 
 
@@ -844,73 +854,74 @@ __List__ __of__ __Jquery__ __validation__ __methods__
 <table>
 <tr>
 <td>
-Rules<br/><br/></td><td>
-Description<br/><br/></td></tr>
+Rules</td><td>
+Description</td></tr>
 <tr>
 <td>
-required<br/><br/></td><td>
-Requires an element.<br/><br/></td></tr>
+required</td><td>
+Requires an element.</td></tr>
 <tr>
 <td>
-remote<br/><br/></td><td>
-Requests a resource to check the element for validity.<br/><br/></td></tr>
+remote</td><td>
+Requests a resource to check the element for validity.</td></tr>
 <tr>
 <td>
-minlength<br/><br/></td><td>
-Requires the element to be of given minimum length.<br/><br/></td></tr>
+minlength</td><td>
+Requires the element to be of given minimum length.</td></tr>
 <tr>
 <td>
-maxlength<br/><br/></td><td>
-Requires the element to be of given maximum length.<br/><br/></td></tr>
+maxlength</td><td>
+Requires the element to be of given maximum length.</td></tr>
 <tr>
 <td>
-rangelength<br/><br/></td><td>
-Requires the element to be in given value range.<br/><br/></td></tr>
+rangelength</td><td>
+Requires the element to be in given value range.</td></tr>
 <tr>
 <td>
-min<br/><br/></td><td>
-The element requires a given minimum.<br/><br/></td></tr>
+min</td><td>
+The element requires a given minimum.</td></tr>
 <tr>
 <td>
-max<br/><br/></td><td>
-The element requires a given maximum.<br/><br/></td></tr>
+max</td><td>
+The element requires a given maximum.</td></tr>
 <tr>
 <td>
-range<br/><br/></td><td>
-Requires the element to be in a given value range.<br/><br/></td></tr>
+range</td><td>
+Requires the element to be in a given value range.</td></tr>
 <tr>
 <td>
-email<br/><br/></td><td>
-The element requires a valid email.<br/><br/></td></tr>
+email</td><td>
+The element requires a valid email.</td></tr>
 <tr>
 <td>
-url<br/><br/></td><td>
-The element requires a valid url<br/><br/></td></tr>
+url</td><td>
+The element requires a valid url</td></tr>
 <tr>
 <td>
-date<br/><br/></td><td>
-Requires the element to be a date.<br/><br/></td></tr>
+date</td><td>
+Requires the element to be a date.</td></tr>
 <tr>
 <td>
-dateISO<br/><br/></td><td>
-The element requires an ISO date.<br/><br/></td></tr>
+dateISO</td><td>
+The element requires an ISO date.</td></tr>
 <tr>
 <td>
-number<br/><br/></td><td>
-The element requires a decimal number.<br/><br/></td></tr>
+number</td><td>
+The element requires a decimal number.</td></tr>
 <tr>
 <td>
-digits<br/><br/></td><td>
-The element requires digits only.<br/><br/></td></tr>
+digits</td><td>
+The element requires digits only.</td></tr>
 <tr>
 <td>
-creditcard<br/><br/></td><td>
-Requires the element to be a credit card number.<br/><br/></td></tr>
+creditcard</td><td>
+Requires the element to be a credit card number.</td></tr>
 <tr>
 <td>
-equalTo<br/><br/></td><td>
-Requires the element to be the same as another.<br/><br/></td></tr>
+equalTo</td><td>
+Requires the element to be the same as another.</td></tr>
 </table>
+
 Grid supports all the standard validation methods of Jquery, please refer the Jquery validation documentation [link](http://jqueryvalidation.org/documentation/# "link") for more information.
 
 The following code example describes the above behavior.
@@ -1017,7 +1028,7 @@ In the below section, we have explained about how to get the edited data details
 
 For you information ODataAdaptor persist date in server as OData protocol.
 
-URL Adaptor
+### URL Adaptor
 
 You can use the `UrlAdaptor` of [`ejDataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "ejDataManger") when binding datasource from remote data. At initial load of Grid, using URL property of DataManager, data are fetched from remote data and binded to Grid. You can map CRUD operation in Grid to Server-Side Controller action using the properties `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl` and `batchUrl`.
 
@@ -1102,55 +1113,96 @@ And also using "DataOperations" class methods you can perform grid action in ser
  PerformSelect
  Execute
 
-Accessing CRUD action request details in server side:
+#### Accessing CRUD action request details in server side:
 
 The "Server-Side" function must be declared with the following parameter name for each editing functionality.
 
 __Parameters__ __Table__
 
 <table>
-<tr>
-<td>
-Action<br/><br/></td><td>
-Parameter Name<br/><br/></td><td>
-Example<br/><br/></td></tr>
-<tr>
-<td>
-Update,Insert<br/><br/></td><td>
-value<br/><br/></td><td>
-public ActionResult Update(EditableOrder value){ }<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-<br/><br/></td><td>
-public ActionResult Insert(EditableOrder value){ }<br/><br/></td></tr>
-<tr>
-<td>
-Remove<br/><br/></td><td>
-key<br/><br/></td><td>
-public ActionResult Remove(int key){ }<br/><br/></td></tr>
-<tr>
-<td>
-Batch Add<br/><br/></td><td>
-added<br/><br/></td><td>
-public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key){ }<br/><br/></td></tr>
-<tr>
-<td>
-Batch Update<br/><br/></td><td>
-changed<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
-Batch Delete<br/><br/></td><td>
-deleted<br/><br/></td><td>
-<br/><br/></td></tr>
-<tr>
-<td>
-Crud Update,<br/><br/>Crud Remove,<br/><br/>Crud Insert<br/><br/></td><td>
-value, action<br/><br/></td><td>
-public ActionResult CrudUrl(EditableOrder value, string action){ }<br/><br/></td></tr>
-</table>
-Insert Record:
+        <tr>
+            <th>
+                Action
+            </th>
+            <th>
+                Parameter Name</th>
+            <th>
+                Example
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                Update,Insert
+            </td>
+            <td>
+                value
+            </td>
+            <td>
+                public ActionResult Update(EditableOrder value){ }
+            </td>
+        </tr>
+        <tr>
+           
+            <td>
+                public ActionResult Insert(EditableOrder value){ }
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Remove
+            </td>
+            <td>
+                key
+            </td>
+            <td>
+                public ActionResult Remove(int key){ }
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Batch Add
+            </td>
+            <td>
+                added
+            </td>
+            <td rowspan="3">
+                public ActionResult BatchUpdate(string action, List<editableorder> added, List<editableorder> changed, List<editableorder> deleted, int? key){ }
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Batch Update
+            </td>
+            <td>
+                changed
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                Batch Delete
+            </td>
+            <td>
+                deleted
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                Crud Update,Crud Remove,Crud Insert
+            </td>
+            <td>
+                value, action
+            </td>
+            <td>
+                public ActionResult CrudUrl(EditableOrder value, string action){ }
+            </td>
+        </tr>
+    </table>
+	
+	
+	
+##### Insert Record:
 
 Using `insertUrl` property, you can specify the controller action mapping URL to perform insert operation in server side.
 
@@ -1165,10 +1217,11 @@ public ActionResult Insert(EditableOrder value)
 
 The newly added record details are bound to the "value" parameter. Please refer the below image.
 
+
 ![](Editing_images/Editing_img21.png)
 
 
-Update Record:
+##### Update Record:
 
 Using `updateUrl` property, you can specify the controller action mapping URL to perform save/update operation in server side.
 
@@ -1186,7 +1239,7 @@ The updated record details are bound to the "value" parameter. Please refer the 
 ![](Editing_images/Editing_img22.png)
 
 
-Delete Record:
+##### Delete Record:
 
 Using `removeUrl` property, you can specify the controller action mapping URL to perform delete operation in server side.
 
@@ -1204,7 +1257,7 @@ The deleted record primary key value is bound to the "key" parameter. Please ref
 ![](Editing_images/Editing_img23.png)
 
 
-CRUD URL:
+##### CRUD URL:
 
 Instead of specifying separate controller action method for CRUD (insert, update and delete)operation, using `crudUrl` property you can specify the controller action mapping URL to perform all the CRUD operation in server side using single method.
 
@@ -1260,7 +1313,7 @@ Please refer the below image to know about the action parameter
 
 N> If you specify `insertUrl` along with `CrudUrl` then while adding `insertUrl` only called.
 
-Batch URL:
+##### Batch URL:
 
 The `batchUrl` property supports only for batch editing mode. You can specify the controller action mapping URL to perform Batch operation in server side.
 
@@ -1271,6 +1324,7 @@ The following code example describes the above behavior.
 {% endhighlight %}
 
 {% highlight js %}
+
 $(function () {
 	$("#Grid").ejGrid({
 		dataSource : ej.DataManager({
@@ -1299,14 +1353,19 @@ $(function () {
 		]
 	});
 });
+
 {% endhighlight %}
 
+
 {% highlight cs %}
+
 public ActionResult BatchUpdate(string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key)
 {
 	//Save the batch changes in database
 }
+
 {% endhighlight %}
+
 
 Please refer the below image for more information about batch paramaters
 
@@ -1348,6 +1407,7 @@ $(function () {
 		]
 	});
 });
+
 {% endhighlight %}
 
 The following output is displayed as a result of the above code example.
@@ -1402,8 +1462,8 @@ The following output is displayed as a result of the above code example.
 N> 1. If it is remote, then the newly added record is placed based on the index from current view data. 
 N> 2. If it is local, then the newly added record is added at the top of the page even the added new [`rowPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "rowPosition") is mentioned as "bottom".
 
-## Default column values on add new
 
+## Default column values on add new
 
 While adding new record in grid, there is an option to set the default value for the columns. Using [`defaultValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-defaultvalue "defaultValue") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") you can set the default values for that particular column while editing or adding a new row.
 
@@ -1438,6 +1498,7 @@ $(function () {
 	});
 });
 {% endhighlight %}
+
 
 The following output is displayed as a result of the above code example.
 

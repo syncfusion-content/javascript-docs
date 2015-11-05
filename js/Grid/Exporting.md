@@ -64,115 +64,64 @@ Following code snippet demonstrate exporting with WebAPI controller.
 public class OrdersController: ApiController
 
 {
-
 	private NORTHWNDEntities db = new NORTHWNDEntities();
-
 	public IEnumerable < Order > Get()
-
 	{
-
 		return db.Orders.ToList();
-
 	}
-
+	
 	[System.Web.Http.ActionName("ExcelExport")]
-
 	[AcceptVerbs("POST")]
-
 	public void ExcelExport()
-
 	{
-
 		string gridModel = HttpContext.Current.Request.Params["GridModel"];
-
 		GridProperties gridProperty = ConvertGridObject(gridModel);
-
 		ExcelExport exp = new ExcelExport();
-
 		IEnumerable < Order > result = db.Orders.ToList();
-
 		exp.Export(gridProperty, result, "Export.xlsx", ExcelVersion.Excel2010, false, false, "flat-saffron");
-
 	}
-
+	
 	[System.Web.Http.ActionName("PdfExport")]
-
 	[AcceptVerbs("POST")]
-
 	public void PdfExport()
-
 	{
-
 		string gridModel = HttpContext.Current.Request.Params["GridModel"];
-
 		GridProperties gridProperty = ConvertGridObject(gridModel);
-
 		PdfExport exp = new PdfExport();
-
 		IEnumerable < Order > result = db.Orders.ToList();
-
 		exp.Export(gridProperty, result, "Export.pdf");
-
 	}
-
+	
 	[System.Web.Http.ActionName("WordExport")]
-
 	[AcceptVerbs("POST")]
-
 	public void WordExport()
-
 	{
-
 		string gridModel = HttpContext.Current.Request.Params["GridModel"];
-
 		GridProperties gridPropert = ConvertGridObject(gridModel);
-
 		WordExport exp = new WordExport();
-
 		IEnumerable < Order > data = db.Orders.ToList();
-
 		exp.Export(gridPropert, (IEnumerable) data, "Export.docx");
-
 	}
-
+	
 	private GridProperties ConvertGridObject(string gridProperty)
-
 	{
-
 		JavaScriptSerializer serializer = new JavaScriptSerializer();
-
 		IEnumerable div = (IEnumerable) serializer.Deserialize(gridProperty, typeof(IEnumerable));
-
 		GridProperties gridProp = new GridProperties();
-
 		foreach(KeyValuePair < string, object > ds in div)
-
 		{
-
 			var property = gridProp.GetType()
-
 				.GetProperty(ds.Key, BindingFlags.Instance ' BindingFlags.Public ' BindingFlags.IgnoreCase);
-
 			if (property != null)
-
 			{
-
 				Type type = property.PropertyType;
-
 				string serialize = serializer.Serialize(ds.Value);
-
 				object value = serializer.Deserialize(serialize, type);
-
 				property.SetValue(gridProp, value, null);
-
 			}
-
 		}
-
 		return gridProp;
-
 	}
-
 }
 
 
@@ -210,9 +159,7 @@ The JavaScript code snippet for it is
 
 {% highlight js %}
 	$('#exportAll').click(function(){
-
 			ej.Grid.exportAll('#Grid1, #Grid2');
-
 		});
 
 
@@ -229,37 +176,22 @@ The Server side C# snippet is
 public void MultipleExportToExcel(string[] GridModel)
 
 {
-
 	ExcelExport exp = new ExcelExport();
-
 	var EmployeeData = new NorthwindDataContext().EmployeeViews.Take(5).ToList();
-
 	var OrderData = new NorthwindDataContext().OrdersViews.Take(5).ToList();
-
 	bool initial = true;
-
 	IWorkbook book = null;
-
 	foreach(string gridProperty in GridModel)
-
 	{
-
 		GridProperties gridProp = ConvertObject(gridProperty);
-
 		if (initial)
-
 		{
-
 			book = exp.Export(gridProp, EmployeeData, "Export.xlsx", ExcelVersion.Excel2010, true, true, "flat-saffron", true);
-
 			initial = false;
-
-		} else
-
+		} 
+		else
 		{
-
 			exp.Export(gridProp, OrderData, "Export.xlsx", ExcelVersion.Excel2010, true, true, "flat-saffron", false, book, MultipleExportType.AppendToSheet, "Second Grid");
-
 		}
 
 	}
@@ -271,37 +203,21 @@ public void MultipleExportToExcel(string[] GridModel)
 public void MultipleExportToWord(string[] GridModel)
 
 {
-
 	WordExport exp = new WordExport();
-
 	var EmployeeData = new NorthwindDataContext().EmployeeViews.Take(5).ToList();
-
 	var OrderData = new NorthwindDataContext().OrdersViews.Take(5).ToList();
-
 	IWordDocument document = null;
-
 	bool initial = true;;
-
 	foreach(string gridProperty in GridModel)
-
 	{
-
 		GridProperties gridProp = ConvertObject(gridProperty);
-
 		if (initial)
-
 		{
-
 			document = exp.Export(gridProp, EmployeeData, "Export.docx", true, true, "flat-saffron", true);
-
 			initial = false;
-
 		} else
-
 		{
-
 			exp.Export(gridProp, OrderData, "Export.docx", true, true, "flat-saffron", false, document, "Second Grid");
-
 		}
 
 	}
@@ -313,41 +229,24 @@ public void MultipleExportToWord(string[] GridModel)
 public void MultipleExportToPdf(string[] GridModel)
 
 {
-
 	PdfExport exp = new PdfExport();
-
 	var EmployeeData = new NorthwindDataContext().EmployeeViews.Take(5).ToList();
-
 	var OrderData = new NorthwindDataContext().OrdersViews.Take(5).ToList();
-
 	PdfDocument document = null;
-
 	bool initial = true;
-
 	foreach(string gridProperty in GridModel)
-
 	{
-
 		GridProperties gridProp = ConvertObject(gridProperty);
-
 		if (initial)
-
 		{
-
 			document = exp.Export(gridProp, EmployeeData, "Export.pdf", true, true, "flat-saffron", true);
-
 			initial = false;
-
 		} else
 
 		{
-
 			exp.Export(gridProp, OrderData, "Export.pdf", true, true, "flat-saffron", false, document, "Second Grid");
-
 		}
-
 	}
-
 }
 
 
@@ -385,87 +284,50 @@ On server before calling the `Export` function, the data source should be proces
 {% highlight c# %}
 
 public void ExportToExcel(string GridModel)
-
 {
-
 	ExcelExport exp = new ExcelExport();
-
 	var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-
 	GridProperties properties = ConvertGridObject(GridModel);
-
 	var dataSource = new DataOperations().Execute(GridModel, DataSource);
-
 	exp.Export(properties, dataSource, "Export.xlsx", ExcelVersion.Excel2010, false, false, "flat-saffron");
 
 }
 
 public void ExportToWord(string GridModel)
-
 {
-
 	WordExport exp = new WordExport();
-
 	var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-
 	GridProperties properties = ConvertGridObject(GridModel);
-
 	var dataSource = new DataOperations().Execute(GridModel, DataSource);
-
 	exp.Export(properties, dataSource, "Export.docx", false, false, "flat-saffron");
-
 }
-
 public void ExportToPdf(string GridModel)
-
 {
-
 	PdfExport exp = new PdfExport();
-
 	var DataSource = new NorthwindDataContext().OrdersViews.ToList();
-
 	GridProperties properties = ConvertGridpropertiesect(GridModel);
-
 	var dataSource = new DataOperations().Execute(GridModel, DataSource);
-
 	exp.Export(properties, dataSource, "Export.pdf", false, false, "flat-saffron");
-
 }
 
 private GridProperties ConvertGridpropertiesect(string gridProperty)
-
 {
-
 	JavaScriptSerializer serializer = new JavaScriptSerializer();
-
 	IEnumerable div = (IEnumerable) serializer.Deserialize(gridProperty, typeof(IEnumerable));
-
 	GridProperties gridProp = new GridProperties();
-
 	foreach(KeyValuePair < string, propertiesect > ds in div)
-
 	{
-
 		var property = gridProp.GetType().GetProperty(ds.Key, BindingFlags.Instance ' BindingFlags.Public ' BindingFlags.IgnoreCase);
-
 		if (property != null)
-
 		{
-
 			Type type = property.PropertyType;
-
 			string serialize = serializer.Serialize(ds.Value);
-
 			propertiesect value = serializer.Deserialize(serialize, type);
-
 			property.SetValue(gridProp, value, null);
-
 		}
-
 	}
 
 	return gridProp;
-
 }
 
 
@@ -512,17 +374,11 @@ Also, it have `none` option which will export the grid without any theme.  The d
 public void ExcelExport()
 
 {
-
 	string gridModel = HttpContext.Current.Request.Params["GridModel"];
-
 	GridProperties gridProperty = ConvertGridObject(gridModel);
-
 	ExcelExport exp = new ExcelExport();
-
 	IEnumerable < Order > result = db.Orders.ToList();
-
 	exp.Export(gridProperty, result, "Export.xlsx", ExcelVersion.Excel2010, false, false, " gradient-azure");
-
 }
 
 {% endhighlight %}

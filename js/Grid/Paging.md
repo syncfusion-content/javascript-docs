@@ -35,7 +35,7 @@ The following output is displayed as a result of the above code example.
 
 ## Pager with query string
 
-You can pass the current page information as a [query](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-enablequerystring "query") string while navigating to other page. To enable query string, set the [`enableQueryString`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-enablequerystring "enableQueryString") property of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "pageSettings") as `true`.
+You can pass the current page information as a query string while navigating to other page. To enable query string, set the [`enableQueryString`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-enablequerystring "enableQueryString") property of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "pageSettings") as `true`.
 
 The following code example describes the above behavior.
 
@@ -62,7 +62,7 @@ The following output is displayed as a result of the above code example.
 
 ## Pager template
 
-Apart from default pager, there is an option to render a specific custom [template](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "template") in a grid pager. To render template in pager, set [`enableTemplates`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-enabletemplates "enableTemplates") as true and [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "template") properties of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "pageSettings").
+Apart from default pager, there is an option to render a specific custom template in a grid pager. To render template in pager, set [`enableTemplates`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-enabletemplates "enableTemplates") as true and [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "template") properties of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "pageSettings").
 
 Prevent to show the default pager while enabling the pager [`template`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-template "template") by setting [`showDefaults`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings-showdefaults "showDefaults") property of [`pageSettings`](http://help.syncfusion.com/js/api/ejgrid#members:pagesettings "pageSettings") as `false`.
 
