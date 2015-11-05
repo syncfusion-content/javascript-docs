@@ -27,23 +27,23 @@ N> Leave this textbox blank if you want to display the full link as hyperlink in
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="texteditor"></textarea>
 
-<script type="text/javascript">
+<script type="text/javascript">
 
-$(function () {
+        $(function () {
 
-$("#texteditor").ejRTE({
-value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-toolsList: ["links"],
-tools: {
-links: ["createLink", "removeLink"]
-}
+            $("#texteditor").ejRTE({
+                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+                toolsList: ["links"],
+                tools: {
+                    links: ["createLink", "removeLink"]
+                }
 
-});
+            });
 
-});
+        });
 
 </script>
 {% endhighlight %}

@@ -19,51 +19,11 @@ The editor has full keyboard accessibility that includes shortcuts to open and o
 <tr>
 <td>
 Arrow keys<br/><br/></td><td>
-Move between options in an open drop-down list<br/><br/></td></tr>
+When a toolbar is focused  Move between options in an open drop-down list<br/><br/></td></tr>
 <tr>
 <td>
 Enter<br/><br/></td><td>
 Execute the selected button, drop-down item<br/><br/></td></tr>
-<tr>
-<td>
-Tab<br/><br/></td><td>
-When a toolbar is active, focuses to the next tool<br/><br/></td></tr>
-<tr>
-<td>
-Shift + Tab<br/><br/></td><td>
-When a toolbar is active, focuses to the previous tool<br/><br/></td></tr>
-<tr>
-<td>
-SHIFT + F10<br/><br/></td><td>
-Open a selected drop-down list<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Open hyperlink dialog<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Remove hyperlink<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Open custom table dialog<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Edit table properties<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Focus the footer<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Focus to HTML view<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Insert or edit image dialog<br/><br/></td></tr>
 <tr>
 <td>
 ESC<br/><br/></td><td>
@@ -116,15 +76,7 @@ Make text italic<br/><br/></td></tr>
 <td>
 CTRL + B<br/><br/></td><td>
 Make text bold<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Decrease font size<br/><br/></td></tr>
-<tr>
-<td>
-<br/><br/></td><td>
-Increase font size<br/><br/></td></tr>
-</table>
+
 To disable the keyboard navigation, set the [allowKeyboardNavigation](http://help.syncfusion.com/js/api/ejrte#members:allowkeyboardnavigation) property of the editor to false (its default value is true). It will disable all the keyboard navigation shortcuts except for the UP/DOWN keys and PAGE UP/PAGE DOWN keys.
 
 {% highlight js %}

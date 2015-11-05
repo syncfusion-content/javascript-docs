@@ -18,16 +18,16 @@ If you want to insert an image from online source like google, ping, etc., you n
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
-<script type="text/javascript">
-$(function () {
-$("#texteditor").ejRTE({
-toolsList: ["images"],
-tools: {
-images: ["image"]
-}
-});
-});
+<textarea id="texteditor"></textarea>
+<script type="text/javascript">
+    $(function () {
+        $("#texteditor").ejRTE({
+            toolsList: ["images"],
+            tools: {
+                images: ["image"]
+            }
+        });
+    });
 </script>
 {% endhighlight %}
 
@@ -40,30 +40,30 @@ Configure the imageBrowser and fileBrowser property to insert an image from your
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
-<script type="text/javascript">
+<textarea id="texteditor"></textarea>
+<script type="text/javascript">
 
-var fileService = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction";
+    var fileService = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction";
 
-$(function () {
+    $(function () {
 
-$("#texteditor").ejRTE({
-toolsList: ["images"],
-tools: { images: ["image"] },
-imageBrowser: {
-filePath: "http://mvc.syncfusion.com/OdataServices/FileBrowser/",
-ajaxAction: fileService,
-extensionAllow: "*.png, *.gif, *.jpg, *.jpeg"
-},
+        $("#texteditor").ejRTE({
+            toolsList: ["images"],
+            tools: { images: ["image"] },
+            imageBrowser: {
+                filePath: "http://mvc.syncfusion.com/OdataServices/FileBrowser/",
+                ajaxAction: fileService,
+                extensionAllow: "*.png, *.gif, *.jpg, *.jpeg"
+            },
 
-fileBrowser: {
-filePath: "http://mvc.syncfusion.com/OdataServices/FileBrowser/",
-ajaxAction: fileService,
-extensionAllow: "*.txt, *.pdf"
-}
-});
+            fileBrowser: {
+                filePath: "http://mvc.syncfusion.com/OdataServices/FileBrowser/",
+                ajaxAction: fileService,
+                extensionAllow: "*.txt, *.pdf"
+            }
+        });
 
-});
+    });
 
 </script>
 {% endhighlight %}
@@ -97,18 +97,18 @@ The editor provides you to set the width and height properties to change the siz
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
-<script type="text/javascript">
+<textarea id="texteditor"></textarea>
+<script type="text/javascript">
 
-$(function () {
+    $(function () {
 
-$("#texteditor").ejRTE({
-toolsList: ["images"],
-tools: { images: ["image"] },
-showDimensions: false
-});
+        $("#texteditor").ejRTE({
+            toolsList: ["images"],
+            tools: { images: ["image"] },
+            showDimensions: true
+        });
 
-});
+    });
 
 </script>
 {% endhighlight %}

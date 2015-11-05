@@ -20,23 +20,23 @@ By default, [Insert Table](http://help.syncfusion.com/js/api/ejrte#members:tools
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
+<textarea id="texteditor"></textarea>
 
-<script type="text/javascript">
+<script type="text/javascript">
 
-$(function () {
+        $(function () {
 
-$("#texteditor").ejRTE({
-value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-toolsList: ["tables"],
-tools: {
-tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"]
-}
+            $("#texteditor").ejRTE({
+                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+                toolsList: ["tables"],
+                tools: {
+                    tables: ["createTable", "addRowAbove", "addRowBelow", "addColumnLeft", "addColumnRight", "deleteRow", "deleteColumn", "deleteTable"]
+                }
 
-});
+            });
 
-});
+        });
 
 </script>
 {% endhighlight %}
@@ -87,40 +87,6 @@ After you create a table, you can format the entire table by using **Table** **P
 
 
 N> When you click in a table cell, the **Table** **Properties** option will be enabled under **Table** tool on the editor’s toolbar.
-
-## Resize a Table, Row, or Column
-
-You can change the size of table or row or column by adjust the table size, column width, or row height.
-
-### Resize a Table
-
-* To resize the table, handle will be displayed at lower-right corner of table on focus the table. You can drag the handle until the table is the size you want. 
-
-![](WorkingwithTables_images/WorkingwithTables_img5.jpeg)
-
-
-* Focus inside the table and specify the height and width that you want on the Table Properties dialog.
-
-![](WorkingwithTables_images/WorkingwithTables_img6.jpeg)
-
-
-### Resize a Row
-
-* To change the row height, resize handle will be appeared when you place the cursor on the row boundary. You can drag the boundary until the row is the height you want. 
-
-* Focus on the cell and specify the height in the Row tab on the Table Properties dialog.
-
-![](WorkingwithTables_images/WorkingwithTables_img7.jpeg)
-
-
-### Resize a Column
-
-* To change the column width, resize handle will be appeared when you place the cursor on the right of the column boundary. You can drag the boundary until the column is the width you want. 
-
-* Focus on the cell and specify the width in the cell tab on the Table Properties dialog.
-
-![](WorkingwithTables_images/WorkingwithTables_img8.jpeg)
-
 
 ## Delete a table
 

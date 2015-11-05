@@ -19,24 +19,25 @@ N> the selection highlight is invisible if the editor does not have focus. So, i
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
-<button onclick="selectAll()">Select All</button>
+<textarea id="texteditor"></textarea>
 
-<script type="text/javascript">
+<button onclick="selectAll()">Select All</button>
 
-$(function () {
+<script type="text/javascript">
 
-$("#texteditor").ejRTE({
-value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-});
+        $(function () {
 
-});
+            $("#texteditor").ejRTE({
+                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            });
 
-function selectAll() {
-var editor = $("#texteditor").ejRTE("instance");
-editor.selectAll();
-}
+        });
+
+        function selectAll() {
+            var editor = $("#texteditor").ejRTE("instance");
+            editor.selectAll();
+        }
 
 </script>
 {% endhighlight %}
@@ -47,26 +48,29 @@ You can programmatically select a range of content in the editor using the selec
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
-<script type="text/javascript">
+<textarea id="texteditor"></textarea>
 
-$(function () {
+<script type="text/javascript">
 
-$("#texteditor").ejRTE({
-value: "<ul>" +
-"<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>" +
-"<li>Aliquam tincidunt mauris eu risus.</li>" +
-"<li>Vestibulum auctor dapibus neque.</li>" +
-"</ul>"
-});
+        $(function () {
 
-var editor = $("#texteditor").ejRTE("instance");
-range = editor.createRange();
-var liTag = document.getElementsByTagName("li");
-range.setStart(liTag[2], 3);
-range.setEnd(liTag[3], 3);
-editor.selectRange(range);
-});
+            $("#texteditor").ejRTE({
+                value: "<ul>" + "<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>" + "<li>Aliquam tincidunt mauris eu risus.</li>" + "<li>Vestibulum auctor dapibus neque.</li>" + "</ul>"
+            });
+
+            var editor = $("#texteditor").ejRTE("instance");
+            range = editor.createRange();
+            var liTag = $(editor.getDocument().body).find("li");        
+            if (!editor._isIE8()) {
+                range.setStart(liTag[1], 0);
+                range.setEnd(liTag[2], 1);
+            }
+            else {
+                range = editor.getDocument().body.createTextRange()
+                range.moveToElementText(liTag[2]);
+            }
+            editor.selectRange(range);
+        });
 
 </script>
 {% endhighlight %}
@@ -80,25 +84,25 @@ The following public methods helps you to retrieve the selected content from the
 
 {% highlight html %}
 
-<textarea id="texteditor"></textarea>
-<button onclick="getSelection()">get Selection</button>
+<textarea id="texteditor"></textarea>
+<button onclick="getSelection()">get Selection</button>
 
-<script type="text/javascript">
+<script type="text/javascript">
 
-$(function () {
+        $(function () {
 
-$("#texteditor").ejRTE({
-value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-});
+            $("#texteditor").ejRTE({
+                value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+                " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            });
 
-});
+        });
 
-function getSelection() {
-var editor = $("#texteditor").ejRTE("instance");
-var selectedText = editor.getSelectedText();
-var selectedHtml = editor.getSelectedHtml();
-}
+        function getSelection() {
+            var editor = $("#texteditor").ejRTE("instance");
+            var selectedText = editor.getSelectedText();
+            var selectedHtml = editor.getSelectedHtml();
+        }
 
 </script>
 {% endhighlight %}
