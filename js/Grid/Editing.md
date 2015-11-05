@@ -307,17 +307,17 @@ The following code example describes the above behaviour.
 		<tr>
 			<td>Order ID</td>
 			<td>
-				<input id="OrderID" name="OrderID" disabled="disabled" value="{{:OrderID}}" />
+				<input id="OrderID" name="OrderID" disabled="disabled" value="{{"{{"}}:OrderID{{}}}}" />
 			</td>
 			<td>Customer ID</td>
 			<td>
-				<input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
+				<input id="CustomerID" name="CustomerID" value="{{"{{"}}:CustomerID{{}}}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
 			</td>
 		</tr>
 		<tr>
 			<td>Employee ID</td>
 			<td>
-				<input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+				<input type="text" id="EmployeeID" name="EmployeeID" value="{{"{{"}}:EmployeeID{{}}}}" />
 			</td>
 			<td>Ship City</td>
 			<td>
@@ -446,17 +446,17 @@ The following code example describes the above behaviour.
 		<tr>
 			<td>Order ID</td>
 			<td>
-				<input id="OrderID" name="OrderID" disabled="disabled" value="{{:OrderID}}" class="e-field e-ejinputtext" style="width:116px;height:28px" />
+				<input id="OrderID" name="OrderID" disabled="disabled" value="{{"{{"}}:OrderID{{}}}}" class="e-field e-ejinputtext" style="width:116px;height:28px" />
             </td>
 			<td>Customer ID</td>
 			<td>
-				<input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
+				<input id="CustomerID" name="CustomerID" value="{{"{{"}}:CustomerID{{}}}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
 			</td>
 		</tr>
 		<tr>
 			<td>Employee ID</td>
 			<td>
-				<input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+				<input type="text" id="EmployeeID" name="EmployeeID" value="{{"{{"}}:EmployeeID{{}}}}" />
 			</td>
 			<td>Ship City</td>
 			<td>
@@ -632,17 +632,17 @@ The following code example describes the above behaviour.
    <tr>
       <td>Order ID</td>
       <td>
-         <input id="OrderID" name="OrderID" disabled="disabled" value="{{:OrderID}}" class="e-field e-ejinputtext" style="width:116px;height:28px" />           
+         <input id="OrderID" name="OrderID" disabled="disabled" value="{{"{{"}}:OrderID{{}}}}" class="e-field e-ejinputtext" style="width:116px;height:28px" />           
       </td>
       <td>Customer ID</td>
       <td>
-         <input id="CustomerID" name="CustomerID" value="{{:CustomerID}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
+         <input id="CustomerID" name="CustomerID" value="{{"{{"}}:CustomerID{{}}}}" class="e-field e-ejinputtext" style="width: 116px; height: 28px" />
       </td>
    </tr>
    <tr>
       <td>Employee ID</td>
       <td>
-         <input type="text" id="EmployeeID" name="EmployeeID" value="{{:EmployeeID}}" />
+         <input type="text" id="EmployeeID" name="EmployeeID" value="{{"{{"}}:EmployeeID{{}}}}" />
       </td>
       <td>Ship City</td>
       <td>
