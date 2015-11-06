@@ -95,7 +95,7 @@ For more information about data source, refer to [Data Binding](/js/Diagram/Data
 
 Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/js/Diagram/Tools "Drawing-Tools:Connectors").
 
-### Update Connector at runtime
+## Update Connector at runtime
 
 The client side method, `updateConnector` is used to update the connectors at run time. The following code example illustrates how to update a connector at runtime.
 
@@ -226,7 +226,7 @@ The path of the connector is defined with a collection of segments. There are th
 ### Straight
 
 Straight segment allows to create a straight line.
-To create a straight line, you have to add a straight segment to `segments` collection of connector and the `type` of the segment should be specified as "straight". The following code example illustrates how to create a default straight segment.
+To create a straight line, you should specify the `type` of the segment as "straight" and add a straight segment to `segments` collection. The following code example illustrates how to create a default straight segment.
 
 {% highlight js %}
 
@@ -249,7 +249,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img6.png)
+![](/js/Diagram/Connector_images/connector_img6.png)
 
 The `point` property of straight segment allows you to define the end point of it. The following code example illustrates how to define the end point of a straight segment.
 

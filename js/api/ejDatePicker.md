@@ -843,7 +843,7 @@ Example
 //To set fields API value during initialization         
 // declaration
 $("#datepicker").ejDatePicker({ 
-specialDates: window.spldays, fields: {date:"date",tooltip:"tooltip",icon:"icon"}});
+specialDates: window.spldays, fields: {date:"date",tooltip:"tooltip",iconClass:"iconClass"}});
 </script>{% endhighlight %}
 
 
@@ -874,8 +874,8 @@ Specifies the date.
 
 
 
-### fields.icon<span class="type-signature type string">String</span>
-{:#members:fields-icon}
+### fields.iconClass<span class="type-signature type string">String</span>
+{:#members:fields-iconClass}
 
 
 
@@ -884,7 +884,7 @@ Specifies the date.
 
 
 
-Specifies the icon to date.
+Specifies the icon class to date.
 
 
 

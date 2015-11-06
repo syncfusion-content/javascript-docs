@@ -44,7 +44,7 @@ To show tooltip on mouse over, the `tooltip` property of Diagram model needs to 
 <!--Define tooltip template-->
 <script type="text/x-jsrender" id="mouseovertooltip">
 	<div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
-		<span style="padding: 5px;">{{"{{"}}:Designation{{}}}}</span>
+		<span style="padding: 5px;"> {{"{{"}}:Designation{{}}}} </span>
 	</div>
 </script>
 
@@ -104,6 +104,7 @@ Tooltips can be customized for every node. Tooltip can be defined for individual
 {% highlight js %}
 
 var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
+
 //Customizes tooltip for a node/connector
 var node = {
 	//Remove InheritTooltip not to inherit the tooltip defined in model
@@ -135,13 +136,15 @@ Diagram provides support to show tooltip around the node/connector that is hover
 <!--Define tooltip template-->
 <script type="text/x-jsrender" id="mouseovertooltip">
 	<div style="background-color: #F08080; color: white; padding: 5px;">
-		<span>{{"{{"}}:Designation{{}}}}</span>
+		<span> {{"{{"}}:Designation{{}}}} </span>
 	</div>
 </script>
 
 {% endhighlight %}
 
 {% highlight js %}
+
+var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 
 var node = {
 	name: "elizabeth", width: 70, height: 40, offsetX: 100, offsetY: 100,
@@ -174,6 +177,8 @@ var node = {
 To display the tooltip at mouse position, you need to set "mouse" option to the `relativeMode` property of tooltip. The following code example illustrates how to show tooltip at mouse position.
 
 {% highlight js %}
+
+var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 
 //Defines tooltip template as mentioned in the previous snippet
 var node = {

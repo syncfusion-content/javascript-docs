@@ -8,11 +8,8 @@ documentation: ug
 ---
 
 # Constraints
-Constraints are used to enable/disable certain behaviors of the diagram, node and connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators.
+Constraints are used to enable/disable certain behaviors of the diagram, node and connector. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled/disabled with bitwise operators (`&`, `|`, `~`, `<<`, etc.).
 To know more about bitwise operators, refer to [Bitwise Operations](#bitwise-operations) 
- 
-## DiagramConstraints 
-Diagram constraints allow to enable or disable the following behaviors. 
 
 ## DiagramConstraints
 Diagram constraints allow to enable or disable the following behaviors.
@@ -33,7 +30,7 @@ The following example illustrates how to disable page editing.
 var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
 //Disables PageEditing
 $("#diagram").ejDiagram({
-	constraints: DiagramConstraints.Default &~ DiagramConstraints.PageEditable
+	constraints: DiagramConstraints.Default & ~DiagramConstraints.PageEditable
 });
 
 {% endhighlight %}
@@ -97,7 +94,7 @@ The following code illustrates how to disable selection.
 var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
 var connectors = [{
 	name: "connector",
-	constraints: ConnectorConstraints.Default & ~ ConnectorConstraints.Select
+	constraints: ConnectorConstraints.Default & ~ConnectorConstraints.Select
 }];
 
 $("#diagram").ejDiagram({
@@ -154,7 +151,7 @@ var SelectorConstraints = ej.datavisualization.Diagram.SelectorConstraints;
 $("#diagram").ejDiagram({
 	selectedItems: {
 		//Hides rotator
-		constraints:SelectorConstraints.All & ~ SelectorConstraints.Rotator
+		constraints:SelectorConstraints.All & ~SelectorConstraints.Rotator
 	}
 });
 
@@ -218,11 +215,11 @@ $("#diagram").ejDiagram({
 
 ## Bitwise Operations
 
-**Bitwise Operations** are used to manipulate the flagged enumerations [enum]. In this section, Bitwise Operations are illustrated by using Graph Constraints. The same is applicable while working with Node Constraints, Connector Constraints, or Port Constraints.
+**Bitwise Operations** are used to manipulate the flagged enumerations [enum]. In this section, Bitwise Operations are illustrated by using node Constraints. The same is applicable while working with Node Constraints, Connector Constraints, or Port Constraints.
 
 ### Add Operation
 
-You can **add** or **enable** multiple values at a time by using **Bitwise** ‘|’ (OR) **operator**.
+You can **add** or **enable** multiple values at a time by using **Bitwise** ‘\|’ (OR) **operator**.
 
 {% highlight js %}
 
@@ -238,7 +235,8 @@ You can **remove** or **disable** values by using **Bitwise** ‘&~’ (XO
 
 {% highlight js %}
 
-node.constraints = node.constraints &~ (ej.datavisualization.Diagram.NodeConstraints.Rotate);
+var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
+node.constraints = node.constraints & ~(NodeConstraints.Rotate);
 
 {% endhighlight %}
 

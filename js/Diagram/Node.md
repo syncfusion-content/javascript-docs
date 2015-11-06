@@ -93,7 +93,7 @@ Nodes can be generated automatically with the information provided through data 
 
 Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **DrawingTool**. For more information about drawing nodes, refer to [Draw Nodes](/js/Diagram/Tools "Drawing-Tools:Shapes").
 
-### Update Node at runtime
+## Update Node at runtime
 
 The client side method `updateNode` is used to update the nodes at run time. The following code example illustrates how to update a node at runtime.
 
@@ -116,7 +116,7 @@ The following table illustrates how pivot relates offset values with node bounda
 
 | Pivot | Offset |
 |---|---|
-| (0.5,0.5) | offsetX and offsetY values are considered as the nodeâ??s center point. |
+| (0.5,0.5) | offsetX and offsetY values are considered as the node's center point. |
 | (0,0) | offsetX and offsetY values are considered as the top left corner of node |
 | (1,1) | offsetX and offsetY values are considered as the bottom right corner of the node. |
 
@@ -256,9 +256,10 @@ The following code illustrates how to disable shadow effect at runtime.
 
 var diagram = $("#diagram").ejDiagram("instance");
 var node = diagram.findNode("node");
+var nodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
 
 //Disables Shadow effect for a node.
-constraints = node.constraints &~ nodeConstraints.Shadow;
+constraints = node.constraints & ~nodeConstraints.Shadow;
 diagram.updateNode("node", { constraints: constraints });
 
 {% endhighlight %}
