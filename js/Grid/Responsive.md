@@ -70,7 +70,7 @@ Responsive row with filtering , sorting and searching
 ![](Responsive_images/Responsive_img3.png)
 
 {:caption}
-Crud in mobile layout
+CRUD in mobile layout
 
 ![](Responsive_images/Responsive_img4.png)
 
@@ -236,7 +236,7 @@ MinWidth set to Grid
 
 ## Priority for Columns
 
-Priority makes column to be visible or hidden based on `priority` and browser's width to best accommodate possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
+Columns to be visible or hidden based on `priority` and browser's width to best accommodate for possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
 
 {% highlight html %}
 <div id="Grid"></div>
