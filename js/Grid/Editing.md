@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing with Grid widget for Syncfusion Essential JS
-description: How to perform editing, its functionalities and types
+description: How to perform editing and configure edit time functionalities like edit type, edit time controls etc
 platform: js
 control: Grid
 documentation: ug
