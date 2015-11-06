@@ -74,7 +74,7 @@ When you move the editor’s wrapper element into another DOM element, the edito
 
 ## Editing and Formatting 
 
-The editor’s [toolbar](#_Toolbar) contains buttons and dropdowns that allow you to editing and formatting in your content.
+The editor’s [toolbar](/js/richtexteditor/user-interface#toolbar) contains buttons and dropdowns that allow you to editing and formatting in your content.
 
 * Font name, font size, and color
 * Bold, italic, underline, and strikethrough

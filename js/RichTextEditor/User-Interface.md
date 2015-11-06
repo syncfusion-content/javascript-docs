@@ -136,7 +136,7 @@ The group can be rearranged on customization using the **[toolsList](http://help
 
 
 {% highlight js %}
-$(function (){
+$(function (){
 $("#texteditor").ejRTE({
 toolsList:["links","lists","doAction","style","images"],
 tools:{
@@ -169,7 +169,7 @@ text:"insertcode",
 tooltip:"Insert code snippets",
 css:"e-rte-toolbar-icon insertcode",
 action: function () {
-var rte = $("#texteditor").data("ejRTE");
+var rte=$("#texteditor").data("ejRTE");
 // handle the execute action on click the custom tool
 }
 }]
@@ -228,11 +228,11 @@ showToolbar: false
 
 ## Content Area
 
-The editor creates the iframe element as the content area on control initialization, it is used to display and editing the content. In Content Area, the editor displays only the body tag of a &lt; iframe &gt; document. To set or modify details in the &lt; head &gt; tag, use [Source view](#_HTML_View) of the editor.
+The editor creates the iframe element as the content area on control initialization, it is used to display and editing the content. In Content Area, the editor displays only the body tag of a &lt; iframe &gt; document. To set or modify details in the &lt; head &gt; tag, use [Source view](#source-view) of the editor.
 
 ### Iframe Attributes
 
-The editor allows you to passing an additional attributes to body tag of a &lt; iframe &gt; element using [iframeAttributes](http://help.syncfusion.com/js/api/ejrte#members:iframeattribute) property. The property contains name/value pairs in string format, it is used to override the default appearance of the content area. For example, the content area’s font, color, margins, and background can be overridden using iframeAttributes property. You can specifies the editable behavior (content editable) of the content also in this property. For more information about the content editable, see [content editable](#_ContentEditable).
+The editor allows you to passing an additional attributes to body tag of a &lt; iframe &gt; element using [iframeAttributes](http://help.syncfusion.com/js/api/ejrte#members:iframeattributes) property. The property contains name/value pairs in string format, it is used to override the default appearance of the content area. For example, the content area’s font, color, margins, and background can be overridden using iframeAttributes property. You can specifies the editable behavior (content editable) of the content also in this property. For more information about the content editable, see [content editable](#content-editable).
 
 {% highlight js %}
  $(function () {

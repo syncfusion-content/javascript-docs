@@ -50,23 +50,14 @@ Search text in records</td></tr>
 <div id="Grid"></div>
 <script type="text/javascript">
   $("#Grid").ejGrid({
-  
       // the datasource "window.gridData" is referred from jsondata.min.js
-  
       dataSource: window.gridData,
-  
       toolbarSettings: {
-  
           showToolbar: true,
-  
           toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel]
-  
       },
-  
       allowPaging: true,
-  
       editSettings: { allowEditing: true, allowAdding: true,allowDeleting: true},
-  
       columns:
           [
               { field: "OrderID", isPrimaryKey: true, headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 90 },

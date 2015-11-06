@@ -80,7 +80,7 @@ You can programmatically select a range of content in the editor using the selec
 The following public methods helps you to retrieve the selected content from the editor:
 
 * **getSelectedText** method is used to get the currently selected content as raw text.
-* getSelectedHtml method is used to get the HTML source of currently selected content.
+* **getSelectedHtml** method is used to get the HTML source of currently selected content.
 
 {% highlight html %}
 
