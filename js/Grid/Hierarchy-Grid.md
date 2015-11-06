@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Hierarchical Bindings
 
-Hierarchical binding can enabled by defining [`childGrid`](http://help.syncfusion.com/js/api/ejgrid#members:childgrid "childGrid") and `childGrid.queryString`. `childGrid` is to define options of child. `childGrid.queryString` is to define relation between parent and child grid.
+Hierarchical binding can be used to create the Grid with parent and child relation, this facilitate you to view the child records for a paricular row by clicking on the Expander button present in first column of each grid row. This can be enabled by defining [`childGrid`](http://help.syncfusion.com/js/api/ejgrid#members:childgrid "childGrid") and `childGrid.queryString`. [`childGrid`](http://help.syncfusion.com/js/api/ejgrid#members:childgrid "childGrid") is to define options of child and `childGrid.queryString` is to define the relation between parent and child grid.
 
 {% highlight html %}
 
