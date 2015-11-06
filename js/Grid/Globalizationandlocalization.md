@@ -314,13 +314,13 @@ I> You need to change pager locale in `ej.Pager.locale` object.
 ## Excel-Filter Localization
 
 
-All text in Grid can be localized using `ej.ExcelFilter.locale` object. Please find the table with list of properties and its value in locale object.
+All text in Excel-Filter can be localized using `ej.ExcelFilter.locale` object. Please find the table with list of properties and its value in locale object.
 
 <table>
 <tr>
-<td>
-Locale key words </td><td>
-Text</td></tr>
+<th>
+Locale key words </th><th>
+Text</th></tr>
 <tr>
 <td>
 SortNoSmaller</td><td>
