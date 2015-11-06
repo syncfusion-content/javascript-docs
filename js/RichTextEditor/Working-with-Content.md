@@ -305,17 +305,16 @@ If you want to add additional fonts to font drop-down, pass the font information
 If you want to insert/paste the content at the current cursor position (or) to replace the selected content with some formatting, you can use pasteContent method in the editor.
 
 {% highlight js %}
-$(function () {
-   $("#texteditor").ejRTE({
-            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+$(function () {
+        $("#texteditor").ejRTE({
+            value:"The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
             " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
         });
     });
-    function pasteContent() {
-        var editor = $("#texteditor").ejRTE("instance");
-        var selectedHtml = editor.getSelectedHtml();
-        editor.pasteContent("<p style ='background-color:yellow;color:skyblue'>
-            " + selectedHtml + "  </p>");
+    function pasteContent() {
+        var editor = $("#texteditor").ejRTE("instance");
+        var selectedHtml = editor.getSelectedHtml();
+        editor.pasteContent("<p style ='background-color:yellow;color:skyblue'>" + selectedHtml + "</p>");
     }
 {% endhighlight %}
 
