@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility with Grid widget for Syncfusion Essential JS
-description: How to access grid with keyboard navigation 
+description: What are all accessibilties available in ejGrid
 platform: js
 control: Grid
 documentation: ug
