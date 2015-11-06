@@ -64,7 +64,7 @@ This Key-Combination has already been assigned to</td></tr>
 <tr>
 <td>
 GroupCaptionFormat</td><td>
-{{:headerText}}: {{:key}} - {{:count}} {{if count == 1 }} item {{else}} items {{/if}}</td></tr>
+{{"{{"}}:headerText{{}}}}: {{"{{"}}:key{{}}}} - {{"{{"}}:count{{}}}} {{"{{"}}if count == 1 {{}}}} item {{"{{"}}else{{}}}} items {{"{{"}}/if{{}}}}</td></tr>
 <tr>
 <td>
 BatchSaveConfirm</td><td>
@@ -260,45 +260,46 @@ Last Page</td></tr>
 
 <div id="Grid"></div>
 <script type="text/javascript">
-ej.Grid.locale["de-DE"] = {
-EmptyRecord: "Keine Aufzeichnungen angezeigt",
-GroupDropArea: "Ziehen Sie eine Spaltenüberschrift hier",
-DeleteOperationAlert: "Keine Einträge für Löschvorgang ausgewählt",
-EditOperationAlert: "Keine Einträge für Bearbeiten Betrieb ausgewählt",
-SaveButton: "Speichern",
-CancelButton: "stornieren",
-EditFormTitle: "Korrektur von",
-GroupCaptionFormat: "{{:field}}: {{:key}} - {{:count}} {{if count == 1}}Beiträge{{else}}Beiträges{{/if}}",
-UnGroup: "Klicken Sie hier, um die Gruppierung aufheben"
-};
-ej.Pager.locale["de-DE"] = {
-pagerInfo: "{0} von {1} Seiten ({2} Beiträge)",
-firstPageTooltip: "Zur ersten Seite",
-lastPageTooltip: "Zur letzten Seite",
-nextPageTooltip: "Zur nächsten Seite",
-previousPageTooltip: "Zurück zur letzten Seite",
-nextPagerTooltip: "Zum nächsten Pager",
-previousPagerTooltip: "Zum vorherigen Pager"
-};
-$("#Grid").ejGrid({
-// the datasource "window.gridData" is referred from jsondata.min.js
-dataSource: window.gridData,
-locale: "de-DE",
-allowPaging: true,
-allowGrouping: true,
-groupSettings: {
-enableDropAreaAnimation: false
-},
-columns:
-	[
-		{ field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 75 },
-		{ field: "CustomerID", headerText: "Customer ID", width: 95 },
-		{ field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 95 },
-		{ field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
-		{ field: "ShipCity", headerText: "Ship City", width: 80 }
-	]
-});
 
+ ej.Grid.locale["de-DE"] = {
+    EmptyRecord: "Keine Aufzeichnungen angezeigt",
+    GroupDropArea: "Ziehen Sie eine Spaltenüberschrift hier",
+    DeleteOperationAlert: "Keine Einträge für Löschvorgang ausgewählt",
+    EditOperationAlert: "Keine Einträge für Bearbeiten Betrieb ausgewählt",
+    SaveButton: "Speichern",
+    CancelButton: "stornieren",
+    EditFormTitle: "Korrektur von",
+    GroupCaptionFormat: "{{"{{"}}:field{{}}}}: {{"{{"}}:key{{}}}} - {{"{{"}}:count{{}}}} {{"{{"}}if count == 1{{}}}}Beiträge{{"{{"}}else{{}}}}Beiträges{{"{{"}}/if{{}}}}",
+    UnGroup: "Klicken Sie hier, um die Gruppierung aufheben"
+ };
+ ej.Pager.locale["de-DE"] = {
+    pagerInfo: "{0} von {1} Seiten ({2} Beiträge)",
+    firstPageTooltip: "Zur ersten Seite",
+    lastPageTooltip: "Zur letzten Seite",
+    nextPageTooltip: "Zur nächsten Seite",
+    previousPageTooltip: "Zurück zur letzten Seite",
+    nextPagerTooltip: "Zum nächsten Pager",
+    previousPagerTooltip: "Zum vorherigen Pager"
+ };
+ 
+ $("#Grid").ejGrid({
+     // the datasource "window.gridData" is referred from jsondata.min.js
+     dataSource: window.gridData,
+     locale: "de-DE",
+     allowPaging: true,
+     allowGrouping: true,
+     groupSettings: {
+         enableDropAreaAnimation: false
+     },
+     columns:
+         [
+            { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 75 },
+            { field: "CustomerID", headerText: "Customer ID", width: 95 },
+            { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 95 },
+            { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 75, format: "{0:C}" },
+            { field: "ShipCity", headerText: "Ship City", width: 80 }
+         ]        
+});
 </script>
 
 
@@ -414,6 +415,10 @@ DateMenuOptions</td><td>
 Top10MenuOptions</td><td>
 [{ text:"Top", value:"top"},{text:"Bottom", value:"bottom"}]</td></tr>
 <tr>
+<td>GuidMenuOptions</td>
+<td>[{ text: "Equal", value: "equal" }, { text: "Not Equal", value: "notequal" }, { text: "Custom Filter", value: "customfilter" }]</td>
+</tr>
+<tr>
 <td>
 title</td><td>
 Custom Filter</td></tr>
@@ -421,6 +426,10 @@ Custom Filter</td></tr>
 <td>
 PredicateOr</td><td>
 OR</td></tr>
+<tr>
+<td>
+PredicateAnd</td><td>
+AND</td></tr>
 <tr>
 <td>
 Ok</td><td>
@@ -453,26 +462,6 @@ True</td></tr>
 <td>
 False</td><td>
 False</td></tr>
-<tr>
-<td>
-Search</td><td>
-Search</td></tr>
-<tr>
-<td>
-DatePickerWaterMark</td><td>
-Select date</td></tr>
-<tr>
-<td>
-EmptyDataSource</td><td>
-DataSource must not be empty at initial load since columns are generated from dataSource in AutoGenerate Column Grid</td></tr>
-<tr>
-<td>
-True</td><td>
-True</td></tr>
-<tr>
-<td>
-False</td><td>
-False</td></tr>
 </table>
 Please find the code
 
@@ -496,7 +485,7 @@ Please find the code
       locale: "de-DE",
       allowPaging: true,
       allowFiltering: true,
-       filterSettings: { filterType: "excel"},
+      filterSettings: { filterType: "excel" },
       columns:
           [
               { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 75 },

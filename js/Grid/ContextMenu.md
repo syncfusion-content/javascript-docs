@@ -14,78 +14,132 @@ Context menu is used to improve user action with Grid using popup menu. It can b
 
 Please find the below table for default context menu items and its actions.
 
-<table>
-<tr>
-<th>
-Section</th><th>
-Context menu items</th><th>
-Action</th></tr>
-<tr>
-<td>
-Header </td><td>
-Sort in Ascending Order</td><td>
-Sort column in Ascending order</td></tr>
-<tr>
-<td>
-</td><td>
-Sort in Descending Order</td><td>
-Sort column in Descending order</td></tr>
-<tr>
-<td>
-</td><td>
-Group</td><td>
-Group the current column</td></tr>
-<tr>
-<td>
-</td><td>
-Ungroup</td><td>
-Ungroup the current column if already grouped</td></tr>
-<tr>
-<td>
-Body</td><td>
-Add Record</td><td>
-Start Add new record</td></tr>
-<tr>
-<td>
-</td><td>
-Edit Record</td><td>
-Start Edit in current record</td></tr>
-<tr>
-<td>
-</td><td>
-Delete Record</td><td>
-Delete the current record</td></tr>
-<tr>
-<td>
-</td><td>
-Save</td><td>
-Save the record if Add/Edit record is started</td></tr>
-<tr>
-<td>
-</td><td>
-Cancel</td><td>
-Cancel Added/Edited state</td></tr>
-<tr>
-<td>
-Pager</td><td>
-Next Page</td><td>
-Go to Next Page</td></tr>
-<tr>
-<td>
-</td><td>
-Last Page</td><td>
-Go to Last page</td></tr>
-<tr>
-<td>
-</td><td>
-Previous page</td><td>
-Go to previous page</td></tr>
-<tr>
-<td>
-</td><td>
-First page</td><td>
-Go to first page</td></tr>
-</table>
+ <table>
+        <tr>
+            <th>
+                Section
+            </th>
+            <th>
+                Context menu items
+            </th>
+            <th>
+                Action
+            </th>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                Header
+            </td>
+            <td>
+                Sort in Ascending Order
+            </td>
+            <td>
+                Sort column in Ascending order
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Sort in Descending Order
+            </td>
+            <td>
+                Sort column in Descending order
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Group
+            </td>
+            <td>
+                Group the current column
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ungroup
+            </td>
+            <td>
+                Ungroup the current column if already grouped
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="5">
+                Body
+            </td>
+            <td>
+                Add Record
+            </td>
+            <td>
+                Start Add new record
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Edit Record
+            </td>
+            <td>
+                Start Edit in current record
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Delete Record
+            </td>
+            <td>
+                Delete the current record
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Save
+            </td>
+            <td>
+                Save the record if Add/Edit record is started
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Cancel
+            </td>
+            <td>
+                Cancel Added/Edited state
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                Pager
+            </td>
+            <td>
+                Next Page
+            </td>
+            <td>
+                Go to Next Page
+            </td>
+        </tr>
+        <tr>            
+            <td>
+                Last Page
+            </td>
+            <td>
+                Go to Last page
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Previous page
+            </td>
+            <td>
+                Go to previous page
+            </td>
+        </tr>
+        <tr>
+            <td>
+                First page
+            </td>
+            <td>
+                Go to first page
+            </td>
+        </tr>
+    </table>
 
 
 {% highlight html %}
@@ -93,30 +147,26 @@ Go to first page</td></tr>
 
 <script type="text/javascript">
 
-$("#Grid").ejGrid({
-
-// the datasource "window.gridData" is referred from jsondata.min.js
-	dataSource: window.gridData,
-	contextMenuSettings: {enableContextMenu: true},
-	allowPaging: true,
-	allowSorting: true,
-	allowGrouping: true,
-	pageSettings: {	pageCount: 5},
-	editSettings: {allowEditing: true,allowAdding: true,allowDeleting: true,},
-	columns: 
-		[
-			{field: "OrderID",isPrimaryKey: true,headerText: 'Order ID',textAlign: ej.TextAlign.Right,width: 90},
-			{field: "CustomerID",headerText: 'Customer ID',width: 90},
-			{field: "EmployeeID",headerText: 'Employee ID',editType: ej.Grid.EditingType.Dropdown,textAlign: ej.TextAlign.Right,width: 90},
-			{field: "Freight",headerText: 'Freight',textAlign: ej.TextAlign.Right,width: 80,format: "{0:C}"},
-			{field: "ShipName",headerText: 'Ship Name',width: 150,}
-		]
-
-});
+ $("#Grid").ejGrid({
+            // the datasource "window.gridData" is referred from jsondata.min.js
+            dataSource: window.gridData,
+            contextMenuSettings: { enableContextMenu: true },
+            allowPaging: true,
+            allowSorting: true,
+            allowGrouping: true,
+            pageSettings: { pageCount: 5 },
+            editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, },
+            columns:
+                [
+                    { field: "OrderID", isPrimaryKey: true, headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 90 },
+                    { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+                    { field: "EmployeeID", headerText: 'Employee ID', textAlign: ej.TextAlign.Right, width: 90 },
+                    { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" },
+                    { field: "ShipName", headerText: 'Ship Name', width: 150, }
+                ]
+ });
 
 </script>
-
-
 
 {% endhighlight %}
 
@@ -139,7 +189,7 @@ N> `allowGrouping`, `allowSorting` should be enabled to perform default context 
 
 ## Custom Context Menu
 
-Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`toolbarSettings.customToolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-customtoolbaritems) and bind Actions for this customized context menu in `contextClick` event.
+Custom context menu is used to create your own menu item and its action. To add customized context menu items, you need to use [`toolbarSettings.customToolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-customtoolbaritems) property and to bind required actions for this, use [`contextClick`](http://help.syncfusion.com/js/api/ejgrid#events:contextclick "contextClick") event.
 
 
 {% highlight html %}
@@ -147,30 +197,25 @@ Custom context menu is used to create your own menu item and its action. To add 
 
 <script type="text/javascript">
 
-$("#Grid").ejGrid({
-
-// the datasource "window.gridData" is referred from jsondata.min.js
-
-	dataSource: window.gridData,
-	contextClick: function (args) {
-		if (args.text == "Clear Selection")
-			this.clearSelection();
-		},
-	contextMenuSettings: {enableContextMenu: true,contextMenuItems: [],customContextMenuItems: ["Clear Selection"]},
-	allowPaging: true,
-	columns: [
-		{field: "OrderID",headerText: 'Order ID',textAlign: ej.TextAlign.Right,width: 90},
-		{field: "CustomerID",headerText: 'Customer ID',width: 90},
-		{field: "EmployeeID",headerText: 'Employee ID',textAlign: ej.TextAlign.Right,width: 90},
-		{field: "Freight",headerText: 'Freight',textAlign: ej.TextAlign.Right,width: 80,format: "{0:C}"},
-		{field: "ShipCountry",headerText: 'Ship Country',width: 90}
-		]
-
-});
+ $("#Grid").ejGrid({
+            // the datasource "window.gridData" is referred from jsondata.min.js
+            dataSource: window.gridData,
+            contextClick: function (args) {
+                if (args.text == "Clear Selection")
+                    this.clearSelection();
+            },
+            contextMenuSettings: { enableContextMenu: true, contextMenuItems: [], customContextMenuItems: ["Clear Selection"] },
+            allowPaging: true,
+            columns: [
+                { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 90 },
+                { field: "CustomerID", headerText: 'Customer ID', width: 90 },
+                { field: "EmployeeID", headerText: 'Employee ID', textAlign: ej.TextAlign.Right, width: 90 },
+                { field: "Freight", headerText: 'Freight', textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" },
+                { field: "ShipCountry", headerText: 'Ship Country', width: 90 }
+            ]
+ });
 
 </script>
-
-
 
 {% endhighlight %}
 
