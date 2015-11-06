@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive with Grid widget for Syncfusion Essential JS
-description: How to enable responsive in Grid
+description: How to make the grid responsive to screen resolutions
 platform: js
 control: Grid
 documentation: ug
