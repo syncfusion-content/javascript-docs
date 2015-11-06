@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State Persistence
-description: State Persistence
+title: State Persistence with Grid widget for Syncfusion Essential JS
+description: How to persist grid state across page refresh
 platform: js
 control: Grid
 documentation: ug

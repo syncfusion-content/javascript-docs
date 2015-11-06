@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Paging
-description: paging
+title: Paging with Grid widget for Syncfusion Essential JS
+description: How to enable paging and its functionalites.
 platform: js
 control: Grid
 documentation: ug
 --- 
-
 # Paging
 
 You can display the grid records in paged view, by setting [`allowPaging`](http://help.syncfusion.com/js/api/ejgrid#members:allowpaging "allowPaging") property as `true`. 

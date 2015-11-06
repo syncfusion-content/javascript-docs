@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Accessibility
-description: Accessibility
+title: Accessibility with Grid widget for Syncfusion Essential JS
+description: What are all accessibilties available in ejGrid
 platform: js
 control: Grid
 documentation: ug
 ---
 # Accessibility
 
-Web accessibility is an easy way to create a website or application by worldwide users, including disabled users. You can develop sites with the help of assistive technologies.
+The Grid control provides accessibility support through two features. Those are 
+1. Keyboard Navigation
+2. WAI - ARIA
 
 ## Keyboard Navigation
 
@@ -127,7 +129,7 @@ Collapse All visible groups</td></tr>
 
 
 
-## ARIA
+## WAI - ARIA
 
 This helps enable better user interaction in ejGrid and uses the W3C's Widget Design Patterns in the WAI specification and added customize attributes. Please find the list of ARIA attribute used in Grid.
 

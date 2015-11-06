@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hierarchical
-description: Hierarchical
+title: Hierarchical binding with Grid widget for Syncfusion Essential JS
+description: How to bind the hierarchical data
 platform: js
 control: Grid
 documentation: ug

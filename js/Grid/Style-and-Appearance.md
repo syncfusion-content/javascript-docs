@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styling and appearance
-description: Styling and appearance
+title: Styling and appearance with Grid widget for Syncfusion Essential JS
+description: How to apply styling and appearance
 platform: js
 control: Grid
 documentation: ug
