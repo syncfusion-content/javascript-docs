@@ -16,7 +16,7 @@ The Grid supports three types of filter, they are
 2. Menu 
 3. Excel
 
-And also four types of filter menu is available in all filter type, they are
+And also four types of filter menu is available in all filter types, they are
 
 1. String 
 2. Numeric 
