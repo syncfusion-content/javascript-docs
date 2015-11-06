@@ -42,7 +42,7 @@ The following output is displayed as a result of the above code example.
 
 It provides a detailed view /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the [`detailsTemplate`](http://help.syncfusion.com/js/api/ejgrid#members:detailstemplate "detailsTemplate") property. And also you can change HTML elements in detail template row into JavaScript controls using [`detailsDataBound`](http://help.syncfusion.com/js/api/ejgrid#events:detailsdatabound "detailsDataBound") event.
 
-On enabling details template, new column will be added in grid with an expander arrow in it and that can be expanded or collapsed to show or hide the underlying details row respectively.
+On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details row respectively.
 
 N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
 
