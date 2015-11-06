@@ -151,6 +151,10 @@ ej.autocomplete.min.js</td><td>
 Should be referred when editing is enabled in Spreadsheet.  </td></tr>
 <tr>
 <td>
+ej.chart.min.js</td><td>
+Used this control for chart option is enabled in Spreadsheet.  </td></tr>
+<tr>
+<td>
 ej.ribbon.min.js</td><td>
 These files are used when ribbon option is enabled in Spreadsheet.  </td></tr>
 <tr>
@@ -161,10 +165,6 @@ ej.button.min.js</td><td>
 <td>
 ej.checkbox.min.js</td><td>
 </td></tr>
-<tr>
-<td>
-ej.chart.min.js</td><td>
-These files are used when chart is enabled in Spreadsheet.  </td></tr>
 <tr>
 <td>
 ej.radiobutton.min.js</td><td>
