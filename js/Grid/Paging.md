@@ -1,6 +1,6 @@
 ---
 layout: post
-title: paging with Grid widget for Syncfusion Essential JS
+title: Paging with Grid widget for Syncfusion Essential JS
 description: How to enable paging and its functionalites.
 platform: js
 control: Grid
