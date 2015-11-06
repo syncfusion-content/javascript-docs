@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row with Grid widget for Syncfusion Essential JS
-description: How to use and customized grid row
+description: How to use and customize the grid row
 platform: js
 control: Grid
 documentation: ug
