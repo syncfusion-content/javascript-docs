@@ -203,7 +203,7 @@ The following output is displayed as a result of the above code example.
 
 List of Filter bar Expressions:
 
-You can enter the below filte expressions manually in the filter bar.
+You can enter the below filter expressions manually in the filter bar.
 
  <table>
         <tr>
