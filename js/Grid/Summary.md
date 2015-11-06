@@ -258,7 +258,7 @@ W> Minimum one column should be grouped to show summary details.
 
 ## Group Caption Summary
 
-To enable Group Caption Summary for particular Summary Group, [`SummaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) should have [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showcaptionsummary "showCaptionSummary") should be `true`.
+To show summaries in each Group's Caption row, [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) should have [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showcaptionsummary "showCaptionSummary") should be `true`.
 
 
 {% highlight html %}
