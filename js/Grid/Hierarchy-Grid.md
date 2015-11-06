@@ -8,7 +8,8 @@ documentation: ug
 ---
 # Hierarchical Bindings
 
-Hierarchical binding can enabled by defining [`childGrid`](http://help.syncfusion.com/js/api/ejgrid#members:childgrid "childGrid") and `childGrid.queryString`. `childGrid` is to define options of child. `childGrid.queryString` is to define relation between parent and child grid.
+Hierarchical binding is used to implement schema mapping concepts between parent and child Grid. It Hierarchical binding can enabled by defining [`childGrid`](http://help.syncfusion.com/js/api/ejgrid#members:childgrid "childGrid") and `childGrid.queryString`. [`childGrid`](http://help.syncfusion.com/js/api/ejgrid#members:childgrid "childGrid") is to define options of child. `childGrid.queryString` is to define relation between parent and child grid.
+
 
 {% highlight html %}
 
