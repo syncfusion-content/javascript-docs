@@ -24,21 +24,20 @@ This example shows how to encode the HTML content before form submit event.
 
 <script type ="text/javascript">
 
-        $(function () {
+        $(function () {
         $("#texteditor").ejRTE({
-        value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-        " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
         });
-        });
+    });
 
-        $("form").on("submit", function () {
+    $("form").on("submit", function () {
 
-        var editor = $("#texteditor").data("ejRTE");
-        var encoded = $('<div />').text(editor.model.value).html();
+        var editor = $("#texteditor").data("ejRTE");
+        var encoded = $('<div />').text(editor.model.value).html();
         $("#texteditor").val(encoded);
 
-        });
-
+    });
         </script>
 
 {% endhighlight %}
@@ -91,25 +90,25 @@ The editor’s [toolbar](#_Toolbar) contains buttons and dropdowns that allow yo
 <textarea id ="texteditor"></textarea>
 
 <script type ="text/javascript">
-            $(function () {
-            $("#texteditor").ejRTE({
-            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+           $(function () {
+        $("#texteditor").ejRTE({
+            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
             " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-            toolsList: ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", "casing"],
-            tools: {
-            font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
-            style: ["bold", "italic", "underline", "strikethrough"],
-            alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
-            indenting: ["outdent", "indent"],
-            formatStyle: ["format"],
-            effects: ["superscript", "subscript"],
-            casing: ["upperCase", "lowerCase"],
-            lists: ["unorderedList", "orderedList"],
-            clipboard: ["cut", "copy", "paste"],
-            doAction: ["undo", "redo"]
+            toolsList: ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", "casing"],
+            tools: {
+                font: ["fontName", "fontSize", "fontColor", "backgroundColor"],
+                style: ["bold", "italic", "underline", "strikethrough"],
+                alignment: ["justifyLeft", "justifyCenter", "justifyRight", "justifyFull"],
+                indenting: ["outdent", "indent"],
+                formatStyle: ["format"],
+                effects: ["superscript", "subscript"],
+                casing: ["upperCase", "lowerCase"],
+                lists: ["unorderedList", "orderedList"],
+                clipboard: ["cut", "copy", "paste"],
+                doAction: ["undo", "redo"]
             }
-            });
-            });
+        });
+    });
     </script>
 
 {% endhighlight %}
@@ -129,15 +128,16 @@ To undo and redo operations, do one of the following:
 <textarea id ="texteditor"></textarea>
 
 <script type ="text/javascript">
-$(function () {$("#texteditor").ejRTE({
-value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-toolsList: ["doAction"],
-tools: {
-doAction: ["undo", "redo"]
-}
-});
-});
+$(function () {
+        $("#texteditor").ejRTE({
+            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            toolsList: ["doAction"],
+            tools: {
+                doAction: ["undo", "redo"]
+            }
+        });
+    });
 </script>
 
 {% endhighlight %}
@@ -205,19 +205,19 @@ By default, the editor’s &lt; iframe &gt; is initialized with “Segoe UI” f
  <textarea id ="texteditor"></textarea>
 
 <script type ="text/javascript">
-            $(function () {
-            $("#texteditor").ejRTE({
-            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-            tools: {
-            font: ["fontName", "fontSize", "fontColor", "backgroundColor"]
+      $(function () {
+        $("#texteditor").ejRTE({
+            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images, it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+            tools: {
+                font: ["fontName", "fontSize", "fontColor", "backgroundColor"]
             }
-            });
+        });
 
-            var editor = $("#texteditor").ejRTE("instance");
-            var ddl = editor._fontStyleDDL.ejDropDownList("instance");
-            ddl.selectItemByIndex(7);
-            });
-    </script>
+        var editor = $("#texteditor").ejRTE("instance");
+        var ddl = editor._fontStyleDDL.ejDropDownList("instance");
+        ddl.selectItemByIndex(7);
+    });
+</script>
 {% endhighlight %}
 
 * You can set default font for &lt; iframe &gt;’s body tag using **[iframeAttributes](#_Iframe_Attributes)** property.
@@ -306,16 +306,16 @@ If you want to insert/paste the content at the current cursor position (or) to r
 
 {% highlight js %}
 $(function () {
-    $("#texteditor").ejRTE({
-    value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-    " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-    });
+   $("#texteditor").ejRTE({
+            value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+            " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+        });
     });
     function pasteContent() {
-    var editor = $("#texteditor").ejRTE("instance");
-    var selectedHtml = editor.getSelectedHtml();
-    editor.pasteContent("<p style ='background-color:yellow;color:skyblue'>
-        " + selectedHtml + "  </p>");
- }
+        var editor = $("#texteditor").ejRTE("instance");
+        var selectedHtml = editor.getSelectedHtml();
+        editor.pasteContent("<p style ='background-color:yellow;color:skyblue'>
+            " + selectedHtml + "  </p>");
+    }
 {% endhighlight %}
 
