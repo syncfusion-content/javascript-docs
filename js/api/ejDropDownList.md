@@ -780,7 +780,7 @@ Example
 
 
 ### fields.groupBy<span class="type-signature type string">String</span>
-{:#members:fields-groupBy}
+{:#members:fields-groupby}
 
 
 
@@ -1204,7 +1204,7 @@ Example
 
 
 ### maxPopupHeight <span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:maxPopupHeight}
+{:#members:maxpopupheight}
 
 
 
@@ -1249,7 +1249,7 @@ Example
 
 
 ### minPopupHeight  <span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:minPopupHeight }
+{:#members:minpopupheight }
 
 
 
@@ -1295,7 +1295,7 @@ Example
 {% endhighlight %}
 
 ### maxPopupWidth   <span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:maxPopupWidth }
+{:#members:maxpopupwidth }
 
 
 
@@ -1342,7 +1342,7 @@ Example
 {% endhighlight %}
 
 ### minPopupWidth  <span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:minPopupWidth }
+{:#members:minpopupwidth }
 
 
 
@@ -1389,7 +1389,7 @@ Example
 {% endhighlight %}
 
 ### multiSelectMode   <span class="type-signature type enum">Enum</span> 
-{:#members:minPopupWidth }
+{:#members:multiselectmode }
 
 
 
@@ -1668,7 +1668,7 @@ Example
 
 
 ### selectedIndex <span class="type-signature type number">number</span>
-{:#members:selectedIndex }
+{:#members:selectedindex }
 
 
 
@@ -1719,7 +1719,7 @@ Example
 
 
 ### selectedIndices <span class="type-signature type integerarray">integerarray</span>
-{:#members:selectedIndices}
+{:#members:selectedindices}
 
 
 
@@ -2788,7 +2788,7 @@ Example
 
 
 ### disableItemsByIndices<span class="signature">()</span>
-{:#methods:disableitemsbyindices}
+{:#methods:disableitembyindices}
 
 
 
@@ -2943,7 +2943,7 @@ Example
 
 
 ### enableItemsByIndices<span class="signature">()</span>
-{:#methods:enableitemsbyindices}
+{:#methods:enableitembyindices}
 
 
 
@@ -3311,7 +3311,7 @@ Example
 
 
 ### selectItemsByIndices<span class="signature">()</span>
-{:#methods:selectitemsbyindices}
+{:#methods:selectitembyindices}
 
 
 
@@ -3645,7 +3645,7 @@ Example
 
 
 ### unselectItemsByIndices<span class="signature">()</span>
-{:#methods:unselectitemsbyindices}
+{:#methods:unselectitembyindices}
 
 
 
@@ -3859,7 +3859,7 @@ Example
 
 
 ### actionComplete
-{:#events:actionComplete}
+{:#events:actioncomplete}
 
 
 
