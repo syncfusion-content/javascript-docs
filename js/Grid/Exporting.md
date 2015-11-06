@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export
-description: Export
+title: Export with Grid widget for Syncfusion Essential JS
+description: How to export the Grid to Microsoft Word,Microsoft Excel and PDF file format
 platform: js
 control: Grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Grid
-description: How to Grid
+title: Tooltip and signalR binding with Grid widget for Syncfusion Essential JS
+description: How to use tooltip and signalR binding in Grid
 platform: js
 control: Grid
 documentation: ug

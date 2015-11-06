@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Columns
-description: columns
+title: Columns with Grid widget for Syncfusion Essential JS
+description: How to define the columns and its features
 platform: js
 control: Grid
 documentation: ug
 --- 
-
 # Columns
 
 Column definitions are used as the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") schema in grid and it plays vital role in rendering column values in required format and sorting, filtering, editing based on its type. The [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") property of the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") is necessary to map the datasource values in grid columns.

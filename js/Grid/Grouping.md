@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Grouping
-description: grouping
+title: Grouping with Grid widget for Syncfusion Essential JS
+description: How to enable grouping and its functionalities
 platform: js
 control: Grid
 documentation: ug
 --- 
-
 # Grouping
 
 Grouping is a collection of records that belong to particular category. When grouping is applied, the data is organized into a hierarchical structure based on corresponding column values. To enable grouping, set [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "allowGrouping") property as `true`.

@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Getting started ' Grid ' JavaScript ' Syncfusion
-description: getting started
+title: Getting started with Grid widget for Syncfusion Essential JS
+description: How to create the Grid, data bind, enable paging, grouping, filtering and add summaries
 platform: JS
 control: Grid
 documentation: ug
 ---
-
 # Getting started
 
 ##Preparing HTML document

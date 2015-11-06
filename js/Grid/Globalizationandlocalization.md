@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization and localization
-description: Globalization and localization
+title: Globalization and localization  with Grid widget for Syncfusion Essential JS
+description: How to use globalization and localization 
 platform: js
 control: Grid
 documentation: ug

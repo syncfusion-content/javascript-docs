@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Editing
-description: editing
+title: Editing with Grid widget for Syncfusion Essential JS
+description: How to perform editing and configure edit time functionalities like edit type, edit time controls etc
 platform: js
 control: Grid
 documentation: ug
 --- 
-
 # Editing
 
 The grid control has support for dynamic insertion, updation and deletion of records. You can start the edit either by double click on the particular row or selecting the required row and click on Edit icon in toolbar. Also, you can start adding new record either by clicking on insert icon in toolbar or on external button which is bound to call [`addRecord`](http://help.syncfusion.com/js/api/ejgrid#methods:addrecord "addRecord") method of grid.  `Save` and `Cancel` while on edit mode is possible using respective toolbar icon in grid.

@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Grid-Dependencies
-description: grid dependencies
+title: Dependencies for Grid widget rendered in Syncfusion Essential JS
+description: What is the need for Grid rendering
 platform: js
 control: Grid
 documentation: ug
 ---
-
 # Grid Dependencies
 
 ej.web.all.js is a bundle of all **Essential****JavaScript** controls. If you use ej.web.all.js in your application, you can leave this section or else you can try to render ejgrid in your application using **ej.grid.min.js** file. You can refer the following frameworks and controls in your project.

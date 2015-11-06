@@ -276,7 +276,7 @@ The Spreadsheet control can be created from an HTML `DIV` element with `id` attr
             $('#Spreadsheet').ejSpreadsheet({
                 sheetCount: 3,
                 activeSheetIndex: 1,
-                scrollSettings: { height: 400, width: 900 },
+                scrollSettings: { height: 550, width: 1200 },
 // JSON data can be loaded into Spreadsheet using rangeSettings.dataSource for particular sheet. This is optional
                 sheets: [{
                     rangeSettings: { dataSource: window.defaultData, startCell: "A1", showHeader: true, }
@@ -301,7 +301,7 @@ The Spreadsheet control can be initialized from an Excel file by defining `impor
             $('#Spreadsheet').ejSpreadsheet({
                 sheetCount: 3,
                 activeSheetIndex: 1,
-                scrollSettings: { height: 400, width: 900 },
+                scrollSettings: { height: 550, width: 1200 },
                 importSettings: {
                     importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import",
                     importUrl: "http://mvc.syncfusion.com/beta/JSSpreadSheet/SpreadSheet.xlsx"
@@ -404,7 +404,7 @@ For auto filling, editing and autofill should be enabled using `allowEditing` an
             $('#Spreadsheet').ejSpreadsheet({
                 sheetCount: 3,
                 activeSheetIndex: 1,
-                scrollSettings: { height: 400, width: 900 },
+                scrollSettings: { height: 550, width: 1200 },
                 importSettings: {
                     importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import",
                     importUrl: "http://mvc.syncfusion.com/beta/JSSpreadSheet/SpreadSheet.xlsx"
@@ -435,7 +435,7 @@ The Spreadsheet control provides options to create chart through API and Ribbon.
             $('#Spreadsheet').ejSpreadsheet({
                 sheetCount: 3,
                 activeSheetIndex: 1,
-                scrollSettings: { height: 400, width: 900 },
+                scrollSettings: { height: 550, width: 1200 },
                 importSettings: {
                     importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import",
                     importUrl: "http://mvc.syncfusion.com/beta/JSSpreadSheet/SpreadSheet.xlsx"

@@ -1,12 +1,11 @@
 ---
 layout: post
-title: DataBinding
-description: data binding
+title: DataBinding with Grid widget for Syncfusion Essential JS
+description: How to bind in-memory JSON and remote web services in Grid
 platform: js
 control: Grid
 documentation: ug
 --- 
-
 # Data binding
 
 The Grid control uses [`ej.DataManager`](http://helpjs.syncfusion.com/js/datamanager/overview# "ej.DataManager") which supports both RESTful JSON data services binding and local JSON array binding.  The [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property can be assigned either with the instance of [`ej.DataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager") or JSON data array collection. It supports different kinds of databinding methods such as
