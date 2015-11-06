@@ -54,18 +54,16 @@ Diagram allows to add images as image nodes. For image nodes, the `type` should 
 
 var diagram = ej.datavisualization.Diagram;
 //Creates an Image node
-var nodes = [
-	{
-		name: "imageNode", offsetX: 100, offsetY: 100,
-		width: 50, height: 50,
-		
-		//Sets type of the node as Image
-		type: diagram.Shapes.Image,
-		
-		//Sets url of the image
-		source: "sample/syncfusion.png"
-	}
-];
+var nodes = [{
+	name: "imageNode", offsetX: 100, offsetY: 100,
+	width: 50, height: 50,
+	
+	//Sets type of the node as Image
+	type: diagram.Shapes.Image,
+	
+	//Sets url of the image
+	source: "sample/syncfusion.png"
+}];
 
 {% endhighlight %}
 
@@ -189,7 +187,7 @@ N> When the `shape` is not set for a basic shape, it is considered a "rectangle"
 
 ## Path
 
-Path node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, You need to specify the `type` as "basic" and the `shape` as "path. The `pathData` property of node allows you to define the path to be drawn. The following code illustrates how a Path node is created.
+Path node is a commonly used basic shape that allows visually to represent the geometrical information. To create a path node, You need to specify the `type` as "basic" and the `shape` as "path". The `pathData` property of node allows you to define the path to be drawn. The following code illustrates how a Path node is created.
 
 {% highlight js %}
 
