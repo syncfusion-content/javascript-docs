@@ -9,8 +9,8 @@ documentation: ug
 
 # Context Menu
 
-* In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created.
-* Diagram provides some in-built context menu items and allows to define custom menu items.
+In graphical user interface (GUI), a context menu is a type of menu that appears when you perform right-click operation. Nested level of context menu items can be created.
+Diagram provides some in-built context menu items and allows to define custom menu items.
 
 ## Default Context Menu
 
