@@ -15,8 +15,8 @@ The editor provides tools that make to work with tables in your content. You can
 
 By default, [Insert Table](http://help.syncfusion.com/js/api/ejrte#members:tools-tables) tool is enabled in the editor’s toolbar. There are two ways to insert a table into the editor’s content.
 
-* [Insert a table](#_Insert_a_Table)
-* [Insert a custom table](#_Custom_Table)
+* [Insert a table](#insert-a-table)
+* [Insert a custom table](#custom-table)
 
 {% highlight html %}
 
@@ -48,7 +48,7 @@ You can insert a basic table by select the “Insert Table” tool from toolbar 
 ![](WorkingwithTables_images/WorkingwithTables_img1.png)
 
 
-N> If you want to make any adjustment with drawn table, you can [add/remove rows and columns](#_Inserting/Deleting_Rows_and). 
+N> If you want to make any adjustment with drawn table, you can [add/remove rows and columns](#insert-and-delete-a-row-or-column). 
 
 ### Custom Table
 
