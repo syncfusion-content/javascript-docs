@@ -8,7 +8,7 @@ documentation: ug
 ---
 # State Persistence 
 
-State Persistence is to maintain the grid state in browser's [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) even if browser refresh or move to next page. Grid stores its model in local storage by defining [`enablePersistence`](http://help.syncfusion.com/js/api/ejgrid#members:enablepersistence) as true. 
+State Persistence is to maintain the grid state in browser's [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) even if browser refresh or move to next page. state persistence stores Grid's model in local storage while defining [`enablePersistence`](http://help.syncfusion.com/js/api/ejgrid#members:enablepersistence) as true. 
 
 I>  [localstorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below IE9 then grid state persistence technique is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
 
@@ -61,7 +61,7 @@ I> The given excluded properties can be included in persist state using `_ignore
 
 ## Accessing currently stored state
 
-Persisted state can be accessed through local storage using corresponding key name. Key name formation would be in below order. It is the combination of plugin name and control id.
+Persisted state can be accessed through local storage using corresponding key name. Key name is the combination of plugin name and control id.
 
 {% highlight js %}
 var gridStateString = window.localStorage.ejGridGrid; // grid state as string
@@ -71,5 +71,5 @@ var gridStateObject = JSON.parse(window.localStorage.ejGridGrid);//grid state as
 {% endhighlight %}
 
 
-I> In the above example, ejGrid is plugin name and Grid is control id.        
+I> In the above example, "ejGrid" is plugin name and Grid is control id.        
 
