@@ -1,7 +1,7 @@
 ---
 layout: post
-title: filter
-description: filter
+title: filtering with Grid widget for Syncfusion Essential JS
+description: How to enable filtering and its functionalities
 platform: js
 control: Grid
 documentation: ug

@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Scrolling
-description: scrolling
+title: scrolling with Grid widget for Syncfusion Essential JS
+description: How to enable scrolling and its functionalities
 platform: js
 control: Grid
 documentation: ug
 --- 
-
 # Scrolling
 
 Scrolling can be enabled by setting [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") as `true`. The height and width can be set to grid by using the properties [`scrollSettings.height`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "scrollSettings.width") respectively. 

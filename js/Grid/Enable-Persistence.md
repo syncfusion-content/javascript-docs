@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State Persistence
-description: State Persistence
+title: State Persistence with Grid widget for Syncfusion Essential JS
+description: How to enable statePersistence
 platform: js
 control: Grid
 documentation: ug

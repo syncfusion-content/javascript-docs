@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility
-description: Accessibility
+title: Accessibility with Grid widget for Syncfusion Essential JS
+description: How to access grid with keyboard navigation 
 platform: js
 control: Grid
 documentation: ug

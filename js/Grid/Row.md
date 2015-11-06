@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Row
-description: row
+title: Row with Grid widget for Syncfusion Essential JS
+description: How to use row and its features
 platform: js
 control: Grid
 documentation: ug
 --- 
-
 # Row
 
 It represents the record details that are fetched from the datasource.

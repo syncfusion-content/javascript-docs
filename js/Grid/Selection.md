@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Selection
-description: selection
+title: Selection with Grid widget for Syncfusion Essential JS
+description: How to enable selection and its functionalities
 platform: js
 control: Grid
 documentation: ug
 --- 
-
 # Selection
 
 Selection provides an interactive support to highlight the row, cell or column that you select. Selection can be done through simple Mouse down or Keyboard interaction. To enable selection, set [`allowSelection`](http://help.syncfusion.com/js/api/ejgrid#members:allowselection "allowSelection") as `true`. 

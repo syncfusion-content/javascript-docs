@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export
-description: Export
+title: Export with Grid widget for Syncfusion Essential JS
+description: How to enable export option and its functionalities
 platform: js
 control: Grid
 documentation: ug

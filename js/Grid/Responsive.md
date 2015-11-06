@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive
-description: Responsive
+title: Responsive with Grid widget for Syncfusion Essential JS
+description: How to enable responsive in Grid
 platform: js
 control: Grid
 documentation: ug
