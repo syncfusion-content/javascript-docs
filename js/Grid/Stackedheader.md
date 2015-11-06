@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stacked Headers with Grid widget for Syncfusion Essential JS
-description: How to stackedHeaders with its features
+description: How to stack column Header and customize it
 platform: js
 control: Grid
 documentation: ug
