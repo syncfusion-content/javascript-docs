@@ -13,9 +13,9 @@ The editor has full keyboard accessibility that includes shortcuts to open and o
 
 <table>
 <tr>
-<td>
-**Press******<br/><br/></td><td>
-**To** **do** **this******<br/><br/></td></tr>
+<th>
+Press<br/><br/></th><th>
+To do this<br/><br/></th></tr>
 <tr>
 <td>
 Arrow keys<br/><br/></td><td>
@@ -82,9 +82,9 @@ To disable the keyboard navigation, set the [allowKeyboardNavigation](http://hel
 {% highlight js %}
 
 $("#texteditor").ejRTE({
-value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
-" it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
-allowKeyboardNavigation: false
-});
+        value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+        " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
+        allowKeyboardNavigation: false
+    });
 {% endhighlight %}
 
