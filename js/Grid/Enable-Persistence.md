@@ -8,7 +8,7 @@ documentation: ug
 ---
 # State Persistence 
 
-State Persistence is to maintain the grid state in browser's [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) even if browser refresh or move to next page. state persistence stores Grid's model in local storage while defining [`enablePersistence`](http://help.syncfusion.com/js/api/ejgrid#members:enablepersistence) as true. 
+State Persistence is to maintain the grid state in browser's [local storage](http://www.w3schools.com/html/html5_webstorage.asp#) even if browser refresh or move to next page. State persistence stores Grid's model object in local storage while defining [`enablePersistence`](http://help.syncfusion.com/js/api/ejgrid#members:enablepersistence) as true. 
 
 I>  [localstorage](http://www.w3schools.com/html/html5_webstorage.asp#) is not supported below IE9 then grid state persistence technique is fallback to [cookie](http://www.w3schools.com/js/js_cookies.asp#).
 
@@ -71,5 +71,5 @@ var gridStateObject = JSON.parse(window.localStorage.ejGridGrid);//grid state as
 {% endhighlight %}
 
 
-I> In the above example, "ejGrid" is plugin name and Grid is control id.        
+I> In the above example, "ejGrid" is plugin name and "Grid" is control id.        
 
