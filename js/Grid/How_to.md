@@ -10,13 +10,24 @@ documentation: ug
 
 ## Display Tooltip
 
-To apply tooltip for cells, You need to use [`customAttributes`](http://help.syncfusion.com/js/api/ejgrid#members:columns-customattributes) in columns. For more reference, about [`cutomAttributes`](columns/customAttributes).
+To apply tooltip for cells, You need to use [`customAttributes`](http://help.syncfusion.com/js/api/ejgrid#members:columns-customattributes) in columns. For more reference, about [`cutomAttributes`](http://help.syncfusion.com/js/grid/columns#custom-attribute).
 
-<table>
-<tr>
-<td>
-<div id="Grid"></div><br/><br/><script type="text/javascript"><br/><br/>$("#Grid").ejGrid({<br/><br/>dataSource: window.gridData,<br/><br/>allowPaging: true,<br/><br/>columns: [{<br/><br/>field: "OrderID",<br/><br/>headerText: "Order ID",<br/><br/>width: 75,<br/><br/>textAlign: ej.TextAlign.Right<br/><br/>},<br/><br/>{<br/><br/>field: "CustomerID",<br/><br/>headerText: "Customer ID",<br/><br/>width: 80,<br/><br/>customAttributes: {<br/><br/>title: "{{:CustomerID}}"<br/><br/>}<br/><br/>},<br/><br/>{<br/><br/>field: "EmployeeID",<br/><br/>headerText: "Employee ID",<br/><br/>width: 75,<br/><br/>textAlign: ej.TextAlign.Right<br/><br/>},<br/><br/>{<br/><br/>field: "Freight",<br/><br/>width: 75,<br/><br/>format: "{0:C}",<br/><br/>textAlign: ej.TextAlign.Right<br/><br/>}]<br/><br/>});<br/><br/></script><br/><br/></td></tr>
-</table>
+{% highlight html %}
+<div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+                allowPaging: true,
+                columns: [
+                    { field: "OrderID", headerText: "Order ID", width: 75, textAlign: ej.TextAlign.Right },
+                    { field: "CustomerID", headerText: "Customer ID", width: 80, customAttributes: { title: "{{:CustomerID}}" } },
+                    { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+                    { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right }]
+            });
+        });
+  {% endhighlight %}   
+  
 ## Binding SignalR endpoint
 
 Grid  supports SignalR features for live updates in record. Please find the below option to configure signalR with Grid. 
