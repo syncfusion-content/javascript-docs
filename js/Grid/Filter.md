@@ -53,7 +53,7 @@ The following output is displayed as a result of the above code example.
 
 ## Menu filter
 
-Menu filtering can be enabled by setting [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") as `menu` in the [`filterSettings`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings "filterSettings") property. 
+You can enable menu filter by setting [`filterSettings.filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") as `menu`.
 
 There is an option to show or hide the additional filter options in the menu by setting [`filterSettings.showPredicate`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-showpredicate "filterSettings.showPredicate") as `true` or `false` respectively.
 
