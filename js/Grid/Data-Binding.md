@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataBinding with Grid widget for Syncfusion Essential JS
-description: How to bind the data and its features
+description: How to bind in-memory JSON and remote web services in Grid
 platform: js
 control: Grid
 documentation: ug
