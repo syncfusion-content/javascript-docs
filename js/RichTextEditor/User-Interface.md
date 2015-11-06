@@ -127,8 +127,8 @@ You can customize and rearrange items (buttons and dropdowns) by adding, removin
 The toolbar contains groups, which are similar or related functionalities of toolbar items for efficient access. By default, the groups are arranged using the following order:
 
 {% highlight js %}
-toolsList: ["formatStyle", "font", "style", "effects", "alignment", "lists", "indenting", "clipboard", "doAction", 
-"clear", "links", "images", "media", "tables", "casing", "customTools", "view"]
+toolsList:["formatStyle","font","style","effects","alignment","lists","indenting","clipboard","doAction", 
+"clear","links","images","media","tables","casing","customTools","view"]
 {% endhighlight %}
 
 The group can be rearranged on customization using the **[toolsList](http://help.syncfusion.com/js/api/ejrte#members:toolslist)** property.
@@ -136,15 +136,15 @@ The group can be rearranged on customization using the **[toolsList](http://help
 
 
 {% highlight js %}
-$(function () {
+$(function (){
 $("#texteditor").ejRTE({
-toolsList: ["links", "lists", "doAction", "style", "images"],
-tools: {
-style: ["bold", "italic"],
-lists: ["unorderedList", "orderedList"],
-doAction: ["undo", "redo"],
-links: ["createLink","removeLink"],
-images: ["image"]
+toolsList:["links","lists","doAction","style","images"],
+tools:{
+style:["bold","italic"],
+lists:["unorderedList","orderedList"],
+doAction:["undo","redo"],
+links:["createLink","removeLink"],
+images:["image"]
 }
 });
 
@@ -161,14 +161,14 @@ The editor’s toolbar can be extended through the **customTools** option, which
 $("#texteditor").ejRTE({
 
 toolsList: ["customTools"],
-tools: {
-customTools: [{
-name: "insertcode",
+tools:{
+customTools:[{
+name:"insertcode",
 
-text: "insertcode",
-tooltip: "Insert code snippets",
-css: "e-rte-toolbar-icon insertcode",
-action: function () {
+text:"insertcode",
+tooltip:"Insert code snippets",
+css:"e-rte-toolbar-icon insertcode",
+action: function () {
 var rte = $("#texteditor").data("ejRTE");
 // handle the execute action on click the custom tool
 }
@@ -194,7 +194,7 @@ N> The CSS class that defined for custom tool is directly applies to the newly a
 To remove a particular toolbar item, pass the id of a toolbar item to the [removeToolbarItem](http://help.syncfusion.com/js/api/ejrte#methods:removetoolbaritem) method.
 
 {% highlight js %}
-var rte = $("#texteditor").data("ejRTE");
+var rte = $("#texteditor").data("ejRTE");
 rte.removeToolbarItem("video");
 {% endhighlight %}
 
@@ -205,12 +205,12 @@ N> This method completely removes the DOM element along with the events bounded 
 The state of each toolbar item can be controlled by calling the client-side methods such as [enableToolbarItem](http://help.syncfusion.com/js/api/ejrte#methods:enabletoolbaritem) and [disableToolbatItem](http://help.syncfusion.com/js/api/ejrte#methods:disabletoolbaritem).
 
 {% highlight js %}
-var rte = $("#texteditor").data("ejRTE");
+var rte = $("#texteditor").data("ejRTE");
 rte.disableToolbarItem("video");
 {% endhighlight %}
 
 {% highlight js %}
-var rte = $("#texteditor").data("ejRTE");
+var rte = $("#texteditor").data("ejRTE");
 rte.enableToolbarItem("video");
 {% endhighlight %}
 
@@ -222,7 +222,7 @@ The toolbar can be initially set to visible or hidden within the editor using [s
 
 {% highlight js %}
 $("#texteditor").ejRTE({
-showToolbar: false
+showToolbar: false
 });
 {% endhighlight %}
 
@@ -343,7 +343,7 @@ This option allows you to specify which footer elements should display at the bo
 
 {% highlight js %}
 $("#texteditor").ejRTE({
-showFooter: true
+showFooter: true
 });
 {% endhighlight %}
 
@@ -356,7 +356,7 @@ You can paste HTML text into Source view. If you cut or copy from HTML source su
 {% highlight js %}
 $("#texteditor").ejRTE({
 showFooter:true,
-showHtmlSource: true
+showHtmlSource:true
 });
 {% endhighlight %}
 
@@ -368,8 +368,8 @@ The HTML tag info tool that shows the path of currently selected tag along with 
 
 {% highlight js %}
 $("#texteditor").ejRTE({
-showFooter: true,
-showHtmlTagInfo: true
+showFooter:true,
+showHtmlTagInfo:true
 });
 {% endhighlight %}
 
@@ -403,8 +403,8 @@ The clear format tool is useful to remove all formatting styles (such as bold, i
 
 {% highlight js %}
 $("#texteditor").ejRTE({
-showFooter: true,
-showClearFormat: true
+showFooter:true,
+showClearFormat:true
 });
 {% endhighlight %}
 
@@ -414,10 +414,10 @@ When you set the [enableResize](http://help.syncfusion.com/js/api/ejrte#members:
 
 {% highlight js %}
 $("#texteditor").ejRTE({
-showFooter: true,
-enableResize: true,
-width: 600, minWidth: 250, maxWidth: 750,
-height: 300, minHeight: 250, maxHeight: 500
+showFooter:true,
+enableResize:true,
+width:600,minWidth:250,maxWidth:750,
+height:300,minHeight:250,maxHeight:500
 });
 {% endhighlight %}
 
