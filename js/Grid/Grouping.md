@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # Grouping
 
-Grouping is a collection of records that belong to particular category. When grouping is applied, the data is organized into a hierarchical structure based on corresponding column values. To enable grouping, set [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "allowGrouping") property as `true`.
+Grouping is a collection of records that belongs to a particular category. When grouping is applied, the data is organized into a hierarchical structure based on corresponding column values. To enable grouping, set [`allowGrouping`](http://help.syncfusion.com/js/api/ejgrid#members:allowgrouping "allowGrouping") property as `true`.
 
 Columns can be grouped by simply dragging the column header and drop on the group drop area or simply click the group button which is displayed in the column. By default, sorting is done while grouping the column.
 
@@ -65,7 +65,7 @@ The following output is displayed as a result of the above code example.
 
 ## Multi-Column Grouping
 
-Group multiple columns by simply drag and drop the columns one by one from column header to group drop area.
+Group multiple columns by simply drag and drop the columns one by one from column header into group drop area.
 
 The following code example describes the above behavior.
 
@@ -81,7 +81,7 @@ $(function () {
 		allowPaging : true,
 		allowGrouping : true,
 		// More than one column is grouped while initializing the grid itself.
-		groupSettings: { groupedColumns: ["ShipCountry"] },
+		groupSettings: { groupedColumns: ["ShipCountry", "CustomerID"] },
 		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCountry", "Freight"]
 	});
 });
@@ -178,7 +178,7 @@ The following output is displayed as a result of the above code example.
 
 ## AutoSize Drop Area
 
-Drag any header and move it on the group drop area, then its portion expands smoothly. Stop this animation by setting [`enableDropAreaAutoSizing`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-enabledropareaautosizing "enableDropAreaAutoSizing") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "groupSettings") as `false`.
+Drag any column header and move it to the group drop area, then its portion expands smoothly. Stop this animation by setting [`enableDropAreaAutoSizing`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings-enabledropareaautosizing "enableDropAreaAutoSizing") property of [`groupSettings`](http://help.syncfusion.com/js/api/ejgrid#members:groupsettings "groupSettings") as `false`.
 
 The following code example describes the above behavior.
 
