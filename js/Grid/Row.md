@@ -13,7 +13,7 @@ It represents the record details that are fetched from the datasource.
 
 ## Row Hover
 
-You can see the mouse hovering effect on the corresponding grid rows using [`enableRowHover`](http://help.syncfusion.com/js/api/ejgrid#members:enablerowhover "enableRowHover") property. By default it is `true`.
+You can see the mouse hovering effect on the corresponding grid rows using [`enableRowHover`](http://help.syncfusion.com/js/api/ejgrid#members:enablerowhover "enableRowHover") property. By default its value is `true`.
 
 The following code example describes the above behavior.
 
@@ -42,7 +42,7 @@ The following output is displayed as a result of the above code example.
 
 It provides a detailed view /additional information about each row of the grid. You can render any type of JsRender template and assign the script template id in the [`detailsTemplate`](http://help.syncfusion.com/js/api/ejgrid#members:detailstemplate "detailsTemplate") property. And also you can change HTML elements in detail template row into JavaScript controls using [`detailsDataBound`](http://help.syncfusion.com/js/api/ejgrid#events:detailsdatabound "detailsDataBound") event.
 
-On enabling details template, new column will be added in grid with an expander button in it and that can be expanded or collapsed to show or hide the underlying details row.
+On enabling details template, new column will be added in grid with an expander arrow in it and that can be expanded or collapsed to show or hide the underlying details row respectively.
 
 N> It's a standard way to enclose the template within the `script` tag with `type` as "text/x-jsrender".
 
@@ -82,9 +82,7 @@ function detailGridData(e) {
 	//detailsElement contains all the elements which are mentioned in the template.
 	// Here the detailGrid element is changed as ejGrid control
 	e.detailsElement.find("#detailGrid").ejGrid({
-		dataSource : data,
-		//  allowPaging: true,
-		// pageSettings: { pageSize: 3 },
+		dataSource : data,		
 		columns : ["OrderID", "EmployeeID", "ShipCity", "ShipCountry", "Freight"]
 	});
 	// Here the element which has tabcontrol class is changed as ejTab control
@@ -180,7 +178,7 @@ The following output is displayed as a result of the above code example.
 
 ## Alternate row styling
 
-Alternate row styling enhances the readability of grid rows by setting different background color for every alternate row. You can enable the alternative rows styling in grid by using [`enableAltRow`](http://help.syncfusion.com/js/api/ejgrid#members:enablealtrow "enableAltRow") property. 
+Alternate row styling enhances the readability of grid rows by setting different background color for every alternate row. You can enable the alternative row styling in grid by using [`enableAltRow`](http://help.syncfusion.com/js/api/ejgrid#members:enablealtrow "enableAltRow") property. 
 
 By default its value is `true`, so the following code example describes the how to turn off alternate row behavior.
 
