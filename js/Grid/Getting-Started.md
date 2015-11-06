@@ -35,7 +35,7 @@ Used to handle data operation and is used while binding data to the JS controls.
 <tr>
 <td>
 ej.grid.min.js</td><td>
-The grid's main file</td></tr>
+The grid's main file.</td></tr>
 <tr>
 <td>
 ej.pager.min.js</td><td>
@@ -51,7 +51,7 @@ It is referred when the remote databinding is used in the Grid. The waiting popu
 <tr>
 <td>
 ej.gridresize.min.js</td><td>
-It is referred when the resizing is used in the Grid.</td></tr>
+It is referred when resizing is used in the Grid.</td></tr>
 <tr>
 <td>
 ej.dropdownlist.min.js</td><td rowspan = "8">
@@ -80,7 +80,7 @@ ej.editor.min.js</td></tr>
 <tr>
 <td>
 ej.excelfilter.js</td><td>
-It is referred when excel like filter menu is enabled</td></tr>
+It is referred when excel like filter menu is enabled.</td></tr>
 </table>
 
 
@@ -89,7 +89,9 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 {% highlight html %}
 
 <!DOCTYPE html>
+
 <html>
+
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -146,7 +148,6 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
     $(function () {
 
         $('#Grid').ejGrid({
-
             dataSource: shipDetails
         });
     });
@@ -235,7 +236,7 @@ N> _Pager settings can be customized by using the [`pageSettings.pageSize`](http
              dataSource: dataManager,
              allowPaging: true,
              pageSettings: { pageSize: 8 },
-            allowFiltering: true
+             allowFiltering: true
 
          });
 
