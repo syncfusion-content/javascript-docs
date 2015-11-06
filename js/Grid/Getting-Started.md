@@ -89,9 +89,7 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 {% highlight html %}
 
 <!DOCTYPE html>
-
 <html>
-
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -237,7 +235,6 @@ N> _Pager settings can be customized by using the [`pageSettings.pageSize`](http
              allowPaging: true,
              pageSettings: { pageSize: 8 },
              allowFiltering: true
-
          });
 
     });
