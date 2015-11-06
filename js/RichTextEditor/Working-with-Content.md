@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Content
-description: Working with Content
+title: Content related in RichTextEditor widget for Syncfusion Essential JS
+description: Working with Content related changes in RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug

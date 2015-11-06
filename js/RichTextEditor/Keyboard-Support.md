@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Keyboard Support
-description: Keyboard Support
+title: Keyboard Support for RichTextEditor widget Syncfusion Essential JS
+description: Keyboard Support for RichTextEditor
 platform: js
 control: RTE
 documentation: ug

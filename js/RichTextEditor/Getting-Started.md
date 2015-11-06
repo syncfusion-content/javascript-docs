@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started - RichTextEditor
-description: Getting Started - RichTextEditor
+title: Getting started with RichTextEditor widget for Syncfusion Essential JS
+description: How to create a RichTextEditor, adding refrences, configuring toolbar and other functionalities.
 platform: js
 control: RTE
 documentation: ug
@@ -18,7 +18,7 @@ Create a new HTML file and include the below code
 {% highlight html %}
 
 <!DOCTYPE html>
-<html lang="en"  xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title></title>
@@ -33,7 +33,7 @@ Add link to the CSS file from the specific theme folder to your HTML file within
 
 {% highlight html %}
 <head>
-   <meta charset ="utf-8"   />
+   <meta charset ="utf-8" />
    <title>Getting Started - RichTextEditor</title>
    <link href ="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet"/>
 </head>
@@ -43,7 +43,7 @@ Also add links to the [CDN](http://helpjs.syncfusion.com/js/cdn#) Script files a
 
 {% highlight html %}
 <head>
-   <meta charset="utf-8"   />
+   <meta charset="utf-8" />
    <title>Getting Started - RichTextEditor</title>
    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
@@ -85,15 +85,15 @@ Initialize the editor by adding the following script to the HTML document.
 You can configure a toolbar with the tools as your application requires.
 
 {% highlight js %}
-$(function () {
+$(function () {
 $("#texteditor").ejRTE({
-toolsList: ["style", "lists", "doAction", "links", "images"],
-tools: {
-style: ["bold", "italic"],
-lists: ["unorderedList", "orderedList"],
-doAction: ["undo", "redo"],
-links: ["createLink"],
-images: ["image"]
+toolsList: ["style", "lists", "doAction", "links", "images"],
+tools: {
+style: ["bold", "italic"],
+lists: ["unorderedList", "orderedList"],
+doAction: ["undo", "redo"],
+links: ["createLink"],
+images: ["image"]
 }
 });
 });
@@ -105,7 +105,7 @@ You can set the content of the editor as follows.
 
 {% highlight js %}
 $("#texteditor").ejRTE({
-value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
 " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
 });
 {% endhighlight %}
@@ -113,7 +113,7 @@ value: "The RichTextEditor (RTE) control enables you to edit the conte
 To retrieve the editor contents,
 
 {% highlight js %}
-var currentValue = $("#texteditor").ejRTE("model.value");
+var currentValue = $("#texteditor").ejRTE("model.value");
 {% endhighlight %}
 
 You can find sample to quick start with the editor [here](http://jsplayground.syncfusion.com/Sync_nenmojvz#).

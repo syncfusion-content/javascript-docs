@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User Interface
-description: User Interface
+title: User Interaction with RichTextEditor widget for Syncfusion Essential JS
+description: User Interaction customization for RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug
@@ -21,11 +21,11 @@ The following table lists the available buttons and dropdowns on the toolbar:
 
 <table>
 <tr>
-<td>
-**Name******<br/><br/></td><td>
-**Summary******<br/><br/></td><td>
-**Initialization******<br/><br/></td><td>
-**IsDefault****?******<br/><br/></td></tr>
+<th>
+Name<br/><br/></th><th>
+Summary<br/><br/></th><th>
+Initialization<br/><br/></th><th>
+IsDefault?<br/><br/></th></tr>
 <tr>
 <td>
 Font<br/><br/></td><td>
@@ -117,6 +117,7 @@ Controls the clipboard actions by applying specific action on the selected conte
 tools: {<br/>clipboard: ["cut", "copy", "paste"]<br/>}<br/><br/></td><td>
 No<br/><br/></td></tr>
 </table>
+
 ### Customize Toolbar
 
 You can customize and rearrange items (buttons and dropdowns) by adding, removing, and enabling/disabling on the editor’s toolbar. 
