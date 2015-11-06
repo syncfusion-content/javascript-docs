@@ -9,18 +9,18 @@ documentation: ug
 
 # Editing
 
-The grid control has support for dynamic insertion, updation and deletion of records. You can start the edit either by double click on the particular row or selecting the required row and click on Edit icon in toolbar. Also, you can start adding new record either by clicking on insert icon in toolbar or on external button which is bound to call [`addRecord`](http://help.syncfusion.com/js/api/ejgrid#methods:addrecord "addRecord") method of grid.  `Save` and `Cancel` while on edit mode is possible using respective toolbar icon in grid.
+The grid control has support for dynamic insertion, updation and deletion of records. You can start the edit action either by double clicking the particular row or by selecting the required row and clicking on Edit icon in toolbar. Similarly, you can add new record to grid either by clicking on insert icon in toolbar or on an external button which is bound to call [`addRecord`](http://help.syncfusion.com/js/api/ejgrid#methods:addrecord "addRecord") method of grid.  `Save` and `Cancel` while on edit mode is possible using respective toolbar icon in grid.
 
 Deletion of the record is possible by selecting the required row and clicking on Delete icon in toolbar. 
 
-The primary key for the data source should be defined in [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") definition for editing to work properly. In [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") definition, particular primary column's [`isPrimaryKey`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isprimarykey "isPrimaryKey") property should be set to `true`. Refer the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
+The primary key for the data source should be defined in [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") definition, for editing to work properly. In [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns") definition, particular primary column's [`isPrimaryKey`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isprimarykey "isPrimaryKey") property should be set to `true`. Refer the Knowledge base [link](http://www.syncfusion.com/kb/2675/cant-edit-any-row-except-the-first-row-in-grid# "link") for more information.
 
-N> 1. In grid, the primary key column will automatically set to read only while editing the row, but you can specify primary key column value while adding a new record.
-N> 2. The column which is specified as [`isIdentity`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isidentity "isIdentity"), then it is in readonly mode while editing or adding a record. And also auto incremented value is assigned to that [`isIdentity`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isidentity "isIdentity") column.
+N> 1. In grid, the primary key column will be automatically set to read only while editing the row, but you can specify primary key column value while adding a new record.
+N> 2. The column which is specified as [`isIdentity`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isidentity "isIdentity") will be in readonly mode both while editing and adding a record. Also, auto incremented value is assigned to that [`isIdentity`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isidentity "isIdentity") column.
 
 ## Toolbar with edit option
 
-Using toolbar you can show all the CRUD related action which is rendered at the top of the grid header. To enable toolbar and toolbar items, set [`showToolbar`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") property as true and [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems"). The default toolbar items are `Add`, `Edit`, `Delete`, `Update` and `Cancel`.
+Using toolbar which is rendered at the top of the grid header, you can show all the CRUD related action. To enable toolbar and toolbar items, set [`showToolbar`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-showtoolbar "showToolbar") property as true and [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems"). The default toolbar items are `Add`, `Edit`, `Delete`, `Update` and `Cancel`.
 
 N> For [`toolbarItems`](http://help.syncfusion.com/js/api/ejgrid#members:toolbarsettings-toolbaritems "toolbarItems") property you can assign either `string` value ("add") or `enum` value (`ej.Grid.ToolBarItems.Add`).
 
@@ -36,7 +36,7 @@ $(function () {
 		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
 		dataSource : window.gridData, 
 		toolbarSettings : {	showToolbar : true, toolbarItems : ["add", "edit", "delete", "update", "cancel"] },
-		editSettings:{ allowEditing: true, allowAdding: true, allowDeleting: true},
+		editSettings : { allowEditing: true, allowAdding: true, allowDeleting: true},
 		allowPaging : true,
 		columns : [
 					{ field: "OrderID", isPrimaryKey: true },
@@ -59,12 +59,12 @@ The following output is displayed as a result of the above code example.
 
 The edit type of bound column can be customized using [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). The following Essential JavaScript controls are supported inbuilt by [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType"). You can set the [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") based on specific data type of the column. 
 
- [`CheckBox`](http://help.syncfusion.com/js/api/ejcheckbox# "CheckBox") control for boolean data type.
- [`NumericTextBox`](http://help.syncfusion.com/js/api/ejtextboxes# "NumericTextBox") control for integers, double, and decimal data types.
- `InputTextBox` control for string data type.
- [`DatePicker`](http://help.syncfusion.com/js/api/ejdatepicker# "DatePicker") control for date data type.
- [`DateTimePicker`](http://help.syncfusion.com/js/api/ejdatetimepicker# "DateTimePicker") control for date-time data type.
- [`DropDownList`](http://help.syncfusion.com/js/api/ejdropdownlist# "DropDownList") control for list of data type.
+* [`CheckBox`](http://help.syncfusion.com/js/api/ejcheckbox# "CheckBox") control for boolean data type.
+* [`NumericTextBox`](http://help.syncfusion.com/js/api/ejtextboxes# "NumericTextBox") control for integers, double, and decimal data types.
+* `InputTextBox` control for string data type.
+* [`DatePicker`](http://help.syncfusion.com/js/api/ejdatepicker# "DatePicker") control for date data type.
+* [`DateTimePicker`](http://help.syncfusion.com/js/api/ejdatetimepicker# "DateTimePicker") control for date-time data type.
+* [`DropDownList`](http://help.syncfusion.com/js/api/ejdropdownlist# "DropDownList") control for list of data type.
 
 
 
@@ -81,12 +81,12 @@ Example</th></tr>
 <tr>
 <td>
 CheckBox</td><td>
-[ejCheckBox](http://help.syncfusion.com/js/api/ejcheckbox# "checkbox") </td><td>
+{{ '[ejCheckBox](http://help.syncfusion.com/js/api/ejcheckbox)' | markdownify }} </td><td>
 editParams: { checked: true }</td></tr>
 <tr>
 <td>
 NumericTextBox </td><td>
-[ejTextBoxes](http://help.syncfusion.com/js/api/ejtextboxes# "textbox") </td><td>
+{{ '[ejTextBoxes](http://help.syncfusion.com/js/api/ejtextboxes' | markdownify }} </td><td>
 editParams: { decimalPlaces: 2, value:5  }</td></tr>
 <tr>
 <td>
@@ -96,22 +96,22 @@ InputTextBox </td><td>
 <tr>
 <td>
 DatePicker </td><td>
-[ejDatePicker](http://help.syncfusion.com/js/api/ejdatepicker# "datapicker") </td><td>
+{{ '[ejDatePicker](http://help.syncfusion.com/js/api/ejdatepicker' | markdownify }} </td><td>
 editParams: {  buttonText : "Now" }</td></tr>
 <tr>
 <td>
 DateTimePicker</td><td>
-[ejDateTimePicker](http://help.syncfusion.com/js/api/ejdatetimepicker# "datetimepicker") </td><td>
+{{ '[ejDateTimePicker](http://help.syncfusion.com/js/api/ejdatetimepicker' | markdownify }} </td><td>
 editParams: {  enabled: true }</td></tr>
 <tr>
 <td>
 DropDownList</td><td>
-[ejDropDownList](http://help.syncfusion.com/js/api/ejdropdownlist# "dropdownlist") </td><td>
+{{ '[ejDropDownList](http://help.syncfusion.com/js/api/ejdropdownlist' | markdownify }} </td><td>
 editParams: {  allowGrouping: true }</td></tr>
 
 </table>
 
-N> 1. If [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") is not set then by default it will display the input element ("stringedit") while editing a column.
+N> 1. If [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") is not set, then by default it will display the input element ("stringedit") while editing a column.
 N> 2. For [`editType`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittype "editType") property you can assign either `string` value ("numericedit") or `enum` value (`ej.Grid.EditingType.Numeric`).
 
 The following code example describes the above behavior.
@@ -148,7 +148,7 @@ The following output is displayed as a result of the above code example.
 
 ## Cell Edit Template
 
-To create a custom editor to edit column values by using [`editTemplate`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittemplate "editTemplate") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). It has three functions, they are
+On editing the column values, custom editor can be created by using [`editTemplate`](http://help.syncfusion.com/js/api/ejgrid#members:columns-edittemplate "editTemplate") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). It has three functions, they are
 
 1. `create` - It is used to create the control at time of initialize.
 2. `read` - It is used to read the input value at time of save.
@@ -204,7 +204,7 @@ The following output is displayed as a result of the above code example.
 
 ### Inline 
 
-Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as `normal`, then the row itself changed as an edited row.
+Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as `normal`, then the row itself is changed as edited row.
 
 N> For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("normal") or `enum` value (`ej.Grid.EditMode.Normal`).
 
@@ -248,7 +248,7 @@ The following output is displayed as a result of the above code example.
 
 ### Inline Form
 
-Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as `inlineform`, then edit form will be inserted next to row which is going to edit and that has fields associated with the data record being edited.
+Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as `inlineform`, then edit form will be inserted next to the row which is to be edited.
 
 The following code example describes the above behavior.
 
@@ -270,8 +270,7 @@ $(function () {
 			allowAdding : true,
 			allowDeleting : true,
 			editMode : "inlineform"
-		},
-		allowPaging : true,
+		},		
 		columns : [
 			{ field: "OrderID", isPrimaryKey: true },
 			{ field: "CustomerID" },
@@ -290,12 +289,16 @@ The following output is displayed as a result of the above code example.
 
 ### Inline Template Form
 
-To edit the records using Inline template form, set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as `inlineformtemplate` and specify the template ID to [`editSettings.inlineFormTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-inlineformtemplateid "editSettings.inlineFormTemplateID"). Using this template, you can edit the fields that are not bound to grid columns.
+You can edit any of the fields pertaining to a single record of data and apply it to a template so that the same format is applied to all the other records that you may edit later.
 
-While using template form, you can change the HTML elements in it to appropriate JS controls based on the column type. This can be achieved by using [`actionComplete`](http://help.syncfusion.com/js/api/ejgrid#events:actioncomplete "actionComplete") event of grid.
+Using this template support, you can edit the fields that are not bound to grid columns.
 
-N> 1. `value`, attribute is used to bind the corresponding field value while editing.
-N> 2. `name`, attribute is used to get the changed field values while save the edited record.
+To edit the records using Inline template form, set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as `inlineformtemplate` and specify the template ID to [`editSettings.inlineFormTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-inlineformtemplateid "editSettings.inlineFormTemplateID") property.
+
+While using template form, you can change the HTML elements to appropriate JS controls based on the column type. This can be achieved by using [`actionComplete`](http://help.syncfusion.com/js/api/ejgrid#events:actioncomplete "actionComplete") event of grid.
+
+N> 1. `value` attribute is used to bind the corresponding field value while editing.
+N> 2. `name` attribute is used to get the changed field values while saving the edited record.
 N> 3.  It's a standard way to enclose the `template` within the `script` tag with `type` as "text/x-jsrender".
 N> 4.  For [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") property you can assign either `string` value ("inlineformtemplate") or `enum` value (`ej.Grid.EditMode.InlineTemplateForm`) 
 
@@ -351,8 +354,7 @@ $(function () {
 			allowDeleting : true,
 			editMode : "inlineformtemplate",
 			inlineFormTemplateID : "#template"
-		},
-		allowPaging : true,
+		},		
 		columns : [
 			{ field: "OrderID", isPrimaryKey: true },
 			{ field: "CustomerID" },
@@ -384,7 +386,7 @@ After the template elements are converted to JS controls using actionComplete ev
 
 ### Dialog
 
-Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as `dialog`, to edit data using a dialog box that has fields associated with the data record being edited.
+Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as `dialog` to edit data using a dialog box, which displays the fields associated with the data record being edited.
 
 The following code example describes the above behavior.
 
@@ -430,7 +432,7 @@ You can edit any of the fields pertaining to a single record of data and apply i
 
 Using this template support, you can edit the fields that are not bound to grid columns.
 
-To edit the records using Inline template form, by setting [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as dialogtemplate and specify the template id to [`dialogEditorTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-dialogeditortemplateid "dialogEditorTemplateID") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "editSettings").
+To edit the records using Inline template form, set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as dialogtemplate and specify the template id to [`dialogEditorTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-dialogeditortemplateid "dialogEditorTemplateID") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "editSettings").
 
 While using template, you can change the elements that are defined in the `template`, to appropriate JS controls based on the column type. This can be achieved by using [`actionComplete`](http://help.syncfusion.com/js/api/ejgrid#events:actioncomplete "actionComplete") event of grid.
 
@@ -520,7 +522,7 @@ After the template elements are converted to JS controls using actionComplete ev
 
 ### External Form
 
-Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as externalform, then the edit form is opened out of grid content, which has fields associated with the data record being edited.
+By setting the [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as externalform, the edit form is opened outside the grid content.
 
 The following code example describes the above behavior.
 
@@ -565,12 +567,12 @@ The following output is displayed as a result of the above code example.
 
 Form Position:
 
-You can [position](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-formposition "position") an external edit form in the following two ways. 
+You can position an external edit form in the following two ways. 
 
 1. Top-right
 2. Bottom left
 
-This can be achieved by set [`formPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-formposition "formPosition") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "editSettings") as "topright" or "bottomleft".
+This can be achieved by setting the [`formPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-formposition "formPosition") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "editSettings") as "topright" or "bottomleft".
 
 The following code example describes the above behavior.
 
@@ -616,7 +618,7 @@ You can edit any of the fields pertaining to a single record of data and apply i
 
 Using this template support, you can edit the fields that are not bound to grid columns.
 
-To edit the records using Inline template form, by setting [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as externalformtemplate and specify the template id to [`externalFormTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-externalformtemplateid "externalFormTemplateID") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "editSettings").
+To edit the records using External template form, set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as externalformtemplate and specify the template id to [`externalFormTemplateID`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-externalformtemplateid "externalFormTemplateID") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "editSettings").
 
 While using template, you can change the elements that are defined in the template, to appropriate JS controls based on the column type. This can be achieved by using [`actionComplete`](http://help.syncfusion.com/js/api/ejgrid#events:actioncomplete "actionComplete") event of grid.
 
@@ -709,7 +711,7 @@ After the template elements are converted to JS controls using actionComplete ev
 
 ### Batch / Excel-like
 
-Users can start editing by typing into any cell. Edited cell will be marked while navigating to next cell or any other row, so that you know which fields or cells has been edited. Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as `batch` to enable batch editing.
+Users can start editing by clicking a cell and typing data into it. Edited cell will be marked while navigating to next cell or any other row, so that you know which fields or cells has been edited. Set [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode") as `batch` to enable batch editing.
 
 N> Refer the KB [link](http://www.syncfusion.com/kb/3016/how-to-suppress-grid-confirmation-messages# "link") for "How to suppress grid confirmation messages" in batch mode.
 
@@ -753,7 +755,7 @@ The following output is displayed as a result of the above code example.
 
 ## Confirmation messages
 
-To show the [confirm dialog](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showconfirmdialog "confirm dialog") while saving or discarding the batch changes (discarding during the grid action like filtering, sorting and paging). To enable confirmation dialog, set [`showConfirmDialog`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showconfirmdialog "showConfirmDialog") as `true`.
+To show the confirm dialog while saving or discarding the batch changes (discarding during the grid action like filtering, sorting and paging), set [`showConfirmDialog`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showconfirmdialog "showConfirmDialog") as `true`.
 
 N> [`showConfirmDialog`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showconfirmdialog "showConfirmDialog") property is only for batch editing mode.
 
@@ -795,7 +797,7 @@ The following output is displayed as a result of the above code example.
 ![](Editing_images/Editing_img16.png)
 
 
-To show delete confirm dialog while deleting a record by setting the [`showDeleteConfirmDialog`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showdeleteconfirmdialog "showDeleteConfirmDialog") as true.
+To show delete confirm dialog while deleting a record, set [`showDeleteConfirmDialog`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showdeleteconfirmdialog "showDeleteConfirmDialog") as true.
 
 N> [`showDeleteConfirmDialog`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-showdeleteconfirmdialog "showDeleteConfirmDialog") property is for all type of [`editMode`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-editmode "editMode").
 
@@ -839,12 +841,12 @@ The following output is displayed as a result of the above code example.
 
 ## Column Validation
 
-[Validate](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "Validate") the value of the edited or added record cell before the values are saved.
+We can validate the value of the added or edited record cell before saving.
 
 The below validation script files are needed when editing is enabled with validation.
 
- jquery.validate.min.js
- jquery.validate.unobtrusive.min.js
+1. jquery.validate.min.js
+2. jquery.validate.unobtrusive.min.js
  
  
 ### Jquery Validation
@@ -856,9 +858,9 @@ __List__ __of__ __Jquery__ __validation__ __methods__
 
 <table>
 <tr>
-<td>
-Rules</td><td>
-Description</td></tr>
+<th>
+Rules</th><th>
+Description</th></tr>
 <tr>
 <td>
 required</td><td>
@@ -967,11 +969,9 @@ The following output is displayed as a result of the above code example.
 
 ### Custom Validation
 
-In addition to Jquery validation methods, you can also add your own custom validation methods for a specific column. Information for calling custom validator function using [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "validationRules") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). 
+In addition to Jquery validation methods, you can also add your own custom validation methods for a specific column. Function call to custom validator function to be mentioned within [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "validationRules") property of [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns"). 
 
 Using `messages` property of [`validationRules`](http://help.syncfusion.com/js/api/ejgrid#members:columns-validationrules "validationRules") you can specify the error message for that column.
-
-Grid supports all the standard custom validation methods of Jquery, please refer the Jquery validation documentation [link](http://jqueryvalidation.org/jQuery.validator.addMethod# "link") for more information
 
 The following code example describes the above behavior.
 
@@ -1025,15 +1025,15 @@ The following output is displayed as a result of the above code example.
 
 Edited data can be persisted in database using RESTful web services. 
 
-All the CRUD operations in grid are done through DataManager. Datamanger have an option to bind all the CRUD related data in server side. Please refer the link to know about the [DataManager](http://help.syncfusion.com/js/datamanager/overview# "DataManager").
-
-In the below section, we have explained about how to get the edited data details in server side using URLAdaptor. 
+All the CRUD operations in grid are done through DataManager. DataManager have an option to bind all the CRUD related data in server side. Please refer the ['link'](http://help.syncfusion.com/js/datamanager/overview# "link") to know about the DataManager.
 
 For you information ODataAdaptor persist date in server as OData protocol.
 
+In the below section, we have explained how to get the edited data details at the server side using URLAdaptor. 
+
 ### URL Adaptor
 
-You can use the `UrlAdaptor` of [`ejDataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "ejDataManger") when binding datasource from remote data. At initial load of Grid, using URL property of DataManager, data are fetched from remote data and binded to Grid. You can map CRUD operation in Grid to Server-Side Controller action using the properties `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl` and `batchUrl`.
+You can use the `UrlAdaptor` of [`ejDataManger`](http://help.syncfusion.com/js/api/ejdatamanager# "ejDataManger") when binding datasource from remote data. At initial load of Grid, using URL property of DataManager, data are fetched from remote data and bound to Grid. You can map CRUD operation in Grid to Server-Side Controller action using the properties `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl` and `batchUrl`.
 
 The following code example describes the above behavior.
 
@@ -1073,7 +1073,7 @@ $(function () {
 });
 {% endhighlight %}
 
-Also when you use `UrlAdaptor`, you need to return the data as `JSON` and the JSON object must contain field name as `result` with its value as dataSource and one more field name as `count` with its value as dataSource total records count.
+Also when you use `UrlAdaptor`, you need to return the data as `JSON` and the JSON object must contain a property as `result` with dataSource as its value and one more property `count` with the dataSource total records count as its value.
 
 The following code example describes the above behavior.
 
@@ -1098,27 +1098,27 @@ public class DataResult
 }
 {% endhighlight %}
 
-The grid actions (sorting, filtering, paging, searching, and aggregates) details are obtained in the "DataManager" class. While initializing the grid, paging only enabled hence in the below screen shot paging details are bound to the DataManager class.
+The grid actions (sorting, filtering, paging, searching, and aggregates) details are obtained in the 'DataManager' class. While initializing the grid, paging only enabled hence in the below screen shot paging details are bound to the DataManager class.
 
 Please refer the below screen shot.
 
 ![](Editing_images/Editing_img20.png)
 
 
-And also using "DataOperations" class methods you can perform grid action in server side. The in-build methods that we have provided in the DataOperations class can be listed below.
+Also, using 'DataOperations' class methods you can perform grid action at server side. The in-built methods that we have provided in the DataOperations class are listed below.
 
- PerformSorting
- PerformFiltering
- PerformSearching
- PerformSkip
- PerformTake
- PerformWhereFilter
- PerformSelect
- Execute
+1. PerformSorting
+2. PerformFiltering
+3. PerformSearching
+4. PerformSkip
+5. PerformTake
+6. PerformWhereFilter
+7. PerformSelect
+8. Execute
 
 ### Accessing CRUD action request details in server side:
 
-The "Server-Side" function must be declared with the following parameter name for each editing functionality.
+The 'Server-Side' function must be declared with the following parameter name for each editing functionality.
 
 __Parameters__ __Table__
 
@@ -1206,7 +1206,7 @@ __Parameters__ __Table__
 	
 ### Insert Record:
 
-Using `insertUrl` property, you can specify the controller action mapping URL to perform insert operation in server side.
+Using `insertUrl` property, you can specify the controller action mapping URL to perform insert operation at server side.
 
 The following code example describes the above behavior.
 
@@ -1217,7 +1217,7 @@ public ActionResult Insert(EditableOrder value)
 }
 {% endhighlight %}
 
-The newly added record details are bound to the "value" parameter. Please refer the below image.
+The newly added record details are bound to the 'value' parameter. Please refer the below image.
 
 
 ![](Editing_images/Editing_img21.png)
@@ -1225,7 +1225,7 @@ The newly added record details are bound to the "value" parameter. Please refer 
 
 ### Update Record:
 
-Using `updateUrl` property, you can specify the controller action mapping URL to perform save/update operation in server side.
+Using `updateUrl` property, you can specify the controller action mapping URL to perform save/update operation at server side.
 
 The following code example describes the above behavior.
 
@@ -1236,14 +1236,14 @@ public ActionResult Update(EditableOrder value)
 }
 {% endhighlight %}
 
-The updated record details are bound to the "value" parameter. Please refer the below image.
+The updated record details are bound to the 'value' parameter. Please refer the below image.
 
 ![](Editing_images/Editing_img22.png)
 
 
 ### Delete Record:
 
-Using `removeUrl` property, you can specify the controller action mapping URL to perform delete operation in server side.
+Using `removeUrl` property, you can specify the controller action mapping URL to perform delete operation at server side.
 
 The following code example describes the above behavior.
 
@@ -1254,14 +1254,14 @@ public ActionResult Remove(int key)
 }
 {% endhighlight %}
 
-The deleted record primary key value is bound to the "key" parameter. Please refer the below image.
+The deleted record primary key value is bound to the 'key' parameter. Please refer the below image.
 
 ![](Editing_images/Editing_img23.png)
 
 
 ### CRUD URL:
 
-Instead of specifying separate controller action method for CRUD (insert, update and delete)operation, using `crudUrl` property you can specify the controller action mapping URL to perform all the CRUD operation in server side using single method.
+Instead of specifying separate controller action method for CRUD (insert, update and delete)operation, using `crudUrl` property you can specify the controller action mapping URL to perform all the CRUD operation at server side using single method.
 
 The action parameter of `crudUrl` is used to get the corresponding CRUD action.
 
@@ -1317,7 +1317,7 @@ N> If you specify `insertUrl` along with `CrudUrl` then while adding `insertUrl`
 
 ### Batch URL:
 
-The `batchUrl` property supports only for batch editing mode. You can specify the controller action mapping URL to perform Batch operation in server side.
+The `batchUrl` property supports only for batch editing mode. You can specify the controller action mapping URL to perform Batch operation at server side.
 
 The following code example describes the above behavior.
 
@@ -1374,7 +1374,7 @@ Please refer the below image for more information about batch paramaters
 
 ## Adding New Row Position
 
-To add new row in the top or bottom [position](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "position") of grid content that depends upon the requirement. Using [`rowPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "rowPosition") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "editSettings") you can specify add new row position.
+To add new row in the top or bottom position of grid content, set [`rowPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "rowPosition") property of [`editSettings`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings "editSettings") depending on the requirement.
 
 The following code example describes the above behavior.
 
@@ -1460,7 +1460,7 @@ The following output is displayed as a result of the above code example.
 
 
 N> 1. If it is remote, then the newly added record is placed based on the index from current view data. 
-N> 2. If it is local, then the newly added record is added at the top of the page even the added new [`rowPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "rowPosition") is mentioned as "bottom".
+N> 2. If it is local, then the newly added record is added at the top of the page even if the added new [`rowPosition`](http://help.syncfusion.com/js/api/ejgrid#members:editsettings-rowposition "rowPosition") is mentioned as "bottom".
 
 
 ## Default column values on add new
