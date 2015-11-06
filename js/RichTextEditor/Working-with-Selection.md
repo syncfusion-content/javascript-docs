@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Selection
-description: Working with Selection
+title: Working with content selection in RichTextEditor widget for Syncfusion Essential JS
+description: Working with content selection in RichTextEditor widget
 platform: js
 control: RTE
 documentation: ug

@@ -71,9 +71,8 @@ The following output is displayed as a result of the above code example.
 ![](dataBinding_images/dataBinding_img1.png)
 
 
-I> There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of custom adaptor concept. 
-
-{% seealso %}Refer this [Knowledge Base link](http://www.syncfusion.com/kb/3377/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid#) for bounding XML data to grid using custom adaptor. {% endseealso %}
+N> 1. There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of custom adaptor concept. 
+N> 2. Refer this [Knowledge Base link](http://www.syncfusion.com/kb/3377/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid#) for bounding XML data to grid using custom adaptor. 
 
 ## Remote Data
 

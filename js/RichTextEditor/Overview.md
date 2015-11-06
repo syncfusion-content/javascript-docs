@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: Overview
+title: Overview Of the RichTextEditor widget for Syncfusion Essential JS
+description: Overview for the RichTextEditor
 platform: js
 control: RTE
 documentation: ug
