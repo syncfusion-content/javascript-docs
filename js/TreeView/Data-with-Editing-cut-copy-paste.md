@@ -7,7 +7,7 @@ control: TreeView
 documentation: ug
 ---
 
-# Data with Editing-cut-copy-paste
+# Data with Editing-cut-paste
 
 The **TreeView** control permits you to edit a node and also allows you to cut and paste the node in the **TreeView**. You can edit the tree node name when it is required. This is achieved by using the **allowEditing** property. By setting the property to **“true”**, you can select a node and press F2 or double-click the node to initiate editing.
 

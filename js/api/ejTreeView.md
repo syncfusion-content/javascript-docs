@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-The treeview can be easily configured with the DOM element, such as div or ul. you can create a treeview with a highly customizable look and feel.
+The TreeView can be easily configured with the DOM element, such as div or ul. you can create a TreeView with a highly customizable look and feel.
 
 
 
@@ -144,7 +144,7 @@ Requires
 
 
 
-Gets or sets a value that indicates whether to enable drag &amp; drop a node within the same tree.
+Gets or sets a value that indicates whether to enable drag and drop a node within the same tree.
 
 
 
@@ -172,39 +172,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>
 //To Initialize the TreeView with the allowDragAndDrop value specified.
 $("#treeView").ejTreeView({
-   allowDragAndDrop: true
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    allowDragAndDrop: true
 });
  </script>{% endhighlight %}
 
@@ -224,7 +197,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether to enable drag &amp; drop a node into ej.TreeView.
+Gets or sets a value that indicates whether to enable drag and drop a node into ej.TreeView.
 
 
 
@@ -252,40 +225,13 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>
 // Initialize the TreeView with the allowDragAndDropAcrossControl value specified.
 $("#treeView").ejTreeView({
-   allowDragAndDrop: true,
-   allowDragAndDropAcrossControl: true
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    allowDragAndDrop: true,
+    allowDragAndDropAcrossControl: true
 });
  </script>{% endhighlight %}
 
@@ -333,40 +279,67 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>
-// Initialize the TreeView with the dropSibling value specified.
+// Initialize the TreeView with the allowDropSibling value specified.
 $("#treeView").ejTreeView({
-   allowDragAndDrop: true,
-   allowDropSibling: true
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    allowDragAndDrop: true,
+    allowDropSibling: true
+});
+ </script>{% endhighlight %}
+
+
+
+
+
+
+
+### allowDropChild<span class="type-signature type boolean">boolean</span>
+{:#members:allowdropchild}
+
+
+
+
+
+
+
+
+Gets or sets a value that indicates whether to drop a node to a child of particular node.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>
+// Initialize the TreeView with the allowDropChild value specified.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    allowDragAndDrop: true,
+    allowDropChild: true
 });
  </script>{% endhighlight %}
 
@@ -386,7 +359,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether to enable node editing support for Treeview.
+Gets or sets a value that indicates whether to enable node editing support for TreeView.
 
 
 
@@ -414,39 +387,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>
 // Initialize the TreeView with the allowEditing value specified.
 $("#treeView").ejTreeView({
-   allowEditing: true
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    allowEditing: true
 });
  </script>{% endhighlight %}
 
@@ -466,7 +412,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether to enable keyboard support for Treeview actions like nodeSelection, nodeEditing, nodeExpand, nodeCollapse, nodeCut, Copy and Paste.
+Gets or sets a value that indicates whether to enable keyboard support for TreeView actions like nodeSelection, nodeEditing, nodeExpand, nodeCollapse, nodeCut and Paste.
 
 
 
@@ -494,39 +440,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>
 // Initialize the TreeView with the allowKeyboardNavigation value specified.
 $("#treeView").ejTreeView({
-   allowKeyboardNavigation: true
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    allowKeyboardNavigation: true
 });
  </script>{% endhighlight %}
 
@@ -546,7 +465,7 @@ $("#treeView").ejTreeView({
 
 
 
-Allow us to specify the parent and child nodes to get auto check.
+Allow us to specify the parent and child nodes to get auto check while we check or uncheck a node.
 
 
 
@@ -574,40 +493,13 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>                  
-//Its auto checks the corresponding child nodes of the checked parent node. vice versa
+// Initialize the TreeView with the autoCheck value specified.
 $("#treeView").ejTreeView({
-   autoCheck: true,
-   showCheckbox:true
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    autoCheck: true,
+    showCheckbox:true
 });
  </script>{% endhighlight %}
 
@@ -655,40 +547,13 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>
 // Initialize the TreeView with the autoCheckParentNode value specified.
-$("#treeView").ejTreeView({ 
-   autoCheckParentNode: false,
-   showCheckbox:true
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" }, 
+    autoCheckParentNode: false,
+    showCheckbox:true
 });
  </script>{% endhighlight %}
 
@@ -708,7 +573,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates the checkedNodes index collection as an array. The given array index position denotes the nodes, that are checked while rendering treeview.
+Gets or sets a value that indicates the checkedNodes index collection as an array. The given array index position denotes the nodes, that are checked while rendering TreeView.
 
 
 
@@ -736,40 +601,13 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>          
 // Initialize the TreeView with the checkedNodes value specified.
 $("#treeView").ejTreeView({
-   showCheckbox: true,
-   checkedNodes: [1, 2] 
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    showCheckbox: true,
+    checkedNodes: [1, 2] 
 });
  </script>{% endhighlight %}
 
@@ -789,7 +627,7 @@ $("#treeView").ejTreeView({
 
 
 
-Sets the root CSS class for treeview which allow us to customize the appearance.
+Sets the root CSS class for TreeView which allow us to customize the appearance.
 
 
 
@@ -817,39 +655,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-         </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>
-//Initialize the TreeView with the cssClass value specified
+// Initialize the TreeView with the cssClass value specified.
 $("#treeView").ejTreeView({
-   cssClass: 'gradient-lime'
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    cssClass: 'gradient-lime'
 });
  </script>{% endhighlight %}
 
@@ -897,39 +708,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>        
-//To set enableAnimation API value during initialization  
+// Initialize the TreeView with the enableAnimation value specified.  
 $("#treeView").ejTreeView({
-   enableAnimation: true
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    enableAnimation: true
 });
 </script>{% endhighlight %}
 
@@ -949,7 +733,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether a treeview can be enabled or disabled. No actions can be performed while this property is set as false
+Gets or sets a value that indicates whether a TreeView can be enabled or disabled. No actions can be performed while this property is set as false
 
 
 
@@ -977,41 +761,68 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>  
 // Initialize the TreeView with the enabled value specified.
 $("#treeView").ejTreeView({ 
-   enabled: true
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    enabled: true
 });
  </script>{% endhighlight %}
+
+
+
+
+
+
+
+### enableMultipleExpand<span class="type-signature type boolean">boolean</span>
+{:#members:enablemultipleexpand}
+
+
+
+
+
+
+
+
+Allow us to prevent multiple nodes to be in expanded state. If it set to false, previously expanded node will be collapsed automatically, while we expand a node.
+
+
+
+
+Default Value:
+{:.param}
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>
+// Initialize the TreeView with the enableMultipleExpand value specified.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    enableMultipleExpand: true
+});
+ </script>{% endhighlight %}
+
 
 
 
@@ -1029,7 +840,7 @@ $("#treeView").ejTreeView({
 
 
 
-Sets a value that indicates whether to persist the treeview model state in page using applicable medium i.e., HTML5 localStorage or cookies
+Sets a value that indicates whether to persist the TreeView model state in page using applicable medium i.e., HTML5 localStorage or cookies
 
 
 
@@ -1057,39 +868,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>
-// Initialize the TreeView with the persist value specified.
+// Initialize the TreeView with the enablePersistence value specified.
 $("#treeView").ejTreeView({ 
-   enablePersistence:false
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    enablePersistence:false
 });
  </script>{% endhighlight %}
 
@@ -1109,7 +893,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates to align content in the treeview control from right to left by setting the property as true.
+Gets or sets a value that indicates to align content in the TreeView control from right to left by setting the property as true.
 
 
 
@@ -1137,39 +921,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>
 // Initialize the TreeView with the enableRTL value specified.
-$("#treeView").ejTreeView({ 
-   enableRTL: true
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" }, 
+    enableRTL: true
 });
  </script>{% endhighlight %}
 
@@ -1189,7 +946,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a array of value that indicates the expandedNodes index collection as an array. The given array index position denotes the nodes, that are expanded while rendering treeview.
+Gets or sets a array of value that indicates the expandedNodes index collection as an array. The given array index position denotes the nodes, that are expanded while rendering TreeView.
 
 
 
@@ -1217,39 +974,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>          
 // Initialize the TreeView with the expandedNodes value specified.
 $("#treeView").ejTreeView({
-   expandedNodes: [0,7]  
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    expandedNodes: [0,7]  
 });
  </script>{% endhighlight %}
 
@@ -1269,7 +999,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates the treeview node can be expand or collapse by using the specified action.
+Gets or sets a value that indicates the TreeView node can be expand or collapse by using the specified action.
 
 
 
@@ -1297,39 +1027,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>  
-//Initialize the TreeView with the expandOn value specified
-$("#treeView").ejTreeView({ 
-   expandOn: 'dblclick'
+//Initialize the TreeView with the expandOn value specified.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" }, 
+    expandOn: 'dblclick'
 });
  </script>{% endhighlight %}
 
@@ -1379,9 +1082,9 @@ Example
  
 <div id="treeView"></div>
 <script>
-//To set fields API value during initialization  
+// Initialize the TreeView with the fields value specified. 
 $("#treeView").ejTreeView({
-   fields: { id: "id", parentId: "pid", text: "name", hasChild: "hasChild", dataSource: window.treeView, expanded: "expanded" }
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
 });
  </script>{% endhighlight %}
 
@@ -1391,7 +1094,7 @@ $("#treeView").ejTreeView({
 
 
 
-### fields.child<span class="type-signature type string">String</span>
+### fields.child<span class="type-signature type string">object</span>
 {:#members:fields-child}
 
 
@@ -1413,7 +1116,7 @@ It receives the child level or inner level data source such as Essential DataMan
 
 
 
-### fields.dataSource<span class="type-signature type object">Object</span>
+### fields.dataSource<span class="type-signature type object">object</span>
 {:#members:fields-datasource}
 
 
@@ -1479,7 +1182,7 @@ Its allow us to indicate whether the node has child or not in load on demand
 
 
 
-### fields.htmlAttribute<span class="type-signature type object">Object</span>
+### fields.htmlAttribute<span class="type-signature type object">object</span>
 {:#members:fields-htmlattribute}
 
 
@@ -1501,7 +1204,7 @@ Specifies the html attributes to &ldquo;li&rdquo; item list.
 
 
 
-### fields.id<span class="type-signature type string">String</span>
+### fields.id<span class="type-signature type string">string</span>
 {:#members:fields-id}
 
 
@@ -1523,7 +1226,7 @@ Specifies the id to TreeView node items list.
 
 
 
-### fields.imageAttribute<span class="type-signature type string">String</span>
+### fields.imageAttribute<span class="type-signature type string">object</span>
 {:#members:fields-imageattribute}
 
 
@@ -1545,7 +1248,7 @@ Specifies the image attribute to &ldquo;img&rdquo; tag inside items list
 
 
 
-### fields.imageUrl<span class="type-signature type string">String</span>
+### fields.imageUrl<span class="type-signature type string">string</span>
 {:#members:fields-imageurl}
 
 
@@ -1589,7 +1292,7 @@ If its true Checkbox node will be checked when rendered with checkbox.
 
 
 
-### fields.linkAttribute<span class="type-signature type string">String</span>
+### fields.linkAttribute<span class="type-signature type string">object</span>
 {:#members:fields-linkattribute}
 
 
@@ -1611,7 +1314,7 @@ Specifies the link attribute to &ldquo;a&rdquo; tag in item list.
 
 
 
-### fields.parentId<span class="type-signature type string">String</span>
+### fields.parentId<span class="type-signature type string">string</span>
 {:#members:fields-parentid}
 
 
@@ -1633,7 +1336,7 @@ Specifies the parent id of the node. The nodes are listed as child nodes of the 
 
 
 
-### fields.query<span class="type-signature type object">Object</span>
+### fields.query<span class="type-signature type object">object</span>
 {:#members:fields-query}
 
 
@@ -1677,7 +1380,7 @@ Allow us to specify the node to be in selected state
 
 
 
-### fields.spriteCssClass<span class="type-signature type string">String</span>
+### fields.spriteCssClass<span class="type-signature type string">string</span>
 {:#members:fields-spritecssclass}
 
 
@@ -1699,7 +1402,7 @@ Specifies the sprite CSS class to &ldquo;li&rdquo; item list.
 
 
 
-### fields.tableName<span class="type-signature type string">String</span>
+### fields.tableName<span class="type-signature type string">string</span>
 {:#members:fields-tablename}
 
 
@@ -1721,7 +1424,7 @@ It receives the table name to execute query on the corresponding table.
 
 
 
-### fields.text<span class="type-signature type string">String</span>
+### fields.text<span class="type-signature type string">string</span>
 {:#members:fields-text}
 
 
@@ -1781,39 +1484,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>                  
-//Initialize the TreeView height property with the  value specified
+// Initialize the TreeView with the height value specified.
 $("#treeView").ejTreeView({
-   height: 50
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    height: 300
 });
  </script>{% endhighlight %}
 
@@ -1861,39 +1537,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>
 // Initialize the TreeView with the loadOnDemand value specified.
 $("#treeView").ejTreeView({
-   loadOnDemand: true
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    loadOnDemand: true
 });
  </script>{% endhighlight %}
 
@@ -1913,7 +1562,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or Sets a value that indicates the index position of a tree node. The particular index tree node will be selected while rendering the treeview.
+Gets or Sets a value that indicates the index position of a tree node. The particular index tree node will be selected while rendering the TreeView.
 
 
 
@@ -1926,7 +1575,7 @@ Default Value:
 
 
 
-* null
+* -1
 
 
 
@@ -1941,39 +1590,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>        
-// Initialize the TreeView with the selectedNode value specified.
+//Initialize the TreeView with the selectedNode value specified.
 $("#treeView").ejTreeView({
-   selectedNode: 2 
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    selectedNode: 2 
 });
  </script>{% endhighlight %}
 
@@ -1993,7 +1615,7 @@ $("#treeView").ejTreeView({
 
 
 
-Gets or sets a value that indicates whether to display or hide checkbox for all treeview nodes.
+Gets or sets a value that indicates whether to display or hide checkbox for all TreeView nodes.
 
 
 
@@ -2021,39 +1643,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>        
-//To Initialize the TreeView with the showCheckbox value specified.
-$("#treeView").ejTreeView({ 
-   showCheckbox: true
+// Initialize the TreeView with the showCheckbox value specified.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" }, 
+    showCheckbox: true
 });
  </script>{% endhighlight %}
 
@@ -2073,7 +1668,7 @@ $("#treeView").ejTreeView({
 
 
 
-Allow us to use custom template in order to create treeview
+Allow us to use custom template in order to create TreeView.
 
 
 
@@ -2147,9 +1742,9 @@ Example
 
  
 <script>
-//Initialize the TreeView with the template value specified
+// Initialize the TreeView with the template value specified
 $("#treeView").ejTreeView({ 
-   template: "templatelocaldata"
+   template: "#templatelocaldata"
 });
  </script>{% endhighlight %}
 
@@ -2197,39 +1792,12 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
+<div id="treeView"></div>
 <script>
-//Initialize the TreeView height property with the  value specified
+// Initialize the TreeView height property with the  value specified
 $("#treeView").ejTreeView({
-   width: 300
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    width: 300
 });
  </script>{% endhighlight %}
 
@@ -2256,7 +1824,7 @@ $("#treeView").ejTreeView({
 
 
 
-To add Node in the TreeView.
+To add a Node or collection of nodes in TreeView. If target tree node is specified, then the given nodes are added as child of target tree node, otherwise nodes are added in TreeView.  
 
 <table class="params">
 <thead>
@@ -2270,14 +1838,14 @@ To add Node in the TreeView.
 <tr>
 <td class="name">{% highlight html %}
 newNodeText{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">new Treeview Node Text or JSON Object</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">New node text or JSON object</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 target{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">object of Tree view node.</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -2291,78 +1859,25 @@ Example
 
 {% highlight html %}
  
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li id="Music">Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView    
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.addNode("NodeNew", "Folk"); // addNode in  TreeView nodes
+treeObj.addNode("NodeNew", "book"); // First argument is new node text and it will be appended as child of node, which node is having ID book.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
  
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
 var treeObj = $("#treeView").data("ejTreeView");
-var obj = { id: "temp", text: "New node" };
-treeObj.addNode(obj, $("#Music"));
+var obj = { id: "temp", name: "New node" }; // In this object, we can also use selected, isChecked, imageUrl, spriteCssClass properties.
+treeObj.addNode(obj, $("#book"));
 </script>{% endhighlight %}
 
 
@@ -2381,7 +1896,7 @@ treeObj.addNode(obj, $("#Music"));
 
 
 
-To check all the TreeView nodes.
+To check all the nodes in TreeView.
 
 
 
@@ -2392,76 +1907,22 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-   <li>Artwork
-       <ul>
-           <li>Abstract
-               <ul>
-                  <li>2 Acrylic Mediums</li>
-                   <li>Creative Acrylic</li>
-                   <li>Modern Painting</li>
-                   <li>Canvas Art</li>
-                   <li>Black white</li>
-              </ul>
-           </li>
-       </ul>
-   </li>
-   <li>Books
-       <ul>
-           <li>Entertaining</li>
-           <li>Design</li>
-       </ul>
-   </li>
-   <li>Music
-       <ul>
-           <li>Mass</li>
-           <li>Folk</li>
-       </ul>
-   </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView({showCheckbox:true});
-// Create TreeView
+// Initialize TreeView    
+$("#treeView").ejTreeView({
+    showCheckbox:true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.checkAll(); // checkAll the TreeView nodes
+treeObj.checkAll(); // All the TreeView nodes will be checked.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
 <script>
-$("#treeView").ejTreeView({showCheckbox:true});
-// Create TreeView
 $("#treeView").ejTreeView("checkAll");        
 </script>{% endhighlight %}
 
@@ -2481,7 +1942,7 @@ $("#treeView").ejTreeView("checkAll");
 
 
 
-To Check particular node checkbox in TreeView.
+To check a node in TreeView.
 
 <table class="params">
 <thead>
@@ -2495,8 +1956,8 @@ To Check particular node checkbox in TreeView.
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">object of Tree view node.</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -2509,77 +1970,23 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView({showCheckbox:true});
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox:true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.checkNode($("#book")); // checkNode in  TreeView nodes
+treeObj.checkNode($("#book")); // // Given TreeView node will be checked.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
 <script>
-$("#treeView").ejTreeView({showCheckbox:true});
-// Create TreeView
-$("#treeView").ejTreeView("checkNode",$("#book"));        
+$("#treeView").ejTreeView("checkNode", $("#book"));        
 </script>{% endhighlight %}
 
 
@@ -2610,75 +2017,20 @@ Example
 
 {% highlight html %}
  
-  <ul id="treeView">
-   <li>Artwork
-       <ul>
-           <li>Abstract
-               <ul>
-                   <li>2 Acrylic Mediums</li>
-                   <li>Creative Acrylic</li>
-                   <li>Modern Painting</li>
-                   <li>Canvas Art</li>
-                   <li>Black white</li>
-               </ul>
-           </li>
-       </ul>
-   </li>
-   <li>Books
-       <ul>
-           <li>Entertaining</li>
-           <li>Design</li>
-       </ul>
-   </li>
-   <li>Music
-       <ul>
-           <li>Mass</li>
-           <li>Folk</li>
-       </ul>
-   </li>
-</ul> 
- 
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.collapseAll(); // collapseAll the TreeView nodes
+treeObj.collapseAll(); // All the TreeView nodes will be collapsed.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
 $("#treeView").ejTreeView("collapseAll");        
 </script>{% endhighlight %}
 
@@ -2698,7 +2050,7 @@ $("#treeView").ejTreeView("collapseAll");
 
 
 
-To collapseNode particular node in TreeView.
+To collapse a particular node in TreeView.
 
 <table class="params">
 <thead>
@@ -2712,8 +2064,8 @@ To collapseNode particular node in TreeView.
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">object of Tree view node.</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -2727,78 +2079,21 @@ Example
 
 {% highlight html %}
  
- <ul id="treeView">
-  <li id="art">Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.expandAll();
-treeObj.collapseNode($("#art")); // collapseNode in  TreeView nodes
+treeObj.collapseNode($("#book")); // Given TreeView node will be collapsed.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
- 
- <ul id="treeView">
-  <li id="art">Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("expandAll");
-$("#treeView").ejTreeView("collapseNode",$("#art"));        
+$("#treeView").ejTreeView("collapseNode", $("#book"));        
 </script>{% endhighlight %}
 
 
@@ -2807,7 +2102,7 @@ $("#treeView").ejTreeView("collapseNode",$("#art"));
 
 
 
-### disableNode<span class="signature">(node)</span>
+### disableNode<span class="signature">(element)</span>
 {:#methods:disablenode}
 
 
@@ -2830,9 +2125,9 @@ To disable the node in the TreeView.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">object of treeview node.</td>
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -2845,76 +2140,22 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.disableNode($("#book")); // disableNode in  TreeView nodes
+treeObj.disableNode($("#book")); // Given TreeView node will be disabled and child nodes also disabled.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("disableNode",$("#book"));        
+$("#treeView").ejTreeView("disableNode", $("#book"));        
 </script>{% endhighlight %}
 
 
@@ -2923,7 +2164,7 @@ $("#treeView").ejTreeView("disableNode",$("#book"));
 
 
 
-### enableNode<span class="signature">(node)</span>
+### enableNode<span class="signature">(element)</span>
 {:#methods:enablenode}
 
 
@@ -2946,9 +2187,9 @@ To enable the node in the TreeView.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">object of treeview node.</td>
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -2961,82 +2202,99 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-  <li>Artwork
-      <ul>
-         <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li id="music">Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.disableNode($("#music"));
-treeObj.disableNode($("#book"));
-treeObj.enableNode($("#book")); // enableNode in  TreeView nodes
+treeObj.enableNode($("#book")); // Given TreeView node will be enabled and child nodes also enabled.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li id="music">Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
+<script>
+$("#treeView").ejTreeView("enableNode", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### ensureVisible<span class="signature">(element)</span>
+{:#methods:ensurevisible}
+
+
+
+
+
+
+
+
+To ensure that the TreeView node is visible in the TreeView. This method is useful if we need select a TreeView node dynamically.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+boolean
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+// Given TreeView node is present in TreeView, then the tree is expanded and scrolled automatically to ensure that the current tree node is visible in the TreeView.
+treeObj.ensureVisible($("#book")); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
  
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView  
-$("#treeView").ejTreeView("disableNode",$("#music")); 
-$("#treeView").ejTreeView("disableNode",$("#book")); 
-$("#treeView").ejTreeView("enableNode",$("#book"));        
+$("#treeView").ejTreeView("ensureVisible", $("#book"));        
 </script>{% endhighlight %}
+
 
 
 
@@ -3065,76 +2323,21 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-   <li>Artwork
-       <ul>
-           <li>Abstract
-               <ul>
-                   <li>2 Acrylic Mediums</li>
-                   <li>Creative Acrylic</li>
-                   <li>Modern Painting</li>
-                   <li>Canvas Art</li>
-                   <li>Black white</li>
-               </ul>
-           </li>
-       </ul>
-   </li>
-   <li>Books
-       <ul>
-           <li>Entertaining</li>
-           <li>Design</li>
-       </ul>
-   </li>
-   <li>Music
-       <ul>
-           <li>Mass</li>
-           <li>Folk</li>
-       </ul>
-   </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.expandAll(); // expandAll the TreeView nodes
+treeObj.expandAll(); // All the TreeView nodes will be expanded.
 </script>{% endhighlight %}
 
 
-{% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+{% highlight html %} 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
 $("#treeView").ejTreeView("expandAll");        
 </script>{% endhighlight %}
 
@@ -3168,8 +2371,8 @@ To expandNode particular node in TreeView.
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">object of Tree view node.</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -3182,79 +2385,22 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.collapseAll();
-treeObj.expandNode($("#book")); // expandNode in  TreeView nodes
+treeObj.expandNode($("#book")); // Given TreeView node will be expanded.
 </script>{% endhighlight %}
 
 
-{% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+{% highlight html %} 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("collapseAll");
-$("#treeView").ejTreeView("expandNode",$("#book"));        
+$("#treeView").ejTreeView("expandNode", $("#book"));        
 </script>{% endhighlight %}
 
 
@@ -3273,7 +2419,16 @@ $("#treeView").ejTreeView("expandNode",$("#book"));
 
 
 
-To getCheckedNodes in the TreeView.
+To get currently checked nodes in TreeView.
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+object
+
 
 
 
@@ -3284,80 +2439,547 @@ Example
 
 
 {% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView({showCheckbox:true});
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox:true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.checkNode($("#book"));
-treeObj.getCheckedNodes(); // getAllCheckedNodes in  TreeView nodes
+treeObj.getCheckedNodes(); // All checked TreeView nodes will be returned.
 </script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getCheckedNodes");        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### getCheckedNodesIndex<span class="signature">()</span>
+{:#methods:getcheckednodesindex}
+
+
+
+
+
+
+
+
+To get currently checked nodes indexes in TreeView.
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+array
+
+
+
+
+
+
+Example
+{:.example}
 
 
 {% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView({showCheckbox:true});
-// Create TreeView
-$("#treeView").ejTreeView("checkNode",$("#book"));
-$("#treeView").ejTreeView("getCheckedNodes");        
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox:true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getCheckedNodesIndex(); // All checked TreeView nodes indexes will be returned as array.
 </script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getCheckedNodesIndex");        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### getCount<span class="signature">()</span>
+{:#methods:getcount}
+
+
+
+
+
+
+
+
+To get number of nodes in TreeView.
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox:true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getCount(); // It will return the TreeView nodes count.
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getCount");        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+### getExpandedNodes<span class="signature">()</span>
+{:#methods:getexpandenodes}
+
+
+
+
+
+
+
+
+To get currently expanded nodes in TreeView.
+
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+object
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox:true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getExpandedNodes(); // All expanded TreeView nodes will be returned.
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getExpandedNodes");        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### getExpandedNodesIndex<span class="signature">()</span>
+{:#methods:getexpandednodesindex}
+
+
+
+
+
+
+
+
+To get currently expanded nodes indexes in TreeView.
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+array
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox:true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getExpandedNodesIndex(); // All expanded TreeView nodes indexes will be returned as array.
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getExpandedNodesIndex");        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+### getNodeByIndex<span class="signature">(index)</span>
+{:#methods:getnodebyindex}
+
+
+
+
+
+
+
+
+To get TreeView node by using index position in TreeView.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Index position of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+object
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getNodeByIndex(3); // It will return the TreeView node of specified index.
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getNodeByIndex", 3);        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### getNode<span class="signature">(element)</span>
+{:#methods:getnode}
+
+
+
+
+
+
+
+
+To get TreeView node data such as id, text, parentId, selected, checked, expanded, level, childs and index.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+object
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getNode($("#book")); // Given TreeView node details will be returned as JSON object.
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getNode", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### getNodeIndex<span class="signature">(element)</span>
+{:#methods:getnodeindex}
+
+
+
+
+
+
+
+
+To get current index position of TreeView node.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getNodeIndex($("#book")); // Given TreeView node index postion will be returned.
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getNodeIndex", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+    ### getParent<span class="signature">(element)</span>
+{:#methods:getparent}
+
+
+
+
+
+
+
+
+To get immediate parent TreeView node of particular TreeView node.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+object
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getParent($("#book")); // It will return the immediate parent TreeView node of given TreeView node.
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getParent", $("#book"));        
+</script>{% endhighlight %}
+
+
+
 
 
 
@@ -3375,7 +2997,16 @@ $("#treeView").ejTreeView("getCheckedNodes");
 
 
 
-To get the selected nodes in the TreeView.
+To get the currently selected node in TreeView.
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+object
+
 
 
 
@@ -3386,76 +3017,21 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-   <li>Artwork
-       <ul>
-           <li>Abstract
-               <ul>
-                   <li>2 Acrylic Mediums</li>
-                   <li>Creative Acrylic</li>
-                   <li>Modern Painting</li>
-                   <li>Canvas Art</li>
-                   <li>Black white</li>
-               </ul>
-           </li>
-       </ul>
-   </li>
-   <li>Books
-       <ul>
-           <li>Entertaining</li>
-           <li>Design</li>
-       </ul>
-   </li>
-   <li>Music
-       <ul>
-           <li>Mass</li>
-           <li>Folk</li>
-       </ul>
-   </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getSelectedNode(); // getSelectedNode in  TreeView nodes
+treeObj.getSelectedNode(); // Currently selected TreeView node will be returned.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
 $("#treeView").ejTreeView("getSelectedNode");        
 </script>{% endhighlight %}
 
@@ -3465,7 +3041,65 @@ $("#treeView").ejTreeView("getSelectedNode");
 
 
 
-### getText<span class="signature">(node)</span>
+### getSelectedNodeIndex<span class="signature">()</span>
+{:#methods:getselectednodeindex}
+
+
+
+
+
+
+
+
+To get the index position of currently selected node in TreeView.
+
+
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getSelectedNodeIndex(); // Currently selected TreeView node index position will be returned.
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+$("#treeView").ejTreeView("getSelectedNodeIndex");        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### getText<span class="signature">(element)</span>
 {:#methods:gettext}
 
 
@@ -3475,7 +3109,7 @@ $("#treeView").ejTreeView("getSelectedNode");
 
 
 
-To get the text of the nodes in the TreeView.
+To get the text of a node in TreeView.
 
 <table class="params">
 <thead>
@@ -3488,12 +3122,24 @@ To get the text of the nodes in the TreeView.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">object of treeview node.</td>
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
+
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+string
+
+
+
 
 
 
@@ -3503,78 +3149,140 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-  <li>Artwork
-       <ul>
-           <li>Abstract
-               <ul>
-                   <li>2 Acrylic Mediums</li>
-                   <li>Creative Acrylic</li>
-                   <li>Modern Painting</li>
-                   <li>Canvas Art</li>
-                   <li>Black white</li>
-               </ul>
-           </li>
-       </ul>
-   </li>
-   <li id="book">Books
-       <ul>
-           <li>Entertaining</li>
-           <li>Design</li>
-       </ul>
-   </li>
-   <li>Music
-       <ul>
-           <li>Mass</li>
-           <li>Folk</li>
-       </ul>
-   </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getText($("#book")); // getText in  TreeView nodes
+treeObj.getText($("#book")); // Given TreeView node text will be returned.
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getText", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### getTreeData<span class="signature">()</span>
+{:#methods:gettreedata}
+
+
+
+
+
+
+
+
+To get the updated datasource of TreeView after performing some operation like drag and drop, node editing, adding and removing node.
+
+
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+array
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getTreeData(); // It will return the updated datasource as array of JSON object, after performing some operation.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("getText",$("#book"));        
+$("#treeView").ejTreeView("getTreeData");        
 </script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+### getVisibleNodes<span class="signature">()</span>
+{:#methods:getvisiblenodes}
+
+
+
+
+
+
+
+
+To get currently visible nodes in TreeView.
+
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+object
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox:true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getVisibleNodes(); // It will return the currently visible TreeView nodes.
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("getVisibleNodes");        
+</script>{% endhighlight %}
+
+
+
 
 
 
@@ -3592,7 +3300,8 @@ $("#treeView").ejTreeView("getText",$("#book"));
 
 
 
-To retrive the status of the collection of childs for the given TreeView node.
+To check a node having child or not.
+
 
 <table class="params">
 <thead>
@@ -3606,11 +3315,22 @@ To retrive the status of the collection of childs for the given TreeView node.
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">object of element</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+boolean
+
+
+
 
 
 
@@ -3620,77 +3340,22 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-<li>Artwork
-    <ul>
-        <li>Abstract
-            <ul>
-                <li>2 Acrylic Mediums</li>
-               <li>Creative Acrylic</li>
-                <li>Modern Painting</li>
-             <li>Canvas Art</li>
-             <li>Black white</li>
-          </ul>
-       </li>
-   </ul>
-</li>
-<li id="book">Books
-   <ul>
-        <li>Entertaining</li>
-       <li>Design</li>
-    </ul>
-</li>
-<li>Music
-    <ul>
-        <li>Mass</li>
-        <li>Folk</li>
-     </ul>
-</li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.hasChildNode($("#book")); // hasChildNode the TreeView nodes
+treeObj.hasChildNode($("#book")); // It will return true, if the given TreeView node having child node's, else false.
 </script>{% endhighlight %}
 
 
-{% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+{% highlight html %} 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("hasChildNode",$("#book"));        
+$("#treeView").ejTreeView("hasChildNode", $("#book"));        
 </script>{% endhighlight %}
 
 
@@ -3720,76 +3385,21 @@ Example
 
 
 {% highlight html %}
- 
- <ul id="treeView">
- <li>Artwork
-     <ul>
-         <li>Abstract
-             <ul>
-                 <li>2 Acrylic Mediums</li>
-                 <li>Creative Acrylic</li>
-                 <li>Modern Painting</li>
-                 <li>Canvas Art</li>
-                 <li>Black white</li>
-             </ul>
-         </li>
-     </ul>
- </li>
- <li>Books
-     <ul>
-         <li>Entertaining</li>
-         <li>Design</li>
-     </ul>
- </li>
- <li>Music
-     <ul>
-         <li>Mass</li>
-         <li>Folk</li>
-     </ul>
- </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.hide(); // hide the TreeView nodes
+treeObj.hide(); // It will hide all the nodes in TreeView.
 </script>{% endhighlight %}
 
 
-{% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+{% highlight html %} 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
 $("#treeView").ejTreeView("hide");        
 </script>{% endhighlight %}
 
@@ -3823,8 +3433,8 @@ To hideNode particular node in TreeView.
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">object of Tree view node.</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -3837,77 +3447,22 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
- <li>Artwork
-     <ul>
-         <li>Abstract
-             <ul>
-                 <li>2 Acrylic Mediums</li>
-                 <li>Creative Acrylic</li>
-                 <li>Modern Painting</li>
-                 <li>Canvas Art</li>
-                 <li>Black white</li>
-             </ul>
-         </li>
-     </ul>
- </li>
- <li id="book">Books
-     <ul>
-         <li>Entertaining</li>
-         <li>Design</li>
-     </ul>
- </li>
- <li>Music
-     <ul>
-         <li>Mass</li>
-         <li>Folk</li>
-     </ul>
- </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.hideNode($("#book")); // hideNode in  TreeView nodes
+treeObj.hideNode($("#book")); // It will hide the given TreeView node.
 </script>{% endhighlight %}
 
 
-{% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+{% highlight html %} 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("hideNode",$("#book"));        
+$("#treeView").ejTreeView("hideNode", $("#book"));        
 </script>{% endhighlight %}
 
 
@@ -3916,8 +3471,9 @@ $("#treeView").ejTreeView("hideNode",$("#book"));
 
 
 
-### isExpanded<span class="signature">(element)</span>
-{:#methods:isexpanded}
+
+### insertAfter<span class="signature">(newNodeText, target)</span>
+{:#methods:insertafter}
 
 
 
@@ -3926,7 +3482,7 @@ $("#treeView").ejTreeView("hideNode",$("#book"));
 
 
 
-To retrive the expand status of the given TreeView node.
+To add a Node or collection of nodes after the particular TreeView node.  
 
 <table class="params">
 <thead>
@@ -3939,9 +3495,15 @@ To retrive the expand status of the given TreeView node.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">object of Tree view node.</td>
+newNodeText{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">New node text or JSON object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -3955,77 +3517,101 @@ Example
 
 {% highlight html %}
  
-  <ul id="treeView">
- <li>Artwork
-     <ul>
-         <li>Abstract
-             <ul>
-                 <li>2 Acrylic Mediums</li>
-                 <li>Creative Acrylic</li>
-                 <li>Modern Painting</li>
-                 <li>Canvas Art</li>
-                <li>Black white</li>
-             </ul>
-         </li>
-     </ul>
- </li>
- <li id="book">Books
-     <ul>
-         <li>Entertaining</li>
-         <li>Design</li>
-     </ul>
- </li>
- <li>Music
-     <ul>
-         <li>Mass</li>
-         <li>Folk</li>
-     </ul>
- </li>
-</ul> 
- 
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView    
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.isExpanded($("#book")); // isExpanded the TreeView nodes
+treeObj.insertAfter("NodeNew", "book"); // First argument is new node text and it will be appended after the specified TreeView node, which node is having ID book.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
  
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("isExpanded",$("#book"));        
+var treeObj = $("#treeView").data("ejTreeView");
+var obj = { id: "temp", name: "New node" }; // In this object, we can also use selected, isChecked, imageUrl, spriteCssClass properties.
+treeObj.insertAfter(obj, $("#book"));
 </script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### insertBefore<span class="signature">(newNodeText, target)</span>
+{:#methods:insertbefore}
+
+
+
+
+
+
+
+
+To add a Node or collection of nodes before the particular TreeView node.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+newNodeText{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">New node text or JSON object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>
+// Initialize TreeView    
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.insertBefore("NodeNew", "book"); // First argument is new node text and it will be appended before the specified TreeView node, which node is having ID book.
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+ 
+<script>
+var treeObj = $("#treeView").data("ejTreeView");
+var obj = { id: "temp", name: "New node" }; // In this object, we can also use selected, isChecked, imageUrl, spriteCssClass properties.
+treeObj.insertBefore(obj, $("#book"));
+</script>{% endhighlight %}
+
+
 
 
 
@@ -4043,7 +3629,7 @@ $("#treeView").ejTreeView("isExpanded",$("#book"));
 
 
 
-To retrive the checked status of the given TreeView node.
+To check the given TreeView node is checked or unchecked.
 
 <table class="params">
 <thead>
@@ -4057,8 +3643,524 @@ To retrive the checked status of the given TreeView node.
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">object of Tree view node.</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+boolean
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.isNodeChecked($("#book")); // It will return true, if the given TreeView node is checked, else false. 
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("isNodeChecked", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### isChildLoaded<span class="signature">(element)</span>
+{:#methods:ischildloaded}
+
+
+
+
+
+
+
+
+To check whether the child nodes are loaded of the given TreeView node.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+boolean
+
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.isChildLoaded($("#book")); // It will return true, if the given TreeView node is child nodes are loaded, else false. 
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("isChildLoaded", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+### isDisabled<span class="signature">(element)</span>
+{:#methods:isdisabled}
+
+
+
+
+
+
+
+
+To check the given TreeView node is disabled or enabled.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+boolean
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.isDisabled($("#book")); // It will return true, if the given TreeView node is disabled, else false. 
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("isDisabled", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+### isExist<span class="signature">(element)</span>
+{:#methods:isexist}
+
+
+
+
+
+
+
+
+To check the given node is exist in TreeView.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+boolean
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.isExist($("#book")); // It will return true, if the given node is exist in TreeView, else false. 
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("isExist", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+### isExpanded<span class="signature">(element)</span>
+{:#methods:isexpanded}
+
+
+
+
+
+
+
+
+To get the expand status of the given TreeView node.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+boolean
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.isExpanded($("#book")); // It will return true, if the given TreeView node is expanded, else false. 
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("isExpanded", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### isSelected<span class="signature">(element)</span>
+{:#methods:isselected}
+
+
+
+
+
+
+
+
+To get the select status of the given TreeView node.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+boolean
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox:true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.isSelected($("#book")); // It will return true, if the given TreeView node is selected, else false.
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("isSelected", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### isVisible<span class="signature">(element)</span>
+{:#methods:isvisible}
+
+
+
+
+
+
+
+
+To get the visibility status of the given TreeView node.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Returns:
+{:#methods:returns:}
+
+boolean
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.isVisible($("#book")); // It will return true, if the given TreeView node is visible, else false.
+</script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("isVisible", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### loadData<span class="signature">(newNodeText, target)</span>
+{:#methods:loaddata}
+
+
+
+
+
+
+
+
+To load the TreeView nodes from the particular URL. If target tree node is specified, then the given nodes are added as child of target tree node, otherwise nodes are added in TreeView.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+URL{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">URL location, the data returned from the URL will be loaded in TreeView</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -4072,77 +4174,105 @@ Example
 
 {% highlight html %}
  
-<ul id="treeView">
- <li>Artwork
-     <ul>
-         <li>Abstract
-             <ul>
-                 <li>2 Acrylic Mediums</li>
-                 <li>Creative Acrylic</li>
-                 <li>Modern Painting</li>
-                 <li>Canvas Art</li>
-                 <li>Black white</li>
-             </ul>
-         </li>
-     </ul>
- </li>
- <li id="book">Books
-     <ul>
-         <li>Entertaining</li>
-         <li>Design</li>
-     </ul>
- </li>
- <li>Music
-     <ul>
-         <li>Mass</li>
-         <li>Folk</li>
-     </ul>
- </li>
-</ul> 
- 
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView({showCheckbox:true});
-// Create TreeView
+// Initialize TreeView    
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.isNodeChecked($("#book")); // isNodeChecked the TreeView nodes
+treeObj.loadData("myapplication/childdata", "book"); // The array of JSON data returned from the given URL, will be appended as child of node, which node is having ID book.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
  
 <script>
-$("#treeView").ejTreeView({showCheckbox:true});
-// Create TreeView
-$("#treeView").ejTreeView("isNodeChecked",$("#book"));        
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.loadData("myapplication/childdata", $("#book"));
 </script>{% endhighlight %}
+
+
+
+
+
+
+
+
+### moveNode<span class="signature">(sourceNode, destionationNode, index)</span>
+{:#methods:movenode}
+
+
+
+
+
+
+
+
+To move the TreeView node with in same TreeView. The new poistion of given TreeView node will be based on destionation node and index position.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+sourceNode{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+destinationNode{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">New index position of given source node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>
+// Initialize TreeView    
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.moveNode("#art", "#book"); // The source node(#art) will be appended as a child of destination node(book).
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+ 
+<script>
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.moveNode($("#art"), "", 3); // The source node will be placed directly to the given index position in TreeView.
+</script>{% endhighlight %}
+
+
 
 
 
@@ -4171,78 +4301,69 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-   <li>Artwork
-       <ul>
-          <li>Abstract
-               <ul>
-                   <li>2 Acrylic Mediums</li>
-                   <li>Creative Acrylic</li>
-                   <li>Modern Painting</li>
-                   <li>Canvas Art</li>
-                   <li>Black white</li>
-               </ul>
-          </li>
-       </ul>
-   </li>
-   <li>Books
-       <ul>
-           <li>Entertaining</li>
-           <li>Design</li>
-      </ul>
-   </li>
-   <li>Music
-       <ul>
-           <li>Mass</li>
-           <li>Folk</li>
-       </ul>
-   </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.refresh(); // refresh the TreeView
+treeObj.refresh(); // It will refresh the TreeView.
 </script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("refresh");        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### removeAll<span class="signature">()</span>
+{:#methods:removeall}
+
+
+
+
+
+
+
+
+To remove all the nodes in TreeView.
+
+
+
+
+
+Example
+{:.example}
 
 
 {% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("refresh");        
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.removeAll(); // It will remove all the nodes in TreeView.
 </script>{% endhighlight %}
+
+
+{% highlight html %} 
+<script>
+$("#treeView").ejTreeView("removeAll");        
+</script>{% endhighlight %}
+
 
 
 
@@ -4260,7 +4381,7 @@ $("#treeView").ejTreeView("refresh");
 
 
 
-To remove Node in the TreeView.
+To remove a node in TreeView.
 
 <table class="params">
 <thead>
@@ -4274,8 +4395,8 @@ To remove Node in the TreeView.
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">object of Tree view node.</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -4288,77 +4409,22 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                 <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-         <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.removeNode($("#book")); // removeNode in  TreeView nodes
+treeObj.removeNode($("#book")); // Given TreeView node will be removed and childnodes also removed.
 </script>{% endhighlight %}
 
 
-{% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+{% highlight html %} 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("removeNode",$("#book"));        
+$("#treeView").ejTreeView("removeNode", $("#book"));        
 </script>{% endhighlight %}
 
 
@@ -4367,7 +4433,7 @@ $("#treeView").ejTreeView("removeNode",$("#book"));
 
 
 
-### selectNode<span class="signature">(node)</span>
+### selectNode<span class="signature">(element)</span>
 {:#methods:selectnode}
 
 
@@ -4377,7 +4443,7 @@ $("#treeView").ejTreeView("removeNode",$("#book"));
 
 
 
-To select the node in the TreeView.
+To select a node in TreeView.
 
 <table class="params">
 <thead>
@@ -4390,9 +4456,9 @@ To select the node in the TreeView.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">object of treeview node.</td>
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -4405,77 +4471,22 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.selectNode($("#book")); // selectNode in  TreeView nodes
+treeObj.selectNode($("#book")); // Given TreeView node will be selected.
 </script>{% endhighlight %}
 
 
-{% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+{% highlight html %} 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("selectNode",$("#book"));        
+$("#treeView").ejTreeView("selectNode", $("#book"));        
 </script>{% endhighlight %}
 
 
@@ -4505,76 +4516,21 @@ Example
 
 
 {% highlight html %}
- 
- <ul id="treeView">
- <li>Artwork
-     <ul>
-         <li>Abstract
-             <ul>
-                 <li>2 Acrylic Mediums</li>
-                 <li>Creative Acrylic</li>
-                 <li>Modern Painting</li>
-                 <li>Canvas Art</li>
-                 <li>Black white</li>
-             </ul>
-         </li>
-     </ul>
- </li>
- <li>Books
-     <ul>
-         <li>Entertaining</li>
-         <li>Design</li>
-     </ul>
- </li>
- <li>Music
-     <ul>
-         <li>Mass</li>
-         <li>Folk</li>
-     </ul>
- </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.show(); // show the TreeView nodes
+treeObj.show(); // It will show all the nodes in TreeView.
 </script>{% endhighlight %}
 
 
-{% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+{% highlight html %} 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
 $("#treeView").ejTreeView("show");        
 </script>{% endhighlight %}
 
@@ -4594,7 +4550,7 @@ $("#treeView").ejTreeView("show");
 
 
 
-To showNode particular node in TreeView.
+To show a node in TreeView.
 
 <table class="params">
 <thead>
@@ -4608,8 +4564,8 @@ To showNode particular node in TreeView.
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">object of Tree view node.</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -4622,77 +4578,22 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
- <li>Artwork
-     <ul>
-         <li>Abstract
-             <ul>
-                 <li>2 Acrylic Mediums</li>
-                 <li>Creative Acrylic</li>
-                 <li>Modern Painting</li>
-                 <li>Canvas Art</li>
-                 <li>Black white</li>
-             </ul>
-         </li>
-     </ul>
- </li>
- <li id="book">Books
-     <ul>
-         <li>Entertaining</li>
-         <li>Design</li>
-     </ul>
- </li>
- <li>Music
-     <ul>
-         <li>Mass</li>
-         <li>Folk</li>
-     </ul>
- </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.showNode($("#book")); // showNode in  TreeView nodes
+treeObj.showNode($("#book")); // It will show the given TreeView node.
 </script>{% endhighlight %}
 
 
-{% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+{% highlight html %} 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("showNode",$("#book"));        
+$("#treeView").ejTreeView("showNode", $("#book"));        
 </script>{% endhighlight %}
 
 
@@ -4711,7 +4612,7 @@ $("#treeView").ejTreeView("showNode",$("#book"));
 
 
 
-To uncheck all the TreeView nodes.
+To uncheck all the nodes in TreeView.
 
 
 
@@ -4722,76 +4623,22 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
-   <li>Artwork
-       <ul>
-           <li>Abstract
-               <ul>
-                   <li>2 Acrylic Mediums</li>
-                   <li>Creative Acrylic</li>
-                   <li>Modern Painting</li>
-                   <li>Canvas Art</li>
-                   <li>Black white</li>
-               </ul>
-           </li>
-       </ul>
-   </li>
-   <li>Books
-       <ul>
-           <li>Entertaining</li>
-           <li>Design</li>
-      </ul>
-   </li>
-   <li>Music
-       <ul>
-           <li>Mass</li>
-           <li>Folk</li>
-       </ul>
-   </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView({showCheckbox:true});
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox:true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.unCheckAll(); // uncheckAll the TreeView nodes
+treeObj.unCheckAll(); // All the TreeView nodes will be unchecked.
 </script>{% endhighlight %}
 
 
-{% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+{% highlight html %} 
 <script>
-$("#treeView").ejTreeView({showCheckbox:true});
-// Create TreeView
 $("#treeView").ejTreeView("unCheckAll");        
 </script>{% endhighlight %}
 
@@ -4811,7 +4658,7 @@ $("#treeView").ejTreeView("unCheckAll");
 
 
 
-To Uncheck particular node checkbox in TreeView.
+To uncheck a node in TreeView.
 
 <table class="params">
 <thead>
@@ -4825,8 +4672,8 @@ To Uncheck particular node checkbox in TreeView.
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">object of Tree view node.</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
 </tr>
 </tbody>
 </table>
@@ -4839,79 +4686,23 @@ Example
 
 
 {% highlight html %}
- 
-  <ul id="treeView">
- <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                 <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-     </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView({showCheckbox:true});
-// Create TreeView
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    showCheckbox:true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.checkAll();
-treeObj.uncheckNode($("#book")); // uncheckNode in  TreeView nodes
+treeObj.uncheckNode($("#book")); // Given TreeView node will be unchecked.
 </script>{% endhighlight %}
 
 
-{% highlight html %}
- 
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+{% highlight html %} 
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("checkAll");
-$("#treeView").ejTreeView("uncheckNode",$("#book"));        
+$("#treeView").ejTreeView("uncheckNode", $("#book"));        
 </script>{% endhighlight %}
 
 
@@ -4920,7 +4711,7 @@ $("#treeView").ejTreeView("uncheckNode",$("#book"));
 
 
 
-### unselectNode<span class="signature">(node)</span>
+### unselectNode<span class="signature">(element)</span>
 {:#methods:unselectnode}
 
 
@@ -4943,9 +4734,77 @@ To unselect the node in the TreeView.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">object of treeview node.</td>
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.unselectNode($("#book")); // Given TreeView node will be unselected.
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+<script>
+$("#treeView").ejTreeView("unselectNode", $("#book"));        
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### updateText<span class="signature">(target, newText)</span>
+{:#methods:updatetext}
+
+
+
+
+
+
+
+
+To edit or update the text of the TreeView node.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+target{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">ID of TreeView node/object of TreeView node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+newText{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">New text</td>
 </tr>
 </tbody>
 </table>
@@ -4959,83 +4818,120 @@ Example
 
 {% highlight html %}
  
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-       </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
- 
+<div id="treeView"></div>
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
+// Initialize TreeView    
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+});
+
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.unselectNode($("#book")); // unselectNode in  TreeView nodes
+treeObj.updateText("book", "NewText"); // It will update the text of the given TreeView node.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
- <ul id="treeView">
-  <li>Artwork
-      <ul>
-          <li>Abstract
-              <ul>
-                  <li>2 Acrylic Mediums</li>
-                  <li>Creative Acrylic</li>
-                  <li>Modern Painting</li>
-                  <li>Canvas Art</li>
-                  <li>Black white</li>
-              </ul>
-          </li>
-      </ul>
-  </li>
-  <li id="book">Books
-      <ul>
-          <li>Entertaining</li>
-          <li>Design</li>
-      </ul>
-  </li>
-  <li>Music
-      <ul>
-          <li>Mass</li>
-          <li>Folk</li>
-      </ul>
-  </li>
-</ul> 
  
 <script>
-$("#treeView").ejTreeView();
-// Create TreeView
-$("#treeView").ejTreeView("unselectNode",$("#book"));        
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.updateText($("#book"), "NewText");
 </script>{% endhighlight %}
+
+
+
 
 
 
 
 
 ## Events
+
+
+
+
+
+
+
+### beforeAdd
+{:#events:beforeadd}
+
+
+
+
+
+
+
+
+Fires before adding node to TreeView.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.data{% endhighlight %}</td>
+<td class="type"><span class="param-type">string/object</span></td>
+<td class="description last">returns the given new node data</td> 
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.targetParent{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the parent element, the given new nodes to be appended to the given parent element</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given parent node details</td> 
+</tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with beforeAdd event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    beforeAdd: function(args) {}
+});
+</script>{% endhighlight %}
+
 
 
 
@@ -5054,7 +4950,7 @@ $("#treeView").ejTreeView("unselectNode",$("#book"));
 
 
 
-Fires when beforeCollapse successfully.
+Fires before collapse a node.
 
 <table class="params">
 <thead>
@@ -5106,42 +5002,212 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create beforeCollapse event for ejTreeView
-$("#treeView").ejTreeView({ 
-        beforeCollapse: function(args) {}
-}); 
- </script>     {% endhighlight %}
+// Initialize TreeView with beforeCollapse event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    beforeCollapse: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### beforeCut
+{:#events:beforecut}
+
+
+
+
+
+
+
+
+Fires before cut node in TreeView.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the event object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the target element, the given node to be cut</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.nodeDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given target node values</td> 
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.keyCode{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the keypressed keycode value</td>
+</tr>
+<tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with beforeCut event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    beforeCut: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+### beforeDelete
+{:#events:beforedelete}
+
+
+
+
+
+
+
+
+Fires before deleting node in TreeView.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the event object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the target element, the given node to be deleted</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.nodeDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given target node values</td> 
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the current parent element of the target node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the parent node values</td> 
+</tr>
+<tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with beforeDelete event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    beforeDelete: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
 
 
 
@@ -5159,7 +5225,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when beforeEdit successfully.
+Fires before editing the node in TreeView.
 
 <table class="params">
 <thead>
@@ -5205,43 +5271,16 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create beforeEdit event for ejTreeView
-$("#treeView").ejTreeView({ 
-        beforeEdit: function(args) {}
-}); 
- </script>     {% endhighlight %}
-
+// Initialize TreeView with beforeEdit event.
+$("#treeView").ejTreeView({
+    allowEditing: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    beforeEdit: function(args) {}
+});
+</script>{% endhighlight %}
 
 
 
@@ -5258,7 +5297,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when beforeExpand successfully.
+Fires before expanding the node.
 
 <table class="params">
 <thead>
@@ -5316,135 +5355,15 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create beforeExpand event for ejTreeView
-$("#treeView").ejTreeView({ 
-        beforeExpand: function(args) {}
-});     
- </script> {% endhighlight %}
-
-
-
-
-
-
-
-### created
-{:#events:created}
-
-
-
-
-
-
-
-
-Fires when created successfully.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the TreeView model</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
-
- 
-<script>
-//To create node for ejTreeView
-$("#treeView").ejTreeView({ 
-      create: function(args) {}
+// Initialize TreeView with beforeExpand event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    beforeExpand: function(args) {}
 });
- </script>      {% endhighlight %}
+</script>{% endhighlight %}
 
 
 
@@ -5452,8 +5371,8 @@ $("#treeView").ejTreeView({
 
 
 
-### destroyed
-{:#events:destroyed}
+### beforeLoad
+{:#events:beforeload}
 
 
 
@@ -5462,7 +5381,266 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when destroyed successfully.
+Fires before loading nodes to TreeView.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.ajaxOptions{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the AJAX settings object</td>
+</tr>
+<tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with beforeLoad event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    beforeLoad: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
+
+### beforePaste
+{:#events:beforepaste}
+
+
+
+
+
+
+
+
+Fires before paste node in TreeView.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the event object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the target element, the given node to be pasted</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.nodeDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given target node values</td> 
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.keyCode{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the keypressed keycode value</td>
+</tr>
+<tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with beforePaste event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    beforePaste: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+### beforeSelect
+{:#events:beforeselect}
+
+
+
+
+
+
+
+
+Fires before selecting node in TreeView.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the target element, the given node to be selected</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.nodeDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given target node values</td> 
+</tr>
+<tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with beforeSelect event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    beforeSelect: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
+
+### create
+{:#events:create}
+
+
+
+
+
+
+
+
+Fires when TreeView created successfully.
 
 <table class="params">
 <thead>
@@ -5502,42 +5680,82 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create destroy event for ejTreeView
-$("#treeView").ejTreeView({ 
-      destroy: function(args) {}
-}); 
- </script>     {% endhighlight %}
+// Initialize TreeView with create event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    create: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### destroy
+{:#events:destroy}
+
+
+
+
+
+
+
+
+Fires when TreeView destroyed successfully.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with destroy event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    destroy: function(args) {}
+});
+</script>{% endhighlight %}
+
 
 
 
@@ -5555,7 +5773,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when inlineEditValidation successfully.
+Fires before nodeEdit Successful.
 
 <table class="params">
 <thead>
@@ -5592,7 +5810,7 @@ argument.newText{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.nodeId{% endhighlight %}</td>
+argument.id{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the current node element id</td>
 </tr>
@@ -5613,43 +5831,16 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create inlineEditValidation event for ejTreeView
-$("#treeView").ejTreeView({ 
-        inlineEditValidation: function(args) {}
-});  
- </script>    {% endhighlight %}
-
+// Initialize TreeView with inlineEditValidation event.
+$("#treeView").ejTreeView({
+    allowEditing: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    inlineEditValidation: function(args) {}
+});
+</script>{% endhighlight %}
 
 
 
@@ -5666,7 +5857,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when keyPress successfully.
+Fires when key pressed successfully.
 
 <table class="params">
 <thead>
@@ -5742,42 +5933,287 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create keyPress event for ejTreeView
-$("#treeView").ejTreeView({ 
-        keyPress: function(args) {}
-});     
- </script> {% endhighlight %}
+// Initialize TreeView with keyPress event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    keyPress: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### loadError
+{:#events:loaderror}
+
+
+
+
+
+
+
+
+Fires when data load fails.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.error{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the AJAX error object</td>
+</tr>
+<tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with loadError event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    loadError: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+### loadSuccess
+{:#events:loadsuccess}
+
+
+
+
+
+
+
+
+Fires when data loaded successfully.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the success data from the URL</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.targetParent{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the target parent element, the data returned from the URL to be appended to the given parent element, else in TreeView</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given parent node details</td> 
+</tr>
+<tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with loadSuccess event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    loadSuccess: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
+
+### nodeAdd
+{:#events:nodeadd}
+
+
+
+
+
+
+
+
+Fires when node added successfully.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the added data, that are given initially</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.nodes{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the newly added elements</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the target parent element of the added element</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given parent node details</td> 
+</tr>
+<tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with nodeAdd event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeAdd: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -5795,7 +6231,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when nodeCheck successfully.
+Fires when node checked successfully.
 
 <table class="params">
 <thead>
@@ -5871,43 +6307,16 @@ Example
 
 
 {% highlight html %}
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
-<script> 
-//To create select event for ejTreeView
-$("#treeView").ejTreeView({ 
-                showCheckbox:true,
-        nodeCheck: function(args) {}
-}); 
- </script>     {% endhighlight %}
-
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with nodeCheck event.
+$("#treeView").ejTreeView({
+    showCheckbox: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeCheck: function(args) {}
+});
+</script>{% endhighlight %}
 
 
 
@@ -5924,7 +6333,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when nodeClick successfully.
+Fires when node clicked successfully.
 
 <table class="params">
 <thead>
@@ -5982,43 +6391,15 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create click event for ejTreeView
-$("#treeView").ejTreeView({ 
-        nodeClick: function(args) {}
-});    
- </script>  {% endhighlight %}
-
+// Initialize TreeView with nodeClick event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeClick: function(args) {}
+});
+</script>{% endhighlight %}
 
 
 
@@ -6035,7 +6416,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when nodeCollapse successfully.
+Fires when node collapsed successfully.
 
 <table class="params">
 <thead>
@@ -6099,42 +6480,200 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create nodeCollapse event for ejTreeView
-$("#treeView").ejTreeView({ 
-        nodeCollapse: function(args) {}
-}); 
- </script>     {% endhighlight %}
+// Initialize TreeView with nodeCollapse event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeCollapse: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+### nodeCut
+{:#events:nodecut}
+
+
+
+
+
+
+
+
+Fires when node cut successfully.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the event object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the current parent element of the cut node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given parent node details</td> 
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.keyCode{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the keypressed keycode value</td>
+</tr>
+<tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with nodeCut event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeCut: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+### nodeDelete
+{:#events:nodedelete}
+
+
+
+
+
+
+
+
+Fires when node deleted successfully.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the event object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the current parent element of the deleted node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given parent node details</td> 
+</tr>
+<tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with nodeDelete event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeDelete: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
 
 
 
@@ -6152,7 +6691,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when nodeDrag successfully.
+Fires when node dragging.
 
 <table class="params">
 <thead>
@@ -6183,9 +6722,33 @@ argument.type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
+argument.dragTarget{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the original drag target</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current element target</td>
+<td class="description last">returns the current target TreeView node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.targetElementData{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the current target details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the current parent element of the target node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.parentElementData{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given parent node details</td> 
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -6204,42 +6767,16 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create nodeDrag event for ejTreeView
-$("#treeView").ejTreeView({ 
-        nodeDrag: function(args) {}
-});      
- </script>{% endhighlight %}
+// Initialize TreeView with nodeDrag event.
+$("#treeView").ejTreeView({
+    allowDragAndDrop: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeDrag: function(args) {}
+});
+</script>{% endhighlight %}
 
 
 
@@ -6257,7 +6794,8 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when nodeDragStart successfully.
+Fires when node drag start successfully.
+
 
 <table class="params">
 <thead>
@@ -6288,9 +6826,33 @@ argument.type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
+argument.dragTarget{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the original drag target</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.draggedElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the current dragging TreeView node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.draggedElementData{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the current dragging TreeView node details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current element target</td>
+<td class="description last">returns the current parent element of the dragging node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.targetElementData{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given parent node details</td> 
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -6303,48 +6865,21 @@ argument.event{% endhighlight %}</td>
 
 
 
-
 Example
 {:.example}
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//nodeDragStart event for ejTreeView
-$("#treeView").ejTreeView({ 
-        nodeDragStart: function(args) {}
-});  
- </script>    {% endhighlight %}
+// Initialize TreeView with nodeDragStart event.
+$("#treeView").ejTreeView({
+    allowDragAndDrop: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeDragStart: function(args) {}
+});
+</script>{% endhighlight %}
 
 
 
@@ -6362,7 +6897,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when nodeDragStop successfully.
+Fires before the dragged node to be dropped.
 
 <table class="params">
 <thead>
@@ -6393,21 +6928,45 @@ argument.type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
+argument.dropTarget{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the original drop target</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.draggedElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the current dragged TreeView node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.draggedElementData{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the current dragged TreeView node details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current element target</td>
+<td class="description last">returns the current parent element of the dragged node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.targetElementData{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given parent node details</td> 
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.position{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the drop position such as before, after or over</td> 
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the event object</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.position{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the element new dragged place from its original place.</td>
 </tr>
 </tbody>
 </table>
@@ -6420,42 +6979,16 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create nodeDragStop event for ejTreeView
-$("#treeView").ejTreeView({ 
-        nodeDragStop: function(args) {}
-});  
- </script>    {% endhighlight %}
+// Initialize TreeView with nodeDragStop event.
+$("#treeView").ejTreeView({
+    allowDragAndDrop: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeDragStop: function(args) {}
+});
+</script>{% endhighlight %}
 
 
 
@@ -6473,7 +7006,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when nodeDropped successfully.
+Fires when node dropped successfully.
 
 <table class="params">
 <thead>
@@ -6504,19 +7037,43 @@ argument.type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
+argument.dropTarget{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the original drop target</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.droppedElement{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the current dropped TreeView node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.droppedElementData{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the current dropped TreeView node details</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 argument.target{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current element target</td>
+<td class="description last">returns the current parent element of the dropped node</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.targetElementData{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given parent node details</td> 
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.position{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the drop position such as before, after or over</td> 
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.event{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the event object</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.dropedElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the event object</td>
 </tr>
@@ -6531,42 +7088,119 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create nodeDropped event for ejTreeView
-$("#treeView").ejTreeView({ 
-        nodeDropped: function(args) {}
-});  
- </script>    {% endhighlight %}
+// Initialize TreeView with nodeDropped event.
+$("#treeView").ejTreeView({
+    allowDragAndDrop: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeDropped: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### nodeEdit
+{:#events:nodeedit}
+
+
+
+
+
+
+
+
+Fires when node edited successfully.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the id of the element</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.oldText{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the oldText of the element</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.newText{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the newText of the element</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the event object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the target element, the given node to be cut</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.nodeDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given target node values</td> 
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with nodeEdit event.
+$("#treeView").ejTreeView({
+    allowEditing: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeEdit: function(args) {}
+});
+</script>{% endhighlight %}
 
 
 
@@ -6584,7 +7218,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when nodeExpand successfully.
+Fires when node expanded successfully.
 
 <table class="params">
 <thead>
@@ -6654,42 +7288,112 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create expand event for ejTreeView
-$("#treeView").ejTreeView({ 
-        nodeExpand: function(args) {}
-});      
- </script>{% endhighlight %}
+// Initialize TreeView with nodeExpand event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeExpand: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
+
+
+### nodePaste
+{:#events:nodepaste}
+
+
+
+
+
+
+
+
+Fires when node pasted successfully.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument.cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the TreeView model</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.event{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the event object</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.target{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the pasted element</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.nodeDetails{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the given target node values</td> 
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+argument.keyCode{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the keypressed keycode value</td>
+</tr>
+<tr>
+<tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+
+<div id="treeView"></div>
+<script>
+// Initialize TreeView with nodePaste event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodePaste: function(args) {}
+});
+</script>{% endhighlight %}
+
+
+
+
+
 
 
 
@@ -6707,7 +7411,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when nodeSelect successfully.
+Fires when node selected successfully.
 
 <table class="params">
 <thead>
@@ -6771,42 +7475,15 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create select event for ejTreeView
-$("#treeView").ejTreeView({ 
-        nodeSelect: function(args) {}
-});   
- </script>   {% endhighlight %}
+// Initialize TreeView with nodeSelect event.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeSelect: function(args) {}
+});
+</script>{% endhighlight %}
 
 
 
@@ -6824,7 +7501,7 @@ $("#treeView").ejTreeView({
 
 
 
-Fires when nodeUncheck successfully.
+Fires when node unchecked successfully.
 
 <table class="params">
 <thead>
@@ -6900,43 +7577,16 @@ Example
 
 
 {% highlight html %}
- 
-<ul id="treeView">
-       <li>Artwork
-           <ul>
-               <li>Abstract
-                   <ul>
-                       <li>2 Acrylic Mediums</li>
-                       <li>Creative Acrylic</li>
-                       <li>Modern Painting</li>
-                       <li>Canvas Art</li>
-                       <li>Black white</li>
-                   </ul>
-               </li>
-           </ul>
-       </li>
-       <li>Books
-           <ul>
-               <li>Entertaining</li>
-               <li>Design</li>
-           </ul>
-       </li>
-       <li>Music
-           <ul>
-               <li>Mass</li>
-               <li>Folk</li>
-           </ul>
-       </li>
-   </ul>
 
- 
+<div id="treeView"></div>
 <script>
-//To create nodeUncheck event for ejTreeView
-$("#treeView").ejTreeView({ 
-                showCheckbox:true,
-        nodeUncheck: function(args) {}
-});   
- </script>   {% endhighlight %}
+// Initialize TreeView with nodeUncheck event.
+$("#treeView").ejTreeView({
+    showCheckbox: true,
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    nodeUncheck: function(args) {}
+});
+</script>{% endhighlight %}
 
 
 
