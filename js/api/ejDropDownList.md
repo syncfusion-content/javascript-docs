@@ -493,7 +493,7 @@ $("#drpdwn").ejDropDownList({targetID: "carsList",enableIncrementalSearch: true 
 </script>{% endhighlight %}
 
 ### enableFilterSearch <span class="type-signature type boolean">boolean</span>
-{:#members:enableincrementalsearch}
+{:#members:enablefiltersearch}
 
 
 
@@ -591,7 +591,7 @@ Example
 {% endhighlight %}
 
 ### enablePopupResize <span class="type-signature type boolean">boolean</span>
-{:#members:enablepersistence}
+{:#members:enablepopupresize}
 
 
 
@@ -680,7 +680,7 @@ Example
 
 
 ### enableSorting <span class="type-signature type boolean">boolean</span>
-{:#members:enablertl}
+{:#members:enableSorting}
 
 
 
@@ -991,7 +991,79 @@ Example
 {% endhighlight %}
 
 
+### headerTemplate<span class="type-signature type string">string</span>
+{:#members:headertemplate}
 
+
+
+Used to create visualized header for dropdown items
+
+
+Default Value:
+{:.param}
+
+
+
+* null
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+        
+// Sets the headerTemplate API value during initialization  .   
+<input type="text" id="drpdwn" /><script>
+        window.countries = [
+             { text: "Argentina", flag: "flag-ar" },
+             { text: "Armenia", flag: "flag-am" }, 
+             { text: "Brazil", flag: "flag-br" },
+             { text: "Bangladesh", flag: "flag-bd" },
+             { text: "Canada", flag: "flag-ca" }
+        ];
+        $("#drpdwn").ejDropDownList( 
+        {
+            dataSource: window.countries, 
+            template: '<div class="flag ${flag}"> </div>' + '<div class="txt"> ${text} </div>', width: "200px"
+            headerTemplate: "<div class='header'><span class='flag-head'>Flag</span> <span class='con-head'>Countries</span> </div>"
+        });</script><style type="text/css">
+        /* Sprite css for country flags and get the images from JS samples location */
+        .flag {
+            background: url("images/autocomplete/flags.png") no-repeat;
+            float: left;
+            height: 15px;
+            margin-right: 10px;
+            margin-top: 3px;
+            width: 25px;
+        }
+        .header {
+			text-align:center;
+			font-weight:600;
+			height:30px;
+			vertical-align:middle;	
+			border-bottom:1px solid #c8c8c8;
+		}
+		.flag-head{
+			float: left;
+			margin-left: 12px;
+			margin-top: 5px;
+		}
+		.con-head{
+			float: right;
+			margin-right: 89px;
+			margin-top: 5px;
+		}
+        .flag.flag-am {background-position: -25px 0;}
+        .flag.flag-ar {background-position: -50px 0;}
+        .flag.flag-bd {background-position: -75px 0;}
+        .flag.flag-br {background-position: -100px 0;}
+        .flag.flag-ca {background-position: -125px 0;}
+    </style>
+{% endhighlight %}
 
 ### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
 {:#members:height}
@@ -1038,7 +1110,7 @@ Example
 
 
 ### htmlAttributes <span class="type-signature type object">Object</span> 
-{:#members:htmlAttributes}
+{:#members:htmlattributes}
 
 
 
@@ -1647,7 +1719,7 @@ Example
 
 
 ### selectedIndices <span class="type-signature type integerarray">integerarray</span>
-{:#members:selecteditems}
+{:#members:selectedIndices}
 
 
 
@@ -2261,7 +2333,7 @@ Example
 
 
 ### virtualScrollMode <span class="type-signature type string">String</span> 
-{:#members:width}
+{:#members:virtualscrollmode}
 
 
 
@@ -2716,7 +2788,7 @@ Example
 
 
 ### disableItemsByIndices<span class="signature">()</span>
-{:#methods:disableItemsByIndices}
+{:#methods:disableitemsbyindices}
 
 
 
@@ -2871,7 +2943,7 @@ Example
 
 
 ### enableItemsByIndices<span class="signature">()</span>
-{:#methods:enableItemsByIndices}
+{:#methods:enableitemsbyindices}
 
 
 
@@ -2953,7 +3025,7 @@ Example
 
 
 ### getListData<span class="signature">()</span>
-{:#methods:getListData}
+{:#methods:getlistdata}
 
 
 
@@ -3239,7 +3311,7 @@ Example
 
 
 ### selectItemsByIndices<span class="signature">()</span>
-{:#methods:selectItemsByIndices}
+{:#methods:selectitemsbyindices}
 
 
 
@@ -3311,7 +3383,7 @@ Example
 
 
 ### selectItemByText<span class="signature">()</span>
-{:#methods:selectItemByText}
+{:#methods:selectitembytext}
 
 
 
@@ -3369,7 +3441,7 @@ Example
 
 
 ### selectItemByValue<span class="signature">()</span>
-{:#methods:selectItemByValue}
+{:#methods:selectitembyvalue}
 
 
 
@@ -3573,7 +3645,7 @@ Example
 
 
 ### unselectItemsByIndices<span class="signature">()</span>
-{:#methods:unselectItemsByIndices}
+{:#methods:unselectitemsbyindices}
 
 
 
@@ -3887,8 +3959,8 @@ Example
  {% endhighlight %}
 
 
- ### actionFailure
-{:#events:actionFailure}
+### actionFailure
+{:#events:actionfailure}
 
 
 
@@ -3970,7 +4042,7 @@ Example
  {% endhighlight %}
 
 ### actionSuccess
-{:#events:actionSuccess}
+{:#events:actionsuccess}
 
 
 
@@ -4455,7 +4527,7 @@ Example
 
 
 ### checkChange
-{:#events:checkChange}
+{:#events:checkchange}
 
 
 
@@ -4633,7 +4705,7 @@ Example
 
 
 ### dataBound
-{:#events:dataBound}
+{:#events:databound}
 
 
 
@@ -4867,7 +4939,7 @@ Example
 
 
 ### popupResize
-{:#events:popupResize}
+{:#events:popupresize}
 
 
 
@@ -5026,7 +5098,7 @@ Example
 
 
 ### popupResizeStart
-{:#events:popupResizeStart}
+{:#events:popupresizestart}
 
 
 Fires the action, when resizing a popup starts. 
@@ -5101,7 +5173,7 @@ Example
 {% endhighlight %}
 
 ### popupResizeStop
-{:#events:popupResizeStop}
+{:#events:popupresizestop}
 
 
 
