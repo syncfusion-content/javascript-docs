@@ -8,15 +8,15 @@ documentation: ug
 --- 
 # Filter 
 
-Filtering helps to view particular or related records from datasource which meets a given filtering criteria. To enable filter, set `allowFiltering` as `true`. 
+Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `allowFiltering` as `true`. 
 
-There are three types of filter is supported by grid, they are
+Grid supports three types of filter, they are
 
 1. Filter bar
 2. Menu 
 3. Excel
 
-There are four types of filtering available in menu filter, they are
+And also four types of filter menu is available in excel and menu filter, they are
 
 1. String 
 2. Numeric 
@@ -25,8 +25,8 @@ There are four types of filtering available in menu filter, they are
 
 The corresponding filter menu is opened based on the column type.
 
-N> 1. Need to specify the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-type "type") of column when first record data value is empty or null otherwise the filter menu is not opened. 
-N> 2. The default filter type is Filter bar when `allowFiltering` is enabled and [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") is not set.
+N> 1. Need to specify the [`type`](http://help.syncfusion.com/js/api/ejgrid#members:columns-type "type") of column, when first record data value is empty or null otherwise the filter menu is not opened. 
+N> 2. The default filter type is Filter bar, when `allowFiltering` is enabled and [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") is not set.
 
 The following code example describes the above behavior.
 
@@ -53,7 +53,7 @@ The following output is displayed as a result of the above code example.
 
 ## Menu filter
 
-Menu filtering can be enabled by setting [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") as `menu` in the [`filterSettings`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings "filterSettings") property. 
+You can enable menu filter by setting [`filterSettings.filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") as `menu`. 
 
 There is an option to show or hide the additional filter options in the menu by setting [`filterSettings.showPredicate`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-showpredicate "filterSettings.showPredicate") as `true` or `false` respectively.
 
@@ -106,7 +106,7 @@ Boolean Filter
 
 ## Excel-like filter
 
-You can enable excel menu by setting  [`filterSettings.filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") as `excel`. The excel filter menu contains an option such as Sorting, Clear filter, submenu for the advanced filter options.
+You can enable excel menu by setting  [`filterSettings.filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterSettings.filterType") as `excel`. The excel menu contains an option such as Sorting, Clear filter, submenu for advanced filtering.
 
 The following code example describes the above behavior.
 
@@ -137,12 +137,12 @@ The following output is displayed as a result of the above code example.
 
 Checkbox list generation:
 
-By default, the checkbox list generated from distinct values of the filter column from data source which give easy option search and select the required items.
+By default, the checkbox list is generated from distinct values of the filter column from dataSource which gives an option to search and select the required items.
 
-Also on checkbox list generation, if the number of distinct values are higher than 1000, the excel filter will display only first 1000 values to ensure the best performance on rendering and search. However this limit customized to according to your requirement by setting [`filterSettings.maxFilterChoices`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-maxfilterchoices "filterSettings.maxFilterChoices") with required limit in integer.
+Also on checkbox list generation, if the number of distinct values are greater than 1000, then the excel filter will display only first 1000 values to ensure the best performance on rendering and searching. However this limit has been customized according to your requirement by setting [`filterSettings.maxFilterChoices`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-maxfilterchoices "filterSettings.maxFilterChoices") with required limit in integer.
 
-N> 1. Using filter events you can change the datasource of the checkbox list. 
-N> 2. [`ej.Query`](http://help.syncfusion.com/js/api/ejquery# "ej.Query") of checkbox list can also be changed using filter events.
+N> 1. Using excel filter events you can change the dataSource of the checkbox list. 
+N> 2. [`ej.Query`](http://help.syncfusion.com/js/api/ejquery# "ej.Query") of checkbox list can also be changed using excel filter events.
 
 The following code example describes the above behavior.
 
@@ -199,11 +199,11 @@ The following output is displayed as a result of the above code example.
 
 ## Filter bar
 
-[Filter bar](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "Filter bar") row is located next to column header row. It enables you to filter the records with different expressions depending upon the column type. To show the filter bar row, set the [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") as `filterbar`.
+[Filter bar](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "Filter bar") row is located next to column header of grid. You can filter the records with different expressions depending upon the column type. To show the filter bar row, set the [`filterType`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filtertype "filterType") as `filterbar`.
 
 List of Filter bar Expressions:
 
-You can enter the below filtering expressions manually in the filter bar.
+You can enter the below filte expressions manually in the filter bar.
 
  <table>
         <tr>
@@ -365,7 +365,7 @@ The following output is displayed as a result of the above code example.
 
 Filter bar modes:
 
-This specifies the grid to starts the filter action while typing in the filter bar or after pressing the enter key based on [`filterBarMode`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filterbarmode "filterBarMode").There are two types of [`filterBarMode`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filterbarmode "filterBarMode"), they are
+This specifies the grid to start the filter action while typing in the filter bar or after pressing the enter key based on [`filterBarMode`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filterbarmode "filterBarMode").There are two types of [`filterBarMode`](http://help.syncfusion.com/js/api/ejgrid#members:filtersettings-filterbarmode "filterBarMode"), they are
 
 1. OnEnter
 2. Immediate
@@ -402,7 +402,7 @@ The following output is displayed as a result of the above code example.
 
 ## Filter Operators
 
-The grid controls uses filter operators from [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager"), that are used at the time of filtering. Filter operators are used to denote filtering type.
+The grid controls uses filter operators from [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "ej.DataManager"), which are used at the time of filtering.
 
 List of Column type and Filter operators
 
