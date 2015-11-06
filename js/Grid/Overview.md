@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Grid widget with overview for Syncfusion Essential JS
+title:  Grid widget for Syncfusion Essential JS
 description: Overview for Grid
 platform: js
 control: Grid
