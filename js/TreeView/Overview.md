@@ -14,7 +14,7 @@ The **TreeView** control for **JavaScript** represents hierarchical data in a tr
 **Key Features**
 
 * **Node editing:** The **TreeView** control permits you to edit a node.
-* **Node cut, copy, and paste**: Cut or copy a node and paste in same **TreeView** node.
+* **Node cut, copy, and paste**: Cut and paste in same **TreeView** node.
 * **Drag and drop**: Drag and drop the nodes within the **TreeView** control, or drag a particular node from one tree to another tree.
 * **Check box support:** Enables three states for the checkbox and checked node.
 * **Data binding:** You can populate **TreeView** items using data binding support like JSON and OData service.
