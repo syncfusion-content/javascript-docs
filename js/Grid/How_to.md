@@ -23,9 +23,9 @@ Grid  supports SignalR features for live updates in record. Please find the belo
 
 1) Before configure SignalR with ejGrid. You need to Setup SignalR configuration in visual studio project. For reference, please find the link.
 
-{% seealso %}[signalR][http://www.asp.net/signalr/overview/getting-started/tutorial-getting-started-with-signalr#setup](http://www.asp.net/signalr/overview/getting-started/tutorial-getting-started-with-signalr#setup "") 
+N> [signalR](http://www.asp.net/signalr/overview/getting-started/tutorial-getting-started-with-signalr#setup "signalr") 
 
-{% endseealso %}
+
 
 2) After configuration of SignalR, you have to create Hub for communication between different actions of grid. 
 {% highlight c# %}
@@ -94,6 +94,10 @@ public class SignalHub: Hub
 </script>
 
 
-
 {% endhighlight %}
+
+## Copy data from Excel to Grid
+
+This [blog](https://www.syncfusion.com/blogs/post/Copying-and-Pasting-Excel-Sheet-Data-to-Grid-ASPNET-MVC.aspx) is about conversion of Excel to JSON data. After got JSON data you can bind it to Grid. 
+
 

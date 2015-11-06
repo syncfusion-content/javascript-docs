@@ -151,6 +151,10 @@ ej.autocomplete.min.js</td><td>
 Should be referred when editing is enabled in Spreadsheet.  </td></tr>
 <tr>
 <td>
+ej.chart.min.js</td><td>
+Used this control for chart option is enabled in Spreadsheet.  </td></tr>
+<tr>
+<td>
 ej.ribbon.min.js</td><td>
 These files are used when ribbon option is enabled in Spreadsheet.  </td></tr>
 <tr>
@@ -238,8 +242,7 @@ For getting started, you can use the `ej.web.all.min.js` file, which encapsulate
 
 {% highlight html %}
 <!DOCTYPE html>
-<html
-    xmlns="http://www.w3.org/1999/xhtml">
+<html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta name="description" content="Essential Studio for JavaScript">
@@ -440,9 +443,8 @@ The Spreadsheet control provides options to create chart through API and Ribbon.
                 allowEditing: true,
                 allowAutofill: true,
                 allowDataValidation: true,
-                loadComplete: function () {
-                    var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-                    xlObj.XLChart.createChart("A1:B8", { type: "column", enable3D: false, marker: false, top: 40, left: 260, width: 400, height: 250 });
+                loadComplete: function (args) {
+                    this.XLChart.createChart("A1:B8", { type: "column", enable3D: false, marker: false, top: 40, left: 260, width: 400, height: 250 });
                 }
 
             });

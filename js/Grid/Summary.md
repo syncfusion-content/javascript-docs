@@ -166,7 +166,8 @@ Summaries with `True` and `False` count aggregate can be defined by using [`summ
 
 ### Custom Summary
 
-To enable Custom Summary, [`summaryType`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](http://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and `value` property need to define as function. In this property `value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation returned value will display in corresponding Summary cell. 
+Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, [`summaryType`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](http://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and `value` property need to define as function. In this property `value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
+
 
 {% highlight html %}
 
@@ -210,7 +211,7 @@ To enable Custom Summary, [`summaryType`](http://help.syncfusion.com/js/api/ejgr
 
 ## Group Summary
 
-To show summary rows at the end of each Group, set the [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showTotalSummary") as `false`.
+Group Summary is used to summarize values of a particular column based on group and it shows at bottom of each Group. To enable Group Summary for particular Group, you need to define [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showTotalSummary") as false.
 
 {% highlight html %}
 <div id="Grid"></div>
@@ -257,7 +258,8 @@ W> Minimum one column should be grouped to show summary details.
 
 ## Group Caption Summary
 
-To show summaries at each group's Caption row, particular summary row definition should have [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `true`.
+To enable Group Caption Summary for particular Summary Group, [`SummaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) should have [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") should be `true`.
+
 
 {% highlight html %}
 <div id="Grid"></div>
