@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print Grid
-description: Print Grid
+title: Print with Grid widget for Syncfusion Essential JS
+description: How to enable print option in Grid
 platform: js
 control: Grid
 documentation: ug

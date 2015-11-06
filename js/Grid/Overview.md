@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: Overview
+title:  Grid widget for Syncfusion Essential JS
+description: Overview for Grid
 platform: js
 control: Grid
 documentation: ug

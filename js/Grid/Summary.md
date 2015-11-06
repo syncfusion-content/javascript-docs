@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summary
-description: Summary
+title: Summary with Grid widget for Syncfusion Essential JS
+description: How to enable summary and its functionalities
 platform: js
 control: Grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context Menu
-description: Context Menu
+title: Context Menu with Grid widget for Syncfusion Essential JS
+description: How to enable contextMenu and its functionalities  
 platform: js
 control: Grid
 documentation: ug
