@@ -41,7 +41,7 @@ By default, [Insert Table](http://help.syncfusion.com/js/api/ejrte#members:tools
 </script>
 {% endhighlight %}
 
-### Insert a Table
+## Insert a Table
 
 You can insert a basic table by select the “Insert Table” tool from toolbar and drag the cursor over the grid until you highlight the number of columns and rows you want. A table can be inserted as large as with ten columns and eight rows (10 * 8 cells). When you finish inserting tables, click in a cell and start typing or insert an image.
 
