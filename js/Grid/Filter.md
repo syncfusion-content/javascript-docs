@@ -10,13 +10,13 @@ documentation: ug
 
 Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `allowFiltering` as `true`. 
 
-Grid supports three types of filter, they are
+The Grid supports three types of filter, they are
 
 1. Filter bar
 2. Menu 
 3. Excel
 
-And also four types of filter menu is available in excel and menu filter, they are
+And also four types of filter menu is available in all filter type, they are
 
 1. String 
 2. Numeric 
