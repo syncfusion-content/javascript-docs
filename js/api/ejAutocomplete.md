@@ -1,2381 +1,1496 @@
----
-layout: post
-title: ejAutocomplete
-documentation: API
-platform: js
-metaname: 
-metacontent: 
----
-
-# Custom Design for Html Textbox control.
-
-
-
-
-
-$(element).ejAutocomplete<span class="signature">()</span>
-
-
-
-
-
+$(element).ejAutocomplete()
 
 Example
-{:.example}
-
 
 {% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Create AutoComplete
-$('#autocomplete').ejAutocomplete({ dataSource: window.carList,value:"Austin-Healey" });        
-</script>{% endhighlight %}
+<input type="text" id="autocomplete" /> <script> // Create AutoComplete $('#autocomplete').ejAutocomplete({ dataSource: window.carList,value:"Austin-Healey" }); </script>
 
 
 
+{% endhighlight %}
 
 Requires
-{:.require}
-
 
 * module:jQuery
-
 * module:jquery.easing.1.3.js
-
 * module:ej.core.js
-
 * module:ej.data.js
-
 * module:ej.autocomplete.js
-
 * module:ej.scroller.js
 
+Members
 
-## Members
+addNewText
 
+Customize add new label text to be added in the autocomplete popup for the entered text when there are no suggestions for it. 
 
+**Note****:** This property applicable only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode "")” property is set as “VisualMode” and “[AllowAddNew](http://help.syncfusion.com/js/api/ejautocomplete#members:allowaddnew "")” property is set as “true”.
 
+**Default** **Value****:**  “Add New”****
 
-### addNewText<span class="type-signature type string">string</span>
-{:#members:addnewtext}
+__Example______
 
+____{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ dataSource: window.carList, allowAddNew: true, addNewText: "Add New Car", multiSelectMode:"visualmode" });
 
 
 
-Allows new text to be added to in the popup of the autocomplete when there are no suggestions. This property can only be used in the Visual mode only.
+{% endhighlight %}
 
+allowAddNew
 
-Default Value:
-{:.param}
+Allows new values to be added to the autocomplete input other than the values in the suggestion list. Normally, when there are no suggestions it will display “No suggestions” label in the popup.
 
+**Note****:** This property will work only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode "")” is set as “VisualMode”
 
+**Default** **Value****:** false****
 
-* "Add New"
+__Example______
 
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ allowAddNew: true, multiSelectMode: "visualmode" });
 
-Example
-{:.example}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete with the addNewText value specified
-        $("#autocomplete").ejAutocomplete({dataSource: window.carList,allowAddNew: true,addNewText: "Add New Car" });
-</script>{% endhighlight %}
 
 
+{% endhighlight %}
 
+allowSorting
 
-### allowAddNew<span class="type-signature type boolean">boolean</span>
-{:#members:allowaddnew}
+Enables or disables the sorting of suggestion list item. The default sort order is ascending order. You customize sort order. See also SortOder
 
+**Default** **Value****:** true****
 
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ allowSorting: false });
 
-Specifies new values can be added to the autocomplete input other than the values in the suggestion list.
 
 
-Default Value:
-{:.param}
+{% endhighlight %}
 
+autoFocus
 
+To focus the items in the suggestion list when the popup is shown. By default first item will be focused. 
 
-* false
+**Default** **Value****:** false****
 
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ autoFocus: true });
 
 
-Example
-{:.example}
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete with the allowAddNew value specified.
-$("#autocomplete").ejAutocomplete({dataSource: window.carList,allowAddNew: true });
-</script>{% endhighlight %}
 
 
+caseSensitiveSearch
 
+Enables or disables the case sensitive search.
 
-### allowGrouping<span class="type-signature type boolean">boolean</span>
-{:#members:allowgrouping}
+**Default** **Value****:** false****
 
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ caseSensitiveSearch: true });
 
 
-Groups the search result based on the category value and displays the items in set of groups.
 
+{% endhighlight %}
 
-Default Value:
-{:.param}
+cssClass
 
+The root class for the **Autocomplete** textbox widget which helps in customizing its theme.
 
+**Default** **Value****:** ””****
 
-* false
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ cssClass: 'gradient-lime' });
 
 
 
-Example
-{:.example}
+{% endhighlight %}
 
+dataSource
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the grouping value specified.
-$("#autocomplete").ejAutocomplete({ dataSource: window.vehicle, allowGrouping: true});
-</script>{% endhighlight %}
+The data source contains the list of data for the suggestions list. It can be a string array or json array. 
 
+**Default** **Value****:** null****
 
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ dataSource: window.carList, value: "Austin-Healey" });
 
-### allowSorting<span class="type-signature type boolean">boolean</span>
-{:#members:allowsorting}
 
 
+{% endhighlight %}
 
 
-Sorts the lists value in ascending order if set to true and enables sorting.
 
+delaySuggestionTimeout
 
-Default Value:
-{:.param}
+The time delay (in milliseconds) after which the suggestion popup will be shown.
 
+**Default** **Value****:** 200****
 
+__Example______
 
-* true
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({delaySuggestionTimeout: 500 });
 
 
 
+{% endhighlight %}
 
-Example
-{:.example}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the allowSorting value specified.
-$("#autocomplete").ejAutocomplete({dataSource: window.carList,allowSorting: false });
-</script>{% endhighlight %}
+delimiterChar
 
+The special character which acts as a separator for the given words for multi-mode search i.e. the text after the delimiter are considered as a separate word or query for search operation. 
 
+Note: 
 
+1. This property applicable only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode "")” set as “Delimiter”.
+2. The delimiter string should have a single character and must be a symbol. 
+3. Mostly the delimiter symbol is used as (comma ,) or (semi-colon ;) or any other special character.
 
-### autoFocus<span class="type-signature type boolean">boolean</span>
-{:#members:autofocus}
+**Default** **Value****:** ’,’****
 
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({multiSelectMode: ej.MultiSelectMode.Delimiter, delimiterChar: ';' });
 
 
-This property enables to active the first element in the popup. It will automatically focus the first element in the popup.
 
 
-Default Value:
-{:.param}
 
+{% endhighlight %}
 
 
-* false
 
+emptyResultText
 
+The text to be displayed in the popup when there are no suggestions available for the entered text.
 
+Note: This property applicable only when the __[showEmptyResultText](http://help.syncfusion.com/js/api/ejautocomplete#members:showemptyresulttext "")__ set as “true”
 
-Example
-{:.example}
+**Default** **Value****:** “No suggestions”
 
+__Example______
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete autoFocus property 
-        $("#autocomplete").ejAutocomplete({ dataSource: window.carList,autoFocs: true });
-</script>{% endhighlight %}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({emptyResultText: 'No Results Found' });
 
 
 
+{% endhighlight %}
 
-### caseSensitiveSearch<span class="type-signature type boolean">boolean</span>
-{:#members:casesensitivesearch}
 
 
+enableAutoFill
 
+Fills the autocomplete textbox with the first matched item from the suggestion list automatically based on the entered text when enabled. 
 
-Sets the case sensitivity of the search operation..
+Note: This property works only when “[filterType](http://help.syncfusion.com/js/api/ejautocomplete#members:filtertype "")” is set as “startswith” 
 
+**Default** **Value****:** false
 
-Default Value:
-{:.param}
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({enableAutoFill: true });
 
 
-* false
 
+{% endhighlight %}
 
 
 
-Example
-{:.example}
+enabled
 
+Enables or disables the **Autocomplete** textbox widget.
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the caseSensitiveSearch value specified.
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList,caseSensitiveSearch: true });
-</script>{% endhighlight %}
+**Default** **Value****:** true
 
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({enabled: false });
 
 
-### cssClass<span class="type-signature type string">string</span>
-{:#members:cssclass}
 
+{% endhighlight %}
 
 
 
-Sets the root class for Autocomplete theme. This cssClass API helps to use custom skinning option for Autocomplete control. By defining the root class using this API, we need to include this root class in CSS.
+enableDistinct
 
+Enables or disables displaying the duplicate names present in the search result.
 
-Default Value:
-{:.param}
+**Default** **Value****:** false
 
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ enableDistinct: true });
 
-* ""
 
 
+{% endhighlight %}
 
 
-Example
-{:.example}
 
+enablePersistence
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete with the cssClass value specified
-        $("#autocomplete").ejAutocomplete({ dataSource: window.carList,cssClass: 'gradient-lime'});
-</script>{% endhighlight %}
+Allows the current model values to be saved in local storage or browser cookies for state maintenance when it is set to true. While refreshing the page, it retains the model value from browser cookies or local storage.
 
+__**Note**____**:**__ __[Local storage](http://www.w3schools.com/html/html5_webstorage.asp# "")__ __is__ __supported__ __only__ __in__ __Html5__ __supported__ __browsers____.__ __If__ __the__ __browsers__ __don’t__ __have__ __support__ __for__ __local__ __storage____,__ __browser__ __cookies__ __will__ __be__ __used__ __to__ __maintain__ __the__ __state____.__
 
+**Default** **Value****:** false
 
+__Example______
 
-### dataSource<span class="type-signature type data">data</span>
-{:#members:datasource}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ enablePersistence: true });
 
 
 
+{% endhighlight %}
 
-Specifies the Data Source of the AutoComplete.
 
 
-Default Value:
-{:.param}
+enableRTL
 
+Displays the Autocomplete widget’s content from right to left when enabled.
 
+**Default** **Value****:** false
 
-* null
+__Example______
 
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({enableRTL: true });
 
-Example
-{:.example}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//To set dataSource API value during initialization  
-        $("#autocomplete").ejAutocomplete({ dataSource: window.carList,value:"Austin-Healey"});                         
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
 
 
-### delaySuggestionTimeout<span class="type-signature type number">number</span>
-{:#members:delaysuggestiontimeout}
 
+fields
 
+Mapping fields for the suggestion items of the **Autocomplete** textbox widget.
 
+____<table>
+<tr>
+<td>
+fields.category[Deprecated]<br/><br/></td><td>
+Used to group the suggestion list items. <br/><br/>Note: Since this is deprecated, we suggest you to use fields.groupBy API.<br/><br/></td></tr>
+<tr>
+<td>
+fields.groupBy<br/><br/></td><td>
+Used to group the suggestion list items. <br/><br/></td></tr>
+<tr>
+<td>
+fields.htmlAttributes<br/><br/></td><td>
+Defines the html attributes such as id, class, styles for the item.<br/><br/></td></tr>
+<tr>
+<td>
+fields.key<br/><br/></td><td>
+Defines the specific field name which contains unique key values for the list items.<br/><br/></td></tr>
+<tr>
+<td>
+fields.text<br/><br/></td><td>
+Defines the specific field name in the data source to load the suggestion list with data.<br/><br/></td></tr>
+</table>
+__Example______
 
-The delaySuggestionTimeout used to set the milliseconds time between a keypress and when the widget displays the suggestion popup.
 
 
-Default Value:
-{:.param}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ fields: { text: "name", key: "id" } });
 
 
 
-* 200
+{% endhighlight %}
 
 
 
+filterType
 
-Example
-{:.example}
+Specifies the search filter type. There are several types of search filter available such as ‘startswith’, ‘contains’, ‘endswith’, ‘lessthan’, ‘lessthanorequal’, ‘greaterthan’, ‘greaterthanorequal’, ‘equal’, ‘notequal’. 
 
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with delaySuggestionTimeout in milliseconds value specified.
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList,delaySuggestionTimeout : 500 });
-</script>{% endhighlight %}
-
-
-
-
-### delimiterChar<span class="type-signature type string">string</span>
-{:#members:delimiterchar}
-
-
-
-
-Sets the separator to allow multiple word searches. While typing the texts in the text box, if we enter the delimiter value, the texts after the delimiter are considered as a separate word or query. The delimiter string should have a single character and must be a symbol. Mostly the delimiter symbol is used as (comma ,) or (semi-colon ;) or any other special character.
-
-
-Default Value:
-{:.param}
-
-
-
-* ';'
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete with the delimiterChar value specified
-        $("#autocomplete").ejAutocomplete({dataSource: window.carList,multiSelectMode: ej.MultiSelectMode.Delimiter,delimiterChar: ';' });
-</script>{% endhighlight %}
-
-
-
-
-### emptyResultText<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:emptyresulttext}
-
-
-
-
-Sets the emptyResultText message text. When there is no suggestions are available at the time this message will be shown.
-
-
-Default Value:
-{:.param}
-
-
-
-* "No suggestions"
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete emptyResultText property with the  value specified
-        $("#autocomplete").ejAutocomplete({ dataSource: window.carList,emptyResultText: 'No Results Found' });
-</script>{% endhighlight %}
-
-
-
-
-### enableAutoFill<span class="type-signature type boolean">boolean</span>
-{:#members:enableautofill}
-
-
-
-
-Automatically fills the first item from the suggestion list in an AutoComplete text box. The autoFill property is only applicable for &ldquo;startswith&rdquo; filterType type.
-
-
-Default Value:
-{:.param}
-
-
-
-* false
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the enableAutoFill  value specified.
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList,enableAutoFill : true });
-</script>{% endhighlight %}
-
-
-
-
-### enabled<span class="type-signature type boolean">boolean</span>
-{:#members:enabled}
-
-
-
-
-When this property sets to false, it disables the Autocomplete control.
-
-
-Default Value:
-{:.param}
-
-
-
-* true
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the enabled  value specified.
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList,enabled : false });
-</script>{% endhighlight %}
-
-
-
-
-### enableDistinct<span class="type-signature type boolean">boolean</span>
-{:#members:enabledistinct}
-
-
-
-
-Prevents the duplicate names presents in the search result.
-
-
-Default Value:
-{:.param}
-
-
-
-* false
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the enableDistinct value specified.
-$("#autocomplete").ejAutocomplete({dataSource: window.carList,enableDistinct: true });
-</script>{% endhighlight %}
-
-
-
-
-### enablePersistence<span class="type-signature type boolean">boolean</span>
-{:#members:enablepersistence}
-
-
-
-
-Save current model value to browser cookies for state maintains. While refresh the Autocomplete control page retains the model value apply from browser cookies.
-
-
-Default Value:
-{:.param}
-
-
-
-* false
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the enablePersistence   value specified.
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList,enablePersistence  : true });
-</script>{% endhighlight %}
-
-
-
-
-### enableRTL<span class="type-signature type boolean">boolean</span>
-{:#members:enablertl}
-
-
-
-
-Sets the Autocomplete textbox direction as right to left alignment.
-
-
-Default Value:
-{:.param}
-
-
-
-* false
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the enableRTL    value specified.
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList,enableRTL   : true });
-</script>{% endhighlight %}
-
-
-
-
-### fields<span class="type-signature type object">object</span>
-{:#members:fields}
-
-
-
-
-Specifies mapping fields for the data items of the Autocomplete textbox.
-
-
-Default Value:
-{:.param}
-
-
-
-* null
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>  
-//To set fields API value during initialization         
-        $("#autocomplete").ejAutocomplete({ dataSource:window.countriesField,fields: { text: "name", key: "key" }});
-</script>{% endhighlight %}
-
-
-
-
-### fields.category<span class="type-signature type string">String</span>
-{:#members:fields-category}
-
-
-
-
-Used to categorize the items. It is used when the grouping is enabled..
-
-
-
-
-
-
-### fields.htmlAttributes<span class="type-signature type object">Object</span>
-{:#members:fields-htmlattributes}
-
-
-
-
-Defines the html attributes such as id, class, styles for the item..
-
-
-
-
-
-
-### fields.key<span class="type-signature type string">String</span>
-{:#members:fields-key}
-
-
-
-
-Defines the key for the items to differentiate two items with same.
-
-
-
-
-
-
-### fields.text<span class="type-signature type string">String</span>
-{:#members:fields-text}
-
-
-
-
-Defines the tag value or display text..
-
-
-
-
-
-
-### filterType<span class="type-signature type enum">enum</span>
-{:#members:filtertype}
-
-
-
-
-Sets the search filter type. There are several filter types are available such as &lsquo;startswith&rsquo;, &lsquo;contains&rsquo;, &lsquo;endswith&rsquo;, &lsquo;lessthan&rsquo;, &lsquo;lessthanorequal&rsquo;, &lsquo;greaterthan&rsquo;, &lsquo;greaterthanorequal&rsquo;, &lsquo;equal&rsquo;, &lsquo;notequal&rsquo;. See <a href="global.html#filterType">filterType</a>
-
-
-Default Value:
-{:.param}
-
-
+**Default** **Value****:******
 
 * ej.filterType.StartsWith
 
+__Example______
 
 
 
-Example
-{:.example}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({filterType: 'contains' });
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete with the filterType value specified
-        $("#autocomplete").ejAutocomplete({dataSource: window.carList,filterType: 'contains'  });                                        
-</script>{% endhighlight %}
 
+{% endhighlight %}
 
 
 
-### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:height}
+height
 
+The height of the Autocomplete textbox.
 
+**Default** **Value****:** Null****
 
+__Example______
 
-Defines the height of the Autocomplete textbox.
 
 
-Default Value:
-{:.param}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({height: 30 });
 
 
 
-* Null
+{% endhighlight %}
 
 
 
+highlightSearch
 
-Example
-{:.example}
+The search text can be highlighted in the AutoComplete suggestions list when enabled.
 
+**Default** **Value****:** false****
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete height property with the  value specified
-        $("#autocomplete").ejAutocomplete({dataSource: window.carList, height: 30 });
-</script>{% endhighlight %}
+__Example______
 
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ highlightSearch: true });
 
-### highlightSearch<span class="type-signature type boolean">boolean</span>
-{:#members:highlightsearch}
 
 
+{% endhighlight %}
 
 
-Enables the highlight search option. When the highlightSearch option set to true, the corresponding string entered in the textbox is highlighted in the suggestion list.
 
+itemsCount
 
-Default Value:
-{:.param}
+Number of items to be displayed in the suggestion list.
 
+**Default** **Value****:** 0****
 
+__Example______
 
-* false
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ itemsCount: 2 });
 
 
 
+{% endhighlight %}
 
-Example
-{:.example}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the highlightSearch  value specified.
-$("#autocomplete").ejAutocomplete({dataSource: window.carList, highlightSearch : true });
-</script>{% endhighlight %}
+minCharacter
 
+Minimum number of character to be entered in the Autocomplete textbox to show the suggestion list.
 
+**Default** **Value****:** 1****
 
+__Example______
 
-### itemsCount<span class="type-signature type number">number</span>
-{:#members:itemscount}
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ minCharacter: 3 });
 
 
-Count of the item that gets displayed in the popup
 
+{% endhighlight %}
 
-Default Value:
-{:.param}
 
 
+multiSelectMode
 
-* 0
+Enables or disables selecting multiple values from the suggestion list. Multiple values can be selected through either of the following options,
 
+1. Delimiter - Multiple values separated using comma.
+2. Visual mode - Each values are displayed in separate box with close button.
 
+See [MultiSelectMode](http://help.syncfusion.com/js/api/global.html#MultiSelectMode "")
 
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Count of the item that gets displayed in the popup
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList,itemsCount : 2 });
-</script>{% endhighlight %}
-
-
-
-
-### minCharacter<span class="type-signature type number">number</span>
-{:#members:mincharacter}
-
-
-
-
-Minimum character that the autocomplete popup gets opened.
-
-
-Default Value:
-{:.param}
-
-
-
-* 1
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Minimum character that the autocomplete popup gets opened.
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList,minCharacter : 3 });
-</script>{% endhighlight %}
-
-
-
-
-### multiSelectMode<span class="type-signature type enum">enum</span>
-{:#members:multiselectmode}
-
-
-
-
-Allows to select multiple values from the suggestion list. Multiple values can be selected through either of the following options,Delimiter-Multiple values separated using comma.Visual mode- Each values are displayed in separate box with close button. See <a href="global.html#MultiSelectMode">MultiSelectMode</a>
-
-
-Default Value:
-{:.param}
-
-
+**Default** **Value****:******
 
 * ej.MultiSelectMode.None
 
+__Example______
 
 
 
-Example
-{:.example}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ multiSelectMode: ej.MultiSelectMode.Delimiter });
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete with the multiSelectMode value specified
-        $("#autocomplete").ejAutocomplete({dataSource: window.carList,multiSelectMode: ej.MultiSelectMode.Delimiter  });                                         
-</script>{% endhighlight %}
 
+{% endhighlight %}
 
 
 
-### popupHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:popupheight}
+popupHeight
 
+The height of the suggestion list.
 
+**Default** **Value****:** “152px”****
 
+__Example______
 
-Defines the popupHeight of the suggestion box.
 
 
-Default Value:
-{:.param}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ popupHeight: '100px' });
 
 
 
-* "152px"
+{% endhighlight %}
 
 
 
+popupWidth
 
-Example
-{:.example}
+The width of the suggestion list.
 
+**Default** **Value****:** “auto”****
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete popupHeight property with the  value specified
-        $("#autocomplete").ejAutocomplete({ dataSource: window.carList,popupHeight: '152px' });
-</script>{% endhighlight %}
+__Example______
 
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({popupWidth: '152px' });
 
-### popupWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:popupwidth}
 
 
+{% endhighlight %}
 
 
-Defines the popupWidth of the suggestion box.
 
+query
 
-Default Value:
-{:.param}
+The query to retrieve the data from the data source.
 
+**Default** **Value****:** null****
 
+__Example______
 
-* "auto"
+{% highlight javascript %}
+var dataManger = ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/" });
 
+var query = ej.Query().from("Suppliers").select("ContactName");
 
+$("#autocomplete").ejAutocomplete({ dataSource: dataManger, query: query, fields: { text: "ContactName" } });
 
 
-Example
-{:.example}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete popupWidth property with the  value specified
-        $("#autocomplete").ejAutocomplete({ dataSource: window.carList,popupWidth: '152px' });
-</script>{% endhighlight %}
 
+{% endhighlight %}
 
 
 
-### query<span class="type-signature type object">object</span>
-{:#members:query}
+readOnly
 
+Indicates that the autocomplete textbox values can only be readable.
 
-
-
-Specifies the query to retrieve the data from online server.
-
-
-Default Value:
-{:.param}
-
-
-
-* null
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-<input type="text" id="autocomplete" /> 
- 
-<script>                   
-//To set query API value during initialization  
-var dataManger = ej.DataManager({       url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"});
-var queryString = ej.Query().from("Suppliers").select("ContactName");
-        $("#autocomplete").ejAutocomplete({ dataSource: dataManger, query: queryString, fields: { text: "ContactName" }});
-</script>{% endhighlight %}
-
-
-
-
-### readOnly<span class="type-signature type boolean">boolean</span>
-{:#members:readonly}
-
-
-
-
-Indicates that the autocomplete textbox values can only be read.
-
-
-Default Value:
-{:.param}
-
-
+**Default** **Value****:******
 
 * false
 
+__Example______
 
 
 
-Example
-{:.example}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({readOnly: true });
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the readOnly value specified.
-$("#autocomplete").ejAutocomplete({dataSource: window.carList,readOnly: true });
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
 
-### selectValueByKey
-{:#members:selectvaluebykey}
+
+selectValueByKey (Deprecated)
+
+Sets the value for the Autocomplete textbox based on the given input key value.
+
+__Example______
 
 
 
-
-Set the values to the Autocomplete textbox by input key value.
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.vehicle,selectValueByKey:"a"});   
-</script>{% endhighlight %}
+{% highlight javascript %}
+$('#autocomplete').ejAutocomplete({selectValueByKey: "15", fields: { text: "name", key: "key" } });
 
 
 
+{% endhighlight %}
 
-### showEmptyResultText<span class="type-signature type boolean">boolean</span>
-{:#members:showemptyresulttext}
+showEmptyResultText
 
+Enables or disables showing the message when there are no suggestions for the entered text.
 
-
-
-Sets whether the noResults message will be shown or not.
-
-
-Default Value:
-{:.param}
-
-
+**Default** **Value****:******
 
 * true
 
+__Example______
 
 
 
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the showEmptyResultText value specified.
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList, showEmptyResultText : false });
-</script>{% endhighlight %}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ showEmptyResultText: false });
 
 
 
-
-### showLoadingIcon<span class="type-signature type boolean">boolean</span>
-{:#members:showloadingicon}
+{% endhighlight %}
 
 
 
+showLoadingIcon
 
-Enables the loading icon to intimate the searching operation. The loading icon is visible when there is a time delay to perform the search.
+Enables or disables the loading icon to intimate the searching operation. The loading icon is visible when there is a time delay to perform the search.
 
-
-Default Value:
-{:.param}
-
-
+**Default** **Value****:******
 
 * true
 
+__Example______
 
 
 
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the showLoadingIcon value specified.
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList,showLoadingIcon: false });
-</script>{% endhighlight %}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ showLoadingIcon: false });
 
 
 
-
-### showPopupButton<span class="type-signature type boolean">boolean</span>
-{:#members:showpopupbutton}
+{% endhighlight %}
 
 
 
+showPopupButton
 
-Enables the showPopup button. When the Showpopup button clicks, it displays the full list from the dataSource.
+Enables the showPopup button in autocomplete textbox. When the Showpopup button is clicked, it displays all the available data from the data source.
 
-
-Default Value:
-{:.param}
-
-
+**Default** **Value****:******
 
 * false
 
+__Example______
 
 
 
-Example
-{:.example}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ showPopupButton: true });
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the showPopupButton  value specified.
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList,showPopupButton : true });
-</script>{% endhighlight %}
+
+{% endhighlight %}
 
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
-{:#members:showroundedcorner}
 
+showRoundedCorner
 
+Enables or disables rounded corner.
 
-
-Autocomplete textbox to be displayed with rounded corner style.
-
-
-Default Value:
-{:.param}
-
-
+**Default** **Value****:******
 
 * false
 
+__Example______
 
 
 
-Example
-{:.example}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ showRoundedCorner: true });
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the showRoundedCorner value specified.
-$("#autocomplete").ejAutocomplete({dataSource: window.carList,showRoundedCorner: true });
-</script>{% endhighlight %}
 
+{% endhighlight %}
 
 
 
-### sortOrder<span class="type-signature type enum">enum</span>
-{:#members:sortorder}
 
 
+sortOrder
 
+Sort order specifies whether the suggestion list values has to be displayed in ascending or descending order. See [SortOrder](http://help.syncfusion.com/js/api/global.html#SortOrder "")
 
-Sort order specifies whether the suggestion list values has to display in ascending or descending order. See <a href="global.html#SortOrder">SortOrder</a>
+**Default** **Value****:** ej.SortOrder.Ascending****
 
+__Example______
 
-Default Value:
-{:.param}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ sortOrder: ej.SortOrder.Decending });
 
 
 
-* ej.SortOrder.Ascending
+{% endhighlight %}
 
 
 
+template
 
-Example
-{:.example}
+The template to display the suggestion list items with customized appearance.
 
+**Default** **Value****:** null****
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete with the sortOrder value specified
-        $("#autocomplete").ejAutocomplete({dataSource: window.carList,sortOrder:"descending" });                                        
-</script>{% endhighlight %}
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ dataSource: window.mobileList, fields: { text: "pName" }, template: "<div><div class='product-text'>${pName}</div> <span class='product-quantity'> Quantity : ${quantity}</span></div>" });
 
 
 
-### template<span class="type-signature type string">string</span>
-{:#members:template}
+{% endhighlight %}
 
 
 
+validationMessage
 
-Specifies the template for Autocomplete.
+The jQuery validation error message to be displayed on form validation.
 
+**Default** **Value****:** null****
 
-Default Value:
-{:.param}
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ validationRules: { required: true }, validationMessage: { required: "Enter some value" } });
 
 
-* null
 
+{% endhighlight %}
 
 
 
-Example
-{:.example}
+validationRules
 
+The jQuery validation rules for form validation.
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// To set template API value during initialization.     
-$("#autocomplete").ejAutocomplete({ dataSource: window.countries,template:"<div class='flag ${sprite}'> </div>"+"<div class='txt'> ${text} </div>"});
-</script>{% endhighlight %}
+**Default** **Value****:** null****
 
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ validationRules: { required: true } });
 
 
-### validationMessage<span class="type-signature type object">object</span>
-{:#members:validationmessage}
 
+{% endhighlight %}
 
 
 
-Set the jquery validation error message in Autocomplete.
+value
 
+The value to be displayed in the autocomplete textbox.
 
-Default Value:
-{:.param}
+**Default** **Value****:** Null****
 
+__Example______
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ value: "USA" });
 
-* null
 
 
+{% endhighlight %}
 
 
-Example
-{:.example}
 
+visible
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" name="autocomplete" /> 
- 
-<script>
-//To set validationMessage API during initialization            
-  $("#autocomplete").ejAutocomplete({ 
-  dataSource: window.carList,                   
-  validationRules:{                     
-          required:true
-        },
-        validationMessage: {
-                required: "Required Autocomplete value"
-        }
-});
-</script>{% endhighlight %}
+Enables or disables the visibility of the autocomplete textbox.
 
+**Default** **Value****:** true****
 
+__Example______
 
 
-### validationRules<span class="type-signature type object">object</span>
-{:#members:validationrules}
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ visible: false });
 
 
 
-Set the jquery validation rules in Autocomplete.
+{% endhighlight %}
 
 
-Default Value:
-{:.param}
 
+watermarkText
 
+The text to be displayed when the value of the autocomplete textbox is empty.
 
-* null
+**Default** **Value****:** Null****
 
+__Example______
 
 
 
-Example
-{:.example}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({ watermarkText: 'Enter the car name' });
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" name="autocomplete" /> 
- 
-<script>
-//To set validationRules API during initialization              
-  $("#autocomplete").ejAutocomplete({ 
-  dataSource: window.carList,                   
-  validationRules:{                     
-          required:true
-        }
-});
-</script>{% endhighlight %}
 
+{% endhighlight %}
 
 
 
-### value<span class="type-signature type string">string</span>
-{:#members:value}
+width
 
+The width of the Autocomplete textbox.
 
+**Default** **Value****:** Null****
 
+__Example______
 
-Defines the default value to be displayed in the autocomplete textbox.
 
 
-Default Value:
-{:.param}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({width: 200 });
 
 
 
-* Null
+{% endhighlight %}
 
 
 
+Methods
 
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete value property with the  value specified
-        $("#autocomplete").ejAutocomplete({ dataSource: window.carList,value:"Elantra" });
-</script>{% endhighlight %}
-
-
-
-
-### visible<span class="type-signature type boolean">boolean</span>
-{:#members:visible}
-
-
-
-
-Specifies the to show or hide.
-
-
-Default Value:
-{:.param}
-
-
-
-* true
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Initialize the Autocomplete with the visible value specified.
-$("#autocomplete").ejAutocomplete({dataSource: window.carList,visible: false });
-</script>{% endhighlight %}
-
-
-
-
-### watermarkText<span class="type-signature type string">string</span>
-{:#members:watermarktext}
-
-
-
-
-Sets the watermarkText text. When the textbox is empty the watermarkText text is visible like a shaded text.
-
-
-Default Value:
-{:.param}
-
-
-
-* Null
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete with the watermarkText value specified
-        $("#autocomplete").ejAutocomplete({ dataSource: window.carList,watermarkText: 'Enter the car name' });
-</script>{% endhighlight %}
-
-
-
-
-### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
-{:#members:width}
-
-
-
-
-Defines the width of the Autocomplete textbox.
-
-
-Default Value:
-{:.param}
-
-
-
-* Null
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-//Initialize the Autocomplete width property with the width value specified
-        $("#autocomplete").ejAutocomplete({ dataSource: window.carList,width: 200 });
-</script>{% endhighlight %}
-
-
-
-## Methods
-
-
-
-
-### clearText<span class="signature">()</span>
-{:#methods:cleartext}
-
-
-
+clearText()
 
 Clears the text in the Autocomplete textbox.
 
+__Note____:__ __This__ __method__ __does__ __not__ __accept__ __any__ __arguments____.__
 
+__Example______
 
-Example
-{:.example}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
-// Create autocomplete
-var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
-autocompleteObj.clearText(); // clear the autocomplete text
-</script>{% endhighlight %}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete("clearText");
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
-// Clears the text in the autocomplete
-$('#autocomplete').ejAutocomplete("clearText");         
-</script>{% endhighlight %}
 
+{% endhighlight %}
 
 
 
-### destroy<span class="signature">()</span>
-{:#methods:destroy}
+destroy()
 
+Destroys the Autocomplete widget.
 
+__Note____:__ __This__ __method__ __does__ __not__ __accept__ __any__ __arguments____.__
 
+__Example______
 
-destroy in the Autocomplete textbox.
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete("destroy");
 
-Example
-{:.example}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});
-// Create autocomplete
-var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
-autocompleteObj.destroy(); // destroy the autocomplete 
-</script>{% endhighlight %}
+{% endhighlight %}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});
-// destroys autocomplete
-$('#autocomplete').ejAutocomplete("destroy");   
-</script>{% endhighlight %}
 
+disable()
 
+Disables the autocomplete widget.
 
+__Note____:__ __This__ __method__ __does__ __not__ __accept__ __any__ __arguments____.__
 
-### disable<span class="signature">()</span>
-{:#methods:disable}
+__Example______
 
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete("disable");
 
-To disable the autocomplete
 
 
+{% endhighlight %}
 
-Example
-{:.example}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
-// Create autocomplete
-var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
-autocompleteObj.disable(); // disable the autocomplete
-</script>{% endhighlight %}
+enable()
 
+Enables the autocomplete widget.
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
-// Disables autocomplete
-$('#autocomplete').ejAutocomplete("disable");   
-</script>{% endhighlight %}
+__Note____:__ __This__ __method__ __does__ __not__ __accept__ __any__ __arguments____.__
 
+__Example______
 
 
 
-### enable<span class="signature">()</span>
-{:#methods:enable}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete("enable");
 
 
 
+{% endhighlight %}
 
-To enable the autocomplete
 
 
 
-Example
-{:.example}
 
+getSelectedItems()
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});   
-// Create autocomplete
-var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
-autocompleteObj.enable(); // enable the autocomplete
-</script>{% endhighlight %}
+Value of the autocomplete textbox.s from the Autocomplete textbox.
 
+__Note____:__ __This__ __method__ __does__ __not__ __accept__ __any__ __arguments____.__
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});   
-// Enables autocomplete
-$('#autocomplete').ejAutocomplete("enable");    
-</script>{% endhighlight %}
+__Example______
 
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete("getSelectedItems");
 
-### getSelectedItems<span class="signature">()</span>
-{:#methods:getselecteditems}
 
 
+{% endhighlight %}
 
 
-Returns the values selected in the Autocomplete textbox.
 
+getValue()
 
+Returns the current selected value from the Autocomplete textbox.
 
-Example
-{:.example}
+__Note____:__ __This__ __method__ __does__ __not__ __accept__ __any__ __arguments____.__
 
+__Example______
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
-// Create autocomplete
-var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
-autocompleteObj.getSelectedItems(); // getSelectedItems the autocomplete text
-</script>{% endhighlight %}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
-// Get the selected items in the autocomplete
-$('#autocomplete').ejAutocomplete("getSelectedItems");  
-</script>{% endhighlight %}
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete("getValue");
 
 
-### getValue<span class="signature">()</span>
-{:#methods:getvalue}
 
+{% endhighlight %}
 
+search()
 
+Search the entered text and show it in the suggestion list if available.
 
-Returns the current value selected in the Autocomplete textbox.
+__Note____:__ __This__ __method__ __does__ __not__ __accept__ __any__ __arguments____.__
 
+__Example______
 
 
-Example
-{:.example}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
-// Create autocomplete
-var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
-autocompleteObj.getValue(); // getValue of the autocomplete text
-</script>{% endhighlight %}
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete("search");
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"}); 
-// Get the value of the selected item in the autocomplete
-$('#autocomplete').ejAutocomplete("getValue");  
-</script>{% endhighlight %}
 
 
+{% endhighlight %}
 
 
-### search<span class="signature">()</span>
-{:#methods:search}
 
+open()
 
+Open up the autocomplete suggestion popup with all list items.
 
+__Note____:__ __This__ __method__ __does__ __not__ __accept__ __any__ __arguments____.__
 
-search values in the Autocomplete textbox.
+__Example______
 
 
 
-Example
-{:.example}
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete("open");
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});
-// Create autocomplete
-var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
-autocompleteObj.search(); // search the autocomplete text
-</script>{% endhighlight %}
 
+{% endhighlight %}
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.carList,value:"Aston Martin"});
-// Searches the item in the autocomplete
-$('#autocomplete').ejAutocomplete("search");    
-</script>{% endhighlight %}
 
 
+selectValueByKey(key)
 
+Sets the value of the Autocomplete textbox based on the given key value.
 
-### selectValueByKey<span class="signature">()</span>
-{:#methods:selectvaluebykey}
-
-
-
-
-Set the values to the Autocomplete textbox by input key value.
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.vehicle});   
-// Create autocomplete
-var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
-  // set key value corresponding text to the autocomplete textbox
-autocompleteObj.selectValueByKey("F"); 
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Create autocomplete
-$('#autocomplete').ejAutocomplete({dataSource: window.vehicle});
-$('#autocomplete').ejAutocomplete("selectValueByKey","F");  
-</script>{% endhighlight %}
-
-
-
-
-### selectValueByText<span class="signature">()</span>
-{:#methods:selectvaluebytext}
-
-
-
-
-Set the values to the Autocomplete textbox by input text value.
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$('#autocomplete').ejAutocomplete({dataSource: window.vehicle});        
-// Create autocomplete
-var autocompleteObj  = $("#autocomplete").data("ejAutocomplete");
-autocompleteObj.selectValueByText("BMW 7"); // set text value to the autocomplete textbox
-</script>{% endhighlight %}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-// Create autocomplete
-$('#autocomplete').ejAutocomplete({dataSource: window.vehicle}); 
-$('#autocomplete').ejAutocomplete("selectValueByText","BMW 7");         
-</script>{% endhighlight %}
-
-
-
-## Events
-
-
-
-
-### change
-{:#events:change}
-
-
-
-
-Fires when changed successfully.
-
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<td>
+**Parameters**<br/><br/></td><td>
+**Type**<br/><br/></td><td>
+**Description**<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the autocomplete model</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected value</td>
-</tr>
-</tbody>
+<td>
+Key<br/><br/></td><td>
+string<br/><br/></td><td>
+The key value of the specific suggestion item.<br/><br/></td></tr>
 </table>
+__**Note**____**:**__ __This__ __method__ __accepts__ __string__ __as__ __an__ __argument____.______
 
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList});
-//change event for Autocomplete
-$("#autocomplete").ejAutocomplete({ 
-        change: function(args) {}
-});  
-</script>                 {% endhighlight %}
+__Example______
 
 
 
-
-### close
-{:#events:close}
-
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete("selectValueByKey","IND");
 
 
 
-Fires after Autocomplete control popup is closed.
+{% endhighlight %}
 
-<table class="params">
-<thead>
+
+
+selectValueByText(text)
+
+Sets the value of the Autocomplete textbox based on the given input text value.
+
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<td>
+**Parameters**<br/><br/></td><td>
+**Type**<br/><br/></td><td>
+**Description**<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Autocomplete model</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+Text<br/><br/></td><td>
+string<br/><br/></td><td>
+The text (label) value of the specific suggestion item.<br/><br/></td></tr>
 </table>
+__Example______
 
+
+
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete("selectValueByText","India");
+
+
+
+{% endhighlight %}
+
+Events
+
+actionSuccess
+
+Triggers when the data requested from AJAX will get successfully loaded in the **Autocomplete** widget. 
+
+__**Note**____**:**__ __It__ __internally__ __uses__ __jQuery__ __ajaxSuccess__ __event____.__ __For__ __details__ __refer__ __[here](http://api.jquery.com/ajaxsuccess/# "")____.______
 
 Example
-{:.example}
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({actionSuccess:function(arg){
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList});
-//close event for Autocomplete
-$("#autocomplete").ejAutocomplete({ 
-        close: function(args) {}
-}); 
-</script>                  {% endhighlight %}
+//Action Success Code
+
+} });
 
 
 
 
-### create
-{:#events:create}
+
+{% endhighlight %}
+
+actionComplete
+
+Triggers when the AJAX requests complete. The request may get failed or succeed.
+
+__**Note**____**:**__ __It__ __internally__ __uses__ __jQuery__ __ajaxComplete__ __event____.__ __For__ __details__ __refer__ __[here](http://api.jquery.com/ajaxcomplete/# "")____.__
+
+Example
+
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({
+
+actionComplete:function(arg){
+
+//Action Complete Code
+
+} 
+
+});
+
+
+
+{% endhighlight %}
+
+actionFailure
+
+Triggers when the data requested from AJAX get failed.
+
+__**Note**____**:**__ __It__ __internally__ __uses__ __jQuery__ __ajaxError__ __event____.__ __For__ __details__ __refer__ __[here](http://api.jquery.com/ajaxerror/# "")____.______
+
+Example
+
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({
+
+actionFailure:function(arg){
+
+//Action Failure Code
+
+} 
+
+});
 
 
 
 
-Fires after Autocomplete control is created.
 
-<table class="params">
-<thead>
+{% endhighlight %}
+
+change
+
+Triggers when the text box value is changed.
+
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+**Event** **Arguments******<br/><br/></th><th>
+**Type******<br/><br/></th><th>
+**Description******<br/><br/></th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
+<td>
+argument.cancel<br/><br/></td><td>
+Boolean<br/><br/></td><td>
+Set this option to true to cancel the event.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Autocomplete model</td>
-</tr>
+<td>
+argument.model<br/><br/></td><td>
+Object<br/><br/></td><td>
+Instance of the autocomplete model object.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+argument.type<br/><br/></td><td>
+String<br/><br/></td><td>
+Name of the event.<br/><br/></td></tr>
+<tr>
+<td>
+argument.value<br/><br/></td><td>
+String<br/><br/></td><td>
+Value of the autocomplete textbox.<br/><br/></td></tr>
 </table>
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList});
-//create event for Autocomplete
-$("#autocomplete").ejAutocomplete({ 
-        create: function(args) {}
-}); 
-</script>                  {% endhighlight %}
+__Example______
 
 
 
 
-### destroy
-{:#events:destroy}
 
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({
 
-Fires when the Autocomplete is destroyed successfully
+change: function (argument) {
 
-<table class="params">
-<thead>
+//do something
+
+}
+
+});        
+
+
+
+{% endhighlight %}
+
+
+
+close
+
+Triggers after suggestion popup is closed.
+
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+**Event** **Arguments******<br/><br/></th><th>
+**Type******<br/><br/></th><th>
+**Description******<br/><br/></th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
+<td>
+argument.cancel<br/><br/></td><td>
+boolean<br/><br/></td><td>
+Set this option to true to cancel the event.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Autocomplete model</td>
-</tr>
+<td>
+argument.model<br/><br/></td><td>
+Object<br/><br/></td><td>
+Instance of the autocomplete model object.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+argument.type<br/><br/></td><td>
+String<br/><br/></td><td>
+Name of the event.<br/><br/></td></tr>
 </table>
+__Example______
 
 
-Example
-{:.example}
 
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList});
-//destroy event for Autocomplete
+{% highlight javascript %}
 $("#autocomplete").ejAutocomplete({ 
-        destroy: function(args) {}
-}); 
-</script>                  {% endhighlight %}
+
+close: function (argument) {
+
+//do something
+
+}
+
+});
 
 
 
 
-### focusIn
-{:#events:focusin}
 
+{% endhighlight %}
 
+create
 
+Triggers when Autocomplete widget is created.
 
-Fires when focusIn successfully.
-
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+**Event** **Arguments******<br/><br/></th><th>
+**Type******<br/><br/></th><th>
+**Description******<br/><br/></th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
+<td>
+argument.cancel<br/><br/></td><td>
+boolean<br/><br/></td><td>
+Set this option to true to cancel the event.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the autocomplete model</td>
-</tr>
+<td>
+argument.model<br/><br/></td><td>
+object<br/><br/></td><td>
+Instance of the autocomplete model object.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the value</td>
-</tr>
-</tbody>
+<td>
+argument.type<br/><br/></td><td>
+string<br/><br/></td><td>
+Name of the event.<br/><br/></td></tr>
 </table>
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList});
-//focusIn event for Autocomplete
-$("#autocomplete").ejAutocomplete({ 
-        focusIn: function(args) {}
-});      
-</script>                 {% endhighlight %}
+__Example______
 
 
 
 
-### focusOut
-{:#events:focusout}
 
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({
 
-Fires when focusOut successfully.
+create: function (argument) {
 
-<table class="params">
-<thead>
+//do something
+
+}
+
+});
+
+
+
+{% endhighlight %}
+
+
+
+destroy
+
+Triggers after the Autocomplete widget is destroyed.
+
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+**Event** **Arguments******<br/><br/></th><th>
+**Type******<br/><br/></th><th>
+**Description******<br/><br/></th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
+<td>
+argument.cancel<br/><br/></td><td>
+boolean<br/><br/></td><td>
+Set this option to true to cancel the event.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the autocomplete model</td>
-</tr>
+<td>
+argument.model<br/><br/></td><td>
+object<br/><br/></td><td>
+Instance of the autocomplete model object.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the value</td>
-</tr>
-</tbody>
+<td>
+argument.type<br/><br/></td><td>
+string<br/><br/></td><td>
+Name of the event.<br/><br/></td></tr>
 </table>
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList});
-//focusOut event for Autocomplete
-$("#autocomplete").ejAutocomplete({ 
-        focusOut: function(args) {}
-});  
-</script>                                         {% endhighlight %}
+__Example______
 
 
 
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({
 
-### open
-{:#events:open}
+destroy: function (argument) {
+
+//do something
+
+}
+
+});
 
 
 
+{% endhighlight %}
 
-Fires after Autocomplete control popup is opned.
+focusIn
 
-<table class="params">
-<thead>
+Triggers after the autocomplete textbox is focused.
+
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+**Event** **Arguments******<br/><br/></th><th>
+**Type******<br/><br/></th><th>
+**Description******<br/><br/></th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
+<td>
+argument.cancel<br/><br/></td><td>
+boolean<br/><br/></td><td>
+Set this option to true to cancel the event.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Autocomplete model</td>
-</tr>
+<td>
+argument.model<br/><br/></td><td>
+object<br/><br/></td><td>
+Instance of the autocomplete model object.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-</tbody>
+<td>
+argument.type<br/><br/></td><td>
+string<br/><br/></td><td>
+Name of the event.<br/><br/></td></tr>
+<tr>
+<td>
+argument.value<br/><br/></td><td>
+string<br/><br/></td><td>
+Value of the autocomplete textbox.<br/><br/></td></tr>
 </table>
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList});
-//open event for Autocomplete
-$("#autocomplete").ejAutocomplete({ 
-        open: function(args) {}
-}); 
-</script>                  {% endhighlight %}
+__Example______
 
 
 
 
-### select
-{:#events:select}
+
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({
+
+focusIn: function (argument) {
+
+//do something
+
+}
+
+});
 
 
 
 
-Fires when an item has been selected successfully.
 
-<table class="params">
-<thead>
+{% endhighlight %}
+
+
+
+focusOut
+
+Triggers after the Autocomplete textbox gets out of the focus.
+
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Event Arguments****<br/><br/></th><th>
+Type****<br/><br/></th><th>
+Description****<br/><br/></th></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
-</tr>
+<td>
+argument.cancel<br/><br/></td><td>
+boolean<br/><br/></td><td>
+Set this option to true to cancel the event.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the autocomplete model</td>
-</tr>
+<td>
+argument.model<br/><br/></td><td>
+object<br/><br/></td><td>
+Instance of the autocomplete model object.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
+<td>
+argument.type<br/><br/></td><td>
+string<br/><br/></td><td>
+Name of the event.<br/><br/></td></tr>
 <tr>
-<td class="name">{% highlight html %}
-argument.text{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected value</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected text</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-argument.key{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the selected value key</td>
-</tr>
-</tbody>
+<td>
+argument.value<br/><br/></td><td>
+string<br/><br/></td><td>
+Value of the autocomplete textbox.<br/><br/></td></tr>
 </table>
+__Example______
 
 
-Example
-{:.example}
 
 
-{% highlight html %}
- 
-<input type="text" id="autocomplete" /> 
- 
-<script>
-$("#autocomplete").ejAutocomplete({ dataSource: window.carList});
-//select event for Autocomplete
-$("#autocomplete").ejAutocomplete({ 
-        select: function(args) {}
-}); 
-</script>                 {% endhighlight %}
+
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({
+
+focusOut: function (argument) {
+
+//do something
+
+}
+
+});
+
+
+
+
+
+{% endhighlight %}
+
+
+
+open
+
+Triggers after suggestion list is opened.
+
+<table>
+<tr>
+<th>
+Event Arguments****<br/><br/></th><th>
+Type****<br/><br/></th><th>
+Description****<br/><br/></th></tr>
+<tr>
+<td>
+argument.cancel<br/><br/></td><td>
+boolean<br/><br/></td><td>
+Set this option to true to cancel the event.<br/><br/></td></tr>
+<tr>
+<td>
+argument.model<br/><br/></td><td>
+object<br/><br/></td><td>
+Instance of the autocomplete model object.<br/><br/></td></tr>
+<tr>
+<td>
+argument.type<br/><br/></td><td>
+string<br/><br/></td><td>
+Name of the event.<br/><br/></td></tr>
+</table>
+__Example______
+
+
+
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({            
+
+open: function (argument) {
+
+//do something
+
+}
+
+});
+
+
+
+{% endhighlight %}
+
+select
+
+Triggers when an item has been selected from the suggestion list.
+
+<table>
+<tr>
+<th>
+Event Arguments****<br/><br/></th><th>
+Type****<br/><br/></th><th>
+Description****<br/><br/></th></tr>
+<tr>
+<td>
+argument.cancel<br/><br/></td><td>
+boolean<br/><br/></td><td>
+Set this option to true to cancel the event.<br/><br/></td></tr>
+<tr>
+<td>
+argument.model<br/><br/></td><td>
+object<br/><br/></td><td>
+Instance of the autocomplete model object.<br/><br/></td></tr>
+<tr>
+<td>
+argument.type<br/><br/></td><td>
+string<br/><br/></td><td>
+Name of the event.<br/><br/></td></tr>
+<tr>
+<td>
+argument.value<br/><br/></td><td>
+string<br/><br/></td><td>
+Value of the autocomplete textbox.<br/><br/></td></tr>
+<tr>
+<td>
+argument.text<br/><br/></td><td>
+string<br/><br/></td><td>
+Text of the selected item.<br/><br/></td></tr>
+<tr>
+<td>
+argument.key<br/><br/></td><td>
+string<br/><br/></td><td>
+Key of the selected item.<br/><br/></td></tr>
+<tr>
+<td>
+arugment.Item<br/><br/></td><td>
+object<br/><br/></td><td>
+Data object of the selected item.<br/><br/></td></tr>
+</table>
+__Example______
+
+
+
+
+
+{% highlight javascript %}
+$("#autocomplete").ejAutocomplete({
+
+select: function (argument) {
+
+//do something
+
+}
+
+});
+
+
+
+
+
+{% endhighlight %}
 
 
 
