@@ -70,12 +70,12 @@ The following output is displayed as a result of the above code example.
 ![](dataBinding_images/dataBinding_img1.png)
 
 
-N> 1. There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of custom adaptor concept. 
+N> 1. There is no in-built support to bind the XML data to the grid. But you can achieve this requirement with the help of [custom adaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor) concept. 
 N> 2. Refer this [Knowledge Base link](http://www.syncfusion.com/kb/3377/how-to-process-xml-data-from-server-using-datamanager-and-bound-to-grid#) for bounding XML data to grid using custom adaptor. 
 
 ## Remote Data
 
-To bind remote data to the grid, you can assign a service data as an instance of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") to the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property.
+To bind remote data to Grid Control, you can assign a service data as an instance of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") to the [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property.
 
 ### OData
 
@@ -108,11 +108,9 @@ The following output is displayed as a result of the above code example.
 
 #### OData Version 4
 
-For OData Version 4 support ej.ODataV4Adaptor should be used. By using `url` property of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") you can bind OData Version 4 Service link and specify  `adaptor` as `ej.ODataV4Adaptor`.
+For OData Version 4 support, ej.ODataV4Adaptor should be used. By using `url` property of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") you can bind OData Version 4 Service link and specify  `adaptor` as `ej.ODataV4Adaptor`.
 
-I> You can provide adaptor value either as `string` value ("ODataAdaptor") or by creating a new instance (new `ej.ODataAdaptor`).
-
-{% seealso %}For further details about OData service please refer [the link](http://www.odata.org/#). {% endseealso %}
+I> You can provide adaptor value either as `string` value ("ODataAdaptor") or by creating a new instance (new `ej.ODataV4Adaptor`).
 
 The following code example describes the above behavior.
 
@@ -124,7 +122,7 @@ The following code example describes the above behavior.
 	$(function () {
 
 		var dataManager = ej.DataManager({
-			url:"[http://services.odata.org/V4/Northwind/Northwind.svc/Regions/](http://services.odata.org/V4/Northwind/Northwind.svc/Regions/# "")",
+			url:["http://services.odata.org/V4/Northwind/Northwind.svc/Regions/"](http://services.odata.org/V4/Northwind/Northwind.svc/Regions/#),
 			adaptor: new ej.ODataV4Adaptor()
 		});
 
@@ -135,6 +133,8 @@ The following code example describes the above behavior.
 	});
 
 {% endhighlight %}
+
+{% seealso %}For further details about OData service please refer [the link](http://www.odata.org/#). {% endseealso %}
 
 ### WebAPI
 
@@ -202,11 +202,11 @@ The following output is displayed as a result of the above code example.
 ![](dataBinding_images/dataBinding_img3.png)
 
 
-### Other Restful web services
+### Other RESTful web services
 
 The [Custom Adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors#custom-adaptor "CustomAdaptor") concept of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") allows to customize or generate your own adaptor which is used to process `query` and `result` data. 
 
-When using remote data binding, the adaptor of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager")` plays vital role in processing queries to make them suitable to sends along with data request and also process the response data from the server.
+When using remote data binding, the adaptor of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager")` plays vital role in processing queries to make them suitable to sends along with data request and also in processing the response data from the server.
 
 The following code example describes the above behavior.
 
@@ -273,7 +273,7 @@ The following output is displayed as a result of the above code example.
 
 ### Load At Once
 
-On remote data binding, by default all the grid actions will be processed on server-side such as paging, sorting, editing, grouping and filtering etc. To avoid post back to server on every action, you can set the grid to load all the data on initialization time and make the actions client-side. To enable this, you can use `offline` property of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager").
+On remote data binding, by default all the Grid actions will be processed on server-side such as paging, sorting, editing, grouping and filtering etc. To avoid post back to server on every action, you can set the grid to load all the data on initialization time and make the actions client-side. To enable this, you can use `offline` property of [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager").
 
 The following code example describes the above behavior.
 
@@ -300,7 +300,7 @@ $(function() {
 
 {% endhighlight %}
 
-Please refer [`offline`](http://help.syncfusion.com/js/datamanager/data-binding#offline-mode "offline") for further reference on `offline` property
+Please refer the [link](http://help.syncfusion.com/js/datamanager/data-binding#offline-mode "offline") for further reference on `offline` property
 
 The following output is displayed as a result of the above code example.
 
@@ -309,7 +309,7 @@ The following output is displayed as a result of the above code example.
 
 ### Data Caching
 
-Date caching will help you can prevent the request to server for already visited pages in Grid using `enableCaching` property of `[ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"). Also the grid options to control the number of pages to be cached and duration it should be cached. The properties for these are `cachingPageSize` and `timeTillExpiration` respectively.
+Date caching will help you prevent the request to server for already visited pages in Grid using `enableCaching` property of ['ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"). Also using `cachingPageSize` and `timeTillExpiration` properties of ['ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"), you can control the number of pages to be cached and duration it should be cached respectively.
 
 N>_ The cached data will be stored in browser's HTML5 `localStorage`. _
 
@@ -350,7 +350,7 @@ The following output is displayed as a result of the above code example.
 
 #### Adding request parameters
 
-You can use the [`addParams`](http://help.syncfusion.com/js/api/ejquery#methods:addparams "addparams") method of [`ej.Query`](http://help.syncfusion.com/js/api/ejquery# "ejquery") class, to add custom parameter to the data request. The Grid has [`query`](http://help.syncfusion.com/js/api/ejgrid#members:query "query") property, which accepts instance of [`ej.Query`](http://help.syncfusion.com/js/api/ejquery# "ejQuery"), to add custom parameters to the data request.
+You can use the [`addParams`](http://help.syncfusion.com/js/api/ejquery#methods:addparams "addparams") method of [`ej.Query`](http://help.syncfusion.com/js/api/ejquery# "ejquery") class, to add custom parameter to the data request. The Grid has [`query`](http://help.syncfusion.com/js/api/ejgrid#members:query "query") property, which accepts instance of [`ej.Query`](http://help.syncfusion.com/js/api/ejquery# "ejQuery").
 
 The following code example describes the above behavior.
 
@@ -372,16 +372,16 @@ $(function() {
 
 {% endhighlight %}
 
-The custom parameter added will be passed along with the data request of the grid as follows.
+The custom parameter will be passed along with the data request of the grid as follows.
 
 ![](dataBinding_images/dataBinding_img7.png)
 
 
 #### Handling Http Errors
 
-During server interaction from the Grid, there may occur some server-side exceptions and you can acquire those error messages or exception details in client-side using grid's [`actionFailure`](http://help.syncfusion.com/js/api/ejgrid#events:actionfailure "actionFailure") event.
+During server interaction from the Grid, there may occur some server-side exceptions and you can acquire those error messages or exception details in client-side using [`actionFailure`](http://help.syncfusion.com/js/api/ejgrid#events:actionfailure "actionFailure") event of Grid Control.
 
-The argument passed to the [`actionFailure`](http://help.syncfusion.com/js/api/ejgrid#events:actionfailure "actionFailure") Grid event contains the Error details returned from server. Please refer the following table for some error details acquired in client-side event arguments.
+The argument passed to the [`actionFailure`](http://help.syncfusion.com/js/api/ejgrid#events:actionfailure "actionFailure") Grid event contains the Error details returned from server. Please refer the following table for some error details that would be acquired in client-side event arguments.
 
  <table>
         <tr>
@@ -389,16 +389,10 @@ The argument passed to the [`actionFailure`](http://help.syncfusion.com/js/api/e
                 Parameter
             </th>
             <th>
-                JSON Properties
-            </th>
-            <th>
                 Description
             </th>
         </tr>
         <tr>
-            <td rowspan=2>
-                argument
-            </td>
             <td>
                 argument.error.status
             </td>
@@ -452,7 +446,7 @@ The following output is displayed as a result of the above code example.
 
 ## HTML Table 
 
-A HTML Table element can also be used as the datasource of grid. To use HTML Table as datasource, the table element should be passed to instance of the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager") to grid's [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property.
+A HTML Table element can also be used as the datasource of Grid. To use HTML Table as datasource, the table element should be passed to [`dataSource`](http://help.syncfusion.com/js/api/ejgrid#members:datasource "dataSource") property of Grid as an instance of the [`ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager").
 
 The following code example describes the above behavior.
 
@@ -533,5 +527,5 @@ The following output is displayed as a result of the above code example.
 ![](dataBinding_images/dataBinding_img9.png)
 
 
-I> The HTML Table element is the only valid element when using HTML Table binding, using other elements will throw exception.
+I> The HTML Table element is the only valid element when using HTML Table binding. Using other elements will throw exception.
 
