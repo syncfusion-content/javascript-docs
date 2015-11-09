@@ -32,7 +32,6 @@ The editor checks the following settings on validation:
   * Accepts the allowed values alone such as true or false.
 * **HTML** **Elements** 
   * Must be in lowercase 
-  * IDs are unique throughout the HTML source of the editor
   * All opening tags must be closed
   * Allows only the valid HTML elements
 

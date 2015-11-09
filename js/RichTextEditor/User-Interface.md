@@ -88,12 +88,6 @@ tools: {<br/>tables: ["createTable", "addRowAbove", "addRowBelow", "addColu
 Yes<br/><br/></td></tr>
 <tr>
 <td>
-Paragraph<br/><br/></td><td>
-Inserts a new paragraph<br/><br/></td><td>
-tools: {<br/>paragraph: ["paragraph"]<br/>}<br/><br/></td><td>
-No<br/><br/></td></tr>
-<tr>
-<td>
 Casing<br/><br/></td><td>
 Change the case of selected text in the content<br/><br/></td><td>
 tools: {<br/>casing: ["upperCase", "lowerCase"]<br/>}<br/><br/></td><td>
@@ -254,11 +248,20 @@ The editor offers you to add external CSS file to style the &lt; iframe &gt; ele
 
  $("#texteditor").ejRTE({
   value: "The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
- " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
- externalCSS: "Content/Css/iframe-custom.css",
+ " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea." 
 });
 
  });
+function addCssToIframe() {
+var editor = $("#texteditor").ejRTE("instance");
+var iframeDoc = editor.getDocument();
+var linkTag = document.createElement("link");
+linkTag.type = "text/css";
+linkTag.rel = "stylesheet";
+linkTag.href = "Content/Css/iframe-custom.css";
+iframeDoc.head.appendChild(linkTag);
+}
+
 {% endhighlight %}
 
 The new file named iframe-custom.css is created and moved to the content folder with the following styles.
