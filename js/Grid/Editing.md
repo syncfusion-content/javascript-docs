@@ -1027,7 +1027,7 @@ Edited data can be persisted in database using RESTful web services.
 
 All the CRUD operations in grid are done through DataManager. DataManager have an option to bind all the CRUD related data in server side. Please refer the ['link'](http://help.syncfusion.com/js/datamanager/overview# "link") to know about the DataManager.
 
-For you information ODataAdaptor persist date in server as OData protocol.
+For you information ODataAdaptor persist data in server as per OData protocol.
 
 In the below section, we have explained how to get the edited data details at the server side using URLAdaptor. 
 
@@ -1105,7 +1105,7 @@ Please refer the below screen shot.
 ![](Editing_images/Editing_img20.png)
 
 
-Also, using 'DataOperations' class methods you can perform grid action at server side. The in-built methods that we have provided in the DataOperations class are listed below.
+Also, using 'DataOperations' helper class you can perform grid action at server side. The in-built methods that we have provided in the DataOperations class are listed below.
 
 1. PerformSorting
 2. PerformFiltering
