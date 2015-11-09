@@ -310,7 +310,7 @@ The following output is displayed as a result of the above code example.
 
 ### Data Caching
 
-Date caching will help you prevent the request to server for already visited pages in Grid using `enableCaching` property of ['ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"). Also using `cachingPageSize` and `timeTillExpiration` properties of ['ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"), we can control the number of pages to be cached and duration it should be cached respectively.
+Date caching will help you prevent the request to server for already visited pages in Grid using `enableCaching` property of ['ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"). Also using `cachingPageSize` and `timeTillExpiration` properties of ['ej.DataManager`](http://help.syncfusion.com/js/api/ejdatamanager# "DataManager"), you can control the number of pages to be cached and duration it should be cached respectively.
 
 N>_ The cached data will be stored in browser's HTML5 `localStorage`. _
 
