@@ -109,5 +109,5 @@ Before changing the model, EmployeeID 1 has FullName value as Nancy Davolio. Aft
 
 
 
-{% include image.html url="/js/DataManager/KO-ResultSet_images/KO-ResultSet_img1.png" %}
+![](/js/DataManager/KO-ResultSet_images/KO-ResultSet_img1.png) 
 

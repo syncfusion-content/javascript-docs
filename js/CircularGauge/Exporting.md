@@ -42,5 +42,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Exporting_images/Exporting_img1.png" Caption=""%}
+![](/js/CircularGauge/Exporting_images/Exporting_img1.png" Caption=")
 

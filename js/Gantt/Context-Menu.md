@@ -32,7 +32,7 @@ The following code example shows you how to enable the default context menu in G
 
 The following screenshot shows the default Context menu in Gantt control.
 
-{% include image.html url="/js/Gantt/Context-Menu_images/Context-Menu_img1.png"%}
+![](/js/Gantt/Context-Menu_images/Context-Menu_img1.png)
 
 ## Custom Context Menu
 
@@ -57,5 +57,5 @@ You can add custom context menu option in Gantt control. The following code exam
 
 The screenshot of the custom context menu items in Gantt control is as follows.
 
-{% include image.html url="/js/Gantt/Context-Menu_images/Context-Menu_img2.png"%}
+![](/js/Gantt/Context-Menu_images/Context-Menu_img2.png)
 

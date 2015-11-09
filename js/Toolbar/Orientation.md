@@ -48,7 +48,7 @@ Build and run the application.
 
 The following screenshot illustrates a **Toolbar** with horizontal orientation.
 
-{% include image.html url="/js/Toolbar/Orientation_images/Orientation_img1.png"%}
+![](/js/Toolbar/Orientation_images/Orientation_img1.png)
 
 ## Vertical
 
@@ -84,4 +84,4 @@ Build and run the application.
 
 The following screenshot illustrates a **Toolbar** with vertical orientation.
 
-{% include image.html url="/js/Toolbar/Orientation_images/Orientation_img2.png"%}
+![](/js/Toolbar/Orientation_images/Orientation_img2.png)

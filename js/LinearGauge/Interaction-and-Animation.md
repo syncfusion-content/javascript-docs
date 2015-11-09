@@ -64,7 +64,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Interaction-and-Animation_images/Interaction-and-Animation_img1.png" Caption=""%}
+![](/js/LinearGauge/Interaction-and-Animation_images/Interaction-and-Animation_img1.png" Caption=")
 
 
 

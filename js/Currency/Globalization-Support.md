@@ -60,9 +60,15 @@ The output for **CurrencyTextBox** with Globalization.
 
 
 
-{% include image.html url="/js/Currency/Globalization-Support_images/Globalization-Support_img1.png" Caption="CurrencyTextBox with de-DE locale"%}
+![](/js/Currency/Globalization-Support_images/Globalization-Support_img1.png)
+
+CurrencyTextBox with de-DE locale
+{:.caption}
 
 
 
-{% include image.html url="/js/Currency/Globalization-Support_images/Globalization-Support_img2.png" Caption="CurrencyTextBox with en-US locale"%}
+![](/js/Currency/Globalization-Support_images/Globalization-Support_img2.png)
+
+CurrencyTextBox with en-US locale
+{:.caption}
 

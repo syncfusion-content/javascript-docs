@@ -40,5 +40,5 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/TimePicker/Range_images/Range_img1.png" %}
+![](/js/TimePicker/Range_images/Range_img1.png) 
 

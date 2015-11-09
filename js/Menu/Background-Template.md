@@ -197,7 +197,7 @@ Add the following code in your style section.
 
 Execute the above code to render the following output.                       
 
-{% include image.html url="/js/Menu/Background-Template_images/Background-Template_img1.png" %}
+![](/js/Menu/Background-Template_images/Background-Template_img1.png) 
 
 
 

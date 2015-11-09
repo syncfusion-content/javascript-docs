@@ -1,237 +1,317 @@
 ---
 layout: post
-title: Scrolling
-description: scrolling
+title: scrolling with Grid widget for Syncfusion Essential JS
+description: How to enable scrolling and its functionalities
 platform: js
 control: Grid
 documentation: ug
----
-
+--- 
 # Scrolling
 
-## Default Scrolling
+Scrolling can be enabled by setting [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") as `true`. The height and width can be set to grid by using the properties [`scrollSettings.height`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-height "scrollSettings.height") and [`scrollSettings.width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "scrollSettings.width") respectively. 
 
-Scrolling is an important feature in **ejGrid**. It makes **Grid** more compatible with layout and design. The [`allowScrolling`](/js/api/ejgrid#members:allowscrolling "allowScrolling") property is used to enable scrolling functionality to the **ejGrid**. The default value for [`allowScrolling`](/js/api/ejgrid#members:allowscrolling "allowScrolling")is **false**.
+N> If [`width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "width") and [`height`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-height "height") is not defined in the [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") property then the horizontal and vertical scrollbar is enabled, only when the grid width exceeds the browser width.
 
-In this following code example, [`scrollSettings`](/js/api/ejgrid#members:scrollsettings "scrollSettings") property is used to adjust the **Grid** width and height. 
+The height and width can be set in percentage and pixel. The default value for [`height`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-height "height") and [`width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "width") in [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") is 0 and `auto` respectively.
+
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-
-<div id ="Grid">
-</div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(30)),
-          allowScrolling: true,
-          scrollSettings: { width: 886, height: 300 },
-          columns: [
-                       { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 100 },
-                       { field: "CustomerID", headerText: "Customer ID", width: 100 },
-                       { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 100 },
-                       { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 100, format: "{0:C}" },
-                       { field: "ShipCity", headerText: "Ship City", width: 100 },
-                       { field: "ShipName", headerText: "Ship Name", width: 100 },
-                       { field: "OrderDate", headerText: "Order Date", textAlign: ej.TextAlign.Right, format: "{0:MM/dd/yyyy}", width: 100 },
-                       { field: "ShipCountry", headerText: "Ship Country", width: 100 },
-                       { field: "ShipPostalCode", headerText: "Postal Code", textAlign: ej.TextAlign.Right, width: 100 },
-                       { field: "Verified", headerText: "Verified", width: 100 }
-          ]
-      });
-  });
-</script>
-
-
+<div id="Grid"></div>
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowScrolling : true,
+		scrollSettings: { width: 400, height: 300},  
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img1.png"%}
+![](scrolling_images/scrolling_img1.png)
 
-## Scroll Settings
 
-The [`scrollSettings`](/js/api/ejgrid#members:scrollsettings "scrollSettings") contains the properties to enable scrolling related functionalities in the **ejGrid**.
+## Set width and height in pixel 	
 
-### To Enable Vertical Scrolling
+To specify the [`scrollSettings.width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "scrollSettings.width") and [`scrollSettings.height`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-height "scrollSettings.height") in pixel, by set the pixel value as integer. 
 
-The [`height`](/js/api/ejgrid#members:scrollsettings-height "heigh") property in the [`scrollSettings`](/js/api/ejgrid#members:scrollsettings "scrollSettings") is used to enable the vertical scroll bar in the Grid. The scroll height should be less than the Grid content height. That is, total rows height for enabling vertical scroll bar.
-
-The [`height`](/js/api/ejgrid#members:scrollsettings-height "heigh") property can support percentage, pixel and auto values in [`scrollSettings`](/js/api/ejgrid#members:scrollsettings "scrollSettings"). The default value for height in[`scrollSettings`](/js/api/ejgrid#members:scrollsettings "scrollSettings") is 0.
-
-The following code example illustrates how to enable vertical scrolling in the **Grid**. 
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-  
-<div id ="Grid">
-</div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(30)),
-          allowScrolling: true,
-          scrollSettings: { height: 300 },
-          columns: [
-                       { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 100 },
-                       { field: "CustomerID", headerText: "Customer ID", width: 100 },
-                       { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 100 },
-                       { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 100, format: "{0:C}" },
-                       { field: "ShipCity", headerText: "Ship City", width: 100 },
-                       { field: "ShipName", headerText: "Ship Name", width: 100 },
-                       { field: "OrderDate", headerText: "Order Date", textAlign: ej.TextAlign.Right, format: "{0:MM/dd/yyyy}", width: 100 },
-                       { field: "ShipCountry", headerText: "Ship Country", width: 100 },
-                       { field: "ShipPostalCode", headerText: "Postal Code", textAlign: ej.TextAlign.Right, width: 100 },
-                       { field: "Verified", headerText: "Verified", width: 100 }
-          ]
-      });
-  });
-</script>
-
+<div id="Grid"></div>
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowScrolling : true,
+		scrollSettings: { width: 500 , height: 300},     
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img2.png"%}
+![](scrolling_images/scrolling_img2.png)
 
-### To Enable Horizontal Scrolling
 
-The [`width`](/js/api/ejgrid#members:scrollsettings-width "width") property in the [`scrollSettings`](/js/api/ejgrid#members:scrollsettings "scrollSettings") is used to enable the horizontal scroll bar in the **Grid**. The scroll width should be less than the Grid content width. That is, total columns width for enabling horizontal scroll bar.
+## Set width and height in percentage
 
-The [`width`](/js/api/ejgrid#members:scrollsettings-width "width")property can support percentage, pixel and auto values in [`scrollSettings`](/js/api/ejgrid#members:scrollsettings "scrollSettings"). The default value for width in [`scrollSettings`](/js/api/ejgrid#members:scrollsettings "scrollSettings") is **auto**. The default Grid content width is 100%, when you don’t specify the width to the columns it takes its width value from the Grid content.
+To specify the [`scrollSettings.width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "scrollSettings.width") and [`scrollSettings.height`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-height "scrollSettings.height") in percentage, by set the percentage value as string.
 
-When you set [`width`](/js/api/ejgrid#members:scrollsettings-width "width") as **auto,** it renders **Grid** with browser calculate value.
-
-The following code example illustrates how to enable horizontal scrolling in the **Grid**. 
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-  
- <div id="Grid">
-</div>
-<script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: ej.DataManager(window.gridData).executeLocal(ej.Query().take(30)),
-          allowScrolling: true,
-          scrollSettings: { width: 800 },
-          columns: [
-                       { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 100 },
-                       { field: "CustomerID", headerText: "Customer ID", width: 100 },
-                       { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 100 },
-                       { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 100, format: "{0:C}" },
-                       { field: "ShipCity", headerText: "Ship City", width: 100 },
-                       { field: "ShipName", headerText: "Ship Name", width: 100 },
-                       { field: "OrderDate", headerText: "Order Date", textAlign: ej.TextAlign.Right, format: "{0:MM/dd/yyyy}", width: 100 },
-                       { field: "ShipCountry", headerText: "Ship Country", width: 100 },
-                       { field: "ShipPostalCode", headerText: "Postal Code", textAlign: ej.TextAlign.Right, width: 100 },
-                       { field: "Verified", headerText: "Verified", width: 100 }
-          ]
-      });
-  });
-</script>
-
+<div id="Grid"></div>
 {% endhighlight %}
 
-
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowScrolling : true,
+		scrollSettings: { width: "70%", height: "5%" },  
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img3.png"%}
+![](scrolling_images/scrolling_img3.png)
 
-## Virtual scrolling on demand
 
-Virtual scrolling is powerful technique in **ejGrid**. It makes **Grid** more compatible with layout and its loading record performance is high. The [`allowVirtualScrolling`](/js/api/ejgrid#members:scrollsettings-allowvirtualscrolling "allowVirtualScrolling") property in [`scrollSettings`](/js/api/ejgrid#members:scrollsettings "scrollSettings") is used to enable virtual scroll functionality in the **Grid**. The default value for [`allowVirtualScrolling`](/js/api/ejgrid#members:scrollsettings-allowvirtualscrolling "allowVirtualScrolling") is false.
+## Set width as auto
 
-**Essential JavaScript Grid** supports two mode of virtualization. They are,
+Specify [`width`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-width "width") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") as auto, then the scrollbar is rendered only when the grid width exceeds the browser window width.
 
-* Normal Mode
-
-* Continuous Mode
-
-### Normal Mode
-
-This feature allows you to load the **Grid** with data while scrolling. The following code example illustrates how to set [`virtualScrollMode`](/js/api/ejgrid#members:scrollsettings-virtualscrollmode `virtualScrollMode`) as Normal.
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-<div id ="Grid">
-</div>
-<script>
-  $(function () {
-      $("#Grid").ejGrid({
-          dataSource: ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"),
-          allowScrolling: true,
-          scrollSettings: { width: 0, height: 300, allowVirtualScrolling: true, virtualScrollMode: ej.Grid.VirtualScrollMode.Normal },
-          columns: [
-          { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right },
-          { field: "CustomerID", headerText: "Customer ID" },
-          { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right },
-          { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, format: "{0:C}" },
-          { field: "ShipCity", headerText: "Ship City" },
-          { field: "ShipName", headerText: "Ship Name" }
-          ]
-      });
-  })
-</script>
-
-
+<div id="Grid"></div>
 {% endhighlight %}
 
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowScrolling : true,
+		scrollSettings: { width: "auto", height: 300 },     
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](scrolling_images/scrolling_img4.png)
 
 
-The following screenshot displays the Grid while scrolling. The request is sent to the server to fetch data.
+## Frozen columns
 
-{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img4.png"%}
+Specify [`frozenColumns`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") to freeze the columns(upto the specified frozenColumns value) at the time of scrolling. Horizontal scrollbar must be enabling while specifying [`frozenColumns`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") then only you can scroll and see the remaining columns with freeze pane.
 
-The following screenshot displays the **Grid** after it is loaded with data.
+N> [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") must be `true` while specifying [`frozenColumns`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozencolumns "frozenColumns").
 
-{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img5.png"%}
-
-### Continuous Mode
-
-You can enable the continuous mode by setting the [`virtualScrollMode`](/js/api/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") property as Continuous. In Continuous mode, the data is loaded in **Grid** when the scrollbar reaches the end. The following code example illustrates how to set the continuous mode in virtualization.
+The following code example describes the above behavior.
 
 {% highlight html %}
-
-
-<div id ="Grid">
-</div>
-<script>
-  $(function () {
-      $("#Grid").ejGrid({
-          dataSource: ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"),
-          allowScrolling: true,
-          scrollSettings: { width: 0, height: 300, allowVirtualScrolling: true, virtualScrollMode: ej.Grid.VirtualScrollMode.Continuous },
-          columns: [
-          { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right },
-          { field: "CustomerID", headerText: "Customer ID" },
-          { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right },
-          { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, format: "{0:C}" },
-          { field: "ShipCity", headerText: "Ship City" },
-          { field: "ShipName", headerText: "Ship Name" }
-          ]
-      });
-  })
-</script>
-
-
+<div id="Grid"></div>
 {% endhighlight %}
 
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowScrolling : true,
+		scrollSettings: { width: 550, height: 300, frozenColumns: 2 },    
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](scrolling_images/scrolling_img5.png)
 
 
-The following screenshot illustrates the request made to fetch the data after the **Grid** scrollbar touches the end.
+### Freeze particular columns:
 
-{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img6.png"%}
+To freeze selected columns in grid at the time of scrolling, by set [`isFrozen`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isfrozen "isFrozen") property of columns as `true`. [`isFrozen`](http://help.syncfusion.com/js/api/ejgrid#members:columns-isfrozen "isFrozen") columns are rendered first in the grid even the columns index is different while declaring the [`columns`](http://help.syncfusion.com/js/api/ejgrid#members:columns "columns").
 
-The following screenshot illustrates the **Grid** after the data is loaded.
+The following code example describes the above behavior.
 
-{% include image.html url="/js/Grid/Scrolling_images/Scrolling_img7.png"%}
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowScrolling : true,
+		scrollSettings : { width : 550, height : 400 },
+		columns : [
+			{ field: "OrderID" },
+			{ field: "EmployeeID"},
+			{ field: "CustomerID"},
+			{ field: "Freight", isFrozen: true},
+			{ field: "OrderDate", format: "{0:dd/MM/yyyy}" },
+			{ field: "ShipCity" },
+			{ field: "ShipCountry", isFrozen: true, width: 100 },
+			{ field: "ShipAddress" },
+			{ field: "ShipPostalCode" }
+		]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](scrolling_images/scrolling_img6.png)
+
+
+### Frozen Columns alert Messages:
+
+1. If [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") is false while using [`frozenColumns`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") then "Enable [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") while using frozen Columns" alert message is thrown.
+2. If [`frozenColumns`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozencolumns "frozenColumns") is specified out of the grid column view then "Frozen columns should be in grid view area" alert message is thrown.
+3. Frozen Rows and Columns are not supported the following features
+ Grouping
+ Row Template
+ Detail Template
+ Hierarchy Grid 
+ Batch Editing
+
+If any one of the above feature is enabled along with Frozen Rows and Columns, then "Frozen Columns and Rows are not supported for Grouping, Row Template, Detail Template, Hierarchy Grid and Batch Editing" alert message is thrown.
+
+## Frozen Rows
+
+Specify [`frozenRows`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozenrows "frozenRows") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") to freeze rows(upto the specified frozenRows value) at the time of scrolling. Vertical scrollbar must be enabling while specifying [`frozenRows`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozenrows "frozenRows") then only you can scroll and see the remaining rows with freeze pane.
+
+N> [`allowScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:allowscrolling "allowScrolling") must be `true` while specifying [`frozenRows`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-frozenrows "frozenRows").
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowScrolling : true,
+		scrollSettings: { width: 550, height: 300, frozenRows: 4 }, 
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](scrolling_images/scrolling_img7.png)
+
+
+## Touch scroll
+
+In [touch](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-enabletouchscroll "touch") supported devices you can scroll and show the content by swipe left, right, top and bottom. Disable touch scroll by setting [`enableTouchScroll`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-enabletouchscroll "enableTouchScroll") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") as `false`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		//The datasource "window.gridData" is referred from 'http://js.syncfusion.com/demos/web/scripts/jsondata.min.js'
+		dataSource : window.gridData,
+		allowScrolling : true,
+		scrollSettings: { width: 550, height: 300, enableTouchScroll: false },     
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
+
+## Virtual Scrolling
+
+The virtual scrolling support allows you to load data that you require (load data based on page size) without buffering the entire huge database. To enable virtual scrolling by setting [`allowVirtulScrolling`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-allowvirtualscrolling "allowVirtulScrolling") property of [`scrollSettings`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings "scrollSettings") as `true`. It supports two mode of virtualization. They are,
+
+1. Normal Mode
+2. Continuous Mode
+
+N> The following features are not supported by virtual scrolling 
+N> 1. Grouping
+N> 2. Frozen Rows 
+N> 3. Cell merging 
+N> 4. Detail template 
+N> 5. Row template 
+N> 6. Hierarchy
+
+### Normal Mode:
+
+It allows you to load the grid with data while scrolling. This can be achieved by setting [`virtualScrollMode`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") as `normal`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		dataSource : ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"),
+		allowScrolling : true,
+		scrollSettings: { width: 550, height: 300, allowVirtualScrolling: true, virtualScrollMode: "normal" },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](scrolling_images/scrolling_img8.png)
+
+
+### Continuous Mode:
+
+In Continuous mode, the data is loaded in grid when the scrollbar reaches the end.  You can enable the continuous mode by setting the [`virtualScrollMode`](http://help.syncfusion.com/js/api/ejgrid#members:scrollsettings-virtualscrollmode "virtualScrollMode") property as `continuous`.
+
+The following code example describes the above behavior.
+
+{% highlight html %}
+<div id="Grid"></div>
+{% endhighlight %}
+
+{% highlight js %}
+$(function () {
+	$("#Grid").ejGrid({
+		dataSource : ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Orders"),
+		allowScrolling : true,
+		scrollSettings: { width: 550, height: 300, allowVirtualScrolling: true, virtualScrollMode: "continuous" },
+		columns : ["OrderID", "EmployeeID", "CustomerID", "ShipCity", "ShipCountry", "ShipAddress", "ShipPostalCode", "Freight"]
+	});
+});
+{% endhighlight %}
+
+The following output is displayed as a result of the above code example.
+
+![](scrolling_images/scrolling_img9.png)
+
 

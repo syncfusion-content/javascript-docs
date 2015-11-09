@@ -85,7 +85,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img1.png" %}
+![](/js/OlapChart/Chart-Axes_images/Chart-Axes_img1.png) 
 
 ##Axis Line
 
@@ -128,7 +128,7 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img2.png" %}
+![](/js/OlapChart/Chart-Axes_images/Chart-Axes_img2.png) 
 
 ##Position Opposed
 
@@ -157,7 +157,7 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img3.png" %}
+![](/js/OlapChart/Chart-Axes_images/Chart-Axes_img3.png) 
 
 ##Area Customization 
 
@@ -192,7 +192,7 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Chart-Axes_images/Chart-Axes_img4.png" %}
+![](/js/OlapChart/Chart-Axes_images/Chart-Axes_img4.png) 
 
 #Label
 
@@ -233,7 +233,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Chart-Axes_images/Label_img1.png" %}
+![](/js/OlapChart/Chart-Axes_images/Label_img1.png) 
 
 ##Rotating Axis Labels
 
@@ -256,5 +256,5 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Chart-Axes_images/Label_img2.png" %}
+![](/js/OlapChart/Chart-Axes_images/Label_img2.png) 
 

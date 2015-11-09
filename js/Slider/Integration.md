@@ -17,7 +17,7 @@ Angular JS is structural Framework to create dynamic web apps. It is distributed
 
 **Slider** widget is provided with Angular JS support. The support is achieved by including the “**ej.widget.angular.min.js**” file. Refer the following link to know more about the AngularJS support.
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 **Slider** widget is defined using the directive **slider**. The properties of the **Slider** widget can be included as inline **HTML** attributes by prefixing the properties with “**e-**“. The properties are not case sensitive when defining it. Angular JS provides two types of data binding “one way binding” and “two way binding”. 
 
@@ -91,7 +91,7 @@ The following example explains you the binding of **value** property using the A
 Execute the above code example to render the following output.
 
 
-{% include image.html url="/js/Slider/Integration_images/Integration_img1.png" %}
+![](/js/Slider/Integration_images/Integration_img1.png) 
 
 ## Knockout binding
 
@@ -101,7 +101,7 @@ KnockOutJS is a **JavaScript** library that follows the MVVM pattern to build so
 
 **Slider** widget includes support to use it with KnockOutJS. The support is achieved by integration of the JS library **ej.widget.ko.min.js file.** Refer the following link to know more about the KnockOutJS support
 
-<http://docs.syncfusion.com/js/knockoutjs>
+<http://help.syncfusion.com/js/knockoutjs>
 
 The binding handler name for **Slider** component is **Slider**. Both one way binding and two way binding support is included. All properties of the **Slider** component supports one way binding. In the **HTML** markup, specify the property using the binding handler. 
 
@@ -145,5 +145,5 @@ The following example explains you the binding of **value** property using the A
 Execute the above code example to render the following output.
 
 
-{% include image.html url="/js/Slider/Integration_images/Integration_img2.png" %}
+![](/js/Slider/Integration_images/Integration_img2.png) 
 

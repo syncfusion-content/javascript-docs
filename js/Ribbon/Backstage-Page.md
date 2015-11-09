@@ -36,29 +36,33 @@ We can set height and width to backstage page using properties _**backStageHeigh
             $("#Ribbon").ejRibbon({
                 width: "500px",
                 applicationTab: {
-                    Type: "BackStagePage",
+                    type: ej.Ribbon.applicationTabType.backstage,
+                     backstageSettings: {
                     text: "FILE",
-                    backStageHeight: 230,
-                    backStageWidth: 500,
-                    backStagePage: [{
+                    height: 230,
+                    width: 500,
+                    headerWidth: 125,
+                    Pages: [{
                         id: "info",
                         text: "Info",
-                        contentId: "infoCon",
-                        backStageItemType: ej.Ribbon.backStageItemType.tab
+                        contentID: "infoCon",
+                        itemType: ej.Ribbon.itemType.tab
                     }, {
                         id: "new",
                         text: "New",
-                        contentId: "newCon"
+                        contentID: "newCon"
                     }, {
                         id: "close",
                         text: "Close",
                         enableSeparator: true,
-                        backStageItemType: ej.Ribbon.backStageItemType.button
+                        itemType: ej.Ribbon.itemType.tab
                     }, {
                         id: "account",
                         text: "Office Account",
-                        contentId: "accountCon"
+                        contentID: "accountCon"
                     }]
+                    
+                    }
                 },
                 tabs: [{
                     id: "home",
@@ -79,4 +83,4 @@ We can set height and width to backstage page using properties _**backStageHeigh
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Backstage-Page_images/Backstage-Page_img1.png" Caption=""%}
+![](/js/Ribbon/Backstage-Page_images/Backstage-Page_img1.png" Caption=")

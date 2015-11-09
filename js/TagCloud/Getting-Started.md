@@ -12,7 +12,7 @@ documentation: ug
 This section explains briefly about how to create a **TagCloud** in your application with **JavaScript**. The **TagCloud** can be easily configured to the div element in which the tags are placed. The following screenshot illustrates the functionality of a **TagCloud** widget with a list of the topmost search engines. 
 
 
-{% include image.html url="/js/TagCloud/Getting-Started_images/Getting-Started_img1.png"%}
+![](/js/TagCloud/Getting-Started_images/Getting-Started_img1.png)
 
 ## Create TagCloud widget
 
@@ -97,7 +97,7 @@ The following screenshot displays the output of the above code example.
 
 
 
-{% include image.html url="/js/TagCloud/Getting-Started_images/Getting-Started_img2.png" %}
+![](/js/TagCloud/Getting-Started_images/Getting-Started_img2.png) 
 
 ## Set Min and Max Font Size
 

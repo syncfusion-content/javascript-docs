@@ -15,11 +15,11 @@ This section explains briefly about how to create a **Toggle Button** in your ap
 
 The html checkbox element can be easily configured as **Essential JavaScript Toggle Button** control. The basic rendering of **Essential JavaScript Toggle Button** is achieved by using default functionality.
 
-{% include image.html url="/js/ToggleButton/Getting-Started_images/Getting-Started_img1.png" %}
+![](/js/ToggleButton/Getting-Started_images/Getting-Started_img1.png) 
 
 
 
-{% include image.html url="/js/ToggleButton/Getting-Started_images/Getting-Started_img2.png" %}
+![](/js/ToggleButton/Getting-Started_images/Getting-Started_img2.png) 
 
 
 
@@ -105,7 +105,7 @@ Output of above steps
 
 
 
-{% include image.html url="/js/ToggleButton/Getting-Started_images/Getting-Started_img4.png" %}
+![](/js/ToggleButton/Getting-Started_images/Getting-Started_img4.png) 
 
 
 

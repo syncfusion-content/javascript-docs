@@ -1,56 +1,100 @@
 ---
 layout: post
-title: Hierarchy-Grid
-description: hierarchy grid
+title: Hierarchical binding with Grid widget for Syncfusion Essential JS
+description: How to bind the hierarchical data
 platform: js
 control: Grid
 documentation: ug
 ---
+# Hierarchical Bindings
 
-# Hierarchy Grid
-
-**Hierarchy Grid** feature allows you to add the **Grid** control inside the Grid row. When you want to view the child Grid, you can expand the **Grid**. Bind the data to child Grid by assign the foreign key field to `queryString` property.
+Hierarchical binding can be used to create the Grid with parent and child relation, this facilitate you to view the child records for a paricular row by clicking on the Expander button present in first column of each grid row. This can be enabled by defining [`childGrid`](http://help.syncfusion.com/js/api/ejgrid#members:childgrid "childGrid") and `childGrid.queryString`. [`childGrid`](http://help.syncfusion.com/js/api/ejgrid#members:childgrid "childGrid") is to define options of child and `childGrid.queryString` is to define the relation between parent and child grid.
 
 {% highlight html %}
 
 <div id="Grid"></div>
 <script type="text/javascript">
-  $(function () {
-      // the datasource "window.employeeView" is referred from jsondata.min.js
-      var data = ej.DataManager(window.employeeView).executeLocal(ej.Query().take(9));
-      var dataManger = ej.DataManager({
-          url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"
-      });
+  // the datasource "window.employeeView" is referred from jsondata.min.js
   
-      var dataManger2 = ej.DataManager({
-          url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Customers/"
-      });
+  var data = window.employeeView;
   
-      $("#Grid").ejGrid({
-          dataSource: data,
+  var dataManger = ej.DataManager({
+  
+      url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"
+  
+  });
+  
+  $("#Grid").ejGrid({
+      dataSource: data,
+      childGrid: {
+          dataSource: dataManger,
+          queryString: "EmployeeID",
           allowPaging: true,
-          allowSorting: true,
-          columns: ["EmployeeID", "FirstName", "Title", "City", "Country"],
-          childGrid: {
-              dataSource: dataManger,
-              queryString: "EmployeeID",
-              allowPaging: true,
-              columns: ["OrderID", "ShipCity", "Freight", "ShipName"],
-              childGrid: {
-                  dataSource: dataManger2,
-                  queryString: "CustomerID",
-                  columns: ["CustomerID", "Phone", "Address", "Country"],
-              },
+          pageSettings: {
+              pageSize: 5
           },
-      });
+          columns: [
+              { field: "OrderID", headerText: 'Order ID', textAlign: ej.TextAlign.Right, width: 85 },
+              { field: "ShipCity",headerText: 'Ship City', textAlign: ej.TextAlign.Left,width: 100},
+              { field: "Freight", headerText: 'Freight',  textAlign: ej.TextAlign.Left,width: 120},
+              { field: "ShipName", headerText: 'Ship Name', textAlign: ej.TextAlign.Left, width: 100 }
+          ]
+      },
+      columns:
+          [
+              {field: "EmployeeID", headerText: 'Employee ID',textAlign: ej.TextAlign.Right,width: 85},
+              {field: "FirstName",headerText: 'First Name',textAlign: ej.TextAlign.Left,width: 100},
+              { field: "Title", headerText: 'Title', textAlign: ej.TextAlign.Left, width: 120 },
+              { field: "City", headerText: 'City', textAlign: ej.TextAlign.Left, width: 10 },
+              { field: "Country", headerText: 'Country', textAlign: ej.TextAlign.Left, width: 100 }
+          ]
+  
   });
   
 </script>
 
 
+
 {% endhighlight %}
 
+![](Hierarchy-Grid_images/HierarchyGrid_img1.png)
 
 
-{% include image.html url="/js/Grid/Hierarchy-Grid_images/Hierarchy-Grid_img1.png"%}
+## Expand or Collapse All Childs
+
+The Grid can able to expand and collapse all the [`childGrid`](http://help.syncfusion.com/js/api/ejgrid#members:childgrid "childGrid") through programmatically using [`expandAll`](http://help.syncfusion.com/js/api/ejgrid#methods:expandall "expandAll") and [`collapseAll`](http://help.syncfusion.com/js/api/ejgrid#methods:collapseall "collapseAll") method.
+
+{% highlight html %}
+<button id="expand">expandAll</button>
+<button id="collapse">collapseAll</button>
+<div id="Grid"></div>
+<script type="text/javascript">
+  var data = window.employeeView;
+  var dataManger = ej.DataManager({
+    url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"
+  });
+  $("#expand,#collapse").ejButton({
+    showRoundedCorner: true,
+    size: "mini",
+    width: 150,
+    click: function(args) {
+      $("#Grid").ejGrid(args.model.text); //invokes expandAll & collapseAll method based on button name
+    }
+  });
+  $("#Grid").ejGrid({
+    dataSource: data,
+    childGrid: {
+      dataSource: dataManger,
+      queryString: "EmployeeID",
+      allowPaging: true,
+      pageSettings: {
+        pageSize: 5
+      }
+    }
+  });
+</script>
+
+
+
+{% endhighlight %}
 

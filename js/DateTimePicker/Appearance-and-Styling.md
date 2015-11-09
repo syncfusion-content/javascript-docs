@@ -67,7 +67,7 @@ Add the following code in your **HTML** page.
 
 
 
-{% include image.html url="/js/DateTimePicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png"%}
+![](/js/DateTimePicker/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## Css Class
 
@@ -161,5 +161,5 @@ Add the following code in your style section.
 
 
 
-{% include image.html url="/js/DateTimePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png"%}
+![](/js/DateTimePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 

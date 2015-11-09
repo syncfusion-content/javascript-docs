@@ -37,7 +37,7 @@ function onServiceInvokes(args)
 
 {% endhighlight %}
 
-{% include image.html url="/js/PivotGrid/Defer-Update_images/Defer-Update_images1.png" %}
+![](/js/PivotGrid/Defer-Update_images/Defer-Update_images1.png) 
 
 
 

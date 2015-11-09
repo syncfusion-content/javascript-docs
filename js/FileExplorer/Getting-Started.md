@@ -15,9 +15,15 @@ This section explains briefly about how to create a **FileExplorer** in your a
 
 The following screenshot demonstrates the functionality of **FileExplorer** with details view and thumbnail view.
 
-{% include image.html url="/js/FileExplorer/Getting-Started_images/Getting-Started_img1.png" Caption="FileExplorer Control with Grid view"%}
+![](/js/FileExplorer/Getting-Started_images/Getting-Started_img1.png)
 
-{% include image.html url="/js/FileExplorer/Getting-Started_images/Getting-Started_img2.png" Caption="FileExplorer Control with Thumbnail view"%}
+FileExplorer Control with Grid view
+{:.caption}
+
+![](/js/FileExplorer/Getting-Started_images/Getting-Started_img2.png)
+
+FileExplorer Control with Thumbnail view
+{:.caption}
 
 In the above screenshot, you can access and manage the remote file system. While performing the operation on files like delete, rename etc, this is handled using Web API service.
 
@@ -86,4 +92,4 @@ N>  ajaxAction API used to perform ajax operation like read, delete creating fol
 
 The following screenshot displays a **FileExplorer** control.
 
-{% include image.html url="/js/FileExplorer/Getting-Started_images/Getting-Started_img4.png"%}
+![](/js/FileExplorer/Getting-Started_images/Getting-Started_img4.png)

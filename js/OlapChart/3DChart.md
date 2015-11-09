@@ -31,7 +31,7 @@ The following code example explains on how to enable 3D in the OlapChart control
 });
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/3DChart_images/3DChart_images1.png"%}
+![](/js/OlapChart/3DChart_images/3DChart_images1.png)
 
 
 

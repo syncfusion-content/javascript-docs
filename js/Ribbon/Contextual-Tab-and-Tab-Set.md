@@ -37,8 +37,8 @@ You can add **Contextual Tabs** and **Tab Set** in the Ribbon control. In contex
             $("#Ribbon").ejRibbon({
                 width: "800px",
                 applicationTab: {
-                    Type: "ApplicationMenu",
-                    itemID: "menu",
+                   type: ej.Ribbon.applicationTabType.menu,
+                    menuItemID: "menu",
                     menuSettings: {
                         openOnClick: false
                     }
@@ -95,5 +95,5 @@ You can add **Contextual Tabs** and **Tab Set** in the Ribbon control. In contex
 
 The following screenshot illustrates Ribbon with **Contextual Tabs** and **Tab Set**.
 
-{% include image.html url="/js/Ribbon/Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png"%}
+![](/js/Ribbon/Contextual-Tab-and-Tab-Set_images/Contextual-Tab-and-Tab-Set_img1.png)
 

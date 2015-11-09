@@ -52,7 +52,7 @@ Add the following code in your script section.
 
 
 
-{% include image.html url="/js/FileExplorer/Customization-layout_images/Customization-layout_img1.png"%}
+![](/js/FileExplorer/Customization-layout_images/Customization-layout_img1.png)
 
 To render **FileExplorer** with the above disable tree view and footer options, include the following code in your **HTML** page.
 
@@ -97,5 +97,5 @@ Add the following code in your script section.
 
 
 
-{% include image.html url="/js/FileExplorer/Customization-layout_images/Customization-layout_img2.png"%}
+![](/js/FileExplorer/Customization-layout_images/Customization-layout_img2.png)
 

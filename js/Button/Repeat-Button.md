@@ -70,5 +70,5 @@ Configure the **CSS** styles to apply on button
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Repeat-Button_images/Repeat-Button_img1.png" %}
+![](/js/Button/Repeat-Button_images/Repeat-Button_img1.png) 
 

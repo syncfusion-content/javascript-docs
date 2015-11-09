@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Real-Time Chart 
-description: real-time Chart 
+title: Using Essential JavaScript Chart in real-time scenario 
+description: Learn how to update the chart dynamically with real-time data. 
 platform: js
 control: Chart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Real-Time Chart 
 
-Chart can be updated dynamically with real time data. Whenever you add a point or remove a point from the dataSource, you have to call **redraw** method to request chart to redraw its content.    
+Chart can be updated dynamically with the real time data. Whenever you add a point or remove a point from the dataSource, you can call the [redraw](../api/ejchart#members:redraw) method to request the chart to redraw its content.    
 
 N> You can get the chart **instance** using instance method.
 

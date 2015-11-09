@@ -118,7 +118,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img1.png" %}
+![](/js/OlapGauge/Pointers_images/Pointers_img1.png) 
 
 ## Length and Width Customization
 
@@ -221,7 +221,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img2.png" %}
+![](/js/OlapGauge/Pointers_images/Pointers_img2.png) 
 
 ## Background Customization 
 
@@ -325,7 +325,7 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img3.png" %}
+![](/js/OlapGauge/Pointers_images/Pointers_img3.png) 
 
 ## Shapes Customization
 
@@ -429,5 +429,5 @@ $(function() {
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapGauge/Pointers_images/Pointers_img4.png" %}
+![](/js/OlapGauge/Pointers_images/Pointers_img4.png) 
 

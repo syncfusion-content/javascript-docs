@@ -53,7 +53,7 @@ The following steps explain you on how to set the **value** for the ProgressBar 
 
 The following screenshot displays the output for the above code.
 
-{% include image.html url="/js/ProgressBar/Define-value_images/Define-value_img1.png" %}
+![](/js/ProgressBar/Define-value_images/Define-value_img1.png) 
 
 
 
@@ -95,4 +95,4 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 The following screenshot displays the output.
 
-{% include image.html url="/js/ProgressBar/Define-value_images/Define-value_img2.png" %}
+![](/js/ProgressBar/Define-value_images/Define-value_img2.png) 

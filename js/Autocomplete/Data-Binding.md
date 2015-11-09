@@ -1,145 +1,178 @@
 ---
 layout: post
-title: Data-Binding
-description: data-binding
+title: data-binding
+description: data binding
 platform: js
 control: AutoComplete
 documentation: ug
 ---
 
-# Data-Binding
+# Data Binding
 
-In order to render the **AutoComplete** control, the data needs to be bound to it in a proper way. The following sub-properties provide a way to bind either the local or remote data to the AutoComplete widget by binding the appropriate data fields to the corresponding options.
+In order to render the AutoComplete control, the data needs to be bound to it in a proper way. The below sections explains about how to bind either the local or remote data to the AutoComplete widget. 
 
 ## Fields
 
-### dataSource 
+The AutoComplete widget has a field property (object) which holds the properties to map with datasource fields. For example, the field object has a text property which is necessary to map with specific field in the datasource to render the suggestion items in the AutoComplete widget.
 
-This property assigns the local **json** data or remote data that is the **url** binding to the AutoComplete control.
+The field object contains the following properties.
 
-### query 
+* [text](http://help.syncfusion.com/js/api/ejautocomplete)
 
-It accepts the data of object type usually the query string to fetch the required data from a specific table based on certain condition. This property is optional hence when it is not specified the entire records that are initially assigned through **dataSource** are taken into consideration.
+* [key](http://help.syncfusion.com/js/api/ejautocomplete)
 
-### key
+* [groupBy](http://help.syncfusion.com/js/api/ejautocomplete)
 
-It maps the corresponding **key** field name from the data table or **json** data that is assigned to the **dataSource** with the key property of the AutoComplete control. The key value that is fetched from the table is unique for each records.
+* [htmlAttributes](http://help.syncfusion.com/js/api/ejautocomplete)
 
-### text
 
-It maps the corresponding **text** field name from the data table or **json** data that is assigned to the **dataSource** with the text property of the AutoComplete control. The text value that is fetched from the table gets the value to be displayed in the **AutoComplete** textbox.
 
-### category
+### Local data
 
-It maps the **category** field name from the data table or **json** data that is assigned to the **dataSource**. The category value that is fetched from the table is made available when Grouping is enabled.
+The local data can be an array of JSON objects which is assigned for the Autocomplete widget’s datasource property. Refer the below example.
 
-### htmlAttributes
-
-This allows you to map the **CSS** styles or classes to the corresponding data from table or **json** data with the AutoComplete items. The **htmlAttributes** value customizes the AutoComplete items based on html styling or class assigned to it. 
-
-## Local data
-
-**AutoComplete** provides extensive data binding support to populate AutoComplete items, so that the values are mapped to the AutoComplete fields, namely key and text. **DataBinding** helps you bind a key value pair to AutoComplete textbox. **Key** field takes the unique **id** of the dataSource elements. Text field gets the value to be displayed in the AutoComplete textbox.
-
-### Defining the Local data for AutoComplete
-
-The following steps explain local data binding to an **AutoComplete** textbox.
-
- In the **HTML** page, add an **&lt;input&gt;** element to configure the **AutoComplete** widget.
+Here the name and index fields are mapped with text and key properties of the field object respectively.
 
 {% highlight html %}
 
+
 <input type="text" id="autocomplete" />
-    
-{% endhighlight %}
 
-{% highlight js %}
+<script type="text/javascript">
 
+        var countriesField = [
+              { name: "Austria", index: "C1" },
+              { name: "Australia", index: "C2" }, { name: "Antarctica", index: "C3" },
+              { name: "Bangladesh", index: "C4" }, { name: "Belgium", index: "C5" },
+              { name: "Brazil", index: "C6" },
+              { name: "Canada", index: "C7" }, { name: "China", index: "C8" },
+              { name: "Cuba", index: "C9" },
+              { name: "Denmark", index: "C10" }, { name: "Dominica", index: "C11" },
+              { name: "Europe", index: "C12" }, { name: "Egypt", index: "C13" },
+              { name: "England", index: "C14" },
+              { name: "India", index: "C15" }, { name: "Indonesia", index: "C16" }
+        ];
 
-    var states = [
-             { index: "s1", countryName: "Alabama" }, { index: "s2", countryName: "Alaska" },
-             { index: "s3", countryName: "Arizona" }, { index: "s4", countryName: "Arkansas" },
-             { index: "s5", countryName: "California" },{index: "s6",countryName: "Colorado" },
-             { index: "s7", countryName: "Connecticut" },{index: "s8",countryName: "Delaware" },
-             { index: "s9", countryName: "Florida" }, { index: "s10", countryName: "Georgia" },
-             { index: "s11", countryName: "Hawaii" }, { index: "s12", countryName: "Idaho" },
-             { index: "s13", countryName: "Illinois" },{ index: "s14",countryName: "Indiana" },
-             { index: "s15", countryName: "Iowa" }, { index: "s16", countryName: "Kansas" },
-             { index: "s17", countryName: "Kentucky" },{index: "s18", countryName:"Louisiana" },
-             { index: "s19", countryName: "Maine" }, { index: "s20", countryName: "Maryland" },
-             { index: "s21", countryName: "Massachusetts" }, { index: "s22", countryName: "Michigan" },
-             { index: "s23", countryName: "Montana" }, {index: "s24",countryName:"New Mexico" },
-             { index: "25", countryName: "New York" }, { index: "26", countryName: "North Carolina" },
-             { index: "s27", countryName: "Nevada" }, {index: "s28",countryName: "New Jersey" }                 
-          ];
-    
-       \\ Map local dataSource to corresponding fields in AutoComplete.
-    
-           $('#autocomplete').ejAutocomplete({
-                dataSource: states,
-                fields: { key: "index", text: "countryName" },
-                width: 205
-            });
+        $('#autocomplete').ejAutocomplete({ dataSource: countriesField, fields: { key: "index", text: "name" }, width: 205 });
+
+</script>
+
 
 
 {% endhighlight %}
 
+![AutoComplete-LocalData](local-data_images\local-data_img1.png)
 
 
-The following image is the output for AutoComplete control with local data binding.
 
-{% include image.html url="/js/Autocomplete/Data-Binding_images/Data-Binding_img1.png"%}
+### Remote data
 
-## Remote data
+#### OData
 
-**AutoComplete** provides remote data binding support to populate AutoComplete  items, so that the values are mapped to the AutoComplete fields from a remote web service using **DataManager** and **Query**. 
+[OData](http://help.syncfusion.com/js/datamanager/data-binding) is a standardized protocol for creating and consuming the data. You can retrieve data from oData service by using [ej.DataManager](http://help.syncfusion.com/js/datamanager/getting-started).
 
-**DataManager** is used to manage relational data in **JavaScript**. It supports **CRUD** that is Create, Read, Update, and Destroy, in individual requests and batches. DataManager uses two different classes, ej.DataManager, for processing and ej.Query, for serving data. ej.DataManager communicates with dataSource and ej.Query generates data queries that are read by the **DataManager**.
-
-### Configuring remote data for AutoComplete
-
-The following steps explain the remote data binding to an **AutoComplete** textbox.
-
- In the **HTML** page, add an **&lt;input&gt;** element to configure **AutoComplete** widget.
+Here the ContactName and SupplierID fields are mapped with text and key properties respectively, of the field object. The queries can be created using [ej.Query()](http://helpjs.syncfusion.com/js/datamanager/query).
 
 {% highlight html %}
 
 <input type="text" id="autocomplete" />
 
+<script type="text/javascript">
 
-{% endhighlight %}
-
- Define **DataManager** and assign remote data source to it. Initialize query for binding data to **AutoComplete** text. Here **DataManager** gets the remote web service and filters the data using **Query**. The **select** property of **ejQuery** is used to retrieve the specified columns from the dataSource.
-
-{% highlight js %}
-
-
-    var dataManger = ej.DataManager({
-        // Web service host
+        /* Create DataManager */
+        var dataManger = ej.DataManager({
+            /* OData service */
             url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
         });
-        // Query creation
-    var query = ej.Query().from("Suppliers").select("SupplierID", "ContactName");
+        /* Create Query */
+        var query = ej.Query().from("Suppliers").select("SupplierID", "ContactName");
+
+        $('#autocomplete').ejAutocomplete({ dataSource: dataManger, query: query, fields: { text: "ContactName", key: "SupplierID" }, width: 205 });
+
+</script>
+
+
 
 {% endhighlight %}
 
 
- Assign **dataSource** and **Query** property values to bind the remote data. Map the corresponding fields for text and key value in AutoComplete control as follows.
 
-{% highlight js %}
+![AutoComplete-OData](odata_images\odata_img1.png)
 
-    $('#autocomplete').ejAutocomplete({
-        dataSource: dataManger,
-        query: query,
-        fields: { text: "ContactName", key: "SupplierID" },
-        filterType: ej.filterType.StartsWith,
-        width: 205
-    });
+
+
+#### WebAPI
+
+
+
+[ASP.NET Web API](https://msdn.microsoft.com/en-us/library/hh833994(v=vs.108).aspx) is a framework for building HTTP services. You can retrieve data from ASP.NET Web API by using [ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/getting-started).
+
+Here the ContactName field is mapped with text property of the field object. 
+
+{% highlight html %}
+
+<input type="text" id="autocomplete" />
+
+<script type="text/javascript">
+
+        /* Creating DataManager */
+        var dataManger = ej.DataManager({
+            /* ASP.NET Web API */
+            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Suppliers",
+            crossDomain: true
+        });        
+        $('#autocomplete').ejAutocomplete({ dataSource: dataManger, fields: { text: "ContactName" }, width: 205 });
+
+</script>
+
+
 
 {% endhighlight %}
 
 
-The following image is the output for AutoComplete control with remote data binding.
 
-{% include image.html url="/js/Autocomplete/Data-Binding_images/Data-Binding_img2.png"%}
+N> In the above data manager configuration, “crossDomain” must be set to true to access the data from Web API. [Cross domain](http://helpjs.syncfusion.com/js/grid/data-binding) requests can be possible using ej.DataManager.
+
+![AutoComplete-APIData](webapi_images\webapi_img1.png)
+
+
+
+
+#### Handling errors
+
+ In remote binding, the server might not return data sometimes due to various reasons. In such cases we need to handle the error properly. We can handle this using the “[actionFailure](http://help.syncfusion.com/js/api/ejautocomplete)” event. 
+
+{%seealso%} 
+* [actionComplete](http://help.syncfusion.com/js/api/ejautocomplete) 
+
+* [actionSuccess](http://help.syncfusion.com/js/api/ejautocomplete) events
+{%endseealso%}
+
+{% highlight html %}
+
+<input type="text" id="autocomplete" />
+
+<script type="text/javascript">
+
+        /* Creating DataManager */
+        var dataManger = ej.DataManager({
+            /* Web service host */
+            url: "http://mvc.syncfusion.com/Services/"
+        });
+        /* Query creation */
+        var query = ej.Query().from("Suppliers").select("SupplierID", "ContactName");
+
+        $('#autocomplete').ejAutocomplete({ dataSource: dataManger, query: query, fields: { text: "ContactName", key: "SupplierID" }, width: 205, actionFailure: onRequestFailure });
+
+        function onRequestFailure(args) {
+            //Error handler
+        }
+
+</script>
+
+
+
+{% endhighlight %}
+
+
 

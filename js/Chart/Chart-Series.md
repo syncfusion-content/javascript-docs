@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart-Series
-description: chart series
+title: Multiple chart series
+description: Learn how to render different types of series in chart.
 platform: js
 control: Chart
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Multiple Series
 
-In EjChart, you can add multiple series object in the **series** options. By default, the series are rendered in the order it is added to the **series** option. You can change this order by using the **zOrder** option.  
+In EjChart, you can add multiple series object in the [series](../api/ejchart.html#members:series) options. The series are rendered in the order it is added to the [series](../api/ejchart.html#members:series) option, by default. You can change this order by using the [zOrder](../api/ejchart.html#members:series-zorder) option.  
 
 {% highlight js %}
 
@@ -47,14 +47,17 @@ In EjChart, you can add multiple series object in the **series** options. By def
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Chart-Series_images/Chart-Series_img1.png" Caption="Chart with multiple series"%}
+![](/js/Chart/Chart-Series_images/Chart-Series_img1.png)
+
+Chart with multiple series
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/column) here to view the multiple series online demo sample.
 
 
 ### Customizing all series together
 
-By using the **commonSeriesOptions**, you can customize the series options for all the series commonly instead of setting the options directly on each series object. 
+By using the [commonSeriesOptions](../api/ejchart.html#members:series-commonseriesoptions), you can customize the series options for all the series commonly, instead of setting the options directly on each series object. 
 
 N> The inline properties of the series has the first priority and override the commonSeriesOptions.
 
@@ -97,7 +100,10 @@ The following code example explains on how to enable marker, tooltip and animati
 
 {% endhighlight %} 
 
-{% include image.html url="/js/Chart/Chart-Series_images/Chart-Series_img2.png" Caption="Chart with CommonSeriesOptions"%}
+![](/js/Chart/Chart-Series_images/Chart-Series_img2.png)
+
+Chart with CommonSeriesOptions
+{:.caption}
 
 
 ## Combination Series
@@ -126,17 +132,20 @@ EjChart allows you to render the combination of different series in the chart.
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Chart-Series_images/Chart-Series_img3.png" Caption="Chart with CombinationSeries"%}
+![](/js/Chart/Chart-Series_images/Chart-Series_img3.png)
+
+Chart with CombinationSeries
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/combination) here to view the combination series online demo sample.
 
 ### Limitation of combination chart
 
-* *Bar*, *StackingBar*, and *StackingBar100* cannot be combined with the other Cartesian type series.
+* [Bar](chart-types#bar-chart), [StackingBar](chart-types#stacked-bar-chart), and [StackingBar100](chart-types#stacked-bar-chart-1) cannot be combined with the other Cartesian type series.
 
-* Cartesian type series cannot be combined with the accumulation series (*pie, doughnut, funnel, and pyramid*).
+* Cartesian type series cannot be combined with the accumulation series ([pie](chart-types#pie-chart), [doughnut](chart-types#doughnut-chart), [funnel](chart-types#funnel-chart), and [pyramid](chart-types#pyramid-chart)).
 
-* *Polar* and *Radar* series cannot be combined with the accumulation and Cartesian type series.
+* [Polar](chart-types#polar) and [Radar](chart-types#radar-chart) series cannot be combined with the accumulation and Cartesian type series.
 
 When the combination of Cartesian and accumulation series types are added to the series option, the series that are similar to the first series are rendered and other series are ignored. The following code example illustrates this,  
 
@@ -155,7 +164,7 @@ When the combination of Cartesian and accumulation series types are added to the
                  type: 'line',
                  // ...
                },
-               {       // Add pie series
+               {       // Add [Pie](chart-types#pie-chart) series
                 points: [{ x: "Jan", y: 70 },
                   // ...
                 ],                
@@ -169,4 +178,7 @@ When the combination of Cartesian and accumulation series types are added to the
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Chart-Series_images/Chart-Series_img4.png" Caption="Chart with line series"%}
+![](/js/Chart/Chart-Series_images/Chart-Series_img4.png)
+
+Chart with line series
+{:.caption}

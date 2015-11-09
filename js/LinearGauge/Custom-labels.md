@@ -69,7 +69,7 @@ Custom labels collection can be directly added to the scale object. Refer the fo
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Custom-labels_images/Custom-labels_img1.png" Caption=""%}
+![](/js/LinearGauge/Custom-labels_images/Custom-labels_img1.png" Caption=")
 
 ## Basic Customization
 
@@ -139,7 +139,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Custom-labels_images/Custom-labels_img2.png" Caption=""%}
+![](/js/LinearGauge/Custom-labels_images/Custom-labels_img2.png" Caption=")
 
 ## Locating the CustomLabels
 
@@ -198,7 +198,7 @@ To set the location of the custom label in **Linear Gauge**, **position** proper
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Custom-labels_images/Custom-labels_img3.png" Caption=""%}
+![](/js/LinearGauge/Custom-labels_images/Custom-labels_img3.png" Caption=")
 
 ## Multiple Custom Labels
 
@@ -265,5 +265,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Custom-labels_images/Custom-labels_img4.png" Caption=""%}
+![](/js/LinearGauge/Custom-labels_images/Custom-labels_img4.png" Caption=")
 

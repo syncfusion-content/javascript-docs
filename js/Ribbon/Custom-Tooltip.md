@@ -31,7 +31,7 @@ The **Ribbon** control has Custom Tooltip support that is displayed when you mov
           $(function () {
              $("#defaultRibbon").ejRibbon({
                  width: "100%", 
-                 applicationTab: { Type: "ApplicationMenu", itemID: "ribbonmenu" },
+                 applicationTab: { type: ej.Ribbon.applicationTabType.menu, menuItemID: "ribbonmenu" },
                  tabs: [{
                      id: "home", text: "HOME", groups: [
                      {
@@ -65,5 +65,5 @@ The **Ribbon** control has Custom Tooltip support that is displayed when you mov
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Custom-Tooltip_images/Custom-Tooltip_img1.png"%}
+![](/js/Ribbon/Custom-Tooltip_images/Custom-Tooltip_img1.png)
 

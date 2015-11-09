@@ -32,7 +32,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img1.png" %}
+![](/js/OlapChart/Legend_images/Legend_img1.png) 
 
 ##Legend Position
 
@@ -59,7 +59,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img2.png" %}
+![](/js/OlapChart/Legend_images/Legend_img2.png) 
 
 ##Legend Arrangement
 
@@ -86,7 +86,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img3.png" %}
+![](/js/OlapChart/Legend_images/Legend_img3.png) 
 
 ##Legend Style
 
@@ -116,7 +116,7 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img4.png" %}
+![](/js/OlapChart/Legend_images/Legend_img4.png) 
 
 ##Legend Item
 
@@ -149,7 +149,7 @@ $("#OlapChart1").ejOlapChart({
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img5.png" %}
+![](/js/OlapChart/Legend_images/Legend_img5.png) 
 
 ##Legend Text
 
@@ -182,5 +182,5 @@ $("#OlapChart1").ejOlapChart({
 {% endhighlight %}
 
 
-{% include image.html url="/js/OlapChart/Legend_images/Legend_img6.png" %}
+![](/js/OlapChart/Legend_images/Legend_img6.png) 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping
+title: grouping
 description: grouping
 platform: js
 control: AutoComplete
@@ -9,62 +9,42 @@ documentation: ug
 
 # Grouping
 
-**AutoComplete** widget provides **Grouping** support for the suggestions list based on the category specified in the dataSource. By default **allowGrouping** is set to ‘**False**’. To enable Grouping for your AutoComplete widget, set the value to ‘**True**’.
+The suggestion list items can be grouped by providing a header for each set of items. The grouping will be defined based on the “groupBy” API in fields object.
 
-## Configuring Grouping for AutoComplete
-
-The following steps explain you how to configure **Grouping** for an AutoComplete textbox.
-
- In the **HTML** page, add an **&lt;input&gt;** element to configure AutoComplete widget.
+Here the category field is mapped with groupBy field.
 
 {% highlight html %}
 
+
 <input type="text" id="autocomplete" />
 
+<script type="text/javascript">
 
-{% endhighlight %}
-
-
- Define **dataSource** elements with category field to group them. The category field in dataSource is used for Grouping conditions.
-
-{% highlight js %}
-
-     var countries = [
-        { text: "Austria", category: "A" },
-        { text: "Australia", category: "A" }, { text: "Lebanon", category: "L" },
-        { text: "Leichenstein", category: "L" }, { text: "Malaysia", category: "M" },
-        { text: "Mexico", category: "M" }, { text: "Netherlands", category: "N" },
-        { text: "New Zealand", category: "N" }, { text: "Nigeria", category: "N" },
-        { text: "Oman", category: "O" }, { text: "Philippines", category: "P" },
-        { text: "Poland", category: "P" }, { text: "Portugal", category: "P" },
+/* Local Data */
+var countries = [
+        { text: "Australia", category: "A" }, { text: "Antarctica", category: "A" },
+        { text: "Bangladesh", category: "B" }, { text: "Belgium", category: "B" },
+        { text: "Canada", category: "C" }, { text: "China", category: "C" },
+        { text: "Denmark", category: "D" }, { text: "Dominica", category: "D" },
+        { text: "Europe", category: "E" }, { text: "Egypt", category: "E" },
+        { text: "India", category: "I" }, { text: "Indonesia", category: "I" },
+        { text: "France", category: "F" }, { text: "Finland", category: "F" },
+        { text: "Germany", category: "G" }, { text: "Greece", category: "G" },
+        { text: "Japan", category: "J" }, { text: "Jordan", category: "J" },
+        { text: "Madagascar", category: "M" }, { text: "Midway Islands", category: "M" },
+        { text: "Nepal", category: "N" }, { text: "Netherlands", category: "N" },
         { text: "Qatar", category: "Q" }, { text: "Romania", category: "R" },
-        { text: "Russia", category: "R" }, { text: "Sweden", category: "S" },
-        { text: "United States", category: "U" }, { text: "Uruguay", category: "U" },
-        {text:"Vatican City",category: "V" },{text: "Western Sahara",category: "W" },
-        { text: "Yemen", category: "Y" }, { text: "Zimbabwe", category: "Z" }
+        { text: "Scotland", category: "S" }, { text: "Tibet", category: "T" },
+        { text: "Zambia", category: "Z" }, { text: "Zimbabwe", category: "Z" }
      ];
 
+$('#autocomplete').ejAutocomplete({ dataSource: countries, filterType: ej.filterType.Contains, fields: { text: "text", groupBy: "category" } });
+
+</script>
+
+
 
 {% endhighlight %}
 
- Configure Grouping for AutoComplete control as follows.
-
-{% highlight js %}
-
-    $('#autocomplete').ejAutocomplete({
-        dataSource: countries,
-        filterType: ej.filterType.Contains,
-        minCharacter: 2, // starts search only after entering 2 texts
-        width: 205,
-        allowGrouping: true,
-        highlightSearch: true,
-        popupHeight: "200px"
-    });
-
-{% endhighlight %}
-
-
-The following image is the output for AutoComplete control that provides Grouping.
-
-{% include image.html url="/js/Autocomplete/Grouping_images/Grouping_img1.png"%}
+![AutoComplete-Grouping](grouping_images\grouping_img1.png)
 

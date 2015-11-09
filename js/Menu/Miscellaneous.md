@@ -73,7 +73,7 @@ Add the following **&lt;script&gt;** in the above code sample.
 
 Output screenshot for the above code example is as follows.
 
-{% include image.html url="/js/Menu/Miscellaneous_images/Miscellaneous_img1.png"%}
+![](/js/Menu/Miscellaneous_images/Miscellaneous_img1.png)
 
 
 ##Animation
@@ -101,7 +101,7 @@ Add the following **&lt;script&gt;** in the above sample code.
 
 Output screenshot for the above code sample is as follows.
 
-{% include image.html url="/js/Menu/Miscellaneous_images/Miscellaneous_img2.png"%}
+![](/js/Menu/Miscellaneous_images/Miscellaneous_img2.png)
 
 
 ##Title text
@@ -129,7 +129,7 @@ You can specify the title of the **Menu** control in the script as follows.
 
 The following screenshot displays the output of the above code.
 
-{% include image.html url="/js/Menu/Miscellaneous_images/Miscellaneous_img3.png"%}
+![](/js/Menu/Miscellaneous_images/Miscellaneous_img3.png)
 
 
 ##Show root level arrows
@@ -159,7 +159,7 @@ Add the following **&lt;script&gt;** in the above code sample.
 
 The following screenshot displays the output of the above code.
 
-{% include image.html url="/js/Menu/Miscellaneous_images/Miscellaneous_img4.png"%}
+![](/js/Menu/Miscellaneous_images/Miscellaneous_img4.png)
 
 
 ##Show sub level arrows
@@ -188,6 +188,6 @@ Add the following **&lt;script&gt;** in the sample code.
 
 The following screenshot displays the output of the above code.
 
-{% include image.html url="/js/Menu/Miscellaneous_images/Miscellaneous_img5.png"%}
+![](/js/Menu/Miscellaneous_images/Miscellaneous_img5.png)
 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 **Treemap** enables drill down to expose the hierarchy achieved by clicking on a node and this results in enabling the **Treemap** to move to the next level or sub level and can return back to the normal **Treemap** view by clicking on the node header. Only a single level of the **Treemap** is visible at once.
 
-##Enabling Drill Down
+## Enable Drill Down
 
 **Treemap** elements can be drilled down by setting the `enableDrillDown` property to true. You can view the hierarchy of the **Treemap** by clicking on the treemap items and can move to the previous level by clicking on the drill down header. The header color can be customized by changing the values in the property `drillDownHeaderColor` and the selection color can be done by changing the `drillDownSelectionColor` property.
 
@@ -66,11 +66,11 @@ Gets or sets a color for highlighting tree map item during drill down.</td></tr>
 
 
 
-{% include image.html url="/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img1.png" Caption=""%}
+![](/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img1.png" Caption=")
 
 _Before Drill Down_
 
-{% include image.html url="/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img2.png" Caption=""%}
+![](/js/TreeMap/Drill-Down-Support_images/Drill-Down-Support_img2.png" Caption=")
 
 _After Drill Down_
 

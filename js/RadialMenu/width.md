@@ -45,7 +45,10 @@ Add the following script in your code.
 
 The following screenshot illustrates the output while selecting the text in the page.
 
-{% include image.html url="width_images\width_img1.png" Caption="Selecting text in the page"%}
+![](width_images\width_img1.png)
+
+Selecting text in the page
+{:.caption}
 
 
 

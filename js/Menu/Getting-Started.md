@@ -12,7 +12,7 @@ documentation: ug
 This section explains briefly about how to create a **Menu** control in your application with **JavaScript**. The **Essential JavaScript** **Menu** supports displaying a **Menu** of list-out items. This **Menu** is based on ul-li hierarchy, where the sub-list items are rendered as the sub-menu items. The **Menu** control can also be rendered with local and remote data source.  From the following guidelines, you can learn how to customize the **Menu** control for a website. In this case, **Syncfusion’s** website **Menu** is discussed. The following screenshot displays the appearance of **Menu**.
 
 
-{% include image.html url="/js/Menu/Getting-Started_images/Getting-Started_img1.png" %}
+![](/js/Menu/Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a Menu
 
@@ -76,7 +76,7 @@ Initialize the **Menu** control in &lt;script&gt; tag.
 
 Output of the above steps.
 
-{% include image.html url="/js/Menu/Getting-Started_images/Getting-Started_img2.png" %}
+![](/js/Menu/Getting-Started_images/Getting-Started_img2.png) 
 
 ## Configure parent Menu items
 
@@ -139,7 +139,7 @@ Every **Menu** has a list of **Menu** items with list of sub level **Menu** item
 
 The following screenshot displays output.
 
-{% include image.html url="/js/Menu/Getting-Started_images/Getting-Started_img3.png" %}
+![](/js/Menu/Getting-Started_images/Getting-Started_img3.png) 
 
 ## Initialize sub-level Menu items
 
@@ -206,7 +206,7 @@ Execute the above code example to render the following output.
 
 
 
-{% include image.html url="/js/Menu/Getting-Started_images/Getting-Started_img4.png" %}
+![](/js/Menu/Getting-Started_images/Getting-Started_img4.png) 
 
 ## Define multiple level Menu items
 
@@ -274,7 +274,7 @@ The following screenshot is the output.
 
 
 
-{% include image.html url="/js/Menu/Getting-Started_images/Getting-Started_img5.png" %}
+![](/js/Menu/Getting-Started_images/Getting-Started_img5.png) 
 
 By following the above mentioned steps, you can render the **Menu** control with multiple level sub items through online data source. You can simply customize the **Menu** widget in an efficient manner.
 

@@ -89,5 +89,5 @@ In the HTML page, add a &lt;div&gt; element to configure Scroller widget.
 
 The following screenshot displays the **Scroller** control with scroll step value.
 
-{% include image.html url="/js/Scroller/Customizing-the-scroll-Step_images/Customizing-the-scroll-Step_img1.png"%}
+![](/js/Scroller/Customizing-the-scroll-Step_images/Customizing-the-scroll-Step_img1.png)
 

@@ -61,7 +61,7 @@ In an **HTML** page, add a **&lt;div&gt;** element to render it as a **Slider** 
 
 Execute the above code example to render the following output.
 
-{% include image.html url="/js/Slider/Orientation_images/Orientation_img1.png" %}
+![](/js/Slider/Orientation_images/Orientation_img1.png) 
 
 
 

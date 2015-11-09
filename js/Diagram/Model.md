@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Model
-description: model
+title: Represent the data to render the Diagram control
+description: How to represent the data to render the Diagram control?
 platform: js
 control: Diagram
 documentation: ug
@@ -9,20 +9,22 @@ documentation: ug
 
 # Model
 
-The Diagram model represents data for rendering the Diagram and manipulating the Diagram elements. The following code illustrates how to create a Diagram with some model properties.
+The Diagram model represents the data to render the Diagram and to manipulate the Diagram elements. The following code illustrates how to define Diagram model.
 
 {% highlight js %}
 
-//create diagram
+//Creates diagram
 $("#Diagram").ejDiagram({
-   //set diagram model properties
-   width: "100%",
-   height: "100%",
-   pageSettings: {
-      pageWidth: 2000,
-      pageHeight: 2000
-   }
+	//Sets Diagram model properties
+	width: "100%",
+	height: "100%",
+	pageSettings: {
+		pageWidth: 2000,
+		pageHeight: 2000
+	}
 });
 {% endhighlight %}
 
-{% include image.html url="/js/Diagram/Model_images/Model_img1.png" %}
+![](/js/Diagram/Model_images/Model_img1.png)
+
+To explore more model properties, refer to [Model Properties](/js/api/ejdiagram "members").

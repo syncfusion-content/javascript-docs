@@ -203,7 +203,7 @@ This feature allows you to add text along with the **image** in **Rotator** cont
 
 
 
-{% include image.html url="/js/Rotator/Image-with-Contents_images/Image-with-Contents_img1.png"%}
+![](/js/Rotator/Image-with-Contents_images/Image-with-Contents_img1.png)
 
 
 ## Display items
@@ -238,7 +238,7 @@ This property specifies the number of **Rotator** Items to be displayed. The def
 
 
 
-{% include image.html url="/js/Rotator/Image-with-Contents_images/Image-with-Contents_img2.png"%}
+![](/js/Rotator/Image-with-Contents_images/Image-with-Contents_img2.png)
 
 
 ### Navigate steps
@@ -270,7 +270,7 @@ This property specifies the number of **Rotator** Items to **navigate** on a sin
 
 
 
-{% include image.html url="/js/Rotator/Image-with-Contents_images/Image-with-Contents_img3.png"%}
+![](/js/Rotator/Image-with-Contents_images/Image-with-Contents_img3.png)
 
 ### Start index
 
@@ -289,7 +289,7 @@ This property sets the **index** of the slide that is displayed first. The defau
 
 
 
-{% include image.html url="/js/Rotator/Image-with-Contents_images/Image-with-Contents_img4.png" %}
+![](/js/Rotator/Image-with-Contents_images/Image-with-Contents_img4.png) 
 
 ### Frame space
 
@@ -408,4 +408,4 @@ Add the following code in your **Css**.
 
 
 
-{% include image.html url="/js/Rotator/Image-with-Contents_images/Image-with-Contents_img5.png"%}
+![](/js/Rotator/Image-with-Contents_images/Image-with-Contents_img5.png)

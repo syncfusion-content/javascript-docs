@@ -72,5 +72,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/LinearGauge/Exporting_images/Exporting_img1.png" Caption=""%}
+![](/js/LinearGauge/Exporting_images/Exporting_img1.png" Caption=")
 

@@ -60,5 +60,5 @@ We can load the contents or HTML elements directly inside the &lt;div&gt; elemen
 
 **Output:**
 
-{% include image.html url="/js/Tab/Template-Support_images/Template-Support_img1.png" %}
+![](/js/Tab/Template-Support_images/Template-Support_img1.png) 
 

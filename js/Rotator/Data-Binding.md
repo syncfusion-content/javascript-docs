@@ -84,7 +84,7 @@ This property retrieves data from remote data. This property is applicable only 
   {% endhighlight %}
 
 
-{% include image.html url="/js/Rotator/Data-Binding_images/Data-Binding_img1.png"%}
+![](/js/Rotator/Data-Binding_images/Data-Binding_img1.png)
 
 ## Knockout support
 
@@ -101,7 +101,7 @@ Two types of **Knockout** binding are supported,
 
 For more information about the **Knockout** binding, you can refer the online documentation in the following link location,
 
-<http://docs.syncfusion.com/js/knockoutjs>
+<http://help.syncfusion.com/js/knockoutjs>
 
 Add the following script files along with the given code to access Knockout binding. They have JS library for Knockout binding.
 
@@ -153,7 +153,7 @@ The following code example depicts the way to bind data to the **Rotator** throu
 
   {% endhighlight %}
 
-{% include image.html url="/js/Rotator/Data-Binding_images/Data-Binding_img2.png" %}
+![](/js/Rotator/Data-Binding_images/Data-Binding_img2.png) 
 
 ## Angular support
 
@@ -168,7 +168,7 @@ Rotator is availed with two types of angular JS support namely,
 
 To know more details about the **Angular** **binding**, you can refer the following link location,
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 Add the following script files as given in the following example to access Angular binding. They have JS library for angular binding.
 
@@ -230,5 +230,5 @@ The following code example depicts the way to bind data to the **Rotator** widge
 
 
 
-{% include image.html url="/js/Rotator/Data-Binding_images/Data-Binding_img3.png"%}
+![](/js/Rotator/Data-Binding_images/Data-Binding_img3.png)
 

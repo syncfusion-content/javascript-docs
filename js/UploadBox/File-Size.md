@@ -51,7 +51,7 @@ Initialize the **Uploadbox** using the following code example.
 
 To know about file action, we need to refer link:
 
-<http://docs.syncfusion.com/js/uploadbox/file-actions>
+<http://help.syncfusion.com/js/uploadbox/file-actions>
 
 The following screenshot displays **Uploadbox** control with customized file size.
 
@@ -59,13 +59,13 @@ When you want to browse the file within the fileSize, you can browse and upload 
 
 
 
-{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img1.png" %}
+![](/js/UploadBox/File-Size_images/File-Size_img1.png) 
 
 When you try to browse the file with exceeded fileSize, we cannot browse and upload the files.
 
 
 
-{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img2.png" %}
+![](/js/UploadBox/File-Size_images/File-Size_img2.png) 
 
 ## Maximum File Upload Size in IIS
 
@@ -157,7 +157,7 @@ You can add the following code to your **web.config** file in order to set that 
 N> maxAllowedContentLength is measured in bytes.
 
 
-{% include image.html url="/js/UploadBox/File-Size_images/File-Size_img4.png" %}
+![](/js/UploadBox/File-Size_images/File-Size_img4.png) 
                        
 
 N> * When you configure both maxAllowedContentLength, maxRequestLength attributes, then maxAllowedContentLength is considered for execution.

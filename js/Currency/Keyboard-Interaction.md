@@ -62,7 +62,7 @@ Run the above example and press [Access key](http://en.wikipedia.org/wiki/Access
 
 
 
-{% include image.html url="/js/Currency/Keyboard-Interaction_images/Keyboard-Interaction_img1.png" %}
+![](/js/Currency/Keyboard-Interaction_images/Keyboard-Interaction_img1.png) 
 
 
 

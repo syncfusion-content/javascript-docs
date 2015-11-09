@@ -86,7 +86,7 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 Output of the above steps
 
-{% include image.html url="/js/DropDownList/Behaviour-Settings_images/Behaviour-Settings_img1.png" %}
+![](/js/DropDownList/Behaviour-Settings_images/Behaviour-Settings_img1.png) 
 
 ## Select the value by index
 
@@ -129,7 +129,7 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList  widget
 Output of the above steps
 
 
-{% include image.html url="/js/DropDownList/Behaviour-Settings_images/Behaviour-Settings_img2.png" %}
+![](/js/DropDownList/Behaviour-Settings_images/Behaviour-Settings_img2.png) 
 
 ## Show Popup on load
 
@@ -208,7 +208,7 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget
 
 Output of the above steps
 
-{% include image.html url="/js/DropDownList/Behaviour-Settings_images/Behaviour-Settings_img3.png" %}
+![](/js/DropDownList/Behaviour-Settings_images/Behaviour-Settings_img3.png) 
 
 ## Read-only
 
@@ -289,7 +289,7 @@ In an HTML page, add a &lt;input&gt; element to configure DropdownList widget.
 Output of the above steps 
 
 
-{% include image.html url="/js/DropDownList/Behaviour-Settings_images/Behaviour-Settings_img4.png" %}
+![](/js/DropDownList/Behaviour-Settings_images/Behaviour-Settings_img4.png) 
 
 ## Persistence support 
 

@@ -41,7 +41,7 @@ documentation: ug
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img1.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img1.png" Caption=")
 
 ## Adding Pointer Value
 
@@ -82,7 +82,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img2.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img2.png" Caption=")
 
 ## Pointer Styles
 
@@ -130,7 +130,7 @@ The Pointers border is modified with the object called **border** as in scales. 
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img3.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img3.png" Caption=")
 
 **Appearance**
 
@@ -177,7 +177,7 @@ Based on the value, the**pointer** point out the label value. You can set the po
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img4.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img4.png" Caption=")
 
 **Position the pointer**
 
@@ -238,7 +238,7 @@ $(function() {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img5.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img5.png" Caption=")
 
 **Types**
 
@@ -371,7 +371,7 @@ In this type, needle pointer is completely replaced by image. We can implement i
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img10.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img10.png" Caption=")
 
 
 **Marker Image**
@@ -445,7 +445,7 @@ In this type, marker pointer is completely replaced by image. We can implement i
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img11.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img11.png" Caption=")
 
 
 **Marker Pointer with Image**
@@ -508,7 +508,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img12.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img12.png" Caption=")
 
 
 ## Multiple Pointers
@@ -564,7 +564,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img6.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img6.png" Caption=")
 
 ## Pointer Value Text
 
@@ -616,7 +616,7 @@ You can position the **Circular Gauge** pointer value with the gauge as center b
 
 Run the above code to render the output as follows.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img7.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img7.png" Caption=")
 
 ## Appearance
 
@@ -680,7 +680,7 @@ Appearance of the **Circular Gauge****pointer value text** is adjusted by using 
 
 Run the above code to render the output as follows.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img8.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img8.png" Caption=")
 
 ## Font Options
 
@@ -737,5 +737,5 @@ Similar to other collection, font option is also available in this pointer value
 
 Run the above code to render the output as follows.
 
-{% include image.html url="/js/CircularGauge/Pointers_images/Pointers_img9.png" Caption=""%}
+![](/js/CircularGauge/Pointers_images/Pointers_img9.png" Caption=")
 

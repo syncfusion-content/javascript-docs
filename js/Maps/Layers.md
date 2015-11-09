@@ -9,19 +9,19 @@ documentation: ug
 
 # Layers
 
-Map is maintained through Layers and it can accommodate one or more layers.
+Map is maintained through `layers` and it can accommodate one or more layers.
 
-##Multilayers
+## Multilayers
 
 The Multilayer support allows you to load multiple shape files in a single container, enabling maps to display more information.
 
-###Adding Multiple Layers in the Map
+### Adding Multiple Layers in the Map
 
-The shape layers is the core layer of the map. The multiple layers can be added in the shape Layers as `subLayers` within the shape Layers.
+The shape layers is the core layer of the map. The multiple layers can be added in the shape layers as `subLayers` within the shape layers.
 
-##SubLayer
+## SubLayer
 
-The subLayer is the collection of shape Layers. 
+The subLayer is the collection of shape layers. 
 
 In this example, World Map shape is used as shape data by utilizing the “**WorldMap.json**” file in the following folder structure obtained from downloaded Maps_GeoJSON folder.
 
@@ -65,5 +65,5 @@ You can assign the complete contents in “**WorldMap.json**” file to new JSON
 {% endhighlight %}
 
 
-{% include image.html url="/js/Maps/Layers_images/Layers_img1.png"%}
+![](/js/Maps/Layers_images/Layers_img1.png)
 

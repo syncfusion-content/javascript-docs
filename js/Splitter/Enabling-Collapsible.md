@@ -49,11 +49,11 @@ In the **HTML** page set the **&lt;div&gt;** element to render **Splitter** cont
 
 The output for **Splitter** when **collapsible** is set to “**True**” is as follows.
 
-{% include image.html url="/js/Splitter/Enabling-Collapsible_images/Enabling-Collapsible_img1.png" %}
+![](/js/Splitter/Enabling-Collapsible_images/Enabling-Collapsible_img1.png) 
 
 The output for Splitter when **collapsible** is “**false**”.
 
-{% include image.html url="/js/Splitter/Enabling-Collapsible_images/Enabling-Collapsible_img2.png" %}
+![](/js/Splitter/Enabling-Collapsible_images/Enabling-Collapsible_img2.png) 
 
 
 

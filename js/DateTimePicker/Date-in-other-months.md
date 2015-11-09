@@ -35,5 +35,5 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
   
-{% include image.html url="/js/DateTimePicker/Date-in-other-months_images/Date-in-other-months_img1.png"%}
+![](/js/DateTimePicker/Date-in-other-months_images/Date-in-other-months_img1.png)
 

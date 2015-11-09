@@ -29,7 +29,7 @@ $("#rangecontainer").ejRangeNavigator(
 {% endhighlight %}
 
 
-{% include image.html url="/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img1.png" %}
+![](/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img1.png) 
 
 
 #### Handle Events
@@ -103,7 +103,7 @@ You can easily update the data for chart by assigning the **zoomFactor** and **z
 
 
 
-{% include image.html url="/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img2.png" %}
+![](/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img2.png) 
 
 #### Thumb Template
 
@@ -142,4 +142,4 @@ You can customize Thumb template by using **leftThumbTemplate** and **rightThumb
 
 The following screenshot displays the **RangeNavigator** using thumb template.
 
-{% include image.html url="/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img3.png" %}
+![](/js/RangeNavigator/Behavior-Customization_images/Behavior-Customization_img3.png) 

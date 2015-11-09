@@ -94,7 +94,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Filtering_images/Filtering_img1.png" %}
+![](/js/DataManager/Filtering_images/Filtering_img1.png) 
 
 
 ##greaterThan
@@ -153,7 +153,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Filtering_images/Filtering_img2.png" %}
+![](/js/DataManager/Filtering_images/Filtering_img2.png) 
 
 ##lessThanOrEqual
 
@@ -215,7 +215,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Filtering_images/Filtering_img3.png" %}
+![](/js/DataManager/Filtering_images/Filtering_img3.png) 
 
 
 ##greaterThanOrEqual
@@ -276,7 +276,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Filtering_images/Filtering_img4.png" %}
+![](/js/DataManager/Filtering_images/Filtering_img4.png) 
 
 ##equal
 
@@ -333,7 +333,7 @@ This operator is used to get the records with values equal to that of the filter
 
 Result of the above code example is illustrated as follows.
 
-{% include image.html url="/js/DataManager/Filtering_images/Filtering_img5.png" %}
+![](/js/DataManager/Filtering_images/Filtering_img5.png) 
 
 ##notEqual
 
@@ -391,7 +391,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Filtering_images/Filtering_img6.png" %}
+![](/js/DataManager/Filtering_images/Filtering_img6.png) 
 
 
 ##contains
@@ -454,7 +454,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Filtering_images/Filtering_img7.png" %}
+![](/js/DataManager/Filtering_images/Filtering_img7.png) 
 
 ##startswith
 
@@ -513,7 +513,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Filtering_images/Filtering_img8.png" %}
+![](/js/DataManager/Filtering_images/Filtering_img8.png) 
 
 ##endswith
 
@@ -572,7 +572,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Filtering_images/Filtering_img9.png" %}
+![](/js/DataManager/Filtering_images/Filtering_img9.png) 
 
 ##and predicate
 
@@ -633,7 +633,7 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Filtering_images/Filtering_img10.png" %}
+![](/js/DataManager/Filtering_images/Filtering_img10.png) 
 
 ##or predicate
 
@@ -695,5 +695,5 @@ Result of the above code example is illustrated as follows.
 
 
 
-{% include image.html url="/js/DataManager/Filtering_images/Filtering_img11.png" %}
+![](/js/DataManager/Filtering_images/Filtering_img11.png) 
 

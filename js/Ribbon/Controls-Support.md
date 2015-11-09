@@ -61,8 +61,8 @@ The default type is **button**.
 			    $("#Ribbon").ejRibbon({
 			        width: 800,
 			        applicationTab: {
-			            Type: "ApplicationMenu",
-			            itemID: "menu",
+			            type: ej.Ribbon.applicationTabType.menu,
+			            menuItemID: "menu",
 			            menuSettings: {
 			                openOnClick: false
 			            }
@@ -215,5 +215,5 @@ The default type is **button**.
 
 The following output is displayed as a result of the above code example.
 
-{% include image.html url="/js/Ribbon/Controls-Support_images/Controls-Support_img1.png"%}
+![](/js/Ribbon/Controls-Support_images/Controls-Support_img1.png)
 

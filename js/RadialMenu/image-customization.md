@@ -99,11 +99,17 @@ Add the following styles in your code.
 
 The following screenshot illustrates the output.
 
-{% include image.html url="image-customization_images\image-customization_img1.png" Caption="Radial Menu - Image Customization – Main menu"%}
+![](image-customization_images\image-customization_img1.png)
+
+Radial Menu - Image Customization – Main menu
+{:.caption}
 
 When you click the arrow, it navigates to the child item as illustrated in the following screenshot.
 
-{% include image.html url="image-customization_images\image-customization_img2.png" Caption="Radial Menu- Image Customization – Child menu "%}
+![](image-customization_images\image-customization_img2.png)
+
+Radial Menu- Image Customization – Child menu 
+{:.caption}
 
 
 

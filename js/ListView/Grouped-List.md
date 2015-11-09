@@ -56,7 +56,7 @@ Add the following script in your code.
 
 Run the codes to get the following output
 
-{% include image.html url="/js/ListView/Grouped-List_images/Grouped-List_img1.png" %}
+![](/js/ListView/Grouped-List_images/Grouped-List_img1.png) 
 
 
 **Nested Child Group List**
@@ -112,5 +112,5 @@ Add the following script in your code.
 
 Run the codes to get the following output
 
-{% include image.html url="/js/ListView/Grouped-List_images/Grouped-List_img2.png" %}
+![](/js/ListView/Grouped-List_images/Grouped-List_img2.png) 
 

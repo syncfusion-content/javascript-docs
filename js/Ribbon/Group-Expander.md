@@ -65,7 +65,7 @@ The **Ribbon** control has group expander support. Set **enableGroupExpander** v
 		    $("#Ribbon").ejRibbon({
 		        width: "700px",
 		        applicationTab: {
-		            Type: "ApplicationMenu",
+		            type: ej.Ribbon.applicationTabType.menu,
 		            itemID: "menu",
 		            menuSettings: {
 		                openOnClick: false
@@ -190,5 +190,5 @@ The **Ribbon** control has group expander support. Set **enableGroupExpander** v
 
 The following screenshot illustrates the group New with the group expander.
 
-{% include image.html url="/js/Ribbon/Group-Expander_images/Group-Expander_img1.png"%}
+![](/js/Ribbon/Group-Expander_images/Group-Expander_img1.png)
 

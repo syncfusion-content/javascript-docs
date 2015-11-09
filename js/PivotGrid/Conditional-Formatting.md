@@ -11,7 +11,7 @@ documentation: ug
 
 Conditional formatting in the PivotGrid control allows you to define conditions on meeting that the cells are formatted with font, color and border settings. Conditional formatting dialog provides options at the UI-level to customize the appearance of the PivotGrid when conditions are satisfied. 
 
-{% include image.html url="/js/PivotGrid/Conditional-Formatting_images/Conditional-Formatting_img1.png" %}
+![](/js/PivotGrid/Conditional-Formatting_images/Conditional-Formatting_img1.png) 
 
 Conditional formatting dialog can be launched by clicking a simple button in the application. The following code example illustrates how to launch the conditional formatting dialog.
 
@@ -47,4 +47,4 @@ The PivotGrid below is formatted with the following three conditions:
 * Value > 5000000 is marked in yellow.
 
 
-{% include image.html url="/js/PivotGrid/Conditional-Formatting_images/Conditional-Formatting_img2.png" %}
+![](/js/PivotGrid/Conditional-Formatting_images/Conditional-Formatting_img2.png) 

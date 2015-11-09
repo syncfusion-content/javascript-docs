@@ -92,7 +92,7 @@ Add the **cssClass** property to TreeView.
 
 The following screenshot displays the **TreeView** component, configured based on CSS class.
 
-{% include image.html url="/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img1.png"%}
+![](/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 ## Adjusting TreeView Size
 
@@ -159,7 +159,7 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 The following screenshot displays the appearance of **height** of the **TreeView** component.
 
-{% include image.html url="/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img2.png"%}
+![](/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 ### Width
 
@@ -223,5 +223,5 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 The following screenshot displays the appearance of width of the **TreeView** component.
 
-{% include image.html url="/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img3.png"%}
+![](/js/TreeView/Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 

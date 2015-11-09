@@ -48,5 +48,5 @@ Add the following script in your code.
 
 Run the code to get the following output
 
-{% include image.html url="/js/ListView/Dimensions_images/Dimensions_img1.png" %}
+![](/js/ListView/Dimensions_images/Dimensions_img1.png) 
 

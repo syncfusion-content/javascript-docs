@@ -202,6 +202,6 @@ DataManager.OverrideDefaultFormatStrings = true;
 
 The following screenshot displays the **OlapGauge** with French localization.
 
-{% include image.html url="/js/OlapGauge/Localization-and-Translation-Support_images/Localization-and-Translation-Support_img1.png" %}
+![](/js/OlapGauge/Localization-and-Translation-Support_images/Localization-and-Translation-Support_img1.png) 
 
 

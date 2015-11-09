@@ -15,7 +15,7 @@ This section explains briefly about how to create a **TreeView** in your applica
 
 The **Essential JavaScript TreeView** property represents hierarchical data in a tree-like structure. **TreeView** allows you to edit, drag items to other **TreeView**, add check boxes, etc. You can refer the following section, to customize **TreeView** in a real time Mail Box Scenario that helps you to show items in a Mailbox with necessary features of **TreeView** property. The following screenshot demonstrates the functions of **TreeView** property with Drag and Drop option.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img1.png"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img1.png)
 
 In the above screenshot, you can select the mailbox items. You can write the functions of the corresponding selected item.You can also Drag and Drop the item from one group to another with the help of **Drag and Drop** feature. You can use **splitter** control to split the mail options and its corresponding functions.
 
@@ -90,7 +90,7 @@ Create an HTML file and add the following template in your application.
 
  Execute the code example to render the following output.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img2.png"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img2.png)
 
 **Configure TreeView inside the Splitter widget** 
 
@@ -171,7 +171,7 @@ Add the **TreeView** initialization script inside the script section.
 
 Execute the code example to render the following output.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img3.png"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img3.png)
 
 **Configure Data Source**
 
@@ -219,7 +219,7 @@ Create a **JSON** Data Source for **TreeView** and initialize as follows.
 
 Execute this code example to render **TreeView** with **JSON** Data Source.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img4.png"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img4.png)
 
 **Configure TreeView with Sprite Icons**
 
@@ -348,7 +348,7 @@ Create a **JSON** Data Source for **TreeView** and initialize as follows.
 
 Execute the code example to render **TreeView** with Mail Icons.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img5.png"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img5.png)
 
 **Set the Node Editing Option**
 
@@ -388,7 +388,7 @@ N> Refer to the previous example for datasource
 
 Execute this code example to render node editing.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img6.png"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img6.png)
 
 **Set the Drag and Drop Option** 
 
@@ -471,11 +471,11 @@ N> Refer to the previous example for datasource
 
 Execute the code example to render **TreeView**. When you select the mail folder in the **TreeView,** the corresponding action takes place by raising the **select** event. 
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img7.png"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img7.png)
 
 N> The inline edit validation is done on the rising of “inlineEditValidation” event as in the screenshot as follows. The “inlineEditValidation” event rises only when the “allowEdit” property is set to True.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img8.png"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img8.png)
 
 ### Add or Delete the Folders using Context Menu 
 
@@ -558,17 +558,29 @@ N> Refer to the previous example for datasource.
 
 The following screenshot displays adding a new folder in the **TreeView** using the **Context Menu**. You can right-click on the **TreeView** Node and select the new folder option in the **Context Menu** for the selected folder. A new folder is added as the child of the **Drafts** folder.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img9.png" Caption="TreeView with context menu"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img9.png)
+
+TreeView with context menu
+{:.caption}
 
 The following screenshot illustrates adding a new folder under the **Drafts** folder. 
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img10.png" Caption="TreeView with new folder"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img10.png)
+
+TreeView with new folder
+{:.caption}
 
 The following screenshot illustrates the deleting of new folder that is created as a child of the Forums folder. You can right-click on the **New Folder1** and select the **Delete Folder** option in the **Context Menu**.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img11.png" Caption="TreeView before deleting a folder"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img11.png)
+
+TreeView before deleting a folder
+{:.caption}
 
 The following screenshot displays the **TreeView** after deleting the folder that is created.
 
-{% include image.html url="/js/TreeView/Getting-Started_images/Getting-Started_img12.png" Caption="TreeView after deleting the New Folder1"%}
+![](/js/TreeView/Getting-Started_images/Getting-Started_img12.png)
+
+TreeView after deleting the New Folder1
+{:.caption}
 

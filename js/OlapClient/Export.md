@@ -11,7 +11,7 @@ documentation: ug
 
 Content in the OLAP Client control can be exported to Excel, Word and PDF documents.
 
-{% include image.html url="/js/OlapClient/Export_images/Export_img1.png" %}
+![](/js/OlapClient/Export_images/Export_img1.png) 
 
 Exporting feature comes with a mode option that allows you to export either OlapChart or PivotGrid or both. The following code example illustrates the same. 
 
@@ -47,10 +47,19 @@ public void Export(Stream stream)
 
 {% endhighlight %}
 
-{% include image.html url="/js/OlapClient/Export_images/Export_img2.png" Caption="Exported OlapClient in Excel worksheet"%}
+![](/js/OlapClient/Export_images/Export_img2.png)
 
-{% include image.html url="/js/OlapClient/Export_images/Export_img3.png" Caption="Exported OlapClient in Word document"%}
+Exported OlapClient in Excel worksheet
+{:.caption}
 
-{% include image.html url="/js/OlapClient/Export_images/Export_img4.png" Caption="Exported OlapClient in PDF document"%}
+![](/js/OlapClient/Export_images/Export_img3.png)
+
+Exported OlapClient in Word document
+{:.caption}
+
+![](/js/OlapClient/Export_images/Export_img4.png)
+
+Exported OlapClient in PDF document
+{:.caption}
 
 

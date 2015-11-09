@@ -13,7 +13,7 @@ This section explains briefly about how to create a **Checkbox** in your applica
 
 
 
-{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img1.png" %}
+![](/js/Checkbox/Getting-Started_images/Getting-Started_img1.png) 
 
 In the above screenshot, you can select Hobbies, Interests list and Social networks Receiving App using Checkbox, **Tri-state** **Checkbox** and perform the action to render the checked values when the button is clicked.
 
@@ -183,7 +183,7 @@ Initialize **Checkbox** in script.
 The following screenshot displays a **Checkbox** control.
 
 
-{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img3.png" %}
+![](/js/Checkbox/Getting-Started_images/Getting-Started_img3.png) 
 
 ## File Selection in Media Player
 
@@ -285,5 +285,5 @@ Add the following code in the **&lt;body&gt;** element of the corresponding view
 
 Execute the code to render the resultant output.
 
-{% include image.html url="/js/Checkbox/Getting-Started_images/Getting-Started_img4.png" %}
+![](/js/Checkbox/Getting-Started_images/Getting-Started_img4.png) 
 

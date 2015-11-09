@@ -53,7 +53,7 @@ The following code example describes how to customize the display of view option
 
 The following screenshot displays the output of the above code with the view customizations by displaying only two views namely **Week** and **Workweek** in the toolbar.
 
-{% include image.html url="/js/Schedule/Views_images/Views_img1.png" Caption=""%}
+![](/js/Schedule/Views_images/Views_img1.png" Caption=")
 
 
 **Current View**
@@ -101,7 +101,7 @@ The following code example explains how to change the current view of the **Sche
 
 Execute the above code to render the following screenshot that displays **day** view as the **currentView** of the **Schedule** control,
 
-{% include image.html url="/js/Schedule/Views_images/Views_img2.png" Caption=""%}
+![](/js/Schedule/Views_images/Views_img2.png" Caption=")
 
 **Custom Date Rendering**
 
@@ -148,7 +148,7 @@ Execute the above code to render the following screenshot that displays **day** 
 
 The output of the above code example is as follows.
 
-{% include image.html url="/js/Schedule/Views_images/Views_img3.png" Caption=""%}
+![](/js/Schedule/Views_images/Views_img3.png" Caption=")
 
 
 N> **Important**: When the date ranges are specified in the renderDates property, they yield more than the difference of 7 days. The schedule is then rendered in the month-like view with the provided dates. When the date difference yields lesser than 7, then the schedule gets rendered in the normal view with the specified dates.

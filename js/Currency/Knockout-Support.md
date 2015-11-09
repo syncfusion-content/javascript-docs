@@ -20,7 +20,7 @@ documentation: ug
 
 For more information about the **knockout binding**, refer the following online documentation in the given link location,
 
-<http://docs.syncfusion.com/js/knockoutjs>
+<http://help.syncfusion.com/js/knockoutjs>
 
 The following example depicts the way to bind data to the CurrencyTextBox widgets through **knockout** **support** that enables and populates data to the CurrencyTextBox widget based on the value set to the other **CurrencyTextBox** widget.
 
@@ -89,9 +89,15 @@ The output of **Knockout binding** in **CurrencyTextBox** .
 
 
 
-{% include image.html url="/js/Currency/Knockout-Support_images/Knockout-Support_img1.png" Caption="CurrencyTextBox at initial load"%}
+![](/js/Currency/Knockout-Support_images/Knockout-Support_img1.png)
+
+CurrencyTextBox at initial load
+{:.caption}
 
 
 
-{% include image.html url="/js/Currency/Knockout-Support_images/Knockout-Support_img2.png" Caption="CurrencyTextBox with knockout binding"%}
+![](/js/Currency/Knockout-Support_images/Knockout-Support_img2.png)
+
+CurrencyTextBox with knockout binding
+{:.caption}
 

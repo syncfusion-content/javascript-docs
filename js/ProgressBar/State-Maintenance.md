@@ -43,5 +43,5 @@ In the **HTML** page, add a **&lt;div&gt;** element to render the ProgressBar wi
 
 The following screenshot displays the output.
 
-{% include image.html url="/js/ProgressBar/State-Maintenance_images/State-Maintenance_img1.png" %}
+![](/js/ProgressBar/State-Maintenance_images/State-Maintenance_img1.png) 
 

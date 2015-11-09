@@ -22,7 +22,7 @@ Apply the plugin and property assigning to the CurrencyTextBox widget element th
 
 To know more details about the **Angular binding**, refer the following link location,
 
-<http://docs.syncfusion.com/js/angularjs>
+<http://help.syncfusion.com/js/angularjs>
 
 The following example depicts the way to bind data to the **CurrencyTextBox** widget through **angular support**.
 
@@ -86,7 +86,13 @@ The following example depicts the way to bind data to the **CurrencyTextBox** wi
 
 The output of **CurrencyTextBox** controls with **two-way angular binding** is as follows.
 
-{% include image.html url="/js/Currency/Angular-Support_images/Angular-Support_img1.png" Caption="CurrencyTextBox at initial load"%}
+![](/js/Currency/Angular-Support_images/Angular-Support_img1.png)
 
-{% include image.html url="/js/Currency/Angular-Support_images/Angular-Support_img2.png" Caption="CurrencyTextBox with Angular Binding"%}
+CurrencyTextBox at initial load
+{:.caption}
+
+![](/js/Currency/Angular-Support_images/Angular-Support_img2.png)
+
+CurrencyTextBox with Angular Binding
+{:.caption}
 

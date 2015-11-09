@@ -15,7 +15,7 @@ This section explains briefly how to create a **Ribbon** in your application wi
 
 The **Ribbon** can be easily configured to the DOM element such as **&lt;div&gt;**. You can create a Ribbon with a highly customizable look and feel. The Ribbon control displays the controls in multiple tabs. This section explains the ribbon tabs, adding controls to the groups, expand/collapse ribbon option, and the control separator.
 
-{% include image.html url="/js/Ribbon/Getting-Started_images/Getting-Started_img1.png"%}
+![](/js/Ribbon/Getting-Started_images/Getting-Started_img1.png)
 
 Create a HTML file and add the following references to the required libraries.
 
@@ -78,8 +78,8 @@ Create the **ejRibbon** widget as follows. The width property allows you to def
 		    $("#Ribbon").ejRibbon({
 		        width: "500px",
 		        applicationTab: {
-		            Type: "ApplicationMenu",
-		            itemID: "menu",
+		            type: ej.Ribbon.applicationTabType.menu,
+		            menuItemID: "menu",
 		            menuSettings: {
 		                openOnClick: false
 		            }
@@ -124,7 +124,7 @@ Create the **ejRibbon** widget as follows. The width property allows you to def
 
 The following screenshot illustrates the **Ribbon** control.
 
-{% include image.html url="/js/Ribbon/Getting-Started_images/Getting-Started_img2.png"%}
+![](/js/Ribbon/Getting-Started_images/Getting-Started_img2.png)
 
 ## Add Controls
 
@@ -187,8 +187,8 @@ The default **alignType** is rows.
 			    $("#Ribbon").ejRibbon({
 			        width: "800px",
 			        applicationTab: {
-			            Type: "ApplicationMenu",
-			            itemID: "menu",
+			            type: "ApplicationMenu",
+			            menuItemID: "menu",
 			            menuSettings: {
 			                openOnClick: false
 			            }
@@ -298,17 +298,17 @@ The default **alignType** is rows.
 
 The following screenshot illustrates **Ribbon** with controls.
 
-{% include image.html url="/js/Ribbon/Getting-Started_images/Getting-Started_img3.png"%}
+![](/js/Ribbon/Getting-Started_images/Getting-Started_img3.png)
 
 ## Expand/Collapse
 
 The **Ribbon** has **expand/collapse** support. The following screenshot illustrates **Ribbon** in the expanded state,
 
-{% include image.html url="/js/Ribbon/Getting-Started_images/Getting-Started_img4.png"%}
+![](/js/Ribbon/Getting-Started_images/Getting-Started_img4.png)
 
 The following screenshot illustrates **Ribbon** in the collapsed state.
 
-{% include image.html url="/js/Ribbon/Getting-Started_images/Getting-Started_img5.png"%}
+![](/js/Ribbon/Getting-Started_images/Getting-Started_img5.png)
 
 ## Separator for Controls
 
@@ -368,8 +368,8 @@ The **Ribbon** control has control separator support. Set enableSeparator value 
 		     $("#Ribbon").ejRibbon({
 		         width: "700px",
 		         applicationTab: {
-		             Type: "ApplicationMenu",
-		             itemID: "menu",
+		             type: ej.Ribbon.applicationTabType.menu,
+		             menuItemID: "menu",
 		             menuSettings: {
 		                 openOnClick: false
 		             }
@@ -493,5 +493,5 @@ The **Ribbon** control has control separator support. Set enableSeparator value 
 
 The following screenshot illustrates the control separator after the **Italic** Button control.
 
-{% include image.html url="/js/Ribbon/Getting-Started_images/Getting-Started_img6.png"%}
+![](/js/Ribbon/Getting-Started_images/Getting-Started_img6.png)
 

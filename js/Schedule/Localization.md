@@ -437,7 +437,7 @@ N> **Important**: An important note while making use of localization in the sche
 
 Once the **fr-Fr** culture is set to the **Schedule** control, the **Schedule** control with localization applied is displayed as follows.
 
-{% include image.html url="/js/Schedule/Localization_images/Localization_img1.png" Caption=""%}
+![](/js/Schedule/Localization_images/Localization_img1.png" Caption=")
 
 
 **RTL**
@@ -482,5 +482,5 @@ $(function () {
 
 When the **rtl** is set to "true", the **Schedule** control is displayed as follows.
 
-{% include image.html url="/js/Schedule/Localization_images/Localization_img2.png" Caption=""%}
+![](/js/Schedule/Localization_images/Localization_img2.png" Caption=")
 

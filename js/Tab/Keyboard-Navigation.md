@@ -90,5 +90,5 @@ Add the following **HTML** to render **Tab** with **keyboard** navigation.
 
 The following screenshot illustrates the **Tab** with **keyboard** navigation.
 
-{% include image.html url="/js/Tab/Keyboard-Navigation_images/Keyboard-Navigation_img1.png" %}
+![](/js/Tab/Keyboard-Navigation_images/Keyboard-Navigation_img1.png) 
 

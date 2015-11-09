@@ -50,7 +50,7 @@ Add the following **HTML** for simple **Tab** creation with **Close** **Button**
 
 The following screenshot illustrates the **Tab** with **Close** **Button**. 
 
-{% include image.html url="/js/Tab/Behavior-Settings_images/Behavior-Settings_img1.png" %}
+![](/js/Tab/Behavior-Settings_images/Behavior-Settings_img1.png) 
 
 ## Orientation
 
@@ -94,7 +94,7 @@ Add the following **HTML** for **Tab** orientation.
 
 The following screenshot illustrates the sub **Tab** with vertical orientation. 
 
-{% include image.html url="/js/Tab/Behavior-Settings_images/Behavior-Settings_img2.png" %}
+![](/js/Tab/Behavior-Settings_images/Behavior-Settings_img2.png) 
 
 ## State Maintenance
 
@@ -138,11 +138,17 @@ Add the following **HTML** for **Tab** **state** **maintenance**.
 
 The following screenshot illustrates the **Tab** with **State** **maintenance**.
 
-{% include image.html url="/js/Tab/Behavior-Settings_images/Behavior-Settings_img3.png" Caption="State before page refresh"%}
+![](/js/Tab/Behavior-Settings_images/Behavior-Settings_img3.png)
+
+State before page refresh
+{:.caption}
 
 
 
 
 
-{% include image.html url="/js/Tab/Behavior-Settings_images/Behavior-Settings_img4.png" Caption="State after page refresh"%}
+![](/js/Tab/Behavior-Settings_images/Behavior-Settings_img4.png)
+
+State after page refresh
+{:.caption}
 

@@ -50,5 +50,5 @@ In the **HTML** page set the corresponding **&lt;input&gt;** elements for render
 
 The output for **PercentageTextBox** when **enableRTL** is **“true”** is as follows. 
 
-{% include image.html url="/js/PercentageTextBox/RTL-Support_images/RTL-Support_img1.png" %}
+![](/js/PercentageTextBox/RTL-Support_images/RTL-Support_img1.png) 
 

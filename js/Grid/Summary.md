@@ -1,231 +1,345 @@
 ---
 layout: post
-title: Summary
-description: summary 
+title: Summary with Grid widget for Syncfusion Essential JS
+description: How to enable summary and its functionalities
 platform: js
 control: Grid
 documentation: ug
 ---
+# Summary
 
-# Summary 
+Summary rows visibility can be controlled by [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary "showSummary") property and it can be added to grid by using [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows "summaryRows") array property. The example snippet is follows
 
-**Summary** is a key feature of **Grid** that is used to aggregate a particular column. This is useful to analyse the details of a particular column. It has the following types:
+{% highlight html %}
+
+<div id="Grid"></div>
+<script type="text/javascript">
+  $("#Grid").ejGrid({
+     // the datasource "window.gridData" is referred from jsondata.min.js
+      dataSource: window.gridData,
+      showSummary: true,
+      summaryRows: [{
+          title: "Sum",
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.Sum,
+              displayColumn: "Freight",
+              dataMember: "Freight",
+              format: "{0:C2}"
+          }]
+      }],
+      allowPaging: true,
+      columns: [
+          { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+          {field: "EmployeeID",headerText: "Employee ID",editType: ej.Grid.EditingType.NumericEdit,textAlign: ej.TextAlign.Right,width: 80 },
+          {field: "ShipCity",headerText: "Ship City",width: 90},
+          {field: "ShipCountry",headerText: "Ship Country", width: 100},
+          { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" }
+      ]
+  });
+  
+</script>
+{% endhighlight %}
+
+![](Summary_images/summaryGrid_img1.png)
+
+
+## Supported Aggregates 
+
+Following are the supported list of [aggregates](http://help.syncfusion.com/js/datamanager/summary#) 
 
 * Sum
-* Average 
-* Count
-* Minimum
+* Average
 * Maximum
-* Custom
+* Minimum
+* False Count
+* True Count
 
-## Default Summary
+### Sum, Average, Maximum and minimum
 
-There are some default summary types available for basic summary formula. The following code example is for Default Summary Types. We can render summary rows using [`showSummary`](/js/api/ejgrid#members:showsummary "showSummary") and [`summaryRows`](/js/api/ejgrid#members:summaryrows "summaryRows") property in **ejGrid.**
+
+Summaries with [`Sum`](http://help.syncfusion.com/js/datamanager/summary#sum "sum"),[`Average`](http://help.syncfusion.com/js/datamanager/summary#avg "Average"),[`Maximum`](http://help.syncfusion.com/js/datamanager/summary#max "maximum") and [`Minimum`](http://help.syncfusion.com/js/datamanager/summary#min "min") aggregate can be defined by using  [`summaryType`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") in [`summaryColumns`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collections. These aggregate are used in `Number` column.
 
 {% highlight html %}
-
-
 <div id="Grid"></div>
 <script type="text/javascript">
-  $(function () {
-      $("#Grid").ejGrid({
-          /// the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          showSummary: true,
-          pageSettings: { pageSize: 5 },
-          summaryRows: [
-               { title: "Sum", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
-               { title: "Average", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}" }] },
-          ],
-          columns: [
-                     { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
-                     { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 80 },
-                     { field: "ShipCity", headerText: "Ship City", width: 90 },
-                     { field: "ShipName", headerText: "Ship Name", width: 110 },
-                     { field: "ShipCountry", headerText: "Ship Country", width: 100 },
-                     { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" }
+  $("#Grid").ejGrid({
+      /// the datasource "window.gridData" is referred from jsondata.min.js
+      dataSource: window.gridData,
+      showSummary: true,
+      summaryRows: [{
+          title: "Sum",
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.Sum,
+              displayColumn: "Freight",
+              dataMember: "Freight",
+              format: "{0:C2}"
+          }]
+      }, {
+          title: "Average",
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.Average,
+              displayColumn: "Freight",
+              dataMember: "Freight",
+              format: "{0:C2}"
+          }]
+      }, {
+          title: "Maximum",
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.Maximum,
+              displayColumn: "Freight",
+              dataMember: "Freight",
+              format: "{0:C2}"
+          }]
+      }, {
+          title: "Minimum",
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.Minimum,
+              displayColumn: "Freight",
+              dataMember: "Freight",
+              format: "{0:C2}"
+          }]
+      }],
+      allowPaging: true,
+      columns:
+          [
+              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+              { field: "EmployeeID", headerText: "Employee ID", editType: ej.Grid.EditingType.NumericEdit, textAlign: ej.TextAlign.Right, width: 80 },
+              { field: "ShipCity", headerText: "Ship City", width: 90 },
+              { field: "ShipCountry", headerText: "Ship Country", width: 100 },
+              { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" }
           ]
-      });
   });
 </script>
 
 
+
 {% endhighlight %}
 
+![](Summary_images/summaryGrid_img2.png)
 
 
-The following output is displayed as a result of the above code example.
+### True and False Count 
 
-{% include image.html url="/js/Grid/Summary_images/Summary_img1.png"%}
-
-## Custom Summary by String
-
-This property helps you to create custom summary formula for summary. The following code example is for custom summary using **Essential JavaScript**. Using [`customSummaryValue`](/js/api/ejgrid#members:summaryrows-summarycolumns-customsummaryvalue "customSummaryValue") property to achieve custom summary for ejGrid.
+Summaries with `True` and `False` count aggregate can be defined by using [`summaryType`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") [`summaryColumns`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collections. `True` and `False` count aggregates are used for Boolean columns.
 
 {% highlight html %}
-
 
 <div id="Grid"></div>
 <script type="text/javascript">
-  $(function () {
-  
-      $("#Grid").ejGrid({
-          // the datasource "window.gridData" is referred from jsondata.min.js
-          dataSource: window.gridData,
-          allowPaging: true,
-          showSummary: true,
-          pageSettings: { pageSize: 5 },
-          summaryRows: [{ title: "Currency", summaryColumns: [{ summaryType: ej.Grid.SummaryType.Custom, customSummaryValue: currency(), displayColumn: "Freight", format: "{0:C2}" }] }
-          ],
-          columns: [
+  $("#Grid").ejGrid({
+      /// the datasource "window.gridData" is referred from jsondata.min.js
+      dataSource: window.gridData,
+      showSummary: true,
+      summaryRows: [{
+          title: "False Count",
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.FalseCount,
+              displayColumn: "Verified",
+              dataMember: "Verified"
+          }]
+      }, {
+          title: "True Count",
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.TrueCount,
+              displayColumn: "Verified",
+              dataMember: "Verified"
+          }]
+      }],
+      allowPaging: true,
+      columns:
+          [
+              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+              { field: "EmployeeID", headerText: "Employee ID", editType: ej.Grid.EditingType.NumericEdit, textAlign: ej.TextAlign.Right, width: 80 },
+              { field: "ShipCity", headerText: "Ship City", width: 90 },
+              { field: "ShipCountry", headerText: "Ship Country", width: 100 },
+              { field: "Verified", headerText: "Verified", width: 80 }
+          ]
+  });
+</script>
+
+
+
+{% endhighlight %}
+
+![](Summary_images/summaryGrid_img3.png)
+
+
+### Custom Summary
+
+Custom Summary can be used to create summary values based on your required custom logic and calculations. To enable Custom Summary, [`summaryType`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns-summarytype "summaryType") should be [`custom`](http://help.syncfusion.com/js/grid/summary#custom-summary-by-string "custom") and `value` property need to define as function. In this property `value` function, you need to use Grid instance to access `model.dataSource` and `model.currentViewData`. After the custom calculation, the returned value will be displayed in corresponding Summary cell.
+
+
+{% highlight html %}
+
+<div id="Grid"></div>
+<script type="text/javascript">
+  function currency() {
+      //to get grid instance
+      var gridObj = $("#Grid").ejGrid("instance");
+      //ej.sum is aggreagte to add datas of freight from datasource
+      return ej.sum(gridObj.model.dataSource, "Freight");
+  }
+  $("#Grid").ejGrid({
+      // the datasource "window.gridData" is referred from jsondata.min.js
+      dataSource: window.gridData,
+      showSummary: true,
+      summaryRows: [{
+          title: "Currency",
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.Custom,
+              customSummaryValue: currency,
+              displayColumn: "Freight",
+              format: "{0:C2}"
+          }]
+      }],
+      allowPaging: true,
+      columns:
+          [
               { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 70 },
-               { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 70 },
-               { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 70 },
-               { field: "ShipCity", headerText: "Ship City", textAlign: ej.TextAlign.Left, width: 70 },
-               { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 70, format: "{0:C2}" }
-          ],
-      });
-      function currency() {
-          var rs = 100000;
-          var dol = 0.017
-          return (rs * dol);
-      }
+              { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 70 },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 70 },
+              { field: "ShipCity", headerText: "Ship City", textAlign: ej.TextAlign.Left, width: 70 },
+              { field: "Freight",  headerText: "Freight",textAlign: ej.TextAlign.Right, width: 70,format: "{0:C2}"}]
   });
 </script>
 
 
 {% endhighlight %}
 
+![](Summary_images/summaryGrid_img4.png)
 
-
-The following output is displayed as a result of the above code example.
-
-{% include image.html url="/js/Grid/Summary_images/Summary_img2.png"%}
-
-## Custom Summary by Function
-
-**Custom Summary** is used to create custom summary formula for summary. The following code example is for custom summary using **Essential JavaScript**.
-
-{% highlight html %}
-
-
-
- <div id="Grid"></div>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#Grid").ejGrid({
-                // the datasource "window.gridData" is referred from jsondata.min.js
-                dataSource: window.gridData,
-                allowPaging: true,
-                showSummary: true,
-                pageSettings: { pageSize: 5 },
-                summaryRows: [{
-                    title: "Currency", summaryColumns: [{
-                        summaryType: ej.Grid.SummaryType.Custom,
-                        customSummaryValue: currency, displayColumn: "Freight", format: "{0:C2}"
-                    }]
-                }],
-                columns: ["OrderID", "EmployeeID", "ShipCity", "Freight"],
-            });
-
-        });
-
-        function currency() {
-            var rs = 100000;
-            var dol = 0.017;
-            return (rs * dol);
-        }
-
-    </script>
-
-
-
-{% endhighlight %}
-
-
-
-{% include image.html url="/js/Grid/Summary_images/Summary_img3.png" Caption="Custom Summary by Function"%}
 
 ## Group Summary
 
-This property helps you to enable the group summary column in **Grid**. The following code example is for Group summary.
+Group Summary is used to summarize values of a particular column based on group and it shows at bottom of each Group. To enable Group Summary for particular Group, you need to define [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showTotalSummary") as false.
 
 {% highlight html %}
-
-
 <div id="Grid"></div>
 <script type="text/javascript">
-  $(function () {
+  $("#Grid").ejGrid({
       // the datasource "window.gridData" is referred from jsondata.min.js
-      var data = window.gridData;
-      $("#Grid").ejGrid({
-          dataSource: data,
-          allowPaging: true,
-  
-          allowGrouping: true,
-          showSummary: true,
-          pageSettings: { pageSize: 8 },
-          summaryRows: [
-              { summaryColumns: [{ summaryType: ej.Grid.SummaryType.Sum, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}", prefix: "Sum = " }], showTotalSummary: false }
-          ],
-          groupSettings: { groupedColumns: ["CustomerID"] },
-          columns: [
-                    { field: "OrderID", headerText: "Order ID", width: 80, isPrimaryKey: true, textAlign: ej.TextAlign.Right,  },
-                    { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 75 },
-                    { field: "ShipCity", headerText: 'Ship City', textAlign: ej.TextAlign.Left, width: 150 },
-                    { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-                    { field: "Freight", headerText: "Freight", width: 75, textAlign: ej.TextAlign.Right, format: "{0:C}" }
+      dataSource: window.gridData,
+      showSummary: true,
+      summaryRows: [{
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.Sum,
+              displayColumn: "Freight",
+              dataMember: "Freight",
+              format: "{0:C2}",
+              prefix: "Sum = "
+          }],
+          showTotalSummary: false
+      }],
+      allowPaging: true,
+      allowSorting: true,
+      allowGrouping: true,
+      groupSettings: {
+          groupedColumns: ["CustomerID"]
+      },
+      columns:
+          [
+              { field: "OrderID", headerText: "Order ID", width: 80, isPrimaryKey: true },
+              { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Right, width: 75 },
+              { field: "ShipCity", headerText: 'Ship City', width: 150 },
+              { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+              { field: "Freight", headerText: "Freight", width: 75, textAlign: ej.TextAlign.Right, format: "{0:C}" }
           ]
-      });
+  });
+</script>
+
+
+
+{% endhighlight %}
+
+![](Summary_images/summaryGrid_img5.png)
+
+
+W> Minimum one column should be grouped to show summary details.
+
+## Group Caption Summary
+
+To enable Group Caption Summary for particular Summary Group, [`SummaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) should have [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") should be `true`.
+
+
+{% highlight html %}
+<div id="Grid"></div>
+<script type="text/javascript">
+  $("#Grid").ejGrid({
+      dataSource: data,
+      showSummary: true,
+      summaryRows: [{
+          showCaptionSummary: true,
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.Average,
+              displayColumn: "Freight",
+              dataMember: "Freight",
+              format: "{0:C2}",
+              prefix: "Average = "
+          }],
+          showTotalSummary: false
+      }],
+      allowPaging: true,
+      allowGrouping: true,
+      groupSettings: {
+          groupedColumns: ["EmployeeID"]
+      },
+      columns:
+          [
+              { field: "OrderID", headerText: "Order ID", width: 80, isPrimaryKey: true },
+              { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Right, width: 75 },
+              { field: "ShipCity", headerText: 'Ship City', width: 150 },
+              { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+              { field: "Freight", headerText: "Freight", width: 75, textAlign: ej.TextAlign.Right, format: "{0:C}" }
+          ]
   });
 </script>
 
 
 {% endhighlight %}
 
+![](Summary_images/summaryGrid_img6.png)
 
 
-The following output is displayed as a result of the above code example.
+W> Minimum one column should be grouped to show summary details.
 
-{% include image.html url="/js/Grid/Summary_images/Summary_img4.png"%}
+## Format
 
-## Caption Summary
-
-This property is used to create Caption Summary column in **Grid**. [`showCaptionSummary`](/js/api/ejgrid#members:summaryrows-showcaptionsummary "showCaptionSummary") property is used to show the caption summary in grid. The following code example is for Caption Summary.
+To format Summary values, [`format`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns-format "format") property needs to be assigned in [`summaryColumns`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-summarycolumns "summaryColumns") collection object.  To know more about formatting options. Please refer [**globalize.js**](https://github.com/jquery/globalize/tree/v0.1.1#)
 
 {% highlight html %}
-
-
 <div id="Grid"></div>
 <script type="text/javascript">
-  $(function () {
-      // the datasource "window.gridData" is referred from jsondata.min.js
-  
-      $("#Grid").ejGrid({
-          dataSource: window.gridData,
-          allowPaging: true,
-          allowGrouping: true,
-          showSummary: true,
-          pageSettings: { pageSize: 10 },
-          summaryRows: [{ showCaptionSummary: true, summaryColumns: [{ summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight", format: "{0:C2}", prefix: "Average = " }], showTotalSummary: false }],
-          groupSettings: { groupedColumns: ["CustomerID"] },
-          columns: [
-                    { field: "OrderID", headerText: "Order ID", textAlign: ej.TextAlign.Right, width: 80, isPrimaryKey: true },
-                    { field: "CustomerID", headerText: "Customer ID", textAlign: ej.TextAlign.Left, width: 75 },
-                    { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
-                    { field: "Freight", headerText: "Freight", width: 75, textAlign: ej.TextAlign.Right, format: "{0:C}" }
+  $("#Grid").ejGrid({
+      /// the datasource "window.gridData" is referred from jsondata.min.js
+      dataSource: window.gridData,
+      showSummary: true,
+      summaryRows: [{
+          title: "Sum",
+          summaryColumns: [{
+              summaryType: ej.Grid.SummaryType.Sum,
+              displayColumn: "Freight",
+              dataMember: "Freight",
+              format: "{0:C2}"
+          }]
+      }],
+      allowPaging: true,
+      columns:
+          [
+              { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, textAlign: ej.TextAlign.Right, width: 80 },
+              { field: "EmployeeID", headerText: "Employee ID", textAlign: ej.TextAlign.Right, width: 80 },
+              { field: "ShipCity", headerText: "Ship City", width: 90 },
+              { field: "ShipCountry", headerText: "Ship Country", width: 100 },
+              { field: "Freight", headerText: "Freight", textAlign: ej.TextAlign.Right, width: 80, format: "{0:C}" }
           ]
-      });
   });
 </script>
 
+
+
 {% endhighlight %}
 
+![](Summary_images/summaryGrid_img7.png)
 
 
-The following output is displayed as a result of the above code example.
-
-{% include image.html url="/js/Grid/Summary_images/Summary_img5.png"%}
+N>_globalize.js` script need to referred while formatting is applied to summary values._
 

@@ -67,7 +67,7 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Miscellaneous_images/Miscellaneous_img1.png" %}
+![](/js/SplitButton/Miscellaneous_images/Miscellaneous_img1.png) 
 
 In output “login” text in **Split Button** is replaced by text property value.
 
@@ -130,5 +130,5 @@ Configure the styles.
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/SplitButton/Miscellaneous_images/Miscellaneous_img2.png" %}
+![](/js/SplitButton/Miscellaneous_images/Miscellaneous_img2.png) 
 

@@ -50,5 +50,5 @@ Add the following **HTML** to render **Tab** with **RTL** format.
 
 The following screenshot illustrates the **Tab** with **RTL** format.
 
-{% include image.html url="/js/Tab/RTL-Support_images/RTL-Support_img1.png" %}
+![](/js/Tab/RTL-Support_images/RTL-Support_img1.png) 
 

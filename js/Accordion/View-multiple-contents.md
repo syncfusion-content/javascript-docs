@@ -60,5 +60,5 @@ In an HTML page, define a div element that is a container for  Accordion wi
 Following screenshot is the output for Accordion control on enableMultipleOpen set to true.
 
 
-{% include image.html url="/js/Accordion/View-multiple-contents_images/View-multiple-contents_img1.png"%}
+![](/js/Accordion/View-multiple-contents_images/View-multiple-contents_img1.png)
 

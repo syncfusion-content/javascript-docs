@@ -120,7 +120,7 @@ Add the following code in the **script** tag.
 You can display the drawer either by clicking on the target icon or by swiping from left on the page. Refer to the following screenshot.
 
 
-{% include image.html url="getting-started_images\getting-started_img2.png"%}
+![](getting-started_images\getting-started_img2.png)
 
 You can set the images for Navigation Drawer by using the **data-ej-imageclass** attribute in the inner list elements.
 

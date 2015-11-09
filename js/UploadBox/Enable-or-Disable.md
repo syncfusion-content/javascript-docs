@@ -41,5 +41,5 @@ The following screenshot displays the output.
 
 
 
-{% include image.html url="/js/UploadBox/Enable-or-Disable_images/Enable-or-Disable_img1.png" %}
+![](/js/UploadBox/Enable-or-Disable_images/Enable-or-Disable_img1.png) 
 

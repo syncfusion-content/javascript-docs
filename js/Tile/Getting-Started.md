@@ -11,7 +11,7 @@ documentation: ug
 
 The **Essential Studio JavaScript Tiles** are simple, opaque rectangles or squares that are arrayed on the Start screen in a grid-like pattern and it can be either static or live. Tapping or selecting a **Tile** launches the app or other experience that is represented by the **Tile**.                                               
 
-{% include image.html url="/js/Tile/Getting-Started_images/Getting-Started_img1.png"%}
+![](/js/Tile/Getting-Started_images/Getting-Started_img1.png)
 
 ## Create Tile Widget
 
@@ -62,7 +62,7 @@ Add the following code inside the **script** tag.
 
 Run the above code to render the following output. 
 
-{% include image.html url="/js/Tile/Getting-Started_images/Getting-Started_img2.png"%}
+![](/js/Tile/Getting-Started_images/Getting-Started_img2.png)
 
 In this scenario, a home page is designed using tile for easy navigation. Therefore, you require many different sizes of tiles aligned in a grid-like manner. To align the tiles automatically, define the necessary tile elements inside the wrapper element that contains a ‘**column’** class. You can define all columns elements under the wrapper element with ‘**group’** class to make ‘n’ number of tiles as a grouped tile.
 
@@ -125,5 +125,5 @@ Add the following code inside the **script** tag.
 
 Run the above code to render the following output.
 
-{% include image.html url="/js/Tile/Getting-Started_images/Getting-Started_img3.png"%}
+![](/js/Tile/Getting-Started_images/Getting-Started_img3.png)
 

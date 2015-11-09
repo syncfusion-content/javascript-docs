@@ -94,5 +94,5 @@ Add the following code in your **HTML** page.
 
 {% endhighlight %}
 
-{% include image.html url="/js/DateTimePicker/Globlization_images/Globalization_img1.png"%}
+![](/js/DateTimePicker/Globlization_images/Globalization_img1.png)
 

@@ -70,5 +70,5 @@ In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeVi
 
 The output for **TreeView** when **enableRTL** is set to “**True**” is as follows.
 
-{% include image.html url="/js/TreeView/RTL_images/RTL_img1.png"%}
+![](/js/TreeView/RTL_images/RTL_img1.png)
 

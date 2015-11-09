@@ -81,7 +81,7 @@ Add the following code in your style section.
 
 The following screen shot displays the output of the above code.
 
-{% include image.html url="/js/Menu/Context-Menu_images/Context-Menu_img1.png" %}
+![](/js/Menu/Context-Menu_images/Context-Menu_img1.png) 
 
 
 You can hide and show the context menu using the following methods.

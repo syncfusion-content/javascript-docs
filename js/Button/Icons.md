@@ -25,7 +25,7 @@ For example, you can render the desired icon in the button by using the followin
 
 Refer to the following link to know what are the values passed in the “**ContentType**” property
 
-<http://docs.syncfusion.com/js/api/global#members:contenttype>
+<http://help.syncfusion.com/js/api/global#members:contenttype>
 
 
 Also in the button sample, you can use the icon class names as follows,
@@ -41,7 +41,10 @@ Also in the button sample, you can use the icon class names as follows,
 
 Execute the above code to render the following output.
 
-{% include image.html url="/js/Button/Icons_images/Icons_img1.png" Caption="Icon library used in button component"%}
+![](/js/Button/Icons_images/Icons_img1.png)
+
+Icon library used in button component
+{:.caption}
 
 ## List of Icons
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 3D-Chart
-description: 3d chart
+title: 3D Chart types available in Essential JavaScript Chart
+description: Learn about the different types of 3D charts supported by Syncfusion Essential JavaScript Chart and how to customize the 3D view.
 platform: js
 control: Chart
 documentation: ug
@@ -9,12 +9,12 @@ documentation: ug
 
 # 3D Chart
 
-Essential 3D Chart for JavaScript allows you to view 8 chart types in 3D view such as **Column**, **Bar**, **Stacked Column**, **Stacked Bar**, **100% Stacked Column**, **100% Stacked Bar**, **Pie** and **Doughnut**.
+Essential 3D Chart for JavaScript allows you to view 8 chart types in 3D view such as [Bar](chart-types#bar-chart), [StackingBar](chart-types#stacked-bar-chart), [StackingBar100](chart-types#stacked-bar-chart-1), [Column](chart-types#column-chart), [Stacked Column](chart-types#stacked-column-chart), [100% Stacked Column](chart-types#stacked-column-chart-1), [Pie](chart-types#pie-chart), [Doughnut](chart-types#doughnut-chart).
 
 
 ## 3D Column Chart
 
-For rendering a 3D Column Chart, specify the series *type* as **"column"** in the chart series and set **enable3D** option as **true** in the chart.
+For rendering a 3D Column Chart, specify the series [type](../api/ejchart#members:series-type) as **"column"** in the chart series and set [enable3D](../api/ejchart#members:enable3d) option as **true** in the chart.
 
 {% highlight js %}
 
@@ -35,14 +35,17 @@ For rendering a 3D Column Chart, specify the series *type* as **"column"** in th
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img1.png" Caption="3D Column Chart" %}
+![](/js/Chart/3D-Chart_images/3D-Chart_img1.png)
+
+3D Column Chart
+{:.caption} 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/column) here to view the 3D Column Chart online demo sample.
 
 
 ## 3D Bar Chart
 
-You can create a 3D Bar Chart by setting the series *type* as **"bar"** in the chart series and enable **enable3D** option in the chart.
+You can create a 3D Bar Chart by setting the series [type](../api/ejchart#members:series-type) as **"bar"** in the chart series and enable [enable3D](../api/ejchart#members:enable3d) option in the chart.
 
 {% highlight js %}
 
@@ -63,14 +66,17 @@ You can create a 3D Bar Chart by setting the series *type* as **"bar"** in the c
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img2.png" Caption="3D Bar Chart" %}
+![](/js/Chart/3D-Chart_images/3D-Chart_img2.png)
+
+3D Bar Chart
+{:.caption} 
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/bar) here to view the 3D Bar Chart online demo sample.
 
 
 ## 3D Stacked Column Chart
 
-Stacking Column 3DChart is rendered by specifying the series *type* as **"stackingColumn"** in the chart series and enable **enable3D** option in the chart.
+Stacking Column 3DChart is rendered by specifying the series [type](../api/ejchart#members:series-type) as **"stackingColumn"** in the chart series and enable [enable3D](../api/ejchart#members:enable3d) option in the chart.
 
 {% highlight js %}
 
@@ -95,14 +101,17 @@ Stacking Column 3DChart is rendered by specifying the series *type* as **"stacki
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img3.png" Caption="3D Stacked Column Chart"%}
+![](/js/Chart/3D-Chart_images/3D-Chart_img3.png)
+
+3D Stacked Column Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/stackedcolumn) here to view the Stacked Column 3DChart online demo sample.
 
 
 ## 3D 100% Stacked Column Chart
 
-100% Stacking Column 3DChart is rendered by specifying the series *type* as **"stackingColumn100"** in the chart series and enable **enable3D** option in the chart.
+100% Stacking Column 3DChart is rendered by specifying the series [type](../api/ejchart#members:series-type) as **"stackingColumn100"** in the chart series and enable [enable3D](../api/ejchart#members:enable3d) option in the chart.
 
 {% highlight js %}
 
@@ -127,14 +136,17 @@ Stacking Column 3DChart is rendered by specifying the series *type* as **"stacki
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img4.png" Caption="3D 100% Stacked Column Chart"%}
+![](/js/Chart/3D-Chart_images/3D-Chart_img4.png)
+
+3D 100% Stacked Column Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/100%stackedcolumn) here to view the 100% Stacked Column 3DChart online demo sample.
 
 
 ## 3D Stacked Bar Chart
 
-To create Stacking Bar 3DChart, set the series *type* as **"stackingBar"** in the chart series and enable **enable3D** option in the chart.
+To create Stacking Bar 3DChart, set the series [type](../api/ejchart#members:series-type) as **"stackingBar"** in the chart series and enable [enable3D](../api/ejchart#members:enable3d) option in the chart.
 
 {% highlight js %}
 
@@ -159,14 +171,17 @@ To create Stacking Bar 3DChart, set the series *type* as **"stackingBar"** in th
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img5.png" Caption="3D Stacked Bar Chart"%}
+![](/js/Chart/3D-Chart_images/3D-Chart_img5.png)
+
+3D Stacked Bar Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/stackedbar) here to view the Stacked Bar 3DChart online demo sample.
 
 
 ## 3D 100% Stacked Bar Chart
 
-You can create 100% Stacking Bar 3DChart by setting the series *type* as **"stackingbar100"** in the chart series and enable **enable3D** option in chart.
+You can create 100% Stacking Bar 3DChart by setting the series [type](../api/ejchart#members:series-type) as **"stackingbar100"** in the chart series and enable [enable3D](../api/ejchart#members:enable3d) option in chart.
 
 {% highlight js %}
 
@@ -191,14 +206,17 @@ You can create 100% Stacking Bar 3DChart by setting the series *type* as **"stac
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img6.png" Caption="3D StackingBar100 Chart"%}
+![](/js/Chart/3D-Chart_images/3D-Chart_img6.png)
+
+3D StackingBar100 Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/100%stackedbar) here to view the 100% Stacking Bar 3DChart online demo sample.
 
 
 ## 3D Pie Chart
 
-To render the Pie Chart in 3D view, enable **enbel3D** option in chart and set series *type* as **"pie"** in the chart series.  
+To render the Pie Chart in 3D view, enable the **enbel3D** option in the chart and set the series [type](../api/ejchart#members:series-type) as **"pie"** in the chart series.  
 
 {% highlight js %}
 
@@ -219,14 +237,17 @@ To render the Pie Chart in 3D view, enable **enbel3D** option in chart and set s
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img7.png" Caption="3D Pie Chart"%}
+![](/js/Chart/3D-Chart_images/3D-Chart_img7.png)
+
+3D Pie Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/pie) here to view the Pie 3DChart online demo sample.
 
 
 ## 3D Doughnut Chart
 
-For rendering the Doughnut Chart in 3D view, enable **enbel3D** option in chart and set series *type* as **"doughnut"** in the chart series. 
+To render the Doughnut Chart in 3D view, enable the **enbel3D** option in the chart and set the series [type](../api/ejchart#members:series-type) as **"doughnut"** in the chart series. 
 
 {% highlight js %}
 
@@ -247,16 +268,19 @@ For rendering the Doughnut Chart in 3D view, enable **enbel3D** option in chart 
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img8.png" Caption="3D Doughnut Chart"%}
+![](/js/Chart/3D-Chart_images/3D-Chart_img8.png)
+
+3D Doughnut Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/doughnut) here to view the Doughnut 3DChart online demo sample.
 
 
-## Configuring 3D Chart
+## Configure 3D Chart
 
 ### 3D View
 
-For rendering the EjChart in 3D view, set **enable3D** option as *true* in the chart.
+To render the EjChart in 3D view, set the [enable3D](../api/ejchart#members:enable3d) option as *true* in the chart.
  
 {% highlight js %}
 
@@ -271,14 +295,17 @@ For rendering the EjChart in 3D view, set **enable3D** option as *true* in the c
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img9.png" Caption="3D Chart"%}
+![](/js/Chart/3D-Chart_images/3D-Chart_img9.png)
+
+3D Chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/3d/column) here to view the 3DChart online demo sample.
 
  
 ### Placing Bar / Column kind of series side-by-side
  
- The **sideBySideSeriesPlacement** defines the appearance of the different sets of data on 3D Chart. When enabling this property, the data is displayed side by side, otherwise it is displayed along the depth of the axis.  
+ The [sideBySideSeriesPlacement](../api/ejchart#members:sidebysideseriesplacement) defines the appearance of the different sets of data on the 3D Chart. When this property is enabled, the data is displayed side by side, otherwise it is displayed along the depth of the axis.  
  
 {% highlight js %}
 
@@ -293,12 +320,15 @@ For rendering the EjChart in 3D view, set **enable3D** option as *true* in the c
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img10.png" Caption="3D Chart with SideBySideSeriesPlacement"%}
+![](/js/Chart/3D-Chart_images/3D-Chart_img10.png)
+
+3D Chart with SideBySideSeriesPlacement
+{:.caption}
 
 
 ### Setting Axis Wall Size
 
-In 3DChart, Cartesian axes lines are represented as walls and it defines the width of the 3D wall. 3D Pie and Doughnut Chart does not support **wallSize** because they don’t have axes.  
+In 3DChart, Cartesian axes lines are represented as walls and it defines the width of the 3D wall. 3D Pie and Doughnut Chart does not support [wallSize](../api/ejchart#members:wallsize) because they don’t have axes.  
 
 {% highlight js %}
 
@@ -313,12 +343,15 @@ In 3DChart, Cartesian axes lines are represented as walls and it defines the wid
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img11.png" Caption="Customize 3D Chart axis wall size"%} 
+![](/js/Chart/3D-Chart_images/3D-Chart_img11.png)
+
+Customize 3D Chart axis wall size
+{:.caption}
 
 
 ### 3D Depth
 
-By using the **depth** property, you can view the 3D Chart from the front view of the series to the background wall.
+By using the [depth](../api/ejchart#members:depth) property, you can view the 3D Chart from the front view of the series to the background wall.
 
 {% highlight js %}
 
@@ -333,12 +366,15 @@ By using the **depth** property, you can view the 3D Chart from the front view o
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img12.png" Caption="Customize 3D Chart depth"%} 
+![](/js/Chart/3D-Chart_images/3D-Chart_img12.png)
+
+Customize 3D Chart depth
+{:.caption}
 
 
 ### Rotating and Tilting 3D Chart
 
-To spin the 3D Chart on mouse dragging, enable **enableRotation** option in the chart. The **tilt** property specifies the angle of the slope of the 3D Chart. The positive and negative values are declared to the side where the slope is present. The **rotation** option is used to rotate the 3D chart towards left or right side of the chart. The direction of the chart depends upon the positive and negative values of the angle.  
+To spin the 3D Chart on mouse dragging, enable [enableRotation](../api/ejchart#members:enablerotation) option in the chart. The [tilt](../api/ejchart#members:tilt) property specifies the angle of the slope of the 3D Chart. The positive and negative values are declared to the side where the slope is present. The [rotation](../api/ejchart#members:rotation) option is used to rotate the 3D chart towards left or right side of the chart. The direction of the chart depends upon the positive and negative values of the angle.  
 
 {% highlight js %}
 
@@ -361,12 +397,15 @@ To spin the 3D Chart on mouse dragging, enable **enableRotation** option in the 
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img13.png" Caption="Rotating and Tilting 3D Chart"%}
+![](/js/Chart/3D-Chart_images/3D-Chart_img13.png)
+
+Rotating and Tilting 3D Chart
+{:.caption}
  
 
 ### PerspectiveAngle	
 
-The **perspectiveAngle** specifies the appearance of the height, width, depth and wall of the 3D Chart. When the perspectiveAngle is decreased, the 3D object appears very close to the viewer. But when it is increased, the 3D object appears far away from the viewer.   
+The [perspectiveAngle](../api/ejchart#members:perspectiveangle) specifies the appearance of the height, width, depth and wall of the 3D Chart. When the perspectiveAngle is decreased, the 3D object appears very close to the viewer. But when it is increased, the 3D object appears far away from the viewer.   
 
 {% highlight js %}
 
@@ -382,5 +421,8 @@ The **perspectiveAngle** specifies the appearance of the height, width, depth an
 {% endhighlight %}
 
 
-{% include image.html url="/js/Chart/3D-Chart_images/3D-Chart_img14.png" Caption="3D Chart PerspectiveAngle"%}
+![](/js/Chart/3D-Chart_images/3D-Chart_img14.png)
+
+3D Chart PerspectiveAngle
+{:.caption}
 

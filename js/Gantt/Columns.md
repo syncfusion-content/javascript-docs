@@ -174,13 +174,13 @@ The following code example shows you how to display the icon in the TreeGrid col
 
 The following screenshot displays the customized column in Gantt control.
 
-{% include image.html url="/js/Gantt/Columns_images/Columns_img1.png"%}
+![](/js/Gantt/Columns_images/Columns_img1.png)
 
 ### Column Chooser
 
 Gantt supports enabling and disabling the visibility of the columns dynamically with the `showColumnChooser` property. The visibility of the custom columns can also be toggled with this property. Column chooser option is rendered as a sub menu item within the column menu in the Gantt columns. 
 
-{% include image.html url="/js/Gantt/Columns_images/Columns_img2.png"%}
+![](/js/Gantt/Columns_images/Columns_img2.png)
 
 The column menu is enabled with the `showColumnChooser` property, where the default value for this property is `false`.
 
@@ -207,5 +207,5 @@ Sort Ascending and Sort Descending options can be enabled or disabled with the `
 
 The following screenshot displays the column chooser in the Gantt control.
 
-{% include image.html url="/js/Gantt/Columns_images/Columns_img3.png"%}
+![](/js/Gantt/Columns_images/Columns_img3.png)
 

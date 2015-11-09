@@ -7,360 +7,339 @@ control: OlapGauge
 documentation: ug
 ---
 
-#Getting Started 
+# Getting Started 
 
-This section briefly explains how you can create an **OlapGauge** in your application with **Essential JavaScript.**
+##Creating a simple application with OlapGauge
 
-##Syncfusion OLAP Controls – Architecture
+This section explains how to create a simple OlapGauge.
 
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img2.png" %}
+>**NOTE: We will be illustrating this section by creating a simple Web Application through Visual Studio IDE since OlapGauge is a server-side control with .NET dependency. The Web Application would contain a HTML page and a service that would transfer data to server-side, process and return back the data to client-side for control re-rendering. The service utilized for communicate could be either WCF or WebAPI based on user requirement and we have illustrated both for user convenience.**
 
-As shown in the above architecture, control rendering takes place client-side and all other analytical operations on each action takes place server-side.
+###Project Initialization
+Create a new **ASP.NET Empty Web Application** by using Visual Studio IDE and name the project as **“OlapGaugeDemo”**.
 
-##Service for OLAP Controls
+Next add a HTML page. To add a HTML page in your Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **HTML Page** and name it as “GettingStarted.html”, click **Add.**
 
-The primary reasons for using service in an **OLAP** processing are as follows:
+Now, set “GettingStarted.html” as start-up page by right-clicking on “GettingStarted.html” page and select **“Set As Start Page”.**
 
-1.**DataSource Connectivity:** You can establish a connection between different cube data sources such as
+###Scripts and CSS Initialization
+The scripts and style sheets that are mandatorily required to render a OlapGauge widget inside a HTML page are highlighted in an appropriate order as follows,
 
-   * Offline Cube
-   * Online Cube (XML/A)
-   * Cube within SQL Server, locally or through remote, you can move the connectivity related coding to service-side as it is impossible at the client-side other than <b>Online Cube</b> (XML/A) option. Using service, you can connect any cube data source without any limitation.
+1. ej.widgets.all.min.css
+2. jquery-1.10.2.min.js
+3. jquery.easing.1.3.min.js
+4. ej.web.all.min.js
+
+You can find the scripts and style sheets listed above in any of the following locations:
+
+Local Disk: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment) to know more about script and style sheets installed in local machine.
+
+CDN Link: [Click here](http://helpjs.syncfusion.com/js/cdn) to know more about script and style sheets available online.
+
+NuGet Package: [Click here](http://helpjs.syncfusion.com/js/installation-and-deployment#configuring-syncfusion-nuget-packages) to know more about script and style sheets available in NuGet package. 
+
+###Control Initialization
+To initialize a OlapGauge widget, define a “div” tag with an appropriate “id” attribute that acts as a container for OlapGauge widget. Then, initialize the widget by using ejOlapGauge method inside “script” tag.
     
-2.**Cube Schema:** As the connection is moved to service-side, you obviously use **Microsoft ADOMD assembly** to get the entire cube schema. Only with the **cube schema** the following details are achieved for control rendering.
-
-   * Availability of cubes.
-   * A complete end-to-end detail such as name, caption, unique name, parent information, child information, its properties, etc., about the dimension, hierarchy, level, members are available in cube schema only. 
-   * Localized information is also available in cube schema.
-
-3.**MDX Generator:** You can frame the MDX query using an MDX generator in **Syncfusion.Olap.Base** assembly. To execute the framed **MDX** from the cube data source, you need to send framed MDX via **Microsoft ADOMD assembly**. The executed query is returned in the form of cell set (contain values) that is converted to Pivot Engine and then to JSON data to render any **OLAP** controls.
-
-4.**OLAP Report:** The OlapReport holds the complete information of each axis such as column, row and slicer. Using OlapReport, you can maintain the dimension element, measure element, hierarchy name, level name as well as the member information that
-is included and excluded.
-
-As the **OlapControl** is the key for each and every operation, initially you need to serialize the OLAP Reports and send to client-side in a form of string. When you perform any operation such as drill up or down, filtering, sorting etc., you can send OLAP Reports from the client-side to the service in a de-serialized and updated format. Further operations are carried with updated OLAP Reports only and you can send the updated OLAP Reports back to client-side with **JSON** data in a serialized format again. This process has the OLAP Reports always updated. You cannot operate serialized OlapReport in client-side and hence it is carried to service for performing the update operation.
-
-##Create an application
-
-This section explains how you can configure the **OlapGauge** control in applications. You can also learn how to pass the required data to **OlapGauge** and to customize its various options according to your requirements.
-
-In the following example, **OlapGauge** is used to visualize the Revenue for Reseller over a Fiscal Year 2004 on the product category - Accessories.
-
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img3.png" %}
-
-Open Visual Studio and create a new project by clicking **New Project**. Select the **Web** category, select the **ASP.NET Empty Web Application** template, and then click **OK**. The following screenshot displays the Project Creation Wizard:
-
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img4.png" %}
-
-##Create HTML page
-
-To create a new web form in the application, right-click on the project and select Add. The following screenshot displays the Add New Item Wizard.
-
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img5.png" %}
-
-Click on New Item and select HTML Page from the listed templates. Name the page as default.html and click OK.
-
-##Add References, Scripts, Styles and Control in HTML page
-
-###Add References
-
-* In the Solution Explorer, right-click the References folder, and then click Add Reference.
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img6.png" %}
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img7.png" %}
-* Select the following assemblies: 
-
-   1. Microsoft.AnalysisServices.AdomdClient.dll
-   2. Syncfusion.Linq.Base.dll 
-   3. Syncfusion.Olap.Base.dll, 
-   4. Syncfusion.EJ.dll  
-   5. Syncfusion.EJ.Olap.dll.
-* Click OK
-
-###Add Scripts and Styles
-
-Add the script files and CSS files in the **&lt;head&gt;** tag of the **default.html** page.
-
-N>  You can follow the order given here while adding scripts and styles.
-
 {% highlight html %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js">
-</script>
-<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript">
-</script>
-<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js">
-</script>
+<head>
+    <title>OlapGauge - Getting Started</title>
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!--Creating a div tag, that acts as a container for ejOlapGauge widget.-->
+            <div id="OlapGauge" style="height: 350px; width: 100%; position:relative"> </div> //Setting properties and initializing ejOlapGauge widget.
+            <script type="text/javascript">
+                $(function()
+                {
+                    $("#OlapGauge").ejOlapGauge(
+                    {
+                        url: "../OlapGaugeService",
+                        enableTooltip: true,
+                        load: "loadGaugeTheme",
+                        backgroundColor: "transparent",
+                        scales: [
+                        {
+                            showRanges: true,
+                            radius: 150,
+                            showScaleBar: true,
+                            size: 1,
+                            border:
+                            {
+                                width: 0.5
+                            },
+                            showIndicators: true,
+                            showLabels: true,
+                            pointers: [
+                            {
+                                showBackNeedle: true,
+                                backNeedleLength: 20,
+                                length: 120,
+                                width: 7
+                            },
+                            {
+                                type: "marker",
+                                markerType: "diamond",
+                                distanceFromScale: 5,
+                                placement: "center",
+                                backgroundColor: "#29A4D9",
+                                length: 25,
+                                width: 15
+                            }],
+                            ticks: [
+                            {
+                                type: "major",
+                                distanceFromScale: 2,
+                                height: 16,
+                                width: 1,
+                                color: "#8c8c8c"
+                            },
+                            {
+                                type: "minor",
+                                height: 6,
+                                width: 1,
+                                distanceFromScale: 2,
+                                color: "#8c8c8c"
+                            }],
+                            labels: [
+                            {
+                                color: "#8c8c8c"
+                            }],
+                            ranges: [
+                            {
+                                distanceFromScale: -5,
+                                backgroundColor: "#fc0606",
+                                border:
+                                {
+                                    color: "#fc0606"
+                                }
+                            },
+                            {
+                                distanceFromScale: -5
+                            }],
+                            customLabels: [
+                            {
+                                position:
+                                {
+                                    x: 180,
+                                    y: 290
+                                },
+                                font:
+                                {
+                                    size: "10px",
+                                    fontFamily: "Segoe UI",
+                                    fontStyle: "Normal"
+                                },
+                                color: "#666666"
+                            },
+                            {
+                                position:
+                                {
+                                    x: 180,
+                                    y: 320
+                                },
+                                font:
+                                {
+                                    size: "10px",
+                                    fontFamily: "Segoe UI",
+                                    fontStyle: "Normal"
+                                },
+                                color: "#666666"
+                            },
+                            {
+                                position:
+                                {
+                                    x: 180,
+                                    y: 150
+                                },
+                                font:
+                                {
+                                    size: "12px",
+                                    fontFamily: "Segoe UI",
+                                    fontStyle: "Normal"
+                                },
+                                color: "#666666"
+                            }]
+                        }]
+                    });
+                });
+            </script>
+    </form>
+</body>
+</html>
 
 {% endhighlight %}
 
-###Add Control in HTML page
+The “url” property in Olapgauge widget points the service endpoint, where data are processed and fetched in the form of JSON. The service used for the OlapGauge widget as endpoint are WCF and WebAPI.
 
-Add the following code inside the **&lt;body&gt;** tag in the **default.html** page.
+N> The above "GettingStarted.html" contains WebAPI Url, which is, “../OlapGaugeService”. Suppose if you are using WCF service then the Url would look like "../OlapGaugeService.svc". 
 
-{% highlight html %}
+###WebAPI
 
-<!--Creating a div tag, that acts as a container for ejOlapGauge widget.-->
-<div id = "OlapGauge" style = "height: 350px; width: 100%; position:relative">
-</div>
+**Adding a WebAPI Controller**
 
-//Setting properties and initializing ejOlapGauge widget.
-<script type = "text/javascript">
-    $(function() {
-        $("#OlapGauge").ejOlapGauge({
-            url: "../wcf/OlapGaugeService.svc",
-            enableTooltip: true,
-            load: "loadGaugeTheme",
-            backgroundColor: "transparent",
-            scales: [{
-                showRanges: true,
-                radius: 150,
-                showScaleBar: true,
-                size: 1,
-                border: {
-                    width: 0.5
-                },
-                showIndicators: true,
-                showLabels: true,
-                pointers: [{
-                    showBackNeedle: true,
-                    backNeedleLength: 20,
-                    length: 120,
-                    width: 7
-                }, {
-                    type: "marker",
-                    markerType: "diamond",
-                    distanceFromScale: 5,
-                    placement: "center",
-                    backgroundColor: "#29A4D9",
-                    length: 25,
-                    width: 15
-                }],
-                ticks: [{
-                    type: "major",
-                    distanceFromScale: 2,
-                    height: 16,
-                    width: 1,
-                    color: "#8c8c8c"
-                }, {
-                    type: "minor",
-                    height: 6,
-                    width: 1,
-                    distanceFromScale: 2,
-                    color: "#8c8c8c"
-                }],
-                labels: [{
-                    color: "#8c8c8c"
-                }],
-                ranges: [{
-                    distanceFromScale: -5,
-                    backgroundColor: "#fc0606",
-                    border: {
-                        color: "#fc0606"
-                    }
-                }, {
-                    distanceFromScale: -5
-                }],
-                customLabels: [{
-                    position: {
-                        x: 180,
-                        y: 290
-                    },
-                    font: {
-                        size: "10px",
-                        fontFamily: "Segoe UI",
-                        fontStyle: "Normal"
-                    },
-                    color: "#666666"
-                }, {
-                    position: {
-                        x: 180,
-                        y: 320
-                    },
-                    font: {
-                        size: "10px",
-                        fontFamily: "Segoe UI",
-                        fontStyle: "Normal"
-                    },
-                    color: "#666666"
-                }, {
-                    position: {
-                        x: 180,
-                        y: 150
-                    },
-                    font: {
-                        size: "12px",
-                        fontFamily: "Segoe UI",
-                        fontStyle: "Normal"
-                    },
-                    color: "#666666"
-                }]
-            }]
-        });
-    }); 
-</script>
-    
-{% endhighlight %}
+To add a WebAPI controller in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **WebAPI Controller Class** and name it as “OlapGaugeController.cs”, click **Add.**
 
-##Add WCF Service for OlapGauge
+Now WebAPI controller is added into your application successfully that contains the following file.
+ 
+* OlapGaugeController.cs
 
-###Create WCF Service
+N> While adding WebAPI Controller Class, name it with the suffix “Controller” that is mandatory. For example, in demo the controller is named as “OlapGaugeController”.
 
-Right-click the project and select Add > New Folder.  Name the folder as wcf. Let the folder name "wcf" be in lower case. Right-click the wcf folder created and select Add > New Item.  In the Add New Item window, select WCF Service and name it OlapGaugeService.svc. And then Click Add.
-{% include image.html url="/js/OlapGauge/Getting-Started_images/Getting-Started_img8.png" %}
-
-###Add service methods inside Interface
-
-Add the following code example inside the `IOlapGaugeService` interface available in the IOlapGaugeService.cs file.
+Next, remove all the existing methods such as “Get”, “Post”, “Put” and “Delete” present inside `**OlapGaugeController.cs**` file.
 
 {% highlight c# %}
 
-[ServiceContract]
-public interface IOlapGaugeService
+namespace OlapGaugeDemo
 {
-   [OperationContract]
-   Dictionary<string, object> InitializeGauge(string action,string customObject);                
+    public class OlapGaugeController: ApiController
+    {
+    
+    }
 }
-
 {% endhighlight %}
 
-###Add Namespaces
+**List of Dependency Libraries**
 
-Add necessary namespaces required to implement the service methods.
+Add the following dependency libraries into your Web Application. You can find these libraries in GAC (Global Assembly Cache) in your machine.
+
+To add them to your Web Application, right-click on **References** in Solution Explorer and select **Add Reference.** Now in the **Reference Manager** dialog, under **Assemblies > Extension**, the following Syncfusion libraries are found. 
+
+>**NOTE: When you have installed any version of SQL Server Analysis Service (SSAS) or Microsoft ADOMD.NET utility, then the location of Microsoft.AnalysisServices.AdomdClient library is [system drive:\Program Files (x86)\Microsoft.NET\ADOMD.NET]**
+
+* Microsoft.AnalysisServices.AdomdClient.dll
+* Syncfusion.Linq.Base.dll 
+* Syncfusion.Olap.Base.dll, 
+* Syncfusion.EJ.dll  
+* Syncfusion.EJ.Olap.dll.
+
+**List of Namespaces**
+
+Following are the list of namespaces to be added on top of the main class inside `**OlapGaugeController.cs**` file. 
 
 {% highlight c# %}
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.Text;
-using System.ServiceModel.Activation;
-using Syncfusion.JavaScript.Olap;
 using System.Web.Script.Serialization;
 using Syncfusion.Olap.Manager;
 using Syncfusion.Olap.Reports;
+using Syncfusion.JavaScript;
+using Syncfusion.JavaScript.Olap;
 
-
+namespace OlapGaugeDemo
+{
+    public class OlapGaugeController: ApiController
+    {
+    
+    }
+}
 {% endhighlight %}
 
-###Create Class in Service file
+**Datasource Initialization**
 
-Create the `OlapGaugeService` class to implement the service methods. Inherit the class from the `IOlapGaugeService` interface created automatically when any new service is added.
+Now, the connection string to connect OLAP Cube, OalpGauge and JavaScriptSerializer instances are created immediately inside the main class in `**OlapGaugeController.cs**` file.
 
 {% highlight c# %}
 
-namespace WebApplication2.wcf
+namespace OlapGaugeDemo
 {
-    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class OlapGaugeService : IOlapGaugeService
+    public class OlapGaugeController: ApiController
     {
+        OlapGauge htmlHelper = new OlapGauge();
+        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        //Other codes
     }
 }
 
-
 {% endhighlight %}
 
-###Implement Service Methods
+**Service methods in WebAPI Controller**
 
-Add the following methods to the service invoked for any server-side operations performed in **OlapGauge**.
-
-Initialize the OlapGauge helper class.
+Define the service methods inside OlapGaugeController class, found inside `**OlapGaugeController.cs**` file, created while adding WebAPI Controller Class to your Web Application.
 
 {% highlight c# %}
 
-OlapGauge htmlHelper = new OlapGauge();       
-static string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
-JavaScriptSerializer serializer = new JavaScriptSerializer();
-
-{% endhighlight %}
-
-Initialize the following relevant **service** methods to be added.
-
-{% highlight c# %}
-
-//This method provides the required information from server-side for initializing the OlapGauge.
-public Dictionary<string, object> InitializeGauge(string action,string customObject)
+namespace OlapGaugeDemo
 {
-   OlapDataManager DataManager = null;
-   dynamic customData = serializer.Deserialize<dynamic>(customObject.ToString());
-   DataManager = new OlapDataManager(connectionString);                         
-   DataManager.SetCurrentReport(CreateOlapReport());
-   return htmlHelper.GetJsonData(action, DataManager);
-}  
-      
-//This method carries the information about the default report that is rendered within OlapGauge initially. 
-private OlapReport CreateOlapReport()
-{
-   OlapReport report = new OlapReport();
-   report.CurrentCubeName = "Adventure Works";
-
-   KpiElements kpiElement = new KpiElements();
-   kpiElement.Elements.Add(new KpiElement { Name = "Revenue", ShowKPIGoal = true, ShowKPIStatus = true, ShowKPIValue = true, ShowKPITrend = true });
-
-   DimensionElement dimensionElement1 = new DimensionElement();
-   DimensionElement dimensionElement2 = new DimensionElement();
-   DimensionElement dimensionElement3 = new DimensionElement();
-
-   MeasureElements measureElement = new MeasureElements();
-   measureElement.Elements.Add(new MeasureElement { UniqueName = "[Measures].[Customer Count]" });
-
-   dimensionElement1.Name = "Date";
-   dimensionElement1.AddLevel("Fiscal Year", "Fiscal Year");
-   dimensionElement1.Hierarchy.LevelElements["Fiscal Year"].Add("FY 2004");
-   dimensionElement1.Hierarchy.LevelElements["Fiscal Year"].IncludeAvailableMembers = true;
-
-   dimensionElement2.Name = "Sales Channel";
-   dimensionElement2.AddLevel("Sales Channel", "Sales Channel");
-   dimensionElement2.Hierarchy.LevelElements["Sales Channel"].Add("Reseller");
-   dimensionElement2.Hierarchy.LevelElements["Sales Channel"].IncludeAvailableMembers = true;
-
-   dimensionElement3.Name = "Product";
-   dimensionElement3.AddLevel("Product Model Lines", "Product Line");
-
-   report.CategoricalElements.Add(new Item { ElementValue = dimensionElement2 });
-   report.CategoricalElements.Add(new Item { ElementValue = dimensionElement1 });
-   report.CategoricalElements.Add(new Item { ElementValue = kpiElement });
-   report.SeriesElements.Add(new Item { ElementValue = dimensionElement3 });
-   return report;
+    public class OlapGaugeController: ApiController
+    {
+        OlapGauge htmlHelper = new OlapGauge();
+        string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        JavaScriptSerializer serializer = new JavaScriptSerializer();
+        [System.Web.Http.ActionName("InitializeGauge")]
+        [System.Web.Http.HttpPost]
+        public Dictionary < string, object > InitializeGauge(Dictionary < string, object > jsonResult)
+        {
+            OlapDataManager DataManager = new OlapDataManager(connectionString);
+            DataManager.SetCurrentReport(CreateOlapReport());
+            return htmlHelper.GetJsonData(jsonResult["action"].ToString(), DataManager);
+        }
+        private OlapReport CreateOlapReport()
+        {
+            OlapReport report = new OlapReport();
+            report.CurrentCubeName = "Adventure Works";
+            KpiElements kpiElement = new KpiElements();
+            kpiElement.Elements.Add(new KpiElement
+            {
+                Name = "Internet Revenue", ShowKPIGoal = true, ShowKPIStatus = true, ShowKPIValue = true, ShowKPITrend = true
+            });
+            DimensionElement dimensionElementColumn = new DimensionElement();
+            dimensionElementColumn.Name = "Customer";
+            dimensionElementColumn.AddLevel("Customer Geography", "Country");
+            MeasureElements measureElementColumn = new MeasureElements();
+            measureElementColumn.Elements.Add(new MeasureElement
+            {
+                Name = "Internet Sales Amount"
+            });
+            DimensionElement dimensionElementRow = new DimensionElement();
+            dimensionElementRow.Name = "Date";
+            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+            dimensionElementRow.Hierarchy.LevelElements["Fiscal Year"].Add("FY 2004");
+            dimensionElementRow.Hierarchy.LevelElements["Fiscal Year"].IncludeAvailableMembers = true;
+            report.CategoricalElements.Add(dimensionElementColumn);
+            report.CategoricalElements.Add(kpiElement);
+            report.CategoricalElements.Add(measureElementColumn);
+            report.SeriesElements.Add(dimensionElementRow);
+            return report;
+        }
+    }
 }
 
 {% endhighlight %}
 
-###Configure Web.Config 
+**Configure routing in Global Application Class**
 
-* You can expose services through the properties such as binding, contract and address etc., using an endpoint. In your application the service name is `WebApplication2.wcf.OlapGaugeService` where **"OlapGaugeService"** is the service class name and **“WebApplication2.wcf"** is the namespace name where service class appears. The following are the properties that meet the appropriate endpoint.
+To add a Global.asax in your existing Web Application, right-click on the project in Solution Explorer and select **Add > New Item.** In the **Add New Item** window, select **Global Application Class** and name it as “Global.asax”, click **Add.**
+Once you finish adding the **Global.asax** file, immediately add the namespace **“using System.Web.Http;”** and then you can configure routing like in the following code example.
 
-   1. **Contract:** This property indicates the contract of the endpoint that is exposed. Here you are referring to the **IOlapGaugeService** contract and hence it is `WebApplication2.wcf.IOlapGaugeService`.
-   2. **Binding:** In your application, you can use `webHttpBinding` to post and receive the requests and responses between client-end and service-end.
-   3. **BehaviorConfiguration:** This property contains the name of the behavior used in the endpoint. **endpointBehaviors** are illustrated as follows**.**
+{% highlight c# %}
 
-{% highlight xml %}
-
- <services>
-      <service name="WebApplication2.wcf.OlapGaugeService">
-        <endpoint address="" behaviorConfiguration="WebApplication2.wcf.OlapGaugeServiceAspNetAjaxBehavior"
-          binding="webHttpBinding" contract="WebApplication2.wcf.IOlapGaugeService" />
-      </service>
-    </services>
-
+public class Global: System.Web.HttpApplication
+{
+    protected void Application_Start(object sender, EventArgs e)
+    {
+        System.Web.Http.GlobalConfiguration.Configuration.Routes.MapHttpRoute(name: "DefaultApi", routeTemplate: "{controller}/{action}/{id}", defaults: new
+        {
+            id = RouteParameter.Optional
+        });
+        AppDomain.CurrentDomain.SetData("SQLServerCompactEditionUnderWebHosting", true);
+    }
+}
 {% endhighlight %}
 
-* The `endpointBehaviors` contains all the behaviors for an endpoint. You can link each endpoint to the respective behavior only by using the name property. In the following code example, `WebApplication2.wcf.OlapGaugeServiceAspNetAjaxBehavior` refers to the OlapGaugeService class under the namespace **WebApplication2.wcf** in **OlapGaugeService.svc.cs** file which is the appropriate behavior for the endpoint.
+N> Now, OlapGauge is rendered with Internet Revenue for Internet Sales Amount over a Fiscal Year 2004 across different customer geographic locations.
 
-{% highlight xml %}
+{% include image.html url="/js/OlapGauge/Getting-Started_images/OlapGauge.png" %}
 
-   <endpointBehaviors>
-        <behavior name="WebApplication2.wcf.OlapGaugeServiceAspNetAjaxBehavior">
-          <enableWebScript />
-        </behavior>
-    </endpointBehaviors>
-
-
-{% endhighlight %} 
-
-N>  In this example, “WebApplication2.wcf” indicates the namespace in the WCF Service and “OlapGaugeService” indicates the class name in the WCF Service.
-
-
-
+###WCF
+This section demonstrates the utilization of WCF service as endpoint binding OLAP datasource to a simple OlapGauge. For more details on this topic, [click here](http://help.syncfusion.com/js/olapgauge/data-binding).
+  

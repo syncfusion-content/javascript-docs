@@ -23,7 +23,7 @@ Ribbon tab and Contextual Tab are rendered with the following code example.
  
     <div ng-app="ribbonApp">
        <div ng-controller="RibbonCtrl">
-          <div id="defaultRibbon" ej-ribbon e-width="100%" e-applicationtab-itemid="ribbonmenu" e-applicationtab-type="ApplicationMenu">
+          <div id="defaultRibbon" ej-ribbon e-width="100%" e-applicationtab-menuitemid="ribbonmenu" e-applicationtab-type="ApplicationMenu">
              <div e-tabs>
                 <div e-tab e-id="home" e-text="HOME">
                    <div e-groups>
@@ -73,7 +73,7 @@ Ribbon tab and Contextual Tab are rendered with the following code example.
 
 After executing the above code, you can render the following output.
 
-{% include image.html url="/js/Ribbon/Angular-Support_images/Angular-Support_img1.png"%}
+![](/js/Ribbon/Angular-Support_images/Angular-Support_img1.png)
 
 ## Rendering Gallery and Custom Tooltip
 
@@ -132,5 +132,5 @@ Gallery and Custom Tooltip are rendered by using the following code example.
 
 After executing the above code, you can render the following output.
 
-{% include image.html url="/js/Ribbon/Angular-Support_images/Angular-Support_img2.png"%}
+![](/js/Ribbon/Angular-Support_images/Angular-Support_img2.png)
 

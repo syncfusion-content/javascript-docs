@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Trendlines
-description: Trendlines
+title: Trendlines in Essential JavaScript Chart
+description: What are the different types of trendlines available in chart.
 platform: js
 control: Chart
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Trendlines
 
-EjChart can generate Trendlines for Cartesian type series *(line, column, scatter, area, candle, hilo etc.)* except bar type series. You can add more than one trendline object to the **trendlines** option.
+EjChart can generate Trendlines for Cartesian type series *(line, column, scatter, area, candle, hilo etc.)* except bar type series. You can add more than one trendline object to the [trendlines](../api/ejchart#members:series-trendlines) option.
 
 {% highlight js %}
 
@@ -27,14 +27,17 @@ EjChart can generate Trendlines for Cartesian type series *(line, column, scatte
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img1.png" Caption="Adding Trendline to the chart"%}
+![](/js/Chart/Trendlines_images/Trendlines_img1.png)
+
+Adding Trendline to the chart
+{:.caption}
 
 [Click](http://js.syncfusion.com/demos/web/#!/azure/chart/trendlines) here to view the Trendlines online demo sample.
 
 
-## Customizing the trendline styles
+## Customize the trendline styles
 
-A trendline can be customized using properties such as **fill**, **width**, **dahsArray** and **opacity**. Default type of trendline is **"linear"**.
+A trendline can be customized by using the properties such as [fill](../api/ejchart#members:series-trendlines-fill), [width](../api/ejchart#members:series-trendlines-width), **dahsArray** and **opacity**. The default type of trendline is **"linear"**.
 
 {% highlight js %}
 
@@ -53,7 +56,10 @@ A trendline can be customized using properties such as **fill**, **width**, **da
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img2.png" Caption="Customizing the trendlines"%}
+![](/js/Chart/Trendlines_images/Trendlines_img2.png)
+
+Customizing the trendlines
+{:.caption}
 
 
 ## Types of Trendline
@@ -68,7 +74,7 @@ EjChart supports the following type of Trendlines.
 
 ### Linear
 
-To render Linear Trendline, you have to set *type* as **"linear"**. 
+To render Linear Trendline, you have to set the [type](../api/ejchart#members:series-trendlines-type) as **"linear"**. 
 
 {% highlight js %}
 
@@ -86,11 +92,14 @@ To render Linear Trendline, you have to set *type* as **"linear"**.
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img3.png" Caption="Adding Linear Trendline to the chart"%}
+![](/js/Chart/Trendlines_images/Trendlines_img3.png)
+
+Adding Linear Trendline to the chart
+{:.caption}
 
 ### Exponential
 
-Exponential Trendline can be rendered by setting the *type* as **"exponential"**. 
+Exponential Trendline can be rendered by setting the [type](../api/ejchart#members:series-trendlines-type) as **"exponential"**. 
 
 {% highlight js %}
 
@@ -108,11 +117,14 @@ Exponential Trendline can be rendered by setting the *type* as **"exponential"**
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img4.png" Caption="Adding Exponential Trendline to the chart"%}
+![](/js/Chart/Trendlines_images/Trendlines_img4.png)
+
+Adding Exponential Trendline to the chart
+{:.caption}
 
 ### Logarithmic
 
-Logarithmic Trendline can be rendered by setting the *type* as **"Logarithmic"**.  
+Logarithmic Trendline can be rendered by setting the [type](../api/ejchart#members:series-trendlines-type) as **"Logarithmic"**.  
 
 {% highlight js %}
 
@@ -130,11 +142,14 @@ Logarithmic Trendline can be rendered by setting the *type* as **"Logarithmic"**
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img5.png" Caption="Adding Logarithmic Trendline to the chart"%}
+![](/js/Chart/Trendlines_images/Trendlines_img5.png)
+
+Adding Logarithmic Trendline to the chart
+{:.caption}
 
 ### Power
 
-Power Trendline can be rendered by setting the *type* of trendline as **"power"**. 
+Power Trendline can be rendered by setting the [type](../api/ejchart#members:series-trendlines-type) of the trendline as **"power"**. 
 
 {% highlight js %}
 
@@ -152,11 +167,14 @@ Power Trendline can be rendered by setting the *type* of trendline as **"power"*
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img6.png" Caption="Adding Power Trendline to the chart"%}
+![](/js/Chart/Trendlines_images/Trendlines_img6.png)
+
+Adding Power Trendline to the chart
+{:.caption}
 
 ### Polynomial
 
-Polynomial Trendline can be rendered by setting trendline *type* as **"polynomial"**.  You can change the polynomial order by using **polynomialOrder** of trendlines. It ranges from 2 to 6.
+Polynomial Trendline can be rendered by setting the trendline [type](../api/ejchart#members:series-trendlines-type) as **"polynomial"**.  You can change the polynomial order by using the **polynomialOrder** of the trendlines. It ranges from 2 to 6.
 
 {% highlight js %}
 
@@ -174,7 +192,10 @@ Polynomial Trendline can be rendered by setting trendline *type* as **"polynomia
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img7.png" Caption="Adding Polynomial Trendline to the chart"%}
+![](/js/Chart/Trendlines_images/Trendlines_img7.png)
+
+Adding Polynomial Trendline to the chart
+{:.caption}
 
 ## Forecasting
 
@@ -185,7 +206,7 @@ Polynomial Trendline can be rendered by setting trendline *type* as **"polynomia
 
 ### Forward Forecasting
 
-The value set for **forwardForecast** is used to determine the distance moving towards the future trend.
+The value set for [forwardForecast](../api/ejchart#members:series-trendlines-forwardForecast) is used to determine the distance moving towards the future trend.
 
 {% highlight js %}
 
@@ -204,12 +225,15 @@ The value set for **forwardForecast** is used to determine the distance moving t
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img8.png" Caption="Adding ForwardForecast value to Chart Trendline"%}
+![](/js/Chart/Trendlines_images/Trendlines_img8.png)
+
+Adding ForwardForecast value to Chart Trendline
+{:.caption}
 
 
 ### Backward Forecasting
 
-The value set for **backwardForecast** is used to determine the past trends.
+The value set for the [backwardForecast](../api/ejchart#members:series-trendlines-backwardForecast) is used to determine the past trends.
 
 {% highlight js %}
 
@@ -228,11 +252,14 @@ The value set for **backwardForecast** is used to determine the past trends.
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img9.png" Caption="Adding BackwardForecast  value to Chart Trendline"%}
+![](/js/Chart/Trendlines_images/Trendlines_img9.png)
+
+Adding BackwardForecast  value to Chart Trendline
+{:.caption}
 
 ## Trendlines Legend
 
-To display legend item for trendline, use **name** property. You can interact with trendline legends similar to the series legends *(show/hide trendlines on legend click)*.  
+To display the legend item for trendline, use the [name](../api/ejchart#members:series-trendlines-name) property. You can interact with the trendline legends similar to the series legends *(show/hide trendlines on legend click)*.  
 
 {% highlight js %}
 
@@ -251,4 +278,7 @@ To display legend item for trendline, use **name** property. You can interact wi
 
 {% endhighlight %}
 
-{% include image.html url="/js/Chart/Trendlines_images/Trendlines_img10.png" Caption="Hide the Trendline series on legend mouse click"%}
+![](/js/Chart/Trendlines_images/Trendlines_img10.png)
+
+Hide the Trendline series on legend mouse click
+{:.caption}

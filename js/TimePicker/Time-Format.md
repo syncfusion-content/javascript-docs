@@ -39,5 +39,5 @@ Execute the above code to render the following output.
 
 
 
-{% include image.html url="/js/TimePicker/Time-Format_images/Time-Format_img1.png" %}
+![](/js/TimePicker/Time-Format_images/Time-Format_img1.png) 
 

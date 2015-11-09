@@ -16,7 +16,7 @@ The following screenshot demonstrates the functionality of **Slider** control. B
 
 
 
-{% include image.html url="/js/Slider/Getting-Started_images/Getting-Started_img1.png" %}
+![](/js/Slider/Getting-Started_images/Getting-Started_img1.png) 
 
 ## Create a Slider
 
@@ -220,7 +220,7 @@ Initialize **Slider** using the following code example.
 
 The following screenshot displays a **Mobile Purchase** using **Slider**.
 
-{% include image.html url="/js/Slider/Getting-Started_images/Getting-Started_img2.png" %}
+![](/js/Slider/Getting-Started_images/Getting-Started_img2.png) 
 
 
 
@@ -427,5 +427,5 @@ Initialize **Slider** using the following code example.
 
 The following screenshot displays a **EMI Calculation application** using **Slider.**
 
-{% include image.html url="/js/Slider/Getting-Started_images/Getting-Started_img3.png" %}
+![](/js/Slider/Getting-Started_images/Getting-Started_img3.png) 
 

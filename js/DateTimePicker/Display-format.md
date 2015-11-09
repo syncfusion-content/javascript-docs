@@ -113,7 +113,7 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
 
 
-{% include image.html url="/js/DateTimePicker/Display-format_images/Display-format_img1.png"%}
+![](/js/DateTimePicker/Display-format_images/Display-format_img1.png)
 
 
 ## Day Header format
@@ -192,5 +192,5 @@ Add the following code in your **HTML** page.
 {% endhighlight %}
   
 
-{% include image.html url="/js/DateTimePicker/Display-format_images/Display-format_img2.png"%}
+![](/js/DateTimePicker/Display-format_images/Display-format_img2.png)
 

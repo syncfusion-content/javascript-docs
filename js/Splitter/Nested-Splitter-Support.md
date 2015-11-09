@@ -68,5 +68,5 @@ In the **HTML** page set the corresponding **&lt;div&gt;** elements for outer an
 
 The output for **nested Splitter**.
 
-{% include image.html url="/js/Splitter/Nested-Splitter-Support_images/Nested-Splitter-Support_img1.png" %}
+![](/js/Splitter/Nested-Splitter-Support_images/Nested-Splitter-Support_img1.png) 
 

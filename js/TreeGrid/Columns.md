@@ -101,7 +101,7 @@ Code snippet to render custom template in TreeGrid columns
 
 The following screenshot displays the customized column in TreeGrid control.
 
-{% include image.html url="/js/TreeGrid/Columns_images/Columns_img1.png"%}
+![](/js/TreeGrid/Columns_images/Columns_img1.png)
 
 ### Column Filtering
 
@@ -171,13 +171,13 @@ The following are the types of column filtering types available in TreeGrid,
 
 The following screenshot displays the column filtering in TreeGrid control.
 
-{% include image.html url="/js/TreeGrid/Columns_images/Columns_img2.png"%}
+![](/js/TreeGrid/Columns_images/Columns_img2.png)
 
 ### Column Chooser
 
 TreeGrid supports enabling and disabling the visibility of the columns dynamically with the [`showColumnChooser`](/js/api/ejtreegrid#showcolumnchooserspan-classtype-signature-type-booleanbooleanspan "showColumnChooser") property. By using this property, the visibility of the custom columns can also be toggled. The **Column chooser** option is rendered as sub menu item within column menu in the TreeGrid columns.
 
-{% include image.html url="/js/TreeGrid/Columns_images/Columns_img3.png"%}
+![](/js/TreeGrid/Columns_images/Columns_img3.png)
 
 The column menu is enabled with the `showColumnChooser` property and the default value for this property is `false`
 
@@ -211,5 +211,5 @@ You can also disable the visibility of the particular column in column collectio
 
 {% endhighlight %}
 
-{% include image.html url="/js/TreeGrid/Columns_images/Columns_img4.png"%}
+![](/js/TreeGrid/Columns_images/Columns_img4.png)
 
