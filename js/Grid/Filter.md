@@ -6,7 +6,7 @@ platform: js
 control: Grid
 documentation: ug
 --- 
-# Filter 
+# Filtering
 
 Filtering helps to view particular or related records from dataSource which meets a given filtering criteria. To enable filter, set `allowFiltering` as `true`. 
 
