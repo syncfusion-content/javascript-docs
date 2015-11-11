@@ -300,7 +300,7 @@ connectors.push(connector);
 
 {% endhighlight %}
 
-![](/js/Diagram/Connector_images/Connector_img8.png")
+![](/js/Diagram/Connector_images/Connector_img8.png)
 
 The `length` and `direction` properties allow to define the flow and length of segment. The following code example illustrates how to create customized orthogonal segments.
 
