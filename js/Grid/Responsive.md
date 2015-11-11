@@ -236,7 +236,7 @@ MinWidth set to Grid
 
 ## Priority for Columns
 
-Columns to be visible or hidden based on `priority` and browser's width to best accommodate for possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
+Priority makes column to be visible or hidden based on the `priority` value and browser's width to best accommodate the possible columns. To enable `priority` for `columns`, `priority` needs to be defined in columns collection. These Priority values are from one to six.
 
 {% highlight html %}
 <div id="Grid"></div>
