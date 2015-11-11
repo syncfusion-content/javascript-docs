@@ -55,7 +55,7 @@ Currently grid data can be converted to different file formats in server-side on
 * WebAPI 
 * WCF Service
 * ASP.Net MVC Controller Action 
-* ASP.Net Webforms WebMethod 
+* ASP.Net WebMethod 
 
 Following code snippet demonstrate exporting with WebAPI controller.
 
