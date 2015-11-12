@@ -1,3 +1,11 @@
+---
+layout: post
+title: Miscellaneous
+description: Configure start day of week, step month, and enable/disable
+platform: js
+control: DatePicker
+documentation: ug
+---
 # Miscellaneous 
 
 ## Start Day
