@@ -1,0 +1,84 @@
+# Miscellaneous 
+
+## Start Day
+
+By default DatePicker calendar starts with “Sunday” and ends with “Monday”. You can redefine this start day by using “**[startDay](http://help.syncfusion.com/js/api/ejdatepicker#members:startday "")**” property.
+
+Refer below code to start Wednesday as start day. 
+
+{% highlight js %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                startDay: 3 // sets start day as Wednesday in DatePicker calendar
+
+            });
+
+        });
+
+{% endhighlight %}
+
+## Step Months
+
+DatePicker calendar allows you to quick navigate back and forth from one month to previous or next month by clicking the arrow button. By default it’s navigate one by one month. You can also navigate by skipping months in odd or even or any count by using “**[stepMonths](http://help.syncfusion.com/js/api/ejdatepicker#members:stepmonths "")**” property. 
+
+{% highlight js %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                stepMonths: 2 // skips the one months from current month(July to Sept to Nov)
+
+            });
+
+        });
+
+{% endhighlight %}
+
+## Read Only
+
+You can make DatePicker as read only by setting “**[readOnly](http://help.syncfusion.com/js/api/ejdatepicker#members:readonly "")**” property as true. It allows only to read the value and it can’t be changed by interaction.
+
+{% highlight js %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                readOnly: true //sets DatePicker as read only
+
+            });
+
+        });
+
+{% endhighlight %}
+
+## Enable or Disable
+
+You can enable or disable the DatePicker textbox by using “**[enabled](http://help.syncfusion.com/js/api/ejdatepicker#members:enabled "")**” property. In inline mode DatePicker calendar also gets enabled or disabled. 
+
+{% highlight js %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                enabled: false //disables the DatePicker textbox
+
+            });
+
+        });
+
+{% endhighlight %}
+
