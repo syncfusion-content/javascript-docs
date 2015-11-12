@@ -1,3 +1,11 @@
+---
+layout: post
+title: Accessibility
+description: Accessibility using keyboard shortcuts
+platform: js
+control: DatePicker
+documentation: ug
+---
 # Accessibility
 
 ## Keyboard Interaction

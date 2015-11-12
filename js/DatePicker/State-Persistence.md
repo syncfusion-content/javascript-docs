@@ -1,3 +1,11 @@
+---
+layout: post
+title: State Persistence
+description: DatePicker - State persistence properties 
+platform: js
+control: DatePicker
+documentation: ug
+---
 # State Persistence
 
 You can sustain the entire widget model of DatePicker even after form post or browser refresh by using “**[enablePersistence](http://help.syncfusion.com/js/api/ejdatepicker#members:enablepersistence "")**” property. So the entire model values such as 
