@@ -19,7 +19,7 @@ Diagram constraints allow to enable or disable the following behaviors.
 * Zoom and Pan
 * Undo Redo
 
-For more information about Diagram contraints, refer to [Diagram Constraints](/js/api/global "DiagramConstraints").
+For more information about Diagram contraints, refer to [Diagram Constraints](/js/api/global "#DiagramConstraints").
 
 **Example**
 
@@ -49,7 +49,7 @@ NodeConstraints allows to enable or disable the following behaviors of node.
 * Drag label
 * Define tooltip
 
-For more information about node contraints, refer to [Node Constraints](/js/api/global "NodeConstraints")
+For more information about node contraints, refer to [Node Constraints](/js/api/global "#NodeConstraints")
 
 **Example**
 
@@ -82,7 +82,7 @@ ConnectorConstraints allow to enable or disable certain behaviors of Connectors.
 * Bridging
 * Label dragging
 
-For more information about connector contraints, refer to [Connector Constraints](/js/api/global "ConnectorConstraints")
+For more information about connector contraints, refer to [Connector Constraints](/js/api/global "#ConnectorConstraints")
 
 **Example**
 
@@ -109,7 +109,7 @@ You can enable or disable certain behaviors of Port. They are as follows.
 
 * Connect
 
-For more information about port contraints, refer to [Port Constraints](/js/api/global "PortConstraints")
+For more information about port contraints, refer to [Port Constraints](/js/api/global "#PortConstraints")
 
 **Example**
 
@@ -139,7 +139,7 @@ Selector visually represents the selected elements with certain editable thumbs.
 * Rotator
 * User handles
 
-For more information about Selector contraints, refer to [Selector Constraints](/js/api/global "SelectorConstraints")
+For more information about Selector contraints, refer to [Selector Constraints](/js/api/global "#SelectorConstraints")
 
 **Example**
 
@@ -166,7 +166,7 @@ Snap Constraints control the visibility of gridlines and enable/disable snapping
 * Snap to either horizontal or vertical gridlines
 * Snap to both horizontal and vertical gridlines
 
-For more information about snap constraints, refer to [Snap Constraints](/js/api/global "SnapConstraints")
+For more information about snap constraints, refer to [Snap Constraints](/js/api/global "#SnapConstraints")
 
 **Example**
 

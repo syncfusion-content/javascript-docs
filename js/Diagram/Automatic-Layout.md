@@ -474,11 +474,11 @@ $("#diagram").ejDiagram({
 
 Orientation, spacings, and position of layout can be customized with a set of properties.
 
-To explore layout properties, refer to [Layout Properties](/js/api/ejDiagram "members:layout").
+To explore layout properties, refer to [Layout Properties](/js/api/ejDiagram "#members:layout").
 
 ### Layout Orientation
 
-Diagram provides support to customize the orientation of layout. You can set the desired orinetation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/js/api/global "LayoutOrientations")
+Diagram provides support to customize the orientation of layout. You can set the desired orinetation using `layout.orientation`. For more information about orientation, refer to [Layout Orientations](/js/api/global "#LayoutOrientations")
 
 The following code illustrates how to arrange the nodes in a "BottomToTop" orientation.
 
@@ -617,4 +617,4 @@ In above example, while expanding/collapsing a node, it is set as fixed node in 
 
 ### Refresh layout
 
-Diagram allows to refresh the layout at runtime. To refresh the layout, refer to [Refresh layout](/js/api/ejDiagram "methods:layout").
+Diagram allows to refresh the layout at runtime. To refresh the layout, refer to [Refresh layout](/js/api/ejDiagram "#methods:layout").

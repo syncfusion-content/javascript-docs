@@ -16,7 +16,7 @@ Connectors are objects used to create link between two points, nodes or ports to
 ## Create Connector
 
 Connector can be created by defining the start and end points. The path to be drawn can be defined with a collection of segments.
-To explore the properties of a `connector`, refer to [Connector Properties](/js/api/ejDiagram "members:connectors").
+To explore the properties of a `connector`, refer to [Connector Properties](/js/api/ejDiagram "#members:connectors").
 
 ### Add connectors through connectors collection
 
@@ -93,7 +93,7 @@ For more information about data source, refer to [Data Binding](/js/Diagram/Data
 
 ### Draw connectors
 
-Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/js/Diagram/Tools "Drawing-Tools:Connectors").
+Connectors can be interactively drawn by clicking and dragging on the Diagram surface by using **DrawingTool**. For more information about drawing connectors, refer to [Draw Connectors](/js/Diagram/Tools "#Drawing-Tools:Connectors").
 
 ## Update Connector at runtime
 
@@ -453,7 +453,7 @@ connectors.push(connector);
 ## Decorator
 
 Start and end points of a connector can be decorated with some customizable shapes like arrows, circles, diamond or path. You can decorate the connection end points with the `sourceDecorator` and `targetDecorator` properties of connector.
-To explore the properties of decorators, refer to [Decorator Properties](/js/api/ejDiagram "members:connectors-sourceDecorator").
+To explore the properties of decorators, refer to [Decorator Properties](/js/api/ejDiagram "#members:connectors-sourceDecorator").
 
 The `shape` property of decorator allows to define the shape of the decorators. The following code example illustrates how to create decorators of various shapes.
 
@@ -650,7 +650,7 @@ $("#DiagramContent").ejDiagram({
 
 The direction of the bridge can be customized with the property `bridgeDirection`. BridgeDirection defines the intersecting segment where the bridge has to be inserted. By default, the bridge direction points to the top.
 
-To explore the bridge directions, refer to [Bridge Directions](/js/Diagram/Interaction "Connection-Editing").
+To explore the bridge directions, refer to [Bridge Directions](/js/api/global "#BridgeDirection").
 
 The following code example illustrates how to draw the bridge at the bottom direction.
 
@@ -754,7 +754,7 @@ var targetDecorator = {
 ![](/js/Diagram/Connector_images/Connector_img23.png)
 
 ## Interaction
-Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/js/Diagram/Interaction "Connection-Editing").
+Diagram allows to edit the connectors at runtime. To edit the connector segments at runtime, refer to [Connection Editing](/js/Diagram/Interaction "#Connection-Editing").
 
 ## Constraints
-The `constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/js/Diagram/Constraints "ConnectorConstraints").
+The `constraints` property of connector allows to enable/disable certain features of connectors. For more information about constraints, refer to [Connector Constraints](/js/Diagram/Constraints "#ConnectorConstraints").

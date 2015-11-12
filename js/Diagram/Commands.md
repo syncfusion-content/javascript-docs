@@ -257,7 +257,7 @@ The corresponding arrow keys are used to move the selected elements towards up, 
 
 Nudge commands are particularly useful for accurate placement of elements.
 
-For more information, refer to [Keyboard Interaction](/js/Diagram/Interaction "Keyboard").
+For more information, refer to [Keyboard Interaction](/js/Diagram/Interaction "#Keyboard").
 
 ## BringIntoView
 
@@ -332,15 +332,15 @@ diagram.fitToPage("page", "content", {
 
 ### FitToMode
 
-Mode specifies whether the Diagram content has to be fit into view with respect to width, height, or entire bounds of the Diagram. To explore the mode, refer to [FitToMode](/js/api/global "FitMode").
+Mode specifies whether the Diagram content has to be fit into view with respect to width, height, or entire bounds of the Diagram. To explore the mode, refer to [FitToMode](/js/api/global "#FitMode").
 
 ### Region
 
-Region specifies the region/bounds of the Diagram content that is to be fit into the view. For more information about Region, refer to [Region](/js/api/global "Region").
+Region specifies the region/bounds of the Diagram content that is to be fit into the view. For more information about Region, refer to [Region](/js/api/global "#Region").
 
 ## Command Manager
 
-Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some in-built commands. For more information about inbuilt commands, refer to [Keyboard Interaction](/js/Diagram/Interaction "Keyboard").
+Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some in-built commands. For more information about inbuilt commands, refer to [Keyboard Interaction](/js/Diagram/Interaction "#Keyboard").
 Command Manager provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
 
 ### Custom command
@@ -350,7 +350,7 @@ To define a custom command, you need to specify following properties.
 * `canExecute`: a method to define whether the command can be executed at the moment. 
 * `gesture`: the combination of key gestures.
 
-To explore the properties of custom commands, refer to [Commands](/js/api/diagram "commandManager:commands")
+To explore the properties of custom commands, refer to [Commands](/js/api/ejDiagram "#commandManager:commands")
 
 The following code example illustrates how to define a custom command.
 

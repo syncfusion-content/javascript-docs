@@ -91,7 +91,7 @@ Nodes can be generated automatically with the information provided through data 
 
 ### Draw nodes
 
-Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **DrawingTool**. For more information about drawing nodes, refer to [Draw Nodes](/js/Diagram/Tools "Drawing-Tools:Shapes").
+Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **DrawingTool**. For more information about drawing nodes, refer to [Draw Nodes](/js/Diagram/Tools "#Drawing-Tools:Shapes").
 
 ## Update Node at runtime
 
