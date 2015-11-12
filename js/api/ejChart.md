@@ -8271,6 +8271,38 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g3q30pdl)
 
 
 
+### palette<span class="type-signature type array">array</span>
+{:#members:palette}
+
+
+
+
+Palette is used to store the series fill color in array and apply the color to series collection in the order of series index.
+
+
+Default value:
+{:.param}
+null
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   palette: ["#34e2d3", "#36fe3a", "#dede3d"]          
+
+});
+
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0vka45gc)
 
 ### Margin<span class="type-signature type object">object</span>
 {:#members:margin}
