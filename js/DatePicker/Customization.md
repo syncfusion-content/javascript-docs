@@ -1,3 +1,11 @@
+---
+layout: post
+title: DatePicker Customization
+description: DatePicker customization such as dimension, highlight dates, other months, etc.
+platform: js
+control: DatePicker
+documentation: ug
+---
 # Customization
 
 DatePicker provides more flexible way to customize the below listed properties.

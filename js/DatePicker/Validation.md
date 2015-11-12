@@ -1,3 +1,11 @@
+---
+layout: post
+title: Validation
+description: Validate the date using JQuery
+platform: js
+control: DatePicker
+documentation: ug
+---
 # Validation
 
 DatePicker is a form control and therefore its value to be validated before processing. Client side validation provides a better user experience by responding quickly at browser level. Most common client side validation plugin is “**[](http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js# "")**JQuery Validation”. 

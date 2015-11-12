@@ -1,3 +1,11 @@
+---
+layout: post
+title: Globalization and Localization
+description: Globalize formatting and Localize strings in DatePicker  
+platform: js
+control: DatePicker
+documentation: ug
+---
 # Globalization
 
 DatePicker has been provided with inbuilt localization support, so that it will be able adapt based on culture specific locale defined for it. DatePicker supports this localization with help of ‘[jQuery.globalize.js](http://ajax.aspnetcdn.com/ajax/globalize/0.1.1/globalize.min.js# "")’ library. So you have to refer this library and the culture specific file in page in order to localize (mandatory). 

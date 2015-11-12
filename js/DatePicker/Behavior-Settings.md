@@ -1,3 +1,11 @@
+---
+layout: post
+title: Behaviour Settings
+description: Configure DatePicker Behaviour settings
+platform: js
+control: DatePicker
+documentation: ug
+---
 # Behaviour Settings
 
 DatePicker has some default behaviour settings which helps you to perform more operation by inbuilt.

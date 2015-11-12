@@ -1,3 +1,11 @@
+---
+layout: post
+title: Display Format
+description: Formatting - Date and Time, Headers.
+platform: js
+control: DatePicker
+documentation: ug
+---
 # Formatting
 
 Formatting is the way of displaying the date or number as string in some standard format which is based on culture specific or user need.

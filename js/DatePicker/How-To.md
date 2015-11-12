@@ -1,3 +1,11 @@
+---
+layout: post
+title: How-to
+description: How-to section
+platform: js
+control: DatePicker
+documentation: ug
+---
 # How to?
 
 ## Customizing template with range selection between two DatePicker. 

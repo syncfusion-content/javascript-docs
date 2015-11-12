@@ -1,4 +1,12 @@
-# Getting started
+---
+layout: post
+title: Getting started with DatePicker
+description: To get start with DatePicker by adding references.
+platform: js
+control: DatePicker
+documentation: ug
+---
+# Getting Started
 
 ## A new HTML document and required codes
 
