@@ -7,6 +7,7 @@ This section contains guidelines on naming files, sections, documents and other 
 ## File naming Convention:
 
 * All files should have `.md` extension.
+* Do not use any special characters except hyphen in folder/file names 
 * Separate words in file names should be hyphenated
 * File names of the documents should have one or two-word names that describe the material covered in the document. 
 * Phrase title and description in a way that users can determine what questions the text will answer, and material that will be addressed, without reading the content. This eases the time spent looking for answers, and improvises search/scanning, and possibly **SEO**.
@@ -18,6 +19,91 @@ This section contains guidelines on naming files, sections, documents and other 
 
 > **Description :** How to create a chart, add series, enable tooltip and other functionalities.
 
+## Adding a Document to left side Tree
+
+* Each new markdown document should be added to the toc.html file, it is available at the root level of the repository
+
+> **Syntax**: <li><a href="/[platform-name]/[control-name]/[topic]">[topic]</a></li>
+
+> **Example**: <li><a href="/js/grid/multi-sorting-in-touch-device">Multi sorting in Touch device</a></li>
+
+
+## Front Matter
+
+Each markdown file should have the following information at the top of the document.
+
+> **Syntax:**
+
+> \---
+
+> title: page title
+
+> description: page description
+
+> platform: platform name identifier
+
+> control: control name
+
+> documentation: ug/api
+
+> keywords: Search engine will use these keyword to get the search results
+
+> \---
+
+> **Example:**
+
+> \---
+
+> title: Getting started with Chart widget for Syncfusion Essential JS
+
+> description: How to create a chart, add series, enable tooltip and other functionalities
+
+> platform: js
+
+> control: chart
+
+> documentation: ug
+
+> keywords: ejchart, chart, chart widget, js chart
+
+> \---
+
+### Platform Name Identifiers
+
+Please use the following platform names only in the front matter information
+
+> Based on these platform names, we are showing search results, download and forum links
+
+|    Platform       	  	|PlatformName Identifier|
+|:-------------------------:|:---------------------:|
+| Android           	  	| andrroid				|
+| ASP.NET           	  	| aspnet				|
+| ASP.NET Classic   	  	| aspnet-classic		|
+| ASP.NET MVC             	| ejmvc					|
+| ASP.NET MVC Classic     	| aspnetmvc-claasic		|
+| ASP.NET MVC Mobile      	| mobileaspnetmvc		|
+| BigData			      	| bigdata				|
+| Dashboard			      	| dashboard				|
+| File Formats			  	| file-formats			|
+| Install & Configuration 	| common				|
+| iOS					  	| ios					|
+| JavaScript			  	| js					|
+| JavaScript Mobile		  	| mobilejs				|
+| LightSwitch 			  	| lightswitch			|
+| Orubase				  	| orubase				|
+| Predictive Analytics		| predictive-analytics	|
+| Report Server				| report-server			|
+| Silverlight				| silverlight			|
+| Universal Classic			| universal-classic		|
+| UWP						| uwp					|
+| Windows Forms				| windowsforms			|
+| Windows Phone				| wp8					|
+| WinRT						| winrt					|
+| WPF						| wpf					|
+| Xamarin					| xamarin				|
+
+## Encoding
+* Markdown files should be saved with "Encoding without UTF-8" encoding format <http://www.larshaendler.com/2015/01/20/remove-bom-with-notepad>
 
 ## Markdown Syntax Guideline
 * Follow the syntax mentioned in this [link](http://kramdown.gettalong.org/syntax.html) for most of the elements. There are some elements which need special styling or additional settings to do. They are described in the following topics.
@@ -73,9 +159,17 @@ This section contains guidelines on naming files, sections, documents and other 
 
 * Adding image with caption:
 
-> **Syntax**: \{% include image.html url="image path" caption="caption text"%}
+> **Syntax**: 
+> \!\[Alt text](/path/to/img.jpg)
+>
+> Caption Text
+> \{:.caption}
 
-> **Example**: \{% include image.html url="/js/DatePicker/Appearance-and-Styling_images/Appearance-and-Styling_img2.png" caption="caption text"%}
+> **Example**: 
+> \!\[Alt text](/path/to/img.jpg)
+>
+> Adding Filters in Grid
+> {:.caption}
 
 * Maximum width of the image should be 750 PX
 * Maximum height of the image should be 550 PX
@@ -103,36 +197,54 @@ This section contains guidelines on naming files, sections, documents and other 
 
 * To add the different type of predefined blockqoute use the follwing syntax. Since the title or relevant icon for this block of content will be added later, do not add the **"Title"**. 
 
-**Information** or **Notes**
+**Information**
 > **Syntax**: I> [Content]
 
-> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> **Example**: I> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+
+**Notes**
+> **Syntax**: N> [Content]
+
+> **Example**: N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Warning**
 > **Syntax**: W> [Content]
 
-> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> **Example**: N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Errors**
 > **Syntax**: E> [Content]
 
-> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> **Example**: E> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 **Tips**
 > **Syntax**: T> [Content]
 
-> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> **Example**: T>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
-### Notes multiple paragraph style
-* Use the BR tag between the content to enable multiple paragraph style.  
+### Notes/Info/Warning/Error/Tips multiple paragraph style
 
+> **Syntax**:
+>
+> N> [Line 1]
+> 
+> N> [Line 2]
+> 
+> N> [Line 3]
+> 
+> N> [Line 4]
 
-**Tips**
-> **Syntax**: T> [Content]
-
-> **Example**:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. **<BR>**Duis volutpat, elit eget iaculis venenatis
-
-
+> **Example**
+> 
+> N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> 
+> N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> 
+> N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
+> 
+> N>
+> 
+> N> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat, elit eget iaculis venenatis
 
 ### See also
 
@@ -161,15 +273,17 @@ This section contains guidelines on naming files, sections, documents and other 
 
 | Variable Name     	           | Output         | Description            					                             |  
 | ---------------------------------|:--------------:|:----------------------------------------------------------------------:|  
-| {{ site.releaseversion }}        | 13.2.0.29      |Syncfusion Essential Studio version                                     |  
-| {{ site.20esreleaseversion }}    | 13.1200.0.29   |Syncfusion Essential Studio assemblies version for .NET Framework 2.0   |  
-| {{ site.35esreleaseversion }}    | 13.1350.0.29   |Syncfusion Essential Studio assemblies version for .NET Framework 3.5   |  
-| {{ site.40esreleaseversion }}    | 13.1400.0.29   |Syncfusion Essential Studio assemblies version for .NET Framework 4.0   |  
-| {{ site.45esreleaseversion }}    | 13.1450.0.29   |Syncfusion Essential Studio assemblies version for .NET Framework 4.5   |  
-| {{ site.451esreleaseversion }}   | 13.1451.0.29   |Syncfusion Essential Studio assemblies version for .NET Framework 4.5.1 |  
-| {{ site.mvc3releaseversion }}    | 13.1300.0.29   |Syncfusion Essential Studio assemblies based on MVC Version 3.0         |  
-| {{ site.mvc4releaseversion }}    | 13.1400.0.29   |Syncfusion Essential Studio assemblies based on MVC Version 4.0         |  
-| {{ site.mvc5releaseversion }}    | 13.1500.0.29   |Syncfusion Essential Studio assemblies based on MVC Version 5.0         |  
+| {{ site.releaseversion }}        | 13.3.0.7       |Syncfusion Essential Studio version                                     |  
+| {{ site.20esreleaseversion }}    | 13.3200.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 2.0   |  
+| {{ site.35esreleaseversion }}    | 13.3350.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 3.5   |  
+| {{ site.40esreleaseversion }}    | 13.3400.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 4.0   |  
+| {{ site.45esreleaseversion }}    | 13.3450.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 4.5   |  
+| {{ site.451esreleaseversion }}   | 13.3451.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 4.5.1 |  
+| {{ site.46esreleaseversion }}    | 13.3460.0.7    |Syncfusion Essential Studio assemblies version for .NET Framework 4.5.1 | 
+| {{ site.mvc3releaseversion }}    | 13.3300.0.7    |Syncfusion Essential Studio assemblies based on MVC Version 3.0         |  
+| {{ site.mvc4releaseversion }}    | 13.3400.0.7    |Syncfusion Essential Studio assemblies based on MVC Version 4.0         |  
+| {{ site.mvc5releaseversion }}    | 13.3500.0.7    |Syncfusion Essential Studio assemblies based on MVC Version 5.0         |  
+| {{ site.mvc6releaseversion }}    | 13.3600.0.7    |Syncfusion Essential Studio assemblies based on MVC Version 5.0         |  
 
 ## API Reference Guideline
 
