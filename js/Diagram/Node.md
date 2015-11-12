@@ -91,7 +91,7 @@ Nodes can be generated automatically with the information provided through data 
 
 ### Draw nodes
 
-Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **DrawingTool**. For more information about drawing nodes, refer to [Draw Nodes](/js/Diagram/Tools#Drawing-Tools:Shapes "Draw Nodes").
+Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **DrawingTool**. For more information about drawing nodes, refer to [Draw Nodes](/js/Diagram/Tools#drawing-tools:shapes "Draw Nodes").
 
 ## Update Node at runtime
 
@@ -286,8 +286,8 @@ var nodes = [{
 
 ## Interaction
 
-Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Interaction](/js/Diagram/Interaction "Interaction").
+Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Edit Nodes](/js/Diagram/Interaction "Interaction").
 
 ## Constraints
 
-The `constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/js/Diagram/Constraints#NodeConstraints "Node Constraints").
+The `constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/js/Diagram/Constraints#nodeconstraints "Node Constraints").

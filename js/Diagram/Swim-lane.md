@@ -55,7 +55,7 @@ var swimlane = {
 ## Add swimlane into diagram
 
 Adding a swimlane to the Diagram is same as adding a node. You can add either through the `nodes` collection or through the client side method `add`. You can also drag and drop a swimlane from symbol palette.
-For more information about adding a node/swimlane to the Diagram, refer to [Add Nodes](/js/Diagram/Node#Create-Node "Add Nodes").
+For more information about adding a node/swimlane to the Diagram, refer to [Add Nodes](/js/Diagram/Node#create-node "Add Nodes").
 
 The following code example illustrates how to add a swimlane to the Diagram through `nodes` collection.
 

@@ -19,7 +19,7 @@ Diagram provides inbuilt support to track the changes that are made through inte
 
 Undo redo commands can be executed through short cut keys. Short cut key for undo is ctrl+z and short cut key for redo is ctrl+y.
 
-For more information, refer to [Keyboard Interactions](/js/Diagram/Interaction#Keyboard "Keyboard Interactions").
+For more information, refer to [Keyboard Interactions](/js/Diagram/Interaction#keyboard "Keyboard Interactions").
 
 ### Undo redo through public APIs
 

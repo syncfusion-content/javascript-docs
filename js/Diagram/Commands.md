@@ -257,7 +257,7 @@ The corresponding arrow keys are used to move the selected elements towards up, 
 
 Nudge commands are particularly useful for accurate placement of elements.
 
-For more information, refer to [Keyboard Interaction](/js/Diagram/Interaction#Keyboard "Keyboard Interaction").
+For more information, refer to [Keyboard Interaction](/js/Diagram/Interaction#keyboard "Keyboard Interaction").
 
 ## BringIntoView
 
@@ -312,8 +312,8 @@ Description</th></tr>
            fitToPage </td><td>
 <b>mode</b> (string) Value accepted: ej.datavisualization.Diagram.FitMode    <b>region</b> (string) Value accepted-ej.datavisualization.Diagram.Region   <b>margin</b> (object) </td><td>
 <b>FitToPage</b> command fits the <b>Diagram</b> into the view. The area/bounds to be fit into view is specified through the parameters.
-<b>mode</b> – [FitToMode](#FitToMode).
-<b>region</b> – [Region](#Region).
+<b>mode</b> – [FitToMode](#fittomode).
+<b>region</b> – [Region](#region).
 <b>margin</b> – Space that is to be left in between the content and viewport. </td></tr>
 </table>
 
@@ -332,15 +332,15 @@ diagram.fitToPage("page", "content", {
 
 ### FitToMode
 
-Mode specifies whether the Diagram content has to be fit into view with respect to width, height, or entire bounds of the Diagram. To explore the mode, refer to [FitToMode](/js/api/global#FitMode "FitToMode").
+Mode specifies whether the Diagram content has to be fit into view with respect to width, height, or entire bounds of the Diagram. To explore the mode, refer to [FitToMode](/js/api/global#fitmode "FitToMode").
 
 ### Region
 
-Region specifies the region/bounds of the Diagram content that is to be fit into the view. For more information about Region, refer to [Region](/js/api/global#Region "Region").
+Region specifies the region/bounds of the Diagram content that is to be fit into the view. For more information about Region, refer to [Region](/js/api/global#region "Region").
 
 ## Command Manager
 
-Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some in-built commands. For more information about inbuilt commands, refer to [Keyboard Interaction](/js/Diagram/Interaction#Keyboard "Keyboard Interaction").
+Diagram provides support to map/bind command execution with desired combination of key gestures. Diagram provides some in-built commands. For more information about inbuilt commands, refer to [Keyboard Interaction](/js/Diagram/Interaction#keyboard "Keyboard Interaction").
 Command Manager provides support to define custom commands. The custom commands are executed, when the specified key gesture is recognized.
 
 ### Custom command
@@ -350,7 +350,7 @@ To define a custom command, you need to specify following properties.
 * `canExecute`: a method to define whether the command can be executed at the moment. 
 * `gesture`: the combination of key gestures.
 
-To explore the properties of custom commands, refer to [Commands](/js/api/ejDiagram#commandManager:commands "Commands")
+To explore the properties of custom commands, refer to [Commands](/js/api/ejDiagram#commandmanager:commands "Commands")
 
 The following code example illustrates how to define a custom command.
 

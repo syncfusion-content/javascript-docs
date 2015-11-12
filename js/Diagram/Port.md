@@ -103,11 +103,11 @@ diagram.updatePort(selectedObject.name, selectedObject.ports[0], { fillColor: "r
 ## Connect with ports
 
 Connector’s `sourcePort` and `targetPort` properties allow to create connections between some specific points of source/target nodes. 
-For more information about creating connections with port, refer to [Connections with ports](/js/Diagram/Connector#Connections-with-ports "Connections with ports")
+For more information about creating connections with port, refer to [Connections with ports](/js/Diagram/Connector#connections-with-ports "Connections with ports")
 
 ## Appearance 
 
-You can change the shape of port by using its `shape` property. To explore the different types of port shapes, refer to [Port Shapes](/js/api/global#PortShapes "Port Shapes").
+You can change the shape of port by using its `shape` property. To explore the different types of port shapes, refer to [Port Shapes](/js/api/global#portshapes "Port Shapes").
 The appearance of ports can be customized with a set of style specific properties. 
 
 The following code illustrates how to change the appearance of port.
@@ -139,4 +139,4 @@ var nodes = [{ name: "node", ports: ports }];
 
 ## Constraints
 
-The `constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Constraints](/js/Diagram/Constraints"#PortConstraints")
+The `constraints` property allows to enable/disable certain behaviors of ports. For more information about port constraints, refer to [Port Constraints](/js/Diagram/Constraints#portconstraints)

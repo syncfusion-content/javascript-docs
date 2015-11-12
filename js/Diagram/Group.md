@@ -253,4 +253,4 @@ $("#DiagramContent").ejDiagram({
 
 ## Interaction
 
-You can edit the group and its children at runtime. For more information about how to interact with a group, refer to [Interaction](/js/Diagram/Interaction#Selection "Interaction").
+You can edit the group and its children at runtime. For more information about how to interact with a group, refer to [Edit Groups](/js/Diagram/Interaction#selection "Interaction").
