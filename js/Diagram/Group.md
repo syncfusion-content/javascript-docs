@@ -109,7 +109,7 @@ diagram.add(group);
 
 Group nodes can be predefined and added to symbol palette. You can drop those groups into Diagram, when required.
 
-To explore how to add groups from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette)
+To explore how to add groups from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette "Symbol Palette")
 
 ## Container
 
@@ -253,4 +253,4 @@ $("#DiagramContent").ejDiagram({
 
 ## Interaction
 
-You can edit the group and its children at runtime. For more information about how to interact with a group, refer to [Interaction](/js/Diagram/Interaction "#Selection").
+You can edit the group and its children at runtime. For more information about how to interact with a group, refer to [Interaction](/js/Diagram/Interaction#Selection "Interaction").

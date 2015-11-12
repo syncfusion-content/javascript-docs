@@ -83,15 +83,15 @@ diagram.add(node);
 
 ### Add node from palette
 
-Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding nodes from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette).
+Nodes can be predefined and added to palette and can be dropped into the Diagram when needed. For more information about adding nodes from symbol palette, refer to [Symbol Palette](/js/Diagram/Symbol-Palette "Symbol Palette").
 
 ### Create node through data source
 
-Nodes can be generated automatically with the information provided through data source. The default properties for these nodes are fetched from default settings. For more information about data source, refer to [Data Binding](/js/Diagram/Data-Binding).
+Nodes can be generated automatically with the information provided through data source. The default properties for these nodes are fetched from default settings. For more information about data source, refer to [Data Binding](/js/Diagram/Data-Binding "Data Binding").
 
 ### Draw nodes
 
-Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **DrawingTool**. For more information about drawing nodes, refer to [Draw Nodes](/js/Diagram/Tools "#Drawing-Tools:Shapes").
+Nodes can be interactively drawn by clicking and dragging the Diagram surface by using **DrawingTool**. For more information about drawing nodes, refer to [Draw Nodes](/js/Diagram/Tools#Drawing-Tools:Shapes "Draw Nodes").
 
 ## Update Node at runtime
 
@@ -140,7 +140,7 @@ var nodes = [{
 
 ## Types
 
-Diagram allows to add different kind of nodes. To explore the types of nodes, refer to [Types of Nodes](/js/Diagram/Shapes).
+Diagram allows to add different kind of nodes. To explore the types of nodes, refer to [Types of Nodes](/js/Diagram/Shapes "Types of Nodes").
 
 ## Appearance
 
@@ -286,8 +286,8 @@ var nodes = [{
 
 ## Interaction
 
-Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Interaction](/js/Diagram/Interaction).
+Diagram provides support to drag, resize, or rotate the node interactively. For more information about editing a node at runtime, refer to [Interaction](/js/Diagram/Interaction "Interaction").
 
 ## Constraints
 
-The `constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/js/Diagram/Constraints "NodeConstraints").
+The `constraints` property of node allows you to enable/disable certain features. For more information about node constraints, refer to [Node Constraints](/js/Diagram/Constraints#NodeConstraints "Node Constraints").

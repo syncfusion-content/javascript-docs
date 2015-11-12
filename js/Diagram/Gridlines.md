@@ -34,11 +34,11 @@ $(function() {
 
 ![](/js/Diagram/Gridlines_images/Gridlines_img1.png)
 
-To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints](/js/Diagram/Constraints "#snapConstraints")
+To show only horizontal/vertical gridlines or to hide gridlines, refer to [Constraints](/js/Diagram/Constraints#snapConstraints "Constraints")
 
 ## Appearance
 
-You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](/js/api/diagram "#snapSettings:horizontalGridLines")
+You can customize the appearance of the gridlines by using a set of predefined properties. To explore those properties, refer to [Gridlines](/js/api/ejDiagram#snapSettings:horizontalGridLines "Gridlines")
 The `horizontalGridLines` and `verticalGridLines` properties allow to customize the appearance of the gridlines. The following code example illustrates how to customize the appearance of gridlines.
 
 {% highlight js %}
@@ -128,7 +128,7 @@ $(function() {
 
 {% endhighlight %}
 
-To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] (/js/Diagram/Constraints "#SnapConstraints")
+To enable/disable snapping to horizontal/vertical lines, refer to [Constraints] (/js/Diagram/Constraints#SnapConstraints "Constraints")
 
 ## Customization of Snap Intervals
 

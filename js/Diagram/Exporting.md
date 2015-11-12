@@ -39,7 +39,7 @@ Format is to specify the type/format of the exported file. By default, Diagram i
 * BMP
 * SVG
 
-For more information about the exportable formats, refer to [File Formats](/js/api/global "FileFormats").
+For more information about the exportable formats, refer to [File Formats](/js/api/global#FileFormats "File Formats").
 
 ### Margin
 
@@ -70,7 +70,7 @@ Mode specifies whether the Diagram is to be exported as files or as data(ImageUR
 * Exports and downloads Diagram as image
 * Exports Diagram as data of formats ImageURL/SVG
 
-For more information about the exporting modes, refer to [Exporting Modes](/js/api/global "ExportModes").
+For more information about the exporting modes, refer to [Exporting Modes](/js/api/global#ExportModes "Exporting Modes").
 
 The following code example illustrates how to export the Diagram as raw data.
 
@@ -95,7 +95,7 @@ You can export any particular region of the Diagram and the region is categorize
 * Region that fits all nodes and connectors that are added to model
 * Region that fits all pages (single or multiple pages based on page settings)
 
-For more information about region, refer to [Regions](/js/api/global "Region").
+For more information about region, refer to [Regions](/js/api/global#Region "Regions").
 
 The following code example illustrates how to export the region occupied by the Diagram elements.
 
