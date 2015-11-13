@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization with RichTextEditor widget for Syncfusion Essential JS
-description: Intialize RichTextEditor widget with specified Localization 
+description: Initialize the RichTextEditor widget with specified Localization  
 platform: js
 control: RTE
 documentation: ug
