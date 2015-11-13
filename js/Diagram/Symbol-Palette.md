@@ -240,7 +240,7 @@ $("#palette").ejSymbolPalette({
 });
 
 {% endhighlight %}
-To explore the properties of symbol palette, refer to [Symbol Palette Properties](/js/api/ejsymbolpalette "members").
+To explore the properties of symbol palette, refer to [Symbol Palette Properties](/js/api/ejsymbolpalette#members "Symbol Palette Properties").
 
 ## Drop nodes into diagram 
 
