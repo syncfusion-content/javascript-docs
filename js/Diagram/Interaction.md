@@ -88,7 +88,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 ## Drag
 
 * An object can be dragged by clicking and dragging it. When multiple elements are selected, dragging any one of the selected elements move every selected element.
-* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines "Snapping").
+* While dragging, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines#snapping "Snapping").
 
 ![](/js/Diagram/Interaction_images/Interaction_img3.png)
 
@@ -96,7 +96,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 
 * Selector is surrounded by eight thumbs. When dragging these thumbs, selected items can be resized smaller or larger.
 * When one corner of the selector is dragged, opposite corner is in a static position.
-* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines "Snapping").
+* While resizing, the objects are snapped towards the nearest objects to make better alignments. For better alignments, refer to [Snapping](/js/Diagram/Gridlines#snapping "Snapping").
 
 ![](/js/Diagram/Interaction_images/Interaction_img4.png)
 
@@ -105,7 +105,7 @@ N> SelectedItems’s children is a read-only property. You cannot change the chi
 * A rotate handler is placed above the selector. Clicking and dragging the handler in a circular direction lead to rotate the node.
 * The node is rotated with reference to the static pivot point.
 * Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
-* For more information about pivot, refer to [Pivot](/js/Diagram/Node "Pivot").
+* For more information about pivot, refer to [Position](/js/Diagram/Node#position "Position").
 
 ![](/js/Diagram/Interaction_images/Interaction_img5.png)
 
@@ -314,4 +314,4 @@ The following table illustrates those commands with the associated key values.
 | F2 | startLabelEditing | Starts to edit the label of selected element |
 | Esc | endLabelEditing | Sets the label mode as View and stops editing. |
 
-To add custom commands, configure or modify key/mouse gesture through [Command Manager](/js/Diagram/command-manager).
+To add custom commands, configure or modify key/mouse gesture through [Command Manager](/js/Diagram/command-manager "Command Manager").

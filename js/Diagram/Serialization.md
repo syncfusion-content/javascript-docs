@@ -33,7 +33,7 @@ localStorage.setItem("diagram", JSON.stringify(json));
 
 {% endhighlight %}
 
-Diagram can also be saved as raster or vector image files. For more information about saving the Diagram as images, refer to [Exporting](/js/Diagram/Exporting).
+Diagram can also be saved as raster or vector image files. For more information about saving the Diagram as images, refer to [Exporting](/js/Diagram/Exporting "Exporting").
 
 
 ## Load
