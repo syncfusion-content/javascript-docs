@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image and File browser with RichTextEditor widget for Syncfusion Essential JS
+title: Image and File browser in RichTextEditor widget for Syncfusion Essential JS
 description: Configuring and working with Image and File browser in RichTextEditor  
 platform: js
 control: RTE

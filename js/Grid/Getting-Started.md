@@ -91,39 +91,26 @@ To get started, you can use the `ej.web.all.min.js` file that encapsulates all t
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Essential Studio for JavaScript">
-
     <meta name="author" content="Syncfusion">
-
     <title></title>
-
     <!-- Essential Studio for JavaScript  theme reference -->
-
     <link rel="stylesheet" href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" />
 
     <!-- Essential Studio for JavaScript  script references -->
-
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-
     <script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"> </script>
 
-    <!-- Add custom scripts here -->
+    <!-- Add your custom scripts here -->
 
 </head>
-
 <body>
 
 </body>
-
 </html>
 {% endhighlight %}
 
@@ -144,7 +131,6 @@ The grid can be created from a HTML `DIV` element with the HTML `id` attribute s
 <script>
 
     $(function () {
-
         $('#Grid').ejGrid({
             dataSource: shipDetails
         });
@@ -200,14 +186,13 @@ N> _ODataAdaptor is the default adaptor for the DataManager. On binding to other
 
 <div id="Grid"></div>
 <script type="text/javascript">
-     $(function () {
+   $(function () {
         var dataManager = new ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Foods");
         $("#Grid").ejGrid({
             dataSource: dataManager,
             allowPaging: true,
             pageSettings: { pageSize: 8 }
        });
-
    });
 </script>
 {% endhighlight %}
@@ -236,7 +221,6 @@ N> _Pager settings can be customized by using the [`pageSettings.pageSize`](http
              pageSettings: { pageSize: 8 },
              allowFiltering: true
          });
-
     });
     </script>
 {% endhighlight %}
@@ -283,9 +267,7 @@ Refer to the following code example for initial grouping.
             pageSettings: { pageSize: 8 },
             allowGrouping: true,
             groupSettings: { groupedColumns: ["ItemType"] }
-
          });
-
     });
 
 </script>
@@ -322,7 +304,6 @@ Refer to the following code example for initial grouping.
            ]
         });
     })
-
 
 </script>
 {% endhighlight %}

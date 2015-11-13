@@ -19,7 +19,7 @@ Page settings enable to customize the appearance, width, and height of the Diagr
 The size and appearance of the Diagram pages can be customized with the `pageSettings` property. 
 
 The `pageWidth` and `pageHeight` properties of page settings define the size of the page. In addition to that, you can customize the appearance of the page with a set of appearance specific properties.
-To explore those properties, refer [Page Settings](/js/api/ejDiagram "members:pagesettings").
+To explore those properties, refer [Page Settings](/js/api/ejDiagram#members:pagesettings "Page Settings").
 
 You can also customize the appearance of off-page regions with the property `backgroundColor`.
 

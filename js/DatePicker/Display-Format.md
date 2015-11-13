@@ -1,206 +1,217 @@
 ---
 layout: post
-title: Display-Format
-description: display format
+title: Display Format
+description: Formatting - Date and Time, Headers.
 platform: js
 control: DatePicker
 documentation: ug
 ---
+# Formatting
 
-# Display Format
+Formatting is the way of displaying the date or number as string in some standard format which is based on culture specific or user need.
 
-## Date format
-
-**Date format** defines a format or structure of the displayed date in the textbox. You can change the **Date** **format** by using **“dateFormat”** property.
-
-The standard formats are listed as follows,
-
-Date format
+Below table shows the patterns to format date value.
 
 <table>
-   <tr>
-      <th>Format Name</th>
-      <th>Formats</th>
-   </tr>
-   <tr>
-      <td>
-         Default
-      </td>
-      <td>
-         MM/dd/yyyy
-      </td>
-   </tr>
-   <tr>
-      <td>
-         Short
-      </td>
-      <td>
-         d M, y
-      </td>
-   </tr>
-   <tr>
-      <td>
-         Medium
-      </td>
-      <td>
-         d MM, y
-      </td>
-   </tr>
-   <tr>
-      <td>
-         Full
-      </td>
-      <td>
-         dddd,d MMMM,yy
-      </td>
-   </tr>
-   <tr>
-      <td>
-         UTC
-      </td>
-      <td>
-         yyyy-MM-dd
-      </td>
-   </tr>
+<tr>
+<td>
+**Format** **Pattern**<br/><br/></td><td>
+**Description**<br/><br/></td><td>
+**Result**<br/><br/></td></tr>
+<tr>
+<td>
+d<br/><br/></td><td>
+The day of the month between 1 and 31.  <br/><br/></td><td>
+"1"  to "31"<br/><br/></td></tr>
+<tr>
+<td>
+dd<br/><br/></td><td>
+The day of the month with leading zero if required.<br/><br/></td><td>
+"01" to "31"<br/><br/></td></tr>
+<tr>
+<td>
+ddd<br/><br/></td><td>
+Abbreviated day name.<br/><br/></td><td>
+"Mon" to "Sun"<br/><br/></td></tr>
+<tr>
+<td>
+dddd<br/><br/></td><td>
+The full day name<br/><br/></td><td>
+"Monday" to "Sunday"<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+M<br/><br/></td><td>
+The month of the year between 1 - 12<br/><br/></td><td>
+"1" to "12"<br/><br/></td></tr>
+<tr>
+<td>
+MM<br/><br/></td><td>
+The month of the year with leading zero if required<br/><br/></td><td>
+"01" to "12"<br/><br/></td></tr>
+<tr>
+<td>
+MMM<br/><br/></td><td>
+Abbreviated month name<br/><br/></td><td>
+"Jan" to "Dec"<br/><br/></td></tr>
+<tr>
+<td>
+MMMM<br/><br/></td><td>
+The full month name<br/><br/></td><td>
+"January" to "December"<br/><br/></td></tr>
+<tr>
+<td>
+<br/><br/></td><td>
+<br/><br/></td><td>
+<br/><br/></td></tr>
+<tr>
+<td>
+yy<br/><br/></td><td>
+The year as a two-digit number<br/><br/></td><td>
+"99" or "08"<br/><br/></td></tr>
+<tr>
+<td>
+yyyy<br/><br/></td><td>
+The full four digit year<br/><br/></td><td>
+"1999" or "2008"<br/><br/></td></tr>
 </table>
+## Date Format
 
+Each culture has some specific date format. Date format defines a format or structure of the displayed date in the textbox. You can change the date format by using **“**[dateFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:dateformat "")**”** property
 
-You can display the date value depending on culture using above specified **dateformat**.
-
-The following steps explain you how to set the date format as "**d MM, y**"
-
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
-
-
-{% highlight html %}
-  
-<input id="datepicker" type="text" />
-      
-{% endhighlight %}
-  
-{% highlight js %}
-
-    // Add the code to set the date format as "d MM, y" for DatePicker widget
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          dateFormat: "d MM, y"
-       });
-    });
-
-{% endhighlight %}
-
-
-The following screenshot displays the output for the above code.
-
-
-
-![](/js/DatePicker/Display-Format_images/Display-Format_img1.png)
-
-## Day header format
-
-It specifies the **header format** of days in short, long or min types. You can set the **DatePicker** **day** **header format** by using **“dayHeaderFormat”** property. By default “**dayHeaderFormat**” property is set as “**ShowHeaderMin**” in **DatePicker** widget. 
-
-Enum for DatePicker day header format
+The standard formats are listed as follows
 
 <table>
-   <tr>
-      <th>Day header</th>
-      <th>Description</th>
-   </tr>
-   <tr>
-      <td>
-         ShowHeaderShort
-      </td>
-      <td>
-         It shows the day header format in short
-      </td>
-   </tr>
-   <tr>
-      <td>
-         ShowHeaderMin
-      </td>
-      <td>
-         It shows the header format in min
-      </td>
-   </tr>
-   <tr>
-      <td>
-         ShowHeaderLong
-      </td>
-      <td>
-         It shows the day header format in long
-      </td>
-   </tr>
-   <tr>
-      <td>
-         ShowHeaderNone
-      </td>
-      <td>
-         Removes the day header
-      </td>
-   </tr>
+<tr>
+<td>
+**Format** **Name** <br/><br/></td><td>
+**Formats**<br/><br/></td></tr>
+<tr>
+<td>
+default<br/><br/></td><td>
+"M/d/yyyy"<br/><br/></td></tr>
+<tr>
+<td>
+Short<br/><br/></td><td>
+“d, M, y”<br/><br/></td></tr>
+<tr>
+<td>
+Medium <br/><br/></td><td>
+“d MM, y”<br/><br/></td></tr>
+<tr>
+<td>
+Full <br/><br/></td><td>
+“dddd, MMMM, yy”<br/><br/></td></tr>
+<tr>
+<td>
+UTC<br/><br/></td><td>
+“yyyy-MM-dd”<br/><br/></td></tr>
 </table>
+By default ‘en-US’ culture date format is "M/d/yyyy".
 
-
-The following steps explain you how to get the **dayHeaderFormat** for **DatePicker** widget.
-
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
-
-
-{% highlight html %}
-
-<input id="datepicker" type="text" />
-      
-{% endhighlight %}
-  
 {% highlight js %}
 
-    // Add the code to get the dayHeaderFormat of DatePicker widget
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          dayHeaderFormat: ej.DatePicker.Header.ShowHeaderLong
-       });
-    });
-    
+        $(function () {
+
+            // create DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                value: new Date(), // sets the current date
+
+                locale: "en-US", // sets English -US culture
+
+                dateFormat: "yyyy/dd/MM" // sets the date format to display in input.
+
+            });
+
+        });
+
 {% endhighlight %}
 
-The following screenshot displays the output for the above code.
+To get the culture and date format of DatePicker, refer the below code example
 
-
-![](/js/DatePicker/Display-Format_images/Display-Format_img2.png)
-
-## Header format
-
-It specifies the **Header format** to be displayed in the pop up of **DatePicker**. The header in the **DatePicker** popup is displayed in the specified format.  By default “**dayHeaderFormat**” property is set as “**MMMM/yyyy**” in **DatePicker** widget. 
-
-The following steps explain you how to the header format to be displayed in the pop up of **DatePicker**
-
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget
-
-{% highlight html %}
-  
-<input id="datepicker" type="text" />
-      
-{% endhighlight %}
-  
 {% highlight js %}
 
-    // Add the code to set the header format to be displayed in the pop up of DatePicker widget
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          headerFormat: "MMMM/yy"
-       });
-    });
+        // create instance for datePicker
+
+        // only after control creation we can get dateObj otherwise it throws exception
+
+        var dateObj = $("#datePicker").ejDatePicker('instance');
+
+        dateObj.option('locale'); //returns the culture in string
+
+        dateObj.option('dateFormat');// returns the date Format in string  
 
 {% endhighlight %}
 
+N> by default date format is based on culture specific. You have to refer the required culture specific files in head section of html page in order to localize DatePicker and customize different format for that culture. 
 
-The following screenshot displays the output for the above code.
+## Header Format
 
+DatePicker calendar consists of header, day header, days and footer section. In which header section shows the current view of DatePicker calendar by displaying the selected day or month or year. It can be formatted as like date format by using “**[headerFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:headerformat "")**” property.
 
+{% highlight js %}
 
-![](/js/DatePicker/Display-Format_images/Display-Format_img3.png)
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                headerFormat: "yyyy MMMM" //sets the selected header format to display in header.
+
+            });
+
+        });
+
+{% endhighlight %}
+
+## Day Header
+
+Day header determines the days name to be displayed in terms of short, medium and long in DatePicker calendar by using “**[dayHeaderFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:dayheaderformat "")**” property. Also the DatePicker calendar size varies with this specified values.
+
+{% highlight js %}
+
+        $(function () {
+
+            // create DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                dayHeaderFormat: ej.DatePicker.Header.Long //sets the day header as long
+
+            });
+
+        });
+
+{% endhighlight %}
+
+## Tooltip with Formatting
+
+DatePicker calendar shows tooltip on hovering the date by specifying the formatted date of hovered date. Its helps you to get clear view about the date going to select. You can show or hide this tooltip option by using “**[showTooltip](http://help.syncfusion.com/js/api/ejdatepicker#members:showtooltip "")**” property.
+
+You can also change the format of tooltip by using “**tooltipFormat**” property. Below codes example allows to show tooltip and format its value. 
+
+{% highlight js %}
+
+        $(function () {
+
+            // creates DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                showTooltip: true, //show tooltip on hovering date on DatePicker calendar
+
+                tooltipFormat: "dd/MM/yy"// sets tooltip for dates in DatePicker calendar
+
+            });
+
+        });
+
+{% endhighlight %}
 

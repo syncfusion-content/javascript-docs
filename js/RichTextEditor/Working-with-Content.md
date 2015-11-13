@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Content related in RichTextEditor widget for Syncfusion Essential JS
+title: Content related operation in RichTextEditor widget for Syncfusion Essential JS
 description: Working with Content related changes in RichTextEditor widget
 platform: js
 control: RTE
@@ -311,7 +311,7 @@ $(function () {
             " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
         });
     });
-    function pasteContent() {
+    function pasteContent() {
         var editor = $("#texteditor").ejRTE("instance");
         var selectedHtml = editor.getSelectedHtml();
         editor.pasteContent("<p style ='background-color:yellow;color:skyblue'>" + selectedHtml + "</p>");

@@ -1,24 +1,25 @@
 ---
 layout: post
 title: Overview
-description: overview
+description: DatePicker introduction with key features
 platform: js
 control: DatePicker
 documentation: ug
 ---
+# Overview 
 
-# Overview
+The DatePicker control provides support for displaying DatePicker calendar in web page and allows user to pick or directly enter the date value. Also it consists of flexible option to navigate back and forth from month and years to pick the date in an easiest way.  
 
-The **DatePicker** control for **JavaScript** provides support to display a calendar within a webpage and to pick a date. The **DatePicker** displays the dates of the current month with the current date highlighted. You can customize the date format, restrict the selectable date ranges, localize the culture to change the language of the **DatePicker** calendar, and drill down to month, decades, and centuries. A Today button option in the footer helps navigation and sets the current system day in the **DatePicker**.
+## Key features
 
-**Key Features**
+* Formatting the date value.
+* Globalization.
+* Range the date value to pick.
+* Quick picking date by drill down or up.
+* State persistence.
+* Responsive dimension.
+* Flexible customization.
+* Custom Styling.
+* Inbuilt JQuery validation.
+* Accessibility (keyboard and ARIA).
 
-* **Previous and next button**: The **DatePicker** control contains the previous and next buttons to navigate to other months, decades, and centuries.
-* **Min and Max date range**: These features allow the selectable date ranges to be restricted.
-* **Dates in Other Months**: This feature allows the **DatePicker** to show dates in other months.
-* **Start and depth level**: This feature allows the control to display the calendar starting from days, months, years, or decades. It can also restrict the drill-down depth. 
-* **Date Format and Localization**: The **DatePicker** control uses Globalize.js, a simple **JavaScript** library that allows to globalize and localize the format and dates in a culture-specific fashion. You can find this Globalize.js on [GitHub](https://github.com/jquery/globalize). 
-* **Keyboard Navigation**: You can interact with the **DatePicker** control by using the keyboard. 
-* **RTL support**: This feature allows the calendar to be aligned from right-to-left. 
-* **DisplayInline**: This feature allows the **DatePicker** control to function as a calendar control.
-* **Theme: Essential JavaScript controls** feature 12 built-in themes: 6 that are flat and 6 with gradient effects. They also support custom skin options to set user-defined themes.

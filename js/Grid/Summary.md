@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Summary
 
-Summary rows visibility can be controlled by [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary "showSummary") property and it can be added to grid by using [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows "summaryRows") array property. The example snippet is follows
+Summary rows visibility can be controlled by [`showSummary`](http://help.syncfusion.com/js/api/ejgrid#members:showsummary "showSummary") property and it can be added to grid by using [`summaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows "summaryRows") array property. The following code example describes the above behavior.
 
 {% highlight html %}
 
@@ -258,7 +258,7 @@ W> Minimum one column should be grouped to show summary details.
 
 ## Group Caption Summary
 
-To enable Group Caption Summary for particular Summary Group, [`SummaryRows`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) should have [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") should be `true`.
+To show summaries in each Group's Caption row, particular [summary row](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows) should have [`showTotalSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showtotalsummary "showtotalsummary") as `false` and [`showCaptionSummary`](http://help.syncfusion.com/js/api/ejgrid#members:summaryrows-showcaptionsummary "showCaptionSummary") as `true`.
 
 
 {% highlight html %}

@@ -4910,7 +4910,6 @@ argument.parentDetails{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the given parent node details</td> 
 </tr>
-<tr>
 </tbody>
 </table>
 
@@ -5081,8 +5080,6 @@ argument.keyCode{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the keypressed keycode value</td>
 </tr>
-<tr>
-<tr>
 </tbody>
 </table>
 
@@ -5182,8 +5179,6 @@ argument.parentDetails{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the parent node values</td> 
 </tr>
-<tr>
-<tr>
 </tbody>
 </table>
 
@@ -5416,8 +5411,6 @@ argument.ajaxOptions{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the AJAX settings object</td>
 </tr>
-<tr>
-<tr>
 </tbody>
 </table>
 
@@ -5513,8 +5506,6 @@ argument.keyCode{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the keypressed keycode value</td>
 </tr>
-<tr>
-<tr>
 </tbody>
 </table>
 
@@ -5596,8 +5587,6 @@ argument.nodeDetails{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the given target node values</td> 
 </tr>
-<tr>
-<tr>
 </tbody>
 </table>
 
@@ -5994,8 +5983,6 @@ argument.error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the AJAX error object</td>
 </tr>
-<tr>
-<tr>
 </tbody>
 </table>
 
@@ -6086,8 +6073,6 @@ argument.parentDetails{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the given parent node details</td> 
 </tr>
-<tr>
-<tr>
 </tbody>
 </table>
 
@@ -6183,8 +6168,6 @@ argument.parentDetails{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the given parent node details</td> 
 </tr>
-<tr>
-<tr>
 </tbody>
 </table>
 
@@ -6558,8 +6541,6 @@ argument.keyCode{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the keypressed keycode value</td>
 </tr>
-<tr>
-<tr>
 </tbody>
 </table>
 
@@ -6647,8 +6628,6 @@ argument.parentDetails{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the given parent node details</td> 
 </tr>
-<tr>
-<tr>
 </tbody>
 </table>
 
@@ -7367,8 +7346,6 @@ argument.keyCode{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the keypressed keycode value</td>
 </tr>
-<tr>
-<tr>
 </tbody>
 </table>
 

@@ -1,371 +1,192 @@
 ---
 layout: post
-title: Behavior-Settings
-description: behavior settings
+title: Behaviour Settings
+description: Configure DatePicker Behaviour settings
 platform: js
 control: DatePicker
 documentation: ug
 ---
+# Behaviour Settings
 
-# Behavior Settings
+DatePicker has some default behaviour settings which helps you to perform more operation by inbuilt.
 
-## Button Text
+## Selected Date
 
-Set the display text for the **Button** in the **DatePicker** popup. The **buttonText** is set **Today** (String), by default. You can change this default value by using **ButtonText** property to change the **Button Text**.
-
-The following steps explain how to set the **Button Text** for **DatePicker** widget.
-
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
-
-
-{% highlight html %}
-
-<input id="datepicker" type="text" />
-    
-{% endhighlight %}
-
+DatePicker value can be selected through picking date from DatePicker calendar or you can set it by using “**[value](http://help.syncfusion.com/js/api/ejdatepicker#members:value "")**” property.
 
 {% highlight js %}
-
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          buttonText: "Todaydate"
-       });
-    });
-
-{% endhighlight %}
-
-
-The following screenshot displays the output for the above code example.
-
-
-
-![](/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img1.png)
-
-
-
-## Enabled
-
-You can **Enable** or **Disable** the **DatePicker** widget. The “**enabled**” property is set to ‘**true**’ in **DatePicker** widget, by default. You can disable the **DatePicker** widget by setting the “**enabled**” property as ‘**false**’.
-
-The following steps explain you how to disable the **DatePicker** widget.
-
-In the HTML page, add a **&lt;input&gt;** element to render **DatePicker** widget.
-
-{% highlight html %}
   
-<input id="datepicker" type="text" />
-       
+    $(function () {
+
+        // creates DatePicker from input with current date value.
+
+        $("#datePicker").ejDatePicker({
+
+            value: new Date(), // sets the current date
+
+            change: "onChange" // sets handler to listen value change
+
+        });
+    });
+
+    function onChange(args) {
+
+        //args contains entire model of DatePicker to get the value of all properties.
+
+        //alert DatePicker shows the previous date and selected date.
+
+        alert(" previous date is : " + args.prevDate + " \n selected date is : " + args.value);
+
+    }    
+
 {% endhighlight %}
 
+DatePicker allows only the valid date to be entered and it should be within the specified range. By default, strict mode is enabled in DatePicker, so it will restrict invalid date and resets to previous date if it’s not valid. To know more about strict mode refer [Strict Mode](#_Strict_Mode "").
+
+## Date Range
+
+DatePicker provides an option to restrict the user to pick the date from specified range of value. You can utilize this option by make use of ‘**[minDate](http://help.syncfusion.com/js/api/ejdatepicker#members:mindate "")**’ and ‘**[maxDate](http://help.syncfusion.com/js/api/ejdatepicker#members:maxdate "")**’ property.
+
+**minDate** - specifies the minimum date to be picked in DatePicker calendar by disabling below date of minDate.
+
+**maxDate** -  specifies the maximum date to be picked in DatePicker calendar by disabling above date of maxDate. 
+
 {% highlight js %}
-       
-    // Add the code to disable the DatePicker widget
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          enabled: false
-       });
+     
+	   $(function () {
+
+            // creates DatePicker from input with current date value
+ 
+            $("#datePicker").ejDatePicker({
+
+                value: new Date(), // sets the current date
+
+                minDate: new Date("2014/06/03"), // sets min date to be pick able in DatePicker calendar
+
+                maxDate: new Date("2014/06/19") // sets max date to be pick able in DatePicker calendar
+
+            });
+
+        });      
+
+{% endhighlight %}
+
+N> You can change the ‘**minDate’** and ‘**maxDate’** value dynamically like ‘**value’** property
+
+## Start and Depth Level
+
+Start and depth represents the view of DatePicker calendar. DatePicker calendar has four different level of views, which are month, year, decade and century. It allows you to quick pick date from different months and years by drilling down or up. 
+
+By default DatePicker starts with month view and can be drill down into year, decade and century. You can also change the start and depth level view by using “**[startLevel](http://help.syncfusion.com/js/api/ejdatepicker#members:startlevel "")**” and “**[depthLevel](http://help.syncfusion.com/js/api/ejdatepicker#members:depthlevel "")**” property. So that you can initiate DatePicker calendar to view at any level and control the navigation.
+
+* “month”   – shows the days in month to pick.
+* “year”    – shows the months in year to pick.
+* “decade”  – shows the years in decade to pick.
+* “century” – shows the decades in century to pick.
+
+{% highlight js %}
+
+    $(function () {
+
+        // creates DatePicker from input with current date value
+
+        $("#datePicker").ejDatePicker({
+
+            value: new Date(), // sets the current date.
+
+            startLevel: ej.DatePicker.Level.Year, //sets the start view in DatePicker calendar.
+
+            depthLevel: ej.DatePicker.Level.Year, //defines when the DatePicker calendar to return date.
+
+            dateFormat: "MMMM yyyy" //sets the date format to display in input.
+
+        });
+
     });
 
 {% endhighlight %}
-  
-## Enable strict mode
 
-When **enableStrictMode** is set to ‘**true**’, **DatePicker** doesn’t allow the value out of the range, it internally changes to the correct value. The “**enableStrictMode**” property is set as ‘**false**’ in **DatePicker**, by default.
+## Display Inline Mode
 
-The following steps explain you how to enable the “**enableStrictMode**” for **DatePicker** widget.
+DatePicker provides an option to act as calendar by setting the “**[displayInline](http://help.syncfusion.com/js/api/ejdatepicker#members:displayinline "")**” property as true. In this mode the DatePicker calendar has been placed open state constantly to pick the date. 
 
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** Widget.
+You can make use of ‘div’ element to create DatePicker when you going for inline mode, which gives good visualization as like calendar in page instead of creating with ‘input’ element. 
 
 {% highlight html %}
 
-<input id="datepicker" type="text"/>
+    <!--div element to create inline mode DatePicker-->
+
+    <div id="datePicker"></div>
 
 {% endhighlight %}
-
 
 {% highlight js %}
 
-    // Add the code to enable the enableStrictMode for DatePicker widget
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          enableStrictMode: true
-       });
-    });
+        $(function () {
+
+            // create DatePicker from div
+
+            $("#datePicker").ejDatePicker({
+
+                displayInline: true //sets inline to represent datePicker as DatePicker calendar
+
+            });
+
+        });
 
 {% endhighlight %}
 
+## Strict Mode
 
-## Fields
+Strict mode in DatePicker allows you to enter valid or invalid date in input textbox, but an error class will get added to exhibit if it’s an invalid date. When you set “**[enableStrictMode](http://help.syncfusion.com/js/api/ejdatepicker#members:enablestrictmode "")**” to false, DatePicker allows you to enter only the valid date or else it will resets with previous value. 
 
-You can specify the **fields** **mapping** in **DatePicker**. You can also provide the support to add image, image styles, sprite css class, query, and HTML attributes.
+Also the valid date should be defined in specified range or else it resets to min or maximum date when the entered date is out of range
 
-The **DatePicker** widget provides support to customize the particular date, that is, you can customize the date with image and tooltip options. The following table specifies the special date fields and its configuration.
-
-Special dates fields
-
-<table>
-   <tr>
-      <th>Name</th>
-      <th>
-         Description
-      </th>
-      <th>
-         Default value
-      </th>
-      <th>
-         Data type
-      </th>
-   </tr>
-   <tr>
-      <td>
-         date
-      </td>
-      <td>
-         The date that has to be customized. 
-      </td>
-      <td>
-         Null 
-      </td>
-      <td>
-         String 
-      </td>
-   </tr>
-   <tr>
-      <td>
-         tooltip
-      </td>
-      <td>
-         Shows the tooltip to mention date while mouse hovering. 
-      </td>
-      <td>
-         Null 
-      </td>
-      <td>
-         String 
-      </td>
-   </tr>
-   <tr>
-      <td>
-         iconClass 
-      </td>
-      <td>
-         You can set the customized css with this property.
-      </td>
-      <td>
-         Null 
-      </td>
-      <td>
-         String
-      </td>
-   </tr>
-</table>
-N>  Set the image as background url and its styles within this class.
-
-The following steps explain you how to specify the **fields** **mapping** in **DatePicker** widget.
-
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
-
-{% highlight html %}
-  
-<input id="datepicker" type="text" />
-
-{% endhighlight %}
-
+By default “**enableStrictMode**” is true, so you can enter any value other than date too, but an **error** class (**‘.** **e** **-** **error’**) will get added to wrapper to highlight the invalid date.
 
 {% highlight js %}
 
-    // Add the code to specify the fields mapping in DatePicker widget
-    $(function() {
-       var today = new Date(),
-          spldays = [{
-             date: new Date(today.getFullYear(), today.getMonth(), 1),
-             tooltip: "In America",
-             iconClass: "flag-am"
-          }, {
-             date: new Date(today.getFullYear(), today.getMonth() + 1, 6),
-             tooltip: "In Argendina",
-             iconClass: "flag-ar"
-          }, {
-             date: new Date(today.getFullYear(), today.getMonth() + 1, 27),
-             tooltip: "In Bangladesh",
-             iconClass: "flag-bd"
-          }, {
-             date: new Date(today.getFullYear(), today.getMonth() - 1, 3),
-             tooltip: "In Brasil",
-             iconClass: "flag-br"
-          }, {
-             date: new Date(today.getFullYear(), today.getMonth() - 2, 22),
-             tooltip: "In Canada",
-             iconClass: "flag-ca"
-          }, ]
-          // declaration
-       $("#datepicker").ejDatePicker({
-          specialDates: spldays,
-          fields: {
-             date: "date",
-             tooltip: "tooltip",
-             iconClass: "iconClass"
-          }
-       });
-    });
+        $(function () {
+
+            // create DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                enableStrictMode: false //sets active strict mode
+
+            });
+
+        });
 
 {% endhighlight %}
 
-Add the following styles to specify the **fields mapping** in **DatePicker** widget.
+You can also override the **“** **error** **”** class to highlight when invalid date is entered.
 
-N> Images for this example are available in ‘installed location /Content/images’ and define the images in mentioned CSS. Henceforth the images are displayed.
+{% highlight js %}
 
+        $(function () {
 
+            // create DatePicker from input
+
+            $("#datePicker").ejDatePicker({
+
+                enableStrictMode: true //sets inactive strict mode
+
+            });
+
+        });
+		
+{% endhighlight %}
 
 {% highlight css %}
 
-<style type="text/css" class="cssStyles">
-   .flag .e-image {
-   background: url("../Content/flags.png") no-repeat scroll -50px -75px rgba(0, 0, 0, 0);
-   float: left;
-   height: 15px;
-   margin-left: 5px;
-   margin-top: 3px;
-   width: 20px;
-   }
-   .e-datepicker.e-calendar {
-   width: 350px;
-   }
-</style>
+    <style>
+        /* error class to highlight invalid date */
+
+        .e-error .e-input {
+            color: Red; /* highlights invalid date font color in input */
+        }
+    </style>
 
 {% endhighlight %}
-
-
-The following screenshot displays the output for the above code example.
-
-![](/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img2.png)
-
-## Define start day of the week
-
-It specifies the **start day of the week** in **DatePicker** calendar. The “**value**” is set to **0** (Sunday), by default. 
-
-The following steps explain you how to specify the **start day of the week** in **DatePicker** widget.
-
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
-
-{% highlight html %}  
-  
-<input id="datepicker" type="text" />
-      
-{% endhighlight %}
-
-{% highlight js %}
-
-    // Add the code to specify the start day of the week in DatePicker widget
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          startDay: 2
-       });
-    });
-
-{% endhighlight %}
-
-The following screenshot displays the output for the above code example.
-
-![](/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img5.png)
-
-## Step months
-
-It specifies the number of months to navigate at one click in next and previous button that is achieved by “**stepMonths”** property**.** You can change the **step months** by changing the default value by using “**stepMonths”** property. 
-
-The following steps explain you how to specify the number of months to navigate at one click.
-
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
- 
-{% highlight html %}
-
-<input id="datepicker" type="text"/>
-
-{% endhighlight %}
-
-
-{% highlight js %}
-
-    // Add the code to specify the number of months to navigate at one click
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          stepMonths: 2
-       });
-    });
-
-{% endhighlight %}
-
-## Define value
-
-It specifies the selected date value. You can specify the selected date value by using the “**value”** property.
-
-The following steps explain you how to specify the selected value.
-
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
-
-
-{% highlight html %}
-  
-<input id="datepicker" type="text" />
-      
-{% endhighlight %}
-  
-{% highlight js %}
-
-    // Add the code to specify the selected date value
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          value: new Date("5/8/2014")
-       });
-    });
-
-{% endhighlight %}
-
-
-The following screenshot displays the output for the above code example.
-
-
-
-![](/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img6.png)
-
-## Watermark Text
-
-It specifies the **Watermark Text** to display the input text in **DatePicker**. The “**watermarkText”** property is set as “**select date**” in **DatePicker**, by default. 
-
-The following steps explain how to specify the **watermark Text** in **DatePicker** widget.
-
-In the **HTML** page, add a **&lt;input&gt;** element to render **DatePicker** widget.
-
-
-{% highlight html %}
-  
-<input id="datepicker" type="text" />
-      
-{% endhighlight %}
-  
-{% highlight js %}
-    
-    // Add the code to specify Watermark Text to be display in input text
-    $(function() {
-       // declaration
-       $("#datepicker").ejDatePicker({
-          watermarkText: "Enter date"
-       });
-    });
-
-{% endhighlight %}
-
-
-The following screenshot displays the output for the above code example.
-
-
-
-![](/js/DatePicker/Behavior-Settings_images/Behavior-Settings_img7.png)
 

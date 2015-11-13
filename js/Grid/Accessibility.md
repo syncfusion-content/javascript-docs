@@ -12,7 +12,7 @@ Web Accessibility is achieved in the Grid control through Keyboard Navigation an
 
 ## Keyboard Navigation
 
-Supported Keyboard Interactions keys with description which are in Grid
+Supported Keyboard Interactions keys with its description are tabulated as follows
 
 <table>
 <tr>
