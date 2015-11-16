@@ -1,3 +1,11 @@
+---
+title: Schedule - Views
+description: How to display all views of Schedule
+platform: js
+control: schedule
+documentation: ug
+keywords: day, week, workweek, month, timeline, horizontal, custom  
+---
 ## Views
 
 The number of days and its associated appointments are usually grouped together in Scheduler to organize different views. The available view options in Scheduler are as follows,
