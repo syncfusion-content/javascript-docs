@@ -1,3 +1,11 @@
+---
+title: Setting dimension
+description: How to set dimension for Schedule control
+platform: js
+control: schedule
+documentation: ug
+keywords: dimension, cell dimension, cell width, cell height 
+---
 ## Setting Dimension
 
 The dimension normally refers to the height and width of the element. With Scheduler, it is possible to set 2 kinds of dimensions.

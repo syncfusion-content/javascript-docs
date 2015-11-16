@@ -1,3 +1,11 @@
+---
+title: Show or Hide indicator, all day row, header, timescale
+description: How to show or hide indicator, all day row, header, timescale
+platform: js
+control: schedule
+documentation: ug
+keywords: time indicator, all day, header, timescale 
+---
 ## Miscellaneous
 
 ### Time Indicator

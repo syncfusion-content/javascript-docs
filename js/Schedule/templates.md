@@ -1,3 +1,11 @@
+---
+title: Schedule - Template
+description: How to customize schedule with template
+platform: js
+control: schedule
+documentation: ug
+keywords: appointment template, template, cell template, resource header 
+---
 ## Template
 
 Template is applicable to all the below specified elements of the Scheduler,

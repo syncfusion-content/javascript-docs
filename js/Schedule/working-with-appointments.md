@@ -1,3 +1,11 @@
+---
+title: Working with appointments
+description: How to work with appointments with recurrence also
+platform: js
+control: schedule
+documentation: ug
+keywords: appointments, appointment, recurrence, recurring appoitnment, all day 
+---
 ## Working with Appointments
 
 An appointment represents a certain time interval in a schedule cell depicting a plan made for the specified time interval. 

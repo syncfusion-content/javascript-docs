@@ -1,3 +1,11 @@
+---
+title: Keyboard support with shortcut keys
+description: How to access Schedule operation with Keyboard shortcuts 
+platform: js
+control: schedule
+documentation: ug
+keywords: keyboard, shortcuts 
+---
 ## Keyboard Navigation
 
 The shortcut keys for accessing the sub-elements of the scheduler and other Scheduler actions are tabulated in the following table.

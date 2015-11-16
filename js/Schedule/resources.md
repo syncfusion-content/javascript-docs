@@ -1,3 +1,11 @@
+---
+title: Schedule - Resource handling with multiple option
+description: How to handle resources in schedule with multiple option
+platform: js
+control: schedule
+documentation: ug
+keywords: resource, resources, multiple resources, grouping 
+---
 ## Resources
 
 The Scheduler provides **Resources** support, with which the single Scheduler is shared by multiple resources simultaneously. Each resource in the Scheduler is arranged in a column/row wise with individual spacing to display all its respective appointments on a single page. It also supports the grouping of resources, thus enabling the categorization of resources in a hierarchical structure and shows it either in expandable groups (**Horizontal** **view**) or else vertical hierarchy one after the other (**Vertical** **view**).
