@@ -1,3 +1,11 @@
+---
+title: Schedule - Context Menu	
+description: How to display context menu on appointment and cell with customization
+platform: js
+control: schedule
+documentation: ug
+keywords: context-menu
+---
 ## Context Menu
 
 Scheduler provides default context menu options for both appointments as well as work cells. It also allows to define additional custom context menu options.

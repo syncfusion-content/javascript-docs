@@ -1,3 +1,11 @@
+---
+title: State persistence
+description: How to persist schedule properties
+platform: js
+control: schedule
+documentation: ug
+keywords: persist, state persist, persistence, state persistence 
+---
 ## Persistence
 
 State persistence allows the Scheduler to retain the current model value in the browser cookies for state maintenance. This action is handled through the property **[enablePersistence](http://help.syncfusion.com/js/api/ejschedule#members:enablepersistence "")** which is set to false by default.

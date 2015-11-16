@@ -1,3 +1,11 @@
+---
+title: Schedule - Customization	
+description: How to customize working hours, date, and appointment window
+platform: js
+control: schedule
+documentation: ug
+keywords: customization, work hours, appointment window, display hours 
+---
 ## Customization
 
 The Scheduler can be customized in various aspects like - 

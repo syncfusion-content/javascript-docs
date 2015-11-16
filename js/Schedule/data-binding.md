@@ -1,3 +1,11 @@
+---
+title: Data binding with Schedule	
+description: How to bind local and remote data to Schedule
+platform: js
+control: schedule
+documentation: ug
+keywords: data binding, local data, remote data 
+---
 ## Data Binding
 
 ### Appointment Fields
