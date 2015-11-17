@@ -1,7 +1,7 @@
 ---
 layout: post
-title: User Interaction with RichTextEditor widget for Syncfusion Essential JS
-description: User Interaction customization for RichTextEditor widget
+title: User Interface for the RichTextEditor widget for Syncfusion Essential JS
+description: User Interface for RichTextEditor widget (toolbar, content area, and footer)
 platform: js
 control: RTE
 documentation: ug
@@ -252,13 +252,13 @@ The editor offers you to add external CSS file to style the &lt; iframe &gt; ele
 });
 
  });
-function addCssToIframe() {
-var editor = $("#texteditor").ejRTE("instance");
-var iframeDoc = editor.getDocument();
-var linkTag = document.createElement("link");
-linkTag.type = "text/css";
-linkTag.rel = "stylesheet";
-linkTag.href = "Content/Css/iframe-custom.css";
+function addCssToIframe() {
+var editor = $("#texteditor").ejRTE("instance");
+var iframeDoc = editor.getDocument();
+var linkTag = document.createElement("link");
+linkTag.type = "text/css";
+linkTag.rel = "stylesheet";
+linkTag.href = "Content/Css/iframe-custom.css";
 iframeDoc.head.appendChild(linkTag);
 }
 
