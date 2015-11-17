@@ -1,16 +1,16 @@
 ---
 title: Schedule - Responsiveness
-description: How to display schedule with responsive
+description: Display Scheduler with responsiveness
 platform: js
 control: schedule
 documentation: ug
 keywords: responsive, responsiveness, auto size 
 ---
-## Responsiveness
+# Responsiveness
 
 Scheduler is provided with default **responsive** support, so that it adjust or auto-resize it’s UI content based on the window or the container size on which it is placed. 
 
-### Auto-Resizing Scheduler
+## Auto-Resizing Scheduler
 
 By default, setting 100% width to the Scheduler makes it adaptable to the window or its parent container, as and when the browser is resized. This will not allow the scheduler to adapt height-wise.
 
@@ -136,9 +136,9 @@ Location: "CHINA"
 
 Also, whenever the Scheduler resizes - the width of the work cells adjusts automatically (if no **cellWidth** property is specified with pixel values), but the height of the cells are kept to remain as same as 20px until **cellHeight** property is set with some pixel values.
 
-### Scheduler in Mobile/Tablets
+## Scheduler in Mobile/Tablets
 
-The Scheduler layout adapts automatically in the mobile and tablet devices with the appropriate UI changes, as the **[isResponsive](http://help.syncfusion.com/js/api/ejschedule#members:isresponsive "")** property is set to **true** by default. In case, if the user wants to display the normal scheduler in mobile devices without any adaptive enhancements, then the isResponsive property can be set to false.
+The Scheduler layout adapts automatically in the mobile and tablet devices with the appropriate UI changes, as the [isResponsive](/js/api/ejschedule#members:isresponsive) property is set to **true** by default. In case, if the user wants to display the normal scheduler in mobile devices without any adaptive enhancements, then the isResponsive property can be set to false.
 
 Some of the default changes done for adaptive Scheduler to render in mobile devices are as follows,
 
@@ -153,7 +153,7 @@ Some of the default changes done for adaptive Scheduler to render in mobile devi
 * Delete appointment option made available within the appointment window.
 * Week header display in month view hidden.
 
-**Note**: To make the Scheduler control to react as responsive in mobile/tablet devices, it is necessary to refer the additional **[ej.responsive.css](http://cdn.syncfusion.com/13.2.0.29/js/web/responsive-css/ej.responsive.css# "")** file in the application.
+**Note**: To make the Scheduler control to react as responsive in mobile/tablet devices, it is necessary to refer the additional [ej.responsive.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css) file in the application.
 
 The following code snippet depicts the Scheduler code with responsive set to true.
 
@@ -166,9 +166,9 @@ The following code snippet depicts the Scheduler code with responsive set to tru
 
 <title>My first HTML page</title>
 
-<link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
-<link href=" http://cdn.syncfusion.com/13.2.0.29/js/web/responsive-css/ej.responsive.css" rel="stylesheet" />
+<link href=" http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css" rel="stylesheet" />
 
 <!-- Other required SCRIPT REFERENCES -->
 

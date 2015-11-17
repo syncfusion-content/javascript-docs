@@ -1,27 +1,27 @@
 ---
 title: Getting started with Schedule component	
-description: How to create a Schedule with remote data
+description: Rendering a basic Scheduler with remote data
 platform: js
 control: schedule
 documentation: ug
 keywords: ejschedule, schedule, schedule widget, js schedule 
 ---
-## Getting Started
+# Getting Started
 
 To render Schedule control, the following list of external dependencies are needed, 
 
-* [jQuery](http://jquery.com/# "") 1.7.1 and later versions
-* [jsRender](https://github.com/borismoore/jsrender# "") - to render the templates
-* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/# "") - to support animation effects in the components
-* [jQuery.Globalize](https://github.com/jquery/globalize/tree/v0.1.1# "") v0.1.1 - to support globalization
+* [jQuery](http://jquery.com) 1.7.1 and later versions
+* [jsRender](https://github.com/borismoore/jsrender) - to render the templates
+* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing) - to support animation effects in the components
+* [jQuery.Globalize](https://github.com/jquery/globalize/tree/v0.1.1) v0.1.1 - to support globalization
 
 The other required internal dependencies are tabulated below,
 
 <table>
 <tr>
-<td>
-**File**                          <br/><br/></td><td>
-**Description/Usage**<br/><br/></td></tr>
+<th>
+File                          <br/><br/></th><td>
+Description/Usage<br/><br/></th></tr>
 <tr>
 <td>
 ej.core.min.js<br/><br/></td><td>
@@ -43,7 +43,7 @@ These files are referred for proper working of the sub-controls used within Sche
 
 To get the real appearance of the Scheduler, the dependent css file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
-### Script/CSS Reference
+## Script/CSS Reference
 
 Create a new HTML file and include the below initial code.
 
@@ -70,7 +70,7 @@ Create a new HTML file and include the below initial code.
 
 {% endhighlight %}
 
-Refer the CSS file from the specific theme folder to your HTML file within the head section. Refer the built-in available themes from [here](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components# "").
+Refer the CSS file from the specific theme folder to your HTML file within the head section. Refer the built-in available themes from [here](http://helpjs.syncfusion.com/js/theming-in-essential-javascript-components).
 
 {% highlight html %}
 <head>
@@ -79,7 +79,7 @@ Refer the CSS file from the specific theme folder to your HTML file within the h
 
 <title>Getting Started - Schedule</title>
 
-<link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
 </head>
 
@@ -87,7 +87,7 @@ Refer the CSS file from the specific theme folder to your HTML file within the h
 
 {% endhighlight %}
 
-Add links to the [CDN](helpjs.syncfusion.com/js/cdn# "") Script files with other required external dependencies.
+Add links to the [CDN](helpjs.syncfusion.com/js/cdn) Script files with other required external dependencies.
 
 {% highlight html %}
 <head>
@@ -96,7 +96,7 @@ Add links to the [CDN](helpjs.syncfusion.com/js/cdn# "") Script files with other
 
 <title>Getting Started - Schedule</title>
 
-<link href="http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 
 <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
 
@@ -106,7 +106,7 @@ Add links to the [CDN](helpjs.syncfusion.com/js/cdn# "") Script files with other
 
 <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
 
-<script src="http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js"></script>
+<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 
 </head>
 
@@ -114,9 +114,9 @@ Add links to the [CDN](helpjs.syncfusion.com/js/cdn# "") Script files with other
 
 {% endhighlight %}
 
-**Note**: Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com/# "").
+**Note**: Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com).
 
-### Control Initialization
+## Control Initialization
 
 Create a Div element within the body section of the HTML document, where the Scheduler needs to be rendered.
 
@@ -158,11 +158,11 @@ $("#schedule").ejSchedule();
 
 {% endhighlight %}
 
-### Data Binding
+## Data Binding
 
-Scheduler uses [‘ej.DataManager’](http://helpjs.syncfusion.com/js/datamanager/overview# "") which supports both RESTful JSON data services binding and local JSON array binding.  The **dataSource** property of the Scheduler can be assigned either with the instance of `ej.DataManger` or JSON data array collection. 
+Scheduler uses [‘ej.DataManager’](http://helpjs.syncfusion.com/js/datamanager/overview) which supports both RESTful JSON data services binding and local JSON array binding.  The **dataSource** property of the Scheduler can be assigned either with the instance of `ej.DataManger` or JSON data array collection. 
 
-For demo purpose, [Northwind OData service](http://mvc.syncfusion.com/OdataServices/Northwnd.svc/# "") is used here and the code example is as follows.
+For demo purpose, [Northwind OData service](http://mvc.syncfusion.com/OdataServices/Northwnd.svc) is used here and the code example is as follows.
 
 {% highlight html %}
 <div id="schedule"></div>
@@ -199,9 +199,9 @@ dataSource: dataManager
 
 {% endhighlight %}
 
-**Note**: ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors# "") needs to be set for `adaptor` option of DataManager.
+**Note**: ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](http://helpjs.syncfusion.com/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
-### Mapper Fields
+## Mapper Fields
 
 The appointment fields are needed to be mapped with the appropriate column names from the dataSource as shown below.
 

@@ -1,12 +1,12 @@
 ---
 title: Keyboard support with shortcut keys
-description: How to access Schedule operation with Keyboard shortcuts 
+description: Accessing Scheduler actions through Keyboard shortcuts 
 platform: js
 control: schedule
 documentation: ug
 keywords: keyboard, shortcuts 
 ---
-## Keyboard Navigation
+# Keyboard Navigation
 
 The shortcut keys for accessing the sub-elements of the scheduler and other Scheduler actions are tabulated in the following table.
 
@@ -76,5 +76,6 @@ Traversing through the appointments.<br/><br/></td></tr>
 Shift + tab<br/><br/></td><td>
 Traversal of appointments in a reverse order.<br/><br/></td></tr>
 </table>
-**Note**: By default **[allowKeyboardNavigation](http://help.syncfusion.com/js/api/ejschedule#members:allowkeyboardnavigation "")** property is set to **true**, which allows the Scheduler to be accessed through the above specified keys.
+
+**Note**: By default [allowKeyboardNavigation](/js/api/ejschedule#members:allowkeyboardnavigation) property is set to **true**, which allows the Scheduler to be accessed through the above specified keys.
 

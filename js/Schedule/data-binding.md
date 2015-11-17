@@ -1,14 +1,14 @@
 ---
 title: Data binding with Schedule	
-description: How to bind local and remote data to Schedule
+description: Binding local and remote data to Scheduler
 platform: js
 control: schedule
 documentation: ug
 keywords: data binding, local data, remote data 
 ---
-## Data Binding
+# Data Binding
 
-### Appointment Fields
+## Appointment Fields
 
 The below listed names are the appointment fields which holds the appropriate column names from the dataSource.
 
@@ -19,67 +19,67 @@ Field name<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-**id**<br/><br/></td><td>
+id<br/><br/></td><td>
 Binds the id field name for indexing and performing CRUD operation on the appointments. It’s optional.<br/><br/></td></tr>
 <tr>
 <td>
-**startTime**<br/><br/></td><td>
-Binds the appointment start time field name which is **mandatory**.<br/><br/></td></tr>
+startTime<br/><br/></td><td>
+Binds the appointment start time field name which is mandatory.<br/><br/></td></tr>
 <tr>
 <td>
-**startTimeZone**<br/><br/></td><td>
-Binds the name of the start timezone field in the dataSource. If the startTimeZone field is not mentioned, then the appointment makes use of the **Scheduler** **timeZone** **or** **System** **timeZone**.<br/><br/></td></tr>
+startTimeZone<br/><br/></td><td>
+Binds the name of the start timezone field in the dataSource. If the startTimeZone field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
 <tr>
 <td>
-**endTime**<br/><br/></td><td>
-Binds the appointment end time field name which is **mandatory**.<br/><br/></td></tr>
+endTime<br/><br/></td><td>
+Binds the appointment end time field name which is mandatory.<br/><br/></td></tr>
 <tr>
 <td>
-**endTimeZone**<br/><br/></td><td>
-Binds the name of the end timezone field in the dataSource. If the endTimeZone field is not mentioned, then the appointment makes use of the **Scheduler** **timeZone** **or** **System** **timeZone**.<br/><br/></td></tr>
+endTimeZone<br/><br/></td><td>
+Binds the name of the end timezone field in the dataSource. If the endTimeZone field is not mentioned, then the appointment makes use of the Scheduler timeZone or System timeZone.<br/><br/></td></tr>
 <tr>
 <td>
-**subject**<br/><br/></td><td>
+subject<br/><br/></td><td>
 Binds the appointment subject field name which holds the summary of the appointment. <br/><br/></td></tr>
 <tr>
 <td>
-**location**<br/><br/></td><td>
-Binds the name of the location field. It indicates the appointment location/occurrence place. This field should be bind to the Scheduler, when the **{{'[showLocationField](#_Show/Hide_Location_field"")'| markdownify }}** is set to true.<br/><br/></td></tr>
+location<br/><br/></td><td>
+Binds the name of the location field. It indicates the appointment location/occurrence place. This field should be bind to the Scheduler, when the [showLocationField](/js/api/ejschedule#members:showlocationfield) is set to true.<br/><br/></td></tr>
 <tr>
 <td>
-**description**<br/><br/></td><td>
+description<br/><br/></td><td>
 Binds the appointment description field name.<br/><br/></td></tr>
 <tr>
 <td>
-**allDay**<br/><br/></td><td>
-Binds the name of the allDay field. It accepts the **Boolean** value and indicates whether the appointment is an allday appointment or not.<br/><br/></td></tr>
+allDay<br/><br/></td><td>
+Binds the name of the allDay field. It accepts the Boolean value and indicates whether the appointment is an allday appointment or not.<br/><br/></td></tr>
 <tr>
 <td>
-**categorize**<br/><br/></td><td>
+categorize<br/><br/></td><td>
 Binds the name of the categorize field. It indicates the category or status value (red categorize, green, yellow and so on). <br/><br/></td></tr>
 <tr>
 <td>
-**priority**<br/><br/></td><td>
-Binds the name of the priority field and indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when “**prioritySettings****.****enable**” is set to true.<br/><br/></td></tr>
+priority<br/><br/></td><td>
+Binds the name of the priority field and indicates the priority (high, low, medium and none) of the appointments. This field should be bind to the Scheduler, when “prioritySettings.enable” is set to true.<br/><br/></td></tr>
 <tr>
 <td>
-**resourceFields**<br/><br/></td><td>
+resourceFields<br/><br/></td><td>
 Binds one or more fields in the resource collection. It maps the resource field names with the appointments, denoting to which resource the appointments actually belongs.<br/><br/></td></tr>
 <tr>
 <td>
-**recurrence**<br/><br/></td><td>
-Binds the name of the recurrence field. It accepts the **Boolean** value and indicates whether the appointment is a recurrence appointment or not.<br/><br/></td></tr>
+recurrence<br/><br/></td><td>
+Binds the name of the recurrence field. It accepts the Boolean value and indicates whether the appointment is a recurrence appointment or not.<br/><br/></td></tr>
 <tr>
 <td>
-**recurrenceRule**<br/><br/></td><td>
+recurrenceRule<br/><br/></td><td>
 Binds the name of the recurrenceRule field. It holds the recurrence pattern associated with the appointments.<br/><br/></td></tr>
 <tr>
 <td>
-**recurrenceId**<br/><br/></td><td>
+recurrenceId<br/><br/></td><td>
 Binds the recurrence Id field which acts as a parent id for Scheduler recurrence appointments.<br/><br/></td></tr>
 <tr>
 <td>
-**recurrenceExDate**<br/><br/></td><td>
+recurrenceExDate<br/><br/></td><td>
 Binds the recurrence Exception field which accepts the recurrence Exception date values.<br/><br/></td></tr>
 </table>
 {% highlight html %}
@@ -177,7 +177,7 @@ RecurrenceExDate: null
 
 {% endhighlight %}
 
-### Binding to JSON Data Array
+## Binding to JSON Data Array
 
 To bind the Scheduler events data as array of JSON objects in JavaScript, refer the below code example.
 
@@ -234,9 +234,9 @@ EndTime: new Date("2015/11/7 02:30 PM")
 
 {% endhighlight %}
 
-### Binding Remote Data Service
+## Binding Remote Data Service
 
-The appointment data can be bound to the Scheduler through the [Odata](http://www.odata.org/# "") ([http://www.odata.org/](http://www.odata.org/# "")) remote services, where the service URL is mapped with [ejDatamanager](http://helpjs.syncfusion.com/js/datamanager/overview# "") and then configured to the Schedule dataSource API.
+The appointment data can be bound to the Scheduler through the [Odata](http://www.odata.org) remote services, where the service URL is mapped with [ejDatamanager](/js/datamanager/overview) and then configured to the Schedule dataSource API.
 
 {% highlight html %}
 <!-- HTML element will initialize as a ejSchedule -->
@@ -283,9 +283,9 @@ query: queryEvent
 
 {% endhighlight %}
 
-### OData V4
+## OData V4
 
-The OData v4 is an improved version of OData protocols and the DataManager can also retrieve and consume appointment data from [OData v4](http://www.odata.org/documentation/# "") services. 
+The OData v4 is an improved version of OData protocols and the DataManager can also retrieve and consume appointment data from [OData v4](http://www.odata.org/documentation) services. 
 
 {% highlight html %}
 <!-- HTML element will initialize as a ejSchedule -->
@@ -338,7 +338,7 @@ description: "ShipAddress"
 
 {% endhighlight %}
 
-### WebAPI Binding
+## WebAPI Binding
 
 The Schedule appointment data can be bound through the Web API service and it is a programmatic interface to define the request and response messages system that is mostly exposed in **JSON** or **XML**.
 
@@ -385,7 +385,7 @@ dataSource: dataManager
 
 {% endhighlight %}
 
-### ASP.Net Web Method Binding
+## ASP.Net Web Method Binding
 
 The Schedule appointment data can retrieve data from ASP.Net Web methods. It can be achieved using the UrlAdaptor of ej.DataManager.
 
@@ -438,9 +438,9 @@ dataSource: dataManager
 
 {% endhighlight %}
 
-### MVC Controller Action Binding
+## MVC Controller Action Binding
 
-The Schedule appointment data can retrieve data from MVC controller. This can be achieved by using the [UrlAdaptor](http://help.syncfusion.com/js/datamanager/data-adaptors#url-adaptor "") of [ej.DataManager](http://help.syncfusion.com/js/datamanager/overview# "").
+The Schedule appointment data can retrieve data from MVC controller. This can be achieved by using the [UrlAdaptor](/js/datamanager/data-adaptors#url-adaptor) of [ej.DataManager](/js/datamanager/overview).
 
 {% highlight html %}
 <!-- HTML element will initialize as a ejSchedule -->
@@ -491,7 +491,7 @@ dataSource: dataManager
 
 {% endhighlight %}
 
-### Loading Data on Demand
+## Loading Data on Demand
 
 Load on demand feature allows the Scheduler to retrieve only the filtered appointment data (for the current Scheduler date range) from the service/database during **loading** **time**, and that too only for the current Scheduler view**.** There are 3 parameters made available on the server-side namely **CurrentDate**, **CurrentView** and **CurrentAction** through which only the necessary appointments are retrieved from the database and then assigned to the Scheduler dataSource. With this kind of action of Scheduler consuming only lesser data will reduce the usage of network bandwidth size and loading time. 
 

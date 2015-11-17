@@ -1,32 +1,32 @@
 ---
 title: Schedule - Customization	
-description: How to customize working hours, date, and appointment window
+description: Customization of working hours, date, and appointment window
 platform: js
 control: schedule
 documentation: ug
 keywords: customization, work hours, appointment window, display hours 
 ---
-## Customization
+# Customization
 
 The Scheduler can be customized in various aspects like - 
 
 * Setting different Start/end hour limits
 * Highlighting the working hours 
-* [Setting different date formats](#_Date_Format "")
+* [Setting different date formats](/js/schedule/globalization-and-localization#date-format)
 * Specifying minimum and maximum date ranges 
 * Customize the entire appointment window with the user required fields
 
-### Hour Customization
+## Hour Customization
 
 
 It includes customization of displaying Scheduler with specific Start/End hours and also defining the working hour time range which is differentiated as business hours.
 
-#### Schedule Display Hours
+### Schedule Display Hours
 
 It denotes the start and end hour time limits to be displayed on the Scheduler. To set this time limit, two properties namely **startHour** and **endHour** can be used. 
 
-* **[startHour](http://help.syncfusion.com/js/api/ejschedule#members:starthour "")** - Sets the start time. The hour from which the Scheduler time display actually starts.
-* **[endHour](http://help.syncfusion.com/js/api/ejschedule#members:endhour "")** - Sets the end time. The hour on which the Scheduler time display should end.
+* **[startHour](/js/api/ejschedule#members:starthour)** - Sets the start time. The hour from which the Scheduler time display actually starts.
+* **[endHour](/js/api/ejschedule#members:endhour)** - Sets the end time. The hour on which the Scheduler time display should end.
 
 The following code example renders the scheduler from 7.00 AM to 6.00 PM.
 
@@ -77,13 +77,13 @@ EndTime: new Date(2015, 11, 5, 11, 00)
 
 {% endhighlight %}
 
-#### Working Hours
+### Working Hours
 
-Working hours indicates the work hour limit within the Scheduler. To enable the highlighting of work hours on the Scheduler, set the **highlight** option available within the workHours property to **true**. By default, it is set to true. **[workHour](http://help.syncfusion.com/js/api/ejschedule#members:workhours "")** is a object property which contains the below specified options,
+Working hours indicates the work hour limit within the Scheduler. To enable the highlighting of work hours on the Scheduler, set the **highlight** option available within the workHours property to **true**. By default, it is set to true. [workHour](/js/api/ejschedule#members:workhours) is a object property which contains the below specified options,
 
-* **[highlight](http://help.syncfusion.com/js/api/ejschedule#members:workhours-highlight "")** – enables/disables the work hour highlighting functionality.
-* **[start](http://help.syncfusion.com/js/api/ejschedule#members:workhours-start "")** - sets the time to be depicted as the start of the working/business hour in a day. 
-* **[end](http://help.syncfusion.com/js/api/ejschedule#members:workhours-end "")** **-** sets the time limit to denote the end of the working/business hour in a day. 
+* **[highlight](/js/api/ejschedule#members:workhours-highlight)** – enables/disables the work hour highlighting functionality.
+* **[start](/js/api/ejschedule#members:workhours-start)** - sets the time to be depicted as the start of the working/business hour in a day. 
+* **[end](/js/api/ejschedule#members:workhours-end)** - sets the time limit to denote the end of the working/business hour in a day. 
 
 The work hours are differentiated from other normal hours, by depicting the Scheduler cells in different color shade that belongs to this working hour time range. 
 
@@ -140,11 +140,11 @@ EndTime: new Date(2015, 11, 5, 11, 00)
 
 **Note**: By default, work hour **start** is set to **9** and work hour **end** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the work start hour that is set to it, to make the user to view that particular time initially.
 
-### Date Customization
+## Date Customization
 
 The dates in the Scheduler can be customized by setting specific minimum and maximum date ranges and also defining various date formats to it.
 
-#### Current Date
+### Current Date
 
 The Current date indicates the date with which the Scheduler loads initially and based on which the appropriate date range displays in the week/workweek/month/agenda views. To set the current date to the Scheduler – use the following code example,
 
@@ -191,9 +191,9 @@ EndTime: new Date(2015, 11, 5, 11, 00)
 
 **Note**: By default, the System current date will be taken as Scheduler’s Current date.
 
-#### MinDate and MaxDate
+### MinDate and MaxDate
 
-Providing the **[minDate](http://help.syncfusion.com/js/api/ejschedule#members:mindate "")** and **[maxDate](http://help.syncfusion.com/js/api/ejschedule#members:maxdate "")** property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler dates that lies beyond these minimum and maximum date range will be in a disabled state, so that the date navigation is blocked beyond these specified date range. Also, the appointments that belongs beyond these date ranges will not be displayed on the Scheduler.  
+Providing the [minDate](/js/api/ejschedule#members:mindate) and [maxDate](/js/api/ejschedule#members:maxdate) property with some date values, allows the Scheduler to set the minimum and maximum date range. The Scheduler dates that lies beyond these minimum and maximum date range will be in a disabled state, so that the date navigation is blocked beyond these specified date range. Also, the appointments that belongs beyond these date ranges will not be displayed on the Scheduler.  
 
 The following code example show how to set the minDate and maxDate properties of the Scheduler.
 
@@ -241,9 +241,9 @@ EndTime: new Date(2015, 11, 5, 11, 00)
 
 **Note**: The **maxDate** value provided should always be greater than that of **minDate** value.
 
-### Appointment Window Customization
+## Appointment Window Customization
 
-It is possible to use the custom appointment window option to design it with the user-required extra fields apart from the other default available fields. To make use of the customized appointment window, it is necessary to use the **[appointmentWindowOpen](http://help.syncfusion.com/js/api/ejschedule#events:appointmentwindowopen "")** event within which the display of default appointment window is prevented.
+It is possible to use the custom appointment window option to design it with the user-required extra fields apart from the other default available fields. To make use of the customized appointment window, it is necessary to use the [appointmentWindowOpen](/js/api/ejschedule#events:appointmentwindowopen) event within which the display of default appointment window is prevented.
 
 The following code example lets you create the custom appointment with a single extra field for defining the appointment type.
 
