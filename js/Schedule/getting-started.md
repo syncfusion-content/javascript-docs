@@ -1,3 +1,11 @@
+---
+title: Getting started with Schedule component	
+description: How to create a Schedule with remote data
+platform: js
+control: schedule
+documentation: ug
+keywords: ejschedule, schedule, schedule widget, js schedule 
+---
 ## Getting Started
 
 To render Schedule control, the following list of external dependencies are needed, 

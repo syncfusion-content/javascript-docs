@@ -1,3 +1,11 @@
+---
+title: Date, Appointment, and View navigation
+description: How to navigate between views, appointments, and date
+platform: js
+control: schedule
+documentation: ug
+keywords: view navigation, date navigation, appointment navigation 
+---
 ## Navigation
 
 Navigation in Scheduler can be classified based on Scheduler views, date and also the appointments in it.

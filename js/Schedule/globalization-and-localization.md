@@ -1,3 +1,11 @@
+---
+title: Globalization and Localization
+description: How to globalize and localize Schedule
+platform: js
+control: schedule
+documentation: ug
+keywords: globalize, localize, localization, globalization 
+---
 ## Globalization and Localization
 
 ### Globalization

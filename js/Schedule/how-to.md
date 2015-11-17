@@ -1,3 +1,11 @@
+---
+title: How-to
+description: How to create custom configuration using schedule control
+platform: js
+control: schedule
+documentation: ug
+keywords: globalize, localize, localization, globalization 
+---
 ## How To
 
 ### Validate the Custom Appointment Window Fields

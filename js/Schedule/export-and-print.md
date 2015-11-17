@@ -1,3 +1,11 @@
+---
+title: Export and print the Schedule with its appointments	
+description: How to export and print the complete Schedule and appointment alone.
+platform: js
+control: schedule
+documentation: ug
+keywords: export, print 
+---
 ## Export and Print
 
 ### Export Appointments

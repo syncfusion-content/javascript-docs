@@ -1,3 +1,11 @@
+---
+title: Schedule - Responsiveness
+description: How to display schedule with responsive
+platform: js
+control: schedule
+documentation: ug
+keywords: responsive, responsiveness, auto size 
+---
 ## Responsiveness
 
 Scheduler is provided with default **responsive** support, so that it adjust or auto-resize it’s UI content based on the window or the container size on which it is placed. 
