@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Content related operation in RichTextEditor widget for Syncfusion Essential JS
+title: Working with content related operation in RichTextEditor widget for Syncfusion Essential JS
 description: Working with Content related changes in RichTextEditor widget
 platform: js
 control: RTE
@@ -19,9 +19,10 @@ This example shows how to encode the HTML content before form submit event.
 
 <form>
 <textarea id ="texteditor"></textarea>
-<button type ="submit">Submit</button>
-</form>
 
+     <button type ="submit">Submit</button>
+     
+</form>
 <script type ="text/javascript">
 
         $(function () {
@@ -51,8 +52,9 @@ When you move the editor’s wrapper element into another DOM element, the edito
  <textarea id="texteditor"></textarea>
 
 <div id="target"></div>
-<button onclick="appendTo()">Append To</button>
-<button onclick="refresh()">Refresh</button>
+
+    <button onclick="appendTo()">Append To</button>
+    <button onclick="refresh()">Refresh</button>
 <script type="text/javascript">
         var editor = null;
         $(function () {
@@ -220,7 +222,7 @@ By default, the editor’s &lt; iframe &gt; is initialized with “Segoe UI” f
 </script>
 {% endhighlight %}
 
-* You can set default font for &lt; iframe &gt;’s body tag using **[iframeAttributes](#_Iframe_Attributes)** property.
+* You can set default font for &lt; iframe &gt;’s body tag using [iframeAttributes](user-interface#iframe-attributes) property.
 
 {% highlight html %}
 
@@ -307,7 +309,7 @@ If you want to insert/paste the content at the current cursor position (or) to r
 {% highlight js %}
 $(function () {
         $("#texteditor").ejRTE({
-            value:"The RichTextEditor (RTE) control enables you to edit the contents with insert table and images," +
+            value:"The RichTextEditor (RTE) control enables you to edit the contents with insert table and images,"+
             " it also provides a toolbar that helps to apply rich text formats to the content entered in the TextArea.",
         });
     });
