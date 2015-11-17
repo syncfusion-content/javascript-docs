@@ -50,9 +50,9 @@ Requires
 ### addNewText<span class="type-signature type string">string</span>
 {:#members:addnewtext}
 
-Customize add new label text to be added in the autocomplete popup for the entered text when there are no suggestions for it. 
+Customize "Add New" text (label) to be added in the autocomplete popup list for the entered text when there are no suggestions for it. 
 
-N> This property applicable only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode)” property is set as “VisualMode” and “[AllowAddNew](http://help.syncfusion.com/js/api/ejautocomplete#members:allowaddnew)” property is set as “true”.
+N> This property is applicable only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode)” property is set as “VisualMode” and “[AllowAddNew](http://help.syncfusion.com/js/api/ejautocomplete#members:allowaddnew)” property is set as “true”.
 
 Default Value:
 {:.param} 
@@ -78,14 +78,15 @@ Example
 
 Allows new values to be added to the autocomplete input other than the values in the suggestion list. Normally, when there are no suggestions it will display “No suggestions” label in the popup.
 
-N>  This property will work only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode)” is set as “VisualMode”
+N>  This property will work only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode)” property is set as “VisualMode”
 
 Default Value: 
 {:.param} 
 
 false
 
-Example {:.example}
+Example 
+{:.example}
 
 {% highlight js %}
 
@@ -230,10 +231,8 @@ Example
 
 The special character which acts as a separator for the given words for multi-mode search i.e. the text after the delimiter are considered as a separate word or query for search operation. 
 
-N> 1. This property applicable only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode)” set as “Delimiter”.
-
+N> 1. This property is applicable only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode)” property set as “Delimiter”.
 N> 2. The delimiter string should have a single character and must be a symbol. 
-
 N> 3. Mostly the delimiter symbol is used as (comma ,) or (semi-colon ;) or any other special character.
 
 Default Value: 
@@ -258,7 +257,7 @@ Example
 
 The text to be displayed in the popup when there are no suggestions available for the entered text.
 
-N> This property applicable only when the [showEmptyResultText](http://help.syncfusion.com/js/api/ejautocomplete#members:showemptyresulttext) set as “true”
+N> This property is applicable only when the [showEmptyResultText](http://help.syncfusion.com/js/api/ejautocomplete#members:showemptyresulttext) property set as “true”
 
 Default Value: 
 {:.param} 
@@ -281,7 +280,7 @@ Example
 
 Fills the autocomplete textbox with the first matched item from the suggestion list automatically based on the entered text when enabled. 
 
-N> This property works only when “[filterType](http://help.syncfusion.com/js/api/ejautocomplete#members:filtertype)” is set as “startswith” 
+N> This property works only when “[filterType](http://help.syncfusion.com/js/api/ejautocomplete#members:filtertype)” property is set as “startswith” 
 
 Default Value: 
 {:.param} 
@@ -463,7 +462,7 @@ The height of the Autocomplete textbox.
 Default Value:  
 {:.param} 
 
-Null
+null
 
 Example  
 {:.example}
@@ -479,7 +478,7 @@ Example
 ### highlightSearch<span class="type-signature type boolean">boolean</span>
 {:#members:highlightsearch}
 
-The search text can be highlighted in the AutoComplete suggestions list when enabled.
+The search text can be highlighted in the AutoComplete suggestion list when enabled.
 
 Default Value:  
 {:.param} 
@@ -544,7 +543,7 @@ Example
 
 Enables or disables selecting multiple values from the suggestion list. Multiple values can be selected through either of the following options,
 
-1. Delimiter - Multiple values separated using comma.
+1. Delimiter - Multiple values separated using a given special character.
 2. Visual mode - Each values are displayed in separate box with close button.
 
 {%seealso%} [MultiSelectMode](http://help.syncfusion.com/js/api/global.html#MultiSelectMode) {%endseealso%}
@@ -868,7 +867,7 @@ The value to be displayed in the autocomplete textbox.
 Default Value:  
 {:.param} 
 
-Null
+null
 
 Example  
 {:.example}
@@ -910,7 +909,7 @@ The text to be displayed when the value of the autocomplete textbox is empty.
 Default Value:  
 {:.param} 
 
-Null
+null
 
 Example  
 {:.example}
@@ -931,7 +930,7 @@ The width of the Autocomplete textbox.
 Default Value:  
 {:.param} 
 
-Null
+null
 
 Example  
 {:.example}
@@ -947,7 +946,7 @@ Example
 ## Methods
 
 ### clearText()
-{:#methods:cleartext()}
+{:#methods:cleartext}
 
 Clears the text in the Autocomplete textbox.
 
@@ -963,7 +962,7 @@ Example
 {% endhighlight %}
 
 ### destroy()
-{:#methods:destroy()}
+{:#methods:destroy}
 
 Destroys the Autocomplete widget.
 
@@ -979,7 +978,7 @@ Example
 {% endhighlight %}
 
 ### disable()
-{:#methods:disable()}
+{:#methods:disable}
 
 Disables the autocomplete widget.
 
@@ -995,7 +994,7 @@ Example
 {% endhighlight %}
 
 ### enable()
-{:#methods:enable()}
+{:#methods:enable}
 
 Enables the autocomplete widget.
 
@@ -1011,9 +1010,9 @@ Example
 {% endhighlight %}
 
 ### getSelectedItems()
-{:#methods:getselecteditems()}
+{:#methods:getselecteditems}
 
-Value of the autocomplete textbox.s from the Autocomplete textbox.
+Returns objects (data object) of all the selected items in the autocomplete textbox.
 
 N> This method does not accept any arguments.
 
@@ -1027,7 +1026,7 @@ Example
 {% endhighlight %}
 
 ### getValue()
-{:#methods:getvalue()}
+{:#methods:getvalue}
 
 Returns the current selected value from the Autocomplete textbox.
 
@@ -1043,7 +1042,7 @@ Example
 {% endhighlight %}
 
 ### search()
-{:#methods:search()}
+{:#methods:search}
 
 Search the entered text and show it in the suggestion list if available.
 
@@ -1059,7 +1058,7 @@ Example
 {% endhighlight %}
 
 ### open()
-{:#methods:open()}
+{:#methods:open}
 
 Open up the autocomplete suggestion popup with all list items.
 
@@ -1075,7 +1074,7 @@ Example
 {% endhighlight %}
 
 ### selectValueByKey(key)
-{:#methods:selectvaluebykey(key)}
+{:#methods:selectvaluebykey}
 
 Sets the value of the Autocomplete textbox based on the given key value.
 
@@ -1104,7 +1103,7 @@ Example
 {% endhighlight %}
 
 ### selectValueByText(text)
-{:#methods:selectvaluebytext(text)}
+{:#methods:selectvaluebytext}
 
 Sets the value of the Autocomplete textbox based on the given input text value.
 
@@ -1241,7 +1240,7 @@ Example
 ### close
 {:#events:close}
 
-Triggers after suggestion popup is closed.
+Triggers after the suggestion popup is closed.
 
 <table>
 <tr>
@@ -1456,7 +1455,7 @@ Example
 ### open
 {:#events:open}
 
-Triggers after suggestion list is opened.
+Triggers after the suggestion list is opened.
 
 <table>
 <tr>
