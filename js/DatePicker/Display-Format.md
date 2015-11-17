@@ -14,10 +14,10 @@ Below table shows the patterns to format date value.
 
 <table>
 <tr>
-<td>
-**Format** **Pattern**<br/><br/></td><td>
-**Description**<br/><br/></td><td>
-**Result**<br/><br/></td></tr>
+<th>
+Format Pattern </th><th>
+Description </th><th>
+Result</th></tr>
 <tr>
 <td>
 d<br/><br/></td><td>
@@ -79,17 +79,18 @@ yyyy<br/><br/></td><td>
 The full four digit year<br/><br/></td><td>
 "1999" or "2008"<br/><br/></td></tr>
 </table>
+
 ## Date Format
 
-Each culture has some specific date format. Date format defines a format or structure of the displayed date in the textbox. You can change the date format by using **“**[dateFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:dateformat "")**”** property
+Each culture has some specific date format. Date format defines a format or structure of the displayed date in the textbox. You can change the date format by using [dateFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:dateformat) property
 
 The standard formats are listed as follows
 
 <table>
 <tr>
-<td>
-**Format** **Name** <br/><br/></td><td>
-**Formats**<br/><br/></td></tr>
+<th>
+Format Name <br/><br/></th><th>
+Formats <br/><br/></th></tr>
 <tr>
 <td>
 default<br/><br/></td><td>
@@ -153,7 +154,7 @@ N> by default date format is based on culture specific. You have to refer the re
 
 ## Header Format
 
-DatePicker calendar consists of header, day header, days and footer section. In which header section shows the current view of DatePicker calendar by displaying the selected day or month or year. It can be formatted as like date format by using “**[headerFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:headerformat "")**” property.
+DatePicker calendar consists of header, day header, days and footer section. In which header section shows the current view of DatePicker calendar by displaying the selected day or month or year. It can be formatted as like date format by using [headerFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:headerformat) property.
 
 {% highlight js %}
 
@@ -173,7 +174,7 @@ DatePicker calendar consists of header, day header, days and footer section. In 
 
 ## Day Header
 
-Day header determines the days name to be displayed in terms of short, medium and long in DatePicker calendar by using “**[dayHeaderFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:dayheaderformat "")**” property. Also the DatePicker calendar size varies with this specified values.
+Day header determines the days name to be displayed in terms of short, medium and long in DatePicker calendar by using [dayHeaderFormat](http://help.syncfusion.com/js/api/ejdatepicker#members:dayheaderformat) property. Also the DatePicker calendar size varies with this specified values.
 
 {% highlight js %}
 
@@ -193,7 +194,7 @@ Day header determines the days name to be displayed in terms of short, medium an
 
 ## Tooltip with Formatting
 
-DatePicker calendar shows tooltip on hovering the date by specifying the formatted date of hovered date. Its helps you to get clear view about the date going to select. You can show or hide this tooltip option by using “**[showTooltip](http://help.syncfusion.com/js/api/ejdatepicker#members:showtooltip "")**” property.
+DatePicker calendar shows tooltip on hovering the date by specifying the formatted date of hovered date. Its helps you to get clear view about the date going to select. You can show or hide this tooltip option by using [showTooltip](http://help.syncfusion.com/js/api/ejdatepicker#members:showtooltip ) property.
 
 You can also change the format of tooltip by using “**tooltipFormat**” property. Below codes example allows to show tooltip and format its value. 
 
