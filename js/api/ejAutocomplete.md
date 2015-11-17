@@ -543,7 +543,7 @@ Example
 
 Enables or disables selecting multiple values from the suggestion list. Multiple values can be selected through either of the following options,
 
-1. Delimiter - Multiple values separated using a given special character.
+1. Delimiter - Multiple values are separated using a given special character.
 2. Visual mode - Each values are displayed in separate box with close button.
 
 {%seealso%} [MultiSelectMode](http://help.syncfusion.com/js/api/global.html#MultiSelectMode) {%endseealso%}
