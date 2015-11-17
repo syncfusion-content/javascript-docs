@@ -1,20 +1,20 @@
 ---
 title: Globalization and Localization
-description: How to globalize and localize Schedule
+description: Globalizing and localizing Scheduler
 platform: js
 control: schedule
 documentation: ug
 keywords: globalize, localize, localization, globalization 
 ---
-## Globalization and Localization
+# Globalization and Localization
 
-### Globalization
+## Globalization
 
 The Scheduler control is built with default **globalization** support as it format the dates according to the user’s locale automatically and processes it internally without any need for manual conversions. This kind of default handling of Scheduler dates is achieved through the reference of **jQuery.globalize** library which globalizes the date, day and month names accordingly. 
 
-### Localization
+## Localization
 
-Scheduler also comes with default localization support which allows it to customize the display of text within the Scheduler in a user-specific culture and locale. The Schedule control can be localized in specific culture using the common API **[locale](http://help.syncfusion.com/js/api/ejschedule#members:locale "")** along with the collection of localized words defined for that culture using the ej.Schedule.Locale [**culture-code**].
+Scheduler also comes with default localization support which allows it to customize the display of text within the Scheduler in a user-specific culture and locale. The Schedule control can be localized in specific culture using the common API [locale](/js/api/ejschedule#members:locale) along with the collection of localized words defined for that culture using the ej.Schedule.Locale [**culture-code**].
 
 **Note**: By default, the Schedule control is localized in **en-US** culture.
 
@@ -25,7 +25,7 @@ To localize Scheduler into a particular culture, it is necessary to refer the be
 
 All the culture-specific script files are available under the following location – which needs to be referred in your application after the reference of the **jquery.globalize.min.js** file.                   
 
-_<**Installed location**>\Syncfusion\Essential Studio\13.1.0.21\JavaScript\assets\external\cultures\minified_
+_<**Installed location**>\Syncfusion\Essential Studio\{{ site.releaseversion }}\JavaScript\assets\external\cultures\minified_
 
 The following code example shows how to localize the Schedule control in **fr-FR** culture.
 
@@ -264,9 +264,9 @@ Location: "CHINA"
 
 **Note**: Refer the **globalize.culture.fr-FR.min.js** file in your HTML application and also define the **locale** property for the Schedule control with the appropriate **culture-code** [**fr-FR**].
 
-For further information on – how to refer the required culture scripts into your application, refer [here](http://help.syncfusion.com/js/localization# "").
+For further information on – how to refer the required culture scripts into your application, refer [here](/js/localization).
 
-#### Localizing Specific Words
+### Localizing Specific Words
 
 To customize or localize only some specific words in the default `ej.Schedule.Locale["en-US"]` collection, the words to be localized/customized can be defined in a separate variable and then extended to the original collection as depicted in the following code example.
 
@@ -333,11 +333,11 @@ EndTime: new Date(2015, 11, 5, 11, 00)
 
 {% endhighlight %}
 
-### Time Zone
+## Time Zone
 
-The Scheduler makes use of the System time zone by default. If it needs to be provided with some other user-specific time zone value, then the API **[timeZone](http://help.syncfusion.com/js/api/ejschedule#members:timezone "")** can be used. Also, the Scheduler can be set to observe the Daylight Saving Time (DST) with its **isDST** property which is set to **false** by default. 
+The Scheduler makes use of the System time zone by default. If it needs to be provided with some other user-specific time zone value, then the API [timeZone](/js/api/ejschedule#members:timezone) can be used. Also, the Scheduler can be set to observe the Daylight Saving Time (DST) with its **isDST** property which is set to **false** by default. 
 
-When **[isDST](http://help.syncfusion.com/js/api/ejschedule#members:isdst "")** property is set to **true**, the Scheduler internally processes the time difference values (for the Start and end time of the appointments) related to the Scheduler time zone that observes daylight savings time. 
+When [isDST](/js/api/ejschedule#members:isdst) property is set to **true**, the Scheduler internally processes the time difference values (for the Start and end time of the appointments) related to the Scheduler time zone that observes daylight savings time. 
 
 The following code example shows the way to set the specific time zone value with the daylight savings time observed in the Scheduler.
 
@@ -388,7 +388,7 @@ Location: "CHINA"
 
 Apart from the default Scheduler time zone, it is also possible to set the different time zone values for each appointments through the properties **startTimeZone** and **endTimeZone** which can be defined as separate fields within the appointment dataSource. When these properties are not explicitly defined for appointments, the appointments Start and End time will be processed based on the Scheduler time zone.
 
-**Note**: The **isDST** property closely relies on the appointment fields like **[StartTimeZone](http://help.syncfusion.com/js/api/ejschedule#members:appointmentsettings-starttimezone "")** and **[EndTimeZone](http://help.syncfusion.com/js/api/ejschedule#members:appointmentsettings-endtimezone "")**, for appropriate time difference calculations. If these two fields are not defined for appointments, then **isDST** depends on the System **timeZone** value.
+**Note**: The **isDST** property closely relies on the appointment fields like [StartTimeZone](/js/api/ejschedule#members:appointmentsettings-starttimezone) and [EndTimeZone](/js/api/ejschedule#members:appointmentsettings-endtimezone), for appropriate time difference calculations. If these two fields are not defined for appointments, then **isDST** depends on the System **timeZone** value.
 
 The following code snippet shows how to define isDST and the time zones for specific appointments.
 
@@ -439,7 +439,7 @@ EndTimeZone: "UTC +02:00"
 
 {% endhighlight %}
 
-It is also possible to define or customize the default time zone collection of the Scheduler, by using the **[timeZoneCollection](http://help.syncfusion.com/js/api/ejschedule#members:timezonecollection "")** API as follows.
+It is also possible to define or customize the default time zone collection of the Scheduler, by using the [timeZoneCollection](/js/api/ejschedule#members:timezonecollection) API as follows.
 
 {% highlight html %}
 
@@ -526,16 +526,16 @@ EndTimeZone: "UTC +02:00"
 
 **Note**: The values defined within the **timeZoneCollection** dataSource are usually the options displayed at the start and end time zone dropdown fields of the appointment window.
 
-### Time Mode
+## Time Mode
 
-The time mode of the Scheduler can be either **12** or **24 hours** format which is based on the **[locale](http://help.syncfusion.com/js/api/ejschedule#members:locale "")** set to the Scheduler. Since the default locale value of the Scheduler is **en-US**, therefore the time mode will be set to **12 hours** format (by default) automatically based on the culture. 
+The time mode of the Scheduler can be either **12** or **24 hours** format which is based on the [locale](/js/api/ejschedule#members:locale) set to the Scheduler. Since the default locale value of the Scheduler is **en-US**, therefore the time mode will be set to **12 hours** format (by default) automatically based on the culture. 
 
-The user can also set specific time mode for the Scheduler using **[timeMode](http://help.syncfusion.com/js/api/ejschedule#members:timemode "")** property which accepts either **String** or **enum** value. It accepts the following **enum** values,
+The user can also set specific time mode for the Scheduler using [timeMode](/js/api/ejschedule#members:timemode) property which accepts either **String** or **enum** value. It accepts the following **enum** values,
 
 * ej.Schedule.TimeMode.Hour12
 * ej.Schedule.TimeMode.Hour24
 
-The following code snippet shows the way to set specific **24** **hour** **format** **time** **mode** for the Scheduler.
+The following code snippet shows the way to set specific **24 hour format time mode** for the Scheduler.
 
 {% highlight html %}
 
@@ -582,11 +582,11 @@ Location: "CHINA"
 
 **Note**: If the **timeMode** property is not set with specific value, then the value will be taken based on the locale assigned for the Scheduler.
 
-### Date Format
+## Date Format
 
 Scheduler can be used with all valid date formats. The default date format used in Scheduler is “MM/dd/yyyy”. 
 
-If the **[dateFormat](http://help.syncfusion.com/js/api/ejschedule#members:dateformat "")** property is not specified particularly, then it will be taken based on the locale that is assigned to the Scheduler. The default locale applied on the Scheduler is “en-US”, which makes it to follow the “MM/dd/yyyy” pattern by default.
+If the [dateFormat](/js/api/ejschedule#members:dateformat) property is not specified particularly, then it will be taken based on the locale that is assigned to the Scheduler. The default locale applied on the Scheduler is “en-US”, which makes it to follow the “MM/dd/yyyy” pattern by default.
 
 {% highlight html %}
 

@@ -1,38 +1,38 @@
 ---
 title: Schedule - Resource handling with multiple option
-description: How to handle resources in schedule with multiple option
+description: Handling multiple resources in Scheduler
 platform: js
 control: schedule
 documentation: ug
 keywords: resource, resources, multiple resources, grouping 
 ---
-## Resources
+# Resources
 
 The Scheduler provides **Resources** support, with which the single Scheduler is shared by multiple resources simultaneously. Each resource in the Scheduler is arranged in a column/row wise with individual spacing to display all its respective appointments on a single page. It also supports the grouping of resources, thus enabling the categorization of resources in a hierarchical structure and shows it either in expandable groups (**Horizontal** **view**) or else vertical hierarchy one after the other (**Vertical** **view**).
 
 One or more resources can be assigned to the Scheduler appointments by making selection of the resource options available in the appointment window.
 
-### Fields of Resources
+## Fields of Resources
 
-The default options available within the **[resources](http://help.syncfusion.com/js/api/ejschedule#members:resources "")** collection are as follows,
+The default options available within the [resources](/js/api/ejschedule#members:resources) collection are as follows,
 
-**name** (**String**)
+### name (**String**)
 
 A unique resource name which is used for differentiating various resource objects while grouping it in various levels.
 
-**title** (**String**)
+### title (**String**)
 
 It holds the title name of the resource field to be displayed on the Scheduler appointment window.
 
-**field** (**String**)
+### field (**String**)
 
 It holds the name of the resource field to be bound to the Scheduler appointments which contains the resource Id.
 
-**allowMultiple** (**Boolean**)
+### allowMultiple (**Boolean**)
 
 When set to true, allows multiple selection of resource names, thus creating multiple instances of same appointment for the selected resources.
 
-**resourceSettings** (**Object**)
+### resourceSettings (**Object**)
 
 It holds the field names of the resources to be bound to the Scheduler and also includes the dataSource.
 
@@ -45,25 +45,26 @@ Field name<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
 <td>
-**text**<br/><br/></td><td>
-Binds the text field name in the dataSource to the resourceSettings **text**. These text gets listed out in the resources field of the appointment window. It’s mandatory.<br/><br/><br/><br/></td></tr>
+text<br/><br/></td><td>
+Binds the text field name in the dataSource to the resourceSettings <b>text</b>. These text gets listed out in the resources field of the appointment window. It’s mandatory.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
-**id**<br/><br/></td><td>
-Binds the id field name in the dataSource to the resourceSettings **id**. It’s mandatory.<br/><br/><br/><br/></td></tr>
+id<br/><br/></td><td>
+Binds the id field name in the dataSource to the resourceSettings <b>id</b>. It’s mandatory.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
-**groupId**<br/><br/></td><td>
-Binds the groupId field name in the dataSource to the resourceSettings **groupId**. This field is not necessary for a resource object (resource data) defined as first level within the resources collection.<br/><br/><br/><br/></td></tr>
+groupId<br/><br/></td><td>
+Binds the groupId field name in the dataSource to the resourceSettings <b>groupId</b>. This field is not necessary for a resource object (resource data) defined as first level within the resources collection.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
-**color**<br/><br/></td><td>
-Binds the color field name in the dataSource to the resourceSettings **color**. It is optional.<br/><br/><br/><br/></td></tr>
+color<br/><br/></td><td>
+Binds the color field name in the dataSource to the resourceSettings <b>color</b>. It is optional.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
-**appointmentClass**<br/><br/></td><td>
+appointmentClass<br/><br/></td><td>
 Binds the appointmentClass field name in the dataSource. It applies the custom css class name to the appointments based on the resources.<br/><br/><br/><br/></td></tr>
 </table>
+
 **Example**: To set the resources options using all the above specified fields,
 
 {% highlight html %}
@@ -157,11 +158,11 @@ resourceFields: "ownerId,roomId"
 
 **Note**: The resource object defined at **first level** within the **resources** collection doesn’t make use of the **groupId** field, as there is no previous levels applicable to map.
 
-### Data Binding
+## Data Binding
 
-The resource data can be bound to the Schedule control through the **resourceSettings** options available within the **resources** property. The data-binding can be done either using JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview# "")) instance which contains the resources related data.
+The resource data can be bound to the Schedule control through the **resourceSettings** options available within the **resources** property. The data-binding can be done either using JSON object collection or DataManager ([ej.DataManager](/js/datamanager/overview)) instance which contains the resources related data.
 
-#### JSON Data
+### JSON Data
 
 **Example**: To set the resource data with array of **JSON** object collection
 
@@ -244,7 +245,7 @@ resourceFields: "ownerId"
 
 {% endhighlight %}
 
-#### Remote Data
+### Remote Data
 
 **Example**: To set the resource data through the instance of **ejDataManager**
 
@@ -335,7 +336,7 @@ resourceFields: "ownerId"
 
 {% endhighlight %}
 
-### Multiple Resources (Without Grouping)
+## Multiple Resources (Without Grouping)
 
 It is possible to display the Scheduler in default look without showcasing all the resources on it, but it allow the user to assign the required resources to the appointments through the appointment window resource options.
 
@@ -424,11 +425,11 @@ resourceFields: "ownerId"
 
 **Note**: Setting **allowMultiple** to **true** in the above code snippet allows the user to select multiple resources in the appointment window and also creates multiple copies of the same appointment in the Scheduler for each resources while saving.
 
-### Grouping
+## Grouping
 
 Scheduler supports both single and multiple levels of resource grouping that can be customized in both horizontal and vertical Scheduler views. In Vertical view - the levels are displayed in a tree structure one after the other, but in horizontal view – the levels are grouped in a vertically expandable/collapsible structure.
 
-#### Single-Level
+### Single-Level
 
 This type of grouping allows the Scheduler to display all the resources at a single level simultaneously. The appointments will make use of the **color** defined for the first resource instance as its background color. 
 
@@ -521,7 +522,7 @@ resourceFields: "ownerId"
 
 **Note**: The **name** field mentioned in the **resource** object needs to be specified within the **group** property in order to enable the grouping option in Scheduler.
 
-#### Multi-Level
+### Multi-Level
 
 This type of grouping displays the resources in the Scheduler at multiple levels with a set of resources grouped under each parent level. The appointments will make use of the **color** defined for the first/top level resource instance as its background color. 
 
