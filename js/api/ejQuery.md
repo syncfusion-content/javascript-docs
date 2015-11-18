@@ -155,7 +155,7 @@ $(".table tbody").html(tbody);
 
 
 
-### excute<span class="signature">(dataManager)</span>
+### execute<span class="signature">(dataManager)</span>
 {:#methods:excute}
 
 
@@ -211,7 +211,7 @@ promise.done(function(e){})
 
 
 
-### excuteLocal<span class="signature">(dataManager)</span>
+### executeLocal<span class="signature">(dataManager)</span>
 {:#methods:excutelocal}
 
 
