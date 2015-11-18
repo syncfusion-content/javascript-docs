@@ -1,10 +1,11 @@
 ---
 layout: post
-title: getting-Started
-description: getting started
+title: Getting Started with AutoComplete widget for Essential JS
+description: How to create Autocomplete widget with the step-by-step instructions.
 platform: js
 control: AutoComplete
 documentation: ug
+keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete, jquery autocomplete, web autocomplete, ej autocomplete, essential javascript autocomplete,
 ---
 
 # Getting Started

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: templates
-description: templates
+title: Template support in AutoComplete widget for Essential JS
+description: Customizes the appearance of the suggestion list using a template
 platform: js
 control: AutoComplete
 documentation: ug
+keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete, jquery autocomplete, web autocomplete, ej autocomplete, essential javascript autocomplete,
 ---
 
 # Templates

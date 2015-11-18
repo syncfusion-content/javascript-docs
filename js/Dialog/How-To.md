@@ -1,10 +1,11 @@
 ---
 layout: post
-title: How-To
-description: how to
+title: How to section in Dialog widget for Essential JS? 
+description: How to achieve specific requirements in Dialog widget for Essential JS
 platform: js
 control: Dialog
 documentation: ug
+keywords : ejdialog, js dialog, jquery dialog, dialog, dialog ui, web dialog, ej dialog, essential javascript dialog, dialog widget,
 ---
 # How To?
 

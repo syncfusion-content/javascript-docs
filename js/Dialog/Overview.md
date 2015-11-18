@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of Dialog widget for Essential JS
+description: Explains about the Dialog widget and its key features
 platform: js
 control: Dialog
 documentation: ug
+keywords : ejdialog, js dialog, jquery dialog, dialog, dialog ui, web dialog, ej dialog, essential javascript dialog, dialog widget,
 ---
 
 # Overview

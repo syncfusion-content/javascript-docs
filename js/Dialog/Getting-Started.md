@@ -1,10 +1,11 @@
 ---
 layout: post
-title: getting-started
-description: getting started
+title: Getting Started with Dialog widget for Essential JS
+description: How to create Dialog widget with the step-by-step instructions.
 platform: js
 control: Dialog
 documentation: ug
+keywords : ejdialog, js dialog, jquery dialog, dialog, dialog ui, web dialog, ej dialog, essential javascript dialog, dialog widget,
 ---
 
 # Getting Started

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Selection
-description: selection
+title: Selection in ListBox widget for Syncfusion Essential JS
+description: How to achieve Selection and MultiSelection
 platform: js
 control: ListBox
 documentation: ug
+keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Selection

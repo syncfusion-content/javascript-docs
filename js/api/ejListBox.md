@@ -1,7 +1,9 @@
 ---
 layout: post
-title: ejListBox
+title: API reference for ejListBox
+description: What are the options, methods and events available in Essential JavaScript ListBox.
 documentation: API
+keywords: ejListBox, API, Essential JS ListBox, ListBox
 platform: js
 metaname: 
 metacontent: 

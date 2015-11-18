@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Drag-And-Drop
-description: drag and drop
+title: Drag And Drop support in ListBox widget for Syncfusion Essential JS
+description: How to achieve drag and drop support.
 platform: js
 control: ListBox
 documentation: ug
+keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Drag and drop
