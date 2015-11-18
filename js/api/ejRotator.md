@@ -7,6 +7,10 @@ metaname:
 metacontent: 
 ---
 
+# ejRotator
+
+
+
 The Rotator control displays a set of slides. Each slide may contain images or images with content, or content with user-defined transition between them.
 
 

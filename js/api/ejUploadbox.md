@@ -7,7 +7,13 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html Uploadbox control.
+# ejUploadbox
+
+
+
+
+
+The Uploadbox control supports uploading files into the designated server, regardless of the file format and size. The Uploadbox control helps you with the selection of files to upload to the server. 
 
 
 
