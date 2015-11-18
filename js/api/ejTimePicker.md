@@ -7,7 +7,14 @@ metaname:
 metacontent: 
 ---
 
-Time selection with the input field.
+# ejTimePicker
+
+
+
+
+
+
+The TimePicker control for JavaScript allows users to select a time value. The available times can be restricted to a range by setting minimum and maximum time values. The TimePicker sets the time as a mask to prevent users from entering invalid values.
 
 
 

@@ -7,10 +7,12 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html ejMaskEdit Textbox control.
+# ejMaskEdit
 
 
 
+
+The MaskEdit control provides an easy and reliable way of collecting user input and displaying standard data in a specific format. Some common uses of the MaskEdit control are IP address editors, phone number editors, and Social Security number editors.
 
 
 

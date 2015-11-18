@@ -7,7 +7,10 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for dragging HTML elements.
+# ejDraggable
+
+
+Plugin to make any DOM element draggable.  
 
 
 

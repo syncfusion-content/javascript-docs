@@ -7,7 +7,12 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Progressbar control.
+# ejProgressBar
+
+
+
+
+The ProgressBar control is a graphical control element used to visualize the changing status of an extended operation.
 
 
 
