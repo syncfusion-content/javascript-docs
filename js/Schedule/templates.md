@@ -287,7 +287,7 @@ roomId: 2
 
 {% endhighlight %}
 
-**Note**: In horizontal Scheduler, the header template makes use of an additional field namely **classname** which holds either **e-parentnode** or **e-childnode** value. The field **classname** can be used in the application scenario to check for the parent or child header node. You can apply the different template customization accordingly based on it.
+N>	In horizontal Scheduler, the header template makes use of an additional field namely **classname** which holds either **e-parentnode** or **e-childnode** value. The field **classname** can be used in the application scenario to check for the parent or child header node. You can apply the different template customization accordingly based on it.
 
 ## Priority Settings Template
 
@@ -404,7 +404,7 @@ Priority: "critical"
 
 The custom style class names defined for the priority template should be same as that of the values defined for each priority option within the dataSource, so that it applies properly.
 
-**Note**: Additionally, the priority field within the [appointmentSettings](/js/api/ejschedule#members:appointmentsettings) should be defined with appropriate dataSource field name. When an appointment is assigned with a priority value, the custom style/icon defined for that priority option will get applied over that appointment.
+N>	Additionally, the priority field within the [appointmentSettings](/js/api/ejschedule#members:appointmentsettings) should be defined with appropriate dataSource field name. When an appointment is assigned with a priority value, the custom style/icon defined for that priority option will get applied over that appointment.
 
 ## Tooltip Template
 
