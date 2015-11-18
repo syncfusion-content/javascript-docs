@@ -7,7 +7,15 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html Button control.
+# ejWaitingPopup
+
+
+
+
+
+
+
+The WaitingPopup control for JavaScript is a visual element that provides support for displaying a pop-up indicator over a target area and preventing the end user’s interaction with the target area while loading.
 
 
 

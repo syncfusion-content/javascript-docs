@@ -7,7 +7,14 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html color picker control.
+# ejColorPicker
+
+
+
+
+
+
+The ColorPicker control provides you a rich visual interface for color selection. You can select the color from the professionally designed palettes or custom color. By clicking a point on the color, you can change the active color to the color that is located under the pointer. 
 
 
 

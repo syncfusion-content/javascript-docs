@@ -7,7 +7,12 @@ metaname:
 metacontent: 
 ---
 
-Date and Time selection with the input field.
+
+# ejDateTimePicker
+
+
+
+The DateTimePicker control is used to input the date and time with a specific format. It combines the DatePicker and TimePicker controls so that users can select the date and time with their desired format.
 
 
 
