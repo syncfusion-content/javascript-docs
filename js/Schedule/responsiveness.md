@@ -132,7 +132,7 @@ Location: "CHINA"
 
 {% endhighlight %}
 
-N>	When the Scheduler width is set to **less** **than** **600px**, then the View selection options will be displayed in a **navigation** **drawer**. 
+N> When the Scheduler width is set to **less** **than** **600px**, then the View selection options will be displayed in a **navigation** **drawer**. 
 
 Also, whenever the Scheduler resizes - the width of the work cells adjusts automatically (if no **cellWidth** property is specified with pixel values), but the height of the cells are kept to remain as same as 20px until **cellHeight** property is set with some pixel values.
 
@@ -153,7 +153,7 @@ Some of the default changes done for adaptive Scheduler to render in mobile devi
 * Delete appointment option made available within the appointment window.
 * Week header display in month view hidden.
 
-N>	To make the Scheduler control to react as responsive in mobile/tablet devices, it is necessary to refer the additional [ej.responsive.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css) file in the application.
+N> To make the Scheduler control to react as responsive in mobile/tablet devices, it is necessary to refer the additional [ej.responsive.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css) file in the application.
 
 The following code snippet depicts the Scheduler code with responsive set to true.
 

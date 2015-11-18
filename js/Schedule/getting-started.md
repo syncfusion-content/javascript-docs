@@ -40,7 +40,7 @@ ej.scroller.js<br/><br/>ej.dialog.min.js<br/><br/>ej.button.min.js<br/><br/>ej.a
 These files are referred for proper working of the sub-controls used within Scheduler.<br/><br/></td></tr>
 </table>
 
-N>	Scheduler uses one or more sub-controls, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
+N> Scheduler uses one or more sub-controls, therefore refer the `ej.web.all.min.js` (which encapsulates all the `ej` controls and frameworks in a single file) in the application instead of referring all the above specified internal dependencies. 
 
 To get the real appearance of the Scheduler, the dependent css file `ej.web.all.min.css` (which includes styles of all the widgets) should also needs to be referred.
 
@@ -92,7 +92,7 @@ Add links to the [CDN](/js/cdn) Script files with other required external depend
 
 {% endhighlight %}
 
-N>	Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com).
+N> Uncompressed version of library files are also available which is used for development or debugging purpose and can be generated from the custom script [here](http://csg.syncfusion.com).
 
 
 ## Control Initialization
@@ -154,7 +154,7 @@ For demo purpose, [Northwind OData Service](http://mvc.syncfusion.com/OdataServi
 {% endhighlight %}
 
 
-N>	ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
+N> ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
 
 ## Mapper Fields

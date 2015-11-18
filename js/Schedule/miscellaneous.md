@@ -57,7 +57,7 @@ EndTime: new Date(2015, 11, 2, 10, 30)
 
 {% endhighlight %}
 
-N>	When Scheduler rendered with multiple resources, multiple time indicators are displayed in Vertical mode – whereas single indicator displays for horizontal mode.
+N> When Scheduler rendered with multiple resources, multiple time indicators are displayed in Vertical mode – whereas single indicator displays for horizontal mode.
 
 ## Show/Hide All-Day Row
 
@@ -106,7 +106,7 @@ EndTime: new Date(2015, 11, 2, 10, 30)
 
 {% endhighlight %}
 
-N>	The All-day row expands vertically whenever more number of appointments are populated in the one or more days.
+N> The All-day row expands vertically whenever more number of appointments are populated in the one or more days.
 
 ## Show/Hide Headerbar
 
