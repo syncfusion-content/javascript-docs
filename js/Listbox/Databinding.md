@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Databinding
-description: databinding
+title: Databinding in ListBox widget for Syncfusion Essential JS
+description: How to populate data in ListBox widget.
 platform: js
 control: ListBox
 documentation: ug
+keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Databinding

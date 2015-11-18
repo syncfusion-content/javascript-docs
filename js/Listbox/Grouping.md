@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Grouping
-description: grouping
+title: Grouping in ListBox widget for Syncfusion Essential JS
+description: ListBox items can be grouped by providing a heading (header) for each set of items.
 platform: js
 control: ListBox
 documentation: ug
+keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Grouping

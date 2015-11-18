@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with ListBox widget for Syncfusion Essential JS
+description: How to create ListBox widget with the step-by-step instructions.
 platform: js
 control: ListBox
 documentation: ug
+keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Getting Started

@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Cascading
-description: cascading
+title: Cascading in ListBox widget for Syncfusion Essential JS
+description: Dynamically populate data in a ListBox while selecting an item in another ListBox.
 platform: js
 control: ListBox
 documentation: ug
+keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Cascading

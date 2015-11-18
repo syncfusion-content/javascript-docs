@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Accessibility
-description: accessibility
+title: Accessibility in ListBox widget for Syncfusion Essential JS
+description: Keyboard Interaction and Incremental search in ListBox widget.
 platform: js
 control: ListBox
 documentation: ug
+keywords: ejlistbox, listbox, listbox widget, js listbox, jquery listbox, listbox ui, ej listbox, essential javascript listbox, web listbox,
 ---
 
 # Accessibility

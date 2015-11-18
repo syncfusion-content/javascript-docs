@@ -1,7 +1,9 @@
 ---
 layout: post
-title: ejAutocomplete
+title: API reference for ejAutocomplete
+description: What are the options, methods and events available in Essential JavaScript Autocomplete.
 documentation: API
+keywords: ejAutocomplete, API, Essential JS Autocomplete, Autocomplete
 platform: js
 metaname: 
 metacontent: 

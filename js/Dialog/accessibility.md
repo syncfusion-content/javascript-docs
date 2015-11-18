@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Accessibility
-description: accessibility
+title: Accessibility in Dialog widget for Essential JS
+description: Keyboard Interaction with Dialog widget.
 platform: js
 control: Dialog
 documentation: ug
+keywords : ejdialog, js dialog, jquery dialog, dialog, dialog ui, web dialog, ej dialog, essential javascript dialog, dialog widget, 
 ---
 
 # Accessibility

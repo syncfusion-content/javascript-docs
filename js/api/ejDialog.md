@@ -1,8 +1,9 @@
 ---
 layout: post
-title: ejDialog
-documentation: API
+title: API reference for ejDialog
+description: What are the options, methods and events available in Essential JavaScript Dialog.
 platform: js
+keywords: ejDialog, API, Essential JS Dialog, Dialog
 metaname: 
 metacontent: 
 ---

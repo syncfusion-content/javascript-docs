@@ -1,10 +1,11 @@
 ---
 layout: post
-title: multiselection
-description: multiselection
+title: Multi Selection in AutoComplete widget for Essential JS
+description: How to pick multiple values from the AutoComplete suggestion items.
 platform: js
 control: AutoComplete
 documentation: ug
+keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete, jquery autocomplete, web autocomplete, ej autocomplete, essential javascript autocomplete,
 ---
 
 # MultiSelection

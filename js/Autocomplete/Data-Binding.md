@@ -1,10 +1,11 @@
 ---
 layout: post
-title: data-binding
-description: data binding
+title: Databinding in AutoComplete widget for Essential JS
+description: How to populate data for the suggestion list.
 platform: js
 control: AutoComplete
 documentation: ug
+keywords: ejautocomplete, autocomplete widget, autocomplete ui, js autocomplete, jquery autocomplete, web autocomplete, ej autocomplete, essential javascript autocomplete,
 ---
 
 # Data Binding

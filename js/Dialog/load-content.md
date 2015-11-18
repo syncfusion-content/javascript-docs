@@ -1,10 +1,11 @@
 ---
 layout: post
-title: Load-Content
-description: load content
+title: Content Loading in Dialog widget for Essential JS
+description: How to load content to dialog widget either using the Ajax, iframe, and Image.
 platform: js
 control: Dialog
 documentation: ug
+keywords : ejdialog, js dialog, jquery dialog, dialog, dialog ui, web dialog, ej dialog, essential javascript dialog, dialog widget,
 ---
 
 # Load content
