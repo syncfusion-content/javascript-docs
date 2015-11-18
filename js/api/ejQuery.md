@@ -211,7 +211,7 @@ promise.done(function(e){})
 
 
 
-### excuteLocal<span class="signature">(dataManager)</span>
+### executeLocal<span class="signature">(dataManager)</span>
 {:#methods:excutelocal}
 
 
