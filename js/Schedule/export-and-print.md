@@ -1,14 +1,22 @@
-## Export and Print
+---
+title: Export and print the Schedule with its appointments	
+description: Export/Print the complete Scheduler or specific appointment alone
+platform: js
+control: schedule
+documentation: ug
+keywords: export, print 
+---
+# Export and Print
 
-### Export Appointments
+## Export Appointments
 
 The Appointments can be exported as a whole collection or else a single appointment alone can be exported from the Scheduler. By default, the appointments are exported to .ics format which can then be imported and used in any of the other external calendars.
 
-#### Single Appointment Exporting
+### Single Appointment Exporting
 
-A single appointment can be exported by making use of its Id. You can achieve this functionality by making use of an **[exportSchedule](http://help.syncfusion.com/js/api/ejschedule#methods:exportschedule "")** method by passing the id of an appointment to export as one of its parameter. 
+A single appointment can be exported by making use of its Id. You can achieve this functionality by making use of an [exportSchedule](/js/api/ejschedule#methods:exportschedule) method by passing the id of an appointment to export as one of its parameter. 
 
-It can also be achieved in another way by enabling the context menu settings and then adding a custom menu option for export appointment functionality. When right clicked on an appointment, and **export** **Appointment** option is chosen, the exporting functionality can be handled through the **[menuItemClick](http://help.syncfusion.com/js/api/ejschedule#events:menuitemclick "")** event, within which the **exportSchedule** method should be defined with the following parameters,
+It can also be achieved in another way by enabling the context menu settings and then adding a custom menu option for export appointment functionality. When right clicked on an appointment, and **export Appointment** option is chosen, the exporting functionality can be handled through the [menuItemClick](/js/api/ejschedule#events:menuitemclick) event, within which the **exportSchedule** method should be defined with the following parameters,
 
 * Action name (to be called in the server-side)
 * Server Event (optional)
@@ -101,11 +109,11 @@ obj.exportSchedule("ExportToICS", null, args.targetInfo.Id);
 
 {% endhighlight %}
 
-**Note**: The Id value of the appointment passed in the above code example can be retrieved in the server-side action through Request.Form["AppointmentId"], as the id passed from the script is stored as hidden value in the input field of the form under this name internally.
+N>	The Id value of the appointment passed in the above code example can be retrieved in the server-side action through Request.Form["AppointmentId"], as the id passed from the script is stored as hidden value in the input field of the form under this name internally.
 
-#### Exporting all Appointments
+### Exporting all Appointments
 
-To export the entire appointments, the same **[exportSchedule](http://help.syncfusion.com/js/api/ejschedule#methods:exportschedule "")** method can be used without passing the id value to its parameter list. To achieve this, keep an individual button to export, and when it is clicked - the Scheduler can be allowed to export all the appointments.
+To export the entire appointments, the same [exportSchedule](/js/api/ejschedule#methods:exportschedule) method can be used without passing the id value to its parameter list. To achieve this, keep an individual button to export, and when it is clicked - the Scheduler can be allowed to export all the appointments.
 
 The following code example depicts the way to export all the Scheduler appointments as a whole.
 
@@ -213,11 +221,11 @@ ScheduleExport obj = new ScheduleExport(model, data);
 
 {% endhighlight %}
 
-### Print
+## Print
 
-Two types of Print options are available – either to print the entire Scheduler layout including all the appointments in it or else to print any particular appointment alone. The public method **[print](http://help.syncfusion.com/js/api/ejschedule#methods:print "")** is used to print the entire Scheduler.
+Two types of Print options are available – either to print the entire Scheduler layout including all the appointments in it or else to print any particular appointment alone. The public method [print](/js/api/ejschedule#methods:print) is used to print the entire Scheduler.
 
-#### Print the Scheduler
+### Print the Scheduler
 
 The following code example shows the way to print the entire Scheduler, by keeping an extra button in a page – on which clicking the button will print the entire Scheduler.
 
@@ -282,11 +290,11 @@ obj.print();
 
 {% endhighlight %}
 
-#### Printing specific appointments
+### Printing specific appointments
 
 To print a particular appointment, the context menu **print** option can be used. The print option is handled internally by default, so that when an appointment is right clicked – choosing print option from the context menu that pops-out will automatically print that appointment.
 
-**Note**: To handle this functionality, the context menu settings needs to be enabled with print option added to the appointment items.
+N>	To handle this functionality, the context menu settings needs to be enabled with print option added to the appointment items.
 
 The following code example depicts the way to print a particular appointment.
 

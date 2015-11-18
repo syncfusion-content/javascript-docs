@@ -1,10 +1,18 @@
-## How To
+---
+title: How-to
+description: Custom Configuration with Schedule control
+platform: js
+control: schedule
+documentation: ug
+keywords: globalize, localize, localization, globalization 
+---
+# How To
 
-### Validate the Custom Appointment Window Fields
+## Validate the Custom Appointment Window Fields
 
 The client-side validation of the fields present within the custom appointment window can be handled before submitting it, by adding appropriate validation classes to each field.
 
-Refer the steps [here](#_Appointment_Window_Customization "") and create a sample for Custom Appointment window, before proceeding with the following validations.
+Refer the steps [here](/js/schedule/customization#appointment-window-customization) and create a sample for Custom Appointment window, before proceeding with the following validations.
 
 In the custom appointment window sample, create an additional css class **validation** as mentioned below to add it to the appropriate fields, if the validation of such fields fails.
 
@@ -82,9 +90,9 @@ alert("EndTime value is lesser than the StartTime value");
 
 Now, after adding the above validations – whenever the fields within the custom appointment window are skipped without filling any information, it will be notified to the users appropriately.
 
-### Highlight Different Work Hours for Each Resources
+## Highlight Different Work Hours for Each Resources
 
-By default, the workhours of the Scheduler is highlighted based on the start and end values provided within the **[workHours](#_Working_Hours "")** object. It remains same for all the resources, when the Scheduler is rendered with multiple resources. To customize this behaviour so as to highlight different workhour range for each of the resources, the following workaround can be utilised by making use of the Scheduler events **create** and **[actionComplete](http://help.syncfusion.com/js/api/ejschedule#events:actioncomplete "")**.
+By default, the workhours of the Scheduler is highlighted based on the start and end values provided within the [workHours](/js/schedule/customization#hour-customization:working-hours) object. It remains same for all the resources, when the Scheduler is rendered with multiple resources. To customize this behaviour so as to highlight different workhour range for each of the resources, the following workaround can be utilised by making use of the Scheduler events **create** and [actionComplete](/js/api/ejschedule#events:actioncomplete).
 
 Initially, set the **highlight** as false for the **workHours**, so as to disable the highlighting of default work hour range.
 
@@ -295,7 +303,7 @@ break;
 
 {% endhighlight %}
 
-### Display Scheduler with Appointments Filtered by Subject
+## Display Scheduler with Appointments Filtered by Subject
 
 It is possible to display the Scheduler with the appointments, which is filtered based on the Subject. For example, if we keep a text box and start typing a character – the appointment’s subject that matches the typed character alone will be shown on the Scheduler. The following code example depicts the way to achieve this.
 
@@ -516,7 +524,7 @@ schObj.option("appointmentSettings", { dataSource: window.Default });
 
 {% endhighlight %}
 
-### Customize the Default Appointment Window
+## Customize the Default Appointment Window
 
 Apart from the custom appointment window, it is possible to customize the default appointment window by adding/removing the required number of fields into it. This can be achieved through the **create** event of the scheduler.
 

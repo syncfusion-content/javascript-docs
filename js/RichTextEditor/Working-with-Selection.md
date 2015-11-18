@@ -13,7 +13,7 @@ The editor control provides option to select all the content and in addition to 
 
 ## Select All 
 
-The [selectAll](http://help.syncfusion.com/js/api/ejrte#methods) method enables you to select the entire content including images in the editor by programmatically.
+The [selectAll](http://help.syncfusion.com/js/api/ejrte#methods:selectall) method enables you to select the entire content including images in the editor by programmatically.
 
 N> the selection highlight is invisible if the editor does not have focus. So, if you want to call the selectAll method, focus the editor before.
 
@@ -21,7 +21,7 @@ N> the selection highlight is invisible if the editor does not have focus. So, i
 
 <textarea id="texteditor"></textarea>
 
-<button onclick="selectAll()">Select All</button>
+     <button onclick="selectAll()">Select All</button>
 
 <script type="text/javascript">
 
@@ -85,7 +85,8 @@ The following public methods helps you to retrieve the selected content from the
 {% highlight html %}
 
 <textarea id="texteditor"></textarea>
-<button onclick="getSelection()">get Selection</button>
+
+       <button onclick="getSelection()">get Selection</button>
 
 <script type="text/javascript">
 

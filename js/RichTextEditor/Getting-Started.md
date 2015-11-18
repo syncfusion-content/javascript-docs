@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started with RichTextEditor widget for Syncfusion Essential JS
-description: Create new RichTextEditor and configure the toolbar and other functionalities.
+description: Getting started with RichTextEditor and configure the toolbar and other functionalities.
 platform: js
 control: RTE
 documentation: ug

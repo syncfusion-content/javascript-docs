@@ -10,7 +10,7 @@ documentation: ug
 
 ## Keyboard Interaction
 
-DatePicker support all possible keyboard interaction, you can enable this option by specifying **“** **allowKeyboardNavigation** **”** as true.
+DatePicker support all possible keyboard interaction, you can enable this option by specifying **“allowKeyboardNavigation”** as true.
 
 You can use the keyboard shortcut keys as an alternative of mouse to interact with DatePicker widget.
 
@@ -18,9 +18,9 @@ Keyboard shortcut keys are,
 
 <table>
 <tr>
-<td>
-**Key**<br/><br/></td><td>
-**Description**<br/><br/></td></tr>
+<th>
+Key</th><th>
+Description</th></tr>
 <tr>
 <td>
 Alt + Down<br/><br/></td><td>

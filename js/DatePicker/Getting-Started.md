@@ -14,21 +14,21 @@ To get start with DatePicker, create a new HTML file and refer the below specifi
 
 CSS file
 
-* **[ej.web.all.min.css](http://cdn.syncfusion.com/13.2.0.29/js/web/flat-azure/ej.web.all.min.css# "")**– includes all widgets styles (To know more about theme refer [Theming in Essential JavaScript Component](http://help.syncfusion.com/js/theming-in-essential-javascript-components# "") )
+* [ej.web.all.min.css](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css) – includes all widgets styles (To know more about theme refer [Theming in Essential JavaScript Component](http://help.syncfusion.com/js/theming-in-essential-javascript-components#))
 
 External script files
 
-* **[jQuery 1.7.1](http://jquery.com/# "")** and later versions.
-* **[jQuery.easing.js](http://gsgd.co.uk/sandbox/jquery/easing/# "")** - to support the animation effects.
-* **[jQuery.globalize.js](https://github.com/jquery/globalize/tree/v0.1.1# "")** - to support the globalization.
+* [jQuery 1.7.1](http://jquery.com/#) and later versions.
+* [jQuery.easing.js](http://gsgd.co.uk/sandbox/jquery/easing/#) - to support the animation effects.
+* [jQuery.globalize.js](https://github.com/jquery/globalize/tree/v0.1.1#) - to support the globalization.
 
 Internal script files
 
 <table>
 <tr>
-<td>
-**File**                        <br/><br/></td><td>
-**Description** **/** **Usage**<br/><br/></td></tr>
+<th>
+File </th><th>
+Description / Usage </th></tr>
 <tr>
 <td>
 ej.core.min.js<br/><br/></td><td>
@@ -40,9 +40,9 @@ DatePicker plugin.<br/><br/></td></tr>
 </table>
 You can make use of ‘ej.web.all.min.js’ file which encapsulates all ‘ej’ web components and frameworks in single file.
 
-* **[ej.web.all.min.js](http://cdn.syncfusion.com/13.2.0.29/js/web/ej.web.all.min.js# "")** – includes all web widgets.
+* [ej.web.all.min.js](http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js) – includes all web widgets.
 
-Note: In production, we highly recommend you to use our __[custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets# "")__ to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use __[GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip "")__ in your server. 
+N>  In production, we highly recommend you to use our [custom script generator](http://helpjs.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only. Also to reduce the file size further please use [GZip compression](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer?hl=en#text-compression-with-gzip) in your server. 
 
 A simple html file with required CSS and script reference added to create DatePicker
 
@@ -113,7 +113,7 @@ DatePicker can be created using ‘input’ element
 
 {% endhighlight %}
 
-N> DatePicker is a form control, so on form submitting its value can be retrieved by its **name**. By default **id** has been treated as name, if ‘name’ attribute is not specified.
+N>  DatePicker is a form control, so on form submitting its value can be retrieved by its **name**. By default **id** has been treated as name, if ‘name’ attribute is not specified.
 
 ## Get / Set value
 
@@ -164,5 +164,5 @@ You can assign values after initialization in DatePicker (‘it helps to get or 
 
 {% endhighlight %}
 
-N>  Existing DatePicker instance can be created by **[jQuery.data()](http://api.jquery.com/jQuery.data/# "")** and you can control the API’s of DatePicker behaviour.
+N>  Existing DatePicker instance can be created by [jQuery.data()](http://api.jquery.com/jQuery.data/#) and you can control the API’s of DatePicker behaviour.
 

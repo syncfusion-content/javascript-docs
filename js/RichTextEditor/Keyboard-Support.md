@@ -34,7 +34,7 @@ Cancel an action or close the dialog<br/><br/></td></tr>
 Go to first/last of the line<br/><br/></td></tr>
 <tr>
 <td>
-<kbd>CTRL<kbd> + <kbd>HOME</kbd> <br/><br/><kbd>CTRL</kbd> + <kbd>END</kbd><br/><br/></td><td>
+<kbd>CTRL</kbd> + <kbd>HOME</kbd> <br/><br/><kbd>CTRL</kbd> + <kbd>END</kbd><br/><br/></td><td>
 Go to the beginning/end of a content<br/><br/></td></tr>
 <tr>
 <td>
