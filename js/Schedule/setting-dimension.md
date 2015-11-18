@@ -45,7 +45,7 @@ height: "500px"
 
 {% endhighlight %}
 
-**Note**: The height and width properties accepts both **pixel** and **percentage** values.
+N>	The height and width properties accepts both **pixel** and **percentage** values.
 
 ## Scheduler Cell Dimensions
 
@@ -96,7 +96,7 @@ EndTime: new Date(2015, 11, 2, 10, 30)
 
 {% endhighlight %}
 
-**Note**: In **desktop** mode, the default height value of the cells is set to **20px**, whereas for **mobile** mode – the Scheduler cells are rendered with **40px** by default.
+N>	In **desktop** mode, the default height value of the cells is set to **20px**, whereas for **mobile** mode – the Scheduler cells are rendered with **40px** by default.
 
 ### Cell Width
 
@@ -145,5 +145,5 @@ EndTime: new Date(2015, 11, 2, 10, 30)
 
 {% endhighlight %}
 
-**Note**: When the **cellHeight** and **cellWidth** properties are set with some specific pixel values, the cell size does not adapt to the responsive behaviour of the Scheduler when it is resized either in desktop/mobile mode.
+N>	When the **cellHeight** and **cellWidth** properties are set with some specific pixel values, the cell size does not adapt to the responsive behaviour of the Scheduler when it is resized either in desktop/mobile mode.
 

@@ -156,7 +156,7 @@ resourceFields: "ownerId,roomId"
 
 {% endhighlight %}
 
-**Note**: The resource object defined at **first level** within the **resources** collection doesn’t make use of the **groupId** field, as there is no previous levels applicable to map.
+N>	The resource object defined at **first level** within the **resources** collection doesn’t make use of the **groupId** field, as there is no previous levels applicable to map.
 
 ## Data Binding
 
@@ -423,7 +423,7 @@ resourceFields: "ownerId"
 
 {% endhighlight %}
 
-**Note**: Setting **allowMultiple** to **true** in the above code snippet allows the user to select multiple resources in the appointment window and also creates multiple copies of the same appointment in the Scheduler for each resources while saving.
+N>	Setting **allowMultiple** to **true** in the above code snippet allows the user to select multiple resources in the appointment window and also creates multiple copies of the same appointment in the Scheduler for each resources while saving.
 
 ## Grouping
 
@@ -520,7 +520,7 @@ resourceFields: "ownerId"
 
 {% endhighlight %}
 
-**Note**: The **name** field mentioned in the **resource** object needs to be specified within the **group** property in order to enable the grouping option in Scheduler.
+N>	The **name** field mentioned in the **resource** object needs to be specified within the **group** property in order to enable the grouping option in Scheduler.
 
 ### Multi-Level
 
@@ -623,5 +623,5 @@ resourceFields: "ownerId,roomId"
 
 {% endhighlight %}
 
-**Note**: Here, the appointments will make use of the **color** defined for the Owners resource instance as its background color.
+N>	Here, the appointments will make use of the **color** defined for the Owners resource instance as its background color.
 

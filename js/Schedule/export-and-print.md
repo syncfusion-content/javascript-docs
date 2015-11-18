@@ -109,7 +109,7 @@ obj.exportSchedule("ExportToICS", null, args.targetInfo.Id);
 
 {% endhighlight %}
 
-**Note**: The Id value of the appointment passed in the above code example can be retrieved in the server-side action through Request.Form["AppointmentId"], as the id passed from the script is stored as hidden value in the input field of the form under this name internally.
+N>	The Id value of the appointment passed in the above code example can be retrieved in the server-side action through Request.Form["AppointmentId"], as the id passed from the script is stored as hidden value in the input field of the form under this name internally.
 
 ### Exporting all Appointments
 
@@ -294,7 +294,7 @@ obj.print();
 
 To print a particular appointment, the context menu **print** option can be used. The print option is handled internally by default, so that when an appointment is right clicked – choosing print option from the context menu that pops-out will automatically print that appointment.
 
-**Note**: To handle this functionality, the context menu settings needs to be enabled with print option added to the appointment items.
+N>	To handle this functionality, the context menu settings needs to be enabled with print option added to the appointment items.
 
 The following code example depicts the way to print a particular appointment.
 

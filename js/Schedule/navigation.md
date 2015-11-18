@@ -73,7 +73,7 @@ args.cancel = true;
 
 {% endhighlight %}
 
-**Note**: Based on the navigation, the appointments that lies between the particular date ranges of the current view are fetched and rendered in the Scheduler.
+N>	Based on the navigation, the appointments that lies between the particular date ranges of the current view are fetched and rendered in the Scheduler.
 
 ## Date Navigation
 

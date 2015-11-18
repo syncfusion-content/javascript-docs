@@ -27,16 +27,16 @@ The appointment collection includes the following options.
 <table>
 <tr>
 <td>
-Open Appointment (default)<br/><br/></td></tr>
+Open Appointment (default)</td></tr>
 <tr>
 <td>
-Delete Appointment (default)<br/><br/></td></tr>
+Delete Appointment (default)</td></tr>
 <tr>
 <td>
-Print Appointment<br/><br/></td></tr>
+Print Appointment</td></tr>
 <tr>
 <td>
-Categorize<br/><br/></td></tr>
+Categorize</td></tr>
 </table>
 
 ### Cells
@@ -46,16 +46,16 @@ The default options available within the cell collection includes -
 <table>
 <tr>
 <td>
-New Appointment<br/><br/></td></tr>
+New Appointment</td></tr>
 <tr>
 <td>
-New Recurring Appointment<br/><br/></td></tr>
+New Recurring Appointment</td></tr>
 <tr>
 <td>
-Today<br/><br/></td></tr>
+Today</td></tr>
 <tr>
 <td>
-Go to date<br/><br/></td></tr>
+Go to date</td></tr>
 <tr>
 <td>
 Settings (View, TimeMode, Work Hours) </td></tr>
@@ -230,7 +230,7 @@ EndTime: new Date(2015, 11, 2, 10, 30)
 
 {% endhighlight %}
 
-**Note**: The **id’s** given for the custom menu items **must be unique** in both the appointment and cells collection. 
+N>	The **id’s** given for the custom menu items **must be unique** in both the appointment and cells collection. 
 
 ## Handling Menu Actions
 
@@ -443,5 +443,5 @@ EndTime: new Date(2015, 11, 2, 10, 30)
 
 {% endhighlight %}
 
-**Note**: The **categorize** option must be added only to the **appointment** collection, which displays on right clicking over the appointments.
+N>	The **categorize** option must be added only to the **appointment** collection, which displays on right clicking over the appointments.
 

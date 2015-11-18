@@ -12,7 +12,7 @@ The Scheduler can be customized in various aspects like -
 
 * Setting different Start/end hour limits
 * Highlighting the working hours 
-* [Setting different date formats](/js/schedule/globalization-and-localization#date-format)
+* Setting different [date format](/js/schedule/globalization-and-localization#date-format)
 * Specifying minimum and maximum date ranges 
 * Customize the entire appointment window with the user required fields
 
@@ -23,10 +23,10 @@ It includes customization of displaying Scheduler with specific Start/End hours 
 
 ### Schedule Display Hours
 
-It denotes the start and end hour time limits to be displayed on the Scheduler. To set this time limit, two properties namely **startHour** and **endHour** can be used. 
+It denotes the start and end hour time limits to be displayed on the Scheduler. To set this time limit, two properties namely [startHour](/js/api/ejschedule#members:starthour) and [endHour](/js/api/ejschedule#members:endhour) can be used. 
 
-* **[startHour](/js/api/ejschedule#members:starthour)** - Sets the start time. The hour from which the Scheduler time display actually starts.
-* **[endHour](/js/api/ejschedule#members:endhour)** - Sets the end time. The hour on which the Scheduler time display should end.
+* **startHour** - Sets the start time. The hour from which the Scheduler time display actually starts.
+* **endHour** - Sets the end time. The hour on which the Scheduler time display should end.
 
 The following code example renders the scheduler from 7.00 AM to 6.00 PM.
 
@@ -138,7 +138,7 @@ EndTime: new Date(2015, 11, 5, 11, 00)
 
 {% endhighlight %}
 
-**Note**: By default, work hour **start** is set to **9** and work hour **end** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the work start hour that is set to it, to make the user to view that particular time initially.
+N>	By default, work hour **start** is set to **9** and work hour **end** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the work start hour that is set to it, to make the user to view that particular time initially.
 
 ## Date Customization
 
@@ -189,7 +189,7 @@ EndTime: new Date(2015, 11, 5, 11, 00)
 
 {% endhighlight %}
 
-**Note**: By default, the System current date will be taken as Scheduler’s Current date.
+N>	By default, the System current date will be taken as Scheduler’s Current date.
 
 ### MinDate and MaxDate
 
@@ -239,7 +239,7 @@ EndTime: new Date(2015, 11, 5, 11, 00)
 
 {% endhighlight %}
 
-**Note**: The **maxDate** value provided should always be greater than that of **minDate** value.
+N>	The **maxDate** value provided should always be greater than that of **minDate** value.
 
 ## Appointment Window Customization
 

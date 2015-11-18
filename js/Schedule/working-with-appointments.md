@@ -18,13 +18,13 @@ The types of appointments available within Scheduler can be categorized as follo
 
 Represents an appointment that is created for a certain time interval on a single or more number of days. If the normal appointment is created for more than 24 hours, then those longer appointments will be rendered on the all-day row.
 
-**Note**: If the normal appointment is to be created for two days (say from November 25, 2015 – 11.00 PM to November 26, 2015 2.00 AM) but less than 24 hour time interval, then the appointment is split into two parts and will be displayed appropriately on both the days.
+N>	If the normal appointment is to be created for two days (say from November 25, 2015 – 11.00 PM to November 26, 2015 2.00 AM) but less than 24 hour time interval, then the appointment is split into two parts and will be displayed appropriately on both the days.
 
 ### All-Day 
 
 Represents an appointment that is created for an entire day such as holiday events. It renders separately in an All-day cell, a separate place for all-day appointments. In Timeline (horizontal) view, all-day appointment renders in the usual work cells, as no all-day cells are present in that view. 
 
-**Note**: An all-day row is normally visible on the Scheduler, as the [showAllDayRow](/js/api/ejschedule#members:showalldayrow) property is set to true by default. 
+N>	An all-day row is normally visible on the Scheduler, as the [showAllDayRow](/js/api/ejschedule#members:showalldayrow) property is set to true by default. 
 
 ### Recurrence
 
@@ -57,122 +57,72 @@ On single clicking the scheduler appointments, the pop-up that shows up contains
 The quick window option can be enabled/disabled by using [showQuickWindow](/js/api/ejschedule#members:showquickwindow) API, whereas its default value is set to **true**.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="schedule"></div>
 
 <script>
-
-$("#schedule").ejSchedule({
-
-//disables the quick window 
-
-showQuickWindow: false,
-
-currentDate: new Date(2015, 11, 7),
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 06:00 AM"),
-
-EndTime: new Date("2015/11/7 07:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 9:00 AM"),
-
-EndTime: new Date("2015/11/7 02:30 PM")
-
-}]
-
-}
-
-});
-
+	$("#schedule").ejSchedule({
+		//disables the quick window 
+		showQuickWindow: false,
+		currentDate: new Date(2015, 11, 7),
+		appointmentSettings: {
+			//Array of JSON data configure in dataSource
+			dataSource: [
+			{
+				Id: 1,
+				Subject: "Music Class",
+				StartTime: new Date("2015/11/7 06:00 AM"),
+				EndTime: new Date("2015/11/7 07:00 AM")
+			},
+			{
+				Id: 2,
+				Subject: "School",
+				StartTime: new Date("2015/11/7 9:00 AM"),
+				EndTime: new Date("2015/11/7 02:30 PM")
+			}]
+		}
+	});
 </script>
-
-
 
 {% endhighlight %}
 
-**Note**: Select multiple cells either using mouse or keyboard access keys (shift + arrow keys) and press <enter> key, so that the quick window opens up for the selected date/time range.
+N>	Select multiple cells either using mouse or keyboard access keys (shift + arrow keys) and press <**enter**> key, so that the quick window opens up for the selected date/time range.
 
 Another way to disable the quick window option at dynamic time can be achieved through the [cellClick](/js/api/ejschedule#events:cellclick) and [appointmentClick](/js/api/ejschedule#events:appointmentclick) events. The below code example shows the way to disable the quick appointment window only while clicking on the cells, but displays for appointments.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="schedule"></div>
 
 <script>
+	$("#schedule").ejSchedule({
+		currentDate: new Date(2015, 11, 7),
+		showQuickWindow: true,
+		appointmentSettings: {
+			//Array of JSON data configure in dataSource
+			dataSource: [
+			{
+				Id: 1,
+				Subject: "Music Class",
+				StartTime: new Date("2015/11/7 06:00 AM"),
+				EndTime: new Date("2015/11/7 07:00 AM")
+			},
+			{
+				Id: 2,
+				Subject: "School",
+				StartTime: new Date("2015/11/7 9:00 AM"),
+				EndTime: new Date("2015/11/7 02:30 PM")
+			}]
+		},
+		cellClick: "onCellClick"
+	});
 
-$("#schedule").ejSchedule({
-
-currentDate: new Date(2015, 11, 7),
-
-showQuickWindow: true,
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 06:00 AM"),
-
-EndTime: new Date("2015/11/7 07:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 9:00 AM"),
-
-EndTime: new Date("2015/11/7 02:30 PM")
-
-}]
-
-},
-
-cellClick: "onCellClick"
-
-});
-
-function onCellClick(args) {
-
-args.cancel = true; // Prevents the display of quick window on clicking the cells.
-
-}
-
+	function onCellClick(args) {
+		args.cancel = true; // Prevents the display of quick window on clicking the cells.
+	}
 </script>
-
-
 
 {% endhighlight %}
 
@@ -184,7 +134,7 @@ The default appointment window is availed with options like
 * Subject
 * Start and End Time
 * All-Day
-* Time Zone (for both Start and End time)
+* TimeZone (for both Start and End time)
 * Repeat options
 * Description
 
@@ -197,144 +147,88 @@ The other additional options available are listed below for which the appropriat
 
 The appointments can be created by double-clicking on the Scheduler cells across the required time slots, which makes the create Appointment window to pop-up. The start and end time will gets automatically populated, according to the time-slot selection. Clicking on the done button in an appointment window will create the appointment for the selected time cells.
 
-**Note**: Select multiple cells both using mouse or keyboard access keys (shift + arrow keys) and press <Alt + N> key, so that the default appointment window opens up for the selected date/time range with the Start and End time fields automatically filled in.
+N>	Select multiple cells both using mouse or keyboard access keys (shift + arrow keys) and press <Alt + N> key, so that the default appointment window opens up for the selected date/time range with the Start and End time fields automatically filled in.
 
 To prevent the display of default appointment window on double clicking the Scheduler cells, either the [appointmentWindowOpen](/js/api/ejschedule#events:appointmentwindowopen) or [cellDoubleClick](/js/api/ejschedule#events:celldoubleclick) event can be used, within which the **args.cancel** needs to be set to true. This behaviour is depicted in the below code example.
 
 {% highlight html %}
 
-
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="Schedule1"></div>
 
-$(function () {
+<script>
+	$(function () {
+		// defining Schedule control
+		$("#Schedule1").ejSchedule({
+			width: "100%",
+			height: "525px",
+			currentDate:new Date(2015,11,5),
+			appointmentSettings: {
+				dataSource: [{
+					Id: 101,
+					Subject: "Talk with Nature",
+					StartTime: new Date(2015, 11, 5, 10, 00),
+					EndTime: new Date(2015, 11, 5, 11, 00)
+				}]
+			},
+			appointmentWindowOpen: "onAppointmentWindowOpen"
+		});
+	});
 
-// defining Schedule control
-
-$("#Schedule1").ejSchedule({
-
-width: "100%",
-
-height: "525px",
-
-currentDate:new Date(2015,11,5),
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 101,
-
-Subject: "Talk with Nature",
-
-StartTime: new Date(2015, 11, 5, 10, 00),
-
-EndTime: new Date(2015, 11, 5, 11, 00)
-
-}]
-
-},
-
-appointmentWindowOpen: "onAppointmentWindowOpen"
-
-});
-
-});
-
-function onAppointmentWindowOpen(args) {
-
-args.cancel = true; // prevents the display of default appointment window
-
-}
-
-
-
-
+	function onAppointmentWindowOpen(args) {
+		args.cancel = true; // prevents the display of default appointment window
+	}
+</script>
 
 {% endhighlight %}
 
-
 #### Through Programmatically
 
-You can add/edit the appointments dynamically through the public method - [saveAppointment](/js/api/ejschedule#methods:saveappointment). It accepts the JSON Object data (either a new or updated appointment object) as its argument.
+You can add/edit the appointments dynamically through the public method [saveAppointment](/js/api/ejschedule#methods:saveappointment). It accepts the JSON Object data (either a new or updated appointment object) as its argument.
 
 {% highlight html %}
-<body>
 
 <button id="btnAdd" value="Add" onclick="addAppointment()">Add</button>
 
 <!-- HTML element will initialize as a ejSchedule -->
-
 <div id="schedule"></div>
 
 <script>
+	$("#schedule").ejSchedule({
+		currentDate: new Date(2015, 11, 7),
+		appointmentSettings: {
+			//Array of JSON data configure in dataSource
+			dataSource: [
+			{
+				Id: 1,
+				Subject: "Music Class",
+				StartTime: new Date("2015/11/7 06:00 AM"),
+				EndTime: new Date("2015/11/7 07:00 AM")
+			},
+			{
+				Id: 2,
+				Subject: "School",
+				StartTime: new Date("2015/11/7 9:00 AM"),
+				EndTime: new Date("2015/11/7 02:30 PM")
+			}]
+		}
+	});
 
-$("#schedule").ejSchedule({
+	//addAppointment is a function, gets called on clicking the Add button
+	function addAppointment() {
+		//appointment details 
+		var appointment = {
+			Subject: "Gym",
+			StartTime: new Date("2015/11/7 03:30 AM"),
+			EndTime: new Date("2015/11/7 04:30 AM")
+		};
 
-currentDate: new Date(2015, 11, 7),
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 06:00 AM"),
-
-EndTime: new Date("2015/11/7 07:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 9:00 AM"),
-
-EndTime: new Date("2015/11/7 02:30 PM")
-
-}]
-
-}
-
-});
-
-//addAppointment is a function, gets called on clicking the Add button
-
-function addAppointment() {
-
-//appointment details 
-
-var appointment = {
-
-Subject: "Gym",
-
-StartTime: new Date("2015/11/7 03:30 AM"),
-
-EndTime: new Date("2015/11/7 04:30 AM")
-
-};
-
-//create the schedule object 
-
-var schObj = $("#schedule").data("ejSchedule");
-
-//pass the JSON object in the public method 
-
-schObj.saveAppointment(appointment);
-
-}
-
+		//create the schedule object 
+		var schObj = $("#schedule").data("ejSchedule");
+		//pass the JSON object in the public method 
+		schObj.saveAppointment(appointment);
+	}
 </script>
-
-
 
 {% endhighlight %}
 
@@ -352,67 +246,44 @@ A pop-up with a confirmation message will get displayed before deleting an appoi
 **For example**, to localize only the delete confirmation message in the delete window - 
 
 {% highlight html %}
+
+<!-- HTML element will initialize as a ejSchedule -->
+<div id="schedule"></div>
+
 <script>
+	var deleteCustomizationMessage = {
+		// customize the confirmation message
+		DeleteConfirmation: "Do you want to delete this Event?",
+		// customize the delete window title
+		MouseOverDeleteTitle: "Delete Event",
+		// customize the recurrence delete window title
+		RecurrenceDeleteTitle: "Delete Repeat Event"
+	};
 
-var deleteCustomizationMessage = {
-
-// customize the confirmation message
-
-DeleteConfirmation: "Do you want to delete this Event?",
-
-// customize the delete window title
-
-MouseOverDeleteTitle: "Delete Event",
-
-// customize the recurrence delete window title
-
-RecurrenceDeleteTitle: "Delete Repeat Event"
-
-};
-
-// Extend only the required changes to the original locale collection
-
-$.extend(ej.Schedule.Locale["en-US"], deleteCustomizationMessage);
-
-$(function () {
-
-// defining Schedule control
-
-$("#Schedule1").ejSchedule({
-
-width: "100%",
-
-height: "525px",
-
-currentDate:new Date(2015,11,5),
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 101,
-
-Subject: "Talk with Nature",
-
-StartTime: new Date(2015, 11, 5, 10, 00),
-
-EndTime: new Date(2015, 11, 5, 11, 00)
-
-}]
-
-}
-
-});
-
-});
-
+	// Extend only the required changes to the original locale collection
+	$.extend(ej.Schedule.Locale["en-US"], deleteCustomizationMessage);
+	
+	$(function () {
+		// defining Schedule control
+		$("#schedule").ejSchedule({
+			width: "100%",
+			height: "525px",
+			currentDate:new Date(2015,11,5),
+			appointmentSettings: {
+				dataSource: [{
+					Id: 101,
+					Subject: "Talk with Nature",
+					StartTime: new Date(2015, 11, 5, 10, 00),
+					EndTime: new Date(2015, 11, 5, 11, 00)
+				}]
+			}
+		});
+	});
 </script>
-
-
 
 {% endhighlight %}
 
-**Note**: All these CRUD operations on appointments (add/edit/delete) can also be done through the default [context menu](/js/schedule/context-menu#default-menu-options) options **Add Appointment**, **Edit Appointment** and **Delete Appointment** which is available, when context menu settings is enabled within Scheduler.
+N>	All these CRUD operations on appointments (add/edit/delete) can also be done through the default [context menu](/js/schedule/context-menu#default-menu-options) options **Add Appointment**, **Edit Appointment** and **Delete Appointment** which is available, when context menu settings is enabled within Scheduler.
 
 #### Through Programmatically
 
@@ -421,71 +292,39 @@ You can delete the appointments dynamically through the public method [deleteApp
 For example, here the below code example depicts the way to delete the appointments programmatically by calling the **deleteAppointment** function within the [appointmentClick](/js/api/ejschedule#events:appointmentclick) event, which triggers whenever the user clicks on an appointment.
 
 {% highlight html %}
-<body>
 
 <!-- HTML element will initialize as a ejSchedule -->
-
 <div id="schedule"></div>
 
 <script>
+	$("#schedule").ejSchedule({
+		currentDate: new Date(2015, 11, 7),
+		appointmentSettings: {
+			//Array of JSON data configure in dataSource
+			dataSource: [
+			{
+				Id: 1,
+				Subject: "Music Class",
+				StartTime: new Date("2015/11/7 06:00 AM"),
+				EndTime: new Date("2015/11/7 07:00 AM")
+			},
+			{
+				Id: 2,
+				Subject: "School",
+				StartTime: new Date("2015/11/7 9:00 AM"),
+				EndTime: new Date("2015/11/7 02:30 PM")
+			}]
+		},
+		appointmentClick: "onAppointmentClick"
+	});
 
-$("#schedule").ejSchedule({
-
-currentDate: new Date(2015, 11, 7),
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 06:00 AM"),
-
-EndTime: new Date("2015/11/7 07:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 9:00 AM"),
-
-EndTime: new Date("2015/11/7 02:30 PM")
-
-}]
-
-},
-
-appointmentClick: "onAppointmentClick"
-
-});
-
-//addAppointment is a function, gets called on clicking the Add button
-
-function onAppointmentClick(args) {
-
-var schObj = $("#schedule").data("ejSchedule");
-
-schObj.deleteAppointment(args.appointment.Guid);
-
-// $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
-
-}
-
-
-
+	//addAppointment is a function, gets called on clicking the Add button
+	function onAppointmentClick(args) {
+		var schObj = $("#schedule").data("ejSchedule");
+		schObj.deleteAppointment(args.appointment.Guid);
+		// $($(".e-appointment")[0]).attr("guid") --> To get the guid attribute value of an element directly.
+	}
 </script>
-
-
 
 {% endhighlight %}
 
@@ -493,210 +332,132 @@ schObj.deleteAppointment(args.appointment.Guid);
 
 It is possible to define some specific actions to take place after the CRUD operation occurs on the Scheduler appointments through the following available client-side events,
 
-* appointmentSaved
-* appointmentEdited
-* appointmentDeleted
+* [appointmentSaved](/js/api/ejschedule#events:appointmentsaved)
+* [appointmentEdited](/js/api/ejschedule#events:appointmentedited)
+* [appointmentDeleted](/js/api/ejschedule#events:appointmentdeleted)
 
-**[appointmentSaved](/js/api/ejschedule#events:appointmentsaved)** – Triggers before saving a new appointment.
+**appointmentSaved** – Triggers before saving a new appointment.
 
-**[appointmentEdited](/js/api/ejschedule#events:appointmentedited)** – Triggers when an appointment is edited and before it is being updated to the dataSource.
+**appointmentEdited** – Triggers when an appointment is edited and before it is being updated to the dataSource.
 
-**[appointmentDeleted](/js/api/ejschedule#events:appointmentdeleted)** – Triggers before deleting an existing appointment.
+**appointmentDeleted** – Triggers before deleting an existing appointment.
 
 To stop the save, edit and delete actions on the Scheduler appointments, following code example can be used.
 
 {% highlight html %}
 
+<!-- HTML element will initialize as a ejSchedule -->
+<div id="schedule"></div>
 
-<div id="Schedule1"></div>
+<script>
+	$(function () {
+		// defining Schedule control
+		$("#Schedule1").ejSchedule({
+			width: "100%",
+			height: "525px",
+			currentDate:new Date(2015,11,5),
+			appointmentSettings: {
+				dataSource: [{
+					Id: 101,
+					Subject: "Talk with Nature",
+					StartTime: new Date(2015, 11, 5, 10, 00),
+					EndTime: new Date(2015, 11, 5, 11, 00)
+				}]
+			},
+			appointmentSaved: "onAppointmentSave",
+			appointmentEdited: "onAppointmentEdit",
+			appointmentDeleted: "onAppointmentDelete"
+		});
+	});
 
-$(function () {
+	function onAppointmentSave(args) {
+		args.cancel = true; // cancels the save action on appointments.
+	}
 
-// defining Schedule control
+	function onAppointmentEdit(args) {
+		args.cancel = true; // cancels the edit action on appointments.
+	}
 
-$("#Schedule1").ejSchedule({
-
-width: "100%",
-
-height: "525px",
-
-currentDate:new Date(2015,11,5),
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 101,
-
-Subject: "Talk with Nature",
-
-StartTime: new Date(2015, 11, 5, 10, 00),
-
-EndTime: new Date(2015, 11, 5, 11, 00)
-
-}]
-
-},
-
-appointmentSaved: "onAppointmentSave",
-
-appointmentEdited: "onAppointmentEdit",
-
-appointmentDeleted: "onAppointmentDelete"
-
-});
-
-});
-
-function onAppointmentSave(args) {
-
-args.cancel = true; // cancels the save action on appointments.
-
-}
-
-function onAppointmentEdit(args) {
-
-args.cancel = true; // cancels the edit action on appointments.
-
-}
-
-function onAppointmentDelete(args) {
-
-args.cancel = true; // cancels the delete action on appointments.
-
-}
-
-
-
-
+	function onAppointmentDelete(args) {
+		args.cancel = true; // cancels the delete action on appointments.
+	}
+</script>
 
 {% endhighlight %}
 
 ## Read Only
 
-An interaction with the appointments of the Scheduler can be enabled/disabled through the [readOnly](/js/api/ejschedule#members:readonly) property. When the **readOnly** property is set to **true**, it is not possible to do any actions on the appointments, but you can navigate between the schedule dates, views and can also be able to see the appointment details in the quick window. By default, this property is set to **false**.
+An interaction with the appointments of the Scheduler can be enabled/disabled through the [readOnly](/js/api/ejschedule#members:readonly) property. When the `readOnly` property is set to `true`, it is not possible to do any actions on the appointments, but you can navigate between the schedule dates, views and can also be able to see the appointment details in the quick window. By default, this property is set to `false`.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-//set the Schedule as read only,
-
-readOnly:true,
-
-currentDate: new Date(2015, 11, 7),
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 09:00 AM"),
-
-EndTime: new Date("2015/11/7 10:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 02:00 PM"),
-
-EndTime: new Date("2015/11/7 06:30 PM")
-
-}]
-
-}
-
-});
-
-})
-
+	$(function () {
+		$("#schedule").ejSchedule({
+			//set the Schedule as read only,
+			readOnly:true,
+			currentDate: new Date(2015, 11, 7),
+			appointmentSettings: {
+				//Array of JSON data configure in dataSource
+				dataSource: [
+				{
+					Id: 1,
+					Subject: "Music Class",
+					StartTime: new Date("2015/11/7 09:00 AM"),
+					EndTime: new Date("2015/11/7 10:00 AM")
+				},
+				{
+					Id: 2,
+					Subject: "School",
+					StartTime: new Date("2015/11/7 02:00 PM"),
+					EndTime: new Date("2015/11/7 06:30 PM")
+				}]
+			}
+		});
+	})
 </script>
-
-
 
 {% endhighlight %}
 
-**Note**: When the **readOnly** property is set to true – double clicking the cells will open the appointment window filled with appointment details, which can be allowed to view but cannot be edited or saved.
+N>	When the `readOnly` property is set to true – double clicking the cells will open the appointment window filled with appointment details, which can be allowed to view but cannot be edited or saved.
 
 ## Drag and Drop
 
-The appointment time can be modified through the drag and drop behaviour, by dragging and dropping it to the new location, so that the start time and end time of the appointment gets changed automatically. We can enable/disable the drag and drop functionality through the **allowDragDrop** property. By default, it is set to **true**.
+The appointment time can be modified through the drag and drop behaviour, by dragging and dropping it to the new location, so that the start time and end time of the appointment gets changed automatically. We can enable/disable the drag and drop functionality through the `allowDragDrop` property. By default, it is set to `true`.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-//disable appointment drag and drop,
-
-allowDragDrop: false,
-
-currentDate: new Date(2015, 11, 7),
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 09:00 AM"),
-
-EndTime: new Date("2015/11/7 10:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 02:00 PM"),
-
-EndTime: new Date("2015/11/7 06:30 PM")
-
-}]
-
-}
-
-});
-
-})
-
+	$(function () {
+		$("#schedule").ejSchedule({
+			//disable appointment drag and drop,
+			allowDragDrop: false,
+			currentDate: new Date(2015, 11, 7),
+			appointmentSettings: {
+				//Array of JSON data configure in dataSource
+				dataSource: [
+				{
+					Id: 1,
+					Subject: "Music Class",
+					StartTime: new Date("2015/11/7 09:00 AM"),
+					EndTime: new Date("2015/11/7 10:00 AM")
+				},
+				{
+					Id: 2,
+					Subject: "School",
+					StartTime: new Date("2015/11/7 02:00 PM"),
+					EndTime: new Date("2015/11/7 06:30 PM")
+				}]
+			}
+		});
+	})
 </script>
-
-
 
 {% endhighlight %}
 
@@ -704,129 +465,83 @@ EndTime: new Date("2015/11/7 06:30 PM")
 
 The drag and drop functionality can be handled with the following three events,
 
-* dragStart
-* drag
-* dragStop
+* [dragStart](/js/api/ejschedule#events:dragstart)
+* [drag](/js/api/ejschedule#events:drag)
+* [dragStop](/js/api/ejschedule#events:dragstop)
 
-**[dragStart](/js/api/ejschedule#events:dragstart)** – Triggers when the appointments are started to drag from its source location.
+**dragStart** – Triggers when the appointments are started to drag from its source location.
 
-**[drag](/js/api/ejschedule#events:drag)** – Triggers when the appointments are being dragged over.
+**drag** – Triggers when the appointments are being dragged over.
 
-**[dragStop](/js/api/ejschedule#events:dragstop)** – Triggers when the appointments are dropped on a destined location.
+**dragStop** – Triggers when the appointments are dropped on a destined location.
 
 The following code example shows how to cancel the dragging functionality with the help of one of these events.
 
 {% highlight html %}
 
+<!-- HTML element will initialize as a ejSchedule -->
+<div id="schedule"></div>
 
-<div id="Schedule1"></div>
+<script>
+	$(function () {
+		// defining Schedule control
+		$("#schedule").ejSchedule({
+			width: "100%",
+			height: "525px",
+			currentDate:new Date(2015,11,5),
+			appointmentSettings: {
+				dataSource: [{
+					Id: 101,
+					Subject: "Talk with Nature",
+					StartTime: new Date(2015, 11, 5, 10, 00),
+					EndTime: new Date(2015, 11, 5, 11, 00)
+				}]
+			},
+			dragStop: "onDragStop"
+		});
+	});
 
-$(function () {
-
-// defining Schedule control
-
-$("#Schedule1").ejSchedule({
-
-width: "100%",
-
-height: "525px",
-
-currentDate:new Date(2015,11,5),
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 101,
-
-Subject: "Talk with Nature",
-
-StartTime: new Date(2015, 11, 5, 10, 00),
-
-EndTime: new Date(2015, 11, 5, 11, 00)
-
-}]
-
-},
-
-dragStop: "onDragStop"
-
-});
-
-});
-
-function onDragStop(args) {
-
-args.cancel = true; // cancels the drag action on appointments.
-
-}
-
-
-
-
+	function onDragStop(args) {
+		args.cancel = true; // cancels the drag action on appointments.
+	}
+</script>
 
 {% endhighlight %}
 
 ## Resize
 
-Resizing an appointment is another way to change its start or end time. Mouse hover on the appointments, so that the resizing handlers gets displayed on either sides of the appointment which allows resizing. The resizing functionality can be enabled/disabled by setting the [enableAppointmentResize](/js/api/ejschedule#members:enableappointmentresize) property. By default it is set to **true**.
+Resizing an appointment is another way to change its start or end time. Mouse hover on the appointments, so that the resizing handlers gets displayed on either sides of the appointment which allows resizing. The resizing functionality can be enabled/disabled by setting the [enableAppointmentResize](/js/api/ejschedule#members:enableappointmentresize) property. By default it is set to `true`.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-//disable appointment resizes,
-
-enableAppointmentResize: false,
-
-currentDate: new Date(2015, 11, 7),
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 09:00 AM"),
-
-EndTime: new Date("2015/11/7 10:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 02:00 PM"),
-
-EndTime: new Date("2015/11/7 06:30 PM")
-
-}]
-
-}
-
-});
-
-})
-
+	$(function () {
+		$("#schedule").ejSchedule({
+			//disable appointment resizes,
+			enableAppointmentResize: false,
+			currentDate: new Date(2015, 11, 7),
+			appointmentSettings: {
+				//Array of JSON data configure in dataSource
+				dataSource: [
+				{
+					Id: 1,
+					Subject: "Music Class",
+					StartTime: new Date("2015/11/7 09:00 AM"),
+					EndTime: new Date("2015/11/7 10:00 AM")
+				},
+				{
+					Id: 2,
+					Subject: "School",
+					StartTime: new Date("2015/11/7 02:00 PM"),
+					EndTime: new Date("2015/11/7 06:30 PM")
+				}]
+			}
+		});
+	})
 </script>
-
-
 
 {% endhighlight %}
 
@@ -834,66 +549,46 @@ EndTime: new Date("2015/11/7 06:30 PM")
 
 The appointment resizing functionality can be handled through the following three events,
 
-* resizeStart
-* resize
-* resizeStop
+* [resizeStart](/js/api/ejschedule#events:resizestart)
+* [resize](/js/api/ejschedule#events:resize)
+* [resizeStop](/js/api/ejschedule#events:resizestop)
 
-**[resizeStart](/js/api/ejschedule#events:resizestart)** – Triggers when the appointments are started resizing from its original time.
+**resizeStart** – Triggers when the appointments are started resizing from its original time.
 
-**[resize](/js/api/ejschedule#events:resize)** – Triggers when the appointment resizing is in progress.
+**resize** – Triggers when the appointment resizing is in progress.
 
-**[resizeStop](/js/api/ejschedule#events:resizestop)** – Triggers when the appointment resizing is done.
+**resizeStop** – Triggers when the appointment resizing is done.
 
 The following code example shows how to cancel the resizing functionality with the help of one of these events.
 
 {% highlight html %}
 
+<!-- HTML element will initialize as a ejSchedule -->
+<div id="schedule"></div>
 
-<div id="Schedule1"></div>
+<script>
+	$(function () {
+		// defining Schedule control
+		$("#Schedule1").ejSchedule({
+			width: "100%",
+			height: "525px",
+			currentDate:new Date(2015,11,5),
+			appointmentSettings: {
+				dataSource: [{
+					Id: 101,
+					Subject: "Talk with Nature",
+					StartTime: new Date(2015, 11, 5, 10, 00),
+					EndTime: new Date(2015, 11, 5, 11, 00)
+				}]
+			},
+			resizeStart: "onResizeStart"
+		});
+	});
 
-$(function () {
-
-// defining Schedule control
-
-$("#Schedule1").ejSchedule({
-
-width: "100%",
-
-height: "525px",
-
-currentDate:new Date(2015,11,5),
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 101,
-
-Subject: "Talk with Nature",
-
-StartTime: new Date(2015, 11, 5, 10, 00),
-
-EndTime: new Date(2015, 11, 5, 11, 00)
-
-}]
-
-},
-
-resizeStart: "onResizeStart"
-
-});
-
-});
-
-function onResizeStart(args) {
-
-args.cancel = true; // Blocks the resize action on appointments.
-
-}
-
-
-
-
+	function onResizeStart(args) {
+		args.cancel = true; // Blocks the resize action on appointments.
+	}
+</script>
 
 {% endhighlight %}
 
@@ -905,33 +600,22 @@ It allows to differentiate the appointments with various categorize options and 
 
 The [categorizeSettings](/js/api/ejschedule#members:categorizesettings) is an object collection that holds below categorize related properties such as,
 
-* **[enable](/js/api/ejschedule#members:categorizesettings-enable)** - It accepts true or false value, denoting whether to enable/disable the categorize option. Its default value is **false**.
-* **[allowMultiple](/js/api/ejschedule#members:categorizesettings-allowmultiple)** – It enables or disables the multiple selection of categories for each appointments in the appointment window as well as in the context menu. Its default value is **false**.
-* **[dataSource](/js/api/ejschedule#members:categorizesettings-datasource)** – Bind the categorize collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview). We have below 6 default values for data source collection.
+* [enable](/js/api/ejschedule#members:categorizesettings-enable) - It accepts true or false value, denoting whether to enable/disable the categorize option. Its default value is `false`.
+* [allowMultiple](/js/api/ejschedule#members:categorizesettings-allowmultiple) – It enables or disables the multiple selection of categories for each appointments in the appointment window as well as in the context menu. Its default value is `false`.
+* [dataSource](/js/api/ejschedule#members:categorizesettings-datasource) – Bind the categorize collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview). We have below 6 default values for data source collection.
 
 {% highlight js %}
 
 categorizeSettings: {
-
-dataSource: [
-
-{ text: "Blue Category", id: 1, color: "#7499e1", fontColor: "green" },
-
-{ text: "Green Category", id: 2, color: "#7cce6e", fontColor: "green" },
-
-{ text: "Orange Category", id: 3, color: "#f19d5a", fontColor: "green" },
-
-{ text: "Purple Category", id: 4, color: "#937bd1", fontColor: "green" },
-
-{ text: "Red Category", id: 5, color: "#d98889", fontColor: "green" },
-
-{ text: "Yellow Category", id: 6, color: "#f8f264", fontColor: "green" }
-
-]
-
+	dataSource: [
+		{ text: "Blue Category", id: 1, color: "#7499e1", fontColor: "green" },
+		{ text: "Green Category", id: 2, color: "#7cce6e", fontColor: "green" },
+		{ text: "Orange Category", id: 3, color: "#f19d5a", fontColor: "green" },
+		{ text: "Purple Category", id: 4, color: "#937bd1", fontColor: "green" },
+		{ text: "Red Category", id: 5, color: "#d98889", fontColor: "green" },
+		{ text: "Yellow Category", id: 6, color: "#f8f264", fontColor: "green" }
+	]
 }
-
-
 
 {% endhighlight %}
 
@@ -956,116 +640,65 @@ color<br/><br/></td><td>
 It holds the binding name for <b>color</b> field in the categorize dataSource.<br/><br/></td></tr>
 <tr>
 <td>
-[fontColor](/js/api/ejschedule#members:categorizesettings-fontcolor)<br/><br/></td><td>
+fontColor<br/><br/></td><td>
 It holds the binding name for <b>fontcolor</b> field in the categorize dataSource. This font color apply in the appointment.<br/><br/></td></tr>
 </table>
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-currentDate: new Date(2015, 11, 7),
-
-//Configure the categorize settings
-
-categorizeSettings: {
-
-//Enable the categorize options
-
-enable: true,
-
-//enable multiple selection options
-
-allowMultiple: true,
-
-//data source collection binding
-
-dataSource: [
-
-{ text: "Blue Category", id: 1, color: "#7499e1", fontColor: "green" },
-
-{ text: "Green Category", id: 2, color: "#7cce6e", fontColor: "green" },
-
-{ text: "Orange Category", id: 3, color: "#f19d5a", fontColor: "green" },
-
-{ text: "Purple Category", id: 4, color: "#937bd1", fontColor: "green" },
-
-{ text: "Red Category", id: 5, color: "#d98889", fontColor: "green" },
-
-{ text: "Yellow Category", id: 6, color: "#f8f264", fontColor: "green" }
-
-],
-
-//text mapper field
-
-text: "text",
-
-//id mapper field 
-
-id: "id",
-
-//categorize color mapper field
-
-color: "color",
-
-//categorize appointment font color mapper field.
-
-fontColor: "fontColor"
-
-},
-
-appointmentSettings: {
-
-categorize: "categorize",
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 09:00 AM"),
-
-EndTime: new Date("2015/11/7 10:00 AM"),
-
-categorize: "3",
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 02:00 PM"),
-
-EndTime: new Date("2015/11/7 06:30 PM"),
-
-categorize: "1,2,6" // Multiple categorize id passing 
-
-}]
-
-}
-
-});
-
-})
-
+	$(function () {
+		$("#schedule").ejSchedule({
+			currentDate: new Date(2015, 11, 7),
+			//Configure the categorize settings
+			categorizeSettings: {
+				//Enable the categorize options
+				enable: true,
+				//enable multiple selection options
+				allowMultiple: true,
+				//data source collection binding
+				dataSource: [
+					{ text: "Blue Category", id: 1, color: "#7499e1", fontColor: "green" },
+					{ text: "Green Category", id: 2, color: "#7cce6e", fontColor: "green" },
+					{ text: "Orange Category", id: 3, color: "#f19d5a", fontColor: "green" },
+					{ text: "Purple Category", id: 4, color: "#937bd1", fontColor: "green" },
+					{ text: "Red Category", id: 5, color: "#d98889", fontColor: "green" },
+					{ text: "Yellow Category", id: 6, color: "#f8f264", fontColor: "green" }
+				],
+				//text mapper field
+				text: "text",
+				//id mapper field 
+				id: "id",
+				//categorize color mapper field
+				color: "color",
+				//categorize appointment font color mapper field.
+				fontColor: "fontColor"
+			},
+			appointmentSettings: {
+				categorize: "categorize",
+				//Array of JSON data configure in dataSource
+				dataSource: [
+				{
+					Id: 1,
+					Subject: "Music Class",
+					StartTime: new Date("2015/11/7 09:00 AM"),
+					EndTime: new Date("2015/11/7 10:00 AM"),
+					categorize: "3",
+				},
+				{
+					Id: 2,
+					Subject: "School",
+					StartTime: new Date("2015/11/7 02:00 PM"),
+					EndTime: new Date("2015/11/7 06:30 PM"),
+					categorize: "1,2,6" // Multiple categorize id passing 
+				}]
+			}
+		});
+	})
 </script>
-
-
 
 {% endhighlight %}
 
@@ -1077,29 +710,20 @@ This option prioritize the appointments based on its importance and it can be di
 
 The [prioritySettings](/js/api/ejschedule#members:prioritysettings) is an object collection that holds the below priority related properties such as,
 
-* **[enable](/js/api/ejschedule#members:prioritysettings-enable)** - It accepts true or false value, denoting whether to enable/disable the priority option. Its default value is **false**.
-* **template** – Customize the priority icon/images using template options. Refer this [priority template](/js/schedule/templates#priority-settings-template) topic.
-* **[dataSource](/js/api/ejschedule#members:prioritysettings-datasource)** – binds the priority collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview). We have below 4 default values for priority data source collection.
+* [enable](/js/api/ejschedule#members:prioritysettings-enable) - It accepts true or false value, denoting whether to enable/disable the priority option. Its default value is **false**.
+* template – Customize the priority icon/images using template options. Refer this [priority template](/js/schedule/templates#priority-settings-template) topic.
+* [dataSource](/js/api/ejschedule#members:prioritysettings-datasource) – binds the priority collection. This property should be assigned with the JSON data array collection or instance of [ej.DataManger](/js/datamanager/overview). We have below 4 default values for priority data source collection.
 
 {% highlight js %}
 
 prioritySettings: {
-
-dataSource: [
-
-{ text: "None", value: "none" },
-
-{ text: "High", value: "high" },
-
-{ text: "Medium", value: "medium" },
-
-{ text: "Low", value: "low" }
-
-]
-
+	dataSource: [
+		{ text: "None", value: "none" },
+		{ text: "High", value: "high" },
+		{ text: "Medium", value: "medium" },
+		{ text: "Low", value: "low" }
+	]
 }
-
-
 
 {% endhighlight %}
 
@@ -1121,98 +745,54 @@ It holds the binding name for <b>value</b> field in the priority dataSource.<br/
 </table>
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-currentDate: new Date(2015, 11, 7),
-
-//Configure the categorize settings
-
-prioritySettings: {
-
-//enable the priority option
-
-enable: true,
-
-//Configure the priority data source 
-
-dataSource: [
-
-{ text: "None", value: "none" },
-
-{ text: "High", value: "high" },
-
-{ text: "Low", value: "low" }
-
-],
-
-//mapper field for text 
-
-text: "text",
-
-//mapper field for value 
-
-value: "value"
-
-},
-
-appointmentSettings: {
-
-//set the priority mapper field for appointment data collection
-
-priority: "priority",
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 09:00 AM"),
-
-EndTime: new Date("2015/11/7 10:00 AM"),
-
-priority: "low", //pass the priority value
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 02:00 PM"),
-
-EndTime: new Date("2015/11/7 06:30 PM"),
-
-priority: "high" //pass the priority value
-
-}]
-
-}
-
-});
-
-})
-
+	$(function () {
+		$("#schedule").ejSchedule({
+			currentDate: new Date(2015, 11, 7),
+			//Configure the categorize settings
+			prioritySettings: {
+				//enable the priority option
+				enable: true,
+				//Configure the priority data source 
+				dataSource: [
+					{ text: "None", value: "none" },
+					{ text: "High", value: "high" },
+					{ text: "Low", value: "low" }
+				],
+				//mapper field for text 
+				text: "text",
+				//mapper field for value 
+				value: "value"
+			},
+			appointmentSettings: {
+				//set the priority mapper field for appointment data collection
+				priority: "priority",
+				//Array of JSON data configure in dataSource
+				dataSource: [
+				{
+					Id: 1,
+					Subject: "Music Class",
+					StartTime: new Date("2015/11/7 09:00 AM"),
+					EndTime: new Date("2015/11/7 10:00 AM"),
+					priority: "low", //pass the priority value
+				},
+				{
+					Id: 2,
+					Subject: "School",
+					StartTime: new Date("2015/11/7 02:00 PM"),
+					EndTime: new Date("2015/11/7 06:30 PM"),
+					priority: "high" //pass the priority value
+				}]
+			}
+		});
+	})
 </script>
 
-
-
 {% endhighlight %}
-
 
 ## Search or Filter Appointments
 
@@ -1229,8 +809,8 @@ The public method [searchAppointment](/js/api/ejschedule#methods:searchappointme
 **ignoreCase** – It is a boolean value to set the search string as case sensitive or not. It’s an optional argument.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!-- HTML element will initialize as a ejSchedule -->
 <input id="txtSearch" type="text" />
 
 <input id="btnSearch" class="searchApp" type="button" value="Search" />
@@ -1488,7 +1068,7 @@ The recurrence appointments are created based on the recurrence rule. The Recurr
 * the interval duration
 * the time period to render the appointment, etc.,
 
-It has the following properties based on which the recurrence appointments are rendered in the **Schedule** control with its respective time period.
+It has the following properties based on which the recurrence appointments are rendered in the Schedule control with its respective time period.
 
 <table>
 <tr>
@@ -1617,7 +1197,7 @@ RecurrenceRule: "FREQ=DAILY;INTERVAL=1;COUNT=5" //Recurrence rule.
 
 ### Recurrence Validation
 
-The default recurrence validation has been included for recurrence appointments similar to the one available in outlook. The validation occurs during the recurrence appointment creation, drag and drop of the recurrence appointments and also if any single occurrence changes. The validation can be disabled by setting the [enableRecurrenceValidation](/js/api/ejschedule#members:enablerecurrencevalidation) to **false**.
+The default recurrence validation has been included for recurrence appointments similar to the one available in outlook. The validation occurs during the recurrence appointment creation, drag and drop of the recurrence appointments and also if any single occurrence changes. The validation can be disabled by setting the [enableRecurrenceValidation](/js/api/ejschedule#members:enablerecurrencevalidation) to `false`.
 
 {% highlight html %}
 <!-- HTML element will initialize as a ejSchedule -->
@@ -1686,7 +1266,7 @@ RecurrenceRule: "FREQ=DAILY;INTERVAL=1;COUNT=5" //Recurrence rule.
 
 
 
-**Note**: You can parse the **RecurrenceRule** of an appointment from the server-side by making use of a new generic utility class **RecurrenceHelper**. Refer this [KB document](https://www.syncfusion.com/kb/5390/how-to-parse-the-recurrencerule-in-server-side).
+N>	You can parse the **RecurrenceRule** of an appointment from the server-side by making use of a new generic utility class **RecurrenceHelper**. Refer this [KB document](https://www.syncfusion.com/kb/5390/how-to-parse-the-recurrencerule-in-server-side).
 
 ## Reminder
 
@@ -1694,7 +1274,7 @@ Reminder option notifies all the appointments before some specific time. By defa
 
 **Enable**
 
-To enable the reminder settings of the Schedule control, set the **enable** property as **true** within the [reminderSettings](/js/api/ejschedule#members:remindersettings) option.
+To enable the reminder settings of the Schedule control, set the **enable** property as `true` within the [reminderSettings](/js/api/ejschedule#members:remindersettings) option.
 
 **Alert Before**
 
@@ -1775,5 +1355,5 @@ alert("Reminder Appointment");
 
 {% endhighlight %}
 
-**Note**: Whenever the reminder setting is enabled in the Scheduler with some specific value (in minutes) assigned to the **alertBefore** property, the **reminder** event gets triggered before this specified value. It includes the reminder appointment’s entire information in its arguments.
+N>	Whenever the reminder setting is enabled in the Scheduler with some specific value (in minutes) assigned to the **alertBefore** property, the **reminder** event gets triggered before this specified value. It includes the reminder appointment’s entire information in its arguments.
 
