@@ -155,7 +155,7 @@ $(".table tbody").html(tbody);
 
 
 
-### excute<span class="signature">(dataManager)</span>
+### execute<span class="signature">(dataManager)</span>
 {:#methods:excute}
 
 
