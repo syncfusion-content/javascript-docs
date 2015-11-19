@@ -7,13 +7,25 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html Textbox Control.
+# ejTextBoxes
+
+
+
+ NumericTextBox is used to display only numeric values. It has Spin buttons to increase or decrease the values in the Text Box.
+
+ CurrencyTextBox is used to display only currency values. it has Spin buttons to increase or decrease the values in the Text Box.
+
+ PercentageTextBox control is used to display only percentage values. It has Spin buttons to increase or decrease the values in the Text Box.
 
 
 
 
 
-$(element).ejTextBoxes<span class="signature">()</span>
+$(element).ejNumericTextbox<span class="signature">()</span>
+
+$(element).ejCurrencyTextbox<span class="signature">()</span>
+
+$(element).ejPercentageTextbox<span class="signature">()</span>
 
 
 

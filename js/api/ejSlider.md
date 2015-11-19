@@ -7,7 +7,12 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html Slider control.
+# ejSlider
+
+
+
+
+The Slider provides support to select a value from a particular range as well as selects a range value. The Slider has a sliding base on which the handles are moved. There are three types of Sliders such as default Slider, min-range Slider and range Slider.
 
 
 

@@ -40,7 +40,7 @@ By default, the Schedule control’s active view is **Week** view. Also, it is p
 
 {% endhighlight %}
 
-N>	`currentView` property accepts both the string and `ej.Schedule.CurrentView` enum value.
+N> `currentView` property accepts both the string and `ej.Schedule.CurrentView` enum value.
 
 ## Day 
 
@@ -194,7 +194,7 @@ Month view displays the entire days of a particular month and all its related ap
 
 {% endhighlight %}
 
-N>	An appointment directly created in Month view will be considered as an all-day appointment.
+N> An appointment directly created in Month view will be considered as an all-day appointment.
 
 ## Custom
 
@@ -286,7 +286,7 @@ This View option lists out the appointments in a grid-like view for the next 7 d
 
 {% endhighlight %}
 
-N>	In Agenda view, the templates can be applied for the date and time columns which can be referred [here](/js/api/ejschedule#members:agendaviewsettings). Also, the template passed through the [appointmentTemplateID](/js/api/ejschedule#members:appointmenttemplateid) will gets applied to the event column in Agenda view.
+N> In Agenda view, the templates can be applied for the date and time columns which can be referred [here](/js/api/ejschedule#members:agendaviewsettings). Also, the template passed through the [appointmentTemplateID](/js/api/ejschedule#members:appointmenttemplateid) will gets applied to the event column in Agenda view.
 
 ## Restriction on View Navigation
 
@@ -327,7 +327,7 @@ It is possible to restrict the users to display only the specific list of views 
 
 {% endhighlight %}
 
-N>	Eventhough Week view is the active view in Scheduler by default, if it is not listed in the views collection – then the first listed option in the views collection will be taken as current view of the Scheduler.
+N> Eventhough Week view is the active view in Scheduler by default, if it is not listed in the views collection – then the first listed option in the views collection will be taken as current view of the Scheduler.
 
 ## Timeline View
 

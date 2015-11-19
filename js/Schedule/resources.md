@@ -69,94 +69,52 @@ Binds the appointmentClass field name in the dataSource. It applies the custom c
 
 {% highlight html %}
 
-
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-width: "100%",
-
-currentDate: new Date(2015, 04, 05),
-
-resources: [{
-
-field: "ownerId", title: "Owner",
-
-resourceSettings: {
-
-dataSource: [
-
-{ OwnerText: "Nancy", id: 1, OwnerColor: "#f8a398" },
-
-{ OwnerText: "Steven", id: 2, OwnerColor: "#56ca95"}],
-
-text: "OwnerText", id: "id", color: "OwnerColor"
-
-}
-
-},
-
-{
-
-field: "roomId", title: "Room(s)",
-
-resourceSettings: {
-
-dataSource: [
-
-// groupId maps the current resources to the previous level of resource object (current groupId maps with previous level id field)
-
-{ text: "Room1", id: 1, groupId: 1, color: "#f8a398" },
-
-{ text: "Room2", id: 2, groupId: 2, color: "#56ca85"},
-
-{ text: "Room3", id: 3, groupId: 2, color: "#56ac88"}],
-
-text: "text", id: "id", color: "color", groupId: "groupId"
-
-}
-
-}],
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Research on Sky Miracles",
-
-StartTime: new Date(2015, 04, 05, 9, 00),
-
-EndTime: new Date(2015, 04, 05, 10, 30),
-
-ownerId: 2,
-
-roomId: 3 
-
-}],
-
-resourceFields: "ownerId,roomId"
-
-}
-
-});
-
-});
-
+	$(function () {
+		$("#Schedule1").ejSchedule({
+			width: "100%",
+			currentDate: new Date(2015, 04, 05),
+			resources: [{
+				field: "ownerId", title: "Owner",
+				resourceSettings: {
+					dataSource: [
+						{ OwnerText: "Nancy", id: 1, OwnerColor: "#f8a398" },
+						{ OwnerText: "Steven", id: 2, OwnerColor: "#56ca95"}],
+					text: "OwnerText", id: "id", color: "OwnerColor"
+				}
+			},
+			{
+				field: "roomId", title: "Room(s)",
+				resourceSettings: {
+					dataSource: [
+						// groupId maps the current resources to the previous level of resource object (current groupId maps with previous level id field)
+						{ text: "Room1", id: 1, groupId: 1, color: "#f8a398" },
+						{ text: "Room2", id: 2, groupId: 2, color: "#56ca85"},
+						{ text: "Room3", id: 3, groupId: 2, color: "#56ac88"}],
+					text: "text", id: "id", color: "color", groupId: "groupId"
+				}
+			}],
+			appointmentSettings: {
+				dataSource: [{
+					Id: 100,
+					Subject: "Research on Sky Miracles",
+					StartTime: new Date(2015, 04, 05, 9, 00),
+					EndTime: new Date(2015, 04, 05, 10, 30),
+					ownerId: 2,
+					roomId: 3 
+				}],
+				resourceFields: "ownerId,roomId"
+			}
+		});
+	});
 </script>
-
-
-
-
 
 {% endhighlight %}
 
-N>	The resource object defined at **first level** within the **resources** collection doesn’t make use of the **groupId** field, as there is no previous levels applicable to map.
+N> The resource object defined at **first level** within the **resources** collection doesn’t make use of the **groupId** field, as there is no previous levels applicable to map.
 
 ## Data Binding
 
@@ -168,80 +126,43 @@ The resource data can be bound to the Schedule control through the **resourceSet
 
 {% highlight html %}
 
-
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-width: "100%",
-
-currentDate: new Date(2015, 04, 05),
-
-resources: [{
-
-field: "ownerId", title: "Owner",
-
-resourceSettings: {
-
-dataSource: [
-
-{ text: "Nancy", id: 1, color: "#f8a398" },
-
-{ text: "Steven", id: 2, color: "#56ca85"}],
-
-text: "text", id: "id", color: "color"
-
-}
-
-}],
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Research on Sky Miracles",
-
-StartTime: new Date(2015, 04, 05, 9, 00),
-
-EndTime: new Date(2015, 04, 05, 10, 30),
-
-ownerId: 2
-
-},
-
-{
-
-Id: 101,
-
-Subject: "Research on Clouds",
-
-StartTime: new Date(2015, 04, 07, 7, 00),
-
-EndTime: new Date(2015, 04, 07, 10, 30),
-
-ownerId: 1
-
-}],
-
-resourceFields: "ownerId"
-
-}
-
-});
-
-});
-
+	$(function () {
+		$("#Schedule1").ejSchedule({
+			width: "100%",
+			currentDate: new Date(2015, 04, 05),
+			resources: [{
+				field: "ownerId", title: "Owner",
+				resourceSettings: {
+					dataSource: [
+						{ text: "Nancy", id: 1, color: "#f8a398" },
+						{ text: "Steven", id: 2, color: "#56ca85"}],
+					text: "text", id: "id", color: "color"
+				}
+			}],
+			appointmentSettings: {
+				dataSource: [{
+					Id: 100,
+					Subject: "Research on Sky Miracles",
+					StartTime: new Date(2015, 04, 05, 9, 00),
+					EndTime: new Date(2015, 04, 05, 10, 30),
+					ownerId: 2
+				},
+				{
+					Id: 101,
+					Subject: "Research on Clouds",
+					StartTime: new Date(2015, 04, 07, 7, 00),
+					EndTime: new Date(2015, 04, 07, 10, 30),
+					ownerId: 1
+				}],
+				resourceFields: "ownerId"
+			}
+		});
+	});
 </script>
-
-
-
-
 
 {% endhighlight %}
 
@@ -251,88 +172,47 @@ resourceFields: "ownerId"
 
 {% highlight html %}
 
-
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
-$(function () {
-
-var dataManager = ej.DataManager({
-
-// referring data from remote service (url binding)
-
-url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
-
-});
-
-// query to fetch the records from the specified table “Events”
-
-var queryResource = ej.Query().select("CategoryID","CategoryName").from("Categories").take(3);
-
-$("#Schedule1").ejSchedule({
-
-width: "60%", height: "550px",
-
-currentDate: new Date(2015, 04, 05),
-
-resources: [{
-
-field: "ownerId", title: "Owner",
-
-resourceSettings: {
-
-dataSource: dataManager,
-
-text: "CategoryName", id: "CategoryID", query: queryResource
-
-}
-
-}],
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Research on Sky Miracles",
-
-StartTime: new Date(2015, 04, 05, 9, 00),
-
-EndTime: new Date(2015, 04, 05, 10, 30),
-
-ownerId: 2
-
-},
-
-{
-
-Id: 101,
-
-Subject: "Research on Clouds",
-
-StartTime: new Date(2015, 04, 07, 7, 00),
-
-EndTime: new Date(2015, 04, 07, 10, 30),
-
-ownerId: 1
-
-}],
-
-resourceFields: "ownerId"
-
-}
-
-});
-
-});
-
+	$(function () {
+		var dataManager = ej.DataManager({
+			// referring data from remote service (url binding)
+			url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc"
+		});
+		// query to fetch the records from the specified table “Events”
+		var queryResource = ej.Query().select("CategoryID","CategoryName").from("Categories").take(3);
+		$("#Schedule1").ejSchedule({
+			width: "60%", height: "550px",
+			currentDate: new Date(2015, 04, 05),
+			resources: [{
+				field: "ownerId", title: "Owner",
+				resourceSettings: {
+					dataSource: dataManager,
+					text: "CategoryName", id: "CategoryID", query: queryResource
+				}
+			}],
+			appointmentSettings: {
+				dataSource: [{
+					Id: 100,
+					Subject: "Research on Sky Miracles",
+					StartTime: new Date(2015, 04, 05, 9, 00),
+					EndTime: new Date(2015, 04, 05, 10, 30),
+					ownerId: 2
+				},
+				{
+					Id: 101,
+					Subject: "Research on Clouds",
+					StartTime: new Date(2015, 04, 07, 7, 00),
+					EndTime: new Date(2015, 04, 07, 10, 30),
+					ownerId: 1
+				}],
+				resourceFields: "ownerId"
+			}
+		});
+	});
 </script>
-
-
-
-
 
 {% endhighlight %}
 
@@ -346,84 +226,47 @@ The appointments belonging to all the resources will be displayed on the Schedul
 
 {% highlight html %}
 
-
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-width: "100%",
-
-currentDate: new Date(2015, 04, 05),
-
-resources: [{
-
-field: "ownerId", title: "Owner", allowMultiple: true,
-
-resourceSettings: {
-
-dataSource: [
-
-{ text: "Nancy", id: 1, color: "#f8a398" },
-
-{ text: "Steven", id: 2, color: "#56ca85"}],
-
-text: "text", id: "id", color: "color"
-
-}
-
-}],
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Research on Sky Miracles",
-
-StartTime: new Date(2015, 04, 05, 9, 00),
-
-EndTime: new Date(2015, 04, 05, 10, 30),
-
-ownerId: 2
-
-},
-
-{
-
-Id: 101,
-
-Subject: "Research on Clouds",
-
-StartTime: new Date(2015, 04, 07, 6, 00),
-
-EndTime: new Date(2015, 04, 07, 9, 30),
-
-ownerId: 1
-
-}],
-
-resourceFields: "ownerId"
-
-}
-
-});
-
-});
-
+	$(function () {
+		$("#Schedule1").ejSchedule({
+			width: "100%",
+			currentDate: new Date(2015, 04, 05),
+			resources: [{
+				field: "ownerId", title: "Owner", allowMultiple: true,
+				resourceSettings: {
+					dataSource: [
+						{ text: "Nancy", id: 1, color: "#f8a398" },
+						{ text: "Steven", id: 2, color: "#56ca85"}],
+					text: "text", id: "id", color: "color"
+				}
+			}],
+			appointmentSettings: {
+				dataSource: [{
+					Id: 100,
+					Subject: "Research on Sky Miracles",
+					StartTime: new Date(2015, 04, 05, 9, 00),
+					EndTime: new Date(2015, 04, 05, 10, 30),
+					ownerId: 2
+				},
+				{
+					Id: 101,
+					Subject: "Research on Clouds",
+					StartTime: new Date(2015, 04, 07, 6, 00),
+					EndTime: new Date(2015, 04, 07, 9, 30),
+					ownerId: 1
+				}],
+				resourceFields: "ownerId"
+			}
+		});
+	});
 </script>
-
-
-
-
 
 {% endhighlight %}
 
-N>	Setting **allowMultiple** to **true** in the above code snippet allows the user to select multiple resources in the appointment window and also creates multiple copies of the same appointment in the Scheduler for each resources while saving.
+N> Setting **allowMultiple** to **true** in the above code snippet allows the user to select multiple resources in the appointment window and also creates multiple copies of the same appointment in the Scheduler for each resources while saving.
 
 ## Grouping
 
@@ -437,90 +280,50 @@ This type of grouping allows the Scheduler to display all the resources at a sin
 
 {% highlight html %}
 
-
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-width: "100%",
-
-currentDate: new Date(2015, 04, 05),
-
-group: {
-
-resources: [ "Owners" ]
-
-},
-
-resources: [{
-
-field: "ownerId", title: "Owner", name: "Owners",
-
-resourceSettings: {
-
-dataSource: [
-
-{ text: "Nancy", id: 1, color: "#f8a398" },
-
-{ text: "Steven", id: 2, color: "#56ca85"}],
-
-text: "text", id: "id", color: "color"
-
-}
-
-}],
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Research on Sky Miracles",
-
-StartTime: new Date(2015, 04, 05, 9, 00),
-
-EndTime: new Date(2015, 04, 05, 10, 30),
-
-ownerId: 2
-
-},
-
-{
-
-Id: 101,
-
-Subject: "Discovery of exo-planets",
-
-StartTime: new Date(2015, 04, 07, 6, 00),
-
-EndTime: new Date(2015, 04, 07, 9, 30),
-
-ownerId: 1
-
-}],
-
-resourceFields: "ownerId"
-
-}
-
-});
-
-});
-
+	$(function () {
+		$("#Schedule1").ejSchedule({
+			width: "100%",
+			currentDate: new Date(2015, 04, 05),
+			group: {
+				resources: [ "Owners" ]
+			},
+			resources: [{
+				field: "ownerId", title: "Owner", name: "Owners",
+				resourceSettings: {
+					dataSource: [
+						{ text: "Nancy", id: 1, color: "#f8a398" },
+						{ text: "Steven", id: 2, color: "#56ca85"}],
+					text: "text", id: "id", color: "color"
+				}
+			}],
+			appointmentSettings: {
+				dataSource: [{
+					Id: 100,
+					Subject: "Research on Sky Miracles",
+					StartTime: new Date(2015, 04, 05, 9, 00),
+					EndTime: new Date(2015, 04, 05, 10, 30),
+					ownerId: 2
+				},
+				{
+					Id: 101,
+					Subject: "Discovery of exo-planets",
+					StartTime: new Date(2015, 04, 07, 6, 00),
+					EndTime: new Date(2015, 04, 07, 9, 30),
+					ownerId: 1
+				}],
+				resourceFields: "ownerId"
+			}
+		});
+	});
 </script>
-
-
-
-
 
 {% endhighlight %}
 
-N>	The **name** field mentioned in the **resource** object needs to be specified within the **group** property in order to enable the grouping option in Scheduler.
+N> The **name** field mentioned in the **resource** object needs to be specified within the **group** property in order to enable the grouping option in Scheduler.
 
 ### Multi-Level
 
@@ -530,98 +333,53 @@ This type of grouping displays the resources in the Scheduler at multiple levels
 
 {% highlight html %}
 
-
+<!-- HTML element will initialize as a ejSchedule -->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-width: "100%",
-
-currentDate: new Date(2015, 04, 05),
-
-group: {
-
-resources: [ "Owners", "Rooms" ]
-
-},
-
-resources: [{
-
-field: "ownerId", title: "Owner", name: "Owners",
-
-resourceSettings: {
-
-dataSource: [
-
-{ OwnerText: "Nancy", id: 1, OwnerColor: "#f8a398" },
-
-{ OwnerText: "Steven", id: 2, OwnerColor: "#56ca95"}],
-
-text: "OwnerText", id: "id", color: "OwnerColor"
-
-}
-
-},
-
-{
-
-field: "roomId", title: "Room(s)", name: "Rooms",
-
-resourceSettings: {
-
-dataSource: [
-
-// groupId maps the current resources to the previous level of resource object (current groupId maps with previous level id field)
-
-{text: "Room1", id: 1, groupId: 1, color: "#f8a398" },
-
-{ text: "Room2", id: 2, groupId: 2, color: "#56ca85" },
-
-{ text: "Room3", id: 3, groupId: 2, color: "#56ac88"}],
-
-text: "text", id: "id", color: "color", groupId: "groupId"
-
-}
-
-}],
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Research on Sky Miracles",
-
-StartTime: new Date(2015, 04, 05, 9, 00),
-
-EndTime: new Date(2015, 04, 05, 10, 30),
-
-ownerId: 2,
-
-roomId: 3
-
-}],
-
-resourceFields: "ownerId,roomId"
-
-}
-
-});
-
-});
-
+	$(function () {
+		$("#Schedule1").ejSchedule({
+			width: "100%",
+			currentDate: new Date(2015, 04, 05),
+			group: {
+				resources: [ "Owners", "Rooms" ]
+			},
+			resources: [{
+				field: "ownerId", title: "Owner", name: "Owners",
+				resourceSettings: {
+					dataSource: [
+						{ OwnerText: "Nancy", id: 1, OwnerColor: "#f8a398" },
+						{ OwnerText: "Steven", id: 2, OwnerColor: "#56ca95"}],
+					text: "OwnerText", id: "id", color: "OwnerColor"
+				}
+			},
+			{
+				field: "roomId", title: "Room(s)", name: "Rooms",
+				resourceSettings: {
+					dataSource: [
+						// groupId maps the current resources to the previous level of resource object (current groupId maps with previous level id field)
+						{text: "Room1", id: 1, groupId: 1, color: "#f8a398" },
+						{ text: "Room2", id: 2, groupId: 2, color: "#56ca85" },
+						{ text: "Room3", id: 3, groupId: 2, color: "#56ac88"}],
+					text: "text", id: "id", color: "color", groupId: "groupId"
+				}
+			}],
+			appointmentSettings: {
+				dataSource: [{
+					Id: 100,
+					Subject: "Research on Sky Miracles",
+					StartTime: new Date(2015, 04, 05, 9, 00),
+					EndTime: new Date(2015, 04, 05, 10, 30),
+					ownerId: 2,
+					roomId: 3
+				}],
+				resourceFields: "ownerId,roomId"
+			}
+		});
+	});
 </script>
-
-
-
-
 
 {% endhighlight %}
 
-N>	Here, the appointments will make use of the **color** defined for the Owners resource instance as its background color.
+N> Here, the appointments will make use of the **color** defined for the Owners resource instance as its background color.
 

@@ -8,13 +8,18 @@ metaname:
 metacontent: 
 ---
 
-## Custom Design for Html Dialog widget.
+# ejDialog
 
-{% highlight js %}
 
-    $(element).ejDialog<span class="signature">(options)</span>
 
-{% endhighlight %}
+The Dialog control displays a Dialog window within a webpage. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
+
+
+
+
+
+$(element).ejDialog<span class="signature">(options)</span>
+
 
 <table>
 <tr>

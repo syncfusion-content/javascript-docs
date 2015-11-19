@@ -155,8 +155,8 @@ $(".table tbody").html(tbody);
 
 
 
-### excute<span class="signature">(dataManager)</span>
-{:#methods:excute}
+### execute<span class="signature">(dataManager)</span>
+{:#methods:execute}
 
 
 
@@ -165,7 +165,7 @@ $(".table tbody").html(tbody);
 
 
 
-It is used to excute the query on URL Binding
+It is used to execute the query on URL Binding
 
 <table class="params">
 <thead>
@@ -211,8 +211,8 @@ promise.done(function(e){})
 
 
 
-### excuteLocal<span class="signature">(dataManager)</span>
-{:#methods:excutelocal}
+### executeLocal<span class="signature">(dataManager)</span>
+{:#methods:executelocal}
 
 
 
@@ -221,7 +221,7 @@ promise.done(function(e){})
 
 
 
-It is used to excute the query on Local Binding
+It is used to execute the query on Local Binding
 
 <table class="params">
 <thead>

@@ -7,7 +7,10 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for resizing HTML elements.
+# ejResizable
+
+
+Plugin to make any DOM element Resizable.  
 
 
 

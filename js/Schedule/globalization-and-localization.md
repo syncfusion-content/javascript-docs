@@ -16,7 +16,7 @@ The Scheduler control is built with default **globalization** support as it form
 
 Scheduler also comes with default localization support which allows it to customize the display of text within the Scheduler in a user-specific culture and locale. The Schedule control can be localized in specific culture using the common API [locale](/js/api/ejschedule#members:locale) along with the collection of localized words defined for that culture using the ej.Schedule.Locale [**culture-code**].
 
-N>	By default, the Schedule control is localized in **en-US** culture.
+N> By default, the Schedule control is localized in **en-US** culture.
 
 To localize Scheduler into a particular culture, it is necessary to refer the below specified scripts in your application,
 
@@ -262,7 +262,7 @@ Location: "CHINA"
 
 {% endhighlight %}
 
-N>	Refer the **globalize.culture.fr-FR.min.js** file in your HTML application and also define the **locale** property for the Schedule control with the appropriate **culture-code** [**fr-FR**].
+N> Refer the **globalize.culture.fr-FR.min.js** file in your HTML application and also define the **locale** property for the Schedule control with the appropriate **culture-code** [**fr-FR**].
 
 For further information on – how to refer the required culture scripts into your application, refer [here](/js/localization).
 
@@ -388,7 +388,7 @@ Location: "CHINA"
 
 Apart from the default Scheduler time zone, it is also possible to set the different time zone values for each appointments through the properties **startTimeZone** and **endTimeZone** which can be defined as separate fields within the appointment dataSource. When these properties are not explicitly defined for appointments, the appointments Start and End time will be processed based on the Scheduler time zone.
 
-N>	The **isDST** property closely relies on the appointment fields like [StartTimeZone](/js/api/ejschedule#members:appointmentsettings-starttimezone) and [EndTimeZone](/js/api/ejschedule#members:appointmentsettings-endtimezone), for appropriate time difference calculations. If these two fields are not defined for appointments, then **isDST** depends on the System **timeZone** value.
+N> The **isDST** property closely relies on the appointment fields like [StartTimeZone](/js/api/ejschedule#members:appointmentsettings-starttimezone) and [EndTimeZone](/js/api/ejschedule#members:appointmentsettings-endtimezone), for appropriate time difference calculations. If these two fields are not defined for appointments, then **isDST** depends on the System **timeZone** value.
 
 The following code snippet shows how to define isDST and the time zones for specific appointments.
 
@@ -524,7 +524,7 @@ EndTimeZone: "UTC +02:00"
 
 {% endhighlight %}
 
-N>	The values defined within the **timeZoneCollection** dataSource are usually the options displayed at the start and end time zone dropdown fields of the appointment window.
+N> The values defined within the **timeZoneCollection** dataSource are usually the options displayed at the start and end time zone dropdown fields of the appointment window.
 
 ## Time Mode
 
@@ -580,7 +580,7 @@ Location: "CHINA"
 
 {% endhighlight %}
 
-N>	If the **timeMode** property is not set with specific value, then the value will be taken based on the locale assigned for the Scheduler.
+N> If the **timeMode** property is not set with specific value, then the value will be taken based on the locale assigned for the Scheduler.
 
 ## Date Format
 
