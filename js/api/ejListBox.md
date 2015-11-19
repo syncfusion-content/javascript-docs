@@ -7,6 +7,8 @@ metaname:
 metacontent: 
 ---
 
+# ejListBox
+
 
 The ListBox widget provides a list options to make user to choose an item from the list. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
 
@@ -549,7 +551,7 @@ Defines the image attributes such as height, width, styles and so on.</td></tr>
 <tr>
 <td>
 fields.selected [Deprecated]</td><td>
-Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.Note: Since this is deprecated we suggest you to use fields.selectBy API.</td></tr>
+Defines the specific field name which contains Boolean values to specify whether the list items to be selected by default or not.N> Since this is deprecated we suggest you to use fields.selectBy API.</td></tr>
 <tr>
 <td>
 fields.selectBy</td><td>
