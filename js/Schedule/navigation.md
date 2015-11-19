@@ -26,25 +26,25 @@ Usually, the [navigation](/js/api/ejschedule#events:navigation) event gets trigg
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Research on Sky Miracles",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30)
-				}]
-			},
-			navigation: function (args) {
-				//args.target.currentTarget – target element which is clicked.
-				var target = $(args.target.currentTarget);
-				if (args.requestType == "viewNavigate" && (target.hasClass("e-headercells") || target.hasClass("e-monthheader") || target.hasClass("e-timecells")))
-					args.cancel = true;
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        },
+        navigation: function(args) {
+            //args.target.currentTarget – target element which is clicked.
+            var target = $(args.target.currentTarget);
+            if (args.requestType == "viewNavigate" && (target.hasClass("e-headercells") || target.hasClass("e-monthheader") || target.hasClass("e-timecells")))
+                args.cancel = true;
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -67,26 +67,26 @@ To handle the date navigation actions, the [navigation](/js/api/ejschedule#event
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Research on Sky Miracles",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30)
-				}]
-			},
-			navigation: function (args) {
-				//args.target – target element which is clicked.
-				//args.currentDate – current date of the Scheduler.
-				//args.requestType – Specifies the navigation type.
-				if (args.requestType == "dateNavigate")
-					args.cancel = true;
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        },
+        navigation: function(args) {
+            //args.target – target element which is clicked.
+            //args.currentDate – current date of the Scheduler.
+            //args.requestType – Specifies the navigation type.
+            if (args.requestType == "dateNavigate")
+                args.cancel = true;
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -105,20 +105,20 @@ The following code example shows the way to define the **enableAppointmentNaviga
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			enableAppointmentNavigation: true,
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Research on Sky Miracles",
-					StartTime: new Date(2015, 11, 7, 9, 00),
-					EndTime: new Date(2015, 11, 7, 10, 30)
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        enableAppointmentNavigation: true,
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 7, 9, 00),
+                EndTime: new Date(2015, 11, 7, 10, 30)
+            }]
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}

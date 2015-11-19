@@ -20,21 +20,21 @@ By default, setting 100% width to the Scheduler makes it adaptable to the window
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			width: "100%",
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Wild Discovery",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30),
-					Location: "CHINA"
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        width: "100%",
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -43,36 +43,35 @@ To auto-resize the Scheduler height – set the **height** property of the Sched
 
 {% highlight html %}
 
-	<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%">
-		<head>
-			<title>My first HTML page</title>
-			<!-- required CSS REFERENCES -->
-			<!-- required SCRIPT REFERENCES -->
-		</head>
-		<body style="height:100%"> 
-			<!--Container for ejScheduler widget-->
-			<div id="Schedule1"></div>
-
-			<script type="text/javascript">
-				$(function () {
-					$("#Schedule1").ejSchedule({
-						currentDate: new Date(2015, 11, 2),
-						height: "100%",
-						appointmentSettings: {
-							dataSource: [{
-								Id: 100,
-								Subject: "Wild Discovery",
-								StartTime: new Date(2015, 11, 2, 9, 00),
-								EndTime: new Date(2015, 11, 2, 10, 30),
-								Location: "CHINA"
-							}]
-						}
-					});
-				});
-			</script>
-		</body>
-	</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%">
+    <head>
+        <title>My first HTML page</title>
+        <!-- required CSS REFERENCES -->
+        <!-- required SCRIPT REFERENCES -->
+    </head>
+    <body style="height:100%">
+        <!--Container for ejScheduler widget-->
+        <div id="Schedule1"></div>
+        <script type="text/javascript">
+            $(function () {
+            	$("#Schedule1").ejSchedule({
+            		currentDate: new Date(2015, 11, 2),
+            		height: "100%",
+            		appointmentSettings: {
+            			dataSource: [{
+            				Id: 100,
+            				Subject: "Wild Discovery",
+            				StartTime: new Date(2015, 11, 2, 9, 00),
+            				EndTime: new Date(2015, 11, 2, 10, 30),
+            				Location: "CHINA"
+            			}]
+            		}
+            	});
+            });
+        </script>
+    </body>
+</html>	
 
 {% endhighlight %}
 
@@ -103,36 +102,36 @@ The following code snippet depicts the Scheduler code with responsive set to tru
 
 {% highlight html %}
 
-	<!DOCTYPE html>
-	<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%">
-		<head>
-			<title>My first HTML page</title>
-			<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-			<link href=" http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css" rel="stylesheet" />
-			<!-- Other required SCRIPT REFERENCES -->
-		</head>
-		<body style="height:100%"> 
-			<!--Container for ejScheduler widget-->
-			<div id="Schedule1"></div>
-			<script type="text/javascript">
-				$(function () {
-					$("#Schedule1").ejSchedule({
-						currentDate: new Date(2015, 11, 2),
-						isResponsive: true,
-						appointmentSettings: {
-							dataSource: [{
-								Id: 100,
-								Subject: "Wild Discovery",
-								StartTime: new Date(2015, 11, 2, 9, 00),
-								EndTime: new Date(2015, 11, 2, 10, 30),
-								Location: "CHINA"
-							}]
-						}
-					});
-				});
-			</script>
-		</body>
-	</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%">
+    <head>
+        <title>My first HTML page</title>
+        <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+        <link href=" http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/responsive-css/ej.responsive.css" rel="stylesheet" />
+        <!-- Other required SCRIPT REFERENCES -->
+    </head>
+    <body style="height:100%">
+        <!--Container for ejScheduler widget-->
+        <div id="Schedule1"></div>
+        <script type="text/javascript">
+            $(function () {
+            	$("#Schedule1").ejSchedule({
+            		currentDate: new Date(2015, 11, 2),
+            		isResponsive: true,
+            		appointmentSettings: {
+            			dataSource: [{
+            				Id: 100,
+            				Subject: "Wild Discovery",
+            				StartTime: new Date(2015, 11, 2, 9, 00),
+            				EndTime: new Date(2015, 11, 2, 10, 30),
+            				Location: "CHINA"
+            			}]
+            		}
+            	});
+            });
+        </script>
+    </body>
+</html>	
 
 {% endhighlight %}
 

@@ -20,7 +20,6 @@ It is enabled by default in Scheduler and to hide it, [showCurrentTimeIndicator]
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
 $(function() {
     $("#Schedule1").ejSchedule({
         currentDate: new Date(2015, 11, 2),
@@ -51,7 +50,6 @@ The All-day row cell is a single row region displayed at the top of the workcell
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
 $(function() {
     $("#Schedule1").ejSchedule({
         currentDate: new Date(2015, 11, 2),
@@ -66,10 +64,7 @@ $(function() {
         }
     });
 });
-
 </script>
-
-
 
 {% endhighlight %}
 
