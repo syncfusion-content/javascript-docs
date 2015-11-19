@@ -7,10 +7,10 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html Captcha control.
+# ejCaptcha
 
 
-
+Captcha is a popular technique that is used to prevent computer programs from sending automated requests and is used for meta-searching search engines, performing dictionary attacks in login pages, or sending spam by using mail servers. Captcha is validated at the time of form submission.
 
 
 
