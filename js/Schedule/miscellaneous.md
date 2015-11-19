@@ -16,44 +16,26 @@ It is enabled by default in Scheduler and to hide it, [showCurrentTimeIndicator]
 
 {% highlight html %}
 
-
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
-
-
 
 <script type="text/javascript">
 
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-showCurrentTimeIndicator: false,
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Research on Sky Miracles",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30)
-
-}]
-
-}
-
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        showCurrentTimeIndicator: false,
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        }
+    });
 });
-
-});
-
 </script>
-
-
 
 {% endhighlight %}
 
@@ -65,39 +47,24 @@ The All-day row cell is a single row region displayed at the top of the workcell
 
 {% highlight html %}
 
-
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
-
-
 
 <script type="text/javascript">
 
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-showAllDayRow: false,
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Research on Sky Miracles",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30)
-
-}]
-
-}
-
-});
-
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        showAllDayRow: false,
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        }
+    });
 });
 
 </script>
@@ -114,44 +81,25 @@ The header bar is the topmost region of the Scheduler which includes the date na
 
 {% highlight html %}
 
-
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
-
-
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-showHeaderBar: false,
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Research on Sky Miracles",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30)
-
-}]
-
-}
-
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        showHeaderBar: false,
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        }
+    });
 });
-
-});
-
 </script>
-
-
 
 {% endhighlight %}
 
@@ -161,44 +109,25 @@ The TimeScale is the left most region of the Scheduler in vertical mode and the 
 
 {% highlight html %}
 
-
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
-
-
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-showTimeScale: false,
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Research on Sky Miracles",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30)
-
-}]
-
-}
-
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        showTimeScale: false,
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        }
+    });
 });
-
-});
-
 </script>
-
-
 
 {% endhighlight %}
 
@@ -208,48 +137,27 @@ The Location field in the default appointment window can be displayed or hidden 
 
 {% highlight html %}
 
-
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
-
-
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-showLocationField: true,
-
-appointmentSettings: {
-
-location: "EventLocation",
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Research on Sky Miracles",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30),
-
-EventLocation: "RDU"
-
-}]
-
-}
-
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        showLocationField: true,
+        appointmentSettings: {
+            location: "EventLocation",
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                EventLocation: "RDU"
+            }]
+        }
+    });
 });
-
-});
-
 </script>
-
-
 
 {% endhighlight %}
 

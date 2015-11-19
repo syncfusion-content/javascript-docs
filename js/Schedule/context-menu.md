@@ -64,7 +64,7 @@ The following code snippet shows how to enable the context menu settings in Sche
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
@@ -122,7 +122,7 @@ The following code example depicts how **to add the custom menu items** to the a
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
@@ -162,7 +162,7 @@ To define specific actions for a click made on the custom menu items, the client
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
@@ -202,7 +202,7 @@ Also, it is possible to predict the target on which the right click is made eith
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
@@ -243,7 +243,7 @@ To include the default categorize options within the context menu, it is necessa
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">

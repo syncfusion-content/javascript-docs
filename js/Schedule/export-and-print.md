@@ -26,86 +26,49 @@ The following code example shows the way to export single appointment from the S
 
 {% highlight html %}
 
-
 <!--Container for ejScheduler widget-->
-
 <div id="Schedule1"></div>
 
-
-
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-contextMenuSettings: {
-
-enable: true,
-
-menuItems: {
-
-appointment: [
-
-{ id: "open", text: "Open Appointment" },
-
-{ id: "delete", text: "Delete Appointment" },
-
-{ id: "export", text: "Export Appointment" }
-
-]
-
-}
-
-},
-
-menuItemClick: "onMenuItemClick",
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Wild Discovery",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30),
-
-Location: "CHINA"
-
-}]
-
-}
-
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        contextMenuSettings: {
+            enable: true,
+            menuItems: {
+                appointment: [{
+                    id: "open",
+                    text: "Open Appointment"
+                }, {
+                    id: "delete",
+                    text: "Delete Appointment"
+                }, {
+                    id: "export",
+                    text: "Export Appointment"
+                }]
+            }
+        },
+        menuItemClick: "onMenuItemClick",
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
 });
-
-});
-
 // This function executes, when any of the menu options are clicked in the context menu
-
 function onMenuItemClick(args) {
-
-if (args.events.ID == "export") {
-
-var obj = $("#Schedule1").data("ejSchedule");
-
-// exportSchedule() method will send a post to the server-side to call a specified action.
-
-obj.exportSchedule("ExportToICS", null, args.targetInfo.Id);
-
+    if (args.events.ID == "export") {
+        var obj = $("#Schedule1").data("ejSchedule");
+        // exportSchedule() method will send a post to the server-side to call a specified action.
+        obj.exportSchedule("ExportToICS", null, args.targetInfo.Id);
+    }
 }
-
-}
-
 </script>
-
-
-
-
 
 {% endhighlight %}
 
@@ -119,105 +82,60 @@ The following code example depicts the way to export all the Scheduler appointme
 
 {% highlight html %}
 
-
 <!--Container for ejScheduler widget-->
-
 <div id="Schedule1"></div>
 
 <!-- Button div for Export Option-->
-
 <button id="Btn">Export</button>
 
-
-
 <script type="text/javascript">
-
-$(function () {
-
-$("#Btn").ejButton({ width: "70px", height: "30px", click: "onClick" });
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Wild Discovery",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30),
-
-Location: "CHINA"
-
-}]
-
-}
-
+$(function() {
+    $("#Btn").ejButton({
+        width: "70px",
+        height: "30px",
+        click: "onClick"
+    });
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
 });
-
-});
-
 // Clicking on the export button will call this method
-
 function onClick(args) {
-
-var obj = $("#Schedule1").data("ejSchedule");
-
-// Calls the server-side action ExportToICS
-
-obj.exportSchedule("ExportToICS", null, null);
-
+    var obj = $("#Schedule1").data("ejSchedule");
+    // Calls the server-side action ExportToICS
+    obj.exportSchedule("ExportToICS", null, null);
 }
-
 </script>
-
-
-
-
 
 {% endhighlight %}
 
 The server-side action **ExportToICS** contains the following code example to export the Scheduler appointments.
 
-{% highlight html %}
-public void ExportToICS(FormCollection form)
+{% highlight c# %}
 
-{
-
-IEnumerable data;
-
-string JSONModel = Request.Form["ScheduleModel"];
-
-var model = JsonConvert.DeserializeObject<Dictionary<string, object>>(JSONModel);
-
-var Id = Request.Form["AppointmentId"];
-
-if(Id != null)
-
-// To export single appointment
-
-data = db.DefaultSchedules.Where(app => app.Id.ToString() == Id.ToString()).ToList();
-
-else
-
-// To export all the appointments
-
-data = db.DefaultSchedules.ToList();
-
-ScheduleExport obj = new ScheduleExport(model, data);
-
-}
-
-</script>
-
-
-
-
+	public void ExportToICS(FormCollection form)
+	{
+		IEnumerable data;
+		string JSONModel = Request.Form["ScheduleModel"];
+		var model = JsonConvert.DeserializeObject<Dictionary<string, object>>(JSONModel);
+		var Id = Request.Form["AppointmentId"];
+		if(Id != null)
+			// To export single appointment
+			data = db.DefaultSchedules.Where(app => app.Id.ToString() == Id.ToString()).ToList();
+		else
+			// To export all the appointments
+			data = db.DefaultSchedules.ToList();
+		ScheduleExport obj = new ScheduleExport(model, data);
+	}
 
 {% endhighlight %}
 
@@ -231,62 +149,40 @@ The following code example shows the way to print the entire Scheduler, by keepi
 
 {% highlight html %}
 
-
 <!--Container for ejScheduler widget-->
-
 <div id="Schedule1"></div>
 
-<!—Button div for Print Option-->
-
+<!--Button div for Print Option-->
 <button id="Btn">Print</button>
 
-
-
 <script type="text/javascript">
+$(function() {
+	
+    $("#Btn").ejButton({
+        width: "70px",
+        height: "30px",
+        click: "onClick"
+    });
 
-$(function () {
-
-$("#Btn").ejButton({ width: "70px", height: "30px", click: "onClick" });
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Wild Discovery",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30),
-
-Location: "CHINA"
-
-}]
-
-}
-
-});
-
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
 });
 
 function onClick(args) {
-
-var obj = $("#Schedule1").data("ejSchedule");
-
-obj.print();
-
+    var obj = $("#Schedule1").data("ejSchedule");
+    obj.print();
 }
-
 </script>
-
-
-
-
 
 {% endhighlight %}
 
@@ -299,65 +195,45 @@ N> To handle this functionality, the context menu settings needs to be enabled w
 The following code example depicts the way to print a particular appointment.
 
 {% highlight html %}
-<!--Container for ejScheduler widget-->
 
-<div id="Schedule1"></div>
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"> </div>
 
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-contextMenuSettings: {
-
-enable: true,
-
-menuItems: {
-
-appointment: [
-
-{ id: "open", text: "Open Appointment" },
-
-{ id: "delete", text: "Delete Appointment" },
-
-{ id: "print", text: "Print Appointment" }
-
-]
-
-}
-
-},
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Wild Discovery",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30),
-
-Location: "CHINA"
-
-}]
-
-}
-
-});
-
-});
-
+    $(function() {
+        $("#Schedule1").ejSchedule({
+            currentDate: new Date(2015, 11, 2),
+            contextMenuSettings: {
+                enable: true,
+                menuItems: {
+                    appointment: [
+                        {
+                            id: "open",
+                            text: "Open Appointment"
+                        },
+                        {
+                            id: "delete",
+                            text: "Delete Appointment"
+                        },
+                        {
+                            id: "print",
+                            text: "Print Appointment"
+                        }
+                    ]
+                }
+            },
+            appointmentSettings: {
+                dataSource: [{
+                    Id: 100,
+                    Subject: "Wild Discovery",
+                    StartTime: new Date(2015, 11, 2, 9, 00),
+                    EndTime: new Date(2015, 11, 2, 10, 30),
+                    Location: "CHINA"
+                }]
+            }
+        });
+    });
 </script>
-
-
-
-
 
 {% endhighlight %}
 

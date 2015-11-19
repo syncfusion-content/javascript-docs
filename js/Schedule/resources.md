@@ -69,7 +69,7 @@ Binds the appointmentClass field name in the dataSource. It applies the custom c
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
@@ -126,7 +126,7 @@ The resource data can be bound to the Schedule control through the **resourceSet
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
@@ -172,7 +172,7 @@ The resource data can be bound to the Schedule control through the **resourceSet
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
@@ -226,7 +226,7 @@ The appointments belonging to all the resources will be displayed on the Schedul
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
@@ -280,7 +280,7 @@ This type of grouping allows the Scheduler to display all the resources at a sin
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
@@ -333,7 +333,7 @@ This type of grouping displays the resources in the Scheduler at multiple levels
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">

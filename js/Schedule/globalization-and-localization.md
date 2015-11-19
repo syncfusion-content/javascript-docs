@@ -31,234 +31,122 @@ The following code example shows how to localize the Schedule control in **fr-FR
 
 {% highlight html %}
 
-
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
-$(function () {
-
-ej.Schedule.Locale["fr-FR"] = {
-
-ReminderWindowTitle: "Fenêtre de rappel",
-
-CreateAppointmentTitle: "créer un rendez-",
-
-RecurrenceEditTitle: "Modifier répétition nomination",
-
-RecurrenceEditMessage: "Comment voulez-vous changer le cas dans la série?",
-
-RecurrenceEditOnly: "Seulement cette nomination",
-
-RecurrenceEditSeries: "La série entière",
-
-PreviousAppointment: "Nomination précédente",
-
-NextAppointment: "prochain rendez-vous",
-
-AppointmentSubject: "sujet",
-
-StartTime: "Heure de début",
-
-EndTime: "Heure de fin",
-
-AllDay: "toute la journée",
-
-Today: "aujourd'hui",
-
-Recurrence: "répétition",
-
-Done: "Terminé",
-
-Cancel: "annuler",
-
-Ok: "Ok",
-
-RepeatBy: "Répétez par",
-
-RepeatEvery: "répéter chaque",
-
-RepeatOn: "répéter l'opération sur",
-
-StartsOn: "démarre sur",
-
-Ends: "extrémités",
-
-Summary: "résumé",
-
-Daily: "quotidien",
-
-Weekly: "hebdomadaire",
-
-Monthly: "mensuel",
-
-Yearly: "annuel",
-
-Every: "tous",
-
-EveryWeekDay: "chaque jour de la semaine",
-
-Never: "jamais",
-
-After: "après",
-
-Occurence: "apparition",
-
-On: "sur",
-
-Edit: "Modifier",
-
-RecurrenceDay: "Jour (s)",
-
-RecurrenceWeek: "Semaine (s)",
-
-RecurrenceMonth: "Mois (s)",
-
-RecurrenceYear: "Année (s)",
-
-The: "la",
-
-OfEvery: "de chaque",
-
-First: "première",
-
-Second: "deuxième",
-
-Third: "troisième",
-
-Fourth: "quatrième",
-
-Last: "dernier",
-
-WeekDay: "jour de la semaine",
-
-WeekEndDay: "Jour de week-end",
-
-Subject: "sujet",
-
-Categorize: "Catégories",
-
-DueIn: "En raison",
-
-DismissAll: "rejeter tout",
-
-Dismiss: "rejeter",
-
-OpenItem: "Ouvrir l'élément",
-
-Snooze: "répétition",
-
-Day: "jour",
-
-Week: "semaine",
-
-WorkWeek: "Semaine de travail",
-
-Month: "mois",
-
-AddEvent: "Ajouter événement",
-
-CustomView: "Vue personnalisée",
-
-Agenda: "ordre du jour",
-
-Detailed: "détaillé",
-
-EventBeginsin: "Nomination commence dans",
-
-Editevent: "Modifier nomination",
-
-Editseries: "Modifier série",
-
-Times: "fois",
-
-Until: "jusqu'à",
-
-Eventwas: "rendez-vous était",
-
-Hours: "hrs",
-
-Minutes: "minutes",
-
-Overdue: "en retard",
-
-Days: "jour (s)",
-
-Event: "Sujet",
-
-Select: "sélectionner",
-
-Previous: "prev",
-
-Next: "suivant",
-
-Close: "proche",
-
-Delete: "effacer",
-
-Date: "date",
-
-Showin: "montrer en",
-
-Gotodate: "Aller à la date",
-
-Resources: "RESSOURCES",
-
-RecurrenceDeleteTitle: "Supprimer répétition rendez-",
-
-Location: "emplacement",
-
-Priority: "priorité",
-
-RecurrenceAlert: "alerte",
-
-WrongPattern: "Le modèle de récurrence est pas valable",
-
-CreateError: "La durée de la nomination doit être plus courte que la façon dont elle se produit fréquemment. Raccourcir la durée ou changer le modèle de récurrence dans la boîte de dialogue Récurrence de rendez.",
-
-DragResizeError: "Impossible de replanifier une occurrence du rendez-vous récurrent. si elle saute sur une occurrence ultérieure du même rendez-vous.",
-
-StartEndError: "L'heure de fin doit être supérieur à l'heure de début",
-
-MouseOverDeleteTitle: "supprimer un rendez-",
-
-DeleteConfirmation: "Êtes-vous sûr de vouloir supprimer ce rendez-vous?",
-
-Time: "Temps"
-
-};
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-locale: "fr-FR",
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Wild Discovery",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30),
-
-Location: "CHINA"
-
-}]
-
-}
-
-});
-
-});
-
+	$(function () {
+		ej.Schedule.Locale["fr-FR"] = {
+			ReminderWindowTitle: "Fenêtre de rappel",
+			CreateAppointmentTitle: "créer un rendez-",
+			RecurrenceEditTitle: "Modifier répétition nomination",
+			RecurrenceEditMessage: "Comment voulez-vous changer le cas dans la série?",
+			RecurrenceEditOnly: "Seulement cette nomination",
+			RecurrenceEditSeries: "La série entière",
+			PreviousAppointment: "Nomination précédente",
+			NextAppointment: "prochain rendez-vous",
+			AppointmentSubject: "sujet",
+			StartTime: "Heure de début",
+			EndTime: "Heure de fin",
+			AllDay: "toute la journée",
+			Today: "aujourd'hui",
+			Recurrence: "répétition",
+			Done: "Terminé",
+			Cancel: "annuler",
+			Ok: "Ok",
+			RepeatBy: "Répétez par",
+			RepeatEvery: "répéter chaque",
+			RepeatOn: "répéter l'opération sur",
+			StartsOn: "démarre sur",
+			Ends: "extrémités",
+			Summary: "résumé",
+			Daily: "quotidien",
+			Weekly: "hebdomadaire",
+			Monthly: "mensuel",
+			Yearly: "annuel",
+			Every: "tous",
+			EveryWeekDay: "chaque jour de la semaine",
+			Never: "jamais",
+			After: "après",
+			Occurence: "apparition",
+			On: "sur",
+			Edit: "Modifier",
+			RecurrenceDay: "Jour (s)",
+			RecurrenceWeek: "Semaine (s)",
+			RecurrenceMonth: "Mois (s)",
+			RecurrenceYear: "Année (s)",
+			The: "la",
+			OfEvery: "de chaque",
+			First: "première",
+			Second: "deuxième",
+			Third: "troisième",
+			Fourth: "quatrième",
+			Last: "dernier",
+			WeekDay: "jour de la semaine",
+			WeekEndDay: "Jour de week-end",
+			Subject: "sujet",
+			Categorize: "Catégories",
+			DueIn: "En raison",
+			DismissAll: "rejeter tout",
+			Dismiss: "rejeter",
+			OpenItem: "Ouvrir l'élément",
+			Snooze: "répétition",
+			Day: "jour",
+			Week: "semaine",
+			WorkWeek: "Semaine de travail",
+			Month: "mois",
+			AddEvent: "Ajouter événement",
+			CustomView: "Vue personnalisée",
+			Agenda: "ordre du jour",
+			Detailed: "détaillé",
+			EventBeginsin: "Nomination commence dans",
+			Editevent: "Modifier nomination",
+			Editseries: "Modifier série",
+			Times: "fois",
+			Until: "jusqu'à",
+			Eventwas: "rendez-vous était",
+			Hours: "hrs",
+			Minutes: "minutes",
+			Overdue: "en retard",
+			Days: "jour (s)",
+			Event: "Sujet",
+			Select: "sélectionner",
+			Previous: "prev",
+			Next: "suivant",
+			Close: "proche",
+			Delete: "effacer",
+			Date: "date",
+			Showin: "montrer en",
+			Gotodate: "Aller à la date",
+			Resources: "RESSOURCES",
+			RecurrenceDeleteTitle: "Supprimer répétition rendez-",
+			Location: "emplacement",
+			Priority: "priorité",
+			RecurrenceAlert: "alerte",
+			WrongPattern: "Le modèle de récurrence est pas valable",
+			CreateError: "La durée de la nomination doit être plus courte que la façon dont elle se produit fréquemment. Raccourcir la durée ou changer le modèle de récurrence dans la boîte de dialogue Récurrence de rendez.",
+			DragResizeError: "Impossible de replanifier une occurrence du rendez-vous récurrent. si elle saute sur une occurrence ultérieure du même rendez-vous.",
+			StartEndError: "L'heure de fin doit être supérieur à l'heure de début",
+			MouseOverDeleteTitle: "supprimer un rendez-",
+			DeleteConfirmation: "Êtes-vous sûr de vouloir supprimer ce rendez-vous?",
+			Time: "Temps"
+		};
+
+		$("#Schedule1").ejSchedule({
+			currentDate: new Date(2015, 11, 2),
+			locale: "fr-FR",
+			appointmentSettings: {
+				dataSource: [{
+					Id: 100,
+					Subject: "Wild Discovery",
+					StartTime: new Date(2015, 11, 2, 9, 00),
+					EndTime: new Date(2015, 11, 2, 10, 30),
+					Location: "CHINA"
+				}]
+			}
+		});
+	});
 </script>
-
-
 
 {% endhighlight %}
 
@@ -273,63 +161,36 @@ To customize or localize only some specific words in the default `ej.Schedule.Lo
 {% highlight html %}
 <script>
 
-var customizationMessage = {
+	var customizationMessage = {
+		// customize the appointment window title
+		CreateAppointmentTitle: "Create Event",
+		// customize the view options text in the Schedule header
+		Day: "1 Day",
+		Week: "7 Days",
+		WorkWeek: "5 Days",
+		Month: "Month"
+	};
 
-// customize the appointment window title
+	// Extend only the required changes to the original locale collection
+	$.extend(ej.Schedule.Locale["en-US"], customizationMessage);
 
-CreateAppointmentTitle: "Create Event",
-
-// customize the view options text in the Schedule header
-
-Day: "1 Day",
-
-Week: "7 Days",
-
-WorkWeek: "5 Days",
-
-Month: "Month"
-
-};
-
-// Extend only the required changes to the original locale collection
-
-$.extend(ej.Schedule.Locale["en-US"], customizationMessage);
-
-$(function () {
-
-// defining Schedule control
-
-$("#Schedule1").ejSchedule({
-
-width: "100%",
-
-height: "525px",
-
-currentDate:new Date(2015,11,5),
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 101,
-
-Subject: "Talk with Nature",
-
-StartTime: new Date(2015, 11, 5, 10, 00),
-
-EndTime: new Date(2015, 11, 5, 11, 00)
-
-}]
-
-}
-
-});
-
-});
-
+	$(function () {
+		// defining Schedule control
+		$("#Schedule1").ejSchedule({
+			width: "100%",
+			height: "525px",
+			currentDate:new Date(2015,11,5),
+			appointmentSettings: {
+				dataSource: [{
+					Id: 101,
+					Subject: "Talk with Nature",
+					StartTime: new Date(2015, 11, 5, 10, 00),
+					EndTime: new Date(2015, 11, 5, 11, 00)
+				}]
+			}
+		});
+	});
 </script>
-
-
 
 {% endhighlight %}
 
@@ -343,46 +204,27 @@ The following code example shows the way to set the specific time zone value wit
 
 {% highlight html %}
 
-
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-timeZone: "UTC +05:30",
-
-isDST: true,
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Wild Discovery",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30),
-
-Location: "CHINA"
-
-}]
-
-}
-
-});
-
-});
-
+	$(function () {
+		$("#Schedule1").ejSchedule({
+			currentDate: new Date(2015, 11, 2),
+			timeZone: "UTC +05:30",
+			isDST: true,
+			appointmentSettings: {
+				dataSource: [{
+					Id: 100,
+					Subject: "Wild Discovery",
+					StartTime: new Date(2015, 11, 2, 9, 00),
+					EndTime: new Date(2015, 11, 2, 10, 30),
+					Location: "CHINA"
+				}]
+			}
+		});
+	});
 </script>
-
-
 
 {% endhighlight %}
 
@@ -394,48 +236,28 @@ The following code snippet shows how to define isDST and the time zones for spec
 
 {% highlight html %}
 
-
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-isDST: true,
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Wild Discovery",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30),
-
-Location: "CHINA",
-
-StartTimeZone: "UTC +02:00",
-
-EndTimeZone: "UTC +02:00"
-
-}]
-
-}
-
-});
-
-});
-
+	$(function () {
+		$("#Schedule1").ejSchedule({
+			currentDate: new Date(2015, 11, 2),
+			isDST: true,
+			appointmentSettings: {
+				dataSource: [{
+					Id: 100,
+					Subject: "Wild Discovery",
+					StartTime: new Date(2015, 11, 2, 9, 00),
+					EndTime: new Date(2015, 11, 2, 10, 30),
+					Location: "CHINA",
+					StartTimeZone: "UTC +02:00",
+					EndTimeZone: "UTC +02:00"
+				}]
+			}
+		});
+	});
 </script>
-
-
 
 {% endhighlight %}
 
@@ -443,84 +265,46 @@ It is also possible to define or customize the default time zone collection of t
 
 {% highlight html %}
 
-
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-timeZoneCollection: {
-
-dataSource: [
-
-{ text: "UTC -04:00", id: "10", value: "UTC -04:00" },
-
-{ text: "UTC -03:30", id: "11", value: "UTC -03:30" },
-
-{ text: "UTC -03:00", id: "12", value: "UTC -03:00" },
-
-{ text: "UTC -02:00", id: "13", value: "UTC -02:00" },
-
-{ text: "UTC -01:00", id: "14", value: "UTC -01:00" },
-
-{ text: "UTC +00:00", id: "15", value: "UTC +00:00" },
-
-{ text: "UTC +01:00", id: "16", value: "UTC +01:00" },
-
-{ text: "UTC +02:00", id: "17", value: "UTC +02:00" },
-
-{ text: "UTC +03:00", id: "18", value: "UTC +03:00" },
-
-{ text: "UTC +03:30", id: "19", value: "UTC +03:30" },
-
-{ text: "UTC +04:00", id: "20", value: "UTC +04:00" },
-
-{ text: "UTC +04:30", id: "21", value: "UTC +04:30" },
-
-{ text: "UTC +05:00", id: "22", value: "UTC +05:00" }],
-
-text: "text",
-
-id: "id",
-
-value: "value",
-
-},
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Wild Discovery",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30),
-
-Location: "CHINA",
-
-StartTimeZone: "UTC +02:00",
-
-EndTimeZone: "UTC +02:00"
-
-}]
-
-}
-
-});
-
-});
-
+	$(function () {
+		$("#Schedule1").ejSchedule({
+			currentDate: new Date(2015, 11, 2),
+			timeZoneCollection: {
+				dataSource: [
+					{ text: "UTC -04:00", id: "10", value: "UTC -04:00" },
+					{ text: "UTC -03:30", id: "11", value: "UTC -03:30" },
+					{ text: "UTC -03:00", id: "12", value: "UTC -03:00" },
+					{ text: "UTC -02:00", id: "13", value: "UTC -02:00" },
+					{ text: "UTC -01:00", id: "14", value: "UTC -01:00" },
+					{ text: "UTC +00:00", id: "15", value: "UTC +00:00" },
+					{ text: "UTC +01:00", id: "16", value: "UTC +01:00" },
+					{ text: "UTC +02:00", id: "17", value: "UTC +02:00" },
+					{ text: "UTC +03:00", id: "18", value: "UTC +03:00" },
+					{ text: "UTC +03:30", id: "19", value: "UTC +03:30" },
+					{ text: "UTC +04:00", id: "20", value: "UTC +04:00" },
+					{ text: "UTC +04:30", id: "21", value: "UTC +04:30" },
+					{ text: "UTC +05:00", id: "22", value: "UTC +05:00" }],
+				text: "text",
+				id: "id",
+				value: "value",
+			},
+			appointmentSettings: {
+				dataSource: [{
+					Id: 100,
+					Subject: "Wild Discovery",
+					StartTime: new Date(2015, 11, 2, 9, 00),
+					EndTime: new Date(2015, 11, 2, 10, 30),
+					Location: "CHINA",
+					StartTimeZone: "UTC +02:00",
+					EndTimeZone: "UTC +02:00"
+				}]
+			}
+		});
+	});
 </script>
-
-
 
 {% endhighlight %}
 
@@ -539,44 +323,26 @@ The following code snippet shows the way to set specific **24 hour format time m
 
 {% highlight html %}
 
-
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 2),
-
-timeMode: ej.Schedule.TimeMode.Hour24,
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 100,
-
-Subject: "Wild Discovery",
-
-StartTime: new Date(2015, 11, 2, 9, 00),
-
-EndTime: new Date(2015, 11, 2, 10, 30),
-
-Location: "CHINA"
-
-}]
-
-}
-
-});
-
-});
-
+	$(function () {
+		$("#Schedule1").ejSchedule({
+			currentDate: new Date(2015, 11, 2),
+			timeMode: ej.Schedule.TimeMode.Hour24,
+			appointmentSettings: {
+				dataSource: [{
+					Id: 100,
+					Subject: "Wild Discovery",
+					StartTime: new Date(2015, 11, 2, 9, 00),
+					EndTime: new Date(2015, 11, 2, 10, 30),
+					Location: "CHINA"
+				}]
+			}
+		});
+	});
 </script>
-
-
 
 {% endhighlight %}
 
@@ -590,44 +356,25 @@ If the [dateFormat](/js/api/ejschedule#members:dateformat) property is not speci
 
 {% highlight html %}
 
-
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
-
-
 <script type="text/javascript">
-
-$(function () {
-
-$("#Schedule1").ejSchedule({
-
-currentDate: new Date(2015, 11, 5),
-
-dateFormat: "yyyy/MM/dd",
-
-appointmentSettings: {
-
-dataSource: [{
-
-Id: 101,
-
-Subject: "Talk with Nature",
-
-StartTime: new Date(2015, 11, 5, 10, 00),
-
-EndTime: new Date(2015, 11, 5, 11, 00)
-
-}]
-
-}
-
-});
-
-});
-
+	$(function () {
+		$("#Schedule1").ejSchedule({
+			currentDate: new Date(2015, 11, 5),
+			dateFormat: "yyyy/MM/dd",
+			appointmentSettings: {
+				dataSource: [{
+					Id: 101,
+					Subject: "Talk with Nature",
+					StartTime: new Date(2015, 11, 5, 10, 00),
+					EndTime: new Date(2015, 11, 5, 11, 00)
+				}]
+			}
+		});
+	});
 </script>
-
-
 
 {% endhighlight %}
 
