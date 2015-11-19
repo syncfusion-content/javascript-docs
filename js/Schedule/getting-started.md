@@ -53,12 +53,12 @@ Create a new HTML file and include the below initial code.
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta charset="utf-8" />
-		<title> </title>
-	</head>
-	<body>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <title> </title>
+    </head>
+    <body>
+    </body>
 </html>
 
 {% endhighlight %}
@@ -68,9 +68,9 @@ Refer the CSS file from the specific theme folder to your HTML file within the h
 {% highlight html %}
 
 <head>
-	<meta charset="utf-8" />
-	<title>Getting Started - Schedule</title>
-	<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Getting Started - Schedule</title>
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
 </head>
 
 {% endhighlight %}
@@ -80,14 +80,14 @@ Add links to the [CDN](/js/cdn) Script files with other required external depend
 {% highlight html %}
 
 <head>
-	<meta charset="utf-8" />
-	<title>Getting Started - Schedule</title>
-	<link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-	<script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
-	<script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
-	<script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
-	<script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
-	<script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Getting Started - Schedule</title>
+    <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -112,15 +112,15 @@ Initialize the Schedule control by adding the following script code to the body 
 {% highlight html %}
 
 <body>
-	<!-- div for Scheduler creation -->    
-	<div id="schedule"></div>
+    <!-- div for Scheduler creation -->    
+    <div id="schedule"></div>
 	
-	<script type="text/javascript">
-		// To initialize Scheduler
-		$(function () {
-			$("#schedule").ejSchedule();
-		});
-	</script>
+    <script type="text/javascript">
+        // To initialize Scheduler
+        $(function () {
+            $("#schedule").ejSchedule();
+        });
+    </script>
 </body>
 
 {% endhighlight %}
@@ -138,18 +138,18 @@ For demo purpose, [Northwind OData Service](http://mvc.syncfusion.com/OdataServi
 <div id="schedule"></div>
 
 <script type="text/javascript">
-	$(function () {// document ready function.
-		//oData Adaptor with DataManager
-		var dataManager = new ej.DataManager("http://mvc.syncfusion.com/OdataServices/Northwnd.svc/Events");
-		$("#schedule").ejSchedule({
-			width: "100%",
-			height: "600px",
-			currentDate: new Date(2014, 4, 5),
-			appointmentSettings: {
-				dataSource: dataManager
-			}
-		});
-	});
+$(function() { // document ready function.
+    //oData Adaptor with DataManager
+    var dataManager = new ej.DataManager("http://mvc.syncfusion.com/OdataServices/Northwnd.svc/Events");
+    $("#schedule").ejSchedule({
+        width: "100%",
+        height: "600px",
+        currentDate: new Date(2014, 4, 5),
+        appointmentSettings: {
+            dataSource: dataManager
+        }
+    });
+});
 </script>
 
 {% endhighlight %}
@@ -168,25 +168,25 @@ The appointment fields are needed to be mapped with the appropriate column names
 <div id="schedule"></div>
 
 <script type="text/javascript">
-	$(function () { // Document is ready
-		//oData Adaptor with DataManager
-		var dataManager = new ej.DataManager("http://mvc.syncfusion.com/OdataServices/Northwnd.svc/Events");
-		$("#schedule").ejSchedule({
-			width: "100%",
-			height: "600px",
-			currentDate: new Date(2014, 4, 5),
-			appointmentSettings: {
-				dataSource: dataManager,
-				id: "Id",
-				subject: "Subject",
-				startTime: "StartTime",
-				endTime: "EndTime",
-				allDay: "AllDay",
-				recurrence: "Recurrence",
-				recurrenceRule: "RecurrenceRule"
-			}
-		});
-	});
+$(function() { // Document is ready
+    //oData Adaptor with DataManager
+    var dataManager = new ej.DataManager("http://mvc.syncfusion.com/OdataServices/Northwnd.svc/Events");
+    $("#schedule").ejSchedule({
+        width: "100%",
+        height: "600px",
+        currentDate: new Date(2014, 4, 5),
+        appointmentSettings: {
+            dataSource: dataManager,
+            id: "Id",
+            subject: "Subject",
+            startTime: "StartTime",
+            endTime: "EndTime",
+            allDay: "AllDay",
+            recurrence: "Recurrence",
+            recurrenceRule: "RecurrenceRule"
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}

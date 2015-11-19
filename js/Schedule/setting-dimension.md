@@ -24,13 +24,13 @@ The [height](/js/api/ejschedule#members:height) and [width](/js/api/ejschedule#m
 <div id="schedule"></div>
 
 <script>
-	$(function () {
-		$("#schedule").ejSchedule({
-			//Setting dimension of Scheduler
-			width: "70%",
-			height: "500px"
-		});
-	});
+$(function() {
+    $("#schedule").ejSchedule({
+        //Setting dimension of Scheduler
+        width: "70%",
+        height: "500px"
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -49,20 +49,20 @@ The [cellHeight](/js/api/ejschedule#members:cellheight) property allows the Sche
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			cellHeight: "40px",
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Research on Sky Miracles",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30)
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        cellHeight: "40px",
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -79,20 +79,20 @@ The [cellWidth](/js/api/ejschedule#members:cellwidth) property allows the Schedu
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			cellWidth: "97px",
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Research on Sky Miracles",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30)
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        cellWidth: "97px",
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}

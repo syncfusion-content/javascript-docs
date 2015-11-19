@@ -51,21 +51,21 @@ Usually, the appointments are displayed with its **Subject** and **Start/End tim
 </script>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			appointmentTemplateId: "#apptemplate",
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Wild Discovery",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30),
-					Location: "CHINA"
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        appointmentTemplateId: "#apptemplate",
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -92,36 +92,46 @@ To customize the resource header with some additional images or other customizat
 </script>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			width: "100%",
-			currentDate: new Date(2015, 04, 05),
-			resourceHeaderTemplateId: "#resTemplate",
-			group: {
-				resources: ["Rooms"]
-			},
-			resources: [{
-				field: "roomId",
-				title: "Room",
-				name: "Rooms", allowMultiple: false,
-				resourceSettings: { dataSource: [
-					{ ResourceText: "ROOM1", id: 1, ResourceColor: "orange" },
-					{ ResourceText: "ROOM2", id: 2, ResourceColor: "#56ca85"}],
-					text: "ResourceText", id: "id", color: "ResourceColor"
-				}
-			}],
-			appointmentSettings: {
-				resourceFields: "roomId",
-				dataSource: [{
-					Id: 101,
-					Subject: "Talk with Nature",
-					StartTime: new Date(2015, 11, 5, 10, 00),
-					EndTime: new Date(2015, 11, 5, 11, 00),
-					roomId: 2
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        currentDate: new Date(2015, 04, 05),
+        resourceHeaderTemplateId: "#resTemplate",
+        group: {
+            resources: ["Rooms"]
+        },
+        resources: [{
+            field: "roomId",
+            title: "Room",
+            name: "Rooms",
+            allowMultiple: false,
+            resourceSettings: {
+                dataSource: [{
+                    ResourceText: "ROOM1",
+                    id: 1,
+                    ResourceColor: "orange"
+                }, {
+                    ResourceText: "ROOM2",
+                    id: 2,
+                    ResourceColor: "#56ca85"
+                }],
+                text: "ResourceText",
+                id: "id",
+                color: "ResourceColor"
+            }
+        }],
+        appointmentSettings: {
+            resourceFields: "roomId",
+            dataSource: [{
+                Id: 101,
+                Subject: "Talk with Nature",
+                StartTime: new Date(2015, 11, 5, 10, 00),
+                EndTime: new Date(2015, 11, 5, 11, 00),
+                roomId: 2
+            }]
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -142,36 +152,48 @@ To perform the above specified same customization in **horizontal** **Scheduler*
 </script>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			width: "100%", height: "500px",
-			currentDate: new Date(2015, 04, 05), orientation: "horizontal",
-			resourceHeaderTemplateId: "#resTemplate",
-			group: {
-				resources: ["Rooms"]
-			},
-			resources: [{
-				field: "roomId",
-				title: "Room",
-				name: "Rooms", allowMultiple: false,
-				resourceSettings: { dataSource: [
-					{ ResText: "ROOM1", id: 1, ResColor: "orange" },
-					{ ResText: "ROOM2", id: 2, ResColor: "#56ca85"}],
-					text: "ResText", id: "id", color: "ResColor"
-				}
-			}],
-			appointmentSettings: {
-				resourceFields: "roomId",
-				dataSource: [{
-					Id: 101,
-					Subject: "Talk with Nature",
-					StartTime: new Date(2015, 11, 5, 10, 00),
-					EndTime: new Date(2015, 11, 5, 11, 00),
-					roomId: 2
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        height: "500px",
+        currentDate: new Date(2015, 04, 05),
+        orientation: "horizontal",
+        resourceHeaderTemplateId: "#resTemplate",
+        group: {
+            resources: ["Rooms"]
+        },
+        resources: [{
+            field: "roomId",
+            title: "Room",
+            name: "Rooms",
+            allowMultiple: false,
+            resourceSettings: {
+                dataSource: [{
+                    ResText: "ROOM1",
+                    id: 1,
+                    ResColor: "orange"
+                }, {
+                    ResText: "ROOM2",
+                    id: 2,
+                    ResColor: "#56ca85"
+                }],
+                text: "ResText",
+                id: "id",
+                color: "ResColor"
+            }
+        }],
+        appointmentSettings: {
+            resourceFields: "roomId",
+            dataSource: [{
+                Id: 101,
+                Subject: "Talk with Nature",
+                StartTime: new Date(2015, 11, 5, 10, 00),
+                EndTime: new Date(2015, 11, 5, 11, 00),
+                roomId: 2
+            }]
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -216,30 +238,39 @@ When template is applied for the [prioritySettings](/js/api/ejschedule#members:p
 </style>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			prioritySettings: {
-				enable: true,
-				template: "<div class='${value}'></div>",
-				dataSource:
-					[{ text: "None", id: 1, value: "none" },
-					 { text: "Critical", id: 2, value: "critical" },
-					 { text: "Ultra Critical", id: 3, value: "ultracritical"}]
-			},
-			appointmentSettings: {
-				priority: "Priority",
-				dataSource: [{
-					Id: 100,
-					Subject: "Wild Discovery",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30),
-					Location: "CHINA",
-					Priority: "critical"
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        prioritySettings: {
+            enable: true,
+            template: "<div class='${value}'></div>",
+            dataSource: [{
+                text: "None",
+                id: 1,
+                value: "none"
+            }, {
+                text: "Critical",
+                id: 2,
+                value: "critical"
+            }, {
+                text: "Ultra Critical",
+                id: 3,
+                value: "ultracritical"
+            }]
+        },
+        appointmentSettings: {
+            priority: "Priority",
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA",
+                Priority: "critical"
+            }]
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -275,24 +306,24 @@ To define the template option for tooltip, the [tooltipSettings](/js/api/ejsched
 </script>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			tooltipSettings: {
-				enable: true,
-				template: "#tooltipTemplate"
-			},
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Wild Discovery",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30),
-					Location: "CHINA"
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        tooltipSettings: {
+            enable: true,
+            template: "#tooltipTemplate"
+        },
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -339,38 +370,41 @@ The following code snippet shows how to customize the content of the date, time 
 </script>
 
 <script type="text/javascript">
-	function _getDate(date) {
-		var dateCol = new Date(date);
-		return dateCol.toDateString();
-	}
+function _getDate(date) {
+    var dateCol = new Date(date);
+    return dateCol.toDateString();
+}
 
-	function _getTime(date) {
-		var time = new Date(date);
-		return time.toLocaleTimeString();
-	}
+function _getTime(date) {
+    var time = new Date(date);
+    return time.toLocaleTimeString();
+}
 
-	//Here, used the helper function to get the date and time value part from the StartTime.
-	$.views.helpers({ dateDisplay: _getDate, timeDisplay: _getTime });
+//Here, used the helper function to get the date and time value part from the StartTime.
+$.views.helpers({
+    dateDisplay: _getDate,
+    timeDisplay: _getTime
+});
 
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			appointmentTemplateId: "#apptemplate",
-			agendaViewSettings: {
-				dateColumnTemplateId: "#datetemplate",
-				timeColumnTemplateId: "#timetemplate"
-			},
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Wild Discovery",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30),
-					Location: "CHINA"
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        appointmentTemplateId: "#apptemplate",
+        agendaViewSettings: {
+            dateColumnTemplateId: "#datetemplate",
+            timeColumnTemplateId: "#timetemplate"
+        },
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}

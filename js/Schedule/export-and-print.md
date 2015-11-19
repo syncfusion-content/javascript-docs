@@ -122,20 +122,20 @@ The server-side action **ExportToICS** contains the following code example to ex
 
 {% highlight c# %}
 
-	public void ExportToICS(FormCollection form)
-	{
-		IEnumerable data;
-		string JSONModel = Request.Form["ScheduleModel"];
-		var model = JsonConvert.DeserializeObject<Dictionary<string, object>>(JSONModel);
-		var Id = Request.Form["AppointmentId"];
-		if(Id != null)
-			// To export single appointment
-			data = db.DefaultSchedules.Where(app => app.Id.ToString() == Id.ToString()).ToList();
-		else
-			// To export all the appointments
-			data = db.DefaultSchedules.ToList();
-		ScheduleExport obj = new ScheduleExport(model, data);
-	}
+public void ExportToICS(FormCollection form)
+{
+	IEnumerable data;
+	string JSONModel = Request.Form["ScheduleModel"];
+	var model = JsonConvert.DeserializeObject<Dictionary<string, object>>(JSONModel);
+	var Id = Request.Form["AppointmentId"];
+	if(Id != null)
+		// To export single appointment
+		data = db.DefaultSchedules.Where(app => app.Id.ToString() == Id.ToString()).ToList();
+	else
+		// To export all the appointments
+		data = db.DefaultSchedules.ToList();
+	ScheduleExport obj = new ScheduleExport(model, data);
+}
 
 {% endhighlight %}
 
@@ -200,39 +200,35 @@ The following code example depicts the way to print a particular appointment.
 <div id="Schedule1"> </div>
 
 <script type="text/javascript">
-    $(function() {
-        $("#Schedule1").ejSchedule({
-            currentDate: new Date(2015, 11, 2),
-            contextMenuSettings: {
-                enable: true,
-                menuItems: {
-                    appointment: [
-                        {
-                            id: "open",
-                            text: "Open Appointment"
-                        },
-                        {
-                            id: "delete",
-                            text: "Delete Appointment"
-                        },
-                        {
-                            id: "print",
-                            text: "Print Appointment"
-                        }
-                    ]
-                }
-            },
-            appointmentSettings: {
-                dataSource: [{
-                    Id: 100,
-                    Subject: "Wild Discovery",
-                    StartTime: new Date(2015, 11, 2, 9, 00),
-                    EndTime: new Date(2015, 11, 2, 10, 30),
-                    Location: "CHINA"
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        contextMenuSettings: {
+            enable: true,
+            menuItems: {
+                appointment: [{
+                    id: "open",
+                    text: "Open Appointment"
+                }, {
+                    id: "delete",
+                    text: "Delete Appointment"
+                }, {
+                    id: "print",
+                    text: "Print Appointment"
                 }]
             }
-        });
+        },
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
     });
+});   
 </script>
 
 {% endhighlight %}
