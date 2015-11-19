@@ -7,20 +7,17 @@ metaname:
 metacontent: 
 ---
 
-# ejAutocomplete
-
-
-
-
-
-The AutoComplete control is a textbox control that provides a list of suggestions based on the user query.When the users enters the text in the text box, the control performs a search operation and provides a list of results in the suggestion pop up. There are several filter types available to perform the search.
-
+# Custom Design for Html Textbox control.
 
 
 
 
 
 $(element).ejAutocomplete<span class="signature">()</span>
+
+
+
+
 
 
 Example

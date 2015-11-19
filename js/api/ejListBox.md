@@ -8,13 +8,7 @@ metacontent:
 ---
 
 
-# ejListBox
-
-
-
 The ListBox widget provides a list options to make user to choose an item from the list. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
-
-
 
 $(element).ejListBox<span class="signature">()</span>
 
