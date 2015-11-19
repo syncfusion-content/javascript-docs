@@ -30,38 +30,43 @@ The following code example shows the way to export single appointment from the S
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-$(function () {
-$("#Schedule1").ejSchedule({
-currentDate: new Date(2015, 11, 2),
-contextMenuSettings: {
-enable: true,
-menuItems: {
-appointment: [
-{ id: "open", text: "Open Appointment" },
-{ id: "delete", text: "Delete Appointment" },
-{ id: "export", text: "Export Appointment" }
-]
-}
-},
-menuItemClick: "onMenuItemClick",
-appointmentSettings: {
-dataSource: [{
-Id: 100,
-Subject: "Wild Discovery",
-StartTime: new Date(2015, 11, 2, 9, 00),
-EndTime: new Date(2015, 11, 2, 10, 30),
-Location: "CHINA"
-}]
-}
-});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        contextMenuSettings: {
+            enable: true,
+            menuItems: {
+                appointment: [{
+                    id: "open",
+                    text: "Open Appointment"
+                }, {
+                    id: "delete",
+                    text: "Delete Appointment"
+                }, {
+                    id: "export",
+                    text: "Export Appointment"
+                }]
+            }
+        },
+        menuItemClick: "onMenuItemClick",
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
 });
 // This function executes, when any of the menu options are clicked in the context menu
 function onMenuItemClick(args) {
-if (args.events.ID == "export") {
-var obj = $("#Schedule1").data("ejSchedule");
-// exportSchedule() method will send a post to the server-side to call a specified action.
-obj.exportSchedule("ExportToICS", null, args.targetInfo.Id);
-}
+    if (args.events.ID == "export") {
+        var obj = $("#Schedule1").data("ejSchedule");
+        // exportSchedule() method will send a post to the server-side to call a specified action.
+        obj.exportSchedule("ExportToICS", null, args.targetInfo.Id);
+    }
 }
 </script>
 
@@ -84,26 +89,30 @@ The following code example depicts the way to export all the Scheduler appointme
 <button id="Btn">Export</button>
 
 <script type="text/javascript">
-$(function () {
-$("#Btn").ejButton({ width: "70px", height: "30px", click: "onClick" });
-$("#Schedule1").ejSchedule({
-currentDate: new Date(2015, 11, 2),
-appointmentSettings: {
-dataSource: [{
-Id: 100,
-Subject: "Wild Discovery",
-StartTime: new Date(2015, 11, 2, 9, 00),
-EndTime: new Date(2015, 11, 2, 10, 30),
-Location: "CHINA"
-}]
-}
-});
+$(function() {
+    $("#Btn").ejButton({
+        width: "70px",
+        height: "30px",
+        click: "onClick"
+    });
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Wild Discovery",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30),
+                Location: "CHINA"
+            }]
+        }
+    });
 });
 // Clicking on the export button will call this method
 function onClick(args) {
-var obj = $("#Schedule1").data("ejSchedule");
-// Calls the server-side action ExportToICS
-obj.exportSchedule("ExportToICS", null, null);
+    var obj = $("#Schedule1").data("ejSchedule");
+    // Calls the server-side action ExportToICS
+    obj.exportSchedule("ExportToICS", null, null);
 }
 </script>
 
