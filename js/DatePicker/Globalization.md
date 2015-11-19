@@ -25,13 +25,11 @@ The **‘en-US’** locale is currently being used as default culture in DatePic
 
 Refer the below German culture file in head section of html page after the reference of **‘jQuery.globalize.js’** file.
 
-   <table>
-        <tr>
-            <td>
-                <br /><script src="http://cdn.syncfusion.com/js/assets/external/cultures/globalize.culture.de-DE.min.js"></script><br />
-            </td>
-        </tr>
-    </table>
+ {% highlight js %}
+   
+           <script src="http://cdn.syncfusion.com/js/assets/external/cultures/globalize.culture.de-DE.min.js"></script>
+                
+ {% endhighlight %}
 
 Set German culture to DatePicker at initialization.
 

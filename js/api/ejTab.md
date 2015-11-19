@@ -1680,7 +1680,7 @@ $("#tab").ejTab("show");
 
 
 ### itemActive
-{:#events:itemActive}
+{:#events:itemactive}
 
 
 
