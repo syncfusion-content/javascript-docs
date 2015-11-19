@@ -3694,6 +3694,77 @@ commonSeriesOptions :{tooltip :{border :{ width : 2}}}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dmvqb51g)
 
+### commonSeriesOptions.tooltip.rx<span class="type-signature type number">number</span>
+{:#members:commonseriesoptions-tooltip-rx}
+
+
+
+
+Customize the corner radius of the tooltip rectangle.
+
+
+Default value:
+{:.param}
+
+
+
+0
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{tooltip :{rx: 10}}                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+### commonSeriesOptions.tooltip.ry<span class="type-signature type number">number</span>
+{:#members:commonseriesoptions-tooltip-ry}
+
+
+
+
+Customize the corner radius of the tooltip rectangle.
+
+
+Default value:
+{:.param}
+
+
+
+0
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{tooltip :{ry: 10}}                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
 
 ### commonSeriesOptions.tooltip.duration<span class="type-signature type string">string</span>
 {:#members:commonseriesoptions-tooltip-duration}
@@ -18990,6 +19061,80 @@ series : [{tooltip : {border : { width :2} }]
  {% endhighlight %}
 
 
+### series.tooltip.rx<span class="type-signature type number">number</span>
+{:#members:series-tooltip-rx}
+
+
+
+
+Customize the corner radius of the tooltip rectangle.
+
+
+Default value:
+{:.param}
+
+
+
+0
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{
+    tooltip :{ry: 10}
+    }]                 
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+### series.tooltip.ry<span class="type-signature type number">number</span>
+{:#members:series-tooltip-ry}
+
+
+
+
+Customize the corner radius of the tooltip rectangle.
+
+
+Default value:
+{:.param}
+
+
+
+0
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{
+    tooltip :{ry: 10}
+    }]                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
 
 
 ### series.tooltip.duration<span class="type-signature type string">string</span>
