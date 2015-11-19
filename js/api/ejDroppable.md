@@ -7,7 +7,10 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for droping HTML elements.
+# ejDroppable
+
+
+Plugin to make any DOM element Droppable.  
 
 
 

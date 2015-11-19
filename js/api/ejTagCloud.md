@@ -7,6 +7,12 @@ metaname:
 metacontent: 
 ---
 
+# ejTagCloud
+
+
+
+
+
 The TagCloud allows the user to display a list of links or tags with a structured cloud format where the importance of the tags can differentiate with varied font sizes, colors, and styles.
 
 

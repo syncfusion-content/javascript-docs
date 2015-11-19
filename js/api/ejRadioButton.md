@@ -7,7 +7,11 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html RadioButton Control.
+# ejRadioButton
+
+
+
+The RadioButton control allows you to choose an option to perform an action. This control allows you to select true/false.
 
 
 

@@ -138,7 +138,7 @@ EndTime: new Date(2015, 11, 5, 11, 00)
 
 {% endhighlight %}
 
-N>	By default, work hour **start** is set to **9** and work hour **end** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the work start hour that is set to it, to make the user to view that particular time initially.
+N> By default, work hour **start** is set to **9** and work hour **end** is set to **18**. Also, the Scheduler cells automatically scrolls up or down based on the work start hour that is set to it, to make the user to view that particular time initially.
 
 ## Date Customization
 
@@ -189,7 +189,7 @@ EndTime: new Date(2015, 11, 5, 11, 00)
 
 {% endhighlight %}
 
-N>	By default, the System current date will be taken as Scheduler’s Current date.
+N> By default, the System current date will be taken as Scheduler’s Current date.
 
 ### MinDate and MaxDate
 
@@ -239,7 +239,7 @@ EndTime: new Date(2015, 11, 5, 11, 00)
 
 {% endhighlight %}
 
-N>	The **maxDate** value provided should always be greater than that of **minDate** value.
+N> The **maxDate** value provided should always be greater than that of **minDate** value.
 
 ## Appointment Window Customization
 

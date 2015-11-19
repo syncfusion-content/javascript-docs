@@ -7,6 +7,10 @@ metaname:
 metacontent: 
 ---
 
+# ejSplitButton
+
+
+
 The Split button allows you to perform an action using clicking the button and choosing extra options from the dropdown button. The Split button also can display both text and images.
 
 

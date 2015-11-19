@@ -90,8 +90,8 @@ for(var i=0;i<5;i++){ row="dataManger.dataSource.json[0];;" tbody="" +="String.f
 
 
 
-### excuteLocal<span class="signature">(query)</span>
-{:#methods:excutelocal}
+### executeLocal<span class="signature">(query)</span>
+{:#methods:executelocal}
 
 
 
@@ -145,8 +145,8 @@ for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td
 
 
 
-### excuteQuery<span class="signature">(query)</span>
-{:#methods:excutequery}
+### executeQuery<span class="signature">(query)</span>
+{:#methods:executequery}
 
 
 

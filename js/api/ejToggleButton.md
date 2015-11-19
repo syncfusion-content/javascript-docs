@@ -7,6 +7,11 @@ metaname:
 metacontent: 
 ---
 
+# ejToggleButton
+
+
+
+
 The Toggle Button allows you to perform the toggle option by using checked and unchecked state. This Toggle Button can be helpful to user to check their states. The Toggle Button control displays both text and images.
 
 
