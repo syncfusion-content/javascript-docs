@@ -7,100 +7,313 @@ control: TreeView
 documentation: ug
 ---
 
-# Drag and Drop
+# Drag and drop 
 
-You can **Drag and Drop** the nodes within the **TreeView** control or drag a particular node from one tree to another tree.
-
-To enable or disable this option, set the appropriate value for the **allowDragAndDrop** property. When **allowDragAndDrop** is enabled, the nodes of a **TreeView** are dragged and dropped between all levels. 
-
-The following steps explain enabling the **allowDragAndDrop** property for **TreeView**.
-
-In the **HTML** page, add **&lt;ul&gt;** and **&lt;li&gt;** elements to configure **TreeView.**
-
-{% highlight html %}
-
-
-<ul id="treeView">
-   <li class="expanded">
-      Favorites
-      <ul>
-         <li>Desktop</li>
-         <li>Downloads</li>
-         <li>Recent places</li>
-      </ul>
-   </li>
-   <li class="expanded">
-      Libraries
-      <ul>
-         <li>
-            Documents
-            <ul>
-               <li>My Documents</li>
-               <li>Public Documents</li>
-            </ul>
-         </li>
-         <li>
-            Pictures
-            <ul>
-               <li>My Pictures</li>
-               <li>Public Pictures</li>
-            </ul>
-         </li>
-         <li>
-            Music
-            <ul>
-               <li>My Music</li>
-               <li>Public Music</li>
-            </ul>
-         </li>
-         <li>Subversion</li>
-      </ul>
-   </li>
-   <li>
-      Computer
-      <ul>
-         <li>Folder(C)</li>
-         <li>Folder(D)</li>
-         <li>Folder(F)</li>
-      </ul>
-   </li>
-</ul>
-
-{% endhighlight %}
+To perform drag and drop operation in TreeView, specify [allowDragAndDrop](http://help.syncfusion.com/js/api/ejtreeview#members:allowdraganddrop) as true. It allows you to drag and drop node in all level of same TreeView.
 
 {% highlight js %}
 
-        // Enable allowDragAndDrop for TreeView control as follows.
-        $("#treeView").ejTreeView({
-            allowDragAndDrop: true,
+        var localData = [
+
+        { id: 1, text: "Item 1" },
+
+        { id: 2, text: "Item 2" },
+
+        { id: 3, text: "Item 3" },
+
+        { id: 4, text: "Item 4" },
+
+        { id: 5, parent: 1, text: "Item 1.1" },
+
+        { id: 6, parent: 1, text: "Item 1.2" },
+
+        { id: 7, parent: 1, text: "Item 1.3" },
+
+        { id: 8, parent: 3, text: "Item 3.1" },
+
+        { id: 9, parent: 3, text: "Item 3.2" },
+
+        { id: 10, parent: 5, text: "Item 1.1.1" }
+
+        ];
+
+        $(function () {
+
+            // initialize and bind the TreeView with local data
+
+            $("#treeView").ejTreeView({
+
+                allowDragAndDrop: true,
+
+                fields: { dataSource: localData, id: "id", parentId: "parent", text: "text" }
+
+            });
+
+        });
+
+
+{% endhighlight %}
+
+N> TreeView provides much easier option to drop the dragged nodes at any levels by indicator lines with icons.
+
+## Position Indicators
+
+TreeView provides much easier option to drop the dragged nodes at any levels by indicator lines with icons such as line, plus/minus and restrict icons while dragging and dropping the nodes. It represents exact position where the node to be dropped as sibling or child. Refer below screen shot of position indicator.
+
+<table>
+<tr>
+<th>
+Indicators</th><th>
+description</th></tr>
+<tr>
+<td>
+Plus icon<br/><br/></td><td>
+represents the dragged node to be added as child of targeted node<br/><br/></td></tr>
+<tr>
+<td>
+Minus with restrict icon<br/><br/></td><td>
+represents the dragged node not to be dropped at the hovered region<br/><br/></td></tr>
+<tr>
+<td>
+In between icon<br/><br/></td><td>
+represents the dragged node to be dropped in between the nodes as siblings<br/><br/></td></tr>
+</table>
+
+## Restriction
+
+You can restrict the dragged nodes to be dropped at siblings or children’s level by using [allowDropSibling](http://help.syncfusion.com/js/api/ejtreeview#members:allowdropsibling) and [allowDropChild](http://help.syncfusion.com/js/api/ejtreeview#members:allowdropchild) property.
+
+{% highlight js %}
+
+        var localData = [
+
+        { id: 1, text: "Item 1" },
+
+        { id: 2, text: "Item 2" },
+
+        { id: 3, text: "Item 3" },
+
+        { id: 4, text: "Item 4" },
+
+        { id: 5, parent: 1, text: "Item 1.1" },
+
+        { id: 6, parent: 1, text: "Item 1.2" },
+
+        { id: 7, parent: 1, text: "Item 1.3" },
+
+        { id: 8, parent: 3, text: "Item 3.1" },
+
+        { id: 9, parent: 3, text: "Item 3.2" },
+
+        { id: 10, parent: 5, text: "Item 1.1.1" }
+
+        ];
+
+        $(function () {
+
+            // initialize and bind the TreeView with local data
+
+            $("#treeView").ejTreeView({
+
+                allowDragAndDrop: true,
+
+                allowDropSibling: true, // allows to drop sibling
+
+                allowDropChild: false, // restricts to drop as child
+
+                fields: { dataSource: localData, id: "id", parentId: "parent", text: "text" }
+
+            });
+
         });
 
 {% endhighlight %}
 
-The output for **TreeView** when **allowDragAndDrop** is set to **True**.
+## Drag and Drop between Trees
 
-![](/js/TreeView/Drag-and-Drop_images/Drag-and-Drop_img1.png)
-
-## Allow Drop Child
-
-You can allow the child level of specified node to be dropped in **TreeView** by using the **allowDropChild** property, and it is specified in the script as follows.
+You can drag and drop tree nodes between two TreeView by setting [allowDragAndDrop](http://help.syncfusion.com/js/api/ejtreeview#members:allowdraganddrop) as true along with [allowDragAndDropAcrossControl](http://help.syncfusion.com/js/api/ejtreeview#members:allowdraganddropacrosscontrol) as true. 
 
 {% highlight js %}
 
-    $("#treeView").ejTreeView({ allowDropChild: true });
+        var tree1 = [
 
+        { id: 1, text: "Item 1" },
+
+        { id: 2, text: "Item 2" },
+
+        { id: 3, text: "Item 3" },
+
+        { id: 4, text: "Item 4" },
+
+        { id: 5, parent: 1, text: "Item 1.1" },
+
+        { id: 6, parent: 1, text: "Item 1.2" },
+
+        { id: 7, parent: 1, text: "Item 1.3" },
+
+        { id: 8, parent: 3, text: "Item 3.1" },
+
+        { id: 9, parent: 3, text: "Item 3.2" },
+
+        { id: 10, parent: 5, text: "Item 1.1.1" }
+
+        ];
+
+        var tree2 = [
+
+        { id: 11, text: "Item 5" },
+
+        { id: 12, text: "Item 6" },
+
+        { id: 13, text: "Item 7" },
+
+        { id: 14, text: "Item 4" },
+
+        { id: 15, parent: 11, text: "Item 5.1" },
+
+        { id: 16, parent: 11, text: "Item 5.2" },
+
+        { id: 17, parent: 11, text: "Item 5.3" },
+
+        { id: 18, parent: 13, text: "Item 7.1" },
+
+        { id: 19, parent: 13, text: "Item 7.2" },
+
+        { id: 10, parent: 15, text: "Item 5.1.1" }
+
+        ];
+
+        $(function () {
+
+            // initialize and bind the TreeView with local data
+
+            $("#treeViewDrag").ejTreeView({
+
+                allowDragAndDrop: true,
+
+                allowDragAndDropAccessControl: true,
+
+                allowDropSibling: true, // allows to drop sibling
+
+                allowDropChild: true, // allows to drop as child
+
+                fields: { dataSource: tree1, id: "id", parentId: "parent", text: "text" }
+
+            });
+
+            $("#treeViewDrop").ejTreeView({
+
+                allowDragAndDrop: true,
+
+                allowDragAndDropAccessControl: true,
+
+                allowDropSibling: true, // allows to drop sibling
+
+                allowDropChild: true, // allows to drop as child
+
+                fields: { dataSource: tree2, id: "id", parentId: "parent", text: "text" }
+
+            });
+
+        });
 
 {% endhighlight %}
 
-### Allow Drop Sibling
+For more details about drag and drop between TreeView, refer the sample [here](http://jsplayground.syncfusion.com/40z0fek2#). 
 
-You can drag the root node and drop it into the same level of node that is a sibling node in **TreeView** by using the property **allowDropSibling**. You can specify the property **allowDropSibling** in **TreeView** control as follows.
+## Auto Node Structuring
+
+You may not need to have two TreeView to be in same structured node while drag and drop the nodes between them. But after the node has been dropped, it should get structure of the TreeView node in which dropped. By default TreeView auto structure the node whenever you drop a node from different tree.
 
 {% highlight js %}
 
-    $("#treeView").ejTreeView({ allowDropSibling: true });
+        var tree1 = [
+
+        { id: 1, text: "Item 1" },
+
+        { id: 2, text: "Item 2" },
+
+        { id: 3, text: "Item 3" },
+
+        { id: 4, text: "Item 4" },
+
+        { id: 5, parent: 1, text: "Item 1.1" },
+
+        { id: 6, parent: 1, text: "Item 1.2" },
+
+        { id: 7, parent: 1, text: "Item 1.3" },
+
+        { id: 8, parent: 3, text: "Item 3.1" },
+
+        { id: 9, parent: 3, text: "Item 3.2" },
+
+        { id: 10, parent: 5, text: "Item 1.1.1" }
+
+        ];
+
+        var tree2 = [
+
+        { id: 11, text: "Item 5" },
+
+        { id: 12, text: "Item 6" },
+
+        { id: 13, text: "Item 7" },
+
+        { id: 14, text: "Item 4" },
+
+        { id: 15, parent: 11, text: "Item 5.1" },
+
+        { id: 16, parent: 11, text: "Item 5.2" },
+
+        { id: 17, parent: 11, text: "Item 5.3" },
+
+        { id: 18, parent: 13, text: "Item 7.1" },
+
+        { id: 19, parent: 13, text: "Item 7.2" },
+
+        { id: 10, parent: 15, text: "Item 5.1.1" }
+
+        ];
+
+        $(function () {
+
+            // initialize and bind the TreeView with local data
+
+            $("#treeViewDrag").ejTreeView({
+
+                allowDragAndDrop: true,
+
+                allowDragAndDropAccessControl: true,
+
+                allowDropSibling: true, // allows to drop sibling
+
+                allowDropChild: true, // allows to drop as child
+
+                fields: { dataSource: tree1, id: "id", parentId: "parent", text: "text" },
+
+                showCheckbox: true
+
+            });
+
+            $("#treeViewDrop").ejTreeView({
+
+                allowDragAndDrop: true,
+
+                allowDragAndDropAccessControl: true,
+
+                allowDropSibling: true, // allows to drop sibling
+
+                allowDropChild: true, // allows to drop as child
+
+                fields: { dataSource: tree2, id: "id", parentId: "parent", text: "text" }
+
+            });
+
+        });
 
 {% endhighlight %}
 
+For more details about drag and drop between TreeView, refer the sample [here](http://jsplayground.syncfusion.com/u0vqjm0e#). 
 
+N>  Auto node structure applicable for well-structured node object.
 

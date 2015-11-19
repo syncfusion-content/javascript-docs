@@ -1,78 +1,65 @@
 ---
 layout: post
-title: Node-Persistence-Handling
-description: node persistence handling
+title: State-Persistence
+description: State Persistence
 platform: js
 control: TreeView
 documentation: ug
 ---
 
-# Node Persistence Handling
+# State Persistence
 
-The **TreeView** allows for **Persistence** of its expanded and collapsed state across page view. When you want to maintain the state of the node, like expand or collapse the node, check or uncheck the node, or node display arrangement after a post back, this behavior is achieved by using the **enablePersistence** property.
+TreeView state can be persisted by using [enablePersistence](http://help.syncfusion.com/js/api/ejtreeview#members:enablepersistence). In which entire modal has been persisted excluding data source in order to maintain performance. 
 
-To enable **Persistence** of a node, you can set the appropriate value for the **enablePersistence** property. To enable this feature, set the **enablePersistence** property as **true**.
+The model values of below are maintained through Id basis of tree node.
 
-The following steps explain how you can enable the **enablePersistence** property for **TreeView**.
+* **selected**
+* **checked**
+* **expanded/collapsed state**
 
-In the **HTML** page, add &lt;ul&gt; and &lt;li&gt; elements to configure TreeView.
+N>  Ul-li template option, state has been persisted by index.
 
-{% highlight html %}
-
-<ul id="treeView">
-    <li class="expanded">Favorites
-        <ul>
-            <li>Desktop</li>
-            <li>Downloads</li>
-            <li>Recent places</li>
-        </ul>
-    </li>
-    <li class="expanded">Libraries
-        <ul>
-            <li>Documents
-                <ul>
-                    <li>My Documents</li>
-                    <li>Public Documents</li>
-                </ul>
-            </li>
-            <li>Pictures
-                <ul>
-                    <li>My Pictures</li>
-                    <li>Public Pictures</li>
-                </ul>
-            </li>
-            <li>Music
-                <ul>
-                    <li>My Music</li>
-                    <li>Public Music</li>
-                </ul>
-            </li>
-            <li>Subversion</li>
-        </ul>
-    </li>
-    <li>Computer
-        <ul>
-            <li>Folder(C)</li>
-            <li>Folder(D)</li>
-            <li>Folder(F)</li>
-        </ul>
-    </li>
-</ul>
-
-{% endhighlight %}
+TreeView stores its model in local storage / cookies of browser before page refreshes and reinitialized with their stored model after refresh.
 
 {% highlight js %}
 
+        var localData = [
 
-        $("#treeView").ejTreeView({                
-            enablePersistence: true
+        { id: 1, text: "Item 1" },
+
+        { id: 2, text: "Item 2" },
+
+        { id: 3, text: "Item 3" },
+
+        { id: 4, text: "Item 4" },
+
+        { id: 5, parent: 1, text: "Item 1.1" },
+
+        { id: 6, parent: 1, text: "Item 1.2" },
+
+        { id: 7, parent: 1, text: "Item 1.3" },
+
+        { id: 8, parent: 3, text: "Item 3.1" },
+
+        { id: 9, parent: 3, text: "Item 3.2" },
+
+        { id: 10, parent: 5, text: "Item 1.1.1" }
+
+        ];
+
+        $(function () {
+
+            // initialize and bind the TreeView with local data
+
+            $("#treeView").ejTreeView({
+
+                enablePersistence: true,
+
+                fields: { dataSource: localData, id: "id", parentId: "parent", text: "text" }
+
+            });
+
         });
 
-
 {% endhighlight %}
-
-
-The output for **TreeView** when **enablePersistence** is set to **True** is as follows.
-
-![](/js/TreeView/Node-Persistence-Handling_images/Node-Persistence-Handling_img1.png)
 
