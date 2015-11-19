@@ -134,6 +134,7 @@ For demo purpose, [Northwind OData Service](http://mvc.syncfusion.com/OdataServi
 
 {% highlight html %}
 
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script type="text/javascript">
@@ -153,7 +154,6 @@ For demo purpose, [Northwind OData Service](http://mvc.syncfusion.com/OdataServi
 
 {% endhighlight %}
 
-
 N> ODataAdaptor is the default adaptor used within DataManager. While binding to other web services, proper [data adaptor](/js/datamanager/data-adaptors) needs to be set for `adaptor` option of DataManager.
 
 
@@ -164,6 +164,7 @@ The appointment fields are needed to be mapped with the appropriate column names
 
 {% highlight html %}
 
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script type="text/javascript">

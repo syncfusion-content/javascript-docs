@@ -24,7 +24,7 @@ By default, the Schedule control’s active view is **Week** view. Also, it is p
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
@@ -48,7 +48,7 @@ It represents a single day Scheduler view (single date display) with all its rel
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
@@ -85,7 +85,7 @@ It’s a view displaying a count of 7 days (from Sunday to Saturday) with all it
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
@@ -124,7 +124,7 @@ Workweek view displays the working days of the week (count of 5 days) and its as
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
@@ -163,7 +163,7 @@ Month view displays the entire days of a particular month and all its related ap
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
@@ -204,7 +204,7 @@ To display the custom view option in the toolbar-like view options in the schedu
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
@@ -250,7 +250,7 @@ This View option lists out the appointments in a grid-like view for the next 7 d
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
@@ -296,7 +296,7 @@ It is possible to restrict the users to display only the specific list of views 
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
@@ -337,7 +337,7 @@ All the applicable features in Vertical mode works similar with Timeline mode (H
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
