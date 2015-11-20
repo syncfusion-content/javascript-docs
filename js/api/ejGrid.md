@@ -14233,7 +14233,7 @@ Triggered for every grid action server failure event.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Arguments in actionComplete when grid is initialized.
+<td class="description last">Arguments in actionFailure when grid is initialized.
 <table class="params">
 <thead>
 <tr>
@@ -14281,7 +14281,7 @@ error{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Arguments in actionComplete after grid paging action is completed.
+<td class="description last">Arguments in actionFailure after grid paging action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -14365,7 +14365,7 @@ error{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Arguments in actionComplete after grid sorting action is completed.
+<td class="description last">Arguments in actionFailure after grid sorting action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -14437,7 +14437,7 @@ error{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Arguments in actionComplete after grid grouping action is completed.
+<td class="description last">Arguments in actionFailure after grid grouping action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -14503,7 +14503,7 @@ error{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Arguments in actionComplete after grid record editing action is completed.
+<td class="description last">Arguments in actionFailure after grid record editing action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -14587,7 +14587,7 @@ error{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Arguments in actionComplete after grid record save action is completed.
+<td class="description last">Arguments in actionFailure after grid record save action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -14665,7 +14665,7 @@ error{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Arguments in actionComplete after grid record delete action is completed.
+<td class="description last">Arguments in actionFailure after grid record delete action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -14743,7 +14743,7 @@ error{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Arguments in actionComplete after add new record action is completed.
+<td class="description last">Arguments in actionFailure after add new record action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -14815,7 +14815,7 @@ error{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Arguments in actionComplete after grid filtering action is completed.
+<td class="description last">Arguments in actionFailure after grid filtering action is completed.
 <table class="params">
 <thead>
 <tr>
@@ -15071,6 +15071,18 @@ type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
 </tr>
+<tr>
+<td class="name">{% highlight html %}
+primaryKey{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the primary key.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the row Index.</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -15161,8 +15173,8 @@ defaultData{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 primaryKey{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns primaryKey.</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the primaryKey.</td>
 </tr>
 </tbody>
 </table>
@@ -15248,8 +15260,8 @@ type{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 primaryKey{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns primaryKey.</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the primaryKey.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -15440,14 +15452,14 @@ model{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 primaryKey{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns primary key.</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the primary key.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 primaryKeyValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns primary key value.</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the primary key value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -16223,7 +16235,7 @@ cancel{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 draggableType{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns draggable element type.</td>
 </tr>
 <tr>
@@ -17557,6 +17569,12 @@ data{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
@@ -17880,7 +17898,7 @@ rowIndex{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the current selected row.</td>
+<td class="description last">Returns the jquery object of the current selected row.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -17893,6 +17911,24 @@ cell{% endhighlight %}</td>
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cellIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the cell index value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cellValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the corresponding cell value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the Header text of the column corresponding to the selected cell.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -17985,7 +18021,7 @@ rowIndex{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 row{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the current selected row.</td>
+<td class="description last">Returns the jquery object of the current selected row.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -17998,6 +18034,24 @@ cell{% endhighlight %}</td>
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cellIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the selected cell index value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cellValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the corresponding cell value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+columnName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the Header text of the column corresponding to the selected cell.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -18073,6 +18127,12 @@ argument{% endhighlight %}</td>
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -18993,6 +19053,18 @@ target{% endhighlight %}</td>
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+gridModel{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+toolbarData{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the toolbar object of the selected toolbar element.</td>
 </tr>
 </tbody>
 </table>
