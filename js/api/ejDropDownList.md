@@ -919,7 +919,7 @@ Default Value:
 
 
 
-* false
+* ej.FilterType.Contains
 
 
 
@@ -1922,6 +1922,59 @@ Example
 {% endhighlight %}
 
 
+### sortOrder <span class="type-signature type enum">enum</span>
+{:#members:sortorder}
+
+
+
+
+When the enableSorting property value is set to true, this property helps to sort the items either in ascending or descending order
+
+
+Default Value:
+{:.param}
+
+
+
+* ej.sortOrder.Ascending
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<input id="drpdwn" type="text" /><div id="list">
+      <ul>
+        <li id="Art">Art</li>
+        <li id="Architecture">Architecture</li>
+        <li id="Biographies">Biographies</li>
+        <li id="ComputerIT">Computer IT</li>
+        <li id="Comics">Comics</li>
+        <li id="Cookery">Cookery</li>
+        <li id="Fiction">Fiction</li>
+        <li id="Health">Health</li>
+        <li id="Humanities">Humanities</li>
+        <li id="Environment">Environment</li>
+        <li id="Language">Language</li>
+        <li id="Business">Business</li>
+      </ul>
+    </div><script>
+        // Creates the DropDownList.
+        $('#drpdwn').ejDropDownList(
+        { 
+            targetID: "list", 
+            text: "Computer IT", 
+            enableSorting : true, 
+            sortOrder : ej.sortOrder.Descending  
+        });
+        
+    </script>
+
+{% endhighlight %}
 
 
 ### targetID<span class="type-signature type string">string</span>
