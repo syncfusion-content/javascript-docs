@@ -275,19 +275,19 @@ Methods</th><th>
 Description</th></tr>
 <tr>
 <td>
-{{[expandNode](http://help.syncfusion.com/js/api/ejtreeview#methods:expandnode)| markdownify }}<br/><br/></td><td>
+[expandNode](http://help.syncfusion.com/js/api/ejtreeview#methods:expandnode)<br/><br/></td><td>
 Expands the node with specified id<br/><br/></td></tr>
 <tr>
 <td>
-{{[collapseNode](http://help.syncfusion.com/js/api/ejtreeview#methods:collapsenode)| markdownify }}<br/><br/></td><td>
+[collapseNode](http://help.syncfusion.com/js/api/ejtreeview#methods:collapsenode)<br/><br/></td><td>
 Collapse the node with specified id <br/><br/></td></tr>
 <tr>
 <td>
-{{[expandAll](http://help.syncfusion.com/js/api/ejtreeview#methods:expandall)| markdownify }}<br/><br/></td><td>
+[expandAll](http://help.syncfusion.com/js/api/ejtreeview#methods:expandall)<br/><br/></td><td>
 Expands all the node<br/><br/></td></tr>
 <tr>
 <td>
-{{[collapseAll](http://help.syncfusion.com/js/api/ejtreeview#methods:collapseall)| markdownify }}<br/><br/></td><td>
+[collapseAll](http://help.syncfusion.com/js/api/ejtreeview#methods:collapseall)<br/><br/></td><td>
 Collapse all the node<br/><br/></td></tr>
 </table>
 Also you can get all the expanded nodes index in tree by using [getExpandedNodesIndex](http://help.syncfusion.com/js/api/ejtreeview#methods:getexpandednodesindex) method, which returns the array of expanded node indices. 
