@@ -69,6 +69,13 @@ var nodes = [{
 
 ![](/js/Diagram/Shapes_images/Shapes_img60.png)
 
+N> Deploy your HTML file in the web Application and export the diagram (image node) or else the image node will not be exported in the chrome and Firefox due to security issues. Please refer to the link below.
+
+Link: http://asked.online/draw-images-on-canvas-locally-using-chrome/2546077/
+
+Link1: http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrome
+
+
 ## HTML
 
 **Html** elements can be embedded in the Diagram through **Html** type node. To create a html node, you need to set the `type` of node as "html". In addition, you need to set the id of html template to the `templateId` property of node. The following code illustrates how an **Html** node is created.
