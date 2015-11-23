@@ -9,178 +9,224 @@ documentation: ug
 
 #Legend
 
-**Legend** is a color code that helps to differentiate between chart items. Legend also has labels beside each color to indicate that it applies to information from Series 1, Series 2, and so on.
+##Legend Visibility
 
-##Legend Symbol
-
-In **OlapChart**, you can customize the legend symbol with different [shapes](/js/api/ejChart#members:legend-shape) like rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend `shape` is “Rectangle”.
+You can enable or disable legend using the [`visible`](/js/api/ejchart#members:legend-visible) property inside the [`legend`](/js/api/ejchart#members:legend) object. By default, legend is enabled in OlapChart.
 
 {% highlight js %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    title: {
-        text: "OLAP Chart in Essential Studio"
-    },
-    legend: {
-        visible: true,
-        rowCount: 3,
-        shape: "Star"
-    },
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        legend:
+        {
+            //Legend Visibility 
+            visible: true
+        },
+        //....
+    });
 });
-
 
 {% endhighlight %}
 
-![](/js/OlapChart/Legend_images/Legend_img1.png) 
+![](Legend_images/Legend_img1.png) 
+
+##Legend Shape
+You can customize the legend [`shape`](/js/api/ejchart#members:legend-shape) in OlapChart widget to rectangle, circle, cross, diamond, pentagon, hexagon, star, ellipse, triangle etc. Default value of legend shape is “Rectangle”.
+
+{% highlight js %}
+
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        legend:
+        {
+            visible: true,
+            rowCount: 3,
+            //Applying Legend Shape
+            shape: "Star"
+        },
+        //....
+    });
+});
+
+{% endhighlight %}
+
+![](Legend_images/Legend_img2.png) 
 
 ##Legend Position
-
-You can customize the [legend position](/js/api/ejChart#members:legend-position) in top, bottom, left and right position of the Chart. Default value of legend `position` is “bottom”. 
+By using the [`position`](/js/api/ejchart#members:legend-position) property, you can place the legend at top, bottom, left or right of the OlapChart. Default value of legend position is “bottom”.
 
 {% highlight js %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    title: {
-        text: "OLAP Chart in Essential Studio"
-    },
-    legend: {
-        visible: true,
-        rowCount: 3,
-        shape: "Star",
-        position: "top"
-    },
-     size: {
-        height: "460px",
-        width: "950px"
-     }
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        legend:
+        {
+            visible: true,
+            rowCount: 3,
+            shape: "Star",
+            //To place the legend at top of the Chart
+            position: “top”
+        },
+        //....
+    });
 });
 
 {% endhighlight %}
 
-![](/js/OlapChart/Legend_images/Legend_img2.png) 
+![](Legend_images/Legend_img3.png) 
 
-##Legend Arrangement
-
-You can align the legend using [alignment](/js/api/ejChart#members:legend-alignment) property of legend. This allows you to align the legend in center, far and near position of Chart Area. The Default value of legend `alignment` is “Center”.
-
-{% highlight js %}
-
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    title: {
-        text: "OLAP Chart in Essential Studio"
-    },
-    legend: {
-        visible: true,
-        rowCount: 3,
-        alignment: "Near"
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
-});
-
-
-{% endhighlight %}
-
-![](/js/OlapChart/Legend_images/Legend_img3.png) 
-
-##Legend Style
-
-You can draw and customize the outline of Chart legend using [border](/js/api/ejChart#members:legend-border) property of legend. Default value of legend border color is Transparent.
+##Legend Title
+To add the legend title, you have to specify the title text in [`title.text`](/js/api/ejchart#members:legend-title-text) property.
 
 {% highlight js %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    title: {
-        text: "OLAP Chart in Essential Studio"
-    },
-    legend: {
-        visible: true,
-        rowCount: 3,
-        border: {
-            color: 'red',
-            width: 2
-        }
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
-});
-
-{% endhighlight %}
-
-
-![](/js/OlapChart/Legend_images/Legend_img4.png) 
-
-##Legend Item
-
-**Legend item** is represented by an icon or image and a text. This gets rendered automatically corresponding to each series in the **OlapChart**. You can customize the [Legend item](/js/api/ejChart#members:legend-itemstyle).
-
-{% highlight js %}
-
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    size: {
-        height: "460px",
-        width: "950px"
-    },
-    title: {
-        text: "OLAP Chart in Essential Studio"
-    },
-    legend: {
-        visible: true,
-        rowCount: 3,
-        itemStyle: {
-            height: 12,
-            width: 12,
-            border: {
-                color: 'magenta',
-                width: 1.5
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        legend:
+        {
+            visible: true,
+            rowCount: 3,
+            //Add title to the Chart legend
+            title:
+            {
+                text: "Countries"
             }
-        }
-    }
+        },
+        //....
+    });
 });
 
 {% endhighlight %}
 
-![](/js/OlapChart/Legend_images/Legend_img5.png) 
+![](Legend_images/Legend_img4.png) 
+
+##Legend Alignment
+You can align the legend to center, far and near based on its position in the Chart area using the [`alignment`](help.syncfusion.com/js/api/ejchart#members:legend-alignment) option.
+ 
+{% highlight js %}
+
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        legend:
+        {
+            visible: true,
+            rowCount: 3,
+            //Aligning the legend near to the Chart
+            alignment: "Near"
+        },
+        //....
+    });
+});
+
+{% endhighlight %}
+
+![](Legend_images/Legend_img5.png)
+
+##Legend Items - Size and Border
+By using the legend [`itemStyle.width`](/js/api/ejchart#members:legend-itemstyle-width), [`itemStyle.height`](/js/api/ejchart#members:legend-itemstyle-height) and [`itemStyle.border`](/js/api/ejchart#members:legend-itemstyle-border) properties, you can change the legend items - size and border.
+
+{% highlight js %}
+
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        legend:
+        {
+            visible: true,
+            rowCount: 3,
+            //Changing legend items border, height and width
+            itemStyle:
+            {
+                height: 12,
+                width: 12,
+                border:
+                {
+                    color: 'magenta',
+                    width: 1.5
+                }
+            }
+        },
+        //....
+    });
+});
+
+{% endhighlight %}
+
+![](Legend_images/Legend_img6.png)
+ 
+##Legend Border
+By using the [`border`](/js/api/ejchart#members:legend-border) option in legend, you can customize border color and width.
+
+{% highlight js %}
+
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        legend:
+        {
+            visible: true,
+            rowCount: 3,
+            //Setting border color and width to legend
+            border:
+            {
+                color: "#FFC342",
+                width: 2
+            }
+        },
+        //....
+    });
+});
+
+{% endhighlight %}
+
+![](Legend_images/Legend_img7.png)
 
 ##Legend Text
-
-You can customize the **legend text** - font family, font style, font weight and size using [font](/js/api/ejChart#members:legend-font) property of **legend**. The following code illustrates this.
+By using the [`font`](/js/api/ejchart#members:legend-font) option, you can customize the font family, font style, font weight and size of the legend text. 
 
 {% highlight js %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    title: {
-        text: "OLAP Chart in Essential Studio"
-    },
-    legend: {
-        visible: true,
-        rowCount: 3,
-        font: {
-            fontFamily: 'Segoe UI',
-            fontStyle: 'italic',
-            fontWeight: 'bold',
-            size: '13px'
-        }
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        legend:
+        {
+            visible: true,
+            rowCount: 3,
+            //Customizing the legend text
+            font:
+            {
+                fontFamily: 'Segoe UI',
+                fontStyle: 'italic',
+                fontWeight: 'bold',
+                size: '13px'
+            },
+        },
+        //....
+    });
 });
-
 
 {% endhighlight %}
 
-
-![](/js/OlapChart/Legend_images/Legend_img6.png) 
-
+![](Legend_images/Legend_img8.png)
