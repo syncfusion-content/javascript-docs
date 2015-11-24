@@ -17,11 +17,12 @@ Refer the steps [here](/js/schedule/customization#appointment-window-customizati
 In the custom appointment window sample, create an additional css class **validation** as mentioned below to add it to the appropriate fields, if the validation of such fields fails.
 
 {% highlight html %}
-	<style> 
-		.validation {
-			border-color: red;
-		}
-	</style>
+
+<style> 
+    .validation {
+        border-color: red;
+    }
+</style>
 
 {% endhighlight %}
 
