@@ -17107,13 +17107,13 @@ argument{% endhighlight %}</td>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-newValue{% endhighlight %}</td>
+newValues{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Parameter returns the new zoom value, horizontal and vertical scroll offsets.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-oldValue{% endhighlight %}</td>
+oldValues{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns the previous zoom value, horizontal and vertical scroll offsets.</td>
 </tr>
