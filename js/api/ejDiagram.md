@@ -14050,7 +14050,7 @@ diagram.clear();
 
 
 
-Clear the selection of the current element.
+Clear the current selection in diagram
 
 
 
@@ -14065,7 +14065,8 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.clearSelection(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
@@ -17079,7 +17080,7 @@ rotationChange:function (args)  {}
 
 
 
-Triggers when the scroll bar is dragged/moved.
+Triggers when the diagram is zoomed or panned
 
 <table class="params">
 <thead>
@@ -17108,13 +17109,13 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 newValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Parameter returns the new Horizontal and vertical offset values.</td>
+<td class="description last">Parameter returns the new zoom value, horizontal and vertical scroll offsets.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 oldValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the previous Horizontal and vertical offset values.</td>
+<td class="description last">parameter returns the previous zoom value, horizontal and vertical scroll offsets.</td>
 </tr>
 </tbody>
 </table>
@@ -17131,10 +17132,11 @@ Example
 
 
 {% highlight html %}
-//  ScrollChange  event for diagram
+//  ScrollChange  event
 $("#diagramcontent").ejDiagram({
-ScrollChange :function (args)  {}
-        });{% endhighlight %}
+scrollChange :function (args)  {
+} });
+{% endhighlight %}
 
 
 
