@@ -13540,76 +13540,6 @@ $("#diagramContent").ejDiagram({zoomFactor: 1});
 ## Methods
 
 
-
-
-
-
-
-
-### activateTool<span class="signature">(toolName, singleAction)</span>
-{:#methods:activatetool}
-
-
-
-
-
-
-
-
-To activate the tool specified by toolName
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-toolName{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">name of the tool to be activated</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-singleAction{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">default value set to true tool action to be performed only once</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-<div id="diagramcontent"></div>
-<script>
-var diagram=$("#diagramcontent").ejDiagram("instance");
-diagram.activateTool("panTool");
-</script>{% endhighlight %}
-
-
-{% highlight html %}
-<div id="diagramcontent"></div>
-<script>
-var diagram=$("#diagramcontent").ejDiagram("instance");                 
-diagram.activateTool("orthogonalTool",false);
-</script>{% endhighlight %}
-
-
-
-
-
-
-
 ### add<span class="signature">(node)</span>
 {:#methods:add}
 
@@ -13620,7 +13550,7 @@ diagram.activateTool("orthogonalTool",false);
 
 
 
-Add the specified node/connector to diagram
+Add nodes and connectors to diagram at runtime
 
 <table class="params">
 <thead>
@@ -13635,7 +13565,7 @@ Add the specified node/connector to diagram
 <td class="name">{% highlight html %}
 node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass node/connector to be added</td>
+<td class="description last">JSON to add a node/connector</td>
 </tr>
 </tbody>
 </table>
@@ -13648,31 +13578,31 @@ Example
 
 
 {% highlight html %}
-<div id="diagramcontent"></div>
-<script>
-var diagram=$("#diagramcontent").ejDiagram("instance");
-var node = [];
-node=[{ name: "node", width: 175, height: 60, offsetX: 400, offsetY: 60, type: "Rectangle"];
-diagram.add(node);
-</script>{% endhighlight %}
+
+    <div id="diagramcontent"></div>
+    <script>
+        var diagram = $("#diagramcontent").ejDiagram("instance");
+        //add a single node to diagram
+        var BasicShapes = ej.datavisualization.Diagram.BasicShapes;
+        var node = { name: "rectangle1", width: 100, height: 100, offsetX: 100, offsetY: 100, type: "node", shape: BasicShapes.Rectangle };
+        diagram.add(node);
+
+        // add multiple nodes to diagram
+        var nodes = [
+        { name: "rectangle2", width: 100, height: 100, offsetX: 200, offsetY: 100, type: "node", shape: BasicShapes.Rectangle },
+        { name: "ellipse1", width: 100, height: 100, offsetX: 300, offsetY: 100, type: "node", shape: BasicShapes.Ellipse },
+        ]
+        diagram.add(nodes);
+
+    </script>
+
+{% endhighlight %}
 
 
+### addLabel<span class="signature">(nodeName, label)</span>
+{:#methods:addLabel}
 
-
-
-
-
-### addPhase<span class="signature">(name, options)</span>
-{:#methods:addphase}
-
-
-
-
-
-
-
-
-Add a phase to the group specified by name
+Add a label to a node at runtime
 
 <table class="params">
 <thead>
@@ -13687,7 +13617,50 @@ Add a phase to the group specified by name
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">of the group to add the phase</td>
+<td class="description last">of the node to add a label</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+label{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">to be added to the node specified by name</td>
+</tr>
+</tbody>
+</table>
+
+Example
+{:.example}
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+var node=diagram.selectionList[0];
+diagram.addLabel(node.name, {fontColor:"red", text:"newLabel"});
+</script>
+
+{% endhighlight %}
+
+
+
+### addPhase<span class="signature">(name, options)</span>
+{:#methods:addphase}
+
+Add a phase to a swimlane at runtime
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">of the swimlane to add the phase</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -13711,7 +13684,8 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance"); 
 diagram.addPhase("swimlane", { name: "CustomPhase", offset: 600, label: { text: "CustomPhase" } });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
@@ -13729,7 +13703,7 @@ diagram.addPhase("swimlane", { name: "CustomPhase", offset: 600, label: { text: 
 
 
 
-Add the collection of ports to the node specified by name
+Add a collection of ports to the node specified by name
 
 <table class="params">
 <thead>
@@ -13744,13 +13718,13 @@ Add the collection of ports to the node specified by name
 <td class="name">{% highlight html %}
 name{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">to identify the object from the model</td>
+<td class="description last">to identify the node from the model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 ports{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description last">collection of ports to be added to the node</td>
+<td class="description last">collection of ports to be added to the specified node</td>
 </tr>
 </tbody>
 </table>
@@ -13769,7 +13743,9 @@ Example
 var diagram = $("#diagramcontent").ejDiagram("instance");
 var port = [{ offset: { x: 0, y: 0.5 }, name: "aport", fillColor: "yellow"}, { offset: { x: 0.5, y: 0.5 }, name: "bport", fillColor: "yellow",  }];
 diagram.addPorts("Rect1", port);
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -13781,13 +13757,7 @@ diagram.addPorts("Rect1", port);
 {:#methods:addselection}
 
 
-
-
-
-
-
-
-Select the node specified in the argument
+Add the specified node to selection list
 
 <table class="params">
 <thead>
@@ -13802,7 +13772,7 @@ Select the node specified in the argument
 <td class="name">{% highlight html %}
 node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass target node to be selected</td>
+<td class="description last">pass the node to be selected</td>
 </tr>
 </tbody>
 </table>
@@ -13820,7 +13790,9 @@ Example
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node=diagram.model.nodes[0];
 diagram.addSelection(node);
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -13853,7 +13825,7 @@ Align selected objects based on reference object and direction
 <td class="name">{% highlight html %}
 direction{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">To specify the driection for alignment ("left","right",top","bottom")</td>
+<td class="description last">To specify the direction towards which the selected objects are to be aligned("left","right",top","bottom")</td>
 </tr>
 </tbody>
 </table>
@@ -13903,7 +13875,7 @@ To bring the specified portion of the diagram content to the diagram viewport
 <td class="name">{% highlight html %}
 bounds{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass bounds value (x,y,height,width)</td>
+<td class="description last">rectangular region that is to be brought into diagram viewport</td>
 </tr>
 </tbody>
 </table>
@@ -13953,7 +13925,7 @@ To bring the specified portion of the diagram content to center of the diagram v
 <td class="name">{% highlight html %}
 rect{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass bounds value (x,y,height,width)</td>
+<td class="description last">rectangular region that is to be brought to the center of diagram viewport</td>
 </tr>
 </tbody>
 </table>
@@ -13988,7 +13960,7 @@ diagram.bringToCenter(ej.datavisualization.Diagram.Rectangle(700, 500, 80, 80));
 
 
 
-Move the selected object over all other intersected objects
+Visually move the selected object over all other intersected objects
 
 
 
@@ -14040,25 +14012,14 @@ diagram.clear();
 
 
 
+
 ### clearSelection<span class="signature">()</span>
 {:#methods:clearSelection}
 
-
-
-
-
-
-
-
-Clear the current selection in diagram
-
-
-
-
+Remove the current selection in diagram
 
 Example
 {:.example}
-
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -14066,8 +14027,11 @@ Example
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.clearSelection(); 
 </script>
-{% endhighlight %}
 
+
+
+
+{% endhighlight %}
 
 
 
@@ -14081,7 +14045,7 @@ diagram.clearSelection();
 
 
 
-Copy the selected object to internal clipboard
+Copy the selected object to internal clipboard and get the copied object
 
 
 
@@ -14095,8 +14059,10 @@ Example
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
-diagram.copy(); 
-</script>{% endhighlight %}
+//Save the copied object
+var obj = diagram.copy(); 
+</script>
+{% endhighlight %}
 
 
 
@@ -14129,55 +14095,14 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.cut(); 
-</script>{% endhighlight %}
+</script>
 
-
-
-
-
-
-
-### deactivateTool<span class="signature">()</span>
-{:#methods:deactivatetool}
-
-
-
-
-
-
-
-
-Deactivate the current activated tool
-
-
-
-
-
-Example
-{:.example}
-
-
-{% highlight html %}
-<div id="diagramcontent"></div>
-<script>
-var diagram=$("#diagramcontent").ejDiagram("instance");
-diagram.deactivateTool();
-</script>{% endhighlight %}
-
-
-
-
+{% endhighlight %}
 
 
 
 ### exportDiagram<span class="signature">(options)</span>
 {:#methods:exportdiagram}
-
-
-
-
-
-
 
 
 Export the diagram as downloadable files or as data
@@ -14215,25 +14140,25 @@ fileName{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 format{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">format of the exported file/data See <a href="global.html#FileFormats">FileFormats</a></td>
+<td class="description last">format of the exported file/data See <a href="global.html#fileformats">FileFormats</a></td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 mode{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">to set whether to export diagram as a file or as raw data See <a href="global.html#ExportModes">ExportModes</a></td>
+<td class="description last">to set whether to export diagram as a file or as raw data See <a href="global.html#exportmodes">ExportModes</a></td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 region{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">to set the region of the diagram to be exported See <a href="global.html#Region">Region</a></td>
+<td class="description last">to set the region of the diagram to be exported See <a href="global.html#region">Region</a></td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 bounds{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to set the custom bounds of the diagram to be exported</td>
+<td class="description last">to set the custom bounds that is to be exported</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -14259,25 +14184,71 @@ Example
  
 <div id="diagramcontent"></div>
 <script>
-//To export the positive region of diagram as an image of JPEG format
-var diagram=$("#diagramcontent").ejDiagram("instance");
-var options = { mode: "download", region: "pageSettings", format: "jpg",
-             bounds:{x:0,y:0}, margin:{left:30}};
+//Exports the whole diagram content as an image of JPEG format
+diagram.exportDiagram();
+var options = {
+//name of the file to be downloaded
+fileName: "diagram",
+//Specifies whether to export as files/data
+mode: "download",
+//Format of the exported file
+format: "jpg",
+// Define the custom bounds that has to be exported
+bounds: { x: 1000, y: 1000, width: 500, height: 500 },
+};
 diagram.exportDiagram(options);
-</script>{% endhighlight %}
+
+</script>
+
+{% endhighlight %}
+
+
+
+### findNode<span class="signature">(nodeName)</span>
+
+{:#methods:findNode}
+
+Find a node/connector by its name
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">name of the node/connector that is to be found</td>
+</tr>
+</tbody>
+</table>
+
+Example
+{:.example}
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+var node = diagram.findNode("nodeName");
+</script>
 
 
 
 
+
+{% endhighlight %}
 
 
 
 ### fitToPage<span class="signature">(mode, region, margin)</span>
 {:#methods:fittopage}
-
-
-
-
 
 
 
@@ -14297,13 +14268,13 @@ Fit the diagram content into diagram viewport
 <td class="name">{% highlight html %}
 mode{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to set the mode of fit to command. See <a href="global.html#FitMode">FitMode</a></td>
+<td class="description last">to set the mode of fit to command. See <a href="global.html#fitmode">FitMode</a></td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 region{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to set whether the region to be fit will be based on diagram elements or page settings <a href="global.html#Region">Region</a></td>
+<td class="description last">to set whether the region to be fit will be based on diagram elements or page settings <a href="global.html#region">Region</a></td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -14340,11 +14311,6 @@ diagram.fitToPage(mode,region,margin);
 
 
 
-
-
-
-
-
 Group the selected nodes and connectors
 
 
@@ -14360,11 +14326,61 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.group(); 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
+
+
+
+### insertLabel<span class="signature">(name, label, index)</span>
+{:#methods:insertLabel}
+
+Insert a label into a node's label collection at runtime
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+name{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">of the node to add a label</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+label{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">to be added to the node specified by name</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+index{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last"> to insert the label into the node</td>
+</tr>
+</tbody>
+</table>
+
+Example
+{:.example}
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+var node=diagram.selectionList[0];
+diagram.insertLabel(node.name, {fontColor:"red", text:"newLabel"},0);
+</script>
 
 
 
 
+{% endhighlight %}
 
 
 
@@ -14375,26 +14391,7 @@ diagram.group();
 
 
 
-
-
-
 Refresh the diagram with the specified layout
-
-<table class="params">
-<thead>
-<tr>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last"></td>
-</tr>
-</tbody>
-</table>
-
 
 
 
@@ -14420,12 +14417,7 @@ diagram.layout();
 
 
 
-
-
-
-
-
-Load the diagram .
+Load the diagram 
 
 <table class="params">
 <thead>
@@ -14440,7 +14432,7 @@ Load the diagram .
 <td class="name">{% highlight html %}
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last"></td>
+<td class="description last">JSON data that is to be loaded as diagram</td>
 </tr>
 </tbody>
 </table>
@@ -14475,7 +14467,7 @@ diagram.load(data);
 
 
 
-Increase the Z-index value of selected object by 1
+Visually move the selected object over its closest intersected object
 
 
 
@@ -14508,7 +14500,7 @@ diagram.moveForward();
 
 
 
-Executes nudge command to move selected node/connector by one pixel/specified pixes
+Move the selected objects by either one pixel or by the pixels specified through argument
 
 <table class="params">
 <thead>
@@ -14554,7 +14546,7 @@ diagram.nudge("direction", 5);
 
 
 
-### paste<span class="signature">()</span>
+### paste<span class="signature">(object, rename)</span>
 {:#methods:paste}
 
 
@@ -14566,7 +14558,29 @@ diagram.nudge("direction", 5);
 
 Paste the selected object from internal clipboard to diagram
 
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+object{% endhighlight %}</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description last">object to be pasted</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+rename{% endhighlight %}</td>
+<td class="type"><span class="param-type">Boolean</span></td>
+<td class="description last">to define whether the specified object is to be renamed or not</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -14578,8 +14592,14 @@ Example
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
+//Paste the object from internal clipboard to diagram
 diagram.paste(); 
-</script>{% endhighlight %}
+
+//Add the specific object to diagram
+diagram.paste(obj);
+</script>
+
+{% endhighlight %}
 
 
 
@@ -14597,7 +14617,7 @@ diagram.paste();
 
 
 
-Print the diagram as image .
+Print the diagram as image
 
 
 
@@ -14613,7 +14633,9 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.print();
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -14631,7 +14653,7 @@ diagram.print();
 
 
 
-Restore the last action that was performed
+Restore the last action that was reverted
 
 
 
@@ -14646,11 +14668,32 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.redo(); 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
+
+
+
+### refresh<span class="signature">()</span>
+{:#methods:refresh}
+
+Refresh diagram at runtime
+
+Example
+{:.example}
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+diagram.refresh(); 
+</script>
 
 
 
 
+
+{% endhighlight %}
 
 
 
@@ -14659,12 +14702,7 @@ diagram.redo();
 
 
 
-
-
-
-
-
-Remove the either given node/connector or the selected element from diagram
+Remove either the given node/connector or the selected element from diagram
 
 <table class="params">
 <thead>
@@ -14679,7 +14717,7 @@ Remove the either given node/connector or the selected element from diagram
 <td class="name">{% highlight html %}
 node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass node/connector to be removed</td>
+<td class="description last"> node/connector to be removed</td>
 </tr>
 </tbody>
 </table>
@@ -14696,11 +14734,52 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.remove(); 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
 
+### removeSelection<span class="signature">(node)</span>
+{:#methods:removeSelection}
+
+Remove a particular object from selection list
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+node{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last"> node/connector to be removed from selection list</td>
+</tr>
+</tbody>
+</table>
+
+Example
+{:.example}
+
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+var node=diagram.selectionList[0];
+diagram.removeSelection(node);
+</script>
+
+
+
+
+{% endhighlight %}
 
 
 
@@ -14709,12 +14788,7 @@ diagram.remove();
 
 
 
-
-
-
-
-
-Update the height of the objects in the selection list to the height of first object in selection list
+Scale the selected objects to the height of the first selected object
 
 
 
@@ -14748,7 +14822,7 @@ diagram.sameHeight();
 
 
 
-Update the size of the objects in the selection list to the size of first object in selction list
+Scale the selected objects to the size of the first selected object
 
 
 
@@ -14782,7 +14856,7 @@ diagram.sameSize();
 
 
 
-Update the width of the objects in the selection list to the width of first object in selection list
+Scale the selected objects to the width of the first selected object
 
 
 
@@ -14816,7 +14890,7 @@ diagram.sameWidth();
 
 
 
-Save the diagram .
+Save the diagram as serialized JSON
 
 <table class="params">
 <thead>
@@ -14844,7 +14918,7 @@ Example
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
-diagram.save();
+var savedDiagram = diagram.save();
 </script>{% endhighlight %}
 
 
@@ -14855,10 +14929,6 @@ diagram.save();
 
 ### scrollToNode<span class="signature">(node)</span>
 {:#methods:scrolltonode}
-
-
-
-
 
 
 
@@ -14878,7 +14948,7 @@ Bring the node into view
 <td class="name">{% highlight html %}
 node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass node/connector to be brought into view</td>
+<td class="description last">the node/connector to be brought into view</td>
 </tr>
 </tbody>
 </table>
@@ -14947,7 +15017,7 @@ diagram.selectAll();
 
 
 
-Decrease the Z-index value of selected object by 1
+Visually move the selected object behind its closest intersected object
 
 
 
@@ -14980,7 +15050,7 @@ diagram.sendBackward();
 
 
 
-Move the selected object behind all other intersected objects
+Visually move the selected object behind all other intersected objects
 
 
 
@@ -15013,7 +15083,7 @@ diagram.sendToBack();
 
 
 
-Update horizontal space between the objects as equal and within selection boundary
+Update horizontal space between the selected objects as equal and within the selection boundary
 
 
 
@@ -15046,7 +15116,7 @@ diagram.spaceAcross();
 
 
 
-Update vertical space between the objects as equal and within the selection boundary
+Update vertical space between the selected objects as equal and within the selection boundary
 
 
 
@@ -15080,7 +15150,7 @@ diagram.spaceDown();
 
 
 
-Start the editing of the specified label of the given node
+Start the editing of the specified label
 
 <table class="params">
 <thead>
@@ -15095,13 +15165,13 @@ Start the editing of the specified label of the given node
 <td class="name">{% highlight html %}
 node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass the node/connector to which label to be edited</td>
+<td class="description last">node/connector that contains the label to be edited</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 label{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass the label to be edited</td>
+<td class="description last">the label to be edited</td>
 </tr>
 </tbody>
 </table>
@@ -15203,7 +15273,7 @@ diagram.ungroup();
 
 
 
-Update Diagram with its specific properties
+Update diagram at runtime
 
 <table class="params">
 <thead>
@@ -15216,15 +15286,9 @@ Update Diagram with its specific properties
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-name{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">to identify the diagram from the model</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">to specify which properties of the diagram to be updated</td>
+<td class="description last">to specify the properties of diagram to be updated</td>
 </tr>
 </tbody>
 </table>
@@ -15240,9 +15304,11 @@ Example
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
-var value = ej.datavisualization.Diagram.DiagramConstraints.Default;
-diagram.updateDiagram(diagram.name, { constraints: value });      
-</script>{% endhighlight %}
+var tool = ej.datavisualization.Diagram.Tool.ZoomPan;
+//update the tool
+diagram.update({ tool: tool });
+
+{% endhighlight %}
 
 
 
@@ -15281,7 +15347,7 @@ name{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">to specify which property of the Connector to be update</td>
+<td class="description last">to specify the connector properties that have to be updated</td>
 </tr>
 </tbody>
 </table>
@@ -15297,8 +15363,7 @@ Example
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
-var value = ej.datavisualization.Diagram.ConnectorConstraints.Default;
-diagram.updateConnector(connector.name, { constraints: value });      
+diagram.updateConnector("connector1", { lineColor: "red", lineWidth: 3 });   
 </script>{% endhighlight %}
 
 
@@ -15332,19 +15397,19 @@ Update the given label with its specific properties
 <td class="name">{% highlight html %}
 nodeName{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">pass the name of node/connector</td>
+<td class="description last">the name of node/connector which contains the label to be updated</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 label{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass the label to be modified</td>
+<td class="description last">the label to be modified</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 obj{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass the new porperties of the label</td>
+<td class="description last">the new porperties of the label</td>
 </tr>
 </tbody>
 </table>
@@ -15382,7 +15447,7 @@ diagram.updateLabel(node.name,node.labels[0],label);
 
 
 
-Update Node with its specific properties
+Update Node with its modified properties at runtime
 
 <table class="params">
 <thead>
@@ -15403,7 +15468,7 @@ name{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">to specify which property of the Node to be update</td>
+<td class="description last">to specify the properties of node that have to be updated</td>
 </tr>
 </tbody>
 </table>
@@ -15419,13 +15484,63 @@ Example
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
-var value = ej.datavisualization.Diagram.NodeConstraints.Default &amp; ~ej.datavisualization.Diagram.NodeConstraints.Connect;
-diagram.updateNode(node.name, { constraints: value });
-</script>{% endhighlight %}
+diagram.updateNode("node1", { fillColor: "red", borderWidth: "3" });
+</script>
+{% endhighlight %}
+
+
+
+### updatePort<span class="signature">(nodeName, port, options)</span>
+{:#methods:updatePort}
+
+Update a port with its modified properties at runtime
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+nodeName{% endhighlight %}</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description last">the name of node which contains the port to be updated</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+label{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">the port to be updated</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+obj{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">the new porperties of the port</td>
+</tr>
+</tbody>
+</table>
+
+Example
+{:.example}
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+var node=diagram.selectionList[0];
+var port ={fillColor:"red", visibility:ej.datavisualization.Diagram.PortVisibility.Visible}
+diagram.updatePort(node.name,node.ports[0], port);
+</script>
 
 
 
 
+
+{% endhighlight %}
 
 
 
@@ -15489,7 +15604,7 @@ diagram.updateSelectedObject(name);
 
 
 
-Update the selection of target node/connector
+Update the selection at runtime
 
 <table class="params">
 <thead>
@@ -15504,7 +15619,7 @@ Update the selection of target node/connector
 <td class="name">{% highlight html %}
 isDragging{% endhighlight %}</td>
 <td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">pass true/false whether to drag or not</td>
+<td class="description last">pass true/false whether the selected object is draggable or not</td>
 </tr>
 </tbody>
 </table>
@@ -15554,7 +15669,7 @@ Update userhandles with respect to the given node
 <td class="name">{% highlight html %}
 node{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass node/connector</td>
+<td class="description last">node/connector with respect to which, the user handles have to be updated</td>
 </tr>
 </tbody>
 </table>
@@ -15589,8 +15704,7 @@ diagram.updateUSerHandles(node);
 
 
 
-
-To update viewport when window resize
+Update the viewport at runtime
 
 
 
@@ -15623,7 +15737,7 @@ diagram.updateViewPort();
 
 
 
-To Upgrade the diagram from old version .
+Upgrade the diagram from old version
 
 <table class="params">
 <thead>
@@ -15689,7 +15803,7 @@ Used to zoomIn/zoomOut diagram
 <td class="name">{% highlight html %}
 zoom{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">pass zoom commands of the diagram</td>
+<td class="description last">options to zoom the diagram(zoom factor, zoomin/zoomout)</td>
 </tr>
 </tbody>
 </table>
@@ -15710,7 +15824,6 @@ zoom.zoomFactor = .1;
 zoom.zoomCommand = ej.datavisualization.Diagram.ZoomCommand.ZoomIn;
 diagram.zoomTo(zoom);
 </script>{% endhighlight %}
-
 
 
 
