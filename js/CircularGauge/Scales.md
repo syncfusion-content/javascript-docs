@@ -53,7 +53,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![](/js/CircularGauge/Scales_images/Scales_img1.png" Caption=")
+![](/js/CircularGauge/Scales_images/Scales_img1.png)
 
 ## Scale Cutomization
 
@@ -96,7 +96,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![](/js/CircularGauge/Scales_images/Scales_img2.png" Caption=")
+![](/js/CircularGauge/Scales_images/Scales_img2.png)
 
 **Pointer Cap**
 
@@ -135,7 +135,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![](/js/CircularGauge/Scales_images/Scales_img3.png" Caption=")
+![](/js/CircularGauge/Scales_images/Scales_img3.png)
 
 **Appearance**
 
@@ -186,7 +186,7 @@ Execute the above code to render the following output.
 
 Execute the above code to render the following output.
 
-![](/js/CircularGauge/Scales_images/Scales_img4.png" Caption=")
+![](/js/CircularGauge/Scales_images/Scales_img4.png)
 
 **Enable/Disable properties**
 
@@ -245,5 +245,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![](/js/CircularGauge/Scales_images/Scales_img5.png" Caption=")
+![](/js/CircularGauge/Scales_images/Scales_img5.png)
 

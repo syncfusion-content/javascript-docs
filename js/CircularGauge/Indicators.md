@@ -51,7 +51,7 @@ Indicators collection is directly added to the scale object. Refer the following
 
 Execute the above code to render the following output.
 
-![](/js/CircularGauge/Indicators_images/Indicators_img1.png" Caption=")
+![](/js/CircularGauge/Indicators_images/Indicators_img1.png)
 
 ## Basic Customization
 
@@ -105,7 +105,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![](/js/CircularGauge/Indicators_images/Indicators_img2.png" Caption=")
+![](/js/CircularGauge/Indicators_images/Indicators_img2.png)
 
 ## State Ranges
 
@@ -174,7 +174,7 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![](/js/CircularGauge/Indicators_images/Indicators_img3.png" Caption=")
+![](/js/CircularGauge/Indicators_images/Indicators_img3.png)
 
 ## Multiple Indicators
 
@@ -260,5 +260,5 @@ $(function () {
 
 Execute the above code to render the following output.
 
-![](/js/CircularGauge/Indicators_images/Indicators_img4.png" Caption=")
+![](/js/CircularGauge/Indicators_images/Indicators_img4.png)
 
