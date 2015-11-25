@@ -11,7 +11,6 @@ documentation: ug
 
 **Title** is the area on top of the Chart control that displays the text explaining the **OlapChart** data.[Title](/js/api/ejChart#members:title) property allows you to set the default title for a Chart. 
 
-
 {% highlight js %}
 
 $("#OlapChart1").ejOlapChart({

@@ -64,48 +64,87 @@ The following code snippet shows how to enable the context menu settings in Sche
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			contextMenuSettings: {
-				enable: true,
-				menuItems: {
-					appointment: [
-						{ id: "open", text: "Open Appointment" },
-						{ id: "delete", text: "Delete Appointment" }
-					],
-					cells: [
-						{ id: "new", text: "New Appointment" },
-						{ id: "recurrence", text: "New Recurring Appointment" },
-						{ id: "today", text: "Today" },
-						{ id: "gotodate", text: "Go to date" },
-						{ id: "settings", text: "Settings" },
-						{ id: "view", text: "View", parentId: "settings" },
-						{ id: "timemode", text: "TimeMode", parentId: "settings" },
-						{ id: "view_Day", text: "Day", parentId: "view" },
-						{ id: "view_Week", text: "Week", parentId: "view" },
-						{ id: "view_Workweek", text: "Workweek", parentId: "view" },
-						{ id: "view_Month", text: "Month", parentId: "view" },
-						{ id: "timemode_Hour12", text: "12 Hours", parentId: "timemode" },
-						{ id: "timemode_Hour24", text: "24 Hours", parentId: "timemode" },
-						{ id: "businesshours", text: "Business Hours", parentId: "settings" }
-					]
-				}
-			},
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Research on Sky Miracles",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30)
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        contextMenuSettings: {
+            enable: true,
+            menuItems: {
+                appointment: [{
+                    id: "open",
+                    text: "Open Appointment"
+                }, {
+                    id: "delete",
+                    text: "Delete Appointment"
+                }],
+                cells: [{
+                    id: "new",
+                    text: "New Appointment"
+                }, {
+                    id: "recurrence",
+                    text: "New Recurring Appointment"
+                }, {
+                    id: "today",
+                    text: "Today"
+                }, {
+                    id: "gotodate",
+                    text: "Go to date"
+                }, {
+                    id: "settings",
+                    text: "Settings"
+                }, {
+                    id: "view",
+                    text: "View",
+                    parentId: "settings"
+                }, {
+                    id: "timemode",
+                    text: "TimeMode",
+                    parentId: "settings"
+                }, {
+                    id: "view_Day",
+                    text: "Day",
+                    parentId: "view"
+                }, {
+                    id: "view_Week",
+                    text: "Week",
+                    parentId: "view"
+                }, {
+                    id: "view_Workweek",
+                    text: "Workweek",
+                    parentId: "view"
+                }, {
+                    id: "view_Month",
+                    text: "Month",
+                    parentId: "view"
+                }, {
+                    id: "timemode_Hour12",
+                    text: "12 Hours",
+                    parentId: "timemode"
+                }, {
+                    id: "timemode_Hour24",
+                    text: "24 Hours",
+                    parentId: "timemode"
+                }, {
+                    id: "businesshours",
+                    text: "Business Hours",
+                    parentId: "settings"
+                }]
+            }
+        },
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        }
+    });
+});
 </script>
 
 {% endhighlight %}
@@ -122,34 +161,42 @@ The following code example depicts how **to add the custom menu items** to the a
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			contextMenuSettings: {
-				enable: true,
-				menuItems: {
-					appointment: [
-						{ id: "open", text: "Open Appointment" },
-						{ id: "delete", text: "Delete Appointment" }
-						{ id: "option1", text: "User Option 1" }],
-					cells: [
-						{ id: "celloption1", text: "Custom Option 1" }]
-				}
-			},
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Research on Sky Miracles",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30)
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        contextMenuSettings: {
+            enable: true,
+            menuItems: {
+                appointment: [{
+                    id: "open",
+                    text: "Open Appointment"
+                }, {
+                    id: "delete",
+                    text: "Delete Appointment"
+                } {
+                    id: "option1",
+                    text: "User Option 1"
+                }],
+                cells: [{
+                    id: "celloption1",
+                    text: "Custom Option 1"
+                }]
+            }
+        },
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        }
+    });
+});
 </script>
 
 {% endhighlight %}
@@ -162,37 +209,43 @@ To define specific actions for a click made on the custom menu items, the client
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			contextMenuSettings: {
-				enable: true,
-				menuItems: {
-					appointment: [
-						{ id: "open", text: "Open Appointment" },
-						{ id: "delete", text: "Delete Appointment" },
-						{ id: "option1", text: "User Option 1" }]
-				}
-			},
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Research on Sky Miracles",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30)
-				}]
-			},
-			menuItemClick: function (args) {
-				//args.events contains information of the clicked menu item.
-				if (args.events.ID == "option1")
-					alert("Custom menu clicked");
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        contextMenuSettings: {
+            enable: true,
+            menuItems: {
+                appointment: [{
+                    id: "open",
+                    text: "Open Appointment"
+                }, {
+                    id: "delete",
+                    text: "Delete Appointment"
+                }, {
+                    id: "option1",
+                    text: "User Option 1"
+                }]
+            }
+        },
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        },
+        menuItemClick: function(args) {
+            //args.events contains information of the clicked menu item.
+            if (args.events.ID == "option1")
+                alert("Custom menu clicked");
+        }
+    });
+});
 </script>
 
 {% endhighlight %}
@@ -202,37 +255,43 @@ Also, it is possible to predict the target on which the right click is made eith
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			contextMenuSettings: {
-				enable: true,
-				menuItems: {
-					appointment: [
-						{ id: "open", text: "Open Appointment" },
-						{ id: "delete", text: "Delete Appointment" },
-						{ id: "option1", text: "User Option 1" }]
-				}
-			},
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Research on Sky Miracles",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30)
-				}]
-			},
-			beforeContextMenuOpen: function (args) {
-				//args.target –target information to depict either cell/appointment
-				if ($(args.target.target).hasClass("e-workcells,e-monthcells"))
-					args.cancel = true;
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        contextMenuSettings: {
+            enable: true,
+            menuItems: {
+                appointment: [{
+                    id: "open",
+                    text: "Open Appointment"
+                }, {
+                    id: "delete",
+                    text: "Delete Appointment"
+                }, {
+                    id: "option1",
+                    text: "User Option 1"
+                }]
+            }
+        },
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        },
+        beforeContextMenuOpen: function(args) {
+            //args.target –target information to depict either cell/appointment
+            if ($(args.target.target).hasClass("e-workcells,e-monthcells"))
+                args.cancel = true;
+        }
+    });
+});
 </script>
 
 {% endhighlight %}
@@ -243,33 +302,41 @@ To include the default categorize options within the context menu, it is necessa
 
 {% highlight html %}
 
-<!-- HTML element will initialize as a ejSchedule -->
+<!--Container for ejScheduler widget-->
 <div id="Schedule1"></div>
 
 <script type="text/javascript">
-	$(function () {
-		$("#Schedule1").ejSchedule({
-			currentDate: new Date(2015, 11, 2),
-			contextMenuSettings: {
-				enable: true,
-				menuItems: {
-					appointment: [
-						{ id: "open", text: "Open Appointment" },
-						{ id: "delete", text: "Delete Appointment" },
-						{ id: "categorize", text: "Categorize" }],
-				}
-			},
-			categorizeSettings: { enable: true },
-			appointmentSettings: {
-				dataSource: [{
-					Id: 100,
-					Subject: "Research on Sky Miracles",
-					StartTime: new Date(2015, 11, 2, 9, 00),
-					EndTime: new Date(2015, 11, 2, 10, 30)
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#Schedule1").ejSchedule({
+        currentDate: new Date(2015, 11, 2),
+        contextMenuSettings: {
+            enable: true,
+            menuItems: {
+                appointment: [{
+                    id: "open",
+                    text: "Open Appointment"
+                }, {
+                    id: "delete",
+                    text: "Delete Appointment"
+                }, {
+                    id: "categorize",
+                    text: "Categorize"
+                }],
+            }
+        },
+        categorizeSettings: {
+            enable: true
+        },
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 11, 2, 9, 00),
+                EndTime: new Date(2015, 11, 2, 10, 30)
+            }]
+        }
+    });
+});
 </script>
 
 {% endhighlight %}

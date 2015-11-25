@@ -89,47 +89,65 @@ Binds the recurrence Exception field which accepts the recurrence Exception date
 <div id="schedule"></div>
 
 <script>
-	$(function () {
-		$("#schedule").ejSchedule({
-			currentDate: new Date(2015, 11, 7),
-			showLocationField: true,
-			categorizeSettings: { enable: true },
-			prioritySettings: { enable: true },
-			group: { resources: [ "Owners"] },
-			resources: [{
-				field: "ownerId",
-				title: "Owner",
-				name: "Owners",
-				resourceSettings: { dataSource: [
-					{ text: "Nancy", id: 1, color: "#f8a398" },
-					{ text: "Steven", id: 3, color: "#56ca85" },
-					{ text: "Michael", id: 5, color: "#51a0ed" }],
-					text: "text", id: "id", color: "color"
-				}
-			}],
-			appointmentSettings: {
-				resourceFields: "ownerId",
-				dataSource: [{
-					Id: 1,
-					Subject: "Music Class",
-					StartTime: new Date("2015/11/7 06:00 AM"),
-					StartTimeZone: "UTC +05:30",
-					EndTime: new Date("2015/11/7 07:00 AM"),
-					EndTimeZone: "UTC +05:30",
-					Description: "Never Giveup on Obstacles",
-					location: "US",
-					AllDay: false,
-					Recurrence: true,
-					RecurrenceRule: "FREQ=WEEKLY;BYDAY=MO,TU;INTERVAL=1;COUNT=15",
-					Categorize: "1",
-					Priority: "medium",
-					ownerId: 3,
-					RecurrenceId: 1,
-					RecurrenceExDate: null
-				}]
-			}
-		});
-	});
+$(function() {
+    $("#schedule").ejSchedule({
+        currentDate: new Date(2015, 11, 7),
+        showLocationField: true,
+        categorizeSettings: {
+            enable: true
+        },
+        prioritySettings: {
+            enable: true
+        },
+        group: {
+            resources: ["Owners"]
+        },
+        resources: [{
+            field: "ownerId",
+            title: "Owner",
+            name: "Owners",
+            resourceSettings: {
+                dataSource: [{
+                    text: "Nancy",
+                    id: 1,
+                    color: "#f8a398"
+                }, {
+                    text: "Steven",
+                    id: 3,
+                    color: "#56ca85"
+                }, {
+                    text: "Michael",
+                    id: 5,
+                    color: "#51a0ed"
+                }],
+                text: "text",
+                id: "id",
+                color: "color"
+            }
+        }],
+        appointmentSettings: {
+            resourceFields: "ownerId",
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                StartTimeZone: "UTC +05:30",
+                EndTime: new Date("2015/11/7 07:00 AM"),
+                EndTimeZone: "UTC +05:30",
+                Description: "Never Giveup on Obstacles",
+                location: "US",
+                AllDay: false,
+                Recurrence: true,
+                RecurrenceRule: "FREQ=WEEKLY;BYDAY=MO,TU;INTERVAL=1;COUNT=15",
+                Categorize: "1",
+                Priority: "medium",
+                ownerId: 3,
+                RecurrenceId: 1,
+                RecurrenceExDate: null
+            }]
+        }
+    });
+});
 </script>
 
 {% endhighlight %}
@@ -147,25 +165,23 @@ To bind the Scheduler events data as array of JSON objects in JavaScript, refer 
 <div id="schedule"></div>
 
 <script>
-	$("#schedule").ejSchedule({
-		currentDate: new Date(2015, 11, 7),
-		appointmentSettings: {
-			//Array of JSON data configure in dataSource
-			dataSource: [
-				{
-					Id: 1,
-					Subject: "Music Class",
-					StartTime: new Date("2015/11/7 06:00 AM"),
-					EndTime: new Date("2015/11/7 07:00 AM")
-				},
-				{
-					Id: 2,
-					Subject: "School",
-					StartTime: new Date("2015/11/7 9:00 AM"),
-					EndTime: new Date("2015/11/7 02:30 PM")
-			}]
-		}
-	});
+$("#schedule").ejSchedule({
+    currentDate: new Date(2015, 11, 7),
+    appointmentSettings: {
+        //Array of JSON data configure in dataSource
+        dataSource: [{
+            Id: 1,
+            Subject: "Music Class",
+            StartTime: new Date("2015/11/7 06:00 AM"),
+            EndTime: new Date("2015/11/7 07:00 AM")
+        }, {
+            Id: 2,
+            Subject: "School",
+            StartTime: new Date("2015/11/7 9:00 AM"),
+            EndTime: new Date("2015/11/7 02:30 PM")
+        }]
+    }
+});	
 </script>
 
 {% endhighlight %}
@@ -180,24 +196,24 @@ The appointment data can be bound to the Scheduler through the [Odata](http://ww
 <div id="schedule"></div>
 
 <script>
-	$(function () {
-		var dataManager = ej.DataManager({
-			// referring data from remote service (url binding)
-			url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc/"
-		});
-		
-		// query to fetch the records from the specified table “Events”
-		var queryEvent = ej.Query().from("Events").take(10);
-		
-		$("#schedule").ejSchedule({
-			currentDate: new Date(2014, 4, 5),
-			appointmentSettings: {
-				// Configure the dataSource with dataManager object
-				dataSource: dataManager,
-				query: queryEvent
-			}
-		});
-	});
+$(function() {
+    var dataManager = ej.DataManager({
+        // referring data from remote service (url binding)
+        url: "http://mvc.syncfusion.com/OdataServices/Northwnd.svc/"
+    });
+
+    // query to fetch the records from the specified table “Events”
+    var queryEvent = ej.Query().from("Events").take(10);
+
+    $("#schedule").ejSchedule({
+        currentDate: new Date(2014, 4, 5),
+        appointmentSettings: {
+            // Configure the dataSource with dataManager object
+            dataSource: dataManager,
+            query: queryEvent
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -212,26 +228,26 @@ The OData v4 is an improved version of OData protocols and the DataManager can a
 <div id="schedule"></div>
 
 <script>
-	$(function () {
-		// get the appointments data from OData v4 service
-		var dataManager = ej.DataManager({
-			//OData v4 service 
-			url: "http://services.odata.org/V4/Northwind/Northwind.svc/Orders/",
-			adaptor: new ej.ODataV4Adaptor()
-		});
-		
-		$("#schedule").ejSchedule({
-			currentDate: new Date(1997, 2, 23),
-			appointmentSettings: {
-				// Configure the dataSource with dataManager object
-				dataSource: dataManager,
-				subject: "ShipName",
-				startTime: "OrderDate",
-				endTime: "RequiredDate",
-				description: "ShipAddress"
-			}
-		});
-	});
+$(function() {
+    // get the appointments data from OData v4 service
+    var dataManager = ej.DataManager({
+        //OData v4 service 
+        url: "http://services.odata.org/V4/Northwind/Northwind.svc/Orders/",
+        adaptor: new ej.ODataV4Adaptor()
+    });
+
+    $("#schedule").ejSchedule({
+        currentDate: new Date(1997, 2, 23),
+        appointmentSettings: {
+            // Configure the dataSource with dataManager object
+            dataSource: dataManager,
+            subject: "ShipName",
+            startTime: "OrderDate",
+            endTime: "RequiredDate",
+            description: "ShipAddress"
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -246,23 +262,22 @@ The Schedule appointment data can be bound through the Web API service and it is
 <div id="schedule"></div>
 
 <script>
-	$(function () {
-		var dataManager = ej.DataManager({
-			// get the required appointments from Web API service
-			url: "http://mvc.syncfusion.com/OdataServices/api/ScheduleData/",
-			// enable cross domain
-			crossDomain: true
-		});
-		
-		$("#schedule").ejSchedule({
-			currentDate: new Date(2014, 4, 5),
-			appointmentSettings: {
-				// Configure the dataSource with dataManager object
-				dataSource: dataManager
-			}
-		});
-	});
+$(function() {
+    var dataManager = ej.DataManager({
+        // get the required appointments from Web API service
+        url: "http://mvc.syncfusion.com/OdataServices/api/ScheduleData/",
+        // enable cross domain
+        crossDomain: true
+    });
 
+    $("#schedule").ejSchedule({
+        currentDate: new Date(2014, 4, 5),
+        appointmentSettings: {
+            // Configure the dataSource with dataManager object
+            dataSource: dataManager
+        }
+    });
+});
 </script>
 
 {% endhighlight %}
@@ -277,25 +292,25 @@ The Schedule appointment data can retrieve data from ASP.Net Web methods. It can
 <div id="schedule"></div>
 
 <script>
-	$(function () {
-		// get the appointments data from Web method
-		var dataManager = ej.DataManager({
-			url: "WebService1.asmx/GetDatas",  // This will trigger to bind the appointments data to schedule control
-			batchUrl: "WebService1.asmx/Crud", // This will trigger while saving the appointment through detail window
-			insertUrl: "WebService1.asmx/add",  // This will trigger while saving the appointment through quick window
-			updateUrl: "WebService1.asmx/update", //This will trigger while saving the resize or drag and drop the appointment 
-			removeUrl: "WebService1.asmx/remove", // This will trigger to delete the single appointment
-			adaptor: new ej.WebMethodAdaptor()
-		});
-		
-		$("#schedule").ejSchedule({
-			currentDate: new Date(2014, 4, 5),
-			appointmentSettings: {
-				// Configure the dataSource with dataManager object
-				dataSource: dataManager
-			}
-		});
-	});
+$(function() {
+    // get the appointments data from Web method
+    var dataManager = ej.DataManager({
+        url: "WebService1.asmx/GetDatas", // This will trigger to bind the appointments data to schedule control
+        batchUrl: "WebService1.asmx/Crud", // This will trigger while saving the appointment through detail window
+        insertUrl: "WebService1.asmx/add", // This will trigger while saving the appointment through quick window
+        updateUrl: "WebService1.asmx/update", //This will trigger while saving the resize or drag and drop the appointment 
+        removeUrl: "WebService1.asmx/remove", // This will trigger to delete the single appointment
+        adaptor: new ej.WebMethodAdaptor()
+    });
+
+    $("#schedule").ejSchedule({
+        currentDate: new Date(2014, 4, 5),
+        appointmentSettings: {
+            // Configure the dataSource with dataManager object
+            dataSource: dataManager
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -310,25 +325,25 @@ The Schedule appointment data can retrieve data from MVC controller. This can be
 <div id="schedule"></div>
 
 <script>
-	$(function () {
-		// get the appointments data from Web method
-		var dataManager = ej.DataManager({
-			url: "Home/GetData",  // This will trigger to bind the appointments data to schedule control
-			batchUrl: "Home/Crud", // This will trigger while saving the appointment through detail window
-			insertUrl: "Home/add",  // This will trigger while saving the appointment through quick window
-			updateUrl: "Home/update", //This will trigger while saving the resize or drag and drop the appointment 
-			removeUrl: "Home/remove", // This will trigger to delete the single appointment
-			adaptor: new ej.UrlAdaptor()
-		});
-		
-		$("#schedule").ejSchedule({
-			currentDate: new Date(2014, 4, 5),
-			appointmentSettings: {
-				// Configure the dataSource with dataManager object
-				dataSource: dataManager
-			}
-		});
-	});
+$(function() {
+    // get the appointments data from Web method
+    var dataManager = ej.DataManager({
+        url: "Home/GetData", // This will trigger to bind the appointments data to schedule control
+        batchUrl: "Home/Crud", // This will trigger while saving the appointment through detail window
+        insertUrl: "Home/add", // This will trigger while saving the appointment through quick window
+        updateUrl: "Home/update", //This will trigger while saving the resize or drag and drop the appointment 
+        removeUrl: "Home/remove", // This will trigger to delete the single appointment
+        adaptor: new ej.UrlAdaptor()
+    });
+
+    $("#schedule").ejSchedule({
+        currentDate: new Date(2014, 4, 5),
+        appointmentSettings: {
+            // Configure the dataSource with dataManager object
+            dataSource: dataManager
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
@@ -345,23 +360,23 @@ The **enableLoadOnDemand** property is used to enable or disable the load on dem
 <div id="schedule"></div>
 
 <script>
-	$(function () {
-		var dataManager = ej.DataManager({
-			// get the required appointments from service
-			url: "http://mvc.syncfusion.com/OdataServices/api/ScheduleData/",
-			crossDomain: true
-		});
-		
-		$("#schedule").ejSchedule({
-			// Enable Load on demand
-			enableLoadOnDemand: true,
-			currentDate: new Date(2014, 4, 5),
-			appointmentSettings: {
-				// Configure the dataSource with dataManager object
-				dataSource: dataManager
-			}
-		});
-	});
+$(function() {
+    var dataManager = ej.DataManager({
+        // get the required appointments from service
+        url: "http://mvc.syncfusion.com/OdataServices/api/ScheduleData/",
+        crossDomain: true
+    });
+
+    $("#schedule").ejSchedule({
+        // Enable Load on demand
+        enableLoadOnDemand: true,
+        currentDate: new Date(2014, 4, 5),
+        appointmentSettings: {
+            // Configure the dataSource with dataManager object
+            dataSource: dataManager
+        }
+    });
+});	
 </script>
 
 {% endhighlight %}
