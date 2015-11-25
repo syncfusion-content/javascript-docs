@@ -63,7 +63,7 @@ You can create vertical stripline by adding the [`stripline`](../api/ejchart#mem
            primaryXAxis: {
                // ...
                 stripLine: [
-                     //Create horizontal Stripline using horizontal Axis
+                     //Create vertical Stripline using horizontal Axis
                        {
                          //Enable Stripline
                          visible: true,

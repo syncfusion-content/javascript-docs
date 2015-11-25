@@ -131,7 +131,7 @@ To split the chart area horizontally into a number of columns, use [`columnDefin
                 }, {
                     //  Split second column of the chart area
                     unit : 'percentage',                 
-                    columnHeight : 50,
+                    columnWidth : 50,
                 }],
 
                 axes: [{

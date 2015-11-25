@@ -35,6 +35,7 @@ By default, the legend is enabled in the chart. You can enable or disable it by 
 Legend visibility in chart
 {:.caption}
 
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/chartcustomization/legendposition) here to view the online demo sample for legend position.
 
 ## Legend title
 

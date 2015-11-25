@@ -463,7 +463,7 @@ To render a 100% Stacked Area Chart, set the [`type`](../api/ejchart.html#member
 100% Stacked Area Chart
 {:.caption}
 
-[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/stackedarea) here to view our 100% Stacked Area Chart online demo.
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/100%stackedarea) here to view our 100% Stacked Area Chart online demo.
 
 
 ## Column Chart
@@ -1315,6 +1315,8 @@ To create a Doughnut chart, you can specify the series [`type`](../api/ejchart.h
 Doughnut Chart
 {:.caption}
 
+[Click](http://js.syncfusion.com/demos/web/#!/azure/chart/doughnut) here to view the Doughnut Chart online demo sample.
+
 
 ### Change Doughnut inner radius
 
@@ -2004,12 +2006,7 @@ Polar chart is created by setting the series [`type`](../api/ejchart.html#member
             // ...     
             series: [{
                    //Set chart type to series
-                    type: 'hilo', 
-                    //Add datasource and set xName, high and low to hilo chart
-                    dataSource: chartData, 
-                    xName: "month", 
-                    high: "high",
-                    low: "low",   
+                    type: 'polar'
                }],               
             // ...
                         
