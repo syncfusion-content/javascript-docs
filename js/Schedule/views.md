@@ -1,12 +1,12 @@
 ---
 title: Schedule - Views
-description: How to display all views of Schedule
+description: View options available in Scheduler
 platform: js
 control: schedule
 documentation: ug
 keywords: day, week, workweek, month, timeline, horizontal, custom  
 ---
-## Views
+# Views
 
 The number of days and its associated appointments are usually grouped together in Scheduler to organize different views. The available view options in Scheduler are as follows,
 
@@ -16,591 +16,338 @@ The number of days and its associated appointments are usually grouped together 
 * Month
 * Custom View
 * Agenda
+* Timeline View
 
-Usually these view options are displayed as a toolbar in the date-header section of the Schedule control. The items within the views toolbar can be added/removed based on the value passed to the **[views](http://help.syncfusion.com/js/api/ejschedule#members:views "")** property. 
+Usually these view options are displayed as a toolbar in the date-header section of the Schedule control. The items within the views toolbar can be added/removed based on the value passed to the [views](/js/api/ejschedule#members:views) property. 
 
-By default, the Schedule control’s active view is **Week** view. Also, it is possible to change the active view of the Scheduler by setting **[currentView](http://help.syncfusion.com/js/api/ejschedule#members:currentview "")** option with the required view name as depicted below.
+By default, the Schedule control’s active view is **Week** view. Also, it is possible to change the active view of the Scheduler by setting [currentView](/js/api/ejschedule#members:currentview) option with the required view name as depicted below.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-//Required views display the control
-
-views: ["Day","WorkWeek"],
-
-// Set the Active view
-
-currentView: ej.Schedule.CurrentView.Workweek
-
-});
-
-})
-
+$(function() {
+    $("#schedule").ejSchedule({
+        //Required views display the control
+        views: ["Day", "WorkWeek"],
+        // Set the Active view
+        currentView: ej.Schedule.CurrentView.Workweek
+    });
+})	
 </script>
-
-
 
 {% endhighlight %}
 
-**Note**: `currentView` property accepts both the string and `ej.Schedule.CurrentView` enum value.
+N> **currentView** property accepts both the `string` and `ej.Schedule.CurrentView` enum value.
 
-### Day 
+## Day 
 
 It represents a single day Scheduler view (single date display) with all its related appointments.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-// Set the Active view
-
-currentView: ej.Schedule.CurrentView.Day,
-
-currentDate: new Date(2015, 11, 7),
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 06:00 AM"),
-
-EndTime: new Date("2015/11/7 07:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 9:00 AM"),
-
-EndTime: new Date("2015/11/7 02:30 PM")
-
-}]
-
-}
-
-});
-
-})
-
+$(function() {
+    $("#schedule").ejSchedule({
+        // Set the Active view
+        currentView: ej.Schedule.CurrentView.Day,
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        }
+    });
+});	
 </script>
-
-
 
 {% endhighlight %}
 
-### Week
+## Week
 
-It’s a view displaying a count of 7 days (from Sunday to Saturday) with all its related appointments. The first day of the week can be changed using the **[firstDayOfWeek](http://help.syncfusion.com/js/api/ejschedule#members:firstdayofweek "")** API which accepts either the **integer** (Sunday=0, Monday=1, Tuesday=2, etc) or **string** (“Sunday”, “Monday”, etc) or `ej.Schedule.DayOfWeek` enum type value. The default value of this **firstDayOfWeek** depends on the current culture (language) used in the Scheduler.
+It’s a view displaying a count of 7 days (from Sunday to Saturday) with all its related appointments. The first day of the week can be changed using the [firstDayOfWeek](/js/api/ejschedule#members:firstdayofweek) API which accepts either the `integer` (Sunday=0, Monday=1, Tuesday=2, etc) or `string` (“Sunday”, “Monday”, etc) or `ej.Schedule.DayOfWeek` enum type value. The default value of this **firstDayOfWeek** depends on the current culture (language) used in the Scheduler.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-// Set the Active view
-
-currentView: ej.Schedule.CurrentView.Week,
-
-// configure the week start day(First day of week)
-
-firstDayOfWeek:ej.Schedule.FirstDayOfWeek.Monday,
-
-currentDate: new Date(2015, 11, 7),
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 06:00 AM"),
-
-EndTime: new Date("2015/11/7 07:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 9:00 AM"),
-
-EndTime: new Date("2015/11/7 02:30 PM")
-
-}]
-
-}
-
-});
-
-})
-
+$(function() {
+    $("#schedule").ejSchedule({
+        // Set the Active view
+        currentView: ej.Schedule.CurrentView.Week,
+        // Configure the week start day(First day of week)
+        firstDayOfWeek: ej.Schedule.FirstDayOfWeek.Monday,
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        }
+    });
+});	
 </script>
-
-
 
 {% endhighlight %}
 
-### Work Week 
+## Work Week 
 
-Workweek view displays the working days of the week (count of 5 days) and its associated appointments. It is also possible to customize the days to be displayed in the work week view using **[workWeek](http://help.syncfusion.com/js/api/ejschedule#members:workweek "")** API which accepts the string array such as ["Monday", "Tuesday", "Wednesday", "Thursday" and "Friday"]. By default, it renders from Monday to Friday (5 days).
+Workweek view displays the working days of the week (count of 5 days) and its associated appointments. It is also possible to customize the days to be displayed in the work week view using [workWeek](/js/api/ejschedule#members:workweek) API which accepts the string array such as ["Monday", "Tuesday", "Wednesday", "Thursday" and "Friday"]. By default, it renders from Monday to Friday (5 days).
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-// Set the Active view
-
-currentView: ej.Schedule.CurrentView.Workweek,
-
-// configure the work week days
-
-workWeek: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
-
-currentDate: new Date(2015, 11, 7),
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 06:00 AM"),
-
-EndTime: new Date("2015/11/7 07:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 9:00 AM"),
-
-EndTime: new Date("2015/11/7 02:30 PM")
-
-}]
-
-}
-
-});
-
-})
-
+$(function() {
+    $("#schedule").ejSchedule({
+        // Set the Active view
+        currentView: ej.Schedule.CurrentView.Workweek,
+        // configure the work week days
+        workWeek: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday"],
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        }
+    });
+});	
 </script>
-
-
 
 {% endhighlight %}
 
-### Month
+## Month
 
 Month view displays the entire days of a particular month and all its related appointments. An alternative way to navigate to a particular date in a day view directly from Month view, clicking on the appropriate month cell date header will do so. If the week date range column is clicked, it will navigate to the corresponding week view.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-// Set the Active view as Month
-
-currentView: ej.Schedule.CurrentView.Month,
-
-currentDate: new Date(2015, 11, 7),
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 06:00 AM"),
-
-EndTime: new Date("2015/11/7 07:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 9:00 AM"),
-
-EndTime: new Date("2015/11/7 02:30 PM")
-
-}]
-
-}
-
-});
-
-})
-
+$(function() {
+    $("#schedule").ejSchedule({
+        // Set the Active view as Month
+        currentView: ej.Schedule.CurrentView.Month,
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        }
+    });
+});	
 </script>
-
-
 
 {% endhighlight %}
 
-**Note**: An appointment directly created in Month view will be considered as an all-day appointment.
+N> An appointment directly created in Month view will be considered as an all-day appointment.
 
-### Custom
+## Custom
 
-The Scheduler can be displayed with the user-specified date ranges, such as 4 days or any specific date ranges instead of default view options, by making use of the **[renderDates](http://help.syncfusion.com/js/api/ejschedule#members:renderdates "")** property. This property includes two sub properties namely **start** and **end**, which accepts the date object or date value in string format to specify the date range. 
+The Scheduler can be displayed with the user-specified date ranges, such as 4 days or any specific date ranges instead of default view options, by making use of the [renderDates](/js/api/ejschedule#members:renderdates) property. This property includes two sub properties namely **start** and **end**, which accepts the date object or date value in string format to specify the date range. 
 
-To display the custom view option in the toolbar-like view options in the scheduler header area, add the **CustomView** value to the views property array collection as shown below. 
+To display the custom view option in the toolbar-like view options in the scheduler header area, add the `CustomView` value to the views property array collection as shown below. 
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-// We can add the "CustomView" in views collection
-
-views: ["Day", "Week", "WorkWeek", "Month", "CustomView"],
-
-currentDate: new Date(2015, 11, 6),
-
-// Configure the custom date
-
-renderDates: {
-
-// Render start date 
-
-start: new Date(2015, 11, 6),
-
-// Render end date 
-
-end: new Date(2015, 11, 9)
-
-},
-
-// Set the Active view
-
-currentView: ej.Schedule.CurrentView.CustomView,
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 06:00 AM"),
-
-EndTime: new Date("2015/11/7 07:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 9:00 AM"),
-
-EndTime: new Date("2015/11/7 02:30 PM")
-
-}]
-
-}
-
-});
-
-})
-
+$(function() {
+    $("#schedule").ejSchedule({
+        // We can add the "CustomView" in views collection
+        views: ["Day", "Week", "WorkWeek", "Month", "CustomView"],
+        currentDate: new Date(2015, 11, 6),
+        // Configure the custom date
+        renderDates: {
+            // Render start date 
+            start: new Date(2015, 11, 6),
+            // Render end date 
+            end: new Date(2015, 11, 9)
+        },
+        // Set the Active view
+        currentView: ej.Schedule.CurrentView.CustomView,
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        }
+    });
+});	
 </script>
-
-
 
 {% endhighlight %}
 
-### Agenda
+## Agenda
 
-This View option lists out the appointments in a grid-like view for the next 7 days by default from the current date. The count of the number of appointments to be listed in this view can be customized using the **[agendaViewSettings.daysInAgenda](http://help.syncfusion.com/js/api/ejschedule#members:agendaviewsettings-daysinagenda "")**.
+This View option lists out the appointments in a grid-like view for the next 7 days by default from the current date. The count of the number of appointments to be listed in this view can be customized using the [agendaViewSettings.daysInAgenda](/js/api/ejschedule#members:agendaviewsettings-daysinagenda).
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-// Set the Active view
-
-currentView: ej.Schedule.CurrentView.Agenda,
-
-currentDate: new Date(2015, 11, 7),
-
-//configure the agenda view 
-
-agendaViewSettings: {
-
-//Next 5 days Appointments lists out from current date
-
-daysInAgenda: 5
-
-},
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 06:00 AM"),
-
-EndTime: new Date("2015/11/7 07:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 9:00 AM"),
-
-EndTime: new Date("2015/11/7 02:30 PM")
-
-}]
-
-}
-
-});
-
-})
-
+$(function() {
+    $("#schedule").ejSchedule({
+        // Set the Active view
+        currentView: ej.Schedule.CurrentView.Agenda,
+        currentDate: new Date(2015, 11, 7),
+        //configure the agenda view 
+        agendaViewSettings: {
+            //Next 5 days Appointments lists out from current date
+            daysInAgenda: 5
+        },
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        }
+    });
+});	
 </script>
-
-
 
 {% endhighlight %}
 
-**Note**: In Agenda view, the templates can be applied for the date and time columns which can be referred [here](#_Templates_in_Agenda ""). Also, the template passed through the [appointmentTemplateID](#_Appointment_template "") will gets applied to the event column in Agenda view.
+N> In Agenda view, the templates can be applied for the date and time columns which can be referred [here](/js/api/ejschedule#members:agendaviewsettings). Also, the template passed through the [appointmentTemplateID](/js/api/ejschedule#members:appointmenttemplateid) will gets applied to the event column in Agenda view.
 
-### Restriction on View Navigation
+## Restriction on View Navigation
 
 It is possible to restrict the users to display only the specific list of views in the Schedule header section and also not to navigate to other views that are not listed. 
 
-**For example**, if the views property is set only with **Month** view – then the Schedule header section displays only the Month option in the view toolbar and also other additional available actions like navigating to day/week view on clicking the month header dates and week date-range is stopped.
+**For example**, if the views property is set only with `Month` view – then the Schedule header section displays only the Month option in the view toolbar and also other additional available actions like navigating to day/week view on clicking the month header dates and week date-range is stopped.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-// Add only the "Month" in views collection
-
-views: ["Month"],
-
-currentDate: new Date(2015, 11, 7),
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 06:00 AM"),
-
-EndTime: new Date("2015/11/7 07:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 9:00 AM"),
-
-EndTime: new Date("2015/11/7 02:30 PM")
-
-}]
-
-}
-
-});
-
-})
-
+$(function() {
+    $("#schedule").ejSchedule({
+        // Add only the "Month" in views collection
+        views: ["Month"],
+        currentDate: new Date(2015, 11, 7),
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 06:00 AM"),
+                EndTime: new Date("2015/11/7 07:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 9:00 AM"),
+                EndTime: new Date("2015/11/7 02:30 PM")
+            }]
+        }
+    });
+});	
 </script>
-
-
 
 {% endhighlight %}
 
-**Note**: Eventhough Week view is the active view in Scheduler by default, if it is not listed in the views collection – then the first listed option in the views collection will be taken as current view of the Scheduler.
+N> Eventhough Week view is the active view in Scheduler by default, if it is not listed in the views collection – then the first listed option in the views collection will be taken as current view of the Scheduler.
 
-### Timeline
+## Timeline View
 
-Timeline view displays the day, time and its associated events horizontally arranged from left to right. By default, Scheduler renders in vertical mode and it can be changed to the timeline mode using **[orientation](http://help.syncfusion.com/js/api/ejschedule#members:orientation "")** property which accepts both the **string** and `ej.Schedule.Orientation` enum value.
+Timeline view displays the day, time and its associated events horizontally arranged from left to right. By default, Scheduler renders in vertical mode and it can be changed to the timeline mode using [orientation](/js/api/ejschedule#members:orientation) property which accepts both the `string` and `ej.Schedule.Orientation` enum value.
 
 All the applicable features in Vertical mode works similar with Timeline mode (Horizontal) and only the visualization of the layout changes based on the orientation.
 
 {% highlight html %}
-<!-- HTML element will initialize as a ejSchedule -->
 
+<!--Container for ejScheduler widget-->
 <div id="schedule"></div>
 
 <script>
-
-$(function () {
-
-$("#schedule").ejSchedule({
-
-currentDate: new Date(2015, 11, 7),
-
-//set the timeline (horizontal) view
-
-orientation:ej.Schedule.Orientation.Horizontal,
-
-appointmentSettings: {
-
-//Array of JSON data configure in dataSource
-
-dataSource: [
-
-{
-
-Id: 1,
-
-Subject: "Music Class",
-
-StartTime: new Date("2015/11/7 09:00 AM"),
-
-EndTime: new Date("2015/11/7 10:00 AM")
-
-},
-
-{
-
-Id: 2,
-
-Subject: "School",
-
-StartTime: new Date("2015/11/7 02:00 PM"),
-
-EndTime: new Date("2015/11/7 06:30 PM")
-
-}]
-
-}
-
-});
-
-})
-
+$(function() {
+    $("#schedule").ejSchedule({
+        currentDate: new Date(2015, 11, 7),
+        //set the timeline (horizontal) view
+        orientation: ej.Schedule.Orientation.Horizontal,
+        appointmentSettings: {
+            //Array of JSON data configure in dataSource
+            dataSource: [{
+                Id: 1,
+                Subject: "Music Class",
+                StartTime: new Date("2015/11/7 09:00 AM"),
+                EndTime: new Date("2015/11/7 10:00 AM")
+            }, {
+                Id: 2,
+                Subject: "School",
+                StartTime: new Date("2015/11/7 02:00 PM"),
+                EndTime: new Date("2015/11/7 06:30 PM")
+            }]
+        }
+    });
+});	
 </script>
 
-
-
 {% endhighlight %}
-

@@ -8,17 +8,19 @@ documentation: ug
 ---
 # Validation
 
-DatePicker is a form control and therefore its value to be validated before processing. Client side validation provides a better user experience by responding quickly at browser level. Most common client side validation plugin is “**[](http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js# "")**JQuery Validation”. 
+DatePicker is a form control and therefore its value to be validated before processing. Client side validation provides a better user experience by responding quickly at browser level. Most common client side validation plugin is [JQuery Validation](http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js). 
 
-DatePicker supports this validation by built-in, so you can do client validation with simple steps to validate and respond validation message. The jQuery validate plugin rules and custom methods can be used in the DatePicker control with the help of two properties, **[](http://help.syncfusion.com/js/api/ejdatepicker#members:validationrules "")**validationRules and **[](http://help.syncfusion.com/js/api/ejdatepicker#members:validationmessage "")**validationMessage. 
+DatePicker supports this validation by built-in, so you can do client validation with simple steps to validate and respond validation message. The jQuery validate plugin rules and custom methods can be used in the DatePicker control with the help of two properties,[validationRules](http://help.syncfusion.com/js/api/ejdatepicker#members:validationrules) and [validationMessage](http://help.syncfusion.com/js/api/ejdatepicker#members:validationmessage). 
 
 Before using those properties, you need to add the jQuery validate plugin to your html page.
 
-<table>
-<tr>
-<td>
-refer the below JQuery validation plugin script after JQuery script reference <br/><br/><script   src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script><br/><br/><br/><br/></td></tr>
-</table>
+Refer the below JQuery validation plugin script after JQuery script reference.
+
+{% highlight html %}
+
+     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+
+{% endhighlight %}
 
 {% highlight html %}
 

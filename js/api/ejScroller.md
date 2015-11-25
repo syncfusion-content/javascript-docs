@@ -7,7 +7,12 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html Scroller control.
+# ejScroller
+
+
+
+
+The Scroller control has a sliding document whose position corresponds to a value. The document has text, HTML content or images. You can also customize the Scroller control by resizing the scrolling bar and changing the theme.
 
 
 

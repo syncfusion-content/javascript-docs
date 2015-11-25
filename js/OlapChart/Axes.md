@@ -9,75 +9,24 @@ documentation: ug
 
 #Axes 
 
-**OlapChart** typically have two axes that are used to measure and categorize data: a vertical Y-axis and a horizontal X-axis. By default vertical Y-axis and horizontal X-axis is added to the Chart with axis labels, gridlines, and tick lines. You can also customize this axis explicitly by adding axis title or removing gridlines, tick lines that are added to the axis by default.
+##Label Format
 
-{% highlight js %}
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    primaryXAxis: {
-        majorTickLines: {
-            visible: false
-        }
-    },
-    primaryYAxis: {
-        majorTickLines: {
-            visible: false
-        }
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
-});
-
-{% endhighlight %}
-
-
-##Axis Title Customization
-
-Primary axis title [font](/js/api/ejChart#members:primaryxaxis-title-font) appearance is further customized with the help of the following code example.
+###Format Numeric labels
+By using the [`labelFormat`](/js/api/ejchart#members:primaryyaxis-labelformat) property, you can format the numeric labels. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
 
 {% highlight js %}
 
-$(function() {
-    $("#OlapChart1").ejOlapChart({
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
         url: "../wcf/OlapChartService.svc",
-        legend: {
-            visible: true,
-            rowCount: 3
-        },
-        commonSeriesOptions: {
-            type: ej.olap.OlapChart.ChartTypes.Column
-        },
-        primaryXAxis: {
-            title: {
-                text: "Primary X title customization",
-                font: {
-                    color: 'red',
-                    fontFamily: 'Segoe UI',
-                    fontStyle: 'Italic',
-                    size: '18px',
-                    opacity: 1,
-                    fontWeight: 'lighter'
-                }
-            }
-        },
-        primaryYAxis: {
-            title: {
-                text: "Primary Y title customization",
-                font: {
-                    color: 'red',
-                    fontFamily: 'Segoe UI',
-                    fontStyle: 'Italic',
-                    size: '18px',
-                    opacity: 1,
-                    fontWeight: 'lighter'
-                }
-            }
-        },
-        size: {
-            height: "460px",
-            width: "950px"
+        //...
+        primaryYAxis:
+        {
+            //... 
+            //Applying currency format to Y-Axis labels
+            labelFormat: 'c'
         }
     });
 });
@@ -85,176 +34,318 @@ $(function() {
 
 {% endhighlight %}
 
-![](/js/OlapChart/Chart-Axes_images/Chart-Axes_img1.png) 
+![](Chart-Axes_images/Chart-Axes_img1.png)
 
-##Axis Line
+Following table describes the result on applying some commonly used label formats on numeric values.
 
-**Axis line** is drawn in Chart to represent the end of the axis in **ChartArea**. It can be customized as shown below.
+<table>
+<tr>
+<th>
+Label Value</th><th>
+Label Format Property Value</th><th>
+Result</th><th>
+Description</th>
+</tr>
+<tr><td>
+1000</td><td>
+n1</td><td>    
+1000.0</td><td>
+The Number is rounded to 1 decimal place</td>
+</tr>
+<tr><td>
+1000</td><td>
+n2</td><td>    
+1000.00</td><td>
+The Number is rounded to 2 decimal place</td>
+</tr>
+<tr><td>
+1000</td><td>
+n3</td><td>    
+1000.000</td><td>
+The Number is rounded to 3 decimal place</td>
+</tr>
+<tr><td>
+0.01</td><td>
+p1</td><td>    
+1.0%</td><td>
+The Number is converted to percentage with 1 decimal place</td>
+</tr>
+<tr><td>
+0.01</td><td>
+p2</td><td>    
+1.00%</td><td>
+The Number is converted to percentage with 2 decimal place</td>
+</tr>
+<tr><td>
+0.01</td><td>
+p3</td><td>    
+1.000%</td><td>
+The Number is converted to percentage with 3 decimal place</td>
+</tr>
+<tr><td>
+1000</td><td>
+c1</td><td>    
+$1,000.0</td><td>
+The Currency symbol is appended to number and number is rounded to 1 decimal place</td>
+</tr>
+<tr><td>
+1000</td><td>
+c2</td><td>    
+$1,000.00</td><td>
+The Currency symbol is appended to number and number is rounded to 2 decimal place</td>
+</tr>
+</table>
+
+###Label Format Customization 
+By using the [`labelFormat`](/js/api/ejchart#members:primaryyaxis-labelformat) property of [`primaryYAxis`](/js/api/ejchart#members:primaryyaxis), you can add the category labels with prefix and/or suffix. 
 
 {% highlight js %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    title: {
-        text: "OLAP Chart in Essential Studio"
-    },
-    legend: {
-        visible: true,
-        rowCount: 3
-    },
-    primaryXAxis: {
-        axisLine: {
-            visible: true
-        },
-        axisLine: {
-            offset: 1
-        },
-        axisLine: {
-            width: 3.5
-        },
-    },
-    primaryYAxis: {
-        axisLine: {
-            dashArray: "2,3"
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        //...
+        primaryYAxis:
+        {
+            //... 
+            //Adding prefix and suffix to Y-axis labels
+            labelFormat: '${value} K'
         }
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
-});
-
-
-{% endhighlight %}
-
-
-![](/js/OlapChart/Chart-Axes_images/Chart-Axes_img2.png) 
-
-##Position Opposed
-
-**Position** of the primary X and Y axis is set to the top with the help [opposedPosition](/js/api/ejChart#members:primaryxaxis-opposedposition) property.
-
-{% highlight js %}
-
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    title: {
-        text: "OLAP Chart in Essential Studio"
-    },
-    primaryXAxis: {
-        opposedPosition: true
-    },
-    primaryYAxis: {
-        opposedPosition: true
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
-});
-
-
-{% endhighlight %}
-
-
-![](/js/OlapChart/Chart-Axes_images/Chart-Axes_img3.png) 
-
-##Area Customization 
-
-Background, border color and outer width of the Chart Area can be customized with the help of following properties.
-
-* [Background](/js/api/ejChart#members:chartarea-background) – sets the background color for Chart Area.
-* [Color](/js/api/ejChart#members:chartarea-border-color) – sets the color for the border.
-* [Width](/js/api/ejChart#members:chartarea-border-width) – sets the width for the border.
-
-
-
-{% highlight js %}
-
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    title: {
-        text: "OLAP Chart in Essential Studio"
-    },
-    chartArea: {
-        border: {
-            color: "gray",
-            width: 4
-        },
-        background: "aqua"
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
+    });
 });
 
 {% endhighlight %}
 
+![](Chart-Axes_images/Chart-Axes_img2.png)
 
-![](/js/OlapChart/Chart-Axes_images/Chart-Axes_img4.png) 
+##Common Axis Features
 
-#Label
-
-**Label** represents the text on the axis data points in the Chart. Each axis data point are represented by separate label text information in order to provide precise information about each points. **Label** text is displayed in a customizable format.
-
-##Label font and color customization 
-
-Font style and color of the label text is customized with the help of [font](/js/api/ejChart#members:primaryxaxis-font) and [color](/js/api/ejChart#members:primaryxaxis-font-fontstyle) properties within its respective axis.
+###Axis Visibility
+Axis visibility can be set by using the [`visible`](js/api/ejchart#members:primaryyaxis) property of the respective axis. The default value of the [`visible`](/js/api/ejchart#members:primaryyaxis-visible) property is true.
 
 {% highlight js %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    primaryXAxis: {
-        font: {
-            fontFamily: "Algerian",
-            fontWeight: "lighter",
-            fontStyle: "Italic",
-            size: "14px",
-            color: "red"
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        //...
+        primaryYAxis:
+        {
+            //... 
+            //Disabling visibility of Y-axis
+            visible: false
         }
-    },
-    primaryYAxis: {
-        font: {
-            fontFamily: "Algerian",
-            fontWeight: "lighter",
-            fontStyle: "Italic",
-            size: "14px",
-            color: "red"
-        },
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
+    });
 });
-
 
 {% endhighlight %}
 
-![](/js/OlapChart/Chart-Axes_images/Label_img1.png) 
+![](Chart-Axes_images/Chart-Axes_img3.png)
 
-##Rotating Axis Labels
-
-You can rotate the labels to desired angle. The axis labels are rendered in the degree specified in the [labelRotation](/js/api/ejChart#members:primaryxaxis-labelrotation) property.
+###Label Customization
+By using the [`font`](/js/api/ejchart#members:primaryxaxis-font) property of the axis, we can customize the labels – font family, color, opacity, size and font-weight.
 
 {% highlight js %}
 
-$("#OlapChart1").ejOlapChart({
-    url: "../wcf/OlapChartService.svc",
-    primaryXAxis: {
-        labelRotation: 45
-    },
-    size: {
-        height: "460px",
-        width: "950px"
-    }
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        //... 
+        primaryXAxis:
+        {
+            //Customizing label appearance
+            font:
+            {
+                fontFamily: 'Segoe UI',
+                size: '14px',
+                fontWeight: 'bold',
+                color: 'blue'
+            }
+        }
+    });
 });
-
 
 {% endhighlight %}
 
+![](Chart-Axes_images/Chart-Axes_img4.png)
 
-![](/js/OlapChart/Chart-Axes_images/Label_img2.png) 
+###Label and Tick Positioning
+Axis labels and ticks can be positioned inside or outside the Chart area by using the [`labelPosition`](/js/api/ejchart#members:primaryxaxis-labelposition) and [`tickLinesPosition`](js/api/ejchart#members:primaryxaxis-ticklinesposition) properties. The labels and ticks are positioned outside the Chart area, by default.
 
+{% highlight js %}
+
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        //... 
+        primaryXAxis:
+        {
+            //Customizing label and tick positions
+            labelPosition: 'inside',
+            tickLinesPosition: 'inside'
+        }
+    });
+});
+
+{% endhighlight %}
+
+![](Chart-Axes_images/Chart-Axes_img5.png)
+
+###Grid Lines Customization
+By using the [`majorGridLines`](/js/api/ejchart#members:primaryxaxis-majorgridlines) and [`minorGridLines`](/js/api/ejchart#members:primaryxaxis-minorgridlines) properties of the axis, you can customize the width, color, visibility and opacity of the grid lines. The minor grid lines are not visible by default.
+
+{% highlight js %}
+
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        //... 
+        primaryXAxis:
+        {
+            //Customizing Grid Lines
+            majorGridLines:
+            {
+                color: 'blue',
+                visible: true,
+                width: 5
+            },
+            minorTicksPerInterval: 1,
+            minorGridLines:
+            {
+                color: 'red',
+                visible: true,
+                width: 25
+            }
+        }
+    });
+});
+
+{% endhighlight %}
+
+![](Chart-Axes_images/Chart-Axes_img6.png)
+
+###Tick Line Customization
+By using the [`majorTickLines`](/js/api/ejchart#members:primaryxaxis-majorticklines) and [`minorTickLines`](/js/api/ejchart#members:primaryxaxis-minorgridlines) properties of the axis, you can customize the width, color, visibility, size and opacity of the tick lines. The minor tick lines are not visible by default.
+
+{% highlight js %}
+
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        //... 
+        primaryXAxis:
+        {
+            //Customizing Tick Lines
+            majorTickLines:
+            {
+                color: 'blue',
+                visible: true,
+                width: 10,
+                size: 15,
+            },
+            minorTicksPerInterval: 1,
+            minorTickLines:
+            {
+                color: 'red',
+                visible: true,
+                width: 15,
+                size: 25
+            }
+        }
+    });
+});
+
+{% endhighlight %}
+
+![](Chart-Axes_images/Chart-Axes_img7.png)
+
+###Inversing Axis
+Axis can be inversed by using the [`isInversed`](/js/api/ejchart#members:primaryxaxis-isinversed) property of the axis. By default, the value of the [`isInversed`](/js/api/ejchart#members:primaryyaxis-isinversed) property is false.
+
+{% highlight js %}
+
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        //... 
+        primaryXAxis:
+        {
+            //Inversing the X-axis
+            isInversed: true
+        },
+        primaryYAxis:
+        {
+            //Inversing the Y-axis
+            isInversed: true
+        }
+    });
+});
+
+{% endhighlight %}
+
+![](Chart-Axes_images/Chart-Axes_img8.png)
+
+###Placing Axes at Opposite Side
+The [`opposedPosition`](/js/api/ejchart#members:primaryxaxis-opposedposition) property of Chart axis can be used to place the axis at the opposite direction from its default position. By default, the value of [`opposedPosition`](/js/api/ejchart#members:primaryyaxis-opposedposition) property is false.
+
+{% highlight js %}
+
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        //... 
+        primaryXAxis:
+        {
+            //Placing X-axis at the opposite side of its normal position
+            opposedPosition: true
+        },
+        primaryYAxis:
+        {
+            //Placing Y-axis at the opposite side of its normal position
+            opposedPosition: true
+        }
+    });
+});
+
+{% endhighlight %}
+
+![](Chart-Axes_images/Chart-Axes_img9.png)
+
+###Smart Axis Labels
+When the axis labels overlap with each other based on the Chart dimensions and label size, you can use [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property of the axis to avoid overlapping. The default value of the [`labelIntersection`](/js/api/ejchart#members:primaryxaxis-labelintersectaction) property is none. The other options available are rotate45, rotate90, trim, multiplerows, wrap and hide. 
+
+{% highlight js %}
+
+$(function()
+{
+    $("#OlapChart1").ejOlapChart(
+    {
+        url: "../wcf/OlapChartService.svc",
+        //... 
+        // Avoid overlapping of X-axis labels
+        primaryXAxis:
+        {
+            labelIntersectAction: 'multiplerows'
+        }
+    });
+});
+
+{% endhighlight %}
+
+![](Chart-Axes_images/Chart-Axes_img10.png)

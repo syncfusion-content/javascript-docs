@@ -14040,6 +14040,33 @@ diagram.clear();
 
 
 
+### clearSelection<span class="signature">()</span>
+{:#methods:clearSelection}
+
+
+
+
+
+
+
+
+Clear the current selection in diagram
+
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+diagram.clearSelection(); 
+</script>
+{% endhighlight %}
 
 
 
@@ -15793,6 +15820,24 @@ element{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">parameter returns diagram</td>
 </tr>
+<tr>
+<td class="name">{% highlight html %}
+count{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameter returns the count of how many times the mouse button is pressed</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+event{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameter argument.event.which is used to detect whether the right/left mouse button is pressed</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameter returns the diagram elements.</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -16834,6 +16879,24 @@ cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">Boolean</span></td>
 <td class="description last">if the event should be cancelled ,otherwise fasle</td>
 </tr>
+<tr>
+<td class="name">{% highlight html %}
+newValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameter returns the new width, height, offsetX and offsetY values of the element that is being resized</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+oldValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+resizeState{% endhighlight %}</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description last">parameter returns the state of resizing(starting,resizing,completed)</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -16855,7 +16918,84 @@ sizeChange:function (args)  {}
          });{% endhighlight %}
 
 
+### propertyChange
+{:#events:propertyChange}
 
+
+
+
+
+
+
+
+Triggers when the node properties(x, y,width and height alone) are changed using nudge commands and updateNode API.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">args parameter from diagram
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+element{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameter returns the selected element</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+newValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameter returns the new value of the node property that is being changed</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+oldValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameter returns the old value of the property that is being changed</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+propertyName{% endhighlight %}</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description last">parameter returns the name of the property that is changed </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+// propertyChange event for diagram
+$("#diagramcontent").ejDiagram({
+propertyChange:function (args)  {}
+         });{% endhighlight %}
 
 
 
@@ -16929,6 +17069,74 @@ rotationChange:function (args)  {}
 
 
 
+
+### scrollChange
+{:#events:scrollChange}
+
+
+
+
+
+
+
+
+Triggers when the diagram is zoomed or panned
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+argument{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">args parameter from diagram
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+newValues{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Parameter returns the new zoom value, horizontal and vertical scroll offsets.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+oldValues{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">parameter returns the previous zoom value, horizontal and vertical scroll offsets.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight html %}
+//  ScrollChange  event
+$("#diagramcontent").ejDiagram({
+scrollChange :function (args)  {
+} });
+{% endhighlight %}
 
 
 

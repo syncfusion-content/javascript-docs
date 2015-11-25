@@ -7,15 +7,12 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Html Button control.
+# ejButton
 
-
-
+Custom Design for Html Button control.
 
 
 $(element).ejButton<span class="signature">(options)</span>
-
-
 
 
 <table class="params">

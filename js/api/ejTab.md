@@ -7,7 +7,11 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Tab control.
+# ejTab
+
+
+
+The Tab control is an interface where list of items are expanded from a single item. Each Tab panel defines its header text or header template, as well as a content template. Tab items are dynamically added and removed. Tabs can be loaded with AJAX content that is useful for building dashboards where space is limited.
 
 
 
@@ -1676,7 +1680,7 @@ $("#tab").ejTab("show");
 
 
 ### itemActive
-{:#events:itemActive}
+{:#events:itemactive}
 
 
 

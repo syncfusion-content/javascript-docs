@@ -7,21 +7,18 @@ control: TreeView
 documentation: ug
 ---
 
-# Overview 
 
-The **TreeView** control for **JavaScript** represents hierarchical data in a tree-like structure. It allows editing, dragging items to other tree views, adding check boxes, and more. TreeView can be generated from UL LI elements, JSON data source or using OData service.
+# Overview
 
-**Key Features**
+TreeView control for JavaScript represents hierarchical data in tree like structure with advanced functions to perform edit, drag and drop, selection with checkboxes and more. TreeView can be generated from ‘UL LI’ elements, JSON data source or using ODATA services.
 
-* **Node editing:** The **TreeView** control permits you to edit a node.
-* **Node cut, copy, and paste**: Cut and paste in same **TreeView** node.
-* **Drag and drop**: Drag and drop the nodes within the **TreeView** control, or drag a particular node from one tree to another tree.
-* **Check box support:** Enables three states for the checkbox and checked node.
-* **Data binding:** You can populate **TreeView** items using data binding support like JSON and OData service.
-* **Load on demand:** Populate child item on demand.
-* **Themes:** Essential **JavaScript** controls  consists of 12 built in themes, including 6 metro and 6 gradient effects, and also supports custom skin option to set user defined themes.
-* **Template support:** You can generate custom node “LI” element using the **jsrender** template.
-* **RTL:** Node text displays the RTL languages.
-* **Rich Events & Methods:** There are more flexible and efficient methods and events.
-* **Keyboard navigation:** You can interact with the **TreeView** control using the keyboard. 
+## Key features
+
+* [Data population](#_TreeView_with_Data) 
+* [Node manipulations](#_Node_Manipulations)
+* [Drag and drop](#_Drag_and_Drop)
+* [Template](#_Template_Option)
+* Checkbox
+* [Accessibility](#_Accessibility)
+* [Appearance and styling](#_Styling)
 

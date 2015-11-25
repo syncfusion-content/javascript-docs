@@ -1,80 +1,81 @@
 ---
 title: Keyboard support with shortcut keys
-description: How to access Schedule operation with Keyboard shortcuts 
+description: Accessing Scheduler actions through Keyboard shortcuts 
 platform: js
 control: schedule
 documentation: ug
 keywords: keyboard, shortcuts 
 ---
-## Keyboard Navigation
+# Keyboard Navigation
 
 The shortcut keys for accessing the sub-elements of the scheduler and other Scheduler actions are tabulated in the following table.
 
 <table>
 <tr>
 <th>
-Keys<br/><br/></th><th>
-Functionality description<br/><br/></th></tr>
+Keys</th><th>
+Functionality description</th></tr>
+<tr>
+<td width="175">
+<kbd>arrow keys</kbd></td><td>
+To traverse through the Scheduler cells.</td></tr>
 <tr>
 <td>
-arrow keys<br/><br/></td><td>
-To traverse through the Scheduler cells.<br/><br/></td></tr>
+<kbd>Shift</kbd>+<kbd>arrow keys</kbd></td><td>
+Multiple cell selection</td></tr>
 <tr>
 <td>
-Shift + arrow keys<br/><br/></td><td>
-Multiple cell selection<br/><br/></td></tr>
+<kbd>Enter</kbd></td><td>
+Pressing enter key, after a single/multiple scheduler cell selection will make the quick appointment window to pop-up.<br/><br/>Also, when the focus is being moved on to the fields like checkbox or buttons of the appointment window, pressing enter will select that particular action. </td></tr>
 <tr>
 <td>
-Enter<br/><br/></td><td>
-Pressing enter key, after a single/multiple scheduler cell selection will make the quick appointment window to pop-up.<br/><br/>Also, when the focus is being moved on to the fields like checkbox or buttons of the appointment window, pressing enter will select that particular action. <br/><br/></td></tr>
+<kbd>Esc</kbd></td><td>
+Closes any of the popup within the Schedule control.</td></tr>
 <tr>
 <td>
-Esc<br/><br/></td><td>
-Closes any of the popup within the Schedule control.<br/><br/></td></tr>
+<kbd>Alt</kbd>+<kbd>N</kbd></td><td>
+Opens the create Appointment window</td></tr>
 <tr>
 <td>
-Alt + N<br/><br/></td><td>
-Opens the create Appointment window<br/><br/></td></tr>
+<kbd>Ctrl</kbd>+<kbd>E</kbd></td><td>
+Opens the edit Appointment window</td></tr>
 <tr>
 <td>
-Ctrl + E<br/><br/></td><td>
-Opens the edit Appointment window<br/><br/></td></tr>
+<kbd>Alt</kbd>+<kbd>C</kbd></td><td>
+Opens the calendar popup within the Scheduler.</td></tr>
 <tr>
 <td>
-Alt + C<br/><br/></td><td>
-Opens the calendar popup within the Scheduler.<br/><br/></td></tr>
+<kbd>Ctrl</kbd>+<kbd>left arrow</kbd></td><td>
+Previous date navigation</td></tr>
 <tr>
 <td>
-Ctrl + left arrow<br/><br/></td><td>
-Previous date navigation<br/><br/></td></tr>
+<kbd>Ctrl</kbd>+<kbd>right arrow</kbd></td><td>
+Next date navigation</td></tr>
 <tr>
 <td>
-Ctrl + right arrow<br/><br/></td><td>
-Next date navigation<br/><br/></td></tr>
+<kbd>Alt</kbd>+<kbd>+</kbd></td><td>
+Forward traversing through the view items in the toolbar</td></tr>
 <tr>
 <td>
-Alt + plus symbol<br/><br/></td><td>
-Forward traversing through the view items in the toolbar<br/><br/></td></tr>
+<kbd>Alt</kbd>+<kbd>-</kbd></td><td>
+Reverse traversing through the view items in the toolbar</td></tr>
 <tr>
 <td>
-Alt + minus symbol<br/><br/></td><td>
-Reverse traversing through the view items in the toolbar<br/><br/></td></tr>
+<kbd>Space</kbd></td><td>
+When the previous/next navigation icons are currently being focused, pressing space navigates through the corresponding dates.<br/><br/>Also, when the focus is being moved on to the fields like checkbox or buttons of the appointment window, pressing enter will select that particular action.</td></tr>
 <tr>
 <td>
-Space<br/><br/></td><td>
-When the previous/next navigation icons are currently being focused, pressing space navigates through the corresponding dates.<br/><br/>Also, when the focus is being moved on to the fields like checkbox or buttons of the appointment window, pressing enter will select that particular action.<br/><br/></td></tr>
+<kbd>Del</kbd></td><td>
+Deletes the appointment.</td></tr>
 <tr>
 <td>
-Del<br/><br/></td><td>
-Deletes the appointment.<br/><br/></td></tr>
+<kbd>Tab</kbd></td><td>
+Traversing through the appointments.</td></tr>
 <tr>
 <td>
-Tab<br/><br/></td><td>
-Traversing through the appointments.<br/><br/></td></tr>
-<tr>
-<td>
-Shift + tab<br/><br/></td><td>
-Traversal of appointments in a reverse order.<br/><br/></td></tr>
+<kbd>Shift</kbd>+<kbd>tab</kbd></td><td>
+Traversal of appointments in a reverse order.</td></tr>
 </table>
-**Note**: By default **[allowKeyboardNavigation](http://help.syncfusion.com/js/api/ejschedule#members:allowkeyboardnavigation "")** property is set to **true**, which allows the Scheduler to be accessed through the above specified keys.
+
+N> By default [allowKeyboardNavigation](/js/api/ejschedule#members:allowkeyboardnavigation) property is set to **true**, which allows the Scheduler to be accessed through the above specified keys.
 
