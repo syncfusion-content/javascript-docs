@@ -75,7 +75,7 @@ Indicators simply indicates the current status of the pointer. Indicators are in
 
 Execute the above code to render the following output.
 
-![](/js/LinearGauge/Indicators_images/Indicators_img1.png" Caption=")
+![](/js/LinearGauge/Indicators_images/Indicators_img1.png)
 
 ## State Ranges
 
@@ -238,7 +238,7 @@ The **backgroundColor** and **borderColor** sets the appearance behavior for the
 
 Execute the above code to render the following output.
 
-![](/js/LinearGauge/Indicators_images/Indicators_img3.png" Caption=")
+![](/js/LinearGauge/Indicators_images/Indicators_img3.png)
 
 ## Font optoins
 
@@ -338,7 +338,7 @@ The basic font options available for the textual type indicators in the **Linear
 
 Execute the above code to render the following output.
 
-![](/js/LinearGauge/Indicators_images/Indicators_img4.png" Caption=")
+![](/js/LinearGauge/Indicators_images/Indicators_img4.png)
 
 ## Multiple Indicator
 
@@ -447,5 +447,5 @@ Execute the above code to render the following output.
 
 
 
-![](/js/LinearGauge/Indicators_images/Indicators_img5.png" Caption=")
+![](/js/LinearGauge/Indicators_images/Indicators_img5.png)
 
