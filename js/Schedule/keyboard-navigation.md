@@ -16,7 +16,7 @@ The shortcut keys for accessing the sub-elements of the scheduler and other Sche
 Keys</th><th>
 Functionality description</th></tr>
 <tr>
-<td>
+<td width="175">
 <kbd>arrow keys</kbd></td><td>
 To traverse through the Scheduler cells.</td></tr>
 <tr>
@@ -26,7 +26,7 @@ Multiple cell selection</td></tr>
 <tr>
 <td>
 <kbd>Enter</kbd></td><td>
-Pressing enter key, after a single/multiple scheduler cell selection will make the quick appointment window to pop-up.<br/>Also, when the focus is being moved on to the fields like checkbox or buttons of the appointment window, pressing enter will select that particular action. </td></tr>
+Pressing enter key, after a single/multiple scheduler cell selection will make the quick appointment window to pop-up.<br/><br/>Also, when the focus is being moved on to the fields like checkbox or buttons of the appointment window, pressing enter will select that particular action. </td></tr>
 <tr>
 <td>
 <kbd>Esc</kbd></td><td>
@@ -62,7 +62,7 @@ Reverse traversing through the view items in the toolbar</td></tr>
 <tr>
 <td>
 <kbd>Space</kbd></td><td>
-When the previous/next navigation icons are currently being focused, pressing space navigates through the corresponding dates.<br/>Also, when the focus is being moved on to the fields like checkbox or buttons of the appointment window, pressing enter will select that particular action.</td></tr>
+When the previous/next navigation icons are currently being focused, pressing space navigates through the corresponding dates.<br/><br/>Also, when the focus is being moved on to the fields like checkbox or buttons of the appointment window, pressing enter will select that particular action.</td></tr>
 <tr>
 <td>
 <kbd>Del</kbd></td><td>
