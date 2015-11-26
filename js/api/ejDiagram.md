@@ -17698,8 +17698,8 @@ segmentChange:function (args) {}
 
 
 
-### selectionChanged
-{:#events:selectionchanged}
+### selectionChange
+{:#events:selectionchange}
 
 
 
