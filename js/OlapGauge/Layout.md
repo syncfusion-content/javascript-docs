@@ -7,225 +7,37 @@ control: OlapGauge
 documentation: ug
 ---
 
-# Layout 
+# Layout
 
-The **OlapGauge** control provides support to display multiple gauges in a structured layout.
+##Row-wise Layout 
 
-## Supported Layouts
-
-   1. Wrap Layout: Based on the available space, gauges are aligned and displayed automatically.
-   2. Row-based Layout: Row-wise arrangement of specified number of gauge controls.
-   3. Columnar Layout: Column-wise arrangement of specified number of gauge controls.
-
-## Layout Customization 
-
-
-### Row Count
-
-You can set the number of gauges to be displayed in row using [rowsCount](/js/api/ejOlapGauge#members:rowscount) property. By default the value is **0**.
+Gauges can be arranged in specified number of rows by using the [`rowsCount`](/js/api/ejolapgauge#members:rowscount) property.
 
 {% highlight js %}
 
-$(function() {
-    $("#OlapGauge1").ejOlapGauge({
-        url: "../wcf/OlapGaugeService.svc",
-        enableTooltip: true,
-        load: "loadGaugeTheme",
-        backgroundColor: "transparent",
-        rowsCount: 2,
-        scales: [{
-            showRanges: true,
-            radius: 150,
-            showScaleBar: true,
-            size: 1,
-            border: {
-                width: 0.5
-            },
-            showIndicators: true,
-            showLabels: true,
-            pointers: [{
-                showBackNeedle: true,
-                backNeedleLength: 20,
-                length: 120,
-                width: 7
-            }, {
-                type: "marker",
-                markerType: "diamond",
-                distanceFromScale: 5,
-                placement: "center",
-                backgroundColor: "#29A4D9",
-                length: 25,
-                width: 15
-            }],
-            ticks: [{
-                type: "major",
-                distanceFromScale: 5,
-                height: 16,
-                width: 1,
-                color: "#8c8c8c"
-            }, {
-                type: "minor",
-                height: 6,
-                width: 1,
-                distanceFromScale: 2,
-                color: "#8c8c8c"
-            }],
-            labels: [{
-                color: "#8c8c8c"
-            }],
-            ranges: [{
-                distanceFromScale: -5,
-                backgroundColor: "#fc0606",
-                border: {
-                    color: "#fc0606"
-                }
-            }, {
-                distanceFromScale: -5
-            }],
-            customLabels: [{
-                position: {
-                    x: 180,
-                    y: 290
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 330
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 150
-                },
-                font: {
-                    size: "12px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }]
-        }]
-    });
+$("#OlapGauge1").ejOlapGauge({
+    url: "../OlapGauge",
+    rowsCount: 2,
+    //...
 });
-
 
 {% endhighlight %}
 
-![](/js/OlapGauge/Layout_images/Layout_img1.png) 
+![](Layout_images/row based.png) 
 
-### Column Count
+##Column-wise Layout
 
-You can set the number of gauges to be displayed in column using [columnsCount](/js/api/ejOlapGauge#members:columnscount) property. By default the value is **0**.
+Gauges can be arranged in specified number of columns by using the [`columnsCount`](/js/api/ejolapgauge#members:columnscount) property.
 
 {% highlight js %}
 
-$(function() {
-    $("#OlapGauge1").ejOlapGauge({
-        url: "../wcf/OlapGaugeService.svc",
-        enableTooltip: true,
-        backgroundColor: "transparent",
-        columnsCount: 2,
-        scales: [{
-            showRanges: true,
-            radius: 150,
-            showScaleBar: true,
-            size: 1,
-            border: {
-                width: 0.5
-            },
-            showIndicators: true,
-            showLabels: true,
-            pointers: [{
-                showBackNeedle: true,
-                backNeedleLength: 20,
-                length: 120,
-                width: 7
-            }, {
-                type: "marker",
-                markerType: "diamond",
-                distanceFromScale: 5,
-                placement: "center",
-                backgroundColor: "#29A4D9",
-                length: 25,
-                width: 15
-            }],
-            ticks: [{
-                type: "major",
-                distanceFromScale: 2,
-                height: 16,
-                width: 1,
-                color: "#8c8c8c"
-            }, {
-                type: "minor",
-                height: 6,
-                width: 1,
-                distanceFromScale: 2,
-                color: "#8c8c8c"
-            }],
-            labels: [{
-                color: "#8c8c8c"
-            }],
-            ranges: [{
-                distanceFromScale: -5,
-                backgroundColor: "#fc0606",
-                border: {
-                    color: "#fc0606"
-                }
-            }, {
-                distanceFromScale: -5
-            }],
-            customLabels: [{
-                position: {
-                    x: 180,
-                    y: 290
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 320
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 150
-                },
-                font: {
-                    size: "12px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }]
-        }]
-    });
+$("#OlapGauge1").ejOlapGauge({
+    url: "../OlapGauge",
+    columnsCount: 2,
+    //...
 });
-
 
 {% endhighlight %}
 
-![](/js/OlapGauge/Layout_images/Layout_img2.png) 
+![](Layout_images/column based.png) 
 

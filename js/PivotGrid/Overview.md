@@ -9,16 +9,14 @@ documentation: ug
 
 # Overview 
 
-The PivotGrid control is easily configurable, presentation-quality business control that reads OLAP data and allows to create multi-dimensional views for analysis satisfying business user needs.
+PivotGrid control is an easily configurable, presentation-quality business control that reads both OLAP and Relational datasource, allows to create multi-dimensional views for analysis and satisfying business user needs.
 
-##Key Features
+Some of the key feature available in PivotGrid are listed below:
 
-The key features of the **PivotGrid** control is as follows:
-
- * **Data Source:** You can bind the **PivotGrid** control with **Microsoft Analysis Services** databases, **XML/A** data sources and **Relational** data sources.
- * **Drill-down support:** When you click on an item, it moves to a greater level of detail.
- * **Virtual Scrolling:** You can scroll vertically and horizontally to view the records in pages dynamically and efficiently.
- * **Hyperlink:** You can hyperlink the cells to retrieve a detailed description of a particular cell. 
-
-
+1. Data Binding: Supports both OLAP and Relational datasource databinding in the same environment. 
+2. PivotTable Field List: Lists the entire datasource bound to PivotGrid and allows UI interaction such as filtering and drag drop operation of any measure, dimension, hierarchy, level and field at runtime.  
+3. Grouping Bar: Supports UI interaction at runtime through sorting, filtering and drag drop operation of the existing field items bound through report. 
+4. Grid Layout: Four different layouts such as normal, top summary, no summary and excel-like layout are supported.
+5. Export: PivotGrid can be exported to Word, PDF, CSV and Excel documents.
+6. PivotGrid control specific features such as hyperlink, cell selection, conditional formatting, RTL, globalization and localization are supported as well.  
 

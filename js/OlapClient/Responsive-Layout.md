@@ -9,33 +9,20 @@ documentation: ug
 
 # Responsive Layout
 
-**Responsive layout** is aimed at crafting sites to provide an optimal viewing experience - easy reading. It also provides navigation with a minimum of resizing, panning, and scrolling across a wide range of devices from tablet to desktop. To get responsive layout for **OlapClient,** enable [isResponsive](/js/api/ejOlapClient#members:isresponsive) API to true. By using this feature, you can achieve an effective view of the **OlapClient** control in all devices including desktops, tablets, mobiles, etc.
+OlapClient widget supports responsive rendering based on the target device (desktop & tablet) resolution. It supports resolution upto 1024x600. You can enable responsiveness in OlapClient by setting [`isResponsive`](/js/api/ejolapclient#members:isresponsive) property to true.
 
 {% highlight js %}
 
-$(function() {
-    $("#OlapClient1").ejOlapClient({
-        url: "../wcf/OlapClientService.svc",
-        isResponsive: true,
-        chartLoad: "setChartProperties"
-    });
+$("#OlapClient").ejOlapClient({
+    url: "../OlapClient",
+    title: "OLAP Browser",
+    isResponsive: true
 });
-
-function setChartProperties(args) {
-    this.model.load = "loadTheme";
-};
 
 {% endhighlight %}
 
-![](/js/OlapClient/Responsive-Layout_images/Responsive-Layout_img2.png)
+![](Responsive-Layout_images/responsive.png)
 
-Normal View
-{:.caption}
-
-![](/js/OlapClient/Responsive-Layout_images/Responsive-Layout_img3.png)
-
-Responsive View
-{:.caption}
 
 
 
