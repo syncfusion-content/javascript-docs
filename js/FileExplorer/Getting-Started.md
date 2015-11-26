@@ -7,89 +7,201 @@ control: File Explorer
 documentation: ug
 ---
 
+
 # Getting Started
 
-This section explains briefly about how to create a **FileExplorer** in your application with **JavaScript.**
+The following section is briefly explain the things to get started with FileExplorer control.
 
-**Essential JavaScript FileExplorer** widget provides support to access the online file system and manage the files in an efficient way. From the following guidelines, you can learn how to access online file system and managing the files using FileExplorer control.
+## Preparing the HTML document
 
-The following screenshot demonstrates the functionality of **FileExplorer** with details view and thumbnail view.
-
-![](/js/FileExplorer/Getting-Started_images/Getting-Started_img1.png)
-
-FileExplorer Control with Grid view
-{:.caption}
-
-![](/js/FileExplorer/Getting-Started_images/Getting-Started_img2.png)
-
-FileExplorer Control with Thumbnail view
-{:.caption}
-
-In the above screenshot, you can access and manage the remote file system. While performing the operation on files like delete, rename etc, this is handled using Web API service.
-
-## Create FileExplorer widgets
-
-**Essential JavaScript FileExplorer** widget basically renders built-in features like accessing online file system through web and manage files like creating a folder, upload files, delete, rename, move or copy and searching files.  You can easily create the FileExplorer widget by using the following steps.
-
-Create an **HTML** file and add the following template to the **HTML** file.
+Create a new HTML file and include the below code: 
 
 {% highlight html %}
 
-<!doctype html>
-<html>
-   <head>
-      <title>Essential Studio for JavaScript :FileExplorer</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-      <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" />
-      <script src=" http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js "></script>
-      <script src=" http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js "></script>
-      <script src=" http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js "></script>
-      <script src=" http://cdn.syncfusion.com/js/assets/external/jsrender.min.js "></script>
-      <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"> </script>    
-   </head>
-   <body>
-      <!--add your FileExplorer elements here-->
-      <!--add your Script section at here-->
-      <!--add your CSS section at here-->    
-   </body>
-</html>
+    <!DOCTYPE html>
+
+    <html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title> </title>
+
+    </head>
+
+    <body>
+
+    </body>
+
+    </html>
 
 {% endhighlight %}
 
-Add div element to render a **FileExplorer.**
+## Adding the references
 
-{% highlight html %}
+To include the control in the application the following references need to be added:
 
-<div id="fileExplorer"></div>
+* CSS references
+* Script references
 
-{% endhighlight %}
+### CSS references
 
-Initialize the script for **FileExplorer.**
+Add the below CSS reference in the head section, for the default theme
 
-N>  ajaxAction API used to perform ajax operation like read, delete creating folder etc, using ajaxAction property, mention the server class url. This server class that is provided handles ajax action, that is triggered client-side, same as uploading file and downloading file, customizable ajaxSettings are used. The upload property is used to call server action method, that uploads files to the server and downloads the property used to call server action to download files, that are located in the given path.  Here the path property is an important one, as you can mention the root path of file system using the path.
+    <table>
+        <tr>
+            <td>
+                <link rel="stylesheet" href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" /><br /><br />
+            </td>
+        </tr>
+    </table>
+
+N> Essential JS widgets having the support for 13 inbuilt themes, to know more please check [here](http://docs.syncfusion.com/js/theming-in-essential-javascript-components#)
+
+### Script references
+
+The external script dependencies of the FileExplorer widget are,
+
+* [jQuery 1.7.1](http://jquery.com/#) or later versions.
+* [jQuery.easing](http://gsgd.co.uk/sandbox/jquery/easing/#) - to support the animation effects.
+* [jsrender](https://www.jsviews.com/#jsrender) – for grid view template.
+
+And the internal script dependencies of the FileExplorer widget are:
+
+<table>
+<tr>
+<th>
+File</th><th>
+Description/Usage</th></tr>
+<tr>
+<td>
+ej.core.min.js<br/><br/></td><td>
+Must be referred always before using all the JS controls.<br/><br/></td></tr>
+<tr>
+<td>
+ej.data.min.js<br/><br/></td><td>
+Used to handle data operation and should be used while binding data to JS controls.<br/><br/></td></tr>
+<tr>
+<td>
+ej. draggable.min.js<br/><br/></td><td>
+Used to handle the drag and drop functionality<br/><br/></td></tr>
+<tr>
+<td>
+ej.scroller.min.js<br/><br/></td><td>
+Used to show the scroller in the layout area<br/><br/></td></tr>
+<tr>
+<td>
+ej.button.min.js<br/><br/></td><td>
+Used to display the buttons in the toolbar<br/><br/></td></tr>
+<tr>
+<td>
+ej.treeview.min.js<br/><br/></td><td>
+Used to display the treeview in the navigation pane<br/><br/></td></tr>
+<tr>
+<td>
+ej.uploadbox.min.js<br/><br/></td><td>
+Used to perform the upload functionality <br/><br/></td></tr>
+<tr>
+<td>
+ej.waitingpopup.min.js<br/><br/></td><td>
+Used to showcase the waiting popup<br/><br/></td></tr>
+<tr>
+<td>
+ej.dialog.min.js<br/><br/></td><td>
+Used to create the alert windows <br/><br/></td></tr>
+<tr>
+<td>
+ej.splitter.min.js<br/><br/></td><td>
+Used as the body section to separate the navigation and layout area<br/><br/></td></tr>
+<tr>
+<td>
+ej.toolbar.min.js<br/><br/></td><td>
+Used to showcase the hearer section<br/><br/></td></tr>
+<tr>
+<td>
+ej.menu.min.js<br/><br/></td><td>
+Used to showcase the context menu<br/><br/></td></tr>
+<tr>
+<td>
+ej.grid.min.js<br/><br/></td><td>
+Used to showcase the grid layout view<br/><br/></td></tr>
+</table>
+
+For getting started you can use the “**ej.web.all.min.js**” file, which encapsulates all the `ej` controls and frameworks in one single file. 
+
+So you can add the below Script references in the head section:
 
 {% highlight js %}
 
-    $(function() {
-       var localServ = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
-       $("#fileExplorer").ejFileExplorer({
-          fileTypes: "*.png, *.gif, *.jpg, *.jpeg, *.docx",
-          layout: "grid",
-          path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-          ajaxAction: localServ,
-          ajaxSettings: {
-             upload: {
-                url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Upload{0}"
-             },
-             download: {
-                url: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/Download{0}"
-             }
-          }
-       });
-    });
+
+    <!--External script references-->
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js"> </script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script>
+
+    <script src="http://cdn.syncfusion.com/js/assets/external/jsrender.min.js"></script>
+
+    <!--Internal script references-->
+
+    <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js"></script>
+
 
 {% endhighlight %}
 
-The following screenshot displays a **FileExplorer** control.
+N> The above Script and CSS references uses the [CDN links](http://docs.syncfusion.com/js/cdn#). In case if you need to refer the local files then you can copy the corresponding files from the [installed location](http://docs.syncfusion.com/js/installation-and-deployment#) and can include into your application directory
 
-![](/js/FileExplorer/Getting-Started_images/Getting-Started_img4.png)
+N> In production we recommend you to use our [Custom script generator](http://docs.syncfusion.com/js/include-only-the-needed-widgets#) to create custom script file with required controls and its dependencies only]
+
+## Adding the control element 
+
+The control can be created from a div element. So you can add the div element into your page at where you want to render the FileExplorer.
+
+{% highlight html %}
+
+		<div id="fileExplorer"></div>
+
+{% endhighlight %}
+
+## Initialize and configure the control
+
+Once added the element you can initialize the control from the script section like below:
+
+{% highlight js %}
+
+        $(function () {
+
+            var fileSystemPath = "http://mvc.syncfusion.com/ODataServices/FileBrowser/";
+
+            var ajaxActionHandler = "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/PerformAction";
+
+            $("#fileExplorer").ejFileExplorer({
+
+                path: fileSystemPath,
+
+                ajaxAction: ajaxActionHandler
+
+            });
+
+        });
+
+{% endhighlight %}
+
+Here [path](http://help.syncfusion.com/js/api/ejfileexplorer#members:path) and [ajaxAction](http://help.syncfusion.com/js/api/ejfileexplorer#members:ajaxaction) are the mandatory configuration to showcase the FileExplorer control.
+
+    <table>
+        <tr>
+            <td>
+                N> As you know FileExplorer is a client side control but it depends on the server side actions. So in JavaScript to handle the server side actions we are using the Web API service and it was hosted in our server.<br /><br />
+            </td>
+        </tr>
+    </table>
+	
+Once you have completed the above steps, you get an output like below
+
+![](Getting-Started_images/Getting-Started_img1.png)
+
+
