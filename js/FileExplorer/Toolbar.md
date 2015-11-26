@@ -81,7 +81,7 @@ It refreshes the current directory.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Upload <br/><br/></td><td>
-It uploads a file or list of files into the current directory.<br/><br/>And you can customize the upload configurations, for details check {{'[here](F:\UG-documentation\FileExplorer\FileExplorer_UG.docx#_Customizing_the_Upload"")'| markdownify }}.<br/><br/><br/><br/></td></tr>
+It uploads a file or list of files into the current directory.<br/><br/>And you can customize the upload configurations, for details check {{'[here](#customizing-the-upload)'| markdownify }}.<br/><br/><br/><br/></td></tr>
 <tr>
 <td>
 Delete <br/><br/></td><td>

@@ -14,11 +14,11 @@ TreeView control for JavaScript represents hierarchical data in tree like struct
 
 ## Key features
 
-* [Data population](#_TreeView_with_Data) 
-* [Node manipulations](#_Node_Manipulations)
-* [Drag and drop](#_Drag_and_Drop)
-* [Template](#_Template_Option)
-* Checkbox
-* [Accessibility](#_Accessibility)
-* [Appearance and styling](#_Styling)
+* [Data population](http://help.syncfusion.com/js/treeview/populate-data) 
+* [Node manipulations](http://help.syncfusion.com/js/treeview/tree-node#node-manipulations)
+* [Drag and drop](http://help.syncfusion.com/js/treeview/drag-and-drop)
+* [Template](http://help.syncfusion.com/js/treeview/template-support)
+* [Checkbox](http://help.syncfusion.com/js/treeview/checkbox-support)
+* Accessibility
+* Appearance and styling
 
