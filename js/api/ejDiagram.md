@@ -15351,7 +15351,7 @@ name{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description last">to specify the connector properties that have to be updated</td>
 </tr>
 </tbody>
@@ -15472,7 +15472,7 @@ name{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description last">to specify the properties of node that have to be updated</td>
 </tr>
 </tbody>
@@ -15525,7 +15525,7 @@ port{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">the new porperties of the port</td>
+<td class="description last">the new properties of the port</td>
 </tr>
 </tbody>
 </table>
