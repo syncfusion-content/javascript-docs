@@ -31,47 +31,19 @@ $("#diagram").ejDiagram();
 #### Requires
 
 * module:jquery.js
-
-
 * module:jquery.easing.min.js
-
-
 * module:jsrender.min.js
-
-
 * module:ej.core.js
-
-
 * module:ej.draggable.js
-
-
 * module:ej.scroller.js
-
-
 * module:ej.touch.js
-
-
 * module:ej.diagram.js
-
-
 * module:ej.diagramcommon.js
-
-
 * module:ej.diagraminteraction.js
-
-
 * module:ej.diagramsvg.js
-
-
 * module:ej.diagramtools.js
-
-
 * module:ej.diagramlayout.js
-
-
 * module:ej.matrix.js
-
-
 
 
 ## Members
@@ -350,7 +322,6 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 {:#members:connectors-linehitpadding}
 
 Defines padding set to line to ease interaction
-
 
 
 #### Default Value 
