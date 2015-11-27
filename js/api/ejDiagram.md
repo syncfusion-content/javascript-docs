@@ -221,7 +221,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.horizontalAlign mymember <a href="global.html#HorizontalAlignment">HorizontalAlignment</a></span>
+### connectors.horizontalAlign HorizontalAlignment
 {:#members:connectors-horizontalalign}
 
 To set the horizontal alignment of connector.Applicable if the parent is group.
@@ -1437,7 +1437,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.verticalAlign mymember <a href="global.html#VerticalAlignment">VerticalAlignment</a></span>
+### connectors.verticalAlign VerticalAlignment
 {:#members:connectors-verticalalign}
 
 To set the vertical alignment of connector.Applicable if the parent is group.
@@ -3038,7 +3038,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.horizontalAlign mymember <a href="global.html#HorizontalAlignment">HorizontalAlignment</a></span>
+### nodes.horizontalAlign HorizontalAlignment
 {:#members:nodes-horizontalalign}
 
 To set the horizontal alignment of node. Applicable if the type is group.
@@ -5229,7 +5229,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.vertical Align mymember <a href="global.html#VerticalAlignment">VerticalAlignment</a></span>
+### nodes.verticalAlign VerticalAlignment
 {:#members:nodes-vertical}
 
 To set the Vertical alignment of node. Applicable if the type is group.
