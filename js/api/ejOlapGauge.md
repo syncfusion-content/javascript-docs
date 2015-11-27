@@ -3,26 +3,25 @@ layout: post
 title: ejOlapGauge
 documentation: API
 platform: js
+keywords: ejOlapGauge, API, Essential JS OlapGauge
 metaname: 
 metacontent: 
 ---
 
-# Custom Design for Html OLAP Gauge control.
+# OlapGauge
+
+Custom Design for Html OLAP Gauge control.
+
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejOlapGauge()
+
+{% endhighlight %}
 
 
-
-
-
-$(element).ejOlapGauge<span class="signature">()</span>
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -31,64 +30,45 @@ Example
 <script>
 // Create OLAP Gauge
 $("#OlapGauge").ejOlapGauge(...);       
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
-
-
-Requires
-{:.require}
-
+#### Requires
 
 * module:jquery-1.10.2.min.js
-
 * module:jquery.easing.1.3.min.js
-
 * module:jquery.globalize.min.js
-
 * module:ej.core.js
-
 * module:ej.data.js
-
 * module:ej.waitingpopup.js
-
 * module:ej.circulargauge.js
-
 * module:ej.olapgauge.js
+
 
 
 ## Members
 
 
-
-
-### columnsCount<span class="type-signature type number">number</span>
+### columnsCount `number`
 {:#members:columnscount}
-
-
-
 
 Sets the number of colunsCount in OLAP Gauges for its arrangement.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 0
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set columnsCount API value during initialization  
-$("#OlapGauge").ejOlapGauge({  columnsCount: 1}); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge({  columnsCount: 1}); 
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -98,38 +78,32 @@ $("#OlapGauge").ejOlapGauge({  columnsCount: 1}); {% endhighlight %}
 $("#OlapGauge").ejOlapGauge("option", "columnsCount");
                       
 //Sets the columnsCount value 
-$("#OlapGauge").ejOlapGauge("option", "columnsCount", 2 ); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "columnsCount", 2 ); 
+
+{% endhighlight %}
 
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
-
-
-
 
 Specify the CSS class to OLAP Gauge to achieve custom theme.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * ""
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 // Set the CSS class during initialization.                     
-$("#OlapGauge").ejOlapGauge({  cssClass : "gradient-lime" }); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge({  cssClass : "gradient-lime" });
+
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -138,38 +112,31 @@ $("#OlapGauge").ejOlapGauge({  cssClass : "gradient-lime" }); {% endhighlight %}
 // Gets the CSS class value.            
 $("#OlapGauge").ejOlapGauge("option", "cssClass");                      
 // Sets the CSS class to OLAP Gauge
-$("#OlapGauge").ejOlapGauge("option", "cssClass",  "gradient-lime" );{% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "cssClass",  "gradient-lime" );
+
+{% endhighlight %}
 
 
 
-
-### customObject<span class="type-signature type object">object</span>
+### customObject `object`
 {:#members:customobject}
-
-
-
 
 Custom object to pass additional information between client-end and service-end.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set customObject API value during initialization  
-$("#OlapGauge").ejOlapGauge({  customObject: {"key":"Hello World"}}); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge({  customObject: {"key":"Hello World"}}); 
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -179,38 +146,31 @@ $("#OlapGauge").ejOlapGauge({  customObject: {"key":"Hello World"}}); {% endhigh
 $("#OlapGauge").ejOlapGauge("option", "customObject");
                       
 //Sets the customObject value 
-$("#OlapGauge").ejOlapGauge("option", "customObject",  {"key":"Hi Syncfusion!"} ); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "customObject",  {"key":"Hi Syncfusion!"} ); 
+
+{% endhighlight %}
 
 
 
-
-### enableTooltip<span class="type-signature type boolean">boolean</span>
+### enableTooltip `boolean`
 {:#members:enabletooltip}
-
-
-
 
 Enables/disables tooltip in OLAP Gauge.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set enableTooltip API value during initialization  
-$("#OlapGauge").ejOlapGauge({  enableTooltip: true}); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge({  enableTooltip: true}); 
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -220,38 +180,31 @@ $("#OlapGauge").ejOlapGauge({  enableTooltip: true}); {% endhighlight %}
 $("#OlapGauge").ejOlapGauge("option", "enableTooltip");
                      
 //Sets the enableTooltip value 
-$("#OlapGauge").ejOlapGauge("option", "enableTooltip", false ); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "enableTooltip", false ); 
+
+{% endhighlight %}
 
 
 
-
-### isResponsive<span class="type-signature type boolean">Boolean</span>
+### isResponsive `boolean`
 {:#members:isresponsive}
-
-
-
 
 Allows the user to enable Responsive layout support.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * false
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set the isResponsive option during initialization  
-$("#OlapGauge").ejOlapGauge({isResponsive: true});{% endhighlight %}
+$("#OlapGauge").ejOlapGauge({isResponsive: true});
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -261,38 +214,31 @@ $("#OlapGauge").ejOlapGauge({isResponsive: true});{% endhighlight %}
 $("#OlapGauge").ejOlapGauge("option", "isResponsive");
                       
 //Sets the reponsive layout
-$("#OlapGauge").ejOlapGauge("option", "isResponsive","true"); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "isResponsive","true");
+
+{% endhighlight %}
 
 
 
-
-### labelFormatSettings<span class="type-signature type enum">enum</span>
+### labelFormatSettings `enum`
 {:#members:labelformatsettings}
-
-
-
 
 Number format allows you to change the format of label values in OLAP Gauge.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * Default
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set numberFormat API value during initialization  
-$("#OlapGauge").ejOlapGauge({  numberFormat: ej.olap.OlapGauge.numberFormat.Default}); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge({  numberFormat: ej.olap.OlapGauge.numberFormat.Default});
+
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -302,38 +248,33 @@ $("#OlapGauge").ejOlapGauge({  numberFormat: ej.olap.OlapGauge.numberFormat.Defa
 $("#OlapGauge").ejOlapGauge("option", "numberFormat");
                       
 //Sets the numberFormat value 
-$("#OlapGauge").ejOlapGauge("option", "numberFormat", ej.olap.OlapGauge.numberFormat.Default); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "numberFormat", ej.olap.OlapGauge.numberFormat.Default); 
+
+{% endhighlight %}
 
 
 
 
-### locale<span class="type-signature type string">string</span>
+### locale `string`
 {:#members:locale}
-
-
-
 
 Sets the localized language for the control.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "en-US"
 
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set localization API value during initialization  
-$("#OlapGauge").ejOlapGauge({  locale: "fr-FR"}); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge({  locale: "fr-FR"}); 
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -343,38 +284,31 @@ $("#OlapGauge").ejOlapGauge({  locale: "fr-FR"}); {% endhighlight %}
 $("#OlapGauge").ejOlapGauge("option", "locale");
                     
 //Sets the localization value 
-$("#OlapGauge").ejOlapGauge("option", "locale",  "fr-FR" ); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "locale",  "fr-FR" );
+
+ {% endhighlight %}
 
 
 
-
-### rowsCount<span class="type-signature type number">number</span>
+### rowsCount `number`
 {:#members:rowscount}
-
-
-
 
 Sets the number of rows in OLAP Gauges for its arrangement.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * 0
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set rowsCount API value during initialization  
-$("#OlapGauge").ejOlapGauge({  rowsCount: 1}); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge({  rowsCount: 1});
+
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -384,38 +318,31 @@ $("#OlapGauge").ejOlapGauge({  rowsCount: 1}); {% endhighlight %}
 $("#OlapGauge").ejOlapGauge("option", "rowsCount");
                  
 //Sets the rowsCount value 
-$("#OlapGauge").ejOlapGauge("option", "rowsCount", 2); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "rowsCount", 2); 
+
+{% endhighlight %}
 
 
 
-
-### scales<span class="type-signature type object">object</span>
+### scales `object`
 {:#members:scales}
-
-
-
 
 Sets the scale values such as pointers, indicators, etc... for OLAP Gauge.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * null
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set scales API value during initialization  
-$("#OlapGauge").ejOlapGauge({  scales: {showRanges: true, showIndicators: true}}); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge({  scales: {showRanges: true, showIndicators: true}});
+
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -425,38 +352,32 @@ $("#OlapGauge").ejOlapGauge({  scales: {showRanges: true, showIndicators: true}}
 $("#OlapGauge").ejOlapGauge("option", "scales");
                     
 //Sets the scales value 
-$("#OlapGauge").ejOlapGauge("option", "scales", {showRanges: true, showIndicators: true}); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "scales", {showRanges: true, showIndicators: true});
+
+{% endhighlight %}
 
 
 
-
-### serviceMethodSettings<span class="type-signature type object">object</span>
+### serviceMethodSettings `object`
 {:#members:servicemethodsettings}
-
-
-
 
 Allows the user to set custom name for the methods at service-end invoked on AJAX post.
 
 
-Default Value:
-{:.param}
 
-
+#### Default Value
 
 * null
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set serviceMethodSettings API value, to invoke the appropriate service method on UI operation.  
-$("#OlapGauge").ejOlapGauge({  serviceMethodSettings: {initialize: "MyMethod"});{% endhighlight %}
+$("#OlapGauge").ejOlapGauge({  serviceMethodSettings: {initialize: "MyMethod"});
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -466,38 +387,30 @@ $("#OlapGauge").ejOlapGauge({  serviceMethodSettings: {initialize: "MyMethod"});
 $("#OlapGauge").ejOlapGauge("option", "serviceMethodSettings");
                      
 //Sets the serviceMethodSettings value 
-$("#OlapGauge").ejOlapGauge("option", "serviceMethodSettings",  {initialize: "MyMethod"} ); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "serviceMethodSettings",  {initialize: "MyMethod"} ); 
+
+{% endhighlight %}
 
 
-
-
-### serviceMethodSettings.initialize<span class="type-signature type string">string</span>
+### serviceMethodSettings.initialize `string`
 {:#members:servicemethodsettings-initialize}
-
-
-
 
 Allows the user to set the custom name for the service method that&rsquo;s responsible for initializing OLAP Guage.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * "InitializeGuage"
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set initialize API value, to invoke the corresponding service method for OLAP Gauge initialization.
- $("#OlapGauge").ejOlapGauge({  serviceMethodSettings: {initialize: "InitializeGuageMyMethod"});{% endhighlight %}
+ $("#OlapGauge").ejOlapGauge({  serviceMethodSettings: {initialize: "InitializeGuageMyMethod"});
+ 
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -507,38 +420,30 @@ Example
 $("#OlapGauge").ejOlapGauge("option", "serviceMethodSettings");
    
 //Sets the initialize value 
-$("#OlapGauge").ejOlapGauge("option", "serviceMethodSettings.initialize", "InitializeGuageMyMethod" ); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "serviceMethodSettings.initialize", "InitializeGuageMyMethod" ); 
+
+{% endhighlight %}
 
 
-
-
-### showHeaderLabel<span class="type-signature type boolean">boolean</span>
+### showHeaderLabel `boolean`
 {:#members:showheaderlabel}
-
-
-
 
 Enables/disables the header labels in OLAP Gauge.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * true
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set showHeaderLabel API value during initialization  
-$("#OlapGauge").ejOlapGauge({  showHeaderLabel: false}); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge({  showHeaderLabel: false}); 
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -548,38 +453,31 @@ $("#OlapGauge").ejOlapGauge({  showHeaderLabel: false}); {% endhighlight %}
 $("#OlapGauge").ejOlapGauge("option", "showHeaderLabel");
                    
 //Sets the showHeaderLabel value 
-$("#OlapGauge").ejOlapGauge("option", "showHeaderLabel", true); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "showHeaderLabel", true); 
+
+{% endhighlight %}
 
 
 
 
-### url<span class="type-signature type string">string</span>
+### url `string`
 {:#members:url}
-
-
-
 
 Connects the service using the specified URL for any server updates.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * ""
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set url API value during initialization  
-$("#OlapGauge").ejOlapGauge({  url: "/OlapGaugeService.svc"}); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge({  url: "/OlapGaugeService.svc"}); 
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -589,28 +487,20 @@ $("#OlapGauge").ejOlapGauge({  url: "/OlapGaugeService.svc"}); {% endhighlight %
 $("#OlapGauge").ejOlapGauge("option", "url");
                        
 //Sets the url value 
-$("#OlapGauge").ejOlapGauge("option", "url",  "/OlapGaugeService" ); {% endhighlight %}
+$("#OlapGauge").ejOlapGauge("option", "url",  "/OlapGaugeService" ); 
+
+{% endhighlight %}
 
 
 
 ## Methods
 
-
-
-
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
-
-
-
 
 Destroy the OLAP Gauge widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -620,7 +510,9 @@ Example
 // Create OLAP Gauge
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.destroy(); // destroy the OLAP Gauge
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -630,24 +522,19 @@ gaugeObj.destroy(); // destroy the OLAP Gauge
 <script>
 // enable the OLAP Gauge
 $("#OlapGauge").ejOlapGauge("destroy"); 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
-
-### doAjaxPost<span class="signature">()</span>
+### doAjaxPost()
 {:#methods:doajaxpost}
-
-
-
 
 Perform an asynchronous HTTP (Ajax) request.
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -679,24 +566,20 @@ $('#OlapGauge').ejOlapGauge({
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.doAjaxPost("POST", "/OlapGaugeService.svc/Initialize", {"key", "Hello World"}, "renderControlSuccess", null);
 // initiate an Ajax request
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
 
-### progressStatus<span class="signature">()</span>
+### progressStatus()
 {:#methods:progressstatus}
-
-
-
 
 This function receives JSON data and prepares for rendering the widget after service request.
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -728,24 +611,17 @@ $('#OlapGauge').ejOlapGauge({
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.progressStatus({"OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords()});
 // creating OLAP Gauge after Ajax request
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
-
-
-### refresh<span class="signature">()</span>
+### refresh()
 {:#methods:refresh}
-
-
-
 
 This function is used to refresh the OLAP Gauge at client side.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -777,24 +653,18 @@ $('#OlapGauge').ejOlapGauge({
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.refresh();
 // refresh the OLAP Gauge in client-side.
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
-
-
-### removeImg<span class="signature">()</span>
+### removeImg()
 {:#methods:removeimg}
-
-
-
 
 This function removes the KPI image tags in OLAP Gauge control.
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -826,24 +696,17 @@ $('#OlapGauge').ejOlapGauge({
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.removeImg();
 // removes HTML image tags inside of OLAP Gauge.
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
-
-
-### renderControlFromJSON<span class="signature">()</span>
+### renderControlFromJSON()
 {:#methods:rendercontrolfromjson}
-
-
-
 
 This function receives the JSON formatted datasource to render the OLAP Gauge control.
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -875,20 +738,16 @@ $('#OlapGauge').ejOlapGauge({
 var gaugeObj = $("#OlapGauge").data("ejOlapGauge");
 gaugeObj.renderControlFromJSON(this.getJSONRecords());
 // render the OLAP Gauge from JSON formatted data.
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
 ## Events
 
-
-
-
 ### afterServiceInvoke
 {:#events:afterserviceinvoke}
-
-
-
 
 Fires when it reaches client script after any Ajax request.
 
@@ -897,59 +756,59 @@ Fires when it reaches client script after any Ajax request.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Gauge.
+<td class="type">Object</td>
+<td class="description">Event parameters from OLAP Gauge.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the current action of OLAP Gauge control.</td>
+<td class="type">string</td>
+<td class="description">return the current action of OLAP Gauge control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">return the custom object bounds with OLAP Gauge control.</td>
+<td class="type">object</td>
+<td class="description">return the custom object bounds with OLAP Gauge control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the outer HTML of OLAP Gauge control.</td>
+<td class="type">string</td>
+<td class="description">return the outer HTML of OLAP Gauge control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Gauge model.</td>
+<td class="type">object</td>
+<td class="description">returns the OLAP Gauge model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -959,25 +818,20 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //afterServiceInvoke event for OLAP Gauge
 $("#OlapGauge").ejOlapGauge({
    afterServiceInvoke: function (args) {}
-});      {% endhighlight %}
+});      
 
-
+{% endhighlight %}
 
 
 ### beforeServiceInvoke
 {:#events:beforeserviceinvoke}
-
-
-
 
 Fires before any Ajax request passed from OLAP Gauge to service methods.
 
@@ -986,59 +840,59 @@ Fires before any Ajax request passed from OLAP Gauge to service methods.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Gauge.
+<td class="type">Object</td>
+<td class="description">Event parameters from OLAP Gauge.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the current action of OLAP Gauge control.</td>
+<td class="type">string</td>
+<td class="description">return the current action of OLAP Gauge control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">return the custom object bounds with OLAP Gauge control.</td>
+<td class="type">object</td>
+<td class="description">return the custom object bounds with OLAP Gauge control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">return the outer HTML of OLAP Gauge control.</td>
+<td class="type">string</td>
+<td class="description">return the outer HTML of OLAP Gauge control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Gauge model.</td>
+<td class="type">object</td>
+<td class="description">returns the OLAP Gauge model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1048,25 +902,20 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //beforeServiceInvoke event for OLAP Gauge
 $("#OlapGauge").ejOlapGauge({
    beforeServiceInvoke: function (args) {}
-});      {% endhighlight %}
+});      
 
-
+{% endhighlight %}
 
 
 ### load
 {:#events:load}
-
-
-
 
 Fires when gauge started loading at client-side.
 
@@ -1075,41 +924,41 @@ Fires when gauge started loading at client-side.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Gauge.
+<td class="type">Object</td>
+<td class="description">Event parameters from OLAP Gauge.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Gauge model.</td>
+<td class="type">object</td>
+<td class="description">returns the OLAP Gauge model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1119,25 +968,19 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //load event for OLAP Gauge
 $("#OlapGauge").ejOlapGauge({
    load: function (args) {}
-});      {% endhighlight %}
+});      
 
-
-
+{% endhighlight %}
 
 ### renderComplete
 {:#events:rendercomplete}
-
-
-
 
 Fires when OLAP Gauge control completes all operations at client script after any Ajax request.
 
@@ -1146,53 +989,53 @@ Fires when OLAP Gauge control completes all operations at client script after an
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Gauge.
+<td class="type">Object</td>
+<td class="description">Event parameters from OLAP Gauge.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the outer HTML of OLAP Gauge control.</td>
+<td class="type">string</td>
+<td class="description">returns the outer HTML of OLAP Gauge control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the custom object bounded with the control.</td>
+<td class="type">Object</td>
+<td class="description">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Gauge model.</td>
+<td class="type">object</td>
+<td class="description">returns the OLAP Gauge model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1202,25 +1045,21 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //renderCompleteevent for OLAP Gauge
 $("#OlapGauge").ejOlapGauge({
    renderComplete: function (args) {}
-});      {% endhighlight %}
+});      
 
+{% endhighlight %}
 
 
 
 ### renderFailure
 {:#events:renderfailure}
-
-
-
 
 Fires when error occurs during Ajax request.
 
@@ -1229,65 +1068,65 @@ Fires when error occurs during Ajax request.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Gauge.
+<td class="type">Object</td>
+<td class="description">Event parameters from OLAP Gauge.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the outer HTML of OLAP Gauge control.</td>
+<td class="type">string</td>
+<td class="description">returns the outer HTML of OLAP Gauge control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the custom object bounded with the control.</td>
+<td class="type">Object</td>
+<td class="description">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 message{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the error message with error code.</td>
+<td class="type">Object</td>
+<td class="description">returns the error message with error code.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Gauge model.</td>
+<td class="type">object</td>
+<td class="description">returns the OLAP Gauge model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 responseJSON{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the JSON formatted response while error occurs.</td>
+<td class="type">object</td>
+<td class="description">returns the JSON formatted response while error occurs.</td>
 </tr>
 </tbody>
 </table>
@@ -1297,25 +1136,20 @@ responseJSON{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //renderFailure event for OLAP Gauge
 $("#OlapGauge").ejOlapGauge({
    renderFailure: function (args) {}
-}); {% endhighlight %}
+}); 
 
-
+{% endhighlight %}
 
 
 ### renderSuccess
 {:#events:rendersuccess}
-
-
-
 
 Fires when OLAP Gauge control successfully reaches client script after any Ajax request.
 
@@ -1324,53 +1158,53 @@ Fires when OLAP Gauge control successfully reaches client script after any Ajax 
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from OLAP Gauge.
+<td class="type">Object</td>
+<td class="description">Event parameters from OLAP Gauge.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
 element{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the outer HTML of OLAP Gauge control.</td>
+<td class="type">string</td>
+<td class="description">returns the outer HTML of OLAP Gauge control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 customObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the custom object bounded with the control.</td>
+<td class="type">Object</td>
+<td class="description">returns the custom object bounded with the control.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="type">boolean</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the OLAP Gauge model.</td>
+<td class="type">object</td>
+<td class="description">returns the OLAP Gauge model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="type">string</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1380,16 +1214,16 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //renderSuccess event for OLAP Gauge.
 $("#OlapGauge").ejOlapGauge({
    renderSuccess: function (args) {}
-});      {% endhighlight %}
+});      
+
+{% endhighlight %}
 
 
 
