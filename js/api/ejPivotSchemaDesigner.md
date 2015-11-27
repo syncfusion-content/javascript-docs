@@ -3,26 +3,26 @@ layout: post
 title: ejPivotSchemaDesigner
 documentation: API
 platform: js
+keywords: ejPivotSchemaDesigner, API, Essential JS PivotSchemaDesigner
 metaname: 
 metacontent: 
 ---
 
-# Custom Design for Pivot Schema Designer control.
+# PivotSchemaDesigner
+
+Custom Design for Pivot Schema Designer control.
 
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejPivotSchemaDesigner()
+
+{% endhighlight %}
 
 
-
-$(element).ejPivotSchemaDesigner<span class="signature">()</span>
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -31,54 +31,41 @@ Example
 <script>
 // Create Pivot Schema Designer
 $("#PivotSchemaDesigner").ejPivotSchemaDesigner(...);   
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
-
-
-Requires
-{:.require}
-
+#### Requires
 
 * module:jQuery
-
 * module:ej.common.all
-
 * module:ej.tools.js
+
 
 
 ## Members
 
 
-
-
-### cssClass<span class="type-signature type string">String</span>
+### cssClass `string`
 {:#members:cssclass}
-
-
-
 
 Sets the CSS name for custom operation.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * ""
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set the CSS name during initialization  
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({cssClass: "gradient-lime"}); {% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({cssClass: "gradient-lime"});
+
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -87,38 +74,31 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({cssClass: "gradient-lime"}); {%
 // Gets the css name.           
 $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "cssClass");                  
 // Sets the css class to PivotSchemaDesigner
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "cssClass",  "gradient-lime" );{% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "cssClass",  "gradient-lime" );
+
+{% endhighlight %}
 
 
 
-
-### filters<span class="type-signature type array">Array</span>
+### filters `array`
 {:#members:filters}
-
-
-
 
 Allows the user to set the filter list.
 
 
-Default Value:
-{:.param}
-
-
+#### Default Value
 
 * new Array()
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set the filter list during initialization  
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({filterList: true});{% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({filterList: true});
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -128,38 +108,33 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({filterList: true});{% endhighli
 $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "filterList");
                             
 //Sets the filter list
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "filterList","true"); {% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "filterList","true");
+
+ {% endhighlight %}
 
 
 
-
-### height<span class="type-signature type string">String</span>
+### height `string`
 {:#members:height}
-
-
-
 
 Sets the height for PivotSchemaDesigner.
 
 
-Default Value:
-{:.param}
 
+#### Default Value
 
 
 * ""
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set the height during initialization  
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({height: "630px"});     {% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({height: "630px"});     
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -168,38 +143,33 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({height: "630px"});     {% endhi
 // Gets the height.             
 $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "height");                    
 // Sets the height to PivotSchemaDesigner
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "height",  "630px" ); {% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "height",  "630px" ); 
+
+{% endhighlight %}
 
 
 
-
-### pivotCalculations<span class="type-signature type array">Array</span>
+### pivotCalculations `array`
 {:#members:pivotcalculations}
-
-
-
 
 Allows the user to set Pivot Calculation List.
 
 
-Default Value:
-{:.param}
 
-
+#### Default Value
 
 * new Array()
 
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set the pivot calculation cist during initialization  
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });{% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -209,38 +179,32 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });{% endh
 $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList");
                    
 //Sets the pivot calculation list value
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true");{% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true");
+
+{% endhighlight %}
 
 
-
-
-### pivotColumns<span class="type-signature type array">Array</span>
+### pivotColumns `array`
 {:#members:pivotcolumns}
-
-
-
 
 Allows the user to set the pivot column list.
 
 
-Default Value:
-{:.param}
 
-
+#### Default Value
 
 * new Array()
 
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set the pivot column list during initialization  
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: true});{% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: true});
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -250,39 +214,35 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: true});{% 
 $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList");
                    
 //Sets the pivot column list value
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true");{% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true");
+
+{% endhighlight %}
 
 
 
 
-### pivotControl<span class="type-signature type object">object</span>
+### pivotControl `object`
 {:#members:pivotcontrol}
-
-
-
 
 Sets the pivot control bounds with the Pivot Schema Designer.
 
 
-Default Value:
-{:.param}
 
-
+#### Default Value
 
 * null
 
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set the pivot control during initialization  
 var control = $("#PivotSchemaDesigner").data("ejPivotSchemaDesigner");
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotControl: control});{% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotControl: control});
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -292,38 +252,32 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotControl: control});{% endh
 $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotControl");
                   
 //Sets the pivot control
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotControl", control);{% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotControl", control);
+
+{% endhighlight %}
 
 
 
-
-### pivotRows<span class="type-signature type array">Array</span>
+### pivotRows `array`
 {:#members:pivotrows}
-
-
-
 
 Allows the user to set the pivot row list.
 
 
-Default Value:
-{:.param}
 
-
+#### Default Value
 
 * new Array()
 
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set the pivot row list during initialization  
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotRowList: true});{% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotRowList: true});
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -333,38 +287,33 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotRowList: true});{% endhigh
 $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotRowList");
           
 //Sets the pivot row list
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotRowList","true"); {% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotRowList","true"); 
+
+{% endhighlight %}
 
 
 
-
-### pivotTableFields<span class="type-signature type array">Array</span>
+### pivotTableFields `array`
 {:#members:pivottablefields}
-
-
-
 
 Allows the user to Pivot Table Field List to Pivot Schema Designer.
 
 
-Default Value:
-{:.param}
 
-
+#### Default Value
 
 * new Array()
 
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set the Pivot Table Field List during initialization  
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });{% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -374,38 +323,30 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({pivotTableFieldList: });{% endh
 $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList");
            
 //Sets the Pivot Table Field List 
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true"); {% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "pivotTableFieldList","true"); 
+
+{% endhighlight %}
 
 
-
-
-### url<span class="type-signature type string">String</span>
+### url `string`
 {:#members:url}
-
-
-
 
 Connects the service using the specified URL for any server updates. See url
 
 
-Default Value:
-{:.param}
 
-
+#### Default Value
 
 * ""
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set service url during initialization  
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({url: "/wcf/PivotService.svc"});{% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({url: "/wcf/PivotService.svc"});
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -415,38 +356,32 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({url: "/wcf/PivotService.svc"});
 $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option","url");
    
 //Sets the url value 
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option","url", "/wcf/PivotService.svc" ); {% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option","url", "/wcf/PivotService.svc" );
+
+ {% endhighlight %}
 
 
-
-
-### width<span class="type-signature type string">String</span>
+### width `string`
 {:#members:width}
-
-
-
 
 Sets the width for PivotSchemaDesigner.
 
 
-Default Value:
-{:.param}
 
-
+#### Default Value
 
 * ""
 
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //To set the width during initialization  
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner({width: "415px"}); {% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner({width: "415px"}); 
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -455,28 +390,22 @@ $("#PivotSchemaDesigner").ejPivotSchemaDesigner({width: "415px"}); {% endhighlig
 // Gets the width.              
 $("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "width");                     
 // Sets the width to PivotSchemaDesigner
-$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "width",  "415px" ); {% endhighlight %}
+$("#PivotSchemaDesigner").ejPivotSchemaDesigner("option", "width",  "415px" ); 
+
+{% endhighlight %}
 
 
 
 ## Methods
 
-
-
-
-### doAjaxPost<span class="signature">()</span>
+### doAjaxPost()
 {:#methods:doajaxpost}
-
-
-
 
 Perform an asynchronous HTTP (Ajax) request.
 
 
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -490,7 +419,9 @@ $('#PivotSchemaDesigner').ejPivotSchemaDesigner({
 var gridObj = $("#PivotSchemaDesigner").data("ejPivotSchemaDesigner");
 gridObj.doAjaxPost("POST", "/PivotGridService.svc/Initialize", {"key", "Hello World"}, "_renderControlSuccess", null);
 // Initiate an Ajax request.
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
