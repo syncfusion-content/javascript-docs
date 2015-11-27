@@ -1,341 +1,145 @@
 ---
 layout: post
 title: ejDiagram
+description: API reference for ejDiagram
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: diagram, ejDiagram, diagram api, syncfusion
 ---
+
+
+# ejDiagram
 
 The diagram control provides 2D surface to visualize the data as shapes, lines, text and images. It can be configured to DOM element such as DIV.
 
+#### Syntax
+$(element).ejDiagram();
 
-
-
-
-
-
-
-
-
-$(element).ejDiagram<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="diagram"></div>
 <script>
 //Create Diagram
-    $("#diagram").ejDiagram();
-</script>{% endhighlight %}
+$("#diagram").ejDiagram();
+</script>
+
+{% endhighlight %}
 
 
-
-
-
-
-
-Requires
-{:.require}
-
-
-
+#### Requires
 
 * module:jquery.js
-
-
 * module:jquery.easing.min.js
-
-
 * module:jsrender.min.js
-
-
 * module:ej.core.js
-
-
 * module:ej.draggable.js
-
-
 * module:ej.scroller.js
-
-
 * module:ej.touch.js
-
-
 * module:ej.diagram.js
-
-
 * module:ej.diagramcommon.js
-
-
 * module:ej.diagraminteraction.js
-
-
 * module:ej.diagramsvg.js
-
-
 * module:ej.diagramtools.js
-
-
 * module:ej.diagramlayout.js
-
-
 * module:ej.matrix.js
-
-
 
 
 ## Members
 
-
-
-
-
-
-
-
-### backgroundColor<span class="type-signature type string">String</span>
+### backgroundColor 'String'
 {:#members:backgroundcolor}
-
-
-
-
-
-
-
 
 Color to be set as the background of the elements
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({ backgroundColor: "red"});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### backgroundImage<span class="type-signature type string">String</span>
+### backgroundImage 'String'
 {:#members:backgroundimage}
-
-
-
-
-
-
-
 
 Image to be set as the background of the elements
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png"});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### bridgeDirection<span class="type-signature type string">String</span>
+### bridgeDirection 'String'
 {:#members:bridgedirection}
-
-
-
-
-
-
-
 
 Sets the bridge direction of connectors
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "top"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="diagramcontent"></div>
 <script>
 $("#diagramContent").ejDiagram({bridgeDirection: "top"} }); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors<span class="type-signature type array">array</span>
+### connectors 'Array'
 {:#members:connectors}
-
-
-
-
-
-
-
 
 Array of connector objects where each object has definition/properties of connector.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * []
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 var connectors = [{ name: "connector" sourceNode: "node1", targetNode: "node2"}];
 $("#diagram").ejDiagram({ connectors:connectors });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.addInfo<span class="type-signature type object">Object</span>
+### connectors.addInfo 'Object'
 {:#members:connectors-addinfo}
-
-
-
-
-
-
-
 
 To provide/save extra information about Connector
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -344,49 +148,21 @@ var connectors = [];
 var addInfo = {Name1:"Connector1",Connector2:"Connector3"}
 connectors=[{addInfo: addInfo}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.bridgeSpace<span class="type-signature type integer">Integer</span>
+### connectors.bridgeSpace 'Number'
 {:#members:connectors-bridgespace}
-
-
-
-
-
-
-
 
 Defines width of the line bridges
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -394,49 +170,21 @@ Example
 var connectors=[];
 connectors=[{bridgeSpace:15}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.constraints<span class="type-signature type enum">enum</span>
+### connectors.constraints 'enum'
 {:#members:connectors-constraints}
-
-
-
-
-
-
-
 
 Enables or disables the behaviors of connector see<a href="global.html#ConnectorConstraints">ConnectorConstraints</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ConnectorConstraints.Default
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -444,49 +192,23 @@ Example
 var connectors = [];
 connectors=[{constraints: ej.datavisualization.Diagram.ConnectorConstraints.Select}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.cornerRadius<span class="type-signature type integer">Integer</span>
+### connectors.cornerRadius 'Number'
 {:#members:connectors-cornerradius}
-
-
-
-
-
-
-
 
 Defines the radius of the rounded corner
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -494,49 +216,23 @@ Example
 var connectors=[];
 connectors=[{cornerRadius:2}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.horizontalAlign<span class="type-signature type horizontalalignment"><a href="global.html#HorizontalAlignment">HorizontalAlignment</a></span>
+### connectors.horizontalAlign HorizontalAlignment
 {:#members:connectors-horizontalalign}
-
-
-
-
-
-
-
 
 To set the horizontal alignment of connector.Applicable if the parent is group.
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * HorizontalAlignment.Left
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -544,49 +240,23 @@ Example
 var connectors = [];
 connectors=[{HorizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Left}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.labels<span class="type-signature type array">Array</span>
+### connectors.labels 'Array'
 {:#members:connectors-labels}
-
-
-
-
-
-
-
 
 Sets the collection of labels of connector
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 Refer nodes label for label properties details 
@@ -595,49 +265,23 @@ Refer nodes label for label properties details
 var label = [];
 label = [{ "text": "Connector1", "fontColor": "Red"}];
 $("#diagramcontent").ejDiagram({label:label});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.lineColor<span class="type-signature type string">String</span>
+### connectors.lineColor 'String'
 {:#members:connectors-linecolor}
-
-
-
-
-
-
-
 
 Sets the stroke color of the connector
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * black
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -645,49 +289,23 @@ Example
 var connectors = [];
 connectors=[{lineColor:"blue"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.lineDashArray<span class="type-signature type string">String</span>
+### connectors.lineDashArray 'String'
 {:#members:connectors-linedasharray}
-
-
-
-
-
-
-
 
 Sets the pattern of dashes and gaps used to stroke the path of connector
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -695,49 +313,22 @@ Example
 var connectors = [];
 connectors=[{lineDashArray:"4 4"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.lineHitPadding<span class="type-signature type int">Int</span>
+### connectors.lineHitPadding 'Number'
 {:#members:connectors-linehitpadding}
-
-
-
-
-
-
-
 
 Defines padding set to line to ease interaction
 
 
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 10
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -745,49 +336,23 @@ Example
 var connectors= [];
 connectors=[{lineHitPadding: 30}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.lineWidth<span class="type-signature type int">Int</span>
+### connectors.lineWidth 'Number'
 {:#members:connectors-linewidth}
-
-
-
-
-
-
-
 
 Sets the width of the line
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 1
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -795,49 +360,23 @@ Example
 var connectors = [];
 connectors=[{lineWidth:4}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.marginBottom<span class="type-signature type int">Int</span>
+### connectors.marginBottom 'Number'
 {:#members:connectors-marginbottom}
-
-
-
-
-
-
-
 
 To set margin bottom for the connector.Applicable if the parent is group.
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -845,49 +384,23 @@ Example
 var connectors = [];
 connectors=[{marginBottom: 1}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.marginLeft<span class="type-signature type int">Int</span>
+### connectors.marginLeft 'Number'
 {:#members:connectors-marginleft}
-
-
-
-
-
-
-
 
 To set left margin for the connector.Applicable if the parent is group.
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -895,49 +408,23 @@ Example
 var connectors = [];
 connectors=[{name:"connector",marginLeft: 1}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.marginRight<span class="type-signature type int">Int</span>
+### connectors.marginRight 'Number'
 {:#members:connectors-marginright}
-
-
-
-
-
-
-
 
 To set right margin for the connector.Applicable if the parent is group.
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -945,49 +432,23 @@ Example
 var connectors = [];
 connectors=[{marginRight: 1}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.marginTop<span class="type-signature type int">Int</span>
+### connectors.marginTop 'Number'
 {:#members:connectors-margintop}
-
-
-
-
-
-
-
 
 To set top margin for the connector.Applicable if the parent is group.
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -995,49 +456,23 @@ Example
 var connectors = [];
 connectors=[{marginTop: 1}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.name<span class="type-signature type string">String</span>
+### connectors.name 'String'
 {:#members:connectors-name}
-
-
-
-
-
-
-
 
 Sets the name of the connector
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1045,49 +480,23 @@ Example
 var connectors = [];
 connectors=[{name:"Connector1"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.opacity<span class="type-signature type int">Int</span>
+### connectors.opacity 'Number'
 {:#members:connectors-opacity}
-
-
-
-
-
-
-
 
 Defines the transparency of the connector
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 1
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1095,97 +504,45 @@ Example
 var connectors = [];
 connectors=[{opacity:0.6}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.parent<span class="type-signature type string">String</span>
+### connectors.parent 'String'
 {:#members:connectors-parent}
-
-
-
-
-
-
-
 
 Sets the parent name of the connector
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var connector = [ {name: "rect",parent:"group1"}];
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.segments<span class="type-signature type array">Array</span>
+### connectors.segments 'Array'
 {:#members:connectors-segments}
-
-
-
-
-
-
-
 
 Describes the collection of segments
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * [ Segment ]
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1194,49 +551,23 @@ var connectors = [];
 var point= {x:20,y:20};
 connectors=[{segments: [{type:"straight",point:point}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.segments.direction<span class="type-signature type string">String</span>
+### connectors.segments.direction 'String'
 {:#members:connectors-segments-direction}
-
-
-
-
-
-
-
 
 Describes the direction of orthogonal segment
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1244,49 +575,23 @@ Example
 var connectors = [];
 connectors=[{segments: [{type:"orthogonal",direction:"left"}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.segments.length<span class="type-signature type number">Number</span>
+### connectors.segments.length 'Number'
 {:#members:connectors-segments-length}
-
-
-
-
-
-
-
 
 Describes the length of orthogonal segment
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1294,49 +599,23 @@ Example
 var connectors = [];
 connectors=[{segments: [{type:"orthogonal",length:20}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.segments.point<span class="type-signature type point">Point</span>
+### connectors.segments.point 'Point'
 {:#members:connectors-segments-point}
-
-
-
-
-
-
-
 
 Describes the end point of segment
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * Diagram.Point()
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1344,49 +623,23 @@ Example
 var segments = [{ type: "straight",point:{x:10,y:30}}];
 connectors = [{ name: "connector1", segments: segments, sourcePoint: { x: 450, y: 150 }, targetPoint: { x: 210, y: 40 }}];
 $("#diagramcontent").ejDiagram({segments:segments});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.segments.point1<span class="type-signature type point">Point</span>
+### connectors.segments.point1 'Point'
 {:#members:connectors-segments-point1}
-
-
-
-
-
-
-
 
 Describes the first control point of bezier segment
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1395,49 +648,23 @@ var connectors = [];
 var point1={x:10,y:10}];
 connectors=[{segments: [{type:"bezier", point1:point1}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.segments.point2<span class="type-signature type point">Point</span>
+### connectors.segments.point2 'Point'
 {:#members:connectors-segments-point2}
-
-
-
-
-
-
-
 
 Describes the second control point of bezier segment
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1446,49 +673,23 @@ var connectors = [];
 var point2= {x:10,y:10};
 connectors=[{segments: [{type:"bezier",point2:point2}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.segments.type<span class="type-signature type enum">enum</span>
+### connectors.segments.type 'enum'
 {:#members:connectors-segments-type}
-
-
-
-
-
-
-
 
 Type of the segments See <a href="global.html#Segments">Segments</a>
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.Segments.Straight
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1496,15 +697,12 @@ Example
 var link=[];
 link=[{segments:[{type:"straight"}]}];
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.segments.vector1<span class="type-signature type point">Point</span>
+### connectors.segments.vector1 'Point'
 {:#members:connectors-segments-vector1}
 
 
@@ -1518,27 +716,11 @@ Describes the length and angle between the first control point and start point o
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1547,49 +729,21 @@ var connectors = [];
 var vector1= {x:20,y:20};
 connectors=[{segments: [{type:"bezier",vector1:vector1}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.segments.vector2<span class="type-signature type point">Point</span>
+### connectors.segments.vector2 'Point'
 {:#members:connectors-segments-vector2}
-
-
-
-
-
-
-
 
 Describes the length and angle between the second control point and end point of segment
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1598,49 +752,23 @@ var connectors = [];
 var vector2= {x:20,y:20};
 connectors=[{segments: [{type:"bezier",vector2:vector2}]}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator<span class="type-signature type string">String</span>
+### connectors.sourceDecorator 'String'
 {:#members:connectors-sourcedecorator}
-
-
-
-
-
-
-
 
 To set sourceDecorator for connector
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1649,49 +777,23 @@ var connectors = [];
 var targetDecorator = { shape: "arrow", borderColor: "#606060", width: "10", height: "10" };
 connectors=[{targetDecorator:targetDecorator}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.borderColor<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.borderColor 'String'
 {:#members:connectors-sourcedecorator-bordercolor}
-
-
-
-
-
-
-
 
 Sets the border color of the decorator
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "black"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1699,49 +801,23 @@ Example
 var link=[];
 link={[targetDecorator:{borderColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.borderColor<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.borderColor 'String'
 {:#members:connectors-sourcedecorator-bordercolor}
-
-
-
-
-
-
-
 
 Sets the border color of the decorator
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "black"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1749,49 +825,23 @@ Example
 var link=[];
 link={[targetDecorator:{borderColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.borderWidth<span class="type-signature type number">Number</span>
+### connectors.sourceDecorator.borderWidth 'Number'
 {:#members:connectors-sourcedecorator-borderwidth}
-
-
-
-
-
-
-
 
 Sets the border width of the decorator
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 1
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1799,49 +849,23 @@ Example
 var link=[];
 link={[targetDecorator:{borderWidth: 1}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.fillColor<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.fillColor 'String'
 {:#members:connectors-sourcedecorator-fillcolor}
-
-
-
-
-
-
-
 
 Sets the color with which the decorator is to be filled
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "black"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1849,49 +873,23 @@ Example
 var link=[];
 link={[targetDecorator:{fillColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.fillColor<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.fillColor 'String'
 {:#members:connectors-sourcedecorator-fillcolor}
-
-
-
-
-
-
-
 
 Sets the color with which the decorator is to be filled
 
 
 
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "black"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1899,49 +897,21 @@ Example
 var link=[];
 link={[targetDecorator:{fillColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.height<span class="type-signature type number">Number</span>
+### connectors.sourceDecorator.height 'Number'
 {:#members:connectors-sourcedecorator-height}
-
-
-
-
-
-
-
 
 To set the height of the connection decorator
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 8
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1949,49 +919,21 @@ Example
 var link=[];
 link={[targetDecorator:{height:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.height<span class="type-signature type number">Number</span>
+### connectors.sourceDecorator.height 'Number'
 {:#members:connectors-sourcedecorator-height}
-
-
-
-
-
-
-
 
 To set the height of the connection decorator
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 8
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -1999,49 +941,21 @@ Example
 var link=[];
 link={[targetDecorator:{height:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.pathData<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.pathData 'String'
 {:#members:connectors-sourcedecorator-pathdata}
-
-
-
-
-
-
-
 
 Path data to draw decorator with custom shape
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2049,49 +963,21 @@ Example
 var link=[];
 link={[targetDecorator:{pathData: "M 269.711,29.3333C 269.711,44.061 257.772,56 243.044,56z"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.pathData<span class="type-signature type string">String</span>
+### connectors.sourceDecorator.pathData 'String'
 {:#members:connectors-sourcedecorator-pathdata}
-
-
-
-
-
-
-
 
 Path data to decorator with custom shape
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2099,49 +985,21 @@ Example
 var link=[];
 link={[targetDecorator:{pathData: "M 269.711,29.3333C 269.711,44.061 257.772,56 243.044,56z"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.shape<span class="type-signature type enum">enum</span>
+### connectors.sourceDecorator.shape 'enum'
 {:#members:connectors-sourcedecorator-shape}
-
-
-
-
-
-
-
 
 To set the decorator shape of the connector See <a href="global.html#DecoratorShapes">DecoratorShapes</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.DecoratorShapes.Arrow
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2149,49 +1007,21 @@ Example
 var link=[];
 link={[targetDecorator:{shape:"arrow"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.shape<span class="type-signature type enum">enum</span>
+### connectors.sourceDecorator.shape 'enum'
 {:#members:connectors-sourcedecorator-shape}
-
-
-
-
-
-
-
 
 Sets the decorator shape See <a href="global.html#DecoratorShapes">DecoratorShapes</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.DecoratorShapes.Arrow
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2199,49 +1029,21 @@ Example
 var link=[];
 link={[targetDecorator:{shape:"arrow"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.width<span class="type-signature type number">Number</span>
+### connectors.sourceDecorator.width 'Number'
 {:#members:connectors-sourcedecorator-width}
-
-
-
-
-
-
-
 
 To set the width of the connection decorator
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 8
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2249,49 +1051,21 @@ Example
 var link=[];
 link={[targetDecorator:{width:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceDecorator.width<span class="type-signature type number">Number</span>
+### connectors.sourceDecorator.width 'Number'
 {:#members:connectors-sourcedecorator-width}
-
-
-
-
-
-
-
 
 To set width of the connection decorator
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 8
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2299,49 +1073,21 @@ Example
 var link=[];
 link={[targetDecorator:{width:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourceNode<span class="type-signature type object">Object</span>
+### connectors.sourceNode 'Object'
 {:#members:connectors-sourcenode}
-
-
-
-
-
-
-
 
 Sets the sourceNode of the connector
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2351,49 +1097,21 @@ var connectors = [];
 nodes = {name: "openBrowses", width: 175, height: 60};
 connectors=[{sourceNode: "openBrowses"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourcePadding<span class="type-signature type integer">Integer</span>
+### connectors.sourcePadding 'Number'
 {:#members:connectors-sourcepadding}
-
-
-
-
-
-
-
 
 Defines the space between node and connector's source point
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2401,49 +1119,21 @@ Example
 var connectors=[];
 connectors=[{sourcePadding:5}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourcePoint<span class="type-signature type point">Point</span>
+### connectors.sourcePoint 'Point'
 {:#members:connectors-sourcepoint}
-
-
-
-
-
-
-
 
 Describes the sourcePoint of connector
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * Point
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2452,49 +1142,21 @@ var connectors = [];
 var sourcePoint= {x:20,y:20};
 connectors=[{ name: "connector1",sourcePoint: { x: 450, y: 150 }}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.sourcePort<span class="type-signature type object">Object</span>
+### connectors.sourcePort 'Object'
 {:#members:connectors-sourceport}
-
-
-
-
-
-
-
 
 Sets the sourcePort of the connector
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2506,49 +1168,21 @@ nodes = {name: "openBrowses", width: 175, height: 60};
 ports = { offset: { x: 0, y: 0.5 }, name: "bport" };
 connectors=[{sourcePort: "bport"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.targetDecorator<span class="type-signature type string">String</span>
+### connectors.targetDecorator 'String'
 {:#members:connectors-targetdecorator}
-
-
-
-
-
-
-
 
 To set targetDecorator for connector
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2557,49 +1191,21 @@ var connectors = [];
 var targetDecorator = { shape: "arrow", borderColor: "#606060", width: "10", height: "10" };
 connectors=[{targetDecorator:targetDecorator}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.targetDecorator.borderColor<span class="type-signature type string">String</span>
+### connectors.targetDecorator.borderColor 'String'
 {:#members:connectors-targetdecorator-bordercolor}
-
-
-
-
-
-
-
 
 Sets the border color of the decorator
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "black"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2607,49 +1213,21 @@ Example
 var link=[];
 link={[targetDecorator:{borderColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.targetDecorator.fillColor<span class="type-signature type string">String</span>
+### connectors.targetDecorator.fillColor 'String'
 {:#members:connectors-targetdecorator-fillcolor}
-
-
-
-
-
-
-
 
 Sets the color with which the decorator is to be filled
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "black"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2657,49 +1235,21 @@ Example
 var link=[];
 link={[targetDecorator:{fillColor: "green"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.targetDecorator.height<span class="type-signature type number">Number</span>
+### connectors.targetDecorator.height 'Number'
 {:#members:connectors-targetdecorator-height}
-
-
-
-
-
-
-
 
 To set the height of the decorator
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 8
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2707,49 +1257,21 @@ Example
 var link=[];
 link={[targetDecorator:{height:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.targetDecorator.pathData<span class="type-signature type string">String</span>
+### connectors.targetDecorator.pathData 'String'
 {:#members:connectors-targetdecorator-pathdata}
-
-
-
-
-
-
-
 
 Path data to draw decorator with custom shape
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2757,49 +1279,21 @@ Example
 var link=[];
 link={[targetDecorator:{pathData: "M 269.711,29.3333C 269.711,44.061 257.772,56 243.044,56z"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.targetDecorator.shape<span class="type-signature type enum">enum</span>
+### connectors.targetDecorator.shape 'enum'
 {:#members:connectors-targetdecorator-shape}
-
-
-
-
-
-
-
 
 To set the shape of the decorator in connector See <a href="global.html#DecoratorShapes">DecoratorShapes</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.DecoratorShapes.Arrow
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2807,49 +1301,21 @@ Example
 var link=[];
 link={[targetDecorator:{shape:"arrow"}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.targetDecorator.width<span class="type-signature type number">Number</span>
+### connectors.targetDecorator.width 'Number'
 {:#members:connectors-targetdecorator-width}
-
-
-
-
-
-
-
 
 To set the width of the decorator
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 8
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2857,49 +1323,21 @@ Example
 var link=[];
 link={[targetDecorator:{width:10}]};
 $("#diagramcontent").ejDiagram({connectors:link});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.targetNode<span class="type-signature type object">Object</span>
+### connectors.targetNode 'Object'
 {:#members:connectors-targetnode}
-
-
-
-
-
-
-
 
 Sets the target node of the connector
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2909,49 +1347,21 @@ var connectors = [];
 nodes = {name: "openBrowses", width: 175, height: 60};
 connectors=[{targetNode: "openBrowses"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.targetPadding<span class="type-signature type integer">Integer</span>
+### connectors.targetPadding 'Number'
 {:#members:connectors-targetpadding}
-
-
-
-
-
-
-
 
 Defines the space between node and connector's target point
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -2959,49 +1369,21 @@ Example
 var connectors=[];
 connectors=[{targetPadding:5}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.targetPoint<span class="type-signature type point">Point</span>
+### connectors.targetPoint 'Point'
 {:#members:connectors-targetpoint}
-
-
-
-
-
-
-
 
 Describes the targetPoint of connector
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * Point
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -3010,49 +1392,21 @@ var connectors = [];
 var targetPoint= {x:20,y:20};
 connectors=[{ name: "connector1",targetPoint: { x: 450, y: 150 }}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.targetPort<span class="type-signature type object">Object</span>
+### connectors.targetPort 'Object'
 {:#members:connectors-targetport}
-
-
-
-
-
-
-
 
 Sets the targetPort of the connector
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -3064,49 +1418,21 @@ nodes = {name: "openBrowses", width: 175, height: 60};
 ports = { offset: { x: 0, y: 0.5 }, name: "aport" };
 connectors=[{targetPort: "aport"}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.verticalAlign<span class="type-signature type verticalalignment"><a href="global.html#VerticalAlignment">VerticalAlignment</a></span>
+### connectors.verticalAlign VerticalAlignment
 {:#members:connectors-verticalalign}
-
-
-
-
-
-
-
 
 To set the vertical alignment of connector.Applicable if the parent is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * VerticalAlignment.Top
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -3114,49 +1440,21 @@ Example
 var connectors = [];
 connectors=[{VerticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.visible<span class="type-signature type boolean">Boolean</span>
+### connectors.visible 'Boolean'
 {:#members:connectors-visible}
-
-
-
-
-
-
-
 
 Enables or disables the visibility of connector
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -3164,49 +1462,21 @@ Example
 var connectors = [];
 connectors=[{visible: true}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectors.zOrder<span class="type-signature type int">Int</span>
+### connectors.zOrder 'Number'
 {:#members:connectors-zorder}
-
-
-
-
-
-
-
 
 Sets the Zorder of the connector
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -3214,169 +1484,70 @@ Example
 var connectors= [];
 connectors=[{connectors: 1}];
 $("#diagramcontent").ejDiagram({connectors:connectors});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### connectorTemplate<span class="type-signature type object">object</span>
+### connectorTemplate 'Object'
 {:#members:connectortemplate}
-
-
-
-
-
-
-
 
 To customize the connector properties before rendering the connector.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 function connectorTemplate(diagram, connector, data) {connector.labels[0].text = data.Name};
 $("#diagram").ejDiagram({ connectorTemplate:connectorTemplate});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### constraints<span class="type-signature type enum">enum</span>
+### constraints 'enum'
 {:#members:constraints}
-
-
-
-
-
-
-
 
 Sets the default behavior of the diagram see <a href="global.html#DiagramConstraints">DiagramConstraints</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * constraints.All
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="diagramcontent"></div>
 <script>
 $("#diagramContent").ejDiagram({constraints: ej.datavisualization.Diagram.DiagramConstraints.Default} }); 
-</script>{% endhighlight %}
-
-
-
-
+</script>
+{% endhighlight %}
 
 
 
 ### contextMenu
 {:#members:contextmenu}
 
-
-
-
-
-
-
-
 Object to customize context menu behavior of diagram
 
 
 
-
-
-
-
-
-
-
-
-### contextMenu.items<span class="type-signature type object">Object</span>
+### contextMenu.items 'Object'
 {:#members:contextmenu-items}
-
-
-
-
-
-
-
 
 To define the collection of context menu items
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * []
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -3386,765 +1557,319 @@ Example
 var menucollection = [{ "name": "hyperLink", "text": "Hyperlink", "image": "", "style": "" }];
 var contextMenu = { items: menucollection};
 $("#diagramContent").ejDiagram({contextMenu: contextMenu}); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### contextMenu.showCustomMenuItemsOnly<span class="type-signature type boolean">Boolean</span>
+### contextMenu.showCustomMenuItemsOnly 'Boolean'
 {:#members:contextmenu-showcustommenuitemsonly}
-
-
-
-
-
-
-
 
 To set whether to display the default context menu items or not
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({showCustomMenuItemsOnly: true});
-</script>{% endhighlight %}
-
-
-
-
+</script>
+{% endhighlight %}
 
 
 
 ### dataSourceSettings
 {:#members:datasourcesettings}
 
-
-
-
-
-
-
-
 Object to set dataSource to diagram
 
 
-
-
-
-
-
-
-
-
-
-### dataSourceSettings.dataSource<span class="type-signature type object">object</span>
+### dataSourceSettings.dataSource 'Object'
 {:#members:datasourcesettings-datasource}
-
-
-
-
-
-
-
 
 Describes data source either as a collection of objects or an instance of ej.DataManager
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ dataSourceSettings: {dataSource: localData}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### dataSourceSettings.id<span class="type-signature type string">String</span>
+### dataSourceSettings.id 'String'
 {:#members:datasourcesettings-id}
-
-
-
-
-
-
-
 
 Describes the unique id of data source items.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ dataSourceSettings: {id: "CategoryID"}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### dataSourceSettings.parent<span class="type-signature type string">String</span>
+### dataSourceSettings.parent 'String'
 {:#members:datasourcesettings-parent}
-
-
-
-
-
-
-
 
 Describes the parent id of data source items.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ dataSourceSettings: { parent: "reportingPerson"}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### dataSourceSettings.query<span class="type-signature type object">object</span>
+### dataSourceSettings.query 'Object'
 {:#members:datasourcesettings-query}
-
-
-
-
-
-
-
 
 Describes query to retrieve a set of data from the specified datasource.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 query: ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### dataSourceSettings.root<span class="type-signature type string">String</span>
+### dataSourceSettings.root 'String'
 {:#members:datasourcesettings-root}
-
-
-
-
-
-
-
 
 Describes the root node.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ dataSourceSettings: { root: "1"}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### dataSourceSettings.tablename<span class="type-signature type string">String</span>
+### dataSourceSettings.tablename 'String'
 {:#members:datasourcesettings-tablename}
-
-
-
-
-
-
-
 
 Describes the name of the table on which the specified query to be executed
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ dataSourceSettings:{tableName: "Categories"}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### defaultSettings<span class="type-signature type object">object</span>
+### defaultSettings 'Object'
 {:#members:defaultsettings}
-
-
-
-
-
-
-
 
 To set the default values to nodes and connector properties
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * {}
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ defaultSettings: { node:  {width: 110, height: 40, fillColor:"skyblue"}}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### defaultSettings.connector<span class="type-signature type object">object</span>
+### defaultSettings.connector 'Object'
 {:#members:defaultsettings-connector}
-
-
-
-
-
-
-
 
 To set the default values to connector properties
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ defaultSettings:{ connector:{ lineColor: "gray", lineWidth: 2 }}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### defaultSettings.node<span class="type-signature type object">object</span>
+### defaultSettings.node 'Object'
 {:#members:defaultsettings-node}
-
-
-
-
-
-
-
 
 To set the default values to node properties
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ defaultSettings:{node: { fillColor: "#83A93F", borderColor: "#000000" }}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### drawingTools<span class="type-signature type object">Object</span>
+### drawingTools 'Object'
 {:#members:drawingtools}
-
-
-
-
-
-
-
 
 Describes the interactive features to be performed
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({ drawingTools: {textTool: ej.datavisualization.Diagram.TextTool()}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### drawType<span class="type-signature type object">Object</span>
+### drawType 'Object'
 {:#members:drawtype}
-
-
-
-
-
-
-
 
 Sets the type of Json object to be drawn through drawing tool
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({drawType:{type:"node"}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### enableAutoScroll<span class="type-signature type boolean">Boolean</span>
+### enableAutoScroll 'Boolean'
 {:#members:enableautoscroll}
-
-
-
-
-
-
-
 
 Enables or disables Auto scroll in diagram
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({enableAutoScroll: true});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### enableContextMenu<span class="type-signature type boolean">Boolean</span>
+### enableContextMenu 'Boolean'
 {:#members:enablecontextmenu}
-
-
-
-
-
-
-
 
 Enables or disables diagram context menu
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({enableContextMenu: true});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### height<span class="type-signature type string">string</span>
+### height 'String'
 {:#members:height}
-
-
-
-
-
-
-
 
 Specifies the height of the diagram.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ height:"100%" });
-</script>{% endhighlight %}
-
-
-
-
+</script>
+{% endhighlight %}
 
 
 
 ### layout
 {:#members:layout}
-
-
-
-
-
-
-
 
 To arrange the diagram elements on page
 
@@ -4158,516 +1883,204 @@ To arrange the diagram elements on page
 
 
 
-### layout. fixedNode<span class="type-signature type string">String</span>
-{:#members:layout-}
-
-
-
-
-
-
-
+### layout. fixedNode 'String'
+{:#members:layout-fixednode}
 
 Sets the fixed node with respect to which the layout will be aligned
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //fixedNode of the layout
-$("#diagramContent").ejDiagram({layout: { fixedNode: "nodename"}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({layout: { fixedNode: "nodename"}});{% endhighlight %}
 
 
 
-
-
-
-
-### layout. getLayoutInfo<span class="type-signature type object">object</span>
-{:#members:layout-}
-
-
-
-
-
-
-
+### layout. getLayoutInfo 'Object'
+{:#members:layout-getlayoutinfo}
 
 To customize the orientation of trees/sub trees For orientations see <a href="global.html#ChartOrientations">ChartOrientations</a> For chart types see <a href="global.html#ChartTypes">ChartTypes</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 function getLayoutInfo(diagram, node, options) { options.orientation = "vertical"; options.type = "left"; offset = 10;};
 $("#diagram").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### layout. marginY<span class="type-signature type number">Number</span>
-{:#members:layout-}
-
-
-
-
-
-
-
+### layout. marginY 'Number'
+{:#members:layout-marginy}
 
 Sets the margin value to be vertically left between layout and diagram
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 // marginY of the layout
-$("#diagramContent").ejDiagram({layout: { marginY: 0}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({layout: { marginY: 0}});{% endhighlight %}
 
 
 
-
-
-
-
-### layout.horizontalSpacing<span class="type-signature type number">Number</span>
+### layout.horizontalSpacing 'Number'
 {:#members:layout-horizontalspacing}
-
-
-
-
-
-
-
 
 Sets the space to be horizontally left between nodes
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 30
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //horizontalSpacing of the layout
-$("#diagramContent").ejDiagram({layout: {horizontalSpacing: 30}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({layout: {horizontalSpacing: 30}});{% endhighlight %}
 
 
 
-
-
-
-
-### layout.marginX<span class="type-signature type number">Number</span>
+### layout.marginX 'Number'
 {:#members:layout-marginx}
-
-
-
-
-
-
-
 
 Sets the margin value to be horizontally left between layout and diagram
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //marginX of the layout
-$("#diagramContent").ejDiagram({layout: {marginX: 0}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({layout: {marginX: 0}});{% endhighlight %}
 
 
 
-
-
-
-
-### layout.orientation<span class="type-signature type string">String</span>
+### layout.orientation 'String'
 {:#members:layout-orientation}
-
-
-
-
-
-
-
 
 Sets the orientation/direction to arrange the diagram elements see <a href="global.html#LayoutOrientations">LayoutOrientations</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "topToBottom"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //orientation of the layout
-$("#diagramContent").ejDiagram({layout: {orientation: "topToBottom"}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({layout: {orientation: "topToBottom"}});{% endhighlight %}
 
 
 
-
-
-
-
-### layout.type<span class="type-signature type string">String</span>
+### layout.type 'String'
 {:#members:layout-type}
-
-
-
-
-
-
-
 
 Sets the type of the layout based on which the elements will be arranged
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "none"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //type of the layout
-$("#diagramContent").ejDiagram({layout: {type: "none"}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({layout: {type: "none"}});{% endhighlight %}
 
 
 
-
-
-
-
-### layout.verticalSpacing<span class="type-signature type number">Number</span>
+### layout.verticalSpacing 'Number'
 {:#members:layout-verticalspacing}
-
-
-
-
-
-
-
 
 Sets the space to be vertically left between nodes
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 30
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //verticalSpacing of the layout
-$("#diagramContent").ejDiagram({layout: {verticalSpacing: 30}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({layout: {verticalSpacing: 30}});{% endhighlight %}
 
 
 
-
-
-
-
-### locale<span class="type-signature type string">String</span>
+### locale 'String'
 {:#members:locale}
-
-
-
-
-
-
-
 
 To define the current culture of diagram
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "en-US"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({locale: "en-US"});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes<span class="type-signature type array">array</span>
+### nodes 'Array'
 {:#members:nodes}
-
-
-
-
-
-
-
 
 Array of node objects where each object has definition/properties of node.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * []
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 var nodes = [{ name: "node", width: 175, height: 60}];
 $("#diagram").ejDiagram({ nodes:nodes });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.activity<span class="type-signature type enum">enum</span>
+### nodes.activity 'enum'
 {:#members:nodes-activity}
-
-
-
-
-
-
-
 
 Sets the type of BPMN Activity See <a href="global.html#BPMNActivity">BPMNActivity</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.BPMNActivity.Task
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -4675,49 +2088,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Activity, activity: ej.datavisualization.Diagram.BPMNActivity.SubProcess}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.addInfo<span class="type-signature type object">Object</span>
+### nodes.addInfo 'Object'
 {:#members:nodes-addinfo}
-
-
-
-
-
-
-
 
 To provide/save extra information about Node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -4727,49 +2112,21 @@ var addInfo = {Name1:"Node1",Name2:"Name2"}
 nodes=[{addInfo: addInfo}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",{addInfo: addInfo}}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.allowDrop<span class="type-signature type boolean">Boolean</span>
+### nodes.allowDrop 'Boolean'
 {:#members:nodes-allowdrop}
-
-
-
-
-
-
-
 
 To indicate whether this element can be used as the target of a drop operation. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -4777,49 +2134,21 @@ Example
 var nodes = [];
 nodes=[{name:"GroupNode",allowDrop:true}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.borderColor<span class="type-signature type string">String</span>
+### nodes.borderColor 'String'
 {:#members:nodes-bordercolor}
-
-
-
-
-
-
-
 
 Sets the border color of node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "black"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -4827,49 +2156,21 @@ Example
 var nodes = [];
 nodes=[{borderColor: "black"}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.borderDashArray<span class="type-signature type string">String</span>
+### nodes.borderDashArray 'String'
 {:#members:nodes-borderdasharray}
-
-
-
-
-
-
-
 
 The pattern of dashes and gaps to stroke the border
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -4877,49 +2178,21 @@ Example
 var nodes = [];
 nodes=[{borderDashArray: "2 2"}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.borderWidth<span class="type-signature type number">Number</span>
+### nodes.borderWidth 'Number'
 {:#members:nodes-borderwidth}
-
-
-
-
-
-
-
 
 Sets the border width of the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 1
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -4927,49 +2200,21 @@ Example
 var nodes = [];
 nodes=[{borderWidth: 3}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.canUngroup<span class="type-signature type boolean">Boolean</span>
+### nodes.canUngroup 'Boolean'
 {:#members:nodes-canungroup}
-
-
-
-
-
-
-
 
 To set whether the group can be ungrouped or not
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -4978,49 +2223,21 @@ var nodes = [];
 var children = ["Node1","Node2"];
 nodes=[{name:"GroupNode",children:children,canUngroup:false}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.children<span class="type-signature type array">Array</span>
+### nodes.children 'Array'
 {:#members:nodes-children}
-
-
-
-
-
-
-
 
 Collection of children of the group node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * []
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5029,49 +2246,21 @@ var nodes = [];
 var children = ["Node1","Node2"];
 nodes=[{name:"GroupNode",children:children}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.collection<span class="type-signature type boolean">Boolean</span>
+### nodes.collection 'Boolean'
 {:#members:nodes-collection}
-
-
-
-
-
-
-
 
 To set whether the BPMN dataobject is a collection or not
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5079,49 +2268,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", shape:"dataObject", collection: false}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.connectorPadding<span class="type-signature type int">Int</span>
+### nodes.connectorPadding 'Number'
 {:#members:nodes-connectorpadding}
-
-
-
-
-
-
-
 
 To set the distance to be left between the node and connections.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5129,49 +2290,21 @@ Example
 var nodes = [];
 node={name:"node1",connectorPadding: 2};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.constraints<span class="type-signature type enum">enum</span>
+### nodes.constraints 'enum'
 {:#members:nodes-constraints}
-
-
-
-
-
-
-
 
 To enable or disable the default behaviors of the node see<a href="global.html#NodeConstraints">NodeConstraints</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * NodeConstraints.Default
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5179,33 +2312,17 @@ Example
 var nodes = [];
 nodes=[{Constraints: ej.datavisualization.Diagram.NodeConstraints.Select}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.constraints<span class="type-signature type enum">enum</span>
+### nodes.constraints 'enum'
 {:#members:nodes-constraints}
-
-
-
-
-
-
-
 
 To set the constraints for the swimlane see <a href="global.html#NodeConstraints">NodeConstraints</a> ej.datavisualization.Diagram.NodeConstraints.Default &amp; ~(ej.datavisualization.Diagram.NodeConstraints.ResizeNorth | ej.datavisualization.Diagram.NodeConstraints.ResizeWest | ej.datavisualization.Diagram.NodeConstraints.ResizeNorthWest | ej.datavisualization.Diagram.NodeConstraints.ResizeNorthEast | ej.datavisualization.Diagram.NodeConstraints.ResizeSouthWest)
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5213,49 +2330,21 @@ Example
 var nodes = [];
 nodes = [ {type: "swimlane",name: "swimlane",constraints: ej.datavisualization.Diagram.NodeConstraints.Connect}
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.container<span class="type-signature type obj">obj</span>
+### nodes.container 'Object'
 {:#members:nodes-container}
-
-
-
-
-
-
-
 
 To indicate whether this element can be used as a container.Applicable only if the object as Group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5263,49 +2352,21 @@ Example
 var nodes = [];
 nodes=[{name:"GroupNode",container:{}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.container.orientation<span class="type-signature type string">string</span>
+### nodes.container.orientation 'String'
 {:#members:nodes-container-orientation}
-
-
-
-
-
-
-
 
 To set the container orientation. Applicable if the group has container.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "vertical"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5314,49 +2375,21 @@ var container = ej.datavisualization.Diagram.ContainerType.Canvas
 container.orientation = "vertical"; 
 var nodes = [{name:"Node1",container : container}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.container.type<span class="type-signature type enum">enum</span>
+### nodes.container.type 'enum'
 {:#members:nodes-container-type}
-
-
-
-
-
-
-
 
 To set the type of the container. Applicable if the group has container.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.ContainerType.Canvas
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5365,49 +2398,21 @@ var container = ej.datavisualization.Diagram.ContainerType.Canvas
 container.type = "linear; 
 var nodes = [{name:"Node1",container : container}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.cornerRadius<span class="type-signature type integer">Integer</span>
+### nodes.cornerRadius 'Number'
 {:#members:nodes-cornerradius}
-
-
-
-
-
-
-
 
 Defines the radius of the rounder corner. Applicable if the shape is rectangle
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5415,49 +2420,21 @@ Example
 var node=[];
 node={[shape:{type:"rectangle",cornerRadius:2}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.event<span class="type-signature type enum">enum</span>
+### nodes.event 'enum'
 {:#members:nodes-event}
-
-
-
-
-
-
-
 
 Sets the type of BPMN Event See <a href="global.html#BPMNEvents">BPMNEvents</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.BPMNEvents.Start
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5465,49 +2442,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Event, event: ej.datavisualization.Diagram.BPMNEvents.Start}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.excludeFromLayout<span class="type-signature type boolean">Boolean</span>
+### nodes.excludeFromLayout 'Boolean'
 {:#members:nodes-excludefromlayout}
-
-
-
-
-
-
-
 
 To set whether the node can be included in layout arrangement
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5515,49 +2464,21 @@ Example
 var nodes = [];
 nodes=[{visible: true}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.expanded<span class="type-signature type boolean">Boolean</span>
+### nodes.expanded 'Boolean'
 {:#members:nodes-expanded}
-
-
-
-
-
-
-
 
 To set whether the node is expanded or collapsed
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5565,49 +2486,21 @@ Example
 var nodes = [];
 nodes=[{isExpanded: true}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.fillColor<span class="type-signature type string">String</span>
+### nodes.fillColor 'String'
 {:#members:nodes-fillcolor}
-
-
-
-
-
-
-
 
 Sets the color that is used to fill shapes
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "White"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5615,49 +2508,21 @@ Example
 var nodes = [];
 nodes=[{fillColor: "white"}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gateway<span class="type-signature type enum">enum</span>
+### nodes.gateway 'enum'
 {:#members:nodes-gateway}
-
-
-
-
-
-
-
 
 Sets the type of BPMN Gateway See <a href="global.html#BPMNGateways">BPMNGateways</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.BPMNGateways.None
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5665,93 +2530,35 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Gateway, gateway: ej.datavisualization.Diagram.BPMNGateways.None}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
-
-
-
-
+</script>
+{% endhighlight %}
 
 
 
 ### nodes.gradient
 {:#members:nodes-gradient}
 
-
-
-
-
-
-
-
 Smooth transition from one color to another color in node
 
 
 
-
-
-
-
-
-
-
-
-### nodes.gradient.LinearGradient<span class="type-signature type object">object</span>
+### nodes.gradient.LinearGradient 'Object'
 {:#members:nodes-gradient-lineargradient}
-
-
-
-
-
-
-
 
 Paints an area with a linear gradient.
 
 
 
-
-
-
-
-
-
-
-
-### nodes.gradient.LinearGradient.stops<span class="type-signature type array">Array</span>
+### nodes.gradient.LinearGradient.stops 'Array'
 {:#members:nodes-gradient-lineargradient-stops}
-
-
-
-
-
-
-
 
 The stop region for the gradient
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5774,49 +2581,21 @@ gradient.stops.push(stop);
 gradient.stops.push(stop);
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.LinearGradient.x1<span class="type-signature type int">Int</span>
+### nodes.gradient.LinearGradient.x1 'Number'
 {:#members:nodes-gradient-lineargradient-x1}
-
-
-
-
-
-
-
 
 The starting X-Axis for the region
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5829,15 +2608,12 @@ gradient.y1 = 0;
 gradient.y2 = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.LinearGradient.x2<span class="type-signature type int">Int</span>
+### nodes.gradient.LinearGradient.x2 'Number'
 {:#members:nodes-gradient-lineargradient-x2}
 
 
@@ -5849,29 +2625,11 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 The ending X-Axis for the region
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5884,15 +2642,12 @@ gradient.y1 = 20;
 gradient.y2 = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.LinearGradient.y1<span class="type-signature type int">Int</span>
+### nodes.gradient.LinearGradient.y1 'Number'
 {:#members:nodes-gradient-lineargradient-y1}
 
 
@@ -5904,29 +2659,11 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 The starting Y-Axis for the region
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5939,15 +2676,12 @@ gradient.y1 = 0;
 gradient.y2 = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.LinearGradient.y2<span class="type-signature type int">Int</span>
+### nodes.gradient.LinearGradient.y2 'Number'
 {:#members:nodes-gradient-lineargradient-y2}
 
 
@@ -5959,29 +2693,11 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 The ending Y-Axis for the region
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -5994,71 +2710,27 @@ gradient.y1 = 0;
 gradient.y2 = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.RadialGradient<span class="type-signature type object">object</span>
+### nodes.gradient.RadialGradient 'Object'
 {:#members:nodes-gradient-radialgradient}
-
-
-
-
-
-
-
 
 Paints an area with a radial gradient. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.
 
 
-
-
-
-
-
-
-
-
-
-### nodes.gradient.RadialGradient.cx<span class="type-signature type int">Int</span>
+### nodes.gradient.RadialGradient.cx 'Number'
 {:#members:nodes-gradient-radialgradient-cx}
-
-
-
-
-
-
-
 
 The starting X-Axis for the region
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6071,49 +2743,21 @@ gradient.fx = 20;
 gradient.fy = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.RadialGradient.cy<span class="type-signature type int">Int</span>
+### nodes.gradient.RadialGradient.cy 'Number'
 {:#members:nodes-gradient-radialgradient-cy}
-
-
-
-
-
-
-
 
 The ending X-Axis for the region
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6126,49 +2770,21 @@ gradient.fx = 20;
 gradient.fy = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.RadialGradient.fx<span class="type-signature type int">Int</span>
+### nodes.gradient.RadialGradient.fx 'Number'
 {:#members:nodes-gradient-radialgradient-fx}
-
-
-
-
-
-
-
 
 The starting X-Axis for the region
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6181,49 +2797,21 @@ gradient.fx = 20;
 gradient.fy = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.RadialGradient.fy<span class="type-signature type int">Int</span>
+### nodes.gradient.RadialGradient.fy 'Number'
 {:#members:nodes-gradient-radialgradient-fy}
-
-
-
-
-
-
-
 
 The ending Y-Axis for the region
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6236,49 +2824,21 @@ gradient.fx = 20;
 gradient.fy = 50;
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.RadialGradient.stops<span class="type-signature type array">Array</span>
+### nodes.gradient.RadialGradient.stops 'Array'
 {:#members:nodes-gradient-radialgradient-stops}
-
-
-
-
-
-
-
 
 The stop region for the gradient
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6301,71 +2861,28 @@ gradient.stops.push(stop);
 gradient.stops.push(stop);
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.Stop<span class="type-signature type object">object</span>
+### nodes.gradient.Stop 'Object'
 {:#members:nodes-gradient-stop}
-
-
-
-
-
-
-
 
 Specifies the stops of the node gradients.
 
 
 
-
-
-
-
-
-
-
-
-### nodes.gradient.Stop.color<span class="type-signature type string">String</span>
+### nodes.gradient.Stop.color 'String'
 {:#members:nodes-gradient-stop-color}
-
-
-
-
-
-
-
 
 The color of applied gradient
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6387,49 +2904,21 @@ gradient.stops.push(stop);
 gradient.stops.push(stop);
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.Stop.offset<span class="type-signature type int">Int</span>
+### nodes.gradient.Stop.offset 'Number'
 {:#members:nodes-gradient-stop-offset}
-
-
-
-
-
-
-
 
 To set desired offset to apply color to the node region
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6451,49 +2940,21 @@ gradient.stops.push(stop);
 gradient.stops.push(stop);
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.gradient.Stop.opacity<span class="type-signature type int">Int</span>
+### nodes.gradient.Stop.opacity 'Number'
 {:#members:nodes-gradient-stop-opacity}
-
-
-
-
-
-
-
 
 Decribes the transparency level for the region
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 1
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6516,97 +2977,41 @@ gradient.stops.push(stop);
 gradient.stops.push(stop);
 var nodes = [{name:"Node1",width: 100,height: 100,gradient : gradient}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.header<span class="type-signature type obj">obj</span>
+### nodes.header 'Object'
 {:#members:nodes-header}
-
-
-
-
-
-
-
 
 The header of the swimlane. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "Null"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  header: {text: "Header", width:50}}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.height<span class="type-signature type int">Int</span>
+### nodes.height 'Number'
 {:#members:nodes-height}
-
-
-
-
-
-
-
 
 To set the height of the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6614,98 +3019,42 @@ Example
 var nodes = [];
 nodes=[{height: 100}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.horizontalAlign<span class="type-signature type horizontalalignment"><a href="global.html#HorizontalAlignment">HorizontalAlignment</a></span>
+### nodes.horizontalAlign HorizontalAlignment
 {:#members:nodes-horizontalalign}
-
-
-
-
-
-
-
 
 To set the horizontal alignment of node. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * HorizontalAlignment.Left
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script> 
 node={name:"node1", ej.datavisualization.Diagram.HorizontalAlignment.Left};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.inEdges<span class="type-signature type array">Array</span>
+### nodes.inEdges 'Array'
 {:#members:nodes-inedges}
-
-
-
-
-
-
-
 
 Collection of incoming connectors/edges of the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6713,97 +3062,41 @@ Example
 var connectors = [{ name: "connector1", sourceNode: "Node1", targetNode: "Node2"}];
 nodes=[{inEdges:connectors}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.isSwimlane<span class="type-signature type boolean">Boolean</span>
+### nodes.isSwimlane 'Boolean'
 {:#members:nodes-isswimlane}
-
-
-
-
-
-
-
 
 Indicates class as swimlane. Applicable if type is swimlane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script> 
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  isSwimlane: true}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels<span class="type-signature type array">Array</span>
+### nodes.labels 'Array'
 {:#members:nodes-labels}
-
-
-
-
-
-
-
 
 To set the collection of labels to node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6812,49 +3105,21 @@ var label = [];
 label = { "text": "Node1", "fontColor": "Red"};
 nodes=[{labels:label}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.bold<span class="type-signature type boolean">Boolean</span>
+### nodes.labels.bold 'Boolean'
 {:#members:nodes-labels-bold}
-
-
-
-
-
-
-
 
 Enables/disables the bold style of label
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6862,49 +3127,21 @@ Example
 var node=[];
 node=[{labels:{"bold": false}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.borderColor<span class="type-signature type string">String</span>
+### nodes.labels.borderColor 'String'
 {:#members:nodes-labels-bordercolor}
-
-
-
-
-
-
-
 
 Sets border color of the text
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "transparent"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6912,49 +3149,21 @@ Example
 var node=[];
 node=[{labels:{borderColor: "transparent"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.borderWidth<span class="type-signature type number">Number</span>
+### nodes.labels.borderWidth 'Number'
 {:#members:nodes-labels-borderwidth}
-
-
-
-
-
-
-
 
 Sets the border width of the label
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -6962,49 +3171,21 @@ Example
 var node=[];
 node=[{labels:{borderWidth: 4}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.fillColor<span class="type-signature type string">String</span>
+### nodes.labels.fillColor 'String'
 {:#members:nodes-labels-fillcolor}
-
-
-
-
-
-
-
 
 Sets the color that is used to fill text
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "transparent"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7012,49 +3193,21 @@ Example
 var node=[];
 node=[{labels:{fillColor: "green"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.fontColor<span class="type-signature type string">String</span>
+### nodes.labels.fontColor 'String'
 {:#members:nodes-labels-fontcolor}
-
-
-
-
-
-
-
 
 To set the text color
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "black"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7062,49 +3215,21 @@ Example
 var node=[];
 node=[{labels:{"fontColor": "black"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.fontFamily<span class="type-signature type string">String</span>
+### nodes.labels.fontFamily 'String'
 {:#members:nodes-labels-fontfamily}
-
-
-
-
-
-
-
 
 To set the font family of the label
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "arial"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7112,49 +3237,21 @@ Example
 var node=[];
 node=[{labels:{"fontFamily": "Arial"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.fontSize<span class="type-signature type integer">Integer</span>
+### nodes.labels.fontSize 'Number'
 {:#members:nodes-labels-fontsize}
-
-
-
-
-
-
-
 
 To set font size of the label
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 12
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7162,49 +3259,21 @@ Example
 var node=[];
 node=[{labels:{"fontSize": 12}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.horizontalAlignment<span class="type-signature type enum">Enum</span>
+### nodes.labels.horizontalAlignment 'enum'
 {:#members:nodes-labels-horizontalalignment}
-
-
-
-
-
-
-
 
 Horizontal alignment of text in an element see<a href="global.html#HorizontalAlignment">HorizontalAlignment</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * HorizontalAlignment.Center
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7212,49 +3281,21 @@ Example
 var node=[];
 node=[{labels:{horizontalAlignment: ej.datavisualization.Diagram.HorizontalAlignment.Center}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.italic<span class="type-signature type boolean">Boolean</span>
+### nodes.labels.italic 'Boolean'
 {:#members:nodes-labels-italic}
-
-
-
-
-
-
-
 
 Enables/disables the italic font style of label
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7262,49 +3303,21 @@ Example
 var node=[];
 node=[{labels:{"italic": false}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.margin<span class="type-signature type object">Object</span>
+### nodes.labels.margin 'Object'
 {:#members:nodes-labels-margin}
-
-
-
-
-
-
-
 
 To set the margin of the label
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.Margin()
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7312,49 +3325,21 @@ Example
 var node=[];
 node=[{labels:{"margin": ej.datavisualization.Diagram.Margin()}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.mode<span class="type-signature type enum">Enum</span>
+### nodes.labels.mode 'enum'
 {:#members:nodes-labels-mode}
-
-
-
-
-
-
-
 
 To set the label edit mode see<a href="global.html#LabelEditMode">LabelEditMode</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * LabelEditMode.Edit
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7362,49 +3347,21 @@ Example
 var node=[];
 node=[{labels:{mode: ej.datavisualization.Diagram.LabelEditMode.Edit}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.name<span class="type-signature type string">String</span>
+### nodes.labels.name 'String'
 {:#members:nodes-labels-name}
-
-
-
-
-
-
-
 
 Name of the label
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7412,49 +3369,21 @@ Example
 var node=[];
 node=[{labels:{name:"Label"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.offset<span class="type-signature type point">Point</span>
+### nodes.labels.offset 'Point'
 {:#members:nodes-labels-offset}
-
-
-
-
-
-
-
 
 Ratio with respect to which the label is to be placed
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * Point(0.5, 0.5)
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7462,49 +3391,21 @@ Example
 var node=[];
 node=[{labels:{offset: ej.datavisualization.Diagram.Point(0.5, 0.5)}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.readOnly<span class="type-signature type boolean">Boolean</span>
+### nodes.labels.readOnly 'Boolean'
 {:#members:nodes-labels-readonly}
-
-
-
-
-
-
-
 
 Allows the label to be read only
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7512,49 +3413,21 @@ Example
 var node=[];
 node=[{labels:{"readOnly": false}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.rotateAngle<span class="type-signature type number">Number</span>
+### nodes.labels.rotateAngle 'Number'
 {:#members:nodes-labels-rotateangle}
-
-
-
-
-
-
-
 
 To set the rotation angle of the label
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7562,49 +3435,21 @@ Example
 var node=[];
 node=[{labels:{rotateAngle: 90}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.text<span class="type-signature type string">String</span>
+### nodes.labels.text 'String'
 {:#members:nodes-labels-text}
-
-
-
-
-
-
-
 
 Sets text for the label
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7612,49 +3457,21 @@ Example
 var node=[];
 node=[{labels:{"text": "Label"}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.textAlign<span class="type-signature type enum">Enum</span>
+### nodes.labels.textAlign 'enum'
 {:#members:nodes-labels-textalign}
-
-
-
-
-
-
-
 
 Alignment of text in an element see <a href="global.html#TextAlign">TextAlign</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * TextAlign.Center
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7662,49 +3479,21 @@ Example
 var node=[];
 node=[{labels:{textAlign: ej.datavisualization.Diagram.TextAlign.Center}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.textDecoration<span class="type-signature type enum">Enum</span>
+### nodes.labels.textDecoration 'enum'
 {:#members:nodes-labels-textdecoration}
-
-
-
-
-
-
-
 
 To set the text decoration for the label see<a href="global.html#TextDecorations">TextDecorations</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * TextDecorations.None
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7712,49 +3501,21 @@ Example
 var node=[];
 node=[{labels:{textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.verticalAlignment<span class="type-signature type enum">Enum</span>
+### nodes.labels.verticalAlignment 'enum'
 {:#members:nodes-labels-verticalalignment}
-
-
-
-
-
-
-
 
 Vertical alignment of text in an element see<a href="global.html#VerticalAlignment">VerticalAlignment</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * VerticalAlignment.Center
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7762,49 +3523,21 @@ Example
 var node=[];
 node=[{labels:{verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Center}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.visible<span class="type-signature type boolean">Boolean</span>
+### nodes.labels.visible 'Boolean'
 {:#members:nodes-labels-visible}
-
-
-
-
-
-
-
 
 Enables or disables the visibility of the label
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7812,49 +3545,21 @@ Example
 var node=[];
 node=[{labels:{visible: true}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.width<span class="type-signature type interger">Interger</span>
+### nodes.labels.width 'Number'
 {:#members:nodes-labels-width}
-
-
-
-
-
-
-
 
 To set the width of the label
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 50
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7862,49 +3567,21 @@ Example
 var node=[];
 node=[{labels:{width: 50}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.labels.wrapping<span class="type-signature type enum">Enum</span>
+### nodes.labels.wrapping 'enum'
 {:#members:nodes-labels-wrapping}
-
-
-
-
-
-
-
 
 To set the wrapping behavior of text see <a href="global.html#TextWrapping">TextWrapping</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * TextWrapping.WrapWithOverflow
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7912,49 +3589,21 @@ Example
 var node=[];
 node=[{labels:{wrapping: ej.datavisualization.Diagram.TextWrapping.Wrap}}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.lanes<span class="type-signature type array">Array</span>
+### nodes.lanes 'Array'
 {:#members:nodes-lanes}
-
-
-
-
-
-
-
 
 Collection of Lanes in swimlane. Applicable if type is swimlane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * []
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -7963,433 +3612,181 @@ var lanes = [];
 lanes=[{["Lane1","Lane1"]}];
 $("#diagramcontent").ejDiagram( );
 var nodes = [ {type: "swimlane",name: "swimlane",lanes: []}
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.lanes.addInfo<span class="type-signature type object">Object</span>
+### nodes.lanes.addInfo 'Object'
 {:#members:nodes-lanes-addinfo}
-
-
-
-
-
-
-
 
 To provide/save extra information about Lane
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "lane",name: "lane",{addInfo: addInfo}}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.lanes.children<span class="type-signature type array">Array</span>
+### nodes.lanes.children 'Array'
 {:#members:nodes-lanes-children}
-
-
-
-
-
-
-
 
 The children of the lane. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * []
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{children:[]}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.lanes.fillColor<span class="type-signature type string">String</span>
+### nodes.lanes.fillColor 'String'
 {:#members:nodes-lanes-fillcolor}
-
-
-
-
-
-
-
 
 The color to be filled inside the lane. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "White"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{fillColor: "white"}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.lanes.header<span class="type-signature type obj">obj</span>
+### nodes.lanes.header 'Object'
 {:#members:nodes-lanes-header}
-
-
-
-
-
-
-
 
 The header of the lane . Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "Null"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{header: {text: "Header", width:50}}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.lanes.isLane<span class="type-signature type boolean">Boolean</span>
+### nodes.lanes.isLane 'Boolean'
 {:#members:nodes-lanes-islane}
-
-
-
-
-
-
-
 
 Indicates class as lane. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script> 
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{isLane:true}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.lanes.labels<span class="type-signature type string">String</span>
+### nodes.lanes.labels 'String'
 {:#members:nodes-lanes-labels}
-
-
-
-
-
-
-
 
 The label shown inside the lane. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "White"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{labels: [{text:"Label"}]}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.lanes.name<span class="type-signature type string">String</span>
+### nodes.lanes.name 'String'
 {:#members:nodes-lanes-name}
-
-
-
-
-
-
-
 
 The name of the lane. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{name:"lane"}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.lanes.orientation<span class="type-signature type string">String</span>
+### nodes.lanes.orientation 'String'
 {:#members:nodes-lanes-orientation}
-
-
-
-
-
-
-
 
 The orientation type of the lane. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "vertical"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:[{orientation:"horizontal"}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.marginBottom<span class="type-signature type int">Int</span>
+### nodes.marginBottom 'Number'
 {:#members:nodes-marginbottom}
-
-
-
-
-
-
-
 
 To set bottom margin of the node. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8397,49 +3794,21 @@ Example
 var nodes = [];
 node={name:"node1",marginBottom: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.marginLeft<span class="type-signature type int">Int</span>
+### nodes.marginLeft 'Number'
 {:#members:nodes-marginleft}
-
-
-
-
-
-
-
 
 To set left margin of the node. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8447,49 +3816,21 @@ Example
 var nodes = [];
 nodes=[{marginLeft: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.marginRight<span class="type-signature type int">Int</span>
+### nodes.marginRight 'Number'
 {:#members:nodes-marginright}
-
-
-
-
-
-
-
 
 To set right of for the node. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8497,49 +3838,21 @@ Example
 var nodes = [];
 node={name:"node1",marginRight: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.marginTop<span class="type-signature type int">Int</span>
+### nodes.marginTop 'Number'
 {:#members:nodes-margintop}
-
-
-
-
-
-
-
 
 To set top margin of the node. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8547,49 +3860,21 @@ Example
 var nodes = [];
 node={name:"node1",marginTop: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.maxHeight<span class="type-signature type int">Int</span>
+### nodes.maxHeight 'Number'
 {:#members:nodes-maxheight}
-
-
-
-
-
-
-
 
 To set maximum height for the node. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8597,49 +3882,21 @@ Example
 var nodes = [];
 node={name:"node1",maxHeight: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.maxWidth<span class="type-signature type int">Int</span>
+### nodes.maxWidth 'Number'
 {:#members:nodes-maxwidth}
-
-
-
-
-
-
-
 
 To set maximum width for the node. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8647,49 +3904,21 @@ Example
 var nodes = [];
 node={name:"node1",maxWidth: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.minHeight<span class="type-signature type int">Int</span>
+### nodes.minHeight 'Number'
 {:#members:nodes-minheight}
-
-
-
-
-
-
-
 
 To set minimum height for the node. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8697,49 +3926,21 @@ Example
 var nodes = [];
 node={name:"node1",minHeight: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.minWidth<span class="type-signature type int">Int</span>
+### nodes.minWidth 'Number'
 {:#members:nodes-minwidth}
-
-
-
-
-
-
-
 
 To set minimum width for the node. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8747,49 +3948,21 @@ Example
 var nodes = [];
 node={name:"node1",minWidth: 1};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.name<span class="type-signature type string">String</span>
+### nodes.name 'String'
 {:#members:nodes-name}
-
-
-
-
-
-
-
 
 To set the name to the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8797,49 +3970,21 @@ Example
 var nodes = [];
 nodes=[{name:"Node1"}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.offsetX<span class="type-signature type int">Int</span>
+### nodes.offsetX 'Number'
 {:#members:nodes-offsetx}
-
-
-
-
-
-
-
 
 Sets the position of the node on X-Axis
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8848,49 +3993,21 @@ var nodes = [];
 nodes=[{offsetX: 100}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",offsetX:100}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.offsetY<span class="type-signature type int">Int</span>
+### nodes.offsetY 'Number'
 {:#members:nodes-offsety}
-
-
-
-
-
-
-
 
 Sets the position of the node on Y-Axis
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8899,49 +4016,21 @@ var nodes = [];
 nodes=[{offsetY: 100}];
 $("#diagramcontent").ejDiagram({nodes:nodes});          
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",offsetY:100}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.opacity<span class="type-signature type number">Number</span>
+### nodes.opacity 'Number'
 {:#members:nodes-opacity}
-
-
-
-
-
-
-
 
 Defines the transparency of the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 1
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -8949,97 +4038,41 @@ Example
 var nodes = [];
 nodes=[{opacity: 2}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.orientation<span class="type-signature type string">String</span>
+### nodes.orientation 'String'
 {:#members:nodes-orientation}
-
-
-
-
-
-
-
 
 The orientation type of the swimlane. Applicable if type is swimlane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "vertical"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  orientation: "vertical"}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.outEdges<span class="type-signature type array">Array</span>
+### nodes.outEdges 'Array'
 {:#members:nodes-outedges}
-
-
-
-
-
-
-
 
 Collection of outgoing connectors/edges of the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -9047,49 +4080,21 @@ Example
 var connectors = [{ name: "connector1", sourceNode: "Node1", targetNode: "Node2"}];
 nodes=[{outEdges:connectors}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.paddingBottom<span class="type-signature type int">Int</span>
+### nodes.paddingBottom 'Number'
 {:#members:nodes-paddingbottom}
-
-
-
-
-
-
-
 
 To set bottom padding value to the group. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -9097,49 +4102,21 @@ Example
 var nodes = [];
 nodes=[{paddingBottom: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.paddingLeft<span class="type-signature type int">Int</span>
+### nodes.paddingLeft 'Number'
 {:#members:nodes-paddingleft}
-
-
-
-
-
-
-
 
 To set left padding value to the group. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -9147,49 +4124,21 @@ Example
 var nodes = [];
 nodes=[{paddingLeft: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.paddingRight<span class="type-signature type int">Int</span>
+### nodes.paddingRight 'Number'
 {:#members:nodes-paddingright}
-
-
-
-
-
-
-
 
 To set Right padding value to the group. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -9197,49 +4146,21 @@ Example
 var nodes = [];
 nodes=[{paddingRight: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.paddingTop<span class="type-signature type int">Int</span>
+### nodes.paddingTop 'Number'
 {:#members:nodes-paddingtop}
-
-
-
-
-
-
-
 
 To set Top padding value to the group. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -9247,97 +4168,41 @@ Example
 var nodes = [];
 nodes=[{paddingTop: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.parent<span class="type-signature type string">String</span>
+### nodes.parent 'String'
 {:#members:nodes-parent}
-
-
-
-
-
-
-
 
 Sets the parent name of the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var node = [ {name: "rect",parent:"group1"}];
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.pathData<span class="type-signature type string">String</span>
+### nodes.pathData 'String'
 {:#members:nodes-pathdata}
-
-
-
-
-
-
-
 
 Sets the path geometry that defines the shape of the path node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -9345,49 +4210,21 @@ Example
 var node=[];
 node={[shape:{type:"path",pathData:"M 269.711,29.3333C 269.711,44.061 257.772,56 243.044,56L 158.058,56C 143.33z"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.phases<span class="type-signature type array">Array</span>
+### nodes.phases 'Array'
 {:#members:nodes-phases}
-
-
-
-
-
-
-
 
 Collection of phases in swimlane node. Applicable if type is swimlane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * []
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -9396,529 +4233,221 @@ var phases = [];
 phases=[{["phase1","phase2"]}];
 $("#diagramcontent").ejDiagram( );
 var nodes = [ {type: "swimlane",name: "swimlane",phases: []}
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.phases.label<span class="type-signature type obj">obj</span>
+### nodes.phases.label 'Object'
 {:#members:nodes-phases-label}
-
-
-
-
-
-
-
 
 Sets the label of the phase. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{label:{text:"label"}}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.phases.lineColor<span class="type-signature type string">String</span>
+### nodes.phases.lineColor 'String'
 {:#members:nodes-phases-linecolor}
-
-
-
-
-
-
-
 
 Sets the line color of the phase. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "#606060"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{lineColor: "#606060"}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.phases.lineDashArray<span class="type-signature type string">String</span>
+### nodes.phases.lineDashArray 'String'
 {:#members:nodes-phases-linedasharray}
-
-
-
-
-
-
-
 
 Sets the line dash drray of the phase. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "3,3"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{lineDashArray: "3,3"}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.phases.lineWidth<span class="type-signature type int">Int</span>
+### nodes.phases.lineWidth 'Number'
 {:#members:nodes-phases-linewidth}
-
-
-
-
-
-
-
 
 Sets the line width of the phase. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "1"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{lineWidth: 1}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.phases.name<span class="type-signature type string">String</span>
+### nodes.phases.name 'String'
 {:#members:nodes-phases-name}
-
-
-
-
-
-
-
 
 Defines the name of the phase. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{name:"lane"}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.phases.offset<span class="type-signature type int">Int</span>
+### nodes.phases.offset 'Number'
 {:#members:nodes-phases-offset}
-
-
-
-
-
-
-
 
 Sets the offset of the phase. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "0"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{offset: 100}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.phases.orientation<span class="type-signature type string">String</span>
+### nodes.phases.orientation 'String'
 {:#members:nodes-phases-orientation}
-
-
-
-
-
-
-
 
 Sets the orientation of the phase. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "horizontal"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{orientation: "horizontal"}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.phases.parent<span class="type-signature type string">String</span>
+### nodes.phases.parent 'String'
 {:#members:nodes-phases-parent}
-
-
-
-
-
-
-
 
 Sets the parent of the phase. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{parent: "parent"}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.phases.type<span class="type-signature type string">String</span>
+### nodes.phases.type 'String'
 {:#members:nodes-phases-type}
-
-
-
-
-
-
-
 
 Sets the type of the phase. Applicable if type is lane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "phase"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases:[{type: "phase"}]}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.phaseSize<span class="type-signature type int">Int</span>
+### nodes.phaseSize 'Number'
 {:#members:nodes-phasesize}
-
-
-
-
-
-
-
 
 To set phase size for the swimlane. Applicable if type is swimlane.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script> 
 $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",phaseSize:100}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.pivot<span class="type-signature type point">Point</span>
+### nodes.pivot 'Point'
 {:#members:nodes-pivot}
-
-
-
-
-
-
-
 
 To set the pivot point of the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * Points(0.5,0.5)
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -9926,49 +4455,21 @@ Example
 var nodes = [];
 nodes=[{pivot: ej.datavisualization.Diagram.Point(0.8, 0.8)}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.points<span class="type-signature type array">Array</span>
+### nodes.points 'Array'
 {:#members:nodes-points}
-
-
-
-
-
-
-
 
 Defines the collection of points to draw polygon node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * []
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -9976,49 +4477,21 @@ Example
 var node=[];
 node={[shape: { type: "polygon", points:[{ x: 0, y: 12.5 }, { x: 0, y: 50 }, { x: 50, y: 50 }, { x: 50, y: 0 }, { x: 12.5, y: 0 }, { x: 0, y: 12.5 }]}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports<span class="type-signature type array">Array</span>
+### nodes.ports 'Array'
 {:#members:nodes-ports}
-
-
-
-
-
-
-
 
 To add collection of ports to node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10026,49 +4499,21 @@ Example
 var port: [{ offset: { x: 0, y: 0.5 }, name: "aport" }]
 nodes=[{ports:port}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports.borderColor<span class="type-signature type string">String</span>
+### nodes.ports.borderColor 'String'
 {:#members:nodes-ports-bordercolor}
-
-
-
-
-
-
-
 
 Sets the border color of the port
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "#1a1a1a"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10076,49 +4521,21 @@ Example
 var node=[];
 node={ports:[{borderColor:"green"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports.borderWidth<span class="type-signature type number">Number</span>
+### nodes.ports.borderWidth 'Number'
 {:#members:nodes-ports-borderwidth}
-
-
-
-
-
-
-
 
 Sets the border width of the port
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 1
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10126,98 +4543,42 @@ Example
 var node=[];
 node={ports:[{borderWidth: 1}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports.connectorPadding<span class="type-signature type int">Int</span>
+### nodes.ports.connectorPadding 'Number'
 {:#members:nodes-ports-connectorpadding}
-
-
-
-
-
-
-
 
 To set the distance to be left between the port and connections.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var node = [{ports:[{connectorPadding:2}]}];
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports.constraints<span class="type-signature type enum">enum</span>
+### nodes.ports.constraints 'enum'
 {:#members:nodes-ports-constraints}
-
-
-
-
-
-
-
 
 Sets whether connections can be created with the port See <a href="global.html#PortConstraints">PortConstraints</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * PortConstraints.Connect
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10225,49 +4586,21 @@ Example
 var node=[];
 node={ports:[{constraints: ej.datavisualization.Diagram.PortConstraints.Connect}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports.fillColor<span class="type-signature type string">String</span>
+### nodes.ports.fillColor 'String'
 {:#members:nodes-ports-fillcolor}
-
-
-
-
-
-
-
 
 Sets the color that is used to fill port shapes
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "white"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10275,49 +4608,21 @@ Example
 var node=[];
 node={ports:[{fillColor:"green"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports.name;<span class="type-signature type string">String</span>
-{:#members:nodes-ports-name;}
-
-
-
-
-
-
-
+### nodes.ports.name 'String'
+{:#members:nodes-ports-name}
 
 The name of port to be specified
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10325,49 +4630,21 @@ Example
 var node=[];
 node={ports:[{ name: "port"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports.offset<span class="type-signature type point">Point</span>
+### nodes.ports.offset 'Point'
 {:#members:nodes-ports-offset}
-
-
-
-
-
-
-
 
 Offset value to align the port
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * Point(0, 0)
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10375,49 +4652,21 @@ Example
 var node=[];
 node={ports:[{{ x: 0, y: 0.5 }}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports.pathData<span class="type-signature type string">String</span>
+### nodes.ports.pathData 'String'
 {:#members:nodes-ports-pathdata}
-
-
-
-
-
-
-
 
 Path data to draw the custom port
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10425,49 +4674,21 @@ Example
 var node=[];
 node={ports:[{pathData:""}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports.shape<span class="type-signature type enum">enum</span>
+### nodes.ports.shape 'enum'
 {:#members:nodes-ports-shape}
-
-
-
-
-
-
-
 
 Sets the shape of the port See <a href="global.html#PortShapes">PortShapes</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * PortShapes.Square
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10475,49 +4696,21 @@ Example
 var node=[];
 node={ports:[{shape: ej.datavisualization.Diagram.PortShapes.Square}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports.size<span class="type-signature type number">Number</span>
+### nodes.ports.size 'Number'
 {:#members:nodes-ports-size}
-
-
-
-
-
-
-
 
 Sets the size of the port
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 8
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10525,49 +4718,21 @@ Example
 var node=[];
 node={ports:[{size: 10}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.ports.visibility<span class="type-signature type enum">enum</span>
+### nodes.ports.visibility 'enum'
 {:#members:nodes-ports-visibility}
-
-
-
-
-
-
-
 
 Enables or disables the visibility of port See <a href="global.html#PortVisibility">PortVisibility</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * PortVisibility.Default
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10575,49 +4740,20 @@ Example
 var node=[];
 node={ports:[{visibility: ej.datavisualization.Diagram.PortVisibility.Default}]};
 $("#diagramcontent").ejDiagram({nodes:port});
-</script> {% endhighlight %}
+</script>{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.rotateAngle<span class="type-signature type number">Number</span>
+### nodes.rotateAngle 'Number'
 {:#members:nodes-rotateangle}
-
-
-
-
-
-
-
 
 To set the rotation angle of the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10625,49 +4761,21 @@ Example
 var nodes = [];
 nodes=[{rotateAngle: 120}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.shadow<span class="type-signature type object">Object</span>
+### nodes.shadow 'Object'
 {:#members:nodes-shadow}
-
-
-
-
-
-
-
 
 To define the shadow behavior of node seeShadow
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * Diagram.Shadow()
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10675,49 +4783,21 @@ Example
 var nodes = [];
 nodes=[shadow:{distance: 5,angle:45,opacity:0.7}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.shadow.angle<span class="type-signature type integer">Integer</span>
+### nodes.shadow.angle 'Number'
 {:#members:nodes-shadow-angle}
-
-
-
-
-
-
-
 
 Defines the angle difference to be set between object and shadow
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 45
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10725,49 +4805,21 @@ Example
 var node=[];
 node={[shadow:{angle:50}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.shadow.distance<span class="type-signature type integer">Integer</span>
+### nodes.shadow.distance 'Number'
 {:#members:nodes-shadow-distance}
-
-
-
-
-
-
-
 
 Defines the distance to be left between object and shadow
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 5
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10775,49 +4827,21 @@ Example
 var node=[];
 node={[shadow:{distance:7}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.shadow.opacity<span class="type-signature type float">float</span>
+### nodes.shadow.opacity 'Number'
 {:#members:nodes-shadow-opacity}
-
-
-
-
-
-
-
 
 Defines the opacity of the shadow
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0.7
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10825,49 +4849,21 @@ Example
 var node=[];
 node={[shadow:{opacity:0.9}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.shape<span class="type-signature type enum">Enum</span>
+### nodes.shape 'enum'
 {:#members:nodes-shape}
-
-
-
-
-
-
-
 
 Sets the shape of the node. It depends upon the type of node. See {Link Shapes}
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "rectangle"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10875,49 +4871,21 @@ Example
 var nodes = [];
 nodes=[shape: "rectangle"}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.source<span class="type-signature type string">String</span>
+### nodes.source 'String'
 {:#members:nodes-source}
-
-
-
-
-
-
-
 
 Sets the source location of the image node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10925,49 +4893,21 @@ Example
 var node=[];
 node={[shape:{type:"image",source:"Syncfusion.png"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.subProcess<span class="type-signature type object">object</span>
+### nodes.subProcess 'Object'
 {:#members:nodes-subprocess}
-
-
-
-
-
-
-
 
 Defines the subProcess of BPMN Activity and it is applicable, if the Activity type is "subProcess"
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * Diagram.BPMNSubProcess()
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -10975,49 +4915,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", activity: "subProcess", subProcess:{loop: ej.datavisualization.Diagram.BPMNLoops.Standard}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.subProcess.adhoc<span class="type-signature type boolean">Boolean</span>
+### nodes.subProcess.adhoc 'Boolean'
 {:#members:nodes-subprocess-adhoc}
-
-
-
-
-
-
-
 
 To set whether the process is adhoc or not
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11025,49 +4937,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", subProcess:{adhoc: false}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.subProcess.boundary<span class="type-signature type enum">enum</span>
+### nodes.subProcess.boundary 'enum'
 {:#members:nodes-subprocess-boundary}
-
-
-
-
-
-
-
 
 Sets the boundary of the BPMN process See <a href="global.html#BPMNBoundary">BPMNBoundary</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.BPMNBoundary.Default
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11075,49 +4959,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", subProcess:{boundary: ej.datavisualization.Diagram.BPMNBoundary.Default}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.subProcess.compensation<span class="type-signature type boolean">Boolean</span>
+### nodes.subProcess.compensation 'Boolean'
 {:#members:nodes-subprocess-compensation}
-
-
-
-
-
-
-
 
 To set whether the process is a compensation process or not
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11125,49 +4981,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", subProcess:{compensation: false}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.subProcess.loop<span class="type-signature type enum">enum</span>
+### nodes.subProcess.loop 'enum'
 {:#members:nodes-subprocess-loop}
-
-
-
-
-
-
-
 
 Sets the type of loop to a BPMN Process See <a href="global.html#BPMNLoops">BPMNLoops</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.BPMNLoops.None
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11175,49 +5003,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", subProcess:{loop: ej.datavisualization.Diagram.BPMNLoops.Standard}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.task<span class="type-signature type object">object</span>
+### nodes.task 'Object'
 {:#members:nodes-task}
-
-
-
-
-
-
-
 
 Defines the task of BPMN Activity and it is applicable, if Activity type is "task"
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * Diagram.BPMNTask()
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11225,49 +5025,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", task:{loop: ej.datavisualization.Diagram.BPMNLoops.Standard}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.tasks.call<span class="type-signature type boolean">Boolean</span>
+### nodes.tasks.call 'Boolean'
 {:#members:nodes-tasks-call}
-
-
-
-
-
-
-
 
 To set whether the task is a global task or not
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11275,49 +5047,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", task:{call: false}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.tasks.compensation<span class="type-signature type boolean">Boolean</span>
+### nodes.tasks.compensation 'Boolean'
 {:#members:nodes-tasks-compensation}
-
-
-
-
-
-
-
 
 To set whether the task is a compensation task or not
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11325,49 +5069,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", task:{compensation: false}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.tasks.loop<span class="type-signature type enum">enum</span>
+### nodes.tasks.loop 'enum'
 {:#members:nodes-tasks-loop}
-
-
-
-
-
-
-
 
 Sets the type of loop to a BPMN task See <a href="global.html#BPMNLoops">BPMNLoops</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.BPMNLoops.None
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11375,49 +5091,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", task:{loop: ej.datavisualization.Diagram.BPMNLoops.Standard}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.tasks.type<span class="type-signature type enum">enum</span>
+### nodes.tasks.type 'enum'
 {:#members:nodes-tasks-type}
-
-
-
-
-
-
-
 
 Sets the type of the BPMN task See <a href="global.html#BPMNTasks">BPMNTasks</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.BPMNTasks.None
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11425,49 +5113,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", activity: "task", task:{type: ej.datavisualization.Diagram.BPMNTasks.Service}}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.templateId<span class="type-signature type string">string</span>
+### nodes.templateId 'String'
 {:#members:nodes-templateid}
-
-
-
-
-
-
-
 
 Sets the template id of native/html nodes
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11475,49 +5135,21 @@ Example
 var node=[]; 
 node={[shape: { type: "text", templateId: "templateId" }]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.textBlock<span class="type-signature type integer">Integer</span>
+### nodes.textBlock 'Number'
 {:#members:nodes-textblock}
-
-
-
-
-
-
-
 
 Defines the textBlock and it is applicable in case of text node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11527,49 +5159,21 @@ var textBlock = ej.datavisualization.Diagram.TextBlockDefaults;
 textBlock.text = "TextNode";
 node={[shape: { type: "text", textBlock: textBlock }]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.trigger<span class="type-signature type enum">enum</span>
+### nodes.trigger 'enum'
 {:#members:nodes-trigger}
-
-
-
-
-
-
-
 
 Sets the type of BPMN Event Trigger See <a href="global.html#BPMNTriggers">BPMNTriggers</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.BPMNTriggers.None
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11577,49 +5181,21 @@ Example
 var nodes = [];
 nodes=[{type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Event, trigger: ej.datavisualization.Diagram.BPMNTriggers.None}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.type<span class="type-signature type enum">enum</span>
+### nodes.type 'enum'
 {:#members:nodes-type}
-
-
-
-
-
-
-
 
 The type of node See <a href="global.html#Shapes">Shapes</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ej.datavisualization.Diagram.Shapes.Basic
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11627,99 +5203,43 @@ Example
 var node=[];
 node={[shape:{type:"rectangle"}]};
 $("#diagramcontent").ejDiagram({nodes:node});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.vertical Align<span class="type-signature type verticalalignment"><a href="global.html#VerticalAlignment">VerticalAlignment</a></span>
+### nodes.verticalAlign VerticalAlignment
 {:#members:nodes-vertical}
-
-
-
-
-
-
-
 
 To set the Vertical alignment of node. Applicable if the type is group.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * VerticalAlignment.Top
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var nodes = [];
-node={name:"node1",VerticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top};
+node={name:"node1",verticalAlignment: ej.datavisualization.Diagram.VerticalAlignment.Top};
 $("#diagramcontent").ejDiagram({nodes:[node]});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.visible<span class="type-signature type boolean">Boolean</span>
+### nodes.visible 'Boolean'
 {:#members:nodes-visible}
-
-
-
-
-
-
-
 
 To set the visibility of the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11727,49 +5247,21 @@ Example
 var nodes = [];
 nodes=[{visible: true}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.width<span class="type-signature type int">Int</span>
+### nodes.width 'Number'
 {:#members:nodes-width}
-
-
-
-
-
-
-
 
 To set the width of the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11777,49 +5269,21 @@ Example
 var nodes = [];
 nodes=[{width: 100}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodes.zOrder<span class="type-signature type int">Int</span>
+### nodes.zOrder 'Number'
 {:#members:nodes-zorder}
-
-
-
-
-
-
-
 
 To set the Zorder of the node
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -11827,751 +5291,289 @@ Example
 var nodes = [];
 nodes=[{zOrder: 1}];
 $("#diagramcontent").ejDiagram({nodes:nodes});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nodeTemplate<span class="type-signature type object">object</span>
+### nodeTemplate 'Object'
 {:#members:nodetemplate}
-
-
-
-
-
-
-
 
 To customize the node properties before rendering the node.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 function nodeTemplate(diagram, node) {node.labels[0].text = node.Name};
 $("#diagram").ejDiagram({ nodeTemplate:nodeTemplate});
-</script>{% endhighlight %}
-
-
-
-
+</script>
+{% endhighlight %}
 
 
 
 ### pageSettings
 {:#members:pagesettings}
 
-
-
-
-
-
-
-
 To define the page settings of diagram
 
-
-
-
-
-
-
-
-
-
-
-### pageSettings.multiplePage<span class="type-signature type boolean">Boolean</span>
+### pageSettings.multiplePage 'Boolean'
 {:#members:pagesettings-multiplepage}
-
-
-
-
-
-
-
 
 To set whether the number of pages can be extended based on the region covered by elements
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //multiplePage of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {multiplePage: false}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({pageSettings: {multiplePage: false}});{% endhighlight %}
 
 
 
-
-
-
-
-### pageSettings.pageBackgroundColor<span class="type-signature type string">String</span>
+### pageSettings.pageBackgroundColor 'String'
 {:#members:pagesettings-pagebackgroundcolor}
-
-
-
-
-
-
-
 
 To set the background color of page
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "#ffffff"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //pageBackgroundColor of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageBackgroundColor: "#ffffff"}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({pageSettings: {pageBackgroundColor: "#ffffff"}});{% endhighlight %}
 
 
 
-
-
-
-
-### pageSettings.pageBorderColor<span class="type-signature type string">String</span>
+### pageSettings.pageBorderColor 'String'
 {:#members:pagesettings-pagebordercolor}
-
-
-
-
-
-
-
 
 To set the border color of page
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "#565656"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //pageBorderColor of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageBorderColor: "#565656"}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({pageSettings: {pageBorderColor: "#565656"}});{% endhighlight %}
 
 
 
-
-
-
-
-### pageSettings.pageBorderWidth<span class="type-signature type number">Number</span>
+### pageSettings.pageBorderWidth 'Number'
 {:#members:pagesettings-pageborderwidth}
-
-
-
-
-
-
-
 
 To set the border width of the page
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //pageBorderWidth of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageBorderWidth: 3}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({pageSettings: {pageBorderWidth: 3}});{% endhighlight %}
 
 
 
-
-
-
-
-### pageSettings.pageHeight<span class="type-signature type number">Number</span>
+### pageSettings.pageHeight 'Number'
 {:#members:pagesettings-pageheight}
-
-
-
-
-
-
-
 
 To set the height of the page
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //pageHeight of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageHeight: 4500}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({pageSettings: {pageHeight: 4500}});{% endhighlight %}
 
 
 
-
-
-
-
-### pageSettings.pageMargin<span class="type-signature type number">Number</span>
+### pageSettings.pageMargin 'Number'
 {:#members:pagesettings-pagemargin}
-
-
-
-
-
-
-
 
 To set the margin of page
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 24
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //pageMargin of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageMargin: 24}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({pageSettings: {pageMargin: 24}});{% endhighlight %}
 
 
 
-
-
-
-
-### pageSettings.pageWidth<span class="type-signature type number">Number</span>
+### pageSettings.pageWidth 'Number'
 {:#members:pagesettings-pagewidth}
-
-
-
-
-
-
-
 
 To set the width of the page
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //pageWidth
-$("#diagramContent").ejDiagram({pageSettings: {pageWidth: 4500}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({pageSettings: {pageWidth: 4500}});{% endhighlight %}
 
 
 
-
-
-
-
-### pageSettings.showPageBreak<span class="type-signature type boolean">Boolean</span>
+### pageSettings.showPageBreak 'Boolean'
 {:#members:pagesettings-showpagebreak}
-
-
-
-
-
-
-
 
 Enables or disables the page breaks in diagram
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * false
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 //showPageBreak of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {showPageBreak: false}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({pageSettings: {showPageBreak: false}});{% endhighlight %}
 
 
 
-
-
-
-
-### selectedItems<span class="type-signature type object">object</span>
+### selectedItems 'Object'
 {:#members:selecteditems}
-
-
-
-
-
-
-
 
 The object to define the behavior of the selected items
 
 
 
-
-
-
-
-
-
-
-
-### selectedItems.constraints<span class="type-signature type enum">enum</span>
+### selectedItems.constraints 'enum'
 {:#members:selecteditems-constraints}
-
-
-
-
-
-
-
 
 Sets the visible items of selector see <a href="global.html#SelectorConstraints">SelectorConstraints</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * SelectorConstraints.All
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="diagramcontent"></div>
 <script>
 $("#diagramContent").ejDiagram({selectedItems:{constraints: ej.datavisualization.Diagram.SelectorConstraints.None} }}); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### selectedItems.height<span class="type-signature type number">Number</span>
+### selectedItems.height 'Number'
 {:#members:selecteditems-height}
-
-
-
-
-
-
-
 
 Sets the height of the selected items
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
-$("#diagramContent").ejDiagram({selectedItems: {height: 50}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({selectedItems: {height: 50}});
+
+{% endhighlight %}
 
 
 
-
-
-
-
-### selectedItems.offsetX<span class="type-signature type number">Number</span>
+### selectedItems.offsetX 'Number'
 {:#members:selecteditems-offsetx}
-
-
-
-
-
-
-
 
 Defines the X co-ordinate of the selected item
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
-$("#diagramContent").ejDiagram({selectedItems: {offsetX: 50}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({selectedItems: {offsetX: 50}});{% endhighlight %}
 
 
 
-
-
-
-
-### selectedItems.offsetY<span class="type-signature type number">Number</span>
+### selectedItems.offsetY 'Number'
 {:#members:selecteditems-offsety}
-
-
-
-
-
-
-
 
 Defines the Y co-ordinate of the selected item
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
-$("#diagramContent").ejDiagram({selectedItems: {offsetY: 50}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({selectedItems: {offsetY: 50}});{% endhighlight %}
 
 
 
-
-
-
-
-### selectedItems.rotateAngle<span class="type-signature type number">Number</span>
+### selectedItems.rotateAngle 'Number'
 {:#members:selecteditems-rotateangle}
-
-
-
-
-
-
-
 
 Sets the rotation angle of the selected items.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
-$("#diagramContent").ejDiagram({selectedItems: {rotateAngle: 50}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({selectedItems: {rotateAngle: 50}});{% endhighlight %}
 
 
 
-
-
-
-
-### selectedItems.userHandles<span class="type-signature type array">array</span>
+### selectedItems.userHandles 'Array'
 {:#members:selecteditems-userhandles}
-
-
-
-
-
-
-
 
 To add frequently using commands around selector
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * []
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -12582,235 +5584,91 @@ var cloneHandle = ej.datavisualization.Diagram.UserHandle();
 userhandle.push(cloneHandles);
 }
 $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### selectedItems.width<span class="type-signature type number">Number</span>
+### selectedItems.width 'Number'
 {:#members:selecteditems-width}
-
-
-
-
-
-
-
 
 Sets the width of the selected items
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
-$("#diagramContent").ejDiagram({selectedItems: {width: 50}}); {% endhighlight %}
+$("#diagramContent").ejDiagram({selectedItems: {width: 50}});{% endhighlight %}
 
 
 
-
-
-
-
-### showTooltip<span class="type-signature type boolean">Boolean</span>
+### showTooltip 'Boolean'
 {:#members:showtooltip}
-
-
-
-
-
-
-
 
 Enables or disables tooltip of diagram
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram({showTooltip: true});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### snapSettings<span class="type-signature type object">object</span>
+### snapSettings 'Object'
 {:#members:snapsettings}
-
-
-
-
-
-
-
 
 Specifies the snap settings of the diagram.
 
 
 
-
-
-
-
-
-
-
-
-### snapSettings.enableSnapToObject<span class="type-signature type boolean">Boolean</span>
+### snapSettings.enableSnapToObject 'Boolean'
 {:#members:snapsettings-enablesnaptoobject}
-
-
-
-
-
-
-
 
 Enables or disables the snap to object
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * true
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 var snap = {"enableSnapToObject":true};
 //enableSnapToObject: 
-$("#diagramContent").ejDiagram({snapSettings: snap}); {% endhighlight %}
+$("#diagramContent").ejDiagram({snapSettings: snap});{% endhighlight %}
 
 
 
-
-
-
-
-### snapSettings.horizontalGridLines<span class="type-signature type object">object</span>
+### snapSettings.horizontalGridLines 'Object'
 {:#members:snapsettings-horizontalgridlines}
-
-
-
-
-
-
-
 
 Specifies the settings of horizontal grid lines.
 
 
 
-
-
-
-
-
-
-
-
-### snapSettings.horizontalGridLines.lineColor<span class="type-signature type string">string</span>
+### snapSettings.horizontalGridLines.lineColor 'String'
 {:#members:snapsettings-horizontalgridlines-linecolor}
-
-
-
-
-
-
-
 
 Sets the line color for horizontal gridlines
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "lightgray"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -12819,98 +5677,42 @@ Example
 var gridline = { "snapConstraints":"lineColor": "blue" };
 //Linecolor of the horizontal gridlines
 $("#diagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} }); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### snapSettings.horizontalGridLines.lineDashArray<span class="type-signature type string">string</span>
+### snapSettings.horizontalGridLines.lineDashArray 'String'
 {:#members:snapsettings-horizontalgridlines-linedasharray}
-
-
-
-
-
-
-
 
 Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "0"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { lineDashArray: "2 2"}}}); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### snapSettings.horizontalGridLines.linesInterval<span class="type-signature type array">array</span>
+### snapSettings.horizontalGridLines.linesInterval 'Array'
 {:#members:snapsettings-horizontalgridlines-linesinterval}
-
-
-
-
-
-
-
 
 Specifies pattern of lines and gaps of horizontal gridlines
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * [1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
@@ -12918,216 +5720,87 @@ Example
 $("#diagram").ejDiagram({ snapSettings: { 
     horizontalGridLines: { linesInterval: [1, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15] }
 }}); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### snapSettings.horizontalGridLines.snapInterval<span class="type-signature type array">array</span>
+### snapSettings.horizontalGridLines.snapInterval 'Array'
 {:#members:snapsettings-horizontalgridlines-snapinterval}
-
-
-
-
-
-
-
 
 Specifies the snap intervals of horizontal grid lines.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * [20]
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { snapInterval: [10] }}}); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### snapSettings.snapAngle<span class="type-signature type number">Number</span>
+### snapSettings.snapAngle 'Number'
 {:#members:snapsettings-snapangle}
-
-
-
-
-
-
-
 
 The Angle by which the object to be snapped
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 5
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 var snap = {"snapAngle":5};
 //enableSnapToObject: 
-$("#diagramContent").ejDiagram({snapSettings: snap}); {% endhighlight %}
+$("#diagramContent").ejDiagram({snapSettings: snap});{% endhighlight %}
 
 
 
-
-
-
-
-### snapSettings.snapObjectDistance<span class="type-signature type number">Number</span>
+### snapSettings.snapObjectDistance 'Number'
 {:#members:snapsettings-snapobjectdistance}
-
-
-
-
-
-
-
 
 Relative distance between the nearer object and selected object
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 5
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 var snap = {"snapObjectDistance":5};
 //snapObjectDistance
-$("#diagramContent").ejDiagram({snapSettings: snap}); {% endhighlight %}
+$("#diagramContent").ejDiagram({snapSettings: snap});{% endhighlight %}
 
 
 
-
-
-
-
-### snapSettings.verticalGridLines<span class="type-signature type object">object</span>
+### snapSettings.verticalGridLines 'Object'
 {:#members:snapsettings-verticalgridlines}
-
-
-
-
-
-
-
 
 Specifies the settings of vertical grid lines.
 
 
 
-
-
-
-
-
-
-
-
-### snapSettings.verticalGridLines.lineColor<span class="type-signature type string">string</span>
+### snapSettings.verticalGridLines.lineColor 'String'
 {:#members:snapsettings-verticalgridlines-linecolor}
-
-
-
-
-
-
-
 
 Sets the line color of vertical gridlines
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "lightgray"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -13136,98 +5809,42 @@ Example
 var gridline = { "snapConstraints":"lineColor": "blue" };
 //Linecolor of the vertical gridlines
 $("#diagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### snapSettings.verticalGridLines.lineDashArray<span class="type-signature type string">string</span>
+### snapSettings.verticalGridLines.lineDashArray 'String'
 {:#members:snapsettings-verticalgridlines-linedasharray}
-
-
-
-
-
-
-
 
 Specifies the pattern of dashes and gaps used to stroke vertical grid lines
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "0"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { lineDashArray: "2 2"}}}); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### snapSettings.verticalGridLines.linesInterval<span class="type-signature type array">array</span>
+### snapSettings.verticalGridLines.linesInterval 'Array'
 {:#members:snapsettings-verticalgridlines-linesinterval}
-
-
-
-
-
-
-
 
 Specifies pattern of lines and gaps of vertical gridlines
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * [1.25, 18.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75, 0.25, 19.75]
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
@@ -13235,147 +5852,63 @@ Example
 $("#diagram").ejDiagram({ snapSettings: { 
     verticalGridLines: { linesInterval: [1, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15] }
 }}); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### snapSettings.verticalGridLines.snapInterval<span class="type-signature type array">array</span>
+### snapSettings.verticalGridLines.snapInterval 'Array'
 {:#members:snapsettings-verticalgridlines-snapinterval}
-
-
-
-
-
-
-
 
 Specifies the snap intervals for vertical grid lines.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * [20]
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { snapInterval: [10] }}}); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### tool<span class="type-signature type enum">enum</span>
+### tool 'enum'
 {:#members:tool}
-
-
-
-
-
-
-
 
 Sets the default behavior of the diagram see<a href="global.html#Tool">Tool</a>
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * Tool.All
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="diagramcontent"></div>
 <script>
 $("#diagramContent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.Default} }); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### tooltipTemplateId<span class="type-signature type string">String</span>
+### tooltipTemplateId 'String'
 {:#members:tooltiptemplateid}
-
-
-
-
-
-
-
 
 To set custom style for tool tip of diagram
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * ""
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
          
@@ -13386,169 +5919,77 @@ Example
 </script>
 <script>
 $("#diagramcontent").ejDiagram({ tooltipTemplateId: "toolTipId"});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### version<span class="type-signature type string">String</span>
+### version 'String'
 {:#members:version}
-
-
-
-
-
-
-
 
 Sets the version of the diagram
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * "13.1"
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 $("#diagramcontent").ejDiagram("instance");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### width<span class="type-signature type string">string</span>
+### width 'String'
 {:#members:width}
-
-
-
-
-
-
-
 
 Specifies the width of the diagram.
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * null
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagram"></div>
 <script>
 $("#diagram").ejDiagram({ width:"100%" });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### zoomFactor<span class="type-signature type number">Number</span>
+### zoomFactor 'Number'
 {:#members:zoomfactor}
-
-
-
-
-
-
-
 
 Sets the factor by which we can zoom in or zoom out
 
-
-
-
-Default Value:
-{:.param}
-
-
-
-
-
+#### Default Value 
 
 * 0.2
 
-
-
-
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
 <div id="diagramcontent"></div>
 <script>
 $("#diagramContent").ejDiagram({zoomFactor: 1}); 
-</script>{% endhighlight %}
-
-
+</script>
+{% endhighlight %}
 
 
 
 ## Methods
 
 
-### add<span class="signature">(node)</span>
+### add(node)
 {:#methods:add}
-
-
-
-
-
-
-
 
 Add nodes and connectors to diagram at runtime
 
@@ -13557,25 +5998,19 @@ Add nodes and connectors to diagram at runtime
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">a JSON to define a node/connector or an array of nodes and connector</td>
+<td class="name">node</td>
+<td class="type">Object</td>
+<td class="description">a JSON to define a node/connector or an array of nodes and connector</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 
@@ -13599,7 +6034,8 @@ Example
 {% endhighlight %}
 
 
-### addLabel<span class="signature">(nodeName, label)</span>
+
+### addLabel(nodeName, label)
 {:#methods:addLabel}
 
 Add a label to a node at runtime
@@ -13609,27 +6045,25 @@ Add a label to a node at runtime
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">of the node to add a label</td>
+<td class="name">name</td>
+<td class="type">string</td>
+<td class="description">of the node to add a label</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-label{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to be added to the node specified by name</td>
+<td class="name">label</td>
+<td class="type">Object</td>
+<td class="description">to be added to the node specified by name</td>
 </tr>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
+
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
@@ -13642,7 +6076,7 @@ diagram.addLabel(node.name, {fontColor:"red", text:"newLabel"});
 
 
 
-### addPhase<span class="signature">(name, options)</span>
+### addPhase(name, options)
 {:#methods:addphase}
 
 Add a phase to a swimlane at runtime
@@ -13652,31 +6086,24 @@ Add a phase to a swimlane at runtime
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">of the swimlane to add the phase</td>
+<td class="name">name</td>
+<td class="type">String</td>
+<td class="description">of the swimlane to add the phase</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to define the phase to be added</td>
+<td class="name">options</td>
+<td class="type">Object</td>
+<td class="description">to define the phase to be added</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -13689,19 +6116,8 @@ diagram.addPhase("swimlane", { name: "CustomPhase", offset: 600, label: { text: 
 
 
 
-
-
-
-
-### addPorts<span class="signature">(name, ports)</span>
+### addPorts(name, ports)
 {:#methods:addports}
-
-
-
-
-
-
-
 
 Add a collection of ports to the node specified by name
 
@@ -13710,31 +6126,24 @@ Add a collection of ports to the node specified by name
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">to identify the node from the model</td>
+<td class="name">name</td>
+<td class="type">String</td>
+<td class="description">to identify the node from the model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-ports{% endhighlight %}</td>
-<td class="type"><span class="param-type">array</span></td>
-<td class="description last">a collection of ports to be added to the specified node</td>
+<td class="name">ports</td>
+<td class="type">array</td>
+<td class="description">a collection of ports to be added to the specified node</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
         
@@ -13749,13 +6158,8 @@ diagram.addPorts("Rect1", port);
 
 
 
-
-
-
-
-### addSelection<span class="signature">(node, clearSelection)</span>
+### addSelection(node, clearSelection)
 {:#methods:addselection}
-
 
 Add the specified node to selection list
 
@@ -13764,31 +6168,24 @@ Add the specified node to selection list
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">the node to be selected</td>
+<td class="name">node</td>
+<td class="type">Object</td>
+<td class="description">the node to be selected</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-clearSelection{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">to define whether to clear the existing selection or not</td>
+<td class="name">clearSelection</td>
+<td class="type">Boolean</td>
+<td class="description">to define whether to clear the existing selection or not</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -13802,19 +6199,8 @@ diagram.addSelection(node);
 
 
 
-
-
-
-
-### align<span class="signature">(direction)</span>
+### align(direction)
 {:#methods:align}
-
-
-
-
-
-
-
 
 Align the selected objects based on the reference object and direction
 
@@ -13823,209 +6209,138 @@ Align the selected objects based on the reference object and direction
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-direction{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">to specify the direction towards which the selected objects are to be aligned("left","right",top","bottom")</td>
+<td class="name">direction</td>
+<td class="type">String</td>
+<td class="description">to specify the direction towards which the selected objects are to be aligned("left","right",top","bottom")</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.align("left"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### bringIntoView<span class="signature">(rect)</span>
+### bringIntoView(rect)
 {:#methods:bringintoview}
 
-
-
-
-
-
-
-
-To bring the specified portion of the diagram content to the diagram viewport
+Bring the specified portion of the diagram content to the diagram viewport
 
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-rect{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">the rectangular region that is to be brought into diagram viewport</td>
+<td class="name">rect</td>
+<td class="type">Object</td>
+<td class="description">the rectangular region that is to be brought into diagram viewport</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.bringIntoView(ej.datavisualization.Diagram.Rectangle(700, 500, 80, 80));
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### bringToCenter<span class="signature">(rect)</span>
+### bringToCenter(rect)
 {:#methods:bringtocenter}
 
-
-
-
-
-
-
-
-To bring the specified portion of the diagram content to the center of the diagram viewport
+Bring the specified portion of the diagram content to the center of the diagram viewport
 
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-rect{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last"> the rectangular region that is to be brought to the center of diagram viewport</td>
+<td class="name">rect</td>
+<td class="type">Object</td>
+<td class="description"> the rectangular region that is to be brought to the center of diagram viewport</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.bringToCenter(ej.datavisualization.Diagram.Rectangle(700, 500, 80, 80));
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### bringToFront<span class="signature">()</span>
+### bringToFront()
 {:#methods:bringtofront}
-
-
-
-
-
-
-
 
 Visually move the selected object over all other intersected objects
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.bringToFront(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### clear<span class="signature">()</span>
+### clear()
 {:#methods:clear}
-
-
-
-
-
-
-
 
 Remove all the elements from diagram
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.clear(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-### clearSelection<span class="signature">()</span>
+### clearSelection()
 {:#methods:clearselection}
 
 Remove the current selection in diagram
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -14041,25 +6356,12 @@ diagram.clearSelection();
 
 
 
-### copy<span class="signature">()</span>
+### copy()
 {:#methods:copy}
-
-
-
-
-
-
-
 
 Copy the selected object to internal clipboard and get the copied object
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -14072,29 +6374,12 @@ var obj = diagram.copy();
 
 
 
-
-
-
-
-### cut<span class="signature">()</span>
+### cut()
 {:#methods:cut}
-
-
-
-
-
-
-
 
 Cut the selected object from diagram to diagram internal clipboard
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -14107,9 +6392,8 @@ diagram.cut();
 
 
 
-### exportDiagram<span class="signature">(options)</span>
+### exportDiagram(options)
 {:#methods:exportdiagram}
-
 
 Export the diagram as downloadable files or as data
 
@@ -14118,73 +6402,57 @@ Export the diagram as downloadable files or as data
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to export the desired region of diagram to the desired formats
+<td class="name">options</td>
+<td class="type">Object</td>
+<td class="description">to export the desired region of diagram to the desired formats
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-fileName{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">name of the file to be downloaded</td>
+<td class="name">fileName</td>
+<td class="type">String</td>
+<td class="description">name of the file to be downloaded</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-format{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">format of the exported file/data See <a href="global.html#fileformats">FileFormats</a></td>
+<td class="name">format</td>
+<td class="type">String</td>
+<td class="description">format of the exported file/data See <a href="global.html#fileformats">FileFormats</a></td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-mode{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">to set whether to export diagram as a file or as raw data See <a href="global.html#exportmodes">ExportModes</a></td>
+<td class="name">mode</td>
+<td class="type">String</td>
+<td class="description">to set whether to export diagram as a file or as raw data See <a href="global.html#exportmodes">ExportModes</a></td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-region{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">to set the region of the diagram to be exported See <a href="global.html#region">Region</a></td>
+<td class="name">region</td>
+<td class="type">String</td>
+<td class="description">to set the region of the diagram to be exported See <a href="global.html#region">Region</a></td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-bounds{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to set the custom bounds that is to be exported</td>
+<td class="name">bounds</td>
+<td class="type">Object</td>
+<td class="description">to set the custom bounds that is to be exported</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-margin{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to set margin to the exported data</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">margin</td>
+<td class="type">Object</td>
+<td class="description">to set margin to the exported data</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
  
@@ -14210,7 +6478,7 @@ diagram.exportDiagram(options);
 
 
 
-### findNode<span class="signature">(nodeName)</span>
+### findNode(nodeName)
 
 {:#methods:findnode}
 
@@ -14221,21 +6489,19 @@ Find a node/connector by its name
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">of the node/connector that is to be found</td>
+<td class="name">name</td>
+<td class="type">String</td>
+<td class="description">of the node/connector that is to be found</td>
 </tr>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 
@@ -14253,11 +6519,8 @@ var node = diagram.findNode("nodeName");
 
 
 
-### fitToPage<span class="signature">(mode, region, margin)</span>
+### fitToPage(mode, region, margin)
 {:#methods:fittopage}
-
-
-
 
 Fit the diagram content into diagram viewport
 
@@ -14266,37 +6529,29 @@ Fit the diagram content into diagram viewport
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-mode{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to set the mode of fit to command. See <a href="global.html#fitmode">FitMode</a></td>
+<td class="name">mode</td>
+<td class="type">Object</td>
+<td class="description">to set the mode of fit to command. See <a href="global.html#fitmode">FitMode</a></td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-region{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to set whether the region to be fit will be based on diagram elements or page settings <a href="global.html#region">Region</a></td>
+<td class="name">region</td>
+<td class="type">Object</td>
+<td class="description">to set whether the region to be fit will be based on diagram elements or page settings <a href="global.html#region">Region</a></td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-margin{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to set the required margin</td>
+<td class="name">margin</td>
+<td class="type">Object</td>
+<td class="description">to set the required margin</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
          
@@ -14304,28 +6559,17 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.fitToPage(mode,region,margin);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### group<span class="signature">()</span>
+### group()
 {:#methods:group}
-
-
 
 Group the selected nodes and connectors
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -14338,7 +6582,7 @@ diagram.group();
 
 
 
-### insertLabel<span class="signature">(name, label, index)</span>
+### insertLabel(name, label, index)
 {:#methods:insertLabel}
 
 Insert a label into a node's label collection at runtime
@@ -14348,33 +6592,30 @@ Insert a label into a node's label collection at runtime
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">of the node to insert the label</td>
+<td class="name">name</td>
+<td class="type">String</td>
+<td class="description">of the node to insert the label</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-label{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to be added to the node specified by name</td>
+<td class="name">label</td>
+<td class="type">Object</td>
+<td class="description">to be added to the node specified by name</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-index{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last"> to insert the label into the node</td>
+<td class="name">index</td>
+<td class="type">Object</td>
+<td class="description"> to insert the label into the node</td>
 </tr>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
+
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
@@ -14390,38 +6631,25 @@ diagram.insertLabel(node.name, {fontColor:"red", text:"newLabel"},0);
 
 
 
-### layout<span class="signature">()</span>
+### layout()
 {:#methods:layout}
-
-
-
-
 
 Refresh the diagram with the specified layout
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.layout();
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### load<span class="signature">(data)</span>
+### load(data)
 {:#methods:load}
-
-
 
 Load the diagram 
 
@@ -14430,81 +6658,49 @@ Load the diagram
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">that is to be loaded as diagram</td>
+<td class="name">data</td>
+<td class="type">Object</td>
+<td class="description">that is to be loaded as diagram</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.load(data);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### moveForward<span class="signature">()</span>
+### moveForward()
 {:#methods:moveforward}
-
-
-
-
-
-
-
 
 Visually move the selected object over its closest intersected object
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.moveForward(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### nudge<span class="signature">(direction, delta)</span>
+### nudge(direction, delta)
 {:#methods:nudge}
-
-
-
-
-
-
-
 
 Move the selected objects by either one pixel or by the pixels specified through argument
 
@@ -14513,54 +6709,37 @@ Move the selected objects by either one pixel or by the pixels specified through
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-direction{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">specifies the direction to move the selected objects ("left","right",top","bottom")</td>
+<td class="name">direction</td>
+<td class="type">String</td>
+<td class="description">specifies the direction to move the selected objects ("left","right",top","bottom")</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-delta{% endhighlight %}</td>
-<td class="type"><span class="param-type">Number</span></td>
-<td class="description last">specifies the number of pixels by which the selected objects to be moved</td>
+<td class="name">delta</td>
+<td class="type">Number</td>
+<td class="description">specifies the number of pixels by which the selected objects to be moved</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.nudge("direction", 5); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### paste<span class="signature">(object, rename)</span>
+### paste(object, rename)
 {:#methods:paste}
-
-
-
-
-
-
-
 
 Paste the selected object from internal clipboard to diagram
 
@@ -14569,30 +6748,24 @@ Paste the selected object from internal clipboard to diagram
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-object{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">to be added</td>
+<td class="name">object</td>
+<td class="type">String</td>
+<td class="description">to be added</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-rename{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">to define whether the specified object is to be renamed or not</td>
+<td class="name">rename</td>
+<td class="type">Boolean</td>
+<td class="description">to define whether the specified object is to be renamed or not</td>
 </tr>
 </tbody>
 </table>
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -14609,29 +6782,12 @@ diagram.paste(obj, true);
 
 
 
-
-
-
-
-### print<span class="signature">()</span>
+### print()
 {:#methods:print}
-
-
-
-
-
-
-
 
 Print the diagram as image
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
   
@@ -14645,29 +6801,12 @@ diagram.print();
 
 
 
-
-
-
-
-### redo<span class="signature">()</span>
+### redo()
 {:#methods:redo}
-
-
-
-
-
-
-
 
 Restore the last action that was reverted
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -14680,13 +6819,12 @@ diagram.redo();
 
 
 
-### refresh<span class="signature">()</span>
+### refresh()
 {:#methods:refresh}
 
 Refresh diagram at runtime
 
-Example
-{:.example}
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -14703,10 +6841,8 @@ diagram.refresh();
 
 
 
-### remove<span class="signature">(node)</span>
+### remove(node)
 {:#methods:remove}
-
-
 
 Remove either the given node/connector or the selected element from diagram
 
@@ -14715,25 +6851,19 @@ Remove either the given node/connector or the selected element from diagram
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last"> node/connector to be removed</td>
+<td class="name">node</td>
+<td class="type">Object</td>
+<td class="description"> node/connector to be removed</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -14746,8 +6876,7 @@ diagram.remove();
 
 
 
-
-### removeSelection<span class="signature">(node)</span>
+### removeSelection(node)
 {:#methods:removeSelection}
 
 Remove a particular object from selection list
@@ -14757,22 +6886,19 @@ Remove a particular object from selection list
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last"> node/connector to be removed from selection list</td>
+<td class="name">node</td>
+<td class="type">Object</td>
+<td class="description"> node/connector to be removed from selection list</td>
 </tr>
 </tbody>
 </table>
 
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -14789,20 +6915,12 @@ diagram.removeSelection(node);
 
 
 
-### sameHeight<span class="signature">()</span>
+### sameHeight()
 {:#methods:sameheight}
-
-
 
 Scale the selected objects to the height of the first selected object
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
         
@@ -14810,33 +6928,17 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.sameHeight(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### sameSize<span class="signature">()</span>
+### sameSize()
 {:#methods:samesize}
-
-
-
-
-
-
-
 
 Scale the selected objects to the size of the first selected object
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
         
@@ -14844,33 +6946,17 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.sameSize(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### sameWidth<span class="signature">()</span>
+### sameWidth()
 {:#methods:samewidth}
-
-
-
-
-
-
-
 
 Scale the selected objects to the width of the first selected object
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
         
@@ -14878,23 +6964,13 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.sameWidth(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### save<span class="signature">()</span>
+### save()
 {:#methods:save}
-
-
-
-
-
-
-
 
 Save the diagram as serialized JSON
 
@@ -14902,42 +6978,31 @@ Save the diagram as serialized JSON
 <thead>
 <tr>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last"></td>
+<td class="type">Object</td>
+<td class="description"></td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var savedDiagram = diagram.save();
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### scrollToNode<span class="signature">(node)</span>
+### scrollToNode(node)
 {:#methods:scrolltonode}
-
-
-
 
 Bring the node into view
 
@@ -14946,25 +7011,19 @@ Bring the node into view
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">the node/connector to be brought into view</td>
+<td class="name">node</td>
+<td class="type">Object</td>
+<td class="description">the node/connector to be brought into view</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -14972,165 +7031,85 @@ Example
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node = diagram.selectionList[0];
 diagram.scrollToNode(node); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### selectAll<span class="signature">()</span>
+### selectAll()
 {:#methods:selectall}
-
-
-
-
-
-
-
 
 Select all nodes and connector in diagram
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.selectAll(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### sendBackward<span class="signature">()</span>
+### sendBackward()
 {:#methods:sendbackward}
-
-
-
-
-
-
-
 
 Visually move the selected object behind its closest intersected object
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.sendBackward(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### sendToBack<span class="signature">()</span>
+### sendToBack()
 {:#methods:sendtoback}
-
-
-
-
-
-
-
 
 Visually move the selected object behind all other intersected objects
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.sendToBack(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### spaceAcross<span class="signature">()</span>
+### spaceAcross()
 {:#methods:spaceacross}
-
-
-
-
-
-
-
 
 Update the horizontal space between the selected objects as equal and within the selection boundary
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.spaceAcross(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### spaceDown<span class="signature">()</span>
+### spaceDown()
 {:#methods:spacedown}
-
-
-
-
-
-
-
 
 Update the vertical space between the selected objects as equal and within the selection boundary
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
         
@@ -15138,23 +7117,13 @@ Example
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.spaceDown(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### startLabelEdit<span class="signature">(node, label)</span>
+### startLabelEdit(node, label)
 {:#methods:startlabeledit}
-
-
-
-
-
-
-
 
 Start the editing of the specified label
 
@@ -15163,31 +7132,24 @@ Start the editing of the specified label
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">node/connector that contains the label to be edited</td>
+<td class="name">node</td>
+<td class="type">Object</td>
+<td class="description">node/connector that contains the label to be edited</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-label{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to be edited</td>
+<td class="name">label</td>
+<td class="type">Object</td>
+<td class="description">to be edited</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -15195,89 +7157,47 @@ Example
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node=diagram.selectionList[0];
 diagram.startLabelEdit(node,node.labels[0]);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### undo<span class="signature">()</span>
+### undo()
 {:#methods:undo}
-
-
-
-
-
-
-
 
 Reverse the last action that was performed
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.undo(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### ungroup<span class="signature">()</span>
+### ungroup()
 {:#methods:ungroup}
-
-
-
-
-
-
-
 
 Ungroup the selected group
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.ungroup(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### update<span class="signature">(options)</span>
+### update(options)
 {:#methods:update}
-
-
-
-
-
-
-
 
 Update diagram at runtime
 
@@ -15286,25 +7206,19 @@ Update diagram at runtime
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to specify the properties of diagram to be updated</td>
+<td class="name">options</td>
+<td class="type">Object</td>
+<td class="description">to specify the properties of diagram to be updated</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -15317,19 +7231,8 @@ diagram.update({ tool: tool });
 
 
 
-
-
-
-
-### updateConnector<span class="signature">(name, options)</span>
+### updateConnector(name, options)
 {:#methods:updateconnector}
-
-
-
-
-
-
-
 
 Update Connectors at runtime
 
@@ -15338,54 +7241,37 @@ Update Connectors at runtime
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">to identify the connector from the model</td>
+<td class="name">name</td>
+<td class="type">String</td>
+<td class="description">to identify the connector from the model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to specify the connector properties that have to be updated</td>
+<td class="name">options</td>
+<td class="type">Object</td>
+<td class="description">to specify the connector properties that have to be updated</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.updateConnector("connector1", { lineColor: "red", lineWidth: 3 });   
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### updateLabel<span class="signature">(nodeName, label, options)</span>
+### updateLabel(nodeName, label, options)
 {:#methods:updatelabel}
-
-
-
-
-
-
-
 
 Update the given label at runtime
 
@@ -15394,37 +7280,29 @@ Update the given label at runtime
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-nodeName{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">the name of node/connector which contains the label to be updated</td>
+<td class="name">nodeName</td>
+<td class="type">String</td>
+<td class="description">the name of node/connector which contains the label to be updated</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-label{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">the label to be modified</td>
+<td class="name">label</td>
+<td class="type">Object</td>
+<td class="description">the label to be modified</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">the new properties of the label</td>
+<td class="name">options</td>
+<td class="type">Object</td>
+<td class="description">the new properties of the label</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -15434,23 +7312,13 @@ var node=diagram.selectionList[0];
 var label = [];
 label =[{"name":"node1" "text": "node", "bold": true, "italic": true}]
 diagram.updateLabel(node.name,node.labels[0],label);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### updateNode<span class="signature">(name, options)</span>
+### updateNode(name, options)
 {:#methods:updatenode}
-
-
-
-
-
-
-
 
 Update Node with its modified properties at runtime
 
@@ -15459,31 +7327,24 @@ Update Node with its modified properties at runtime
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">to identify the Node from the model</td>
+<td class="name">name</td>
+<td class="type">String</td>
+<td class="description">to identify the Node from the model</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to specify the properties of node that have to be updated</td>
+<td class="name">options</td>
+<td class="type">Object</td>
+<td class="description">to specify the properties of node that have to be updated</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -15495,7 +7356,7 @@ diagram.updateNode("node1", { fillColor: "red", borderWidth: "3" });
 
 
 
-### updatePort<span class="signature">(nodeName, port, options)</span>
+### updatePort(nodeName, port, options)
 {:#methods:updatePort}
 
 Update a port with its modified properties at runtime
@@ -15505,33 +7366,30 @@ Update a port with its modified properties at runtime
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-nodeName{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">the name of node which contains the port to be updated</td>
+<td class="name">nodeName</td>
+<td class="type">String</td>
+<td class="description">the name of node which contains the port to be updated</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-port{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">the port to be updated</td>
+<td class="name">port</td>
+<td class="type">Object</td>
+<td class="description">the port to be updated</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-options{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">the new properties of the port</td>
+<td class="name">options</td>
+<td class="type">Object</td>
+<td class="description">the new properties of the port</td>
 </tr>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
+
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
@@ -15549,15 +7407,8 @@ diagram.updatePort(node.name,node.ports[0], port);
 
 
 
-### updateSelectedObject<span class="signature">(name)</span>
+### updateSelectedObject(name)
 {:#methods:updateselectedobject}
-
-
-
-
-
-
-
 
 Update the specified node as selected object
 
@@ -15566,48 +7417,32 @@ Update the specified node as selected object
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-name{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">to identify the object from the model</td>
+<td class="name">name</td>
+<td class="type">String</td>
+<td class="description">to identify the object from the model</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance"); 
 diagram.updateSelectedObject(name);    
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### updateSelection<span class="signature">(isDragging)</span>
+### updateSelection(isDragging)
 {:#methods:updateselection}
-
-
-
-
-
-
-
 
 Update the selection at runtime
 
@@ -15616,48 +7451,32 @@ Update the selection at runtime
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-isDragging{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">to specify whether the selected object is being dragged or not</td>
+<td class="name">isDragging</td>
+<td class="type">Boolean</td>
+<td class="description">to specify whether the selected object is being dragged or not</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.updateSelection(true);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### updateUserHandles<span class="signature">(node)</span>
+### updateUserHandles(node)
 {:#methods:updateuserhandles}
-
-
-
-
-
-
-
 
 Update userhandles with respect to the given node
 
@@ -15666,25 +7485,19 @@ Update userhandles with respect to the given node
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-node{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">node/connector with respect to which, the user handles have to be updated</td>
+<td class="name">node</td>
+<td class="type">Object</td>
+<td class="description">node/connector with respect to which, the user handles have to be updated</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -15692,55 +7505,30 @@ Example
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node = diagram.selectionList[0];
 diagram.updateUSerHandles(node); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### updateViewPort<span class="signature">()</span>
+### updateViewPort()
 {:#methods:updateviewport}
-
-
-
-
-
-
 
 Update the diagram viewport at runtime
 
-
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.updateViewPort();
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### upgrade<span class="signature">(data)</span>
+### upgrade(data)
 {:#methods:upgrade}
-
-
-
-
-
-
-
 
 Upgrade the diagram from old version
 
@@ -15749,25 +7537,19 @@ Upgrade the diagram from old version
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-data{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">to be upgraded</td>
+<td class="name">data</td>
+<td class="type">Object</td>
+<td class="description">to be upgraded</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -15775,23 +7557,13 @@ Example
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.upgrade(jsonData);
 diagram.load(jsonData);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
-
-
-
-
-### zoomTo<span class="signature">(zoom)</span>
+### zoomTo(zoom)
 {:#methods:zoomto}
-
-
-
-
-
-
-
 
 Used to zoomIn/zoomOut diagram
 
@@ -15800,28 +7572,19 @@ Used to zoomIn/zoomOut diagram
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-zoom{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">options to zoom the diagram(zoom factor, zoomin/zoomout)</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">zoom</td>
+<td class="type">Object</td>
+<td class="description">options to zoom the diagram(zoom factor, zoomin/zoomout)</td>
 </tr>
 </tbody>
 </table>
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 <div id="diagramcontent"></div>
@@ -15831,73 +7594,37 @@ var zoom =  ej.datavisualization.Diagram.Zoom();
 zoom.zoomFactor = .1;
 zoom.zoomCommand = ej.datavisualization.Diagram.ZoomCommand.ZoomIn;
 diagram.zoomTo(zoom);
-</script>{% endhighlight %}
-
+</script>
+{% endhighlight %}
 
 
 
 ## Events
 
-
-
-
-
-
-
-
 ### autoScrollChange
 {:#events:autoscrollchange}
 
-
-
-
-
-
-
-
 Triggers When auto scroll is changed
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-delay{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns the delay between subsequent auto scrolls</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">delay</td>
+<td class="type">String</td>
+<td class="description">parameter returns the delay between subsequent auto scrolls</td>
 </tr>
 </tbody>
 </table>
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // autoScrollChange event for diagram
@@ -15905,79 +7632,45 @@ $("#diagramcontent").ejDiagram({
 autoScrollChange:function (args)  {}
  });
  
- {% endhighlight %}
-
-
-
-
+{% endhighlight %}
 
 
 
 ### click
 {:#events:click}
 
-
-
-
-
-
-
-
 Triggers when a node, connector or diagram is clicked
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the clicked node, connector or diagram</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the clicked node, connector or diagram</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-count{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the count of how many times the mouse button is pressed</td>
+<td class="name">count</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the count of how many times the mouse button is pressed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-event{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">event</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the actual click event arguments that explains which button is clicked</td>
 </tr>
 </tbody>
 </table>
 
 
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 //  click event for diagram
@@ -15987,154 +7680,84 @@ click:function (args)  {}
 
 
 
-
-
-
-
 ### connectionChange
 {:#events:connectionchange}
-
-
-
-
-
-
-
 
 Triggers when the connection is changed
 
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the connection that is changed between nodes, ports or points</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the connection that is changed between nodes, ports or points</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-connection{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns the changed source or target node of the connector</td>
+<td class="name">connection</td>
+<td class="type">String</td>
+<td class="description">parameter returns the changed source or target node of the connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-port{% endhighlight %}</td>
-<td class="type"><span class="param-type">port</span></td>
-<td class="description last">parameter returns the changed source or target port of the connector</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">port</td>
+<td class="type">port</td>
+<td class="description">parameter returns the changed source or target port of the connector</td>
 </tr>
 </tbody>
 </table>
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // connectionChange event for diagram
 $("#diagramcontent").ejDiagram({
 connectionChange:function (args)  {}
-        }); {% endhighlight %}
-
-
-
-
+        });{% endhighlight %}
 
 
 
 ### connectorCollectionChange
 {:#events:connectorcollectionchange}
 
-
-
-
-
-
-
-
 Triggers when the connector collection is changed
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-changetype{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">parameter returns whether the connector is inserted or removed</td>
+<td class="name">changetype</td>
+<td class="type">Boolean</td>
+<td class="description">parameter returns whether the connector is inserted or removed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the connector that is to be added or deleted</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the connector that is to be added or deleted</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">parameter defines whether to cancel the collection change or not</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">cancel</td>
+<td class="type">Boolean</td>
+<td class="description">parameter defines whether to cancel the collection change or not</td>
 </tr>
 </tbody>
 </table>
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // connectorCollectionChange event for diagram
@@ -16144,81 +7767,45 @@ connectorCollectionChange:function (args) {}
 
 
 
-
-
-
-
 ### connectorSourceChange
 {:#events:connectorsourcechange}
 
-
-
-
-
-
-
-
 Triggers when the connectors' source point is changed
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the connector, the source point of which is being dragged</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">returns the connector, the source point of which is being dragged</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-point{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the source point of the element</td>
+<td class="name">point</td>
+<td class="type">Object</td>
+<td class="description">returns the source point of the element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-port{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">returns the source port of the element</td>
+<td class="name">port</td>
+<td class="type">String</td>
+<td class="description">returns the source port of the element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-dragState{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">returns the state of connection end point dragging(starting, dragging, completed)</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">dragState</td>
+<td class="type">String</td>
+<td class="description">returns the state of connection end point dragging(starting, dragging, completed)</td>
 </tr>
 </tbody>
 </table>
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // connectorSourceChange event for diagram
@@ -16228,81 +7815,45 @@ connectorSourceChange:function (args)  {}
 
 
 
-
-
-
-
 ### connectorTargetChange
 {:#events:connectortargetchange}
 
-
-
-
-
-
-
-
 Triggers when the connectors' target point is changed
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the connector, the target point of which is being dragged</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the connector, the target point of which is being dragged</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-point{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the target point of the element</td>
+<td class="name">point</td>
+<td class="type">Object</td>
+<td class="description">returns the target point of the element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-port{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">returns the target port of the element</td>
+<td class="name">port</td>
+<td class="type">String</td>
+<td class="description">returns the target port of the element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-dragState{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">returns the state of connection end point dragging(starting, dragging, completed)</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">dragState</td>
+<td class="type">String</td>
+<td class="description">returns the state of connection end point dragging(starting, dragging, completed)</td>
 </tr>
 </tbody>
 </table>
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // connectorTargetChange event for diagram
@@ -16312,69 +7863,35 @@ connectorTargetChange:function (args)  {}
 
 
 
-
-
-
-
 ### contextMenuBeforeOpen
 {:#events:contextmenubeforeopen}
 
-
-
-
-
-
-
-
 Triggers before opening the context menu
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-diagram{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the diagram object</td>
+<td class="name">diagram</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the diagram object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-contextmenu{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the actual arguments from context menu</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">contextmenu</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the actual arguments from context menu</td>
 </tr>
 </tbody>
 </table>
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // contextMenuBeforeOpen event for diagram
@@ -16384,87 +7901,50 @@ contextMenuBeforeOpen:function (args)  {}
 
 
 
-
-
-
-
 ### contextMenuClick
 {:#events:contextmenuclick}
 
-
-
-
-
-
-
-
 Triggers when a context menu item is clicked
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-id{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns the id of the selected context menu item</td>
+<td class="name">id</td>
+<td class="type">String</td>
+<td class="description">parameter returns the id of the selected context menu item</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-text{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns the text of the selected context menu item</td>
+<td class="name">text</td>
+<td class="type">String</td>
+<td class="description">parameter returns the text of the selected context menu item</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-parentId{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns the parent id of the selected context menu item</td>
+<td class="name">parentId</td>
+<td class="type">String</td>
+<td class="description">parameter returns the parent id of the selected context menu item</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-parentText{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns the parent text of the selected context menu item</td>
+<td class="name">parentText</td>
+<td class="type">String</td>
+<td class="description">parameter returns the parent text of the selected context menu item</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the object that was clicked</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">target</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the object that was clicked</td>
 </tr>
 </tbody>
 </table>
 
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // contextMenuClick event for diagram
@@ -16474,70 +7954,35 @@ contextMenuClick:function (args)  {}
 
 
 
-
-
-
-
 ### doubleClick
 {:#events:doubleclick}
 
-
-
-
-
-
-
-
 Triggers when a node, connector or diagram model is clicked twice
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-actualObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">parameter returns the object that is actually clicked</td>
+<td class="name">actualObject</td>
+<td class="type">Boolean</td>
+<td class="description">parameter returns the object that is actually clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the selected obejct</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the selected obejct</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 //  doubleClick event for diagram
@@ -16547,82 +7992,45 @@ doubleClick:function (args)  {}
 
 
 
-
-
-
-
 ### drag
 {:#events:drag}
 
-
-
-
-
-
-
-
 Triggers while dragging the elements in diagram
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the node or connector that is being dragged</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the node or connector that is being dragged</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-oldValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the previous position of the node/connector</td>
+<td class="name">oldValue</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the previous position of the node/connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-newValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the new position of the node/connector</td>
+<td class="name">newValue</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the new position of the node/connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">parameter returns whether or not to cancel the drag event</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">cancel</td>
+<td class="type">Boolean</td>
+<td class="description">parameter returns whether or not to cancel the drag event</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 //  deag event for diagram
@@ -16635,63 +8043,32 @@ drag:function (args)  {}
 ### dragEnter
 {:#events:dragenter}
 
-
-
-
-
-
-
-
 Triggers when a symbol is dragged into diagram from symbol palette
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the node or connector that is dragged into diagram</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the node or connector that is dragged into diagram</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">parameter returns whether to add or remove the symbol from diagram</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">cancel</td>
+<td class="type">Boolean</td>
+<td class="description">parameter returns whether to add or remove the symbol from diagram</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 //  drag enter event for diagram
@@ -16704,13 +8081,6 @@ dragEnter:function (args)  {}
 ### dragOver
 {:#events:dragover}
 
-
-
-
-
-
-
-
 Triggers when a symbol is dragged over diagram
 
 <table class="params">
@@ -16718,55 +8088,29 @@ Triggers when a symbol is dragged over diagram
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the node or connector that is dragged over diagram</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the node or connector that is dragged over diagram</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-allowDrop{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">parameter defines whether the symbol can be dropped at the current mouse position</td>
+<td class="name">allowDrop</td>
+<td class="type">Boolean</td>
+<td class="description">parameter defines whether the symbol can be dropped at the current mouse position</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the node/connector over which the symbol is dragged</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">target</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the node/connector over which the symbol is dragged</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 //  drag over event for diagram
@@ -16776,80 +8120,45 @@ dragOver:function (args)  {}
 
 
 
-
-
 ### drop
 {:#events:drop}
 
-
-
-
-
-
-
-
 Triggers when a symbol is dragged and dropped from symbol palette to drawing area
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns node or connector that is being dropped</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns node or connector that is being dropped</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">parameter returns whether or not to cancel the drop event</td>
+<td class="name">cancel</td>
+<td class="type">Boolean</td>
+<td class="description">parameter returns whether or not to cancel the drop event</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-source{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the object from where the element is dragged</td>
+<td class="name">source</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the object from where the element is dragged</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the object over which the objecct will be dropped</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">target</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the object over which the objecct will be dropped</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 //  drop event for diagram
@@ -16858,67 +8167,47 @@ drop:function (args)  {}
         });{% endhighlight %}
 
 
+
 ### groupChange
 {:#events:groupchange}
 
 Triggers when a child is added to or removed from a group
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the object that is added to/removed from a group</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the object that is added to/removed from a group</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-oldParent{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the old parent group(if any) of the object</td>
+<td class="name">oldParent</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the old parent group(if any) of the object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-newParent{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the new parent group(if any) of the object</td>
+<td class="name">newParent</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the new parent group(if any) of the object</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cause{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns the cause of group change("group", unGroup")</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">cause</td>
+<td class="type">String</td>
+<td class="description">parameter returns the cause of group change("group", unGroup")</td>
 </tr>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
+
 {% highlight html %}
 // group change event for diagram
 $("#diagramcontent").ejDiagram({
@@ -16932,66 +8221,34 @@ groupChange:function (args) {}
 
 
 
-
 ### itemClick
 {:#events:itemclick}
 
-
-
-
-
-
-
-
 Triggers when a diagram element is clicked
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-actualObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the object that was actually clicked</td>
+<td class="name">actualObject</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the object that was actually clicked</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedObject{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the object that is selected</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">selectedObject</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the object that is selected</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // itemClick event for diagram
@@ -17001,76 +8258,40 @@ itemClick:function (args) {}
 
 
 
-
-
-
-
 ### mouseEnter
 {:#events:mouseenter}
 
-
-
-
-
-
-
-
 Triggers when mouse enters a node/connector
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the target node or connector</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the target node or connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-source{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the object from where the selected object is dragged</td>
+<td class="name">source</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the object from where the selected object is dragged</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the target object over which the selected object is dragged</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">target</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the target object over which the selected object is dragged</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 //  mouseEnter event for diagram
@@ -17080,76 +8301,40 @@ mouseEnter:function (args)  {}
 
 
 
-
-
-
-
 ### mouseLeave
 {:#events:mouseleave}
 
-
-
-
-
-
-
-
 Triggers when mouse leaves node/connector
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the target node or connector</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the target node or connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-source{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the object from where the selected object is dragged</td>
+<td class="name">source</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the object from where the selected object is dragged</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the target object over which the selected object is dragged</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">target</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the target object over which the selected object is dragged</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 //  mouseLeave event for diagram
@@ -17159,155 +8344,83 @@ mouseLeave:function (args)  {}
 
 
 
-
-
-
-
 ### mouseOver
 {:#events:mouseover}
 
-
-
-
-
-
-
-
 Triggers when mouse hovers over a node/connector
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the target node or connector</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the target node or connector</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-source{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the object from where the element is dragged</td>
+<td class="name">source</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the object from where the element is dragged</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-target{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the object over which the element is being dragged.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">target</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the object over which the element is being dragged.</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 //  mouseOver event for diagram
 $("#diagramcontent").ejDiagram({
 mouseOver:function (args)  {}
-        });   {% endhighlight %}
-
-
-
-
+        });  {% endhighlight %}
 
 
 
 ### nodeCollectionChange
 {:#events:nodecollectionchange}
 
-
-
-
-
-
-
-
 Triggers when node collection is changed
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-changetype{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns whether the node is to be added or removed</td>
+<td class="name">changetype</td>
+<td class="type">String</td>
+<td class="description">parameter returns whether the node is to be added or removed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the node which needs to be added or deleted</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the node which needs to be added or deleted</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">parameter defines whether to cancel the collection change or not</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">cancel</td>
+<td class="type">Boolean</td>
+<td class="description">parameter defines whether to cancel the collection change or not</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // nodeCollectionChange event for diagram
@@ -17317,88 +8430,50 @@ nodeCollectionChange:function (args)  {}
 
 
 
-
-
-
-
 ### nodeSizeChange
 {:#events:nodesizechange}
 
-
-
-
-
-
-
-
 Triggers when a node is resized
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns node that was resized</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns node that was resized</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">parameter to cancel the size change</td>
+<td class="name">cancel</td>
+<td class="type">Boolean</td>
+<td class="description">parameter to cancel the size change</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-newValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the new width, height, offsetX and offsetY values of the element that is being resized</td>
+<td class="name">newValue</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the new width, height, offsetX and offsetY values of the element that is being resized</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-oldValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized</td>
+<td class="name">oldValue</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the previous width,height,offsetX and offsetY values of the element that is being resized</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-resizeState{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns the state of resizing(starting,resizing,completed)</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">resizeState</td>
+<td class="type">String</td>
+<td class="description">parameter returns the state of resizing(starting,resizing,completed)</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // sizeChange event for diagram
@@ -17407,78 +8482,46 @@ sizeChange:function (args)  {}
          });{% endhighlight %}
 
 
+
 ### propertyChange
 {:#events:propertychange}
 
-
-
-
-
-
-
-
 Triggers when the node properties(x, y,width and height alone) are changed using nudge commands or updateNode API.
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the selected element</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the selected element</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-newValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the new value of the node property that is being changed</td>
+<td class="name">newValue</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the new value of the node property that is being changed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-oldValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the old value of the property that is being changed</td>
+<td class="name">oldValue</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the old value of the property that is being changed</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-propertyName{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns the name of the property that is changed </td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">propertyName</td>
+<td class="type">String</td>
+<td class="description">parameter returns the name of the property that is changed </td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // propertyChange event for diagram
@@ -17488,79 +8531,45 @@ propertyChange:function (args)  {}
 
 
 
-
 ### rotationChange
 {:#events:rotationchange}
 
-
-
-
-
-
-
-
 Triggers when the diagram elements are rotated
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the node that is rotated</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the node that is rotated</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-oldValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the previous rotation angle</td>
+<td class="name">oldValue</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the previous rotation angle</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-newValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the new rotation angle</td>
+<td class="name">newValue</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the new rotation angle</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">parameter to specify whether or not to cancel the event</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">cancel</td>
+<td class="type">Boolean</td>
+<td class="description">parameter to specify whether or not to cancel the event</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // rotationChange event for diagram
@@ -17570,67 +8579,35 @@ rotationChange:function (args)  {}
 
 
 
-
 ### scrollChange
 {:#events:scrollchange}
 
-
-
-
-
-
-
-
 Triggers when the diagram is zoomed or panned
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-newValues{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Parameter returns the new zoom value, horizontal and vertical scroll offsets.</td>
+<td class="name">newValues</td>
+<td class="type">Object</td>
+<td class="description">Parameter returns the new zoom value, horizontal and vertical scroll offsets.</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-oldValues{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the previous zoom value, horizontal and vertical scroll offsets.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">oldValues</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the previous zoom value, horizontal and vertical scroll offsets.</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 //  ScrollChange  event
@@ -17646,64 +8623,41 @@ scrollChange :function (args)  {
 
 Triggers when a connector segment is edited
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Parameter returns the connector that is being edited</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">Parameter returns the connector that is being edited</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-dragState{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns the state of editing (starting, dragging, completed)</td>
+<td class="name">dragState</td>
+<td class="type">String</td>
+<td class="description">parameter returns the state of editing (starting, dragging, completed)</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-point{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the current mouse position</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">point</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the current mouse position</td>
 </tr>
 </tbody>
 </table>
 
-Example
-{:.example}
+#### Example
+
 {% highlight html %}
 // segment changed event for diagram
 $("#diagramcontent").ejDiagram({
 segmentChange:function (args) {}
 });
-
-
-
 
 {% endhighlight %}
 
@@ -17712,75 +8666,42 @@ segmentChange:function (args) {}
 ### selectionChange
 {:#events:selectionchange}
 
-
-
-
-
-
-
-
 Triggers when the selection is changed in diagram
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-oldItems{% endhighlight %}</td>
-<td class="type"><span class="param-type">Array</span></td>
-<td class="description last">parameter returns the collection of nodes and connectors that have to be removed from selection list</td>
+<td class="name">oldItems</td>
+<td class="type">Array</td>
+<td class="description">parameter returns the collection of nodes and connectors that have to be removed from selection list</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-newItems{% endhighlight %}</td>
-<td class="type"><span class="param-type">Array</span></td>
-<td class="description last">parameter returns the collection of nodes and connectors that have to be added to selection list</td>
+<td class="name">newItems</td>
+<td class="type">Array</td>
+<td class="description">parameter returns the collection of nodes and connectors that have to be added to selection list</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-selectedItems{% endhighlight %}</td>
-<td class="type"><span class="param-type">Array</span></td>
-<td class="description last">parameter returns the collection of nodes and connectors that will be selected after selection change</td>
+<td class="name">selectedItems</td>
+<td class="type">Array</td>
+<td class="description">parameter returns the collection of nodes and connectors that will be selected after selection change</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-cancel{% endhighlight %}</td>
-<td class="type"><span class="param-type">Boolean</span></td>
-<td class="description last">parameter to specify whether or not to cancel the selection change event</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">cancel</td>
+<td class="type">Boolean</td>
+<td class="description">parameter to specify whether or not to cancel the selection change event</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 //  selectionChange event for diagram
@@ -17790,70 +8711,35 @@ selectionChange:function (args)  {}
 
 
 
-
-
-
-
 ### textchanged
 {:#events:textchanged}
 
-
-
-
-
-
-
-
 Triggers When label editing is ended
 
+
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th >Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
-argument{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">args parameter from diagram
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight html %}
-element{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameter returns the node that contains the text being edited</td>
+<td class="name">element</td>
+<td class="type">Object</td>
+<td class="description">parameter returns the node that contains the text being edited</td>
 </tr>
 <tr>
-<td class="name">{% highlight html %}
-value{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">parameter returns the new text</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="name">value</td>
+<td class="type">String</td>
+<td class="description">parameter returns the new text</td>
 </tr>
 </tbody>
 </table>
 
-
-
-
-Example
-{:.example}
-
+#### Example
 
 {% highlight html %}
 // textChanged event for diagram
@@ -17861,7 +8747,6 @@ $("#diagramcontent").ejDiagram({
 textChanged:function (args)  {}
         });
 {% endhighlight %}
-
 
 
 
