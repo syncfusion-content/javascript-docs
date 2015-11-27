@@ -42,7 +42,7 @@ documentation: ug
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-![](/js/DigitalGauge/Frames_images/Frames_img1.png" Caption=")
+![](/js/DigitalGauge/Frames_images/Frames_img1.png)
 
 
 
@@ -83,5 +83,5 @@ $(function() {
 
 Execute the above code examples to render the **Digital****Gauge** as follows.
 
-![](/js/DigitalGauge/Frames_images/Frames_img2.png" Caption=")
+![](/js/DigitalGauge/Frames_images/Frames_img2.png)
 

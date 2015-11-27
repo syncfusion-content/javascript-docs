@@ -59,7 +59,7 @@ $ (function () {
 Execute the above code to render the following output.
 
 
-![](/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img1.png" Caption=")
+![](/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img1.png)
 
 
 
@@ -118,7 +118,7 @@ Bar pointer value is also important element in the **Linear Gauge** as it indica
 
 Execute the above code to render the following output.
 
-![](/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img2.png" Caption=")
+![](/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img2.png)
 
 ## Pointer Styles
 
@@ -181,7 +181,7 @@ Execute the above code to render the following output.
 
 
 
-![](/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img3.png" Caption=")
+![](/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img3.png)
 
 ## Positioning the pointer	
 
@@ -239,7 +239,7 @@ $(function () {
 Execute the above code to render the following output.
 
 
-![](/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img4.png" Caption=")
+![](/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img4.png)
 
 ## Multiple Bar Pointers
 
@@ -316,5 +316,5 @@ Execute the above code to render the following output.
 Execute the above code to render the following output.
 
 
-![](/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img5.png" Caption=")
+![](/js/LinearGauge/Bar-Pointers_images/Bar-Pointers_img5.png)
 

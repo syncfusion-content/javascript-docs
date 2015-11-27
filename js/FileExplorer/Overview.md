@@ -9,27 +9,26 @@ documentation: ug
 
 # Overview
 
-FileExplorer provides a Windows Explorer-like functionality for any web application. It allows end-users to browse, select and upload files or change the folder structure by renaming, moving and deleting files or folders. File and folder management capabilities are fully customizable and can be disabled when necessary.
+The **Essential JavaScript FileExplorer** is an interface for managing the File system through any web application. It allows the user to perform the most common file operations include browse, open, create, rename, copy, paste or move, delete and file searching.
 
-**Key Features**
+For a live demo of FileExplorer check the online sample from [here](http://js.syncfusion.com/demos/web/#!/azure/fileexplorer/DefaultFunctionalities)
 
-The FileExplorer control contains the following key features.
+N>  The FileExplorer control was officially added with the Essential studio JavaScript package from the v13.1 release only.
 
-* Easily view the files and navigate using tree view, grid and tile view.
-* File management operation has been provided it can be achieved using toolbar or context menu.
-* Add a new folder.
-* Open image file and folder.
-* Refresh option.
-* Upload.
-* Download.
-* Delete.
-* Rename.
-* Cut, copy and paste.
-* Get details.
-* Address bar option and search bar option.
-* Switch view between tile (thumbnail) and grid.
-* Shows total number of items in currently selected folder.
-* Customizing panel layout.
-* Filter the required files in File Explorer.
-* Customizable Ajax settings option.
-* Contains Keyboard right to left, localization, custom tool option.
+![](Overview_images/Overview_img1.png)
+
+
+## Key features
+
+* Windows explorer like functionalities and appearances
+* Handy file operations (copy, paste, move and delete)
+* File download and upload
+* File type restriction
+* Easy UI customization
+* Different layouts (grid and tile view)
+* Context menu support
+* Inbuilt image viewer support
+* Keyboard navigation 
+* Right to Left alignment (RTL) support
+* Localization support
+

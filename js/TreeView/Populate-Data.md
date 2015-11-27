@@ -25,63 +25,63 @@ Properties</th><th>
 Description</th></tr>
 <tr>
 <td>
-[dataSource](http://help.syncfusion.com/js/api/ejtreeview#members:fields-datasource)<br/><br/></td><td>
+{{'[dataSource](http://help.syncfusion.com/js/api/ejtreeview#members:fields-datasource)'| markdownify }}<br/><br/></td><td>
 The data source contains the list of data for generating the TreeView list.<br/><br/></td></tr>
 <tr>
 <td>
-[query](http://help.syncfusion.com/js/api/ejtreeview#members:fields-query)<br/><br/></td><td>
+{{'[query](http://help.syncfusion.com/js/api/ejtreeview#members:fields-query)'| markdownify }}<br/><br/></td><td>
 It specifies the query to retrieve the data from the online server.<br/><br/></td></tr>
 <tr>
 <td>
-[tableName](http://help.syncfusion.com/js/api/ejtreeview#members:fields-tablename)<br/><br/></td><td>
+{{'[tableName](http://help.syncfusion.com/js/api/ejtreeview#members:fields-tablename)'| markdownify }}<br/><br/></td><td>
 It specifies the name of the table from which data to be processed from given data source.<br/><br/></td></tr>
 <tr>
 <td>
-[id](http://help.syncfusion.com/js/api/ejtreeview#members:fields-id)<br/><br/></td><td>
+{{'[id](http://help.syncfusion.com/js/api/ejtreeview#members:fields-id)'| markdownify }}<br/><br/></td><td>
 It specifies the ID of the node.<br/><br/></td></tr>
 <tr>
 <td>
-[parentId](http://help.syncfusion.com/js/api/ejtreeview#members:fields-parentid)<br/><br/></td><td>
+{{'[parentId](http://help.syncfusion.com/js/api/ejtreeview#members:fields-parentid)'| markdownify }}<br/><br/></td><td>
 It specifies the parent id of the node<br/><br/></td></tr>
 <tr>
 <td>
-[text](http://help.syncfusion.com/js/api/ejtreeview#members:fields-text)<br/><br/></td><td>
+{{'[text](http://help.syncfusion.com/js/api/ejtreeview#members:fields-text)'| markdownify }}<br/><br/></td><td>
 It specifies the text content of the node.<br/><br/></td></tr>
 <tr>
 <td>
-[hasChild](http://help.syncfusion.com/js/api/ejtreeview#members:fields-haschild)<br/><br/></td><td>
+{{'[hasChild](http://help.syncfusion.com/js/api/ejtreeview#members:fields-haschild)'| markdownify }}<br/><br/></td><td>
 It specifies the node has child (which is the nested or inner level of nodes). Also it’s used in load on demand of tree data.<br/><br/></td></tr>
 <tr>
 <td>
-[expanded](http://help.syncfusion.com/js/api/ejtreeview#members:fields-expanded)<br/><br/></td><td>
+{{'[expanded](http://help.syncfusion.com/js/api/ejtreeview#members:fields-expanded)'| markdownify }}<br/><br/></td><td>
 It specifies the tree node to be in expanded state<br/><br/></td></tr>
 <tr>
 <td>
-[selected](http://help.syncfusion.com/js/api/ejtreeview#members:fields-selected)<br/><br/></td><td>
+{{'[selected](http://help.syncfusion.com/js/api/ejtreeview#members:fields-selected)'| markdownify }}<br/><br/></td><td>
 It specifies the select node at initialize. N> only one node get selected <br/><br/></td></tr>
 <tr>
 <td>
-[isChecked](http://help.syncfusion.com/js/api/ejtreeview#members:fields-ischecked) <br/><br/></td><td>
+{{'[isChecked](http://help.syncfusion.com/js/api/ejtreeview#members:fields-ischecked)'| markdownify }} <br/><br/></td><td>
 It specifies the node to be in checked state, if tree node represented with checkboxes. <br/><br/></td></tr>
 <tr>
 <td>
-[imageUrl](http://help.syncfusion.com/js/api/ejtreeview#members:fields-imageurl)<br/><br/></td><td>
+{{'[imageUrl](http://help.syncfusion.com/js/api/ejtreeview#members:fields-imageurl)'| markdownify }}<br/><br/></td><td>
 It defines the image location.<br/><br/></td></tr>
 <tr>
 <td>
-[imageAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-imageattribute)<br/><br/></td><td>
+{{'[imageAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-imageattribute)'| markdownify }}<br/><br/></td><td>
 It defines the image attributes such as height, width, styles, etc.<br/><br/></td></tr>
 <tr>
 <td>
-[spriteCssClass](http://help.syncfusion.com/js/api/ejtreeview#members:fields-spritecssclass)<br/><br/></td><td>
+{{'[spriteCssClass](http://help.syncfusion.com/js/api/ejtreeview#members:fields-spritecssclass)'| markdownify }}<br/><br/></td><td>
 It defines the sprite CSS for the image tag.<br/><br/></td></tr>
 <tr>
 <td>
-[htmlAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-htmlattribute)<br/><br/></td><td>
+{{'[htmlAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-htmlattribute)'| markdownify }}<br/><br/></td><td>
 It defines the HTML attributes such as class and styles for a node (li tag).<br/><br/></td></tr>
 <tr>
 <td>
-[linkAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-linkattribute)<br/><br/></td><td>
+{{'[linkAttribute](http://help.syncfusion.com/js/api/ejtreeview#members:fields-linkattribute)'| markdownify }}<br/><br/></td><td>
 It defines the HTML attributes such as class and styles for a link tag, which is child of node.<br/><br/></td></tr>
 </table>
 Mapping all fields with data source
