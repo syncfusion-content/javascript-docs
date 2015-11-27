@@ -631,13 +631,6 @@ $("#diagramcontent").ejDiagram({segments:segments});
 ### connectors.segments.point1 'Point'
 {:#members:connectors-segments-point1}
 
-
-
-
-
-
-
-
 Describes the first control point of bezier segment
 
 
@@ -662,13 +655,6 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 ### connectors.segments.point2 'Point'
 {:#members:connectors-segments-point2}
-
-
-
-
-
-
-
 
 Describes the second control point of bezier segment
 
@@ -4627,15 +4613,8 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports.name; 'String'
-{:#members:nodes-ports-name;}
-
-
-
-
-
-
-
+### nodes.ports.name 'String'
+{:#members:nodes-ports-name}
 
 The name of port to be specified
 
