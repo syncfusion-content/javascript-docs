@@ -1,3 +1,75 @@
+---
+layout: post
+title: ejGrid
+documentation: API
+platform: js
+description: API reference for ejGrid
+---
+#ejGrid
+The grid can be easily configured to the DOM element, such as div. you can create a grid with a highly customizable look and feel.
+
+####Syntax
+$(element).ejGrid(options)
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+options{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">settings for grid</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+// Create Grid
+$('#Grid').ejGrid({
+    dataSource: window.gridData
+});         
+</script>{% endhighlight %}
+
+
+
+####Requires
+{:.require}
+
+* module:jQuery
+* module:jquery.easing.min.js
+* module:jquery.globalize.min.js
+* module:jsrender.min.js
+* module:ej.core.js
+* module:ej.data.js
+* module:ej.grid.js
+* module:ej.pager.js
+* module:ej.scroller.js
+* module:ej.waitingpopup.js
+* module:ej.radiobutton.js
+* module:ej.dropdownlist.js
+* module:ej.dialog.js
+* module:ej.button.js
+* module:ej.autocomplete.js
+* module:ej.checkbox.js
+* module:ej.datepicker.js
+* module:ej.datetimepicker.js
+* module:ej.editor.js
+* module:ej.toolbar.js
+* module:ej.menu.js
+* module:ej.excelfilter.js
+
+
 ## Members
 
 ### allowCellMerging `Boolean`
