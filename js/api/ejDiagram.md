@@ -48,7 +48,7 @@ $("#diagram").ejDiagram();
 
 ## Members
 
-### backgroundColor 'String'
+### backgroundColor `String`
 {:#members:backgroundcolor}
 
 Color to be set as the background of the elements
@@ -68,7 +68,7 @@ $("#diagramcontent").ejDiagram({ backgroundColor: "red"});
 
 
 
-### backgroundImage 'String'
+### backgroundImage `String`
 {:#members:backgroundimage}
 
 Image to be set as the background of the elements
@@ -88,7 +88,7 @@ $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png"});
 
 
 
-### bridgeDirection 'String'
+### bridgeDirection `String`
 {:#members:bridgedirection}
 
 Sets the bridge direction of connectors
@@ -109,7 +109,7 @@ $("#diagramContent").ejDiagram({bridgeDirection: "top"} });
 
 
 
-### connectors 'Array'
+### connectors `Array`
 {:#members:connectors}
 
 Array of connector objects where each object has definition/properties of connector.
@@ -130,7 +130,7 @@ $("#diagram").ejDiagram({ connectors:connectors });
 
 
 
-### connectors.addInfo 'Object'
+### connectors.addInfo `Object`
 {:#members:connectors-addinfo}
 
 To provide/save extra information about Connector
@@ -153,7 +153,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.bridgeSpace 'Number'
+### connectors.bridgeSpace `Number`
 {:#members:connectors-bridgespace}
 
 Defines width of the line bridges
@@ -175,7 +175,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.constraints 'enum'
+### connectors.constraints `enum`
 {:#members:connectors-constraints}
 
 Enables or disables the behaviors of connector see<a href="global.html#ConnectorConstraints">ConnectorConstraints</a>
@@ -197,7 +197,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.cornerRadius 'Number'
+### connectors.cornerRadius `Number`
 {:#members:connectors-cornerradius}
 
 Defines the radius of the rounded corner
@@ -245,7 +245,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.labels 'Array'
+### connectors.labels `Array`
 {:#members:connectors-labels}
 
 Sets the collection of labels of connector
@@ -270,7 +270,7 @@ $("#diagramcontent").ejDiagram({label:label});
 
 
 
-### connectors.lineColor 'String'
+### connectors.lineColor `String`
 {:#members:connectors-linecolor}
 
 Sets the stroke color of the connector
@@ -294,7 +294,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.lineDashArray 'String'
+### connectors.lineDashArray `String`
 {:#members:connectors-linedasharray}
 
 Sets the pattern of dashes and gaps used to stroke the path of connector
@@ -318,7 +318,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.lineHitPadding 'Number'
+### connectors.lineHitPadding `Number`
 {:#members:connectors-linehitpadding}
 
 Defines padding set to line to ease interaction
@@ -341,7 +341,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.lineWidth 'Number'
+### connectors.lineWidth `Number`
 {:#members:connectors-linewidth}
 
 Sets the width of the line
@@ -365,7 +365,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.marginBottom 'Number'
+### connectors.marginBottom `Number`
 {:#members:connectors-marginbottom}
 
 To set margin bottom for the connector.Applicable if the parent is group.
@@ -389,7 +389,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.marginLeft 'Number'
+### connectors.marginLeft `Number`
 {:#members:connectors-marginleft}
 
 To set left margin for the connector.Applicable if the parent is group.
@@ -413,7 +413,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.marginRight 'Number'
+### connectors.marginRight `Number`
 {:#members:connectors-marginright}
 
 To set right margin for the connector.Applicable if the parent is group.
@@ -437,7 +437,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.marginTop 'Number'
+### connectors.marginTop `Number`
 {:#members:connectors-margintop}
 
 To set top margin for the connector.Applicable if the parent is group.
@@ -461,7 +461,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.name 'String'
+### connectors.name `String`
 {:#members:connectors-name}
 
 Sets the name of the connector
@@ -485,7 +485,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.opacity 'Number'
+### connectors.opacity `Number`
 {:#members:connectors-opacity}
 
 Defines the transparency of the connector
@@ -509,7 +509,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.parent 'String'
+### connectors.parent `String`
 {:#members:connectors-parent}
 
 Sets the parent name of the connector
@@ -531,7 +531,7 @@ var connector = [ {name: "rect",parent:"group1"}];
 
 
 
-### connectors.segments 'Array'
+### connectors.segments `Array`
 {:#members:connectors-segments}
 
 Describes the collection of segments
@@ -556,7 +556,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.segments.direction 'String'
+### connectors.segments.direction `String`
 {:#members:connectors-segments-direction}
 
 Describes the direction of orthogonal segment
@@ -580,7 +580,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.segments.length 'Number'
+### connectors.segments.length `Number`
 {:#members:connectors-segments-length}
 
 Describes the length of orthogonal segment
@@ -604,7 +604,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.segments.point 'Point'
+### connectors.segments.point `Point`
 {:#members:connectors-segments-point}
 
 Describes the end point of segment
@@ -628,7 +628,7 @@ $("#diagramcontent").ejDiagram({segments:segments});
 
 
 
-### connectors.segments.point1 'Point'
+### connectors.segments.point1 `Point`
 {:#members:connectors-segments-point1}
 
 Describes the first control point of bezier segment
@@ -653,7 +653,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.segments.point2 'Point'
+### connectors.segments.point2 `Point`
 {:#members:connectors-segments-point2}
 
 Describes the second control point of bezier segment
@@ -678,7 +678,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.segments.type 'enum'
+### connectors.segments.type `enum`
 {:#members:connectors-segments-type}
 
 Type of the segments See <a href="global.html#Segments">Segments</a>
@@ -702,7 +702,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.segments.vector1 'Point'
+### connectors.segments.vector1 `Point`
 {:#members:connectors-segments-vector1}
 
 
@@ -734,7 +734,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.segments.vector2 'Point'
+### connectors.segments.vector2 `Point`
 {:#members:connectors-segments-vector2}
 
 Describes the length and angle between the second control point and end point of segment
@@ -757,7 +757,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.sourceDecorator 'String'
+### connectors.sourceDecorator `String`
 {:#members:connectors-sourcedecorator}
 
 To set sourceDecorator for connector
@@ -782,7 +782,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.sourceDecorator.borderColor 'String'
+### connectors.sourceDecorator.borderColor `String`
 {:#members:connectors-sourcedecorator-bordercolor}
 
 Sets the border color of the decorator
@@ -806,7 +806,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.borderColor 'String'
+### connectors.sourceDecorator.borderColor `String`
 {:#members:connectors-sourcedecorator-bordercolor}
 
 Sets the border color of the decorator
@@ -830,7 +830,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.borderWidth 'Number'
+### connectors.sourceDecorator.borderWidth `Number`
 {:#members:connectors-sourcedecorator-borderwidth}
 
 Sets the border width of the decorator
@@ -854,7 +854,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.fillColor 'String'
+### connectors.sourceDecorator.fillColor `String`
 {:#members:connectors-sourcedecorator-fillcolor}
 
 Sets the color with which the decorator is to be filled
@@ -878,7 +878,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.fillColor 'String'
+### connectors.sourceDecorator.fillColor `String`
 {:#members:connectors-sourcedecorator-fillcolor}
 
 Sets the color with which the decorator is to be filled
@@ -902,7 +902,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.height 'Number'
+### connectors.sourceDecorator.height `Number`
 {:#members:connectors-sourcedecorator-height}
 
 To set the height of the connection decorator
@@ -924,7 +924,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.height 'Number'
+### connectors.sourceDecorator.height `Number`
 {:#members:connectors-sourcedecorator-height}
 
 To set the height of the connection decorator
@@ -946,7 +946,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.pathData 'String'
+### connectors.sourceDecorator.pathData `String`
 {:#members:connectors-sourcedecorator-pathdata}
 
 Path data to draw decorator with custom shape
@@ -968,7 +968,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.pathData 'String'
+### connectors.sourceDecorator.pathData `String`
 {:#members:connectors-sourcedecorator-pathdata}
 
 Path data to decorator with custom shape
@@ -990,7 +990,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.shape 'enum'
+### connectors.sourceDecorator.shape `enum`
 {:#members:connectors-sourcedecorator-shape}
 
 To set the decorator shape of the connector See <a href="global.html#DecoratorShapes">DecoratorShapes</a>
@@ -1012,7 +1012,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.shape 'enum'
+### connectors.sourceDecorator.shape `enum`
 {:#members:connectors-sourcedecorator-shape}
 
 Sets the decorator shape See <a href="global.html#DecoratorShapes">DecoratorShapes</a>
@@ -1034,7 +1034,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.width 'Number'
+### connectors.sourceDecorator.width `Number`
 {:#members:connectors-sourcedecorator-width}
 
 To set the width of the connection decorator
@@ -1056,7 +1056,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceDecorator.width 'Number'
+### connectors.sourceDecorator.width `Number`
 {:#members:connectors-sourcedecorator-width}
 
 To set width of the connection decorator
@@ -1078,7 +1078,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.sourceNode 'Object'
+### connectors.sourceNode `Object`
 {:#members:connectors-sourcenode}
 
 Sets the sourceNode of the connector
@@ -1102,7 +1102,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.sourcePadding 'Number'
+### connectors.sourcePadding `Number`
 {:#members:connectors-sourcepadding}
 
 Defines the space between node and connector's source point
@@ -1124,7 +1124,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.sourcePoint 'Point'
+### connectors.sourcePoint `Point`
 {:#members:connectors-sourcepoint}
 
 Describes the sourcePoint of connector
@@ -1147,7 +1147,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.sourcePort 'Object'
+### connectors.sourcePort `Object`
 {:#members:connectors-sourceport}
 
 Sets the sourcePort of the connector
@@ -1173,7 +1173,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.targetDecorator 'String'
+### connectors.targetDecorator `String`
 {:#members:connectors-targetdecorator}
 
 To set targetDecorator for connector
@@ -1196,7 +1196,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.targetDecorator.borderColor 'String'
+### connectors.targetDecorator.borderColor `String`
 {:#members:connectors-targetdecorator-bordercolor}
 
 Sets the border color of the decorator
@@ -1218,7 +1218,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.targetDecorator.fillColor 'String'
+### connectors.targetDecorator.fillColor `String`
 {:#members:connectors-targetdecorator-fillcolor}
 
 Sets the color with which the decorator is to be filled
@@ -1240,7 +1240,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.targetDecorator.height 'Number'
+### connectors.targetDecorator.height `Number`
 {:#members:connectors-targetdecorator-height}
 
 To set the height of the decorator
@@ -1262,7 +1262,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.targetDecorator.pathData 'String'
+### connectors.targetDecorator.pathData `String`
 {:#members:connectors-targetdecorator-pathdata}
 
 Path data to draw decorator with custom shape
@@ -1284,7 +1284,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.targetDecorator.shape 'enum'
+### connectors.targetDecorator.shape `enum`
 {:#members:connectors-targetdecorator-shape}
 
 To set the shape of the decorator in connector See <a href="global.html#DecoratorShapes">DecoratorShapes</a>
@@ -1306,7 +1306,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.targetDecorator.width 'Number'
+### connectors.targetDecorator.width `Number`
 {:#members:connectors-targetdecorator-width}
 
 To set the width of the decorator
@@ -1328,7 +1328,7 @@ $("#diagramcontent").ejDiagram({connectors:link});
 
 
 
-### connectors.targetNode 'Object'
+### connectors.targetNode `Object`
 {:#members:connectors-targetnode}
 
 Sets the target node of the connector
@@ -1352,10 +1352,10 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.targetPadding 'Number'
+### connectors.targetPadding `Number`
 {:#members:connectors-targetpadding}
 
-Defines the space between node and connector's target point
+Defines the space between node and connector`s target point
 
 #### Default Value 
 
@@ -1374,7 +1374,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.targetPoint 'Point'
+### connectors.targetPoint `Point`
 {:#members:connectors-targetpoint}
 
 Describes the targetPoint of connector
@@ -1397,7 +1397,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.targetPort 'Object'
+### connectors.targetPort `Object`
 {:#members:connectors-targetport}
 
 Sets the targetPort of the connector
@@ -1445,7 +1445,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.visible 'Boolean'
+### connectors.visible `Boolean`
 {:#members:connectors-visible}
 
 Enables or disables the visibility of connector
@@ -1467,7 +1467,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectors.zOrder 'Number'
+### connectors.zOrder `Number`
 {:#members:connectors-zorder}
 
 Sets the Zorder of the connector
@@ -1489,7 +1489,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 
 
-### connectorTemplate 'Object'
+### connectorTemplate `Object`
 {:#members:connectortemplate}
 
 To customize the connector properties before rendering the connector.
@@ -1510,7 +1510,7 @@ $("#diagram").ejDiagram({ connectorTemplate:connectorTemplate});
 
 
 
-### constraints 'enum'
+### constraints `enum`
 {:#members:constraints}
 
 Sets the default behavior of the diagram see <a href="global.html#DiagramConstraints">DiagramConstraints</a>
@@ -1538,7 +1538,7 @@ Object to customize context menu behavior of diagram
 
 
 
-### contextMenu.items 'Object'
+### contextMenu.items `Object`
 {:#members:contextmenu-items}
 
 To define the collection of context menu items
@@ -1562,7 +1562,7 @@ $("#diagramContent").ejDiagram({contextMenu: contextMenu});
 
 
 
-### contextMenu.showCustomMenuItemsOnly 'Boolean'
+### contextMenu.showCustomMenuItemsOnly `Boolean`
 {:#members:contextmenu-showcustommenuitemsonly}
 
 To set whether to display the default context menu items or not
@@ -1588,7 +1588,7 @@ $("#diagramcontent").ejDiagram({showCustomMenuItemsOnly: true});
 Object to set dataSource to diagram
 
 
-### dataSourceSettings.dataSource 'Object'
+### dataSourceSettings.dataSource `Object`
 {:#members:datasourcesettings-datasource}
 
 Describes data source either as a collection of objects or an instance of ej.DataManager
@@ -1608,7 +1608,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: {dataSource: localData}});
 
 
 
-### dataSourceSettings.id 'String'
+### dataSourceSettings.id `String`
 {:#members:datasourcesettings-id}
 
 Describes the unique id of data source items.
@@ -1628,7 +1628,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: {id: "CategoryID"}});
 
 
 
-### dataSourceSettings.parent 'String'
+### dataSourceSettings.parent `String`
 {:#members:datasourcesettings-parent}
 
 Describes the parent id of data source items.
@@ -1648,7 +1648,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: { parent: "reportingPerson"}});
 
 
 
-### dataSourceSettings.query 'Object'
+### dataSourceSettings.query `Object`
 {:#members:datasourcesettings-query}
 
 Describes query to retrieve a set of data from the specified datasource.
@@ -1668,7 +1668,7 @@ query: ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
 
 
 
-### dataSourceSettings.root 'String'
+### dataSourceSettings.root `String`
 {:#members:datasourcesettings-root}
 
 Describes the root node.
@@ -1688,7 +1688,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: { root: "1"}});
 
 
 
-### dataSourceSettings.tablename 'String'
+### dataSourceSettings.tablename `String`
 {:#members:datasourcesettings-tablename}
 
 Describes the name of the table on which the specified query to be executed
@@ -1708,7 +1708,7 @@ $("#diagram").ejDiagram({ dataSourceSettings:{tableName: "Categories"}});
 
 
 
-### defaultSettings 'Object'
+### defaultSettings `Object`
 {:#members:defaultsettings}
 
 To set the default values to nodes and connector properties
@@ -1728,7 +1728,7 @@ $("#diagram").ejDiagram({ defaultSettings: { node:  {width: 110, height: 40, fil
 
 
 
-### defaultSettings.connector 'Object'
+### defaultSettings.connector `Object`
 {:#members:defaultsettings-connector}
 
 To set the default values to connector properties
@@ -1748,7 +1748,7 @@ $("#diagram").ejDiagram({ defaultSettings:{ connector:{ lineColor: "gray", lineW
 
 
 
-### defaultSettings.node 'Object'
+### defaultSettings.node `Object`
 {:#members:defaultsettings-node}
 
 To set the default values to node properties
@@ -1768,7 +1768,7 @@ $("#diagram").ejDiagram({ defaultSettings:{node: { fillColor: "#83A93F", borderC
 
 
 
-### drawingTools 'Object'
+### drawingTools `Object`
 {:#members:drawingtools}
 
 Describes the interactive features to be performed
@@ -1788,7 +1788,7 @@ $("#diagramcontent").ejDiagram({ drawingTools: {textTool: ej.datavisualization.D
 
 
 
-### drawType 'Object'
+### drawType `Object`
 {:#members:drawtype}
 
 Sets the type of Json object to be drawn through drawing tool
@@ -1808,7 +1808,7 @@ $("#diagramcontent").ejDiagram({drawType:{type:"node"}});
 
 
 
-### enableAutoScroll 'Boolean'
+### enableAutoScroll `Boolean`
 {:#members:enableautoscroll}
 
 Enables or disables Auto scroll in diagram
@@ -1828,7 +1828,7 @@ $("#diagramcontent").ejDiagram({enableAutoScroll: true});
 
 
 
-### enableContextMenu 'Boolean'
+### enableContextMenu `Boolean`
 {:#members:enablecontextmenu}
 
 Enables or disables diagram context menu
@@ -1848,7 +1848,7 @@ $("#diagramcontent").ejDiagram({enableContextMenu: true});
 
 
 
-### height 'String'
+### height `String`
 {:#members:height}
 
 Specifies the height of the diagram.
@@ -1883,7 +1883,7 @@ To arrange the diagram elements on page
 
 
 
-### layout. fixedNode 'String'
+### layout. fixedNode `String`
 {:#members:layout-fixednode}
 
 Sets the fixed node with respect to which the layout will be aligned
@@ -1901,7 +1901,7 @@ $("#diagramContent").ejDiagram({layout: { fixedNode: "nodename"}});{% endhighlig
 
 
 
-### layout. getLayoutInfo 'Object'
+### layout. getLayoutInfo `Object`
 {:#members:layout-getlayoutinfo}
 
 To customize the orientation of trees/sub trees For orientations see <a href="global.html#ChartOrientations">ChartOrientations</a> For chart types see <a href="global.html#ChartTypes">ChartTypes</a>
@@ -1922,7 +1922,7 @@ $("#diagram").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 
 
 
-### layout. marginY 'Number'
+### layout. marginY `Number`
 {:#members:layout-marginy}
 
 Sets the margin value to be vertically left between layout and diagram
@@ -1940,7 +1940,7 @@ $("#diagramContent").ejDiagram({layout: { marginY: 0}});{% endhighlight %}
 
 
 
-### layout.horizontalSpacing 'Number'
+### layout.horizontalSpacing `Number`
 {:#members:layout-horizontalspacing}
 
 Sets the space to be horizontally left between nodes
@@ -1958,7 +1958,7 @@ $("#diagramContent").ejDiagram({layout: {horizontalSpacing: 30}});{% endhighligh
 
 
 
-### layout.marginX 'Number'
+### layout.marginX `Number`
 {:#members:layout-marginx}
 
 Sets the margin value to be horizontally left between layout and diagram
@@ -1976,7 +1976,7 @@ $("#diagramContent").ejDiagram({layout: {marginX: 0}});{% endhighlight %}
 
 
 
-### layout.orientation 'String'
+### layout.orientation `String`
 {:#members:layout-orientation}
 
 Sets the orientation/direction to arrange the diagram elements see <a href="global.html#LayoutOrientations">LayoutOrientations</a>
@@ -1994,7 +1994,7 @@ $("#diagramContent").ejDiagram({layout: {orientation: "topToBottom"}});{% endhig
 
 
 
-### layout.type 'String'
+### layout.type `String`
 {:#members:layout-type}
 
 Sets the type of the layout based on which the elements will be arranged
@@ -2012,7 +2012,7 @@ $("#diagramContent").ejDiagram({layout: {type: "none"}});{% endhighlight %}
 
 
 
-### layout.verticalSpacing 'Number'
+### layout.verticalSpacing `Number`
 {:#members:layout-verticalspacing}
 
 Sets the space to be vertically left between nodes
@@ -2030,7 +2030,7 @@ $("#diagramContent").ejDiagram({layout: {verticalSpacing: 30}});{% endhighlight 
 
 
 
-### locale 'String'
+### locale `String`
 {:#members:locale}
 
 To define the current culture of diagram
@@ -2050,7 +2050,7 @@ $("#diagramcontent").ejDiagram({locale: "en-US"});
 
 
 
-### nodes 'Array'
+### nodes `Array`
 {:#members:nodes}
 
 Array of node objects where each object has definition/properties of node.
@@ -2071,7 +2071,7 @@ $("#diagram").ejDiagram({ nodes:nodes });
 
 
 
-### nodes.activity 'enum'
+### nodes.activity `enum`
 {:#members:nodes-activity}
 
 Sets the type of BPMN Activity See <a href="global.html#BPMNActivity">BPMNActivity</a>
@@ -2093,7 +2093,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.addInfo 'Object'
+### nodes.addInfo `Object`
 {:#members:nodes-addinfo}
 
 To provide/save extra information about Node
@@ -2117,7 +2117,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",{addInf
 
 
 
-### nodes.allowDrop 'Boolean'
+### nodes.allowDrop `Boolean`
 {:#members:nodes-allowdrop}
 
 To indicate whether this element can be used as the target of a drop operation. Applicable if the type is group.
@@ -2139,7 +2139,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.borderColor 'String'
+### nodes.borderColor `String`
 {:#members:nodes-bordercolor}
 
 Sets the border color of node
@@ -2161,7 +2161,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.borderDashArray 'String'
+### nodes.borderDashArray `String`
 {:#members:nodes-borderdasharray}
 
 The pattern of dashes and gaps to stroke the border
@@ -2183,7 +2183,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.borderWidth 'Number'
+### nodes.borderWidth `Number`
 {:#members:nodes-borderwidth}
 
 Sets the border width of the node
@@ -2205,7 +2205,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.canUngroup 'Boolean'
+### nodes.canUngroup `Boolean`
 {:#members:nodes-canungroup}
 
 To set whether the group can be ungrouped or not
@@ -2228,7 +2228,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.children 'Array'
+### nodes.children `Array`
 {:#members:nodes-children}
 
 Collection of children of the group node
@@ -2251,7 +2251,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.collection 'Boolean'
+### nodes.collection `Boolean`
 {:#members:nodes-collection}
 
 To set whether the BPMN dataobject is a collection or not
@@ -2273,7 +2273,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.connectorPadding 'Number'
+### nodes.connectorPadding `Number`
 {:#members:nodes-connectorpadding}
 
 To set the distance to be left between the node and connections.
@@ -2295,7 +2295,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-### nodes.constraints 'enum'
+### nodes.constraints `enum`
 {:#members:nodes-constraints}
 
 To enable or disable the default behaviors of the node see<a href="global.html#NodeConstraints">NodeConstraints</a>
@@ -2317,7 +2317,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.constraints 'enum'
+### nodes.constraints `enum`
 {:#members:nodes-constraints}
 
 To set the constraints for the swimlane see <a href="global.html#NodeConstraints">NodeConstraints</a> ej.datavisualization.Diagram.NodeConstraints.Default &amp; ~(ej.datavisualization.Diagram.NodeConstraints.ResizeNorth | ej.datavisualization.Diagram.NodeConstraints.ResizeWest | ej.datavisualization.Diagram.NodeConstraints.ResizeNorthWest | ej.datavisualization.Diagram.NodeConstraints.ResizeNorthEast | ej.datavisualization.Diagram.NodeConstraints.ResizeSouthWest)
@@ -2335,7 +2335,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.container 'Object'
+### nodes.container `Object`
 {:#members:nodes-container}
 
 To indicate whether this element can be used as a container.Applicable only if the object as Group.
@@ -2357,7 +2357,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.container.orientation 'String'
+### nodes.container.orientation `String`
 {:#members:nodes-container-orientation}
 
 To set the container orientation. Applicable if the group has container.
@@ -2380,7 +2380,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.container.type 'enum'
+### nodes.container.type `enum`
 {:#members:nodes-container-type}
 
 To set the type of the container. Applicable if the group has container.
@@ -2403,7 +2403,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.cornerRadius 'Number'
+### nodes.cornerRadius `Number`
 {:#members:nodes-cornerradius}
 
 Defines the radius of the rounder corner. Applicable if the shape is rectangle
@@ -2425,7 +2425,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.event 'enum'
+### nodes.event `enum`
 {:#members:nodes-event}
 
 Sets the type of BPMN Event See <a href="global.html#BPMNEvents">BPMNEvents</a>
@@ -2447,7 +2447,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.excludeFromLayout 'Boolean'
+### nodes.excludeFromLayout `Boolean`
 {:#members:nodes-excludefromlayout}
 
 To set whether the node can be included in layout arrangement
@@ -2469,7 +2469,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.expanded 'Boolean'
+### nodes.expanded `Boolean`
 {:#members:nodes-expanded}
 
 To set whether the node is expanded or collapsed
@@ -2491,7 +2491,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.fillColor 'String'
+### nodes.fillColor `String`
 {:#members:nodes-fillcolor}
 
 Sets the color that is used to fill shapes
@@ -2513,7 +2513,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gateway 'enum'
+### nodes.gateway `enum`
 {:#members:nodes-gateway}
 
 Sets the type of BPMN Gateway See <a href="global.html#BPMNGateways">BPMNGateways</a>
@@ -2542,14 +2542,14 @@ Smooth transition from one color to another color in node
 
 
 
-### nodes.gradient.LinearGradient 'Object'
+### nodes.gradient.LinearGradient `Object`
 {:#members:nodes-gradient-lineargradient}
 
 Paints an area with a linear gradient.
 
 
 
-### nodes.gradient.LinearGradient.stops 'Array'
+### nodes.gradient.LinearGradient.stops `Array`
 {:#members:nodes-gradient-lineargradient-stops}
 
 The stop region for the gradient
@@ -2586,7 +2586,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.LinearGradient.x1 'Number'
+### nodes.gradient.LinearGradient.x1 `Number`
 {:#members:nodes-gradient-lineargradient-x1}
 
 The starting X-Axis for the region
@@ -2613,7 +2613,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.LinearGradient.x2 'Number'
+### nodes.gradient.LinearGradient.x2 `Number`
 {:#members:nodes-gradient-lineargradient-x2}
 
 
@@ -2647,7 +2647,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.LinearGradient.y1 'Number'
+### nodes.gradient.LinearGradient.y1 `Number`
 {:#members:nodes-gradient-lineargradient-y1}
 
 
@@ -2681,7 +2681,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.LinearGradient.y2 'Number'
+### nodes.gradient.LinearGradient.y2 `Number`
 {:#members:nodes-gradient-lineargradient-y2}
 
 
@@ -2715,13 +2715,13 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.RadialGradient 'Object'
+### nodes.gradient.RadialGradient `Object`
 {:#members:nodes-gradient-radialgradient}
 
 Paints an area with a radial gradient. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.
 
 
-### nodes.gradient.RadialGradient.cx 'Number'
+### nodes.gradient.RadialGradient.cx `Number`
 {:#members:nodes-gradient-radialgradient-cx}
 
 The starting X-Axis for the region
@@ -2748,7 +2748,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.RadialGradient.cy 'Number'
+### nodes.gradient.RadialGradient.cy `Number`
 {:#members:nodes-gradient-radialgradient-cy}
 
 The ending X-Axis for the region
@@ -2775,7 +2775,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.RadialGradient.fx 'Number'
+### nodes.gradient.RadialGradient.fx `Number`
 {:#members:nodes-gradient-radialgradient-fx}
 
 The starting X-Axis for the region
@@ -2802,7 +2802,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.RadialGradient.fy 'Number'
+### nodes.gradient.RadialGradient.fy `Number`
 {:#members:nodes-gradient-radialgradient-fy}
 
 The ending Y-Axis for the region
@@ -2829,7 +2829,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.RadialGradient.stops 'Array'
+### nodes.gradient.RadialGradient.stops `Array`
 {:#members:nodes-gradient-radialgradient-stops}
 
 The stop region for the gradient
@@ -2866,14 +2866,14 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.Stop 'Object'
+### nodes.gradient.Stop `Object`
 {:#members:nodes-gradient-stop}
 
 Specifies the stops of the node gradients.
 
 
 
-### nodes.gradient.Stop.color 'String'
+### nodes.gradient.Stop.color `String`
 {:#members:nodes-gradient-stop-color}
 
 The color of applied gradient
@@ -2909,7 +2909,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.Stop.offset 'Number'
+### nodes.gradient.Stop.offset `Number`
 {:#members:nodes-gradient-stop-offset}
 
 To set desired offset to apply color to the node region
@@ -2945,7 +2945,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.gradient.Stop.opacity 'Number'
+### nodes.gradient.Stop.opacity `Number`
 {:#members:nodes-gradient-stop-opacity}
 
 Decribes the transparency level for the region
@@ -2982,7 +2982,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.header 'Object'
+### nodes.header `Object`
 {:#members:nodes-header}
 
 The header of the swimlane. Applicable if the type is group.
@@ -3002,7 +3002,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  heade
 
 
 
-### nodes.height 'Number'
+### nodes.height `Number`
 {:#members:nodes-height}
 
 To set the height of the node
@@ -3045,7 +3045,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-### nodes.inEdges 'Array'
+### nodes.inEdges `Array`
 {:#members:nodes-inedges}
 
 Collection of incoming connectors/edges of the node
@@ -3067,7 +3067,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.isSwimlane 'Boolean'
+### nodes.isSwimlane `Boolean`
 {:#members:nodes-isswimlane}
 
 Indicates class as swimlane. Applicable if type is swimlane.
@@ -3087,7 +3087,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  isSwi
 
 
 
-### nodes.labels 'Array'
+### nodes.labels `Array`
 {:#members:nodes-labels}
 
 To set the collection of labels to node
@@ -3110,7 +3110,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.labels.bold 'Boolean'
+### nodes.labels.bold `Boolean`
 {:#members:nodes-labels-bold}
 
 Enables/disables the bold style of label
@@ -3132,7 +3132,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.borderColor 'String'
+### nodes.labels.borderColor `String`
 {:#members:nodes-labels-bordercolor}
 
 Sets border color of the text
@@ -3154,7 +3154,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.borderWidth 'Number'
+### nodes.labels.borderWidth `Number`
 {:#members:nodes-labels-borderwidth}
 
 Sets the border width of the label
@@ -3176,7 +3176,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.fillColor 'String'
+### nodes.labels.fillColor `String`
 {:#members:nodes-labels-fillcolor}
 
 Sets the color that is used to fill text
@@ -3198,7 +3198,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.fontColor 'String'
+### nodes.labels.fontColor `String`
 {:#members:nodes-labels-fontcolor}
 
 To set the text color
@@ -3220,7 +3220,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.fontFamily 'String'
+### nodes.labels.fontFamily `String`
 {:#members:nodes-labels-fontfamily}
 
 To set the font family of the label
@@ -3242,7 +3242,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.fontSize 'Number'
+### nodes.labels.fontSize `Number`
 {:#members:nodes-labels-fontsize}
 
 To set font size of the label
@@ -3264,7 +3264,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.horizontalAlignment 'enum'
+### nodes.labels.horizontalAlignment `enum`
 {:#members:nodes-labels-horizontalalignment}
 
 Horizontal alignment of text in an element see<a href="global.html#HorizontalAlignment">HorizontalAlignment</a>
@@ -3286,7 +3286,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.italic 'Boolean'
+### nodes.labels.italic `Boolean`
 {:#members:nodes-labels-italic}
 
 Enables/disables the italic font style of label
@@ -3308,7 +3308,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.margin 'Object'
+### nodes.labels.margin `Object`
 {:#members:nodes-labels-margin}
 
 To set the margin of the label
@@ -3330,7 +3330,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.mode 'enum'
+### nodes.labels.mode `enum`
 {:#members:nodes-labels-mode}
 
 To set the label edit mode see<a href="global.html#LabelEditMode">LabelEditMode</a>
@@ -3352,7 +3352,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.name 'String'
+### nodes.labels.name `String`
 {:#members:nodes-labels-name}
 
 Name of the label
@@ -3374,7 +3374,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.offset 'Point'
+### nodes.labels.offset `Point`
 {:#members:nodes-labels-offset}
 
 Ratio with respect to which the label is to be placed
@@ -3396,7 +3396,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.readOnly 'Boolean'
+### nodes.labels.readOnly `Boolean`
 {:#members:nodes-labels-readonly}
 
 Allows the label to be read only
@@ -3418,7 +3418,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.rotateAngle 'Number'
+### nodes.labels.rotateAngle `Number`
 {:#members:nodes-labels-rotateangle}
 
 To set the rotation angle of the label
@@ -3440,7 +3440,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.text 'String'
+### nodes.labels.text `String`
 {:#members:nodes-labels-text}
 
 Sets text for the label
@@ -3462,7 +3462,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.textAlign 'enum'
+### nodes.labels.textAlign `enum`
 {:#members:nodes-labels-textalign}
 
 Alignment of text in an element see <a href="global.html#TextAlign">TextAlign</a>
@@ -3484,7 +3484,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.textDecoration 'enum'
+### nodes.labels.textDecoration `enum`
 {:#members:nodes-labels-textdecoration}
 
 To set the text decoration for the label see<a href="global.html#TextDecorations">TextDecorations</a>
@@ -3506,7 +3506,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.verticalAlignment 'enum'
+### nodes.labels.verticalAlignment `enum`
 {:#members:nodes-labels-verticalalignment}
 
 Vertical alignment of text in an element see<a href="global.html#VerticalAlignment">VerticalAlignment</a>
@@ -3528,7 +3528,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.visible 'Boolean'
+### nodes.labels.visible `Boolean`
 {:#members:nodes-labels-visible}
 
 Enables or disables the visibility of the label
@@ -3550,7 +3550,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.width 'Number'
+### nodes.labels.width `Number`
 {:#members:nodes-labels-width}
 
 To set the width of the label
@@ -3572,7 +3572,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.labels.wrapping 'enum'
+### nodes.labels.wrapping `enum`
 {:#members:nodes-labels-wrapping}
 
 To set the wrapping behavior of text see <a href="global.html#TextWrapping">TextWrapping</a>
@@ -3594,7 +3594,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.lanes 'Array'
+### nodes.lanes `Array`
 {:#members:nodes-lanes}
 
 Collection of Lanes in swimlane. Applicable if type is swimlane.
@@ -3617,7 +3617,7 @@ var nodes = [ {type: "swimlane",name: "swimlane",lanes: []}
 
 
 
-### nodes.lanes.addInfo 'Object'
+### nodes.lanes.addInfo `Object`
 {:#members:nodes-lanes-addinfo}
 
 To provide/save extra information about Lane
@@ -3637,7 +3637,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "lane",name: "lane",{addInfo: addIn
 
 
 
-### nodes.lanes.children 'Array'
+### nodes.lanes.children `Array`
 {:#members:nodes-lanes-children}
 
 The children of the lane. Applicable if type is lane.
@@ -3657,7 +3657,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-### nodes.lanes.fillColor 'String'
+### nodes.lanes.fillColor `String`
 {:#members:nodes-lanes-fillcolor}
 
 The color to be filled inside the lane. Applicable if type is lane.
@@ -3677,7 +3677,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-### nodes.lanes.header 'Object'
+### nodes.lanes.header `Object`
 {:#members:nodes-lanes-header}
 
 The header of the lane . Applicable if the type is group.
@@ -3697,7 +3697,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-### nodes.lanes.isLane 'Boolean'
+### nodes.lanes.isLane `Boolean`
 {:#members:nodes-lanes-islane}
 
 Indicates class as lane. Applicable if type is lane.
@@ -3717,7 +3717,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-### nodes.lanes.labels 'String'
+### nodes.lanes.labels `String`
 {:#members:nodes-lanes-labels}
 
 The label shown inside the lane. Applicable if type is lane.
@@ -3737,7 +3737,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-### nodes.lanes.name 'String'
+### nodes.lanes.name `String`
 {:#members:nodes-lanes-name}
 
 The name of the lane. Applicable if type is lane.
@@ -3757,7 +3757,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-### nodes.lanes.orientation 'String'
+### nodes.lanes.orientation `String`
 {:#members:nodes-lanes-orientation}
 
 The orientation type of the lane. Applicable if type is lane.
@@ -3777,7 +3777,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", lanes:
 
 
 
-### nodes.marginBottom 'Number'
+### nodes.marginBottom `Number`
 {:#members:nodes-marginbottom}
 
 To set bottom margin of the node. Applicable if the type is group.
@@ -3799,7 +3799,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-### nodes.marginLeft 'Number'
+### nodes.marginLeft `Number`
 {:#members:nodes-marginleft}
 
 To set left margin of the node. Applicable if the type is group.
@@ -3821,7 +3821,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.marginRight 'Number'
+### nodes.marginRight `Number`
 {:#members:nodes-marginright}
 
 To set right of for the node. Applicable if the type is group.
@@ -3843,7 +3843,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-### nodes.marginTop 'Number'
+### nodes.marginTop `Number`
 {:#members:nodes-margintop}
 
 To set top margin of the node. Applicable if the type is group.
@@ -3865,7 +3865,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-### nodes.maxHeight 'Number'
+### nodes.maxHeight `Number`
 {:#members:nodes-maxheight}
 
 To set maximum height for the node. Applicable if the type is group.
@@ -3887,7 +3887,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-### nodes.maxWidth 'Number'
+### nodes.maxWidth `Number`
 {:#members:nodes-maxwidth}
 
 To set maximum width for the node. Applicable if the type is group.
@@ -3909,7 +3909,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-### nodes.minHeight 'Number'
+### nodes.minHeight `Number`
 {:#members:nodes-minheight}
 
 To set minimum height for the node. Applicable if the type is group.
@@ -3931,7 +3931,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-### nodes.minWidth 'Number'
+### nodes.minWidth `Number`
 {:#members:nodes-minwidth}
 
 To set minimum width for the node. Applicable if the type is group.
@@ -3953,7 +3953,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-### nodes.name 'String'
+### nodes.name `String`
 {:#members:nodes-name}
 
 To set the name to the node
@@ -3975,7 +3975,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.offsetX 'Number'
+### nodes.offsetX `Number`
 {:#members:nodes-offsetx}
 
 Sets the position of the node on X-Axis
@@ -3998,7 +3998,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",offsetX
 
 
 
-### nodes.offsetY 'Number'
+### nodes.offsetY `Number`
 {:#members:nodes-offsety}
 
 Sets the position of the node on Y-Axis
@@ -4021,7 +4021,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",offsetY
 
 
 
-### nodes.opacity 'Number'
+### nodes.opacity `Number`
 {:#members:nodes-opacity}
 
 Defines the transparency of the node
@@ -4043,7 +4043,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.orientation 'String'
+### nodes.orientation `String`
 {:#members:nodes-orientation}
 
 The orientation type of the swimlane. Applicable if type is swimlane.
@@ -4063,7 +4063,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",  orien
 
 
 
-### nodes.outEdges 'Array'
+### nodes.outEdges `Array`
 {:#members:nodes-outedges}
 
 Collection of outgoing connectors/edges of the node
@@ -4085,7 +4085,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.paddingBottom 'Number'
+### nodes.paddingBottom `Number`
 {:#members:nodes-paddingbottom}
 
 To set bottom padding value to the group. Applicable if the type is group.
@@ -4107,7 +4107,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.paddingLeft 'Number'
+### nodes.paddingLeft `Number`
 {:#members:nodes-paddingleft}
 
 To set left padding value to the group. Applicable if the type is group.
@@ -4129,7 +4129,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.paddingRight 'Number'
+### nodes.paddingRight `Number`
 {:#members:nodes-paddingright}
 
 To set Right padding value to the group. Applicable if the type is group.
@@ -4151,7 +4151,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.paddingTop 'Number'
+### nodes.paddingTop `Number`
 {:#members:nodes-paddingtop}
 
 To set Top padding value to the group. Applicable if the type is group.
@@ -4173,7 +4173,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.parent 'String'
+### nodes.parent `String`
 {:#members:nodes-parent}
 
 Sets the parent name of the node
@@ -4193,7 +4193,7 @@ var node = [ {name: "rect",parent:"group1"}];
 
 
 
-### nodes.pathData 'String'
+### nodes.pathData `String`
 {:#members:nodes-pathdata}
 
 Sets the path geometry that defines the shape of the path node
@@ -4215,7 +4215,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.phases 'Array'
+### nodes.phases `Array`
 {:#members:nodes-phases}
 
 Collection of phases in swimlane node. Applicable if type is swimlane.
@@ -4238,7 +4238,7 @@ var nodes = [ {type: "swimlane",name: "swimlane",phases: []}
 
 
 
-### nodes.phases.label 'Object'
+### nodes.phases.label `Object`
 {:#members:nodes-phases-label}
 
 Sets the label of the phase. Applicable if type is lane.
@@ -4258,7 +4258,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-### nodes.phases.lineColor 'String'
+### nodes.phases.lineColor `String`
 {:#members:nodes-phases-linecolor}
 
 Sets the line color of the phase. Applicable if type is lane.
@@ -4278,7 +4278,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-### nodes.phases.lineDashArray 'String'
+### nodes.phases.lineDashArray `String`
 {:#members:nodes-phases-linedasharray}
 
 Sets the line dash drray of the phase. Applicable if type is lane.
@@ -4298,7 +4298,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-### nodes.phases.lineWidth 'Number'
+### nodes.phases.lineWidth `Number`
 {:#members:nodes-phases-linewidth}
 
 Sets the line width of the phase. Applicable if type is lane.
@@ -4318,7 +4318,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-### nodes.phases.name 'String'
+### nodes.phases.name `String`
 {:#members:nodes-phases-name}
 
 Defines the name of the phase. Applicable if type is lane.
@@ -4338,7 +4338,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-### nodes.phases.offset 'Number'
+### nodes.phases.offset `Number`
 {:#members:nodes-phases-offset}
 
 Sets the offset of the phase. Applicable if type is lane.
@@ -4358,7 +4358,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-### nodes.phases.orientation 'String'
+### nodes.phases.orientation `String`
 {:#members:nodes-phases-orientation}
 
 Sets the orientation of the phase. Applicable if type is lane.
@@ -4378,7 +4378,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-### nodes.phases.parent 'String'
+### nodes.phases.parent `String`
 {:#members:nodes-phases-parent}
 
 Sets the parent of the phase. Applicable if type is lane.
@@ -4398,7 +4398,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-### nodes.phases.type 'String'
+### nodes.phases.type `String`
 {:#members:nodes-phases-type}
 
 Sets the type of the phase. Applicable if type is lane.
@@ -4418,7 +4418,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 
 
-### nodes.phaseSize 'Number'
+### nodes.phaseSize `Number`
 {:#members:nodes-phasesize}
 
 To set phase size for the swimlane. Applicable if type is swimlane.
@@ -4438,7 +4438,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane",phaseSi
 
 
 
-### nodes.pivot 'Point'
+### nodes.pivot `Point`
 {:#members:nodes-pivot}
 
 To set the pivot point of the node
@@ -4460,7 +4460,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.points 'Array'
+### nodes.points `Array`
 {:#members:nodes-points}
 
 Defines the collection of points to draw polygon node
@@ -4482,7 +4482,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports 'Array'
+### nodes.ports `Array`
 {:#members:nodes-ports}
 
 To add collection of ports to node
@@ -4504,7 +4504,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.ports.borderColor 'String'
+### nodes.ports.borderColor `String`
 {:#members:nodes-ports-bordercolor}
 
 Sets the border color of the port
@@ -4526,7 +4526,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports.borderWidth 'Number'
+### nodes.ports.borderWidth `Number`
 {:#members:nodes-ports-borderwidth}
 
 Sets the border width of the port
@@ -4548,7 +4548,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports.connectorPadding 'Number'
+### nodes.ports.connectorPadding `Number`
 {:#members:nodes-ports-connectorpadding}
 
 To set the distance to be left between the port and connections.
@@ -4569,7 +4569,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports.constraints 'enum'
+### nodes.ports.constraints `enum`
 {:#members:nodes-ports-constraints}
 
 Sets whether connections can be created with the port See <a href="global.html#PortConstraints">PortConstraints</a>
@@ -4591,7 +4591,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports.fillColor 'String'
+### nodes.ports.fillColor `String`
 {:#members:nodes-ports-fillcolor}
 
 Sets the color that is used to fill port shapes
@@ -4613,7 +4613,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports.name 'String'
+### nodes.ports.name `String`
 {:#members:nodes-ports-name}
 
 The name of port to be specified
@@ -4635,7 +4635,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports.offset 'Point'
+### nodes.ports.offset `Point`
 {:#members:nodes-ports-offset}
 
 Offset value to align the port
@@ -4657,7 +4657,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports.pathData 'String'
+### nodes.ports.pathData `String`
 {:#members:nodes-ports-pathdata}
 
 Path data to draw the custom port
@@ -4679,7 +4679,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports.shape 'enum'
+### nodes.ports.shape `enum`
 {:#members:nodes-ports-shape}
 
 Sets the shape of the port See <a href="global.html#PortShapes">PortShapes</a>
@@ -4701,7 +4701,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports.size 'Number'
+### nodes.ports.size `Number`
 {:#members:nodes-ports-size}
 
 Sets the size of the port
@@ -4723,7 +4723,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.ports.visibility 'enum'
+### nodes.ports.visibility `enum`
 {:#members:nodes-ports-visibility}
 
 Enables or disables the visibility of port See <a href="global.html#PortVisibility">PortVisibility</a>
@@ -4744,7 +4744,7 @@ $("#diagramcontent").ejDiagram({nodes:port});
 
 
 
-### nodes.rotateAngle 'Number'
+### nodes.rotateAngle `Number`
 {:#members:nodes-rotateangle}
 
 To set the rotation angle of the node
@@ -4766,7 +4766,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.shadow 'Object'
+### nodes.shadow `Object`
 {:#members:nodes-shadow}
 
 To define the shadow behavior of node seeShadow
@@ -4788,7 +4788,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.shadow.angle 'Number'
+### nodes.shadow.angle `Number`
 {:#members:nodes-shadow-angle}
 
 Defines the angle difference to be set between object and shadow
@@ -4810,7 +4810,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.shadow.distance 'Number'
+### nodes.shadow.distance `Number`
 {:#members:nodes-shadow-distance}
 
 Defines the distance to be left between object and shadow
@@ -4832,7 +4832,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.shadow.opacity 'Number'
+### nodes.shadow.opacity `Number`
 {:#members:nodes-shadow-opacity}
 
 Defines the opacity of the shadow
@@ -4854,7 +4854,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.shape 'enum'
+### nodes.shape `enum`
 {:#members:nodes-shape}
 
 Sets the shape of the node. It depends upon the type of node. See {Link Shapes}
@@ -4876,7 +4876,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.source 'String'
+### nodes.source `String`
 {:#members:nodes-source}
 
 Sets the source location of the image node
@@ -4898,7 +4898,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.subProcess 'Object'
+### nodes.subProcess `Object`
 {:#members:nodes-subprocess}
 
 Defines the subProcess of BPMN Activity and it is applicable, if the Activity type is "subProcess"
@@ -4920,7 +4920,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.subProcess.adhoc 'Boolean'
+### nodes.subProcess.adhoc `Boolean`
 {:#members:nodes-subprocess-adhoc}
 
 To set whether the process is adhoc or not
@@ -4942,7 +4942,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.subProcess.boundary 'enum'
+### nodes.subProcess.boundary `enum`
 {:#members:nodes-subprocess-boundary}
 
 Sets the boundary of the BPMN process See <a href="global.html#BPMNBoundary">BPMNBoundary</a>
@@ -4964,7 +4964,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.subProcess.compensation 'Boolean'
+### nodes.subProcess.compensation `Boolean`
 {:#members:nodes-subprocess-compensation}
 
 To set whether the process is a compensation process or not
@@ -4986,7 +4986,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.subProcess.loop 'enum'
+### nodes.subProcess.loop `enum`
 {:#members:nodes-subprocess-loop}
 
 Sets the type of loop to a BPMN Process See <a href="global.html#BPMNLoops">BPMNLoops</a>
@@ -5008,7 +5008,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.task 'Object'
+### nodes.task `Object`
 {:#members:nodes-task}
 
 Defines the task of BPMN Activity and it is applicable, if Activity type is "task"
@@ -5030,7 +5030,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.tasks.call 'Boolean'
+### nodes.tasks.call `Boolean`
 {:#members:nodes-tasks-call}
 
 To set whether the task is a global task or not
@@ -5052,7 +5052,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.tasks.compensation 'Boolean'
+### nodes.tasks.compensation `Boolean`
 {:#members:nodes-tasks-compensation}
 
 To set whether the task is a compensation task or not
@@ -5074,7 +5074,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.tasks.loop 'enum'
+### nodes.tasks.loop `enum`
 {:#members:nodes-tasks-loop}
 
 Sets the type of loop to a BPMN task See <a href="global.html#BPMNLoops">BPMNLoops</a>
@@ -5096,7 +5096,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.tasks.type 'enum'
+### nodes.tasks.type `enum`
 {:#members:nodes-tasks-type}
 
 Sets the type of the BPMN task See <a href="global.html#BPMNTasks">BPMNTasks</a>
@@ -5118,7 +5118,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.templateId 'String'
+### nodes.templateId `String`
 {:#members:nodes-templateid}
 
 Sets the template id of native/html nodes
@@ -5140,7 +5140,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.textBlock 'Number'
+### nodes.textBlock `Number`
 {:#members:nodes-textblock}
 
 Defines the textBlock and it is applicable in case of text node
@@ -5164,7 +5164,7 @@ $("#diagramcontent").ejDiagram({nodes:node});
 
 
 
-### nodes.trigger 'enum'
+### nodes.trigger `enum`
 {:#members:nodes-trigger}
 
 Sets the type of BPMN Event Trigger See <a href="global.html#BPMNTriggers">BPMNTriggers</a>
@@ -5186,7 +5186,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.type 'enum'
+### nodes.type `enum`
 {:#members:nodes-type}
 
 The type of node See <a href="global.html#Shapes">Shapes</a>
@@ -5230,7 +5230,7 @@ $("#diagramcontent").ejDiagram({nodes:[node]});
 
 
 
-### nodes.visible 'Boolean'
+### nodes.visible `Boolean`
 {:#members:nodes-visible}
 
 To set the visibility of the node
@@ -5252,7 +5252,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.width 'Number'
+### nodes.width `Number`
 {:#members:nodes-width}
 
 To set the width of the node
@@ -5274,7 +5274,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodes.zOrder 'Number'
+### nodes.zOrder `Number`
 {:#members:nodes-zorder}
 
 To set the Zorder of the node
@@ -5296,7 +5296,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 
 
-### nodeTemplate 'Object'
+### nodeTemplate `Object`
 {:#members:nodetemplate}
 
 To customize the node properties before rendering the node.
@@ -5322,7 +5322,7 @@ $("#diagram").ejDiagram({ nodeTemplate:nodeTemplate});
 
 To define the page settings of diagram
 
-### pageSettings.multiplePage 'Boolean'
+### pageSettings.multiplePage `Boolean`
 {:#members:pagesettings-multiplepage}
 
 To set whether the number of pages can be extended based on the region covered by elements
@@ -5340,7 +5340,7 @@ $("#diagramContent").ejDiagram({pageSettings: {multiplePage: false}});{% endhigh
 
 
 
-### pageSettings.pageBackgroundColor 'String'
+### pageSettings.pageBackgroundColor `String`
 {:#members:pagesettings-pagebackgroundcolor}
 
 To set the background color of page
@@ -5358,7 +5358,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageBackgroundColor: "#ffffff"}})
 
 
 
-### pageSettings.pageBorderColor 'String'
+### pageSettings.pageBorderColor `String`
 {:#members:pagesettings-pagebordercolor}
 
 To set the border color of page
@@ -5376,7 +5376,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageBorderColor: "#565656"}});{% 
 
 
 
-### pageSettings.pageBorderWidth 'Number'
+### pageSettings.pageBorderWidth `Number`
 {:#members:pagesettings-pageborderwidth}
 
 To set the border width of the page
@@ -5394,7 +5394,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageBorderWidth: 3}});{% endhighl
 
 
 
-### pageSettings.pageHeight 'Number'
+### pageSettings.pageHeight `Number`
 {:#members:pagesettings-pageheight}
 
 To set the height of the page
@@ -5412,7 +5412,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageHeight: 4500}});{% endhighlig
 
 
 
-### pageSettings.pageMargin 'Number'
+### pageSettings.pageMargin `Number`
 {:#members:pagesettings-pagemargin}
 
 To set the margin of page
@@ -5430,7 +5430,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageMargin: 24}});{% endhighlight
 
 
 
-### pageSettings.pageWidth 'Number'
+### pageSettings.pageWidth `Number`
 {:#members:pagesettings-pagewidth}
 
 To set the width of the page
@@ -5448,7 +5448,7 @@ $("#diagramContent").ejDiagram({pageSettings: {pageWidth: 4500}});{% endhighligh
 
 
 
-### pageSettings.showPageBreak 'Boolean'
+### pageSettings.showPageBreak `Boolean`
 {:#members:pagesettings-showpagebreak}
 
 Enables or disables the page breaks in diagram
@@ -5466,14 +5466,14 @@ $("#diagramContent").ejDiagram({pageSettings: {showPageBreak: false}});{% endhig
 
 
 
-### selectedItems 'Object'
+### selectedItems `Object`
 {:#members:selecteditems}
 
 The object to define the behavior of the selected items
 
 
 
-### selectedItems.constraints 'enum'
+### selectedItems.constraints `enum`
 {:#members:selecteditems-constraints}
 
 Sets the visible items of selector see <a href="global.html#SelectorConstraints">SelectorConstraints</a>
@@ -5494,7 +5494,7 @@ $("#diagramContent").ejDiagram({selectedItems:{constraints: ej.datavisualization
 
 
 
-### selectedItems.height 'Number'
+### selectedItems.height `Number`
 {:#members:selecteditems-height}
 
 Sets the height of the selected items
@@ -5513,7 +5513,7 @@ $("#diagramContent").ejDiagram({selectedItems: {height: 50}});
 
 
 
-### selectedItems.offsetX 'Number'
+### selectedItems.offsetX `Number`
 {:#members:selecteditems-offsetx}
 
 Defines the X co-ordinate of the selected item
@@ -5530,7 +5530,7 @@ $("#diagramContent").ejDiagram({selectedItems: {offsetX: 50}});{% endhighlight %
 
 
 
-### selectedItems.offsetY 'Number'
+### selectedItems.offsetY `Number`
 {:#members:selecteditems-offsety}
 
 Defines the Y co-ordinate of the selected item
@@ -5547,7 +5547,7 @@ $("#diagramContent").ejDiagram({selectedItems: {offsetY: 50}});{% endhighlight %
 
 
 
-### selectedItems.rotateAngle 'Number'
+### selectedItems.rotateAngle `Number`
 {:#members:selecteditems-rotateangle}
 
 Sets the rotation angle of the selected items.
@@ -5564,7 +5564,7 @@ $("#diagramContent").ejDiagram({selectedItems: {rotateAngle: 50}});{% endhighlig
 
 
 
-### selectedItems.userHandles 'Array'
+### selectedItems.userHandles `Array`
 {:#members:selecteditems-userhandles}
 
 To add frequently using commands around selector
@@ -5589,7 +5589,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 
 
-### selectedItems.width 'Number'
+### selectedItems.width `Number`
 {:#members:selecteditems-width}
 
 Sets the width of the selected items
@@ -5606,7 +5606,7 @@ $("#diagramContent").ejDiagram({selectedItems: {width: 50}});{% endhighlight %}
 
 
 
-### showTooltip 'Boolean'
+### showTooltip `Boolean`
 {:#members:showtooltip}
 
 Enables or disables tooltip of diagram
@@ -5626,14 +5626,14 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 
 
 
-### snapSettings 'Object'
+### snapSettings `Object`
 {:#members:snapsettings}
 
 Specifies the snap settings of the diagram.
 
 
 
-### snapSettings.enableSnapToObject 'Boolean'
+### snapSettings.enableSnapToObject `Boolean`
 {:#members:snapsettings-enablesnaptoobject}
 
 Enables or disables the snap to object
@@ -5652,14 +5652,14 @@ $("#diagramContent").ejDiagram({snapSettings: snap});{% endhighlight %}
 
 
 
-### snapSettings.horizontalGridLines 'Object'
+### snapSettings.horizontalGridLines `Object`
 {:#members:snapsettings-horizontalgridlines}
 
 Specifies the settings of horizontal grid lines.
 
 
 
-### snapSettings.horizontalGridLines.lineColor 'String'
+### snapSettings.horizontalGridLines.lineColor `String`
 {:#members:snapsettings-horizontalgridlines-linecolor}
 
 Sets the line color for horizontal gridlines
@@ -5682,7 +5682,7 @@ $("#diagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} }
 
 
 
-### snapSettings.horizontalGridLines.lineDashArray 'String'
+### snapSettings.horizontalGridLines.lineDashArray `String`
 {:#members:snapsettings-horizontalgridlines-linedasharray}
 
 Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
@@ -5703,7 +5703,7 @@ $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { lineDashArray: 
 
 
 
-### snapSettings.horizontalGridLines.linesInterval 'Array'
+### snapSettings.horizontalGridLines.linesInterval `Array`
 {:#members:snapsettings-horizontalgridlines-linesinterval}
 
 Specifies pattern of lines and gaps of horizontal gridlines
@@ -5725,7 +5725,7 @@ $("#diagram").ejDiagram({ snapSettings: {
 
 
 
-### snapSettings.horizontalGridLines.snapInterval 'Array'
+### snapSettings.horizontalGridLines.snapInterval `Array`
 {:#members:snapsettings-horizontalgridlines-snapinterval}
 
 Specifies the snap intervals of horizontal grid lines.
@@ -5746,7 +5746,7 @@ $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { snapInterval: [
 
 
 
-### snapSettings.snapAngle 'Number'
+### snapSettings.snapAngle `Number`
 {:#members:snapsettings-snapangle}
 
 The Angle by which the object to be snapped
@@ -5765,7 +5765,7 @@ $("#diagramContent").ejDiagram({snapSettings: snap});{% endhighlight %}
 
 
 
-### snapSettings.snapObjectDistance 'Number'
+### snapSettings.snapObjectDistance `Number`
 {:#members:snapsettings-snapobjectdistance}
 
 Relative distance between the nearer object and selected object
@@ -5784,14 +5784,14 @@ $("#diagramContent").ejDiagram({snapSettings: snap});{% endhighlight %}
 
 
 
-### snapSettings.verticalGridLines 'Object'
+### snapSettings.verticalGridLines `Object`
 {:#members:snapsettings-verticalgridlines}
 
 Specifies the settings of vertical grid lines.
 
 
 
-### snapSettings.verticalGridLines.lineColor 'String'
+### snapSettings.verticalGridLines.lineColor `String`
 {:#members:snapsettings-verticalgridlines-linecolor}
 
 Sets the line color of vertical gridlines
@@ -5814,7 +5814,7 @@ $("#diagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 
 
 
-### snapSettings.verticalGridLines.lineDashArray 'String'
+### snapSettings.verticalGridLines.lineDashArray `String`
 {:#members:snapsettings-verticalgridlines-linedasharray}
 
 Specifies the pattern of dashes and gaps used to stroke vertical grid lines
@@ -5835,7 +5835,7 @@ $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { lineDashArray: "2
 
 
 
-### snapSettings.verticalGridLines.linesInterval 'Array'
+### snapSettings.verticalGridLines.linesInterval `Array`
 {:#members:snapsettings-verticalgridlines-linesinterval}
 
 Specifies pattern of lines and gaps of vertical gridlines
@@ -5857,7 +5857,7 @@ $("#diagram").ejDiagram({ snapSettings: {
 
 
 
-### snapSettings.verticalGridLines.snapInterval 'Array'
+### snapSettings.verticalGridLines.snapInterval `Array`
 {:#members:snapsettings-verticalgridlines-snapinterval}
 
 Specifies the snap intervals for vertical grid lines.
@@ -5878,7 +5878,7 @@ $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { snapInterval: [10
 
 
 
-### tool 'enum'
+### tool `enum`
 {:#members:tool}
 
 Sets the default behavior of the diagram see<a href="global.html#Tool">Tool</a>
@@ -5899,7 +5899,7 @@ $("#diagramContent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.Default}
 
 
 
-### tooltipTemplateId 'String'
+### tooltipTemplateId `String`
 {:#members:tooltiptemplateid}
 
 To set custom style for tool tip of diagram
@@ -5924,7 +5924,7 @@ $("#diagramcontent").ejDiagram({ tooltipTemplateId: "toolTipId"});
 
 
 
-### version 'String'
+### version `String`
 {:#members:version}
 
 Sets the version of the diagram
@@ -5944,7 +5944,7 @@ $("#diagramcontent").ejDiagram("instance");
 
 
 
-### width 'String'
+### width `String`
 {:#members:width}
 
 Specifies the width of the diagram.
@@ -5964,7 +5964,7 @@ $("#diagram").ejDiagram({ width:"100%" });
 
 
 
-### zoomFactor 'Number'
+### zoomFactor `Number`
 {:#members:zoomfactor}
 
 Sets the factor by which we can zoom in or zoom out
@@ -7770,7 +7770,7 @@ connectorCollectionChange:function (args) {}
 ### connectorSourceChange
 {:#events:connectorsourcechange}
 
-Triggers when the connectors' source point is changed
+Triggers when the connector's source point is changed
 
 
 <table class="params">
@@ -7818,7 +7818,7 @@ connectorSourceChange:function (args)  {}
 ### connectorTargetChange
 {:#events:connectortargetchange}
 
-Triggers when the connectors' target point is changed
+Triggers when the connector's target point is changed
 
 
 <table class="params">
