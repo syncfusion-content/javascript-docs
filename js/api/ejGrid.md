@@ -1,10 +1,12 @@
 ---
 layout: post
 title: ejGrid
+description: Methods,members and events avaliable in ejGrid
 documentation: API
 platform: js
-description: API reference for ejGrid
+keywords: ejGrid, API, Essential JS Grid
 ---
+
 #ejGrid
 The grid can be easily configured to the DOM element, such as div. you can create a grid with a highly customizable look and feel.
 
