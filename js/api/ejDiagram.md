@@ -1355,7 +1355,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 ### connectors.targetPadding `Number`
 {:#members:connectors-targetpadding}
 
-Defines the space between node and connector`s target point
+Defines the space between node and connector's target point
 
 #### Default Value 
 
@@ -6137,7 +6137,7 @@ Add a collection of ports to the node specified by name
 </tr>
 <tr>
 <td class="name">ports</td>
-<td class="type">array</td>
+<td class="type">Array</td>
 <td class="description">a collection of ports to be added to the specified node</td>
 </tr>
 </tbody>
@@ -6158,7 +6158,7 @@ diagram.addPorts("Rect1", port);
 
 
 
-### addSelection(node, clearSelection)
+### addSelection(node, \[clearSelection\])
 {:#methods:addselection}
 
 Add the specified node to selection list
@@ -6179,7 +6179,7 @@ Add the specified node to selection list
 </tr>
 <tr>
 <td class="name">clearSelection</td>
-<td class="type">Boolean</td>
+<td class="type">Boolean [optional]</td>
 <td class="description">to define whether to clear the existing selection or not</td>
 </tr>
 </tbody>
@@ -6392,7 +6392,7 @@ diagram.cut();
 
 
 
-### exportDiagram(options)
+### exportDiagram(\[options\])
 {:#methods:exportdiagram}
 
 Export the diagram as downloadable files or as data
@@ -6408,7 +6408,7 @@ Export the diagram as downloadable files or as data
 <tbody>
 <tr>
 <td class="name">options</td>
-<td class="type">Object</td>
+<td class="type">Object [optional]</td>
 <td class="description">to export the desired region of diagram to the desired formats
 <table class="params">
 <thead>
@@ -6448,6 +6448,10 @@ Export the diagram as downloadable files or as data
 <td class="name">margin</td>
 <td class="type">Object</td>
 <td class="description">to set margin to the exported data</td>
+</tr>
+</tbody>
+</table>
+</td>
 </tr>
 </tbody>
 </table>
@@ -6519,7 +6523,7 @@ var node = diagram.findNode("nodeName");
 
 
 
-### fitToPage(mode, region, margin)
+### fitToPage(\[mode\], \[region\], \[margin\])
 {:#methods:fittopage}
 
 Fit the diagram content into diagram viewport
@@ -6535,17 +6539,17 @@ Fit the diagram content into diagram viewport
 <tbody>
 <tr>
 <td class="name">mode</td>
-<td class="type">Object</td>
+<td class="type">String [optional]</td>
 <td class="description">to set the mode of fit to command. See <a href="global.html#fitmode">FitMode</a></td>
 </tr>
 <tr>
 <td class="name">region</td>
-<td class="type">Object</td>
+<td class="type">String [optional]</td>
 <td class="description">to set whether the region to be fit will be based on diagram elements or page settings <a href="global.html#region">Region</a></td>
 </tr>
 <tr>
 <td class="name">margin</td>
-<td class="type">Object</td>
+<td class="type">Object [optional]</td>
 <td class="description">to set the required margin</td>
 </tr>
 </tbody>
@@ -6582,7 +6586,7 @@ diagram.group();
 
 
 
-### insertLabel(name, label, index)
+### insertLabel(name, label, \[index\])
 {:#methods:insertLabel}
 
 Insert a label into a node's label collection at runtime
@@ -6608,7 +6612,7 @@ Insert a label into a node's label collection at runtime
 </tr>
 <tr>
 <td class="name">index</td>
-<td class="type">Object</td>
+<td class="type">Number</td>
 <td class="description"> to insert the label into the node</td>
 </tr>
 </tbody>
@@ -6699,7 +6703,7 @@ diagram.moveForward();
 
 
 
-### nudge(direction, delta)
+### nudge(direction, \[delta\])
 {:#methods:nudge}
 
 Move the selected objects by either one pixel or by the pixels specified through argument
@@ -6720,7 +6724,7 @@ Move the selected objects by either one pixel or by the pixels specified through
 </tr>
 <tr>
 <td class="name">delta</td>
-<td class="type">Number</td>
+<td class="type">Number [optional]</td>
 <td class="description">specifies the number of pixels by which the selected objects to be moved</td>
 </tr>
 </tbody>
@@ -6738,7 +6742,7 @@ diagram.nudge("direction", 5);
 
 
 
-### paste(object, rename)
+### paste(\[object\], \[rename\])
 {:#methods:paste}
 
 Paste the selected object from internal clipboard to diagram
@@ -6754,12 +6758,12 @@ Paste the selected object from internal clipboard to diagram
 <tbody>
 <tr>
 <td class="name">object</td>
-<td class="type">String</td>
+<td class="type">Object [optional]</td>
 <td class="description">to be added</td>
 </tr>
 <tr>
 <td class="name">rename</td>
-<td class="type">Boolean</td>
+<td class="type">Boolean [optional]</td>
 <td class="description">to define whether the specified object is to be renamed or not</td>
 </tr>
 </tbody>
@@ -7441,7 +7445,7 @@ diagram.updateSelectedObject(name);
 
 
 
-### updateSelection(isDragging)
+### updateSelection(\[showUserHandles\])
 {:#methods:updateselection}
 
 Update the selection at runtime
@@ -7456,8 +7460,8 @@ Update the selection at runtime
 </thead>
 <tbody>
 <tr>
-<td class="name">isDragging</td>
-<td class="type">Boolean</td>
+<td class="name">showUserHandles</td>
+<td class="type">Boolean [optional]</td>
 <td class="description">to specify whether the selected object is being dragged or not</td>
 </tr>
 </tbody>
@@ -7658,7 +7662,7 @@ Triggers when a node, connector or diagram is clicked
 </tr>
 <tr>
 <td class="name">count</td>
-<td class="type">Object</td>
+<td class="type">Number</td>
 <td class="description">parameter returns the count of how many times the mouse button is pressed</td>
 </tr>
 <tr>
@@ -7708,8 +7712,13 @@ Triggers when the connection is changed
 </tr>
 <tr>
 <td class="name">port</td>
-<td class="type">port</td>
+<td class="type">String</td>
 <td class="description">parameter returns the changed source or target port of the connector</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type">Boolean</td>
+<td class="description">parameter defines whether to cancel the change or not</td>
 </tr>
 </tbody>
 </table>
@@ -7740,8 +7749,8 @@ Triggers when the connector collection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name">changetype</td>
-<td class="type">Boolean</td>
+<td class="name">changeType</td>
+<td class="type">String</td>
 <td class="description">parameter returns whether the connector is inserted or removed</td>
 </tr>
 <tr>
@@ -7770,7 +7779,7 @@ connectorCollectionChange:function (args) {}
 ### connectorSourceChange
 {:#events:connectorsourcechange}
 
-Triggers when the connector's source point is changed
+Triggers when the connectors' source point is changed
 
 
 <table class="params">
@@ -7802,6 +7811,11 @@ Triggers when the connector's source point is changed
 <td class="type">String</td>
 <td class="description">returns the state of connection end point dragging(starting, dragging, completed)</td>
 </tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type">Boolean</td>
+<td class="description">parameter defines whether to cancel the change or not</td>
+</tr>
 </tbody>
 </table>
 
@@ -7818,7 +7832,7 @@ connectorSourceChange:function (args)  {}
 ### connectorTargetChange
 {:#events:connectortargetchange}
 
-Triggers when the connector's target point is changed
+Triggers when the connectors' target point is changed
 
 
 <table class="params">
@@ -7849,6 +7863,11 @@ Triggers when the connector's target point is changed
 <td class="name">dragState</td>
 <td class="type">String</td>
 <td class="description">returns the state of connection end point dragging(starting, dragging, completed)</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type">Boolean</td>
+<td class="description">parameter defines whether to cancel the change or not</td>
 </tr>
 </tbody>
 </table>
@@ -7941,6 +7960,11 @@ Triggers when a context menu item is clicked
 <td class="type">Object</td>
 <td class="description">parameter returns the object that was clicked</td>
 </tr>
+<tr>
+<td class="name">canExecute</td>
+<td class="type">Boolean</td>
+<td class="description">parameter defines whether to execute the click event or not</td>
+</tr>
 </tbody>
 </table>
 
@@ -7971,7 +7995,7 @@ Triggers when a node, connector or diagram model is clicked twice
 <tbody>
 <tr>
 <td class="name">actualObject</td>
-<td class="type">Boolean</td>
+<td class="type">Object</td>
 <td class="description">parameter returns the object that is actually clicked</td>
 </tr>
 <tr>
@@ -8403,7 +8427,7 @@ Triggers when node collection is changed
 </thead>
 <tbody>
 <tr>
-<td class="name">changetype</td>
+<td class="name">changeType</td>
 <td class="type">String</td>
 <td class="description">parameter returns whether the node is to be added or removed</td>
 </tr>
