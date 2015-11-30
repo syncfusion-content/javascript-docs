@@ -29,7 +29,10 @@ The scripts and style sheets that are mandatorily required to render OlapClient 
 2. jquery-1.10.2.min.js
 3. jquery.easing.1.3.min.js
 4. jquery.globalize.min.js
-5. ej.web.all.min.js
+5. rgbcolor.js
+6. StackBlur.js
+7. canvg.js
+8. ej.web.all.min.js
 
 You can find the scripts and style sheets listed above could in any of the following locations:
 
@@ -51,7 +54,10 @@ To initialize a OlapClient widget, define a “div” tag with an appropriate �
     <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-azure/ej.web.all.min.css" rel="stylesheet" type="text/css" />
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="http://cdn.syncfusion.com/js/assets/external/jquery.easing.1.3.min.js" type="text/javascript"></script>
-    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js" type="text/javascript"></script>
+    <script src="http://cdn.syncfusion.com/js/assets/external/jquery.globalize.min.js"></script> 
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/rgbcolor.js"></script> 
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/StackBlur.js"></script>
+    <script type="text/javascript" src="http://gabelerner.github.io/canvg/canvg.js" type="text/javascript"></script>    
     <script src="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/ej.web.all.min.js" type="text/javascript"></script>
 </head>
 
@@ -153,7 +159,7 @@ namespace OlapClientDemo
 
 **Datasource Initialization**
 
-Now, the connection string to connect OLAP Cube, OlapClient and JavaScriptSerializer instances are created immediately inside the main class in `OlapClientServiceController.cs` file.
+Now, the connection string to connect OLAP Cube, OlapClient and JavaScriptSerializer instances are created immediately inside the main class in `OlapClientServiceController.cs` file. Also, the database connection for Saving and Loading operations of reports is provided appropriately. 
 
 {% highlight c# %}
 
@@ -184,6 +190,8 @@ namespace OlapClientDemo
     {
         OlapClient olapClientHelper = new OlapClient();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string conStringforDB = "DataSource=" + HttpContext.Current.Server.MapPath(".").Split(new string[] { "\\api" }, StringSplitOptions.None)[0] + "\\database\\ReportsTable.sdf; Persist Security Info=False", reportTableName = "ReportsTable";
+        OlapChart htmlHelper = new OlapChart();
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         [System.Web.Http.ActionName("InitializeClient")]
         [System.Web.Http.HttpPost]

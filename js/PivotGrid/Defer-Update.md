@@ -11,8 +11,6 @@ documentation: ug
 
 Defer Update support allows you to refresh the control only on-demand and not during every UI interaction. To enable this functionality, set `enableDeferUpdate` property to "true".
 
-The following code example explains on how to enable Defer Update in the PivotGrid control.
-
 {% highlight js %}
 
 $(function()
@@ -37,10 +35,5 @@ function onServiceInvokes(args)
 
 {% endhighlight %}
 
-![](/js/PivotGrid/Defer-Update_images/Defer-Update_images1.png) 
-
-
-
-
-
+![](/js/PivotGrid/Defer-Update_images/defer.png) 
 
