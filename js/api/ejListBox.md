@@ -1,20 +1,23 @@
 ---
 layout: post
-title: API reference for ejListBox
-description: What are the options, methods and events available in Essential JavaScript ListBox.
+title: ejListBox
+description: Methods, members, events available in ejListBox
 documentation: API
-keywords: ejListBox, API, Essential JS ListBox, ListBox
 platform: js
-metaname: 
-metacontent: 
+keywords: ejListView, API, Essential JS ListBox 
 ---
 
 # ejListBox
 
+The ListBox control provides a list of options for users to select from. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
 
-The ListBox widget provides a list options to make user to choose an item from the list. It includes several other HTML elements such as images, textboxes, check box, and radio buttons and so on. It also supports data binding, template options and multi-select options.
+#### Syntax
 
-$(element).ejListBox<span class="signature">(options)</span>
+{% highlight js %}
+
+        $(element).ejListBox(options)
+
+{% endhighlight %}
 
 Example
 {:.example}
