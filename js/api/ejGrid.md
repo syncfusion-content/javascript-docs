@@ -3895,6 +3895,38 @@ $("#Grid").ejGrid("cancelEdit");
 {% endhighlight %}
 
 
+
+### cancelEditCell()
+{:#methods:canceleditcell}
+
+
+Send a cancel request to the edited cell in grid.
+
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends a cancel request to the edited cell in  grid
+gridObj.cancelEditCell();   
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Sends a cancel request to the edited cell in grid
+$("#Grid").ejGrid("cancelEditCell");        
+</script>{% endhighlight %}
+
+
+
+
 ### clearCellSelection()
 {:#methods:clearcellselection}
 
@@ -3973,6 +4005,34 @@ $("#Grid").ejGrid("clearColumnSelection");
 </script>
 
 {% endhighlight %}
+
+
+
+### clearFiltering(field)
+{:#methods:clearfiltering}
+
+It is used to clear all the filtering done.
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.clearFiltering("EmployeeID"); //clears the filtering based on the fieldName passed
+gridObj.clearFiltering();  // clears all the filtering
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>         
+$("#Grid").ejGrid("clearFiltering","EmployeeID");// clears the filtering based on the fieldName passed
+$("#Grid").ejGrid("clearFiltering"); // clears all the filtering
+</script>{% endhighlight %}
 
 
 ### clearSelection(\[index\])
@@ -6042,6 +6102,32 @@ $("#Grid").ejGrid("resetModelCollections");
 </script>{% endhighlight %}
 
 
+### resizeColumns(columnName,width)
+{:#methods:resizecolumns}
+
+Resize the columns by giving column name and width for the corresponding one.
+
+####Example
+{:.example}
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// ResizeColumns
+gridObj.resizeColumns("OrderID",width); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// ResizeColumns
+$("#Grid").ejGrid("resizeColumns","OrderID",width);
+</script>{% endhighlight %}
+
+
 ### rowHeightRefresh()
 {:#methods:rowheightrefresh}
 
@@ -6067,6 +6153,34 @@ gridObj.rowHeightRefresh(); // Resolves row height issue
 <script>         
 // Resolves row height issue
 $("#Grid").ejGrid("rowHeightRefresh");   
+</script>{% endhighlight %}
+
+
+### saveCell()
+{:#methods:savecell}
+
+Save the particular edited cell in grid.
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Save the edited cell
+gridObj.saveCell(); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+
+<script>
+
+// Save the edited cell
+$("#Grid").ejGrid("saveCell);
 </script>{% endhighlight %}
 
 
