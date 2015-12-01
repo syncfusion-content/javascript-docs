@@ -42,7 +42,7 @@ Enum for alignment. 12
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -114,7 +114,7 @@ Enum for the ArrowShapes in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -220,7 +220,7 @@ Enum for the BasicShapes in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -369,7 +369,7 @@ Enum for Map Bing map types
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -441,7 +441,7 @@ Enum for the BPMNActivity in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -513,7 +513,7 @@ Enum for the BPMNBoundary in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -585,7 +585,7 @@ Enum for the BPMNDirections in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -657,7 +657,7 @@ Enum for the BPMNEvents in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -743,7 +743,7 @@ Enum for the BPMNGateways in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -836,7 +836,7 @@ Enum for the BPMNLoops in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -915,7 +915,7 @@ Enum for the BPMNShapes in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -1029,7 +1029,7 @@ Enum for the BPMNTasks in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -1150,7 +1150,7 @@ Enum for the BPMNTriggers in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -1271,7 +1271,7 @@ Enum for ej.mobile.Menu.IOS7.ButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -1350,7 +1350,7 @@ Enum for ej.mobile.Menu.IOS7.CancelButtonColor
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -1436,7 +1436,7 @@ Enum for gauge CharacterType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -1522,7 +1522,7 @@ Enum for ChartOrientations in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -1587,7 +1587,7 @@ Enum for ChartTypes in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -1666,7 +1666,7 @@ Enum for CheckboxState
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -1738,7 +1738,7 @@ Enum for IOS7Color
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -1824,7 +1824,7 @@ Enum for Map color palette
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -1903,7 +1903,7 @@ Enum for ConnectorConstraints in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2031,7 +2031,7 @@ Enum for connector line in Chart data label
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2096,7 +2096,7 @@ Enum for various containerType in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2161,7 +2161,7 @@ Enum for ContentType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2233,7 +2233,7 @@ Enum for Android tabContentType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2305,7 +2305,7 @@ Enum for coordinate unit in Chart annotation
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2377,7 +2377,7 @@ Enum for chart crosshairType.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2442,7 +2442,7 @@ Enum for gauge CustomLabelPositionType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2507,7 +2507,7 @@ Enum for gauge CustomLabelPositionType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2594,7 +2594,7 @@ Enum for various decorator shapes in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2687,7 +2687,7 @@ Enum for the DiagramConstraints in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2801,7 +2801,7 @@ Enum for gauge Directions
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2866,7 +2866,7 @@ Enum for gauge Directions
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -2931,7 +2931,7 @@ Enum for the Dragstate of the connector in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3003,7 +3003,7 @@ Enum for hilopenclose drawmode.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3075,7 +3075,7 @@ Enum for chart drawType mode.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3147,7 +3147,7 @@ Enum for chart edgeLabelPlacement.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3245,7 +3245,7 @@ Enum for the types of exporting in Chart
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3306,7 +3306,7 @@ Enum for the ExportModes in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3371,7 +3371,7 @@ Enum for the FileFormats in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3450,7 +3450,7 @@ Enum for Grid Filter Bar mode
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3515,7 +3515,7 @@ Enum for filtertype
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3580,7 +3580,7 @@ Enum for the FitMode in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3652,7 +3652,7 @@ Enum for Bullet Graph Flow Direction
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3717,7 +3717,7 @@ Enum for the FlowShapes in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3915,7 +3915,7 @@ Enum for Font Style
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -3987,7 +3987,7 @@ Enum for gauge FontStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4073,7 +4073,7 @@ Enum for gauge FontStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4159,7 +4159,7 @@ Enum for chart style of font.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4224,7 +4224,7 @@ Enum for Font Weight
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4303,7 +4303,7 @@ Enum for weight of font.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4375,7 +4375,7 @@ Enum for IOS7FooterLeftButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4454,7 +4454,7 @@ Enum for AndroidFooterLeftButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4533,7 +4533,7 @@ Enum for WindowsFooterLeftButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4612,7 +4612,7 @@ Enum for FlatFooterLeftButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4691,7 +4691,7 @@ Enum for HeaderLeftButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4763,7 +4763,7 @@ Enum for IOS7FooterRightButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4835,7 +4835,7 @@ Enum for AndroidFooterRightButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4907,7 +4907,7 @@ Enum for WindowsFooterRightButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -4979,7 +4979,7 @@ Enum for FlatFooterRightButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5051,7 +5051,7 @@ Enum for HeaderRightButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5116,7 +5116,7 @@ Enum for gauge Frame
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5181,7 +5181,7 @@ Enum for gauge position
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5295,7 +5295,7 @@ Enum for IOS7HeaderLeftButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5374,7 +5374,7 @@ Enum for AndroidHeaderLeftButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5453,7 +5453,7 @@ Enum for WindowsHeaderLeftButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5532,7 +5532,7 @@ Enum for FlatHeaderLeftButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5611,7 +5611,7 @@ Enum for HeaderLeftButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5683,7 +5683,7 @@ Enum for headerLeftButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5755,7 +5755,7 @@ Enum for IOS7HeaderRightButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5827,7 +5827,7 @@ Enum for AndroidHeaderRightButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5899,7 +5899,7 @@ Enum for WindowsHeaderRightButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -5971,7 +5971,7 @@ Enum for FlatHeaderRightButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6043,7 +6043,7 @@ Enum for HeaderRightButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6108,7 +6108,7 @@ Enum for headerRightButtonStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6173,7 +6173,7 @@ Enum for accordion height style
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6245,7 +6245,7 @@ Enum for Horizontal Alignment of elements in Chart
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6317,7 +6317,7 @@ Enum for Horizontal Alignment of elements in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6389,7 +6389,7 @@ Enum for Horizontal Alignment of text in Chart
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6461,7 +6461,7 @@ Enum for Hour format
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6526,7 +6526,7 @@ Enum for toolbar icon name
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6717,7 +6717,7 @@ Enum for ImagePosition
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6782,7 +6782,7 @@ Enum for Tile ImagePosition
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6903,7 +6903,7 @@ Enum for gauge IndicatorType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -6989,7 +6989,7 @@ Enum for gauge IndicatorType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7068,7 +7068,7 @@ Enum for type of indicator in Chart
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7189,7 +7189,7 @@ Enum for chart interval type.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7289,7 +7289,7 @@ Enum for TreeMap items layout mode
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7368,7 +7368,7 @@ Enum for LabelEditMode of text in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7433,7 +7433,7 @@ Enum for chart labelIntersectAction.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7533,7 +7533,7 @@ Enum for Bullet Graph label placement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7598,7 +7598,7 @@ Enum for gauge LabelPlacement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7670,7 +7670,7 @@ Enum for gauge LabelPlacement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7742,7 +7742,7 @@ Enum for chart labelPlacement.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7807,7 +7807,7 @@ Enum for Bullet Graph Label Position
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7872,7 +7872,7 @@ Enum for label position.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -7937,7 +7937,7 @@ Enum for Map Label size
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8002,7 +8002,7 @@ Enum for gauge LabelType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8067,7 +8067,7 @@ Enum for gauge LabelType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8132,7 +8132,7 @@ Enum for Map LayerType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8204,7 +8204,7 @@ Enum for LayoutOrientations in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8283,7 +8283,7 @@ Enum for LayoutTypes in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8355,7 +8355,7 @@ Enum for Map legend icons
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8420,7 +8420,7 @@ Enum for Map Legend mode
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8485,7 +8485,7 @@ Enum for Map Legend type
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8550,7 +8550,7 @@ Enum for linecap.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8622,7 +8622,7 @@ Enum for line join.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8694,7 +8694,7 @@ Enum for LiveTileType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8766,7 +8766,7 @@ Enum for MACDType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8838,7 +8838,7 @@ Enum for gauge MarkerType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -8973,7 +8973,7 @@ Enum for gauge MarkerType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -9108,7 +9108,7 @@ Enum for highlighting and selection mode in Chart
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -9173,7 +9173,7 @@ Enum for mode
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -9238,7 +9238,7 @@ Enum for mode
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -9339,7 +9339,7 @@ Enum for gauge NeedleType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -9425,7 +9425,7 @@ Enum for the NodeConstraints in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -9616,7 +9616,7 @@ Enum for Bullet Graph Orientation
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -9681,7 +9681,7 @@ Enum for chart orientation.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -9746,7 +9746,7 @@ Enum for ProgressbarOrientation
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -9811,7 +9811,7 @@ Enum for RatingOrientation
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -9876,7 +9876,7 @@ Enum for Orientation
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -9941,7 +9941,7 @@ Enum for slider
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10006,7 +10006,7 @@ Enum for gauge OuterCustomLabelPosition
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10085,7 +10085,7 @@ Enum for gauge OuterCustomLabelPosition
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10164,7 +10164,7 @@ Enum for PageOrientations in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10229,7 +10229,7 @@ Enum for Grid Pager Display
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10294,7 +10294,7 @@ Enum for PagerPositionHorizontal
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10359,7 +10359,7 @@ Enum for PagerPositionVertical
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10424,7 +10424,7 @@ Enum for Grid Pager Type
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10489,7 +10489,7 @@ Enum for highlighting or selecting patterns in Chart
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10687,7 +10687,7 @@ Enum for gauge PointerPlacement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10759,7 +10759,7 @@ Enum for gauge PointerPlacement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10831,7 +10831,7 @@ Enum for gauge PointerType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10896,7 +10896,7 @@ Enum for PortConstraints in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -10961,7 +10961,7 @@ Enum for various port shapes in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11040,7 +11040,7 @@ Enum for port visibility in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11126,7 +11126,7 @@ Enum for Map Navigation Control and Legend dock position
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11247,7 +11247,7 @@ Enum for position.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11319,7 +11319,7 @@ Enum for Position
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11384,7 +11384,7 @@ Enum for Position
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11449,7 +11449,7 @@ Enum for Position
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11542,7 +11542,7 @@ Enum for Position
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11607,7 +11607,7 @@ Enum for toolbar position
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11672,7 +11672,7 @@ Enum for RatingPrecision
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11744,7 +11744,7 @@ Enum for chart pyramid mode.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11809,7 +11809,7 @@ Enum for range padding.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11895,7 +11895,7 @@ Enum for gauge RangePlacement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -11967,7 +11967,7 @@ Enum for gauge RangePlacement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -12039,7 +12039,7 @@ Enum for the Region in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -12104,7 +12104,7 @@ Enum for placing annotation in Chart
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -12169,7 +12169,7 @@ Enum for RenderMode
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -12248,7 +12248,7 @@ Enum for gauge ScaleType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -12320,7 +12320,7 @@ Enum for ScrollLimit in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -12392,7 +12392,7 @@ Enum for various connector segments in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -12464,7 +12464,7 @@ Enum for Map selection mode
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -12529,7 +12529,7 @@ Enum to specify the SelectorConstraints in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -12615,7 +12615,7 @@ Enum for the shape of indicator symbol
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -12792,7 +12792,7 @@ Enum for chart shape.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -12983,7 +12983,7 @@ Enum for RatingShape
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -13083,7 +13083,7 @@ Enum for various Shapes of node in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -13190,7 +13190,7 @@ Enum for Menu ShowOn
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -13255,7 +13255,7 @@ Enum for SnapConstraints in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -13362,7 +13362,7 @@ Enum for sortorder
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -13427,7 +13427,7 @@ Enum for IOS7style
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -13506,7 +13506,7 @@ Enum for AndroidStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -13578,7 +13578,7 @@ Enum for windowsstyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -13643,7 +13643,7 @@ Enum for FlatStyle
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -13715,7 +13715,7 @@ Enum for Symbol type.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -13850,7 +13850,7 @@ Enum for type of trendline in Chart.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -13936,7 +13936,7 @@ Enum for the Text Alignment in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14008,7 +14008,7 @@ Enum for gauge TextAlign
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14073,7 +14073,7 @@ Enum for text alignment.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14145,7 +14145,7 @@ Enum for Tile TextAlignment
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14224,7 +14224,7 @@ Enum for TextDecorations in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14303,7 +14303,7 @@ Enum for Tile TextPosition
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14368,7 +14368,7 @@ Enum for TextWrapping in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14440,7 +14440,7 @@ Enum for tick line position in Chart
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14505,7 +14505,7 @@ Enum for chart themes.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14619,7 +14619,7 @@ Enum for Theme
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14691,7 +14691,7 @@ Enum for Bullet Graph Theme3
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14756,7 +14756,7 @@ Enum for gauge Themes
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14821,7 +14821,7 @@ Enum for gauge Themes
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14886,7 +14886,7 @@ Enum for gauge Themes
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -14951,7 +14951,7 @@ Enum for slider
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15016,7 +15016,7 @@ Enum for Bullet Graph tick placement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15081,7 +15081,7 @@ Enum for gauge TickPlacement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15153,7 +15153,7 @@ Enum for gauge TickPlacement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15225,7 +15225,7 @@ Enum for Bullet Graph Tick Position
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15297,7 +15297,7 @@ Enum for gauge TickType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15362,7 +15362,7 @@ Enum for gauge TickType
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15427,7 +15427,7 @@ Enum for Tile Size
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15506,7 +15506,7 @@ Enum for the Tool in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15599,7 +15599,7 @@ Enum for chart series type.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15839,7 +15839,7 @@ Enum for ej.mobile.Menu.IOS7.Type
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15911,7 +15911,7 @@ Enum for ej.mobile.Menu.Android.Type
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -15990,7 +15990,7 @@ Enum for ej.mobile.Menu.Windows.Type
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -16055,7 +16055,7 @@ Enum for chart unit.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -16120,7 +16120,7 @@ Enum for gauge UnitTextPlacement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -16185,7 +16185,7 @@ Enum for gauge UnitTextPlacement
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -16250,7 +16250,7 @@ Enum to specify the userhandle position in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -16357,7 +16357,7 @@ Enum for chart valueType.
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -16436,7 +16436,7 @@ Enum for Vertical Alignment of elements in Chart
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -16508,7 +16508,7 @@ Enum for Vertical Alignment of elements in diagram
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -16580,7 +16580,7 @@ Enum for Vertical Alignment of text in Chart
 
 
 
-#### Properties:
+#### Properties
 
 
 
@@ -16652,7 +16652,7 @@ Enum for zIndex.
 
 
 
-#### Properties:
+#### Properties
 
 
 
