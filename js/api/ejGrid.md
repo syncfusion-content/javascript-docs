@@ -1184,6 +1184,51 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+
+### columns.tooltip `string`
+{:#members:columns-tooltip}
+
+Sets the template for Tooltip in Grid Columns(both header and content)
+
+Default Value:
+{:.param}
+* -
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script type="text/template" id="colTip">
+  {{:text}}
+  </script>
+<script>
+$("#Grid").ejGrid({
+columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, tooltip:"colTip"}] 
+     });
+</script> {% endhighlight %}
+
+
+### columns.clipMode `enum`
+{:#members:columns-clipmode}
+
+Gets or Sets clipmode CSS for Grid Cells (both header and content)
+
+Default Value:
+{:.param}
+* ej.Grid.ClipMode.Clip
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, clipMode: ej.Grid.ClipMode.Ellipsis}]                                
+ });
+</script> {% endhighlight %}
+
 ### columns.type `String`
 {:#members:columns-type}
 
@@ -6596,6 +6641,29 @@ gridObj.updateRecord("OrderID", { OrderID: 10249, EmployeeID: 3 });
 $("#Grid").ejGrid("updateRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });        
 </script>{% endhighlight %}
 
+### windowonresize()
+{:#methods:windowonresize}
+
+It adapts grid to its parent element or to the browsers window.
+
+####Example
+{:.example}
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Used for resizing the grid window
+gridObj.windowonresize(); 
+</script>{% endhighlight %}
+
+{% highlight html %}
+ 
+<script>
+// Used for resizing the grid window
+$("#Grid").ejGrid("windowonresize");        
+</script>{% endhighlight %}
 
 
 ## Events
@@ -9057,6 +9125,12 @@ argument{% endhighlight %}</td>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
@@ -9153,6 +9227,12 @@ argument{% endhighlight %}</td>
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
@@ -9229,6 +9309,12 @@ argument{% endhighlight %}</td>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="name">{% highlight html %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
