@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ejSchedule
-description: Methods, Members, Events available in ejSchedule
+description: Methods, Members and Events available in ejSchedule
 documentation: API
 platform: js
 keywords: ejSchedule, API, Essential JS Schedule
@@ -1277,14 +1277,20 @@ Sets current date of the Schedule. The Schedule displays initially with the date
 
 {% endhighlight %}
 
-### currentView `string`
+### currentView `string/enum`
 {:#members:currentview}
 
-Sets current view of the Schedule. Schedule displays initially with the view that is specified here. The available views are day, week, workweek and month, from where any one of the required view can be set to the Schedule.
+Sets current view of the Schedule. Schedule renders initially with the view that is specified here. The available views are day, week, workweek, month, agenda and customview - from which any one of the required view can be set to the Schedule. It accepts both string or enum values. The enum values that are accepted by currentView are as follows,
+
+* ej.Schedule.CurrentView.Day
+* ej.Schedule.CurrentView.Week
+* ej.Schedule.CurrentView.Workweek
+* ej.Schedule.CurrentView.Month
+* ej.Schedule.CurrentView.CustomView
 
 #### Default Value
 
-* week
+* ej.Schedule.CurrentView.Week
 
 #### Example - To set the current view as Day for Schedule.
 
@@ -1979,14 +1985,17 @@ Sets the minimum date limit to display on the Schedule. Setting minDate with spe
 
 {% endhighlight %}
 
-### orientation `string`
+### orientation `string/enum`
 {:#members:orientation}
 
-Sets the mode of rendering the Schedule either in a vertical or horizontal direction.
+Sets the mode of Schedule rendering either in a vertical or horizontal direction. It accepts either string("vertical" or "horizontal") or enum values as metioned below,
+
+* ej.Schedule.Orientation.Vertical
+* ej.Schedule.Orientation.Horizontal
 
 #### Default Value
 
-* vertical
+* ej.Schedule.Orientation.Vertical
 
 #### Example - To render the Scheduler in horizontal orientation.
 
@@ -3103,7 +3112,10 @@ Sets the start hour time range to be displayed on the Schedule.
 ### timeMode `string/enum`
 {:#members:timemode}
 
-Sets either 12 or 24 hour time mode on the Schedule. It accepts either the enum Value ej.Schedule.TimeMode.Hour12 or ej.Schedule.TimeMode.Hour24.
+Sets either 12 or 24 hour time mode on the Schedule. It accepts either the string value("12" or "24") or the below mentioned enum values.
+
+* ej.Schedule.TimeMode.Hour12
+* ej.Schedule.TimeMode.Hour24
 
 #### Default Value
 
@@ -3610,7 +3622,7 @@ To customize the tooltip display based on your requirements.
 ### deleteAppointment(guid)
 {:#methods:deleteappointment}
 
-It is used to delete the appointment based on the id argument passed along with this method.
+This method is used to delete the appointment based on the guid value passed to it.
 
 <table class="params">
     <thead>
@@ -3622,9 +3634,9 @@ It is used to delete the appointment based on the id argument passed along with 
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.id</td>
-            <td class="type">number</td>
-            <td class="description">id value of the appointment</td>
+            <td class="name">guid</td>
+            <td class="type">string</td>
+            <td class="description">guid value of an appointment element</td>
         </tr>
     </tbody>
 </table>
@@ -3691,7 +3703,7 @@ schObj.destroy(); // destroy the schedule
 {% endhighlight %}
 
 
-### exportSchedule()
+### exportSchedule(action, serverEvent, id)
 {:#methods:exportschedule}
 
 Exports the appointments from the Schedule control.
@@ -3706,19 +3718,19 @@ Exports the appointments from the Schedule control.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.action</td>
+            <td class="name">action</td>
             <td class="type">string</td>
-            <td class="description">To refer the controller action name to redirect. (For MVC)</td>
+            <td class="description">It refers the controller action name to redirect. (For MVC)</td>
         </tr>
         <tr>
-            <td class="name">argument.serverEvent</td>
+            <td class="name">serverEvent</td>
             <td class="type">string</td>
-            <td class="description">To refer the server event name.(For ASP)</td>
+            <td class="description">It refers the server event name.(For ASP)</td>
         </tr>
         <tr>
-            <td class="name">argument.id</td>
-            <td class="type">string</td>
-            <td class="description">To pass the id of an appointment, in case of a single appointment to be exported. Otherwise, it takes the null value.</td>
+            <td class="name">id</td>
+            <td class="type">string/number</td>
+            <td class="description">Pass the id of an appointment, in case if a single appointment needs to be exported. Otherwise, it takes the null value.</td>
         </tr>
     </tbody>
 </table>
@@ -3765,7 +3777,7 @@ schObj.exportSchedule("ActionName","ExportToICS", 101); // To Export a single ap
 
 {% endhighlight %}
 
-### filterAppointments ()
+### filterAppointments(filterConditions)
 {:#methods:filterappointments}
 
 
@@ -3781,9 +3793,9 @@ Searches the appointments from appointment list of Schedule control.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.filterConditions</td>
-            <td class="type">object</td>
-            <td class="description">filterConditions value of the filter collections for appointments.</td>
+            <td class="name">filterConditions</td>
+            <td class="type">array</td>
+            <td class="description">Holds array of one or more conditional objects for filtering the appointments based on it.</td>
         </tr>
     </tbody>
 </table>
@@ -3900,7 +3912,7 @@ var appointments=schObj.getAppointments(); // Gets the appointments list of Sche
 {:#methods:print}
 
 
-Prints the Schedule.
+Prints the Scheduler.
 
 #### Example
 
@@ -3951,7 +3963,7 @@ schObj.print();
 ### refreshScroller()
 {:#methods:refreshscroller}
 
-Refreshes the Scroller while using Schedule control in some other controls.
+Refreshes the Scroller within Scheduler while using it with some other controls or application.
 
 #### Example
 
@@ -3968,7 +3980,7 @@ schObj.refreshScroller(); // To refresh scroller while using Schedule control in
 {% endhighlight %}
 
 
-### saveAppointment(obj)
+### saveAppointment(appointmentObject)
 {:#methods:saveappointment}
 
 It is used to save the appointment. The appointment obj is based on the argument passed along with this method.
@@ -3983,9 +3995,9 @@ It is used to save the appointment. The appointment obj is based on the argument
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.obj</td>
+            <td class="name">appointmentObject</td>
             <td class="type">object</td>
-            <td class="description">obj of the appointment</td>
+            <td class="description">appointment object which includes appointment details</td>
         </tr>
     </tbody>
 </table>
@@ -4021,18 +4033,29 @@ $('#Schedule').ejSchedule({
                     endTimeZone: "EndTimeZone"
         }                            
   });
-var schObj = $("#Schedule").data("ejSchedule");
-schObj.saveAppointment(obj); //obj contains collection of appointment. 
+  var obj = {
+              Id: 108,
+              Subject: "Talk with Nature",
+              StartTime: new Date(2014, 4, 5, 10, 00),
+              EndTime: new Date(2014, 4, 5, 12, 00),
+              AllDay:true,
+              Recurrence:false,
+              RecurrenceRule:null,
+              StartTimeZone: "UTC +00:00",
+              EndTimeZone: "UTC +00:00
+            };
+  var schObj = $("#Schedule").data("ejSchedule");
+  schObj.saveAppointment(obj); //obj contains collection of appointment. 
 </script>
 
 {% endhighlight %}
 
 
 
-### searchAppointments()
+### searchAppointments(searchString, field, operator, ignoreCase)
 {:#methods:searchappointments}
 
-Searches the appointments from appointment list of Schedule control.
+Searches the appointments from the appointment list of Schedule control.
 
 <table class="params">
     <thead>
@@ -4044,24 +4067,24 @@ Searches the appointments from appointment list of Schedule control.
     </thead>
     <tbody>
         <tr>
-            <td class="name">argument.searchString</td>
-            <td class="type">string</td>
-            <td class="description">searchString value of the search word in the appointments.</td>
+            <td class="name">searchString</td>
+            <td class="type">object/string</td>
+            <td class="description">Defines the search word or the filter condition, based on which the appointments are filtered from the list.</td>
         </tr>
         <tr>
-            <td class="name">argument.fields</td>
+            <td class="name">field</td>
             <td class="type">string</td>
-            <td class="description">field value of fields that requires search.</td>
+            <td class="description">Defines the field name on which the search is to be made.</td>
         </tr>
         <tr>
-            <td class="name">argument.filterOperator</td>
-            <td class="type">string</td>
-            <td class="description">filterOperator value of the search operation.</td>
+            <td class="name">operator</td>
+            <td class="type">enum/string</td>
+            <td class="description">Defines the filterOperator value for the search operation.</td>
         </tr>
         <tr>
-            <td class="name">argument.ignoreCase</td>
+            <td class="name">ignoreCase</td>
             <td class="type">boolean</td>
-            <td class="description">ignoreCase value of the case.</td>
+            <td class="description">Defines the ignoreCase value for performing the search operation.</td>
         </tr>
     </tbody>
 </table>
@@ -4139,7 +4162,7 @@ schObj.refresh(); // To refresh the Schedule control within the client side even
 ### refreshAppointment()
 {:#methods:refreshappointment}
 
-To Refresh only the Schedule control appointments.
+Refreshes only the appointments within the Schedule control.
 
 #### Example
 
