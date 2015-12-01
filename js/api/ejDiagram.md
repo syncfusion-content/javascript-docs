@@ -5958,12 +5958,12 @@ Add a phase to a swimlane at runtime
 		<tr>
 			<td class="name">name</td>
 			<td class="type">String</td>
-			<td class="description">of the swimlane to add the phase</td>
+			<td class="description">name of the swimlane to which the phase will be added</td>
 		</tr>
 		<tr>
 			<td class="name">options</td>
 			<td class="type">Object</td>
-			<td class="description">to define the phase to be added</td>
+			<td class="description">JSON object to define the phase to be added</td>
 		</tr>
 	</tbody>
 </table>
@@ -5997,7 +5997,7 @@ Add a collection of ports to the node specified by name
 		<tr>
 			<td class="name">name</td>
 			<td class="type">String</td>
-			<td class="description">to identify the node from the model</td>
+			<td class="description">name of the node to which the ports have to be added</td>
 		</tr>
 		<tr>
 			<td class="name">ports</td>
@@ -6265,7 +6265,7 @@ Export the diagram as downloadable files or as data
 		<tr>
 			<td class="name">options</td>
 			<td class="type">Object [optional]</td>
-			<td class="description">to export the desired region of diagram to the desired formats</td>
+			<td class="description">options to export the desired region of diagram to the desired formats</td>
 		</tr>
 		<tr>
 			<td class="name">options.fileName</td>
@@ -6290,7 +6290,7 @@ Export the diagram as downloadable files or as data
 		<tr>
 			<td class="name">options.bounds</td>
 			<td class="type">Object</td>
-			<td class="description">to set the custom bounds that is to be exported</td>
+			<td class="description">to export any custom region of diagram</td>
 		</tr>
 		<tr>
 			<td class="name">options.margin</td>
@@ -6326,7 +6326,7 @@ diagram.exportDiagram(options);
 ### findNode(name)
 {:#methods:findnode}
 
-Find a node/connector by its name
+Read a node/connector object by its name
 
 <table class="params">
 	<thead>
@@ -6340,7 +6340,7 @@ Find a node/connector by its name
 		<tr>
 			<td class="name">name</td>
 			<td class="type">String</td>
-			<td class="description">of the node/connector that is to be found</td>
+			<td class="description">name of the node/connector that is to be identified</td>
 		</tr>
 	</tbody>
 </table>
@@ -6435,17 +6435,17 @@ Insert a label into a node's label collection at runtime
 		<tr>
 			<td class="name">name</td>
 			<td class="type">String</td>
-			<td class="description">of the node to insert the label</td>
+			<td class="description">name of the node to which the label has to be inserted</td>
 		</tr>
 		<tr>
 			<td class="name">label</td>
 			<td class="type">Object</td>
-			<td class="description">to be added to the node specified by name</td>
+			<td class="description">JSON to define the new label</td>
 		</tr>
 		<tr>
 			<td class="name">index</td>
 			<td class="type">Number [optional]</td>
-			<td class="description">to insert the label into the node</td>
+			<td class="description">index to insert the label into the node</td>
 		</tr>
 	</tbody>
 </table>
@@ -6497,7 +6497,7 @@ Load the diagram
 		<tr>
 			<td class="name">data</td>
 			<td class="type">Object</td>
-			<td class="description">that is to be loaded as diagram</td>
+			<td class="description">JSON data to load the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -6553,7 +6553,7 @@ Move the selected objects by either one pixel or by the pixels specified through
 		<tr>
 			<td class="name">delta</td>
 			<td class="type">Number [optional]</td>
-			<td class="description">specifies the number of pixels by which the selected objects to be moved</td>
+			<td class="description">specifies the number of pixels by which the selected objects have to be moved</td>
 		</tr>
 	</tbody>
 </table>
@@ -6587,7 +6587,7 @@ Paste the selected object from internal clipboard to diagram
 		<tr>
 			<td class="name">object</td>
 			<td class="type">Object [optional]</td>
-			<td class="description">to be added</td>
+			<td class="description">object to be added to diagram</td>
 		</tr>
 		<tr>
 			<td class="name">rename</td>
@@ -6649,7 +6649,7 @@ diagram.redo();
 ### refresh()
 {:#methods:refresh}
 
-Refresh diagram at runtime
+Refresh the diagram at runtime
 
 #### Example
 
@@ -6663,7 +6663,7 @@ diagram.refresh();
 
 {% endhighlight %}
 
-### remove(node)
+### remove(\[node\])
 {:#methods:remove}
 
 Remove either the given node/connector or the selected element from diagram
@@ -6679,8 +6679,8 @@ Remove either the given node/connector or the selected element from diagram
 	<tbody>
 		<tr>
 			<td class="name">node</td>
-			<td class="type">Object</td>
-			<td class="description">node/connector to be removed</td>
+			<td class="type">Object [optional]</td>
+			<td class="description">the node/connector to be removed from diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -6714,7 +6714,7 @@ Remove a particular object from selection list
 		<tr>
 			<td class="name">node</td>
 			<td class="type">Object</td>
-			<td class="description">node/connector to be removed from selection list</td>
+			<td class="description">the node/connector to be removed from selection list</td>
 		</tr>
 	</tbody>
 </table>
@@ -6923,7 +6923,7 @@ diagram.spaceDown();
 ### startLabelEdit(node, label)
 {:#methods:startlabeledit}
 
-Start the editing of the specified label
+Move the specified label to edit mode
 
 <table class="params">
 	<thead>
@@ -7011,7 +7011,7 @@ Update diagram at runtime
 		<tr>
 			<td class="name">options</td>
 			<td class="type">Object</td>
-			<td class="description">to specify the properties of diagram to be updated</td>
+			<td class="description">JSON to specify the diagram properties that have to be modified</td>
 		</tr>
 	</tbody>
 </table>
@@ -7046,12 +7046,12 @@ Update Connectors at runtime
 		<tr>
 			<td class="name">name</td>
 			<td class="type">String</td>
-			<td class="description">to identify the connector from the model</td>
+			<td class="description">name of the connector to be updated</td>
 		</tr>
 		<tr>
 			<td class="name">options</td>
 			<td class="type">Object</td>
-			<td class="description">to specify the connector properties that have to be updated</td>
+			<td class="description">JSON to specify the connector properties that have to be updated</td>
 		</tr>
 	</tbody>
 </table>
@@ -7095,7 +7095,7 @@ Update the given label at runtime
 		<tr>
 			<td class="name">options</td>
 			<td class="type">Object</td>
-			<td class="description">the new properties of the label</td>
+			<td class="description">JSON to specify the label properties that have to be updated</td>
 		</tr>
 	</tbody>
 </table>
@@ -7118,7 +7118,7 @@ diagram.updateLabel(node.name,node.labels[0],label);
 ### updateNode(name, options)
 {:#methods:updatenode}
 
-Update Node with its modified properties at runtime
+Update nodes at runtime
 
 <table class="params">
 	<thead>
@@ -7132,12 +7132,12 @@ Update Node with its modified properties at runtime
 		<tr>
 			<td class="name">name</td>
 			<td class="type">String</td>
-			<td class="description">to identify the Node from the model</td>
+			<td class="description">name of the node that is to be updated</td>
 		</tr>
 		<tr>
 			<td class="name">options</td>
 			<td class="type">Object</td>
-			<td class="description">to specify the properties of node that have to be updated</td>
+			<td class="description">JSON to specify the properties of node that have to be updated</td>
 		</tr>
 	</tbody>
 </table>
@@ -7181,7 +7181,7 @@ Update a port with its modified properties at runtime
 		<tr>
 			<td class="name">options</td>
 			<td class="type">Object</td>
-			<td class="description">the new properties of the port</td>
+			<td class="description">JSON to specify the properties of the port that have to be updated</td>
 		</tr>
 	</tbody>
 </table>
@@ -7217,7 +7217,7 @@ Update the specified node as selected object
 		<tr>
 			<td class="name">name</td>
 			<td class="type">String</td>
-			<td class="description">to identify the object from the model</td>
+			<td class="description">name of the node to be updated as selected object</td>
 		</tr>
 	</tbody>
 </table>
@@ -7251,7 +7251,7 @@ Update the selection at runtime
 		<tr>
 			<td class="name">showUserHandles</td>
 			<td class="type">Boolean [optional]</td>
-			<td class="description">to specify whether the selected object is being dragged or not</td>
+			<td class="description">to specify whether to show the user handles or not</td>
 		</tr>
 	</tbody>
 </table>
