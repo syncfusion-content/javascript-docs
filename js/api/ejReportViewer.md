@@ -12,11 +12,10 @@ metacontent:
 
 The ReportViewer is a visualization control to view Microsoft SSRS RDL/RDLC files on a web page and it is powered by HTML5/JavaScript. It has support to bind DataSources/Parameters to the Reports and also supports exporting, paging, zooming and printing the report.
 
-#### Syntax
-
 $(element).ejReportViewer<span class="signature">()</span>
 
-#### Example
+Example
+{:.example}
 
 {% highlight html %}
 
@@ -28,7 +27,8 @@ $(element).ejReportViewer<span class="signature">()</span>
 
 {% endhighlight %}
 
-#### Requires
+Requires
+{:.require}
 
 * module:jQuery
 
@@ -86,11 +86,13 @@ $(element).ejReportViewer<span class="signature">()</span>
 
 Gets or sets the list of data sources for the RDLC report.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * []
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -112,11 +114,13 @@ Gets or sets the list of data sources for the RDLC report.
 
 Gets or sets the name of the data source.
 
-####Default Value:
+Default Value:
+{:.param}
 
-* ""
+* empty
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
 
@@ -138,11 +142,13 @@ Gets or sets the name of the data source.
 
 Gets or sets the values of data source.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * null
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
 
@@ -169,11 +175,13 @@ Specifies the export settings.
 
 Specifies the excel export format.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * ej.ReportViewer.ExcelFormats.Excel97to2003
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -192,11 +200,13 @@ Specifies the excel export format.
 
 Specifies the export formats.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * ej.ReportViewer.ExportOptions.All
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -216,11 +226,13 @@ Specifies the export formats.
 
 Specifies the word export format.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * ej.ReportViewer.WordFormats.Doc
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -239,11 +251,13 @@ Specifies the word export format.
 
 Specifies the locale for report viewer.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * "en-US"
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -267,11 +281,13 @@ Specifies the page settings.
 
 Specifies the print layout orientation.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * null
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -290,11 +306,13 @@ Specifies the print layout orientation.
 
 Specifies the paper size of print layout.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * null
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -314,11 +332,13 @@ Specifies the paper size of print layout.
 
 Gets or sets the list of parameters associated with the report.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * []
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -342,11 +362,13 @@ Gets or sets the list of parameters associated with the report.
 
 Gets or sets the parameter labels.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * null
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
 
@@ -370,11 +392,13 @@ Gets or sets the parameter labels.
 
 Gets or sets the name of the parameter.
 
-####Default Value:
+Default Value:
+{:.param}
 
-* ""
+* empty
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
 
@@ -398,11 +422,13 @@ Gets or sets the name of the parameter.
 
 Gets or sets whether the parameter allows nullable value or not.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * false
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
 
@@ -426,11 +452,13 @@ Gets or sets whether the parameter allows nullable value or not.
 
 Gets or sets the prompt message associated with the specified parameter.
 
-####Default Value:
+Default Value:
+{:.param}
 
-* ""
+* empty
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
 
@@ -454,11 +482,13 @@ Gets or sets the prompt message associated with the specified parameter.
 
 Gets or sets the parameter values.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * null
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
 
@@ -482,11 +512,13 @@ Gets or sets the parameter values.
 
 Enables and disables the print mode.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * false
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -505,11 +537,13 @@ Enables and disables the print mode.
 
 Specifies the processing mode of the report.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * ej.ReportViewer.ProcessingMode.Remote
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -525,11 +559,13 @@ Specifies the processing mode of the report.
 
 Specifies the render layout.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * ej.ReportViewer.RenderMode.Default
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -545,11 +581,13 @@ Specifies the render layout.
 
 Gets or sets the path of the report file.
 
-####Default Value:
+Default Value:
+{:.param}
 
-* ""
+* empty
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
 
@@ -565,11 +603,13 @@ Gets or sets the path of the report file.
 
 Gets or sets the reports server url.
 
-####Default Value:
+Default Value:
+{:.param}
 
-* ""
+* empty
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -585,11 +625,13 @@ Gets or sets the reports server url.
 
 Specifies the report Web API service url.
 
-####Default Value:
+Default Value:
+{:.param}
 
-* ""
+* empty
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
 
@@ -610,11 +652,13 @@ Specifies the toolbar settings.
 
 Fires when user click on toolbar item in the toolbar.
 
-####Default Value:
+Default Value:
+{:.param}
 
-* null
+* empty
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -633,11 +677,13 @@ Fires when user click on toolbar item in the toolbar.
 
 Specifies the toolbar items.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * ej.ReportViewer.ToolbarItems.All
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -656,11 +702,13 @@ Specifies the toolbar items.
 
 Shows or hides the toolbar.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * true
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -679,11 +727,13 @@ Shows or hides the toolbar.
 
 Shows or hides the tooltip of toolbar items.
 
-####Default Value:
+Default Value:
+{:.param}
 
 * true
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -702,11 +752,13 @@ Shows or hides the tooltip of toolbar items.
 
 Specifies the toolbar template ID.
 
-####Default Value:
+Default Value:
+{:.param}
 
-* null
+* empty
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -725,11 +777,13 @@ Specifies the toolbar template ID.
 
 Gets or sets the zoom factor for report viewer.
 
-#### Default Value:
+Default Value:
+{:.param}
 
 * 1
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -747,7 +801,8 @@ Gets or sets the zoom factor for report viewer.
 
 Export the report to the specified format.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -764,7 +819,8 @@ Export the report to the specified format.
 
 Fit the report page to the container.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -781,7 +837,8 @@ Fit the report page to the container.
 
 Fit the report page height to the container.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -798,7 +855,8 @@ Fit the report page height to the container.
 
 Fit the report page width to the container.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -815,7 +873,8 @@ Fit the report page width to the container.
 
 Get the available datasets name of the rdlc report.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -832,7 +891,8 @@ Get the available datasets name of the rdlc report.
 
 Get the available parameters of the report.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -849,7 +909,8 @@ Get the available parameters of the report.
 
 Navigate to first page of report.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
 
@@ -866,7 +927,8 @@ Navigate to first page of report.
 
 Navigate to last page of the report.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -883,7 +945,8 @@ Navigate to last page of the report.
 
 Navigate to next page from the current page.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -901,7 +964,8 @@ Navigate to next page from the current page.
 
 Go to specific page index of the report.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -918,7 +982,8 @@ Go to specific page index of the report.
 
 Navigate to previous page from the current page.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -935,7 +1000,8 @@ Navigate to previous page from the current page.
 
 Print the report.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -952,7 +1018,8 @@ Print the report.
 
 Apply print layout to the report.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -969,7 +1036,8 @@ Apply print layout to the report.
 
 Refresh the report.
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -1036,7 +1104,8 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -1110,7 +1179,8 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -1178,7 +1248,8 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -1259,7 +1330,8 @@ reportParameters{% endhighlight %}</td>
 </tbody>
 </table>
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -1334,7 +1406,8 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -1402,7 +1475,8 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
@@ -1476,7 +1550,8 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-####Example
+Example
+{:.example}
 
 {% highlight html %}
  
