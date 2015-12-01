@@ -7,7 +7,6 @@ platform: js
 keywords: diagram, ejDiagram, diagram api, syncfusion
 ---
 
-
 # ejDiagram
 
 The diagram control provides 2D surface to visualize the data as shapes, lines, text and images. It can be configured to DOM element such as DIV.
@@ -27,7 +26,6 @@ $("#diagram").ejDiagram();
 
 {% endhighlight %}
 
-
 #### Requires
 
 * module:jquery.js
@@ -44,7 +42,6 @@ $("#diagram").ejDiagram();
 * module:ej.diagramtools.js
 * module:ej.diagramlayout.js
 * module:ej.matrix.js
-
 
 ## Members
 
@@ -6050,14 +6047,14 @@ Add a label to a node at runtime
 </thead>
 <tbody>
 <tr>
-<td class="name">name</td>
+<td class="name">nodeName</td>
 <td class="type">string</td>
-<td class="description">of the node to add a label</td>
+<td class="description">name of the node to which label will be added</td>
 </tr>
 <tr>
-<td class="name">label</td>
+<td class="name">newLabel</td>
 <td class="type">Object</td>
-<td class="description">to be added to the node specified by name</td>
+<td class="description">JSON for the new label to be added</td>
 </tr>
 </tbody>
 </table>
@@ -6612,7 +6609,7 @@ Insert a label into a node's label collection at runtime
 </tr>
 <tr>
 <td class="name">index</td>
-<td class="type">Number</td>
+<td class="type">Number [optional]</td>
 <td class="description"> to insert the label into the node</td>
 </tr>
 </tbody>
