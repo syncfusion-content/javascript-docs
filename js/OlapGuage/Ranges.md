@@ -3,318 +3,117 @@ layout: post
 title: Ranges
 description: ranges
 platform: js
-control: OLAP Gauge
+control: OlapGauge
 documentation: ug
 ---
 
 # Ranges
 
-**Ranges** are objects that highlight a range of values and can display different ranges in different colors. You can customize **Ranges** using various attributes such as height, color of the range. 
+## Adding Range Collection
 
-## Distance from Scale
-
-You can set the distance between the **ranges** and scales in **OlapGauge** using “**distanceFromScale”**.
+Range collection can be directly added to the scales option within the OlapGauge widget as an array.
 
 {% highlight js %}
 
-$(function() {
-    $("#OlapGauge1").ejOlapGauge({
-        url: "../wcf/OlapGaugeService.svc",
-        enableTooltip: true,
-        backgroundColor: "transparent",
-        scales: [{
-            showRanges: true,
-            radius: 150,
-            showScaleBar: true,
-            size: 1,
-            border: {
-                width: 0.5
-            },
-            showIndicators: true,
-            showLabels: true,
-            pointers: [{
-                type: "needle",
-                showBackNeedle: true,
-                backNeedleLength: 20,
-                length: 120,
-                width: 9
-            }, {
-                type: "marker",
-                markerType: "diamond",
-                distanceFromScale: 5,
-                placement: "center",
-                backgroundColor: "#29A4D9",
-                length: 25,
-                width: 15
-            }],
-            ticks: [{
-                type: "major",
-                distanceFromScale: 15,
-                height: 16,
-                width: 1,
-                color: "#8c8c8c"
-            }, {
-                type: "minor",
-                height: 6,
-                width: 1,
-                distanceFromScale: 2,
-                color: "#8c8c8c"
-            }],
-            labels: [{
-                color: "#8c8c8c"
-            }],
-            ranges: [{ distanceFromScale: -10,
-                    backgroundColor: "#fc0606",
-                    border: {
-                        color: "#fc0606"
-                    }
-            }, { distanceFromScale: -10,
-            }],
-            customLabels: [{
-                position: {
-                    x: 180,
-                    y: 290
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 320
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 150
-                },
-                font: {
-                    size: "12px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }]
+$("#OlapGauge1").ejOlapGauge({
+    url: "../OlapGauge",
+    //...
+    scales: [{
+        //...
+        ranges: [{
+            distanceFromScale: 10
         }]
-    });
+    }],
+    //...
 });
 
 {% endhighlight %}
 
-## Style Customization 
+## Appearance Customization
 
-You can set the background color for the **ranges** in **OlapGauge** using “**backgroundColor**”.
+The appearance of the range can be customized through the following properties.
+
+* **startValue** – defines the start position of the range.
+* **endValue** – defines the end position of the range.
+* **startWidth** – sets the width at starting position of the range.
+* **endWidth** – sets the width at ending position of the range.
+* **backgroundColor** – sets the background color of the range.
+* **border** – sets the height and width of the border of the range.
+* **placement** – sets the position of the range.
+* **distanceFromScale** – sets the distance between the range and scale.
+
+Positioning the range could be set either through `placement` or `distanceFromScale` property. By default, placement takes the value "near", whereas other enumeration values available are "far" and "center".
 
 {% highlight js %}
 
-$(function() {
-    $("#OlapGauge1").ejOlapGauge({
-        url: "../wcf/OlapGaugeService.svc",
-        enableTooltip: true,
-        backgroundColor: "transparent",
-        scales: [{
-            showRanges: true,
-            radius: 150,
-            showScaleBar: true,
-            size: 1,
+$("#OlapGauge1").ejOlapGauge({
+    url: "../OlapGauge",
+    //...
+    scales: [{
+        //...
+        ranges: [{
+            startValue: 20,
+            endValue: 50,
+            startWidth: 2,
+            endWidth: 6,
+            backgroundColor: "yellow",
             border: {
-                width: 0.5
+                color: "red",
+                width: 2
             },
-            showIndicators: true,
-            showLabels: true,
-            pointers: [{
-                type: "needle",
-                showBackNeedle: true,
-                backNeedleLength: 20,
-                length: 120,
-                width: 9
-            }, {
-                type: "marker",
-                markerType: "diamond",
-                distanceFromScale: 5,
-                placement: "center",
-                backgroundColor: "#29A4D9",
-                length: 25,
-                width: 15
-            }],
-            ticks: [{
-                type: "major",
-                distanceFromScale: 15,
-                height: 16,
-                width: 1,
-                color: "#8c8c8c"
-            }, {
-                type: "minor",
-                height: 6,
-                width: 1,
-                distanceFromScale: 2,
-                color: "#8c8c8c"
-            }],
-            labels: [{
-                color: "#8c8c8c"
-            }],
-            ranges: [{
-                distanceFromScale: -5,
-                backgroundColor: "black",
-                border: {
-                    color: "red"
-                }
-            }, {
-                distanceFromScale: -5,
-            }],
-            customLabels: [{
-                position: {
-                    x: 180,
-                    y: 290
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 320
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 150
-                },
-                font: {
-                    size: "12px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }]
+            distanceFromScale: 20
+        }, {
+            startValue: 50,
+            endValue: 100,
+            startWidth: 2,
+            endWidth: 7,
+            backgroundColor: "blue",
+            border: {
+                color: "green",
+                width: 2
+            },
+            placement: "near",
         }]
-    });
+    }],
+    //...
 });
 
 {% endhighlight %}
 
-![](/js/OlapGauge/Ranges_images/Ranges_img1.png) 
+![](Ranges_images/range customization.png) 
 
-## Size Setting
+N> On setting both the position properties - "distanceFromScale" and "placement" for a range, the value set in "distanceFromScale" is given preference.
 
-You can customize the **Range size** using “**size**” property.
+## Multiple Ranges 
+Multiple ranges can be added by placing an array of objects in `ranges` option.
 
 {% highlight js %}
 
-$(function() {
-    $("#OlapGauge1").ejOlapGauge({
-        url: "../wcf/OlapGaugeService.svc",
-        enableTooltip: true,
-        backgroundColor: "transparent",
-        scales: [{
-            showRanges: true,
-            radius: 150,
-            showScaleBar: true,
-            size: 1,
-            border: {
-                width: 0.5
-            },
-            showIndicators: true,
-            showLabels: true,
-            pointers: [{
-                type: "needle",
-                showBackNeedle: true,
-                backNeedleLength: 20,
-                length: 120,
-                width: 9
-            }, {
-                type: "marker",
-                markerType: "diamond",
-                distanceFromScale: 5,
-                placement: "center",
-                backgroundColor: "#29A4D9",
-                length: 25,
-                width: 15
-            }],
-            ticks: [{
-                type: "major",
-                distanceFromScale: 15,
-                height: 16,
-                width: 1,
-                color: "#8c8c8c"
-            }, {
-                type: "minor",
-                height: 6,
-                width: 1,
-                distanceFromScale: 2,
-                color: "#8c8c8c"
-            }],
-            labels: [{
-                color: "#8c8c8c"
-            }],
-            ranges: [{
-                distanceFromScale: -5,
-                size: 7,
-                backgroundColor: "#fc0606",
-                border: {
-                    color: "#fc0606"
-                }
-            }, {
-                distanceFromScale: -5,
-                size: 7
-            }],
-            customLabels: [{
-                position: {
-                    x: 180,
-                    y: 290
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 320
-                },
-                font: {
-                    size: "10px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }, {
-                position: {
-                    x: 180,
-                    y: 150
-                },
-                font: {
-                    size: "12px",
-                    fontFamily: "Segoe UI",
-                    fontStyle: "Normal"
-                },
-                color: "#666666"
-            }]
+$("#OlapGauge1").ejOlapGauge({
+    url: "../OlapGauge",
+    //...
+    scales: [{
+        //...
+        ranges: [{
+            startValue: 0,
+            endValue: 10,
+            backgroundColor: "Green",
+            distanceFromScale: -5
+        }, {
+            startValue: 10,
+            endValue: 30,
+            backgroundColor: "yellow",
+            distanceFromScale: -5
+        }, {
+            startValue: 30,
+            endValue: 50,
+            backgroundColor: "red",
+            distanceFromScale: -5
         }]
-    });
+    }],
+    //...
 });
 
 {% endhighlight %}
 
-![](/js/OlapGauge/Ranges_images/Ranges_img2.png) 
-
+![](Ranges_images/multiple ranges.png) 

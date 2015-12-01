@@ -9,26 +9,21 @@ documentation: ug
 
 # Measure Groups 
 
-In Cube Dimension Browser tree-view can be viewed in a filtered manner through the [Measure Groups](/js/api/ejOlapClient#members:enablemeasuregroups) option. This feature allows you to view the list of measure groups and dimensions associated with the selected measure group from the cube.
+In Cube Dimension Browser, treeview can be viewed in a filtered manner through the Measure Groups option. This feature allows you to view the list of measure groups and dimensions associated with the selected measure group from the cube. For enabling this, the [`enableMeasureGroups`](/js/api/ejolapclient#members:enablemeasuregroups) property is set to true. By default, its value is set to false.
 
 {% highlight js %}
 
 $("#OlapClient").ejOlapClient({
-    url: "../wcf/OlapClientService.svc",
+    url: "../OlapClient",
+    title: "OLAP Browser",
     enableMeasureGroups: true
 });
 
 {% endhighlight %}
 
-On selecting a measure group from the drop-down list, the Cube Dimension Browser tree-view displays the related dimensions as follows.
+On selecting a measure group from the drop-down list, the Cube Dimension Browser treeview displays the related dimensions as follows.
 
-![](/js/OlapClient/Measure-Groups_images/Measure-Groups_img1.png)
+![](Measure-Groups_images/beforemeasure.png)
 
-OlapClient with Measure Groups in a drop-down list
-{:.caption}
-
-![](/js/OlapClient/Measure-Groups_images/Measure-Groups_img2.png)
-
-OlapClient with filtered tree-view in Cube Dimension Browser
-{:.caption}
+![](Measure-Groups_images/aftermeasure.png)
 

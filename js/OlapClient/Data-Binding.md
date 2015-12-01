@@ -227,6 +227,8 @@ namespace OlapClientDemo
     {
         OlapClient olapClientHelper = new OlapClient();
         string connectionString = "Data Source=http://bi.syncfusion.com/olap/msmdpump.dll; Initial Catalog=Adventure Works DW 2008 SE;";
+        string conStringforDB = "DataSource=" + HttpContext.Current.Server.MapPath(".").Split(new string[] { "\\wcf" }, StringSplitOptions.None)[0] + "\\database\\ReportsTable.sdf; Persist Security Info=False", reportTableName = "ReportsTable";
+        OlapChart htmlHelper = new OlapChart();       
         JavaScriptSerializer serializer = new JavaScriptSerializer();
         //This method provides the required information from the server side for initializing the OlapClient.
         public Dictionary < string, object > InitializeClient(string action, string customObject, string clientParams)
