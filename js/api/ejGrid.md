@@ -460,6 +460,31 @@ queryString: "EmployeeID",
 </script>
 {% endhighlight %}
 
+### columnLayout `enum`
+{:#members:columnlayout}
+
+Used to enable or disable static width settings for column. If the columnLayout is set as fixed, then column width will be static.
+
+#### Default Value:
+{:.param}
+* ej.Grid.ColumnLayout.Auto
+
+#### Example
+{:.example}
+{% highlight html %}           
+<div id="Grid"></div>
+<script>
+$("#Grid").ejGrid({
+  dataSource:window.gridData,
+   columnLayout:ej.Grid.ColumnLayout.Fixed,
+    columns: [
+       { field: "OrderID", headerText: "Order ID", isPrimaryKey: true, width: 80  },
+       { field: "CustomerID", headerText: "Customer ID", width: 90 },
+             ],
+});
+</script>
+{% endhighlight %}
+
 ### columns `Array`
 {:#members:columns}
 
@@ -587,6 +612,29 @@ $("#Grid").ejGrid({
   dataSource:window.gridData,
   allowResizing:true,
   columns:[{field:"OrderID"},{field:"CustomerID",allowResizing:false},{field:"ShipCity"}] 
+});
+</script> 
+{% endhighlight %}
+
+### columns.showInColumnChooser `Boolean`
+{:#members:columns-showincolumnchooser}
+
+Used to hide the particular column in columnchooser by giving value as false.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+  dataSource:window.gridData,
+ showColumnChooser:true,
+    columns:[{field:"OrderID"},{field:"CustomerID",showInColumnChooser:false},{field:"ShipCity"}] 
+});
 });
 </script> 
 {% endhighlight %}
@@ -1344,6 +1392,45 @@ $("#Grid").ejGrid({
 });
 </script> 
 {% endhighlight %}
+
+### contextMenuSettings.subContextMenu `Array`
+{:#members:contextmenusettings-subcontextmenu}
+
+Used to get or set the subMenu to the corresponding custom context menu item.
+
+### contextMenuSettings.subContextMenu.contextMenuItem `string`
+{:#members:contextmenusettings-subcontextmenu-contextmenuitem}
+
+Used to get or set the corresponding custom context menu item to which the submenu to be appended.
+
+#### Default Value:
+{:.param}
+* -
+
+### contextMenuSettings.subContextMenu.subMenu `Array`
+{:#members:contextmenusettings-subcontextmenu-submenu}
+
+Used to get or set the sub menu items to the custom context menu item.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+   contextMenuSettings: { enableContextMenu: true, customContextMenuItems: ["Hide Column"],
+   subContextMenu: [{ contextMenuItem: "Hide Column", subMenu: ["OrderID", "CustomerID", "EmployeeID"] }] 
+  },          
+});
+</script>
+{% endhighlight %}
+
 
 ### cssClass `String`
 {:#members:cssclass}
@@ -6196,7 +6283,6 @@ var gridObj = $("#Grid").data("ejGrid");
 gridObj.selectCells([[1, [4, 3, 2]]]); 
 </script>{% endhighlight %}
 
-
 {% highlight html %}
  
 <script>
@@ -6303,6 +6389,180 @@ gridObj.selectRows(1, 4);
 <script>
 // Selects rows based on the given index
 $("#Grid").ejGrid("selectRows", 1, 4);
+</script>{% endhighlight %}
+
+
+### setCellText()
+{:#methods:setcelltext}
+
+Used to update a particular cell value.
+NOTE: It will work only for Local Data.
+
+#### setCellText(rowIndex, cellIndex, value)
+{:#methods:setcelltext}
+
+Used to update a particular cell value by using rowIndex, cellIndex, value.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+rowIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to set the index of row for selecting the cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+cellIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to set the index of cell for selecting rows.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">It is used to set the value for the selected cell.</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// update a particular cell value
+gridObj.setCellText(0, 1, "GREYER");
+</script>{% endhighlight %}
+
+{% highlight html %}
+
+<script>
+// update a particular cell value
+$("#Grid").ejGrid("setCellText", 0, 1, "GREYER");
+</script>{% endhighlight %}
+
+
+#### setCellText(primaryKeyValue, field, value)
+{:#methods:setcelltext}
+
+Used to update a particular cell value by using primarykeyvalue, field and value.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+primaryKeyValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">It is used to set the primarykey value for selecting the cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+field{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">It is used to set the field name for selecting rows.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">It is used to set the value for the selected cell.</td>
+</tr>
+</tbody>
+
+</table>
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// update a particular cell value
+gridObj.setCellText(10248,"EmployeeID", "GREYER");
+</script>{% endhighlight %}
+
+{% highlight html %}
+ 
+<script>
+// update a particular cell value
+$("#Grid").ejGrid("setCellText", 10248, "EmployeeID", "GREYER");
+</script>{% endhighlight %}
+
+
+### setCellValue(index, fieldName, cellValue)
+{:#methods:setcellvalue}
+
+Used to update a particular cell value by giving Index,fieldName and value need to be given.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight html %}
+Index{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">It is used to set the index for selecting the cell.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+fieldName{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">It is used to set the field name for selecting rows.</td>
+</tr>
+<tr>
+<td class="name">{% highlight html %}
+value{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">It is used to set the value for the selected cell.</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+
+{% highlight html %} 
+
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+//Used to update a particular cell value
+gridObj.setCellValue(1,"EmployeeID", "GREYER");
+</script>{% endhighlight %}
+
+{% highlight html %}
+ 
+<script>
+//Used to update a particular cell value
+$("#Grid").ejGrid("setCellValue", 1, "EmployeeID", "GREYER");
 </script>{% endhighlight %}
 
 
