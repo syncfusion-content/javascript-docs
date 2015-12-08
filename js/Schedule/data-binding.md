@@ -282,6 +282,19 @@ $(function() {
 
 {% endhighlight %}
 
+The server-side code to retrieve the appointments are as follows.
+
+{% highlight c# %}
+
+// To retrieve the appointments from database and bind it to Scheduler
+public IEnumerable<Event> GetData(String CurrentDate, String CurrentView, String CurrentAction)
+{
+    return new NORTHWNDEntities().Events.ToList();
+}
+
+{% endhighlight %}
+
+
 ## ASP.Net Web Method Binding
 
 The Schedule appointment data can retrieve data from ASP.Net Web methods. It can be achieved using the UrlAdaptor of ej.DataManager.
@@ -295,7 +308,7 @@ The Schedule appointment data can retrieve data from ASP.Net Web methods. It can
 $(function() {
     // get the appointments data from Web method
     var dataManager = ej.DataManager({
-        url: "WebService1.asmx/GetDatas", // This will trigger to bind the appointments data to schedule control
+        url: "WebService1.asmx/GetData", // This will trigger to bind the appointments data to schedule control
         batchUrl: "WebService1.asmx/Crud", // This will trigger while saving the appointment through detail window
         insertUrl: "WebService1.asmx/add", // This will trigger while saving the appointment through quick window
         updateUrl: "WebService1.asmx/update", //This will trigger while saving the resize or drag and drop the appointment 
@@ -314,6 +327,399 @@ $(function() {
 </script>
 
 {% endhighlight %}
+
+The server-side code to handle the CRUD operations are as follows.
+
+{% highlight c# %}
+
+// To retrieve the appointments and bind it to Scheduler
+[WebMethod]
+[ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+public static object GetData(String CurrentView, String CurrentAction, DateTime CurrentDate)
+{
+    // ScheduleAppointmentsObjData is a user-defined class needs to be defined with collection of scheduler appointments
+    ScheduleAppointmentsObjDatum obj = new ScheduleAppointmentsObjDatum();
+    IList<ScheduleAppointmentsObjData> appoint = obj.GetRecords().ToList();
+    return appoint;
+}
+
+public class ScheduleAppointmentsObjDatum
+{
+    [DataObjectMethod(DataObjectMethodType.Select)]
+    public List<ScheduleAppointmentsObjData> GetRecords()
+    {
+        List<ScheduleAppointmentsObjData> list = new List<ScheduleAppointmentsObjData>();
+        list.Add(new ScheduleAppointmentsObjData(100, "Bering Sea Gold", "chn", "05/02/2014 09:00:00 AM", "05/02/2014 10:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10"));
+        list.Add(new ScheduleAppointmentsObjData(101, "Bering Sea Gold", "mum", "05/02/2014 04:00:00 AM", "05/02/2014 05:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(102, "Bering Sea Gold", "trcy", "05/02/2014 04:00:00 PM", "05/02/2014 05:30:00 PM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(103, "What Happened Next?", "chn", "05/04/2014 03:00:00 AM", "05/04/2014 04:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(104, "Bering Sea Gold", "trcy", "05/04/2014 05:00:00 AM", "05/04/2014 05:40:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(105, "Daily Planet", "chn", "05/03/2014 01:00:00 AM", "05/03/2014 02:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(106, "Alaska: The Last Frontier", "chn", "05/03/2014 08:00:00 AM", "05/03/2014 09:00:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(107, "How It's Made", "chn", "05/01/2014 06:00:00 AM", "05/01/2014 06:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TU;INTERVAL=1;COUNT=15"));
+        list.Add(new ScheduleAppointmentsObjData(108, "Deadest Catch", "chn", "05/03/2014 04:00:00 PM", "05/03/2014 05:00:00 PM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(109, "MayDay", "chn", "04/30/2014 06:30:00 AM", "04/30/2014 07:30:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(110, "MoonShiners", "chn", "05/02/2014 02:00:00 AM", "05/02/2014 02:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5"));
+        list.Add(new ScheduleAppointmentsObjData(111, "Close Encounters", "chn", "04/30/2014 02:00:00 PM", "04/30/2014 03:00:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=MO,TH;INTERVAL=1;COUNT=5"));
+        list.Add(new ScheduleAppointmentsObjData(112, "Close Encounters", "mum", "04/30/2014 03:00:00 AM", "04/30/2014 03:30:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=WEEKLY;BYDAY=WE;INTERVAL=1;COUNT=3"));
+        list.Add(new ScheduleAppointmentsObjData(113, "Highway Thru Hell", "chn", "05/01/2014 03:00:00 AM", "05/01/2014 07:00:00 AM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=2;COUNT=10"));
+        list.Add(new ScheduleAppointmentsObjData(114, "Moon Shiners", "chn", "05/02/2014 04:20:00 AM", "05/02/2014 05:50:00 AM", "", "1", "", false, "", "", "", "", false, "", "", ""));
+        list.Add(new ScheduleAppointmentsObjData(115, "Cash Cab", "chn", "04/30/2014 03:00:00 PM", "04/30/2014 04:30:00 PM", "", "1", "", true, "", "", "", "", false, "", "", "FREQ=DAILY;INTERVAL=1;COUNT=5"));
+        return list;
+    }
+}
+
+[Serializable]
+public class ScheduleAppointmentsObjData
+{
+    private int _id;
+    private String _subject;
+    private String _location;
+    private String _startTime;
+    private String _endTime;
+    private String _description;
+    private String _owner;
+    private String _priority;
+    private Boolean _recurrence;
+    private String _recurrenceType;
+    private String _recurrenceTypeCount;
+    private String _remainderCategorize;
+    private String _customStyle;
+    private Boolean _allDay;
+    private String _recurrenceStartDate;
+    private String _recurrenceEndDate;
+    private String _recurrenceRule;
+
+    public ScheduleAppointmentsObjData()
+    {
+        
+    }
+    public ScheduleAppointmentsObjData(int _id, string _subject, string _location, string _startTime, string _endTime, string _description, string _owner, string _priority, bool _recurrence, string _recurrenceType, string _recurrenceTypeCount, string _remainderCategorize, string _customStyle, bool _allDay, string _recurrenceStartDate, string _recurrenceEndDate, string _recurrenceRule)
+    {
+        this._id = _id;
+        this._subject = _subject;
+        this._location = _location;
+        this._startTime = _startTime;
+        this._endTime = _endTime;
+        this._description = _description;
+        this._owner = _owner;
+        this._priority = _priority;
+        this._recurrence = _recurrence; ;
+        this._recurrenceType = _recurrenceType;
+        this._recurrenceTypeCount = _recurrenceTypeCount;
+        this._remainderCategorize = _remainderCategorize;
+        this._customStyle = _customStyle;
+        this._allDay = _allDay;
+        this._recurrenceStartDate = _recurrenceStartDate;
+        this._recurrenceEndDate = _recurrenceEndDate;
+        this._recurrenceRule = _recurrenceRule;
+    }
+
+    public int ID
+    {
+        get
+        {
+            return _id;
+        }
+        set
+        {
+            _id = value;
+        }
+    }
+
+    public string Subject
+    {
+        get
+        {
+            return _subject;
+        }
+        set
+        {
+            _subject = value;
+        }
+    }
+    public string Location
+    {
+        get
+        {
+            return _location;
+        }
+        set
+        {
+            _location = value;
+        }
+    }
+    public string StartTime
+    {
+        get
+        {
+            return _startTime;
+        }
+        set
+        {
+            _startTime = value;
+        }
+    }
+    public string EndTime
+    {
+        get
+        {
+            return _endTime;
+        }
+        set
+        {
+            _endTime = value;
+        }
+    }
+    public string Description
+    {
+        get
+        {
+            return _description;
+        }
+        set
+        {
+            _description = value;
+        }
+    }
+    public string Owner
+    {
+        get
+        {
+            return _owner;
+        }
+        set
+        {
+            _owner = value;
+        }
+    }
+    public string Priority
+    {
+        get
+        {
+            return _priority;
+        }
+        set
+        {
+            _priority = value;
+        }
+    }
+    public Boolean Recurrence
+    {
+        get
+        {
+            return _recurrence;
+        }
+        set
+        {
+            _recurrence = value;
+        }
+    }
+    public string RecurrenceType
+    {
+        get
+        {
+            return _recurrenceType;
+        }
+        set
+        {
+            _recurrenceType = value;
+        }
+    }
+    public string RecurrenceTypeCount
+    {
+        get
+        {
+            return _recurrenceTypeCount;
+        }
+        set
+        {
+            _recurrenceTypeCount = value;
+        }
+    }
+    public string RemainderCategorize
+    {
+        get
+        {
+            return _remainderCategorize;
+        }
+        set
+        {
+            _remainderCategorize = value;
+        }
+    }
+    public string CustomStyle
+    {
+        get
+        {
+            return _customStyle;
+        }
+        set
+        {
+            _customStyle = value;
+        }
+    }
+    public Boolean AllDay
+    {
+        get
+        {
+            return _allDay;
+        }
+        set
+        {
+            _allDay = value;
+        }
+    }
+    public string RecurrenceStartDate
+    {
+        get
+        {
+            return _recurrenceStartDate;
+        }
+        set
+        {
+            _recurrenceStartDate = value;
+        }
+    }
+    public string RecurrenceEndDate
+    {
+        get
+        {
+            return _recurrenceEndDate;
+        }
+        set
+        {
+            _recurrenceEndDate = value;
+        }
+    }
+    public string RecurrenceRule
+    {
+        get
+        {
+            return _recurrenceRule;
+        }
+        set
+        {
+            _recurrenceRule = value;
+        }
+    }
+    
+}
+
+// Method to retrieve appointments from the ScheduleAppointmentsObjDatum Class
+public static IList<ScheduleAppointmentsObjData> GetAllRecords()
+{
+    ScheduleAppointmentsObjDatum obj = new ScheduleAppointmentsObjDatum();
+    IList<ScheduleAppointmentsObjData> appoint = obj.GetRecords().ToList();
+    return appoint;
+}
+
+// Method to convert appointment object of dictionary type into valid format.
+public static ScheduleAppointmentsObjData GetObjectValue(Dictionary<string, object> objValue)
+{
+    Dictionary<string, object> KeyVal = objValue;
+    ScheduleAppointmentsObjData appointValue = new ScheduleAppointmentsObjData();
+    foreach (KeyValuePair<string, object> keyval in KeyVal)
+    {
+        if (keyval.Key == "ID")
+            appointValue.ID = Convert.ToInt32(keyval.Value);
+        else if (keyval.Key == "Subject")
+            appointValue.Subject = Convert.ToString(keyval.Value);
+        else if (keyval.Key == "Location")
+            appointValue.Location = Convert.ToString(keyval.Value);
+        else if (keyval.Key == "StartTime")
+            appointValue.StartTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
+        else if (keyval.Key == "EndTime")
+            appointValue.EndTime = Convert.ToDateTime(keyval.Value).ToString("MM'/'dd'/'yyyy hh:mm:ss tt");
+        else if (keyval.Key == "Description")
+            appointValue.Description = Convert.ToString(keyval.Value);
+        else if (keyval.Key == "AllDay")
+            appointValue.AllDay = Convert.ToBoolean(keyval.Value);
+        else if (keyval.Key == "Recurrence")
+            appointValue.Recurrence = Convert.ToBoolean(keyval.Value);
+        else if (keyval.Key == "RecurrenceRule")
+            appointValue.RecurrenceRule = Convert.ToString(keyval.Value);
+    }
+    return appointValue;
+}
+
+// Triggers while creating appointment through quick window.
+[WebMethod]
+[ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+public static void add(object value)
+{
+    ScheduleAppointmentsObjData appointValue = GetObjectValue(value as Dictionary<string, object>);
+    GetAllRecords().Insert(0, appointValue);
+}
+
+// Triggers while editing appointments.
+[WebMethod]
+[ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+public static void update(object value)
+{
+    ScheduleAppointmentsObjData obj = GetObjectValue(value as Dictionary<string, object>);
+    var filterData = GetAllRecords().ToList().Where(c => c.ID == Convert.ToInt32(obj.ID));
+    if (filterData.Count() > 0)
+    {
+        ScheduleAppointmentsObjData appoint = GetAllRecords().Single(A => A.ID == Convert.ToInt32(obj.ID));
+        appoint.StartTime = obj.StartTime;
+        appoint.EndTime = obj.EndTime;
+        appoint.Subject = obj.Subject;
+        appoint.Recurrence = obj.Recurrence;
+        appoint.AllDay = obj.AllDay;
+        appoint.RecurrenceRule = obj.RecurrenceRule;
+    }
+}
+
+// Triggers on deleting the appointment.
+[WebMethod]
+[ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+public static void remove(int key)
+{
+    ScheduleAppointmentsObjData removeApp = GetAllRecords().Where(c => c.ID == key).FirstOrDefault();
+    if (removeApp != null)
+        GetAllRecords().Remove(removeApp);
+}
+
+// Triggers for all CRUD actions on Scheduler appointments.
+[WebMethod]
+[ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+public static void Crud(List<object> added, List<object> changed, List<object> deleted)
+{
+    if (added != null && added.Count > 0)
+    {
+        ScheduleAppointmentsObjData appointValue = GetObjectValue(added[0] as Dictionary<string, object>);
+        GetAllRecords().Insert(0, appointValue);
+    }
+    if (changed != null && changed.Count > 0)
+    {
+        ScheduleAppointmentsObjData value = GetObjectValue(changed[0] as Dictionary<string, object>);
+        var filterData = GetAllRecords().ToList().Where(c => c.ID == Convert.ToInt32(value.ID));
+        if (filterData.Count() > 0)
+        {
+            ScheduleAppointmentsObjData appoint = GetAllRecords().Where(A => A.ID == Convert.ToInt32(value.ID)).FirstOrDefault();
+            appoint.StartTime = value.StartTime;
+            appoint.EndTime = value.EndTime;
+            appoint.Subject = value.Subject;
+            appoint.Recurrence = value.Recurrence;
+            appoint.AllDay = value.AllDay;
+            appoint.RecurrenceRule = value.RecurrenceRule;
+        }
+    }
+    if (deleted != null && deleted.Count > 0)
+    {
+        foreach (var dele in deleted)
+        {
+            ScheduleAppointmentsObjData value = GetObjectValue(dele as Dictionary<string, object>);
+            ScheduleAppointmentsObjData removeApp = GetAllRecords().Where(c => c.ID == value.ID).FirstOrDefault();
+            if (removeApp != null)
+                GetAllRecords().Remove(removeApp);
+        }
+    }
+}
+
+{% endhighlight %}
+
 
 ## MVC Controller Action Binding
 
@@ -348,6 +754,141 @@ $(function() {
 
 {% endhighlight %}
 
+The server-side controller code to handle the CRUD operations are as follows.
+
+{% highlight c# %}
+
+// To initially bind the appointments with Scheduler
+public JsonResult GetData()
+{
+    // ScheduleDataDataContext is a LINQ-to-SQL data class name that is defined in the .dbml file to access the tables from the database 
+    IEnumerable data = new ScheduleDataDataContext().Appointments.Take(100); 
+    return Json(data, JsonRequestBehavior.AllowGet);
+}
+
+// Triggers while saving a new appointment through quick window
+public JsonResult add(Appointment value)
+{
+    ScheduleDataDataContext db = new ScheduleDataDataContext();
+    int intMax = db.Appointments.ToList().Count > 0 ? db.Appointments.ToList().Max(p => p.Id) : 1;
+    Appointment appoint = new Appointment()
+    {
+        Id = intMax + 1,
+        StartTime = value.StartTime,
+        EndTime = value.EndTime,
+        Subject = value.Subject,
+        Description = value.Description,
+        OwnerId = value.OwnerId,
+        Recurrence = value.Recurrence,
+        AllDay = value.AllDay,
+        RecurrenceRule = value.RecurrenceRule
+    };
+    db.Appointments.InsertOnSubmit(appoint);
+    db.SubmitChanges();
+    return Json(appoint, JsonRequestBehavior.AllowGet);
+}
+
+// Triggers while editing/dragging/resizing the existing appointment
+public JsonResult update(Appointment value)
+{
+    ScheduleDataDataContext db = new ScheduleDataDataContext();
+    var filterData = db.Appointments.Where(c => c.Id == Convert.ToInt32(value.Id));
+    Appointment appoint = db.Appointments.Single(A => A.Id == Convert.ToInt32(value.Id));
+    if (filterData.Count() > 0)
+    {
+        DateTime startTime = Convert.ToDateTime(value.StartTime);
+        DateTime endTime = Convert.ToDateTime(value.EndTime);
+        appoint.StartTime = startTime;
+        appoint.EndTime = endTime;
+        appoint.Subject = value.Subject;
+        appoint.Description = value.Description;
+        appoint.OwnerId = value.OwnerId;
+        appoint.Recurrence = Convert.ToByte(value.Recurrence);
+        appoint.AllDay = value.AllDay;
+        appoint.RecurrenceRule = value.RecurrenceRule;
+    }
+    db.SubmitChanges();
+    return Json(appoint, JsonRequestBehavior.AllowGet);
+}
+
+// Triggers when an appointment is deleted
+public JsonResult remove(string key)
+{
+    ScheduleDataDataContext db = new ScheduleDataDataContext();
+    Appointment app = db.Appointments.Where(c => c.Id == Convert.ToInt32(key)).FirstOrDefault();
+    if (app != null) db.Appointments.DeleteOnSubmit(app);
+    db.SubmitChanges();
+    return Json(app, JsonRequestBehavior.AllowGet);
+}
+
+// Triggers for any of the Scheduler CRUD operation
+public JsonResult Crud(EditParams param)
+{
+    ScheduleDataDataContext db = new ScheduleDataDataContext();
+    if (param.action == "insert" || (param.action == "batch" && param.added != null))  // this block of code will execute while inserting the appointments
+    {
+        var value = param.action == "insert" ? param.value : param.added[0];
+        int intMax = db.Appointments.ToList().Count > 0 ? db.Appointments.ToList().Max(p => p.Id) : 1;
+        DateTime startTime = Convert.ToDateTime(value.StartTime);
+        DateTime endTime = Convert.ToDateTime(value.EndTime);
+        Appointment appoint = new Appointment()
+        {
+            Id = intMax + 1,
+            StartTime = startTime,
+            EndTime = endTime,
+            Subject = value.Subject,
+            Description = value.Description,
+            OwnerId = value.OwnerId,
+            Recurrence = value.Recurrence,
+            AllDay = value.AllDay,
+            RecurrenceRule = value.RecurrenceRule
+        };
+        db.Appointments.InsertOnSubmit(appoint);
+        db.SubmitChanges();
+    }
+    else if (param.action == "remove")  // this block of code will execute while removing the appointment
+    {
+        Appointment app = db.Appointments.Where(c => c.Id == Convert.ToInt32(param.key)).FirstOrDefault();
+        if (app != null) db.Appointments.DeleteOnSubmit(app);
+        db.SubmitChanges();
+    }
+    else if ((param.action == "batch" && param.changed != null) || param.action == "update")   // this block of code will execute while updating the appointment
+    {
+        var value = param.action == "update" ? param.value : param.changed[0];
+        var filterData = db.Appointments.Where(c => c.Id == Convert.ToInt32(value.Id));
+        if (filterData.Count() > 0)
+        {
+            DateTime startTime = Convert.ToDateTime(value.StartTime);
+            DateTime endTime = Convert.ToDateTime(value.EndTime);
+            Appointment appoint = db.Appointments.Single(A => A.Id == Convert.ToInt32(value.Id));
+            appoint.StartTime = startTime.ToUniversalTime();
+            appoint.EndTime = endTime.ToUniversalTime();
+            appoint.Subject = value.Subject;
+            appoint.Description = value.Description;
+            appoint.OwnerId = value.OwnerId;
+            appoint.Recurrence = Convert.ToByte(value.Recurrence);
+            appoint.AllDay = value.AllDay;
+            appoint.RecurrenceRule = value.RecurrenceRule;
+        }
+        db.SubmitChanges();
+    }
+    IEnumerable data = new ScheduleDataDataContext().Appointments.Take(500); 
+    return Json(data, JsonRequestBehavior.AllowGet);
+}
+
+// Class definition for EditParams to be used as parameter in the above Crud method for receiving the object value in it.
+public class EditParams
+{
+    public string key { get; set; }
+    public string action { get; set; }
+    public List<Appointment> added { get; set; }
+    public List<Appointment> changed { get; set; }
+    public Appointment value { get; set; }
+}
+
+{% endhighlight %}
+
+
 ## Loading Data on Demand
 
 Load on demand feature allows the Scheduler to retrieve only the filtered appointment data (for the current Scheduler date range) from the service/database during **loading** **time**, and that too only for the current Scheduler view**.** There are 3 parameters made available on the server-side namely **CurrentDate**, **CurrentView** and **CurrentAction** through which only the necessary appointments are retrieved from the database and then assigned to the Scheduler dataSource. With this kind of action of Scheduler consuming only lesser data will reduce the usage of network bandwidth size and loading time. 
@@ -381,3 +922,98 @@ $(function() {
 
 {% endhighlight %}
 
+The server-side code to handle the load on demand is as follows.
+
+{% highlight c# %}
+
+// retrieve the appointments based on the current date.
+public IEnumerable<Event> GetData(String CurrentDate, String CurrentView, String CurrentAction)
+{
+    var dateString = Regex.Match(CurrentDate.ToString(), @"^(\w+\b.*?){4}").ToString(); 
+    string format = "ddd MMM dd yyyy"; 
+    DateTime dateTimeValue;
+    try
+    {
+        dateTimeValue = DateTime.ParseExact(dateString, format, CultureInfo.InvariantCulture);
+    }
+    catch(FormatException)
+    {
+        var dateSplit = CurrentDate.Split(' ');//For IE<=10 Fri Mar 20 11:00:22 UTC+0530 2015
+        if (dateSplit[2].Length == 1) dateSplit[2] = string.Concat("0", dateSplit[2]);
+        dateString = string.Concat(dateSplit[0], ' ', dateSplit[1], ' ', dateSplit[2], ' ', dateSplit[dateSplit.Length - 1]);
+        dateTimeValue = DateTime.ParseExact(dateString, format, CultureInfo.InvariantCulture);
+    }
+	// AppointmentReposit is a user-defined class within which the FilterAppointment method is defined. 
+    AppointmentReposit rep = new AppointmentReposit();
+    var data = rep.FilterAppointment(dateTimeValue, CurrentAction, CurrentView); 
+    return data;
+}
+
+// Method to filter the appointments based on the date range
+public List<Event> FilterAppointment(DateTime CurrentDate, String CurrentAction, String CurrentView)
+{
+    DateTime CurrDate = Convert.ToDateTime(CurrentDate);
+    DateTime StartDate = FirstWeekDate(CurrDate.Date);
+    DateTime EndDate = FirstWeekDate(CurrDate.Date);
+    List<Event> appointmentList = new NORTHWNDEntities().Events.ToList();
+    switch (CurrentView)
+    {
+        case "day":
+            StartDate = CurrentDate;
+            EndDate = CurrentDate;
+            break;
+        case "week":
+            EndDate = EndDate.AddDays(7);
+            break;
+        case "workweek":
+            EndDate = EndDate.AddDays(5);
+            break;
+        case "month":
+            StartDate = CurrDate.Date.AddDays(-CurrDate.Day + 1);
+            EndDate = StartDate.AddMonths(1);
+            break;
+    }
+    appointmentList = new NORTHWNDEntities().Events.ToList().Where(app =>
+    ((Convert.ToDateTime(app.StartTime).Date >= Convert.ToDateTime(StartDate.Date)) &&
+    (Convert.ToDateTime(app.EndTime).Date <= Convert.ToDateTime(EndDate.Date)))).ToList();
+    return appointmentList;
+}
+
+internal static DateTime FirstWeekDate(DateTime CurrentDate)
+{
+    try
+    {
+        DateTime FirstDayOfWeek = CurrentDate;
+        DayOfWeek WeekDay = FirstDayOfWeek.DayOfWeek;
+        switch (WeekDay)
+        {
+            case DayOfWeek.Sunday:
+                break;
+            case DayOfWeek.Monday:
+                FirstDayOfWeek = FirstDayOfWeek.AddDays(-1);
+                break;
+            case DayOfWeek.Tuesday:
+                FirstDayOfWeek = FirstDayOfWeek.AddDays(-2);
+                break;
+            case DayOfWeek.Wednesday:
+                FirstDayOfWeek = FirstDayOfWeek.AddDays(-3);
+                break;
+            case DayOfWeek.Thursday:
+                FirstDayOfWeek = FirstDayOfWeek.AddDays(-4);
+                break;
+            case DayOfWeek.Friday:
+                FirstDayOfWeek = FirstDayOfWeek.AddDays(-5);
+                break;
+            case DayOfWeek.Saturday:
+                FirstDayOfWeek = FirstDayOfWeek.AddDays(-6);
+                break;
+        }
+        return (FirstDayOfWeek);
+    }
+    catch
+    {
+        return DateTime.Now;
+    }
+}
+
+{% endhighlight %}
