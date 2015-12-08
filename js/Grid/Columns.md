@@ -817,6 +817,8 @@ Lookup data source can be bound to [`dataSource`](http://help.syncfusion.com/js/
 
 I> For foreign key column the sorting and grouping is based on [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") instead of [`foreignKeyValue`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyvalue "foreignKeyValue").
 
+I> [`foreignKeyField`](http://help.syncfusion.com/js/api/ejgrid#members:columns-foreignkeyfield "foreignKeyField") and [`field`](http://help.syncfusion.com/js/api/ejgrid#members:columns-field "field") key name must be same.
+
 The following code example describes the above behavior.
 
 {% highlight html %}
