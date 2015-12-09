@@ -1,6 +1,6 @@
 ---
 layout: post
-title:User-Interactions
+title: User-Interactions
 description: user interactions
 platform: js
 control: OlapChart

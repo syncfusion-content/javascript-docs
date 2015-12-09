@@ -44,7 +44,7 @@ olapReport.CategoricalElements.Add(kpiElement);
 olapReport.CategoricalElements.Add(measureElementColumn);
 olapReport.SeriesElements.Add(dimensionElementRow);
 
-{% endhighligh %}
+{% endhighlight %}
 
 ![](KPI_images/kpi.png)
 
