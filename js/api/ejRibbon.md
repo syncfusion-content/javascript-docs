@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ejRibbon
-description:Members,Methods,Events available in ejRibbon
+description: Members,Methods,Events available in ejRibbon
 documentation: API
 platform: js
 keywords: ribbon, ejRibbon, syncfusion, ribbon api
