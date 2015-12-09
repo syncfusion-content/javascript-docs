@@ -369,7 +369,7 @@ pivotSetting.PivotCalculations.Add(new PivotComputationInfo {
 
 You can render our PivotGrid control from Right to Left by setting [`enableRTL`](/js/api/ejpivotgrid#members:enablertl) property to true.
 
-{% hightlight js %}
+{% highlight js %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({

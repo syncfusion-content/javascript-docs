@@ -198,7 +198,12 @@ namespace PivotGridDemo
     }
 }
 
+{% endhighlight %}
+
 Secondly, elaborate the service methods inside the main class, found in OLAPService.svc.cs file 
+
+{% highlight c# %}
+
 namespace PivotGridDemo
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
