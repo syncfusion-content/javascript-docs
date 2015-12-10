@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rendering Mode in DropDownList
-description: Describes about rendering mode in DropDownList.
+title: Rendering Mode in DropDownList widget for Syncfusion Essential JS
+description: Describes about rendering mode in DropDownList widget for Syncfusion Essential JS.
 platform: js
 control: DropDownList
 documentation: ug

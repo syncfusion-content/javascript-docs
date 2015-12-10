@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Web Accessbility in DropDownList
-description: Web accessibliy support to DropDownList
+title: Web Accessbility in DropDownList widget for Syncfusion Essential JS
+description: Web accessibliy support to DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in DropDownList
-description: Describes about the data binding in DropDownList
+title: Data binding in DropDownList widget for Syncfusion Essential JS
+description: Describes about the data binding in DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug

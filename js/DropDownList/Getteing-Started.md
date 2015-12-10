@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with DropDownList
-description: To get start with DropDownList by adding references.
+title: Getting started with DropDownList widget for Syncfusion Essential JS
+description: To get start with DropDownList by adding references widget for Syncfusion Essential JS.
 platform: js
 control: DropDownList
 documentation: ug
