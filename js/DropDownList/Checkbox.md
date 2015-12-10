@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CheckBox with DropDownList
-description: Describes about Checkbox functionalities in DropDownList 
+title: CheckBox with DropDownList widget for Syncfusion Essential JS
+description: Describes about Checkbox functionalities in DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in DropDownList
-description: Customization in DropDownList
+title: Customization in DropDownList widget for Syncfusion Essential JS
+description: Customization in DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug

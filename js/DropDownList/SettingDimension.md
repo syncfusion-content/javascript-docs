@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Demension in DropDownList
-description: Setting Dimensions to DropDownList 
+title: Demension in DropDownList widget for Syncfusion Essential JS
+description: Setting Dimensions to DropDownList widget for Syncfusion Essential JS 
 platform: js
 control: DropDownList
 documentation: ug

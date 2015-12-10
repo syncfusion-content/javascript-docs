@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State Persistance with DropDownList
-description: State Persistence support to DropDownList
+title: State Persistance with DropDownList widget for Syncfusion Essential JS
+description: State Persistence support to DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug
