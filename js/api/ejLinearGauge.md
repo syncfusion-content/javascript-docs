@@ -18,7 +18,7 @@ The Linera gauge can be easily configured to the DOM element, such as div. you c
 
 
 
-$(element).ejLinearGauge<span class="signature">(options)</span>
+$(element).ejLinearGauge(options)
 
 
 
@@ -47,8 +47,7 @@ options{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -91,7 +90,7 @@ Requires
 
 
 
-### animationSpeed<span class="type-signature type number">number</span>
+### animationSpeed `number`
 {:#members:animationspeed}
 
 
@@ -106,8 +105,7 @@ Specifies the animationSpeed
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -123,8 +121,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -141,7 +138,7 @@ Example
 
 
 
-### backgroundColor<span class="type-signature type string">string</span>
+### backgroundColor `string`
 {:#members:backgroundcolor}
 
 
@@ -156,8 +153,7 @@ Specifies the backgroundColor for Linear gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -173,8 +169,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -191,7 +186,7 @@ Example
 
 
 
-### borderColor<span class="type-signature type string">string</span>
+### borderColor `string`
 {:#members:bordercolor}
 
 
@@ -206,8 +201,7 @@ Specifies the borderColor for Linear gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -223,8 +217,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -241,7 +234,7 @@ Example
 
 
 
-### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -256,8 +249,7 @@ Specifies the animate state
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -273,8 +265,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -291,7 +282,7 @@ Example
 
 
 
-### enableMarkerPointerAnimation<span class="type-signature type boolean">boolean</span>
+### enableMarkerPointerAnimation `boolean`
 {:#members:enablemarkerpointeranimation}
 
 
@@ -306,8 +297,7 @@ Specifies the animate state for marker pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -323,8 +313,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -341,7 +330,7 @@ Example
 
 
 
-### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize `boolean`
 {:#members:enableresize}
 
 
@@ -356,8 +345,7 @@ Specifies the can resize state.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -373,8 +361,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -391,7 +378,7 @@ Example
 
 
 
-### frame<span class="type-signature type object">object</span>
+### frame `object`
 {:#members:frame}
 
 
@@ -406,8 +393,7 @@ Specify frame of linear gauge
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -423,8 +409,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -442,7 +427,7 @@ $("#LinearGauge1").ejLinearGauge({ frame: { backgroundImageUrl:null, outerWidth:
 
 
 
-### frame.backgroundImageUrl<span class="type-signature type string">string</span>
+### frame.backgroundImageUrl `string`
 {:#members:frame-backgroundimageurl}
 
 
@@ -457,8 +442,7 @@ Specifies the frame backgroundimageurl of linear gauge
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -474,8 +458,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -492,7 +475,7 @@ Example
 
 
 
-### frame.innerWidth<span class="type-signature type number">number</span>
+### frame.innerWidth `number`
 {:#members:frame-innerwidth}
 
 
@@ -507,8 +490,7 @@ Specifies the frame InnerWidth
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -524,8 +506,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -542,7 +523,7 @@ Example
 
 
 
-### frame.outerWidth<span class="type-signature type number">number</span>
+### frame.outerWidth `number`
 {:#members:frame-outerwidth}
 
 
@@ -557,8 +538,7 @@ Specifies the frame OuterWidth
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -574,8 +554,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -592,7 +571,7 @@ Example
 
 
 
-### height<span class="type-signature type number">number</span>
+### height `number`
 {:#members:height}
 
 
@@ -607,8 +586,7 @@ Specifies the height of Linear gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -624,8 +602,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -642,7 +619,7 @@ Example
 
 
 
-### labelColor<span class="type-signature type string">string</span>
+### labelColor `string`
 {:#members:labelcolor}
 
 
@@ -657,8 +634,7 @@ Specifies the labelColor for Linear gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -674,8 +650,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -692,7 +667,7 @@ Example
 
 
 
-### maximum<span class="type-signature type number">number</span>
+### maximum `number`
 {:#members:maximum}
 
 
@@ -707,8 +682,7 @@ Specifies the maximum value of Linear gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -724,8 +698,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -742,7 +715,7 @@ Example
 
 
 
-### minimum<span class="type-signature type number">number</span>
+### minimum `number`
 {:#members:minimum}
 
 
@@ -757,8 +730,7 @@ Specifies the minimum value of Linear gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -774,8 +746,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -792,7 +763,7 @@ Example
 
 
 
-### orientation<span class="type-signature type string">string</span>
+### orientation `string`
 {:#members:orientation}
 
 
@@ -807,8 +778,7 @@ Specifies the orientation for Linear gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -824,8 +794,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -842,7 +811,7 @@ Example
 
 
 
-### outerCustomLabelPosition<span class="type-signature type enum">enum</span>
+### outerCustomLabelPosition `enum`
 {:#members:outercustomlabelposition}
 
 
@@ -857,8 +826,7 @@ Specify enableResize value of Linear gauge See <a href="global.html#OuterCustomL
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -874,8 +842,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -893,7 +860,7 @@ $("#CoreLinearGauge").ejLinearGauge({  outerCustomLabelPosition:"top" });
 
 
 
-### pointerGradient1<span class="type-signature type object">Object</span>
+### pointerGradient1 `object`
 {:#members:pointergradient1}
 
 
@@ -908,8 +875,7 @@ Specifies the pointerGradient1 for Linear gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -925,8 +891,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -943,7 +908,7 @@ Example
 
 
 
-### pointerGradient2<span class="type-signature type object">object</span>
+### pointerGradient2 `object`
 {:#members:pointergradient2}
 
 
@@ -958,8 +923,7 @@ Specifies the pointerGradient2 for Linear gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -975,8 +939,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -993,7 +956,7 @@ Example
 
 
 
-### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly `boolean`
 {:#members:readonly}
 
 
@@ -1008,8 +971,7 @@ Specifies the read only state.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1025,8 +987,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1043,7 +1004,7 @@ Example
 
 
 
-### scales<span class="type-signature type object">Object</span>
+### scales `object`
 {:#members:scales}
 
 
@@ -1058,8 +1019,7 @@ Specifies the scales
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1075,8 +1035,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1093,7 +1052,7 @@ Example
 
 
 
-### scales.backgroundColor<span class="type-signature type string">string</span>
+### scales.backgroundColor `string`
 {:#members:scales-backgroundcolor}
 
 
@@ -1108,8 +1067,7 @@ Specifies the backgroundColor of the Scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1125,8 +1083,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1143,7 +1100,7 @@ Example
 
 
 
-### scales.barPointers<span class="type-signature type array">Array</span>
+### scales.barPointers `Array`
 {:#members:scales-barpointers}
 
 
@@ -1158,8 +1115,7 @@ Specifies the scaleBar Gradient of bar pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1175,8 +1131,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1193,7 +1148,7 @@ Example
 
 
 
-### scales.barPointers.backgroundColor<span class="type-signature type string">string</span>
+### scales.barPointers.backgroundColor `string`
 {:#members:scales-barpointers-backgroundcolor}
 
 
@@ -1208,8 +1163,7 @@ Specifies the backgroundColor of bar pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1225,8 +1179,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1243,7 +1196,7 @@ Example
 
 
 
-### scales.barPointers.border<span class="type-signature type object">object</span>
+### scales.barPointers.border `object`
 {:#members:scales-barpointers-border}
 
 
@@ -1258,8 +1211,7 @@ Specifies the border of bar pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1275,8 +1227,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1293,7 +1244,7 @@ Example
 
 
 
-### scales.barPointers.border.color<span class="type-signature type string">string</span>
+### scales.barPointers.border.color `string`
 {:#members:scales-barpointers-border-color}
 
 
@@ -1308,8 +1259,7 @@ Specifies the border Color of bar pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1325,8 +1275,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1343,7 +1292,7 @@ Example
 
 
 
-### scales.barPointers.border.width<span class="type-signature type number">number</span>
+### scales.barPointers.border.width `number`
 {:#members:scales-barpointers-border-width}
 
 
@@ -1358,8 +1307,7 @@ Specifies the border Width of bar pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1375,8 +1323,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1393,7 +1340,7 @@ Example
 
 
 
-### scales.barPointers.distanceFromScale<span class="type-signature type number">number</span>
+### scales.barPointers.distanceFromScale `number`
 {:#members:scales-barpointers-distancefromscale}
 
 
@@ -1408,8 +1355,7 @@ Specifies the distanceFromScale of bar pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1425,8 +1371,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1443,7 +1388,7 @@ Example
 
 
 
-### scales.barPointers.gradients<span class="type-signature type object">object</span>
+### scales.barPointers.gradients `object`
 {:#members:scales-barpointers-gradients}
 
 
@@ -1458,8 +1403,7 @@ Specifies the scaleBar Gradient of bar pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1475,8 +1419,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1493,7 +1436,7 @@ Example
 
 
 
-### scales.barPointers.opacity<span class="type-signature type number">number</span>
+### scales.barPointers.opacity `number`
 {:#members:scales-barpointers-opacity}
 
 
@@ -1508,8 +1451,7 @@ Specifies the opacity of bar pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1525,8 +1467,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1543,7 +1484,7 @@ Example
 
 
 
-### scales.barPointers.value<span class="type-signature type number">number</span>
+### scales.barPointers.value `number`
 {:#members:scales-barpointers-value}
 
 
@@ -1558,8 +1499,7 @@ Specifies the value of bar pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1575,8 +1515,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1593,7 +1532,7 @@ Example
 
 
 
-### scales.barPointers.width<span class="type-signature type number">number</span>
+### scales.barPointers.width `number`
 {:#members:scales-barpointers-width}
 
 
@@ -1608,8 +1547,7 @@ Specifies the pointer Width of bar pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1625,8 +1563,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1643,7 +1580,7 @@ Example
 
 
 
-### scales.border<span class="type-signature type object">object</span>
+### scales.border `object`
 {:#members:scales-border}
 
 
@@ -1658,8 +1595,7 @@ Specifies the border of the Scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1675,8 +1611,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1693,7 +1628,7 @@ Example
 
 
 
-### scales.border.color<span class="type-signature type string">string</span>
+### scales.border.color `string`
 {:#members:scales-border-color}
 
 
@@ -1708,8 +1643,7 @@ Specifies the border color of the Scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1725,8 +1659,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1743,7 +1676,7 @@ Example
 
 
 
-### scales.border.width<span class="type-signature type number">number</span>
+### scales.border.width `number`
 {:#members:scales-border-width}
 
 
@@ -1758,8 +1691,7 @@ Specifies the border width of the Scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1775,8 +1707,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1793,7 +1724,7 @@ Example
 
 
 
-### scales.customLabels<span class="type-signature type array">Array</span>
+### scales.customLabels `Array`
 {:#members:scales-customlabels}
 
 
@@ -1808,8 +1739,7 @@ Specifies the customLabel
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1825,8 +1755,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1843,7 +1772,7 @@ Example
 
 
 
-### scales.customLabels.color<span class="type-signature type number">number</span>
+### scales.customLabels.color `number`
 {:#members:scales-customlabels-color}
 
 
@@ -1858,8 +1787,7 @@ Specifies the label Color in customLabels
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1875,8 +1803,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1893,7 +1820,7 @@ Example
 
 
 
-### scales.customLabels.font<span class="type-signature type object">object</span>
+### scales.customLabels.font `object`
 {:#members:scales-customlabels-font}
 
 
@@ -1908,8 +1835,7 @@ Specifies the font in customLabels
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1925,8 +1851,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1943,7 +1868,7 @@ Example
 
 
 
-### scales.customLabels.font.fontFamily<span class="type-signature type string">string</span>
+### scales.customLabels.font.fontFamily `string`
 {:#members:scales-customlabels-font-fontfamily}
 
 
@@ -1958,8 +1883,7 @@ Specifies the fontFamily in customLabels
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1975,8 +1899,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1993,7 +1916,7 @@ Example
 
 
 
-### scales.customLabels.font.fontStyle<span class="type-signature type enum">enum</span>
+### scales.customLabels.font.fontStyle `enum`
 {:#members:scales-customlabels-font-fontstyle}
 
 
@@ -2008,8 +1931,7 @@ Specifies the fontStyle in customLabels. See <a href="global.html#FontStyle">Fon
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2025,8 +1947,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2043,7 +1964,7 @@ Example
 
 
 
-### scales.customLabels.font.size<span class="type-signature type string">string</span>
+### scales.customLabels.font.size `string`
 {:#members:scales-customlabels-font-size}
 
 
@@ -2058,8 +1979,7 @@ Specifies the font size in customLabels
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2075,8 +1995,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2093,7 +2012,7 @@ Example
 
 
 
-### scales.customLabels.opacity<span class="type-signature type string">string</span>
+### scales.customLabels.opacity `string`
 {:#members:scales-customlabels-opacity}
 
 
@@ -2108,8 +2027,7 @@ Specifies the opacity in customLabels
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2125,8 +2043,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2143,7 +2060,7 @@ Example
 
 
 
-### scales.customLabels.position<span class="type-signature type object">object</span>
+### scales.customLabels.position `object`
 {:#members:scales-customlabels-position}
 
 
@@ -2158,8 +2075,7 @@ Specifies the position in customLabels
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2175,8 +2091,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2193,7 +2108,7 @@ Example
 
 
 
-### scales.customLabels.position.x<span class="type-signature type number">number</span>
+### scales.customLabels.position.x `number`
 {:#members:scales-customlabels-position-x}
 
 
@@ -2208,8 +2123,7 @@ Specifies the position x in customLabels
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2225,8 +2139,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2243,7 +2156,7 @@ Example
 
 
 
-### scales.customLabels.position.y<span class="type-signature type number">number</span>
+### scales.customLabels.position.y `number`
 {:#members:scales-customlabels-position-y}
 
 
@@ -2258,8 +2171,7 @@ Specifies the y in customLabels
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2275,8 +2187,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2293,7 +2204,7 @@ Example
 
 
 
-### scales.customLabels.positionType<span class="type-signature type object">object</span>
+### scales.customLabels.positionType `object`
 {:#members:scales-customlabels-positiontype}
 
 
@@ -2308,8 +2219,7 @@ Specifies the positionType in customLabels.See <a href="global.html#CustomLabelP
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2325,8 +2235,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2343,7 +2252,7 @@ Example
 
 
 
-### scales.customLabels.textAngle<span class="type-signature type number">number</span>
+### scales.customLabels.textAngle `number`
 {:#members:scales-customlabels-textangle}
 
 
@@ -2358,8 +2267,7 @@ Specifies the textAngle in customLabels
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2375,8 +2283,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2393,7 +2300,7 @@ Example
 
 
 
-### scales.customLabels.value<span class="type-signature type string">string</span>
+### scales.customLabels.value `string`
 {:#members:scales-customlabels-value}
 
 
@@ -2408,8 +2315,7 @@ Specifies the label Value in customLabels
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2425,8 +2331,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2443,7 +2348,7 @@ Example
 
 
 
-### scales.direction<span class="type-signature type enum">enum</span>
+### scales.direction `enum`
 {:#members:scales-direction}
 
 
@@ -2458,8 +2363,7 @@ Specifies the scale Direction of the Scale. See <a href="global.html#Directions"
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2475,8 +2379,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2493,7 +2396,7 @@ Example
 
 
 
-### scales.indicators<span class="type-signature type array">Array</span>
+### scales.indicators `Array`
 {:#members:scales-indicators}
 
 
@@ -2508,8 +2411,7 @@ Specifies the indicator
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2525,8 +2427,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2547,7 +2448,7 @@ Example
 
 
 
-### scales.indicators.backgroundColor<span class="type-signature type string">string</span>
+### scales.indicators.backgroundColor `string`
 {:#members:scales-indicators-backgroundcolor}
 
 
@@ -2562,8 +2463,7 @@ Specifies the backgroundColor in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2579,8 +2479,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2602,7 +2501,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.border<span class="type-signature type number">number</span>
+### scales.indicators.border `number`
 {:#members:scales-indicators-border}
 
 
@@ -2617,8 +2516,7 @@ Specifies the border in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2634,8 +2532,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2657,7 +2554,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.border.color<span class="type-signature type string">string</span>
+### scales.indicators.border.color `string`
 {:#members:scales-indicators-border-color}
 
 
@@ -2672,8 +2569,7 @@ Specifies the border Color in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2689,8 +2585,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2712,7 +2607,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.border.width<span class="type-signature type number">number</span>
+### scales.indicators.border.width `number`
 {:#members:scales-indicators-border-width}
 
 
@@ -2727,8 +2622,7 @@ Specifies the border Width in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2744,8 +2638,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2767,7 +2660,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.font<span class="type-signature type object">object</span>
+### scales.indicators.font `object`
 {:#members:scales-indicators-font}
 
 
@@ -2782,8 +2675,7 @@ Specifies the font of bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2799,8 +2691,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2821,7 +2712,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.font.fontFamily<span class="type-signature type string">string</span>
+### scales.indicators.font.fontFamily `string`
 {:#members:scales-indicators-font-fontfamily}
 
 
@@ -2836,8 +2727,7 @@ Specifies the fontFamily of font in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2853,8 +2743,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2875,7 +2764,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.font.fontStyle<span class="type-signature type enum">enum</span>
+### scales.indicators.font.fontStyle `enum`
 {:#members:scales-indicators-font-fontstyle}
 
 
@@ -2890,8 +2779,7 @@ Specifies the fontStyle of font in bar indicators. See <a href="global.html#Font
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2907,8 +2795,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2929,7 +2816,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.font.size<span class="type-signature type string">string</span>
+### scales.indicators.font.size `string`
 {:#members:scales-indicators-font-size}
 
 
@@ -2944,8 +2831,7 @@ Specifies the size of font in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2961,8 +2847,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2983,7 +2868,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.height<span class="type-signature type number">number</span>
+### scales.indicators.height `number`
 {:#members:scales-indicators-height}
 
 
@@ -2998,8 +2883,7 @@ Specifies the indicator Height of bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3015,8 +2899,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3038,7 +2921,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.opacity<span class="type-signature type number">number</span>
+### scales.indicators.opacity `number`
 {:#members:scales-indicators-opacity}
 
 
@@ -3053,8 +2936,7 @@ Specifies the opacity in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3070,8 +2952,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3091,7 +2972,7 @@ value: 0, backgroundColor: "Red", border:{color: "Green"}, opacity:0.5}]}]});
 
 
 
-### scales.indicators.position<span class="type-signature type object">object</span>
+### scales.indicators.position `object`
 {:#members:scales-indicators-position}
 
 
@@ -3106,8 +2987,7 @@ Specifies the position in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3123,8 +3003,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3146,7 +3025,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.position.x<span class="type-signature type number">number</span>
+### scales.indicators.position.x `number`
 {:#members:scales-indicators-position-x}
 
 
@@ -3161,8 +3040,7 @@ Specifies the x position in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3178,8 +3056,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3201,7 +3078,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.position.y<span class="type-signature type number">number</span>
+### scales.indicators.position.y `number`
 {:#members:scales-indicators-position-y}
 
 
@@ -3216,8 +3093,7 @@ Specifies the y position in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3233,8 +3109,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3256,7 +3131,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.stateRanges<span class="type-signature type array">Array</span>
+### scales.indicators.stateRanges `Array`
 {:#members:scales-indicators-stateranges}
 
 
@@ -3271,8 +3146,7 @@ Specifies the state ranges in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3288,8 +3162,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3310,7 +3183,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.stateRanges.backgroundColor<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.backgroundColor `string`
 {:#members:scales-indicators-stateranges-backgroundcolor}
 
 
@@ -3325,8 +3198,7 @@ Specifies the backgroundColor in bar indicators state ranges
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3342,8 +3214,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3365,7 +3236,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.stateRanges.borderColor<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.borderColor `string`
 {:#members:scales-indicators-stateranges-bordercolor}
 
 
@@ -3380,8 +3251,7 @@ Specifies the borderColor in bar indicators state ranges
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3397,8 +3267,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3420,7 +3289,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.stateRanges.endValue<span class="type-signature type number">number</span>
+### scales.indicators.stateRanges.endValue `number`
 {:#members:scales-indicators-stateranges-endvalue}
 
 
@@ -3435,8 +3304,7 @@ Specifies the endValue in bar indicators state ranges
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3452,8 +3320,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3474,7 +3341,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.stateRanges.startValue<span class="type-signature type number">number</span>
+### scales.indicators.stateRanges.startValue `number`
 {:#members:scales-indicators-stateranges-startvalue}
 
 
@@ -3489,8 +3356,7 @@ Specifies the startValue in bar indicators state ranges
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3506,8 +3372,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3528,7 +3393,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.stateRanges.text<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.text `string`
 {:#members:scales-indicators-stateranges-text}
 
 
@@ -3543,8 +3408,7 @@ Specifies the text in bar indicators state ranges
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3560,8 +3424,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3582,7 +3445,7 @@ Example
 
 
 
-### scales.indicators.stateRanges.textColor<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.textColor `string`
 {:#members:scales-indicators-stateranges-textcolor}
 
 
@@ -3597,8 +3460,7 @@ Specifies the textColor in bar indicators state ranges
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3614,8 +3476,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3636,7 +3497,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.textLocation<span class="type-signature type object">object</span>
+### scales.indicators.textLocation `object`
 {:#members:scales-indicators-textlocation}
 
 
@@ -3651,8 +3512,7 @@ Specifies the textLocation in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3668,8 +3528,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3690,7 +3549,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.textLocation.x<span class="type-signature type number">number</span>
+### scales.indicators.textLocation.x `number`
 {:#members:scales-indicators-textlocation-x}
 
 
@@ -3705,8 +3564,7 @@ Specifies the textLocation position in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3722,8 +3580,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3744,7 +3601,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.textLocation.y<span class="type-signature type number">number</span>
+### scales.indicators.textLocation.y `number`
 {:#members:scales-indicators-textlocation-y}
 
 
@@ -3759,8 +3616,7 @@ Specifies the Y position in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3776,8 +3632,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3798,7 +3653,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.type<span class="type-signature type enum">enum</span>
+### scales.indicators.type `enum`
 {:#members:scales-indicators-type}
 
 
@@ -3813,8 +3668,7 @@ Specifies the indicator Style of font in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3830,8 +3684,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3853,7 +3706,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.indicators.width<span class="type-signature type number">number</span>
+### scales.indicators.width `number`
 {:#members:scales-indicators-width}
 
 
@@ -3868,8 +3721,7 @@ Specifies the indicator Width in bar indicators
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3885,8 +3737,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3908,7 +3759,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-### scales.labels<span class="type-signature type array">Array</span>
+### scales.labels `Array`
 {:#members:scales-labels}
 
 
@@ -3923,8 +3774,7 @@ Specifies the labels.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3940,8 +3790,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3958,7 +3807,7 @@ Example
 
 
 
-### scales.labels.angle<span class="type-signature type number">number</span>
+### scales.labels.angle `number`
 {:#members:scales-labels-angle}
 
 
@@ -3973,8 +3822,7 @@ Specifies the angle of labels.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3990,8 +3838,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4008,7 +3855,7 @@ Example
 
 
 
-### scales.labels.distanceFromScale<span class="type-signature type object">object</span>
+### scales.labels.distanceFromScale `object`
 {:#members:scales-labels-distancefromscale}
 
 
@@ -4023,8 +3870,7 @@ Specifies the DistanceFromScale of labels.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4040,8 +3886,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4058,7 +3903,7 @@ Example
 
 
 
-### scales.labels.distanceFromScale.x<span class="type-signature type number">number</span>
+### scales.labels.distanceFromScale.x `number`
 {:#members:scales-labels-distancefromscale-x}
 
 
@@ -4073,8 +3918,7 @@ Specifies the xDistanceFromScale of labels.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4090,8 +3934,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4108,7 +3951,7 @@ Example
 
 
 
-### scales.labels.distanceFromScale.y<span class="type-signature type number">number</span>
+### scales.labels.distanceFromScale.y `number`
 {:#members:scales-labels-distancefromscale-y}
 
 
@@ -4123,8 +3966,7 @@ Specifies the yDistanceFromScale of labels.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4140,8 +3982,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4158,7 +3999,7 @@ Example
 
 
 
-### scales.labels.font<span class="type-signature type object">object</span>
+### scales.labels.font `object`
 {:#members:scales-labels-font}
 
 
@@ -4173,8 +4014,7 @@ Specifies the font of labels.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4190,8 +4030,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4208,7 +4047,7 @@ Example
 
 
 
-### scales.labels.font.fontFamily<span class="type-signature type string">string</span>
+### scales.labels.font.fontFamily `string`
 {:#members:scales-labels-font-fontfamily}
 
 
@@ -4223,8 +4062,7 @@ Specifies the fontFamily of font.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4240,8 +4078,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4258,7 +4095,7 @@ Example
 
 
 
-### scales.labels.font.fontStyle<span class="type-signature type enum">enum</span>
+### scales.labels.font.fontStyle `enum`
 {:#members:scales-labels-font-fontstyle}
 
 
@@ -4273,8 +4110,7 @@ Specifies the fontStyle of font.See <a href="global.html#FontStyle">FontStyle</a
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4290,8 +4126,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4308,7 +4143,7 @@ Example
 
 
 
-### scales.labels.font.size<span class="type-signature type string">string</span>
+### scales.labels.font.size `string`
 {:#members:scales-labels-font-size}
 
 
@@ -4323,8 +4158,7 @@ Specifies the size of font.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4340,8 +4174,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4358,7 +4191,7 @@ Example
 
 
 
-### scales.labels.includeFirstValue<span class="type-signature type boolean">boolean</span>
+### scales.labels.includeFirstValue `boolean`
 {:#members:scales-labels-includefirstvalue}
 
 
@@ -4373,8 +4206,7 @@ need to includeFirstValue.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4390,8 +4222,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4408,7 +4239,7 @@ Example
 
 
 
-### scales.labels.opacity<span class="type-signature type number">number</span>
+### scales.labels.opacity `number`
 {:#members:scales-labels-opacity}
 
 
@@ -4423,8 +4254,7 @@ Specifies the opacity of label.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4440,8 +4270,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4458,7 +4287,7 @@ Example
 
 
 
-### scales.labels.placement<span class="type-signature type enum">enum</span>
+### scales.labels.placement `enum`
 {:#members:scales-labels-placement}
 
 
@@ -4473,8 +4302,7 @@ Specifies the label Placement of label. See <a href="global.html#LabelPlacement"
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4490,8 +4318,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4508,7 +4335,7 @@ Example
 
 
 
-### scales.labels.textColor<span class="type-signature type string">string</span>
+### scales.labels.textColor `string`
 {:#members:scales-labels-textcolor}
 
 
@@ -4523,8 +4350,7 @@ Specifies the textColor of font.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4540,8 +4366,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4558,7 +4383,7 @@ $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{textColor: "green"}]}]});
 
 
 
-### scales.labels.type<span class="type-signature type enum">enum</span>
+### scales.labels.type `enum`
 {:#members:scales-labels-type}
 
 
@@ -4573,8 +4398,7 @@ Specifies the label Style of label. See <a href="global.html#LabelType">LabelTyp
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4590,8 +4414,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4608,7 +4431,7 @@ Example
 
 
 
-### scales.labels.unitText<span class="type-signature type string">string</span>
+### scales.labels.unitText `string`
 {:#members:scales-labels-unittext}
 
 
@@ -4623,8 +4446,7 @@ Specifies the unitText of label.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4640,8 +4462,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4658,7 +4479,7 @@ Example
 
 
 
-### scales.labels.unitTextPlacement<span class="type-signature type enum">enum</span>
+### scales.labels.unitTextPlacement `enum`
 {:#members:scales-labels-unittextplacement}
 
 
@@ -4673,8 +4494,7 @@ Specifies the unitText Position of label.See <a href="global.html#UnitTextPlacem
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4690,8 +4510,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4708,7 +4527,7 @@ Example
 
 
 
-### scales.length<span class="type-signature type number">number</span>
+### scales.length `number`
 {:#members:scales-length}
 
 
@@ -4723,8 +4542,7 @@ Specifies the scaleBar Length.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4740,8 +4558,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4758,7 +4575,7 @@ Example
 
 
 
-### scales.majorIntervalValue<span class="type-signature type number">number</span>
+### scales.majorIntervalValue `number`
 {:#members:scales-majorintervalvalue}
 
 
@@ -4773,8 +4590,7 @@ Specifies the majorIntervalValue of the Scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4790,8 +4606,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4808,7 +4623,7 @@ Example
 
 
 
-### scales.markerPointers<span class="type-signature type array">Array</span>
+### scales.markerPointers `Array`
 {:#members:scales-markerpointers}
 
 
@@ -4823,8 +4638,7 @@ Specifies the markerPointers
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4840,8 +4654,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4858,7 +4671,7 @@ Example
 
 
 
-### scales.markerPointers.backgroundColor<span class="type-signature type string">string</span>
+### scales.markerPointers.backgroundColor `string`
 {:#members:scales-markerpointers-backgroundcolor}
 
 
@@ -4873,8 +4686,7 @@ Specifies the backgroundColor of marker pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4890,8 +4702,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4908,7 +4719,7 @@ Example
 
 
 
-### scales.markerPointers.border<span class="type-signature type object">object</span>
+### scales.markerPointers.border `object`
 {:#members:scales-markerpointers-border}
 
 
@@ -4923,8 +4734,7 @@ Specifies the border of marker pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4940,8 +4750,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4958,7 +4767,7 @@ Example
 
 
 
-### scales.markerPointers.border.color<span class="type-signature type string">string</span>
+### scales.markerPointers.border.color `string`
 {:#members:scales-markerpointers-border-color}
 
 
@@ -4973,8 +4782,7 @@ Specifies the border color of marker pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4990,8 +4798,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5008,7 +4815,7 @@ Example
 
 
 
-### scales.markerPointers.border.width<span class="type-signature type number">number</span>
+### scales.markerPointers.border.width `number`
 {:#members:scales-markerpointers-border-width}
 
 
@@ -5023,8 +4830,7 @@ Specifies the border of marker pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5040,8 +4846,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5058,7 +4863,7 @@ Example
 
 
 
-### scales.markerPointers.distanceFromScale<span class="type-signature type number">number</span>
+### scales.markerPointers.distanceFromScale `number`
 {:#members:scales-markerpointers-distancefromscale}
 
 
@@ -5073,8 +4878,7 @@ Specifies the distanceFromScale of marker pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5090,8 +4894,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5108,7 +4911,7 @@ Example
 
 
 
-### scales.markerPointers.gradients<span class="type-signature type object">object</span>
+### scales.markerPointers.gradients `object`
 {:#members:scales-markerpointers-gradients}
 
 
@@ -5123,8 +4926,7 @@ Specifies the pointer Gradient of marker pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5140,8 +4942,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5158,7 +4959,7 @@ Example
 
 
 
-### scales.markerPointers.length<span class="type-signature type number">number</span>
+### scales.markerPointers.length `number`
 {:#members:scales-markerpointers-length}
 
 
@@ -5173,8 +4974,7 @@ Specifies the pointer Length of marker pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5190,8 +4990,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5208,7 +5007,7 @@ Example
 
 
 
-### scales.markerPointers.opacity<span class="type-signature type number">number</span>
+### scales.markerPointers.opacity `number`
 {:#members:scales-markerpointers-opacity}
 
 
@@ -5223,8 +5022,7 @@ Specifies the opacity of marker pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5240,8 +5038,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5258,7 +5055,7 @@ Example
 
 
 
-### scales.markerPointers.placement<span class="type-signature type enum">enum</span>
+### scales.markerPointers.placement `enum`
 {:#members:scales-markerpointers-placement}
 
 
@@ -5273,8 +5070,7 @@ Specifies the pointer Placement of marker pointer See <a href="global.html#Point
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5290,8 +5086,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5308,7 +5103,7 @@ Example
 
 
 
-### scales.markerPointers.type<span class="type-signature type enum">enum</span>
+### scales.markerPointers.type `enum`
 {:#members:scales-markerpointers-type}
 
 
@@ -5323,8 +5118,7 @@ Specifies the marker Style of marker pointerSee <a href="global.html#MarkerType"
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5340,8 +5134,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5358,7 +5151,7 @@ Example
 
 
 
-### scales.markerPointers.value<span class="type-signature type number">number</span>
+### scales.markerPointers.value `number`
 {:#members:scales-markerpointers-value}
 
 
@@ -5373,8 +5166,7 @@ Specifies the value of marker pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5390,8 +5182,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5408,7 +5199,7 @@ Example
 
 
 
-### scales.markerPointers.width<span class="type-signature type number">number</span>
+### scales.markerPointers.width `number`
 {:#members:scales-markerpointers-width}
 
 
@@ -5423,8 +5214,7 @@ Specifies the pointer Width of marker pointer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5440,8 +5230,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5458,7 +5247,7 @@ Example
 
 
 
-### scales.maximum<span class="type-signature type number">number</span>
+### scales.maximum `number`
 {:#members:scales-maximum}
 
 
@@ -5473,8 +5262,7 @@ Specifies the maximum of the Scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5490,8 +5278,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5508,7 +5295,7 @@ Example
 
 
 
-### scales.minimum<span class="type-signature type number">number</span>
+### scales.minimum `number`
 {:#members:scales-minimum}
 
 
@@ -5523,8 +5310,7 @@ Specifies the minimum of the Scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5540,8 +5326,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5558,7 +5343,7 @@ Example
 
 
 
-### scales.minorIntervalValue<span class="type-signature type number">number</span>
+### scales.minorIntervalValue `number`
 {:#members:scales-minorintervalvalue}
 
 
@@ -5573,8 +5358,7 @@ Specifies the minorIntervalValue of the Scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5590,8 +5374,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5608,7 +5391,7 @@ Example
 
 
 
-### scales.opacity<span class="type-signature type number">number</span>
+### scales.opacity `number`
 {:#members:scales-opacity}
 
 
@@ -5623,8 +5406,7 @@ Specifies the opacity of the Scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5640,8 +5422,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5658,7 +5439,7 @@ Example
 
 
 
-### scales.position<span class="type-signature type object">object</span>
+### scales.position `object`
 {:#members:scales-position}
 
 
@@ -5673,8 +5454,7 @@ Specifies the position
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5690,8 +5470,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5708,7 +5487,7 @@ Example
 
 
 
-### scales.position.x<span class="type-signature type number">number</span>
+### scales.position.x `number`
 {:#members:scales-position-x}
 
 
@@ -5723,8 +5502,7 @@ Specifies the Horizontal position
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5740,8 +5518,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5758,7 +5535,7 @@ Example
 
 
 
-### scales.position.y<span class="type-signature type number">number</span>
+### scales.position.y `number`
 {:#members:scales-position-y}
 
 
@@ -5773,8 +5550,7 @@ Specifies the vertical position
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5790,8 +5566,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5808,7 +5583,7 @@ Example
 
 
 
-### scales.ranges<span class="type-signature type array">Array</span>
+### scales.ranges `Array`
 {:#members:scales-ranges}
 
 
@@ -5823,8 +5598,7 @@ Specifies the ranges in the tick.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5840,8 +5614,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5858,7 +5631,7 @@ Example
 
 
 
-### scales.ranges.backgroundColor<span class="type-signature type string">string</span>
+### scales.ranges.backgroundColor `string`
 {:#members:scales-ranges-backgroundcolor}
 
 
@@ -5873,8 +5646,7 @@ Specifies the backgroundColor in the ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5890,8 +5662,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5908,7 +5679,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-### scales.ranges.border<span class="type-signature type object">Object</span>
+### scales.ranges.border `object`
 {:#members:scales-ranges-border}
 
 
@@ -5923,8 +5694,7 @@ Specifies the border in the ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5940,8 +5710,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5958,7 +5727,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-### scales.ranges.border.color<span class="type-signature type string">string</span>
+### scales.ranges.border.color `string`
 {:#members:scales-ranges-border-color}
 
 
@@ -5973,8 +5742,7 @@ Specifies the border color in the ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5990,8 +5758,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6008,7 +5775,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-### scales.ranges.border.width<span class="type-signature type number">number</span>
+### scales.ranges.border.width `number`
 {:#members:scales-ranges-border-width}
 
 
@@ -6023,8 +5790,7 @@ Specifies the border width in the ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6040,8 +5806,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6058,7 +5823,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-### scales.ranges.distanceFromScale<span class="type-signature type number">number</span>
+### scales.ranges.distanceFromScale `number`
 {:#members:scales-ranges-distancefromscale}
 
 
@@ -6073,8 +5838,7 @@ Specifies the distanceFromScale in the ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6090,8 +5854,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6108,7 +5871,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-### scales.ranges.endValue<span class="type-signature type number">number</span>
+### scales.ranges.endValue `number`
 {:#members:scales-ranges-endvalue}
 
 
@@ -6123,8 +5886,7 @@ Specifies the endValue in the ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6140,8 +5902,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6158,7 +5919,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-### scales.ranges.endWidth<span class="type-signature type number">number</span>
+### scales.ranges.endWidth `number`
 {:#members:scales-ranges-endwidth}
 
 
@@ -6173,8 +5934,7 @@ Specifies the endWidth in the ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6190,8 +5950,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6208,7 +5967,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-### scales.ranges.gradients<span class="type-signature type object">object</span>
+### scales.ranges.gradients `object`
 {:#members:scales-ranges-gradients}
 
 
@@ -6223,8 +5982,7 @@ Specifies the range Gradient in the ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6240,8 +5998,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6258,7 +6015,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-### scales.ranges.opacity<span class="type-signature type number">number</span>
+### scales.ranges.opacity `number`
 {:#members:scales-ranges-opacity}
 
 
@@ -6273,8 +6030,7 @@ Specifies the opacity in the ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6290,8 +6046,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6308,7 +6063,7 @@ Example
 
 
 
-### scales.ranges.placement<span class="type-signature type enum">enum</span>
+### scales.ranges.placement `enum`
 {:#members:scales-ranges-placement}
 
 
@@ -6323,8 +6078,7 @@ Specifies the range Position in the ranges. See <a href="global.html#RangePlacem
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6340,8 +6094,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6358,7 +6111,7 @@ Example
 
 
 
-### scales.ranges.startValue<span class="type-signature type number">number</span>
+### scales.ranges.startValue `number`
 {:#members:scales-ranges-startvalue}
 
 
@@ -6373,8 +6126,7 @@ Specifies the startValue in the ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6390,8 +6142,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6408,7 +6159,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-### scales.ranges.startWidth<span class="type-signature type number">number</span>
+### scales.ranges.startWidth `number`
 {:#members:scales-ranges-startwidth}
 
 
@@ -6423,8 +6174,7 @@ Specifies the startWidth in the ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6440,8 +6190,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6458,7 +6207,7 @@ $("#LinearGauge1").ejLinearGauge({ scales: [{ showBarPointers: false, width: 3, 
 
 
 
-### scales.shadowOffset<span class="type-signature type number">number</span>
+### scales.shadowOffset `number`
 {:#members:scales-shadowoffset}
 
 
@@ -6473,8 +6222,7 @@ Specifies the shadowOffset.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6490,8 +6238,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6508,7 +6255,7 @@ Example
 
 
 
-### scales.showBarPointers<span class="type-signature type boolean">boolean</span>
+### scales.showBarPointers `boolean`
 {:#members:scales-showbarpointers}
 
 
@@ -6523,8 +6270,7 @@ Specifies the showBarPointers state.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6540,8 +6286,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6558,7 +6303,7 @@ Example
 
 
 
-### scales.showCustomLabels<span class="type-signature type boolean">boolean</span>
+### scales.showCustomLabels `boolean`
 {:#members:scales-showcustomlabels}
 
 
@@ -6573,8 +6318,7 @@ Specifies the showCustomLabels state.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6590,8 +6334,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6608,7 +6351,7 @@ Example
 
 
 
-### scales.showIndicators<span class="type-signature type boolean">boolean</span>
+### scales.showIndicators `boolean`
 {:#members:scales-showindicators}
 
 
@@ -6623,8 +6366,7 @@ Specifies the showIndicators state.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6640,8 +6382,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6658,7 +6399,7 @@ Example
 
 
 
-### scales.showLabels<span class="type-signature type boolean">boolean</span>
+### scales.showLabels `boolean`
 {:#members:scales-showlabels}
 
 
@@ -6673,8 +6414,7 @@ Specifies the showLabels state.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6690,8 +6430,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6708,7 +6447,7 @@ Example
 
 
 
-### scales.showMarkerPointers<span class="type-signature type boolean">boolean</span>
+### scales.showMarkerPointers `boolean`
 {:#members:scales-showmarkerpointers}
 
 
@@ -6723,8 +6462,7 @@ Specifies the showMarkerPointers state.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6740,8 +6478,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6758,7 +6495,7 @@ Example
 
 
 
-### scales.showRanges<span class="type-signature type boolean">boolean</span>
+### scales.showRanges `boolean`
 {:#members:scales-showranges}
 
 
@@ -6773,8 +6510,7 @@ Specifies the showRanges state.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6790,8 +6526,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6808,7 +6543,7 @@ Example
 
 
 
-### scales.showTicks<span class="type-signature type boolean">boolean</span>
+### scales.showTicks `boolean`
 {:#members:scales-showticks}
 
 
@@ -6823,8 +6558,7 @@ Specifies the showTicks state.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6840,8 +6574,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6858,7 +6591,7 @@ Example
 
 
 
-### scales.ticks<span class="type-signature type array">Array</span>
+### scales.ticks `Array`
 {:#members:scales-ticks}
 
 
@@ -6873,8 +6606,7 @@ Specifies the ticks in the scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6890,8 +6622,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6908,7 +6639,7 @@ Example
 
 
 
-### scales.ticks.angle<span class="type-signature type number">number</span>
+### scales.ticks.angle `number`
 {:#members:scales-ticks-angle}
 
 
@@ -6923,8 +6654,7 @@ Specifies the angle in the tick.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6940,8 +6670,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6958,7 +6687,7 @@ Example
 
 
 
-### scales.ticks.color<span class="type-signature type string">string</span>
+### scales.ticks.color `string`
 {:#members:scales-ticks-color}
 
 
@@ -6973,8 +6702,7 @@ Specifies the tick Color in the tick.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6990,8 +6718,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7008,7 +6735,7 @@ Example
 
 
 
-### scales.ticks.distanceFromScale<span class="type-signature type object">object</span>
+### scales.ticks.distanceFromScale `object`
 {:#members:scales-ticks-distancefromscale}
 
 
@@ -7023,8 +6750,7 @@ Specifies the DistanceFromScale in the tick.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7040,8 +6766,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7058,7 +6783,7 @@ Example
 
 
 
-### scales.ticks.distanceFromScale.x<span class="type-signature type number">number</span>
+### scales.ticks.distanceFromScale.x `number`
 {:#members:scales-ticks-distancefromscale-x}
 
 
@@ -7073,8 +6798,7 @@ Specifies the xDistanceFromScale in the tick.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7090,8 +6814,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7108,7 +6831,7 @@ Example
 
 
 
-### scales.ticks.distanceFromScale.y<span class="type-signature type number">number</span>
+### scales.ticks.distanceFromScale.y `number`
 {:#members:scales-ticks-distancefromscale-y}
 
 
@@ -7123,8 +6846,7 @@ Specifies the yDistanceFromScale in the tick.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7140,8 +6862,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7158,7 +6879,7 @@ Example
 
 
 
-### scales.ticks.height<span class="type-signature type number">number</span>
+### scales.ticks.height `number`
 {:#members:scales-ticks-height}
 
 
@@ -7173,8 +6894,7 @@ Specifies the tick Height in the tick.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7190,8 +6910,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7208,7 +6927,7 @@ Example
 
 
 
-### scales.ticks.opacity<span class="type-signature type number">number</span>
+### scales.ticks.opacity `number`
 {:#members:scales-ticks-opacity}
 
 
@@ -7223,8 +6942,7 @@ Specifies the opacity in the tick.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7240,8 +6958,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7258,7 +6975,7 @@ Example
 
 
 
-### scales.ticks.placement<span class="type-signature type enum">enum</span>
+### scales.ticks.placement `enum`
 {:#members:scales-ticks-placement}
 
 
@@ -7273,8 +6990,7 @@ Specifies the tick Placement in the tick. See <a href="global.html#TickPlacement
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7290,8 +7006,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7308,7 +7023,7 @@ Example
 
 
 
-### scales.ticks.type<span class="type-signature type enum">enum</span>
+### scales.ticks.type `enum`
 {:#members:scales-ticks-type}
 
 
@@ -7323,8 +7038,7 @@ Specifies the tick Style in the tick. See <a href="global.html#TickType">TickTyp
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7340,8 +7054,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7358,7 +7071,7 @@ Example
 
 
 
-### scales.ticks.width<span class="type-signature type number">number</span>
+### scales.ticks.width `number`
 {:#members:scales-ticks-width}
 
 
@@ -7373,8 +7086,7 @@ Specifies the tick Width in the tick.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7390,8 +7102,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7408,7 +7119,7 @@ Example
 
 
 
-### scales.type<span class="type-signature type enum">enum</span>
+### scales.type `enum`
 {:#members:scales-type}
 
 
@@ -7423,8 +7134,7 @@ Specifies the scaleBar type .See <a href="global.html#ScaleType">ScaleType</a>
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7440,8 +7150,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7458,7 +7167,7 @@ Example
 
 
 
-### scales.width<span class="type-signature type number">number</span>
+### scales.width `number`
 {:#members:scales-width}
 
 
@@ -7473,8 +7182,7 @@ Specifies the scaleBar width.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7490,8 +7198,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7508,7 +7215,7 @@ Example
 
 
 
-### theme<span class="type-signature type enum">enum</span>
+### theme `enum`
 {:#members:theme}
 
 
@@ -7523,8 +7230,7 @@ Specifies the theme for Linear gauge. See LinearGauge.Themes
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7540,8 +7246,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7558,7 +7263,7 @@ Example
 
 
 
-### tickColor<span class="type-signature type string">string</span>
+### tickColor `string`
 {:#members:tickcolor}
 
 
@@ -7573,8 +7278,7 @@ Specifies the tick Color for Linear gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7590,8 +7294,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7608,7 +7311,7 @@ Example
 
 
 
-### tooltip<span class="type-signature type object">object</span>
+### tooltip `object`
 {:#members:tooltip}
 
 
@@ -7623,8 +7326,7 @@ Specify tooltip options of linear gauge
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7640,8 +7342,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7659,7 +7360,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true,showCusto
 
 
 
-### tooltip.showCustomLabelTooltip<span class="type-signature type boolean">boolean</span>
+### tooltip.showCustomLabelTooltip `boolean`
 {:#members:tooltip-showcustomlabeltooltip}
 
 
@@ -7674,8 +7375,7 @@ Specify showCustomLabelTooltip value of linear gauge
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7691,8 +7391,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7710,7 +7409,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showCustomLabelTooltip: true} })
 
 
 
-### tooltip.showLabelTooltip<span class="type-signature type boolean">boolean</span>
+### tooltip.showLabelTooltip `boolean`
 {:#members:tooltip-showlabeltooltip}
 
 
@@ -7725,8 +7424,7 @@ Specify showLabelTooltip value of linear gauge
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7742,8 +7440,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7761,7 +7458,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true} });
 
 
 
-### tooltip.templateID<span class="type-signature type string">string</span>
+### tooltip.templateID `string`
 {:#members:tooltip-templateid}
 
 
@@ -7776,8 +7473,7 @@ Specify templateID value of linear gauge
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7793,8 +7489,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7812,7 +7507,7 @@ $("#CoreLinearGauge").ejLinearGauge({  tooltip:{showLabelTooltip: true, template
 
 
 
-### value<span class="type-signature type number">number</span>
+### value `number`
 {:#members:value}
 
 
@@ -7827,8 +7522,7 @@ Specifies the value of the Gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7844,8 +7538,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7862,7 +7555,7 @@ $("#LinearGauge1").ejLinearGauge({  size: 5.5});
 
 
 
-### width<span class="type-signature type number">number</span>
+### width `number`
 {:#members:width}
 
 
@@ -7877,8 +7570,7 @@ Specifies the width of Linear gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -7894,8 +7586,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7919,7 +7610,7 @@ Example
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -7935,8 +7626,7 @@ destroy the linear gauge all events bound using this._on will be unbind automati
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7955,7 +7645,7 @@ linearGaugeobj.destroy();
 
 
 
-### exportImage<span class="signature">()</span>
+### exportImage()
 {:#methods:exportimage}
 
 
@@ -7994,8 +7684,7 @@ argument.fileType{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8014,7 +7703,7 @@ LinearGaugeObj.exportImage("myImage","jpeg");
 
 
 
-### getBarDistanceFromScale<span class="signature">()</span>
+### getBarDistanceFromScale()
 {:#methods:getbardistancefromscale}
 
 
@@ -8053,8 +7742,7 @@ argument.pointerIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8073,7 +7761,7 @@ LinearGaugeObj.getBarDistanceFromScale(0,0);
 
 
 
-### getBarPointerValue<span class="signature">()</span>
+### getBarPointerValue()
 {:#methods:getbarpointervalue}
 
 
@@ -8112,8 +7800,7 @@ argument.pointerIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8132,7 +7819,7 @@ LinearGaugeObj.getBarPointerValue(0,0);
 
 
 
-### getBarWidth<span class="signature">()</span>
+### getBarWidth()
 {:#methods:getbarwidth}
 
 
@@ -8171,8 +7858,7 @@ argument.pointerIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8192,7 +7878,7 @@ LinearGaugeObj.getBarWidth(0,0);
 
 
 
-### getCustomLabelAngle<span class="signature">()</span>
+### getCustomLabelAngle()
 {:#methods:getcustomlabelangle}
 
 
@@ -8231,8 +7917,7 @@ argument.customLabelIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8251,7 +7936,7 @@ LinearGaugeObj.getCustomLabelAngle(0,0);
 
 
 
-### getCustomLabelValue<span class="signature">()</span>
+### getCustomLabelValue()
 {:#methods:getcustomlabelvalue}
 
 
@@ -8290,8 +7975,7 @@ argument.customLabelIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8310,7 +7994,7 @@ LinearGaugeObj.getCustomLabelValue(0,0);
 
 
 
-### getLabelAngle<span class="signature">()</span>
+### getLabelAngle()
 {:#methods:getlabelangle}
 
 
@@ -8349,8 +8033,7 @@ argument.labelIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8369,7 +8052,7 @@ LinearGaugeObj.getLabelAngle(0,0);
 
 
 
-### getLabelPlacement<span class="signature">()</span>
+### getLabelPlacement()
 {:#methods:getlabelplacement}
 
 
@@ -8408,8 +8091,7 @@ argument.labelIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8428,7 +8110,7 @@ LinearGaugeObj.getLabelPlacement(0,0);
 
 
 
-### getLabelStyle<span class="signature">()</span>
+### getLabelStyle()
 {:#methods:getlabelstyle}
 
 
@@ -8467,8 +8149,7 @@ argument.labelIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8487,7 +8168,7 @@ LinearGaugeObj.getLabelStyle(0,0);
 
 
 
-### getLabelXDistanceFromScale<span class="signature">()</span>
+### getLabelXDistanceFromScale()
 {:#methods:getlabelxdistancefromscale}
 
 
@@ -8526,8 +8207,7 @@ argument.labelIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8546,7 +8226,7 @@ LinearGaugeObj.getLabelXDistanceFromScale(0,0);
 
 
 
-### getLabelYDistanceFromScale<span class="signature">()</span>
+### getLabelYDistanceFromScale()
 {:#methods:getlabelydistancefromscale}
 
 
@@ -8585,8 +8265,7 @@ argument.labelIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8605,7 +8284,7 @@ LinearGaugeObj.getLabelYDistanceFromScale(0,0);
 
 
 
-### getMajorIntervalValue<span class="signature">()</span>
+### getMajorIntervalValue()
 {:#methods:getmajorintervalvalue}
 
 
@@ -8638,8 +8317,7 @@ argument.scaleIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8658,7 +8336,7 @@ LinearGaugeObj.getMajorIntervalValue(0);
 
 
 
-### getMarkerStyle<span class="signature">()</span>
+### getMarkerStyle()
 {:#methods:getmarkerstyle}
 
 
@@ -8697,8 +8375,7 @@ argument.pointerIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8717,7 +8394,7 @@ LinearGaugeObj.getMarkerStyle(0,0);
 
 
 
-### getMaximumValue<span class="signature">()</span>
+### getMaximumValue()
 {:#methods:getmaximumvalue}
 
 
@@ -8750,8 +8427,7 @@ argument.scaleIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8770,7 +8446,7 @@ LinearGaugeObj.getMaximumValue(0);
 
 
 
-### getMinimumValue<span class="signature">()</span>
+### getMinimumValue()
 {:#methods:getminimumvalue}
 
 
@@ -8809,8 +8485,7 @@ argument.pointerIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8829,7 +8504,7 @@ LinearGaugeObj.getMinimumValue(0,0);
 
 
 
-### getMinorIntervalValue<span class="signature">()</span>
+### getMinorIntervalValue()
 {:#methods:getminorintervalvalue}
 
 
@@ -8862,8 +8537,7 @@ argument.scaleIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8882,7 +8556,7 @@ LinearGaugeObj.getMinorIntervalValue(0);
 
 
 
-### getPointerDistanceFromScale<span class="signature">()</span>
+### getPointerDistanceFromScale()
 {:#methods:getpointerdistancefromscale}
 
 
@@ -8921,8 +8595,7 @@ argument.pointerIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8941,7 +8614,7 @@ LinearGaugeObj.getPointerDistanceFromScale(0,0);
 
 
 
-### getPointerHeight<span class="signature">()</span>
+### getPointerHeight()
 {:#methods:getpointerheight}
 
 
@@ -8980,8 +8653,7 @@ argument.pointerIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9000,7 +8672,7 @@ LinearGaugeObj.getPointerHeight(0,0);
 
 
 
-### getPointerPlacement<span class="signature">()</span>
+### getPointerPlacement()
 {:#methods:getpointerplacement}
 
 
@@ -9039,8 +8711,7 @@ argument.pointerIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9059,7 +8730,7 @@ LinearGaugeObj.getPointerPlacement(0,0);
 
 
 
-### getPointerValue<span class="signature">()</span>
+### getPointerValue()
 {:#methods:getpointervalue}
 
 
@@ -9098,8 +8769,7 @@ argument.pointerIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9118,7 +8788,7 @@ LinearGaugeObj.getPointerValue(0,0);
 
 
 
-### getPointerWidth<span class="signature">()</span>
+### getPointerWidth()
 {:#methods:getpointerwidth}
 
 
@@ -9157,8 +8827,7 @@ argument.pointerIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9177,7 +8846,7 @@ LinearGaugeObj.getPointerWidth(0,0);
 
 
 
-### getRangeBorderWidth<span class="signature">()</span>
+### getRangeBorderWidth()
 {:#methods:getrangeborderwidth}
 
 
@@ -9216,8 +8885,7 @@ argument.rangeIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9236,7 +8904,7 @@ LinearGaugeObj.getRangeBorderWidth(0,0);
 
 
 
-### getRangeDistanceFromScale<span class="signature">()</span>
+### getRangeDistanceFromScale()
 {:#methods:getrangedistancefromscale}
 
 
@@ -9275,8 +8943,7 @@ argument.rangeIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9295,7 +8962,7 @@ LinearGaugeObj.getRangeDistanceFromScale(0,0);
 
 
 
-### getRangeEndValue<span class="signature">()</span>
+### getRangeEndValue()
 {:#methods:getrangeendvalue}
 
 
@@ -9334,8 +9001,7 @@ argument.rangeIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9354,7 +9020,7 @@ LinearGaugeObj.getRangeEndValue(0,0);
 
 
 
-### getRangeEndWidth<span class="signature">()</span>
+### getRangeEndWidth()
 {:#methods:getrangeendwidth}
 
 
@@ -9393,8 +9059,7 @@ argument.rangeIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9413,7 +9078,7 @@ LinearGaugeObj.getRangeEndWidth(0,0);
 
 
 
-### getRangePosition<span class="signature">()</span>
+### getRangePosition()
 {:#methods:getrangeposition}
 
 
@@ -9452,8 +9117,7 @@ argument.rangeIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9472,7 +9136,7 @@ LinearGaugeObj.getRangePosition(0,0);
 
 
 
-### getRangeStartValue<span class="signature">()</span>
+### getRangeStartValue()
 {:#methods:getrangestartvalue}
 
 
@@ -9511,8 +9175,7 @@ argument.rangeIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9531,7 +9194,7 @@ LinearGaugeObj.getRangeStartValue(0,0);
 
 
 
-### getRangeStartWidth<span class="signature">()</span>
+### getRangeStartWidth()
 {:#methods:getrangestartwidth}
 
 
@@ -9570,8 +9233,7 @@ argument.rangeIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9590,7 +9252,7 @@ LinearGaugeObj.getRangeStartWidth(0,0);
 
 
 
-### getScaleBarLength<span class="signature">()</span>
+### getScaleBarLength()
 {:#methods:getscalebarlength}
 
 
@@ -9623,8 +9285,7 @@ argument.scaleIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9643,7 +9304,7 @@ LinearGaugeObj.getScaleBarLength(0);
 
 
 
-### getScaleBarSize<span class="signature">()</span>
+### getScaleBarSize()
 {:#methods:getscalebarsize}
 
 
@@ -9682,8 +9343,7 @@ argument.pointerIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9702,7 +9362,7 @@ LinearGaugeObj.getScaleBarSize(0,0);
 
 
 
-### getScaleBorderWidth<span class="signature">()</span>
+### getScaleBorderWidth()
 {:#methods:getscaleborderwidth}
 
 
@@ -9735,8 +9395,7 @@ argument.scaleIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9755,7 +9414,7 @@ LinearGaugeObj.getScaleBorderWidth(0);
 
 
 
-### getScaleDirection<span class="signature">()</span>
+### getScaleDirection()
 {:#methods:getscaledirection}
 
 
@@ -9788,8 +9447,7 @@ argument.scaleIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9808,7 +9466,7 @@ LinearGaugeObj.getScaleDirection(0,0);
 
 
 
-### getScaleLocation<span class="signature">()</span>
+### getScaleLocation()
 {:#methods:getscalelocation}
 
 
@@ -9841,8 +9499,7 @@ argument.scaleIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9861,7 +9518,7 @@ LinearGaugeObj.getScaleLocation(0);
 
 
 
-### getScaleStyle<span class="signature">()</span>
+### getScaleStyle()
 {:#methods:getscalestyle}
 
 
@@ -9894,8 +9551,7 @@ argument.scaleIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9914,7 +9570,7 @@ LinearGaugeObj.getScaleStyle(0);
 
 
 
-### getTickAngle<span class="signature">()</span>
+### getTickAngle()
 {:#methods:gettickangle}
 
 
@@ -9953,8 +9609,7 @@ argument.TickIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9973,7 +9628,7 @@ LinearGaugeObj.getTickAngle(0,0);
 
 
 
-### getTickHeight<span class="signature">()</span>
+### getTickHeight()
 {:#methods:gettickheight}
 
 
@@ -10012,8 +9667,7 @@ argument.TickIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10032,7 +9686,7 @@ LinearGaugeObj.getTickHeight(0,0);
 
 
 
-### getTickPlacement<span class="signature">()</span>
+### getTickPlacement()
 {:#methods:gettickplacement}
 
 
@@ -10071,8 +9725,7 @@ argument.TickIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10091,7 +9744,7 @@ LinearGaugeObj.getTickPlacement(0,0);
 
 
 
-### getTickStyle<span class="signature">()</span>
+### getTickStyle()
 {:#methods:gettickstyle}
 
 
@@ -10130,8 +9783,7 @@ argument.TickIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10150,7 +9802,7 @@ LinearGaugeObj.getTickStyle(0,0);
 
 
 
-### getTickWidth<span class="signature">()</span>
+### getTickWidth()
 {:#methods:gettickwidth}
 
 
@@ -10189,8 +9841,7 @@ argument.TickIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10209,7 +9860,7 @@ LinearGaugeObj.getTickWidth(0,0);
 
 
 
-### getTickXDistanceFromScale<span class="signature">()</span>
+### getTickXDistanceFromScale()
 {:#methods:gettickxdistancefromscale}
 
 
@@ -10248,8 +9899,7 @@ argument.TickIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10268,7 +9918,7 @@ LinearGaugeObj.getTickXDistanceFromScale(0,0);
 
 
 
-### getTickYDistanceFromScale<span class="signature">()</span>
+### getTickYDistanceFromScale()
 {:#methods:gettickydistancefromscale}
 
 
@@ -10307,8 +9957,7 @@ argument.TickIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10327,7 +9976,7 @@ LinearGaugeObj.getTickYDistanceFromScale(0,0);
 
 
 
-### scales<span class="signature">()</span>
+### scales()
 {:#methods:scales}
 
 
@@ -10342,8 +9991,7 @@ Specifies the scales.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -10359,8 +10007,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10377,7 +10024,7 @@ Example
 
 
 
-### setBarDistanceFromScale<span class="signature">()</span>
+### setBarDistanceFromScale()
 {:#methods:setbardistancefromscale}
 
 
@@ -10422,8 +10069,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10442,7 +10088,7 @@ LinearGaugeObj.setBarDistanceFromScale(0,0,30);
 
 
 
-### setBarPointerValue<span class="signature">()</span>
+### setBarPointerValue()
 {:#methods:setbarpointervalue}
 
 
@@ -10487,8 +10133,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10507,7 +10152,7 @@ LinearGaugeObj.setBarPointerValue(0,0,30);
 
 
 
-### setBarWidth<span class="signature">()</span>
+### setBarWidth()
 {:#methods:setbarwidth}
 
 
@@ -10552,8 +10197,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10572,7 +10216,7 @@ LinearGaugeObj.setBarWidth(0,0,30);
 
 
 
-### setCustomLabelAngle<span class="signature">()</span>
+### setCustomLabelAngle()
 {:#methods:setcustomlabelangle}
 
 
@@ -10617,8 +10261,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10637,7 +10280,7 @@ LinearGaugeObj.setCustomLabelAngle(0,0,30);
 
 
 
-### setCustomLabelValue<span class="signature">()</span>
+### setCustomLabelValue()
 {:#methods:setcustomlabelvalue}
 
 
@@ -10682,8 +10325,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10702,7 +10344,7 @@ LinearGaugeObj.setCustomLabelValue(0,0,"text");
 
 
 
-### setLabelAngle<span class="signature">()</span>
+### setLabelAngle()
 {:#methods:setlabelangle}
 
 
@@ -10747,8 +10389,7 @@ arguemnt.angle{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10767,7 +10408,7 @@ LinearGaugeObj.setLabelAngle(0,0,20);
 
 
 
-### setLabelPlacement<span class="signature">()</span>
+### setLabelPlacement()
 {:#methods:setlabelplacement}
 
 
@@ -10812,8 +10453,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10832,7 +10472,7 @@ LinearGaugeObj.setLabelPlacement(0,0,"far");
 
 
 
-### setLabelStyle<span class="signature">()</span>
+### setLabelStyle()
 {:#methods:setlabelstyle}
 
 
@@ -10877,8 +10517,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10897,7 +10536,7 @@ LinearGaugeObj.setLabelStyle(0,0,"major");
 
 
 
-### setLabelXDistanceFromScale<span class="signature">()</span>
+### setLabelXDistanceFromScale()
 {:#methods:setlabelxdistancefromscale}
 
 
@@ -10942,8 +10581,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10962,7 +10600,7 @@ LinearGaugeObj.setLabelXDistanceFromScale(0,0,20);
 
 
 
-### setLabelYDistanceFromScale<span class="signature">()</span>
+### setLabelYDistanceFromScale()
 {:#methods:setlabelydistancefromscale}
 
 
@@ -11007,8 +10645,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11027,7 +10664,7 @@ LinearGaugeObj.setLabelYDistanceFromScale(0,0,20);
 
 
 
-### setMajorIntervalValue<span class="signature">()</span>
+### setMajorIntervalValue()
 {:#methods:setmajorintervalvalue}
 
 
@@ -11066,8 +10703,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11086,7 +10722,7 @@ LinearGaugeObj.setMajorIntervalValue(0,5);
 
 
 
-### setMarkerStyle<span class="signature">()</span>
+### setMarkerStyle()
 {:#methods:setmarkerstyle}
 
 
@@ -11131,8 +10767,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11151,7 +10786,7 @@ LinearGaugeObj.setMarkerStyle(0,0,"triangle");
 
 
 
-### setMaximumValue<span class="signature">()</span>
+### setMaximumValue()
 {:#methods:setmaximumvalue}
 
 
@@ -11190,8 +10825,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11210,7 +10844,7 @@ LinearGaugeObj.setMaximumValue(0,20);
 
 
 
-### setMinimumValue<span class="signature">()</span>
+### setMinimumValue()
 {:#methods:setminimumvalue}
 
 
@@ -11249,8 +10883,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11269,7 +10902,7 @@ LinearGaugeObj.setMinimumValue(0,20);
 
 
 
-### setMinorIntervalValue<span class="signature">()</span>
+### setMinorIntervalValue()
 {:#methods:setminorintervalvalue}
 
 
@@ -11308,8 +10941,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11328,7 +10960,7 @@ LinearGaugeObj.setMinorIntervalValue(0,2);
 
 
 
-### setPointerDistanceFromScale<span class="signature">()</span>
+### setPointerDistanceFromScale()
 {:#methods:setpointerdistancefromscale}
 
 
@@ -11373,8 +11005,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11393,7 +11024,7 @@ LinearGaugeObj.setPointerDistanceFromScale(0,0,30);
 
 
 
-### setPointerHeight<span class="signature">()</span>
+### setPointerHeight()
 {:#methods:setpointerheight}
 
 
@@ -11438,8 +11069,7 @@ arguemnt.height{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11458,7 +11088,7 @@ LinearGaugeObj.setPointerHeight(0,0,30);
 
 
 
-### setPointerPlacement<span class="signature">()</span>
+### setPointerPlacement()
 {:#methods:setpointerplacement}
 
 
@@ -11503,8 +11133,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11523,7 +11152,7 @@ LinearGaugeObj.setPointerPlacement(0,0,"far");
 
 
 
-### setPointerValue<span class="signature">()</span>
+### setPointerValue()
 {:#methods:setpointervalue}
 
 
@@ -11568,8 +11197,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11588,7 +11216,7 @@ LinearGaugeObj.setPointerValue(0,0,30);
 
 
 
-### setPointerWidth<span class="signature">()</span>
+### setPointerWidth()
 {:#methods:setpointerwidth}
 
 
@@ -11633,8 +11261,7 @@ arguemnt.width{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11653,7 +11280,7 @@ LinearGaugeObj.setPointerWidth(0,0,30);
 
 
 
-### setRangeBorderWidth<span class="signature">()</span>
+### setRangeBorderWidth()
 {:#methods:setrangeborderwidth}
 
 
@@ -11698,8 +11325,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11718,7 +11344,7 @@ LinearGaugeObj.setRangeBorderWidth(0,0,2);
 
 
 
-### setRangeDistanceFromScale<span class="signature">()</span>
+### setRangeDistanceFromScale()
 {:#methods:setrangedistancefromscale}
 
 
@@ -11763,8 +11389,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11783,7 +11408,7 @@ LinearGaugeObj.setRangeDistanceFromScale(0,0,20);
 
 
 
-### setRangeEndValue<span class="signature">()</span>
+### setRangeEndValue()
 {:#methods:setrangeendvalue}
 
 
@@ -11828,8 +11453,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11848,7 +11472,7 @@ LinearGaugeObj.setRangeEndValue(0,0,20);
 
 
 
-### setRangeEndWidth<span class="signature">()</span>
+### setRangeEndWidth()
 {:#methods:setrangeendwidth}
 
 
@@ -11893,8 +11517,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11913,7 +11536,7 @@ LinearGaugeObj.setRangeEndWidth(0,0,20);
 
 
 
-### setRangePosition<span class="signature">()</span>
+### setRangePosition()
 {:#methods:setrangeposition}
 
 
@@ -11958,8 +11581,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -11978,7 +11600,7 @@ LinearGaugeObj.setRangePosition(0,0,20);
 
 
 
-### setRangeStartValue<span class="signature">()</span>
+### setRangeStartValue()
 {:#methods:setrangestartvalue}
 
 
@@ -12023,8 +11645,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12043,7 +11664,7 @@ LinearGaugeObj.setRangeStartValue(0,0,20);
 
 
 
-### setRangeStartWidth<span class="signature">()</span>
+### setRangeStartWidth()
 {:#methods:setrangestartwidth}
 
 
@@ -12088,8 +11709,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12108,7 +11728,7 @@ LinearGaugeObj.setRangeStartWidth(0,0,20);
 
 
 
-### setScaleBarLength<span class="signature">()</span>
+### setScaleBarLength()
 {:#methods:setscalebarlength}
 
 
@@ -12147,8 +11767,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12167,7 +11786,7 @@ LinearGaugeObj.setScaleBarLength(0,150);
 
 
 
-### setScaleBarSize<span class="signature">()</span>
+### setScaleBarSize()
 {:#methods:setscalebarsize}
 
 
@@ -12206,8 +11825,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12226,7 +11844,7 @@ LinearGaugeObj.setScaleBarSize(0,20);
 
 
 
-### setScaleBorderWidth<span class="signature">()</span>
+### setScaleBorderWidth()
 {:#methods:setscaleborderwidth}
 
 
@@ -12265,8 +11883,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12285,7 +11902,7 @@ LinearGaugeObj.setScaleBorderWidth(0,10);
 
 
 
-### setScaleDirection<span class="signature">()</span>
+### setScaleDirection()
 {:#methods:setscaledirection}
 
 
@@ -12324,8 +11941,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12344,7 +11960,7 @@ LinearGaugeObj.setScaleDirection(0,"counterclockwise");
 
 
 
-### setScaleLocation<span class="signature">()</span>
+### setScaleLocation()
 {:#methods:setscalelocation}
 
 
@@ -12383,8 +11999,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12403,7 +12018,7 @@ LinearGaugeObj.setScaleLocation(0,{x:20,y:20});
 
 
 
-### setScaleStyle<span class="signature">()</span>
+### setScaleStyle()
 {:#methods:setscalestyle}
 
 
@@ -12442,8 +12057,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12462,7 +12076,7 @@ LinearGaugeObj.setScaleStyle(0,"thermometer");
 
 
 
-### setTickAngle<span class="signature">()</span>
+### setTickAngle()
 {:#methods:settickangle}
 
 
@@ -12507,8 +12121,7 @@ arguemnt.angle{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12527,7 +12140,7 @@ LinearGaugeObj.setTickAngle(0,0,20);
 
 
 
-### setTickHeight<span class="signature">()</span>
+### setTickHeight()
 {:#methods:settickheight}
 
 
@@ -12572,8 +12185,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12592,7 +12204,7 @@ LinearGaugeObj.setTickHeight(0,0,10);
 
 
 
-### setTickPlacement<span class="signature">()</span>
+### setTickPlacement()
 {:#methods:settickplacement}
 
 
@@ -12637,8 +12249,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12657,7 +12268,7 @@ LinearGaugeObj.setTickPlacement(0,0,"far");
 
 
 
-### setTickStyle<span class="signature">()</span>
+### setTickStyle()
 {:#methods:settickstyle}
 
 
@@ -12702,8 +12313,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12722,7 +12332,7 @@ LinearGaugeObj.setTickStyle(0,0,"major");
 
 
 
-### setTickWidth<span class="signature">()</span>
+### setTickWidth()
 {:#methods:settickwidth}
 
 
@@ -12767,8 +12377,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12787,7 +12396,7 @@ LinearGaugeObj.setTickWidth(0,0,5);
 
 
 
-### setTickXDistanceFromScale<span class="signature">()</span>
+### setTickXDistanceFromScale()
 {:#methods:settickxdistancefromscale}
 
 
@@ -12832,8 +12441,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -12852,7 +12460,7 @@ LinearGaugeObj.setTickXDistanceFromScale(0,0,20);
 
 
 
-### setTickYDistanceFromScale<span class="signature">()</span>
+### setTickYDistanceFromScale()
 {:#methods:settickydistancefromscale}
 
 
@@ -12897,8 +12505,7 @@ arguemnt.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -13023,8 +12630,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -13136,8 +12742,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -13249,8 +12854,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -13392,8 +12996,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -13517,8 +13120,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -13630,8 +13232,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -13773,8 +13374,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -13856,8 +13456,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -13939,8 +13538,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -14058,8 +13656,7 @@ args.position{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -14196,8 +13793,7 @@ args.position{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -14316,8 +13912,7 @@ args.position{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -14400,8 +13995,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}

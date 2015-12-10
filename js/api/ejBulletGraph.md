@@ -18,7 +18,7 @@ metacontent:
 
 
 
-$(element).ejBulletGraph<span class="signature">()</span>
+$(element).ejBulletGraph()
 
 
 
@@ -30,8 +30,7 @@ $(element).ejBulletGraph<span class="signature">()</span>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -78,7 +77,7 @@ Requires
 
 
 
-### applyRangeStrokeToLabels<span class="type-signature type boolean">boolean</span>
+### applyRangeStrokeToLabels `boolean`
 {:#members:applyrangestroketolabels}
 
 
@@ -93,8 +92,7 @@ Toggles the visibility of the range stroke color of the labels.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -110,8 +108,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -129,7 +126,7 @@ applyRangeStrokeToLabels : true
 
 
 
-### applyRangeStrokeToTicks<span class="type-signature type boolean">boolean</span>
+### applyRangeStrokeToTicks `boolean`
 {:#members:applyrangestroketoticks}
 
 
@@ -144,8 +141,7 @@ Toggles the visibility of the range stroke color of the ticks.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -161,8 +157,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -180,7 +175,7 @@ applyRangeStrokeToTicks : true
 
 
 
-### captionSettings<span class="type-signature type object">object</span>
+### captionSettings  `object`
 {:#members:captionsettings}
 
 
@@ -202,7 +197,7 @@ Contains property to customize the caption in bullet graph.
 
 
 
-### captionSettings.enableTrim<span class="type-signature type boolean">boolean</span>
+### captionSettings.enableTrim `boolean`
 {:#members:captionsettings-enabletrim}
 
 
@@ -217,8 +212,7 @@ Specifies whether trim the labels will be true or false.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -234,8 +228,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -253,7 +246,7 @@ captionSettings :{ enableTrim : true }
 
 
 
-### captionSettings.font<span class="type-signature type object">object</span>
+### captionSettings.font  `object`
 {:#members:captionsettings-font}
 
 
@@ -275,7 +268,7 @@ Contains property to customize the font of caption.
 
 
 
-### captionSettings.font.color<span class="type-signature type string">string</span>
+### captionSettings.font.color `string`
 {:#members:captionsettings-font-color}
 
 
@@ -290,8 +283,7 @@ Specifies the color of the text in caption.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -307,8 +299,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -326,7 +317,7 @@ captionSettings :{font :{color : "green"}}
 
 
 
-### captionSettings.font.fontFamily<span class="type-signature type string">string</span>
+### captionSettings.font.fontFamily `string`
 {:#members:captionsettings-font-fontfamily}
 
 
@@ -341,8 +332,7 @@ Specifies the fontFamily of caption. Caption text render with this fontFamily
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -358,8 +348,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -377,7 +366,7 @@ captionSettings :{font :{fontFamily : "algerian"}}
 
 
 
-### captionSettings.font.fontStyle<span class="type-signature type enum">enum</span>
+### captionSettings.font.fontStyle `enum`
 {:#members:captionsettings-font-fontstyle}
 
 
@@ -392,8 +381,7 @@ Specifies the fontStyle of caption. Caption text render with this fontStyle. See
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -409,8 +397,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -428,7 +415,7 @@ captionSettings :{font :{fontStyle : "italic"}}
 
 
 
-### captionSettings.font.fontWeight<span class="type-signature type enum">enum</span>
+### captionSettings.font.fontWeight `enum`
 {:#members:captionsettings-font-fontweight}
 
 
@@ -443,8 +430,7 @@ Specifies the fontWeight of caption. Caption text render with this fontWeight. S
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -460,8 +446,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -479,7 +464,7 @@ captionSettings :{font :{fontWeight : "lighter"}}
 
 
 
-### captionSettings.font.opacity<span class="type-signature type number">number</span>
+### captionSettings.font.opacity `number`
 {:#members:captionsettings-font-opacity}
 
 
@@ -494,8 +479,7 @@ Specifies the opacity of caption. Caption text render with this opacity.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -511,8 +495,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -530,7 +513,7 @@ captionSettings :{font :{opacity : 0.5}}
 
 
 
-### captionSettings.font.size<span class="type-signature type string">string</span>
+### captionSettings.font.size `string`
 {:#members:captionsettings-font-size}
 
 
@@ -545,8 +528,7 @@ Specifies the size of caption. Caption text render with this size
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -562,8 +544,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -581,7 +562,7 @@ captionSettings :{font :{size : "14px"}}
 
 
 
-### captionSettings.indicator<span class="type-signature type object">object</span>
+### captionSettings.indicator  `object`
 {:#members:captionsettings-indicator}
 
 
@@ -603,7 +584,7 @@ Contains property to customize the indicator.
 
 
 
-### captionSettings.indicator.font<span class="type-signature type object">object</span>
+### captionSettings.indicator.font  `object`
 {:#members:captionsettings-indicator-font}
 
 
@@ -625,7 +606,7 @@ Contains property to customize the font of indicator.
 
 
 
-### captionSettings.indicator.font.color<span class="type-signature type string">string</span>
+### captionSettings.indicator.font.color `string`
 {:#members:captionsettings-indicator-font-color}
 
 
@@ -640,8 +621,7 @@ Specifies the color of the indicator's text.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -657,8 +637,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -676,7 +655,7 @@ captionSettings :{indicator :{font : { color :"green" }}}
 
 
 
-### captionSettings.indicator.font.fontFamily<span class="type-signature type string">string</span>
+### captionSettings.indicator.font.fontFamily `string`
 {:#members:captionsettings-indicator-font-fontfamily}
 
 
@@ -691,8 +670,7 @@ Specifies the fontFamily of indicator. Indicator text render with this fontFamil
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -708,8 +686,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -727,7 +704,7 @@ captionSettings :{indicator :{font : { fontFamily :"Algerian" }}}
 
 
 
-### captionSettings.indicator.font.fontStyle<span class="type-signature type enum">enum</span>
+### captionSettings.indicator.font.fontStyle `enum`
 {:#members:captionsettings-indicator-font-fontstyle}
 
 
@@ -742,8 +719,7 @@ Specifies the fontStyle of indicator. Indicator text render with this fontStyle.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -759,8 +735,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -778,7 +753,7 @@ captionSettings :{indicator :{font : { fontStyle :"italic" }}}
 
 
 
-### captionSettings.indicator.font.fontWeight<span class="type-signature type enum">enum</span>
+### captionSettings.indicator.font.fontWeight `enum`
 {:#members:captionsettings-indicator-font-fontweight}
 
 
@@ -793,8 +768,7 @@ Specifies the fontWeight of indicator. Indicator text render with this fontWeigh
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -810,8 +784,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -829,7 +802,7 @@ captionSettings :{indicator :{font : { fontWeight :"lighter" }}}
 
 
 
-### captionSettings.indicator.font.opacity<span class="type-signature type number">Number</span>
+### captionSettings.indicator.font.opacity `number`
 {:#members:captionsettings-indicator-font-opacity}
 
 
@@ -844,8 +817,7 @@ Specifies the opacity of indicator text. Indicator text render with this Opacity
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -861,8 +833,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -880,7 +851,7 @@ captionSettings :{indicator :{font : { opacity : 0.5 }}}
 
 
 
-### captionSettings.indicator.font.size<span class="type-signature type string">string</span>
+### captionSettings.indicator.font.size `string`
 {:#members:captionsettings-indicator-font-size}
 
 
@@ -895,8 +866,7 @@ Specifies the size of indicator. Indicator text render with this size.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -912,8 +882,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -931,7 +900,7 @@ captionSettings :{indicator :{font : { size :"14px" }}}
 
 
 
-### captionSettings.indicator.location<span class="type-signature type object">object</span>
+### captionSettings.indicator.location  `object`
 {:#members:captionsettings-indicator-location}
 
 
@@ -953,7 +922,7 @@ Contains property to customize the location of indicator.
 
 
 
-### captionSettings.indicator.location.x<span class="type-signature type number">number</span>
+### captionSettings.indicator.location.x `number`
 {:#members:captionsettings-indicator-location-x}
 
 
@@ -968,8 +937,7 @@ Specifies the horizontal position of the indicator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -985,8 +953,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1004,7 +971,7 @@ captionSettings :{indicator :{location : { x :12 }}}
 
 
 
-### captionSettings.indicator.location.y<span class="type-signature type number">number</span>
+### captionSettings.indicator.location.y `number`
 {:#members:captionsettings-indicator-location-y}
 
 
@@ -1019,8 +986,7 @@ Specifies the vertical position of the indicator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1036,8 +1002,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1055,7 +1020,7 @@ captionSettings :{indicator :{location : { y :60 }}}
 
 
 
-### captionSettings.indicator.padding<span class="type-signature type number">number</span>
+### captionSettings.indicator.padding `number`
 {:#members:captionsettings-indicator-padding}
 
 
@@ -1070,8 +1035,7 @@ Specifies the padding to be applied when text position is used.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1087,8 +1051,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1106,7 +1069,7 @@ captionSettings :{ indicator: {padding: 5}}
 
 
 
-### captionSettings.indicator.symbol<span class="type-signature type object">object</span>
+### captionSettings.indicator.symbol  `object`
 {:#members:captionsettings-indicator-symbol}
 
 
@@ -1128,7 +1091,7 @@ Contains property to customize the symbol of indicator.
 
 
 
-### captionSettings.indicator.symbol.border<span class="type-signature type object">object</span>
+### captionSettings.indicator.symbol.border  `object`
 {:#members:captionsettings-indicator-symbol-border}
 
 
@@ -1150,7 +1113,7 @@ Contains property to customize the border of indicator symbol.
 
 
 
-### captionSettings.indicator.symbol.border.color<span class="type-signature type string">string</span>
+### captionSettings.indicator.symbol.border.color `string`
 {:#members:captionsettings-indicator-symbol-border-color}
 
 
@@ -1165,8 +1128,7 @@ Specifies the border color of indicator symbol.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1182,8 +1144,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1201,7 +1162,7 @@ captionSettings :{indicator :{symbol : { border: { color :"green" } }}}
 
 
 
-### captionSettings.indicator.symbol.border.width<span class="type-signature type number">Number</span>
+### captionSettings.indicator.symbol.border.width `number`
 {:#members:captionsettings-indicator-symbol-border-width}
 
 
@@ -1216,8 +1177,7 @@ Specifies the border width of indicator symbol.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1233,8 +1193,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1252,7 +1211,7 @@ captionSettings :{indicator :{symbol : { border: { width : 2 } }}}
 
 
 
-### captionSettings.indicator.symbol.color<span class="type-signature type string">string</span>
+### captionSettings.indicator.symbol.color `string`
 {:#members:captionsettings-indicator-symbol-color}
 
 
@@ -1267,8 +1226,7 @@ Specifies the color of indicator symbol.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1284,8 +1242,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1303,7 +1260,7 @@ captionSettings :{indicator :{symbol : { color :"green" }}}
 
 
 
-### captionSettings.indicator.symbol.imageURL<span class="type-signature type string">string</span>
+### captionSettings.indicator.symbol.imageURL `string`
 {:#members:captionsettings-indicator-symbol-imageurl}
 
 
@@ -1318,8 +1275,7 @@ Specifies the url of image that represents indicator symbol.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1335,8 +1291,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1354,7 +1309,7 @@ captionSettings :{indicator :{symbol : { imageURL :"../BulletIndicator.png" }}}
 
 
 
-### captionSettings.indicator.symbol.opacity<span class="type-signature type number">number</span>
+### captionSettings.indicator.symbol.opacity `number`
 {:#members:captionsettings-indicator-symbol-opacity}
 
 
@@ -1369,8 +1324,7 @@ Specifies the opacity of indicator symbol.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1386,8 +1340,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1405,7 +1358,7 @@ captionSettings :{indicator :{symbol : { opacity :0.5 }}}
 
 
 
-### captionSettings.indicator.symbol.shape<span class="type-signature type string">string</span>
+### captionSettings.indicator.symbol.shape `string`
 {:#members:captionsettings-indicator-symbol-shape}
 
 
@@ -1420,8 +1373,7 @@ Specifies the shape of indicator symbol.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1437,8 +1389,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1456,7 +1407,7 @@ captionSettings :{indicator :{symbol : { shape :"triangle" }}}
 
 
 
-### captionSettings.indicator.symbol.size<span class="type-signature type object">object</span>
+### captionSettings.indicator.symbol.size  `object`
 {:#members:captionsettings-indicator-symbol-size}
 
 
@@ -1478,7 +1429,7 @@ Contains property to customize the size of indicator symbol.
 
 
 
-### captionSettings.indicator.symbol.size.height<span class="type-signature type number">number</span>
+### captionSettings.indicator.symbol.size.height `number`
 {:#members:captionsettings-indicator-symbol-size-height}
 
 
@@ -1493,8 +1444,7 @@ Specifies the height of indicator symbol.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1510,8 +1460,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1529,7 +1478,7 @@ captionSettings :{indicator :{symbol : { size : { height: 10 } }}}
 
 
 
-### captionSettings.indicator.symbol.size.width<span class="type-signature type number">number</span>
+### captionSettings.indicator.symbol.size.width `number`
 {:#members:captionsettings-indicator-symbol-size-width}
 
 
@@ -1544,8 +1493,7 @@ Specifies the width of indicator symbol.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1561,8 +1509,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1580,7 +1527,7 @@ captionSettings :{indicator :{symbol : { size : { width: 10 }}}
 
 
 
-### captionSettings.indicator.text<span class="type-signature type string">string</span>
+### captionSettings.indicator.text `string`
 {:#members:captionsettings-indicator-text}
 
 
@@ -1595,8 +1542,7 @@ Specifies the text to be displayed as indicator text. By default difference betw
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1612,8 +1558,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1631,7 +1576,7 @@ captionSettings :{ indicator :{text : "Power Production"} }
 
 
 
-### captionSettings.indicator.textAlignment<span class="type-signature type enum">enum</span>
+### captionSettings.indicator.textAlignment `enum`
 {:#members:captionsettings-indicator-textalignment}
 
 
@@ -1646,8 +1591,7 @@ Specifies the alignment of indicator with respect to scale based on text positio
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1663,8 +1607,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1682,7 +1625,7 @@ captionSettings :{ indicator:{textAlignment: 'Far'}}
 
 
 
-### captionSettings.indicator.textAnchor<span class="type-signature type enum">enum</span>
+### captionSettings.indicator.textAnchor `enum`
 {:#members:captionsettings-indicator-textanchor}
 
 
@@ -1697,8 +1640,7 @@ Specifies where indicator text should be anchored when indicator overlaps with o
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1714,8 +1656,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1733,7 +1674,7 @@ captionSettings :{ indicator: {textAnchor: 'end'}}
 
 
 
-### captionSettings.indicator.textAngle<span class="type-signature type number">number</span>
+### captionSettings.indicator.textAngle `number`
 {:#members:captionsettings-indicator-textangle}
 
 
@@ -1748,8 +1689,7 @@ indicator text render in the specified angle.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1765,8 +1705,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1784,7 +1723,7 @@ captionSettings :{ indicator :{textAngle :10} }
 
 
 
-### captionSettings.indicator.textPosition<span class="type-signature type enum">enum</span>
+### captionSettings.indicator.textPosition `enum`
 {:#members:captionsettings-indicator-textposition}
 
 
@@ -1799,8 +1738,7 @@ Specifies where indicator should be placed.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1816,8 +1754,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1835,7 +1772,7 @@ captionSettings :{ indicator: {textPosition: 'Top'}}
 
 
 
-### captionSettings.indicator.textSpacing<span class="type-signature type number">number</span>
+### captionSettings.indicator.textSpacing `number`
 {:#members:captionsettings-indicator-textspacing}
 
 
@@ -1850,8 +1787,7 @@ Specifies the space between indicator symbol and text.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1867,8 +1803,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1886,7 +1821,7 @@ captionSettings :{ indicator :{textSpacing :10} }
 
 
 
-### captionSettings.indicator.visibile<span class="type-signature type boolean">boolean</span>
+### captionSettings.indicator.visibile `boolean`
 {:#members:captionsettings-indicator-visibile}
 
 
@@ -1901,8 +1836,7 @@ Specifies whether indicator will be visible or not.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1918,8 +1852,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1937,7 +1870,7 @@ captionSettings :{ indicator :{visible : true} }
 
 
 
-### captionSettings.location<span class="type-signature type object">object</span>
+### captionSettings.location  `object`
 {:#members:captionsettings-location}
 
 
@@ -1959,7 +1892,7 @@ Contains property to customize the location.
 
 
 
-### captionSettings.location.x<span class="type-signature type number">number</span>
+### captionSettings.location.x `number`
 {:#members:captionsettings-location-x}
 
 
@@ -1974,8 +1907,7 @@ Specifies the position in horizontal direction
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1991,8 +1923,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2010,7 +1941,7 @@ captionSettings :{location :{x :15}}
 
 
 
-### captionSettings.location.y<span class="type-signature type number">number</span>
+### captionSettings.location.y `number`
 {:#members:captionsettings-location-y}
 
 
@@ -2025,8 +1956,7 @@ Specifies the position in horizontal direction
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2042,8 +1972,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2061,7 +1990,7 @@ captionSettings :{location :{y :15}}
 
 
 
-### captionSettings.padding<span class="type-signature type number">number</span>
+### captionSettings.padding `number`
 {:#members:captionsettings-padding}
 
 
@@ -2076,8 +2005,7 @@ Specifies the padding to be applied when text position is used.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2093,8 +2021,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2112,7 +2039,7 @@ captionSettings :{padding: 2}
 
 
 
-### captionSettings.subTitle<span class="type-signature type object">object</span>
+### captionSettings.subTitle  `object`
 {:#members:captionsettings-subtitle}
 
 
@@ -2134,7 +2061,7 @@ Contains property to customize the subtitle.
 
 
 
-### captionSettings.subTitle.font<span class="type-signature type object">object</span>
+### captionSettings.subTitle.font  `object`
 {:#members:captionsettings-subtitle-font}
 
 
@@ -2156,7 +2083,7 @@ Contains property to customize the font of subtitle.
 
 
 
-### captionSettings.subTitle.font.color<span class="type-signature type string">string</span>
+### captionSettings.subTitle.font.color `string`
 {:#members:captionsettings-subtitle-font-color}
 
 
@@ -2171,8 +2098,7 @@ Specifies the color of the subtitle's text.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2188,8 +2114,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2207,7 +2132,7 @@ captionSettings :{subTitle :{font : { color :"green" }}}
 
 
 
-### captionSettings.subTitle.font.fontFamily<span class="type-signature type string">string</span>
+### captionSettings.subTitle.font.fontFamily `string`
 {:#members:captionsettings-subtitle-font-fontfamily}
 
 
@@ -2222,8 +2147,7 @@ Specifies the fontFamily of subtitle. Subtitle text render with this fontFamily.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2239,8 +2163,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2258,7 +2181,7 @@ captionSettings :{subTitle :{font : { fontFamily :"Algerian" }}}
 
 
 
-### captionSettings.subTitle.font.fontStyle<span class="type-signature type enum">enum</span>
+### captionSettings.subTitle.font.fontStyle `enum`
 {:#members:captionsettings-subtitle-font-fontstyle}
 
 
@@ -2273,8 +2196,7 @@ Specifies the fontStyle of subtitle. Subtitle text render with this fontStyle. S
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2290,8 +2212,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2309,7 +2230,7 @@ captionSettings :{subTitle :{font : { fontStyle :"italic" }}}
 
 
 
-### captionSettings.subTitle.font.fontWeight<span class="type-signature type enum">enum</span>
+### captionSettings.subTitle.font.fontWeight `enum`
 {:#members:captionsettings-subtitle-font-fontweight}
 
 
@@ -2324,8 +2245,7 @@ Specifies the fontWeight of subtitle. Subtitle text render with this fontWeight.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2341,8 +2261,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2360,7 +2279,7 @@ captionSettings :{subTitle :{font : { fontWeight :"lighter" }}}
 
 
 
-### captionSettings.subTitle.font.opacity<span class="type-signature type number">number</span>
+### captionSettings.subTitle.font.opacity `number`
 {:#members:captionsettings-subtitle-font-opacity}
 
 
@@ -2375,8 +2294,7 @@ Specifies the opacity of subtitle. Subtitle text render with this opacity.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2392,8 +2310,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2411,7 +2328,7 @@ captionSettings :{subTitle :{font : { opacity :0.5 }}}
 
 
 
-### captionSettings.subTitle.font.size<span class="type-signature type string">string</span>
+### captionSettings.subTitle.font.size `string`
 {:#members:captionsettings-subtitle-font-size}
 
 
@@ -2426,8 +2343,7 @@ Specifies the size of subtitle. Subtitle text render with this size.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2443,8 +2359,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2462,7 +2377,7 @@ captionSettings :{subTitle :{font : { size :"14px" }}}
 
 
 
-### captionSettings.subTitle.location<span class="type-signature type object">object</span>
+### captionSettings.subTitle.location  `object`
 {:#members:captionsettings-subtitle-location}
 
 
@@ -2484,7 +2399,7 @@ Contains property to customize the location of subtitle.
 
 
 
-### captionSettings.subTitle.location.x<span class="type-signature type number">number</span>
+### captionSettings.subTitle.location.x `number`
 {:#members:captionsettings-subtitle-location-x}
 
 
@@ -2499,8 +2414,7 @@ Specifies the horizontal position of the subtitle.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2516,8 +2430,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2535,7 +2448,7 @@ captionSettings :{subTitle :{location : { x :12 }}}
 
 
 
-### captionSettings.subTitle.location.y<span class="type-signature type number">number</span>
+### captionSettings.subTitle.location.y `number`
 {:#members:captionsettings-subtitle-location-y}
 
 
@@ -2550,8 +2463,7 @@ Specifies the vertical position of the subtitle.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2567,8 +2479,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2586,7 +2497,7 @@ captionSettings :{subTitle :{location : { y :50 }}}
 
 
 
-### captionSettings.subTitle.padding<span class="type-signature type number">number</span>
+### captionSettings.subTitle.padding `number`
 {:#members:captionsettings-subtitle-padding}
 
 
@@ -2601,8 +2512,7 @@ Specifies the padding to be applied when text position is used.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2618,8 +2528,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2637,7 +2546,7 @@ captionSettings :{subTitle:{padding: 8}}
 
 
 
-### captionSettings.subTitle.text<span class="type-signature type string">string</span>
+### captionSettings.subTitle.text `string`
 {:#members:captionsettings-subtitle-text}
 
 
@@ -2652,8 +2561,7 @@ Specifies the text to be displayed as subtitle.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2669,8 +2577,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2688,7 +2595,7 @@ captionSettings :{ subTitle :{text : "Power Production"} }
 
 
 
-### captionSettings.subTitle.textAlignment<span class="type-signature type enum">enum</span>
+### captionSettings.subTitle.textAlignment `enum`
 {:#members:captionsettings-subtitle-textalignment}
 
 
@@ -2703,8 +2610,7 @@ Specifies the alignment of sub title text with respect to scale. Alignment will 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2720,8 +2626,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2739,7 +2644,7 @@ captionSettings :{subTitle:{textAlignment: 'Far'}}
 
 
 
-### captionSettings.subTitle.textAnchor<span class="type-signature type enum">enum</span>
+### captionSettings.subTitle.textAnchor `enum`
 {:#members:captionsettings-subtitle-textanchor}
 
 
@@ -2754,8 +2659,7 @@ Specifies where subtitle text should be anchored when sub title text overlaps wi
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2771,8 +2675,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2790,7 +2693,7 @@ captionSettings :{ subTitle: {textAnchor: 'end'}}
 
 
 
-### captionSettings.subTitle.textAngle<span class="type-signature type number">number</span>
+### captionSettings.subTitle.textAngle `number`
 {:#members:captionsettings-subtitle-textangle}
 
 
@@ -2805,8 +2708,7 @@ Subtitle render in the specified angle.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2822,8 +2724,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2841,7 +2742,7 @@ captionSettings :{ subTitle :{textAngle :10} }
 
 
 
-### captionSettings.subTitle.textPosition<span class="type-signature type enum">enum</span>
+### captionSettings.subTitle.textPosition `enum`
 {:#members:captionsettings-subtitle-textposition}
 
 
@@ -2856,8 +2757,7 @@ Specifies where sub title text should be placed.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2873,8 +2773,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2892,7 +2791,7 @@ captionSettings :{ subTitle:{textPosition: 'Right'}}
 
 
 
-### captionSettings.text<span class="type-signature type string">string</span>
+### captionSettings.text `string`
 {:#members:captionsettings-text}
 
 
@@ -2907,8 +2806,7 @@ Specifies the text to be displayed on bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2924,8 +2822,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2943,7 +2840,7 @@ captionSettings :{text : "Production"}
 
 
 
-### captionSettings.textAlignment<span class="type-signature type enum">enum</span>
+### captionSettings.textAlignment `enum`
 {:#members:captionsettings-textalignment}
 
 
@@ -2958,8 +2855,7 @@ Specifies the alignment of caption text with respect to scale. This property wil
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2975,8 +2871,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2994,7 +2889,7 @@ captionSettings :{textAlignment: 'Center'}
 
 
 
-### captionSettings.textAnchor<span class="type-signature type enum">enum</span>
+### captionSettings.textAnchor `enum`
 {:#members:captionsettings-textanchor}
 
 
@@ -3009,8 +2904,7 @@ Specifies caption text anchoring when caption text overlaps with other caption g
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3026,8 +2920,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3045,7 +2938,7 @@ captionSettings :{textAnchor: 'middle'}
 
 
 
-### captionSettings.textAngle<span class="type-signature type number">number</span>
+### captionSettings.textAngle `number`
 {:#members:captionsettings-textangle}
 
 
@@ -3060,8 +2953,7 @@ Specifies the angel in which the caption is rendered.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3077,8 +2969,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3096,7 +2987,7 @@ captionSettings :{textAngle : 5}
 
 
 
-### captionSettings.textPosition<span class="type-signature type enum">enum</span>
+### captionSettings.textPosition `enum`
 {:#members:captionsettings-textposition}
 
 
@@ -3111,8 +3002,7 @@ Specifies how caption text should be placed.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3128,8 +3018,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3147,7 +3036,7 @@ captionSettings :{textPosition: 'Top'}
 
 
 
-### comparativeMeasureValue<span class="type-signature type number">number</span>
+### comparativeMeasureValue `number`
 {:#members:comparativemeasurevalue}
 
 
@@ -3162,8 +3051,7 @@ Comparative measure bar in bullet graph render till the specified value.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3179,8 +3067,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3198,7 +3085,7 @@ comparativeMeasureValue : 1
 
 
 
-### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -3213,8 +3100,7 @@ Toggles the animation of bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3230,8 +3116,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3249,7 +3134,7 @@ enableAnimation : false
 
 
 
-### enableResizing<span class="type-signature type boolean">boolean</span>
+### enableResizing `boolean`
 {:#members:enableresizing}
 
 
@@ -3264,8 +3149,7 @@ Sets a value whether to make the bullet graph responsive on resize.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3281,8 +3165,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3300,7 +3183,7 @@ enableResizing : false
 
 
 
-### flowDirection<span class="type-signature type enum">enum</span>
+### flowDirection `enum`
 {:#members:flowdirection}
 
 
@@ -3315,8 +3198,7 @@ Specifies the direction of flow in bullet graph. Neither it may be backward nor 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3332,8 +3214,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3351,7 +3232,7 @@ flowDirection : "backward"
 
 
 
-### height<span class="type-signature type number">number</span>
+### height `number`
 {:#members:height}
 
 
@@ -3366,8 +3247,7 @@ Specifies the height of the bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3383,8 +3263,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3402,7 +3281,7 @@ height : 600
 
 
 
-### orientation<span class="type-signature type enum">enum</span>
+### orientation `enum`
 {:#members:orientation}
 
 
@@ -3417,8 +3296,7 @@ Bullet graph will render in the specified orientation.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3434,8 +3312,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3453,7 +3330,7 @@ orientation : "vertical"
 
 
 
-### qualitativeRanges<span class="type-signature type array">array</span>
+### qualitativeRanges `array`
 {:#members:qualitativeranges}
 
 
@@ -3475,7 +3352,7 @@ Contains property to customize the qualitative ranges.
 
 
 
-### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeEnd `number`
 {:#members:qualitativeranges-rangeend}
 
 
@@ -3490,8 +3367,7 @@ Specifies the ending range to which the qualitative ranges will render.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3507,8 +3383,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3526,7 +3401,7 @@ qualitativeRanges :[{rangeEnd : 4.5}]
 
 
 
-### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeEnd `number`
 {:#members:qualitativeranges-rangeend}
 
 
@@ -3541,8 +3416,7 @@ Specifies the ending range to which the qualitative ranges will render.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3558,8 +3432,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3577,7 +3450,7 @@ qualitativeRanges :[{rangeEnd : 7}]
 
 
 
-### qualitativeRanges.rangeEnd<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeEnd `number`
 {:#members:qualitativeranges-rangeend}
 
 
@@ -3592,8 +3465,7 @@ Specifies the ending range to which the qualitative ranges will render.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3609,8 +3481,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3628,7 +3499,7 @@ qualitativeRanges :[{rangeEnd : 5}]
 
 
 
-### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeOpacity `number`
 {:#members:qualitativeranges-rangeopacity}
 
 
@@ -3643,8 +3514,7 @@ Specifies the opacity for the qualitative ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3660,8 +3530,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3679,7 +3548,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 
-### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeOpacity `number`
 {:#members:qualitativeranges-rangeopacity}
 
 
@@ -3694,8 +3563,7 @@ Specifies the opacity for the qualitative ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3711,8 +3579,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3730,7 +3597,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 
-### qualitativeRanges.rangeOpacity<span class="type-signature type number">number</span>
+### qualitativeRanges.rangeOpacity `number`
 {:#members:qualitativeranges-rangeopacity}
 
 
@@ -3745,8 +3612,7 @@ Specifies the opacity for the qualitative ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3762,8 +3628,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3781,7 +3646,7 @@ qualitativeRanges :[{rangeOpacity : 0.5}]
 
 
 
-### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
+### qualitativeRanges.rangeStroke `string`
 {:#members:qualitativeranges-rangestroke}
 
 
@@ -3796,8 +3661,7 @@ Specifies the stroke for the qualitative ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3813,8 +3677,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3832,7 +3695,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 
-### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
+### qualitativeRanges.rangeStroke `string`
 {:#members:qualitativeranges-rangestroke}
 
 
@@ -3847,8 +3710,7 @@ Specifies the stroke for the qualitative ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3864,8 +3726,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3883,7 +3744,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 
-### qualitativeRanges.rangeStroke<span class="type-signature type string">string</span>
+### qualitativeRanges.rangeStroke `string`
 {:#members:qualitativeranges-rangestroke}
 
 
@@ -3898,8 +3759,7 @@ Specifies the stroke for the qualitative ranges.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3915,8 +3775,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3934,7 +3793,7 @@ qualitativeRanges :[{rangeStroke : 5}]
 
 
 
-### qualitativeRangeSize<span class="type-signature type number">number</span>
+### qualitativeRangeSize `number`
 {:#members:qualitativerangesize}
 
 
@@ -3949,8 +3808,7 @@ Size of the qualitative range depends up on the specified value.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3966,8 +3824,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3985,7 +3842,7 @@ qualitativeRangeSize : 35
 
 
 
-### quantitativeScaleLength<span class="type-signature type number">number</span>
+### quantitativeScaleLength `number`
 {:#members:quantitativescalelength}
 
 
@@ -4000,8 +3857,7 @@ Length of the quantitative range depends up on the specified value.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4017,8 +3873,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4036,7 +3891,7 @@ quantitativeScaleLength :500
 
 
 
-### quantitativeScaleSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings  `object`
 {:#members:quantitativescalesettings}
 
 
@@ -4058,7 +3913,7 @@ Contains all the properties to customize quantitative scale.
 
 
 
-### quantitativeScaleSettings.comparativeMeasureSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.comparativeMeasureSettings  `object`
 {:#members:quantitativescalesettings-comparativemeasuresettings}
 
 
@@ -4080,7 +3935,7 @@ Contains property to customize the comparative measure.
 
 
 
-### quantitativeScaleSettings.comparativeMeasureSettings.stroke<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.comparativeMeasureSettings.stroke `number`
 {:#members:quantitativescalesettings-comparativemeasuresettings-stroke}
 
 
@@ -4095,8 +3950,7 @@ Specifies the stroke of the comparative measure.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4112,8 +3966,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4131,7 +3984,7 @@ quantitativeScaleSettings : { comparativeMeasureSettings :{ stroke :2} }
 
 
 
-### quantitativeScaleSettings.comparativeMeasureSettings.width<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.comparativeMeasureSettings.width `number`
 {:#members:quantitativescalesettings-comparativemeasuresettings-width}
 
 
@@ -4146,8 +3999,7 @@ Specifies the width of the comparative measure.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4163,8 +4015,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4182,7 +4033,7 @@ $("#bulletGraph1").ejBulletGraph({
 
 
 
-### quantitativeScaleSettings.featuredMeasureSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.featuredMeasureSettings  `object`
 {:#members:quantitativescalesettings-featuredmeasuresettings}
 
 
@@ -4204,7 +4055,7 @@ Contains property to customize the featured measure.
 
 
 
-### quantitativeScaleSettings.featuredMeasureSettings.stroke<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.featuredMeasureSettings.stroke `number`
 {:#members:quantitativescalesettings-featuredmeasuresettings-stroke}
 
 
@@ -4219,8 +4070,7 @@ Specifies the Stroke of the featured measure in bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4236,8 +4086,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4255,7 +4104,7 @@ quantitativeScaleSettings : { featuredMeasureSettings :{stroke : 2} }
 
 
 
-### quantitativeScaleSettings.featuredMeasureSettings.width<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.featuredMeasureSettings.width `number`
 {:#members:quantitativescalesettings-featuredmeasuresettings-width}
 
 
@@ -4270,8 +4119,7 @@ Specifies the width of the featured measure in bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4287,8 +4135,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4306,7 +4153,7 @@ Example
 
 
 
-### quantitativeScaleSettings.featureMeasures<span class="type-signature type array">array</span>
+### quantitativeScaleSettings.featureMeasures `array`
 {:#members:quantitativescalesettings-featuremeasures}
 
 
@@ -4328,7 +4175,7 @@ Contains property to customize the featured measure.
 
 
 
-### quantitativeScaleSettings.featureMeasures.category<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.featureMeasures.category `string`
 {:#members:quantitativescalesettings-featuremeasures-category}
 
 
@@ -4343,8 +4190,7 @@ Specifies the category of feature measure.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4360,8 +4206,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4379,7 +4224,7 @@ quantitativeScaleSettings : { featureMeasures :[{ category :null}] }
 
 
 
-### quantitativeScaleSettings.featureMeasures.comparativeMeasureValue<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.featureMeasures.comparativeMeasureValue `number`
 {:#members:quantitativescalesettings-featuremeasures-comparativemeasurevalue}
 
 
@@ -4394,8 +4239,7 @@ Comparative measure render till the specified value.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4411,8 +4255,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4430,7 +4273,7 @@ quantitativeScaleSettings : { featureMeasures :[{ comparativeMeasureValue :2}] }
 
 
 
-### quantitativeScaleSettings.featureMeasures.value<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.featureMeasures.value `number`
 {:#members:quantitativescalesettings-featuremeasures-value}
 
 
@@ -4445,8 +4288,7 @@ Feature measure render till the specified value.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4462,8 +4304,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4481,7 +4322,7 @@ quantitativeScaleSettings : { featureMeasures :[{ value :2}] }
 
 
 
-### quantitativeScaleSettings.fields<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.fields  `object`
 {:#members:quantitativescalesettings-fields}
 
 
@@ -4503,7 +4344,7 @@ Contains property to customize the fields.
 
 
 
-### quantitativeScaleSettings.fields.category<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.fields.category `string`
 {:#members:quantitativescalesettings-fields-category}
 
 
@@ -4518,8 +4359,7 @@ Specifies the category of the bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4535,8 +4375,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4554,7 +4393,7 @@ fields :{category : "ProductId"}
 
 
 
-### quantitativeScaleSettings.fields.comparativeMeasure<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.fields.comparativeMeasure `string`
 {:#members:quantitativescalesettings-fields-comparativemeasure}
 
 
@@ -4569,8 +4408,7 @@ Comparative measure render based on the values in the specified field.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4586,8 +4424,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4605,7 +4442,7 @@ fields :{comparativeMeasure : "comparativeMeasureValue"}
 
 
 
-### quantitativeScaleSettings.fields.dataSource<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.fields.dataSource  `object`
 {:#members:quantitativescalesettings-fields-datasource}
 
 
@@ -4620,8 +4457,7 @@ Specifies the dataSource for the bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4637,8 +4473,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4692,7 +4527,7 @@ fields : {datasource :{ej.DataManger :{url : "http://mvc.syncfusion.com/Services
 
 
 
-### quantitativeScaleSettings.fields.featureMeasures<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.fields.featureMeasures `string`
 {:#members:quantitativescalesettings-fields-featuremeasures}
 
 
@@ -4707,8 +4542,7 @@ Feature measure render based on the values in the specified field.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4724,8 +4558,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4743,7 +4576,7 @@ fields :{featureMeasures : "UnitPrice"}
 
 
 
-### quantitativeScaleSettings.fields.query<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.fields.query `string`
 {:#members:quantitativescalesettings-fields-query}
 
 
@@ -4758,8 +4591,7 @@ Specifies the query for fetching the values form data source to render the bulle
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4781,7 +4613,7 @@ Default Value:
 
 
 
-### quantitativeScaleSettings.fields.tableName<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.fields.tableName `string`
 {:#members:quantitativescalesettings-fields-tablename}
 
 
@@ -4796,8 +4628,7 @@ Specifies the name of the table.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4813,8 +4644,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4832,7 +4662,7 @@ fields :{tableName : "Product"}
 
 
 
-### quantitativeScaleSettings.interval<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.interval `number`
 {:#members:quantitativescalesettings-interval}
 
 
@@ -4847,8 +4677,7 @@ Specifies the interval for the Graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4864,8 +4693,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4883,7 +4711,7 @@ quantitativeScaleSettings : { interval : 2 }
 
 
 
-### quantitativeScaleSettings.labelSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.labelSettings  `object`
 {:#members:quantitativescalesettings-labelsettings}
 
 
@@ -4905,7 +4733,7 @@ Contains property to customize the labels.
 
 
 
-### quantitativeScaleSettings.labelSettings.font<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.labelSettings.font  `object`
 {:#members:quantitativescalesettings-labelsettings-font}
 
 
@@ -4927,7 +4755,7 @@ Contains property to customize the font of the labels in bullet graph.
 
 
 
-### quantitativeScaleSettings.labelSettings.font.fontFamily<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.labelSettings.font.fontFamily `string`
 {:#members:quantitativescalesettings-labelsettings-font-fontfamily}
 
 
@@ -4942,8 +4770,7 @@ Specifies the fontFamily of labels in bullet graph. Labels render with this font
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4959,8 +4786,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4978,7 +4804,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontFamily : "Algerian" 
 
 
 
-### quantitativeScaleSettings.labelSettings.font.fontStyle<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.labelSettings.font.fontStyle `enum`
 {:#members:quantitativescalesettings-labelsettings-font-fontstyle}
 
 
@@ -4993,8 +4819,7 @@ Specifies the fontStyle of labels in bullet graph. Labels render with this fontS
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5010,8 +4835,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5029,7 +4853,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontStyle : "italic" } }
 
 
 
-### quantitativeScaleSettings.labelSettings.font.fontWeight<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.labelSettings.font.fontWeight `enum`
 {:#members:quantitativescalesettings-labelsettings-font-fontweight}
 
 
@@ -5044,8 +4868,7 @@ Specifies the fontWeight of labels in bullet graph. Labels render with this font
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5061,8 +4884,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5080,7 +4902,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontWeight : "lighter" }
 
 
 
-### quantitativeScaleSettings.labelSettings.font.opacity<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.labelSettings.font.opacity `number`
 {:#members:quantitativescalesettings-labelsettings-font-opacity}
 
 
@@ -5095,8 +4917,7 @@ Specifies the opacity of labels in bullet graph. Labels render with this opacity
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5112,8 +4933,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5131,7 +4951,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ opacity : 0.5 } } }
 
 
 
-### quantitativeScaleSettings.labelSettings.labelPlacement<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.labelSettings.labelPlacement `enum`
 {:#members:quantitativescalesettings-labelsettings-labelplacement}
 
 
@@ -5146,8 +4966,7 @@ Specifies the placement of labels in bullet graph scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5163,8 +4982,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5182,7 +5000,7 @@ quantitativeScaleSettings : { labelSettings : { labelPlacement : "inside" } }
 
 
 
-### quantitativeScaleSettings.labelSettings.labelPrefix<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.labelSettings.labelPrefix `string`
 {:#members:quantitativescalesettings-labelsettings-labelprefix}
 
 
@@ -5197,8 +5015,7 @@ Specifies the prefix to be added with labels in bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5214,8 +5031,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5233,7 +5049,7 @@ quantitativeScaleSettings : { labelSettings : { labelPrefix : "$" } }
 
 
 
-### quantitativeScaleSettings.labelSettings.labelSuffix<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.labelSettings.labelSuffix `string`
 {:#members:quantitativescalesettings-labelsettings-labelsuffix}
 
 
@@ -5248,8 +5064,7 @@ Specifies the suffix to be added after labels in bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5265,8 +5080,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5284,7 +5098,7 @@ quantitativeScaleSettings : { labelSettings : { labelSuffix : "K" } }
 
 
 
-### quantitativeScaleSettings.labelSettings.offset<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.labelSettings.offset `number`
 {:#members:quantitativescalesettings-labelsettings-offset}
 
 
@@ -5299,8 +5113,7 @@ Specifies the horizontal/vertical padding of labels.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5316,8 +5129,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5335,7 +5147,7 @@ quantitativeScaleSettings : { labelSettings : { offset : 25 } }
 
 
 
-### quantitativeScaleSettings.labelSettings.position<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.labelSettings.position `enum`
 {:#members:quantitativescalesettings-labelsettings-position}
 
 
@@ -5350,8 +5162,7 @@ Specifies the position of the labels to render either above or below the graph. 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5367,8 +5178,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5386,7 +5196,7 @@ quantitativeScaleSettings : { labelSettings : { position : "above" } }
 
 
 
-### quantitativeScaleSettings.labelSettings.size<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.labelSettings.size `number`
 {:#members:quantitativescalesettings-labelsettings-size}
 
 
@@ -5401,8 +5211,7 @@ Specifies the Size of the labels.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5418,8 +5227,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5437,7 +5245,7 @@ quantitativeScaleSettings : { labelSettings : { size : 10 } }
 
 
 
-### quantitativeScaleSettings.labelSettings.stroke<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.labelSettings.stroke `string`
 {:#members:quantitativescalesettings-labelsettings-stroke}
 
 
@@ -5452,8 +5260,7 @@ Specifies the stroke color of the labels in bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5469,8 +5276,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5488,7 +5294,7 @@ quantitativeScaleSettings : { labelSettings : { stroke : "green" } }
 
 
 
-### quantitativeScaleSettings.location<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.location  `object`
 {:#members:quantitativescalesettings-location}
 
 
@@ -5510,7 +5316,7 @@ Contains property to customize the position of the quantitative scale
 
 
 
-### quantitativeScaleSettings.location.x<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.location.x `number`
 {:#members:quantitativescalesettings-location-x}
 
 
@@ -5525,8 +5331,7 @@ This property specifies the x position for rendering quantitative scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5542,8 +5347,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5561,7 +5365,7 @@ quantitativeScaleSettings : { location : { x : 15 } }
 
 
 
-### quantitativeScaleSettings.location.y<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.location.y `number`
 {:#members:quantitativescalesettings-location-y}
 
 
@@ -5576,8 +5380,7 @@ This property specifies the y position for rendering quantitative scale.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5593,8 +5396,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5612,7 +5414,7 @@ quantitativeScaleSettings : { location : { y : 15 } }
 
 
 
-### quantitativeScaleSettings.majorTickSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.majorTickSettings  `object`
 {:#members:quantitativescalesettings-majorticksettings}
 
 
@@ -5634,7 +5436,7 @@ Contains property to customize the major tick lines.
 
 
 
-### quantitativeScaleSettings.majorTickSettings.size<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.majorTickSettings.size `number`
 {:#members:quantitativescalesettings-majorticksettings-size}
 
 
@@ -5649,8 +5451,7 @@ Specifies the size of the major ticks.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5666,8 +5467,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5685,7 +5485,7 @@ quantitativeScaleSettings : { majorTickSettings : { size : 15 } }
 
 
 
-### quantitativeScaleSettings.majorTickSettings.stroke<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.majorTickSettings.stroke `string`
 {:#members:quantitativescalesettings-majorticksettings-stroke}
 
 
@@ -5700,8 +5500,7 @@ Specifies the stroke color of the major tick lines.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5717,8 +5516,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5736,7 +5534,7 @@ quantitativeScaleSettings : { majorTickSettings : { stroke : "red" } }
 
 
 
-### quantitativeScaleSettings.majorTickSettings.width<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.majorTickSettings.width `number`
 {:#members:quantitativescalesettings-majorticksettings-width}
 
 
@@ -5751,8 +5549,7 @@ Specifies the width of the major tick lines.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5768,8 +5565,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5787,7 +5583,7 @@ quantitativeScaleSettings : { majorTickSettings : { width : 1 } }
 
 
 
-### quantitativeScaleSettings.maximum<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.maximum `number`
 {:#members:quantitativescalesettings-maximum}
 
 
@@ -5802,8 +5598,7 @@ Specifies the maximum value of the Graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5819,8 +5614,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5838,7 +5632,7 @@ quantitativeScaleSettings : { maximum : 8 }
 
 
 
-### quantitativeScaleSettings.minimum<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.minimum `number`
 {:#members:quantitativescalesettings-minimum}
 
 
@@ -5853,8 +5647,7 @@ Specifies the minimum value of the Graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5870,8 +5663,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5889,7 +5681,7 @@ quantitativeScaleSettings : { minimum : 1 }
 
 
 
-### quantitativeScaleSettings.minorTickSettings<span class="type-signature type object">object</span>
+### quantitativeScaleSettings.minorTickSettings  `object`
 {:#members:quantitativescalesettings-minorticksettings}
 
 
@@ -5911,7 +5703,7 @@ Contains property to customize the minor ticks.
 
 
 
-### quantitativeScaleSettings.minorTickSettings.size<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.minorTickSettings.size `number`
 {:#members:quantitativescalesettings-minorticksettings-size}
 
 
@@ -5926,8 +5718,7 @@ Specifies the size of minor ticks.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5943,8 +5734,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5962,7 +5752,7 @@ quantitativeScaleSettings : { minorTickSettings : { size : 10} }
 
 
 
-### quantitativeScaleSettings.minorTickSettings.stroke<span class="type-signature type string">string</span>
+### quantitativeScaleSettings.minorTickSettings.stroke `string`
 {:#members:quantitativescalesettings-minorticksettings-stroke}
 
 
@@ -5977,8 +5767,7 @@ Specifies the stroke color of minor ticks in bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5994,8 +5783,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6013,7 +5801,7 @@ quantitativeScaleSettings : { minorTickSettings : { stroke : "green" } }
 
 
 
-### quantitativeScaleSettings.minorTickSettings.width<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.minorTickSettings.width `number`
 {:#members:quantitativescalesettings-minorticksettings-width}
 
 
@@ -6028,8 +5816,7 @@ Specifies the width of the minor ticks in bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6045,8 +5832,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6064,7 +5850,7 @@ quantitativeScaleSettings : { minorTickSettings : { width : 1 } }
 
 
 
-### quantitativeScaleSettings.minorTicksPerInterval<span class="type-signature type number">number</span>
+### quantitativeScaleSettings.minorTicksPerInterval `number`
 {:#members:quantitativescalesettings-minorticksperinterval}
 
 
@@ -6079,8 +5865,7 @@ The specified number of minor ticks will be rendered per interval.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6096,8 +5881,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6115,7 +5899,7 @@ quantitativeScaleSettings : { minorTicksPerInterval : 5 }
 
 
 
-### quantitativeScaleSettings.tickPlacement<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.tickPlacement `enum`
 {:#members:quantitativescalesettings-tickplacement}
 
 
@@ -6130,8 +5914,7 @@ Specifies the placement of ticks to render either inside or outside the scale. S
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6147,8 +5930,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6166,7 +5948,7 @@ quantitativeScaleSettings : { tickPlacement : "inside" }
 
 
 
-### quantitativeScaleSettings.tickPosition<span class="type-signature type enum">enum</span>
+### quantitativeScaleSettings.tickPosition `enum`
 {:#members:quantitativescalesettings-tickposition}
 
 
@@ -6181,8 +5963,7 @@ Specifies the position of the ticks to render either above, below or inside the 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6198,8 +5979,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6217,7 +5997,7 @@ quantitativeScaleSettings : { tickPosition : "near" }
 
 
 
-### theme<span class="type-signature type string">string</span>
+### theme `string`
 {:#members:theme}
 
 
@@ -6232,8 +6012,7 @@ By specifying this property the user can change the theme of the bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6249,8 +6028,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6268,7 +6046,7 @@ theme : "flatdark"
 
 
 
-### tooltipSettings<span class="type-signature type object">object</span>
+### tooltipSettings  `object`
 {:#members:tooltipsettings}
 
 
@@ -6290,7 +6068,7 @@ Contains all the properties to customize tooltip.
 
 
 
-### tooltipSettings.captionTemplate<span class="type-signature type string">string</span>
+### tooltipSettings.captionTemplate `string`
 {:#members:tooltipsettings-captiontemplate}
 
 
@@ -6305,8 +6083,7 @@ Specifies template for caption tooltip
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6322,8 +6099,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6341,7 +6117,7 @@ tooltipSettings :{captionTemplate: "Tooltip"}
 
 
 
-### tooltipSettings.enableCaptionTooltip<span class="type-signature type boolean">boolean</span>
+### tooltipSettings.enableCaptionTooltip `boolean`
 {:#members:tooltipsettings-enablecaptiontooltip}
 
 
@@ -6356,8 +6132,7 @@ Toggles the visibility of caption tooltip
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6373,8 +6148,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6392,7 +6166,7 @@ tooltipSettings :{enableCaptionTooltip: true}
 
 
 
-### tooltipSettings.template<span class="type-signature type string">string</span>
+### tooltipSettings.template `string`
 {:#members:tooltipsettings-template}
 
 
@@ -6407,8 +6181,7 @@ Specifies the ID of a div, which is to be displayed as tooltip.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6424,8 +6197,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6443,7 +6215,7 @@ tooltipSettings: { template : "tooltip"},
 
 
 
-### tooltipSettings.visible<span class="type-signature type boolean">boolean</span>
+### tooltipSettings.visible `boolean`
 {:#members:tooltipsettings-visible}
 
 
@@ -6458,8 +6230,7 @@ Toggles the visibility of tooltip
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6475,8 +6246,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6494,7 +6264,7 @@ tooltipSettings :{visible: false}
 
 
 
-### value<span class="type-signature type number">number</span>
+### value `number`
 {:#members:value}
 
 
@@ -6509,8 +6279,7 @@ Feature measure bar in bullet graph render till the specified value.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6526,8 +6295,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6545,7 +6313,7 @@ value : 1
 
 
 
-### width<span class="type-signature type number">number</span>
+### width `number`
 {:#members:width}
 
 
@@ -6560,8 +6328,7 @@ Specifies the width of the bullet graph.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -6577,8 +6344,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6603,7 +6369,7 @@ width : 600
 
 
 
-### destroy<span class="signature">()</span>
+### destroy ()
 {:#methods:destroy}
 
 
@@ -6619,8 +6385,7 @@ To destroy the bullet graph
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6649,7 +6414,7 @@ $("#bulletGraph1").ejButton("destroy");
 
 
 
-### redraw<span class="signature">()</span>
+### redraw()
 {:#methods:redraw}
 
 
@@ -6665,8 +6430,7 @@ To redraw the bulet graph
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6695,7 +6459,7 @@ $("#butbulletGraph1ton1").ejButton("redraw");
 
 
 
-### setComparativeMeasureSymbol<span class="signature">()</span>
+### setComparativeMeasureSymbol()
 {:#methods:setcomparativemeasuresymbol}
 
 
@@ -6734,8 +6498,7 @@ argument.Measure{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6764,7 +6527,7 @@ $("#bulletGraph1").ejBulletGraph("setComparativeMeasureSymbol(1,7)");
 
 
 
-### setFeatureMeasureBarValue<span class="signature">()</span>
+### setFeatureMeasureBarValue()
 {:#methods:setfeaturemeasurebarvalue}
 
 
@@ -6803,8 +6566,7 @@ argument.Measure{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6891,8 +6653,7 @@ args.captionType{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6959,8 +6720,7 @@ args.Value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7027,8 +6787,7 @@ args.Value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7095,8 +6854,7 @@ args.Value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7163,8 +6921,7 @@ args.cancel{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7231,8 +6988,7 @@ args.labelType{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7299,8 +7055,7 @@ args.rangeEndValue{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7332,8 +7087,7 @@ Fires on loading bullet graph.
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}

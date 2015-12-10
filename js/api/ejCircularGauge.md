@@ -13,7 +13,7 @@ The Circular gauge can be easily configured to the DOM element, such as div. you
 
 
 
-$(element).ejCircularGauge<span class="signature">(options)</span>
+$(element).ejCircularGauge(options)
 
 
 
@@ -37,8 +37,7 @@ options{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -72,7 +71,7 @@ Requires
 
 
 
-### animationSpeed<span class="type-signature type number">number</span>
+### animationSpeed `number`
 {:#members:animationspeed}
 
 
@@ -81,8 +80,7 @@ Requires
 Specifies animationSpeed of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -91,8 +89,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -107,7 +104,7 @@ Example
 
 
 
-### backgroundColor<span class="type-signature type string">string</span>
+### backgroundColor `string`
 {:#members:backgroundcolor}
 
 
@@ -116,8 +113,7 @@ Example
 Specifies the backgroundcolor of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -126,8 +122,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -142,7 +137,7 @@ $("#CoreCircularGauge").ejCircularGauge({  backgroundColor : "#F234F4" });
 
 
 
-### distanceFromCorner<span class="type-signature type enum">enum</span>
+### distanceFromCorner `enum`
 {:#members:distancefromcorner}
 
 
@@ -151,8 +146,7 @@ $("#CoreCircularGauge").ejCircularGauge({  backgroundColor : "#F234F4" });
 Specify distanceFromCorner value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -161,8 +155,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -177,7 +170,7 @@ $("#CoreCircularGauge").ejCircularGauge({  gaugePosition:"center", distanceFromC
 
 
 
-### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -186,8 +179,7 @@ $("#CoreCircularGauge").ejCircularGauge({  gaugePosition:"center", distanceFromC
 Specify animate value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -196,8 +188,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -212,7 +203,7 @@ $("#CoreCircularGauge").ejCircularGauge({ enableAnimation: true,scales: [{ point
 
 
 
-### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize `boolean`
 {:#members:enableresize}
 
 
@@ -221,8 +212,7 @@ $("#CoreCircularGauge").ejCircularGauge({ enableAnimation: true,scales: [{ point
 Specify enableResize value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -231,8 +221,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -247,7 +236,7 @@ Example
 
 
 
-### frame<span class="type-signature type object">object</span>
+### frame `object`
 {:#members:frame}
 
 
@@ -256,8 +245,7 @@ Example
 Specify the frame of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -266,8 +254,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -282,7 +269,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType:ej.datavisualization.
 
 
 
-### frame.backgroundImageUrl<span class="type-signature type string">string</span>
+### frame.backgroundImageUrl `string`
 {:#members:frame.backgroundimageurl}
 
 
@@ -291,8 +278,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType:ej.datavisualization.
 Specify the url of the frame background image for circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -301,8 +287,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -317,7 +302,7 @@ Example
 
 
 
-### frame.frameType<span class="type-signature type enum">enum</span>
+### frame.frameType `enum`
 {:#members:frame.frametype}
 
 
@@ -326,8 +311,7 @@ Example
 Specifies the frameType of circular gauge. See <a href="global.html#Frame">Frame</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -336,8 +320,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -352,7 +335,7 @@ $("#CoreCircularGauge").ejCircularGauge({  frame:{frameType : "halfcircle"} });
 
 
 
-### frame.halfCircleFrameEndAngle<span class="type-signature type number">number</span>
+### frame.halfCircleFrameEndAngle `number`
 {:#members:frame.halfcircleframeendangle}
 
 
@@ -361,8 +344,7 @@ $("#CoreCircularGauge").ejCircularGauge({  frame:{frameType : "halfcircle"} });
 Specifies the end angle for the half circular frame.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -371,8 +353,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -387,7 +368,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType : "halfCircle",halfCi
 
 
 
-### frame.halfCircleFrameStartAngle<span class="type-signature type number">number</span>
+### frame.halfCircleFrameStartAngle `number`
 {:#members:frame.halfcircleframestartangle}
 
 
@@ -396,8 +377,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType : "halfCircle",halfCi
 Specifies the start angle for the half circular frame.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -406,8 +386,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -422,7 +401,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType : "halfcircle",halfCi
 
 
 
-### gaugePosition<span class="type-signature type enum">enum</span>
+### gaugePosition `enum`
 {:#members:gaugeposition}
 
 
@@ -431,8 +410,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType : "halfcircle",halfCi
 Specify gaugePosition value of circular gauge See GaugePosition
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -441,8 +419,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -457,7 +434,7 @@ $("#CoreCircularGauge").ejCircularGauge({  gaugePosition:"center" });
 
 
 
-### height<span class="type-signature type number">number</span>
+### height `number`
 {:#members:height}
 
 
@@ -466,8 +443,7 @@ $("#CoreCircularGauge").ejCircularGauge({  gaugePosition:"center" });
 Specifies the height of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -476,8 +452,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -492,7 +467,7 @@ $("#CoreCircularGauge").ejCircularGauge({ height: 400 });
 
 
 
-### interiorGradient<span class="type-signature type object">object</span>
+### interiorGradient `object`
 {:#members:interiorgradient}
 
 
@@ -501,8 +476,7 @@ $("#CoreCircularGauge").ejCircularGauge({ height: 400 });
 Specifies the interiorGradient of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -511,8 +485,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -527,7 +500,7 @@ $("#CoreCircularGauge").ejCircularGauge({ interiorGradient: { colorInfo:[{colorS
 
 
 
-### isRadialGradient<span class="type-signature type boolean">boolean</span>
+### isRadialGradient `boolean`
 {:#members:isradialgradient}
 
 
@@ -536,8 +509,7 @@ $("#CoreCircularGauge").ejCircularGauge({ interiorGradient: { colorInfo:[{colorS
 Specify isRadialGradient value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -546,8 +518,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -562,7 +533,7 @@ Example
 
 
 
-### maximum<span class="type-signature type number">number</span>
+### maximum `number`
 {:#members:maximum}
 
 
@@ -571,8 +542,7 @@ Example
 Specifies the maximum value of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -581,8 +551,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -597,7 +566,7 @@ $("#CoreCircularGauge").ejCircularGauge({ maximum: 120 });
 
 
 
-### minimum<span class="type-signature type number">number</span>
+### minimum `number`
 {:#members:minimum}
 
 
@@ -606,8 +575,7 @@ $("#CoreCircularGauge").ejCircularGauge({ maximum: 120 });
 Specifies the minimum value of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -616,8 +584,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -632,7 +599,7 @@ $("#CoreCircularGauge").ejCircularGauge({ minimum: 10 });
 
 
 
-### outerCustomLabelPosition<span class="type-signature type enum">enum</span>
+### outerCustomLabelPosition `enum`
 {:#members:outercustomlabelposition}
 
 
@@ -641,8 +608,7 @@ $("#CoreCircularGauge").ejCircularGauge({ minimum: 10 });
 Specify outerCustomLabelPosition value of circular gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -651,8 +617,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -667,7 +632,7 @@ $("#CoreCircularGauge").ejCircularGauge({  outerCustomLabelPosition:"top" });
 
 
 
-### radius<span class="type-signature type number">number</span>
+### radius `number`
 {:#members:radius}
 
 
@@ -676,8 +641,7 @@ $("#CoreCircularGauge").ejCircularGauge({  outerCustomLabelPosition:"top" });
 Specifies the radius of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -686,8 +650,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -702,7 +665,7 @@ $("#CoreCircularGauge").ejCircularGauge({ radius: 100 });
 
 
 
-### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly `boolean`
 {:#members:readonly}
 
 
@@ -711,8 +674,7 @@ $("#CoreCircularGauge").ejCircularGauge({ radius: 100 });
 Specify readonly value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -721,8 +683,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -737,7 +698,7 @@ $("#CoreCircularGauge").ejCircularGauge({  readOnly : false });
 
 
 
-### scales<span class="type-signature type object">object</span>
+### scales `object`
 {:#members:scales}
 
 
@@ -746,8 +707,7 @@ $("#CoreCircularGauge").ejCircularGauge({  readOnly : false });
 Specify the pointers, ticks, labels, indicators, ranges of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -756,8 +716,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -772,7 +731,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{showScaleBar: true, size: 6,
 
 
 
-### scales.backgroundColor<span class="type-signature type string">string</span>
+### scales.backgroundColor `string`
 {:#members:scales.backgroundcolor}
 
 
@@ -781,8 +740,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{showScaleBar: true, size: 6,
 Specify backgroundColor for the scale of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -791,8 +749,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -807,7 +764,7 @@ Example
 
 
 
-### scales.border<span class="type-signature type object">object</span>
+### scales.border `object`
 {:#members:scales.border}
 
 
@@ -816,8 +773,7 @@ Example
 Specify border for scales of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -826,8 +782,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -842,7 +797,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ border:{color:null, width:1
 
 
 
-### scales.border.color<span class="type-signature type string">string</span>
+### scales.border.color `string`
 {:#members:scales.border.color}
 
 
@@ -851,8 +806,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ border:{color:null, width:1
 Specify border color for scales of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -861,8 +815,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -877,7 +830,7 @@ Example
 
 
 
-### scales.border.width<span class="type-signature type number">number</span>
+### scales.border.width `number`
 {:#members:scales.border.width}
 
 
@@ -886,8 +839,7 @@ Example
 Specify border width of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -896,8 +848,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -912,7 +863,7 @@ Example
 
 
 
-### scales.direction<span class="type-signature type enum">enum</span>
+### scales.direction `enum`
 {:#members:scales.direction}
 
 
@@ -921,8 +872,7 @@ Example
 Specify scale direction of circular gauge. See <a href="global.html#Directions">Directions</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -931,8 +881,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -947,7 +896,7 @@ Example
 
 
 
-### scales.indicators<span class="type-signature type array">Array</span>
+### scales.indicators `Array`
 {:#members:scales.indicators}
 
 
@@ -956,8 +905,7 @@ Example
 Specify representating state of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -966,8 +914,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -985,7 +932,7 @@ Example
 
 
 
-### scales.indicators.height<span class="type-signature type number">number</span>
+### scales.indicators.height `number`
 {:#members:scales.indicators.height}
 
 
@@ -994,8 +941,7 @@ Example
 Specify indicator height of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1004,8 +950,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1023,7 +968,7 @@ Example
 
 
 
-### scales.indicators.imageUrl<span class="type-signature type string">string</span>
+### scales.indicators.imageUrl `string`
 {:#members:scales.indicators.imageurl}
 
 
@@ -1032,8 +977,7 @@ Example
 Specify imageUrl of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1042,8 +986,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1061,7 +1004,7 @@ Example
 
 
 
-### scales.indicators.position<span class="type-signature type object">object</span>
+### scales.indicators.position `object`
 {:#members:scales.indicators.position}
 
 
@@ -1070,8 +1013,7 @@ Example
 Specify position of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1080,8 +1022,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1099,7 +1040,7 @@ Example
 
 
 
-### scales.indicators.position.x<span class="type-signature type number">number</span>
+### scales.indicators.position.x `number`
 {:#members:scales.indicators.position.x}
 
 
@@ -1108,8 +1049,7 @@ Example
 Specify x-axis of position of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1118,8 +1058,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1137,7 +1076,7 @@ Example
 
 
 
-### scales.indicators.position.y<span class="type-signature type number">number</span>
+### scales.indicators.position.y `number`
 {:#members:scales.indicators.position.y}
 
 
@@ -1146,8 +1085,7 @@ Example
 Specify y-axis of position of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1156,8 +1094,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1175,7 +1112,7 @@ Example
 
 
 
-### scales.indicators.stateRanges<span class="type-signature type array">Array</span>
+### scales.indicators.stateRanges `Array`
 {:#members:scales.indicators.stateranges}
 
 
@@ -1184,8 +1121,7 @@ Example
 Specify the various states of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1194,8 +1130,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1213,7 +1148,7 @@ Example
 
 
 
-### scales.indicators.stateRanges.backgroundColor<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.backgroundColor `string`
 {:#members:scales.indicators.stateranges.backgroundcolor}
 
 
@@ -1222,8 +1157,7 @@ Example
 Specify backgroundColor for indicator of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1232,8 +1166,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1251,7 +1184,7 @@ Example
 
 
 
-### scales.indicators.stateRanges.borderColor<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.borderColor `string`
 {:#members:scales.indicators.stateranges.bordercolor}
 
 
@@ -1260,8 +1193,7 @@ Example
 Specify borderColor for indicator of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1270,8 +1202,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1289,7 +1220,7 @@ Example
 
 
 
-### scales.indicators.stateRanges.endValue<span class="type-signature type number">number</span>
+### scales.indicators.stateRanges.endValue `number`
 {:#members:scales.indicators.stateranges.endvalue}
 
 
@@ -1298,8 +1229,7 @@ Example
 Specify end value for each specified state of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1308,8 +1238,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1327,7 +1256,7 @@ Example
 
 
 
-### scales.indicators.stateRanges.font<span class="type-signature type object">object</span>
+### scales.indicators.stateRanges.font `object`
 {:#members:scales.indicators.stateranges.font}
 
 
@@ -1336,8 +1265,7 @@ Example
 Specify value of the font as the indicator when the indicator style is set with the value "text" of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1346,8 +1274,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1366,7 +1293,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1" },
 
 
 
-### scales.indicators.stateRanges.startValue<span class="type-signature type number">number</span>
+### scales.indicators.stateRanges.startValue `number`
 {:#members:scales.indicators.stateranges.startvalue}
 
 
@@ -1375,8 +1302,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1" },
 Specify start value for each specified state of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1385,8 +1311,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1404,7 +1329,7 @@ Example
 
 
 
-### scales.indicators.stateRanges.text<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.text `string`
 {:#members:scales.indicators.stateranges.text}
 
 
@@ -1413,8 +1338,7 @@ Example
 Specify value of the text as the indicator when the indicator style is set with the value "text" of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1423,8 +1347,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1443,7 +1366,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1" },
 
 
 
-### scales.indicators.stateRanges.textColor<span class="type-signature type string">string</span>
+### scales.indicators.stateRanges.textColor `string`
 {:#members:scales.indicators.stateranges.textcolor}
 
 
@@ -1452,8 +1375,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1" },
 Specify value of the textColor as the indicator when the indicator style is set with the value "text" of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1462,8 +1384,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1482,7 +1403,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1", textColor: "Ye
 
 
 
-### scales.indicators.type<span class="type-signature type enum">enum</span>
+### scales.indicators.type `enum`
 {:#members:scales.indicators.type}
 
 
@@ -1491,8 +1412,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1", textColor: "Ye
 Specify indicator style of circular gauge. See <a href="global.html#IndicatorType">IndicatorType</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1501,8 +1421,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1520,7 +1439,7 @@ Example
 
 
 
-### scales.indicators.width<span class="type-signature type number">number</span>
+### scales.indicators.width `number`
 {:#members:scales.indicators.width}
 
 
@@ -1529,8 +1448,7 @@ Example
 Specify indicator width of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1539,8 +1457,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1558,7 +1475,7 @@ Example
 
 
 
-### scales.labels<span class="type-signature type array">Array</span>
+### scales.labels `Array`
 {:#members:scales.labels}
 
 
@@ -1567,8 +1484,7 @@ Example
 Specify the text values displayed in a meaningful manner alongside the ticks of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1577,8 +1493,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1593,7 +1508,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ angle: 10, opaci
 
 
 
-### scales.labels.angle<span class="type-signature type number">number</span>
+### scales.labels.angle `number`
 {:#members:scales.labels.angle}
 
 
@@ -1602,8 +1517,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ angle: 10, opaci
 Specify the angle for the labels of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1612,8 +1526,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1628,7 +1541,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ angle: 10 }] }] 
 
 
 
-### scales.labels.autoAngle<span class="type-signature type boolean">boolean</span>
+### scales.labels.autoAngle `boolean`
 {:#members:scales.labels.autoangle}
 
 
@@ -1637,8 +1550,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ angle: 10 }] }] 
 Specify labels autoAngle value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1647,8 +1559,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1663,7 +1574,7 @@ Example
 
 
 
-### scales.labels.color<span class="type-signature type string">string</span>
+### scales.labels.color `string`
 {:#members:scales.labels.color}
 
 
@@ -1672,8 +1583,7 @@ Example
 Specify label color of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1682,8 +1592,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1698,7 +1607,7 @@ Example
 
 
 
-### scales.labels.distanceFromScale<span class="type-signature type number">number</span>
+### scales.labels.distanceFromScale `number`
 {:#members:scales.labels.distancefromscale}
 
 
@@ -1707,8 +1616,7 @@ Example
 Specify distanceFromScale value for labels of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1717,8 +1625,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1733,7 +1640,7 @@ Example
 
 
 
-### scales.labels.font<span class="type-signature type object">object</span>
+### scales.labels.font `object`
 {:#members:scales.labels.font}
 
 
@@ -1742,8 +1649,7 @@ Example
 Specify font for labels of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1752,8 +1658,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1768,7 +1673,7 @@ Example
 
 
 
-### scales.labels.font.fontFamily<span class="type-signature type string">String</span>
+### scales.labels.font.fontFamily `string`
 {:#members:scales.labels.font.fontfamily}
 
 
@@ -1777,8 +1682,7 @@ Example
 Specify font fontFamily for labels of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1787,8 +1691,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1803,7 +1706,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { fontFami
 
 
 
-### scales.labels.font.fontStyle<span class="type-signature type string">string</span>
+### scales.labels.font.fontStyle `string`
 {:#members:scales.labels.font.fontstyle}
 
 
@@ -1812,8 +1715,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { fontFami
 Specify font Style for labels of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1822,8 +1724,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1838,7 +1739,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { fontStyl
 
 
 
-### scales.labels.font.size<span class="type-signature type string">string</span>
+### scales.labels.font.size `string`
 {:#members:scales.labels.font.size}
 
 
@@ -1847,8 +1748,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { fontStyl
 Specify font size for labels of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1857,8 +1757,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1873,7 +1772,7 @@ Example
 
 
 
-### scales.labels.includeFirstValue<span class="type-signature type boolean">boolean</span>
+### scales.labels.includeFirstValue `boolean`
 {:#members:scales.labels.includefirstvalue}
 
 
@@ -1882,8 +1781,7 @@ Example
 Specify includeFirstValue of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1892,8 +1790,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1908,7 +1805,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ includeFirstValu
 
 
 
-### scales.labels.opacity<span class="type-signature type number">number</span>
+### scales.labels.opacity `number`
 {:#members:scales.labels.opacity}
 
 
@@ -1917,8 +1814,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ includeFirstValu
 Specify opacity value for labels of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1927,8 +1823,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1943,7 +1838,7 @@ Example
 
 
 
-### scales.labels.placement<span class="type-signature type enum">enum</span>
+### scales.labels.placement `enum`
 {:#members:scales.labels.placement}
 
 
@@ -1952,8 +1847,7 @@ Example
 Specify label placement of circular gauge. See <a href="global.html#LabelPlacement">LabelPlacement</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1962,8 +1856,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1978,7 +1871,7 @@ Example
 
 
 
-### scales.labels.type<span class="type-signature type enum">enum</span>
+### scales.labels.type `enum`
 {:#members:scales.labels.type}
 
 
@@ -1987,8 +1880,7 @@ Example
 Specify label Style of circular gauge. See <a href="global.html#LabelType">LabelType</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1997,8 +1889,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2013,7 +1904,7 @@ Example
 
 
 
-### scales.labels.unitText<span class="type-signature type string">string</span>
+### scales.labels.unitText `string`
 {:#members:scales.labels.unittext}
 
 
@@ -2022,8 +1913,7 @@ Example
 Specify unitText of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2032,8 +1922,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2048,7 +1937,7 @@ Example
 
 
 
-### scales.labels.unitTextPosition<span class="type-signature type enum">enum</span>
+### scales.labels.unitTextPosition `enum`
 {:#members:scales.labels.unittextposition}
 
 
@@ -2057,8 +1946,7 @@ Example
 Specify unitTextPosition of circular gauge. See UnitTextPosition
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2067,8 +1955,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2083,7 +1970,7 @@ Example
 
 
 
-### scales.majorIntervalValue<span class="type-signature type number">number</span>
+### scales.majorIntervalValue `number`
 {:#members:scales.majorintervalvalue}
 
 
@@ -2092,8 +1979,7 @@ Example
 Specify majorIntervalValue of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2102,8 +1988,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2118,7 +2003,7 @@ Example
 
 
 
-### scales.maximum<span class="type-signature type number">number</span>
+### scales.maximum `number`
 {:#members:scales.maximum}
 
 
@@ -2127,8 +2012,7 @@ Example
 Specify maximum scale value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2137,8 +2021,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2153,7 +2036,7 @@ Example
 
 
 
-### scales.minimum<span class="type-signature type number">number</span>
+### scales.minimum `number`
 {:#members:scales.minimum}
 
 
@@ -2162,8 +2045,7 @@ Example
 Specify minimum scale value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2172,8 +2054,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2188,7 +2069,7 @@ Example
 
 
 
-### scales.minorIntervalValue<span class="type-signature type number">number</span>
+### scales.minorIntervalValue `number`
 {:#members:scales.minorintervalvalue}
 
 
@@ -2197,8 +2078,7 @@ Example
 Specify minorIntervalValue of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2207,8 +2087,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2223,7 +2102,7 @@ Example
 
 
 
-### scales.opacity<span class="type-signature type number">number</span>
+### scales.opacity `number`
 {:#members:scales.opacity}
 
 
@@ -2232,8 +2111,7 @@ Example
 Specify opacity value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2242,8 +2120,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2258,7 +2135,7 @@ Example
 
 
 
-### scales.pointerCap<span class="type-signature type object">object</span>
+### scales.pointerCap `object`
 {:#members:scales.pointercap}
 
 
@@ -2267,8 +2144,7 @@ Example
 Specify pointer cap of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2277,8 +2153,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2293,7 +2168,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointerCap:{radius: 7, bord
 
 
 
-### scales.pointerCap.backgroundColor<span class="type-signature type string">string</span>
+### scales.pointerCap.backgroundColor `string`
 {:#members:scales.pointercap.backgroundcolor}
 
 
@@ -2302,8 +2177,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointerCap:{radius: 7, bord
 Specify cap backgroundColor of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2312,8 +2186,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2328,7 +2201,7 @@ Example
 
 
 
-### scales.pointerCap.borderColor<span class="type-signature type string">string</span>
+### scales.pointerCap.borderColor `string`
 {:#members:scales.pointercap.bordercolor}
 
 
@@ -2337,8 +2210,7 @@ Example
 Specify cap borderColor of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2347,8 +2219,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2363,7 +2234,7 @@ Example
 
 
 
-### scales.pointerCap.borderWidth<span class="type-signature type number">number</span>
+### scales.pointerCap.borderWidth `number`
 {:#members:scales.pointercap.borderwidth}
 
 
@@ -2372,8 +2243,7 @@ Example
 Specify pointerCap borderWidth value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2382,8 +2252,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2398,7 +2267,7 @@ Example
 
 
 
-### scales.pointerCap.interiorGradient<span class="type-signature type object">Object</span>
+### scales.pointerCap.interiorGradient `object`
 {:#members:scales.pointercap.interiorgradient}
 
 
@@ -2407,8 +2276,7 @@ Example
 Specify cap interiorGradient value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2417,8 +2285,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2433,7 +2300,7 @@ Example
 
 
 
-### scales.pointerCap.radius<span class="type-signature type number">number</span>
+### scales.pointerCap.radius `number`
 {:#members:scales.pointercap.radius}
 
 
@@ -2442,8 +2309,7 @@ Example
 Specify pointerCap Radius value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2452,8 +2318,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2468,7 +2333,7 @@ Example
 
 
 
-### scales.pointers<span class="type-signature type array">Array</span>
+### scales.pointers `Array`
 {:#members:scales.pointers}
 
 
@@ -2477,8 +2342,7 @@ Example
 Specify pointers value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2487,8 +2351,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2503,7 +2366,7 @@ Example
 
 
 
-### scales.pointers.backgroundColor<span class="type-signature type string">string</span>
+### scales.pointers.backgroundColor `string`
 {:#members:scales.pointers.backgroundcolor}
 
 
@@ -2512,8 +2375,7 @@ Example
 Specify backgroundColor for the pointer of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2522,8 +2384,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2538,7 +2399,7 @@ Example
 
 
 
-### scales.pointers.backNeedleLength<span class="type-signature type number">number</span>
+### scales.pointers.backNeedleLength `number`
 {:#members:scales.pointers.backneedlelength}
 
 
@@ -2547,8 +2408,7 @@ Example
 Specify backNeedleLength of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2557,8 +2417,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2573,7 +2432,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 
 
 
-### scales.pointers.border<span class="type-signature type object">object</span>
+### scales.pointers.border `object`
 {:#members:scales.pointers.border}
 
 
@@ -2582,8 +2441,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 Specify the border for pointers of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2592,8 +2450,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2608,7 +2465,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers:[{border:{color:nu
 
 
 
-### scales.pointers.border.color<span class="type-signature type string">string</span>
+### scales.pointers.border.color `string`
 {:#members:scales.pointers.border.color}
 
 
@@ -2617,8 +2474,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers:[{border:{color:nu
 Specify border color for pointer of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2627,8 +2483,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2643,7 +2498,7 @@ Example
 
 
 
-### scales.pointers.border.width<span class="type-signature type number">number</span>
+### scales.pointers.border.width `number`
 {:#members:scales.pointers.border.width}
 
 
@@ -2652,8 +2507,7 @@ Example
 Specify border width for pointers of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2662,8 +2516,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2678,7 +2531,7 @@ Example
 
 
 
-### scales.pointers.distanceFromScale<span class="type-signature type number">number</span>
+### scales.pointers.distanceFromScale `number`
 {:#members:scales.pointers.distancefromscale}
 
 
@@ -2687,8 +2540,7 @@ Example
 Specify distanceFromScale value for pointers of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2697,8 +2549,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2713,7 +2564,7 @@ Example
 
 
 
-### scales.pointers.gradients<span class="type-signature type object">Object</span>
+### scales.pointers.gradients `object`
 {:#members:scales.pointers.gradients}
 
 
@@ -2722,8 +2573,7 @@ Example
 Specify pointer gradients of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2732,8 +2582,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2757,8 +2606,7 @@ Example
 Specify pointer image of circular gauge.It is applicable for both marker as well as needle type pointers.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2767,8 +2615,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2783,7 +2630,7 @@ Example
 
 
 
-### scales.pointers.length<span class="type-signature type number">number</span>
+### scales.pointers.length `number`
 {:#members:scales.pointers.length}
 
 
@@ -2792,8 +2639,7 @@ Example
 Specify pointer length of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2802,8 +2648,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2818,7 +2663,7 @@ Example
 
 
 
-### scales.pointers.markerType<span class="type-signature type enum">enum</span>
+### scales.pointers.markerType `enum`
 {:#members:scales.pointers.markertype}
 
 
@@ -2827,8 +2672,7 @@ Example
 Specify marker Style value of circular gauge. See <a href="global.html#MarkerType">MarkerType</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2837,8 +2681,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2853,7 +2696,7 @@ Example
 
 
 
-### scales.pointers.needleType<span class="type-signature type enum">enum</span>
+### scales.pointers.needleType `enum`
 {:#members:scales.pointers.needletype}
 
 
@@ -2862,8 +2705,7 @@ Example
 Specify needle Style value of circular gauge. See <a href="global.html#NeedleType">NeedleType</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2872,8 +2714,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2888,7 +2729,7 @@ Example
 
 
 
-### scales.pointers.opacity<span class="type-signature type number">number</span>
+### scales.pointers.opacity `number`
 {:#members:scales.pointers.opacity}
 
 
@@ -2897,8 +2738,7 @@ Example
 Specify opacity value for pointer of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2907,8 +2747,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2923,7 +2762,7 @@ Example
 
 
 
-### scales.pointers.placement<span class="type-signature type enum">enum</span>
+### scales.pointers.placement `enum`
 {:#members:scales.pointers.placement}
 
 
@@ -2932,8 +2771,7 @@ Example
 Specify pointer Placement value of circular gauge. See <a href="global.html#PointerPlacement">PointerPlacement</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2942,8 +2780,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2958,7 +2795,7 @@ Example
 
 
 
-### scales.pointers.pointerValueText<span class="type-signature type object">object</span>
+### scales.pointers.pointerValueText `object`
 {:#members:scales.pointers.pointervaluetext}
 
 
@@ -2967,8 +2804,7 @@ Example
 Specify pointer value text of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2977,8 +2813,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2993,7 +2828,7 @@ Example
 
 
 
-### scales.pointers.pointerValueText.angle<span class="type-signature type number">number</span>
+### scales.pointers.pointerValueText.angle `number`
 {:#members:scales.pointers.pointervaluetext.angle}
 
 
@@ -3002,8 +2837,7 @@ Example
 Specify pointer text angle of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3012,8 +2846,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3028,7 +2861,7 @@ Example
 
 
 
-### scales.pointers.pointerValueText.autoAngle<span class="type-signature type boolean">boolean</span>
+### scales.pointers.pointerValueText.autoAngle `boolean`
 {:#members:scales.pointers.pointervaluetext.autoangle}
 
 
@@ -3037,8 +2870,7 @@ Example
 Specify pointer text auto angle of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3047,8 +2879,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3063,7 +2894,7 @@ Example
 
 
 
-### scales.pointers.pointerValueText.color<span class="type-signature type string">string</span>
+### scales.pointers.pointerValueText.color `string`
 {:#members:scales.pointers.pointervaluetext.color}
 
 
@@ -3072,8 +2903,7 @@ Example
 Specify pointer value text color of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3082,8 +2912,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3098,7 +2927,7 @@ Example
 
 
 
-### scales.pointers.pointerValueText.distance<span class="type-signature type number">number</span>
+### scales.pointers.pointerValueText.distance `number`
 {:#members:scales.pointers.pointervaluetext.distance}
 
 
@@ -3107,8 +2936,7 @@ Example
 Specify pointer value text distance from pointer of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3117,8 +2945,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3133,7 +2960,7 @@ Example
 
 
 
-### scales.pointers.pointerValueText.font<span class="type-signature type object">object</span>
+### scales.pointers.pointerValueText.font `object`
 {:#members:scales.pointers.pointervaluetext.font}
 
 
@@ -3142,8 +2969,7 @@ Example
 Specify pointer value text font option of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3152,8 +2978,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3168,7 +2993,7 @@ Example
 
 
 
-### scales.pointers.pointerValueText.font.fontFamily<span class="type-signature type string">string</span>
+### scales.pointers.pointerValueText.font.fontFamily `string`
 {:#members:scales.pointers.pointervaluetext.font.fontfamily}
 
 
@@ -3177,8 +3002,7 @@ Example
 Specify pointer value text font family of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3187,8 +3011,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3203,7 +3026,7 @@ Example
 
 
 
-### scales.pointers.pointerValueText.font.fontStyle<span class="type-signature type string">string</span>
+### scales.pointers.pointerValueText.font.fontStyle `string`
 {:#members:scales.pointers.pointervaluetext.font.fontstyle}
 
 
@@ -3212,8 +3035,7 @@ Example
 Specify pointer value text font style of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3222,8 +3044,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3238,7 +3059,7 @@ Example
 
 
 
-### scales.pointers.pointerValueText.font.size<span class="type-signature type string">string</span>
+### scales.pointers.pointerValueText.font.size `string`
 {:#members:scales.pointers.pointervaluetext.font.size}
 
 
@@ -3247,8 +3068,7 @@ Example
 Specify pointer value text size of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3257,8 +3077,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3273,7 +3092,7 @@ Example
 
 
 
-### scales.pointers.pointerValueText.opacity<span class="type-signature type number">number</span>
+### scales.pointers.pointerValueText.opacity `number`
 {:#members:scales.pointers.pointervaluetext.opacity}
 
 
@@ -3282,8 +3101,7 @@ Example
 Specify pointer value text opacity of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3292,8 +3110,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3308,7 +3125,7 @@ Example
 
 
 
-### scales.pointers.pointerValueText.showValue<span class="type-signature type boolean">boolean</span>
+### scales.pointers.pointerValueText.showValue `boolean`
 {:#members:scales.pointers.pointervaluetext.showvalue}
 
 
@@ -3317,8 +3134,7 @@ Example
 enable pointer value text visibility of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3327,8 +3143,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3343,7 +3158,7 @@ Example
 
 
 
-### scales.pointers.showBackNeedle<span class="type-signature type boolean">boolean</span>
+### scales.pointers.showBackNeedle `boolean`
 {:#members:scales.pointers.showbackneedle}
 
 
@@ -3352,8 +3167,7 @@ Example
 Specify showBackNeedle value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3362,8 +3176,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3378,7 +3191,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 
 
 
-### scales.pointers.type<span class="type-signature type enum">enum</span>
+### scales.pointers.type `enum`
 {:#members:scales.pointers.type}
 
 
@@ -3387,8 +3200,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 Specify pointer type value of circular gauge. See <a href="global.html#PointerType">PointerType</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3397,8 +3209,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3413,7 +3224,7 @@ Example
 
 
 
-### scales.pointers.value<span class="type-signature type number">number</span>
+### scales.pointers.value `number`
 {:#members:scales.pointers.value}
 
 
@@ -3422,8 +3233,7 @@ Example
 Specify value of the pointer of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3432,8 +3242,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3448,7 +3257,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ value: 50 }] }
 
 
 
-### scales.pointers.width<span class="type-signature type number">number</span>
+### scales.pointers.width `number`
 {:#members:scales.pointers.width}
 
 
@@ -3457,8 +3266,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ value: 50 }] }
 Specify pointer width of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3467,8 +3275,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3483,7 +3290,7 @@ Example
 
 
 
-### scales.radius<span class="type-signature type number">number</span>
+### scales.radius `number`
 {:#members:scales.radius}
 
 
@@ -3492,8 +3299,7 @@ Example
 Specify scale radius of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3502,8 +3308,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3518,7 +3323,7 @@ Example
 
 
 
-### scales.ranges<span class="type-signature type array">Array</span>
+### scales.ranges `Array`
 {:#members:scales.ranges}
 
 
@@ -3527,8 +3332,7 @@ Example
 Specify ranges value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3537,8 +3341,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3553,7 +3356,7 @@ Example
 
 
 
-### scales.ranges.backgroundColor<span class="type-signature type string">string</span>
+### scales.ranges.backgroundColor `string`
 {:#members:scales.ranges.backgroundcolor}
 
 
@@ -3562,8 +3365,7 @@ Example
 Specify backgroundColor for the ranges of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3572,8 +3374,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3588,7 +3389,7 @@ Example
 
 
 
-### scales.ranges.border<span class="type-signature type object">object</span>
+### scales.ranges.border `object`
 {:#members:scales.ranges.border}
 
 
@@ -3597,8 +3398,7 @@ Example
 Specify border for ranges of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3607,8 +3407,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3623,7 +3422,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ranges:[{border:{color:null
 
 
 
-### scales.ranges.border.color<span class="type-signature type string">string</span>
+### scales.ranges.border.color `string`
 {:#members:scales.ranges.border.color}
 
 
@@ -3632,8 +3431,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ranges:[{border:{color:null
 Specify border color for ranges of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3642,8 +3440,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3658,7 +3455,7 @@ Example
 
 
 
-### scales.ranges.border.width<span class="type-signature type number">number</span>
+### scales.ranges.border.width `number`
 {:#members:scales.ranges.border.width}
 
 
@@ -3667,8 +3464,7 @@ Example
 Specify border width for ranges of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3677,8 +3473,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3693,7 +3488,7 @@ Example
 
 
 
-### scales.ranges.distanceFromScale<span class="type-signature type number">number</span>
+### scales.ranges.distanceFromScale `number`
 {:#members:scales.ranges.distancefromscale}
 
 
@@ -3702,8 +3497,7 @@ Example
 Specify distanceFromScale value for ranges of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3712,8 +3506,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3728,7 +3521,7 @@ $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{di
 
 
 
-### scales.ranges.endValue<span class="type-signature type number">number</span>
+### scales.ranges.endValue `number`
 {:#members:scales.ranges.endvalue}
 
 
@@ -3737,8 +3530,7 @@ $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{di
 Specify endValue for ranges of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3747,8 +3539,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3763,7 +3554,7 @@ Example
 
 
 
-### scales.ranges.endWidth<span class="type-signature type number">number</span>
+### scales.ranges.endWidth `number`
 {:#members:scales.ranges.endwidth}
 
 
@@ -3772,8 +3563,7 @@ Example
 Specify endWidth for ranges of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3782,8 +3572,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3798,7 +3587,7 @@ Example
 
 
 
-### scales.ranges.gradients<span class="type-signature type object">object</span>
+### scales.ranges.gradients `object`
 {:#members:scales.ranges.gradients}
 
 
@@ -3807,8 +3596,7 @@ Example
 Specify range gradients of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3817,8 +3605,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3833,7 +3620,7 @@ Example
 
 
 
-### scales.ranges.opacity<span class="type-signature type number">number</span>
+### scales.ranges.opacity `number`
 {:#members:scales.ranges.opacity}
 
 
@@ -3842,8 +3629,7 @@ Example
 Specify opacity value for ranges of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3852,8 +3638,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3868,7 +3653,7 @@ Example
 
 
 
-### scales.ranges.placement<span class="type-signature type enum">enum</span>
+### scales.ranges.placement `enum`
 {:#members:scales.ranges.placement}
 
 
@@ -3877,8 +3662,7 @@ Example
 Specify placement of circular gauge. See <a href="global.html#RangePlacement">RangePlacement</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3887,8 +3671,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3903,7 +3686,7 @@ Example
 
 
 
-### scales.ranges.size<span class="type-signature type number">number</span>
+### scales.ranges.size `number`
 {:#members:scales.ranges.size}
 
 
@@ -3912,8 +3695,7 @@ Example
 Specify size of the range value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3922,8 +3704,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3938,7 +3719,7 @@ Example
 
 
 
-### scales.ranges.startValue<span class="type-signature type number">number</span>
+### scales.ranges.startValue `number`
 {:#members:scales.ranges.startvalue}
 
 
@@ -3947,8 +3728,7 @@ Example
 Specify startValue for ranges of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3957,8 +3737,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3973,7 +3752,7 @@ Example
 
 
 
-### scales.ranges.startWidth<span class="type-signature type number">number</span>
+### scales.ranges.startWidth `number`
 {:#members:scales.ranges.startwidth}
 
 
@@ -3982,8 +3761,7 @@ Example
 Specify startWidth of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3992,8 +3770,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4008,7 +3785,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{
 
 
 
-### scales.shadowOffset<span class="type-signature type number">number</span>
+### scales.shadowOffset `number`
 {:#members:scales.shadowoffset}
 
 
@@ -4017,8 +3794,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{
 Specify shadowOffset value of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4027,8 +3803,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4043,7 +3818,7 @@ Example
 
 
 
-### scales.showIndicators<span class="type-signature type boolean">boolean</span>
+### scales.showIndicators `boolean`
 {:#members:scales.showindicators}
 
 
@@ -4052,8 +3827,7 @@ Example
 Specify showIndicators of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4062,8 +3836,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4078,7 +3851,7 @@ Example
 
 
 
-### scales.showLabels<span class="type-signature type boolean">boolean</span>
+### scales.showLabels `boolean`
 {:#members:scales.showlabels}
 
 
@@ -4087,8 +3860,7 @@ Example
 Specify showLabels of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4097,8 +3869,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4113,7 +3884,7 @@ Example
 
 
 
-### scales.showPointers<span class="type-signature type boolean">boolean</span>
+### scales.showPointers `boolean`
 {:#members:scales.showpointers}
 
 
@@ -4122,8 +3893,7 @@ Example
 Specify showPointers of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4132,8 +3902,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4148,7 +3917,7 @@ Example
 
 
 
-### scales.showRanges<span class="type-signature type boolean">boolean</span>
+### scales.showRanges `boolean`
 {:#members:scales.showranges}
 
 
@@ -4157,8 +3926,7 @@ Example
 Specify showRanges of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4167,8 +3935,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4183,7 +3950,7 @@ Example
 
 
 
-### scales.showScaleBar<span class="type-signature type boolean">boolean</span>
+### scales.showScaleBar `boolean`
 {:#members:scales.showscalebar}
 
 
@@ -4192,8 +3959,7 @@ Example
 Specify showScaleBar of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4202,8 +3968,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4218,7 +3983,7 @@ Example
 
 
 
-### scales.showTicks<span class="type-signature type boolean">boolean</span>
+### scales.showTicks `boolean`
 {:#members:scales.showticks}
 
 
@@ -4227,8 +3992,7 @@ Example
 Specify showTicks of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4237,8 +4001,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4253,7 +4016,7 @@ Example
 
 
 
-### scales.size<span class="type-signature type number">number</span>
+### scales.size `number`
 {:#members:scales.size}
 
 
@@ -4262,8 +4025,7 @@ Example
 Specify scaleBar size of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4272,8 +4034,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4288,7 +4049,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showScaleBar: true, size: 6
 
 
 
-### scales.startAngle<span class="type-signature type number">number</span>
+### scales.startAngle `number`
 {:#members:scales.startangle}
 
 
@@ -4297,8 +4058,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showScaleBar: true, size: 6
 Specify startAngle of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4307,8 +4067,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4323,7 +4082,7 @@ Example
 
 
 
-### scales.subGauges<span class="type-signature type array">Array</span>
+### scales.subGauges `Array`
 {:#members:scales.subgauges}
 
 
@@ -4332,8 +4091,7 @@ Example
 Specify subGauge of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4342,8 +4100,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4362,7 +4119,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 
-### scales.subGauges.height<span class="type-signature type number">number</span>
+### scales.subGauges.height `number`
 {:#members:scales.subgauges.height}
 
 
@@ -4371,8 +4128,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 Specify subGauge Height of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4381,8 +4137,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4401,7 +4156,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 
-### scales.subGauges.position<span class="type-signature type object">object</span>
+### scales.subGauges.position `object`
 {:#members:scales.subgauges.position}
 
 
@@ -4410,8 +4165,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 Specify position for sub-gauge of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4420,8 +4174,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4440,7 +4193,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 
-### scales.subGauges.position.x<span class="type-signature type number">number</span>
+### scales.subGauges.position.x `number`
 {:#members:scales.subgauges.position.x}
 
 
@@ -4449,8 +4202,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 Specify x-axis position for sub-gauge of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4459,8 +4211,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4479,7 +4230,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 
-### scales.subGauges.position.y<span class="type-signature type number">number</span>
+### scales.subGauges.position.y `number`
 {:#members:scales.subgauges.position.y}
 
 
@@ -4488,8 +4239,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 Specify y-axis position for sub-gauge of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4498,8 +4248,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4518,7 +4267,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 
-### scales.subGauges.width<span class="type-signature type number">number</span>
+### scales.subGauges.width `number`
 {:#members:scales.subgauges.width}
 
 
@@ -4527,8 +4276,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 Specify subGauge Width of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4537,8 +4285,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4557,7 +4304,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 
-### scales.sweepAngle<span class="type-signature type number">number</span>
+### scales.sweepAngle `number`
 {:#members:scales.sweepangle}
 
 
@@ -4566,8 +4313,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 Specify sweepAngle of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4576,8 +4322,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4592,7 +4337,7 @@ Example
 
 
 
-### scales.ticks<span class="type-signature type array">Array</span>
+### scales.ticks `Array`
 {:#members:scales.ticks}
 
 
@@ -4601,8 +4346,7 @@ Example
 Specify ticks of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4611,8 +4355,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4627,7 +4370,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ angle: 10, distan
 
 
 
-### scales.ticks.angle<span class="type-signature type number">number</span>
+### scales.ticks.angle `number`
 {:#members:scales.ticks.angle}
 
 
@@ -4636,8 +4379,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ angle: 10, distan
 Specify the angle for the ticks of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4646,8 +4388,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4662,7 +4403,7 @@ Example
 
 
 
-### scales.ticks.color<span class="type-signature type string">string</span>
+### scales.ticks.color `string`
 {:#members:scales.ticks.color}
 
 
@@ -4671,8 +4412,7 @@ Example
 Specify tick color of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4681,8 +4421,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4697,7 +4436,7 @@ Example
 
 
 
-### scales.ticks.distanceFromScale<span class="type-signature type number">number</span>
+### scales.ticks.distanceFromScale `number`
 {:#members:scales.ticks.distancefromscale}
 
 
@@ -4706,8 +4445,7 @@ Example
 Specify distanceFromScale value for ticks of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4716,8 +4454,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4732,7 +4469,7 @@ Example
 
 
 
-### scales.ticks.height<span class="type-signature type number">number</span>
+### scales.ticks.height `number`
 {:#members:scales.ticks.height}
 
 
@@ -4741,8 +4478,7 @@ Example
 Specify tick height of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4751,8 +4487,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4767,7 +4502,7 @@ Example
 
 
 
-### scales.ticks.placement<span class="type-signature type enum">enum</span>
+### scales.ticks.placement `enum`
 {:#members:scales.ticks.placement}
 
 
@@ -4776,8 +4511,7 @@ Example
 Specify tick placement of circular gauge. See <a href="global.html#TickPlacement">TickPlacement</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4786,8 +4520,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4802,7 +4535,7 @@ Example
 
 
 
-### scales.ticks.type<span class="type-signature type enum">enum</span>
+### scales.ticks.type `enum`
 {:#members:scales.ticks.type}
 
 
@@ -4811,8 +4544,7 @@ Example
 Specify tick Style of circular gauge. See <a href="global.html#TickType">TickType</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4821,8 +4553,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4837,7 +4568,7 @@ Example
 
 
 
-### scales.ticks.width<span class="type-signature type number">number</span>
+### scales.ticks.width `number`
 {:#members:scales.ticks.width}
 
 
@@ -4846,8 +4577,7 @@ Example
 Specify tick width of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4856,8 +4586,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4872,7 +4601,7 @@ Example
 
 
 
-### theme<span class="type-signature type string">string</span>
+### theme `string`
 {:#members:theme}
 
 
@@ -4881,8 +4610,7 @@ Example
 Specify the theme of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4891,8 +4619,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4907,7 +4634,7 @@ Example
 
 
 
-### tooltip<span class="type-signature type object">object</span>
+### tooltip `object`
 {:#members:tooltip}
 
 
@@ -4916,8 +4643,7 @@ Example
 Specify tooltip option of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4926,8 +4652,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4942,7 +4667,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true,showC
 
 
 
-### tooltip.showCustomLabelTooltip<span class="type-signature type boolean">boolean</span>
+### tooltip.showCustomLabelTooltip `boolean`
 {:#members:tooltip.showcustomlabeltooltip}
 
 
@@ -4951,8 +4676,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true,showC
 enable showCustomLabelTooltip of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4961,8 +4685,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4977,7 +4700,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showCustomLabelTooltip: true
 
 
 
-### tooltip.showLabelTooltip<span class="type-signature type boolean">boolean</span>
+### tooltip.showLabelTooltip `boolean`
 {:#members:tooltip.showlabeltooltip}
 
 
@@ -4986,8 +4709,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showCustomLabelTooltip: true
 enable showLabelTooltip of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4996,8 +4718,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5012,7 +4733,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true} });
 
 
 
-### tooltip.templateID<span class="type-signature type string">string</span>
+### tooltip.templateID `string`
 {:#members:tooltip.templateid}
 
 
@@ -5021,8 +4742,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true} });
 Specify tooltip templateID of circular gauge
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5031,8 +4751,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5047,7 +4766,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true, temp
 
 
 
-### value<span class="type-signature type number">number</span>
+### value `number`
 {:#members:value}
 
 
@@ -5056,8 +4775,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true, temp
 Specifies the value of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5066,8 +4784,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5082,7 +4799,7 @@ $("#CoreCircularGauge").ejCircularGauge({ value: 30 });
 
 
 
-### width<span class="type-signature type number">number</span>
+### width `number`
 {:#members:width}
 
 
@@ -5091,8 +4808,7 @@ $("#CoreCircularGauge").ejCircularGauge({ value: 30 });
 Specifies the width of circular gauge.
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5101,8 +4817,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5121,7 +4836,7 @@ $("#CoreCircularGauge").ejCircularGauge({ width: 400 });
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -5131,8 +4846,7 @@ destroy the circular gauge widget. all events bound using this._on will be unbin
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5148,7 +4862,7 @@ circulargaugeObj.destroy();
 
 
 
-### exportImage<span class="signature">()</span>
+### exportImage()
 {:#methods:exportimage}
 
 
@@ -5181,8 +4895,7 @@ argument.fileType{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5198,7 +4911,7 @@ circulargaugeObj.exportImage("myImage","jpeg");
 
 
 
-### getBackNeedleLength<span class="signature">()</span>
+### getBackNeedleLength()
 {:#methods:getbackneedlelength}
 
 
@@ -5231,8 +4944,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5248,7 +4960,7 @@ circulargaugeObj.getBackNeedleLength(0, 0);
 
 
 
-### getCustomLabelAngle<span class="signature">()</span>
+### getCustomLabelAngle()
 {:#methods:getcustomlabelangle}
 
 
@@ -5281,8 +4993,7 @@ argument.customLabelIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5298,7 +5009,7 @@ circulargaugeObj.getCustomLabelAngle(0, 0);
 
 
 
-### getCustomLabelValue<span class="signature">()</span>
+### getCustomLabelValue()
 {:#methods:getcustomlabelvalue}
 
 
@@ -5331,8 +5042,7 @@ argument.customLabelIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5348,7 +5058,7 @@ circulargaugeObj.getCustomLabelValue(0, 0);
 
 
 
-### getLabelAngle<span class="signature">()</span>
+### getLabelAngle()
 {:#methods:getlabelangle}
 
 
@@ -5381,8 +5091,7 @@ argument.labelIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5398,7 +5107,7 @@ circulargaugeObj.getLabelAngle(0, 0);
 
 
 
-### getLabelDistanceFromScale<span class="signature">()</span>
+### getLabelDistanceFromScale()
 {:#methods:getlabeldistancefromscale}
 
 
@@ -5431,8 +5140,7 @@ argument.labelIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5448,7 +5156,7 @@ circulargaugeObj.getLabelDistanceFromScale(0, 0);
 
 
 
-### getLabelPlacement<span class="signature">()</span>
+### getLabelPlacement()
 {:#methods:getlabelplacement}
 
 
@@ -5481,8 +5189,7 @@ argument.labelIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5498,7 +5205,7 @@ circulargaugeObj.getLabelPlacement(0, 0);
 
 
 
-### getLabelStyle<span class="signature">()</span>
+### getLabelStyle()
 {:#methods:getlabelstyle}
 
 
@@ -5531,8 +5238,7 @@ argument.labelIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5548,7 +5254,7 @@ circulargaugeObj.getLabelStyle(0, 0);
 
 
 
-### getMajorIntervalValue<span class="signature">()</span>
+### getMajorIntervalValue()
 {:#methods:getmajorintervalvalue}
 
 
@@ -5575,8 +5281,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5592,7 +5297,7 @@ circulargaugeObj.getMajorIntervalValue(0);
 
 
 
-### getMarkerDistanceFromScale<span class="signature">()</span>
+### getMarkerDistanceFromScale()
 {:#methods:getmarkerdistancefromscale}
 
 
@@ -5625,8 +5330,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5642,7 +5346,7 @@ circulargaugeObj.getMarkerDistanceFromScale(0, 0);
 
 
 
-### getMarkerStyle<span class="signature">()</span>
+### getMarkerStyle()
 {:#methods:getmarkerstyle}
 
 
@@ -5675,8 +5379,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5692,7 +5395,7 @@ circulargaugeObj.getMarkerStyle(0, 0);
 
 
 
-### getMaximumValue<span class="signature">()</span>
+### getMaximumValue()
 {:#methods:getmaximumvalue}
 
 
@@ -5719,8 +5422,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5736,7 +5438,7 @@ circulargaugeObj.getMaximumValue(0);
 
 
 
-### getMinimumValue<span class="signature">()</span>
+### getMinimumValue()
 {:#methods:getminimumvalue}
 
 
@@ -5763,8 +5465,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5780,7 +5481,7 @@ circulargaugeObj.getMinimumValue(0);
 
 
 
-### getMinorIntervalValue<span class="signature">()</span>
+### getMinorIntervalValue()
 {:#methods:getminorintervalvalue}
 
 
@@ -5807,8 +5508,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5824,7 +5524,7 @@ circulargaugeObj.getMinorIntervalValue(0);
 
 
 
-### getNeedleStyle<span class="signature">()</span>
+### getNeedleStyle()
 {:#methods:getneedlestyle}
 
 
@@ -5857,8 +5557,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5874,7 +5573,7 @@ circulargaugeObj.getNeedleStyle(0, 0);
 
 
 
-### getPointerCapBorderWidth<span class="signature">()</span>
+### getPointerCapBorderWidth()
 {:#methods:getpointercapborderwidth}
 
 
@@ -5901,8 +5600,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5918,7 +5616,7 @@ circulargaugeObj.getPointerCapBorderWidth(0);
 
 
 
-### getPointerCapRadius<span class="signature">()</span>
+### getPointerCapRadius()
 {:#methods:getpointercapradius}
 
 
@@ -5945,8 +5643,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5962,7 +5659,7 @@ circulargaugeObj.getPointerCapRadius(0);
 
 
 
-### getPointerLength<span class="signature">()</span>
+### getPointerLength()
 {:#methods:getpointerlength}
 
 
@@ -5995,8 +5692,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6012,7 +5708,7 @@ circulargaugeObj.getPointerLength(0, 0);
 
 
 
-### getPointerNeedleType<span class="signature">()</span>
+### getPointerNeedleType()
 {:#methods:getpointerneedletype}
 
 
@@ -6045,8 +5741,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6062,7 +5757,7 @@ circulargaugeObj.getPointerNeedleType(0, 0);
 
 
 
-### getPointerPlacement<span class="signature">()</span>
+### getPointerPlacement()
 {:#methods:getpointerplacement}
 
 
@@ -6095,8 +5790,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6112,7 +5806,7 @@ circulargaugeObj.getPointerPlacement(0, 0);
 
 
 
-### getPointerValue<span class="signature">()</span>
+### getPointerValue()
 {:#methods:getpointervalue}
 
 
@@ -6145,8 +5839,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6162,7 +5855,7 @@ circulargaugeObj.getPointerValue(0, 0);
 
 
 
-### getPointerWidth<span class="signature">()</span>
+### getPointerWidth()
 {:#methods:getpointerwidth}
 
 
@@ -6195,8 +5888,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6212,7 +5904,7 @@ circulargaugeObj.getPointerWidth(0, 0);
 
 
 
-### getRangeBorderWidth<span class="signature">()</span>
+### getRangeBorderWidth()
 {:#methods:getrangeborderwidth}
 
 
@@ -6245,8 +5937,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6262,7 +5953,7 @@ circulargaugeObj.getRangeBorderWidth(0, 0);
 
 
 
-### getRangeDistanceFromScale<span class="signature">()</span>
+### getRangeDistanceFromScale()
 {:#methods:getrangedistancefromscale}
 
 
@@ -6295,8 +5986,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6312,7 +6002,7 @@ circulargaugeObj.getRangeDistanceFromScale(0, 0);
 
 
 
-### getRangeEndValue<span class="signature">()</span>
+### getRangeEndValue()
 {:#methods:getrangeendvalue}
 
 
@@ -6345,8 +6035,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6362,7 +6051,7 @@ circulargaugeObj.getRangeEndValue(0, 0);
 
 
 
-### getRangePosition<span class="signature">()</span>
+### getRangePosition()
 {:#methods:getrangeposition}
 
 
@@ -6395,8 +6084,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6412,7 +6100,7 @@ circulargaugeObj.getRangePosition(0, 0);
 
 
 
-### getRangeSize<span class="signature">()</span>
+### getRangeSize()
 {:#methods:getrangesize}
 
 
@@ -6445,8 +6133,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6462,7 +6149,7 @@ circulargaugeObj.getRangeSize(0, 0);
 
 
 
-### getRangeStartValue<span class="signature">()</span>
+### getRangeStartValue()
 {:#methods:getrangestartvalue}
 
 
@@ -6495,8 +6182,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6512,7 +6198,7 @@ circulargaugeObj.getRangeStartValue(0, 0);
 
 
 
-### getScaleBarSize<span class="signature">()</span>
+### getScaleBarSize()
 {:#methods:getscalebarsize}
 
 
@@ -6539,8 +6225,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6556,7 +6241,7 @@ circulargaugeObj.getScaleBarSize(0);
 
 
 
-### getScaleBorderWidth<span class="signature">()</span>
+### getScaleBorderWidth()
 {:#methods:getscaleborderwidth}
 
 
@@ -6583,8 +6268,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6600,7 +6284,7 @@ circulargaugeObj.getScaleBorderWidth(0);
 
 
 
-### getScaleDirection<span class="signature">()</span>
+### getScaleDirection()
 {:#methods:getscaledirection}
 
 
@@ -6627,8 +6311,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6644,7 +6327,7 @@ circulargaugeObj.getScaleDirection(0);
 
 
 
-### getScaleRadius<span class="signature">()</span>
+### getScaleRadius()
 {:#methods:getscaleradius}
 
 
@@ -6671,8 +6354,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6688,7 +6370,7 @@ circulargaugeObj.getScaleRadius(0);
 
 
 
-### getStartAngle<span class="signature">()</span>
+### getStartAngle()
 {:#methods:getstartangle}
 
 
@@ -6715,8 +6397,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6732,7 +6413,7 @@ circulargaugeObj.getStartAngle(0);
 
 
 
-### getSubGaugeLocation<span class="signature">()</span>
+### getSubGaugeLocation()
 {:#methods:getsubgaugelocation}
 
 
@@ -6765,8 +6446,7 @@ argument.GaugeIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6785,7 +6465,7 @@ circulargaugeObj.getSubGaugeLocation(0, 0);
 
 
 
-### getSweepAngle<span class="signature">()</span>
+### getSweepAngle()
 {:#methods:getsweepangle}
 
 
@@ -6812,8 +6492,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6829,7 +6508,7 @@ circulargaugeObj.getSweepAngle(0);
 
 
 
-### getTickAngle<span class="signature">()</span>
+### getTickAngle()
 {:#methods:gettickangle}
 
 
@@ -6862,8 +6541,7 @@ argument.tickIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6879,7 +6557,7 @@ circulargaugeObj.getTickAngle(0, 0);
 
 
 
-### getTickDistanceFromScale<span class="signature">()</span>
+### getTickDistanceFromScale()
 {:#methods:gettickdistancefromscale}
 
 
@@ -6912,8 +6590,7 @@ argument.tickIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6929,7 +6606,7 @@ circulargaugeObj.getTickDistanceFromScale(0, 0);
 
 
 
-### getTickHeight<span class="signature">()</span>
+### getTickHeight()
 {:#methods:gettickheight}
 
 
@@ -6962,8 +6639,7 @@ argument.labelIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -6979,7 +6655,7 @@ circulargaugeObj.getTickHeight(0, 0);
 
 
 
-### getTickPlacement<span class="signature">()</span>
+### getTickPlacement()
 {:#methods:gettickplacement}
 
 
@@ -7012,8 +6688,7 @@ argument.tickIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7029,7 +6704,7 @@ circulargaugeObj.getTickPlacement(0, 0);
 
 
 
-### getTickStyle<span class="signature">()</span>
+### getTickStyle()
 {:#methods:gettickstyle}
 
 
@@ -7062,8 +6737,7 @@ argument.tickIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7079,7 +6753,7 @@ circulargaugeObj.getTickStyle(0, 0);
 
 
 
-### getTickWidth<span class="signature">()</span>
+### getTickWidth()
 {:#methods:gettickwidth}
 
 
@@ -7112,8 +6786,7 @@ argument.tickIndex{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7129,7 +6802,7 @@ circulargaugeObj.getTickWidth(0, 0);
 
 
 
-### includeFirstValue<span class="signature">()</span>
+### includeFirstValue()
 {:#methods:includefirstvalue}
 
 
@@ -7168,8 +6841,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7185,7 +6857,7 @@ circulargaugeObj.includeFirstValue(0, 0, false);
 
 
 
-### redraw<span class="signature">()</span>
+### redraw()
 {:#methods:redraw}
 
 
@@ -7212,8 +6884,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7229,7 +6900,7 @@ circulargaugeObj.redraw("scale");
 
 
 
-### setBackNeedleLength<span class="signature">()</span>
+### setBackNeedleLength()
 {:#methods:setbackneedlelength}
 
 
@@ -7268,8 +6939,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7285,7 +6955,7 @@ circulargaugeObj.setBackNeedleLength(0, 0, 10);
 
 
 
-### setCustomLabelAngle<span class="signature">()</span>
+### setCustomLabelAngle()
 {:#methods:setcustomlabelangle}
 
 
@@ -7324,8 +6994,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7341,7 +7010,7 @@ circulargaugeObj.setCustomLabelAngle(0, 0, 10);
 
 
 
-### setCustomLabelValue<span class="signature">()</span>
+### setCustomLabelValue()
 {:#methods:setcustomlabelvalue}
 
 
@@ -7380,8 +7049,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7397,7 +7065,7 @@ circulargaugeObj.setCustomLabelValue(0, 0, "CircularGauge");
 
 
 
-### setLabelAngle<span class="signature">()</span>
+### setLabelAngle()
 {:#methods:setlabelangle}
 
 
@@ -7436,8 +7104,7 @@ argument.angle{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7453,7 +7120,7 @@ circulargaugeObj.setLabelAngle(0, 0, 10);
 
 
 
-### setLabelDistanceFromScale<span class="signature">()</span>
+### setLabelDistanceFromScale()
 {:#methods:setlabeldistancefromscale}
 
 
@@ -7492,8 +7159,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7509,7 +7175,7 @@ circulargaugeObj.setLabelDistanceFromScale(0, 0, 10);
 
 
 
-### setLabelPlacement<span class="signature">()</span>
+### setLabelPlacement()
 {:#methods:setlabelplacement}
 
 
@@ -7548,8 +7214,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7565,7 +7230,7 @@ circulargaugeObj.setLabelPlacement(0, 0, "far");
 
 
 
-### setLabelStyle<span class="signature">()</span>
+### setLabelStyle()
 {:#methods:setlabelstyle}
 
 
@@ -7604,8 +7269,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7621,7 +7285,7 @@ circulargaugeObj.setLabelStyle(0, 0, "major");
 
 
 
-### setMajorIntervalValue<span class="signature">()</span>
+### setMajorIntervalValue()
 {:#methods:setmajorintervalvalue}
 
 
@@ -7654,8 +7318,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7671,7 +7334,7 @@ circulargaugeObj.setMajorIntervalValue(0, 10);
 
 
 
-### setMarkerDistanceFromScale<span class="signature">()</span>
+### setMarkerDistanceFromScale()
 {:#methods:setmarkerdistancefromscale}
 
 
@@ -7710,8 +7373,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7727,7 +7389,7 @@ circulargaugeObj.setMarkerDistanceFromScale(0, 0, 10);
 
 
 
-### setMarkerStyle<span class="signature">()</span>
+### setMarkerStyle()
 {:#methods:setmarkerstyle}
 
 
@@ -7766,8 +7428,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7783,7 +7444,7 @@ circulargaugeObj.setMarkerStyle(0, 0, "rectangle");
 
 
 
-### setMaximumValue<span class="signature">()</span>
+### setMaximumValue()
 {:#methods:setmaximumvalue}
 
 
@@ -7816,8 +7477,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7833,7 +7493,7 @@ circulargaugeObj.setMaximumValue(0, 130);
 
 
 
-### setMinimumValue<span class="signature">()</span>
+### setMinimumValue()
 {:#methods:setminimumvalue}
 
 
@@ -7866,8 +7526,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7883,7 +7542,7 @@ circulargaugeObj.setMinimumValue(0, 10);
 
 
 
-### setMinorIntervalValue<span class="signature">()</span>
+### setMinorIntervalValue()
 {:#methods:setminorintervalvalue}
 
 
@@ -7916,8 +7575,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7933,7 +7591,7 @@ circulargaugeObj.setMinorIntervalValue(0, 2);
 
 
 
-### setNeedleStyle<span class="signature">()</span>
+### setNeedleStyle()
 {:#methods:setneedlestyle}
 
 
@@ -7972,8 +7630,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -7989,7 +7646,7 @@ circulargaugeObj.setNeedleStyle(0, 0, "arrow");
 
 
 
-### setPointerCapBorderWidth<span class="signature">()</span>
+### setPointerCapBorderWidth()
 {:#methods:setpointercapborderwidth}
 
 
@@ -8022,8 +7679,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8039,7 +7695,7 @@ circulargaugeObj.setPointerCapBorderWidth(0, 5);
 
 
 
-### setPointerCapRadius<span class="signature">()</span>
+### setPointerCapRadius()
 {:#methods:setpointercapradius}
 
 
@@ -8072,8 +7728,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8089,7 +7744,7 @@ circulargaugeObj.setPointerCapRadius(0, 10);
 
 
 
-### setPointerLength<span class="signature">()</span>
+### setPointerLength()
 {:#methods:setpointerlength}
 
 
@@ -8128,8 +7783,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8145,7 +7799,7 @@ circulargaugeObj.setPointerLength(0, 0, 90);
 
 
 
-### setPointerNeedleType<span class="signature">()</span>
+### setPointerNeedleType()
 {:#methods:setpointerneedletype}
 
 
@@ -8184,8 +7838,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8201,7 +7854,7 @@ circulargaugeObj.setPointerNeedleType(0, 0, "triangle");
 
 
 
-### setPointerPlacement<span class="signature">()</span>
+### setPointerPlacement()
 {:#methods:setpointerplacement}
 
 
@@ -8240,8 +7893,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8257,7 +7909,7 @@ circulargaugeObj.setPointerPlacement(0, 0,"near");
 
 
 
-### setPointerValue<span class="signature">()</span>
+### setPointerValue()
 {:#methods:setpointervalue}
 
 
@@ -8296,8 +7948,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8313,7 +7964,7 @@ circulargaugeObj.setPointerValue(0, 0, 10);
 
 
 
-### setPointerWidth<span class="signature">()</span>
+### setPointerWidth()
 {:#methods:setpointerwidth}
 
 
@@ -8352,8 +8003,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8369,7 +8019,7 @@ circulargaugeObj.setPointerWidth(0, 0, 10);
 
 
 
-### setRangeBorderWidth<span class="signature">()</span>
+### setRangeBorderWidth()
 {:#methods:setrangeborderwidth}
 
 
@@ -8408,8 +8058,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8425,7 +8074,7 @@ circulargaugeObj.setRangeBorderWidth(0, 0, 5);
 
 
 
-### setRangeDistanceFromScale<span class="signature">()</span>
+### setRangeDistanceFromScale()
 {:#methods:setrangedistancefromscale}
 
 
@@ -8464,8 +8113,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8481,7 +8129,7 @@ circulargaugeObj.setRangeDistanceFromScale(0, 0, 10);
 
 
 
-### setRangeEndValue<span class="signature">()</span>
+### setRangeEndValue()
 {:#methods:setrangeendvalue}
 
 
@@ -8520,8 +8168,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8537,7 +8184,7 @@ circulargaugeObj.setRangeEndValue(0, 0, 70);
 
 
 
-### setRangePosition<span class="signature">()</span>
+### setRangePosition()
 {:#methods:setrangeposition}
 
 
@@ -8576,8 +8223,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8593,7 +8239,7 @@ circulargaugeObj.setRangePosition(0, 0, "far");
 
 
 
-### setRangeSize<span class="signature">()</span>
+### setRangeSize()
 {:#methods:setrangesize}
 
 
@@ -8632,8 +8278,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8649,7 +8294,7 @@ circulargaugeObj.setRangeSize(0, 0, 10);
 
 
 
-### setRangeStartValue<span class="signature">()</span>
+### setRangeStartValue()
 {:#methods:setrangestartvalue}
 
 
@@ -8688,8 +8333,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8705,7 +8349,7 @@ circulargaugeObj.setRangeStartValue(0, 0, 10);
 
 
 
-### setScaleBarSize<span class="signature">()</span>
+### setScaleBarSize()
 {:#methods:setscalebarsize}
 
 
@@ -8738,8 +8382,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8755,7 +8398,7 @@ circulargaugeObj.setScaleBarSize(0, 160);
 
 
 
-### setScaleBorderWidth<span class="signature">()</span>
+### setScaleBorderWidth()
 {:#methods:setscaleborderwidth}
 
 
@@ -8788,8 +8431,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8805,7 +8447,7 @@ circulargaugeObj.setScaleBorderWidth(0, 3);
 
 
 
-### setScaleDirection<span class="signature">()</span>
+### setScaleDirection()
 {:#methods:setscaledirection}
 
 
@@ -8838,8 +8480,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8855,7 +8496,7 @@ circulargaugeObj.setScaleDirection(0, "clockwise");
 
 
 
-### setScaleRadius<span class="signature">()</span>
+### setScaleRadius()
 {:#methods:setscaleradius}
 
 
@@ -8888,8 +8529,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8905,7 +8545,7 @@ circulargaugeObj.setScaleRadius(0, 140);
 
 
 
-### setStartAngle<span class="signature">()</span>
+### setStartAngle()
 {:#methods:setstartangle}
 
 
@@ -8938,8 +8578,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -8955,7 +8594,7 @@ circulargaugeObj.setStartAngle(0, 10);
 
 
 
-### setSubGaugeLocation<span class="signature">()</span>
+### setSubGaugeLocation()
 {:#methods:setsubgaugelocation}
 
 
@@ -8994,8 +8633,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9014,7 +8652,7 @@ circulargaugeObj.setSubGaugeLocation(0, 0, {x:50,y:100});
 
 
 
-### setSweepAngle<span class="signature">()</span>
+### setSweepAngle()
 {:#methods:setsweepangle}
 
 
@@ -9047,8 +8685,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9064,7 +8701,7 @@ circulargaugeObj.setSweepAngle(0, 220);
 
 
 
-### setTickAngle<span class="signature">()</span>
+### setTickAngle()
 {:#methods:settickangle}
 
 
@@ -9103,8 +8740,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9120,7 +8756,7 @@ circulargaugeObj.setTickAngle(0, 0, 10);
 
 
 
-### setTickDistanceFromScale<span class="signature">()</span>
+### setTickDistanceFromScale()
 {:#methods:settickdistancefromscale}
 
 
@@ -9159,8 +8795,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9176,7 +8811,7 @@ circulargaugeObj.setTickDistanceFromScale(0, 0, 15);
 
 
 
-### setTickHeight<span class="signature">()</span>
+### setTickHeight()
 {:#methods:settickheight}
 
 
@@ -9215,8 +8850,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9232,7 +8866,7 @@ circulargaugeObj.setTickHeight(0, 0, 10);
 
 
 
-### setTickPlacement<span class="signature">()</span>
+### setTickPlacement()
 {:#methods:settickplacement}
 
 
@@ -9271,8 +8905,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9288,7 +8921,7 @@ circulargaugeObj.setTickPlacement(0, 0, "near");
 
 
 
-### setTickStyle<span class="signature">()</span>
+### setTickStyle()
 {:#methods:settickstyle}
 
 
@@ -9327,8 +8960,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9344,7 +8976,7 @@ circulargaugeObj.setTickStyle(0, 0, "minor");
 
 
 
-### setTickWidth<span class="signature">()</span>
+### setTickWidth()
 {:#methods:settickwidth}
 
 
@@ -9383,8 +9015,7 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9491,8 +9122,7 @@ args.type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9596,8 +9226,7 @@ args.type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9731,8 +9360,7 @@ args.type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9818,8 +9446,7 @@ args.type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -9953,8 +9580,7 @@ args.type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10058,8 +9684,7 @@ args.type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10193,8 +9818,7 @@ args.type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10268,8 +9892,7 @@ args.type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10402,8 +10025,7 @@ args.position{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10537,8 +10159,7 @@ args.position{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10672,8 +10293,7 @@ args.position{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -10747,8 +10367,7 @@ args.type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
