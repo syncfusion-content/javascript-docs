@@ -12,7 +12,7 @@ documentation: ug
 ##Localization in PivotGrid 
 You can localize the PivotGrid controls text with a collection of localized strings using [`ej.PivotGrid.locale`](/js/api/ejpivotgrid#members:locale) for different cultures. By default, the PivotGrid control is localized in **"en-US"** culture.
 
-{% hightlight html %}
+{% highlight html %}
 
 <html>
 //...
@@ -97,7 +97,7 @@ You can localize the PivotGrid controls text with a collection of localized stri
 
 </html>
 
-{% endhighligh %}
+{% endhighlight %}
 
 The following table lists the default keywords in French culture for PivotGrid.
 <table>
@@ -369,7 +369,7 @@ pivotSetting.PivotCalculations.Add(new PivotComputationInfo {
 
 You can render our PivotGrid control from Right to Left by setting [`enableRTL`](/js/api/ejpivotgrid#members:enablertl) property to true.
 
-{% hightlight js %}
+{% highlight js %}
 
 $(function() {
     $("#PivotGrid1").ejPivotGrid({
@@ -378,12 +378,6 @@ $(function() {
     });
 });
 
-{% endhighligh %}
+{% endhighlight %}
 
 ![](Localization-and-Globalization_images/rtl.png)
-
-
-
-
-
-

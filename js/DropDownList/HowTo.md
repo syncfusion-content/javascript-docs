@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to - DropDownList
-description: How To Section in DropDownList 
+title: How to - DropDownList widget for Syncfusion Essential JS
+description: How To Section in DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug
