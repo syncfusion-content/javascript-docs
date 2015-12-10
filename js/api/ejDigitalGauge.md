@@ -18,7 +18,7 @@ The Digital gauge can be easily configured to the DOM element, such as div. you 
 
 
 
-$(element).ejDigitalGauge<span class="signature">(options)</span>
+$(element).ejDigitalGauge(options)
 
 
 
@@ -47,8 +47,7 @@ options{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -94,7 +93,7 @@ Requires
 
 
 
-### enableResize<span class="type-signature type boolean">boolean</span>
+### enableResize `boolean`
 {:#members:enableresize}
 
 
@@ -109,8 +108,7 @@ Specifies the resize option of the DigitalGauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -126,8 +124,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -144,7 +141,7 @@ $("#DigitalCore").ejDigitalGauge({ enableResize: true });
 
 
 
-### frame<span class="type-signature type object">object</span>
+### frame`object`
 {:#members:frame}
 
 
@@ -159,8 +156,7 @@ Specifies the frame of the Digital gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -176,8 +172,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -194,7 +189,7 @@ $("#DigitalCore").ejDigitalGauge({ frame:{backgroundImageUrl: null, innerWidth:6
 
 
 
-### frame.backgroundImageUrl<span class="type-signature type string">string</span>
+### frame.backgroundImageUrl `string`
 {:#members:frame-backgroundimageurl}
 
 
@@ -209,8 +204,7 @@ Specifies the url of an image to be displayed as background of the Digital gauge
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -226,8 +220,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -244,7 +237,7 @@ $("#DigitalCore").ejDigitalGauge({frame:{ backgroundImageUrl: "styles\images\Car
 
 
 
-### frame.innerWidth<span class="type-signature type number">number</span>
+### frame.innerWidth `number`
 {:#members:frame-innerwidth}
 
 
@@ -259,8 +252,7 @@ Specifies the inner width for the frame, when the background image has been set 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -276,8 +268,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -294,7 +285,7 @@ $("#DigitalCore").ejDigitalGauge({frame:{ innerWidth: 30 }});
 
 
 
-### frame.outerWidth<span class="type-signature type number">number</span>
+### frame.outerWidth `number`
 {:#members:frame-outerwidth}
 
 
@@ -309,8 +300,7 @@ Specifies the outer width of the frame, when the background image has been set f
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -326,8 +316,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -344,7 +333,7 @@ $("#DigitalCore").ejDigitalGauge({frame: { outerWidth: 30 } });
 
 
 
-### height<span class="type-signature type number">number</span>
+### height `number`
 {:#members:height}
 
 
@@ -359,8 +348,7 @@ Specifies the height of the DigitalGauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -376,8 +364,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -394,7 +381,7 @@ $("#DigitalCore").ejDigitalGauge({ height: 60 });
 
 
 
-### items<span class="type-signature type object">object</span>
+### items`object`
 {:#members:items}
 
 
@@ -409,8 +396,7 @@ Specifies the items for the DigitalGauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -426,8 +412,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -444,7 +429,7 @@ $("#DigitalCore").ejDigitalGauge({width: 500});
 
 
 
-### items.characterSettings<span class="type-signature type object">Object</span>
+### items.characterSettings`object`
 {:#members:items-charactersettings}
 
 
@@ -459,8 +444,7 @@ Specifies the Character settings for the DigitalGauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -476,8 +460,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -494,7 +477,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {count: 4} }] });
 
 
 
-### items.characterSettings.count<span class="type-signature type number">number</span>
+### items.characterSettings.count `number`
 {:#members:items-charactersettings-count}
 
 
@@ -509,8 +492,7 @@ Specifies the CharacterCount value for the DigitalGauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -526,8 +508,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -544,7 +525,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {count: 4} }] });
 
 
 
-### items.characterSettings.opacity<span class="type-signature type number">number</span>
+### items.characterSettings.opacity `number`
 {:#members:items-charactersettings-opacity}
 
 
@@ -559,8 +540,7 @@ Specifies the opacity value for the DigitalGauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -576,8 +556,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -594,7 +573,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {opacity: 1} }] }
 
 
 
-### items.characterSettings.spacing<span class="type-signature type number">number</span>
+### items.characterSettings.spacing `number`
 {:#members:items-charactersettings-spacing}
 
 
@@ -609,8 +588,7 @@ Specifies the value for spacing between the characters
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -626,8 +604,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -644,7 +621,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {spacing: 3} }] }
 
 
 
-### items.characterSettings.type<span class="type-signature type enum">enum</span>
+### items.characterSettings.type `enum`
 {:#members:items-charactersettings-type}
 
 
@@ -659,8 +636,7 @@ Specifies the character type for the text to be displayed. See <a href="global.h
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -676,8 +652,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -694,7 +669,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{characterSettings:{ type: "eightcross
 
 
 
-### items.enableCustomFont<span class="type-signature type boolean">boolean</span>
+### items.enableCustomFont `boolean`
 {:#members:items-enablecustomfont}
 
 
@@ -710,8 +685,7 @@ Enable/Disable the custom font to be applied to the text in the gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -727,8 +701,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -745,7 +718,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ enableCustomFont: true }] });
 
 
 
-### items.font<span class="type-signature type object">Object</span>
+### items.font`object`
 {:#members:items-font}
 
 
@@ -761,8 +734,7 @@ Set the specific font for the text, when the enableCustomFont is set to true
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -778,8 +750,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -796,7 +767,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { size:
 
 
 
-### items.font.fontFamily<span class="type-signature type string">string</span>
+### items.font.fontFamily `string`
 {:#members:items-font-fontfamily}
 
 
@@ -812,8 +783,7 @@ Set the font family value
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -829,8 +799,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -847,7 +816,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontF
 
 
 
-### items.font.fontStyle<span class="type-signature type enum">enum</span>
+### items.font.fontStyle `enum`
 {:#members:items-font-fontstyle}
 
 
@@ -863,8 +832,7 @@ Set the font style for the font. See <a href="global.html#FontStyle">FontStyle</
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -880,8 +848,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -898,7 +865,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontS
 
 
 
-### items.font.size<span class="type-signature type string">string</span>
+### items.font.size `string`
 {:#members:items-font-size}
 
 
@@ -914,8 +881,7 @@ Set the font size value
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -931,8 +897,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -949,7 +914,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true,font: { size: 
 
 
 
-### items.position<span class="type-signature type object">object</span>
+### items.position`object`
 {:#members:items-position}
 
 
@@ -965,8 +930,7 @@ Set the location for the text, where it needs to be placed within the gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -982,8 +946,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1000,7 +963,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{position: { x: 10, y: 20 } }]});
 
 
 
-### items.position.x<span class="type-signature type number">number</span>
+### items.position.x `number`
 {:#members:items-position-x}
 
 
@@ -1016,8 +979,7 @@ Set the horizontal location for the text, where it needs to be placed within the
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1033,8 +995,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1051,7 +1012,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{position : { x: 10,y:0} }]});
 
 
 
-### items.position.y<span class="type-signature type number">number</span>
+### items.position.y `number`
 {:#members:items-position-y}
 
 
@@ -1067,8 +1028,7 @@ Set the vertical location for the text, where it needs to be placed within the g
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1084,8 +1044,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1102,7 +1061,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{position: { x:0,y: 20 } }]});
 
 
 
-### items.segmentSettings<span class="type-signature type object">Object</span>
+### items.segmentSettings`object`
 {:#members:items-segmentsettings}
 
 
@@ -1118,8 +1077,7 @@ Set the segemnt settings for the digital gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1135,8 +1093,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1153,7 +1110,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {length: 2} }] });
 
 
 
-### items.segmentSettings.color<span class="type-signature type string">string</span>
+### items.segmentSettings.color `string`
 {:#members:items-segmentsettings-color}
 
 
@@ -1169,8 +1126,7 @@ Set the color for the text segments.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1186,8 +1142,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1204,7 +1159,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {color: "#FF1F2F"} 
 
 
 
-### items.segmentSettings.gradient<span class="type-signature type object">Object</span>
+### items.segmentSettings.gradient`object`
 {:#members:items-segmentsettings-gradient}
 
 
@@ -1220,8 +1175,7 @@ Set the gradient for the text segments.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1237,8 +1191,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1255,7 +1208,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {gradient: { colorI
 
 
 
-### items.segmentSettings.length<span class="type-signature type number">number</span>
+### items.segmentSettings.length `number`
 {:#members:items-segmentsettings-length}
 
 
@@ -1271,8 +1224,7 @@ Set the length for the text segments.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1288,8 +1240,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1306,7 +1257,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {length: 2} }] });
 
 
 
-### items.segmentSettings.opacity<span class="type-signature type number">number</span>
+### items.segmentSettings.opacity `number`
 {:#members:items-segmentsettings-opacity}
 
 
@@ -1322,8 +1273,7 @@ Set the opacity for the text segments.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1339,8 +1289,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1357,7 +1306,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {opacity: 2} }] });
 
 
 
-### items.segmentSettings.spacing<span class="type-signature type number">number</span>
+### items.segmentSettings.spacing `number`
 {:#members:items-segmentsettings-spacing}
 
 
@@ -1373,8 +1322,7 @@ Set the spacing for the text segments.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1390,8 +1338,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1408,7 +1355,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {spacing: 1} }] });
 
 
 
-### items.segmentSettings.width<span class="type-signature type number">number</span>
+### items.segmentSettings.width `number`
 {:#members:items-segmentsettings-width}
 
 
@@ -1424,8 +1371,7 @@ Set the width for the text segments.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1441,8 +1387,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1459,7 +1404,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ segmentSettings: {width: 1} }] });
 
 
 
-### items.shadowBlur<span class="type-signature type number">number</span>
+### items.shadowBlur `number`
 {:#members:items-shadowblur}
 
 
@@ -1475,8 +1420,7 @@ Set the value for enabling/disabling the blurring effect for the shadows of the 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1492,8 +1436,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1510,7 +1453,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ shadowBlur:  1 }] });
 
 
 
-### items.shadowColor<span class="type-signature type string">string</span>
+### items.shadowColor `string`
 {:#members:items-shadowcolor}
 
 
@@ -1525,8 +1468,7 @@ Specifies the color of the text shadow.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1542,8 +1484,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1560,7 +1501,7 @@ $("#DigitalCore").ejDigitalGauge({ items: [{shadowColor: "#FF1F2F" }]});
 
 
 
-### items.shadowOffsetX<span class="type-signature type number">number</span>
+### items.shadowOffsetX `number`
 {:#members:items-shadowoffsetx}
 
 
@@ -1576,8 +1517,7 @@ Set the x offset value for the shadow of the text, indicating the location where
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1593,8 +1533,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1611,7 +1550,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ shadowOffsetX:  2 }] });
 
 
 
-### items.shadowOffsetY<span class="type-signature type number">number</span>
+### items.shadowOffsetY `number`
 {:#members:items-shadowoffsety}
 
 
@@ -1627,8 +1566,7 @@ Set the y offset value for the shadow of the text, indicating the location where
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1644,8 +1582,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1662,7 +1599,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ shadowOffsetY:  2 }] });
 
 
 
-### items.textAlign<span class="type-signature type string">string</span>
+### items.textAlign `string`
 {:#members:items-textalign}
 
 
@@ -1677,8 +1614,7 @@ Set the alignment of the text that is displayed within the gauge.See <a href="gl
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1694,8 +1630,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1712,7 +1647,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ textAlign:  "right" }] });
 
 
 
-### items.textColor<span class="type-signature type string">string</span>
+### items.textColor `string`
 {:#members:items-textcolor}
 
 
@@ -1727,8 +1662,7 @@ Specifies the color of the text.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1744,8 +1678,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1762,7 +1695,7 @@ $("#DigitalCore").ejDigitalGauge({ items: [{textColor: "#FF1F2F" }]});
 
 
 
-### items.value<span class="type-signature type string">string</span>
+### items.value `string`
 {:#members:items-value}
 
 
@@ -1777,8 +1710,7 @@ Specifies the text value.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1794,8 +1726,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1856,7 +1787,7 @@ Specifies the segmentData for the DigitalGauge.
 
 
 
-### themes<span class="type-signature type string">string</span>
+### themes `string`
 {:#members:themes}
 
 
@@ -1871,8 +1802,7 @@ Specifies the themes for the Digital gauge. See <a href="global.html#Themes">The
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1888,8 +1818,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1906,7 +1835,7 @@ $("#DigitalCore").ejDigitalGauge({ themes: "flatlight" });
 
 
 
-### value<span class="type-signature type string">string</span>
+### value `string`
 {:#members:value}
 
 
@@ -1921,8 +1850,7 @@ Specifies the value to the DigitalGauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1938,8 +1866,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1956,7 +1883,7 @@ $("#DigitalCore").ejDigitalGauge({items: [{ value: "Welcome" }] });
 
 
 
-### width<span class="type-signature type number">number</span>
+### width `number`
 {:#members:width}
 
 
@@ -1971,8 +1898,7 @@ Specifies the width for the Digital gauge.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1988,8 +1914,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2013,7 +1938,7 @@ $("#DigitalCore").ejDigitalGauge({ width: 300 });
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -2029,8 +1954,7 @@ To destroy the digital gauge
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2049,7 +1973,7 @@ gphObj.destroy();
 
 
 
-### exportImage<span class="signature">(fileName, fileType)</span>
+### exportImage(fileName, fileType)
 {:#methods:exportimage}
 
 
@@ -2088,8 +2012,7 @@ fileType{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2108,7 +2031,7 @@ DigitalGaugeObj.exportImage("myImage","jpeg");
 
 
 
-### getPosition<span class="signature">(itemIndex)</span>
+### getPosition(itemIndex)
 {:#methods:getposition}
 
 
@@ -2141,8 +2064,7 @@ itemIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2161,7 +2083,7 @@ DigitalGaugeObj.getPosition(0);
 
 
 
-### getValue<span class="signature">(itemIndex)</span>
+### getValue(itemIndex)
 {:#methods:getvalue}
 
 
@@ -2194,8 +2116,7 @@ itemIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2214,7 +2135,7 @@ DigitalGaugeObj.getValue(0);
 
 
 
-### refresh<span class="signature">()</span>
+### refresh()
 {:#methods:refresh}
 
 
@@ -2230,8 +2151,7 @@ Refresh the digital gauge widget
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2250,7 +2170,7 @@ GaugeObj.refresh();
 
 
 
-### setPosition<span class="signature">(itemIndex, value)</span>
+### setPosition(itemIndex, value)
 {:#methods:setposition}
 
 
@@ -2289,8 +2209,7 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2309,7 +2228,7 @@ DigitalGaugeObj.setPosition(0,{ x:50, y:40 });
 
 
 
-### setValue<span class="signature">(itemIndex, value)</span>
+### setValue(itemIndex, value)
 {:#methods:setvalue}
 
 
@@ -2348,8 +2267,7 @@ value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2443,8 +2361,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2526,8 +2443,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2609,8 +2525,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2692,8 +2607,7 @@ args.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}

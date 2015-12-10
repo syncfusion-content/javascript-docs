@@ -18,7 +18,7 @@ The rangenavigator can be easily configured to the DOM element, such as div. you
 
 
 
-$(element).ejRangeNavigator<span class="signature">(options, options)</span>
+$(element).ejRangeNavigator(options, options)
 
 
 
@@ -53,8 +53,7 @@ options{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -107,7 +106,7 @@ Requires
 
 
 
-### allowSnapping<span class="type-signature type boolean">boolean</span>
+### allowSnapping `boolean`
 {:#members:allowsnapping}
 
 
@@ -122,8 +121,7 @@ Toggles the placement of slider exactly on the place it left or on the nearest i
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -139,8 +137,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -150,7 +147,9 @@ Example
         $("#container").ejRangeNavigator({
    allowSnapping: true;
    });
-</script>  {% endhighlight %}
+</script> 
+
+ {% endhighlight %}
 
 
 
@@ -158,7 +157,7 @@ Example
 
 
 
-### dataSource<span class="type-signature type object">object</span>
+### dataSource `object`
 {:#members:datasource}
 
 
@@ -174,8 +173,7 @@ Specifies the data source for range navigator.
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -191,7 +189,7 @@ Example
 
 
 
-### enableAutoResizing<span class="type-signature type boolean">boolean</span>
+### enableAutoResizing `boolean`
 {:#members:enableautoresizing}
 
 
@@ -206,8 +204,7 @@ Sets a value whether to make the range navigator responsive on resize.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -223,8 +220,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -242,7 +238,7 @@ Example
 
 
 
-### enableDeferredUpdate<span class="type-signature type boolean">boolean</span>
+### enableDeferredUpdate `boolean`
 {:#members:enabledeferredupdate}
 
 
@@ -257,8 +253,7 @@ Toggles the redrawing of chart on moving the sliders.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -274,8 +269,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -293,7 +287,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -308,8 +302,7 @@ Toggles the direction of rendering the range navigator control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -325,8 +318,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -344,7 +336,7 @@ Example
 
 
 
-### labelSettings<span class="type-signature type object">object</span>
+### labelSettings `object`
 {:#members:labelsettings}
 
 
@@ -366,7 +358,7 @@ Options for customizing the labels colors, font, style, size, horizontalAlignmen
 
 
 
-### labelSettings.higherLevel<span class="type-signature type object">object</span>
+### labelSettings.higherLevel `object`
 {:#members:labelsettings-higherlevel}
 
 
@@ -388,7 +380,7 @@ Options for customizing the higher level labels in range navigator.
 
 
 
-### labelSettings.higherLevel.border<span class="type-signature type object">object</span>
+### labelSettings.higherLevel.border `object`
 {:#members:labelsettings-higherlevel-border}
 
 
@@ -410,7 +402,7 @@ Options for customizing the border of grid lines in higher level.
 
 
 
-### labelSettings.higherLevel.border.color<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.border.color `string`
 {:#members:labelsettings-higherlevel-border-color}
 
 
@@ -425,8 +417,7 @@ Specifies the border color of grid lines.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -442,8 +433,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -461,7 +451,7 @@ Example
 
 
 
-### labelSettings.higherLevel.border.width<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.border.width `string`
 {:#members:labelsettings-higherlevel-border-width}
 
 
@@ -476,8 +466,7 @@ Specifies the border width of grid lines.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -493,8 +482,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -512,7 +500,7 @@ Example
 
 
 
-### labelSettings.higherLevel.fill<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.fill `string`
 {:#members:labelsettings-higherlevel-fill}
 
 
@@ -527,8 +515,7 @@ Specifies the fill color of higher level labels.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -544,8 +531,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -563,7 +549,7 @@ Example
 
 
 
-### labelSettings.higherLevel.gridLineStyle<span class="type-signature type object">object</span>
+### labelSettings.higherLevel.gridLineStyle `object`
 {:#members:labelsettings-higherlevel-gridlinestyle}
 
 
@@ -585,7 +571,7 @@ Options for customizing the grid line colors, width, dashArray, border.
 
 
 
-### labelSettings.higherLevel.gridLineStyle.color<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.gridLineStyle.color `string`
 {:#members:labelsettings-higherlevel-gridlinestyle-color}
 
 
@@ -600,8 +586,7 @@ Specifies the color of grid lines in higher level.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -617,8 +602,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -635,7 +619,7 @@ Example
 
 
 
-### labelSettings.higherLevel.gridLineStyle.dashArray<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.gridLineStyle.dashArray `string`
 {:#members:labelsettings-higherlevel-gridlinestyle-dasharray}
 
 
@@ -650,8 +634,7 @@ Specifies the dashArray of grid lines in higher level.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -667,8 +650,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -686,7 +668,7 @@ Example
 
 
 
-### labelSettings.higherLevel.gridLineStyle.width<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.gridLineStyle.width `string`
 {:#members:labelsettings-higherlevel-gridlinestyle-width}
 
 
@@ -701,8 +683,7 @@ Specifies the width of grid lines in higher level.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -718,8 +699,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -737,7 +717,7 @@ Example
 
 
 
-### labelSettings.higherLevel.intervalType<span class="type-signature type enum">enum</span>
+### labelSettings.higherLevel.intervalType `enum`
 {:#members:labelsettings-higherlevel-intervaltype}
 
 
@@ -752,8 +732,7 @@ Specifies the intervalType for higher level labels. See <a href="global.html#Int
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -769,8 +748,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -788,7 +766,7 @@ Example
 
 
 
-### labelSettings.higherLevel.labelPlacement<span class="type-signature type enum">enum</span>
+### labelSettings.higherLevel.labelPlacement `enum`
 {:#members:labelsettings-higherlevel-labelplacement}
 
 
@@ -803,8 +781,7 @@ Specifies the position of the labels to render either inside or outside of plot 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -820,8 +797,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -839,7 +815,7 @@ Example
 
 
 
-### labelSettings.higherLevel.position<span class="type-signature type enum">enum</span>
+### labelSettings.higherLevel.position `enum`
 {:#members:labelsettings-higherlevel-position}
 
 
@@ -854,8 +830,7 @@ Specifies the position of the labels in higher level.See <a href="global.html#Po
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -871,8 +846,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -890,7 +864,7 @@ Example
 
 
 
-### labelSettings.higherLevel.style<span class="type-signature type object">object</span>
+### labelSettings.higherLevel.style `object`
 {:#members:labelsettings-higherlevel-style}
 
 
@@ -912,7 +886,7 @@ Options for customizing the style of higher level labels.
 
 
 
-### labelSettings.higherLevel.style.font<span class="type-signature type object">object</span>
+### labelSettings.higherLevel.style.font `object`
 {:#members:labelsettings-higherlevel-style-font}
 
 
@@ -934,7 +908,7 @@ Options for customizing the font properties.
 
 
 
-### labelSettings.higherLevel.style.font.color<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.color `string`
 {:#members:labelsettings-higherlevel-style-font-color}
 
 
@@ -949,8 +923,7 @@ Specifies the label font color. Labels render with the specified font color.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -966,8 +939,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -985,7 +957,7 @@ Example
 
 
 
-### labelSettings.higherLevel.style.font.fontFamily<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.fontFamily `string`
 {:#members:labelsettings-higherlevel-style-font-fontfamily}
 
 
@@ -1000,8 +972,7 @@ Specifies the label font family. Labels render with the specified font family.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1017,8 +988,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1036,7 +1006,7 @@ Example
 
 
 
-### labelSettings.higherLevel.style.font.fontStyle<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.fontStyle `string`
 {:#members:labelsettings-higherlevel-style-font-fontstyle}
 
 
@@ -1051,8 +1021,7 @@ Specifies the label font style. Labels render with the specified font style.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1068,8 +1037,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1087,7 +1055,7 @@ Example
 
 
 
-### labelSettings.higherLevel.style.font.fontWeight<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.fontWeight `string`
 {:#members:labelsettings-higherlevel-style-font-fontweight}
 
 
@@ -1102,8 +1070,7 @@ Specifies the label font weight. Labels render with the specified font weight.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1119,8 +1086,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1138,7 +1104,7 @@ Example
 
 
 
-### labelSettings.higherLevel.style.font.opacity<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.opacity `number`
 {:#members:labelsettings-higherlevel-style-font-opacity}
 
 
@@ -1153,15 +1119,14 @@ Specifies the label opacity. Labels render with the specified opacity.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
 
 
 
-* "12px"
+* 1
 
 
 
@@ -1170,8 +1135,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1189,7 +1153,7 @@ Example
 
 
 
-### labelSettings.higherLevel.style.font.size<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.font.size `string`
 {:#members:labelsettings-higherlevel-style-font-size}
 
 
@@ -1204,8 +1168,7 @@ Specifies the label font size. Labels render with the specified font size.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1221,8 +1184,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1240,7 +1202,7 @@ Example
 
 
 
-### labelSettings.higherLevel.style.horizontalAlignment<span class="type-signature type string">string</span>
+### labelSettings.higherLevel.style.horizontalAlignment `string`
 {:#members:labelsettings-higherlevel-style-horizontalalignment}
 
 
@@ -1255,8 +1217,7 @@ Specifies the horizontal text alignment of the text in label.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1272,8 +1233,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1291,7 +1251,7 @@ Example
 
 
 
-### labelSettings.higherLevel.visible<span class="type-signature type boolean">boolean</span>
+### labelSettings.higherLevel.visible `boolean`
 {:#members:labelsettings-higherlevel-visible}
 
 
@@ -1306,8 +1266,7 @@ Toggles the visibility of higher level labels.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1323,8 +1282,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1342,7 +1300,7 @@ Example
 
 
 
-### labelSettings.lowerLevel<span class="type-signature type object">object</span>
+### labelSettings.lowerLevel `object`
 {:#members:labelsettings-lowerlevel}
 
 
@@ -1364,7 +1322,7 @@ Options for customizing the labels in lower level.
 
 
 
-### labelSettings.lowerLevel.border<span class="type-signature type object">object</span>
+### labelSettings.lowerLevel.border `object`
 {:#members:labelsettings-lowerlevel-border}
 
 
@@ -1386,7 +1344,7 @@ Options for customizing the border of grid lines in lower level.
 
 
 
-### labelSettings.lowerLevel.border.color<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.border.color `string`
 {:#members:labelsettings-lowerlevel-border-color}
 
 
@@ -1401,8 +1359,7 @@ Specifies the border color of grid lines.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1418,8 +1375,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1437,7 +1393,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.border.width<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.border.width `string`
 {:#members:labelsettings-lowerlevel-border-width}
 
 
@@ -1452,8 +1408,7 @@ Specifies the border width of grid lines.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1469,8 +1424,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1488,7 +1442,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.fill<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.fill `string`
 {:#members:labelsettings-lowerlevel-fill}
 
 
@@ -1503,8 +1457,7 @@ Specifies the fill color of labels in lower level.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1520,8 +1473,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1539,7 +1491,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.gridLineStyle<span class="type-signature type object">object</span>
+### labelSettings.lowerLevel.gridLineStyle `object`
 {:#members:labelsettings-lowerlevel-gridlinestyle}
 
 
@@ -1561,7 +1513,7 @@ Options for customizing the grid lines in lower level.
 
 
 
-### labelSettings.lowerLevel.gridLineStyle.color<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.gridLineStyle.color `string`
 {:#members:labelsettings-lowerlevel-gridlinestyle-color}
 
 
@@ -1576,8 +1528,7 @@ Specifies the color of grid lines in lower level.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1593,8 +1544,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1612,7 +1562,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.gridLineStyle.dashArray<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.gridLineStyle.dashArray `string`
 {:#members:labelsettings-lowerlevel-gridlinestyle-dasharray}
 
 
@@ -1627,8 +1577,7 @@ Specifies the dashArray of gridLines in lowerLevel.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1644,8 +1593,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1663,7 +1611,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.gridLineStyle.width<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.gridLineStyle.width `string`
 {:#members:labelsettings-lowerlevel-gridlinestyle-width}
 
 
@@ -1678,8 +1626,7 @@ Specifies the width of grid lines in lower level.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1695,8 +1642,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1714,7 +1660,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.intervalTypes<span class="type-signature type enum">enum</span>
+### labelSettings.lowerLevel.intervalTypes `enum`
 {:#members:labelsettings-lowerlevel-intervaltypes}
 
 
@@ -1729,8 +1675,7 @@ Specifies the intervalType of the labels in lower level.See <a href="global.html
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1746,8 +1691,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1765,7 +1709,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.labelPlacement<span class="type-signature type enum">enum</span>
+### labelSettings.lowerLevel.labelPlacement `enum`
 {:#members:labelsettings-lowerlevel-labelplacement}
 
 
@@ -1780,8 +1724,7 @@ Specifies the position of the labels to render either inside or outside of plot 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1797,8 +1740,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1816,7 +1758,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.position<span class="type-signature type enum">enum</span>
+### labelSettings.lowerLevel.position `enum`
 {:#members:labelsettings-lowerlevel-position}
 
 
@@ -1831,8 +1773,7 @@ Specifies the position of the labels in lower level.See <a href="global.html#Pos
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1848,8 +1789,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1867,7 +1807,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.style<span class="type-signature type object">object</span>
+### labelSettings.lowerLevel.style `object`
 {:#members:labelsettings-lowerlevel-style}
 
 
@@ -1889,7 +1829,7 @@ Options for customizing the style of labels.
 
 
 
-### labelSettings.lowerLevel.style.font<span class="type-signature type object">object</span>
+### labelSettings.lowerLevel.style.font `object`
 {:#members:labelsettings-lowerlevel-style-font}
 
 
@@ -1911,7 +1851,7 @@ Options for customizing the font of labels.
 
 
 
-### labelSettings.lowerLevel.style.font.color<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.color `string`
 {:#members:labelsettings-lowerlevel-style-font-color}
 
 
@@ -1926,8 +1866,7 @@ Specifies the color of labels. Label text render in this specified color.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1943,8 +1882,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -1962,7 +1900,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.style.font.fontFamily<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.fontFamily `string`
 {:#members:labelsettings-lowerlevel-style-font-fontfamily}
 
 
@@ -1977,8 +1915,7 @@ Specifies the font family of labels. Label text render in this specified font fa
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -1994,8 +1931,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2013,7 +1949,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.style.font.fontStyle<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.fontStyle `string`
 {:#members:labelsettings-lowerlevel-style-font-fontstyle}
 
 
@@ -2028,8 +1964,7 @@ Specifies the font style of labels. Label text render in this specified font sty
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2045,8 +1980,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2064,7 +1998,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.style.font.fontWeight<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.fontWeight `string`
 {:#members:labelsettings-lowerlevel-style-font-fontweight}
 
 
@@ -2079,8 +2013,7 @@ Specifies the font weight of labels. Label text render in this specified font we
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2096,8 +2029,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2115,7 +2047,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.style.font.opacity<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.opacity `string`
 {:#members:labelsettings-lowerlevel-style-font-opacity}
 
 
@@ -2130,8 +2062,7 @@ Specifies the opacity of labels. Label text render in this specified opacity.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2147,8 +2078,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2166,7 +2096,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.style.font.size<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.font.size `string`
 {:#members:labelsettings-lowerlevel-style-font-size}
 
 
@@ -2181,8 +2111,7 @@ Specifies the size of labels. Label text render in this specified size.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2198,8 +2127,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2217,7 +2145,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.style.horizontalAlignment<span class="type-signature type string">string</span>
+### labelSettings.lowerLevel.style.horizontalAlignment `string`
 {:#members:labelsettings-lowerlevel-style-horizontalalignment}
 
 
@@ -2232,8 +2160,7 @@ Specifies the horizontal text alignment of the text in label.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2249,8 +2176,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2268,7 +2194,7 @@ Example
 
 
 
-### labelSettings.lowerLevel.visible<span class="type-signature type boolean">boolean</span>
+### labelSettings.lowerLevel.visible `boolean`
 {:#members:labelsettings-lowerlevel-visible}
 
 
@@ -2283,8 +2209,7 @@ Toggles the visibility of labels in lower level.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2300,8 +2225,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2319,7 +2243,7 @@ Example
 
 
 
-### labelSettings.style<span class="type-signature type object">object</span>
+### labelSettings.style `object`
 {:#members:labelsettings-style}
 
 
@@ -2341,7 +2265,7 @@ Options for customizing the style of labels in range navigator.
 
 
 
-### labelSettings.style.font<span class="type-signature type object">object</span>
+### labelSettings.style.font `object`
 {:#members:labelsettings-style-font}
 
 
@@ -2363,7 +2287,7 @@ Options for customizing the font of labels in range navigator.
 
 
 
-### labelSettings.style.font.color<span class="type-signature type string">string</span>
+### labelSettings.style.font.color `string`
 {:#members:labelsettings-style-font-color}
 
 
@@ -2378,8 +2302,7 @@ Specifies the label color. This color is applied to the labels in range navigato
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2395,8 +2318,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2414,7 +2336,7 @@ Example
 
 
 
-### labelSettings.style.font.family<span class="type-signature type string">string</span>
+### labelSettings.style.font.family `string`
 {:#members:labelsettings-style-font-family}
 
 
@@ -2429,8 +2351,7 @@ Specifies the label font family. Labels render with the specified font family.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2446,8 +2367,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2465,7 +2385,7 @@ Example
 
 
 
-### labelSettings.style.font.opacity<span class="type-signature type number">number</span>
+### labelSettings.style.font.opacity ` number`
 {:#members:labelsettings-style-font-opacity}
 
 
@@ -2480,8 +2400,7 @@ Specifies the label font opacity. Labels render with the specified font opacity.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2497,8 +2416,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2516,7 +2434,7 @@ Example
 
 
 
-### labelSettings.style.font.size<span class="type-signature type string">string</span>
+### labelSettings.style.font.size `string`
 {:#members:labelsettings-style-font-size}
 
 
@@ -2531,8 +2449,7 @@ Specifies the label font size. Labels render with the specified font size.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2548,8 +2465,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2567,7 +2483,7 @@ Example
 
 
 
-### labelSettings.style.font.style<span class="type-signature type enum">enum</span>
+### labelSettings.style.font.style `enum`
 {:#members:labelsettings-style-font-style}
 
 
@@ -2582,8 +2498,7 @@ Specifies the label font style. Labels render with the specified font style..See
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2599,8 +2514,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2618,7 +2532,7 @@ Example
 
 
 
-### labelSettings.style.font.weight<span class="type-signature type enum">enum</span>
+### labelSettings.style.font.weight `enum`
 {:#members:labelsettings-style-font-weight}
 
 
@@ -2633,8 +2547,7 @@ Specifies the label font weight. Labels render with the specified font weight. S
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2650,8 +2563,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2669,7 +2581,7 @@ Example
 
 
 
-### labelSettings.style.horizontalAlignment<span class="type-signature type enum">enum</span>
+### labelSettings.style.horizontalAlignment `enum`
 {:#members:labelsettings-style-horizontalalignment}
 
 
@@ -2684,8 +2596,7 @@ Specifies the horizontalAlignment of the label in RangeNavigator. See <a href="g
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2701,8 +2612,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2720,7 +2630,7 @@ Example
 
 
 
-### locale<span class="type-signature type string">string</span>
+### locale `string`
 {:#members:locale}
 
 
@@ -2735,8 +2645,7 @@ This property is to specify the localization of range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2752,8 +2661,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2771,7 +2679,7 @@ Example
 
 
 
-### navigatorStyleSettings<span class="type-signature type object">object</span>
+### navigatorStyleSettings `object`
 {:#members:navigatorstylesettings}
 
 
@@ -2793,7 +2701,7 @@ Options for customizing the range navigator.
 
 
 
-### navigatorStyleSettings.background<span class="type-signature type string">string</span>
+### navigatorStyleSettings.background `string`
 {:#members:navigatorstylesettings-background}
 
 
@@ -2808,8 +2716,7 @@ Specifies the background color of RangeNavigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2825,8 +2732,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2844,7 +2750,7 @@ Example
 
 
 
-### navigatorStyleSettings.border<span class="type-signature type object">object</span>
+### navigatorStyleSettings.border `object`
 {:#members:navigatorstylesettings-border}
 
 
@@ -2866,7 +2772,7 @@ Options for customizing the border color and width of range navigator.
 
 
 
-### navigatorStyleSettings.border.color<span class="type-signature type string">string</span>
+### navigatorStyleSettings.border.color `string`
 {:#members:navigatorstylesettings-border-color}
 
 
@@ -2881,8 +2787,7 @@ Specifies the border color of range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2898,8 +2803,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2917,7 +2821,7 @@ Example
 
 
 
-### navigatorStyleSettings.border.dashArray<span class="type-signature type string">string</span>
+### navigatorStyleSettings.border.dashArray `string`
 {:#members:navigatorstylesettings-border-dasharray}
 
 
@@ -2932,8 +2836,7 @@ Specifies the dash array of range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -2949,8 +2852,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -2968,7 +2870,7 @@ Example
 
 
 
-### navigatorStyleSettings.border.width<span class="type-signature type number">number</span>
+### navigatorStyleSettings.border.width ` number`
 {:#members:navigatorstylesettings-border-width}
 
 
@@ -2983,8 +2885,7 @@ Specifies the border width of range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3000,8 +2901,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3019,7 +2919,7 @@ Example
 
 
 
-### navigatorStyleSettings.leftThumbTemplate<span class="type-signature type string">string</span>
+### navigatorStyleSettings.leftThumbTemplate `string`
 {:#members:navigatorstylesettings-leftthumbtemplate}
 
 
@@ -3034,8 +2934,7 @@ Specifies the left side thumb template in range navigator we can give either div
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3051,8 +2950,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3070,7 +2968,7 @@ Example
 
 
 
-### navigatorStyleSettings.majorGridLineStyle<span class="type-signature type object">object</span>
+### navigatorStyleSettings.majorGridLineStyle `object`
 {:#members:navigatorstylesettings-majorgridlinestyle}
 
 
@@ -3092,7 +2990,7 @@ Options for customizing the major grid lines.
 
 
 
-### navigatorStyleSettings.majorGridLineStyle.color<span class="type-signature type string">string</span>
+### navigatorStyleSettings.majorGridLineStyle.color `string`
 {:#members:navigatorstylesettings-majorgridlinestyle-color}
 
 
@@ -3107,8 +3005,7 @@ Specifies the color of major grid lines in RangeNavigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3124,8 +3021,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3143,7 +3039,7 @@ Example
 
 
 
-### navigatorStyleSettings.majorGridLineStyle.visible<span class="type-signature type boolean">boolean</span>
+### navigatorStyleSettings.majorGridLineStyle.visible `boolean`
 {:#members:navigatorstylesettings-majorgridlinestyle-visible}
 
 
@@ -3158,8 +3054,7 @@ Toggles the visibility of major grid lines.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3175,8 +3070,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3194,7 +3088,7 @@ Example
 
 
 
-### navigatorStyleSettings.minorGridLineStyle<span class="type-signature type object">object</span>
+### navigatorStyleSettings.minorGridLineStyle `object`
 {:#members:navigatorstylesettings-minorgridlinestyle}
 
 
@@ -3216,7 +3110,7 @@ Options for customizing the minor grid lines.
 
 
 
-### navigatorStyleSettings.minorGridLineStyle.color<span class="type-signature type string">string</span>
+### navigatorStyleSettings.minorGridLineStyle.color `string`
 {:#members:navigatorstylesettings-minorgridlinestyle-color}
 
 
@@ -3231,8 +3125,7 @@ Specifies the color of minor grid lines in RangeNavigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3248,8 +3141,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3266,7 +3158,7 @@ Example
 
 
 
-### navigatorStyleSettings.minorGridLineStyle.visible<span class="type-signature type boolean">boolean</span>
+### navigatorStyleSettings.minorGridLineStyle.visible `boolean`
 {:#members:navigatorstylesettings-minorgridlinestyle-visible}
 
 
@@ -3281,8 +3173,7 @@ Toggles the visibility of minor grid lines.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3298,8 +3189,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3317,7 +3207,7 @@ Example
 
 
 
-### navigatorStyleSettings.opacity<span class="type-signature type number">number</span>
+### navigatorStyleSettings.opacity ` number`
 {:#members:navigatorstylesettings-opacity}
 
 
@@ -3332,8 +3222,7 @@ Specifies the opacity of RangeNavigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3349,8 +3238,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3368,7 +3256,7 @@ Example
 
 
 
-### navigatorStyleSettings.rightThumbTemplate<span class="type-signature type string">string</span>
+### navigatorStyleSettings.rightThumbTemplate `string`
 {:#members:navigatorstylesettings-rightthumbtemplate}
 
 
@@ -3383,8 +3271,7 @@ Specifies the right side thumb template in range navigator we can give either di
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3400,8 +3287,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3419,7 +3305,7 @@ Example
 
 
 
-### navigatorStyleSettings.selectedRegionColor<span class="type-signature type string">string</span>
+### navigatorStyleSettings.selectedRegionColor `string`
 {:#members:navigatorstylesettings-selectedregioncolor}
 
 
@@ -3434,8 +3320,7 @@ Specifies the color of the selected region in range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3451,8 +3336,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3470,7 +3354,7 @@ Example
 
 
 
-### navigatorStyleSettings.selectedRegionOpacity<span class="type-signature type number">number</span>
+### navigatorStyleSettings.selectedRegionOpacity `number`
 {:#members:navigatorstylesettings-selectedregionopacity}
 
 
@@ -3485,8 +3369,7 @@ Specifies the opacity of Selected Region.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3502,8 +3385,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3521,7 +3403,7 @@ Example
 
 
 
-### navigatorStyleSettings.thumbColor<span class="type-signature type string">string</span>
+### navigatorStyleSettings.thumbColor `string`
 {:#members:navigatorstylesettings-thumbcolor}
 
 
@@ -3536,8 +3418,7 @@ Specifies the color of the thumb in range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3553,8 +3434,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3572,7 +3452,7 @@ Example
 
 
 
-### navigatorStyleSettings.thumbRadius<span class="type-signature type number">number</span>
+### navigatorStyleSettings.thumbRadius `number`
 {:#members:navigatorstylesettings-thumbradius}
 
 
@@ -3587,8 +3467,7 @@ Specifies the radius of the thumb in range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3604,8 +3483,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3623,7 +3501,7 @@ Example
 
 
 
-### navigatorStyleSettings.thumbStroke<span class="type-signature type string">string</span>
+### navigatorStyleSettings.thumbStroke `string`
 {:#members:navigatorstylesettings-thumbstroke}
 
 
@@ -3638,8 +3516,7 @@ Specifies the stroke color of the thumb in range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3655,8 +3532,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3674,7 +3550,7 @@ Example
 
 
 
-### navigatorStyleSettings.unselectedRegionColor<span class="type-signature type string">string</span>
+### navigatorStyleSettings.unselectedRegionColor `string`
 {:#members:navigatorstylesettings-unselectedregioncolor}
 
 
@@ -3689,8 +3565,7 @@ Specifies the color of the unselected region in range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3706,8 +3581,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3725,7 +3599,7 @@ Example
 
 
 
-### navigatorStyleSettings.unselectedRegionOpacity<span class="type-signature type number">number</span>
+### navigatorStyleSettings.unselectedRegionOpacity `number`
 {:#members:navigatorstylesettings-unselectedregionopacity}
 
 
@@ -3740,8 +3614,7 @@ Specifies the opacity of Unselected Region.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3757,8 +3630,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3776,7 +3648,7 @@ Example
 
 
 
-### padding<span class="type-signature type string">string</span>
+### padding `string`
 {:#members:padding}
 
 
@@ -3791,8 +3663,7 @@ Padding specifies the gap between the container and the range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3808,8 +3679,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3827,7 +3697,7 @@ Example
 
 
 
-### rangePadding<span class="type-signature type enum">enum</span>
+### rangePadding `enum`
 {:#members:rangepadding}
 
 
@@ -3842,8 +3712,7 @@ If the range is not given explicitly, range will be calculated automatically. Yo
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3859,8 +3728,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3878,7 +3746,7 @@ Example
 
 
 
-### rangeSettings<span class="type-signature type object">object</span>
+### rangeSettings `object`
 {:#members:rangesettings}
 
 
@@ -3900,7 +3768,7 @@ Options for customizing the starting and ending ranges.
 
 
 
-### rangeSettings.end<span class="type-signature type string">string</span>
+### rangeSettings.end `string`
 {:#members:rangesettings-end}
 
 
@@ -3915,8 +3783,7 @@ Specifies the ending range of range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3932,8 +3799,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -3951,7 +3817,7 @@ Example
 
 
 
-### rangeSettings.start<span class="type-signature type string">string</span>
+### rangeSettings.start `string`
 {:#members:rangesettings-start}
 
 
@@ -3966,8 +3832,7 @@ Specifies the starting range of range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -3983,8 +3848,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4023,7 +3887,7 @@ selectedData is for getting the data when the "rangeChanged" event trigger from 
 
 
 
-### selectedRangeSettings<span class="type-signature type object">object</span>
+### selectedRangeSettings `object`
 {:#members:selectedrangesettings}
 
 
@@ -4045,7 +3909,7 @@ Options for customizing the start and end range values.
 
 
 
-### selectedRangeSettings.end<span class="type-signature type string">string</span>
+### selectedRangeSettings.end `string`
 {:#members:selectedrangesettings-end}
 
 
@@ -4060,8 +3924,7 @@ Specifies the ending range of range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4077,8 +3940,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4096,7 +3958,7 @@ Example
 
 
 
-### selectedRangeSettings.start<span class="type-signature type string">string</span>
+### selectedRangeSettings.start `string`
 {:#members:selectedrangesettings-start}
 
 
@@ -4111,8 +3973,7 @@ Specifies the starting range of range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4128,8 +3989,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4147,7 +4007,7 @@ Example
 
 
 
-### sizeSettings<span class="type-signature type object">object</span>
+### sizeSettings `object`
 {:#members:sizesettings}
 
 
@@ -4169,7 +4029,7 @@ Contains property to customize the hight and width of range navigator.
 
 
 
-### sizeSettings.height<span class="type-signature type string">string</span>
+### sizeSettings.height `string`
 {:#members:sizesettings-height}
 
 
@@ -4184,8 +4044,7 @@ Specifies height of the range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4201,8 +4060,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4220,7 +4078,7 @@ Example
 
 
 
-### sizeSettings.width<span class="type-signature type string">string</span>
+### sizeSettings.width `string`
 {:#members:sizesettings-width}
 
 
@@ -4235,8 +4093,7 @@ Specifies width of the range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4252,8 +4109,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4271,7 +4127,7 @@ Example
 
 
 
-### theme<span class="type-signature type string">string</span>
+### theme `string`
 {:#members:theme}
 
 
@@ -4286,8 +4142,7 @@ By specifying this property the user can change the theme of the range navigator
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4303,8 +4158,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4322,7 +4176,7 @@ Example
 
 
 
-### tooltipSettings<span class="type-signature type object">object</span>
+### tooltipSettings `object`
 {:#members:tooltipsettings}
 
 
@@ -4338,8 +4192,7 @@ Options for customizing the tooltip in range navigator.
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4353,7 +4206,7 @@ Example
 
 
 
-### tooltipSettings.backgroundColor<span class="type-signature type string">string</span>
+### tooltipSettings.backgroundColor `string`
 {:#members:tooltipsettings-backgroundcolor}
 
 
@@ -4368,8 +4221,7 @@ Specifies the background color of tooltip.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4385,8 +4237,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4404,7 +4255,7 @@ Example
 
 
 
-### tooltipSettings.font<span class="type-signature type object">object</span>
+### tooltipSettings.font `object`
 {:#members:tooltipsettings-font}
 
 
@@ -4426,7 +4277,7 @@ Options for customizing the font in tooltip.
 
 
 
-### tooltipSettings.font.color<span class="type-signature type string">string</span>
+### tooltipSettings.font.color `string`
 {:#members:tooltipsettings-font-color}
 
 
@@ -4441,8 +4292,7 @@ Specifies the color of text in tooltip. Tooltip text render in the specified col
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4458,8 +4308,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4477,7 +4326,7 @@ Example
 
 
 
-### tooltipSettings.font.family<span class="type-signature type string">string</span>
+### tooltipSettings.font.family `string`
 {:#members:tooltipsettings-font-family}
 
 
@@ -4492,8 +4341,7 @@ Specifies the font family of text in tooltip. Tooltip text render in the specifi
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4509,8 +4357,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4528,7 +4375,7 @@ Example
 
 
 
-### tooltipSettings.font.fontStyle<span class="type-signature type string">string</span>
+### tooltipSettings.font.fontStyle `string`
 {:#members:tooltipsettings-font-fontstyle}
 
 
@@ -4543,8 +4390,7 @@ Specifies the font style of text in tooltip. Tooltip text render in the specifie
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4560,8 +4406,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4579,7 +4424,7 @@ Example
 
 
 
-### tooltipSettings.font.opacity<span class="type-signature type number">number</span>
+### tooltipSettings.font.opacity ` number`
 {:#members:tooltipsettings-font-opacity}
 
 
@@ -4594,8 +4439,7 @@ Specifies the opacity of text in tooltip. Tooltip text render in the specified o
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4611,8 +4455,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4630,7 +4473,7 @@ Example
 
 
 
-### tooltipSettings.font.size<span class="type-signature type string">string</span>
+### tooltipSettings.font.size `string`
 {:#members:tooltipsettings-font-size}
 
 
@@ -4645,8 +4488,7 @@ Specifies the size of text in tooltip. Tooltip text render in the specified size
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4662,8 +4504,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4681,7 +4522,7 @@ Example
 
 
 
-### tooltipSettings.font.weight<span class="type-signature type string">string</span>
+### tooltipSettings.font.weight `string`
 {:#members:tooltipsettings-font-weight}
 
 
@@ -4696,8 +4537,7 @@ Specifies the weight of text in tooltip. Tooltip text render in the specified we
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4713,8 +4553,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4732,7 +4571,7 @@ Example
 
 
 
-### tooltipSettings.labelFormat<span class="type-signature type string">string</span>
+### tooltipSettings.labelFormat `string`
 {:#members:tooltipsettings-labelformat}
 
 
@@ -4747,8 +4586,7 @@ Specifies the format of text to be displayed in tooltip.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4764,8 +4602,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4783,7 +4620,7 @@ Example
 
 
 
-### tooltipSettings.tooltipDisplayMode<span class="type-signature type string">string</span>
+### tooltipSettings.tooltipDisplayMode `string`
 {:#members:tooltipsettings-tooltipdisplaymode}
 
 
@@ -4798,8 +4635,7 @@ Specifies the mode of displaying the tooltip. Neither to display the tooltip alw
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4815,8 +4651,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4834,7 +4669,7 @@ Example
 
 
 
-### tooltipSettings.visible<span class="type-signature type boolean">boolean</span>
+### tooltipSettings.visible `boolean`
 {:#members:tooltipsettings-visible}
 
 
@@ -4849,8 +4684,7 @@ Toggles the visibility of tooltip.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4866,8 +4700,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4885,7 +4718,7 @@ Example
 
 
 
-### valueAxisSettings<span class="type-signature type object">object</span>
+### valueAxisSettings `object`
 {:#members:valueaxissettings}
 
 
@@ -4907,7 +4740,7 @@ Options for configuring minor grid lines, major grid lines, axis line of axis.
 
 
 
-### valueAxisSettings.axisLine<span class="type-signature type object">object</span>
+### valueAxisSettings.axisLine `object`
 {:#members:valueaxissettings-axisline}
 
 
@@ -4929,7 +4762,7 @@ Options for customizing the axis line.
 
 
 
-### valueAxisSettings.axisLine.visible<span class="type-signature type string">string</span>
+### valueAxisSettings.axisLine.visible `string`
 {:#members:valueaxissettings-axisline-visible}
 
 
@@ -4944,8 +4777,7 @@ Toggles the visibility of axis line.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -4961,8 +4793,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -4980,7 +4811,7 @@ Example
 
 
 
-### valueAxisSettings.font<span class="type-signature type object">object</span>
+### valueAxisSettings.font `object`
 {:#members:valueaxissettings-font}
 
 
@@ -5002,7 +4833,7 @@ Options for customizing the font of the axis.
 
 
 
-### valueAxisSettings.font.size<span class="type-signature type string">string</span>
+### valueAxisSettings.font.size `string`
 {:#members:valueaxissettings-font-size}
 
 
@@ -5017,8 +4848,7 @@ Text in axis render with the specified size.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5034,8 +4864,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5053,7 +4882,7 @@ Example
 
 
 
-### valueAxisSettings.majorGridLines<span class="type-signature type object">object</span>
+### valueAxisSettings.majorGridLines `object`
 {:#members:valueaxissettings-majorgridlines}
 
 
@@ -5075,7 +4904,7 @@ Options for customizing the major grid lines.
 
 
 
-### valueAxisSettings.majorGridLines.visible<span class="type-signature type boolean">boolean</span>
+### valueAxisSettings.majorGridLines.visible `boolean`
 {:#members:valueaxissettings-majorgridlines-visible}
 
 
@@ -5090,8 +4919,7 @@ Toggles the visibility of major grid lines.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5107,8 +4935,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5126,7 +4953,7 @@ Example
 
 
 
-### valueAxisSettings.majorTickLines<span class="type-signature type object">object</span>
+### valueAxisSettings.majorTickLines `object`
 {:#members:valueaxissettings-majorticklines}
 
 
@@ -5148,7 +4975,7 @@ Options for customizing the major tick lines in axis.
 
 
 
-### valueAxisSettings.majorTickLines.size<span class="type-signature type number">number</span>
+### valueAxisSettings.majorTickLines.size `number`
 {:#members:valueaxissettings-majorticklines-size}
 
 
@@ -5163,8 +4990,7 @@ Specifies the size of the majorTickLines in RangeNavigator
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5180,8 +5006,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5199,7 +5024,7 @@ Example
 
 
 
-### valueAxisSettings.majorTickLines.visible<span class="type-signature type boolean">boolean</span>
+### valueAxisSettings.majorTickLines.visible `boolean`
 {:#members:valueaxissettings-majorticklines-visible}
 
 
@@ -5214,8 +5039,7 @@ Toggles the visibility of major tick lines.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5231,8 +5055,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5250,7 +5073,7 @@ Example
 
 
 
-### valueAxisSettings.majorTickLines.width<span class="type-signature type number">number</span>
+### valueAxisSettings.majorTickLines.width `number`
 {:#members:valueaxissettings-majorticklines-width}
 
 
@@ -5265,8 +5088,7 @@ Specifies width of the major tick lines.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5282,8 +5104,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5301,7 +5122,7 @@ Example
 
 
 
-### valueAxisSettings.rangePadding<span class="type-signature type string">string</span>
+### valueAxisSettings.rangePadding `string`
 {:#members:valueaxissettings-rangepadding}
 
 
@@ -5316,8 +5137,7 @@ If the range is not given explicitly, range will be calculated automatically. Yo
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5333,8 +5153,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5352,7 +5171,7 @@ Example
 
 
 
-### valueAxisSettings.visible<span class="type-signature type boolean">boolean</span>
+### valueAxisSettings.visible `boolean`
 {:#members:valueaxissettings-visible}
 
 
@@ -5367,8 +5186,7 @@ Toggles the visibility of axis in range navigator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5384,8 +5202,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5403,7 +5220,7 @@ Example
 
 
 
-### valueType<span class="type-signature type enum">enum</span>
+### valueType `enum`
 {:#members:valuetype}
 
 
@@ -5418,8 +5235,7 @@ You can plot data of type date time or numeric. This property determines the typ
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5435,8 +5251,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5454,7 +5269,7 @@ Example
 
 
 
-### xName<span class="type-signature type object">object</span>
+### xName `object`
 {:#members:xname}
 
 
@@ -5470,8 +5285,7 @@ Specifies the xName for dataSource. This is used to take the x values from dataS
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5489,7 +5303,7 @@ Example
 
 
 
-### yName<span class="type-signature type object">object</span>
+### yName `object`
 {:#members:yname}
 
 
@@ -5505,8 +5319,7 @@ Specifies the yName for dataSource. This is used to take the y values from dataS
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5524,7 +5337,7 @@ Example
 
 
 
-### zoomSettings.zoomFactor<span class="type-signature type string">string</span>
+### zoomSettings.zoomFactor `string`
 {:#members:zoomsettings-zoomfactor}
 
 
@@ -5539,8 +5352,7 @@ This property determines the factor by which the axis is scaled. Value must be s
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5556,8 +5368,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5575,7 +5386,7 @@ Example
 
 
 
-### zoomSettings.zoomPosition<span class="type-signature type string">string</span>
+### zoomSettings.zoomPosition `string`
 {:#members:zoomsettings-zoomposition}
 
 
@@ -5590,8 +5401,7 @@ This property determines the starting position of the zoomed axis. Value must be
 
 
 
-Default Value:
-{:.param}
+#### Default Value
 
 
 
@@ -5607,8 +5417,7 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5633,7 +5442,7 @@ Example
 
 
 
-### _destroy<span class="signature">()</span>
+### _destroy ()
 {:#methods:_destroy}
 
 
@@ -5649,8 +5458,7 @@ destroy the RangeNavigator widget
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5736,8 +5544,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5804,8 +5611,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -5872,8 +5678,7 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
