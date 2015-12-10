@@ -1,3 +1,11 @@
+---
+layout: post
+title: Functionalities in the DropDownList widget for Syncfusion Essential JS
+description: Functionalities in the DropDownList widget for Syncfusion Essential JS
+platform: js
+control: DropDownList
+documentation: ug
+---
 ## Functionalities
 
 ### Selection

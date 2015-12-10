@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template support with DropDownList
-description: Template Support with DropDownList
+title: Template support with DropDownList widget for Syncfusion Essential JS
+description: Template Support with DropDownList widget for Syncfusion Essential JS
 platform: js
 control: DropDownList
 documentation: ug
