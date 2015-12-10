@@ -140,9 +140,9 @@ The default appointment window is availed with options like
 
 The other additional options available are listed below for which the appropriate API’s are needed to be configured to display these options on the appointment window.
 
-* Location ([showLocationField](/js/api/ejschedule#members:showlocationfield))
-* Priority ([prioritySettings](/js/api/ejschedule#members:prioritysettings))
-* Categorize ([categorizeSettings](/js/schedule/categorize))
+* Location ([showLocationField](/js/schedule/miscellaneous#showhide-location-field))
+* Priority ([prioritySettings](/js/schedule/working-with-appointments#priority))
+* Categorize ([categorizeSettings](/js/schedule/working-with-appointments#categorization))
 * [Resources](/js/schedule/resources)    
 
 The appointments can be created by double-clicking on the Scheduler cells across the required time slots, which makes the create Appointment window to pop-up. The start and end time will gets automatically populated, according to the time-slot selection. Clicking on the done button in an appointment window will create the appointment for the selected time cells.
