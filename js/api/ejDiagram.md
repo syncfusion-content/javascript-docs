@@ -44,6 +44,7 @@ $("#diagram").ejDiagram();
 * module:ej.matrix.js
 
 ## Members
+
 ### backgroundColor `String`
 {:#members:backgroundcolor}
 
