@@ -1,23 +1,27 @@
----
+﻿---
 layout: post
-title: ejDialog
+title: API reference for ejDialog
+description: What are the options, methods and events available in Essential JavaScript Dialog.
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: ejDialog, API, Essential JS Dialog, Dialog
+
 ---
 
 # ejDialog
 
 
-
 The Dialog control displays a Dialog window within a webpage. The Dialog enables a message to be displayed, such as supplementary content like images and text, and an interactive content like forms.
 
 
+#### Syntax
 
+{% highlight js %}
 
+$(element).ejDialog(options)
 
-$(element).ejDialog<span class="signature">(options)</span>
+{% endhighlight %}
+
 
 
 <table>
@@ -27,14 +31,14 @@ Name<br/><br/></th><th>
 Type<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
-<td>
-options<br/><br/></td><td>
-object<br/><br/></td><td>
+<td class="name">
+options<br/><br/></td><td class="tyoe">
+object<br/><br/></td><td class="description">
 Settings for Dialog.<br/><br/></td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
     
@@ -44,8 +48,8 @@ Example
     
 {% endhighlight %}
 
-Requires
-{:.require}
+#### Requires
+
 
 * module:jQuery
 * module:jquery.easing.1.3.js
@@ -58,17 +62,17 @@ Requires
 ##Members
 
 
-### actionButtons<span class="type-signature type stringarray">StringArray<span>
+### actionButtons `StringArray`
 {:#members:actionbuttons}
 
 Adds action buttons like close, minimize, pin, maximize in the dialog header.
 
-Default Value:
-{:.param}
-[&ldquo;close&rdquo;]
+#### Default Value
 
-Example 
-{:.example}
+* 'close'
+
+#### Example 
+
 
 {% highlight js %}
 
@@ -77,17 +81,17 @@ Example
  {% endhighlight %}
 
 
-### allowDraggable<span class="type-signature type object">Boolean
+### allowDraggable `boolean`
 {:#members:allowdraggable}
 
 Enables or disables draggable.
 
-Default Value:
-{:.param}
- true
+#### Default Value
 
-Example
-{:.example}
+ * true
+
+#### Example
+
 
 {% highlight js %}
 
@@ -95,17 +99,17 @@ Example
          
 {% endhighlight %}
 
-### allowKeyboardNavigation<span class="type-signature type boolean">Boolean</span>
+### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
 Enables or disables keyboard interaction.
 
-Default Value:
-{:.param}
- true
+#### Default Value
 
-Example
-{:.example}
+ * true
+
+#### Example
+
 
 {% highlight js %}
 
@@ -114,7 +118,7 @@ Example
 {% endhighlight %}
 
 
-### animation<span class="type-signature type JSONobject">JSONobject</span>
+### animation `JSONobject`
 {:#members:animation}
 
 Customizes the Dialog widget animations. The Dialog widget can be animated while opening and closing the dialog. In order to customize animation effects, you need to set “[enableAnimation](http://docs.syncfusion.com/js/api/ejdialog#members:enableanimation)” as true. It contains the following sub properties.
@@ -127,33 +131,33 @@ Type<br/><br/></th><th>
 Default<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
-<td>
-show.effect<br/><br/></td><td>
-String<br/><br/></td><td>
-fade<br/><br/></td><td>
+<td class="name">
+show.effect<br/><br/></td><td class="type">
+String<br/><br/></td><td class="default">
+fade<br/><br/></td><td class="description">
 The animation effect when the dialog is opened. The possible values are fade and slide.<br/><br/></td></tr>
 <tr>
-<td>
-show.duration<br/><br/></td><td>
-integer <br/><br/></td><td>
-400<br/><br/></td><td>
+<td class="name">
+show.duration<br/><br/></td><td class="type">
+integer <br/><br/></td><td class="default">
+400<br/><br/></td><td class="description">
 The duration for the animation effect when the dialog is opened.<br/><br/></td></tr>
 <tr>
-<td>
-hide.effect<br/><br/></td><td>
-String<br/><br/></td><td>
+<td class="name">
+hide.effect<br/><br/></td><td class="type">
+String<br/><br/></td><td class="default">
 fade<br/><br/></td><td>
 The animation effect when the dialog is closed. The possible values are fade and slide.<br/><br/></td></tr>
 <tr>
-<td>
-hide.duration<br/><br/></td><td>
-integer<br/><br/></td><td>
-400<br/><br/></td><td>
+<td class="name">
+hide.duration<br/><br/></td><td class="type">
+integer<br/><br/></td><td class="default">
+400<br/><br/></td><td class="description">
 The duration for the animation effect when the dialog is closed.<br/><br/></td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -190,17 +194,17 @@ Example
 {% endhighlight %}
 
 
-### closeIconTooltip<span class="type-signature type string">String</span>
+### closeIconTooltip `string`
 {:#members:closeicontooltip}
 
 The tooltip text for the dialog close button.
 
-Default Value:
-{:.param}
-close
+#### Default Value
 
-Example
-{:.example}
+ * close
+
+#### Example
+
 
 {% highlight js %}
 
@@ -209,17 +213,17 @@ Example
 {% endhighlight %}
 
 
-### closeOnEscape<span class="type-signature type boolean">Boolean</span>
+### closeOnEscape `boolean`
 {:#members:closeonescape}
 
 Closes the dialog widget on pressing the <kbd>ESC</kbd> key when it is set to true.
 
-Default Value:
-{:.param}
- true
+#### Default Value
 
-Example
-{:.example}
+  * true
+
+#### Example
+
 
 {% highlight js %}
 
@@ -228,19 +232,19 @@ Example
 {% endhighlight %}
 
 
-### content[Deprecated]<span class="type-signature type string">String</span>
+### content[Deprecated] `string`
 {:#members:content}
 
 The selector for the container element. If this property is set, the dialog will be displayed (positioned) based on its container.
 
-N>Since it is deprecated we suggest to use the API “[target](#methods:isopen)”.
+N>Since it is deprecated we suggest to use the API “[target](#methods:target)”.
 
-Default Value: 
-{:.param}
- null
+#### Default Value
 
-Example
-{:.example}
+  * null
+
+#### Example
+
 
 {% highlight js %}
 
@@ -249,18 +253,18 @@ Example
 {% endhighlight %}
 
 
-### contentType<span class="type-signature type string">String</span>
+### contentType `string`
 {:#members:contenttype}
 
 The content type to load the dialog content at run time. The possible values are null, ajax, iframe and image. When it is null (default value), the content inside dialog element will be displayed as content and when it is not null, the content will be loaded from the URL specified in the [contentUrl](http://docs.syncfusion.com/js/api/ejdialog#members:contenturl) property.
 
-Default Value:
-{:.param}
+#### Default Value
 
- null
 
-Example
-{:.example}
+  * null
+
+#### Example
+
 
 {% highlight js %}
 
@@ -269,17 +273,17 @@ Example
 {% endhighlight %}
 
 
-### contentUrl<span class="type-signature type string">String</span>
+### contentUrl `string`
 {:#members:contenturl}
 
 The URL to load the dialog content (such as AJAX, image, and iframe). In order to load content from URL, you need to set [contentType](http://docs.syncfusion.com/js/api/ejdialog#members:contenttype) as ‘ajax’ or ‘iframe’ or ‘image’.
 
-Default Value:
-{:.param}
-null
+#### Default Value
 
-Example
-{:.example}
+ * null
+
+#### Example
+
 
 {% highlight js %}
 
@@ -290,17 +294,17 @@ Example
 {% endhighlight %}
 
 
-### cssClass<span class="type-signature type string">String</span>
+### cssClass `string`
 {:#members:cssclass}
 
 The root class for the Dialog widget to customize the existing theme.
 
-Default Value:
-{:.param}
- ””
+#### Default Value
 
-Example
-{:.example}
+  * ””
+
+#### Example
+
 
 {% highlight js %}
 
@@ -309,17 +313,17 @@ Example
 {% endhighlight %}
 
 
-### enableAnimation<span class="type-signature type boolean">Boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 Enable or disables animation when the dialog is opened or closed.
 
-Default Value:
-{:.param} 
- true
+#### Default Value
 
-Example
-{:.example}
+ * true
+
+#### Example
+
 
 {% highlight js %}
 
@@ -328,17 +332,17 @@ Example
 {% endhighlight %}
 
 
-### enabled<span class="type-signature type boolean">Boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 Enables or disables the Dialog widget.
 
-Default Value: 
-{:.param}
- true
+#### Default Value
 
-Example
-{:.example}
+ * true
+
+#### Example
+
 
 {% highlight js %}
 
@@ -347,17 +351,17 @@ Example
 {% endhighlight %}
 
 
-### enableModal<span class="type-signature type boolean">Boolean</span>
+### enableModal `boolean`
 {:#members:enablemodal}
 
 Enable or disables modal dialog. The [modal dialog](https://en.wikipedia.org/wiki/Modal_window#) acts like a child window that is displayed on top of the main window/screen and disables the main window interaction until it is closed.
 
-Default Value:
-{:.param}
- false
+#### Default Value
 
-Example
-{:.example}
+ * false
+
+#### Example
+
 
 {% highlight js %}
 
@@ -366,20 +370,20 @@ Example
 {% endhighlight %}
 
 
-### enablePersistence<span class="type-signature type boolean">Boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 Allows the current model values to be saved in local storage or browser cookies for state maintenance when it is set to true.
 
 N>[Local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is supported only in Html5 supported browsers.If the browsers don’t have support for local storage,browser cookies will be used to maintain the state.
 
-Default Value:
+#### Default Value
 
-{:.param}
-false
 
-Example
-{:.example}
+ * false
+
+#### Example
+
 
 {% highlight js %}
 
@@ -388,17 +392,17 @@ Example
 {% endhighlight %}
 
 
-### enableResize<span class="type-signature type boolean">Boolean</span>
-{:#members:enableResize}
+### enableResize `boolean`
+{:#members:enableresize}
 
 Allows the dialog to be resized. The dialog cannot be resized less than the minimum height and minimum width values.
 
-Default Value: 
-{:.param}
- true
+#### Default Value
 
-Example
-{:.example}
+  * true
+
+#### Example
+
 
 {% highlight js %}
 
@@ -407,17 +411,17 @@ Example
 {% endhighlight %}
 
 
-### enableRTL<span class="type-signature type boolean">Boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 Displays dialog content from right to left when set to true.
 
-Default Value: 
-{:.param}
-false
+#### Default Value
 
-Example
-{:.example}
+ * false
+
+#### Example
+
 
 {% highlight js %}
 
@@ -426,17 +430,17 @@ Example
 {% endhighlight %}
 
 
-### faviconCSS<span class="type-signature type string">String</span>
+### faviconCSS `string`
 {:#members:faviconcss}
 
 The CSS class name to display the favicon in the dialog header. In order to display fav icon, you need to [showHeader](http://docs.syncfusion.com/js/api/ejdialog#members:showheader) as true since the favicon will be displayed in the dialog header.
 
-Default Value: 
-{:.param}
- null
+#### Default Value
 
-Example
-{:.example}
+  * null
+
+#### Example
+
 
 {% highlight js %}
 
@@ -445,17 +449,17 @@ Example
 {% endhighlight %}
 
 
-### height<span class="type-signature type string">String</span> <span class="type-signature type integer">Integer</span> 
+### height `string`  `integer` 
 {:#members:height}
 
 Sets the height for the dialog widget. It accepts both string and integer values. For example, it can accepts values like “auto”, “100%”, “100px” as string type and “100”, “500” as integer type. The unit of integer type value is “px”.
 
-Default Value:
-{:.param}
-auto
+#### Default Value
 
-Example
-{:.example}
+ * auto
+
+#### Example
+
 
 {% highlight js %}
 
@@ -464,19 +468,19 @@ Example
 {% endhighlight %}
 
 
-### isResponsive<span class="type-signature type boolean">Boolean</span> 
+### isResponsive `boolean` 
 {:#members:isresponsive}
 
 Enable or disables responsive behavior.
 
 N>Once the dialog is resized or dragged,then the responsive behavior won’t work.
 
-Default Value:
-{:.param}
-false
+#### Default Value
 
-Example
-{:.example}
+ * false
+
+#### Example
+
 
 {% highlight js %}
 
@@ -485,17 +489,17 @@ Example
 {% endhighlight %}
 
 
-### maxHeight<span class="type-signature type integer">Integer</span> 
+### maxHeight `integer` 
 {:#members:maxheight}
 
 Sets the maximum height for the dialog widget.
 
-Default Value: 
-{:.param}
- null
+#### Default Value
 
-Example
-{:.example}
+  * null
+
+#### Example
+
 
 {% highlight js %}
 
@@ -504,17 +508,17 @@ Example
 {% endhighlight %}
 
 
-### maxWidth<span class="type-signature type integer">Integer</span> 
+### maxWidth `integer` 
 {:#members:maxwidth}
 
 Sets the maximum width for the dialog widget.
 
-Default Value:
-{:.param} 
-null
+#### Default Value
 
-Example
-{:.example}
+ * null
+
+#### Example
+
     
 {% highlight js %}
 
@@ -523,17 +527,17 @@ Example
 {% endhighlight %}
 
 
-### minHeight<span class="type-signature type integer">Integer</span> 
+### minHeight `integer` 
 {:#members:minheight}
 
 Sets the minimum height for the dialog widget.
 
-Default Value:
-{:.param}
-120
+#### Default Value
 
-Example
-{:.example}
+ * 120
+
+#### Example
+
 
 {% highlight js %}
 
@@ -541,17 +545,17 @@ Example
 
 {% endhighlight %}
 
-### minWidth<span class="type-signature type integer">Integer</span> 
+### minWidth `integer` 
 {:#members:minwidth}
 
 Sets the minimum width for the dialog widget.
 
-Default Value:
-{:.param}
- 200
+#### Default Value
 
-Example
-{:.example}
+ * 200
+
+#### Example
+
 
 {% highlight js %}
 
@@ -560,7 +564,7 @@ Example
 {% endhighlight %}
 
 
-### position<span class="type-signature type JSONobject">JSONobject</span>   
+### position `JSONobject`   
 {:#members:position}
 
 Displays the Dialog widget at the given X and Y position. 
@@ -573,21 +577,21 @@ Type<br/><br/></th><th>
 Default<br/><br/></th><th>
 Description<br/><br/></th></tr>
 <tr>
-<td>
-X<br/><br/></td><td>
-string<br/><br/></td><td>
-null<br/><br/></td><td>
+<td class="name">
+X<br/><br/></td><td class="type">
+string<br/><br/></td><td class="default">
+null<br/><br/></td><td class="description">
 Sets the left position of the Dialog widget.<br/><br/></td></tr>
 <tr>
-<td>
-Y<br/><br/></td><td>
-string<br/><br/></td><td>
-null<br/><br/></td><td>
+<td  class="name">
+Y<br/><br/></td><td class="type">
+string<br/><br/></td><td class="default">
+null<br/><br/></td><td class="description">
 Sets the top position of the Dialog widget.<br/><br/></td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -596,17 +600,17 @@ Example
 {% endhighlight %}
 
 
-### showHeader<span class="type-signature type boolean">Boolean</span>    
+### showHeader `boolean`    
 {:#members:showheader}
 
 Shows or hides the dialog header.
 
-Default Value:
-{:.param}
-true
+#### Default Value
 
-Example
-{:.example}
+* true
+
+#### Example
+
 
 {% highlight js %}
 
@@ -615,17 +619,17 @@ Example
 {% endhighlight %}
 
 
-### showOnInit<span class="type-signature type boolean">Boolean</span> 
+### showOnInit `boolean` 
 {:#members:showoninit}
 
 The Dialog widget can be opened by default i.e. on initialization, when it is set to true.
 
-Default Value:
-{:.param}
-true
+#### Default Value
 
-Example
-{:.example}
+* true
+
+#### Example
+
 
 {% highlight js %}
 
@@ -634,17 +638,17 @@ Example
 {% endhighlight %}
 
 
-### showRoundedCorner<span class="type-signature type boolean">Boolean</span> 
+### showRoundedCorner `boolean` 
 {:#members:showroundedcorner}
 
 Enables or disables the rounder corner.
 
-Default Value: 
-{:.param}
- false
+#### Default Value
 
-Example
-{:.example}
+* false
+
+#### Example
+
 
 {% highlight js %}
 
@@ -653,17 +657,17 @@ Example
 {% endhighlight %}
 
 
-### target <span class="type-signature type string">String</span> 
+### target  `string` 
 {:#members:target}
 
 The selector for the container element. If this property is set, the dialog will be displayed (positioned) based on its container.
 
-Default Value:
-{:.param}
- null
+#### Default Value
 
-Example
-{:.example}
+* null
+
+#### Example
+
 
 {% highlight js %}
 
@@ -672,17 +676,17 @@ Example
 {% endhighlight %}
 
 
-### title <span class="type-signature type string">String</span> 
+### title  `string` 
 {:#members:title}
 
 The title text to be displayed in the dialog header. In order to set title, you need to set [showHeader](http://docs.syncfusion.com/js/api/ejdialog#members:showheader) as true since the title will be displayed in the dialog header.
 
-Default Value:
-{:.param}
-””
+#### Default Value
 
-Example
-{:.example}
+* ””
+
+#### Example
+
 
 {% highlight js %}
 
@@ -691,17 +695,17 @@ Example
 {% endhighlight %}
 
 
-### width <span class="type-signature type string">String</span> <span class="type-signature type integer">Integer</span> 
+### width  `string`  `integer` 
 {:#members:width}
 
 Sets the height for the dialog widget. It accepts both string and integer values. For example, it can accepts values like “auto”, “100%”, “100px” as string type and “100”, “500” as integer type. The unit of integer type value is “px”.
 
-Default Value:
-{:.param}
-””
+#### Default Value
 
-Example
-{:.example}
+* ””
+
+#### Example
+
 
 {% highlight js %}
 
@@ -710,17 +714,17 @@ Example
 {% endhighlight %}
 
 
-### zIndex<span class="type-signature type integer">Integer</span>
+### zIndex `integer`
 {:#members:zindex}
 
 Sets the z-index value for the Dialog widget.
 
-Default Value:
-{:.param} 
- 1000
+#### Default Value
 
-Example
-{:.example}
+* 1000
+
+#### Example
+
 
 {% highlight js %}
 
@@ -730,13 +734,13 @@ Example
 
 ## Methods
 
-### close<span class="signature">()</span>
+### close()
 {:#methods:close}
 
 Closes the dialog widget dynamically.
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -744,13 +748,13 @@ Example
 
 {% endhighlight %}
 
-### collapse<span class="signature">()</span>
+### collapse()
 {:#methods:collapse}
 
 Collapses the content area when it is expanded.
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -759,13 +763,13 @@ Example
 {% endhighlight %}
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 Destroys the Dialog widget. 
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -774,13 +778,13 @@ Example
 {% endhighlight %}
 
 
-### expand<span class="signature">()</span>
+### expand()
 {:#methods:expand}
 
 Expands the content area when it is collapsed.
 
-Example 
-{:.example}   
+#### Example 
+   
 
 {% highlight js %}
 
@@ -789,15 +793,15 @@ Example
 {% endhighlight %}
 
 
-### isOpened<span class="signature">()</span> [Deprecated]
+### isOpened() [Deprecated]
 {:#methods:isopened}
 
 Checks whether the Dialog widget is opened or not. This methods returns Boolean value.
 
 N>Since it is deprecated we suggest to use the method “[isOpen](#methods:isopen)”.
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -806,13 +810,13 @@ Example
 {% endhighlight %}
 
 
-### isOpen<span class="signature">()</span>
+### isOpen()
 {:#methods:isopen}
 
 Checks whether the Dialog widget is opened or not. This methods returns Boolean value.
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -821,13 +825,13 @@ Example
 {% endhighlight %}
 
 
-### maximize<span class="signature">()</span>
+### maximize()
 {:#methods:maximize}
 
 Maximizes the Dialog widget.
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -836,13 +840,13 @@ Example
 {% endhighlight %}
 
 
-### minimize<span class="signature">()</span>
+### minimize()
 {:#methods:minimize}
 
 Minimizes the Dialog widget.
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -851,13 +855,13 @@ Example
 {% endhighlight %}
 
 
-### open<span class="signature">()</span>
+### open()
 {:#methods:open}
 
 Opens the Dialog widget.
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -865,13 +869,13 @@ Example
 
 {% endhighlight %}
 
-### pin<span class="signature">()</span>
+### pin()
 {:#methods:pin}
 
 Pins the dialog in its current position.
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -880,13 +884,13 @@ Example
 {% endhighlight %}
 
 
-### restore<span class="signature">()</span>
+### restore()
 {:#methods:restore}
 
 Restores the dialog.
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -895,13 +899,13 @@ Example
 {% endhighlight %}
 
 
-### unpin<span class="signature">()</span>
+### unpin()
 {:#methods:unpin}
 
 Unpins the Dialog widget.
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -910,26 +914,26 @@ Example
 {% endhighlight %}
 
 
-### setTitle<span class="signature">(title)</span>
+### setTitle(title)</span>
 {:#methods:settitle}
 
 Sets the title for the Dialog widget.
 
 <table>
 <tr>
-<td>
-Parameters<br/><br/></td><td>
-Type<br/><br/></td><td>
-Description<br/><br/></td></tr>
+<th>
+<b>Parameters</b></th><th>
+<b>Type</b></th><th>
+<b>Description</b></th></tr>
 <tr>
-<td>
-Title<br/><br/></td><td>
-string<br/><br/></td><td>
+<td class="name">
+Title<br/><br/></td><td class="type">
+string<br/><br/></td><td class="description">
 The title for the dialog widget.<br/><br/></td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -938,26 +942,26 @@ Example
 {% endhighlight %}
 
 
-### setContent<span class="signature">(content)</span>
+### setContent(content)</span>
 {:#methods:setcontent}
 
 Sets the content for the Dialog widget dynamically. 
 
 <table>
 <tr>
-<td>
-Parameters<br/><br/></td><td>
-Type<br/><br/></td><td>
-Description<br/><br/></td></tr>
+<th>
+<b>Parameters</b></th><th>
+<b>Type</b></th><th>
+<b>Description</b></th></tr>
 <tr>
-<td>
-content<br/><br/></td><td>
-string<br/><br/></td><td>
+<td class="name">
+content<br/><br/></td><td class="type">
+string<br/><br/></td><td class="description">
 The content for the dialog widget. It accepts both string and html string.<br/><br/></td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -966,13 +970,13 @@ Example
 {% endhighlight %}
 
 
-### focus<span class="signature">()</span>
+### focus()
 {:#methods:focus}
 
 Sets the focus on the Dialog widget.
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -995,30 +999,30 @@ This event is triggered before the dialog widgets gets open.
 <b>Type</b></th><th>
 <b>Description</b></th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td  class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-String</td><td>
+<td class="name">
+argument.type</td><td class="type">
+String</td><td class="description">
 Name of the event</td></tr>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
 
-        $("#dialog").ejDialog({ 	beforeOpen: function (args) {} }); 
+        $("#dialog").ejDialog({ beforeOpen: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1035,51 +1039,51 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 <tr>
-<td>
-argument.url</td><td>
-string</td><td>
+<td class="name">
+argument.url</td><td class="type">
+string</td><td class="description">
 URL of the content.</td></tr>
 <tr>
-<td>
-argument.data.responseText</td><td>
-string</td><td>
+<td class="name">
+argument.data.responseText</td><td class="type">
+string</td><td class="description">
 Error page content</td></tr>
 <tr>
-<td>
-argument.data.status</td><td>
-integer</td><td>
+<td class="name">
+argument.data.status</td><td class="type">
+integer</td><td class="description">
 Error code</td></tr>
 <tr>
-<td>
-Argument.data.statusText</td><td>
-string</td><td>
-returns the corresponding error text for error code </td></tr>
+<td class="name">
+Argument.data.statusText</td><td class="type">
+string</td><td class="description">
+The corresponding error description.</td></tr>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight js %}
 
 
-        $("#dialog").ejDialog({ 	ajaxError: function (args){} }); 
+        $("#dialog").ejDialog({ ajaxError: function (args){} }); 
 
 {% endhighlight %}
 
@@ -1096,40 +1100,40 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 <tr>
-<td>
-argument.url</td><td>
-string</td><td>
+<td class="name">
+argument.url</td><td class="type">
+string</td><td class="description">
 URL of the content.</td></tr>
 <tr>
-<td>
-argument.data</td><td>
-string</td><td>
+<td class="name">
+argument.data</td><td class="type">
+string</td><td class="description">
 Response content.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	ajaxSuccess: function (args){}});
+    $("#dialog").ejDialog({ ajaxSuccess: function (args){}});
 
 {% endhighlight %}
 
@@ -1146,36 +1150,36 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.event</td><td>
-Object</td><td>
+<td class="name">
+argument.event</td><td class="type">
+Object</td><td class="description">
 Current event object.</td></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	beforeClose: function(args){}});
+    $("#dialog").ejDialog({ beforeClose: function(args){}});
 
 {% endhighlight %}
 
@@ -1194,35 +1198,35 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.event</td><td>
-Object</td><td>
+<td class="name">
+argument.event</td><td class="type">
+Object</td><td class="description">
 Current event object.</td></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-String</td><td>
+<td class="name">
+argument.type</td><td class="type">
+String</td><td class="description">
 Name of the event.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	Close: function (args) {} }); 
+    $("#dialog").ejDialog({ Close: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1239,35 +1243,35 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.event</td><td>
-Object</td><td>
+<td class="name">
+argument.event</td><td class="type">
+Object</td><td class="description">
 Current event object.</td></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-String</td><td>
+<td class="name">
+argument.type</td><td class="type">
+String</td><td class="description">
 Name of the event</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	close: function (args) {} }); 
+    $("#dialog").ejDialog({ close: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1287,34 +1291,34 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-String</td><td>
+<td class="name">
+argument.type</td><td class="type">
+String</td><td class="description">
 Name of the event.</td></tr>
 <tr>
-<td>
-argument.url</td><td>
-String</td><td>
+<td class="name">
+argument.url</td><td class="type">
+String</td><td class="description">
 URL of the content.</td></tr>
 <tr>
-<td>
-argument.contentType</td><td>
-Object</td><td>
+<td class="name">
+argument.contentType</td><td class="type">
+Object</td><td class="description">
 Content type</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight js %}
@@ -1336,29 +1340,29 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	create: function (args) {} }); 
+    $("#dialog").ejDialog({ create: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1375,29 +1379,29 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	destroy: function (args) {} }); 
+    $("#dialog").ejDialog({ destroy: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1414,34 +1418,34 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 <tr>
-<td>
-argument.event</td><td>
-Object</td><td>
+<td class="name">
+argument.event</td><td class="type">
+Object</td><td class="description">
 Current event object.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight js %}
 
-$("#dialog").ejDialog({ 	drag: function (args) {} }); 
+    $("#dialog").ejDialog({ drag: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1458,34 +1462,34 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 <tr>
-<td>
-argument.event</td><td>
-Object</td><td>
+<td class="name">
+argument.event</td><td class="type">
+Object</td><td class="description">
 Current event object.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight js %}
 
-$("#dialog").ejDialog({ 	dragStart: function (args) {} }); 
+$("#dialog").ejDialog({ dragStart: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1502,33 +1506,33 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 <tr>
-<td>
-argument.event</td><td>
-Object</td><td>
+<td class="name">
+argument.event</td><td class="type">
+Object</td><td class="description">
 Current event object.</td></tr>
 </table>
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	dragStop: function (args) {} }); 
+    $("#dialog").ejDialog({ dragStop: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1545,29 +1549,29 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
 
-           $("#dialog").ejDialog({ 	open: function (args) {} }); 
+           $("#dialog").ejDialog({ open: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1584,34 +1588,34 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 <tr>
-<td>
-argument.event</td><td>
-Object</td><td>
+<td class="name">
+argument.event</td><td class="type">
+Object</td><td class="description">
 Current event object.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight js %}
 
-    $("#dialog").ejDialog({ 	resize: function (args) {} }); 
+    $("#dialog").ejDialog({ resize: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1628,34 +1632,34 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event</td></tr>
 <tr>
-<td>
-argument.event</td><td>
-Object</td><td>
+<td class="name">
+argument.event</td><td class="type">
+Object</td><td class="description">
 Current event object.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	resizeStart: function (args) {} }); 
+    $("#dialog").ejDialog({ resizeStart: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1672,34 +1676,34 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-Boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+Boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-String</td><td>
+<td class="name">
+argument.type</td><td class="type">
+String</td><td class="description">
 Name of the event</td></tr>
 <tr>
-<td>
-argument.event</td><td>
-Object</td><td>
+<td class="name">
+argument.event</td><td class="type">
+Object</td><td class="description">
 Current event object.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
 
-    $("#dialog").ejDialog({ 	resizeStop: function (args) {} }); 
+    $("#dialog").ejDialog({ resizeStop: function (args) {} }); 
 
 {% endhighlight %}
 
@@ -1716,24 +1720,24 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 {% highlight js %}
 
@@ -1761,24 +1765,24 @@ Name</th><th>
 Type</th><th>
 Description</th></tr>
 <tr>
-<td>
-argument.cancel</td><td>
-boolean</td><td>
+<td class="name">
+argument.cancel</td><td class="type">
+boolean</td><td class="description">
 Set this option to true to cancel the event.</td></tr>
 <tr>
-<td>
-argument.model</td><td>
-object</td><td>
+<td class="name">
+argument.model</td><td class="type">
+object</td><td class="description">
 Instance of the dialog model object.</td></tr>
 <tr>
-<td>
-argument.type</td><td>
-string</td><td>
+<td class="name">
+argument.type</td><td class="type">
+string</td><td class="description">
 Name of the event.</td></tr>
 </table>
 
-Example
-{:.example}
+#### Example
+
 
 
 

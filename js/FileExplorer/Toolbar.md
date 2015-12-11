@@ -115,6 +115,8 @@ It displays the details of the current selected file or folder.<br/><br/><br/><b
 Searchbar<br/><br/></td><td>
 The Search bar is the textbox which is used to search the files from the current directory. It list the files based on the user search.<br/><br/>The search behavior of the searchbar can be customize, for details check {{'[here](#customizing-the-search)'| markdownify }}.<br/><br/><br/><br/></td></tr>
 </table>
+
+
 ## Toolbar Visibility
 
 The visibility of the toolbar can be customized through the [showToolbar](http://help.syncfusion.com/js/api/ejfileexplorer#members:showtoolbar) property. By disabling this property you can remove the toolbar from FileExplorer.

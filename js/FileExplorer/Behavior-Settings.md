@@ -57,13 +57,11 @@ You can see the following requests passed during the **client – server actions
 
 The following is the syntax for ajaxSettings property.
 
-    <table>
-        <tr>
-            <td>
-                ajaxSettings: {<br /><br />read: {},<br /><br />createFolder: {},<br /><br />remove: {},<br /><br />rename: {},<br /><br />paste: {},<br /><br />getDetails: {},<br /><br />upload: {},<br /><br />download: {},<br /><br />getImage: {}           <br /><br />}****<br /><br /><br /><br />
-            </td>
-        </tr>
-    </table>
+{% highlight js %}
+
+       ajaxSettings: { read: {}, createFolder: {}, remove: {}, rename: {}, paste: {}, getDetails: {}, upload: {}, download: {}, getImage: {} }
+                
+{% endhighlight %}
 
 The actions “read, createFolder, remove, rename, paste, getDetails” are supported all the jQuery Ajax configurations. The remaining actions “upload, download, getImage” are accepted the url only.
 
