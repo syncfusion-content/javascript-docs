@@ -1,33 +1,27 @@
 ---
 layout: post
 title: ejDateTimePicker
+description: API reference for ejDateTimePicker
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: DateTimePicker, ejDateTimePicker, syncfusion, DateTimePicker api
+
 ---
 
 
 # ejDateTimePicker
 
 
-
 The DateTimePicker control is used to input the date and time with a specific format. It combines the DatePicker and TimePicker controls so that users can select the date and time with their desired format.
 
 
+#### Syntax
 
+{% highlight js %}
 
+$(element).ejDateTimePicker(options)
 
-
-
-
-
-
-$(element).ejDateTimePicker<span class="signature">(options)</span>
-
-
-
-
+{% endhighlight %}
 
 
 
@@ -36,7 +30,7 @@ $(element).ejDateTimePicker<span class="signature">(options)</span>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -44,7 +38,7 @@ $(element).ejDateTimePicker<span class="signature">(options)</span>
 <td class="name">{% highlight html %}
 options{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">settings for Date Picker.</td>
+<td class="description">settings for Date Picker.</td>
 </tr>
 </tbody>
 </table>
@@ -52,8 +46,8 @@ options{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -66,12 +60,7 @@ $("#datetime").ejDateTimePicker();
 
 
 
-
-
-
-
-Requires
-{:.require}
+#### Requires
 
 
 
@@ -108,32 +97,15 @@ Requires
 ## Members
 
 
-
-
-
-
-
-
-### buttonText<span class="type-signature type jsonobject">JSONObject</span>
+### buttonText `JSONobject`
 {:#members:buttontext}
-
-
-
-
-
 
 
 
 Displays the custom text for the buttons inside the DateTimePicker popup. when the culture value changed, we can change the buttons text based on the culture.
 
 
-
-
-Default Value:
-{:.param}
-
-
-
+#### Default Value
 
 
 
@@ -142,12 +114,8 @@ Default Value:
 
 
 
+#### Example
 
-
-
-
-Example
-{:.example}
 
 
 {% highlight html %}
@@ -164,7 +132,7 @@ Example
 
 
 
-### buttonText.done<span class="type-signature type string">String</span>
+### buttonText.done `string`
 {:#members:buttontext-done}
 
 
@@ -180,8 +148,8 @@ Sets the text for the Done button inside the datetime popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -198,8 +166,8 @@ Example
 
 
 
-### buttonText.now<span class="type-signature type string">String</span>
-{:#members:buttontext-timeNow}
+### buttonText.timeNow `string`
+{:#members:buttontext-timenow}
 
 
 
@@ -214,8 +182,8 @@ Sets the text for the Now button inside the datetime popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -232,7 +200,7 @@ Example
 
 
 
-### buttonText.timeTitle<span class="type-signature type string">String</span>
+### buttonText.timeTitle `string`
 {:#members:buttontext-timetitle}
 
 
@@ -248,8 +216,8 @@ Sets the header text for the Time dropdown.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -266,7 +234,7 @@ Example
 
 
 
-### buttonText.today<span class="type-signature type string">String</span>
+### buttonText.today `string`
 {:#members:buttontext-today}
 
 
@@ -282,8 +250,8 @@ Sets the text for the Today button inside the datetime popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -300,7 +268,7 @@ Example
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -315,8 +283,8 @@ Set the root class for DateTimePicker theme. This cssClass API helps to use cust
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -332,8 +300,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -349,7 +317,7 @@ Example
 
 
 
-### dateTimeFormat<span class="type-signature type string">String</span>
+### dateTimeFormat `string`
 {:#members:datetimeformat}
 
 
@@ -364,8 +332,8 @@ Defines the datetime format displayed in the DateTimePicker. The value should be
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -381,8 +349,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -399,7 +367,7 @@ Example
 
 
 
-### dayHeaderFormat<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### dayHeaderFormat `string / enum`
 {:#members:dayheaderformat}
 
 
@@ -414,8 +382,8 @@ Specifies the header format of the datepicker inside the DateTimePicker popup. S
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -431,8 +399,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -449,7 +417,7 @@ Example
 
 
 
-### depthLevel<span class="type-signature type enum">enum</span>
+### depthLevel `enum`
 {:#members:depthlevel}
 
 
@@ -464,8 +432,8 @@ Specifies the drill down level in datepicker inside the DateTimePicker popup. Se
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -481,8 +449,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -499,7 +467,7 @@ Example
 
 
 
-### enableAnimation<span class="type-signature type boolean">Boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -514,8 +482,8 @@ Enable or disable the animation effect in DateTimePicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -531,8 +499,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -550,7 +518,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">Boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -565,8 +533,8 @@ When this property is set to false, it disables the DateTimePicker control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -582,8 +550,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -600,7 +568,7 @@ Example
 
 
 
-### enablePersistence<span class="type-signature type boolean">Boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -615,8 +583,8 @@ Enables or disables the state maintenance of DateTimePicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -632,8 +600,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -650,7 +618,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">Boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -665,8 +633,8 @@ Sets the DateTimePicker direction as right to left alignment.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -682,8 +650,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -700,7 +668,7 @@ Example
 
 
 
-### enableStrictMode<span class="type-signature type boolean">Boolean</span>
+### enableStrictMode `boolean`
 {:#members:enablestrictmode}
 
 
@@ -715,8 +683,8 @@ When enableStrictMode true it allows the value outside of the range also, otherw
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -732,8 +700,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -750,7 +718,7 @@ Example
 
 
 
-### headerFormat<span class="type-signature type string">String</span>
+### headerFormat `string`
 {:#members:headerformat}
 
 
@@ -765,8 +733,8 @@ Specifies the header format to be displayed in the DatePicker calendar inside th
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -782,8 +750,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -800,7 +768,7 @@ Example
 
 
 
-### height<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### height `string / number`
 {:#members:height}
 
 
@@ -815,8 +783,8 @@ Defines the height of the DateTimePicker textbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -832,8 +800,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -850,7 +818,7 @@ Example
 
 
 
-### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes `object`
 {:#members:htmlattributes}
 
 
@@ -865,8 +833,8 @@ Specifies the HTML Attributes of the ejDateTimePicker
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -882,8 +850,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -900,7 +868,7 @@ Example
 
 
 
-### interval<span class="type-signature type number">Number</span>
+### interval `number`
 {:#members:interval}
 
 
@@ -915,8 +883,8 @@ Sets the time interval between the two adjacent time values in the time popup.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -932,8 +900,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -950,7 +918,7 @@ Example
 
 
 
-### locale<span class="type-signature type string">string</span>
+### locale `string`
 {:#members:locale}
 
 
@@ -965,8 +933,8 @@ Defines the localization culture for DateTimePicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -982,8 +950,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1000,7 +968,7 @@ Example
 
 
 
-### maxDateTime<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+### maxDateTime `string`  `DateObject`
 {:#members:maxdatetime}
 
 
@@ -1015,8 +983,8 @@ Sets the maximum value to the DateTimePicker. Beyond the maximum value an error 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1032,8 +1000,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1050,7 +1018,7 @@ Example
 
 
 
-### minDateTime<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+### minDateTime `string`  `DateObject`
 {:#members:mindatetime}
 
 
@@ -1065,8 +1033,8 @@ Sets the minimum value to the DateTimePicker. Behind the minimum value an error 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1082,8 +1050,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1100,7 +1068,7 @@ Example
 
 
 
-### readOnly<span class="type-signature type boolean">Boolean</span>
+### readOnly `boolean`
 {:#members:readonly}
 
 
@@ -1115,8 +1083,8 @@ Indicates that the DateTimePicker value can only be read and can&rsquo;t change.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1132,8 +1100,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1150,7 +1118,7 @@ Example
 
 
 
-### showOtherMonths<span class="type-signature type boolean">Boolean</span>
+### showOtherMonths `boolean`
 {:#members:showothermonths}
 
 
@@ -1165,8 +1133,8 @@ It allows showing days in other months of DatePicker calendar inside the DateTim
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1182,8 +1150,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1200,7 +1168,7 @@ Example
 
 
 
-### showPopupButton<span class="type-signature type boolean">Boolean</span>
+### showPopupButton `boolean`
 {:#members:showpopupbutton}
 
 
@@ -1215,8 +1183,8 @@ Shows or hides the arrow button from the DateTimePicker textbox. When the button
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1232,8 +1200,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1250,7 +1218,7 @@ Example
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">Boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -1265,8 +1233,8 @@ Changes the sharped edges into rounded corner for the DateTimePicker textbox and
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1282,8 +1250,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1300,7 +1268,7 @@ Example
 
 
 
-### startDay<span class="type-signature type number">Number</span>
+### startDay `number`
 {:#members:startday}
 
 
@@ -1315,8 +1283,8 @@ Specifies the start day of the week in datepicker inside the DateTimePicker popu
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1332,8 +1300,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1350,7 +1318,7 @@ Example
 
 
 
-### startLevel<span class="type-signature type string">String</span> <span class="type-signature type enum">Enum</span>
+### startLevel `string`  `enum`
 {:#members:startlevel}
 
 
@@ -1365,8 +1333,8 @@ Specifies the start level view in datepicker inside the DateTimePicker popup. Se
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1382,8 +1350,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1400,7 +1368,7 @@ Example
 
 
 
-### stepMonths<span class="type-signature type number">Number</span>
+### stepMonths `number`
 {:#members:stepmonths}
 
 
@@ -1415,8 +1383,8 @@ Specifies the number of months to navigate at one click of next and previous but
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1432,8 +1400,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1450,7 +1418,7 @@ Example
 
 
 
-### timeDisplayFormat<span class="type-signature type string">String</span>
+### timeDisplayFormat `string`
 {:#members:timedisplayformat}
 
 
@@ -1465,8 +1433,8 @@ Defines the time format displayed in the time dropdown inside the DateTimePicker
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1482,8 +1450,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1500,7 +1468,7 @@ Example
 
 
 
-### timePopupWidth<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### timePopupWidth `string / number`
 {:#members:timepopupwidth}
 
 
@@ -1515,8 +1483,8 @@ Defines the width of the time dropdown inside the DateTimePicker popup.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1532,8 +1500,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1550,7 +1518,7 @@ Example
 
 
 
-### validationMessage<span class="type-signature type object">object</span>
+### validationMessage `object`
 {:#members:validationmessage}
 
 
@@ -1565,8 +1533,8 @@ Set the jquery validation error message in datetimepicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1582,8 +1550,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1607,7 +1575,7 @@ Example
 
 
 
-### validationRules<span class="type-signature type object">object</span>
+### validationRules `object`
 {:#members:validationrules}
 
 
@@ -1622,8 +1590,8 @@ Set the jquery validation rules in datetimepicker.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1639,8 +1607,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1661,7 +1629,7 @@ Example
 
 
 
-### value<span class="type-signature type string">String</span> <span class="type-signature type dateobject">DateObject</span>
+### value `string / dateobject`
 {:#members:value}
 
 
@@ -1676,8 +1644,8 @@ Sets the DateTime value to the control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1693,8 +1661,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1711,7 +1679,7 @@ Example
 
 
 
-### width<span class="type-signature type string">String</span> <span class="type-signature type number">Number</span>
+### width `string / number`
 {:#members:width}
 
 
@@ -1726,8 +1694,8 @@ Defines the width of the DateTimePicker textbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1743,8 +1711,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1768,7 +1736,7 @@ Example
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -1784,8 +1752,8 @@ Disables the DateTimePicker control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1814,7 +1782,7 @@ $("#datetime").ejDateTimePicker("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -1830,8 +1798,8 @@ Enables the DateTimePicker control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1860,7 +1828,7 @@ $("#datetime").ejDateTimePicker("enable");
 
 
 
-### getValue<span class="signature">()</span>
+### getValue()
 {:#methods:getvalue}
 
 
@@ -1882,8 +1850,8 @@ Returns the current datetime value in the DateTimePicker.
 value
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1912,7 +1880,7 @@ $("#datetime").ejDateTimePicker("getValue");
 
 
 
-### hide<span class="signature">()</span>
+### hide()
 {:#methods:hide}
 
 
@@ -1928,8 +1896,8 @@ Hides or closes the DateTimePicker popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1958,7 +1926,7 @@ $("#datetime").ejDateTimePicker("hide");
 
 
 
-### setCurrentDateTime<span class="signature">()</span>
+### setCurrentDateTime()
 {:#methods:setcurrentdatetime}
 
 
@@ -1974,8 +1942,8 @@ Updates the current system date value and time value to the DateTimePicker.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2004,7 +1972,7 @@ $("#datetime").ejDateTimePicker("setCurrentDateTime");
 
 
 
-### show<span class="signature">()</span>
+### show()
 {:#methods:show}
 
 
@@ -2020,8 +1988,8 @@ Shows or opens the DateTimePicker popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2074,7 +2042,7 @@ Fires when the datetime value changed in the DateTimePicker textbox.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2082,37 +2050,37 @@ Fires when the datetime value changed in the DateTimePicker textbox.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model</td>
+<td class="description">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.isValidState{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the current value is valid or not</td>
+<td class="description">returns the current value is valid or not</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the modified datetime value</td>
+<td class="description">returns the modified datetime value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDateTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected date time value</td>
+<td class="description">returns the previously selected date time value</td>
 </tr>
 </tbody>
 </table>
@@ -2120,8 +2088,8 @@ argument.prevDateTime{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2157,7 +2125,7 @@ Fires when DateTimePicker popup closes.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2165,31 +2133,31 @@ Fires when DateTimePicker popup closes.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model</td>
+<td class="description">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the modified datetime value</td>
+<td class="description">returns the modified datetime value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDateTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected date time value</td>
+<td class="description">returns the previously selected date time value</td>
 </tr>
 </tbody>
 </table>
@@ -2197,8 +2165,8 @@ argument.prevDateTime{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2234,7 +2202,7 @@ Fires after DateTimePicker control is created.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2242,19 +2210,19 @@ Fires after DateTimePicker control is created.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DateTimePicker model</td>
+<td class="description">returns the DateTimePicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -2262,8 +2230,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2299,7 +2267,7 @@ Fires when the DateTimePicker is destroyed successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2307,19 +2275,19 @@ Fires when the DateTimePicker is destroyed successfully
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DateTimePicker model</td>
+<td class="description">returns the DateTimePicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -2327,8 +2295,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2364,7 +2332,7 @@ Fires when the focus-in happens in the DateTimePicker textbox.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2372,25 +2340,25 @@ Fires when the focus-in happens in the DateTimePicker textbox.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model</td>
+<td class="description">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the datetime value, which is in text box</td>
+<td class="description">returns the datetime value, which is in text box</td>
 </tr>
 </tbody>
 </table>
@@ -2398,8 +2366,8 @@ argument.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2435,7 +2403,7 @@ Fires when the focus-out happens in the DateTimePicker textbox.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2443,25 +2411,25 @@ Fires when the focus-out happens in the DateTimePicker textbox.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model</td>
+<td class="description">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the datetime value, which is in text box</td>
+<td class="description">returns the datetime value, which is in text box</td>
 </tr>
 </tbody>
 </table>
@@ -2469,8 +2437,8 @@ argument.value{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2506,7 +2474,7 @@ Fires when DateTimePicker popup opens.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2514,31 +2482,31 @@ Fires when DateTimePicker popup opens.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the timepicker model</td>
+<td class="description">returns the timepicker model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the modified datetime value</td>
+<td class="description">returns the modified datetime value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.prevDateTime{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the previously selected date time value</td>
+<td class="description">returns the previously selected date time value</td>
 </tr>
 </tbody>
 </table>
@@ -2546,8 +2514,8 @@ argument.prevDateTime{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

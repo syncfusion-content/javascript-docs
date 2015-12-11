@@ -1,29 +1,28 @@
 ---
 layout: post
 title: ejCheckBox
+description: API reference for ejCheckBox
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: checkbox, ejCheckBox, syncfusion, checkbox api
 ---
 
 # ejCheckBox
 
 
-
-
 The Checkbox control allows you to check an option to perform an action. This control allows you to select true, false or an intermediate option. These checkboxes are supported with themes. The html check box control is rendered as Essential JavaScript Checkbox control.
 
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejCheckBox()
+
+{% endhighlight %}
 
 
-
-$(element).ejCheckBox<span class="signature">()</span>
-
-
-
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}
@@ -37,14 +36,7 @@ $("#chkbox").ejCheckBox();
 
 
 
-
-
-
-
-Requires
-{:.require}
-
-
+#### Requires
 
 
 * module:jQuery
@@ -56,14 +48,7 @@ Requires
 * module:ej.checkbox.js
 
 
-
-
 ## Members
-
-
-
-
-
 
 
 
@@ -71,22 +56,10 @@ Requires
 {:#members:checked}
 
 
-
-
-
-
-
-
 Specifies whether chechbox has to be in checked or not. We can also specify array of string as value for this property. If any of the value in the specified array matches the value of the textbox, then it will be considered as checked. It will be useful in MVVM binding, specify array type to identify the values of the checked checkboxes.
 
 
-
-
-Default Value:
-{:.param}
-
-
-
+#### Default Value
 
 
 
@@ -94,13 +67,8 @@ Default Value:
 
 
 
+#### Example
 
-
-
-
-
-Example
-{:.example}
 
 
 {% highlight html %}
@@ -114,11 +82,7 @@ $("#chkbox").ejCheckBox({ checked:  true });
 
 
 
-
-
-
-
-### checkState<span class="type-signature type enum">enum</span>
+### checkState `enum`
 {:#members:checkstate}
 
 
@@ -133,8 +97,8 @@ Specifies the State of ChecKBox.See <a href="global.html#CheckState">CheckState<
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -150,8 +114,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -169,7 +133,7 @@ $("#chkbox").ejCheckBox({ enableTriState: true , checkState:"indeterminate"});
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -184,8 +148,8 @@ Specify the CSS class to CheckBox to achieve custom theme.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -201,8 +165,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -219,7 +183,7 @@ $("#chkbox").ejCheckBox({cssClass: "gradient-lime"});
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -234,8 +198,8 @@ Specifies the checkbox control state.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -251,8 +215,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -271,7 +235,7 @@ $("#chkbox").ejCheckBox ({ enabled: true });
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -286,8 +250,8 @@ Specifies the persist property for Checkbox while initialization. The persist AP
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -303,8 +267,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -322,7 +286,7 @@ $("#chkbox").ejCheckBox({ enablePersistence : false });
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -337,8 +301,8 @@ Specify the Right to Left direction to CheckBox
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -354,8 +318,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -373,7 +337,7 @@ $("#chkbox").ejCheckBox({  enableRTL : true });
 
 
 
-### enableTriState<span class="type-signature type boolean">boolean</span>
+### enableTriState `boolean`
 {:#members:enabletristate}
 
 
@@ -388,8 +352,8 @@ Specifies the enable or disable Tri-State for checkbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -405,8 +369,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -425,7 +389,7 @@ $("#chkbox").ejCheckBox({  enableTriState: true });
 
 
 
-### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes `object`
 {:#members:htmlattributes}
 
 
@@ -440,8 +404,8 @@ Specifies the HTML Attributes of the Checkbox
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -457,8 +421,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -476,7 +440,7 @@ $("#chkbox").ejCheckBox({ htmlAttributes : {required:"required"}});
 
 
 
-### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes `object`
 {:#members:htmlattributes}
 
 
@@ -491,8 +455,8 @@ Specifies the HTML Attributes of the Checkbox
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -508,8 +472,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -527,7 +491,7 @@ Example
 
 
 
-### id<span class="type-signature type string">String</span>
+### id `string`
 {:#members:id}
 
 
@@ -542,8 +506,8 @@ Specifies the id atribute of the Checkbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -559,8 +523,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -578,7 +542,7 @@ $("#chkbox").ejCheckBox({  id: "sync" });
 
 
 
-### idPrefix<span class="type-signature type string">String</span>
+### idPrefix `string`
 {:#members:idprefix}
 
 
@@ -593,8 +557,8 @@ Specify the idprefix value to be added before the current id of the checkbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -610,8 +574,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -629,7 +593,7 @@ $("#chkbox").ejCheckBox ({  idPrefix : "ej" });
 
 
 
-### name<span class="type-signature type string">String</span>
+### name `string`
 {:#members:name}
 
 
@@ -644,8 +608,8 @@ Specifies the name attribute of the Checkbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -661,8 +625,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -680,7 +644,7 @@ $("#chkbox").ejCheckBox({  name: "sync" });
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -695,8 +659,8 @@ Specify the rounded corner to checkbox
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -712,8 +676,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -731,7 +695,7 @@ $("#chkbox").ejCheckBox({ showRoundedCorner: true });
 
 
 
-### size<span class="type-signature type enum">enum</span>
+### size `enum`
 {:#members:size}
 
 
@@ -746,8 +710,8 @@ Specifies the size of the CheckBox.See <a href="global.html#CheckboxSize">Checkb
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -763,8 +727,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -782,7 +746,7 @@ $("#chkbox").ejCheckBox({  size: "medium"});
 
 
 
-### text<span class="type-signature type string">string</span>
+### text `string`
 {:#members:text}
 
 
@@ -797,8 +761,8 @@ Specifies the text content for CheckBox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -814,8 +778,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -832,7 +796,7 @@ $("#chkbox").ejCheckBox({ text: "Hello World"});
 
 
 
-### validationMessage<span class="type-signature type object">object</span>
+### validationMessage `object`
 {:#members:validationmessage}
 
 
@@ -847,8 +811,8 @@ Set the jquery validation error message in checkbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -864,8 +828,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -890,7 +854,7 @@ Example
 
 
 
-### validationRules<span class="type-signature type object">object</span>
+### validationRules `object`
 {:#members:validationrules}
 
 
@@ -905,8 +869,8 @@ Set the jquery validation rules in checkbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -922,8 +886,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -945,7 +909,7 @@ Example
 
 
 
-### value<span class="type-signature type string">String</span>
+### value `string`
 {:#members:value}
 
 
@@ -960,8 +924,8 @@ Specifies the value attribute of the Checkbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -977,8 +941,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1003,7 +967,7 @@ $("#chkbox").ejCheckBox({ value: "Hello World"});
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -1019,8 +983,8 @@ destroy the CheckBox widget all events bound using this._on will be unbind autom
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1051,7 +1015,7 @@ $("#chkbox").ejCheckBox("destroy");
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -1067,8 +1031,8 @@ To disable the checkbox
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1099,7 +1063,7 @@ $("#chkbox").ejCheckBox("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -1115,8 +1079,8 @@ To enable the checkbox
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1147,7 +1111,7 @@ $("#chkbox").ejCheckBox("enable");
 
 
 
-### isChecked<span class="signature">()</span>
+### isChecked()
 {:#methods:ischecked}
 
 
@@ -1163,8 +1127,8 @@ To Check the status of checkbox
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1219,7 +1183,7 @@ Fires before the Checkbox is going to changed its state successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1227,13 +1191,13 @@ Fires before the Checkbox is going to changed its state successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from CheckBox
+<td class="description">Event parameters from CheckBox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1241,31 +1205,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the Checkbox model</td>
+<td class="description">returns the Checkbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the current element</td>
+<td class="description">returns the current element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the status of the element</td>
+<td class="description">returns the status of the element</td>
 </tr>
 </tbody>
 </table>
@@ -1277,8 +1241,8 @@ data.isChecked{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1315,7 +1279,7 @@ Fires when the Checkbox state is changed successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1323,13 +1287,13 @@ Fires when the Checkbox state is changed successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from CheckBox
+<td class="description">Event parameters from CheckBox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1337,31 +1301,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the Checkbox model</td>
+<td class="description">returns the Checkbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data.element{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the current element</td>
+<td class="description">returns the current element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 data.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the status of the element</td>
+<td class="description">returns the status of the element</td>
 </tr>
 </tbody>
 </table>
@@ -1373,8 +1337,8 @@ data.isChecked{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1410,7 +1374,7 @@ Fires when the Checkbox state is created successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1418,13 +1382,13 @@ Fires when the Checkbox state is created successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from CheckBox
+<td class="description">Event parameters from CheckBox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1432,19 +1396,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the Checkbox model</td>
+<td class="description">returns the Checkbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1456,8 +1420,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1494,7 +1458,7 @@ Fires when the Checkbox state is destroyed successfully
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1502,13 +1466,13 @@ Fires when the Checkbox state is destroyed successfully
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from CheckBox
+<td class="description">Event parameters from CheckBox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1516,19 +1480,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the Checkbox model</td>
+<td class="description">returns the Checkbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1540,8 +1504,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

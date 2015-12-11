@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejResizable
+description: API reference for ejResizable
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: Resizable, ejResizable, syncfusion, Resizable api  
 ---
 
 # ejResizable
@@ -14,32 +14,23 @@ Plugin to make any DOM element Resizable.
 
 
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejResizable()
+
+{% endhighlight %}
 
 
 
+#### Example
 
-
-
-
-$(element).ejResizable<span class="signature">()</span>
-
-
-
-
-
-
-
-
-
-
-
-Example
-{:.example}
 
 
 {% highlight html %}
  
-<div  id="resizing" ></ div > 
+<div  id="resizing" /> 
  
 <script>
 // Create resizing
@@ -52,10 +43,7 @@ $('#resizing').ejResizable();
 
 
 
-Requires
-{:.require}
-
-
+#### Requires
 
 
 * module:jQuery
@@ -75,7 +63,7 @@ Requires
 
 
 
-### cursorAt<span class="type-signature type object">object</span>
+### cursorAt `object`
 {:#members:cursorat}
 
 
@@ -90,8 +78,8 @@ Sets the offset of the resizing helper relative to the mouse cursor.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -107,14 +95,16 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
 //To set cursorAt API value during initialization  
-        $("#resizing").ejResizable({ cursorAt:  { top: 1, left: -2 } });                                * {% endhighlight %}
+        $("#resizing").ejResizable({ cursorAt:  { top: 1, left: -2 } });                                
+        
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -122,7 +112,8 @@ Example
 //Get or set the cursorAt API, after initialization:
         //Gets the cursorAt value  
         $("#resizing").ejResizable('option', 'cursorAt');
-                   {% endhighlight %}
+                   
+ {% endhighlight %}
 
 
 
@@ -130,7 +121,7 @@ Example
 
 
 
-### distance<span class="type-signature type number">number</span>
+### distance `number`
 {:#members:distance}
 
 
@@ -145,8 +136,8 @@ Distance in pixels after mousedown the mouse must move before resizing should st
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -162,14 +153,16 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
 //To set distance API value during initialization  
-        $("#resizing").ejResizable({ distance: 1 });                            * {% endhighlight %}
+        $("#resizing").ejResizable({ distance: 1 });                            
+      
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -177,7 +170,8 @@ Example
 //Get or set the distance API, after initialization:
         //Gets the distance value  
         $("#resizing").ejResizable('option', 'distance');
-                   {% endhighlight %}
+                   
+{% endhighlight %}
 
 
 
@@ -185,7 +179,7 @@ Example
 
 
 
-### handle<span class="type-signature type string">string</span>
+### handle `string`
 {:#members:handle}
 
 
@@ -200,8 +194,8 @@ If specified, restricts resize start click to the specified element(s).
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -217,14 +211,16 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
 //To set handle API value during initialization  
-        $("#resizing").ejResizable({ handle: null });                           * {% endhighlight %}
+        $("#resizing").ejResizable({ handle: null });                           
+        
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -232,7 +228,8 @@ Example
 //Get or set the handle API, after initialization:
         //Gets the handle value  
         $("#resizing").ejResizable('option', 'handle');
-                     {% endhighlight %}
+                     
+ {% endhighlight %}
 
 
 
@@ -240,7 +237,7 @@ Example
 
 
 
-### maxHeight<span class="type-signature type number">number</span>
+### maxHeight `number`
 {:#members:maxheight}
 
 
@@ -255,8 +252,8 @@ Sets the max height for resizing
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -272,14 +269,16 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
 //To set maxHeight API value during initialization  
-        $("#resizing").ejResizable({ maxHeight: null });                                * {% endhighlight %}
+        $("#resizing").ejResizable({ maxHeight: null });                                
+    
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -287,7 +286,8 @@ Example
 //Get or set the maxHeight API, after initialization:
         //Gets the maxHeight value  
         $("#resizing").ejResizable('option', 'maxHeight');
-                  {% endhighlight %}
+                 
+  {% endhighlight %}
 
 
 
@@ -295,7 +295,7 @@ Example
 
 
 
-### maxWidth<span class="type-signature type number">number</span>
+### maxWidth `number`
 {:#members:maxwidth}
 
 
@@ -310,8 +310,8 @@ Sets the max width for resizing
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -327,14 +327,16 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
 //To set maxWidth API value during initialization  
-        $("#resizing").ejResizable({ maxWidth: null });                         * {% endhighlight %}
+        $("#resizing").ejResizable({ maxWidth: null });                         
+     
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -342,7 +344,8 @@ Example
 //Get or set the maxWidth API, after initialization:
         //Gets the maxWidth value  
         $("#resizing").ejResizable('option', 'maxWidth');
-                   {% endhighlight %}
+                   
+ {% endhighlight %}
 
 
 
@@ -350,7 +353,7 @@ Example
 
 
 
-### minHeight<span class="type-signature type number">number</span>
+### minHeight `number`
 {:#members:minheight}
 
 
@@ -365,8 +368,8 @@ Sets the min Height for resizing
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -382,14 +385,16 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
 //To set minHeight API value during initialization  
-        $("#resizing").ejResizable({ minHeight: null });                                * {% endhighlight %}
+        $("#resizing").ejResizable({ minHeight: null });                                
+   
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -397,7 +402,8 @@ Example
 //Get or set the minHeight API, after initialization:
         //Gets the minHeight value  
         $("#resizing").ejResizable('option', 'minHeight');
-                  {% endhighlight %}
+                  
+  {% endhighlight %}
 
 
 
@@ -405,7 +411,7 @@ Example
 
 
 
-### minWidth<span class="type-signature type number">number</span>
+### minWidth `number`
 {:#members:minwidth}
 
 
@@ -420,8 +426,8 @@ Sets the min Width for resizing
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -437,14 +443,16 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
 //To set minWidth API value during initialization  
-        $("#resizing").ejResizable({ minWidth: null });                         * {% endhighlight %}
+        $("#resizing").ejResizable({ minWidth: null });                         
+     
+  {% endhighlight %}
 
 
 {% highlight html %}
@@ -452,7 +460,9 @@ Example
 //Get or set the minWidth API, after initialization:
         //Gets the minWidth value  
         $("#resizing").ejResizable('option', 'minWidth');
-                   {% endhighlight %}
+                   
+                   
+{% endhighlight %}
 
 
 
@@ -460,7 +470,7 @@ Example
 
 
 
-### scope<span class="type-signature type string">string</span>
+### scope `string`
 {:#members:scope}
 
 
@@ -475,8 +485,8 @@ Used to group sets of resizeable items.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -492,14 +502,16 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
 //To set scope API value during initialization  
-        $("#resizing").ejResizable({ scope: 'default' });                               * {% endhighlight %}
+        $("#resizing").ejResizable({ scope: 'default' });                               
+     
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -507,7 +519,8 @@ Example
 //Get or set the scope API, after initialization:
         //Gets the scope value  
         $("#resizing").ejResizable('option', 'scope');
-                      {% endhighlight %}
+                     
+ {% endhighlight %}
 
 
 
@@ -522,7 +535,7 @@ Example
 
 
 
-### _destroy<span class="signature">()</span>
+### _destroy()
 {:#methods:_destroy}
 
 
@@ -538,8 +551,8 @@ destroy in the Resizable.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -550,7 +563,9 @@ Example
 // Create resizingObj
 var resizingObj  = $("#resizing").data("ejResizable");
 resizingObj.destroy(); 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -582,7 +597,7 @@ This event is triggered when the widget destroys.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -590,19 +605,19 @@ This event is triggered when the widget destroys.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the autocomplete model</td>
+<td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -610,8 +625,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -619,7 +634,9 @@ Example
 //destroy event for Resizable
 $("#resizing").ejResizable({ 
         destroy: function(args) {}
-});      {% endhighlight %}
+});     
+
+ {% endhighlight %}
 
 
 
@@ -644,7 +661,7 @@ This event is triggered when resized.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -652,19 +669,19 @@ This event is triggered when resized.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the autocomplete model</td>
+<td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -672,8 +689,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -681,24 +698,18 @@ Example
 //helper event for Resizable
 $("#resizing").ejResizable({ 
         helper: function () {
-               return $('{% endhighlight %}
-
-
-
-
-<pre>
-').html("resizable").appendTo(document.body);}
+               return $('<pre>').html("resizable").appendTo(document.body);}
 });      
 
+{% endhighlight %}
 
 
 
 
 
 
-### {% highlight html %}
-resize{% endhighlight %}
-{:#events:}
+### resize
+{:#events:resize}
 
 
 
@@ -715,7 +726,7 @@ This event is triggered when the resizing in progress.{% endhighlight %}
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -723,19 +734,19 @@ This event is triggered when the resizing in progress.{% endhighlight %}
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the autocomplete model</td>
+<td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -743,8 +754,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -777,7 +788,7 @@ This event is triggered when the resizing is start.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -785,19 +796,19 @@ This event is triggered when the resizing is start.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the autocomplete model</td>
+<td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -805,8 +816,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -839,7 +850,7 @@ This event is triggered when the resizing is stop.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -847,19 +858,19 @@ This event is triggered when the resizing is stop.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the autocomplete model</td>
+<td class="description">returns the autocomplete model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -867,8 +878,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejToggleButton
+description: API reference for ejToggleButton
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: ToggleButton, ejToggleButton, syncfusion, ToggleButton api  
 ---
 
 # ejToggleButton
@@ -16,17 +16,23 @@ The Toggle Button allows you to perform the toggle option by using checked and u
 
 
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejToggleButton()
+
+{% endhighlight %}
 
 
-$(element).ejToggleButton<span class="signature">()</span>
 
 
 
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -43,8 +49,7 @@ $('#toggle').ejToggleButton({defaultText:"Play",activeText:"Pause"});
 
 
 
-Requires
-{:.require}
+#### Requires
 
 
 * module:jQuery
@@ -61,7 +66,7 @@ Requires
 
 
 
-### activePrefixIcon<span class="type-signature type string">string</span>
+### activePrefixIcon `string`
 {:#members:activeprefixicon}
 
 
@@ -70,8 +75,8 @@ Requires
 Specify the activePrefixIcon to toggle button to achieve custom theme.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -80,8 +85,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -102,7 +107,7 @@ Example
 
 
 
-### activeSuffixIcon<span class="type-signature type string">string</span>
+### activeSuffixIcon `string`
 {:#members:activesuffixicon}
 
 
@@ -111,8 +116,8 @@ Example
 Specify the activeSuffixIcon to toggle button to achieve custom theme.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -121,8 +126,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -142,7 +147,7 @@ Example
 
 
 
-### activeText<span class="type-signature type string">string</span>
+### activeText `string`
 {:#members:activetext}
 
 
@@ -151,8 +156,8 @@ Example
 Specifies the activeText of the ToggleButton.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -161,8 +166,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -173,12 +178,13 @@ Example
 //To set activeText API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});                                                   
 </script> 
-    {% endhighlight %}
+    
+ {% endhighlight %}
 
 
 
 
-### contentType<span class="type-signature type enum">enum</span>
+### contentType `enum`
 {:#members:contenttype}
 
 
@@ -187,8 +193,8 @@ Example
 Specifies the contentType of the ToggleButton. See <a href="global.html#ContentType">ContentType</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -197,8 +203,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -214,7 +220,7 @@ Example
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -223,8 +229,8 @@ Example
 Specify the CSS class to toggle button to achieve custom theme.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -233,8 +239,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -250,7 +256,7 @@ Example
 
 
 
-### defaultPrefixIcon<span class="type-signature type string">string</span>
+### defaultPrefixIcon `string`
 {:#members:defaultprefixicon}
 
 
@@ -259,8 +265,8 @@ Example
 Specify the defaultPrefixIcon to toggle button to achieve custom theme.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -269,8 +275,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -291,7 +297,7 @@ Example
 
 
 
-### defaultSuffixIcon<span class="type-signature type string">string</span>
+### defaultSuffixIcon `string`
 {:#members:defaultsuffixicon}
 
 
@@ -300,8 +306,8 @@ Example
 Specify the defaultSuffixIcon to toggle button to achieve custom theme.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -310,8 +316,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -332,7 +338,7 @@ Example
 
 
 
-### defaultText<span class="type-signature type string">string</span>
+### defaultText `string`
 {:#members:defaulttext}
 
 
@@ -341,8 +347,8 @@ Example
 Specifies the defaultText of the ToggleButton.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -351,8 +357,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -363,12 +369,13 @@ Example
 //To set defaultText API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});                                           
 </script> 
-            {% endhighlight %}
+            
+  {% endhighlight %}
 
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -377,8 +384,8 @@ Example
 Specifies the state of the ToggleButton.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -387,8 +394,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -399,12 +406,13 @@ Example
 //To set enabled API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",enabled: true });                                            
 </script> 
-            {% endhighlight %}
+           
+ {% endhighlight %}
 
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -413,8 +421,8 @@ Example
 Specify the enablePersistence to Togglebutton to save current model value to browser cookies for state maintains
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -423,8 +431,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -440,7 +448,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -449,8 +457,8 @@ Example
 Specify the Right to Left Direction to Togglebutton
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -459,8 +467,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -476,7 +484,7 @@ Example
 
 
 
-### height<span class="type-signature type string">String</span>
+### height `string`
 {:#members:height}
 
 
@@ -485,8 +493,8 @@ Example
 Specifies the height of the ToggleButton.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -495,8 +503,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -511,7 +519,7 @@ Example
 
 
 
-### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes `object`
 {:#members:htmlattributes}
 
 
@@ -520,8 +528,8 @@ Example
 Specifies the HTML Attributes of the ToggleButton
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -530,8 +538,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -547,7 +555,7 @@ Example
 
 
 
-### imagePosition<span class="type-signature type enum">enum</span>
+### imagePosition `enum`
 {:#members:imageposition}
 
 
@@ -556,8 +564,8 @@ Example
 Specifies the image position of the ToggleButton. This image position is applicable only with the textandimage contentType property. The images can be positioned in both imageLeft and imageRight options. See imagePositions
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -566,8 +574,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -590,7 +598,7 @@ Example
 
 
 
-### preventToggle<span class="type-signature type boolean">boolean</span>
+### preventToggle `boolean`
 {:#members:preventtoggle}
 
 
@@ -599,8 +607,8 @@ Example
 Specifies the preventToggle of the ToggleButton.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -609,8 +617,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -621,12 +629,12 @@ Example
 //To set preventToggle API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",preventToggle: false});                                              
 </script> 
-            {% endhighlight %}
+ {% endhighlight %}
 
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -635,8 +643,8 @@ Example
 Specify the rounded corner to Togglebutton
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -645,8 +653,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -662,7 +670,7 @@ Example
 
 
 
-### size<span class="type-signature type enum">enum</span>
+### size `enum`
 {:#members:size}
 
 
@@ -671,8 +679,8 @@ Example
 Specifies the size of the ToggleButton. See <a href="global.html#ButtonSize">ButtonSize</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -681,8 +689,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -698,7 +706,7 @@ Example
 
 
 
-### toggleState<span class="type-signature type boolean">boolean</span>
+### toggleState `boolean`
 {:#members:togglestate}
 
 
@@ -707,8 +715,8 @@ Example
 Specifies the toggleState of the ToggleButton.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -717,8 +725,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -734,7 +742,7 @@ Example
 
 
 
-### type<span class="type-signature type enum">enum</span>
+### type `enum`
 {:#members:type}
 
 
@@ -743,8 +751,8 @@ Example
 Specifies the type of the ToggleButton. See <a href="global.html#ButtonType">ButtonType</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -753,8 +761,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -770,7 +778,7 @@ Example
 
 
 
-### width<span class="type-signature type string">String</span>
+### width `string`
 {:#members:width}
 
 
@@ -779,8 +787,8 @@ Example
 Specifies the width of the ToggleButton.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -789,8 +797,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -801,7 +809,7 @@ Example
 //To set width API value during initialization  
         $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause",width: "100px" });                                           
 </script> 
-                    {% endhighlight %}
+ {% endhighlight %}
 
 
 
@@ -810,7 +818,7 @@ Example
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -820,25 +828,26 @@ To destroy the toggle button
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
-<input id="toggle" type="checkbox" / > 
+<input id="toggle" type="checkbox" /> 
  
 <script>
 // Create toggle button
 $("#toggle").ejToggleButton({defaultText:"Play",activeText:"Pause"});
 var toggleObj = $("#toggle").data("ejToggleButton");
 toggleObj.destroy(); // destroy the toggle button
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<input id="toggle" type="checkbox" / > 
+<input id="toggle" type="checkbox" /> 
  
 <script>
 // destroy the toggle button
@@ -849,7 +858,7 @@ $("#toggle").ejToggleButton("destroy");
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -859,13 +868,13 @@ To disable the toggle button
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
-<input id="toggle" type="checkbox" / > 
+<input id="toggle" type="checkbox" /> 
  
 <script>
 // Create toggle button
@@ -877,7 +886,7 @@ toggleObj.disable(); // disable the toggle button
 
 {% highlight html %}
  
-<input id="toggle" type="checkbox" / > 
+<input id="toggle" type="checkbox" /> 
  
 <script>
 // disable the toggle button
@@ -888,7 +897,7 @@ $("#toggle").ejToggleButton("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -898,13 +907,13 @@ To enable the toggle button
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
  
-<input id="toggle" type="checkbox" / > 
+<input id="toggle" type="checkbox" /> 
  
 <script>
 // Create toggle button
@@ -916,7 +925,7 @@ toggleObj.enable(); // enable the toggle button
 
 {% highlight html %}
  
-<input id="toggle" type="checkbox" / > 
+<input id="toggle" type="checkbox" /> 
  
 <script>
 // enable the toggle button
@@ -944,7 +953,7 @@ Fires when ToggleButton control state is changed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -952,13 +961,13 @@ Fires when ToggleButton control state is changed successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from toggle button
+<td class="description">Event parameters from toggle button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -966,25 +975,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">return the toggle button checked state</td>
+<td class="description">return the toggle button checked state</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the toggle button model</td>
+<td class="description">returns the toggle button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -994,8 +1003,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1009,7 +1018,8 @@ $("#toggle").ejToggleButton({
    change: function (args) {}
 });  
 </script> 
-    {% endhighlight %}
+   
+{% endhighlight %}
 
 
 
@@ -1027,7 +1037,7 @@ Fires when ToggleButton control is clicked successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1035,13 +1045,13 @@ Fires when ToggleButton control is clicked successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from toggle button
+<td class="description">Event parameters from toggle button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1049,31 +1059,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">return the toggle button checked state</td>
+<td class="description">return the toggle button checked state</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the toggle button model</td>
+<td class="description">returns the toggle button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 status{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">return the toggle button state</td>
+<td class="description">return the toggle button state</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1083,8 +1093,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1098,7 +1108,8 @@ defaultText:"Play",activeText:"Pause",
    click: function (args) {}
 }); 
 </script> 
-     {% endhighlight %}
+     
+{% endhighlight %}
 
 
 
@@ -1116,7 +1127,7 @@ Fires when ToggleButton control is created successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1124,13 +1135,13 @@ Fires when ToggleButton control is created successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from toggle button
+<td class="description">Event parameters from toggle button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1138,19 +1149,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the toggle button model</td>
+<td class="description">returns the toggle button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1160,8 +1171,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1193,7 +1204,7 @@ Fires when ToggleButton control is destroyed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1201,13 +1212,13 @@ Fires when ToggleButton control is destroyed successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from toggle button
+<td class="description">Event parameters from toggle button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1215,19 +1226,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the toggle button model</td>
+<td class="description">returns the toggle button model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1237,8 +1248,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1252,7 +1263,8 @@ $("#toggle").ejToggleButton({
    destroy: function (args) {}
 });  
 </script> 
-    {% endhighlight %}
+
+ {% endhighlight %}
 
 
 

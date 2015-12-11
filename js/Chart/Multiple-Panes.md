@@ -9,17 +9,17 @@ documentation: ug
 
 # Multiple panes
 
-Chart area can be divided into multiple panes using the [rowDefinitions](../api/ejchart.html#members:rowdefinitions) and [columnDefinitions](../api/ejchart.html#members:rowdefinitions) properties.
+Chart area can be divided into multiple panes using the [`rowDefinitions`](../api/ejchart.html#members:rowdefinitions) and [`columnDefinitions`](../api/ejchart.html#members:rowdefinitions) properties.
 
 ### Row Definitions
 
-To split the chart area vertically into a number of rows, use [rowDefinitions](../api/ejchart.html#members:rowdefinitions) of the chart. 
+To split the chart area vertically into a number of rows, use [`rowDefinitions`](../api/ejchart.html#members:rowdefinitions) of the chart. 
 
-* You can allocate space for each row by using the [unit](../api/ejchart.html#members:rowdefinitions-unit) option that determines whether the chart area should be split by *percentage* or *pixels* for the given [rowHeight](../api/ejchart.html#members:rowdefinitions-rowheight) value of the rowDefinitions.
+* You can allocate space for each row by using the [`unit`](../api/ejchart.html#members:rowdefinitions-unit) option that determines whether the chart area should be split by *percentage* or *pixels* for the given [`rowHeight`](../api/ejchart.html#members:rowdefinitions-rowheight) value of the rowDefinitions.
  
-* To associate a vertical axis to a row, specify the rowDefintions **index** value to the [rowIndex](../api/ejchart.html#members:primaryyaxis-rowindex) property of the chart axis.
+* To associate a vertical axis to a row, specify the rowDefintions **index** value to the [`rowIndex`](../api/ejchart.html#members:primaryyaxis-rowindex) property of the chart axis.
 
-* To customize each row’s horizontal line, use [lineColor](../api/ejchart.html#members:rowdefinitions-linecolor) and [lineWidth](../api/ejchart.html#members:rowdefinitions-linewidth) property.
+* To customize each row’s horizontal line, use [`lineColor`](../api/ejchart.html#members:rowdefinitions-linecolor) and [`lineWidth`](../api/ejchart.html#members:rowdefinitions-linewidth) property.
 
 
 {% highlight js %}
@@ -70,7 +70,7 @@ Chart with multiple rows
 
 **Row Span**
 
-For spanning the vertical axis along multiple panes vertically, you can use [rowSpan](../api/ejchart.html#members:primaryyaxis-rowspan) property of axis. 
+For spanning the vertical axis along multiple panes vertically, you can use [`rowSpan`](../api/ejchart.html#members:primaryyaxis-rowspan) property of axis. 
 
 {% highlight js %}
 
@@ -112,11 +112,11 @@ Chart with row span
 
 ## Column Definitions
 
-To split the chart area horizontally into a number of columns, use [columnDefinitions](../api/ejchart.html#members:columndefinitions) of the chart.
+To split the chart area horizontally into a number of columns, use [`columnDefinitions`](../api/ejchart.html#members:columndefinitions) of the chart.
 
-* You can allocate space for each column by using the [unit](../api/ejchart.html#members:columndefinitions-unit) option that determines whether the chart area should be split by *percentage* or *pixels* for the given [columnWidth](../api/ejchart.html#members:columndefinitions-columnwidth) value of the columnDefinitions.
+* You can allocate space for each column by using the [`unit`](../api/ejchart.html#members:columndefinitions-unit) option that determines whether the chart area should be split by *percentage* or *pixels* for the given [`columnWidth`](../api/ejchart.html#members:columndefinitions-columnwidth) value of the columnDefinitions.
  
-* To associate a horizontal axis to a column, specify the columnDefintions **index** value to the [columnIndex](../api/ejchart.html#members:primaryxaxis-columnindex) property of the chart axis.
+* To associate a horizontal axis to a column, specify the columnDefintions **index** value to the [`columnIndex`](../api/ejchart.html#members:primaryxaxis-columnindex) property of the chart axis.
  
 {% highlight js %}
 
@@ -131,7 +131,7 @@ To split the chart area horizontally into a number of columns, use [columnDefini
                 }, {
                     //  Split second column of the chart area
                     unit : 'percentage',                 
-                    columnHeight : 50,
+                    columnWidth : 50,
                 }],
 
                 axes: [{
@@ -160,7 +160,7 @@ Chart with multiple columns
 
 **Column Span**
 
-For spanning the horizontal axis along multiple panes horizontally, you can use [columnSpan](../api/ejchart.html#members:primaryxaxis-columnspan) property of axis. 
+For spanning the horizontal axis along multiple panes horizontally, you can use [`columnSpan`](../api/ejchart.html#members:primaryxaxis-columnspan) property of axis. 
 
 {% highlight js %}
 

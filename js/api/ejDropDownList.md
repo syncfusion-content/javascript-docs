@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
 title: ejDropDownList
+description: API reference for ejDropDownList
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: DropDownList, ejDropDownList, syncfusion, DropDownList api
 ---
 
 # ejDropDownList
@@ -14,17 +14,18 @@ The DropDownList control provides a list of options to choose an item from the l
 
 
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejDropDownList()
+
+{% endhighlight %}
 
 
-$(element).ejDropDownList<span class="signature">()</span>
 
+#### Example
 
-
-
-
-
-Example
-{:.example}
 
 
 {% highlight html %}
@@ -60,13 +61,13 @@ $('#drpdwn').ejDropDownList({targetID: "carsList"});
    </select><script>
 // Creates the DropDownList
 $('#drpdwn').ejDropDownList();  
-</script> {% endhighlight %}
+</script> 
+{% endhighlight %}
 
 
 
 
-Requires
-{:.require}
+#### Requires
 
 
 * module:jQuery
@@ -89,7 +90,7 @@ Requires
 ## Members
 
 
-### cascadeTo<span class="type-signature type string">string</span>
+### cascadeTo `string`
 {:#members:cascadeto}
 
 
@@ -98,8 +99,8 @@ Requires
 The cascading DropDownLists is a series of two or more DropDownLists in which each DropDownList is filtered according to the previous DropDownList’s value.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -108,8 +109,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -157,7 +158,7 @@ Example
 {% endhighlight %}
 
 
-### caseSensitiveSearch<span class="type-signature type boolean">boolean</span>
+### caseSensitiveSearch `boolean`
 {:#members:casesensitivesearch}
 
 
@@ -166,8 +167,8 @@ Example
 Sets the case sensitivity of the search operation. It supports both enableFilterSearch and enableIncrementalSearch property.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -176,8 +177,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -203,7 +204,7 @@ Example
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -214,8 +215,8 @@ You can customize the appearance of the dropdown by using the cssClass property.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -224,8 +225,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -262,7 +263,7 @@ Example
 
 
 
-### dataSource<span class="type-signature type data">data</span>
+### dataSource `data`
 {:#members:datasource}
 
 
@@ -271,8 +272,8 @@ Example
 This property is used to serve data from the data services based on the query provided. To bind the data to the dropdown widget, the dataSource property is assigned with the instance of the ej.DataManager.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -281,8 +282,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -306,7 +307,7 @@ Example
 
 
 
-### delimiterChar<span class="type-signature type string">string</span>
+### delimiterChar `string`
 {:#members:delimiterchar}
 
 
@@ -315,8 +316,8 @@ Example
 Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled with the dropdown. When you enter the delimiter value, the texts after the delimiter are considered as a separate word or query. The delimiter string is a single character and must be a symbol. Mostly, the delimiter symbol is used as comma (,) or semi-colon (;) or any other special character.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -325,8 +326,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -356,7 +357,7 @@ Example
 {% endhighlight %}
 
 
-### enableAnimation<span class="type-signature type boolean">boolean</span>
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -364,8 +365,8 @@ Example
 The enabled Animation property uses the easeOutQuad animation to SlideDown and SlideUp the Popup list in 200 and 100 milliseconds, respectively.  
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -374,8 +375,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -405,7 +406,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -413,8 +414,8 @@ Example
 This property is used to indicate whether the DropDownList control responds to the user interaction or not. By default, the control is in the enabled mode and you can disable it by setting it to false. 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -423,8 +424,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -455,7 +456,7 @@ Example
 
 
 
-### enableIncrementalSearch<span class="type-signature type boolean">boolean</span>
+### enableIncrementalSearch `boolean`
 {:#members:enableincrementalsearch}
 
 
@@ -464,8 +465,8 @@ Example
 Specifies to perform incremental search for the selection of items from the DropDownList with the help of this property. This helps in selecting the item by using the typed character.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -474,8 +475,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -495,7 +496,7 @@ Example
 $("#drpdwn").ejDropDownList({targetID: "carsList",enableIncrementalSearch: true });
 </script>{% endhighlight %}
 
-### enableFilterSearch <span class="type-signature type boolean">boolean</span>
+### enableFilterSearch  `boolean`
 {:#members:enablefiltersearch}
 
 
@@ -504,8 +505,8 @@ $("#drpdwn").ejDropDownList({targetID: "carsList",enableIncrementalSearch: true 
 This property selects the item in the DropDownList when the item is entered in the Search textbox.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -514,8 +515,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -544,7 +545,7 @@ Example
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -553,8 +554,8 @@ Example
 Saves the current model value to the browser cookies for state maintenance. While refreshing the DropDownList control page, it retains the model value and it is applied from the browser cookies.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -563,8 +564,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -593,7 +594,7 @@ Example
     </script>
 {% endhighlight %}
 
-### enablePopupResize <span class="type-signature type boolean">boolean</span>
+### enablePopupResize  `boolean`
 {:#members:enablepopupresize}
 
 
@@ -602,8 +603,8 @@ Example
 This enables the resize handler to resize the popup to any size. 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -612,8 +613,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -638,7 +639,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -647,8 +648,8 @@ Example
 Sets the DropDownList textbox direction from right to left align.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -657,8 +658,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -682,7 +683,7 @@ Example
 {% endhighlight %}
 
 
-### enableSorting <span class="type-signature type boolean">boolean</span>
+### enableSorting  `boolean`
 {:#members:enableSorting}
 
 
@@ -691,8 +692,8 @@ Example
 This property is used to sort the Items in the DropDownList. By default, it sorts the items in an ascending order.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -701,8 +702,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -737,7 +738,7 @@ Example
 {% endhighlight %}
 
 
-### fields<span class="type-signature type object">object</span>
+### fields `object`
 {:#members:fields}
 
 
@@ -745,8 +746,8 @@ Example
 Specifies the mapping fields for the data items of the DropDownList.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -755,8 +756,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -782,7 +783,7 @@ Example
 
 
 
-### fields.groupBy<span class="type-signature type string">String</span>
+### fields.groupBy `string`
 {:#members:fields-groupby}
 
 
@@ -795,7 +796,7 @@ Used to group the items.
 
 
 
-### fields.htmlAttributes<span class="type-signature type object">Object</span>
+### fields.htmlAttributes `object`
 {:#members:fields-htmlattributes}
 
 
@@ -808,7 +809,7 @@ Defines the HTML attributes such as ID, class, and styles for the item.
 
 
 
-### fields.id<span class="type-signature type string">String</span>
+### fields.id `string`
 {:#members:fields-id}
 
 
@@ -820,7 +821,7 @@ Defines the ID for the tag.
 
 
 
-### fields.imageAttributes<span class="type-signature type string">String</span>
+### fields.imageAttributes `string`
 {:#members:fields-imageattributes}
 
 
@@ -832,7 +833,7 @@ Defines the image attributes such as height, width, styles, and so on.
 
 
 
-### fields.imageUrl<span class="type-signature type string">String</span>
+### fields.imageUrl `string`
 {:#members:fields-imageurl}
 
 
@@ -845,7 +846,7 @@ Defines the imageURL for the image location.
 
 
 
-### fields.selected<span class="type-signature type boolean">Boolean</span>
+### fields.selected `boolean`
 {:#members:fields-selected}
 
 
@@ -858,7 +859,7 @@ Defines the tag value to be selected initially.
 
 
 
-### fields.spriteCssClass<span class="type-signature type string">String</span>
+### fields.spriteCssClass `string`
 {:#members:fields-spritecssclass}
 
 
@@ -871,7 +872,7 @@ Defines the sprite css for the image tag.
 
 
 
-### fields.tableName<span class="type-signature type string">String</span>
+### fields.tableName `string`
 {:#members:fields-tablename}
 
 
@@ -884,7 +885,7 @@ Defines the table name for tag value or display text while rendering remote data
 
 
 
-### fields.text<span class="type-signature type string">String</span>
+### fields.text `string`
 {:#members:fields-text}
 
 
@@ -897,7 +898,7 @@ Defines the text content for the tag.
 
 
 
-### fields.value<span class="type-signature type string">String</span>
+### fields.value `string`
 {:#members:fields-value}
 
 
@@ -905,7 +906,7 @@ Defines the text content for the tag.
 
 Defines the tag value.
 
-### filterType  <span class="type-signature type enum">Enum</span>
+### filterType   `enum`
 {:#members:filterType}
 
 
@@ -914,8 +915,8 @@ Defines the tag value.
 When the enableFilterSearch property value is set to true, the values in the DropDownList shows the items starting with or containing the key word/letter typed in the Search textbox.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -924,8 +925,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -960,8 +961,8 @@ Example
 
 {% endhighlight %}
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -994,7 +995,7 @@ Example
 {% endhighlight %}
 
 
-### headerTemplate<span class="type-signature type string">string</span>
+### headerTemplate `string`
 {:#members:headertemplate}
 
 
@@ -1002,8 +1003,8 @@ Example
 Used to create visualized header for dropdown items
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1012,8 +1013,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1068,7 +1069,7 @@ Example
     </style>
 {% endhighlight %}
 
-### height<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### height `string`  `number`
 {:#members:height}
 
 
@@ -1077,18 +1078,18 @@ Example
 Defines the height of the DropDownList textbox.
 
 
-Default Value:
-{:.param}
-
-
-
-* Null
+#### Default Value
 
 
 
 
-Example
-{:.example}
+* null
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -1112,7 +1113,7 @@ Example
 {% endhighlight %}
 
 
-### htmlAttributes <span class="type-signature type object">Object</span> 
+### htmlAttributes  `object` 
 {:#members:htmlattributes}
 
 
@@ -1120,8 +1121,8 @@ Example
 It sets the given HTML attributes for the DropDownList control such as ID, name, disabled, etc.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1130,8 +1131,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1161,7 +1162,7 @@ Example
 {% endhighlight %}
 
 
-### itemsCount<span class="type-signature type number">number</span>
+### itemsCount `number`
 {:#members:itemscount}
 
 
@@ -1169,8 +1170,8 @@ Example
 Data can be fetched in the DropDownList control by using the DataSource, specifying the number of items.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1179,8 +1180,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1206,7 +1207,7 @@ Example
 {% endhighlight %}
 
 
-### maxPopupHeight <span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### maxPopupHeight  `string`  `number`
 {:#members:maxpopupheight}
 
 
@@ -1215,8 +1216,8 @@ Example
 Defines the maximum height of the suggestion box. This property restricts the maximum height of the popup when resize is enabled. 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1225,8 +1226,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1251,7 +1252,7 @@ Example
 {% endhighlight %}
 
 
-### minPopupHeight  <span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### minPopupHeight   `string`  `number`
 {:#members:minpopupheight }
 
 
@@ -1260,8 +1261,8 @@ Example
 Defines the minimum height of the suggestion box. This property restricts the minimum height of the popup when resize is enabled. 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1270,8 +1271,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1297,7 +1298,7 @@ Example
 
 {% endhighlight %}
 
-### maxPopupWidth   <span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### maxPopupWidth    `string`  `number`
 {:#members:maxpopupwidth }
 
 
@@ -1306,8 +1307,8 @@ Example
 Defines the maximum width of the suggestion box. This property restricts the maximum width of the popup when resize is enabled. 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1316,8 +1317,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1344,7 +1345,7 @@ Example
 
 {% endhighlight %}
 
-### minPopupWidth  <span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### minPopupWidth   `string`  `number`
 {:#members:minpopupwidth }
 
 
@@ -1353,8 +1354,8 @@ Example
 Defines the minimum height of the suggestion box. This property restricts the minimum height of the popup when resize is enabled. 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1363,8 +1364,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1391,7 +1392,7 @@ Example
 
 {% endhighlight %}
 
-### multiSelectMode   <span class="type-signature type enum">Enum</span> 
+### multiSelectMode `enum` 
 {:#members:multiselectmode }
 
 
@@ -1399,8 +1400,8 @@ Example
 With the help of this property, you can make a single or multi selection with the DropDownList and display the text in two modes, delimiter and visual mode. In delimiter mode, you can separate the items by using the delimiter character such as comma (,) or semi-colon (;) or any other special character. In the visual mode, the items are showcased like boxes with close icon in the textbox. 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1409,8 +1410,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1438,8 +1439,8 @@ Example
 
 {% endhighlight %}
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1470,7 +1471,7 @@ Example
 
 {% endhighlight %}
 
-### popupHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### popupHeight `string / number`
 {:#members:popupheight}
 
 
@@ -1479,8 +1480,8 @@ Example
 Defines the height of the suggestion popup box in the DropDownList control.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1489,8 +1490,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1519,7 +1520,7 @@ Example
 
 
 
-### popupWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### popupWidth `string / number`
 {:#members:popupwidth}
 
 
@@ -1528,8 +1529,8 @@ Example
 Defines the width of the suggestion popup box in the DropDownList control.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1538,8 +1539,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1570,7 +1571,7 @@ Example
 
 
 
-### query<span class="type-signature type object">object</span>
+### query `object`
 {:#members:query}
 
 
@@ -1579,8 +1580,8 @@ Example
 Specifies the query to retrieve the data from the DataSource.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1589,8 +1590,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1618,7 +1619,7 @@ Example
 
 
 
-### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly `boolean`
 {:#members:readonly}
 
 
@@ -1627,8 +1628,8 @@ Example
 Specifies that the DropDownList textbox values should be read-only.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1637,8 +1638,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1670,7 +1671,7 @@ Example
 
 
 
-### selectedIndex <span class="type-signature type number">number</span>
+### selectedIndex  `number`
 {:#members:selectedindex }
 
 
@@ -1679,8 +1680,8 @@ Example
 Specifies an item to be selected in the DropDownList.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1689,8 +1690,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1721,7 +1722,7 @@ Example
 
 
 
-### selectedIndices <span class="type-signature type integerarray">integerarray</span>
+### selectedIndices  `integerarray`
 {:#members:selectedindices}
 
 
@@ -1730,8 +1731,8 @@ Example
 Specifies the selectedItems for the DropDownList.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1740,8 +1741,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1773,7 +1774,7 @@ Example
 
 
 
-### showCheckbox<span class="type-signature type boolean">boolean</span>
+### showCheckbox `boolean`
 {:#members:showcheckbox}
 
 
@@ -1782,8 +1783,8 @@ Example
 Selects multiple items in the DropDownList with the help of the checkbox control. To achieve this, enable the showCheckbox option to true.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1792,8 +1793,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1824,7 +1825,7 @@ Example
 
 
 
-### showPopupOnLoad<span class="type-signature type boolean">boolean</span>
+### showPopupOnLoad `boolean`
 {:#members:showpopuponload}
 
 
@@ -1833,8 +1834,8 @@ Example
 DropDownList control is displayed with the popup seen.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1843,8 +1844,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1873,7 +1874,7 @@ Example
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -1882,8 +1883,8 @@ Example
 DropDownList textbox displayed with the rounded corner style.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1892,8 +1893,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1922,7 +1923,7 @@ Example
 {% endhighlight %}
 
 
-### sortOrder <span class="type-signature type enum">enum</span>
+### sortOrder  `enum`
 {:#members:sortorder}
 
 
@@ -1931,8 +1932,8 @@ Example
 When the enableSorting property value is set to true, this property helps to sort the items either in ascending or descending order
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1941,8 +1942,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1977,7 +1978,7 @@ Example
 {% endhighlight %}
 
 
-### targetID<span class="type-signature type string">string</span>
+### targetID `string`
 {:#members:targetid}
 
 
@@ -1985,8 +1986,8 @@ Example
 Specifies the targetID for the DropDownList’s items.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1995,8 +1996,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2022,7 +2023,7 @@ Example
 
 
 
-### template<span class="type-signature type string">string</span>
+### template `string`
 {:#members:template}
 
 
@@ -2030,8 +2031,8 @@ Example
 By default, you can add any text or image to the DropDownList item. To customize the item layout or to create your own visualized elements, you can use this template support.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2040,8 +2041,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2081,7 +2082,7 @@ Example
 
 
 
-### text<span class="type-signature type string">string</span>
+### text `string`
 {:#members:text}
 
 
@@ -2089,8 +2090,8 @@ Example
 Defines the text value that is displayed in the DropDownList textbox.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2099,8 +2100,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2132,14 +2133,14 @@ Example
 
 
 
-### validationMessage<span class="type-signature type object">object</span>
+### validationMessage `object`
 {:#members:validationmessage}
 
 Sets the jQuery validation error message in the DropDownList
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2148,8 +2149,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2183,7 +2184,7 @@ Example
 
 
 
-### validationRules<span class="type-signature type object">object</span>
+### validationRules `object`
 {:#members:validationrules}
 
 
@@ -2192,8 +2193,8 @@ Example
 Sets the jquery validation rules in the Dropdownlist.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2202,8 +2203,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2236,7 +2237,7 @@ Example
 
 
 
-### value<span class="type-signature type string">string</span>
+### value `string`
 {:#members:value}
 
 
@@ -2244,18 +2245,18 @@ Example
 Specifies the value (text content) for the DropDownList control.
 
 
-Default Value:
-{:.param}
-
-
-
-* Null
+#### Default Value
 
 
 
 
-Example
-{:.example}
+* null
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -2289,7 +2290,7 @@ Example
 
 
 
-### watermarkText<span class="type-signature type string">string</span>
+### watermarkText `string`
 {:#members:watermarktext}
 
 
@@ -2298,18 +2299,18 @@ Example
 Specifies a short hint that describes the expected value of the DropDownList control.
 
 
-Default Value:
-{:.param}
-
-
-
-* Null
+#### Default Value
 
 
 
 
-Example
-{:.example}
+* null
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -2339,7 +2340,7 @@ Example
 
 
 
-### width<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### width `string`  `number`
 {:#members:width}
 
 
@@ -2348,18 +2349,18 @@ Example
 Defines the width of the DropDownList textbox.
 
 
-Default Value:
-{:.param}
-
-
-
-* Null
+#### Default Value
 
 
 
 
-Example
-{:.example}
+* null
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -2388,7 +2389,7 @@ Example
 {% endhighlight %}
 
 
-### virtualScrollMode <span class="type-signature type string">String</span> 
+### virtualScrollMode  `string` 
 {:#members:virtualscrollmode}
 
 
@@ -2400,8 +2401,8 @@ This property enables the data to load dynamically in two ways.
 In normal mode, the data is loaded only to the corresponding page (display items). When scrolling some other position, it enables the load on demand with the DropDownList. 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2410,8 +2411,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2439,8 +2440,8 @@ Example
 
 In continuous mode, the data items are loaded from the remote when scroll handle reaches the end of the scrollbar like infinity scrolling. 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2471,7 +2472,7 @@ Example
 
 
 
-### addItem<span class="signature">()</span>
+### addItem()
 {:#methods:additem}
 
 
@@ -2481,8 +2482,8 @@ Adding a single item or an array of items into the DropDownList allows you to sp
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2512,8 +2513,8 @@ Example
 {% endhighlight %}
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2550,7 +2551,7 @@ Example
 
 {% endhighlight %}
 
-### checkAll<span class="signature">()</span>
+### checkAll()
 {:#methods:checkall}
 
 
@@ -2559,8 +2560,8 @@ This method is used to select all the items in the DropDownList.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2626,7 +2627,7 @@ Example
 
 
 
-### clearText<span class="signature">()</span>
+### clearText()
 {:#methods:cleartext}
 
 
@@ -2636,8 +2637,8 @@ Clears the text in the DropDownList textbox.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2698,7 +2699,7 @@ Example
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -2708,8 +2709,8 @@ Destroys the DropDownList widget.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2771,7 +2772,7 @@ Example
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -2780,8 +2781,8 @@ This property is used to disable the DropDownList widget.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2843,7 +2844,7 @@ Example
 
 
 
-### disableItemsByIndices<span class="signature">()</span>
+### disableItemsByIndices()
 {:#methods:disableitembyindices}
 
 
@@ -2852,8 +2853,8 @@ This property disables the set of items in the DropDownList.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2924,7 +2925,7 @@ Example
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -2934,8 +2935,8 @@ This property enables the DropDownList control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2998,7 +2999,7 @@ Example
 
 
 
-### enableItemsByIndices<span class="signature">()</span>
+### enableItemsByIndices()
 {:#methods:enableitembyindices}
 
 
@@ -3008,8 +3009,8 @@ Enables an Item or set of Items that are disabled in the DropDownList
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3080,7 +3081,7 @@ Example
 {% endhighlight %}
 
 
-### getListData<span class="signature">()</span>
+### getListData()
 {:#methods:getlistdata}
 
 
@@ -3090,8 +3091,8 @@ This method is used to retrieve the items that are bound with the DropDownList.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3162,7 +3163,7 @@ Example
 
 
 
-### getSelectedItem<span class="signature">()</span>
+### getSelectedItem()
 {:#methods:getselecteditem}
 
 
@@ -3172,8 +3173,8 @@ This method is used to get the selected items in the DropDownList.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3211,7 +3212,7 @@ Example
 
 
 
-### getSelectedValue<span class="signature">()</span>
+### getSelectedValue()
 {:#methods:getselectedvalue}
 
 
@@ -3221,8 +3222,8 @@ This method is used to retrieve the items value that are selected in the DropDow
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3291,7 +3292,7 @@ Example
 
 
 
-### hidePopup<span class="signature">()</span>
+### hidePopup()
 {:#methods:hidepopup}
 
 
@@ -3301,8 +3302,8 @@ This method hides the suggestion popup in the DropDownList.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3366,7 +3367,7 @@ Example
 
 
 
-### selectItemsByIndices<span class="signature">()</span>
+### selectItemsByIndices(indices)
 {:#methods:selectitembyindices}
 
 
@@ -3376,8 +3377,8 @@ This method is used to select the list of items in the DropDownList through the 
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3438,7 +3439,7 @@ Example
 {% endhighlight %}
 
 
-### selectItemByText<span class="signature">()</span>
+### selectItemByText(text)
 {:#methods:selectitembytext}
 
 
@@ -3447,8 +3448,8 @@ This method is used to select an item in the DropDownList by using the given tex
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %} 
@@ -3496,7 +3497,7 @@ Example
 {% endhighlight %}
 
 
-### selectItemByValue<span class="signature">()</span>
+### selectItemByValue(value)
 {:#methods:selectitembyvalue}
 
 
@@ -3506,8 +3507,8 @@ This method is used to select an item in the DropDownList by using the given val
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3562,7 +3563,7 @@ Example
 
 
 
-### showPopup<span class="signature">()</span>
+### showPopup()
 {:#methods:showpopup}
 
 
@@ -3572,8 +3573,8 @@ This method shows the DropDownList control with the suggestion popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3635,7 +3636,7 @@ Example
 
 
 
-### unCheckAll<span class="signature">()</span>
+### unCheckAll()
 {:#methods:uncheckall}
 
 
@@ -3645,8 +3646,8 @@ This method is used to unselect all the items in the DropDownList.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3700,7 +3701,7 @@ Example
 
 
 
-### unselectItemsByIndices<span class="signature">()</span>
+### unselectItemsByIndices(indices)
 {:#methods:unselectitembyindices}
 
 
@@ -3710,8 +3711,8 @@ This method is used to unselect the list of items in the DropDownList through In
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3770,7 +3771,7 @@ Example
 
 
 
-### unselectItemByText<span class="signature">()</span>
+### unselectItemByText(text)
 {:#methods:unselectitembytext}
 
 
@@ -3780,8 +3781,8 @@ This method is used to unselect an item in the DropDownList by using the given t
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3840,7 +3841,7 @@ Example
 
 
 
-### unselectItemByValue<span class="signature">()</span>
+### unselectItemByValue(value)
 {:#methods:unselectitembyvalue}
 
 
@@ -3850,8 +3851,8 @@ This method is used to unselect an item in the DropDownList by using the given v
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3927,7 +3928,7 @@ Fires the action when the list of items is bound to the DropDownList by xhr post
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3935,56 +3936,56 @@ Fires the action when the list of items is bound to the DropDownList by xhr post
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.count{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Returns number of times trying to fetch the data</td>
+<td class="description">Returns number of times trying to fetch the data</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.query{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the query for data retrieval </td>
+<td class="description">Returns the query for data retrieval </td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.request{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the query for data retrieval from the Database </td>
+<td class="description">Returns the query for data retrieval from the Database </td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.result{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description last">Returns the number of items fetched from remote data</td>
+<td class="description">Returns the number of items fetched from remote data</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.xhr{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the requested data</td>
+<td class="description">Returns the requested data</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4028,7 +4029,7 @@ Fires the action when the xhr post calling failed on remote data binding with th
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4036,38 +4037,38 @@ Fires the action when the xhr post calling failed on remote data binding with th
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.error{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the error message</td>
+<td class="description">Returns the error message</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.query{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the query for data retrieval </td>
+<td class="description">Returns the query for data retrieval </td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4109,7 +4110,7 @@ Fires the action when the xhr post calling succeed on remote data binding with t
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4117,56 +4118,56 @@ Fires the action when the xhr post calling succeed on remote data binding with t
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.count{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Returns number of times trying to fetch the data</td>
+<td class="description">Returns number of times trying to fetch the data</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.query{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the query for data retrieval </td>
+<td class="description">Returns the query for data retrieval </td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.request{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the query for data retrieval from the Database </td>
+<td class="description">Returns the query for data retrieval from the Database </td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.result{% endhighlight %}</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description last">Returns the number of items fetched from remote data</td>
+<td class="description">Returns the number of items fetched from remote data</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.xhr{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the requested data</td>
+<td class="description">Returns the requested data</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4211,7 +4212,7 @@ Fires the action before the popup is ready to hide.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4219,38 +4220,38 @@ Fires the action before the popup is ready to hide.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected text</td>
+<td class="description">returns the selected text</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected value</td>
+<td class="description">returns the selected value</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4298,7 +4299,7 @@ Fires the action before the popup is ready to be displayed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4306,38 +4307,38 @@ Fires the action before the popup is ready to be displayed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected text</td>
+<td class="description">returns the selected text</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected value</td>
+<td class="description">returns the selected value</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4381,7 +4382,7 @@ Fires when the cascading happens between two DropDownList exactly after the valu
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4389,44 +4390,44 @@ Fires when the cascading happens between two DropDownList exactly after the valu
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.cascadeModel{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the cascading dropdown model.</td>
+<td class="description">Returns the cascading dropdown model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.cascadeValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current selected value in first dropdown.</td>
+<td class="description">returns the current selected value in first dropdown.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.requiresDefaultFilter{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">returns the default filter action for second dropdown data should happen or not.</td>
+<td class="description">returns the default filter action for second dropdown data should happen or not.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4490,7 +4491,7 @@ Fires the action when the DropDownList control’s value is changed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4498,56 +4499,56 @@ Fires the action when the DropDownList control’s value is changed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the selected item with checkbox checked or not.</td>
+<td class="description">Returns the selected item with checkbox checked or not.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected item ID.</td>
+<td class="description">Returns the selected item ID.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.selectedText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected item text.</td>
+<td class="description">Returns the selected item text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected text.</td>
+<td class="description">Returns the selected text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected value.</td>
+<td class="description">Returns the selected value.</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4594,7 +4595,7 @@ Fires the action when the list item checkbox value is changed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4602,56 +4603,56 @@ Fires the action when the list item checkbox value is changed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the selected item with checkbox checked or not.</td>
+<td class="description">Returns the selected item with checkbox checked or not.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected item ID.</td>
+<td class="description">Returns the selected item ID.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.selectedText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected item text.</td>
+<td class="description">Returns the selected item text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected text.</td>
+<td class="description">Returns the selected text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected value.</td>
+<td class="description">Returns the selected value.</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4700,7 +4701,7 @@ Fires the action once the DropDownList is created.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4708,26 +4709,26 @@ Fires the action once the DropDownList is created.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4772,7 +4773,7 @@ Fires the action when the list items is bound to the DropDownList.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4780,32 +4781,32 @@ Fires the action when the list items is bound to the DropDownList.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the data that is bound to DropDownList</td>
+<td class="description">returns the data that is bound to DropDownList</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4848,7 +4849,7 @@ Fires the action when the DropDownList is destroyed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4856,26 +4857,26 @@ Fires the action when the DropDownList is destroyed.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">its value is set as true,if the event should be canceled; otherwise, false.</td>
+<td class="description">its value is set as true,if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -4923,7 +4924,7 @@ Fires the action, once the popup is closed
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -4931,38 +4932,38 @@ Fires the action, once the popup is closed
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected text</td>
+<td class="description">returns the selected text</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected value</td>
+<td class="description">returns the selected value</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -5007,7 +5008,7 @@ Fires the action, when the popup is resized.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -5015,32 +5016,32 @@ Fires the action, when the popup is resized.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the data from the resizable plugin.</td>
+<td class="description">Returns the data from the resizable plugin.</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -5081,7 +5082,7 @@ Fires the action, once the popup is opened.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -5089,38 +5090,38 @@ Fires the action, once the popup is opened.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected text</td>
+<td class="description">returns the selected text</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the selected value</td>
+<td class="description">returns the selected value</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -5164,7 +5165,7 @@ Fires the action, when resizing a popup starts.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -5172,32 +5173,32 @@ Fires the action, when resizing a popup starts.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the data from the resizable plugin.</td>
+<td class="description">Returns the data from the resizable plugin.</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -5241,7 +5242,7 @@ Fires the action, when the popup resizing is stopped.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -5249,32 +5250,32 @@ Fires the action, when the popup resizing is stopped.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the data from the resizable plugin.</td>
+<td class="description">Returns the data from the resizable plugin.</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -5317,7 +5318,7 @@ Fires the action before filtering the list items that starts in the DropDownList
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -5325,44 +5326,44 @@ Fires the action before filtering the list items that starts in the DropDownList
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.items{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the data bound to the DropDownList.</td>
+<td class="description">Returns the data bound to the DropDownList.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.selectedText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected item text.</td>
+<td class="description">Returns the selected item text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.searchString{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the search string typed in search box.</td>
+<td class="description">Returns the search string typed in search box.</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -5410,7 +5411,7 @@ Fires the action, when the list of item is selected.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -5418,58 +5419,55 @@ Fires the action, when the list of item is selected.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.isChecked{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the selected item with checkbox checked or not.</td>
+<td class="description">Returns the selected item with checkbox checked or not.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected item ID.</td>
+<td class="description">Returns the selected item ID.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the DropDownList model</td>
+<td class="description">returns the DropDownList model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.selectedText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected item text.</td>
+<td class="description">Returns the selected item text.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.text{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected text.</td>
+<td class="description">Returns the selected text.</td>
 </tr>
-<tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the selected value.</td>
+<td class="description">Returns the selected value.</td>
 </tr>
-<tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
 
 
 {% highlight html %}

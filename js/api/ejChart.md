@@ -3525,6 +3525,77 @@ commonSeriesOptions :{tooltip :{border :{ width : 2}}}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dmvqb51g)
 
+### commonSeriesOptions.tooltip.rx<span class="type-signature type number">number</span>
+{:#members:commonseriesoptions-tooltip-rx}
+
+
+
+
+Customize the corner radius of the tooltip rectangle.
+
+
+Default value:
+{:.param}
+
+
+
+0
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{tooltip :{rx: 10}}                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+### commonSeriesOptions.tooltip.ry<span class="type-signature type number">number</span>
+{:#members:commonseriesoptions-tooltip-ry}
+
+
+
+
+Customize the corner radius of the tooltip rectangle.
+
+
+Default value:
+{:.param}
+
+
+
+0
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{tooltip :{ry: 10}}                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
 
 ### commonSeriesOptions.tooltip.duration `string`
 {:#members:commonseriesoptions-tooltip-duration}
@@ -7898,6 +7969,38 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g3q30pdl)
 
 
 
+### palette<span class="type-signature type array">array</span>
+{:#members:palette}
+
+
+
+
+Palette is used to store the series fill color in array and apply the color to series collection in the order of series index.
+
+
+Default value:
+{:.param}
+null
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   palette: ["#34e2d3", "#36fe3a", "#dede3d"]          
+
+});
+
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0vka45gc)
 
 ### Margin `object`
 {:#members:margin}
@@ -18030,6 +18133,80 @@ series : [{tooltip : {border : { width :2} }]
  {% endhighlight %}
 
 
+### series.tooltip.rx<span class="type-signature type number">number</span>
+{:#members:series-tooltip-rx}
+
+
+
+
+Customize the corner radius of the tooltip rectangle.
+
+
+Default value:
+{:.param}
+
+
+
+0
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{
+    tooltip :{ry: 10}
+    }]                 
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+### series.tooltip.ry<span class="type-signature type number">number</span>
+{:#members:series-tooltip-ry}
+
+
+
+
+Customize the corner radius of the tooltip rectangle.
+
+
+Default value:
+{:.param}
+
+
+
+0
+
+
+
+
+Example
+{:.example}
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{
+    tooltip :{ry: 10}
+    }]                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
 
 
 ### series.tooltip.duration `string`

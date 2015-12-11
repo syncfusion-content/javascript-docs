@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejRotator
+description: API reference for ejRotator
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: Rotator, ejRotator, syncfusion, Rotator api  
 ---
 
 # ejRotator
@@ -19,23 +19,28 @@ The Rotator control displays a set of slides. Each slide may contain images or i
 
 
 
+#### Syntax
 
+{% highlight js %}
 
+$(element).ejRotator()
 
-$(element).ejRotator<span class="signature">()</span>
-
-
-
-
-
-
-
+{% endhighlight %}
 
 
 
 
-Example
-{:.example}
+
+
+
+
+
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -53,7 +58,8 @@ $(function (){
 // simple Rotator creation
 $("#sliderContent").ejRotator();
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
@@ -61,8 +67,8 @@ $("#sliderContent").ejRotator();
 
 
 
-Requires
-{:.require}
+#### Requires
+
 
 
 
@@ -93,7 +99,7 @@ Requires
 
 
 
-### allowKeyboardNavigation<span class="type-signature type boolean">boolean</span>
+### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
 
@@ -108,8 +114,8 @@ Turns on keyboard interaction with the Rotator items. You must set this property
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -125,8 +131,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -149,7 +155,7 @@ Example
 
 
 
-### animationSpeed<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### animationSpeed `string`  `number`
 {:#members:animationspeed}
 
 
@@ -164,8 +170,8 @@ Sets the animationSpeed of slide transition.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -181,8 +187,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -205,7 +211,7 @@ Example
 
 
 
-### animationType<span class="type-signature type string">string</span>
+### animationType `string`
 {:#members:animationtype}
 
 
@@ -220,8 +226,8 @@ Specifies the animationType type for the Rotator Item. animationType options inc
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -237,8 +243,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -261,7 +267,7 @@ Example
 
 
 
-### circularMode<span class="type-signature type boolean">boolean</span>
+### circularMode `boolean`
 {:#members:circularmode}
 
 
@@ -276,8 +282,8 @@ Enables the circular mode item rotation.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -293,8 +299,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -317,7 +323,7 @@ Example
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -332,8 +338,8 @@ Specify the CSS class to Rotator to achieve custom theme.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -349,8 +355,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -373,7 +379,7 @@ Example
 
 
 
-### dataSource<span class="type-signature type object">object</span>
+### dataSource `object`
 {:#members:datasource}
 
 
@@ -388,8 +394,8 @@ Specify the list of data which contains a set of data fields. Each data value is
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -405,8 +411,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -424,7 +430,7 @@ Example
 
 
 
-### delay<span class="type-signature type number">number</span>
+### delay `number`
 {:#members:delay}
 
 
@@ -439,8 +445,8 @@ Sets the delay between the Rotator Items move after the slide transition.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -456,8 +462,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -480,7 +486,7 @@ Example
 
 
 
-### displayItemsCount<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### displayItemsCount `string`  `number`
 {:#members:displayitemscount}
 
 
@@ -495,8 +501,8 @@ Specifies the number of Rotator Items to be displayed.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -512,8 +518,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -536,7 +542,7 @@ Example
 
 
 
-### enableAutoPlay<span class="type-signature type boolean">boolean</span>
+### enableAutoPlay `boolean`
 {:#members:enableautoplay}
 
 
@@ -551,8 +557,8 @@ Rotates the Rotator Items continuously without user interference.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -568,8 +574,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -592,7 +598,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -607,8 +613,8 @@ Enables or disables the Rotator control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -624,8 +630,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -648,7 +654,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -663,8 +669,8 @@ Specifies right to left transition of slides.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -680,8 +686,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -704,7 +710,7 @@ Example
 
 
 
-### fields<span class="type-signature type object">object</span>
+### fields `object`
 {:#members:fields}
 
 
@@ -719,8 +725,8 @@ Defines mapping fields for the data items of the Rotator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -736,8 +742,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -755,7 +761,7 @@ Example
 
 
 
-### fields.linkAttribute<span class="type-signature type string">String</span>
+### fields.linkAttribute `string`
 {:#members:fields-linkattribute}
 
 
@@ -777,7 +783,7 @@ Specifies a link for the image.
 
 
 
-### fields.targetAttribute<span class="type-signature type string">String</span>
+### fields.targetAttribute `string`
 {:#members:fields-targetattribute}
 
 
@@ -799,7 +805,7 @@ Specifies where to open a given link.
 
 
 
-### fields.text<span class="type-signature type string">String</span>
+### fields.text `string`
 {:#members:fields-text}
 
 
@@ -821,7 +827,7 @@ Specifies a caption for the image.
 
 
 
-### fields.thumbnailText<span class="type-signature type string">String</span>
+### fields.thumbnailText `string`
 {:#members:fields-thumbnailtext}
 
 
@@ -843,7 +849,7 @@ Specifies a caption for the thumbnail image.
 
 
 
-### fields.thumbnailUrl<span class="type-signature type string">String</span>
+### fields.thumbnailUrl `string`
 {:#members:fields-thumbnailurl}
 
 
@@ -865,7 +871,7 @@ Specifies the URL for an thumbnail image.
 
 
 
-### fields.url<span class="type-signature type string">String</span>
+### fields.url `string`
 {:#members:fields-url}
 
 
@@ -887,7 +893,7 @@ Specifies the URL for an image.
 
 
 
-### frameSpace<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### frameSpace `string`  `number`
 {:#members:framespace}
 
 
@@ -902,8 +908,8 @@ Sets the space between the Rotator Items.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -919,8 +925,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -943,7 +949,7 @@ Example
 
 
 
-### isResponsive<span class="type-signature type boolean">boolean</span>
+### isResponsive `boolean`
 {:#members:isresponsive}
 
 
@@ -958,8 +964,8 @@ Resizes the Rotator when the browser is resized.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -975,8 +981,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -999,7 +1005,7 @@ Example
 
 
 
-### navigateSteps<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### navigateSteps `string`  `number`
 {:#members:navigatesteps}
 
 
@@ -1014,8 +1020,8 @@ Specifies the number of Rotator Items to navigate on a single click (next/previo
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1031,8 +1037,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1055,7 +1061,7 @@ Example
 
 
 
-### orientation<span class="type-signature type enum">enum</span>
+### orientation `enum`
 {:#members:orientation}
 
 
@@ -1070,8 +1076,8 @@ Specifies the orientation for the Rotator control, that is, whether it must be r
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1087,8 +1093,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1111,7 +1117,7 @@ Example
 
 
 
-### pagerPosition<span class="type-signature type string">string</span> <span class="type-signature type enum">enum</span>
+### pagerPosition `string`  `enum`
 {:#members:pagerposition}
 
 
@@ -1126,8 +1132,8 @@ Specifies the position of the showPager in the Rotator Item. See <a href="global
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1143,8 +1149,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1167,7 +1173,7 @@ Example
 
 
 
-### query<span class="type-signature type string">string</span>
+### query `string`
 {:#members:query}
 
 
@@ -1182,8 +1188,8 @@ Retrieves data from remote data. This property is applicable only when a remote 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1205,7 +1211,7 @@ Default Value:
 
 
 
-### showCaption<span class="type-signature type boolean">boolean</span>
+### showCaption `boolean`
 {:#members:showcaption}
 
 
@@ -1220,8 +1226,8 @@ If the Rotator Item is an image, you can specify a caption for the Rotator Item.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1237,8 +1243,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1261,7 +1267,7 @@ Example
 
 
 
-### showNavigateButton<span class="type-signature type boolean">boolean</span>
+### showNavigateButton `boolean`
 {:#members:shownavigatebutton}
 
 
@@ -1276,8 +1282,8 @@ Turns on or off the slide buttons (next and previous) in the Rotator Items. Slid
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1293,8 +1299,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1317,7 +1323,7 @@ Example
 
 
 
-### showPager<span class="type-signature type boolean">boolean</span>
+### showPager `boolean`
 {:#members:showpager}
 
 
@@ -1332,8 +1338,8 @@ Turns on or off the pager support in the Rotator control. The Pager is used to n
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1349,8 +1355,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1373,7 +1379,7 @@ Example
 
 
 
-### showPlayButton<span class="type-signature type boolean">boolean</span>
+### showPlayButton `boolean`
 {:#members:showplaybutton}
 
 
@@ -1388,8 +1394,8 @@ Enable play / pause button on rotator.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1405,8 +1411,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1429,7 +1435,7 @@ Example
 
 
 
-### showThumbnail<span class="type-signature type boolean">boolean</span>
+### showThumbnail `boolean`
 {:#members:showthumbnail}
 
 
@@ -1444,8 +1450,8 @@ Turns on or off thumbnail support in the Rotator control. Thumbnail is used to n
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1461,8 +1467,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1493,7 +1499,7 @@ Example
 
 
 
-### slideHeight<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### slideHeight `string`  `number`
 {:#members:slideheight}
 
 
@@ -1508,8 +1514,8 @@ Sets the height of a Rotator Item.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1525,8 +1531,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1549,7 +1555,7 @@ Example
 
 
 
-### slideWidth<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### slideWidth `string`  `number`
 {:#members:slidewidth}
 
 
@@ -1564,8 +1570,8 @@ Sets the width of a Rotator Item.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1581,8 +1587,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1605,7 +1611,7 @@ Example
 
 
 
-### startIndex<span class="type-signature type string">string</span> <span class="type-signature type number">number</span>
+### startIndex `string`  `number`
 {:#members:startindex}
 
 
@@ -1620,8 +1626,8 @@ Sets the index of the slide that must be displayed first.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1637,8 +1643,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1661,7 +1667,7 @@ Example
 
 
 
-### stopOnHover<span class="type-signature type boolean">boolean</span>
+### stopOnHover `boolean`
 {:#members:stoponhover}
 
 
@@ -1676,8 +1682,8 @@ Pause the auto play while hover on the rotator content.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1693,8 +1699,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1717,7 +1723,7 @@ Example
 
 
 
-### thumbnailSourceID<span class="type-signature type object">object</span>
+### thumbnailSourceID `object`
 {:#members:thumbnailsourceid}
 
 
@@ -1732,8 +1738,8 @@ Specifies the source for thumbnail elements.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1749,8 +1755,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1787,7 +1793,7 @@ Example
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -1803,8 +1809,8 @@ Disables the Rotator control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1846,7 +1852,7 @@ $("#sliderContent").ejRotator();
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -1862,8 +1868,8 @@ Enables the Rotator control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1904,7 +1910,7 @@ $("#sliderContent").ejRotator("enable");
 
 
 
-### getIndex<span class="signature">()</span>
+### getIndex()
 {:#methods:getindex}
 
 
@@ -1920,8 +1926,8 @@ This method is used to get the current slide index.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1963,7 +1969,7 @@ $("#sliderContent").ejRotator();
 
 
 
-### gotoIndex<span class="signature">(index)</span>
+### gotoIndex(index)</span>
 {:#methods:gotoindex}
 
 
@@ -1980,7 +1986,7 @@ This method is used to move a slide to the specified index.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1988,7 +1994,7 @@ This method is used to move a slide to the specified index.
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">index of an slide</td>
+<td class="description">index of an slide</td>
 </tr>
 </tbody>
 </table>
@@ -1996,8 +2002,8 @@ index{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2040,7 +2046,7 @@ $("#sliderContent").ejRotator();
 
 
 
-### pause<span class="signature">()</span>
+### pause()
 {:#methods:pause}
 
 
@@ -2056,8 +2062,8 @@ This method is used to pause autoplay.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2099,7 +2105,7 @@ $("#sliderContent").ejRotator();
 
 
 
-### play<span class="signature">()</span>
+### play()
 {:#methods:play}
 
 
@@ -2115,8 +2121,8 @@ This method is used to move slides continuously (or start autoplay) in the speci
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2158,7 +2164,7 @@ $("#sliderContent").ejRotator();
 
 
 
-### slideNext<span class="signature">()</span>
+### slideNext()
 {:#methods:slidenext}
 
 
@@ -2174,8 +2180,8 @@ This method is used to move to the next slide from the current slide. If the cur
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2217,7 +2223,7 @@ $("#sliderContent").ejRotator();
 
 
 
-### slidePrevious<span class="signature">()</span>
+### slidePrevious()
 {:#methods:slideprevious}
 
 
@@ -2233,8 +2239,8 @@ This method is used to move to the previous slide from the current slide. If the
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2300,7 +2306,7 @@ This event is fired when the Rotator slides are changed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2308,13 +2314,13 @@ This event is fired when the Rotator slides are changed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2322,31 +2328,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rotator model</td>
+<td class="description">returns the rotator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">the current rotator id.</td>
+<td class="description">the current rotator id.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeItemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current slide index.</td>
+<td class="description">returns the current slide index.</td>
 </tr>
 </tbody>
 </table>
@@ -2358,8 +2364,8 @@ activeItemIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2400,7 +2406,7 @@ This event is fired when the Rotator control is initialized.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2408,13 +2414,13 @@ This event is fired when the Rotator control is initialized.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2422,19 +2428,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rotator model</td>
+<td class="description">returns the rotator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -2446,8 +2452,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2488,7 +2494,7 @@ This event is fired when the Rotator control is destroyed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2496,13 +2502,13 @@ This event is fired when the Rotator control is destroyed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2510,19 +2516,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rotator model</td>
+<td class="description">returns the rotator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -2534,8 +2540,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2576,7 +2582,7 @@ This event is fired when a pager is clicked.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2584,13 +2590,13 @@ This event is fired when a pager is clicked.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2598,31 +2604,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rotator model</td>
+<td class="description">returns the rotator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">the current rotator id.</td>
+<td class="description">the current rotator id.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeItemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current slide index.</td>
+<td class="description">returns the current slide index.</td>
 </tr>
 </tbody>
 </table>
@@ -2634,8 +2640,8 @@ activeItemIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2676,7 +2682,7 @@ This event is fired when enableAutoPlay is started.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2684,13 +2690,13 @@ This event is fired when enableAutoPlay is started.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2698,31 +2704,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rotator model</td>
+<td class="description">returns the rotator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">the current rotator id.</td>
+<td class="description">the current rotator id.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeItemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current slide index.</td>
+<td class="description">returns the current slide index.</td>
 </tr>
 </tbody>
 </table>
@@ -2734,8 +2740,8 @@ activeItemIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2776,7 +2782,7 @@ This event is fired when autoplay is stopped or paused.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2784,13 +2790,13 @@ This event is fired when autoplay is stopped or paused.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2798,31 +2804,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rotator model</td>
+<td class="description">returns the rotator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">the current rotator id.</td>
+<td class="description">the current rotator id.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeItemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current slide index.</td>
+<td class="description">returns the current slide index.</td>
 </tr>
 </tbody>
 </table>
@@ -2834,8 +2840,8 @@ activeItemIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2876,7 +2882,7 @@ This event is fired when a thumbnail pager is clicked.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2884,13 +2890,13 @@ This event is fired when a thumbnail pager is clicked.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from button
+<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2898,31 +2904,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rotator model</td>
+<td class="description">returns the rotator model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemId{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">the current rotator id.</td>
+<td class="description">the current rotator id.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 activeItemIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the current slide index.</td>
+<td class="description">returns the current slide index.</td>
 </tr>
 </tbody>
 </table>
@@ -2934,8 +2940,8 @@ activeItemIndex{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

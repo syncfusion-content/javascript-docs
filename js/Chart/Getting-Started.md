@@ -36,7 +36,7 @@ Create an **HTML** page and add the scripts references in the order mentioned in
 
 {% endhighlight %}
 
-In the above code, ej.web.all.min.js script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [CSG](http://csg.syncfusion.com/) utility to generate a custom script file with the required widgets for deployment purpose.
+In the above code, ej.web.all.min.js script reference has been added for demonstration purpose. It is not recommended to use this for deployment purpose, as its file size is larger since it contains all the widgets. Instead, you can use [`CSG`](http://csg.syncfusion.com/) utility to generate a custom script file with the required widgets for deployment purpose.
 
 ## Initialize chart
 
@@ -54,7 +54,7 @@ Add a *div* container to render the chart.
 
 {% endhighlight %}
 
-Initialize the chart by using the ejChart method. The chart is rendered to the size of its container, by default. You can also customize the chart dimension either by setting the width and height of the container element as in the above code example or by using the [size](../api/ejchart.html#members:size) option of the Chart. Refer to the [Chart Dimensions](chart-dimensions.html) to know more about setting the [size]() of the chart.
+Initialize the chart by using the ejChart method. The chart is rendered to the size of its container, by default. You can also customize the chart dimension either by setting the width and height of the container element as in the above code example or by using the [`size`](../api/ejchart.html#members:size) option of the Chart. Refer to the [`Chart Dimensions`](chart-dimensions.html) to know more about setting the [`size`]() of the chart.
 
 {% highlight html %}
 
@@ -104,7 +104,7 @@ Now, this section explains how to plot JSON data to the Chart. First, let us pre
 
 {% endhighlight %}
 
-Add a series object to the chart by using the [series](../api/ejchart.html#members:series) option and set the chart type as *line* by using the [type](../api/ejchart#members:series-type) option. 
+Add a series object to the chart by using the [`series`](../api/ejchart.html#members:series) option and set the chart type as *line* by using the [`type`](../api/ejchart#members:series-type) option. 
 
 {% highlight js %}
 
@@ -122,9 +122,9 @@ Add a series object to the chart by using the [series](../api/ejchart.html#membe
 
 {% endhighlight %}
 
-You can also add multiple series objects based on your requirement. Refer to the [Chart Types](Chart-Types.html) and [Chart Series](Chart-Series.html) sections to know more about chart types, how to add multiple series and customize series appearance.
+You can also add multiple series objects based on your requirement. Refer to the [`Chart Types`](Chart-Types.html) and [`Chart Series`](Chart-Series.html) sections to know more about chart types, how to add multiple series and customize series appearance.
 
-Now, map the month and sales values in the data source to the line series by setting the [xName](../api/ejchart.html#members:series-xname) and [yName](../api/ejchart#members:series-yname) with the field names respectively and then set the actual data by using the *dataSource* option. Refer to the [Data Binding](working-with-data.html) section to know more about binding the local and remote data to the chart.
+Now, map the month and sales values in the data source to the line series by setting the [`xName`](../api/ejchart.html#members:series-xname) and [`yName`](../api/ejchart#members:series-yname) with the field names respectively and then set the actual data by using the *dataSource* option. Refer to the [`Data Binding`](working-with-data.html) section to know more about binding the local and remote data to the chart.
 
 {% highlight js %}
 
@@ -149,7 +149,7 @@ Now, map the month and sales values in the data source to the line series by set
 Chart
 {:.caption}
 
-Since the data is related to sales, format the vertical axis labels by adding ‘$’ as a prefix and ‘K’ as a suffix to each label. This can be achieved by setting the “${value}K” to the [labelFormat](../api/ejchart#members:primaryxaxis-labelformat) option of the axis. Here, {value} acts as a placeholder for each axis label, “$” and “K” are the actual prefix and suffix added to each axis label. 
+Since the data is related to sales, format the vertical axis labels by adding ‘$’ as a prefix and ‘K’ as a suffix to each label. This can be achieved by setting the “${value}K” to the [`labelFormat`](../api/ejchart#members:primaryxaxis-labelformat) option of the axis. Here, {value} acts as a placeholder for each axis label, “$” and “K” are the actual prefix and suffix added to each axis label. 
 
 The following code example illustrates this,
 
@@ -173,11 +173,11 @@ The following code example illustrates this,
 Chart
 {:.caption}
 
-Refer to the [Axis](Axis.html) section to know more about axis types, adding multiple axes and other customization options.
+Refer to the [`Axis`](Axis.html) section to know more about axis types, adding multiple axes and other customization options.
 
 ## Add Data Labels
 
-You can add data labels to improve the readability of the chart. This can be achieved by enabling the [visible](../api/ejchart#members:series-marker-datalabel-visible) option in the [dataLabel](../api/ejchart#members:series-marker-datalabel    ) option. Now, the data labels are rendered at the top of all the data points.
+You can add data labels to improve the readability of the chart. This can be achieved by enabling the [`visible`](../api/ejchart#members:series-marker-datalabel-visible) option in the [`dataLabel`](../api/ejchart#members:series-marker-datalabel    ) option. Now, the data labels are rendered at the top of all the data points.
 
 The following code example illustrates this,
 
@@ -207,7 +207,7 @@ The following code example illustrates this,
 Chart
 {:.caption}
 
-There are situations where the default label content is not sufficient to the user. In this case, you can use the [template](../api/ejchart#members:series-marker-datalabel-template) option to format the label content with some additional information.
+There are situations where the default label content is not sufficient to the user. In this case, you can use the [`template`](../api/ejchart#members:series-marker-datalabel-template) option to format the label content with some additional information.
 
  {% highlight html %}
 
@@ -225,7 +225,7 @@ There are situations where the default label content is not sufficient to the us
 
 The above HTML template is used as a template for each data label. Here, “point.x” and “point.y” are the placeholder text used to display the corresponding data point’s x & y value.
 
-The following code example shows how to set the id of the above template to [template](../api/ejchart#members:series-marker-datalabel-template) option,
+The following code example shows how to set the id of the above template to [`template`](../api/ejchart#members:series-marker-datalabel-template) option,
 
 {% highlight js %}
 
@@ -253,11 +253,11 @@ The following code example shows how to set the id of the above template to [tem
 Chart
 {:.caption}
 
-Refer to the [Data Markers](Data-Markers.html) section to know more about the options available to customize it.
+Refer to the [`Data Markers`](Data-Markers.html) section to know more about the options available to customize it.
 
 ## Enable Legend
 
-You can enable or disable the legend by using the [visible](../api/ejchart#members:legend-visible) option in the [legend](../api/ejchart#members:legend). It is enabled in the chart, by default.
+You can enable or disable the legend by using the [`visible`](../api/ejchart#members:legend-visible) option in the [`legend`](../api/ejchart#members:legend). It is enabled in the chart, by default.
 
 {% highlight js %}
 
@@ -286,11 +286,11 @@ You can enable or disable the legend by using the [visible](../api/ejchart#membe
 Chart
 {:.caption}
 
-Refer to the [Legend](Legend.html) section to know more about how to position legend and customize its appearance.
+Refer to the [`Legend`](Legend.html) section to know more about how to position legend and customize its appearance.
 
 ## Enable Tooltip
 
-The Tooltip is useful when you cannot display information by using the [Data Labels](data-markers.html#adding-labels) due to the space constraints. You can enable tooltip by using the [visible](../api/ejchart#members:series-tooltip-visible) option of the [tooltip](../api/ejchart#members:series-tooltip) in the specific series.
+The Tooltip is useful when you cannot display information by using the [`Data Labels`](data-markers.html#adding-labels) due to the space constraints. You can enable tooltip by using the [`visible`](../api/ejchart#members:series-tooltip-visible) option of the [`tooltip`](../api/ejchart#members:series-tooltip) in the specific series.
 
 The following code example illustrates this,
 
@@ -316,11 +316,11 @@ The following code example illustrates this,
 Chart
 {:.caption}
 
-Refer to the [Tooltip](user-interactions.html) section to know more about formatting tooltip contents and customizing its appearance.
+Refer to the [`Tooltip`](user-interactions.html) section to know more about formatting tooltip contents and customizing its appearance.
 
 ## Add Chart Title
 
-You need to add a title to the chart to provide quick information to the user about the data being plotted in the chart. You can add it by using the [text](../api/ejchart#members:title-text) option of the [title](../api/ejchart#members:title).
+You need to add a title to the chart to provide quick information to the user about the data being plotted in the chart. You can add it by using the [`text`](../api/ejchart#members:title-text) option of the [`title`](../api/ejchart#members:title).
 
 {% highlight js %}
 
@@ -342,4 +342,4 @@ You need to add a title to the chart to provide quick information to the user ab
 Chart
 {:.caption}
 
-Refer to the [Chart Title](chart-title.html) section to know more about aligning title, customizing its appearance and adding subtitle to the chart.
+Refer to the [`Chart Title`](chart-title.html) section to know more about aligning title, customizing its appearance and adding subtitle to the chart.

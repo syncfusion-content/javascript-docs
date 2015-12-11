@@ -1,39 +1,32 @@
 ---
 layout: post
 title: ejMaskEdit
+description: API reference for ejMaskEdit
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: MaskEdit, ejMaskEdit, syncfusion, MaskEdit api  
 ---
 
 # ejMaskEdit
-
-
 
 
 The MaskEdit control provides an easy and reliable way of collecting user input and displaying standard data in a specific format. Some common uses of the MaskEdit control are IP address editors, phone number editors, and Social Security number editors.
 
 
 
+#### Syntax
+
+{% highlight js %}
+
+$(element).ejMaskEdit()
+
+{% endhighlight %}
 
 
 
 
-$(element).ejMaskEdit<span class="signature">()</span>
+#### Example
 
-
-
-
-
-
-
-
-
-
-
-Example
-{:.example}
 
 
 {% highlight html %}
@@ -50,13 +43,7 @@ $('#mask').ejMaskEdit();
 
 
 
-
-
-
-Requires
-{:.require}
-
-
+#### Requires
 
 
 * module:jQuery
@@ -80,18 +67,8 @@ Requires
 
 
 
-
-
-
-
-
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
-
-
-
-
-
 
 
 
@@ -100,8 +77,8 @@ Specify the cssClass to maskedit textbox control to achieve custom theme.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -117,8 +94,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -136,7 +113,7 @@ Example
 
 
 
-### customCharacter<span class="type-signature type string">string</span>
+### customCharacter `string`
 {:#members:customcharacter}
 
 
@@ -151,8 +128,8 @@ Specify the custom character allowed to entered in maskedit textbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -168,8 +145,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -179,7 +156,8 @@ Example
 <script> 
 //To set customCharacter API value during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "99-9999",customCharacter: "gradient-lime"});                                       
-</script> {% endhighlight %}
+</script> 
+{% endhighlight %}
 
 
 
@@ -187,7 +165,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -202,8 +180,8 @@ Specify the state of the maskedit textbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -219,8 +197,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -230,7 +208,8 @@ Example
 <script>
 //To set enabled API value during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "99-9999",enabled: true });                                  
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
@@ -238,7 +217,7 @@ Example
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -253,8 +232,8 @@ Specify the enablePersistence to mask edit textbox control to save current model
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -270,8 +249,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -289,7 +268,7 @@ Example
 
 
 
-### height<span class="type-signature type string">string</span>
+### height `string`
 {:#members:height}
 
 
@@ -304,8 +283,8 @@ Specifies the height for the maskedit textbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -321,8 +300,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -340,7 +319,7 @@ Example
 
 
 
-### hidePromptOnLeave<span class="type-signature type boolean">boolean</span>
+### hidePromptOnLeave `boolean`
 {:#members:hidepromptonleave}
 
 
@@ -355,8 +334,8 @@ Specify the hidePromptOnLeave for maskedit textbox control to hide the mask on f
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -372,8 +351,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -391,7 +370,7 @@ Example
 
 
 
-### inputMode<span class="type-signature type enum">enum</span>
+### inputMode `enum`
 {:#members:inputmode}
 
 
@@ -406,8 +385,8 @@ Specify the inputMode for maskedit textbox control. See <a href="global.html#Inp
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -423,8 +402,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -442,7 +421,7 @@ Example
 
 
 
-### maskFormat<span class="type-signature type string">string</span>
+### maskFormat `string`
 {:#members:maskformat}
 
 
@@ -457,8 +436,8 @@ Specifies the maskFormat string for the maskedit textbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -474,8 +453,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -493,7 +472,7 @@ Example
 
 
 
-### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly `boolean`
 {:#members:readonly}
 
 
@@ -508,8 +487,8 @@ Specify the readOnly for maskedit textbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -525,8 +504,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -544,7 +523,7 @@ Example
 
 
 
-### showError<span class="type-signature type boolean">boolean</span>
+### showError `boolean`
 {:#members:showerror}
 
 
@@ -559,8 +538,8 @@ Specifies the showError until correct value entered in the maskedit textbox cont
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -576,8 +555,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -595,7 +574,7 @@ Example
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -610,8 +589,8 @@ Specify the rounded corner for maskedit textbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -627,8 +606,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -646,7 +625,7 @@ Example
 
 
 
-### textAlign<span class="type-signature type enum">enum</span>
+### textAlign `enum`
 {:#members:textalign}
 
 
@@ -661,8 +640,8 @@ Specify the text alignment for maskedit textbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -678,8 +657,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -697,7 +676,7 @@ Example
 
 
 
-### validationMessage<span class="type-signature type object">object</span>
+### validationMessage `object`
 {:#members:validationmessage}
 
 
@@ -712,8 +691,8 @@ Set the jquery validation error message in maskedit.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -729,8 +708,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -748,7 +727,7 @@ Example
 
 
 
-### validationRules<span class="type-signature type object">object</span>
+### validationRules `object`
 {:#members:validationrules}
 
 
@@ -763,8 +742,8 @@ Set the jquery validation rules in maskedit.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -780,8 +759,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -799,7 +778,7 @@ Example
 
 
 
-### value<span class="type-signature type string">string</span>
+### value `string`
 {:#members:value}
 
 
@@ -814,8 +793,8 @@ Specifies the value string for the maskedit textbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -831,8 +810,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -849,7 +828,7 @@ Example
 
 
 
-### watermarkText<span class="type-signature type string">string</span>
+### watermarkText `string`
 {:#members:watermarktext}
 
 
@@ -864,8 +843,8 @@ Specifies the watermark text string for the maskedit textbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -881,8 +860,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -900,7 +879,7 @@ Example
 
 
 
-### width<span class="type-signature type string">string</span>
+### width `string`
 {:#members:width}
 
 
@@ -915,8 +894,8 @@ Specifies the width for the maskedit textbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -932,8 +911,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -958,7 +937,7 @@ Example
 
 
 
-### clear<span class="signature">()</span>
+### clear()
 {:#methods:clear}
 
 
@@ -974,8 +953,8 @@ To clear the text in maskedit textbox control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -988,7 +967,8 @@ $("#mask").ejMaskEdit({maskFormat: "99-9999",value:"345678"});
 var maskObj = $("#mask").data("ejMaskEdit");            
 maskObj.clear(); // clear the maskedit control          
 </script>
-                 {% endhighlight %}
+                 
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -1007,7 +987,7 @@ $("#mask").ejMaskEdit("clear");
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -1023,8 +1003,8 @@ To disable the maskedit textbox control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1037,7 +1017,9 @@ $("#mask").ejMaskEdit({maskFormat: "99-99-9999",value:"45340078"});
 var maskObj = $("#mask").data("ejMaskEdit");            
 maskObj.disable(); // disable the maskedit control              
 </script>
-                 {% endhighlight %}
+                 
+                 
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -1056,7 +1038,7 @@ $("#mask").ejMaskEdit("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -1072,8 +1054,8 @@ To enable the maskedit textbox control.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1086,7 +1068,8 @@ $("#mask").ejMaskEdit({maskFormat: "99-99-9999",value:"12345678"});
 var maskObj = $("#mask").data("ejMaskEdit");            
 maskObj.enable(); // enable the maskedit control                
 </script>
-                 {% endhighlight %}
+                
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -1105,7 +1088,7 @@ $("#mask").ejMaskEdit("enable");
 
 
 
-### get_StrippedValue<span class="signature">()</span>
+### get_StrippedValue()
 {:#methods:get_strippedvalue}
 
 
@@ -1121,8 +1104,8 @@ To obtained the pure value of the textvalue, removes all the symbols in maskedit
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1153,7 +1136,7 @@ alert( $("#mask").ejMaskEdit("get_StrippedValue"));
 
 
 
-### get_UnstrippedValue<span class="signature">()</span>
+### get_UnstrippedValue()
 {:#methods:get_unstrippedvalue}
 
 
@@ -1169,8 +1152,8 @@ To obtained the textbox value as such that, Just replace all '_' to ' '(space) i
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1225,7 +1208,7 @@ Fires when value changed in mask edit textbox control.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1233,13 +1216,13 @@ Fires when value changed in mask edit textbox control.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from maskedit textbox control
+<td class="description">Event parameters from maskedit textbox control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1247,31 +1230,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the maskedit model</td>
+<td class="description">returns the maskedit model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the maskedit value</td>
+<td class="description">returns the maskedit value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in maskedit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1283,8 +1266,8 @@ unmaskedValue{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1322,7 +1305,7 @@ Fires after MaskEdit control is created.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1330,19 +1313,19 @@ Fires after MaskEdit control is created.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the MaskEdit model</td>
+<td class="description">returns the MaskEdit model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1350,8 +1333,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1389,7 +1372,7 @@ Fires when the MaskEdit is destroyed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1397,19 +1380,19 @@ Fires when the MaskEdit is destroyed successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the MaskEdit model</td>
+<td class="description">returns the MaskEdit model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1417,8 +1400,8 @@ argument.type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1456,7 +1439,7 @@ Fires when focused in mask edit textbox control.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1464,13 +1447,13 @@ Fires when focused in mask edit textbox control.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from maskedit textbox control
+<td class="description">Event parameters from maskedit textbox control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1478,31 +1461,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the maskedit model</td>
+<td class="description">returns the maskedit model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the maskedit value</td>
+<td class="description">returns the maskedit value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in maskedit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1514,8 +1497,8 @@ unmaskedValue{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1553,7 +1536,7 @@ Fires when focused out in mask edit textbox control.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1561,13 +1544,13 @@ Fires when focused out in mask edit textbox control.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from maskedit textbox control
+<td class="description">Event parameters from maskedit textbox control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1575,31 +1558,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the maskedit model</td>
+<td class="description">returns the maskedit model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the maskedit value</td>
+<td class="description">returns the maskedit value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in maskedit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1611,8 +1594,8 @@ unmaskedValue{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1650,7 +1633,7 @@ Fires when keydown in mask edit textbox control.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1658,13 +1641,13 @@ Fires when keydown in mask edit textbox control.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from maskedit textbox control
+<td class="description">Event parameters from maskedit textbox control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1672,31 +1655,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the maskedit model</td>
+<td class="description">returns the maskedit model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the maskedit value</td>
+<td class="description">returns the maskedit value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in maskedit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1708,8 +1691,8 @@ unmaskedValue{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1747,7 +1730,7 @@ Fires when keypress in mask edit textbox control.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1755,13 +1738,13 @@ Fires when keypress in mask edit textbox control.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from maskedit textbox control
+<td class="description">Event parameters from maskedit textbox control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1769,31 +1752,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the maskedit model</td>
+<td class="description">returns the maskedit model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the maskedit value</td>
+<td class="description">returns the maskedit value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in maskedit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1805,8 +1788,8 @@ unmaskedValue{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1844,7 +1827,7 @@ Fires when keyup in mask edit textbox control.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1852,13 +1835,13 @@ Fires when keyup in mask edit textbox control.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from maskedit textbox control
+<td class="description">Event parameters from maskedit textbox control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1866,31 +1849,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the maskedit model</td>
+<td class="description">returns the maskedit model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the maskedit value</td>
+<td class="description">returns the maskedit value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in maskedit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1902,8 +1885,8 @@ unmaskedValue{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1940,7 +1923,7 @@ Fires when mouse out in mask edit textbox control.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1948,13 +1931,13 @@ Fires when mouse out in mask edit textbox control.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from maskedit textbox control
+<td class="description">Event parameters from maskedit textbox control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1962,31 +1945,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the maskedit model</td>
+<td class="description">returns the maskedit model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the maskedit value</td>
+<td class="description">returns the maskedit value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in maskedit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -1998,8 +1981,8 @@ unmaskedValue{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2037,7 +2020,7 @@ Fires when mouse over in mask edit textbox control.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2045,13 +2028,13 @@ Fires when mouse over in mask edit textbox control.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from maskedit textbox control
+<td class="description">Event parameters from maskedit textbox control
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2059,31 +2042,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the maskedit model</td>
+<td class="description">returns the maskedit model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the maskedit value</td>
+<td class="description">returns the maskedit value</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 unmaskedValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns unstripped value in maskedit textbox control.</td>
+<td class="description">returns unstripped value in maskedit textbox control.</td>
 </tr>
 </tbody>
 </table>
@@ -2095,8 +2078,8 @@ unmaskedValue{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
