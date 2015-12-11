@@ -73,7 +73,7 @@ For Excel export, **"ej.PivotGrid.ExportOptions.Excel"** enumeration value is se
 {% highlight js %}
 
 function exportBtnClick(args) {
-   var gridObj = $('#PivotGrid').data("ejPivotGrid");
+   var gridObj = $(''#PivotGrid1').data("ejPivotGrid");
    gridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Excel);
 }
 
@@ -89,7 +89,7 @@ For CSV export, **"ej.PivotGrid.ExportOptions.CSV"** enumeration value is sent a
 {% highlight js %}
 
 function exportBtnClick(args) {
-   var gridObj = $('#PivotGrid').data("ejPivotGrid");
+   var gridObj = $(''#PivotGrid1').data("ejPivotGrid");
    gridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.CSV);
 }
 
@@ -108,7 +108,7 @@ For Word export, **"ej.PivotGrid.ExportOptions.Word"** enumeration value is sent
 {% highlight js %}
 
 function exportBtnClick(args) {
-   var gridObj = $('#PivotGrid').data("ejPivotGrid");
+   var gridObj = $(''#PivotGrid1').data("ejPivotGrid");
    gridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.Word);
 }
 
@@ -127,7 +127,7 @@ For PDF export, **"ej.PivotGrid.ExportOptions.PDF"** enumeration value is sent a
 {% highlight js %}
 
 function exportBtnClick(args) {
-   var gridObj = $('#PivotGrid').data("ejPivotGrid");
+   var gridObj = $(''#PivotGrid1').data("ejPivotGrid");
    gridObj.exportPivotGrid(ej.PivotGrid.ExportOptions.PDF);
 }
 
