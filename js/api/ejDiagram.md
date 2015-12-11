@@ -80,7 +80,7 @@ Image to be set as the background of the elements
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png"});
+$("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png" });
 </script>
 
 {% endhighlight %}
@@ -88,11 +88,11 @@ $("#diagramcontent").ejDiagram({ backgroundImage: "Syncfusion.png"});
 ### bridgeDirection `String`
 {:#members:bridgedirection}
 
-Sets the bridge direction of connectors
+Sets the direction of line bridges
 
 #### Default Value
 
-* "top"
+* ej.datavisualization.Diagram.BridgeDirection.Top
 
 #### Example
 
@@ -100,7 +100,234 @@ Sets the bridge direction of connectors
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramContent").ejDiagram({bridgeDirection: "top"} });
+$("#diagramContent").ejDiagram({ bridgeDirection:ej.datavisualization.Diagram.BridgeDirection.Bottom } });
+</script>
+
+{% endhighlight %}
+
+### commandManager `Object`
+{:#members:commandmanager}
+
+Defines a set of custom commands and binds them with a set of desired key gestures.
+
+### commandManager.commands `Object`
+{:#members:commandmanager-commands}
+
+An object that maps a set of command names with the corresponding command objects 
+
+#### Default Value
+
+* {}
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+	
+$("#DiagramContent").ejDiagram( {
+   commandManager:{
+      commands: { 
+		//Command Name
+        "clone" : 
+		//Command Definition
+        { 
+            gesture: { key:ej.datavisualization.Diagram.Keys.C, 
+				keyModifiers: ej.datavisualization.Diagram.KeyModifiers.Shift },
+            canExecute : function(args) {
+                var diagram = $("#DiagramContent").ejDiagram("instance");
+                return diagram.model.selectedItems.children.length;
+            },
+            execute : function(args){
+                var diagram = $("#DiagramContent").ejDiagram("instance");
+                diagram.copy();
+                diagram.paste();
+            } 
+        } 
+     }
+   }
+});
+
+</script>
+
+{% endhighlight %}
+
+### commandManager.commands.canExecute `Object`
+{:#members:commandmanager-commands-canexecute}
+
+A method that defines whether the command is executable at the moment or not 
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+
+$("#DiagramContent").ejDiagram( {
+   commandManager:{
+      commands: { 
+		//Command Name
+        "clone" : 
+		//Defines what to be executed when the key combination is recognized
+        { 
+            execute : function(args){
+                var diagram = $("#DiagramContent").ejDiagram("instance");
+                diagram.copy();
+                diagram.paste();
+            } 
+        } 
+     }
+   }
+});
+</script>
+
+{% endhighlight %}
+
+### commandManager.commands.gesture `Object`
+{:#members:commandmanager-commands-gesture}
+
+Defines a combination of keys and key modifiers, on recognition of which the command will be executed
+
+### commandManager.commands.gesture.key `string`
+{:#members:commandmanager-commands-gesture-key}
+
+Sets the key value, on recognition of which the command will be executed
+
+#### Default Value
+
+* Keys.None
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram( {
+   commandManager:{
+      commands: { 
+		//Command Name
+        "clone" : 
+		//Sets the key corresponding to the command
+        { 
+            gesture: { key:ej.datavisualization.Diagram.Keys.C, 
+				keyModifiers: ej.datavisualization.Diagram.KeyModifiers.Shift }
+        } 
+     }
+   }
+});	
+</script>
+
+{% endhighlight %}
+
+### commandManager.commands.gesture.keyModifiers `string`
+{:#members:commandmanager-commands-gesture-keymodifers}
+
+Sets a combination of key modifiers, on recognition of which the command will be executed
+
+#### Default Value
+
+* KeyModifiers.None
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram( {
+   commandManager:{
+      commands: { 
+		//Command Name
+        "clone" : 
+		//Sets the key modifiers
+        { 
+            gesture: { key:ej.datavisualization.Diagram.Keys.C, 
+				keyModifiers: ej.datavisualization.Diagram.KeyModifiers.Shift }
+        } 
+     }
+   }
+});	
+</script>
+
+{% endhighlight %}
+
+### commandManager.commands.execute `Object`
+{:#members:commandmanager-commands-execute}
+
+A method that defines the action to be done when the specified key gesture is recognized
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+
+$("#DiagramContent").ejDiagram( {
+   commandManager:{
+      commands: { 
+		//Command Name
+        "clone" : 
+		//Method to define whether the command is executable at the moment
+        { 
+            canExecute : function(args) {
+                var diagram = $("#DiagramContent").ejDiagram("instance");
+                return diagram.model.selectedItems.children.length;
+            }
+        } 
+     }
+   }
+});
+</script>
+
+{% endhighlight %}
+
+### commandManager.commands.parameter `Object`
+{:#members:commandmanager-commands-parameter}
+
+Defines any additional parameters that are required at runtime
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram( {
+   commandManager:{
+      commands: { 
+        "clone" : 
+        { 
+            execute : function(args){
+                var diagram = $("#DiagramContent").ejDiagram("instance");
+				//Checks args.parameter
+                if(diagram.getObjectType(diagram.model.selectedItems.children[0]) == args.parameter)
+                {
+                    diagram.copy();
+                    diagram.paste();
+                }
+            },
+			// any static value that is required when the command is executed
+            parameter : "node" 
+        } 
+     }
+   }
+});
 </script>
 
 {% endhighlight %}
@@ -221,6 +448,35 @@ var connector = { name:"connector1", sourcePoint:{ x:100, y:100 }, targetPoint:{
 	              //Set corner radius
                   cornerRadius: 10, segments:[{ type: "orthogonal"}] };
 $("#DiagramContent").ejDiagram({ connectors:[connector] });
+</script>
+
+{% endhighlight %}
+
+### connectors.cssClass `String`
+{:#members:connectors-cssclass}
+
+Configures the styles of shapes
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverConnector:hover {
+        stroke:blue
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name: "connector", 
+	         cssClass: "hoverConnector", 
+	         sourcePoint:{ x:100, y: 100 }, targetPoint: { x: 200, y: 200 } };			 
+$("#DiagramContent").ejDiagram({ connectors:[ connector ] });
 </script>
 
 {% endhighlight %}
@@ -505,6 +761,42 @@ Defines the transparency of the connector
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
 	              opacity: 0.5 }; 
 $("#DiagramContent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### nodes.paletteItem `Object`
+{:#members:nodes-paletteItem}
+
+Defines the size and preview size of the node to add that to symbol palette
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+	
+$("#symbolpalette").ejSymbolPalette({
+	//Defines the palette collection 
+	palettes: [{
+		name: "Connectors", expanded: true,
+		items: [
+		{
+			name: "connector", sourcePoint:{x: 0, y: 0}, targetPoint:{x:50, y: 50}, 
+			segments:[{ type:"bezier" }],
+			//Sets preview size
+			paletteItem: {
+                previewWidth: 100,
+				previewHeight: 100
+			}
+		}]
+	}]
+});
 </script>
 
 {% endhighlight %}
@@ -1263,6 +1555,49 @@ $("#DiagramContent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 {% endhighlight %}
 
+### connectors.tooltip `String`
+{:#members:connectors-tooltip}
+
+Defines the tooltip that should be shown when the mouse hovers over connector
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+
+<script type="text/x-jsrender" id="mouseovertooltip">
+   <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
+       <span style="padding: 5px;"> {{:name}} </span>
+   </div>
+</script>
+
+<script>
+var tooltip = {
+		templateId: "mouseovertooltip",
+		alignment: {
+			horizontal: "center",
+			vertical: "bottom"
+		}
+	};
+var ConnectorConstraints = ej.datavisualization.Diagram.ConnectorConstraints;
+$("#DiagramContent").ejDiagram({	
+//Defines connectors
+	connectors: [{
+		name: "flow1",sourcePoint: { x:100, y: 100 }, targetPoint :{ x:200, y:200 },
+		//Define tooltip
+        constraints: ConnectorConstraints.Default & ~ConnectorConstraints.InheritTooltip, 
+        tooltip:tooltip
+	}]
+});
+</script>
+
+{% endhighlight %}
+
 ### connectors.verticalAlign `VerticalAlignment`
 {:#members:connectors-verticalalign}
 
@@ -1338,7 +1673,7 @@ $("#DiagramContent").ejDiagram({connectors : [connector]});
 ### connectorTemplate `Object`
 {:#members:connectortemplate}
 
-To customize the connector properties before rendering the connector
+Binds the custom JSON data with connector properties
 
 #### Default Value
 
@@ -1350,8 +1685,22 @@ To customize the connector properties before rendering the connector
 
 <div id="diagram"></div>
 <script>
-function connectorTemplate(diagram, connector, data) {connector.labels[0].text = data.Name};
-$("#diagram").ejDiagram({ connectorTemplate:connectorTemplate});
+   var data = [
+        { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
+        { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
+		
+   $("#diagram").ejDiagram({
+	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", dataSource: data },
+	   //Sets the method name to connector template 
+	   connectorTemplate :"connectorTemplate"
+   });
+   
+   //Sets the default styles and binds custom data with connector
+    function connectorTemplate(diagram, connector) {
+         if(connector.sourceNode && connector.targetNode){
+			 connector.linecolor = "green";
+		 }
+     }
 </script>
 
 {% endhighlight %}
@@ -1359,7 +1708,7 @@ $("#diagram").ejDiagram({ connectorTemplate:connectorTemplate});
 ### constraints `enum`
 {:#members:constraints}
 
-Sets the default behavior of the diagram see <a href="global.html#diagramconstraints">DiagramConstraints</a>
+Enables/Disables the default behaviors of the diagram see <a href="global.html#diagramconstraints">DiagramConstraints</a>
 
 #### Default Value
 
@@ -1371,7 +1720,10 @@ Sets the default behavior of the diagram see <a href="global.html#diagramconstra
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramContent").ejDiagram({constraints: ej.datavisualization.Diagram.DiagramConstraints.Default} });
+var DiagramConstraints = ej.datavisualization.Diagram.DiagramConstraints;
+//Enables line bridging
+$("#DiagramContent").ejDiagram({
+	constraints: DiagramConstraints.Default | DiagramConstraints.Bridging });
 </script>
 
 {% endhighlight %}
@@ -1379,12 +1731,12 @@ $("#diagramContent").ejDiagram({constraints: ej.datavisualization.Diagram.Diagra
 ### contextMenu
 {:#members:contextmenu}
 
-Object to customize the context menu for diagram
+An object to customize the context menu of diagram
 
 ### contextMenu.items `Array`
 {:#members:contextmenu-items}
 
-Define the collection of context menu items
+Defines the collection of context menu items
 
 #### Default Value
 
@@ -1397,9 +1749,9 @@ Define the collection of context menu items
 <div id="diagramcontent"></div>
 <script>
 //Collection of items
-var menucollection = [{ "name": "hyperLink", "text": "Hyperlink", "image": "", "style": "" }];
-var contextMenu = { items: menucollection};
-$("#diagramContent").ejDiagram({contextMenu: contextMenu});
+var menuitems = [{ "name": "hyperLink", "text": "Hyperlink", "image": "", "style": "" }];
+var contextMenu = { items: menuitems};
+$("#diagram").ejDiagram({contextMenu: contextMenu});
 </script>
 
 {% endhighlight %}
@@ -1411,7 +1763,7 @@ To set whether to display the default context menu items or not
 
 #### Default Value
 
-* true
+* false
 
 #### Example
 
@@ -1419,7 +1771,8 @@ To set whether to display the default context menu items or not
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramcontent").ejDiagram({showCustomMenuItemsOnly: true});
+var contextMenu = { showCustomMenuItemsOnly: true };
+$("#diagram").ejDiagram({contextMenu: contextMenu});
 </script>
 
 {% endhighlight %}
@@ -1427,12 +1780,12 @@ $("#diagramcontent").ejDiagram({showCustomMenuItemsOnly: true});
 ### dataSourceSettings
 {:#members:datasourcesettings}
 
-Object to set dataSource to diagram
+Configures the data source that is to be bound with diagram
 
 ### dataSourceSettings.dataSource `Object`
 {:#members:datasourcesettings-datasource}
 
-Describes the data source either as a collection of objects or an instance of ej.DataManager
+Defines the data source either as a collection of objects or as an instance of ej.DataManager
 
 #### Default Value
 
@@ -1444,7 +1797,15 @@ Describes the data source either as a collection of objects or an instance of ej
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ dataSourceSettings: {dataSource: localData}});
+	
+var data = [
+        { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
+        { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
+
+   $("#diagram").ejDiagram({
+	   dataSourceSettings: { dataSource: data }
+   });
+   
 </script>
 
 {% endhighlight %}
@@ -1452,7 +1813,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: {dataSource: localData}});
 ### dataSourceSettings.id `String`
 {:#members:datasourcesettings-id}
 
-Describes the unique id of data source items.
+Sets the unique id of the data source items
 
 #### Default Value
 
@@ -1464,7 +1825,13 @@ Describes the unique id of data source items.
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ dataSourceSettings: {id: "CategoryID"}});
+   var data = [
+        { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
+        { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
+		
+   $("#diagram").ejDiagram({
+	   dataSourceSettings: { id: "Id", dataSource: data }
+   });
 </script>
 
 {% endhighlight %}
@@ -1472,7 +1839,7 @@ $("#diagram").ejDiagram({ dataSourceSettings: {id: "CategoryID"}});
 ### dataSourceSettings.parent `String`
 {:#members:datasourcesettings-parent}
 
-Describes the parent id of data source items.
+Defines the parent id of the data source item
 
 #### Default Value
 
@@ -1484,15 +1851,21 @@ Describes the parent id of data source items.
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ dataSourceSettings: { parent: "reportingPerson"}});
+   var data = [
+        { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
+        { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
+		
+   $("#diagram").ejDiagram({
+	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", dataSource: data }
+   });
 </script>
 
 {% endhighlight %}
 
-### dataSourceSettings.query `Object`
+### dataSourceSettings.query `String`
 {:#members:datasourcesettings-query}
 
-Describes query to retrieve a set of data from the specified datasource.
+Describes query to retrieve a set of data from the specified datasource
 
 #### Default Value
 
@@ -1504,7 +1877,12 @@ Describes query to retrieve a set of data from the specified datasource.
 
 <div id="diagram"></div>
 <script>
-query: ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
+   $("#diagram").ejDiagram({
+	   dataSourceSettings: {
+       dataSource: ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/" }),
+       query: ej.Query().from("Employees").select("EmployeeID,ReportsTo,FirstName"),
+       tableName: "Employees", id: "EmployeeID", parent: "ReportsTo" }
+   });
 </script>
 
 {% endhighlight %}
@@ -1512,7 +1890,7 @@ query: ej.Query().from("Categories").select("CategoryID,CategoryName").take(3);
 ### dataSourceSettings.root `String`
 {:#members:datasourcesettings-root}
 
-Describes the root node.
+Sets the unique id of the root data source item
 
 #### Default Value
 
@@ -1524,15 +1902,21 @@ Describes the root node.
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ dataSourceSettings: { root: "1"}});
+   var data = [
+        { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
+        { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
+		
+   $("#diagram").ejDiagram({
+	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", root:"E1", dataSource: data }
+   });
 </script>
 
 {% endhighlight %}
 
-### dataSourceSettings.tablename `String`
+### dataSourceSettings.tableName `String`
 {:#members:datasourcesettings-tablename}
 
-Describes the name of the table on which the specified query to be executed
+Describes the name of the table on which the specified query has to be executed
 
 #### Default Value
 
@@ -1544,7 +1928,14 @@ Describes the name of the table on which the specified query to be executed
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ dataSourceSettings:{tableName: "Categories"}});
+   $("#diagram").ejDiagram({
+	   dataSourceSettings: {
+       dataSource: ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc/" }),
+       query: ej.Query().from("Employees").select("EmployeeID,ReportsTo,FirstName"),
+	   //Table name
+       tableName: "Employees", 
+	   id: "EmployeeID", parent: "ReportsTo" }
+   });
 </script>
 
 {% endhighlight %}
@@ -1552,7 +1943,7 @@ $("#diagram").ejDiagram({ dataSourceSettings:{tableName: "Categories"}});
 ### defaultSettings `Object`
 {:#members:defaultsettings}
 
-To set the default values to nodes and connector properties
+Initializes the default values for nodes and connectors
 
 #### Default Value
 
@@ -1564,7 +1955,9 @@ To set the default values to nodes and connector properties
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ defaultSettings: { node: {width: 110, height: 40, fillColor:"skyblue"}}});
+$("#DiagramContent").ejDiagram({
+    defaultSettings: { node: { fillColor:"red"} }
+});
 </script>
 
 {% endhighlight %}
@@ -1572,7 +1965,7 @@ $("#diagram").ejDiagram({ defaultSettings: { node: {width: 110, height: 40, fill
 ### defaultSettings.connector `Object`
 {:#members:defaultsettings-connector}
 
-To set the default values to connector properties
+Initializes the default connector properties
 
 #### Default Value
 
@@ -1584,7 +1977,34 @@ To set the default values to connector properties
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ defaultSettings:{ connector:{ lineColor: "gray", lineWidth: 2 }}});
+$("#DiagramContent").ejDiagram({
+	//Apply default styles to all connectors
+    defaultSettings: { connector: { lineColor:"red", lineWidth:4, lineDashArray:"2,2" } }
+});
+</script>
+
+{% endhighlight %}
+
+### defaultSettings.group `Object`
+{:#members:defaultsettings-group}
+
+Initializes the default properties of groups
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
+$("#DiagramContent").ejDiagram({
+	//Disable dragging all groups
+    defaultSettings: { group: {constraints: NodeConstraints.Default & ~NodeConstraints.Drag } }
+});
 </script>
 
 {% endhighlight %}
@@ -1592,7 +2012,7 @@ $("#diagram").ejDiagram({ defaultSettings:{ connector:{ lineColor: "gray", lineW
 ### defaultSettings.node `Object`
 {:#members:defaultsettings-node}
 
-To set the default values to node properties
+Initializes the default properties for nodes
 
 #### Default Value
 
@@ -1604,7 +2024,10 @@ To set the default values to node properties
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ defaultSettings:{node: { fillColor: "#83A93F", borderColor: "#000000" }}});
+$("#DiagramContent").ejDiagram({
+	//Apply same style to all nodes
+    defaultSettings: { node: { fillColor:"red", borderColor:"black" } }
+});
 </script>
 
 {% endhighlight %}
@@ -1652,7 +2075,7 @@ $("#diagramcontent").ejDiagram({drawType:{type:"node"}});
 ### enableAutoScroll `Boolean`
 {:#members:enableautoscroll}
 
-Enables or disables Auto scroll in diagram
+Enables or disables auto scroll in diagram
 
 #### Default Value
 
@@ -1664,7 +2087,7 @@ Enables or disables Auto scroll in diagram
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramcontent").ejDiagram({enableAutoScroll: true});
+$("#diagramcontent").ejDiagram({ enableAutoScroll: false });
 </script>
 
 {% endhighlight %}
@@ -1684,15 +2107,95 @@ Enables or disables diagram context menu
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramcontent").ejDiagram({enableContextMenu: true});
+$("#diagramcontent").ejDiagram({ enableContextMenu: false });
 </script>
 
 {% endhighlight %}
 
-### height `String`
-{:#members:height}
+### historyManager `Object`
+{:#members:historymanager}
+Customizes the undo redo functionality
 
-Specifies the height of the diagram.
+### historyManager.canPop `function`
+{:#members:historymanager-canpop}
+
+A method that takes a history entry as argument and returns whether the specific entry can be popped or not
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+	
+</script>
+{% endhighlight %}
+
+### historyManager.closeGroupAction `function`
+{:#members:historymanager-closegroupaction}
+
+A method that ends grouping the changes
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+var group = diagram.model.selectedItems
+
+// Start to group the changes
+diagram.model.historyManager.startGroupAction();
+
+//Makes the changes
+for (var i = 0; i < group.children.length; i++) {
+	var option = {};
+	var item = group.children[i];
+	// Updates the fillColor for all the child elements.
+	option.fillColor = args.style.backgroundColor;
+	diagram.updateNode(item.name, option);
+}
+
+//Ends grouping the changes
+diagram.model.historyManager.closeGroupAction();
+</script>
+
+{% endhighlight %}
+
+### historyManager.pop `function`
+{:#members:historymanager-pop}
+
+A method that removes the history of a recent change made in diagram 
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+	
+</script>
+{% endhighlight %}
+
+### historyManager.push `function`
+{:#members:historymanager-canpop}
+
+A method that allows to track a custom change made in diagram
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+	
+</script>
+{% endhighlight %}
+
+### historyManager.redo `function`
+{:#members:historymanager-redo}
+
+Defines what should be happened while trying to restore a custom change
 
 #### Default Value
 
@@ -1704,7 +2207,116 @@ Specifies the height of the diagram.
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ height:"100%" });
+$("#diagram").ejDiagram({
+	historyManager: {
+		//Called to revert a custom action
+		undo: customUndoRedo,
+		//Called to restore the reverted custom action
+		redo: customUndoRedo
+	}
+});
+
+//Method to handle the custom action
+function customUndoRedo(args) {
+	var diagram = $("#diagram").ejDiagram("instance");
+	var node = args.object;
+	var currentState = node.empInfo;
+
+	//Resets the state
+	node.empInfo = args.prevState;
+
+	//Saves the previous state
+	args.prevState = currentState;
+}	
+</script>
+{% endhighlight %}
+
+### historyManager.startGroupAction `function`
+{:#members:historymanager-startgroupaction}
+
+A method that starts to group the changes to revert/restore them in a single undo or redo
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+var group = diagram.model.selectedItems
+
+// Start to group the changes
+diagram.model.historyManager.startGroupAction();
+
+//Makes the changes
+for (var i = 0; i < group.children.length; i++) {
+	var option = {};
+	var item = group.children[i];
+	// Updates the fillColor for all the child elements.
+	option.fillColor = args.style.backgroundColor;
+	diagram.updateNode(item.name, option);
+}
+
+//Ends grouping the changes
+diagram.model.historyManager.closeGroupAction();
+</script>
+
+{% endhighlight %}
+
+### historyManager.undo `function`
+{:#members:historymanager-undo}
+
+Defines what should be happened while trying to revert a custom change
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+$("#diagram").ejDiagram({
+	historyManager: {
+		//Called to revert a custom action
+		undo: customUndoRedo,
+		//Called to restore the reverted custom action
+		redo: customUndoRedo
+	}
+});
+
+//Method to handle the custom action
+function customUndoRedo(args) {
+	var diagram = $("#diagram").ejDiagram("instance");
+	var node = args.object;
+	var currentState = node.empInfo;
+
+	//Resets the state
+	node.empInfo = args.prevState;
+
+	//Saves the previous state
+	args.prevState = currentState;
+}	
+</script>
+{% endhighlight %}
+
+### height `String`
+{:#members:height}
+
+Specifies the height of the diagram
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({ height:"500" });
 </script>
 
 {% endhighlight %}
@@ -1712,12 +2324,12 @@ $("#diagram").ejDiagram({ height:"100%" });
 ### layout
 {:#members:layout}
 
-To arrange the diagram elements on page
+Automatically arranges the nodes and connectors in a predefined manner
 
 ### layout. fixedNode `String`
 {:#members:layout- fixednode}
 
-Sets the fixed node with respect to which the layout will be aligned
+Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned
 
 #### Default Value
 
@@ -1728,14 +2340,14 @@ Sets the fixed node with respect to which the layout will be aligned
 {% highlight html %}
 
 //fixedNode of the layout
-$("#diagramContent").ejDiagram({layout: { fixedNode: "nodename"}});
+$("#diagramContent").ejDiagram({ layout: { fixedNode: "nodename"}});
 
 {% endhighlight %}
 
 ### layout. getLayoutInfo `Object`
 {:#members:layout- getlayoutinfo}
 
-To customize the orientation of trees/sub trees For orientations see <a href="global.html#ChartOrientations">ChartOrientations</a> For chart types see <a href="global.html#ChartTypes">ChartTypes</a>
+Customizes the orientation of trees/sub trees. For orientations, see <a href="global.html#chartorientations">ChartOrientations</a> For chart types see <a href="global.html#charttypes">ChartTypes</a>
 
 #### Default Value
 
@@ -1753,7 +2365,7 @@ $("#diagram").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 
 {% endhighlight %}
 
-### layout. marginY `Number`
+### layout.marginY `Number`
 {:#members:layout- marginy}
 
 Sets the margin value to be vertically left between layout and diagram
@@ -1766,8 +2378,11 @@ Sets the margin value to be vertically left between layout and diagram
 
 {% highlight html %}
 
+<div id="diagram"></div>
+<script>
 // marginY of the layout
-$("#diagramContent").ejDiagram({layout: { marginY: 0}});
+$("#diagramContent").ejDiagram({layout: { marginY: 50 }});
+</script>
 
 {% endhighlight %}
 
@@ -1784,15 +2399,18 @@ Sets the space to be horizontally left between nodes
 
 {% highlight html %}
 
+<div id="diagram"></div>
+<script>
 //horizontalSpacing of the layout
-$("#diagramContent").ejDiagram({layout: {horizontalSpacing: 30}});
+$("#diagramContent").ejDiagram({layout: { horizontalSpacing: 50 }});
+</script>
 
 {% endhighlight %}
 
 ### layout.marginX `Number`
 {:#members:layout-marginx}
 
-Sets the margin value to be horizontally left between layout and diagram
+Sets the margin value to be horizontally left between the layout and diagram
 
 #### Default Value
 
@@ -1802,44 +2420,53 @@ Sets the margin value to be horizontally left between layout and diagram
 
 {% highlight html %}
 
+<div id="diagram"></div>
+<script>
 //marginX of the layout
-$("#diagramContent").ejDiagram({layout: {marginX: 0}});
+$("#diagramContent").ejDiagram({ layout: { marginX: 50 } });
+</script>
 
 {% endhighlight %}
 
 ### layout.orientation `String`
 {:#members:layout-orientation}
 
-Sets the orientation/direction to arrange the diagram elements see <a href="global.html#LayoutOrientations">LayoutOrientations</a>
+Sets the orientation/direction to arrange the diagram elements. See <a href="global.html#layoutorientations">LayoutOrientations</a>
 
 #### Default Value
 
-* "topToBottom"
+* LayoutOrientations.TopToBottom
 
 #### Example
 
 {% highlight html %}
 
+<div id="diagram"></div>
+<script>
 //orientation of the layout
-$("#diagramContent").ejDiagram({layout: {orientation: "topToBottom"}});
+$("#diagramContent").ejDiagram({layout: { orientation: ej.datavisualization.Diagram.LayoutOrientations.LeftToRight }});
+</script>
 
 {% endhighlight %}
 
 ### layout.type `String`
 {:#members:layout-type}
 
-Sets the type of the layout based on which the elements will be arranged
+Sets the type of the layout based on which the elements will be arranged. See <a href="global.html#layouttypes">LayoutTypes</a>
 
 #### Default Value
 
-* "none"
+* LayoutTypes.None
 
 #### Example
 
 {% highlight html %}
 
+<div id="diagram"></div>
+<script>
 //type of the layout
-$("#diagramContent").ejDiagram({layout: {type: "none"}});
+$("#diagramContent").ejDiagram({ layout: { type: ej.datavisualization.Diagram.LayoutTypes.HierarchicalTree } });
+</script>
 
 {% endhighlight %}
 
@@ -1856,15 +2483,17 @@ Sets the space to be vertically left between nodes
 
 {% highlight html %}
 
+<div id="diagram"></div>
+<script>
 //verticalSpacing of the layout
-$("#diagramContent").ejDiagram({layout: {verticalSpacing: 30}});
-
+$("#diagramContent").ejDiagram({layout: { verticalSpacing: 50 }});
+</script>
 {% endhighlight %}
 
 ### locale `String`
 {:#members:locale}
 
-To define the current culture of diagram
+Defines the current culture of diagram
 
 #### Default Value
 
@@ -1876,7 +2505,7 @@ To define the current culture of diagram
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramcontent").ejDiagram({locale: "en-US"});
+$("#diagramcontent").ejDiagram({ locale: "en-US" });
 </script>
 
 {% endhighlight %}
@@ -2113,7 +2742,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.constraints `enum`
 {:#members:nodes-constraints}
 
-Enables or disables the default behaviors of the node see<a href="global.html#nodeconstraints">NodeConstraints</a>
+Enables or disables the default behaviors of the node. see<a href="global.html#nodeconstraints">NodeConstraints</a>
 
 #### Default Value
 
@@ -2256,6 +2885,37 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
+
+### nodes.cssClass `String`
+{:#members:nodes-cssclass}
+
+Configures the styles of shapes
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverNode:hover {
+        fill:blue
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var node = { name: "node", 
+	         cssClass: "hoverNode", 
+	         width: 50, height: 50, offsetX: 100, offsetY: 100 };
+			 
+$("#DiagramContent").ejDiagram({ nodes:[node] });
+</script>
+
+{% endhighlight %}
+
 
 ### nodes.event `enum`
 {:#members:nodes-event}
@@ -4031,6 +4691,42 @@ $("#DiagramContent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
+### nodes.paletteItem `Object`
+{:#members:nodes-paletteItem}
+
+Defines the size and preview size of the node to add that to symbol palette
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+	
+$("#symbolpalette").ejSymbolPalette({
+	//Defines the palette collection 
+	palettes: [{
+		name: "Basic Shapes", expanded: true,
+		items: [
+		{
+			name: "Rectangle", height: 40, width: 80,
+			//Sets preview size
+			paletteItem: {			
+                previewWidth: 100,
+				previewHeight: 100
+			}
+		}]
+	}]
+});
+
+</script>
+
+{% endhighlight %}
+
 ### nodes.parent `String`
 {:#members:nodes-parent}
 
@@ -5132,6 +5828,48 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.tooltip `String`
+{:#members:connectors-tooltip}
+
+Defines the tooltip that should be shown when the mouse hovers over node
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+
+<script type="text/x-jsrender" id="mouseovertooltip">
+   <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
+       <span style="padding: 5px;"> {{:name}} </span>
+   </div>
+</script>
+
+<script>
+var tooltip = {
+		templateId: "mouseovertooltip",
+		alignment: {
+			horizontal: "center",
+			vertical: "bottom"
+		}
+	};
+var NodeConstraints = ej.datavisualization.Diagram.NodeConstraints;
+$("#DiagramContent").ejDiagram({	
+//Defines nodes
+	nodes: [{
+		name:"Rectangle", width:50, height: 50, offsetX: 100, offsetY: 100,
+        constraints: NodeConstraints.Default & ~NodeConstraints.InheritTooltip, 
+        tooltip:tooltip
+	}]
+});
+</script>
+
+{% endhighlight %}
+
 ### nodes.trigger `enum`
 {:#members:nodes-trigger}
 
@@ -5273,7 +6011,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodeTemplate `Object`
 {:#members:nodetemplate}
 
-To customize the node properties before rendering the node.
+Binds the custom JSON data with node properties
 
 #### Default Value
 
@@ -5285,21 +6023,54 @@ To customize the node properties before rendering the node.
 
 <div id="diagram"></div>
 <script>
-function nodeTemplate(diagram, node) {node.labels[0].text = node.Name};
-$("#diagram").ejDiagram({ nodeTemplate:nodeTemplate});
+   var data = [
+        { "Id": "E1", "Name": "Maria Anders", "Designation": "Managing Director" },
+        { "Id": "E2" , "Name": "Ana Trujillo", "Designation": "Project Manager", "ReportingPerson": "E1" } ];
+		
+   $("#diagram").ejDiagram({
+	   dataSourceSettings: { id: "Id", parent: "ReportingPerson", dataSource: data },
+	   //Sets the method name to node template 
+	   nodeTemplate :"nodeTemplate"
+   });
+   
+   //Binds the custom properties with node properties and sets the styles
+    function nodeTemplate(diagram, node) {
+         node.labels[0].text = node.Name;
+     }
+   
 </script>
 
 {% endhighlight %}
 
-### pageSettings
+### pageSettings `Object`
 {:#members:pagesettings}
 
-To define the page settings of diagram
+Defines the size and appearance of diagram page
+
+### pageSettings.autoScrollBorder `Object`
+{:#members:pagesettings-autoscrollborder}
+
+Defines the maximum distance to be left between the object and the scroll bar to trigger auto scrolling
+
+#### Default Value
+
+* { left: 15, top: 15, right: 15, bottom: 15 }
+
+#### Example
+
+{% highlight html %}
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{ autoScrollBorder: { left: 50, top: 50, right: 50, bottom: 50 } }
+});
+</script>
+{% endhighlight %}
 
 ### pageSettings.multiplePage `Boolean`
 {:#members:pagesettings-multiplepage}
 
-To set whether the number of pages can be extended based on the region covered by elements
+Sets whether multiple pages can be created to fit all nodes and connectors
 
 #### Default Value
 
@@ -5309,15 +6080,18 @@ To set whether the number of pages can be extended based on the region covered b
 
 {% highlight html %}
 
-//multiplePage of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {multiplePage: false}});
-
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{multiplePage:false}
+});
+</script>
 {% endhighlight %}
 
 ### pageSettings.pageBackgroundColor `String`
 {:#members:pagesettings-pagebackgroundcolor}
 
-To set the background color of page
+Defines the background color of diagram pages
 
 #### Default Value
 
@@ -5327,15 +6101,18 @@ To set the background color of page
 
 {% highlight html %}
 
-//pageBackgroundColor of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageBackgroundColor: "#ffffff"}});
-
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{ pageBackgroundColor:"lightgray"}
+});
+</script>
 {% endhighlight %}
 
 ### pageSettings.pageBorderColor `String`
 {:#members:pagesettings-pagebordercolor}
 
-To set the border color of page
+Defines the page border color
 
 #### Default Value
 
@@ -5345,15 +6122,18 @@ To set the border color of page
 
 {% highlight html %}
 
-//pageBorderColor of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageBorderColor: "#565656"}});
-
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{ pageBorderColor:"black", pageBorderWidth: 2}
+});
+</script>
 {% endhighlight %}
 
 ### pageSettings.pageBorderWidth `Number`
 {:#members:pagesettings-pageborderwidth}
 
-To set the border width of the page
+Sets the border width of diagram pages
 
 #### Default Value
 
@@ -5363,15 +6143,18 @@ To set the border width of the page
 
 {% highlight html %}
 
-//pageBorderWidth of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageBorderWidth: 3}});
-
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{ pageBorderColor:"black", pageBorderWidth: 2}
+});
+</script>
 {% endhighlight %}
 
 ### pageSettings.pageHeight `Number`
 {:#members:pagesettings-pageheight}
 
-To set the height of the page
+Defines the height of a page
 
 #### Default Value
 
@@ -5381,15 +6164,18 @@ To set the height of the page
 
 {% highlight html %}
 
-//pageHeight of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageHeight: 4500}});
-
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{ pageWidth: 500, pageHeight: 500 }
+});
+</script>
 {% endhighlight %}
 
 ### pageSettings.pageMargin `Number`
 {:#members:pagesettings-pagemargin}
 
-To set the margin of page
+Defines the page margin
 
 #### Default Value
 
@@ -5399,15 +6185,40 @@ To set the margin of page
 
 {% highlight html %}
 
-//pageMargin of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {pageMargin: 24}});
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{ pageMargin : 20 }
+});
+</script>
+{% endhighlight %}
 
+### pageSettings.pageOrientation `String`
+{:#members:pagesettings-pageorientation}
+
+Sets the orientation of the page. See<a href="global.html#pageorientations">PageOrientation</a>
+
+#### Default Value
+
+* PageOrientations.Portrait
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{ pageWidth: 800, pageHeight: 500, 
+	pageOrientation:ej.datavisualization.Diagram.PageOrientations.Landscape }
+});
+</script>
 {% endhighlight %}
 
 ### pageSettings.pageWidth `Number`
 {:#members:pagesettings-pagewidth}
 
-To set the width of the page
+Defines the height of a diagram page
 
 #### Default Value
 
@@ -5417,15 +6228,61 @@ To set the width of the page
 
 {% highlight html %}
 
-//pageWidth
-$("#diagramContent").ejDiagram({pageSettings: {pageWidth: 4500}});
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{ pageWidth: 500, pageHeight: 500 }
+});
+</script>
+{% endhighlight %}
 
+### pageSettings.scrollableArea `Object`
+{:#members:pagesettings-scrollablearea}
+
+Defines the scrollable area of diagram. Applicable, if the scroll limit is "limited".
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{ scrollLimit: "limited",
+    scrollableArea: {x:0, y:0, width:1000, height:1000} }
+});
+</script>
+{% endhighlight %}
+
+### pageSettings.scrollLimit `String`
+{:#members:pagesettings-scrolllimit}
+
+Defines the scrollable region of diagram. See<a href="global.html#scrolllimit">ScrollLimit</a>
+
+#### Default Value
+
+* ScrollLimit.Infinity
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{ scrollLimit: ej.datavisualization.Diagram.ScrollLimit.Diagram }
+});
+</script>
 {% endhighlight %}
 
 ### pageSettings.showPageBreak `Boolean`
 {:#members:pagesettings-showpagebreak}
 
-Enables or disables the page breaks in diagram
+Enables or disables the page breaks
 
 #### Default Value
 
@@ -5435,20 +6292,186 @@ Enables or disables the page breaks in diagram
 
 {% highlight html %}
 
-//showPageBreak of the diagram
-$("#diagramContent").ejDiagram({pageSettings: {showPageBreak: false}});
+<div id="diagram"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+    pageSettings:{ showPageBreak: true }
+});
+</script>
+{% endhighlight %}
+
+### scrollSettings `Object`
+{:#members:scrollsettings}
+
+Defines the zoom value, zoom factor, scroll status and view port size of the diagram
+
+### scrollSettings.currentZoom `Number`
+{:#members:scrollsettings-currentzoom}
+
+Allows to read the zoom value of diagram
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>	
+var diagram = $("#DiagramContent").ejDiagram("instance");
+console.log(diagram.model.scrollSettings.currentZoom);
+</script>
+
+{% endhighlight %}
+
+### scrollSettings.horizontalOffset `Number`
+{:#members:scrollsettings-horizontaloffset}
+
+Sets the horizontal scroll offset
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+	scrollSettings:{ horizontalOffset: 50 }
+})
+</script>
+
+{% endhighlight %}
+
+### scrollSettings.padding `Object`
+{:#members:scrollsettings-padding}
+
+Allows to extend the scrollable region that is based on the scroll limit
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+	//Sets the region to be extended
+    scrollSettings: { padding: { left: 25, right: 25, top: 25, bottom: 25} }
+});
+</script>
+
+{% endhighlight %}
+
+### scrollSettings.verticalOffset `Number`
+{:#members:scrollsettings-verticaloffset}
+
+Sets the vertical scroll offset
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+	scrollSettings:{ verticalOffset: 50 }
+})
+</script>
+
+{% endhighlight %}
+
+### scrollSettings.viewPortWidth `Number`
+{:#members:scrollsettings-viewportwidth}
+
+Allows to read the view port width of the diagram
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+	
+var diagram = $("#DiagramContent").ejDiagram("instance");
+console.log(diagram.model.scrollSettings.viewPortWidth);
+
+</script>
+
+{% endhighlight %}
+
+### scrollSettings.viewPortHeight `Number`
+{:#members:scrollsettings-viewportheight}
+
+Allows to read the view port height of the diagram
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+	
+var diagram = $("#DiagramContent").ejDiagram("instance");
+console.log(diagram.model.scrollSettings.viewPortHeight);
+
+</script>
 
 {% endhighlight %}
 
 ### selectedItems `Object`
 {:#members:selecteditems}
 
-The object to define the behavior of the selected items
+Defines the size and position of selected items and defines the appearance of selector
+
+### selectedItems.children `Array`
+{:#members:selecteditems-children}
+
+A read only collection of the selected items
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram = $("#DiagramContent").ejDiagram("instance");
+//Read the selected items 
+for(var i =0; i< diagram.model.selectedItems.children; i++){
+    //Do your actions here
+}
+</script>
+
+{% endhighlight %}
 
 ### selectedItems.constraints `enum`
 {:#members:selecteditems-constraints}
 
-Sets the visible items of selector see <a href="global.html#SelectorConstraints">SelectorConstraints</a>
+Controls the visibility of selector. See <a href="global.html#selectorconstraints">SelectorConstraints</a>
 
 #### Default Value
 
@@ -5460,10 +6483,37 @@ Sets the visible items of selector see <a href="global.html#SelectorConstraints"
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramContent").ejDiagram({selectedItems:{constraints: ej.datavisualization.Diagram.SelectorConstraints.None} }});
+$("#DiagramContent").ejDiagram({
+     selectedItems: { constraints: ej.datavisualization.Diagram.SelectorConstraints.UserHandles } 
+});
 </script>
 
 {% endhighlight %}
+
+### selectedItems.getConstraints `Object`
+{:#members:selecteditems-height}
+
+Defines a method that dynamically enables/ disables the interaction with multiple selection.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+selectedItems: { 
+	getConstraints: function() {
+		//Allows to drag the multiple selected elements even when the selected elements are not movable 
+		return ej.datavisualization.Diagram.NodeConstraints.Drag | ej.datavisualization.Diagram.NodeConstraints.Resize
+    } }
+});
+</script>
+{% endhighlight %}
+
 
 ### selectedItems.height `Number`
 {:#members:selecteditems-height}
@@ -5477,15 +6527,19 @@ Sets the height of the selected items
 #### Example
 
 {% highlight html %}
-
-$("#diagramContent").ejDiagram({selectedItems: {height: 50}});
-
+<div id="diagramcontent"></div>
+<script>
+//Sets the height of the selector as 100
+$("#DiagramContent").ejDiagram({
+     selectedItems: { height:100, width: 100 }
+});
+</script>
 {% endhighlight %}
 
 ### selectedItems.offsetX `Number`
 {:#members:selecteditems-offsetx}
 
-Defines the X co-ordinate of the selected item
+Sets the x position of the selector 
 
 #### Default Value
 
@@ -5494,15 +6548,18 @@ Defines the X co-ordinate of the selected item
 #### Example
 
 {% highlight html %}
-
-$("#diagramContent").ejDiagram({selectedItems: {offsetX: 50}});
-
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+     selectedItems: { offsetX:100, offsetY: 100 }
+});;
+</script>
 {% endhighlight %}
 
 ### selectedItems.offsetY `Number`
 {:#members:selecteditems-offsety}
 
-Defines the Y co-ordinate of the selected item
+Sets the y position of the selector
 
 #### Default Value
 
@@ -5511,15 +6568,18 @@ Defines the Y co-ordinate of the selected item
 #### Example
 
 {% highlight html %}
-
-$("#diagramContent").ejDiagram({selectedItems: {offsetY: 50}});
-
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+     selectedItems: { offsetX:100, offsetY: 100 }
+});
+</script>
 {% endhighlight %}
 
 ### selectedItems.rotateAngle `Number`
 {:#members:selecteditems-rotateangle}
 
-Sets the rotation angle of the selected items.
+Sets the angle to rotate the selected items
 
 #### Default Value
 
@@ -5528,15 +6588,38 @@ Sets the rotation angle of the selected items.
 #### Example
 
 {% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+     selectedItems: { rotateAngle: 90 }
+});
+</script>
+{% endhighlight %}
 
-$("#diagramContent").ejDiagram({selectedItems: {rotateAngle: 50}});
+### selectedItems.tooltip `Number`
+{:#members:selecteditems-tooltip}
 
+Sets the angle to rotate the selected items. [Link Model.tooltip]
+
+#### Default Value
+
+* ej.datavisualization.Diagram.Tooltip()
+
+#### Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+     selectedItems: { tooltip : { alignment:{ vertical:"top" } } }
+});
+</script>
 {% endhighlight %}
 
 ### selectedItems.userHandles `Array`
 {:#members:selecteditems-userhandles}
 
-To add frequently using commands around selector
+A collection of frequently using commands that have to be added around the selector. [Link UserHandles]
 
 #### Default Value
 
@@ -5549,11 +6632,9 @@ To add frequently using commands around selector
 <div id="diagramcontent"></div>
 <script>
 var userHandle= [];
-function createUserHandles() {
 var cloneHandle = ej.datavisualization.Diagram.UserHandle();
-userhandle.push(cloneHandles);
-}
-$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+userHandle.push(cloneHandle);
+$("#DiagramContent").ejDiagram({selectedItems:{userHandles:userHandle}});
 </script>
 
 {% endhighlight %}
@@ -5570,8 +6651,14 @@ Sets the width of the selected items
 #### Example
 
 {% highlight html %}
-
-$("#diagramContent").ejDiagram({selectedItems: {width: 50}});
+<div id="diagramcontent"></div>
+<script>
+	
+//Sets the width of the selector as 100
+$("#DiagramContent").ejDiagram({
+     selectedItems: { height:100, width: 100 }
+});
+</script>
 
 {% endhighlight %}
 
@@ -5598,12 +6685,12 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 ### snapSettings `Object`
 {:#members:snapsettings}
 
-Specifies the snap settings of the diagram.
+Defines the gridlines and defines how and when the objects have to be snapped
 
 ### snapSettings.enableSnapToObject `Boolean`
 {:#members:snapsettings-enablesnaptoobject}
 
-Enables or disables the snap to object
+Enables or disables snapping nodes/connectors to objects
 
 #### Default Value
 
@@ -5613,21 +6700,19 @@ Enables or disables the snap to object
 
 {% highlight html %}
 
-var snap = {"enableSnapToObject":true};
-//enableSnapToObject:
-$("#diagramContent").ejDiagram({snapSettings: snap});
+$("#DiagramContent").ejDiagram({ snapSettings:{ enableSnapToObject: false } });
 
 {% endhighlight %}
 
 ### snapSettings.horizontalGridLines `Object`
 {:#members:snapsettings-horizontalgridlines}
 
-Specifies the settings of horizontal grid lines.
+Defines the appearance of horizontal gridlines
 
 ### snapSettings.horizontalGridLines.lineColor `String`
 {:#members:snapsettings-horizontalgridlines-linecolor}
 
-Sets the line color for horizontal gridlines
+Defines the line color of horizontal grid lines
 
 #### Default Value
 
@@ -5639,9 +6724,8 @@ Sets the line color for horizontal gridlines
 
 <div id="diagramcontent"></div>
 <script>
-var gridline = { "snapConstraints":"lineColor": "blue" };
-//Linecolor of the horizontal gridlines
-$("#diagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} });
+var gridline = { lineColor :"blue" };
+$("#DiagramContent").ejDiagram({ snapSettings: { horizontalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -5653,7 +6737,7 @@ Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
 
 #### Default Value
 
-* "0"
+* ""
 
 #### Example
 
@@ -5661,7 +6745,8 @@ Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { lineDashArray: "2 2"}}});
+var gridline = { lineColor :"blue", lineDashArray:"2,2" };
+$("#DiagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -5669,7 +6754,7 @@ $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { lineDashArray: 
 ### snapSettings.horizontalGridLines.linesInterval `Array`
 {:#members:snapsettings-horizontalgridlines-linesinterval}
 
-Specifies pattern of lines and gaps of horizontal gridlines
+A pattern of lines and gaps that defines a set of horizontal gridlines
 
 #### Default Value
 
@@ -5681,8 +6766,8 @@ Specifies pattern of lines and gaps of horizontal gridlines
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ snapSettings: {
-horizontalGridLines: { linesInterval: [1, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15] }
+var gridline = { linesInterval: [1, 14, 0.5, 14.5 ] };
+$("#DiagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} });
 }});
 </script>
 
@@ -5691,7 +6776,7 @@ horizontalGridLines: { linesInterval: [1, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25
 ### snapSettings.horizontalGridLines.snapInterval `Array`
 {:#members:snapsettings-horizontalgridlines-snapinterval}
 
-Specifies the snap intervals of horizontal grid lines.
+Specifies a set of intervals to snap the objects
 
 #### Default Value
 
@@ -5703,7 +6788,9 @@ Specifies the snap intervals of horizontal grid lines.
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { snapInterval: [10] }}});
+//Snap objects to every 5th pixel
+var gridline = { snapInterval : [5] };
+$("#DiagramContent").ejDiagram({snapSettings: { horizontalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -5711,7 +6798,7 @@ $("#diagram").ejDiagram({ snapSettings: { horizontalGridLines: { snapInterval: [
 ### snapSettings.snapAngle `Number`
 {:#members:snapsettings-snapangle}
 
-The Angle by which the object to be snapped
+Defines the angle by which the object needs to be snapped
 
 #### Default Value
 
@@ -5721,16 +6808,14 @@ The Angle by which the object to be snapped
 
 {% highlight html %}
 
-var snap = {"snapAngle":5};
-//enableSnapToObject:
-$("#diagramContent").ejDiagram({snapSettings: snap});
+$("#DiagramContent").ejDiagram({snapSettings: { snapAngle: 10} });
 
 {% endhighlight %}
 
 ### snapSettings.snapObjectDistance `Number`
 {:#members:snapsettings-snapobjectdistance}
 
-Relative distance between the nearer object and selected object
+Defines the minimum distance between the selected object and the nearest object
 
 #### Default Value
 
@@ -5749,12 +6834,12 @@ $("#diagramContent").ejDiagram({snapSettings: snap});
 ### snapSettings.verticalGridLines `Object`
 {:#members:snapsettings-verticalgridlines}
 
-Specifies the settings of vertical grid lines.
+Defines the appearance of horizontal gridlines
 
 ### snapSettings.verticalGridLines.lineColor `String`
 {:#members:snapsettings-verticalgridlines-linecolor}
 
-Sets the line color of vertical gridlines
+Defines the line color of horizontal grid lines
 
 #### Default Value
 
@@ -5766,9 +6851,8 @@ Sets the line color of vertical gridlines
 
 <div id="diagramcontent"></div>
 <script>
-var gridline = { "snapConstraints":"lineColor": "blue" };
-//Linecolor of the vertical gridlines
-$("#diagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
+var gridline = { lineColor :"blue" };
+$("#DiagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -5776,11 +6860,11 @@ $("#diagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 ### snapSettings.verticalGridLines.lineDashArray `String`
 {:#members:snapsettings-verticalgridlines-linedasharray}
 
-Specifies the pattern of dashes and gaps used to stroke vertical grid lines
+Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
 
 #### Default Value
 
-* "0"
+* ""
 
 #### Example
 
@@ -5788,7 +6872,8 @@ Specifies the pattern of dashes and gaps used to stroke vertical grid lines
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { lineDashArray: "2 2"}}});
+var gridline = { lineColor :"blue", lineDashArray:"2,2" };
+$("#DiagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -5796,7 +6881,7 @@ $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { lineDashArray: "2
 ### snapSettings.verticalGridLines.linesInterval `Array`
 {:#members:snapsettings-verticalgridlines-linesinterval}
 
-Specifies pattern of lines and gaps of vertical gridlines
+A pattern of lines and gaps that defines a set of horizontal gridlines
 
 #### Default Value
 
@@ -5808,9 +6893,8 @@ Specifies pattern of lines and gaps of vertical gridlines
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ snapSettings: {
-verticalGridLines: { linesInterval: [1, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 15] }
-}});
+var gridline = { linesInterval: [1, 14, 0.5, 14.5 ] };
+$("#DiagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -5818,7 +6902,7 @@ verticalGridLines: { linesInterval: [1, 14, 0.25, 15, 0.25, 15, 0.25, 15, 0.25, 
 ### snapSettings.verticalGridLines.snapInterval `Array`
 {:#members:snapsettings-verticalgridlines-snapinterval}
 
-Specifies the snap intervals for vertical grid lines.
+Specifies a set of intervals to snap the objects
 
 #### Default Value
 
@@ -5830,7 +6914,9 @@ Specifies the snap intervals for vertical grid lines.
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { snapInterval: [10] }}});
+//Snap objects to every 5th pixel
+var gridline = { snapInterval : [5] };
+$("#DiagramContent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 </script>
 
 {% endhighlight %}
@@ -5838,7 +6924,7 @@ $("#diagram").ejDiagram({ snapSettings: { verticalGridLines: { snapInterval: [10
 ### tool `enum`
 {:#members:tool}
 
-Sets the default behavior of the diagram see<a href="global.html#Tool">Tool</a>
+Enables/Disables the interactive behaviors of diagram. See<a href="global.html#tool">Tool</a>
 
 #### Default Value
 
@@ -5850,15 +6936,162 @@ Sets the default behavior of the diagram see<a href="global.html#Tool">Tool</a>
 
 <div id="diagramcontent"></div>
 <script>
-$("#diagramContent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.Default} });
+//Prevents editing and allows only to zoom/pan
+$("#DiagramContent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.ZoomPan});
 </script>
 
 {% endhighlight %}
 
-### tooltipTemplateId `String`
-{:#members:tooltiptemplateid}
+### tooltip `Object`
+{:#members:tooltip}
 
-To set custom style for tool tip of diagram
+An object that defines the description, appearance and alignments of tooltips
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script type="text/x-jsrender" id="mouseovertooltip">
+   <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
+       <span style="padding: 5px;"> {{:Designation}} </span>
+   </div>
+</script>
+
+<script>
+$("#DiagramContent").ejDiagram({
+	//Defines mouse over tooltip
+	tooltip: {
+		templateId: "mouseovertooltip",
+		alignment: {
+			horizontal: "center",
+			vertical: "bottom"
+		}
+	},
+	//Defines nodes
+	nodes: [{
+		name: "elizabeth",width: 70,height: 40,	offsetX: 100,offsetY: 100,
+		Designation: "Managing Director"
+	}]
+});
+</script>
+
+{% endhighlight %}
+
+### tooltip.alignment `Object`
+{:#members:alignment}
+
+Aligns the tooltip around nodes/connectors
+
+### tooltip.alignment.horizontal `String`
+{:#members:alignment-horizontal}
+
+Defines the horizontal alignment of tooltip. See <a href="global.html#horizontalalignment">HorizontalAlignment</a>
+
+#### Default Value
+
+* HorizontalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+	tooltip: {
+		alignment: {
+			horizontal: ej.datavisualization.Diagram.HorizontalAlignment.Center
+		}
+	}
+});
+</script>
+
+{% endhighlight %}
+
+### tooltip.alignment.vertical `String`
+{:#members:alignment-vertical}
+
+Defines the vertical alignment of tooltip. See <a href="global.html#verticalalignment">VerticalAlignment</a>
+
+#### Default Value
+
+* VerticalAlignment.Bottom
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+	tooltip: {
+		alignment: {
+			vertical: ej.datavisualization.Diagram.VerticalAlignment.Bottom
+		}
+	}
+});
+</script>
+
+{% endhighlight %}
+
+### tooltip.margin `Object`
+{:#members:margin}
+
+Sets the margin of the tooltip
+
+#### Default Value
+
+* { left: 5, right: 5, top: 5, bottom: 5 }
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+	tooltip: {
+		margin : { top:10 }
+	}
+});
+</script>
+
+{% endhighlight %}
+
+### tooltip.relativeMode `String`
+{:#members:relativemode}
+
+Defines whether the tooltip should be shown at the mouse position or around node. See <a href="global.html#relativemode">RelativeMode</a>
+
+#### Default Value
+
+* RelativeMode.Object
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#DiagramContent").ejDiagram({
+	tooltip: {
+		//Shows tooltip at the mouse position
+		relativeMode: ej.datavisualization.Diagram.RelativeMode.Mouse
+	}
+});
+</script>
+
+{% endhighlight %}
+
+### tooltip.templateId `String`
+{:#members:templateid}
+
+Sets the svg/html template to be bound with tooltip
 
 #### Default Value
 
@@ -5868,13 +7101,18 @@ To set custom style for tool tip of diagram
 
 {% highlight html %}
 
-<div id="diagramcontent"></div>
-<script type="text/x-jsrender" id="toolTipId">
-<span >{{:offsetX}}{{:x}}{{:offsetY}}{{:y}}
-</span>
+<script type="text/x-jsrender" id="mouseovertooltip">
+   <div style="background-color: #F08080; color: white; white-space: nowrap; height: 20px">
+       <span style="padding: 5px;"> {{:Designation}} </span>
+   </div>
 </script>
-<script>
-$("#diagramcontent").ejDiagram({ tooltipTemplateId: "toolTipId"});
+
+<script>	
+$("#DiagramContent").ejDiagram({
+	//Defines mouse over tooltip
+	tooltip: {
+		templateId: "mouseovertooltip"
+	} });	
 </script>
 
 {% endhighlight %}
@@ -5902,7 +7140,7 @@ $("#diagramcontent").ejDiagram("instance");
 ### width `String`
 {:#members:width}
 
-Specifies the width of the diagram.
+Specifies the width of the diagram
 
 #### Default Value
 
@@ -5914,7 +7152,7 @@ Specifies the width of the diagram.
 
 <div id="diagram"></div>
 <script>
-$("#diagram").ejDiagram({ width:"100%" });
+$("#DiagramContent").ejDiagram({ width:"1000" });
 </script>
 
 {% endhighlight %}
