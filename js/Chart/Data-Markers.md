@@ -15,7 +15,7 @@ Data markers are used to provide information about the data point to the user. Y
 
 You can add shapes to any chart types but they are often used with line, area and spline series to indicate each data point. It is highlighted when you hover the mouse on the shape.
 
-Shapes can be added to the chart by enabling the [visible](../api/ejchart#members:series-marker-datalabel-visible)) option of the [marker](../api/ejchart#members:series-marker) property. There are different shapes you can add to the chart by using the shape option such as rectangle, circle, diamond etc.
+Shapes can be added to the chart by enabling the [`visible`](../api/ejchart#members:series-marker-datalabel-visible)) option of the [`marker`](../api/ejchart#members:series-marker) property. There are different shapes you can add to the chart by using the shape option such as rectangle, circle, diamond etc.
 
 The following code example explains on how to enable series marker and add shapes,
 
@@ -61,7 +61,7 @@ Data Markers
 
 ## Add image as marker
 
-Apart from the shapes, you can also add images to mark the data point by using the [imageUrl](../api/ejchart#members:series-marker-imageurl) option.
+Apart from the shapes, you can also add images to mark the data point by using the [`imageUrl`](../api/ejchart#members:series-marker-imageurl) option.
 
 The following code example illustrates this,
 
@@ -95,7 +95,7 @@ Data Markers
 
 ## Add labels
 
-Data label can be added to a chart series by enabling the [visible](../api/ejchart#members:series-marker-datalabel-visible)) property in the [dataLabel](../api/ejchart#members:series-marker-datalabel)) option. The labels appear at the top of the data point, by default.
+Data label can be added to a chart series by enabling the [`visible`](../api/ejchart#members:series-marker-datalabel-visible)) property in the [`dataLabel`](../api/ejchart#members:series-marker-datalabel)) option. The labels appear at the top of the data point, by default.
 
 The following code example shows how to enable data label and set its horizontal and vertical text alignment. 
 
@@ -189,7 +189,7 @@ Data Markers
 {:.caption}
 
 
-The appearance of the labels can be customized by using the [font](../api/ejchart#members:series-marker-datalabel-font) and [offset](../api/ejchart#members:series-marker-datalabel-offset) options. The [offset](../api/ejchart#members:series-marker-datalabel-offset) option is used to move the labels vertically. Also, labels can be rotated by using the [rotate](../api/ejchart#members:series-marker-datalabel-rotate) option.
+The appearance of the labels can be customized by using the [`font`](../api/ejchart#members:series-marker-datalabel-font) and [`offset`](../api/ejchart#members:series-marker-datalabel-offset) options. The [`offset`](../api/ejchart#members:series-marker-datalabel-offset) option is used to move the labels vertically. Also, labels can be rotated by using the [`rotate`](../api/ejchart#members:series-marker-datalabel-rotate) option.
 
 The following code example shows how to rotate datalabel text and customize the font.
 
@@ -222,7 +222,7 @@ Data Markers
 {:.caption}
 
 
-You can position the label to the top, center or bottom position of the segment by using the [textPosition](../api/ejchart#members:series-marker-datalabel-textposition) option for the chart types such as column, bar, stacked bar, stacked column, 100% stacked bar, 100% stacked column, candle and OHLC.
+You can position the label to the top, center or bottom position of the segment by using the [`textPosition`](../api/ejchart#members:series-marker-datalabel-textposition) option for the chart types such as column, bar, stacked bar, stacked column, 100% stacked bar, 100% stacked column, candle and OHLC.
 
 The following code example shows how to set textPosition to display data label in the middle of the column rectangle.
 
@@ -253,7 +253,7 @@ The following code example shows how to set textPosition to display data label i
 Data Markers
 {:.caption}
 
-The label can be positioned inside or outside the perimeter of the series by using the [labelPosition](../api/ejchart#members:series-labelposition) option for the chart types such as Pie and Doughnut, .
+The label can be positioned inside or outside the perimeter of the series by using the [`labelPosition`](../api/ejchart#members:series-labelposition) option for the chart types such as Pie and Doughnut, .
 
 The following code example shows how to set the *labelPosition*,
 
@@ -294,7 +294,7 @@ Data Markers
 {:.caption}
 
 
-The following screenshot displays the labels when the [labelPosition](../api/ejchart#members:series-labelposition) is set as *inside* position.
+The following screenshot displays the labels when the [`labelPosition`](../api/ejchart#members:series-labelposition) is set as *inside* position.
 
 ![](/js/Chart/Data-Markers_images/Data-Markers_img8.png)
 
@@ -302,7 +302,7 @@ Data Markers
 {:.caption}
 
 
-The following screenshot displays the labels when the [labelPosition](../api/ejchart#members:series-labelposition) is set as *outsideExtended* position.
+The following screenshot displays the labels when the [`labelPosition`](../api/ejchart#members:series-labelposition) is set as *outsideExtended* position.
 
 ![](/js/Chart/Data-Markers_images/Data-Markers_img9.png)
 
@@ -315,7 +315,7 @@ By using the ejChart, you can also customize the individual/specific markers wit
 
 There are two ways to achieve this based on how the data is fed to the series.
 
-When the data is provided by using the [points](../api/ejchart#members:series-points) option, you can add marker for each data point or specific point by using the [marker](../api/ejchart#members:series-marker) option as illustrated in the following code example.
+When the data is provided by using the [`points`](../api/ejchart#members:series-points) option, you can add marker for each data point or specific point by using the [`marker`](../api/ejchart#members:series-marker) option as illustrated in the following code example.
 
 {% highlight js %}
 
@@ -363,7 +363,7 @@ Data Markers
 {:.caption}
 
 
-When the data is bound to the series by using the [dataSource](../api/ejchart#members:series-datasource) option, you can customize the points in the [seriesRendering](../api/ejchart#members:events-seriesrendering) event as illustarted in the following code example,
+When the data is bound to the series by using the [`dataSource`](../api/ejchart#members:series-datasource) option, you can customize the points in the [`seriesRendering`](../api/ejchart#members:events-seriesrendering) event as illustarted in the following code example,
 
 {% highlight js %}
 
@@ -422,7 +422,7 @@ Data Markers
 
 ## Connect Line
 
-This feature is used to connect label and data point by using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. Connecterline types can be set as *bezier* or *line* by using the [type](../api/ejchart#members:series-marker-datalabel-connectorline-type) option.
+This feature is used to connect label and data point by using a line. It can be enabled only for Pie, Doughnut, Pyramid and Funnel chart types. Connecterline types can be set as *bezier* or *line* by using the [`type`](../api/ejchart#members:series-marker-datalabel-connectorline-type) option.
 
  The following code example illustrates this,
 
@@ -458,7 +458,7 @@ Data Markers
 
 ## Smartlabels
 
-Overlapping of the labels can be avoided by enabling the [enableSmartLabels](../api/ejchart#members:series-enablesmartlabels) property. The default value is *true* for *accumulation type series* and *false* for *other series types*.
+Overlapping of the labels can be avoided by enabling the [`enableSmartLabels`](../api/ejchart#members:series-enablesmartlabels) property. The default value is *true* for *accumulation type series* and *false* for *other series types*.
 
 The following code example shows how to enable smart labels,
 

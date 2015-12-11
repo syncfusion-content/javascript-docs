@@ -9,7 +9,7 @@ documentation: ug
 
 # Trendlines
 
-EjChart can generate Trendlines for Cartesian type series *(line, column, scatter, area, candle, hilo etc.)* except bar type series. You can add more than one trendline object to the [trendlines](../api/ejchart#members:series-trendlines) option.
+EjChart can generate Trendlines for Cartesian type series *(line, column, scatter, area, candle, hilo etc.)* except bar type series. You can add more than one trendline object to the [`trendlines`](../api/ejchart#members:series-trendlines) option.
 
 {% highlight js %}
 
@@ -37,7 +37,7 @@ Adding Trendline to the chart
 
 ## Customize the trendline styles
 
-A trendline can be customized by using the properties such as [fill](../api/ejchart#members:series-trendlines-fill), [width](../api/ejchart#members:series-trendlines-width), **dahsArray** and **opacity**. The default type of trendline is **"linear"**.
+A trendline can be customized by using the properties such as [`fill`](../api/ejchart#members:series-trendlines-fill), [`width`](../api/ejchart#members:series-trendlines-width), **dahsArray** and **opacity**. The default type of trendline is **"linear"**.
 
 {% highlight js %}
 
@@ -74,7 +74,7 @@ EjChart supports the following type of Trendlines.
 
 ### Linear
 
-To render Linear Trendline, you have to set the [type](../api/ejchart#members:series-trendlines-type) as **"linear"**. 
+To render Linear Trendline, you have to set the [`type`](../api/ejchart#members:series-trendlines-type) as **"linear"**. 
 
 {% highlight js %}
 
@@ -99,7 +99,7 @@ Adding Linear Trendline to the chart
 
 ### Exponential
 
-Exponential Trendline can be rendered by setting the [type](../api/ejchart#members:series-trendlines-type) as **"exponential"**. 
+Exponential Trendline can be rendered by setting the [`type`](../api/ejchart#members:series-trendlines-type) as **"exponential"**. 
 
 {% highlight js %}
 
@@ -124,7 +124,7 @@ Adding Exponential Trendline to the chart
 
 ### Logarithmic
 
-Logarithmic Trendline can be rendered by setting the [type](../api/ejchart#members:series-trendlines-type) as **"Logarithmic"**.  
+Logarithmic Trendline can be rendered by setting the [`type`](../api/ejchart#members:series-trendlines-type) as **"Logarithmic"**.  
 
 {% highlight js %}
 
@@ -149,7 +149,7 @@ Adding Logarithmic Trendline to the chart
 
 ### Power
 
-Power Trendline can be rendered by setting the [type](../api/ejchart#members:series-trendlines-type) of the trendline as **"power"**. 
+Power Trendline can be rendered by setting the [`type`](../api/ejchart#members:series-trendlines-type) of the trendline as **"power"**. 
 
 {% highlight js %}
 
@@ -174,7 +174,7 @@ Adding Power Trendline to the chart
 
 ### Polynomial
 
-Polynomial Trendline can be rendered by setting the trendline [type](../api/ejchart#members:series-trendlines-type) as **"polynomial"**.  You can change the polynomial order by using the **polynomialOrder** of the trendlines. It ranges from 2 to 6.
+Polynomial Trendline can be rendered by setting the trendline [`type`](../api/ejchart#members:series-trendlines-type) as **"polynomial"**.  You can change the polynomial order by using the **polynomialOrder** of the trendlines. It ranges from 2 to 6.
 
 {% highlight js %}
 
@@ -206,7 +206,7 @@ Adding Polynomial Trendline to the chart
 
 ### Forward Forecasting
 
-The value set for [forwardForecast](../api/ejchart#members:series-trendlines-forwardForecast) is used to determine the distance moving towards the future trend.
+The value set for [`forwardForecast`](../api/ejchart#members:series-trendlines-forwardForecast) is used to determine the distance moving towards the future trend.
 
 {% highlight js %}
 
@@ -233,7 +233,7 @@ Adding ForwardForecast value to Chart Trendline
 
 ### Backward Forecasting
 
-The value set for the [backwardForecast](../api/ejchart#members:series-trendlines-backwardForecast) is used to determine the past trends.
+The value set for the [`backwardForecast`](../api/ejchart#members:series-trendlines-backwardForecast) is used to determine the past trends.
 
 {% highlight js %}
 
@@ -259,7 +259,7 @@ Adding BackwardForecast  value to Chart Trendline
 
 ## Trendlines Legend
 
-To display the legend item for trendline, use the [name](../api/ejchart#members:series-trendlines-name) property. You can interact with the trendline legends similar to the series legends *(show/hide trendlines on legend click)*.  
+To display the legend item for trendline, use the [`name`](../api/ejchart#members:series-trendlines-name) property. You can interact with the trendline legends similar to the series legends *(show/hide trendlines on legend click)*.  
 
 {% highlight js %}
 

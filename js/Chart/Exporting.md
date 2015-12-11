@@ -11,7 +11,7 @@ documentation: ug
 
 ## Image Exporting
 
-The chart can be exported to image when it is rendered in canvas. To render a chart in canvas, set the [enableCanvasRendering]{../api/ejchart#members:enablecanvasrendering} option to *true*. To export the chart, you can use the [export]{../api/ejchart#methods:export} method of the chart. Refer to the online [KB for exporting](http://www.syncfusion.com/kb/5045) to know more about chart exporting. 
+The chart can be exported to image when it is rendered in canvas. To render a chart in canvas, set the [`enableCanvasRendering`](../api/ejchart#members:enablecanvasrendering) option to *true*. To export the chart, you can use the [`export`](../api/ejchart#methods:export) method of the chart. Refer to the online [`KB for exporting`](http://www.syncfusion.com/kb/5045) to know more about chart exporting. 
 
 N> Exporting chart as an image is supported in all major browsers except Internet Explorer due to its restriction towards client side download.
 
@@ -109,7 +109,7 @@ To convert the chart data from client to server-side, refer to the following ste
 4. Host the MVC application in your server and get the link for exporting action method
 Example: http://js.syncfusion.com/ExportingServices/api/JSChartExport/ExcelExport
 
-5. To pass client data to server-side, you need to call the [export]{../api/ejchart#methods:export} method and pass export type (either image or excel) and server-side **URL** as an argument. The third argument of the export method is a Boolean property that specifies whether only the current chart should be exported or all charts in page should be exported.
+5. To pass client data to server-side, you need to call the [`export`](../api/ejchart#methods:export) method and pass export type (either image or excel) and server-side **URL** as an argument. The third argument of the export method is a Boolean property that specifies whether only the current chart should be exported or all charts in page should be exported.
 
 
 {% highlight html %}
@@ -156,7 +156,7 @@ Export chart to excel page
 
 ## Multiple Chart Exporting
 
-EjChart supports exporting more than one charts in a page, with the *third* argument for the [export]{../api/ejchart#methods:export} method.
+EjChart supports exporting more than one charts in a page, with the *third* argument for the [`export`](../api/ejchart#methods:export) method.
 
 N> Refer to the MultipleExportType.AppendToSheet, MultipleExportType.NewSheet. 
 
