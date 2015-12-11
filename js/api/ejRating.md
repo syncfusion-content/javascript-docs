@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejRating
+description: API reference for ejRating
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: Rating, ejRating, syncfusion, Rating api 
 ---
 
 
@@ -16,16 +16,22 @@ The Rating control provides an intuitive Rating experience that enables you to s
 
 
 
+#### Syntax
 
-$(element).ejRating<span class="signature">()</span>
+{% highlight js %}
+
+$(element).ejRating()
+
+{% endhighlight %}
 
 
 
 
 
 
-Example
-{:.example}
+
+#### Example
+
 
 
 {% highlight html %}
@@ -40,8 +46,8 @@ $('#rating').ejRating();
 
 
 
-Requires
-{:.require}
+#### Requires
+
 
 
 * module:jQuery
@@ -58,7 +64,7 @@ Requires
 
 
 
-### allowReset<span class="type-signature type boolean">boolean</span>
+### allowReset `boolean`
 {:#members:allowreset}
 
 
@@ -67,8 +73,8 @@ Requires
 Enables the rating control with reset button.It can be used to reset the rating control value.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -77,8 +83,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -93,7 +99,7 @@ Example
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -102,8 +108,8 @@ Example
 Specify the CSS class to rating to achieve custom theme.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -112,8 +118,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -128,7 +134,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -137,8 +143,8 @@ Example
 When this property is set to false, it disables the rating control.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -147,8 +153,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -163,7 +169,7 @@ Example
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -172,8 +178,8 @@ Example
 Save current model value to browser cookies for state maintanence. While refresh the page Rating control values are retained.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -182,8 +188,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -198,7 +204,7 @@ Example
 
 
 
-### height<span class="type-signature type string">string</span>
+### height `string`
 {:#members:height}
 
 
@@ -207,8 +213,8 @@ Example
 Specifies the height of the Rating control wrapper.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -217,8 +223,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -232,7 +238,7 @@ Example
 
 
 
-### incrementStep<span class="type-signature type number">number</span>
+### incrementStep `number`
 {:#members:incrementstep}
 
 
@@ -241,8 +247,8 @@ Example
 Specifies the value to be increased while navigating between shapes(stars) in Rating control.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -251,8 +257,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -268,7 +274,7 @@ Example
 
 
 
-### maxValue<span class="type-signature type number">number</span>
+### maxValue `number`
 {:#members:maxvalue}
 
 
@@ -277,8 +283,8 @@ Example
 Allow to render the maximum number of Rating shape(star).
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -287,8 +293,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -304,7 +310,7 @@ Example
 
 
 
-### minValue<span class="type-signature type number">number</span>
+### minValue `number`
 {:#members:minvalue}
 
 
@@ -313,8 +319,8 @@ Example
 Allow to render the minimum number of Rating shape(star).
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -323,8 +329,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -341,7 +347,7 @@ Example
 
 
 
-### orientation<span class="type-signature type enum">enum</span>
+### orientation `enum`
 {:#members:orientation}
 
 
@@ -350,8 +356,8 @@ Example
 Specifies the orientation of Rating control. See <a href="global.html#Orientation">Orientation</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -360,8 +366,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -376,7 +382,7 @@ Example
 
 
 
-### precision<span class="type-signature type enum">enum</span>
+### precision `enum`
 {:#members:precision}
 
 
@@ -385,8 +391,8 @@ Example
 Helps to provide more precise ratings.Rating control supports three precision modes - full, half, and exact. See <a href="global.html#Precision">Precision</a>
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -395,8 +401,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -412,7 +418,7 @@ Example
 
 
 
-### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly `boolean`
 {:#members:readonly}
 
 
@@ -421,8 +427,8 @@ Example
 Interaction with Rating control can be prevented by enabling this API.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -431,8 +437,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -447,7 +453,7 @@ Example
 
 
 
-### shapeHeight<span class="type-signature type number">number</span>
+### shapeHeight `number`
 {:#members:shapeheight}
 
 
@@ -456,8 +462,8 @@ Example
 To specify the height of each shape in Rating control.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -466,8 +472,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -482,7 +488,7 @@ Example
 
 
 
-### shapeWidth<span class="type-signature type number">number</span>
+### shapeWidth `number`
 {:#members:shapewidth}
 
 
@@ -491,8 +497,8 @@ Example
 To specify the width of each shape in Rating control.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -501,8 +507,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -517,7 +523,7 @@ Example
 
 
 
-### showTooltip<span class="type-signature type boolean">boolean</span>
+### showTooltip `boolean`
 {:#members:showtooltip}
 
 
@@ -526,8 +532,8 @@ Example
 Enables the tooltip option.Currently selected value value will be displayed in tooltip.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -536,8 +542,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -554,7 +560,7 @@ Example
 
 
 
-### value<span class="type-signature type number">number</span>
+### value `number`
 {:#members:value}
 
 
@@ -563,8 +569,8 @@ Example
 To specify the number of stars to be selected while rendering.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -573,8 +579,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -591,7 +597,7 @@ Example
 
 
 
-### width<span class="type-signature type string">string</span>
+### width `string`
 {:#members:width}
 
 
@@ -600,8 +606,8 @@ Example
 Specifies the width of the Rating control wrapper.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -610,8 +616,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -629,7 +635,7 @@ Example
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -639,8 +645,8 @@ destroy the Rating widget all events bound using this._on will be unbind automat
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -668,7 +674,7 @@ $("#rating").ejRating("destroy");
 
 
 
-### getValue<span class="signature">()</span>
+### getValue()
 {:#methods:getvalue}
 
 
@@ -683,8 +689,8 @@ To get the current value of rating control
 
 Rating value
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -712,7 +718,7 @@ $("#rating").ejRating("getValue");
 
 
 
-### hide<span class="signature">()</span>
+### hide()
 {:#methods:hide}
 
 
@@ -722,8 +728,8 @@ To hide the rating control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -751,7 +757,7 @@ $("#rating").ejRating("hide");
 
 
 
-### refresh<span class="signature">()</span>
+### refresh()
 {:#methods:refresh}
 
 
@@ -761,8 +767,8 @@ user can refresh the rating control to identify changes
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -790,7 +796,7 @@ $("#rating").ejRating("refresh");
 
 
 
-### reset<span class="signature">()</span>
+### reset()
 {:#methods:reset}
 
 
@@ -800,8 +806,8 @@ To reset the rating value
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -829,7 +835,7 @@ $("#rating").ejRating("reset");
 
 
 
-### setValue<span class="signature">()</span>
+### setValue()
 {:#methods:setvalue}
 
 
@@ -839,8 +845,8 @@ To set the current value of rating control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -868,7 +874,7 @@ $("#rating").ejRating("setValue");
 
 
 
-### show<span class="signature">()</span>
+### show()
 {:#methods:show}
 
 
@@ -878,8 +884,8 @@ To show the rating control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -924,7 +930,7 @@ Fires when Rating value changes.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -932,13 +938,13 @@ Fires when Rating value changes.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from rating
+<td class="description">Event parameters from rating
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -946,31 +952,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current value.</td>
+<td class="description">returns the current value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rating model</td>
+<td class="description">returns the rating model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the mouse click event args values.</td>
+<td class="description">returns the mouse click event args values.</td>
 </tr>
 </tbody>
 </table>
@@ -980,8 +986,8 @@ event{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1011,7 +1017,7 @@ Fires when Rating control is clicked successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1019,13 +1025,13 @@ Fires when Rating control is clicked successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from rating
+<td class="description">Event parameters from rating
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1033,31 +1039,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current value.</td>
+<td class="description">returns the current value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rating model</td>
+<td class="description">returns the rating model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the mouse click event args values.</td>
+<td class="description">returns the mouse click event args values.</td>
 </tr>
 </tbody>
 </table>
@@ -1067,8 +1073,8 @@ event{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1098,7 +1104,7 @@ Fires when Rating control is created.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1106,13 +1112,13 @@ Fires when Rating control is created.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from rating
+<td class="description">Event parameters from rating
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1120,19 +1126,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rating model</td>
+<td class="description">returns the rating model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -1142,8 +1148,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1173,7 +1179,7 @@ Fires when Rating control is destroyed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1181,13 +1187,13 @@ Fires when Rating control is destroyed successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from rating
+<td class="description">Event parameters from rating
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1195,19 +1201,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rating model</td>
+<td class="description">returns the rating model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
@@ -1217,8 +1223,8 @@ type{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1248,7 +1254,7 @@ Fires when mouse hover is removed from Rating control
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1256,13 +1262,13 @@ Fires when mouse hover is removed from Rating control
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from rating
+<td class="description">Event parameters from rating
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1270,31 +1276,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current value.</td>
+<td class="description">returns the current value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rating model</td>
+<td class="description">returns the rating model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the mouse click event args values.</td>
+<td class="description">returns the mouse click event args values.</td>
 </tr>
 </tbody>
 </table>
@@ -1304,8 +1310,8 @@ event{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1335,7 +1341,7 @@ Fires when mouse hovered over the Rating control
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1343,13 +1349,13 @@ Fires when mouse hovered over the Rating control
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from rating
+<td class="description">Event parameters from rating
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1357,37 +1363,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the current value.</td>
+<td class="description">returns the current value.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the rating model</td>
+<td class="description">returns the rating model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 event{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the mouse click event args values.</td>
+<td class="description">returns the mouse click event args values.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 index{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the current index value.</td>
+<td class="description">returns the current index value.</td>
 </tr>
 </tbody>
 </table>
@@ -1397,8 +1403,8 @@ index{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

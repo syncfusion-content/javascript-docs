@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejTextBoxes
+description: API reference for ejTextBoxes
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: TextBoxes, ejTextBoxes, syncfusion, TextBoxes api  
 ---
 
 # ejTextBoxes
@@ -21,19 +21,26 @@ metacontent:
 
 
 
-$(element).ejNumericTextbox<span class="signature">()</span>
+#### Syntax
 
-$(element).ejCurrencyTextbox<span class="signature">()</span>
+{% highlight js %}
 
-$(element).ejPercentageTextbox<span class="signature">()</span>
+$(element).ejNumericTextbox()
+
+$(element).ejCurrencyTextbox()
+
+$(element).ejPercentageTextbox()
+
+{% endhighlight %}
 
 
 
 
 
 
-Example
-{:.example}
+
+#### Example
+
 
 
 {% highlight html %}
@@ -55,8 +62,8 @@ $('#percentage').ejPercentageTextbox({value:100});
 
 
 
-Requires
-{:.require}
+#### Requires
+
 
 
 * module:jQuery
@@ -75,7 +82,7 @@ Requires
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -84,8 +91,8 @@ Requires
 Specify the CSS class to editor to achieve custom theme.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -94,8 +101,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -116,7 +123,7 @@ Example
 
 
 
-### decimalPlaces<span class="type-signature type number">number</span>
+### decimalPlaces `number`
 {:#members:decimalplaces}
 
 
@@ -125,8 +132,8 @@ Example
 DecimalPlaces declares the decimal point to the value of the editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -135,8 +142,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -157,7 +164,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -166,8 +173,8 @@ Example
 Specify the editor control state.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -176,8 +183,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -198,7 +205,7 @@ Example
 
 
 
-### enablePersistence<span class="type-signature type boolean">boolean</span>
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 
@@ -207,8 +214,8 @@ Example
 Specify the enablePersistence to editor to save current model value to browser cookies for state maintains
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -217,8 +224,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -239,7 +246,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -248,8 +255,8 @@ Example
 Specify the Right to Left Direction to editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -258,8 +265,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -280,7 +287,7 @@ Example
 
 
 
-### enableStrictMode<span class="type-signature type boolean">boolean</span>
+### enableStrictMode `boolean`
 {:#members:enablestrictmode}
 
 
@@ -289,8 +296,8 @@ Example
 Strict mode option to restrict entering values defined outside the range in the editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -299,8 +306,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -321,7 +328,7 @@ Example
 
 
 
-### height<span class="type-signature type string">String</span>
+### height `string`
 {:#members:height}
 
 
@@ -330,8 +337,8 @@ Example
 Specifies the height of the editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -340,8 +347,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -362,7 +369,7 @@ Example
 
 
 
-### htmlAttributes<span class="type-signature type object">object</span>
+### htmlAttributes `object`
 {:#members:htmlattributes}
 
 
@@ -371,8 +378,8 @@ Example
 Specifies the HTML Attributes of the ejTextBoxes
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -381,8 +388,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -403,7 +410,7 @@ Example
 
 
 
-### incrementStep<span class="type-signature type number">number</span>
+### incrementStep `number`
 {:#members:incrementstep}
 
 
@@ -412,8 +419,8 @@ Example
 Specifies the value used to increment or decrement editor value.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -422,8 +429,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -444,7 +451,7 @@ Example
 
 
 
-### locale<span class="type-signature type string">string</span>
+### locale `string`
 {:#members:locale}
 
 
@@ -453,8 +460,8 @@ Example
 Specifies the Localization info used by the editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -463,8 +470,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -485,7 +492,7 @@ Example
 
 
 
-### maxValue<span class="type-signature type number">number</span>
+### maxValue `number`
 {:#members:maxvalue}
 
 
@@ -494,8 +501,8 @@ Example
 Specifies the maximum value of the editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -504,8 +511,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -526,7 +533,7 @@ Example
 
 
 
-### minValue<span class="type-signature type number">number</span>
+### minValue `number`
 {:#members:minvalue}
 
 
@@ -535,8 +542,8 @@ Example
 Specifies the minimum value of the editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -545,8 +552,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -567,7 +574,7 @@ Example
 
 
 
-### name<span class="type-signature type string">string</span>
+### name `string`
 {:#members:name}
 
 
@@ -576,8 +583,8 @@ Example
 Specifies the name of the editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -586,8 +593,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -608,7 +615,7 @@ Example
 
 
 
-### readOnly<span class="type-signature type boolean">boolean</span>
+### readOnly `boolean`
 {:#members:readonly}
 
 
@@ -617,8 +624,8 @@ Example
 Toggles the readonly state of the editor. When the editor is readonly it doesn't allow user input.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -627,8 +634,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -649,7 +656,7 @@ Example
 
 
 
-### showRoundedCorner<span class="type-signature type boolean">boolean</span>
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 
@@ -658,8 +665,8 @@ Example
 Specify the rounded corner to editor
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -668,8 +675,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -690,7 +697,7 @@ Example
 
 
 
-### showSpinButton<span class="type-signature type boolean">boolean</span>
+### showSpinButton `boolean`
 {:#members:showspinbutton}
 
 
@@ -699,8 +706,8 @@ Example
 Specifies whether the up and down spin buttons should be displayed in editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -709,8 +716,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -731,7 +738,7 @@ Example
 
 
 
-### validateOnType<span class="type-signature type number">number</span>
+### validateOnType `number`
 {:#members:validateontype}
 
 
@@ -740,8 +747,8 @@ Example
 enables decimal separator position validation on type .
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -750,8 +757,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -772,7 +779,7 @@ Example
 
 
 
-### validationMessage<span class="type-signature type object">object</span>
+### validationMessage `object`
 {:#members:validationmessage}
 
 
@@ -781,8 +788,8 @@ Example
 Set the jquery validation error message in editor.The property will work when the widget present inside the form .Additionally need to include jquery.validate.min.js plugin.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -791,8 +798,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -813,7 +820,7 @@ Example
 
 
 
-### validationRules<span class="type-signature type object">object</span>
+### validationRules `object`
 {:#members:validationrules}
 
 
@@ -822,8 +829,8 @@ Example
 Set the jquery validation rules to the editor.The property will work when the widget present inside the form .Additionally need to include jquery.validate.min.js plugin.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -832,8 +839,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -854,7 +861,7 @@ Example
 
 
 
-### value<span class="type-signature type number">number</span>
+### value `number`
 {:#members:value}
 
 
@@ -863,8 +870,8 @@ Example
 Specifies the value of the editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -873,8 +880,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -895,7 +902,7 @@ Example
 
 
 
-### watermarkText<span class="type-signature type string">string</span>
+### watermarkText `string`
 {:#members:watermarktext}
 
 
@@ -904,8 +911,8 @@ Example
 Specify the watermark text to editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -914,8 +921,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -936,7 +943,7 @@ Example
 
 
 
-### width<span class="type-signature type string">String</span>
+### width `string`
 {:#members:width}
 
 
@@ -945,8 +952,8 @@ Example
 Specifies the width of the editor.
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -955,8 +962,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -981,7 +988,7 @@ Example
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -991,8 +998,8 @@ destroy the editor widgets all events are unbind automatically and bring the con
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1038,7 +1045,7 @@ $("#percentage").ejPercentageTextbox("destroy");
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -1048,8 +1055,8 @@ To disable the corresponding editors
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1096,7 +1103,7 @@ $("#percentage").ejPercentageTextbox("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -1106,8 +1113,8 @@ To enable the corresponding editors
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1130,7 +1137,8 @@ numObj.enable(); // enable the numericTextbox
 curObj.enable(); // enable the currencyTextbox
 perObj.enable(); // enable the percentagTextbox
 </script>
-                 {% endhighlight %}
+                
+ {% endhighlight %}
 
 
 {% highlight html %}
@@ -1154,7 +1162,7 @@ $("#percentage").ejPercentageTextbox("enable");
 
 
 
-### getValue<span class="signature">()</span>
+### getValue()
 {:#methods:getvalue}
 
 
@@ -1164,8 +1172,8 @@ To get value from corresponding editors
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1188,7 +1196,8 @@ numObj.getValue(); // get value from numericTextbox
 curObj.getValue(); // get value from currencyTextbox
 perObj.getValue(); // get value from percentagTextbox
 </script>
-                 {% endhighlight %}
+                 
+  {% endhighlight %}
 
 
 {% highlight html %}
@@ -1229,7 +1238,7 @@ Fires after editor control value is changed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1237,13 +1246,13 @@ Fires after editor control value is changed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from editors.
+<td class="description">Event parameters from editors.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1251,25 +1260,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the corresponding editor model.</td>
+<td class="description">returns the corresponding editor model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the corresponding editor control value.</td>
+<td class="description">returns the corresponding editor control value.</td>
 </tr>
 </tbody>
 </table>
@@ -1279,8 +1288,8 @@ value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1323,7 +1332,7 @@ Fires after editor control is created.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1331,26 +1340,26 @@ Fires after editor control is created.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the editor model</td>
+<td class="description">returns the editor model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1393,7 +1402,7 @@ Fires when the editor is destroyed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1401,26 +1410,26 @@ Fires when the editor is destroyed successfully.
 <td class="name">{% highlight html %}
 argument.cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the editor model</td>
+<td class="description">returns the editor model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 argument.type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 </tbody>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1463,7 +1472,7 @@ Fires after editor control is focused.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1471,13 +1480,13 @@ Fires after editor control is focused.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from editors.
+<td class="description">Event parameters from editors.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1485,25 +1494,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the corresponding editor model.</td>
+<td class="description">returns the corresponding editor model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the corresponding editor control value.</td>
+<td class="description">returns the corresponding editor control value.</td>
 </tr>
 </tbody>
 </table>
@@ -1513,8 +1522,8 @@ value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1557,7 +1566,7 @@ Fires after editor control is loss the focus.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1565,13 +1574,13 @@ Fires after editor control is loss the focus.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from editors.
+<td class="description">Event parameters from editors.
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1579,25 +1588,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be cancelled; otherwise, false.</td>
+<td class="description">if the event should be cancelled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the corresponding editor model.</td>
+<td class="description">returns the corresponding editor model.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">returns the corresponding editor control value.</td>
+<td class="description">returns the corresponding editor control value.</td>
 </tr>
 </tbody>
 </table>
@@ -1607,8 +1616,8 @@ value{% endhighlight %}</td>
 </table>
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

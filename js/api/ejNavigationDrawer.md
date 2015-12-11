@@ -1,10 +1,10 @@
 ---
 layout: post
 title: ejNavigationDrawer
+description: API reference for ejNavigationDrawer
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: NavigationDrawer, ejNavigationDrawer, syncfusion, NavigationDrawer api 
 ---
 
 # ejNavigationDrawer
@@ -17,22 +17,28 @@ The Navigation Drawer is a sliding panel that displays the list of navigation op
 
 
 
+#### Syntax
 
+{% highlight js %}
 
-$(element).ejNavigationDrawer<span class="signature">()</span>
+$(element).ejNavigationDrawer()
 
-
-
-
-
-
-
+{% endhighlight %}
 
 
 
 
-Example
-{:.example}
+
+
+
+
+
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -71,9 +77,7 @@ $("#navpane").ejNavigationDrawer();
 
 
 
-Requires
-{:.require}
-
+#### Requires
 
 
 
@@ -100,7 +104,7 @@ Requires
 
 
 
-### contentid<span class="type-signature type string">string</span>
+### contentid `string`
 {:#members:contentid}
 
 
@@ -115,8 +119,8 @@ Specifies the contentId for navigation drawer, where the ajax content need to up
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -132,8 +136,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -174,7 +178,7 @@ $("#navpane").ejNavigationDrawer ("option", "contentId", "container");
 
 
 
-### cssclass<span class="type-signature type string">string</span>
+### cssclass `string`
 {:#members:cssclass}
 
 
@@ -189,8 +193,8 @@ Sets the root class for NavigationDrawer theme. This cssClass API helps to use c
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -206,8 +210,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -260,7 +264,7 @@ $("#navpane").ejNavigationDrawer ("option", "cssClass", "customclass");
 
 
 
-### direction<span class="type-signature type enum">enum</span>
+### direction `enum`
 {:#members:direction}
 
 
@@ -275,8 +279,8 @@ Sets the Direction for the control. See <a href="global.html#Direction">Directio
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -292,8 +296,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -345,7 +349,7 @@ $("#navpane").ejNavigationDrawer ("option", "direction", "left");
 
 
 
-### enablelistview<span class="type-signature type boolean">boolean</span>
+### enablelistview `boolean`
 {:#members:enablelistview}
 
 
@@ -360,8 +364,8 @@ Sets the listview to be enabled or not
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -377,8 +381,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -430,7 +434,7 @@ $("#navpane").ejNavigationDrawer ("option", "enableListView", "false");
 
 
 
-### items<span class="type-signature type array">array</span>
+### items `array`
 {:#members:items}
 
 
@@ -445,8 +449,8 @@ Specifies the listview items as an array of object.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -462,8 +466,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -515,7 +519,7 @@ $("#navpane").ejNavigationDrawer ("option", "items", [{text:"Item1"},{text:"Item
 
 
 
-### listviewsettings<span class="type-signature type object">object</span>
+### listviewsettings `object`
 {:#members:listviewsettings}
 
 
@@ -531,8 +535,8 @@ Sets all the properties of listview to render in navigation drawer
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -584,7 +588,7 @@ $("#navpane").ejNavigationDrawer ("option", "listViewSettings.width", "200");
 
 
 
-### position<span class="type-signature type enum">enum</span>
+### position `enum`
 {:#members:position}
 
 
@@ -599,8 +603,8 @@ Specifies position whether it is in fixed or relative to the page. See <a href="
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -616,8 +620,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -669,7 +673,7 @@ $("#navpane").ejNavigationDrawer ("option", "position", "fixed");
 
 
 
-### targetid<span class="type-signature type string">string</span>
+### targetid `string`
 {:#members:targetid}
 
 
@@ -684,8 +688,8 @@ Specifies the targetId for navigation drawer
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -701,8 +705,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -755,7 +759,7 @@ $("#navpane").ejNavigationDrawer ("option", "targetId", "left");
 
 
 
-### type<span class="type-signature type enum">enum</span>
+### type `enum`
 {:#members:type}
 
 
@@ -770,8 +774,8 @@ Sets the rendering type of the control. See Type
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -787,8 +791,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -840,7 +844,7 @@ $("#navpane").ejNavigationDrawer ("option", "type", "overlay");
 
 
 
-### width<span class="type-signature type int">int</span>
+### width `int`
 {:#members:width}
 
 
@@ -855,8 +859,8 @@ Specifies the width of the control
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -872,8 +876,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -932,7 +936,7 @@ $("#navpane").ejNavigationDrawer ("option", "width", "overlay");
 
 
 
-### close<span class="signature">()</span>
+### close()
 {:#methods:close}
 
 
@@ -948,8 +952,8 @@ To close the navigation drawer control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -988,7 +992,7 @@ $(function(){
 
 
 
-### open<span class="signature">()</span>
+### open()
 {:#methods:open}
 
 
@@ -1004,8 +1008,8 @@ To open the navigation drawer control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1044,7 +1048,7 @@ $(function(){
 
 
 
-### toggle<span class="signature">()</span>
+### toggle()
 {:#methods:toggle}
 
 
@@ -1060,8 +1064,8 @@ To Toggle the navigation drawer control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1124,7 +1128,7 @@ Event triggers before the control gets closed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1132,13 +1136,13 @@ Event triggers before the control gets closed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Navigation Drawer
+<td class="description">Event parameters from Navigation Drawer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1146,31 +1150,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the Navigation Drawer model</td>
+<td class="description">returns the Navigation Drawer model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 item{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the item of element</td>
+<td class="description">returns the item of element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemName{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">returns the name of item</td>
+<td class="description">returns the name of item</td>
 </tr>
 </tbody>
 </table>
@@ -1182,8 +1186,8 @@ itemName{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1241,7 +1245,7 @@ Event triggers when the control open.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1249,13 +1253,13 @@ Event triggers when the control open.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Navigation Drawer
+<td class="description">Event parameters from Navigation Drawer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1263,31 +1267,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the Navigation Drawer model</td>
+<td class="description">returns the Navigation Drawer model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 item{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the item of element</td>
+<td class="description">returns the item of element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemName{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">returns the name of item</td>
+<td class="description">returns the name of item</td>
 </tr>
 </tbody>
 </table>
@@ -1299,8 +1303,8 @@ itemName{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1358,7 +1362,7 @@ Event triggers when the Swipe happens.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1366,13 +1370,13 @@ Event triggers when the Swipe happens.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Navigation Drawer
+<td class="description">Event parameters from Navigation Drawer
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -1380,31 +1384,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the Navigation Drawer model</td>
+<td class="description">returns the Navigation Drawer model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event</td>
+<td class="description">returns the name of the event</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 item{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the item of element</td>
+<td class="description">returns the item of element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 itemName{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">returns the name of item</td>
+<td class="description">returns the name of item</td>
 </tr>
 </tbody>
 </table>
@@ -1416,8 +1420,8 @@ itemName{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}

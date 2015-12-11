@@ -1,10 +1,10 @@
----
+﻿---
 layout: post
 title: ejUploadbox
+description: API reference for ejUploadbox
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: Uploadbox, ejUploadbox, syncfusion, Uploadbox api 
 ---
 
 # ejUploadbox
@@ -22,22 +22,28 @@ The Uploadbox control supports uploading files into the designated server, regar
 
 
 
+#### Syntax
 
+{% highlight js %}
 
-$(element).ejUploadbox<span class="signature">()</span>
+$(element).ejUploadbox()
 
-
-
-
-
-
-
+{% endhighlight %}
 
 
 
 
-Example
-{:.example}
+
+
+
+
+
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -55,9 +61,7 @@ $('#uploadbox1').ejUploadbox();
 
 
 
-Requires
-{:.require}
-
+#### Requires
 
 
 
@@ -93,7 +97,7 @@ Requires
 
 
 
-### allowDragAndDrop<span class="type-signature type boolean">boolean</span>
+### allowDragAndDrop `boolean`
 {:#members:allowdraganddrop}
 
 
@@ -108,8 +112,8 @@ Enables the file drag and drop support to the Uploadbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -125,8 +129,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -144,7 +148,7 @@ Example
 
 
 
-### asyncUpload<span class="type-signature type boolean">boolean</span>
+### asyncUpload `boolean`
 {:#members:asyncupload}
 
 
@@ -165,8 +169,8 @@ Selected files are sent to the server handler by using the AJAX Post.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -182,8 +186,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -201,7 +205,7 @@ Example
 
 
 
-### autoUpload<span class="type-signature type boolean">boolean</span>
+### autoUpload `boolean`
 {:#members:autoupload}
 
 
@@ -216,8 +220,8 @@ Uploadbox supports auto uploading of files after the file selection is done.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -233,8 +237,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -252,7 +256,7 @@ Example
 
 
 
-### buttonText<span class="type-signature type string">object</span>
+### buttonText `object`
 {:#members:buttontext}
 
 
@@ -267,8 +271,8 @@ Sets the text for each action button.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -284,8 +288,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -304,7 +308,7 @@ $("#uploadbox1").ejUploadbox({ buttonText: { browse: "Choose File", upload: "Upl
 
 
 
-### buttonText.browse<span class="type-signature type string">String</span>
+### buttonText.browse `string`
 {:#members:buttontext-browse}
 
 
@@ -320,8 +324,8 @@ Sets the text for the browse button.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -339,7 +343,7 @@ Example
 
 
 
-### buttonText.cancel<span class="type-signature type string">String</span>
+### buttonText.cancel `string`
 {:#members:buttontext-cancel}
 
 
@@ -355,8 +359,8 @@ Sets the text for the cancel button.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -375,7 +379,7 @@ $("#uploadbox1").ejUploadbox({ buttonText: { cancel: "Cancel"});
 
 
 
-### buttonText.Close<span class="type-signature type string">String</span>
+### buttonText.Close `string`
 {:#members:buttontext-close}
 
 
@@ -391,8 +395,8 @@ Sets the text for the close button.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -411,7 +415,7 @@ $("#uploadbox1").ejUploadbox({ buttonText: {Close: "close"} });
 
 
 
-### buttonText.upload<span class="type-signature type string">String</span>
+### buttonText.upload `string`
 {:#members:buttontext-upload}
 
 
@@ -427,8 +431,8 @@ Sets the text for the Upload button inside the dialog popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -446,7 +450,7 @@ Example
 
 
 
-### cssClass<span class="type-signature type string">string</span>
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -462,8 +466,8 @@ Sets the root class for the Uploadbox control theme. This cssClass API helps to 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -479,8 +483,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -499,7 +503,7 @@ $("#uploadbox1").ejUploadbox({cssClass : "gradient- purple"});
 
 
 
-### customFileDetails<span class="type-signature type object">object</span>
+### customFileDetails `object`
 {:#members:customfiledetails}
 
 
@@ -514,8 +518,8 @@ Specifies the custom file details in the dialog popup on initialization.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -531,8 +535,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -551,7 +555,7 @@ $("#uploadbox1").ejUploadbox({customFileDetails:{ title:true, name:true, size:tr
 
 
 
-### customFileDetails.action<span class="type-signature type boolean">boolean</span>
+### customFileDetails.action `boolean`
 {:#members:customfiledetails-action}
 
 
@@ -567,8 +571,8 @@ Enables the file upload interactions like remove/cancel in File details of the d
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -587,7 +591,7 @@ $("#uploadbox1").ejUploadbox({customFileDetails:{action:true}});
 
 
 
-### customFileDetails.name<span class="type-signature type boolean">boolean</span>
+### customFileDetails.name `boolean`
 {:#members:customfiledetails-name}
 
 
@@ -603,8 +607,8 @@ Enables the name in the File details of the dialog popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -622,7 +626,7 @@ Example
 
 
 
-### customFileDetails.size<span class="type-signature type boolean">boolean</span>
+### customFileDetails.size `boolean`
 {:#members:customfiledetails-size}
 
 
@@ -634,15 +638,15 @@ Example
 
 Enables or disables the File size details of the dialog popup.
 
-Note: Details of the File Size is available from IE10+ browser version.
+N>  Details of the File Size is available from IE10+ browser version.
 
 
 
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -660,7 +664,7 @@ Example
 
 
 
-### customFileDetails.status<span class="type-signature type boolean">boolean</span>
+### customFileDetails.status `boolean`
 {:#members:customfiledetails-status}
 
 
@@ -676,8 +680,8 @@ Enables or disables the file uploading status visibility in the dialog file deta
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -695,7 +699,7 @@ Example
 
 
 
-### customFileDetails.title<span class="type-signature type boolean">boolean</span>
+### customFileDetails.title `boolean`
 {:#members:customfiledetails-title}
 
 
@@ -711,8 +715,8 @@ Enables the title in File details for the dialog popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -730,7 +734,7 @@ Example
 
 
 
-### dialogAction<span class="type-signature type object">object</span>
+### dialogAction `object`
 {:#members:dialogaction}
 
 
@@ -745,8 +749,8 @@ Specifies the actions for dialog popup while initialization.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -762,8 +766,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -781,7 +785,7 @@ Example
 
 
 
-### dialogAction.closeOnComplete<span class="type-signature type boolean">boolean</span>
+### dialogAction.closeOnComplete `boolean`
 {:#members:dialogaction-closeoncomplete}
 
 
@@ -797,8 +801,8 @@ Once uploaded successfully, the dialog popup closes immediately.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -816,7 +820,7 @@ Example
 
 
 
-### dialogAction.content<span class="type-signature type string">string</span>
+### dialogAction.content `string`
 {:#members:dialogaction-content}
 
 
@@ -832,8 +836,8 @@ Sets the content container option to the Uploadbox dialog popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -852,7 +856,7 @@ $("#uploadbox1").ejUploadbox({dialogAction:{ content: "#uploadbox1"}});
 
 
 
-### dialogAction.drag<span class="type-signature type boolean">boolean</span>
+### dialogAction.drag `boolean`
 {:#members:dialogaction-drag}
 
 
@@ -868,8 +872,8 @@ Enables the drag option to the dialog popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -887,7 +891,7 @@ Example
 
 
 
-### dialogAction.modal<span class="type-signature type boolean">boolean</span>
+### dialogAction.modal `boolean`
 {:#members:dialogaction-modal}
 
 
@@ -907,8 +911,8 @@ Note: dialogAction.modal property does not work in synchronous file upload.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -926,7 +930,7 @@ Example
 
 
 
-### dialogPosition<span class="type-signature type object">object</span>
+### dialogPosition `object`
 {:#members:dialogposition}
 
 
@@ -941,15 +945,7 @@ Displays the Uploadbox dialog at the given X and Y positions. X: Dialog sets the
 
 
 
-Default Value:
-{:.param}
-
-
-
-
-
-
-* Null
+#### Default Value
 
 
 
@@ -957,9 +953,17 @@ Default Value:
 
 
 
+* null
 
-Example
-{:.example}
+
+
+
+
+
+
+
+#### Example
+
 
 
 {% highlight html %}
@@ -977,7 +981,7 @@ Example
 
 
 
-### dialogText<span class="type-signature type object">object</span>
+### dialogText `object`
 {:#members:dialogtext}
 
 
@@ -992,8 +996,8 @@ Property for applying the text to the Dialog title and content headers.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1009,8 +1013,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1028,7 +1032,7 @@ Example
 
 
 
-### dialogText.name<span class="type-signature type string">String</span>
+### dialogText.name `string`
 {:#members:dialogtext-name}
 
 
@@ -1044,8 +1048,8 @@ Sets the uploaded file’s Name (header text) to the Dialog popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1063,7 +1067,7 @@ Example
 
 
 
-### dialogText.size<span class="type-signature type string">String</span>
+### dialogText.size `string`
 {:#members:dialogtext-size}
 
 
@@ -1079,8 +1083,8 @@ Sets the upload file Size (header text) to the dialog popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1098,7 +1102,7 @@ Example
 
 
 
-### dialogText.status<span class="type-signature type string">String</span>
+### dialogText.status `string`
 {:#members:dialogtext-status}
 
 
@@ -1114,8 +1118,8 @@ Sets the upload file Status (header text) to the dialog popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1133,7 +1137,7 @@ Example
 
 
 
-### dialogText.title<span class="type-signature type string">String</span>
+### dialogText.title `string`
 {:#members:dialogtext-title}
 
 
@@ -1149,8 +1153,8 @@ Sets the title text of the dialog popup.
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1168,7 +1172,7 @@ Example
 
 
 
-### dropAreaText<span class="type-signature type string">string</span>
+### dropAreaText `string`
 {:#members:dragareatext}
 
 
@@ -1183,8 +1187,8 @@ The dropAreaText is displayed when the draganddrop support is enabled in the Upl
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1200,8 +1204,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1219,7 +1223,7 @@ Example
 
 
 
-### dropAreaHeight<span class="type-signature type number">number</span> <span class="type-signature type string">string</span>
+### dropAreaHeight `number`  `string`
 {:#members:dropareaheight}
 
 
@@ -1234,8 +1238,8 @@ Specifies the dropAreaHeight when the draganddrop support is enabled in the Uplo
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1251,8 +1255,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1270,7 +1274,7 @@ Example
 
 
 
-### dropAreaWidth<span class="type-signature type number">number</span> <span class="type-signature type string">string</span>
+### dropAreaWidth `number`  `string`
 {:#members:dropareawidth}
 
 
@@ -1285,8 +1289,8 @@ Specifies the dropAreaWidth when the draganddrop support is enabled in the Uploa
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1302,8 +1306,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1321,7 +1325,7 @@ Example
 
 
 
-### enabled<span class="type-signature type boolean">boolean</span>
+### enabled `boolean`
 {:#members:enabled}
 
 
@@ -1335,8 +1339,8 @@ Based on the property value, Uploadbox is enabled or disabled.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1352,8 +1356,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1371,7 +1375,7 @@ Example
 
 
 
-### enableRTL<span class="type-signature type boolean">boolean</span>
+### enableRTL `boolean`
 {:#members:enablertl}
 
 
@@ -1386,8 +1390,8 @@ Sets the right-to-left direction property for the Uploadbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1403,8 +1407,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1422,7 +1426,7 @@ Example
 
 
 
-### extensionsAllow<span class="type-signature type string">string</span>
+### extensionsAllow `string`
 {:#members:extensionsallow}
 
 
@@ -1437,8 +1441,8 @@ Only the files with the specified extension is allowed to upload. This is mentio
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1454,8 +1458,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1473,7 +1477,7 @@ Example
 
 
 
-### extensionsDeny<span class="type-signature type string">string</span>
+### extensionsDeny `string`
 {:#members:extensionsdeny}
 
 
@@ -1488,8 +1492,8 @@ Only the files with the specified extension is denied for upload. This is mentio
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1505,8 +1509,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1524,7 +1528,7 @@ Example
 
 
 
-### fileSize<span class="type-signature type number">number</span>
+### fileSize `number`
 {:#members:filesize}
 
 
@@ -1536,14 +1540,14 @@ Example
 
 Sets the maximum size limit for uploading the file. This is mentioned in the number format.
 
-Note: fileSize represents the size of the individual file.
+N> fileSize represents the size of the individual file.
 
 
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1559,8 +1563,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1578,7 +1582,7 @@ Example
 
 
 
-### height<span class="type-signature type string">string</span>
+### height `string`
 {:#members:height}
 
 
@@ -1593,8 +1597,8 @@ Sets the height of the browse button.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1610,8 +1614,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1629,7 +1633,7 @@ Example
 
 
 
-### locale<span class="type-signature type string">string</span>
+### locale `string`
 {:#members:locale}
 
 
@@ -1644,8 +1648,8 @@ Configures the culture data and sets the culture to the Uploadbox.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1661,8 +1665,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1706,7 +1710,7 @@ $("#uploadbox1").ejUploadbox({ locale: "nl-BE" });
 
 
 
-### multipleFilesSelection<span class="type-signature type boolean">boolean</span>
+### multipleFilesSelection `boolean`
 {:#members:multiplefilesselection}
 
 
@@ -1721,8 +1725,8 @@ Enables multiple file selection for upload.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1738,8 +1742,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1757,7 +1761,7 @@ Example
 
 
 
-### pushFile<span class="type-signature type object">object</span>
+### pushFile `object`
 {:#members:pushfile}
 
 
@@ -1772,8 +1776,8 @@ You can push the file to the Uploadbox in the client-side of the XHR supported b
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1789,8 +1793,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1808,7 +1812,7 @@ Example
 
 
 
-### removeUrl<span class="type-signature type string">string</span>
+### removeUrl `string`
 {:#members:removeurl}
 
 
@@ -1823,8 +1827,8 @@ Specifies the remove action to be performed after the file uploading is complete
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1840,8 +1844,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1859,7 +1863,7 @@ Example
 
 
 
-### saveUrl<span class="type-signature type string">string</span>
+### saveUrl `string`
 {:#members:saveurl}
 
 
@@ -1874,8 +1878,8 @@ Specifies the save action to be performed after the file is pushed for uploading
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1891,8 +1895,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1910,7 +1914,7 @@ Example
 
 
 
-### showBrowseButton<span class="type-signature type boolean">boolean</span>
+### showBrowseButton `boolean`
 {:#members:showbrowsebutton}
 
 
@@ -1925,8 +1929,8 @@ Enables the browse button support to the Uploadbox control.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1942,8 +1946,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -1961,7 +1965,7 @@ Example
 
 
 
-### showFileDetails<span class="type-signature type boolean">boolean</span>
+### showFileDetails `boolean`
 {:#members:showfiledetails}
 
 
@@ -1975,8 +1979,8 @@ Specifies the file details to be displayed when selected for uploading. This can
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -1992,8 +1996,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2011,7 +2015,7 @@ Example
 
 
 
-### uploadName<span class="type-signature type string">string</span>
+### uploadName `string`
 {:#members:uploadname}
 
 
@@ -2027,8 +2031,8 @@ Sets the name for the Uploadbox control. This API helps to Map the action in cod
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2044,8 +2048,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2065,7 +2069,7 @@ Example
 
 
 
-### width<span class="type-signature type string">string</span>
+### width `string`
 {:#members:width}
 
 
@@ -2080,8 +2084,8 @@ Sets the width of the browse button.
 
 
 
-Default Value:
-{:.param}
+#### Default Value
+
 
 
 
@@ -2097,8 +2101,8 @@ Default Value:
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2123,7 +2127,7 @@ Example
 
 
 
-### destroy<span class="signature">()</span>
+### destroy()
 {:#methods:destroy}
 
 
@@ -2139,8 +2143,8 @@ The destroy method destroys the control and brings the control to a pre-init sta
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2171,7 +2175,7 @@ $("#uploadbox1").ejUploadbox("destroy");
 
 
 
-### disable<span class="signature">()</span>
+### disable()
 {:#methods:disable}
 
 
@@ -2187,8 +2191,8 @@ Disables the Uploadbox control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2219,7 +2223,7 @@ $("#uploadbox1").ejUploadbox("disable");
 
 
 
-### enable<span class="signature">()</span>
+### enable()
 {:#methods:enable}
 
 
@@ -2235,8 +2239,8 @@ Enables the Uploadbox control
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2292,7 +2296,7 @@ Fires when the upload progress begins.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2300,13 +2304,13 @@ Fires when the upload progress begins.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Uploadbox
+<td class="description">Event parameters from Uploadbox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2314,31 +2318,31 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">To pass additional information to the server.</td>
+<td class="description">To pass additional information to the server.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 files{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Selected FileList Object.</td>
+<td class="description">Selected FileList Object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 cancel{% endhighlight %}</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">if the event should be canceled; otherwise, false.</td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Uploadbox model</td>
+<td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2350,8 +2354,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2388,7 +2392,7 @@ Fires when the upload progress is cancelled.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2396,13 +2400,13 @@ Fires when the upload progress is cancelled.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Uploadbox
+<td class="description">Event parameters from Uploadbox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2410,19 +2414,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 fileStatus{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Canceled FileList Object.</td>
+<td class="description">Canceled FileList Object.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Uploadbox model</td>
+<td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2434,8 +2438,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2471,7 +2475,7 @@ Fires when the file upload progress is completed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2479,13 +2483,13 @@ Fires when the file upload progress is completed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Uploadbox
+<td class="description">Event parameters from Uploadbox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2493,37 +2497,37 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 e{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">AJAX event argument for reference.</td>
+<td class="description">AJAX event argument for reference.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 files{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Uploaded file list.</td>
+<td class="description">Uploaded file list.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 responseText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">response from the server.</td>
+<td class="description">response from the server.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 xhr{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">XHR-AJAX Object for reference.</td>
+<td class="description">XHR-AJAX Object for reference.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Uploadbox model</td>
+<td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2535,8 +2539,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2572,7 +2576,7 @@ Fires when the file upload progress is completed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2580,13 +2584,13 @@ Fires when the file upload progress is completed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Uploadbox
+<td class="description">Event parameters from Uploadbox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2594,43 +2598,43 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 responseText{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">response from the server.</td>
+<td class="description">response from the server.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 e{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">AJAX event argument for reference.</td>
+<td class="description">AJAX event argument for reference.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 success{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">successfully uploaded files list.</td>
+<td class="description">successfully uploaded files list.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 files{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Uploaded file list.</td>
+<td class="description">Uploaded file list.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 xhr{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">XHR-AJAX Object for reference.</td>
+<td class="description">XHR-AJAX Object for reference.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Uploadbox model</td>
+<td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2642,8 +2646,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2681,7 +2685,7 @@ Fires when the Uploadbox control is created.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2689,13 +2693,13 @@ Fires when the Uploadbox control is created.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Uploadbox
+<td class="description">Event parameters from Uploadbox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2703,13 +2707,13 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Uploadbox model</td>
+<td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2721,8 +2725,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2759,7 +2763,7 @@ Fires when the Uploadbox control is destroyed.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2767,13 +2771,13 @@ Fires when the Uploadbox control is destroyed.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Uploadbox
+<td class="description">Event parameters from Uploadbox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2781,13 +2785,13 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Uploadbox model</td>
+<td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2799,8 +2803,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2837,7 +2841,7 @@ Fires when the Upload process ends in Error.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2845,13 +2849,13 @@ Fires when the Upload process ends in Error.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Uploadbox
+<td class="description">Event parameters from Uploadbox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2859,25 +2863,25 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 error{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">details about the error information.</td>
+<td class="description">details about the error information.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 action{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">error event action details.</td>
+<td class="description">error event action details.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 files{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the file details of the file uploaded</td>
+<td class="description">returns the file details of the file uploaded</td>
 </tr>
 </tbody>
 </table>
@@ -2889,8 +2893,8 @@ files{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -2927,7 +2931,7 @@ Fires when the file is selected for upload successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2935,13 +2939,13 @@ Fires when the file is selected for upload successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Uploadbox
+<td class="description">Event parameters from Uploadbox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -2949,19 +2953,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 files{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns Selected FileList objects</td>
+<td class="description">returns Selected FileList objects</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Uploadbox model</td>
+<td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 </tbody>
 </table>
@@ -2973,8 +2977,8 @@ type{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
@@ -3010,7 +3014,7 @@ Fires when the uploaded file is removed successfully.
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3018,13 +3022,13 @@ Fires when the uploaded file is removed successfully.
 <td class="name">{% highlight html %}
 argument{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Uploadbox
+<td class="description">Event parameters from Uploadbox
 <table class="params">
 <thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th class="last">Description</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
@@ -3032,19 +3036,19 @@ argument{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 model{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the Uploadbox model</td>
+<td class="description">returns the Uploadbox model</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the name of the event.</td>
+<td class="description">returns the name of the event.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
 fileStatus{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the file details of the file object</td>
+<td class="description">returns the file details of the file object</td>
 </tr>
 </tbody>
 </table>
@@ -3056,8 +3060,8 @@ fileStatus{% endhighlight %}</td>
 
 
 
-Example
-{:.example}
+#### Example
+
 
 
 {% highlight html %}
