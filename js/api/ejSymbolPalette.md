@@ -1,18 +1,20 @@
 ---
 layout: post
 title: ejSymbolPalette
+description: API reference for ejSymbolPalette
 documentation: API
 platform: js
-metaname: 
-metacontent: 
+keywords: symbolpalette, ejSymbolPalette, symbol palette api, syncfusion
 ---
 
-defined values to render symbolpalette
+# ejSymbolPalette
 
-$(element).ejSymbolPalette<span class="signature">()</span>
+The symbol palette control provides support to predefine the frequently used nodes and connectors and it allows to drag and drop those symbols to drawing area.
+
+#### Syntax
+$(element).ejSymbolPalette()
 
 #### Example
-
 
 {% highlight html %}
  
@@ -24,8 +26,7 @@ $("#symbolpalette").ejSymbolPalette();
 
 {% endhighlight %}
 
-Requires
-{:.require}
+#### Requires
 
 * module:jQuery.js
 * module:ej.common.all
@@ -37,6 +38,7 @@ Requires
 * module:jquery.validate.unobtrusive.js
 
 ## Members
+
 ### allowDrag `Boolean`
 {:#members:allowdrag}
 

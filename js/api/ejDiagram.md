@@ -512,7 +512,7 @@ $("#DiagramContent").ejDiagram({nodes:[group]});
 ### connectors.labels `Array`
 {:#members:connectors-labels}
 
-A collection of JSON objects where each object represents a label. For label properties, refer [add link]
+A collection of JSON objects where each object represents a label. For label properties, refer [Labels](#members:nodes-labels)
 
 #### Default Value
 
@@ -1086,9 +1086,9 @@ Sets the border width of the decorator
 
 <div id="diagramcontent"></div>
 <script>
-var link=[];
-link={[targetDecorator:{borderWidth: 1}]};
-$("#diagramcontent").ejDiagram({connectors:link});
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+                  sourceDecorator : { shape:"openarrow" , borderWidth: 5} }; 
+$("#DiagramContent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
