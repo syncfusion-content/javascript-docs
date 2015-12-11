@@ -1558,7 +1558,7 @@ $("#DiagramContent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 ### connectors.tooltip `String`
 {:#members:connectors-tooltip}
 
-Defines the tooltip that should be shown when the mouse hovers over connector
+Defines the tooltip that should be shown when the mouse hovers over connector.  For tooltip properties, refer [Tooltip](#members:tooltip)
 
 #### Default Value
 
@@ -5337,7 +5337,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.ports.visibility `enum`
 {:#members:nodes-ports-visibility}
 
-Defines when the port should be visible .See <a href="global.html#portvisibility">PortVisibility</a>
+Defines when the port should be visible. See <a href="global.html#portvisibility">PortVisibility</a>
 
 #### Default Value
 
@@ -5483,7 +5483,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.shape `enum`
 {:#members:nodes-shape}
 
-Sets the shape of the node. It depends upon the type of node. See {Link Shapes}
+Sets the shape of the node. It depends upon the type of node. See <a href="global.html#shapes">Shapes</a>
 
 #### Default Value
 
@@ -5831,7 +5831,7 @@ $("#DiagramContent").ejDiagram({nodes:nodes});
 ### nodes.tooltip `String`
 {:#members:connectors-tooltip}
 
-Defines the tooltip that should be shown when the mouse hovers over node
+Defines the tooltip that should be shown when the mouse hovers over node.  For tooltip properties, refer [Tooltip](#members:tooltip)
 
 #### Default Value
 
@@ -6599,7 +6599,7 @@ $("#DiagramContent").ejDiagram({
 ### selectedItems.tooltip `Number`
 {:#members:selecteditems-tooltip}
 
-Sets the angle to rotate the selected items. [Link Model.tooltip]
+Sets the angle to rotate the selected items. For tooltip properties, refer [Tooltip](#members:tooltip)
 
 #### Default Value
 
@@ -6619,7 +6619,7 @@ $("#DiagramContent").ejDiagram({
 ### selectedItems.userHandles `Array`
 {:#members:selecteditems-userhandles}
 
-A collection of frequently using commands that have to be added around the selector. [Link UserHandles]
+A collection of frequently using commands that have to be added around the selector.
 
 #### Default Value
 
