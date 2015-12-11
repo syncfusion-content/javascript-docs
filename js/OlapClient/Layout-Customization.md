@@ -126,7 +126,7 @@ $("#OlapClient").ejOlapClient({
     url: "../OlapClient",
     title: "OLAP Browser",
     displaySettings: {
-        mode: ej.olap.OlapClient.DisplayMode.ChartOnly
+        mode: ej.olap.OlapClient.DisplayMode.ChartAndGrid
     }
 });
 

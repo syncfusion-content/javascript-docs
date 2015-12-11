@@ -9,13 +9,13 @@ documentation: ug
 
 # Defer Update
 
-Defer Update support allows you to refresh the control only on-demand and not during every UI interaction. To enable this functionality, set `enableDeferUpdate` property to "true".
+Defer Update support allows you to refresh the control only on-demand and not during every UI interaction.
 
 {% highlight js %}
 
 $(function()
 {
-    $("#PivotGrid").ejPivotGrid(
+    $("#PivotGrid1").ejPivotGrid(
     {
         url: "../wcf/OLAPService.svc",
         analysisMode: ej.PivotGrid.AnalysisMode.OlapAnalysis,

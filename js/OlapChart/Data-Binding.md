@@ -175,7 +175,11 @@ namespace OlapChartDemo
     }
 }
 
+{% endhighlight %}
+
 Secondly, elaborate the service methods inside the main class, found in `OlapChartService.svc.cs` file
+
+ {% highlight c# %}
 
 namespace OlapChartDemo
 {
