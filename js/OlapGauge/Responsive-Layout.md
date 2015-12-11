@@ -22,10 +22,12 @@ $("#OlapGauge1").ejOlapGauge({
 {% endhighlight %}
 
 ![](Responsive-Layout_images/responsive 1.png)
+
 _Normal View_
 
 
 ![](Responsive-Layout_images/responsive 2.png)
+
 _Responsive View_
 
 
